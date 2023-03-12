@@ -1,25 +1,32 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# tomo, 2021
+# 渋川よしき <yoshiki@shibu.jp>, 2021
+# Takanori Suzuki <takanori@takanory.net>, 2023
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-12 20:01+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 00:53+0000\n"
+"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2023\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../howto/enum.rst:3
 msgid "Enum HOWTO"
-msgstr ""
+msgstr "列挙型 HOWTO"
 
 #: ../../howto/enum.rst:9
 msgid ""
@@ -27,12 +34,17 @@ msgid ""
 "are similar to global variables, but they offer a more useful :func:"
 "`repr()`, grouping, type-safety, and a few other features."
 msgstr ""
+":class:`Enum` は、ユニークな値に束縛されたシンボル名の集合です。グローバル変"
+"数に似ていますが、 :func:`repr()` がより便利だったり、グルーピングの機能、型"
+"安全などいくつかの機能があります。"
 
 #: ../../howto/enum.rst:13
 msgid ""
 "They are most useful when you have a variable that can take one of a limited "
 "selection of values.  For example, the days of the week::"
 msgstr ""
+"これらは、限られた選択肢の値の一つを取る変数がある場合に便利です。例えば、曜"
+"日情報があります:"
 
 #: ../../howto/enum.rst:26
 msgid "Or perhaps the RGB primary colors::"
@@ -46,13 +58,16 @@ msgstr ""
 
 #: ../../howto/enum.rst:37
 msgid "Case of Enum Members"
-msgstr ""
+msgstr "Enumメンバーは大文字/小文字？"
 
 #: ../../howto/enum.rst:39
 msgid ""
 "Because Enums are used to represent constants we recommend using UPPER_CASE "
 "names for members, and will be using that style in our examples."
 msgstr ""
+"Enumクラス群は定数を表現するために使われるため、メンバーの名前にはUPPER_CASE"
+"を使うことを推奨します。本ページのドキュメントのサンプルでもそのスタイルを採"
+"用します。"
 
 #: ../../howto/enum.rst:42
 msgid ""
@@ -151,7 +166,7 @@ msgstr ""
 
 #: ../../howto/enum.rst:183
 msgid "Programmatic access to enumeration members and their attributes"
-msgstr ""
+msgstr "列挙型メンバーおよびそれらの属性へのプログラム的アクセス"
 
 #: ../../howto/enum.rst:185
 msgid ""
@@ -159,22 +174,27 @@ msgid ""
 "e. situations where ``Color.RED`` won't do because the exact color is not "
 "known at program-writing time).  ``Enum`` allows such access::"
 msgstr ""
+"プログラム的にメンバーに番号でアクセスしたほうが便利な場合があります (すなわ"
+"ち、プログラムを書いている時点で正確な色がまだわからなく、``Color.RED`` と書"
+"くのが無理な場合など)。 ``Enum`` ではそのようなアクセスも可能です::"
 
 #: ../../howto/enum.rst:194
 msgid "If you want to access enum members by *name*, use item access::"
 msgstr ""
+"列挙型メンバーに *名前* でアクセスしたい場合はアイテムとしてアクセスできま"
+"す::"
 
 #: ../../howto/enum.rst:201
 msgid "If you have an enum member and need its :attr:`name` or :attr:`value`::"
-msgstr ""
+msgstr "列挙型メンバーの :attr:`name` か :attr:`value` が必要な場合::"
 
 #: ../../howto/enum.rst:211
 msgid "Duplicating enum members and values"
-msgstr ""
+msgstr "列挙型メンバーと値の重複"
 
 #: ../../howto/enum.rst:213
 msgid "Having two enum members with the same name is invalid::"
-msgstr ""
+msgstr "同じ名前の列挙型メンバーを複数持つことはできません::"
 
 #: ../../howto/enum.rst:223
 msgid ""
@@ -191,10 +211,12 @@ msgid ""
 "attribute (another member, a method, etc.) or attempting to create an "
 "attribute with the same name as a member is not allowed."
 msgstr ""
+"すでに定義されている属性と同じ名前のメンバー (一方がメンバーでもう一方がメ"
+"ソッド、など) の作成、あるいはメンバーと同じ名前の属性の作成はできません。"
 
 #: ../../howto/enum.rst:250
 msgid "Ensuring unique enumeration values"
-msgstr ""
+msgstr "番号付けの値が同一であることの確認"
 
 #: ../../howto/enum.rst:252
 msgid ""
@@ -204,30 +226,34 @@ msgstr ""
 
 #: ../../howto/enum.rst:269
 msgid "Using automatic values"
-msgstr ""
+msgstr "値の自動設定を使う"
 
 #: ../../howto/enum.rst:271
 msgid "If the exact value is unimportant you can use :class:`auto`::"
-msgstr ""
+msgstr "正確な値が重要でない場合、 :class:`auto` が使えます::"
 
 #: ../../howto/enum.rst:282
 msgid ""
 "The values are chosen by :func:`_generate_next_value_`, which can be "
 "overridden::"
 msgstr ""
+"その値は :func:`_generate_next_value_` によって選ばれ、この関数はオーバーライ"
+"ドできます::"
 
 #: ../../howto/enum.rst:300
 msgid ""
 "The :meth:`_generate_next_value_` method must be defined before any members."
 msgstr ""
+":meth:`_generate_next_value_` メソッドは他のメンバーよりも前に定義される必要"
+"があります。"
 
 #: ../../howto/enum.rst:303
 msgid "Iteration"
-msgstr ""
+msgstr "イテレーション"
 
 #: ../../howto/enum.rst:305
 msgid "Iterating over the members of an enum does not provide the aliases::"
-msgstr ""
+msgstr "列挙型のメンバーのイテレートは別名をサポートしていません::"
 
 #: ../../howto/enum.rst:312
 msgid ""
@@ -241,12 +267,17 @@ msgid ""
 "names to members.  It includes all names defined in the enumeration, "
 "including the aliases::"
 msgstr ""
+"特殊属性 ``__members__`` は読み出し専用で、順序を保持した、対応する名前と列挙"
+"型メンバーのマッピングです。これには別名も含め、列挙されたすべての名前が入っ"
+"ています。"
 
 #: ../../howto/enum.rst:326
 msgid ""
 "The ``__members__`` attribute can be used for detailed programmatic access "
 "to the enumeration members.  For example, finding all the aliases::"
 msgstr ""
+"属性 ``__members__`` は列挙型メンバーへの詳細なアクセスに使用できます。以下は"
+"すべての別名を探す例です::"
 
 #: ../../howto/enum.rst:334
 msgid ""
@@ -256,21 +287,23 @@ msgstr ""
 
 #: ../../howto/enum.rst:339
 msgid "Comparisons"
-msgstr ""
+msgstr "比較"
 
 #: ../../howto/enum.rst:341
 msgid "Enumeration members are compared by identity::"
-msgstr ""
+msgstr "列挙型メンバーは同一性を比較できます::"
 
 #: ../../howto/enum.rst:350
 msgid ""
 "Ordered comparisons between enumeration values are *not* supported.  Enum "
 "members are not integers (but see `IntEnum`_ below)::"
 msgstr ""
+"列挙型の値の順序の比較はサポートされて *いません*。Enum メンバーは整数ではあ"
+"りません (`IntEnum`_ を参照してください)::"
 
 #: ../../howto/enum.rst:358
 msgid "Equality comparisons are defined though::"
-msgstr ""
+msgstr "ただし等価の比較は定義されています::"
 
 #: ../../howto/enum.rst:367
 msgid ""
@@ -278,10 +311,12 @@ msgid ""
 "(again, :class:`IntEnum` was explicitly designed to behave differently, see "
 "below)::"
 msgstr ""
+"非列挙型の値との比較は常に不等となります (繰り返しになりますが、:class:"
+"`IntEnum` はこれと異なる挙動になるよう設計されています)::"
 
 #: ../../howto/enum.rst:376
 msgid "Allowed members and attributes of enumerations"
-msgstr ""
+msgstr "列挙型で許されるメンバーと属性"
 
 #: ../../howto/enum.rst:378
 msgid ""
@@ -297,10 +332,12 @@ msgid ""
 "Enumerations are Python classes, and can have methods and special methods as "
 "usual.  If we have this enumeration::"
 msgstr ""
+"列挙型は Python のクラスであり、通常どおりメソッドや特殊メソッドを持つことが"
+"できます::"
 
 #: ../../howto/enum.rst:404
 msgid "Then::"
-msgstr ""
+msgstr "上記の結果が以下のようになります::"
 
 #: ../../howto/enum.rst:413
 msgid ""
@@ -311,6 +348,11 @@ msgid ""
 "`__add__`, etc.), descriptors (methods are also descriptors), and variable "
 "names listed in :attr:`_ignore_`."
 msgstr ""
+"何が許されているかのルールは次のとおりです。先頭と末尾が 1 個のアンダースコア"
+"の名前は列挙型により予約されているため、使用できません。列挙型内で定義された"
+"その他すべての名前は、その列挙型のメンバーとして使用できます。特殊メソッド (:"
+"meth:`__str__`, :meth:`__add__` など) と、メソッドを含むデスクリプタ(記述"
+"子)、 :attr:`_ignore_` に記載されている変数名は例外です。"
 
 #: ../../howto/enum.rst:420
 msgid ""
@@ -318,10 +360,13 @@ msgid ""
 "then any value(s) given to the enum member will be passed into those "
 "methods. See `Planet`_ for an example."
 msgstr ""
+"注意: 列挙型で :meth:`__new__` および/または :meth:`__init__` を定義した場"
+"合、列挙型メンバーに与えられた値はすべてこれらのメソッドに渡されます。例 "
+"`Planet`_ を参照してください。"
 
 #: ../../howto/enum.rst:426
 msgid "Restricted Enum subclassing"
-msgstr ""
+msgstr "Enumのサブクラス化の制限"
 
 #: ../../howto/enum.rst:428
 msgid ""
@@ -329,16 +374,21 @@ msgid ""
 "data type, and as many :class:`object`-based mixin classes as needed.  The "
 "order of these base classes is::"
 msgstr ""
+"新しい :class:`Enum` クラスは、ベースの enum クラスを1つ、具象データ型を1つ、"
+"複数の :class:`object` ベースのミックスインクラスが許容されます。これらのベー"
+"スクラスの順序は次の通りです::"
 
 #: ../../howto/enum.rst:435
 msgid ""
 "Also, subclassing an enumeration is allowed only if the enumeration does not "
 "define any members.  So this is forbidden::"
 msgstr ""
+"列挙型のサブクラスの作成はその列挙型にメンバーが一つも定義されていない場合の"
+"み行なえます。従って以下は許されません::"
 
 #: ../../howto/enum.rst:445
 msgid "But this is allowed::"
-msgstr ""
+msgstr "以下のような場合は許されます::"
 
 #: ../../howto/enum.rst:456
 msgid ""
@@ -347,14 +397,18 @@ msgid ""
 "makes sense to allow sharing some common behavior between a group of "
 "enumerations. (See `OrderedEnum`_ for an example.)"
 msgstr ""
+"メンバーが定義された列挙型のサブクラス化を許可すると、いくつかのデータ型およ"
+"びインスタンスの重要な不変条件の違反を引き起こします。とはいえ、それが許可さ"
+"れると、列挙型のグループ間での共通の挙動を共有するという利点もあります。 "
+"(`OrderedEnum`_ の例を参照してください。)"
 
 #: ../../howto/enum.rst:463
 msgid "Pickling"
-msgstr ""
+msgstr "Pickle 化"
 
 #: ../../howto/enum.rst:465
 msgid "Enumerations can be pickled and unpickled::"
-msgstr ""
+msgstr "列挙型は pickle 化と unpickle 化が行えます::"
 
 #: ../../howto/enum.rst:472
 msgid ""
@@ -362,33 +416,43 @@ msgid ""
 "in the top level of a module, since unpickling requires them to be "
 "importable from that module."
 msgstr ""
+"通常の pickle 化の制限事項が適用されます: pickle 可能な列挙型はモジュールの"
+"トップレベルで定義されていなくてはならず、unpickle 化はモジュールからインポー"
+"ト可能でなければなりません。"
 
 #: ../../howto/enum.rst:478
 msgid ""
 "With pickle protocol version 4 it is possible to easily pickle enums nested "
 "in other classes."
 msgstr ""
+"pickle プロトコルバージョン 4 では他のクラスで入れ子になった列挙型の pickle "
+"化も容易です。"
 
 #: ../../howto/enum.rst:481
 msgid ""
 "It is possible to modify how enum members are pickled/unpickled by defining :"
 "meth:`__reduce_ex__` in the enumeration class."
 msgstr ""
+"enum のメンバーをどう pickle 化/unpickle 化するかは、列挙型クラス内の :meth:"
+"`__reduce_ex__` で定義することで変更できます。"
 
 #: ../../howto/enum.rst:486
 msgid "Functional API"
-msgstr ""
+msgstr "機能 API"
 
 #: ../../howto/enum.rst:488
 msgid ""
 "The :class:`Enum` class is callable, providing the following functional API::"
 msgstr ""
+":class:`Enum` クラスは呼び出し可能で、以下の機能 API を提供しています::"
 
 #: ../../howto/enum.rst:498
 msgid ""
 "The semantics of this API resemble :class:`~collections.namedtuple`. The "
 "first argument of the call to :class:`Enum` is the name of the enumeration."
 msgstr ""
+"この API の動作は :class:`~collections.namedtuple` と似ています。:class:"
+"`Enum` 呼び出しの第 1 引数は列挙型の名前です。"
 
 #: ../../howto/enum.rst:501
 msgid ""
@@ -401,6 +465,13 @@ msgid ""
 "class derived from :class:`Enum` is returned.  In other words, the above "
 "assignment to :class:`Animal` is equivalent to::"
 msgstr ""
+"第 2 引数は列挙型メンバー名の *ソース* です。空白で区切った名前の文字列、名前"
+"のシーケンス、キー/値のペアの 2 要素タプルのシーケンス、あるいは名前と値の"
+"マッピング (例: 辞書) を指定できます。最後の 2 個のオプションでは、列挙型へ任"
+"意の値を割り当てることができます。前の 2 つのオプションでは、1 から始まり増加"
+"していく整数を自動的に割り当てます (別の開始値を指定するには、``start`` 引数"
+"を使用します)。:class:`Enum` から派生した新しいクラスが返されます。言い換えれ"
+"ば、上記の :class:`Animal` への割り当ては以下と等価です::"
 
 #: ../../howto/enum.rst:517
 msgid ""
@@ -424,6 +495,9 @@ msgid ""
 "Enum members will not be unpicklable; to keep errors closer to the source, "
 "pickling will be disabled."
 msgstr ""
+"``module`` が与えられない場合、Enum はそれがなにか決定できないため、新しい "
+"Enum メンバーは unpickle 化できなくなります; エラーをソースの近いところで発生"
+"させるため、pickle 化は無効になります。"
 
 #: ../../howto/enum.rst:535
 msgid ""
@@ -432,84 +506,90 @@ msgid ""
 "able to find the class.  For example, if the class was made available in "
 "class SomeData in the global scope::"
 msgstr ""
+"新しい pickle プロトコルバージョン 4 では、一部の状況において、pickle がクラ"
+"スを発見するための場所の設定に :attr:`~definition.__qualname__` を参照しま"
+"す。例えば、そのクラスがグローバルスコープ内のクラス SomeData 内で利用可能と"
+"するには以下のように指定します::"
 
 #: ../../howto/enum.rst:542
 msgid "The complete signature is::"
-msgstr ""
+msgstr "完全な構文は以下のようになります::"
 
 #: ../../howto/enum.rst:0
 msgid "value"
-msgstr ""
+msgstr "value"
 
 #: ../../howto/enum.rst:554
 msgid "What the new enum class will record as its name."
-msgstr ""
+msgstr "新しい enum クラスに記録されるそれ自身の名前です。"
 
 #: ../../howto/enum.rst:0
 msgid "names"
-msgstr ""
+msgstr "名前"
 
 #: ../../howto/enum.rst:556
 msgid ""
 "The enum members.  This can be a whitespace- or comma-separated string "
 "(values will start at 1 unless otherwise specified)::"
 msgstr ""
+"enum のメンバーです。空白またはカンマで区切った文字列でも構いません (特に指定"
+"がない限り、値は 1 から始まります)::"
 
 #: ../../howto/enum.rst:561
 msgid "or an iterator of names::"
-msgstr ""
+msgstr "または名前のイテレータで指定もできます::"
 
 #: ../../howto/enum.rst:565
 msgid "or an iterator of (name, value) pairs::"
-msgstr ""
+msgstr "または (名前, 値) のペアのイテレータでも指定できます::"
 
 #: ../../howto/enum.rst:569
 msgid "or a mapping::"
-msgstr ""
+msgstr "またはマッピングでも指定できます::"
 
 #: ../../howto/enum.rst:0
 msgid "module"
-msgstr ""
+msgstr "module"
 
 #: ../../howto/enum.rst:573
 msgid "name of module where new enum class can be found."
-msgstr ""
+msgstr "新しい enum クラスが属するモジュールの名前です。"
 
 #: ../../howto/enum.rst:0
 msgid "qualname"
-msgstr ""
+msgstr "qualname"
 
 #: ../../howto/enum.rst:575
 msgid "where in module new enum class can be found."
-msgstr ""
+msgstr "新しい enum クラスが属するモジュールの場所です。"
 
 #: ../../howto/enum.rst:0
 msgid "type"
-msgstr ""
+msgstr "type"
 
 #: ../../howto/enum.rst:577
 msgid "type to mix in to new enum class."
-msgstr ""
+msgstr "新しい enum クラスに複合されるデータ型です。"
 
 #: ../../howto/enum.rst:0
 msgid "start"
-msgstr ""
+msgstr "start"
 
 #: ../../howto/enum.rst:579
 msgid "number to start counting at if only names are passed in."
-msgstr ""
+msgstr "names のみが渡されたときにカウントを開始する数です。"
 
 #: ../../howto/enum.rst:581
 msgid "The *start* parameter was added."
-msgstr ""
+msgstr "*start* 引数が追加されました。"
 
 #: ../../howto/enum.rst:586
 msgid "Derived Enumerations"
-msgstr ""
+msgstr "派生列挙型"
 
 #: ../../howto/enum.rst:589
 msgid "IntEnum"
-msgstr ""
+msgstr "IntEnum"
 
 #: ../../howto/enum.rst:591
 msgid ""
@@ -518,21 +598,25 @@ msgid ""
 "extension, integer enumerations of different types can also be compared to "
 "each other::"
 msgstr ""
+"提供されている 1 つ目の :class:`Enum` の派生型であり、 :class:`int` のサブク"
+"ラスでもあります。\n"
+":class:`IntEnum` のメンバーは整数と比較できます;\n"
+"さらに言うと、異なる整数列挙型どうしでも比較できます::"
 
 #: ../../howto/enum.rst:612
 msgid ""
 "However, they still can't be compared to standard :class:`Enum` "
 "enumerations::"
-msgstr ""
+msgstr "ただし、これらも標準の :class:`Enum` 列挙型とは比較できません::"
 
 #: ../../howto/enum.rst:625
 msgid ""
 ":class:`IntEnum` values behave like integers in other ways you'd expect::"
-msgstr ""
+msgstr ":class:`IntEnum` の値は他の用途では整数のように振る舞います::"
 
 #: ../../howto/enum.rst:636
 msgid "StrEnum"
-msgstr ""
+msgstr "StrEnum"
 
 #: ../../howto/enum.rst:638
 msgid ""
@@ -544,7 +628,7 @@ msgstr ""
 
 #: ../../howto/enum.rst:647
 msgid "IntFlag"
-msgstr ""
+msgstr "IntFlag"
 
 #: ../../howto/enum.rst:649
 msgid ""
@@ -561,6 +645,8 @@ msgid ""
 "Any operation on an :class:`IntFlag` member besides the bit-wise operations "
 "will lose the :class:`IntFlag` membership."
 msgstr ""
+":class:`IntFlag` メンバーに対してビット演算以外のどんな演算をしても、その結果"
+"は :class:`IntFlag` メンバーではなくなります。"
 
 #: ../../howto/enum.rst:660
 msgid ""
@@ -570,11 +656,11 @@ msgstr ""
 
 #: ../../howto/enum.rst:667
 msgid "Sample :class:`IntFlag` class::"
-msgstr ""
+msgstr ":class:`IntFlag` クラスの例::"
 
 #: ../../howto/enum.rst:683
 msgid "It is also possible to name the combinations::"
-msgstr ""
+msgstr "組み合わせにも名前を付けられます::"
 
 #: ../../howto/enum.rst:699
 msgid ""
@@ -588,6 +674,9 @@ msgid ""
 "that if no flags are set (the value is 0), its boolean evaluation is :data:"
 "`False`::"
 msgstr ""
+":class:`IntFlag` と :class:`Enum` のもう 1 つの重要な違いは、フラグが設定され"
+"ていない (値が0である) 場合、その真偽値としての評価は :data:`False` になるこ"
+"とです::"
 
 #: ../../howto/enum.rst:712
 msgid ""
@@ -607,7 +696,7 @@ msgstr ""
 
 #: ../../howto/enum.rst:738
 msgid "Flag"
-msgstr ""
+msgstr "Flag"
 
 #: ../../howto/enum.rst:740
 msgid ""
@@ -618,24 +707,37 @@ msgid ""
 "specify the values directly it is recommended to use :class:`auto` as the "
 "value and let :class:`Flag` select an appropriate value."
 msgstr ""
+"最後の派生型は :class:`Flag` です。\n"
+":class:`IntFlag` と同様に、 :class:`Flag` メンバーもビット演算子 (&, \\|, ^, "
+"~) を使って組み合わせられます。\n"
+"しかし :class:`IntFlag` とは違い、他のどの :class:`Flag` 列挙型とも :class:"
+"`int` とも組み合わせたり、比較したりできません。\n"
+"値を直接指定することも可能ですが、値として :class:`auto` を使い、 :class:"
+"`Flag` に適切な値を選ばせることが推奨されています。"
 
 #: ../../howto/enum.rst:749
 msgid ""
 "Like :class:`IntFlag`, if a combination of :class:`Flag` members results in "
 "no flags being set, the boolean evaluation is :data:`False`::"
 msgstr ""
+":class:`IntFlag` と同様に、 :class:`Flag` メンバーの組み合わせがどのフラグも"
+"設定されていない状態になった場合、その真偽値としての評価は :data:`False` とな"
+"ります::"
 
 #: ../../howto/enum.rst:763
 msgid ""
 "Individual flags should have values that are powers of two (1, 2, 4, "
 "8, ...), while combinations of flags will not::"
 msgstr ""
+"個別のフラグは 2 のべき乗 (1, 2, 4, 8, ...) の値を持つべきですが、フラグの組"
+"み合わせはそうはなりません::"
 
 #: ../../howto/enum.rst:775
 msgid ""
 "Giving a name to the \"no flags set\" condition does not change its boolean "
 "value::"
 msgstr ""
+"\"フラグが設定されていない\" 状態に名前を付けても、その真偽値は変わりません::"
 
 #: ../../howto/enum.rst:789
 msgid ":class:`Flag` members can also be iterated over::"
@@ -651,16 +753,27 @@ msgid ""
 "will not do; for example, when integer constants are replaced with "
 "enumerations, or for interoperability with other systems."
 msgstr ""
+"ほとんどの新しいコードでは、 :class:`Enum` と :class:`Flag` が強く推奨されま"
+"す。\n"
+"というのは、 :class:`IntEnum` と :class:`IntFlag` は (整数と比較でき、従って"
+"推移的に他の無関係な列挙型と比較できてしまうことにより) 列挙型の意味論的な約"
+"束に反するからです。\n"
+":class:`IntEnum` と :class:`IntFlag` は、 :class:`Enum` や :class:`Flag` では"
+"上手くいかない場合のみに使うべきです;\n"
+"例えば、整数定数を列挙型で置き換えるときや、他のシステムとの相互運用性を持た"
+"せたいときです。"
 
 #: ../../howto/enum.rst:809
 msgid "Others"
-msgstr ""
+msgstr "その他"
 
 #: ../../howto/enum.rst:811
 msgid ""
 "While :class:`IntEnum` is part of the :mod:`enum` module, it would be very "
 "simple to implement independently::"
 msgstr ""
+":class:`IntEnum` は :mod:`enum` モジュールの一部ですが、単独での実装もとても"
+"簡単に行なえます::"
 
 #: ../../howto/enum.rst:817
 msgid ""
@@ -668,10 +781,12 @@ msgid ""
 "example a :class:`FloatEnum` that mixes in :class:`float` instead of :class:"
 "`int`."
 msgstr ""
+"ここでは似たような列挙型の派生を定義する方法を紹介します; 例えば、:class:"
+"`FloatEnum` は :class:`int` ではなく :class:`float` で複合させたものです。"
 
 #: ../../howto/enum.rst:820
 msgid "Some rules:"
-msgstr ""
+msgstr "いくつかのルール:"
 
 #: ../../howto/enum.rst:822
 msgid ""
@@ -679,6 +794,9 @@ msgid ""
 "`Enum` itself in the sequence of bases, as in the :class:`IntEnum` example "
 "above."
 msgstr ""
+":class:`Enum` のサブクラスを作成するとき、複合させるデータ型は、基底クラスの"
+"並びで :class:`Enum` 自身より先に記述しなければなりません (上記 :class:"
+"`IntEnum` の例を参照)。"
 
 #: ../../howto/enum.rst:825
 msgid ""
@@ -694,6 +812,10 @@ msgid ""
 "`int` above.  This restriction does not apply to mix-ins which only add "
 "methods and don't specify another type."
 msgstr ""
+":class:`Enum` のメンバーはどんなデータ型でも構いませんが、追加のデータ型 (例"
+"えば、上の例の :class:`int`) と複合させてしまうと、すべてのメンバーの値はその"
+"データ型でなければならなくなります。この制限は、メソッドの追加するだけの、他"
+"のデータ型を指定しない複合には適用されません。"
 
 #: ../../howto/enum.rst:832
 msgid ""
@@ -701,6 +823,8 @@ msgid ""
 "same* as the enum member itself, although it is equivalent and will compare "
 "equal."
 msgstr ""
+"他のデータ型と複合された場合、 :attr:`value` 属性は、たとえ等価であり等価であ"
+"ると比較が行えても、列挙型メンバー自身としては *同じではありません* 。"
 
 #: ../../howto/enum.rst:835
 msgid ""
@@ -724,7 +848,7 @@ msgstr ""
 
 #: ../../howto/enum.rst:849
 msgid "When to use :meth:`__new__` vs. :meth:`__init__`"
-msgstr ""
+msgstr ":meth:`__init__`  と :meth:`__init__` のどちらを使うべきか"
 
 #: ../../howto/enum.rst:851
 msgid ""
@@ -732,26 +856,33 @@ msgid ""
 "of the :class:`Enum` member.  Any other modifications may go in either :meth:"
 "`__new__` or :meth:`__init__`, with :meth:`__init__` being preferred."
 msgstr ""
+":meth:`__new__` は :class:`Enum` メンバーの実際の値をカスタマイズしたいときに"
+"利用します。他の変更を加える場合、 :meth:`__new__` と :meth:`__init__` のどち"
+"らを利用するかは、:meth:`__init__` の方が望ましいでしょう。"
 
 #: ../../howto/enum.rst:855
 msgid ""
 "For example, if you want to pass several items to the constructor, but only "
 "want one of them to be the value::"
 msgstr ""
+"例えば、複数の値をコンストラクタに渡すが、その中の1つだけを値として使いたい場"
+"合は次のようにします:"
 
 #: ../../howto/enum.rst:882
 msgid "Finer Points"
-msgstr ""
+msgstr "細かい点"
 
 #: ../../howto/enum.rst:885
 msgid "Supported ``__dunder__`` names"
-msgstr ""
+msgstr "``__dunder__`` 名のサポート"
 
 #: ../../howto/enum.rst:887
 msgid ""
 ":attr:`__members__` is a read-only ordered mapping of ``member_name``:"
 "``member`` items.  It is only available on the class."
 msgstr ""
+":attr:`__members__` は読み込み専用の、 ``member_name``:``member``  を要素とす"
+"る順序付きマッピングです。これはクラスでのみ利用可能です。"
 
 #: ../../howto/enum.rst:890
 msgid ""
@@ -759,25 +890,33 @@ msgid ""
 "is also a very good idea to set the member's :attr:`_value_` appropriately.  "
 "Once all the members are created it is no longer used."
 msgstr ""
+":meth:`__new__` が、もし指定されていた場合、列挙型のメンバーを作成し、返しま"
+"す;\n"
+"そのメンバー の :attr:`_value_` を適切に設定するのも非常によい考えです。\n"
+"いったん全てのメンバーが作成されると、それ以降 :meth:`__new__` は使われませ"
+"ん。"
 
 #: ../../howto/enum.rst:896
 msgid "Supported ``_sunder_`` names"
-msgstr ""
+msgstr "``_sunder_`` 名のサポート"
 
 #: ../../howto/enum.rst:898
 msgid "``_name_`` -- name of the member"
-msgstr ""
+msgstr "``_name_`` -- メンバー名"
 
 #: ../../howto/enum.rst:899
 msgid ""
 "``_value_`` -- value of the member; can be set / modified in ``__new__``"
 msgstr ""
+"``_value_`` -- メンバーの値; ``__new__`` で設定したり、変更したりできます"
 
 #: ../../howto/enum.rst:901
 msgid ""
 "``_missing_`` -- a lookup function used when a value is not found; may be "
 "overridden"
 msgstr ""
+"``_missing_`` -- 値が見付からなかったときに使われる検索関数; オーバーライドさ"
+"れていることがあります"
 
 #: ../../howto/enum.rst:903
 msgid ""
@@ -785,18 +924,25 @@ msgid ""
 "`str`, that will not be transformed into members, and will be removed from "
 "the final class"
 msgstr ""
+"``_ignore_`` -- 名前のリストで、 :class:`list` もしくは :class:`str` です。こ"
+"の名前の要素はメンバーへの変換が行われず、最終的なクラスから削除されます。"
 
 #: ../../howto/enum.rst:906
 msgid ""
 "``_order_`` -- used in Python 2/3 code to ensure member order is consistent "
 "(class attribute, removed during class creation)"
 msgstr ""
+"``_order_`` -- Python 2/3のコードでメンバーの順序を固定化するのに利用されます"
+"（クラス属性で、クラス作成時に削除されます）"
 
 #: ../../howto/enum.rst:908
 msgid ""
 "``_generate_next_value_`` -- used by the `Functional API`_ and by :class:"
 "`auto` to get an appropriate value for an enum member; may be overridden"
 msgstr ""
+"``_generate_next_value_`` -- `Functional API`_ から利用され、 :class:`auto` "
+"が列挙型のメンバーの適切な値を取得するのに使われます。オーバーライドされま"
+"す。"
 
 #: ../../howto/enum.rst:914
 msgid ""
@@ -812,11 +958,11 @@ msgstr ""
 
 #: ../../howto/enum.rst:920
 msgid "``_missing_``, ``_order_``, ``_generate_next_value_``"
-msgstr ""
+msgstr "``_missing_``, ``_order_``, ``_generate_next_value_``"
 
 #: ../../howto/enum.rst:921
 msgid "``_ignore_``"
-msgstr ""
+msgstr "``_ignore_``"
 
 #: ../../howto/enum.rst:923
 msgid ""
@@ -824,16 +970,21 @@ msgid ""
 "can be provided.  It will be checked against the actual order of the "
 "enumeration and raise an error if the two do not match::"
 msgstr ""
+"Pythono 2 / Python 3のコードの同期を取りやすくするために :attr:`_order_` 属性"
+"を提供できます。実際の列挙値の順序と比較して一致してなければエラーを送出しま"
+"す::"
 
 #: ../../howto/enum.rst:941
 msgid ""
 "In Python 2 code the :attr:`_order_` attribute is necessary as definition "
 "order is lost before it can be recorded."
 msgstr ""
+"Python 2のコードでは :attr:`_order_` 属性は定義順が記録される前消えてしまうた"
+"め、重要です。"
 
 #: ../../howto/enum.rst:946
 msgid "_Private__names"
-msgstr ""
+msgstr "_Private__names"
 
 #: ../../howto/enum.rst:948
 msgid ""
@@ -843,7 +994,7 @@ msgstr ""
 
 #: ../../howto/enum.rst:955
 msgid "``Enum`` member type"
-msgstr ""
+msgstr "``Enum`` メンバー型"
 
 #: ../../howto/enum.rst:957
 msgid ""
@@ -866,7 +1017,7 @@ msgstr ""
 
 #: ../../howto/enum.rst:992
 msgid "Boolean value of ``Enum`` classes and members"
-msgstr ""
+msgstr "``Enum`` クラスとメンバーの真偽値"
 
 #: ../../howto/enum.rst:994
 msgid ""
@@ -876,6 +1027,11 @@ msgid ""
 "enum's boolean evaluation depend on the member's value add the following to "
 "your class::"
 msgstr ""
+"(:class:`int`, :class:`str` などのような) 非 :class:`Enum` 型と複合させた "
+"enum クラスは、その複合された型の規則に従って評価されます;\n"
+"そうでない場合は、全てのメンバーは :data:`True` と評価されます。\n"
+"メンバーの値に依存する独自の enum の真偽値評価を行うには、クラスに次のコード"
+"を追加してください::"
 
 #: ../../howto/enum.rst:1003
 msgid "Plain :class:`Enum` classes always evaluate as :data:`True`."
@@ -883,7 +1039,7 @@ msgstr ""
 
 #: ../../howto/enum.rst:1007
 msgid "``Enum`` classes with methods"
-msgstr ""
+msgstr "メソッド付きの ``Enum`` クラス"
 
 #: ../../howto/enum.rst:1009
 msgid ""
@@ -891,10 +1047,13 @@ msgid ""
 "below, those methods will show up in a :func:`dir` of the member, but not of "
 "the class::"
 msgstr ""
+"enum サブクラスに追加のメソッドを与えた場合、後述の `Planet`_ クラスのよう"
+"に、そのメソッドはメンバーの :func:`dir` に表示されますが、クラスの :func:"
+"`dir` には表示されません::"
 
 #: ../../howto/enum.rst:1020
 msgid "Combining members of ``Flag``"
-msgstr ""
+msgstr "``Flag`` のメンバーの組み合わせ"
 
 #: ../../howto/enum.rst:1022
 msgid ""
@@ -995,17 +1154,19 @@ msgstr ""
 
 #: ../../howto/enum.rst:1121
 msgid "How are Enums and Flags different?"
-msgstr ""
+msgstr "EnumとFlagはどう違うのか？"
 
 #: ../../howto/enum.rst:1123
 msgid ""
 "Enums have a custom metaclass that affects many aspects of both derived :"
 "class:`Enum` classes and their instances (members)."
 msgstr ""
+"Enum は :class:`Enum` 派生クラスやそれらのインスタンス (メンバー) 双方の多く"
+"の側面に影響を及ぼすカスタムメタクラスを持っています。"
 
 #: ../../howto/enum.rst:1128
 msgid "Enum Classes"
-msgstr ""
+msgstr "Enum クラス"
 
 #: ../../howto/enum.rst:1130
 msgid ""
@@ -1020,7 +1181,7 @@ msgstr ""
 
 #: ../../howto/enum.rst:1139
 msgid "Flag Classes"
-msgstr ""
+msgstr "Flag クラス"
 
 #: ../../howto/enum.rst:1141
 msgid ""
@@ -1033,7 +1194,7 @@ msgstr ""
 
 #: ../../howto/enum.rst:1147
 msgid "Enum Members (aka instances)"
-msgstr ""
+msgstr "Enum メンバー (インスタンス)"
 
 #: ../../howto/enum.rst:1149
 msgid ""
@@ -1043,6 +1204,10 @@ msgid ""
 "new ones are ever instantiated by returning only the existing member "
 "instances."
 msgstr ""
+"enum メンバーについて最も興味深いのは、それらがシングルトンであるということで"
+"す。:class:`EnumType` は enum クラス自身を作成し、メンバーを作成し、新しいイ"
+"ンスタンスが作成されていないかどうかを確認するために既存のメンバーインスタン"
+"スだけを返すカスタム :meth:`__new__` を追加します。"
 
 #: ../../howto/enum.rst:1155
 msgid "Flag Members"
@@ -1081,34 +1246,42 @@ msgid ""
 "cover them all.  Here are recipes for some different types of enumerations "
 "that can be used directly, or as examples for creating one's own."
 msgstr ""
+":class:`Enum`, :class:`IntEnum`, :class:`StrEnum`, :class:`Flag`, :class:"
+"`IntFlag` は用途の大部分をカバーすると予想されますが、そのすべてをカバーでき"
+"ているわけではありません。ここでは、そのまま、あるいは独自の列挙型を作る例と"
+"して使える、様々なタイプの列挙型を紹介します。"
 
 #: ../../howto/enum.rst:1191
 msgid "Omitting values"
-msgstr ""
+msgstr "値の省略"
 
 #: ../../howto/enum.rst:1193
 msgid ""
 "In many use-cases, one doesn't care what the actual value of an enumeration "
 "is. There are several ways to define this type of simple enumeration:"
 msgstr ""
+"多くの用途では、列挙型の実際の値が何かは気にされません。\n"
+"このタイプの単純な列挙型を定義する方法はいくつかあります:"
 
 #: ../../howto/enum.rst:1196
 msgid "use instances of :class:`auto` for the value"
-msgstr ""
+msgstr "値に :class:`auto` インスタンスを使用する"
 
 #: ../../howto/enum.rst:1197
 msgid "use instances of :class:`object` as the value"
-msgstr ""
+msgstr "値として :class:`object` インスタンスを使用する"
 
 #: ../../howto/enum.rst:1198
 msgid "use a descriptive string as the value"
-msgstr ""
+msgstr "値として解説文字列を使用する"
 
 #: ../../howto/enum.rst:1199
 msgid ""
 "use a tuple as the value and a custom :meth:`__new__` to replace the tuple "
 "with an :class:`int` value"
 msgstr ""
+"値としてタプルを使用し、独自の :meth:`__new__` を使用してタプルを :class:"
+"`int` 値で置き換える"
 
 #: ../../howto/enum.rst:1202
 msgid ""
@@ -1116,22 +1289,25 @@ msgid ""
 "important, and also enables one to add, remove, or reorder members without "
 "having to renumber the remaining members."
 msgstr ""
+"これらのどの方法を使ってもユーザーに対して、値は重要ではなく、他のメンバーの"
+"番号の振り直しをする必要無しに、メンバーの追加、削除、並べ替えが行えるという"
+"ことを示せます。"
 
 #: ../../howto/enum.rst:1208
 msgid "Using :class:`auto`"
-msgstr ""
+msgstr ":class:`auto` を使う"
 
 #: ../../howto/enum.rst:1210
 msgid "Using :class:`auto` would look like::"
-msgstr ""
+msgstr ":class:`auto` を使うと次のようになります::"
 
 #: ../../howto/enum.rst:1222
 msgid "Using :class:`object`"
-msgstr ""
+msgstr ":class:`object` を使う"
 
 #: ../../howto/enum.rst:1224
 msgid "Using :class:`object` would look like::"
-msgstr ""
+msgstr ":class:`object` を使うと次のようになります::"
 
 #: ../../howto/enum.rst:1234
 msgid ""
@@ -1141,31 +1317,35 @@ msgstr ""
 
 #: ../../howto/enum.rst:1250
 msgid "Using a descriptive string"
-msgstr ""
+msgstr "解説文字列を使う"
 
 #: ../../howto/enum.rst:1252
 msgid "Using a string as the value would look like::"
-msgstr ""
+msgstr "値として文字列を使うと次のようになります::"
 
 #: ../../howto/enum.rst:1264
 msgid "Using a custom :meth:`__new__`"
-msgstr ""
+msgstr "独自の :meth:`__new__` を使う"
 
 #: ../../howto/enum.rst:1266
 msgid "Using an auto-numbering :meth:`__new__` would look like::"
-msgstr ""
+msgstr "自動で番号を振る :meth:`__new__` を使うと次のようになります::"
 
 #: ../../howto/enum.rst:1283
 msgid ""
 "To make a more general purpose ``AutoNumber``, add ``*args`` to the "
 "signature::"
 msgstr ""
+"``AutoNumber`` をより広い用途で使うには、シグニチャに ``*args`` を追加しま"
+"す::"
 
 #: ../../howto/enum.rst:1293
 msgid ""
 "Then when you inherit from ``AutoNumber`` you can write your own "
 "``__init__`` to handle any extra arguments::"
 msgstr ""
+"``AutoNumber`` を継承すると、追加の引数を取り扱える独自の ``__init__`` が書け"
+"ます。"
 
 #: ../../howto/enum.rst:1312
 msgid ""
@@ -1173,10 +1353,13 @@ msgid ""
 "members; it is then replaced by Enum's :meth:`__new__` which is used after "
 "class creation for lookup of existing members."
 msgstr ""
+":meth:`__new__` メソッドが定義されていれば、Enum 番号の作成時に使用されます; "
+"これは Enum の :meth:`__new__` と置き換えられ、クラスが作成された後の既存の番"
+"号を取得に使用されます。"
 
 #: ../../howto/enum.rst:1318
 msgid "OrderedEnum"
-msgstr ""
+msgstr "OrderedEnum"
 
 #: ../../howto/enum.rst:1320
 msgid ""
@@ -1184,10 +1367,12 @@ msgid ""
 "maintains the normal :class:`Enum` invariants (such as not being comparable "
 "to other enumerations)::"
 msgstr ""
+":class:`IntEnum` をベースとしないため、通常の :class:`Enum` の不変条件 (他の"
+"列挙型と比較できないなど) のままで、メンバーを順序付けできる列挙型です::"
 
 #: ../../howto/enum.rst:1354
 msgid "DuplicateFreeEnum"
-msgstr ""
+msgstr "DuplicateFreeEnum"
 
 #: ../../howto/enum.rst:1356
 msgid ""
@@ -1201,28 +1386,33 @@ msgid ""
 "behaviors as well as disallowing aliases.  If the only desired change is "
 "disallowing aliases, the :func:`unique` decorator can be used instead."
 msgstr ""
+"これは Enum に別名を無効にするのと同様な振る舞いの追加や変更をおこなうための"
+"サブクラス化に役立つ例です。単に別名を無効にしたいだけなら、 :func:`unique` "
+"デコレーターを使用して行えます。"
 
 #: ../../howto/enum.rst:1387
 msgid "Planet"
-msgstr ""
+msgstr "Planet"
 
 #: ../../howto/enum.rst:1389
 msgid ""
 "If :meth:`__new__` or :meth:`__init__` is defined, the value of the enum "
 "member will be passed to those methods::"
 msgstr ""
+":meth:`__new__` や :meth:`__init__` が定義されている場合、列挙型メンバーの値"
+"はこれらのメソッドに渡されます::"
 
 #: ../../howto/enum.rst:1418
 msgid "TimePeriod"
-msgstr ""
+msgstr "TimePeriod"
 
 #: ../../howto/enum.rst:1420
 msgid "An example to show the :attr:`_ignore_` attribute in use::"
-msgstr ""
+msgstr ":attr:`_ignore_` 属性の使用方法のサンプルです::"
 
 #: ../../howto/enum.rst:1439
 msgid "Subclassing EnumType"
-msgstr ""
+msgstr "EnumType をサブクラス化する"
 
 #: ../../howto/enum.rst:1441
 msgid ""

@@ -1,29 +1,31 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Steven Hsu <hsuhaochun@gmail.com>, 2021
-# meowmeowcat <meowmeowcat1211@gmail.com>, 2021
+# tomo, 2021
+# Takanori Suzuki <takanori@takanory.net>, 2023
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-15 20:43+0000\n"
-"PO-Revision-Date: 2022-10-16 05:37+0800\n"
-"Last-Translator: meowmeowcat <meowmeowcat1211@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:50+0000\n"
+"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2023\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1.1\n"
 
 #: ../../tutorial/whatnow.rst:5
 msgid "What Now?"
-msgstr "現在可以來學習些什麼？"
+msgstr "さあ何を？"
 
 #: ../../tutorial/whatnow.rst:7
 msgid ""
@@ -31,18 +33,22 @@ msgid ""
 "--- you should be eager to apply Python to solving your real-world problems. "
 "Where should you go to learn more?"
 msgstr ""
-"閱讀本教學可能增強您對於使用 Python 的興趣——您應該非常渴望使用 Python 來解決"
-"在現實生活中所遭遇的問題。該從哪裡學習更多呢？"
+"このチュートリアルを読んだことで、おそらく Python を使ってみようという関心は"
+"ますます強くなったことでしょう --- 現実世界の問題を解決するために、Python を"
+"適用してみたくなったはずです。さて、それではどこで勉強をしたらよいのでしょう"
+"か？"
 
 #: ../../tutorial/whatnow.rst:11
 msgid ""
 "This tutorial is part of Python's documentation set.   Some other documents "
 "in the set are:"
-msgstr "本教學是 Python 文件中的一部分。這份文件集裡頭的其他文件包含："
+msgstr ""
+"このチュートリアルは Python のドキュメンテーションセットの一部です。セットの"
+"中の他のドキュメンテーションをいくつか紹介します:"
 
 #: ../../tutorial/whatnow.rst:14
 msgid ":ref:`library-index`:"
-msgstr ":ref:`library-index`："
+msgstr ":ref:`library-index`:"
 
 #: ../../tutorial/whatnow.rst:16
 msgid ""
@@ -54,17 +60,20 @@ msgid ""
 "other tasks. Skimming through the Library Reference will give you an idea of "
 "what's available."
 msgstr ""
-"你該好好的瀏覽這份手冊，它提供了完整（但簡潔）的參考素材像是型別、函式與標準"
-"函式庫裡的模組。標準的 Python 發行版本會包含\\ *大量*\\ 的附加程式碼。有些模"
-"組可以讀取 Unix 信箱、通過 HTTP 來檢索文件、產生亂數、分析命令列選項、壓縮資"
-"料、及許多其他任務。瀏覽函式庫參考手冊可以讓你了解有哪些模組可以用。"
+"このマニュアルをざっと眺めておくと便利です。このマニュアルは型、関数、標準ラ"
+"イブラリのモジュールについての完全なリファレンスです。標準的なPython配布物は "
+"*たくさんの* 追加コードを含んでいます。Unix メールボックスの読み込み、HTTPに"
+"よるドキュメント取得、乱数の生成、コマンドラインオプションの構文解析、データ"
+"圧縮やその他たくさんのタスクのためのモジュールがあります。ライブラリリファレ"
+"ンスをざっと見ることで、何が利用できるかのイメージをつかむことができます。"
 
 #: ../../tutorial/whatnow.rst:24
 msgid ""
 ":ref:`installing-index` explains how to install additional modules written "
 "by other Python users."
 msgstr ""
-":ref:`installing-index`：說明與解釋如何安裝其他 Python 使用者所編寫的模組。"
+":ref:`installing-index` は、他のPythonユーザによって書かれた追加モジュールを"
+"どうやってインストールするかを説明しています。"
 
 #: ../../tutorial/whatnow.rst:27
 msgid ""
@@ -72,24 +81,25 @@ msgid ""
 "semantics.  It's heavy reading, but is useful as a complete guide to the "
 "language itself."
 msgstr ""
-":ref:`reference-index`：Python 語法以及語意的詳細說明。這份文件閱讀起來會有些"
-"吃力，但作為一個語言本身的完整指南是非常有用的。"
+":ref:`reference-index`: Pythonの文法とセマンティクスを詳しく説明しています。"
+"読むのは大変ですが、言語の完全なガイドとして有用です。"
 
 #: ../../tutorial/whatnow.rst:31
 msgid "More Python resources:"
-msgstr "更多 Python 的資源："
+msgstr "さらなる Python に関するリソース:"
 
 #: ../../tutorial/whatnow.rst:33
 msgid ""
 "https://www.python.org:  The major Python web site.  It contains code, "
 "documentation, and pointers to Python-related pages around the web."
 msgstr ""
-"https://www.python.org：Python 的主要網站。它包含程式碼、文件以及連結到 "
-"Python 相關聯的網頁。"
+"https://www.python.org: 有名なPythonのWebサイト。コードやドキュメント、Python"
+"に関するWebページへのポインターを含んでいます。"
 
 #: ../../tutorial/whatnow.rst:36
 msgid "https://docs.python.org:  Fast access to Python's  documentation."
-msgstr "https://docs.python.org：快速訪問 Python 的文件。"
+msgstr ""
+"https://docs.python.org: Pythonドキュメントへの素早いアクセスを提供します。"
 
 #: ../../tutorial/whatnow.rst:38
 msgid ""
@@ -98,9 +108,10 @@ msgid ""
 "available for download.  Once you begin releasing code, you can register it "
 "here so that others can find it."
 msgstr ""
-"https://pypi.org：Python 套件索引 (Python Package Index)，之前也被暱稱為 "
-"Cheese Shop [#]_，彙總了使用者開發 Python 模組的索引，並提供模組能夠被下載。"
-"一旦開始發佈相關程式碼，你可以將開發的作品註冊到這裡並且讓其他人找到。"
+"https://pypi.org:  Python パッケージインデックス、以前は Cheese Shop [#]_ と"
+"いう愛称でも呼ばれていました。これは、ユーザ作成のダウンロードできる Python "
+"モジュールの索引です。コードのリリースをしたら、ここに登録することで他の人が"
+"見つけられます。"
 
 #: ../../tutorial/whatnow.rst:43
 msgid ""
@@ -109,17 +120,18 @@ msgid ""
 "Particularly notable contributions are collected in a book also titled "
 "Python Cookbook (O'Reilly & Associates, ISBN 0-596-00797-3.)"
 msgstr ""
-"https://code.activestate.com/recipes/langs/python/：Python Cookbook 是一個相"
-"當大的程式碼集，包含程式碼範例、較大的模組以及有用的腳本。特別值得注意的貢獻"
-"則被收集在一本名為 Python Cookbook (O'Reilly & Associates, ISBN "
-"0-596-00797-3.) 的書籍中。"
+"https://code.activestate.com/recipes/langs/python/: Python クックブックはコー"
+"ド例、モジュール、実用的なスクリプトの巨大なコレクションです。主要なものは同"
+"名の本Python Cookbook (O'Reilly & Associates, ISBN 0-596-00797-3)に収録されて"
+"います。"
 
 #: ../../tutorial/whatnow.rst:48
 msgid ""
 "https://pyvideo.org collects links to Python-related videos from conferences "
 "and user-group meetings."
 msgstr ""
-"https://pyvideo.org 從研討會與使用者群組聚會裡收集與 Python 相關的影片連結。"
+"https://pyvideo.org は学会やユーザグループの会合から Python 関連のビデオのリ"
+"ンクを集めています。"
 
 #: ../../tutorial/whatnow.rst:51
 msgid ""
@@ -128,9 +140,9 @@ msgid ""
 "as linear algebra, Fourier transforms, non-linear solvers, random number "
 "distributions, statistical analysis and the like."
 msgstr ""
-"https://scipy.org：The Scientific Python 專案是一個包含用於高速陣列運算與操作"
-"的模組，以及用於如線性代數、傅利葉變換、非線性求解器、隨機數分佈、統計分析等"
-"一系列的套件。"
+"https://scipy.org: Scientific Python プロジェクトは配列の高速な計算・操作モ"
+"ジュールに加え、線形代数、フーリエ変換、非線形ソルバー、乱数分布、統計分析な"
+"どの多くのパッケージを提供しています。"
 
 #: ../../tutorial/whatnow.rst:56
 msgid ""
@@ -142,11 +154,13 @@ msgid ""
 "new features, and announcing new modules. Mailing list archives are "
 "available at https://mail.python.org/pipermail/."
 msgstr ""
-"對於 Python 相關的疑問與問題回報，您可以張貼到新聞群組\\ :newsgroup:`comp."
-"lang.python`\\，或將它們寄至 python-list@python.org 的郵寄清單 (mailing "
-"list)。新聞群組和郵寄清單是個閘道，因此張貼到其中的郵件都將自動轉發給另一個。"
-"每天會有數以百計的內容，詢問（和回答）問題、建議新功能與發佈新的模組。郵寄清"
-"單會存檔在 https://mail.python.org/pipermail/。"
+"Python 関連の質問や問題の報告については、ニュースグループ :newsgroup:`comp."
+"lang.python` に投稿するか、またはメーリングリスト python-list@python.org に送"
+"ることができます。ニュースグループとメーリングリストはゲートウェイされます。"
+"したがって、片方に投稿されたメッセージは、もう片方へ自動的に転送されます。質"
+"問(と回答)、新しい機能の提案、新しいモジュールの発表などで、1日に数百通の投稿"
+"があります。メーリングリストのアーカイブは https://mail.python.org/"
+"pipermail/ で利用可能です。"
 
 #: ../../tutorial/whatnow.rst:64
 msgid ""
@@ -155,18 +169,18 @@ msgid ""
 "questions that come up again and again, and may already contain the solution "
 "for your problem."
 msgstr ""
-"在張貼之前，請先確認問題是否在\\ :ref:`常見問題 <faq-index>`\\（也被稱為 "
-"FAQ）這個清單內。FAQ 會回答出現很多次的問題及解答，有很多問題甚至已經包含解決"
-"問題的方法。"
+"投稿の前に、必ず :ref:`よくある質問 <faq-index>` (FAQとも呼ばれます) のリスト"
+"をチェックしてください。 FAQ は繰り返し取り上げられる多くの質問に答えていま"
+"す。あなたの問題に対する解決が既に含まれているかもしれません。"
 
 #: ../../tutorial/whatnow.rst:70
 msgid "Footnotes"
-msgstr "註解"
+msgstr "脚注"
 
 #: ../../tutorial/whatnow.rst:71
 msgid ""
 "\"Cheese Shop\" is a Monty Python's sketch: a customer enters a cheese shop, "
 "but whatever cheese he asks for, the clerk says it's missing."
 msgstr ""
-"「Cheese Shop（起司店）」是 Monty Python 的一個短劇：一位顧客進入一家起司店，"
-"但無論他要哪種起司，店員都說沒有貨。"
+"\"Cheese Shop\" は Monty Python のスケッチです: お客さんがチーズ屋に入ったけ"
+"れど、彼が求めたチーズはどれも無いとclerkが言った。"

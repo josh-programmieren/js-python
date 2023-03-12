@@ -1,30 +1,34 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# tomo, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-15 20:43+0000\n"
-"PO-Revision-Date: 2015-12-09 17:51+0000\n"
-"Last-Translator: Liang-Bo Wang <me@liang2.tw>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:12+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../library/reprlib.rst:2
 msgid ":mod:`reprlib` --- Alternate :func:`repr` implementation"
-msgstr ""
+msgstr ":mod:`reprlib` --- もう一つの :func:`repr` の実装"
 
 #: ../../library/reprlib.rst:9
 msgid "**Source code:** :source:`Lib/reprlib.py`"
-msgstr "**原始碼：**\\ :source:`Lib/reprlib.py`"
+msgstr "**ソースコード:** :source:`Lib/reprlib.py`"
 
 #: ../../library/reprlib.rst:13
 msgid ""
@@ -32,10 +36,13 @@ msgid ""
 "representations with limits on the size of the resulting strings. This is "
 "used in the Python debugger and may be useful in other contexts as well."
 msgstr ""
+":mod:`reprlib` モジュールは、結果の文字列のサイズに対する制限付きでオブジェク"
+"ト表現を生成するための手段を提供します。これは Python デバッガの中で使用され"
+"ており、他の文脈でも同様に役に立つかもしれません。"
 
 #: ../../library/reprlib.rst:17
 msgid "This module provides a class, an instance, and a function:"
-msgstr ""
+msgstr "このモジュールはクラスとインスタンス、それに関数を提供します:"
 
 #: ../../library/reprlib.rst:22
 msgid ""
@@ -44,6 +51,10 @@ msgid ""
 "types are added to avoid the generation of representations which are "
 "excessively long."
 msgstr ""
+"組み込み関数 :func:`repr` に似た関数を実装するために役に立つフォーマット用"
+"サービスを提供します。\n"
+"過度に長い表現を作り出さないようにするための大きさの制限をオブジェクト型ごと"
+"に設定できます。"
 
 #: ../../library/reprlib.rst:29
 msgid ""
@@ -51,6 +62,9 @@ msgid ""
 "repr` function described below.  Changing the attributes of this object will "
 "affect the size limits used by :func:`.repr` and the Python debugger."
 msgstr ""
+"これは下で説明される :func:`.repr` 関数を提供するために使われる :class:"
+"`Repr` のインスタンスです。このオブジェクトの属性を変更すると、 :func:`."
+"repr` と Python デバッガが使うサイズ制限に影響します。"
 
 #: ../../library/reprlib.rst:37
 msgid ""
@@ -58,6 +72,8 @@ msgid ""
 "similar to that returned by the built-in function of the same name, but with "
 "limits on most sizes."
 msgstr ""
+"これは ``aRepr`` の :meth:`~Repr.repr` メソッドです。同じ名前の組み込み関数が"
+"返す文字列と似ていますが、最大サイズに制限のある文字列を返します。"
 
 #: ../../library/reprlib.rst:41
 msgid ""
@@ -65,6 +81,9 @@ msgid ""
 "detecting recursive calls to :meth:`__repr__` and substituting a placeholder "
 "string instead."
 msgstr ""
+"サイズを制限するツールに加えて、このモジュールはさらに  :meth:`__repr__` に対"
+"する再帰呼び出しの検出とプレースホルダー文字列による置換のためのデコレータを"
+"提供します。"
 
 #: ../../library/reprlib.rst:50
 msgid ""
@@ -72,10 +91,13 @@ msgid ""
 "same thread.  If a recursive call is made, the *fillvalue* is returned, "
 "otherwise, the usual :meth:`__repr__` call is made.  For example:"
 msgstr ""
+":meth:`__repr__` メソッドに対する同一スレッド内の再帰呼び出しを検出するデコ"
+"レータです。再帰呼び出しが行われている場合 *fillvalue* が返されます。そうでな"
+"ければ通常の :meth:`__repr__` 呼び出しが行われます。例えば:"
 
 #: ../../library/reprlib.rst:72
 msgid "Repr Objects"
-msgstr "Repr 物件"
+msgstr "Reprオブジェクト"
 
 #: ../../library/reprlib.rst:74
 msgid ""
@@ -83,6 +105,9 @@ msgid ""
 "provide size limits for the representations of different object types,  and "
 "methods which format specific object types."
 msgstr ""
+":class:`Repr` インスタンスはオブジェクト型毎に表現する文字列のサイズを制限す"
+"るために使えるいくつかの属性と、特定のオブジェクト型をフォーマットするメソッ"
+"ドを提供します。"
 
 #: ../../library/reprlib.rst:81
 msgid ""
@@ -93,7 +118,7 @@ msgstr ""
 msgid ""
 "Depth limit on the creation of recursive representations.  The default is "
 "``6``."
-msgstr ""
+msgstr "再帰的な表現を作る場合の深さ制限。デフォルトは ``6`` です。"
 
 #: ../../library/reprlib.rst:100
 msgid ""
@@ -101,12 +126,17 @@ msgid ""
 "default is ``4`` for :attr:`maxdict`, ``5`` for :attr:`maxarray`, and  ``6`` "
 "for the others."
 msgstr ""
+"指定されたオブジェクト型に対するエントリ表現の数についての制限。 :attr:"
+"`maxdict` に対するデフォルトは ``4`` で、 :attr:`maxarray` は ``5`` 、その他"
+"に対しては ``6`` です。"
 
 #: ../../library/reprlib.rst:107
 msgid ""
 "Maximum number of characters in the representation for an integer.  Digits "
 "are dropped from the middle.  The default is ``40``."
 msgstr ""
+"整数の表現のおける文字数の最大値。中央の数字が抜け落ちます。デフォルトは "
+"``40`` です。"
 
 #: ../../library/reprlib.rst:113
 msgid ""
@@ -115,6 +145,10 @@ msgid ""
 "source: if escape sequences are needed in the representation, these may be "
 "mangled when the representation is shortened.  The default is ``30``."
 msgstr ""
+"文字列の表現における文字数の制限。文字列の\"通常の\"表現は文字の「元」として"
+"使われることに注意してください。表現にエスケープシーケンスが必要とされる場"
+"合、表現が短縮されるときにこれらのエスケープシーケンスの形式は崩れます。デ"
+"フォルトは ``30`` です。"
 
 #: ../../library/reprlib.rst:121
 msgid ""
@@ -122,12 +156,17 @@ msgid ""
 "formatting method is available on the :class:`Repr` object. It is applied in "
 "a similar manner as :attr:`maxstring`.  The default is ``20``."
 msgstr ""
+"この制限は :class:`Repr` オブジェクトに利用できる特定のフォーマットメソッドが"
+"ないオブジェクト型のサイズをコントロールするために使われます。 :attr:"
+"`maxstring` と同じようなやり方で適用されます。デフォルトは ``20`` です。"
 
 #: ../../library/reprlib.rst:128
 msgid ""
 "The equivalent to the built-in :func:`repr` that uses the formatting imposed "
 "by the instance."
 msgstr ""
+"このインスタンスで設定されたフォーマットを使う、組み込み :func:`repr` と等価"
+"なもの。"
 
 #: ../../library/reprlib.rst:134
 msgid ""
@@ -137,6 +176,12 @@ msgid ""
 "formatting, with ``level - 1`` for the value of *level* in the recursive  "
 "call."
 msgstr ""
+":meth:`.repr` が使う再帰的な実装。\n"
+"*obj* の型を使ってどのフォーマットメソッドを呼び出すかを決定し、それに *obj* "
+"と *level* を渡します。\n"
+"再帰呼び出しにおいて *level* の値に対して ``level - 1`` を与える再帰的な"
+"フォーマットを実行するために、型に固有のメソッドは :meth:`repr1` を呼び出しま"
+"す。"
 
 #: ../../library/reprlib.rst:143
 msgid ""
@@ -146,10 +191,15 @@ msgid ""
 "meth:`repr1`. Type-specific methods which need to recursively format a value "
 "should call ``self.repr1(subobj, level - 1)``."
 msgstr ""
+"型名に基づく名前をもつメソッドとして、特定の型に対するフォーマットメソッドは"
+"実装されます。メソッド名では、 **TYPE** は ``'_'.join(type(obj).__name__."
+"split())`` に置き換えられます。これらのメソッドへのディスパッチは :meth:"
+"`repr1` によって処理されます。再帰的に値をフォーマットする必要がある型固有の"
+"メソッドは、 ``self.repr1(subobj, level - 1)`` を呼び出します。"
 
 #: ../../library/reprlib.rst:153
 msgid "Subclassing Repr Objects"
-msgstr ""
+msgstr "Reprオブジェクトをサブクラス化する"
 
 #: ../../library/reprlib.rst:155
 msgid ""
@@ -158,3 +208,8 @@ msgid ""
 "modify the handling of types already supported. This example shows how "
 "special support for file objects could be added::"
 msgstr ""
+"更なる組み込みオブジェクト型へのサポートを追加するため、あるいはすでにサポー"
+"トされている型の扱いを変更するために、 :meth:`Repr.repr1` による動的なディス"
+"パッチは :class:`Repr` のサブクラス化に対応しています。\n"
+"この例はファイルオブジェクトのための特別なサポートを追加する方法を示していま"
+"す::"

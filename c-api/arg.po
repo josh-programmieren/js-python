@@ -1,27 +1,30 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# tomo, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-24 00:13+0000\n"
-"PO-Revision-Date: 2022-10-16 03:21+0800\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 00:47+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1.1\n"
 
 #: ../../c-api/arg.rst:6
 msgid "Parsing arguments and building values"
-msgstr ""
+msgstr "引数の解釈と値の構築"
 
 #: ../../c-api/arg.rst:8
 msgid ""
@@ -29,6 +32,8 @@ msgid ""
 "methods.  Additional information and examples are available in :ref:"
 "`extending-index`."
 msgstr ""
+"これらの関数は独自の拡張モジュール用の関数やメソッドを作成する際に便利です。"
+"詳しい情報や用例は :ref:`extending-index` にあります。"
 
 #: ../../c-api/arg.rst:12
 msgid ""
@@ -38,10 +43,15 @@ msgid ""
 "arguments.  The format strings use the same syntax for each of these "
 "functions."
 msgstr ""
+"最初に説明する 3 つの関数、 :c:func:`PyArg_ParseTuple`, :c:func:"
+"`PyArg_ParseTupleAndKeywords`,および :c:func:`PyArg_Parse` はいずれも *書式文"
+"字列 (format string)* を使います。書式文字列は、関数が受け取るはずの引数に関"
+"する情報を伝えるのに用いられます。いずれの関数における書式文字列も、同じ書式"
+"を使っています。"
 
 #: ../../c-api/arg.rst:19
 msgid "Parsing arguments"
-msgstr ""
+msgstr "引数を解析する"
 
 #: ../../c-api/arg.rst:21
 msgid ""
@@ -54,20 +64,30 @@ msgid ""
 "Python object type that matches the format unit; and the entry in [square] "
 "brackets is the type of the C variable(s) whose address should be passed."
 msgstr ""
+"書式文字列は、ゼロ個またはそれ以上の \"書式単位 (format unit)\" から成り立ち"
+"ます。 1つの書式単位は1つの Python オブジェクトを表します; 通常は単一の文字"
+"か、書式単位からなる文字列を括弧で囲ったものになります。例外として、括弧で囲"
+"われていない書式単位文字列が単一のアドレス引数に対応する場合がいくつかありま"
+"す。以下の説明では、引用符のついた形式は書式単位です; (丸)括弧で囲った部分は"
+"書式単位に対応する Python のオブジェクト型です; [角] 括弧は値をアドレス渡しす"
+"る際に使う C の変数型です。"
 
 #: ../../c-api/arg.rst:31
 msgid "Strings and buffers"
-msgstr ""
+msgstr "文字列とバッファ"
 
 #: ../../c-api/arg.rst:33
 msgid ""
 "These formats allow accessing an object as a contiguous chunk of memory. You "
 "don't have to provide raw storage for the returned unicode or bytes area."
 msgstr ""
+"以下のフォーマットはオブジェクトに連続したメモリチャンクとしてアクセスするた"
+"めのものです。返される unicode や bytes のために生のストレージを用意する必要"
+"はありません。"
 
 #: ../../c-api/arg.rst:37
 msgid "Unless otherwise stated, buffers are not NUL-terminated."
-msgstr ""
+msgstr "特に言及されていない場合、バッファーは NUL 終端されていません。"
 
 #: ../../c-api/arg.rst:39
 msgid "There are three ways strings and buffers can be converted to C:"
@@ -136,6 +156,13 @@ msgid ""
 "is raised. Unicode objects are converted to C strings using ``'utf-8'`` "
 "encoding. If this conversion fails, a :exc:`UnicodeError` is raised."
 msgstr ""
+"Unicode オブジェクトを、キャラクタ文字列を指す C のポインタに変換します。キャ"
+"ラクタ型ポインタ変数のアドレスを渡すと、すでに存在している文字列へのポインタ"
+"をその変数に記録します。C 文字列は NUL で終端されています。Python の文字列型"
+"は、 null コードポイントが途中に埋め込まれていてはなりません; もし埋め込まれ"
+"ていれば :exc:`ValueError` 例外を送出します。Unicode オブジェクトは "
+"``'utf-8'`` を使って C 文字列に変換されます。変換に失敗すると :exc:"
+"`UnicodeError` を送出します。"
 
 #: ../../c-api/arg.rst:90
 msgid ""
@@ -144,16 +171,23 @@ msgid ""
 "strings, it is preferable to use the ``O&`` format with :c:func:"
 "`PyUnicode_FSConverter` as *converter*."
 msgstr ""
+"このフォーマットは :term:`bytes-like objects <bytes-like object>` をサポート"
+"しません。\n"
+"ファイルシステムパスを受け取って C 言語の文字列に変換したい場合は、 ``O&`` "
+"フォーマットを、\n"
+"*converter* に :c:func:`PyUnicode_FSConverter` を指定して利用すると良いです。"
 
 #: ../../c-api/arg.rst:96 ../../c-api/arg.rst:164
 msgid ""
 "Previously, :exc:`TypeError` was raised when embedded null code points were "
 "encountered in the Python string."
 msgstr ""
+"以前は Python 文字列に null コードポイントが埋め込まれていたときに :exc:"
+"`TypeError` を送出していました。"
 
 #: ../../c-api/arg.rst:104
 msgid "``s*`` (:class:`str` or :term:`bytes-like object`) [Py_buffer]"
-msgstr "``s*``\\ （:class:`str` 或 :term:`bytes-like object`）[Py_buffer]"
+msgstr "``s*`` (:class:`str` または :term:`bytes-like object`) [Py_buffer]"
 
 #: ../../c-api/arg.rst:101
 msgid ""
@@ -162,6 +196,11 @@ msgid ""
 "resulting C string may contain embedded NUL bytes. Unicode objects are "
 "converted to C strings using ``'utf-8'`` encoding."
 msgstr ""
+"このフォーマットは Unicode オブジェクトと bytes-like object を受け付けて、呼"
+"び出し元から渡された :c:type:`Py_buffer` 構造体に値を格納します。\n"
+"結果の C 文字列は NUL バイトを含むかもしれません。\n"
+"Unicode オブジェクトは ``'utf-8'`` エンコーディングで C 文字列に変換されま"
+"す。"
 
 #: ../../c-api/arg.rst:111
 msgid ""
@@ -180,26 +219,30 @@ msgstr ""
 
 #: ../../c-api/arg.rst:115 ../../c-api/arg.rst:581
 msgid "``z`` (:class:`str` or ``None``) [const char \\*]"
-msgstr "``z``\\ （:class:`str` 或 ``None``）[const char \\*]"
+msgstr "``z`` (:class:`str` または ``None``) [const char \\*]"
 
 #: ../../c-api/arg.rst:114
 msgid ""
 "Like ``s``, but the Python object may also be ``None``, in which case the C "
 "pointer is set to ``NULL``."
 msgstr ""
+"``s`` に似ていますが、Python オブジェクトは ``None`` でもよく、その場合には "
+"C のポインタは ``NULL`` にセットされます。"
 
 #: ../../c-api/arg.rst:119
 msgid ""
 "``z*`` (:class:`str`, :term:`bytes-like object` or ``None``) [Py_buffer]"
 msgstr ""
-"``z*``\\ （:class:`str`\\ 、\\ :term:`bytes-like object` 或 ``None``）"
-"[Py_buffer]"
+"``z*`` (:class:`str`, :term:`bytes-like object` または ``None``) [Py_buffer]"
 
 #: ../../c-api/arg.rst:118
 msgid ""
 "Like ``s*``, but the Python object may also be ``None``, in which case the "
 "``buf`` member of the :c:type:`Py_buffer` structure is set to ``NULL``."
 msgstr ""
+"``s*`` と同じですが、 Python の ``None`` オブジェクトを受け取ることができま"
+"す。その場合、 :c:type:`Py_buffer` 構造体の ``buf`` メンバーは ``NULL`` にな"
+"ります。"
 
 #: ../../c-api/arg.rst:123
 msgid ""
@@ -212,10 +255,12 @@ msgid ""
 "Like ``s#``, but the Python object may also be ``None``, in which case the C "
 "pointer is set to ``NULL``."
 msgstr ""
+"``s#`` に似ていますが、Python オブジェクトは ``None`` でもよく、その場合には "
+"C のポインタは ``NULL`` にセットされます。"
 
 #: ../../c-api/arg.rst:134
 msgid "``y`` (read-only :term:`bytes-like object`) [const char \\*]"
-msgstr "``y``\\ （唯讀 :term:`bytes-like object`）[const char \\*]"
+msgstr "``y`` (読み出し専用の :term:`bytes-like object`) [const char \\*]"
 
 #: ../../c-api/arg.rst:126
 msgid ""
@@ -230,6 +275,8 @@ msgid ""
 "Previously, :exc:`TypeError` was raised when embedded null bytes were "
 "encountered in the bytes buffer."
 msgstr ""
+"以前は bytes バッファにヌルバイトが埋め込まれていたときに :exc:`TypeError` を"
+"送出していました。"
 
 #: ../../c-api/arg.rst:139
 msgid "``y*`` (:term:`bytes-like object`) [Py_buffer]"
@@ -240,6 +287,10 @@ msgid ""
 "This variant on ``s*`` doesn't accept Unicode objects, only bytes-like "
 "objects.  **This is the recommended way to accept binary data.**"
 msgstr ""
+"``s*`` の変形で、 Unicode オブジェクトを受け付けず、 bytes-like object のみを"
+"受け付けます。\n"
+"**バイナリデータを受け付ける目的には、このフォーマットを使うことを推奨しま"
+"す。**"
 
 #: ../../c-api/arg.rst:143
 msgid ""
@@ -252,6 +303,8 @@ msgid ""
 "This variant on ``s#`` doesn't accept Unicode objects, only bytes-like "
 "objects."
 msgstr ""
+"``s#`` の変形で、 Unicode オブジェクトを受け付けず、bytes-like object だけを"
+"受け付けます。"
 
 #: ../../c-api/arg.rst:148
 msgid "``S`` (:class:`bytes`) [PyBytesObject \\*]"
@@ -290,6 +343,13 @@ msgid ""
 "Python string must not contain embedded null code points; if it does, a :exc:"
 "`ValueError` exception is raised."
 msgstr ""
+"Python Unicodeオブジェクトを NUL終端されたUnicode文字バッファへのポインタに変"
+"換します。 :c:type:`Py_UNICODE` ポインタ変数へのアドレスを渡さなければなら"
+"ず、このアドレスに存在する Unicode バッファへのポインタが格納されます。 :c:"
+"type:`Py_UNICODE` 文字のバイト幅はコンパイルオプション(16 または32ビットのど"
+"ちらか)に依存することに注意してください。Python 文字列は null コードポイント"
+"を含んではなりません; null コードポイントを含む場合、 :exc:`ValueError` 例外"
+"が送出されます。"
 
 #: ../../c-api/arg.rst:171 ../../c-api/arg.rst:180 ../../c-api/arg.rst:188
 #: ../../c-api/arg.rst:196
@@ -297,10 +357,12 @@ msgid ""
 "Part of the old-style :c:type:`Py_UNICODE` API; please migrate to using :c:"
 "func:`PyUnicode_AsWideCharString`."
 msgstr ""
+"古いスタイルの :c:type:`Py_UNICODE` APIの一部です。:c:func:"
+"`PyUnicode_AsWideCharString` を使用するように移行してください。"
 
 #: ../../c-api/arg.rst:179
 msgid "``u#`` (:class:`str`) [const Py_UNICODE \\*, :c:type:`Py_ssize_t`]"
-msgstr "``u#`` (:class:`str`) [const Py_UNICODE \\*, :c:type:`Py_ssize_t`]"
+msgstr ""
 
 #: ../../c-api/arg.rst:173
 msgid ""
@@ -308,16 +370,21 @@ msgid ""
 "to a Unicode data buffer, the second one its length.  This variant allows "
 "null code points."
 msgstr ""
+"これは ``u`` のバリエーションで、値を二つの変数に記録します。一つ目の変数は "
+"Unicode データバッファへのポインタで、二つ目はその長さです。このフォーマット"
+"は null コードポイントを含むことができます。"
 
 #: ../../c-api/arg.rst:187
 msgid "``Z`` (:class:`str` or ``None``) [const Py_UNICODE \\*]"
-msgstr "``Z`` （:class:`str` 或 ``None``） [const Py_UNICODE \\*]"
+msgstr "``Z`` (:class:`str` または ``None``) [const Py_UNICODE \\*]"
 
 #: ../../c-api/arg.rst:182
 msgid ""
 "Like ``u``, but the Python object may also be ``None``, in which case the :c:"
 "type:`Py_UNICODE` pointer is set to ``NULL``."
 msgstr ""
+"``u`` に似ていますが、Python オブジェクトは ``None`` でもよく、その場合には :"
+"c:type:`Py_UNICODE` ポインタは ``NULL`` にセットされます。"
 
 #: ../../c-api/arg.rst:195
 msgid ""
@@ -330,6 +397,8 @@ msgid ""
 "Like ``u#``, but the Python object may also be ``None``, in which case the :"
 "c:type:`Py_UNICODE` pointer is set to ``NULL``."
 msgstr ""
+"``u#`` に似ていますが、 Python オブジェクトは ``None`` でもよく、その場合に"
+"は :c:type:`Py_UNICODE` ポインタは ``NULL`` にセットされます。"
 
 #: ../../c-api/arg.rst:200
 msgid "``U`` (:class:`str`) [PyObject \\*]"
@@ -344,7 +413,7 @@ msgstr ""
 
 #: ../../c-api/arg.rst:206
 msgid "``w*`` (read-write :term:`bytes-like object`) [Py_buffer]"
-msgstr "``w*`` （可讀寫 :term:`bytes-like object`） [Py_buffer]"
+msgstr "``w*`` (読み書き可能な :term:`bytes-like object`) [Py_buffer]"
 
 #: ../../c-api/arg.rst:203
 msgid ""
@@ -353,6 +422,10 @@ msgid ""
 "The buffer may contain embedded null bytes. The caller have to call :c:func:"
 "`PyBuffer_Release` when it is done with the buffer."
 msgstr ""
+"このフォーマットは、読み書き可能な buffer interface を実装したオブジェクトを"
+"受け付けます。 呼び出し元から渡された :c:type:`Py_buffer` 構造体に値を格納し"
+"ます。バッファは nullバイトを含むかもしれず、呼び出し元はバッファを使い終わっ"
+"たら :c:func:`PyBuffer_Release` を呼び出さなければなりません。"
 
 #: ../../c-api/arg.rst:223
 msgid "``es`` (:class:`str`) [const char \\*encoding, char \\*\\*buffer]"
@@ -363,6 +436,8 @@ msgid ""
 "This variant on ``s`` is used for encoding Unicode into a character buffer. "
 "It only works for encoded data without embedded NUL bytes."
 msgstr ""
+"これは ``s`` の変化形で、Unicodeをキャラクタ型バッファにエンコードするために"
+"用いられます。NULバイトが埋め込まれていないデータでのみ動作します。"
 
 #: ../../c-api/arg.rst:212
 msgid ""
@@ -382,12 +457,18 @@ msgid ""
 "newly allocated storage.  The caller is responsible for calling :c:func:"
 "`PyMem_Free` to free the allocated buffer after use."
 msgstr ""
+":c:func:`PyArg_ParseTuple` を使うと、必要なサイズのバッファを確保し、そのバッ"
+"ファにエンコード後のデータをコピーして、 *\\*buffer* がこの新たに確保された記"
+"憶領域を指すように変更します。呼び出し側には、確保されたバッファを使い終わっ"
+"た後に :c:func:`PyMem_Free` で解放する責任があります。"
 
 #: ../../c-api/arg.rst:228
 msgid ""
 "``et`` (:class:`str`, :class:`bytes` or :class:`bytearray`) [const char "
 "\\*encoding, char \\*\\*buffer]"
 msgstr ""
+"``et`` (:class:`str`, :class:`bytes` または :class:`bytearray`) [const char "
+"\\*encoding, char \\*\\*buffer]"
 
 #: ../../c-api/arg.rst:226
 msgid ""
@@ -395,6 +476,9 @@ msgid ""
 "recoding them.  Instead, the implementation assumes that the byte string "
 "object uses the encoding passed in as parameter."
 msgstr ""
+"``es`` と同じです。ただし、バイト文字列オブジェクトをエンコードし直さずに渡し"
+"ます。その代わり、実装ではバイト文字列オブジェクトがパラメタに渡したエンコー"
+"ドを使っているものと仮定します。"
 
 #: ../../c-api/arg.rst:259
 msgid ""
@@ -408,6 +492,9 @@ msgid ""
 "Unlike the ``es`` format, this variant allows input data which contains NUL "
 "characters."
 msgstr ""
+"``s#`` の変化形で、Unicode をキャラクタ型バッファにエンコードするために用いら"
+"れます。``es`` 書式違って、この変化形はバイトが埋め込まれていてもかまいませ"
+"ん。"
 
 #: ../../c-api/arg.rst:235
 msgid ""
@@ -424,7 +511,7 @@ msgstr ""
 
 #: ../../c-api/arg.rst:245
 msgid "There are two modes of operation:"
-msgstr ""
+msgstr "この書式の処理には二つのモードがあります:"
 
 #: ../../c-api/arg.rst:247
 msgid ""
@@ -434,6 +521,10 @@ msgid ""
 "responsible for calling :c:func:`PyMem_Free` to free the allocated buffer "
 "after usage."
 msgstr ""
+"*\\*buffer* が ``NULL`` ポインタを指している場合、関数は必要なサイズのバッ"
+"ファを確保し、そのバッファにエンコード後のデータをコピーして、 *\\*buffer* が"
+"この新たに確保された記憶領域を指すように変更します。呼び出し側には、確保され"
+"たバッファを使い終わった後に :c:func:`PyMem_Free` で解放する責任があります。"
 
 #: ../../c-api/arg.rst:252
 msgid ""
@@ -443,12 +534,19 @@ msgid ""
 "will then copy the encoded data into the buffer and NUL-terminate it.  If "
 "the buffer is not large enough, a :exc:`ValueError` will be set."
 msgstr ""
+"*\\*buffer* が非 ``NULL`` のポインタ (すでにメモリ確保済みのバッファ) を指し"
+"ている場合、 :c:func:`PyArg_ParseTuple` はこのメモリ位置をバッファとして用"
+"い、 *\\*buffer_length* の初期値をバッファサイズとして用います。 "
+"PyArg_ParseTuple は次にエンコード済みのデータをバッファにコピーして、NUL で終"
+"端します。バッファの大きさが足りなければ :exc:`ValueError` がセットされます。"
 
 #: ../../c-api/arg.rst:258
 msgid ""
 "In both cases, *\\*buffer_length* is set to the length of the encoded data "
 "without the trailing NUL byte."
 msgstr ""
+"どちらの場合も、 *\\*buffer_length* は終端の NUL バイトを含まないエンコード済"
+"みデータの長さにセットされます。"
 
 #: ../../c-api/arg.rst:264
 msgid ""
@@ -462,10 +560,13 @@ msgid ""
 "recoding them. Instead, the implementation assumes that the byte string "
 "object uses the encoding passed in as parameter."
 msgstr ""
+"``es#`` と同じです。ただし、バイト文字列オブジェクトをエンコードし直さずに渡"
+"します。その代わり、実装ではバイト文字列オブジェクトがパラメタに渡したエン"
+"コードを使っているものと仮定します。"
 
 #: ../../c-api/arg.rst:267
 msgid "Numbers"
-msgstr "數字"
+msgstr "数"
 
 #: ../../c-api/arg.rst:271
 msgid "``b`` (:class:`int`) [unsigned char]"
@@ -493,7 +594,7 @@ msgstr "``h`` (:class:`int`) [short int]"
 
 #: ../../c-api/arg.rst:278
 msgid "Convert a Python integer to a C :c:expr:`short int`."
-msgstr "將一個 Python 整數轉換成 C 的 :c:expr:`short int`。"
+msgstr ""
 
 #: ../../c-api/arg.rst:282 ../../c-api/arg.rst:618
 msgid "``H`` (:class:`int`) [unsigned short int]"
@@ -504,8 +605,6 @@ msgid ""
 "Convert a Python integer to a C :c:expr:`unsigned short int`, without "
 "overflow checking."
 msgstr ""
-"將一個 Python 整數轉換成 C 的 :c:expr:`unsigned short int`，轉換過程無溢位檢"
-"查。"
 
 #: ../../c-api/arg.rst:285 ../../c-api/arg.rst:603
 msgid "``i`` (:class:`int`) [int]"
@@ -513,7 +612,7 @@ msgstr "``i`` (:class:`int`) [int]"
 
 #: ../../c-api/arg.rst:285
 msgid "Convert a Python integer to a plain C :c:expr:`int`."
-msgstr "將一個 Python 整數轉換成 C 的 :c:expr:`int`。"
+msgstr ""
 
 #: ../../c-api/arg.rst:289 ../../c-api/arg.rst:621
 msgid "``I`` (:class:`int`) [unsigned int]"
@@ -524,7 +623,6 @@ msgid ""
 "Convert a Python integer to a C :c:expr:`unsigned int`, without overflow "
 "checking."
 msgstr ""
-"將一個 Python 整數轉換成 C 的 :c:expr:`unsigned int`，轉換過程無溢位檢查。"
 
 #: ../../c-api/arg.rst:292 ../../c-api/arg.rst:612
 msgid "``l`` (:class:`int`) [long int]"
@@ -532,7 +630,7 @@ msgstr "``l`` (:class:`int`) [long int]"
 
 #: ../../c-api/arg.rst:292
 msgid "Convert a Python integer to a C :c:expr:`long int`."
-msgstr "將一個 Python 整數轉換成 C 的 :c:expr:`long int`。"
+msgstr ""
 
 #: ../../c-api/arg.rst:296 ../../c-api/arg.rst:624
 msgid "``k`` (:class:`int`) [unsigned long]"
@@ -543,7 +641,6 @@ msgid ""
 "Convert a Python integer to a C :c:expr:`unsigned long` without overflow "
 "checking."
 msgstr ""
-"將一個 Python 整數轉換成 C 的 :c:expr:`unsigned long`，轉換過程無溢位檢查。"
 
 #: ../../c-api/arg.rst:299 ../../c-api/arg.rst:627
 msgid "``L`` (:class:`int`) [long long]"
@@ -551,7 +648,7 @@ msgstr "``L`` (:class:`int`) [long long]"
 
 #: ../../c-api/arg.rst:299
 msgid "Convert a Python integer to a C :c:expr:`long long`."
-msgstr "將一個 Python 整數轉換成 C 的 :c:expr:`long long`。"
+msgstr ""
 
 #: ../../c-api/arg.rst:303 ../../c-api/arg.rst:630
 msgid "``K`` (:class:`int`) [unsigned long long]"
@@ -562,20 +659,18 @@ msgid ""
 "Convert a Python integer to a C :c:expr:`unsigned long long` without "
 "overflow checking."
 msgstr ""
-"將一個 Python 整數轉換成 C 的 :c:expr:`unsigned long long`，轉換過程無溢位檢"
-"查。"
 
 #: ../../c-api/arg.rst:306 ../../c-api/arg.rst:633
 msgid "``n`` (:class:`int`) [:c:type:`Py_ssize_t`]"
-msgstr "``n`` (:class:`int`) [:c:type:`Py_ssize_t`]"
+msgstr ""
 
 #: ../../c-api/arg.rst:306
 msgid "Convert a Python integer to a C :c:type:`Py_ssize_t`."
-msgstr "將一個 Python 整數轉換成 C 的 :c:type:`Py_ssize_t`。"
+msgstr "Python の整数をCの :c:type:`Py_ssize_t` 型に変換します。"
 
 #: ../../c-api/arg.rst:313
 msgid "``c`` (:class:`bytes` or :class:`bytearray` of length 1) [char]"
-msgstr "``c``\\ （:class:`bytes` 或長度為 1 的 :class:`bytearray`）[char]"
+msgstr "``c`` (長さ 1 の、 :class:`bytes` または :class:`bytearray`) [char]"
 
 #: ../../c-api/arg.rst:309
 msgid ""
@@ -585,11 +680,11 @@ msgstr ""
 
 #: ../../c-api/arg.rst:312
 msgid "Allow :class:`bytearray` objects."
-msgstr "允許 :class:`bytearray` 物件。"
+msgstr ":class:`bytearray` を受け付けるようになりました。"
 
 #: ../../c-api/arg.rst:317 ../../c-api/arg.rst:641
 msgid "``C`` (:class:`str` of length 1) [int]"
-msgstr "``C``\\ （長度為 1 的 :class:`str`）[int]"
+msgstr "``C`` (長さ 1 の :class:`str`) [int]"
 
 #: ../../c-api/arg.rst:316
 msgid ""
@@ -603,7 +698,7 @@ msgstr "``f`` (:class:`float`) [float]"
 
 #: ../../c-api/arg.rst:320
 msgid "Convert a Python floating point number to a C :c:expr:`float`."
-msgstr "將一個 Python 浮點數轉換成 C 的 :c:type::c:expr:`float`。"
+msgstr ""
 
 #: ../../c-api/arg.rst:323 ../../c-api/arg.rst:644
 msgid "``d`` (:class:`float`) [double]"
@@ -611,7 +706,7 @@ msgstr "``d`` (:class:`float`) [double]"
 
 #: ../../c-api/arg.rst:323
 msgid "Convert a Python floating point number to a C :c:expr:`double`."
-msgstr "將一個 Python 浮點數轉換成 C 的 :c:type::c:expr:`double`。"
+msgstr ""
 
 #: ../../c-api/arg.rst:326
 msgid "``D`` (:class:`complex`) [Py_complex]"
@@ -619,15 +714,15 @@ msgstr "``D`` (:class:`complex`) [Py_complex]"
 
 #: ../../c-api/arg.rst:326
 msgid "Convert a Python complex number to a C :c:type:`Py_complex` structure."
-msgstr "將一個 Python 複數轉換成 C 的 :c:type:`Py_complex` 結構。"
+msgstr "Python の複素数型を、 C の :c:type:`Py_complex` 構造体に変換します。"
 
 #: ../../c-api/arg.rst:329
 msgid "Other objects"
-msgstr "其他物件"
+msgstr "その他のオブジェクト"
 
 #: ../../c-api/arg.rst:334 ../../c-api/arg.rst:658
 msgid "``O`` (object) [PyObject \\*]"
-msgstr "``O``\\ （物件）[PyObject \\*]"
+msgstr "``O`` (object) [PyObject \\*]"
 
 #: ../../c-api/arg.rst:332
 msgid ""
@@ -635,10 +730,14 @@ msgid ""
 "program thus receives the actual object that was passed.  The object's "
 "reference count is not increased.  The pointer stored is not ``NULL``."
 msgstr ""
+"Python オブジェクトを (一切変換を行わずに) C の Python オブジェクト型ポインタ"
+"に保存します。これにより、C プログラムは実際のオブジェクトを受け渡しされま"
+"す。オブジェクトの参照カウントは増加しません。保存されるポインタが ``NULL`` "
+"になることはありません。"
 
 #: ../../c-api/arg.rst:341
 msgid "``O!`` (object) [*typeobject*, PyObject \\*]"
-msgstr "``O!``\\ （物件）[*typeobject*, PyObject \\*]"
+msgstr "``O!`` (object) [*typeobject*, PyObject \\*]"
 
 #: ../../c-api/arg.rst:337
 msgid ""
@@ -651,7 +750,7 @@ msgstr ""
 
 #: ../../c-api/arg.rst:366 ../../c-api/arg.rst:672
 msgid "``O&`` (object) [*converter*, *anything*]"
-msgstr "``O&``\\ （物件）[*converter*, *anything*]"
+msgstr "``O&`` (object) [*converter*, *anything*]"
 
 #: ../../c-api/arg.rst:346
 msgid ""
@@ -679,10 +778,14 @@ msgid ""
 "call, the *object* parameter will be ``NULL``; *address* will have the same "
 "value as in the original call."
 msgstr ""
+"もし *converter* が ``Py_CLEANUP_SUPPORTED`` を返すと、引数のパースが失敗した"
+"際に、コンバーターをもう一度呼び出し、すでに割り当てたメモリを開放するチャン"
+"スを与えます。二度目の呼び出しでは *object* 引数は ``NULL`` になり、"
+"*address* は最初の呼び出しと同じ値になります。"
 
 #: ../../c-api/arg.rst:365
 msgid "``Py_CLEANUP_SUPPORTED`` was added."
-msgstr "加入 ``Py_CLEANUP_SUPPORTED``。"
+msgstr "``Py_CLEANUP_SUPPORTED`` の追加。"
 
 #: ../../c-api/arg.rst:375
 msgid "``p`` (:class:`bool`) [int]"
@@ -696,6 +799,12 @@ msgid ""
 "accepts any valid Python value.  See :ref:`truth` for more information about "
 "how Python tests values for truth."
 msgstr ""
+"真偽値が求められる箇所 (a boolean **p**\\ redicate) に渡された値を判定し、そ"
+"の結果を等価な C の true/false 整数値に変換します。\n"
+"もし式が真なら int には ``1`` が、偽なら ``0`` が設定されます。この関数は任意"
+"の有効なPython値を受け付けます。\n"
+"Pythonが値の真偽をどのように判定するかを知りたければ、 :ref:`truth` を参照し"
+"てください。"
 
 #: ../../c-api/arg.rst:380 ../../c-api/arg.rst:675
 msgid "``(items)`` (:class:`tuple`) [*matching-items*]"
@@ -707,6 +816,9 @@ msgid ""
 "units in *items*.  The C arguments must correspond to the individual format "
 "units in *items*.  Format units for sequences may be nested."
 msgstr ""
+"オブジェクトは *items* に入っている書式単位の数だけの長さを持つ Python のシー"
+"ケンス型でなければなりません。各 C 引数は *items* 内の個々の書式単位に対応づ"
+"けできなければなりません。シーケンスの書式単位は入れ子構造にできます。"
 
 #: ../../c-api/arg.rst:382
 msgid ""
@@ -716,12 +828,20 @@ msgid ""
 "too small to receive the value (actually, the semantics are inherited from "
 "downcasts in C --- your mileage may vary)."
 msgstr ""
+"\"長\" 整数 (プラットフォームの :const:`LONG_MAX` を超える値の整数) を渡すの"
+"は可能です; しかしながら、適切な値域チェックはまったく行われません --- 値を受"
+"け取るためのフィールドが、値全てを受け取るには小さすぎる場合、上桁のビット群"
+"は暗黙のうちに切り詰められます (実際のところ、このセマンティクスは C のダウン"
+"キャスト (downcast) から継承しています --- その恩恵は人それぞれかもしれません"
+"が)。"
 
 #: ../../c-api/arg.rst:388
 msgid ""
 "A few other characters have a meaning in a format string.  These may not "
 "occur inside nested parentheses.  They are:"
 msgstr ""
+"その他、書式文字列において意味を持つ文字がいくつかあります。それらの文字は括"
+"弧による入れ子内には使えません。以下に文字を示します:"
 
 #: ../../c-api/arg.rst:396
 msgid "``|``"
@@ -735,6 +855,10 @@ msgid ""
 "specified, :c:func:`PyArg_ParseTuple` does not touch the contents of the "
 "corresponding C variable(s)."
 msgstr ""
+"Python 引数リスト中で、この文字以降の引数がオプションであることを示します。オ"
+"プションの引数に対応する C の変数はデフォルトの値で初期化しておかなければなり"
+"ません --- オプションの引数が省略された場合、 :c:func:`PyArg_ParseTuple` は対"
+"応する C 変数の内容に手を加えません。"
 
 #: ../../c-api/arg.rst:405
 msgid "``$``"
@@ -747,6 +871,10 @@ msgid ""
 "keyword-only arguments must also be optional arguments, so ``|`` must always "
 "be specified before ``$`` in the format string."
 msgstr ""
+":c:func:`PyArg_ParseTupleAndKeywords` でのみ使用可能: 後続のPython引数がキー"
+"ワード専用であることを示します。\n"
+"現在、すべてのキーワード専用引数は任意の引数でなければならず、そのため フォー"
+"マット文字列中の ``|`` は常に ``$`` より前に指定されなければなりません。"
 
 #: ../../c-api/arg.rst:410
 msgid "``:``"
@@ -758,6 +886,9 @@ msgid ""
 "the function name in error messages (the \"associated value\" of the "
 "exception that :c:func:`PyArg_ParseTuple` raises)."
 msgstr ""
+"この文字があると、書式単位の記述はそこで終わります; コロン以降の文字列は、エ"
+"ラーメッセージにおける関数名 (:c:func:`PyArg_ParseTuple` が送出する例外の "
+"\"付属値 (associated value)\") として使われます。"
 
 #: ../../c-api/arg.rst:415
 msgid "``;``"
@@ -769,12 +900,18 @@ msgid ""
 "as the error message *instead* of the default error message.  ``:`` and ``;"
 "`` mutually exclude each other."
 msgstr ""
+"この文字があると、書式単位の記述はそこで終わります; セミコロン以降の文字列"
+"は、デフォルトエラーメッセージを *置き換える* エラーメッセージとして使われま"
+"す。 ``:`` と ``;`` は相互に排他の文字です。"
 
 #: ../../c-api/arg.rst:417
 msgid ""
 "Note that any Python object references which are provided to the caller are "
 "*borrowed* references; do not decrement their reference count!"
 msgstr ""
+"呼び出し側に提供されるオブジェクトへの参照はすべて *借用* 参照 (borrowed "
+"reference) になります; これらのオブジェクトの参照カウントをデクリメントしては"
+"なりません!"
 
 #: ../../c-api/arg.rst:420
 msgid ""
@@ -785,6 +922,11 @@ msgid ""
 "values; they should match what is specified for the corresponding format "
 "unit in that case."
 msgstr ""
+"以下の関数に渡す補助引数 (additional argument) は、書式文字列から決定される型"
+"へのアドレスでなければなりません; 補助引数に指定したアドレスは、タプルから入"
+"力された値を保存するために使います。上の書式単位のリストで説明したように、補"
+"助引数を入力値として使う場合がいくつかあります; その場合、対応する書式単位の"
+"指定する形式に従うようにしなければなりません。"
 
 #: ../../c-api/arg.rst:426
 msgid ""
@@ -798,7 +940,7 @@ msgstr ""
 
 #: ../../c-api/arg.rst:435
 msgid "API Functions"
-msgstr "API 函式"
+msgstr "API 関数"
 
 #: ../../c-api/arg.rst:439
 msgid ""
@@ -806,12 +948,16 @@ msgid ""
 "into local variables.  Returns true on success; on failure, it returns false "
 "and raises the appropriate exception."
 msgstr ""
+"位置引数のみを引数にとる関数のパラメタを解釈して、ローカルな変数に変換しま"
+"す。成功すると真を返します;失敗すると偽を返し、適切な例外を送出します。"
 
 #: ../../c-api/arg.rst:446
 msgid ""
 "Identical to :c:func:`PyArg_ParseTuple`, except that it accepts a va_list "
 "rather than a variable number of arguments."
 msgstr ""
+":c:func:`PyArg_ParseTuple` と同じですが、可変長の引数ではなく *va_list* を引"
+"数にとります。"
 
 #: ../../c-api/arg.rst:452
 msgid ""
@@ -821,18 +967,24 @@ msgid ""
 "`positional-only parameters <positional-only_parameter>`. Returns true on "
 "success; on failure, it returns false and raises the appropriate exception."
 msgstr ""
+"位置引数とキーワード引数の両者を取る関数の引数を解釈します。\n"
+"*keywords* 引数は ``NULL`` で終端されたキーワード名の配列です。\n"
+"空の名前は :ref:`位置専用引数 <positional-only_parameter>` を示します。\n"
+"成功した場合、真を返します。失敗した場合は偽を返し、適切な例外を送出します。"
 
 #: ../../c-api/arg.rst:459
 msgid ""
 "Added support for :ref:`positional-only parameters <positional-"
 "only_parameter>`."
-msgstr ""
+msgstr ":ref:`位置専用引数 <positional-only_parameter>` を追加した。"
 
 #: ../../c-api/arg.rst:466
 msgid ""
 "Identical to :c:func:`PyArg_ParseTupleAndKeywords`, except that it accepts a "
 "va_list rather than a variable number of arguments."
 msgstr ""
+":c:func:`PyArg_ParseTupleAndKeywords` と同じですが、可変長の引数ではなく "
+"*va_list* を引数にとります。"
 
 #: ../../c-api/arg.rst:472
 msgid ""
@@ -840,6 +992,9 @@ msgid ""
 "is only needed if :c:func:`PyArg_ParseTupleAndKeywords` is not used, since "
 "the latter already does this check."
 msgstr ""
+"キーワード引数を格納した辞書のキーが文字列であることを確認します。この関数"
+"は :c:func:`PyArg_ParseTupleAndKeywords` を使用しないときにのみ必要で、その理"
+"由は後者の関数は同様のチェックを実施するためです。"
 
 #: ../../c-api/arg.rst:482
 msgid ""
@@ -851,6 +1006,13 @@ msgid ""
 "does remain a convenient way to decompose other tuples, however, and may "
 "continue to be used for that purpose."
 msgstr ""
+"\"旧スタイル\" の関数における引数リストを分析するために使われる関数です --- "
+"旧スタイルの関数は、引数解釈手法に、Python 3 で削除された  :const:"
+"`METH_OLDARGS` を使います。新たに書かれるコードでのパラメタ解釈にはこの関数の"
+"使用は奨められず、標準のインタプリタにおけるほとんどのコードがもはや引数解釈"
+"のためにこの関数を使わないように変更済みです。この関数を残しているのは、この"
+"関数が依然として引数以外のタプルを分析する上で便利だからですが、この目的にお"
+"いては将来も使われつづけるかもしれません。"
 
 #: ../../c-api/arg.rst:493
 msgid ""
@@ -875,16 +1037,20 @@ msgid ""
 "This is an example of the use of this function, taken from the sources for "
 "the :mod:`_weakref` helper module for weak references::"
 msgstr ""
+"この関数の使用例を以下に示します。この例は、弱参照のための :mod:`_weakref` 補"
+"助モジュールのソースコードからとったものです::"
 
 #: ../../c-api/arg.rst:524
 msgid ""
 "The call to :c:func:`PyArg_UnpackTuple` in this example is entirely "
 "equivalent to this call to :c:func:`PyArg_ParseTuple`::"
 msgstr ""
+"この例における :c:func:`PyArg_UnpackTuple` 呼び出しは、 :c:func:"
+"`PyArg_ParseTuple` を使った以下の呼び出しと全く等価です::"
 
 #: ../../c-api/arg.rst:532
 msgid "Building values"
-msgstr ""
+msgstr "値の構築"
 
 #: ../../c-api/arg.rst:536
 msgid ""
@@ -902,6 +1068,11 @@ msgid ""
 "unit, it returns whatever object is described by that format unit.  To force "
 "it to return a tuple of size 0 or one, parenthesize the format string."
 msgstr ""
+":c:func:`Py_BuildValue` は常にタプルを生成するとは限りません。この関数がタプ"
+"ルを生成するのは、書式文字列に二つ以上の書式単位が入っているときだけです。書"
+"式文字列が空の場合 ``None`` を返します; 書式単位が厳密に一つだけ入っている場"
+"合、書式単位で指定されている何らかのオブジェクト単体を返します。サイズがゼロ"
+"や 1 のタプルを返すように強制するには、丸括弧で囲われた書式文字列を使います。"
 
 #: ../../c-api/arg.rst:547
 msgid ""
@@ -913,6 +1084,13 @@ msgid ""
 "code is responsible for calling :c:func:`free` for that memory once :c:func:"
 "`Py_BuildValue` returns."
 msgstr ""
+"書式単位 ``s`` や ``s#`` の場合のように、オブジェクトを構築する際にデータを供"
+"給するためにメモリバッファをパラメタとして渡す場合には、指定したデータはコ"
+"ピーされます。 :c:func:`Py_BuildValue` が生成したオブジェクトは、呼び出し側が"
+"提供したバッファを決して参照しません。別の言い方をすれば、 :c:func:`malloc` "
+"を呼び出してメモリを確保し、それを :c:func:`Py_BuildValue` に渡した場合、コー"
+"ド内で :c:func:`Py_BuildValue` が返った後で :c:func:`free` を呼び出す責任があ"
+"るということです。"
 
 #: ../../c-api/arg.rst:555
 msgid ""
@@ -921,6 +1099,9 @@ msgid ""
 "return; and the entry in [square] brackets is the type of the C value(s) to "
 "be passed."
 msgstr ""
+"以下の説明では、引用符のついた形式は書式単位です; (丸)括弧で囲った部分は書式"
+"単位が返す Python のオブジェクト型です; [角] 括弧は関数に渡す値の C 変数型で"
+"す。"
 
 #: ../../c-api/arg.rst:559
 msgid ""
@@ -928,22 +1109,27 @@ msgid ""
 "(but not within format units such as ``s#``).  This can be used to make long "
 "format strings a tad more readable."
 msgstr ""
+"書式文字列内では、(``s#`` のような書式単位を除いて) スペース、タブ、コロンお"
+"よびコンマは無視されます。これらの文字を使うと、長い書式文字列をちょっとだけ"
+"読みやすくできます。"
 
 #: ../../c-api/arg.rst:565
 msgid "``s`` (:class:`str` or ``None``) [const char \\*]"
-msgstr "``s``\\ （:class:`str` 或 ``None``）[const char \\*]"
+msgstr "``s`` (:class:`str` または ``None``) [const char \\*]"
 
 #: ../../c-api/arg.rst:564
 msgid ""
 "Convert a null-terminated C string to a Python :class:`str` object using "
 "``'utf-8'`` encoding. If the C string pointer is ``NULL``, ``None`` is used."
 msgstr ""
+"null終端された C 文字列を、 ``'utf-8'`` エンコーディングを用いて、 Python :"
+"class:`str` オブジェクトに変換します。もし C 文字列ポインタが ``NULL`` の場"
+"合、 ``None`` になります。"
 
 #: ../../c-api/arg.rst:570
 msgid ""
 "``s#`` (:class:`str` or ``None``) [const char \\*, :c:type:`Py_ssize_t`]"
 msgstr ""
-"``s#``\\ （:class:`str` 或 ``None``）[const char \\*, :c:type:`Py_ssize_t`]"
 
 #: ../../c-api/arg.rst:568
 msgid ""
@@ -951,6 +1137,9 @@ msgid ""
 "``'utf-8'`` encoding. If the C string pointer is ``NULL``, the length is "
 "ignored and ``None`` is returned."
 msgstr ""
+"C 文字列とその長さを ``'utf-8'`` エンコーディングを使って Python :class:"
+"`str` オブジェクトに変換します。C 文字列ポインタが ``NULL`` の場合、長さは無"
+"視され、 ``None`` になります。"
 
 #: ../../c-api/arg.rst:574
 msgid "``y`` (:class:`bytes`) [const char \\*]"
@@ -961,30 +1150,33 @@ msgid ""
 "This converts a C string to a Python :class:`bytes` object.  If the C string "
 "pointer is ``NULL``, ``None`` is returned."
 msgstr ""
+"C 文字列をPython :class:`bytes` オブジェクトに変換します。もしC 文字列ポイン"
+"タが ``NULL`` だった場合、``None`` を返します。"
 
 #: ../../c-api/arg.rst:578
 msgid "``y#`` (:class:`bytes`) [const char \\*, :c:type:`Py_ssize_t`]"
-msgstr "``y#`` (:class:`bytes`) [const char \\*, :c:type:`Py_ssize_t`]"
+msgstr ""
 
 #: ../../c-api/arg.rst:577
 msgid ""
 "This converts a C string and its lengths to a Python object.  If the C "
 "string pointer is ``NULL``, ``None`` is returned."
 msgstr ""
+"これは C 文字列とその長さから Python オブジェクトに変換します。C 文字列ポイン"
+"タが ``NULL`` の場合、長さは無視され ``None`` になります。"
 
 #: ../../c-api/arg.rst:581 ../../c-api/arg.rst:597
 msgid "Same as ``s``."
-msgstr "和 ``s`` 相同。"
+msgstr "``s`` と同じです。"
 
 #: ../../c-api/arg.rst:584
 msgid ""
 "``z#`` (:class:`str` or ``None``) [const char \\*, :c:type:`Py_ssize_t`]"
 msgstr ""
-"``z#``\\ （:class:`str` 或 ``None``）[const char \\*, :c:type:`Py_ssize_t`]"
 
 #: ../../c-api/arg.rst:584 ../../c-api/arg.rst:600
 msgid "Same as ``s#``."
-msgstr "和 ``s#`` 相同。"
+msgstr "``s#`` と同じです。"
 
 #: ../../c-api/arg.rst:589
 msgid "``u`` (:class:`str`) [const wchar_t \\*]"
@@ -999,7 +1191,7 @@ msgstr ""
 
 #: ../../c-api/arg.rst:594
 msgid "``u#`` (:class:`str`) [const wchar_t \\*, :c:type:`Py_ssize_t`]"
-msgstr "``u#`` (:class:`str`) [const wchar_t \\*, :c:type:`Py_ssize_t`]"
+msgstr ""
 
 #: ../../c-api/arg.rst:592
 msgid ""
@@ -1007,20 +1199,22 @@ msgid ""
 "Unicode object.   If the Unicode buffer pointer is ``NULL``, the length is "
 "ignored and ``None`` is returned."
 msgstr ""
+"Unicode (UTF-16 または UCS-4) データのバッファとその長さから Python Unicode "
+"オブジェクトに変換します。 Unicode バッファポインタが ``NULL`` の場合、長さは"
+"無視され ``None`` になります。"
 
 #: ../../c-api/arg.rst:597
 msgid "``U`` (:class:`str` or ``None``) [const char \\*]"
-msgstr "``U``\\ （:class:`str` 或 ``None``）[const char \\*]"
+msgstr "``U`` (:class:`str` または ``None``) [const char \\*]"
 
 #: ../../c-api/arg.rst:600
 msgid ""
 "``U#`` (:class:`str` or ``None``) [const char \\*, :c:type:`Py_ssize_t`]"
 msgstr ""
-"``U#``\\ （:class:`str` 或 ``None``）[const char \\*, :c:type:`Py_ssize_t`]"
 
 #: ../../c-api/arg.rst:603
 msgid "Convert a plain C :c:expr:`int` to a Python integer object."
-msgstr "將一個 C 的 :c:expr:`int` 轉換成 Python 整數物件。"
+msgstr ""
 
 #: ../../c-api/arg.rst:606
 msgid "``b`` (:class:`int`) [char]"
@@ -1028,71 +1222,67 @@ msgstr "``b`` (:class:`int`) [char]"
 
 #: ../../c-api/arg.rst:606
 msgid "Convert a plain C :c:expr:`char` to a Python integer object."
-msgstr "將一個 C 的 :c:expr:`char` 轉換成 Python 整數物件。"
+msgstr ""
 
 #: ../../c-api/arg.rst:609
 msgid "Convert a plain C :c:expr:`short int` to a Python integer object."
-msgstr "將一個 C 的 :c:expr:`short int` 轉換成 Python 整數物件。"
+msgstr ""
 
 #: ../../c-api/arg.rst:612
 msgid "Convert a C :c:expr:`long int` to a Python integer object."
-msgstr "將一個 C 的 :c:expr:`long int` 轉換成 Python 整數物件。"
+msgstr ""
 
 #: ../../c-api/arg.rst:615
 msgid "Convert a C :c:expr:`unsigned char` to a Python integer object."
-msgstr "將一個 C 的 :c:expr:`unsigned char` 轉換成 Python 整數物件。"
+msgstr ""
 
 #: ../../c-api/arg.rst:618
 msgid "Convert a C :c:expr:`unsigned short int` to a Python integer object."
-msgstr "將一個 C 的 :c:expr:`unsigned short int` 轉換成 Python 整數物件。"
+msgstr ""
 
 #: ../../c-api/arg.rst:621
 msgid "Convert a C :c:expr:`unsigned int` to a Python integer object."
-msgstr "將一個 C 的 :c:expr:`unsigned int` 轉換成 Python 整數物件。"
+msgstr ""
 
 #: ../../c-api/arg.rst:624
 msgid "Convert a C :c:expr:`unsigned long` to a Python integer object."
-msgstr "將一個 C 的 :c:expr:`unsigned long` 轉換成 Python 整數物件。"
+msgstr ""
 
 #: ../../c-api/arg.rst:627
 msgid "Convert a C :c:expr:`long long` to a Python integer object."
-msgstr "將一個 C 的 :c:expr:`long long` 轉換成 Python 整數物件。"
+msgstr ""
 
 #: ../../c-api/arg.rst:630
 msgid "Convert a C :c:expr:`unsigned long long` to a Python integer object."
-msgstr "將一個 C 的 :c:expr:`unsigned long long` 轉換成 Python 整數物件。"
+msgstr ""
 
 #: ../../c-api/arg.rst:633
 msgid "Convert a C :c:type:`Py_ssize_t` to a Python integer."
-msgstr "將一個 C 的 :c:type:`Py_ssize_t` 轉換成 Python 整數。"
+msgstr "C の :c:type:`Py_ssize_t` を Python の整数オブジェクトに変換します。"
 
 #: ../../c-api/arg.rst:637
 msgid "``c`` (:class:`bytes` of length 1) [char]"
-msgstr "``c``\\ （長度為 1 的 :class:`bytes`）[char]"
+msgstr "``c`` (長さが 1 の :class:`bytes`) [char]"
 
 #: ../../c-api/arg.rst:636
 msgid ""
 "Convert a C :c:expr:`int` representing a byte to a Python :class:`bytes` "
 "object of length 1."
 msgstr ""
-"將一個 C 中代表一個位元組的 :c:expr:`int` 轉換成 Python 中長度為一的 :class:"
-"`bytes`。"
 
 #: ../../c-api/arg.rst:640
 msgid ""
 "Convert a C :c:expr:`int` representing a character to Python :class:`str` "
 "object of length 1."
 msgstr ""
-"將一個 C 中代表一個字元的 :c:expr:`int` 轉換成 Python 中長度為一的 :class:"
-"`str`。"
 
 #: ../../c-api/arg.rst:644
 msgid "Convert a C :c:expr:`double` to a Python floating point number."
-msgstr "將一個 C 的 :c:expr:`double` 轉換成 Python 浮點數。"
+msgstr ""
 
 #: ../../c-api/arg.rst:647
 msgid "Convert a C :c:expr:`float` to a Python floating point number."
-msgstr "將一個 C 的 :c:expr:`float` 轉換成 Python 浮點數。"
+msgstr ""
 
 #: ../../c-api/arg.rst:650
 msgid "``D`` (:class:`complex`) [Py_complex \\*]"
@@ -1100,7 +1290,7 @@ msgstr "``D`` (:class:`complex`) [Py_complex \\*]"
 
 #: ../../c-api/arg.rst:650
 msgid "Convert a C :c:type:`Py_complex` structure to a Python complex number."
-msgstr "將一個 C 的 :c:type:`Py_complex` 結構轉換成 Python 複數。"
+msgstr "C の :c:type:`Py_complex` 構造体を Python の複素数型に変換します。"
 
 #: ../../c-api/arg.rst:653
 msgid ""
@@ -1111,18 +1301,24 @@ msgid ""
 "return ``NULL`` but won't raise an exception.  If no exception has been "
 "raised yet, :exc:`SystemError` is set."
 msgstr ""
+"Python オブジェクトを手を加えずに渡します (ただし、参照カウントは 1 インクリ"
+"メントします)。渡したオブジェクトが ``NULL`` ポインタの場合、この引数を生成す"
+"るのに使った何らかの呼び出しがエラーになったのが原因であると仮定して、例外を"
+"セットします。従ってこのとき :c:func:`Py_BuildValue` は ``NULL`` を返しますが"
+"例外は送出しません。例外をまだ送出していなければ :exc:`SystemError` をセット"
+"します。"
 
 #: ../../c-api/arg.rst:661
 msgid "``S`` (object) [PyObject \\*]"
-msgstr "``S``\\ （物件）[PyObject \\*]"
+msgstr "``S`` (object) [PyObject \\*]"
 
 #: ../../c-api/arg.rst:661
 msgid "Same as ``O``."
-msgstr "和 ``O`` 相同。"
+msgstr "``O`` と同じです。"
 
 #: ../../c-api/arg.rst:666
 msgid "``N`` (object) [PyObject \\*]"
-msgstr "``N``\\ （物件）[PyObject \\*]"
+msgstr "``N`` (object) [PyObject \\*]"
 
 #: ../../c-api/arg.rst:664
 msgid ""
@@ -1130,6 +1326,9 @@ msgid ""
 "object. Useful when the object is created by a call to an object constructor "
 "in the argument list."
 msgstr ""
+"``O`` と同じです。ただし、オブジェクトの参照カウントをインクリメントしませ"
+"ん。オブジェクトが引数リスト内のオブジェクトコンストラクタ呼び出しによって生"
+"成されている場合に便利です。"
 
 #: ../../c-api/arg.rst:669
 msgid ""
@@ -1143,7 +1342,7 @@ msgstr ""
 msgid ""
 "Convert a sequence of C values to a Python tuple with the same number of "
 "items."
-msgstr ""
+msgstr "C の値からなる配列を、同じ要素数を持つ Python のタプルに変換します。"
 
 #: ../../c-api/arg.rst:678
 msgid "``[items]`` (:class:`list`) [*matching-items*]"
@@ -1153,7 +1352,7 @@ msgstr "``[items]`` (:class:`list`) [*matching-items*]"
 msgid ""
 "Convert a sequence of C values to a Python list with the same number of "
 "items."
-msgstr ""
+msgstr "C の値からなる配列を、同じ要素数を持つ Python のリストに変換します。"
 
 #: ../../c-api/arg.rst:683
 msgid "``{items}`` (:class:`dict`) [*matching-items*]"
@@ -1165,15 +1364,21 @@ msgid ""
 "consecutive C values adds one item to the dictionary, serving as key and "
 "value, respectively."
 msgstr ""
+"C の値からなる配列を Python の辞書に変換します。一連のペアからなる C の値が、"
+"それぞれキーおよび値となって辞書に追加されます。"
 
 #: ../../c-api/arg.rst:685
 msgid ""
 "If there is an error in the format string, the :exc:`SystemError` exception "
 "is set and ``NULL`` returned."
 msgstr ""
+"書式文字列に関するエラーが生じると、 :exc:`SystemError` 例外をセットして "
+"``NULL`` を返します。"
 
 #: ../../c-api/arg.rst:690
 msgid ""
 "Identical to :c:func:`Py_BuildValue`, except that it accepts a va_list "
 "rather than a variable number of arguments."
 msgstr ""
+":c:func:`Py_BuildValue` と同じですが、可変長引数の代わりに va_list を受け取り"
+"ます。"

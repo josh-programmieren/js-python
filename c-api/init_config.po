@@ -1,26 +1,34 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# tomo, 2021
+# Osamu NAKAMURA, 2021
+# Tetsuo Koyama <tkoyama010@gmail.com>, 2021
+# Ryuji TSUTSUI <ryu22e@gmail.com>, 2022
+# yaakiyu, 2022
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-19 00:18+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 00:49+0000\n"
+"Last-Translator: yaakiyu, 2022\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../c-api/init_config.rst:7
 msgid "Python Initialization Configuration"
-msgstr ""
+msgstr "Python 初期化設定 "
 
 #: ../../c-api/init_config.rst:11
 msgid ""
@@ -28,10 +36,13 @@ msgid ""
 "type:`PyConfig` structure. It can be preinitialized with :c:func:"
 "`Py_PreInitialize` and the :c:type:`PyPreConfig` structure."
 msgstr ""
+"Pythonは :c:func:`Py_InitializeFromConfig` と :c:type:`PyConfig`  構造体を"
+"使って初期化できます。:c:func:`Py_PreInitialize` と  :c:type:`PyPreConfig`  "
+"構造体によって事前に初期化できます。"
 
 #: ../../c-api/init_config.rst:15
 msgid "There are two kinds of configuration:"
-msgstr ""
+msgstr "設定には二つの種類があります:"
 
 #: ../../c-api/init_config.rst:17
 msgid ""
@@ -40,6 +51,9 @@ msgid ""
 "environment variables and command line arguments are used to configure "
 "Python."
 msgstr ""
+":ref:`Python Configuration <init-python-config>` は、通常の Python と同じ振る"
+"舞いをするカスタマイズされた Python を構築するために使用されます。例えば、環"
+"境変数やコマンドライン引数がPythonを設定するために使用されます。"
 
 #: ../../c-api/init_config.rst:22
 msgid ""
@@ -59,14 +73,16 @@ msgstr ""
 msgid ""
 "See also :ref:`Initialization, Finalization, and Threads <initialization>`."
 msgstr ""
+":ref:`Initialization, Finalization, and Threads <initialization>` も参照して"
+"ください。"
 
 #: ../../c-api/init_config.rst:33
 msgid ":pep:`587` \"Python Initialization Configuration\"."
-msgstr ""
+msgstr ":pep:`587` \"Python 初期化設定\""
 
 #: ../../c-api/init_config.rst:37
 msgid "Example"
-msgstr "範例"
+msgstr "使用例"
 
 #: ../../c-api/init_config.rst:39
 msgid "Example of customized Python always running in isolated mode::"
@@ -78,13 +94,15 @@ msgstr "PyWideStringList"
 
 #: ../../c-api/init_config.rst:80
 msgid "List of ``wchar_t*`` strings."
-msgstr ""
+msgstr "``wchar_t*`` 文字列のリスト。"
 
 #: ../../c-api/init_config.rst:82
 msgid ""
 "If *length* is non-zero, *items* must be non-``NULL`` and all strings must "
 "be non-``NULL``."
 msgstr ""
+"*length* が非ゼロの場合は、*items* は非 ``NULL`` かつすべての文字列は非 "
+"``NULL`` でなければなりません。"
 
 #: ../../c-api/init_config.rst:85
 msgid "Methods:"
@@ -92,7 +110,7 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:89
 msgid "Append *item* to *list*."
-msgstr ""
+msgstr "*item* を *list* に追加します。"
 
 #: ../../c-api/init_config.rst:91 ../../c-api/init_config.rst:102
 msgid "Python must be preinitialized to call this function."
@@ -100,13 +118,14 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:95
 msgid "Insert *item* into *list* at *index*."
-msgstr ""
+msgstr "*item* を *list* の *index* の位置に挿入します。"
 
 #: ../../c-api/init_config.rst:97
 msgid ""
 "If *index* is greater than or equal to *list* length, append *item* to "
 "*list*."
 msgstr ""
+"*index* が *list* の長さ以上の場合、*item* を *list* の末尾に追加します。"
 
 #: ../../c-api/init_config.rst:100
 msgid "*index* must be greater than or equal to ``0``."
@@ -115,15 +134,15 @@ msgstr ""
 #: ../../c-api/init_config.rst:104 ../../c-api/init_config.rst:124
 #: ../../c-api/init_config.rst:225 ../../c-api/init_config.rst:530
 msgid "Structure fields:"
-msgstr ""
+msgstr "構造体フィールド:"
 
 #: ../../c-api/init_config.rst:108
 msgid "List length."
-msgstr ""
+msgstr "リストの長さ。"
 
 #: ../../c-api/init_config.rst:112
 msgid "List items."
-msgstr ""
+msgstr "リストの要素。"
 
 #: ../../c-api/init_config.rst:115
 msgid "PyStatus"
@@ -132,51 +151,51 @@ msgstr "PyStatus"
 #: ../../c-api/init_config.rst:119
 msgid ""
 "Structure to store an initialization function status: success, error or exit."
-msgstr ""
+msgstr "初期化関数のステータス(成功、エラー、終了)を格納する構造体です。"
 
 #: ../../c-api/init_config.rst:122
 msgid "For an error, it can store the C function name which created the error."
-msgstr ""
+msgstr "エラー時には、エラーを生成したC関数の名前を格納できます。"
 
 #: ../../c-api/init_config.rst:128
 msgid "Exit code. Argument passed to ``exit()``."
-msgstr ""
+msgstr "終了コード。``exit()`` の引数として渡されます。"
 
 #: ../../c-api/init_config.rst:132
 msgid "Error message."
-msgstr "錯誤訊息。"
+msgstr "エラーメッセージ。"
 
 #: ../../c-api/init_config.rst:136
 msgid "Name of the function which created an error, can be ``NULL``."
-msgstr ""
+msgstr "エラーを生成した関数の名前で、``NULL`` になりえます。"
 
 #: ../../c-api/init_config.rst:138
 msgid "Functions to create a status:"
-msgstr ""
+msgstr "ステータスを生成する関数:"
 
 #: ../../c-api/init_config.rst:142
 msgid "Success."
-msgstr ""
+msgstr "成功。"
 
 #: ../../c-api/init_config.rst:146
 msgid "Initialization error with a message."
-msgstr ""
+msgstr "メッセージとともにエラーを初期化します。"
 
 #: ../../c-api/init_config.rst:148
 msgid "*err_msg* must not be ``NULL``."
-msgstr "*err_msg* 不可為 ``NULL``。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:152
 msgid "Memory allocation failure (out of memory)."
-msgstr ""
+msgstr "メモリ割り当ての失敗(メモリ不足)。"
 
 #: ../../c-api/init_config.rst:156
 msgid "Exit Python with the specified exit code."
-msgstr ""
+msgstr "指定した終了コードでPythonを終了します。"
 
 #: ../../c-api/init_config.rst:158
 msgid "Functions to handle a status:"
-msgstr ""
+msgstr "ステータスを扱う関数:"
 
 #: ../../c-api/init_config.rst:162
 msgid ""
@@ -207,14 +226,11 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:183
 msgid "Example::"
-msgstr ""
-"範例：\n"
-"\n"
-"::"
+msgstr "以下はプログラム例です::"
 
 #: ../../c-api/init_config.rst:207
 msgid "PyPreConfig"
-msgstr "PyPreConfig"
+msgstr ""
 
 #: ../../c-api/init_config.rst:211
 msgid "Structure used to preinitialize Python."
@@ -289,11 +305,11 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:251
 msgid "See :ref:`Memory Management <memory>`."
-msgstr "請見\\ :ref:`記憶體管理 <memory>`\\ 。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:253
 msgid "Default: ``PYMEM_ALLOCATOR_NOT_SET``."
-msgstr "預設：\\ ``PYMEM_ALLOCATOR_NOT_SET``\\ 。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:257
 msgid "Set the LC_CTYPE locale to the user preferred locale."
@@ -307,7 +323,7 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:262 ../../c-api/init_config.rst:273
 msgid "See the :term:`locale encoding`."
-msgstr "請見 :term:`locale encoding`\\ 。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:264 ../../c-api/init_config.rst:319
 #: ../../c-api/init_config.rst:670
@@ -352,19 +368,19 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:298
 msgid "If non-zero:"
-msgstr "如果不為 0："
+msgstr ""
 
 #: ../../c-api/init_config.rst:300
 msgid "Set :c:member:`PyPreConfig.utf8_mode` to ``0``,"
-msgstr "將 :c:member:`PyPreConfig.utf8_mode` 設為 ``0``\\ 、"
+msgstr ""
 
 #: ../../c-api/init_config.rst:301
 msgid "Set :c:member:`PyConfig.filesystem_encoding` to ``\"mbcs\"``,"
-msgstr "將 :c:member:`PyConfig.filesystem_encoding` 設為 ``\"mbcs\"``\\ 、"
+msgstr ""
 
 #: ../../c-api/init_config.rst:302
 msgid "Set :c:member:`PyConfig.filesystem_errors` to ``\"replace\"``."
-msgstr "將 :c:member:`PyConfig.filesystem_errors` 設為 ``\"replace\"``\\ 。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:304
 msgid ""
@@ -387,7 +403,7 @@ msgstr ""
 #: ../../c-api/init_config.rst:1085 ../../c-api/init_config.rst:1114
 #: ../../c-api/init_config.rst:1187
 msgid "Default: ``0``."
-msgstr "預設：\\ ``0``。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:314
 msgid ""
@@ -465,7 +481,7 @@ msgstr ""
 #: ../../c-api/init_config.rst:361 ../../c-api/init_config.rst:370
 #: ../../c-api/init_config.rst:379
 msgid "*preconfig* must not be ``NULL``."
-msgstr "*preconfig* 不可為 ``NULL``。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:367
 msgid ""
@@ -519,7 +535,7 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:423
 msgid "PyConfig"
-msgstr "PyConfig"
+msgstr ""
 
 #: ../../c-api/init_config.rst:427
 msgid "Structure containing most parameters to configure Python."
@@ -632,19 +648,19 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:517
 msgid ":c:member:`PyConfig.dev_mode`"
-msgstr ":c:member:`PyConfig.dev_mode`"
+msgstr ""
 
 #: ../../c-api/init_config.rst:518
 msgid ":c:member:`PyConfig.isolated`"
-msgstr ":c:member:`PyConfig.isolated`"
+msgstr ""
 
 #: ../../c-api/init_config.rst:519
 msgid ":c:member:`PyConfig.parse_argv`"
-msgstr ":c:member:`PyConfig.parse_argv`"
+msgstr ""
 
 #: ../../c-api/init_config.rst:520
 msgid ":c:member:`PyConfig.use_environment`"
-msgstr ":c:member:`PyConfig.use_environment`"
+msgstr ""
 
 #: ../../c-api/init_config.rst:522
 msgid ""
@@ -685,7 +701,7 @@ msgstr ""
 #: ../../c-api/init_config.rst:1036 ../../c-api/init_config.rst:1053
 #: ../../c-api/init_config.rst:1066 ../../c-api/init_config.rst:1074
 msgid "Default: ``NULL``."
-msgstr "預設值：\\ ``NULL``\\ 。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:546
 msgid "See also the :c:member:`~PyConfig.orig_argv` member."
@@ -727,7 +743,7 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:569
 msgid ":data:`sys.base_exec_prefix`."
-msgstr ":data:`sys.base_exec_prefix`\\ 。"
+msgstr ":data:`sys.base_exec_prefix`."
 
 #: ../../c-api/init_config.rst:573 ../../c-api/init_config.rst:585
 #: ../../c-api/init_config.rst:593 ../../c-api/init_config.rst:701
@@ -750,7 +766,7 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:589
 msgid ":data:`sys.base_prefix`."
-msgstr ":data:`sys.base_prefix`\\ 。"
+msgstr ":data:`sys.base_prefix`."
 
 #: ../../c-api/init_config.rst:597
 msgid ""
@@ -771,7 +787,7 @@ msgstr ""
 #: ../../c-api/init_config.rst:605 ../../c-api/init_config.rst:638
 #: ../../c-api/init_config.rst:1102 ../../c-api/init_config.rst:1219
 msgid "Default: ``1``."
-msgstr "預設值：\\ ``1``\\ 。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:609
 msgid ""
@@ -837,7 +853,7 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:655
 msgid "Default: ``L\"default\"``."
-msgstr "預設：\\ ``L\"default\"``。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:657
 msgid "See also :pep:`552` \"Deterministic pycs\"."
@@ -992,11 +1008,11 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:762
 msgid "``\"strict\"``"
-msgstr "``\"strict\"``"
+msgstr ""
 
 #: ../../c-api/init_config.rst:763
 msgid "``\"surrogateescape\"``"
-msgstr "``\"surrogateescape\"``"
+msgstr ""
 
 #: ../../c-api/init_config.rst:764
 msgid "``\"surrogatepass\"`` (only supported with the UTF-8 encoding)"
@@ -1102,7 +1118,7 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:838 ../../c-api/init_config.rst:1469
 msgid "Set :c:member:`~PyConfig.use_environment` to ``0``."
-msgstr "將 :c:member:`~PyConfig.use_environment` 設定為 ``0``。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:839
 msgid ""
@@ -1122,7 +1138,7 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:848
 msgid "See also :c:member:`PyPreConfig.isolated`."
-msgstr "也請見 :c:member:`PyPreConfig.isolated`\\ 。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:852
 msgid ""
@@ -1135,6 +1151,8 @@ msgid ""
 "Set to ``1`` if the :envvar:`PYTHONLEGACYWINDOWSSTDIO` environment variable "
 "is set to a non-empty string."
 msgstr ""
+":envvar:`PYTHONLEGACYWINDOWSSTDIO` 環境変数が空でない文字列に設定された場合"
+"に、 ``1`` に設定されます。"
 
 #: ../../c-api/init_config.rst:864
 msgid "See also the :pep:`528` (Change Windows console encoding to UTF-8)."
@@ -1167,8 +1185,8 @@ msgstr ""
 #: ../../c-api/init_config.rst:884
 msgid ""
 "Default: value of the ``PLATLIBDIR`` macro which is set by the :option:"
-"`configure --with-platlibdir option <--with-platlibdir>` (default: ``\"lib"
-"\"``, or ``\"DLLs\"`` on Windows)."
+"`configure --with-platlibdir option <--with-platlibdir>` (default: "
+"``\"lib\"``, or ``\"DLLs\"`` on Windows)."
 msgstr ""
 
 #: ../../c-api/init_config.rst:892
@@ -1379,7 +1397,7 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:1064
 msgid "See also the :c:member:`PyConfig.skip_source_first_line` option."
-msgstr "也請見 :c:member:`PyConfig.skip_source_first_line` 選項。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:1070
 msgid "Value of the :option:`-m` command line option."
@@ -1444,8 +1462,8 @@ msgstr ""
 #: ../../c-api/init_config.rst:1119
 msgid ""
 "Encoding and encoding errors of :data:`sys.stdin`, :data:`sys.stdout` and :"
-"data:`sys.stderr` (but :data:`sys.stderr` always uses ``\"backslashreplace"
-"\"`` error handler)."
+"data:`sys.stderr` (but :data:`sys.stderr` always uses "
+"``\"backslashreplace\"`` error handler)."
 msgstr ""
 
 #: ../../c-api/init_config.rst:1123
@@ -1721,23 +1739,23 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:1397
 msgid ":c:member:`PyConfig.home`"
-msgstr ":c:member:`PyConfig.home`"
+msgstr ""
 
 #: ../../c-api/init_config.rst:1398
 msgid ":c:member:`PyConfig.platlibdir`"
-msgstr ":c:member:`PyConfig.platlibdir`"
+msgstr ""
 
 #: ../../c-api/init_config.rst:1399
 msgid ":c:member:`PyConfig.pathconfig_warnings`"
-msgstr ":c:member:`PyConfig.pathconfig_warnings`"
+msgstr ""
 
 #: ../../c-api/init_config.rst:1400
 msgid ":c:member:`PyConfig.program_name`"
-msgstr ":c:member:`PyConfig.program_name`"
+msgstr ""
 
 #: ../../c-api/init_config.rst:1401
 msgid ":c:member:`PyConfig.pythonpath_env`"
-msgstr ":c:member:`PyConfig.pythonpath_env`"
+msgstr ""
 
 #: ../../c-api/init_config.rst:1402
 msgid "current working directory: to get absolute paths"
@@ -1751,13 +1769,13 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:1405
 msgid "``__PYVENV_LAUNCHER__`` environment variable"
-msgstr "``__PYVENV_LAUNCHER__`` 環境變數"
+msgstr ""
 
 #: ../../c-api/init_config.rst:1406
 msgid ""
-"(Windows only) Application paths in the registry under \"Software\\Python"
-"\\PythonCore\\X.Y\\PythonPath\" of HKEY_CURRENT_USER and HKEY_LOCAL_MACHINE "
-"(where X.Y is the Python version)."
+"(Windows only) Application paths in the registry under "
+"\"Software\\Python\\PythonCore\\X.Y\\PythonPath\" of HKEY_CURRENT_USER and "
+"HKEY_LOCAL_MACHINE (where X.Y is the Python version)."
 msgstr ""
 
 #: ../../c-api/init_config.rst:1410
@@ -1891,15 +1909,15 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:1468
 msgid "Set :c:member:`~PyConfig.isolated` to ``1``."
-msgstr "將 :c:member:`~PyConfig.isolated` 設定為 ``1``。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:1470
 msgid "Set :c:member:`~PyConfig.site_import` to ``0``."
-msgstr "將 :c:member:`~PyConfig.site_import` 設定為 ``0``。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:1471
 msgid "Set :c:member:`~PyConfig.safe_path` to ``1``."
-msgstr "將 :c:member:`~PyConfig.safe_path` 設定為 ``1``。"
+msgstr ""
 
 #: ../../c-api/init_config.rst:1473
 msgid ""

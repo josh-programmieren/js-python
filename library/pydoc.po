@@ -1,30 +1,35 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# tomo, 2021
+# Takanori Suzuki <takanori@takanory.net>, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-30 00:15+0000\n"
-"PO-Revision-Date: 2015-12-09 17:51+0000\n"
-"Last-Translator: Liang-Bo Wang <me@liang2.tw>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:12+0000\n"
+"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../library/pydoc.rst:2
 msgid ":mod:`pydoc` --- Documentation generator and online help system"
-msgstr ""
+msgstr ":mod:`pydoc` --- ドキュメント生成とオンラインヘルプシステム"
 
 #: ../../library/pydoc.rst:10
 msgid "**Source code:** :source:`Lib/pydoc.py`"
-msgstr "**原始碼：**\\ :source:`Lib/pydoc.py`"
+msgstr "**ソースコード:** :source:`Lib/pydoc.py`"
 
 #: ../../library/pydoc.rst:19
 msgid ""
@@ -32,6 +37,9 @@ msgid ""
 "modules.  The documentation can be presented as pages of text on the "
 "console, served to a web browser, or saved to HTML files."
 msgstr ""
+":mod:`pydoc` モジュールは、Pythonモジュールから自動的にドキュメントを生成しま"
+"す。生成されたドキュメントをテキスト形式でコンソールに表示したり、 ウェブブラ"
+"ウザにサーバとして提供したり、HTMLファイルとして保存したりできます。"
 
 #: ../../library/pydoc.rst:23
 msgid ""
@@ -43,6 +51,12 @@ msgid ""
 "the source file, or at the top of the module (see :func:`inspect."
 "getcomments`)."
 msgstr ""
+"モジュール、クラス、関数、メソッドについての表示されるドキュメンテーション"
+"は、オブジェクトの docstring (つまり :attr:`__doc__` 属性)に基き、またそれの"
+"ドキュメント可能なメンバが再帰的に続きます。  docstring がない場合、 :mod:"
+"`pydoc` は、クラス、関数、メソッドについてはその定義の直前の、モジュールにつ"
+"いてはファイル先頭の、ソースファイルのコメント行のブロックから記述を取得しよ"
+"うと試みます(:func:`inspect.getcomments` を参照してください)。"
 
 #: ../../library/pydoc.rst:30
 msgid ""
@@ -52,6 +66,12 @@ msgid ""
 "be viewed from outside the Python interpreter by running :program:`pydoc` as "
 "a script at the operating system's command prompt. For example, running ::"
 msgstr ""
+"組み込み関数の :func:`help` を使うことで、対話型インタプリタからオンラインヘ"
+"ルプを起動することができます。コンソール用のテキスト形式のドキュメントをつく"
+"るのにオンラインヘルプでは :mod:`pydoc` を使っています。 :program:`pydoc` を"
+"Pythonインタプリタからはなく、オペレーティングシステムのコマンドプロンプトか"
+"ら起動した場合でも、同じテキスト形式のドキュメントを見ることができます。例え"
+"ば、以下の実行を ::"
 
 #: ../../library/pydoc.rst:38
 msgid ""
@@ -64,6 +84,14 @@ msgid ""
 "system, such as a slash in Unix), and refers to an existing Python source "
 "file, then documentation is produced for that file."
 msgstr ""
+"シェルから行うと :mod:`sys` モジュールのドキュメントを、Unix の :program:"
+"`man` コマンドのような形式で表示させることができます。 :program:`pydoc` の引"
+"数として与えることができるのは、関数名・モジュール名・パッケージ名、また、モ"
+"ジュールやパッケージ内のモジュールに含まれるクラス・メソッド・関数へのドット"
+"形式での参照です。 :program:`pydoc` への引数がパスと解釈されるような場合で(オ"
+"ペレーティングシステムのパス区切り記号を含む場合です。例えばUnixならばスラッ"
+"シュ含む場合になります)、さらに、そのパスがPythonのソースファイルを指している"
+"なら、そのファイルに対するドキュメントが生成されます。"
 
 #: ../../library/pydoc.rst:49
 msgid ""
@@ -72,6 +100,11 @@ msgid ""
 "executed on that occasion.  Use an ``if __name__ == '__main__':`` guard to "
 "only execute code when a file is invoked as a script and not just imported."
 msgstr ""
+"オブジェクトとそのドキュメントを探すために、 :mod:`pydoc` はドキュメント対象"
+"のモジュールを import します。そのため、モジュールレベルのコードはそのときに"
+"実行されます。 ``if __name__ == '__main__':`` ガードを使って、ファイルがスク"
+"リプトとして実行したときのみコードを実行し、importされたときには実行されない"
+"ようにして下さい。"
 
 #: ../../library/pydoc.rst:54
 msgid ""
@@ -79,6 +112,9 @@ msgid ""
 "the output for easier reading.  If the :envvar:`PAGER` environment variable "
 "is set, :program:`pydoc` will use its value as a pagination program."
 msgstr ""
+"コンソールへの出力時には、 :program:`pydoc`  は読みやすさのために出力をページ"
+"化しようと試みます。環境変数 :envvar:`PAGER` がセットされていれば  :program:"
+"`pydoc` はその値で設定されたページ化プログラムを使います。"
 
 #: ../../library/pydoc.rst:58
 msgid ""
@@ -86,6 +122,8 @@ msgid ""
 "to be written out to a file in the current directory, instead of displaying "
 "text on the console."
 msgstr ""
+"引数の前に ``-w`` フラグを指定すると、コンソールにテキストを表示させるかわり"
+"にカレントディレクトリにHTMLドキュメントを生成します。"
 
 #: ../../library/pydoc.rst:62
 msgid ""
@@ -94,6 +132,10 @@ msgid ""
 "manner similar to the Unix :program:`man` command.  The synopsis line of a "
 "module is the first line of its documentation string."
 msgstr ""
+"引数の前に ``-k`` フラグを指定すると、引数をキーワードとして利用可能な全ての"
+"モジュールの概要を検索します。検索のやりかたは、Unixの :program:`man` コマン"
+"ドと同様です。モジュールの概要というのは、モジュールのドキュメントの一行目の"
+"ことです。"
 
 #: ../../library/pydoc.rst:67
 msgid ""
@@ -130,6 +172,11 @@ msgid ""
 "spam` documents precisely the version of the module you would get if you "
 "started the Python interpreter and typed ``import spam``."
 msgstr ""
+":program:`pydoc` でドキュメントを生成する場合、その時点での環境とパス情報に基"
+"づいてモジュールがどこにあるのか決定されます。そのため、 :program:`pydoc "
+"spam` を実行した場合につくられるドキュメントは、 Pythonインタプリタを起動し"
+"て ``import spam`` と入力したときに読み込まれるモジュールに対するドキュメント"
+"になります。"
 
 #: ../../library/pydoc.rst:90
 msgid ""
@@ -139,21 +186,28 @@ msgid ""
 "envvar:`PYTHONDOCS` environment variable to a different URL or to a local "
 "directory containing the Library Reference Manual pages."
 msgstr ""
+"コアモジュールのドキュメントは https://docs.python.org/X.Y/library/ にあると"
+"仮定されています。 ``X``, ``Y`` はそれぞれ Python インタプリタのメジャー、マ"
+"イナーバージョン番号です。環境変数 :envvar:`PYTHONDOCS` を設定することでこれ"
+"をオーバライドすることが出来、ライブラリリファレンスページを含む別の URL や"
+"ローカルディレクトリを指定出来ます。"
 
 #: ../../library/pydoc.rst:97
 msgid "Added the ``-b`` option."
-msgstr "新增 ``-b`` 選項。"
+msgstr "``-b`` オプションが追加されました。"
 
 #: ../../library/pydoc.rst:100
 msgid "The ``-g`` command line option was removed."
-msgstr ""
+msgstr "``-g`` コマンドラインオプションが削除されました。"
 
 #: ../../library/pydoc.rst:103
 msgid ""
 ":mod:`pydoc` now uses :func:`inspect.signature` rather than :func:`inspect."
 "getfullargspec` to extract signature information from callables."
 msgstr ""
+":mod:`pydoc` は、callable からシグニチャの情報を得るのに :func:`inspect."
+"getfullargspec` ではなく :func:`inspect.signature` を使うようになりました。"
 
 #: ../../library/pydoc.rst:108
 msgid "Added the ``-n`` option."
-msgstr "新增 ``-n`` 選項。"
+msgstr "``-n`` オプションが追加されました。"

@@ -1,30 +1,34 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# tomo, 2022
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-23 00:17+0000\n"
-"PO-Revision-Date: 2018-05-23 16:11+0000\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:14+0000\n"
+"Last-Translator: tomo, 2022\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../library/struct.rst:2
 msgid ":mod:`struct` --- Interpret bytes as packed binary data"
-msgstr ""
+msgstr ":mod:`struct` --- バイト列をパックされたバイナリデータとして解釈する"
 
 #: ../../library/struct.rst:7
 msgid "**Source code:** :source:`Lib/struct.py`"
-msgstr "**原始碼：**\\ :source:`Lib/struct.py`"
+msgstr "**ソースコード:** :source:`Lib/struct.py`"
 
 #: ../../library/struct.rst:15
 msgid ""
@@ -59,20 +63,28 @@ msgid ""
 "implement the buffer protocol, so that they can be read/filled without "
 "additional copying from a :class:`bytes` object."
 msgstr ""
+"いくつかの :mod:`struct` の関数 (および :class:`Struct` のメソッド) は "
+"*buffer* 引数を取ります。 これは :ref:`bufferobjects` を実装していて読み取り"
+"可能または読み書き可能なバッファを提供するオブジェクトのことです。この目的の"
+"ために使われる最も一般的な型は :class:`bytes` と :class:`bytearray` ですが、"
+"バイトの配列とみなすことができるような他の多くの型がバッファプロトコルを実装"
+"しています。そのため、それらは :class:`bytes` オブジェクトから追加のコピーな"
+"しで読み出しや書き込みができます。"
 
 #: ../../library/struct.rst:44
 msgid "Functions and Exceptions"
-msgstr "函式與例外"
+msgstr "関数と例外"
 
 #: ../../library/struct.rst:46
 msgid "The module defines the following exception and functions:"
-msgstr ""
+msgstr "このモジュールは以下の例外と関数を定義しています:"
 
 #: ../../library/struct.rst:51
 msgid ""
 "Exception raised on various occasions; argument is a string describing what "
 "is wrong."
 msgstr ""
+"様々な状況で送出される例外です。引数は何が問題なのかを記述する文字列です。"
 
 #: ../../library/struct.rst:57
 msgid ""
@@ -115,7 +127,7 @@ msgstr ""
 
 #: ../../library/struct.rst:93
 msgid "Each iteration yields a tuple as specified by the format string."
-msgstr ""
+msgstr "イテレーション毎に書式文字列で指定されたタプルを yield します。"
 
 #: ../../library/struct.rst:100
 msgid ""
@@ -125,7 +137,7 @@ msgstr ""
 
 #: ../../library/struct.rst:107
 msgid "Format Strings"
-msgstr ""
+msgstr "書式文字列"
 
 #: ../../library/struct.rst:109
 msgid ""
@@ -140,7 +152,7 @@ msgstr ""
 
 #: ../../library/struct.rst:121
 msgid "Byte Order, Size, and Alignment"
-msgstr ""
+msgstr "バイトオーダ、サイズ、アラインメント"
 
 #: ../../library/struct.rst:123
 msgid ""
@@ -158,22 +170,25 @@ msgid ""
 "indicate the byte order, size and alignment of the packed data, according to "
 "the following table:"
 msgstr ""
+"これに代わって、フォーマット文字列の最初の文字を使って、バイトオーダやサイ"
+"ズ、アラインメントを指定することができます。指定できる文字を以下のテーブルに"
+"示します:"
 
 #: ../../library/struct.rst:144
 msgid "Character"
-msgstr ""
+msgstr "文字"
 
 #: ../../library/struct.rst:144
 msgid "Byte order"
-msgstr ""
+msgstr "バイトオーダ"
 
 #: ../../library/struct.rst:144
 msgid "Size"
-msgstr ""
+msgstr "サイズ"
 
 #: ../../library/struct.rst:144
 msgid "Alignment"
-msgstr ""
+msgstr "アラインメント"
 
 #: ../../library/struct.rst:146
 msgid "``@``"
@@ -181,7 +196,7 @@ msgstr "``@``"
 
 #: ../../library/struct.rst:146 ../../library/struct.rst:148
 msgid "native"
-msgstr ""
+msgstr "native"
 
 #: ../../library/struct.rst:148
 msgid "``=``"
@@ -190,12 +205,12 @@ msgstr "``=``"
 #: ../../library/struct.rst:148 ../../library/struct.rst:150
 #: ../../library/struct.rst:152 ../../library/struct.rst:154
 msgid "standard"
-msgstr ""
+msgstr "standard"
 
 #: ../../library/struct.rst:148 ../../library/struct.rst:150
 #: ../../library/struct.rst:152 ../../library/struct.rst:154
 msgid "none"
-msgstr ""
+msgstr "none"
 
 #: ../../library/struct.rst:150
 msgid "``<``"
@@ -203,7 +218,7 @@ msgstr "``<``"
 
 #: ../../library/struct.rst:150
 msgid "little-endian"
-msgstr ""
+msgstr "リトルエンディアン"
 
 #: ../../library/struct.rst:152
 msgid "``>``"
@@ -211,7 +226,7 @@ msgstr "``>``"
 
 #: ../../library/struct.rst:152
 msgid "big-endian"
-msgstr ""
+msgstr "ビッグエンディアン"
 
 #: ../../library/struct.rst:154
 msgid "``!``"
@@ -219,11 +234,13 @@ msgstr "``!``"
 
 #: ../../library/struct.rst:154
 msgid "network (= big-endian)"
-msgstr ""
+msgstr "ネットワーク (= ビッグエンディアン)"
 
 #: ../../library/struct.rst:157
 msgid "If the first character is not one of these, ``'@'`` is assumed."
 msgstr ""
+"フォーマット文字列の最初の文字が上のいずれかでない場合、``'@'`` であるとみな"
+"されます。"
 
 #: ../../library/struct.rst:159
 msgid ""
@@ -238,18 +255,25 @@ msgid ""
 "Native size and alignment are determined using the C compiler's ``sizeof`` "
 "expression.  This is always combined with native byte order."
 msgstr ""
+"ネイティブのサイズおよびアラインメントは C コンパイラの ``sizeof`` 式で決定さ"
+"れます。ネイティブのサイズおよびアラインメントはネイティブのバイトオーダと同"
+"時に使われます。"
 
 #: ../../library/struct.rst:167
 msgid ""
 "Standard size depends only on the format character;  see the table in the :"
 "ref:`format-characters` section."
 msgstr ""
+"標準のサイズはフォーマット文字だけで決まります。 :ref:`format-characters` の"
+"表を参照して下さい。"
 
 #: ../../library/struct.rst:170
 msgid ""
 "Note the difference between ``'@'`` and ``'='``: both use native byte order, "
 "but the size and alignment of the latter is standardized."
 msgstr ""
+"``'@'`` と ``'='`` の違いに注意してください: 両方ともネイティブのバイトオーダ"
+"ですが、後者のバイトサイズとアラインメントは標準のものに合わせてあります。"
 
 #: ../../library/struct.rst:173
 msgid ""
@@ -262,22 +286,29 @@ msgid ""
 "There is no way to indicate non-native byte order (force byte-swapping); use "
 "the appropriate choice of ``'<'`` or ``'>'``."
 msgstr ""
+"バイトオーダに関して、「(強制的にバイトスワップを行う)ネイティブの逆」を指定"
+"する方法はありません。``'<'`` または ``'>'`` のうちふさわしい方を選んでくださ"
+"い。"
 
 #: ../../library/struct.rst:179 ../../library/struct.rst:258
 msgid "Notes:"
-msgstr "註解："
+msgstr "注釈:"
 
 #: ../../library/struct.rst:181
 msgid ""
 "Padding is only automatically added between successive structure members. No "
 "padding is added at the beginning or the end of the encoded struct."
 msgstr ""
+"パディングは構造体のメンバの並びの中にだけ自動で追加されます。最初や最後にパ"
+"ディングが追加されることはありません。"
 
 #: ../../library/struct.rst:184
 msgid ""
 "No padding is added when using non-native size and alignment, e.g. with '<', "
 "'>', '=', and '!'."
 msgstr ""
+"ネイティブでないサイズおよびアラインメントが使われる場合にはパディングは行わ"
+"れません (たとえば '<', '>', '=', '!' を使った場合です)。"
 
 #: ../../library/struct.rst:187
 msgid ""
@@ -285,10 +316,13 @@ msgid ""
 "type, end the format with the code for that type with a repeat count of "
 "zero.  See :ref:`struct-examples`."
 msgstr ""
+"特定の型によるアラインメント要求に従うように構造体の末端をそろえるには、繰り"
+"返し回数をゼロにした特定の型でフォーマットを終端します。 :ref:`struct-"
+"examples` を参照して下さい。"
 
 #: ../../library/struct.rst:195
 msgid "Format Characters"
-msgstr ""
+msgstr "書式指定文字"
 
 #: ../../library/struct.rst:197
 msgid ""
@@ -299,26 +333,32 @@ msgid ""
 "``'!'`` or ``'='``.  When using native size, the size of the packed value is "
 "platform-dependent."
 msgstr ""
+"フォーマット文字 (format character) は以下の意味を持っています; C と Python "
+"の間の変換では、値は正確に以下に指定された型でなくてはなりません: 「標準のサ"
+"イズ」列は standard サイズ使用時にパックされた値が何バイトかを示します。つま"
+"り、フォーマット文字列が ``'<'``, ``'>'``, ``'!'``, ``'='`` のいずれかで始"
+"まっている場合のものです。native サイズ使用時にはパックされた値の大きさはプ"
+"ラットフォーム依存です。"
 
 #: ../../library/struct.rst:205
 msgid "Format"
-msgstr ""
+msgstr "フォーマット"
 
 #: ../../library/struct.rst:205
 msgid "C Type"
-msgstr "C Type"
+msgstr "C の型"
 
 #: ../../library/struct.rst:205
 msgid "Python type"
-msgstr ""
+msgstr "Python の型"
 
 #: ../../library/struct.rst:205
 msgid "Standard size"
-msgstr ""
+msgstr "標準のサイズ"
 
 #: ../../library/struct.rst:205
 msgid "Notes"
-msgstr "註解"
+msgstr "注釈"
 
 #: ../../library/struct.rst:207
 msgid "``x``"
@@ -326,15 +366,15 @@ msgstr "``x``"
 
 #: ../../library/struct.rst:207
 msgid "pad byte"
-msgstr ""
+msgstr "パディングバイト"
 
 #: ../../library/struct.rst:207
 msgid "no value"
-msgstr ""
+msgstr "値なし"
 
 #: ../../library/struct.rst:207
 msgid "\\(7)"
-msgstr ""
+msgstr "\\(7)"
 
 #: ../../library/struct.rst:209
 msgid "``c``"
@@ -342,11 +382,11 @@ msgstr "``c``"
 
 #: ../../library/struct.rst:209
 msgid ":c:expr:`char`"
-msgstr ":c:expr:`char`"
+msgstr ""
 
 #: ../../library/struct.rst:209
 msgid "bytes of length 1"
-msgstr ""
+msgstr "長さ 1 のバイト列"
 
 #: ../../library/struct.rst:209 ../../library/struct.rst:211
 #: ../../library/struct.rst:213 ../../library/struct.rst:215
@@ -359,7 +399,7 @@ msgstr "``b``"
 
 #: ../../library/struct.rst:211
 msgid ":c:expr:`signed char`"
-msgstr ":c:expr:`signed char`"
+msgstr ""
 
 #: ../../library/struct.rst:211 ../../library/struct.rst:213
 #: ../../library/struct.rst:217 ../../library/struct.rst:219
@@ -369,7 +409,7 @@ msgstr ":c:expr:`signed char`"
 #: ../../library/struct.rst:234 ../../library/struct.rst:236
 #: ../../library/struct.rst:248
 msgid "integer"
-msgstr ""
+msgstr "整数"
 
 #: ../../library/struct.rst:211
 msgid "\\(1), \\(2)"
@@ -381,7 +421,7 @@ msgstr "``B``"
 
 #: ../../library/struct.rst:213
 msgid ":c:expr:`unsigned char`"
-msgstr ":c:expr:`unsigned char`"
+msgstr ""
 
 #: ../../library/struct.rst:213 ../../library/struct.rst:217
 #: ../../library/struct.rst:219 ../../library/struct.rst:221
@@ -397,11 +437,11 @@ msgstr "``?``"
 
 #: ../../library/struct.rst:215
 msgid ":c:expr:`_Bool`"
-msgstr ":c:expr:`_Bool`"
+msgstr ""
 
 #: ../../library/struct.rst:215
 msgid "bool"
-msgstr "bool"
+msgstr "真偽値型(bool)"
 
 #: ../../library/struct.rst:215
 msgid "\\(1)"
@@ -413,7 +453,7 @@ msgstr "``h``"
 
 #: ../../library/struct.rst:217
 msgid ":c:expr:`short`"
-msgstr ":c:expr:`short`"
+msgstr ""
 
 #: ../../library/struct.rst:217 ../../library/struct.rst:219
 #: ../../library/struct.rst:238
@@ -426,7 +466,7 @@ msgstr "``H``"
 
 #: ../../library/struct.rst:219
 msgid ":c:expr:`unsigned short`"
-msgstr ":c:expr:`unsigned short`"
+msgstr ""
 
 #: ../../library/struct.rst:221
 msgid "``i``"
@@ -434,7 +474,7 @@ msgstr "``i``"
 
 #: ../../library/struct.rst:221
 msgid ":c:expr:`int`"
-msgstr ":c:expr:`int`"
+msgstr ""
 
 #: ../../library/struct.rst:221 ../../library/struct.rst:223
 #: ../../library/struct.rst:225 ../../library/struct.rst:227
@@ -448,7 +488,7 @@ msgstr "``I``"
 
 #: ../../library/struct.rst:223
 msgid ":c:expr:`unsigned int`"
-msgstr ":c:expr:`unsigned int`"
+msgstr ""
 
 #: ../../library/struct.rst:225
 msgid "``l``"
@@ -456,7 +496,7 @@ msgstr "``l``"
 
 #: ../../library/struct.rst:225
 msgid ":c:expr:`long`"
-msgstr ":c:expr:`long`"
+msgstr ""
 
 #: ../../library/struct.rst:227
 msgid "``L``"
@@ -464,7 +504,7 @@ msgstr "``L``"
 
 #: ../../library/struct.rst:227
 msgid ":c:expr:`unsigned long`"
-msgstr ":c:expr:`unsigned long`"
+msgstr ""
 
 #: ../../library/struct.rst:229
 msgid "``q``"
@@ -472,7 +512,7 @@ msgstr "``q``"
 
 #: ../../library/struct.rst:229
 msgid ":c:expr:`long long`"
-msgstr ":c:expr:`long long`"
+msgstr ""
 
 #: ../../library/struct.rst:229 ../../library/struct.rst:231
 #: ../../library/struct.rst:242
@@ -485,7 +525,7 @@ msgstr "``Q``"
 
 #: ../../library/struct.rst:231
 msgid ":c:expr:`unsigned long long`"
-msgstr ":c:expr:`unsigned long long`"
+msgstr ""
 
 #: ../../library/struct.rst:234
 msgid "``n``"
@@ -493,7 +533,7 @@ msgstr "``n``"
 
 #: ../../library/struct.rst:234
 msgid ":c:expr:`ssize_t`"
-msgstr ":c:expr:`ssize_t`"
+msgstr ""
 
 #: ../../library/struct.rst:234 ../../library/struct.rst:236
 msgid "\\(3)"
@@ -505,7 +545,7 @@ msgstr "``N``"
 
 #: ../../library/struct.rst:236
 msgid ":c:expr:`size_t`"
-msgstr ":c:expr:`size_t`"
+msgstr ""
 
 #: ../../library/struct.rst:238
 msgid "``e``"
@@ -518,7 +558,7 @@ msgstr "\\(6)"
 #: ../../library/struct.rst:238 ../../library/struct.rst:240
 #: ../../library/struct.rst:242
 msgid "float"
-msgstr "float"
+msgstr "浮動小数点数"
 
 #: ../../library/struct.rst:238 ../../library/struct.rst:240
 #: ../../library/struct.rst:242
@@ -531,7 +571,7 @@ msgstr "``f``"
 
 #: ../../library/struct.rst:240
 msgid ":c:expr:`float`"
-msgstr ":c:expr:`float`"
+msgstr ""
 
 #: ../../library/struct.rst:242
 msgid "``d``"
@@ -539,7 +579,7 @@ msgstr "``d``"
 
 #: ../../library/struct.rst:242
 msgid ":c:expr:`double`"
-msgstr ":c:expr:`double`"
+msgstr ""
 
 #: ../../library/struct.rst:244
 msgid "``s``"
@@ -547,15 +587,15 @@ msgstr "``s``"
 
 #: ../../library/struct.rst:244 ../../library/struct.rst:246
 msgid ":c:expr:`char[]`"
-msgstr ":c:expr:`char[]`"
+msgstr ""
 
 #: ../../library/struct.rst:244 ../../library/struct.rst:246
 msgid "bytes"
-msgstr ""
+msgstr "bytes"
 
 #: ../../library/struct.rst:244
 msgid "\\(9)"
-msgstr ""
+msgstr "\\(9)"
 
 #: ../../library/struct.rst:246
 msgid "``p``"
@@ -563,7 +603,7 @@ msgstr "``p``"
 
 #: ../../library/struct.rst:246
 msgid "\\(8)"
-msgstr ""
+msgstr "\\(8)"
 
 #: ../../library/struct.rst:248
 msgid "``P``"
@@ -571,7 +611,7 @@ msgstr "``P``"
 
 #: ../../library/struct.rst:248
 msgid ":c:expr:`void \\*`"
-msgstr ":c:expr:`void \\*`"
+msgstr ""
 
 #: ../../library/struct.rst:248
 msgid "\\(5)"
@@ -579,11 +619,11 @@ msgstr "\\(5)"
 
 #: ../../library/struct.rst:251
 msgid "Added support for the ``'n'`` and ``'N'`` formats."
-msgstr "新增 ``'n'`` 與 ``'N'`` 格式的支援。"
+msgstr "``'n'`` および ``'N'`` フォーマットのサポートが追加されました。"
 
 #: ../../library/struct.rst:254
 msgid "Added support for the ``'e'`` format."
-msgstr "新增 ``'e'`` 格式的支援。"
+msgstr "``'e'`` フォーマットのサポートが追加されました。"
 
 #: ../../library/struct.rst:263
 msgid ""
@@ -598,6 +638,9 @@ msgid ""
 "codes, if the non-integer has a :meth:`__index__` method then that method is "
 "called to convert the argument to an integer before packing."
 msgstr ""
+"非整数を整数の変換コードを使ってパックしようとすると、非整数が :meth:"
+"`__index__` メソッドを持っていた場合は、整数に変換するためにパックする前にそ"
+"のメソッドが呼ばれます。"
 
 #: ../../library/struct.rst:272
 msgid "Added use of the :meth:`__index__` method for non-integers."
@@ -610,6 +653,10 @@ msgid ""
 "the standard size, you can use whichever of the other integer formats fits "
 "your application."
 msgstr ""
+"``'n'`` および ``'N'`` 変換コードは (デフォルトもしくはバイトオーダ文字 "
+"``'@'`` 付きで選択される) native サイズ使用時のみ利用できます。standard サイ"
+"ズ使用時には、自身のアプリケーションに適する他の整数フォーマットを使うことが"
+"できます。"
 
 #: ../../library/struct.rst:282
 msgid ""
@@ -618,6 +665,10 @@ msgid ""
 "``'f'``, ``'d'`` or ``'e'`` respectively), regardless of the floating-point "
 "format used by the platform."
 msgstr ""
+"``'f'`` 、 ``'d'`` および ``'e'`` 変換コードについて、パックされた表現は "
+"IEEE 754 binary32 (``'f'`` の場合) 、 binary64 (``'d'`` の場合) 、または"
+"binary16(``'e'`` の場合) フォーマットが、プラットフォームにおける浮動小数点数"
+"のフォーマットに関係なく使われます。"
 
 #: ../../library/struct.rst:288
 msgid ""
@@ -627,6 +678,12 @@ msgid ""
 "on the host system. The struct module does not interpret this as native "
 "ordering, so the ``'P'`` format is not available."
 msgstr ""
+"``'P'`` フォーマット文字はネイティブバイトオーダでのみ利用可能です (デフォル"
+"トのネットワークバイトオーダに設定するか、``'@'`` バイトオーダ指定文字を指定"
+"しなければなりません)。``'='`` を指定した場合、ホスト計算機のバイトオーダに基"
+"づいてリトルエンディアンとビッグエンディアンのどちらを使うかを決めます。"
+"struct モジュールはこの設定をネイティブのオーダ設定として解釈しないので、"
+"``'P'`` を使うことはできません。"
 
 #: ../../library/struct.rst:295
 msgid ""
@@ -639,6 +696,15 @@ msgid ""
 "operations. See the Wikipedia page on the `half-precision floating-point "
 "format <half precision format_>`_ for more information."
 msgstr ""
+"IEEE 754 の binary16 \"半精度\" 型は、 `IEEE 754 standard <ieee 754 "
+"standard_>`_ の2008 年の改訂で導入されました。\n"
+"半精度型は、符号 bit 、5 bit の指数部、 11 bit の精度 (明示的には 10 bit が保"
+"存される) を持ち、おおよそ ``6.1e-05`` から ``6.5e+04`` までの数を完全な精度"
+"で表現できます。\n"
+"この型は C コンパイラでは広くはサポートされていません: たいていのマシンでは、"
+"保存するのに unsigned short が使えますが、数学の演算には使えません。\n"
+"詳しいことは Wikipedia の `half-precision floating-point format <half "
+"precision format_>`_ のページを参照してください。"
 
 #: ../../library/struct.rst:305
 msgid "When packing, ``'x'`` inserts one NUL byte."
@@ -657,6 +723,16 @@ msgid ""
 "consumes ``count`` bytes, but that the string returned can never contain "
 "more than 255 bytes."
 msgstr ""
+"フォーマット文字 ``'p'`` は \"Pascal 文字列 (pascal string)\"  をコードしま"
+"す。Pascal 文字列は count で与えられる *固定長のバイト列* に収められた短い可"
+"変長の文字列です。このデータの先頭の 1 バイトには文字列の長さか255 のうち、小"
+"さい方の数が収められます。その後に文字列のバイトデータが続きます。 :func:"
+"`pack` に渡された Pascal 文字列の長さが長すぎた (count-1 よりも長い) 場合、先"
+"頭の ``count-1`` バイトが書き込まれます。文字列が ``count-1`` よりも短い場"
+"合、指定した count バイトに達するまでの残りの部分はヌルで埋められます。 :"
+"func:`unpack` では、フォーマット文字 ``'p'`` は指定された ``count`` バイトだ"
+"けデータを読み込みますが、返される文字列は決して 255 文字を超えることはないの"
+"で注意してください。"
 
 #: ../../library/struct.rst:320
 msgid ""
@@ -678,12 +754,16 @@ msgid ""
 "A format character may be preceded by an integral repeat count.  For "
 "example, the format string ``'4h'`` means exactly the same as ``'hhhh'``."
 msgstr ""
+"フォーマット文字の前に整数をつけ、繰り返し回数 (count) を指定することができま"
+"す。例えば、フォーマット文字列 ``'4h'`` は ``'hhhh'`` と全く同じ意味です。"
 
 #: ../../library/struct.rst:336
 msgid ""
 "Whitespace characters between formats are ignored; a count and its format "
 "must not contain whitespace though."
 msgstr ""
+"フォーマット文字間の空白文字は無視されます; count とフォーマット文字の間には"
+"スペースを入れてはいけません。"
 
 #: ../../library/struct.rst:339
 msgid ""
@@ -692,6 +772,10 @@ msgid ""
 "``'Q'``), if ``x`` is outside the valid range for that format then :exc:"
 "`struct.error` is raised."
 msgstr ""
+"整数フォーマット (``'b'``, ``'B'``, ``'h'``, ``'H'``, ``'i'``, ``'I'``, "
+"``'l'``, ``'L'``, ``'q'``, ``'Q'``) のいずれかを使って値 ``x`` をパックすると"
+"き ``x`` がフォーマットの適切な値の範囲に無い場合、 :exc:`struct.error` が送"
+"出されます。"
 
 #: ../../library/struct.rst:344
 msgid ""
@@ -706,10 +790,14 @@ msgid ""
 "used. Either 0 or 1 in the native or standard bool representation will be "
 "packed, and any non-zero value will be ``True`` when unpacking."
 msgstr ""
+"``'?'`` フォーマット文字では、返り値は :const:`True` または :const:`False` で"
+"す。パックするときには、引数オブジェクトの論理値としての値が使われます。 0 ま"
+"たは 1 のネイティブや標準の真偽値表現でパックされ、アンパックされるときはゼロ"
+"でない値は ``True`` になります。"
 
 #: ../../library/struct.rst:360
 msgid "Examples"
-msgstr "範例"
+msgstr "使用例"
 
 #: ../../library/struct.rst:363
 msgid ""
@@ -738,6 +826,8 @@ msgid ""
 "Unpacked fields can be named by assigning them to variables or by wrapping "
 "the result in a named tuple::"
 msgstr ""
+"アンパックした結果のフィールドは、変数に割り当てるか named tuple でラップする"
+"ことによって名前を付けることができます::"
 
 #: ../../library/struct.rst:405
 msgid ""
@@ -757,15 +847,15 @@ msgstr ""
 
 #: ../../library/struct.rst:432
 msgid "Module :mod:`array`"
-msgstr ":mod:`array` 模組"
+msgstr ":mod:`array` モジュール"
 
 #: ../../library/struct.rst:432
 msgid "Packed binary storage of homogeneous data."
-msgstr ""
+msgstr "一様なデータ型からなるバイナリ記録データのパック。"
 
 #: ../../library/struct.rst:435
 msgid "Module :mod:`json`"
-msgstr ":mod:`json` 模組"
+msgstr ":mod:`json` モジュール"
 
 #: ../../library/struct.rst:435
 msgid "JSON encoder and decoder."
@@ -773,7 +863,7 @@ msgstr ""
 
 #: ../../library/struct.rst:437
 msgid "Module :mod:`pickle`"
-msgstr ":mod:`pickle` 模組"
+msgstr ":mod:`pickle` モジュール"
 
 #: ../../library/struct.rst:438
 msgid "Python object serialization."
@@ -859,11 +949,11 @@ msgstr ""
 
 #: ../../library/struct.rst:536
 msgid "Classes"
-msgstr ""
+msgstr "クラス"
 
 #: ../../library/struct.rst:538
 msgid "The :mod:`struct` module also defines the following type:"
-msgstr ""
+msgstr ":mod:`struct` モジュールは次の型を定義します:"
 
 #: ../../library/struct.rst:543
 msgid ""
@@ -884,22 +974,29 @@ msgstr ""
 #: ../../library/struct.rst:555
 msgid "Compiled Struct objects support the following methods and attributes:"
 msgstr ""
+"コンパイルされた Struct オブジェクトは以下のメソッドと属性をサポートします:"
 
 #: ../../library/struct.rst:559
 msgid ""
 "Identical to the :func:`pack` function, using the compiled format. "
 "(``len(result)`` will equal :attr:`size`.)"
 msgstr ""
+":func:`pack` 関数と同じ、コンパイルされたフォーマットを利用するメソッドで"
+"す。 (``len(result)`` は :attr:`size` と等しいでしょう)"
 
 #: ../../library/struct.rst:565
 msgid "Identical to the :func:`pack_into` function, using the compiled format."
 msgstr ""
+":func:`pack_into` 関数と同じ、コンパイルされたフォーマットを利用するメソッド"
+"です。"
 
 #: ../../library/struct.rst:570
 msgid ""
 "Identical to the :func:`unpack` function, using the compiled format. The "
 "buffer's size in bytes must equal :attr:`size`."
 msgstr ""
+":func:`unpack` 関数と同じ、コンパイルされたフォーマットを利用するメソッドで"
+"す。 (buffer のバイト数は :attr:`size` と等しくなければなりません)。"
 
 #: ../../library/struct.rst:576
 msgid ""
@@ -913,10 +1010,13 @@ msgid ""
 "Identical to the :func:`iter_unpack` function, using the compiled format. "
 "The buffer's size in bytes must be a multiple of :attr:`size`."
 msgstr ""
+":func:`iter_unpack` 関数と同じ、コンパイルされたフォーマットを利用するメソッ"
+"ドです。 (buffer のバイト数は :attr:`size` の倍数でなければなりません)。"
 
 #: ../../library/struct.rst:590
 msgid "The format string used to construct this Struct object."
 msgstr ""
+"この Struct オブジェクトを作成する時に利用されたフォーマット文字列です。"
 
 #: ../../library/struct.rst:592
 msgid "The format string type is now :class:`str` instead of :class:`bytes`."
@@ -927,3 +1027,5 @@ msgid ""
 "The calculated size of the struct (and hence of the bytes object produced by "
 "the :meth:`pack` method) corresponding to :attr:`format`."
 msgstr ""
+":attr:`format` 属性に対応する構造体の (従って :meth:`pack` メソッドによって作"
+"成されるバイト列オブジェクトの) サイズです。"

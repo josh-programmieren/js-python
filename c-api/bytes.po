@@ -1,26 +1,30 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# tomo, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-15 20:43+0000\n"
-"PO-Revision-Date: 2018-05-23 14:04+0000\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 00:47+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../c-api/bytes.rst:6
 msgid "Bytes Objects"
-msgstr ""
+msgstr "バイトオブジェクト"
 
 #: ../../c-api/bytes.rst:8
 msgid ""
@@ -31,24 +35,31 @@ msgstr ""
 #: ../../c-api/bytes.rst:16
 msgid "This subtype of :c:type:`PyObject` represents a Python bytes object."
 msgstr ""
+"この :c:type:`PyObject` のサブタイプは、Python バイトオブジェクトを表します。"
 
 #: ../../c-api/bytes.rst:21
 msgid ""
 "This instance of :c:type:`PyTypeObject` represents the Python bytes type; it "
 "is the same object as :class:`bytes` in the Python layer."
 msgstr ""
+"この :c:type:`PyTypeObject` のインスタンスは、Python バイト型を表します; "
+"Pythonレイヤの :class:`bytes` と同じオブジェクトです。"
 
 #: ../../c-api/bytes.rst:27
 msgid ""
 "Return true if the object *o* is a bytes object or an instance of a subtype "
 "of the bytes type.  This function always succeeds."
 msgstr ""
+"オブジェクト *o* が bytes オブジェクトか bytes 型のサブタイプのインスタンスで"
+"ある場合に真を返します。この関数は常に成功します。"
 
 #: ../../c-api/bytes.rst:33
 msgid ""
 "Return true if the object *o* is a bytes object, but not an instance of a "
 "subtype of the bytes type.  This function always succeeds."
 msgstr ""
+"オブジェクト *o* が bytes オブジェクトだが bytes 型のサブタイプのインスタンス"
+"でない場合に真を返します。この関数は常に成功します。"
 
 #: ../../c-api/bytes.rst:39
 msgid ""
@@ -56,6 +67,9 @@ msgid ""
 "and ``NULL`` on failure.  The parameter *v* must not be ``NULL``; it will "
 "not be checked."
 msgstr ""
+"成功時に、文字列 *v* のコピーを値とする新しいバイトオブジェクトを返し、失敗時"
+"に ``NULL`` を返します。\n"
+"引数 *v* は ``NULL`` であってはなりません; そのチェックは行われません。"
 
 #: ../../c-api/bytes.rst:46
 msgid ""
@@ -63,6 +77,9 @@ msgid ""
 "*len* on success, and ``NULL`` on failure.  If *v* is ``NULL``, the contents "
 "of the bytes object are uninitialized."
 msgstr ""
+"成功時に、文字列 *v* のコピーを値とする長さ *len* の新しいバイトオブジェクト"
+"を返し、失敗時に ``NULL`` を返します。\n"
+"引数 *v* が ``NULL`` の場合、バイトオブジェクトの中身は初期化されていません。"
 
 #: ../../c-api/bytes.rst:53
 msgid ""
@@ -73,18 +90,23 @@ msgid ""
 "characters in the *format* string.  The following format characters are "
 "allowed:"
 msgstr ""
+"C 関数の :c:func:`printf` スタイルの *format* 文字列と可変長の引数を取り、結"
+"果のPython バイトオブジェクトのサイズを計算し、値を指定した書式にしたがって変"
+"換したバイトオブジェクトを返します。可変長の引数は C のデータ型でなければなら"
+"ず、 *format* 文字列中のフォーマット文字と厳密に関連付けられていなければなり"
+"ません。下記のフォーマット文字が使用できます:"
 
 #: ../../c-api/bytes.rst:68
 msgid "Format Characters"
-msgstr ""
+msgstr "書式指定文字"
 
 #: ../../c-api/bytes.rst:68
 msgid "Type"
-msgstr ""
+msgstr "型"
 
 #: ../../c-api/bytes.rst:68
 msgid "Comment"
-msgstr ""
+msgstr "備考"
 
 #: ../../c-api/bytes.rst:70
 msgid ":attr:`%%`"
@@ -96,7 +118,7 @@ msgstr "*n/a*"
 
 #: ../../c-api/bytes.rst:70
 msgid "The literal % character."
-msgstr ""
+msgstr "リテラルの % 文字"
 
 #: ../../c-api/bytes.rst:72
 msgid ":attr:`%c`"
@@ -109,7 +131,7 @@ msgstr "int"
 
 #: ../../c-api/bytes.rst:72
 msgid "A single byte, represented as a C int."
-msgstr ""
+msgstr "C の整数型で表現される単一のバイト。"
 
 #: ../../c-api/bytes.rst:75
 msgid ":attr:`%d`"
@@ -117,7 +139,7 @@ msgstr ":attr:`%d`"
 
 #: ../../c-api/bytes.rst:75
 msgid "Equivalent to ``printf(\"%d\")``. [1]_"
-msgstr "等價於 ``printf(\"%d\")``. [1]_"
+msgstr "``printf(\"%d\")`` と同等。 [1]_"
 
 #: ../../c-api/bytes.rst:78
 msgid ":attr:`%u`"
@@ -129,7 +151,7 @@ msgstr "unsigned int"
 
 #: ../../c-api/bytes.rst:78
 msgid "Equivalent to ``printf(\"%u\")``. [1]_"
-msgstr "等價於 ``printf(\"%u\")``. [1]_"
+msgstr "``printf(\"%u\")`` と同等。 [1]_"
 
 #: ../../c-api/bytes.rst:81
 msgid ":attr:`%ld`"
@@ -141,7 +163,7 @@ msgstr "long"
 
 #: ../../c-api/bytes.rst:81
 msgid "Equivalent to ``printf(\"%ld\")``. [1]_"
-msgstr "等價於 ``printf(\"%ld\")``. [1]_"
+msgstr "``printf(\"%ld\")`` と同等。 [1]_"
 
 #: ../../c-api/bytes.rst:84
 msgid ":attr:`%lu`"
@@ -153,7 +175,7 @@ msgstr "unsigned long"
 
 #: ../../c-api/bytes.rst:84
 msgid "Equivalent to ``printf(\"%lu\")``. [1]_"
-msgstr "等價於 ``printf(\"%lu\")``. [1]_"
+msgstr "``printf(\"%lu\")`` と同等。 [1]_"
 
 #: ../../c-api/bytes.rst:87
 msgid ":attr:`%zd`"
@@ -161,11 +183,11 @@ msgstr ":attr:`%zd`"
 
 #: ../../c-api/bytes.rst:87
 msgid ":c:type:`\\ Py_ssize_t`"
-msgstr ":c:type:`\\ Py_ssize_t`"
+msgstr ""
 
 #: ../../c-api/bytes.rst:87
 msgid "Equivalent to ``printf(\"%zd\")``. [1]_"
-msgstr "等價於 ``printf(\"%zd\")``. [1]_"
+msgstr "``printf(\"%zd\")`` と同等。 [1]_"
 
 #: ../../c-api/bytes.rst:90
 msgid ":attr:`%zu`"
@@ -177,7 +199,7 @@ msgstr "size_t"
 
 #: ../../c-api/bytes.rst:90
 msgid "Equivalent to ``printf(\"%zu\")``. [1]_"
-msgstr "等價於 ``printf(\"%zu\")``. [1]_"
+msgstr "``printf(\"%zu\")`` と同等。 [1]_"
 
 #: ../../c-api/bytes.rst:93
 msgid ":attr:`%i`"
@@ -185,7 +207,7 @@ msgstr ":attr:`%i`"
 
 #: ../../c-api/bytes.rst:93
 msgid "Equivalent to ``printf(\"%i\")``. [1]_"
-msgstr "等價於 ``printf(\"%i\")``. [1]_"
+msgstr "``printf(\"%i\")`` と同等。 [1]_"
 
 #: ../../c-api/bytes.rst:96
 msgid ":attr:`%x`"
@@ -193,7 +215,7 @@ msgstr ":attr:`%x`"
 
 #: ../../c-api/bytes.rst:96
 msgid "Equivalent to ``printf(\"%x\")``. [1]_"
-msgstr "等價於 ``printf(\"%x\")``. [1]_"
+msgstr "``printf(\"%x\")`` と同等。 [1]_"
 
 #: ../../c-api/bytes.rst:99
 msgid ":attr:`%s`"
@@ -205,7 +227,7 @@ msgstr "const char\\*"
 
 #: ../../c-api/bytes.rst:99
 msgid "A null-terminated C character array."
-msgstr ""
+msgstr "null で終端された C の文字列。"
 
 #: ../../c-api/bytes.rst:102
 msgid ":attr:`%p`"
@@ -217,38 +239,47 @@ msgstr "const void\\*"
 
 #: ../../c-api/bytes.rst:102
 msgid ""
-"The hex representation of a C pointer. Mostly equivalent to ``printf(\"%p"
-"\")`` except that it is guaranteed to start with the literal ``0x`` "
-"regardless of what the platform's ``printf`` yields."
+"The hex representation of a C pointer. Mostly equivalent to "
+"``printf(\"%p\")`` except that it is guaranteed to start with the literal "
+"``0x`` regardless of what the platform's ``printf`` yields."
 msgstr ""
+"C ポインタの 16 進表記。``printf(\"%p\")`` とほとんど同じですが、プラット"
+"フォームにおける ``printf`` の定義に関わりなく先頭にリテラル ``0x`` が付きま"
+"す。"
 
 #: ../../c-api/bytes.rst:111
 msgid ""
 "An unrecognized format character causes all the rest of the format string to "
 "be copied as-is to the result object, and any extra arguments discarded."
 msgstr ""
+"識別できない書式指定文字があった場合、残りの書式文字列はそのまま結果のオブ"
+"ジェクトにコピーされ、残りの引数は無視されます。"
 
 #: ../../c-api/bytes.rst:114
 msgid ""
 "For integer specifiers (d, u, ld, lu, zd, zu, i, x): the 0-conversion flag "
 "has effect even when a precision is given."
 msgstr ""
+"整数指定子 (d, u, ld, lu, zd, zu, i, x): 精度が与えられていても、0指定子は有"
+"効です。"
 
 #: ../../c-api/bytes.rst:120
 msgid ""
 "Identical to :c:func:`PyBytes_FromFormat` except that it takes exactly two "
 "arguments."
 msgstr ""
+"ちょうど２つの引数を取ることを除いて、 :c:func:`PyBytes_FromFormat` と同じで"
+"す。"
 
 #: ../../c-api/bytes.rst:126
 msgid ""
 "Return the bytes representation of object *o* that implements the buffer "
 "protocol."
-msgstr ""
+msgstr "バッファプロトコルを実装するオブジェクト *o* のバイト表現を返します。"
 
 #: ../../c-api/bytes.rst:132
 msgid "Return the length of the bytes in bytes object *o*."
-msgstr ""
+msgstr "バイトオブジェクト *o* のバイト単位の長さを返します。"
 
 #: ../../c-api/bytes.rst:137
 msgid "Similar to :c:func:`PyBytes_Size`, but without error checking."
@@ -264,6 +295,15 @@ msgid ""
 "deallocated.  If *o* is not a bytes object at all, :c:func:"
 "`PyBytes_AsString` returns ``NULL`` and raises :exc:`TypeError`."
 msgstr ""
+"*o* の中身へのポインタを返します。\n"
+"ポインタは、 ``len(o) + 1`` バイトからなる *o* の内部バッファを参照します。\n"
+"他に null のバイトがあるかどうかにかかわらず、バッファの最後のバイトは必ず "
+"null になります。\n"
+"``PyBytes_FromStringAndSize(NULL, size)`` で生成された場合を除いて、データを"
+"修正してはなりません。\n"
+"またポインタを解放（deallocated）してはなりません。\n"
+"もし、 *o* が bytes オブジェクトでなければ、 :c:func:`PyBytes_AsString` は "
+"``NULL`` を返し :exc:`TypeError` を送出します。"
 
 #: ../../c-api/bytes.rst:154
 msgid "Similar to :c:func:`PyBytes_AsString`, but without error checking."
@@ -274,6 +314,8 @@ msgid ""
 "Return the null-terminated contents of the object *obj* through the output "
 "variables *buffer* and *length*."
 msgstr ""
+"*obj* のnull 終端された中身を、出力用の変数 *buffer* と *length* を介して返し"
+"ます。"
 
 #: ../../c-api/bytes.rst:162
 msgid ""
@@ -281,6 +323,9 @@ msgid ""
 "bytes; if it does, the function returns ``-1`` and a :exc:`ValueError` is "
 "raised."
 msgstr ""
+"*length* の値が ``NULL`` の場合、バイトオブジェクトが  null バイトを含まない"
+"可能性があります。その場合、関数は ``-1`` を返し、 :exc:`ValueError` を送出し"
+"ます。"
 
 #: ../../c-api/bytes.rst:166
 msgid ""
@@ -291,12 +336,21 @@ msgid ""
 "*obj* is not a bytes object at all, :c:func:`PyBytes_AsStringAndSize` "
 "returns ``-1`` and raises :exc:`TypeError`."
 msgstr ""
+"buffer は *obj* の内部バッファを参照していて、これには末尾の null バイトも含"
+"んでいます (これは *length* には数えられません)。\n"
+"オブジェクトが ``PyBytes_FromStringAndSize(NULL, size)`` で生成された場合を除"
+"いて、何があってもデータを改変してはいけません。\n"
+"オブジェクトを解放 (deallocate) してもいけません。\n"
+"*obj* が bytes オブジェクトでなかった場合は、 :c:func:"
+"`PyBytes_AsStringAndSize` は ``-1`` を返し :exc:`TypeError` を送出します。"
 
 #: ../../c-api/bytes.rst:173
 msgid ""
 "Previously, :exc:`TypeError` was raised when embedded null bytes were "
 "encountered in the bytes object."
 msgstr ""
+"以前は bytes オブジェクトにヌルバイトが埋め込まれていたときに :exc:"
+"`TypeError` を送出していました。"
 
 #: ../../c-api/bytes.rst:180
 msgid ""
@@ -306,6 +360,11 @@ msgid ""
 "created, the old reference to *bytes* will still be discarded and the value "
 "of *\\*bytes* will be set to ``NULL``; the appropriate exception will be set."
 msgstr ""
+"*newpart* の内容を *bytes* の後ろに連結した新しいバイトオブジェクトを "
+"*\\*bytes* に生成します。呼び出し側は新しい参照を所有します。\n"
+"*bytes* の古い値の参照は盗まれます。\n"
+"もし新しいオブジェクトが生成できない場合、古い *bytes* の参照は放棄され、 "
+"*\\*bytes* の値は ``NULL`` に設定されます; 適切な例外が設定されます。"
 
 #: ../../c-api/bytes.rst:189
 msgid ""
@@ -313,6 +372,9 @@ msgid ""
 "appended to *bytes*.  This version decrements the reference count of "
 "*newpart*."
 msgstr ""
+"*newpart* の内容を *bytes* の後ろに連結した新しいバイトオブジェクトを "
+"*\\*bytes* に生成します; この関数は、 *newpart* の参照カウントをデクリメント"
+"します。"
 
 #: ../../c-api/bytes.rst:196
 msgid ""
@@ -323,7 +385,22 @@ msgid ""
 "address of an existing bytes object as an lvalue (it may be written into), "
 "and the new size desired.  On success, *\\*bytes* holds the resized bytes "
 "object and ``0`` is returned; the address in *\\*bytes* may differ from its "
-"input value.  If the reallocation fails, the original bytes object at *"
-"\\*bytes* is deallocated, *\\*bytes* is set to ``NULL``, :exc:`MemoryError` "
+"input value.  If the reallocation fails, the original bytes object at "
+"*\\*bytes* is deallocated, *\\*bytes* is set to ``NULL``, :exc:`MemoryError` "
 "is set, and ``-1`` is returned."
 msgstr ""
+"本来 \"変更不可能 (immutable)\" なバイトオブジェクトをリサイズする方法で"
+"す。\n"
+"作成されたばかりのバイトオブジェクトにのみこれをしようしてください; 他のコー"
+"ドですでに使用されている可能性のあるバイトオブジェクトに使用してはいけませ"
+"ん。\n"
+"入力されたバイトオブジェクトの参照カウントが 1 でない場合、この関数はエラーに"
+"なります。\n"
+"左辺値として存在する (つまり書き込み可能な) バイトオブジェクトのアドレスを受"
+"け取り、新しいサイズを要求します。\n"
+"成功時には、*\\*bytes* はリサイズされたバイトオブジェクトを保持し、``0`` が返"
+"されます; *\\*bytes* のアドレスは入力された際のアドレスと異なるかもしれませ"
+"ん。\n"
+"再割り当て (reallocation) が失敗した場合、 *\\*bytes* が元々指してしたバイト"
+"オブジェクトを解放し、*\\*bytes* を ``NULL`` に設定し、 :exc:`MemoryError` を"
+"設定し、そして ``-1`` が返されます。"

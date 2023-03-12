@@ -1,35 +1,35 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# 周 忠毅 <rilakcrc35@gmail.com>, 2016
-# Liang-Bo Wang <me@liang2.tw>, 2017
-# pertertc <petertc.chu@gmail.com>, 2022
-# Matt Wang <mattwang44@gmail.com>, 2022
+# tomo, 2021
+# Takanori Suzuki <takanori@takanory.net>, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-26 00:21+0000\n"
-"PO-Revision-Date: 2022-10-17 10:53+0800\n"
-"Last-Translator: Matt Wang <mattwang44@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 00:56+0000\n"
+"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1.1\n"
 
 #: ../../library/bisect.rst:2
 msgid ":mod:`bisect` --- Array bisection algorithm"
-msgstr ":mod:`bisect` --- 陣列二分演算法 (Array bisection algorithm)"
+msgstr ":mod:`bisect` --- 配列二分法アルゴリズム"
 
 #: ../../library/bisect.rst:10
 msgid "**Source code:** :source:`Lib/bisect.py`"
-msgstr "**原始碼：**\\ :source:`Lib/bisect.py`"
+msgstr "**ソースコード:** :source:`Lib/bisect.py`"
 
 #: ../../library/bisect.rst:14
 msgid ""
@@ -41,15 +41,16 @@ msgid ""
 "working example of the algorithm (the boundary conditions are already "
 "right!)."
 msgstr ""
-"這個模組維護一個已經排序過的 list ，當我們每次做完插入後不需要再次排序整個 "
-"list 。一個很長的 list 的比較操作很花費時間，為了改進這點，這個模組是其中一個"
-"常用的方法。這個模組被命名為 :mod:`bisect` 來自他使用一個基礎的 bisection 演"
-"算法實作。模組的原始碼是這個演算法的一個完善的實作（邊界條件已經是正確的"
-"了）。"
+"このモジュールは、挿入の度にリストをソートすることなく、リストをソートされた"
+"順序に保つことをサポートします。大量の比較操作を伴うような、アイテムがたくさ"
+"んあるリストでは、より一般的なアプローチに比べて、パフォーマンスが向上しま"
+"す。動作に基本的な二分法アルゴリズムを使っているので、 :mod:`bisect` と呼ばれ"
+"ています。ソースコードはこのアルゴリズムの実例として一番役に立つかもしれませ"
+"ん (境界条件はすでに正しいです!)。"
 
 #: ../../library/bisect.rst:21
 msgid "The following functions are provided:"
-msgstr "此模組提供下面的函式："
+msgstr "次の関数が用意されています:"
 
 #: ../../library/bisect.rst:26
 msgid ""
@@ -60,10 +61,12 @@ msgid ""
 "existing entries.  The return value is suitable for use as the first "
 "parameter to ``list.insert()`` assuming that *a* is already sorted."
 msgstr ""
-"在 *a* 當中找到一個位置，讓 *x* 插入後 *a* 仍然是排序好的。參數 *lo* 和 *hi* "
-"用來指定 list 中應該被考慮的子區間，預設是考慮整個 list 。如果 *a* 裡面已經"
-"有 *x* 出現，插入的位置會在所有 *x* 的前面（左邊）。回傳值可以被當作 ``list."
-"insert()`` 的第一個參數，但列表 *a* 必須先排序過。"
+"ソートされた順序を保ったまま *x* を *a* に挿入できる点を探し当てます。リスト"
+"の中から検索する部分集合を指定するには、パラメータの *lo* と *hi* を使いま"
+"す。デフォルトでは、リスト全体が使われます。*x* がすでに *a* に含まれている場"
+"合、挿入点は既存のどのエントリーよりも前(左)になります。戻り値は、``list."
+"insert()`` の第一引数として使うのに適しています。*a* はすでにソートされている"
+"ものとします。"
 
 #: ../../library/bisect.rst:33
 msgid ""
@@ -71,8 +74,9 @@ msgid ""
 "that ``all(val < x for val in a[lo : i])`` for the left side and ``all(val "
 ">= x for val in a[i : hi])`` for the right side."
 msgstr ""
-"回傳的插入位置 *i* 將陣列 *a* 分為兩半，使得 ``all(val < x for val in a[lo : "
-"i])`` 都在左側且 ``all(val >= x for val in a[i : hi])`` 都在右側。"
+"返された挿入点 *i* は、配列 *a* を二つに分け、``all(val < x for val in "
+"a[lo : i])`` が左側に、``all(val >= x for val in a[i : hi])`` が右側になるよ"
+"うにします。"
 
 #: ../../library/bisect.rst:37 ../../library/bisect.rst:58
 msgid ""
@@ -80,28 +84,25 @@ msgid ""
 "extract a comparison key from each element in the array.  To support "
 "searching complex records, the key function is not applied to the *x* value."
 msgstr ""
-"*key* 可指定一個單一參數的 :term:`key function`。函式將套用此 function 在陣列"
-"所有元素以得到比較值來計算順位。注意此 function 只會套用在陣列中的元素，不會"
-"套用在 *x*。"
 
 #: ../../library/bisect.rst:41 ../../library/bisect.rst:62
 msgid ""
 "If *key* is ``None``, the elements are compared directly with no intervening "
 "function call."
-msgstr "若 *key* 為 ``None``，則排序順位將直接以陣列中元素值決定。"
+msgstr ""
 
 #: ../../library/bisect.rst:44 ../../library/bisect.rst:65
 #: ../../library/bisect.rst:83 ../../library/bisect.rst:103
 msgid "Added the *key* parameter."
-msgstr "新增 *key* 參數。"
+msgstr "*key* パラメータが追加されました。"
 
 #: ../../library/bisect.rst:51
 msgid ""
 "Similar to :func:`bisect_left`, but returns an insertion point which comes "
 "after (to the right of) any existing entries of *x* in *a*."
 msgstr ""
-"類似 :func:`bisect_left` ，但回傳的插入位置會在所有 *a* 當中的 *x* 的後面（右"
-"邊）。"
+":func:`bisect_left` と似ていますが、 *a* に含まれる *x* のうち、どのエント"
+"リーよりも後ろ(右)にくるような挿入点を返します。"
 
 #: ../../library/bisect.rst:54
 msgid ""
@@ -109,12 +110,13 @@ msgid ""
 "that ``all(val <= x for val in a[lo : i])`` for the left side and ``all(val "
 "> x for val in a[i : hi])`` for the right side."
 msgstr ""
-"回傳的插入位置 *i* 將陣列 *a* 分為兩半，使得 ``all(val <= x for val in "
-"a[lo : i])`` 都在左側且 ``all(val > x for val in a[i : hi])`` 都在右側。"
+"返された挿入点 *i* は、配列 *a* を二つに分け、``all(val <= x for val in "
+"a[lo : i])`` が左側に、``all(val > x for val in a[i : hi])`` が右側になるよう"
+"にします。"
 
 #: ../../library/bisect.rst:71
 msgid "Insert *x* in *a* in sorted order."
-msgstr "將元素 *x* 插入 list *a*，並維持順序。"
+msgstr "*x* を *a* にソート順で挿入します。"
 
 #: ../../library/bisect.rst:73
 msgid ""
@@ -122,29 +124,26 @@ msgid ""
 "Next, it runs the :meth:`insert` method on *a* to insert *x* at the "
 "appropriate position to maintain sort order."
 msgstr ""
-"此函式先使用 :func:`bisect_left` 搜索插入位置，接著用 :meth:`insert` 將 *x* "
-"插入，以能維持添加元素後的順序。"
 
 #: ../../library/bisect.rst:77 ../../library/bisect.rst:97
 msgid ""
 "To support inserting records in a table, the *key* function (if any) is "
 "applied to *x* for the search step but not for the insertion step."
-msgstr "此函式只有在搜索時會使用 *key* 函式，插入時不會。"
+msgstr ""
 
 #: ../../library/bisect.rst:80 ../../library/bisect.rst:100
 msgid ""
 "Keep in mind that the ``O(log n)`` search is dominated by the slow O(n) "
 "insertion step."
 msgstr ""
-"注意雖然搜索是 ``O(log n)``，但插入是 O(n)，因此此函式整體時間複雜度是 O(n)。"
 
 #: ../../library/bisect.rst:90
 msgid ""
 "Similar to :func:`insort_left`, but inserting *x* in *a* after any existing "
 "entries of *x*."
 msgstr ""
-"類似 :func:`insort_left` ，但插入的位置會在所有 *a* 當中的 *x* 的後面（右"
-"邊）。"
+":func:`insort_left` と似ていますが、 *a* に含まれる *x* のうち、どのエント"
+"リーよりも後ろに *x* を挿入します。"
 
 #: ../../library/bisect.rst:93
 msgid ""
@@ -152,36 +151,28 @@ msgid ""
 "Next, it runs the :meth:`insert` method on *a* to insert *x* at the "
 "appropriate position to maintain sort order."
 msgstr ""
-"此函式先使用 :func:`bisect_right` 搜索插入位置，接著用 :meth:`insert` 將 *x* "
-"插入，以能維持添加元素後的順序。"
 
 #: ../../library/bisect.rst:108
 msgid "Performance Notes"
-msgstr "效能考量"
+msgstr "パフォーマンスに関するメモ"
 
 #: ../../library/bisect.rst:110
 msgid ""
 "When writing time sensitive code using *bisect()* and *insort()*, keep these "
 "thoughts in mind:"
 msgstr ""
-"若在需要關注寫入時間的程式當中使用 *bisect()* 和 *insort()*，請特別注意幾個事"
-"項："
 
 #: ../../library/bisect.rst:113
 msgid ""
 "Bisection is effective for searching ranges of values. For locating specific "
 "values, dictionaries are more performant."
 msgstr ""
-"二分法在一段範圍的數值中做搜索的效率較佳，但若是要存取特定數值，使用字典的表"
-"現還是比較好。"
 
 #: ../../library/bisect.rst:116
 msgid ""
 "The *insort()* functions are ``O(n)`` because the logarithmic search step is "
 "dominated by the linear time insertion step."
 msgstr ""
-"*insort()* 函式的複雜度為 ``O(n)``，因為對數搜尋是以線性時間的插入步驟所主導 "
-"(dominate)。"
 
 #: ../../library/bisect.rst:119
 msgid ""
@@ -193,11 +184,6 @@ msgid ""
 "an array of precomputed keys to locate the insertion point (as shown in the "
 "examples section below)."
 msgstr ""
-"搜索函式為無狀態的 (stateless)，且鍵函式會在使用過後被丟棄。因此，如果搜索函"
-"式被使用於迴圈當中，鍵函式會不斷被重複呼叫於相同的 list 元素。如果鍵函式執行"
-"速度不快，請考慮將其以 :func:`functools.cache` 包裝起來以減少重複的計算。另"
-"外，也可以透過搜尋預先計算好的鍵列表 (array of precomputed keys) 來定位插入點"
-"（如下方範例所示）。"
 
 #: ../../library/bisect.rst:129
 msgid ""
@@ -205,8 +191,6 @@ msgid ""
 "high performance module that uses *bisect* to managed sorted collections of "
 "data."
 msgstr ""
-"`有序容器 (Sorted Collections) <https://grantjenks.com/docs/"
-"sortedcollections/>`_ 是一個使用 *bisect* 來管理資料之有序集合的高效能模組。"
 
 #: ../../library/bisect.rst:133
 msgid ""
@@ -216,14 +200,14 @@ msgid ""
 "keys are precomputed to save unnecessary calls to the key function during "
 "searches."
 msgstr ""
-"`SortedCollection recipe <https://code.activestate.com/recipes/577197-"
-"sortedcollection/>`_ 使用二分法來建立一個功能完整的集合類別 (collection "
-"class) 並帶有符合直覺的搜索方法 (search methods) 與支援鍵函式。鍵會預先被計算"
-"好，以減少搜索過程中多餘的鍵函式呼叫。"
+"bisect を利用して、直接の探索ができ、キー関数をサポートする、完全な機能を持つ"
+"コレクションクラスを組み立てる `SortedCollection recipe <https://code."
+"activestate.com/recipes/577197-sortedcollection/>`_\\ 。キーは、探索中に不必"
+"要な呼び出しをさせないために、予め計算しておきます。"
 
 #: ../../library/bisect.rst:141
 msgid "Searching Sorted Lists"
-msgstr "搜尋一個已排序的 list"
+msgstr "ソート済みリストの探索"
 
 #: ../../library/bisect.rst:143
 msgid ""
@@ -232,14 +216,13 @@ msgid ""
 "following five functions show how to transform them into the standard "
 "lookups for sorted lists::"
 msgstr ""
-"上面的 :func:`bisect` 函式在找到數值插入點上很有用，但一般的數值搜尋任務上就"
-"不是那麼的方便。以下的五個函式展示了如何將其轉換成標準的有序列表查找函式：\n"
-"\n"
-"::"
+"上記の :func:`bisect` 関数群は挿入点を探索するのには便利ですが、普通の探索タ"
+"スクに使うのはトリッキーだったり不器用だったりします。以下の 5 関数は、これら"
+"をどのように標準の探索やソート済みリストに変換するかを説明します::"
 
 #: ../../library/bisect.rst:185
 msgid "Examples"
-msgstr "範例"
+msgstr "使用例"
 
 #: ../../library/bisect.rst:189
 msgid ""
@@ -248,11 +231,10 @@ msgid ""
 "(say) based on a set of ordered numeric breakpoints: 90 and up is an 'A', 80 "
 "to 89 is a 'B', and so on::"
 msgstr ""
-":func:`bisect` 函式可用於數值表中的查找 (numeric table lookup)，這個範例使"
-"用 :func:`bisect` 以基於一組有序的數值分界點來為一個考試成績找到相對應的字母"
-"等級：90 以上是 'A'、80 到 89 為 'B'，依此類推：\n"
-"\n"
-"::"
+":func:`bisect` 関数は数値テーブルの探索に役に立ちます。この例では、 :func:"
+"`bisect` を使って、(たとえば)順序のついた数値の区切り点の集合に基づいて、試験"
+"の成績の等級を表す文字を調べます。区切り点は 90 以上は 'A'、 80 から 89 は "
+"'B'、などです::"
 
 #: ../../library/bisect.rst:201
 msgid ""
@@ -260,17 +242,9 @@ msgid ""
 "tuples.  The *key* argument can serve to extract the field used for ordering "
 "records in a table::"
 msgstr ""
-":func:`bisect` 與 :func:`insort` 函式也適用於內容為 tuples（元組）的 lists，"
-"*key* 引數可被用以取出在數值表中作為排序依據的欄位：\n"
-"\n"
-"::"
 
 #: ../../library/bisect.rst:235
 msgid ""
 "If the key function is expensive, it is possible to avoid repeated function "
 "calls by searching a list of precomputed keys to find the index of a record::"
 msgstr ""
-"如果鍵函式會消耗較多運算資源，那可以在預先計算好的鍵列表中搜索該紀錄的索引"
-"值，以減少重複的函式呼叫：\n"
-"\n"
-"::"

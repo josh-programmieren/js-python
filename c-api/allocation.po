@@ -1,30 +1,31 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Liang-Bo Wang <me@liang2.tw>, 2016
-# Matt Wang <mattwang44@gmail.com>, 2021
+# tomo, 2021
+# 菊池 健志, 2023
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-06 00:17+0000\n"
-"PO-Revision-Date: 2022-10-16 15:35+0800\n"
-"Last-Translator: Matt Wang <mattwang44@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-17 14:14+0000\n"
+"PO-Revision-Date: 2021-06-28 00:47+0000\n"
+"Last-Translator: 菊池 健志, 2023\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1.1\n"
 
 #: ../../c-api/allocation.rst:6
 msgid "Allocating Objects on the Heap"
-msgstr "在 heap 上分配物件"
+msgstr "オブジェクトをヒープ上にメモリ確保する"
 
 #: ../../c-api/allocation.rst:17
 msgid ""
@@ -34,17 +35,19 @@ msgid ""
 "detector's set of observed objects. Other fields of the object are not "
 "affected."
 msgstr ""
-"用它的型別和初始參照來初始化新分配物件 *op*。已初始化的物件會被回傳。如果 "
-"*type* 表示了該物件參與迴圈垃圾檢查器，則將其新增到檢查器的觀察物件集合中。物"
-"件的其他欄位不受影響。"
+"新たにメモリ確保されたオブジェクト *op* に対し、型と初期状態での参照 "
+"(initial reference) を初期化します。初期化されたオブジェクトを返します。"
+"*type* からそのオブジェクトが循環参照ガベージ検出の機能を有する場合、検出機構"
+"が監視対象とするオブジェクトのセットに追加されます。オブジェクトの他のフィー"
+"ルドには影響を及ぼしません。"
 
 #: ../../c-api/allocation.rst:26
 msgid ""
 "This does everything :c:func:`PyObject_Init` does, and also initializes the "
 "length information for a variable-size object."
 msgstr ""
-"它會做到 :c:func:`PyObject_Init` 的所有功能，並且會初始化一個大小可變物件的長"
-"度資訊。"
+":c:func:`PyObject_Init` の全ての処理を行い、可変サイズオブジェクトの場合には"
+"長さ情報も初期化します。"
 
 #: ../../c-api/allocation.rst:32
 msgid ""
@@ -54,10 +57,11 @@ msgid ""
 "the memory allocation is determined from the :c:member:`~PyTypeObject."
 "tp_basicsize` field of the type object."
 msgstr ""
-"使用 C 結構型別 *TYPE* 和 Python 型別物件 *type* 分配一個新的 Python 物件。未"
-"在該 Python 物件標頭 (header) 中定義的欄位不會被初始化；物件的參照計數將為"
-"一。記憶體分配大小由 type 物件的 :c:member:`~PyTypeObject.tp_basicsize` 欄位"
-"來指定。"
+"C 構造体型 *TYPE* と Python型オブジェクト *type* を使って、新しい Python オブ"
+"ジェクトをメモリ上に確保します。Pythonオブジェクトヘッダで定義されていない"
+"フィールドは初期化されません; オブジェクトの参照カウントは 1 になります。確保"
+"するメモリのサイズは型オブジェクトの  :c:member:`~PyTypeObject.tp_basicsize` "
+"フィールドで決まります。"
 
 #: ../../c-api/allocation.rst:41
 msgid ""
@@ -70,12 +74,14 @@ msgid ""
 "Embedding the array of fields into the same allocation decreases the number "
 "of allocations, improving the memory management efficiency."
 msgstr ""
-"使用 C 的結構型別 *TYPE* 和 Python 的型別物件 *type* 分配一個新的 Python 物"
-"件。未在該 Python 物件標頭中定義的欄位不會被初始化。記憶體空間預留了 *TYPE* "
-"結構大小再加上 *type* 物件中 :c:member:`~PyTypeObject.tp_itemsize` 欄位提供"
-"的 *size* 欄位的值。這對於實現如 tuple 這種能夠在建立期間決定自己大小的物件是"
-"很實用的。將欄位的陣列嵌入到相同的記憶體分配中可以減少記憶體分配的次數，這提"
-"高了記憶體管理的效率。"
+"C 構造体型 *TYPE* と Python 型オブジェクト *type* を使って新しい Python オブ"
+"ジェクトをメモリ上に確保します。 Python オブジェクトヘッダで定義されていない"
+"フィールドは初期化されません。確保されたメモリは、 *TYPE* 構造体に加え、"
+"*type* の :c:member:`~PyTypeObject.tp_itemsize` フィールドで指定されているサ"
+"イズを *size* 個分の大きさを格納できます。この関数は、例えばタプルのように生"
+"成時にサイズを決定できるオブジェクトを実装する際に便利です。一連の複数の"
+"フィールドのメモリ割り当てを一度で行うことでアロケーション回数を減らし、メモ"
+"リ管理の効率が向上します。"
 
 #: ../../c-api/allocation.rst:53
 msgid ""
@@ -85,10 +91,11 @@ msgid ""
 "fields of the object should not be accessed after this call as the memory is "
 "no longer a valid Python object."
 msgstr ""
-"釋放由 :c:func:`PyObject_New` 或者 :c:func:`PyObject_NewVar` 分配給物件的記憶"
-"體。這通常是在物件型別所指定的 :c:member:`~PyTypeObject.tp_dealloc` handler "
-"中呼叫。呼叫這個函式以後，物件的各欄位都不可以被存取，因為原本分配的記憶體已"
-"不再是一個有效的 Python 物件。"
+":c:func:`PyObject_New` や :c:func:`PyObject_NewVar` で 確保したメモリを解放し"
+"ます。通常、この関数はオブジェクトの型に指定されている :c:member:"
+"`~PyTypeObject.tp_dealloc` ハンドラから呼び出されます。 この関数を呼び出した"
+"後は、メモリ領域はもはや有効な Python オブジェクトを表現していないので、オブ"
+"ジェクトのフィールド に対してアクセスしてはなりません。"
 
 #: ../../c-api/allocation.rst:62
 msgid ""
@@ -96,8 +103,9 @@ msgid ""
 "using the :c:macro:`Py_None` macro, which evaluates to a pointer to this "
 "object."
 msgstr ""
-"這個物件像是 Python 中的 ``None``。它只應該透過 :c:macro:`Py_None` 巨集來存"
-"取，該巨集的拿到指向該物件的指標。"
+"Python からは ``None`` に見えるオブジェクトです。この値へのアクセスは、このオ"
+"ブジェクトへのポインタを評価する :c:macro:`Py_None` マクロを使わなければなり"
+"ません。"
 
 #: ../../c-api/allocation.rst:69
 msgid ":c:func:`PyModule_Create`"
@@ -105,4 +113,4 @@ msgstr ":c:func:`PyModule_Create`"
 
 #: ../../c-api/allocation.rst:70
 msgid "To allocate and create extension modules."
-msgstr "分配記憶體和建立擴充模組。"
+msgstr "拡張モジュールのアロケートと生成。"

@@ -1,27 +1,32 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# Takanori Suzuki <takanori@takanory.net>, 2021
+# tomo, 2021
+# Atsuo Ishimoto <atsuoishimoto@gmail.com>, 2022
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-15 20:43+0000\n"
-"PO-Revision-Date: 2022-12-28 20:58+0800\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:18+0000\n"
+"Last-Translator: Atsuo Ishimoto <atsuoishimoto@gmail.com>, 2022\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.2.2\n"
 
 #: ../../library/zlib.rst:2
 msgid ":mod:`zlib` --- Compression compatible with :program:`gzip`"
-msgstr ":mod:`zlib` --- 相容於 :program:`gzip` 的壓縮"
+msgstr ":mod:`zlib` --- :program:`gzip` 互換の圧縮"
 
 #: ../../library/zlib.rst:10
 msgid ""
@@ -32,10 +37,12 @@ msgid ""
 "earlier than 1.1.3; 1.1.3 has a `security vulnerability <https://zlib.net/"
 "zlib_faq.html#faq33>`_, so we recommend using 1.1.4 or later."
 msgstr ""
-"對於需要資料壓縮的應用程式，此模組提供了能夠使用 zlib 函式庫進行壓縮和解壓縮"
-"的函式。zlib 函式庫有自己的主頁 https://www.zlib.net。已知 Python 模組與早於 "
-"1.1.3 的 zlib 函式庫版本之間並不相容；1.1.3 存在\\ `安全漏洞 <https://zlib."
-"net/zlib_faq.html#faq33>`_，因此我們建議使用 1.1.4 或更新的版本。"
+"このモジュールは、データ圧縮を必要とするアプリケーションが zlib ライブラリを"
+"使って圧縮および展開を行えるようにします。zlib ライブラリ自身の Webページは "
+"https://www.zlib.net です。Python モジュールと zlib ライブラリの 1.1.3 より前"
+"のバージョンには互換性のない部分があることが知られています。1.1.3 には `セ"
+"キュリティホール <https://zlib.net/zlib_faq.html#faq33>`_ が存在するため、"
+"1.1.4 以降のバージョンを利用することを推奨します。"
 
 #: ../../library/zlib.rst:17
 msgid ""
@@ -44,21 +51,24 @@ msgid ""
 "consult the zlib manual at http://www.zlib.net/manual.html for authoritative "
 "information."
 msgstr ""
-"zlib 的函式有很多選項，且通常需要按特定順序使用。本文件並不打算解說所有選項排"
-"列組合的效果；相關官方資訊，請參閱 http://www.zlib.net/manual.html 上的 zlib "
-"手冊。"
+"zlib の関数にはたくさんのオプションがあり、場合によっては特定の順番で使わなけ"
+"ればなりません。このドキュメントではそれら順番についてすべてを説明しようとは"
+"していません。詳細は公式サイト http://www.zlib.net/manual.html にある zlib の"
+"マニュアルを参照してください。"
 
 #: ../../library/zlib.rst:22
 msgid "For reading and writing ``.gz`` files see the :mod:`gzip` module."
-msgstr "若要讀寫 ``.gz`` 文件，請參閱 :mod:`gzip` 模組。"
+msgstr ""
+"``.gz`` ファイルの読み書きのためには、 :mod:`gzip` モジュールを参照してくださ"
+"い。"
 
 #: ../../library/zlib.rst:24
 msgid "The available exception and functions in this module are:"
-msgstr "該模組中可用的例外和函式是："
+msgstr "このモジュールで利用可能な例外と関数を以下に示します:"
 
 #: ../../library/zlib.rst:29
 msgid "Exception raised on compression and decompression errors."
-msgstr "當壓縮和解壓縮發生錯誤時引發的例外。"
+msgstr "圧縮および展開時のエラーによって送出される例外です。"
 
 #: ../../library/zlib.rst:34
 msgid ""
@@ -72,16 +82,18 @@ msgid ""
 "Since the algorithm is designed for use as a checksum algorithm, it is not "
 "suitable for use as a general hash algorithm."
 msgstr ""
-"計算 *data* 的 Adler-32 核對和 (checksum)。（Adler-32 核對和幾乎與 CRC32 一樣"
-"可靠，但計算速度更快。）結果是一個 unsigned（無符號的）32-bit 整數。如果有提"
-"供 *value*，則將其用作核對和的起始值，否則使用預設值 1。傳入 *value* 允許了於"
-"多個輸入的串聯 (concatenation) 上計算核對和。該演算法的加密強度不夠高，不該用"
-"於身份驗證 (authentication) 或數位簽章 (digital signature)。由於該演算法是為"
-"核對和演算法而設計的，它並不適合作為通用的雜湊演算法。"
+"*data* の Adler-32 チェックサムを計算します (Adler-32 チェックサムは、おおむ"
+"ね CRC32 と同等の信頼性を持ちながら、はるかに高速に計算できます)。結果は、符"
+"号のない 32 ビットの整数です。 *value* が与えられている場合、チェックサム計算"
+"の初期値として使われます。与えられていない場合、デフォルト値の 0 が使われま"
+"す。 *value* を与えることで、複数の入力を結合したデータ全体にわたり、通しの"
+"チェックサムを計算できます。このアルゴリズムは暗号論的には強力ではなく、認証"
+"やデジタル署名などに用いるべきではありません。また、チェックサムアルゴリズム"
+"として設計されているため、汎用のハッシュアルゴリズムには向きません。"
 
 #: ../../library/zlib.rst:44 ../../library/zlib.rst:136
 msgid "The result is always unsigned."
-msgstr "結果總是為 unsigned。"
+msgstr ""
 
 #: ../../library/zlib.rst:49
 msgid ""
@@ -94,11 +106,6 @@ msgid ""
 "default compromise between speed and compression (currently equivalent to "
 "level 6)."
 msgstr ""
-"壓縮 *data* 中的位元組，回傳一個包含壓縮資料的位元組物件。 *level* 是從 "
-"``0`` 到 ``9`` 或 ``-1`` 的整數，控制了壓縮的級別；``1`` (Z_BEST_SPEED) 最快"
-"但壓縮程度較小，``9`` (Z_BEST_COMPRESSION) 最慢但壓縮最多。 ``0`` "
-"(Z_NO_COMPRESSION) 代表不壓縮。預設值為 ``-1`` (Z_DEFAULT_COMPRESSION)。"
-"Z_DEFAULT_COMPRESSION 表示預設的速度和壓縮間折衷方案（目前相當於級別 6）。"
 
 #: ../../library/zlib.rst:58
 msgid ""
@@ -107,9 +114,6 @@ msgid ""
 "trailer is included in the output.  It can take several ranges of values, "
 "defaulting to ``15`` (MAX_WBITS):"
 msgstr ""
-"*wbits* 引數控制了壓縮資料時所使用的歷史紀錄緩衝區 (history buffer) 大小（或"
-"「視窗大小」），以及輸出中是否包含標題和尾末 (trailer)。它可以採用多個值的範"
-"圍，預設為 ``15`` (MAX_WBITS)："
 
 #: ../../library/zlib.rst:63
 msgid ""
@@ -118,17 +122,12 @@ msgid ""
 "expense of greater memory usage.  The resulting output will include a zlib-"
 "specific header and trailer."
 msgstr ""
-"+9 到 +15：視窗大小的以二為底的對數，因此範圍在 512 到 32768 之間。較大的值會"
-"產生更佳的壓縮，但會佔用更多的記憶體。生成輸出將包含特定於 zlib 的標頭和尾"
-"末。"
 
 #: ../../library/zlib.rst:68
 msgid ""
 "−9 to −15: Uses the absolute value of *wbits* as the window size logarithm, "
 "while producing a raw output stream with no header or trailing checksum."
 msgstr ""
-"−9 到 −15：使用 *wbits* 的絕對值作為視窗大小的對數，同時生成沒有標頭或尾末核"
-"對和的原始輸出串流。"
 
 #: ../../library/zlib.rst:72
 msgid ""
@@ -136,28 +135,28 @@ msgid ""
 "size logarithm, while including a basic :program:`gzip` header and trailing "
 "checksum in the output."
 msgstr ""
-"+25 到 +31 = 16 +（9 到 15）：使用數值的最低 4 位元作為視窗大小的對數，同時在"
-"輸出中包含基本的 gzip 標頭和尾末核對和。"
 
 #: ../../library/zlib.rst:76
 msgid "Raises the :exc:`error` exception if any error occurs."
-msgstr "如果發生任何錯誤，則引發 :exc:`error` 例外。"
+msgstr ""
 
 #: ../../library/zlib.rst:78
 msgid "*level* can now be used as a keyword parameter."
-msgstr "*level* 現在可以用作關鍵字參數。"
+msgstr ""
 
 #: ../../library/zlib.rst:81
 msgid ""
 "The *wbits* parameter is now available to set window bits and compression "
 "type."
-msgstr "*wbits* 參數現在可用於設定視窗位元和壓縮型別。"
+msgstr ""
 
 #: ../../library/zlib.rst:87
 msgid ""
 "Returns a compression object, to be used for compressing data streams that "
 "won't fit into memory at once."
-msgstr "回傳一個壓縮物件，用於壓縮不能一次全部放入記憶體中的資料串流。"
+msgstr ""
+"一度にメモリ上に置くことができないようなデータストリームを圧縮するための圧縮"
+"オブジェクトを返します。"
 
 #: ../../library/zlib.rst:90
 msgid ""
@@ -169,17 +168,20 @@ msgid ""
 "default compromise between speed and compression (currently equivalent to "
 "level 6)."
 msgstr ""
-"*level* 是壓縮級別 -- 從 ``0`` 到 ``9`` 或 ``-1`` 的整數。``1`` "
-"(Z_BEST_SPEED) 最快但壓縮程度較小，而 ``9`` (Z_BEST_COMPRESSION) 最慢但壓縮最"
-"多。``0`` (Z_NO_COMPRESSION) 代表不壓縮。預設值為 ``-1`` "
-"(Z_DEFAULT_COMPRESSION)。Z_DEFAULT_COMPRESSION 表示預設的速度和壓縮間折衷方案"
-"（目前相當於級別 6）。"
+"*level* は圧縮レベルです。``0`` から ``9`` 、または ``-1`` の整数を取り、"
+"``1`` (Z_BEST_SPEED) は最も高速で最小限の圧縮を行い、``9`` "
+"(Z_BEST_COMPRESSION) は最も低速で最大限の圧縮を行います。``0`` "
+"(Z_NO_COMPRESSION) は圧縮しません。デフォルトは ``-1`` です "
+"(Z_DEFAULT_COMPRESSION)。Z_DEFAULT_COMPRESSION は、速度と圧縮の間のデフォルト"
+"の妥協点 (現在、レベル 6 に対応します) を表します。"
 
 #: ../../library/zlib.rst:97
 msgid ""
 "*method* is the compression algorithm. Currently, the only supported value "
 "is :const:`DEFLATED`."
-msgstr "*method* 代表壓縮演算法。目前唯一支援的值是 :const:`DEFLATED`。"
+msgstr ""
+"*method* は圧縮アルゴリズムです。現在、 :const:`DEFLATED` のみサポートされて"
+"います。"
 
 #: ../../library/zlib.rst:100
 msgid ""
@@ -187,8 +189,6 @@ msgid ""
 "\"window size\"), and what header and trailer format will be used. It has "
 "the same meaning as `described for compress() <#compress-wbits>`__."
 msgstr ""
-"*wbits* 參數控制歷史紀錄緩衝區的大小（或「視窗大小」），以及將使用的標頭和尾"
-"末格式。它與\\ `前面敘述的 compress() <#compress-wbits>`__ 具有相同的含義。"
 
 #: ../../library/zlib.rst:104
 msgid ""
@@ -196,8 +196,9 @@ msgid ""
 "compression state. Valid values range from ``1`` to ``9``. Higher values use "
 "more memory, but are faster and produce smaller output."
 msgstr ""
-"*memLevel* 引數控制用於內部壓縮狀態的記憶體大小。有效值範圍為 ``1`` 到 "
-"``9``。較高的值會使用更多的記憶體，但速度更快並產生更小的輸出。"
+"*memLevel* 引数は内部圧縮状態用に使用されるメモリ量を制御します。有効な値は "
+"``1`` から ``9`` です。大きい値ほど多くのメモリを消費しますが、より速く、より"
+"小さな出力を作成します。"
 
 #: ../../library/zlib.rst:108
 msgid ""
@@ -205,9 +206,9 @@ msgid ""
 "const:`Z_DEFAULT_STRATEGY`, :const:`Z_FILTERED`, :const:`Z_HUFFMAN_ONLY`, :"
 "const:`Z_RLE` (zlib 1.2.0.1) and :const:`Z_FIXED` (zlib 1.2.2.2)."
 msgstr ""
-"*strategy* 被用於調整壓縮演算法。可用的值為 :const:`Z_DEFAULT_STRATEGY`、:"
-"const:`Z_FILTERED`、:const:`Z_HUFFMAN_ONLY`、:const:`Z_RLE` (zlib 1.2.0.1) "
-"和 :const:`Z_FIXED` (zlib 1.2.2.2)。"
+"*strategy* は圧縮アルゴリズムの調整に使用されます。指定可能な値は、 :const:"
+"`Z_DEFAULT_STRATEGY`, :const:`Z_FILTERED`, :const:`Z_HUFFMAN_ONLY`, :const:"
+"`Z_RLE` (zlib 1.2.0.1) および :const:`Z_FIXED` (zlib 1.2.2.2) です。"
 
 #: ../../library/zlib.rst:112
 msgid ""
@@ -216,13 +217,14 @@ msgid ""
 "to occur frequently in the data that is to be compressed. Those subsequences "
 "that are expected to be most common should come at the end of the dictionary."
 msgstr ""
-"*zdict* 是事先定義好的的壓縮字典。這是一個位元組序列（例如一個 :class:"
-"`bytes` 物件），其中包含預期在要壓縮的資料中頻繁出現的子序列。那些預期會最常"
-"見的子序列應該出現在字典的尾末。"
+"*zdict* は定義済み圧縮辞書です。これは圧縮されるデータ内で繰り返し現れると予"
+"想されるサブシーケンスを含む (:class:`bytes` オブジェクトのような) バイト列の"
+"シーケンスです。最も一般的と思われるサブシーケンスは辞書の末尾に来なければな"
+"りません。"
 
 #: ../../library/zlib.rst:117
 msgid "Added the *zdict* parameter and keyword argument support."
-msgstr "新增 *zdict* 參數與支援關鍵字引數。"
+msgstr "*zdict* パラメータとキーワード引数のサポートが追加されました。"
 
 #: ../../library/zlib.rst:127
 msgid ""
@@ -235,11 +237,14 @@ msgid ""
 "Since the algorithm is designed for use as a checksum algorithm, it is not "
 "suitable for use as a general hash algorithm."
 msgstr ""
-"計算 *data* 的 CRC（Cyclic Redundancy Check，循環冗餘核對）核對和，結果會是一"
-"個 unsigned 32-bit 整數。如果 *value* 存在，則將其用作核對和的起始值，否則使"
-"用預設值 0。傳入 *value* 允許在多個輸入的串聯上計算核對和。該演算法的加密強度"
-"不夠高，不該用於身份驗證或數位簽章。由於該演算法是為核對和演算法而設計的，它"
-"並不適合作為通用的雜湊演算法。"
+"*data* の CRC (Cyclic Redundancy Check, 巡回冗長検査) チェックサムを計算しま"
+"す。結果は、符号のない 32 ビットの整数です。 *value* が与えられている場合、"
+"チェックサム計算の初期値として使われます。与えられていない場合、デフォルト値"
+"の 1 が使われます。 *value* を与えることで、複数の入力を結合したデータ全体に"
+"わたり、通しのチェックサムを計算できます。このアルゴリズムは暗号論的には強力"
+"ではなく、認証やデジタル署名などに用いるべきではありません。また、チェックサ"
+"ムアルゴリズムとして設計されているため、汎用のハッシュアルゴリズムには向きま"
+"せん。"
 
 #: ../../library/zlib.rst:141
 msgid ""
@@ -249,9 +254,6 @@ msgid ""
 "initial size of the output buffer.  Raises the :exc:`error` exception if any "
 "error occurs."
 msgstr ""
-"解壓縮 *data* 中的位元組，回傳包含未壓縮資料的位元組物件。 *wbits* 參數依賴"
-"於 *data* 的格式，下面將進一步討論。如果有給定 *bufsize*，它會被用作輸出緩衝"
-"區的初始大小。如果發生任何錯誤，則引發 :exc:`error` 例外。"
 
 #: ../../library/zlib.rst:149
 msgid ""
@@ -259,46 +261,36 @@ msgid ""
 "size\"), and what header and trailer format is expected. It is similar to "
 "the parameter for :func:`compressobj`, but accepts more ranges of values:"
 msgstr ""
-"*wbits* 參數控制歷史紀錄緩衝區的大小（或「視窗大小」），以及期望的標頭和尾末"
-"格式。它類似於 :func:`compressobj` 的參數，但接受更多範圍的值："
 
 #: ../../library/zlib.rst:154
 msgid ""
 "+8 to +15: The base-two logarithm of the window size.  The input must "
 "include a zlib header and trailer."
 msgstr ""
-"+8 到 +15：視窗大小的以二為底的對數。輸入必須包括一個 zlib 標頭和尾末。"
 
 #: ../../library/zlib.rst:157
 msgid ""
 "0: Automatically determine the window size from the zlib header. Only "
 "supported since zlib 1.2.3.5."
 msgstr ""
-"0：根據 zlib 標頭檔自動決定視窗大小。僅有在 zlib 1.2.3.5 或更新的版本支援。"
 
 #: ../../library/zlib.rst:160
 msgid ""
 "−8 to −15: Uses the absolute value of *wbits* as the window size logarithm.  "
 "The input must be a raw stream with no header or trailer."
 msgstr ""
-"−8 to −15：使用 *wbits* 的絕對值作為視窗大小的對數，輸入必須是沒有標頭或尾末"
-"的原始串流。"
 
 #: ../../library/zlib.rst:163
 msgid ""
 "+24 to +31 = 16 + (8 to 15): Uses the low 4 bits of the value as the window "
 "size logarithm.  The input must include a gzip header and trailer."
 msgstr ""
-"+24 到 +31 = 16 + （8 到 15）：取值的最低4位元作為視窗大小的對數，輸入必須包"
-"含 gzip 標頭和尾末。"
 
 #: ../../library/zlib.rst:167
 msgid ""
 "+40 to +47 = 32 + (8 to 15): Uses the low 4 bits of the value as the window "
 "size logarithm, and automatically accepts either the zlib or gzip format."
 msgstr ""
-"+40 到 +47 = 32 + （8 到 15）：使用值的最低 4 位元作為視窗大小的對數，並自動"
-"接受 zlib 或 gzip 格式。"
 
 #: ../../library/zlib.rst:171
 msgid ""
@@ -308,9 +300,6 @@ msgid ""
 "to the largest window size and requires a zlib header and trailer to be "
 "included."
 msgstr ""
-"當解壓縮一個串流時，視窗大小不得小於最初用於壓縮串流的大小；使用太小的值可能"
-"會導致 :exc:`error` 例外。預設的 *wbits* 值對應於最大的視窗大小，並且需要包"
-"含 zlib 標頭和尾末。"
 
 #: ../../library/zlib.rst:177
 msgid ""
@@ -319,19 +308,22 @@ msgid ""
 "you don't have to get this value exactly right; tuning it will only save a "
 "few calls to :c:func:`malloc`."
 msgstr ""
-"*bufsize* 是用於保存解壓縮資料的緩衝區的初始大小。如果需要更多空間，緩衝區大"
-"小將根據需求來增加，因此你不需要讓該值完全剛好；調整它只會節省幾次對 :c:func:"
-"`malloc` 的呼叫。"
+"*bufsize* は展開されたデータを保持するためのバッファサイズの初期値です。バッ"
+"ファの空きは必要に応じて必要なだけ増加するので、必ずしも正確な値を指定する必"
+"要はありません。この値のチューニングでできることは、:c:func:`malloc` が呼ばれ"
+"る回数を数回減らすことぐらいです。"
 
 #: ../../library/zlib.rst:182
 msgid "*wbits* and *bufsize* can be used as keyword arguments."
-msgstr "*wbits* 和 *bufsize* 可以用作關鍵字引數。"
+msgstr ""
 
 #: ../../library/zlib.rst:187
 msgid ""
 "Returns a decompression object, to be used for decompressing data streams "
 "that won't fit into memory at once."
-msgstr "回傳一個解壓縮物件，用於解壓縮不能一次全部放入記憶體的資料串流。"
+msgstr ""
+"一度にメモリ上に置くことができないようなデータストリームを展開するための展開"
+"オブジェクトを返します。"
 
 #: ../../library/zlib.rst:190
 msgid ""
@@ -339,8 +331,6 @@ msgid ""
 "\"window size\"), and what header and trailer format is expected.  It has "
 "the same meaning as `described for decompress() <#decompress-wbits>`__."
 msgstr ""
-"*wbits* 引數控制歷史紀錄緩衝區的大小（或「視窗大小」），以及期望的標頭和尾末"
-"格式。它與\\ `前面敘述的 decompress() <#decompress-wbits>`__ 具有相同的含義。"
 
 #: ../../library/zlib.rst:194
 msgid ""
@@ -348,8 +338,9 @@ msgid ""
 "provided, this must be the same dictionary as was used by the compressor "
 "that produced the data that is to be decompressed."
 msgstr ""
-"*zdict* 參數指定是先定義好的壓縮字典。如果有提供，這必須與生成要解壓縮資料的"
-"壓縮器所使用的字典相同。"
+"*zdict* パラメータには定義済み圧縮辞書を指定します。このパラメータを指定する"
+"場合、展開するデータを圧縮した際に使用した辞書と同じものでなければなりませ"
+"ん。"
 
 #: ../../library/zlib.rst:200
 msgid ""
@@ -357,17 +348,17 @@ msgid ""
 "modify its contents between the call to :func:`decompressobj` and the first "
 "call to the decompressor's ``decompress()`` method."
 msgstr ""
-"如果 *zdict* 是一個可變物件 (mutable object)（例如一個 :class:`bytearray`），"
-"你不能在呼叫 :func:`decompressobj` 和第一次呼叫解壓縮器的 ``decompress()`` 方"
-"法之間修改它的內容。"
+"*zdict* が (:class:`bytearray` のような) 変更可能オブジェクトの場合、:func:"
+"`decompressobj` の呼び出しとデコンプレッサの ``decompress()`` メソッドの最初"
+"の呼び出しの間に辞書の内容を変更してはいけません。"
 
 #: ../../library/zlib.rst:204
 msgid "Added the *zdict* parameter."
-msgstr "新增 *zdict* 參數。"
+msgstr "パラメータに *zdict* を追加しました。"
 
 #: ../../library/zlib.rst:208
 msgid "Compression objects support the following methods:"
-msgstr "壓縮物件支援以下方法："
+msgstr "圧縮オブジェクトは以下のメソッドをサポートしています:"
 
 #: ../../library/zlib.rst:213
 msgid ""
@@ -376,9 +367,10 @@ msgid ""
 "output produced by any preceding calls to the :meth:`compress` method.  Some "
 "input may be kept in internal buffers for later processing."
 msgstr ""
-"壓縮 *data*，回傳一個位元組物件，其中至少包含 *data* 中部分資料的壓縮資料。此"
-"資料應串聯到任何先前呼叫 :meth:`compress` 方法所產生的輸出。一些輸入可能會保"
-"存在內部緩衝區中以供後續處理。"
+"*data* を圧縮し、圧縮されたデータを含むバイト列オブジェクトを返します。この文"
+"字列は少なくとも *data* の一部分のデータに対する圧縮データを含みます。この"
+"データは以前に呼んだ :meth:`compress` が返した出力と結合することができます。"
+"入力の一部は以後の処理のために内部バッファに保存されることもあります。"
 
 #: ../../library/zlib.rst:221
 msgid ""
@@ -393,29 +385,24 @@ msgid ""
 "`compress` method cannot be called again; the only realistic action is to "
 "delete the object."
 msgstr ""
-"處理所有待處理的輸入，並回傳包含剩餘壓縮輸出的位元組物件。*mode* 可以從以下常"
-"數中選擇：:const:`Z_NO_FLUSH`、:const:`Z_PARTIAL_FLUSH`、:const:"
-"`Z_SYNC_FLUSH`、:const:`Z_FULL_FLUSH`、:const:`Z_BLOCK` (zlib 1.2.3.4) 或 :"
-"const:`Z_FINISH`，預設為 :const:`Z_FINISH`。除了 :const:`Z_FINISH` 之外，所有"
-"常數都允許壓縮更多的資料位元組字串，而 :const:`Z_FINISH` 會完成壓縮串流並同時"
-"防止壓縮更多資料。在 *mode* 設定為 :const:`Z_FINISH` 的情況下呼叫 :meth:"
-"`flush` 後，無法再次呼叫 :meth:`compress` 方法；唯一可行的作法是刪除物件。"
 
 #: ../../library/zlib.rst:234
 msgid ""
 "Returns a copy of the compression object.  This can be used to efficiently "
 "compress a set of data that share a common initial prefix."
-msgstr "回傳壓縮物件的副本，這可用於有效壓縮一組共用初始前綴的資料。"
+msgstr ""
+"圧縮オブジェクトのコピーを返します。これを使うと先頭部分が共通している複数の"
+"データを効率的に圧縮することができます。"
 
 #: ../../library/zlib.rst:238
 msgid ""
 "Added :func:`copy.copy` and :func:`copy.deepcopy` support to compression "
 "objects."
-msgstr "於壓縮物件新增對 :func:`copy.copy` 和 :func:`copy.deepcopy` 的支援。"
+msgstr ""
 
 #: ../../library/zlib.rst:243
 msgid "Decompression objects support the following methods and attributes:"
-msgstr "解壓縮物件支援以下方法和屬性："
+msgstr "展開オブジェクトは以下のメソッドと属性をサポートしています:"
 
 #: ../../library/zlib.rst:248
 msgid ""
@@ -424,9 +411,10 @@ msgid ""
 "compression data is available.  If the whole bytestring turned out to "
 "contain compressed data, this is ``b\"\"``, an empty bytes object."
 msgstr ""
-"一個位元組物件，它包含壓縮資料結束之後的任何位元組。也就是說，在包含壓縮資料"
-"的最後一個位元組可用之前，它會一直保持為 ``b\"\"``。如果整個位元組字串 "
-"(bytestring) 有包含壓縮資料，這會是 ``b\"\"``，也就是一個空位元組物件。"
+"圧縮データの末尾より後のバイト列が入ったバイト列オブジェクトです。すなわち、"
+"この値は圧縮データの入っているバイト列の最後の文字が利用可能になるまでは "
+"``b\"\"`` のままとなります。入力バイト文字列すべてが圧縮データを含んでいた場"
+"合、この属性は ``b\"\"`` 、すなわち空バイト列になります。"
 
 #: ../../library/zlib.rst:256
 msgid ""
@@ -436,22 +424,23 @@ msgid ""
 "must feed it (possibly with further data concatenated to it) back to a "
 "subsequent :meth:`decompress` method call in order to get correct output."
 msgstr ""
-"一個位元組物件，包含前一次 :meth:`decompress` 的呼叫因超出了未壓縮資料緩衝區"
-"的限制而沒消耗掉的任何資料。 zlib 機制尚未看到此資料，因此您必須將其（和可能"
-"有和它串聯的其他資料）反饋給後續的 :meth:`decompress` 方法呼叫以獲得正確的輸"
-"出。"
+"展開されたデータを収めるバッファの長さ制限を超えたために、直近の :meth:"
+"`decompress` 呼び出しで処理しきれなかったデータを含むバイト列オブジェクトで"
+"す。このデータはまだ zlib 側からは見えていないので、正しい展開出力を得るには"
+"以降の :meth:`decompress` メソッド呼び出しに (場合によっては後続のデータが追"
+"加された) データを差し戻さなければなりません。"
 
 #: ../../library/zlib.rst:265
 msgid ""
 "A boolean indicating whether the end of the compressed data stream has been "
 "reached."
-msgstr "一個布林值，代表是否已到達壓縮資料串流的尾末。"
+msgstr "圧縮データストリームの終了に達したかどうかを示すブール値です。"
 
 #: ../../library/zlib.rst:268
 msgid ""
 "This makes it possible to distinguish between a properly formed compressed "
 "stream, and an incomplete or truncated one."
-msgstr "這使其能夠區分有正確建構的壓縮串流和不完整或被截斷的串流。"
+msgstr ""
 
 #: ../../library/zlib.rst:276
 msgid ""
@@ -461,9 +450,10 @@ msgid ""
 "`decompress` method.  Some of the input data may be preserved in internal "
 "buffers for later processing."
 msgstr ""
-"解壓縮 *data* 並回傳一個位元組物件，其包含與 *string* 中至少與部分資料相對應"
-"的未壓縮資料。此資料應串聯到任何先前呼叫 :meth:`decompress` 方法所產生的輸"
-"出。一些輸入資料可能會保存在內部緩衝區中以供後續處理。"
+"*data* を展開し、少なくとも *string* の一部分に対応する展開されたデータを含む"
+"バイト列オブジェクトを返します。このデータは以前に :meth:`decompress` メソッ"
+"ドを呼んだ時に返された出力と結合することができます。入力データの一部分が以後"
+"の処理のために内部バッファに保存されることもあります。"
 
 #: ../../library/zlib.rst:282
 msgid ""
@@ -475,15 +465,16 @@ msgid ""
 "*max_length* is zero then the whole input is decompressed, and :attr:"
 "`unconsumed_tail` is empty."
 msgstr ""
-"如果可選參數 *max_length* 不是零，則回傳值長度將不超過 *max_length*。這代表著"
-"並不是所有的已壓縮輸入都可以被處理；未使用的資料將被存儲在屬性 :attr:"
-"`unconsumed_tail` 中。如果要繼續解壓縮，則必須將此位元組字串傳遞給後續對 :"
-"meth:`decompress` 的呼叫。如果 *max_length* 為零，則整個輸入會被解壓縮，並"
-"且 :attr:`unconsumed_tail` 為空。"
+"オプションパラメータ *max_length* が非ゼロの場合、返される展開データの長さが "
+"*max_length* 以下に制限されます。このことは入力した圧縮データの全てが処理され"
+"るとは限らないことを意味し、処理されなかったデータは :attr:`unconsumed_tail` "
+"属性に保存されます。展開処理を継続する場合、この保存されたバイト文字列を以降"
+"の :meth:`decompress` 呼び出しに渡さなくてはなりません。 *max_length* が 0 の"
+"場合、全ての入力が展開され、 :attr:`unconsumed_tail` 属性は空になります。"
 
 #: ../../library/zlib.rst:289
 msgid "*max_length* can be used as a keyword argument."
-msgstr "*max_length* 可以用作關鍵字引數。"
+msgstr ""
 
 #: ../../library/zlib.rst:295
 msgid ""
@@ -492,14 +483,15 @@ msgid ""
 "`decompress` method cannot be called again; the only realistic action is to "
 "delete the object."
 msgstr ""
-"處理所有待處理的輸入，並回傳包含剩餘未壓縮輸出的位元組物件。呼叫 :meth:"
-"`flush` 後，無法再次呼叫 :meth:`decompress` 方法；唯一可行的方法是刪除該物"
-"件。"
+"未処理の入力データをすべて処理し、最終的に圧縮されなかった残りの出力バイト列"
+"オブジェクトを返します。:meth:`flush` を呼んだ後、:meth:`decompress` を再度呼"
+"ぶべきではありません。このときできる唯一の現実的な操作はオブジェクトの削除だ"
+"けです。"
 
 #: ../../library/zlib.rst:300
 msgid ""
 "The optional parameter *length* sets the initial size of the output buffer."
-msgstr "可選參數 *length* 設定了輸出緩衝區的初始大小。"
+msgstr "オプション引数 *length* には出力バッファの初期サイズを指定します。"
 
 #: ../../library/zlib.rst:305
 msgid ""
@@ -507,20 +499,22 @@ msgid ""
 "state of the decompressor midway through the data stream in order to speed "
 "up random seeks into the stream at a future point."
 msgstr ""
-"回傳解壓物件的副本，這可用於在資料串流中途保存解壓縮器的狀態，以便在未來某個"
-"時間點加速對串流的隨機搜索 (random seek)。"
+"展開オブジェクトのコピーを返します。これを使うとデータストリームの途中にある"
+"展開オブジェクトの状態を保存でき、未来のある時点で行なわれるストリームのラン"
+"ダムなシークをスピードアップするのに利用できます。"
 
 #: ../../library/zlib.rst:310
 msgid ""
 "Added :func:`copy.copy` and :func:`copy.deepcopy` support to decompression "
 "objects."
-msgstr "於解壓縮物件新增對 :func:`copy.copy` 和 :func:`copy.deepcopy` 支援。"
+msgstr ""
 
 #: ../../library/zlib.rst:315
 msgid ""
 "Information about the version of the zlib library in use is available "
 "through the following constants:"
-msgstr "有關正在使用的 zlib 函式庫版本資訊可通過以下常數獲得："
+msgstr ""
+"使用している zlib ライブラリのバージョン情報を以下の定数で確認できます:"
 
 #: ../../library/zlib.rst:321
 msgid ""
@@ -528,21 +522,22 @@ msgid ""
 "module. This may be different from the zlib library actually used at "
 "runtime, which is available as :const:`ZLIB_RUNTIME_VERSION`."
 msgstr ""
-"用於建置模組的 zlib 函式庫版本字串。這可能與實際在運行時間 (runtime) 使用的 "
-"zlib 函式庫不同，後者以 :const:`ZLIB_RUNTIME_VERSION` 提供。"
+"モジュールのビルド時に使用された zlib ライブラリのバージョン文字列です。これ"
+"は :const:`ZLIB_RUNTIME_VERSION` で確認できる、実行時に使用している実際の "
+"zlib ライブラリのバージョンとは異なる場合があります。"
 
 #: ../../library/zlib.rst:328
 msgid ""
 "The version string of the zlib library actually loaded by the interpreter."
-msgstr "直譯器實際載入的 zlib 函式庫版本字串。"
+msgstr "インタプリタが読み込んだ実際の zlib ライブラリのバージョン文字列です。"
 
 #: ../../library/zlib.rst:336
 msgid "Module :mod:`gzip`"
-msgstr ":mod:`gzip` 模組"
+msgstr ":mod:`gzip` モジュール"
 
 #: ../../library/zlib.rst:336
 msgid "Reading and writing :program:`gzip`\\ -format files."
-msgstr "讀寫 :program:`gzip` 格式的檔案。"
+msgstr ":program:`gzip` 形式ファイルへの読み書きを行うモジュール。"
 
 #: ../../library/zlib.rst:339
 msgid "http://www.zlib.net"
@@ -550,7 +545,7 @@ msgstr "http://www.zlib.net"
 
 #: ../../library/zlib.rst:339
 msgid "The zlib library home page."
-msgstr "zlib 函式庫首頁。"
+msgstr "zlib ライブラリホームページ。"
 
 #: ../../library/zlib.rst:342
 msgid "http://www.zlib.net/manual.html"
@@ -560,4 +555,4 @@ msgstr "http://www.zlib.net/manual.html"
 msgid ""
 "The zlib manual explains  the semantics and usage of the library's many "
 "functions."
-msgstr "zlib 手冊解釋了函式庫中許多函式的語義和用法。"
+msgstr "zlib ライブラリの多くの関数の意味と使い方を解説したマニュアル。"

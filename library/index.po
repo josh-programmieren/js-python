@@ -1,31 +1,31 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Liang-Bo Wang <me@liang2.tw>, 2015-2016
-# Liang-Bo Wang <me@liang2.tw>, 2016
-# Frank Jheng <M157q.tw@gmail.com>, 2015
-# Steven Hsu <hsuhaochun@gmail.com>, 2021
+# tomo, 2021
+# Takanori Suzuki <takanori@takanory.net>, 2023
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-10 00:19+0000\n"
-"PO-Revision-Date: 2021-07-04 22:55+0800\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:08+0000\n"
+"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2023\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.4.3\n"
 
 #: ../../library/index.rst:5
 msgid "The Python Standard Library"
-msgstr "Python 標準函式庫 (Standard Library)"
+msgstr "Python 標準ライブラリ"
 
 #: ../../library/index.rst:7
 msgid ""
@@ -34,9 +34,11 @@ msgid ""
 "library that is distributed with Python. It also describes some of the "
 "optional components that are commonly included in Python distributions."
 msgstr ""
-":ref:`reference-index`\\ 說明 Python 這門語言確切的文法及語意，而這份函式庫參"
-"考手冊則是說明隨著 Python 一起發佈的標準函式庫，除此之外，其內容也包含一些時"
-"常出現在 Python 發佈版本中的非必要套件。"
+":ref:`reference-index` ではプログラミング言語 Python の厳密な構文とセマンティ"
+"クスについて説明されていますが、このライブラリリファレンスマニュアルでは "
+"Python とともに配付されている標準ライブラリについて説明します。また Python 配"
+"布物に収められていることの多いオプションのコンポーネントについても説明しま"
+"す。"
 
 #: ../../library/index.rst:13
 msgid ""
@@ -50,11 +52,14 @@ msgid ""
 "portability of Python programs by abstracting away platform-specifics into "
 "platform-neutral APIs."
 msgstr ""
-"Python 的標準函式庫是非常龐大的，其提供了如下所述極多且涵蓋用途極廣的許多模"
-"組。包含一些用 C 語言撰寫，可以操作像是檔案讀寫等系統相關功能的內建模組，當然"
-"也有用 Python 撰寫，並使用標準解法解決許多常見問題的模組。其中有些模組則是特"
-"別針對 Python 的可攜性去設計的，為此特地將一些平台特殊相依性的功能抽象化成可"
-"跨平台的 API。"
+"Python の標準ライブラリはとても拡張性があり、下の長い目次のリストで判るように"
+"幅広いものを用意しています。このライブラリには、例えばファイル I/O のように、"
+"Python プログラマが直接アクセスできないシステム機能へのアクセス機能を提供す"
+"る (Cで書かれた) 組み込みモジュールや、日々のプログラミングで生じる多くの問題"
+"に標準的な解決策を提供する\\ Python で書かれたモジュールが入っています。これ"
+"ら数多くのモジュールには、プラットフォーム固有の事情をプラットフォーム独立な "
+"API へと昇華させることにより、Pythonプログラムに移植性を持たせ、それを高める"
+"という明確な意図があります。"
 
 #: ../../library/index.rst:23
 msgid ""
@@ -64,9 +69,11 @@ msgid ""
 "packages, so it may be necessary to use the packaging tools provided with "
 "the operating system to obtain some or all of the optional components."
 msgstr ""
-"Python 的 Windows 安裝檔基本上包含整個標準函式庫，且通常也包含許多附加的組"
-"件；而在類 Unix 作業系統方面，Python 通常是以一系列的套件被安裝，因此對於某些"
-"或全部的可選組件，可能都必須使用該作業系統提供的套件管理工具來安裝。"
+"Windows 向けの Python インストーラはたいてい標準ライブラリのすべてを含み、し"
+"ばしばそれ以外の追加のコンポーネントも含んでいます。Unix 系のオペレーティング"
+"システムの場合は Python は一揃いのパッケージとして提供されるのが普通で、オプ"
+"ションのコンポーネントを手に入れるにはオペレーティングシステムのパッケージ"
+"ツールを使うことになるでしょう。"
 
 #: ../../library/index.rst:30
 msgid ""
@@ -75,6 +82,7 @@ msgid ""
 "packages and entire application development frameworks), available from the "
 "`Python Package Index <https://pypi.org>`_."
 msgstr ""
-"在標準函式庫之外，還有成千上萬且不斷增加的組件（從個別的程式、模組、套件到完"
-"整的應用程式開發框架），可以從 `Python 套件索引 (Python Package Index) "
-"<https://pypi.org>`_ 中取得。"
+"標準ライブラリに加えて、数10万のコンポーネントが (独立したプログラムやモ"
+"ジュールからパッケージ、アプリケーション開発フレームワークまで) 活動している"
+"コレクションとして\\ `Python Package Index <https://pypi.org>`_ から入手可能"
+"です。"

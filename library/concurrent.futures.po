@@ -1,40 +1,52 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# Takanori Suzuki <takanori@takanory.net>, 2021
+# tomo, 2021
+# mollinaca, 2021
+# Osamu NAKAMURA, 2022
+# Arihiro TAKASE, 2022
+# souma987, 2023
+# 菊池 健志, 2023
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-13 00:17+0000\n"
-"PO-Revision-Date: 2018-05-23 14:41+0000\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-03-03 14:14+0000\n"
+"PO-Revision-Date: 2021-06-28 00:57+0000\n"
+"Last-Translator: 菊池 健志, 2023\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../library/concurrent.futures.rst:2
 msgid ":mod:`concurrent.futures` --- Launching parallel tasks"
-msgstr ":mod:`concurrent.futures` -- 啟動平行任務"
+msgstr ":mod:`concurrent.futures` -- 並列タスク実行"
 
 #: ../../library/concurrent.futures.rst:9
 msgid ""
 "**Source code:** :source:`Lib/concurrent/futures/thread.py` and :source:`Lib/"
 "concurrent/futures/process.py`"
 msgstr ""
-"**原始碼：**\\ :source:`Lib/concurrent/futures/thread.py` 與 :source:`Lib/"
-"concurrent/futures/process.py`"
+"**ソースコード:** :source:`Lib/concurrent/futures/thread.py` および :source:"
+"`Lib/concurrent/futures/process.py`"
 
 #: ../../library/concurrent.futures.rst:14
 msgid ""
 "The :mod:`concurrent.futures` module provides a high-level interface for "
 "asynchronously executing callables."
 msgstr ""
+":mod:`concurrent.futures` モジュールは、非同期に実行できる呼び出し可能オブ"
+"ジェクトの高水準のインターフェースを提供します。"
 
 #: ../../library/concurrent.futures.rst:17
 msgid ""
@@ -43,10 +55,15 @@ msgid ""
 "`ProcessPoolExecutor`.  Both implement the same interface, which is defined "
 "by the abstract :class:`Executor` class."
 msgstr ""
+"非同期実行は :class:`ThreadPoolExecutor` を用いてスレッドで実行すること"
+"も、  :class:`ProcessPoolExecutor` を用いて別々のプロセスで実行することもでき"
+"ます.  どちらも :class:`Executor` 抽象クラスで定義された同じインターフェース"
+"を実装します。"
 
 #: ../../includes/wasm-notavail.rst:3
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ""
+":ref:`利用可能性<availability>`: Emscripten でなく、WASI でもないこと。"
 
 #: ../../includes/wasm-notavail.rst:5
 msgid ""
@@ -54,16 +71,21 @@ msgid ""
 "``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
 "more information."
 msgstr ""
+"このモジュールは WebAssembly プラットフォーム ``wasm32-emscripten`` と "
+"``wasm32-wasi`` では動作しないか、利用不可です。詳しくは、:ref:`wasm-"
+"availability` を見てください。"
 
 #: ../../library/concurrent.futures.rst:25
 msgid "Executor Objects"
-msgstr ""
+msgstr "Executor オブジェクト"
 
 #: ../../library/concurrent.futures.rst:29
 msgid ""
 "An abstract class that provides methods to execute calls asynchronously.  It "
 "should not be used directly, but through its concrete subclasses."
 msgstr ""
+"非同期呼び出しを実行するためのメソッドを提供する抽象クラスです。このクラスを"
+"直接使ってはならず、具象サブクラスを介して使います。"
 
 #: ../../library/concurrent.futures.rst:34
 msgid ""
@@ -71,6 +93,9 @@ msgid ""
 "returns a :class:`Future` object representing the execution of the "
 "callable. ::"
 msgstr ""
+"呼び出し可能オブジェクト *fn* を、 ``fn(*args, **kwargs)`` として実行するよう"
+"にスケジュールし、呼び出し可能オブジェクトの実行を表現する :class:`Future` オ"
+"ブジェクトを返します。 ::"
 
 #: ../../library/concurrent.futures.rst:44
 msgid "Similar to :func:`map(func, *iterables) <map>` except:"
@@ -94,12 +119,18 @@ msgid ""
 "float.  If *timeout* is not specified or ``None``, there is no limit to the "
 "wait time."
 msgstr ""
+"もし :meth:`~iterator.__next__` が呼ばれその結果が元々の呼び出しから "
+"*timeout* 秒経った後も利用できない場合、返されるイテレータは :exc:"
+"`TimeoutError` を送出します。*timeout* は整数または浮動小数点数です。もし "
+"*timeout* が指定されないか の場合、待ち時間に制限はありません。"
 
 #: ../../library/concurrent.futures.rst:57
 msgid ""
 "If a *func* call raises an exception, then that exception will be raised "
 "when its value is retrieved from the iterator."
 msgstr ""
+"もし *func* の呼び出しが例外を送出した場合、その例外はイテレータから値を受け"
+"取る時に送出されます。"
 
 #: ../../library/concurrent.futures.rst:60
 msgid ""
@@ -113,7 +144,7 @@ msgstr ""
 
 #: ../../library/concurrent.futures.rst:68
 msgid "Added the *chunksize* argument."
-msgstr "新增 *chunksize* 引數。"
+msgstr "*chunksize* 引数が追加されました。"
 
 #: ../../library/concurrent.futures.rst:73
 msgid ""
@@ -122,6 +153,10 @@ msgid ""
 "submit` and :meth:`Executor.map` made after shutdown will raise :exc:"
 "`RuntimeError`."
 msgstr ""
+"executor に対して、現在保留中のフューチャーが実行された後で、使用中のすべての"
+"資源を解放するように伝えます。シャットダウンにより後に :meth:`Executor."
+"submit` と :meth:`Executor.map` を呼び出すと :exc:`RuntimeError` が送出されま"
+"す。"
 
 #: ../../library/concurrent.futures.rst:78
 msgid ""
@@ -133,6 +168,12 @@ msgid ""
 "*wait*, the entire Python program will not exit until all pending futures "
 "are done executing."
 msgstr ""
+"*wait* が ``True`` の場合、すべての未完了のフューチャの実行が完了して "
+"Executor に関連付けられたリソースが解放されるまで、このメソッドは返りませ"
+"ん。 *wait* が ``False`` の場合、このメソッドはすぐに返り、すべての未完了の"
+"フューチャの実行が完了したときに、 Executor に関連付けられたリソースが解放さ"
+"れます。 *wait* の値に関係なく、すべての未完了のフューチャの実行が完了するま"
+"で Python プログラム全体は終了しません。"
 
 #: ../../library/concurrent.futures.rst:86
 msgid ""
@@ -154,10 +195,14 @@ msgid ""
 "`with` statement, which will shutdown the :class:`Executor` (waiting as if :"
 "meth:`Executor.shutdown` were called with *wait* set to ``True``)::"
 msgstr ""
+":keyword:`with` 文を使用することで、このメソッドを明示的に呼ばないようにでき"
+"ます。 :keyword:`with` 文は  :class:`Executor` をシャットダウンします "
+"(*wait* を ``True`` にセットして :meth:`Executor.shutdown` が呼ばれたかのよう"
+"に待ちます)。"
 
 #: ../../library/concurrent.futures.rst:107
 msgid "Added *cancel_futures*."
-msgstr "新增 *cancel_futures*\\ 。"
+msgstr "*cancel_futures* が追加されました。"
 
 #: ../../library/concurrent.futures.rst:112
 msgid "ThreadPoolExecutor"
@@ -168,25 +213,28 @@ msgid ""
 ":class:`ThreadPoolExecutor` is an :class:`Executor` subclass that uses a "
 "pool of threads to execute calls asynchronously."
 msgstr ""
+":class:`ThreadPoolExecutor` はスレッドのプールを使用して非同期に呼び出しを行"
+"う、 :class:`Executor` のサブクラスです。"
 
 #: ../../library/concurrent.futures.rst:117
 msgid ""
 "Deadlocks can occur when the callable associated with a :class:`Future` "
 "waits on the results of another :class:`Future`.  For example::"
 msgstr ""
+":class:`Future` に関連づけられた呼び出し可能オブジェクトが、別の :class:"
+"`Future` の結果を待つ時にデッドロックすることがあります。例::"
 
 #: ../../library/concurrent.futures.rst:136
 msgid "And::"
-msgstr ""
-"和：\n"
-"\n"
-"::"
+msgstr "以下でも同様です::"
 
 #: ../../library/concurrent.futures.rst:150
 msgid ""
 "An :class:`Executor` subclass that uses a pool of at most *max_workers* "
 "threads to execute calls asynchronously."
 msgstr ""
+"最大で *max_workers* 個のスレッドを非同期実行に使う :class:`Executor` のサブ"
+"クラスです。"
 
 #: ../../library/concurrent.futures.rst:153
 msgid ""
@@ -215,6 +263,11 @@ msgid ""
 "the number of workers should be higher than the number of workers for :class:"
 "`ProcessPoolExecutor`."
 msgstr ""
+"*max_workers* が ``None`` か指定されない場合のデフォルト値はマシンのプロセッ"
+"サの数に 5 を掛けたものになります。これは、 :class:`ThreadPoolExecutor` は "
+"CPU の処理ではなく I/O をオーバーラップするのによく使用されるため、 :class:"
+"`ProcessPoolExecutor` のワーカーの数よりもこのワーカーの数を増やすべきである"
+"という想定に基づいています。"
 
 #: ../../library/concurrent.futures.rst:174
 msgid ""
@@ -222,11 +275,14 @@ msgid ""
 "class:`threading.Thread` names for worker threads created by the pool for "
 "easier debugging."
 msgstr ""
+"*thread_name_prefix* 引数が追加され、デバッグしやすくなるようにプールから作ら"
+"れたワーカスレッド :class:`threading.Thread` の名前を管理できるようになりまし"
+"た。"
 
 #: ../../library/concurrent.futures.rst:179
 #: ../../library/concurrent.futures.rst:281
 msgid "Added the *initializer* and *initargs* arguments."
-msgstr "新增 *initializer* 與 *initargs* 引數。"
+msgstr "*initializer* と *initargs* 引数が追加されました。"
 
 #: ../../library/concurrent.futures.rst:182
 msgid ""
@@ -244,7 +300,7 @@ msgstr ""
 
 #: ../../library/concurrent.futures.rst:195
 msgid "ThreadPoolExecutor Example"
-msgstr "ThreadPoolExecutor 範例"
+msgstr "ThreadPoolExecutor の例"
 
 #: ../../library/concurrent.futures.rst:227
 msgid "ProcessPoolExecutor"
@@ -259,6 +315,11 @@ msgid ""
 "lock>` but also means that only picklable objects can be executed and "
 "returned."
 msgstr ""
+":class:`ProcessPoolExecutor`  はプロセスプールを使って非同期呼び出しを実施す"
+"る :class:`Executor` のサブクラスです。:class:`ProcessPoolExecutor` は :mod:"
+"`multiprocessing` モジュールを利用します。このため :term:`Global Interpreter "
+"Lock <global interpreter lock>` を回避することができますが、pickle 化できるオ"
+"ブジェクトしか実行したり返したりすることができません。"
 
 #: ../../library/concurrent.futures.rst:236
 msgid ""
@@ -266,12 +327,18 @@ msgid ""
 "means that :class:`ProcessPoolExecutor` will not work in the interactive "
 "interpreter."
 msgstr ""
+"``__main__`` モジュールはワーカサブプロセスでインポート可能でなければなりませ"
+"ん。\n"
+"すなわち、 :class:`ProcessPoolExecutor` は対話的インタープリタでは動きませ"
+"ん。"
 
 #: ../../library/concurrent.futures.rst:239
 msgid ""
 "Calling :class:`Executor` or :class:`Future` methods from a callable "
 "submitted to a :class:`ProcessPoolExecutor` will result in deadlock."
 msgstr ""
+":class:`ProcessPoolExecutor` に渡された呼び出し可能オブジェクトから :class:"
+"`Executor` や :class:`Future` メソッドを呼ぶとデッドロックに陥ります。"
 
 #: ../../library/concurrent.futures.rst:244
 msgid ""
@@ -314,6 +381,10 @@ msgid ""
 "undefined but operations on the executor or its futures would often freeze "
 "or deadlock."
 msgstr ""
+"ワーカプロセスの1つが突然終了した場合、:exc:`BrokenProcessPool` エラーが送出"
+"されるようになりました。\n"
+"以前は挙動は未定義でしたが、 executor や  futures がフリーズしたりデッドロッ"
+"クを起こすことがしばしばでした。"
 
 #: ../../library/concurrent.futures.rst:277
 msgid ""
@@ -329,17 +400,20 @@ msgstr ""
 
 #: ../../library/concurrent.futures.rst:291
 msgid "ProcessPoolExecutor Example"
-msgstr "ProcessPoolExecutor 範例"
+msgstr "ProcessPoolExecutor の例"
 
 #: ../../library/concurrent.futures.rst:329
 msgid "Future Objects"
-msgstr ""
+msgstr "Future オブジェクト"
 
 #: ../../library/concurrent.futures.rst:331
 msgid ""
 "The :class:`Future` class encapsulates the asynchronous execution of a "
 "callable. :class:`Future` instances are created by :meth:`Executor.submit`."
 msgstr ""
+":class:`Future` クラスは呼び出し可能オブジェクトの非同期実行をカプセル化しま"
+"す。 :class:`Future` のインスタンスは :meth:`Executor.submit` によって生成さ"
+"れます。"
 
 #: ../../library/concurrent.futures.rst:336
 msgid ""
@@ -347,6 +421,9 @@ msgid ""
 "instances are created by :meth:`Executor.submit` and should not be created "
 "directly except for testing."
 msgstr ""
+"呼び出し可能オブジェクトの非同期実行をカプセル化します。 :class:`Future` イン"
+"スタンスは :meth:`Executor.submit` で生成され、テストを除いて直接生成すべきで"
+"はありません。"
 
 #: ../../library/concurrent.futures.rst:342
 msgid ""
@@ -358,18 +435,18 @@ msgstr ""
 
 #: ../../library/concurrent.futures.rst:349
 msgid "Return ``True`` if the call was successfully cancelled."
-msgstr ""
+msgstr "呼び出しが正常にキャンセルされた場合 ``True`` を返します。"
 
 #: ../../library/concurrent.futures.rst:353
 msgid ""
 "Return ``True`` if the call is currently being executed and cannot be "
 "cancelled."
-msgstr ""
+msgstr "現在呼び出しが実行中でキャンセルできない場合 ``True`` を返します。"
 
 #: ../../library/concurrent.futures.rst:358
 msgid ""
 "Return ``True`` if the call was successfully cancelled or finished running."
-msgstr ""
+msgstr "呼び出しが正常にキャンセルされたか終了した場合 ``True`` を返します。"
 
 #: ../../library/concurrent.futures.rst:363
 msgid ""
@@ -379,6 +456,11 @@ msgid ""
 "can be an int or float.  If *timeout* is not specified or ``None``, there is "
 "no limit to the wait time."
 msgstr ""
+"呼び出しによって返された値を返します。もし呼び出しがまだ完了していなければ、"
+"このメソッドは *timeout* 秒の間、待機します。もし呼び出しが *timeout* 秒間の"
+"間に完了しなければ、 :exc:`TimeoutError` が送出されます。 *timeout* はintか"
+"floatを指定できます。もし *timeout* が指定されていないか、 ``None`` であれ"
+"ば、待機時間に制限はありません。"
 
 #: ../../library/concurrent.futures.rst:370
 #: ../../library/concurrent.futures.rst:384
@@ -386,6 +468,8 @@ msgid ""
 "If the future is cancelled before completing then :exc:`.CancelledError` "
 "will be raised."
 msgstr ""
+"future が完了する前にキャンセルされた場合 :exc:`CancelledError` が送出されま"
+"す。"
 
 #: ../../library/concurrent.futures.rst:373
 msgid ""
@@ -400,10 +484,15 @@ msgid ""
 "*timeout* can be an int or float.  If *timeout* is not specified or "
 "``None``, there is no limit to the wait time."
 msgstr ""
+"呼び出しによって送出された例外を返します。もし呼び出しがまだ完了されていなけ"
+"れば、このメソッドは *timeout* 秒だけ待機します。もし呼び出しが *timeout* 秒"
+"の間に完了しなければ、 :exc:`TimeoutError` が送出されます。 *timeout* にはint"
+"かfloatを指定できます。 *timeout* が指定されていないか、 ``None`` であれば、"
+"待機時間に制限はありません。"
 
 #: ../../library/concurrent.futures.rst:387
 msgid "If the call completed without raising, ``None`` is returned."
-msgstr ""
+msgstr "呼び出しが例外を送出することなく完了した場合、``None`` を返します。"
 
 #: ../../library/concurrent.futures.rst:391
 msgid ""
@@ -411,6 +500,9 @@ msgid ""
 "future as its only argument, when the future is cancelled or finishes "
 "running."
 msgstr ""
+"呼び出し可能な *fn* オブジェクトを future にアタッチします。futureがキャンセ"
+"ルされたか、実行を終了した際に、future をそのただ一つの引数として *fn* が呼び"
+"出されます。"
 
 #: ../../library/concurrent.futures.rst:395
 msgid ""
@@ -420,18 +512,27 @@ msgid ""
 "ignored.  If the callable raises a :exc:`BaseException` subclass, the "
 "behavior is undefined."
 msgstr ""
+"追加された呼び出し可能オブジェクトは、追加された順番で呼びだされ、追加を行っ"
+"たプロセスに属するスレッド中で呼び出されます。もし呼び出し可能オブジェクト"
+"が :exc:`Exception` のサブクラスを送出した場合、それはログに記録され無視され"
+"ます。呼び出し可能オブジェクトが :exc:`BaseException` のサブクラスを送出した"
+"場合の動作は未定義です。"
 
 #: ../../library/concurrent.futures.rst:401
 msgid ""
 "If the future has already completed or been cancelled, *fn* will be called "
 "immediately."
 msgstr ""
+"もしfutureがすでに完了しているか、キャンセル済みであれば、*fn* は即座に実行さ"
+"れます。"
 
 #: ../../library/concurrent.futures.rst:404
 msgid ""
 "The following :class:`Future` methods are meant for use in unit tests and :"
 "class:`Executor` implementations."
 msgstr ""
+"以下の :class:`Future` メソッドは、ユニットテストでの使用と :class:"
+"`Executor` を実装することを意図しています。"
 
 #: ../../library/concurrent.futures.rst:409
 msgid ""
@@ -439,6 +540,8 @@ msgid ""
 "before executing the work associated with the :class:`Future` and by unit "
 "tests."
 msgstr ""
+"このメソッドは、:class:`Future` に関連付けられたワークやユニットテストによる"
+"ワークの実行前に、 :class:`Executor` の実装によってのみ呼び出してください。"
 
 #: ../../library/concurrent.futures.rst:413
 msgid ""
@@ -460,11 +563,14 @@ msgid ""
 "This method can only be called once and cannot be called after :meth:`Future."
 "set_result` or :meth:`Future.set_exception` have been called."
 msgstr ""
+"このメソッドは、一度だけ呼び出すことができ、:meth:`Future.set_result` また"
+"は :meth:`Future.set_exception` がキャンセルされた後には呼び出すことができま"
+"せん。"
 
 #: ../../library/concurrent.futures.rst:428
 msgid ""
 "Sets the result of the work associated with the :class:`Future` to *result*."
-msgstr ""
+msgstr ":class:`Future` に関連付けられたワークの結果を *result* に設定します。"
 
 #: ../../library/concurrent.futures.rst:431
 #: ../../library/concurrent.futures.rst:444
@@ -472,6 +578,8 @@ msgid ""
 "This method should only be used by :class:`Executor` implementations and "
 "unit tests."
 msgstr ""
+"このメソッドは、 :class:`Executor` の実装またはユニットテストによってのみ使用"
+"してください。"
 
 #: ../../library/concurrent.futures.rst:434
 #: ../../library/concurrent.futures.rst:447
@@ -485,10 +593,12 @@ msgid ""
 "Sets the result of the work associated with the :class:`Future` to the :"
 "class:`Exception` *exception*."
 msgstr ""
+":class:`Future` に関連付けられたワークの結果を :class:`Exception` "
+"*exception* に設定します。"
 
 #: ../../library/concurrent.futures.rst:453
 msgid "Module Functions"
-msgstr "模組函式"
+msgstr "モジュール関数"
 
 #: ../../library/concurrent.futures.rst:457
 msgid ""
@@ -507,20 +617,25 @@ msgid ""
 "before returning.  *timeout* can be an int or float.  If *timeout* is not "
 "specified or ``None``, there is no limit to the wait time."
 msgstr ""
+"*timeout* で結果を返すまで待機する最大秒数を指定できます。*timeout* は整数か"
+"浮動小数点数をとります。*timeout* が指定されないか ``None`` の場合、無期限に"
+"待機します。"
 
 #: ../../library/concurrent.futures.rst:469
 msgid ""
 "*return_when* indicates when this function should return.  It must be one of "
 "the following constants:"
 msgstr ""
+"*return_when* でこの関数がいつ結果を返すか指定します。指定できる値は以下の 定"
+"数のどれか一つです:"
 
 #: ../../library/concurrent.futures.rst:475
 msgid "Constant"
-msgstr "常數"
+msgstr "定数"
 
 #: ../../library/concurrent.futures.rst:475
 msgid "Description"
-msgstr "描述"
+msgstr "説明"
 
 #: ../../library/concurrent.futures.rst:477
 msgid ":const:`FIRST_COMPLETED`"
@@ -528,7 +643,7 @@ msgstr ":const:`FIRST_COMPLETED`"
 
 #: ../../library/concurrent.futures.rst:477
 msgid "The function will return when any future finishes or is cancelled."
-msgstr ""
+msgstr "いずれかのフューチャが終了したかキャンセルされたときに返します。"
 
 #: ../../library/concurrent.futures.rst:480
 msgid ":const:`FIRST_EXCEPTION`"
@@ -540,6 +655,8 @@ msgid ""
 "If no future raises an exception then it is equivalent to :const:"
 "`ALL_COMPLETED`."
 msgstr ""
+"いずれかのフューチャが例外の送出で終了した場合に返します。例外を送出した"
+"フューチャがない場合は、:const:`ALL_COMPLETED` と等価になります。"
 
 #: ../../library/concurrent.futures.rst:486
 msgid ":const:`ALL_COMPLETED`"
@@ -547,7 +664,7 @@ msgstr ":const:`ALL_COMPLETED`"
 
 #: ../../library/concurrent.futures.rst:486
 msgid "The function will return when all futures finish or are cancelled."
-msgstr ""
+msgstr "すべてのフューチャが終了したかキャンセルされたときに返します。"
 
 #: ../../library/concurrent.futures.rst:492
 msgid ""
@@ -564,21 +681,21 @@ msgstr ""
 
 #: ../../library/concurrent.futures.rst:506
 msgid ":pep:`3148` -- futures - execute computations asynchronously"
-msgstr ""
+msgstr ":pep:`3148` -- futures - execute computations asynchronously"
 
 #: ../../library/concurrent.futures.rst:506
 msgid ""
 "The proposal which described this feature for inclusion in the Python "
 "standard library."
-msgstr ""
+msgstr "この機能を Python 標準ライブラリに含めることを述べた提案です。"
 
 #: ../../library/concurrent.futures.rst:511
 msgid "Exception classes"
-msgstr ""
+msgstr "例外クラス"
 
 #: ../../library/concurrent.futures.rst:517
 msgid "Raised when a future is cancelled."
-msgstr ""
+msgstr "future がキャンセルされたときに送出されます。"
 
 #: ../../library/concurrent.futures.rst:521
 msgid ""
@@ -617,3 +734,7 @@ msgid ""
 "a :class:`ProcessPoolExecutor` has terminated in a non-clean fashion (for "
 "example, if it was killed from the outside)."
 msgstr ""
+":exc:`~concurrent.futures.BrokenExecutor` から派生しています(以前は :exc:"
+"`RuntimeError` でした)。\n"
+"この例外クラスは :class:`ProcessPoolExecutor` のワーカの1つが正常に終了されな"
+"かったとき (例えば外部から kill されたとき) に送出されます。"

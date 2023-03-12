@@ -1,26 +1,30 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# tomo, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 08:13+0000\n"
-"PO-Revision-Date: 2018-05-23 16:06+0000\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:09+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../library/msvcrt.rst:2
 msgid ":mod:`msvcrt` --- Useful routines from the MS VC++ runtime"
-msgstr ""
+msgstr ":mod:`msvcrt` --- MS VC++実行時システムの有用なルーチン群"
 
 #: ../../library/msvcrt.rst:12
 msgid ""
@@ -29,12 +33,19 @@ msgid ""
 "Windows implementations of their services.  For example, the :mod:`getpass` "
 "module uses this in the implementation of the :func:`getpass` function."
 msgstr ""
+"このモジュールの関数は、 Windows プラットフォームの便利な機能のいくつかに対す"
+"るアクセス機構を提供しています。高レベルモジュールのいくつかは、提供するサー"
+"ビスを Windows で実装するために、これらの関数を使っています。例えば、 :mod:"
+"`getpass` モジュールは関数 :func:`getpass` を実装するためにこのモジュールの関"
+"数を使います。"
 
 #: ../../library/msvcrt.rst:17
 msgid ""
 "Further documentation on these functions can be found in the Platform API "
 "documentation."
 msgstr ""
+"ここに挙げた関数の詳細なドキュメントについては、プラットフォーム API ドキュメ"
+"ントで見つけることができます。"
 
 #: ../../library/msvcrt.rst:20
 msgid ""
@@ -43,16 +54,21 @@ msgid ""
 "use for internationalized applications. The wide char API should be used "
 "where ever possible."
 msgstr ""
+"このモジュールは、通常版とワイド文字列版の両方のコンソールI/O APIを実装してい"
+"ます。通常版の API は ASCII 文字列のためのもので、国際化アプリケーションでは"
+"利用が制限されます。可能な限りワイド文字列版APIを利用するべきです。"
 
 #: ../../library/msvcrt.rst:25
 msgid ""
 "Operations in this module now raise :exc:`OSError` where :exc:`IOError` was "
 "raised."
 msgstr ""
+"このモジュールの操作で以前は :exc:`IOError` が送出されていたところで :exc:"
+"`OSError` が送出されるようになりました。"
 
 #: ../../library/msvcrt.rst:33
 msgid "File Operations"
-msgstr ""
+msgstr "ファイル操作関連"
 
 #: ../../library/msvcrt.rst:38
 msgid ""
@@ -64,8 +80,15 @@ msgid ""
 "may not overlap.  Adjacent regions are not merged; they must be unlocked "
 "individually."
 msgstr ""
+"C 言語による実行時システムにおけるファイル記述子 *fd* に基づいて、ファイルの"
+"一部にロックをかけます。失敗すると :exc:`OSError` が送出されます。ロックされ"
+"るファイルの領域は、現在のファイル位置から *nbytes* バイトで、ファイルの末端"
+"まで延長することができます。 *mode* は以下に列挙する  :const:`LK_\\*` のいず"
+"れか一つでなければなりません。一つのファイルの複数の領域を同時にロックするこ"
+"とは可能ですが、領域が重複してはなりません。連接する領域をまとめて指定するこ"
+"とはできません; それらの領域は個別にロック解除しなければなりません。"
 
-#: ../../library/msvcrt.rst:8
+#: ../../library/msvcrt.rst:45
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``msvcrt.locking`` with arguments "
 "``fd``, ``mode``, ``nbytes``."
@@ -77,16 +100,23 @@ msgid ""
 "immediately tries again after 1 second.  If, after 10 attempts, the bytes "
 "cannot be locked, :exc:`OSError` is raised."
 msgstr ""
+"指定されたバイト列にロックをかけます。指定領域がロックできなかった場合、プロ"
+"グラムは 1 秒後に再度ロックを試みます。10 回再試行した後でもロックをかけられ"
+"ない場合、 :exc:`OSError` が送出されます。"
 
 #: ../../library/msvcrt.rst:59
 msgid ""
 "Locks the specified bytes. If the bytes cannot be locked, :exc:`OSError` is "
 "raised."
 msgstr ""
+"指定されたバイト列にロックをかけます。指定領域がロックできなかった場合、 :"
+"exc:`OSError` が送出されます。"
 
 #: ../../library/msvcrt.rst:65
 msgid "Unlocks the specified bytes, which must have been previously locked."
 msgstr ""
+"指定されたバイト列のロックを解除します。指定領域はあらかじめロックされていな"
+"ければなりません。"
 
 #: ../../library/msvcrt.rst:70
 msgid ""
@@ -94,6 +124,9 @@ msgid ""
 "text mode, *flags* should be :const:`os.O_TEXT`; for binary, it should be :"
 "const:`os.O_BINARY`."
 msgstr ""
+"ファイル記述子 *fd* に対して、行末文字の変換モードを設定します。テキストモー"
+"ドに設定するには、 *flags* を :const:`os.O_TEXT` にします; バイナリモードにす"
+"るには :const:`os.O_BINARY` にします。"
 
 #: ../../library/msvcrt.rst:77
 msgid ""
@@ -102,8 +135,13 @@ msgid ""
 "O_RDONLY`, and :const:`os.O_TEXT`.  The returned file descriptor may be used "
 "as a parameter to :func:`os.fdopen` to create a file object."
 msgstr ""
+"C 言語による実行時システムにおけるファイル記述子をファイルハンドル *handle* "
+"から生成します。 *flags* パラメタは :const:`os.O_APPEND` 、 :const:`os."
+"O_RDONLY` 、および :const:`os.O_TEXT` をビット単位で OR したものになります。"
+"返されるファイル記述子は :func:`os.fdopen` でファイルオブジェクトを生成するた"
+"めに使うことができます。"
 
-#: ../../library/msvcrt.rst:6
+#: ../../library/msvcrt.rst:82
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``msvcrt.open_osfhandle`` with "
 "arguments ``handle``, ``flags``."
@@ -114,8 +152,10 @@ msgid ""
 "Return the file handle for the file descriptor *fd*.  Raises :exc:`OSError` "
 "if *fd* is not recognized."
 msgstr ""
+"ファイル記述子 *fd* のファイルハンドルを返します。 *fd* が認識できない場"
+"合、 :exc:`OSError` を送出します。"
 
-#: ../../library/msvcrt.rst:4
+#: ../../library/msvcrt.rst:90
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``msvcrt.get_osfhandle`` with "
 "argument ``fd``."
@@ -123,11 +163,11 @@ msgstr ""
 
 #: ../../library/msvcrt.rst:96
 msgid "Console I/O"
-msgstr ""
+msgstr "コンソール I/O 関連"
 
 #: ../../library/msvcrt.rst:101
 msgid "Return ``True`` if a keypress is waiting to be read."
-msgstr ""
+msgstr "読み出し待ちの打鍵イベントが存在する場合に ``True`` を返します。"
 
 #: ../../library/msvcrt.rst:106
 msgid ""
@@ -138,45 +178,59 @@ msgid ""
 "the next call will return the keycode. The :kbd:`Control-C` keypress cannot "
 "be read with this function."
 msgstr ""
+"打鍵を読み取り、読み出された文字を返します。コンソールには何もエコーバックさ"
+"れません。この関数呼び出しは読み出し可能な打鍵がない場合にはブロックします"
+"が、文字を読み出せるようにするために :kbd:`Enter` の打鍵を待つ必要はありませ"
+"ん。打鍵されたキーが特殊機能キー (function key) である場合、この関数は "
+"``'\\000'`` または ``'\\xe0'`` を返します; キーコードは次に関数を呼び出した際"
+"に返されます。この関数で :kbd:`Control-C` の打鍵を読み出すことはできません。"
 
 #: ../../library/msvcrt.rst:116
 msgid "Wide char variant of :func:`getch`, returning a Unicode value."
-msgstr ""
+msgstr ":func:`getch` のワイド文字列版。Unicode の値を返します。"
 
 #: ../../library/msvcrt.rst:121
 msgid ""
 "Similar to :func:`getch`, but the keypress will be echoed if it  represents "
 "a printable character."
 msgstr ""
+":func:`getch` に似ていますが、打鍵した字が印字可能な文字の場合エコーバックさ"
+"れます。"
 
 #: ../../library/msvcrt.rst:127
 msgid "Wide char variant of :func:`getche`, returning a Unicode value."
-msgstr ""
+msgstr ":func:`getche` のワイド文字列版。Unicode の値を返します。"
 
 #: ../../library/msvcrt.rst:132
 msgid "Print the byte string *char* to the console without buffering."
 msgstr ""
+"バイト文字列 *char* をバッファリングを行わないでコンソールに出力します。"
 
 #: ../../library/msvcrt.rst:137
 msgid "Wide char variant of :func:`putch`, accepting a Unicode value."
-msgstr ""
+msgstr ":func:`putch` のワイド文字列版。Unicode の値を引数に取ります。"
 
 #: ../../library/msvcrt.rst:142
 msgid ""
 "Cause the byte string *char* to be \"pushed back\" into the console buffer; "
 "it will be the next character read by :func:`getch` or :func:`getche`."
 msgstr ""
+"バイト文字列 *char* をコンソールバッファに \"押し戻し (push back)\" ます; こ"
+"れにより、押し戻された文字は :func:`getch` や :func:`getche` で次に読み出され"
+"る文字になります。"
 
 #: ../../library/msvcrt.rst:148
 msgid "Wide char variant of :func:`ungetch`, accepting a Unicode value."
-msgstr ""
+msgstr ":func:`ungetch` のワイド文字列版。Unicode の値を引数に取ります。"
 
 #: ../../library/msvcrt.rst:154
 msgid "Other Functions"
-msgstr ""
+msgstr "その多の関数"
 
 #: ../../library/msvcrt.rst:159
 msgid ""
 "Force the :c:func:`malloc` heap to clean itself up and return unused blocks "
 "to the operating system.  On failure, this raises :exc:`OSError`."
 msgstr ""
+"強制的に :c:func:`malloc` ヒープをクリーンさせ、未使用のブロックをオペレー"
+"ティングシステムに返させます。失敗した場合、 :exc:`OSError` を送出します。"

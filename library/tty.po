@@ -1,48 +1,54 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Liang-Bo Wang <me@liang2.tw>, 2016
-# Matt Wang <mattwang44@gmail.com>, 2021
+# tomo, 2021
+# Osamu NAKAMURA, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-26 18:54+0800\n"
-"PO-Revision-Date: 2021-12-17 17:00+0800\n"
-"Last-Translator: Matt Wang <mattwang44@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:16+0000\n"
+"Last-Translator: Osamu NAKAMURA, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.0.1\n"
 
 #: ../../library/tty.rst:2
 msgid ":mod:`tty` --- Terminal control functions"
-msgstr ":mod:`tty` --- 終端機控制函式"
+msgstr ":mod:`tty` --- 端末制御のための関数群"
 
 #: ../../library/tty.rst:11
 msgid "**Source code:** :source:`Lib/tty.py`"
-msgstr "**原始碼：**\\ :source:`Lib/tty.py`"
+msgstr "**ソースコード:** :source:`Lib/tty.py`"
 
 #: ../../library/tty.rst:15
 msgid ""
 "The :mod:`tty` module defines functions for putting the tty into cbreak and "
 "raw modes."
-msgstr ":mod:`tty` 模組定義了將 tty 放入 cbreak 和 raw 模式的函式。"
+msgstr ""
+":mod:`tty` モジュールは端末を cbreak および raw モードにするための関数を定義"
+"しています。"
 
 #: ../../library/tty.rst:18
 msgid ""
 "Because it requires the :mod:`termios` module, it will work only on Unix."
-msgstr "因為它需要 :mod:`termios` 模組，所以只能在 Unix 上執行。"
+msgstr ""
+"このモジュールは :mod:`termios` モジュールを必要とするため、 Unix でしか動作"
+"しません。"
 
 #: ../../library/tty.rst:20
 msgid "The :mod:`tty` module defines the following functions:"
-msgstr ":mod:`tty` 模組定義了以下函式："
+msgstr ":mod:`tty` モジュールでは、以下の関数を定義しています:"
 
 #: ../../library/tty.rst:25
 msgid ""
@@ -50,8 +56,9 @@ msgid ""
 "defaults to :const:`termios.TCSAFLUSH`, and is passed to :func:`termios."
 "tcsetattr`."
 msgstr ""
-"將檔案描述器 *fd* 的模式更改為 raw。如果 *when* 被省略，則預設為 :const:"
-"`termios.TCSAFLUSH`，並傳遞給 :func:`termios.tcsetattr`。"
+"ファイル記述子 *fd* のモードを raw モードに変えます。 *when* を省略すると標準"
+"の値は :const:`termios.TCSAFLUSH` になり、 :func:`termios.tcsetattr` に渡され"
+"ます。"
 
 #: ../../library/tty.rst:32
 msgid ""
@@ -59,13 +66,14 @@ msgid ""
 "defaults to :const:`termios.TCSAFLUSH`, and is passed to :func:`termios."
 "tcsetattr`."
 msgstr ""
-"將檔案描述器 *fd* 的模式更改為 cbreak。如果 *when* 被省略，則預設為 :const:"
-"`termios.TCSAFLUSH`，並傳遞給 :func:`termios.tcsetattr`。"
+"ファイル記述子 *fd* のモードを cbreakモードに変えます。 *when* を省略すると標"
+"準の値は :const:`termios.TCSAFLUSH` になり、 :func:`termios.tcsetattr` に渡さ"
+"れます。"
 
 #: ../../library/tty.rst:39
 msgid "Module :mod:`termios`"
-msgstr ":mod:`termios` 模組"
+msgstr "モジュール :mod:`termios`"
 
 #: ../../library/tty.rst:40
 msgid "Low-level terminal control interface."
-msgstr "低階終端機控制介面。"
+msgstr "低水準端末制御インターフェース。"

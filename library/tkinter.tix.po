@@ -1,37 +1,43 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# tomo, 2021
+# Osamu NAKAMURA, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-28 00:27+0000\n"
-"PO-Revision-Date: 2022-10-01 14:35+0800\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:15+0000\n"
+"Last-Translator: Osamu NAKAMURA, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1.1\n"
 
 #: ../../library/tkinter.tix.rst:2
 msgid ":mod:`tkinter.tix` --- Extension widgets for Tk"
-msgstr ":mod:`tkinter.tix` --- Tk 擴充小工具"
+msgstr ":mod:`tkinter.tix` --- Tkの拡張ウィジェット"
 
 #: ../../library/tkinter.tix.rst:9
 msgid "**Source code:** :source:`Lib/tkinter/tix.py`"
-msgstr "**原始碼：**\\ :source:`Lib/tkinter/tix.py`"
+msgstr "**ソースコード:** :source:`Lib/tkinter/tix.py`"
 
 #: ../../library/tkinter.tix.rst:13
 msgid ""
 "This Tk extension is unmaintained and should not be used in new code.  Use :"
 "mod:`tkinter.ttk` instead."
 msgstr ""
+"この Tk 拡張は保守されておらず、新しいコードでは使うべきではありません。\n"
+"その代わりに :mod:`tkinter.ttk` を使ってください。"
 
 #: ../../library/tkinter.tix.rst:19
 msgid ""
@@ -45,6 +51,14 @@ msgid ""
 "class:`NoteBook`, :class:`FileEntry`, :class:`PanedWindow`, etc; there are "
 "more than 40 of them."
 msgstr ""
+":mod:`tkinter.tix` (Tk Interface Extension) モジュールは豊富な追加ウィジェッ"
+"トを提供します。標準 Tk ライブラリには多くの有用なウィジェットがありますが、"
+"決して完全ではありません。 :mod:`tkinter.tix` ライブラリは、:class:"
+"`HList` 、 :class:`ComboBox` 、 :class:`Control` (別名SpinBox) および各種のス"
+"クロール可能なウィジェットなど、標準 Tk にはないが、一般的に必要とされるウィ"
+"ジェットの大部分を提供します。 :mod:`tkinter.tix` には、class:`NoteBook` 、 :"
+"class:`FileEntry` 、 :class:`PanedWindow` など、一般的に幅広い用途に役に立つ"
+"たくさんのウィジェットも含まれています。それらは40以上あります。"
 
 #: ../../library/tkinter.tix.rst:29
 msgid ""
@@ -53,43 +67,46 @@ msgid ""
 "You can design your application by choosing the most appropriate widgets to "
 "match the special needs of your application and users."
 msgstr ""
+"これら多くの新しいウィジェットと使うと、より便利でより直感的なユーザインター"
+"フェースを作成し、新しい相互作用テクニックをアプリケーションに導入することが"
+"できます。アプリケーションとユーザに特有の要求に合うように、最も適切なアプリ"
+"ケーションウィジェットを選んでアプリケーションを設計できます。"
 
 #: ../../library/tkinter.tix.rst:38
 msgid "`Tix Homepage <https://tix.sourceforge.net/>`_"
-msgstr "`Tix 首頁 <https://tix.sourceforge.net/>`_"
+msgstr ""
 
 #: ../../library/tkinter.tix.rst:37
 msgid ""
 "The home page for :mod:`Tix`.  This includes links to additional "
 "documentation and downloads."
 msgstr ""
+":mod:`Tix` のホームページ。ここには追加ドキュメントとダウンロードへのリンクが"
+"あります。"
 
 #: ../../library/tkinter.tix.rst:41
 msgid "`Tix Man Pages <https://tix.sourceforge.net/dist/current/man/>`_"
-msgstr "`Tix 首頁 <https://tix.sourceforge.net/>`_"
+msgstr ""
 
 #: ../../library/tkinter.tix.rst:41
 msgid "On-line version of the man pages and reference material."
-msgstr ""
+msgstr "manページと参考資料のオンライン版。"
 
 #: ../../library/tkinter.tix.rst:44
 msgid ""
 "`Tix Programming Guide <https://tix.sourceforge.net/dist/current/docs/tix-"
 "book/tix.book.html>`_"
 msgstr ""
-"`Tix 程式指南 <https://tix.sourceforge.net/dist/current/docs/tix-book/tix."
-"book.html>`_"
 
 #: ../../library/tkinter.tix.rst:44
 msgid "On-line version of the programmer's reference material."
-msgstr ""
+msgstr "プログラマ用参考資料のオンライン版。"
 
 #: ../../library/tkinter.tix.rst:48
 msgid ""
 "`Tix Development Applications <https://tix.sourceforge.net/Tixapps/src/Tide."
 "html>`_"
 msgstr ""
-"`Tix 開發應用程式 <https://tix.sourceforge.net/Tixapps/src/Tide.html>`_"
 
 #: ../../library/tkinter.tix.rst:47
 msgid ""
@@ -97,16 +114,22 @@ msgid ""
 "applications work under Tk or Tkinter, and include :program:`TixInspect`, an "
 "inspector to remotely modify and debug Tix/Tk/Tkinter applications."
 msgstr ""
+"Tix と Tkinter プログラムの開発のための Tix アプリケーション。 Tideアプリケー"
+"ションは Tk または Tkinter に基づいて動作します。また、リモートで Tix/Tk/"
+"Tkinter アプリケーションを変更やデバッグするためのインスペクタ :program:"
+"`TixInspect` が含まれます。"
 
 #: ../../library/tkinter.tix.rst:53
 msgid "Using Tix"
-msgstr ""
+msgstr "Tixを使う"
 
 #: ../../library/tkinter.tix.rst:58
 msgid ""
 "Toplevel widget of Tix which represents mostly the main window of an "
 "application. It has an associated Tcl interpreter."
 msgstr ""
+"主にアプリケーションのメインウィンドウを表すTixのトップレベルウィジェット。"
+"Tcl インタープリタが関連付けられます。"
 
 #: ../../library/tkinter.tix.rst:61
 msgid ""
@@ -116,6 +139,11 @@ msgid ""
 "just import :mod:`tkinter.tix`, and replace the toplevel call to :class:"
 "`tkinter.Tk` with :class:`tix.Tk`::"
 msgstr ""
+":mod:`tkinter.tix` モジュールのクラスは :mod:`tkinter` モジュールのクラスをサ"
+"ブクラス化します。前者は後者をインポートするので、モジュールを一つインポート"
+"するだけで :mod:`tkinter.tix` を Tkinter と一緒に使うことができます。一般的"
+"に、 :mod:`tkinter.tix` をインポートし、トップレベルでの :class:`tkinter.Tk` "
+"への呼び出しは :class:`tix.Tk` に置き換えるだけで済みます。次に例を示します::"
 
 #: ../../library/tkinter.tix.rst:71
 msgid ""
@@ -123,10 +151,13 @@ msgid ""
 "alongside your installation of the Tk widgets. To test your installation, "
 "try the following::"
 msgstr ""
+":mod:`tkinter.tix` を使うためには、通常 Tk ウィジェットのインストールと平行し"
+"て、Tix ウィジェットをインストールしなければなりません。インストールをテスト"
+"するために、次のことを試してください::"
 
 #: ../../library/tkinter.tix.rst:81
 msgid "Tix Widgets"
-msgstr ""
+msgstr "Tixウィジェット"
 
 #: ../../library/tkinter.tix.rst:83
 msgid ""
@@ -136,7 +167,7 @@ msgstr ""
 
 #: ../../library/tkinter.tix.rst:88
 msgid "Basic Widgets"
-msgstr ""
+msgstr "基本ウィジェット"
 
 #: ../../library/tkinter.tix.rst:93
 msgid ""
@@ -224,7 +255,7 @@ msgstr ""
 
 #: ../../library/tkinter.tix.rst:216
 msgid "File Selectors"
-msgstr ""
+msgstr "ファイルセレクタ"
 
 #: ../../library/tkinter.tix.rst:221
 msgid ""
@@ -257,6 +288,10 @@ msgid ""
 "DirSelectBox stores the directories mostly recently selected into a ComboBox "
 "widget so that they can be quickly selected again."
 msgstr ""
+":class:`DirSelectBox` は標準 Motif(TM) ディレクトリ選択ボックスに似ています。"
+"ユーザがディレクトリを選択するために一般的に使われます。\\ DirSelectBox は主"
+"に最近 ComboBox ウィジェットに選択されたディレクトリを保存し、すばやく再選択"
+"できるようにします。"
 
 #: ../../library/tkinter.tix.rst:265
 msgid ""
@@ -287,7 +322,7 @@ msgstr ""
 
 #: ../../library/tkinter.tix.rst:302
 msgid "Hierarchical ListBox"
-msgstr ""
+msgstr "階層的リストボックス"
 
 #: ../../library/tkinter.tix.rst:307
 msgid ""
@@ -316,7 +351,7 @@ msgstr ""
 
 #: ../../library/tkinter.tix.rst:347
 msgid "Tabular ListBox"
-msgstr ""
+msgstr "表的リストボックス"
 
 #: ../../library/tkinter.tix.rst:352
 msgid ""
@@ -330,7 +365,7 @@ msgstr ""
 
 #: ../../library/tkinter.tix.rst:375
 msgid "Manager Widgets"
-msgstr ""
+msgstr "管理ウィジェット"
 
 #: ../../library/tkinter.tix.rst:380
 msgid ""
@@ -364,11 +399,11 @@ msgstr ""
 
 #: ../../library/tkinter.tix.rst:428
 msgid "Image Types"
-msgstr ""
+msgstr "画像タイプ"
 
 #: ../../library/tkinter.tix.rst:430
 msgid "The :mod:`tkinter.tix` module adds:"
-msgstr ""
+msgstr ":mod:`tkinter.tix` モジュールは次のものを追加します:"
 
 #: ../../library/tkinter.tix.rst:432
 msgid ""
@@ -389,7 +424,7 @@ msgstr ""
 
 #: ../../library/tkinter.tix.rst:460
 msgid "Miscellaneous Widgets"
-msgstr ""
+msgstr "その他のウィジェット"
 
 #: ../../library/tkinter.tix.rst:465
 msgid ""
@@ -400,11 +435,13 @@ msgstr ""
 
 #: ../../library/tkinter.tix.rst:472
 msgid "Form Geometry Manager"
-msgstr ""
+msgstr "ジオメトリマネジャを作る"
 
 #: ../../library/tkinter.tix.rst:474
 msgid "In addition, :mod:`tkinter.tix` augments :mod:`tkinter` by providing:"
 msgstr ""
+"加えて、 :mod:`tkinter.tix` は次のものを提供することで :mod:`tkinter` を補強"
+"します:"
 
 #: ../../library/tkinter.tix.rst:479
 msgid ""
@@ -414,7 +451,7 @@ msgstr ""
 
 #: ../../library/tkinter.tix.rst:485
 msgid "Tix Commands"
-msgstr "Tix 指令"
+msgstr "Tixコマンド"
 
 #: ../../library/tkinter.tix.rst:490
 msgid ""
@@ -427,7 +464,7 @@ msgstr ""
 
 #: ../../library/tkinter.tix.rst:497
 msgid "To view the current settings, the common usage is::"
-msgstr ""
+msgstr "現在の設定を見るための一般的な方法は::"
 
 #: ../../library/tkinter.tix.rst:506
 msgid ""
@@ -440,12 +477,22 @@ msgid ""
 "given option(s) to have the given value(s); in this case the method returns "
 "an empty string. Option may be any of the configuration options."
 msgstr ""
+"Tix アプリケーション・コンテキストの設定オプションを問い合わせたり、変更した"
+"りします。オプションが指定されなければ、利用可能なオプションすべてのディク"
+"ショナリを返します。オプションが値なしで指定された場合は、メソッドは指定され"
+"たオプションを説明するリストを返します(このリストはオプションが指定されていな"
+"い場合に返される値に含まれている、指定されたオプションに対応するサブリストと"
+"同一です)。一つ以上のオプション-値のペアが指定された場合は、メソッドは与えら"
+"れたオプションが与えられた値を持つように変更します。この場合は、メソッドは空"
+"文字列を返します。オプションは設定オプションのどれでも構いません。"
 
 #: ../../library/tkinter.tix.rst:518
 msgid ""
 "Returns the current value of the configuration option given by *option*. "
 "Option may be any of the configuration options."
 msgstr ""
+"*option* によって与えられた設定オプションの現在の値を返します。オプションは設"
+"定オプションのどれでも構いません。"
 
 #: ../../library/tkinter.tix.rst:524
 msgid ""
@@ -456,6 +503,13 @@ msgid ""
 "of the bitmap file, prefixed with the character ``@``.  The returned value "
 "can be used to configure the ``bitmap`` option of the Tk and Tix widgets."
 msgstr ""
+"ビットマップディレクトリの一つの中の ``name.xpm`` または ``name`` と言う名前"
+"のビットマップファイルの場所を見つけ出します (:meth:`tix_addbitmapdir` メソッ"
+"ドを参照してください)。 :meth:`tix_getbitmap` を使うことで、アプリケーション"
+"にビットマップファイルのパス名をハードコーディングすることを避けることができ"
+"ます。成功すれば、文字 ``@`` を先頭に付けたビットマップファイルの完全なパス名"
+"を返します。戻り値をTkとTixウィジェットの ``bitmap`` オプションを設定するため"
+"に使うことができます。"
 
 #: ../../library/tkinter.tix.rst:534
 msgid ""
@@ -466,6 +520,12 @@ msgid ""
 "method, the image files of an applications can also be located using the :"
 "meth:`tix_getimage` or :meth:`tix_getbitmap` method."
 msgstr ""
+"Tix は :meth:`tix_getimage` と :meth:`tix_getbitmap` メソッドが画像ファイルを"
+"検索する検索先ディレクトリのリストを保持しています。標準ビットマップディレク"
+"トリは :file:`$TIX_LIBRARY/bitmaps` です。 :meth:`tix_addbitmapdir` メソッド"
+"は *directory* をこのリストに追加します。そのメソッドを使うことによって、:"
+"meth:`tix_getimage` または :meth:`tix_getbitmap` メソッドを使ってアプリケー"
+"ションの画像ファイルも見つけることができます。"
 
 #: ../../library/tkinter.tix.rst:544
 msgid ""
@@ -477,6 +537,13 @@ msgid ""
 "widget is desired. Possible options are ``tix``, ``FileSelectDialog`` or "
 "``tixExFileSelectDialog``."
 msgstr ""
+"このアプリケーションからの異なる呼び出しの間で共有される可能性があるファイル"
+"選択ダイアログを返します。最初に呼ばれた時に、このメソッドはファイル選択ダイ"
+"アログ・ウィジェットを作成します。このダイアログはその後のすべての :meth:"
+"`tix_filedialog` への呼び出しで返されます。オプションの dlgclass パラメータ"
+"は、要求されているファイル選択ダイアログ・ウィジェットの型を指定するために文"
+"字列として渡されます。指定可能なオプションは ``tix`` 、 ``FileSelectDialog`` "
+"あるいは ``tixExFileSelectDialog`` です。"
 
 #: ../../library/tkinter.tix.rst:554
 msgid ""
@@ -491,10 +558,20 @@ msgid ""
 "created image, which can be used to configure the ``image`` option of the Tk "
 "and Tix widgets."
 msgstr ""
+"ビットマップディレクトリの一つの中の :file:`name.xpm` 、 :file:`name.xbm` ま"
+"たは :file:`name.ppm` という名前の画像ファイルの場所を見つけ出します(上の :"
+"meth:`tix_addbitmapdir` メソッドを参照してください)。同じ名前(だが異なる拡張"
+"子)のファイルが一つ以上ある場合は、画像のタイプがXディスプレイの深さに応じて"
+"選択されます。xbm画像はモノクロディスプレイの場合に選択され、カラー画像はカ"
+"ラーディスプレイの場合に選択されます。 :meth:`tix_getimage` を使うことによっ"
+"て、アプリケーションに画像ファイルのパス名をハードコーディングすることを避け"
+"られます。成功すれば、このメソッドは新たに作成した画像の名前を返し、\\ Tk と "
+"Tix ウィジェットの ``image`` オプションを設定するためにそれを使うことができま"
+"す。"
 
 #: ../../library/tkinter.tix.rst:567
 msgid "Gets the options maintained by the Tix scheme mechanism."
-msgstr ""
+msgstr "Tixのスキーム・メカニズムによって保持されているオプションを得ます。"
 
 #: ../../library/tkinter.tix.rst:572
 msgid ""
@@ -503,12 +580,18 @@ msgid ""
 "this call.  Therefore, it is best to call the resetoptions method before the "
 "creation of any widgets in a Tix application."
 msgstr ""
+"Tix アプリケーションのスキームとフォントセットをそれぞれ *newScheme* と "
+"*newFontSet* に再設定します。この設定は、この呼び出し後に作成されたウィジェッ"
+"トだけに影響します。そのため、Tix アプリケーションのどのウィジェットを作成す"
+"る前にも resetoptions メソッドを呼び出すのが良い方法です。"
 
 #: ../../library/tkinter.tix.rst:577
 msgid ""
 "The optional parameter *newScmPrio* can be given to reset the priority level "
 "of the Tk options set by the Tix schemes."
 msgstr ""
+"オプション・パラメータ *newScmPrio* を、Tix スキームによって設定される Tk オ"
+"プションの優先度レベルを再設定するために与えることができます。"
 
 #: ../../library/tkinter.tix.rst:580
 msgid ""
@@ -517,3 +600,7 @@ msgid ""
 "sets using the :meth:`tix_config` method. Instead, the :meth:"
 "`tix_resetoptions` method must be used."
 msgstr ""
+"Tk が X オプションデータベースを扱う方法のため、Tix がインポートされ初期化さ"
+"れた後に、カラースキームとフォントセットを :meth:`tix_config` メソッドを使っ"
+"て再設定することはできません。したがって、 :meth:`tix_resetoptions` メソッド"
+"を代わりに使わなければならないのです。"

@@ -1,27 +1,32 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Leon H., 2017
+# tomo, 2021
+# mollinaca, 2021
+# 菊池 健志, 2023
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 08:13+0000\n"
-"PO-Revision-Date: 2018-05-23 14:09+0000\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-17 14:14+0000\n"
+"PO-Revision-Date: 2021-06-28 00:51+0000\n"
+"Last-Translator: 菊池 健志, 2023\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../extending/embedding.rst:8
 msgid "Embedding Python in Another Application"
-msgstr "在其它 App 內嵌入 Python"
+msgstr "他のアプリケーションへの Python の埋め込み"
 
 #: ../../extending/embedding.rst:10
 msgid ""
@@ -35,6 +40,15 @@ msgid ""
 "writing some scripts in Python.  You can also use it yourself if some of the "
 "functionality can be written in Python more easily."
 msgstr ""
+"前章では、 Python を拡張する方法、すなわち C 関数のライブラリを Python に結び"
+"つけて機能を拡張する方法について述べました。同じようなことを別の方法でも実行"
+"できます: それは、自分の C/C++ アプリケーションに Python を埋め込んで機能を強"
+"化する、というものです。埋め込みを行うことで、アプリケーションの何らかの機能"
+"を C や C++ の代わりに Python で実装できるようになります。埋め込みは多くの用"
+"途で利用できます; ユーザが Python でスクリプトを書き、アプリケーションを自分"
+"好みに仕立てられるようにする、というのがその一例です。プログラマが、特定の機"
+"能を Python でより楽に書ける場合に自分自身のために埋め込みを行うこともできま"
+"す。"
 
 #: ../../extending/embedding.rst:20
 msgid ""
@@ -44,6 +58,12 @@ msgid ""
 "nothing to do with Python --- instead, some parts of the application "
 "occasionally call the Python interpreter to run some Python code."
 msgstr ""
+"Python の埋め込みは Python の拡張と似ていますが、全く同じというわけではありま"
+"せん。その違いは、Python を拡張した場合にはアプリケーションのメインプログラム"
+"は依然として Python インタプリタである一方、 Python を組み込みんだ場合には、"
+"メインプログラムには Python が関係しない --- その代わりに、アプリケーションの"
+"ある一部分が時折 Python インタプリタを呼び出して何らかの Python コードを実行"
+"させる --- かもしれない、ということです。"
 
 #: ../../extending/embedding.rst:26
 msgid ""
@@ -54,6 +74,12 @@ msgid ""
 "Python.  Then later you can call the interpreter from any part of the "
 "application."
 msgstr ""
+"従って、 Python の埋め込みを行う場合、自作のメインプログラムを提供しなければ"
+"なりません。メインプログラムがやらなければならないことの一つに、 Python イン"
+"タプリタの初期化があります。とにかく少なくとも関数 :c:func:`Py_Initialize` を"
+"呼び出さねばなりません。オプションとして、Python 側にコマンドライン引数を渡す"
+"ために関数呼び出しを行います。その後、アプリケーションのどこでもインタプリタ"
+"を呼び出せるようになります。"
 
 #: ../../extending/embedding.rst:32
 msgid ""
@@ -64,6 +90,11 @@ msgid ""
 "level operations described in the previous chapters to construct and use "
 "Python objects."
 msgstr ""
+"インタプリタを呼び出すには、異なるいくつかの方法があります: Python 文が入った"
+"文字列を :c:func:`PyRun_SimpleString` に渡す、 stdio ファイルポインタとファイ"
+"ル名 (これはエラーメッセージ内でコードを識別するためだけのものです) を :c:"
+"func:`PyRun_SimpleFile` に渡す、といった具合です。これまでの各章で説明した低"
+"水準の操作を呼び出して、Python オブジェクトを構築したり使用したりもできます。"
 
 #: ../../extending/embedding.rst:42
 msgid ":ref:`c-api-index`"
@@ -74,10 +105,12 @@ msgid ""
 "The details of Python's C interface are given in this manual. A great deal "
 "of necessary information can be found here."
 msgstr ""
+"Python C インターフェースの詳細はこのマニュアルに書かれています。必要な情報の"
+"大部分はここにあるはずです。"
 
 #: ../../extending/embedding.rst:49
 msgid "Very High Level Embedding"
-msgstr ""
+msgstr "高水準の埋め込み"
 
 #: ../../extending/embedding.rst:51
 msgid ""
@@ -86,6 +119,10 @@ msgid ""
 "needing to interact with the application directly. This can for example be "
 "used to perform some operation on a file. ::"
 msgstr ""
+"Python の埋め込みの最も簡単な形式は、超高水準インターフェースの利用です。この"
+"インターフェースは、アプリケーションとやり取りする必要がない Python スクリプ"
+"トを実行するためのものです。例えばこれは、一つのファイル上で何らかの操作を実"
+"現するのに利用できます。 ::"
 
 #: ../../extending/embedding.rst:78
 msgid ""
@@ -101,10 +138,20 @@ msgid ""
 "which saves you the trouble of allocating memory space and loading the file "
 "contents."
 msgstr ""
+":c:func:`Py_SetProgramName` は :c:func:`Py_Initialize` の前に呼び出す必要があ"
+"ります。これによりインタプリタにランタイムライブラリへのパスを伝えることが出"
+"来ます。続いて、Python インタプリタを :c:func:`Py_Initialize` で初期化し、続"
+"いてハードコードされた Python スクリプトで日付と時間の出力を実行します。その"
+"後、 :c:func:`Py_FinalizeEx` の呼び出しでインタプリタを終了し, プログラムの終"
+"了に続きます。実際のプログラムでは、Python スクリプトを他のソース、おそらくテ"
+"キストエディタルーチンやファイル、データベースから取り出したいと考えるかもし"
+"れません。Python コードをファイルから取り出すには、 :c:func:"
+"`PyRun_SimpleFile` 関数を使うのがよいでしょう。この関数はメモリを確保して、"
+"ファイルの内容をロードする手間を省いてくれます。"
 
 #: ../../extending/embedding.rst:93
 msgid "Beyond Very High Level Embedding: An overview"
-msgstr ""
+msgstr "超高水準の埋め込みから踏み出す: 概要"
 
 #: ../../extending/embedding.rst:95
 msgid ""
@@ -114,6 +161,11 @@ msgid ""
 "calls. At the cost of having to write more C code, you can achieve almost "
 "anything."
 msgstr ""
+"高水準インターフェースは、断片的な Python コードをアプリケーションから実行で"
+"きるようにしてくれますが、アプリケーションと Python コードの間でのデータのや"
+"り取りは、控えめに言っても煩わしいものです。データのやり取りをしたいなら、よ"
+"り低水準のインターフェース呼び出しを利用しなくてはなりません。より多く C コー"
+"ドを書かねばならない代わりに、ほぼ何でもできるようになります。"
 
 #: ../../extending/embedding.rst:100
 msgid ""
@@ -122,36 +174,43 @@ msgid ""
 "previous chapters are still valid. To show this, consider what the extension "
 "code from Python to C really does:"
 msgstr ""
+"Python の拡張と埋め込みは、趣旨こそ違え、同じ作業であるということに注意せねば"
+"なりません。これまでの章で議論してきたトピックのほとんどが埋め込みでもあては"
+"まります。これを示すために、 Python から C への拡張を行うコードが実際には何を"
+"するか考えてみましょう:"
 
 #: ../../extending/embedding.rst:105
 msgid "Convert data values from Python to C,"
-msgstr ""
+msgstr "データ値を Python から C に変換する。"
 
 #: ../../extending/embedding.rst:107
 msgid "Perform a function call to a C routine using the converted values, and"
-msgstr ""
+msgstr "変換された値を使って C ルーチンの関数呼び出しを行い、"
 
 #: ../../extending/embedding.rst:109
 msgid "Convert the data values from the call from C to Python."
-msgstr ""
+msgstr "呼び出しで得られたデータ値 C から Python に変換する。"
 
 #: ../../extending/embedding.rst:111
 msgid "When embedding Python, the interface code does:"
 msgstr ""
+"Python を埋め込む場合には、インターフェースコードが行う作業は以下のようになり"
+"ます:"
 
 #: ../../extending/embedding.rst:113
 msgid "Convert data values from C to Python,"
-msgstr ""
+msgstr "データ値を C から Python に変換する。"
 
 #: ../../extending/embedding.rst:115
 msgid ""
 "Perform a function call to a Python interface routine using the converted "
 "values, and"
 msgstr ""
+"変換された値を使って Python インターフェースルーチンの関数呼び出しを行い、"
 
 #: ../../extending/embedding.rst:118
 msgid "Convert the data values from the call from Python to C."
-msgstr ""
+msgstr "呼び出しで得られたデータ値 Python から C に変換する。"
 
 #: ../../extending/embedding.rst:120
 msgid ""
@@ -160,6 +219,10 @@ msgid ""
 "is the routine that you call between both data conversions. When extending, "
 "you call a C routine, when embedding, you call a Python routine."
 msgstr ""
+"一見して分かるように、データ変換のステップは、言語間でデータを転送する方向が"
+"変わったのに合わせて単に入れ替えただけです。唯一の相違点は、データ変換の間に"
+"あるルーチンです。拡張を行う際には C ルーチンを呼び出しますが、埋め込みの際に"
+"は Python ルーチンを呼び出します。"
 
 #: ../../extending/embedding.rst:125
 msgid ""
@@ -168,10 +231,14 @@ msgid ""
 "be understood.  Since these aspects do not differ from extending the "
 "interpreter, you can refer to earlier chapters for the required information."
 msgstr ""
+"この章では、Python から C へ、そしてその逆へとデータを変換する方法については"
+"議論しません。また、正しい参照の使い方やエラーの扱い方についてすでに理解して"
+"いるものと仮定します。これらの側面についてはインタプリタの拡張と何ら変わると"
+"ころがないので、必要な情報については以前の章を参照できます。"
 
 #: ../../extending/embedding.rst:134
 msgid "Pure Embedding"
-msgstr ""
+msgstr "純粋な埋め込み"
 
 #: ../../extending/embedding.rst:136
 msgid ""
@@ -180,10 +247,16 @@ msgid ""
 "directly interact with the application (but that will change in the next "
 "section)."
 msgstr ""
+"最初に例示するプログラムは、Python スクリプト内の関数を実行するためのもので"
+"す。超高水準インターフェースに関する節で挙げた例と同様に、Python インタプリタ"
+"はアプリケーションと直接やりとりはしません (が、次の節でやりとりするよう変更"
+"します)。"
 
 #: ../../extending/embedding.rst:141
 msgid "The code to run a function defined in a Python script is:"
 msgstr ""
+"Python スクリプト内で定義されている関数を実行するためのコードは以下のようにな"
+"ります:"
 
 #: ../../extending/embedding.rst:146
 msgid ""
@@ -193,10 +266,15 @@ msgid ""
 "(let's call the finished executable :program:`call`), and use it to execute "
 "a Python script, such as:"
 msgstr ""
+"このコードは ``argv[1]`` を使って Python スクリプトをロードし、 ``argv[2]`` "
+"内に指定された名前の関数を呼び出します。関数の整数引数は ``argv`` 配列中の他"
+"の値になります。このプログラムを :ref:`コンパイルしてリンク <compiling>` し "
+"(できた実行可能形式を :program:`call` と呼びましょう)、以下のような Python ス"
+"クリプトを実行することにします:"
 
 #: ../../extending/embedding.rst:161
 msgid "then the result should be:"
-msgstr ""
+msgstr "実行結果は以下のようになるはずです:"
 
 #: ../../extending/embedding.rst:169
 msgid ""
@@ -204,6 +282,9 @@ msgid ""
 "is for data conversion between Python and C, and for error reporting.  The "
 "interesting part with respect to embedding Python starts with ::"
 msgstr ""
+"この程度の機能を実現するにはプログラムがいささか大きすぎますが、ほとんどは "
+"Python から C へのデータ変換やエラー報告のためのコードです。Python の埋め込み"
+"という観点から最も興味深い部分は以下のコードから始まる部分です::"
 
 #: ../../extending/embedding.rst:178
 msgid ""
@@ -212,6 +293,9 @@ msgid ""
 "which is constructed using the :c:func:`PyUnicode_FromString` data "
 "conversion routine. ::"
 msgstr ""
+"インタプリタの初期化後、スクリプトは :c:func:`PyImport_Import` を使って読み込"
+"まれます。このルーチンは Python 文字列を引数に取る必要があり、データ変換ルー"
+"チン :c:func:`PyUnicode_FromString` で構築します。 ::"
 
 #: ../../extending/embedding.rst:191
 msgid ""
@@ -221,6 +305,11 @@ msgid ""
 "proceeds by constructing a tuple of arguments as normal.  The call to the "
 "Python function is then made with::"
 msgstr ""
+"ひとたびスクリプトが読み込まれると、 :c:func:`PyObject_GetAttrString` を使っ"
+"て必要な名前を取得できます。名前がスクリプト中に存在し、取得したオブジェクト"
+"が呼び出し可能オブジェクトであれば、このオブジェクトが関数であると考えて差し"
+"支えないでしょう。そこでプログラムは定石どおりに引数のタプル構築に進みます。"
+"その後、Python 関数を以下のコードで呼び出します::"
 
 #: ../../extending/embedding.rst:199
 msgid ""
@@ -228,10 +317,12 @@ msgid ""
 "reference to the return value of the function.  Be sure to release the "
 "reference after examining the value."
 msgstr ""
+"関数が処理を戻す際、 ``pValue`` は ``NULL`` になるか、関数の戻り値への参照が"
+"入っています。値を調べた後には忘れずに参照を解放してください。"
 
 #: ../../extending/embedding.rst:207
 msgid "Extending Embedded Python"
-msgstr ""
+msgstr "埋め込まれた Python の拡張"
 
 #: ../../extending/embedding.rst:209
 msgid ""
@@ -244,12 +335,24 @@ msgid ""
 "and write some glue code that gives Python access to those routines, just "
 "like you would write a normal Python extension.  For example::"
 msgstr ""
+"ここまでは、埋め込み Python インタプリタはアプリケーション本体の機能にアクセ"
+"スする手段がありませんでした。 Python API を使うと、埋め込みインタプリタを拡"
+"張することでアプリケーション本体へのアクセスを可能にします。つまり、アプリ"
+"ケーションで提供されているルーチンを使って、埋め込みインタプリタを拡張するの"
+"です。複雑なことのように思えますが、それほどひどいわけではありません。さしあ"
+"たって、アプリケーションが Python インタプリタを起動したということをちょっと"
+"忘れてみてください。その代わり、アプリケーションがサブルーチンの集まりで、あ"
+"たかも普通の Python 拡張モジュールを書くかのように、Python から各ルーチンにア"
+"クセスできるようにするグルー(glue, 糊) コードを書くと考えてください。例えば以"
+"下のようにです::"
 
 #: ../../extending/embedding.rst:246
 msgid ""
 "Insert the above code just above the :c:func:`main` function. Also, insert "
 "the following two statements before the call to :c:func:`Py_Initialize`::"
 msgstr ""
+"上のコードを :c:func:`main` 関数のすぐ上に挿入します。また、以下の二つの文"
+"を :c:func:`Py_Initialize` の呼び出しの前に挿入します::"
 
 #: ../../extending/embedding.rst:252
 msgid ""
@@ -257,16 +360,21 @@ msgid ""
 "numargs` function accessible to the embedded Python interpreter. With these "
 "extensions, the Python script can do things like"
 msgstr ""
+"これら二つの行は ``numargs`` 変数を初期化し、埋め込み Python インタプリタか"
+"ら :func:`emb.numargs` 関数にアクセスできるようにします。これらの拡張モジュー"
+"ル関数を使うと、 Python スクリプトは以下のようなことができます。"
 
 #: ../../extending/embedding.rst:261
 msgid ""
 "In a real application, the methods will expose an API of the application to "
 "Python."
 msgstr ""
+"実際のアプリケーションでは、こうしたメソッドでアプリケーション内の API を "
+"Python に公開することになります。"
 
 #: ../../extending/embedding.rst:271
 msgid "Embedding Python in C++"
-msgstr ""
+msgstr "C++による Python の埋め込み"
 
 #: ../../extending/embedding.rst:273
 msgid ""
@@ -276,10 +384,14 @@ msgid ""
 "and link your program.  There is no need to recompile Python itself using C+"
 "+."
 msgstr ""
+"C++ プログラム中にも Python を埋め込めます; 厳密に言うと、どうやって埋め込む"
+"かは使っているC++ 処理系の詳細に依存します; 一般的には、メインプログラムをC+"
+"+で書き、C++ コンパイラを使ってプログラムをコンパイル・リンクする必要があるで"
+"しょう。 Python 自体を C++でコンパイルしなおす必要はありません。"
 
 #: ../../extending/embedding.rst:282
 msgid "Compiling and Linking under Unix-like systems"
-msgstr ""
+msgstr "Unix 系システムにおけるコンパイルとリンク"
 
 #: ../../extending/embedding.rst:284
 msgid ""
@@ -288,6 +400,10 @@ msgid ""
 "application, particularly because Python needs to load library modules "
 "implemented as C dynamic extensions (:file:`.so` files) linked against it."
 msgstr ""
+"Python インタプリタをアプリケーションに埋め込むためにコンパイラ (とリンカ) に"
+"渡すべき正しいフラグを見出すのは簡単でないかもしれません。これは特に、Python "
+"がライブラリモジュールに対してリンクされた C 動的拡張 (:file:`.so` ファイル) "
+"として実装されたものをロードする必要があるためです。"
 
 #: ../../extending/embedding.rst:290
 msgid ""
@@ -297,18 +413,24 @@ msgid ""
 "available).  This script has several options, of which the following will be "
 "directly useful to you:"
 msgstr ""
+"必要なコンパイル・リンクのオプションを知るために、 :file:`python{X.Y}-"
+"config` スクリプトが使えます(これは Python インストール時に生成されたもの"
+"で、 :file:`python3-config` スクリプトも利用出来るかもしれません)。このスクリ"
+"プトにはオプションが多くありますが、直接的に有用なのはこれでしょう:"
 
 #: ../../extending/embedding.rst:296
 msgid ""
 "``pythonX.Y-config --cflags`` will give you the recommended flags when "
 "compiling:"
 msgstr ""
+"``pythonX.Y-config --cflags`` は推奨のコンパイルオプションを出力します:"
 
 #: ../../extending/embedding.rst:304
 msgid ""
 "``pythonX.Y-config --ldflags --embed`` will give you the recommended flags "
 "when linking:"
 msgstr ""
+"``pythonX.Y-config --ldflags --embed`` は推奨のリンクオプションを出力します:"
 
 #: ../../extending/embedding.rst:313
 msgid ""
@@ -317,6 +439,9 @@ msgid ""
 "that you use the absolute path to :file:`python{X.Y}-config`, as in the "
 "above example."
 msgstr ""
+"複数 Python バージョン共存(とりわけシステムの Python とあなた自身でビルドし"
+"た Python)での混乱を避けるために、上での例のように :file:`python{X.Y}-"
+"config` は絶対パスで起動したほうが良いです。"
 
 #: ../../extending/embedding.rst:318
 msgid ""
@@ -329,3 +454,11 @@ msgid ""
 "extract the configuration values that you will want to combine together.  "
 "For example:"
 msgstr ""
+"もしこの手順でうまくいかなければ(たしかにこれは全ての Unix 的なプラットフォー"
+"ムで動作することを保障するものではないですが、 :ref:`bug reports <reporting-"
+"bugs>` は歓迎です)、あなたのシステムのダイナミックリンクについてのドキュメン"
+"トを読み、Python の :file:`Makefile` のコンパイルオプションを調べる必要がある"
+"でしょう(Makefile の場所を調べるには :func:`sysconfig.get_makefile_filename` "
+"を使ってください)。この場合、 :mod:`sysconfig` モジュールが役に立つ道具になり"
+"ます。これによってあなたが付け加えたいコンパイル・リンクのオプション構成をプ"
+"ログラム的に抽出できます。例えば:"

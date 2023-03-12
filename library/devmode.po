@@ -1,26 +1,31 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# tomo, 2021
+# Yusuke Miyazaki <miyazaki.dev@gmail.com>, 2021
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-26 16:47+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:04+0000\n"
+"Last-Translator: Yusuke Miyazaki <miyazaki.dev@gmail.com>, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../library/devmode.rst:4
 msgid "Python Development Mode"
-msgstr ""
+msgstr "Python 開発モード"
 
 #: ../../library/devmode.rst:8
 msgid ""
@@ -217,7 +222,7 @@ msgstr ""
 
 #: ../../library/devmode.rst:110
 msgid "ResourceWarning Example"
-msgstr "ResourceWarning 範例"
+msgstr ""
 
 #: ../../library/devmode.rst:112
 msgid ""

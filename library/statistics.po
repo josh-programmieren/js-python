@@ -1,38 +1,43 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# KentHsu <luffy1610@gmail.com>, 2016
+# Takanori Suzuki <takanori@takanory.net>, 2021
+# tomo, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 08:13+0000\n"
-"PO-Revision-Date: 2018-07-27 16:57+0800\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:13+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.1.1\n"
 
 #: ../../library/statistics.rst:2
 msgid ":mod:`statistics` --- Mathematical statistics functions"
-msgstr ":mod:`statistics` --- 數學統計函式"
+msgstr ":mod:`statistics` --- 数理統計関数"
 
 #: ../../library/statistics.rst:12
 msgid "**Source code:** :source:`Lib/statistics.py`"
-msgstr "**原始碼：**\\ :source:`Lib/statistics.py`"
+msgstr "**ソースコード:** :source:`Lib/statistics.py`"
 
 #: ../../library/statistics.rst:21
 msgid ""
 "This module provides functions for calculating mathematical statistics of "
 "numeric (:class:`~numbers.Real`-valued) data."
-msgstr "這個模組提供計算數值 (:class:`Real`-valued) 資料的數學統計函式。"
+msgstr ""
+"このモジュールは、数値 (:class:`~numbers.Real` 型) データを数学的に統計計算す"
+"るための関数を提供します。"
 
 #: ../../library/statistics.rst:24
 msgid ""
@@ -67,13 +72,13 @@ msgstr ""
 
 #: ../../library/statistics.rst:68
 msgid "Averages and measures of central location"
-msgstr "平均值與中央位置量數"
+msgstr "平均及び中心位置の測度"
 
 #: ../../library/statistics.rst:70
 msgid ""
 "These functions calculate an average or typical value from a population or "
 "sample."
-msgstr "這些函式計算來自一個母體或樣本的平均值或代表值。"
+msgstr "これらの関数は母集団または標本の平均値や標準値を計算します。"
 
 #: ../../library/statistics.rst:74
 msgid ":func:`mean`"
@@ -81,7 +86,7 @@ msgstr ":func:`mean`"
 
 #: ../../library/statistics.rst:74
 msgid "Arithmetic mean (\"average\") of data."
-msgstr "數據的算術平均（平均值）。"
+msgstr "データの算術平均。"
 
 #: ../../library/statistics.rst:75
 msgid ":func:`fmean`"
@@ -97,7 +102,7 @@ msgstr ":func:`geometric_mean`"
 
 #: ../../library/statistics.rst:76
 msgid "Geometric mean of data."
-msgstr "數據中的幾何平均數。"
+msgstr ""
 
 #: ../../library/statistics.rst:77
 msgid ":func:`harmonic_mean`"
@@ -105,7 +110,7 @@ msgstr ":func:`harmonic_mean`"
 
 #: ../../library/statistics.rst:77
 msgid "Harmonic mean of data."
-msgstr ""
+msgstr "データの調和平均。"
 
 #: ../../library/statistics.rst:78
 msgid ":func:`median`"
@@ -113,7 +118,7 @@ msgstr ":func:`median`"
 
 #: ../../library/statistics.rst:78
 msgid "Median (middle value) of data."
-msgstr "數據的中位數（中間值）。"
+msgstr "データの中央値。"
 
 #: ../../library/statistics.rst:79
 msgid ":func:`median_low`"
@@ -121,7 +126,7 @@ msgstr ":func:`median_low`"
 
 #: ../../library/statistics.rst:79
 msgid "Low median of data."
-msgstr "數據中較小的中位數。"
+msgstr "データの low median。"
 
 #: ../../library/statistics.rst:80
 msgid ":func:`median_high`"
@@ -129,7 +134,7 @@ msgstr ":func:`median_high`"
 
 #: ../../library/statistics.rst:80
 msgid "High median of data."
-msgstr "數據中較大的中位數。"
+msgstr "データの high median。"
 
 #: ../../library/statistics.rst:81
 msgid ":func:`median_grouped`"
@@ -137,25 +142,23 @@ msgstr ":func:`median_grouped`"
 
 #: ../../library/statistics.rst:81
 msgid "Median, or 50th percentile, of grouped data."
-msgstr "分組數據的中位數或50%處。"
+msgstr "grouped data の中央値、すなわち50パーセンタイル。"
 
 #: ../../library/statistics.rst:82
 msgid ":func:`mode`"
 msgstr ":func:`mode`"
 
 #: ../../library/statistics.rst:82
-#, fuzzy
 msgid "Single mode (most common value) of discrete or nominal data."
-msgstr "離散資料中的眾數（出現次數最多次）。"
+msgstr ""
 
 #: ../../library/statistics.rst:83
 msgid ":func:`multimode`"
 msgstr ":func:`multimode`"
 
 #: ../../library/statistics.rst:83
-#, fuzzy
 msgid "List of modes (most common values) of discrete or nominal data."
-msgstr "離散資料中的眾數（出現次數最多次）。"
+msgstr ""
 
 #: ../../library/statistics.rst:84
 msgid ":func:`quantiles`"
@@ -167,13 +170,15 @@ msgstr ""
 
 #: ../../library/statistics.rst:88
 msgid "Measures of spread"
-msgstr "離度 (spread) 的測量"
+msgstr "分散の測度"
 
 #: ../../library/statistics.rst:90
 msgid ""
 "These functions calculate a measure of how much the population or sample "
 "tends to deviate from the typical or average values."
-msgstr "這些函式計算母體或樣本偏離平均值的程度。"
+msgstr ""
+"これらの関数は母集団または標本が標準値や平均値からどれくらい離れているかにつ"
+"いて計算します。"
 
 #: ../../library/statistics.rst:94
 msgid ":func:`pstdev`"
@@ -181,7 +186,7 @@ msgstr ":func:`pstdev`"
 
 #: ../../library/statistics.rst:94
 msgid "Population standard deviation of data."
-msgstr "數據的母體標準差"
+msgstr "データの母標準偏差。"
 
 #: ../../library/statistics.rst:95
 msgid ":func:`pvariance`"
@@ -189,7 +194,7 @@ msgstr ":func:`pvariance`"
 
 #: ../../library/statistics.rst:95
 msgid "Population variance of data."
-msgstr "數據的母體變異數"
+msgstr "データの母分散。"
 
 #: ../../library/statistics.rst:96
 msgid ":func:`stdev`"
@@ -197,7 +202,7 @@ msgstr ":func:`stdev`"
 
 #: ../../library/statistics.rst:96
 msgid "Sample standard deviation of data."
-msgstr "數據的樣本標準差"
+msgstr "データの標本標準偏差。"
 
 #: ../../library/statistics.rst:97
 msgid ":func:`variance`"
@@ -205,7 +210,7 @@ msgstr ":func:`variance`"
 
 #: ../../library/statistics.rst:97
 msgid "Sample variance of data."
-msgstr "數據的樣本變異數"
+msgstr "データの標本標準分散。"
 
 #: ../../library/statistics.rst:101
 msgid "Statistics for relations between two inputs"
@@ -218,15 +223,15 @@ msgstr ""
 
 #: ../../library/statistics.rst:106
 msgid ":func:`covariance`"
-msgstr ":func:`covariance`"
+msgstr ""
 
 #: ../../library/statistics.rst:106
 msgid "Sample covariance for two variables."
-msgstr "兩變數樣本的共變異數"
+msgstr ""
 
 #: ../../library/statistics.rst:107
 msgid ":func:`correlation`"
-msgstr ":func:`correlation`"
+msgstr ""
 
 #: ../../library/statistics.rst:107
 msgid "Pearson's correlation coefficient for two variables."
@@ -234,7 +239,7 @@ msgstr ""
 
 #: ../../library/statistics.rst:108
 msgid ":func:`linear_regression`"
-msgstr ":func:`linear_regression`"
+msgstr ""
 
 #: ../../library/statistics.rst:108
 msgid "Slope and intercept for simple linear regression."
@@ -242,19 +247,22 @@ msgstr ""
 
 #: ../../library/statistics.rst:113
 msgid "Function details"
-msgstr "函式細節"
+msgstr "関数の詳細"
 
 #: ../../library/statistics.rst:115
 msgid ""
 "Note: The functions do not require the data given to them to be sorted. "
 "However, for reading convenience, most of the examples show sorted sequences."
 msgstr ""
+"註釈: 関数の引数となるデータをソートしておく必要はありません。例の多くがソー"
+"トされているのは見やすさのためです。"
 
 #: ../../library/statistics.rst:120
 msgid ""
 "Return the sample arithmetic mean of *data* which can be a sequence or "
 "iterable."
 msgstr ""
+"シーケンス型またはイテラブルになり得る *data* の標本算術平均を返します。"
 
 #: ../../library/statistics.rst:122
 msgid ""
@@ -263,14 +271,17 @@ msgid ""
 "many different mathematical averages.  It is a measure of the central "
 "location of the data."
 msgstr ""
+"算術平均はデータの総和をデータ数で除したものです。単に「平均」と呼ばれること"
+"も多いですが、数学における平均の一種に過ぎません。データの中心位置の測度の一"
+"つです。"
 
 #: ../../library/statistics.rst:127
 msgid "If *data* is empty, :exc:`StatisticsError` will be raised."
-msgstr ""
+msgstr "*data* が空の場合 :exc:`StatisticsError` を送出します。"
 
 #: ../../library/statistics.rst:129
 msgid "Some examples of use:"
-msgstr ""
+msgstr "使用例:"
 
 #: ../../library/statistics.rst:148
 msgid ""
@@ -315,7 +326,7 @@ msgstr ""
 
 #: ../../library/statistics.rst:190 ../../library/statistics.rst:258
 msgid "Added support for *weights*."
-msgstr "新增 *weights* 的支援。"
+msgstr ""
 
 #: ../../library/statistics.rst:196
 msgid "Convert *data* to floats and compute the geometric mean."
@@ -394,6 +405,9 @@ msgid ""
 "middle two\" method.  If *data* is empty, :exc:`StatisticsError` is raised. "
 "*data* can be a sequence or iterable."
 msgstr ""
+"一般的な「中央2つの平均をとる」方法を使用して、数値データの中央値（中間値）を"
+"返します。もし *data* が空の場合、例外 :exc:`StatisticsError` が送出されま"
+"す。*data* はシーケンス型またはイテラブルにもなれます。"
 
 #: ../../library/statistics.rst:267
 msgid ""
@@ -401,18 +415,22 @@ msgid ""
 "the presence of outliers.  When the number of data points is odd, the middle "
 "data point is returned:"
 msgstr ""
+"中央値は外れ値の影響を受けにくいため、中心位置のロバストな測度です。データ数"
+"が奇数の場合は中央の値を返します:"
 
 #: ../../library/statistics.rst:276
 msgid ""
 "When the number of data points is even, the median is interpolated by taking "
 "the average of the two middle values:"
 msgstr ""
+"データ数が偶数の場合は、中央値は中央に最も近い2値の算術平均で補間されます:"
 
 #: ../../library/statistics.rst:284
 msgid ""
 "This is suited for when your data is discrete, and you don't mind that the "
 "median may not be an actual data point."
 msgstr ""
+"データが離散的で、中央値がデータ点にない値でも構わない場合に適しています。"
 
 #: ../../library/statistics.rst:287
 msgid ""
@@ -420,12 +438,18 @@ msgid ""
 "support addition), consider using :func:`median_low` or :func:`median_high` "
 "instead."
 msgstr ""
+"もしあなたのデータが（注文操作をサポートする）序数で、（追加操作をサポートし"
+"ない）数値でないならば、代わりに :func:`median_low` または :func:"
+"`median_high` の使用を検討してください。"
 
 #: ../../library/statistics.rst:293
 msgid ""
 "Return the low median of numeric data.  If *data* is empty, :exc:"
 "`StatisticsError` is raised.  *data* can be a sequence or iterable."
 msgstr ""
+"数値データの小さい方の中央値(low median)を返します。もし *data* が空の場合、:"
+"exc:`StatisticsError`が送出されます。*data* はシーケンス型またはイテラブルに"
+"もなれます。"
 
 #: ../../library/statistics.rst:296
 msgid ""
@@ -433,18 +457,25 @@ msgid ""
 "points is odd, the middle value is returned.  When it is even, the smaller "
 "of the two middle values is returned."
 msgstr ""
+"low median は必ずデータに含まれています。データ数が奇数の場合は中央の値を返"
+"し、偶数の場合は中央の2値の小さい方を返します。"
 
 #: ../../library/statistics.rst:307
 msgid ""
 "Use the low median when your data are discrete and you prefer the median to "
 "be an actual data point rather than interpolated."
 msgstr ""
+"データが離散的で、中央値が補間値よりもデータ点にある値の方が良い場合に用いて"
+"ください。"
 
 #: ../../library/statistics.rst:313
 msgid ""
 "Return the high median of data.  If *data* is empty, :exc:`StatisticsError` "
 "is raised.  *data* can be a sequence or iterable."
 msgstr ""
+"データの大きい方の中央値(high median)を返します。もし *data* が空の場合、:"
+"exc:`StatisticsError` が送出されます。 *data* はシーケンス型やイテラブルにも"
+"なれます。"
 
 #: ../../library/statistics.rst:316
 msgid ""
@@ -452,12 +483,16 @@ msgid ""
 "points is odd, the middle value is returned.  When it is even, the larger of "
 "the two middle values is returned."
 msgstr ""
+"high median は必ずデータに含まれています。データ数が奇数の場合は中央の値を返"
+"し、偶数の場合は中央の2値の大きい方を返します。"
 
 #: ../../library/statistics.rst:327
 msgid ""
 "Use the high median when your data are discrete and you prefer the median to "
 "be an actual data point rather than interpolated."
 msgstr ""
+"データが離散的で、中央値が補間値よりもデータ点にある値の方が良い場合に用いて"
+"ください。"
 
 #: ../../library/statistics.rst:333
 msgid ""
@@ -465,6 +500,9 @@ msgid ""
 "percentile, using interpolation.  If *data* is empty, :exc:`StatisticsError` "
 "is raised.  *data* can be a sequence or iterable."
 msgstr ""
+"補間を使用して、50番目のパーセンタイルとして計算されたグループ化された連続"
+"データの中央値を返します。もし *data* が空の場合、:exc:`StatisticsError` が送"
+"出されます。*data* はシーケンス型やイテラブルにもなれます。"
 
 #: ../../library/statistics.rst:342
 msgid ""
@@ -474,30 +512,41 @@ msgid ""
 "etc.  With the data given, the middle value falls somewhere in the class "
 "3.5--4.5, and interpolation is used to estimate it:"
 msgstr ""
+"次の例ではデータは丸められているため、各値はデータの中間です。例えば 1 は "
+"0.5 と 1.5 の中間、2 は 1.5 と 2.5 の中間、3 は 2.5 と 3.5 の中間です。例では"
+"中央の値は 3.5 から 4.5 で、補間により推定されます:"
 
 #: ../../library/statistics.rst:353
 msgid ""
 "Optional argument *interval* represents the class interval, and defaults to "
 "1.  Changing the class interval naturally will change the interpolation:"
 msgstr ""
+"*interval* は間隔を表します。デフォルトは1です。間隔を変えると当然補間値は変"
+"わります:"
 
 #: ../../library/statistics.rst:363
 msgid ""
 "This function does not check whether the data points are at least *interval* "
 "apart."
 msgstr ""
+"この関数はデータ点が少なくとも *interval* だけ差があるかどうかチェックしませ"
+"ん。"
 
 #: ../../library/statistics.rst:368
 msgid ""
 "Under some circumstances, :func:`median_grouped` may coerce data points to "
 "floats.  This behaviour is likely to change in the future."
 msgstr ""
+"環境によっては :func:`median_grouped` はデータ点を強制的に浮動小数点に変換し"
+"ます。この挙動はいずれ変更されるでしょう。"
 
 #: ../../library/statistics.rst:373
 msgid ""
 "\"Statistics for the Behavioral Sciences\", Frederick J Gravetter and Larry "
 "B Wallnau (8th Edition)."
 msgstr ""
+"\"Statistics for the Behavioral Sciences\", Frederick J Gravetter and Larry "
+"B Wallnau (8th Edition)."
 
 #: ../../library/statistics.rst:376
 msgid ""
@@ -506,6 +555,10 @@ msgid ""
 "spreadsheet, including `this discussion <https://mail.gnome.org/archives/"
 "gnumeric-list/2011-April/msg00018.html>`_."
 msgstr ""
+"The `SSMEDIAN <https://help.gnome.org/users/gnumeric/stable/gnumeric."
+"html#gnumeric-function-SSMEDIAN>`_ function in the Gnome Gnumeric "
+"spreadsheet, including `this discussion <https://mail.gnome.org/archives/"
+"gnumeric-list/2011-April/msg00018.html>`_."
 
 #: ../../library/statistics.rst:384
 msgid ""
@@ -527,6 +580,8 @@ msgid ""
 "``mode`` assumes discrete data and returns a single value. This is the "
 "standard treatment of the mode as commonly taught in schools:"
 msgstr ""
+"``mode`` は離散データであることを想定していて、1つの値を返します。これは学校"
+"で教わるような最頻値の標準的な取扱いです:"
 
 #: ../../library/statistics.rst:401
 msgid ""
@@ -552,6 +607,8 @@ msgid ""
 "Return the population standard deviation (the square root of the population "
 "variance).  See :func:`pvariance` for arguments and other details."
 msgstr ""
+"母標準偏差 (母分散の平方根) を返します。引数や詳細は :func:`pvariance` を参照"
+"してください。"
 
 #: ../../library/statistics.rst:444
 msgid ""
@@ -561,6 +618,10 @@ msgid ""
 "indicates that the data is spread out; a small variance indicates it is "
 "clustered closely around the mean."
 msgstr ""
+"*data* の母分散を返します。*data* は実数の空でないシーケンスまたはイテラブル"
+"です。分散、すなわち2次の中心化モーメントはデータの散らばり具合の測度です。分"
+"散が大きいデータはばらつきが大きく、分散が小さいデータは平均値のまわりに固"
+"まっています。"
 
 #: ../../library/statistics.rst:450
 msgid ""
@@ -576,25 +637,29 @@ msgid ""
 "estimate the variance from a sample, the :func:`variance` function is "
 "usually a better choice."
 msgstr ""
+"母集団全体から分散を計算する場合に用いてください。標本から分散を推定する場合"
+"は :func:`variance` を使いましょう。"
 
 #: ../../library/statistics.rst:459
 msgid "Raises :exc:`StatisticsError` if *data* is empty."
-msgstr ""
+msgstr "*data* が空の場合 :exc:`StatisticsError` を送出します。"
 
 #: ../../library/statistics.rst:461 ../../library/statistics.rst:531
 #: ../../library/statistics.rst:635 ../../library/statistics.rst:663
 msgid "Examples:"
-msgstr "範例："
+msgstr "例:"
 
 #: ../../library/statistics.rst:469
 msgid ""
 "If you have already calculated the mean of your data, you can pass it as the "
 "optional second argument *mu* to avoid recalculation:"
 msgstr ""
+"既にデータの平均値を計算している場合、それを第2引数 *mu* に渡して再計算を避け"
+"ることが出来ます:"
 
 #: ../../library/statistics.rst:478
 msgid "Decimals and Fractions are supported:"
-msgstr ""
+msgstr "Decimal と Fraction がサポートされています:"
 
 #: ../../library/statistics.rst:492
 msgid ""
@@ -602,6 +667,8 @@ msgid ""
 "σ².  When called on a sample instead, this is the biased sample variance s², "
 "also known as variance with N degrees of freedom."
 msgstr ""
+"母集団全体で呼んだ場合は母分散 σ² を返します。代わりに標本で呼んだ場合は "
+"biased variance s²、すなわち自由度 N の分散を返します。"
 
 #: ../../library/statistics.rst:496
 msgid ""
@@ -617,6 +684,8 @@ msgid ""
 "Return the sample standard deviation (the square root of the sample "
 "variance).  See :func:`variance` for arguments and other details."
 msgstr ""
+"標本標準偏差 (標本分散の平方根) を返します。引数や詳細は :func:`variance` を"
+"参照してください。"
 
 #: ../../library/statistics.rst:516
 msgid ""
@@ -626,6 +695,10 @@ msgid ""
 "that the data is spread out; a small variance indicates it is clustered "
 "closely around the mean."
 msgstr ""
+"*data* の標本分散を返します。*data* は少なくとも2つの実数の iterable です。分"
+"散、すなわち2次の中心化モーメントはデータの散らばり具合の測度です。分散が大き"
+"いデータはばらつきが大きく、分散が小さいデータは平均値のまわりに固まっていま"
+"す。"
 
 #: ../../library/statistics.rst:522
 msgid ""
@@ -633,22 +706,29 @@ msgid ""
 "*data*.  If it is missing or ``None`` (the default), the mean is "
 "automatically calculated."
 msgstr ""
+"第2引数 *xbar* に値を渡す場合は *data* の平均値でなくてはなりません。*xbar* "
+"が与えられない場合や ``None`` の場合 (デフォルト)、平均値は自動的に計算されま"
+"す。"
 
 #: ../../library/statistics.rst:526
 msgid ""
 "Use this function when your data is a sample from a population. To calculate "
 "the variance from the entire population, see :func:`pvariance`."
 msgstr ""
+"データが母集団の標本であるときに用いてください。母集団全体から分散を計算する"
+"には :func:`pvariance` を参照してください。"
 
 #: ../../library/statistics.rst:529
 msgid "Raises :exc:`StatisticsError` if *data* has fewer than two values."
-msgstr ""
+msgstr "*data* の値が2より少ない場合 :exc:`StatisticsError` を送出します。"
 
 #: ../../library/statistics.rst:539
 msgid ""
 "If you have already calculated the mean of your data, you can pass it as the "
 "optional second argument *xbar* to avoid recalculation:"
 msgstr ""
+"既にデータの平均値を計算している場合、それを第2引数 *xbar* に渡して再計算を避"
+"けることが出来ます:"
 
 #: ../../library/statistics.rst:548
 msgid ""
@@ -656,10 +736,12 @@ msgid ""
 "mean as *xbar*.  Using arbitrary values for *xbar* can lead to invalid or "
 "impossible results."
 msgstr ""
+"この関数は引数として渡した *xbar* が実際の平均値かどうかチェックしません。任"
+"意の値を *xbar* に渡すと無効な結果やありえない結果が返ることがあります。"
 
 #: ../../library/statistics.rst:552
 msgid "Decimal and Fraction values are supported:"
-msgstr ""
+msgstr "Decimal と Fraction がサポートされています:"
 
 #: ../../library/statistics.rst:566
 msgid ""
@@ -668,6 +750,9 @@ msgid ""
 "representative (e.g. independent and identically distributed), the result "
 "should be an unbiased estimate of the true population variance."
 msgstr ""
+"Bessel 補正済みの標本分散 s²、すなわち自由度 N-1 の分散です。与えられたデータ"
+"点が代表的 (たとえば独立で均等に分布) な場合、戻り値は母分散の不偏推定量にな"
+"ります。"
 
 #: ../../library/statistics.rst:571
 msgid ""
@@ -675,6 +760,8 @@ msgid ""
 "func:`pvariance` function as the *mu* parameter to get the variance of a "
 "sample."
 msgstr ""
+"何らかの方法で真の母平均 μ を知っている場合、それを  :func:`pvariance`  の引"
+"数 *mu* に渡して標本の分散を計算することが出来ます。"
 
 #: ../../library/statistics.rst:577
 msgid ""
@@ -772,7 +859,7 @@ msgstr ""
 
 #: ../../library/statistics.rst:684
 msgid "*y = slope \\* x + intercept + noise*"
-msgstr "*y = slope \\* x + intercept + noise*"
+msgstr ""
 
 #: ../../library/statistics.rst:686
 msgid ""
@@ -807,11 +894,11 @@ msgstr ""
 
 #: ../../library/statistics.rst:716
 msgid "*y = slope \\* x + noise*"
-msgstr "*y = slope \\* x + noise*"
+msgstr ""
 
 #: ../../library/statistics.rst:720
 msgid "Added support for *proportional*."
-msgstr "新增 *proportional* 的支援。"
+msgstr ""
 
 #: ../../library/statistics.rst:724
 msgid "Exceptions"
@@ -819,15 +906,15 @@ msgstr "例外"
 
 #: ../../library/statistics.rst:726
 msgid "A single exception is defined:"
-msgstr ""
+msgstr "例外が1つ定義されています:"
 
 #: ../../library/statistics.rst:730
 msgid "Subclass of :exc:`ValueError` for statistics-related exceptions."
-msgstr ""
+msgstr "統計関係の例外。:exc:`ValueError` の派生クラス。"
 
 #: ../../library/statistics.rst:734
 msgid ":class:`NormalDist` objects"
-msgstr ":class:`NormalDist` 物件"
+msgstr ":class:`NormalDist` オブジェクト"
 
 #: ../../library/statistics.rst:736
 msgid ""
@@ -853,7 +940,7 @@ msgstr ""
 
 #: ../../library/statistics.rst:753
 msgid "If *sigma* is negative, raises :exc:`StatisticsError`."
-msgstr ""
+msgstr "*sigma* が負の数の場合 :exc:`StatisticsError` を送出します。"
 
 #: ../../library/statistics.rst:757
 msgid ""
@@ -925,9 +1012,9 @@ msgstr ""
 #: ../../library/statistics.rst:813
 msgid ""
 "The relative likelihood is computed as the probability of a sample occurring "
-"in a narrow range divided by the width of the range (hence the word \"density"
-"\").  Since the likelihood is relative to other points, its value can be "
-"greater than ``1.0``."
+"in a narrow range divided by the width of the range (hence the word "
+"\"density\").  Since the likelihood is relative to other points, its value "
+"can be greater than ``1.0``."
 msgstr ""
 
 #: ../../library/statistics.rst:820
@@ -1006,7 +1093,7 @@ msgstr ""
 
 #: ../../library/statistics.rst:897
 msgid ":class:`NormalDist` Examples and Recipes"
-msgstr ""
+msgstr ":class:`NormalDist` の例とレシピ"
 
 #: ../../library/statistics.rst:899
 msgid ":class:`NormalDist` readily solves classic probability problems."

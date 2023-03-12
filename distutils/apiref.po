@@ -1,31 +1,37 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Leon H., 2017
+# mollinaca, 2021
+# tomo, 2021
+# Takeshi Nakazato, 2021
+# 菊池 健志, 2023
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-15 20:43+0000\n"
-"PO-Revision-Date: 2018-05-23 14:33+0000\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-17 14:14+0000\n"
+"PO-Revision-Date: 2021-06-28 00:51+0000\n"
+"Last-Translator: 菊池 健志, 2023\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../distutils/apiref.rst:5
 msgid "API Reference"
-msgstr "API 參照"
+msgstr "API リファレンス"
 
 #: ../../distutils/apiref.rst:11
 msgid "`New and changed setup.py arguments in setuptools`_"
-msgstr ""
+msgstr "`setuptools で新規追加または変更された setup.py の引数`_"
 
 #: ../../distutils/apiref.rst:10
 msgid ""
@@ -33,6 +39,9 @@ msgid ""
 "and other APIs, makes the API consistent across different Python versions, "
 "and is hence recommended over using ``distutils`` directly."
 msgstr ""
+"``setuptools`` プロジェクトは ``setup`` 関数や他の API に新しい機能を追加した"
+"り、異なる Python バージョンの間で API に一貫性を持たせているため、 "
+"``distutils`` の代替として推奨されています。"
 
 #: ../../distutils/_setuptools_disclaimer.rst:3
 msgid ""
@@ -40,10 +49,13 @@ msgid ""
 "documentation at https://setuptools.readthedocs.io/en/latest/setuptools.html "
 "independently covers all of the relevant information currently included here."
 msgstr ""
+"このドキュメントは、 https://setuptools.readthedocs.io/en/latest/setuptools."
+"html にある ``setuptools`` のドキュメントが現時点でここにある関連情報を全て網"
+"羅するまで、単独でここに載せておかれます。"
 
 #: ../../distutils/apiref.rst:19
 msgid ":mod:`distutils.core` --- Core Distutils functionality"
-msgstr ""
+msgstr ":mod:`distutils.core` --- Distutils のコア機能"
 
 #: ../../distutils/apiref.rst:25
 msgid ""
@@ -52,31 +64,36 @@ msgid ""
 "called from the setup script). Indirectly provides the  :class:`distutils."
 "dist.Distribution` and :class:`distutils.cmd.Command` class."
 msgstr ""
+"Distutilsを使うためにインストールする必要がある唯一のモジュールが :mod:"
+"`distutils.core` モジュールです。 :func:`setup` 関数 (セットアップスクリプト"
+"から呼び出されます)を提供します。間接的に :class:`distutils.dist."
+"Distribution` クラスと :class:`distutils.cmd.Command` クラスを提供します。"
 
 #: ../../distutils/apiref.rst:33
 msgid ""
 "The basic do-everything function that does most everything you could ever "
 "ask for from a Distutils method."
 msgstr ""
+"全てを実行する基本的な関数で、Distutilsでできるほとんどのことを実行します。"
 
 #: ../../distutils/apiref.rst:36
 msgid ""
 "The setup function takes a large number of arguments. These are laid out in "
 "the following table."
-msgstr ""
+msgstr "setup関数はたくさんの引数をとります。以下のテーブルにまとめます。"
 
 #: ../../distutils/apiref.rst:42 ../../distutils/apiref.rst:185
 msgid "argument name"
-msgstr ""
+msgstr "引数名"
 
 #: ../../distutils/apiref.rst:42 ../../distutils/apiref.rst:143
 #: ../../distutils/apiref.rst:185
 msgid "value"
-msgstr ""
+msgstr "value"
 
 #: ../../distutils/apiref.rst:42 ../../distutils/apiref.rst:185
 msgid "type"
-msgstr ""
+msgstr "type"
 
 #: ../../distutils/apiref.rst:44 ../../distutils/apiref.rst:187
 msgid "*name*"
@@ -84,7 +101,7 @@ msgstr "*name*"
 
 #: ../../distutils/apiref.rst:44
 msgid "The name of the package"
-msgstr ""
+msgstr "パッケージの名前"
 
 #: ../../distutils/apiref.rst:44 ../../distutils/apiref.rst:46
 #: ../../distutils/apiref.rst:50 ../../distutils/apiref.rst:53
@@ -94,7 +111,7 @@ msgstr ""
 #: ../../distutils/apiref.rst:96 ../../distutils/apiref.rst:106
 #: ../../distutils/apiref.rst:187 ../../distutils/apiref.rst:278
 msgid "a string"
-msgstr ""
+msgstr "文字列"
 
 #: ../../distutils/apiref.rst:46
 msgid "*version*"
@@ -102,7 +119,7 @@ msgstr "*version*"
 
 #: ../../distutils/apiref.rst:46
 msgid "The version number of the package; see :mod:`distutils.version`"
-msgstr ""
+msgstr "パッケージのバージョン番号。 :mod:`distutils.version` を参照"
 
 #: ../../distutils/apiref.rst:50
 msgid "*description*"
@@ -110,7 +127,7 @@ msgstr "*description*"
 
 #: ../../distutils/apiref.rst:50
 msgid "A single line describing the package"
-msgstr ""
+msgstr "1行で書いたパッケージ解説"
 
 #: ../../distutils/apiref.rst:53
 msgid "*long_description*"
@@ -118,7 +135,7 @@ msgstr "*long_description*"
 
 #: ../../distutils/apiref.rst:53
 msgid "Longer description of the package"
-msgstr ""
+msgstr "パッケージの長い解説"
 
 #: ../../distutils/apiref.rst:56
 msgid "*author*"
@@ -126,7 +143,7 @@ msgstr "*author*"
 
 #: ../../distutils/apiref.rst:56
 msgid "The name of the package author"
-msgstr ""
+msgstr "パッケージ作者の名前"
 
 #: ../../distutils/apiref.rst:58
 msgid "*author_email*"
@@ -134,7 +151,7 @@ msgstr "*author_email*"
 
 #: ../../distutils/apiref.rst:58
 msgid "The email address of the package author"
-msgstr ""
+msgstr "パッケージ作者のemailアドレス"
 
 #: ../../distutils/apiref.rst:61
 msgid "*maintainer*"
@@ -146,6 +163,8 @@ msgid ""
 "if the maintainer is provided, distutils will use it as the author in :file:"
 "`PKG-INFO`"
 msgstr ""
+"作者と違う場合の、現在のメンテナーの名前です。 maintainer 引数が与えられた場"
+"合、 distutils は :file:`PKG-INFO` で作者として使用します"
 
 #: ../../distutils/apiref.rst:68
 msgid "*maintainer_email*"
@@ -154,7 +173,7 @@ msgstr "*maintainer_email*"
 #: ../../distutils/apiref.rst:68
 msgid ""
 "The email address of the current maintainer, if different from the author"
-msgstr ""
+msgstr "現在のメンテナのemailアドレス(パッケージ作者と異なる場合)"
 
 #: ../../distutils/apiref.rst:72
 msgid "*url*"
@@ -162,7 +181,7 @@ msgstr "*url*"
 
 #: ../../distutils/apiref.rst:72
 msgid "A URL for the package (homepage)"
-msgstr ""
+msgstr "パッケージのURL(ホームページ)"
 
 #: ../../distutils/apiref.rst:75
 msgid "*download_url*"
@@ -170,7 +189,7 @@ msgstr "*download_url*"
 
 #: ../../distutils/apiref.rst:75
 msgid "A URL to download the package"
-msgstr ""
+msgstr "パッケージダウンロード用URL"
 
 #: ../../distutils/apiref.rst:77
 msgid "*packages*"
@@ -178,7 +197,7 @@ msgstr "*packages*"
 
 #: ../../distutils/apiref.rst:77
 msgid "A list of Python packages that distutils will manipulate"
-msgstr ""
+msgstr "distutilsが操作するPythonパッケージのリスト"
 
 #: ../../distutils/apiref.rst:77 ../../distutils/apiref.rst:80
 #: ../../distutils/apiref.rst:83 ../../distutils/apiref.rst:100
@@ -189,7 +208,7 @@ msgstr ""
 #: ../../distutils/apiref.rst:258 ../../distutils/apiref.rst:267
 #: ../../distutils/apiref.rst:275
 msgid "a list of strings"
-msgstr ""
+msgstr "文字列のリスト"
 
 #: ../../distutils/apiref.rst:80
 msgid "*py_modules*"
@@ -197,7 +216,7 @@ msgstr "*py_modules*"
 
 #: ../../distutils/apiref.rst:80
 msgid "A list of Python modules that distutils will manipulate"
-msgstr ""
+msgstr "distutilsが操作するPythonモジュールのリスト"
 
 #: ../../distutils/apiref.rst:83
 msgid "*scripts*"
@@ -205,7 +224,7 @@ msgstr "*scripts*"
 
 #: ../../distutils/apiref.rst:83
 msgid "A list of standalone script files to be built and installed"
-msgstr ""
+msgstr "ビルドおよびインストールする単体スクリプトファイルのリスト"
 
 #: ../../distutils/apiref.rst:87
 msgid "*ext_modules*"
@@ -213,11 +232,11 @@ msgstr "*ext_modules*"
 
 #: ../../distutils/apiref.rst:87
 msgid "A list of Python extensions to be built"
-msgstr ""
+msgstr "ビルドする拡張モジュール"
 
 #: ../../distutils/apiref.rst:87
 msgid "a list of instances of :class:`distutils.core.Extension`"
-msgstr ""
+msgstr ":class:`distutils.core.Extension` のインスタンスのリスト"
 
 #: ../../distutils/apiref.rst:90
 msgid "*classifiers*"
@@ -225,13 +244,15 @@ msgstr "*classifiers*"
 
 #: ../../distutils/apiref.rst:90
 msgid "A list of categories for the package"
-msgstr ""
+msgstr "パッケージのカテゴリのリスト"
 
 #: ../../distutils/apiref.rst:90
 msgid ""
 "a list of strings; valid classifiers are listed on `PyPI <https://pypi.org/"
 "classifiers>`_."
 msgstr ""
+"文字列のリスト。有効な classifier のリストは `PyPI <https://pypi.org/"
+"classifiers>`_ を参照。"
 
 #: ../../distutils/apiref.rst:93
 msgid "*distclass*"
@@ -239,11 +260,11 @@ msgstr "*distclass*"
 
 #: ../../distutils/apiref.rst:93
 msgid "the :class:`Distribution` class to use"
-msgstr ""
+msgstr "使用する :class:`Distribution` クラス"
 
 #: ../../distutils/apiref.rst:93
 msgid "a subclass of :class:`distutils.core.Distribution`"
-msgstr ""
+msgstr ":class:`distutils.core.Distribution` のサブクラス"
 
 #: ../../distutils/apiref.rst:96
 msgid "*script_name*"
@@ -251,7 +272,7 @@ msgstr "*script_name*"
 
 #: ../../distutils/apiref.rst:96
 msgid "The name of the setup.py script - defaults to ``sys.argv[0]``"
-msgstr ""
+msgstr "setup.pyスクリプトの名前 - デフォルトでは ``sys.argv[0]``"
 
 #: ../../distutils/apiref.rst:100
 msgid "*script_args*"
@@ -259,7 +280,7 @@ msgstr "*script_args*"
 
 #: ../../distutils/apiref.rst:100
 msgid "Arguments to supply to the setup script"
-msgstr ""
+msgstr "setup スクリプトの引数"
 
 #: ../../distutils/apiref.rst:103
 msgid "*options*"
@@ -267,12 +288,12 @@ msgstr "*options*"
 
 #: ../../distutils/apiref.rst:103
 msgid "default options for the setup script"
-msgstr ""
+msgstr "セットアップスクリプトのデフォルト引数"
 
 #: ../../distutils/apiref.rst:103 ../../distutils/apiref.rst:113
 #: ../../distutils/apiref.rst:119
 msgid "a dictionary"
-msgstr ""
+msgstr "辞書"
 
 #: ../../distutils/apiref.rst:106
 msgid "*license*"
@@ -280,7 +301,7 @@ msgstr "*license*"
 
 #: ../../distutils/apiref.rst:106
 msgid "The license for the package"
-msgstr ""
+msgstr "パッケージのライセンス"
 
 #: ../../distutils/apiref.rst:108
 msgid "*keywords*"
@@ -288,11 +309,11 @@ msgstr "*keywords*"
 
 #: ../../distutils/apiref.rst:108
 msgid "Descriptive meta-data, see :pep:`314`"
-msgstr ""
+msgstr "説明用メタデータ。 :pep:`314` を参照してください"
 
 #: ../../distutils/apiref.rst:108 ../../distutils/apiref.rst:111
 msgid "a list of strings or a comma-separated string"
-msgstr ""
+msgstr "文字列のリスト、またはカンマ区切り文字列"
 
 #: ../../distutils/apiref.rst:111
 msgid "*platforms*"
@@ -304,7 +325,7 @@ msgstr "*cmdclass*"
 
 #: ../../distutils/apiref.rst:113
 msgid "A mapping of command names to :class:`Command` subclasses"
-msgstr ""
+msgstr "コマンド名から :class:`Command` サブクラスへのマッピング"
 
 #: ../../distutils/apiref.rst:116
 msgid "*data_files*"
@@ -312,11 +333,11 @@ msgstr "*data_files*"
 
 #: ../../distutils/apiref.rst:116
 msgid "A list of data files to install"
-msgstr ""
+msgstr "インストールするデータファイルのリスト"
 
 #: ../../distutils/apiref.rst:116
 msgid "a list"
-msgstr ""
+msgstr "リスト"
 
 #: ../../distutils/apiref.rst:119
 msgid "*package_dir*"
@@ -324,7 +345,7 @@ msgstr "*package_dir*"
 
 #: ../../distutils/apiref.rst:119
 msgid "A mapping of package to directory names"
-msgstr ""
+msgstr "パッケージからディレクトリ名へのマッピング"
 
 #: ../../distutils/apiref.rst:127
 msgid ""
@@ -334,6 +355,11 @@ msgid ""
 "keyword args from *script* to :func:`setup`), or  the contents of the config "
 "files or command-line."
 msgstr ""
+"制御された環境でセットアップスクリプトを実行し、いろいろなものを操作する :"
+"class:`distutils.dist.Distribution` クラスのインスタンスを返します。これは"
+"ディストリビューションのメタデータ(キーワード引数 *script* として関数 :func:"
+"`setup` に渡される)を参照したり、設定ファイルやコマンドラインの内容を調べる時"
+"に便利です。"
 
 #: ../../distutils/apiref.rst:133
 msgid ""
@@ -342,16 +368,22 @@ msgid ""
 "*script_args* is a list of strings; if supplied, ``sys.argv[1:]`` will be "
 "replaced by *script_args* for the duration  of the call."
 msgstr ""
+"*script* は :func:`exec` で読み込まれるファイルです。 ``sys.argv[0]`` は、呼"
+"び出しのために *script_name* と置換されます。  *script_args* は文字列のリスト"
+"です。もし提供されていた場合、 ``sys.argv[1:]`` は、呼び出しのために "
+"*script_args* で置換されます。"
 
 #: ../../distutils/apiref.rst:138
 msgid ""
 "*stop_after* tells :func:`setup` when to stop processing; possible  values:"
 msgstr ""
+"*stop_after* はいつ動作を停止するか関数 :func:`setup` に伝えます。とりうる値"
+"は:"
 
 #: ../../distutils/apiref.rst:143 ../../distutils/apiref.rst:562
 #: ../../distutils/apiref.rst:1606
 msgid "description"
-msgstr "描述"
+msgstr "description"
 
 #: ../../distutils/apiref.rst:145
 msgid "*init*"
@@ -362,6 +394,8 @@ msgid ""
 "Stop after the :class:`Distribution` instance has been created  and "
 "populated with the keyword arguments to :func:`setup`"
 msgstr ""
+":class:`Distribution` インスタンスを作成し、キーワード引数を :func:`setup` に"
+"渡したあとに停止する。"
 
 #: ../../distutils/apiref.rst:149
 msgid "*config*"
@@ -372,6 +406,8 @@ msgid ""
 "Stop after config files have been parsed (and their data stored in the :"
 "class:`Distribution` instance)"
 msgstr ""
+"設定ファイルをパーズしたあと停止する(そしてそのデータは :class:"
+"`Distribution` インスタンスに保存される)。"
 
 #: ../../distutils/apiref.rst:153
 msgid "*commandline*"
@@ -382,6 +418,8 @@ msgid ""
 "Stop after the command-line (``sys.argv[1:]`` or  *script_args*) have been "
 "parsed (and the data stored in the :class:`Distribution` instance.)"
 msgstr ""
+"コマンドライン (``sys.argv[1:]`` または *script_args*) がパーズされたあとに停"
+"止する (そしてそのデータは :class:`Distribution` インスタンスに保存される)。"
 
 #: ../../distutils/apiref.rst:158
 msgid "*run*"
@@ -392,42 +430,54 @@ msgid ""
 "Stop after all commands have been run (the same as  if :func:`setup` had "
 "been called in the usual way). This is the default value."
 msgstr ""
+"全てのコマンドを実行したあとに停止する(関数 :func:`setup` を通常の方法で呼び"
+"出した場合と同じ)。デフォルト値。"
 
 #: ../../distutils/apiref.rst:164
 msgid ""
 "In addition, the :mod:`distutils.core` module exposed a number of  classes "
 "that live elsewhere."
 msgstr ""
+"これに加えて、 :mod:`distutils.core` モジュールは他のモジュールにあるいくつか"
+"のクラスを公開しています。"
 
 #: ../../distutils/apiref.rst:167
 msgid ":class:`~distutils.extension.Extension` from :mod:`distutils.extension`"
 msgstr ""
+":mod:`distutils.extension` から :class:`~distutils.extension.Extension`"
 
 #: ../../distutils/apiref.rst:169
 msgid ":class:`~distutils.cmd.Command` from :mod:`distutils.cmd`"
-msgstr ""
+msgstr ":mod:`distutils.cmd` から :class:`~distutils.cmd.Command`"
 
 #: ../../distutils/apiref.rst:171
 msgid ":class:`~distutils.dist.Distribution` from :mod:`distutils.dist`"
-msgstr ""
+msgstr ":mod:`distutils.dist` から :class:`~distutils.dist.Distribution`"
 
 #: ../../distutils/apiref.rst:173
 msgid ""
 "A short description of each of these follows, but see the relevant module "
 "for the full reference."
 msgstr ""
+"それぞれの簡単な説明を以下に記します。完全な説明についてはそれぞれのモジュー"
+"ルをごらんください。"
 
 #: ../../distutils/apiref.rst:179
 msgid ""
 "The Extension class describes a single C or C++ extension module in a setup "
 "script. It accepts the following keyword arguments in its constructor:"
 msgstr ""
+"Extension クラスは、セットアップスクリプト中で C または C++ 拡張モジュールを"
+"表します。\n"
+"コンストラクタで以下のキーワード引数をとります:"
 
 #: ../../distutils/apiref.rst:187
 msgid ""
 "the full name of the extension, including any packages --- ie. *not* a "
 "filename or pathname, but Python dotted name"
 msgstr ""
+"拡張のフルネーム(パッケージを含む) --- ファイル名やパス名では *なく* 、Python"
+"のピリオド区切りの名前"
 
 #: ../../distutils/apiref.rst:193
 msgid "*sources*"
@@ -441,6 +491,11 @@ msgid ""
 "is recognized by the :command:`build_ext` command as source for a Python "
 "extension."
 msgstr ""
+"ソースファイル名のリスト。配布物ルートディレクトリ (setupスクリプトのある場"
+"所) からの相対パス、プラットフォーム独立のため Unix 形式(スラッシュで区切る)"
+"で記述します。ソースファイルは C, C++, SWIG (.i)、特定プラットフォーム用のリ"
+"ソースファイル、その他 :command:`build_ext` コマンドがソースファイルだと認識"
+"するどの形式でもありえます。"
 
 #: ../../distutils/apiref.rst:207
 msgid "*include_dirs*"
@@ -451,6 +506,8 @@ msgid ""
 "list of directories to search for C/C++ header files (in Unix form for "
 "portability)"
 msgstr ""
+"C/C++ヘッダファイルを検索するディレクトリのリスト(プラットフォーム独立のため "
+"Unix 形式で記述する)"
 
 #: ../../distutils/apiref.rst:211
 msgid "*define_macros*"
@@ -463,10 +520,15 @@ msgid ""
 "define it without a particular value (equivalent of ``#define FOO`` in "
 "source or :option:`!-DFOO` on Unix C compiler command line)"
 msgstr ""
+"定義するマクロのリスト; それぞれのマクロは2要素のタプル ``(name, value)`` で"
+"定義されます。 *value* には定義しようとしている文字列、または内容なしで定義す"
+"る場合は ``None`` (ソースコード中で ``#define FOO`` と書く、または Unix Cコン"
+"パイラのコマンドラインで :option:`!-DFOO` を指定するのと等価です) を指定しま"
+"す"
 
 #: ../../distutils/apiref.rst:211
 msgid "a list of tuples"
-msgstr ""
+msgstr "タプルのリスト"
 
 #: ../../distutils/apiref.rst:223
 msgid "*undef_macros*"
@@ -474,7 +536,7 @@ msgstr "*undef_macros*"
 
 #: ../../distutils/apiref.rst:223
 msgid "list of macros to undefine explicitly"
-msgstr ""
+msgstr "定義を消すマクロのリスト"
 
 #: ../../distutils/apiref.rst:226
 msgid "*library_dirs*"
@@ -482,7 +544,7 @@ msgstr "*library_dirs*"
 
 #: ../../distutils/apiref.rst:226
 msgid "list of directories to search for C/C++ libraries at link time"
-msgstr ""
+msgstr "リンク時にC/C++ライブラリを検索するディレクトリのリスト"
 
 #: ../../distutils/apiref.rst:230
 msgid "*libraries*"
@@ -490,7 +552,7 @@ msgstr "*libraries*"
 
 #: ../../distutils/apiref.rst:230
 msgid "list of library names (not filenames or paths) to link against"
-msgstr ""
+msgstr "リンクするライブラリ名のリスト (ファイル名やパスではない)"
 
 #: ../../distutils/apiref.rst:234
 msgid "*runtime_library_dirs*"
@@ -501,6 +563,8 @@ msgid ""
 "list of directories to search for C/C++ libraries at run time (for shared "
 "extensions, this is when the extension is loaded)"
 msgstr ""
+"実行時(shared extensionでは、拡張が読み込まれる時)に C/C++ライブラリを探索す"
+"るディレクトリのリスト"
 
 #: ../../distutils/apiref.rst:240
 msgid "*extra_objects*"
@@ -512,6 +576,8 @@ msgid ""
 "static library that must be explicitly specified, binary resource files, "
 "etc.)"
 msgstr ""
+"追加でリンクするファイル('sources'に対応するコードが含まれていないファイル、"
+"バイナリ形式のリソースファイルなど)のリスト"
 
 #: ../../distutils/apiref.rst:247
 msgid "*extra_compile_args*"
@@ -524,6 +590,10 @@ msgid ""
 "line makes sense, this is typically a list of command-line arguments, but "
 "for other platforms it could be anything."
 msgstr ""
+"'sources'のソースをコンパイルする時に追加するプラットフォーム特有またはコンパ"
+"イラ特有の情報コマンドラインを利用できるプラットホームとコンパイラでは、これ"
+"は通常コマンドライン引数のリストですが、他のプラットホームでも、それは何かに"
+"使えます。"
 
 #: ../../distutils/apiref.rst:258
 msgid "*extra_link_args*"
@@ -535,6 +605,9 @@ msgid ""
 "object files together to create the extension (or to create a new static "
 "Python interpreter). Similar interpretation as for 'extra_compile_args'."
 msgstr ""
+"オブジェクトファイルをリンクして拡張(または新しいPythonインタプリタ)を作る時"
+"に追加するプラットフォーム特有またはコンパイラ特有の情報 "
+"'extra_compile_args'に似た実装です。"
 
 #: ../../distutils/apiref.rst:267
 msgid "*export_symbols*"
@@ -546,6 +619,9 @@ msgid ""
 "platforms, and not generally necessary for Python extensions, which "
 "typically export exactly one symbol: ``init`` + extension_name."
 msgstr ""
+"shared extensionからエクスポートされるシンボルのリスト。全てのプラットフォー"
+"ムでは使われず、 Python拡張(典型的には ``init`` + extension_name という1つの"
+"シンボルだけエクスポートする)に一般的に必要なものでもない。"
 
 #: ../../distutils/apiref.rst:275
 msgid "*depends*"
@@ -553,7 +629,7 @@ msgstr "*depends*"
 
 #: ../../distutils/apiref.rst:275
 msgid "list of files that the extension depends on"
-msgstr ""
+msgstr "拡張が依存するファイルのリスト"
 
 #: ../../distutils/apiref.rst:278
 msgid "*language*"
@@ -564,6 +640,8 @@ msgid ""
 "extension language (i.e. ``'c'``, ``'c++'``, ``'objc'``). Will be detected "
 "from the source extensions if not provided."
 msgstr ""
+"拡張の言語 (例: ``'c'``, ``'c++'``, ``'objc'``)。指定しなければソースの拡張子"
+"で検出される。"
 
 #: ../../distutils/apiref.rst:284
 msgid "*optional*"
@@ -574,28 +652,37 @@ msgid ""
 "specifies that a build failure in the extension should not abort the build "
 "process, but simply skip the extension."
 msgstr ""
+"拡張で起きたビルド失敗によってビルドプロセスを中断せず、単にその拡張を無視し"
+"て処理を進めるように指定します。"
 
 #: ../../distutils/apiref.rst:284
 msgid "a boolean"
-msgstr ""
+msgstr "ブール値"
 
 #: ../../distutils/apiref.rst:292
 msgid ""
 "On Unix, C extensions are no longer linked to libpython except on Android "
 "and Cygwin."
 msgstr ""
+"Android と Cygwin を除き、 Unix では C 拡張モジュールは libpython とリンクさ"
+"れなくなりました。"
 
 #: ../../distutils/apiref.rst:298
 msgid ""
 "A :class:`Distribution` describes how to build, install and package up a "
 "Python software package."
 msgstr ""
+":class:`Distribution` はPythonソフトウェアパッケージをどのようにビルド、イン"
+"ストール、パッケージするかを定義する。"
 
 #: ../../distutils/apiref.rst:301
 msgid ""
 "See the :func:`setup` function for a list of keyword arguments accepted  by "
 "the Distribution constructor. :func:`setup` creates a Distribution instance."
 msgstr ""
+":class:`Distribution` のコンストラクタが取りうるキーワード引数のリストに関し"
+"ては、 :func:`setup` 関数を見てください。 :func:`setup` は :class:"
+"`Distribution` のインスタンスを作ります。"
 
 #: ../../distutils/apiref.rst:304
 msgid ""
@@ -603,16 +690,21 @@ msgid ""
 "``keywords`` and ``platforms`` fields are not specified as a list or a "
 "string."
 msgstr ""
+"``classifiers``, ``keywords``, ``platforms`` のフィールドがリストもしくは文字"
+"列で指定されていなかった場合、 :class:`~distutils.core.Distribution` が警告を"
+"出すようになりました。"
 
 #: ../../distutils/apiref.rst:311
 msgid ""
 "A :class:`Command` class (or rather, an instance of one of its subclasses) "
 "implement a single distutils command."
 msgstr ""
+":class:`Command` クラス(そのサブクラスのインスタンス)はdistutilsのあるコマン"
+"ドを実装します。"
 
 #: ../../distutils/apiref.rst:316
 msgid ":mod:`distutils.ccompiler` --- CCompiler base class"
-msgstr ""
+msgstr ":mod:`distutils.ccompiler` --- CCompiler ベースクラス"
 
 #: ../../distutils/apiref.rst:322
 msgid ""
@@ -622,10 +714,14 @@ msgid ""
 "options for the compiler --- macro definitions, include directories,  link "
 "path, libraries and the like."
 msgstr ""
+"このモジュールは :class:`CCompiler` クラスの抽象ベースクラスを提供します。 :"
+"class:`CCompiler` のインスタンスはプロジェクトにおける全てのコンパイルおよび"
+"リンクに使われます。コンパイラのオプションを設定するためのメソッドが提供され"
+"ます --- マクロ定義、includeディレクトリ、リンクパス、ライブラリなど。"
 
 #: ../../distutils/apiref.rst:328
 msgid "This module provides the following functions."
-msgstr ""
+msgstr "このモジュールは以下の関数を提供します。"
 
 #: ../../distutils/apiref.rst:333
 msgid ""
@@ -635,6 +731,11 @@ msgid ""
 "command-line options suitable for use with some compiler (depending on the "
 "two format strings passed in)."
 msgstr ""
+"ライブラリを探索するディレクトリ、特定のライブラリとのリンクをするためのリン"
+"カオプションを生成します。 *libraries* と *library_dirs* はそれぞれライブラリ"
+"名(ファイル名ではありません!)のリストと、探索ディレクトリのリストです。 "
+"compilerで利用できるコマンドラインオプションのリスト(指定されたフォーマット文"
+"字列に依存します)を返します。"
 
 #: ../../distutils/apiref.rst:342
 msgid ""
@@ -647,10 +748,18 @@ msgid ""
 "file search path (:option:`!-I`). Returns a list of command-line options "
 "suitable for either Unix compilers or Visual C++."
 msgstr ""
+"Cプリプロセッサオプション(:option:`!-D`, :option:`!-U`, :option:`!-I`)を生成"
+"します。これらは少なくとも2つのコンパイラで利用可能です。典型的な Unix のコン"
+"パイラと、VisualC++です。 *macros* は1または2要素のタプルで ``(name,)`` は "
+"*name* マクロの削除 (:option:`!-U`)を意味し、 ``(name, value)`` は *name* マ"
+"クロを *value* として定義(:option:`!-D`)します。 *include_dirs* はディレクト"
+"リ名のリストで、ヘッダファイルのサーチパスに追加されます(:option:`!-I`)。 "
+"Unix のコンパイラと、Visual C++で利用できるコマンドラインオプションのリストを"
+"返します。"
 
 #: ../../distutils/apiref.rst:354
 msgid "Determine the default compiler to use for the given platform."
-msgstr ""
+msgstr "指定されたプラットフォームのデフォルトコンパイラを返します。"
 
 #: ../../distutils/apiref.rst:356
 msgid ""
@@ -658,12 +767,16 @@ msgid ""
 "returned by ``os.name``) and *platform* the common value returned by ``sys."
 "platform`` for the platform in question."
 msgstr ""
+"問い合わせの *osname* はPython標準のOS名(``os.name`` で返されるもの)のひとつ"
+"であるべきで、 *platform* は ``sys.platform`` で返される共通の値です。"
 
 #: ../../distutils/apiref.rst:360
 msgid ""
 "The default values are ``os.name`` and ``sys.platform`` in case the "
 "parameters are not given."
 msgstr ""
+"パラメータが指定されていない場合のデフォルト値は ``os.name`` と ``sys."
+"platform`` です。"
 
 #: ../../distutils/apiref.rst:366
 msgid ""
@@ -677,12 +790,24 @@ msgid ""
 "Windows, and a Microsoft compiler object under Unix---if you supply a value "
 "for *compiler*, *plat* is ignored."
 msgstr ""
+"指定されたプラットフォーム/コンパイラの組み合わせ向けに、 CCompilerサブクラス"
+"のインスタンスを生成するファクトリ関数です。 *plat* のデフォルト値は ``os."
+"name`` (例: ``'posix'``, ``'nt'``), *compiler*)、 *compiler* のデフォルト値は"
+"プラトフォームのデフォルトコンパイラです。現在は ``'posix'`` と ``'nt'`` だけ"
+"がサポートされています、デフォルトのコンパイラは \"traditional Unix "
+"interface\" (:class:`UnixCCompiler` クラス) と、 Visual C++ (:class:"
+"`MSVCCompiler` クラス) です。 WindowsでUnixコンパイラオブジェクトを要求するこ"
+"とも、UnixでMicrosoft コンパイラオブジェクトを要求することも可能です。 "
+"*compiler* 引数を与えると *plat* は無視されます。"
 
 #: ../../distutils/apiref.rst:382
 msgid ""
 "Print list of available compilers (used by the :option:`!--help-compiler` "
 "options to :command:`build`, :command:`build_ext`, :command:`build_clib`)."
 msgstr ""
+"利用可能なコンパイラのリストを表示します (:command:`build`, :command:"
+"`build_ext`, :command:`build_clib` の、 :option:`!--help-compiler` オプション"
+"で使われます)。"
 
 #: ../../distutils/apiref.rst:388
 msgid ""
@@ -690,6 +815,9 @@ msgid ""
 "be implemented by real compiler classes.  The class also has  some utility "
 "methods used by several compiler classes."
 msgstr ""
+"抽象ベースクラス :class:`CCompiler` は実際のコンパイラクラスで実装される必要"
+"のあるインターフェースを定義しています。このクラスはコンパイラクラスで利用さ"
+"れるユーティリティメソッドも定義しています。"
 
 #: ../../distutils/apiref.rst:392
 msgid ""
@@ -701,6 +829,12 @@ msgid ""
 "individual files are treated, most of those attributes may be varied on a "
 "per-compilation or per-link basis."
 msgstr ""
+"コンパイラ抽象クラスの基本的な前提は、各インスタンスはあるプロジェクトをビル"
+"ドするときの全コンパイル/リンクで利用できるということです。そこで、コンパイル"
+"とリンクステップで共通する属性 --- インクルードディレクトリ、マクロ定義、リン"
+"クするライブラリなど --- はコンパイラインスタンスの属性になります。どのように"
+"各ファイルが扱われるかを変更できるように、ほとんどの属性はコンパイルごと、ま"
+"たはリンクごとに与えることができます。"
 
 #: ../../distutils/apiref.rst:400
 msgid ""
@@ -712,12 +846,21 @@ msgid ""
 "subclasses directly - use the :func:`distutils.CCompiler.new_compiler` "
 "factory function instead."
 msgstr ""
+"各サブクラスのコンストラクタは Compiler クラスのインスタンスを作ります。フラ"
+"グは *verbose* (冗長な出力を表示します)、 *dry_run* (実際にはそのステップを実"
+"行しません)、そして *force* (依存関係を無視して全て再ビルドします)です。これ"
+"らのフラグは全てデフォルト値が ``0`` (無効)になっています。 :class:"
+"`CCompiler` またはサブクラスを直接インスタンス化したくない場合には、かわり"
+"に :func:`distutils.CCompiler.new_compiler` ファクトリ関数を利用してくださ"
+"い。"
 
 #: ../../distutils/apiref.rst:407
 msgid ""
 "The following methods allow you to manually alter compiler options for  the "
 "instance of the Compiler class."
 msgstr ""
+"以下のメソッドで、Compilerクラスのインスタンスが使うコンパイラオプションを手"
+"動で変更できます。"
 
 #: ../../distutils/apiref.rst:413
 msgid ""
@@ -725,6 +868,9 @@ msgid ""
 "The compiler is instructed to search directories in the order in which they "
 "are supplied by successive calls to :meth:`add_include_dir`."
 msgstr ""
+"*dir* をヘッダファイル探索ディレクトリのリストに追加します。コンパイラは :"
+"meth:`add_include_dir` を呼び出した順にディレクトリを探索するよう指定されま"
+"す。"
 
 #: ../../distutils/apiref.rst:420
 msgid ""
@@ -734,6 +880,11 @@ msgid ""
 "`set_include_dirs`. This does not affect any list of standard include "
 "directories that the compiler may search by default."
 msgstr ""
+"探索されるディレクトリのリストを *dirs* (文字列のリスト)に設定します。先に実"
+"行された :meth:`add_include_dir` は上書きされます。後で実行する :meth:"
+"`add_include_dir` は :meth:`set_include_dirs` のリストにディレクトリを追加し"
+"ます。これはコンパイラがデフォルトで探索する標準インクルードディレクトリには"
+"影響しません。"
 
 #: ../../distutils/apiref.rst:429
 msgid ""
@@ -743,6 +894,10 @@ msgid ""
 "actual filename will be inferred by the linker, the compiler, or the "
 "compiler class (depending on the platform)."
 msgstr ""
+"*libname* をコンパイラオブジェクトによるリンク時に使われるライブラリのリスト"
+"に追加します。 *libname* はライブラリを含むファイル名ではなく、ライブラリその"
+"ものの名前です: 実際のファイル名はリンカ、コンパイラ、またはコンパイラクラス"
+"(プラットフォームに依存します)から推測されます。"
 
 #: ../../distutils/apiref.rst:435
 msgid ""
@@ -751,6 +906,9 @@ msgid ""
 "perfectly valid to duplicate library names; the linker will be instructed to "
 "link against libraries as many times as they are mentioned."
 msgstr ""
+"リンカは :meth:`add_library` と :meth:`set_libraries` で渡された順にライブラ"
+"リをリンクしようとします。ライブラリ名が重なることは問題ありません。リンカは"
+"指定された回数だけライブラリとリンクしようとします。"
 
 #: ../../distutils/apiref.rst:443
 msgid ""
@@ -758,6 +916,9 @@ msgid ""
 "compiler object to *libnames* (a list of strings).  This does not affect any "
 "standard system libraries that the linker may include by default."
 msgstr ""
+"コンパイラオブジェクトによるリンク時に使われるライブラリのリストを "
+"*libnames* (文字列のリスト)に設定します。これはリンカがデフォルトでリンクする"
+"標準のシステムライブラリには影響しません。"
 
 #: ../../distutils/apiref.rst:450
 msgid ""
@@ -766,6 +927,9 @@ msgid ""
 "be instructed to search for libraries in the order they are supplied to :"
 "meth:`add_library_dir` and/or :meth:`set_library_dirs`."
 msgstr ""
+":meth:`add_library` と :meth:`set_libraries` で指定されたライブラリを探索する"
+"ディレクトリのリストに *dir* を追加します。リンカは :meth:`add_library_dir` "
+"と :meth:`set_library_dirs` で指定された順にディレクトリを探索されます。"
 
 #: ../../distutils/apiref.rst:458
 msgid ""
@@ -773,12 +937,15 @@ msgid ""
 "This does not affect any standard library search path that the linker may "
 "search by default."
 msgstr ""
+"ライブラリを探索するディレクトリを *dirs* (文字列のリスト)に設定します。これ"
+"はリンカがデフォルトで探索する標準ライブラリ探索パスには影響しません。"
 
 #: ../../distutils/apiref.rst:465
 msgid ""
 "Add *dir* to the list of directories that will be searched for shared "
 "libraries at runtime."
 msgstr ""
+"実行時に共有ライブラリを探索するディレクトリのリストに *dir* を追加します。"
 
 #: ../../distutils/apiref.rst:471
 msgid ""
@@ -786,6 +953,9 @@ msgid ""
 "*dirs* (a list of strings).  This does not affect any standard search path "
 "that the runtime linker may search by default."
 msgstr ""
+"実行時に共有ライブラリを探索するディレクトリのリストを *dirs* (文字列のリス"
+"ト)に設定します。これはランタイムリンカがデフォルトで利用する標準探索パスには"
+"影響しません。"
 
 #: ../../distutils/apiref.rst:478
 msgid ""
@@ -794,6 +964,10 @@ msgid ""
 "supplied, then the macro will be defined without an explicit value and the "
 "exact outcome depends on the compiler used."
 msgstr ""
+"このコンパイラオブジェクトで実行される全てのコンパイルで利用されるプリプロ"
+"セッサのマクロ定義を行います。オプション引数 *value* は文字列でなければなりま"
+"せん; それが指定されない場合は、特定の値を持たないマクロが定義され、実際の値"
+"は使っているコンパイラに依存します。"
 
 #: ../../distutils/apiref.rst:488
 msgid ""
@@ -804,6 +978,12 @@ msgid ""
 "per-compilation basis (ie. in the call to :meth:`compile`), then that takes "
 "precedence."
 msgstr ""
+"このコンパイラオブジェクトで実行される全てのコンパイルで利用されるプリプロ"
+"セッサのマクロ定義を消します。同じマクロを :meth:`define_macro` で定義し、 :"
+"meth:`undefine_macro` で定義を削除した場合、後で呼び出されたものが優先される"
+"(複数の再定義と削除を含みます)。もしコンパイルごと(すなわち :meth:`compile` "
+"の呼び出しごと)にマクロが再定義/削除される場合も後で呼び出されたものが優先さ"
+"れます。"
 
 #: ../../distutils/apiref.rst:498
 msgid ""
@@ -811,6 +991,9 @@ msgid ""
 "named library files or the output of \"resource compilers\") to be included "
 "in every link driven by this compiler object."
 msgstr ""
+"このコンパイラオブジェクトによる全てのリンクで利用されるオブジェクトファイル"
+"(または類似のライブラリファイルや \"リソースコンパイラ\"の出力)のリストに "
+"*object* を追加します。"
 
 #: ../../distutils/apiref.rst:505
 msgid ""
@@ -818,12 +1001,17 @@ msgid ""
 "*objects*.  This does not affect any standard object files that the linker "
 "may include by default (such as system libraries)."
 msgstr ""
+"このコンパイラオブジェクトによる全てのリンクで利用されるオブジェクトファイル"
+"(または類似のもの)のリストを *objects* に設定します。これはリンカがデフォルト"
+"利用する標準オブジェクトファイル(システムライブラリなど)には影響しません。"
 
 #: ../../distutils/apiref.rst:509
 msgid ""
 "The following methods implement methods for autodetection of compiler  "
 "options, providing some functionality similar to GNU :program:`autoconf`."
 msgstr ""
+"以下のメソッドはコンパイラオプションの自動検出を実装しており、 GNU :program:"
+"`autoconf` に似たいくつかの機能を提供します。"
 
 #: ../../distutils/apiref.rst:515
 msgid ""
@@ -831,6 +1019,9 @@ msgid ""
 "attributes :attr:`language_map` (a dictionary), and  :attr:`language_order` "
 "(a list) to do the job."
 msgstr ""
+"与えられたファイルまたはファイルのリストの言語を検出します。インスタンス属"
+"性 :attr:`language_map` (辞書)と、 :attr:`language_order` (リスト)を仕事に使"
+"います。"
 
 #: ../../distutils/apiref.rst:522
 msgid ""
@@ -839,6 +1030,10 @@ msgid ""
 "debugging version (if that makes sense on the current platform).  Return "
 "``None`` if *lib* wasn't found in any of the specified directories."
 msgstr ""
+"指定されたディレクトリのリストから、スタティックまたは共有ライブラリファイル "
+"*lib* を探し、そのファイルのフルパスを返します。もし *debug* が真なら、(現在"
+"のプラットフォームで意味があれば)デバッグ版を探します。指定されたどのディレク"
+"トリでも *lib* が見つからなければ ``None`` を返します。"
 
 #: ../../distutils/apiref.rst:530
 msgid ""
@@ -847,24 +1042,32 @@ msgid ""
 "environment by providing additional include files and paths and libraries "
 "and paths."
 msgstr ""
+"*funcname* が現在のプラットフォームでサポートされているかどうかをブール値で返"
+"します。省略可能引数は追加のインクルードファイルやパス、ライブラリやパスを与"
+"えることでコンパイル環境を指定します。"
 
 #: ../../distutils/apiref.rst:538
 msgid ""
 "Return the compiler option to add *dir* to the list of directories searched "
 "for libraries."
 msgstr ""
+"*dir* をライブラリ探索ディレクトリに追加するコンパイラオプションを返します。"
 
 #: ../../distutils/apiref.rst:544
 msgid ""
 "Return the compiler option to add *lib* to the list of libraries linked into "
 "the shared library or executable."
 msgstr ""
+"共有ライブラリまたは実行ファイルにリンクされるライブラリ一覧に *lib* を追加す"
+"るコンパイラオプションを返します。"
 
 #: ../../distutils/apiref.rst:550
 msgid ""
 "Return the compiler option to add *dir* to the list of directories searched "
 "for runtime libraries."
 msgstr ""
+"ランタイムライブラリを検索するディレクトリのリストに *dir* を追加するコンパイ"
+"ラオプションを返します。"
 
 #: ../../distutils/apiref.rst:556
 msgid ""
@@ -873,18 +1076,21 @@ msgid ""
 "specified here depends on the compiler class (via the 'executables' class "
 "attribute), but most will have:"
 msgstr ""
+"コンパイルのいろいろなステージで実行される実行ファイル(とその引数)を定義しま"
+"す。コンパイラクラス(の 'executables' 属性)によって実行ファイルのセットは変わ"
+"る可能性がありますが、ほとんどは以下のものを持っています:"
 
 #: ../../distutils/apiref.rst:562
 msgid "attribute"
-msgstr ""
+msgstr "属性"
 
 #: ../../distutils/apiref.rst:564
 msgid "*compiler*"
-msgstr ""
+msgstr "*compiler*"
 
 #: ../../distutils/apiref.rst:564
 msgid "the C/C++ compiler"
-msgstr ""
+msgstr "C/C++ コンパイラ"
 
 #: ../../distutils/apiref.rst:566
 msgid "*linker_so*"
@@ -892,7 +1098,7 @@ msgstr "*linker_so*"
 
 #: ../../distutils/apiref.rst:566
 msgid "linker used to create shared objects and libraries"
-msgstr ""
+msgstr "シェアードオブジェクト、ライブラリを作るために使うリンカ"
 
 #: ../../distutils/apiref.rst:569
 msgid "*linker_exe*"
@@ -900,7 +1106,7 @@ msgstr "*linker_exe*"
 
 #: ../../distutils/apiref.rst:569
 msgid "linker used to create binary executables"
-msgstr ""
+msgstr "バイナリ実行可能ファイルを作るために使うリンカ"
 
 #: ../../distutils/apiref.rst:571
 msgid "*archiver*"
@@ -908,7 +1114,7 @@ msgstr "*archiver*"
 
 #: ../../distutils/apiref.rst:571
 msgid "static library creator"
-msgstr ""
+msgstr "静的ライブラリを作るアーカイバ"
 
 #: ../../distutils/apiref.rst:574
 msgid ""
@@ -918,16 +1124,23 @@ msgid ""
 "operate: words are delimited by spaces, but quotes and backslashes can "
 "override this.  See :func:`distutils.util.split_quoted`.)"
 msgstr ""
+"コマンドラインをもつプラットフォーム(Unix, DOS/Windows)では、それぞれの文字列"
+"は実行ファイル名と(省略可能な)引数リストに分割されます。(文字列の分割は Unix "
+"のシェルが行うものに似ています: 単語はスペースで区切られますが、クォートと"
+"バックスラッシュでオーバーライドできます。 :func:`distutils.util."
+"split_quoted` をごらんください。)"
 
 #: ../../distutils/apiref.rst:580
 msgid "The following methods invoke stages in the build process."
-msgstr ""
+msgstr "以下のメソッドはビルドプロセスのステージを呼び出します。"
 
 #: ../../distutils/apiref.rst:585
 msgid ""
 "Compile one or more source files. Generates object files (e.g.  transforms "
 "a :file:`.c` file to a :file:`.o` file.)"
 msgstr ""
+"1つ以上のソースファイルをコンパイルします。オブジェクトファイルを生成 (たとえ"
+"ば :file:`.c` ファイルを :file:`.o` ファイルに変換)します。"
 
 #: ../../distutils/apiref.rst:588
 msgid ""
@@ -938,6 +1151,13 @@ msgid ""
 "Depending on the implementation, not all source files will necessarily be "
 "compiled, but all corresponding object filenames will be returned."
 msgstr ""
+"*sources* はファイル名のリストである必要があります。おそらく C/C++ ファイルで"
+"すが、実際にはコンパイラとコンパイラクラスで扱えるもの(例: :class:"
+"`MSVCCompiler` はリソースファイルを *sources* にとることができます)なら何でも"
+"指定できます。 *sources* のソースファイルひとつずつに対応するオブジェクトファ"
+"イル名のリストを返します。実装に依存しますが、全てのソースファイルがコンパイ"
+"ルされる必要はありません。しかし全ての対応するオブジェクトファイル名が返りま"
+"す。"
 
 #: ../../distutils/apiref.rst:595
 msgid ""
@@ -946,6 +1166,10 @@ msgid ""
 "to :file:`foo/bar.o` (for a Unix implementation); if *output_dir* is "
 "*build*, then it would compile to :file:`build/foo/bar.o`."
 msgstr ""
+"もし *output_dir* が指定されていれば、オブジェクトファイルはその下に、オリジ"
+"ナルのパスを維持した状態で置かれます。つまり、 :file:`foo/bar.c` は通常コンパ"
+"イルされて :file:`foo/bar.o` になります (Unix実装の場合)が、もし "
+"*output_dir* が *build* であれば、 :file:`build/foo/bar.o` になります。"
 
 #: ../../distutils/apiref.rst:600
 msgid ""
@@ -955,18 +1179,28 @@ msgid ""
 "explicit value.  The 1-tuple case undefines a macro.  Later definitions/"
 "redefinitions/undefinitions take precedence."
 msgstr ""
+"*macros* は(もし指定されていれば)マクロ定義のリストである必要があります。マク"
+"ロ定義は ``(name, value)`` という形式の2要素のタプル、または ``(name,)`` とい"
+"う形式の1要素のタプルのどちらかです。前者はマクロを定義します。もし value が "
+"``None`` であれば、マクロは特定の値をもたないで定義されます。1要素のタプルは"
+"マクロ定義を削除します。後で実行された定義/再定義/削除が優先されます。"
 
 #: ../../distutils/apiref.rst:606
 msgid ""
 "*include_dirs*, if given, must be a list of strings, the directories to add "
 "to the default include file search path for this compilation only."
 msgstr ""
+"*include_dirs* は(もし指定されていれば)文字列のリストである必要があります。こ"
+"のコンパイルだけで有効な、デフォルトのインクルードファイルの検索ディレクトリ"
+"に追加するディレクトリ群を指定します。"
 
 #: ../../distutils/apiref.rst:609
 msgid ""
 "*debug* is a boolean; if true, the compiler will be instructed to output "
 "debug symbols in (or alongside) the object file(s)."
 msgstr ""
+"*debug* はブーリアン値です。もし真なら、コンパイラはデバッグシンボルをオブ"
+"ジェクトファイルに(または別ファイルに)出力します。"
 
 #: ../../distutils/apiref.rst:612
 msgid ""
@@ -978,6 +1212,12 @@ msgid ""
 "an escape hatch for those occasions when the abstract compiler framework "
 "doesn't cut the mustard."
 msgstr ""
+"*extra_preargs* と *extra_postargs* は実装依存です。コマンドラインをもってい"
+"るプラットフォーム(例 Unix, DOS/Windows)では、おそらく文字列のリスト: コンパ"
+"イラのコマンドライン引数の前/後に追加するコマンドライン引数です。他のプラット"
+"フォームでは、実装クラスのドキュメントを参照してください。どの場合でも、これ"
+"らの引数は抽象コンパイラフレームワークが期待に沿わない時の脱出口として意図さ"
+"れています。"
 
 #: ../../distutils/apiref.rst:619
 msgid ""
@@ -986,10 +1226,14 @@ msgid ""
 "be recompiled.  This supports dependency tracking, but only at a coarse "
 "granularity."
 msgstr ""
+"*depends* は(もし指定されていれば)ターゲットが依存しているファイル名のリスト"
+"です。ソースファイルが依存しているファイルのどれかより古ければ、ソースファイ"
+"ルは再コンパイルされます。これは依存関係のトラッキングをサポートしています"
+"が、荒い粒度でしか行われません。"
 
 #: ../../distutils/apiref.rst:624
 msgid "Raises :exc:`CompileError` on failure."
-msgstr ""
+msgstr "失敗すると :exc:`CompileError` を起こします。"
 
 #: ../../distutils/apiref.rst:629
 msgid ""
@@ -999,6 +1243,12 @@ msgid ""
 "`set_link_objects`, the libraries supplied to :meth:`add_library` and/or :"
 "meth:`set_libraries`, and the libraries supplied as *libraries* (if any)."
 msgstr ""
+"静的ライブラリファイルを作るために元ファイル群をリンクします。「元ファイル"
+"群」は *objects* で指定されたオブジェクトファイルのリストを基礎にしています。"
+"追加のオブジェクトファイルを :meth:`add_link_object` および/または :meth:"
+"`set_link_objects` で指定し、追加のライブラリを :meth:`add_library` および/ま"
+"たは :meth:`set_libraries` で指定します。そして *libraries* で指定されたライ"
+"ブラリです。"
 
 #: ../../distutils/apiref.rst:635
 msgid ""
@@ -1006,6 +1256,9 @@ msgid ""
 "be inferred from the library name.  *output_dir* is the directory where the "
 "library file will be put."
 msgstr ""
+"*output_libname* はファイル名ではなく、ライブラリ名でなければなりません; ファ"
+"イル名はライブラリ名から推測されます。*output_dir* はライブラリファイルが置か"
+"れるディレクトリです。"
 
 #: ../../distutils/apiref.rst:641
 msgid ""
@@ -1013,22 +1266,30 @@ msgid ""
 "library (note that on most platforms, it is the compile step where this "
 "matters: the *debug* flag is included here just for consistency)."
 msgstr ""
+"*debug* はブーリアン値です。もし真なら、デバッグ情報はライブラリに含められま"
+"す (ほとんどのプラットフォームにおいて、これが重要なのはコンパイルステップで"
+"あることに注意してください: *debug* フラグは、ここでは単に一貫性のために含め"
+"られます)。"
 
 #: ../../distutils/apiref.rst:645 ../../distutils/apiref.rst:687
 msgid ""
 "*target_lang* is the target language for which the given objects are being "
 "compiled. This allows specific linkage time treatment of certain languages."
 msgstr ""
+"*target_lang* はオブジェクトがコンパイルされる対象言語です。リンク時に言語特"
+"有の処理を行えるようにします。"
 
 #: ../../distutils/apiref.rst:648
 msgid "Raises :exc:`LibError` on failure."
-msgstr ""
+msgstr "失敗すると :exc:`LibError` を起こします。"
 
 #: ../../distutils/apiref.rst:653
 msgid ""
 "Link a bunch of stuff together to create an executable or shared library "
 "file."
 msgstr ""
+"実行ファイルまたは共有ライブラリファイルを作るために元ファイル群をリンクしま"
+"す。"
 
 #: ../../distutils/apiref.rst:655
 msgid ""
@@ -1037,6 +1298,10 @@ msgid ""
 "supplied, *output_filename* is relative to it (i.e. *output_filename* can "
 "provide directory components if needed)."
 msgstr ""
+"「元ファイル群」は *objects* で指定されたオブジェクトファイルのリストを基礎に"
+"しています。 *output_filename* はファイル名です。もし *output_dir* が指定され"
+"ていれば、それに対する相対パスとして *output_filename* は扱われます(必要なら"
+"ば *output_filename* はディレクトリ名を含むことができます。)。"
 
 #: ../../distutils/apiref.rst:660
 msgid ""
@@ -1047,6 +1312,11 @@ msgid ""
 "means the linker will look in that specific directory rather than searching "
 "all the normal locations."
 msgstr ""
+"*libraries* はリンクするライブラリのリストです。これはファイル名ではなくライ"
+"ブラリ名で指定します。プラットフォーム依存の方式でファイル名に変換されます"
+"(例: *foo* はUnix では :file:`libfoo.a` に、DOS/Windowsでは :file:`foo.lib` "
+"になります。 )。ただしこれらはディレクトリ名を含むことができ、その場合はリン"
+"カは通常の場所全体を探すのではなく特定のディレクトリを参照します。"
 
 #: ../../distutils/apiref.rst:667
 msgid ""
@@ -1055,15 +1325,23 @@ msgid ""
 "component).  These are on top of the system default and those supplied to :"
 "meth:`add_library_dir` and/or :meth:`set_library_dirs`.  "
 "*runtime_library_dirs* is a list of directories that will be embedded into "
-"the shared library and used to search for other shared libraries that \\*it"
-"\\* depends on at run-time.  (This may only be relevant on Unix.)"
+"the shared library and used to search for other shared libraries that "
+"\\*it\\* depends on at run-time.  (This may only be relevant on Unix.)"
 msgstr ""
+"*library_dirs* はもし指定されるならば、修飾されていない(ディレクトリ名を含ん"
+"でいない)ライブラリ名で指定されたライブラリを探索するディレクトリのリストで"
+"す。これはシステムのデフォルトより優先され、 :meth:`add_library_dir` と/また"
+"は :meth:`set_library_dirs` に渡されます。 *runtime_library_dirs* は共有ライ"
+"ブラリに埋め込まれるディレクトリのリストで、実行時にそれが依存する共有ライブ"
+"ラリのパスを指定します。(これはUnixでだけ意味があるかもしれません。)"
 
 #: ../../distutils/apiref.rst:675
 msgid ""
 "*export_symbols* is a list of symbols that the shared library will export. "
 "(This appears to be relevant only on Windows.)"
 msgstr ""
+"*export_symbols* は共有ライブラリがエクスポートするシンボルのリストです。 (こ"
+"れはWindowsだけで意味があるようです。)"
 
 #: ../../distutils/apiref.rst:678
 msgid ""
@@ -1072,6 +1350,9 @@ msgid ""
 "to :meth:`create_static_lib`, which includes a *debug* flag mostly for "
 "form's sake)."
 msgstr ""
+"*debug* は :meth:`compile` や :meth:`create_static_lib` と同じですが、少しだ"
+"け違いがあり、(:meth:`create_static_lib` では *debug* フラグは形式をあわせる"
+"ために存在していたのに対して)ほとんどのプラットフォームで意識されます。"
 
 #: ../../distutils/apiref.rst:683
 msgid ""
@@ -1079,10 +1360,12 @@ msgid ""
 "course that they supply command-line arguments for the particular linker "
 "being used)."
 msgstr ""
+"*extra_preargs* と *extra_postargs* は :meth:`compile` と同じですが、コンパイ"
+"ラではなくリンカへの引数として扱われます。"
 
 #: ../../distutils/apiref.rst:690
 msgid "Raises :exc:`LinkError` on failure."
-msgstr ""
+msgstr "失敗すると :exc:`LinkError` が起きます。"
 
 #: ../../distutils/apiref.rst:695
 msgid ""
@@ -1090,6 +1373,9 @@ msgid ""
 "while *objects* are a list of object filenames to link in. Other arguments  "
 "are as for the :meth:`link` method."
 msgstr ""
+"実行ファイルをリンクします。 *output_progname* は実行ファイルの名前です。 "
+"*objects* はリンクされるオブジェクトのファイル名のリストです。他の引数は :"
+"meth:`link` メソッドと同じです。"
 
 #: ../../distutils/apiref.rst:702
 msgid ""
@@ -1097,6 +1383,9 @@ msgid ""
 "while *objects* is a list of object filenames to link in.  Other arguments "
 "are as for the :meth:`link` method."
 msgstr ""
+"共有ライブラリをリンクします。 *output_libname* は出力先のライブラリ名です。 "
+"*objects* はリンクされるオブジェクトのファイル名のリストです。他の引数は :"
+"meth:`link` メソッドと同じです。"
 
 #: ../../distutils/apiref.rst:709
 msgid ""
@@ -1104,6 +1393,9 @@ msgid ""
 "that will be created, while *objects* is a list of object filenames  to link "
 "in. Other arguments are as for the :meth:`link` method."
 msgstr ""
+"共有オブジェクトをリンクします。 *output_filename* は出力先の共有オブジェクト"
+"名です。 *objects* はリンクされるオブジェクトのファイル名のリストです。他の引"
+"数は :meth:`link` メソッドと同じです。"
 
 #: ../../distutils/apiref.rst:716
 msgid ""
@@ -1114,16 +1406,24 @@ msgid ""
 "`undefine_macro`. *include_dirs* is a list of directory names that will be "
 "added to the  default list, in the same way as :meth:`add_include_dir`."
 msgstr ""
+"*source* で指定されたひとつの C/C++ソースファイルをプリプロセスします。出力先"
+"のファイルは *output_file* か、もし *output_file* が指定されていなければ "
+"*stdout* になります。 *macros* は :meth:`compile` と同様にマクロ定義のリスト"
+"で、 :meth:`define_macro` や :meth:`undefine_macro` によって引数になります。 "
+"*include_dirs* はデフォルトのリストに追加されるディレクトリ名のリストで、 :"
+"meth:`add_include_dir` と同じ方法で扱われます。"
 
 #: ../../distutils/apiref.rst:723
 msgid "Raises :exc:`PreprocessError` on failure."
-msgstr ""
+msgstr "失敗すると :exc:`PreprocessError` が起きます。"
 
 #: ../../distutils/apiref.rst:725
 msgid ""
 "The following utility methods are defined by the :class:`CCompiler` class, "
 "for use by the various concrete subclasses."
 msgstr ""
+"以下のユーティリティメソッドは具体的なサブクラスで使うために、 :class:"
+"`CCompiler` クラスで定義されています。"
 
 #: ../../distutils/apiref.rst:731
 msgid ""
@@ -1131,6 +1431,9 @@ msgid ""
 "for non-Windows platforms this is the same as the basename,  while Windows "
 "will get a :file:`.exe` added."
 msgstr ""
+"*basename* で指定された実行ファイルのファイル名を返します。 Windows以外の典型"
+"的なプラットフォームではbasenameそのままが、Windowsでは :file:`.exe` が追加さ"
+"れたものが返ります。"
 
 #: ../../distutils/apiref.rst:738
 msgid ""
@@ -1139,17 +1442,22 @@ msgid ""
 "form :file:`liblibname.a`, while a *lib_type* of ``'dynamic'``  will be of "
 "the form :file:`liblibname.so`."
 msgstr ""
+"現在のプラットフォームでのライブラリファイル名を返します。 Unixで *lib_type* "
+"が ``'static'`` の場合、 :file:`liblibname.a` の形式を返し、 *lib_type* が "
+"``'dynamic'`` の場合は :file:`liblibname.so` の形式を返します。"
 
 #: ../../distutils/apiref.rst:746
 msgid ""
 "Returns the name of the object files for the given source files. "
 "*source_filenames* should be a list of filenames."
 msgstr ""
+"指定されたソースファイルに対応するオブジェクトファイル名を返します。 "
+"*source_filenames* はファイル名のリストです。"
 
 #: ../../distutils/apiref.rst:752
 msgid ""
 "Returns the name of a shared object file for the given file name *basename*."
-msgstr ""
+msgstr "*basename* に対応する共有オブジェクトファイルのファイル名を返します。"
 
 #: ../../distutils/apiref.rst:757
 msgid ""
@@ -1157,86 +1465,106 @@ msgid ""
 "function *func* with the given arguments *args*, after  logging and taking "
 "into account the *dry_run* flag."
 msgstr ""
+":func:`distutils.util.execute` を実行します。このメソッドは、ロギング処理を"
+"し *dry_run* フラグを考慮に入れた上で、 Python 関数の *func* を与えられた引"
+"数 *args* で実行します。"
 
 #: ../../distutils/apiref.rst:764
 msgid ""
 "Invokes :func:`distutils.util.spawn`. This invokes an external  process to "
 "run the given command."
 msgstr ""
+":func:`distutils.util.spawn` を実行します。これは与えられたコマンドを走らせる"
+"別プロセスを起動します。"
 
 #: ../../distutils/apiref.rst:770
 msgid ""
 "Invokes :func:`distutils.dir_util.mkpath`. This creates a directory  and any "
 "missing ancestor directories."
 msgstr ""
+":func:`distutils.dir_util.mkpath` を実行します。ディレクトリと、そこまでの不"
+"足している親ディレクトリを作成します。"
 
 #: ../../distutils/apiref.rst:776
 msgid "Invokes :meth:`distutils.file_util.move_file`. Renames *src* to  *dst*."
 msgstr ""
+":meth:`distutils.file_util.move_file` を実行します。 *src* を *dst* に名前変"
+"更します。"
 
 #: ../../distutils/apiref.rst:781
 msgid "Write a message using :func:`distutils.log.debug`."
-msgstr ""
+msgstr ":func:`distutils.log.debug` を使用してメッセージを書き出します。"
 
 #: ../../distutils/apiref.rst:786
 msgid "Write a warning message *msg* to standard error."
-msgstr ""
+msgstr "警告メッセージ *msg* を標準エラー出力に書き出します。"
 
 #: ../../distutils/apiref.rst:791
 msgid ""
 "If the *debug* flag is set on this :class:`CCompiler` instance, print  *msg* "
 "to standard output, otherwise do nothing."
 msgstr ""
+"もしこの :class:`CCompiler` インスタンスで *debug* フラグが指定されていれば "
+"*msg* を標準出力に出力し、そうでなければ何も出力しません。"
 
 #: ../../distutils/apiref.rst:803
 msgid ":mod:`distutils.unixccompiler` --- Unix C Compiler"
-msgstr ""
+msgstr ":mod:`distutils.unixccompiler` --- Unix C コンパイラ"
 
 #: ../../distutils/apiref.rst:809
 msgid ""
 "This module provides the :class:`UnixCCompiler` class, a subclass of :class:"
 "`CCompiler` that handles the typical Unix-style command-line  C compiler:"
 msgstr ""
+"このモジュールは :class:`UnixCCompiler` クラスを提供します。 :class:"
+"`CCompiler` クラスのサブクラスで、典型的なUnixスタイルのコマンドラインCコンパ"
+"イラを扱います:"
 
 #: ../../distutils/apiref.rst:812
 msgid "macros defined with :option:`!-Dname[=value]`"
-msgstr ""
+msgstr "マクロは :option:`!-Dname[=value]` で定義されます"
 
 #: ../../distutils/apiref.rst:814
 msgid "macros undefined with :option:`!-Uname`"
-msgstr ""
+msgstr "マクロは :option:`!-Uname` で削除されます"
 
 #: ../../distutils/apiref.rst:816
 msgid "include search directories specified with :option:`!-Idir`"
 msgstr ""
+"インクルードファイルの探索ディレクトリは :option:`!-Idir` で指定されます"
 
 #: ../../distutils/apiref.rst:818
 msgid "libraries specified with :option:`!-llib`"
-msgstr ""
+msgstr "ライブラリは :option:`!-llib` で指定されます"
 
 #: ../../distutils/apiref.rst:820
 msgid "library search directories specified with :option:`!-Ldir`"
-msgstr ""
+msgstr "ライブラリの探索ディレクトリは :option:`!-Ldir` で指定されます"
 
 #: ../../distutils/apiref.rst:822
 msgid ""
 "compile handled by :program:`cc` (or similar) executable with :option:`!-c` "
 "option: compiles :file:`.c` to :file:`.o`"
 msgstr ""
+"コンパイルは :program:`cc` (またはそれに似た) 実行ファイルに、 :option:`!-c` "
+"オプションをつけて実行します: :file:`.c` を :file:`.o` にコンパイルします"
 
 #: ../../distutils/apiref.rst:825
 msgid ""
 "link static library handled by :program:`ar` command (possibly with :program:"
 "`ranlib`)"
 msgstr ""
+"静的ライブラリは :program:`ar` コマンドで処理されます (:program:`ranlib` を使"
+"うかもしれません)"
 
 #: ../../distutils/apiref.rst:828
 msgid "link shared library handled by :program:`cc` :option:`!-shared`"
 msgstr ""
+"共有ライブラリのリンクは :program:`cc` :option:`!-shared` で処理されます"
 
 #: ../../distutils/apiref.rst:832
 msgid ":mod:`distutils.msvccompiler` --- Microsoft Compiler"
-msgstr ""
+msgstr ":mod:`distutils.msvccompiler` --- Microsoft コンパイラ"
 
 #: ../../distutils/apiref.rst:839
 msgid ""
@@ -1246,6 +1574,11 @@ msgid ""
 "to compile Python. For Python 2.3 and earlier, the compiler was Visual "
 "Studio 6. For Python 2.4 and 2.5, the compiler is Visual Studio .NET 2003."
 msgstr ""
+"このモジュールは :class:`MSVCCompiler` クラスを提供します。抽象クラス :class:"
+"`CCompiler` の具象クラスでMicrosoft Visual Studio向けのものです。一般的に、拡"
+"張モジュールはPythonをコンパイルしたのと同じコンパイラでコンパイルする必要が"
+"あります。Python 2.3 やそれ以前では、コンパイラはVisual Studio 6でした。 "
+"Python 2.4 と Python 2.5 では、コンパイラは Visual Studio .NET 2003 です。"
 
 #: ../../distutils/apiref.rst:845
 msgid ""
@@ -1257,20 +1590,28 @@ msgid ""
 "installed; *DISTUTILS_USE_SDK* indicates that the distutils user has made an "
 "explicit choice to override the compiler selection by :class:`MSVCCompiler`."
 msgstr ""
+":class:`MSVCCompiler` は大体正しいコンパイラ、リンカその他を選びます。この選"
+"択を上書きするためには、環境変数 *DISTUTILS_USE_SDK* と *MSSdk* の両方を設定"
+"する必要があります。 *MSSdk* は現在の環境をセットアップした ``SetEnv.Cmd`` ス"
+"クリプト、もしくは環境変数がSDKをインストールした時に登録されたものであること"
+"を示します。 *DISTUTILS_USE_SDK* はdistutilsのユーザーが明示的に :class:"
+"`MSVCCompiler` が選んだコンパイラを上書きすることを示します。"
 
 #: ../../distutils/apiref.rst:855
 msgid ":mod:`distutils.bcppcompiler` --- Borland Compiler"
-msgstr ""
+msgstr ":mod:`distutils.bcppcompiler` --- Borland コンパイラ"
 
 #: ../../distutils/apiref.rst:860
 msgid ""
 "This module provides :class:`BorlandCCompiler`, a subclass of the abstract :"
 "class:`CCompiler` class for the Borland C++ compiler."
 msgstr ""
+"このモジュールは :class:`BorlandCCompiler` クラスを提供します。抽象クラス :"
+"class:`CCompiler` の具象クラスでBorland C++ コンパイラ向けです。"
 
 #: ../../distutils/apiref.rst:865
 msgid ":mod:`distutils.cygwincompiler` --- Cygwin Compiler"
-msgstr ""
+msgstr ":mod:`distutils.cygwincompiler` --- Cygwin コンパイラ"
 
 #: ../../distutils/apiref.rst:870
 msgid ""
@@ -1279,16 +1620,21 @@ msgid ""
 "Windows.  It also contains the Mingw32CCompiler class which handles the "
 "mingw32 port of GCC (same as cygwin in no-cygwin mode)."
 msgstr ""
+"このモジュールは :class:`CygwinCCompiler` クラスを提供します。 :class:"
+"`UnixCCompiler` のサブクラスで Cygwinに移植されたWindows用の GNU C コンパイラ"
+"向けです。さらに :class:`Mingw32CCompiler` クラスを含んでおり、これは "
+"mingw32 向けに移植された GCC (cygwinの no-cygwin モードと同じ)向けです。"
 
 #: ../../distutils/apiref.rst:877
 msgid ":mod:`distutils.archive_util` ---  Archiving utilities"
-msgstr ""
+msgstr ":mod:`distutils.archive_util` --- アーカイブユーティリティ"
 
 #: ../../distutils/apiref.rst:883
 msgid ""
 "This module provides a few functions for creating archive files, such as "
 "tarballs or zipfiles."
 msgstr ""
+"このモジュールはアーカイブファイル(tarやzip)を作成する関数を提供します。"
 
 #: ../../distutils/apiref.rst:889
 msgid ""
@@ -1302,10 +1648,19 @@ msgid ""
 "archive.  *root_dir* and *base_dir* both default to the current directory. "
 "Returns the name of the archive file."
 msgstr ""
+"アーカイブファイル(例: ``zip`` や ``tar``)を作成します。 *base_name* は作成す"
+"るファイル名からフォーマットの拡張子を除いたものです。 *format* はアーカイブ"
+"のフォーマットで ``zip``, ``tar``, ``gztar``, ``bztar``, ``xztar``, ``ztar`` "
+"のいずれかです。 *root_dir* はアーカイブのルートディレクトリになるディレクト"
+"リです: つまりアーカイブを作成する前に *root_dir* に ``chdir`` します。 "
+"*base_dir* はアーカイブの起点となるディレクトリです: つまり *base_dir* はアー"
+"カイブ中の全ファイルおよびディレクトリの前につくディレクトリ名です。 "
+"*root_dir* と *base_dir* はともにカレントディレクトリがデフォルト値です。アー"
+"カイブファイル名を返します。"
 
 #: ../../distutils/apiref.rst:899
 msgid "Added support for the ``xztar`` format."
-msgstr ""
+msgstr "``xztar`` 形式のサポートが追加されました。"
 
 #: ../../distutils/apiref.rst:905
 msgid ""
@@ -1318,10 +1673,17 @@ msgid ""
 "compression extension (``.gz``, ``.bz2``, ``.xz`` or ``.Z``).  Return the "
 "output filename."
 msgstr ""
+"*base_dir* 以下の全ファイルから、 tar ファイルを作成 (オプションで圧縮) しま"
+"す。 *compress* は ``'gzip'`` (デフォルト), ``'xz'``, ``'compress'``, "
+"``'bzip2'`` または ``None`` である必要があります。 ``'compress'`` メソッドに"
+"ついては、 :program:`compress` で指定される圧縮ユーティリティにパスが通ってい"
+"る必要があるので、おそらくこれは Unix だけで有効でしょう。出力 tar ファイル"
+"は :file:`base_dir.tar` という名前になり、圧縮によって拡張子が付きます(``."
+"gz``, ``.bz2``, ``.xz`` または ``.Z``)。出力ファイル名が返ります。"
 
 #: ../../distutils/apiref.rst:914
 msgid "Added support for the ``xz`` compression."
-msgstr ""
+msgstr "``xz`` 形式のサポートが追加されました。"
 
 #: ../../distutils/apiref.rst:920
 msgid ""
@@ -1332,10 +1694,15 @@ msgid ""
 "available, raises :exc:`DistutilsExecError`.   Returns the name of the "
 "output zip file."
 msgstr ""
+"*base_dir* 以下の全ファイルから、zipファイルを作成します。出力されるzipファイ"
+"ルは *base_name* + :file:`.zip` という名前になります。 :mod:`zipfile`  Python"
+"モジュール(利用可能なら)またはInfoZIP :file:`zip` ユーティリティ(インストール"
+"されていてパスが通っているなら)を使います。もしどちらも利用できなければ、 :"
+"exc:`DistutilsExecError` が起きます。出力zipファイル名が返ります。"
 
 #: ../../distutils/apiref.rst:928
 msgid ":mod:`distutils.dep_util` --- Dependency checking"
-msgstr ""
+msgstr ":mod:`distutils.dep_util` --- 依存関係のチェック"
 
 #: ../../distutils/apiref.rst:934
 msgid ""
@@ -1343,6 +1710,9 @@ msgid ""
 "dependency of files and groups of files; also, functions based entirely  on "
 "such timestamp dependency analysis."
 msgstr ""
+"このモジュールはシンプルなタイムスタンプを元にしたファイルやファイル群の依存"
+"関係を処理する関数を提供します。さらに、それらの依存関係解析を元にした関数を"
+"提供します。"
 
 #: ../../distutils/apiref.rst:941
 msgid ""
@@ -1351,6 +1721,10 @@ msgid ""
 "*target* is the same age or newer  than *source*. Raise :exc:"
 "`DistutilsFileError` if *source* does not exist."
 msgstr ""
+"*source* が存在して、 *target* より最近変更されている、または *source* が存在"
+"して、 *target* が存在していない場合は真を返します。両方が存在していて、 "
+"*target* のほうが *source* より新しいか同じ場合には偽を返します。 *source* が"
+"存在しない場合には :exc:`DistutilsFileError` を起こします。"
 
 #: ../../distutils/apiref.rst:949
 msgid ""
@@ -1359,6 +1733,9 @@ msgid ""
 "where source is newer than target, according to the semantics of :func:"
 "`newer`."
 msgstr ""
+"ふたつのファイル名リストを並列に探索して、それぞれのソースが対応するターゲッ"
+"トより新しいかをテストします。 :func:`newer` の意味でターゲットよりソースが新"
+"しいペアのリスト(*sources*, *targets*)を返します。"
 
 #: ../../distutils/apiref.rst:958
 msgid ""
@@ -1373,16 +1750,28 @@ msgid ""
 "work because inputs are missing, but that doesn't matter because you're not "
 "actually going to run the commands)."
 msgstr ""
+"*target* が、 *sources* にリストアップされたどれかのファイルより古ければ真を"
+"返します。\n"
+"言い換えれば、 *target* が存在して *sources* にある全てのファイルより新しいな"
+"ら偽を返し、そうでなければ真を返します。\n"
+"*missing* はソースファイルが存在しなかった時の振る舞いを決定します。デフォル"
+"ト(``'error'``)は :func:`os.stat` 関数の内部で発生した :exc:`OSError` 例外を"
+"投げます。\n"
+"``'ignore'`` の場合は、単に存在しないソースファイルを無視します。\n"
+"``'newer'`` の場合は、存在しないソースファイルについては *target* が古いとみ"
+"なします(これは \"dry-run\" モードで便利です: 入力がないのでコマンドは実行で"
+"きませんが実際に実行しようとしていないので問題になりません)。"
 
 #: ../../distutils/apiref.rst:971
 msgid ":mod:`distutils.dir_util` --- Directory tree operations"
-msgstr ""
+msgstr ":mod:`distutils.dir_util` --- ディレクトリツリーの操作"
 
 #: ../../distutils/apiref.rst:977
 msgid ""
 "This module provides functions for operating on directories and trees of "
 "directories."
 msgstr ""
+"このモジュールはディレクトリとディレクトリツリーを操作する関数を提供します。"
 
 #: ../../distutils/apiref.rst:983
 msgid ""
@@ -1394,6 +1783,12 @@ msgid ""
 "is true, print a one-line summary of each mkdir to stdout.  Return the list "
 "of directories actually created."
 msgstr ""
+"ディレクトリと、必要な親ディレクトリを作成します。もしディレクトリが既に存在"
+"している(*name* が空文字列の場合、カレントディレクトリを示すのでもちろん存在"
+"しています)場合、何もしません。ディレクトリを作成できなかった場合(例: ディレ"
+"クトリと同じ名前のファイルが既に存在していた)、 :exc:`DistutilsFileError` を"
+"起こします。もし *verbose* が真なら、それぞれのmkdirについて1行、標準出力に出"
+"力します。実際に作成されたディレクトリのリストを返します。"
 
 #: ../../distutils/apiref.rst:994
 msgid ""
@@ -1404,6 +1799,11 @@ msgid ""
 "be created if it doesn't already exist.  *mode*, *verbose* and *dry_run* "
 "flags  are as for :func:`mkpath`."
 msgstr ""
+"*files* を置くために必要な空ディレクトリを *base_dir* 以下に作成します。 "
+"*base_dir* ディレクトリは存在している必要はありません。 *files* はファイル名"
+"のリストで *base_dir* からの相対パスとして扱われます。 *base_dir* + *files* "
+"のディレクトリ部分が(既に存在していなければ)作成されます。 *mode*, *verbose* "
+"と *dry_run* フラグは :func:`mkpath` と同じです。"
 
 #: ../../distutils/apiref.rst:1004
 msgid ""
@@ -1417,6 +1817,14 @@ msgid ""
 "it is simply the list of all files under *src*, with the names changed to be "
 "under *dst*."
 msgstr ""
+"*src* ディレクトリツリー全体を *dst* にコピーします。 *src* と *dst* はどちら"
+"もディレクトリ名である必要があります。もし *src* がディレクトリでなければ、 :"
+"exc:`DistutilsFileError` を起こします。もし *dst* が存在しなければ、 :func:"
+"`mkpath` で作成されます。実行結果は、 *src* 以下の全てのファイルが *dst* にコ"
+"ピーされ、 *src* 以下の全てのディレクトリが *dst* に再帰的にコピーされます。"
+"コピーされた(またはされるはず)のファイルのリストを返します。返り値は "
+"*update* または *dry_run* に影響されません: *src* 以下の全ファイルを単に "
+"*dst* 以下に改名したリストが返されます。"
 
 #: ../../distutils/apiref.rst:1014
 msgid ""
@@ -1427,6 +1835,12 @@ msgid ""
 "destination of the symlink will be copied.  *update* and *verbose* are the "
 "same as for :func:`copy_file`."
 msgstr ""
+"*preserve_mode* と *preserve_times* は :func:`distutils.file_util.copy_file` "
+"のものと同じです; それらは通常のファイルにのみ適用され、ディレクトリには適用"
+"されません。 *preserve_symlinks* が真の場合、シンボリックリンクはシンボリック"
+"リンクとしてコピーされます (サポートするプラットフォームでは!); そうでない "
+"(デフォルトの) 場合、シンボリックリンクの対象がコピーされます。 *update* と "
+"*verbose* は :func:`copy_file` のものと同じです。"
 
 #: ../../distutils/apiref.rst:1022
 msgid ""
@@ -1434,10 +1848,13 @@ msgid ""
 "these files is available in answer D2 of the `NFS FAQ page <http://nfs."
 "sourceforge.net/#section_d>`_)."
 msgstr ""
+"*src* にあるファイルで :file:`.nfs` から始まるものは対象から外されます (これ"
+"らのファイルについての情報は `NFS FAQ page <http://nfs.sourceforge.net/"
+"#section_d>`_ の回答 D2 にあります) 。"
 
 #: ../../distutils/apiref.rst:1026
 msgid "NFS files are ignored."
-msgstr ""
+msgstr "NFS ファイルは無視されます。"
 
 #: ../../distutils/apiref.rst:1031
 msgid ""
@@ -1445,16 +1862,19 @@ msgid ""
 "Any errors are ignored (apart from being reported to ``sys.stdout`` if "
 "*verbose* is true)."
 msgstr ""
+"再帰的に *directory* とその下の全ファイルを削除します。エラーは無視されます "
+"(*verbose* が真の時は ``sys.stdout`` に出力されます)。"
 
 #: ../../distutils/apiref.rst:1037
 msgid ":mod:`distutils.file_util` --- Single file operations"
-msgstr ""
+msgstr ":mod:`distutils.file_util` --- 1ファイルの操作"
 
 #: ../../distutils/apiref.rst:1043
 msgid ""
 "This module contains some utility functions for operating on individual "
 "files."
 msgstr ""
+"このモジュールはそれぞれのファイルを操作するユーティリティ関数を提供します。"
 
 #: ../../distutils/apiref.rst:1048
 msgid ""
@@ -1467,6 +1887,14 @@ msgid ""
 "If *update* is true, *src* will only be copied if *dst* does not exist, or "
 "if *dst* does exist but is older than *src*."
 msgstr ""
+"ファイル *src* を *dst* にコピーします。 *dst* がディレクトリの場合、 *src* "
+"はそこへ同じ名前でコピーされます; そうでない場合は、ファイル名として扱われま"
+"す。(もしファイルが存在するなら、容赦無く上書きされます。) *preserve_mode* "
+"が (デフォルト値の) 真の場合、ファイルのモード (タイプやパーミッション、その"
+"他プラットフォームがサポートするもの) もコピーされます。 *preserve_times* が "
+"(デフォルト値の) 真の場合、最終更新、最終アクセス時刻もコピーされます。"
+"*update* が真の場合、 *src* は *dst* が存在しない場合か、*dst* が存在して "
+"*src* より古い場合にだけコピーします。"
 
 #: ../../distutils/apiref.rst:1057
 msgid ""
@@ -1477,6 +1905,13 @@ msgid ""
 "hard or symbolic linking is available.  It uses :func:`_copy_file_contents` "
 "to copy file contents."
 msgstr ""
+"*link* は値を ``'hard'`` または ``'sym'`` に設定することでコピーのかわりに"
+"ハードリンク(:func:`os.link` を使います)またはシンボリックリンク(:func:`os."
+"symlink` を使います)を許可します。 ``None``  (デフォルト)の時には、ファイルは"
+"コピーされます。 *link* をサポートしていないシステムで有効にしないでくださ"
+"い。 :func:`copy_file` はハードリンク、シンボリックリンクが可能かチェックして"
+"いません。ファイルの内容をコピーするために :func:`_copy_file_contents` を利用"
+"しています。"
 
 #: ../../distutils/apiref.rst:1064
 msgid ""
@@ -1484,6 +1919,9 @@ msgid ""
 "the output file, and *copied* is true if the file was copied  (or would have "
 "been copied, if *dry_run* true)."
 msgstr ""
+"``(dest_name, copied)`` のタプルを返します: *dest_name* は出力ファイルの実際"
+"の名前、 *copied* はファイルがコピーされた(*dry_run* が真の時にはコピーされる"
+"ことになった)場合には真です。"
 
 #: ../../distutils/apiref.rst:1078
 msgid ""
@@ -1491,28 +1929,36 @@ msgid ""
 "into it with the same name; otherwise, *src* is just renamed to *dst*.  "
 "Returns the new full name of the file."
 msgstr ""
+"ファイル *src* を *dst* に移動します。もし *dst* がディレクトリなら、ファイル"
+"はそのディレクトリに同じ名前で移動されます。そうでなければ、 *src* は *dst* "
+"に単にリネームされます。新しいファイルの名前を返します。"
 
 #: ../../distutils/apiref.rst:1084
 msgid ""
 "Handles cross-device moves on Unix using :func:`copy_file`.  What about "
 "other systems?"
 msgstr ""
+"Unix ではデバイスをまたがる移動は :func:`copy_file` を利用して扱っています。"
+"他のシステムではどうでしょう？"
 
 #: ../../distutils/apiref.rst:1090
 msgid ""
 "Create a file called *filename* and write *contents* (a sequence of strings "
 "without line terminators) to it."
 msgstr ""
+"*filename* を作成し、 *contents* (行末文字がない文字列のシーケンス)を書き込み"
+"ます。"
 
 #: ../../distutils/apiref.rst:1095
 msgid ":mod:`distutils.util` --- Miscellaneous other utility functions"
-msgstr ""
+msgstr ":mod:`distutils.util` --- その他のユーティリティ関数"
 
 #: ../../distutils/apiref.rst:1101
 msgid ""
 "This module contains other assorted bits and pieces that don't fit into  any "
 "other utility module."
 msgstr ""
+"このモジュールは他のユーティリティモジュールにあわないものを提供しています。"
 
 #: ../../distutils/apiref.rst:1107
 msgid ""
@@ -1523,10 +1969,16 @@ msgid ""
 "included depends on the OS; e.g., on Linux, the kernel version isn't "
 "particularly important."
 msgstr ""
+"現在のプラットフォームを示す文字列を返します。\n"
+"これはプラットフォーム依存のビルドディレクトリやプラットフォーム依存の配布物"
+"を区別するために使われます。\n"
+"典型的には、('os.uname()' のように) OSの名前とバージョン、アーキテクチャを含"
+"みますが、厳密にはOSに依存します。\n"
+"例えば Linux ではカーネルのバージョンはそれほど重要ではありません。"
 
 #: ../../distutils/apiref.rst:1114
 msgid "Examples of returned values:"
-msgstr ""
+msgstr "返される値の例:"
 
 #: ../../distutils/apiref.rst:1116
 msgid "``linux-i586``"
@@ -1543,6 +1995,8 @@ msgstr "``solaris-2.6-sun4u``"
 #: ../../distutils/apiref.rst:1120
 msgid "For non-POSIX platforms, currently just returns ``sys.platform``."
 msgstr ""
+"POSIX でないプラットフォームでは、今のところ単に ``sys.platform`` が返されま"
+"す。"
 
 #: ../../distutils/apiref.rst:1122
 msgid ""
@@ -1550,6 +2004,9 @@ msgid ""
 "binaries will run (that is, the value of ``MACOSX_DEPLOYMENT_TARGET`` during "
 "the build of Python), not the OS version of the current system."
 msgstr ""
+"macOS システムでは、 OS バージョンは、現在のOSバージョンではなく、実行するバ"
+"イナリの最小バージョンを表しています。 (これは、Python をビルドするときの "
+"``MACOSX_DEPLOYMENT_TARGET`` の値です。)"
 
 #: ../../distutils/apiref.rst:1126
 msgid ""
@@ -1562,10 +2019,17 @@ msgid ""
 "build (ppc, i386, x86_64) and ``intel`` is used for a universal build with "
 "the i386 and x86_64 architectures"
 msgstr ""
+"macOS のユニバーサルバイナリビルドでは、アーキテクチャの値は現在のプロセッサ"
+"ではなく、ユニバーサルバイナリの状態を表しています。32bit ユニバーサルバイナ"
+"リではアーキテクチャは ``fat`` で、64bit ユニバーサルバイナリではアーキテク"
+"チャは ``fat64`` で、4-way ユニバーサルバイナリではアーキテクチャは "
+"``universal`` になります。Python 2.7 と Python 3.2 から 3-way ユニバーサルバ"
+"イナリ (ppc, i386, x86_64) には ``fat3`` が i386 と x86_64 ユニバーサルバイナ"
+"リには ``intel`` が使われるようになりました"
 
 #: ../../distutils/apiref.rst:1135
 msgid "Examples of returned values on macOS:"
-msgstr ""
+msgstr "macOS で返される値の例:"
 
 #: ../../distutils/apiref.rst:1137
 msgid "``macosx-10.3-ppc``"
@@ -1592,30 +2056,39 @@ msgid ""
 "earlier returned only a single additional field with the AIX Version and "
 "Release."
 msgstr ""
+"AIX の場合、 Python 3.9 以降のバージョンでは \"aix\" に続く追加のフィールド "
+"(``'-'``で連結されます) として AIX のバージョン、リリースおよびテクノロジー・"
+"レベル (第1フィールド)、ビルド作成日 (第2フィールド)、ビットサイズ (第3フィー"
+"ルド) を含む文字列を返します。 Python 3.8 以前のバージョンでは追加のフィール"
+"ドとして AIX のバージョンとリリース の1つだけを含む文字列を返していました。"
 
 #: ../../distutils/apiref.rst:1151
 msgid "Examples of returned values on AIX:"
-msgstr ""
+msgstr "AIX における戻り値の例:"
 
 #: ../../distutils/apiref.rst:1153
 msgid ""
 "``aix-5307-0747-32`` # 32-bit build on AIX ``oslevel -s``: 5300-07-00-0000"
 msgstr ""
+"``aix-5307-0747-32`` # AIX ``oslevel -s``: 5300-07-00-0000 の32ビットビルド"
 
 #: ../../distutils/apiref.rst:1155
 msgid ""
 "``aix-7105-1731-64`` # 64-bit build on AIX ``oslevel -s``: 7100-05-01-1731"
 msgstr ""
+"``aix-7105-1731-64`` # AIX ``oslevel -s``: 7100-05-01-1731 の64ビットビルド"
 
 #: ../../distutils/apiref.rst:1157
 msgid "``aix-7.2``          # Legacy form reported in Python 3.8 and earlier"
-msgstr ""
+msgstr "``aix-7.2``          # Python 3.8 以前のレガシー形式"
 
 #: ../../distutils/apiref.rst:1159
 msgid ""
 "The AIX platform string format now also includes the technology level, build "
 "date, and ABI bit-size."
 msgstr ""
+"AIX プラットフォームの文字列形式はバージョンとリリース情報に加えて、テクノロ"
+"ジー・レベル、ビルド作成日、および ABI のビットサイズを含むようになりました。"
 
 #: ../../distutils/apiref.rst:1166
 msgid ""
@@ -1626,6 +2099,11 @@ msgid ""
 "can actually use them in the filesystem.  Raises :exc:`ValueError` on non-"
 "Unix-ish systems if *pathname* either  starts or ends with a slash."
 msgstr ""
+"'pathname' をファイルシステムで利用できる名前にして返します。すなわち、'/'で"
+"分割し、現在のディレクトリセパレータで接続しなおします。セットアップスクリプ"
+"ト中のファイル名はUnixスタイルで提供され、実際に利用する前に変換する必要があ"
+"るため、この関数が必要になります。もし *pathname* の最初または最後がスラッ"
+"シュの場合、Unix的でないシステムでは :exc:`ValueError` が起きます。"
 
 #: ../../distutils/apiref.rst:1176
 msgid ""
@@ -1634,6 +2112,10 @@ msgid ""
 "requires making *pathname* relative and then joining the two, which is "
 "tricky on DOS/Windows."
 msgstr ""
+"*pathname* の前に *new_root* を追加したものを返します。もし *pathname* が相対"
+"パスなら、 ``os.path.join(new_root,pathname)`` と等価です。そうでなければ、 "
+"*pathname* を相対パスに変換したあと接続します。これはDOS/Windows ではトリッ"
+"キーな作業になります。"
 
 #: ../../distutils/apiref.rst:1183
 msgid ""
@@ -1641,16 +2123,21 @@ msgid ""
 "users can use in config files, command-line options, etc.  Currently this "
 "includes:"
 msgstr ""
+"'os.environ'に、ユーザがconfigファイル、コマンドラインオプションなどで利用で"
+"きることを保証している環境変数があることを確認します。現在は以下のものが含ま"
+"れています:"
 
 #: ../../distutils/apiref.rst:1187
 msgid ":envvar:`HOME` - user's home directory (Unix only)"
-msgstr ""
+msgstr ":envvar:`HOME` - ユーザのホームディレクトリ (Unix のみ)"
 
 #: ../../distutils/apiref.rst:1188
 msgid ""
 ":envvar:`PLAT` - description of the current platform, including hardware and "
 "OS (see :func:`get_platform`)"
 msgstr ""
+":envvar:`PLAT` - ハードウェアとOSを含む現在のプラットフォームの説明。 (:func:"
+"`get_platform` を参照)"
 
 #: ../../distutils/apiref.rst:1194
 msgid ""
@@ -1662,6 +2149,12 @@ msgid ""
 "`check_environ`.  Raise :exc:`ValueError` for any variables not found in "
 "either *local_vars* or ``os.environ``."
 msgstr ""
+"shell/Perlスタイルの変数置換を *s* について行います。全ての ``$`` に名前が続"
+"いたものは変数とみなされ、辞書 *local_vars* でみつかった値に置換されます。 "
+"*local_vars* で見つからなかった場合には ``os.environ`` で置換されます。 *os."
+"environ* は最初にある値を含んでいることをチェックされます: :func:"
+"`check_environ` を参照。 *local_vars* or ``os.environ`` のどちらにも値が見つ"
+"からなかった場合、 :exc:`ValueError` を起こします。"
 
 #: ../../distutils/apiref.rst:1201
 msgid ""
@@ -1669,6 +2162,9 @@ msgid ""
 "``$variable`` can consist only of upper and lower case letters, numbers and "
 "an underscore. No { } or ( ) style quoting is available."
 msgstr ""
+"これは完全な文字列挿入関数ではないことに注意してください。 ``$variable`` の名"
+"前には大小英字、数字、アンダーバーだけを含むことができます。 { } や ( ) を"
+"使った引用形式は利用できません。"
 
 #: ../../distutils/apiref.rst:1208
 msgid ""
@@ -1680,6 +2176,12 @@ msgid ""
 "leaving only the escaped character.  The quote characters are stripped from "
 "any quoted string.  Returns a list of words."
 msgstr ""
+"文字列をUnixのシェルのようなルール(引用符やバックスラッシュの扱い)で分割しま"
+"す。つまり、バックスラッシュでエスケープされるか、引用符で囲まれていなければ"
+"各語はスペースで区切られます。一重引用符と二重引用符は同じ意味です。引用符も"
+"バックスラッシュでエスケープできます。 2文字でのエスケープシーケンスに使われ"
+"ているバックスラッシュは削除され、エスケープされていた文字だけが残ります。引"
+"用符は文字列から削除されます。語のリストが返ります。"
 
 #: ../../distutils/apiref.rst:1221
 msgid ""
@@ -1690,10 +2192,15 @@ msgid ""
 "it (to embody the \"external action\" being performed), and an optional "
 "message to print."
 msgstr ""
+"外部に影響するいくつかのアクション(たとえば、ファイルシステムへの書き込み)を"
+"実行します。そのようなアクションは *dry_run* フラグで無効にする必要があるので"
+"特別です。この関数はその繁雑な処理を行います。関数と引数のタプル、(実行する"
+"「アクション」をはっきりさせるための)表示に使われる任意のメッセージを渡してく"
+"ださい。"
 
 #: ../../distutils/apiref.rst:1230
 msgid "Convert a string representation of truth to true (1) or false (0)."
-msgstr ""
+msgstr "真偽値をあらわす文字列を真(1)または偽(0)に変換します。"
 
 #: ../../distutils/apiref.rst:1232
 msgid ""
@@ -1701,6 +2208,9 @@ msgid ""
 "values are ``n``, ``no``, ``f``, ``false``,  ``off`` and ``0``.  Raises :exc:"
 "`ValueError` if *val*  is anything else."
 msgstr ""
+"真の値は ``y``, ``yes``, ``t``, ``true``, ``on`` そして ``1`` です。偽の値は "
+"``n``, ``no``, ``f``, ``false``,  ``off`` そして ``0`` です。 *val* が上のど"
+"れでもない時は :exc:`ValueError` を起こします。"
 
 #: ../../distutils/apiref.rst:1239
 msgid ""
@@ -1709,22 +2219,29 @@ msgid ""
 "is a list of files to compile; any files that don't end in :file:`.py` are "
 "silently skipped.  *optimize* must be one of the following:"
 msgstr ""
+"Python ソースファイル群をバイトコンパイルして :file:`__pycache__` サブディレ"
+"クトリ内に :file:`.pyc` ファイルを出力します。(:pep:`3147` と :pep:`488` を参"
+"照) *py_files* はコンパイルするファイルのリストです; :file:`.py` で終わらない"
+"ファイルは単にスキップされます。 *optimize* は次のうちの 1 つでなければなりま"
+"せん:"
 
 #: ../../distutils/apiref.rst:1244
 msgid "``0`` - don't optimize"
-msgstr ""
+msgstr "``0`` - 最適化しない"
 
 #: ../../distutils/apiref.rst:1245
 msgid "``1`` - normal optimization (like ``python -O``)"
-msgstr ""
+msgstr "``1`` - 通常の最適化 (``python -O`` のように)"
 
 #: ../../distutils/apiref.rst:1246
 msgid "``2`` - extra optimization (like ``python -OO``)"
-msgstr ""
+msgstr "``2`` - さらに最適化 (``python -OO`` のように)"
 
 #: ../../distutils/apiref.rst:1248
 msgid "If *force* is true, all files are recompiled regardless of timestamps."
 msgstr ""
+"もし *force* が真なら、全てのファイルがタイムスタンプに関係なく再コンパイルさ"
+"れます。"
 
 #: ../../distutils/apiref.rst:1250
 msgid ""
@@ -1735,12 +2252,19 @@ msgid ""
 "*prefix* is stripped).  You can supply either or both (or neither) of "
 "*prefix* and *base_dir*, as you wish."
 msgstr ""
+":term:`バイトコード <bytecode>` ファイルにエンコードされるソースファイル名"
+"は、デフォルトでは *py_files* が使われます。これを *prefix* と *basedir* で変"
+"更することができます。 *prefix* はそれぞれのソースファイル名から削除される文"
+"字列で、 *base_dir* は(*prefix* を削除したあと)先頭に追加されるディレクトリ名"
+"です。任意に *prefix* と *base_dir* のどちらか、両方を与える(与えない)ことが"
+"できます。"
 
 #: ../../distutils/apiref.rst:1257
 msgid ""
 "If *dry_run* is true, doesn't actually do anything that would affect the "
 "filesystem."
 msgstr ""
+"もし *dry_run* が真なら、ファイルシステムに影響することは何もされません。"
 
 #: ../../distutils/apiref.rst:1260
 msgid ""
@@ -1751,6 +2275,12 @@ msgid ""
 "The *direct* flag is used by the script generated in indirect mode; unless "
 "you know what you're doing, leave it set to ``None``."
 msgstr ""
+"バイトコンパイルは現在のインタプリタプロセスによって標準の :mod:`py_compile` "
+"モジュールを使って直接行われるか、テンポラリスクリプトを書いて間接的に行われ"
+"ます。通常は :func:`byte_compile` に直接かそうでないかをまかせます (詳細につ"
+"いてはソースをごらんください)。 *direct* フラグは関節モードで作成されたスクリ"
+"プトで使用されます。何をやっているか理解していない時は ``None`` のままにして"
+"おいてください。"
 
 #: ../../distutils/apiref.rst:1267
 msgid ""
@@ -1758,10 +2288,13 @@ msgid ""
 "their name, in a :file:`__pycache__` subdirectory instead of files without "
 "tag in the current directory."
 msgstr ""
+"カレントディレクトリにタグなしでファイルを作る代わりに、 :file:`__pycache__` "
+"サブディレクトリに :func:`import magic tag <imp.get_tag>` を使ってその名前で "
+"``.pyc`` ファイルを作成します。"
 
 #: ../../distutils/apiref.rst:1272
 msgid "Create ``.pyc`` files according to :pep:`488`."
-msgstr ""
+msgstr ":pep:`488` に従って ``.pyc`` ファイルを作成します。"
 
 #: ../../distutils/apiref.rst:1278
 msgid ""
@@ -1769,38 +2302,44 @@ msgid ""
 "by ensuring there are 8 spaces space after each newline. Note that it does "
 "no other modification of the string."
 msgstr ""
+":rfc:`822` ヘッダに含められるよう加工した *header* を返します。改行のあとには"
+"8つのスペースが追加されます。この関数は文字列に他の変更はしません。"
 
 #: ../../distutils/apiref.rst:1288
 msgid ":mod:`distutils.dist` --- The Distribution class"
-msgstr ""
+msgstr ":mod:`distutils.dist` --- Distribution クラス"
 
 #: ../../distutils/apiref.rst:1295
 msgid ""
 "This module provides the :class:`~distutils.core.Distribution` class, which "
 "represents the module distribution being built/installed/distributed."
 msgstr ""
+"このモジュールは、ビルド/インストール/配布するモジュールディストリビューショ"
+"ンを表す :class:`~distutils.core.Distribution` クラスを提供します。"
 
 #: ../../distutils/apiref.rst:1300
 msgid ":mod:`distutils.extension` --- The Extension class"
-msgstr ""
+msgstr ":mod:`distutils.extension` --- Extension クラス"
 
 #: ../../distutils/apiref.rst:1307
 msgid ""
 "This module provides the :class:`Extension` class, used to describe C/C++ "
 "extension modules in setup scripts."
 msgstr ""
+"このモジュールは :class:`Extension` クラスを提供します。 C/C++拡張モジュール"
+"をセットアップスクリプトで表すために使われます。"
 
 #: ../../distutils/apiref.rst:1315
 msgid ":mod:`distutils.debug` --- Distutils debug mode"
-msgstr ""
+msgstr ":mod:`distutils.debug` --- Distutils デバッグモード"
 
 #: ../../distutils/apiref.rst:1321
 msgid "This module provides the DEBUG flag."
-msgstr ""
+msgstr "このモジュールはDEBUGフラグを提供します。"
 
 #: ../../distutils/apiref.rst:1325
 msgid ":mod:`distutils.errors` --- Distutils exceptions"
-msgstr ""
+msgstr ":mod:`distutils.errors` --- Distutils 例外"
 
 #: ../../distutils/apiref.rst:1331
 msgid ""
@@ -1809,37 +2348,47 @@ msgid ""
 "raised for errors that are obviously the end-user's fault (eg. bad command-"
 "line arguments)."
 msgstr ""
+"distutilsのモジュールで使用される例外を提供します。 distutilsのモジュールは標"
+"準的な例外を起こします。特に、 SystemExit はエンドユーザによる失敗(コマンドラ"
+"イン引数の間違いなど)で起きます。"
 
 #: ../../distutils/apiref.rst:1335
 msgid ""
 "This module is safe to use in ``from ... import *`` mode; it only exports "
 "symbols whose names start with ``Distutils`` and end with ``Error``."
 msgstr ""
+"このモジュールは ``from ... import *`` で安全に使用することができます。このモ"
+"ジュールは ``Distutils`` ではじまり、 ``Error`` で終わるシンボルしかexportし"
+"ません。"
 
 #: ../../distutils/apiref.rst:1340
 msgid ""
 ":mod:`distutils.fancy_getopt` --- Wrapper around the standard getopt module"
-msgstr ""
+msgstr ":mod:`distutils.fancy_getopt` --- 標準 getopt モジュールのラッパ"
 
 #: ../../distutils/apiref.rst:1346
 msgid ""
 "This module provides a wrapper around the standard :mod:`getopt`  module "
 "that provides the following additional features:"
 msgstr ""
+"このモジュールは以下の機能を標準の :mod:`getopt` モジュールに追加するラッパを"
+"提供します:"
 
 #: ../../distutils/apiref.rst:1349
 msgid "short and long options are tied together"
-msgstr ""
+msgstr "短いオプションと長いオプションを関連づけます"
 
 #: ../../distutils/apiref.rst:1351
 msgid ""
 "options have help strings, so :func:`fancy_getopt` could potentially  create "
 "a complete usage summary"
 msgstr ""
+"オプションはヘルプ文字列なので、 :func:`fancy_getopt` に完全な利用方法サマリ"
+"を作らせることもできます"
 
 #: ../../distutils/apiref.rst:1354
 msgid "options set attributes of a passed-in object"
-msgstr ""
+msgstr "オプションは渡されたオブジェクトの属性を設定します。"
 
 #: ../../distutils/apiref.rst:1356
 msgid ""
@@ -1847,6 +2396,9 @@ msgid ""
 "is the \"negative alias\" of :option:`!--verbose`, then :option:`!--quiet` "
 "on the command line sets *verbose* to false."
 msgstr ""
+"真偽値をとるオプションは \"負のエイリアス\" を持ちます。--- たとえば :option:"
+"`!--quiet` の \"負のエイリアス\" が :option:`!--verbose` の場合、コマンドライ"
+"ンで :option:`!--quiet` を指定すると *verbose* は偽になります。"
 
 #: ../../distutils/apiref.rst:1362
 msgid ""
@@ -1858,16 +2410,25 @@ msgid ""
 "`getopt` method of the :class:`FancyGetopt` class). *args* is the argument "
 "list. Will use ``sys.argv[1:]`` if you  pass ``None`` as *args*."
 msgstr ""
+"ラッパ関数。 *options* は :class:`FancyGetopt` のコンストラクタで説明されてい"
+"る ``(long_option, short_option, help_string)`` の3要素タプルのリストです。 "
+"*negative_opt* はオプション名からオプション名のマッピングになっている辞書で、"
+"キー、値のどちらも *options* リストに含まれている必要があります。 *object* は"
+"値を保存するオブジェクト(:class:`FancyGetopt` クラスの :meth:`getopt` メソッ"
+"ドを参照してください)です。 *args* は引数のリストです。 *args* として "
+"``None`` を渡すと、 ``sys.argv[1:]`` が使われます。"
 
 #: ../../distutils/apiref.rst:1373
 msgid "Wraps *text* to less than *width* wide."
-msgstr ""
+msgstr "*text* を *width* 以下の幅で折り返します。"
 
 #: ../../distutils/apiref.rst:1378
 msgid ""
 "The option_table is a list of 3-tuples: ``(long_option, short_option, "
 "help_string)``"
 msgstr ""
+"option_table は 3つ組タプルのリストです。 ``(long_option, short_option, "
+"help_string)``"
 
 #: ../../distutils/apiref.rst:1381
 msgid ""
@@ -1876,14 +2437,21 @@ msgid ""
 "any case. *short_option* should be ``None`` if a *long_option*  doesn't have "
 "a corresponding *short_option*. All option tuples must have long options."
 msgstr ""
+"もしオプションが引数を持つなら、 *long_option* に ``'='`` を追加する必要があ"
+"ります。 *short_option* は一文字のみで、 ``':'`` はどの場合にも不要です。 "
+"*long_option* に対応する *short_option* がない場合、 *short_option* は "
+"``None`` にしてください。全てのオプションタプルは長い形式のオプションを持つ必"
+"要があります。"
 
 #: ../../distutils/apiref.rst:1386
 msgid "The :class:`FancyGetopt` class provides the following methods:"
-msgstr ""
+msgstr ":class:`FancyGetopt` クラスは以下のメソッドを提供します:"
 
 #: ../../distutils/apiref.rst:1391
 msgid "Parse command-line options in args. Store as attributes on *object*."
 msgstr ""
+"argsのコマンドラインオプションを解析します。 *object* に属性として保存しま"
+"す。"
 
 #: ../../distutils/apiref.rst:1393
 msgid ""
@@ -1894,6 +2462,13 @@ msgid ""
 "returns *args*; in both cases, the returned *args* is a modified copy of the "
 "passed-in *args* list, which is left untouched."
 msgstr ""
+"もし *args* が ``None`` もしくは与えられない場合には、 ``sys.argv[1:]`` を使"
+"います。もし *object* が ``None`` もしくは与えられない場合には、新しく :"
+"class:`OptionDummy` インスタンスを作成し、オプションの値を保存したのち "
+"``(args, object)`` のタプルを返します。もし *object* が提供されていれば、その"
+"場で変更され、 :func:`getopt` は *args* のみを返します。どちらのケースでも、"
+"返された *args* は渡された *args* リスト(これは変更されません)の変更されたコ"
+"ピーです。"
 
 #: ../../distutils/apiref.rst:1405
 msgid ""
@@ -1901,34 +2476,41 @@ msgid ""
 "of :meth:`getopt`  Raises :exc:`RuntimeError` if :meth:`getopt` hasn't been "
 "called yet."
 msgstr ""
+"直前に実行された :meth:`getopt` が処理した ``(option, value)`` タプルのリスト"
+"を返します。 :meth:`getopt` がまだ呼ばれていない場合には :exc:`RuntimeError` "
+"を起こします。"
 
 #: ../../distutils/apiref.rst:1412
 msgid ""
 "Generate help text (a list of strings, one per suggested line of output) "
 "from the option table for this :class:`FancyGetopt` object."
 msgstr ""
+"この :class:`FancyGetopt` オブジェクトのオプションテーブルからヘルプテキスト"
+"(出力の一行に対応する文字列のリスト)を生成します。"
 
 #: ../../distutils/apiref.rst:1415
 msgid "If supplied, prints the supplied *header* at the top of the help."
-msgstr ""
+msgstr "もし与えられていれば、 *header* をヘルプの先頭に出力します。"
 
 #: ../../distutils/apiref.rst:1419
 msgid ":mod:`distutils.filelist` --- The FileList class"
-msgstr ""
+msgstr ":mod:`distutils.filelist` --- FileList クラス"
 
 #: ../../distutils/apiref.rst:1426
 msgid ""
 "This module provides the :class:`FileList` class, used for poking about the "
 "filesystem and building lists of files."
 msgstr ""
+"このモジュールはファイルシステムを見て、ファイルのリストを構築するために使わ"
+"れる :class:`FileList` クラスを提供します。"
 
 #: ../../distutils/apiref.rst:1431
 msgid ":mod:`distutils.log` --- Simple :pep:`282`-style logging"
-msgstr ""
+msgstr ":mod:`distutils.log` --- シンプルな :pep:`282` 形式のロギング"
 
 #: ../../distutils/apiref.rst:1438
 msgid ":mod:`distutils.spawn` --- Spawn a sub-process"
-msgstr ""
+msgstr ":mod:`distutils.spawn` --- サブプロセスの生成"
 
 #: ../../distutils/apiref.rst:1444
 msgid ""
@@ -1937,10 +2519,14 @@ msgid ""
 "Also provides :func:`find_executable` to search the path for a given "
 "executable name."
 msgstr ""
+"このモジュールは :func:`spawn` 関数を提供します。これは様々なプラットフォーム"
+"依存の他プログラムをサブプロセスとして実行する関数に対するフロントエンドに"
+"なっています。与えられた実行ファイルの名前からパスを探索する :func:"
+"`find_executable` 関数も提供しています。"
 
 #: ../../distutils/apiref.rst:1451
 msgid ":mod:`distutils.sysconfig` --- System configuration information"
-msgstr ""
+msgstr ":mod:`distutils.sysconfig` --- システム設定情報"
 
 #: ../../distutils/apiref.rst:1455
 msgid ":mod:`distutils.sysconfig` has been merged into :mod:`sysconfig`."
@@ -1957,26 +2543,37 @@ msgid ""
 "header is called :file:`pyconfig.h` for Python versions starting with 2.2, "
 "and :file:`config.h` for earlier versions of Python."
 msgstr ""
+":mod:`distutils.sysconfig` モジュールでは、 Python の低水準の設定情報へのアク"
+"セス手段を提供しています。アクセスできる設定情報変数は、プラットフォームと設"
+"定自体に大きく左右されます。また、特定の変数は、使っているバージョンの "
+"Python のビルドプロセスに左右されます; こうした変数は、 Unix システムでは、 :"
+"file:`Makefile` や Python と一緒にインストールされる設定ヘッダから探し出され"
+"ます。設定ファイルのヘッダは、2.2 以降のバージョンでは :file:`pyconfig.h` 、"
+"それ以前のバージョンでは :file:`config.h` です。"
 
 #: ../../distutils/apiref.rst:1471
 msgid ""
 "Some additional functions are provided which perform some useful "
 "manipulations for other parts of the :mod:`distutils` package."
 msgstr ""
+"他にも、 :mod:`distutils` パッケージの別の部分を操作する上で便利な関数がいく"
+"つか提供されています。"
 
 #: ../../distutils/apiref.rst:1477
 msgid "The result of ``os.path.normpath(sys.prefix)``."
-msgstr ""
+msgstr "``os.path.normpath(sys.prefix)`` の返り値です。"
 
 #: ../../distutils/apiref.rst:1482
 msgid "The result of ``os.path.normpath(sys.exec_prefix)``."
-msgstr ""
+msgstr "``os.path.normpath(sys.exec_prefix)`` の返り値です。"
 
 #: ../../distutils/apiref.rst:1487
 msgid ""
 "Return the value of a single variable.  This is equivalent to "
 "``get_config_vars().get(name)``."
 msgstr ""
+"ある一つの設定変数に対する値を返します。 ``get_config_vars().get(name)`` と同"
+"じです。"
 
 #: ../../distutils/apiref.rst:1493
 msgid ""
@@ -1986,6 +2583,11 @@ msgid ""
 "a sequence giving the associated values. If a given name does not have a "
 "corresponding value, ``None`` will be included for that variable."
 msgstr ""
+"定義されている変数のセットを返します。引数を指定しなければ、設定変数名を変数"
+"の値に対応付けるマップ型を返します。引数を指定する場合、引数の各値は文字列で"
+"なければならず、戻り値は引数に関連付けられた各設定変数の値からなるシーケンス"
+"になります。引数に指定した名前の設定変数に値がない場合、その変数に対する戻り"
+"値には ``None`` が入ります。"
 
 #: ../../distutils/apiref.rst:1502
 msgid ""
@@ -1994,6 +2596,10 @@ msgid ""
 "platforms the header will have been supplied directly by the Python source "
 "distribution.  The file is a platform-specific text file."
 msgstr ""
+"設定ヘッダのフルパス名を返します。 Unixの場合、このヘッダファイルは :program:"
+"`configure` スクリプトによって生成されるヘッダファイル名です; 他のプラット"
+"フォームでは、ヘッダは Python ソース配布物中で直接与えられています。ファイル"
+"はプラットフォーム固有のテキストファイルです。"
 
 #: ../../distutils/apiref.rst:1510
 msgid ""
@@ -2002,6 +2608,11 @@ msgid ""
 "meaning for other platforms will vary.  The file is a platform-specific text "
 "file, if it exists. This function is only useful on POSIX platforms."
 msgstr ""
+"Python をビルドする際に用いる :file:`Makefile` のフルパスを返します。 Unixの"
+"場合、このファイルは :program:`configure` スクリプトによって生成されます; 他"
+"のプラットフォームでは、この関数の返す値の意味は様々です。有意なファイル名を"
+"返す場合、ファイルはプラットフォーム固有のテキストファイル形式です。この関数"
+"は POSIX プラットフォームでのみ有用です。"
 
 #: ../../distutils/apiref.rst:1515
 msgid ""
@@ -2018,6 +2629,13 @@ msgid ""
 "const:`PREFIX`, or as the exec-prefix instead of :const:`EXEC_PREFIX` if "
 "*plat_specific* is true."
 msgstr ""
+"C インクルードファイルディレクトリについて、一般的なディレクトリ名か、プラッ"
+"トフォーム依存のディレクトリ名のいずれかを返します。 *plat_specific* が真であ"
+"れば、プラットフォーム依存のインクルードディレクトリ名を返します; "
+"*plat_specific* が偽か、省略された場合には、プラットフォームに依存しないディ"
+"レクトリを返します。 *prefix* が指定されていれば、 :const:`PREFIX` の代わりに"
+"用いられます。また、 *plat_specific* が真の場合、 :const:`EXEC_PREFIX` の代わ"
+"りに用いられます。"
 
 #: ../../distutils/apiref.rst:1531
 msgid ""
@@ -2030,18 +2648,29 @@ msgid ""
 "directory for the standard library is returned rather than the directory for "
 "the installation of third-party extensions."
 msgstr ""
+"ライブラリディレクトリについて、一般的なディレクトリ名か、プラットフォーム依"
+"存のディレクトリ名のいずれかを返します。 *plat_specific* が真であれば、プラッ"
+"トフォーム依存のライブラリディレクトリ名を返します; *plat_specific* が偽か、"
+"省略された場合には、プラットフォームに依存しないディレクトリを返します。 "
+"*prefix* が指定されていれば、 :const:`PREFIX` の代わりに用いられます。また、 "
+"*plat_specific* が真の場合、 :const:`EXEC_PREFIX` の代わりに用いられます。 "
+"*standard_lib* が真であれば、サードパーティ製の拡張モジュールをインストールす"
+"るディレクトリの代わりに、標準ライブラリのディレクトリを返します。"
 
 #: ../../distutils/apiref.rst:1540
 msgid ""
 "The following function is only intended for use within the :mod:`distutils` "
 "package."
 msgstr ""
+"以下の関数は、 :mod:`distutils` パッケージ内の使用だけを前提にしています。"
 
 #: ../../distutils/apiref.rst:1546
 msgid ""
 "Do any platform-specific customization of a :class:`distutils.ccompiler."
 "CCompiler` instance."
 msgstr ""
+":class:`distutils.ccompiler.CCompiler` インスタンスに対して、プラットフォーム"
+"固有のカスタマイズを行います。"
 
 #: ../../distutils/apiref.rst:1549
 msgid ""
@@ -2051,12 +2680,19 @@ msgid ""
 "This information includes the selected compiler, compiler and linker "
 "options, and the extension used by the linker for shared objects."
 msgstr ""
+"この関数は現在のところ、Unix だけで必要ですが、将来の互換性を考慮して一貫して"
+"常に呼び出されます。この関数は様々な Unix の変種ごとに異なる情報や、Python "
+"の :file:`Makefile` に書かれた情報をインスタンスに挿入します。この情報には、"
+"選択されたコンパイラやコンパイラ/リンカのオプション、そして共有オブジェクトを"
+"扱うためにリンカに指定する拡張子が含まれます。"
 
 #: ../../distutils/apiref.rst:1555
 msgid ""
 "This function is even more special-purpose, and should only be used from "
 "Python's own build procedures."
 msgstr ""
+"この関数はもっと特殊用途向けで、Python 自体のビルドプロセスでのみ使われるべき"
+"です。"
 
 #: ../../distutils/apiref.rst:1561
 msgid ""
@@ -2065,10 +2701,14 @@ msgid ""
 "for files, allowing them to be located in the build area rather than in an "
 "installed Python."
 msgstr ""
+":mod:`distutils.sysconfig` モジュールに、モジュールが Python のビルドプロセス"
+"の一部として使われることを知らせます。これによって、ファイルコピー先を示す相"
+"対位置が大幅に変更され、インストール済みの Python ではなく、ビルド作業領域に"
+"ファイルが置かれるようになります。"
 
 #: ../../distutils/apiref.rst:1568
 msgid ":mod:`distutils.text_file` --- The TextFile class"
-msgstr ""
+msgstr ":mod:`distutils.text_file` --- TextFile クラス"
 
 #: ../../distutils/apiref.rst:1574
 msgid ""
@@ -2076,6 +2716,9 @@ msgid ""
 "to text files that (optionally) takes care of stripping comments, ignoring  "
 "blank lines, and joining lines with backslashes."
 msgstr ""
+"このモジュールは :class:`TextFile` クラスを提供します。これはテキストファイル"
+"へのインターフェースを提供し、コメントの削除、空行の無視、バックスラッシュで"
+"の行の連結を任意に行えます。"
 
 #: ../../distutils/apiref.rst:1581
 msgid ""
@@ -2086,6 +2729,11 @@ msgid ""
 "at end of line), strip leading and/or trailing whitespace.  All of these are "
 "optional and independently controllable."
 msgstr ""
+"このクラスはファイルのようなオブジェクトを提供します。これは行指向のテキスト"
+"ファイルを処理する時に共通して必要となる処理を行います: (``#`` がコメント文字"
+"なら)コメントの削除、空行のスキップ、 (行末のバックスラッシュでの)改行のエス"
+"ケープによる行の連結、先頭/末尾の空白文字の削除。これらは全て独立して任意に設"
+"定できます。"
 
 #: ../../distutils/apiref.rst:1588
 msgid ""
@@ -2094,6 +2742,10 @@ msgid ""
 "question spans multiple physical lines.  Also  provides :meth:`unreadline` "
 "for implementing line-at-a-time lookahead."
 msgstr ""
+"クラスは :meth:`warn` メソッドを提供しており、物理行つきの警告メッセージを生"
+"成することができます。この物理行は論理行が複数の物理行にまたがっていても大丈"
+"夫です。また :meth:`unreadline` メソッドが一行先読みを実装するために提供され"
+"ています。"
 
 #: ../../distutils/apiref.rst:1593
 msgid ""
@@ -2105,20 +2757,27 @@ msgid ""
 "messages.  If *file* is not supplied, :class:`TextFile` creates its own "
 "using the :func:`open` built-in function."
 msgstr ""
+":class:`TextFile` のインスタンスは *filename*, *file*,またはその両方をとって"
+"作成されます。両方が ``None`` の場合 :exc:`RuntimeError` が起きます。 "
+"*filename* は文字列、 *file* はファイルオブジェクト(または :meth:`readline` "
+"と :meth:`close` のメソッドを提供する何か) である必要があります。 :class:"
+"`TextFile` が生成する警告メッセージに含めることができるので、 *filename* を与"
+"えることが推奨されます、もし *file* が提供されなければ、 :class:`TextFile` は"
+"組み込みの :func:`open` を利用して自分で作成します。"
 
 #: ../../distutils/apiref.rst:1601
 msgid ""
 "The options are all boolean, and affect the values returned by :meth:"
 "`readline`"
-msgstr ""
+msgstr "オプションは全て真偽値で、 :meth:`readline` で返される値に影響します。"
 
 #: ../../distutils/apiref.rst:1606
 msgid "option name"
-msgstr ""
+msgstr "オプション名"
 
 #: ../../distutils/apiref.rst:1606
 msgid "default"
-msgstr ""
+msgstr "default"
 
 #: ../../distutils/apiref.rst:1608
 msgid "*strip_comments*"
@@ -2129,11 +2788,13 @@ msgid ""
 "strip from ``'#'`` to end-of-line, as well as any whitespace leading up to "
 "the ``'#'``\\ ---unless it is escaped by a backslash"
 msgstr ""
+"バックスラッシュでエスケープされていない限り、``'#'`` から行末までと、"
+"``'#'`` の先にある空白文字の並びを削除します"
 
 #: ../../distutils/apiref.rst:1608 ../../distutils/apiref.rst:1617
 #: ../../distutils/apiref.rst:1622
 msgid "true"
-msgstr ""
+msgstr "true"
 
 #: ../../distutils/apiref.rst:1614
 msgid "*lstrip_ws*"
@@ -2141,12 +2802,12 @@ msgstr "*lstrip_ws*"
 
 #: ../../distutils/apiref.rst:1614
 msgid "strip leading whitespace from each line before returning it"
-msgstr ""
+msgstr "行を返す前に先頭の空白文字の並びを削除します。"
 
 #: ../../distutils/apiref.rst:1614 ../../distutils/apiref.rst:1632
 #: ../../distutils/apiref.rst:1643
 msgid "false"
-msgstr ""
+msgstr "false"
 
 #: ../../distutils/apiref.rst:1617
 msgid "*rstrip_ws*"
@@ -2156,7 +2817,7 @@ msgstr "*rstrip_ws*"
 msgid ""
 "strip trailing whitespace (including line terminator!) from each line before "
 "returning it."
-msgstr ""
+msgstr "行を返す前に行末の空白文字(改行文字を含みます!)の並びを削除します。"
 
 #: ../../distutils/apiref.rst:1622
 msgid "*skip_blanks*"
@@ -2169,6 +2830,9 @@ msgid ""
 "solely whitespace: these will \\*not\\* be skipped, even if *skip_blanks* is "
 "true.)"
 msgstr ""
+"コメントと空白を除いた\\*あとで\\*内容がない行をスキップします。 (もし "
+"lstrip_ws と rstrip_ws がともに偽なら、空白文字だけの行があるかもしれません。"
+"これは *skip_blanks* が真でない限りスキップされません。)"
 
 #: ../../distutils/apiref.rst:1632
 msgid "*join_lines*"
@@ -2181,6 +2845,9 @@ msgid ""
 "line; if N consecutive lines end with a backslash, then N+1 physical lines "
 "will be joined to form one logical line."
 msgstr ""
+"もしコメントと空白文字を削除したあとで、バックスラッシュが最後の改行文字でな"
+"い文字なら、次の行を接続して一つの論理行とします: N行の連続した行がバックス"
+"ラッシュで終わる場合、N+1 行の物理行が1行の論理行として扱われます。"
 
 #: ../../distutils/apiref.rst:1643
 msgid "*collapse_join*"
@@ -2191,6 +2858,8 @@ msgid ""
 "strip leading whitespace from lines that are joined to their predecessor; "
 "only matters if ``(join_lines and not lstrip_ws)``"
 msgstr ""
+"前の行と接続するとき、行頭の空白文字を削除します。 ``(join_lines and not "
+"lstrip_ws)`` の時だけ意味をもちます。"
 
 #: ../../distutils/apiref.rst:1650
 msgid ""
@@ -2200,18 +2869,27 @@ msgid ""
 "for end-of-file: an empty string might just be a  blank line (or an all-"
 "whitespace line), if *rstrip_ws* is true  but *skip_blanks* is not."
 msgstr ""
+"*rstrip_ws* は行末の改行を削除するので、 :meth:`readline` のセマンティクスが"
+"組み込みファイルオブジェクトの :meth:`readline` メソッドとは変わってしまいま"
+"す! 特に、 *rstrip_ws* が真で *skip_blanks* が偽のとき、 :meth:`readline` は"
+"ファイルの終端で ``None`` を返し、空文字列を返したときは空行(または全て空白文"
+"字の行)です。"
 
 #: ../../distutils/apiref.rst:1659
 msgid ""
 "Open a new file *filename*.  This overrides any *file* or *filename* "
 "constructor arguments."
 msgstr ""
+"新しいファイル *filename* を開きます。これはコンストラクタ引数の *file* と "
+"*filename* を上書きします。"
 
 #: ../../distutils/apiref.rst:1665
 msgid ""
 "Close the current file and forget everything we know about it (including the "
 "filename and the current line number)."
 msgstr ""
+"現在のファイルを閉じ、(ファイル名や現在の行番号を含め)現在のファイルについて"
+"の情報を全て消します。"
 
 #: ../../distutils/apiref.rst:1671
 msgid ""
@@ -2222,6 +2900,11 @@ msgid ""
 "may be a list or tuple  to indicate a range of physical lines, or an integer "
 "for a  single physical line."
 msgstr ""
+"標準エラー出力に現在のファイルの論理行に結びついた警告メッセージを出力しま"
+"す。もし現在の論理行が複数の物理行に対応するなら、警告メッセージは以下のよう"
+"に全体を参照します: ``\"lines 3-5\"`` 。もし *line* が与えられていれば、現在"
+"の行番号を上書きします; 物理行のレンジをあらわすリストまたはタプル、もしくは"
+"ある物理行をあらわす整数のどれでも与えられます。"
 
 #: ../../distutils/apiref.rst:1681
 msgid ""
@@ -2234,12 +2917,20 @@ msgid ""
 "end-of-file,  since the empty string can occur if *rstrip_ws* is true but  "
 "*strip_blanks* is not."
 msgstr ""
+"現在のファイル(または :meth:`unreadline` で\"unread\"を直前に行っていればバッ"
+"ファ)から論理行を1行読み込んで返します。もし *join_lines* オプションが真な"
+"ら、このメソッドは複数の物理行を読み込んで接続した文字列を返します。現在の行"
+"番号を更新します。そのため :meth:`readline` のあとに :meth:`warn` を呼ぶと丁"
+"度読んだ行についての警告を出します。 *rstrip_ws* が真で、 *strip_blanks* が偽"
+"のとき空文字列が返るので、ファイルの終端では ``None`` を返します。"
 
 #: ../../distutils/apiref.rst:1692
 msgid ""
 "Read and return the list of all logical lines remaining in the current file. "
 "This updates the current line number to the last line of the file."
 msgstr ""
+"現在のファイルで残っている全ての論理行のリストを読み込んで返します。行番号"
+"を、ファイルの最後の行に更新します。"
 
 #: ../../distutils/apiref.rst:1698
 msgid ""
@@ -2251,18 +2942,23 @@ msgid ""
 "meth:`unreadline` before a call to :meth:`readline`, the lines will be "
 "returned most in most recent first order."
 msgstr ""
+"*line* (文字列)を次の :meth:`readline` 用に、内部バッファにpushします。行の先"
+"読みを必要とするパーサを実装する時に便利です。 :meth:`unreadline` で"
+"\"unread\"された行は :meth:`readline` で読み込む際に再度処理(空白の除去など)"
+"されません。もし :meth:`unreadline` を、 :meth:`readline` を呼ぶ前に複数回実"
+"行すると、最後にunreadした行から返されます。"
 
 #: ../../distutils/apiref.rst:1707
 msgid ":mod:`distutils.version` --- Version number classes"
-msgstr ""
+msgstr ":mod:`distutils.version` --- バージョン番号クラス"
 
 #: ../../distutils/apiref.rst:1722
 msgid ":mod:`distutils.cmd` --- Abstract base class for Distutils commands"
-msgstr ""
+msgstr ":mod:`distutils.cmd` --- Distutils コマンドの抽象クラス"
 
 #: ../../distutils/apiref.rst:1729
 msgid "This module supplies the abstract base class :class:`Command`."
-msgstr ""
+msgstr "このモジュールは抽象ベースクラス :class:`Command` を提供します。"
 
 #: ../../distutils/apiref.rst:1734
 msgid ""
@@ -2279,20 +2975,33 @@ msgid ""
 "options, is the :meth:`run` method, which must also be implemented by every "
 "command class."
 msgstr ""
+"コマンドクラスを定義するための抽象ベースクラス --- distutilsの「働きバチ」 "
+"--- です。コマンドクラスは *options* とよばれるローカル変数を持ったサブルーチ"
+"ンと考えることができます。オプションは :meth:`initialize_options` で宣言さ"
+"れ、 :meth:`finalize_options` で定義さ(最終的な値を与えら)れます。どちらも全"
+"てのコマンドクラスで実装する必要があります。この2つの区別は必要です。なぜなら"
+"オプションの値は外部(コマンドライン、設定ファイルなど)から来るかもしれず、他"
+"のオプションに依存しているオプションは外部の影響を処理した後で計算される必要"
+"があるからです。そのため :meth:`finalize_options` が存在します。サブルーチン"
+"の本体は全ての処理をオプションの値にもとづいて行う :meth:`run` メソッドで、こ"
+"れも全てのコマンドクラスで実装される必要があります。"
 
 #: ../../distutils/apiref.rst:1747
 msgid ""
 "The class constructor takes a single argument *dist*, a :class:`~distutils."
 "core.Distribution` instance."
 msgstr ""
+"このクラスのコンストラクタは、 :class:`~distutils.core.Distribution` インスタ"
+"ンス *dist* 1 つを引数に取ります。"
 
 #: ../../distutils/apiref.rst:1752
 msgid "Creating a new Distutils command"
-msgstr ""
+msgstr "新しいDistutilsコマンドの作成"
 
 #: ../../distutils/apiref.rst:1754
 msgid "This section outlines the steps to create a new Distutils command."
 msgstr ""
+"このセクションではDistutilsの新しいコマンドを作成する手順の概要をしめします。"
 
 #: ../../distutils/apiref.rst:1756
 msgid ""
@@ -2306,10 +3015,20 @@ msgid ""
 "command/peel_banana.py`, then edit it so that it's implementing the class :"
 "class:`peel_banana`, a subclass of :class:`distutils.cmd.Command`."
 msgstr ""
+"新しいコマンドは :mod:`distutils.command` パッケージ中のモジュールに作られま"
+"す。 :file:`command_template` というディレクトリにサンプルのテンプレートがあ"
+"ります。このファイルを実装しようとしているコマンドと同名の新しいモジュールに"
+"コピーしてください。このモジュールはモジュール(とコマンド)と同じ名前のクラス"
+"を実装する必要があります。そのため、 ``peel_banana`` コマンド(ユーザは "
+"``setup.py peel_banana`` と実行できます)を実装する際には、 :file:"
+"`command_template` を :file:`distutils/command/peel_banana.py` にコピーし、 :"
+"class:`distutils.cmd.Command` のサブクラス :class:`peel_banana` クラスを実装"
+"するように編集してください。"
 
 #: ../../distutils/apiref.rst:1766
 msgid "Subclasses of :class:`Command` must define the following methods."
 msgstr ""
+":class:`Command` のサブクラスは以下のメソッドを実装する必要があります。"
 
 #: ../../distutils/apiref.rst:1770
 msgid ""
@@ -2320,6 +3039,11 @@ msgid ""
 "`initialize_options` implementations are just a bunch of ``self.foo = None`` "
 "assignments."
 msgstr ""
+"このコマンドがサポートする全てのオプションのデフォルト値を設定します。これら"
+"のデフォルトは他のコマンドやセットアップスクリプト、設定ファイル、コマンドラ"
+"インによって上書きされるかもしれません。そのためオプション間の依存関係を記述"
+"するには適切な場所ではありません。一般的に :meth:`initialize_options` は単に "
+"``self.foo = None`` のような定義だけを行います。"
 
 #: ../../distutils/apiref.rst:1779
 msgid ""
@@ -2330,6 +3054,12 @@ msgid ""
 "safe to set *foo* from *bar* as long as *foo* still has the same value it "
 "was assigned in :meth:`initialize_options`."
 msgstr ""
+"このコマンドがサポートする全てのオプションの最終的な値を設定します。これは可"
+"能な限り遅く呼び出されます。つまりコマンドラインや他のコマンドによるオプショ"
+"ンの代入のあとに呼び出されます。そのため、オプション間の依存関係を記述するの"
+"に適した場所です。もし *foo* が *bar* に依存しており、かつまだ *foo* が :"
+"meth:`initialize_options` で定義された値のままなら、 *foo* を *bar* から代入"
+"しても安全です。"
 
 #: ../../distutils/apiref.rst:1789
 msgid ""
@@ -2339,6 +3069,11 @@ msgid ""
 "files, and finalized in :meth:`finalize_options`.  All terminal output and "
 "filesystem interaction should be done by :meth:`run`."
 msgstr ""
+"コマンドの本体です。実行するべきアクションを実装しています。 :meth:"
+"`initialize_options` で初期化され、他のコマンドされ、セットアップスクリプト、"
+"コマンドライン、設定ファイルでカスタマイズされ、 :meth:`finalize_options` で"
+"設定されたオプションがアクションを制御します。端末への出力とファイルシステム"
+"とのやりとりは全て :meth:`run` が行います。"
 
 #: ../../distutils/apiref.rst:1798
 msgid ""
@@ -2353,6 +3088,15 @@ msgid ""
 "have any C header files to install.)  If *predicate* is ``None``, that "
 "command is always applicable."
 msgstr ""
+"*sub_commands* はコマンドの\"ファミリー\"を定式化したものです。たとえば "
+"``install`` はサブコマンド ``install_lib`` ``install_headers`` などの親です。"
+"コマンドファミリーの親は *sub_commands* をクラス属性として持ちます。 "
+"*sub_commands* は2要素のタプル ``(command_name, predicate)`` のリストで、 "
+"*command_name* は文字列、 *predicate* は関数か文字列か ``None`` です。 "
+"*predicate* はには親コマンドのメソッドで、現在の状況がコマンド実行にふさわし"
+"いかどうか判断するものを指定します。 (例えば ``install_headers`` はインストー"
+"ルするべき Cヘッダファイルがある時だけ有効です。) もし *predicate* が None な"
+"ら、そのコマンドは常に有効になります。"
 
 #: ../../distutils/apiref.rst:1809
 msgid ""
@@ -2360,52 +3104,60 @@ msgid ""
 "predicates can be methods of the class, so they must already have been "
 "defined.  The canonical example is the :command:`install` command."
 msgstr ""
+"*sub_commands* は通常クラスの *最後* で定義されます。これは predicate は "
+"bound されていないメソッドになるので、全て先に定義されている必要があるためで"
+"す。標準的な例は :command:`install` コマンドです。"
 
 #: ../../distutils/apiref.rst:1815
 msgid ":mod:`distutils.command` --- Individual Distutils commands"
-msgstr ""
+msgstr ":mod:`distutils.command` --- Distutils 各コマンド"
 
 #: ../../distutils/apiref.rst:1826
 msgid ":mod:`distutils.command.bdist` --- Build a binary installer"
-msgstr ""
+msgstr ":mod:`distutils.command.bdist` --- バイナリインストーラの構築"
 
 #: ../../distutils/apiref.rst:1836
 msgid ""
 ":mod:`distutils.command.bdist_packager` --- Abstract base class for packagers"
 msgstr ""
+":mod:`distutils.command.bdist_packager` --- パッケージの抽象ベースクラス"
 
 #: ../../distutils/apiref.rst:1846
 msgid ":mod:`distutils.command.bdist_dumb` --- Build a \"dumb\" installer"
-msgstr ""
+msgstr ":mod:`distutils.command.bdist_dumb` --- \"ダム\"インストーラを構築"
 
 #: ../../distutils/apiref.rst:1856
 msgid ""
 ":mod:`distutils.command.bdist_rpm` --- Build a binary distribution as a "
 "Redhat RPM and SRPM"
 msgstr ""
+":mod:`distutils.command.bdist_rpm` --- Redhat RPMとSRPM形式のバイナリディスト"
+"リビューションを構築"
 
 #: ../../distutils/apiref.rst:1866
 msgid ":mod:`distutils.command.sdist` --- Build a source distribution"
-msgstr ""
+msgstr ":mod:`distutils.command.sdist` --- ソース配布物の構築"
 
 #: ../../distutils/apiref.rst:1876
 msgid ":mod:`distutils.command.build` --- Build all files of a package"
-msgstr ""
+msgstr ":mod:`distutils.command.build` --- パッケージ中の全ファイルを構築"
 
 #: ../../distutils/apiref.rst:1886
 msgid ""
 ":mod:`distutils.command.build_clib` --- Build any C libraries in a package"
 msgstr ""
+":mod:`distutils.command.build_clib` --- パッケージ中のCライブラリを構築"
 
 #: ../../distutils/apiref.rst:1896
 msgid ""
 ":mod:`distutils.command.build_ext` --- Build any extensions in a package"
-msgstr ""
+msgstr ":mod:`distutils.command.build_ext` --- パッケージ中の拡張を構築"
 
 #: ../../distutils/apiref.rst:1906
 msgid ""
 ":mod:`distutils.command.build_py` --- Build the .py/.pyc files of a package"
 msgstr ""
+":mod:`distutils.command.build_py` --- パッケージ中の.py/.pyc ファイルを構築"
 
 #: ../../distutils/apiref.rst:1916
 msgid ""
@@ -2414,23 +3166,28 @@ msgid ""
 "setup.py file for a distribution that is designed to run with both Python 2."
 "x and 3.x, add::"
 msgstr ""
+"インストールされる各 .py ファイル上で 2to3 変換ライブラリをさらに実行する "
+"build_py の代替実装。Python 2.x と 3.x の両方で動くことを意図した配布物におい"
+"て setup.py ファイルの中でこれを使用するためには、setup.py に次のように付け加"
+"えてください::"
 
 #: ../../distutils/apiref.rst:1926
 msgid "to your setup.py, and later::"
-msgstr ""
+msgstr "そして::"
 
 #: ../../distutils/apiref.rst:1930
 msgid "to the invocation of setup()."
-msgstr ""
+msgstr "を setup() の呼び出しに追加してください。"
 
 #: ../../distutils/apiref.rst:1934
 msgid ""
 ":mod:`distutils.command.build_scripts` --- Build the scripts of a package"
 msgstr ""
+":mod:`distutils.command.build_scripts` --- パッケージ中のスクリプトを構築"
 
 #: ../../distutils/apiref.rst:1944
 msgid ":mod:`distutils.command.clean` --- Clean a package build area"
-msgstr ""
+msgstr ":mod:`distutils.command.clean` --- パッケージのビルドエリアを消去"
 
 #: ../../distutils/apiref.rst:1949
 msgid ""
@@ -2438,58 +3195,76 @@ msgid ""
 "subcommands, like intermediary compiled object files.  With the ``--all`` "
 "option, the complete build directory will be removed."
 msgstr ""
+"このコマンドは :command:`build` とそのサブコマンドによって作られた、中間コン"
+"パイルオブジェクトファイルのような一時ファイルを削除します。 ``--all`` オプ"
+"ションとともに使うと、 build ディレクトリ全体を削除します。"
 
 #: ../../distutils/apiref.rst:1953
 msgid ""
 "Extension modules built :ref:`in place <distutils-build-ext-inplace>` will "
 "not be cleaned, as they are not in the build directory."
 msgstr ""
+":ref:`in place <distutils-build-ext-inplace>` でビルドしたモジュールは、それ"
+"は build ディレクトリにいないので、削除されません。"
 
 #: ../../distutils/apiref.rst:1958
 msgid ":mod:`distutils.command.config` --- Perform package configuration"
-msgstr ""
+msgstr ":mod:`distutils.command.config` --- パッケージの設定"
 
 #: ../../distutils/apiref.rst:1968
 msgid ":mod:`distutils.command.install` --- Install a package"
-msgstr ""
+msgstr ":mod:`distutils.command.install` --- パッケージのインストール"
 
 #: ../../distutils/apiref.rst:1978
 msgid ""
 ":mod:`distutils.command.install_data` --- Install data files from a package"
 msgstr ""
+":mod:`distutils.command.install_data` --- パッケージ中のデータファイルをイン"
+"ストール"
 
 #: ../../distutils/apiref.rst:1988
 msgid ""
 ":mod:`distutils.command.install_headers` --- Install C/C++ header files from "
 "a package"
 msgstr ""
+":mod:`distutils.command.install_headers` --- パッケージから C/C++ ヘッダファ"
+"イルをインストール"
 
 #: ../../distutils/apiref.rst:1998
 msgid ""
 ":mod:`distutils.command.install_lib` --- Install library files from a package"
 msgstr ""
+":mod:`distutils.command.install_lib` --- パッケージからライブラリファイルをイ"
+"ンストール"
 
 #: ../../distutils/apiref.rst:2008
 msgid ""
 ":mod:`distutils.command.install_scripts` --- Install script files from a "
 "package"
 msgstr ""
+":mod:`distutils.command.install_scripts` --- パッケージからスクリプトファイル"
+"をインストール"
 
 #: ../../distutils/apiref.rst:2018
 msgid ""
 ":mod:`distutils.command.register` --- Register a module with the Python "
 "Package Index"
 msgstr ""
+":mod:`distutils.command.register` --- モジュールをPython Package Indexに登録"
+"する"
 
 #: ../../distutils/apiref.rst:2024
 msgid ""
 "The ``register`` command registers the package with the Python Package  "
 "Index. This is described in more detail in :pep:`301`."
 msgstr ""
+"``register`` コマンドはパッケージをPython Package Index に登録します。この詳"
+"細は :pep:`301` に記述されています。"
 
 #: ../../distutils/apiref.rst:2031
 msgid ":mod:`distutils.command.check` --- Check the meta-data of a package"
 msgstr ""
+":mod:`distutils.command.check` --- パッケージのメタデータをチェックする"
 
 #: ../../distutils/apiref.rst:2037
 msgid ""
@@ -2497,3 +3272,6 @@ msgid ""
 "example, it verifies that all required meta-data are provided as the "
 "arguments passed to the :func:`setup` function."
 msgstr ""
+"``check`` コマンドは、パッケージのメタデータに対していくつかのテストを行ない"
+"ます。例えば、すべての必要なメタデータが :func:`setup` 関数に渡された引数とし"
+"て提供されることを確認します。"

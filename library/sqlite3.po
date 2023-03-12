@@ -1,30 +1,37 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# Osamu NAKAMURA, 2021
+# Takanori Suzuki <takanori@takanory.net>, 2021
+# tomo, 2022
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-03 01:56+0000\n"
-"PO-Revision-Date: 2018-05-23 16:10+0000\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-03-03 14:14+0000\n"
+"PO-Revision-Date: 2021-06-28 01:13+0000\n"
+"Last-Translator: tomo, 2022\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../library/sqlite3.rst:2
 msgid ":mod:`sqlite3` --- DB-API 2.0 interface for SQLite databases"
-msgstr ":mod:`sqlite3` --- SQLite 資料庫的 DB-API 2.0 介面"
+msgstr ""
+":mod:`sqlite3` --- SQLite データベースに対する DB-API 2.0 インターフェース"
 
 #: ../../library/sqlite3.rst:9
 msgid "**Source code:** :source:`Lib/sqlite3/`"
-msgstr "**原始碼：**\\ :source:`Lib/sqlite3/`"
+msgstr "**ソースコード:** :source:`Lib/sqlite3/`"
 
 #: ../../library/sqlite3.rst:23
 msgid ""
@@ -35,6 +42,12 @@ msgid ""
 "application using SQLite and then port the code to a larger database such as "
 "PostgreSQL or Oracle."
 msgstr ""
+"SQLite は、軽量なディスク上のデータベースを提供する C ライブラリです。別の"
+"サーバプロセスを用意する必要なく、 SQL クエリー言語の非標準的な一種を使用して"
+"データベースにアクセスできます。一部のアプリケーションは内部データ保存に "
+"SQLite を使えます。また、SQLite を使ってアプリケーションのプロトタイプを作"
+"り、その後そのコードを PostgreSQL や Oracle のような大規模データベースに移植"
+"するということも可能です。"
 
 #: ../../library/sqlite3.rst:30
 msgid ""
@@ -76,6 +89,8 @@ msgid ""
 "The SQLite web page; the documentation describes the syntax and the "
 "available data types for the supported SQL dialect."
 msgstr ""
+"SQLite のウェブページ。ここの文書ではサポートされる SQL 方言の文法と使える"
+"データ型を説明しています。"
 
 #: ../../library/sqlite3.rst:50
 msgid "https://www.w3schools.com/sql/"
@@ -83,19 +98,19 @@ msgstr "https://www.w3schools.com/sql/"
 
 #: ../../library/sqlite3.rst:50
 msgid "Tutorial, reference and examples for learning SQL syntax."
-msgstr ""
+msgstr "SQL 学習に効くチュートリアル、リファレンス、実例集。"
 
 #: ../../library/sqlite3.rst:52
 msgid ":pep:`249` - Database API Specification 2.0"
-msgstr ""
+msgstr ":pep:`249` - Database API Specification 2.0"
 
 #: ../../library/sqlite3.rst:53
 msgid "PEP written by Marc-André Lemburg."
-msgstr "PEP 由 Marc-André Lemburg 撰寫。"
+msgstr "Marc-Andre Lemburg により書かれた PEP。"
 
 #: ../../library/sqlite3.rst:66
 msgid "Tutorial"
-msgstr ""
+msgstr "チュートリアル"
 
 #: ../../library/sqlite3.rst:68
 msgid ""
@@ -226,23 +241,23 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:238
 msgid ":ref:`sqlite3-placeholders`"
-msgstr ":ref:`sqlite3-placeholders`"
+msgstr ""
 
 #: ../../library/sqlite3.rst:239
 msgid ":ref:`sqlite3-adapters`"
-msgstr ":ref:`sqlite3-adapters`"
+msgstr ""
 
 #: ../../library/sqlite3.rst:240
 msgid ":ref:`sqlite3-converters`"
-msgstr ":ref:`sqlite3-converters`"
+msgstr ""
 
 #: ../../library/sqlite3.rst:241 ../../library/sqlite3.rst:557
 msgid ":ref:`sqlite3-connection-context-manager`"
-msgstr ":ref:`sqlite3-connection-context-manager`"
+msgstr ""
 
 #: ../../library/sqlite3.rst:242
 msgid ":ref:`sqlite3-howto-row-factory`"
-msgstr ":ref:`sqlite3-howto-row-factory`"
+msgstr ""
 
 #: ../../library/sqlite3.rst:244
 msgid ""
@@ -251,7 +266,7 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:249
 msgid "Reference"
-msgstr ""
+msgstr "リファレンス"
 
 #: ../../library/sqlite3.rst:257
 msgid "Module functions"
@@ -263,7 +278,7 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:0
 msgid "Parameters"
-msgstr "參數"
+msgstr "パラメーター"
 
 #: ../../library/sqlite3.rst:266
 msgid ""
@@ -335,21 +350,25 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../library/sqlite3.rst:67
+#: ../../library/sqlite3.rst:330
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sqlite3.connect`` with argument "
 "``database``."
 msgstr ""
+"引数 ``database`` を指定して :ref:`監査イベント <auditing>` ``sqlite3."
+"connect`` を送出します。 "
 
-#: ../../library/sqlite3.rst:68
+#: ../../library/sqlite3.rst:331
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sqlite3.connect/handle`` with "
 "argument ``connection_handle``."
 msgstr ""
+"引数 ``connection_handle`` を指定して :ref:`監査イベント <auditing>` "
+"``sqlite3.connect/handle`` を送出します。 "
 
 #: ../../library/sqlite3.rst:333
 msgid "The *uri* parameter."
-msgstr "*uri* 參數。"
+msgstr ""
 
 #: ../../library/sqlite3.rst:336
 msgid ""
@@ -370,7 +389,7 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:350
 msgid "For example:"
-msgstr "範例："
+msgstr "例えば:"
 
 #: ../../library/sqlite3.rst:359
 msgid ""
@@ -538,11 +557,11 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:512
 msgid "`threadsafety`_"
-msgstr "`threadsafety`_"
+msgstr ""
 
 #: ../../library/sqlite3.rst:512
 msgid "`SQLITE_THREADSAFE`_"
-msgstr "`SQLITE_THREADSAFE`_"
+msgstr ""
 
 #: ../../library/sqlite3.rst:512
 msgid "DB-API 2.0 meaning"
@@ -617,7 +636,7 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:556
 msgid ":ref:`sqlite3-connection-shortcuts`"
-msgstr ":ref:`sqlite3-connection-shortcuts`"
+msgstr ""
 
 #: ../../library/sqlite3.rst:559
 msgid "An SQLite database connection has the following attributes and methods:"
@@ -744,14 +763,14 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:664
 msgid "The *deterministic* parameter."
-msgstr "新增 *deterministic* 參數。"
+msgstr ""
 
 #: ../../library/sqlite3.rst:667 ../../library/sqlite3.rst:705
 #: ../../library/sqlite3.rst:768 ../../library/sqlite3.rst:1019
 #: ../../library/sqlite3.rst:1256 ../../library/sqlite3.rst:1383
 #: ../../library/sqlite3.rst:1404
 msgid "Example:"
-msgstr "範例："
+msgstr "例:"
 
 #: ../../library/sqlite3.rst:683
 msgid "Create or remove a user-defined SQL aggregate function."
@@ -998,11 +1017,13 @@ msgid ""
 "program:`configure`."
 msgstr ""
 
-#: ../../library/sqlite3.rst:17
+#: ../../library/sqlite3.rst:955
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sqlite3.enable_load_extension`` "
 "with arguments ``connection``, ``enabled``."
 msgstr ""
+"引数 ``connection``, ``enabled`` を指定して :ref:`監査イベント <auditing>` "
+"``sqlite3.enable_load_extension`` を送出します。 "
 
 #: ../../library/sqlite3.rst:959
 msgid "Added the ``sqlite3.enable_load_extension`` auditing event."
@@ -1015,11 +1036,13 @@ msgid ""
 "method."
 msgstr ""
 
-#: ../../library/sqlite3.rst:5
+#: ../../library/sqlite3.rst:1006
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``sqlite3.load_extension`` with "
 "arguments ``connection``, ``path``."
 msgstr ""
+"引数 ``connection``, ``path`` を指定して :ref:`監査イベント <auditing>` "
+"``sqlite3.load_extension`` を送出します。 "
 
 #: ../../library/sqlite3.rst:1010
 msgid "Added the ``sqlite3.load_extension`` auditing event."
@@ -1254,7 +1277,7 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:1331
 msgid "A :class:`Cursor` instance has the following attributes and methods."
-msgstr ""
+msgstr ":class:`Cursor` インスタンスは以下の属性やメソッドを持ちます。"
 
 #: ../../library/sqlite3.rst:1338
 msgid ""
@@ -1354,6 +1377,10 @@ msgid ""
 "attribute. If the *size* parameter is used, then it is best for it to retain "
 "the same value from one :meth:`fetchmany` call to the next."
 msgstr ""
+"*size* 引数とパフォーマンスの関係についての注意です。パフォーマンスを最適化す"
+"るためには、大抵、 arraysize 属性を利用するのがベストです。 *size* 引数を利用"
+"したのであれば、次の :meth:`fetchmany` の呼び出しでも同じ数を利用するのがベス"
+"トです。"
 
 #: ../../library/sqlite3.rst:1444
 msgid ""
@@ -1402,6 +1429,8 @@ msgstr ""
 #: ../../library/sqlite3.rst:1489
 msgid "It is set for ``SELECT`` statements without any matching rows as well."
 msgstr ""
+"この属性は ``SELECT`` 文にマッチする row が1つもなかった場合でもセットされま"
+"す。"
 
 #: ../../library/sqlite3.rst:1493
 msgid ""
@@ -1419,7 +1448,7 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:1503
 msgid "Added support for the ``REPLACE`` statement."
-msgstr "新增 ``REPLACE`` 陳述式的支援。"
+msgstr "``REPLACE`` 文のサポートが追加されました。"
 
 #: ../../library/sqlite3.rst:1508
 msgid ""
@@ -1473,7 +1502,7 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:1559
 msgid "Added support of slicing."
-msgstr ""
+msgstr "スライスがサポートされました。"
 
 #: ../../library/sqlite3.rst:1566
 msgid "Blob objects"
@@ -1645,26 +1674,28 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:1746
 msgid "SQLite and Python types"
-msgstr ""
+msgstr "SQLite と Python の型"
 
 #: ../../library/sqlite3.rst:1748
 msgid ""
 "SQLite natively supports the following types: ``NULL``, ``INTEGER``, "
 "``REAL``, ``TEXT``, ``BLOB``."
 msgstr ""
+"SQLite は以下の型をネイティブにサポートします: ``NULL``, ``INTEGER``, "
+"``REAL``, ``TEXT``, ``BLOB``。"
 
 #: ../../library/sqlite3.rst:1751
 msgid ""
 "The following Python types can thus be sent to SQLite without any problem:"
-msgstr ""
+msgstr "したがって、次の Python の型は問題なく SQLite に送り込めます:"
 
 #: ../../library/sqlite3.rst:1754 ../../library/sqlite3.rst:1771
 msgid "Python type"
-msgstr ""
+msgstr "Python の型"
 
 #: ../../library/sqlite3.rst:1754 ../../library/sqlite3.rst:1771
 msgid "SQLite type"
-msgstr ""
+msgstr "SQLite の型"
 
 #: ../../library/sqlite3.rst:1756 ../../library/sqlite3.rst:1773
 msgid "``None``"
@@ -1708,11 +1739,12 @@ msgstr "``BLOB``"
 
 #: ../../library/sqlite3.rst:1768
 msgid "This is how SQLite types are converted to Python types by default:"
-msgstr ""
+msgstr "SQLite の型から Python の型へのデフォルトでの変換は以下の通りです:"
 
 #: ../../library/sqlite3.rst:1779
 msgid "depends on :attr:`~Connection.text_factory`, :class:`str` by default"
 msgstr ""
+":attr:`~Connection.text_factory` に依存する。デフォルトでは :class:`str` 。"
 
 #: ../../library/sqlite3.rst:1785
 msgid ""
@@ -1725,13 +1757,16 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:1795
 msgid "Default adapters and converters"
-msgstr ""
+msgstr "デフォルトの適合関数と変換関数"
 
 #: ../../library/sqlite3.rst:1797
 msgid ""
 "There are default adapters for the date and datetime types in the datetime "
 "module. They will be sent as ISO dates/ISO timestamps to SQLite."
 msgstr ""
+"datetime モジュールの date 型および datetime 型のためのデフォルト適合関数があ"
+"ります。これらの型は ISO 日付 / ISO タイムスタンプとして SQLite に送られま"
+"す。"
 
 #: ../../library/sqlite3.rst:1800
 msgid ""
@@ -1739,6 +1774,8 @@ msgid ""
 "`datetime.date` and under the name \"timestamp\" for :class:`datetime."
 "datetime`."
 msgstr ""
+"デフォルトの変換関数は :class:`datetime.date` 用が \"date\" という名前で、 :"
+"class:`datetime.datetime` 用が \"timestamp\" という名前で登録されています。"
 
 #: ../../library/sqlite3.rst:1804
 msgid ""
@@ -1746,10 +1783,12 @@ msgid ""
 "fiddling in most cases. The format of the adapters is also compatible with "
 "the experimental SQLite date/time functions."
 msgstr ""
+"これにより、多くの場合特別な細工無しに Python の日付 / タイムスタンプを使えま"
+"す。適合関数の書式は実験的な SQLite の date/time 関数とも互換性があります。"
 
 #: ../../library/sqlite3.rst:1808
 msgid "The following example demonstrates this."
-msgstr ""
+msgstr "以下の例でこのことを確かめます。"
 
 #: ../../library/sqlite3.rst:1812
 msgid ""
@@ -1757,6 +1796,8 @@ msgid ""
 "its value will be truncated to microsecond precision by the timestamp "
 "converter."
 msgstr ""
+"SQLite に格納されているタイムスタンプが6桁より長い小数部を持っている場合、タ"
+"イムスタンプの変換関数によってマイクロ秒精度に丸められます。"
 
 #: ../../library/sqlite3.rst:1818
 msgid ""
@@ -2044,7 +2085,7 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:2356
 msgid "Explanation"
-msgstr "解釋"
+msgstr "説明"
 
 #: ../../library/sqlite3.rst:2361
 msgid "Transaction control"

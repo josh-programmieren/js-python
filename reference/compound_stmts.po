@@ -1,26 +1,33 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# tomo, 2021
+# Osamu NAKAMURA, 2021
+# Yusuke Miyazaki <miyazaki.dev@gmail.com>, 2021
+# 菊池 健志, 2023
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-22 00:16+0000\n"
-"PO-Revision-Date: 2018-05-23 16:17+0000\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:19+0000\n"
+"Last-Translator: 菊池 健志, 2023\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../reference/compound_stmts.rst:5
 msgid "Compound statements"
-msgstr ""
+msgstr "複合文 (compound statement)"
 
 #: ../../reference/compound_stmts.rst:9
 msgid ""
@@ -29,6 +36,9 @@ msgid ""
 "compound statements span multiple lines, although in simple incarnations a "
 "whole compound statement may be contained in one line."
 msgstr ""
+"複合文には、他の文 (のグループ) が入ります; 複合文は、中に入っている他の文の"
+"実行の制御に何らかのやり方で影響を及ぼします。一般的には、複合文は複数行にま"
+"たがって書かれますが、全部の文を一行に連ねた単純な書き方もあります。"
 
 #: ../../reference/compound_stmts.rst:14
 msgid ""
@@ -39,6 +49,11 @@ msgid ""
 "code around a block of code.  Function and class definitions are also "
 "syntactically compound statements."
 msgstr ""
+":keyword:`if` 、 :keyword:`while` 、および :keyword:`for` 文は、伝統的な制御"
+"フロー構成を実現します。 :keyword:`try` は例外処理および/または一連の文に対す"
+"るクリーンアップコードを指定します。それに対して、 :keyword:`with` 文はコード"
+"のかたまりの前後でコードの初期化と終了処理を実行できるようにします。関数とク"
+"ラス定義もまた、構文的には複合文です。"
 
 #: ../../reference/compound_stmts.rst:26
 msgid ""
@@ -54,6 +69,14 @@ msgid ""
 "clear to which :keyword:`if` clause a following :keyword:`else` clause would "
 "belong::"
 msgstr ""
+"複合文は、一つ以上の '節 (clause)' からなります。節は、ヘッダと 'スイート "
+"(suite)' からなります。一つの複合文を成す各節のヘッダは、全て同じインデントレ"
+"ベルに置かれます。各節のヘッダは一意に識別するキーワードで始まり、コロンで終"
+"わります。スイートは、節によって制御される文の集まりです。スイートは、ヘッダ"
+"がある行のコロンの後にセミコロンで区切って置かれた一つ以上の単純文、または、"
+"ヘッダに続く行で一つ多くインデントされた文の集まりです。後者の形式のスイート"
+"に限り、さらに複合文をネストできます; 以下の文は、 :keyword:`else` 節がどちら"
+"の :keyword:`if` 節に属するかがはっきりしないなどの理由から不正になります::"
 
 #: ../../reference/compound_stmts.rst:39
 msgid ""
@@ -61,10 +84,13 @@ msgid ""
 "so that in the following example, either all or none of the :func:`print` "
 "calls are executed::"
 msgstr ""
+"また、このコンテキスト中では、セミコロンによる結合はコロンより強いです。従っ"
+"て、以下の例では、 :func:`print` の呼び出しはは全て実行されるか、全く実行され"
+"ないかのどちらかです::"
 
 #: ../../reference/compound_stmts.rst:45
 msgid "Summarizing:"
-msgstr ""
+msgstr "まとめると、以下のようになります:"
 
 #: ../../reference/compound_stmts.rst:69
 msgid ""
@@ -74,20 +100,26 @@ msgid ""
 "'dangling :keyword:`else`' problem is solved in Python by requiring nested :"
 "keyword:`if` statements to be indented)."
 msgstr ""
+"なお、文は常に ``NEWLINE`` か、その後に ``DEDENT`` が続いたもので終了します。"
+"また、オプションの継続節は必ず、文を開始できない予約語で始まるので、曖昧さは"
+"存在しません。 (Python では、 'ぶら下がり (dangling) :keyword:`else`' 問題"
+"は、ネストされた :keyword:`if` 文をインデントさせることで解決されます)。"
 
 #: ../../reference/compound_stmts.rst:75
 msgid ""
 "The formatting of the grammar rules in the following sections places each "
 "clause on a separate line for clarity."
 msgstr ""
+"以下の節における文法規則の記述方式は、明確さのために、各節を別々の行に書くよ"
+"うにしています。"
 
 #: ../../reference/compound_stmts.rst:84
 msgid "The :keyword:`!if` statement"
-msgstr ""
+msgstr ":keyword:`!if` 文"
 
 #: ../../reference/compound_stmts.rst:92
 msgid "The :keyword:`if` statement is used for conditional execution:"
-msgstr ""
+msgstr ":keyword:`if` 文は、条件分岐を実行するために使われます:"
 
 #: ../../reference/compound_stmts.rst:99
 msgid ""
@@ -98,16 +130,22 @@ msgid ""
 "expressions are false, the suite of the :keyword:`else` clause, if present, "
 "is executed."
 msgstr ""
+":keyword:`if` 文は、式を一つ一つ評価してゆき、真になるまで続けて、真になった"
+"節のスイートだけを選択します (真: true と偽: false の定義については、 :ref:"
+"`booleans` 節を参照してください); 次に、選択したスイートを実行します (そし"
+"て、 :keyword:`if` 文の他の部分は、実行や評価をされません)。全ての式が偽に"
+"なった場合、 :keyword:`else` 節があれば、そのスイートが実行されます。"
 
 #: ../../reference/compound_stmts.rst:109
 msgid "The :keyword:`!while` statement"
-msgstr ""
+msgstr ":keyword:`!while` 文"
 
 #: ../../reference/compound_stmts.rst:117
 msgid ""
 "The :keyword:`while` statement is used for repeated execution as long as an "
 "expression is true:"
 msgstr ""
+":keyword:`while` 文は、式の値が真である間、実行を繰り返すために使われます:"
 
 #: ../../reference/compound_stmts.rst:124
 msgid ""
@@ -116,6 +154,9 @@ msgid ""
 "the suite of the :keyword:`!else` clause, if present, is executed and the "
 "loop terminates."
 msgstr ""
+":keyword:`while` 文は式を繰り返し真偽評価し、真であれば最初のスイートを実行し"
+"ます。式が偽であれば (最初から偽になっていることもありえます)、 :keyword:`!"
+"else` 節がある場合にはそれを実行し、ループを終了します。"
 
 #: ../../reference/compound_stmts.rst:133
 msgid ""
@@ -124,16 +165,23 @@ msgid ""
 "`continue` statement executed in the first suite skips the rest of the suite "
 "and goes back to testing the expression."
 msgstr ""
+"最初のスイート内で :keyword:`break` 文が実行されると、 :keyword:`!else` 節の"
+"スイートを実行することなくループを終了します。 :keyword:`continue` 文が最初の"
+"スイート内で実行されると、スイート内にある残りの文の実行をスキップして、式の"
+"真偽評価に戻ります。"
 
 #: ../../reference/compound_stmts.rst:142
 msgid "The :keyword:`!for` statement"
-msgstr ""
+msgstr ":keyword:`!for` 文"
 
 #: ../../reference/compound_stmts.rst:153
 msgid ""
 "The :keyword:`for` statement is used to iterate over the elements of a "
 "sequence (such as a string, tuple or list) or other iterable object:"
 msgstr ""
+":keyword:`for` 文は、シーケンス (文字列、タプルまたはリスト) や、その他の反復"
+"可能なオブジェクト (iterable object) 内の要素に渡って反復処理を行うために使わ"
+"れます:"
 
 #: ../../reference/compound_stmts.rst:160
 msgid ""
@@ -154,6 +202,11 @@ msgid ""
 "and continues with the next item, or with the :keyword:`!else` clause if "
 "there is no next item."
 msgstr ""
+"最初のスイートの中で :keyword:`break` 文が実行されると、 :keyword:`!else` 節"
+"のスイートを実行することなくループを終了します。\n"
+":keyword:`continue` 文が最初のスイート内で実行されると、スイート内にある残り"
+"の文の実行をスキップして、次の要素の処理に移るか、これ以上次の要素が無い場合"
+"は :keyword:`!else` 節の処理に移ります。"
 
 #: ../../reference/compound_stmts.rst:179
 msgid ""
@@ -161,6 +214,8 @@ msgid ""
 "overwrites all previous assignments to those variables including those made "
 "in the suite of the for-loop::"
 msgstr ""
+"for ループはターゲットリスト内の変数への代入を行います。\n"
+"これにより、for ループ内も含めて、それ以前の全ての代入は上書きされます::"
 
 #: ../../reference/compound_stmts.rst:193
 msgid ""
@@ -170,6 +225,10 @@ msgid ""
 "sequences of integers. For instance, iterating ``range(3)`` successively "
 "yields 0, 1, and then 2."
 msgstr ""
+"ループが終了してもターゲットリスト内の名前は削除されませんが、イテラブルが空"
+"の場合には、ループでの代入は全く行われません。ヒント: 組み込み型 :func:"
+"`range` は、 整数の不変算術列を表します。例えば、 ``range(3)`` を反復すると"
+"0、1そして2の順に結果を返します。"
 
 #: ../../reference/compound_stmts.rst:198
 msgid "Starred elements are now allowed in the expression list."
@@ -177,13 +236,15 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:205
 msgid "The :keyword:`!try` statement"
-msgstr ""
+msgstr ":keyword:`!try` 文"
 
 #: ../../reference/compound_stmts.rst:215
 msgid ""
 "The :keyword:`!try` statement specifies exception handlers and/or cleanup "
 "code for a group of statements:"
 msgstr ""
+":keyword:`!try` 文は、ひとまとめの文に対して、例外処理および/またはクリーン"
+"アップコードを指定します:"
 
 #: ../../reference/compound_stmts.rst:231
 msgid ""
@@ -191,6 +252,8 @@ msgid ""
 "`exceptions`, and information on using the :keyword:`raise` statement to "
 "generate exceptions may be found in section :ref:`raise`."
 msgstr ""
+"例外に関するその他の情報は :ref:`exceptions` 節にあります。また、 :keyword:"
+"`raise` 文の使用による例外の生成に関する情報は、 :ref:`raise` 節にあります。"
 
 #: ../../reference/compound_stmts.rst:239
 msgid ":keyword:`!except` clause"
@@ -212,6 +275,17 @@ msgid ""
 "tuple containing an item that is the class or a non-virtual base class of "
 "the exception object."
 msgstr ""
+":keyword:`!except` 節は一つ以上の例外ハンドラを指定します。 :keyword:`try` 節"
+"内で例外が起きなければ、どの例外ハンドラも実行されません。 :keyword:`!try` ス"
+"イート内で例外が発生すると、例外ハンドラの検索が開始されます。この検索では、:"
+"keyword:`!except` 節を逐次、発生した例外に対応するまで調べます。式を伴わな"
+"い :keyword:`!except` 節を使うなら、最後に書かなければならず、これは全ての例"
+"外に対応します。式を伴う :keyword:`!except` 節に対しては、その式が評価され、"
+"結果のオブジェクトが例外と \"互換である (compatible)\" 場合にその節が対応しま"
+"す。ある例外に対してオブジェクトが互換であるのは、そのオブジェクトが例外オブ"
+"ジェクトのクラスかその :term:`非仮想基底クラス <abstract base class>` の場"
+"合、または例外オブジェクトのクラスかその非仮想基底クラスの要素が入ったタプル"
+"である場合です。"
 
 #: ../../reference/compound_stmts.rst:256
 msgid ""
@@ -219,6 +293,8 @@ msgid ""
 "exception handler continues in the surrounding code and on the invocation "
 "stack.  [#]_"
 msgstr ""
+"例外がどの :keyword:`!except` 節にも合致しなかった場合、現在のコードを囲うさ"
+"らに外側、そして呼び出しスタックへと検索を続けます。 [#]_"
 
 #: ../../reference/compound_stmts.rst:260
 msgid ""
@@ -228,6 +304,10 @@ msgid ""
 "call stack (it is treated as if the entire :keyword:`try` statement raised "
 "the exception)."
 msgstr ""
+":keyword:`!except` 節のヘッダにある式を値評価するときに例外が発生すると、元々"
+"のハンドラ検索はキャンセルされ、新たな例外に対する例外ハンドラの検索を現在"
+"の :keyword:`except` 節の外側のコードや呼び出しスタックに対して行います (:"
+"keyword:`try` 文全体が例外を発行したかのように扱われます)。"
 
 #: ../../reference/compound_stmts.rst:268
 msgid ""
@@ -241,16 +321,26 @@ msgid ""
 "keyword:`!try` clause of the inner handler, the outer handler will not "
 "handle the exception.)"
 msgstr ""
+"対応する :keyword:`!except` 節が見つかると、:keyword:`!except` 節のスイートが"
+"実行されます。その際、 :keyword:`!as` キーワードが :keyword:`!except` 節に存"
+"在すれば、その後で指定されているターゲットに例外が代入されます。全ての :"
+"keyword:`!except` 節は実行可能なブロックを持っていなければなりません。このブ"
+"ロックの末尾に到達すると、通常は :keyword:`try` 文全体の直後から実行を継続し"
+"ます。(このことは、ネストされた二つの例外ハンドラが同じ例外に対して存在し、内"
+"側のハンドラ内の :keyword:`!try` 節で例外が発生した場合、外側のハンドラはその"
+"例外を処理しないことを意味します。)"
 
 #: ../../reference/compound_stmts.rst:279
 msgid ""
 "When an exception has been assigned using ``as target``, it is cleared at "
 "the end of the :keyword:`!except` clause.  This is as if ::"
 msgstr ""
+"例外が ``as target`` を使って代入されたとき、それは :keyword:`!except` 節の終"
+"わりに消去されます。これはちょうど、以下のコード::"
 
 #: ../../reference/compound_stmts.rst:285
 msgid "was translated to ::"
-msgstr ""
+msgstr "が、以下のコードに翻訳されたかのようなものです::"
 
 #: ../../reference/compound_stmts.rst:293
 msgid ""
@@ -260,6 +350,10 @@ msgid ""
 "with the stack frame, keeping all locals in that frame alive until the next "
 "garbage collection occurs."
 msgstr ""
+"よって、例外を :keyword:`!except` 節以降で参照できるようにするためには、別の"
+"名前に代入されなければなりません。例外が削除されるのは、トレースバックが付与"
+"されると、そのスタックフレームと循環参照を形作り、次のガベージ収集までそのフ"
+"レーム内のすべての局所変数を生存させてしまうからです。"
 
 #: ../../reference/compound_stmts.rst:303
 msgid ""
@@ -322,6 +416,11 @@ msgid ""
 "Exceptions in the :keyword:`!else` clause are not handled by the preceding :"
 "keyword:`except` clauses."
 msgstr ""
+"オプションの :keyword:`!else` 節は、コントロールフローが :keyword:`try` ス"
+"イートを抜け、例外が送出されず、 :keyword:`return` 文、 :keyword:`continue` "
+"文、 :keyword:`break` 文のいずれもが実行されなかった場合に実行されます。\n"
+":keyword:`!else` 節で起きた例外は、手前にある :keyword:`except` 節では処理さ"
+"れません。"
 
 #: ../../reference/compound_stmts.rst:410
 msgid ":keyword:`!finally` clause"
@@ -340,12 +439,23 @@ msgid ""
 "`return`, :keyword:`break` or :keyword:`continue` statement, the saved "
 "exception is discarded::"
 msgstr ""
+":keyword:`!finally` 節がある場合は、 '後始末' の対処を指定します。まず :"
+"keyword:`except` 節や :keyword:`else` 節を含め、 :keyword:`try` 節が実行され"
+"ます。それらの節の中で例外が起き、その例外が処理されていない場合には、例外は"
+"一時的に保存されます。次に :keyword:`!finally` 節が実行されます。保存された例"
+"外があった場合は、 :keyword:`!finally` 節の末尾で再送出されます。 :keyword:`!"
+"finally` 節で別の例外が送出される場合は、保存されていた例外は新しい例外のコン"
+"テキストとして設定されます。 :keyword:`!finally` 節で :keyword:`return` "
+"文、 :keyword:`break` 文あるいは :keyword:`continue` 文を実行した場合は、保存"
+"された例外は破棄されます::"
 
 #: ../../reference/compound_stmts.rst:431
 msgid ""
 "The exception information is not available to the program during execution "
 "of the :keyword:`!finally` clause."
 msgstr ""
+":keyword:`!finally` 節を実行している間は、プログラムからは例外情報は利用でき"
+"ません。"
 
 #: ../../reference/compound_stmts.rst:439
 msgid ""
@@ -354,6 +464,9 @@ msgid ""
 "finally` statement, the :keyword:`!finally` clause is also executed 'on the "
 "way out.'"
 msgstr ""
+":keyword:`try`...\\ :keyword:`!finally` 文の :keyword:`try` スイート内で :"
+"keyword:`return` 、 :keyword:`break` 、または :keyword:`continue` 文が実行さ"
+"れた場合、 :keyword:`!finally` 節も、この文を '抜け出る途中に' 実行されます。"
 
 #: ../../reference/compound_stmts.rst:443
 msgid ""
@@ -362,16 +475,21 @@ msgid ""
 "a :keyword:`!return` statement executed in the :keyword:`!finally` clause "
 "will always be the last one executed::"
 msgstr ""
+"関数の返り値は最後に実行された :keyword:`return` 文によって決まります。\n"
+":keyword:`!finally` 節は必ず実行されるため、:keyword:`!finally` 節で実行され"
+"た :keyword:`!return` 文は常に最後に実行されることになります::"
 
 #: ../../reference/compound_stmts.rst:457
 msgid ""
 "Prior to Python 3.8, a :keyword:`continue` statement was illegal in the :"
 "keyword:`!finally` clause due to a problem with the implementation."
 msgstr ""
+"Python3.8 以前では、実装上の問題により :keyword:`!finally` 節での :keyword:"
+"`continue` 文は不正でした。"
 
 #: ../../reference/compound_stmts.rst:466
 msgid "The :keyword:`!with` statement"
-msgstr ""
+msgstr ":keyword:`!with` 文"
 
 #: ../../reference/compound_stmts.rst:475
 msgid ""
@@ -380,36 +498,50 @@ msgid ""
 "This allows common :keyword:`try`...\\ :keyword:`except`...\\ :keyword:"
 "`finally` usage patterns to be encapsulated for convenient reuse."
 msgstr ""
+":keyword:`with` 文は、ブロックの実行を、コンテキストマネージャによって定義さ"
+"れたメソッドでラップするために使われます (:ref:`context-managers` セクション"
+"を参照してください)。これにより、よくある :keyword:`try`...\\ :keyword:"
+"`except`...\\ :keyword:`finally` 利用パターンをカプセル化して便利に再利用する"
+"ことができます。"
 
 #: ../../reference/compound_stmts.rst:485
 msgid ""
 "The execution of the :keyword:`with` statement with one \"item\" proceeds as "
 "follows:"
 msgstr ""
+"一つの \"要素\" を持つ :keyword:`with` 文の実行は以下のように進行します:"
 
 #: ../../reference/compound_stmts.rst:487
 msgid ""
 "The context expression (the expression given in the :token:`~python-grammar:"
 "with_item`) is evaluated to obtain a context manager."
 msgstr ""
+"コンテキスト式 (:token:`~python-grammar:with_item` で与えられた式) を評価する"
+"ことで、コンテキストマネージャを取得します。"
 
 #: ../../reference/compound_stmts.rst:490
 msgid "The context manager's :meth:`__enter__` is loaded for later use."
 msgstr ""
+"コンテキストマネージャの :meth:`__enter__` メソッドが、後で使うためにロードさ"
+"れます。"
 
 #: ../../reference/compound_stmts.rst:492
 msgid "The context manager's :meth:`__exit__` is loaded for later use."
 msgstr ""
+"コンテキストマネージャの :meth:`__exit__` メソッドが、後で使うためにロードさ"
+"れます。"
 
 #: ../../reference/compound_stmts.rst:494
 msgid "The context manager's :meth:`__enter__` method is invoked."
-msgstr ""
+msgstr "コンテキストマネージャの :meth:`__enter__` メソッドが呼ばれます。"
 
 #: ../../reference/compound_stmts.rst:496
 msgid ""
 "If a target was included in the :keyword:`with` statement, the return value "
 "from :meth:`__enter__` is assigned to it."
 msgstr ""
+":keyword:`with` 文にターゲットが含まれていたら、それに :meth:`__enter__` から"
+"の戻り値が代入されます。"
 
 #: ../../reference/compound_stmts.rst:501
 msgid ""
@@ -419,10 +551,14 @@ msgid ""
 "it will be treated the same as an error occurring within the suite would be. "
 "See step 7 below."
 msgstr ""
+":keyword:`with` 文は、 :meth:`__enter__` メソッドがエラーなく終了した場合に"
+"は :meth:`__exit__` が常に呼ばれることを保証します。ですので、もしターゲット"
+"リストへの代入中にエラーが発生した場合には、これはそのスイートの中で発生した"
+"エラーと同じように扱われます。以下のステップ 7 を参照してください。"
 
 #: ../../reference/compound_stmts.rst:507
 msgid "The suite is executed."
-msgstr ""
+msgstr "スイートが実行されます。"
 
 #: ../../reference/compound_stmts.rst:509
 msgid ""
@@ -431,6 +567,10 @@ msgid ""
 "arguments to :meth:`__exit__`. Otherwise, three :const:`None` arguments are "
 "supplied."
 msgstr ""
+"コンテキストマネージャの :meth:`__exit__` メソッドが呼ばれます。スイートが例"
+"外によって終了されたのなら、その例外の型、値、トレースバックが :meth:"
+"`__exit__` に引数として渡されます。そうでなければ、 3 つの :const:`None` 引数"
+"が与えられます。"
 
 #: ../../reference/compound_stmts.rst:514
 msgid ""
@@ -439,6 +579,9 @@ msgid ""
 "value was true, the exception is suppressed, and execution continues with "
 "the statement following the :keyword:`with` statement."
 msgstr ""
+"スイートが例外により終了され、 :meth:`__exit__` メソッドからの戻り値が偽"
+"（false）ならば、例外が再送出されます。この戻り値が真（true）ならば例外は抑制"
+"され、実行は :keyword:`with` 文の次の文から続きます。"
 
 #: ../../reference/compound_stmts.rst:519
 msgid ""
@@ -446,24 +589,29 @@ msgid ""
 "value from :meth:`__exit__` is ignored, and execution proceeds at the normal "
 "location for the kind of exit that was taken."
 msgstr ""
+"もしそのスイートが例外でない何らかの理由で終了した場合、その :meth:"
+"`__exit__` からの戻り値は無視されて、実行は発生した終了の種類に応じた通常の位"
+"置から継続します。"
 
 #: ../../reference/compound_stmts.rst:523
 #: ../../reference/compound_stmts.rst:1514
 #: ../../reference/compound_stmts.rst:1555
 msgid "The following code::"
-msgstr ""
+msgstr "以下のコード::"
 
 #: ../../reference/compound_stmts.rst:528
 #: ../../reference/compound_stmts.rst:553
 #: ../../reference/compound_stmts.rst:1560
 msgid "is semantically equivalent to::"
-msgstr ""
+msgstr "これは次と等価です::"
 
 #: ../../reference/compound_stmts.rst:547
 msgid ""
 "With more than one item, the context managers are processed as if multiple :"
 "keyword:`with` statements were nested::"
 msgstr ""
+"複数の要素があるとき、コンテキストマネージャは複数の :keyword:`with` 文がネス"
+"トされたかのように進行します::"
 
 #: ../../reference/compound_stmts.rst:559
 msgid ""
@@ -473,7 +621,7 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:568
 msgid "Support for multiple context expressions."
-msgstr ""
+msgstr "複数のコンテキスト式をサポートしました。"
 
 #: ../../reference/compound_stmts.rst:571
 msgid ""
@@ -483,17 +631,17 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:577
 msgid ":pep:`343` - The \"with\" statement"
-msgstr ""
+msgstr ":pep:`343` - \"with\" ステートメント"
 
 #: ../../reference/compound_stmts.rst:577
 msgid ""
 "The specification, background, and examples for the Python :keyword:`with` "
 "statement."
-msgstr ""
+msgstr "Python の :keyword:`with` 文の仕様、背景、および例が記載されています。"
 
 #: ../../reference/compound_stmts.rst:583
 msgid "The :keyword:`!match` statement"
-msgstr ""
+msgstr ":keyword:`!match` 文"
 
 #: ../../reference/compound_stmts.rst:597
 msgid "The match statement is used for pattern matching.  Syntax:"
@@ -530,16 +678,16 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:622
 #: ../../reference/compound_stmts.rst:1177
 msgid ":pep:`634` -- Structural Pattern Matching: Specification"
-msgstr ""
+msgstr ":pep:`634` -- 構造的パターンマッチ: 仕様"
 
 #: ../../reference/compound_stmts.rst:623
 #: ../../reference/compound_stmts.rst:1178
 msgid ":pep:`636` -- Structural Pattern Matching: Tutorial"
-msgstr ""
+msgstr ":pep:`636` -- 構造的パターンマッチ: チュートリアル"
 
 #: ../../reference/compound_stmts.rst:627
 msgid "Overview"
-msgstr ""
+msgstr "概要"
 
 #: ../../reference/compound_stmts.rst:629
 msgid "Here's an overview of the logical flow of a match statement:"
@@ -688,11 +836,11 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:742
 msgid ":ref:`capture-patterns`"
-msgstr ":ref:`capture-patterns`"
+msgstr ""
 
 #: ../../reference/compound_stmts.rst:744
 msgid ":ref:`wildcard-patterns`"
-msgstr ":ref:`wildcard-patterns`"
+msgstr ""
 
 #: ../../reference/compound_stmts.rst:746
 msgid "parenthesized irrefutable patterns"
@@ -1032,7 +1180,7 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:1015
 msgid "``len(subject) == <N>``"
-msgstr "``len(subject) == <N>``"
+msgstr ""
 
 #: ../../reference/compound_stmts.rst:1016
 msgid ""
@@ -1115,7 +1263,7 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:1065
 msgid "``KEY1 in <subject>``"
-msgstr "``KEY1 in <subject>``"
+msgstr ""
 
 #: ../../reference/compound_stmts.rst:1066
 msgid "``P1`` matches ``<subject>[KEY1]``"
@@ -1243,7 +1391,7 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:1142
 msgid ":ref:`class-pattern-matching`"
-msgstr ":ref:`class-pattern-matching`"
+msgstr ""
 
 #: ../../reference/compound_stmts.rst:1145
 msgid ""
@@ -1266,7 +1414,7 @@ msgstr ":class:`bool`"
 
 #: ../../reference/compound_stmts.rst:1151
 msgid ":class:`bytearray`"
-msgstr ":class:`bytearray`"
+msgstr ""
 
 #: ../../reference/compound_stmts.rst:1152
 msgid ":class:`bytes`"
@@ -1320,7 +1468,7 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:1168
 msgid "``isinstance(<subject>, CLS)``"
-msgstr "``isinstance(<subject>, CLS)``"
+msgstr ""
 
 #: ../../reference/compound_stmts.rst:1169
 msgid "convert ``P1`` to a keyword pattern using ``CLS.__match_args__``"
@@ -1332,7 +1480,7 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:1171
 msgid "``hasattr(<subject>, \"attr\")``"
-msgstr "``hasattr(<subject>, \"attr\")``"
+msgstr ""
 
 #: ../../reference/compound_stmts.rst:1172
 msgid "``P2`` matches ``<subject>.attr``"
@@ -1344,13 +1492,14 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:1188
 msgid "Function definitions"
-msgstr "函式定義"
+msgstr "関数定義"
 
 #: ../../reference/compound_stmts.rst:1203
 msgid ""
 "A function definition defines a user-defined function object (see section :"
 "ref:`types`):"
 msgstr ""
+"関数定義は、ユーザ定義関数オブジェクトを定義します (:ref:`types` 節参照):"
 
 #: ../../reference/compound_stmts.rst:1222
 msgid ""
@@ -1360,12 +1509,18 @@ msgid ""
 "a reference to the current global namespace as the global namespace to be "
 "used when the function is called."
 msgstr ""
+"関数定義は実行可能な文です。関数定義を実行すると、現在のローカルな名前空間内"
+"で関数名を関数オブジェクト (関数の実行可能コードをくるむラッパー) に束縛しま"
+"す。この関数オブジェクトには、関数が呼び出された際に使われるグローバルな名前"
+"空間として、現在のグローバルな名前空間への参照が入っています。"
 
 #: ../../reference/compound_stmts.rst:1228
 msgid ""
 "The function definition does not execute the function body; this gets "
 "executed only when the function is called. [#]_"
 msgstr ""
+"関数定義は関数本体を実行しません; 関数本体は関数が呼び出された時にのみ実行さ"
+"れます。 [#]_"
 
 #: ../../reference/compound_stmts.rst:1234
 msgid ""
@@ -1377,20 +1532,24 @@ msgid ""
 "function object.  Multiple decorators are applied in nested fashion. For "
 "example, the following code ::"
 msgstr ""
+"関数定義は一つ以上の :term:`デコレータ <decorator>` 式でラップできます。デコ"
+"レータ式は関数を定義するとき、関数定義の入っているスコープで評価されます。そ"
+"の結果は、関数オブジェクトを唯一の引数にとる呼び出し可能オブジェクトでなけれ"
+"ばなりません。関数オブジェクトの代わりに、返された値が関数名に束縛されます。"
+"複数のデコレータはネストして適用されます。例えば、以下のようなコード::"
 
 #: ../../reference/compound_stmts.rst:1245
 #: ../../reference/compound_stmts.rst:1422
 msgid "is roughly equivalent to ::"
-msgstr ""
-"大致等價於：\n"
-"\n"
-"::"
+msgstr "は、だいたい次と等価です ::"
 
 #: ../../reference/compound_stmts.rst:1250
 msgid ""
 "except that the original function is not temporarily bound to the name "
 "``func``."
 msgstr ""
+"ただし、前者のコードでは元々の関数を ``func`` という名前へ一時的に束縛するこ"
+"とはない、というところを除きます。"
 
 #: ../../reference/compound_stmts.rst:1252
 msgid ""
@@ -1409,6 +1568,13 @@ msgid ""
 "up until the \"``*``\" must also have a default value --- this is a "
 "syntactic restriction that is not expressed by the grammar."
 msgstr ""
+"1 つ以上の :term:`仮引数 <parameter>` が *parameter* ``=`` *expression* の形"
+"を取っているとき、関数は \"デフォルト引数値\" を持つと言います。デフォルト値"
+"を持つ仮引数では、呼び出し時にそれに対応する :term:`実引数 <argument>` は省略"
+"でき、その場合は仮引数のデフォルト値が使われます。ある引数がデフォルト値を"
+"持っている場合、それ以降 \"``*``\" が出てくるまでの引数は全てデフォルト値を"
+"持っていなければなりません -- これは文法定義では表現されていない構文的制限で"
+"す。"
 
 #: ../../reference/compound_stmts.rst:1270
 msgid ""
@@ -1422,6 +1588,15 @@ msgid ""
 "is generally not what was intended.  A way around this is to use ``None`` as "
 "the default, and explicitly test for it in the body of the function, e.g.::"
 msgstr ""
+"**デフォルト引数値は関数定義が実行されるときに左から右へ評価されます。** これ"
+"は、デフォルト引数の式は関数が定義されるときにただ一度だけ評価され、同じ \"計"
+"算済みの\" 値が呼び出しのたびに使用されることを意味します。この仕様を理解して"
+"おくことは特に、デフォルト引数値がリストや辞書のようなミュータブルなオブジェ"
+"クトであるときに重要です: 関数がこのオブジェクトを変更 (例えばリストに要素を"
+"追加) すると、このデフォルト引数値が変更の影響を受けてしまします。一般には、"
+"これは意図しない動作です。このような動作を避けるには、デフォルト値として "
+"``None`` を使い、この値を関数本体の中で明示的にテストします。例えば以下のよう"
+"にします::"
 
 #: ../../reference/compound_stmts.rst:1291
 msgid ""
@@ -1438,6 +1613,19 @@ msgid ""
 "\"``/``\" are positional-only parameters and may only be passed by "
 "positional arguments."
 msgstr ""
+"関数呼び出しの意味付けに関する詳細は、 :ref:`calls` 節で述べられています。\n"
+"関数呼び出しを行うと、パラメタリストに記述された全てのパラメタに、位置引数、"
+"キーワード引数、デフォルト値のいずれかから値が代入されます。\n"
+"\"``*identifier``\" 形式が存在すれば、余ったすべての位置引数を受け取ったタプ"
+"ルに初期化されます。\n"
+"このデフォルト値は空のタプルです。\n"
+"\"``**identifier``\" 形式が存在すれば、余ったすべてのキーワード引数を受け取っ"
+"た順序付きのマッピングオブジェクトに初期化されます。\n"
+"このデフォルト値は同じ型の空のマッピングオブジェクトです。\n"
+"\"``*``\" や \"``*identifier``\" の後のパラメタはキーワード専用パラメータで、"
+"キーワード引数によってのみ渡されます。\n"
+"\"``/``\" の前のパラメタは位置専用パラメータで、位置引数によってのみ渡されま"
+"す。"
 
 #: ../../reference/compound_stmts.rst:1303
 msgid ""
@@ -1461,6 +1649,22 @@ msgid ""
 "definition is executed.  In this case annotations may be evaluated in a "
 "different order than they appear in the source code."
 msgstr ""
+"引数には、引数名に続けて \"``: expression``\" 形式の :term:`アノテーション "
+"<function annotation>` を付けられます。\n"
+"``*identifier`` や ``**identifier`` の形式でも、すべての引数にはアノテーショ"
+"ンをつけられます。\n"
+"関数には、引数リストの後に \"``-> expression``\" 形式の \"return\" アノテー"
+"ションをつけられます。これらのアノテーションは、任意の有効な Python の式が使"
+"えます。\n"
+"アノテーションがあっても、関数の意味論は変わりません。\n"
+"アノテーションの値は、関数オブジェクトの :attr:`__annotations__` 属性の、引数"
+"名をキーとする値として得られます。\n"
+":mod:`__future__` の ``annotations`` インポートを使った場合は、アノテーション"
+"は実行時には文字列として保持され、これにより評価の遅延が可能になっていま"
+"す。\n"
+"そうでない場合は、アノテーションは関数定義が実行されたときに評価されます。\n"
+"このケースでは、アノテーションはソースコードに現れたのとは違う順序で評価され"
+"ることがあります。"
 
 #: ../../reference/compound_stmts.rst:1327
 msgid ""
@@ -1473,6 +1677,14 @@ msgid ""
 "keyword:`!def`\" form is actually more powerful since it allows the "
 "execution of multiple statements and annotations."
 msgstr ""
+"式を即時に使用するために、無名関数 (名前に束縛されていない関数) を作成するこ"
+"ともできます。\n"
+"これは :ref:`lambda` の節で解説されているラムダ式を使います。\n"
+"ラムダ式は簡略化された関数定義の簡略表現に過ぎないことに注意してください;  "
+"\":keyword:`def`\" 文で定義された関数もラムダ式で作成された関数のように、引数"
+"として渡せたり、他の名前に割り当てることができます。\n"
+"複数の式とアノテーションが実行できるので、 \":keyword:`!def`\" 形式の方がより"
+"強力です。"
 
 #: ../../reference/compound_stmts.rst:1335
 msgid ""
@@ -1482,50 +1694,56 @@ msgid ""
 "function can access the local variables of the function containing the def.  "
 "See section :ref:`naming` for details."
 msgstr ""
+"**プログラマへのメモ:** 関数は第一級オブジェクトです。関数定義内で実行された "
+"\"``def``\" 文は、返り値や引数として渡せるローカル関数を定義します。ネストし"
+"た関数内で使われる自由変数は、 def を含んでいる関数のローカル変数にアクセスで"
+"きます。詳細は :ref:`naming` 節を参照してください。"
 
 #: ../../reference/compound_stmts.rst:1344
 msgid ":pep:`3107` - Function Annotations"
-msgstr ""
+msgstr ":pep:`3107` - Function Annotations"
 
 #: ../../reference/compound_stmts.rst:1344
 msgid "The original specification for function annotations."
-msgstr ""
+msgstr "関数アノテーションの元の仕様書。"
 
 #: ../../reference/compound_stmts.rst:1347
 msgid ":pep:`484` - Type Hints"
-msgstr ""
+msgstr ":pep:`484` - 型ヒント"
 
 #: ../../reference/compound_stmts.rst:1347
 msgid "Definition of a standard meaning for annotations: type hints."
-msgstr ""
+msgstr "アノテーションの標準的な意味付けである型ヒントの定義。"
 
 #: ../../reference/compound_stmts.rst:1351
 msgid ":pep:`526` - Syntax for Variable Annotations"
-msgstr ""
+msgstr ":pep:`526` - Syntax for Variable Annotations"
 
 #: ../../reference/compound_stmts.rst:1350
 msgid ""
 "Ability to type hint variable declarations, including class variables and "
 "instance variables"
-msgstr ""
+msgstr "クラス変数とインスタンス変数を含む変数に型ヒントが宣言できる機能"
 
 #: ../../reference/compound_stmts.rst:1354
 msgid ":pep:`563` - Postponed Evaluation of Annotations"
-msgstr ""
+msgstr ":pep:`563` - アノテーションの遅延評価"
 
 #: ../../reference/compound_stmts.rst:1354
 msgid ""
 "Support for forward references within annotations by preserving annotations "
 "in a string form at runtime instead of eager evaluation."
 msgstr ""
+"実行時にアノテーションを貪欲評価するのではなく文字列形式で保持することによ"
+"る、アノテーションにおける前方参照のサポート"
 
 #: ../../reference/compound_stmts.rst:1361
 msgid "Class definitions"
-msgstr ""
+msgstr "クラス定義"
 
 #: ../../reference/compound_stmts.rst:1376
 msgid "A class definition defines a class object (see section :ref:`types`):"
-msgstr ""
+msgstr "クラス定義は、クラスオブジェクトを定義します (:ref:`types` 節参照):"
 
 #: ../../reference/compound_stmts.rst:1383
 msgid ""
@@ -1535,10 +1753,14 @@ msgid ""
 "allows subclassing.  Classes without an inheritance list inherit, by "
 "default, from the base class :class:`object`; hence, ::"
 msgstr ""
+"クラス定義は実行可能な文です。継承リストは通常、基底クラスリストを与えます "
+"(より高度な使い方は、 :ref:`metaclasses` を参照してください)。ですから、リス"
+"トのそれぞれの要素の評価はサブクラス化しても良いクラスであるべきです。継承リ"
+"ストのないクラスは、デフォルトで、基底クラス :class:`object` を継承するので::"
 
 #: ../../reference/compound_stmts.rst:1392
 msgid "is equivalent to ::"
-msgstr ""
+msgstr "は、以下と同等です ::"
 
 #: ../../reference/compound_stmts.rst:1397
 msgid ""
@@ -1551,6 +1773,13 @@ msgid ""
 "attribute dictionary.  The class name is bound to this class object in the "
 "original local namespace."
 msgstr ""
+"次にクラスのスイートが、新たな実行フレーム (:ref:`naming` を参照してくださ"
+"い) 内で、新たに作られたローカル名前空間と元々のグローバル名前空間を使って実"
+"行されます (通常、このスイートには主に関数定義が含まれます)。クラスのスイート"
+"が実行し終えると、実行フレームは破棄されますが、ローカルな名前空間は保存され"
+"ます。[#]_ 次に、継承リストを基底クラスに、保存されたローカル名前空間を属性値"
+"辞書に、それぞれ使ってクラスオブジェクトが生成されます。最後に、もとのローカ"
+"ル名前空間において、クラス名がこのクラスオブジェクトに束縛されます。"
 
 #: ../../reference/compound_stmts.rst:1406
 msgid ""
@@ -1559,22 +1788,31 @@ msgid ""
 "the class is created and only for classes that were defined using the "
 "definition syntax."
 msgstr ""
+"クラス本体で属性が定義された順序は新しいクラスの ``__dict__`` に保持されま"
+"す。\n"
+"この性質が期待できるのは、クラスが作られた直後かつ定義構文を使って定義された"
+"クラスであるときのみです。"
 
 #: ../../reference/compound_stmts.rst:1411
 msgid ""
 "Class creation can be customized heavily using :ref:`metaclasses "
 "<metaclasses>`."
 msgstr ""
+"クラス作成は、 :ref:`メタクラス <metaclasses>` を利用して大幅にカスタマイズで"
+"きます。"
 
 #: ../../reference/compound_stmts.rst:1416
 msgid "Classes can also be decorated: just like when decorating functions, ::"
 msgstr ""
+"関数をデコレートするのと同じように、クラスもデコレートすることが出来ます、 ::"
 
 #: ../../reference/compound_stmts.rst:1427
 msgid ""
 "The evaluation rules for the decorator expressions are the same as for "
 "function decorators.  The result is then bound to the class name."
 msgstr ""
+"デコレータ式の評価規則は関数デコレータと同じです。結果はクラス名に束縛されま"
+"す。"
 
 #: ../../reference/compound_stmts.rst:1430
 msgid ""
@@ -1595,34 +1833,46 @@ msgid ""
 "<descriptors>` can be used to create instance variables with different "
 "implementation details."
 msgstr ""
+"**プログラマのための注釈:** クラス定義内で定義された変数はクラス属性であり、"
+"全てのインスタンス間で共有されます。インスタンス属性は、メソッドの中で "
+"``self.name = value`` とすることで設定できます。クラス属性もインスタンス属性"
+"も \"``self.name``\" 表記でアクセスでき、この表記でアクセスしたとき、インスタ"
+"ンス属性は同名のクラス属性を隠蔽します。クラス属性は、インスタンス属性のデ"
+"フォルト値として使えますが、そこにミュータブルな値を使うと予期せぬ結果につな"
+"がります。 :ref:`記述子 <descriptors>` を使うと、詳細な実装が異なるインスタン"
+"ス変数を作成できます。"
 
 #: ../../reference/compound_stmts.rst:1450
 msgid ":pep:`3115` - Metaclasses in Python 3000"
-msgstr ""
+msgstr ":pep:`3115` - Metaclasses in Python 3000"
 
 #: ../../reference/compound_stmts.rst:1448
 msgid ""
 "The proposal that changed the declaration of metaclasses to the current "
 "syntax, and the semantics for how classes with metaclasses are constructed."
 msgstr ""
+"メタクラスの宣言を現在の文法と、メタクラス付きのクラスがどのように構築される"
+"かの意味論を変更した提案"
 
 #: ../../reference/compound_stmts.rst:1453
 msgid ":pep:`3129` - Class Decorators"
-msgstr ""
+msgstr ":pep:`3129` - クラスデコレータ"
 
 #: ../../reference/compound_stmts.rst:1453
 msgid ""
 "The proposal that added class decorators.  Function and method decorators "
 "were introduced in :pep:`318`."
 msgstr ""
+"クラスデコレータを追加した提案。\n"
+"関数デコレータとメソッドデコレータは :pep:`318` で導入されました。"
 
 #: ../../reference/compound_stmts.rst:1460
 msgid "Coroutines"
-msgstr "協程"
+msgstr "コルーチン"
 
 #: ../../reference/compound_stmts.rst:1468
 msgid "Coroutine function definition"
-msgstr ""
+msgstr "コルーチン関数定義"
 
 #: ../../reference/compound_stmts.rst:1478
 msgid ""
@@ -1631,25 +1881,30 @@ msgid ""
 "and :keyword:`async with` can only be used in the body of a coroutine "
 "function."
 msgstr ""
+"Python で実行しているコルーチンは多くの時点で一時停止と再開ができます (:term:"
+"`coroutine` を参照)。\n"
+":keyword:`await` 式である :keyword:`async for` と :keyword:`async with` はコ"
+"ルーチン関数の本体でしか使えません。"
 
 #: ../../reference/compound_stmts.rst:1482
 msgid ""
 "Functions defined with ``async def`` syntax are always coroutine functions, "
 "even if they do not contain ``await`` or ``async`` keywords."
 msgstr ""
+" ``await`` や ``async`` キーワードがなくても、``async def`` 構文で定義された"
+"関数は常にコルーチン関数です。"
 
 #: ../../reference/compound_stmts.rst:1485
 msgid ""
 "It is a :exc:`SyntaxError` to use a ``yield from`` expression inside the "
 "body of a coroutine function."
 msgstr ""
+"コルーチン関数の本体の中で ``yield from`` 式を使用すると :exc:`SyntaxError` "
+"になります。"
 
 #: ../../reference/compound_stmts.rst:1488
 msgid "An example of a coroutine function::"
-msgstr ""
-"一個協程韓式函式範例：\n"
-"\n"
-"::"
+msgstr "コルーチン関数の例::"
 
 #: ../../reference/compound_stmts.rst:1494
 msgid ""
@@ -1659,7 +1914,7 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:1502
 msgid "The :keyword:`!async for` statement"
-msgstr ""
+msgstr ":keyword:`!async for` 文"
 
 #: ../../reference/compound_stmts.rst:1507
 msgid ""
@@ -1667,65 +1922,80 @@ msgid ""
 "directly returns an :term:`asynchronous iterator`, which can call "
 "asynchronous code in its ``__anext__`` method."
 msgstr ""
+":term:`asynchronous iterable` は、その ``__anext__`` メソッドで非同期なコード"
+"を実行可能な、:term:`asynchronous iterator` を直接返す ``__aiter__`` メソッド"
+"を提供しています。　"
 
 #: ../../reference/compound_stmts.rst:1511
 msgid ""
 "The ``async for`` statement allows convenient iteration over asynchronous "
 "iterables."
 msgstr ""
+"``async for`` 文によって非同期なイテラブルを簡単にイテレーションすることがで"
+"きます。"
 
 #: ../../reference/compound_stmts.rst:1521
 msgid "Is semantically equivalent to::"
-msgstr ""
+msgstr "は意味論的に以下と等価です::"
 
 #: ../../reference/compound_stmts.rst:1537
 msgid ""
 "See also :meth:`~object.__aiter__` and :meth:`~object.__anext__` for details."
 msgstr ""
-"更多細節請見 :meth:`~object.__aiter__` 與 :meth:`~object.__anext__`\\ 。"
+"詳細は :meth:`~object.__aiter__` や :meth:`~object.__anext__` を参照してくだ"
+"さい。"
 
 #: ../../reference/compound_stmts.rst:1539
 msgid ""
 "It is a :exc:`SyntaxError` to use an ``async for`` statement outside the "
 "body of a coroutine function."
 msgstr ""
+"コルーチン関数の本体の外で ``async for`` 文を使用すると :exc:`SyntaxError` に"
+"なります。"
 
 #: ../../reference/compound_stmts.rst:1547
 msgid "The :keyword:`!async with` statement"
-msgstr ""
+msgstr ":keyword:`!async with` 文"
 
 #: ../../reference/compound_stmts.rst:1552
 msgid ""
 "An :term:`asynchronous context manager` is a :term:`context manager` that is "
 "able to suspend execution in its *enter* and *exit* methods."
 msgstr ""
+":term:`asynchronous context manager` は、 *enter* メソッドと *exit* メソッド"
+"内部で実行を一時停止できる :term:`context manager` です。"
 
 #: ../../reference/compound_stmts.rst:1579
 msgid ""
 "See also :meth:`~object.__aenter__` and :meth:`~object.__aexit__` for "
 "details."
 msgstr ""
-"更多細節請見 :meth:`~object.__aenter__` 與 :meth:`~object.__aexit__`\\ 。"
+"詳細は :meth:`~object.__aenter__` や :meth:`~object.__aexit__` を参照してくだ"
+"さい。"
 
 #: ../../reference/compound_stmts.rst:1581
 msgid ""
 "It is a :exc:`SyntaxError` to use an ``async with`` statement outside the "
 "body of a coroutine function."
 msgstr ""
+"コルーチン関数の本体の外で ``async with`` 文を使用すると :exc:`SyntaxError` "
+"になります。"
 
 #: ../../reference/compound_stmts.rst:1587
 msgid ":pep:`492` - Coroutines with async and await syntax"
-msgstr ""
+msgstr ":pep:`492` - async 構文および await 構文付きのコルーチン"
 
 #: ../../reference/compound_stmts.rst:1587
 msgid ""
 "The proposal that made coroutines a proper standalone concept in Python, and "
 "added supporting syntax."
 msgstr ""
+"コルーチンを Python のまともな独り立ちした概念にし、サポートする構文を追加し"
+"た提案。"
 
 #: ../../reference/compound_stmts.rst:1592
 msgid "Footnotes"
-msgstr "註解"
+msgstr "脚注"
 
 #: ../../reference/compound_stmts.rst:1593
 msgid ""
@@ -1733,6 +2003,8 @@ msgid ""
 "keyword:`finally` clause which happens to raise another exception. That new "
 "exception causes the old one to be lost."
 msgstr ""
+"例外は、別の例外を送出するような :keyword:`finally` 節が無い場合にのみ呼び出"
+"しスタックへ伝わります。新しい例外によって、古い例外は失われます。"
 
 #: ../../reference/compound_stmts.rst:1597
 msgid "In pattern matching, a sequence is defined as one of the following:"
@@ -1740,12 +2012,12 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:1599
 msgid "a class that inherits from :class:`collections.abc.Sequence`"
-msgstr ""
+msgstr ":class:`collections.abc.Sequence` を継承したクラス。"
 
 #: ../../reference/compound_stmts.rst:1600
 msgid ""
 "a Python class that has been registered as :class:`collections.abc.Sequence`"
-msgstr ""
+msgstr ":class:`collections.abc.Sequence` として登録されたPythonクラス。"
 
 #: ../../reference/compound_stmts.rst:1601
 msgid ""
@@ -1813,6 +2085,9 @@ msgid ""
 "transformed into the function's ``__doc__`` attribute and therefore the "
 "function's :term:`docstring`."
 msgstr ""
+"関数の本体の最初の文として現われる文字列リテラルは、その関数の ``__doc__`` 属"
+"性に変換され、その関数の :term:`ドキュメンテーション文字列 <docstring>` にな"
+"ります。"
 
 #: ../../reference/compound_stmts.rst:1630
 msgid ""
@@ -1820,3 +2095,6 @@ msgid ""
 "transformed into the namespace's ``__doc__`` item and therefore the class's :"
 "term:`docstring`."
 msgstr ""
+"クラスの本体の最初の文として現われる文字列リテラルは、その名前空間の "
+"``__doc__`` 要素となり、そのクラスの :term:`ドキュメンテーション文字列 "
+"<docstring>` になります。"

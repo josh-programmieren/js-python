@@ -1,30 +1,34 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Tetsuo Koyama <tkoyama010@gmail.com>, 2021
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-13 00:11+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:15+0000\n"
+"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../library/tkinter.dnd.rst:2
 msgid ":mod:`tkinter.dnd` --- Drag and drop support"
-msgstr ""
+msgstr ":mod:`tkinter.dnd` --- Drag and drop support"
 
 #: ../../library/tkinter.dnd.rst:8
 msgid "**Source code:** :source:`Lib/tkinter/dnd.py`"
-msgstr "**原始碼：**\\ :source:`Lib/tkinter/dnd.py`"
+msgstr "**ソースコード:** :source:`Lib/tkinter/dnd.py`"
 
 #: ../../library/tkinter.dnd.rst:12
 msgid ""
@@ -110,4 +114,4 @@ msgstr ""
 
 #: ../../library/tkinter.dnd.rst:64
 msgid ":ref:`Bindings-and-Events`"
-msgstr ":ref:`Bindings-and-Events`"
+msgstr ""

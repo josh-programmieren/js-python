@@ -1,30 +1,30 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# aminzai <lagunawang@gmail.com>, 2017
-# Matt Wang <mattwang44@gmail.com>, 2021
+# tomo, 2021
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-26 18:54+0800\n"
-"PO-Revision-Date: 2021-12-09 21:20+0800\n"
-"Last-Translator: Matt Wang <mattwang44@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 00:47+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.0\n"
 
 #: ../../c-api/abstract.rst:7
 msgid "Abstract Objects Layer"
-msgstr "抽象物件層 (Abstract Objects Layer)"
+msgstr "抽象オブジェクトレイヤ (abstract objects layer)"
 
 #: ../../c-api/abstract.rst:9
 msgid ""
@@ -33,9 +33,10 @@ msgid ""
 "or all sequence types).  When used on object types for which they do not "
 "apply, they will raise a Python exception."
 msgstr ""
-"本章中的函式與 Python 物件相互作用，無論其型別、或具有廣泛類別的物件型別（例"
-"如所有數值型別或所有序列型別）。當使用於不適用的物件型別時，他們會引發一個 "
-"Python 異常 (exception)。"
+"この章で説明する関数は、オブジェクトの型に依存しないような Python オブジェク"
+"トの操作や、(数値型全て、シーケンス型全てといった) 大まかな型のオブジェクトに"
+"対する操作を行ないます。関数を適用対象でないオブジェクトに対して使った場合、"
+"Python の例外が送出されることになります。"
 
 #: ../../c-api/abstract.rst:14
 msgid ""
@@ -44,5 +45,6 @@ msgid ""
 "`PyList_New`, but whose items have not been set to some non-\\ ``NULL`` "
 "value yet."
 msgstr ""
-"這些函式是不可能用於未正確初始化的物件（例如一個由 :c:func:`PyList_New` 建立"
-"的 list 物件），而其中的項目沒有被設為一些非 ``NULL`` 的值。"
+"これらの関数は、 :c:func:`PyList_New` で作成された後に ``NULL`` 以外の値を設"
+"定されていないリストのような、適切に初期化されていないオブジェクトに対して使"
+"うことはできません。"

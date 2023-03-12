@@ -1,26 +1,32 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# tomo, 2021
+# Osamu NAKAMURA, 2021
+# souma987, 2023
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-13 00:17+0000\n"
-"PO-Revision-Date: 2017-09-22 18:26+0000\n"
-"Last-Translator: Liang-Bo Wang <me@liang2.tw>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-03-03 14:14+0000\n"
+"PO-Revision-Date: 2021-06-28 01:06+0000\n"
+"Last-Translator: souma987, 2023\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../library/fcntl.rst:2
 msgid ":mod:`fcntl` --- The ``fcntl`` and ``ioctl`` system calls"
-msgstr ""
+msgstr ":mod:`fcntl` --- ``fcntl`` および ``ioctl`` システムコール"
 
 #: ../../library/fcntl.rst:16
 msgid ""
@@ -29,10 +35,17 @@ msgid ""
 "a complete description of these calls, see :manpage:`fcntl(2)` and :manpage:"
 "`ioctl(2)` Unix manual pages."
 msgstr ""
+"このモジュールでは、ファイル記述子 (file descriptor) に基づいたファイル制御お"
+"よび I/O 制御を実現します。\n"
+"このモジュールは、 Unix のルーチンである :c:func:`fcntl` および :c:func:"
+"`ioctl` へのインターフェースです。\n"
+"これらのシステムコールの完全な説明は、 :manpage:`fcntl(2)` と :manpage:"
+"`ioctl(2)` のUnix マニュアルページを参照してください。"
 
 #: ../../includes/wasm-notavail.rst:3
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ""
+":ref:`利用可能性<availability>`: Emscripten でなく、WASI でもないこと。"
 
 #: ../../includes/wasm-notavail.rst:5
 msgid ""
@@ -40,6 +53,9 @@ msgid ""
 "``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
 "more information."
 msgstr ""
+"このモジュールは WebAssembly プラットフォーム ``wasm32-emscripten`` と "
+"``wasm32-wasi`` では動作しないか、利用不可です。詳しくは、:ref:`wasm-"
+"availability` を見てください。"
 
 #: ../../library/fcntl.rst:23
 msgid ""
@@ -49,12 +65,19 @@ msgid ""
 "itself, which provides a :meth:`~io.IOBase.fileno` that returns a genuine "
 "file descriptor."
 msgstr ""
+"このモジュール内の全ての関数はファイル記述子 *fd* を最初の引数に取ります。 こ"
+"の値は ``sys.stdin.fileno()`` が返すような\\ 整数のファイル記述子でも、 "
+"``sys.stdin`` 自体のような、純粋にファイル記述子だけを返す :meth:`~io.IOBase."
+"fileno` メソッドを提供している :class:`io.IOBase`  オブジェクトでもかまいませ"
+"ん。"
 
 #: ../../library/fcntl.rst:29
 msgid ""
 "Operations in this module used to raise an :exc:`IOError` where they now "
 "raise an :exc:`OSError`."
 msgstr ""
+"以前は :exc:`IOError` を送出していたこのモジュールの操作が、 :exc:`OSError` "
+"を送出するようになりました。"
 
 #: ../../library/fcntl.rst:33
 msgid ""
@@ -87,7 +110,7 @@ msgstr ""
 
 #: ../../library/fcntl.rst:55
 msgid "The module defines the following functions:"
-msgstr ""
+msgstr "このモジュールには、以下の関数が定義されています:"
 
 #: ../../library/fcntl.rst:60
 msgid ""
@@ -107,12 +130,26 @@ msgid ""
 "the operating system is larger than 1024 bytes, this is most likely to "
 "result in a segmentation violation or a more subtle data corruption."
 msgstr ""
+"操作 *cmd* をファイル記述子 *fd* (または :meth:`~io.IOBase.fileno` メソッドを"
+"提供しているファイルオブジェクト) に対して実行します。 *cmd* として用いられる"
+"値はオペレーティングシステム依存で、 :mod:`fcntl` モジュール内に関連する C "
+"ヘッダファイルと同じ名前が使われている定数の形で利用出来ます。引数 *arg* は整"
+"数値か :class:`bytes` オブジェクトをとります。引数が整数値の場合、この関数の"
+"戻り値は C 言語の :c:func:`fcntl` を呼び出した際の整数の戻り値になります。引"
+"数が bytes の場合には、 :func:`struct.pack` で作られるようなバイナリの構造体"
+"を表します。バイナリデータはバッファにコピーされ、そのアドレスが C 言語の :c:"
+"func:`fcntl` 呼び出しに渡されます。 呼び出しが成功した後に戻される値はバッ"
+"ファの内容で、 :class:`bytes` オブジェクトに変換されています。 返されるオブ"
+"ジェクトは *arg* 引数と同じ長さになります。 この値は 1024 バイトに制限されて"
+"います。 オペレーティングシステムからバッファに返される情報の長さが 1024 バイ"
+"トよりも大きい場合、大抵はセグメンテーション違反となるか、より不可思議なデー"
+"タの破損を引き起こします。"
 
 #: ../../library/fcntl.rst:77
 msgid "If the :c:func:`fcntl` fails, an :exc:`OSError` is raised."
-msgstr ""
+msgstr ":c:func:`fcntl` が失敗した場合、 :exc:`OSError` が送出されます。"
 
-#: ../../library/fcntl.rst:20
+#: ../../library/fcntl.rst:88
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``fcntl.fcntl`` with arguments "
 "``fd``, ``cmd``, ``arg``."
@@ -123,6 +160,8 @@ msgid ""
 "This function is identical to the :func:`~fcntl.fcntl` function, except that "
 "the argument handling is even more complicated."
 msgstr ""
+"この関数は :func:`~fcntl.fcntl` 関数と同じですが、引数の扱いがより複雑である"
+"ところが異なります。"
 
 #: ../../library/fcntl.rst:87
 msgid ""
@@ -131,6 +170,9 @@ msgid ""
 "found in the :mod:`termios` module, under the same names as used in the "
 "relevant C header files."
 msgstr ""
+"パラメータ *request* は32ビットに収まる値に制限されます。 *request* 引数とし"
+"て使うのに関係のある追加の定数は :mod:`termios` モジュールにあり、関連する C "
+"ヘッダファイルで使われているのと同じ名前が付けられています。"
 
 #: ../../library/fcntl.rst:92
 msgid ""
@@ -138,18 +180,23 @@ msgid ""
 "only buffer interface (like :class:`bytes`) or an object supporting the read-"
 "write buffer interface (like :class:`bytearray`)."
 msgstr ""
+"パラメタ *arg* は、整数、 (:class:`bytes` のような) 読み出し専用のバッファイ"
+"ンターフェースをサポートするオブジェクト、読み書きバッファインターフェースを"
+"サポートするオブジェクトのどれかです。"
 
 #: ../../library/fcntl.rst:96
 msgid ""
 "In all but the last case, behaviour is as for the :func:`~fcntl.fcntl` "
 "function."
 msgstr ""
+"最後の型のオブジェクトを除き、動作は :func:`~fcntl.fcntl` 関数と同じです。"
 
 #: ../../library/fcntl.rst:99
 msgid ""
 "If a mutable buffer is passed, then the behaviour is determined by the value "
 "of the *mutate_flag* parameter."
 msgstr ""
+"可変なバッファが渡された場合、動作は *mutate_flag* 引数の値で決定されます。"
 
 #: ../../library/fcntl.rst:102
 msgid ""
@@ -158,6 +205,9 @@ msgid ""
 "-- so long as the buffer you pass is at least as long as what the operating "
 "system wants to put there, things should work."
 msgstr ""
+"この値が偽の場合、バッファの可変性は無視され、読み出し専用バッファの場合と同"
+"じ動作になりますが、上で述べた 1024 バイトの制限は回避されます -- 従って、オ"
+"ペレーティングシステムが希望するバッファ長までであれば正しく動作します。"
 
 #: ../../library/fcntl.rst:107
 msgid ""
@@ -169,19 +219,22 @@ msgid ""
 "a static buffer 1024 bytes long which is then passed to :func:`ioctl` and "
 "copied back into the supplied buffer."
 msgstr ""
+"*mutate_flag* が真 (デフォルト) の場合、バッファは (実際には) 根底にある :"
+"func:`ioctl` システムコールに渡され、後者の戻り値が呼び出し側の Python に引き"
+"渡され、バッファの新たな内容は  :func:`ioctl` の動作を反映します。この説明は"
+"やや単純化されています。というのは、与えられたバッファが 1024 バイト長よりも"
+"短い場合、バッファはまず 1024 バイト長の静的なバッファにコピーされてから :"
+"func:`ioctl` に渡され、その後引数で与えたバッファに戻しコピーされるからです。"
 
 #: ../../library/fcntl.rst:115
 msgid "If the :c:func:`ioctl` fails, an :exc:`OSError` exception is raised."
-msgstr ""
+msgstr ":c:func:`ioctl` が失敗すると、 :exc:`OSError` 例外が送出されます。"
 
 #: ../../library/fcntl.rst:117
 msgid "An example::"
-msgstr ""
-"範例：\n"
-"\n"
-"::"
+msgstr "以下に例を示します::"
 
-#: ../../library/fcntl.rst:47
+#: ../../library/fcntl.rst:139
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``fcntl.ioctl`` with arguments "
 "``fd``, ``request``, ``arg``."
@@ -194,12 +247,16 @@ msgid ""
 "Unix manual :manpage:`flock(2)` for details.  (On some systems, this "
 "function is emulated using :c:func:`fcntl`.)"
 msgstr ""
+"ファイル記述子 *fd* (:meth:`~io.IOBase.fileno` メソッドを提供しているファイル"
+"オブジェクトも含む) に対してロック操作 *operation* を実行します。 詳細は "
+"Unix マニュアルの :manpage:`flock(2)` を参照してください (システムによって"
+"は、この関数は :c:func:`fcntl` を使ってエミュレーションされています)。"
 
 #: ../../library/fcntl.rst:140
 msgid "If the :c:func:`flock` fails, an :exc:`OSError` exception is raised."
-msgstr ""
+msgstr ":c:func:`flock` が失敗すると、 :exc:`OSError` 例外が送出されます。"
 
-#: ../../library/fcntl.rst:8
+#: ../../library/fcntl.rst:151
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``fcntl.flock`` with arguments "
 "``fd``, ``operation``."
@@ -215,15 +272,15 @@ msgstr ""
 
 #: ../../library/fcntl.rst:152
 msgid ":const:`LOCK_UN` -- unlock"
-msgstr ""
+msgstr ":const:`LOCK_UN` -- アンロック"
 
 #: ../../library/fcntl.rst:153
 msgid ":const:`LOCK_SH` -- acquire a shared lock"
-msgstr ""
+msgstr ":const:`LOCK_SH` -- 共有ロックを取得"
 
 #: ../../library/fcntl.rst:154
 msgid ":const:`LOCK_EX` -- acquire an exclusive lock"
-msgstr ""
+msgstr ":const:`LOCK_EX` -- 排他的ロックを取得"
 
 #: ../../library/fcntl.rst:156
 msgid ""
@@ -236,6 +293,14 @@ msgid ""
 "`LOCK_EX` can only be used if the file descriptor refers to a file opened "
 "for writing."
 msgstr ""
+"*cmd* が :const:`LOCK_SH` または :const:`LOCK_EX` の場合、 :const:`LOCK_NB` "
+"とビット OR にすることでロック取得時にブロックしないようにすることができま"
+"す。 :const:`LOCK_NB` が使われ、ロックが取得できなかった場合、 :exc:"
+"`OSError` が送出され、例外は *errno* 属性を持ち、その値は :const:`EACCES` ま"
+"たは :const:`EAGAIN` になります (オペレーティングシステムに依存します; 可搬性"
+"のため、両方の値をチェックしてください)。少なくともいくつかのシステムでは、"
+"ファイル記述子が参照しているファイルが書き込みのために開かれている場合、 :"
+"const:`LOCK_EX` だけしか使うことができません。"
 
 #: ../../library/fcntl.rst:165
 msgid ""
@@ -243,19 +308,22 @@ msgid ""
 "the lock starts, relative to *whence*, and *whence* is as with :func:`io."
 "IOBase.seek`, specifically:"
 msgstr ""
+"*len* はロックを行いたいバイト数、 *start* はロック領域先頭の *whence* からの"
+"相対的なバイトオフセット、 *whence* は :func:`io.IOBase.seek` と同じで、具体"
+"的には:"
 
 #: ../../library/fcntl.rst:169
 msgid ":const:`0` -- relative to the start of the file (:data:`os.SEEK_SET`)"
-msgstr ""
+msgstr ":const:`0` -- ファイル先頭からの相対位置 (:data:`os.SEEK_SET`)"
 
 #: ../../library/fcntl.rst:170
 msgid ""
 ":const:`1` -- relative to the current buffer position (:data:`os.SEEK_CUR`)"
-msgstr ""
+msgstr ":const:`1` -- 現在のバッファ位置からの相対位置 (:data:`os.SEEK_CUR`)"
 
 #: ../../library/fcntl.rst:171
 msgid ":const:`2` -- relative to the end of the file (:data:`os.SEEK_END`)"
-msgstr ""
+msgstr ":const:`2` -- ファイルの末尾からの相対位置 (:data:`os.SEEK_END`)"
 
 #: ../../library/fcntl.rst:173
 msgid ""
@@ -263,8 +331,11 @@ msgid ""
 "file. The default for *len* is 0 which means to lock to the end of the "
 "file.  The default for *whence* is also 0."
 msgstr ""
+"*start* の標準の値は 0 で、ファイルの先頭から開始することを意味します。*len* "
+"の標準の値は 0 で、ファイルの終了までロックすることを表します。*whence* の標"
+"準の値も 0 です。"
 
-#: ../../library/fcntl.rst:31
+#: ../../library/fcntl.rst:186
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``fcntl.lockf`` with arguments "
 "``fd``, ``cmd``, ``len``, ``start``, ``whence``."
@@ -272,7 +343,7 @@ msgstr ""
 
 #: ../../library/fcntl.rst:179
 msgid "Examples (all on a SVR4 compliant system)::"
-msgstr ""
+msgstr "以下に (全ての SVR4 互換システムでの) 例を示します::"
 
 #: ../../library/fcntl.rst:189
 msgid ""
@@ -281,10 +352,13 @@ msgid ""
 "The structure lay-out for the *lockdata* variable is system dependent --- "
 "therefore using the :func:`flock` call may be better."
 msgstr ""
+"最初の例では、戻り値 *rv* は整数値を保持しています; 二つ目の例では :class:"
+"`bytes` オブジェクトを保持しています。 *lockdata* 変数の構造体レイアウトはシ"
+"ステム依存です --- 従って :func:`flock` を呼ぶ方が良いでしょう。"
 
 #: ../../library/fcntl.rst:200
 msgid "Module :mod:`os`"
-msgstr ":mod:`os` 模組"
+msgstr ":mod:`os` モジュール"
 
 #: ../../library/fcntl.rst:198
 msgid ""
@@ -292,3 +366,6 @@ msgid ""
 "present in the :mod:`os` module (on BSD only), the :func:`os.open` function "
 "provides an alternative to the :func:`lockf` and :func:`flock` functions."
 msgstr ""
+"もし :mod:`os` モジュールに :data:`os.O_SHLOCK` と :data:`os.O_EXLOCK` が 存"
+"在する場合 (BSD のみ)、 :func:`os.open` 関数は :func:`lockf` や :func:"
+"`flock` 関数を代替できます。"

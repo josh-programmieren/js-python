@@ -1,30 +1,39 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# tomo, 2021
+# Osamu NAKAMURA, 2021
+# Shin Saito, 2021
+# Yasuyuki ARAKI, 2021
+# yaakiyu, 2022
+# Takanori Suzuki <takanori@takanory.net>, 2022
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-04 00:15+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-03-03 14:14+0000\n"
+"PO-Revision-Date: 2021-06-29 13:04+0000\n"
+"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2022\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../whatsnew/3.9.rst:3
 msgid "What's New In Python 3.9"
-msgstr "Python 3.9 有什麼新功能"
+msgstr "What's New In Python 3.9"
 
 #: ../../whatsnew/3.9.rst:0
 msgid "Editor"
-msgstr "編輯者"
+msgstr "編集者"
 
 #: ../../whatsnew/3.9.rst:5
 msgid "Łukasz Langa"
@@ -39,56 +48,61 @@ msgstr ""
 #: ../../whatsnew/3.9.rst:48
 msgid "For full details, see the :ref:`changelog <changelog>`."
 msgstr ""
+"全詳細については :ref:`changelog <変更履歴> <changelog>` をご覧ください。"
 
 #: ../../whatsnew/3.9.rst:52
 msgid ":pep:`596` - Python 3.9 Release Schedule"
-msgstr ""
+msgstr ":pep:`596` - Python 3.9 リリーススケジュール"
 
 #: ../../whatsnew/3.9.rst:56
 msgid "Summary -- Release highlights"
-msgstr ""
+msgstr "概要 -- リリースハイライト"
 
 #: ../../whatsnew/3.9.rst:61
 msgid "New syntax features:"
-msgstr ""
+msgstr "新たな文法機能:"
 
 #: ../../whatsnew/3.9.rst:63
 msgid ":pep:`584`, union operators added to ``dict``;"
-msgstr ""
+msgstr ":pep:`584`、 ``dict`` に和集合の演算子が追加されました。"
 
 #: ../../whatsnew/3.9.rst:64
 msgid ":pep:`585`, type hinting generics in standard collections;"
 msgstr ""
+":pep:`585`、標準コレクション型の型ヒントにおける総称型 (generics) の使用。"
 
 #: ../../whatsnew/3.9.rst:65
 msgid ":pep:`614`, relaxed grammar restrictions on decorators."
-msgstr ""
+msgstr ":pep:`614`、デコレータの適用における文法的制約の緩和。"
 
 #: ../../whatsnew/3.9.rst:67
 msgid "New built-in features:"
-msgstr ""
+msgstr "新たな組み込み機能:"
 
 #: ../../whatsnew/3.9.rst:69
 msgid ":pep:`616`, string methods to remove prefixes and suffixes."
-msgstr ""
+msgstr ":pep:`616`、prefixとsuffixを削除する文字列メソッド。"
 
 #: ../../whatsnew/3.9.rst:71
 msgid "New features in the standard library:"
-msgstr ""
+msgstr "標準ライブラリの新機能:"
 
 #: ../../whatsnew/3.9.rst:73
 msgid ":pep:`593`, flexible function and variable annotations;"
 msgstr ""
+":pep:`593`、より柔軟な変数・関数アノテーション (訳注: ``Annotated`` の導入)。"
 
 #: ../../whatsnew/3.9.rst:74
 msgid ""
 ":func:`os.pidfd_open` added that allows process management without races and "
 "signals."
 msgstr ""
+":func:`os.pidfd_open` が追加され、レースやシグナルを使わずにプロセス管理がで"
+"きるようになりました。"
 
 #: ../../whatsnew/3.9.rst:77
 msgid "Interpreter improvements:"
-msgstr ""
+msgstr "インタプリタの改善:"
 
 #: ../../whatsnew/3.9.rst:79
 msgid ""
@@ -98,12 +112,16 @@ msgstr ""
 #: ../../whatsnew/3.9.rst:81
 msgid ":pep:`617`, CPython now uses a new parser based on PEG;"
 msgstr ""
+":pep:`617`、CPython における PEG (Parser Expression Grammar) ベースの新しい構"
+"文解析器の使用。"
 
 #: ../../whatsnew/3.9.rst:82
 msgid ""
 "a number of Python builtins (range, tuple, set, frozenset, list, dict) are "
 "now sped up using :pep:`590` vectorcall;"
 msgstr ""
+"いくつかのPythonの組み込み型（range, tuple, set, frozenset, list, dict） を :"
+"pep:`590` vectorcall を用いて高速化しました。"
 
 #: ../../whatsnew/3.9.rst:84
 msgid "garbage collection does not block on resurrected objects;"
@@ -117,6 +135,11 @@ msgid ""
 "`time`, :mod:`_weakref`) now use multiphase initialization as defined by PEP "
 "489;"
 msgstr ""
+"いくつかのPython モジュール (:mod:`_abc`, :mod:`audioop`, :mod:`_bz2`, :mod:"
+"`_codecs`, :mod:`_contextvars`, :mod:`_crypt`, :mod:`_functools`, :mod:"
+"`_json`, :mod:`_locale`, :mod:`math`, :mod:`operator`, :mod:`resource`, :mod:"
+"`time`, :mod:`_weakref`) がPEP 489で定義されたマルチフェーズ初期化を利用する"
+"ようになりました。"
 
 #: ../../whatsnew/3.9.rst:90
 msgid ""
@@ -125,10 +148,14 @@ msgid ""
 "mod:`select`, :mod:`struct`, :mod:`termios`, :mod:`zlib`) are now using the "
 "stable ABI defined by PEP 384."
 msgstr ""
+"いくつかの標準ライブラリモジュール (:mod:`audioop`, :mod:`ast`, :mod:`grp`, :"
+"mod:`_hashlib`, :mod:`pwd`, :mod:`_posixsubprocess`, :mod:`random`, :mod:"
+"`select`, :mod:`struct`, :mod:`termios`, :mod:`zlib`) がPEP 384で定義された "
+"stable ABI を利用するようになりました。"
 
 #: ../../whatsnew/3.9.rst:95
 msgid "New library modules:"
-msgstr ""
+msgstr "新たなライブラリモジュール:"
 
 #: ../../whatsnew/3.9.rst:97
 msgid ""
@@ -144,15 +171,15 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:102
 msgid "Release process changes:"
-msgstr ""
+msgstr "リリースプロセスの変更:"
 
 #: ../../whatsnew/3.9.rst:104
 msgid ":pep:`602`, CPython adopts an annual release cycle."
-msgstr ""
+msgstr ":pep:`602`、CPythonは年次のリリースサイクルを採用します。"
 
 #: ../../whatsnew/3.9.rst:108
 msgid "You should check for DeprecationWarning in your code"
-msgstr ""
+msgstr "コード中の非推奨警告(DeprecationWarning)をチェックして下さい"
 
 #: ../../whatsnew/3.9.rst:110
 msgid ""
@@ -164,6 +191,12 @@ msgid ""
 "``collections.abc.Mapping`` emits a :exc:`DeprecationWarning` since Python "
 "3.3, released in 2012."
 msgstr ""
+"Python 2.7がまだサポートされていた期間、Python 3の多くの機能はPython 2.7との"
+"後方互換性を保っていました。Python 2サポートの終了とともに、この後方互換性レ"
+"イヤは除去されたか、間もなく除去されます。ここ数年で、それらの多くは警告 :"
+"exc:`DeprecationWarning`を出すようになりました。例えば、2012年にリリースされ"
+"たPython 3.3以降、``collections.abc.Mapping``の代りに``collections.Mapping``"
+"を使うと、警告:exc:`DeprecationWarning` が出ます。"
 
 #: ../../whatsnew/3.9.rst:118
 msgid ""
@@ -173,6 +206,11 @@ msgid ""
 "Filter <warning-filter>` can be used to ignore warnings from third-party "
 "code."
 msgstr ""
+"警告:exc:`DeprecationWarning`および:exc:`PendingDeprecationWarning`を確認する"
+"ために、:option:`-W` ``default``コマンドラインオプションを付けて、あなたのア"
+"プリケーションをテストして下さい。あるいは、:option:`-W` ``error``で警告をエ"
+"ラーとして扱うこともできます。サードパーティによるコードの警告を無視するに"
+"は、:ref:`Warnings Filter <warning-filter>`を使うことができます。"
 
 #: ../../whatsnew/3.9.rst:123
 msgid ""
@@ -180,6 +218,9 @@ msgid ""
 "compatibility layers, to give more time to Python projects maintainers to "
 "organize the removal of the Python 2 support and add support for Python 3.9."
 msgstr ""
+"Python 3.9は、Python 2後方互換性レイヤを提供する最後のバージョンです。このレ"
+"イヤは、Pythonプロジェクトの保守管理者に、Python 2サポートを止めてPython 3.9"
+"サポートを追加する時間的な余裕を与えるためのものです。"
 
 #: ../../whatsnew/3.9.rst:127
 msgid ""
@@ -195,20 +236,24 @@ msgid ""
 "<devmode>` which helps to prepare your code to make it compatible with the "
 "next Python version."
 msgstr ""
+"より一般的には、あなたのコードが次のバージョンのPythonと互換性を保てるよう、:"
+"ref:`Python Development Mode <devmode>`でテストするようにしてください。"
 
 #: ../../whatsnew/3.9.rst:136
 msgid ""
 "Note: a number of pre-existing deprecations were removed in this version of "
 "Python as well. Consult the :ref:`removed-in-python-39` section."
 msgstr ""
+"注釈: Pythonのこのバージョンで、既存の多くの非推奨機能が削除されました。詳し"
+"くは :ref:`removed-in-python-39`を見て下さい。"
 
 #: ../../whatsnew/3.9.rst:141 ../../whatsnew/3.9.rst:1274
 msgid "New Features"
-msgstr ""
+msgstr "新しい機能"
 
 #: ../../whatsnew/3.9.rst:144
 msgid "Dictionary Merge & Update Operators"
-msgstr ""
+msgstr "辞書のマージと更新演算子"
 
 #: ../../whatsnew/3.9.rst:146
 msgid ""
@@ -216,23 +261,25 @@ msgid ""
 "class:`dict` class. Those complement the existing ``dict.update`` and "
 "``{**d1, **d2}`` methods of merging dictionaries."
 msgstr ""
+"組み込みの :class:`dict` クラスにマージ(``|``)と更新(``|=``)演算子が追加され"
+"ました。この演算子は、辞書をマージする既存の方法 ``dict.update`` と ``{**d1, "
+"**d2}`` を補完します。"
 
 #: ../../whatsnew/3.9.rst:150 ../../whatsnew/3.9.rst:283
 msgid "Example::"
-msgstr ""
-"範例：\n"
-"\n"
-"::"
+msgstr "以下はプログラム例です::"
 
 #: ../../whatsnew/3.9.rst:159
 msgid ""
 "See :pep:`584` for a full description. (Contributed by Brandt Bucher in :"
 "issue:`36144`.)"
 msgstr ""
+"詳細は :pep:`584` を参照してください。(Brandt Bucher の貢献による :issue:"
+"`36144`)"
 
 #: ../../whatsnew/3.9.rst:163
 msgid "New String Methods to Remove Prefixes and Suffixes"
-msgstr ""
+msgstr "prefixとsuffixを削除する新しい文字列メソッド"
 
 #: ../../whatsnew/3.9.rst:165
 msgid ""
@@ -243,6 +290,12 @@ msgid ""
 "See :pep:`616` for a full description. (Contributed by Dennis Sweeney in :"
 "issue:`39939`.)"
 msgstr ""
+"文字列から不要な prefix や suffix を簡単に削除する :meth:`str."
+"removeprefix(prefix)<str.removeprefix>` と :meth:`str."
+"removesuffix(suffix)<str.removesuffix>` が追加されました。 ``bytes``, "
+"``bytearray``, ``collections.UserString`` にも同様のメソッドが追加されまし"
+"た。詳細は :pep:`616` を参照してください。(Dennis Sweeney の貢献による :"
+"issue:`39939`)"
 
 #: ../../whatsnew/3.9.rst:173
 msgid "Type Hinting Generics in Standard Collections"
@@ -259,17 +312,19 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:181 ../../whatsnew/3.9.rst:1162
 msgid "Example:"
-msgstr "範例："
+msgstr "例:"
 
 #: ../../whatsnew/3.9.rst:189
 msgid ""
 "See :pep:`585` for more details.  (Contributed by Guido van Rossum, Ethan "
 "Smith, and Batuhan Taşkaya in :issue:`39481`.)"
 msgstr ""
+"詳細は :pep:`585` を参照してください。(Guido van Rossum、Ethan Smith、"
+"Batuhan Taşkaya の貢献による :issue:`39481`)"
 
 #: ../../whatsnew/3.9.rst:193
 msgid "New Parser"
-msgstr ""
+msgstr "新しいパーサー"
 
 #: ../../whatsnew/3.9.rst:195
 msgid ""
@@ -280,12 +335,19 @@ msgid ""
 "when it comes to designing new language features.  We'll start using this "
 "flexibility in Python 3.10 and later."
 msgstr ""
+"Python 3.9は、 `LL(1) <https://en.wikipedia.org/wiki/LL_parser>`_ に代えて "
+"`PEG <https://en.wikipedia.org/wiki/Parsing_expression_grammar>`_ に基づく新"
+"しいパーサーを採用しています。新しいパーサーのパフォーマンスは古いパーサーと"
+"ほぼ同程度ですが、新しい言語の機能を設計する際に、PEGの形式主義はより柔軟で"
+"す。我々は、この柔軟性をPython 3.10以降に使い始める予定です。"
 
 #: ../../whatsnew/3.9.rst:203
 msgid ""
 "The :mod:`ast` module uses the new parser and produces the same AST as the "
 "old parser."
 msgstr ""
+":mod:`ast` モジュールは、新しいパーサーを使って古いパーサーと同じASTを生成し"
+"ます。"
 
 #: ../../whatsnew/3.9.rst:206
 msgid ""
@@ -295,16 +357,22 @@ msgid ""
 "using a command line switch (``-X oldparser``) or an environment variable "
 "(``PYTHONOLDPARSER=1``)."
 msgstr ""
+"Python 3.10では古いパーサーは削除され、それに依存する全ての機能(主に、長い間"
+"非推奨だった :mod:`parser` モジュール)も削除されます。Python 3.9で *のみ* 、"
+"コマンドラインスイッチ (``-X oldparser``)あるいは環境変数"
+"(``PYTHONOLDPARSER=1``)で、LL(1)パーサーにスイッチバックすることができます。"
 
 #: ../../whatsnew/3.9.rst:212
 msgid ""
 "See :pep:`617` for more details.  (Contributed by Guido van Rossum, Pablo "
 "Galindo and Lysandros Nikolaou in :issue:`40334`.)"
 msgstr ""
+"詳細は :pep:`617` を参照してください。(Guido van Rossum,、Pablo Galindo、およ"
+"びLysandros Nikolaouの貢献による :issue:`40334`)"
 
 #: ../../whatsnew/3.9.rst:217
 msgid "Other Language Changes"
-msgstr ""
+msgstr "その他の言語変更"
 
 #: ../../whatsnew/3.9.rst:219
 msgid ""
@@ -388,11 +456,11 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:274
 msgid "New Modules"
-msgstr "新模組"
+msgstr "新たなモジュール"
 
 #: ../../whatsnew/3.9.rst:277
 msgid "zoneinfo"
-msgstr "zoneinfo"
+msgstr ""
 
 #: ../../whatsnew/3.9.rst:279
 msgid ""
@@ -415,7 +483,7 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:313
 msgid "PEP written and implemented by Paul Ganssle"
-msgstr "由 Paul Ganssle 撰寫 PEP 與實作"
+msgstr ""
 
 #: ../../whatsnew/3.9.rst:317
 msgid "graphlib"
@@ -431,7 +499,7 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:326
 msgid "Improved Modules"
-msgstr ""
+msgstr "改良されたモジュール"
 
 #: ../../whatsnew/3.9.rst:329
 msgid "ast"
@@ -471,6 +539,11 @@ msgid ""
 "(Contributed by Kyle Stanley, Antoine Pitrou, and Yury Selivanov in :issue:"
 "`37228`.)"
 msgstr ""
+"セキュリティ上の重大な懸念により、:meth:`asyncio.loop."
+"create_datagram_endpoint` での *reuse_address* 引数は無効になりました。これは"
+"ソケットオプション `SO_REUSEADDR`` のUDP における挙動が原因です。詳しくは、"
+"``loop.create_datagram_endpoint()`` のドキュメントを参照してください。(Kyle "
+"Stanley, Antoine Pitrou, Yury Selivanov による貢献 :issue:`37228`)"
 
 #: ../../whatsnew/3.9.rst:353
 msgid ""
@@ -569,6 +642,9 @@ msgid ""
 "`curses.get_tabsize`, and :func:`curses.set_tabsize` functions. (Contributed "
 "by Anthony Sottile in :issue:`38312`.)"
 msgstr ""
+":func:`curses.get_escdelay`, :func:`curses.set_escdelay`, :func:`curses."
+"get_tabsize`,  :func:`curses.set_tabsize` の関数が追加されました。(Anthony "
+"Sottileによる :issue:`38312` でのコントリビュート。)"
 
 #: ../../whatsnew/3.9.rst:414
 msgid "datetime"
@@ -581,6 +657,10 @@ msgid ""
 "returns a :func:`~collections.namedtuple` instead of a :class:`tuple`. "
 "(Contributed by Dong-hee Na in :issue:`24416`.)"
 msgstr ""
+" :class:`datetime.date` の :meth:`~datetime.date.isocalendar()` メソッドと :"
+"class:`datetime.datetime` の :meth:`~datetime.datetime.isocalendar()` メソッ"
+"ドは class:`tuple` の代わりに :func:`~collections.namedtuple` を返すようにな"
+"りました。(Dong-hee Na の貢献による :issue:`24416`)"
 
 #: ../../whatsnew/3.9.rst:421
 msgid "distutils"
@@ -663,10 +743,13 @@ msgid ""
 "TOO_EARLY`` are added to :class:`http.HTTPStatus`. (Contributed by Dong-hee "
 "Na in :issue:`39509` and Ross Rhodes in :issue:`39507`.)"
 msgstr ""
+"HTTPステータスコード ``103 EARLY_HINTS``, ``418 IM_A_TEAPOT``, ``425 "
+"TOO_EARLY`` が :class:`http.HTTPStatus` に追加されました。(Dong-hee Na の貢"
+"献 :issue:`39509` とRoss Rhodesの貢献による :issue:`39507`)"
 
 #: ../../whatsnew/3.9.rst:474
 msgid "IDLE and idlelib"
-msgstr ""
+msgstr "IDLE と idelelib"
 
 #: ../../whatsnew/3.9.rst:476
 msgid ""
@@ -783,6 +866,8 @@ msgid ""
 "regular dict.  (Contributed by Inada Naoki in :issue:`36350` and :issue:"
 "`39775`.)"
 msgstr ""
+"attr:`inspect.BoundArguments.arguments` は ``OrderedDict`` から標準のdictに変"
+"更されました。(Inada Naoki の貢献による :issue:`36350`, :issue:`39775`)"
 
 #: ../../whatsnew/3.9.rst:547
 msgid "ipaddress"
@@ -871,6 +956,8 @@ msgid ""
 "Added :data:`~os.CLD_KILLED` and :data:`~os.CLD_STOPPED` for :attr:"
 "`si_code`. (Contributed by Dong-hee Na in :issue:`38493`.)"
 msgstr ""
+":attr:`si_code`に、`~os.CLD_KILLED`と`~os.CLD_STOPPED`が追加されました。(:"
+"issue:`38493`でのDong-hee Naの貢献による)"
 
 #: ../../whatsnew/3.9.rst:599
 msgid ""
@@ -883,12 +970,16 @@ msgid ""
 "The :func:`os.unsetenv` function is now also available on Windows. "
 "(Contributed by Victor Stinner in :issue:`39413`.)"
 msgstr ""
+":func:`os.unsetenv`関数が、Windowsでも使えるようになりました。(:issue:`39413`"
+"におけるVictor Stinnerの貢献による)"
 
 #: ../../whatsnew/3.9.rst:606
 msgid ""
 "The :func:`os.putenv` and :func:`os.unsetenv` functions are now always "
 "available. (Contributed by Victor Stinner in :issue:`39395`.)"
 msgstr ""
+":func:`os.putenv`と:func:`os.unsetenv`関数が、常に利用できるようになりまし"
+"た。(:issue:`39395`におけるVictor Stinnerの貢献による)"
 
 #: ../../whatsnew/3.9.rst:610
 msgid ""
@@ -905,6 +996,8 @@ msgid ""
 "Added :meth:`pathlib.Path.readlink()` which acts similarly to :func:`os."
 "readlink`. (Contributed by Girts Folkmanis in :issue:`30618`)"
 msgstr ""
+":func:`os.readlink` と同様の動作をする :meth:`pathlib.Path.readlink()` が追加"
+"されました。(Girts Folkmanis の貢献による :issue:`30618`)"
 
 #: ../../whatsnew/3.9.rst:622
 msgid "pdb"
@@ -958,6 +1051,8 @@ msgid ""
 "Added a new :attr:`random.Random.randbytes` method: generate random bytes. "
 "(Contributed by Victor Stinner in :issue:`40286`.)"
 msgstr ""
+"ランダムなbytesを生成する :attr:`random.Random.randbytes` メソッドが追加され"
+"ました。(Victor Stinner による貢献 :issue:`40286`)"
 
 #: ../../whatsnew/3.9.rst:654
 msgid "signal"
@@ -1076,6 +1171,7 @@ msgstr "unicodedata"
 msgid ""
 "The Unicode database has been updated to version 13.0.0. (:issue:`39926`)."
 msgstr ""
+"Unicode データベースが、バージョン 13.0.0 に更新されました。(:issue:`39926`)"
 
 #: ../../whatsnew/3.9.rst:726
 msgid "venv"
@@ -1105,7 +1201,7 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:746
 msgid "Optimizations"
-msgstr ""
+msgstr "最適化"
 
 #: ../../whatsnew/3.9.rst:748
 msgid ""
@@ -1213,7 +1309,7 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:856
 msgid "Deprecated"
-msgstr ""
+msgstr "非推奨"
 
 #: ../../whatsnew/3.9.rst:858
 msgid ""
@@ -1221,6 +1317,9 @@ msgid ""
 "(wheel packages) instead. (Contributed by Hugo van Kemenade in :issue:"
 "`39586`.)"
 msgstr ""
+"distutilsの``bdist_msi``コマンドは、現在非推奨です。代わりに、"
+"``bdist_wheel``(wheelパッケージ)を使って下さい。 ( :issue:`39586`でのHugo "
+"van Kemenadeによる貢献による)"
 
 #: ../../whatsnew/3.9.rst:862
 msgid ""
@@ -1295,11 +1394,11 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:908
 msgid ":func:`~binascii.b2a_hqx`, :func:`~binascii.a2b_hqx`"
-msgstr ":func:`~binascii.b2a_hqx`\\ 、\\ :func:`~binascii.a2b_hqx`"
+msgstr ""
 
 #: ../../whatsnew/3.9.rst:909
 msgid ":func:`~binascii.rlecode_hqx`, :func:`~binascii.rledecode_hqx`"
-msgstr ":func:`~binascii.rlecode_hqx`\\ 、\\ :func:`~binascii.rledecode_hqx`"
+msgstr ""
 
 #: ../../whatsnew/3.9.rst:911
 msgid "(Contributed by Victor Stinner in :issue:`39353`.)"
@@ -1344,6 +1443,8 @@ msgid ""
 "external module, ``mailman``.  (Contributed by Samuel Colvin in :issue:"
 "`35800`.)"
 msgstr ""
+":func:`smtpd.MailmanProxy` は、外部モジュールである ``mailman`` がないと使え"
+"ないため、非推奨となりました。 (Samuel Colvinの貢献による :issue:`35800`)"
 
 #: ../../whatsnew/3.9.rst:938
 msgid ""
@@ -1354,21 +1455,32 @@ msgid ""
 "Python version. Consider third-party alternatives such as `LibCST`_ or "
 "`parso`_. (Contributed by Carl Meyer in :issue:`40360`.)"
 msgstr ""
+":mod:`lib2to3` モジュールは :exc:`PendingDeprecationWarning` を出力するように"
+"なりました。Python 3.9 では PEG パーサーに切り替わりました (:pep:`617` 参"
+"照)。Python 3.10 では lib2to3 の LL(1) パーサーでは解析できない新しい言語構文"
+"が含まれる可能性があります。 ``lib2to3`` モジュールは、将来の Python のバー"
+"ジョンで標準ライブラリから削除されるかもしれません。 `LibCST`_ や  `parso`_ "
+"のようなサードパーティの代替品を検討してみてください。(Carl Meyer の貢献によ"
+"る :issue:`40360`)"
 
 #: ../../whatsnew/3.9.rst:946
 msgid ""
 "The *random* parameter of :func:`random.shuffle` has been deprecated. "
 "(Contributed by Raymond Hettinger in :issue:`40465`)"
 msgstr ""
+":func:`random.shuffle` の*random* パラメータは非推奨になりました。(Raymond "
+"Hettingerの貢献による :issue:`40465`)"
 
 #: ../../whatsnew/3.9.rst:955 ../../whatsnew/3.9.rst:1410
 msgid "Removed"
-msgstr ""
+msgstr "削除"
 
 #: ../../whatsnew/3.9.rst:957
 msgid ""
 "The erroneous version at :data:`unittest.mock.__version__` has been removed."
 msgstr ""
+":data:`unittest.mock.__version__` における誤ったバージョン表記は削除されまし"
+"た。"
 
 #: ../../whatsnew/3.9.rst:959
 msgid ""
@@ -1540,17 +1652,19 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:1069 ../../whatsnew/3.9.rst:1336
 msgid "Porting to Python 3.9"
-msgstr ""
+msgstr "Python 3.9への移植"
 
 #: ../../whatsnew/3.9.rst:1071
 msgid ""
 "This section lists previously described changes and other bugfixes that may "
 "require changes to your code."
 msgstr ""
+"このセクションでは前述の変更とバグフィックスにより必要となるかもしれないコー"
+"ドの変更を列挙します:"
 
 #: ../../whatsnew/3.9.rst:1076
 msgid "Changes in the Python API"
-msgstr ""
+msgstr "Python API の変更"
 
 #: ../../whatsnew/3.9.rst:1078
 msgid ""
@@ -1665,7 +1779,7 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:1152
 msgid "Changes in the C API"
-msgstr "C API 中的改動"
+msgstr "C API の変更"
 
 #: ../../whatsnew/3.9.rst:1154
 msgid ""
@@ -1696,7 +1810,7 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:1199
 msgid "(See :issue:`35810` and :issue:`40217` for more information.)"
-msgstr "（更多資訊請見 :issue:`35810` 與 :issue:`40217`\\ 。）"
+msgstr ""
 
 #: ../../whatsnew/3.9.rst:1201
 msgid ""
@@ -1708,7 +1822,7 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:1207
 msgid "CPython bytecode changes"
-msgstr ""
+msgstr "CPython バイトコードの変更"
 
 #: ../../whatsnew/3.9.rst:1209
 msgid ""
@@ -1811,7 +1925,7 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:1271
 msgid "C API Changes"
-msgstr ""
+msgstr "C API の変更"
 
 #: ../../whatsnew/3.9.rst:1276
 msgid ""
@@ -2020,7 +2134,7 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:1407
 msgid "(See :issue:`40170` for more details.)"
-msgstr "（更多資訊請見 :issue:`40170`\\ 。）"
+msgstr ""
 
 #: ../../whatsnew/3.9.rst:1412
 msgid ""
@@ -2207,7 +2321,7 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:1493
 msgid "Notable changes in Python 3.9.1"
-msgstr ""
+msgstr "Python 3.9.1 での重要な変更点"
 
 #: ../../whatsnew/3.9.rst:1498
 msgid ""
@@ -2242,11 +2356,11 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:1519
 msgid "(Contributed by Yurii Karabas in :issue:`42345`.)"
-msgstr ""
+msgstr "(:issue:`42345`でのYurii Karabasの貢献による)"
 
 #: ../../whatsnew/3.9.rst:1522
 msgid "macOS 11.0 (Big Sur) and Apple Silicon Mac support"
-msgstr ""
+msgstr "macOS 11.0 (Big Sur) と Appleシリコンの Mac のサポート"
 
 #: ../../whatsnew/3.9.rst:1524
 msgid ""
@@ -2262,11 +2376,11 @@ msgstr ""
 
 #: ../../whatsnew/3.9.rst:1533
 msgid "(Contributed by Ronald Oussoren and Lawrence D'Anna in :issue:`41100`.)"
-msgstr ""
+msgstr "(:issue:`41100`でのRonald OussorenとLawrence D'Annaの貢献による)"
 
 #: ../../whatsnew/3.9.rst:1536
 msgid "Notable changes in Python 3.9.2"
-msgstr ""
+msgstr "Python 3.9.2 での重要な変更点"
 
 #: ../../whatsnew/3.9.rst:1539
 msgid "collections.abc"
@@ -2303,15 +2417,3 @@ msgid ""
 "For more details, please see their respective documentation. (Contributed by "
 "Adam Goldschmidt, Senthil Kumaran and Ken Jin in :issue:`42967`.)"
 msgstr ""
-
-#~ msgid "Release"
-#~ msgstr "發行版本"
-
-#~ msgid "|release|"
-#~ msgstr "|release|"
-
-#~ msgid "Date"
-#~ msgstr "日期"
-
-#~ msgid "|today|"
-#~ msgstr "|today|"

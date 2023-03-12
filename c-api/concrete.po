@@ -1,28 +1,30 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Matt Wang <mattwang44@gmail.com>, 2022
+# tomo, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-20 18:08+0800\n"
-"PO-Revision-Date: 2022-11-13 20:37+0800\n"
-"Last-Translator: Matt Wang <mattwang44@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 00:48+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.2\n"
 
 #: ../../c-api/concrete.rst:8
 msgid "Concrete Objects Layer"
-msgstr "具體物件層"
+msgstr "具象オブジェクト (concrete object) レイヤ"
 
 #: ../../c-api/concrete.rst:10
 msgid ""
@@ -33,10 +35,13 @@ msgid ""
 "object is a dictionary, use :c:func:`PyDict_Check`.  The chapter is "
 "structured like the \"family tree\" of Python object types."
 msgstr ""
-"此章節列出的函式僅能接受某些特定的 Python 物件型別，將錯誤型別的物件傳遞給它"
-"們並不是什麼好事，如果你從 Python 程式當中接收到一個不確定是否為正確型別的物"
-"件，那麼請一定要先做型別檢查。例如使用 :c:func:`PyDict_Check` 來確認一個物件"
-"是否為字典。本章結構類似於 Python 物件型別的\"族譜圖 (family tree)\"。"
+"この章では、特定の Python オブジェクト型固有の関数について述べています。これ"
+"らの関数に間違った型のオブジェクトを渡すのは良い考えではありません; Python プ"
+"ログラムから何らかのオブジェクトを受け取ったとき、そのオブジェクトが正しい型"
+"になっているか確信をもてないのなら、まず型チェックを行わなければなりません; "
+"例えば、あるオブジェクトが辞書型か調べるには、 :c:func:`PyDict_Check` を使い"
+"ます。この章は Python のオブジェクト型における \"家計図\" に従って構成されて"
+"います。"
 
 #: ../../c-api/concrete.rst:19
 msgid ""
@@ -46,25 +51,30 @@ msgid ""
 "can cause memory access violations and immediate termination of the "
 "interpreter."
 msgstr ""
-"雖然本章所述之函式仔細地檢查了傳入物件的型別，但大多並無檢查是否為 `NULL``。"
-"允許 ``NULL`` 的傳入可能造成記憶體的不合法存取和直譯器的立即中止。"
+"この章で述べている関数は、渡されたオブジェクトの型を注意深くチェックしはする"
+"ものの、多くの関数は渡されたオブジェクトが有効な ``NULL`` なのか有効なオブ"
+"ジェクトなのかをチェックしません。これらの関数に ``NULL`` を渡させてしまう"
+"と、関数はメモリアクセス違反を起こして、インタプリタを即座に終了させてしまう"
+"はずです。"
 
 #: ../../c-api/concrete.rst:28
 msgid "Fundamental Objects"
-msgstr "基礎物件"
+msgstr "基本オブジェクト (fundamental object)"
 
 #: ../../c-api/concrete.rst:30
 msgid ""
 "This section describes Python type objects and the singleton object ``None``."
-msgstr "此段落描述 Python 型別物件與單例 (singleton) 物件 ``None``。"
+msgstr ""
+"この節では、Python の型オブジェクトとシングルトン(singleton)オブジェクト "
+"``None`` について述べます。"
 
 #: ../../c-api/concrete.rst:41
 msgid "Numeric Objects"
-msgstr "數值物件"
+msgstr "数値型オブジェクト (numeric object)"
 
 #: ../../c-api/concrete.rst:56
 msgid "Sequence Objects"
-msgstr "序列物件"
+msgstr "シーケンスオブジェクト (sequence object)"
 
 #: ../../c-api/concrete.rst:60
 msgid ""
@@ -72,17 +82,18 @@ msgid ""
 "chapter; this section deals with the specific kinds of sequence objects that "
 "are intrinsic to the Python language."
 msgstr ""
-"序列物件的一般操作在前一章節討論過了；此段落將討論 Python 語言特有的特定型別"
-"序列物件。"
+"シーケンスオブジェクトに対する一般的な操作については前の章ですでに述べまし"
+"た; この節では、Python 言語にもともと備わっている特定のシーケンスオブジェクト"
+"について扱います。"
 
 #: ../../c-api/concrete.rst:78
 msgid "Container Objects"
-msgstr "容器物件"
+msgstr "Container オブジェクト"
 
 #: ../../c-api/concrete.rst:91
 msgid "Function Objects"
-msgstr "函式物件"
+msgstr "Function オブジェクト"
 
 #: ../../c-api/concrete.rst:102
 msgid "Other Objects"
-msgstr "其他物件"
+msgstr "その他のオブジェクト"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,14 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-15 20:43+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2022-11-05 19:49+0000\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../library/importlib.resources.rst:2
 msgid ":mod:`importlib.resources` -- Resources"
@@ -23,7 +24,7 @@ msgstr ""
 
 #: ../../library/importlib.resources.rst:7
 msgid "**Source code:** :source:`Lib/importlib/resources/__init__.py`"
-msgstr "**原始碼：**\\ :source:`Lib/importlib/resources/__init__.py`"
+msgstr ""
 
 #: ../../library/importlib.resources.rst:13
 msgid ""
@@ -115,7 +116,7 @@ msgstr ""
 
 #: ../../library/importlib.resources.rst:82
 msgid "Deprecated functions"
-msgstr "已棄用函式"
+msgstr ""
 
 #: ../../library/importlib.resources.rst:84
 msgid ""

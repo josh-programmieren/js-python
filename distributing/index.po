@@ -1,33 +1,34 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Leon H., 2017
-# Steven Hsu <hsuhaochun@gmail.com>, 2021
+# tomo, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-02 17:19+0000\n"
-"PO-Revision-Date: 2021-07-04 18:06+0800\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 00:50+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.4.3\n"
 
 #: ../../distributing/index.rst:5
 msgid "Distributing Python Modules"
-msgstr "發布 Python 模組"
+msgstr "Python モジュールの配布"
 
 #: ../../distributing/index.rst:0
 msgid "Email"
-msgstr "電子郵件"
+msgstr "Email"
 
 #: ../../distributing/index.rst:7
 msgid "distutils-sig@python.org"
@@ -39,8 +40,10 @@ msgid ""
 "supporting community of contributors and users that also make their software "
 "available for other Python developers to use under open source license terms."
 msgstr ""
-"作為一個普及的開源開發專案，Python 有一個活躍的支持社群，由其貢獻者及使用者組"
-"成，而他們也讓他們的軟體可被其他 Python 開發者在開源授權條款下使用。"
+"人気のあるオープンソース開発プロジェクトがそうであるように、Python には貢献者"
+"たちとユーザたちの活発なサポートコミュニティがあり、またこれらはほかの "
+"Python 開発者たちに、彼らのソフトウェアのオープンソースライセンスのもとでの利"
+"用も可能にしてくれています。"
 
 #: ../../distributing/index.rst:14
 msgid ""
@@ -49,9 +52,9 @@ msgid ""
 "rare!) problems, as well as potentially contributing their own solutions to "
 "the common pool."
 msgstr ""
-"這樣可以讓 Python 使用者們有效地共享和合作，並受益於其他人對常見（有時甚至是"
-"罕見）的問題已經建立的解決方案，更可以在公開社群中潛在地貢獻他們自己的解決方"
-"案。"
+"これはほかの人が既に挙げた共通の(あるいは時折極めて稀有な!)問題や、彼ら自身の"
+"解法による潜在的な貢献が共通の場所に蓄えられることによる恩恵によって、Python "
+"ユーザに共有と協調を効果的に行なうことの助けとなっています。"
 
 #: ../../distributing/index.rst:19
 msgid ""
@@ -59,8 +62,9 @@ msgid ""
 "installing other Python projects, refer to the :ref:`installation guide "
 "<installing-index>`."
 msgstr ""
-"這份指南涵蓋了上述過程中的發布部分。如果是要安裝其他的 Python 專案，請參考"
-"\\ :ref:`安裝 Python 模組 <distributing-index>`\\ 指南。"
+"このガイドはこれらプロセスのうち、配布についてをカバーします。ほかの Python "
+"プロジェクトをインストールするためのガイドについては :ref:`installation "
+"guide <installing-index>` を参照してください。"
 
 #: ../../distributing/index.rst:25
 msgid ""
@@ -69,20 +73,20 @@ msgid ""
 "source software. Please take such policies into account when making use of "
 "the distribution and installation tools provided with Python."
 msgstr ""
-"對於企業和其他機構的使用者，要注意到，許多組織對於使用和貢獻開源軟體都有自己"
-"的政策。在開始使用配備 Python 的發布及安裝工具時，請將那些政策納入考量。"
+"あなたが企業や組織のユーザであれば、多くの組織がオープンソースソフトウェアの"
+"利用と貢献に関する彼ら独自のポリシーを持っていることに気をつけてください。"
+"Python によって提供される配布とインストールのツールを利用する際には、そのよう"
+"なポリシーを考慮に入れてください。"
 
 #: ../../distributing/index.rst:32
 msgid "Key terms"
-msgstr "關鍵術語"
+msgstr "重要用語集"
 
 #: ../../distributing/index.rst:34
 msgid ""
 "the `Python Package Index <https://pypi.org>`__ is a public repository of "
 "open source licensed packages made available for use by other Python users"
 msgstr ""
-"`Python 套件索引 (Python Package Index) <https://pypi.org>`__ 是開源授權套件"
-"的一個公共儲存庫，其中的套件皆可被其他 Python 使用者所使用。"
 
 #: ../../distributing/index.rst:37
 msgid ""
@@ -93,11 +97,11 @@ msgid ""
 "issue trackers on both `GitHub <https://github.com/pypa>`__ and `Bitbucket "
 "<https://bitbucket.org/pypa/>`__."
 msgstr ""
-"`Python 封裝管理站 (Python Packaging Authority) <https://www.pypa.io/>`__ 是"
-"一個由開發者和說明文件作者組成的團隊，負責維護及改進標準封裝工具，以及相關的"
-"元資料 (metadata) 和檔案格式標準。他們在 `GitHub <https://github.com/"
-"pypa>`__ 和 `Bitbucket <https://bitbucket.org/pypa/>`__ 這兩個平台上維護各種"
-"工具、說明文件及問題追蹤系統。"
+"`Python Packaging Authority <https://www.pypa.io/>`__ は、標準のパッケージン"
+"グツール、関連するメタデータとファイルフォーマット標準の保守と発展を担ってい"
+"る、開発者・ドキュメントの著者のグループです。彼らは様々なツールやドキュメン"
+"ト、issue tracker を `GitHub <https://github.com/pypa>`__  と `Bitbucket "
+"<https://bitbucket.org/pypa/>`__ の両方で管理しています。"
 
 #: ../../distributing/index.rst:44
 msgid ""
@@ -108,10 +112,12 @@ msgid ""
 "standard library, but its name lives on in other ways (such as the name of "
 "the mailing list used to coordinate Python packaging standards development)."
 msgstr ""
-":mod:`distutils` 是最早的建置和發布系統，於 1998 年首次被加入 Python 標準函式"
-"庫。雖然直接使用 :mod:`distutils` 的方式已經被逐步淘汰，它仍然是現今封裝和發"
-"布的基礎結構根基，而且它不僅仍然是標準函式庫的一部分，它的名稱也以其他的方式"
-"存活著（例如：用於協調 Python 封裝標準開發的郵寄清單就是以它命名）。"
+":mod:`distutils` はオリジナルのビルド・配布システムで、 Python 標準ライブラリ"
+"に 1998 年に最初に追加されました。 :mod:`distutils` の直接的な利用は段階的に"
+"取り払われていきますが、それは今でも現時点でのパッケージングと配布のインフラ"
+"ストラクチャの基礎として鎮座していて、標準ライブラリの一部として残っているだ"
+"けでなく、その名前はほかの文脈でも生き続けています(Python のパッケージング標"
+"準の開発をまとめるのに使われているメーリングリストの名前のように)。"
 
 #: ../../distributing/index.rst:51
 msgid ""
@@ -122,11 +128,12 @@ msgid ""
 "`distutils` that offers consistent support for more recent packaging "
 "standards across a wide range of Python versions."
 msgstr ""
-"`setuptools`_ 是 :mod:`distutils` 的一個（主要的）偶然出現的替代品，它於 "
-"2004 年首次被發布。相較於未修改的 :mod:`distutils` 工具，它最值得注意的新功"
-"能，是能夠宣告對其他套件的依賴性 (dependency)。它目前被推薦為 :mod:"
-"`distutils` 的一個替代方案，因其更新較為頻繁，且能在各個廣泛的 Python 版本之"
-"間，為較新的封裝標準提供一致性的支援。"
+"`setuptools`_ は :mod:`distutils` (の大部分)をまるごと置き換える後継プロジェ"
+"クトで、2004 年に最初に公開されました。未修正の :mod:`distutils` ツールに比べ"
+"て、他のパッケージへの依存関係を宣言できる機能が追加されたことが最も注目に値"
+"します。今では :mod:`distutils` よりも定期的に更新される代替品として推奨され"
+"ていて、広範囲の Python バージョンに渡るより新しいパッケージングの標準を一貫"
+"してサポートしています。"
 
 #: ../../distributing/index.rst:57
 msgid ""
@@ -136,14 +143,16 @@ msgid ""
 "in :pep:`427`) that allows Python libraries, even those including binary "
 "extensions, to be installed on a system without needing to be built locally."
 msgstr ""
-"`wheel`_\\ （在此文中）是一個將 ``bdist_wheel`` 指令附加到 :mod:`distutils`/"
-"`setuptools`_ 的專案。這會產生一個跨平台的二進制封裝格式（稱為「wheels」或"
-"「wheel 檔案」，並於 :pep:`427` 中被定義），它可讓 Python 函式庫，甚至那些包"
-"含二進制擴充的函式庫，可以在系統中被安裝，但不需要在本機進行建置。"
+"`wheel`_ は (このドキュメントの文脈では) :mod:`distutils`/`setuptools`_ に "
+"``bdist_wheel`` コマンドを追加するプロジェクトです。これは、それがバイナリの"
+"拡張を含んでいようと、Python ライブラリをローカルでビルドする必要性なしでシス"
+"テムにインストール出来るようにする、クロスプラットフォームのバイナリのパッ"
+"ケージング形式(\"wheels\" または \"wheel files\" と呼ばれ、 :pep:`427` で定義"
+"されています)を生成します。"
 
 #: ../../distributing/index.rst:68
 msgid "Open source licensing and collaboration"
-msgstr "開源授權與協同合作"
+msgstr "オープンソースライセンス化とコラボレーション"
 
 #: ../../distributing/index.rst:70
 msgid ""
@@ -151,8 +160,9 @@ msgid ""
 "This means that other developers require explicit permission to copy, use, "
 "modify and redistribute the software."
 msgstr ""
-"在世界上多數地方，軟體會自動受版權所保護。這代表著其他開發人員需要明確的許"
-"可，才能複製、使用、修改和重新發布軟體。"
+"世界のほとんどの国では、ソフトウェアは自動的に著作権保護の対象となります。こ"
+"れが意味するのは、ほかの開発者はそのソフトウェアに関する複製、使用、修正と配"
+"布に対して、明示的な許諾を必要とする、ということです。"
 
 #: ../../distributing/index.rst:74
 msgid ""
@@ -162,9 +172,11 @@ msgid ""
 "This leaves many developers free to spend more time focusing on the problems "
 "that are relatively unique to their specific situation."
 msgstr ""
-"開源授權是一種以相對一致的方式，明確地授予此類許可的方法，它允許開發人員透過"
-"為各種問題提供免費可用的共通解決方案，來達到高效率的共享和協作。這使得許多開"
-"發人員可以自由地將更多時間專注於處理他們在特定情況中遇到的相對獨特的問題。"
+"オープンソースライセンス化は、比較的矛盾のなく明示的にそのような権限を許可す"
+"る方法です。さまざまな問題に対する共通の解法をいつでも利用可能にすることで、"
+"開発者に共有と協調を効率的に行うことを可能にしています。これは多くの開発者"
+"に、彼ら固有の状況での比較的特異な問題により多くの時間をかけて集中することを"
+"可能にしてくれています。"
 
 #: ../../distributing/index.rst:80
 msgid ""
@@ -172,8 +184,9 @@ msgid ""
 "reasonably straightforward for developers to make their own contributions "
 "back to that common pool of software if they choose to do so."
 msgstr ""
-"Python 所提供的發布工具，被設計為讓開發人員能夠以合理的直觀方式，對該公用軟體"
-"庫回饋他們自己的貢獻，前提是他們願意這樣做。"
+"Python によって提供される配布ツールは、開発者にとってそれなりに単純で理解しや"
+"すいようにデザインされているため、開発者がそう望む場合、自身の貢献をソフト"
+"ウェアのその共通の蓄積場所に還元できます。"
 
 #: ../../distributing/index.rst:84
 msgid ""
@@ -181,11 +194,12 @@ msgid ""
 "an organisation, regardless of whether that software is published as open "
 "source software or not."
 msgstr ""
-"同一個發布工具也可用於在組織內發布軟體，不論該軟體是否有作為開源軟體被發布。"
+"それがオープンソースとして公開されているかどうかによらず、同じ配布ツールを組"
+"織内のソフトウェア配布に使うことも出来ます。"
 
 #: ../../distributing/index.rst:90
 msgid "Installing the tools"
-msgstr "安裝工具"
+msgstr "ツールのインストール"
 
 #: ../../distributing/index.rst:92
 msgid ""
@@ -194,98 +208,99 @@ msgid ""
 "important to have standard tools that work consistently, even on older "
 "versions of Python."
 msgstr ""
-"標準函式庫並不包含那些支援現代 Python 封裝標準的建置工具，因為核心開發團隊發"
-"現，提供始終可運作的標準工具是很重要的，即使它們是在舊版的 Python 上運作。"
+"コア開発チームは、古いバージョンの Python に対してでさえも一貫して動作する標"
+"準ツールを持つことが重要だということを理解したため、標準ライブラリには、モダ"
+"ンな Python パッケージング標準をサポートするビルドツールは含まれていません。"
 
 #: ../../distributing/index.rst:97
 msgid ""
 "The currently recommended build and distribution tools can be installed by "
 "invoking the ``pip`` module at the command line::"
 msgstr ""
-"當今被推薦的建置及發布工具，可以透過在命令列中呼叫 ``pip`` 模組來安裝它們：\n"
-"\n"
-"::"
+"現在のところのビルド・配布の推奨ツールは ``pip`` モジュールをコマンドラインか"
+"ら呼び出すことでインストール出来ます::"
 
 #: ../../distributing/index.rst:104
 msgid ""
 "For POSIX users (including macOS and Linux users), these instructions assume "
 "the use of a :term:`virtual environment`."
 msgstr ""
-"對於 POSIX 使用者（包括 Mac OS X 和 Linux 使用者），這些教學皆假設有使用 :"
-"term:`virtual environment`\\ 。"
 
 #: ../../distributing/index.rst:107
 msgid ""
 "For Windows users, these instructions assume that the option to adjust the "
 "system PATH environment variable was selected when installing Python."
 msgstr ""
-"對於 Windows 使用者，這些教學皆假設在安裝 Python 時，「可調整系統 PATH 環境變"
-"數」的選項已被選取。"
+"Windows ユーザ向けには、このガイド内の指示は、Python インストール時にシステム"
+"の PATH 環境変数が調整されていることを前提にしています。"
 
 #: ../../distributing/index.rst:111
 msgid ""
 "The Python Packaging User Guide includes more details on the `currently "
 "recommended tools`_."
-msgstr "Python 封裝使用者指南包含了關於\\ `當今推薦工具`_\\ 的更多細節。"
+msgstr ""
+"Python Packaging User Guide にはさらに詳しい情報  `currently recommended "
+"tools`_ があります。"
 
 #: ../../distributing/index.rst:123
 msgid "Reading the Python Packaging User Guide"
-msgstr "閱讀 Python 封裝使用者指南"
+msgstr "Python Packaging User Guide を読む"
 
 #: ../../distributing/index.rst:125
 msgid ""
 "The Python Packaging User Guide covers the various key steps and elements "
 "involved in creating and publishing a project:"
 msgstr ""
-"Python 封裝使用者指南涵蓋了關於建立和發布一個專案的各項關鍵步驟和元素："
+"Python Packaging User Guide は、プロジェクトの作成と配布に関わる様々な鍵とな"
+"るステップと要素をカバーしています。"
 
 #: ../../distributing/index.rst:128
 msgid "`Project structure`_"
-msgstr "`專案結構`_"
+msgstr "`Project structure`_"
 
 #: ../../distributing/index.rst:129
 msgid "`Building and packaging the project`_"
-msgstr "`專案建置與封裝`_"
+msgstr "`Building and packaging the project`_"
 
 #: ../../distributing/index.rst:130
 msgid "`Uploading the project to the Python Package Index`_"
-msgstr "`上傳專案至 Python 套件索引 (Python Package Index)`_"
+msgstr ""
 
 #: ../../distributing/index.rst:131
 msgid "`The .pypirc file`_"
-msgstr "`.pypirc 檔案`_"
+msgstr "`.pypirc file`_"
 
 #: ../../distributing/index.rst:144
 msgid "How do I...?"
-msgstr "我該如何...？"
+msgstr "どうすればいいの...？"
 
 #: ../../distributing/index.rst:146
 msgid "These are quick answers or links for some common tasks."
-msgstr "接下來是關於一些常見任務的快速解答或連結。"
+msgstr "以下はよくある課題への簡単な回答もしくは回答へのリンクです。"
 
 #: ../../distributing/index.rst:149
 msgid "... choose a name for my project?"
-msgstr "...為我的專案選擇一個名稱？"
+msgstr "... 私のプロジェクトの名前はどう選べばいいですか?"
 
 #: ../../distributing/index.rst:151
 msgid "This isn't an easy topic, but here are a few tips:"
-msgstr "這不是一個簡單的題目，但這裡有一些提示："
+msgstr "簡単なトピックではありませんが、いくつか助言をしておきます:"
 
 #: ../../distributing/index.rst:153
 msgid "check the Python Package Index to see if the name is already in use"
-msgstr "檢查 Python 套件索引，看看該名稱是否已被使用"
+msgstr ""
 
 #: ../../distributing/index.rst:154
 msgid ""
 "check popular hosting sites like GitHub, Bitbucket, etc to see if there is "
 "already a project with that name"
 msgstr ""
-"檢查常用的代管網站，像是 GitHub、Bitbucket 等，看看是否已經有一個使用該名稱的"
-"專案"
+"GitHub, Bitbucket などのような人気のあるホスティングサイトにその名前が既にい"
+"ないかチェックする"
 
 #: ../../distributing/index.rst:156
 msgid "check what comes up in a web search for the name you're considering"
-msgstr "檢查您正在考慮的名稱在網路搜尋中會出現的內容"
+msgstr "検討している名前の WEB 検索の結果をチェックする"
 
 #: ../../distributing/index.rst:157
 msgid ""
@@ -293,12 +308,12 @@ msgid ""
 "they can make it difficult for users to find your software when searching "
 "for it"
 msgstr ""
-"避免使用特別常見的單字，尤其是那些有多重含義的單字，因為它們會讓使用者在搜尋"
-"你的軟體時時很難找到它"
+"とりわけ一般的な語、特に多くの意味を持ち、ユーザにあなたのソフトウェアを検索"
+"するのを難しくさせるような語を避ける"
 
 #: ../../distributing/index.rst:163
 msgid "... create and distribute binary extensions?"
-msgstr "...建立和發布二進制擴充？"
+msgstr "... バイナリの拡張を作って配布したいのですが?"
 
 #: ../../distributing/index.rst:165
 msgid ""
@@ -306,13 +321,14 @@ msgid ""
 "available depending on exactly what you're aiming to achieve. See the Python "
 "Packaging User Guide for more information and recommendations."
 msgstr ""
-"實際上這是一個非常複雜的題目，因為有各式各樣的替代方案可使用，取決於您確實想"
-"要達成的目標。更多的資訊和建議，請參閱 Python 封裝使用者指南。"
+"これは大変複雑なトピックで、あなたが何を達成したいのかに完全に依存する、数多"
+"くの選択肢があります。Python Packaging User Guide にはもっと詳しい情報と提案"
+"がありますので、ご参照ください。"
 
 #: ../../distributing/index.rst:171
 msgid ""
 "`Python Packaging User Guide: Binary Extensions <https://packaging.python."
 "org/guides/packaging-binary-extensions/>`__"
 msgstr ""
-"`Python 封裝使用者指南：二進制擴充 <https://packaging.python.org/guides/"
-"packaging-binary-extensions/>`__"
+"`Python Packaging User Guide: Binary Extensions <https://packaging.python."
+"org/guides/packaging-binary-extensions/>`__"

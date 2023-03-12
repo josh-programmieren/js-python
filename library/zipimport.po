@@ -1,30 +1,34 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# tomo, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 19:25+0000\n"
-"PO-Revision-Date: 2018-05-23 16:17+0000\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:18+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../library/zipimport.rst:2
 msgid ":mod:`zipimport` --- Import modules from Zip archives"
-msgstr ""
+msgstr ":mod:`zipimport` --- Zip アーカイブからモジュールを import する"
 
 #: ../../library/zipimport.rst:9
 msgid "**Source code:** :source:`Lib/zipimport.py`"
-msgstr "**原始碼：**\\ :source:`Lib/zipimport.py`"
+msgstr "**ソースコード:** :source:`Lib/zipimport.py`"
 
 #: ../../library/zipimport.rst:13
 msgid ""
@@ -34,6 +38,11 @@ msgid ""
 "the built-in :keyword:`import` mechanism for :data:`sys.path` items that are "
 "paths to ZIP archives."
 msgstr ""
+"このモジュールは、 Python モジュール (:file:`\\*.py`, :file:`\\*.pyc`) やパッ"
+"ケージを ZIP 形式のアーカイブから import できるようにします。通常、 :mod:"
+"`zipimport` を明示的に使う必要はありません; 組み込みの :keyword:`import` "
+"は、 :data:`sys.path` の要素が ZIP アーカイブへのパスを指している場合にこのモ"
+"ジュールを自動的に使います。"
 
 #: ../../library/zipimport.rst:19
 msgid ""
@@ -45,6 +54,13 @@ msgid ""
 "lib/` would only import from the :file:`lib/` subdirectory within the "
 "archive."
 msgstr ""
+"普通、 :data:`sys.path` はディレクトリ名の文字列からなるリストです。このモ"
+"ジュールを使うと、 :data:`sys.path` の要素に ZIP ファイルアーカイブを示す文字"
+"列を使えるようになります。ZIP アーカイブにはサブディレクトリ構造を含めること"
+"ができ、パッケージの import をサポートさせたり、アーカイブ内のパスを指定して"
+"サブディレクトリ下から import を行わせたりできます。例えば、 :file:`example."
+"zip/lib/` のように指定すると、アーカイブ中の  :file:`lib/` サブディレクトリ下"
+"だけから import を行います。"
 
 #: ../../library/zipimport.rst:26
 msgid ""
@@ -59,22 +75,28 @@ msgstr ""
 #: ../../library/zipimport.rst:33
 msgid "Previously, ZIP archives with an archive comment were not supported."
 msgstr ""
+"以前は、アーカイブコメント付きの ZIP アーカイブはサポートされていませんでし"
+"た。"
 
 #: ../../library/zipimport.rst:40
 msgid ""
 "`PKZIP Application Note <https://pkware.cachefly.net/webdocs/casestudies/"
 "APPNOTE.TXT>`_"
 msgstr ""
+"`PKZIP Application Note <https://pkware.cachefly.net/webdocs/casestudies/"
+"APPNOTE.TXT>`_"
 
 #: ../../library/zipimport.rst:39
 msgid ""
 "Documentation on the ZIP file format by Phil Katz, the creator of the format "
 "and algorithms used."
 msgstr ""
+"ZIP ファイルフォーマットおよびアルゴリズムを作成した Phil Katz によるドキュメ"
+"ント。"
 
 #: ../../library/zipimport.rst:45
 msgid ":pep:`273` - Import Modules from Zip Archives"
-msgstr ""
+msgstr ":pep:`273` - Zip アーカイブからモジュールをインポートする"
 
 #: ../../library/zipimport.rst:43
 msgid ""
@@ -83,6 +105,9 @@ msgid ""
 "written by Just van Rossum that uses the import hooks described in :pep:"
 "`302`."
 msgstr ""
+"このモジュールの実装も行った、James C. Ahlstrom による PEP です。Python 2.3 "
+"は :pep:`273` の仕様に従っていますが、Just van Rossum の書いた import フック"
+"による実装を使っています。インポートフックは :pep:`302` で解説されています。"
 
 #: ../../library/zipimport.rst:48
 msgid ":mod:`importlib` - The implementation of the import machinery"
@@ -95,21 +120,23 @@ msgstr ""
 
 #: ../../library/zipimport.rst:52
 msgid "This module defines an exception:"
-msgstr ""
+msgstr "このモジュールでは例外を一つ定義しています:"
 
 #: ../../library/zipimport.rst:56
 msgid ""
 "Exception raised by zipimporter objects. It's a subclass of :exc:"
 "`ImportError`, so it can be caught as :exc:`ImportError`, too."
 msgstr ""
+"zipimporter オブジェクトが送出する例外です。 :exc:`ImportError` のサブクラス"
+"なので、 :exc:`ImportError` としても捕捉できます。"
 
 #: ../../library/zipimport.rst:63
 msgid "zipimporter Objects"
-msgstr "zipimporter 物件"
+msgstr "zipimporter オブジェクト"
 
 #: ../../library/zipimport.rst:65
 msgid ":class:`zipimporter` is the class for importing ZIP files."
-msgstr ""
+msgstr ":class:`zipimporter` は ZIP ファイルを import するためのクラスです。"
 
 #: ../../library/zipimport.rst:69
 msgid ""
@@ -119,12 +146,19 @@ msgid ""
 "`lib` directory inside the ZIP file :file:`foo/bar.zip` (provided that it "
 "exists)."
 msgstr ""
+"新たな zipimporter インスタンスを生成します。 *archivepath* は ZIP ファイルへ"
+"のパスまたは ZIP ファイル中の特定のパスへのパスでなければなりません。たとえ"
+"ば、 :file:`foo/bar.zip/lib` という *archivepath* の場合、 :file:`foo/bar."
+"zip` という ZIP ファイルの中の :file:`lib` ディレクトリにあるモジュールを (存"
+"在するものとして) 検索します。"
 
 #: ../../library/zipimport.rst:74
 msgid ""
 ":exc:`ZipImportError` is raised if *archivepath* doesn't point to a valid "
 "ZIP archive."
 msgstr ""
+"*archivepath* が有効な ZIP アーカイブを指していない場合、 :exc:"
+"`ZipImportError` を送出します。"
 
 #: ../../library/zipimport.rst:79
 msgid ""
@@ -142,7 +176,7 @@ msgstr ""
 
 #: ../../library/zipimport.rst:98 ../../library/zipimport.rst:111
 msgid "Use :meth:`find_spec` instead."
-msgstr ""
+msgstr "代わりに :meth:`find_spec` を使用してください。"
 
 #: ../../library/zipimport.rst:103
 msgid ""
@@ -152,6 +186,11 @@ msgid ""
 "argument is ignored---it's there for compatibility with the importer "
 "protocol."
 msgstr ""
+"*fullname* で指定されたモジュールを検索します。 *fullname* は完全に修飾され"
+"た (ドット表記の) モジュール名でなければなりません。モジュールが見つかった場"
+"合には zipimporter インスタンス自体を返し、そうでない場合には :const:`None` "
+"を返します。オプションの *path* 引数は無視されます --- この引数は importer プ"
+"ロトコルとの互換性を保つためのものです。"
 
 #: ../../library/zipimport.rst:116
 msgid "An implementation of :meth:`importlib.abc.PathEntryFinder.find_spec`."
@@ -168,10 +207,12 @@ msgid ""
 "Return the data associated with *pathname*. Raise :exc:`OSError` if the file "
 "wasn't found."
 msgstr ""
+"*pathname* に関連付けられたデータを返します。該当するファイルが見つからなかっ"
+"た場合には :exc:`OSError` を送出します。"
 
 #: ../../library/zipimport.rst:132
 msgid ":exc:`IOError` used to be raised instead of :exc:`OSError`."
-msgstr ""
+msgstr "以前は :exc:`OSError` の代わりに :exc:`IOError` が送出されていました。"
 
 #: ../../library/zipimport.rst:138
 msgid ""
@@ -185,12 +226,17 @@ msgid ""
 "if the module couldn't be found, return :const:`None` if the archive does "
 "contain the module, but has no source for it."
 msgstr ""
+"*fullname* で指定されたモジュールのソースコードを返します。モジュールが見つか"
+"らない場合、:exc:`ZipImportError` を送出します。アーカイブにはモジュールがあ"
+"るもののソースコードがない場合、 :const:`None` を返します。"
 
 #: ../../library/zipimport.rst:155
 msgid ""
 "Return ``True`` if the module specified by *fullname* is a package. Raise :"
 "exc:`ZipImportError` if the module couldn't be found."
 msgstr ""
+"*fullname* で指定されたモジュールがパッケージの場合 ``True`` を返します。モ"
+"ジュールを見つけられない場合 :exc:`ZipImportError` を送出します。"
 
 #: ../../library/zipimport.rst:161
 msgid ""
@@ -201,7 +247,7 @@ msgstr ""
 
 #: ../../library/zipimport.rst:167
 msgid "Use :meth:`exec_module` instead."
-msgstr ""
+msgstr "代わりに :meth:`exec_module` を使用してください。"
 
 #: ../../library/zipimport.rst:172
 msgid ""
@@ -214,12 +260,16 @@ msgid ""
 "The file name of the importer's associated ZIP file, without a possible "
 "subpath."
 msgstr ""
+"importer に関連付けられた ZIP ファイルのファイル名です。サブパスは含まれませ"
+"ん。"
 
 #: ../../library/zipimport.rst:186
 msgid ""
 "The subpath within the ZIP file where modules are searched.  This is the "
 "empty string for zipimporter objects which point to the root of the ZIP file."
 msgstr ""
+"モジュールを検索する ZIP ファイル中のサブパスです。この文字列は ZIP ファイル"
+"のルートを指している zipimporter オブジェクトでは空です。"
 
 #: ../../library/zipimport.rst:190
 msgid ""
@@ -227,13 +277,18 @@ msgid ""
 "slash, equal the original *archivepath* argument given to the :class:"
 "`zipimporter` constructor."
 msgstr ""
+"スラッシュでつなげると、:attr:`archive` と :attr:`prefix` 属性は :class:"
+"`zipimporter` コンストラクタに渡された元々の *archivepath* 引数と等しくなりま"
+"す。"
 
 #: ../../library/zipimport.rst:198
 msgid "Examples"
-msgstr "範例"
+msgstr "使用例"
 
 #: ../../library/zipimport.rst:200
 msgid ""
 "Here is an example that imports a module from a ZIP archive - note that the :"
 "mod:`zipimport` module is not explicitly used."
 msgstr ""
+"モジュールを ZIP アーカイブから import する例を以下に示します - :mod:"
+"`zipimport` モジュールが明示的に使われていないことに注意してください。"

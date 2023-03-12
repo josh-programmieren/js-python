@@ -1,31 +1,36 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Ching-Lung Chuang, 2015
+# tomo, 2021
+# mollinaca, 2021
+# yaakiyu, 2022
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 00:20+0000\n"
-"PO-Revision-Date: 2018-05-23 14:06+0000\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 00:49+0000\n"
+"Last-Translator: yaakiyu, 2022\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../c-api/memory.rst:8
 msgid "Memory Management"
-msgstr "記憶體管理"
+msgstr "メモリ管理"
 
 #: ../../c-api/memory.rst:17
 msgid "Overview"
-msgstr "總覽"
+msgstr "概要"
 
 #: ../../c-api/memory.rst:19
 msgid ""
@@ -35,6 +40,12 @@ msgid ""
 "different components which deal with various dynamic storage management "
 "aspects, like sharing, segmentation, preallocation or caching."
 msgstr ""
+"Python におけるメモリ管理には、全ての Python オブジェクトとデータ構造が入った"
+"プライベートヒープ (private heap) が必須です。プライベートヒープの管理は、内"
+"部的には *Python メモリマネージャ (Python memory manager)* が確実に行います。"
+"Python メモリマネージャには、共有 (sharing)、セグメント分割 (segmentation)、"
+"事前割り当て (preallocation)、キャッシュ化 (caching) といった、様々な動的記憶"
+"管理の側面を扱うために、個別のコンポーネントがあります。"
 
 #: ../../c-api/memory.rst:25
 msgid ""
@@ -49,6 +60,17 @@ msgid ""
 "manager thus delegates some of the work to the object-specific allocators, "
 "but ensures that the latter operate within the bounds of the private heap."
 msgstr ""
+"最低水準層では、素のメモリ操作関数 (raw memory allocator) がオペレーティング"
+"システムのメモリ管理機構とやりとりして、プライベートヒープ内にPython 関連の全"
+"てのデータを記憶するのに十分な空きがあるかどうか確認します。素のメモリ操作関"
+"数の上には、いくつかのオブジェクト固有のメモリ操作関数があります。これらは同"
+"じヒープを操作し、各オブジェクト型固有の事情に合ったメモリ管理ポリシを実装し"
+"ています。例えば、整数オブジェクトは文字列やタプル、辞書とは違ったやり方で"
+"ヒープ内で管理されます。というのも、整数には値を記憶する上で特別な要件があ"
+"り、速度/容量のトレードオフが存在するからです。このように、Python メモリマネ"
+"ジャは作業のいくつかをオブジェクト固有のメモリ操作関数に委譲しますが、これら"
+"の関数がプライベートヒープからはみ出してメモリ管理を行わないようにしていま"
+"す。"
 
 #: ../../c-api/memory.rst:36
 msgid ""
@@ -59,6 +81,12 @@ msgid ""
 "internal buffers is performed on demand by the Python memory manager through "
 "the Python/C API functions listed in this document."
 msgstr ""
+"重要なのは、たとえユーザがいつもヒープ内のメモリブロックを指すようなオブジェ"
+"クトポインタを操作しているとしても、Python 用ヒープの管理はインタプリタ自体が"
+"行うもので、ユーザがそれを制御する余地はないと理解することです。Python オブ"
+"ジェクトや内部使用されるバッファを入れるためのヒープ空間のメモリ確保は、必要"
+"に応じて、Python メモリマネージャがこのドキュメント内で列挙しているPython/C "
+"API 関数群を介して行います。"
 
 #: ../../c-api/memory.rst:49
 msgid ""
@@ -71,6 +99,15 @@ msgid ""
 "memory blocks with the C library allocator for individual purposes, as shown "
 "in the following example::"
 msgstr ""
+"メモリ管理の崩壊を避けるため、拡張モジュールの作者は決して Python  オブジェク"
+"トを C ライブラリが公開している関数: :c:func:`malloc` 、 :c:func:"
+"`calloc` 、 :c:func:`realloc` および :c:func:`free` で操作しようとしてはなり"
+"ません。こうした関数を使うと、C のメモリ操作関数と Python メモリマネージャと"
+"の間で関数呼び出しが交錯します。 C のメモリ操作関数とPython メモリマネージャ"
+"は異なるアルゴリズムで実装されていて、異なるヒープを操作するため、呼び出しの"
+"交錯は致命的な結果を招きます。とはいえ、個別の目的のためなら、 C ライブラリの"
+"メモリ操作関数を使って安全にメモリを確保したり解放したりできます。例えば、以"
+"下がそのような例です::"
 
 #: ../../c-api/memory.rst:68
 msgid ""
@@ -78,6 +115,9 @@ msgid ""
 "library allocator. The Python memory manager is involved only in the "
 "allocation of the bytes object returned as a result."
 msgstr ""
+"この例では、I/O バッファに対するメモリ要求は C ライブラリのメモリ操作関数を"
+"使っています。Python メモリマネージャーは戻り値として返される bytes オブジェ"
+"クトを確保する時にだけ必要です。"
 
 #: ../../c-api/memory.rst:72
 msgid ""
@@ -102,6 +142,8 @@ msgid ""
 "The :envvar:`PYTHONMALLOC` environment variable can be used to configure the "
 "memory allocators used by Python."
 msgstr ""
+"環境変数 :envvar:`PYTHONMALLOC` を使用して Python が利用するメモリアロケータ"
+"を制御することができます。"
 
 #: ../../c-api/memory.rst:91
 msgid ""
@@ -109,6 +151,9 @@ msgid ""
 "statistics of the :ref:`pymalloc memory allocator <pymalloc>` every time a "
 "new pymalloc object arena is created, and on shutdown."
 msgstr ""
+"環境変数 :envvar:`PYTHONMALLOCSTATS` を使用して、新たなオブジェクトアリーナが"
+"生成される時と、シャットダウン時に :ref:`pymalloc メモリアロケータ "
+"<pymalloc>` の統計情報を表示できます。"
 
 #: ../../c-api/memory.rst:96
 msgid "Allocator Domains"
@@ -165,7 +210,7 @@ msgstr ""
 
 #: ../../c-api/memory.rst:131
 msgid "Raw Memory Interface"
-msgstr ""
+msgstr "生メモリインターフェース"
 
 #: ../../c-api/memory.rst:133
 msgid ""
@@ -173,6 +218,9 @@ msgid ""
 "functions are thread-safe, the :term:`GIL <global interpreter lock>` does "
 "not need to be held."
 msgstr ""
+"以下の関数群はシステムのアロケータをラップします。\n"
+"これらの関数はスレッドセーフで、 :term:`GIL <global interpreter lock>` を保持"
+"していなくても呼び出すことができます。"
 
 #: ../../c-api/memory.rst:137
 msgid ""
@@ -181,6 +229,11 @@ msgid ""
 "and :c:func:`free`; call ``malloc(1)`` (or ``calloc(1, 1)``) when requesting "
 "zero bytes."
 msgstr ""
+"デフォルトの :ref:`生メモリアロケーター <default-memory-allocators>` は次の関"
+"数を利用します: :c:func:`malloc`, :c:func:`calloc`, :c:func:`realloc`, :c:"
+"func:`free`\n"
+"0バイトを要求されたときには ``malloc(1)`` (あるいは ``calloc(1, 1)``) を呼び"
+"ます。"
 
 #: ../../c-api/memory.rst:146 ../../c-api/memory.rst:217
 #: ../../c-api/memory.rst:325
@@ -195,6 +248,9 @@ msgid ""
 "as if ``PyMem_RawMalloc(1)`` had been called instead. The memory will not "
 "have been initialized in any way."
 msgstr ""
+"0バイトを要求すると、 ``PyMem_RawMalloc(1)`` が呼ばれたときと同じように、可能"
+"なら ``NULL`` でないユニークなポインタを返します。確保されたメモリーにはいか"
+"なる初期化も行われません。"
 
 #: ../../c-api/memory.rst:156 ../../c-api/memory.rst:227
 #: ../../c-api/memory.rst:335
@@ -210,6 +266,8 @@ msgid ""
 "non-``NULL`` pointer if possible, as if ``PyMem_RawCalloc(1, 1)`` had been "
 "called instead."
 msgstr ""
+"要素数か要素のサイズが0バイトの要求に対しては、可能なら ``PyMem_RawCalloc(1, "
+"1)`` が呼ばれたのと同じように、ユニークな ``NULL`` でないポインタを返します。"
 
 #: ../../c-api/memory.rst:169 ../../c-api/memory.rst:240
 #: ../../c-api/memory.rst:348
@@ -217,6 +275,8 @@ msgid ""
 "Resizes the memory block pointed to by *p* to *n* bytes. The contents will "
 "be unchanged to the minimum of the old and the new sizes."
 msgstr ""
+"*p* が指すメモリブロックを *n* バイトにリサイズします。古いサイズと新しいサイ"
+"ズの小さい方までの内容は変更されません。"
 
 #: ../../c-api/memory.rst:172
 msgid ""
@@ -224,6 +284,9 @@ msgid ""
 "if *n* is equal to zero, the memory block is resized but is not freed, and "
 "the returned pointer is non-``NULL``."
 msgstr ""
+"*p* が ``NULL`` の場合呼び出しは ``PyMem_RawMalloc(n)`` と等価です。そうでな"
+"く、 *n* がゼロに等しい場合、メモリブロックはリサイズされますが解放されませ"
+"ん。返されたポインタは非 ``NULL`` です。"
 
 #: ../../c-api/memory.rst:176
 msgid ""
@@ -231,12 +294,17 @@ msgid ""
 "func:`PyMem_RawMalloc`, :c:func:`PyMem_RawRealloc` or :c:func:"
 "`PyMem_RawCalloc`."
 msgstr ""
+"*p* が ``NULL`` でない限り、*p* はそれより前の :c:func:`PyMem_RawMalloc`, :c:"
+"func:`PyMem_RawRealloc`, :c:func:`PyMem_RawCalloc` の呼び出しにより返されなけ"
+"ればなりません。"
 
 #: ../../c-api/memory.rst:180
 msgid ""
 "If the request fails, :c:func:`PyMem_RawRealloc` returns ``NULL`` and *p* "
 "remains a valid pointer to the previous memory area."
 msgstr ""
+"要求が失敗した場合 :c:func:`PyMem_RawRealloc` は ``NULL`` を返し、 *p* は前の"
+"メモリエリアをさす有効なポインタのままです。"
 
 #: ../../c-api/memory.rst:186
 msgid ""
@@ -245,15 +313,19 @@ msgid ""
 "func:`PyMem_RawCalloc`.  Otherwise, or if ``PyMem_RawFree(p)`` has been "
 "called before, undefined behavior occurs."
 msgstr ""
+"*p* が指すメモリブロックを解放します。 *p* は以前呼び出した :c:func:"
+"`PyMem_RawMalloc`, :c:func:`PyMem_RawRealloc`,  :c:func:`PyMem_RawCalloc` の"
+"返した値でなければなりません。それ以外の場合や ``PyMem_RawFree(p)`` を呼び出"
+"した後だった場合、未定義の動作になります。"
 
 #: ../../c-api/memory.rst:191 ../../c-api/memory.rst:261
 #: ../../c-api/memory.rst:369
 msgid "If *p* is ``NULL``, no operation is performed."
-msgstr ""
+msgstr "*p* が ``NULL`` の場合何もしません。"
 
 #: ../../c-api/memory.rst:197
 msgid "Memory Interface"
-msgstr ""
+msgstr "メモリインターフェース"
 
 #: ../../c-api/memory.rst:199 ../../c-api/memory.rst:305
 msgid ""
@@ -261,6 +333,9 @@ msgid ""
 "specifying behavior when requesting zero bytes, are available for allocating "
 "and releasing memory from the Python heap."
 msgstr ""
+"以下の関数群が利用して Python ヒープに対してメモリを確保したり解放したり出来"
+"ます。これらの関数は ANSI C 標準に従ってモデル化されていますが、0 バイトを要"
+"求した際の動作についても定義しています:"
 
 #: ../../c-api/memory.rst:203
 msgid ""
@@ -273,11 +348,15 @@ msgid ""
 "The :term:`GIL <global interpreter lock>` must be held when using these "
 "functions."
 msgstr ""
+"これらの関数を呼ぶときには、 :term:`GIL <global interpreter lock>` を保持して"
+"おく必要があります。"
 
 #: ../../c-api/memory.rst:213
 msgid ""
 "The default allocator is now pymalloc instead of system :c:func:`malloc`."
 msgstr ""
+"デフォルトのアロケータがシステムの :c:func:`malloc` から pymalloc になりまし"
+"た。"
 
 #: ../../c-api/memory.rst:220
 msgid ""
@@ -285,6 +364,9 @@ msgid ""
 "as if ``PyMem_Malloc(1)`` had been called instead. The memory will not have "
 "been initialized in any way."
 msgstr ""
+"0バイトを要求すると、 ``PyMem_Malloc(1)`` が呼ばれたときと同じように、可能な"
+"ら ``NULL`` でないユニークなポインタを返します。\n"
+"確保されたメモリーにはいかなる初期化も行われません。"
 
 #: ../../c-api/memory.rst:231
 msgid ""
@@ -292,6 +374,8 @@ msgid ""
 "non-``NULL`` pointer if possible, as if ``PyMem_Calloc(1, 1)`` had been "
 "called instead."
 msgstr ""
+"要素数か要素のサイズが0バイトの要求に対しては、可能なら ``PyMem_Calloc(1, "
+"1)`` が呼ばれたのと同じように、ユニークな ``NULL`` でないポインタを返します。"
 
 #: ../../c-api/memory.rst:243
 msgid ""
@@ -299,18 +383,26 @@ msgid ""
 "*n* is equal to zero, the memory block is resized but is not freed, and the "
 "returned pointer is non-``NULL``."
 msgstr ""
+"*p* が ``NULL`` の場合呼び出しは ``PyMem_Malloc(n)`` と等価です。そうでな"
+"く、 *n* がゼロに等しい場合、メモリブロックはリサイズされますが解放されませ"
+"ん。返されたポインタは非 ``NULL`` です。"
 
 #: ../../c-api/memory.rst:247
 msgid ""
 "Unless *p* is ``NULL``, it must have been returned by a previous call to :c:"
 "func:`PyMem_Malloc`, :c:func:`PyMem_Realloc` or :c:func:`PyMem_Calloc`."
 msgstr ""
+"*p* が ``NULL`` でない限り、*p* はそれより前の :c:func:`PyMem_Malloc`, :c:"
+"func:`PyMem_Realloc` または :c:func:`PyMem_Calloc` の呼び出しにより返されなけ"
+"ればなりません。"
 
 #: ../../c-api/memory.rst:250
 msgid ""
 "If the request fails, :c:func:`PyMem_Realloc` returns ``NULL`` and *p* "
 "remains a valid pointer to the previous memory area."
 msgstr ""
+"要求が失敗した場合 :c:func:`PyMem_Realloc` は ``NULL`` を返し、 *p* は前のメ"
+"モリエリアをさす有効なポインタのままです。"
 
 #: ../../c-api/memory.rst:256
 msgid ""
@@ -319,12 +411,18 @@ msgid ""
 "`PyMem_Calloc`.  Otherwise, or if ``PyMem_Free(p)`` has been called before, "
 "undefined behavior occurs."
 msgstr ""
+"*p* が指すメモリブロックを解放します。 *p* は以前呼び出した :c:func:"
+"`PyMem_Malloc`、 :c:func:`PyMem_Realloc`、または :c:func:`PyMem_Calloc` の返"
+"した値でなければなりません。それ以外の場合や ``PyMem_Free(p)`` を呼び出した後"
+"だった場合、未定義の動作になります。"
 
 #: ../../c-api/memory.rst:263
 msgid ""
 "The following type-oriented macros are provided for convenience.  Note  that "
 "*TYPE* refers to any C type."
 msgstr ""
+"以下に挙げる型対象のマクロは利便性のために提供されているものです。*TYPE* は任"
+"意の C の型を表します。"
 
 #: ../../c-api/memory.rst:269
 msgid ""
@@ -346,10 +444,12 @@ msgid ""
 "This is a C preprocessor macro; *p* is always reassigned.  Save the original "
 "value of *p* to avoid losing memory when handling errors."
 msgstr ""
+"これは C プリプロセッサマクロです。*p* は常に再代入されます。エラー処理時にメ"
+"モリを失うのを避けるには *p* の元の値を保存してください。"
 
 #: ../../c-api/memory.rst:287
 msgid "Same as :c:func:`PyMem_Free`."
-msgstr "和 :c:func:`PyMem_Free` 相同。"
+msgstr ":c:func:`PyMem_Free` と同じです。"
 
 #: ../../c-api/memory.rst:289
 msgid ""
@@ -358,6 +458,10 @@ msgid ""
 "above. However, note that their use does not preserve binary compatibility "
 "across Python versions and is therefore deprecated in extension modules."
 msgstr ""
+"上記に加えて、C API 関数を介することなく Python メモリ操作関数を直接呼び出す"
+"ための以下のマクロセットが提供されています。ただし、これらのマクロは Python "
+"バージョン間でのバイナリ互換性を保てず、それゆえに拡張モジュールでは撤廃され"
+"ているので注意してください。"
 
 #: ../../c-api/memory.rst:294
 msgid "``PyMem_MALLOC(size)``"
@@ -385,7 +489,7 @@ msgstr "``PyMem_DEL(ptr)``"
 
 #: ../../c-api/memory.rst:303
 msgid "Object allocators"
-msgstr ""
+msgstr "オブジェクトアロケータ"
 
 #: ../../c-api/memory.rst:310
 msgid ""
@@ -442,6 +546,10 @@ msgid ""
 "func:`PyObject_Calloc`.  Otherwise, or if ``PyObject_Free(p)`` has been "
 "called before, undefined behavior occurs."
 msgstr ""
+"*p* が指すメモリブロックを解放します。 *p* は以前呼び出した :c:func:"
+"`PyObject_Malloc`、 :c:func:`PyObject_Realloc`、または :c:func:"
+"`PyObject_Calloc` の返した値でなければなりません。それ以外の場合や "
+"``PyObject_Free(p)`` を呼び出した後だった場合、未定義の動作になります。"
 
 #: ../../c-api/memory.rst:375
 msgid "Default Memory Allocators"
@@ -453,11 +561,11 @@ msgstr ""
 
 #: ../../c-api/memory.rst:380
 msgid "Configuration"
-msgstr ""
+msgstr "Configuration"
 
 #: ../../c-api/memory.rst:380
 msgid "Name"
-msgstr ""
+msgstr "名前"
 
 #: ../../c-api/memory.rst:380
 msgid "PyMem_RawMalloc"
@@ -473,7 +581,7 @@ msgstr "PyObject_Malloc"
 
 #: ../../c-api/memory.rst:382
 msgid "Release build"
-msgstr ""
+msgstr "リリースビルド"
 
 #: ../../c-api/memory.rst:382
 msgid "``\"pymalloc\"``"
@@ -489,7 +597,7 @@ msgstr "``pymalloc``"
 
 #: ../../c-api/memory.rst:383
 msgid "Debug build"
-msgstr ""
+msgstr "デバッグビルド"
 
 #: ../../c-api/memory.rst:383
 msgid "``\"pymalloc_debug\"``"
@@ -497,15 +605,15 @@ msgstr "``\"pymalloc_debug\"``"
 
 #: ../../c-api/memory.rst:383 ../../c-api/memory.rst:385
 msgid "``malloc`` + debug"
-msgstr ""
+msgstr "``malloc`` + debug"
 
 #: ../../c-api/memory.rst:383
 msgid "``pymalloc`` + debug"
-msgstr ""
+msgstr "``pymalloc`` + debug"
 
 #: ../../c-api/memory.rst:384
 msgid "Release build, without pymalloc"
-msgstr ""
+msgstr "pymalloc 無しのリリースビルド"
 
 #: ../../c-api/memory.rst:384
 msgid "``\"malloc\"``"
@@ -513,7 +621,7 @@ msgstr "``\"malloc\"``"
 
 #: ../../c-api/memory.rst:385
 msgid "Debug build, without pymalloc"
-msgstr ""
+msgstr "pymalloc 無しのデバッグビルド"
 
 #: ../../c-api/memory.rst:385
 msgid "``\"malloc_debug\"``"
@@ -521,7 +629,7 @@ msgstr "``\"malloc_debug\"``"
 
 #: ../../c-api/memory.rst:388
 msgid "Legend:"
-msgstr ""
+msgstr "説明:"
 
 #: ../../c-api/memory.rst:390
 msgid "Name: value for :envvar:`PYTHONMALLOC` environment variable."
@@ -549,7 +657,7 @@ msgstr ""
 
 #: ../../c-api/memory.rst:401
 msgid "Customize Memory Allocators"
-msgstr ""
+msgstr "メモリアロケータをカスタマイズする"
 
 #: ../../c-api/memory.rst:407
 msgid ""
@@ -559,11 +667,11 @@ msgstr ""
 
 #: ../../c-api/memory.rst:411 ../../c-api/memory.rst:649
 msgid "Field"
-msgstr ""
+msgstr "フィールド"
 
 #: ../../c-api/memory.rst:411 ../../c-api/memory.rst:649
 msgid "Meaning"
-msgstr ""
+msgstr "意味"
 
 #: ../../c-api/memory.rst:413 ../../c-api/memory.rst:651
 msgid "``void *ctx``"
@@ -571,7 +679,7 @@ msgstr "``void *ctx``"
 
 #: ../../c-api/memory.rst:413 ../../c-api/memory.rst:651
 msgid "user context passed as first argument"
-msgstr ""
+msgstr "第一引数として渡されるユーザコンテキスト"
 
 #: ../../c-api/memory.rst:415
 msgid "``void* malloc(void *ctx, size_t size)``"
@@ -579,7 +687,7 @@ msgstr "``void* malloc(void *ctx, size_t size)``"
 
 #: ../../c-api/memory.rst:415
 msgid "allocate a memory block"
-msgstr ""
+msgstr "メモリブロックを割り当てます"
 
 #: ../../c-api/memory.rst:417
 msgid "``void* calloc(void *ctx, size_t nelem, size_t elsize)``"
@@ -587,7 +695,7 @@ msgstr "``void* calloc(void *ctx, size_t nelem, size_t elsize)``"
 
 #: ../../c-api/memory.rst:417
 msgid "allocate a memory block initialized with zeros"
-msgstr ""
+msgstr "0で初期化されたメモリブロックを割り当てます"
 
 #: ../../c-api/memory.rst:420
 msgid "``void* realloc(void *ctx, void *ptr, size_t new_size)``"
@@ -595,7 +703,7 @@ msgstr "``void* realloc(void *ctx, void *ptr, size_t new_size)``"
 
 #: ../../c-api/memory.rst:420
 msgid "allocate or resize a memory block"
-msgstr ""
+msgstr "メモリブロックを割り当てるかリサイズします"
 
 #: ../../c-api/memory.rst:422
 msgid "``void free(void *ctx, void *ptr)``"
@@ -603,22 +711,24 @@ msgstr "``void free(void *ctx, void *ptr)``"
 
 #: ../../c-api/memory.rst:422
 msgid "free a memory block"
-msgstr ""
+msgstr "メモリブロックを解放する"
 
 #: ../../c-api/memory.rst:425
 msgid ""
 "The :c:type:`PyMemAllocator` structure was renamed to :c:type:"
 "`PyMemAllocatorEx` and a new ``calloc`` field was added."
 msgstr ""
+":c:type:`PyMemAllocator` 構造体が :c:type:`PyMemAllocatorEx` にリネームされた"
+"上で ``calloc`` フィールドが追加されました。"
 
 #: ../../c-api/memory.rst:432
 msgid "Enum used to identify an allocator domain. Domains:"
-msgstr ""
+msgstr "アロケータドメインを同定するための列挙型です。ドメインは:"
 
 #: ../../c-api/memory.rst:436 ../../c-api/memory.rst:445
 #: ../../c-api/memory.rst:454
 msgid "Functions:"
-msgstr "函式："
+msgstr "関数:"
 
 #: ../../c-api/memory.rst:438
 msgid ":c:func:`PyMem_RawMalloc`"
@@ -670,17 +780,19 @@ msgstr ":c:func:`PyObject_Free`"
 
 #: ../../c-api/memory.rst:463
 msgid "Get the memory block allocator of the specified domain."
-msgstr ""
+msgstr "指定されたドメインのメモリブロックアロケータを取得します。"
 
 #: ../../c-api/memory.rst:468
 msgid "Set the memory block allocator of the specified domain."
-msgstr ""
+msgstr "指定されたドメインのメモリブロックアロケータを設定します。"
 
 #: ../../c-api/memory.rst:470
 msgid ""
 "The new allocator must return a distinct non-``NULL`` pointer when "
 "requesting zero bytes."
 msgstr ""
+"新しいアロケータは、0バイトを要求されたときユニークな ``NULL`` でないポインタ"
+"を返さなければなりません。"
 
 #: ../../c-api/memory.rst:473
 msgid ""
@@ -688,6 +800,9 @@ msgid ""
 "safe: the :term:`GIL <global interpreter lock>` is not held when the "
 "allocator is called."
 msgstr ""
+":c:data:`PYMEM_DOMAIN_RAW` ドメインでは、アロケータはスレッドセーフでなければ"
+"なりません: アロケータが呼び出されたとき :term:`GIL <global interpreter "
+"lock>` は保持されていません。"
 
 #: ../../c-api/memory.rst:477
 msgid ""
@@ -695,6 +810,9 @@ msgid ""
 "the :c:func:`PyMem_SetupDebugHooks` function must be called to reinstall the "
 "debug hooks on top on the new allocator."
 msgstr ""
+"新しいアロケータがフックでない (1つ前のアロケータを呼び出さない) 場合、 :c:"
+"func:`PyMem_SetupDebugHooks` 関数を呼び出して、新しいアロケータの上にデバッグ"
+"フックを再度設置しなければなりません。"
 
 #: ../../c-api/memory.rst:481
 msgid ""
@@ -766,7 +884,7 @@ msgstr ""
 
 #: ../../c-api/memory.rst:532
 msgid "Runtime checks:"
-msgstr ""
+msgstr "実行時チェック:"
 
 #: ../../c-api/memory.rst:534
 msgid ""
@@ -802,14 +920,14 @@ msgid ""
 "Let *S* = ``sizeof(size_t)``. ``2*S`` bytes are added at each end of each "
 "block of *N* bytes requested.  The memory layout is like so, where p "
 "represents the address returned by a malloc-like or realloc-like function "
-"(``p[i:j]`` means the slice of bytes from ``*(p+i)`` inclusive up to ``*(p"
-"+j)`` exclusive; note that the treatment of negative indices differs from a "
-"Python slice):"
+"(``p[i:j]`` means the slice of bytes from ``*(p+i)`` inclusive up to "
+"``*(p+j)`` exclusive; note that the treatment of negative indices differs "
+"from a Python slice):"
 msgstr ""
 
 #: ../../c-api/memory.rst:555
 msgid "``p[-2*S:-S]``"
-msgstr "``p[-2*S:-S]``"
+msgstr ""
 
 #: ../../c-api/memory.rst:555
 msgid ""
@@ -819,7 +937,7 @@ msgstr ""
 
 #: ../../c-api/memory.rst:562
 msgid "``p[-S]``"
-msgstr "``p[-S]``"
+msgstr ""
 
 #: ../../c-api/memory.rst:558
 msgid "API identifier (ASCII character):"
@@ -839,7 +957,7 @@ msgstr ""
 
 #: ../../c-api/memory.rst:565
 msgid "``p[-S+1:0]``"
-msgstr "``p[-S+1:0]``"
+msgstr ""
 
 #: ../../c-api/memory.rst:565
 msgid "Copies of PYMEM_FORBIDDENBYTE.  Used to catch under- writes and reads."
@@ -847,7 +965,7 @@ msgstr ""
 
 #: ../../c-api/memory.rst:574
 msgid "``p[0:N]``"
-msgstr "``p[0:N]``"
+msgstr ""
 
 #: ../../c-api/memory.rst:568
 msgid ""
@@ -862,7 +980,7 @@ msgstr ""
 
 #: ../../c-api/memory.rst:577
 msgid "``p[N:N+S]``"
-msgstr "``p[N:N+S]``"
+msgstr ""
 
 #: ../../c-api/memory.rst:577
 msgid "Copies of PYMEM_FORBIDDENBYTE.  Used to catch over- writes and reads."
@@ -870,7 +988,7 @@ msgstr ""
 
 #: ../../c-api/memory.rst:588
 msgid "``p[N+S:N+2*S]``"
-msgstr "``p[N+S:N+2*S]``"
+msgstr ""
 
 #: ../../c-api/memory.rst:580
 msgid ""
@@ -920,7 +1038,7 @@ msgstr ""
 
 #: ../../c-api/memory.rst:617
 msgid "The pymalloc allocator"
-msgstr ""
+msgstr "pymalloc アロケータ"
 
 #: ../../c-api/memory.rst:619
 msgid ""
@@ -930,6 +1048,11 @@ msgid ""
 "`PyMem_RawMalloc` and :c:func:`PyMem_RawRealloc` for allocations larger than "
 "512 bytes."
 msgstr ""
+"Python には、寿命の短いの小さな(512バイト以下の)オブジェクトに最適化された "
+"*pymalloc* アロケータがあります。 *pymalloc* は、256 KiBの固定サイズの \"ア"
+"リーナ\" と呼びれるメモリマッピングを使います。512バイトよりも大きな割り当て"
+"では、 :c:func:`PyMem_RawMalloc` と :c:func:`PyMem_RawRealloc` にフォールバッ"
+"クします。"
 
 #: ../../c-api/memory.rst:624
 msgid ""
@@ -937,22 +1060,25 @@ msgid ""
 "the :c:data:`PYMEM_DOMAIN_MEM` (ex: :c:func:`PyMem_Malloc`) and :c:data:"
 "`PYMEM_DOMAIN_OBJ` (ex: :c:func:`PyObject_Malloc`) domains."
 msgstr ""
+"*pymalloc* は、:c:data:`PYMEM_DOMAIN_MEM` (ex: :c:func:`PyMem_Malloc`) と :c:"
+"data:`PYMEM_DOMAIN_OBJ` (ex: :c:func:`PyObject_Malloc`) ドメインの :ref:`既定"
+"のアロケータ <default-memory-allocators>` です。"
 
 #: ../../c-api/memory.rst:628
 msgid "The arena allocator uses the following functions:"
-msgstr ""
+msgstr "アリーナアロケータは、次の関数を使います:"
 
 #: ../../c-api/memory.rst:630
 msgid ":c:func:`VirtualAlloc` and :c:func:`VirtualFree` on Windows,"
-msgstr ""
+msgstr "Windows では :c:func:`VirtualAlloc` と :c:func:`VirtualFree`、"
 
 #: ../../c-api/memory.rst:631
 msgid ":c:func:`mmap` and :c:func:`munmap` if available,"
-msgstr ""
+msgstr "利用できる場合、:c:func:`mmap` と :c:func:`munmap`、"
 
 #: ../../c-api/memory.rst:632
 msgid ":c:func:`malloc` and :c:func:`free` otherwise."
-msgstr ""
+msgstr "それ以外の場合は :c:func:`malloc` と :c:func:`free`。"
 
 #: ../../c-api/memory.rst:634
 msgid ""
@@ -963,13 +1089,14 @@ msgstr ""
 
 #: ../../c-api/memory.rst:639
 msgid "Customize pymalloc Arena Allocator"
-msgstr ""
+msgstr "pymalloc アリーナアロケータのカスタマイズ"
 
 #: ../../c-api/memory.rst:645
 msgid ""
 "Structure used to describe an arena allocator. The structure has three "
 "fields:"
 msgstr ""
+"アリーナアロケータを記述するための構造体です。3つのフィールドを持ちます:"
 
 #: ../../c-api/memory.rst:653
 msgid "``void* alloc(void *ctx, size_t size)``"
@@ -977,27 +1104,27 @@ msgstr "``void* alloc(void *ctx, size_t size)``"
 
 #: ../../c-api/memory.rst:653
 msgid "allocate an arena of size bytes"
-msgstr ""
+msgstr "size バイトのアリーナを割り当てます"
 
 #: ../../c-api/memory.rst:655
 msgid "``void free(void *ctx, void *ptr, size_t size)``"
-msgstr "``void free(void *ctx, void *ptr, size_t size)``"
+msgstr ""
 
 #: ../../c-api/memory.rst:655
 msgid "free an arena"
-msgstr ""
+msgstr "アリーナを解放します"
 
 #: ../../c-api/memory.rst:660
 msgid "Get the arena allocator."
-msgstr ""
+msgstr "アリーナアロケータを取得します。"
 
 #: ../../c-api/memory.rst:664
 msgid "Set the arena allocator."
-msgstr ""
+msgstr "アリーナアロケータを設定します。"
 
 #: ../../c-api/memory.rst:668
 msgid "tracemalloc C API"
-msgstr ""
+msgstr "tracemalloc C API"
 
 #: ../../c-api/memory.rst:674
 msgid "Track an allocated memory block in the :mod:`tracemalloc` module."
@@ -1025,7 +1152,7 @@ msgstr ""
 
 #: ../../c-api/memory.rst:692
 msgid "Examples"
-msgstr "範例"
+msgstr "使用例"
 
 #: ../../c-api/memory.rst:694
 msgid ""
@@ -1033,10 +1160,12 @@ msgid ""
 "the I/O buffer is allocated from the Python heap by using the first function "
 "set::"
 msgstr ""
+"最初に述べた関数セットを使って、 :ref:`memoryoverview` 節の例を Python ヒープ"
+"に I/O バッファをメモリ確保するように書き換えたものを以下に示します::"
 
 #: ../../c-api/memory.rst:707
 msgid "The same code using the type-oriented function set::"
-msgstr ""
+msgstr "同じコードを型対象の関数セットで書いたものを以下に示します::"
 
 #: ../../c-api/memory.rst:719
 msgid ""
@@ -1047,6 +1176,12 @@ msgid ""
 "contains two errors, one of which is labeled as *fatal* because it mixes two "
 "different allocators operating on different heaps. ::"
 msgstr ""
+"上の二つの例では、バッファを常に同じ関数セットに属する関数で操作していること"
+"に注意してください。実際、あるメモリブロックに対する操作は、異なるメモリ操作"
+"機構を混用する危険を減らすために、同じメモリ API ファミリを使って行うことが必"
+"要です。以下のコードには二つのエラーがあり、そのうちの一つには異なるヒープを"
+"操作する別のメモリ操作関数を混用しているので *致命的 (Fatal)* とラベルづけを"
+"しています。 ::"
 
 #: ../../c-api/memory.rst:734
 msgid ""
@@ -1054,9 +1189,14 @@ msgid ""
 "Python heap, objects in Python are allocated and released with :c:func:"
 "`PyObject_New`, :c:func:`PyObject_NewVar` and :c:func:`PyObject_Del`."
 msgstr ""
+"素のメモリブロックを Python ヒープ上で操作する関数に加え、 :c:func:"
+"`PyObject_New` 、 :c:func:`PyObject_NewVar` 、および :c:func:`PyObject_Del` "
+"を使うと、 Python におけるオブジェクトをメモリ確保したり解放したりできます。"
 
 #: ../../c-api/memory.rst:738
 msgid ""
 "These will be explained in the next chapter on defining and implementing new "
 "object types in C."
 msgstr ""
+"これらの関数については、次章の C による新しいオブジェクト型の定義や実装に関す"
+"る記述の中で説明します。"

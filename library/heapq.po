@@ -1,40 +1,43 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Liang-Bo Wang <me@liang2.tw>, 2016
-# 周 忠毅 <rilakcrc35@gmail.com>, 2016
+# Takanori Suzuki <takanori@takanory.net>, 2021
+# tomo, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-19 17:24+0800\n"
-"PO-Revision-Date: 2017-09-22 18:26+0000\n"
-"Last-Translator: Liang-Bo Wang <me@liang2.tw>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:07+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../library/heapq.rst:2
 msgid ":mod:`heapq` --- Heap queue algorithm"
-msgstr ":mod:`heapq` --- 堆積佇列 (heap queue) 演算法"
+msgstr ":mod:`heapq` --- ヒープキューアルゴリズム"
 
 #: ../../library/heapq.rst:12
 msgid "**Source code:** :source:`Lib/heapq.py`"
-msgstr "**原始碼：**\\ :source:`Lib/heapq.py`"
+msgstr "**ソースコード:** :source:`Lib/heapq.py`"
 
 #: ../../library/heapq.rst:16
 msgid ""
 "This module provides an implementation of the heap queue algorithm, also "
 "known as the priority queue algorithm."
 msgstr ""
-"這個模組實作了堆積佇列 (heap queue) 演算法，亦被稱為優先佇列 (priority "
-"queue) 演算法。"
+"このモジュールではヒープキューアルゴリズムの一実装を提供しています。優先度"
+"キューアルゴリズムとしても知られています。"
 
 #: ../../library/heapq.rst:19
 msgid ""
@@ -45,10 +48,11 @@ msgid ""
 "elements are considered to be infinite.  The interesting property of a heap "
 "is that its smallest element is always the root, ``heap[0]``."
 msgstr ""
-"Heap（堆積）是一顆二元樹，樹上所有父節點的值都小於等於他的子節點的值。使用陣"
-"列實作，對於所有從0開始的 *k* 都滿足 ``heap[k] <= heap[2*k+1]`` 和 ``heap[k] "
-"<= heap[2*k+2]`` 。為了比較節點的值，不存在的元素被視為無限大。heap 存在一個"
-"有趣的性質：樹上最小的元素永遠會在根節點 ``heap[0]`` 上。"
+"ヒープとは、全ての親ノードの値が、その全ての子の値以下であるようなバイナリツ"
+"リーです。この実装は、全ての *k* に対して、ゼロから要素を数えていった際に、"
+"``heap[k] <= heap[2*k+1]`` かつ ``heap[k] <= heap[2*k+2]`` となる配列を使って"
+"います。比較のために、存在しない要素は無限大として扱われます。ヒープの興味深"
+"い性質は、最小の要素が常にルート、つまり ``heap[0]`` になることです。"
 
 #: ../../library/heapq.rst:26
 msgid ""
@@ -60,11 +64,13 @@ msgid ""
 "\"max heap\" is more common in texts because of its suitability for in-place "
 "sorting)."
 msgstr ""
-"下方的 API 跟一般教科書的 heap queue 演算法有兩個方面不同：第一，我們的索引"
-"從 0 開始計算，這會父節點與子節點之間的關係產生很微小的差異，但更符合 Python "
-"從 0 開始索引的設計。第二，我們的 pop 方法會回傳最小的元素而不是最大的元素 "
-"（ 在教科書中被稱作 \"min heap\"，而 \"max heap\" 因為他很適合做原地排序，所"
-"以更常出現在教科書中 ）。"
+"以下の API は教科書におけるヒープアルゴリズムとは 2 つの側面で異なっていま"
+"す: (a) ゼロベースのインデクス化を行っています。これにより、ノードに対するイ"
+"ンデクスとその子ノードのインデクスの関係がやや明瞭でなくなりますが、Python は"
+"ゼロベースのインデクス化を使っているのでよりしっくりきます。(b) われわれの "
+"pop メソッドは最大の要素ではなく最小の要素 (教科書では \"min heap:最小ヒープ"
+"\" と呼ばれています; 教科書では並べ替えをインプレースで行うのに適した \"max "
+"heap:最大ヒープ\" が一般的です)。"
 
 #: ../../library/heapq.rst:33
 msgid ""
@@ -72,24 +78,25 @@ msgid ""
 "surprises: ``heap[0]`` is the smallest item, and ``heap.sort()`` maintains "
 "the heap invariant!"
 msgstr ""
-"這兩個特性使得把 heap 當作一個標準的 Python list 檢視時不會出現意外："
-"``heap[0]`` 是最小的物件，``heap.sort()`` 能保持 heap 的性質不變！"
+"これらの 2 点によって、ユーザに戸惑いを与えることなく、ヒープを通常の Python "
+"リストとして見ることができます: ``heap[0]`` が最小の要素となり、``heap."
+"sort()`` はヒープ不変式を保ちます!"
 
 #: ../../library/heapq.rst:37
 msgid ""
 "To create a heap, use a list initialized to ``[]``, or you can transform a "
 "populated list into a heap via function :func:`heapify`."
 msgstr ""
-"建立一個 heap 可以使用 list 初始化為 ``[]``，或者使用函式 :func:`heapify`  將"
-"一個已經有元素的 list轉成一個 heap。"
+"ヒープを作成するには、 ``[]`` に初期化されたリストを使うか、 :func:`heapify` "
+"を用いて要素の入ったリストを変換します。"
 
 #: ../../library/heapq.rst:40
 msgid "The following functions are provided:"
-msgstr "此模組提供下面的函式"
+msgstr "次の関数が用意されています:"
 
 #: ../../library/heapq.rst:45
 msgid "Push the value *item* onto the *heap*, maintaining the heap invariant."
-msgstr "把 *item* 放進 *heap*，並保持 heap 性質不變。"
+msgstr "*item* を *heap* に push します。ヒープ不変式を保ちます。"
 
 #: ../../library/heapq.rst:50
 msgid ""
@@ -97,8 +104,9 @@ msgid ""
 "invariant.  If the heap is empty, :exc:`IndexError` is raised.  To access "
 "the smallest item without popping it, use ``heap[0]``."
 msgstr ""
-"從 *heap* 取出並回傳最小的元素，同時保持 heap 性質不變。如果 heap 是空的會產"
-"生 :exc:`IndexError` 錯誤。只存取最小元素但不取出可以使用 ``heap[0]`` 。"
+"pop を行い、 *heap* から最小の要素を返します。ヒープ不変式は保たれます。ヒー"
+"プが空の場合、 :exc:`IndexError` が送出されます。pop せずに最小の要素にアクセ"
+"スするには、 ``heap[0]`` を使ってください。"
 
 #: ../../library/heapq.rst:57
 msgid ""
@@ -106,12 +114,13 @@ msgid ""
 "*heap*.  The combined action runs more efficiently than :func:`heappush` "
 "followed by a separate call to :func:`heappop`."
 msgstr ""
-"將 *item* 放入 heap ，接著從 *heap* 取出並回傳最小的元素。這個組合函式比呼"
-"叫 :func:`heappush` 之後呼叫 :func:`heappop` 更有效率。"
+"*item* を *heap* に push した後、pop を行って *heap* から最初の要素を返しま"
+"す。この一続きの動作を :func:`heappush` に引き続いて :func:`heappop` を別々に"
+"呼び出すよりも効率的に実行します。"
 
 #: ../../library/heapq.rst:64
 msgid "Transform list *x* into a heap, in-place, in linear time."
-msgstr "在線性時間內將 list *x* 轉為 heap，且過程不會申請額外記憶體。"
+msgstr "リスト *x* をインプレース処理し、線形時間でヒープに変換します。"
 
 #: ../../library/heapq.rst:69
 msgid ""
@@ -119,8 +128,8 @@ msgid ""
 "*item*. The heap size doesn't change. If the heap is empty, :exc:"
 "`IndexError` is raised."
 msgstr ""
-"從 *heap* 取出並回傳最小的元素，接著將新的 *item* 放進heap。heap 的大小不會改"
-"變。如果 heap 是空的會產生 :exc:`IndexError` 錯誤。"
+"*heap* から最小の要素を pop して返し、新たに *item* を push します。ヒープの"
+"サイズは変更されません。ヒープが空の場合、 :exc:`IndexError` が送出されます。"
 
 #: ../../library/heapq.rst:72
 msgid ""
@@ -129,9 +138,9 @@ msgid ""
 "heap. The pop/push combination always returns an element from the heap and "
 "replaces it with *item*."
 msgstr ""
-"這個一次完成的操作會比呼叫 :func:`heappop` 之後呼叫 :func:`heappush` 更有效"
-"率，並在維護 heap 的大小不變時更為適當，取出/放入的組合函式一定會從 heap 回傳"
-"一個元素並用 *item* 取代他。"
+"この一息の演算は :func:`heappop` に次いで :func:`heappush` を送出するよりも効"
+"率的で、固定サイズのヒープを用いている場合にはより適しています。 pop/push の"
+"組み合わせは必ずヒープから要素を一つ返し、それを *item* と置き換えます。"
 
 #: ../../library/heapq.rst:77
 msgid ""
@@ -140,13 +149,13 @@ msgid ""
 "combination returns the smaller of the two values, leaving the larger value "
 "on the heap."
 msgstr ""
-"函式的回傳值可能會大於被加入的 *item* 。如果這不是你期望發生的，可以考慮使"
-"用 :func:`heappushpop` 替代，他會回傳 heap 的最小值和 *item* 兩個當中比較小的"
-"那個，並將大的留在 heap 內。"
+"返される値は加えられた *item* よりも大きくなるかもしれません。それを望まない"
+"なら、代わりに :func:`heappushpop` を使うことを考えてください。この push/pop "
+"の組み合わせは二つの値の小さい方を返し、大きい方の値をヒープに残します。"
 
 #: ../../library/heapq.rst:83
 msgid "The module also offers three general purpose functions based on heaps."
-msgstr "這個模組也提供三個利用 heap 實作的一般用途函式"
+msgstr "このモジュールではさらに3つのヒープに基く汎用関数を提供します。"
 
 #: ../../library/heapq.rst:88
 msgid ""
@@ -154,8 +163,9 @@ msgid ""
 "timestamped entries from multiple log files).  Returns an :term:`iterator` "
 "over the sorted values."
 msgstr ""
-"合併多個已排序的輸入並產生單一且已排序的輸出（舉例：合併來自多個 log 檔中有時"
-"間戳記的項目）。回傳一個 :term:`iterator` 包含已經排序的值。"
+"複数のソートされた入力をマージ(merge)して一つのソートされた出力にします (たと"
+"えば、複数のログファイルの時刻の入ったエントリーをマージします)。ソートされた"
+"値にわたる :term:`iterator` を返します。"
 
 #: ../../library/heapq.rst:92
 msgid ""
@@ -163,13 +173,16 @@ msgid ""
 "does not pull the data into memory all at once, and assumes that each of the "
 "input streams is already sorted (smallest to largest)."
 msgstr ""
-"和 ``sorted(itertools.chain(*iterables))`` 類似但回傳值是一個 iterable ，不會"
-"一次把所有資料都放進記憶體中，並且假設每一個輸入都已經（由小到大）排序過了。"
+"``sorted(itertools.chain(*iterables))`` と似ていますが、イテレータを返し、一"
+"度にはデータをメモリに読み込まず、それぞれの入力ストリームが予め(最小から最大"
+"へ)ソートされていることを仮定します。"
 
 #: ../../library/heapq.rst:96
 msgid ""
 "Has two optional arguments which must be specified as keyword arguments."
-msgstr "有兩個選用參數，指定時必須被當作關鍵字參數指定。"
+msgstr ""
+"2 つのオプション引数があり、これらはキーワード引数として指定されなければなり"
+"ません。"
 
 #: ../../library/heapq.rst:98
 msgid ""
@@ -177,26 +190,27 @@ msgid ""
 "extract a comparison key from each input element.  The default value is "
 "``None`` (compare the elements directly)."
 msgstr ""
-"*key* 參數指定了一個 :term:`key function`  引數，用來從每一個輸入的元素中決定"
-"一個比較的依據。預設的值是 ``None`` （直接比較元素）。"
+"*key* は 1 つの引数からなる :term:`key function` を指定します。この関数は、入"
+"力の各要素から比較のキーを取り出すのに使われます。デフォルト値は ``None`` で"
+"す (要素を直接比較します)。"
 
 #: ../../library/heapq.rst:102
-#, fuzzy
 msgid ""
 "*reverse* is a boolean value.  If set to ``True``, then the input elements "
 "are merged as if each comparison were reversed. To achieve behavior similar "
 "to ``sorted(itertools.chain(*iterables), reverse=True)``, all iterables must "
 "be sorted from largest to smallest."
 msgstr ""
-"*reverse* 是一個布林值。如果設定為 ``True`` ，那輸入的元素被 merge 時每一個比"
-"較結果都是相反的。"
+"*reverse* は真偽値です。 ``True`` を設定した場合、挿入要素は逆向きに比較され"
+"たかのように結合されます。  ``sorted(itertools.chain(*iterables), "
+"reverse=True)`` でこれに似た挙動を実現するには、全てのイテラブルは降順で並ん"
+"でいなければなりません。"
 
 #: ../../library/heapq.rst:107
 msgid "Added the optional *key* and *reverse* parameters."
-msgstr "加入選用參數 *key* 和 *reverse* 。"
+msgstr "オプションの *key* 引数および *reverse* 引数を追加."
 
 #: ../../library/heapq.rst:113
-#, fuzzy
 msgid ""
 "Return a list with the *n* largest elements from the dataset defined by "
 "*iterable*.  *key*, if provided, specifies a function of one argument that "
@@ -204,13 +218,12 @@ msgid ""
 "example, ``key=str.lower``).  Equivalent to:  ``sorted(iterable, key=key, "
 "reverse=True)[:n]``."
 msgstr ""
-"回傳一個包含資料 *iterable* 中前 *n* 大元素的 list 。如果有指定 *key* 參數，"
-"*key* 會是只有一個參數的函式，用來從每一個 *iterable* 的元素中決定一個比較的"
-"依據：``key=str.lower`` 等價於 ``sorted(iterable, key=key, reverse=True)[:"
-"n]``"
+"*iterable* で定義されるデータセットのうち、最大値から降順に *n* 個の値のリス"
+"トを返します。(あたえられた場合) *key* は、引数を一つとる、*iterable* のそれ"
+"ぞれの要素から比較キーを生成する関数を指定します(例 ``key=str.lower``)。以下"
+"のコードと同等です: ``sorted(iterable, key=key, reverse=True)[:n]``"
 
 #: ../../library/heapq.rst:122
-#, fuzzy
 msgid ""
 "Return a list with the *n* smallest elements from the dataset defined by "
 "*iterable*.  *key*, if provided, specifies a function of one argument that "
@@ -218,9 +231,10 @@ msgid ""
 "example, ``key=str.lower``).  Equivalent to:  ``sorted(iterable, key=key)[:"
 "n]``."
 msgstr ""
-"回傳一個包含資料 *iterable* 中前 *n* 小元素的 list 。如果有指定 *key* 參數，"
-"*key* 會是只有一個參數的函式，用來從每一個 *iterable* 的元素中決定一個比較的"
-"依據：``key=str.lower`` 等價於 ``sorted(iterable, key=key)[:n]``"
+"*iterable* で定義されるデータセットのうち、最小値から昇順に *n* 個の値のリス"
+"トを返します。(あたえられた場合) *key* は、引数を一つとる、*iterable* のそれ"
+"ぞれの要素から比較キーを生成する関数を指定します(例 ``key=str.lower``)。以下"
+"のコードと同等です: ``sorted(iterable, key=key)[:n]``"
 
 #: ../../library/heapq.rst:128
 msgid ""
@@ -230,14 +244,14 @@ msgid ""
 "`max` functions.  If repeated usage of these functions is required, consider "
 "turning the iterable into an actual heap."
 msgstr ""
-"後兩個函式在 *n* 值比較小時有最好的表現。對於較大的 *n* 值，只用 :func:"
-"`sorted` 函式會更有效率。同樣地，當 ``n==1`` 時，使用內建函式 :func:`min` "
-"和 :func:`max` 會有更好的效率。如果需要重複使用這些函式，可以考慮將 iterable "
-"轉成真正的 heap 。"
+"後ろ二つの関数は *n* の値が小さな場合に最適な動作をします。大きな値の時には :"
+"func:`sorted` 関数の方が効率的です。さらに、 ``n==1`` の時には :func:`min` お"
+"よび :func:`max` 関数の方が効率的です。この関数を繰り返し使うことが必要なら、"
+"iterable を実際のヒープに変えることを考えてください。"
 
 #: ../../library/heapq.rst:136
 msgid "Basic Examples"
-msgstr "基礎範例"
+msgstr "基本的な例"
 
 #: ../../library/heapq.rst:138
 msgid ""
@@ -245,63 +259,70 @@ msgid ""
 "pushing all values onto a heap and then popping off the smallest values one "
 "at a time::"
 msgstr ""
+"すべての値をヒープに push してから最小値を 1 つずつ pop することで、`ヒープ"
+"ソート <https://ja.wikipedia.org/wiki/"
+"%E3%83%92%E3%83%BC%E3%83%97%E3%82%BD%E3%83%BC%E3%83%88>`_ を実装できます::"
 
 #: ../../library/heapq.rst:151
 msgid ""
 "This is similar to ``sorted(iterable)``, but unlike :func:`sorted`, this "
 "implementation is not stable."
 msgstr ""
-"雖然類似 ``sorted(iterable)`` ，但跟 :func:`sorted` 不同的是，這個實作不是 "
-"stable 的排序。"
+"これは ``sorted(iterable)`` に似ていますが、 :func:`sorted` とは異なり、この"
+"実装はステーブルソートではありません。"
 
 #: ../../library/heapq.rst:154
 msgid ""
 "Heap elements can be tuples.  This is useful for assigning comparison values "
 "(such as task priorities) alongside the main record being tracked::"
 msgstr ""
-"Heap 中的元素可以是 tuple 。這有利於將要比較的值（例如一個 task 的優先度）和"
-"主要資料放在一起排序。"
+"ヒープの要素はタプルに出来ます。これは、追跡される主レコードとは別に (タスク"
+"の優先度のような) 比較値を指定するときに便利です::"
 
 #: ../../library/heapq.rst:167
 msgid "Priority Queue Implementation Notes"
-msgstr "優先佇列  (Priority Queue) 實作細節"
+msgstr "優先度キュー実装の注釈"
 
 #: ../../library/heapq.rst:169
 msgid ""
 "A `priority queue <https://en.wikipedia.org/wiki/Priority_queue>`_ is common "
 "use for a heap, and it presents several implementation challenges:"
 msgstr ""
+"`優先度つきキュー <https://ja.wikipedia.org/wiki/"
+"%E5%84%AA%E5%85%88%E5%BA%A6%E3%81%A4%E3%81%8D%E3%82%AD%E3%83%A5%E3%83%BC>`_ "
+"は、ヒープの一般的な使い方で、実装にはいくつか困難な点があります:"
 
 #: ../../library/heapq.rst:172
 msgid ""
 "Sort stability:  how do you get two tasks with equal priorities to be "
 "returned in the order they were originally added?"
 msgstr ""
-"排序的穩定性：你如何將兩個擁有相同 priority 的 task 按照他們被加入的順序回"
-"傳。"
+"ソート安定性: 優先度が等しい二つのタスクが、もともと追加された順序で返される"
+"ためにはどうしたらいいでしょうか？"
 
 #: ../../library/heapq.rst:175
 msgid ""
 "Tuple comparison breaks for (priority, task) pairs if the priorities are "
 "equal and the tasks do not have a default comparison order."
 msgstr ""
-"Tuple的排序在某些情況下會壞掉，例如當 Tuple (priority, task) 的 priorities 相"
-"等且 tasks 沒有一個預設的排序時。"
+"(priority, task) ペアに対するタプルの比較は、priority が同じで task がデフォ"
+"ルトの比較順を持たないときに破綻します。"
 
 #: ../../library/heapq.rst:178
 msgid ""
 "If the priority of a task changes, how do you move it to a new position in "
 "the heap?"
 msgstr ""
-"當一個 heap 中 task 的 priority 改變時，你如何將它移到 heap 正確的位置上。"
+"あるタスクの優先度が変化したら、どうやってそれをヒープの新しい位置に移動させ"
+"るのでしょうか？"
 
 #: ../../library/heapq.rst:181
 msgid ""
 "Or if a pending task needs to be deleted, how do you find it and remove it "
 "from the queue?"
 msgstr ""
-"或者一個還沒被解決的 task 需要被刪除時，你要如何從佇列中找到並刪除指定的 "
-"task。"
+"未解決のタスクが削除される必要があるとき、どのようにそれをキューから探して削"
+"除するのでしょうか？"
 
 #: ../../library/heapq.rst:184
 msgid ""
@@ -311,10 +332,11 @@ msgid ""
 "returned in the order they were added. And since no two entry counts are the "
 "same, the tuple comparison will never attempt to directly compare two tasks."
 msgstr ""
-"一個針對前兩個問題的解法是：儲存一個包含 priority 、 entry count 和 task 三個"
-"元素的 tuple 。兩個 task 有相同 priority 時， entry count 會讓兩個 task 能根"
-"據加入的順序排序。因為沒有任何兩個 task 擁有相同的 entry count ，所以永遠不會"
-"直接使用 task 做比較。"
+"最初の二つの困難の解決策は、項目を優先度、項目番号、そしてタスクを含む 3 要素"
+"のリストとして保存することです。この項目番号は、同じ優先度の二つのタスクが、"
+"追加された順序で返されるようにするための同点決勝戦として働きます。そして二つ"
+"の項目番号が等しくなることはありませんので、タプルの比較が二つのタスクを直接"
+"比べようとすることはありえません。"
 
 #: ../../library/heapq.rst:190
 msgid ""
@@ -322,6 +344,8 @@ msgid ""
 "wrapper class that ignores the task item and only compares the priority "
 "field::"
 msgstr ""
+"比較できないタスク問題のもう一つの解決法は、タスクアイテムを無視して優先順序"
+"フィールドだけで比較するラッパークラスです::"
 
 #: ../../library/heapq.rst:201
 msgid ""
@@ -329,8 +353,9 @@ msgid ""
 "changes to its priority or removing it entirely.  Finding a task can be done "
 "with a dictionary pointing to an entry in the queue."
 msgstr ""
-"剩下的問題可以藉由找到要刪除的 task 並更改它的 priority 或者直接將它移除。尋"
-"找一個 task 可以使用一個 dictionary 指向佇列當中的 entry 。"
+"残りの困難は主に、未解決のタスクを探して、その優先度を変更したり、完全に削除"
+"することです。タスクを探すことは、キュー内の項目を指し示す辞書によってなされ"
+"ます。"
 
 #: ../../library/heapq.rst:205
 msgid ""
@@ -338,13 +363,13 @@ msgid ""
 "would break the heap structure invariants.  So, a possible solution is to "
 "mark the entry as removed and add a new entry with the revised priority::"
 msgstr ""
-"移除 entry 或更改它的 priority 更為困難，因為這會破壞 heap 的性質。所以一個可"
-"行的方案是將原本的 entry 做一個標記表示它已經被刪除，並新增一個擁有新的 "
-"priority 的 entry 。"
+"項目を削除したり、優先度を変更することは、ヒープ構造の不変関係を壊すことにな"
+"るので、もっと難しいです。ですから、可能な解決策は、その項目が無効であるもの"
+"としてマークし、必要なら変更された優先度の項目を加えることです::"
 
 #: ../../library/heapq.rst:239
 msgid "Theory"
-msgstr "原理"
+msgstr "理論"
 
 #: ../../library/heapq.rst:241
 msgid ""
@@ -353,15 +378,18 @@ msgid ""
 "elements are considered to be infinite.  The interesting property of a heap "
 "is that ``a[0]`` is always its smallest element."
 msgstr ""
-"Heap 是一個陣列對於所有從0開始的 index *k* 都存在性質 ``a[k] <= a[2*k+1]`` "
-"和 ``a[k] <= a[2*k+2]`` 。為了方便比較，不存在的元素被視為無限大。一個有趣的 "
-"heap 性質是 ``a[0]`` 永遠是最小的元素。"
+"ヒープとは、全ての *k* について、要素を 0 から数えたときに、``a[k] <= "
+"a[2*k+1]`` かつ  ``a[k] <= a[2*k+2]`` となる配列です。比較のために、存在しな"
+"い要素を無限大と考えます。ヒープの興味深い属性は ``a[0]`` が常に最小の要素に"
+"なることです。"
 
 #: ../../library/heapq.rst:246
 msgid ""
 "The strange invariant above is meant to be an efficient memory "
 "representation for a tournament.  The numbers below are *k*, not ``a[k]``::"
 msgstr ""
+"上記の奇妙な不変式は、勝ち抜き戦判定の際に効率的なメモリ表現を行うためのもの"
+"です。以下の番号は ``a[k]`` ではなく *k* とします::"
 
 #: ../../library/heapq.rst:259
 msgid ""
@@ -375,6 +403,14 @@ msgid ""
 "two cells it tops contain three different items, but the top cell \"wins\" "
 "over the two topped cells."
 msgstr ""
+"上の木構造では、各セル *k* は ``2*k+1`` および ``2*k+2`` を最大値としていま"
+"す。スポーツに見られるような通常の 2 つ組勝ち抜き戦では、各セルはその下にある"
+"二つのセルに対する勝者となっていて、個々のセルの勝者を追跡していくことによ"
+"り、そのセルに対する全ての相手を見ることができます。しかしながら、このような"
+"勝ち抜き戦を使う計算機アプリケーションの多くでは、勝歴を追跡する必要はりませ"
+"ん。メモリ効率をより高めるために、勝者が上位に進級した際、下のレベルから持っ"
+"てきて置き換えることにすると、あるセルとその下位にある二つのセルは異なる三つ"
+"の要素を含み、かつ上位のセルは二つの下位のセルに対して \"勝者と\" なります。"
 
 #: ../../library/heapq.rst:268
 msgid ""
@@ -386,18 +422,33 @@ msgid ""
 "logarithmic on the total number of items in the tree. By iterating over all "
 "items, you get an O(n log n) sort."
 msgstr ""
+"このヒープ不変式が常に守られれば、インデクス 0 は明らかに最勝者となります。最"
+"勝者の要素を除去し、\"次の\" 勝者を見つけるための最も単純なアルゴリズム的手法"
+"は、ある敗者要素 (ここでは上図のセル 30 とします) を 0 の場所に持っていき、こ"
+"の新しい 0 を濾過するようにしてツリーを下らせて値を交換してゆきます。不変関係"
+"が再構築されるまでこれを続けます。この操作は明らかに、ツリー内の全ての要素数"
+"に対して対数的な計算量となります。全ての要素について繰り返すと、O(n log n) の"
+"ソート(並べ替え)になります。"
 
 #: ../../library/heapq.rst:275
 msgid ""
 "A nice feature of this sort is that you can efficiently insert new items "
-"while the sort is going on, provided that the inserted items are not \"better"
-"\" than the last 0'th element you extracted.  This is especially useful in "
-"simulation contexts, where the tree holds all incoming events, and the \"win"
-"\" condition means the smallest scheduled time.  When an event schedules "
-"other events for execution, they are scheduled into the future, so they can "
-"easily go into the heap.  So, a heap is a good structure for implementing "
-"schedulers (this is what I used for my MIDI sequencer :-)."
+"while the sort is going on, provided that the inserted items are not "
+"\"better\" than the last 0'th element you extracted.  This is especially "
+"useful in simulation contexts, where the tree holds all incoming events, and "
+"the \"win\" condition means the smallest scheduled time.  When an event "
+"schedules other events for execution, they are scheduled into the future, so "
+"they can easily go into the heap.  So, a heap is a good structure for "
+"implementing schedulers (this is what I used for my MIDI sequencer :-)."
 msgstr ""
+"このソートの良い点は、新たに挿入する要素が、最後に取り出された 0 番目の要素よ"
+"りも \"良い値\" でない限り、ソートを行っている最中に新たな要素を効率的に追加"
+"できるというところです。この性質は、シミュレーション的な状況で、ツリーで全て"
+"の入力イベントを保持し、\"勝者\" の状況を最小のスケジュール時刻にするような場"
+"合に特に便利です。あるイベントが他のイベント群の実行をスケジュールする際、そ"
+"れらは未来にスケジュールされることになるので、それらのイベント群を容易にヒー"
+"プに積むことができます。すなわち、ヒープはスケジューラを実装する上で良いデー"
+"タ構造であるといえます (私はこれを MIDI シーケンサで使っています :-)。"
 
 #: ../../library/heapq.rst:284
 msgid ""
@@ -407,6 +458,11 @@ msgid ""
 "average case. However, there are other representations which are more "
 "efficient overall, yet the worst cases might be terrible."
 msgstr ""
+"これまで、スケジューラを実装するための様々なデータ構造が広範に研究されてきま"
+"した。ヒープは、十分高速で、速度はおおむね一定であり、最悪の場合でも平均的な"
+"速度とさほど変わらないため、良いデータ構造といえます。しかし、最悪の場合にひ"
+"どい速度になるとしても、全体的にはより効率の高い他のデータ構造表現も存在しま"
+"す。"
 
 #: ../../library/heapq.rst:290
 msgid ""
@@ -421,6 +477,15 @@ msgid ""
 "which are twice the size of the memory for random input, and much better for "
 "input fuzzily ordered."
 msgstr ""
+"ヒープはまた、巨大なディスクのソートでも非常に有用です。おそらくご存知のよう"
+"に、巨大なソートを行うと、複数の \"ラン (run)\" (予めソートされた配列で、その"
+"サイズは通常 CPU メモリの量に関係しています) が生成され、続いて統合処理 "
+"(merging) がこれらのランを判定します。この統合処理はしばしば非常に巧妙に組織"
+"されています [#]_。重要なのは、最初のソートが可能な限り長いランを生成すること"
+"です。勝ち抜き戦はこれを達成するための良い方法です。もし利用可能な全てのメモ"
+"リを使って勝ち抜き戦を行い、要素を置換および濾過処理して現在のランに収めれ"
+"ば、ランダムな入力に対してメモリの二倍のサイズのランを生成することになり、大"
+"体順序づけがなされている入力に対してはもっと高い効率になります。"
 
 #: ../../library/heapq.rst:300
 msgid ""
@@ -432,16 +497,25 @@ msgid ""
 "the first heap is melting.  When the first heap completely vanishes, you "
 "switch heaps and start a new run.  Clever and quite effective!"
 msgstr ""
+"さらに、ディスク上の 0 番目の要素を出力して、現在の勝ち抜き戦に (最後に出力し"
+"た値に \"勝って\" しまうために) 収められない入力を得たなら、ヒープには収まら"
+"ないため、ヒープのサイズは減少します。解放されたメモリは二つ目のヒープを段階"
+"的に構築するために巧妙に再利用することができ、この二つ目のヒープは最初のヒー"
+"プが崩壊していくのと同じ速度で成長します。最初のヒープが完全に消滅したら、"
+"ヒープを切り替えて新たなランを開始します。なんと巧妙で効率的なのでしょう！"
 
 #: ../../library/heapq.rst:308
 msgid ""
 "In a word, heaps are useful memory structures to know.  I use them in a few "
 "applications, and I think it is good to keep a 'heap' module around. :-)"
 msgstr ""
+"一言で言うと、ヒープは知って得するメモリ構造です。私はいくつかのアプリケー"
+"ションでヒープを使っていて、'ヒープ' モジュールを常備するのはいい事だと考えて"
+"います。:-)"
 
 #: ../../library/heapq.rst:312
 msgid "Footnotes"
-msgstr "註解"
+msgstr "脚注"
 
 #: ../../library/heapq.rst:313
 msgid ""
@@ -455,3 +529,11 @@ msgid ""
 "Believe me, real good tape sorts were quite spectacular to watch! From all "
 "times, sorting has always been a Great Art! :-)"
 msgstr ""
+"現在使われているディスクバランス化アルゴリズムは、最近ではもはや巧妙というよ"
+"りも目障りになっています。これは、ディスクのシーク機能が向上した結果です。巨"
+"大な容量を持つテープドライブなど、シーク不能なデバイスでは、事情は全く異なり"
+"ます。テープの 1 つ 1 つの動きが可能な限り効率的に行われるように非常に巧妙な"
+"処理を (相当前もって) 確保しなければなりません (統合処理の \"進行\" に最も多"
+"く使用させます)。テープによっては逆方向に読むことさえでき、巻き戻しに時間を取"
+"られるのを避けるために使うこともできます。正直、本当に良いテープソートは見て"
+"いて素晴らしく驚異的なものです！ソートというのは常に偉大な芸術なのです！:-)"

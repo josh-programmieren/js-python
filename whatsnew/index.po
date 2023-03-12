@@ -1,30 +1,30 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Liang-Bo Wang <me@liang2.tw>, 2016
-# Noah Chen <noahcse@gmail.com>, 2016
-# Steven Hsu <hsuhaochun@gmail.com>, 2022
+# tomo, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-15 20:43+0000\n"
-"PO-Revision-Date: 2022-07-07 11:37+0800\n"
-"Last-Translator: Steven Hsu <hsuhaochun@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-29 13:04+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1\n"
 
 #: ../../whatsnew/index.rst:5
 msgid "What's New in Python"
-msgstr "Python 有什麼新功能？"
+msgstr "What's New in Python"
 
 #: ../../whatsnew/index.rst:7
 msgid ""
@@ -32,9 +32,9 @@ msgid ""
 "important changes between major Python versions.  They are a \"must read\" "
 "for anyone wishing to stay up-to-date after a new release."
 msgstr ""
-"「Python 有什麼新功能」這系列的說明是讓使用者知道 Python 各個主要更新版本之間"
-"的重大改變的地方。對於希望在新版本釋出時立即了解版本差異的使用者們來說，這些"
-"說明被歸類為「必讀」的等級。"
+"この\"What's New in Python\"という一連の文書はPythonのメジャーバージョンにお"
+"ける最も重要な変更点を紹介します。新しくリリースされた後でも最新の状態であり"
+"続けたい人にとって必読のものです。"
 
 #: ../../whatsnew/index.rst:35
 msgid ""
@@ -43,6 +43,6 @@ msgid ""
 "tree, which contains *all* nontrivial changes to Python for the current "
 "version."
 msgstr ""
-"「Changelog（更動日誌）」是從 :source:`Misc/NEWS.d` 目錄樹的內容\\ `建置 "
-"<https://pypi.org/project/blurb>`_\\ 的一個 HTML 檔案版本，其中包含了 Python "
-"目前版本中的\\ *所有*\\ 重要變更。"
+"\"変更履歴\" は、 :source:`Misc/NEWS.d` ディレクトリ以下の内容から `ビルドさ"
+"れたファイル <https://pypi.org/project/blurb>`_ の HTML 版で、現在のバージョ"
+"ンの Python への *すべての* 重要な変更が載っています。"

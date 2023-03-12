@@ -1,30 +1,35 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# tomo, 2021
+# Takanori Suzuki <takanori@takanory.net>, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-15 20:43+0000\n"
-"PO-Revision-Date: 2015-12-09 17:51+0000\n"
-"Last-Translator: Liang-Bo Wang <me@liang2.tw>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:09+0000\n"
+"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../library/mailcap.rst:2
 msgid ":mod:`mailcap` --- Mailcap file handling"
-msgstr ""
+msgstr ":mod:`mailcap` --- mailcap ファイルの操作"
 
 #: ../../library/mailcap.rst:8
 msgid "**Source code:** :source:`Lib/mailcap.py`"
-msgstr "**原始碼：**\\ :source:`Lib/mailcap.py`"
+msgstr "**ソースコード:** :source:`Lib/mailcap.py`"
 
 #: ../../library/mailcap.rst:14
 msgid ""
@@ -43,6 +48,14 @@ msgid ""
 "belonging to a temporary file) and the :program:`xmpeg` program can be "
 "automatically started to view the file."
 msgstr ""
+"mailcap ファイルは、メールリーダやウェブブラウザのような MIME 対応のアプリ"
+"ケーションが、異なる MIME タイプのファイルにどのように反応するかを設定するた"
+"めに使われます (\"mailcap\" の名前は \"mail capability\" から取られました)。"
+"例えば、ある mailcap ファイルに ``video/mpeg; xmpeg %s`` のような行が入ってい"
+"たとします。ユーザが email メッセージやウェブドキュメント上でその MIME タイ"
+"プ :mimetype:`video/mpeg` に遭遇すると、 ``%s`` はファイル名 (通常テンポラリ"
+"ファイルに属するものになります) に置き換えられ、ファイルを閲覧するために\\ :"
+"program:`xmpeg` プログラムが自動的に起動されます。"
 
 #: ../../library/mailcap.rst:26
 msgid ""
@@ -51,6 +64,10 @@ msgid ""
 "an internet standard.  However, mailcap files are supported on most Unix "
 "systems."
 msgstr ""
+"mailcap の形式は :rfc:`1524`, \"A User Agent Configuration Mechanism For "
+"Multimedia Mail Format Information\" で文書化されていますが、この文書はイン"
+"ターネット標準ではありません。しかしながら、 mailcap ファイルはほとんどの "
+"Unix システムでサポートされています。"
 
 #: ../../library/mailcap.rst:33
 msgid ""
@@ -59,6 +76,10 @@ msgid ""
 "element is the mailcap entry for a given MIME type.  If no matching MIME "
 "type can be found, ``(None, None)`` is returned."
 msgstr ""
+"2 要素のタプルを返します; 最初の要素は文字列で、実行すべきコマンド (:func:"
+"`os.system` に渡されます) が入っています。二つめの要素は与えられた MIME タイ"
+"プに対する mailcap エントリです。一致する MIME タイプが見つからなかった場"
+"合、 ``(None, None)`` が返されます。"
 
 #: ../../library/mailcap.rst:38
 msgid ""
@@ -69,6 +90,12 @@ msgid ""
 "body of the given MIME type or alter the existing body data.  See :rfc:"
 "`1524` for a complete list of these fields."
 msgstr ""
+"*key* は desired フィールドの値で、実行すべき動作のタイプを表現します; ほとん"
+"どの場合、単に MIME 形式のデータ本体を見たいと思うので、標準の値は 'view' に"
+"なっています。与えられた MIME 型をもつ新たなデータ本体を作成した場合や、既存"
+"のデータ本体を置き換えたい場合には、'view' の他に 'compose' および 'edit' を"
+"取ることもできます。これらフィールドの完全なリストについては :rfc:`1524` を参"
+"照してください。"
 
 #: ../../library/mailcap.rst:45
 msgid ""
@@ -76,6 +103,9 @@ msgid ""
 "the default value is ``'/dev/null'`` which is almost certainly not what you "
 "want, so usually you'll override it by specifying a filename."
 msgstr ""
+"*filename* はコマンドライン中で ``%s`` に代入されるファイル名です; 標準の値"
+"は ``'/dev/null'`` で、たいていこの値を使いたいわけではないはずです。従って、"
+"ファイル名を指定してこのフィールドを上書きする必要があるでしょう。"
 
 #: ../../library/mailcap.rst:49
 msgid ""
@@ -88,6 +118,13 @@ msgid ""
 "and *plist* was set to ``['id=1', 'number=2', 'total=3']``, the resulting "
 "command line would be ``'showpartial 1 2 3'``."
 msgstr ""
+"*plist* は名前付けされたパラメタのリストです; 標準の値は単なる空のリストで"
+"す。リスト中の各エントリはパラメタ名を含む文字列、等号 (``'='``)、およびパラ"
+"メタの値でなければなりません。mailcap エントリには ``%{foo}`` といったような"
+"名前つきのパラメタを含めることができ、'foo' と名づけられたパラメタの値に置き"
+"換えられます。例えば、コマンドライン ``showpartial %{id} %{number} %{total}"
+"`` が mailcap ファイルにあり、*plist* が ``['id=1', 'number=2', 'total=3']`` "
+"に設定されていれば、コマンドラインは ``'showpartial 1 2 3'`` になります。"
 
 #: ../../library/mailcap.rst:58
 msgid ""
@@ -97,6 +134,10 @@ msgid ""
 "`findmatch` will automatically check such conditions and skip the entry if "
 "the check fails."
 msgstr ""
+"mailcap ファイル中では、オプションの \"test\" フィールドを使って、(計算機アー"
+"キテクチャや、利用しているウィンドウシステムといった) 何らかの外部条件をテス"
+"トするよう指定することができます。 :func:`findmatch` はこれらの条件を自動的に"
+"チェックし、チェックが失敗したエントリを読み飛ばします。"
 
 #: ../../library/mailcap.rst:65
 msgid ""
@@ -122,6 +163,9 @@ msgid ""
 "is stored as a list of dictionaries, but it shouldn't be necessary to know "
 "the details of this representation."
 msgstr ""
+"MIME タイプを mailcap ファイルのエントリに対応付ける辞書を返します。この辞書"
+"は :func:`findmatch` 関数に渡されるべきものです。エントリは辞書のリストとして"
+"記憶されますが、この表現形式の詳細について知っておく必要はないでしょう。"
 
 #: ../../library/mailcap.rst:83
 msgid ""
@@ -130,7 +174,11 @@ msgid ""
 "override settings in the system mailcap files :file:`/etc/mailcap`, :file:`/"
 "usr/etc/mailcap`, and :file:`/usr/local/etc/mailcap`."
 msgstr ""
+"mailcap 情報はシステム上で見つかった全ての mailcap ファイルから導出されます。"
+"ユーザ設定の mailcap ファイル :file:`$HOME/.mailcap` はシステムの mailcap "
+"ファイル :file:`/etc/mailcap` 、 :file:`/usr/etc/mailcap` 、および :file:`/"
+"usr/local/etc/mailcap` の内容を上書きします。"
 
 #: ../../library/mailcap.rst:88
 msgid "An example usage::"
-msgstr ""
+msgstr "以下に使用例を示します::"

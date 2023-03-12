@@ -1,27 +1,30 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Leon H., 2017
+# tomo, 2022
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-13 00:11+0000\n"
-"PO-Revision-Date: 2017-09-22 18:27+0000\n"
-"Last-Translator: Leon H.\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:15+0000\n"
+"Last-Translator: tomo, 2022\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../library/tk.rst:5
 msgid "Graphical User Interfaces with Tk"
-msgstr "以 Tk 打造 GUI"
+msgstr "Tk を用いたグラフィカルユーザインターフェイス"
 
 #: ../../library/tk.rst:13
 msgid ""
@@ -30,6 +33,10 @@ msgid ""
 "programmers using the :mod:`tkinter` package, and its extension, the :mod:"
 "`tkinter.tix` and the :mod:`tkinter.ttk` modules."
 msgstr ""
+"Tk/Tcl は長きにわたり Python の不可欠な一部でありつづけています。Tk/Tcl は頑"
+"健でプラットホームに依存しないウィンドウ構築ツールキットであり、Python プログ"
+"ラマは :mod:`tkinter` パッケージやその拡張モジュールの :mod:`tkinter.tix` お"
+"よび :mod:`tkinter.ttk` モジュールを使って利用できます。"
 
 #: ../../library/tk.rst:18
 msgid ""
@@ -39,6 +46,11 @@ msgid ""
 "mod:`tkinter` is a set of wrappers that implement the Tk widgets as Python "
 "classes."
 msgstr ""
+":mod:`tkinter` パッケージはオブジェクトの薄い層で作ったTcl/Tkの最上層です。:"
+"mod:`tkinter` を使うには、Tcl のコードを書く必要はありませんが、Tk のドキュメ"
+"ント、またはときどき、Tcl のドキュメントを調べる\n"
+"必要が出て来ます。:mod:`tkinter` は Python クラスとして実装した Tk ウィジェッ"
+"トのラッパーの集合です。"
 
 #: ../../library/tk.rst:24
 msgid ""

@@ -1,49 +1,50 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Adrian Liaw, 2020
-# Leon H., 2017
+# tomo, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-26 16:47+0000\n"
-"PO-Revision-Date: 2021-11-19 23:36+0800\n"
-"Last-Translator: Jordan Su <newjordansu1126@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 00:57+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.0\n"
 
 #: ../../library/constants.rst:4
 msgid "Built-in Constants"
-msgstr "內建常數"
+msgstr "組み込み定数"
 
 #: ../../library/constants.rst:6
 msgid "A small number of constants live in the built-in namespace.  They are:"
-msgstr "有一小部分的常數存在於內建命名空間中。他們是："
+msgstr "組み込み名前空間にはいくつかの定数があります。定数の一覧:"
 
 #: ../../library/constants.rst:10
 msgid ""
 "The false value of the :class:`bool` type. Assignments to ``False`` are "
 "illegal and raise a :exc:`SyntaxError`."
 msgstr ""
-"在 :class:`bool` 型別中的 false 值。對於 ``False`` 的賦值是不合法的，並且會拋"
-"出 :exc:`SyntaxError`。"
+":class:`bool` 型の偽値です。``False`` への代入は不正で、:exc:`SyntaxError` を"
+"送出します。"
 
 #: ../../library/constants.rst:16
 msgid ""
 "The true value of the :class:`bool` type. Assignments to ``True`` are "
 "illegal and raise a :exc:`SyntaxError`."
 msgstr ""
-"在 :class:`bool` 型別中的 true 值。對於 ``True`` 的賦值是不合法的，並且會拋"
-"出 :exc:`SyntaxError`。"
+":class:`bool` 型の真値です。``True`` への代入は不正で、:exc:`SyntaxError` を"
+"送出します。"
 
 #: ../../library/constants.rst:22
 msgid ""
@@ -52,9 +53,6 @@ msgid ""
 "illegal and raise a :exc:`SyntaxError`. ``None`` is the sole instance of "
 "the :data:`NoneType` type."
 msgstr ""
-"型別 ``NoneType`` 的唯一值。``None`` 經常被使用來表達缺少值，例如未傳送預設的"
-"引數至函式時，相對應參數即會被賦予 ``None``。對於 ``None`` 的賦值是不合法的，"
-"並且會拋出 :exc:`SyntaxError`。``None`` 是型別 :data:`NoneType` 的唯一實例。"
 
 #: ../../library/constants.rst:30
 msgid ""
@@ -66,12 +64,6 @@ msgid ""
 "evaluated in a boolean context. ``NotImplemented`` is the sole instance of "
 "the :data:`types.NotImplementedType` type."
 msgstr ""
-"會被二元特殊方法 (binary special methods)（如：:meth:`__eq__`、:meth:"
-"`__lt__`、:meth:`__add__`，:meth:`__rsub__`  等）所回傳的特殊值，代表著該運算"
-"沒有針對其他型別的實作。同理也可以被原地二元特殊方法 (in-place binary "
-"special methods) （如：:meth:`__imul__`、:meth:`__iand__` 等）回傳。它不應該"
-"被作為 boolean（布林）來解讀。``NotImplemented`` 是型別 :data:`types."
-"NotImplementedType` 的唯一實例。"
 
 #: ../../library/constants.rst:40
 msgid ""
@@ -82,15 +74,18 @@ msgid ""
 "Incorrectly returning ``NotImplemented`` will result in a misleading error "
 "message or the ``NotImplemented`` value being returned to Python code."
 msgstr ""
-"當一個二元 (binary) 或原地 (in-place) 方法回傳 ``NotImplemented``，直譯器會嘗"
-"試反映該操作到其他型別（或是其他後援 (fallback)，取決於是哪種運算子）。如果所"
-"有的常識都回傳 ``NotImplemented``，直譯器會拋出適當的例外。不正確的回傳 "
-"``NotImplemented`` 會造成誤導的錯誤訊息或是 ``NotImplemented`` 值被傳回到 "
-"Python 程式碼中。"
+"二項演算の (あるいはインプレースの) メソッドが ``NotImplemented`` を返した場"
+"合、インタープリタはもう一方の型で定義された対の演算で代用を試みます (あるい"
+"は演算によっては他の代替手段も試みます)。試行された演算全てが "
+"``NotImplemented`` を返した場合、インタープリタは適切な例外を送出します。 "
+"``NotImplemented`` を正しく返さないと、誤解を招きかねないエラーメッセージに"
+"なったり、 ``NotImplemented`` が Python コードに返されるようなことになりま"
+"す。"
 
 #: ../../library/constants.rst:47
 msgid "See :ref:`implementing-the-arithmetic-operations` for examples."
-msgstr "請參見 :ref:`implementing-the-arithmetic-operations` 以找到更多範例。"
+msgstr ""
+"例として :ref:`implementing-the-arithmetic-operations` を参照してください。"
 
 #: ../../library/constants.rst:51
 msgid ""
@@ -98,9 +93,9 @@ msgid ""
 "though they have similar names and purposes. See :exc:`NotImplementedError` "
 "for details on when to use it."
 msgstr ""
-"``NotImplementedError`` 與 ``NotImplemented`` 並不一樣且不可互換。即使它們有"
-"相似的名稱與用途。欲知更多如何使用它們的細節，請參見 :exc:"
-"`NotImplementedError`。"
+"``NotImplementedError`` と ``NotImplemented`` は、似たような名前と目的を持っ"
+"ていますが、相互に変換できません。 利用する際には、 :exc:"
+"`NotImplementedError` を参照してください。"
 
 #: ../../library/constants.rst:55
 msgid ""
@@ -108,9 +103,9 @@ msgid ""
 "currently evaluates as true, it will emit a :exc:`DeprecationWarning`. It "
 "will raise a :exc:`TypeError` in a future version of Python."
 msgstr ""
-"在 boolean（布林）上下文中解讀 ``NotImplemented`` 已經被棄用。雖然目前會被解"
-"讀成 true，但會發出一個 :exc:`DeprecationWarning`。在未來版本的 Python 將會拋"
-"出 :exc:`TypeError`。"
+"``NotImplemented`` の評価は非推奨です。\n"
+"現時点で真と評価されていても :exc:`DeprecationWarning` が出ます。\n"
+"この警告は将来のバージョンの Python で :exc:`TypeError` を送出します。"
 
 #: ../../library/constants.rst:64
 msgid ""
@@ -119,17 +114,14 @@ msgid ""
 "types. ``Ellipsis`` is the sole instance of the :data:`types.EllipsisType` "
 "type."
 msgstr ""
-"與刪節號 \"``...``\" 字面相同。為一特殊值，大多用於結合使用者定義資料型別的延"
-"伸切片語法 (extended slicing syntax)。``Ellipsis`` 是型別 :data:`types."
-"EllipsisType` 的唯一實例。"
 
 #: ../../library/constants.rst:71
 msgid ""
 "This constant is true if Python was not started with an :option:`-O` option. "
 "See also the :keyword:`assert` statement."
 msgstr ""
-"如果 Python 沒有被以 :option:`-O` 選項啟動，則此常數為 true。請參見 :keyword:"
-"`assert` 陳述式。"
+"この定数は、Python が :option:`-O` オプションを有効にして開始されたのでなけれ"
+"ば真です。 :keyword:`assert` 文も参照して下さい。"
 
 #: ../../library/constants.rst:77
 msgid ""
@@ -137,13 +129,14 @@ msgid ""
 "cannot be reassigned (assignments to them, even as an attribute name, raise :"
 "exc:`SyntaxError`), so they can be considered \"true\" constants."
 msgstr ""
-":data:`None`，:data:`False`，:data:`True`，以及 :data:`__debug__` 都是不能被"
-"重新賦值的（任何對它們的賦值，即使是屬性的名稱，也會拋出 :exc:"
-"`SyntaxError`）。因此，它們可以被視為”真正的”常數。"
+"名前 :data:`None` 、 :data:`False` 、 :data:`True` 、 :data:`__debug__` は再"
+"代入できない (これらに対する代入は、たとえ属性名としてであっても :exc:"
+"`SyntaxError` が送出されます) ので、これらは「真の」定数であると考えられま"
+"す。"
 
 #: ../../library/constants.rst:83
 msgid "Constants added by the :mod:`site` module"
-msgstr "由 :mod:`site` module（模組）所添增的常數"
+msgstr ":mod:`site` モジュールで追加される定数"
 
 #: ../../library/constants.rst:85
 msgid ""
@@ -152,9 +145,10 @@ msgid ""
 "constants to the built-in namespace.  They are useful for the interactive "
 "interpreter shell and should not be used in programs."
 msgstr ""
-":mod:`site` module（模組）（在啟動期間自動 import ，除非有給予 :option:`-S` "
-"指令行選項）會添增一些常數到內建命名空間 (built-in namespace) 中。它們在互動"
-"式直譯器中是很有幫助的，但不應該在程式 (programs) 中被使用。"
+":mod:`site` モジュール (:option:`-S` コマンドラインオプションが指定されない限"
+"り、スタートアップ時に自動的にインポートされます) は組み込み名前空間にいくつ"
+"かの定数を追加します。それらは対話的インタープリタシェルで有用ですが、プログ"
+"ラム中では使うべきではありません。"
 
 #: ../../library/constants.rst:93
 msgid ""
@@ -162,14 +156,17 @@ msgid ""
 "EOF) to exit\", and when called, raise :exc:`SystemExit` with the specified "
 "exit code."
 msgstr ""
-"當印出物件時，會印出一個訊息： \"Use quit() or Ctrl-D (i.e. EOF) to exit\" 。"
-"當被呼叫時，則會拋出 :exc:`SystemExit` 並帶有指定的返回碼（exit code）。"
+"表示されたときに \"Use quit() or Ctrl-D (i.e. EOF) to exit\" のようなメッセー"
+"ジを表示し、呼び出されたときには指定された終了コードを伴って :exc:"
+"`SystemExit` を送出するオブジェクトです。"
 
 #: ../../library/constants.rst:100
 msgid ""
 "Objects that when printed or called, print the text of copyright or credits, "
 "respectively."
-msgstr "當印出或是呼叫此物件時，分別會印出版權與致謝的文字。"
+msgstr ""
+"表示あるいは呼び出されたときに、それぞれ著作権あるいはクレジットのテキストが"
+"表示されるオブジェクトです。"
 
 #: ../../library/constants.rst:105
 msgid ""
@@ -177,5 +174,6 @@ msgid ""
 "full license text\", and when called, displays the full license text in a "
 "pager-like fashion (one screen at a time)."
 msgstr ""
-"當印出此物件時，會印出訊息 \"Type license() to see the full license text\" 。"
-"當被呼叫時，則會以分頁形式印出完整的許可證文字（一次一整個畫面）。"
+"表示されたときに \"Type license() to see the full license text\" というメッ"
+"セージを表示し、呼び出されたときには完全なライセンスのテキストをページャのよ"
+"うな形式で (1画面分づつ) 表示するオブジェクトです。"

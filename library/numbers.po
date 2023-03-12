@@ -1,33 +1,35 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Liang-Bo Wang <me@liang2.tw>, 2016
-# Matt Wang <mattwang44@gmail.com>, 2022
+# Takanori Suzuki <takanori@takanory.net>, 2021
+# tomo, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 04:24+0800\n"
-"PO-Revision-Date: 2022-11-16 04:57+0800\n"
-"Last-Translator: Matt Wang <mattwang44@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:10+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.2\n"
 
 #: ../../library/numbers.rst:2
 msgid ":mod:`numbers` --- Numeric abstract base classes"
-msgstr ":mod:`numbers` --- 數值的抽象基底類別"
+msgstr ":mod:`numbers` --- 数の抽象基底クラス"
 
 #: ../../library/numbers.rst:7
 msgid "**Source code:** :source:`Lib/numbers.py`"
-msgstr "**原始碼：**\\ :source:`Lib/numbers.py`"
+msgstr "**ソースコード:** :source:`Lib/numbers.py`"
 
 #: ../../library/numbers.rst:11
 msgid ""
@@ -36,21 +38,22 @@ msgid ""
 "more operations.  None of the types defined in this module are intended to "
 "be instantiated."
 msgstr ""
-":mod:`numbers` 模組 (:pep:`3141`) 定義了數值\\ :term:`抽象基底類別 <abstract "
-"base class>` 的階層結構，其中逐一定義了更多操作。此模組中定義的型別都不可被實"
-"例化。"
+":mod:`numbers` モジュール (:pep:`3141`) は数の :term:`抽象基底クラス "
+"<abstract base class>` の階層を定義します。この階層では、さらに多くの演算が順"
+"番に定義されます。このモジュールで定義される型はどれもインスタンス化を想定し"
+"ていません。"
 
 #: ../../library/numbers.rst:18
 msgid ""
 "The root of the numeric hierarchy. If you just want to check if an argument "
 "*x* is a number, without caring what kind, use ``isinstance(x, Number)``."
 msgstr ""
-"數值階層結構的基礎。如果你只想確認引數 *x* 是不是數值、並不關心其型別，請使"
-"用 ``isinstance(x, Number)``。"
+"数の階層の根。引数 *x* が、種類は何であれ、数であるということだけチェックした"
+"い場合、``isinstance(x, Number)`` が使えます。"
 
 #: ../../library/numbers.rst:23
 msgid "The numeric tower"
-msgstr "數值的階層"
+msgstr "数値塔"
 
 #: ../../library/numbers.rst:27
 msgid ""
@@ -60,30 +63,34 @@ msgid ""
 "``, ``*``, ``/``, ``**``, :func:`abs`, :meth:`conjugate`, ``==``, and ``!"
 "=``. All except ``-`` and ``!=`` are abstract."
 msgstr ""
-"這個型別的子類別描述了複數並包含適用於內建 :class:`complex` 型別的操作。這些"
-"操作有：:class:`complex` 和 :class:`bool` 的轉換、:attr:`.real`、:attr:`."
-"imag`、``+``、``-``、``*``、``/``、``**``、:func:`abs`、:meth:`conjugate`、"
-"``==`` 以及 ``!=``。除 ``-`` 和 ``!=`` 之外所有操作都是抽象的。"
+"この型のサブクラスは複素数を表し、組み込みの :class:`complex` 型を受け付ける"
+"演算を含みます。それらは: :class:`complex` および :class:`bool` への変換、 :"
+"attr:`.real`, :attr:`.imag`, ``+``, ``-``, ``*``, ``/``, ``**``, :func:"
+"`abs`, :meth:`conjugate`, ``==``, ``!=`` です。 ``-`` と ``!=`` 以外の全ての"
+"ものは抽象メソッドや抽象プロパティです。"
 
 #: ../../library/numbers.rst:35
 msgid "Abstract. Retrieves the real component of this number."
-msgstr "為抽象的。取得該數值的實數部分。"
+msgstr "抽象プロパティ。この数の実部を取り出します。"
 
 #: ../../library/numbers.rst:39
 msgid "Abstract. Retrieves the imaginary component of this number."
-msgstr "為抽象的。取得該數值的虛數部分。"
+msgstr "抽象プロパティ。この数の虚部を取り出します。"
 
 #: ../../library/numbers.rst:43
 msgid ""
 "Abstract. Returns the complex conjugate. For example, ``(1+3j).conjugate() "
 "== (1-3j)``."
-msgstr "為抽象的。回傳共軛複數，例如 ``(1+3j).conjugate() == (1-3j)``。"
+msgstr ""
+"抽象プロパティ。複素共役を返します。たとえば、``(1+3j).conjugate() == "
+"(1-3j)`` です。"
 
 #: ../../library/numbers.rst:48
 msgid ""
 "To :class:`Complex`, :class:`Real` adds the operations that work on real "
 "numbers."
-msgstr "相對於 :class:`Complex`，:class:`Real` 加入了只有實數才能進行的操作。"
+msgstr ""
+":class:`Real` は、:class:`Complex` 上に、 実数に対して行える演算を加えます。"
 
 #: ../../library/numbers.rst:51
 msgid ""
@@ -91,17 +98,17 @@ msgid ""
 "func:`round`, :func:`math.floor`, :func:`math.ceil`, :func:`divmod`, ``//``, "
 "``%``, ``<``, ``<=``, ``>``, and ``>=``."
 msgstr ""
-"簡單的說，有 :class:`float` 的轉換、:func:`math.trunc`、:func:`round`、:func:"
-"`math.floor`、:func:`math.ceil`、:func:`divmod`、``//``、``%``、 ``<``、"
-"``<=``、``>``、和 ``>=``。"
+"簡潔に言うとそれらは: :class:`float` への変換, :func:`math.trunc`, :func:"
+"`round`, :func:`math.floor`, :func:`math.ceil`, :func:`divmod`, ``//``, "
+"``%``, ``<``, ``<=``, ``>`` および ``>=`` です。"
 
 #: ../../library/numbers.rst:55
 msgid ""
 "Real also provides defaults for :func:`complex`, :attr:`~Complex.real`, :"
 "attr:`~Complex.imag`, and :meth:`~Complex.conjugate`."
 msgstr ""
-"實數同樣提供 :func:`complex`、:attr:`~Complex.real`、:attr:`~Complex.imag` "
-"和 :meth:`~Complex.conjugate` 的預設值。"
+"Real はまた :func:`complex`, :attr:`~Complex.real`, :attr:`~Complex.imag` お"
+"よび :meth:`~Complex.conjugate` のデフォルトを提供します。"
 
 #: ../../library/numbers.rst:61
 msgid ""
@@ -109,8 +116,6 @@ msgid ""
 "`~Rational.denominator` properties. It also provides a default for :func:"
 "`float`."
 msgstr ""
-":class:`Real` 的子型別，並增加了 :attr:`~Rational.numerator` 和 :attr:"
-"`~Rational.denominator` 這兩種特性。它也會提供 :func:`float` 的預設值。"
 
 #: ../../library/numbers.rst:65
 msgid ""
@@ -118,12 +123,10 @@ msgid ""
 "should be instances of :class:`Integral` and should be in lowest terms with :"
 "attr:`~Rational.denominator` positive."
 msgstr ""
-":attr:`~Rational.numerator` 和 :attr:`~Rational.denominator` 的值必須是 :"
-"class:`Integral` 的實例且 :attr:`~Rational.denominator` 要是正數。"
 
 #: ../../library/numbers.rst:71 ../../library/numbers.rst:75
 msgid "Abstract."
-msgstr "為抽象的。"
+msgstr "抽象プロパティ。"
 
 #: ../../library/numbers.rst:80
 msgid ""
@@ -132,14 +135,15 @@ msgid ""
 "`~Rational.denominator`.  Adds abstract methods for :func:`pow` with modulus "
 "and bit-string operations: ``<<``, ``>>``, ``&``, ``^``, ``|``, ``~``."
 msgstr ""
-":class:`Rational` 的子型別，並增加了 :class:`int` 的轉換操作。為 :func:"
-"`float`、:attr:`~Rational.numerator` 和 :attr:`~Rational.denominator` 提供了"
-"預設值。為 :func:`pow` 方法增加了求餘 (modulus) 和位元字串運算 (bit-string "
-"operations) 的抽象方法：``<<``、``>>``、``&``、``^``、``|``、``~``。"
+":class:`Rational` をサブタイプ化し :class:`int` への変換が加わります。 :func:"
+"`float`, :attr:`~Rational.numerator`, :attr:`~Rational.denominator` のデフォ"
+"ルトを提供します。法 (訳注: 割る数、除数のこと) を持つ :func:`pow` に対する抽"
+"象メソッドと、ビット列演算 ``<<``, ``>>``, ``&``, ``^``, ``|``, ``~`` を追加"
+"します。"
 
 #: ../../library/numbers.rst:88
 msgid "Notes for type implementors"
-msgstr "給型別實作者的註記"
+msgstr "型実装者のための注意事項"
 
 #: ../../library/numbers.rst:90
 msgid ""
@@ -148,15 +152,14 @@ msgid ""
 "the real numbers. For example, :class:`fractions.Fraction` implements :func:"
 "`hash` as follows::"
 msgstr ""
-"實作者需注意，相等的數值除了大小相等外，還必須擁有同樣的雜湊值。當使用兩個不"
-"同的實數擴充時，這可能是很微妙的。例如，:class:`fractions.Fraction` 底下的 :"
-"func:`hash` 實作如下：\n"
-"\n"
-"::"
+"実装する人は等しい数が等しく扱われるように同じハッシュを与えるように気を付け"
+"ねばなりません。これは二つの異なった実数の拡張があるような場合にはややこしい"
+"ことになるかもしれません。たとえば、 :class:`fractions.Fraction` は :func:"
+"`hash` を以下のように実装しています::"
 
 #: ../../library/numbers.rst:109
 msgid "Adding More Numeric ABCs"
-msgstr "加入更多數值 ABC"
+msgstr "さらに数のABCを追加する"
 
 #: ../../library/numbers.rst:111
 msgid ""
@@ -164,14 +167,14 @@ msgid ""
 "poor hierarchy if it precluded the possibility of adding those. You can add "
 "``MyFoo`` between :class:`Complex` and :class:`Real` with::"
 msgstr ""
-"當然，還有更多用於數值的 ABC，如果不加入它們就不會有健全的階層。你可以在 :"
-"class:`Complex` 和 :class:`Real` 中加入 ``MyFoo``，像是：\n"
-"\n"
-"::"
+"数に対する ABC が他にも多く存在しうることは、言うまでもありません。それらの "
+"ABC を階層に追加する可能性が閉ざされるとしたら、その階層は貧相な階層でしかあ"
+"りません。たとえば、 ``MyFoo`` を :class:`Complex` と :class:`Real` の間に付"
+"け加えるには、次のようにします::"
 
 #: ../../library/numbers.rst:123
 msgid "Implementing the arithmetic operations"
-msgstr "實作算術操作"
+msgstr "算術演算の実装"
 
 #: ../../library/numbers.rst:125
 msgid ""
@@ -181,12 +184,11 @@ msgid ""
 "there. For subtypes of :class:`Integral`, this means that :meth:`__add__` "
 "and :meth:`__radd__` should be defined as::"
 msgstr ""
-"我們想要實作算術操作，來使得混合模式操作要麼呼叫一個作者知道兩個引數之型別的"
-"實作，要麼將其轉換成最接近的內建型別並執行這個操作。對於 :class:"
-"`Integral` 的子型別，這意味著 :meth:`__add__` 和 :meth:`__radd__` 必須用如下方式定"
-"義：\n"
-"\n"
-"::"
+"算術演算を実装する際には、型混合(mixed-mode)演算を行うと、作者が両方の引数の"
+"型について知っているような実装を呼び出すか、両方の引数をそれぞれ最も似ている"
+"組み込み型に変換してその型で演算を行うか、どちらになるのが望ましい実装です。"
+"つまり、 :class:`Integral` のサブタイプに対しては :meth:`__add__` と :meth:"
+"`__radd__` を次のように定義するべきです::"
 
 #: ../../library/numbers.rst:156
 msgid ""
@@ -196,14 +198,17 @@ msgid ""
 "an instance of ``A``, which is a subtype of :class:`Complex` (``a : A <: "
 "Complex``), and ``b : B <: Complex``. I'll consider ``a + b``:"
 msgstr ""
-":class:`Complex` 的子類別有 5 種不同的混合型別操作。我將上面提到所有不涉及 "
-"``MyIntegral`` 和 ``OtherTypeIKnowAbout`` 的程式碼稱作「模板 "
-"(boilerplate)」。``a`` 是 :class:`Complex` 之子型別 ``A`` 的實例 (``a : A "
-"<: Complex``)，同時 ``b : B <: Complex``。我將要計算 ``a + b``："
+"ここには5つの異なる :class:`Complex` のサブクラス間の混在型の演算があります。"
+"上のコードの中で ``MyIntegral`` と ``OtherTypeIKnowAbout`` に触れない部分を "
+"\"ボイラープレート\" と呼ぶことにしましょう。 ``a`` を :class:`Complex` のサ"
+"ブタイプである ``A`` のインスタンス (``a : A <: Complex``)、同様に ``b : B "
+"<: Complex`` として、 ``a + b`` を考えます:"
 
 #: ../../library/numbers.rst:163
 msgid "If ``A`` defines an :meth:`__add__` which accepts ``b``, all is well."
-msgstr "如果 ``A`` 有定義成一個接受 ``b`` 的 :meth:`__add__`，不會發生問題。"
+msgstr ""
+"``A`` が ``b`` を受け付ける :meth:`__add__` を定義している場合、何も問題はあ"
+"りません。"
 
 #: ../../library/numbers.rst:165
 msgid ""
@@ -213,24 +218,27 @@ msgid ""
 "`NotImplemented` from :meth:`__add__`. (Or ``A`` may not implement :meth:"
 "`__add__` at all.)"
 msgstr ""
-"如果 ``A`` 回退成模板程式碼，它將回傳一個來自 :meth:`__add__` 的值，並喪失讓 "
-"``B`` 定義一個更完善的 :meth:`__radd__` 的機會，因此模板需要回傳一個來自 :"
-"meth:`__add__` 的 :const:`NotImplemented`。（或者 ``A`` 可能完全不實作 :meth:"
-"`__add__`。）"
+"``A`` でボイラープレート部分に落ち込み、その結果 :meth:`__add__` が値を返すな"
+"らば、 ``B`` に良く考えられた :meth:`__radd__` が定義されている可能性を見逃し"
+"てしまいますので、ボイラープレートは :meth:`__add__` から :const:"
+"`NotImplemented` を返すのが良いでしょう。(若しくは、 ``A`` はまったく :meth:"
+"`__add__` を実装すべきではなかったかもしれません。)"
 
 #: ../../library/numbers.rst:171
 msgid ""
 "Then ``B``'s :meth:`__radd__` gets a chance. If it accepts ``a``, all is "
 "well."
-msgstr "接著看 ``B`` 的 :meth:`__radd__`。如果它接受 ``a`` ，不會發生問題。"
+msgstr ""
+"そうすると、 ``B`` の :meth:`__radd__` にチャンスが巡ってきます。ここで "
+"``a`` が受け付けられるならば、結果は上々です。"
 
 #: ../../library/numbers.rst:173
 msgid ""
 "If it falls back to the boilerplate, there are no more possible methods to "
 "try, so this is where the default implementation should live."
 msgstr ""
-"如果沒有成功回退到模板，就沒有更多的方法可以去嘗試，因此這裡將使用預設的實"
-"作。"
+"ここでボイラープレートに落ち込むならば、もう他に試すべきメソッドはありません"
+"ので、デフォルト実装の出番です。"
 
 #: ../../library/numbers.rst:176
 msgid ""
@@ -238,9 +246,9 @@ msgid ""
 "because it was implemented with knowledge of ``A``, so it can handle those "
 "instances before delegating to :class:`Complex`."
 msgstr ""
-"如果 ``B <: A``，Python 會在 ``A.__add__`` 之前嘗試 ``B.__radd__``。這是可行"
-"的，因為它是透過對 ``A`` 的理解而實作的，所以這可以在交給 :class:`Complex` 之"
-"前處理好這些實例。"
+"もし ``B <: A`` ならば、Python は ``A.__add__`` の前に ``B.__radd__`` を試し"
+"ます。これで良い理由は、 ``A`` についての知識を持って実装しており、 :class:"
+"`Complex` に委ねる前にこれらのインスタンスを扱えるはずだからです。"
 
 #: ../../library/numbers.rst:181
 msgid ""
@@ -248,9 +256,9 @@ msgid ""
 "then the appropriate shared operation is the one involving the built in :"
 "class:`complex`, and both :meth:`__radd__` s land there, so ``a+b == b+a``."
 msgstr ""
-"如果 ``A <: Complex`` 和 ``B <: Real`` 且沒有共享任何其他型別上的理解，那麼適當的共享操作會涉"
-"及內建的 :class:`complex`，並且分別用到 :meth:`__radd__`，因此 ``a+b == b"
-"+a``。"
+"もし ``A <: Complex`` かつ ``B <: Real`` で他に共有された知識が無いならば、適"
+"切な共通の演算は組み込みの :class:`complex` を使ったものになり、どちらの :"
+"meth:`__radd__` ともそこに着地するでしょうから、 ``a+b == b+a`` です。"
 
 #: ../../library/numbers.rst:186
 msgid ""
@@ -259,7 +267,7 @@ msgid ""
 "reverse instances of any given operator. For example, :class:`fractions."
 "Fraction` uses::"
 msgstr ""
-"由於大部分對任意給定類型的操作都十分相似的，定義一個為任意給定運算子生成向前 (forward) 與向"
-"後 (reverse) 實例的輔助函式可能會非常有用。例如，:class:`fractions.Fraction` 使用了：\n"
-"\n"
-"::"
+"ほとんどの演算はどのような型についても非常に良く似ていますので、与えられた演"
+"算子について順結合(forward)および逆結合(reverse)のメソッドを生成する支援関数"
+"を定義することは役に立ちます。たとえば、 :class:`fractions.Fraction` では次の"
+"ようなものを利用しています::"

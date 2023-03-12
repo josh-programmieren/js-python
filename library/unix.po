@@ -1,27 +1,31 @@
-# Copyright (C) 2001-2022, Python Software Foundation
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Matt Wang <mattwang44@gmail.com>, 2022
+# tomo, 2021
+# Osamu NAKAMURA, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-26 18:54+0800\n"
-"PO-Revision-Date: 2022-02-15 18:42+0800\n"
-"Last-Translator: Matt Wang <mattwang44@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:16+0000\n"
+"Last-Translator: Osamu NAKAMURA, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.0.1\n"
 
 #: ../../library/unix.rst:5
 msgid "Unix Specific Services"
-msgstr "Unix 特有服務"
+msgstr "Unix 固有のサービス"
 
 #: ../../library/unix.rst:7
 msgid ""
@@ -29,5 +33,6 @@ msgid ""
 "are unique to the Unix operating system, or in some cases to some or many "
 "variants of it.  Here's an overview:"
 msgstr ""
-"此章節所描述的模組 (module) 提供了針對 Unix 作業系統獨有特性的介面，或在某些"
-"情況下可用於其他 Unix 變形版本。以下為概述："
+"本章に記述されたモジュールは、Unix オペレーティングシステム、あるいはそれから"
+"派生した多くのものに固有の機能のためのインターフェースを提供します。その概要"
+"を以下に述べます:"

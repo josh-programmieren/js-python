@@ -1,26 +1,30 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# tomo, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-03 00:14+0000\n"
-"PO-Revision-Date: 2018-05-23 14:07+0000\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 00:50+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../c-api/set.rst:6
 msgid "Set Objects"
-msgstr ""
+msgstr "Set オブジェクト"
 
 #: ../../c-api/set.rst:15
 msgid ""
@@ -53,18 +57,25 @@ msgid ""
 "This is an instance of :c:type:`PyTypeObject` representing the Python :class:"
 "`set` type."
 msgstr ""
+"この :c:type:`PyTypeObject` のインスタンスは、Python の :class:`set` 型を表し"
+"ます。"
 
 #: ../../c-api/set.rst:46
 msgid ""
 "This is an instance of :c:type:`PyTypeObject` representing the Python :class:"
 "`frozenset` type."
 msgstr ""
+"この :c:type:`PyTypeObject` のインスタンスは、Python の :class:`frozenset` 型"
+"を表します。"
 
 #: ../../c-api/set.rst:49
 msgid ""
 "The following type check macros work on pointers to any Python object. "
 "Likewise, the constructor functions work with any iterable Python object."
 msgstr ""
+"以降の型チェックマクロはすべての Python オブジェクトに対するポインタに対して"
+"動作します。同様に、コンストラクタはすべてのイテレート可能な Python オブジェ"
+"クトに対して動作します。"
 
 #: ../../c-api/set.rst:55
 msgid ""
@@ -110,6 +121,11 @@ msgid ""
 "is not actually iterable.  The constructor is also useful for copying a set "
 "(``c=set(s)``)."
 msgstr ""
+"*iterable* が返すオブジェクトを含む新しい :class:`set` を返します。\n"
+"*iterable* が ``NULL`` のときは、空の set を返します。\n"
+"成功したら新しい set を、失敗したら ``NULL`` を返します。\n"
+"*iterable* がイテレート可能でない場合は、 :exc:`TypeError` を送出します。\n"
+"このコンストラクタは set をコピーするときにも使えます (``c=set(s)``)。"
 
 #: ../../c-api/set.rst:98
 msgid ""
@@ -118,12 +134,18 @@ msgid ""
 "Return the new set on success or ``NULL`` on failure.  Raise :exc:"
 "`TypeError` if *iterable* is not actually iterable."
 msgstr ""
+"*iterable* が返すオブジェクトを含む新しい :class:`frozenset` を返します。\n"
+"*iterable* が ``NULL`` のときは、空の frozenset を返します。\n"
+"成功時には新しい set を、失敗時には ``NULL`` を返します。\n"
+"*iterable* がイテレート可能でない場合は、 :exc:`TypeError` を送出します。"
 
 #: ../../c-api/set.rst:104
 msgid ""
 "The following functions and macros are available for instances of :class:"
 "`set` or :class:`frozenset` or instances of their subtypes."
 msgstr ""
+"以降の関数やマクロは、 :class:`set` と :class:`frozenset` とそのサブタイプの"
+"インスタンスに対して利用できます。"
 
 #: ../../c-api/set.rst:112
 msgid ""
@@ -131,10 +153,14 @@ msgid ""
 "to ``len(anyset)``.  Raises a :exc:`PyExc_SystemError` if *anyset* is not a :"
 "class:`set`, :class:`frozenset`, or an instance of a subtype."
 msgstr ""
+":class:`set` や :class:`frozenset` のオブジェクトの長さを返します。 "
+"``len(anyset)`` と同じです。 *anyset* が :class:`set` 、 :class:`frozenset` "
+"およびそのサブタイプのオブジェクトでない場合は、 :exc:`PyExc_SystemError` を"
+"送出します。"
 
 #: ../../c-api/set.rst:119
 msgid "Macro form of :c:func:`PySet_Size` without error checking."
-msgstr ""
+msgstr "エラーチェックを行わない、 :c:func:`PySet_Size` のマクロ形式。"
 
 #: ../../c-api/set.rst:124
 msgid ""
@@ -145,6 +171,13 @@ msgid ""
 "`PyExc_SystemError` if *anyset* is not a :class:`set`, :class:`frozenset`, "
 "or an instance of a subtype."
 msgstr ""
+"見つかったら ``1`` を、見つからなかったら ``0`` を、エラーが発生した場合は "
+"``-1`` を返します。\n"
+"Python の :meth:`__contains__` メソッドと違って、この関数は非ハッシュ set を"
+"一時的な frozenset に自動で変換しません。\n"
+"*key* がハッシュ可能で無い場合、 :exc:`TypeError` を送出します。\n"
+"*anyset* が :class:`set`, :class:`frozenset` 及びそのサブタイプのオブジェクト"
+"で無い場合は :exc:`PyExc_SystemError` を送出します。"
 
 #: ../../c-api/set.rst:133
 msgid ""
@@ -162,6 +195,8 @@ msgid ""
 "The following functions are available for instances of :class:`set` or its "
 "subtypes but not for instances of :class:`frozenset` or its subtypes."
 msgstr ""
+"以降の関数は、 :class:`set` とそのサブタイプに対して利用可能です。 :class:"
+"`frozenset` とそのサブタイプには利用できません。"
 
 #: ../../c-api/set.rst:148
 msgid ""
@@ -173,6 +208,15 @@ msgid ""
 "`PyExc_SystemError` if *set* is not an instance of :class:`set` or its "
 "subtype."
 msgstr ""
+"*key* が見つかって、値を削除したら ``1`` を返します。\n"
+"見つからなかったら (何もせずに) ``0`` を返します。\n"
+"エラーが発生した場合は ``-1`` を返します。\n"
+"*key* が無くても :exc:`KeyError` を送出しません。\n"
+"*key* がハッシュ可能でない場合は :exc:`TypeError` を送出します。\n"
+"Python の :meth:`~set.discard` メソッドと違って、この関数は非ハッシュ set を"
+"一時的な frozenset に変換しません。\n"
+"*set* が :class:`set` かそのサブタイプのインスタンスでないときは、 :exc:"
+"`PyExc_SystemError` を送出します。"
 
 #: ../../c-api/set.rst:158
 msgid ""
@@ -181,7 +225,13 @@ msgid ""
 "if the set is empty. Raise a :exc:`SystemError` if *set* is not an instance "
 "of :class:`set` or its subtype."
 msgstr ""
+"*set* の中の要素のどれかに対する新しい参照を返し、そのオブジェクトを *set* か"
+"ら削除します。\n"
+"失敗したら ``NULL`` を返します。\n"
+"set が空の場合には :exc:`KeyError` を送出します。\n"
+"*set* が :class:`set` とそのサブタイプのインスタンスでない場合は、 :exc:"
+"`SystemError` を送出します。"
 
 #: ../../c-api/set.rst:166
 msgid "Empty an existing set of all elements."
-msgstr ""
+msgstr "set を空にします。"

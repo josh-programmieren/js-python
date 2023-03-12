@@ -1,35 +1,40 @@
-# Copyright (C) 2001-2022, Python Software Foundation
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Matt Wang <mattwang44@gmail.com>, 2022
+# tomo, 2021
+# souma987, 2023
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-13 00:17+0000\n"
-"PO-Revision-Date: 2022-02-11 12:04+0800\n"
-"Last-Translator: Matt Wang <mattwang44@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-03-03 14:14+0000\n"
+"PO-Revision-Date: 2021-06-28 01:06+0000\n"
+"Last-Translator: souma987, 2023\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.0.1\n"
 
 #: ../../library/getpass.rst:2
 msgid ":mod:`getpass` --- Portable password input"
-msgstr ":mod:`getpass` --- 可攜式密碼輸入工具"
+msgstr ":mod:`getpass` --- 可搬性のあるパスワード入力機構"
 
 #: ../../library/getpass.rst:11
 msgid "**Source code:** :source:`Lib/getpass.py`"
-msgstr "**原始碼：**\\ :source:`Lib/getpass.py`"
+msgstr "**ソースコード:** :source:`Lib/getpass.py`"
 
 #: ../../includes/wasm-notavail.rst:3
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
 msgstr ""
+":ref:`利用可能性<availability>`: Emscripten でなく、WASI でもないこと。"
 
 #: ../../includes/wasm-notavail.rst:5
 msgid ""
@@ -37,10 +42,13 @@ msgid ""
 "``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
 "more information."
 msgstr ""
+"このモジュールは WebAssembly プラットフォーム ``wasm32-emscripten`` と "
+"``wasm32-wasi`` では動作しないか、利用不可です。詳しくは、:ref:`wasm-"
+"availability` を見てください。"
 
 #: ../../library/getpass.rst:17
 msgid "The :mod:`getpass` module provides two functions:"
-msgstr ":mod:`getpass` 模組 (module) 提供了兩個函式："
+msgstr ":mod:`getpass` モジュールは二つの関数を提供します:"
 
 #: ../../library/getpass.rst:21
 msgid ""
@@ -51,11 +59,12 @@ msgid ""
 "dev/tty`) or if that is unavailable to ``sys.stderr`` (this argument is "
 "ignored on Windows)."
 msgstr ""
-"提示使用者輸入一個密碼且不會有回音 (echo)。使用者會看到字串 *prompt* 作為提"
-"示，其預設值為 ``'Password: '``。在 Unix 上，如有必要的話會使用替換錯誤處理函"
-"式 (replace error handler) 寫入到類檔案物件 (file-like object) *stream*\\ "
-"中。\\ *stream* 預設為主控終端機 (controlling terminal) (\\ :file:`/dev/"
-"tty`\\ )，如果不可用則為 ``sys.stderr`` (此引數在 Windows 上會被忽略)。"
+"エコーなしでユーザーにパスワードを入力させるプロンプト。ユーザーは *prompt* "
+"の文字列をプロンプトに使え、デフォルトは ``'Password: '`` です。 Unixではプロ"
+"ンプトはファイルに似たオブジェクト *stream* へ、必要なら置き換えられたエラー"
+"ハンドラを使って出力されます。 *stream* のデフォルトは、制御端末(:file:`/dev/"
+"tty`)か、それが利用できない場合は ``sys.stderr`` です (この引数は Windowsでは"
+"無視されます)。"
 
 #: ../../library/getpass.rst:28
 msgid ""
@@ -63,25 +72,27 @@ msgid ""
 "message to *stream* and reading from ``sys.stdin`` and issuing a :exc:"
 "`GetPassWarning`."
 msgstr ""
-"如果無回音輸入 (echo-free input) 無法使用則 getpass() 將回退為印出一條警告訊"
-"息到 *stream*\\ ，並從 ``sys.stdin`` 讀取且同時發出 :exc:"
-"`GetPassWarning`\\ 。"
+"もしエコーなしで入力が利用できない場合は、 ``getpass()`` は *stream* に警告"
+"メッセージを出力し、 ``sys.stdin`` から読み込み、 :exc:`GetPassWarning` 警告"
+"を発生させます。"
 
 #: ../../library/getpass.rst:33
 msgid ""
 "If you call getpass from within IDLE, the input may be done in the terminal "
 "you launched IDLE from rather than the idle window itself."
 msgstr ""
-"如果你從 IDLE 內部呼叫 getpass，輸入可能會在你啟動 IDLE 的終端機中完成，而非"
-"在 IDLE 視窗中。"
+"IDLE から getpass を呼び出した場合、入力はIDLEのウィンドウではなく、IDLE を起"
+"動したターミナルから行われます。"
 
 #: ../../library/getpass.rst:38
 msgid "A :exc:`UserWarning` subclass issued when password input may be echoed."
-msgstr "當密碼輸入可能被回音時會發出的 :exc:`UserWarning` 子類別。"
+msgstr ""
+":exc:`UserWarning` のサブクラスで、入力がエコーされてしまった場合に発生しま"
+"す。"
 
 #: ../../library/getpass.rst:43
 msgid "Return the \"login name\" of the user."
-msgstr "回傳使用者的\"登入名稱\"。"
+msgstr "ユーザーの \"ログイン名\"を返します。"
 
 #: ../../library/getpass.rst:45
 msgid ""
@@ -91,12 +102,12 @@ msgid ""
 "the login name from the password database is returned on systems which "
 "support the :mod:`pwd` module, otherwise, an exception is raised."
 msgstr ""
-"此函式會按順序檢查環境變數 :envvar:`LOGNAME`\\ 、\\ :envvar:`USER`\\ 、\\ :"
-"envvar:`LNAME` 和 :envvar:`USERNAME`，並回傳其中第一個被設定成非空字串的值。"
-"如果均未設定，則在支援 :mod:`pwd` 模組的系統上將會回傳來自密碼資料庫的登入名"
-"稱，否則將引發一個例外。"
+"この関数は環境変数 :envvar:`LOGNAME` :envvar:`USER` :envvar:`LNAME` :envvar:"
+"`USERNAME` の順序でチェックして、最初の空ではない文字列が設定された値を返しま"
+"す。もし、なにも設定されていない場合は :mod:`pwd` モジュールが提供するシステ"
+"ム上のパスワードデータベースから返します。それ以外は、例外が上がります。"
 
 #: ../../library/getpass.rst:52
 msgid ""
 "In general, this function should be preferred over :func:`os.getlogin()`."
-msgstr "大部分情況下，此函式應該要比 :func:`os.getlogin()` 優先使用。"
+msgstr "一般的に、この関数は :func:`os.getlogin()` よりも優先されるべきです。"

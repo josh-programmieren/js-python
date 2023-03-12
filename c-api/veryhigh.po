@@ -1,26 +1,32 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
+# tomo, 2021
+# Osamu NAKAMURA, 2021
+# mollinaca, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-15 20:43+0000\n"
-"PO-Revision-Date: 2018-05-23 14:08+0000\n"
-"Last-Translator: Adrian Liaw <adrianliaw2000@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 00:50+0000\n"
+"Last-Translator: mollinaca, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../c-api/veryhigh.rst:8
 msgid "The Very High Level Layer"
-msgstr ""
+msgstr "超高水準レイヤ"
 
 #: ../../c-api/veryhigh.rst:10
 msgid ""
@@ -28,6 +34,8 @@ msgid ""
 "in a file or a buffer, but they will not let you interact in a more detailed "
 "way with the interpreter."
 msgstr ""
+"この章の関数を使うとファイルまたはバッファにある Python ソースコードを実行で"
+"きますが、より詳細なやり取りをインタプリタとすることはできないでしょう。"
 
 #: ../../c-api/veryhigh.rst:14
 msgid ""
@@ -36,6 +44,10 @@ msgid ""
 "`Py_file_input`, and :const:`Py_single_input`.  These are described "
 "following the functions which accept them as parameters."
 msgstr ""
+"これらの関数のいくつかは引数として文法の開始記号を受け取ります。使用できる開"
+"始記号は :const:`Py_eval_input` と :const:`Py_file_input` 、 :const:"
+"`Py_single_input` です。開始記号の説明はこれらを引数として取る関数の後にあり"
+"ます。"
 
 #: ../../c-api/veryhigh.rst:19
 msgid ""
@@ -61,6 +73,14 @@ msgid ""
 "exception), ``1`` if the interpreter exits due to an exception, or ``2`` if "
 "the parameter list does not represent a valid Python command line."
 msgstr ""
+"標準インタプリタのためのメインプログラム。Pythonを組み込むプログラムのために"
+"これを利用できるようにしています。 *argc* と *argv* 引数をCプログラムの :c:"
+"func:`main` 関数 (ユーザのロケールに従って wchar_t に変換されます) へ渡される"
+"ものとまったく同じに作成すべきです。引数リストが変更される可能性があるという"
+"点に注意することは重要です。 (しかし、引数リストが指している文字列の内容は変"
+"更されません)。戻り値はインタプリタが(例外などではなく)普通に終了した時は "
+"``0`` に、例外で終了したときには ``1`` に、引数リストが正しい Python コマンド"
+"ラインが渡されなかったときは ``2`` になります。"
 
 #: ../../c-api/veryhigh.rst:40
 msgid ""
@@ -68,6 +88,9 @@ msgid ""
 "function will not return ``1``, but exit the process, as long as "
 "``Py_InspectFlag`` is not set."
 msgstr ""
+"``Py_InspectFlag`` が設定されていない場合、未処理の :exc:`SystemExit` 例外が"
+"発生すると、この関数は ``1`` を返すのではなくプロセスを exit することに気をつ"
+"けてください。"
 
 #: ../../c-api/veryhigh.rst:47
 msgid "Similar to :c:func:`Py_Main` but *argv* is an array of bytes strings."
@@ -78,18 +101,24 @@ msgid ""
 "This is a simplified interface to :c:func:`PyRun_AnyFileExFlags` below, "
 "leaving *closeit* set to ``0`` and *flags* set to ``NULL``."
 msgstr ""
+"下記の :c:func:`PyRun_AnyFileExFlags` の *closeit* を ``0`` に、 *flags* を "
+"``NULL`` にして単純化したインターフェースです。"
 
 #: ../../c-api/veryhigh.rst:60
 msgid ""
 "This is a simplified interface to :c:func:`PyRun_AnyFileExFlags` below, "
 "leaving the *closeit* argument set to ``0``."
 msgstr ""
+"下記の :c:func:`PyRun_AnyFileExFlags` の *closeit* を ``0`` にして単純化した"
+"インターフェースです。"
 
 #: ../../c-api/veryhigh.rst:66
 msgid ""
 "This is a simplified interface to :c:func:`PyRun_AnyFileExFlags` below, "
 "leaving the *flags* argument set to ``NULL``."
 msgstr ""
+"下記の :c:func:`PyRun_AnyFileExFlags` の *flags* を ``NULL`` にして単純化した"
+"インターフェースです。"
 
 #: ../../c-api/veryhigh.rst:72
 msgid ""
@@ -116,6 +145,11 @@ msgid ""
 "was raised.  If there was an error, there is no way to get the exception "
 "information. For the meaning of *flags*, see below."
 msgstr ""
+":mod:`__main__` モジュールの中で *flags* に従って *command* に含まれる "
+"Python ソースコードを実行します。 :mod:`__main__` がまだ存在しない場合は作成"
+"されます。正常終了の場合は ``0`` を返し、また例外が発生した場合は ``-1`` を返"
+"します。エラーがあっても、例外情報を得る方法はありません。 *flags* の意味につ"
+"いては、後述します。"
 
 #: ../../c-api/veryhigh.rst:96
 msgid ""
@@ -123,18 +157,25 @@ msgid ""
 "function will not return ``-1``, but exit the process, as long as "
 "``Py_InspectFlag`` is not set."
 msgstr ""
+"``Py_InspectFlag`` が設定されていない場合、未処理の :exc:`SystemExit` 例外が"
+"発生すると、この関数は ``1`` を返すのではなくプロセスを exit することに気をつ"
+"けてください。"
 
 #: ../../c-api/veryhigh.rst:103
 msgid ""
 "This is a simplified interface to :c:func:`PyRun_SimpleFileExFlags` below, "
 "leaving *closeit* set to ``0`` and *flags* set to ``NULL``."
 msgstr ""
+"下記の :c:func:`PyRun_SimpleFileExFlags` の *closeit* を ``0`` に、 *flags* "
+"を ``NULL`` にして単純化したインターフェースです。"
 
 #: ../../c-api/veryhigh.rst:109
 msgid ""
 "This is a simplified interface to :c:func:`PyRun_SimpleFileExFlags` below, "
 "leaving *flags* set to ``NULL``."
 msgstr ""
+"下記の :c:func:`PyRun_SimpleFileExFlags` の *flags* を ``NULL`` にして単純化"
+"したインターフェースです。"
 
 #: ../../c-api/veryhigh.rst:115
 msgid ""
@@ -147,8 +188,8 @@ msgstr ""
 
 #: ../../c-api/veryhigh.rst:122
 msgid ""
-"On Windows, *fp* should be opened as binary mode (e.g. ``fopen(filename, \"rb"
-"\")``). Otherwise, Python may not handle script file with LF line ending "
+"On Windows, *fp* should be opened as binary mode (e.g. ``fopen(filename, "
+"\"rb\")``). Otherwise, Python may not handle script file with LF line ending "
 "correctly."
 msgstr ""
 
@@ -157,6 +198,8 @@ msgid ""
 "This is a simplified interface to :c:func:`PyRun_InteractiveOneFlags` below, "
 "leaving *flags* set to ``NULL``."
 msgstr ""
+"下記の :c:func:`PyRun_InteractiveOneFlags` の *flags* を ``NULL`` にして単純"
+"化したインターフェースです。"
 
 #: ../../c-api/veryhigh.rst:134
 msgid ""
@@ -174,12 +217,19 @@ msgid ""
 "`errcode.h` is not included by :file:`Python.h`, so must be included "
 "specifically if needed.)"
 msgstr ""
+"入力が正常に実行されたときは ``0`` を返します。例外が発生した場合は ``-1`` を"
+"返します。パースエラーの場合はPythonの一部として配布されている :file:"
+"`errcode.h` インクルードファイルにあるエラーコードを返します。 (:file:"
+"`Python.h` は :file:`errcode.h` をインクルードしません。従って、 必要な場合は"
+"その都度インクルードしなければならないことに注意してください。)"
 
 #: ../../c-api/veryhigh.rst:148
 msgid ""
 "This is a simplified interface to :c:func:`PyRun_InteractiveLoopFlags` "
 "below, leaving *flags* set to ``NULL``."
 msgstr ""
+"下記の :c:func:`PyRun_InteractiveLoopFlags` の *flags* を ``NULL`` にして単純"
+"化したインターフェースです。"
 
 #: ../../c-api/veryhigh.rst:154
 msgid ""
@@ -198,6 +248,13 @@ msgid ""
 "prompt with other event loops, as done in the :file:`Modules/_tkinter.c` in "
 "the Python source code."
 msgstr ""
+"``int func(void)`` というプロトタイプの関数へのポインタが設定できます。\n"
+"この関数は、 Python のインタプリタのプロンプトがアイドル状態になりターミナル"
+"からのユーザの入力を待つようになったときに呼び出されます。\n"
+"返り値は無視されます。\n"
+"このフックを上書きすることで、 Python のソースコードの中で :file:`Modules/"
+"_tkinter.c` がやっているように、インタプリタのプロンプトと他のイベントループ"
+"を統合できます。"
 
 #: ../../c-api/veryhigh.rst:173
 msgid ""
@@ -209,12 +266,23 @@ msgid ""
 "string.  For example, The :mod:`readline` module sets this hook to provide "
 "line-editing and tab-completion features."
 msgstr ""
+"``char *func(FILE *stdin, FILE *stdout, char *prompt)`` というプロトタイプの"
+"関数へのポインタが設定でき、デフォルトの関数を上書きすることでインタプリタの"
+"プロンプトへの入力を1行だけ読めます。\n"
+"この関数は、文字列 *prompt* が ``NULL`` でない場合は *prompt* を出力し、与え"
+"られた標準入力ファイルから入力を1行読み、結果の文字列を返すという動作が期待さ"
+"れています。\n"
+"例えば、 :mod:`readline` モジュールはこのフックを設定して、行編集機能やタブ補"
+"完機能を提供しています。"
 
 #: ../../c-api/veryhigh.rst:182
 msgid ""
 "The result must be a string allocated by :c:func:`PyMem_RawMalloc` or :c:"
 "func:`PyMem_RawRealloc`, or ``NULL`` if an error occurred."
 msgstr ""
+"返り値は :c:func:`PyMem_RawMalloc` または :c:func:`PyMem_RawRealloc` でメモリ"
+"確保した文字列、あるいはエラーが起きた場合には ``NULL`` でなければなりませ"
+"ん。"
 
 #: ../../c-api/veryhigh.rst:185
 msgid ""
@@ -222,12 +290,17 @@ msgid ""
 "`PyMem_RawRealloc`, instead of being allocated by :c:func:`PyMem_Malloc` or :"
 "c:func:`PyMem_Realloc`."
 msgstr ""
+"返り値は、 :c:func:`PyMem_Malloc` や :c:func:`PyMem_Realloc` ではなく、 :c:"
+"func:`PyMem_RawMalloc` または :c:func:`PyMem_RawRealloc` でメモリ確保したもの"
+"でなければなりません。"
 
 #: ../../c-api/veryhigh.rst:192
 msgid ""
 "This is a simplified interface to :c:func:`PyRun_StringFlags` below, leaving "
 "*flags* set to ``NULL``."
 msgstr ""
+"下記の :c:func:`PyRun_StringFlags` の *flags* を ``NULL`` にして単純化したイ"
+"ンターフェースです。"
 
 #: ../../c-api/veryhigh.rst:198
 msgid ""
@@ -237,30 +310,45 @@ msgid ""
 "implements the mapping protocol.  The parameter *start* specifies the start "
 "token that should be used to parse the source code."
 msgstr ""
+"オブジェクトの *globals* と *locals* で指定されるコンテキストで、コンパイラフ"
+"ラグに *flags* を設定した状態で、 *str* にある Python ソースコードを実行しま"
+"す。\n"
+"*globals* は辞書でなければなりません; *locals* はマッピングプロトコルを実装し"
+"たオブジェクトなら何でも構いません。\n"
+"引数 *start* はソースコードをパースするために使われるべき開始トークンを指定し"
+"ます。"
 
 #: ../../c-api/veryhigh.rst:204
 msgid ""
 "Returns the result of executing the code as a Python object, or ``NULL`` if "
 "an exception was raised."
 msgstr ""
+"コードを実行した結果をPythonオブジェクトとして返します。または、例外が発生し"
+"たならば ``NULL`` を返します。"
 
 #: ../../c-api/veryhigh.rst:210
 msgid ""
 "This is a simplified interface to :c:func:`PyRun_FileExFlags` below, leaving "
 "*closeit* set to ``0`` and *flags* set to ``NULL``."
 msgstr ""
+"下記の :c:func:`PyRun_FileExFlags` の *closeit* を ``0`` にし、 *flags* を "
+"``NULL`` にして単純化したインターフェースです。"
 
 #: ../../c-api/veryhigh.rst:216
 msgid ""
 "This is a simplified interface to :c:func:`PyRun_FileExFlags` below, leaving "
 "*flags* set to ``NULL``."
 msgstr ""
+"下記の :c:func:`PyRun_FileExFlags` の *flags* を ``NULL`` にして単純化したイ"
+"ンターフェースです。"
 
 #: ../../c-api/veryhigh.rst:222
 msgid ""
 "This is a simplified interface to :c:func:`PyRun_FileExFlags` below, leaving "
 "*closeit* set to ``0``."
 msgstr ""
+"下記の :c:func:`PyRun_FileExFlags` の *closeit* を ``0`` にして単純化したイン"
+"ターフェースです。"
 
 #: ../../c-api/veryhigh.rst:228
 msgid ""
@@ -276,12 +364,16 @@ msgid ""
 "This is a simplified interface to :c:func:`Py_CompileStringFlags` below, "
 "leaving *flags* set to ``NULL``."
 msgstr ""
+"下記の :c:func:`Py_CompileStringFlags` の *flags* を ``NULL`` にして単純化し"
+"たインターフェースです。"
 
 #: ../../c-api/veryhigh.rst:243
 msgid ""
 "This is a simplified interface to :c:func:`Py_CompileStringExFlags` below, "
 "with *optimize* set to ``-1``."
 msgstr ""
+"下記の :c:func:`Py_CompileStringExFlags` の *optimize* を ``-1`` にして単純化"
+"したインターフェースです。"
 
 #: ../../c-api/veryhigh.rst:249
 msgid ""
@@ -293,6 +385,14 @@ msgid ""
 "may appear in tracebacks or :exc:`SyntaxError` exception messages.  This "
 "returns ``NULL`` if the code cannot be parsed or compiled."
 msgstr ""
+"*str* 内の Python ソースコードをパースしてコンパイルし、作られたコードオブ"
+"ジェクトを返します。開始トークンは *start* によって与えられます。これはコンパ"
+"イル可能なコードを制限するために使うことができ、 :const:`Py_eval_input` 、 :"
+"const:`Py_file_input` もしくは :const:`Py_single_input` であるべきです。 "
+"*filename* で指定されるファイル名はコードオブジェクトを構築するために使われ、"
+"トレースバックあるいは :exc:`SyntaxError` 例外メッセージに出てくる可能性があ"
+"ります。コードがパースできなかったりコンパイルできなかったりした場合に、これ"
+"は ``NULL`` を返します。"
 
 #: ../../c-api/veryhigh.rst:257
 msgid ""
@@ -302,6 +402,10 @@ msgid ""
 "``__debug__`` is true), ``1`` (asserts are removed, ``__debug__`` is false) "
 "or ``2`` (docstrings are removed too)."
 msgstr ""
+"整数 *optimize* は、コンパイラの最適化レベルを指定します;  ``-1`` は、インタ"
+"プリタの :option:`-O` オプションで与えられるのと同じ最適化レベルを選びます。"
+"明示的なレベルは、 ``0`` (最適化なし、 ``__debug__`` は真)、 ``1`` (assert は"
+"取り除かれ、 ``__debug__`` は偽)、 ``2`` (docstring も取り除かれる) です。"
 
 #: ../../c-api/veryhigh.rst:268
 msgid ""
@@ -315,6 +419,9 @@ msgid ""
 "code object, and global and local variables.  The other arguments are set to "
 "``NULL``."
 msgstr ""
+":c:func:`PyEval_EvalCodeEx` のシンプルなインターフェースで、コードオブジェク"
+"トと、グローバル変数とローカル変数だけを受け取ります。\n"
+"他の引数には ``NULL`` が渡されます。"
 
 #: ../../c-api/veryhigh.rst:282
 msgid ""
@@ -324,12 +431,18 @@ msgid ""
 "defaults, a dictionary of default values for :ref:`keyword-only <keyword-"
 "only_parameter>` arguments and a closure tuple of cells."
 msgstr ""
+"与えられた特定の環境で、コンパイル済みのコードオブジェクトを評価します。この"
+"環境はグローバル変数の辞書と、ローカル変数のマッピングオブジェクト、引数の配"
+"列、キーワードとデフォルト値、:ref:`キーワード専用 <keyword-only_parameter>` "
+"引数のデフォルト値の辞書と、セルのクロージャタプルで構成されます。"
 
 #: ../../c-api/veryhigh.rst:291
 msgid ""
 "Evaluate an execution frame.  This is a simplified interface to :c:func:"
 "`PyEval_EvalFrameEx`, for backward compatibility."
 msgstr ""
+"実行フレームを評価します。これは :c:func:`PyEval_EvalFrameEx` に対するシンプ"
+"ルなインターフェースで、後方互換性のためのものです。"
 
 #: ../../c-api/veryhigh.rst:297
 msgid ""
@@ -346,18 +459,24 @@ msgid ""
 "This function now includes a debug assertion to help ensure that it does not "
 "silently discard an active exception."
 msgstr ""
+"アクティブな例外を黙って捨てないことを保証するのに便利なように、この関数はデ"
+"バッグアサーションを含むようになりました。"
 
 #: ../../c-api/veryhigh.rst:311
 msgid ""
 "This function changes the flags of the current evaluation frame, and returns "
 "true on success, false on failure."
 msgstr ""
+"現在の評価フレームのフラグを変更します。成功したら true を、失敗したら false "
+"を返します。"
 
 #: ../../c-api/veryhigh.rst:319
 msgid ""
 "The start symbol from the Python grammar for isolated expressions; for use "
 "with :c:func:`Py_CompileString`."
 msgstr ""
+"単独の式に対するPython文法の開始記号で、 :c:func:`Py_CompileString` と一緒に"
+"使います。"
 
 #: ../../c-api/veryhigh.rst:327
 msgid ""
@@ -365,6 +484,9 @@ msgid ""
 "from a file or other source; for use with :c:func:`Py_CompileString`.  This "
 "is the symbol to use when compiling arbitrarily long Python source code."
 msgstr ""
+"ファイルあるいは他のソースから読み込まれた文の並びに対するPython文法の開始記"
+"号で、 :c:func:`Py_CompileString` と一緒に使います。これは任意の長さのPython"
+"ソースコードをコンパイルするときに使う記号です。"
 
 #: ../../c-api/veryhigh.rst:336
 msgid ""
@@ -372,6 +494,8 @@ msgid ""
 "with :c:func:`Py_CompileString`. This is the symbol used for the interactive "
 "interpreter loop."
 msgstr ""
+"単一の文に対するPython文法の開始記号で、 :c:func:`Py_CompileString` と一緒に"
+"使います。これは対話式のインタプリタループのための記号です。"
 
 #: ../../c-api/veryhigh.rst:343
 msgid ""
@@ -380,6 +504,10 @@ msgid ""
 "is being executed, it is passed as ``PyCompilerFlags *flags``.  In this "
 "case, ``from __future__ import`` can modify *flags*."
 msgstr ""
+"コンパイラフラグを収めておくための構造体です。コードをコンパイルするだけの場"
+"合、この構造体が ``int flags`` として渡されます。コードを実行する場合には "
+"``PyCompilerFlags *flags`` として渡されます。この場合、``from __future__ "
+"import`` は *flags* の内容を変更できます。"
 
 #: ../../c-api/veryhigh.rst:348
 msgid ""
@@ -406,10 +534,12 @@ msgstr ""
 
 #: ../../c-api/veryhigh.rst:364
 msgid "Added *cf_feature_version* field."
-msgstr "新增 *cf_feature_version* 欄位。"
+msgstr ""
 
 #: ../../c-api/veryhigh.rst:370
 msgid ""
 "This bit can be set in *flags* to cause division operator ``/`` to be "
 "interpreted as \"true division\" according to :pep:`238`."
 msgstr ""
+"このビットを *flags* にセットすると、除算演算子 ``/`` は :pep:`238` による"
+"「真の除算 (true division)」として扱われます。"

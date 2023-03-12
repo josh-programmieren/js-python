@@ -1,27 +1,35 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# tomo, 2021
+# Tetsuo Koyama <tkoyama010@gmail.com>, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 08:13+0000\n"
-"PO-Revision-Date: 2018-07-15 18:56+0800\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-29 13:04+0000\n"
+"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../whatsnew/3.6.rst:3
 msgid "What's New In Python 3.6"
-msgstr "Python 3.6 有什麼新功能"
+msgstr "What's New In Python 3.6"
 
 #: ../../whatsnew/3.6.rst:0
 msgid "Editors"
-msgstr "編輯者"
+msgstr "エディタ"
 
 #: ../../whatsnew/3.6.rst:5
 msgid "Elvis Pranskevichus <elvis@magic.io>, Yury Selivanov <yury@magic.io>"
@@ -33,52 +41,58 @@ msgid ""
 "Python 3.6 was released on December 23, 2016.  See the `changelog <https://"
 "docs.python.org/3.6/whatsnew/changelog.html>`_ for a full list of changes."
 msgstr ""
+"この記事では 3.5 と比較した Python 3.6 の新機能を解説します。\n"
+"Python 3.6 は2016年12月23日にリリースされました。\n"
+"全詳細については `変更履歴 <https://docs.python.org/3.6/whatsnew/changelog."
+"html>`_ をご覧ください。"
 
 #: ../../whatsnew/3.6.rst:54
 msgid ":pep:`494` - Python 3.6 Release Schedule"
-msgstr ""
+msgstr ":pep:`494` - Python 3.6 リリーススケジュール"
 
 #: ../../whatsnew/3.6.rst:58
 msgid "Summary -- Release highlights"
-msgstr ""
+msgstr "概要 -- リリースハイライト"
 
 #: ../../whatsnew/3.6.rst:60
 msgid "New syntax features:"
-msgstr ""
+msgstr "新たな文法機能:"
 
 #: ../../whatsnew/3.6.rst:62
 msgid ":ref:`PEP 498 <whatsnew36-pep498>`, formatted string literals."
-msgstr ""
+msgstr ":ref:`PEP 498 <whatsnew36-pep498>`、フォーマット済み文字列リテラル。"
 
 #: ../../whatsnew/3.6.rst:64
 msgid ":ref:`PEP 515 <whatsnew36-pep515>`, underscores in numeric literals."
-msgstr ""
+msgstr ":ref:`PEP 515 <whatsnew36-pep515>`、数値リテラル内のアンダースコア。"
 
 #: ../../whatsnew/3.6.rst:66
 msgid ":ref:`PEP 526 <whatsnew36-pep526>`, syntax for variable annotations."
-msgstr ""
+msgstr ":ref:`PEP 526 <whatsnew36-pep526>`、変数アノテーションの文法。"
 
 #: ../../whatsnew/3.6.rst:68
 msgid ":ref:`PEP 525 <whatsnew36-pep525>`, asynchronous generators."
-msgstr ""
+msgstr ":ref:`PEP 525 <whatsnew36-pep525>`、非同期ジェネレータ。"
 
 #: ../../whatsnew/3.6.rst:70
 msgid ":ref:`PEP 530 <whatsnew36-pep530>`: asynchronous comprehensions."
-msgstr ""
+msgstr ":ref:`PEP 530 <whatsnew36-pep530>`: 非同期内包表記"
 
 #: ../../whatsnew/3.6.rst:73
 msgid "New library modules:"
-msgstr ""
+msgstr "新たなライブラリモジュール:"
 
 #: ../../whatsnew/3.6.rst:75
 msgid ""
 ":mod:`secrets`: :ref:`PEP 506 -- Adding A Secrets Module To The Standard "
 "Library <whatsnew36-pep506>`."
 msgstr ""
+":mod:`secrets`: :ref:`PEP 506 -- 標準ライブラリーに Secrets モジュールを追加 "
+"<whatsnew36-pep506>`."
 
 #: ../../whatsnew/3.6.rst:78
 msgid "CPython implementation improvements:"
-msgstr ""
+msgstr "CPython の実装の改善:"
 
 #: ../../whatsnew/3.6.rst:80
 msgid ""
@@ -89,40 +103,55 @@ msgid ""
 "This resulted in dictionaries using 20% to 25% less memory when compared to "
 "Python 3.5."
 msgstr ""
+":ref:`dict <typesmapping>` 型は、 `Raymond Hettinger <https://mail.python."
+"org/pipermail/python-dev/2012-December/123028.html>`_ の提案に基づき、 `PyPy "
+"dict implementation`_ と同様の :ref:`よりコンパクトな表現 <whatsnew36-"
+"compactdict>` を使うように再実装されました。\n"
+"その結果、 Python 3.5 と比較して辞書が使うメモリ 20% から 25% 減少しました。"
 
 #: ../../whatsnew/3.6.rst:87
 msgid ""
 "Customization of class creation has been simplified with the :ref:`new "
 "protocol <whatsnew36-pep487>`."
 msgstr ""
+":ref:`新しいプロトコル <whatsnew36-pep487>` により、クラス生成のカスタマイズ"
+"がより簡単になりました。"
 
 #: ../../whatsnew/3.6.rst:90
 msgid ""
 "The class attribute definition order is :ref:`now preserved  <whatsnew36-"
 "pep520>`."
 msgstr ""
+"クラス属性の定義の順番が :ref:`保持されるようになりました  <whatsnew36-"
+"pep520>`。"
 
 #: ../../whatsnew/3.6.rst:93
 msgid ""
 "The order of elements in ``**kwargs`` now :ref:`corresponds to the order "
 "<whatsnew36-pep468>` in which keyword arguments were passed to the function."
 msgstr ""
+"``**kwargs`` の要素の順序が、キーワード引数が関数に渡されたときの :ref:`順序"
+"に一致した <whatsnew36-pep468>` ものになりました。"
 
 #: ../../whatsnew/3.6.rst:97
 msgid ""
 "DTrace and SystemTap :ref:`probing support <whatsnew36-tracing>` has been "
 "added."
 msgstr ""
+"DTrace と SystemTap の :ref:`プローブのサポート <whatsnew36-tracing>` が追加"
+"されました。"
 
 #: ../../whatsnew/3.6.rst:100
 msgid ""
 "The new :ref:`PYTHONMALLOC <whatsnew36-pythonmalloc>` environment variable "
 "can now be used to debug the interpreter memory allocation and access errors."
 msgstr ""
+"新しい :ref:`PYTHONMALLOC <whatsnew36-pythonmalloc>`  環境変数が、インタープ"
+"リタのメモリ確保とメモリアクセスエラーのデバッグに使えるようになりました。"
 
 #: ../../whatsnew/3.6.rst:105
 msgid "Significant improvements in the standard library:"
-msgstr ""
+msgstr "標準ライブラリーの顕著な改善"
 
 #: ../../whatsnew/3.6.rst:107
 msgid ""
@@ -145,12 +174,16 @@ msgid ""
 "The :mod:`datetime` module has gained support for :ref:`Local Time "
 "Disambiguation <whatsnew36-pep495>`."
 msgstr ""
+":mod:`datetime` モジュールで :ref:`地域時間の曖昧さ回避 <whatsnew36-pep495>` "
+"がサポートされました。"
 
 #: ../../whatsnew/3.6.rst:120
 msgid ""
 "The :mod:`typing` module received a number of :ref:`improvements <whatsnew36-"
 "typing>`."
 msgstr ""
+":mod:`typing` モジュールに数多くの :ref:`改善 <whatsnew36-typing>` がなされま"
+"した。"
 
 #: ../../whatsnew/3.6.rst:123
 msgid ""
@@ -159,10 +192,15 @@ msgid ""
 "better diagnostics for memory allocation errors. See the :ref:`PYTHONMALLOC "
 "section <whatsnew36-pythonmalloc>` for more information."
 msgstr ""
+":mod:`tracemalloc` モジュールが大幅に書き直され、改善されたメモリ割り当てエ"
+"ラーの診断プログラムの提供だけでなく、 :exc:`ResourceWarning` の出力メッセー"
+"ジも改善されています。\n"
+"より詳しいことは :ref:`PYTHONMALLOC 節 <whatsnew36-pythonmalloc>` を参照して"
+"ください。"
 
 #: ../../whatsnew/3.6.rst:130
 msgid "Security improvements:"
-msgstr ""
+msgstr "セキュリティの改善:"
 
 #: ../../whatsnew/3.6.rst:132
 msgid ""
@@ -170,6 +208,9 @@ msgid ""
 "cryptographically strong pseudo-random numbers suitable for managing secrets "
 "such as account authentication, tokens, and similar."
 msgstr ""
+"The new :mod:`secrets` module has been added to simplify the generation of "
+"cryptographically strong pseudo-random numbers suitable for managing secrets "
+"such as account authentication, tokens, and similar."
 
 #: ../../whatsnew/3.6.rst:136 ../../whatsnew/3.6.rst:1283
 msgid ""
@@ -181,22 +222,26 @@ msgstr ""
 #: ../../whatsnew/3.6.rst:140
 msgid "The :mod:`hashlib` and :mod:`ssl` modules now support OpenSSL 1.1.0."
 msgstr ""
+":mod:`hashlib` および :mod:`ssl` モジュールは OpenSSL 1.1.0 をサポートしまし"
+"た。"
 
 #: ../../whatsnew/3.6.rst:142
 msgid ""
 "The default settings and feature set of the :mod:`ssl` module have been "
 "improved."
-msgstr ""
+msgstr ":mod:`ssl` モジュールのデフォルトの設定と機能群が改善されました。"
 
 #: ../../whatsnew/3.6.rst:145
 msgid ""
 "The :mod:`hashlib` module received support for the BLAKE2, SHA-3 and SHAKE "
 "hash algorithms and the :func:`~hashlib.scrypt` key derivation function."
 msgstr ""
+":mod:`hashlib` モジュールで BLAKE2, SHA-3, SHAKE ハッシュアルゴリズムと :"
+"func:`~hashlib.scrypt` キー導出関数がサポートされるようになりました。"
 
 #: ../../whatsnew/3.6.rst:149
 msgid "Windows improvements:"
-msgstr ""
+msgstr "Windows の改善:"
 
 #: ../../whatsnew/3.6.rst:151
 msgid ""
@@ -211,6 +256,11 @@ msgid ""
 "arguments or a config file).  Handling of shebang lines remains unchanged - "
 "\"python\" refers to Python 2 in that case."
 msgstr ""
+"``py.exe`` ランチャーを対話的に使うときに、 (コマンドライン引数や設定ファイル"
+"で) バージョンを指定しないと Python 3 よりも Python 2 を選択するということは"
+"なくなりました。\n"
+"シェバン行の扱いは以前のままで、 \"python\" とあった場合は Python 2 を指して"
+"います。"
 
 #: ../../whatsnew/3.6.rst:159
 msgid ""
@@ -235,17 +285,19 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:176
 msgid "New Features"
-msgstr ""
+msgstr "新しい機能"
 
 #: ../../whatsnew/3.6.rst:181
 msgid "PEP 498: Formatted string literals"
-msgstr ""
+msgstr "PEP 498: フォーマット済み文字列リテラル"
 
 #: ../../whatsnew/3.6.rst:183
 msgid ""
 ":pep:`498` introduces a new kind of string literals: *f-strings*, or :ref:"
 "`formatted string literals <f-strings>`."
 msgstr ""
+":pep:`498` は新たな種類の文字列リテラル、すなわち *f-strings*、 :ref:`フォー"
+"マット済み文字列リテラル <f-strings>` を導入しました。"
 
 #: ../../whatsnew/3.6.rst:186
 msgid ""
@@ -255,6 +307,10 @@ msgid ""
 "which are evaluated at run time, and then formatted using the :func:`format` "
 "protocol::"
 msgstr ""
+"フォーマット済み文字列リテラルはプレフィックスに ``'f'`` をとり :meth:`str."
+"format` による書式文字列に似ています。これらには中括弧で囲まれた置換フィール"
+"ドがあります。置換フィールドは実行時に評価される式で、 :func:`format` プロト"
+"コルによってフォーマットされます::"
 
 #: ../../whatsnew/3.6.rst:204
 msgid ":pep:`498` -- Literal String Interpolation."
@@ -262,7 +318,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:204
 msgid "PEP written and implemented by Eric V. Smith."
-msgstr "由 Eric V. Smith 撰寫 PEP 與實作。"
+msgstr ""
 
 #: ../../whatsnew/3.6.rst:206
 msgid ":ref:`Feature documentation <f-strings>`."
@@ -270,7 +326,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:212
 msgid "PEP 526: Syntax for variable annotations"
-msgstr ""
+msgstr "PEP 526: 変数アノテーションの文法"
 
 #: ../../whatsnew/3.6.rst:214
 msgid ""
@@ -278,6 +334,9 @@ msgid ""
 "parameters, a.k.a. type hints. This PEP adds syntax to Python for annotating "
 "the types of variables including class variables and instance variables::"
 msgstr ""
+":pep:`484` は関数の仮引数の型アノテーション、型ヒント、の標準を導入しました。"
+"この PEP は Python に、クラス変数およびインスタンス変数を含む変数の型アノテー"
+"ションの構文を追加しました::"
 
 #: ../../whatsnew/3.6.rst:225
 msgid ""
@@ -285,6 +344,9 @@ msgid ""
 "particular meaning to variable annotations and only stores them in the "
 "``__annotations__`` attribute of a class or module."
 msgstr ""
+"関数アノテーションと同様に、Python インタープリタは変数アノテーションに特定の"
+"意味を付加せず、クラスやモジュールの ``__annotations__`` 属性に保存するだけで"
+"す。"
 
 #: ../../whatsnew/3.6.rst:229
 msgid ""
@@ -293,10 +355,13 @@ msgid ""
 "metadata for third party tools and libraries via the abstract syntax tree "
 "and the ``__annotations__`` attribute."
 msgstr ""
+"静的型付け言語の変数定義とは対照的に、アノテーションシンタックスの目的は抽象"
+"構文木および ``__annotations__`` 属性を通じて、サードパーティツールやライブラ"
+"リーに型の構造化されたメタデータを指定する簡単な方法を提供することです。"
 
 #: ../../whatsnew/3.6.rst:238
 msgid ":pep:`526` -- Syntax for variable annotations."
-msgstr ""
+msgstr ":pep:`526` -- Syntax for variable annotations"
 
 #: ../../whatsnew/3.6.rst:237
 msgid ""
@@ -312,19 +377,23 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:248
 msgid "PEP 515: Underscores in Numeric Literals"
-msgstr ""
+msgstr "PEP 515: 数値リテラル内のアンダースコア"
 
 #: ../../whatsnew/3.6.rst:250
 msgid ""
 ":pep:`515` adds the ability to use underscores in numeric literals for "
 "improved readability.  For example::"
 msgstr ""
+":pep:`515` により、可読性向上のために数値リテラル内でアンダースコアを使えるよ"
+"うになりました。例えば::"
 
 #: ../../whatsnew/3.6.rst:258
 msgid ""
 "Single underscores are allowed between digits and after any base specifier.  "
 "Leading, trailing, or multiple underscores in a row are not allowed."
 msgstr ""
+"単一のアンダースコアは数字の間と基数指定子の後で許されます。先頭、末尾、ある"
+"いは複数のアンダースコアを列内で使用することはできません。"
 
 #: ../../whatsnew/3.6.rst:262
 msgid ""
@@ -341,11 +410,11 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:277
 msgid "PEP written by Georg Brandl and Serhiy Storchaka."
-msgstr "由 Georg Brandl 與 Serhiy Storchaka 撰寫 PEP。"
+msgstr ""
 
 #: ../../whatsnew/3.6.rst:283
 msgid "PEP 525: Asynchronous Generators"
-msgstr ""
+msgstr "PEP 525: 非同期ジェネレータ"
 
 #: ../../whatsnew/3.6.rst:285
 msgid ""
@@ -355,10 +424,14 @@ msgid ""
 "the same function body.  In Python 3.6 this restriction has been lifted, "
 "making it possible to define *asynchronous generators*::"
 msgstr ""
+":pep:`492` で Python 3.5 はネイティブなコルーチンならびに ``async`` / "
+"``await`` 構文をサポートしました。Python 3.5 実装における大きな制約は同一の関"
+"数実体内で ``await`` と ``yield`` を使えないことでした。Python 3.6 ではこの制"
+"約はなくなり、 *非同期ジェネレータ* を定義できるようになりました::"
 
 #: ../../whatsnew/3.6.rst:297
 msgid "The new syntax allows for faster and more concise code."
-msgstr ""
+msgstr "新たな構文のおかげでより速く、より簡潔にコードを書くことができます。"
 
 #: ../../whatsnew/3.6.rst:301
 msgid ":pep:`525` -- Asynchronous Generators"
@@ -366,23 +439,25 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:302 ../../whatsnew/3.6.rst:323
 msgid "PEP written and implemented by Yury Selivanov."
-msgstr "由 Yury Selivanov 撰寫 PEP 與實作。"
+msgstr "PEP written and implemented by Yury Selivanov."
 
 #: ../../whatsnew/3.6.rst:308
 msgid "PEP 530: Asynchronous Comprehensions"
-msgstr ""
+msgstr "PEP 530: 非同期内包表記"
 
 #: ../../whatsnew/3.6.rst:310
 msgid ""
 ":pep:`530` adds support for using ``async for`` in list, set, dict "
 "comprehensions and generator expressions::"
 msgstr ""
+":pep:`530` によりリスト、セット、辞書内包表記ならびにジェネレータ式内での "
+"``async for`` の使用がサポートされました::"
 
 #: ../../whatsnew/3.6.rst:315
 msgid ""
 "Additionally, ``await`` expressions are supported in all kinds of "
 "comprehensions::"
-msgstr ""
+msgstr "加えて、 ``await`` 式が全ての内包表記でサポートされました::"
 
 #: ../../whatsnew/3.6.rst:322
 msgid ":pep:`530` -- Asynchronous Comprehensions"
@@ -413,7 +488,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:356 ../../whatsnew/3.6.rst:394
 msgid "PEP written and implemented by Martin Teichmann."
-msgstr "由 Martin Teichmann 撰寫 PEP 與實作。"
+msgstr ""
 
 #: ../../whatsnew/3.6.rst:358
 msgid ":ref:`Feature documentation <class-customization>`"
@@ -421,7 +496,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:364
 msgid "PEP 487: Descriptor Protocol Enhancements"
-msgstr ""
+msgstr "PEP 487: 記述子プロトコルの改善"
 
 #: ../../whatsnew/3.6.rst:366
 msgid ""
@@ -440,7 +515,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:402
 msgid "PEP 519: Adding a file system path protocol"
-msgstr ""
+msgstr "PEP 519: ファイルシステムパスプロトコルの追加"
 
 #: ../../whatsnew/3.6.rst:404
 msgid ""
@@ -503,11 +578,11 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:462
 msgid "PEP written by Brett Cannon and Koos Zevenhoven."
-msgstr "由 Brett Cannon 與 Koos Zevenhoven 撰寫 PEP。"
+msgstr ""
 
 #: ../../whatsnew/3.6.rst:468
 msgid "PEP 495: Local Time Disambiguation"
-msgstr ""
+msgstr "PEP 495: 地域時間の曖昧さ回避"
 
 #: ../../whatsnew/3.6.rst:470
 msgid ""
@@ -517,6 +592,10 @@ msgid ""
 "information displayed on a local clock (or stored in a Python datetime "
 "instance) is insufficient to identify a particular moment in time."
 msgstr ""
+"世界の大抵の場所で、地域時計が1日繰り下げられることがこれまでありましたし、こ"
+"れからもあるでしょう。そういった時に、同じ日に同じ時間を指す区間があります。"
+"そういった状況では地域時計が表示する (あるいは Python の datetime インスタン"
+"スが格納する) 情報では、時間内の特定の瞬間を識別することはできません。"
 
 #: ../../whatsnew/3.6.rst:476
 msgid ""
@@ -524,6 +603,9 @@ msgid ""
 "datetime` and :class:`datetime.time` classes to differentiate between two "
 "moments in time for which local times are the same::"
 msgstr ""
+":pep:`495` は時間内の地域時間が同じ二つの瞬間を区別するために、新たな *fold* "
+"属性を :class:`datetime.datetime` インスタンスならびに :class:`datetime."
+"time` クラスに追加しました。"
 
 #: ../../whatsnew/3.6.rst:491
 msgid ""
@@ -531,6 +613,8 @@ msgid ""
 "value ``0`` for all instances except those that represent the second "
 "(chronologically) moment in time in an ambiguous case."
 msgstr ""
+":attr:`fold <datetime.datetime.fold>` 属性の値は、曖昧な場合に時間内の二番目"
+"の (年代的) 瞬間を表しているものを除く全てのインスタンスで ``0`` です。"
 
 #: ../../whatsnew/3.6.rst:498
 msgid ":pep:`495` -- Local Time Disambiguation"
@@ -544,7 +628,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:505
 msgid "PEP 529: Change Windows filesystem encoding to UTF-8"
-msgstr ""
+msgstr "PEP 529: Windows ファイルシステムのエンコーディングを UTF-8 に変更"
 
 #: ../../whatsnew/3.6.rst:507
 msgid ""
@@ -578,7 +662,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:529
 msgid "PEP 528: Change Windows console encoding to UTF-8"
-msgstr ""
+msgstr "PEP 528: Windows コンソールのエンコーディングを UTF-8 に変更"
 
 #: ../../whatsnew/3.6.rst:531
 msgid ""
@@ -600,11 +684,11 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:542
 msgid "PEP written and implemented by Steve Dower."
-msgstr "由 Steve Dower 撰寫 PEP 與實作。"
+msgstr ""
 
 #: ../../whatsnew/3.6.rst:548
 msgid "PEP 520: Preserving Class Attribute Definition Order"
-msgstr ""
+msgstr "PEP 520: クラス属性の定義の順番を保持"
 
 #: ../../whatsnew/3.6.rst:550
 msgid ""
@@ -612,6 +696,9 @@ msgid ""
 "order in which the names appear in the source.  This order is now preserved "
 "in the new class's :attr:`~object.__dict__` attribute."
 msgstr ""
+"クラス定義体の中の属性は自然に順序付けられました。すなわち、ソース内での順番"
+"と同じになりました。この順番は新たなクラスの :attr:`~object.__dict__` 属性内"
+"で保持されます。"
 
 #: ../../whatsnew/3.6.rst:554
 msgid ""
@@ -625,17 +712,19 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:561 ../../whatsnew/3.6.rst:575
 msgid "PEP written and implemented by Eric Snow."
-msgstr "由 Eric Snow 撰寫 PEP 與實作。"
+msgstr "PEP written and implemented by Eric Snow."
 
 #: ../../whatsnew/3.6.rst:567
 msgid "PEP 468: Preserving Keyword Argument Order"
-msgstr ""
+msgstr "PEP 468: キーワード引数の順番の保持"
 
 #: ../../whatsnew/3.6.rst:569
 msgid ""
 "``**kwargs`` in a function signature is now guaranteed to be an insertion-"
 "order-preserving mapping."
 msgstr ""
+"関数シグニチャにおける ``**kwargs`` は挿入順序を保存するマッピングであること"
+"が保証されるようになりました。"
 
 #: ../../whatsnew/3.6.rst:574
 msgid ":pep:`468` -- Preserving Keyword Argument Order"
@@ -643,7 +732,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:581
 msgid "New :ref:`dict <typesmapping>` implementation"
-msgstr ""
+msgstr "新たな :ref:`dict <typesmapping>` 実装"
 
 #: ../../whatsnew/3.6.rst:583
 msgid ""
@@ -676,7 +765,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:608
 msgid "PEP 523: Adding a frame evaluation API to CPython"
-msgstr ""
+msgstr "PEP 523: CPython にフレーム評価 API を追加"
 
 #: ../../whatsnew/3.6.rst:610
 msgid ""
@@ -710,17 +799,19 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:631
 msgid "PEP written by Brett Cannon and Dino Viehland."
-msgstr "由 Brett Cannon 與 Dino Viehland 撰寫 PEP。"
+msgstr ""
 
 #: ../../whatsnew/3.6.rst:637
 msgid "PYTHONMALLOC environment variable"
-msgstr ""
+msgstr "PYTHONMALLOC 環境変数"
 
 #: ../../whatsnew/3.6.rst:639
 msgid ""
 "The new :envvar:`PYTHONMALLOC` environment variable allows setting the "
 "Python memory allocators and installing debug hooks."
 msgstr ""
+"新たな環境変数 :envvar:`PYTHONMALLOC` により Python メモリアロケータの設定と"
+"デバッグフックの導入ができます。"
 
 #: ../../whatsnew/3.6.rst:642
 msgid ""
@@ -728,28 +819,34 @@ msgid ""
 "Python compiled in release mode using ``PYTHONMALLOC=debug``. Effects of "
 "debug hooks:"
 msgstr ""
+"``PYTHONMALLOC=debug`` を使用してリリースモードでコンパイルされた Python で、"
+"Python メモリアロケータにデバッグフックを導入できるようになりました。デバッグ"
+"フックの効果は:"
 
 #: ../../whatsnew/3.6.rst:645
 msgid "Newly allocated memory is filled with the byte ``0xCB``"
-msgstr ""
+msgstr "新たに割り当てられたメモリを ``0xCB`` バイトで埋めます"
 
 #: ../../whatsnew/3.6.rst:646
 msgid "Freed memory is filled with the byte ``0xDB``"
-msgstr ""
+msgstr "解放されたメモリを ``0xDB`` バイトで埋めます"
 
 #: ../../whatsnew/3.6.rst:647
 msgid ""
 "Detect violations of the Python memory allocator API. For example, :c:func:"
 "`PyObject_Free` called on a memory block allocated by :c:func:`PyMem_Malloc`."
 msgstr ""
+"Python メモリアロケータ API の違反を検知します。例えば :c:func:"
+"`PyMem_Malloc` で割り当てられたメモリブロックに :c:func:`PyObject_Free` を呼"
+"ぶこと。"
 
 #: ../../whatsnew/3.6.rst:650
 msgid "Detect writes before the start of a buffer (buffer underflows)"
-msgstr ""
+msgstr "バッファ開始前の書き込み (バッファアンダーフロー) を検知します"
 
 #: ../../whatsnew/3.6.rst:651
 msgid "Detect writes after the end of a buffer (buffer overflows)"
-msgstr ""
+msgstr "バッファ終端後の書き込み (バッファオーバーフロー) を検知します"
 
 #: ../../whatsnew/3.6.rst:652
 msgid ""
@@ -804,15 +901,15 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:718
 msgid "function call/return"
-msgstr ""
+msgstr "関数の呼び出し/復帰"
 
 #: ../../whatsnew/3.6.rst:720
 msgid "garbage collection started/finished"
-msgstr ""
+msgstr "ガベージコレクションの開始/終了"
 
 #: ../../whatsnew/3.6.rst:722
 msgid "line of code executed."
-msgstr ""
+msgstr "実行されたコードの行。"
 
 #: ../../whatsnew/3.6.rst:724
 msgid ""
@@ -823,7 +920,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:728
 msgid "More details in :ref:`instrumentation`."
-msgstr ""
+msgstr "詳細については :ref:`instrumentation` を参照してください。"
 
 #: ../../whatsnew/3.6.rst:730
 msgid ""
@@ -839,11 +936,11 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:738
 msgid "Other Language Changes"
-msgstr ""
+msgstr "その他の言語変更"
 
 #: ../../whatsnew/3.6.rst:740
 msgid "Some smaller changes made to the core Python language are:"
-msgstr ""
+msgstr "Python 言語コアに小さな変更がいくつか行われました:"
 
 #: ../../whatsnew/3.6.rst:742
 msgid ""
@@ -862,8 +959,8 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:752
 msgid ""
-"Long sequences of repeated traceback lines are now abbreviated as ``"
-"\"[Previous line repeated {count} more times]\"`` (see :ref:`whatsnew36-"
+"Long sequences of repeated traceback lines are now abbreviated as "
+"``\"[Previous line repeated {count} more times]\"`` (see :ref:`whatsnew36-"
 "traceback` for an example). (Contributed by Emanuel Barry in :issue:`26823`.)"
 msgstr ""
 
@@ -884,7 +981,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:768
 msgid "New Modules"
-msgstr "新模組"
+msgstr "新たなモジュール"
 
 #: ../../whatsnew/3.6.rst:773
 msgid "secrets"
@@ -911,11 +1008,11 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:788
 msgid "PEP written and implemented by Steven D'Aprano."
-msgstr "由 Steven D'Aprano 撰寫 PEP 與實作。"
+msgstr ""
 
 #: ../../whatsnew/3.6.rst:792
 msgid "Improved Modules"
-msgstr ""
+msgstr "改良されたモジュール"
 
 #: ../../whatsnew/3.6.rst:795
 msgid "array"
@@ -982,6 +1079,9 @@ msgid ""
 "New :func:`~asyncio.run_coroutine_threadsafe` function to submit coroutines "
 "to event loops from other threads. (Contributed by Vincent Michel.)"
 msgstr ""
+"他のスレッドからコルーチンをイベントループに送信するための新たな :func:"
+"`~asyncio.run_coroutine_threadsafe` 関数。\n"
+"(Contributed by Vincent Michel.)"
 
 #: ../../whatsnew/3.6.rst:835
 msgid ""
@@ -1018,6 +1118,10 @@ msgid ""
 "to read data from the stream until a separator bytes sequence appears. "
 "(Contributed by Mark Korenberg.)"
 msgstr ""
+"新しい :meth:`StreamReader.readuntil() <asyncio.StreamReader.readuntil>` メ"
+"ソッドで、区切りとなるバイトの並びが出てくるまでストリームからデータを読み取"
+"れるようになりました。\n"
+"(Contributed by Mark Korenberg.)"
 
 #: ../../whatsnew/3.6.rst:859
 msgid ""
@@ -1105,6 +1209,10 @@ msgid ""
 "`cmath.nanj` to match the format used by complex repr. (Contributed by Mark "
 "Dickinson in :issue:`23229`.)"
 msgstr ""
+"新たに定数が追加されました。 :const:`math.inf` と :const:`math.nan` に対応す"
+"る :const:`cmath.inf` と :const:`cmath.nan`。複素数の repr が使用する書式に対"
+"応する :const:`cmath.infj` と :const:`cmath.nanj`。\n"
+"(Contributed by Mark Dickinson in :issue:`23229`.)"
 
 #: ../../whatsnew/3.6.rst:921
 msgid "collections"
@@ -1280,7 +1388,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:1044
 msgid "encodings"
-msgstr "encodings"
+msgstr "エンコーディング"
 
 #: ../../whatsnew/3.6.rst:1046
 msgid ""
@@ -1384,7 +1492,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:1123
 msgid "idlelib and IDLE"
-msgstr ""
+msgstr "idlelib と IDLE"
 
 #: ../../whatsnew/3.6.rst:1125
 msgid ""
@@ -1424,6 +1532,8 @@ msgid ""
 "Multiple fixes for autocompletion. (Contributed by Louie Lu in :issue:"
 "`15786`.)"
 msgstr ""
+"自動補完におけるいくつもの修正。\n"
+"(Contributed by Louie Lu in :issue:`15786`.)"
 
 #: ../../whatsnew/3.6.rst:1149
 msgid "New in 3.6.3:"
@@ -1560,6 +1670,9 @@ msgid ""
 "JSON should be represented using either UTF-8, UTF-16, or UTF-32. "
 "(Contributed by Serhiy Storchaka in :issue:`17909`.)"
 msgstr ""
+":func:`json.load` と :func:`json.loads` は、バイナリ入力をサポートしました。"
+"エンコード済みのJSON は、 UTF-8, UTF-16, UTF-32のいずれかを返すべきです。 "
+"(Contributed by Serhiy Storchaka in :issue:`17909`.)"
 
 #: ../../whatsnew/3.6.rst:1243
 msgid "logging"
@@ -1572,6 +1685,10 @@ msgid ""
 "to check if the log file needs to be reopened. (Contributed by Marian Horban "
 "in :issue:`24884`.)"
 msgstr ""
+"新しく :meth:`WatchedFileHandler.reopenIfNeeded() <logging.handlers."
+"WatchedFileHandler.reopenIfNeeded>` メソッドが追加され、ログファイルを再オー"
+"プンする必要があるかどうかをチェックする機能が追加れました。(Contributed by "
+"Marian Horban in :issue:`24884`.)"
 
 #: ../../whatsnew/3.6.rst:1252
 msgid "math"
@@ -1635,10 +1752,12 @@ msgid ""
 ":mod:`pathlib` now supports :term:`path-like objects <path-like object>`. "
 "(Contributed by Brett Cannon in :issue:`27186`.)"
 msgstr ""
+":mod:`pathlib` は :term:`path-like objects <path-like object>`をサポートしま"
+"した。 (Contributed by Brett Cannon in :issue:`27186`.)"
 
 #: ../../whatsnew/3.6.rst:1297
 msgid "See the summary of :ref:`PEP 519 <whatsnew36-pep519>` for details."
-msgstr "細節請見 :ref:`PEP 519 <whatsnew36-pep519>` 中的摘要。"
+msgstr "詳細は、 :ref:`PEP 519 <whatsnew36-pep519>` の要約を参照してください。"
 
 #: ../../whatsnew/3.6.rst:1301
 msgid "pdb"
@@ -1649,6 +1768,8 @@ msgid ""
 "The :class:`~pdb.Pdb` class constructor has a new optional *readrc* argument "
 "to control whether ``.pdbrc`` files should be read."
 msgstr ""
+":class:`~pdb.Pdb` クラスのコンストラクタに、新しくオプション引数 *readrc* が"
+"増えました。この引数は、 ``.pdbrc`` ファイルを読み込むかどうかを指定します。"
 
 #: ../../whatsnew/3.6.rst:1308
 msgid "pickle"
@@ -1781,6 +1902,8 @@ msgid ""
 ":attr:`sqlite3.Cursor.lastrowid` now supports the ``REPLACE`` statement. "
 "(Contributed by Alex LordThorsen in :issue:`16864`.)"
 msgstr ""
+":attr:`sqlite3.Cursor.lastrowid` は、 ``REPLACE`` 文をサポートしました。 "
+"(Contributed by Alex LordThorsen in :issue:`16864`.)"
 
 #: ../../whatsnew/3.6.rst:1404
 msgid "socket"
@@ -1972,6 +2095,8 @@ msgid ""
 "The :class:`~time.struct_time` attributes :attr:`tm_gmtoff` and :attr:"
 "`tm_zone` are now available on all platforms."
 msgstr ""
+":class:`~time.struct_time` の属性 :attr:`tm_gmtoff` および :attr:`tm_zone` が"
+"全てのプラットフォームで利用できるようになりました。"
 
 #: ../../whatsnew/3.6.rst:1535
 msgid "timeit"
@@ -2120,7 +2245,7 @@ msgstr "unittest.mock"
 
 #: ../../whatsnew/3.6.rst:1654
 msgid "The :class:`~unittest.mock.Mock` class has the following improvements:"
-msgstr ""
+msgstr ":class:`~unittest.mock.Mock` クラスは、次の改善が行われました。"
 
 #: ../../whatsnew/3.6.rst:1656
 msgid ""
@@ -2129,6 +2254,10 @@ msgid ""
 "assert_called_once>` to check if the mock object was called. (Contributed by "
 "Amit Saha in :issue:`26323`.)"
 msgstr ""
+":meth:`Mock.assert_called() <unittest.mock.Mock.assert_called>` と :meth:"
+"`Mock.assert_called_once() <unittest.mock.Mock.assert_called_once>` は、mock"
+"オブジェクトが呼ばれたかどうかを確認します。 (Contributed by Amit Saha in :"
+"issue:`26323`.)"
 
 #: ../../whatsnew/3.6.rst:1662
 msgid ""
@@ -2170,6 +2299,9 @@ msgid ""
 "alternative prefix for the virtual environment. (Proposed by Łukasz "
 "Balcerzak and ported to 3.6 by Stéphane Wirtel in :issue:`22829`.)"
 msgstr ""
+":mod:`venv は、新しいパラメータ ``--prompt`` を受け入れました。このパラメータ"
+"は、 仮想環境を表すプリフィックスを指定します。 (Proposed by Łukasz "
+"Balcerzak and ported to 3.6 by Stéphane Wirtel in :issue:`22829`.)"
 
 #: ../../whatsnew/3.6.rst:1695
 msgid "warnings"
@@ -2193,7 +2325,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:1706
 msgid "Example with the script ``example.py``::"
-msgstr ""
+msgstr "スクリプト ``example.py`` での例::"
 
 #: ../../whatsnew/3.6.rst:1716
 msgid "Output of the command ``python3.6 -Wd -X tracemalloc=5 example.py``::"
@@ -2271,7 +2403,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:1779
 msgid "Optimizations"
-msgstr ""
+msgstr "最適化"
 
 #: ../../whatsnew/3.6.rst:1781
 msgid ""
@@ -2409,7 +2541,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:1860
 msgid "Build and C API Changes"
-msgstr ""
+msgstr "ビルドならびに C API の変更"
 
 #: ../../whatsnew/3.6.rst:1862
 msgid ""
@@ -2491,21 +2623,23 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:1910
 msgid "Other Improvements"
-msgstr ""
+msgstr "その他の改善"
 
 #: ../../whatsnew/3.6.rst:1912
 msgid ""
 "When :option:`--version` (short form: :option:`-V`) is supplied twice, "
 "Python prints :data:`sys.version` for detailed information."
 msgstr ""
+":option:`--version` (短縮系: :option:`-V`) が2回与えられた場合、Python は :"
+"data:`sys.version` で詳細な情報を出力します。"
 
 #: ../../whatsnew/3.6.rst:1923
 msgid "Deprecated"
-msgstr ""
+msgstr "非推奨"
 
 #: ../../whatsnew/3.6.rst:1926
 msgid "New Keywords"
-msgstr "新關鍵字"
+msgstr "新たなキーワード"
 
 #: ../../whatsnew/3.6.rst:1928
 msgid ""
@@ -2514,10 +2648,14 @@ msgid ""
 "become proper keywords in Python 3.7.  Starting in Python 3.6, the use of "
 "``async`` or ``await`` as names will generate a :exc:`DeprecationWarning`."
 msgstr ""
+"``async`` および ``await`` を変数、クラス、関数、モジュール名として使用するこ"
+"とは推奨されません。``async`` と ``await`` は Python 3.5 で :pep:`492` により"
+"導入され、Python 3.7 で正式にキーワードとなります。Python 3.6 から ``async`` "
+"や ``await`` を変数名に使用すると :exc:`DeprecationWarning` が出ます。"
 
 #: ../../whatsnew/3.6.rst:1935
 msgid "Deprecated Python behavior"
-msgstr ""
+msgstr "非推奨の Python 挙動"
 
 #: ../../whatsnew/3.6.rst:1937
 msgid ""
@@ -2553,7 +2691,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:1959
 msgid "Deprecated Python modules, functions and methods"
-msgstr ""
+msgstr "非推奨の Python モジュール、関数、メソッド"
 
 #: ../../whatsnew/3.6.rst:1962
 msgid "asynchat"
@@ -2564,6 +2702,8 @@ msgid ""
 "The :mod:`asynchat` has been deprecated in favor of :mod:`asyncio`. "
 "(Contributed by Mariatta in :issue:`25002`.)"
 msgstr ""
+":mod:`asynchat` は :mod:`asyncio` により非推奨になりました。 (Contributed by "
+"Mariatta in :issue:`25002`.)"
 
 #: ../../whatsnew/3.6.rst:1969
 msgid "asyncore"
@@ -2574,6 +2714,8 @@ msgid ""
 "The :mod:`asyncore` has been deprecated in favor of :mod:`asyncio`. "
 "(Contributed by Mariatta in :issue:`25002`.)"
 msgstr ""
+":mod:`asyncore` は :mod:`asyncio` により非推奨になりました。 (Contributed by "
+"Mariatta in :issue:`25002`.)"
 
 #: ../../whatsnew/3.6.rst:1976
 msgid "dbm"
@@ -2604,6 +2746,8 @@ msgid ""
 "The support of non-integer arguments in :func:`~grp.getgrgid` has been "
 "deprecated. (Contributed by Serhiy Storchaka in :issue:`26129`.)"
 msgstr ""
+":func:`~grp.getgrgid` の非整数の引数のサポートは非推奨になりました。 "
+"(Contributed by Serhiy Storchaka in :issue:`26129`.)"
 
 #: ../../whatsnew/3.6.rst:2005
 msgid ""
@@ -2644,6 +2788,9 @@ msgid ""
 "the future the :mod:`ssl` module will require at least OpenSSL 1.0.2 or "
 "1.1.0."
 msgstr ""
+"OpenSSLの0.9.8, 1.0.0 ,1.0.1 は非推奨となっており、長い間サポートされていませ"
+"ん。将来的に:mod:`ssl` モジュールは、OpenSSLの1.0.2 もしくは1.1.0が必須になり"
+"ます。"
 
 #: ../../whatsnew/3.6.rst:2039
 msgid ""
@@ -2677,7 +2824,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:2067
 msgid "Deprecated functions and types of the C API"
-msgstr ""
+msgstr "C API の非推奨の関数ならびに型"
 
 #: ../../whatsnew/3.6.rst:2069
 msgid ""
@@ -2689,7 +2836,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:2076
 msgid "Deprecated Build Options"
-msgstr ""
+msgstr "非推奨のビルドオプション"
 
 #: ../../whatsnew/3.6.rst:2078
 msgid ""
@@ -2702,11 +2849,11 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:2086
 msgid "Removed"
-msgstr ""
+msgstr "削除"
 
 #: ../../whatsnew/3.6.rst:2089
 msgid "API and Feature Removals"
-msgstr ""
+msgstr "API と機能の削除"
 
 #: ../../whatsnew/3.6.rst:2091
 msgid ""
@@ -2761,21 +2908,23 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:2125
 msgid "The deprecated ``asynchat.fifo`` class has been removed."
-msgstr ""
+msgstr "非推奨の ``asynchat.fifo`` クラスは削除されました。"
 
 #: ../../whatsnew/3.6.rst:2129
 msgid "Porting to Python 3.6"
-msgstr ""
+msgstr "Python 3.6 への移植"
 
 #: ../../whatsnew/3.6.rst:2131
 msgid ""
 "This section lists previously described changes and other bugfixes that may "
 "require changes to your code."
 msgstr ""
+"このセクションでは前述の変更とバグフィックスにより必要となるかもしれないコー"
+"ドの変更を列挙します:"
 
 #: ../../whatsnew/3.6.rst:2135
 msgid "Changes in 'python' Command Behavior"
-msgstr ""
+msgstr "'python' コマンドの挙動の変更"
 
 #: ../../whatsnew/3.6.rst:2137
 msgid ""
@@ -2788,7 +2937,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:2145
 msgid "Changes in the Python API"
-msgstr ""
+msgstr "Python API の変更"
 
 #: ../../whatsnew/3.6.rst:2147
 msgid ""
@@ -2930,6 +3079,8 @@ msgid ""
 "Subclasses of :class:`type` which don't override ``type.__new__`` may no "
 "longer use the one-argument form to get the type of an object."
 msgstr ""
+"``type.__new__`` をオーバーライドしていない :class:`type` のサブクラスは、オ"
+"ブジェクトの型を得るのに１引数形式を利用することができません。"
 
 #: ../../whatsnew/3.6.rst:2239
 msgid ""
@@ -2958,6 +3109,8 @@ msgid ""
 "This behavior has also been backported to earlier Python versions by "
 "Setuptools 26.0.0."
 msgstr ""
+"この挙動は Setuptools 26.0.0 により以前の Python バージョンにバックポートされ"
+"ました。"
 
 #: ../../whatsnew/3.6.rst:2264
 msgid ""
@@ -3054,7 +3207,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:2334
 msgid "Changes in the C API"
-msgstr "C API 中的改動"
+msgstr "C API の変更"
 
 #: ../../whatsnew/3.6.rst:2336
 msgid ""
@@ -3073,7 +3226,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:2347
 msgid "CPython bytecode changes"
-msgstr ""
+msgstr "CPython バイトコードの変更"
 
 #: ../../whatsnew/3.6.rst:2349
 msgid ""
@@ -3152,7 +3305,7 @@ msgstr ""
 
 #: ../../whatsnew/3.6.rst:2398 ../../whatsnew/3.6.rst:2411
 msgid "(Contributed by Victor Stinner in :issue:`23404`.)"
-msgstr ""
+msgstr "(Victor Stinner の貢献による :issue:`23404`) "
 
 #: ../../whatsnew/3.6.rst:2404
 msgid "Removal of ``make touch`` build target"
@@ -3217,6 +3370,11 @@ msgid ""
 "(Contributed by Kyle Stanley, Antoine Pitrou, and Yury Selivanov in :issue:"
 "`37228`.)"
 msgstr ""
+"セキュリティ上の重大な懸念により、:meth:`asyncio.loop."
+"create_datagram_endpoint` での *reuse_address* 引数は無効になりました。これは"
+"ソケットオプション `SO_REUSEADDR`` のUDP における挙動が原因です。詳しくは、"
+"``loop.create_datagram_endpoint()`` のドキュメントを参照してください。(Kyle "
+"Stanley, Antoine Pitrou, Yury Selivanov による貢献 :issue:`37228`)"
 
 #: ../../whatsnew/3.6.rst:2451
 msgid "Notable changes in Python 3.6.13"

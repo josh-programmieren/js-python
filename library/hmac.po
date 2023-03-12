@@ -1,37 +1,40 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Adrian Liaw <adrianliaw2000@gmail.com>, 2018
-# Phil Lin <linooohon@gmail.com>, 2022
+# tomo, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-06 00:17+0000\n"
-"PO-Revision-Date: 2022-03-30 00:16+0800\n"
-"Last-Translator: Phil Lin <linooohon@gmail.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:07+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.0.1\n"
 
 #: ../../library/hmac.rst:2
 msgid ":mod:`hmac` --- Keyed-Hashing for Message Authentication"
-msgstr ":mod:`hmac` --- 基於金鑰雜湊的訊息驗證"
+msgstr ":mod:`hmac` --- メッセージ認証のための鍵付きハッシュ化"
 
 #: ../../library/hmac.rst:10
 msgid "**Source code:** :source:`Lib/hmac.py`"
-msgstr "**原始碼：**\\ :source:`Lib/hmac.py`"
+msgstr "**ソースコード:** :source:`Lib/hmac.py`"
 
 #: ../../library/hmac.rst:14
 msgid "This module implements the HMAC algorithm as described by :rfc:`2104`."
-msgstr "此模組 (module) 實現了 :rfc:`2014` 所描述的 HMAC 演算法。"
+msgstr ""
+"このモジュールでは :rfc:`2104` で記述されている HMAC アルゴリズムを実装してい"
+"ます。"
 
 #: ../../library/hmac.rst:19
 msgid ""
@@ -41,10 +44,6 @@ msgid ""
 "object to use.  It may be any name suitable to :func:`hashlib.new`. Despite "
 "its argument position, it is required."
 msgstr ""
-"回傳一個新的 hmac 物件。*key* 是一個指定密鑰的 bytes（位元組）或 bytearray 物"
-"件。如果提供了 *msg*，將會呼叫 ``update(msg)`` 方法。*digestmod* 為 HMAC 物件"
-"所用的摘要名稱、摘要建構函式 (constructor) 或模組。它可以是適用於 :func:"
-"`hashlib.new` 的任何名稱。儘管該引數的位置在後，但它卻是必須的。"
 
 #: ../../library/hmac.rst:25
 msgid ""
@@ -52,8 +51,9 @@ msgid ""
 "of any type supported by :mod:`hashlib`. Parameter *digestmod* can be the "
 "name of a hash algorithm."
 msgstr ""
-"參數 *key* 可以為 bytes 或 bytearray 物件。參數 *msg* 可以為 :mod:`hashlib` "
-"所支援的任意型別。參數 *digestmod* 可以為雜湊演算法的名稱。"
+"引数 *key* に bytes または bytearray オブジェクトを渡せるようになりました。引"
+"数 *msg* に :mod:`hashlib` がサポートする全てのタイプを渡せるようになりまし"
+"た。引数 *digestmod* にハッシュアルゴリズム名を渡せるようになりました。"
 
 #: ../../library/hmac.rst:33
 msgid ""
@@ -61,8 +61,6 @@ msgid ""
 "parameter is now required.  Pass it as a keyword argument to avoid "
 "awkwardness when you do not have an initial msg."
 msgstr ""
-"MD5 作為 *digestmod* 的隱式預設摘要已被棄用。digestmod 參數現在是必須的。請將"
-"其作為關鍵字引數傳入以避免當你沒有初始 msg 時導致的麻煩。"
 
 #: ../../library/hmac.rst:38
 msgid ""
@@ -72,10 +70,11 @@ msgid ""
 "The parameters *key*, *msg*, and *digest* have the same meaning as in :func:"
 "`~hmac.new`."
 msgstr ""
-"基於給定密鑰 *key* 和 *digest* 回傳 *msg* 的摘要。此函式等價於 ``HMAC(key, "
-"msg, digest).digest()``\\ ，但使用了優化的 C 或 行內實作（inline "
-"implementation），對放入記憶體的訊息能處理得更快。參數 *key*、*msg* 和 "
-"*digest* 在 :func:`~hmac.new` 中具有相同含義。"
+"与えられたsecret *key* と *digest* の *msg* のダイジェストを返します。この関"
+"数は ``HMAC(key, msg, digest).digest()`` に似ていますが、最適化されたCやイン"
+"ラインの実装を使用しており、メモリに収まるメッセージに対しては高速です。パラ"
+"メータ *key* 、 *msg* 、および *digest* は、 :func:`~hmac.new` と同じ意味を持"
+"ちます。"
 
 #: ../../library/hmac.rst:44
 msgid ""
@@ -83,12 +82,12 @@ msgid ""
 "when *digest* is a string and name of a digest algorithm, which is supported "
 "by OpenSSL."
 msgstr ""
-"作為 CPython 的實現細節，C 的優化實作只有當 *digest* 為字串並且是一個 "
-"OpenSSL 所支持的摘要演算法的名稱時才會被使用。"
+"CPython実装の詳細、最適化されたC実装は、OpenSSLがサポートするダイジェストアル"
+"ゴリズムの文字列と名前が *digest* の場合にのみ使用されます。"
 
 #: ../../library/hmac.rst:51
 msgid "An HMAC object has the following methods:"
-msgstr "HMAC 物件具有下列方法 (method)："
+msgstr "HMAC オブジェクトは以下のメソッドを持っています:"
 
 #: ../../library/hmac.rst:55
 msgid ""
@@ -96,12 +95,14 @@ msgid ""
 "single call with the concatenation of all the arguments: ``m.update(a); m."
 "update(b)`` is equivalent to ``m.update(a + b)``."
 msgstr ""
-"用 *msg* 來更新 hmac 物件。重複呼叫相當於單次呼叫並傳入所有引數的拼接結果："
-"``m.update(a); m.update(b)`` 等價於 ``m.update(a + b)``\\ 。"
+"hmac オブジェクトを *msg* で更新します。このメソッドの呼出の繰り返しは、それ"
+"らの引数を全て結合した引数で単一の呼び出しをした際と同じになります。すなわち "
+"``m.update(a); m.update(b)``  は ``m.update(a + b)`` と等価です。"
 
 #: ../../library/hmac.rst:59
 msgid "Parameter *msg* can be of any type supported by :mod:`hashlib`."
-msgstr "參數 *msg* 可以是 :mod:`hashlib` 所支援的任何型別。"
+msgstr ""
+"引数 *msg* は :mod:`hashlib` がサポートしているあらゆる型のいずれかです。"
 
 #: ../../library/hmac.rst:65
 msgid ""
@@ -110,9 +111,9 @@ msgid ""
 "given to the constructor.  It may contain non-ASCII bytes, including NUL "
 "bytes."
 msgstr ""
-"回傳當前已傳給 :meth:`update` 方法的 bytes 摘要。這個 bytes 物件的長度會與傳"
-"給建構函式的摘要 *digest_size* 的長度相同。它可以包含 NUL bytes 以及 non-"
-"ASCII bytes。"
+"これまで :meth:`update` メソッドに渡されたバイト列のダイジェスト値を返しま"
+"す。これはコンストラクタに与えられた *digest_size* と同じ長さのバイト列で、 "
+"NUL バイトを含む非 ASCII 文字が含まれることがあります。"
 
 #: ../../library/hmac.rst:72
 msgid ""
@@ -121,9 +122,6 @@ msgid ""
 "`compare_digest` function instead of the ``==`` operator to reduce the "
 "vulnerability to timing attacks."
 msgstr ""
-"在一個例行的驗證事務運行期間，將 :meth:`digest` 的輸出與外部提供的摘要進行比"
-"較時，建議使用 :func:`compare_digest` 函式而不是 ``==`` 運算子以減少被定時攻"
-"擊時的漏洞。"
 
 #: ../../library/hmac.rst:80
 msgid ""
@@ -131,8 +129,8 @@ msgid ""
 "length containing only hexadecimal digits.  This may be used to exchange the "
 "value safely in email or other non-binary environments."
 msgstr ""
-"像是 :meth:`digest` 但摘要的回傳形式為兩倍長度的字串，且此字串只包含十六進位"
-"數位。這可以被用於在電子郵件或其他非二進位制環境中安全地交換數據。"
+":meth:`digest` と似ていますが、返される文字列は倍の長さとなり、16進形式となり"
+"ます。これは、電子メールなどの非バイナリ環境で値を交換する場合に便利です。"
 
 #: ../../library/hmac.rst:86
 msgid ""
@@ -141,9 +139,6 @@ msgid ""
 "`compare_digest` function instead of the ``==`` operator to reduce the "
 "vulnerability to timing attacks."
 msgstr ""
-"在一個例行的驗證事務運行期間，將 :meth:`hexdigest` 的輸出與外部提供的摘要進行"
-"比較時，建議使用 :func:`compare_digest` 函式而不是 ``==`` 運算子以減少被定時"
-"攻擊時的漏洞。"
 
 #: ../../library/hmac.rst:94
 msgid ""
@@ -151,24 +146,25 @@ msgid ""
 "efficiently compute the digests of strings that share a common initial "
 "substring."
 msgstr ""
-"回傳 hmac 物件的拷貝 (\"clone\")。這可以被用來有效率地計算那些共享相同初始子"
-"字串的字串的摘要。"
+"hmac オブジェクトのコピー (\"クローン\") を返します。このコピーは最初の部分文"
+"字列が共通になっている文字列のダイジェスト値を効率よく計算するために使うこと"
+"ができます。"
 
 #: ../../library/hmac.rst:98
 msgid "A hash object has the following attributes:"
-msgstr "一個 hash 物件具有以下屬性："
+msgstr "ハッシュオブジェクトには次のような属性があります:"
 
 #: ../../library/hmac.rst:102
 msgid "The size of the resulting HMAC digest in bytes."
-msgstr "以 bytes 表示最終 HMAC 摘要的大小。"
+msgstr "生成された HMAC ダイジェストのバイト数。"
 
 #: ../../library/hmac.rst:106
 msgid "The internal block size of the hash algorithm in bytes."
-msgstr "以 bytes 表示雜湊演算法的內部區塊大小。"
+msgstr "内部で使われるハッシュアルゴリズムのブロックのバイト数。"
 
 #: ../../library/hmac.rst:112
 msgid "The canonical name of this HMAC, always lowercase, e.g. ``hmac-md5``."
-msgstr "HMAC 的正準名稱總是為小寫形式，例如 ``hmac-md5``\\ 。"
+msgstr "このHMAC の正規名で、例えば ``hmac-md5`` のように常に小文字です。"
 
 #: ../../library/hmac.rst:119
 msgid ""
@@ -176,12 +172,10 @@ msgid ""
 "outer`` are internal implementation details and will be removed in Python "
 "3.10."
 msgstr ""
-"未寫入文件的屬性 ``HMAC.digest_cons``\\ ，``HMAC.inner`` 和 ``HMAC.outer`` 屬"
-"於內部實現細節，將在 Python 3.10 中被移除。"
 
 #: ../../library/hmac.rst:123
 msgid "This module also provides the following helper function:"
-msgstr "這個模組還提供了下列輔助函式："
+msgstr "このモジュールは以下のヘルパ関数も提供しています:"
 
 #: ../../library/hmac.rst:127
 msgid ""
@@ -191,10 +185,11 @@ msgid ""
 "either :class:`str` (ASCII only, as e.g. returned by :meth:`HMAC."
 "hexdigest`), or a :term:`bytes-like object`."
 msgstr ""
-"回傳 ``a == b``\\ 。此函式使用一種經專門設計的方式通過避免基於內容的短路行為"
-"來防止定時分析，使得它適合處理密碼學。*a* 和 *b* 必須為相同的型別：可以是 :"
-"class:`str`\\ （僅限 ASCII，如 :meth:`HMAC.hexdigest` 的回傳值），或者是 :"
-"term:`bytes-like object`\\ 。"
+"``a == b`` を返します。この関数は、内容ベースの短絡的な振る舞いを避けることに"
+"よってタイミング分析を防ぐよう設計されたアプローチを用い、暗号化に用いるのに"
+"相応しいものとしています。 *a* と *b* は両方が同じ型でなければなりません: (例"
+"えば :meth:`HMAC.hexdigest` が返したような ASCII のみの) :class:`str` また"
+"は :term:`bytes-like object` のどちらか一方。"
 
 #: ../../library/hmac.rst:135
 msgid ""
@@ -202,18 +197,19 @@ msgid ""
 "attack could theoretically reveal information about the types and lengths of "
 "*a* and *b*—but not their values."
 msgstr ""
-"如果 *a* 和 *b* 具有不同的長度，或者如果發生了錯誤，定時攻擊在理論上可以獲取"
-"有關 *a* 和 *b* 的型別和長度的訊息 — 但不能獲取他們的值。"
+"*a* と *b* が異なる長さであったりエラーが発生した場合には、タイミング攻撃で理"
+"論上 *a* と *b* の型と長さについての情報が暴露されますが、その値は明らかにな"
+"りません。"
 
 #: ../../library/hmac.rst:143
 msgid ""
 "The function uses OpenSSL's ``CRYPTO_memcmp()`` internally when available."
-msgstr "此函式在可能的情況下會在內部使用 OpenSSL 的 ``CRYPTO_memcmp()``\\ 。"
+msgstr ""
 
 #: ../../library/hmac.rst:149
 msgid "Module :mod:`hashlib`"
-msgstr ":mod:`hashlib` 模組"
+msgstr ":mod:`hashlib` モジュール"
 
 #: ../../library/hmac.rst:150
 msgid "The Python module providing secure hash functions."
-msgstr "Python 模組提供安全的雜湊函式。"
+msgstr "セキュアハッシュ関数を提供する Python モジュールです。"

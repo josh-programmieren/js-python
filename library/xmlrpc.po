@@ -1,27 +1,30 @@
-# Copyright (C) 2001-2022, Python Software Foundation
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Matt Wang <mattwang44@gamil.com>, 2022
+# tomo, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-26 18:54+0800\n"
-"PO-Revision-Date: 2022-02-16 01:58+0800\n"
-"Last-Translator: Matt Wang <mattwang44@gamil.com>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:18+0000\n"
+"Last-Translator: tomo, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.0.1\n"
 
 #: ../../library/xmlrpc.rst:2
 msgid ":mod:`xmlrpc` --- XMLRPC server and client modules"
-msgstr ":mod:`xmlrpc` --- XMLRPC 服務端與客戶端模組"
+msgstr ":mod:`xmlrpc` --- XMLRPC サーバーとクライアントモジュール"
 
 #: ../../library/xmlrpc.rst:4
 msgid ""
@@ -29,16 +32,18 @@ msgid ""
 "transport.  With it, a client can call methods with parameters on a remote "
 "server (the server is named by a URI) and get back structured data."
 msgstr ""
-"XML-RPC 是一種遠端程序呼叫 (Remote Procedure Call) 方法，它使用通過 HTTP 傳輸"
-"（transport）的 XML 來做傳遞。有了它，客戶端可以在遠端伺服器上呼叫帶有參數的"
-"方法（伺服器以 URI 命名）並獲取結構化的資料。"
+"XML-RPC は HTTP 経由の XML を使って遠隔手続き呼び出し (Remote Procedure "
+"Call) を実現する方法です。XML-RPC を使うと、クライアントはリモートサーバー "
+"(サーバーは URI で名前付けられます) 上のメソッドを引数付きで呼び出して、構造"
+"化されたデータを受け取る事ができます。"
 
 #: ../../library/xmlrpc.rst:8
 msgid ""
 "``xmlrpc`` is a package that collects server and client modules implementing "
 "XML-RPC.  The modules are:"
 msgstr ""
-"``xmlrpc`` 是一個集合了 XML-RPC 伺服器與客戶端模組實作的套件。這些模組是："
+"``xmlrpc`` パッケージは XML-RPC のサーバーとクライアントを実装したモジュール"
+"を持っています。モジュール一覧:"
 
 #: ../../library/xmlrpc.rst:11
 msgid ":mod:`xmlrpc.client`"

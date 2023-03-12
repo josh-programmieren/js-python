@@ -1,27 +1,37 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Osamu NAKAMURA, 2021
+# mollinaca, 2021
+# tomo, 2021
+# Takanori Suzuki <takanori@takanory.net>, 2023
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-31 08:13+0000\n"
-"PO-Revision-Date: 2018-07-15 18:56+0800\n"
-"Last-Translator: \n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-29 13:04+0000\n"
+"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2023\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../whatsnew/3.7.rst:3
 msgid "What's New In Python 3.7"
-msgstr "Python 3.7 有什麼新功能"
+msgstr "What's New In Python 3.7"
 
 #: ../../whatsnew/3.7.rst:0
 msgid "Editor"
-msgstr "編輯者"
+msgstr "編集者"
 
 #: ../../whatsnew/3.7.rst:5
 msgid "Elvis Pranskevichus <elvis@magic.io>"
@@ -33,40 +43,45 @@ msgid ""
 "Python 3.7 was released on June 27, 2018. For full details, see the :ref:"
 "`changelog <changelog>`."
 msgstr ""
+"この記事では Python 3.6 と比較した Python 3.7 の新機能を解説します。Python "
+"3.7 は2018年6月27日にリリースされました。全詳細については :ref:`変更履"
+"歴 <changelog>` をご覧ください。"
 
 #: ../../whatsnew/3.7.rst:53
 msgid "Summary -- Release Highlights"
-msgstr ""
+msgstr "概要 -- リリースハイライト"
 
 #: ../../whatsnew/3.7.rst:58
 msgid "New syntax features:"
-msgstr ""
+msgstr "新たな文法機能:"
 
 #: ../../whatsnew/3.7.rst:60
 msgid ""
 ":ref:`PEP 563 <whatsnew37-pep563>`, postponed evaluation of type annotations."
-msgstr ""
+msgstr ":ref:`PEP 563 <whatsnew37-pep563>` 、型アノテーションの評価の遅延。"
 
 #: ../../whatsnew/3.7.rst:62
 msgid "Backwards incompatible syntax changes:"
-msgstr ""
+msgstr "後方非互換な文法の変更:"
 
 #: ../../whatsnew/3.7.rst:64
 msgid ":keyword:`async` and :keyword:`await` are now reserved keywords."
-msgstr ":keyword:`async` 和 :keyword:`await` 現為保留關鍵字。"
+msgstr ""
+":keyword:`async` と :keyword:`await` は予約されたキーワードになりました。"
 
 #: ../../whatsnew/3.7.rst:66
 msgid "New library modules:"
-msgstr ""
+msgstr "新たなライブラリモジュール:"
 
 #: ../../whatsnew/3.7.rst:68
 msgid ""
 ":mod:`contextvars`: :ref:`PEP 567 -- Context Variables <whatsnew37-pep567>`"
 msgstr ""
+":mod:`contextvars`: :ref:`PEP 567 -- コンテキスト変数 <whatsnew37-pep567>`"
 
 #: ../../whatsnew/3.7.rst:69
 msgid ":mod:`dataclasses`: :ref:`PEP 557 -- Data Classes <whatsnew37-pep557>`"
-msgstr ""
+msgstr ":mod:`dataclasses`: :ref:`PEP 557 -- データクラス <whatsnew37-pep557>`"
 
 #: ../../whatsnew/3.7.rst:70
 msgid ":ref:`whatsnew37_importlib_resources`"
@@ -74,28 +89,32 @@ msgstr ":ref:`whatsnew37_importlib_resources`"
 
 #: ../../whatsnew/3.7.rst:72
 msgid "New built-in features:"
-msgstr ""
+msgstr "新たな組み込み機能:"
 
 #: ../../whatsnew/3.7.rst:74
 msgid ""
 ":ref:`PEP 553 <whatsnew37-pep553>`, the new :func:`breakpoint` function."
-msgstr ""
+msgstr ":ref:`PEP 553 <whatsnew37-pep553>` 、新しい :func:`breakpoint` 関数。"
 
 #: ../../whatsnew/3.7.rst:76
 msgid "Python data model improvements:"
-msgstr ""
+msgstr "Python のデータモデルの改善:"
 
 #: ../../whatsnew/3.7.rst:78
 msgid ""
 ":ref:`PEP 562 <whatsnew37-pep562>`, customization of access to module "
 "attributes."
 msgstr ""
+":ref:`PEP 562 <whatsnew37-pep562>` 、モジュール属性へのアクセスのカスタマイ"
+"ズ。"
 
 #: ../../whatsnew/3.7.rst:81
 msgid ""
 ":ref:`PEP 560 <whatsnew37-pep560>`, core support for typing module and "
 "generic types."
 msgstr ""
+":ref:`PEP 560 <whatsnew37-pep560>` 、typing モジュールとジェネリック型に対す"
+"る言語コアによるサポート。"
 
 #: ../../whatsnew/3.7.rst:84
 msgid ""
@@ -103,68 +122,79 @@ msgid ""
 "objects `has been declared`_ to be an official part of the Python language "
 "spec."
 msgstr ""
+":ref:`dict <typesmapping>`  オブジェクトの挿入順序を保存するという性質が、公"
+"式に Python 言語仕様の一部であると `宣言されました <https://mail.python.org/"
+"pipermail/python-dev/2017-December/151283.html>`_ 。"
 
 #: ../../whatsnew/3.7.rst:90
 msgid "Significant improvements in the standard library:"
-msgstr ""
+msgstr "標準ライブラリーの顕著な改善"
 
 #: ../../whatsnew/3.7.rst:92
 msgid ""
 "The :mod:`asyncio` module has received new features, significant :ref:"
 "`usability and performance improvements <whatsnew37_asyncio>`."
 msgstr ""
+":mod:`asyncio` モジュールに新しい機能が加わりました。\n"
+"顕著な :ref:`使い勝手とパフォーマンスの改善 <whatsnew37_asyncio>` です。"
 
 #: ../../whatsnew/3.7.rst:95
 msgid ""
 "The :mod:`time` module gained support for :ref:`functions with nanosecond "
 "resolution <whatsnew37-pep564>`."
 msgstr ""
+":mod:`time` モジュールが :ref:`ナノ秒単位の分解能を持つ関数 <whatsnew37-"
+"pep564>` をサポートするようになりました。"
 
 #: ../../whatsnew/3.7.rst:98
 msgid "CPython implementation improvements:"
-msgstr ""
+msgstr "CPython の実装の改善:"
 
 #: ../../whatsnew/3.7.rst:100
 msgid "Avoiding the use of ASCII as a default text encoding:"
-msgstr ""
+msgstr "デフォルトのテキストエンコーディングとして ASCII を使わなくなりました:"
 
 #: ../../whatsnew/3.7.rst:102
 msgid ":ref:`PEP 538 <whatsnew37-pep538>`, legacy C locale coercion"
-msgstr ""
+msgstr ":ref:`PEP 538 <whatsnew37-pep538>` 、レガシーな C ロケールの抑圧"
 
 #: ../../whatsnew/3.7.rst:103
 msgid ":ref:`PEP 540 <whatsnew37-pep540>`, forced UTF-8 runtime mode"
-msgstr ""
+msgstr ":ref:`PEP 540 <whatsnew37-pep540>`, UTF-8 実行時モードの強制"
 
 #: ../../whatsnew/3.7.rst:104
 msgid ":ref:`PEP 552 <whatsnew37-pep552>`, deterministic .pycs"
-msgstr ""
+msgstr ":ref:`PEP 552 <whatsnew37-pep552>` 、決定論的な .pyc"
 
 #: ../../whatsnew/3.7.rst:105
 msgid ":ref:`New Python Development Mode <whatsnew37-devmode>`"
-msgstr ":ref:`新版 Python 開發模式 <whatsnew37-devmode>`"
+msgstr ""
 
 #: ../../whatsnew/3.7.rst:106
 msgid ""
 ":ref:`PEP 565 <whatsnew37-pep565>`, improved :exc:`DeprecationWarning` "
 "handling"
 msgstr ""
+":ref:`PEP 565 <whatsnew37-pep565>` 、 :exc:`DeprecationWarning` の取り扱いの"
+"改善"
 
 #: ../../whatsnew/3.7.rst:109
 msgid "C API improvements:"
-msgstr ""
+msgstr "C API の改善:"
 
 #: ../../whatsnew/3.7.rst:111
 msgid ":ref:`PEP 539 <whatsnew37-pep539>`, new C API for thread-local storage"
 msgstr ""
+":ref:`PEP 539 <whatsnew37-pep539>` 、スレッドローカルなストレージのための新し"
+"い C API"
 
 #: ../../whatsnew/3.7.rst:113
 msgid "Documentation improvements:"
-msgstr ""
+msgstr "ドキュメントの改善:"
 
 #: ../../whatsnew/3.7.rst:115
 msgid ":ref:`PEP 545 <whatsnew37-pep545>`, Python documentation translations"
-msgstr ""
+msgstr ":ref:`PEP 545 <whatsnew37-pep545>` 、 Python ドキュメント翻訳"
 
 #: ../../whatsnew/3.7.rst:116
 msgid ""
@@ -172,26 +202,33 @@ msgid ""
 "`French <https://docs.python.org/fr/>`_, and `Korean <https://docs.python."
 "org/ko/>`_."
 msgstr ""
+"新しいドキュメント翻訳: `日本語 <https://docs.python.org/ja/>`_ 、 `フランス"
+"語 <https://docs.python.org/fr/>`_ 、 `韓国語 <https://docs.python.org/ko/"
+">`_ 。"
 
 #: ../../whatsnew/3.7.rst:120
 msgid ""
 "This release features notable performance improvements in many areas. The :"
 "ref:`whatsnew37-perf` section lists them in detail."
 msgstr ""
+"このリリースの特色は、多くの領域での特筆すべきパフォーマンスの改善です。\n"
+":ref:`whatsnew37-perf` 節に詳細な一覧があります。"
 
 #: ../../whatsnew/3.7.rst:123
 msgid ""
 "For a list of changes that may affect compatibility with previous Python "
 "releases please refer to the :ref:`porting-to-python-37` section."
 msgstr ""
+"1つ前にリリースされた Python との互換性に影響を持つ変更の一覧については、 :"
+"ref:`porting-to-python-37` 節を参照してください。"
 
 #: ../../whatsnew/3.7.rst:128
 msgid "New Features"
-msgstr ""
+msgstr "新しい機能"
 
 #: ../../whatsnew/3.7.rst:133
 msgid "PEP 563: Postponed Evaluation of Annotations"
-msgstr ""
+msgstr "PEP 563: アノテーションの遅延評価"
 
 #: ../../whatsnew/3.7.rst:135
 msgid ""
@@ -199,18 +236,25 @@ msgid ""
 "with the functionality of annotations added in :pep:`3107` and refined "
 "further in :pep:`526`:"
 msgstr ""
+"Python における型ヒントの到来により、 :pep:`3107` で追加され :pep:`526` でさ"
+"らに改善されたアノテーションの機能について、使い勝手に関する 2 つの明白な問題"
+"が明らかになりました:"
 
 #: ../../whatsnew/3.7.rst:139
 msgid ""
 "annotations could only use names which were already available in the current "
 "scope, in other words they didn't support forward references of any kind; and"
 msgstr ""
+"アノテーションには現在のスコープで既に使える状態になっている名前しか使えな"
+"い。言い換えれば、どんな種類の前方参照もサポートしない。"
 
 #: ../../whatsnew/3.7.rst:143
 msgid ""
 "annotating source code had adverse effects on startup time of Python "
 "programs."
 msgstr ""
+"ソースコードに注釈を付けるのは Python プログラムの起動時間に好ましくない影響"
+"がある。"
 
 #: ../../whatsnew/3.7.rst:146
 msgid ""
@@ -223,34 +267,47 @@ msgid ""
 "(since short strings are interned by the interpreter) and make startup time "
 "faster."
 msgstr ""
+"これらの問題はどちらもアノテーションの評価を遅延することで解決します。\n"
+"アノテーションの定義時に、アノテーションに含まれる式を評価するコードをコンパ"
+"イルする代わりに、コンパイラは当該の式の AST と同等な文字列形式でアノテーショ"
+"ンを保存します。\n"
+"必要であれば、 :func:`typing.get_type_hints` を使って実行時にアノテーションを"
+"解決できます。\n"
+"たいていのケースではその必要は無く、(短い文字列はインタプリタによって格納され"
+"るので) アノテーションを保存するコストはより安くなり、起動時間がより速くなり"
+"ます。"
 
 #: ../../whatsnew/3.7.rst:155
 msgid ""
 "Usability-wise, annotations now support forward references, making the "
 "following syntax valid::"
 msgstr ""
+"使い勝手の点では、アノテーションは前方参照をサポートするようになり、次の文法"
+"が妥当なものになりました::"
 
 #: ../../whatsnew/3.7.rst:169
 msgid ""
 "Since this change breaks compatibility, the new behavior needs to be enabled "
 "on a per-module basis in Python 3.7 using a :mod:`__future__` import::"
 msgstr ""
+"この変更は後方互換性を壊してしまうので、新しい振る舞いは Python 3.7 では :"
+"mod:`__future__` インポートを使いモジュールごとに有効化する必要があります::"
 
 #: ../../whatsnew/3.7.rst:174
 msgid "It will become the default in Python 3.10."
-msgstr ""
+msgstr "この振る舞いは Python 3.10 でデフォルトになります。"
 
 #: ../../whatsnew/3.7.rst:178
 msgid ":pep:`563` -- Postponed evaluation of annotations"
-msgstr ""
+msgstr ":pep:`563` -- アノテーションの遅延評価"
 
 #: ../../whatsnew/3.7.rst:179
 msgid "PEP written and implemented by Łukasz Langa."
-msgstr ""
+msgstr "PEP written and implemented by Łukasz Langa."
 
 #: ../../whatsnew/3.7.rst:185
 msgid "PEP 538: Legacy C Locale Coercion"
-msgstr ""
+msgstr "PEP 538: レガシーな C ロケールの抑圧"
 
 #: ../../whatsnew/3.7.rst:187
 msgid ""
@@ -259,6 +316,10 @@ msgid ""
 "assumption currently implied by the use of the default C or POSIX locale on "
 "non-Windows platforms."
 msgstr ""
+"Python 3 シリーズにおける継続中の課題の一つは、非 Windows プラットフォームで"
+"はデフォルトの C ロケールつまり POSIX ロケールの使用から現在のところ必然的に"
+"導かれてしまう \"7-bit ASCII\" テキストエンコーディングの仮定を取り扱う賢明な"
+"デフォルトの方針を決定することです。"
 
 #: ../../whatsnew/3.7.rst:192
 msgid ""
@@ -270,12 +331,21 @@ msgid ""
 "`readline`) will assume the use of UTF-8 as the default text encoding, "
 "rather than ASCII."
 msgstr ""
+":pep:`538` はインタープリタのデフォルトのコマンドラインインターフェースを更新"
+"し、新しく加わった :envvar:`PYTHONCOERCECLOCALE` 環境変数のドキュメントにある"
+"通り、自動的にロケールを UTF-8 に基づいた利用可能なロケールへ強制します。\n"
+"この方法で ``LC_CTYPE`` を自動的に設定すると、コアのインタープリタと (:mod:"
+"`readline` などの) ロケールを考慮する C 拡張はデフォルトのテキストエンコー"
+"ディングとして ASCII ではなく UTF-8 を使うことになります。"
 
 #: ../../whatsnew/3.7.rst:200
 msgid ""
 "The platform support definition in :pep:`11` has also been updated to limit "
 "full text handling support to suitably configured non-ASCII based locales."
 msgstr ""
+":pep:`11` にあるプラットフォームのサポート定義も、適切に設定された非 ASCII に"
+"基づくロケールだけにテキスト処理の完全なサポートを制限するよう更新されまし"
+"た。"
 
 #: ../../whatsnew/3.7.rst:203
 msgid ""
@@ -285,6 +355,12 @@ msgid ""
 "UTF-8``, ``C.utf8``, and ``UTF-8``).  The default error handler for :data:"
 "`~sys.stderr` continues to be ``backslashreplace``, regardless of locale."
 msgstr ""
+"この変更の一部として、強制対象として定義されたのロケール (現時点では ``C."
+"UTF-8``, ``C.utf8``, ``UTF-8``) を使っているときの :data:`~sys.stdin` と :"
+"data:`~sys.stdout` のデフォルトのエラーハンドラは (``strict`` ではなく) "
+"``surrogateescape`` になります。\n"
+":data:`~sys.stderr` のデフォルトのエラーハンドラは、ロケールに関係無く引き続"
+"き ``backslashreplace`` です。"
 
 #: ../../whatsnew/3.7.rst:209
 msgid ""
@@ -295,6 +371,11 @@ msgid ""
 "runtime to emit a warning if the legacy C locale remains active when the "
 "core interpreter is initialized."
 msgstr ""
+"デフォルトではロケールの強制は暗黙に行われますが、ロケールが関係する結合にお"
+"ける問題のデバッグを支援するために、 ``PYTHONCOERCECLOCALE=warn`` を設定する"
+"ことで (:data:`~sys.stderr` に直接出力される) 明示的な警告を要求できます。\n"
+"この設定を有効にしていると、コアのインタプリタの初期化時にレガシーな C ロケー"
+"ルが有効なままの場合、 Python 実行器が警告を出力します。"
 
 #: ../../whatsnew/3.7.rst:215
 msgid ""
@@ -306,18 +387,25 @@ msgid ""
 "target locale is available (as occurs on RHEL/CentOS 7, for example), Python "
 "3.7 also implements :ref:`whatsnew37-pep540`."
 msgstr ""
+":pep:`538` のロケール強制には、(非 Python アプリケーションや古いバージョンの "
+"Python で動くのも含めた) 子プロセスに加え (GNU ``readline`` などの) 影響を受"
+"ける拡張モジュールにも利益がある一方、適切な対象ロケールが実行するシステムに"
+"存在することを要求するという負の面もあります。\n"
+"(例えば、RHEL/CentOS 7 で起きているように) 適切な対象ロケールで利用可能なもの"
+"が無いケースにきちんと対処するために、 Python 3.7 には :ref:`whatsnew37-"
+"pep540` も実装されています。"
 
 #: ../../whatsnew/3.7.rst:225
 msgid ":pep:`538` -- Coercing the legacy C locale to a UTF-8 based locale"
-msgstr ""
+msgstr ":pep:`538` -- レガシーな C ロケールから UTF-8 ベースのロケールへの強制"
 
 #: ../../whatsnew/3.7.rst:226
 msgid "PEP written and implemented by Nick Coghlan."
-msgstr "由 Nick Coghlan 撰寫 PEP 與實作。"
+msgstr "PEP written and implemented by Nick Coghlan."
 
 #: ../../whatsnew/3.7.rst:232
 msgid "PEP 540: Forced UTF-8 Runtime Mode"
-msgstr ""
+msgstr "PEP 540: 強制 UTF-8 実行モード"
 
 #: ../../whatsnew/3.7.rst:234
 msgid ""
@@ -360,21 +448,23 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:260
 msgid ":pep:`540` -- Add a new UTF-8 mode"
-msgstr ""
+msgstr ":pep:`540` -- 新しい UTF-8 モードの追加"
 
 #: ../../whatsnew/3.7.rst:261 ../../whatsnew/3.7.rst:363
 msgid "PEP written and implemented by Victor Stinner"
-msgstr "由 Victor Stinner 撰寫 PEP 與實作"
+msgstr "PEP written and implemented by Victor Stinner"
 
 #: ../../whatsnew/3.7.rst:267
 msgid "PEP 553: Built-in ``breakpoint()``"
-msgstr ""
+msgstr "PEP 553: 組み込みの ``breakpoint()``"
 
 #: ../../whatsnew/3.7.rst:269
 msgid ""
 "Python 3.7 includes the new built-in :func:`breakpoint` function as an easy "
 "and consistent way to enter the Python debugger."
 msgstr ""
+"Python 3.7 には、 Python デバッガへ入って行くための簡単で一貫した手段である、"
+"新しい組み込みの :func:`breakpoint` 関数があります。"
 
 #: ../../whatsnew/3.7.rst:272
 msgid ""
@@ -388,15 +478,15 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:282
 msgid ":pep:`553` -- Built-in breakpoint()"
-msgstr ""
+msgstr ":pep:`553` -- 組み込みの breakpoint()"
 
 #: ../../whatsnew/3.7.rst:283
 msgid "PEP written and implemented by Barry Warsaw"
-msgstr "由 Barry Warsaw 撰寫 PEP 與實作"
+msgstr "PEP written and implemented by Barry Warsaw"
 
 #: ../../whatsnew/3.7.rst:289
 msgid "PEP 539: New C API for Thread-Local Storage"
-msgstr ""
+msgstr "PEP 539: スレッドローカルストレージのための新しい C API"
 
 #: ../../whatsnew/3.7.rst:291
 msgid ""
@@ -434,11 +524,11 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:315
 msgid "PEP written by Erik M. Bray; implementation by Masayuki Yamamoto."
-msgstr "PEP 由 Erik M. Bray 撰寫；由 Masayuki Yamamoto 實作。"
+msgstr ""
 
 #: ../../whatsnew/3.7.rst:321
 msgid "PEP 562: Customization of Access to Module Attributes"
-msgstr ""
+msgstr "PEP 562: モジュール属性へのアクセスのカスタマイズ"
 
 #: ../../whatsnew/3.7.rst:323
 msgid ""
@@ -446,24 +536,28 @@ msgid ""
 "whenever a module attribute is otherwise not found.  Defining :meth:"
 "`__dir__` on modules is now also allowed."
 msgstr ""
+"Python 3.7 ではモジュールに :meth:`__getattr__` が定義でき、モジュール属性が"
+"あるときでも無いときでもこのメソッドが呼び出されます。\n"
+":meth:`__dir__` メソッドもモジュールに定義できます。"
 
 #: ../../whatsnew/3.7.rst:327
 msgid ""
 "A typical example of where this may be useful is module attribute "
 "deprecation and lazy loading."
 msgstr ""
+"この機能が役に立つ典型的な実例はモジュール属性の非推奨化と遅延読み込みです。"
 
 #: ../../whatsnew/3.7.rst:332
 msgid ":pep:`562` -- Module ``__getattr__`` and ``__dir__``"
-msgstr ""
+msgstr ":pep:`562` -- モジュールの ``__getattr__`` と ``__dir__``"
 
 #: ../../whatsnew/3.7.rst:333 ../../whatsnew/3.7.rst:422
 msgid "PEP written and implemented by Ivan Levkivskyi"
-msgstr "由 Ivan Levkivskyi 撰寫 PEP 與實作"
+msgstr "PEP written and implemented by Ivan Levkivskyi"
 
 #: ../../whatsnew/3.7.rst:339
 msgid "PEP 564: New Time Functions With Nanosecond Resolution"
-msgstr ""
+msgstr "PEP 564: ナノ秒単位の分解能を持つ新しい時間関数"
 
 #: ../../whatsnew/3.7.rst:341
 msgid ""
@@ -473,6 +567,10 @@ msgid ""
 "\"nanosecond\" variants of the existing timer functions to the :mod:`time` "
 "module:"
 msgstr ""
+"モダンなシステムの時計の分解能は、 :func:`time.time` 関数やそれに類する関数が"
+"返す浮動小数点数の精度を越えることがあります。\n"
+"精度を失わないように、 :pep:`564` により既存の時間関数の 6 つの新しい \"ナノ"
+"秒\" 版が :mod:`time` モジュールに追加されました:"
 
 #: ../../whatsnew/3.7.rst:347 ../../whatsnew/3.7.rst:1447
 msgid ":func:`time.clock_gettime_ns`"
@@ -500,7 +598,7 @@ msgstr ":func:`time.time_ns`"
 
 #: ../../whatsnew/3.7.rst:354
 msgid "The new functions return the number of nanoseconds as an integer value."
-msgstr ""
+msgstr "新しい関数は、整数値としてナノ秒単位の数値を返します。"
 
 #: ../../whatsnew/3.7.rst:356
 msgid ""
@@ -511,7 +609,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:362
 msgid ":pep:`564` -- Add new time functions with nanosecond resolution"
-msgstr ""
+msgstr ":pep:`564` -- ナノ秒単位の分解能を持つ新しい時間関数の追加"
 
 #: ../../whatsnew/3.7.rst:369
 msgid "PEP 565: Show DeprecationWarning in ``__main__``"
@@ -570,11 +668,12 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:401
 msgid "PEP written and implemented by Nick Coghlan"
-msgstr "由 Nick Coghlan 撰寫 PEP 與實作"
+msgstr "PEP written and implemented by Nick Coghlan"
 
 #: ../../whatsnew/3.7.rst:407
 msgid "PEP 560: Core Support for ``typing`` module and Generic Types"
 msgstr ""
+"PEP 560: ``typing`` モジュールとジェネリック型に対する言語コアによるサポート"
 
 #: ../../whatsnew/3.7.rst:409
 msgid ""
@@ -588,10 +687,21 @@ msgid ""
 "without metaclass conflicts, and several long standing bugs in :mod:`typing` "
 "module are fixed."
 msgstr ""
+"当初 :pep:`484` は、 CPython のインタプリタのコア部分に *どんな* 変更も施さな"
+"いような方法で設計されていました。\n"
+"今では型ヒントと :mod:`typing` モジュールはコミュニティに広く使われるように"
+"なったため、この制限は取り除かれました。\n"
+"この PEP では、2 つの特殊メソッド :meth:`__class_getitem__` と "
+"``__mro_entries__`` が導入され、これらのメソッドはほとんどのクラスと :mod:"
+"`typing` にある特別な構成物に使われています。\n"
+"その結果、型に関する様々な操作の速度が最大で 7 倍にまでなり、ジェネリック型は"
+"メタクラスの衝突を起こさずに使えるようになり、 :mod:`typing` にずっとあったい"
+"くつかのバグが修正されました。"
 
 #: ../../whatsnew/3.7.rst:421
 msgid ":pep:`560` -- Core support for typing module and generic types"
 msgstr ""
+":pep:`560` -- typing モジュールとジェネリック型に対する言語コアによるサポート"
 
 #: ../../whatsnew/3.7.rst:428
 msgid "PEP 552: Hash-based .pyc Files"
@@ -631,7 +741,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:452
 msgid "See :ref:`pyc-invalidation` for more information."
-msgstr "更多資訊請見 :ref:`pyc-invalidation`\\ 。"
+msgstr ""
 
 #: ../../whatsnew/3.7.rst:456
 msgid ":pep:`552` -- Deterministic pycs"
@@ -639,11 +749,11 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:457
 msgid "PEP written and implemented by Benjamin Peterson"
-msgstr "由 Benjamin Peterson 撰寫 PEP 與實作"
+msgstr "PEP written and implemented by Benjamin Peterson"
 
 #: ../../whatsnew/3.7.rst:463
 msgid "PEP 545: Python Documentation Translations"
-msgstr "PEP 545：Python 文件翻譯"
+msgstr ""
 
 #: ../../whatsnew/3.7.rst:465
 msgid ""
@@ -657,25 +767,27 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:470
 msgid "Japanese: https://docs.python.org/ja/"
-msgstr "日文：https://docs.python.org/ja/"
+msgstr "日本語: https://docs.python.org/ja/"
 
 #: ../../whatsnew/3.7.rst:471
 msgid "French: https://docs.python.org/fr/"
-msgstr "法文：https://docs.python.org/fr/"
+msgstr "フランス語: https://docs.python.org/fr/"
 
 #: ../../whatsnew/3.7.rst:472
 msgid "Korean: https://docs.python.org/ko/"
-msgstr "韓文：https://docs.python.org/ko/"
+msgstr "韓国語: https://docs.python.org/ko/"
 
 #: ../../whatsnew/3.7.rst:477
 msgid ":pep:`545` -- Python Documentation Translations"
-msgstr ":pep:`545` -- Python 文件翻譯"
+msgstr ":pep:`545` -- Python ドキュメント翻訳"
 
 #: ../../whatsnew/3.7.rst:477
 msgid ""
 "PEP written and implemented by Julien Palard, Inada Naoki, and Victor "
 "Stinner."
-msgstr "PEP 由 Julien Palard、Inada Naoki 與 Victor Stinner 撰寫。"
+msgstr ""
+"PEP written and implemented by Julien Palard, Inada Naoki, and Victor "
+"Stinner."
 
 #: ../../whatsnew/3.7.rst:484
 msgid "Python Development Mode (-X dev)"
@@ -693,7 +805,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:495
 msgid "Other Language Changes"
-msgstr ""
+msgstr "その他の言語変更"
 
 #: ../../whatsnew/3.7.rst:497
 msgid ""
@@ -769,7 +881,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:545
 msgid "New Modules"
-msgstr "新模組"
+msgstr "新たなモジュール"
 
 #: ../../whatsnew/3.7.rst:550
 msgid "contextvars"
@@ -793,15 +905,15 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:565
 msgid ":pep:`567` -- Context Variables"
-msgstr ""
+msgstr ":pep:`567` -- コンテキスト変数"
 
 #: ../../whatsnew/3.7.rst:566
 msgid "PEP written and implemented by Yury Selivanov"
-msgstr "由 Yury Selivanov 撰寫 PEP 與實作"
+msgstr "PEP written and implemented by Yury Selivanov"
 
 #: ../../whatsnew/3.7.rst:572
 msgid "dataclasses"
-msgstr "dataclasses"
+msgstr "データクラス"
 
 #: ../../whatsnew/3.7.rst:574
 msgid ""
@@ -811,21 +923,23 @@ msgid ""
 "`~object.__repr__`, :meth:`~object.__eq__`, and :meth:`~object.__hash__` are "
 "generated automatically."
 msgstr ""
+"新しい :func:`~dataclasses.dataclass` デコレータにより *データクラス* を宣言"
+"する方法が提供されます。\n"
+"データクラスは属性を記述するのに、クラス変数アノテーションを使います。\n"
+"コンストラクタや他の :meth:`~object.__repr__`, :meth:`~object.__eq__`, :meth:"
+"`~object.__hash__` などのマジックメソッドは自動で生成されます。"
 
 #: ../../whatsnew/3.7.rst:580
 msgid "Example::"
-msgstr ""
-"範例：\n"
-"\n"
-"::"
+msgstr "以下はプログラム例です::"
 
 #: ../../whatsnew/3.7.rst:593
 msgid ":pep:`557` -- Data Classes"
-msgstr ""
+msgstr ":pep:`557` -- データクラス"
 
 #: ../../whatsnew/3.7.rst:594
 msgid "PEP written and implemented by Eric V. Smith"
-msgstr "由 Eric V. Smith 撰寫 PEP 與實作"
+msgstr "PEP written and implemented by Eric V. Smith"
 
 #: ../../whatsnew/3.7.rst:600
 msgid "importlib.resources"
@@ -844,7 +958,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:610
 msgid "Contributed by Barry Warsaw and Brett Cannon in :issue:`32248`."
-msgstr ""
+msgstr "Contributed by Barry Warsaw and Brett Cannon in :issue:`32248`."
 
 #: ../../whatsnew/3.7.rst:614
 msgid ""
@@ -854,7 +968,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:619
 msgid "Improved Modules"
-msgstr ""
+msgstr "改良されたモジュール"
 
 #: ../../whatsnew/3.7.rst:623
 msgid "argparse"
@@ -989,7 +1103,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:723
 msgid "(Contributed by Yury Selivanov in :issue:`32662`.)"
-msgstr ""
+msgstr "(Contributed by Yury Selivanov in :issue:`32662`.)"
 
 #: ../../whatsnew/3.7.rst:725
 msgid ""
@@ -1094,6 +1208,9 @@ msgid ""
 "ease the customization of CSS classes in the produced HTML calendar. "
 "(Contributed by Oz Tiram in :issue:`30095`.)"
 msgstr ""
+":class:`~calendar.HTMLCalendar` クラスに、作成された HTML カレンダーの CSS ク"
+"ラスのカスタマイズを容易にするクラス属性が新しく加わりました。\n"
+"(Contributed by Oz Tiram in :issue:`30095`.)"
 
 #: ../../whatsnew/3.7.rst:796 ../../whatsnew/3.7.rst:1965
 msgid "collections"
@@ -1104,6 +1221,8 @@ msgid ""
 "``collections.namedtuple()`` now supports default values. (Contributed by "
 "Raymond Hettinger in :issue:`32320`.)"
 msgstr ""
+"``collections.namedtuple()`` がデフォルト値をサポートするようになりました。\n"
+"(Contributed by Raymond Hettinger in :issue:`32320`.)"
 
 #: ../../whatsnew/3.7.rst:803
 msgid "compileall"
@@ -1129,6 +1248,11 @@ msgid ""
 "support the new *initializer* and *initargs* constructor arguments. "
 "(Contributed by Antoine Pitrou in :issue:`21423`.)"
 msgstr ""
+":class:`ProcessPoolExecutor <concurrent.futures.ProcessPoolExecutor>` と :"
+"class:`ThreadPoolExecutor <concurrent.futures.ThreadPoolExecutor>` が新しいコ"
+"ンストラクタ引数 *initializer* と *initargs* をサポートするようになりまし"
+"た。\n"
+"(Contributed by Antoine Pitrou in :issue:`21423`.)"
 
 #: ../../whatsnew/3.7.rst:821
 msgid ""
@@ -1136,6 +1260,10 @@ msgid ""
 "can now take the multiprocessing context via the new *mp_context* argument. "
 "(Contributed by Thomas Moreau in :issue:`31540`.)"
 msgstr ""
+":class:`ProcessPoolExecutor <concurrent.futures.ProcessPoolExecutor>` が新し"
+"い *mp_context* 引数を通して multiprocessing の context を受け取れるようにな"
+"りました。\n"
+"(Contributed by Thomas Moreau in :issue:`31540`.)"
 
 #: ../../whatsnew/3.7.rst:827
 msgid "contextlib"
@@ -1346,13 +1474,15 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:978
 msgid "idlelib and IDLE"
-msgstr ""
+msgstr "idlelib と IDLE"
 
 #: ../../whatsnew/3.7.rst:980
 msgid ""
 "Multiple fixes for autocompletion. (Contributed by Louie Lu in :issue:"
 "`15786`.)"
 msgstr ""
+"自動補完におけるいくつもの修正。\n"
+"(Contributed by Louie Lu in :issue:`15786`.)"
 
 #: ../../whatsnew/3.7.rst:982
 msgid ""
@@ -1419,7 +1549,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:1024
 msgid "The changes above have been backported to 3.6 maintenance releases."
-msgstr ""
+msgstr "上で挙げた変更は 3.6 のメンテナンスリリースにバックポートされました。"
 
 #: ../../whatsnew/3.7.rst:1026
 msgid "NEW in 3.7.4:"
@@ -1542,6 +1672,8 @@ msgid ""
 ":class:`~logging.Logger` instances can now be pickled. (Contributed by Vinay "
 "Sajip in :issue:`30520`.)"
 msgstr ""
+":class:`~logging.Logger` インスタンスが pickle 化できるようになりました。\n"
+"(Contributed by Vinay Sajip in :issue:`30520`.)"
 
 #: ../../whatsnew/3.7.rst:1109
 msgid ""
@@ -1566,6 +1698,9 @@ msgid ""
 "The new :func:`math.remainder` function implements the IEEE 754-style "
 "remainder operation.  (Contributed by Mark Dickinson in :issue:`29962`.)"
 msgstr ""
+"新しい :func:`math.remainder` 関数が IEEE 754 方式の剰余演算で実装されていま"
+"す。\n"
+"Contributed by Mark Dickinson in :issue:`29962`.)"
 
 #: ../../whatsnew/3.7.rst:1126
 msgid "mimetypes"
@@ -1740,8 +1875,8 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:1243
 msgid ""
-":func:`re.split` now supports splitting on a pattern like ``r'\\b'``, ``'^"
-"$'`` or ``(?=-)`` that matches an empty string. (Contributed by Serhiy "
+":func:`re.split` now supports splitting on a pattern like ``r'\\b'``, "
+"``'^$'`` or ``(?=-)`` that matches an empty string. (Contributed by Serhiy "
 "Storchaka in :issue:`25054`.)"
 msgstr ""
 
@@ -2319,7 +2454,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:1645
 msgid "C API Changes"
-msgstr ""
+msgstr "C API の変更"
 
 #: ../../whatsnew/3.7.rst:1647
 msgid ""
@@ -2511,7 +2646,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:1771
 msgid "Optimizations"
-msgstr ""
+msgstr "最適化"
 
 #: ../../whatsnew/3.7.rst:1773
 msgid ""
@@ -2699,7 +2834,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:1890
 msgid "Other CPython Implementation Changes"
-msgstr ""
+msgstr "その他の CPython の実装の変更"
 
 #: ../../whatsnew/3.7.rst:1892
 msgid ""
@@ -2737,7 +2872,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:1916
 msgid "Deprecated Python Behavior"
-msgstr ""
+msgstr "非推奨の Python の挙動"
 
 #: ../../whatsnew/3.7.rst:1918
 msgid ""
@@ -2763,7 +2898,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:1938
 msgid "Deprecated Python modules, functions and methods"
-msgstr ""
+msgstr "非推奨の Python モジュール、関数、メソッド"
 
 #: ../../whatsnew/3.7.rst:1941
 msgid "aifc"
@@ -2925,7 +3060,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:2089
 msgid "Deprecated functions and types of the C API"
-msgstr ""
+msgstr "C API の非推奨の関数ならびに型"
 
 #: ../../whatsnew/3.7.rst:2091
 msgid ""
@@ -2946,11 +3081,11 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:2104
 msgid "Platform Support Removals"
-msgstr ""
+msgstr "サポート対象プラットフォームからの除外"
 
 #: ../../whatsnew/3.7.rst:2106
 msgid "FreeBSD 9 and older are no longer officially supported."
-msgstr ""
+msgstr "FreeBSD 9 とそれ以前のバージョンは公式にはサポートされなくなりました。"
 
 #: ../../whatsnew/3.7.rst:2107
 msgid ""
@@ -2994,7 +3129,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:2132
 msgid "API and Feature Removals"
-msgstr ""
+msgstr "API と機能の削除"
 
 #: ../../whatsnew/3.7.rst:2134
 msgid "The following features and APIs have been removed from Python 3.7:"
@@ -3119,17 +3254,19 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:2217
 msgid "Porting to Python 3.7"
-msgstr ""
+msgstr "Python 3.7 への移植"
 
 #: ../../whatsnew/3.7.rst:2219
 msgid ""
 "This section lists previously described changes and other bugfixes that may "
 "require changes to your code."
 msgstr ""
+"このセクションでは前述の変更とバグフィックスにより必要となるかもしれないコー"
+"ドの変更を列挙します:"
 
 #: ../../whatsnew/3.7.rst:2224
 msgid "Changes in Python Behavior"
-msgstr ""
+msgstr "Python の挙動の変更"
 
 #: ../../whatsnew/3.7.rst:2226
 msgid ""
@@ -3157,6 +3294,7 @@ msgid ""
 "Due to an oversight, earlier Python versions erroneously accepted the "
 "following syntax::"
 msgstr ""
+"以前のバージョンの Python で、誤って以下の構文を許容してしまっていました::"
 
 #: ../../whatsnew/3.7.rst:2247
 msgid ""
@@ -3181,7 +3319,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:2263
 msgid "Changes in the Python API"
-msgstr ""
+msgstr "Python API の変更"
 
 #: ../../whatsnew/3.7.rst:2265
 msgid ""
@@ -3450,7 +3588,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:2451
 msgid "Changes in the C API"
-msgstr "C API 中的改動"
+msgstr "C API の変更"
 
 #: ../../whatsnew/3.7.rst:2453
 msgid ""
@@ -3466,7 +3604,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:2464
 msgid "CPython bytecode changes"
-msgstr ""
+msgstr "CPython バイトコードの変更"
 
 #: ../../whatsnew/3.7.rst:2466
 msgid ""
@@ -3490,7 +3628,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:2483
 msgid "Other CPython implementation changes"
-msgstr ""
+msgstr "その他の CPython の実装の変更"
 
 #: ../../whatsnew/3.7.rst:2485
 msgid ""
@@ -3549,7 +3687,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:2524
 msgid "Notable changes in Python 3.7.1"
-msgstr ""
+msgstr "Python 3.7.1 での重要な変更点"
 
 #: ../../whatsnew/3.7.rst:2526
 msgid ""
@@ -3578,7 +3716,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:2543
 msgid "Notable changes in Python 3.7.2"
-msgstr ""
+msgstr "Python 3.7.2 での重要な変更点"
 
 #: ../../whatsnew/3.7.rst:2545
 msgid ""
@@ -3592,7 +3730,7 @@ msgstr ""
 
 #: ../../whatsnew/3.7.rst:2553
 msgid "Notable changes in Python 3.7.6"
-msgstr ""
+msgstr "Python 3.7.6 での重要な変更点"
 
 #: ../../whatsnew/3.7.rst:2555
 msgid ""
@@ -3603,10 +3741,15 @@ msgid ""
 "(Contributed by Kyle Stanley, Antoine Pitrou, and Yury Selivanov in :issue:"
 "`37228`.)"
 msgstr ""
+"セキュリティ上の重大な懸念により、:meth:`asyncio.loop."
+"create_datagram_endpoint` での *reuse_address* 引数は無効になりました。これは"
+"ソケットオプション `SO_REUSEADDR`` のUDP における挙動が原因です。詳しくは、"
+"``loop.create_datagram_endpoint()`` のドキュメントを参照してください。(Kyle "
+"Stanley, Antoine Pitrou, Yury Selivanov による貢献 :issue:`37228`)"
 
 #: ../../whatsnew/3.7.rst:2563
 msgid "Notable changes in Python 3.7.10"
-msgstr ""
+msgstr "Python 3.7.10 での重要な変更点"
 
 #: ../../whatsnew/3.7.rst:2565
 msgid ""

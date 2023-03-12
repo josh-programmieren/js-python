@@ -1,30 +1,36 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Yasuyuki ARAKI, 2021
+# tomo, 2022
+# Takanori Suzuki <takanori@takanory.net>, 2023
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-11 00:15+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-03-03 14:14+0000\n"
+"PO-Revision-Date: 2021-06-29 13:04+0000\n"
+"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2023\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../../whatsnew/3.10.rst:3
 msgid "What's New In Python 3.10"
-msgstr "Python 3.10 有什麼新功能"
+msgstr "What's New In Python 3.10"
 
 #: ../../whatsnew/3.10.rst:0
 msgid "Editor"
-msgstr "編輯者"
+msgstr "編集者"
 
 #: ../../whatsnew/3.10.rst:5
 msgid "Pablo Galindo Salgado"
@@ -36,26 +42,29 @@ msgid ""
 "Python 3.10 was released on October 4, 2021. For full details, see the :ref:"
 "`changelog <changelog>`."
 msgstr ""
+"この記事では Python 3.9 と比較した Python 3.10 の新機能を解説します。Python "
+"3.10 は2021年10月4日にリリースされました。全詳細については :ref:`変更履歴 "
+"<changelog>` をご覧ください。"
 
 #: ../../whatsnew/3.10.rst:52
 msgid "Summary -- Release highlights"
-msgstr ""
+msgstr "概要 -- リリースハイライト"
 
 #: ../../whatsnew/3.10.rst:60
 msgid "New syntax features:"
-msgstr ""
+msgstr "新たな文法機能:"
 
 #: ../../whatsnew/3.10.rst:62
 msgid ":pep:`634`, Structural Pattern Matching: Specification"
-msgstr ""
+msgstr ":pep:`634`、構造的パターンマッチ: 仕様"
 
 #: ../../whatsnew/3.10.rst:63
 msgid ":pep:`635`, Structural Pattern Matching: Motivation and Rationale"
-msgstr ""
+msgstr ":pep:`635`、構造的パターンマッチ: モチベーションと原理"
 
 #: ../../whatsnew/3.10.rst:64
 msgid ":pep:`636`, Structural Pattern Matching: Tutorial"
-msgstr ""
+msgstr ":pep:`636`、構造的パターンマッチ: チュートリアル"
 
 #: ../../whatsnew/3.10.rst:65
 msgid ""
@@ -64,7 +73,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:67
 msgid "New features in the standard library:"
-msgstr ""
+msgstr "標準ライブラリの新機能:"
 
 #: ../../whatsnew/3.10.rst:69
 msgid ":pep:`618`, Add Optional Length-Checking To zip."
@@ -72,7 +81,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:71
 msgid "Interpreter improvements:"
-msgstr ""
+msgstr "インタプリタの改善:"
 
 #: ../../whatsnew/3.10.rst:73
 msgid ":pep:`626`, Precise line numbers for debugging and other tools."
@@ -80,7 +89,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:75
 msgid "New typing features:"
-msgstr ""
+msgstr "新しい型ヒントの機能:"
 
 #: ../../whatsnew/3.10.rst:77
 msgid ":pep:`604`, Allow writing union types as X | Y"
@@ -126,7 +135,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:92 ../../whatsnew/3.10.rst:2041
 msgid "New Features"
-msgstr ""
+msgstr "新しい機能"
 
 #: ../../whatsnew/3.10.rst:97
 msgid "Parenthesized context managers"
@@ -368,7 +377,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:408
 msgid "PEP 634: Structural Pattern Matching"
-msgstr ""
+msgstr "PEP 634: 構造的パターンマッチ"
 
 #: ../../whatsnew/3.10.rst:410
 msgid ""
@@ -481,6 +490,7 @@ msgstr ""
 msgid ""
 "You can combine several literals in a single pattern using ``|`` (\"or\")::"
 msgstr ""
+"複数のリテラルを``|`` (\"or\")を使用して組み合わせて1つのパターンにできます。"
 
 #: ../../whatsnew/3.10.rst:501
 msgid "Behavior without the wildcard"
@@ -543,6 +553,11 @@ msgid ""
 "\"y\"), the following patterns are all equivalent (and all bind the ``y`` "
 "attribute to the ``var`` variable)::"
 msgstr ""
+"いくつかの組み込みクラスでは位置引数が使用でき、属性の順番を提供します(例: "
+"データクラス)。クラスの ``__match_args__`` 特殊属性でによって、パターンの中で"
+"属性の明確な位置を定義することもできます。(\"x\", \"y\")が設定された場合、以"
+"下のすべてのパターンは等価です(すべて属性 ``y`` が ``var`` 変数に関連づけられ"
+"ます)::"
 
 #: ../../whatsnew/3.10.rst:584
 msgid "Nested patterns"
@@ -581,6 +596,9 @@ msgid ""
 "guard is false, ``match`` goes on to try the next case block.  Note that "
 "value capture happens before the guard is evaluated::"
 msgstr ""
+"パターンに ``if`` 節を追加できます。これは \"ガード\" と呼ばれます。ガードが"
+"falseの場合、``match`` は次のcaseブロックの処理に移動します。ガードを評価する"
+"前に値が取り出されることに注意してください::"
 
 #: ../../whatsnew/3.10.rst:631
 msgid "Other Key Features"
@@ -671,11 +689,11 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:704
 msgid "See :ref:`io-text-encoding` for more information."
-msgstr "更多資訊請見 :ref:`io-text-encoding`\\ 。"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:709
 msgid "New Features Related to Type Hints"
-msgstr ""
+msgstr "型ヒントに関連する新しい機能"
 
 #: ../../whatsnew/3.10.rst:711
 msgid ""
@@ -712,7 +730,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:741
 msgid "See :ref:`types-union` and :pep:`604` for more details."
-msgstr "更多資訊請見 :ref:`types-union` 與 :pep:`604`\\ 。"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:743
 msgid ""
@@ -781,7 +799,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:789
 msgid "See :pep:`613` for more details."
-msgstr "更多資訊請見 :pep:`613`\\ 。"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:791
 msgid "(Contributed by Mikhail Golubev in :issue:`41923`.)"
@@ -807,7 +825,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:805
 msgid "Other Language Changes"
-msgstr ""
+msgstr "その他の言語変更"
 
 #: ../../whatsnew/3.10.rst:807
 msgid ""
@@ -938,7 +956,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:887
 msgid "New Modules"
-msgstr ""
+msgstr "新たなモジュール"
 
 #: ../../whatsnew/3.10.rst:889
 msgid "None yet."
@@ -946,7 +964,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:893
 msgid "Improved Modules"
-msgstr ""
+msgstr "改良されたモジュール"
 
 #: ../../whatsnew/3.10.rst:896
 msgid "asyncio"
@@ -983,7 +1001,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:916
 msgid "asynchat, asyncore, smtpd"
-msgstr "asynchat, asyncore, smtpd"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:917
 msgid ""
@@ -1004,7 +1022,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:928
 msgid "bdb"
-msgstr "bdb"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:930
 msgid ""
@@ -1014,7 +1032,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:934
 msgid "bisect"
-msgstr "bisect"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:936
 msgid ""
@@ -1098,7 +1116,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:988
 msgid "dataclasses"
-msgstr "dataclasses"
+msgstr "データクラス"
 
 #: ../../whatsnew/3.10.rst:991
 msgid "__slots__"
@@ -1192,7 +1210,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1079
 msgid "encodings"
-msgstr "encodings"
+msgstr "エンコーディング"
 
 #: ../../whatsnew/3.10.rst:1081
 msgid ""
@@ -1202,7 +1220,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1085
 msgid "enum"
-msgstr ""
+msgstr "enum"
 
 #: ../../whatsnew/3.10.rst:1087
 msgid ""
@@ -1302,7 +1320,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1147
 msgid "IDLE and idlelib"
-msgstr ""
+msgstr "IDLE と idelelib"
 
 #: ../../whatsnew/3.10.rst:1149
 msgid ""
@@ -1372,7 +1390,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1192
 msgid "importlib.metadata"
-msgstr "importlib.metadata"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:1194
 msgid ""
@@ -1419,7 +1437,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1229
 msgid "itertools"
-msgstr ""
+msgstr "itertools"
 
 #: ../../whatsnew/3.10.rst:1231
 msgid ""
@@ -1508,7 +1526,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1288
 msgid "platform"
-msgstr "platform"
+msgstr "プラットフォーム"
 
 #: ../../whatsnew/3.10.rst:1290
 msgid ""
@@ -1546,7 +1564,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1311
 msgid "pyclbr"
-msgstr "pyclbr"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:1313
 msgid ""
@@ -1790,7 +1808,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1474
 msgid "(Contributed by Yurii Karabas in :issue:`42345`.)"
-msgstr ""
+msgstr "(:issue:`42345`でのYurii Karabasの貢献による)"
 
 #: ../../whatsnew/3.10.rst:1476
 msgid ""
@@ -1859,7 +1877,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1523
 msgid "zipimport"
-msgstr "zipimport"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:1524
 msgid ""
@@ -1877,7 +1895,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1534
 msgid "Optimizations"
-msgstr ""
+msgstr "最適化"
 
 #: ../../whatsnew/3.10.rst:1536
 msgid ""
@@ -1971,7 +1989,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1594 ../../whatsnew/3.10.rst:2200
 msgid "Deprecated"
-msgstr ""
+msgstr "非推奨"
 
 #: ../../whatsnew/3.10.rst:1596
 msgid ""
@@ -2134,37 +2152,36 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1721
 msgid "``threading.currentThread`` => :func:`threading.current_thread`"
-msgstr "``threading.currentThread`` => :func:`threading.current_thread`"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:1723
 msgid "``threading.activeCount`` => :func:`threading.active_count`"
-msgstr "``threading.activeCount`` => :func:`threading.active_count`"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:1725
 msgid ""
 "``threading.Condition.notifyAll`` => :meth:`threading.Condition.notify_all`"
 msgstr ""
-"``threading.Condition.notifyAll`` => :meth:`threading.Condition.notify_all`"
 
 #: ../../whatsnew/3.10.rst:1728
 msgid "``threading.Event.isSet`` => :meth:`threading.Event.is_set`"
-msgstr "``threading.Event.isSet`` => :meth:`threading.Event.is_set`"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:1730
 msgid "``threading.Thread.setName`` => :attr:`threading.Thread.name`"
-msgstr "``threading.Thread.setName`` => :attr:`threading.Thread.name`"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:1732
 msgid "``threading.thread.getName`` => :attr:`threading.Thread.name`"
-msgstr "``threading.thread.getName`` => :attr:`threading.Thread.name`"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:1734
 msgid "``threading.Thread.isDaemon`` => :attr:`threading.Thread.daemon`"
-msgstr "``threading.Thread.isDaemon`` => :attr:`threading.Thread.daemon`"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:1736
 msgid "``threading.Thread.setDaemon`` => :attr:`threading.Thread.daemon`"
-msgstr "``threading.Thread.setDaemon`` => :attr:`threading.Thread.daemon`"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:1738
 msgid "(Contributed by Jelle Zijlstra in :gh:`87889`.)"
@@ -2213,11 +2230,11 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1764
 msgid ":func:`~ssl.match_hostname`"
-msgstr ":func:`~ssl.match_hostname`"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:1766
 msgid ":func:`~ssl.RAND_pseudo_bytes`, :func:`~ssl.RAND_egd`"
-msgstr ":func:`~ssl.RAND_pseudo_bytes`, :func:`~ssl.RAND_egd`"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:1768
 msgid ""
@@ -2244,7 +2261,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1785 ../../whatsnew/3.10.rst:2208
 msgid "Removed"
-msgstr ""
+msgstr "削除"
 
 #: ../../whatsnew/3.10.rst:1787
 msgid ""
@@ -2356,6 +2373,8 @@ msgid ""
 "This section lists previously described changes and other bugfixes that may "
 "require changes to your code."
 msgstr ""
+"このセクションでは前述の変更とバグフィックスにより必要となるかもしれないコー"
+"ドの変更を列挙します:"
 
 #: ../../whatsnew/3.10.rst:1855
 msgid "Changes in the Python syntax"
@@ -2373,7 +2392,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1868
 msgid "Changes in the Python API"
-msgstr ""
+msgstr "Python API の変更"
 
 #: ../../whatsnew/3.10.rst:1870
 msgid ""
@@ -2447,7 +2466,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1927
 msgid "Changes in the C API"
-msgstr "C API 中的改動"
+msgstr "C API の変更"
 
 #: ../../whatsnew/3.10.rst:1929
 msgid ""
@@ -2503,7 +2522,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:1969
 msgid "CPython bytecode changes"
-msgstr ""
+msgstr "CPython バイトコードの変更"
 
 #: ../../whatsnew/3.10.rst:1971
 msgid ""
@@ -2598,7 +2617,7 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:2028
 msgid "C API Changes"
-msgstr ""
+msgstr "C API の変更"
 
 #: ../../whatsnew/3.10.rst:2031
 msgid "PEP 652: Maintaining the Stable ABI"
@@ -2944,27 +2963,27 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:2255
 msgid "``PyST_GetScope()``"
-msgstr "``PyST_GetScope()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2256
 msgid "``PySymtable_Build()``"
-msgstr "``PySymtable_Build()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2257
 msgid "``PySymtable_BuildObject()``"
-msgstr "``PySymtable_BuildObject()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2258
 msgid "``PySymtable_Free()``"
-msgstr "``PySymtable_Free()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2259
 msgid "``Py_SymtableString()``"
-msgstr "``Py_SymtableString()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2260
 msgid "``Py_SymtableStringObject()``"
-msgstr "``Py_SymtableStringObject()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2262
 msgid ""
@@ -3006,43 +3025,43 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:2286
 msgid "``PyAST_Compile()``"
-msgstr "``PyAST_Compile()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2287
 msgid "``PyAST_CompileEx()``"
-msgstr "``PyAST_CompileEx()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2288
 msgid "``PyAST_CompileObject()``"
-msgstr "``PyAST_CompileObject()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2289
 msgid "``PyFuture_FromAST()``"
-msgstr "``PyFuture_FromAST()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2290
 msgid "``PyFuture_FromASTObject()``"
-msgstr "``PyFuture_FromASTObject()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2291
 msgid "``PyParser_ASTFromFile()``"
-msgstr "``PyParser_ASTFromFile()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2292
 msgid "``PyParser_ASTFromFileObject()``"
-msgstr "``PyParser_ASTFromFileObject()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2293
 msgid "``PyParser_ASTFromFilename()``"
-msgstr "``PyParser_ASTFromFilename()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2294
 msgid "``PyParser_ASTFromString()``"
-msgstr "``PyParser_ASTFromString()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2295
 msgid "``PyParser_ASTFromStringObject()``"
-msgstr "``PyParser_ASTFromStringObject()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2297
 msgid ""
@@ -3056,19 +3075,19 @@ msgstr ""
 
 #: ../../whatsnew/3.10.rst:2302
 msgid "``PyArena_New()``"
-msgstr "``PyArena_New()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2303
 msgid "``PyArena_Free()``"
-msgstr "``PyArena_Free()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2304
 msgid "``PyArena_Malloc()``"
-msgstr "``PyArena_Malloc()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2305
 msgid "``PyArena_AddPyObject()``"
-msgstr "``PyArena_AddPyObject()``"
+msgstr ""
 
 #: ../../whatsnew/3.10.rst:2307
 msgid ""
@@ -3082,15 +3101,3 @@ msgid ""
 "The ``PyThreadState.use_tracing`` member has been removed to optimize "
 "Python. (Contributed by Mark Shannon in :issue:`43760`.)"
 msgstr ""
-
-#~ msgid "Release"
-#~ msgstr "發行版本"
-
-#~ msgid "|release|"
-#~ msgstr "|release|"
-
-#~ msgid "Date"
-#~ msgstr "日期"
-
-#~ msgid "|today|"
-#~ msgstr "|today|"

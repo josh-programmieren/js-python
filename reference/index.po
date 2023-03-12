@@ -1,28 +1,31 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 # Translators:
-# Steven Hsu <hsuhaochun@gmail.com>, 2021
+# tomo, 2021
+# Osamu NAKAMURA, 2021
+#
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-26 18:54+0800\n"
-"PO-Revision-Date: 2021-07-06 22:07+0800\n"
-"Last-Translator: Liang-Bo Wang <me@liang2.tw>\n"
-"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
-"tw)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"PO-Revision-Date: 2021-06-28 01:49+0000\n"
+"Last-Translator: Osamu NAKAMURA, 2021\n"
+"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
+"ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.4.3\n"
 
 #: ../../reference/index.rst:5
 msgid "The Python Language Reference"
-msgstr "Python 語言參考手冊"
+msgstr "Python 言語リファレンス"
 
 #: ../../reference/index.rst:7
 msgid ""
@@ -35,9 +38,13 @@ msgid ""
 "picture of how to write a Python extension module, and the :ref:`c-api-"
 "index` describes the interfaces available to C/C++ programmers in detail."
 msgstr ""
-"這份參考手冊會描述 Python 語言的語法及「核心語意」。它雖然簡潔，但也盡量保持"
-"精確並完整。關於非必要的 (non-essential) 內建物件型別、內建函式及模組的語"
-"意，則在 :ref:`library-index` 中說明。關於此語言的非正式介紹，請參閱 :ref:"
-"`tutorial-index`\\ 。對於 C 或 C++ 程式設計師，還有另外兩個手冊：\\ :ref:"
-"`extending-index`\\ 以高階的視野說明如何編寫 Python 擴充模組，而 :ref:`c-"
-"api-index`\\ 則詳細說明 C/C++ 程式設計師可用的介面。"
+"このリファレンスマニュアルでは、Python 言語の文法と、 \"コアとなるセマンティ"
+"クス\" について記述します。このマニュアルはそっけない書き方かもしれませんが、"
+"正確さと完全さを優先しています。必須でない組み込みオブジェクト型や組み込み関"
+"数、組み込みモジュールに関するセマンティクスは、 :ref:`library-index` で述べ"
+"られています。形式ばらない Python 言語入門には、 :ref:`tutorial-index` を参照"
+"してください。 C 言語あるいはC++プログラマ向けには、このマニュアルとは別に二"
+"つのマニュアルがあります。 :ref:`extending-index` では、Python 拡張モジュール"
+"を書くための高レベルな様式について述べています。また、 :ref:`c-api-index` で"
+"は、C/C++ プログラマが利用できるインターフェースについて詳細に記述していま"
+"す。"
