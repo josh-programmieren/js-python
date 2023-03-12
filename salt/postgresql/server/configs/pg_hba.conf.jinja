@@ -1,0 +1,20 @@
+{% set psf_internal = salt["pillar.get"]("psf_internal_network") %}
+# PostgreSQL Client Authentication Configuration File
+# ===================================================
+#
+
+# TYPE  DATABASE        USER            ADDRESS                 METHOD
+
+# Database administrative login by Unix domain socket
+local   all             postgres                                peer
+
+# Administration
+hostssl all               salt-master      {{ psf_internal }}      md5
+
+# Replication
+hostssl replication       replicator       {{ psf_internal }}      md5
+
+# Application Databases
+{% for database, settings in pillar.get("postgresql-databases", {}).items() %}
+hostssl {{ database }}    {{ settings.owner }} 0.0.0.0/0               md5
+{% endfor %}

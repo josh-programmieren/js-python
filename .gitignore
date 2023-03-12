@@ -1,0 +1,9 @@
+/pillar/prod/secrets
+/ubuntu-bionic-18.04-cloudimg-console.log
+
+*.py[cod]
+
+docs/_build
+
+.tox
+.vagrant

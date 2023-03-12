@@ -1,0 +1,3 @@
+groups:
+  - docs
+  - docsbuild

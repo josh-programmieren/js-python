@@ -1,0 +1,4 @@
+nodegroups:
+  {% for role, role_config in pillar["roles"].items()|sort -%}
+  "{{ role }}": "{{ role_config["pattern"] }}"
+  {% endfor %}

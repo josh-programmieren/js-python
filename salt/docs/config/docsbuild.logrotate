@@ -1,0 +1,8 @@
+/var/log/docsbuild/*.log {
+    daily
+    rotate 14
+    missingok
+    notifempty
+    compress
+    create 644 docsbuild docsbuild
+}

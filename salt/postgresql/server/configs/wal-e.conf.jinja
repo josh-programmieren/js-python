@@ -1,0 +1,11 @@
+{% set swift_tenant = salt["pillar.get"]("wal-e:swift-tenant") %}
+
+#------------------------------------------------------------------------------
+# WRITE AHEAD LOG
+#------------------------------------------------------------------------------
+
+# - Archiving -
+
+archive_mode = on
+archive_command = 'SWIFT_TENANT="{{ swift_tenant }}" envdir /etc/wal-e.d /var/lib/postgresql/wal-e/bin/wal-e wal-push %p'
+archive_timeout = 60

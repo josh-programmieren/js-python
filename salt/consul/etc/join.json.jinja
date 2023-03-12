@@ -1,0 +1,8 @@
+{% import "consul/etc/_address_list.jinja" as address_list %}
+{
+    "retry_join": [
+        {% for address in address_list.join_addresses|sort() -%}
+        "{{ address }}"{% if not loop.last %},{% endif %}
+        {% endfor %}
+    ]
+}
