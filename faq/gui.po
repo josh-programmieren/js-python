@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2001-2022, Python Software Foundation
+# This file is distributed under the same license as the Python package.
+#
+# Translators:
+# Ching-Lung Chuang, 2015
+# Steven Hsu, 2022
+msgid ""
+msgstr ""
+"Project-Id-Version: Python 3.11\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-28 00:27+0000\n"
+"PO-Revision-Date: 2022-07-02 17:41+0800\n"
+"Last-Translator: Steven Hsu <hsuhaochun@gmail.com>\n"
+"Language-Team: Chinese - TAIWAN (https://github.com/python/python-docs-zh-"
+"tw)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.1\n"
+
+#: ../../faq/gui.rst:5
+msgid "Graphic User Interface FAQ"
+msgstr "圖形使用者介面常見問答集"
+
+#: ../../faq/gui.rst:8
+msgid "Contents"
+msgstr "目錄"
+
+#: ../../faq/gui.rst:15
+msgid "General GUI Questions"
+msgstr "圖形使用者介面 (GUI) 的常見問題"
+
+#: ../../faq/gui.rst:18
+msgid "What GUI toolkits exist for Python?"
+msgstr "Python 有哪些 GUI 套件？"
+
+#: ../../faq/gui.rst:20
+msgid ""
+"Standard builds of Python include an object-oriented interface to the Tcl/Tk "
+"widget set, called :ref:`tkinter <Tkinter>`.  This is probably the easiest "
+"to install (since it comes included with most `binary distributions <https://"
+"www.python.org/downloads/>`_ of Python) and use. For more info about Tk, "
+"including pointers to the source, see the `Tcl/Tk home page <https://www.tcl."
+"tk>`_.  Tcl/Tk is fully portable to the macOS, Windows, and Unix platforms."
+msgstr ""
+"Python 的標準版本會包含一個 Tcl/Tk 小工具集 (widget set) 的物件導向介面，稱"
+"為 :ref:`tkinter <Tkinter>`。這可能是最容易安裝（因為它已包含在 Python 的大多"
+"數\\ `二進制發行版本 <https://www.python.org/downloads/>`_\\ 中）和使用的。有"
+"關 Tk 的詳細資訊（包含指向原始碼的指標），請參閱 `Tcl/Tk 首頁 <https://www."
+"tcl.tk>`_\\ 。Tcl/Tk 在 macOS、Windows 和 Unix 平台上是完全可攜 (portable) "
+"的。"
+
+#: ../../faq/gui.rst:28
+msgid ""
+"Depending on what platform(s) you are aiming at, there are also several "
+"alternatives. A `list of cross-platform <https://wiki.python.org/moin/"
+"GuiProgramming#Cross-Platform_Frameworks>`_ and `platform-specific <https://"
+"wiki.python.org/moin/GuiProgramming#Platform-specific_Frameworks>`_ GUI "
+"frameworks can be found on the python wiki."
+msgstr ""
+"根據你要使用的平台，還有其他幾種選擇。在 python wiki 上可以找到一份\\ `跨平台"
+"的 <https://wiki.python.org/moin/GuiProgramming#Cross-Platform_Frameworks>`_"
+"\\ 以及\\ `各平台專屬的 <https://wiki.python.org/moin/"
+"GuiProgramming#Platform-specific_Frameworks>`_ GUI 框架清單。"
+
+#: ../../faq/gui.rst:36
+msgid "Tkinter questions"
+msgstr "Tkinter 的問答"
+
+#: ../../faq/gui.rst:39
+msgid "How do I freeze Tkinter applications?"
+msgstr "如何凍結 Tkinter 應用程式？"
+
+#: ../../faq/gui.rst:41
+msgid ""
+"Freeze is a tool to create stand-alone applications.  When freezing Tkinter "
+"applications, the applications will not be truly stand-alone, as the "
+"application will still need the Tcl and Tk libraries."
+msgstr ""
+"凍結 (freeze) 是一個能建立獨立應用程式的工具。在凍結 Tkinter 應用程式時，該應"
+"用程式不是真正的獨立，因為該應用程式仍然需要 Tcl 和 Tk 函式庫。"
+
+#: ../../faq/gui.rst:45
+msgid ""
+"One solution is to ship the application with the Tcl and Tk libraries, and "
+"point to them at run-time using the :envvar:`TCL_LIBRARY` and :envvar:"
+"`TK_LIBRARY` environment variables."
+msgstr ""
+"將應用程式與 Tcl 和 Tk 函式庫一併發送是一種解決方法，並在運行時使用 :envvar:"
+"`TCL_LIBRARY` 和 :envvar:`TK_LIBRARY` 環境變數來指向該函式庫。"
+
+#: ../../faq/gui.rst:49
+msgid ""
+"To get truly stand-alone applications, the Tcl scripts that form the library "
+"have to be integrated into the application as well. One tool supporting that "
+"is SAM (stand-alone modules), which is part of the Tix distribution (https://"
+"tix.sourceforge.net/)."
+msgstr ""
+"要得到真正獨立的應用程式，必須將構成函式庫的 Tcl 腳本也整合到應用程式中。一個"
+"可支援該方法的工具是 SAM（stand-alone modules，獨立模組），它是 Tix 發行版的"
+"一部分 (https://tix.sourceforge.net/)。"
+
+#: ../../faq/gui.rst:54
+msgid ""
+"Build Tix with SAM enabled, perform the appropriate call to :c:func:"
+"`Tclsam_init`, etc. inside Python's :file:`Modules/tkappinit.c`, and link "
+"with libtclsam and libtksam (you might include the Tix libraries as well)."
+msgstr ""
+"請在 SAM 被啟用的情況下建置 Tix，對 Python 的 :file:`Modules/tkappinit.c` 中"
+"的 :c:func:`Tclsam_init` 等函式執行適當的呼叫，並與 libtclsam 和 libtksam 連"
+"結（你可能也會 include Tix 函式庫）。"
+
+#: ../../faq/gui.rst:61
+msgid "Can I have Tk events handled while waiting for I/O?"
+msgstr "是否可以在等待 I/O 時處理 Tk 事件？"
+
+#: ../../faq/gui.rst:63
+msgid ""
+"On platforms other than Windows, yes, and you don't even need threads!  But "
+"you'll have to restructure your I/O code a bit.  Tk has the equivalent of "
+"Xt's :c:func:`XtAddInput()` call, which allows you to register a callback "
+"function which will be called from the Tk mainloop when I/O is possible on a "
+"file descriptor.  See :ref:`tkinter-file-handlers`."
+msgstr ""
+"在 Windows 以外的平台上是可以的，你甚至不需要執行緒！但是，你必須稍微調整你"
+"的 I/O 程式碼。Tk 具有等效於 Xt 的 :c:func:`XtAddInput()` 的函式呼叫，它能讓"
+"你記錄一個回呼 (callback) 函式，當 I/O 在一個檔案描述符 (file descriptor) 上"
+"可進行時，該函式將會從 Tk mainloop 被呼叫。請參閱\\ :ref:`tkinter-file-"
+"handlers`。"
+
+#: ../../faq/gui.rst:71
+msgid "I can't get key bindings to work in Tkinter: why?"
+msgstr "我無法讓鍵繫結 (key binding) 在 Tkinter 中作用：為什麼？"
+
+#: ../../faq/gui.rst:73
+msgid ""
+"An often-heard complaint is that event handlers bound to events with the :"
+"meth:`bind` method don't get handled even when the appropriate key is "
+"pressed."
+msgstr ""
+"一個經常聽到的抱怨是，儘管事件處理程式 (event handler) 已經繫結到帶有 :meth:"
+"`bind` method 的事件，但在按下相應的鍵時，該事件也沒有被處理。"
+
+#: ../../faq/gui.rst:76
+msgid ""
+"The most common cause is that the widget to which the binding applies "
+"doesn't have \"keyboard focus\".  Check out the Tk documentation for the "
+"focus command. Usually a widget is given the keyboard focus by clicking in "
+"it (but not for labels; see the takefocus option)."
+msgstr ""
+"最常見的原因是，繫結到的小工具並沒有「鍵盤焦點 (keyboard focus)」。請查看 Tk "
+"說明文件中關於焦點命令的敘述。通常，點擊一個小工具，會讓它得到鍵盤焦點（但不"
+"適用於標籤；請參閱 takefocus 選項）。"
