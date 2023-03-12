@@ -1,3 +1,6 @@
-invoke
-fabric
-jinja2
+paramiko
+alive_progress
+python-gnupg
+aiohttp
+blurb
+sigstore>0.6.7
