@@ -1,5 +1,4 @@
-sphinx
-git+https://github.com/sphinx-doc/sphinx-intl@6b3913fea5a8c9b819818b9b28b6d0d0b6f022b3
-powrap
-pospell
-pomerge
+jinja2
+requests
+sentry-sdk
+zc.lockfile
