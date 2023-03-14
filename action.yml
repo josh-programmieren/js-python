@@ -1,4 +1,4 @@
-name: "Mypy"
+name: "_Mypy"
 description: "Optional Static Typing for Python."
 author: "Jukka Lehtosalo and contributors"
 inputs:
