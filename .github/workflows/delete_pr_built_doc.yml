@@ -22,7 +22,7 @@ jobs:
         echo "::set-env name=DOCS_OUTPUT_DIR::build/html/${GITHUB_BASE_REF}/${pr_num}"
 
     - name: Checkout GitHub Pages
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         ref: gh-pages
         path: build/html

@@ -14,7 +14,7 @@ jobs:
       VERSION: "3.11"
       BRANCH: "cron/sync/3.11"
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: ${{ env.VERSION }}
 
