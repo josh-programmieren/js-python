@@ -1,25 +1,19 @@
-import sys
+from __future__ import annotations
+
+import os.path
+
+pytest_plugins = ["mypy.test.data"]
 
 
-collect_ignore = [
-    # this module fails mypy tests because 'setup.py' matches './setup.py'
-    'prepare/example/setup.py',
-]
+def pytest_configure(config):
+    mypy_source_root = os.path.dirname(os.path.abspath(__file__))
+    if os.getcwd() != mypy_source_root:
+        os.chdir(mypy_source_root)
 
 
-def pytest_configure():
-    remove_importlib_metadata()
-
-
-def remove_importlib_metadata():
-    """
-    Because pytest imports importlib_metadata, the coverage
-    reports are broken (#322). So work around the issue by
-    undoing the changes made by pytest's import of
-    importlib_metadata (if any).
-    """
-    if sys.meta_path[-1].__class__.__name__ == 'MetadataPathFinder':
-        del sys.meta_path[-1]
-    for mod in list(sys.modules):
-        if mod.startswith('importlib_metadata'):
-            del sys.modules[mod]
+# This function name is special to pytest.  See
+# http://doc.pytest.org/en/latest/writing_plugins.html#initialization-command-line-and-configuration-hooks
+def pytest_addoption(parser) -> None:
+    parser.addoption(
+        "--bench", action="store_true", default=False, help="Enable the benchmark test runs"
+    )
