@@ -1,171 +1,169 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-# souma987, 2023
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-03 14:14+0000\n"
-"PO-Revision-Date: 2021-06-28 01:11+0000\n"
-"Last-Translator: souma987, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-11-13 12:56-0300\n"
+"Last-Translator: Alfonso Areiza Guerra <alfareiza@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: ../../library/pwd.rst:2
+#: ../Doc/library/pwd.rst:2
 msgid ":mod:`pwd` --- The password database"
-msgstr ":mod:`pwd` --- パスワードデータベースへのアクセスを提供する"
+msgstr ":mod:`pwd` --- La base de datos de contraseñas"
 
-#: ../../library/pwd.rst:10
+#: ../Doc/library/pwd.rst:10
 msgid ""
 "This module provides access to the Unix user account and password database.  "
 "It is available on all Unix versions."
 msgstr ""
-"このモジュールは Unix のユーザアカウントとパスワードのデータベースへのアクセ"
-"スを提供します。全ての Unix 系 OS で利用できます。"
+"Este módulo proporciona acceso a la base de datos de cuentas de usuario y "
+"contraseñas de Unix.  Está disponible en todas las versiones de Unix."
 
-#: ../../includes/wasm-notavail.rst:3
+# fuzzy
+#, fuzzy
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
-msgstr ""
-":ref:`利用可能性<availability>`: Emscripten でなく、WASI でもないこと。"
+msgstr ":ref:`Availability <availability>`: ni Emscripten, ni WASI."
 
-#: ../../includes/wasm-notavail.rst:5
+#: ../Doc/library/cpython/Doc/includes/wasm-notavail.rst:5
 msgid ""
 "This module does not work or is not available on WebAssembly platforms "
 "``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
 "more information."
 msgstr ""
-"このモジュールは WebAssembly プラットフォーム ``wasm32-emscripten`` と "
-"``wasm32-wasi`` では動作しないか、利用不可です。詳しくは、:ref:`wasm-"
-"availability` を見てください。"
+"Este modulo no funciona o no está disponible para plataformas WebAssembly "
+"``wasm32-emscripten`` y ``wasm32-wasi``. Consulte :ref:`wasm-availability` "
+"para más información."
 
-#: ../../library/pwd.rst:15
+#: ../Doc/library/pwd.rst:15
 msgid ""
 "Password database entries are reported as a tuple-like object, whose "
 "attributes correspond to the members of the ``passwd`` structure (Attribute "
 "field below, see ``<pwd.h>``):"
 msgstr ""
-"パスワードデータベースの各エントリはタプルのようなオブジェクトで提供され、そ"
-"れぞれの属性は ``passwd`` 構造体のメンバに対応しています(下の属性欄について"
-"は、``<pwd.h>`` を見てください):"
+"Las entradas de la base de datos de contraseñas se reportan como un objeto "
+"de tipo tupla, cuyos atributos corresponden a los miembros de la estructura "
+"``passwd`` (campo Atributo abajo, ver ``<pwd.h>``):"
 
-#: ../../library/pwd.rst:20
+#: ../Doc/library/pwd.rst:20
 msgid "Index"
-msgstr "インデックス"
+msgstr "Índice"
 
-#: ../../library/pwd.rst:20
+#: ../Doc/library/pwd.rst:20
 msgid "Attribute"
-msgstr "属性"
+msgstr "Atributo"
 
-#: ../../library/pwd.rst:20
+#: ../Doc/library/pwd.rst:20
 msgid "Meaning"
-msgstr "意味"
+msgstr "Significado"
 
-#: ../../library/pwd.rst:22
+#: ../Doc/library/pwd.rst:22
 msgid "0"
 msgstr "0"
 
-#: ../../library/pwd.rst:22
+#: ../Doc/library/pwd.rst:22
 msgid "``pw_name``"
 msgstr "``pw_name``"
 
-#: ../../library/pwd.rst:22
+#: ../Doc/library/pwd.rst:22
 msgid "Login name"
-msgstr "ログイン名"
+msgstr "Nombre de usuario"
 
-#: ../../library/pwd.rst:24
+#: ../Doc/library/pwd.rst:24
 msgid "1"
 msgstr "1"
 
-#: ../../library/pwd.rst:24
+#: ../Doc/library/pwd.rst:24
 msgid "``pw_passwd``"
 msgstr "``pw_passwd``"
 
-#: ../../library/pwd.rst:24
+#: ../Doc/library/pwd.rst:24
 msgid "Optional encrypted password"
-msgstr "暗号化されたパスワード(optional))"
+msgstr "Contraseña encriptada opcional"
 
-#: ../../library/pwd.rst:26
+#: ../Doc/library/pwd.rst:26
 msgid "2"
 msgstr "2"
 
-#: ../../library/pwd.rst:26
+#: ../Doc/library/pwd.rst:26
 msgid "``pw_uid``"
 msgstr "``pw_uid``"
 
-#: ../../library/pwd.rst:26
+#: ../Doc/library/pwd.rst:26
 msgid "Numerical user ID"
-msgstr "ユーザID(UID)"
+msgstr "Identificación numérica de usuario"
 
-#: ../../library/pwd.rst:28
+#: ../Doc/library/pwd.rst:28
 msgid "3"
 msgstr "3"
 
-#: ../../library/pwd.rst:28
+#: ../Doc/library/pwd.rst:28
 msgid "``pw_gid``"
 msgstr "``pw_gid``"
 
-#: ../../library/pwd.rst:28
+#: ../Doc/library/pwd.rst:28
 msgid "Numerical group ID"
-msgstr "グループID(GID)"
+msgstr "Identificación del grupo numérico"
 
-#: ../../library/pwd.rst:30
+#: ../Doc/library/pwd.rst:30
 msgid "4"
 msgstr "4"
 
-#: ../../library/pwd.rst:30
+#: ../Doc/library/pwd.rst:30
 msgid "``pw_gecos``"
 msgstr "``pw_gecos``"
 
-#: ../../library/pwd.rst:30
+#: ../Doc/library/pwd.rst:30
 msgid "User name or comment field"
-msgstr "実名またはコメント"
+msgstr "Nombre de usuario o campo de comentarios"
 
-#: ../../library/pwd.rst:32
+#: ../Doc/library/pwd.rst:32
 msgid "5"
 msgstr "5"
 
-#: ../../library/pwd.rst:32
+#: ../Doc/library/pwd.rst:32
 msgid "``pw_dir``"
 msgstr "``pw_dir``"
 
-#: ../../library/pwd.rst:32
+#: ../Doc/library/pwd.rst:32
 msgid "User home directory"
-msgstr "ホームディレクトリ"
+msgstr "El directorio *home* del usuario"
 
-#: ../../library/pwd.rst:34
+#: ../Doc/library/pwd.rst:34
 msgid "6"
 msgstr "6"
 
-#: ../../library/pwd.rst:34
+#: ../Doc/library/pwd.rst:34
 msgid "``pw_shell``"
 msgstr "``pw_shell``"
 
-#: ../../library/pwd.rst:34
+#: ../Doc/library/pwd.rst:34
 msgid "User command interpreter"
-msgstr "シェル"
+msgstr "Intérprete de comandos de usuario"
 
-#: ../../library/pwd.rst:37
+#: ../Doc/library/pwd.rst:37
 msgid ""
 "The uid and gid items are integers, all others are strings. :exc:`KeyError` "
 "is raised if the entry asked for cannot be found."
 msgstr ""
-"UIDとGIDは整数で、それ以外は全て文字列です。検索したエントリが見つからない"
-"と :exc:`KeyError` が発生します。"
+"Los elementos uid y gid son enteros, todos los demás son cadenas. :exc:"
+"`KeyError` se lanza si la entrada pedida no se encuentra."
 
-#: ../../library/pwd.rst:44
+#: ../Doc/library/pwd.rst:44
 msgid ""
 "In traditional Unix the field ``pw_passwd`` usually contains a password "
 "encrypted with a DES derived algorithm (see module :mod:`crypt`).  However "
@@ -176,49 +174,52 @@ msgid ""
 "anything useful is system-dependent.  If available, the :mod:`spwd` module "
 "should be used where access to the encrypted password is required."
 msgstr ""
-"伝統的なUnixでは、 ``pw_passwd`` フィールドはDES由来のアルゴリズムで暗号化さ"
-"れたパスワード(:mod:`crypt` モジュールをごらんください)が含まれています。しか"
-"し、近代的なUNIX系OSでは *シャドウパスワード* とよばれる仕組みを利用していま"
-"す。この場合には *pw_passwd* フィールドにはアスタリスク(``'*'``)か、 ``'x'`` "
-"という一文字だけが含まれており、暗号化されたパスワードは、一般には見えない :"
-"file:`/etc/shadow` というファイルに入っています。 *pw_passwd* フィールドに有"
-"用な値が入っているかはシステムに依存します。利用可能なら、暗号化されたパス"
-"ワードへのアクセスが必要なときには :mod:`spwd` モジュールを利用してください。"
+"En Unix tradicional, el campo ``pw_passwd`` generalmente contiene una "
+"contraseña cifrada con un algoritmo derivado de DES (ver módulo :mod:"
+"`crypt`). Sin embargo, la mayoría de los sistemas operativos modernos "
+"utilizan un sistema llamado *shadow password*. En esos unices, el campo "
+"*pw_passwd* solo contiene un asterisco (``'*'``) o la letra ``'x'`` donde la "
+"contraseña cifrada se almacena en un archivo :file:`/etc/shadow` que no es "
+"legible por todo el mundo. Si el campo *pw_passwd* contiene algo útil "
+"depende del sistema. Si está disponible, el módulo :mod:`spwd` debe usarse "
+"donde se requiera acceso a la contraseña encriptada."
 
-#: ../../library/pwd.rst:53
+#: ../Doc/library/pwd.rst:53
 msgid "It defines the following items:"
-msgstr "このモジュールでは以下の内容を定義しています:"
+msgstr "Define los siguientes elementos:"
 
-#: ../../library/pwd.rst:58
+#: ../Doc/library/pwd.rst:58
 msgid "Return the password database entry for the given numeric user ID."
-msgstr "与えられたUIDに対応するパスワードデータベースのエントリを返します。"
+msgstr ""
+"Retorna la entrada de la base de datos de contraseñas para el ID de usuario "
+"numérico dado."
 
-#: ../../library/pwd.rst:63
+#: ../Doc/library/pwd.rst:63
 msgid "Return the password database entry for the given user name."
 msgstr ""
-"与えられたユーザ名に対応するパスワードデータベースのエントリを返します。"
+"Retorna la entrada de la base de datos de contraseñas para el nombre de "
+"usuario dado."
 
-#: ../../library/pwd.rst:68
+#: ../Doc/library/pwd.rst:68
 msgid ""
 "Return a list of all available password database entries, in arbitrary order."
 msgstr ""
-"パスワードデータベースの全てのエントリを、任意の順番で並べたリストを返しま"
-"す。"
+"Retorna una lista de todas las entradas de la base de datos de contraseñas "
+"disponibles, en orden arbitrario."
 
-#: ../../library/pwd.rst:74
+#: ../Doc/library/pwd.rst:74
 msgid "Module :mod:`grp`"
-msgstr ":mod:`grp` モジュール"
+msgstr "Módulo :mod:`grp`"
 
-#: ../../library/pwd.rst:74
+#: ../Doc/library/pwd.rst:74
 msgid "An interface to the group database, similar to this."
-msgstr ""
-"このモジュールに似た、グループデータベースへのアクセスを提供するモジュール。"
+msgstr "Una interfaz para la base de datos de grupos, similar a esta."
 
-#: ../../library/pwd.rst:76
+#: ../Doc/library/pwd.rst:76
 msgid "Module :mod:`spwd`"
-msgstr ":mod:`spwd` モジュール"
+msgstr "Módulo :mod:`spwd`"
 
-#: ../../library/pwd.rst:77
+#: ../Doc/library/pwd.rst:77
 msgid "An interface to the shadow password database, similar to this."
 msgstr ""
-"このモジュールと類似の、シャドウパスワードデータベースへのインターフェース。"
+"Una interfaz para la base de datos de contraseñas ocultas, similar a esta."

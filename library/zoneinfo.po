@@ -1,38 +1,30 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
-# This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) 2001-2021, Python Software Foundation
+# This file is distributed under the same license as the Python en Español
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-# Translators:
-# tomo, 2021
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# souma987, 2023
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python en Español 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-03 14:14+0000\n"
-"PO-Revision-Date: 2021-06-28 01:19+0000\n"
-"Last-Translator: souma987, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-11-27 19:57-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: ../../library/zoneinfo.rst:2
+#: ../Doc/library/zoneinfo.rst:2
 msgid ":mod:`zoneinfo` --- IANA time zone support"
-msgstr ":mod:`zoneinfo` --- IANA タイムゾーンのサポート"
+msgstr ":mod:`zoneinfo` --- Soporte de zona horaria IANA"
 
-#: ../../library/zoneinfo.rst:12
-msgid "**Source code:** :source:`Lib/zoneinfo`"
-msgstr ""
-
-#: ../../library/zoneinfo.rst:16
+#: ../Doc/library/zoneinfo.rst:14
 msgid ""
 "The :mod:`zoneinfo` module provides a concrete time zone implementation to "
 "support the IANA time zone database as originally specified in :pep:`615`. "
@@ -40,47 +32,56 @@ msgid ""
 "if no system time zone data is available, the library will fall back to "
 "using the first-party `tzdata`_ package available on PyPI."
 msgstr ""
+"El módulo :mod:`zoneinfo` proporciona una implementación concreta de zonas "
+"horarias para soportar la base de datos de zonas horarias de IANA tal y como "
+"se especificó originalmente en :pep:`615`. Por defecto, :mod:`zoneinfo` "
+"utiliza los datos de zona horaria del sistema si están disponibles; si no "
+"hay datos de zona horaria del sistema, la biblioteca volverá a utilizar el "
+"paquete de primera parte `tzdata`_ disponible en PyPI."
 
-#: ../../library/zoneinfo.rst:26
+#: ../Doc/library/zoneinfo.rst:24
 msgid "Module: :mod:`datetime`"
-msgstr "モジュール: :mod:`datetime`"
+msgstr "Modulo: :mod:`datetime`"
 
-#: ../../library/zoneinfo.rst:25
+#: ../Doc/library/zoneinfo.rst:23
 msgid ""
 "Provides the :class:`~datetime.time` and :class:`~datetime.datetime` types "
 "with which the :class:`ZoneInfo` class is designed to be used."
 msgstr ""
+"Proporciona los tipos :class:`~datetime.time` y :class:`~datetime.datetime` "
+"con los que está diseñada la clase :class:`ZoneInfo`."
 
-#: ../../library/zoneinfo.rst:29
+#: ../Doc/library/zoneinfo.rst:27
 msgid "Package `tzdata`_"
-msgstr "`tzdata`_ パッケージ"
+msgstr "Paquete `tzdata`_"
 
-#: ../../library/zoneinfo.rst:29
+#: ../Doc/library/zoneinfo.rst:27
 msgid ""
 "First-party package maintained by the CPython core developers to supply time "
 "zone data via PyPI."
 msgstr ""
+"Paquete de origen mantenido por los desarrolladores del núcleo de CPython "
+"para suministrar datos de zonas horarias a través de PyPI."
 
-#: ../../includes/wasm-notavail.rst:3
+#, fuzzy
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
-msgstr ""
-":ref:`利用可能性<availability>`: Emscripten でなく、WASI でもないこと。"
+msgstr ":ref:`Availability <availability>`: ni Emscripten, ni WASI."
 
-#: ../../includes/wasm-notavail.rst:5
+#: ../Doc/library/cpython/Doc/includes/wasm-notavail.rst:5
 msgid ""
 "This module does not work or is not available on WebAssembly platforms "
 "``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
 "more information."
 msgstr ""
-"このモジュールは WebAssembly プラットフォーム ``wasm32-emscripten`` と "
-"``wasm32-wasi`` では動作しないか、利用不可です。詳しくは、:ref:`wasm-"
-"availability` を見てください。"
+"Este modulo no funciona o no está disponible para plataformas WebAssembly "
+"``wasm32-emscripten`` y ``wasm32-wasi``. Consulte :ref:`wasm-availability` "
+"para más información."
 
-#: ../../library/zoneinfo.rst:35
+#: ../Doc/library/zoneinfo.rst:33
 msgid "Using ``ZoneInfo``"
-msgstr "``ZoneInfo`` を使用する"
+msgstr "Usando ``ZoneInfo``"
 
-#: ../../library/zoneinfo.rst:37
+#: ../Doc/library/zoneinfo.rst:35
 msgid ""
 ":class:`ZoneInfo` is a concrete implementation of the :class:`datetime."
 "tzinfo` abstract base class, and is intended to be attached to ``tzinfo``, "
@@ -88,14 +89,22 @@ msgid ""
 "replace>` method or :meth:`datetime.astimezone <datetime.datetime."
 "astimezone>`::"
 msgstr ""
+":class:`ZoneInfo` es una implementación concreta de la clase base abstracta :"
+"class:`datetime.tzinfo`, y está pensada para ser adjuntada a ``tzinfo``, "
+"bien a través del constructor, del método :meth:`datetime.replace <datetime."
+"datetime.replace>` o de :meth:`datetime.astimezone <datetime.datetime."
+"astimezone>`:"
 
-#: ../../library/zoneinfo.rst:52
+#: ../Doc/library/zoneinfo.rst:50
 msgid ""
 "Datetimes constructed in this way are compatible with datetime arithmetic "
 "and handle daylight saving time transitions with no further intervention::"
 msgstr ""
+"Las fechas construidas de esta manera son compatibles con la aritmética de "
+"fechas y manejan las transiciones del horario de verano sin ninguna otra "
+"intervención::"
 
-#: ../../library/zoneinfo.rst:63
+#: ../Doc/library/zoneinfo.rst:61
 msgid ""
 "These time zones also support the :attr:`~datetime.datetime.fold` attribute "
 "introduced in :pep:`495`.  During offset transitions which induce ambiguous "
@@ -103,18 +112,26 @@ msgid ""
 "offset from *before* the transition is used when ``fold=0``, and the offset "
 "*after* the transition is used when ``fold=1``, for example::"
 msgstr ""
+"Estas zonas horarias también soportan el atributo :attr:`~datetime.datetime."
+"fold` introducido en :pep:`495`.  Durante las transiciones de desfase que "
+"inducen tiempos ambiguos (como una transición de horario de verano a horario "
+"estándar), se utiliza el desfase de *antes* de la transición cuando "
+"``fold=0``, y el desfase *después* de la transición cuando ``fold=1``, por "
+"ejemplo::"
 
-#: ../../library/zoneinfo.rst:76
+#: ../Doc/library/zoneinfo.rst:74
 msgid ""
 "When converting from another time zone, the fold will be set to the correct "
 "value::"
 msgstr ""
+"Al convertir desde otra zona horaria, el pliegue se ajustará al valor "
+"correcto::"
 
-#: ../../library/zoneinfo.rst:92
+#: ../Doc/library/zoneinfo.rst:90
 msgid "Data sources"
-msgstr "データソース"
+msgstr "Fuentes de datos"
 
-#: ../../library/zoneinfo.rst:94
+#: ../Doc/library/zoneinfo.rst:92
 msgid ""
 "The ``zoneinfo`` module does not directly provide time zone data, and "
 "instead pulls time zone information from the system time zone database or "
@@ -125,42 +142,63 @@ msgid ""
 "system data nor tzdata are available, all calls to :class:`ZoneInfo` will "
 "raise :exc:`ZoneInfoNotFoundError`."
 msgstr ""
+"El módulo ``zoneinfo`` no proporciona directamente los datos de la zona "
+"horaria, y en su lugar extrae la información de la zona horaria de la base "
+"de datos de la zona horaria del sistema o del paquete de PyPI `tzdata`_, si "
+"está disponible. Algunos sistemas, incluyendo notablemente los sistemas "
+"Windows, no tienen una base de datos IANA disponible, por lo que para los "
+"proyectos que tienen como objetivo la compatibilidad entre plataformas que "
+"requieren datos de zona horaria, se recomienda declarar una dependencia de "
+"tzdata. Si no están disponibles ni los datos del sistema ni los de tzdata, "
+"todas las llamadas a :class:`ZoneInfo` lanzarán un :exc:"
+"`ZoneInfoNotFoundError`."
 
-#: ../../library/zoneinfo.rst:106
+#: ../Doc/library/zoneinfo.rst:104
 msgid "Configuring the data sources"
-msgstr ""
+msgstr "Configurando los orígenes de datos"
 
-#: ../../library/zoneinfo.rst:108
+#: ../Doc/library/zoneinfo.rst:106
 msgid ""
 "When ``ZoneInfo(key)`` is called, the constructor first searches the "
 "directories specified in :data:`TZPATH` for a file matching ``key``, and on "
 "failure looks for a match in the tzdata package. This behavior can be "
 "configured in three ways:"
 msgstr ""
+"Cuando se llama a ``ZoneInfo(key)``, el constructor busca primero en los "
+"directorios especificados en :data:`TZPATH` un archivo que coincida con "
+"``key``, y en caso de fallo busca una coincidencia en el paquete tzdata. "
+"Este comportamiento puede configurarse de tres maneras:"
 
-#: ../../library/zoneinfo.rst:113
+#: ../Doc/library/zoneinfo.rst:111
 msgid ""
 "The default :data:`TZPATH` when not otherwise specified can be configured "
 "at :ref:`compile time <zoneinfo_data_compile_time_config>`."
 msgstr ""
+"El :data:`TZPATH` por defecto cuando no se especifica otra cosa puede "
+"configurarse en :ref:`tiempo de compilación "
+"<zoneinfo_data_compile_time_config>`."
 
-#: ../../library/zoneinfo.rst:115
+#: ../Doc/library/zoneinfo.rst:113
 msgid ""
 ":data:`TZPATH` can be configured using :ref:`an environment variable "
 "<zoneinfo_data_environment_var>`."
 msgstr ""
+":data:`TZPATH` puede configurarse utilizando :ref:`una variable de entorno "
+"<zoneinfo_data_environment_var>`."
 
-#: ../../library/zoneinfo.rst:117
+#: ../Doc/library/zoneinfo.rst:115
 msgid ""
 "At :ref:`runtime <zoneinfo_data_runtime_config>`, the search path can be "
 "manipulated using the :func:`reset_tzpath` function."
 msgstr ""
+"En :ref:`runtime <zoneinfo_data_runtime_config>`, la ruta de búsqueda puede "
+"ser manipulada usando la función :func:`reset_tzpath`."
 
-#: ../../library/zoneinfo.rst:123
+#: ../Doc/library/zoneinfo.rst:121
 msgid "Compile-time configuration"
-msgstr ""
+msgstr "Configuración en tiempo de compilación"
 
-#: ../../library/zoneinfo.rst:125
+#: ../Doc/library/zoneinfo.rst:123
 msgid ""
 "The default :data:`TZPATH` includes several common deployment locations for "
 "the time zone database (except on Windows, where there are no \"well-known\" "
@@ -171,26 +209,41 @@ msgid ""
 "tzpath <--with-tzpath>`), which should be a string delimited by :data:`os."
 "pathsep`."
 msgstr ""
+"El :data:`TZPATH` predeterminado incluye varias ubicaciones de "
+"implementación comunes para la base de datos de la zona horaria (excepto en "
+"Windows, donde no hay ubicaciones \"conocidas\" para los datos de la zona "
+"horaria). En los sistemas POSIX, los distribuidores posteriores y aquellos "
+"que compilan Python desde la fuente que saben dónde se implementan los datos "
+"de la zona horaria del sistema pueden cambiar la ruta de la zona horaria "
+"predeterminada especificando la opción de tiempo de compilación ``TZPATH`` "
+"(o, más probablemente, el :option:`configure flag --with-tzpath <--with-"
+"tzpath>`), que debería ser una cadena delimitada por :data:`os.pathsep`."
 
-#: ../../library/zoneinfo.rst:134
+#: ../Doc/library/zoneinfo.rst:132
 msgid ""
 "On all platforms, the configured value is available as the ``TZPATH`` key "
 "in :func:`sysconfig.get_config_var`."
 msgstr ""
+"En todas las plataformas, el valor configurado está disponible como la clave "
+"``TZPATH`` en :func:`sysconfig.get_config_var`."
 
-#: ../../library/zoneinfo.rst:140
+#: ../Doc/library/zoneinfo.rst:138
 msgid "Environment configuration"
-msgstr ""
+msgstr "Configuración del entorno"
 
-#: ../../library/zoneinfo.rst:142
+#: ../Doc/library/zoneinfo.rst:140
 msgid ""
 "When initializing :data:`TZPATH` (either at import time or whenever :func:"
 "`reset_tzpath` is called with no arguments), the ``zoneinfo`` module will "
 "use the environment variable ``PYTHONTZPATH``, if it exists, to set the "
 "search path."
 msgstr ""
+"Cuando se inicializa :data:`TZPATH` (ya sea en el momento de la importación "
+"o cuando se llama a :func:`reset_tzpath` sin argumentos), el módulo "
+"``zoneinfo`` utilizará la variable de entorno ``PYTHONTZPATH``, si existe, "
+"para establecer la ruta de búsqueda."
 
-#: ../../library/zoneinfo.rst:149
+#: ../Doc/library/zoneinfo.rst:147
 msgid ""
 "This is an :data:`os.pathsep`-separated string containing the time zone "
 "search path to use. It must consist of only absolute rather than relative "
@@ -200,18 +253,28 @@ msgid ""
 "other implementations are free to silently ignore the erroneous component or "
 "raise an exception."
 msgstr ""
+"Se trata de una cadena separada por :data:`os.pathsep` que contiene la ruta "
+"de búsqueda de la zona horaria a utilizar. Debe consistir sólo en rutas "
+"absolutas y no relativas. Los componentes relativos especificados en "
+"``PYTHONTZPATH`` no se utilizarán, pero por lo demás el comportamiento "
+"cuando se especifica una ruta relativa es definido por la implementación; "
+"CPython lanzará :exc:`InvalidTZPathWarning`, pero otras implementaciones son "
+"libres de ignorar silenciosamente el componente erróneo o lanzar una "
+"excepción."
 
-#: ../../library/zoneinfo.rst:157
+#: ../Doc/library/zoneinfo.rst:155
 msgid ""
 "To set the system to ignore the system data and use the tzdata package "
 "instead, set ``PYTHONTZPATH=\"\"``."
 msgstr ""
+"Para que el sistema ignore los datos del sistema y utilice el paquete tzdata "
+"en su lugar, establezca ``PYTHONTZPATH=\"\"``."
 
-#: ../../library/zoneinfo.rst:163
+#: ../Doc/library/zoneinfo.rst:161
 msgid "Runtime configuration"
-msgstr ""
+msgstr "Configuración de tiempo de ejecución"
 
-#: ../../library/zoneinfo.rst:165
+#: ../Doc/library/zoneinfo.rst:163
 msgid ""
 "The TZ search path can also be configured at runtime using the :func:"
 "`reset_tzpath` function. This is generally not an advisable operation, "
@@ -219,12 +282,17 @@ msgid ""
 "a specific time zone path (or require disabling access to the system time "
 "zones)."
 msgstr ""
+"La ruta de búsqueda de TZ también puede configurarse en tiempo de ejecución "
+"mediante la función :func:`reset_tzpath`. Por lo general, esta operación no "
+"es aconsejable, aunque es razonable utilizarla en funciones de prueba que "
+"requieran el uso de una ruta de zona horaria específica (o que requieran "
+"deshabilitar el acceso a las zonas horarias del sistema)."
 
-#: ../../library/zoneinfo.rst:172
+#: ../Doc/library/zoneinfo.rst:170
 msgid "The ``ZoneInfo`` class"
-msgstr ""
+msgstr "La clase ``ZoneInfo``"
 
-#: ../../library/zoneinfo.rst:176
+#: ../Doc/library/zoneinfo.rst:174
 msgid ""
 "A concrete :class:`datetime.tzinfo` subclass that represents an IANA time "
 "zone specified by the string ``key``. Calls to the primary constructor will "
@@ -232,43 +300,62 @@ msgid ""
 "cache invalidation via :meth:`ZoneInfo.clear_cache`, for all values of "
 "``key``, the following assertion will always be true:"
 msgstr ""
+"Una subclase concreta de :class:`datetime.tzinfo` que representa una zona "
+"horaria IANA especificada por la cadena ``key``. Las llamadas al constructor "
+"primario siempre devolverán objetos que se comparan de forma idéntica; dicho "
+"de otro modo, salvo la invalidación de la caché mediante :meth:`ZoneInfo."
+"clear_cache`, para todos los valores de ``key``, la siguiente afirmación "
+"siempre será verdadera:"
 
-#: ../../library/zoneinfo.rst:188
+#: ../Doc/library/zoneinfo.rst:186
 msgid ""
 "``key`` must be in the form of a relative, normalized POSIX path, with no up-"
 "level references. The constructor will raise :exc:`ValueError` if a non-"
 "conforming key is passed."
 msgstr ""
+"La ``key`` debe tener la forma de una ruta POSIX relativa y normalizada, sin "
+"referencias de nivel superior. El constructor lanzará :exc:`ValueError` si "
+"se pasa una clave no conforme."
 
-#: ../../library/zoneinfo.rst:192
+#: ../Doc/library/zoneinfo.rst:190
 msgid ""
 "If no file matching ``key`` is found, the constructor will raise :exc:"
 "`ZoneInfoNotFoundError`."
 msgstr ""
+"Si no se encuentra ningún archivo que coincida con la ``clave``, el "
+"constructor lanzará :exc:`ZoneInfoNotFoundError`."
 
-#: ../../library/zoneinfo.rst:196
+#: ../Doc/library/zoneinfo.rst:194
 msgid "The ``ZoneInfo`` class has two alternate constructors:"
-msgstr ""
+msgstr "La clase ``ZoneInfo`` tiene dos constructores alternativos:"
 
-#: ../../library/zoneinfo.rst:200
+#: ../Doc/library/zoneinfo.rst:198
 msgid ""
 "Constructs a ``ZoneInfo`` object from a file-like object returning bytes (e."
 "g. a file opened in binary mode or an :class:`io.BytesIO` object). Unlike "
 "the primary constructor, this always constructs a new object."
 msgstr ""
+"Construye un objeto ``ZoneInfo`` a partir de un objeto tipo archivo que "
+"retorna bytes (por ejemplo, un archivo abierto en modo binario o un objeto :"
+"class:`io.BytesIO`). A diferencia del constructor primario, éste siempre "
+"construye un nuevo objeto."
 
-#: ../../library/zoneinfo.rst:204
+#: ../Doc/library/zoneinfo.rst:202
 msgid ""
 "The ``key`` parameter sets the name of the zone for the purposes of :py:meth:"
 "`~object.__str__` and :py:meth:`~object.__repr__`."
 msgstr ""
+"El parámetro ``key`` establece el nombre de la zona a efectos de :py:meth:"
+"`~object.__str__` y :py:meth:`~object.__repr__`."
 
-#: ../../library/zoneinfo.rst:207
+#: ../Doc/library/zoneinfo.rst:205
 msgid ""
 "Objects created via this constructor cannot be pickled (see `pickling`_)."
 msgstr ""
+"Los objetos creados a través de este constructor no pueden ser serializados "
+"(ver `pickling`_)."
 
-#: ../../library/zoneinfo.rst:211
+#: ../Doc/library/zoneinfo.rst:209
 msgid ""
 "An alternate constructor that bypasses the constructor's cache. It is "
 "identical to the primary constructor, but returns a new object on each call. "
@@ -276,63 +363,88 @@ msgid ""
 "it can also be used to create a system with a different cache invalidation "
 "strategy."
 msgstr ""
+"Un constructor alternativo que omite la caché del constructor. Es idéntico "
+"al constructor principal, pero retorna un nuevo objeto en cada llamada. Es "
+"muy probable que esto sea útil para propósitos de prueba o demostración, "
+"pero también se puede utilizar para crear un sistema con una estrategia de "
+"invalidación de caché diferente."
 
-#: ../../library/zoneinfo.rst:217
+#: ../Doc/library/zoneinfo.rst:215
 msgid ""
 "Objects created via this constructor will also bypass the cache of a "
 "deserializing process when unpickled."
 msgstr ""
+"Los objetos creados a través de este constructor también pasarán por encima "
+"de la caché de un proceso de deserialización cuando sean deserializados."
 
-#: ../../library/zoneinfo.rst:224
+#: ../Doc/library/zoneinfo.rst:222
 msgid ""
 "Using this constructor may change the semantics of your datetimes in "
 "surprising ways, only use it if you know that you need to."
 msgstr ""
+"El uso de este constructor puede cambiar la semántica de tus datetimes de "
+"manera sorprendente, sólo úsalo si sabes que lo necesitas."
 
-#: ../../library/zoneinfo.rst:227
+#: ../Doc/library/zoneinfo.rst:225
 msgid "The following class methods are also available:"
-msgstr ""
+msgstr "También están disponibles los siguientes métodos de clase:"
 
-#: ../../library/zoneinfo.rst:231
+#: ../Doc/library/zoneinfo.rst:229
 msgid ""
 "A method for invalidating the cache on the ``ZoneInfo`` class. If no "
 "arguments are passed, all caches are invalidated and the next call to the "
 "primary constructor for each key will return a new instance."
 msgstr ""
+"Un método para invalidar la caché de la clase ``ZoneInfo``. Si no se pasan "
+"argumentos, se invalidan todas las cachés y la siguiente llamada al "
+"constructor primario de cada clave devolverá una nueva instancia."
 
-#: ../../library/zoneinfo.rst:235
+#: ../Doc/library/zoneinfo.rst:233
 msgid ""
 "If an iterable of key names is passed to the ``only_keys`` parameter, only "
 "the specified keys will be removed from the cache. Keys passed to "
 "``only_keys`` but not found in the cache are ignored."
 msgstr ""
+"Si se pasa un iterable de nombres de claves al parámetro ``only_keys``, sólo "
+"se eliminarán de la caché las claves especificadas. Las claves pasadas a "
+"``only_keys`` pero que no se encuentran en la caché se ignoran."
 
-#: ../../library/zoneinfo.rst:243
+#: ../Doc/library/zoneinfo.rst:241
 msgid ""
 "Invoking this function may change the semantics of datetimes using "
 "``ZoneInfo`` in surprising ways; this modifies process-wide global state and "
 "thus may have wide-ranging effects. Only use it if you know that you need to."
 msgstr ""
+"La invocación de esta función puede cambiar la semántica de las fechas "
+"utilizando ``ZoneInfo`` de forma sorprendente; esto modifica el estado "
+"global del proceso y por lo tanto puede tener efectos de gran alcance. "
+"Utilícela sólo si sabe que lo necesita."
 
-#: ../../library/zoneinfo.rst:248
+#: ../Doc/library/zoneinfo.rst:246
 msgid "The class has one attribute:"
-msgstr ""
+msgstr "La clase tiene un atributo:"
 
-#: ../../library/zoneinfo.rst:252
+#: ../Doc/library/zoneinfo.rst:250
 msgid ""
 "This is a read-only :term:`attribute` that returns the value of ``key`` "
 "passed to the constructor, which should be a lookup key in the IANA time "
 "zone database (e.g. ``America/New_York``, ``Europe/Paris`` or ``Asia/"
 "Tokyo``)."
 msgstr ""
+"Se trata de un :term:`attribute` de sólo lectura que retorna el valor de "
+"``key`` pasado al constructor, que debe ser una clave de búsqueda en la base "
+"de datos de zonas horarias de la IANA (por ejemplo, ``America/New_York``, "
+"``Europe/Paris`` o ``Asia/Tokyo``."
 
-#: ../../library/zoneinfo.rst:257
+#: ../Doc/library/zoneinfo.rst:255
 msgid ""
 "For zones constructed from file without specifying a ``key`` parameter, this "
 "will be set to ``None``."
 msgstr ""
+"Para las zonas construidas a partir de un archivo sin especificar un "
+"parámetro ``key``, se establecerá como ``None``."
 
-#: ../../library/zoneinfo.rst:262
+#: ../Doc/library/zoneinfo.rst:260
 msgid ""
 "Although it is a somewhat common practice to expose these to end users, "
 "these values are designed to be primary keys for representing the relevant "
@@ -340,42 +452,61 @@ msgid ""
 "Unicode Common Locale Data Repository) can be used to get more user-friendly "
 "strings from these keys."
 msgstr ""
+"Aunque es una práctica algo común exponerlos a los usuarios finales, estos "
+"valores están diseñados para ser claves primarias para representar las zonas "
+"relevantes y no necesariamente elementos orientados al usuario.  Se pueden "
+"utilizar proyectos como CLDR (Unicode Common Locale Data Repository) para "
+"obtener cadenas más fáciles de usar a partir de estas claves."
 
-#: ../../library/zoneinfo.rst:269
+#: ../Doc/library/zoneinfo.rst:267
 msgid "String representations"
-msgstr "文字列表現"
+msgstr "Representaciones de cadenas"
 
-#: ../../library/zoneinfo.rst:271
+#: ../Doc/library/zoneinfo.rst:269
 msgid ""
 "The string representation returned when calling :py:class:`str` on a :class:"
 "`ZoneInfo` object defaults to using the :attr:`ZoneInfo.key` attribute (see "
 "the note on usage in the attribute documentation)::"
 msgstr ""
+"La representación de cadena que se retorna al llamar a :py:class:`str` sobre "
+"un objeto :class:`ZoneInfo` utiliza por defecto el atributo :attr:`ZoneInfo."
+"key` (ver la nota de uso en la documentación del atributo)::"
 
-#: ../../library/zoneinfo.rst:283
+#: ../Doc/library/zoneinfo.rst:281
 msgid ""
 "For objects constructed from a file without specifying a ``key`` parameter, "
 "``str`` falls back to calling :func:`repr`. ``ZoneInfo``'s ``repr`` is "
 "implementation-defined and not necessarily stable between versions, but it "
 "is guaranteed not to be a valid ``ZoneInfo`` key."
 msgstr ""
+"Para los objetos construidos a partir de un fichero sin especificar un "
+"parámetro ``key``, ``str`` vuelve a llamar a :func:`repr``. El parámetro "
+"``repr`` de ``ZoneInfo`` está definido por la implementación y no es "
+"necesariamente estable entre versiones, pero se garantiza que no es una "
+"clave válida de ``ZoneInfo``.Pickled."
 
-#: ../../library/zoneinfo.rst:291
+#: ../Doc/library/zoneinfo.rst:289
 msgid "Pickle serialization"
-msgstr ""
+msgstr "Serialización de Pickle"
 
-#: ../../library/zoneinfo.rst:293
+#: ../Doc/library/zoneinfo.rst:291
 msgid ""
 "Rather than serializing all transition data, ``ZoneInfo`` objects are "
 "serialized by key, and ``ZoneInfo`` objects constructed from files (even "
 "those with a value for ``key`` specified) cannot be pickled."
 msgstr ""
+"En lugar de serializar todos los datos de transición, los objetos "
+"``ZoneInfo`` se serializan por clave, y los objetos ``ZoneInfo`` construidos "
+"a partir de archivos (incluso los que tienen un valor por ``key`` "
+"especifico) no pueden ser serializados."
 
-#: ../../library/zoneinfo.rst:297
+#: ../Doc/library/zoneinfo.rst:295
 msgid "The behavior of a ``ZoneInfo`` file depends on how it was constructed:"
 msgstr ""
+"El comportamiento de un archivo ``ZoneInfo`` depende de cómo se haya "
+"construido:"
 
-#: ../../library/zoneinfo.rst:299
+#: ../Doc/library/zoneinfo.rst:297
 msgid ""
 "``ZoneInfo(key)``: When constructed with the primary constructor, a "
 "``ZoneInfo`` object is serialized by key, and when deserialized, the "
@@ -385,8 +516,15 @@ msgid ""
 "constructed from ``ZoneInfo(\"Europe/Berlin\")``, one would expect the "
 "following behavior:"
 msgstr ""
+"``ZoneInfo(key)``: Cuando se construye con el constructor primario, un "
+"objeto ``ZoneInfo`` se serializa por la clave, y cuando se deserializa, el "
+"proceso de deserialización utiliza el primario y por lo tanto se espera que "
+"estos sean el mismo objeto que otras referencias a la misma zona horaria.  "
+"Por ejemplo, si ``europe_berlin_pkl`` es una cadena que contiene un pickle "
+"construido a partir de ``ZoneInfo(\"Europe/Berlin\")``, se esperaría el "
+"siguiente comportamiento:"
 
-#: ../../library/zoneinfo.rst:314
+#: ../Doc/library/zoneinfo.rst:312
 msgid ""
 "``ZoneInfo.no_cache(key)``: When constructed from the cache-bypassing "
 "constructor, the ``ZoneInfo`` object is also serialized by key, but when "
@@ -395,8 +533,14 @@ msgid ""
 "constructed from ``ZoneInfo.no_cache(\"Europe/Berlin\")``, one would expect "
 "the following behavior:"
 msgstr ""
+"``ZoneInfo.no_cache(key)``: Cuando se construye a partir del constructor que "
+"evita la caché, el objeto ``ZoneInfo`` también se serializa por clave, pero "
+"cuando se deserializa, el proceso de deserialización utiliza el constructor "
+"que evita la caché. Si ``europe_berlin_pkl_nc`` es una cadena que contiene "
+"un pickle construido a partir de ``ZoneInfo.no_cache(\"Europe/Berlin\")``, "
+"cabría esperar el siguiente comportamiento:"
 
-#: ../../library/zoneinfo.rst:328
+#: ../Doc/library/zoneinfo.rst:326
 msgid ""
 "``ZoneInfo.from_file(fobj, /, key=None)``: When constructed from a file, the "
 "``ZoneInfo`` object raises an exception on pickling. If an end user wants to "
@@ -404,8 +548,14 @@ msgid ""
 "use a wrapper type or a custom serialization function: either serializing by "
 "key or storing the contents of the file object and serializing that."
 msgstr ""
+"``ZoneInfo.from_file(fobj, /, key=None)``: Cuando se construye a partir de "
+"un fichero, el objeto ``ZoneInfo`` lanza una excepción al ser recogido. Si "
+"un usuario final quiere recoger un ``ZoneInfo`` construido a partir de un "
+"archivo, se recomienda que utilice un tipo de envoltura o una función de "
+"serialización personalizada: ya sea serializando por clave o almacenando el "
+"contenido del objeto archivo y serializándolo."
 
-#: ../../library/zoneinfo.rst:334
+#: ../Doc/library/zoneinfo.rst:332
 msgid ""
 "This method of serialization requires that the time zone data for the "
 "required key be available on both the serializing and deserializing side, "
@@ -415,105 +565,153 @@ msgid ""
 "a ``ZoneInfo`` pickled in an environment with a different version of the "
 "time zone data."
 msgstr ""
+"Este método de serialización requiere que los datos de la zona horaria para "
+"la clave requerida estén disponibles tanto en el lado de serialización como "
+"en el de deserialización, de forma similar a como se espera que las "
+"referencias a las clases y funciones existan tanto en el entorno de "
+"serialización como en el de deserialización. También significa que no se "
+"garantiza la consistencia de los resultados cuando se retira un ``ZoneInfo`` "
+"recogido en un entorno con una versión diferente de los datos de la zona "
+"horaria."
 
-#: ../../library/zoneinfo.rst:342
+#: ../Doc/library/zoneinfo.rst:340
 msgid "Functions"
-msgstr "関数"
+msgstr "Funciones"
 
-#: ../../library/zoneinfo.rst:346
+#: ../Doc/library/zoneinfo.rst:344
 msgid ""
 "Get a set containing all the valid keys for IANA time zones available "
 "anywhere on the time zone path. This is recalculated on every call to the "
 "function."
 msgstr ""
+"Obtiene un conjunto que contiene todas las claves válidas para las zonas "
+"horarias de la IANA disponibles en cualquier lugar de la ruta de zonas "
+"horarias. Se recalcula en cada llamada a la función."
 
-#: ../../library/zoneinfo.rst:350
+#: ../Doc/library/zoneinfo.rst:348
 msgid ""
 "This function only includes canonical zone names and does not include "
 "\"special\" zones such as those under the ``posix/`` and ``right/`` "
 "directories, or the ``posixrules`` zone."
 msgstr ""
+"Esta función sólo incluye los nombres de zona canónicos y no incluye las "
+"zonas \"especiales\" como las que se encuentran bajo los directorios ``posix/"
+"`` y ``right/``, o la zona ``posixrules``."
 
-#: ../../library/zoneinfo.rst:356
+#: ../Doc/library/zoneinfo.rst:354
 msgid ""
 "This function may open a large number of files, as the best way to determine "
 "if a file on the time zone path is a valid time zone is to read the \"magic "
 "string\" at the beginning."
 msgstr ""
+"Esta función puede abrir un gran número de archivos, ya que la mejor manera "
+"de determinar si un archivo en la ruta de la zona horaria es una zona "
+"horaria válida es leer la \"magic string\" (cadena mágica) al principio."
 
-#: ../../library/zoneinfo.rst:362
+#: ../Doc/library/zoneinfo.rst:360
 msgid ""
 "These values are not designed to be exposed to end-users; for user facing "
 "elements, applications should use something like CLDR (the Unicode Common "
 "Locale Data Repository) to get more user-friendly strings. See also the "
 "cautionary note on :attr:`ZoneInfo.key`."
 msgstr ""
+"Estos valores no están diseñados para ser expuestos a los usuarios finales; "
+"para los elementos de cara al usuario, las aplicaciones deberían utilizar "
+"algo como CLDR (el Unicode Common Locale Data Repository) para obtener "
+"cadenas más fáciles de usar. Véase también la nota de advertencia sobre :"
+"attr:`ZoneInfo.key`."
 
-#: ../../library/zoneinfo.rst:369
+#: ../Doc/library/zoneinfo.rst:367
 msgid ""
 "Sets or resets the time zone search path (:data:`TZPATH`) for the module. "
 "When called with no arguments, :data:`TZPATH` is set to the default value."
 msgstr ""
+"Establece o restablece la ruta de búsqueda de la zona horaria (:data:"
+"`TZPATH`) para el módulo. Cuando se llama sin argumentos, :data:`TZPATH` se "
+"establece en el valor por defecto."
 
-#: ../../library/zoneinfo.rst:372
+#: ../Doc/library/zoneinfo.rst:370
 msgid ""
 "Calling ``reset_tzpath`` will not invalidate the :class:`ZoneInfo` cache, "
 "and so calls to the primary ``ZoneInfo`` constructor will only use the new "
 "``TZPATH`` in the case of a cache miss."
 msgstr ""
+"La llamada a ``reset_tzpath`` no invalidará la caché de :class:`ZoneInfo`, "
+"por lo que las llamadas al constructor primario de ``ZoneInfo`` sólo "
+"utilizarán el nuevo ``TZPATH`` en caso de que se pierda la caché."
 
-#: ../../library/zoneinfo.rst:376
+#: ../Doc/library/zoneinfo.rst:374
 msgid ""
 "The ``to`` parameter must be a :term:`sequence` of strings or :class:`os."
 "PathLike` and not a string, all of which must be absolute paths. :exc:"
 "`ValueError` will be raised if something other than an absolute path is "
 "passed."
 msgstr ""
+"El parámetro ``to`` debe ser un :term:`sequence` de cadenas o :class:`os."
+"PathLike` y no una cadena, todos los cuales deben ser rutas absolutas. :exc:"
+"`ValueError` se lanzará si se pasa algo que no sea una ruta absoluta."
 
-#: ../../library/zoneinfo.rst:382
+#: ../Doc/library/zoneinfo.rst:380
 msgid "Globals"
-msgstr ""
+msgstr "Globales"
 
-#: ../../library/zoneinfo.rst:386
+#: ../Doc/library/zoneinfo.rst:384
 msgid ""
 "A read-only sequence representing the time zone search path -- when "
 "constructing a ``ZoneInfo`` from a key, the key is joined to each entry in "
 "the ``TZPATH``, and the first file found is used."
 msgstr ""
+"Una secuencia de sólo lectura que representa la ruta de búsqueda de zonas "
+"horarias -- cuando se construye un ``ZoneInfo`` a partir de una clave, la "
+"clave se une a cada entrada del ``TZPATH``, y se utiliza el primer archivo "
+"encontrado."
 
-#: ../../library/zoneinfo.rst:390
+#: ../Doc/library/zoneinfo.rst:388
 msgid ""
 "``TZPATH`` may contain only absolute paths, never relative paths, regardless "
 "of how it is configured."
 msgstr ""
+"``TZPATH`` sólo puede contener rutas absolutas, nunca relativas, "
+"independientemente de cómo esté configurado."
 
-#: ../../library/zoneinfo.rst:393
+#: ../Doc/library/zoneinfo.rst:391
 msgid ""
 "The object that ``zoneinfo.TZPATH`` points to may change in response to a "
 "call to :func:`reset_tzpath`, so it is recommended to use ``zoneinfo."
 "TZPATH`` rather than importing ``TZPATH`` from ``zoneinfo`` or assigning a "
 "long-lived variable to ``zoneinfo.TZPATH``."
 msgstr ""
+"El objeto al que apunta ``zoneinfo.TZPATH`` puede cambiar en respuesta a una "
+"llamada a :func:`reset_tzpath`, por lo que se recomienda utilizar ``zoneinfo."
+"TZPATH`` en lugar de importar ``TZPATH`` desde ``zoneinfo`` o asignar una "
+"variable de larga duración a ``zoneinfo.TZPATH``."
 
-#: ../../library/zoneinfo.rst:398
+#: ../Doc/library/zoneinfo.rst:396
 msgid ""
 "For more information on configuring the time zone search path, see :ref:"
 "`zoneinfo_data_configuration`."
 msgstr ""
+"Para más información sobre la configuración de la ruta de búsqueda de zonas "
+"horarias, consulte :ref:`zoneinfo_data_configuration`."
 
-#: ../../library/zoneinfo.rst:402
+#: ../Doc/library/zoneinfo.rst:400
 msgid "Exceptions and warnings"
-msgstr "例外と警告"
+msgstr "Excepciones y advertencias"
 
-#: ../../library/zoneinfo.rst:406
+#: ../Doc/library/zoneinfo.rst:404
 msgid ""
 "Raised when construction of a :class:`ZoneInfo` object fails because the "
 "specified key could not be found on the system. This is a subclass of :exc:"
 "`KeyError`."
 msgstr ""
+"Se lanza cuando la construcción de un objeto :class:`ZoneInfo` falla porque "
+"la clave especificada no puede encontrarse en el sistema. Es una subclase "
+"de :exc:`KeyError`."
 
-#: ../../library/zoneinfo.rst:412
+#: ../Doc/library/zoneinfo.rst:410
 msgid ""
 "Raised when :envvar:`PYTHONTZPATH` contains an invalid component that will "
 "be filtered out, such as a relative path."
 msgstr ""
+"Se lanza cuando :envvar:`PYTHONTZPATH` contiene un componente no válido que "
+"será filtrado, como una ruta relativa."

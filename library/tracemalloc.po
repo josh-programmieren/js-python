@@ -1,61 +1,64 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:16+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2021-10-16 21:42+0200\n"
+"PO-Revision-Date: 2021-10-25 16:02-0300\n"
+"Last-Translator: Rodrigo Tobar <rtobarc@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.9.1\n"
+"X-Generator: Poedit 3.0\n"
 
-#: ../../library/tracemalloc.rst:2
+#: ../Doc/library/tracemalloc.rst:2
 msgid ":mod:`tracemalloc` --- Trace memory allocations"
-msgstr ":mod:`tracemalloc` --- メモリ割り当ての追跡"
+msgstr ":mod:`tracemalloc`--- Rastrea la asignación de memoria"
 
-#: ../../library/tracemalloc.rst:9
+#: ../Doc/library/tracemalloc.rst:9
 msgid "**Source code:** :source:`Lib/tracemalloc.py`"
-msgstr "**ソースコード:** :source:`Lib/tracemalloc.py`"
+msgstr "**Código fuente:** :source:`Lib/tracemalloc.py`"
 
-#: ../../library/tracemalloc.rst:13
+#: ../Doc/library/tracemalloc.rst:13
 msgid ""
 "The tracemalloc module is a debug tool to trace memory blocks allocated by "
 "Python. It provides the following information:"
 msgstr ""
-"tracemallocモジュールは、Python が割り当てたメモリブロックをトレースするため"
-"のデバッグツールです。このモジュールは以下の情報を提供します。"
+"El módulo tracemalloc es una herramienta de depuración para rastrear los "
+"espacios de memoria asignados por Python. Este proporciona la siguiente "
+"información:"
 
-#: ../../library/tracemalloc.rst:16
+#: ../Doc/library/tracemalloc.rst:16
 msgid "Traceback where an object was allocated"
-msgstr "オブジェクトが割り当てられた場所のトレースバック"
+msgstr "El rastreo al lugar de origen del objeto asignado"
 
-#: ../../library/tracemalloc.rst:17
+#: ../Doc/library/tracemalloc.rst:17
 msgid ""
 "Statistics on allocated memory blocks per filename and per line number: "
 "total size, number and average size of allocated memory blocks"
 msgstr ""
-"ファイル名ごと、及び行ごとに割り当てられたメモリブロックの以下の統計を取りま"
-"す：総サイズ、ブロック数、割り当てられたブロックの平均サイズ"
+"Las estadísticas en los espacios de memoria asignados por nombre de archivo "
+"y por número de línea: tamaño total, número y tamaño promedio de los "
+"espacios de memoria asignados"
 
-#: ../../library/tracemalloc.rst:19
+#: ../Doc/library/tracemalloc.rst:19
 msgid "Compute the differences between two snapshots to detect memory leaks"
-msgstr "メモリリークを検出するために2つのスナップショットの差を計算します。"
+msgstr ""
+"Calcula las diferencias entre dos informes instantáneos para detectar alguna "
+"filtración en la memoria"
 
-#: ../../library/tracemalloc.rst:21
+#: ../Doc/library/tracemalloc.rst:21
 msgid ""
 "To trace most memory blocks allocated by Python, the module should be "
 "started as early as possible by setting the :envvar:`PYTHONTRACEMALLOC` "
@@ -63,69 +66,71 @@ msgid ""
 "command line option. The :func:`tracemalloc.start` function can be called at "
 "runtime to start tracing Python memory allocations."
 msgstr ""
-"Python が割り当てたメモリブロックの大半をトレースするには、 :envvar:"
-"`PYTHONTRACEMALLOC` 環境変数を ``1`` に設定して可能な限り早くモジュールを開始"
-"させるか、:option:`-X` ``tracemalloc`` コマンドラインオプションを使用してくだ"
-"さい。実行時に :func:`tracemalloc.start` を呼んで Python のメモリ割り当てのト"
-"レースを開始することが出来ます。"
+"Para rastrear la mayoría de los espacios de memoria asignados por Python; el "
+"módulo debe empezar tan pronto como sea posible configurando la variable del "
+"entorno :envvar:`PYTHONTRACEMALLOC` a ``1``, o usando la opción del comando "
+"de línea :option:`-X` ``tracemalloc``. La función :func:`tracemalloc.start` "
+"puede ser llamada en tiempo de ejecución para empezar a rastrear las "
+"asignaciones de memoria de Python."
 
-#: ../../library/tracemalloc.rst:27
+#: ../Doc/library/tracemalloc.rst:27
 msgid ""
 "By default, a trace of an allocated memory block only stores the most recent "
 "frame (1 frame). To store 25 frames at startup: set the :envvar:"
 "`PYTHONTRACEMALLOC` environment variable to ``25``, or use the :option:`-X` "
 "``tracemalloc=25`` command line option."
 msgstr ""
-"デフォルトでは、割り当てられたメモリブロック1つのトレースは最新1フレームを保"
-"存します。開始時に25フレームを保存するには、:envvar:`PYTHONTRACEMALLOC` 環境"
-"変数を ``25`` に設定するか、:option:`-X` ``tracemalloc=25`` コマンドラインオ"
-"プションを使用してください。"
+"Por defecto, el rastreo de un espacio de memoria asignado solo guarda el "
+"cuadro mas reciente (1 cuadro). Para guardar 25 cuadros desde el :envvar:"
+"`PYTHONTRACEMALLOC`comienzo, configura la variable del entorno a ``25``, o "
+"usa :option:`-X` ``tracemalloc=25`` en la opción de línea de comando."
 
-#: ../../library/tracemalloc.rst:34
+#: ../Doc/library/tracemalloc.rst:34
 msgid "Examples"
-msgstr "使用例"
+msgstr "Ejemplos"
 
-#: ../../library/tracemalloc.rst:37
+#: ../Doc/library/tracemalloc.rst:37
 msgid "Display the top 10"
-msgstr "上位10を表示する"
+msgstr "Mostrar los 10 principales"
 
-#: ../../library/tracemalloc.rst:39
+#: ../Doc/library/tracemalloc.rst:39
 msgid "Display the 10 files allocating the most memory::"
-msgstr "最も多くのメモリを割り当てているファイル10を表示します::"
+msgstr "Mostrar los 10 archivos asignando la mayor cantidad de memoria::"
 
-#: ../../library/tracemalloc.rst:55 ../../library/tracemalloc.rst:225
+#: ../Doc/library/tracemalloc.rst:55 ../Doc/library/tracemalloc.rst:225
 msgid "Example of output of the Python test suite::"
-msgstr "Python テストスイートの出力例です::"
+msgstr "Ejemplo de la salida del conjunto de pruebas de Python:"
 
-#: ../../library/tracemalloc.rst:69
+#: ../Doc/library/tracemalloc.rst:69
 msgid ""
 "We can see that Python loaded ``4855 KiB`` data (bytecode and constants) "
 "from modules and that the :mod:`collections` module allocated ``244 KiB`` to "
 "build :class:`~collections.namedtuple` types."
 msgstr ""
-"Python がモジュールから ``4855 KiB`` のデータ (バイトコードで定数) を読み込ん"
-"でいることと、:mod:`collections` モジュールが :class:`~collections."
-"namedtuple` 型をビルドするのに ``244 KiB`` を割り当てていることが分かります。"
+"Se puede ver que Python ha cargado ``4855 KiB`` de data (código de bytes y "
+"constantes) desde los módulos y que el modulo :mod:`collections` asigno "
+"``24KiB`` para crear tipos :class:`~collections.namedtuple`."
 
-#: ../../library/tracemalloc.rst:73 ../../library/tracemalloc.rst:250
+#: ../Doc/library/tracemalloc.rst:73 ../Doc/library/tracemalloc.rst:250
 msgid "See :meth:`Snapshot.statistics` for more options."
-msgstr ""
-"オプションの詳細については :meth:`Snapshot.statistics` を参照してください。"
+msgstr "Mira :meth:`Snapshot.statistics` para más opciones."
 
-#: ../../library/tracemalloc.rst:77
+#: ../Doc/library/tracemalloc.rst:77
 msgid "Compute differences"
-msgstr "差を計算する"
+msgstr "Calcula las diferencias"
 
-#: ../../library/tracemalloc.rst:79
+#: ../Doc/library/tracemalloc.rst:79
 msgid "Take two snapshots and display the differences::"
-msgstr "スナップショットを2つ取り、差を表示します::"
+msgstr "Toma dos capturas instantáneas y muestra las diferencias::"
 
-#: ../../library/tracemalloc.rst:95
+#: ../Doc/library/tracemalloc.rst:95
 msgid ""
 "Example of output before/after running some tests of the Python test suite::"
-msgstr "Python テストスイートのテストを実行する前後の出力例です::"
+msgstr ""
+"Ejemplo de la salida antes y después de probar el conjunto de pruebas de "
+"Python::"
 
-#: ../../library/tracemalloc.rst:109
+#: ../Doc/library/tracemalloc.rst:109
 msgid ""
 "We can see that Python has loaded ``8173 KiB`` of module data (bytecode and "
 "constants), and that this is ``4428 KiB`` more than had been loaded before "
@@ -133,41 +138,41 @@ msgid ""
 "`linecache` module has cached ``940 KiB`` of Python source code to format "
 "tracebacks, all of it since the previous snapshot."
 msgstr ""
-"Python がモジュールデータ ``8173 KiB`` (バイトコードと定数) を読み込み、\n"
-"前回スナップショットを取ったとき、すなわちテストの前に読み込んだ量より "
-"``4428 KiB`` 多いということが分かります。\n"
-"同様に、 :mod:`linecache` モジュールはトレースバックの書式化に Python ソース"
-"コード ``940 KiB`` をキャッシュし、その全ては前回のスナップショットの後に行わ"
-"れたことが分かります。"
+"Se puede ver que Python cargó ``8173 KiB`` de información del modulo (código "
+"de bytes y constantes), y que eso es ``4428KiB`` más de lo que ha sido "
+"cargado antes de los test, cuando la anterior captura de pantalla fue "
+"tomada. De manera similar, el modulo :mod:`linecache` ha almacenado en caché "
+"``940 KiB`` del código fuente de Python para formatear los seguimientos, "
+"todo desde la captura instantánea."
 
-#: ../../library/tracemalloc.rst:115
+#: ../Doc/library/tracemalloc.rst:115
 msgid ""
 "If the system has little free memory, snapshots can be written on disk using "
 "the :meth:`Snapshot.dump` method to analyze the snapshot offline. Then use "
 "the :meth:`Snapshot.load` method reload the snapshot."
 msgstr ""
-"システムに空きメモリがほとんどない場合、スナップショットをオフラインで解析す"
-"るための :meth:`Snapshot.dump` メソッドを使用して、スナップショットをディスク"
-"に書き込むことが出来ます。\n"
-"そして :meth:`Snapshot.load` メソッドを使用してスナップショットを再読み込みし"
-"ます。"
+"Si el sistema tiene poca memoria libre, los informes instantáneos pueden ser "
+"escritos en el disco usando el método :meth:`Snapshot.dump` para analizar el "
+"informe instantáneo offline. Después usa el método :meth:`Snapshot.load` "
+"para actualizar el informe."
 
-#: ../../library/tracemalloc.rst:121
+#: ../Doc/library/tracemalloc.rst:121
 msgid "Get the traceback of a memory block"
-msgstr "メモリブロックのトレースバックを取得する"
+msgstr "Consigue el seguimiento del bloque de memoria"
 
-#: ../../library/tracemalloc.rst:123
+#: ../Doc/library/tracemalloc.rst:123
 msgid "Code to display the traceback of the biggest memory block::"
-msgstr "最大のメモリブロックのトレースバックを表示するコードです::"
+msgstr ""
+"Código para configurar el seguimiento del bloque de memoria más grande::"
 
-#: ../../library/tracemalloc.rst:141
+#: ../Doc/library/tracemalloc.rst:141
 msgid ""
 "Example of output of the Python test suite (traceback limited to 25 frames)::"
 msgstr ""
-"Python テストスイートの出力例です (トレースバックは 25 フレームに制限されてい"
-"ます)::"
+"Ejemplo de la salida del conjunto de pruebas de Python (rastreo limitado a "
+"25 cuadros)::"
 
-#: ../../library/tracemalloc.rst:178
+#: ../Doc/library/tracemalloc.rst:178
 msgid ""
 "We can see that the most memory was allocated in the :mod:`importlib` module "
 "to load data (bytecode and constants) from modules: ``870.1 KiB``. The "
@@ -175,24 +180,31 @@ msgid ""
 "``import pdb`` line of the :mod:`doctest` module. The traceback may change "
 "if a new module is loaded."
 msgstr ""
+"Se puede ver que la mayor parte de la memoria fue asignada en el módulo :mod:"
+"`importlib` para cargar datos (códigos de bytes y constantes) desde módulos "
+"``870.1 KiB``. El rastreo esta donde el módulo :mod:`importlib` cargó datos "
+"más recientemente: en la linea ``import pdb`` el módulo :mod:`doctest`. El "
+"rastreo puede cambiar si se carga un nuevo módulo."
 
-#: ../../library/tracemalloc.rst:186
+#: ../Doc/library/tracemalloc.rst:186
 msgid "Pretty top"
-msgstr "top を整形化する"
+msgstr "``Los 10 más bonitos``"
 
-#: ../../library/tracemalloc.rst:188
+#: ../Doc/library/tracemalloc.rst:188
 msgid ""
 "Code to display the 10 lines allocating the most memory with a pretty "
 "output, ignoring ``<frozen importlib._bootstrap>`` and ``<unknown>`` files::"
 msgstr ""
-"``<frozen importlib._bootstrap>`` および ``<unknown>`` ファイルを無視して、\n"
-"メモリ割り当て量の上位10を整形化して表示するコードです::"
+"Codifica para configurar las 10 líneas que asignan gran parte de la memoria "
+"con una salida ``bonita``, ignorando los archivos ``<frozen importlib."
+"_bootstrap>`` y ``<unkownn>``::"
 
-#: ../../library/tracemalloc.rst:253
+#: ../Doc/library/tracemalloc.rst:253
 msgid "Record the current and peak size of all traced memory blocks"
 msgstr ""
+"Graba los tamaños actual y máximo de todos los bloques de memoria rastreados"
 
-#: ../../library/tracemalloc.rst:255
+#: ../Doc/library/tracemalloc.rst:255
 msgid ""
 "The following code computes two sums like ``0 + 1 + 2 + ...`` inefficiently, "
 "by creating a list of those numbers. This list consumes a lot of memory "
@@ -200,12 +212,17 @@ msgid ""
 "observe the small memory usage after the sum is computed as well as the peak "
 "memory usage during the computations::"
 msgstr ""
+"El siguiente código calcula dos sumas como ``0 + 1 + 2 + ...`` de forma "
+"ineficiente, creando una lista con estos números. Esta lista consume mucha "
+"memoria de forma temporal. Podemos usar :func:`get_traced_memory` y :func:"
+"`reset_peak` para observar el pequeño uso de memoria después de que la suma "
+"es calculada, así como también el uso máximo de memoria durante el cálculo:"
 
-#: ../../library/tracemalloc.rst:280 ../../library/tracemalloc.rst:759
+#: ../Doc/library/tracemalloc.rst:280 ../Doc/library/tracemalloc.rst:759
 msgid "Output::"
-msgstr "出力::"
+msgstr "Salida::"
 
-#: ../../library/tracemalloc.rst:285
+#: ../Doc/library/tracemalloc.rst:285
 msgid ""
 "Using :func:`reset_peak` ensured we could accurately record the peak during "
 "the computation of ``small_sum``, even though it is much smaller than the "
@@ -216,670 +233,734 @@ msgid ""
 "we could optimise (by removing the unnecessary call to :class:`list`, and "
 "writing ``sum(range(...))``)."
 msgstr ""
+"El uso de :func:`reset_peak` asegura que podemos registrar precisamente el "
+"uso máximo de memoria durante el cálculo de ``small_sum``, incluso si es "
+"mucho menor al máximo total desde la llamada a :func:`start`. Sin la llamada "
+"a :func:`reset_peak`, ``second_peak`` seguiría siendo el uso máximo de "
+"memoria del cálculo de ``large_sum`` (es decir, igual a ``first_peak``). En "
+"este caso ambos máximos son mucho mayores al uso final de memoria, lo que "
+"sugiere que podemos optimizar (removiendo la llamada innecesaria a :class:"
+"`list`, y escribiendo ``sum(range(...))``)."
 
-#: ../../library/tracemalloc.rst:295
+#: ../Doc/library/tracemalloc.rst:295
 msgid "API"
 msgstr "API"
 
-#: ../../library/tracemalloc.rst:298
+#: ../Doc/library/tracemalloc.rst:298
 msgid "Functions"
-msgstr "関数"
+msgstr "Funciones"
 
-#: ../../library/tracemalloc.rst:302
+#: ../Doc/library/tracemalloc.rst:302
 msgid "Clear traces of memory blocks allocated by Python."
-msgstr "Python が割り当てたメモリブロックのトレースを消去します。"
+msgstr "Limpia los rastros de los bloques de memoria asignados por Python."
 
-#: ../../library/tracemalloc.rst:304
+#: ../Doc/library/tracemalloc.rst:304
 msgid "See also :func:`stop`."
-msgstr ":func:`stop` を参照してください。"
+msgstr "Mira también la función :func:`stop`."
 
-#: ../../library/tracemalloc.rst:309
+#: ../Doc/library/tracemalloc.rst:309
 msgid ""
 "Get the traceback where the Python object *obj* was allocated. Return a :"
 "class:`Traceback` instance, or ``None`` if the :mod:`tracemalloc` module is "
 "not tracing memory allocations or did not trace the allocation of the object."
 msgstr ""
-"Python オブジェクト *obj* が割り当てられたトレースバックを取得します。:class:"
-"`Traceback` インスタンスか、:mod:`tracemalloc` モジュールがメモリ割り当てをト"
-"レースしていない場合かオブジェクトの割り当てをトレースしていない場合は、"
-"``None`` を返します。"
+"Obtiene el rastreo de donde el objeto de Python fue asignado. Retorna una "
+"instancia :class:`Traceback` o ``None`` si el módulo :mod:`tracemalloc` no "
+"esta rastreando ninguna asignación de memoria o no rastreó la asignación del "
+"objeto."
 
-#: ../../library/tracemalloc.rst:314
+#: ../Doc/library/tracemalloc.rst:314
 msgid "See also :func:`gc.get_referrers` and :func:`sys.getsizeof` functions."
 msgstr ""
-":func:`gc.get_referrers` や :func:`sys.getsizeof` 関数も参照してください。"
+"Mira también las funciones :func:`gc.get_referrers` y :func:`sys.getsizeof`."
 
-#: ../../library/tracemalloc.rst:319
+#: ../Doc/library/tracemalloc.rst:319
 msgid "Get the maximum number of frames stored in the traceback of a trace."
-msgstr "トレースのトレースバック内に格納されている最大フレーム数を取得します。"
+msgstr ""
+"Obtiene el número máximo de cuadros guardados en el seguimiento de un rastro."
 
-#: ../../library/tracemalloc.rst:321
+#: ../Doc/library/tracemalloc.rst:321
 msgid ""
 "The :mod:`tracemalloc` module must be tracing memory allocations to get the "
 "limit, otherwise an exception is raised."
 msgstr ""
-":mod:`tracemalloc` モジュールは上限を取得するためにメモリ割り当てをトレースし"
-"ていなければなりません。そうでなければ例外が送出されます。"
+"El módulo :mod:`tracemalloc` debe rastrear las asignaciones de memoria para "
+"obtener el límite, de otra manera se inicia una excepción."
 
-#: ../../library/tracemalloc.rst:324
+#: ../Doc/library/tracemalloc.rst:324
 msgid "The limit is set by the :func:`start` function."
-msgstr ":func:`start` 関数で上限を設定します。"
+msgstr "El limite es establecido por la función :func:`start`."
 
-#: ../../library/tracemalloc.rst:329
+#: ../Doc/library/tracemalloc.rst:329
 msgid ""
 "Get the current size and peak size of memory blocks traced by the :mod:"
 "`tracemalloc` module as a tuple: ``(current: int, peak: int)``."
 msgstr ""
-":mod:`tracemalloc` モジュールがトレースするメモリブロックの現在のサイズと最大"
-"時のサイズをタプルとして取得します: ``(current: int, peak: int)``。"
+"Obtiene el tamaño actual y tamaño pico de los bloques de memorias rastreados "
+"por el módulo :mod:`tracemalloc` como una tupla: ``(current: int, peak: "
+"int)``."
 
-#: ../../library/tracemalloc.rst:335
+#: ../Doc/library/tracemalloc.rst:335
 msgid ""
 "Set the peak size of memory blocks traced by the :mod:`tracemalloc` module "
 "to the current size."
 msgstr ""
+"Establece el tamaño máximo de los bloques de memorias rastreados por el "
+"módulo :mod:`tracemalloc` al tamaño actual."
 
-#: ../../library/tracemalloc.rst:338
+#: ../Doc/library/tracemalloc.rst:338
 msgid ""
 "Do nothing if the :mod:`tracemalloc` module is not tracing memory "
 "allocations."
 msgstr ""
+"No realiza ninguna acción si el módulo :mod:`tracemalloc` no está rastreando "
+"asignaciones de memoria."
 
-#: ../../library/tracemalloc.rst:341
+#: ../Doc/library/tracemalloc.rst:341
 msgid ""
 "This function only modifies the recorded peak size, and does not modify or "
 "clear any traces, unlike :func:`clear_traces`. Snapshots taken with :func:"
 "`take_snapshot` before a call to :func:`reset_peak` can be meaningfully "
 "compared to snapshots taken after the call."
 msgstr ""
+"Esta función sólo modifica el valor guardado para el uso máximo de memoria, "
+"y no modifica o borra ningún rastreo, no como :func:`clear_traces`. Capturas "
+"tomadas con :func:`take_snapshot` antes de una llamada a :func:`reset_peak` "
+"pueden ser comparadas significativamente con capturas hechas después de la "
+"llamada."
 
-#: ../../library/tracemalloc.rst:346
+#: ../Doc/library/tracemalloc.rst:346
 msgid "See also :func:`get_traced_memory`."
-msgstr ":func:`get_traced_memory` も参照してください。"
+msgstr "Mira también la función :func:`get_traced_memory`."
 
-#: ../../library/tracemalloc.rst:353
+#: ../Doc/library/tracemalloc.rst:353
 msgid ""
 "Get the memory usage in bytes of the :mod:`tracemalloc` module used to store "
 "traces of memory blocks. Return an :class:`int`."
 msgstr ""
-":mod:`tracemalloc` モジュールがメモリブロックのトレースを保存するのに使用して"
-"いるメモリ使用量をバイト単位で取得します。:class:`int` を返します。"
+"Obtiene el uso de la memoria en bytes desde el modulo :mod:`tracemalloc` "
+"usado para guardar rastreos de bloques de memoria. Retorna una clase :class:"
+"`int`."
 
-#: ../../library/tracemalloc.rst:360
+#: ../Doc/library/tracemalloc.rst:360
 msgid ""
 "``True`` if the :mod:`tracemalloc` module is tracing Python memory "
 "allocations, ``False`` otherwise."
 msgstr ""
-":mod:`tracemalloc` モジュールが Python のメモリ割り当てをトレースしていれば "
-"``True`` を、そうでなければ ``False`` を返します。"
+"Si el módulo :mod:`tracemalloc` esta rastreando asignaciones de memoria de "
+"Python retorna ``True`` sino retorna ``False``."
 
-#: ../../library/tracemalloc.rst:363
+#: ../Doc/library/tracemalloc.rst:363
 msgid "See also :func:`start` and :func:`stop` functions."
-msgstr ":func:`start` ならびに :func:`stop` 関数も参照してください。"
+msgstr "También mira las funciones :func:`start` y :func:`stop`."
 
-#: ../../library/tracemalloc.rst:368
+#: ../Doc/library/tracemalloc.rst:368
 msgid ""
 "Start tracing Python memory allocations: install hooks on Python memory "
 "allocators. Collected tracebacks of traces will be limited to *nframe* "
 "frames. By default, a trace of a memory block only stores the most recent "
 "frame: the limit is ``1``. *nframe* must be greater or equal to ``1``."
 msgstr ""
-"Python のメモリ割り当てのトレースを開始します: Python メモリアロケータにフッ"
-"クします。\n"
-"トレースの収集されたトレースバックは *nframe* フレームに制限されます。\n"
-"デフォルトでは、あるブロックのトレースは最新のフレームのみを保存します、つま"
-"り上限は ``1`` です。\n"
-"*nframe* は ``1`` 以上でなければなりません。"
+"Empieza a rastrear las asignaciones de memoria de Python: instala *hooks* en "
+"las asignaciones de memoria de Python. Los rastreos coleccionados van a "
+"estar limitados a *nframe*. Por defecto, un rastro de un bloque de memoria "
+"solo guarda el cuadro mas reciente: el limite es ``1``. *nframe* debe ser "
+"mayor o igual a `1`."
 
-#: ../../library/tracemalloc.rst:373
+#: ../Doc/library/tracemalloc.rst:373
 msgid ""
 "You can still read the original number of total frames that composed the "
 "traceback by looking at the :attr:`Traceback.total_nframe` attribute."
 msgstr ""
+"El número original de cuadros totales que componen el seguimiento observando "
+"el atributo :attr:`Traceback.total_nframe`."
 
-#: ../../library/tracemalloc.rst:376
+#: ../Doc/library/tracemalloc.rst:376
 msgid ""
 "Storing more than ``1`` frame is only useful to compute statistics grouped "
 "by ``'traceback'`` or to compute cumulative statistics: see the :meth:"
 "`Snapshot.compare_to` and :meth:`Snapshot.statistics` methods."
 msgstr ""
-"``1`` より多くのフレームを保存するのは ``'traceback'`` でグループ化された統計"
-"や累積的な統計を計算する場合にのみ有用です。\n"
-":meth:`Snapshot.compare_to` および :meth:`Snapshot.statistics` メソッドを参照"
-"してください。"
+"Guardar mas de ``1`` cuadro es solo útil para calcular estadísticas "
+"agrupadas por seguimiento o para calcular estadísticas acumulativa: mira las "
+"funciones :meth:`Snapshot.compare_to` y :meth:`Snapshot.statistics`."
 
-#: ../../library/tracemalloc.rst:380
+#: ../Doc/library/tracemalloc.rst:380
 msgid ""
 "Storing more frames increases the memory and CPU overhead of the :mod:"
 "`tracemalloc` module. Use the :func:`get_tracemalloc_memory` function to "
 "measure how much memory is used by the :mod:`tracemalloc` module."
 msgstr ""
-"保存するフレーム数を増やすと :mod:`tracemalloc` モジュールのメモリと CPU の"
-"オーバーヘッドは増加します。\n"
-":mod:`tracemalloc` モジュールが使用しているメモリ量を調べるには :func:"
-"`get_tracemalloc_memory` 関数を使用してください。"
+"Guardar mas cuadros aumenta la memoria y la sobrecargar de la CPU del "
+"modulo :mod:`tracemalloc`. Usa la función :func:`get_tracemalloc_memory` "
+"para medir cuanta memoria se usa por el módulo :mod:`tracemalloc`."
 
-#: ../../library/tracemalloc.rst:384
+#: ../Doc/library/tracemalloc.rst:384
 msgid ""
 "The :envvar:`PYTHONTRACEMALLOC` environment variable "
 "(``PYTHONTRACEMALLOC=NFRAME``) and the :option:`-X` ``tracemalloc=NFRAME`` "
 "command line option can be used to start tracing at startup."
 msgstr ""
-":envvar:`PYTHONTRACEMALLOC` 環境変数 (``PYTHONTRACEMALLOC=NFRAME``) と  :"
-"option:`-X` ``tracemalloc=NFRAME`` コマンドラインオプションを使って実行開始時"
-"にトレースを始めることが出来ます。"
+"La variable del entorno :envvar:`PYTHONTRACEMALLOC` "
+"(``PYTHONTRACEMALLOC=NFRAME``) y la opción de comando de linea :option:`-X` "
+"``tracemalloc=NFRAME`` se puede usar para empezar a rastrear desde el inicio."
 
-#: ../../library/tracemalloc.rst:388
+#: ../Doc/library/tracemalloc.rst:388
 msgid ""
 "See also :func:`stop`, :func:`is_tracing` and :func:`get_traceback_limit` "
 "functions."
 msgstr ""
-":func:`stop`、:func:`is_tracing`、:func:`get_traceback_limit` 関数を参照して"
-"ください。"
+"También mira las funciones :func:`stop`, :func:`is_tracing` y :func:"
+"`get_traceback_limit`."
 
-#: ../../library/tracemalloc.rst:394
+#: ../Doc/library/tracemalloc.rst:394
 msgid ""
 "Stop tracing Python memory allocations: uninstall hooks on Python memory "
 "allocators. Also clears all previously collected traces of memory blocks "
 "allocated by Python."
 msgstr ""
-"Python のメモリ割り当てのトレースを停止します。つまり、Python のメモリ割り当"
-"てへのフックをアンインストールします。 Python が割り当てたメモリブロックにつ"
-"いてこれまで集めたトレースも全てクリアします。"
+"Detiene el rastreo de las asignaciones de memoria de Python: desinstala los "
+"*hooks*. También limpia todos los rastros de memoria recolectados acerca de "
+"los bloques de memoria asignados por Python."
 
-#: ../../library/tracemalloc.rst:398
+#: ../Doc/library/tracemalloc.rst:398
 msgid ""
 "Call :func:`take_snapshot` function to take a snapshot of traces before "
 "clearing them."
 msgstr ""
-"トレースが全部クリアされる前にスナップショットを取りたい場合は :func:"
-"`take_snapshot` 関数を呼んでください。"
+"Llama a la función :func:`take_snapshot` para tomar una captura instantánea "
+"de los rastreos, antes de limpiarlos."
 
-#: ../../library/tracemalloc.rst:401
+#: ../Doc/library/tracemalloc.rst:401
 msgid ""
 "See also :func:`start`, :func:`is_tracing` and :func:`clear_traces` "
 "functions."
 msgstr ""
-":func:`start`、:func:`is_tracing`、:func:`clear_traces` 関数も参照してくださ"
-"い。"
+"También mira las funciones :func:`start`, :func:`is_tracing` y :func:"
+"`clear_traces`."
 
-#: ../../library/tracemalloc.rst:407
+#: ../Doc/library/tracemalloc.rst:407
 msgid ""
 "Take a snapshot of traces of memory blocks allocated by Python. Return a "
 "new :class:`Snapshot` instance."
 msgstr ""
-"Python が割り当てたメモリブロックのトレースのスナップショットを取ります。新し"
-"い :class:`Snapshot` インスタンスを返します。"
+"Toma una captura instantánea de los bloques de memoria asignados por Python. "
+"Retorna una nueva instancia de la clase :class:`Snapshot`."
 
-#: ../../library/tracemalloc.rst:410
+#: ../Doc/library/tracemalloc.rst:410
 msgid ""
 "The snapshot does not include memory blocks allocated before the :mod:"
 "`tracemalloc` module started to trace memory allocations."
 msgstr ""
-"スナップショットは :mod:`tracemalloc` モジュールがメモリ割り当てのトレースを"
-"始める前に割り当てられたメモリブロックを含みません。"
+"La captura instantánea no incluye ningún bloque de memoria asignado antes de "
+"que el módulo :mod:`tracemalloc` haya empezado a rastrear asignaciones de "
+"memoria."
 
-#: ../../library/tracemalloc.rst:413
+#: ../Doc/library/tracemalloc.rst:413
 msgid ""
 "Tracebacks of traces are limited to :func:`get_traceback_limit` frames. Use "
 "the *nframe* parameter of the :func:`start` function to store more frames."
 msgstr ""
-"トレースのトレースバックは :func:`get_traceback_limit` フレームに制限されてい"
-"ます。より多くのフレームを保存するには :func:`start` 関数の *nframe* 引数を使"
-"用してください。"
+"Los seguimientos de los rastros son limitados por la función :func:"
+"`get_traceback_limit`. Usa el parámetro *nframe* de la función :func:`start` "
+"para guardar mas cuadros."
 
-#: ../../library/tracemalloc.rst:416
+#: ../Doc/library/tracemalloc.rst:416
 msgid ""
 "The :mod:`tracemalloc` module must be tracing memory allocations to take a "
 "snapshot, see the :func:`start` function."
 msgstr ""
-"スナップショットを取るには :mod:`tracemalloc` モジュールはメモリ割り当てをト"
-"レースしていなければなりません。 :func:`start` 関数を参照してください。"
+"El módulo :mod:`tracemalloc` debe empezar a rastrear las asignaciones de "
+"memoria para tomar una captura instantánea. Mira la función :func:`start`."
 
-#: ../../library/tracemalloc.rst:419
+#: ../Doc/library/tracemalloc.rst:419
 msgid "See also the :func:`get_object_traceback` function."
-msgstr ":func:`get_object_traceback` 関数を参照してください。"
+msgstr "También mira la función :func:`get_object_traceback`."
 
-#: ../../library/tracemalloc.rst:423
+#: ../Doc/library/tracemalloc.rst:423
 msgid "DomainFilter"
-msgstr ""
+msgstr "Filtro de dominio"
 
-#: ../../library/tracemalloc.rst:427
+#: ../Doc/library/tracemalloc.rst:427
 msgid "Filter traces of memory blocks by their address space (domain)."
 msgstr ""
+"Filtra los rastros de los bloques de memoria por su espacio de dirección "
+"(dominio)."
 
-#: ../../library/tracemalloc.rst:433
+#: ../Doc/library/tracemalloc.rst:433
 msgid ""
 "If *inclusive* is ``True`` (include), match memory blocks allocated in the "
 "address space :attr:`domain`."
 msgstr ""
+"Si *inclusive* es ``True`` (incluye), relaciona los bloques de memoria "
+"asignados en el espacio de dirección :attr:`domain`."
 
-#: ../../library/tracemalloc.rst:436
+#: ../Doc/library/tracemalloc.rst:436
 msgid ""
 "If *inclusive* is ``False`` (exclude), match memory blocks not allocated in "
 "the address space :attr:`domain`."
 msgstr ""
+"Si *inclusive* es ``False`` (excluye), relaciona los bloques de memoria no "
+"asignados en el espacio de dirección :attr:`domain`."
 
-#: ../../library/tracemalloc.rst:441 ../../library/tracemalloc.rst:693
+#: ../Doc/library/tracemalloc.rst:441 ../Doc/library/tracemalloc.rst:693
 msgid "Address space of a memory block (``int``). Read-only property."
 msgstr ""
+"Espacio de dirección de un bloque de memoria (``int``). Propiedad solo-"
+"lectura."
 
-#: ../../library/tracemalloc.rst:445
+#: ../Doc/library/tracemalloc.rst:445
 msgid "Filter"
-msgstr "Filter"
+msgstr "Filtro"
 
-#: ../../library/tracemalloc.rst:449
+#: ../Doc/library/tracemalloc.rst:449
 msgid "Filter on traces of memory blocks."
-msgstr "メモリブロックのトレースをフィルターします。"
+msgstr "Filtra los rastros de los bloques de memoria."
 
-#: ../../library/tracemalloc.rst:451
+#: ../Doc/library/tracemalloc.rst:451
 msgid ""
 "See the :func:`fnmatch.fnmatch` function for the syntax of "
 "*filename_pattern*. The ``'.pyc'`` file extension is replaced with ``'.py'``."
 msgstr ""
-"*filename_pattern* のシンタックスについては :func:`fnmatch.fnmatch` 関数を参"
-"照してください。``'.pyc'`` 拡張子は ``'.py'`` に置換されます。"
+"También mira la función :func:`fnmatch.fnmatch` para la sintaxis de "
+"*filename_pattern*. La extensión ``'.pyc'`` es remplazada por ``'.py'``."
 
-#: ../../library/tracemalloc.rst:455
+#: ../Doc/library/tracemalloc.rst:455
 msgid "Examples:"
-msgstr "例:"
+msgstr "Ejemplos:"
 
-#: ../../library/tracemalloc.rst:457
+#: ../Doc/library/tracemalloc.rst:457
 msgid ""
 "``Filter(True, subprocess.__file__)`` only includes traces of the :mod:"
 "`subprocess` module"
 msgstr ""
-"``Filter(True, subprocess.__file__)`` は :mod:`subprocess` モジュールのみを含"
-"みます"
+"``Filter(True, subprocess.__file__)`` solo incluye los rastros de el módulo :"
+"mod:`subprocess`"
 
-#: ../../library/tracemalloc.rst:459
+#: ../Doc/library/tracemalloc.rst:459
 msgid ""
 "``Filter(False, tracemalloc.__file__)`` excludes traces of the :mod:"
 "`tracemalloc` module"
 msgstr ""
-"``Filter(False, tracemalloc.__file__)`` は :mod:`tracemalloc` モジュールのト"
-"レースを除外します"
+"``Filter(False, tracemalloc.__file__)`` excluye los rastros de memoria del "
+"módulo :mod:`tracemalloc`"
 
-#: ../../library/tracemalloc.rst:461
+#: ../Doc/library/tracemalloc.rst:461
 msgid "``Filter(False, \"<unknown>\")`` excludes empty tracebacks"
-msgstr "``Filter(False, \"<unknown>\")`` は空のトレースバックを除外します"
+msgstr "``Filter(False, \"<unknown>\")`` excluye los seguimientos vacíos"
 
-#: ../../library/tracemalloc.rst:464
+#: ../Doc/library/tracemalloc.rst:464
 msgid "The ``'.pyo'`` file extension is no longer replaced with ``'.py'``."
-msgstr ""
-"``'.pyo'`` ファイル拡張子が ``'.py'`` に置換されることはもうありません。"
+msgstr "La extensión ``'.pyo'`` ya no se remplaza con ``'.py'``."
 
-#: ../../library/tracemalloc.rst:467 ../../library/tracemalloc.rst:688
+#: ../Doc/library/tracemalloc.rst:467 ../Doc/library/tracemalloc.rst:688
 msgid "Added the :attr:`domain` attribute."
-msgstr ":attr:`domain` 属性が追加されました。"
+msgstr "Agregado el atributo :attr:`domain` ."
 
-#: ../../library/tracemalloc.rst:473
+#: ../Doc/library/tracemalloc.rst:473
 msgid "Address space of a memory block (``int`` or ``None``)."
-msgstr ""
+msgstr "El espacio de dirección de un bloque de memoria (``int`` o ``None``)."
 
-#: ../../library/tracemalloc.rst:475 ../../library/tracemalloc.rst:695
+#: ../Doc/library/tracemalloc.rst:475 ../Doc/library/tracemalloc.rst:695
 msgid ""
 "tracemalloc uses the domain ``0`` to trace memory allocations made by "
 "Python. C extensions can use other domains to trace other resources."
 msgstr ""
+"tracemalloc usa el dominio ``0`` para rastrear las asignaciones de memoria "
+"hechas por Python. Las extensiones C pueden usar otros dominios para "
+"rastrear otros recursos."
 
-#: ../../library/tracemalloc.rst:480
+#: ../Doc/library/tracemalloc.rst:480
 msgid ""
 "If *inclusive* is ``True`` (include), only match memory blocks allocated in "
 "a file with a name matching :attr:`filename_pattern` at line number :attr:"
 "`lineno`."
 msgstr ""
+"Si *inclusive* es ``True`` (incluye), solo relaciona los bloques de memoria "
+"asignados en un archivo con el nombre coincidiendo con el atributo :attr:"
+"`filename_pattern` en el número de línea del atributo :attr:`lineno`."
 
-#: ../../library/tracemalloc.rst:484
+#: ../Doc/library/tracemalloc.rst:484
 msgid ""
 "If *inclusive* is ``False`` (exclude), ignore memory blocks allocated in a "
 "file with a name matching :attr:`filename_pattern` at line number :attr:"
 "`lineno`."
 msgstr ""
+"Si *inclusive* es ``False`` (excluye), ignora los bloques de memoria "
+"asignados en un archivo con el nombre coincidiendo con el atributo :attr:"
+"`filename_pattern` en el número de línea del atributo :attr:`lineno`."
 
-#: ../../library/tracemalloc.rst:490
+#: ../Doc/library/tracemalloc.rst:490
 msgid ""
 "Line number (``int``) of the filter. If *lineno* is ``None``, the filter "
 "matches any line number."
 msgstr ""
-"フィルタの行番号です (``int``)。*lineno* が ``None`` の場合フィルタはあらゆる"
-"行番号にマッチします。"
+"El número de linea (``int``) del filtro. Si *lineno* es ``None``, el filtro "
+"se relaciona con cualquier número de linea."
 
-#: ../../library/tracemalloc.rst:495
+#: ../Doc/library/tracemalloc.rst:495
 msgid "Filename pattern of the filter (``str``). Read-only property."
 msgstr ""
-"フィルタのファイル名のパターンです (``str``)。読み出し専用のプロパティです。"
+"El patrón del nombre de archivo del filtro (``str``). Propiedad solo-lectura."
 
-#: ../../library/tracemalloc.rst:499
+#: ../Doc/library/tracemalloc.rst:499
 msgid ""
 "If *all_frames* is ``True``, all frames of the traceback are checked. If "
 "*all_frames* is ``False``, only the most recent frame is checked."
 msgstr ""
-"*all_frames* が ``True`` の場合トレースバックの全てのフレームをチェックしま"
-"す。*all_frames* が ``False`` の場合最新のフレームをチェックします。"
+"Si *all_frames* es ``True``, todos los cuadros de los rastreos son "
+"chequeados. Si *all_frames* es ``False``, solo el cuadro mas reciente es "
+"chequeado."
 
-#: ../../library/tracemalloc.rst:502
+#: ../Doc/library/tracemalloc.rst:502
 msgid ""
 "This attribute has no effect if the traceback limit is ``1``.  See the :func:"
 "`get_traceback_limit` function and :attr:`Snapshot.traceback_limit` "
 "attribute."
 msgstr ""
-"トレースバックの上限が ``1`` の場合この属性の影響はありません。\n"
-":func:`get_traceback_limit` 関数と :attr:`Snapshot.traceback_limit` 属性を参"
-"照してください。"
+"El atributo no tiene efecto si el limite de rastreo es ``1``.  Mira la "
+"función :func:`get_traceback_limit` y el atributo :attr:`Snapshot."
+"traceback_limit`."
 
-#: ../../library/tracemalloc.rst:508
+#: ../Doc/library/tracemalloc.rst:508
 msgid "Frame"
-msgstr "Frame"
+msgstr "Cuadro"
 
-#: ../../library/tracemalloc.rst:512
+#: ../Doc/library/tracemalloc.rst:512
 msgid "Frame of a traceback."
-msgstr "トレースバックのフレームです。"
+msgstr "Cuadro de un rastreo."
 
-#: ../../library/tracemalloc.rst:514
+#: ../Doc/library/tracemalloc.rst:514
 msgid "The :class:`Traceback` class is a sequence of :class:`Frame` instances."
 msgstr ""
-":class:`Traceback` クラスは :class:`Frame` インスタンスのシークエンスです。"
+"La clase :class:`Traceback` es una secuencia de las instancias de la clase :"
+"class:`Frame`."
 
-#: ../../library/tracemalloc.rst:518
+#: ../Doc/library/tracemalloc.rst:518
 msgid "Filename (``str``)."
-msgstr "ファイル名 (``str``)。"
+msgstr "Nombre de archivo (``str``)."
 
-#: ../../library/tracemalloc.rst:522
+#: ../Doc/library/tracemalloc.rst:522
 msgid "Line number (``int``)."
-msgstr "行番号 (``int``)。"
+msgstr "Número de línea (``int``)."
 
-#: ../../library/tracemalloc.rst:526
+#: ../Doc/library/tracemalloc.rst:526
 msgid "Snapshot"
-msgstr "Snapshot"
+msgstr "Captura instantánea"
 
-#: ../../library/tracemalloc.rst:530
+#: ../Doc/library/tracemalloc.rst:530
 msgid "Snapshot of traces of memory blocks allocated by Python."
-msgstr "Python が割り当てたメモリブロックのトレースのスナップショットです。"
+msgstr ""
+"Captura instantánea de los rastros de los bloques de memoria asignados por "
+"Python."
 
-#: ../../library/tracemalloc.rst:532
+#: ../Doc/library/tracemalloc.rst:532
 msgid "The :func:`take_snapshot` function creates a snapshot instance."
-msgstr ":func:`take_snapshot` 関数はスナップショットのインスタンスを作ります。"
+msgstr ""
+"La función :func:`take_snapshot` crea una instancia de captura instantánea."
 
-#: ../../library/tracemalloc.rst:536
+#: ../Doc/library/tracemalloc.rst:536
 msgid ""
 "Compute the differences with an old snapshot. Get statistics as a sorted "
 "list of :class:`StatisticDiff` instances grouped by *key_type*."
 msgstr ""
-"古いスナップショットとの差を計算します。\n"
-"*key_type* でグループ化された :class:`StatisticDiff` インスタンスのソート済み"
-"リストとして統計を取得します。"
+"Calcula las diferencias con una vieja captura instantánea. Obtiene las "
+"estadísticas en una lista ordenada de instancias de la clase :class:"
+"`StatisticDiff` agrupadas por *key_type*."
 
-#: ../../library/tracemalloc.rst:539
+#: ../Doc/library/tracemalloc.rst:539
 msgid ""
 "See the :meth:`Snapshot.statistics` method for *key_type* and *cumulative* "
 "parameters."
 msgstr ""
-"*key_type* および *cumulative* 引数については :meth:`Snapshot.statistics` メ"
-"ソッドを参照してください。"
+"Mira el método :meth:`Snapshot.statistics` para los parámetros *key_type* y "
+"*cumulative*."
 
-#: ../../library/tracemalloc.rst:542
+#: ../Doc/library/tracemalloc.rst:542
 msgid ""
 "The result is sorted from the biggest to the smallest by: absolute value of :"
 "attr:`StatisticDiff.size_diff`, :attr:`StatisticDiff.size`, absolute value "
 "of :attr:`StatisticDiff.count_diff`, :attr:`Statistic.count` and then by :"
 "attr:`StatisticDiff.traceback`."
 msgstr ""
-"結果は降順でソートされます: キーは :attr:`StatisticDiff.size_diff` の絶対"
-"値、 :attr:`StatisticDiff.size`、 :attr:`StatisticDiff.count_diff` の絶対"
-"置、 :attr:`Statistic.count`、そして :attr:`StatisticDiff.traceback` です。"
+"El resultado esta guardado desde el más grande al más pequeño por los "
+"valores absolutos de :meth:`StatisticDiff.size_diff`, :meth:`StatisticDiff."
+"size`, el valor absoluto de :meth:`StatisticDiff.count_diff`, :meth:"
+"`Statistic.count` y después por el atributo :meth:`StatisticDiff.traceback`."
 
-#: ../../library/tracemalloc.rst:550
+#: ../Doc/library/tracemalloc.rst:550
 msgid "Write the snapshot into a file."
-msgstr "スナップショットをファイルに書き込みます。"
+msgstr "Escribe la captura instantánea en un archivo."
 
-#: ../../library/tracemalloc.rst:552
+#: ../Doc/library/tracemalloc.rst:552
 msgid "Use :meth:`load` to reload the snapshot."
-msgstr "スナップショットをリロードするには :meth:`load` を使用します。"
+msgstr "Usa el método :meth:`load` para recargar la captura instantánea."
 
-#: ../../library/tracemalloc.rst:557
+#: ../Doc/library/tracemalloc.rst:557
 msgid ""
 "Create a new :class:`Snapshot` instance with a filtered :attr:`traces` "
 "sequence, *filters* is a list of :class:`DomainFilter` and :class:`Filter` "
 "instances.  If *filters* is an empty list, return a new :class:`Snapshot` "
 "instance with a copy of the traces."
 msgstr ""
+"Crea una nueva instancia de clase :class:`Snapshot` con una secuencia de :"
+"attr:`traces` filtrados, *filters* es una lista de las instancias de :class:"
+"`DomainFilter` y :class:`Filter`.  Si *filters* es una lista vacía, retorna "
+"una nueva instancia de clase :class:`Snapshot` con una copia de los rastreos."
 
-#: ../../library/tracemalloc.rst:562
+#: ../Doc/library/tracemalloc.rst:562
 msgid ""
 "All inclusive filters are applied at once, a trace is ignored if no "
 "inclusive filters match it. A trace is ignored if at least one exclusive "
 "filter matches it."
 msgstr ""
+"Los filtros ``todo incluido`` se aplican de a uno, si los filtros no "
+"incluidos coinciden. Si al menos un filtro exclusivo coincide, se ignora un "
+"rastro."
 
-#: ../../library/tracemalloc.rst:566
+#: ../Doc/library/tracemalloc.rst:566
 msgid ":class:`DomainFilter` instances are now also accepted in *filters*."
 msgstr ""
+"Las instancias de clase :class:`DomainFilter` ahora también son aceptadas en "
+"*filters*."
 
-#: ../../library/tracemalloc.rst:572
+#: ../Doc/library/tracemalloc.rst:572
 msgid "Load a snapshot from a file."
-msgstr "スナップショットをファイルからロードします。"
+msgstr "Carga la captura instantánea desde un archivo."
 
-#: ../../library/tracemalloc.rst:574
+#: ../Doc/library/tracemalloc.rst:574
 msgid "See also :meth:`dump`."
-msgstr ":meth:`dump` を参照してください。"
+msgstr "También mira el método :meth:`dump`."
 
-#: ../../library/tracemalloc.rst:579
+#: ../Doc/library/tracemalloc.rst:579
 msgid ""
 "Get statistics as a sorted list of :class:`Statistic` instances grouped by "
 "*key_type*:"
 msgstr ""
-"*key_type* でグループ化された :class:`Statistic` インスタンスのソート済みリス"
-"トとして統計を取得します:"
+"Obtiene estadísticas como una lista ordenada, de instancias de :class:"
+"`Statistic` agrupadas por *key_type*:"
 
-#: ../../library/tracemalloc.rst:583
+#: ../Doc/library/tracemalloc.rst:583
 msgid "key_type"
 msgstr "key_type"
 
-#: ../../library/tracemalloc.rst:583
+#: ../Doc/library/tracemalloc.rst:583
 msgid "description"
-msgstr "description"
+msgstr "descripción"
 
-#: ../../library/tracemalloc.rst:585
+#: ../Doc/library/tracemalloc.rst:585
 msgid "``'filename'``"
 msgstr "``'filename'``"
 
-#: ../../library/tracemalloc.rst:585
+#: ../Doc/library/tracemalloc.rst:585
 msgid "filename"
-msgstr "ファイル名"
+msgstr "nombre del archivo"
 
-#: ../../library/tracemalloc.rst:586
+#: ../Doc/library/tracemalloc.rst:586
 msgid "``'lineno'``"
 msgstr "``'lineno'``"
 
-#: ../../library/tracemalloc.rst:586
+#: ../Doc/library/tracemalloc.rst:586
 msgid "filename and line number"
-msgstr "ファイル名と行番号"
+msgstr "nombre del archivo y número de línea"
 
-#: ../../library/tracemalloc.rst:587
+#: ../Doc/library/tracemalloc.rst:587
 msgid "``'traceback'``"
 msgstr "``'traceback'``"
 
-#: ../../library/tracemalloc.rst:587
+#: ../Doc/library/tracemalloc.rst:587
 msgid "traceback"
-msgstr "traceback"
+msgstr "seguimiento"
 
-#: ../../library/tracemalloc.rst:590
+#: ../Doc/library/tracemalloc.rst:590
 msgid ""
 "If *cumulative* is ``True``, cumulate size and count of memory blocks of all "
 "frames of the traceback of a trace, not only the most recent frame. The "
 "cumulative mode can only be used with *key_type* equals to ``'filename'`` "
 "and ``'lineno'``."
 msgstr ""
-"*cumulative* が ``True`` の場合、最新のフレームだけでなく、トレースのトレース"
-"バックの全フレームのメモリーブロックについて大きさと数を累積します。\n"
-"累積モードは *key_type* が ``'filename'`` および ``'lineno'`` と等しい場合に"
-"のみ使用することが出来ます。"
+"Si *cumulative* es ``True``, acumula el tamaño y cuenta los bloques de "
+"memoria de todos los cuadros del seguimiento de un rastro, no solo el cuadro "
+"mas reciente. El modo acumulativo solo puede ser usado cuando *key_type* se "
+"iguala a ``'filename'`` y ``'lineno'``."
 
-#: ../../library/tracemalloc.rst:595
+#: ../Doc/library/tracemalloc.rst:595
 msgid ""
 "The result is sorted from the biggest to the smallest by: :attr:`Statistic."
 "size`, :attr:`Statistic.count` and then by :attr:`Statistic.traceback`."
 msgstr ""
-"結果は降順でソートされます: キーは :attr:`Statistic.size`, :attr:`Statistic."
-"count`, :attr:`Statistic.traceback` です。"
+"El resultado se organiza desde el más grande hasta el más pequeño por el "
+"atributo :attr:`Statistic.size`, :attr:`Statistic.count` y después por :attr:"
+"`Statistic.traceback`."
 
-#: ../../library/tracemalloc.rst:602
+#: ../Doc/library/tracemalloc.rst:602
 msgid ""
 "Maximum number of frames stored in the traceback of :attr:`traces`: result "
 "of the :func:`get_traceback_limit` when the snapshot was taken."
 msgstr ""
-":attr:`traces` のトレースバック内に保存されるフレーム数の最大値です。\n"
-"スナップショットが取られたときの :func:`get_traceback_limit` の結果です。"
+"El número máximo de cuadros organizados en el rastreo del atributo :attr:"
+"`traces`: resulta de la función :attr:`get_traceback_limit` cuando la "
+"captura instantánea fue tomada."
 
-#: ../../library/tracemalloc.rst:607
+#: ../Doc/library/tracemalloc.rst:607
 msgid ""
 "Traces of all memory blocks allocated by Python: sequence of :class:`Trace` "
 "instances."
 msgstr ""
-"Python が割り当てた全メモリブロックのトレースで、 :class:`Trace` インスタンス"
-"のシークェンスです。"
+"Rastros de todos los bloques de memoria asignados por Python: secuencia de "
+"instancias de :class:`Trace`."
 
-#: ../../library/tracemalloc.rst:610
+#: ../Doc/library/tracemalloc.rst:610
 msgid ""
 "The sequence has an undefined order. Use the :meth:`Snapshot.statistics` "
 "method to get a sorted list of statistics."
 msgstr ""
-"シークェンスの順序は未定義です。統計のソート済みリストを取得するには :meth:"
-"`Snapshot.statistics` を使用してください。"
+"La secuencia tiene un orden que no esta definido. Usa el método :meth:"
+"`Snapshot.statistics` para obtener una lista ordenada de estadísticas."
 
-#: ../../library/tracemalloc.rst:615
+#: ../Doc/library/tracemalloc.rst:615
 msgid "Statistic"
-msgstr "Statistic"
+msgstr "Estadística"
 
-#: ../../library/tracemalloc.rst:619
+#: ../Doc/library/tracemalloc.rst:619
 msgid "Statistic on memory allocations."
-msgstr "メモリ割り当ての統計です。"
+msgstr "Estadística de las asignaciones de memoria."
 
-#: ../../library/tracemalloc.rst:621
+#: ../Doc/library/tracemalloc.rst:621
 msgid ""
 ":func:`Snapshot.statistics` returns a list of :class:`Statistic` instances."
 msgstr ""
-":func:`Snapshot.statistics` は :class:`Statistic` インスタンスの一覧を返しま"
-"す。"
+":func:`Snapshot.statistics` retorna una lista de instancias de la clase :"
+"class:`Statistic`."
 
-#: ../../library/tracemalloc.rst:623
+#: ../Doc/library/tracemalloc.rst:623
 msgid "See also the :class:`StatisticDiff` class."
-msgstr ":class:`StatisticDiff` クラスも参照してください。"
+msgstr "También mira la clase :class:`StatisticDiff`."
 
-#: ../../library/tracemalloc.rst:627
+#: ../Doc/library/tracemalloc.rst:627
 msgid "Number of memory blocks (``int``)."
-msgstr "メモリブロック数 (``int``)。"
+msgstr "Número de bloques de memoria (``int``)."
 
-#: ../../library/tracemalloc.rst:631
+#: ../Doc/library/tracemalloc.rst:631
 msgid "Total size of memory blocks in bytes (``int``)."
-msgstr "メモリブロックのバイト単位の総サイズ (``int``)。"
+msgstr "El tamaño total de los bloques de memoria en bytes (``int``)."
 
-#: ../../library/tracemalloc.rst:635 ../../library/tracemalloc.rst:704
+#: ../Doc/library/tracemalloc.rst:635 ../Doc/library/tracemalloc.rst:704
 msgid ""
 "Traceback where the memory block was allocated, :class:`Traceback` instance."
 msgstr ""
-"メモリブロックが割り当てられているトレースバック。:class:`Traceback` インスタ"
-"ンス。"
+"Rastrea donde un bloque de memoria fue asignado, la instancia de la clase :"
+"class:`Traceback`."
 
-#: ../../library/tracemalloc.rst:640
+#: ../Doc/library/tracemalloc.rst:640
 msgid "StatisticDiff"
 msgstr "StatisticDiff"
 
-#: ../../library/tracemalloc.rst:644
+#: ../Doc/library/tracemalloc.rst:644
 msgid ""
 "Statistic difference on memory allocations between an old and a new :class:"
 "`Snapshot` instance."
-msgstr "新旧 :class:`Snapshot` インスタンスのメモリ割り当ての統計差です。"
+msgstr ""
+"La diferencia de estadística en las asignaciones de memoria entre una vieja "
+"y una nueva instancia de clase :class:`Snapshot`."
 
-#: ../../library/tracemalloc.rst:647
+#: ../Doc/library/tracemalloc.rst:647
 msgid ""
 ":func:`Snapshot.compare_to` returns a list of :class:`StatisticDiff` "
 "instances. See also the :class:`Statistic` class."
 msgstr ""
-":func:`Snapshot.compare_to` は :class:`StatisticDiff` インスタンスのリストを"
-"返します。 :class:`Statistic` クラスも参照してください。"
+":func:`Snapshot.compare_to` retorna una lista de instancias de la clase :"
+"class:`StatisticDiff`. Mira también la clase :class:`Statistic`."
 
-#: ../../library/tracemalloc.rst:652
+#: ../Doc/library/tracemalloc.rst:652
 msgid ""
 "Number of memory blocks in the new snapshot (``int``): ``0`` if the memory "
 "blocks have been released in the new snapshot."
 msgstr ""
-"新しいスナップショット内のメモリブロックの数 (``int``) です。新しいスナップ"
-"ショット内でメモリブロックが解放された場合は ``0`` です。"
+"El número de bloques de memoria en la nueva captura de pantalla (``int``): "
+"``0`` si los bloques de memoria han sido liberados en la nueva captura "
+"instantánea."
 
-#: ../../library/tracemalloc.rst:657
+#: ../Doc/library/tracemalloc.rst:657
 msgid ""
 "Difference of number of memory blocks between the old and the new snapshots "
 "(``int``): ``0`` if the memory blocks have been allocated in the new "
 "snapshot."
 msgstr ""
-"新旧スナップショットのメモリブロック数の差 (``int``) です。メモリブロックが新"
-"しいスナップショット内で割り当てられた場合は ``0`` です。"
+"La diferencia de los números de los bloques de memoria entre las capturas "
+"viejas y nuevas (``int``): ``0`` si el bloque de memoria ha sido asignado en "
+"la nueva captura instantánea."
 
-#: ../../library/tracemalloc.rst:663
+#: ../Doc/library/tracemalloc.rst:663
 msgid ""
 "Total size of memory blocks in bytes in the new snapshot (``int``): ``0`` if "
 "the memory blocks have been released in the new snapshot."
 msgstr ""
-"新しいスナップショット内のメモリブロックのバイト単位での総サイズ (``int``) で"
-"す。新しいスナップショット内でメモリブロックが解放された場合は ``0`` です。"
+"El tamaño total de los bloques de memoria en bytes en la nueva captura "
+"instantánea (``int``): ``0`` si el bloque de memoria ha sido liberado en la "
+"nueva captura instantánea."
 
-#: ../../library/tracemalloc.rst:668
+#: ../Doc/library/tracemalloc.rst:668
 msgid ""
 "Difference of total size of memory blocks in bytes between the old and the "
 "new snapshots (``int``): ``0`` if the memory blocks have been allocated in "
 "the new snapshot."
 msgstr ""
-"新旧スナップショットのバイト単位での総サイズの差 (``int``) です。メモリブロッ"
-"クが新しいスナップショット内で割り当てられた場合は ``0`` です。"
+"La diferencia de el tamaño total de un bloque de memoria en bytes entre las "
+"capturas instantáneas viejas y nuevas (``int``): ``0`` si el bloque de "
+"memoria ha sido asignado en la nueva captura instantánea."
 
-#: ../../library/tracemalloc.rst:674
+#: ../Doc/library/tracemalloc.rst:674
 msgid ""
 "Traceback where the memory blocks were allocated, :class:`Traceback` "
 "instance."
 msgstr ""
-"メモリブロックが割り当てられたトレースバックで、 :class:`Traceback` のインス"
-"タンスです。"
+"Rastrea donde los bloques de memoria han sido asignados, instancia de la "
+"clase :class:`Traceback`."
 
-#: ../../library/tracemalloc.rst:679
+#: ../Doc/library/tracemalloc.rst:679
 msgid "Trace"
-msgstr "Trace"
+msgstr "Rastro"
 
-#: ../../library/tracemalloc.rst:683
+#: ../Doc/library/tracemalloc.rst:683
 msgid "Trace of a memory block."
-msgstr "メモリブロックをトレースします。"
+msgstr "Rastro de un bloque de memoria."
 
-#: ../../library/tracemalloc.rst:685
+#: ../Doc/library/tracemalloc.rst:685
 msgid ""
 "The :attr:`Snapshot.traces` attribute is a sequence of :class:`Trace` "
 "instances."
 msgstr ""
-":attr:`Snapshot.traces` 属性は :class:`Trace` インスタンスのシークエンスで"
-"す。"
+"El atributo :attr:`Snapshot.traces` es una secuencia de las instancias de la "
+"clase :class:`Trace`."
 
-#: ../../library/tracemalloc.rst:700
+#: ../Doc/library/tracemalloc.rst:700
 msgid "Size of the memory block in bytes (``int``)."
-msgstr "メモリブロックのバイト単位のサイズ (``int``)。"
+msgstr "Tamaño de un bloque de memoria en bytes (``int``)."
 
-#: ../../library/tracemalloc.rst:709
+#: ../Doc/library/tracemalloc.rst:709
 msgid "Traceback"
-msgstr "Traceback"
+msgstr "Seguimiento"
 
-#: ../../library/tracemalloc.rst:713
+#: ../Doc/library/tracemalloc.rst:713
 msgid ""
 "Sequence of :class:`Frame` instances sorted from the oldest frame to the "
 "most recent frame."
 msgstr ""
+"La secuencia de las instancias de la clase :class:`Frame` organizadas desde "
+"el cuadro mas antiguo al más reciente."
 
-#: ../../library/tracemalloc.rst:716
+#: ../Doc/library/tracemalloc.rst:716
 msgid ""
 "A traceback contains at least ``1`` frame. If the ``tracemalloc`` module "
 "failed to get a frame, the filename ``\"<unknown>\"`` at line number ``0`` "
 "is used."
 msgstr ""
+"Un seguimiento contiene por lo menos ``1`` cuadro. Si el módulo "
+"``tracemalloc`` falla al traer un cuadro, se usa el nombre del archivo "
+"``\"<unknown>\"`` en el número de linea ``0``."
 
-#: ../../library/tracemalloc.rst:720
+#: ../Doc/library/tracemalloc.rst:720
 msgid ""
 "When a snapshot is taken, tracebacks of traces are limited to :func:"
 "`get_traceback_limit` frames. See the :func:`take_snapshot` function. The "
@@ -887,30 +968,41 @@ msgid ""
 "total_nframe` attribute. That allows to know if a traceback has been "
 "truncated by the traceback limit."
 msgstr ""
+"Cuando se toma una captura, los seguimientos de los rastreos se limitan a :"
+"func:`get_traceback_limit` cuadros. Ver la función :func:`take_snapshot`. El "
+"número original de cuadros del seguimiento se guarda en el atributo :attr:"
+"`Traceback.total_nframe`. Esto permite saber si un seguimiento fue truncado "
+"por el límite de seguimientos."
 
-#: ../../library/tracemalloc.rst:726
+#: ../Doc/library/tracemalloc.rst:726
 msgid ""
 "The :attr:`Trace.traceback` attribute is an instance of :class:`Traceback` "
 "instance."
-msgstr ":attr:`Trace.traceback` 属性は :class:`Traceback` のインスタンスです。"
+msgstr ""
+"El atributo :attr:`Trace.traceback` es una instancia de la clase :class:"
+"`Traceback`."
 
-#: ../../library/tracemalloc.rst:729
+#: ../Doc/library/tracemalloc.rst:729
 msgid ""
 "Frames are now sorted from the oldest to the most recent, instead of most "
 "recent to oldest."
 msgstr ""
+"Los cuadros están organizados desde el mas antiguo hasta el más reciente, en "
+"vez de el más reciente al más antiguo."
 
-#: ../../library/tracemalloc.rst:734
+#: ../Doc/library/tracemalloc.rst:734
 msgid ""
 "Total number of frames that composed the traceback before truncation. This "
 "attribute can be set to ``None`` if the information is not available."
 msgstr ""
+"Número total de cuadros que componen el seguimiento antes de ser truncado. "
+"Este atributo puede ser ``None`` si no hay información disponible."
 
-#: ../../library/tracemalloc.rst:738
+#: ../Doc/library/tracemalloc.rst:738
 msgid "The :attr:`Traceback.total_nframe` attribute was added."
-msgstr ":attr:`Traceback.total_nframe` 属性が追加されました。"
+msgstr "El atributo :attr:`Traceback.total_nframe` fue añadido."
 
-#: ../../library/tracemalloc.rst:743
+#: ../Doc/library/tracemalloc.rst:743
 msgid ""
 "Format the traceback as a list of lines. Use the :mod:`linecache` module to "
 "retrieve lines from the source code. If *limit* is set, format the *limit* "
@@ -919,13 +1011,22 @@ msgid ""
 "of the formatted frames is reversed, returning the most recent frame first "
 "instead of last."
 msgstr ""
+"Formatea el seguimiento como una lista de líneas. Usa el módulo :mod:"
+"`linecache` para recuperar líneas del código fuente. Si se configura el "
+"límite, formatea los cuadros más recientes de los límites, si límite es "
+"positivo. De otra manera, formatea los cuadros más antiguos de "
+"``abs(limit)``. Si *most_recent_first* es ``True``, se invierte el orden de "
+"los cuadros formateados, devolviendo el cuadro más reciente en lugar del "
+"último."
 
-#: ../../library/tracemalloc.rst:750
+#: ../Doc/library/tracemalloc.rst:750
 msgid ""
 "Similar to the :func:`traceback.format_tb` function, except that :meth:`."
 "format` does not include newlines."
 msgstr ""
+"Similar a la función :func:`traceback.format_tb`, excepto por el método :"
+"meth:`.format` que no incluye nuevas líneas."
 
-#: ../../library/tracemalloc.rst:753
+#: ../Doc/library/tracemalloc.rst:753
 msgid "Example::"
-msgstr "以下はプログラム例です::"
+msgstr "Ejemplo::"

@@ -1,37 +1,35 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org / https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:12+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2019-05-06 11:59-0400\n"
+"PO-Revision-Date: 2020-11-11 09:18+0100\n"
+"Language-Team: python-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Juan Biondi <juanernestobiondi@gmail.com>\n"
+"Language: es\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../library/quopri.rst:2
+#: ../Doc/library/quopri.rst:2
 msgid ":mod:`quopri` --- Encode and decode MIME quoted-printable data"
 msgstr ""
-":mod:`quopri` --- MIME quoted-printable 形式データのエンコードおよびデコード"
+":mod:`quopri` --- Codificar y decodificar datos MIME imprimibles entre "
+"comillas"
 
-#: ../../library/quopri.rst:7
+#: ../Doc/library/quopri.rst:7
 msgid "**Source code:** :source:`Lib/quopri.py`"
-msgstr "**ソースコード:** :source:`Lib/quopri.py`"
+msgstr "**Código fuente:** :source:`Lib/quopri.py`"
 
-#: ../../library/quopri.rst:15
+#: ../Doc/library/quopri.rst:15
 msgid ""
 "This module performs quoted-printable transport encoding and decoding, as "
 "defined in :rfc:`1521`: \"MIME (Multipurpose Internet Mail Extensions) Part "
@@ -41,15 +39,16 @@ msgid ""
 "via the :mod:`base64` module is more compact if there are many such "
 "characters, as when sending a graphics file."
 msgstr ""
-"このモジュールは :rfc:`1521`: \"MIME (Multipurpose Internet Mail Extensions) "
-"Part One: Mechanisms for Specifying and Describing the Format of Internet "
-"Message Bodies\" で定義されている quoted-printable による伝送のエンコードおよ"
-"びデコードを行います。 quoted-printable エンコーディングは比較的印字不可能な"
-"文字の少ないデータのために設計されています; 画像ファイルを送るときのように印"
-"字不可能な文字がたくさんある場合には、 :mod:`base64` モジュールで利用できる "
-"base64 エンコーディングのほうがよりコンパクトになります。"
+"Este módulo realiza la codificación y descodificación de transporte "
+"imprimible entre comillas, tal como se define en :rfc:`1521`: \"MIME "
+"(Multipurpose Internet Mail Extensions) Parte Uno: Mecanismos para "
+"especificar y describir el formato de los cuerpos de mensajes de Internet\". "
+"La codificación imprimible entre comillas está diseñada para datos donde hay "
+"relativamente pocos caracteres no imprimibles; el esquema de codificación "
+"base64 disponible a través del módulo :mod:`base64` es más compacto si hay "
+"muchos caracteres de este tipo, como cuando se envía un archivo gráfico."
 
-#: ../../library/quopri.rst:25
+#: ../Doc/library/quopri.rst:25
 msgid ""
 "Decode the contents of the *input* file and write the resulting decoded "
 "binary data to the *output* file. *input* and *output* must be :term:`binary "
@@ -58,15 +57,16 @@ msgid ""
 "encoded headers as described in :rfc:`1522`: \"MIME (Multipurpose Internet "
 "Mail Extensions) Part Two: Message Header Extensions for Non-ASCII Text\"."
 msgstr ""
-"ファイル *input* の内容をデコードして、デコードされたバイナリデータをファイ"
-"ル *output* に書き出します。 *input* および *output* は :term:`バイナリファイ"
-"ルオブジェクト <file object>` でなければなりません。オプション引数 *header* "
-"が存在し、かつその値が真である場合、アンダースコアは空白文字にデコードされま"
-"す。これは :rfc:`1522`: \"MIME (Multipurpose Internet Mail Extensions) Part "
-"Two: Message Header Extensions for Non-ASCII Text\" で記述されているところの "
-"\"Q\"-エンコードされたヘッダをデコードするのに使われます。"
+"Descodificar el contenido del archivo *input* y escribir los datos binarios "
+"descodificados resultantes en el archivo *output*. *input* y *output* deben "
+"ser :term:`objetos de archivo binario <file object>`.  Si el argumento "
+"opcional *header* está presente y true, el carácter de subrayado se "
+"descodificará como espacio. Esto se utiliza para decodificar encabezados "
+"codificados en \"Q\" como se describe en :rfc:`1522`: \"MIME (Multipurpose "
+"Internet Mail Extensions) Parte dos: Extensiones de encabezado de mensaje "
+"para texto no ASCII\"."
 
-#: ../../library/quopri.rst:35
+#: ../Doc/library/quopri.rst:35
 msgid ""
 "Encode the contents of the *input* file and write the resulting quoted-"
 "printable data to the *output* file. *input* and *output* must be :term:"
@@ -77,41 +77,38 @@ msgid ""
 "rfc:`1521`.  *header* is a flag which controls if spaces are encoded as "
 "underscores as per :rfc:`1522`."
 msgstr ""
-"ファイル *input* の内容をエンコードして、その結果の quoted-printable データを"
-"ファイル *output* に書き出します。\n"
-"*input* および *output* は :term:`バイナリファイルオブジェクト <file "
-"object>` でなければなりません。\n"
-"*quotetabs* は、内容に含まれている空白とタブ文字をエンコードするかどうかを制"
-"御する必須のフラグで、真のときは空白文字をエンコードし、偽のときはエンコード"
-"しないままにしておきます。\n"
-":rfc:`1521` に従って、行末にある空白とタブ文字は常にエンコードされることに注"
-"意してください。\n"
-"*header* は、空白を :rfc:`1522` に従ってアンダースコアにエンコードするかどう"
-"かを制御するフラグです。"
+"Codifique el contenido del archivo *input* y escriba los datos imprimibles "
+"entre comillas resultantes en el archivo *output*. *input* y *output* deben "
+"ser :term:`objetos de archivo binario <file object>`. *quotetabs*, un "
+"indicador no opcional que controla si codificar espacios incrustados y "
+"pestañas; cuando true codifica dicho espacio en blanco incrustado, y cuando "
+"false los deja sin codificar. Tenga en cuenta que los espacios y pestañas "
+"que aparecen al final de las líneas siempre están codificados, según :rfc:"
+"`1521`.  *header* es un indicador que controla si los espacios están "
+"codificados como guiones bajos según :rfc:`1522`."
 
-#: ../../library/quopri.rst:48
+#: ../Doc/library/quopri.rst:48
 msgid ""
 "Like :func:`decode`, except that it accepts a source :class:`bytes` and "
 "returns the corresponding decoded :class:`bytes`."
 msgstr ""
-":func:`decode` に似ていますが、ソース :class:`bytes` を受け取り、対応するデ"
-"コードされた :class:`bytes` を返します。"
+"Como :func:`decode`, excepto que acepta una fuente :class:`bytes` y retorna "
+"el correspondiente :class:`bytes` decodificado."
 
-#: ../../library/quopri.rst:54
+#: ../Doc/library/quopri.rst:54
 msgid ""
 "Like :func:`encode`, except that it accepts a source :class:`bytes` and "
 "returns the corresponding encoded :class:`bytes`. By default, it sends a "
 "``False`` value to *quotetabs* parameter of the :func:`encode` function."
 msgstr ""
-":func:`encode` に似ていますが、ソース :class:`bytes` を受け取り、対応するエン"
-"コードされた :class:`bytes` を返します。\n"
-"デフォルトでは、 :func:`encode` 関数の *quotetabs* パラメータに ``False`` を"
-"渡します。"
+"Como :func:`encode`, excepto que acepta un origen :class:`bytes` y retorna "
+"el codificado correspondiente :class:`bytes`. De forma predeterminada, envía "
+"un valor ``False`` al parámetro *quotetabs* de la función :func:`encode`."
 
-#: ../../library/quopri.rst:62
+#: ../Doc/library/quopri.rst:62
 msgid "Module :mod:`base64`"
-msgstr ":mod:`base64` モジュール"
+msgstr "Módulo :mod:`base64`"
 
-#: ../../library/quopri.rst:63
+#: ../Doc/library/quopri.rst:63
 msgid "Encode and decode MIME base64 data"
-msgstr "MIME base64 形式データのエンコードおよびデコード"
+msgstr "Codificar y decodificar datos MIME base64"

@@ -1,58 +1,58 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:18+0000\n"
-"Last-Translator: Osamu NAKAMURA, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2020-05-05 12:54+0200\n"
+"PO-Revision-Date: 2020-10-13 00:29+0200\n"
+"Language-Team: python-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.4.1\n"
 
-#: ../../library/xml.sax.rst:2
+#: ../Doc/library/xml.sax.rst:2
 msgid ":mod:`xml.sax` --- Support for SAX2 parsers"
-msgstr ":mod:`xml.sax` --- SAX2 パーサのサポート"
+msgstr ":mod:`XML.sax`--- Soporte para analizadores SAX2"
 
-#: ../../library/xml.sax.rst:11
+#: ../Doc/library/xml.sax.rst:11
 msgid "**Source code:** :source:`Lib/xml/sax/__init__.py`"
-msgstr "**ソースコード:** :source:`Lib/xml/sax/__init__.py`"
+msgstr "**Código fuente:** :source:`Lib/xml/sax/__init__.py`"
 
-#: ../../library/xml.sax.rst:15
+#: ../Doc/library/xml.sax.rst:15
 msgid ""
 "The :mod:`xml.sax` package provides a number of modules which implement the "
 "Simple API for XML (SAX) interface for Python.  The package itself provides "
 "the SAX exceptions and the convenience functions which will be most used by "
 "users of the SAX API."
 msgstr ""
-":mod:`xml.sax` パッケージは Python 用の Simple API for XML (SAX) インター"
-"フェースを実装した数多くのモジュールを提供しています。またパッケージには SAX "
-"例外と SAX API 利用者が頻繁に利用するであろう有用な関数群も含まれています。"
+"El paquete :mod:`xml.sax` provee un número de módulos que implementan la API "
+"Simple para la interfaz XML (SAX) para Python.  El paquete mismo provee las "
+"excepciones SAX y las funciones de conveniencia que serán las más usadas por "
+"los usuarios de la API SAX."
 
-#: ../../library/xml.sax.rst:23
+#: ../Doc/library/xml.sax.rst:23
 msgid ""
 "The :mod:`xml.sax` module is not secure against maliciously constructed "
 "data.  If you need to parse untrusted or unauthenticated data see :ref:`xml-"
 "vulnerabilities`."
 msgstr ""
-":mod:`xml.sax` モジュールは悪意を持って作成されたデータに対して安全ではありま"
-"せん。信頼できないデータや認証されていないデータをパースする必要がある場合"
-"は :ref:`xml-vulnerabilities` を参照してください。"
+"El módulo :mod:`XML.sax` no es seguro contra datos construidos "
+"maliciosamente.  Si necesita analizar datos no autenticados o no confiables, "
+"mirar :ref:`xml-vulnerabilities`."
 
-#: ../../library/xml.sax.rst:29
+#: ../Doc/library/xml.sax.rst:29
 msgid ""
 "The SAX parser no longer processes general external entities by default to "
 "increase security. Before, the parser created network connections to fetch "
@@ -61,19 +61,19 @@ msgid ""
 "xmlreader.XMLReader.setFeature` on the parser object and argument :data:"
 "`~xml.sax.handler.feature_external_ges`."
 msgstr ""
-"SAXパーサーは、セキュリティーを向上させるために、デフォルトで一般的な外部エン"
-"ティティーを処理しなくなりました。以前は、パーサーは、DTDおよびエンティティ用"
-"にファイルシステムからリモートファイルまたはロードされたローカルファイルを"
-"フェッチするためのネットワーク接続を作成していました。この機能は parser オブ"
-"ジェクトと(実) 引数 :data:`~xml.sax.handler.feature_external_ges` の :meth:"
-"`~xml.sax.xmlreader.XMLReader.setFeature` メソッドで再度有効にすることができ"
-"ます。"
+"El analizador SAX ya no procesa entidades generales externas por defecto "
+"para incrementar seguridad. Antes, el analizador creaba conexiones de red "
+"para buscar archivos remotos o archivos locales cargados del sistema de "
+"archivos para DTD y entidades. La característica puede ser activadas de "
+"nuevo con el método :meth:`~xml.sax.xmlreader.XMLReader.setFeature` en el "
+"objeto analizador y el argumento :data:`~xml.sax.handler."
+"feature_external_ges`."
 
-#: ../../library/xml.sax.rst:36
+#: ../Doc/library/xml.sax.rst:36
 msgid "The convenience functions are:"
-msgstr "その関数群は以下の通りです:"
+msgstr "Las funciones de conveniencia son:"
 
-#: ../../library/xml.sax.rst:41
+#: ../Doc/library/xml.sax.rst:41
 msgid ""
 "Create and return a SAX :class:`~xml.sax.xmlreader.XMLReader` object.  The "
 "first parser found will be used.  If *parser_list* is provided, it must be "
@@ -81,18 +81,19 @@ msgid ""
 "`create_parser`.  Modules listed in *parser_list* will be used before "
 "modules in the default list of parsers."
 msgstr ""
-"SAX :class:`~xml.sax.xmlreader.XMLReader` オブジェクトを生成し、返します。最"
-"初に見つかったパーサーが使用されます。*parser_list* を与える場合、それは :"
-"func:`create_parser` という名前の関数をもつモジュール名のイテラブルでなければ"
-"なりません。\n"
-"*parser_list* に列挙されているモジュールは、パーサーのデフォルトリストにある"
-"モジュールよりも先に使われます。"
+"Crea y retorna un objeto SAX :class:`~xml.sax.xmlreader.XMLReader`.  El "
+"primer analizador encontrado será el que se use.  Si se provee "
+"*parser_list*, debe ser un iterable de cadenas de caracteres el cual nombra "
+"módulos que tienen una función llamada :func:`créate_parser`.  Los módulos "
+"listados en *parser_list* serán usados antes de los módulos en la lista de "
+"analizadores por defecto."
 
-#: ../../library/xml.sax.rst:47
+#: ../Doc/library/xml.sax.rst:47
 msgid "The *parser_list* argument can be any iterable, not just a list."
-msgstr "*parser_list* 引数はリストだけでなく、イテラブルでもよくなりました。"
+msgstr ""
+"El argumento *parser_list* puede ser cualquier iterable, no sólo una lista."
 
-#: ../../library/xml.sax.rst:53
+#: ../Doc/library/xml.sax.rst:53
 msgid ""
 "Create a SAX parser and use it to parse a document.  The document, passed in "
 "as *filename_or_stream*, can be a filename or a file object.  The *handler* "
@@ -102,31 +103,29 @@ msgid ""
 "errors.  There is no return value; all work must be done by the *handler* "
 "passed in."
 msgstr ""
-"SAX パーサを生成し、そのパーサをドキュメントの解析に使用します。"
-"*filename_or_stream* として与えられるドキュメントは、ファイル名でもファイルオ"
-"ブジェクトでもかまいません。 *handler* 引数は SAX :class:`~handler."
-"ContentHandler` のインスタントである必要があります。*error_handler* が与えら"
-"れる場合は、 SAX :class:`~handler.ErrorHandler`  のインスタンスである必要があ"
-"ります。この引数を省略した場合、全ての例外に対して :exc:`SAXParseException` "
-"が発生します。 戻り値はありません。すべての操作は渡される *handler* によって"
-"行われなければなりません。"
+"Crea un analizador SAD y úsalo para analizar un documento.  El documento, "
+"aprobado como *filename_or_steam*, puede ser un nombre de archivo o un "
+"objeto de archivo.  El parámetro *handler* necesita ser una instancia SAX :"
+"class:`~handler.ContentHandler`.  Si se da *error_handler*, debe ser una "
+"instancia :class:`~handler.ErrorHandler` SAX; si es omitido, se lanzará :exc:"
+"`SAXParseException` en todos los errores. No hay valor retornado; toda tarea "
+"debe ser realizada por el *handler* aprobado."
 
-#: ../../library/xml.sax.rst:64
+#: ../Doc/library/xml.sax.rst:64
 msgid ""
 "Similar to :func:`parse`, but parses from a buffer *string* received as a "
 "parameter.  *string* must be a :class:`str` instance or a :term:`bytes-like "
 "object`."
 msgstr ""
-":func:`parse` と同様ですが、こちらは引数で受け取ったバッファ *string* をパー"
-"スします。\n"
-"*string* は :class:`str` インスタンスか :term:`bytes-like object` でなければ"
-"なりません。"
+"Similar a :func:`parser`, pero analiza desde un búfer *string* recibido como "
+"un parámetro.  *string* debe ser una instancia :class:`str` o un :term:"
+"`bytes-like object`."
 
-#: ../../library/xml.sax.rst:68
+#: ../Doc/library/xml.sax.rst:68
 msgid "Added support of :class:`str` instances."
-msgstr ":class:`str` インスタンスがサポートされました。"
+msgstr "Agregado soporte de instancias :class:`str`."
 
-#: ../../library/xml.sax.rst:71
+#: ../Doc/library/xml.sax.rst:71
 msgid ""
 "A typical SAX application uses three kinds of objects: readers, handlers and "
 "input sources.  \"Reader\" in this context is another term for parser, i.e. "
@@ -139,18 +138,19 @@ msgid ""
 "During parsing, methods on the handler objects are called based on "
 "structural and syntactic events from the input data."
 msgstr ""
-"典型的な SAX アプリケーションでは3種類のオブジェクト(リーダ、ハンドラ、入力"
-"元)が用いられます。ここで言うリーダとはパーサを指しています。つまり、入力元か"
-"らバイト列または文字列を読み込み、一連のイベントを発生させるコード片のことで"
-"す。発生したイベントはハンドラ・オブジェクトに割り振られます。言い換えると、"
-"リーダがハンドラのメソッドを呼び出すわけです。つまり、 SAX アプリケーション"
-"は、リーダ・オブジェクトを作成し、入力元のオブジェクトを作成するか開き、ハン"
-"ドラ・オブジェクトを作成し、これら3つのオブジェクトを連携させる必要がありま"
-"す。準備の最終段階では、リーダが呼び出され、入力をパースします。パース中に"
-"は、入力データからの構造イベントや構文イベントに基づいて、ハンドラ・オブジェ"
-"クトのメソッドが呼び出されます。"
+"Una aplicación SAX típica usa tres tipos de objetos: lectores, gestores y "
+"fuentes de entrada.  \"Lector\" en este contexto es otro término para "
+"analizador, por ejemplo, alguna pieza de código que lee los bytes o "
+"caracteres de la fuente de entrada, y produce una secuencia de eventos. Los "
+"eventos luego se distribuyen a los objetos gestores, por ejemplo el lector "
+"invoca un método en el gestor.  Una aplicación SAX debe por tanto obtener un "
+"objeto lector, crear o abrir una fuente de entrada, crear los gestores, y "
+"conectar esos objetos juntos.  Como paso final de preparación, el lector es "
+"llamado para analizar la entrada. Durante el análisis, los métodos en los "
+"objetos gestores son llamados basados en eventos estructurales y sintácticos "
+"de los datos introducidos."
 
-#: ../../library/xml.sax.rst:82
+#: ../Doc/library/xml.sax.rst:82
 msgid ""
 "For these objects, only the interfaces are relevant; they are normally not "
 "instantiated by the application itself.  Since Python does not have an "
@@ -165,26 +165,28 @@ msgid ""
 "the handler classes are also available from :mod:`xml.sax`.  These "
 "interfaces are described below."
 msgstr ""
-"これらのオブジェクトでは、インターフェースだけが関係します。通常、これらはア"
-"プリケーション自体によってはインスタンス化されません。 Python は明示的なイン"
-"ターフェースの概念を持たないので、インターフェースはクラスとして導入されまし"
-"た。しかし、アプリケーションは、提供されたクラスを継承せずに実装してもかまい"
-"ません。インターフェース :class:`~xml.sax.xmlreader.InputSource`, :class:"
+"Para estos objetos, sólo las interfaces son relevantes; éstos normalmente no "
+"son instanciados por la aplicación misma.  Ya que Python no tiene una noción "
+"explícita de interfaz, éstas son introducidas formalmente como clases, pero "
+"las aplicaciones suelen usar implementaciones que no heredan de las clases "
+"provistas.  Las interfaces :class:`~xml.sax.xmlreader.InputSource`, :class:"
 "`~xml.sax.xmlreader.Locator`, :class:`~xml.sax.xmlreader.Attributes`, :class:"
-"`~xml.sax.xmlreader.AttributesNS`, :class:`~xml.sax.xmlreader.XMLReader`  は"
-"モジュール :mod:`xml.sax.xmlreader` で定義されています。ハンドラインター"
-"フェースは :mod:`xml.sax.handler` で定義されています。利便性のため、  :class:"
-"`~xml.sax.xmlreader.InputSource` (よく直接インスタンス化されるクラス) とハン"
-"ドラクラスは :mod:`xml.sax` からもアクセスできます。これらのインターフェース"
-"について下記で説明します。"
+"`~xml.sax.xmlreader.AttributesNS`, y :class:`~xml.sax.xmlreader.XMLReader` "
+"son definidas en el módulo :mod:`xml.sax.xmlreader`.  Las interfaces de "
+"gestión son definidas en :mod:`xml.sax.handler`.  Por conveniencia, :class:"
+"`~xml.sax.xmlreader.InputSource` (el cual suele ser instanciado "
+"directamente) y el gestor de clases están también disponibles desde :mod:"
+"`xml.sax`  Estas interfaces son descritas a continuación."
 
-#: ../../library/xml.sax.rst:95
+#: ../Doc/library/xml.sax.rst:95
 msgid ""
 "In addition to these classes, :mod:`xml.sax` provides the following "
 "exception classes."
-msgstr "このほかに :mod:`xml.sax` は次の例外クラスも提供しています。"
+msgstr ""
+"En adición a esas clases, :mod:`xml.sax` provee las siguientes clases de "
+"excepción."
 
-#: ../../library/xml.sax.rst:101
+#: ../Doc/library/xml.sax.rst:101
 msgid ""
 "Encapsulate an XML error or warning.  This class can contain basic error or "
 "warning information from either the XML parser or the application: it can be "
@@ -194,29 +196,31 @@ msgid ""
 "required to actually raise the exception --- it is also useful as a "
 "container for information."
 msgstr ""
-"XML エラーと警告をカプセル化します。このクラスには XML パーサとアプリケーショ"
-"ンで発生するエラーおよび警告の基本的な情報を持たせることができます。また機能"
-"追加や地域化のためにサブクラス化することも可能です。なお :class:`~xml.sax."
-"handler.ErrorHandler` で定義されているハンドラがこの例外のインスタンスを受け"
-"取ることに注意してください。実際に例外を発生させることは必須でなく、情報のコ"
-"ンテナとして利用されることもあるからです。"
+"Encapsula un error XML o advertencia.  Esta clase puede contener errores "
+"básicos o información de advertencias ya sea para el analizador XML o la "
+"aplicación: esto puede ser heredado para proveer funcionalidad adicionar o "
+"para agregar localización.  Nota que a pesar de los analizadores definidos "
+"en la interfaz :class:`~xml.sax.handler.ErrorHandler` recibe instancias de "
+"esta excepción, no es requerido para lanzar la excepción --- esto es algo "
+"útil como un contenedor para información."
 
-#: ../../library/xml.sax.rst:109
+#: ../Doc/library/xml.sax.rst:109
 msgid ""
 "When instantiated, *msg* should be a human-readable description of the "
 "error. The optional *exception* parameter, if given, should be ``None`` or "
 "an exception that was caught by the parsing code and is being passed along "
 "as information."
 msgstr ""
-"インスタンスを作成する際 *msg* はエラー内容を示す可読データにしてください。オ"
-"プションの *exception* 引数は ``None`` にするか、パース用コードで捕捉されて情"
-"報として渡される例外にしてください。"
+"Cuando es instanciado, *msg* debería ser una descripción del error legible "
+"para humanos. El parámetro opcional *exception*, si es dado, debería ser "
+"``None`` o una excepción que fue atrapada por el código analizador y se "
+"transmite como información."
 
-#: ../../library/xml.sax.rst:113
+#: ../Doc/library/xml.sax.rst:113
 msgid "This is the base class for the other SAX exception classes."
-msgstr "このクラスはSAX 例外の基底クラスになります。"
+msgstr "Esta es la clase base para las otras clases excepción SAX."
 
-#: ../../library/xml.sax.rst:118
+#: ../Doc/library/xml.sax.rst:118
 msgid ""
 "Subclass of :exc:`SAXException` raised on parse errors. Instances of this "
 "class are passed to the methods of the SAX :class:`~xml.sax.handler."
@@ -224,85 +228,91 @@ msgid ""
 "class supports the SAX :class:`~xml.sax.xmlreader.Locator` interface as well "
 "as the :class:`SAXException` interface."
 msgstr ""
-"パースエラー時に発生する :exc:`SAXException` のサブクラスです。パースエラーに"
-"関する情報として、このクラスのインスタンスが SAX :class:`~xml.sax.handler."
-"ErrorHandler` インターフェースのメソッドに渡されます。このクラスは :class:"
-"`SAXException` 同様 SAX :class:`~xml.sax.xmlreader.Locator` インターフェース"
-"もサポートしています。"
+"Subclase de :exc:`SAXException` levantada en errores de análisis. Las "
+"instancias de esta clase son pasadas a los métodos de las interfaces SAX :"
+"class:`~xml.sax.handler.ErrorHandler` para proveer información sobre el "
+"error de análisis.  Esta clase soporta la interfaz SAX :class:`~xml.sax."
+"xmlreader.Locator` así como la interfaz :class:`SAXException`."
 
-#: ../../library/xml.sax.rst:128
+#: ../Doc/library/xml.sax.rst:128
 msgid ""
 "Subclass of :exc:`SAXException` raised when a SAX :class:`~xml.sax.xmlreader."
 "XMLReader` is confronted with an unrecognized feature or property.  SAX "
 "applications and extensions may use this class for similar purposes."
 msgstr ""
-"SAX :class:`~xml.sax.xmlreader.XMLReader` が認識できない機能やプロパティに遭"
-"遇したとき発生させる :exc:`SAXException` のサブクラスです。 SAX アプリケー"
-"ションや拡張モジュールにおいて同様の目的にこのクラスを利用することもできま"
-"す。"
+"Subclase de :exc:`SAXException` lanzada cuando una SAX :class:`~xml.sax."
+"xmlreader.XMLReader` es confrontada con una propiedad o característica no "
+"reconocida.  Las aplicaciones SAX y extensiones pueden usar esta clase para "
+"propósitos similares."
 
-#: ../../library/xml.sax.rst:136
+#: ../Doc/library/xml.sax.rst:136
 msgid ""
 "Subclass of :exc:`SAXException` raised when a SAX :class:`~xml.sax.xmlreader."
 "XMLReader` is asked to enable a feature that is not supported, or to set a "
 "property to a value that the implementation does not support.  SAX "
 "applications and extensions may use this class for similar purposes."
 msgstr ""
-"SAX :class:`~xml.sax.xmlreader.XMLReader` が要求された機能をサポートしていな"
-"いとき発生させる :exc:`SAXException` のサブクラスです。 SAX アプリケーション"
-"や拡張モジュールにおいて同様の目的にこのクラスを利用することもできます。"
+"Las subclases de :exc:`SAXException` se lanzan cuando un SAX :class:`~xml."
+"sax` se pregunta para habilitar una característica que no tiene soporte, o "
+"para establecer una propiedad a un valor que la implementación no da "
+"soporte.  Las aplicaciones sAX y las extensiones pueden usar esta clase para "
+"propósitos similares."
 
-#: ../../library/xml.sax.rst:148
+#: ../Doc/library/xml.sax.rst:148
 msgid "`SAX: The Simple API for XML <http://www.saxproject.org/>`_"
 msgstr "`SAX: The Simple API for XML <http://www.saxproject.org/>`_"
 
-#: ../../library/xml.sax.rst:146
+#: ../Doc/library/xml.sax.rst:146
 msgid ""
 "This site is the focal point for the definition of the SAX API.  It provides "
 "a Java implementation and online documentation.  Links to implementations "
 "and historical information are also available."
 msgstr ""
-"SAX API 定義に関し中心となっているサイトです。Java による実装とオンライン・ド"
-"キュメントが提供されています。実装と SAX API の歴史に関する情報のリンクも掲載"
-"されています。"
+"Este sitio es el punto focal para la definición de la API SAX.  Provee una "
+"implementación Java y documentación en línea.  Los enlaces para "
+"implementaciones e información histórica también están disponibles."
 
-#: ../../library/xml.sax.rst:151
+#: ../Doc/library/xml.sax.rst:151
 msgid "Module :mod:`xml.sax.handler`"
-msgstr ":mod:`xml.sax.handler` モジュール"
+msgstr "Módulo :mod:`xml.sax.handler`"
 
-#: ../../library/xml.sax.rst:151
+#: ../Doc/library/xml.sax.rst:151
 msgid "Definitions of the interfaces for application-provided objects."
-msgstr "アプリケーションが提供するオブジェクトのインターフェース定義。"
+msgstr ""
+"Definiciones de las interfaces para objetos proporcionados por aplicaciones."
 
-#: ../../library/xml.sax.rst:154
+#: ../Doc/library/xml.sax.rst:154
 msgid "Module :mod:`xml.sax.saxutils`"
-msgstr ":mod:`xml.sax.saxutils` モジュール"
+msgstr "Módulo :mod:`xml.sax.saxutils`"
 
-#: ../../library/xml.sax.rst:154
+#: ../Doc/library/xml.sax.rst:154
 msgid "Convenience functions for use in SAX applications."
-msgstr "SAX アプリケーション向けの有用な関数群。"
+msgstr "Funciones de conveniencia para usar en aplicaciones SAX."
 
-#: ../../library/xml.sax.rst:156
+#: ../Doc/library/xml.sax.rst:156
 msgid "Module :mod:`xml.sax.xmlreader`"
-msgstr ":mod:`xml.sax.xmlreader` モジュール"
+msgstr "Módulo :mod:`xml.sax.xmlreader`"
 
-#: ../../library/xml.sax.rst:157
+#: ../Doc/library/xml.sax.rst:157
 msgid "Definitions of the interfaces for parser-provided objects."
-msgstr "パーサが提供するオブジェクトのインターフェース定義。"
+msgstr "Definiciones de las interfaces para objetos que proveen analizadores."
 
-#: ../../library/xml.sax.rst:163
+#: ../Doc/library/xml.sax.rst:163
 msgid "SAXException Objects"
-msgstr "SAXException オブジェクト"
+msgstr "Objetos SAXException"
 
-#: ../../library/xml.sax.rst:165
+#: ../Doc/library/xml.sax.rst:165
 msgid ""
 "The :class:`SAXException` exception class supports the following methods:"
-msgstr ":class:`SAXException` 例外クラスは以下のメソッドをサポートしています:"
+msgstr ""
+"La clase de excepción :class:`SAXException` da soporte a los siguientes "
+"métodos:"
 
-#: ../../library/xml.sax.rst:170
+#: ../Doc/library/xml.sax.rst:170
 msgid "Return a human-readable message describing the error condition."
-msgstr "エラー状態を示す可読メッセージを返します。"
+msgstr ""
+"Retorna un mensaje legible para humanos describiendo la condición de error."
 
-#: ../../library/xml.sax.rst:175
+#: ../Doc/library/xml.sax.rst:175
 msgid "Return an encapsulated exception object, or ``None``."
-msgstr "カプセル化した例外オブジェクトまたは ``None`` を返します。"
+msgstr "Retorna un objeto excepción encapsulado, o ``None``."

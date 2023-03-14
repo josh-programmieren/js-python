@@ -1,51 +1,49 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:16+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-08-04 22:07+0200\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language: es_AR\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/turtle.rst:3
+#: ../Doc/library/turtle.rst:3
 msgid ":mod:`turtle` --- Turtle graphics"
-msgstr ":mod:`turtle` --- タートルグラフィックス"
+msgstr ":mod:`turtle` --- Gráficos con *Turtle*"
 
-#: ../../library/turtle.rst:10
+#: ../Doc/library/turtle.rst:10
 msgid "**Source code:** :source:`Lib/turtle.py`"
-msgstr "**ソースコード:** :source:`Lib/turtle.py`"
+msgstr "**Código fuente:** :source:`Lib/turtle.py`"
 
-#: ../../library/turtle.rst:20
+#: ../Doc/library/turtle.rst:20
 msgid "Introduction"
-msgstr "はじめに"
+msgstr "Introducción"
 
-#: ../../library/turtle.rst:22
+#: ../Doc/library/turtle.rst:22
 msgid ""
 "Turtle graphics is a popular way for introducing programming to kids.  It "
 "was part of the original Logo programming language developed by Wally "
 "Feurzeig, Seymour Papert and Cynthia Solomon in 1967."
 msgstr ""
-"タートルグラフィックスは子供向けのプログラミングに入門でよく用いられます。\n"
-"タートルグラフィックスは Wally Feurzeig, Seymour Papert, Cynthia Solomon が "
-"1967に開発したオリジナルの Logo プログラミング言語の一部分です。"
+"Gráficas Turtle es una forma muy habitual de introducción a la programación "
+"para niñas y niños. Era parte original del lenguaje de programación Logo, "
+"desarrollado por Wally Feurzeig, Seymour Papert y Cynthia Solomon en 1967."
 
-#: ../../library/turtle.rst:26
+#: ../Doc/library/turtle.rst:26
 msgid ""
 "Imagine a robotic turtle starting at (0, 0) in the x-y plane.  After an "
 "``import turtle``, give it the command ``turtle.forward(15)``, and it moves "
@@ -53,123 +51,129 @@ msgid ""
 "moves.  Give it the command ``turtle.right(25)``, and it rotates in-place 25 "
 "degrees clockwise."
 msgstr ""
-"x-y 平面の (0, 0) から動き出すロボット亀を想像してみて下さい。 ``turtle."
-"forward(15)`` という命令を出すと、その亀が (スクリーン上で!) 15 ピクセル分顔"
-"を向けている方向に動き、動きに沿って線を引きます。 ``turtle.left(25)`` という"
-"命令を出すと、今度はその場で25度反時計回りに回ります。"
+"Imagina una tortuga robot que empieza en las coordenadas (0, 0) en un plano "
+"x-y. Después de un ``import turtle``, dele el comando ``turtle."
+"forward(15)``, y se mueve (¡en la pantalla!) 15 pixeles en la dirección en "
+"la que se encuentra, dibujando una línea mientras se mueve. Dele el comando "
+"``turtle.right(25)``, y rotará en el lugar, 25 grados, en sentido horario."
 
-#: ../../library/turtle.rst:33
+#: ../Doc/library/turtle.rst:33
 msgid ""
 "Turtle can draw intricate shapes using programs that repeat simple moves."
 msgstr ""
+"Turtle puede dibujar figuras intrincadas usando programas que repiten "
+"movimientos simples."
 
-#: ../../library/turtle.rst:41
+#: ../Doc/library/turtle.rst:41
 msgid ""
 "By combining together these and similar commands, intricate shapes and "
 "pictures can easily be drawn."
 msgstr ""
-"これらの命令と他の同様な命令を組み合わせることで、複雑な形や絵が簡単に描けま"
-"す。"
+"Al combinar estos comandos y otros similares, se pueden dibujar figuras "
+"intrincadas y formas."
 
-#: ../../library/turtle.rst:44
+#: ../Doc/library/turtle.rst:44
 msgid ""
 "The :mod:`turtle` module is an extended reimplementation of the same-named "
 "module from the Python standard distribution up to version Python 2.5."
 msgstr ""
-":mod:`turtle` モジュールは同じ名前を持った Python 2.5 までのモジュールの拡張"
-"された再実装です。"
+"El módulo :mod:`turtle` es una reimplementación extendida del mismo módulo "
+"de la distribución estándar Python hasta la versión 2.5."
 
-#: ../../library/turtle.rst:47
+#: ../Doc/library/turtle.rst:47
+#, python-format
 msgid ""
-"It tries to keep the merits of the old turtle module and to be (nearly) 100% "
-"compatible with it.  This means in the first place to enable the learning "
-"programmer to use all the commands, classes and methods interactively when "
-"using the module from within IDLE run with the ``-n`` switch."
+"It tries to keep the merits of the old turtle module and to be (nearly) "
+"100% compatible with it.  This means in the first place to enable the "
+"learning programmer to use all the commands, classes and methods "
+"interactively when using the module from within IDLE run with the ``-n`` "
+"switch."
 msgstr ""
-"再実装に際しては古い turtle モジュールのメリットをそのままに、 (ほぼ) 100% 互"
-"換性を保つようにしました。すなわち、まず第一に、学習中のプログラマがモジュー"
-"ルを ``-n`` スイッチを付けて走らせている IDLE の中から全てのコマンド、クラ"
-"ス、メソッドを対話的に使えるようにしました。"
+"Trata de mantener los méritos del viejo módulo y ser (casi) 100% compatible "
+"con él. Esto implica en primer lugar, habilitar al programador que está "
+"aprendiendo, el uso de todos los comandos, clases y métodos de forma "
+"interactiva cuando usa el módulo desde el IDLE ejecutado con la opción ``-"
+"n``."
 
-#: ../../library/turtle.rst:52
+#: ../Doc/library/turtle.rst:52
 msgid ""
 "The turtle module provides turtle graphics primitives, in both object-"
 "oriented and procedure-oriented ways.  Because it uses :mod:`tkinter` for "
 "the underlying graphics, it needs a version of Python installed with Tk "
 "support."
 msgstr ""
-"turtle モジュールはオブジェクト指向と手続き指向の両方の方法でタートルグラ"
-"フィックス・プリミティブを提供します。グラフィックスの基礎として :mod:"
-"`tkinter` を使っているために、Tk をサポートした Python のバージョンが必要で"
-"す。"
+"El módulo turtle provee las primitivas gráficas, tanto en orientación "
+"procedimental como orientada a objetos. Como usa el módulo :mod:`tkinter` "
+"para las gráficas subyacentes, necesita tener instalada una versión de "
+"Python con soporte TK."
 
-#: ../../library/turtle.rst:56
+#: ../Doc/library/turtle.rst:56
 msgid "The object-oriented interface uses essentially two+two classes:"
-msgstr "オブジェクト指向インターフェイスでは、本質的に 2+2 のクラスを使います:"
+msgstr "La interface orientada a objetos usa esencialmente clases dos+dos:"
 
-#: ../../library/turtle.rst:58
+#: ../Doc/library/turtle.rst:58
 msgid ""
 "The :class:`TurtleScreen` class defines graphics windows as a playground for "
 "the drawing turtles.  Its constructor needs a :class:`tkinter.Canvas` or a :"
 "class:`ScrolledCanvas` as argument.  It should be used when :mod:`turtle` is "
 "used as part of some application."
 msgstr ""
-":class:`TurtleScreen` クラスはタートルが絵を描きながら走り回る画面を定義しま"
-"す。そのコンストラクタには :class:`tkinter.Canvas` または :class:"
-"`ScrolledCanvas` を渡す必要があります。 :mod:`turtle` をアプリケーションの一"
-"部として用いたい場合にはこれを使うべきです。"
+"La clase :class:`TurtleScreen` define una ventana gráfica como base para las "
+"tortugas dibujantes. Su constructor necesita una clase :class:`tkinter."
+"Canvas` o una a :class:`ScrolledCanvas` como argumento. Se debe usar cuando :"
+"mod:`turtle` es usado como parte de una aplicación."
 
-#: ../../library/turtle.rst:63
+#: ../Doc/library/turtle.rst:63
 msgid ""
 "The function :func:`Screen` returns a singleton object of a :class:"
 "`TurtleScreen` subclass. This function should be used when :mod:`turtle` is "
 "used as a standalone tool for doing graphics. As a singleton object, "
 "inheriting from its class is not possible."
 msgstr ""
-":func:`Screen` 関数は :class:`TurtleScreen` のサブクラスのシングルトンオブ"
-"ジェクトを返します。 :mod:`turtle` をグラフィクスを使う一つの独立したツールと"
-"して使う場合には、この関数を呼び出すべきです。シングルトンなので、そのクラス"
-"からの継承はできません。"
+"La función :func:`Screen` devuelve un objeto *singleton* de la subclase :"
+"class:`TurtleScreen`. Esta función debe utilizarse cuando :mod:`turtle` se "
+"usa como una herramienta independiente para hacer gráficos. Siendo un objeto "
+"singleton, no es posible que tenga herencias de su clase."
 
-#: ../../library/turtle.rst:68
+#: ../Doc/library/turtle.rst:68
 msgid ""
 "All methods of TurtleScreen/Screen also exist as functions, i.e. as part of "
 "the procedure-oriented interface."
 msgstr ""
-"TurtleScreen/Screen の全てのメソッドは関数としても、すなわち、手続き指向イン"
-"ターフェイスの一部としても存在しています。"
+"Todos los métodos de TurtleScreen/Screen también existen como funciones. Por "
+"ejemplo. como parte de la interface orientada a procedimientos."
 
-#: ../../library/turtle.rst:71
+#: ../Doc/library/turtle.rst:71
 msgid ""
 ":class:`RawTurtle` (alias: :class:`RawPen`) defines Turtle objects which "
 "draw on a :class:`TurtleScreen`.  Its constructor needs a Canvas, "
 "ScrolledCanvas or TurtleScreen as argument, so the RawTurtle objects know "
 "where to draw."
 msgstr ""
-":class:`RawTurtle` (別名: :class:`RawPen`) は :class:`TurtleScreen` 上に絵を"
-"描く Turtle オブジェクトを定義します。コンストラクタには Canvas, "
-"ScrolledCanvas, TurtleScreen のいずれかを引数として渡して RawTurtle オブジェ"
-"クトがどこに絵を描くかを教えます。"
+":class:`RawTurtle` (alias: :class:`RawPen`) Define los objetos Turtle con "
+"los cuales dibujar con la clase :class:`TurtleScreen`. Su constructor "
+"necesita como argumento un *Canvas, ScrolledCanvas o TurtleScreen*, así el "
+"objeto *RawTurtle* sabe donde dibujar."
 
-#: ../../library/turtle.rst:75
+#: ../Doc/library/turtle.rst:75
 msgid ""
 "Derived from RawTurtle is the subclass :class:`Turtle` (alias: :class:"
 "`Pen`), which draws on \"the\" :class:`Screen` instance which is "
 "automatically created, if not already present."
 msgstr ""
-"RawTurtle の派生はサブクラス :class:`Turtle` (別名: :class:`Pen`) で、 (既に"
-"与えられているのでなければ自動的に作られた) \"唯一の\" :class:`Screen` インス"
-"タンスに絵を描きます。"
+"Derivada de *RawTurtle* está la subclase :class:`Turtle` (alias: :class:"
+"`Pen`), que dibuja en \"la\" instancia :class:`Screen` que se crea "
+"automáticamente, si no está presente."
 
-#: ../../library/turtle.rst:79
+#: ../Doc/library/turtle.rst:79
 msgid ""
 "All methods of RawTurtle/Turtle also exist as functions, i.e. part of the "
 "procedure-oriented interface."
 msgstr ""
-"RawTurtle/Turtle の全てのメソッドは関数としても、すなわち、手続き指向インター"
-"フェイスの一部としても存在しています。"
+"Todos los métodos de *RawTurtle/Turtle* también existen como funciones. Por "
+"ejemplo, como parte de la interface orientada a procedimientos."
 
-#: ../../library/turtle.rst:82
+#: ../Doc/library/turtle.rst:82
 msgid ""
 "The procedural interface provides functions which are derived from the "
 "methods of the classes :class:`Screen` and :class:`Turtle`.  They have the "
@@ -178,643 +182,653 @@ msgid ""
 "(unnamed) turtle object is automatically created whenever any of the "
 "functions derived from a Turtle method is called."
 msgstr ""
-"手続き型インターフェイスでは :class:`Screen` および :class:`Turtle` クラスの"
-"メソッドを元にした関数を提供しています。その名前は対応するメソッドと一緒で"
-"す。 Screen のメソッドを元にした関数が呼び出されるといつでも screen オブジェ"
-"クトが自動的に作られます。 Turtle のメソッドを元にした関数が呼び出されるとい"
-"つでも(名無しの) turtle オブジェクトが自動的に作られます。"
+"La interface procedimental provee funciones que son derivadas de los métodos "
+"de las clases :class:`Screen` y :class:`Turtle`. Tienen los mismos nombres "
+"que los métodos correspondientes. Un objeto *Screen* es creado "
+"automáticamente cada vez que una función derivada de un método *Screen* es "
+"llamado. Un objeto *Turtle* (innombrado) se crea automáticamente cada vez "
+"que se llama a una función derivada de un método *Turtle*."
 
-#: ../../library/turtle.rst:89
+#: ../Doc/library/turtle.rst:89
 msgid ""
 "To use multiple turtles on a screen one has to use the object-oriented "
 "interface."
 msgstr ""
-"複数のタートルを一つのスクリーン上で使いたい場合、オブジェクト指向インター"
-"フェイスを使わなければなりません。"
+"Para usar varias tortugas en una pantalla se tiene que usar la interface "
+"orientada a objetos."
 
-#: ../../library/turtle.rst:92
+#: ../Doc/library/turtle.rst:92
 msgid ""
 "In the following documentation the argument list for functions is given. "
 "Methods, of course, have the additional first argument *self* which is "
 "omitted here."
 msgstr ""
-"以下の文書では関数に対する引数リストが与えられています。メソッドでは、勿論、"
-"ここでは省略されている *self* が第一引数になります。"
+"En la siguiente documentación se proporciona la listas de argumentos para "
+"las funciones. Los métodos, por su puesto, tienen el argumento principal "
+"adicional *self* que se omite aquí."
 
-#: ../../library/turtle.rst:98
+#: ../Doc/library/turtle.rst:98
 msgid "Overview of available Turtle and Screen methods"
-msgstr "Turtle および Screen のメソッドの概観"
+msgstr "Reseña de los métodos disponibles para Turtle y *Screen*"
 
-#: ../../library/turtle.rst:101
+#: ../Doc/library/turtle.rst:101
 msgid "Turtle methods"
-msgstr "Turtle のメソッド"
+msgstr "Métodos Turtle"
 
-#: ../../library/turtle.rst:132 ../../library/turtle.rst:242
+#: ../Doc/library/turtle.rst:132 ../Doc/library/turtle.rst:242
 msgid "Turtle motion"
-msgstr "Turtle の動き"
+msgstr "Movimiento de Turtle"
 
-#: ../../library/turtle.rst:120
+#: ../Doc/library/turtle.rst:120
 msgid "Move and draw"
-msgstr "移動および描画"
+msgstr "Mover y dibujar"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`forward` | :func:`fd`"
 msgstr ":func:`forward` | :func:`fd`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`backward` | :func:`bk` | :func:`back`"
 msgstr ":func:`backward` | :func:`bk` | :func:`back`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`right` | :func:`rt`"
 msgstr ":func:`right` | :func:`rt`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`left` | :func:`lt`"
 msgstr ":func:`left` | :func:`lt`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`goto` | :func:`setpos` | :func:`setposition`"
 msgstr ":func:`goto` | :func:`setpos` | :func:`setposition`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`setx`"
 msgstr ":func:`setx`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`sety`"
 msgstr ":func:`sety`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`setheading` | :func:`seth`"
 msgstr ":func:`setheading` | :func:`seth`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`home`"
 msgstr ":func:`home`"
 
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:2463
+#: ../Doc/library/turtle.rst ../Doc/library/turtle.rst:2463
 msgid ":func:`circle`"
 msgstr ":func:`circle`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`dot`"
 msgstr ":func:`dot`"
 
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:2441
+#: ../Doc/library/turtle.rst ../Doc/library/turtle.rst:2441
 msgid ":func:`stamp`"
 msgstr ":func:`stamp`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`clearstamp`"
 msgstr ":func:`clearstamp`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`clearstamps`"
 msgstr ":func:`clearstamps`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`undo`"
 msgstr ":func:`undo`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`speed`"
 msgstr ":func:`speed`"
 
-#: ../../library/turtle.rst:128 ../../library/turtle.rst:644
+#: ../Doc/library/turtle.rst:128 ../Doc/library/turtle.rst:644
 msgid "Tell Turtle's state"
-msgstr "Turtle の状態を知る"
+msgstr "Mostrar el estado de la tortuga"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`position` | :func:`pos`"
 msgstr ":func:`position` | :func:`pos`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`towards`"
 msgstr ":func:`towards`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`xcor`"
 msgstr ":func:`xcor`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`ycor`"
 msgstr ":func:`ycor`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`heading`"
 msgstr ":func:`heading`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`distance`"
 msgstr ":func:`distance`"
 
-#: ../../library/turtle.rst:132
+#: ../Doc/library/turtle.rst:132
 msgid "Setting and measurement"
-msgstr "設定と計測"
+msgstr "Ajuste y unidades de medida"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`degrees`"
 msgstr ":func:`degrees`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`radians`"
 msgstr ":func:`radians`"
 
-#: ../../library/turtle.rst:155 ../../library/turtle.rst:795
+#: ../Doc/library/turtle.rst:155 ../Doc/library/turtle.rst:795
 msgid "Pen control"
-msgstr "Pen の制御"
+msgstr "Control del lápiz"
 
-#: ../../library/turtle.rst:140 ../../library/turtle.rst:798
+#: ../Doc/library/turtle.rst:140 ../Doc/library/turtle.rst:798
 msgid "Drawing state"
-msgstr "描画状態"
+msgstr "Estado de dibujo"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`pendown` | :func:`pd` | :func:`down`"
 msgstr ":func:`pendown` | :func:`pd` | :func:`down`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`penup` | :func:`pu` | :func:`up`"
 msgstr ":func:`penup` | :func:`pu` | :func:`up`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`pensize` | :func:`width`"
 msgstr ":func:`pensize` | :func:`width`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`pen`"
 msgstr ":func:`pen`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`isdown`"
 msgstr ":func:`isdown`"
 
-#: ../../library/turtle.rst:145 ../../library/turtle.rst:890
+#: ../Doc/library/turtle.rst:145 ../Doc/library/turtle.rst:890
 msgid "Color control"
-msgstr "色の制御"
+msgstr "Control del color"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`color`"
 msgstr ":func:`color`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`pencolor`"
 msgstr ":func:`pencolor`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`fillcolor`"
 msgstr ":func:`fillcolor`"
 
-#: ../../library/turtle.rst:150 ../../library/turtle.rst:1022
+#: ../Doc/library/turtle.rst:150 ../Doc/library/turtle.rst:1022
 msgid "Filling"
-msgstr "塗りつぶし"
+msgstr "Relleno"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`filling`"
 msgstr ":func:`filling`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`begin_fill`"
 msgstr ":func:`begin_fill`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`end_fill`"
 msgstr ":func:`end_fill`"
 
-#: ../../library/turtle.rst:155 ../../library/turtle.rst:1069
+#: ../Doc/library/turtle.rst:155 ../Doc/library/turtle.rst:1069
 msgid "More drawing control"
-msgstr "さらなる描画の制御"
+msgstr "Más controles de dibujo"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`reset`"
 msgstr ":func:`reset`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`clear`"
 msgstr ":func:`clear`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`write`"
 msgstr ":func:`write`"
 
-#: ../../library/turtle.rst:172 ../../library/turtle.rst:1115
+#: ../Doc/library/turtle.rst:172 ../Doc/library/turtle.rst:1115
 msgid "Turtle state"
-msgstr "タートルの状態"
+msgstr "Estado de la Tortuga"
 
-#: ../../library/turtle.rst:161 ../../library/turtle.rst:1118
+#: ../Doc/library/turtle.rst:161 ../Doc/library/turtle.rst:1118
 msgid "Visibility"
-msgstr "可視性"
+msgstr "Visibilidad"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`showturtle` | :func:`st`"
 msgstr ":func:`showturtle` | :func:`st`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`hideturtle` | :func:`ht`"
 msgstr ":func:`hideturtle` | :func:`ht`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`isvisible`"
 msgstr ":func:`isvisible`"
 
-#: ../../library/turtle.rst:172 ../../library/turtle.rst:1157
+#: ../Doc/library/turtle.rst:172 ../Doc/library/turtle.rst:1157
 msgid "Appearance"
-msgstr "見た目"
+msgstr "Apariencia"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`shape`"
 msgstr ":func:`shape`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`resizemode`"
 msgstr ":func:`resizemode`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`shapesize` | :func:`turtlesize`"
 msgstr ":func:`shapesize` | :func:`turtlesize`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`shearfactor`"
 msgstr ":func:`shearfactor`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`settiltangle`"
 msgstr ":func:`settiltangle`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`tiltangle`"
 msgstr ":func:`tiltangle`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`tilt`"
 msgstr ":func:`tilt`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`shapetransform`"
 msgstr ":func:`shapetransform`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`get_shapepoly`"
 msgstr ":func:`get_shapepoly`"
 
-#: ../../library/turtle.rst:177 ../../library/turtle.rst:1362
+#: ../Doc/library/turtle.rst:177 ../Doc/library/turtle.rst:1362
 msgid "Using events"
-msgstr "イベントを利用する"
+msgstr "Usando eventos"
 
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:2435
+#: ../Doc/library/turtle.rst ../Doc/library/turtle.rst:2435
 msgid ":func:`onclick`"
 msgstr ":func:`onclick`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`onrelease`"
 msgstr ":func:`onrelease`"
 
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:2418
+#: ../Doc/library/turtle.rst ../Doc/library/turtle.rst:2418
 msgid ":func:`ondrag`"
 msgstr ":func:`ondrag`"
 
-#: ../../library/turtle.rst:188 ../../library/turtle.rst:1436
+#: ../Doc/library/turtle.rst:188 ../Doc/library/turtle.rst:1436
 msgid "Special Turtle methods"
-msgstr "特別な Turtle のメソッド"
+msgstr "Métodos especiales de *Turtle*"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`begin_poly`"
 msgstr ":func:`begin_poly`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`end_poly`"
 msgstr ":func:`end_poly`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`get_poly`"
 msgstr ":func:`get_poly`"
 
-#: ../../library/turtle.rst:0 ../../library/turtle.rst:2457
+#: ../Doc/library/turtle.rst ../Doc/library/turtle.rst:2454
 msgid ":func:`clone`"
 msgstr ":func:`clone`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`getturtle` | :func:`getpen`"
 msgstr ":func:`getturtle` | :func:`getpen`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`getscreen`"
 msgstr ":func:`getscreen`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`setundobuffer`"
 msgstr ":func:`setundobuffer`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`undobufferentries`"
 msgstr ":func:`undobufferentries`"
 
-#: ../../library/turtle.rst:191
+#: ../Doc/library/turtle.rst:191
 msgid "Methods of TurtleScreen/Screen"
-msgstr "TurtleScreen/Screen のメソッド"
+msgstr "Métodos de TurtleScreen/Screen"
 
-#: ../../library/turtle.rst:199 ../../library/turtle.rst:1590
+#: ../Doc/library/turtle.rst:199 ../Doc/library/turtle.rst:1590
 msgid "Window control"
-msgstr "ウィンドウの制御"
+msgstr "Control de ventana"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`bgcolor`"
 msgstr ":func:`bgcolor`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`bgpic`"
 msgstr ":func:`bgpic`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`clearscreen`"
-msgstr ""
+msgstr ":func:`clearscreen`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`resetscreen`"
-msgstr ""
+msgstr ":func:`resetscreen`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`screensize`"
 msgstr ":func:`screensize`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`setworldcoordinates`"
 msgstr ":func:`setworldcoordinates`"
 
-#: ../../library/turtle.rst:204 ../../library/turtle.rst:1713
+#: ../Doc/library/turtle.rst:204 ../Doc/library/turtle.rst:1713
 msgid "Animation control"
-msgstr "アニメーションの制御"
+msgstr "Control de animación"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`delay`"
 msgstr ":func:`delay`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`tracer`"
 msgstr ":func:`tracer`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`update`"
 msgstr ":func:`update`"
 
-#: ../../library/turtle.rst:212 ../../library/turtle.rst:1766
+#: ../Doc/library/turtle.rst:212 ../Doc/library/turtle.rst:1766
 msgid "Using screen events"
-msgstr "スクリーンイベントを利用する"
+msgstr "Usando eventos de pantalla"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`listen`"
 msgstr ":func:`listen`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`onkey` | :func:`onkeyrelease`"
 msgstr ":func:`onkey` | :func:`onkeyrelease`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`onkeypress`"
 msgstr ":func:`onkeypress`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`onclick` | :func:`onscreenclick`"
 msgstr ":func:`onclick` | :func:`onscreenclick`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`ontimer`"
 msgstr ":func:`ontimer`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`mainloop` | :func:`done`"
 msgstr ":func:`mainloop` | :func:`done`"
 
-#: ../../library/turtle.rst:222 ../../library/turtle.rst:1911
+#: ../Doc/library/turtle.rst:222 ../Doc/library/turtle.rst:1911
 msgid "Settings and special methods"
-msgstr "設定と特殊なメソッド"
+msgstr "Configuración y métodos especiales"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`mode`"
 msgstr ":func:`mode`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`colormode`"
 msgstr ":func:`colormode`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`getcanvas`"
 msgstr ":func:`getcanvas`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`getshapes`"
 msgstr ":func:`getshapes`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`register_shape` | :func:`addshape`"
 msgstr ":func:`register_shape` | :func:`addshape`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`turtles`"
 msgstr ":func:`turtles`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`window_height`"
 msgstr ":func:`window_height`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`window_width`"
 msgstr ":func:`window_width`"
 
-#: ../../library/turtle.rst:226 ../../library/turtle.rst:1875
+#: ../Doc/library/turtle.rst:226 ../Doc/library/turtle.rst:1875
 msgid "Input methods"
-msgstr ""
+msgstr "Métodos de entrada"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`textinput`"
 msgstr ":func:`textinput`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`numinput`"
 msgstr ":func:`numinput`"
 
-#: ../../library/turtle.rst:233
+#: ../Doc/library/turtle.rst:233
 msgid "Methods specific to Screen"
-msgstr "Screen 独自のメソッド"
+msgstr "Métodos específicos para *Screen*"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`bye`"
 msgstr ":func:`bye`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`exitonclick`"
 msgstr ":func:`exitonclick`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`setup`"
 msgstr ":func:`setup`"
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid ":func:`title`"
 msgstr ":func:`title`"
 
-#: ../../library/turtle.rst:236
+#: ../Doc/library/turtle.rst:236
 msgid "Methods of RawTurtle/Turtle and corresponding functions"
-msgstr "RawTurtle/Turtle のメソッドと対応する関数"
+msgstr "Métodos de *RawTurtle/Turtle* Y sus correspondientes funciones"
 
-#: ../../library/turtle.rst:238
+#: ../Doc/library/turtle.rst:238
 msgid ""
 "Most of the examples in this section refer to a Turtle instance called "
 "``turtle``."
 msgstr ""
-"この節のほとんどの例では ``turtle`` という名前の Turtle インスタンスを使いま"
-"す。"
+"Casi todos los ejemplos de esta sección se refieren a una instancia Turtle "
+"llamada ``turtle``."
 
-#: ../../library/turtle.rst:0
+#: ../Doc/library/turtle.rst
 msgid "Parameters"
-msgstr "パラメーター"
+msgstr "Parámetros"
 
-#: ../../library/turtle.rst:247 ../../library/turtle.rst:292
-#: ../../library/turtle.rst:317 ../../library/turtle.rst:377
-#: ../../library/turtle.rst:400 ../../library/turtle.rst:423
+#: ../Doc/library/turtle.rst:247 ../Doc/library/turtle.rst:292
+#: ../Doc/library/turtle.rst:317 ../Doc/library/turtle.rst:377
+#: ../Doc/library/turtle.rst:400 ../Doc/library/turtle.rst:423
 msgid "a number (integer or float)"
-msgstr "数 (整数または浮動小数点数)"
+msgstr "un número (entero o flotante)"
 
-#: ../../library/turtle.rst:249
+#: ../Doc/library/turtle.rst:249
 msgid ""
 "Move the turtle forward by the specified *distance*, in the direction the "
 "turtle is headed."
 msgstr ""
-"タートルが頭を向けている方へ、タートルを距離 *distance* だけ前進させます。"
+"Mover hacia adelante la tortuga la *ditance* especificada, en la dirección "
+"en la que la tortuga apunta."
 
-#: ../../library/turtle.rst:269 ../../library/turtle.rst:473
-#: ../../library/turtle.rst:748 ../../library/turtle.rst:1256
-#: ../../library/turtle.rst:1275
+#: ../Doc/library/turtle.rst:269 ../Doc/library/turtle.rst:473
+#: ../Doc/library/turtle.rst:748 ../Doc/library/turtle.rst:1256
+#: ../Doc/library/turtle.rst:1275
 msgid "a number"
-msgstr "数"
+msgstr "un número"
 
-#: ../../library/turtle.rst:271
+#: ../Doc/library/turtle.rst:271
 msgid ""
 "Move the turtle backward by *distance*, opposite to the direction the turtle "
 "is headed.  Do not change the turtle's heading."
 msgstr ""
-"タートルが頭を向けている方と反対方向へ、タートルを距離 *distance* だけ後退さ"
-"せます。 タートルの向きは変えません。"
+"Mover hacia atrás la tortuga la *distance* especificada, opuesta a la "
+"dirección en que la tortuga apunta. No cambia la dirección de la tortuga."
 
-#: ../../library/turtle.rst:294
+#: ../Doc/library/turtle.rst:294
 msgid ""
 "Turn turtle right by *angle* units.  (Units are by default degrees, but can "
 "be set via the :func:`degrees` and :func:`radians` functions.)  Angle "
 "orientation depends on the turtle mode, see :func:`mode`."
 msgstr ""
-"タートルを *angle* 単位だけ右に回します。 (単位のデフォルトは度ですが、 :"
-"func:`degrees` と :func:`radians` 関数を使って設定できます。) 角度の向きは"
-"タートルのモードによって意味が変わります。 :func:`mode` を参照してください。"
+"Gira la tortuga a la derecha tomando los *angle* como unidad de medida. (La "
+"unidad de medida por defecto son los grado, pero se puede configurar a "
+"través de las funciones :func:`degrees` y :func:`radians`.) La orientación "
+"de los ángulos depende del modo en que está la tortuga, ver :func:`mode`."
 
-#: ../../library/turtle.rst:319
+#: ../Doc/library/turtle.rst:319
 msgid ""
 "Turn turtle left by *angle* units.  (Units are by default degrees, but can "
 "be set via the :func:`degrees` and :func:`radians` functions.)  Angle "
 "orientation depends on the turtle mode, see :func:`mode`."
 msgstr ""
-"タートルを *angle* 単位だけ左に回します。 (単位のデフォルトは度ですが、 :"
-"func:`degrees` と :func:`radians` 関数を使って設定できます。) 角度の向きは"
-"タートルのモードによって意味が変わります。 :func:`mode` を参照してください。"
+"Gira la tortuga a la izquierda tomando los *ángulos* como unidad de medida. "
+"(La unidad de medida por defecto son los grado, pero se puede configurar a "
+"través de las funciones :func:`degrees` y :func:`radians`.) La orientación "
+"de los ángulos depende del modo en que está la tortuga, ver :func:`mode`."
 
-#: ../../library/turtle.rst:343
+#: ../Doc/library/turtle.rst:343
 msgid "a number or a pair/vector of numbers"
-msgstr "数または数のペア/ベクトル"
+msgstr "un número o un par/vector de números"
 
-#: ../../library/turtle.rst:344
+#: ../Doc/library/turtle.rst:344
 msgid "a number or ``None``"
-msgstr "数または ``None``"
+msgstr "un número o ``None``"
 
-#: ../../library/turtle.rst:346
+#: ../Doc/library/turtle.rst:346
 msgid ""
 "If *y* is ``None``, *x* must be a pair of coordinates or a :class:`Vec2D` (e."
 "g. as returned by :func:`pos`)."
 msgstr ""
-"*y* が ``None`` の場合、 *x* は座標のペアかまたは :class:`Vec2D` (たとえば :"
-"func:`pos` で返されます) でなければなりません。"
+"Si *y* es ``None``, *x* debe ser un par de coordenadas o un :class:`Vec2D` "
+"(ejemplo: según lo devuelto por :func:`pos`)."
 
-#: ../../library/turtle.rst:349
+#: ../Doc/library/turtle.rst:349
 msgid ""
 "Move turtle to an absolute position.  If the pen is down, draw line.  Do not "
 "change the turtle's orientation."
 msgstr ""
-"タートルを指定された絶対位置に移動します。ペンが下りていれば線を引きます。"
-"タートルの向きは変わりません。"
+"Mueve la tortuga a una posición absoluta. Si el lápiz está bajo, traza una "
+"linea. No cambia la orientación de la tortuga."
 
-#: ../../library/turtle.rst:379
+#: ../Doc/library/turtle.rst:379
 msgid ""
 "Set the turtle's first coordinate to *x*, leave second coordinate unchanged."
-msgstr "タートルの第一座標を *x* にします。第二座標は変わりません。"
+msgstr ""
+"Establece la primera coordenada de la tortuga a *x*, deja la segunda "
+"coordenada sin cambios."
 
-#: ../../library/turtle.rst:402
+#: ../Doc/library/turtle.rst:402
 msgid ""
 "Set the turtle's second coordinate to *y*, leave first coordinate unchanged."
-msgstr "タートルの第二座標を *y* にします。第一座標は変わりません。"
+msgstr ""
+"Establece la segunda coordenada de la tortuga a *y*, deja la primera "
+"coordenada sin cambios."
 
-#: ../../library/turtle.rst:425
+#: ../Doc/library/turtle.rst:425
 msgid ""
 "Set the orientation of the turtle to *to_angle*.  Here are some common "
 "directions in degrees:"
 msgstr ""
-"タートルの向きを *to_angle* に設定します。以下はよく使われる方向を度で表わし"
-"たものです:"
+"Establece la orientación de la tortuga a *to_angle*. Aquí hay algunas "
+"direcciones comunes en grados:"
 
-#: ../../library/turtle.rst:429
+#: ../Doc/library/turtle.rst:429
 msgid "standard mode"
-msgstr "標準モード"
+msgstr "modo estándar"
 
-#: ../../library/turtle.rst:429
+#: ../Doc/library/turtle.rst:429
 msgid "logo mode"
-msgstr "logo モード"
+msgstr "modo logo"
 
-#: ../../library/turtle.rst:431
+#: ../Doc/library/turtle.rst:431
 msgid "0 - east"
-msgstr "0 - 東"
+msgstr "0 - este"
 
-#: ../../library/turtle.rst:431
+#: ../Doc/library/turtle.rst:431
 msgid "0 - north"
-msgstr "0 - 北"
+msgstr "0 - norte"
 
-#: ../../library/turtle.rst:432
+#: ../Doc/library/turtle.rst:432
 msgid "90 - north"
-msgstr "90 - 北"
+msgstr "90 - norte"
 
-#: ../../library/turtle.rst:432
+#: ../Doc/library/turtle.rst:432
 msgid "90 - east"
-msgstr "90 - 東"
+msgstr "90 - este"
 
-#: ../../library/turtle.rst:433
+#: ../Doc/library/turtle.rst:433
 msgid "180 - west"
-msgstr "180 - 西"
+msgstr "180 - oeste"
 
-#: ../../library/turtle.rst:433
+#: ../Doc/library/turtle.rst:433
 msgid "180 - south"
-msgstr "180 - 南"
+msgstr "180 - sur"
 
-#: ../../library/turtle.rst:434
+#: ../Doc/library/turtle.rst:434
 msgid "270 - south"
-msgstr "270 - 南"
+msgstr "270 - sur"
 
-#: ../../library/turtle.rst:434
+#: ../Doc/library/turtle.rst:434
 msgid "270 - west"
-msgstr "270 - 西"
+msgstr "270 - oeste"
 
-#: ../../library/turtle.rst:447
+#: ../Doc/library/turtle.rst:447
 msgid ""
 "Move turtle to the origin -- coordinates (0,0) -- and set its heading to its "
 "start-orientation (which depends on the mode, see :func:`mode`)."
 msgstr ""
-"タートルを原点 -- 座標 (0, 0) -- に移動し、向きを開始方向に設定します (開始方"
-"向はモードに依って違います。 :func:`mode` を参照してください)。"
+"Mueve la tortuga al origen -- coordenadas (0,0) -- y establece la "
+"orientación a la orientación original (que depende del modo, ver :func:"
+"`mode`)."
 
-#: ../../library/turtle.rst:474
+#: ../Doc/library/turtle.rst:474
 msgid "a number (or ``None``)"
-msgstr "数 (または ``None``)"
+msgstr "un número (o ``None``)"
 
-#: ../../library/turtle.rst:475 ../../library/turtle.rst:569
+#: ../Doc/library/turtle.rst:475 ../Doc/library/turtle.rst:569
 msgid "an integer (or ``None``)"
-msgstr "整数 (または ``None``)"
+msgstr "un entero (o ``None``)"
 
-#: ../../library/turtle.rst:477
+#: ../Doc/library/turtle.rst:477
 msgid ""
 "Draw a circle with given *radius*.  The center is *radius* units left of the "
 "turtle; *extent* -- an angle -- determines which part of the circle is "
@@ -824,575 +838,600 @@ msgid ""
 "otherwise in clockwise direction.  Finally the direction of the turtle is "
 "changed by the amount of *extent*."
 msgstr ""
-"半径 *radius* の円を描きます。中心はタートルの左 *radius* ユニットの点です。 "
-"*extent* -- 角度です -- は円のどの部分を描くかを決定します。 *extent* が与え"
-"られなければ、デフォルトで完全な円になります。 *extent* が完全な円でない場合"
-"は、弧の一つの端点は、現在のペンの位置です。 *radius* が正の場合、弧は反時計"
-"回りに描かれます。そうでなければ、時計回りです。最後にタートルの向きが "
-"*extent* 分だけ変わります。"
+"Dibuja un círculo con el *radius* (radio) dado. El centro es *radius* "
+"unidades a la izquierda de la tortuga; *extent* -- un ángulo -- determina "
+"que parte del círculo se dibuja. Si no se pasa *extent*, dibuja el círculo "
+"entero. Si *extent* no es un círculo completo, un punto final del arco es la "
+"posición actual de lápiz. Dibuja el arco en dirección antihorario si "
+"*radius* es positivo, si no en dirección horaria. Finalmente la dirección de "
+"la tortuga es modificada por el aumento de *extent*."
 
-#: ../../library/turtle.rst:485
+#: ../Doc/library/turtle.rst:485
 msgid ""
 "As the circle is approximated by an inscribed regular polygon, *steps* "
 "determines the number of steps to use.  If not given, it will be calculated "
 "automatically.  May be used to draw regular polygons."
 msgstr ""
-"円は内接する正多角形で近似されます。 *steps* でそのために使うステップ数を決定"
-"します。この値は与えられなければ自動的に計算されます。また、これを正多角形の"
-"描画に利用することもできます。"
+"Como el círculo se aproxima a un polígono regular inscripto, *steps* "
+"determina el número de pasos a usar. Si no se da, será calculado "
+"automáticamente. Puede ser usado para dibujar polígonos regulares."
 
-#: ../../library/turtle.rst:511
+#: ../Doc/library/turtle.rst:511
 msgid "an integer >= 1 (if given)"
-msgstr "1 以上の整数 (与えられる場合には)"
+msgstr "un entero >= 1 (si se da)"
 
-#: ../../library/turtle.rst:512
+#: ../Doc/library/turtle.rst:512
 msgid "a colorstring or a numeric color tuple"
-msgstr "色を表わす文字列またはタプル"
+msgstr "un *colorstring* o una tupla numérica de color"
 
-#: ../../library/turtle.rst:514
+#: ../Doc/library/turtle.rst:514
 msgid ""
 "Draw a circular dot with diameter *size*, using *color*.  If *size* is not "
 "given, the maximum of pensize+4 and 2*pensize is used."
 msgstr ""
-"直径 *size* の丸い点を *color* で指定された色で描きます。 *size* が与えられな"
-"かった場合、pensize+4 と 2*pensize の大きい方が使われます。"
+"Dibuja un punto circular con diámetro *size*, usando *color*. Si *size* no "
+"se da, el máximo de pensize+4 y 2*pensize es usado."
 
-#: ../../library/turtle.rst:532
+#: ../Doc/library/turtle.rst:532
 msgid ""
 "Stamp a copy of the turtle shape onto the canvas at the current turtle "
 "position.  Return a stamp_id for that stamp, which can be used to delete it "
 "by calling ``clearstamp(stamp_id)``."
 msgstr ""
-"キャンバス上の現在タートルがいる位置にタートルの姿のハンコを押します。そのハ"
-"ンコに対して stamp_id が返されますが、これを使うと後で "
-"``clearstamp(stamp_id)`` のように呼び出して消すことができます。"
+"Estampa una copia de la forma de la tortuga en el lienzo en la posición "
+"actual. Devuelve un stamp_id por cada estampa, que puede ser usado para "
+"borrarlo al llamar ``clearstamp(stamp_id)``."
 
-#: ../../library/turtle.rst:547
+#: ../Doc/library/turtle.rst:547
 msgid "an integer, must be return value of previous :func:`stamp` call"
-msgstr "整数で、先立つ :func:`stamp` 呼出しで返された値でなければなりません"
+msgstr ""
+"un entero, debe devolver el valor de la llamada previa de la función :func:"
+"`stamp` call"
 
-#: ../../library/turtle.rst:550
+#: ../Doc/library/turtle.rst:550
 msgid "Delete stamp with given *stampid*."
-msgstr "*stampid* に対応するハンコを消します。"
+msgstr "Borra la estampa con el *stampid* dado."
 
-#: ../../library/turtle.rst:571
+#: ../Doc/library/turtle.rst:571
 msgid ""
 "Delete all or first/last *n* of turtle's stamps.  If *n* is ``None``, delete "
 "all stamps, if *n* > 0 delete first *n* stamps, else if *n* < 0 delete last "
 "*n* stamps."
 msgstr ""
-"全ての、または最初の/最後の *n* 個のハンコを消します。 *n* が ``None`` の場"
-"合、全てのハンコを消します。 *n* が正の場合には最初の *n* 個、 *n* が負の場合"
-"には最後の *n* 個を消します。"
+"Borra todas o las primeros/últimos *n* estampas de la tortuga. Si *n* es "
+"``None`` , borra todas las estampas, Si *n* *> 0* borra la primera estampa "
+"*n*, sino y *n* *< 0* borra la última estampa *n*."
 
-#: ../../library/turtle.rst:594
+#: ../Doc/library/turtle.rst:594
 msgid ""
 "Undo (repeatedly) the last turtle action(s).  Number of available undo "
 "actions is determined by the size of the undobuffer."
 msgstr ""
-"最後の(繰り返すことにより複数の)タートルの動きを取り消します。取り消しできる"
-"動きの最大数は undobuffer のサイズによって決まります。"
+"Deshace (repetidamente) la(s) última(s) acción(es) de la tortuga. El número "
+"de acciones a deshacer es determinado por el tamaño del *undobuffer*."
 
-#: ../../library/turtle.rst:609
+#: ../Doc/library/turtle.rst:609
 msgid "an integer in the range 0..10 or a speedstring (see below)"
-msgstr "0 から 10 までの整数またはスピードを表わす文字列(以下の説明を参照)"
+msgstr "un entero en el rango 0..10 o un *speedstring* (ver abajo)"
 
-#: ../../library/turtle.rst:611
+#: ../Doc/library/turtle.rst:611
 msgid ""
 "Set the turtle's speed to an integer value in the range 0..10.  If no "
 "argument is given, return current speed."
 msgstr ""
-"タートルのスピードを 0 から 10 までの範囲の整数に設定します。引数が与えられな"
-"い場合は現在のスピードを返します。"
+"Establecer la velocidad de la tortuga a un valor entero en el rango 0..10. "
+"Si no se pasa ningún argumento, vuelve a la velocidad actual."
 
-#: ../../library/turtle.rst:614
+#: ../Doc/library/turtle.rst:614
 msgid ""
 "If input is a number greater than 10 or smaller than 0.5, speed is set to "
 "0.  Speedstrings are mapped to speedvalues as follows:"
 msgstr ""
-"与えられた数字が 10 より大きかったり 0.5 より小さかったりした場合は、スピード"
-"は 0 になります。スピードを表わす文字列は次のように数字に変換されます:"
+"Si el parámetro de entrada es un número mayor que 10 o menor que 0.5, la "
+"velocidad se establece a 0. La frase acerca de la velocidad es mapeada a "
+"valores de velocidad de la siguiente manera:"
 
-#: ../../library/turtle.rst:617
+#: ../Doc/library/turtle.rst:617
 msgid "\"fastest\":  0"
 msgstr "\"fastest\":  0"
 
-#: ../../library/turtle.rst:618
+#: ../Doc/library/turtle.rst:618
 msgid "\"fast\":  10"
 msgstr "\"fast\":  10"
 
-#: ../../library/turtle.rst:619
+#: ../Doc/library/turtle.rst:619
 msgid "\"normal\":  6"
 msgstr "\"normal\":  6"
 
-#: ../../library/turtle.rst:620
+#: ../Doc/library/turtle.rst:620
 msgid "\"slow\":  3"
 msgstr "\"slow\":  3"
 
-#: ../../library/turtle.rst:621
+#: ../Doc/library/turtle.rst:621
 msgid "\"slowest\":  1"
 msgstr "\"slowest\":  1"
 
-#: ../../library/turtle.rst:623
+#: ../Doc/library/turtle.rst:623
 msgid ""
 "Speeds from 1 to 10 enforce increasingly faster animation of line drawing "
 "and turtle turning."
 msgstr ""
-"1 から 10 までのスピードを上げていくにつれて線を描いたりタートルが回ったりす"
-"るアニメーションがだんだん速くなります。"
+"Velocidades de 1 a 10 generan una animación cada vez más rápida al dibujar "
+"las líneas y en el giro de la tortuga."
 
-#: ../../library/turtle.rst:626
+#: ../Doc/library/turtle.rst:626
 msgid ""
 "Attention: *speed* = 0 means that *no* animation takes place. forward/back "
 "makes turtle jump and likewise left/right make the turtle turn instantly."
 msgstr ""
-"注意: *speed* = 0 はアニメーションを無くします。forward/backward ではタートル"
-"がジャンプし、left/right では瞬時に方向を変えます。"
+"Atención: *speed* = 0 implica que *no* habrá ninguna animación. Los métodos "
+"*fordward/back* harán que la tortuga salte, de la misma manera que *left/"
+"right* hará que la tortuga gire instantáneamente."
 
-#: ../../library/turtle.rst:649
+#: ../Doc/library/turtle.rst:649
 msgid ""
 "Return the turtle's current location (x,y) (as a :class:`Vec2D` vector)."
-msgstr "タートルの現在位置を (:class:`Vec2D` のベクトルとして) 返します。"
+msgstr ""
+"Devuelve la posición actual de la tortuga (x,y) (como un vector :class:"
+"`Vec2D`)"
 
-#: ../../library/turtle.rst:660 ../../library/turtle.rst:723
+#: ../Doc/library/turtle.rst:660 ../Doc/library/turtle.rst:723
 msgid "a number or a pair/vector of numbers or a turtle instance"
-msgstr "数または数のペア/ベクトルまたはタートルのインスタンス"
+msgstr "un número o par de vectores numéricos o una instancia de la tortuga"
 
-#: ../../library/turtle.rst:661 ../../library/turtle.rst:724
+#: ../Doc/library/turtle.rst:661 ../Doc/library/turtle.rst:724
 msgid "a number if *x* is a number, else ``None``"
-msgstr "*x* が数ならば数、そうでなければ ``None``"
+msgstr "un número si *x* es un número, si no ``None``"
 
-#: ../../library/turtle.rst:663
+#: ../Doc/library/turtle.rst:663
 msgid ""
 "Return the angle between the line from turtle position to position specified "
 "by (x,y), the vector or the other turtle.  This depends on the turtle's "
 "start orientation which depends on the mode - \"standard\"/\"world\" or "
 "\"logo\"."
 msgstr ""
-"タートルの位置から指定された (x,y) への直線の角度を返します。この値はタートル"
-"の開始方向にそして開始方向はモード (\"standard\"/\"world\" または \"logo\") "
-"に依存します。"
+"Retorna el ángulo entre la línea en la posición de la tortuga a la posición "
+"especificada en (x, y), el vector o la otra tortuga. Esto depende de la "
+"posición inicial de la tortuga, que depende del modo - \"standard\"/"
+"\"world\" o \"logo\"."
 
-#: ../../library/turtle.rst:677
+#: ../Doc/library/turtle.rst:677
 msgid "Return the turtle's x coordinate."
-msgstr "タートルの x 座標を返します。"
+msgstr "Devuelve la coordinada *x* de la tortuga."
 
-#: ../../library/turtle.rst:693
+#: ../Doc/library/turtle.rst:693
 msgid "Return the turtle's y coordinate."
-msgstr "タートルの y 座標を返します。"
+msgstr "Devuelve la coordenada *y* de la tortuga."
 
-#: ../../library/turtle.rst:709
+#: ../Doc/library/turtle.rst:709
 msgid ""
 "Return the turtle's current heading (value depends on the turtle mode, see :"
 "func:`mode`)."
 msgstr ""
-"タートルの現在の向きを返します (返される値はタートルのモードに依存します。 :"
-"func:`mode` を参照してください)。"
+"Devuelve la orientación actual de la tortuga (el valor depende del modo de "
+"la tortuga, ver :func:`mode`)."
 
-#: ../../library/turtle.rst:726
+#: ../Doc/library/turtle.rst:726
 msgid ""
 "Return the distance from the turtle to (x,y), the given vector, or the given "
 "other turtle, in turtle step units."
 msgstr ""
-"タートルから与えられた (x,y) あるいはベクトルあるいは渡されたタートルへの距離"
-"を、タートルのステップを単位として測った値を返します。"
+"Devuelve la distancia desde la tortuga al vector (x,y) dado, otra instancia "
+"de la tortuga, el valor es unidad pasos de tortuga."
 
-#: ../../library/turtle.rst:744
+#: ../Doc/library/turtle.rst:744
 msgid "Settings for measurement"
-msgstr "設定と計測"
+msgstr "Configuración de las medidas"
 
-#: ../../library/turtle.rst:750
+#: ../Doc/library/turtle.rst:750
 msgid ""
 "Set angle measurement units, i.e. set number of \"degrees\" for a full "
 "circle. Default value is 360 degrees."
 msgstr ""
-"角度を計る単位「度」を、円周を何等分するかという値に指定します。デフォルトは"
-"360等分で通常の意味での度です。"
+"Establece la unidad de medida del ángulo, por ejemplo establece el número de "
+"\"grados\" para un círculo completo. El valor por defecto es 36 grados."
 
-#: ../../library/turtle.rst:773
+#: ../Doc/library/turtle.rst:773
 msgid ""
 "Set the angle measurement units to radians.  Equivalent to ``degrees(2*math."
 "pi)``."
 msgstr ""
-"角度を計る単位をラジアンにします。 ``degrees(2*math.pi)`` と同じ意味です。"
+"Establece la unidad de medida del ángulo a radianes. Equivalente a "
+"``degrees(2*math.pi)``."
 
-#: ../../library/turtle.rst:804
+#: ../Doc/library/turtle.rst:804
 msgid "Pull the pen down -- drawing when moving."
-msgstr "ペンを下ろします -- 動くと線が引かれます。"
+msgstr "Baja el lápiz -- dibuja mientras se mueve."
 
-#: ../../library/turtle.rst:811
+#: ../Doc/library/turtle.rst:811
 msgid "Pull the pen up -- no drawing when moving."
-msgstr "ペンを上げます -- 動いても線は引かれません。"
+msgstr "Levanta el lápiz -- no dibuja mientras se mueve."
 
-#: ../../library/turtle.rst:817
+#: ../Doc/library/turtle.rst:817
 msgid "a positive number"
-msgstr "正の数"
+msgstr "un número positivo"
 
-#: ../../library/turtle.rst:819
+#: ../Doc/library/turtle.rst:819
 msgid ""
 "Set the line thickness to *width* or return it.  If resizemode is set to "
 "\"auto\" and turtleshape is a polygon, that polygon is drawn with the same "
 "line thickness.  If no argument is given, the current pensize is returned."
 msgstr ""
-"線の太さを *width* にするか、または現在の太さを返します。resizemode が "
-"\"auto\" でタートルの形が多角形の場合、その多角形も同じ太さで描画されます。引"
-"数が渡されなければ、現在の pensize が返されます。"
+"Establece el grosos de la línea a *width* o lo devuelve. Si *resizemode* se "
+"establece a \"auto\" y turtleshape es un polígono, ese polígono es dibujado "
+"con el mismo grosor de línea. Si no se dan argumentos, devuelve el grosor "
+"del lápiz actual."
 
-#: ../../library/turtle.rst:833
+#: ../Doc/library/turtle.rst:833
 msgid "a dictionary with some or all of the below listed keys"
-msgstr "以下にリストされたキーをもった辞書"
+msgstr "un diccionario con algunos o todos las claves listadas debajo"
 
-#: ../../library/turtle.rst:834
+#: ../Doc/library/turtle.rst:834
 msgid "one or more keyword-arguments with the below listed keys as keywords"
-msgstr "以下にリストされたキーをキーワードとするキーワード引数"
+msgstr ""
+"uno o más argumentos-palabras claves con las claves listadas debajo como "
+"palabras claves"
 
-#: ../../library/turtle.rst:836
+#: ../Doc/library/turtle.rst:836
 msgid ""
 "Return or set the pen's attributes in a \"pen-dictionary\" with the "
 "following key/value pairs:"
 msgstr ""
-"ペンの属性を \"pen-dictionary\" に以下のキー/値ペアで設定するかまたは返しま"
-"す:"
+"Devuelve o establece los atributos del lápiz en un \"diccionario-lápiz\" con "
+"el siguiente para de valores/claves:"
 
-#: ../../library/turtle.rst:839
+#: ../Doc/library/turtle.rst:839
 msgid "\"shown\": True/False"
 msgstr "\"shown\": True/False"
 
-#: ../../library/turtle.rst:840
+#: ../Doc/library/turtle.rst:840
 msgid "\"pendown\": True/False"
 msgstr "\"pendown\": True/False"
 
-#: ../../library/turtle.rst:841
+#: ../Doc/library/turtle.rst:841
 msgid "\"pencolor\": color-string or color-tuple"
-msgstr "\"pencolor\": 色文字列または色タプル"
+msgstr "\"pencolor\": color-string or color-tuple"
 
-#: ../../library/turtle.rst:842
+#: ../Doc/library/turtle.rst:842
 msgid "\"fillcolor\": color-string or color-tuple"
-msgstr "\"fillcolor\": 色文字列または色タプル"
+msgstr "\"fillcolor\": color-string or color-tuple"
 
-#: ../../library/turtle.rst:843
+#: ../Doc/library/turtle.rst:843
 msgid "\"pensize\": positive number"
-msgstr "\"pensize\": 正の数"
+msgstr "\"pensize\": número positivo"
 
-#: ../../library/turtle.rst:844
+#: ../Doc/library/turtle.rst:844
 msgid "\"speed\": number in range 0..10"
-msgstr "\"speed\": 0 から 10 までの整数"
+msgstr "\"speed\": número en el rango 0..10"
 
-#: ../../library/turtle.rst:845
+#: ../Doc/library/turtle.rst:845
 msgid "\"resizemode\": \"auto\" or \"user\" or \"noresize\""
-msgstr "\"resizemode\": \"auto\" または \"user\" または \"noresize\""
+msgstr "\"resizemode\": \"auto\" or \"user\" or \"noresize\""
 
-#: ../../library/turtle.rst:846
+#: ../Doc/library/turtle.rst:846
 msgid "\"stretchfactor\": (positive number, positive number)"
-msgstr "\"stretchfactor\": (正の数, 正の数)"
+msgstr "\"stretchfactor\": (número positivo, número positivo)"
 
-#: ../../library/turtle.rst:847
+#: ../Doc/library/turtle.rst:847
 msgid "\"outline\": positive number"
-msgstr "\"outline\": 正の数"
+msgstr "\"outline\": número positivo"
 
-#: ../../library/turtle.rst:848
+#: ../Doc/library/turtle.rst:848
 msgid "\"tilt\": number"
-msgstr "\"tilt\": 数"
+msgstr "\"tilt\": número"
 
-#: ../../library/turtle.rst:850
+#: ../Doc/library/turtle.rst:850
 msgid ""
 "This dictionary can be used as argument for a subsequent call to :func:`pen` "
 "to restore the former pen-state.  Moreover one or more of these attributes "
 "can be provided as keyword-arguments.  This can be used to set several pen "
 "attributes in one statement."
 msgstr ""
-"この辞書を以降の :func:`pen` 呼出しに渡して以前のペンの状態に復旧することがで"
-"きます。さらに一つ以上の属性をキーワード引数として渡すこともできます。一つの"
-"文で幾つものペンの属性を設定するのに使えます。"
+"Este diccionario puede usarse como argumento de una llamada subsecuente a la "
+"función :func:`pen` para restaurar el estado anterior del lápiz. Más aún, "
+"uno o más de estos atributos pueden darse como argumentos  claves. Esto "
+"puede usarse para establecer diferentes atributos del lápiz en una sola "
+"definición."
 
-#: ../../library/turtle.rst:876
+#: ../Doc/library/turtle.rst:876
 msgid "Return ``True`` if pen is down, ``False`` if it's up."
-msgstr ""
-"もしペンが下りていれば ``True`` を、上がっていれば ``False`` を返します。"
+msgstr "Devuelve ``True`` si el lápiz está abajo, si está arriba ``False``."
 
-#: ../../library/turtle.rst:894
+#: ../Doc/library/turtle.rst:894
 msgid "Return or set the pencolor."
-msgstr "ペンの色(pencolor)を設定するかまたは返します。"
+msgstr "Devuelve o establece el color del lápiz."
 
-#: ../../library/turtle.rst:896 ../../library/turtle.rst:945
+#: ../Doc/library/turtle.rst:896 ../Doc/library/turtle.rst:945
 msgid "Four input formats are allowed:"
-msgstr "4種類の入力形式が受け入れ可能です:"
+msgstr "Se permiten cuatro formatos de entrada:"
 
-#: ../../library/turtle.rst:901
+#: ../Doc/library/turtle.rst:901
 msgid "``pencolor()``"
 msgstr "``pencolor()``"
 
-#: ../../library/turtle.rst:899
+#: ../Doc/library/turtle.rst:899
 msgid ""
 "Return the current pencolor as color specification string or as a tuple (see "
 "example).  May be used as input to another color/pencolor/fillcolor call."
 msgstr ""
-"現在のペンの色を色指定文字列またはタプルで返します (例を見て下さい)。次の "
-"color/pencolor/fillcolor の呼び出しへの入力に使うこともあるでしょう。"
+"Devuelve el color del lápiz actual como una palabra específica de algún "
+"color o como una tupla (ver ejemplo). Puede ser usado como una entrada para "
+"otra llamada de *color/pencolor/fillcolor*."
 
-#: ../../library/turtle.rst:905
+#: ../Doc/library/turtle.rst:905
 msgid "``pencolor(colorstring)``"
 msgstr "``pencolor(colorstring)``"
 
-#: ../../library/turtle.rst:904
+#: ../Doc/library/turtle.rst:904
 msgid ""
 "Set pencolor to *colorstring*, which is a Tk color specification string, "
 "such as ``\"red\"``, ``\"yellow\"``, or ``\"#33cc8c\"``."
 msgstr ""
-"ペンの色を *colorstring* に設定します。その値は Tk の色指定文字列で、 "
-"``\"red\"``, ``\"yellow\"``, ``\"#33cc8c\"`` のような文字列です。"
+"Establece el color del lápiz a *colorstring*, que es una palabra que "
+"especifica un color *Tk*, tales como ``\"red\"``, ``\"yellow\"``, o "
+"``\"#33cc8c\"``."
 
-#: ../../library/turtle.rst:910
+#: ../Doc/library/turtle.rst:910
 msgid "``pencolor((r, g, b))``"
 msgstr "``pencolor((r, g, b))``"
 
-#: ../../library/turtle.rst:908
+#: ../Doc/library/turtle.rst:908
 msgid ""
 "Set pencolor to the RGB color represented by the tuple of *r*, *g*, and "
 "*b*.  Each of *r*, *g*, and *b* must be in the range 0..colormode, where "
 "colormode is either 1.0 or 255 (see :func:`colormode`)."
 msgstr ""
-"ペンの色を *r*, *g*, *b* のタプルで表された RGB の色に設定します。各 *r*, "
-"*g*, *b* は 0 から colormode の間の値でなければなりません。ここで colormode "
-"は 1.0 か 255 のどちらかです (:func:`colormode` を参照)。"
+"Establece el color del lápiz representado como una tupla de *r*, *g*, y "
+"*b*.  Cada valor *r*, *g*, y *b* debe ser un valor entero en el rango 0.."
+"colormode, donde colormode es 1.0 o 255 (ver :func:`colormode`)."
 
-#: ../../library/turtle.rst:914
+#: ../Doc/library/turtle.rst:914
 msgid "``pencolor(r, g, b)``"
 msgstr "``pencolor(r, g, b)``"
 
-#: ../../library/turtle.rst:913
+#: ../Doc/library/turtle.rst:913
 msgid ""
 "Set pencolor to the RGB color represented by *r*, *g*, and *b*.  Each of "
 "*r*, *g*, and *b* must be in the range 0..colormode."
 msgstr ""
-"ペンの色を *r*, *g*, *b* で表された RGB の色に設定します。各 *r*, *g*, *b* "
-"は 0 から colormode の間の値でなければなりません。"
+"Establece el color del lápiz al color RGB representado por *r*, *g*, y *b*. "
+"Cada valor *r*, *g*, y *b* debe estar en el rango 0..colormode."
 
-#: ../../library/turtle.rst:916
+#: ../Doc/library/turtle.rst:916
 msgid ""
 "If turtleshape is a polygon, the outline of that polygon is drawn with the "
 "newly set pencolor."
 msgstr ""
-"タートルの形(turtleshape)が多角形の場合、多角形の外側が新しく設定された色で描"
-"かれます。"
+"Si *turtleshape* es un polígono, la línea del polígono es dibujado con el "
+"muevo color de lápiz elegido."
 
-#: ../../library/turtle.rst:943
+#: ../Doc/library/turtle.rst:943
 msgid "Return or set the fillcolor."
-msgstr "塗りつぶしの色(fillcolor)を設定するかまたは返します。"
+msgstr "Return or set the fillcolor."
 
-#: ../../library/turtle.rst:950
+#: ../Doc/library/turtle.rst:950
 msgid "``fillcolor()``"
 msgstr "``fillcolor()``"
 
-#: ../../library/turtle.rst:948
+#: ../Doc/library/turtle.rst:948
 msgid ""
 "Return the current fillcolor as color specification string, possibly in "
 "tuple format (see example).  May be used as input to another color/pencolor/"
 "fillcolor call."
 msgstr ""
-"現在の塗りつぶしの色を色指定文字列またはタプルで返します (例を見て下さい)。次"
-"の color/pencolor/fillcolor の呼び出しへの入力に使うこともあるでしょう。"
+"Devuelve el valor actual de *fillcolor* como una palabra, posiblemente en "
+"formato de tupla (ver ejemplo). Puede ser usado como entrada de otra llamada "
+"*color/pencolor/fillcolor*."
 
-#: ../../library/turtle.rst:954
+#: ../Doc/library/turtle.rst:954
 msgid "``fillcolor(colorstring)``"
 msgstr "``fillcolor(colorstring)``"
 
-#: ../../library/turtle.rst:953
+#: ../Doc/library/turtle.rst:953
 msgid ""
 "Set fillcolor to *colorstring*, which is a Tk color specification string, "
 "such as ``\"red\"``, ``\"yellow\"``, or ``\"#33cc8c\"``."
 msgstr ""
-"塗りつぶしの色を *colorstring* に設定します。その値は Tk の色指定文字列で、 "
-"``\"red\"``, ``\"yellow\"``, ``\"#33cc8c\"`` のような文字列です。"
+"Establece *fillcolor* a *colorstring*, que es un color TK especificado como "
+"una palabra (en inglés), tales como *\"red\"*, *\"yellow\"*, o "
+"``\"#33cc8c\"``."
 
-#: ../../library/turtle.rst:959
+#: ../Doc/library/turtle.rst:959
 msgid "``fillcolor((r, g, b))``"
 msgstr "``fillcolor((r, g, b))``"
 
-#: ../../library/turtle.rst:957
+#: ../Doc/library/turtle.rst:957
 msgid ""
 "Set fillcolor to the RGB color represented by the tuple of *r*, *g*, and "
 "*b*.  Each of *r*, *g*, and *b* must be in the range 0..colormode, where "
 "colormode is either 1.0 or 255 (see :func:`colormode`)."
 msgstr ""
-"塗りつぶしの色を *r*, *g*, *b* のタプルで表された RGB の色に設定します。各 "
-"*r*, *g*, *b* は 0 から colormode の間の値でなければなりません。ここで "
-"colormode は 1.0 か 255 のどちらかです (:func:`colormode` を参照)。"
+"Establece *fillcolor* al color RGB representado por la tupla *r*, *g*, y "
+"*b*. Cada uno de los valores *r*, *g*, y *b* debe estar en el rango 0.."
+"colormode, donde *colormode* es 1.0 o 255 (ver :func:`colormode`)."
 
-#: ../../library/turtle.rst:963
+#: ../Doc/library/turtle.rst:963
 msgid "``fillcolor(r, g, b)``"
 msgstr "``fillcolor(r, g, b)``"
 
-#: ../../library/turtle.rst:962
+#: ../Doc/library/turtle.rst:962
 msgid ""
 "Set fillcolor to the RGB color represented by *r*, *g*, and *b*.  Each of "
 "*r*, *g*, and *b* must be in the range 0..colormode."
 msgstr ""
-"塗りつぶしの色を *r*, *g*, *b* で表された RGB の色に設定します。各 *r*, *g*, "
-"*b* は 0 から colormode の間の値でなければなりません。"
+"Establece *fillcolor* al color RGB representado por *r*, *g*, y *b*. Cada "
+"uno de los valores *r*, *g* y *b* debe ser un valor en el rango 0..colormode."
 
-#: ../../library/turtle.rst:965
+#: ../Doc/library/turtle.rst:965
 msgid ""
 "If turtleshape is a polygon, the interior of that polygon is drawn with the "
 "newly set fillcolor."
 msgstr ""
-"タートルの形(turtleshape)が多角形の場合、多角形の内側が新しく設定された色で描"
-"かれます。"
+"Si *turtleshape* es un polígono, el interior de ese polígono es dibujado con "
+"el color establecido en *fillcolor*."
 
-#: ../../library/turtle.rst:986
+#: ../Doc/library/turtle.rst:986
 msgid "Return or set pencolor and fillcolor."
 msgstr ""
-"ペンの色(pencolor)と塗りつぶしの色(fillcolor)を設定するかまたは返します。"
+"Retorna o establece *pencolor* (el color del lápiz) y *fillcolor* (el color "
+"de relleno)."
 
-#: ../../library/turtle.rst:988
+#: ../Doc/library/turtle.rst:988
 msgid ""
 "Several input formats are allowed.  They use 0 to 3 arguments as follows:"
 msgstr ""
-"いくつかの入力形式が受け入れ可能です。形式ごとに 0 から 3 個の引数を以下のよ"
-"うに使います:"
+"Se permiten varios formatos de entrada. Usan de 0 a 3 argumentos como se "
+"muestra a continuación:"
 
-#: ../../library/turtle.rst:994
+#: ../Doc/library/turtle.rst:994
 msgid "``color()``"
 msgstr "``color()``"
 
-#: ../../library/turtle.rst:992
+#: ../Doc/library/turtle.rst:992
 msgid ""
 "Return the current pencolor and the current fillcolor as a pair of color "
 "specification strings or tuples as returned by :func:`pencolor` and :func:"
 "`fillcolor`."
 msgstr ""
-"現在のペンの色と塗りつぶしの色を :func:`pencolor` および :func:`fillcolor` で"
-"返される色指定文字列またはタプルのペアで返します。"
+"Devuelve el valor actual de *pencolor* y el valor actual de *fillcolor* como "
+"un par de colores especificados como palabras o tuplas, como devuelven las "
+"funciones :func:`pencolor` y :func:`fillcolor`."
 
-#: ../../library/turtle.rst:998
+#: ../Doc/library/turtle.rst:998
 msgid "``color(colorstring)``, ``color((r,g,b))``, ``color(r,g,b)``"
 msgstr "``color(colorstring)``, ``color((r,g,b))``, ``color(r,g,b)``"
 
-#: ../../library/turtle.rst:997
+#: ../Doc/library/turtle.rst:997
 msgid ""
 "Inputs as in :func:`pencolor`, set both, fillcolor and pencolor, to the "
 "given value."
 msgstr ""
-":func:`pencolor` の入力と同じですが、塗りつぶしの色とペンの色、両方を与えられ"
-"た値に設定します。"
+"Entradas como en  :func:`pencolor`, establece al valor dado tanto, "
+"*fillcolor* como *pencolor*."
 
-#: ../../library/turtle.rst:1002
+#: ../Doc/library/turtle.rst:1002
 msgid ""
 "``color(colorstring1, colorstring2)``, ``color((r1,g1,b1), (r2,g2,b2))``"
 msgstr ""
 "``color(colorstring1, colorstring2)``, ``color((r1,g1,b1), (r2,g2,b2))``"
 
-#: ../../library/turtle.rst:1001
+#: ../Doc/library/turtle.rst:1001
 msgid ""
 "Equivalent to ``pencolor(colorstring1)`` and ``fillcolor(colorstring2)`` and "
 "analogously if the other input format is used."
 msgstr ""
-"``pencolor(colorstring1)`` および ``fillcolor(colorstring2)`` を呼び出すのと"
-"等価です。もう一つの入力形式についても同様です。"
+"Equivalente a ``pencolor(colorstring1)`` y ``fillcolor(colorstring2)`` y "
+"análogamente si se usa el otro formato de entrada."
 
-#: ../../library/turtle.rst:1004
+#: ../Doc/library/turtle.rst:1004
 msgid ""
 "If turtleshape is a polygon, outline and interior of that polygon is drawn "
 "with the newly set colors."
 msgstr ""
-"タートルの形(turtleshape)が多角形の場合、多角形の内側も外側も新しく設定された"
-"色で描かれます。"
+"Si *turtleshape* es un polígono, la línea y el interior de ese polígono e "
+"dibujado con los nuevos colores que se establecieron."
 
-#: ../../library/turtle.rst:1018
+#: ../Doc/library/turtle.rst:1018
 msgid "See also: Screen method :func:`colormode`."
-msgstr "こちらも参照: スクリーンのメソッド :func:`colormode` 。"
+msgstr "Ver también: Método *Screeen* :func:`colormode`."
 
-#: ../../library/turtle.rst:1032
+#: ../Doc/library/turtle.rst:1032
 msgid "Return fillstate (``True`` if filling, ``False`` else)."
-msgstr ""
+msgstr "Devuelve *fillstate* (``True`` si está lleno, sino ``False``)."
 
-#: ../../library/turtle.rst:1047
+#: ../Doc/library/turtle.rst:1047
 msgid "To be called just before drawing a shape to be filled."
-msgstr ""
+msgstr "Para ser llamada justo antes de dibujar una forma a rellenar."
 
-#: ../../library/turtle.rst:1052
+#: ../Doc/library/turtle.rst:1052
 msgid "Fill the shape drawn after the last call to :func:`begin_fill`."
 msgstr ""
-"最後に呼び出された :func:`begin_fill` の後に描かれた図形を塗りつぶします。"
+"Rellena la forma dibujada después de última llamada a la función :func:"
+"`begin_fill`."
 
-#: ../../library/turtle.rst:1054
+#: ../Doc/library/turtle.rst:1054
 msgid ""
 "Whether or not overlap regions for self-intersecting polygons or multiple "
 "shapes are filled depends on the operating system graphics, type of overlap, "
 "and number of overlaps.  For example, the Turtle star above may be either "
 "all yellow or have some white regions."
 msgstr ""
+"Superponer o no, regiones de polígonos auto-intersectados o múltiples "
+"formas, estas son rellenadas dependiendo de los gráficos del sistema "
+"operativo, tipo de superposición y número de superposiciones. Por ejemplo, "
+"la flecha de la tortuga de arriba, puede ser toda amarilla o tener algunas "
+"regiones blancas."
 
-#: ../../library/turtle.rst:1073
+#: ../Doc/library/turtle.rst:1073
 msgid ""
 "Delete the turtle's drawings from the screen, re-center the turtle and set "
 "variables to the default values."
 msgstr ""
-"タートルの描いたものをスクリーンから消し、タートルを中心に戻して、全ての変数"
-"をデフォルト値に設定し直します。"
+"Borra el dibujo de la tortuga de la pantalla, centra la tortuga y establece "
+"las variables a los valores por defecto."
 
-#: ../../library/turtle.rst:1094
+#: ../Doc/library/turtle.rst:1094
 msgid ""
 "Delete the turtle's drawings from the screen.  Do not move turtle.  State "
 "and position of the turtle as well as drawings of other turtles are not "
 "affected."
 msgstr ""
-"タートルの描いたものをスクリーンから消します。タートルは動かしません。タート"
-"ルの状態と位置、それに他のタートルたちの描いたものは影響を受けません。"
+"Borra el dibujo de la tortuga de la pantalla. No mueve la tortuga. El estado "
+"y posición de la tortuga así como los todos los dibujos de las otras "
+"tortugas no son afectados."
 
-#: ../../library/turtle.rst:1100
+#: ../Doc/library/turtle.rst:1100
 msgid "object to be written to the TurtleScreen"
-msgstr "TurtleScreen に書かれるオブジェクト"
+msgstr "objeto que se escribirá en *TurtleScreen*"
 
-#: ../../library/turtle.rst:1101
+#: ../Doc/library/turtle.rst:1101
 msgid "True/False"
 msgstr "True/False"
 
-#: ../../library/turtle.rst:1102
+#: ../Doc/library/turtle.rst:1102
 msgid "one of the strings \"left\", \"center\" or right\""
-msgstr "文字列 \"left\", \"center\", right\" のどれか"
+msgstr "una de las frases \"*left*\", \"*center*\" o \"*right*\""
 
-#: ../../library/turtle.rst:1103
+#: ../Doc/library/turtle.rst:1103
 msgid "a triple (fontname, fontsize, fonttype)"
-msgstr "三つ組み (fontname, fontsize, fonttype)"
+msgstr "un trio (nombre de fuente, tamaño de fuente, tipo de fuente)"
 
-#: ../../library/turtle.rst:1105
+#: ../Doc/library/turtle.rst:1105
 msgid ""
 "Write text - the string representation of *arg* - at the current turtle "
 "position according to *align* (\"left\", \"center\" or \"right\") and with "
 "the given font.  If *move* is true, the pen is moved to the bottom-right "
 "corner of the text.  By default, *move* is ``False``."
 msgstr ""
-"文字を書きます— *arg* の文字列表現を、現在のタートルの位置に、 *align* "
-"(\"left\", \"center\", \"right\" のどれか) に従って、 与えられたフォントで。 "
-"もし *move* が真ならば、ペンは書いた文の右下隅に移動します。 デフォルトで"
-"は、 *move* は ``False`` です。"
+"Escribe texto - la representación de cadena de caracteres de *arg* - en la "
+"posición actual de la tortuga de acuerdo con *align* (\"izquierda\", "
+"\"centro\" o \"derecha\") y con la fuente dada. Si *mov* es verdadero, el "
+"lápiz se mueve a la esquina inferior derecha del texto. De forma "
+"predeterminada, *move* es ``False``."
 
-#: ../../library/turtle.rst:1123
+#: ../Doc/library/turtle.rst:1123
 msgid ""
 "Make the turtle invisible.  It's a good idea to do this while you're in the "
 "middle of doing some complex drawing, because hiding the turtle speeds up "
 "the drawing observably."
 msgstr ""
-"タートルを見えなくします。 複雑な図を描いている途中、タートルが見えないように"
-"するのは良い考えです。 というのもタートルを隠すことで描画が目に見えて速くなる"
-"からです。"
+"Hace invisible a la tortuga, Es una buena idea hacer eso mientras está "
+"haciendo dibujos complejos, ya que esconder a la tortuga acelera dibujo de "
+"manera observable."
 
-#: ../../library/turtle.rst:1136
+#: ../Doc/library/turtle.rst:1136
 msgid "Make the turtle visible."
-msgstr "タートルが見えるようにします。"
+msgstr "Hace visible la tortuga."
 
-#: ../../library/turtle.rst:1146
+#: ../Doc/library/turtle.rst:1146
 msgid "Return ``True`` if the Turtle is shown, ``False`` if it's hidden."
-msgstr ""
-"タートルが見えている状態ならば ``True`` を、隠されていれば ``False`` を返しま"
-"す。"
+msgstr "Devuelve ``True`` si la tortuga se muestra, ``False`` si está oculta."
 
-#: ../../library/turtle.rst:1161
+#: ../Doc/library/turtle.rst:1161
 msgid "a string which is a valid shapename"
-msgstr "形の名前(shapename)として正しい文字列"
+msgstr "una cadena de caracteres que es un nombre de forma válido"
 
-#: ../../library/turtle.rst:1163
+#: ../Doc/library/turtle.rst:1163
 msgid ""
 "Set turtle shape to shape with given *name* or, if name is not given, return "
 "name of current shape.  Shape with *name* must exist in the TurtleScreen's "
@@ -1401,60 +1440,63 @@ msgid ""
 "To learn about how to deal with shapes see Screen method :func:"
 "`register_shape`."
 msgstr ""
-"タートルの形を与えられた名前(*name*)の形に設定するか、もしくは名前が与えられ"
-"なければ現在の形の名前を返します。 *name* という名前の形は TurtleScreen の形"
-"の辞書に載っていなければなりません。最初は次の多角形が載っています: "
-"\"arrow\", \"turtle\", \"circle\", \"square\", \"triangle\", \"classic\"。形"
-"についての扱いを学ぶには Screen のメソッド :func:`register_shape` を参照して"
-"下さい。"
+"Establece la forma de la tortuga al *name* que se establece o, si no se "
+"establece un nombre, devuelve el nombre actual de su forma. La forma *name* "
+"debe existir en el diccionario de formas de *TurtleScreen*. Inicialmente "
+"están las siguientes formas poligonales: \"*arrow*\", \"*turtle*\", "
+"\"*circle*\", \"*square*\", \"*triangle*\", \"*classic*\". Para aprender "
+"como trabajar con estas formas ver los métodos de Screen :func:"
+"`register_shape`."
 
-#: ../../library/turtle.rst:1181
+#: ../Doc/library/turtle.rst:1181
 msgid "one of the strings \"auto\", \"user\", \"noresize\""
-msgstr "文字列 \"auto\", \"user\", \"noresize\" のどれか"
+msgstr "una de las cadenas \"*auto*\", \"*user*\", \"*noresize*\""
 
-#: ../../library/turtle.rst:1183
+#: ../Doc/library/turtle.rst:1183
 msgid ""
 "Set resizemode to one of the values: \"auto\", \"user\", \"noresize\".  If "
 "*rmode* is not given, return current resizemode.  Different resizemodes have "
 "the following effects:"
 msgstr ""
-"サイズ変更のモード(resizemode)を \"auto\", \"user\", \"noresize\" のどれかに"
-"設定します。もし *rmode* が与えられなければ、現在のサイズ変更モードを返しま"
-"す。それぞれのサイズ変更モードは以下の効果を持ちます:"
+"Establece *resizemode* a alguno de los valores: \"*auto*\", \"*user*\", "
+"\"*noresize*\". Si *mode* no se aporta, devuelve el actual *resizemode*. "
+"Distintos *resizemode* tienen los siguientes efectos:"
 
-#: ../../library/turtle.rst:1187
+#: ../Doc/library/turtle.rst:1187
 msgid ""
 "\"auto\": adapts the appearance of the turtle corresponding to the value of "
 "pensize."
-msgstr "\"auto\": ペンのサイズに対応してタートルの見た目を調整します。"
+msgstr ""
+"\"*auto*\": adapta la apariencia de la tortuga al correspondiente valor del "
+"lápiz."
 
-#: ../../library/turtle.rst:1188
+#: ../Doc/library/turtle.rst:1188
 msgid ""
 "\"user\": adapts the appearance of the turtle according to the values of "
 "stretchfactor and outlinewidth (outline), which are set by :func:`shapesize`."
 msgstr ""
-"\"user\": 伸長係数(stretchfactor)およびアウトライン幅(outlinewidth)の値に対応"
-"してタートルの見た目を調整します。これらの値は :func:`shapesize` で設定しま"
-"す。"
+"\"*user*\": adapta la apariencia de la tortuga de acuerdo a los valores de "
+"*sretchfactor* y *outlinewidth* (contorno), que se establece con la función :"
+"func:`shapesize`."
 
-#: ../../library/turtle.rst:1191
+#: ../Doc/library/turtle.rst:1191
 msgid "\"noresize\": no adaption of the turtle's appearance takes place."
-msgstr "\"noresize\": タートルの見た目を調整しません。"
+msgstr "\"*noresize*\": no se adapta la apariencia de la tortuga."
 
-#: ../../library/turtle.rst:1193
+#: ../Doc/library/turtle.rst:1193
 msgid ""
 "``resizemode(\"user\")`` is called by :func:`shapesize` when used with "
 "arguments."
 msgstr ""
-"``resizemode(\"user\")`` は :func:`shapesize` に引数を渡したときに呼び出され"
-"ます。"
+"``resizemode(\"user\")`` es llamado por la función :func:`shapesize` cuando "
+"se usa con argumentos."
 
-#: ../../library/turtle.rst:1208 ../../library/turtle.rst:1209
-#: ../../library/turtle.rst:1210
+#: ../Doc/library/turtle.rst:1208 ../Doc/library/turtle.rst:1209
+#: ../Doc/library/turtle.rst:1210
 msgid "positive number"
-msgstr "正の数"
+msgstr "número positivo"
 
-#: ../../library/turtle.rst:1212
+#: ../Doc/library/turtle.rst:1212
 msgid ""
 "Return or set the pen's attributes x/y-stretchfactors and/or outline.  Set "
 "resizemode to \"user\".  If and only if resizemode is set to \"user\", the "
@@ -1463,19 +1505,23 @@ msgid ""
 "*stretch_len* is stretchfactor in direction of its orientation, *outline* "
 "determines the width of the shapes's outline."
 msgstr ""
-"ペンの属性 x/y-伸長係数および/またはアウトラインを返すかまたは設定します。サ"
-"イズ変更のモードは \"user\" に設定されます。サイズ変更のモードが \"user\" に"
-"設定されたときかつそのときに限り、タートルは伸長係数(stretchfactor)に従って伸"
-"長されて表示されます。 *stretch_wid* は進行方向に直交する向きの伸長係数で、 "
-"*stretch_len* は進行方向に沿ったの伸長係数、 *outline* はアウトラインの幅を決"
-"めるものです。"
+"Devuelve o establece los atributos del lápiz los factores x/y de "
+"estiramiento y contorno. Establece *resizemode* a *\"user\"* si y solo si "
+"*resizemode* está definido como *\"user\"*, la tortuga será verá estirada "
+"acorde a sus factores de estiramiento: *stretch_wid* es el factor de "
+"estiramiento perpendicular a su orientación, *stretch_len* es su factor de "
+"estiramiento en dirección a su orientación, *outline* determina el grosor de "
+"contorno de la forma."
 
-#: ../../library/turtle.rst:1235 ../../library/turtle.rst:1894
-#: ../../library/turtle.rst:1895 ../../library/turtle.rst:1896
+#: ../Doc/library/turtle.rst:1235 ../Doc/library/turtle.rst:1894
+#: ../Doc/library/turtle.rst:1895 ../Doc/library/turtle.rst:1896
 msgid "number (optional)"
-msgstr ""
+msgstr "número (opcional)"
 
-#: ../../library/turtle.rst:1237
+# shearfacto se refiere a una inclinación y estiramiento, gira y estira la
+# figura por un factor. No se si hay alguna palabra mejor que inclinar o
+# estirar.
+#: ../Doc/library/turtle.rst:1237
 msgid ""
 "Set or return the current shearfactor. Shear the turtleshape according to "
 "the given shearfactor shear, which is the tangent of the shear angle. Do "
@@ -1483,31 +1529,38 @@ msgid ""
 "given: return the current shearfactor, i. e. the tangent of the shear angle, "
 "by which lines parallel to the heading of the turtle are sheared."
 msgstr ""
+"Establece o devuelve el valor actual del estiramiento. Estira la forma de la "
+"tortuga de acuerdo a la inclinación del factor de corte, que es la tangente "
+"del ángulo de corte. No cambia el rumbo de la tortuga (dirección del "
+"movimiento). Si no de da un valor de inclinación: devuelve el factor actual, "
+"por ejemplo la tangente del ángulo de inclinación, por el cual se cortan la "
+"líneas paralelas al rumbo de la tortuga."
 
-#: ../../library/turtle.rst:1258
+#: ../Doc/library/turtle.rst:1258
 msgid ""
 "Rotate the turtleshape by *angle* from its current tilt-angle, but do *not* "
 "change the turtle's heading (direction of movement)."
 msgstr ""
-"タートルの形(turtleshape)を現在の傾斜角から角度(*angle*)だけ回転します。この"
-"ときタートルの進む方向は *変わりません* 。"
+"Rota la forma de la tortuga en *ángulo* desde su ángulo de inclinación "
+"actual, pero no cambia el rumbo de la tortuga (dirección del movimiento)."
 
-#: ../../library/turtle.rst:1277
+#: ../Doc/library/turtle.rst:1277
 msgid ""
 "Rotate the turtleshape to point in the direction specified by *angle*, "
 "regardless of its current tilt-angle.  *Do not* change the turtle's heading "
 "(direction of movement)."
 msgstr ""
-"タートルの形(turtleshape)を現在の傾斜角に関わらず、指定された角度(*angle*)の"
-"向きに回転します。タートルの進む方向は *変わりません* 。"
+"Rota la forma de la tortuga apuntando en la dirección especificada por el "
+"*ángulo*, independientemente de su ángulo de dirección actual. No cambia el "
+"rumbo de la tortuga (dirección de movimiento)."
 
-#: ../../library/turtle.rst:1297 ../../library/turtle.rst:1320
-#: ../../library/turtle.rst:1321 ../../library/turtle.rst:1322
-#: ../../library/turtle.rst:1323
+#: ../Doc/library/turtle.rst:1297 ../Doc/library/turtle.rst:1320
+#: ../Doc/library/turtle.rst:1321 ../Doc/library/turtle.rst:1322
+#: ../Doc/library/turtle.rst:1323
 msgid "a number (optional)"
-msgstr ""
+msgstr "un número (opcional)"
 
-#: ../../library/turtle.rst:1299
+#: ../Doc/library/turtle.rst:1299
 msgid ""
 "Set or return the current tilt-angle. If angle is given, rotate the "
 "turtleshape to point in the direction specified by angle, regardless of its "
@@ -1516,12 +1569,21 @@ msgid ""
 "angle between the orientation of the turtleshape and the heading of the "
 "turtle (its direction of movement)."
 msgstr ""
+"Establece o devuelve el ángulo de inclinación actual. Si se otorga un "
+"ángulo, rota la forma de la tortuga para apuntar en la dirección del ángulo "
+"especificado, independientemente de su actual ángulo de inclinación. No "
+"cambia el rumbo de la tortuga (dirección del movimiento). Si no se da el "
+"ángulo: devuelve el ángulo de inclinación actual, por ejemplo: el ángulo "
+"entre la orientación de la forma de la tortuga y el rumbo de la tortuga (su "
+"dirección de movimiento)."
 
-#: ../../library/turtle.rst:1325
+#: ../Doc/library/turtle.rst:1325
 msgid "Set or return the current transformation matrix of the turtle shape."
 msgstr ""
+"Establece o devuelve la matriz de transformación actual de la forma de la "
+"tortuga."
 
-#: ../../library/turtle.rst:1327
+#: ../Doc/library/turtle.rst:1327
 msgid ""
 "If none of the matrix elements are given, return the transformation matrix "
 "as a tuple of 4 elements. Otherwise set the given elements and transform the "
@@ -1530,271 +1592,291 @@ msgid ""
 "otherwise an error is raised. Modify stretchfactor, shearfactor and "
 "tiltangle according to the given matrix."
 msgstr ""
+"Si no se proporciona ninguno de los elementos de la matriz, retorna la "
+"matriz de transformación como una tupla de 4 elementos. De lo contrario, "
+"establezca los elementos dados y transforme la forma de tortuga de acuerdo "
+"con la matriz que consta de la primera fila t11, t12 y la segunda fila t21, "
+"t22. El determinante t11 * t22 - t12 * t21 no debe ser cero, de lo contrario "
+"se genera un error. Modifique el factor de estiramiento, el factor de corte "
+"y el ángulo de inclinación de acuerdo con la matriz dada."
 
-#: ../../library/turtle.rst:1349
+#: ../Doc/library/turtle.rst:1349
 msgid ""
 "Return the current shape polygon as tuple of coordinate pairs. This can be "
 "used to define a new shape or components of a compound shape."
 msgstr ""
+"Devuelve el polígono de la forma actual como tupla de pares de coordenadas. "
+"Esto puede ser usado para definir una nueva forma o componentes de una forma "
+"compuesta."
 
-#: ../../library/turtle.rst:1367 ../../library/turtle.rst:1389
-#: ../../library/turtle.rst:1414 ../../library/turtle.rst:1818
+#: ../Doc/library/turtle.rst:1367 ../Doc/library/turtle.rst:1389
+#: ../Doc/library/turtle.rst:1414 ../Doc/library/turtle.rst:1818
 msgid ""
 "a function with two arguments which will be called with the coordinates of "
 "the clicked point on the canvas"
 msgstr ""
-"2引数の関数でキャンバスのクリックされた点の座標を引数として呼び出されるもので"
-"す"
+"una función con dos argumentos que se invocará con las coordenadas del punto "
+"en el que se hizo clic en el lienzo"
 
-#: ../../library/turtle.rst:1369 ../../library/turtle.rst:1391
-#: ../../library/turtle.rst:1416 ../../library/turtle.rst:1820
+#: ../Doc/library/turtle.rst:1369 ../Doc/library/turtle.rst:1391
+#: ../Doc/library/turtle.rst:1416 ../Doc/library/turtle.rst:1820
 msgid "number of the mouse-button, defaults to 1 (left mouse button)"
-msgstr "マウスボタンの番号、デフォルトは 1 (左マウスボタン)"
+msgstr ""
+"número del botón del mouse, el valor predeterminado es 1 (botón izquierdo "
+"del mouse)"
 
-#: ../../library/turtle.rst:1370 ../../library/turtle.rst:1392
-#: ../../library/turtle.rst:1417 ../../library/turtle.rst:1821
+#: ../Doc/library/turtle.rst:1370 ../Doc/library/turtle.rst:1392
+#: ../Doc/library/turtle.rst:1417 ../Doc/library/turtle.rst:1821
 msgid ""
 "``True`` or ``False`` -- if ``True``, a new binding will be added, otherwise "
 "it will replace a former binding"
 msgstr ""
-"``True`` または ``False`` -- ``True`` ならば、 新しい束縛が追加されますが、そ"
-"うでなければ、 以前の束縛を置き換えます。"
+"``True`` o ``False`` -- si es ``True``, se agrega un nuevo enlace, de lo "
+"contrario reemplazará el enlace anterior"
 
-#: ../../library/turtle.rst:1373
+#: ../Doc/library/turtle.rst:1373
 msgid ""
 "Bind *fun* to mouse-click events on this turtle.  If *fun* is ``None``, "
 "existing bindings are removed.  Example for the anonymous turtle, i.e. the "
 "procedural way:"
 msgstr ""
-"*fun* をタートルのマウスクリック(mouse-click)イベントに束縛します。 *fun* が "
-"``None`` ならば、既存の束縛が取り除かれます。無名タートル、つまり手続き的なや"
-"り方の例です:"
+"Enlaza *acciones divertidas* a eventos de click en la tortuga. Si la "
+"*accion* es ``None``, las acciones asociadas son borradas. Ejemplo para la "
+"tortuga anónima, en la forma procedimental:"
 
-#: ../../library/turtle.rst:1395
+#: ../Doc/library/turtle.rst:1395
 msgid ""
 "Bind *fun* to mouse-button-release events on this turtle.  If *fun* is "
 "``None``, existing bindings are removed."
 msgstr ""
-"*fun* をタートルのマウスボタンリリース(mouse-button-release)イベントに束縛し"
-"ます。 *fun* が ``None`` ならば、既存の束縛が取り除かれます。"
+"Enlaza *acciones divertidas* a eventos del tipo soltar botón del mouse en la "
+"tortuga. SI la *acción* es ``None``, las acciones asociadas son borradas."
 
-#: ../../library/turtle.rst:1420
+#: ../Doc/library/turtle.rst:1420
 msgid ""
 "Bind *fun* to mouse-move events on this turtle.  If *fun* is ``None``, "
 "existing bindings are removed."
 msgstr ""
-"*fun* をタートルのマウスムーブ(mouse-move)イベントに束縛します。 *fun* が "
-"``None`` ならば、既存の束縛が取り除かれます。"
+"Enlaza *acciones divertidas* a eventos en los movimientos del mouse. Si la "
+"*acción* es ``None``, las acciones asociadas son borradas."
 
-#: ../../library/turtle.rst:1423
+#: ../Doc/library/turtle.rst:1423
 msgid ""
 "Remark: Every sequence of mouse-move-events on a turtle is preceded by a "
 "mouse-click event on that turtle."
 msgstr ""
-"注意: 全てのマウスムーブイベントのシーケンスに先立ってマウスクリックイベント"
-"が起こります。"
+"Observación: cada secuencia de los eventos de movimiento del mouse en una "
+"tortuga es precedida por un evento de click del mouse en esa tortuga."
 
-#: ../../library/turtle.rst:1431
+#: ../Doc/library/turtle.rst:1431
 msgid ""
 "Subsequently, clicking and dragging the Turtle will move it across the "
 "screen thereby producing handdrawings (if pen is down)."
 msgstr ""
-"この後、タートルをクリックしてドラッグするとタートルはスクリーン上を動きそれ"
-"によって(ペンが下りていれば)手書きの線ができあがります。"
+"Subsecuentemente, clickear y arrastrar la Tortuga la moverá a través de la "
+"pantalla produciendo dibujos a mano alzada (si el lápiz está abajo)."
 
-#: ../../library/turtle.rst:1440
+#: ../Doc/library/turtle.rst:1440
 msgid ""
 "Start recording the vertices of a polygon.  Current turtle position is first "
 "vertex of polygon."
-msgstr "多角形の頂点の記録を開始します。現在のタートル位置が最初の頂点です。"
+msgstr ""
+"Comienza a grabar los vértices de un polígono. La posición actual de la "
+"tortuga es el primer vértice del polígono."
 
-#: ../../library/turtle.rst:1446
+#: ../Doc/library/turtle.rst:1446
 msgid ""
 "Stop recording the vertices of a polygon.  Current turtle position is last "
 "vertex of polygon.  This will be connected with the first vertex."
 msgstr ""
-"多角形の頂点の記録を停止します。現在のタートル位置が最後の頂点です。この頂点"
-"が最初の頂点と結ばれます。"
+"Deja de grabar los vértices de un polígono. La posición actual de la tortuga "
+"es el último vértice del polígono. Esto se conectará con el primer vértice."
 
-#: ../../library/turtle.rst:1452
+#: ../Doc/library/turtle.rst:1452
 msgid "Return the last recorded polygon."
-msgstr "最後に記録された多角形を返します。"
+msgstr "Devuelve el último polígono grabado."
 
-#: ../../library/turtle.rst:1471
+#: ../Doc/library/turtle.rst:1471
 msgid ""
 "Create and return a clone of the turtle with same position, heading and "
 "turtle properties."
 msgstr ""
-"位置、向きその他のプロパティがそっくり同じタートルのクローンを作って返しま"
-"す。"
+"Crea y devuelve un clon de la tortuga con la misma posición, dirección y "
+"propiedades de la tortuga."
 
-#: ../../library/turtle.rst:1484
+#: ../Doc/library/turtle.rst:1484
 msgid ""
 "Return the Turtle object itself.  Only reasonable use: as a function to "
 "return the \"anonymous turtle\":"
 msgstr ""
-"Turtle オブジェクトそのものを返します。唯一の意味のある使い方: 無名タートルを"
-"返す関数として使う:"
+"Devuelve el objeto Tortuga en si. El único uso razonable: es como una "
+"función para devolver la \"tortuga anónima\":"
 
-#: ../../library/turtle.rst:1498
+# Return the TurtleScreen object the turtle is drawing on.
+# no se si "sobre el cual" es la traducción adecuada.
+#: ../Doc/library/turtle.rst:1498
 msgid ""
 "Return the :class:`TurtleScreen` object the turtle is drawing on. "
 "TurtleScreen methods can then be called for that object."
 msgstr ""
-"タートルが描画中の :class:`TurtleScreen` オブジェクトを返します。 "
-"TurtleScreen のメソッドをそのオブジェクトに対して呼び出すことができます。"
+"Devuelve el objeto :class:`TurtleScreen` sobre el cual la tortuga está "
+"dibujando. Los métodos *TurtleScreen* luego pueden ser llamados para ese "
+"objeto."
 
-#: ../../library/turtle.rst:1512
+#: ../Doc/library/turtle.rst:1512
 msgid "an integer or ``None``"
-msgstr "整数または ``None``"
+msgstr "un entero o ``None``"
 
-#: ../../library/turtle.rst:1514
+#: ../Doc/library/turtle.rst:1514
 msgid ""
 "Set or disable undobuffer.  If *size* is an integer, an empty undobuffer of "
 "given size is installed.  *size* gives the maximum number of turtle actions "
 "that can be undone by the :func:`undo` method/function.  If *size* is "
 "``None``, the undobuffer is disabled."
 msgstr ""
-"アンドゥバッファを設定または無効化します。 *size* が整数ならばそのサイズの空"
-"のアンドゥバッファを用意します。 *size* の値はタートルのアクションを何度 :"
-"func:`undo` メソッド/関数で取り消せるかの最大数を与えます。 *size* が "
-"``None`` ならば、アンドゥバッファは無効化されます。"
+"Establecer o deshabilitar deshacer búfer. Si *size* es un número entero, se "
+"instala un búfer de deshacer vacío de un tamaño determinado. *size* da el "
+"número máximo de acciones de tortuga que se pueden deshacer mediante el "
+"método/función :func:`undo`. Si *size* es ``None``, el búfer para deshacer "
+"está deshabilitado."
 
-#: ../../library/turtle.rst:1527
+#: ../Doc/library/turtle.rst:1527
 msgid "Return number of entries in the undobuffer."
-msgstr "アンドゥバッファのエントリー数を返します。"
+msgstr "Devuelve el número de entradas en el buffer para deshacer acciones."
 
-#: ../../library/turtle.rst:1540
+#: ../Doc/library/turtle.rst:1540
 msgid "Compound shapes"
-msgstr ""
+msgstr "Formas compuestas"
 
-#: ../../library/turtle.rst:1542
+#: ../Doc/library/turtle.rst:1542
 msgid ""
 "To use compound turtle shapes, which consist of several polygons of "
 "different color, you must use the helper class :class:`Shape` explicitly as "
 "described below:"
 msgstr ""
-"合成されたタートルの形、つまり幾つかの色の違う多角形から成るような形を使うに"
-"は、以下のように補助クラス :class:`Shape` を直接使わなければなりません:"
+"Para usar formas complejas con la tortuga, que consiste en varios polígonos "
+"de diferentes colores, deberá usar la clase de ayuda :class:`Shape` "
+"explícitamente como se describe debajo:"
 
-#: ../../library/turtle.rst:1546
+#: ../Doc/library/turtle.rst:1546
 msgid "Create an empty Shape object of type \"compound\"."
-msgstr "タイプ \"compound\" の空の Shape オブジェクトを作ります。"
+msgstr "Crear una objeto de forma vacía del tipo *compound*."
 
-#: ../../library/turtle.rst:1547
+#: ../Doc/library/turtle.rst:1547
 msgid ""
 "Add as many components to this object as desired, using the :meth:"
 "`addcomponent` method."
 msgstr ""
-":meth:`addcomponent` メソッドを使って、好きなだけここにコンポーネントを追加し"
-"ます。"
+"Agregar todos los componentes deseados a este objeto, usando el método :meth:"
+"`addcomponent`."
 
-#: ../../library/turtle.rst:1550
+#: ../Doc/library/turtle.rst:1550
 msgid "For example:"
-msgstr "例えば:"
+msgstr "Por ejemplo:"
 
-#: ../../library/turtle.rst:1561
+#: ../Doc/library/turtle.rst:1561
 msgid "Now add the Shape to the Screen's shapelist and use it:"
-msgstr ""
-"こうして作った Shape を Screen の形のリスト(shapelist) に追加して使います:"
+msgstr "Ahora agregar la forma a la lista de formas de la pantalla y úsela:"
 
-#: ../../library/turtle.rst:1572
+#: ../Doc/library/turtle.rst:1572
 msgid ""
 "The :class:`Shape` class is used internally by the :func:`register_shape` "
 "method in different ways.  The application programmer has to deal with the "
 "Shape class *only* when using compound shapes like shown above!"
 msgstr ""
-":class:`Shape` クラスは :func:`register_shape` の内部では違った使われ方をしま"
-"す。アプリケーションを書く人が Shape クラスを扱わなければならないのは、上で示"
-"したように合成された形を使うとき *だけ* です！"
+"La clase :class:`Shape` es usada internamente por el método :func:"
+"`register_shape` en maneras diferentes. El programador deberá lidiar con la "
+"clase *Shape* ¡solo cuando use formas compuestas como las que se mostraron "
+"arriba!"
 
-#: ../../library/turtle.rst:1578
+#: ../Doc/library/turtle.rst:1578
 msgid "Methods of TurtleScreen/Screen and corresponding functions"
-msgstr "TurtleScreen/Screen のメソッドと対応する関数"
+msgstr "Métodos de *TurtleScreen/Screen* y sus correspondientes funciones"
 
-#: ../../library/turtle.rst:1580
+#: ../Doc/library/turtle.rst:1580
 msgid ""
 "Most of the examples in this section refer to a TurtleScreen instance called "
 "``screen``."
 msgstr ""
-"この節のほとんどの例では ``screen`` という名前の TurtleScreen インスタンスを"
-"使います。"
+"La mayoría de los ejemplos en esta sección se refieren a la instancia de "
+"*TurtleScreen* llamada ``screen``."
 
-#: ../../library/turtle.rst:1594
+#: ../Doc/library/turtle.rst:1594
 msgid ""
 "a color string or three numbers in the range 0..colormode or a 3-tuple of "
 "such numbers"
 msgstr ""
-"色文字列または 0 から colormode の範囲の数3つ、 またはそれを三つ組みにしたも"
-"の"
+"una cadena de color o tres números en el rango 0..*colormode* o una tupla de "
+"3 de esos números"
 
-#: ../../library/turtle.rst:1598
+#: ../Doc/library/turtle.rst:1598
 msgid "Set or return background color of the TurtleScreen."
-msgstr "TurtleScreen の背景色を設定するかまたは返します。"
+msgstr "Establece o devuelve el color de fondo de *TurtleScreen*."
 
-#: ../../library/turtle.rst:1613
+#: ../Doc/library/turtle.rst:1613
 msgid "a string, name of a gif-file or ``\"nopic\"``, or ``None``"
-msgstr "文字列で gif ファイルの名前 ``\"nopic\"`` 、または ``None``"
+msgstr "una cadena, nombre o archivo gif o ``\"nopic\"``, o ``None``"
 
-#: ../../library/turtle.rst:1615
+#: ../Doc/library/turtle.rst:1615
 msgid ""
 "Set background image or return name of current backgroundimage.  If "
 "*picname* is a filename, set the corresponding image as background.  If "
 "*picname* is ``\"nopic\"``, delete background image, if present.  If "
 "*picname* is ``None``, return the filename of the current backgroundimage. ::"
 msgstr ""
-"背景の画像を設定するかまたは現在の背景画像(backgroundimage)の名前を返しま"
-"す。 *picname* がファイル名ならば、その画像を背景に設定します。 *picname* が "
-"``\"nopic\"`` ならば、(もしあれば)背景画像を削除します。 *picname* が "
-"``None`` ならば、現在の背景画像のファイル名を返します。 ::"
+"Establece la imagen de fondo o devuelve el nombre de la imagen de fondo "
+"actual. Si *picname* es un nombre de archivo, establece la imagen "
+"correspondiente como fondo. Si *picname* es ``\"nopic\"``, borra la imagen "
+"de fondo, si hay alguna presente. Si *picname* es ``None``, devuelve el "
+"nombre de archivo de la imagen de fondo actual. ::"
 
-#: ../../library/turtle.rst:1631
+#: ../Doc/library/turtle.rst:1631
 msgid ""
 "This TurtleScreen method is available as a global function only under the "
 "name ``clearscreen``.  The global function ``clear`` is a different one "
 "derived from the Turtle method ``clear``."
 msgstr ""
-"この TurtleScreen メソッドはグローバル関数としては ``clearscreen`` という名前"
-"でだけ使えます。グローバル関数 ``clear`` は Turtle メソッドの ``clear`` から"
-"派生した別ものです。"
+"Este método de *TurtleScreen* está disponible como una función global solo "
+"bajo el nombre ``clearscreen``. La función global ``clear`` es otra, "
+"derivada del método de *Turtle* ``clear``."
 
-#: ../../library/turtle.rst:1638
+#: ../Doc/library/turtle.rst:1638
 msgid ""
 "Delete all drawings and all turtles from the TurtleScreen.  Reset the now "
 "empty TurtleScreen to its initial state: white background, no background "
 "image, no event bindings and tracing on."
 msgstr ""
-"全ての図形と全てのタートルを TurtleScreen から削除します。そして空になった "
-"TurtleScreen をリセットして初期状態に戻します: 白い背景、背景画像もイベント束"
-"縛もなく、トレーシングはオンです。"
+"Borra todos los dibujos y todas las tortugas del la pantalla de la tortuga. "
+"Reinicia la ahora vacía pantalla de la tortuga a su estado inicial: fondo "
+"blanco, sin imagen de fondo, sin enlaces a eventos o seguimientos."
 
-#: ../../library/turtle.rst:1647
+#: ../Doc/library/turtle.rst:1647
 msgid ""
 "This TurtleScreen method is available as a global function only under the "
 "name ``resetscreen``.  The global function ``reset`` is another one derived "
 "from the Turtle method ``reset``."
 msgstr ""
-"この TurtleScreen メソッドはグローバル関数としては ``resetscreen`` という名前"
-"でだけ使えます。グローバル関数 ``reset`` は Turtle メソッドの ``reset`` から"
-"派生した別ものです。"
+"Este método *TurtleScreen* esta disponible como una función global solo bajo "
+"el nombre ``resetscreen``. La función global ``reset`` es otra, derivada del "
+"método *Turtle* ``reset``."
 
-#: ../../library/turtle.rst:1654
+#: ../Doc/library/turtle.rst:1654
 msgid "Reset all Turtles on the Screen to their initial state."
-msgstr "スクリーン上の全てのタートルをリセットしその初期状態に戻します。"
+msgstr "Reinicia todas las tortugas de la pantalla a su estado inicial."
 
-#: ../../library/turtle.rst:1659
+#: ../Doc/library/turtle.rst:1659
 msgid "positive integer, new width of canvas in pixels"
-msgstr "正の整数でピクセル単位の新しいキャンバス幅(canvaswidth)"
+msgstr "entero positivo, nueva anchura del lienzo en pixeles"
 
-#: ../../library/turtle.rst:1660
+#: ../Doc/library/turtle.rst:1660
 msgid "positive integer, new height of canvas in pixels"
-msgstr "正の整数でピクセル単位の新しいキャンバス高さ(canvasheight)"
+msgstr "entero positivo, nueva altura del lienzo en pixeles"
 
-#: ../../library/turtle.rst:1661
+#: ../Doc/library/turtle.rst:1661
 msgid "colorstring or color-tuple, new background color"
-msgstr "色文字列または色タプルで新しい背景色"
+msgstr "*colorstrng* o tupla de color, muevo color de fondo"
 
-#: ../../library/turtle.rst:1663
+#: ../Doc/library/turtle.rst:1663
 msgid ""
 "If no arguments are given, return current (canvaswidth, canvasheight).  Else "
 "resize the canvas the turtles are drawing on.  Do not alter the drawing "
@@ -1802,71 +1884,75 @@ msgid ""
 "this method, one can make visible those parts of a drawing which were "
 "outside the canvas before."
 msgstr ""
-"引数が渡されなければ、現在の (キャンバス幅, キャンバス高さ) を返します。そう"
-"でなければタートルが描画するキャンバスのサイズを変更します。描画ウィンドウに"
-"は影響しません。キャンバスの隠れた部分を見るためにはスクロールバーを使って下"
-"さい。このメソッドを使うと、以前はキャンバスの外にあったそうした図形の一部を"
-"見えるようにすることができます。"
+"Si no se dan argumentos, devuelve el actual (ancho y alto del lienzo). Sino "
+"redimensiona el lienzo en el que la tortuga está dibujando. No altera la "
+"ventana de dibujo. Para ver las partes ocultas del lienzo, use la barra de "
+"desplazamiento. Con este método, se pueden hacer visibles aquellas partes de "
+"un dibujo que antes estaban fuera del lienzo."
 
-#: ../../library/turtle.rst:1675
+#: ../Doc/library/turtle.rst:1675
 msgid "e.g. to search for an erroneously escaped turtle ;-)"
-msgstr "# 逃げ出してしまったタートルを探すためとかね ;-)"
+msgstr "ej. buscar una tortuga que se escapó por error ;-)"
 
-#: ../../library/turtle.rst:1680
+#: ../Doc/library/turtle.rst:1680
 msgid "a number, x-coordinate of lower left corner of canvas"
-msgstr "数でキャンバスの左下隅の x-座標"
+msgstr "un número, coordenada x de la esquina inferior izquierda del lienzo"
 
-#: ../../library/turtle.rst:1681
+#: ../Doc/library/turtle.rst:1681
 msgid "a number, y-coordinate of lower left corner of canvas"
-msgstr "数でキャンバスの左下隅の y-座標"
+msgstr "un número, coordenada y de la esquina inferior izquierda del lienzo"
 
-#: ../../library/turtle.rst:1682
+#: ../Doc/library/turtle.rst:1682
 msgid "a number, x-coordinate of upper right corner of canvas"
-msgstr "数でキャンバスの右上隅の x-座標"
+msgstr "un número, coordenada x de la esquina superior derecha del lienzo"
 
-#: ../../library/turtle.rst:1683
+#: ../Doc/library/turtle.rst:1683
 msgid "a number, y-coordinate of upper right corner of canvas"
-msgstr "数でキャンバスの右上隅の y-座標"
+msgstr "un número, coordenada z de la esquina superior derecha del lienzo"
 
-#: ../../library/turtle.rst:1685
+#: ../Doc/library/turtle.rst:1685
 msgid ""
 "Set up user-defined coordinate system and switch to mode \"world\" if "
 "necessary.  This performs a ``screen.reset()``.  If mode \"world\" is "
 "already active, all drawings are redrawn according to the new coordinates."
 msgstr ""
-"ユーザー定義座標系を準備し必要ならばモードを \"world\" に切り替えます。この動"
-"作は ``screen.reset()`` を伴います。すでに \"world\" モードになっていた場合、"
-"全ての図形は新しい座標に従って再描画されます。"
+"Configura coordenadas definidas por el usuario y cambia al modo *world* si "
+"es necesario. Esto realiza un ``screen.reset()``. Si el modo *world* ya está "
+"activo, todos los dibujos se re dibujan de acuerdo a las nuevas coordenadas."
 
-#: ../../library/turtle.rst:1689
+#: ../Doc/library/turtle.rst:1689
 msgid ""
 "**ATTENTION**: in user-defined coordinate systems angles may appear "
 "distorted."
-msgstr "**重要なお知らせ**: ユーザー定義座標系では角度が歪むかもしれません。"
+msgstr ""
+"**ATENCIÓN**: en los sistemas de coordenadas definidos por el usuario, los "
+"ángulos pueden aparecer distorsionados."
 
-#: ../../library/turtle.rst:1717
+#: ../Doc/library/turtle.rst:1717
 msgid "positive integer"
-msgstr "正の整数"
+msgstr "entero positivo"
 
-#: ../../library/turtle.rst:1719
+#: ../Doc/library/turtle.rst:1719
 msgid ""
 "Set or return the drawing *delay* in milliseconds.  (This is approximately "
 "the time interval between two consecutive canvas updates.)  The longer the "
 "drawing delay, the slower the animation."
 msgstr ""
-"描画の遅延(*delay*)をミリ秒単位で設定するかまたはその値を返します。(これは概"
-"ね引き続くキャンバス更新の時間間隔です。) 遅延が大きくなると、アニメーション"
-"は遅くなります。"
+"Establece o retorna el *retraso* del dibujo en mili segundos. ( Este es "
+"aproximadamente, el tiempo de intervalo entre dos actualizaciones "
+"consecutivas del lienzo). Mientras más largo sea el retraso, más lenta la "
+"animación."
 
-#: ../../library/turtle.rst:1723
+#: ../Doc/library/turtle.rst:1723
 msgid "Optional argument:"
-msgstr "オプション引数:"
+msgstr "Argumento opcional:"
 
-#: ../../library/turtle.rst:1737 ../../library/turtle.rst:1738
+#: ../Doc/library/turtle.rst:1737 ../Doc/library/turtle.rst:1738
 msgid "nonnegative integer"
-msgstr "非負整数"
+msgstr "entero no negativo"
 
-#: ../../library/turtle.rst:1740
+# n-th lo enconté como enésima, pero no se si se entiende la frase
+#: ../Doc/library/turtle.rst:1740
 msgid ""
 "Turn turtle animation on/off and set delay for update drawings.  If *n* is "
 "given, only each n-th regular screen update is really performed.  (Can be "
@@ -1874,110 +1960,134 @@ msgid ""
 "arguments, returns the currently stored value of n. Second argument sets "
 "delay value (see :func:`delay`)."
 msgstr ""
+"Activa o desactiva la animación de la tortuga y establece el retraso para la "
+"actualización de los dibujos. Si se da *n*, solo cada enésima actualización "
+"regular de pantalla se realiza realmente. (Puede usarse para acelerar los "
+"dibujos de gráficos complejos). Cuando es llamada sin argumentos, devuelve "
+"el valor de *n* guardado actualmente. El segundo argumento establece el "
+"valor de retraso (ver :func:`delay`)."
 
-#: ../../library/turtle.rst:1760
+#: ../Doc/library/turtle.rst:1760
 msgid "Perform a TurtleScreen update. To be used when tracer is turned off."
-msgstr "TurtleScreen の更新を実行します。トレーサーがオフの時に使われます。"
+msgstr ""
+"Realiza una actualización de la pantalla de la tortuga. Para ser usada "
+"cuando *tracer* está deshabilitada."
 
-#: ../../library/turtle.rst:1762
+#: ../Doc/library/turtle.rst:1762
 msgid "See also the RawTurtle/Turtle method :func:`speed`."
-msgstr "RawTurtle/Turtle のメソッド :func:`speed` も参照して下さい。"
+msgstr "Ver también el método *RawTurtle/Turtle* :func:`speed`."
 
-#: ../../library/turtle.rst:1770
+#: ../Doc/library/turtle.rst:1770
 msgid ""
 "Set focus on TurtleScreen (in order to collect key-events).  Dummy arguments "
 "are provided in order to be able to pass :func:`listen` to the onclick "
 "method."
 msgstr ""
-"TurtleScreen に(キー・イベントを収集するために)フォーカスします。ダミー引数"
-"は :func:`listen` を onclick メソッドに渡せるようにするためのものです。"
+"Establece el foco en la pantalla de la tortuga (para recoger eventos de "
+"teclado). Los argumentos *dummy* se proveen en orden de ser capaces de "
+"pasar :func:`listen` a los métodos *onclick*."
 
-#: ../../library/turtle.rst:1777 ../../library/turtle.rst:1797
+#: ../Doc/library/turtle.rst:1777 ../Doc/library/turtle.rst:1797
 msgid "a function with no arguments or ``None``"
-msgstr "引数なしの関数または ``None``"
+msgstr "una función sin argumentos o ``None``"
 
-#: ../../library/turtle.rst:1778 ../../library/turtle.rst:1798
+#: ../Doc/library/turtle.rst:1778 ../Doc/library/turtle.rst:1798
 msgid "a string: key (e.g. \"a\") or key-symbol (e.g. \"space\")"
-msgstr "文字列: キー (例 \"a\") またはキー・シンボル (例 \"space\")"
+msgstr ""
+"una cadena de caracteres: tecla (por ejemplo, \"a\") o una acción del "
+"teclado (por ejemplo, \"space\")"
 
-#: ../../library/turtle.rst:1780
+#: ../Doc/library/turtle.rst:1780
 msgid ""
 "Bind *fun* to key-release event of key.  If *fun* is ``None``, event "
 "bindings are removed. Remark: in order to be able to register key-events, "
 "TurtleScreen must have the focus. (See method :func:`listen`.)"
 msgstr ""
-"*fun* を指定されたキーのキーリリース(key-release)イベントに束縛します。 "
-"*fun* が ``None`` ならばイベント束縛は除かれます。注意: キー・イベントを登録"
-"できるようにするためには TurtleScreen はフォーカスを持っていないとなりません"
-"(:func:`listen` を参照)。"
+"Vincula *fun* a un evento de liberación de una tecla. Si *fun* es ``None``, "
+"los eventos vinculados son removidos. Aclaración: para poder registrar "
+"eventos de teclado, *TurtleScreen* tiene que tener el foco. (ver el método :"
+"func:`listen`.)"
 
-#: ../../library/turtle.rst:1800
+#: ../Doc/library/turtle.rst:1800
 msgid ""
 "Bind *fun* to key-press event of key if key is given, or to any key-press-"
 "event if no key is given. Remark: in order to be able to register key-"
 "events, TurtleScreen must have focus. (See method :func:`listen`.)"
 msgstr ""
+"Vincula *fun* a un evento de pulsado de una tecla, o a cualquier evento de "
+"pulsado de tecla si no se da una. Aclaración: para poder registrar eventos "
+"de teclado, *TurtleScreen* tiene que tener el foco. (ver el método :func:"
+"`listen`.)"
 
-#: ../../library/turtle.rst:1824
+#: ../Doc/library/turtle.rst:1824
 msgid ""
 "Bind *fun* to mouse-click events on this screen.  If *fun* is ``None``, "
 "existing bindings are removed."
 msgstr ""
-"*fun* をタートルのマウスクリック(mouse-click)イベントに束縛します。 *fun* が "
-"``None`` ならば、既存の束縛が取り除かれます。"
+"Vincula *fun* a eventos de click del mouse en esta pantalla. Si *fun* es "
+"``None``, los vínculos existentes son removidos."
 
-#: ../../library/turtle.rst:1827
+#: ../Doc/library/turtle.rst:1827
 msgid ""
 "Example for a TurtleScreen instance named ``screen`` and a Turtle instance "
 "named ``turtle``:"
 msgstr ""
-"Example for a ``screen`` という名の TurtleScreen インスタンスと ``turtle`` と"
-"いう名前の Turtle インスタンスの例:"
+"Ejemplo de una instancia TurtleScreen llamada ``screen`` y una instancia "
+"Turtle llamada ``turtle``:"
 
-#: ../../library/turtle.rst:1838
+#: ../Doc/library/turtle.rst:1838
 msgid ""
 "This TurtleScreen method is available as a global function only under the "
 "name ``onscreenclick``.  The global function ``onclick`` is another one "
 "derived from the Turtle method ``onclick``."
 msgstr ""
-"この TurtleScreen メソッドはグローバル関数としては ``onscreenclick`` という名"
-"前でだけ使えます。グローバル関数 ``onclick`` は Turtle メソッドの "
-"``onclick`` から派生した別ものです。"
+"Este método *TurtleScreen* está disponible como una función global solo bajo "
+"el nombre ``onscreenclick``. La función global ``onclick`` es otra derivada "
+"del método Turtle ``onclick``."
 
-#: ../../library/turtle.rst:1845
+#: ../Doc/library/turtle.rst:1845
 msgid "a function with no arguments"
-msgstr "引数なし関数"
+msgstr "una función sin argumentos"
 
-#: ../../library/turtle.rst:1846
+#: ../Doc/library/turtle.rst:1846
 msgid "a number >= 0"
-msgstr "数 >= 0"
+msgstr "un número >= 0"
 
-#: ../../library/turtle.rst:1848
+#: ../Doc/library/turtle.rst:1848
 msgid "Install a timer that calls *fun* after *t* milliseconds."
-msgstr "*t* ミリ秒後に *fun* を呼び出すタイマーを仕掛けます。"
+msgstr "Instala un temporizador que llama a *fun* cada *t* milisegundos."
 
-#: ../../library/turtle.rst:1866
+#: ../Doc/library/turtle.rst:1866
 msgid ""
 "Starts event loop - calling Tkinter's mainloop function. Must be the last "
 "statement in a turtle graphics program. Must *not* be used if a script is "
 "run from within IDLE in -n mode (No subprocess) - for interactive use of "
 "turtle graphics. ::"
 msgstr ""
+"Comienza un bucle de evento - llamando a la función *mainloop* del "
+"*Tkinter*. Debe ser la última declaración en un programa gráfico de turtle. "
+"*No* debe ser usado si algún script es corrido dentro del IDLE en modo -n "
+"(Sin subproceso) - para uso interactivo de gráficos turtle.::"
 
-#: ../../library/turtle.rst:1879 ../../library/turtle.rst:1880
-#: ../../library/turtle.rst:1892 ../../library/turtle.rst:1893
+#: ../Doc/library/turtle.rst:1879 ../Doc/library/turtle.rst:1880
+#: ../Doc/library/turtle.rst:1892 ../Doc/library/turtle.rst:1893
 msgid "string"
-msgstr "string"
+msgstr "cadena de caracteres"
 
-#: ../../library/turtle.rst:1882
+#: ../Doc/library/turtle.rst:1882
 msgid ""
 "Pop up a dialog window for input of a string. Parameter title is the title "
 "of the dialog window, prompt is a text mostly describing what information to "
 "input. Return the string input. If the dialog is canceled, return "
 "``None``. ::"
 msgstr ""
+"Abre una ventana de diálogo para ingresar una cadena de caracteres. El "
+"parámetro *title* es el título de la ventana de diálogo, *prompt* es un "
+"texto que usualmente describe que información se debe ingresar. Devuelve la "
+"cadena ingresada. Si el diálogo es cancelado, devuelve ``None``. ::"
 
-#: ../../library/turtle.rst:1898
+#: ../Doc/library/turtle.rst:1898
+#, fuzzy
 msgid ""
 "Pop up a dialog window for input of a number. title is the title of the "
 "dialog window, prompt is a text mostly describing what numerical information "
@@ -1987,156 +2097,175 @@ msgid ""
 "open for correction. Return the number input. If the dialog is canceled,  "
 "return ``None``. ::"
 msgstr ""
+"Abre una ventana de diálogo para el ingreso de un número. *title* es el "
+"título de la ventana de diálogo, *prompt* es un texto que usualmente "
+"describe qué información numérica ingresar. *default*: valor por defecto, "
+"*minval*: mínimo valor aceptado, *maxval*: máximo valor aceptado. Si se "
+"aportan estos parámetros, el número a ingresar debe estar en el rango "
+"*minval*..*maxval*. Si no, se da una pista y el diálogo permanece abierto "
+"para su corrección. Devuelve el número ingresado. Si el diálogo es "
+"cancelado, devuelve ``None``.::"
 
-#: ../../library/turtle.rst:1915
+#: ../Doc/library/turtle.rst:1915
 msgid "one of the strings \"standard\", \"logo\" or \"world\""
-msgstr "文字列 \"standard\", \"logo\", \"world\" のいずれか"
+msgstr "una de las cadenas *\"standard\"*, *\"logo*\" o *\"world*\""
 
-#: ../../library/turtle.rst:1917
+#: ../Doc/library/turtle.rst:1917
 msgid ""
 "Set turtle mode (\"standard\", \"logo\" or \"world\") and perform reset.  If "
 "mode is not given, current mode is returned."
 msgstr ""
-"タートルのモード(\"standard\", \"logo\", \"world\" のいずれか)を設定してリ"
-"セットします。モードが渡されなければ現在のモードが返されます。"
+"Establece el mode de la tortuga  (*\"standard\"*, *\"logo\"* o *\"world\"*) "
+"y realiza un reinicio. Si no se da \"*mode*\", retorna el modo actual."
 
-#: ../../library/turtle.rst:1920
+#: ../Doc/library/turtle.rst:1920
 msgid ""
 "Mode \"standard\" is compatible with old :mod:`turtle`.  Mode \"logo\" is "
 "compatible with most Logo turtle graphics.  Mode \"world\" uses user-defined "
 "\"world coordinates\". **Attention**: in this mode angles appear distorted "
 "if ``x/y`` unit-ratio doesn't equal 1."
 msgstr ""
-"モード \"standard\" は古い :mod:`turtle` 互換です。モード \"logo\" は Logo "
-"タートルグラフィックスとほぼ互換です。モード \"world\" はユーザーの定義した"
-"「世界座標(world coordinates)」を使います。 **重要なお知らせ**: このモードで"
-"は ``x/y`` 比が 1 でないと角度が歪むかもしれません。"
+"El modo *\"standard\"* es compatible con el antiguo :mod:`turtle`. El modo "
+"*\"logo\"* es compatible con la mayoría de los gráficos de tortuga Logo. El "
+"modo *\"world\"* usa coordenadas de mundo definidas por el usuario. "
+"**Atención**: en este modo los ángulos aparecen distorsionados si la "
+"relación de unidad ``x/y`` no es igual a 1."
 
-#: ../../library/turtle.rst:1926
+#: ../Doc/library/turtle.rst:1926
 msgid "Mode"
-msgstr "モード"
+msgstr "Modo"
 
-#: ../../library/turtle.rst:1926
+#: ../Doc/library/turtle.rst:1926
 msgid "Initial turtle heading"
-msgstr "タートルの向きの初期値"
+msgstr "Rumbo inicial de la tortuga"
 
-#: ../../library/turtle.rst:1926
+#: ../Doc/library/turtle.rst:1926
 msgid "positive angles"
-msgstr "正の角度"
+msgstr "ángulos positivos"
 
-#: ../../library/turtle.rst:1928
+#: ../Doc/library/turtle.rst:1928
 msgid "\"standard\""
-msgstr "\"standard\""
+msgstr "*\"standard\"*"
 
-#: ../../library/turtle.rst:1928
+#: ../Doc/library/turtle.rst:1928
 msgid "to the right (east)"
-msgstr "右 (東) 向き"
+msgstr "hacia la derecha (este)"
 
-#: ../../library/turtle.rst:1928
+#: ../Doc/library/turtle.rst:1928
 msgid "counterclockwise"
-msgstr "反時計回り"
+msgstr "sentido antihorario"
 
-#: ../../library/turtle.rst:1929
+#: ../Doc/library/turtle.rst:1929
 msgid "\"logo\""
-msgstr "\"logo\""
+msgstr "*\"logo\"*"
 
-#: ../../library/turtle.rst:1929
+#: ../Doc/library/turtle.rst:1929
 msgid "upward    (north)"
-msgstr "上 (北) 向き"
+msgstr "hacia arriba (norte)"
 
-#: ../../library/turtle.rst:1929
+#: ../Doc/library/turtle.rst:1929
 msgid "clockwise"
-msgstr "時計回り"
+msgstr "sentido horario"
 
-#: ../../library/turtle.rst:1942
+#: ../Doc/library/turtle.rst:1942
 msgid "one of the values 1.0 or 255"
-msgstr "1.0 か 255 のどちらかの値"
+msgstr "uno de los valores 1.0 o 255"
 
-#: ../../library/turtle.rst:1944
+#: ../Doc/library/turtle.rst:1944
+#, fuzzy
 msgid ""
 "Return the colormode or set it to 1.0 or 255.  Subsequently *r*, *g*, *b* "
 "values of color triples have to be in the range 0..*cmode*."
 msgstr ""
+"Devuelve el *colormode* o lo establece a 1.0 o 255. Subsecuentemente, los "
+"valores triples de color *r*, *g*, *b* tienen que estar en el rango 0..\\ "
+"*cmode*."
 
-#: ../../library/turtle.rst:1965
+#: ../Doc/library/turtle.rst:1965
 msgid ""
 "Return the Canvas of this TurtleScreen.  Useful for insiders who know what "
 "to do with a Tkinter Canvas."
 msgstr ""
-"この TurtleScreen の Canvas を返します。Tkinter の Canvas を使って何をするか"
-"知っている人には有用です。"
+"Devuelve el lienzo de este *TurtleScreen*. Útil para conocedores que saben "
+"que hace con un *TKinter* *Canvas*."
 
-#: ../../library/turtle.rst:1978
+#: ../Doc/library/turtle.rst:1978
 msgid "Return a list of names of all currently available turtle shapes."
-msgstr "現在使うことのできる全てのタートルの形のリストを返します。"
+msgstr ""
+"Devuelve la lista de nombres de todas las formas de la tortuga actualmente "
+"disponibles."
 
-#: ../../library/turtle.rst:1990
+#: ../Doc/library/turtle.rst:1990
 msgid "There are three different ways to call this function:"
-msgstr "この関数を呼び出す三つの異なる方法があります:"
+msgstr "Hay tres formas distintas de llamar a esta función:"
 
-#: ../../library/turtle.rst:1992
+#: ../Doc/library/turtle.rst:1992
 msgid ""
 "*name* is the name of a gif-file and *shape* is ``None``: Install the "
 "corresponding image shape. ::"
 msgstr ""
-"*name* が gif ファイルの名前で *shape* が ``None``: 対応する画像の形を取り込"
-"みます。 ::"
+"*name* es el nombre de un archivo gif y *shape* es ``None``: instala la "
+"imagen correspondiente. ::"
 
-#: ../../library/turtle.rst:1998
+#: ../Doc/library/turtle.rst:1998
 msgid ""
 "Image shapes *do not* rotate when turning the turtle, so they do not display "
 "the heading of the turtle!"
 msgstr ""
-"画像の形はタートルが向きを変えても *回転しません* ので、タートルがどちらを向"
-"いているか見ても判りません!"
+"Las imágenes de tipo *shapes* no rotan cuando la tortuga gira, así que ellas "
+"¡no muestran el rumbo de la tortuga!"
 
-#: ../../library/turtle.rst:2001
+#: ../Doc/library/turtle.rst:2001
 msgid ""
 "*name* is an arbitrary string and *shape* is a tuple of pairs of "
 "coordinates: Install the corresponding polygon shape."
 msgstr ""
-"*name* が任意の文字列で *shape* が座標ペアのタプル: 対応する多角形を取り込み"
-"ます。"
+"*name* es una cadena de caracteres arbitraria y *shape* es una tupla de "
+"pares de coordenadas: Instala la forma poligonal correspondiente."
 
-#: ../../library/turtle.rst:2009
+#: ../Doc/library/turtle.rst:2009
+#, fuzzy
 msgid ""
 "*name* is an arbitrary string and *shape* is a (compound) :class:`Shape` "
 "object: Install the corresponding compound shape."
 msgstr ""
+"*name* es una cadena de caracteres arbitraria y *shape* es un objeto :class:"
+"`Shape` (compuesto): Instala la correspondiente forma compuesta."
 
-#: ../../library/turtle.rst:2012
+#: ../Doc/library/turtle.rst:2012
 msgid ""
 "Add a turtle shape to TurtleScreen's shapelist.  Only thusly registered "
 "shapes can be used by issuing the command ``shape(shapename)``."
 msgstr ""
-"タートルの形を TurtleScreen の形リスト(shapelist)に加えます。このように登録さ"
-"れた形だけが ``shape(shapename)`` コマンドに使えます。"
+"Agregar una forma de tortuga a la lista  de formas de *TurtleScreen*. Solo "
+"las formas registradas de esta manera pueden ser usadas invocando el comando "
+"``shape(shapename)``."
 
-#: ../../library/turtle.rst:2018
+#: ../Doc/library/turtle.rst:2018
 msgid "Return the list of turtles on the screen."
-msgstr "スクリーン上のタートルのリストを返します。"
+msgstr "Devuelve la lista de tortugas en la pantalla."
 
-#: ../../library/turtle.rst:2029
+#: ../Doc/library/turtle.rst:2029
 msgid "Return the height of the turtle window. ::"
-msgstr "タートルウィンドウの高さを返します。 ::"
+msgstr "Devuelve la altura de la ventana de la tortuga. ::"
 
-#: ../../library/turtle.rst:2037
+#: ../Doc/library/turtle.rst:2037
 msgid "Return the width of the turtle window. ::"
-msgstr "タートルウィンドウの幅を返します。 ::"
+msgstr "Devuelve el ancho de la ventana de la tortuga. ::"
 
-#: ../../library/turtle.rst:2046
+#: ../Doc/library/turtle.rst:2046
 msgid "Methods specific to Screen, not inherited from TurtleScreen"
-msgstr "Screen 独自のメソッド、TurtleScreen から継承したもの以外"
+msgstr "Métodos específicos de *Screen*, no heredados de *TurtleScreen*"
 
-#: ../../library/turtle.rst:2050
+#: ../Doc/library/turtle.rst:2050
 msgid "Shut the turtlegraphics window."
-msgstr "タートルグラフィックス(turtlegraphics)のウィンドウを閉じます。"
+msgstr "Apaga la ventana gráfica de la tortuga."
 
-#: ../../library/turtle.rst:2055
+#: ../Doc/library/turtle.rst:2055
 msgid "Bind ``bye()`` method to mouse clicks on the Screen."
-msgstr "スクリーン上のマウスクリックに ``bye()`` メソッドを束縛します。"
+msgstr "Ata el método ``bye()`` al click del ratón sobre la pantalla."
 
-#: ../../library/turtle.rst:2058
+#: ../Doc/library/turtle.rst:2058
 msgid ""
 "If the value \"using_IDLE\" in the configuration dictionary is ``False`` "
 "(default value), also enter mainloop.  Remark: If IDLE with the ``-n`` "
@@ -2144,293 +2273,309 @@ msgid ""
 "file:`turtle.cfg`.  In this case IDLE's own mainloop is active also for the "
 "client script."
 msgstr ""
-"設定辞書中の \"using_IDLE\" の値が ``False`` (デフォルトです) の場合、さらに"
-"メインループ(mainloop)に入ります。注意: もし IDLE が ``-n`` スイッチ(サブプロ"
-"セスなし)付きで使われているときは、この値は :file:`turtle.cfg` の中で "
-"``True`` とされているべきです。この場合、IDLE のメインループもクライアントス"
-"クリプトから見てアクティブです。"
+"Si el valor *\"using_IDLE\"* en la configuración del diccionario es "
+"``False`` (valor por defecto), también ingresa *mainloop*. Observaciones: si "
+"se usa la *IDLE* con el modificador (no subproceso) ``-n``, este valor debe "
+"establecerse a ``True`` en :file:`turtle.cfg`. En este caso el propio "
+"*mainloop* de la *IDLE* está activa también para script cliente."
 
-#: ../../library/turtle.rst:2067
+#: ../Doc/library/turtle.rst:2067
 msgid ""
 "Set the size and position of the main window.  Default values of arguments "
 "are stored in the configuration dictionary and can be changed via a :file:"
 "`turtle.cfg` file."
 msgstr ""
-"メインウィンドウのサイズとポジションを設定します。引数のデフォルト値は設定辞"
-"書に収められており、 :file:`turtle.cfg` ファイルを通じて変更できます。"
+"Establece el tamaño y la posición de la ventana principal. Los valores por "
+"defecto de los argumentos son guardados en el diccionario de configuración y "
+"puede ser cambiado a través del archivo  :file:`turtle.cfg`."
 
-#: ../../library/turtle.rst:2071
+#: ../Doc/library/turtle.rst:2071
+#, python-format
 msgid ""
 "if an integer, a size in pixels, if a float, a fraction of the screen; "
 "default is 50% of screen"
 msgstr ""
-"整数ならばピクセル単位のサイズ、浮動小数点数ならばスクリーンに対する割合 (ス"
-"クリーンの 50% がデフォルト)"
+"si es un entero, el tamaño en pixeles, si es un número flotante, una "
+"fracción de la pantalla; el valor por defecto es 50% de la pantalla"
 
-#: ../../library/turtle.rst:2073
+#: ../Doc/library/turtle.rst:2073
+#, python-format
 msgid ""
 "if an integer, the height in pixels, if a float, a fraction of the screen; "
 "default is 75% of screen"
 msgstr ""
-"整数ならばピクセル単位の高さ、浮動小数点数ならばスクリーンに対する割合 (スク"
-"リーンの 75% がデフォルト)"
+"si es un entero, la altura en pixeles, si es un número flotante, una "
+"fracción de la pantalla; el valor por defecto es 75% de la pantalla"
 
-#: ../../library/turtle.rst:2075
+#: ../Doc/library/turtle.rst:2075
 msgid ""
 "if positive, starting position in pixels from the left edge of the screen, "
 "if negative from the right edge, if ``None``, center window horizontally"
 msgstr ""
-"正の数ならばスクリーンの左端からピクセル単位で測った開始位置、 負の数ならば右"
-"端から、``None`` ならば水平方向に真ん中"
+"si es positivo, punto de inicio en pixeles desde la esquina izquierda de la "
+"pantalla, si es negativo desde la esquina derecha de la pantalla, si es "
+"``None``, centra la ventana horizontalmente"
 
-#: ../../library/turtle.rst:2078
+#: ../Doc/library/turtle.rst:2078
 msgid ""
 "if positive, starting position in pixels from the top edge of the screen, if "
 "negative from the bottom edge, if ``None``, center window vertically"
 msgstr ""
-"正の数ならばスクリーンの上端からピクセル単位で測った開始位置、 負の数ならば下"
-"端から、``None`` ならば垂直方向に真ん中"
+"si es positivo, punto de inicio en pixeles desde la parte superior de la "
+"pantalla, si es negativo desde la parte inferior de la pantalla, si es "
+"``None``, centra la ventana verticalmente"
 
-#: ../../library/turtle.rst:2093
+#: ../Doc/library/turtle.rst:2093
 msgid "a string that is shown in the titlebar of the turtle graphics window"
-msgstr "タートルグラフィックスウィンドウのタイトルバーに表示される文字列"
-
-#: ../../library/turtle.rst:2096
-msgid "Set title of turtle window to *titlestring*."
-msgstr "ウインドウのタイトルを *titlestring* に設定します。"
-
-#: ../../library/turtle.rst:2105
-msgid "Public classes"
 msgstr ""
+"una cadena de caracteres que se muestra en la barra de título de la ventana "
+"gráfica de la tortuga"
 
-#: ../../library/turtle.rst:2111
+#: ../Doc/library/turtle.rst:2096
+msgid "Set title of turtle window to *titlestring*."
+msgstr "Establece el título de la ventana de la tortuga a *titlestring*."
+
+#: ../Doc/library/turtle.rst:2105
+msgid "Public classes"
+msgstr "Clases públicas"
+
+#: ../Doc/library/turtle.rst:2111
 msgid ""
 "a :class:`tkinter.Canvas`, a :class:`ScrolledCanvas` or a :class:"
 "`TurtleScreen`"
 msgstr ""
-":class:`tkinter.Canvas`, :class:`ScrolledCanvas`, :class:`TurtleScreen` のい"
-"ずれか"
+"una clase :class:`tkinter.Canvas`, una :class:`ScrolledCanvas` o una clase :"
+"class:`TurtleScreen`"
 
-#: ../../library/turtle.rst:2114
+#: ../Doc/library/turtle.rst:2114
 msgid ""
 "Create a turtle.  The turtle has all methods described above as \"methods of "
 "Turtle/RawTurtle\"."
 msgstr ""
-"タートルを作ります。タートルには上の「Turtle/RawTurtle のメソッド」で説明した"
-"全てのメソッドがあります。"
+"Crea una tortuga. La tortuga tiene todos los métodos descriptos "
+"anteriormente como \"métodos de *\"Turtle/RawTurtle\"*."
 
-#: ../../library/turtle.rst:2120
+#: ../Doc/library/turtle.rst:2120
 msgid ""
 "Subclass of RawTurtle, has the same interface but draws on a default :class:"
 "`Screen` object created automatically when needed for the first time."
 msgstr ""
-"RawTurtle のサブクラスで同じインターフェイスを持ちますが、最初に必要になった"
-"とき自動的に作られる :class:`Screen` オブジェクトに描画します。"
+"Subclase de *RawTurtle*, tiene la misma interface pero dibuja sobre una "
+"objeto por defecto :class:`Screen` creado automáticamente cuando es "
+"necesario por primera vez."
 
-#: ../../library/turtle.rst:2126
+#: ../Doc/library/turtle.rst:2126
 msgid "a :class:`tkinter.Canvas`"
-msgstr ":class:`tkinter.Canvas`"
+msgstr "un :class:`tkinter.Canvas`"
 
-#: ../../library/turtle.rst:2128
+#: ../Doc/library/turtle.rst:2128
 msgid ""
 "Provides screen oriented methods like :func:`setbg` etc. that are described "
 "above."
 msgstr ""
-"上で説明した :func:`setbg` のようなスクリーン向けのメソッドを提供します。"
+"Provee métodos orientados a la pantalla como :func:`setbg` etc. descriptos "
+"anteriormente."
 
-#: ../../library/turtle.rst:2133
+#: ../Doc/library/turtle.rst:2133
 msgid ""
 "Subclass of TurtleScreen, with :ref:`four methods added <screenspecific>`."
 msgstr ""
-"TurtleScreen のサブクラスで :ref:`4つのメソッドが加わっています "
-"<screenspecific>` 。"
+"Subclase de *TurtleScreen*, con :ref:`cuatro métodos agregados "
+"<screenspecific>`."
 
-#: ../../library/turtle.rst:2138
+#: ../Doc/library/turtle.rst:2138
 msgid ""
 "some Tkinter widget to contain the ScrolledCanvas, i.e. a Tkinter-canvas "
 "with scrollbars added"
 msgstr ""
-"この ScrolledCanvas すなわちスクロールバーの付いた Tkinter canvas を収める "
-"Tkinter ウィジェット"
+"algunos *widgets* *TKinter* para contener el *ScrollCanvas*, por ejemplo un "
+"lienzo *Tkinter* con barras de desplazamiento agregadas"
 
-#: ../../library/turtle.rst:2141
+#: ../Doc/library/turtle.rst:2141
 msgid ""
 "Used by class Screen, which thus automatically provides a ScrolledCanvas as "
 "playground for the turtles."
 msgstr ""
-"タートルたちが遊び回る場所として自動的に ScrolledCanvas を提供する Screen ク"
-"ラスによって使われます。"
+"Usado por la clase *Screen*, que proporciona automáticamente un "
+"*ScrolledCanvas* como espacio de trabajo para las tortugas."
 
-#: ../../library/turtle.rst:2146
+#: ../Doc/library/turtle.rst:2146
 msgid "one of the strings \"polygon\", \"image\", \"compound\""
-msgstr "文字列 \"polygon\", \"image\", \"compound\" のいずれか"
+msgstr ""
+"una de las cadenas de caracteres *\"polygon\"*, *\"image\"*, *\"compound\"*"
 
-#: ../../library/turtle.rst:2148
+#: ../Doc/library/turtle.rst:2148
 msgid ""
 "Data structure modeling shapes.  The pair ``(type_, data)`` must follow this "
 "specification:"
 msgstr ""
-"形をモデル化するデータ構造。ペア ``(type_, data)`` は以下の仕様に従わなければ"
-"なりません:"
+"Estructura de datos que modela las formas. El par ``(type_, data)`` debe "
+"seguir estas especificaciones:"
 
-#: ../../library/turtle.rst:2153
+#: ../Doc/library/turtle.rst:2153
 msgid "*type_*"
 msgstr "*type_*"
 
-#: ../../library/turtle.rst:2153
+#: ../Doc/library/turtle.rst:2153
 msgid "*data*"
 msgstr "*data*"
 
-#: ../../library/turtle.rst:2155
+#: ../Doc/library/turtle.rst:2155
 msgid "\"polygon\""
-msgstr "\"polygon\""
+msgstr "*\"polygon\"*"
 
-#: ../../library/turtle.rst:2155
+#: ../Doc/library/turtle.rst:2155
 msgid "a polygon-tuple, i.e. a tuple of pairs of coordinates"
-msgstr "多角形タプル、すなわち座標ペアのタプル"
+msgstr ""
+"una tupla para el polígono, por ejemplo: una tupla de par de coordenadas"
 
-#: ../../library/turtle.rst:2156
+#: ../Doc/library/turtle.rst:2156
 msgid "\"image\""
-msgstr "\"image\""
+msgstr "*\"image\"*"
 
-#: ../../library/turtle.rst:2156
+#: ../Doc/library/turtle.rst:2156
 msgid "an image  (in this form only used internally!)"
-msgstr "画像  (この形式は内部的にのみ使用されます!)"
+msgstr "una imagen (en esta forma solo se usa ¡internamente!)"
 
-#: ../../library/turtle.rst:2157
+#: ../Doc/library/turtle.rst:2157
 msgid "\"compound\""
-msgstr "\"compound\""
+msgstr "*\"compound\"*"
 
-#: ../../library/turtle.rst:2157
+#: ../Doc/library/turtle.rst:2157
 msgid ""
 "``None`` (a compound shape has to be constructed using the :meth:"
 "`addcomponent` method)"
 msgstr ""
-"``None`` (合成形は :meth:`addcomponent` メソッドを使って作らなければなりませ"
-"ん)"
+"``None`` (una forma compuesta tiene que ser construida usando el método :"
+"meth:`addcomponent`)"
 
-#: ../../library/turtle.rst:2163
+#: ../Doc/library/turtle.rst:2163
 msgid "a polygon, i.e. a tuple of pairs of numbers"
-msgstr "多角形、すなわち数のペアのタプル"
+msgstr "un polígono, por ejemplo una tupla de pares de números"
 
-#: ../../library/turtle.rst:2164
+#: ../Doc/library/turtle.rst:2164
 msgid "a color the *poly* will be filled with"
-msgstr "*poly* を塗りつぶす色"
+msgstr "un color con el que el polígono será llenado"
 
-#: ../../library/turtle.rst:2165
+#: ../Doc/library/turtle.rst:2165
 msgid "a color for the poly's outline (if given)"
-msgstr "*poly* のアウトラインの色 (与えられた場合)"
+msgstr "un color con el que se delineará el polígono (se de ingresa)"
 
-#: ../../library/turtle.rst:2167
+#: ../Doc/library/turtle.rst:2167
 msgid "Example:"
-msgstr "例:"
+msgstr "Ejemplo:"
 
-#: ../../library/turtle.rst:2177
+#: ../Doc/library/turtle.rst:2177
 msgid "See :ref:`compoundshapes`."
-msgstr ":ref:`compoundshapes` を参照。"
+msgstr "Ver :ref:`compoundshapes`."
 
-#: ../../library/turtle.rst:2182
+#: ../Doc/library/turtle.rst:2182
 msgid ""
 "A two-dimensional vector class, used as a helper class for implementing "
 "turtle graphics.  May be useful for turtle graphics programs too.  Derived "
 "from tuple, so a vector is a tuple!"
 msgstr ""
-"2次元ベクトルのクラスで、タートルグラフィックスを実装するための補助クラス。"
-"タートルグラフィックスを使ったプログラムでも有用でしょう。タプルから派生して"
-"いるので、ベクターはタプルです!"
+"Una clase de vectores bidimensionales, usado como clase de ayuda para "
+"implementar gráficos de tortuga. Puede ser útil para los programas de "
+"gráficos de tortugas también. Derivado de la tupla, ¡por lo que un vector es "
+"una tupla!"
 
-#: ../../library/turtle.rst:2186
+#: ../Doc/library/turtle.rst:2186
 msgid "Provides (for *a*, *b* vectors, *k* number):"
-msgstr "以下の演算が使えます (*a*, *b* はベクトル、 *k* は数):"
+msgstr "Proporciona (para *a*, *b* vectores, *k* números)"
 
-#: ../../library/turtle.rst:2188
+#: ../Doc/library/turtle.rst:2188
 msgid "``a + b`` vector addition"
-msgstr "``a + b`` ベクトル和"
+msgstr "``a + b`` suma de vectores"
 
-#: ../../library/turtle.rst:2189
+#: ../Doc/library/turtle.rst:2189
 msgid "``a - b`` vector subtraction"
-msgstr "``a - b`` ベクトル差"
+msgstr "``a - b`` resta de vectores"
 
-#: ../../library/turtle.rst:2190
+#: ../Doc/library/turtle.rst:2190
 msgid "``a * b`` inner product"
-msgstr "``a * b`` 内積"
+msgstr "``a * b`` producto interno"
 
-#: ../../library/turtle.rst:2191
+#: ../Doc/library/turtle.rst:2191
 msgid "``k * a`` and ``a * k`` multiplication with scalar"
-msgstr "``k * a`` および ``a * k`` スカラー倍"
+msgstr "``k * a`` y ``a * k`` multiplicación con escalar"
 
-#: ../../library/turtle.rst:2192
+#: ../Doc/library/turtle.rst:2192
 msgid "``abs(a)`` absolute value of a"
-msgstr "``abs(a)`` a の絶対値"
+msgstr "``abs(a)`` valor absoluto de a"
 
-#: ../../library/turtle.rst:2193
+#: ../Doc/library/turtle.rst:2193
 msgid "``a.rotate(angle)`` rotation"
-msgstr "``a.rotate(angle)`` 回転"
+msgstr "``a.rotate(angle)`` rotación"
 
-#: ../../library/turtle.rst:2197
+#: ../Doc/library/turtle.rst:2197
 msgid "Help and configuration"
-msgstr "ヘルプと設定"
+msgstr "Ayuda y configuración"
 
-#: ../../library/turtle.rst:2200
+#: ../Doc/library/turtle.rst:2200
 msgid "How to use help"
-msgstr "ヘルプの使い方"
+msgstr "Cómo usar la ayuda"
 
-#: ../../library/turtle.rst:2202
+#: ../Doc/library/turtle.rst:2202
 msgid ""
 "The public methods of the Screen and Turtle classes are documented "
 "extensively via docstrings.  So these can be used as online-help via the "
 "Python help facilities:"
 msgstr ""
-"Screen と Turtle クラスのパブリックメソッドはドキュメント文字列で網羅的に文書"
-"化されていますので、Python のヘルプ機能を通じてオンラインヘルプとして利用でき"
-"ます:"
+"Los métodos públicos de las clases Screen y Turtle están ampliamente "
+"documentados a través de cadenas de documentación. Por lo tanto, estos se "
+"pueden usar como ayuda en línea a través de las instalaciones de ayuda de "
+"Python:"
 
-#: ../../library/turtle.rst:2206
+#: ../Doc/library/turtle.rst:2206
 msgid ""
 "When using IDLE, tooltips show the signatures and first lines of the "
 "docstrings of typed in function-/method calls."
 msgstr ""
-"IDLE を使っているときは、打ち込んだ関数/メソッド呼び出しのシグニチャとドキュ"
-"メント文字列の一行目がツールチップとして表示されます。"
+"Cuando se usa IDLE, la información sobre herramientas muestra las firmas y "
+"las primeras líneas de las cadenas de documentos de las llamadas de función/"
+"método escritas."
 
-#: ../../library/turtle.rst:2209
+#: ../Doc/library/turtle.rst:2209
 msgid "Calling :func:`help` on methods or functions displays the docstrings::"
-msgstr ""
-":func:`help` をメソッドや関数に対して呼び出すとドキュメント文字列が表示されま"
-"す::"
+msgstr "Llamar a :func:`help` en métodos o funciones muestra los docstrings::"
 
-#: ../../library/turtle.rst:2240
+#: ../Doc/library/turtle.rst:2240
 msgid ""
 "The docstrings of the functions which are derived from methods have a "
 "modified form::"
-msgstr "メソッドに由来する関数のドキュメント文字列は変更された形をとります::"
+msgstr ""
+"Los docstrings de las funciones que se derivan de los métodos tienen una "
+"forma modificada::"
 
-#: ../../library/turtle.rst:2274
+#: ../Doc/library/turtle.rst:2274
 msgid ""
 "These modified docstrings are created automatically together with the "
 "function definitions that are derived from the methods at import time."
 msgstr ""
-"これらの変更されたドキュメント文字列はインポート時にメソッドから導出される関"
-"数定義と一緒に自動的に作られます。"
+"Estos docstrings modificados se crean automáticamente junto con las "
+"definiciones de función que se derivan de los métodos en el momento de la "
+"importación."
 
-#: ../../library/turtle.rst:2279
+#: ../Doc/library/turtle.rst:2279
 msgid "Translation of docstrings into different languages"
-msgstr "ドキュメント文字列の翻訳"
+msgstr "Traducción de cadenas de documentos a diferentes idiomas"
 
-#: ../../library/turtle.rst:2281
+#: ../Doc/library/turtle.rst:2281
 msgid ""
 "There is a utility to create a dictionary the keys of which are the method "
 "names and the values of which are the docstrings of the public methods of "
 "the classes Screen and Turtle."
 msgstr ""
-"Screen と Turtle クラスのパブリックメソッドについて、キーがメソッド名で値がド"
-"キュメント文字列である辞書を作るユーティリティがあります。"
+"Existe una utilidad para crear un diccionario cuyas claves son los nombres "
+"de los métodos y cuyos valores son los docstrings de los métodos públicos de "
+"las clases Screen y Turtle."
 
-#: ../../library/turtle.rst:2287
+#: ../Doc/library/turtle.rst:2287
 msgid "a string, used as filename"
-msgstr "ファイル名として使われる文字列"
+msgstr "una cadena de caracteres, utilizada como nombre de archivo"
 
-#: ../../library/turtle.rst:2289
+#: ../Doc/library/turtle.rst:2289
 msgid ""
 "Create and write docstring-dictionary to a Python script with the given "
 "filename.  This function has to be called explicitly (it is not used by the "
@@ -2438,54 +2583,55 @@ msgid ""
 "Python script :file:`{filename}.py`.  It is intended to serve as a template "
 "for translation of the docstrings into different languages."
 msgstr ""
-"ドキュメント文字列辞書(docstring-dictionary)を作って与えられたファイル名の "
-"Python スクリプトに書き込みます。この関数はわざわざ呼び出さなければなりませ"
-"ん (タートルグラフィックスのクラスから使われることはありません)。ドキュメント"
-"文字列辞書は :file:`{filename}.py` という Python スクリプトに書き込まれます。"
-"ドキュメント文字列の異なった言語への翻訳に対するテンプレートとして使われるこ"
-"とを意図したものです。"
+"Crea y escribe un diccionario-docstring en un script de Python con el nombre "
+"de archivo dado. Esta función tiene que ser llamada explícitamente (no es "
+"utilizada por las clases de gráficos de tortugas). El diccionario de "
+"docstrings se escribirá en el script de Python :file:`{filename}.py`. Está "
+"destinado a servir como plantilla para la traducción de las cadenas de "
+"documentos a diferentes idiomas."
 
-#: ../../library/turtle.rst:2295
+#: ../Doc/library/turtle.rst:2295
 msgid ""
 "If you (or your students) want to use :mod:`turtle` with online help in your "
 "native language, you have to translate the docstrings and save the resulting "
 "file as e.g. :file:`turtle_docstringdict_german.py`."
 msgstr ""
-"もしあなたが(またはあなたの生徒さんが) :mod:`turtle` を自国語のオンラインヘル"
-"プ付きで使いたいならば、ドキュメント文字列を翻訳してできあがったファイルをた"
-"とえば :file:`turtle_docstringdict_german.py` という名前で保存しなければなり"
-"ません。"
+"Si usted (o sus estudiantes) desea utilizar :mod:`turtle` con ayuda en línea "
+"en su idioma nativo, debe traducir los docstrings y guardar el archivo "
+"resultante como, por ejemplo, :file:`turtle_docstringdict_german.py`."
 
-#: ../../library/turtle.rst:2299
+#: ../Doc/library/turtle.rst:2299
 msgid ""
 "If you have an appropriate entry in your :file:`turtle.cfg` file this "
 "dictionary will be read in at import time and will replace the original "
 "English docstrings."
 msgstr ""
-"さらに :file:`turtle.cfg` ファイルで適切な設定をしておけば、このファイルがイ"
-"ンポート時に読み込まれて元の英語のドキュメント文字列を置き換えます。"
+"Si tiene una entrada adecuada en su archivo :file:`turtle.cfg`, este "
+"diccionario se leerá en el momento de la importación y reemplazará los "
+"docstrings originales en inglés."
 
-#: ../../library/turtle.rst:2302
+#: ../Doc/library/turtle.rst:2302
 msgid ""
 "At the time of this writing there are docstring dictionaries in German and "
 "in Italian.  (Requests please to glingl@aon.at.)"
 msgstr ""
-"この文書を書いている時点ではドイツ語とイタリア語のドキュメント文字列辞書が存"
-"在します。 ( glingl@aon.at にリクエストして下さい。)"
+"En el momento de escribir este artículo, existen diccionarios de docstrings "
+"en alemán e italiano. (Solicitudes por favor a glingl@aon.at.)"
 
-#: ../../library/turtle.rst:2308
+#: ../Doc/library/turtle.rst:2308
 msgid "How to configure Screen and Turtles"
-msgstr "Screen および Turtle の設定方法"
+msgstr "Cómo configurar Screen and Turtles"
 
-#: ../../library/turtle.rst:2310
+#: ../Doc/library/turtle.rst:2310
 msgid ""
 "The built-in default configuration mimics the appearance and behaviour of "
 "the old turtle module in order to retain best possible compatibility with it."
 msgstr ""
-"初期デフォルト設定では古い turtle の見た目と振る舞いを真似るようにして、互換"
-"性を最大限に保つようにしています。"
+"La configuración predeterminada incorporada imita la apariencia y el "
+"comportamiento del antiguo módulo de tortuga para mantener la mejor "
+"compatibilidad posible con él."
 
-#: ../../library/turtle.rst:2313
+#: ../Doc/library/turtle.rst:2313
 msgid ""
 "If you want to use a different configuration which better reflects the "
 "features of this module or which better fits to your needs, e.g. for use in "
@@ -2493,383 +2639,408 @@ msgid ""
 "be read at import time and modify the configuration according to its "
 "settings."
 msgstr ""
-"このモジュールの特性を反映した、あるいは個々人の必要性 (たとえばクラスルーム"
-"での使用)に合致した、異なった設定を使いたい場合、設定ファイル ``turtle.cfg`` "
-"を用意してインポート時に読み込ませその設定に従わせることができます。"
+"Si desea utilizar una configuración diferente que refleje mejor las "
+"características de este módulo o que se adapte mejor a sus necesidades, por "
+"ejemplo, para su uso en un aula, puede preparar un archivo de configuración "
+"``turtle.cfg`` que se leerá en el momento de la importación y modificará la "
+"configuración de acuerdo con su configuración."
 
-#: ../../library/turtle.rst:2318
+#: ../Doc/library/turtle.rst:2318
 msgid ""
 "The built in configuration would correspond to the following turtle.cfg::"
-msgstr "初期設定は以下の turtle.cfg に対応します::"
+msgstr "La configuración incorporada correspondería al siguiente turtle.cfg::"
 
-#: ../../library/turtle.rst:2341
+#: ../Doc/library/turtle.rst:2341
 msgid "Short explanation of selected entries:"
-msgstr "いくつかピックアップしたエントリーの短い説明:"
+msgstr "Breve explicación de las entradas seleccionadas:"
 
-#: ../../library/turtle.rst:2343
+#: ../Doc/library/turtle.rst:2343
 msgid ""
 "The first four lines correspond to the arguments of the :meth:`Screen.setup` "
 "method."
-msgstr "最初の4行は :meth:`Screen.setup` メソッドの引数に当たります。"
+msgstr ""
+"Las primeras cuatro líneas corresponden a los argumentos del método :meth:"
+"`Screen.setup`."
 
-#: ../../library/turtle.rst:2345
+#: ../Doc/library/turtle.rst:2345
 msgid ""
 "Line 5 and 6 correspond to the arguments of the method :meth:`Screen."
 "screensize`."
-msgstr "5行目6行目は :meth:`Screen.screensize` メソッドの引数に当たります。"
+msgstr ""
+"Las líneas 5 y 6 corresponden a los argumentos del método :meth:`Screen."
+"screensize`."
 
-#: ../../library/turtle.rst:2347
+#: ../Doc/library/turtle.rst:2347
 msgid ""
 "*shape* can be any of the built-in shapes, e.g: arrow, turtle, etc.  For "
 "more info try ``help(shape)``."
 msgstr ""
-"*shape* は最初から用意されている形ならどれでも使えます(arrow, turtle など)。"
-"詳しくは ``help(shape)`` をお試し下さい。"
+"*shape* puede ser cualquiera de las formas integradas, por ejemplo: arrow, "
+"turtle, etc. Para obtener más información, pruebe con ``help(shape)``."
 
-#: ../../library/turtle.rst:2349
+#: ../Doc/library/turtle.rst:2349
 msgid ""
 "If you want to use no fillcolor (i.e. make the turtle transparent), you have "
 "to write ``fillcolor = \"\"`` (but all nonempty strings must not have quotes "
 "in the cfg-file)."
 msgstr ""
-"塗りつぶしの色(fillcolor)を使いたくない(つまりタートルを透明にしたい)場合、 "
-"``fillcolor = \"\"`` と書かなければなりません (しかし全ての空でない文字列は "
-"cfg ファイル中で引用符を付けてはいけません)。"
+"Si no desea usar color de relleno (es decir, hacer que la tortuga sea "
+"transparente), debe escribir ``fillcolor = \"\"`` (pero todas las cadenas no "
+"vacías no deben tener comillas en el archivo cfg)."
 
-#: ../../library/turtle.rst:2352
+#: ../Doc/library/turtle.rst:2352
 msgid ""
 "If you want to reflect the turtle its state, you have to use ``resizemode = "
 "auto``."
 msgstr ""
-"タートルにその状態を反映させるためには ``resizemode = auto`` とします。"
+"Si desea reflejar el estado de la tortuga, debe usar ``resizemode = auto``."
 
-#: ../../library/turtle.rst:2354
+#: ../Doc/library/turtle.rst:2354
+#, fuzzy
 msgid ""
 "If you set e.g. ``language = italian`` the docstringdict :file:"
 "`turtle_docstringdict_italian.py` will be loaded at import time (if present "
 "on the import path, e.g. in the same directory as :mod:`turtle`)."
 msgstr ""
+"Si establece, por ejemplo, ``language = italian`` el docstringdict :file:"
+"`turtle_docstringdict_italian.py` se cargará en el momento de la importación "
+"(si está presente en la ruta de importación, por ejemplo, en el mismo "
+"directorio que :mod:`turtle`."
 
-#: ../../library/turtle.rst:2357
+#: ../Doc/library/turtle.rst:2357
 msgid ""
 "The entries *exampleturtle* and *examplescreen* define the names of these "
 "objects as they occur in the docstrings.  The transformation of method-"
 "docstrings to function-docstrings will delete these names from the "
 "docstrings."
 msgstr ""
-"*exampleturtle* および *examplescreen* はこれらのオブジェクトのドキュメント文"
-"字列内での呼び名を決めます。メソッドのドキュメント文字列から関数のドキュメン"
-"ト文字列に変換する際に、これらの名前は取り除かれます。"
+"Las entradas *exampleturtle* y *examplescreen* definen los nombres de estos "
+"objetos a medida que aparecen en las cadenas de documentos. La "
+"transformación de método-docstrings en función-docstrings eliminará estos "
+"nombres de las docstrings."
 
-#: ../../library/turtle.rst:2361
+#: ../Doc/library/turtle.rst:2361
+#, fuzzy
 msgid ""
 "*using_IDLE*: Set this to ``True`` if you regularly work with IDLE and its "
 "``-n`` switch (\"no subprocess\").  This will prevent :func:`exitonclick` to "
 "enter the mainloop."
 msgstr ""
+"*using_IDLE*: establezca esto en ``True`` si trabaja regularmente con IDLE y "
+"su interruptor -n (\"sin subproceso\"). Esto evitará que :func:`exitonclick` "
+"ingrese al bucle principal."
 
-#: ../../library/turtle.rst:2365
+#: ../Doc/library/turtle.rst:2365
 msgid ""
 "There can be a :file:`turtle.cfg` file in the directory where :mod:`turtle` "
 "is stored and an additional one in the current working directory.  The "
 "latter will override the settings of the first one."
 msgstr ""
-":file:`turtle.cfg` ファイルは :mod:`turtle` の保存されているディレクトリと現"
-"在の作業ディレクトリに追加的に存在し得ます。後者が前者の設定をオーバーライド"
-"します。"
+"Puede haber un archivo :file:`turtle.cfg` en el directorio donde se "
+"almacena :mod:`turtle` y uno adicional en el directorio de trabajo actual. "
+"Este último anulará la configuración del primero."
 
-#: ../../library/turtle.rst:2369
+#: ../Doc/library/turtle.rst:2369
 msgid ""
 "The :file:`Lib/turtledemo` directory contains a :file:`turtle.cfg` file.  "
 "You can study it as an example and see its effects when running the demos "
 "(preferably not from within the demo-viewer)."
 msgstr ""
-":file:`Lib/turtledemo` ディレクトリにも :file:`turtle.cfg` ファイルがありま"
-"す。 デモを実際に(できればデモビュワーからでなく)実行してそこに書かれたものと"
-"その効果を学びましょう。"
+"El directorio :file:`Lib/turtledemo` contiene un archivo :file:`turtle.cfg`. "
+"Puede estudiarlo como un ejemplo y ver sus efectos al ejecutar las "
+"demostraciones (preferiblemente no desde el visor de demostraciones)."
 
-#: ../../library/turtle.rst:2375
+#: ../Doc/library/turtle.rst:2375
 msgid ":mod:`turtledemo` --- Demo scripts"
-msgstr ":mod:`turtledemo` --- デモスクリプト"
+msgstr ":mod:`turtledemo` --- Scripts de demostración"
 
-#: ../../library/turtle.rst:2380
+#: ../Doc/library/turtle.rst:2380
 msgid ""
 "The :mod:`turtledemo` package includes a set of demo scripts.  These scripts "
 "can be run and viewed using the supplied demo viewer as follows::"
 msgstr ""
-"`turtledemo`パッケージには一連のデモスクリプトが含まれています。これらのスク"
-"リプトは以下のように、付属のデモビューアを使用して実行および表示できます::"
+"El paquete :mod:`turtledemo` incluye un conjunto de scripts de demostración. "
+"Estos scripts se pueden ejecutar y visualizar utilizando el visor de "
+"demostración suministrado de la siguiente manera::"
 
-#: ../../library/turtle.rst:2385
+#: ../Doc/library/turtle.rst:2385
 msgid ""
 "Alternatively, you can run the demo scripts individually.  For example, ::"
-msgstr "あるいは、個別にデモスクリプトを実行できます。たとえば 、::"
+msgstr ""
+"Alternativamente, puede ejecutar los scripts de demostración "
+"individualmente. Por ejemplo, ::"
 
-#: ../../library/turtle.rst:2389
+#: ../Doc/library/turtle.rst:2389
 msgid "The :mod:`turtledemo` package directory contains:"
-msgstr "`turtledemo`パッケージのディレクトリには次のものが含まれます:"
+msgstr "El directorio del paquete :mod:`turtledemo` contiene:"
 
-#: ../../library/turtle.rst:2391
+#: ../Doc/library/turtle.rst:2391
 msgid ""
 "A demo viewer :file:`__main__.py` which can be used to view the sourcecode "
 "of the scripts and run them at the same time."
 msgstr ""
-"ソースコードを眺めつつスクリプトを実行できるデモビュワー :file:`__main__."
-"py` 。 "
+"Un visor de demostración :file:`__main__.py` que se puede utilizar para ver "
+"el código fuente de los scripts y ejecutarlos al mismo tiempo."
 
-#: ../../library/turtle.rst:2393
+#: ../Doc/library/turtle.rst:2393
 msgid ""
 "Multiple scripts demonstrating different features of the :mod:`turtle` "
 "module.  Examples can be accessed via the Examples menu.  They can also be "
 "run standalone."
 msgstr ""
+"Múltiples scripts que demuestran diferentes características del módulo :mod:"
+"`turtle`. Se puede acceder a los ejemplos a través del menú de ejemplos. "
+"También se pueden ejecutar de forma independiente."
 
-#: ../../library/turtle.rst:2396
+#: ../Doc/library/turtle.rst:2396
 msgid ""
 "A :file:`turtle.cfg` file which serves as an example of how to write and use "
 "such files."
 msgstr ""
-"設定ファイルの書き方や使い方の例として参考にできる :file:`turtle.cfg` ファイ"
-"ル。"
+"Un archivo :file:`turtle.cfg` que sirve como ejemplo de cómo escribir y usar "
+"dichos archivos."
 
-#: ../../library/turtle.rst:2399
+#: ../Doc/library/turtle.rst:2399
 msgid "The demo scripts are:"
-msgstr "デモスクリプトは以下の通りです:"
+msgstr "Los scripts de demostración son:"
 
-#: ../../library/turtle.rst:2404
+#: ../Doc/library/turtle.rst:2404
 msgid "Name"
-msgstr "名前"
+msgstr "Nombre"
 
-#: ../../library/turtle.rst:2404
+#: ../Doc/library/turtle.rst:2404
 msgid "Description"
-msgstr "説明"
+msgstr "Descripción"
 
-#: ../../library/turtle.rst:2404
+#: ../Doc/library/turtle.rst:2404
 msgid "Features"
-msgstr "フィーチャー"
+msgstr "Características"
 
-#: ../../library/turtle.rst:2406
+#: ../Doc/library/turtle.rst:2406
 msgid "bytedesign"
 msgstr "bytedesign"
 
-#: ../../library/turtle.rst:2406
+#: ../Doc/library/turtle.rst:2406
 msgid "complex classical turtle graphics pattern"
-msgstr "複雑な古典的タートルグラフィックスパターン"
+msgstr "patrón de gráficos de tortuga clásica compleja"
 
-#: ../../library/turtle.rst:2406
+#: ../Doc/library/turtle.rst:2406
 msgid ":func:`tracer`, delay, :func:`update`"
-msgstr ":func:`tracer`, delay, :func:`update`"
+msgstr ":func:`tracer`, retrasar (*delay*), :func:`update`"
 
-#: ../../library/turtle.rst:2409
+#: ../Doc/library/turtle.rst:2409
 msgid "chaos"
-msgstr "chaos"
+msgstr "caos"
 
-#: ../../library/turtle.rst:2409
+#: ../Doc/library/turtle.rst:2409
 msgid ""
 "graphs Verhulst dynamics, shows that computer's computations can generate "
 "results sometimes against the common sense expectations"
 msgstr ""
-"verhust 力学系のグラフ化, コンピュータの計算が常識的な予想に反する場合がある"
-"ことを示します。"
+"gráficos dinámicos de Verhulst, muestra que los cálculos de la computadora "
+"pueden generar resultados a veces contra las expectativas del sentido común"
 
-#: ../../library/turtle.rst:2409
+#: ../Doc/library/turtle.rst:2409
 msgid "world coordinates"
-msgstr "世界座標系"
+msgstr "coordenadas mundiales"
 
-#: ../../library/turtle.rst:2415
+#: ../Doc/library/turtle.rst:2415
 msgid "clock"
-msgstr "clock"
+msgstr "reloj"
 
-#: ../../library/turtle.rst:2415
+#: ../Doc/library/turtle.rst:2415
 msgid "analog clock showing time of your computer"
-msgstr "コンピュータの時間を示すアナログ時計"
+msgstr "reloj analógico que muestra la hora de su computadora"
 
-#: ../../library/turtle.rst:2415
+#: ../Doc/library/turtle.rst:2415
 msgid "turtles as clock's hands, ontimer"
-msgstr "タートルが時計の針, ontimer"
+msgstr "tortugas como manecillas de reloj, temporizador"
 
-#: ../../library/turtle.rst:2418
+#: ../Doc/library/turtle.rst:2418
 msgid "colormixer"
 msgstr "colormixer"
 
-#: ../../library/turtle.rst:2418
+#: ../Doc/library/turtle.rst:2418
 msgid "experiment with r, g, b"
-msgstr "r, g, b の実験"
+msgstr "experimento con r, g, b"
 
-#: ../../library/turtle.rst:2420
+#: ../Doc/library/turtle.rst:2420
 msgid "forest"
-msgstr ""
+msgstr "bosque"
 
-#: ../../library/turtle.rst:2420
+#: ../Doc/library/turtle.rst:2420
 msgid "3 breadth-first trees"
-msgstr ""
+msgstr "3 árboles de ancho primero"
 
-#: ../../library/turtle.rst:2420
+#: ../Doc/library/turtle.rst:2420
 msgid "randomization"
-msgstr ""
+msgstr "aleatorización"
 
-#: ../../library/turtle.rst:2422
+#: ../Doc/library/turtle.rst:2422
 msgid "fractalcurves"
 msgstr "fractalcurves"
 
-#: ../../library/turtle.rst:2422
+#: ../Doc/library/turtle.rst:2422
 msgid "Hilbert & Koch curves"
-msgstr "Hilbert & Koch 曲線"
+msgstr "Curvas Hilbert & Koch"
 
-#: ../../library/turtle.rst:2422
+#: ../Doc/library/turtle.rst:2422
 msgid "recursion"
-msgstr "再帰"
+msgstr "recursión"
 
-#: ../../library/turtle.rst:2424
+#: ../Doc/library/turtle.rst:2424
 msgid "lindenmayer"
 msgstr "lindenmayer"
 
-#: ../../library/turtle.rst:2424
+#: ../Doc/library/turtle.rst:2424
 msgid "ethnomathematics (indian kolams)"
-msgstr "民俗的数学 (インド kolams)"
+msgstr "etnomatemáticas (kolams indios)"
 
-#: ../../library/turtle.rst:2424
+#: ../Doc/library/turtle.rst:2424
 msgid "L-System"
-msgstr "L-システム"
+msgstr "Sistema-L"
 
-#: ../../library/turtle.rst:2427
+#: ../Doc/library/turtle.rst:2427
 msgid "minimal_hanoi"
 msgstr "minimal_hanoi"
 
-#: ../../library/turtle.rst:2427
+#: ../Doc/library/turtle.rst:2427
 msgid "Towers of Hanoi"
-msgstr "ハノイの塔"
+msgstr "Torres de Hanoi"
 
-#: ../../library/turtle.rst:2427
+#: ../Doc/library/turtle.rst:2427
 msgid "Rectangular Turtles as Hanoi discs (shape, shapesize)"
-msgstr "ハノイ盤として正方形のタートル (shape, shapesize)"
+msgstr "Tortugas rectangulares como discos de Hanoi (shape, tamaño de forma)"
 
-#: ../../library/turtle.rst:2431
+#: ../Doc/library/turtle.rst:2431
 msgid "nim"
-msgstr ""
+msgstr "nim"
 
-#: ../../library/turtle.rst:2431
+#: ../Doc/library/turtle.rst:2431
 msgid ""
 "play the classical nim game with three heaps of sticks against the computer."
 msgstr ""
+"juega el clásico juego de nim con tres montones de palos contra la "
+"computadora."
 
-#: ../../library/turtle.rst:2431
+#: ../Doc/library/turtle.rst:2431
 msgid "turtles as nimsticks, event driven (mouse, keyboard)"
-msgstr ""
+msgstr "tortugas como nimsticks, impulsado por eventos (mouse, teclado)"
 
-#: ../../library/turtle.rst:2435
+#: ../Doc/library/turtle.rst:2435
 msgid "paint"
-msgstr "paint"
+msgstr "pintar"
 
-#: ../../library/turtle.rst:2435
+#: ../Doc/library/turtle.rst:2435
 msgid "super minimalistic drawing program"
-msgstr "超極小主義的描画プログラム"
+msgstr "programa de dibujo super minimalista"
 
-#: ../../library/turtle.rst:2438
+#: ../Doc/library/turtle.rst:2438
 msgid "peace"
-msgstr "peace"
+msgstr "paz"
 
-#: ../../library/turtle.rst:2438
+#: ../Doc/library/turtle.rst:2438
 msgid "elementary"
-msgstr "初歩的"
+msgstr "elemental"
 
-#: ../../library/turtle.rst:2438
+#: ../Doc/library/turtle.rst:2438
 msgid "turtle: appearance and animation"
-msgstr "turtle: 見た目とアニメーション"
+msgstr "turtle: apariencia y animación"
 
-#: ../../library/turtle.rst:2441
+#: ../Doc/library/turtle.rst:2441
 msgid "penrose"
 msgstr "penrose"
 
-#: ../../library/turtle.rst:2441
+#: ../Doc/library/turtle.rst:2441
 msgid "aperiodic tiling with kites and darts"
-msgstr "凧と矢による非周期的タイリング"
+msgstr "embaldosado aperiódico con cometas y dardos"
 
-#: ../../library/turtle.rst:2444
+#: ../Doc/library/turtle.rst:2444
 msgid "planet_and_moon"
 msgstr "planet_and_moon"
 
-#: ../../library/turtle.rst:2444
+#: ../Doc/library/turtle.rst:2444
 msgid "simulation of gravitational system"
-msgstr "重力系のシミュレーション"
+msgstr "simulación de sistema gravitacional"
 
-#: ../../library/turtle.rst:2444
+#: ../Doc/library/turtle.rst:2444
 msgid "compound shapes, :class:`Vec2D`"
-msgstr "合成形, :class:`Vec2D`"
+msgstr "formas compuestas, :class:`Vec2D`"
 
-#: ../../library/turtle.rst:2447
-msgid "rosette"
-msgstr ""
+#: ../Doc/library/turtle.rst:2447
+msgid "round_dance"
+msgstr "round_dance"
 
-#: ../../library/turtle.rst:2447
+#: ../Doc/library/turtle.rst:2447
+msgid "dancing turtles rotating pairwise in opposite direction"
+msgstr "tortugas bailarinas que giran por parejas en dirección opuesta"
+
+#: ../Doc/library/turtle.rst:2447
+msgid "compound shapes, clone shapesize, tilt, get_shapepoly, update"
+msgstr "formas compuestas, clonar tamaño de forma, tilt, get_shapepoly, update"
+
+#: ../Doc/library/turtle.rst:2451
+msgid "sorting_animate"
+msgstr "sorting_animate"
+
+#: ../Doc/library/turtle.rst:2451
+msgid "visual demonstration of different sorting methods"
+msgstr "demostración visual de diferentes métodos de ordenamiento"
+
+#: ../Doc/library/turtle.rst:2451
+msgid "simple alignment, randomization"
+msgstr "alineación simple, aleatorización"
+
+#: ../Doc/library/turtle.rst:2454
+msgid "tree"
+msgstr "árbol"
+
+#: ../Doc/library/turtle.rst:2454
+msgid "a (graphical) breadth first tree (using generators)"
+msgstr "un primer árbol de amplitud (gráfico, usando generadores)"
+
+#: ../Doc/library/turtle.rst:2457
+msgid "two_canvases"
+msgstr "two_canvases"
+
+#: ../Doc/library/turtle.rst:2457
+msgid "simple design"
+msgstr "diseño simple"
+
+#: ../Doc/library/turtle.rst:2457
+msgid "turtles on two canvases"
+msgstr "tortugas en dos lienzos (*two_canvases*)"
+
+#: ../Doc/library/turtle.rst:2460
+msgid "wikipedia"
+msgstr "wikipedia"
+
+#: ../Doc/library/turtle.rst:2460
 msgid "a pattern from the wikipedia article on turtle graphics"
-msgstr "タートルグラフィックスについての wikipedia の記事の例"
+msgstr ""
+"un patrón del artículo de wikipedia sobre gráficos de tortuga (*turtle*)"
 
-#: ../../library/turtle.rst:2447
+#: ../Doc/library/turtle.rst:2460
 msgid ":func:`clone`, :func:`undo`"
 msgstr ":func:`clone`, :func:`undo`"
 
-#: ../../library/turtle.rst:2450
-msgid "round_dance"
-msgstr ""
-
-#: ../../library/turtle.rst:2450
-msgid "dancing turtles rotating pairwise in opposite direction"
-msgstr ""
-
-#: ../../library/turtle.rst:2450
-msgid "compound shapes, clone shapesize, tilt, get_shapepoly, update"
-msgstr ""
-
-#: ../../library/turtle.rst:2454
-msgid "sorting_animate"
-msgstr ""
-
-#: ../../library/turtle.rst:2454
-msgid "visual demonstration of different sorting methods"
-msgstr ""
-
-#: ../../library/turtle.rst:2454
-msgid "simple alignment, randomization"
-msgstr ""
-
-#: ../../library/turtle.rst:2457
-msgid "tree"
-msgstr "tree"
-
-#: ../../library/turtle.rst:2457
-msgid "a (graphical) breadth first tree (using generators)"
-msgstr "(図形的) 幅優先木 (ジェネレータを使って)"
-
-#: ../../library/turtle.rst:2460
-msgid "two_canvases"
-msgstr ""
-
-#: ../../library/turtle.rst:2460
-msgid "simple design"
-msgstr ""
-
-#: ../../library/turtle.rst:2460
-msgid "turtles on two canvases"
-msgstr ""
-
-#: ../../library/turtle.rst:2463
+#: ../Doc/library/turtle.rst:2463
 msgid "yinyang"
-msgstr ""
+msgstr "yinyang"
 
-#: ../../library/turtle.rst:2463
+#: ../Doc/library/turtle.rst:2463
 msgid "another elementary example"
-msgstr "もう一つの初歩的な例"
+msgstr "otro ejemplo elemental"
 
-#: ../../library/turtle.rst:2466
+#: ../Doc/library/turtle.rst:2466
 msgid "Have fun!"
-msgstr "楽しんでね!"
+msgstr "¡Diviértete!"
 
-#: ../../library/turtle.rst:2470
+#: ../Doc/library/turtle.rst:2470
 msgid "Changes since Python 2.6"
-msgstr "python 2.6からの変更点"
+msgstr "Cambios desde Python 2.6"
 
-#: ../../library/turtle.rst:2472
+#: ../Doc/library/turtle.rst:2472
 msgid ""
 "The methods :meth:`Turtle.tracer`, :meth:`Turtle.window_width` and :meth:"
 "`Turtle.window_height` have been eliminated. Methods with these names and "
@@ -2878,26 +3049,39 @@ msgid ""
 "2.6 these methods were merely duplications of the corresponding :class:"
 "`TurtleScreen`/:class:`Screen`-methods.)"
 msgstr ""
+"Los métodos :meth:`Turtle.tracer`, :meth:`Turtle.window_width` y :meth:"
+"`Turtle.window_height` han sido eliminados. Los métodos con estos nombres y "
+"funciones ahora están disponibles solo como métodos de :class:`Screen`. Las "
+"funciones derivadas de estos permanecen disponibles. (De hecho, ya en Python "
+"2.6 estos métodos eran simplemente duplicaciones de los métodos "
+"correspondientes :class:`TurtleScreen`/:class:`Screen`)."
 
-#: ../../library/turtle.rst:2480
+#: ../Doc/library/turtle.rst:2480
 msgid ""
 "The method :meth:`Turtle.fill` has been eliminated. The behaviour of :meth:"
 "`begin_fill` and :meth:`end_fill` have changed slightly: now  every filling-"
 "process must be completed with an ``end_fill()`` call."
 msgstr ""
+"El método :meth:`Turtle.fill` ha sido eliminado. El comportamiento de :meth:"
+"`begin_fill` y :meth:`end_fill` ha cambiado ligeramente: ahora cada proceso "
+"de llenado debe completarse con una llamada ``end_fill()``."
 
-#: ../../library/turtle.rst:2485
+#: ../Doc/library/turtle.rst:2485
 msgid ""
 "A method :meth:`Turtle.filling` has been added. It returns a boolean value: "
 "``True`` if a filling process is under way, ``False`` otherwise. This "
 "behaviour corresponds to a ``fill()`` call without arguments in Python 2.6."
 msgstr ""
+"Se ha añadido un método :meth:`Turtle.filling`. Retorna un valor booleano: "
+"``True`` si hay un proceso de llenado en curso, ``False`` en caso contrario. "
+"Este comportamiento corresponde a una llamada ``fill()`` sin argumentos en "
+"Python 2.6."
 
-#: ../../library/turtle.rst:2491
+#: ../Doc/library/turtle.rst:2491
 msgid "Changes since Python 3.0"
-msgstr "python 3.0からの変更点"
+msgstr "Cambios desde Python 3.0"
 
-#: ../../library/turtle.rst:2493
+#: ../Doc/library/turtle.rst:2493
 msgid ""
 "The methods :meth:`Turtle.shearfactor`, :meth:`Turtle.shapetransform` and :"
 "meth:`Turtle.get_shapepoly` have been added. Thus the full range of regular "
@@ -2905,30 +3089,47 @@ msgid ""
 "`Turtle.tiltangle` has been enhanced in functionality: it now can be used to "
 "get or set the tiltangle. :meth:`Turtle.settiltangle` has been deprecated."
 msgstr ""
+"Se han añadido los métodos :meth:`Turtle.shearfactor`, :meth:`Turtle."
+"shapetransform` y :meth:`Turtle.get_shapepoly`. Por lo tanto, ahora está "
+"disponible la gama completa de transformaciones lineales regulares para "
+"transformar formas de tortugas. :meth:`Turtle.tiltangle` se ha mejorado en "
+"funcionalidad: ahora se puede usar para obtener o establecer el tiltangle. :"
+"meth:`Turtle.settiltangle` ha quedado obsoleto."
 
-#: ../../library/turtle.rst:2500
+#: ../Doc/library/turtle.rst:2500
 msgid ""
 "The method :meth:`Screen.onkeypress` has been added as a complement to :meth:"
 "`Screen.onkey` which in fact binds actions to the keyrelease event. "
 "Accordingly the latter has got an alias: :meth:`Screen.onkeyrelease`."
 msgstr ""
+"El método :meth:`Screen.onkeypress` se ha agregado como complemento a :meth:"
+"`Screen.onkey` que, de hecho, une las acciones al evento keyrelease. En "
+"consecuencia, este último tiene un alias: :meth:`Screen.onkeyrelease`."
 
-#: ../../library/turtle.rst:2504
+#: ../Doc/library/turtle.rst:2504
 msgid ""
 "The method  :meth:`Screen.mainloop` has been added. So when working only "
 "with Screen and Turtle objects one must not additionally import :func:"
 "`mainloop` anymore."
 msgstr ""
+"Se ha añadido el método :meth:`Screen.mainloop`. Entonces, cuando se trabaja "
+"solo con objetos Screen y Turtle, ya no se debe importar adicionalmente :"
+"func:`mainloop`."
 
-#: ../../library/turtle.rst:2508
+#: ../Doc/library/turtle.rst:2508
 msgid ""
 "Two input methods has been added :meth:`Screen.textinput` and :meth:`Screen."
 "numinput`. These popup input dialogs and return strings and numbers "
 "respectively."
 msgstr ""
+"Se han añadido dos métodos de entrada :meth:`Screen.textinput` y :meth:"
+"`Screen.numinput`. Estos cuadros de diálogo de entrada emergentes y retornan "
+"cadenas y números respectivamente."
 
-#: ../../library/turtle.rst:2512
+#: ../Doc/library/turtle.rst:2512
 msgid ""
 "Two example scripts :file:`tdemo_nim.py` and :file:`tdemo_round_dance.py` "
 "have been added to the :file:`Lib/turtledemo` directory."
 msgstr ""
+"Se han agregado dos scripts de ejemplo :file:`tdemo_nim.py` y :file:"
+"`tdemo_round_dance.py` al directorio :file:`Lib/turtledemo`."

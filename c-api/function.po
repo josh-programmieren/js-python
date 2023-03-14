@@ -1,153 +1,168 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 00:48+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-12-09 10:29+0800\n"
+"Last-Translator: Rodrigo Tobar <rtobarc@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../c-api/function.rst:6
+#: ../Doc/c-api/function.rst:6
 msgid "Function Objects"
-msgstr "Function オブジェクト"
+msgstr "Objetos función"
 
-#: ../../c-api/function.rst:10
+#: ../Doc/c-api/function.rst:10
 msgid "There are a few functions specific to Python functions."
-msgstr "Functionオブジェクト固有の関数はわずかです。"
+msgstr "Hay algunas funciones específicas para las funciones de Python."
 
-#: ../../c-api/function.rst:15
+#: ../Doc/c-api/function.rst:15
 msgid "The C structure used for functions."
-msgstr "関数に使われるCの構造体。"
+msgstr "La estructura C utilizada para las funciones."
 
-#: ../../c-api/function.rst:22
+#: ../Doc/c-api/function.rst:22
 msgid ""
 "This is an instance of :c:type:`PyTypeObject` and represents the Python "
 "function type.  It is exposed to Python programmers as ``types."
 "FunctionType``."
 msgstr ""
-":c:type:`PyTypeObject` 型のインスタンスで、 Python の関数型を表します。これ"
-"は Python プログラムに ``types.FunctionType`` として公開されています。"
+"Esta es una instancia de :c:type:`PyTypeObject` y representa el tipo función "
+"de Python. Está expuesto a los programadores de Python como ``types."
+"FunctionType``."
 
-#: ../../c-api/function.rst:28
+#: ../Doc/c-api/function.rst:28
 msgid ""
 "Return true if *o* is a function object (has type :c:data:"
 "`PyFunction_Type`). The parameter must not be ``NULL``.  This function "
 "always succeeds."
 msgstr ""
-"*o* が関数オブジェクト (:c:data:`PyFunction_Type` 型である) 場合に真を返しま"
-"す。パラメータは ``NULL`` にできません。この関数は常に成功します。"
+"Retorna verdadero si *o* es un objeto función (tiene tipo :c:data:"
+"`PyFunction_Type`). El parámetro no debe ser ``NULL``. Esta función siempre "
+"finaliza con éxito."
 
-#: ../../c-api/function.rst:34
+#: ../Doc/c-api/function.rst:34
 msgid ""
 "Return a new function object associated with the code object *code*. "
 "*globals* must be a dictionary with the global variables accessible to the "
 "function."
 msgstr ""
-"コードオブジェクト *code* に関連付けられた新しい関数オブジェクトを返します。"
-"*globals* はこの関数からアクセスできるグローバル変数の辞書でなければなりませ"
-"ん。"
+"Retorna un nuevo objeto función asociado con el objeto código *code*. "
+"*globals* debe ser un diccionario con las variables globales accesibles para "
+"la función."
 
-#: ../../c-api/function.rst:37
+#: ../Doc/c-api/function.rst:37
+#, fuzzy
 msgid ""
 "The function's docstring and name are retrieved from the code object. "
 "*__module__* is retrieved from *globals*. The argument defaults, annotations "
 "and closure are set to ``NULL``. *__qualname__* is set to the same value as "
 "the code object's ``co_qualname`` field."
 msgstr ""
+"El docstring y el nombre de la función se obtiene del objeto código. "
+"*__module__* se obtiene de *globals *. El argumento *defaults*, "
+"*annotations* y *closure* se establecen en ``NULL``. *__qualname__* se "
+"establece en el mismo valor que el nombre de la función."
 
-#: ../../c-api/function.rst:45
+#: ../Doc/c-api/function.rst:45
+#, fuzzy
 msgid ""
 "As :c:func:`PyFunction_New`, but also allows setting the function object's "
 "``__qualname__`` attribute.  *qualname* should be a unicode object or "
 "``NULL``; if ``NULL``, the ``__qualname__`` attribute is set to the same "
 "value as the code object's ``co_qualname`` field."
 msgstr ""
+"Como :c:func:`PyFunction_New`, pero también permite configurar el atributo "
+"``__qualname__`` del objeto función. *qualname* debe ser un objeto unicode o "
+"``NULL``; si es ``NULL``, el atributo ``__qualname__`` se establece en el "
+"mismo valor que su atributo ``__name__``."
 
-#: ../../c-api/function.rst:55
+#: ../Doc/c-api/function.rst:55
 msgid "Return the code object associated with the function object *op*."
-msgstr "関数オブジェクト *op* に関連付けられたコードオブジェクトを返します。"
+msgstr "Retorna el objeto código asociado con el objeto función *op*."
 
-#: ../../c-api/function.rst:60
+#: ../Doc/c-api/function.rst:60
 msgid "Return the globals dictionary associated with the function object *op*."
-msgstr "関数オブジェクト *op* に関連付けられたglobals辞書を返します。"
+msgstr "Retorna el diccionario global asociado con el objeto función *op*."
 
-#: ../../c-api/function.rst:65
+#: ../Doc/c-api/function.rst:65
 msgid ""
 "Return a :term:`borrowed reference` to the *__module__* attribute of the "
 "function object *op*. It can be *NULL*."
 msgstr ""
+"Retorna una referencia tomada (:term:`borrowed reference`) al atributo "
+"*__module__* del objeto función *op*. Puede ser *NULL*."
 
-#: ../../c-api/function.rst:68
+#: ../Doc/c-api/function.rst:68
 msgid ""
 "This is normally a string containing the module name, but can be set to any "
 "other object by Python code."
 msgstr ""
+"Éste es normalmente una cadena de caracteres que contiene el nombre del "
+"módulo, pero se puede establecer en cualquier otro objeto mediante código "
+"Python."
 
-#: ../../c-api/function.rst:74
+#: ../Doc/c-api/function.rst:74
 msgid ""
 "Return the argument default values of the function object *op*. This can be "
 "a tuple of arguments or ``NULL``."
 msgstr ""
-"関数オブジェクト *op* の引数のデフォルト値を返します。\n"
-"引数のタプルか ``NULL`` になります。"
+"Retorna los valores predeterminados del argumento del objeto función *op*. "
+"Esto puede ser una tupla de argumentos o ``NULL``."
 
-#: ../../c-api/function.rst:80
+#: ../Doc/c-api/function.rst:80
 msgid ""
 "Set the argument default values for the function object *op*. *defaults* "
 "must be ``Py_None`` or a tuple."
 msgstr ""
-"関数オブジェクト *op* の引数のデフォルト値を設定します。\n"
-"*defaults* は ``Py_None`` かタプルでなければいけません。"
+"Establece los valores predeterminados del argumento para el objeto función "
+"*op*. *defaults* deben ser ``Py_None`` o una tupla."
 
-#: ../../c-api/function.rst:83 ../../c-api/function.rst:97
-#: ../../c-api/function.rst:111
+#: ../Doc/c-api/function.rst:83 ../Doc/c-api/function.rst:97
+#: ../Doc/c-api/function.rst:111
 msgid "Raises :exc:`SystemError` and returns ``-1`` on failure."
-msgstr "失敗した時は、 :exc:`SystemError` を発生させ、 ``-1`` を返します。"
+msgstr "Lanza :exc:`SystemError` y retorna ``-1`` en caso de error."
 
-#: ../../c-api/function.rst:88
+#: ../Doc/c-api/function.rst:88
 msgid ""
 "Return the closure associated with the function object *op*. This can be "
 "``NULL`` or a tuple of cell objects."
 msgstr ""
-"関数オブジェクト *op* に設定されたクロージャを返します。\n"
-"``NULL`` か cell オブジェクトのタプルです。"
+"Retorna el cierre asociado con el objeto función *op*. Esto puede ser "
+"``NULL`` o una tupla de objetos celda."
 
-#: ../../c-api/function.rst:94
+#: ../Doc/c-api/function.rst:94
 msgid ""
 "Set the closure associated with the function object *op*. *closure* must be "
 "``Py_None`` or a tuple of cell objects."
 msgstr ""
-"関数オブジェクト *op* にクロージャを設定します。\n"
-"*closure* は、``Py_None`` もしくは cell オブジェクトのタプルでなければなりま"
-"せん。"
+"Establece el cierre asociado con el objeto función *op*. *cierre* debe ser "
+"``Py_None`` o una tupla de objetos celda."
 
-#: ../../c-api/function.rst:102
+#: ../Doc/c-api/function.rst:102
 msgid ""
 "Return the annotations of the function object *op*. This can be a mutable "
 "dictionary or ``NULL``."
 msgstr ""
-"関数オブジェクト *op* のアノテーションを返します。\n"
-"返り値は修正可能な辞書か ``NULL`` になります。"
+"Retorna las anotaciones del objeto función *op*. Este puede ser un "
+"diccionario mutable o ``NULL``."
 
-#: ../../c-api/function.rst:108
+#: ../Doc/c-api/function.rst:108
 msgid ""
 "Set the annotations for the function object *op*. *annotations* must be a "
 "dictionary or ``Py_None``."
 msgstr ""
-"関数オブジェクト *op* のアノテーションを設定します。\n"
-"*annotations* は辞書か、``Py_None`` でなければなりません。"
+"Establece las anotaciones para el objeto función *op*. *annotations* debe "
+"ser un diccionario o ``Py_None``."

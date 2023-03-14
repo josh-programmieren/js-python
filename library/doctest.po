@@ -1,103 +1,101 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# Osamu NAKAMURA, 2021
-# tomo, 2021
-# Yusuke Miyazaki <miyazaki.dev@gmail.com>, 2021
-# Takanori Suzuki <takanori@takanory.net>, 2023
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:04+0000\n"
-"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-10-30 17:13-0300\n"
+"Last-Translator: Alfonso Areiza Guerra <alfareiza@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.2.1\n"
 
-#: ../../library/doctest.rst:2
+#: ../Doc/library/doctest.rst:2
 msgid ":mod:`doctest` --- Test interactive Python examples"
-msgstr ":mod:`doctest` --- 対話的な実行例をテストする"
+msgstr ":mod:`doctest` -- Prueba ejemplos interactivos de Python"
 
-#: ../../library/doctest.rst:12
+#: ../Doc/library/doctest.rst:12
 msgid "**Source code:** :source:`Lib/doctest.py`"
-msgstr "**ソースコード:** :source:`Lib/doctest.py`"
+msgstr "**Código fuente:** :source:`Lib/doctest.py`"
 
-#: ../../library/doctest.rst:16
+#: ../Doc/library/doctest.rst:16
 msgid ""
 "The :mod:`doctest` module searches for pieces of text that look like "
 "interactive Python sessions, and then executes those sessions to verify that "
 "they work exactly as shown.  There are several common ways to use doctest:"
 msgstr ""
-":mod:`doctest` モジュールは、対話的 Python セッションのように見えるテキストを"
-"探し出し、セッションの内容を実行して、そこに書かれている通りに振舞うかを調べ"
-"ます。 :mod:`doctest` は以下のような用途によく使われています:"
+"El módulo :mod:`doctest` busca pedazos de texto que lucen como sesiones "
+"interactivas de Python, y entonces ejecuta esas sesiones para verificar que "
+"funcionen exactamente como son mostradas. Hay varias maneras de usar doctest:"
 
-#: ../../library/doctest.rst:20
+#: ../Doc/library/doctest.rst:20
 msgid ""
 "To check that a module's docstrings are up-to-date by verifying that all "
 "interactive examples still work as documented."
 msgstr ""
-"モジュールの docstring (ドキュメンテーション文字列) 中にある対話実行例のすべ"
-"てが書かれている通りに動作するか検証することで、docstring の内容が最新かどう"
-"かチェックする。"
+"Para revisar que los docstrings de un módulo están al día al verificar que "
+"todos los ejemplos interactivos todavía trabajan como está documentado."
 
-#: ../../library/doctest.rst:23
+#: ../Doc/library/doctest.rst:23
 msgid ""
 "To perform regression testing by verifying that interactive examples from a "
 "test file or a test object work as expected."
 msgstr ""
-"テストファイルやテストオブジェクト中の対話実行例が期待通りに動作するかを検証"
-"することで、回帰テストを実現します。"
+"Para realizar pruebas de regresión al verificar que los ejemplos "
+"interactivos de un archivo de pruebas o un objeto de pruebas trabaje como "
+"sea esperado."
 
-#: ../../library/doctest.rst:26
+#: ../Doc/library/doctest.rst:26
 msgid ""
 "To write tutorial documentation for a package, liberally illustrated with "
 "input-output examples.  Depending on whether the examples or the expository "
 "text are emphasized, this has the flavor of \"literate testing\" or "
 "\"executable documentation\"."
 msgstr ""
-"入出力例を豊富に使ったパッケージのチュートリアルドキュメントが書けます。入出"
-"力例と解説文のどちらに注目するかによって、ドキュメントは「読めるテスト」にも"
-"「実行できるドキュメント」にもなります。"
+"Para escribir documentación de tutorial para un paquete, generosamente "
+"ilustrado con ejemplos de entrada-salida. Dependiendo si los ejemplos o el "
+"texto expositivo son enfatizados, tiene el sabor de \"pruebas literarias\" o "
+"\"documentación ejecutable\"."
 
-#: ../../library/doctest.rst:31
+#: ../Doc/library/doctest.rst:31
 msgid "Here's a complete but small example module::"
-msgstr "以下に完全かつ短い実行例を示します::"
+msgstr "Aquí hay un módulo de ejemplo completo pero pequeño::"
 
-#: ../../library/doctest.rst:88
+#: ../Doc/library/doctest.rst:88
 msgid ""
 "If you run :file:`example.py` directly from the command line, :mod:`doctest` "
 "works its magic:"
 msgstr ""
-":file:`example.py` をコマンドラインから直接実行すると、 :mod:`doctest` はその"
-"魔法を働かせます:"
+"Si ejecutas :file:`example.py` directamente desde la línea de comandos, :mod:"
+"`doctest` hará su magia:"
 
-#: ../../library/doctest.rst:96
+#: ../Doc/library/doctest.rst:96
 msgid ""
 "There's no output!  That's normal, and it means all the examples worked.  "
 "Pass ``-v`` to the script, and :mod:`doctest` prints a detailed log of what "
 "it's trying, and prints a summary at the end:"
 msgstr ""
-"出力は何もありません！しかしこれが正常で、すべての実行例が正しく動作すること"
-"を意味しています。スクリプトに ``-v`` を与えると、 :mod:`doctest` は何を行お"
-"うとしているのかを記録した詳細なログを出力し、最後にまとめを出力します:"
+"¡No hay salida! Eso es normal, y significa que todos los ejemplos "
+"funcionaron. Pasa ``-v`` al script, y :mod:`doctest` imprime un registro "
+"detallado de lo que está intentando, e imprime un resumen al final:"
 
-#: ../../library/doctest.rst:114
+#: ../Doc/library/doctest.rst:114
 msgid "And so on, eventually ending with:"
-msgstr "といった具合で、最後には:"
+msgstr "Y demás, eventualmente terminando con:"
 
-#: ../../library/doctest.rst:133
+#: ../Doc/library/doctest.rst:133
 msgid ""
 "That's all you need to know to start making productive use of :mod:"
 "`doctest`! Jump in.  The following sections provide full details.  Note that "
@@ -105,195 +103,199 @@ msgid ""
 "libraries. Especially useful examples can be found in the standard test "
 "file :file:`Lib/test/test_doctest.py`."
 msgstr ""
-":mod:`doctest` の生産的な利用を始めるために知る必要があるのはこれだけです！さ"
-"あやってみましょう。詳細な事柄は後続の各節ですべて説明しています。 doctest の"
-"例は、標準の Python テストスイートやライブラリ中に沢山あります。標準のテスト"
-"ファイル :file:`Lib/test/test_doctest.py` には、特に役に立つ例があります。"
+"¡Eso es todo lo que necesitas saber para empezar a hacer uso productivo de :"
+"mod:`doctest`! Lánzate. Las siguientes secciones proporcionan detalles "
+"completos. Note que hay muchos ejemplos de doctests en el conjunto de "
+"pruebas estándar de Python y bibliotecas. Especialmente ejemplos útiles se "
+"pueden encontrar en el archivo de pruebas estándar :file:`Lib/test/"
+"test_doctest.py`."
 
-#: ../../library/doctest.rst:143
+#: ../Doc/library/doctest.rst:143
 msgid "Simple Usage: Checking Examples in Docstrings"
-msgstr "簡単な利用法: docstring 中の実行例をチェックする"
+msgstr "Uso simple: verificar ejemplos en docstrings"
 
-#: ../../library/doctest.rst:145
+#: ../Doc/library/doctest.rst:145
 msgid ""
 "The simplest way to start using doctest (but not necessarily the way you'll "
 "continue to do it) is to end each module :mod:`M` with::"
 msgstr ""
-"doctest を試す簡単な方法 (とはいえ、いつもそうする必要はないのですが) は、各"
-"モジュール :mod:`M` の最後を、以下のようにして締めくくることです::"
+"La forma más simple para empezar a usar doctest (pero no necesariamente la "
+"forma que continuarás usándolo) es terminar cada módulo :mod:`M` con::"
 
-#: ../../library/doctest.rst:152
+#: ../Doc/library/doctest.rst:152
 msgid ":mod:`doctest` then examines docstrings in module :mod:`M`."
-msgstr "こうすると、 :mod:`doctest` は :mod:`M` 中の docstring を検査します。"
+msgstr ":mod:`doctest` entonces examina docstrings en el módulo :mod:`M`."
 
-#: ../../library/doctest.rst:154
+#: ../Doc/library/doctest.rst:154
 msgid ""
 "Running the module as a script causes the examples in the docstrings to get "
 "executed and verified::"
 msgstr ""
-"モジュールをスクリプトとして実行すると、docstring 中の実行例が実行され、検証"
-"されます::"
+"Ejecutar el módulo como un script causa que los ejemplos en los docstrings "
+"se ejecuten y sean verificados::"
 
-#: ../../library/doctest.rst:159
+#: ../Doc/library/doctest.rst:159
 msgid ""
 "This won't display anything unless an example fails, in which case the "
 "failing example(s) and the cause(s) of the failure(s) are printed to stdout, "
 "and the final line of output is ``***Test Failed*** N failures.``, where *N* "
 "is the number of examples that failed."
 msgstr ""
-"docstring に書かれた実行例の実行が失敗しない限り、何も表示されません。失敗す"
-"ると、失敗した実行例と、その原因が (場合によっては複数) 標準出力に印字され、"
-"最後に ``***Test Failed*** N failures.`` という行を出力します。ここで、*N* は"
-"失敗した実行例の数です。"
+"No mostrará nada a menos que un ejemplo falle, en cuyo caso el ejemplo "
+"fallido o ejemplos fallidos y sus causas de la falla son imprimidas a "
+"stdout, y la línea final de salida es ``***Test Failed*** N failures.``, "
+"donde *N* es el número de ejemplos que fallaron."
 
-#: ../../library/doctest.rst:164
+#: ../Doc/library/doctest.rst:164
 msgid "Run it with the ``-v`` switch instead::"
-msgstr "一方、``-v`` スイッチをつけて走らせると::"
+msgstr "Ejecútalo con el modificador ``-v`` en su lugar::"
 
-#: ../../library/doctest.rst:168
+#: ../Doc/library/doctest.rst:168
 msgid ""
 "and a detailed report of all examples tried is printed to standard output, "
 "along with assorted summaries at the end."
 msgstr ""
-"実行を試みたすべての実行例について詳細に報告し、最後に各種まとめを行った内容"
-"が標準出力に印字されます。"
+"y un reporte detallado de todos los ejemplos intentados es impreso a la "
+"salida estándar, junto con resúmenes clasificados  al final."
 
-#: ../../library/doctest.rst:171
+#: ../Doc/library/doctest.rst:171
 msgid ""
 "You can force verbose mode by passing ``verbose=True`` to :func:`testmod`, "
 "or prohibit it by passing ``verbose=False``.  In either of those cases, "
 "``sys.argv`` is not examined by :func:`testmod` (so passing ``-v`` or not "
 "has no effect)."
 msgstr ""
-"``verbose=True`` を :func:`testmod` に渡せば、詳細報告 (verbose) モードを強制"
-"できます。また、 ``verbose=False`` にすれば禁止できます。どちらの場合にも、 :"
-"func:`testmod` は ``sys.argv`` 上のスイッチを調べません。(したがって、 ``-"
-"v`` をつけても効果はありません)。"
+"Puedes forzar el modo verboso al pasar ``verbose=True`` a :func:`testmod`, o "
+"prohibirlo al pasarlo ``verbose=False``. En cualquiera de estas casos, ``sys."
+"argv`` no es examinado por :func:`testmod` (por lo que pasar o no ``-v``, no "
+"tiene efecto)."
 
-#: ../../library/doctest.rst:176
+#: ../Doc/library/doctest.rst:176
 msgid ""
 "There is also a command line shortcut for running :func:`testmod`.  You can "
 "instruct the Python interpreter to run the doctest module directly from the "
 "standard library and pass the module name(s) on the command line::"
 msgstr ""
-":func:`testmod` を実行するコマンドラインショートカットもあります。 Python イ"
-"ンタプリタに doctest モジュールを標準ライブラリから直接実行して、テストするモ"
-"ジュール名をコマンドライン引数に与えます::"
+"También hay un atajo de línea de comandos para ejecutar :func:`testmod`. "
+"Puedes instruir al intérprete de Python para ejecutar el módulo doctest "
+"directamente de la biblioteca estándar y pasar los nombres del módulo en la "
+"línea de comandos::"
 
-#: ../../library/doctest.rst:182
+#: ../Doc/library/doctest.rst:182
 msgid ""
 "This will import :file:`example.py` as a standalone module and run :func:"
 "`testmod` on it.  Note that this may not work correctly if the file is part "
 "of a package and imports other submodules from that package."
 msgstr ""
-"こうすると :file:`example.py` を単体モジュールとしてインポートして、それに対"
-"して :func:`testmod` を実行します。このファイルがパッケージの一部で他のサブモ"
-"ジュールをそのパッケージからインポートしている場合はうまく動かないことに注意"
-"してください。"
+"Esto importará :file:`example.py` como un módulo independiente y ejecutará "
+"a :func:`testmod`. Note que esto puede no funcionar correctamente si el "
+"archivo es parte de un paquete e importa otros submódulos de ese paquete."
 
-#: ../../library/doctest.rst:186
+#: ../Doc/library/doctest.rst:186
 msgid ""
 "For more information on :func:`testmod`, see section :ref:`doctest-basic-"
 "api`."
 msgstr ""
-":func:`testmod` の詳しい情報は :ref:`doctest-basic-api` 節を参照してくださ"
-"い。"
+"Para más información de :func:`testmod`, consulte la sección :ref:`doctest-"
+"basic-api`."
 
-#: ../../library/doctest.rst:192
+#: ../Doc/library/doctest.rst:192
 msgid "Simple Usage: Checking Examples in a Text File"
-msgstr "簡単な利用法: テキストファイル中の実行例をチェックする"
+msgstr "Uso Simple: Verificar ejemplos en un Archivo de Texto"
 
-#: ../../library/doctest.rst:194
+#: ../Doc/library/doctest.rst:194
 msgid ""
 "Another simple application of doctest is testing interactive examples in a "
 "text file.  This can be done with the :func:`testfile` function::"
 msgstr ""
-"doctest のもう一つの簡単な用途は、テキストファイル中にある対話実行例に対する"
-"テストです。これには :func:`testfile` 関数を使います::"
+"Otra simple aplicación de doctest es probar ejemplos interactivos en un "
+"archivo de texto.  Esto puede ser hecho con la función :func:`testfile`::"
 
-#: ../../library/doctest.rst:200
+#: ../Doc/library/doctest.rst:200
 msgid ""
 "That short script executes and verifies any interactive Python examples "
 "contained in the file :file:`example.txt`.  The file content is treated as "
 "if it were a single giant docstring; the file doesn't need to contain a "
 "Python program!   For example, perhaps :file:`example.txt` contains this:"
 msgstr ""
-"この短いスクリプトは、 :file:`example.txt` というファイルの中に入っている対話"
-"モードの Python 操作例すべてを実行して、その内容を検証します。ファイルの内容"
-"は一つの巨大な docstring であるかのように扱われます; ファイルが Python プログ"
-"ラムである必要はありません！例えば、 :file:`example.txt` には以下のような内容"
-"が入っているとします:"
+"Este script corto ejecuta y verifica cualquier ejemplo interactivo de Python "
+"contenido en el archivo :file:`example.txt`. El contenido del archivo es "
+"tratado como si fuese un solo gran docstring; ¡el archivo no necesita "
+"contener un programa de Python! Por ejemplo, tal vez :file:`example.txt` "
+"contenga esto:"
 
-#: ../../library/doctest.rst:223
+#: ../Doc/library/doctest.rst:223
 msgid ""
 "Running ``doctest.testfile(\"example.txt\")`` then finds the error in this "
 "documentation::"
 msgstr ""
-"``doctest.testfile(\"example.txt\")`` を実行すると、このドキュメント内のエ"
-"ラーを見つけ出します::"
+"Ejecutar ``doctest.testfile(\"example.txt\")`` entonces encuentra el error "
+"en esta documentación::"
 
-#: ../../library/doctest.rst:234
+#: ../Doc/library/doctest.rst:234
 msgid ""
 "As with :func:`testmod`, :func:`testfile` won't display anything unless an "
 "example fails.  If an example does fail, then the failing example(s) and the "
 "cause(s) of the failure(s) are printed to stdout, using the same format as :"
 "func:`testmod`."
 msgstr ""
-":func:`testmod` と同じく、 :func:`testfile` は実行例が失敗しない限り何も表示"
-"しません。実行例が失敗すると、失敗した実行例とその原因が (場合によっては複"
-"数) :func:`testmod` と同じ書式で標準出力に書き出されます。"
+"Como con :func:`testmod`, :func:`testfile` no mostrará nada a menos que un "
+"ejemplo falle. Si un ejemplo no falla, entonces los ejemplos fallidos y sus "
+"causas son impresas a stdout, usando el mismo formato como :func:`testmod`."
 
-#: ../../library/doctest.rst:239
+#: ../Doc/library/doctest.rst:239
 msgid ""
 "By default, :func:`testfile` looks for files in the calling module's "
 "directory. See section :ref:`doctest-basic-api` for a description of the "
 "optional arguments that can be used to tell it to look for files in other "
 "locations."
 msgstr ""
-"デフォルトでは、 :func:`testfile` は自分自身を呼び出したモジュールのあるディ"
-"レクトリを探します。その他の場所にあるファイルを見に行くように :func:"
-"`testfile` に指示するためのオプション引数についての説明は :ref:`doctest-"
-"basic-api` 節を参照してください。"
+"Por defecto, :func:`testfile` busca archivos en el directorio del módulo al "
+"que se llama. Véase la sección :ref:`doctest-basic-api` para una descripción "
+"de los argumentos opcionales que pueden ser usados para decirle que busque "
+"archivos en otros lugares."
 
-#: ../../library/doctest.rst:243
+#: ../Doc/library/doctest.rst:243
 msgid ""
 "Like :func:`testmod`, :func:`testfile`'s verbosity can be set with the ``-"
 "v`` command-line switch or with the optional keyword argument *verbose*."
 msgstr ""
-":func:`testmod` と同様に :func:`testfile` の冗長性 (verbosity) はコマンドライ"
-"ンスイッチ ``-v`` またはオプションのキーワード引数 *verbose* によって指定でき"
-"ます。"
+"Como :func:`testmod`, la verbosidad de :func:`testfile` puede ser "
+"establecida con el modificador de la línea de comandos ``-v`` o con el "
+"argumento por palabra clave opcional *verbose*."
 
-#: ../../library/doctest.rst:247
+#: ../Doc/library/doctest.rst:247
 msgid ""
 "There is also a command line shortcut for running :func:`testfile`.  You can "
 "instruct the Python interpreter to run the doctest module directly from the "
 "standard library and pass the file name(s) on the command line::"
 msgstr ""
-":func:`testfile` を実行するコマンドラインショートカットもあります。 Python イ"
-"ンタプリタに doctest モジュールを標準ライブラリから直接実行して、テストするモ"
-"ジュール名をコマンドライン引数に与えます::"
+"También hay un atajo de línea de comandos para ejecutar :func:`testfile`. "
+"Puedes indicar al intérprete de Python para correr el módulo doctest "
+"directamente desde la biblioteca estándar y pasar el nombre de los archivos "
+"en la línea de comandos::"
 
-#: ../../library/doctest.rst:253
+#: ../Doc/library/doctest.rst:253
 msgid ""
 "Because the file name does not end with :file:`.py`, :mod:`doctest` infers "
 "that it must be run with :func:`testfile`, not :func:`testmod`."
 msgstr ""
-"ファイル名が :file:`.py` で終っていないので、 :mod:`doctest` は :func:"
-"`testmod` ではなく :func:`testfile` を使って実行するのだと判断します。"
+"Porque el nombre del archivo no termina con :file:`.py`, :mod:`doctest` "
+"infiere que se debe ejecutar con :func:`testfile`, no :func:`testmod`."
 
-#: ../../library/doctest.rst:256
+#: ../Doc/library/doctest.rst:256
 msgid ""
 "For more information on :func:`testfile`, see section :ref:`doctest-basic-"
 "api`."
 msgstr ""
-":func:`testfile` の詳細は :ref:`doctest-basic-api` 節を参照してください。"
+"Para más información en :func:`testfile`, véase la sección :ref:`doctest-"
+"basic-api`."
 
-#: ../../library/doctest.rst:262
+#: ../Doc/library/doctest.rst:262
 msgid "How It Works"
-msgstr "doctest のからくり"
+msgstr "Cómo funciona"
 
-#: ../../library/doctest.rst:264
+#: ../Doc/library/doctest.rst:264
 msgid ""
 "This section examines in detail how doctest works: which docstrings it looks "
 "at, how it finds interactive examples, what execution context it uses, how "
@@ -302,26 +304,27 @@ msgid ""
 "examples; for information about actually running doctest on these examples, "
 "see the following sections."
 msgstr ""
-"この節では、doctest のからくり: どの docstring を見に行くのか、どのように対話"
-"実行例を見つけ出すのか、どんな実行コンテキストを使うのか、例外をどう扱うか、"
-"上記の振る舞いを制御するためにどのようなオプションフラグを使うか、について詳"
-"しく吟味します。こうした情報は、doctest に対応した実行例を書くために必要な知"
-"識です; 書いた実行例に対して実際に doctest を実行する上で必要な情報については"
-"後続の節を参照してください。"
+"Esta sección examina en detalle cómo funciona doctest: qué docstrings "
+"revisa, cómo encuentra ejemplos interactivos, qué contexto de ejecución usa, "
+"cómo maneja las excepciones, y cómo las banderas pueden ser usadas para "
+"controlar su comportamiento. Esta es la información que necesitas saber para "
+"escribir ejemplos de doctest; para información sobre ejecutar doctest en "
+"estos ejemplos, véase las siguientes secciones."
 
-#: ../../library/doctest.rst:275
+#: ../Doc/library/doctest.rst:275
 msgid "Which Docstrings Are Examined?"
-msgstr "どの docstring が検証されるのか?"
+msgstr "¿Qué docstrings son examinados?"
 
-#: ../../library/doctest.rst:277
+#: ../Doc/library/doctest.rst:277
 msgid ""
 "The module docstring, and all function, class and method docstrings are "
 "searched.  Objects imported into the module are not searched."
 msgstr ""
-"モジュールの docstring と、すべての関数、クラスおよびメソッドの docstring が"
-"検索されます。モジュールに import されたオブジェクトは検索されません。"
+"Se busca en el docstring del módulo, y todos los docstrings de las "
+"funciones, clases, y métodos.  Los objetos importados en el módulo no se "
+"buscan."
 
-#: ../../library/doctest.rst:280
+#: ../Doc/library/doctest.rst:280
 msgid ""
 "In addition, if ``M.__test__`` exists and \"is true\", it must be a dict, "
 "and each entry maps a (string) name to a function object, class object, or "
@@ -329,62 +332,64 @@ msgid ""
 "searched, and strings are treated as if they were docstrings.  In output, a "
 "key ``K`` in ``M.__test__`` appears with name ::"
 msgstr ""
-"加えて、``M.__test__`` が存在し、\"真の値を持つ\" 場合、この値は辞書でなけれ"
-"ばならず、辞書の各エントリは (文字列の) 名前を関数オブジェクト、クラスオブ"
-"ジェクト、または文字列へとマップします。``M.__test__`` から得られた関数および"
-"クラスオブジェクトの docstring は、その名前がプライベートなものでも検索され、"
-"文字列の場合にはそれが docstring であるかのように扱われます。出力においては、"
-"``M.__test__`` におけるキー ``K`` は、以下の名前で表示されます ::"
+"Además, si ``M.__test__`` existe y \"es verdaderos\", debe ser un "
+"diccionario, y cada entrada mapea un nombre (cadena de caracteres) a un "
+"objeto de función, objeto de clase, o cadena de caracteres. Se buscan los "
+"docstrings de los objetos de función o de clase encontrados de ``M."
+"__test__``, y las cadenas de caracteres son tratadas como si fueran "
+"docstrings. En la salida, una clave ``K`` en ``M.__test__`` aparece con el "
+"nombre::"
 
-#: ../../library/doctest.rst:288
+#: ../Doc/library/doctest.rst:288
 msgid ""
 "Any classes found are recursively searched similarly, to test docstrings in "
 "their contained methods and nested classes."
 msgstr ""
-"検索中に見つかったクラスも同様に再帰的に検索が行われ、クラスに含まれているメ"
-"ソッドおよびネストされたクラスについて docstring のテストが行われます。"
+"Todas las clases encontradas se buscan recursivamente de manera similar, "
+"para probar docstrings en sus métodos contenidos y clases anidadas."
 
-#: ../../library/doctest.rst:295
+#: ../Doc/library/doctest.rst:295
 msgid "How are Docstring Examples Recognized?"
-msgstr "docstring 内の実行例をどのように認識するのか?"
+msgstr "¿Cómo se reconocen los ejemplos de docstring?"
 
-#: ../../library/doctest.rst:297
+#: ../Doc/library/doctest.rst:297
 msgid ""
 "In most cases a copy-and-paste of an interactive console session works fine, "
 "but doctest isn't trying to do an exact emulation of any specific Python "
 "shell."
 msgstr ""
-"ほとんどの場合、対話コンソールセッション上でのコピー／ペーストはうまく動作し"
-"ます。とはいえ、:mod:`doctest` は特定の Python シェルの振る舞いを正確にエミュ"
-"レーションしようとするわけではありません。"
+"En la mayoría de los casos un copiar y pegar de una sesión de consola "
+"interactiva funciona bien, pero doctest no está intentando hacer una "
+"emulación exacta de ningún shell específico de Python."
 
-#: ../../library/doctest.rst:322
+#: ../Doc/library/doctest.rst:322
 msgid ""
 "Any expected output must immediately follow the final ``'>>> '`` or ``'... "
 "'`` line containing the code, and the expected output (if any) extends to "
 "the next ``'>>> '`` or all-whitespace line."
 msgstr ""
-"コードを含む最後の ``'>>> '`` または ``'... '`` 行の直下に期待する出力結果が"
-"置かれます。(出力結果がもしあれば) それは次の ``'>>> '`` 行か、すべて空白文字"
-"の行まで続きます。"
+"Cualquier salida esperada debe seguir inmediatamente el final de la línea "
+"``'>>>'`` o ``'...'`` conteniendo el código, y la salida esperada (si la "
+"hubiera) se extiende hasta el siguiente ``'>>>'`` o la línea en blanco."
 
-#: ../../library/doctest.rst:326
+#: ../Doc/library/doctest.rst:326
 msgid "The fine print:"
-msgstr "詳細事項:"
+msgstr "La letra pequeña:"
 
-#: ../../library/doctest.rst:328
+#: ../Doc/library/doctest.rst:328
 msgid ""
 "Expected output cannot contain an all-whitespace line, since such a line is "
 "taken to signal the end of expected output.  If expected output does contain "
 "a blank line, put ``<BLANKLINE>`` in your doctest example each place a blank "
 "line is expected."
 msgstr ""
-"期待する出力結果には、空白だけの行が入っていてはなりません。そのような行は期"
-"待する出力結果の終了を表すと見なされるからです。もし期待する出力結果の内容に"
-"空白行が入っている場合には、空白行が入るべき場所すべてに ``<BLANKLINE>`` を入"
-"れてください。"
+"La salida esperada no puede contener una línea de espacios en blanco, ya que "
+"ese tipo de línea se toma para indicar el fin de la salida esperada. Si la "
+"salida esperada de verdad contiene una línea en blanco, pon ``<BLANKLINE>`` "
+"en tu ejemplo de doctest en cada lugar donde una línea en blanco sea "
+"esperada."
 
-#: ../../library/doctest.rst:333
+#: ../Doc/library/doctest.rst:333
 msgid ""
 "All hard tab characters are expanded to spaces, using 8-column tab stops. "
 "Tabs in output generated by the tested code are not modified.  Because any "
@@ -398,64 +403,67 @@ msgid ""
 "different algorithm for handling tabs by writing a custom :class:"
 "`DocTestParser` class."
 msgstr ""
-"全てのタブ文字は 8 カラムのタブ位置でスペースに展開されます。テスト対象のコー"
-"ドが作成した出力にあるタブは変更されません。出力例にあるどんなタブも展開 *さ"
-"れる* ので、コードの出力がハードタブを含んでいた場合、 doctest が通るには :"
-"const:`NORMALIZE_WHITESPACE` オプションか :ref:`directive <doctest-"
-"directives>` を有効にするしかありません。そうする代わりに、テストが出力を読み"
-"取りテストの一部として期待される値と正しく比較するように、テストを書き直すこ"
-"ともできます。このソース中のタブの扱いは試行錯誤の結果であり、タブの扱いの中"
-"で最も問題の起きにくいものだということが分かっています。タブの扱いについて"
-"は、独自の :class:`DocTestParser` クラスを実装して、別のアルゴリズムを使うこ"
-"ともできます。"
+"Todos los caracteres de tabulación se expanden a espacios, usando paradas de "
+"tabulación de 8 -columnas. Las tabulaciones generadas por el código en "
+"pruebas no son modificadas. Ya que todas las tabulaciones en la salida de "
+"prueba *son* expandidas, significa que si el código de salida incluye "
+"tabulaciones, la única manera de que el doctest pueda pasar es si la opción :"
+"const:`NORMALIZE_WHITESPACE` o :ref:`directive <doctest-directives>` está en "
+"efecto. Alternativamente, la prueba puede ser reescrita para capturar la "
+"salida y compararla a un valor esperado como parte de la prueba. Se llegó a "
+"este tratamiento de tabulaciones en la fuente a través de prueba y error, y "
+"ha demostrado ser la manera menos propensa a errores de manejarlos. Es "
+"posible usar un algoritmo diferente para manejar tabulaciones al escribir "
+"una clase :class:`DocTestParser` personalizada."
 
-#: ../../library/doctest.rst:345
+#: ../Doc/library/doctest.rst:345
 msgid ""
 "Output to stdout is captured, but not output to stderr (exception tracebacks "
 "are captured via a different means)."
 msgstr ""
-"標準出力への出力は取り込まれますが、標準エラーは取り込まれません (例外発生時"
-"のトレースバックは別の方法で取り込まれます)。"
+"La salida a stdout es capturada, pero no la salida a stderr (los rastreos de "
+"la excepción son capturados a través de maneras diferentes)."
 
-#: ../../library/doctest.rst:348
+#: ../Doc/library/doctest.rst:348
 msgid ""
 "If you continue a line via backslashing in an interactive session, or for "
 "any other reason use a backslash, you should use a raw docstring, which will "
 "preserve your backslashes exactly as you type them::"
 msgstr ""
-"対話セッションにおいて、バックスラッシュを用いて次の行に続ける場合や、その他"
-"の理由でバックスラッシュを用いる場合、raw docstring を使ってバックスラッシュ"
-"を入力どおりに扱わせるようにしなければなりません::"
+"Si continuas una línea poniendo una barra invertida en una sesión "
+"interactiva, o por cualquier otra razón usas una barra invertida, debes usar "
+"un docstring crudo, que preservará tus barras invertidas exactamente como "
+"las escribes::"
 
-#: ../../library/doctest.rst:357
+#: ../Doc/library/doctest.rst:357
 msgid ""
 "Otherwise, the backslash will be interpreted as part of the string. For "
 "example, the ``\\n`` above would be interpreted as a newline character.  "
 "Alternatively, you can double each backslash in the doctest version (and not "
 "use a raw string)::"
 msgstr ""
-"そうしない場合は、バックスラッシュは文字列の一部として解釈されます。例えば、"
-"上の ``\\n`` は改行文字として解釈されてしまいます。それ以外の方法では、"
-"doctest にあるバックスラッシュを二重にする (そして raw string を使わない) と"
-"いう方法もあります::"
+"De otra manera, la barra invertida será interpretada como parte de una "
+"cadena. Por ejemplo, el ``\\n`` arriba sería interpretado como un carácter "
+"de nueva línea. Alternativamente, puedes duplicar cada barra invertida en  "
+"la versión de doctest (y no usar una cadena de caracteres cruda)::"
 
-#: ../../library/doctest.rst:366
+#: ../Doc/library/doctest.rst:366
 msgid "The starting column doesn't matter::"
-msgstr "開始カラムはどこでもかまいません::"
+msgstr "La columna inicial no importa::"
 
-#: ../../library/doctest.rst:373
+#: ../Doc/library/doctest.rst:373
 msgid ""
 "and as many leading whitespace characters are stripped from the expected "
 "output as appeared in the initial ``'>>> '`` line that started the example."
 msgstr ""
-"期待する出力結果の先頭部にある空白文字列は、実行例の開始部分にあたる ``'>>> "
-"'`` 行の先頭にある空白文字列と同じだけ取り除かれます。"
+"y tantos espacios en blanco al principio se eliminan de la salida esperada "
+"como aparece en la línea ``'>>>'`` inicial que empezó el ejemplo."
 
-#: ../../library/doctest.rst:380
+#: ../Doc/library/doctest.rst:380
 msgid "What's the Execution Context?"
-msgstr "実行コンテキストとは何か?"
+msgstr "¿Cuál es el contexto de ejecución?"
 
-#: ../../library/doctest.rst:382
+#: ../Doc/library/doctest.rst:382
 msgid ""
 "By default, each time :mod:`doctest` finds a docstring to test, it uses a "
 "*shallow copy* of :mod:`M`'s globals, so that running tests doesn't change "
@@ -465,27 +473,29 @@ msgid ""
 "names defined earlier in the docstring being run. Examples cannot see names "
 "defined in other docstrings."
 msgstr ""
-"デフォルトでは、 :mod:`doctest` はテストを行うべき docstring を見つけるたび"
-"に :mod:`M` のグローバル名前空間の *浅いコピー* を使い、テストの実行によって"
-"モジュールの実際のグローバル名前空間を変更しないようにし、かつ :mod:`M` 内で"
-"行ったテストが痕跡を残して偶発的に別のテストを誤って動作させないようにしてい"
-"ます。したがって、実行例中では :mod:`M` 内のトップレベルで定義されたすべての"
-"名前と、 docstring が動作する以前に定義された名前を自由に使えます。個々の実行"
-"例は他の docstring 中で定義された名前を参照できません。"
+"Por defecto, cada vez que un :mod:`doctest` encuentre un docstring para "
+"probar, usa una *copia superficial*  de los globales de :mod:`M`, por lo que "
+"ejecutar pruebas no cambia los globales reales del módulo, y por lo que una "
+"prueba en :mod:`M` no puede dejar atrás migajas que permitan a otras pruebas "
+"trabajar. Significa que los ejemplos pueden usar libremente cualquier nombre "
+"definido en el nivel superior en :mod:`M`, y nombres definidos más temprano "
+"en los docstrings siendo ejecutados. Los ejemplos no pueden ver nombres "
+"definidos en otros docstrings."
 
-#: ../../library/doctest.rst:390
+#: ../Doc/library/doctest.rst:390
 msgid ""
 "You can force use of your own dict as the execution context by passing "
 "``globs=your_dict`` to :func:`testmod` or :func:`testfile` instead."
 msgstr ""
-":func:`testmod` や :func:`testfile` に ``globs=your_dict`` を渡し、自前の辞書"
-"を実行コンテキストとして使うこともできます。"
+"Puedes forzar el uso de tus propios diccionarios como contexto de ejecución "
+"al pasar ``globs=your_dict`` a :func:`testmod` o :func:`testfile` en su "
+"lugar."
 
-#: ../../library/doctest.rst:397
+#: ../Doc/library/doctest.rst:397
 msgid "What About Exceptions?"
-msgstr "例外はどう扱えばよいか?"
+msgstr "¿Y las excepciones?"
 
-#: ../../library/doctest.rst:399
+#: ../Doc/library/doctest.rst:399
 msgid ""
 "No problem, provided that the traceback is the only output produced by the "
 "example:  just paste in the traceback. [#]_ Since tracebacks contain details "
@@ -493,73 +503,75 @@ msgid ""
 "numbers), this is one case where doctest works hard to be flexible in what "
 "it accepts."
 msgstr ""
-"トレースバックが実行例によって生成される唯一の出力なら問題ありません。単にト"
-"レースバックを貼り付けてください。[#]_ トレースバックには、頻繁に変更されがち"
-"な情報 (例えばファイルパスや行番号など) が入っているものなので、これは受け入"
-"れるテスト結果に柔軟性を持たせようと doctest が苦労している部分の一つです。"
+"No hay problema, siempre que el rastreo sea la única salida producida por el "
+"ejemplo: sólo copia el rastreo.  [#]_ Ya que los rastreos contienen detalles "
+"que probablemente cambien rápidamente (por ejemplo, rutas de archivos "
+"exactas y números de línea), este es un caso donde doctest trabaja duro para "
+"ser flexible en lo que acepta."
 
-#: ../../library/doctest.rst:405
+#: ../Doc/library/doctest.rst:405
 msgid "Simple example::"
-msgstr "簡単な例を示しましょう::"
+msgstr "Ejemplo simple::"
 
-#: ../../library/doctest.rst:412
+#: ../Doc/library/doctest.rst:412
 msgid ""
 "That doctest succeeds if :exc:`ValueError` is raised, with the ``list."
 "remove(x): x not in list`` detail as shown."
 msgstr ""
-"この doctest は、 :exc:`ValueError` が送出され、その詳細情報が ``list."
-"remove(x): x not in list`` である場合に成功します。"
+"El doctest tiene éxito si se lanza :exc:`ValueError`, con el detalle ``list."
+"remove(x): x not in list`` como se muestra."
 
-#: ../../library/doctest.rst:415
+#: ../Doc/library/doctest.rst:415
 msgid ""
 "The expected output for an exception must start with a traceback header, "
 "which may be either of the following two lines, indented the same as the "
 "first line of the example::"
 msgstr ""
-"例外が発生したときの期待する出力はトレースバックヘッダから始まっていなければ"
-"なりません。トレースバックの形式は以下の二通りの行のいずれかで、実行例の最初"
-"の行と同じインデントでなければりません::"
+"La salida esperada para una excepción debe empezar con una cabecera de "
+"rastreo, que puede ser una de las siguientes dos líneas, con el mismo "
+"sangrado de la primera línea del ejemplo:"
 
-#: ../../library/doctest.rst:422
+#: ../Doc/library/doctest.rst:422
 msgid ""
 "The traceback header is followed by an optional traceback stack, whose "
 "contents are ignored by doctest.  The traceback stack is typically omitted, "
 "or copied verbatim from an interactive session."
 msgstr ""
-"トレースバックヘッダの後ろにトレースバックスタックが続いてもかまいませんが、"
-"doctest はその内容を無視します。普通はトレースバックスタックを省略するか、対"
-"話セッションからそのままコピーしてきます。"
+"La cabecera de rastreo es seguida por una pila de rastreo opcional, cuyo "
+"contenido es ignorado por doctest.  La pila de rastreo es típicamente "
+"omitida, o copiada palabra por palabra de una sesión interactiva."
 
-#: ../../library/doctest.rst:426
+#: ../Doc/library/doctest.rst:426
 msgid ""
 "The traceback stack is followed by the most interesting part: the line(s) "
 "containing the exception type and detail.  This is usually the last line of "
 "a traceback, but can extend across multiple lines if the exception has a "
 "multi-line detail::"
 msgstr ""
-"トレースバックスタックの後ろにはもっとも有意義な部分、例外の型と詳細情報の"
-"入った行があります。これは通常トレースバックの最後の行ですが、例外が複数行の"
-"詳細情報を持っている場合、複数の行にわたることもあります::"
+"La pila de rastreo es seguida por la parte más interesante: la línea o "
+"líneas conteniendo el tipo de excepción y detalle. Esto es usualmente la "
+"última línea de un rastreo, pero se puede extender a través de múltiples "
+"líneas si la excepción tiene un detalle de varias líneas::"
 
-#: ../../library/doctest.rst:438
+#: ../Doc/library/doctest.rst:438
 msgid ""
 "The last three lines (starting with :exc:`ValueError`) are compared against "
 "the exception's type and detail, and the rest are ignored."
 msgstr ""
-"上の例では、最後の 3 行 (:exc:`ValueError` から始まる行) における例外の型と詳"
-"細情報だけが比較され、それ以外の部分は無視されます。"
+"Las últimas tres líneas (empezando con :exc:`ValueError`) son comparados con "
+"el tipo de excepción y detalle, y el resto es ignorado."
 
-#: ../../library/doctest.rst:441
+#: ../Doc/library/doctest.rst:441
 msgid ""
 "Best practice is to omit the traceback stack, unless it adds significant "
 "documentation value to the example.  So the last example is probably better "
 "as::"
 msgstr ""
-"例外を扱うコツは、実行例をドキュメントとして読む上で明らかに価値のある情報で"
-"ない限り、トレースバックスタックは省略する、ということです。したがって、先ほ"
-"どの例は以下のように書くべきでしょう::"
+"La mejor práctica es omitir la pila de rastreo, a menos que añada valor de "
+"documentación significante al ejemplo. Por lo que el último ejemplo es "
+"probablemente mejor como::"
 
-#: ../../library/doctest.rst:451
+#: ../Doc/library/doctest.rst:451
 msgid ""
 "Note that tracebacks are treated very specially.  In particular, in the "
 "rewritten example, the use of ``...`` is independent of doctest's :const:"
@@ -567,18 +579,17 @@ msgid ""
 "just as well be three (or three hundred) commas or digits, or an indented "
 "transcript of a Monty Python skit."
 msgstr ""
-"トレースバックの扱いは非常に特殊なので注意してください。特に、上の書き直した"
-"実行例では、 ``...`` の扱いは doctest の :const:`ELLIPSIS` オプションとは独立"
-"しています。この例での省略記号は何かの省略を表しているかもしれませんし、コン"
-"マや数字が 3 個 (または 300 個) かもしれませんし、 Monty Python のスキットを"
-"インデントして書き写したものかもしれません。"
+"Note que los rastreos son tratados de manera especial. En particular, en el "
+"ejemplo reescrito, el uso de ``...`` es independiente de la opción :const:"
+"`ELLIPSIS` de doctest. Se pueden excluir los puntos suspensivos en ese "
+"ejemplo, así como también pueden haber tres (o trescientas) comas o dígitos, "
+"o una transcripción sangrada de un *sketch* de Monty Python."
 
-#: ../../library/doctest.rst:457
+#: ../Doc/library/doctest.rst:457
 msgid "Some details you should read once, but won't need to remember:"
-msgstr ""
-"以下の詳細はずっと覚えておく必要はないのですが、一度目を通しておいてください:"
+msgstr "Algunos detalles que debes leer una vez, pero no necesitarás recordar:"
 
-#: ../../library/doctest.rst:459
+#: ../Doc/library/doctest.rst:459
 msgid ""
 "Doctest can't guess whether your expected output came from an exception "
 "traceback or from ordinary printing.  So, e.g., an example that expects "
@@ -587,13 +598,14 @@ msgid ""
 "ordinary output rarely begins with a traceback header line, so this doesn't "
 "create real problems."
 msgstr ""
-"doctest は期待する出力の出所が print 文なのか例外なのかを推測できません。した"
-"がって、例えば期待する出力が ``ValueError: 42 is prime`` であるような実行例"
-"は、 :exc:`ValueError` が実際に送出された場合と、万が一期待する出力と同じ文字"
-"列を print した場合の両方で成功してしまいます。現実的には、通常の出力がトレー"
-"スバックヘッダから始まることはないので、実際に問題になることはないでしょう。"
+"Doctest no puede adivinar si tu salida esperada vino de una excepción de "
+"rastreo o de una impresión ordinaria. Así que, un ejemplo que espera "
+"``ValueError: 42 is prime`` pasará, ya sea si de hecho se lance :exc:"
+"`ValueError` o si el ejemplo simplemente imprime ese texto de rastreo. En la "
+"práctica, la salida ordinaria raramente comienza con una línea de cabecera "
+"de rastreo, por lo que esto no crea problemas reales."
 
-#: ../../library/doctest.rst:466
+#: ../Doc/library/doctest.rst:466
 msgid ""
 "Each line of the traceback stack (if present) must be indented further than "
 "the first line of the example, *or* start with a non-alphanumeric character. "
@@ -601,23 +613,24 @@ msgid ""
 "with an alphanumeric is taken to be the start of the exception detail.  Of "
 "course this does the right thing for genuine tracebacks."
 msgstr ""
-"トレースバックスタック (がある場合) の各行は、実行例の最初の行よりも深くイン"
-"デントされているか、*または* 英数文字以外で始まっていなければなりません。ト"
-"レースバックヘッダ以後に現れる行のうち、インデントが等しく英数文字で始まる最"
-"初の行は例外の詳細情報が書かれた行とみなされるからです。もちろん、本物のト"
-"レースバックでは正しく動作します。"
+"Cada línea de la pila de rastreo (si se presenta) debe estar más sangrada "
+"que la primera línea del ejemplo, *o* empezar con un carácter no "
+"alfanumérico. la primera línea que sigue a la cabecera de rastreo sangrada "
+"de igual forma y empezando con un alfanumérico es considerado el inicio del "
+"detalle de la excepción. Por supuesto que esto es lo correcto para rastreos "
+"genuinos."
 
-#: ../../library/doctest.rst:472
+#: ../Doc/library/doctest.rst:472
 msgid ""
 "When the :const:`IGNORE_EXCEPTION_DETAIL` doctest option is specified, "
 "everything following the leftmost colon and any module information in the "
 "exception name is ignored."
 msgstr ""
-"doctest のオプション :const:`IGNORE_EXCEPTION_DETAIL` を指定した場合、最も左"
-"端のコロン以後の全ての内容と、例外名の中の全てのモジュール情報が無視されま"
-"す。"
+"Cuando se especifica la opción :const:`IGNORE_EXCEPTION_DETAIL` de doctest. "
+"todo lo que sigue a los dos puntos más a la izquierda y cualquier otra "
+"información del módulo en el nombre de la excepción se ignora."
 
-#: ../../library/doctest.rst:476
+#: ../Doc/library/doctest.rst:476
 msgid ""
 "The interactive shell omits the traceback header line for some :exc:"
 "`SyntaxError`\\ s.  But doctest uses the traceback header line to "
@@ -625,34 +638,38 @@ msgid ""
 "need to test a :exc:`SyntaxError` that omits the traceback header, you will "
 "need to manually add the traceback header line to your test example."
 msgstr ""
-"対話シェルでは、 :exc:`SyntaxError` の場合にトレースバックヘッダが省略される"
-"ことがあります。しかし doctest にとっては、例外を例外でないものと区別するため"
-"にトレースバックヘッダが必要です。そこで、トレースバックヘッダを省略するよう"
-"な :exc:`SyntaxError` をテストする必要があるというごく稀なケースでは、実行例"
-"にトレースバックヘッダを手作業で追加する必要があるでしょう。"
+"El shell interactivo omite la línea de la cabecera de rastreo para algunos :"
+"exc:`SyntaxError`. Pero doctest usa la línea de la cabecera de rastreo para "
+"distinguir excepciones de los que no son. Así que en algunos casos raros "
+"donde necesitas probar un :exc:`SyntaxError` que omite la cabecera de "
+"rastreo, necesitarás poner manualmente la línea de cabecera de rastreo en tu "
+"ejemplo de prueba."
 
-#: ../../library/doctest.rst:484
+#: ../Doc/library/doctest.rst:484
 msgid ""
 "For some exceptions, Python displays the position of the error using ``^`` "
 "markers and tildes::"
 msgstr ""
+"En el caso de algunas excepciones Python señala la posición donde ocurrió el "
+"error usando un marcador ``^``::"
 
-#: ../../library/doctest.rst:493
+#: ../Doc/library/doctest.rst:493
 msgid ""
 "Since the lines showing the position of the error come before the exception "
 "type and detail, they are not checked by doctest.  For example, the "
 "following test would pass, even though it puts the ``^`` marker in the wrong "
 "location::"
 msgstr ""
-"例外の型と詳細情報の前にエラー位置を示す行がくるため、doctest はこの行を調べ"
-"ません。例えば、以下の例では、間違った場所に ``^`` マーカを入れても成功してし"
-"まいます::"
+"Ya que las líneas mostrando la posición del error vienen antes del tipo de "
+"excepción y detalle, no son revisadas por doctest. Por ejemplo, el siguiente "
+"test pasaría, a pesar de que pone el marcador ``^`` en la posición "
+"equivocada::"
 
-#: ../../library/doctest.rst:508
+#: ../Doc/library/doctest.rst:508
 msgid "Option Flags"
-msgstr "オプションフラグ"
+msgstr "Banderas de Opción"
 
-#: ../../library/doctest.rst:510
+#: ../Doc/library/doctest.rst:510
 msgid ""
 "A number of option flags control various aspects of doctest's behavior. "
 "Symbolic names for the flags are supplied as module constants, which can be :"
@@ -661,26 +678,28 @@ msgid ""
 "and may be passed to the doctest command line interface via the ``-o`` "
 "option."
 msgstr ""
-"doctest の振る舞いは、数多くのオプションフラグによって様々な側面から制御され"
-"ています。フラグのシンボル名はモジュールの定数として提供され、 :ref:`ビット単"
-"位論理和 <bitwise>` でつないで様々な関数に渡すことができます。シンボル名は :"
-"ref:`doctest directives <doctest-directives>` でも使用でき、doctest コマンド"
-"ラインインターフェースに ``-o`` を通して与えることができます。"
+"Varias banderas de opción controlan diversos aspectos del comportamiento de "
+"doctest. Los nombres simbólicos para las banderas son proporcionados como "
+"constantes del módulo, que se pueden conectar mediante :ref:`*OR* bit a bit "
+"<bitwise>`  y pasar a varias funciones. Los nombres también pueden ser "
+"usados en las :ref:`directivas de doctest <doctest-directives>`, y se pueden "
+"pasar a la interfaz de la línea de comandos de doctest a través de la opción "
+"``-o``."
 
-#: ../../library/doctest.rst:516
+#: ../Doc/library/doctest.rst:516
 msgid "The ``-o`` command line option."
-msgstr "``-o`` コマンドラインオプション"
+msgstr "La opción de la línea de comandos ``-o``."
 
-#: ../../library/doctest.rst:519
+#: ../Doc/library/doctest.rst:519
 msgid ""
 "The first group of options define test semantics, controlling aspects of how "
 "doctest decides whether actual output matches an example's expected output:"
 msgstr ""
-"最初に説明するオプション群は、テストのセマンティクスを決めます。すなわち、実"
-"際にテストを実行したときの出力と実行例中の期待する出力とが一致しているかどう"
-"かを doctest がどのように判断するかを制御します:"
+"El primer grupo de opciones definen las semánticas de la prueba, controlando "
+"aspectos de cómo doctest decide si la salida de hecho concuerda con la "
+"salida esperada del ejemplo:"
 
-#: ../../library/doctest.rst:525
+#: ../Doc/library/doctest.rst:525
 msgid ""
 "By default, if an expected output block contains just ``1``, an actual "
 "output block containing just ``1`` or just ``True`` is considered to be a "
@@ -691,16 +710,16 @@ msgid ""
 "output still work in these cases.  This option will probably go away, but "
 "not for several years."
 msgstr ""
-"デフォルトでは、期待する出力ブロックに単に ``1`` だけが入っており、実際の出力"
-"ブロックに ``1`` または ``True`` だけが入っていた場合、これらの出力は一致して"
-"いるとみなされます。 ``0`` と ``False`` の場合も同様です。 :const:"
-"`DONT_ACCEPT_TRUE_FOR_1` を指定すると、こうした値の読み替えを行いません。デ"
-"フォルトの挙動で読み替えを行うのは、最近の Python で多くの関数の戻り値型が整"
-"数型からブール型に変更されたことに対応するためです; 読み替えを行う場合、\"通"
-"常の整数\" の出力を期待する出力とするような doctest も動作します。このオプ"
-"ションはそのうちなくなるでしょうが、ここ数年はそのままでしょう。"
+"Por defecto, si un bloque de salida esperada contiene sólo ``1``, se "
+"considera igual a un bloque de salida real conteniendo sólo ``1`` o "
+"``true``, y similarmente para ``0`` contra ``False``. Cuando se especifica :"
+"const:`DONT_ACCEPT_TRUE_FOR_1``, no se permite ninguna sustitución.  El "
+"comportamiento por defecto atiende a que Python cambió el tipo de retorno de "
+"muchas funciones de enteros a booleanos; los doctest esperando salidas \"de "
+"pequeño enteros\" todavía trabajan en estos casos. Esta opción probablemente "
+"se vaya, pero no por muchos años."
 
-#: ../../library/doctest.rst:537
+#: ../Doc/library/doctest.rst:537
 msgid ""
 "By default, if an expected output block contains a line containing only the "
 "string ``<BLANKLINE>``, then that line will match a blank line in the actual "
@@ -708,14 +727,14 @@ msgid ""
 "is the only way to communicate that a blank line is expected.  When :const:"
 "`DONT_ACCEPT_BLANKLINE` is specified, this substitution is not allowed."
 msgstr ""
-"デフォルトでは、期待する出力ブロックに ``<BLANKLINE>`` だけの入った行がある場"
-"合、その行は実際の出力における空行に一致するようになります。完全な空行を入れ"
-"てしまうと期待する出力がそこで終わっているとみなされてしまうため、期待する出"
-"力に空行を入れたい場合にはこの方法を使わなければなりません。 :const:"
-"`DONT_ACCEPT_BLANKLINE` を指定すると、 ``<BLANKLINE>`` の読み替えを行わなくな"
-"ります。"
+"Por defecto, si un bloque de salida esperada contiene una línea que sólo "
+"tiene la cadena de caracteres ``<BLANKLINE>``, entonces esa línea "
+"corresponderá a una línea en blanco en la salida real. Ya que una línea en "
+"blanca auténtica delimita la salida esperada, esta es la única manera de "
+"comunicar que una línea en blanco es esperada. Cuando se especifica :const:"
+"`DONT_ACCEPT_BLANKLINE`, esta substitución no se permite."
 
-#: ../../library/doctest.rst:546
+#: ../Doc/library/doctest.rst:546
 msgid ""
 "When specified, all sequences of whitespace (blanks and newlines) are "
 "treated as equal.  Any sequence of whitespace within the expected output "
@@ -724,13 +743,15 @@ msgid ""
 "useful when a line of expected output is very long, and you want to wrap it "
 "across multiple lines in your source."
 msgstr ""
-"このフラグを指定すると、連続する空白 (空白と改行文字) は互いに等価であるとみ"
-"なします。期待する出力における任意の空白列は実際の出力における任意の空白と一"
-"致します。デフォルトでは、空白は厳密に一致しなければなりません。 :const:"
-"`NORMALIZE_WHITESPACE` は、期待する出力の内容が非常に長いために、ソースコード"
-"中でその内容を複数行に折り返して書きたい場合に特に便利です。"
+"Cuando se especifica, todas las secuencias de espacios en blanco (vacías y "
+"nuevas líneas) son tratadas como iguales. Cualquier secuencia de espacios en "
+"blanco dentro de la salida esperada corresponderá a cualquier secuencia de "
+"espacios en blanco dentro de la salida real. Por defecto, los espacios en "
+"blanco deben corresponderse exactamente.  :const:`NORMALIZE_WHITESPACE` es "
+"especialmente útil cuando una línea de la salida esperada es muy larga, y "
+"quieres envolverla a través de múltiples líneas en tu código fuente."
 
-#: ../../library/doctest.rst:557
+#: ../Doc/library/doctest.rst:557
 msgid ""
 "When specified, an ellipsis marker (``...``) in the expected output can "
 "match any substring in the actual output.  This includes substrings that "
@@ -738,21 +759,25 @@ msgid ""
 "this simple. Complicated uses can lead to the same kinds of \"oops, it "
 "matched too much!\" surprises that ``.*`` is prone to in regular expressions."
 msgstr ""
-"このフラグを指定すると、期待する出力中の省略記号マーカ (``...``) が実際の出力"
-"中の任意の部分文字列と一致するようになります。部分文字列は行境界にわたるもの"
-"や空文字列を含みます。したがって、このフラグを使うのは単純な内容を対象にする"
-"場合にとどめましょう。複雑な使い方をすると、正規表現に ``.*`` を使ったときの"
-"ように \"しまった、マッチしすぎた！ (match too much!)\" と驚くことになりかね"
-"ません。"
+"Cuando se especifica, un marcador de puntos suspensivos (``...``) en la "
+"salida esperada puede corresponder a cualquier cadena de caracteres en la "
+"salida real. Esto incluye las cadenas de caracteres que abarcan límites de "
+"líneas, y cadenas de caracteres vacías, por lo que es mejor mantener su uso "
+"simple. Usos complicados pueden conducir a los mismo tipos de sorpresa de "
+"\"ups, coincidió demasiado\" que ``.*`` es propenso a hacer en expresiones "
+"regulares."
 
-#: ../../library/doctest.rst:566
+#: ../Doc/library/doctest.rst:566
 msgid ""
 "When specified, doctests expecting exceptions pass so long as an exception "
 "of the expected type is raised, even if the details (message and fully "
 "qualified exception name) don't match."
 msgstr ""
+"Cuando se especifica, las excepciones que doctest espera, pasarán siempre "
+"que sea lanzada una excepción del tipo esperado, incluso si los detalles "
+"(mensaje y nombre completo de la excepción) no coinciden."
 
-#: ../../library/doctest.rst:570
+#: ../Doc/library/doctest.rst:570
 msgid ""
 "For example, an example expecting ``ValueError: 42`` will pass if the actual "
 "exception raised is ``ValueError: 3*14``, but will fail if, say, a :exc:"
@@ -761,23 +786,32 @@ msgid ""
 "and versions of Python and the code/libraries in use. Hence, all three of "
 "these variations will work with the flag specified:"
 msgstr ""
+"Por ejemplo, si se espera ``ValueError: 42``, el test pasará si la verdadera "
+"excepción lanzada es ``ValueError: 3*14``, pero fallará si es lanzada un :"
+"exc:`TypeError`. También ignorará cualquier nombre completo incluido antes "
+"de la clase de la excepción, lo cual puede variar entre implementaciones y "
+"versiones de Python y bibliotecas/código en uso. Por lo tanto, las tres "
+"variaciones funcionarán con la bandera especificada:"
 
-#: ../../library/doctest.rst:592
+#: ../Doc/library/doctest.rst:592
 msgid ""
 "Note that :const:`ELLIPSIS` can also be used to ignore the details of the "
 "exception message, but such a test may still fail based on whether the "
 "module name is present or matches exactly."
 msgstr ""
+"Tenga en cuenta que :const:`ELLIPSIS` también puede ser usado para ignorar "
+"detalles del mensaje de la excepción, pero dicha prueba aún podría fallar si "
+"el nombre del modulo está presente o si hay coincidencias exactas."
 
-#: ../../library/doctest.rst:596
+#: ../Doc/library/doctest.rst:596
 msgid ""
 ":const:`IGNORE_EXCEPTION_DETAIL` now also ignores any information relating "
 "to the module containing the exception under test."
 msgstr ""
-":mod:`doctest` モジュールの :const:`IGNORE_EXCEPTION_DETAIL` フラグが、 テス"
-"トされている例外を含むモジュールの名前を無視するようになりました。"
+":const:`IGNORE_EXCEPTION_DETAIL` también ignora cualquier información "
+"relacionada al módulo conteniendo la excepción bajo prueba."
 
-#: ../../library/doctest.rst:603
+#: ../Doc/library/doctest.rst:603
 msgid ""
 "When specified, do not run the example at all.  This can be useful in "
 "contexts where doctest examples serve as both documentation and test cases, "
@@ -785,42 +819,48 @@ msgid ""
 "be checked.  E.g., the example's output might be random; or the example "
 "might depend on resources which would be unavailable to the test driver."
 msgstr ""
-"このフラグを指定すると、実行例は一切実行されません。こうした機能は doctest の"
-"実行例がドキュメントとテストを兼ねていて、ドキュメントのためには含めておかな"
-"ければならないけれどチェックされなくても良い、というような文脈で役に立ちま"
-"す。例えば、実行例の出力がランダムであるとか、テストドライバーには利用できな"
-"いリソースに依存している場合などです。"
+"Cuando se especifica, no ejecuta el ejemplo del todo. Puede ser útil en "
+"contextos donde los ejemplos de doctest sirven como documentación y casos de "
+"prueba a la vez, y un ejemplo debe ser incluido para propósitos de "
+"documentación, pero no debe ser revisado. P. ej., la salida del ejemplo "
+"puede ser aleatoria, o el ejemplo puede depender de recursos que no estarían "
+"disponibles para el controlador de pruebas."
 
-#: ../../library/doctest.rst:609
+#: ../Doc/library/doctest.rst:609
 msgid ""
 "The SKIP flag can also be used for temporarily \"commenting out\" examples."
-msgstr "SKIP フラグは一時的に実行例を\"コメントアウト\"するのにも使えます。"
+msgstr ""
+"La bandera *SKIP* también se puede usar para temporalmente \"quitar\" "
+"ejemplos."
 
-#: ../../library/doctest.rst:614
+#: ../Doc/library/doctest.rst:614
 msgid "A bitmask or'ing together all the comparison flags above."
-msgstr "上記の比較フラグすべての論理和をとったビットマスクです。"
+msgstr ""
+"Una máscara de bits o juntadas lógicamente todas las banderas de arriba."
 
-#: ../../library/doctest.rst:616
+#: ../Doc/library/doctest.rst:616
 msgid "The second group of options controls how test failures are reported:"
-msgstr "二つ目のオプション群は、テストの失敗を報告する方法を制御します:"
+msgstr ""
+"El segundo grupo de opciones controla cómo las fallas de las pruebas son "
+"reportadas:"
 
-#: ../../library/doctest.rst:621
+#: ../Doc/library/doctest.rst:621
 msgid ""
 "When specified, failures that involve multi-line expected and actual outputs "
 "are displayed using a unified diff."
 msgstr ""
-"このオプションを指定すると、期待する出力および実際の出力が複数行になるときに"
-"テストの失敗結果を unified diff 形式を使って表示します。"
+"Cuando se especifica, las fallas que involucran salidas multilínea esperadas "
+"y reales son mostradas usando una diferencia (*diff*) unificada."
 
-#: ../../library/doctest.rst:627
+#: ../Doc/library/doctest.rst:627
 msgid ""
 "When specified, failures that involve multi-line expected and actual outputs "
 "will be displayed using a context diff."
 msgstr ""
-"このオプションを指定すると、期待する出力および実際の出力が複数行になるときに"
-"テストの失敗結果を context diff 形式を使って表示します。"
+"Cuando se especifica, las fallas que involucran salidas multilínea esperadas "
+"y reales se mostrarán usando una diferencia (*diff*) contextual."
 
-#: ../../library/doctest.rst:633
+#: ../Doc/library/doctest.rst:633
 msgid ""
 "When specified, differences are computed by ``difflib.Differ``, using the "
 "same algorithm as the popular :file:`ndiff.py` utility. This is the only "
@@ -829,14 +869,15 @@ msgid ""
 "output contains letter ``l``, a line is inserted with a caret marking the "
 "mismatching column positions."
 msgstr ""
-"このオプションを指定すると、期待する出力と実際の出力との間の差分を ``difflib."
-"Differ`` を使って算出します。使われているアルゴリズムは有名な :file:`ndiff."
-"py` ユーティリティと同じです。これは、行単位の差分と同じように行内の差分に"
-"マーカをつけられるようにする唯一の手段です。例えば、期待する出力のある行に数"
-"字の ``1`` が入っていて、実際の出力には ``l`` が入っている場合、不一致の起き"
-"ているカラム位置を示すキャレットの入った行が一行挿入されます。"
+"Cuando se especifica, las diferencias son computadas por ``difflib.Differ``, "
+"usando el mismo algoritmo que la popular utilidad :file:`ndiff.py`. Este es "
+"el único método que marca diferencias dentro de líneas también como a través "
+"de líneas. Por ejemplo, si una línea de salida esperada contiene el dígito "
+"``1`` donde la salida actual contiene la letra ``l``, se inserta una línea "
+"con una marca de inserción marcando la posición de las columnas que no "
+"coinciden."
 
-#: ../../library/doctest.rst:642
+#: ../Doc/library/doctest.rst:642
 msgid ""
 "When specified, display the first failing example in each doctest, but "
 "suppress output for all remaining examples.  This will prevent doctest from "
@@ -846,48 +887,49 @@ msgid ""
 "remaining examples are still run, and still count towards the total number "
 "of failures reported; only the output is suppressed."
 msgstr ""
-"このオプションを指定すると、各 doctest で最初にエラーの起きた実行例だけを表示"
-"し、それ以後の実行例の出力を抑制します。これにより、正しく書かれた実行例が、"
-"それ以前の実行例の失敗によっておかしくなってしまった場合に、 doctest がそれを"
-"報告しないようになります。とはいえ、最初に失敗を引き起こした実行例とは関係な"
-"く誤って書かれた実行例の報告も抑制してしまいます。 :const:"
-"`REPORT_ONLY_FIRST_FAILURE` を指定した場合、実行例がどこかで失敗しても、それ"
-"以後の実行例を続けて実行し、失敗したテストの総数を報告します; 出力が抑制され"
-"るだけです。"
+"Cuando se especifica, muestra el primer ejemplo fallido en cada doctest, "
+"pero suprime la salida para todos ejemplos restantes. Esto evitará que "
+"doctest reporte los ejemplos correctos que se rompen por causa de fallos "
+"tempranos; pero también puede esconder ejemplos incorrectos que fallen "
+"independientemente de la primera falla. Cuando se especifica :const:"
+"`REPORT_ONLY_FIRST_FAILURE`, los ejemplos restantes aún se ejecutan, y aún "
+"cuentan para el número total de fallas reportadas, sólo se suprime la salida."
 
-#: ../../library/doctest.rst:653
+#: ../Doc/library/doctest.rst:653
 msgid ""
 "When specified, exit after the first failing example and don't attempt to "
 "run the remaining examples. Thus, the number of failures reported will be at "
 "most 1.  This flag may be useful during debugging, since examples after the "
 "first failure won't even produce debugging output."
 msgstr ""
-"このオプションを指定すると、最初に実行例が失敗した時点で終了し、残りの実行例"
-"を実行しません。つまり、報告される失敗の数はたかだか 1 つになります。最初の失"
-"敗より後の例はデバッグ出力を生成しないため、このフラグはデバッグの際に有用で"
-"しょう。"
+"Cuando se especifica, sale después del primer ejemplo fallido y no intenta "
+"ejecutar los ejemplos restantes. Por consiguiente, el número de fallas "
+"reportadas será como mucho 1. Esta bandera puede ser útil durante la "
+"depuración, ya que los ejemplos después de la primera falla ni siquiera "
+"producirán salida de depuración."
 
-#: ../../library/doctest.rst:658
+#: ../Doc/library/doctest.rst:658
 msgid ""
 "The doctest command line accepts the option ``-f`` as a shorthand for ``-o "
 "FAIL_FAST``."
 msgstr ""
-"doctest コマンドラインは ``-f`` を ``-o FAIL_FAST`` の短縮形として受け付けま"
-"す。"
+"La línea de comandos de doctest acepta la opción ``-f`` como un atajo para "
+"``-o FAIL_FAST``."
 
-#: ../../library/doctest.rst:666
+#: ../Doc/library/doctest.rst:666
 msgid "A bitmask or'ing together all the reporting flags above."
-msgstr "上記のエラー報告に関するフラグすべての論理和をとったビットマスクです。"
+msgstr "Una máscara de bits o todas las banderas de reporte arriba combinadas."
 
-#: ../../library/doctest.rst:669
+#: ../Doc/library/doctest.rst:669
 msgid ""
 "There is also a way to register new option flag names, though this isn't "
 "useful unless you intend to extend :mod:`doctest` internals via subclassing:"
 msgstr ""
-"サブクラス化で :mod:`doctest` 内部を拡張するつもりがなければ役に立ちません"
-"が、別の新しいオプションフラグ名を登録する方法もあります:"
+"También hay una manera de registrar nombres de nuevas opciones de banderas, "
+"aunque esto no es útil a menos que intentes extender :mod:`doctest` a través "
+"de herencia:"
 
-#: ../../library/doctest.rst:675
+#: ../Doc/library/doctest.rst:675
 msgid ""
 "Create a new option flag with a given name, and return the new flag's "
 "integer value.  :func:`register_optionflag` can be used when subclassing :"
@@ -895,85 +937,92 @@ msgid ""
 "are supported by your subclasses.  :func:`register_optionflag` should always "
 "be called using the following idiom::"
 msgstr ""
-"名前 *name* の新たなオプションフラグを作成し、作成されたフラグの整数値を返し"
-"ます。 :func:`register_optionflag` は :class:`OutputChecker` や  :class:"
-"`DocTestRunner` をサブクラス化して、その中で新たに作成したオプションをサポー"
-"トさせる際に使います。 :func:`register_optionflag` は以下のような定形文で呼び"
-"出さなければなりません::"
+"Crea una nueva bandera de opción con un nombre dado, y retorna el valor "
+"entero de la nueva bandera. se puede usar :func:`register_optionflag` cuando "
+"se hereda :class:`OutputChecker` o :class:`DocTestRunner` para crear nuevas "
+"opciones que sean compatibles con tus clases heredadas. :func:"
+"`register_optionflag` siempre debe ser llamado usando la siguiente "
+"expresión::"
 
-#: ../../library/doctest.rst:691
+#: ../Doc/library/doctest.rst:691
 msgid "Directives"
-msgstr "ディレクティブ (Directives)"
+msgstr "Directivas"
 
-#: ../../library/doctest.rst:693
+#: ../Doc/library/doctest.rst:693
 msgid ""
 "Doctest directives may be used to modify the :ref:`option flags <doctest-"
 "options>` for an individual example.  Doctest directives are special Python "
 "comments following an example's source code:"
 msgstr ""
-"doctest ディレクティブは個々の実行例の :ref:`オプションフラグ <doctest-"
-"options>` を操作するために使われます。 doctest ディレクティブは後のソースコー"
-"ド例にあるような特殊な Python コメントです:"
+"Se pueden usar las directivas de doctest para modificar las :ref:`banderas "
+"de opción <doctest-options>` para un ejemplo individual. Las directivas de "
+"doctest son comentarios de Python especiales que siguen el código fuente de "
+"un ejemplo:"
 
-#: ../../library/doctest.rst:704
+#: ../Doc/library/doctest.rst:704
 msgid ""
 "Whitespace is not allowed between the ``+`` or ``-`` and the directive "
 "option name.  The directive option name can be any of the option flag names "
 "explained above."
 msgstr ""
-"``+`` や ``-`` とディレクティブオプション名の間に空白を入れてはなりません。"
-"ディレクティブオプション名は上で説明したオプションフラグ名のいずれかです。"
+"No se permite el espacio en blanco entre el ``+`` o ``-`` y el nombre de la "
+"opción de directiva (*directive option name*). El nombre de la opción de "
+"directiva puede ser cualquiera de los nombres de las banderas de opciones "
+"explicadas arriba."
 
-#: ../../library/doctest.rst:708
+#: ../Doc/library/doctest.rst:708
 msgid ""
 "An example's doctest directives modify doctest's behavior for that single "
 "example.  Use ``+`` to enable the named behavior, or ``-`` to disable it."
 msgstr ""
-"ある実行例の doctest ディレクティブは、その実行例だけの doctest の振る舞いを"
-"変えます。ある特定の挙動を有効にしたければ ``+`` を、無効にしたければ ``-`` "
-"を使います。"
+"Las directivas de doctest de un ejemplo modifican el comportamiento de "
+"doctest para ese único ejemplo. Usa ``+`` para habilitar el comportamiento "
+"nombrado, o ``-`` para deshabilitarlo."
 
-#: ../../library/doctest.rst:711
+#: ../Doc/library/doctest.rst:711
 msgid "For example, this test passes:"
-msgstr "例えば、以下のテストは成功します:"
+msgstr "Por ejemplo, esta prueba se ejecuta con normalidad:"
 
-#: ../../library/doctest.rst:720
+#: ../Doc/library/doctest.rst:720
 msgid ""
 "Without the directive it would fail, both because the actual output doesn't "
 "have two blanks before the single-digit list elements, and because the "
 "actual output is on a single line.  This test also passes, and also requires "
 "a directive to do so:"
 msgstr ""
-"ディレクティブがない場合、実際の出力には一桁の数字の間に二つスペースが入って"
-"いないこと、実際の出力は 1 行になることから、テストは成功しないはずです。別の"
-"ディレクティブを使って、このテストを成功させることもできます:"
+"Sin la directiva esto fallaría, porque de hecho la salida verdadera no tiene "
+"dos espacios en blanco antes de cada elemento de la lista, y además porque "
+"la la salida verdadera está en una sola línea. Mientras tanto, la siguiente "
+"prueba también pasa, y de la misma forma requiere de directivas para "
+"hacerlo::"
 
-#: ../../library/doctest.rst:731
+#: ../Doc/library/doctest.rst:731
 msgid ""
 "Multiple directives can be used on a single physical line, separated by "
 "commas:"
 msgstr ""
-"複数のディレクティブは、一つの物理行の中にコンマで区切って指定できます:"
+"Se pueden usar varias directivas en una sola línea, separadas por comas::"
 
-#: ../../library/doctest.rst:740
+#: ../Doc/library/doctest.rst:740
 msgid ""
 "If multiple directive comments are used for a single example, then they are "
 "combined:"
 msgstr ""
-"一つの実行例中で複数のディレクティブコメントを使った場合、それらは組み合わさ"
-"れます:"
+"Si las diferentes directivas se usan para un sólo ejemplo, entonces estas se "
+"combinarán::"
 
-#: ../../library/doctest.rst:750
+#: ../Doc/library/doctest.rst:750
 msgid ""
 "As the previous example shows, you can add ``...`` lines to your example "
 "containing only directives.  This can be useful when an example is too long "
 "for a directive to comfortably fit on the same line:"
 msgstr ""
-"この実行例で分かるように、実行例にはディレクティブだけを含む ``...`` 行を追加"
-"することができます。この書きかたは、実行例が長すぎるためにディレクティブを同"
-"じ行に入れると収まりが悪い場合に便利です:"
+"Como se muestran en los ejemplos anteriores, puedes añadir líneas de ``...`` "
+"a tus ejemplos conteniendo sólo directivas. Puede ser útil cuando un ejemplo "
+"es demasiado largo para que una directiva pueda caber cómodamente en la "
+"misma línea::"
 
-#: ../../library/doctest.rst:761
+#: ../Doc/library/doctest.rst:761
 msgid ""
 "Note that since all options are disabled by default, and directives apply "
 "only to the example they appear in, enabling options (via ``+`` in a "
@@ -982,17 +1031,19 @@ msgid ""
 "defaults.  In such cases, disabling an option via ``-`` in a directive can "
 "be useful."
 msgstr ""
-"フォルトではすべてのオプションが無効になっており、ディレクティブは特定の実行"
-"例だけに影響を及ぼすので、通常意味があるのは有効にするためのオプション "
-"(``+`` のついたディレクティブ) だけです。とはいえ、doctest を実行する関数はオ"
-"プションフラグを指定してデフォルトとは異なった挙動を実現できるので、そのよう"
-"な場合には ``-`` を使った無効化オプションも意味を持ちます。"
+"Tenga en cuenta que ya que todas las opciones están deshabilitadas por "
+"defecto, y las directivas sólo aplican a los ejemplos en los que aparecen, "
+"habilitarlas (a través de ``+`` en la directiva) usualmente es la única "
+"opción significativa. Sin embargo, las banderas de opciones también pueden "
+"ser pasadas a funciones que ejecutan doctests, estableciendo valores por "
+"defecto diferentes. En tales casos, deshabilitar una opción a través de ``-"
+"`` en una directiva puede ser útil."
 
-#: ../../library/doctest.rst:771
+#: ../Doc/library/doctest.rst:771
 msgid "Warnings"
-msgstr "警告"
+msgstr "Advertencias"
 
-#: ../../library/doctest.rst:773
+#: ../Doc/library/doctest.rst:773
 msgid ""
 ":mod:`doctest` is serious about requiring exact matches in expected output.  "
 "If even a single character doesn't match, the test fails.  This will "
@@ -1001,105 +1052,106 @@ msgid ""
 "doesn't guarantee that the element is printed in any particular order, so a "
 "test like ::"
 msgstr ""
-":mod:`doctest` では、期待する出力に対する完全一致を厳格に求めます。\n"
-"一致しない文字が一文字でもあると、テストは失敗してしまいます。\n"
-"このため、 Python が出力に関して何を保証していて、何を保証していないかを正確"
-"に知っていないと混乱させられることがあるでしょう。\n"
-"例えば、集合を出力する際、 Python は要素がある特定の順番で並ぶよう保証しては"
-"いません。したがって、以下のようなテスト ::"
+":mod:`doctest` es serio acerca de requerir coincidencias exactas en la "
+"salida esperada. Si incluso un solo carácter no coincide, el test falla. "
+"Esto probablemente te sorprenderá algunas veces, mientras aprendes "
+"exactamente lo que Python asegura y no asegura sobre la salida. Por ejemplo, "
+"cuando se imprime un conjunto, Python no asegura que el elemento sea impreso "
+"en ningún orden particular, por lo que una prueba como: ::"
 
-#: ../../library/doctest.rst:782
+#: ../Doc/library/doctest.rst:782
 msgid "is vulnerable!  One workaround is to do ::"
-msgstr "は失敗するかもしれないのです! 回避するには ::"
+msgstr "¡es vulnerable! Una solución puede ser hacer::"
 
-#: ../../library/doctest.rst:787
+#: ../Doc/library/doctest.rst:787
 msgid "instead.  Another is to do ::"
-msgstr "とするのが一つのやり方です。別のやり方は ::"
+msgstr "en su lugar. Otra es hacer ::"
 
-#: ../../library/doctest.rst:793
+#: ../Doc/library/doctest.rst:793
 msgid "There are others, but you get the idea."
-msgstr "他のやり方もありますが、あとは自分で考えてみてください。"
+msgstr "Existen otros casos, pero ya captas la idea."
 
-#: ../../library/doctest.rst:795
+#: ../Doc/library/doctest.rst:795
 msgid "Another bad idea is to print things that embed an object address, like"
 msgstr ""
-"以下のように、オブジェクトアドレスを埋め込むような結果を print するのもよくあ"
-"りません :"
+"Otra mala idea es imprimir elementos que tienen la dirección de un objeto, "
+"como por ejemplo"
 
-#: ../../library/doctest.rst:805
+#: ../Doc/library/doctest.rst:805
 msgid ""
 "The :const:`ELLIPSIS` directive gives a nice approach for the last example:"
 msgstr ""
-":const:`ELLIPSIS` ディレクティブを使うと、上のような例をうまく解決できます:"
+"Con la directiva :const:`ELLIPSIS` podemos sacar ventaja del último ejemplo::"
 
-#: ../../library/doctest.rst:813
+#: ../Doc/library/doctest.rst:813
 msgid ""
 "Floating-point numbers are also subject to small output variations across "
 "platforms, because Python defers to the platform C library for float "
 "formatting, and C libraries vary widely in quality here. ::"
 msgstr ""
-"浮動小数点数もまた、プラットフォーム間での微妙な出力の違いの原因となります。"
-"というのも、Python は浮動小数点の書式化をプラットフォームの C ライブラリに委"
-"ねており、この点では、C ライブラリはプラットフォーム間で非常に大きく異なって"
-"いるからです。 ::"
+"Los números de coma flotante también son sujetos a pequeñas variaciones de "
+"la salida a través de las plataformas, porque Python defiere a la librería C "
+"de la plataforma para el formato de flotantes, y las librerías de C varían "
+"extensamente en calidad aquí. ::"
 
-#: ../../library/doctest.rst:824
+#: ../Doc/library/doctest.rst:824
 msgid ""
 "Numbers of the form ``I/2.**J`` are safe across all platforms, and I often "
 "contrive doctest examples to produce numbers of that form::"
 msgstr ""
-"``I/2.**J`` の形式になる数値はどのプラットフォームでもうまく動作するので、私"
-"はこの形式の数値を生成するように doctest の実行例を工夫しています::"
+"Números de la forma ``I/2.**J`` son seguros a lo largo de todas las "
+"plataformas, y yo frecuentemente planeo ejemplos de doctest para producir "
+"números de esa forma::"
 
-#: ../../library/doctest.rst:830
+#: ../Doc/library/doctest.rst:830
 msgid ""
 "Simple fractions are also easier for people to understand, and that makes "
 "for better documentation."
 msgstr ""
-"単純な分数は人間にとっても理解しやすく、良いドキュメントを書くために役に立ち"
-"ます。"
+"Las facciones simples también son más fáciles de entender para las personas, "
+"y eso conduce a una mejor documentación."
 
-#: ../../library/doctest.rst:837
+#: ../Doc/library/doctest.rst:837
 msgid "Basic API"
-msgstr "基本 API"
+msgstr "API básica"
 
-#: ../../library/doctest.rst:839
+#: ../Doc/library/doctest.rst:839
 msgid ""
 "The functions :func:`testmod` and :func:`testfile` provide a simple "
 "interface to doctest that should be sufficient for most basic uses.  For a "
 "less formal introduction to these two functions, see sections :ref:`doctest-"
 "simple-testmod` and :ref:`doctest-simple-testfile`."
 msgstr ""
-"数 :func:`testmod` と :func:`testfile` は、ほとんどの基本的な用途に十分な "
-"doctest インターフェースを提供しています。これら二つの関数についてあまり形式"
-"的でない入門が読みたければ、 :ref:`doctest-simple-testmod` 節や :ref:"
-"`doctest-simple-testfile` 節を参照してください。"
+"Las funciones :func:`testmod` y :func:`testfile` proporcionan una interfaz "
+"simple para doctest que debe ser suficiente para la mayoría de los usos "
+"básicos. Para una introducción menos formal a estas funciones, véase las "
+"secciones :ref:`doctest-simple-testmod` y :ref:`doctest-simple-testfile`."
 
-#: ../../library/doctest.rst:847
+#: ../Doc/library/doctest.rst:847
 msgid ""
 "All arguments except *filename* are optional, and should be specified in "
 "keyword form."
 msgstr ""
-"*filename* 以外の引数はすべてオプションで、キーワード引数形式で指定しなければ"
-"なりません。"
+"Todos los argumentos excepto *filename* son opcionales, y deben ser "
+"especificados en forma de palabras claves."
 
-#: ../../library/doctest.rst:850
+#: ../Doc/library/doctest.rst:850
 msgid ""
 "Test examples in the file named *filename*.  Return ``(failure_count, "
 "test_count)``."
 msgstr ""
-"*filename* に指定したファイル内にある実行例をテストします。``(failure_count, "
-"test_count)`` を返します。"
+"Prueba los ejemplos en el archivo con nombre *filename*. Retorna "
+"``(failure_count, test_count)``."
 
-#: ../../library/doctest.rst:853
+#: ../Doc/library/doctest.rst:853
 msgid ""
 "Optional argument *module_relative* specifies how the filename should be "
 "interpreted:"
 msgstr ""
-"オプション引数の *module_relative* は、ファイル名をどのように解釈するかを指定"
-"します:"
+"El argumento opcional *module_relative* especifica cómo el nombre de archivo "
+"debe ser interpretado:"
 
-#: ../../library/doctest.rst:856
+#: ../Doc/library/doctest.rst:856
 msgid ""
 "If *module_relative* is ``True`` (the default), then *filename* specifies an "
 "OS-independent module-relative path.  By default, this path is relative to "
@@ -1108,32 +1160,33 @@ msgid ""
 "should use ``/`` characters to separate path segments, and may not be an "
 "absolute path (i.e., it may not begin with ``/``)."
 msgstr ""
-"*module_relative* が ``True`` (デフォルト) の場合、*filename* は OS に依存し"
-"ないモジュールの相対パスになります。デフォルトでは、このパスは関数 :func:"
-"`testfile` を呼び出しているモジュールからの相対パスになります; ただし、"
-"*package* 引数を指定した場合には、パッケージからの相対になります。OS への依存"
-"性を除くため、*filename*  ではパスを分割する文字に ``/`` を使わなければなら"
-"ず、絶対パスにしてはなりません (パス文字列を ``/`` で始めてはなりません)。"
+"Si *module_relative* es ``True`` (el valor por defecto), entonces *filename* "
+"especifica una ruta relativa al módulo que es independiente del SO. Por "
+"defecto, esta ruta es relativa al directorio del módulo que lo invoca; pero "
+"si el argumento *package* es especificado, entonces es relativo a ese "
+"paquete. Para asegurar la independencia del SO, *filename* debe usar "
+"caracteres ``/`` para separar segmentos, y no puede ser una ruta absoluta "
+"(por ejemplo., no puede empezar con ``/``)."
 
-#: ../../library/doctest.rst:863
+#: ../Doc/library/doctest.rst:863
 msgid ""
 "If *module_relative* is ``False``, then *filename* specifies an OS-specific "
 "path.  The path may be absolute or relative; relative paths are resolved "
 "with respect to the current working directory."
 msgstr ""
-"*module_relative* が ``False`` の場合、*filename* は OS 依存のパスを示しま"
-"す。パスは絶対パスでも相対パスでもかまいません; 相対パスにした場合、現在の作"
-"業ディレクトリを基準に解決します。"
+"Si *module_relative* es ``False``, entonces *filename* especifica una ruta "
+"especifica del SO. La ruta puede ser absoluta o relativa; las rutas "
+"relativas son resueltas con respecto al directorio de trabajo actual."
 
-#: ../../library/doctest.rst:867
+#: ../Doc/library/doctest.rst:867
 msgid ""
 "Optional argument *name* gives the name of the test; by default, or if "
 "``None``, ``os.path.basename(filename)`` is used."
 msgstr ""
-"オプション引数 *name* には、テストの名前を指定します; デフォルトの場合や "
-"``None`` を指定した場合、``os.path.basename(filename)`` になります。"
+"El argumento opcional *name* proporciona el nombre de la prueba; por "
+"defecto, o si es ``None``, se usa ``os.path.basename(filename)``."
 
-#: ../../library/doctest.rst:870
+#: ../Doc/library/doctest.rst:870
 msgid ""
 "Optional argument *package* is a Python package or the name of a Python "
 "package whose directory should be used as the base directory for a module-"
@@ -1141,25 +1194,27 @@ msgid ""
 "directory is used as the base directory for module-relative filenames.  It "
 "is an error to specify *package* if *module_relative* is ``False``."
 msgstr ""
-"オプション引数 *package* には、Python パッケージを指定するか、モジュール相対"
-"のファイル名の場合には相対の基準ディレクトリとなる Python パッケージの名前を"
-"指定します。パッケージを指定しない場合、関数を呼び出しているモジュールのディ"
-"レクトリを相対の基準ディレクトリとして使います。*module_relative* を "
-"``False`` に指定している場合、*package* を指定するとエラーになります。"
+"El argumento opcional *package* es un paquete de Python o el nombre de una "
+"paquete de Python cuyo directorio debe ser usado como el directorio base "
+"para un nombre de archivo relativo al módulo. Si no se especifica ningún "
+"paquete, entonces el directorio del módulo que invoca se usa como el "
+"directorio base para los nombres de archivos relativos al módulo. Es un "
+"error especificar *package* si *module_relative* es ``False``."
 
-#: ../../library/doctest.rst:876
+#: ../Doc/library/doctest.rst:876
 msgid ""
 "Optional argument *globs* gives a dict to be used as the globals when "
 "executing examples.  A new shallow copy of this dict is created for the "
 "doctest, so its examples start with a clean slate. By default, or if "
 "``None``, a new empty dict is used."
 msgstr ""
-"オプション引数 *globs* には辞書を指定します。この辞書は、実行例を実行する際の"
-"グローバル変数として用いられます。doctest はこの辞書の浅いコピーを生成するの"
-"で、実行例は白紙の状態からスタートします。デフォルトの場合や ``None`` を指定"
-"した場合、新たな空の辞書になります。"
+"El argumento opcional *globs* proporciona un diccionario a ser usado como "
+"los globales cuando se ejecuten los ejemplos. Se crea una nueva copia "
+"superficial de este diccionario para el doctest, por lo que sus ejemplos "
+"empiezan con una pizarra en blanco. Por defecto, o si es ``None``, se usa un "
+"nuevo diccionario vacío."
 
-#: ../../library/doctest.rst:881
+#: ../Doc/library/doctest.rst:881
 msgid ""
 "Optional argument *extraglobs* gives a dict merged into the globals used to "
 "execute examples.  This works like :meth:`dict.update`:  if *globs* and "
@@ -1171,126 +1226,130 @@ msgid ""
 "passing an *extraglobs* dict mapping the generic name to the subclass to be "
 "tested."
 msgstr ""
-"オプション引数 *extraglobs* には辞書を指定します。この辞書は、実行例を実行す"
-"る際にグローバル変数にマージされます。マージは :meth:`dict.update` のように振"
-"舞います: *globs* と *extraglobs* との間に同じキー値がある場合、両者を合わせ"
-"た辞書中には *extraglobs* の方の値が入ります。デフォルト、または ``None`` で"
-"あるとき、追加のグローバル変数は使われません。この仕様は、パラメータ付きで "
-"doctest を実行するという、やや進んだ機能です。例えば、一般的な名前を使って基"
-"底クラス向けに doctest を書いておき、その後で辞書で一般的な名前からテストした"
-"いサブクラスへの対応付けを行う辞書を *extraglobs* に渡して、様々なサブクラス"
-"をテストできます。"
+"El argumento opcional *extraglobs* proporciona un diccionario mezclado con "
+"los globales usados para ejecutar ejemplos. Funciona como :meth:`dict."
+"update`: si *globs* y *extraglobs* tienen una clave en común, el valor "
+"asociado en *extraglobs* aparece en el diccionario combinado. Por defecto, o "
+"si es ``None``, no se usa ninguna variable global. Es una característica "
+"avanzada que permite la parametrización de doctests. Por ejemplo, un doctest "
+"puede ser escribo para una clase base, usando un nombre genérico para la "
+"clase, y luego reusado para probar cualquier número de clases heredadas al "
+"pasar un diccionario de *extraglobs* mapeando el nombre genérico a la clase "
+"heredada para ser probada."
 
-#: ../../library/doctest.rst:890
+#: ../Doc/library/doctest.rst:890
 msgid ""
 "Optional argument *verbose* prints lots of stuff if true, and prints only "
 "failures if false; by default, or if ``None``, it's true if and only if ``'-"
 "v'`` is in ``sys.argv``."
 msgstr ""
-"オプション引数 *verbose* が真の場合、様々な情報を出力します。偽の場合にはテス"
-"トの失敗だけを報告します。デフォルトの場合や ``None`` を指定した場合、``sys."
-"argv`` に ``'-v'`` を指定しない限りこの値は真になりません。"
+"El argumento opcional *verbose* imprime un montón de cosas si es verdadero, "
+"e imprime sólo las fallas si es falso; por defecto, o si es ``None``, es "
+"verdadero si y sólo si ``'-v'`` está en ``sys.argv``."
 
-#: ../../library/doctest.rst:894
+#: ../Doc/library/doctest.rst:894
 msgid ""
 "Optional argument *report* prints a summary at the end when true, else "
 "prints nothing at the end.  In verbose mode, the summary is detailed, else "
 "the summary is very brief (in fact, empty if all tests passed)."
 msgstr ""
-"オプション引数 *report* が真の場合、テストの最後にサマリを出力します。それ以"
-"外の場合には何も出力しません。verbose モードの場合、サマリには詳細な情報を出"
-"力しますが、そうでない場合にはサマリはとても簡潔になります (実際には、すべて"
-"のテストが成功した場合には何も出力しません)。"
+"El argumento opcional *report* imprime un resumen al final cuando es "
+"verdadero; si no, no imprime nada al final. En modo verboso (*verbose*), el "
+"resumen es detallado; si no, el resumen es muy corto (de hecho, vacío si "
+"todos las pruebas pasan)."
 
-#: ../../library/doctest.rst:898
+#: ../Doc/library/doctest.rst:898
 msgid ""
 "Optional argument *optionflags* (default value 0) takes the :ref:`bitwise OR "
 "<bitwise>` of option flags. See section :ref:`doctest-options`."
 msgstr ""
-"オプション引数 *optionflags* (デフォルト値 0) は、各オプションフラグの :ref:`"
-"ビット単位論理和 <bitwise>` を取ります。 :ref:`doctest-options` 節を参照して"
-"ください。"
+"El argumento opcional *optionflags* (valor por defecto 0) toma las banderas "
+"de opciones :ref:`juntadas lógicamente por un OR <bitwise>`. Véase la "
+"sección :ref:`doctest-options`."
 
-#: ../../library/doctest.rst:902
+#: ../Doc/library/doctest.rst:902
 msgid ""
 "Optional argument *raise_on_error* defaults to false.  If true, an exception "
 "is raised upon the first failure or unexpected exception in an example.  "
 "This allows failures to be post-mortem debugged. Default behavior is to "
 "continue running examples."
 msgstr ""
-"オプション引数 *raise_on_error* の値はデフォルトでは偽です。真にすると、最初"
-"のテスト失敗や予期しない例外が起きたときに例外を送出します。このオプションを"
-"使うと、失敗の原因を検死デバッグ (post-mortem debug) できます。デフォルトの動"
-"作では、実行例の実行を継続します。"
+"El argumento opcional *raise_on_error* tiene como valor por defecto *false*. "
+"Si es *true*, se lanza una excepción sobre la primera falla o excepción no "
+"esperada en un ejemplo. Esto permite que los fallos sean depurados en un "
+"análisis a posteriori. El comportamiento por defecto es continuar corriendo "
+"los ejemplos."
 
-#: ../../library/doctest.rst:907 ../../library/doctest.rst:1047
+#: ../Doc/library/doctest.rst:907 ../Doc/library/doctest.rst:1047
 msgid ""
 "Optional argument *parser* specifies a :class:`DocTestParser` (or subclass) "
 "that should be used to extract tests from the files.  It defaults to a "
 "normal parser (i.e., ``DocTestParser()``)."
 msgstr ""
-"オプション引数 *parser* には、 :class:`DocTestParser` (またはそのサブクラス) "
-"を指定します。このクラスはファイルから実行例を抽出するために使われます。デ"
-"フォルトでは通常のパーザ (``DocTestParser()``) です。"
+"El argumento opcional *parser* especifica un :class:`DocTestParser` (o "
+"subclase) que debe ser usado para extraer las pruebas de los archivos. Su "
+"valor por defecto es un analizador sintáctico normal (i.e., "
+"``DocTestParser()``)."
 
-#: ../../library/doctest.rst:911 ../../library/doctest.rst:1051
+#: ../Doc/library/doctest.rst:911 ../Doc/library/doctest.rst:1051
 msgid ""
 "Optional argument *encoding* specifies an encoding that should be used to "
 "convert the file to unicode."
 msgstr ""
-"オプション引数 *encoding* にはファイルをユニコードに変換する際に使われるエン"
-"コーディングを指定します。"
+"El argumento opcional *encoding* especifica una codificación que debe ser "
+"usada para convertir el archivo a *unicode*."
 
-#: ../../library/doctest.rst:917
+#: ../Doc/library/doctest.rst:917
 msgid ""
 "All arguments are optional, and all except for *m* should be specified in "
 "keyword form."
 msgstr ""
-"引数はすべてオプションで、*m* 以外の引数はキーワード引数として指定しなければ"
-"なりません。"
+"Todos los argumentos son opcionales, y todos excepto por *m* deben ser "
+"especificados en forma de palabras claves."
 
-#: ../../library/doctest.rst:920
+#: ../Doc/library/doctest.rst:920
 msgid ""
 "Test examples in docstrings in functions and classes reachable from module "
 "*m* (or module :mod:`__main__` if *m* is not supplied or is ``None``), "
 "starting with ``m.__doc__``."
 msgstr ""
-"モジュール *m* (*m* を指定しないか ``None`` にした場合には :mod:`__main__`) "
-"から到達可能な関数およびクラスの docstring 内にある実行例をテストします。 "
-"``m.__doc__`` 内の実行例からテストを開始します。"
+"Prueba los ejemplos en los docstring de las funciones y clases alcanzables "
+"desde el módulo *m* (o desde el módulo :mod:`__main__` si *m* no es "
+"proporcionado o es ``None``), empezando con ``m.__doc__``."
 
-#: ../../library/doctest.rst:924
+#: ../Doc/library/doctest.rst:924
 msgid ""
 "Also test examples reachable from dict ``m.__test__``, if it exists and is "
 "not ``None``.  ``m.__test__`` maps names (strings) to functions, classes and "
 "strings; function and class docstrings are searched for examples; strings "
 "are searched directly, as if they were docstrings."
 msgstr ""
-"また、辞書 ``m.__test__`` が存在し、``None`` でない場合、この辞書から到達でき"
-"る実行例もテストします。``m.__test__`` は、(文字列の) 名前から関数、クラスお"
-"よび文字列への対応付けを行っています。関数およびクラスの場合には、その "
-"docstring 内から実行例を検索します。文字列の場合には、docstring と同じように"
-"して実行例の検索を直接実行します。"
+"También prueba los ejemplos alcanzables desde el diccionario de ``m."
+"__test__``, si existe y no es ``None``. ``m.__test__`` mapea los nombres "
+"(cadenas de caracteres) a funciones, clases y cadenas de caracteres; se "
+"buscan los ejemplos de las funciones y clases; se buscan las cadenas de "
+"caracteres directamente como si fueran docstrings."
 
-#: ../../library/doctest.rst:929
+#: ../Doc/library/doctest.rst:929
 msgid ""
 "Only docstrings attached to objects belonging to module *m* are searched."
 msgstr ""
-"モジュール *m* に属するオブジェクトにつけられた docstring のみを検索します。"
+"Sólo se buscan los docstrings anexados a los objetos pertenecientes al "
+"módulo *m*."
 
-#: ../../library/doctest.rst:931
+#: ../Doc/library/doctest.rst:931
 msgid "Return ``(failure_count, test_count)``."
-msgstr "``(failure_count, test_count)`` を返します。"
+msgstr "Retorna ``(failure_count, test_count)``."
 
-#: ../../library/doctest.rst:933
+#: ../Doc/library/doctest.rst:933
 msgid ""
 "Optional argument *name* gives the name of the module; by default, or if "
 "``None``, ``m.__name__`` is used."
 msgstr ""
-"オプション引数 *name* には、モジュールの名前を指定します。デフォルトの場合や "
-"``None`` を指定した場合には、``m.__name__`` を使います。"
+"El argumento opcional *name* proporciona el nombre del módulo; por defecto, "
+"o si es ``None``, se usa ``m.__name__``."
 
-#: ../../library/doctest.rst:936
+#: ../Doc/library/doctest.rst:936
 msgid ""
 "Optional argument *exclude_empty* defaults to false.  If true, objects for "
 "which no doctests are found are excluded from consideration. The default is "
@@ -1299,79 +1358,82 @@ msgid ""
 "output for objects with no tests. The *exclude_empty* argument to the newer :"
 "class:`DocTestFinder` constructor defaults to true."
 msgstr ""
-"オプション引数 *exclude_empty* はデフォルトでは偽になっています。この値を真に"
-"すると、doctest を持たないオブジェクトを考慮から外します。デフォルトの設定は"
-"依存のバージョンとの互換性を考えたハックであり、 :meth:`doctest.master."
-"summarize` と :func:`testmod` を合わせて利用しているようなコードでも、テスト"
-"実行例を持たないオブジェクトから出力を得るようにしています。新たに追加され"
-"た :class:`DocTestFinder` のコンストラクタの *exclude_empty* はデフォルトで真"
-"になります。"
+"El argumento opcional *exclude_empty* es por defecto *false*. Si es "
+"verdadero, se excluyen los objetos por los cuales no se encuentren doctest. "
+"El valor por defecto es un *hack* de compatibilidad hacia atrás, por lo que "
+"el código que use :meth:`doctest.master.summarize` en conjunto con :func:"
+"`testmod` continua obteniendo la salida para objetos sin pruebas. El "
+"argumento *exclude_empty* para el más nuevo constructor :class:"
+"`DocTestFinder` es por defecto verdadero."
 
-#: ../../library/doctest.rst:943
+#: ../Doc/library/doctest.rst:943
 msgid ""
 "Optional arguments *extraglobs*, *verbose*, *report*, *optionflags*, "
 "*raise_on_error*, and *globs* are the same as for function :func:`testfile` "
 "above, except that *globs* defaults to ``m.__dict__``."
 msgstr ""
-"オプション引数 *extraglobs*, *verbose*, *report*, *optionflags*, "
-"*raise_on_error*, および *globs* は上で説明した :func:`testfile` の引数と同じ"
-"です。ただし、 *globs* のデフォルト値は ``m.__dict__`` になります。"
+"Los argumentos opcionales *extraglobs*, *verbose*, *report*, *optionflags*, "
+"*raise_on_error*, y *globs* son los mismos en cuanto a la función :func:"
+"`testfile` arriba, excepto que *globs* es por defecto ``m.__dict__``."
 
-#: ../../library/doctest.rst:950
+#: ../Doc/library/doctest.rst:950
 msgid ""
 "Test examples associated with object *f*; for example, *f* may be a string, "
 "a module, a function, or a class object."
 msgstr ""
-"オブジェクト *f* に関連付けられた実行例をテストします。 *f* は文字列、モ"
-"ジュール、関数、またはクラスオブジェクトです。"
+"Prueba los ejemplos asociados con el objeto *f*; por ejemplo, *f* puede ser "
+"una cadena de caracteres, un módulo, una función, o un objeto clase."
 
-#: ../../library/doctest.rst:953
+#: ../Doc/library/doctest.rst:953
 msgid ""
 "A shallow copy of dictionary argument *globs* is used for the execution "
 "context."
 msgstr ""
-"引数 *globs* に辞書を指定すると、その浅いコピーを実行コンテキストに使います。"
+"Una copia superficial del diccionario del argumento *globs* se usa para la "
+"ejecución del contexto."
 
-#: ../../library/doctest.rst:955
+#: ../Doc/library/doctest.rst:955
 msgid ""
 "Optional argument *name* is used in failure messages, and defaults to "
 "``\"NoName\"``."
 msgstr ""
-"オプション引数 *name* はテスト失敗時のメッセージに使われます。デフォルトの値"
-"は ``'NoName'`` です。"
+"Se usa el argumento opcional *name* en mensajes de fallos, y por defecto es "
+"``\"NoName\"``."
 
-#: ../../library/doctest.rst:958
+#: ../Doc/library/doctest.rst:958
 msgid ""
 "If optional argument *verbose* is true, output is generated even if there "
 "are no failures.  By default, output is generated only in case of an example "
 "failure."
 msgstr ""
-"オプション引数 *verbose* の値を真にすると、テストが失敗しなくても出力を生成し"
-"ます。デフォルトでは、実行例のテストに失敗したときのみ出力を生成します。"
+"Si el argumento opcional *verbose* es verdadero, la salida se genera incluso "
+"si no hay fallas. Por defecto, la salida se genera sólo en caso de la falla "
+"de un ejemplo."
 
-#: ../../library/doctest.rst:961
+#: ../Doc/library/doctest.rst:961
 msgid ""
 "Optional argument *compileflags* gives the set of flags that should be used "
 "by the Python compiler when running the examples.  By default, or if "
 "``None``, flags are deduced corresponding to the set of future features "
 "found in *globs*."
 msgstr ""
-"オプション引数 *compileflags* には、実行例を実行するときに Python バイトコー"
-"ドコンパイラが使うフラグを指定します。デフォルトの場合や ``None`` を指定した"
-"場合、フラグは *globs* 内にある future 機能セットに対応したものになります。"
+"El argumento opcional *compileflags* proporciona el conjunto de banderas que "
+"se deben usar por el compilador de Python cuando se corran los ejemplos. Por "
+"defecto, o si es ``None``, las banderas se deducen correspondiendo al "
+"conjunto de características futuras encontradas en *globs*."
 
-#: ../../library/doctest.rst:965
+#: ../Doc/library/doctest.rst:965
 msgid ""
 "Optional argument *optionflags* works as for function :func:`testfile` above."
 msgstr ""
-"オプション引数 *optionflags* は、上で述べた :func:`testfile` と同様の働きをし"
-"ます。"
+"El argumento opcional *optionflags* trabaja con respecto a la función :func:"
+"`testfile` de arriba."
 
-#: ../../library/doctest.rst:971
+#: ../Doc/library/doctest.rst:971
 msgid "Unittest API"
-msgstr "単体テスト API"
+msgstr "API de unittest"
 
-#: ../../library/doctest.rst:973
+#: ../Doc/library/doctest.rst:973
 msgid ""
 "As your collection of doctest'ed modules grows, you'll want a way to run all "
 "their doctests systematically.  :mod:`doctest` provides two functions that "
@@ -1379,29 +1441,31 @@ msgid ""
 "files containing doctests.  To integrate with :mod:`unittest` test "
 "discovery, include a :func:`load_tests` function in your test module::"
 msgstr ""
-"doctest が付けられたモジュールが大きくなるにつれ、全ての doctest を組織的に実"
-"行したくなるでしょう。 :mod:`doctest` モジュールは 2 つの関数を提供してい"
-"て、 :mod:`unittest` のテストスイートを作り、 doctest を含んだテキストファイ"
-"ルを作成するのに使えます。 :mod:`unittest` のテストディスカバリと組み合わせる"
-"には、テストモジュールに :func:`load_tests` 関数を書いておいてください::"
+"Mientras crece tu colección de módulos probados con doctest, vas a querer "
+"una forma de ejecutar todos sus doctests sistemáticamente. :mod:`doctest` "
+"proporciona dos funciones que se pueden usar para crear un banco de pruebas "
+"(*test suite*) de :mod:`unittest` desde módulos y archivos de texto que "
+"contienen doctests. Para integrarse con el descubrimiento de pruebas de :mod:"
+"`unittest` , incluye una función  :func:`load_tests` en tu módulo de "
+"pruebas::"
 
-#: ../../library/doctest.rst:987
+#: ../Doc/library/doctest.rst:987
 msgid ""
 "There are two main functions for creating :class:`unittest.TestSuite` "
 "instances from text files and modules with doctests:"
 msgstr ""
-"doctest の入ったテキストファイルやモジュールから :class:`unittest.TestSuite` "
-"インスタンスを生成するための主な関数は二つあります:"
+"Hay dos funciones principales para crear instancias de :class:`unittest."
+"TestSuite` desde los archivos de texto y módulos con doctests:"
 
-#: ../../library/doctest.rst:993
+#: ../Doc/library/doctest.rst:993
 msgid ""
 "Convert doctest tests from one or more text files to a :class:`unittest."
 "TestSuite`."
 msgstr ""
-"単一または複数のテキストファイルに入っている doctest 形式のテストを、 :class:"
-"`unittest.TestSuite` インスタンスに変換します。"
+"Convierte las pruebas de doctest de uno o más archivos de texto a una :class:"
+"`unittest.TestSuite`."
 
-#: ../../library/doctest.rst:996
+#: ../Doc/library/doctest.rst:996
 msgid ""
 "The returned :class:`unittest.TestSuite` is to be run by the unittest "
 "framework and runs the interactive examples in each file.  If an example in "
@@ -1409,31 +1473,32 @@ msgid ""
 "`failureException` exception is raised showing the name of the file "
 "containing the test and a (sometimes approximate) line number."
 msgstr ""
-"この関数の返す :class:`unittest.TestSuite` インスタンスは、 unittest フレーム"
-"ワークで動作させ、各ファイルの実行例を対話的に実行するためのものです。ファイ"
-"ル内の何らかの実行例の実行に失敗すると、この関数で生成した単体テストは失敗"
-"し、該当するテストの入っているファイルの名前と、 (場合によりだいたいの) 行番"
-"号の入った :exc:`failureException` 例外を送出します。"
+"El :class:`unittest.TestSuite` que se retorne será ejecutado por el "
+"framework de unittest y ejecuta los ejemplos interactivos en cada archivo. "
+"Si un ejemplo en cualquier archivo falla, entonces la prueba unitaria "
+"sintetizada falla, y una excepción :exc:`failureException` se lanza "
+"mostrando el nombre del archivo conteniendo la prueba y un número de línea "
+"(algunas veces aproximado)."
 
-#: ../../library/doctest.rst:1002
+#: ../Doc/library/doctest.rst:1002
 msgid "Pass one or more paths (as strings) to text files to be examined."
 msgstr ""
-"関数には、テストを行いたい一つまたは複数のファイルへのパスを (文字列で) 渡し"
-"ます。"
+"Pasa una o más rutas (como cadenas de caracteres) a archivos de texto para "
+"ser examinados."
 
-#: ../../library/doctest.rst:1004
+#: ../Doc/library/doctest.rst:1004
 msgid "Options may be provided as keyword arguments:"
-msgstr ":func:`DocFileSuite` には、キーワード引数でオプションを指定できます:"
+msgstr "Se pueden proporcionar las opciones como argumentos por palabra clave:"
 
-#: ../../library/doctest.rst:1006
+#: ../Doc/library/doctest.rst:1006
 msgid ""
 "Optional argument *module_relative* specifies how the filenames in *paths* "
 "should be interpreted:"
 msgstr ""
-"オプション引数 *module_relative* は *paths* に指定したファイル名をどのように"
-"解釈するかを指定します:"
+"El argumento opcional *module_relative* especifica cómo los nombres de "
+"archivos en *paths* se deben interpretar:"
 
-#: ../../library/doctest.rst:1009
+#: ../Doc/library/doctest.rst:1009
 msgid ""
 "If *module_relative* is ``True`` (the default), then each filename in "
 "*paths* specifies an OS-independent module-relative path.  By default, this "
@@ -1443,24 +1508,27 @@ msgid ""
 "segments, and may not be an absolute path (i.e., it may not begin with ``/"
 "``)."
 msgstr ""
-"*module_relative* が ``True`` (デフォルト) の場合、*paths* 中のファイル名は "
-"OS に依存しないモジュールの相対パスになります。デフォルトでは、このパスは呼び"
-"出し元のモジュールのディレクトリからの相対パスになります; ただし、*package* "
-"引数を指定した場合には、パッケージからの相対になります。OS への依存性を除くた"
-"め、各ファイル名はパスを分割するのに ``/`` 文字を使わなければならず、絶対パス"
-"にしてはなりません (パス文字列を ``/`` で始めてはなりません)。"
+"Si *module_relative* is ``True`` (el  valor por defecto), entonces cada "
+"archivo de nombre en *paths* especifica una ruta relativa al módulo "
+"independiente del SO. Por defecto, esta ruta es relativa al directorio del "
+"módulo lo está invocando; pero si se especifica el argumento *package*, "
+"entonces es relativo a ese paquete. Para asegurar la independencia del SO, "
+"cada nombre de archivo debe usar caracteres ``/`` para separar los segmentos "
+"de rutas, y puede no ser una ruta absoluta (i.e., puede no empezar con ``/"
+"``)."
 
-#: ../../library/doctest.rst:1017
+#: ../Doc/library/doctest.rst:1017
 msgid ""
 "If *module_relative* is ``False``, then each filename in *paths* specifies "
 "an OS-specific path.  The path may be absolute or relative; relative paths "
 "are resolved with respect to the current working directory."
 msgstr ""
-"*module_relative* が ``False`` の場合、*filename* は OS 依存のパスを示しま"
-"す。パスは絶対パスでも相対パスでもかまいません; 相対パスにした場合、現在の作"
-"業ディレクトリを基準に解決します。"
+"Si *module_relative* es ``False``, entonces cada archivo de nombre en "
+"*paths* especifica una ruta especifica al SO. La ruta puede ser absoluta o "
+"relativa; las rutas relativas son resueltas con respecto a directorio de "
+"trabajo actual."
 
-#: ../../library/doctest.rst:1021
+#: ../Doc/library/doctest.rst:1021
 msgid ""
 "Optional argument *package* is a Python package or the name of a Python "
 "package whose directory should be used as the base directory for module-"
@@ -1469,71 +1537,79 @@ msgid ""
 "filenames.  It is an error to specify *package* if *module_relative* is "
 "``False``."
 msgstr ""
-"オプション引数 *package* には、Python パッケージを指定するか、モジュール相対"
-"のファイル名の場合には相対の基準ディレクトリとなる Python パッケージの名前を"
-"指定します。パッケージを指定しない場合、関数を呼び出しているモジュールのディ"
-"レクトリを相対の基準ディレクトリとして使います。*module_relative* を "
-"``False`` に指定している場合、*package* を指定するとエラーになります。"
+"El argumento opcional *package* es un paquete de Python o el nombre de un "
+"paquete de Python cuyo directorio debe ser usado como el directorio base "
+"para los nombres de archivos relativos al módulo en *paths*. Si no se "
+"especifica ningún paquete, entonces el directorio del módulo que lo está "
+"invocando se usa como el directorio base para los archivos de nombres "
+"relativos al módulo. Es un error especificar *package* si *module_relative* "
+"es ``False``."
 
-#: ../../library/doctest.rst:1028
+#: ../Doc/library/doctest.rst:1028
 msgid ""
 "Optional argument *setUp* specifies a set-up function for the test suite. "
 "This is called before running the tests in each file.  The *setUp* function "
 "will be passed a :class:`DocTest` object.  The setUp function can access the "
 "test globals as the *globs* attribute of the test passed."
 msgstr ""
-"オプション引数 *setUp* には、テストスイートのセットアップに使う関数を指定しま"
-"す。この関数は、各ファイルのテストを実行する前に呼び出されます。 *setUp* 関数"
-"は :class:`DocTest` オブジェクトに引き渡されます。 *setUp* は *globs* 属性を"
-"介してテストのグローバル変数にアクセスできます。"
+"El argumento opcional *setUp* especifica una función de configuración para "
+"el banco de pruebas. Es invocado antes de ejecutar las pruebas en cada "
+"archivo. La función *setUp* se pasará a un objeto :class:`DocTest`. La "
+"función *setUp* puede acceder a las variables globales de prueba como el "
+"atributo *globs* de la prueba pasada."
 
-#: ../../library/doctest.rst:1033
+#: ../Doc/library/doctest.rst:1033
 msgid ""
 "Optional argument *tearDown* specifies a tear-down function for the test "
 "suite.  This is called after running the tests in each file.  The *tearDown* "
 "function will be passed a :class:`DocTest` object.  The setUp function can "
 "access the test globals as the *globs* attribute of the test passed."
 msgstr ""
-"オプション引数 *tearDown* には、テストを解体 (tear-down) するための関数を指定"
-"します。この関数は、各ファイルのテストの実行を終了するたびに呼び出されます。 "
-"*tearDown* 関数は :class:`DocTest`  オブジェクトに引き渡されます。 "
-"*tearDown* は *globs* 属性を介してテストのグローバル変数にアクセスできます。"
+"El argumento opcional *tearDown* especifica una función de destrucción para "
+"el banco de pruebas. Es invocado después de ejecutar las pruebas en cada "
+"archivo. Se pasará un objeto :class:`DocTest` a la función *tearDown*. La "
+"función *setUp* de configuración puede acceder a los globales de la prueba "
+"como el atributo *globs* de la prueba pasada."
 
-#: ../../library/doctest.rst:1038 ../../library/doctest.rst:1072
+#: ../Doc/library/doctest.rst:1038 ../Doc/library/doctest.rst:1072
 msgid ""
 "Optional argument *globs* is a dictionary containing the initial global "
 "variables for the tests.  A new copy of this dictionary is created for each "
 "test.  By default, *globs* is a new empty dictionary."
 msgstr ""
-"オプション引数 *globs* は辞書で、テストのグローバル変数の初期値が入ります。こ"
-"の辞書は各テストごとに新たにコピーして使われます。デフォルトでは *globs* は空"
-"の新たな辞書です。"
+"El argumento opcional *globs* es un diccionario que contiene las variables "
+"globales iniciales para las pruebas. Se crea una nueva copia de este "
+"diccionario para cada prueba. Por defecto, *globs* es un nuevo diccionario "
+"vacío."
 
-#: ../../library/doctest.rst:1042
+#: ../Doc/library/doctest.rst:1042
 msgid ""
 "Optional argument *optionflags* specifies the default doctest options for "
 "the tests, created by or-ing together individual option flags.  See section :"
 "ref:`doctest-options`. See function :func:`set_unittest_reportflags` below "
 "for a better way to set reporting options."
 msgstr ""
-"オプション引数 *optionflags* には、テストを実行する際にデフォルトで適用され"
-"る doctest オプションを OR で結合して指定します。 :ref:`doctest-options` 節を"
-"参照してください。結果レポートに関するオプションを指定するより適切な方法は下"
-"記の :func:`set_unittest_reportflags` の説明を参照してください。"
+"El argumento opcional *optionflags* especifica las opciones de doctest por "
+"defecto para las pruebas, creado al juntar lógicamente las opciones de "
+"bandera individuales. Véase la sección :ref:`doctest-options`. Véase la "
+"función :func:`set_unittest_reportflags` abajo para una mejor manera de "
+"definir las opciones de informe."
 
-#: ../../library/doctest.rst:1054
+#: ../Doc/library/doctest.rst:1054
 msgid ""
 "The global ``__file__`` is added to the globals provided to doctests loaded "
 "from a text file using :func:`DocFileSuite`."
 msgstr ""
-":func:`DocFileSuite` を使用してテキストファイルからロードされた doctests に提"
-"供される globals に、グローバル変数 ``__file__`` が追加されます。"
+"Se añade el global ``__file__`` a los globales proporcionados a los doctests "
+"cargados desde un archivo de texto usando :func:`DocFileSuite`."
 
-#: ../../library/doctest.rst:1060
+#: ../Doc/library/doctest.rst:1060
 msgid "Convert doctest tests for a module to a :class:`unittest.TestSuite`."
-msgstr "doctest のテストを :class:`unittest.TestSuite` に変換します。"
+msgstr ""
+"Convierte las pruebas de doctest para un módulo a un  :class:`unittest."
+"TestSuite`."
 
-#: ../../library/doctest.rst:1062
+#: ../Doc/library/doctest.rst:1062
 msgid ""
 "The returned :class:`unittest.TestSuite` is to be run by the unittest "
 "framework and runs each doctest in the module.  If any of the doctests fail, "
@@ -1541,62 +1617,60 @@ msgid ""
 "exception is raised showing the name of the file containing the test and a "
 "(sometimes approximate) line number."
 msgstr ""
-"この関数の返す :class:`unittest.TestSuite` インスタンスは、 unittest フレーム"
-"ワークで動作させ、モジュール内の各 doctest を実行するためのものです。何らか"
-"の doctest の実行に失敗すると、この関数で生成した単体テストは失敗し、該当する"
-"テストの入っているファイルの名前と、 (場合によりだいたいの) 行番号の入った :"
-"exc:`failureException` 例外を送出します。"
+"El :class:`unittest.TestSuite` que se retorne será ejecutado por el "
+"framework de unittest y corre cada doctest en el módulo. Si cualquiera de "
+"los doctests falla, entonces la prueba unitaria combinada falla, y se lanza "
+"una excepción :exc:`failureException` mostrando el nombre del archivo que "
+"contiene la prueba y un número de línea (a veces aproximado)."
 
-#: ../../library/doctest.rst:1068
+#: ../Doc/library/doctest.rst:1068
 msgid ""
 "Optional argument *module* provides the module to be tested.  It can be a "
 "module object or a (possibly dotted) module name.  If not specified, the "
 "module calling this function is used."
 msgstr ""
-"オプション引数 *module* には、テストしたいモジュールの名前を指定します。"
-"*module* にはモジュールオブジェクトまたは (ドット表記の) モジュール名を指定で"
-"きます。*module* を指定しない場合、この関数を呼び出しているモジュールになりま"
-"す。"
+"El argumento opcional *module* proporciona el módulo a probar. Puede ser un "
+"objeto de módulo o un nombre (posiblemente punteado)  de módulo. Si no se "
+"especifica, se usa el módulo que invoca esta función."
 
-#: ../../library/doctest.rst:1076
+#: ../Doc/library/doctest.rst:1076
 msgid ""
 "Optional argument *extraglobs* specifies an extra set of global variables, "
 "which is merged into *globs*.  By default, no extra globals are used."
 msgstr ""
-"オプション引数 *extraglobs* には追加のグローバル変数セットを指定します。この"
-"変数セットは *globs* に統合されます。デフォルトでは、追加のグローバル変数はあ"
-"りません。"
+"El argumento opcional *extraglobs* especifica un conjunto de variables "
+"globales adicionales que son mezcladas con *globs*. Por defecto, no se usa "
+"ningún global adicional."
 
-#: ../../library/doctest.rst:1079
+#: ../Doc/library/doctest.rst:1079
 msgid ""
 "Optional argument *test_finder* is the :class:`DocTestFinder` object (or a "
 "drop-in replacement) that is used to extract doctests from the module."
 msgstr ""
-"オプション引数 *test_finder* は、モジュールから doctest を抽出するための :"
-"class:`DocTestFinder` オブジェクト (またはその代替となるオブジェクト) です。"
+"El argumento opcional *test_finder* es el objeto :class:`DocTestFinder` (o "
+"un reemplazo directo) que se usa para extraer doctests desde el módulo."
 
-#: ../../library/doctest.rst:1082
+#: ../Doc/library/doctest.rst:1082
 msgid ""
 "Optional arguments *setUp*, *tearDown*, and *optionflags* are the same as "
 "for function :func:`DocFileSuite` above."
 msgstr ""
-"オプション引数 *setUp* 、 *tearDown* 、および *optionflags* は上の :func:"
-"`DocFileSuite` と同じです。"
+"Los argumentos opcionales *setUp*, *tearDown*, y *optionflags* son lo mismo "
+"con respecto a la función :func:`DocFileSuite` arriba."
 
-#: ../../library/doctest.rst:1085
+#: ../Doc/library/doctest.rst:1085
 msgid "This function uses the same search technique as :func:`testmod`."
-msgstr "この関数は :func:`testmod` と同じ検索方法を使います。"
+msgstr "Esta función usa la misma técnica de búsqueda que :func:`testmod`."
 
-#: ../../library/doctest.rst:1087
+#: ../Doc/library/doctest.rst:1087
 msgid ""
 ":func:`DocTestSuite` returns an empty :class:`unittest.TestSuite` if "
 "*module* contains no docstrings instead of raising :exc:`ValueError`."
 msgstr ""
-"*module* がドキュメンテーション文字列を含まない場合には、 :func:"
-"`DocTestSuite` は :exc:`ValueError` を送出するのではなく空の  :class:"
-"`unittest.TestSuite` を返します。"
+":func:`DocTestSuite` retorna un :class:`unittest.TestSuite` vacío si "
+"*module* no contiene ningún docstring en vez de lanzar  un :exc:`ValueError`."
 
-#: ../../library/doctest.rst:1092
+#: ../Doc/library/doctest.rst:1092
 msgid ""
 "Under the covers, :func:`DocTestSuite` creates a :class:`unittest.TestSuite` "
 "out of :class:`doctest.DocTestCase` instances, and :class:`DocTestCase` is a "
@@ -1604,24 +1678,24 @@ msgid ""
 "documented here (it's an internal detail), but studying its code can answer "
 "questions about the exact details of :mod:`unittest` integration."
 msgstr ""
-"裏側では :func:`DocTestSuite` は :class:`doctest.DocTestCase` インスタンスか"
-"ら :class:`unittest.TestSuite` を作成しており、 :class:`DocTestCase` は :"
-"class:`unittest.TestCase` のサブクラスになっています。 :class:`DocTestCase` "
-"についてはここでは説明しません (これは内部実装上の詳細だからです) が、その"
-"コードを調べてみれば、 :mod:`unittest` の組み込みの詳細に関する疑問を解決でき"
-"るはずです。"
+"Por detrás, :func:`DocTestSuite` crea un :class:`unittest.TestSuite` de las "
+"instancias de :class:`doctest.DocTestCase`, y :class:`DocTestCase` es una "
+"subclase de :class:`unittest.TestCase`. :class:`DocTestCase` no está "
+"documentado aquí (es un detalle interno), pero estudiar su código puede "
+"responder preguntas sobre los detalles exactos de la integración de :mod:"
+"`unittest`."
 
-#: ../../library/doctest.rst:1098
+#: ../Doc/library/doctest.rst:1098
 msgid ""
 "Similarly, :func:`DocFileSuite` creates a :class:`unittest.TestSuite` out "
 "of :class:`doctest.DocFileCase` instances, and :class:`DocFileCase` is a "
 "subclass of :class:`DocTestCase`."
 msgstr ""
-"同様に、 :func:`DocFileSuite` は :class:`doctest.DocFileCase` インスタンスか"
-"ら :class:`unittest.TestSuite` を作成し、 :class:`DocFileCase` は :class:"
-"`DocTestCase` のサブクラスになっています。"
+"De manera similar, :func:`DocFileSuite` crea un  :class:`unittest.TestSuite` "
+"de las instancias de :class:`doctest.DocFileCase`, y :class:`DocFileCase` es "
+"una subclase de  :class:`DocTestCase`."
 
-#: ../../library/doctest.rst:1102
+#: ../Doc/library/doctest.rst:1102
 msgid ""
 "So both ways of creating a :class:`unittest.TestSuite` run instances of :"
 "class:`DocTestCase`.  This is important for a subtle reason: when you run :"
@@ -1633,39 +1707,41 @@ msgid ""
 "specified by command line options), but there's no way to pass options "
 "through :mod:`unittest` to :mod:`doctest` test runners."
 msgstr ""
-"そのため、 :class:`unittest.TestSuite` クラスを生成するどちらの方法も :class:"
-"`DocTestCase` のインスタンスを実行します。これは次のような微妙な理由で重要で"
-"す: :mod:`doctest` 関数を自分で実行する場合、オプションフラグを :mod:"
-"`doctest` 関数に渡すことで、 :mod:`doctest` のオプションを直接操作できます。"
-"しかしながら、 :mod:`unittest` フレームワークを書いている場合には、いつどのよ"
-"うにテストを動作させるかを :mod:`unittest` が完全に制御してしまいます。フレー"
-"ムワークの作者はたいてい、 :mod:`doctest` のレポートオプションを (コマンドラ"
-"インオプションで指定するなどして) 操作したいと考えますが、 :mod:`unittest` を"
-"介して :mod:`doctest` のテストランナーにオプションを渡す方法は存在しないので"
-"す。"
+"Por lo que ambas formas de crear un :class:`unittest.TestSuite` ejecutan "
+"instancias de :class:`DocTestCase`. Esto es importante por una razón sutil: "
+"cuando ejecutas las funciones de :mod:`doctest` por ti mismo, puedes "
+"controlar las opciones de :mod:`doctest` en uso directamente, al pasar las "
+"banderas de opciones a las funciones de :mod:`doctest`. Sin embargo, si "
+"estás escribiendo un framework de :mod:`unittest`, básicamente :mod:"
+"`unittest` controla cuándo y cómo se ejecutan las pruebas. El autor del "
+"framework típicamente, quiere controlar las opciones de reporte de :mod:"
+"`doctest` (quizás, p.ej., especificadas por las opciones de la línea de "
+"comandos), pero no hay forma de pasar opciones a través de :mod:`unittest` "
+"al probador de ejecución (*test runner*) de :mod:`doctest`."
 
-#: ../../library/doctest.rst:1112
+#: ../Doc/library/doctest.rst:1112
 msgid ""
 "For this reason, :mod:`doctest` also supports a notion of :mod:`doctest` "
 "reporting flags specific to :mod:`unittest` support, via this function:"
 msgstr ""
-"このため、 :mod:`doctest` では、以下の関数を使って、 :mod:`unittest` サポート"
-"に特化したレポートフラグ表記方法もサポートしています:"
+"Por esta razón, :mod:`doctest` también admite una noción de banderas de "
+"informe de :mod:`doctest` específicas para la compatibilidad con :mod:"
+"`unittest`, a través de esta función:"
 
-#: ../../library/doctest.rst:1118
+#: ../Doc/library/doctest.rst:1118
 msgid "Set the :mod:`doctest` reporting flags to use."
-msgstr ":mod:`doctest` のレポートフラグをセットします。"
+msgstr "Establece las banderas de informe de :mod:`doctest` a usar."
 
-#: ../../library/doctest.rst:1120
+#: ../Doc/library/doctest.rst:1120
 msgid ""
 "Argument *flags* takes the :ref:`bitwise OR <bitwise>` of option flags.  See "
 "section :ref:`doctest-options`.  Only \"reporting flags\" can be used."
 msgstr ""
-"引数 *flags* はオプションフラグの :ref:`ビット単位論理和 <bitwise>` を取りま"
-"す。 :ref:`doctest-options` 節を参照してください。「レポートフラグ」しか使え"
-"ません。"
+"El argumento *flags* toma la :ref:`combinación por el operador OR <bitwise>` "
+"de las banderas de opciones. Véase la sección :ref:`doctest-options`. Sólo "
+"se pueden usar las \"banderas de informe\"."
 
-#: ../../library/doctest.rst:1123
+#: ../Doc/library/doctest.rst:1123
 msgid ""
 "This is a module-global setting, and affects all future doctests run by "
 "module :mod:`unittest`:  the :meth:`runTest` method of :class:`DocTestCase` "
@@ -1678,235 +1754,246 @@ msgid ""
 "were specified when the :class:`DocTestCase` instance was constructed, :mod:"
 "`doctest`'s :mod:`unittest` reporting flags are ignored."
 msgstr ""
-"この関数で設定した内容はモジュール全体にわたるものであり、関数呼び出し以後"
-"に :mod:`unittest` モジュールから実行されるすべての doctest に影響します: :"
-"class:`DocTestCase` の :meth:`runTest` メソッドは、 :class:`DocTestCase` イン"
-"スタンスが作成された際に、現在のテストケースに指定されたオプションフラグを見"
-"に行きます。レポートフラグが指定されていない場合 (通常の場合で、望ましいケー"
-"スです)、 :mod:`doctest` の :mod:`unittest` レポートフラグが :ref:`bit ごと"
-"の OR <bitwise>`  で結合され、doctest を実行するために作成される :class:"
-"`DocTestRunner`  インスタンスに渡されます。 :class:`DocTestCase` インスタンス"
-"を構築する際に何らかのレポートフラグが指定されていた場合、 :mod:`doctest` "
-"の :mod:`unittest` レポートフラグは無視されます。"
+"Esta es una configuración global del módulo, y afecta a todos los doctests "
+"futuros a ejecutar por :mod:`unittest`: el método :meth:`runTest` de :class:"
+"`DocTestCase` revisa las banderas de opciones especificadas para el caso de "
+"prueba cuando la instancia de :class:`DocTestCase` fue construida. Si no se "
+"especificó ninguna bandera de informe (que es el caso típico y esperado), "
+"las banderas de informe -pertenecientes a :mod:`doctest`- de :mod:`unittest` "
+"son :ref:`combinadas por la operación Or <bitwise>` en las banderas de "
+"opciones, y las banderas de opciones aumentadas se pasan a la instancia de :"
+"class:`DocTestRunner` creada para ejecutar los doctest. Si se especificó "
+"alguna bandera de informe cuando el :class:`DocTestCase` fue construido, se "
+"ignoran las banderas de informe -pertenecientes a :mod:`doctest`- de :mod:"
+"`unittest`."
 
-#: ../../library/doctest.rst:1134
+#: ../Doc/library/doctest.rst:1134
 msgid ""
 "The value of the :mod:`unittest` reporting flags in effect before the "
 "function was called is returned by the function."
 msgstr ""
-"この関数は、関数を呼び出す前に有効になっていた :mod:`unittest` レポートフラグ"
-"の値を返します。"
+"La función retorna el valor de las banderas de informe de :mod:`unittest` en "
+"efecto antes de que la función fuera invocada."
 
-#: ../../library/doctest.rst:1141
+#: ../Doc/library/doctest.rst:1141
 msgid "Advanced API"
-msgstr "拡張 API"
+msgstr "API avanzada"
 
-#: ../../library/doctest.rst:1143
+#: ../Doc/library/doctest.rst:1143
 msgid ""
 "The basic API is a simple wrapper that's intended to make doctest easy to "
 "use. It is fairly flexible, and should meet most users' needs; however, if "
 "you require more fine-grained control over testing, or wish to extend "
 "doctest's capabilities, then you should use the advanced API."
 msgstr ""
-"基本 API は、doctest を使いやすくするための簡単なラッパであり、柔軟性があって"
-"ほとんどのユーザの必要を満たしています; とはいえ、もっとテストをきめ細かに制"
-"御したい場合や、doctest の機能を拡張したい場合、拡張 API (advanced API) を使"
-"わなければなりません。"
+"La API básica es un simple envoltorio que sirve para hacer los doctest "
+"fáciles de usar. Es bastante flexible, y debe cumplir las necesidades de la "
+"mayoría de los usuarios; si requieres un control más preciso en las pruebas, "
+"o deseas extender las capacidades de doctest, entonces debes usar la API "
+"avanzada."
 
-#: ../../library/doctest.rst:1148
+#: ../Doc/library/doctest.rst:1148
 msgid ""
 "The advanced API revolves around two container classes, which are used to "
 "store the interactive examples extracted from doctest cases:"
 msgstr ""
-"拡張 API は、doctest ケースから抽出した対話モードでの実行例を記憶するための二"
-"つのコンテナクラスを中心に構成されています:"
+"La API avanzada gira en torno a dos clases contenedoras, que se usan para "
+"guardar los ejemplos interactivos extraídos de los casos doctest:"
 
-#: ../../library/doctest.rst:1151
+#: ../Doc/library/doctest.rst:1151
 msgid ""
 ":class:`Example`: A single Python :term:`statement`, paired with its "
 "expected output."
 msgstr ""
-":class:`Example`: 1つの Python :term:`文 <statement>` と、その期待する出力を"
-"ペアにしたもの。"
+":class:`Example`: Un :term:`statement` de Python, emparejado con su salida "
+"esperada."
 
-#: ../../library/doctest.rst:1154
+#: ../Doc/library/doctest.rst:1154
 msgid ""
 ":class:`DocTest`: A collection of :class:`Example`\\ s, typically extracted "
 "from a single docstring or text file."
 msgstr ""
-":class:`DocTest`: :class:`Example` の集まり。通常一つの docstring やテキスト"
-"ファイルから抽出されます。"
+":class:`DocTest`: Una colección de clases :class:`Example`, típicamente "
+"extraídos de un sólo docstring o archivo de texto."
 
-#: ../../library/doctest.rst:1157
+#: ../Doc/library/doctest.rst:1157
 msgid ""
 "Additional processing classes are defined to find, parse, and run, and check "
 "doctest examples:"
 msgstr ""
-"その他に、doctest の実行例を検索、構文解析、実行、チェックするための処理クラ"
-"スが以下のように定義されています:"
+"Se definen clases de procesamiento adicionales para encontrar, analizar "
+"sintácticamente, y ejecutar, y comprobar ejemplos de doctest:"
 
-#: ../../library/doctest.rst:1160
+#: ../Doc/library/doctest.rst:1160
 msgid ""
 ":class:`DocTestFinder`: Finds all docstrings in a given module, and uses a :"
 "class:`DocTestParser` to create a :class:`DocTest` from every docstring that "
 "contains interactive examples."
 msgstr ""
-":class:`DocTestFinder`: 与えられたモジュールからすべての docstring を検索"
-"し、 :class:`DocTestParser` を使って対話モードでの実行例が入ったすべての "
-"docstring から :class:`DocTest` を生成します。"
+":class:`DocTestFinder`: Encuentra todos los docstrings en un módulo dado, y "
+"usa un :class:`DocTestParser` para crear un :class:`DocTest` de cada "
+"docstring que contiene ejemplos interactivos."
 
-#: ../../library/doctest.rst:1164
+#: ../Doc/library/doctest.rst:1164
 msgid ""
 ":class:`DocTestParser`: Creates a :class:`DocTest` object from a string "
 "(such as an object's docstring)."
 msgstr ""
-":class:`DocTestParser`: (オブジェクトの docstring 等の) 文字列から :class:"
-"`DocTest` オブジェクトを生成します。"
+":class:`DocTestParser`: Crea un objeto :class:`DocTest` de una cadena de "
+"caracteres (tal como un docstring de un objeto)."
 
-#: ../../library/doctest.rst:1167
+#: ../Doc/library/doctest.rst:1167
 msgid ""
 ":class:`DocTestRunner`: Executes the examples in a :class:`DocTest`, and "
 "uses an :class:`OutputChecker` to verify their output."
 msgstr ""
-":class:`DocTestRunner`: :class:`DocTest` 内の実行例を実行し、 :class:"
-"`OutputChecker` を使って出力を検証します。"
+":class:`DocTestRunner`: Ejecuta los ejemplos en un :class:`DocTest`, y usa "
+"un :class:`OutputChecker` para verificar su salida."
 
-#: ../../library/doctest.rst:1170
+#: ../Doc/library/doctest.rst:1170
 msgid ""
 ":class:`OutputChecker`: Compares the actual output from a doctest example "
 "with the expected output, and decides whether they match."
 msgstr ""
-":class:`OutputChecker`: doctest 実行例から実際に出力された結果を期待する出力"
-"と比較し、両者が一致するか判別します。"
+":class:`OutputChecker`: Compara la salida real de un ejemplo de doctest con "
+"la salida esperada, y decide si coinciden."
 
-#: ../../library/doctest.rst:1173
+#: ../Doc/library/doctest.rst:1173
 msgid ""
 "The relationships among these processing classes are summarized in the "
 "following diagram::"
-msgstr "これらの処理クラスの関係を図にまとめると、以下のようになります::"
+msgstr ""
+"Las relaciones entre estas clases de procesamiento se resumen en el "
+"siguiente diagrama::"
 
-#: ../../library/doctest.rst:1189
+#: ../Doc/library/doctest.rst:1189
 msgid "DocTest Objects"
-msgstr "DocTest オブジェクト"
+msgstr "Objetos DocTest"
 
-#: ../../library/doctest.rst:1194
+#: ../Doc/library/doctest.rst:1194
 msgid ""
 "A collection of doctest examples that should be run in a single namespace.  "
 "The constructor arguments are used to initialize the attributes of the same "
 "names."
 msgstr ""
-"単一の名前空間内で実行される doctest 実行例の集まりです。コンストラクタの引数"
-"は :class:`DocTest` インスタンス中の同名の属性の初期化に使われます。"
+"Una colección de ejemplos de doctest que deben ejecutarse en un sólo nombre "
+"de espacios. Se usan los argumentos del constructor para inicializar los "
+"atributos de los mismos nombres."
 
-#: ../../library/doctest.rst:1198
+#: ../Doc/library/doctest.rst:1198
 msgid ""
 ":class:`DocTest` defines the following attributes.  They are initialized by "
 "the constructor, and should not be modified directly."
 msgstr ""
-":class:`DocTest` では、以下の属性を定義しています。これらの変数はコンストラク"
-"タで初期化されます。直接変更してはなりません。"
+":class:`DocTest` define los siguientes atributos. Son inicializados por el "
+"constructor, y no deben ser modificados directamente."
 
-#: ../../library/doctest.rst:1204
+#: ../Doc/library/doctest.rst:1204
 msgid ""
 "A list of :class:`Example` objects encoding the individual interactive "
 "Python examples that should be run by this test."
 msgstr ""
-"対話モードにおける実行例それぞれをエンコードしていて、テストで実行される、 :"
-"class:`Example` オブジェクトからなるリストです。"
+"Una lista de objetos :class:`Example` codificando los ejemplos interactivos "
+"de Python individuales que esta prueba debe ejecutar."
 
-#: ../../library/doctest.rst:1210
+#: ../Doc/library/doctest.rst:1210
 msgid ""
 "The namespace (aka globals) that the examples should be run in. This is a "
 "dictionary mapping names to values.  Any changes to the namespace made by "
 "the examples (such as binding new variables) will be reflected in :attr:"
 "`globs` after the test is run."
 msgstr ""
-"実行例を実行する名前空間 (いわゆるグローバル変数) です。このメンバは、名前か"
-"ら値への対応付けを行っている辞書です。実行例が名前空間に対して (新たな変数を"
-"束縛するなど) 何らかの変更を行った場合、 :attr:`globs` への反映はテストの実行"
-"後に起こります。"
+"El nombre de espacios (alias *globals*) en que los ejemplos se deben "
+"ejecutar. Este es un diccionario que mapea nombres a valores. Cualquier "
+"cambio al nombre de espacios hecho por los ejemplos (tal como juntar nuevas "
+"variables) se reflejará en :attr:`globs` después de que se ejecute la prueba."
 
-#: ../../library/doctest.rst:1218
+#: ../Doc/library/doctest.rst:1218
 msgid ""
 "A string name identifying the :class:`DocTest`.  Typically, this is the name "
 "of the object or file that the test was extracted from."
 msgstr ""
-":class:`DocTest` を識別する名前の文字列です。通常、この値はテストを取り出した"
-"オブジェクトかファイルの名前になります。"
+"Un nombre de cadena de caracteres que identifica el :class:`DocTest`. "
+"Normalmente, este es el nombre del objeto o archivo del que se extrajo la "
+"prueba."
 
-#: ../../library/doctest.rst:1224
+#: ../Doc/library/doctest.rst:1224
 msgid ""
 "The name of the file that this :class:`DocTest` was extracted from; or "
 "``None`` if the filename is unknown, or if the :class:`DocTest` was not "
 "extracted from a file."
 msgstr ""
-":class:`DocTest` を取り出したファイルの名前です; ファイル名が未知の場合や :"
-"class:`DocTest` をファイルから取り出したのでない場合には ``None`` になりま"
-"す。"
+"El nombre del archivo del que se extrajo este :class:`DocTest`; o ``None`` "
+"si el nombre del archivo se desconoce, o si :class:`DocTest` no se extrajo "
+"de un archivo."
 
-#: ../../library/doctest.rst:1231
+#: ../Doc/library/doctest.rst:1231
 msgid ""
 "The line number within :attr:`filename` where this :class:`DocTest` begins, "
 "or ``None`` if the line number is unavailable.  This line number is zero-"
 "based with respect to the beginning of the file."
 msgstr ""
-":attr:`filename` 中で :class:`DocTest` のテスト実行例が始まっている行の行番号"
-"で、行番号が利用できなければ ``None`` です。行番号は、ファイルの先頭を 0 とし"
-"て数えます。"
+"El número de línea dentro de :attr:`filename` donde este :class:`DocTest` "
+"comienza, o ``None`` si el número de línea no está disponible. Este número "
+"de línea es comienza en 0 con respecto al comienzo del archivo."
 
-#: ../../library/doctest.rst:1238
+#: ../Doc/library/doctest.rst:1238
 msgid ""
 "The string that the test was extracted from, or ``None`` if the string is "
 "unavailable, or if the test was not extracted from a string."
 msgstr ""
-"テストを取り出した docstring 自体を現す文字列です。docstring 文字列を得られな"
-"い場合や、文字列からテスト実行例を取り出したのでない場合には ``None`` になり"
-"ます。"
+"La cadena de caracteres del que se extrajo la cadena, o ``None`` si la "
+"cadena no está disponible, o si la prueba no se extrajo de una cadena de "
+"caracteres."
 
-#: ../../library/doctest.rst:1245
+# Estoy poniendo Example sin traducir porque hace referencia a la clase
+# :class:`Example` que envuelve los ejemplos interactivos.
+#: ../Doc/library/doctest.rst:1245
 msgid "Example Objects"
-msgstr "Example オブジェクト"
+msgstr "Objetos *Example*"
 
-#: ../../library/doctest.rst:1250
+#: ../Doc/library/doctest.rst:1250
 msgid ""
 "A single interactive example, consisting of a Python statement and its "
 "expected output.  The constructor arguments are used to initialize the "
 "attributes of the same names."
 msgstr ""
-"ひとつの Python 文と、それに対する期待する出力からなる、単一の対話的モードの"
-"実行例です。コンストラクタの引数は :class:`Example` インスタンス中の同名の属"
-"性の初期化に使われます。"
+"Un sólo ejemplo interactivo, que consta de una sentencia de Python y su "
+"salida esperada. Los argumentos del constructor se usan para inicializar los "
+"atributos del mismo nombre."
 
-#: ../../library/doctest.rst:1255
+#: ../Doc/library/doctest.rst:1255
 msgid ""
 ":class:`Example` defines the following attributes.  They are initialized by "
 "the constructor, and should not be modified directly."
 msgstr ""
-":class:`Example` では、以下の属性を定義しています。これらの変数はコンストラク"
-"タで初期化されます。直接変更してはなりません。"
+"La clase :class:`Example` define los siguientes atributos. Son inicializados "
+"por el constructor, y no deben ser modificados directamente."
 
-#: ../../library/doctest.rst:1261
+#: ../Doc/library/doctest.rst:1261
 msgid ""
 "A string containing the example's source code.  This source code consists of "
 "a single Python statement, and always ends with a newline; the constructor "
 "adds a newline when necessary."
 msgstr ""
-"実行例のソースコードが入った文字列です。ソースコードは単一の Python で、末尾"
-"は常に改行です。コンストラクタは必要に応じて改行を追加します。"
+"Una cadena de caracteres que contiene el código fuente del ejemplo. Este "
+"código fuente consiste de una sola sentencia Python, y siempre termina en "
+"una nueva línea; el constructor añade una nueva línea cuando sea necesario."
 
-#: ../../library/doctest.rst:1268
+#: ../Doc/library/doctest.rst:1268
 msgid ""
 "The expected output from running the example's source code (either from "
 "stdout, or a traceback in case of exception).  :attr:`want` ends with a "
 "newline unless no output is expected, in which case it's an empty string.  "
 "The constructor adds a newline when necessary."
 msgstr ""
-"実行例のソースコードを実行した際の期待する出力 (標準出力と、例外が生じた場合"
-"にはトレースバック) です。 :attr:`want` の末尾は、期待する出力がまったくない"
-"場合を除いて常に改行になります。期待する出力がない場合には空文字列になりま"
-"す。コンストラクタは必要に応じて改行を追加します。"
+"La salida esperada de ejecutar el código fuente del ejemplo (o desde la "
+"salida estándar, o un seguimiento en caso de una excepción). :attr:`wants` "
+"termina con una nueva línea a menos que no se espera ninguna salida, en cuyo "
+"caso es una cadena vacía. El constructor añade una nueva línea cuando sea "
+"necesario."
 
-#: ../../library/doctest.rst:1276
+#: ../Doc/library/doctest.rst:1276
 msgid ""
 "The exception message generated by the example, if the example is expected "
 "to generate an exception; or ``None`` if it is not expected to generate an "
@@ -1914,30 +2001,32 @@ msgid ""
 "func:`traceback.format_exception_only`.  :attr:`exc_msg` ends with a newline "
 "unless it's ``None``.  The constructor adds a newline if needed."
 msgstr ""
-"実行例が例外を生成すると期待される場合の例外メッセージです。例外を送出しない"
-"場合には ``None`` です。この例外メッセージは、 :func:`traceback."
-"format_exception_only` の戻り値と比較されます。値が ``None`` でない限り、 :"
-"attr:`exc_msg` は改行で終わっていなければなりません; コンストラクタは必要に応"
-"じて改行を追加します。"
+"El mensaje de excepción que el ejemplo genera, si se espera que el ejemplo "
+"genere una excepción; o ``None`` si no se espera que genere una excepción. "
+"Se compara este mensaje de excepción con el valor de retorno de :func:"
+"`traceback.format_exception_only`.  :attr:`exc_msg` termina con una nueva "
+"línea a menos que sea ``None``.  El constructor añade una nueva línea si se "
+"necesita."
 
-#: ../../library/doctest.rst:1285
+#: ../Doc/library/doctest.rst:1285
 msgid ""
 "The line number within the string containing this example where the example "
 "begins.  This line number is zero-based with respect to the beginning of the "
 "containing string."
 msgstr ""
-"この実行例を含む文字列における実行例が始まる行番号です。行番号は文字列の先頭"
-"を 0 として数えます。"
+"El número de línea dentro de la cadena de caracteres que contiene este "
+"ejemplo donde el ejemplo comienza. Este número de línea comienza en 0 con "
+"respecto al comienzo de la cadena que lo contiene."
 
-#: ../../library/doctest.rst:1292
+#: ../Doc/library/doctest.rst:1292
 msgid ""
 "The example's indentation in the containing string, i.e., the number of "
 "space characters that precede the example's first prompt."
 msgstr ""
-"実行例の入っている文字列のインデント、すなわち実行例の最初のプロンプトより前"
-"にある空白文字の数です。"
+"La sangría del ejemplo en la cadena que lo contiene; i.e., el número de "
+"caracteres de espacio que preceden la primera entrada del ejemplo."
 
-#: ../../library/doctest.rst:1298
+#: ../Doc/library/doctest.rst:1298
 msgid ""
 "A dictionary mapping from option flags to ``True`` or ``False``, which is "
 "used to override default options for this example.  Any option flags not "
@@ -1945,121 +2034,120 @@ msgid ""
 "by the :class:`DocTestRunner`'s :attr:`optionflags`). By default, no options "
 "are set."
 msgstr ""
-"オプションフラグを ``True`` または ``False`` に対応付けている辞書です。実行例"
-"に対するデフォルトオプションを上書きするために用いられます。この辞書に入って"
-"いないオプションフラグはデフォルトの状態 (:class:`DocTestRunner` の :attr:"
-"`optionflags` の内容) のままになります。"
+"Un diccionario que mapea de las banderas de opciones a ``True`` o ``False``, "
+"que se usa para anular las opciones por defecto para este ejemplo. Cualquier "
+"bandera de opción que no contiene este diccionario se deja con su valor por "
+"defecto (como se especifica por los :attr:`optionflags` de :class:"
+"`DocTestRunner`). Por defecto, no se establece ninguna opción."
 
-#: ../../library/doctest.rst:1307
+#: ../Doc/library/doctest.rst:1307
 msgid "DocTestFinder objects"
-msgstr "DocTestFinder オブジェクト"
+msgstr "Objetos *DocTestFinder*"
 
-#: ../../library/doctest.rst:1312
+#: ../Doc/library/doctest.rst:1312
 msgid ""
 "A processing class used to extract the :class:`DocTest`\\ s that are "
 "relevant to a given object, from its docstring and the docstrings of its "
 "contained objects. :class:`DocTest`\\ s can be extracted from modules, "
 "classes, functions, methods, staticmethods, classmethods, and properties."
 msgstr ""
-"与えられたオブジェクトについて、そのオブジェクト自身の docstring か、そのオブ"
-"ジェクトに含まれるオブジェクトの docstring から :class:`DocTest` を抽出する処"
-"理クラスです。モジュール、クラス、関数、メソッド、静的メソッド、クラスメソッ"
-"ド、プロパティから :class:`DocTest` を抽出できます。"
+"Una clase de procesamiento que se usa para extraer los :class:`DocTest` que "
+"son relevantes para un objeto dado, desde su docstring y los docstring de "
+"sus objetos contenidos. Se puede extraer los :class:`DocTest` de los "
+"módulos, clases, funciones, métodos, métodos estáticos, métodos de clase, y "
+"propiedades."
 
-#: ../../library/doctest.rst:1317
+#: ../Doc/library/doctest.rst:1317
 msgid ""
 "The optional argument *verbose* can be used to display the objects searched "
 "by the finder.  It defaults to ``False`` (no output)."
 msgstr ""
-"オプション引数 *verbose* を使うと、抽出処理の対象となるオブジェクトを表示でき"
-"ます。デフォルトは ``False`` (出力を行わない) です。"
+"Se puede usar el argumento opcional *verbose* para mostrar los objetos "
+"buscados por *finder*. Su valor por defecto es ``False`` (ninguna salida)."
 
-#: ../../library/doctest.rst:1320
+#: ../Doc/library/doctest.rst:1320
 msgid ""
 "The optional argument *parser* specifies the :class:`DocTestParser` object "
 "(or a drop-in replacement) that is used to extract doctests from docstrings."
 msgstr ""
-"オプション引数 *parser* には、 docstring から :class:`DocTest` を抽出するのに"
-"使う :class:`DocTestParser` オブジェクト (またはその代替となるオブジェクト) "
-"を指定します。"
+"El argumento opcional *parser* especifica el objeto :class:`DocTestParser` "
+"(o un reemplazo directo) que se usa para extraer doctests desde docstrings."
 
-#: ../../library/doctest.rst:1323
+#: ../Doc/library/doctest.rst:1323
 msgid ""
 "If the optional argument *recurse* is false, then :meth:`DocTestFinder.find` "
 "will only examine the given object, and not any contained objects."
 msgstr ""
-"オプション引数 *recurse* が偽の場合、 :meth:`DocTestFinder.find` は与えられた"
-"オブジェクトだけを調べ、そのオブジェクトに含まれる他のオブジェクトを調べませ"
-"ん。"
+"Si el argumento opcional *recurse* es falso, entonces el método :meth:"
+"`DocTestFinder.find` sólo examinará el objeto dado, y no cualquier objeto "
+"contenido."
 
-#: ../../library/doctest.rst:1326
+#: ../Doc/library/doctest.rst:1326
 msgid ""
 "If the optional argument *exclude_empty* is false, then :meth:`DocTestFinder."
 "find` will include tests for objects with empty docstrings."
 msgstr ""
-"オプション引数 *exclude_empty* が偽の場合、 :meth:`DocTestFinder.find` は空"
-"の docstring を持つオブジェクトもテスト対象に含めます。"
+"Si el argumento opcional *exclude_empty* es falso, entonces :meth:"
+"`DocTestFinder.find` incluirá pruebas para objetos con docstrings vacíos."
 
-#: ../../library/doctest.rst:1330
+#: ../Doc/library/doctest.rst:1330
 msgid ":class:`DocTestFinder` defines the following method:"
-msgstr ":class:`DocTestFinder` では以下のメソッドを定義しています:"
+msgstr ":class:`DocTestFinder` define los siguientes métodos:"
 
-#: ../../library/doctest.rst:1335
+#: ../Doc/library/doctest.rst:1335
 msgid ""
 "Return a list of the :class:`DocTest`\\ s that are defined by *obj*'s "
 "docstring, or by any of its contained objects' docstrings."
 msgstr ""
-"*obj* または *obj* 内に入っているオブジェクトの docstring 中で定義されてい"
-"る :class:`DocTest` のリストを返します。"
+"Retorna una lista de los :class:`Doctest` que se definen por el docstring de "
+"*obj*, o por cualquiera de los docstring de sus objetos contenidos."
 
-#: ../../library/doctest.rst:1338
+#: ../Doc/library/doctest.rst:1338
 msgid ""
 "The optional argument *name* specifies the object's name; this name will be "
 "used to construct names for the returned :class:`DocTest`\\ s.  If *name* is "
 "not specified, then ``obj.__name__`` is used."
 msgstr ""
-"オプション引数 *name* には、オブジェクトの名前を指定します。この名前は、関数"
-"が返す :class:`DocTest` の名前になります。 *name* を指定しない場合、 ``obj."
-"__name__`` を使います。"
+"El argumento opcional *name* especifica el nombre del objeto; este nombre "
+"será usado para construir los nombres de los :class:`DocTest` retornados. Si "
+"*name* no se especifica, entonces se usa ``obj.__name__``."
 
-#: ../../library/doctest.rst:1342
+#: ../Doc/library/doctest.rst:1342
 msgid ""
 "The optional parameter *module* is the module that contains the given "
 "object. If the module is not specified or is ``None``, then the test finder "
 "will attempt to automatically determine the correct module.  The object's "
 "module is used:"
 msgstr ""
-"オプションのパラメータ *module* は、指定したオブジェクトを収めているモジュー"
-"ルを指定します。\n"
-"*module* を指定しないか、``None`` を指定した場合には、正しいモジュールを自動"
-"的に決定しようと試みます。\n"
-"オブジェクトのモジュールは以下のような役割を果たします:"
+"El parámetro opcional *module* es el módulo que contiene el objeto dado. Si "
+"no se especifica el módulo o si es ``None``, entonces el buscador de pruebas "
+"tratará de determinar automáticamente el módulo correcto. Se usa el módulo "
+"del objeto:"
 
-#: ../../library/doctest.rst:1346
+#: ../Doc/library/doctest.rst:1346
 msgid "As a default namespace, if *globs* is not specified."
-msgstr ""
-"*globs* を指定していない場合、オブジェクトのモジュールはデフォルトの名前空間"
-"になります。"
+msgstr "Como un espacio de nombres por defecto, si no se especifica *globs*."
 
-#: ../../library/doctest.rst:1348
+#: ../Doc/library/doctest.rst:1348
 msgid ""
 "To prevent the DocTestFinder from extracting DocTests from objects that are "
 "imported from other modules.  (Contained objects with modules other than "
 "*module* are ignored.)"
 msgstr ""
-"他のモジュールから import されたオブジェクトに対して :class:`DocTestFinder` "
-"が :class:`DocTest` を抽出するのを避けるために使います。 (*module* 由来でない"
-"オブジェクトを無視します。)"
+"Para evitar que *DocTestFinder* extraiga DocTests desde objetos que se "
+"importan desde otros módulos. (Se ignoran objetos contenidos con módulos "
+"aparte de *module*.)"
 
-#: ../../library/doctest.rst:1352
+#: ../Doc/library/doctest.rst:1352
 msgid "To find the name of the file containing the object."
-msgstr "オブジェクトの入っているファイル名を調べるために使います。"
+msgstr "Para encontrar el nombre del archivo conteniendo el objeto."
 
-#: ../../library/doctest.rst:1354
+#: ../Doc/library/doctest.rst:1354
 msgid "To help find the line number of the object within its file."
-msgstr "オブジェクトがファイル内の何行目にあるかを調べる手助けにします。"
+msgstr ""
+"Para ayudar a encontrar el número de línea del objeto dentro de su archivo."
 
-#: ../../library/doctest.rst:1356
+#: ../Doc/library/doctest.rst:1356
 msgid ""
 "If *module* is ``False``, no attempt to find the module will be made.  This "
 "is obscure, of use mostly in testing doctest itself: if *module* is "
@@ -2067,14 +2155,14 @@ msgid ""
 "objects are considered to belong to the (non-existent) module, so all "
 "contained objects will (recursively) be searched for doctests."
 msgstr ""
-"*module* が ``False`` の場合には、モジュールの検索を試みません。これは正確さ"
-"を欠くような使い方で、通常 doctest 自体のテストにしか使いません。*module* が "
-"``False`` の場合、または *module* が ``None`` で自動的に的確なモジュールを見"
-"つけ出せない場合には、すべてのオブジェクトは ``(non-existent)`` モジュールに"
-"属するとみなされ、そのオブジェクト内のすべてのオブジェクトに対して (再帰的"
-"に) doctest の検索を行います。"
+"Si *module* es falso, no se hará ningún intento de encontrar el módulo. Es "
+"poco claro, de uso mayormente para probar doctest en si mismo: si *module* "
+"es ``False``, o es ``None`` pero no se puede encontrar automáticamente, "
+"entonces todos los objetos se consideran que pertenecen al módulo "
+"(inexistente), por lo que todos los objetos contenidos se buscarán "
+"(recursivamente) por doctests."
 
-#: ../../library/doctest.rst:1362
+#: ../Doc/library/doctest.rst:1362
 msgid ""
 "The globals for each :class:`DocTest` is formed by combining *globs* and "
 "*extraglobs* (bindings in *extraglobs* override bindings in *globs*).  A new "
@@ -2083,85 +2171,85 @@ msgid ""
 "specified, or ``{}`` otherwise.  If *extraglobs* is not specified, then it "
 "defaults to ``{}``."
 msgstr ""
-"各 :class:`DocTest` のグローバル変数は、 *globs* と *extraglobs* を合わせたも"
-"の (*extraglobs* 内の束縛が *globs* 内の束縛を上書きする) になります。各々"
-"の :class:`DocTest` に対して、グローバル変数を表す辞書の新たな浅いコピーを生"
-"成します。 *globs* を指定しない場合に使われるのデフォルト値は、モジュールを指"
-"定していればそのモジュールの *__dict__* になり、指定していなければ ``{}`` に"
-"なります。 *extraglobs* を指定しない場合、デフォルトの値は ``{}`` になりま"
-"す。"
+"Los globales para cada :class:`DocTest` se forma al combinar *globs* y "
+"*extraglobs* (los enlaces en *extraglobs* anulan los enlaces en *globs*). Se "
+"crea una nueva copia superficial del diccionario de globales para cada :"
+"class:`DocTest`. Si *globs* no se especifica, entonces su valor por defecto "
+"es el *__dict__* del módulo, si se especifica, o es ``{}`` de lo contrario, "
+"si *extraglobs* no se especifica, entonces su valor por defecto es ``{}``."
 
-#: ../../library/doctest.rst:1373
+#: ../Doc/library/doctest.rst:1373
 msgid "DocTestParser objects"
-msgstr "DocTestParser オブジェクト"
+msgstr "Objetos *DocTestParser*"
 
-#: ../../library/doctest.rst:1378
+#: ../Doc/library/doctest.rst:1378
 msgid ""
 "A processing class used to extract interactive examples from a string, and "
 "use them to create a :class:`DocTest` object."
 msgstr ""
-"対話モードの実行例を文字列から抽出し、それを使って :class:`DocTest` オブジェ"
-"クトを生成するために使われる処理クラスです。"
+"Un clase de procesamiento usada para extraer ejemplos interactivos de una "
+"cadena de caracteres, y usarlos para crear un objeto :class:`DocTest`."
 
-#: ../../library/doctest.rst:1382 ../../library/doctest.rst:1450
+#: ../Doc/library/doctest.rst:1382 ../Doc/library/doctest.rst:1450
 msgid ":class:`DocTestParser` defines the following methods:"
-msgstr ":class:`DocTestParser` では以下のメソッドを定義しています:"
+msgstr ":class:`DocTestParser` define los siguientes métodos:"
 
-#: ../../library/doctest.rst:1387
+#: ../Doc/library/doctest.rst:1387
 msgid ""
 "Extract all doctest examples from the given string, and collect them into a :"
 "class:`DocTest` object."
 msgstr ""
-"指定した文字列からすべての doctest 実行例を抽出し、 :class:`DocTest` オブジェ"
-"クト内に集めます。"
+"Extrae todos los ejemplos de *doctest* de una cadena dada, y los recolecta "
+"en un objeto :class:`DocTest`."
 
-#: ../../library/doctest.rst:1390
+#: ../Doc/library/doctest.rst:1390
 msgid ""
 "*globs*, *name*, *filename*, and *lineno* are attributes for the new :class:"
 "`DocTest` object.  See the documentation for :class:`DocTest` for more "
 "information."
 msgstr ""
-"*globs*, *name*, *filename*, および *lineno* は新たに作成される :class:"
-"`DocTest` オブジェクトの属性になります。詳しくは :class:`DocTest` のドキュメ"
-"ントを参照してください。"
+"*globs*, *name*, *filename*, y *lineno* son atributos para el nuevo objeto :"
+"class:`DocTest`. Véase la documentación de :class:`DocTest` para más "
+"información."
 
-#: ../../library/doctest.rst:1397
+#: ../Doc/library/doctest.rst:1397
 msgid ""
 "Extract all doctest examples from the given string, and return them as a "
 "list of :class:`Example` objects.  Line numbers are 0-based.  The optional "
 "argument *name* is a name identifying this string, and is only used for "
 "error messages."
 msgstr ""
-"指定した文字列からすべての doctest 実行例を抽出し、 :class:`Example` オブジェ"
-"クトからなるリストにして返します。各 :class:`Example` の行番号は 0 から数えま"
-"す。オプション引数 *name* はこの文字列につける名前で、エラーメッセージにしか"
-"使われません。"
+"Extrae todos los ejemplos de la cadena de caracteres dada, y los retorna "
+"como una lista de objetos :class:`Example`. Los números de línea empiezan en "
+"0. El argumento opcional *name* es una nombre identificando esta cadena, y "
+"sólo es usada para mensajes de errores."
 
-#: ../../library/doctest.rst:1404
+#: ../Doc/library/doctest.rst:1404
 msgid ""
 "Divide the given string into examples and intervening text, and return them "
 "as a list of alternating :class:`Example`\\ s and strings. Line numbers for "
 "the :class:`Example`\\ s are 0-based.  The optional argument *name* is a "
 "name identifying this string, and is only used for error messages."
 msgstr ""
-"指定した文字列を、実行例とその間のテキストに分割し、実行例を :class:"
-"`Example` オブジェクトに変換し、 :class:`Example` と文字列からなるリストにし"
-"て返します。各 :class:`Example` の行番号は 0から数えます。オプション引数 "
-"*name* はこの文字列につける名前で、エラーメッセージにしか使われません。"
+"Divide el string dado en ejemplos y texto intermedio, y los retorna como una "
+"lista que alterna entre objetos :class:`Example` y cadenas de caracteres. "
+"Los números de línea para los objetos :class:`Example` empiezan en 0. El "
+"argumento opcional *name* es un nombre identificando esta cadena, y sólo se "
+"usa en mensajes de error."
 
-#: ../../library/doctest.rst:1413
+#: ../Doc/library/doctest.rst:1413
 msgid "DocTestRunner objects"
-msgstr "DocTestRunner オブジェクト"
+msgstr "Objetos *DocTestRunner*"
 
-#: ../../library/doctest.rst:1418
+#: ../Doc/library/doctest.rst:1418
 msgid ""
 "A processing class used to execute and verify the interactive examples in a :"
 "class:`DocTest`."
 msgstr ""
-":class:`DocTest` 内の対話モード実行例を実行し、検証する際に用いられる処理クラ"
-"スです。"
+"Una clase de procesamiento usada para ejecutar y verificar los ejemplos "
+"interactivos en un :class:`DocTest`."
 
-#: ../../library/doctest.rst:1421
+#: ../Doc/library/doctest.rst:1421
 msgid ""
 "The comparison between expected outputs and actual outputs is done by an :"
 "class:`OutputChecker`.  This comparison may be customized with a number of "
@@ -2170,13 +2258,14 @@ msgid ""
 "customized by passing a subclass of :class:`OutputChecker` to the "
 "constructor."
 msgstr ""
-"期待する出力と実際の出力との比較は :class:`OutputChecker` で行います。比較は"
-"様々なオプションフラグを使ってカスタマイズできます; 詳しくは :ref:`doctest-"
-"options` を参照してください。オプションフラグでは不十分な場合、コンストラクタ"
-"に :class:`OutputChecker` のサブクラスを渡して比較方法をカスタマイズできま"
-"す。"
+"La comparación entre salidas esperadas y salidas reales se hace por un :"
+"class:`OutputChecker`. Esta comparación puede ser personalizada con un "
+"número de banderas de opción; véase la sección :ref:`doctest-options` para "
+"más información. Si las banderas de opción son insuficientes, entonces la "
+"comparación también puede ser personalizada al pasar una subclase de :class:"
+"`OutputChecker` al constructor."
 
-#: ../../library/doctest.rst:1427
+#: ../Doc/library/doctest.rst:1427
 msgid ""
 "The test runner's display output can be controlled in two ways. First, an "
 "output function can be passed to :meth:`TestRunner.run`; this function will "
@@ -2186,25 +2275,27 @@ msgid ""
 "the methods :meth:`report_start`, :meth:`report_success`, :meth:"
 "`report_unexpected_exception`, and :meth:`report_failure`."
 msgstr ""
-"テストランナーの表示出力の制御には二つの方法があります。一つ目は、 :meth:"
-"`TestRunner.run` に出力用の関数を渡すというものです。この関数は、表示すべき文"
-"字列を引数にして呼び出されます。デフォルトは ``sys.stdout.write`` です。出力"
-"を取り込んで処理するだけでは不十分な場合、 :class:`DocTestRunner` をサブクラ"
-"ス化し、 :meth:`report_start`, :meth:`report_success`, :meth:"
-"`report_unexpected_exception`, および :meth:`report_failure` をオーバライドす"
-"ればカスタマイズできます。"
+"La salida de la pantalla del *test runner* se puede controlar de dos "
+"maneras. Primero, se puede pasar una función de salida a :meth:`TestRunner."
+"run`; esta función se invocará con cadenas que deben mostrarse. Su valor por "
+"defecto es ``sys.stdout.write``. Si no es suficiente capturar el resultado, "
+"entonces la salida de la pantalla también se puede personalizar al heredar "
+"de DocTestRunner, y sobreescribir los métodos :meth:`report_start`, :meth:"
+"`report_success`, :meth:`report_unexpected_exception`, y :meth:"
+"`report_failure`."
 
-#: ../../library/doctest.rst:1435
+#: ../Doc/library/doctest.rst:1435
 msgid ""
 "The optional keyword argument *checker* specifies the :class:`OutputChecker` "
 "object (or drop-in replacement) that should be used to compare the expected "
 "outputs to the actual outputs of doctest examples."
 msgstr ""
-"オプションのキーワード引数 *checker* には、 :class:`OutputChecker` オブジェク"
-"ト (またはその代替となるオブジェクト) を指定します。このオブジェクトは "
-"doctest 実行例の期待する出力と実際の出力との比較を行う際に使われます。"
+"El argumento por palabra clave opcional *checker* especifica el objeto :"
+"class:`OutputChecker` (o un reemplazo directo) que se debe usar para "
+"comparar las salidas esperadas con las salidas reales de los ejemplos de "
+"doctest."
 
-#: ../../library/doctest.rst:1439
+#: ../Doc/library/doctest.rst:1439
 msgid ""
 "The optional keyword argument *verbose* controls the :class:"
 "`DocTestRunner`'s verbosity.  If *verbose* is ``True``, then information is "
@@ -2212,157 +2303,163 @@ msgid ""
 "only failures are printed.  If *verbose* is unspecified, or ``None``, then "
 "verbose output is used iff the command-line switch ``-v`` is used."
 msgstr ""
-"オプションのキーワード引数 *verbose* は、 :class:`DocTestRunner` の出すメッ"
-"セージの冗長性を制御します。 *verbose* が ``True`` の場合、各実行例を実行する"
-"都度、その実行例についての情報を出力します。 *verbose* が ``False`` の場合、"
-"テストの失敗だけを出力します。 *verbose* を指定しない場合や ``None`` を指定し"
-"た場合、コマンドラインスイッチ ``-v`` を使った場合にのみ *verbose* 出力を適用"
-"します。"
+"El argumento por palabra clave opcional *verbose* controla la verbosidad de :"
+"class:`DocTestRunner`. Si *verbose* es ``True``, entonces la información de "
+"cada ejemplo se imprime , mientras se ejecuta. Si *verbose* es ``False``, "
+"entonces sólo las fallas se imprimen. Si *verbose* no se especifica, o es "
+"``None``, entonces la salida verbosa se usa si y sólo se usa el modificador "
+"de la línea de comandos ``-v``."
 
-#: ../../library/doctest.rst:1445
+#: ../Doc/library/doctest.rst:1445
 msgid ""
 "The optional keyword argument *optionflags* can be used to control how the "
 "test runner compares expected output to actual output, and how it displays "
 "failures. For more information, see section :ref:`doctest-options`."
 msgstr ""
-"オプションのキーワード引数 *optionflags* を使うと、テストランナーが期待される"
-"出力と実際の出力を比較する方法や、テストの失敗を表示する方法を制御できます。"
-"詳しくは :ref:`doctest-options` 節を参照してください。"
+"El argumento por palabra clave opcional *optionflags* se puede usar para "
+"controlar cómo el *test runner* compara la salida esperada con una salida "
+"real, y cómo muestra las fallas. Para más información, véase la sección :ref:"
+"`doctest-options`."
 
-#: ../../library/doctest.rst:1455
+#: ../Doc/library/doctest.rst:1455
 msgid ""
 "Report that the test runner is about to process the given example. This "
 "method is provided to allow subclasses of :class:`DocTestRunner` to "
 "customize their output; it should not be called directly."
 msgstr ""
-"テストランナーが実行例を処理しようとしているときにレポートを出力します。 :"
-"class:`DocTestRunner` の出力をサブクラスでカスタマイズできるようにするための"
-"メソッドです。直接呼び出してはなりません。"
+"Notifica que el *test runner* está a punto de procesar el ejemplo dado. Este "
+"método es proporcionado para permitir que clases heredadas de :class:"
+"`DocTestRunner` personalicen su salida; no debe ser invocado directamente."
 
-#: ../../library/doctest.rst:1459
+#: ../Doc/library/doctest.rst:1459
 msgid ""
 "*example* is the example about to be processed.  *test* is the test "
 "*containing example*.  *out* is the output function that was passed to :meth:"
 "`DocTestRunner.run`."
 msgstr ""
-"*example* は処理する実行例です。 *test* は *example* の入っているテストで"
-"す。 *out* は出力用の関数で、 :meth:`DocTestRunner.run` に渡されます。"
+"*example* es el ejemplo a punto de ser procesado. *test* es la prueba que "
+"contiene a *example*. *out* es la función de salida que se pasó a :meth:"
+"`DocTestRunner.run`."
 
-#: ../../library/doctest.rst:1466
+#: ../Doc/library/doctest.rst:1466
 msgid ""
 "Report that the given example ran successfully.  This method is provided to "
 "allow subclasses of :class:`DocTestRunner` to customize their output; it "
 "should not be called directly."
 msgstr ""
-"与えられた実行例が正しく動作したことを報告します。このメソッドは :class:"
-"`DocTestRunner` のサブクラスで出力をカスタマイズできるようにするために提供さ"
-"れています; 直接呼び出してはなりません。"
+"Notifica que el ejemplo dado se ejecutó correctamente. Este método es "
+"proporcionado para permitir que las clases heredadas de :class:"
+"`DocTestRunner` personalicen su salida; no debe ser invocado directamente."
 
-#: ../../library/doctest.rst:1470 ../../library/doctest.rst:1481
+#: ../Doc/library/doctest.rst:1470 ../Doc/library/doctest.rst:1481
 msgid ""
 "*example* is the example about to be processed.  *got* is the actual output "
 "from the example.  *test* is the test containing *example*.  *out* is the "
 "output function that was passed to :meth:`DocTestRunner.run`."
 msgstr ""
-"*example* は処理する実行例です。 *got* は実行例から実際に得られた出力です。 "
-"*test* は *example* の入っているテストです。 *out* は出力用の関数で、 :meth:"
-"`DocTestRunner.run` に渡されます。"
+"*example* es el ejemplo a punto de ser procesado. *got* es la salida real "
+"del ejemplo. *test* es la prueba conteniendo *example*. *out* es la función "
+"de salida que se pasa a :meth:`DocTestRunner.run`."
 
-#: ../../library/doctest.rst:1477
+#: ../Doc/library/doctest.rst:1477
 msgid ""
 "Report that the given example failed.  This method is provided to allow "
 "subclasses of :class:`DocTestRunner` to customize their output; it should "
 "not be called directly."
 msgstr ""
-"与えられた実行例が正しく動作しなかったことを報告します。このメソッドは :"
-"class:`DocTestRunner` のサブクラスで出力をカスタマイズできるようにするために"
-"提供されています; 直接呼び出してはなりません。"
+"Notifica que el ejemplo dado falló. Este método es proporcionado para "
+"permitir que clases heredadas de :class:`DocTestRunner` personalicen su "
+"salida; no debe ser invocado directamente."
 
-#: ../../library/doctest.rst:1488
+#: ../Doc/library/doctest.rst:1488
 msgid ""
 "Report that the given example raised an unexpected exception. This method is "
 "provided to allow subclasses of :class:`DocTestRunner` to customize their "
 "output; it should not be called directly."
 msgstr ""
-"与えられた実行例が期待とは違う例外を送出したことを報告します。このメソッド"
-"は :class:`DocTestRunner` のサブクラスで出力をカスタマイズできるようにするた"
-"めに提供されています; 直接呼び出してはなりません。"
+"Notifica que el ejemplo dado lanzó una excepción inesperada. Este método es "
+"proporcionado para permitir que las clases heredadas de :class:"
+"`DocTestRunner` personalicen su salida; no debe ser invocado directamente."
 
-#: ../../library/doctest.rst:1492
+#: ../Doc/library/doctest.rst:1492
 msgid ""
 "*example* is the example about to be processed. *exc_info* is a tuple "
 "containing information about the unexpected exception (as returned by :func:"
 "`sys.exc_info`). *test* is the test containing *example*.  *out* is the "
 "output function that was passed to :meth:`DocTestRunner.run`."
 msgstr ""
-"*example* は処理する実行例です。 *exc_info* には予期せず送出された例外の情報"
-"を入れたタプル (:func:`sys.exc_info` の返す内容) になります。 *test* は "
-"*example* の入っているテストです。 *out* は出力用の関数で、 :meth:"
-"`DocTestRunner.run` に渡されます。"
+"*example* es el ejemplo a punto de ser procesado, *exc_info* es una tupla "
+"que contiene información sobre la excepción inesperada (como se retorna por :"
+"func:`sys.exc_info`). *test* es la prueba conteniendo *example*. *out* es la "
+"función de salida que debe ser pasada a :meth:`DocTestRunner.run`."
 
-#: ../../library/doctest.rst:1500
+#: ../Doc/library/doctest.rst:1500
 msgid ""
 "Run the examples in *test* (a :class:`DocTest` object), and display the "
 "results using the writer function *out*."
 msgstr ""
-"*test* 内の実行例 (:class:`DocTest` オブジェクト) を実行し、その結果を出力用"
-"の関数 *out* を使って表示します。"
+"Ejecuta los ejemplos en *test* (un objeto :class:`DocTest`), y muestra los "
+"resultados usando función de escritura *out*."
 
-#: ../../library/doctest.rst:1503
+#: ../Doc/library/doctest.rst:1503
 msgid ""
 "The examples are run in the namespace ``test.globs``.  If *clear_globs* is "
 "true (the default), then this namespace will be cleared after the test runs, "
 "to help with garbage collection. If you would like to examine the namespace "
 "after the test completes, then use *clear_globs=False*."
 msgstr ""
-"実行例は名前空間 ``test.globs`` の下で実行されます。*clear_globs* が真 (デ"
-"フォルト) の場合、名前空間はテストの実行後に消去され、ガベージコレクションを"
-"促します。テストの実行完了後にその内容を調べたければ、*clear_globs=False* と"
-"してください。"
+"Los ejemplo se ejecutan en el espacio de nombres ``test.globs``. Si "
+"*clear_globs* es verdadero (el valor por defecto), entonces este espacio de "
+"nombres será limpiado después de la prueba se ejecute, para ayudar con la "
+"colección de basura. Si quisieras examinar el espacio de nombres después de "
+"que la prueba se complete, entonces use *clear_globs=False*."
 
-#: ../../library/doctest.rst:1508
+#: ../Doc/library/doctest.rst:1508
 msgid ""
 "*compileflags* gives the set of flags that should be used by the Python "
 "compiler when running the examples.  If not specified, then it will default "
 "to the set of future-import flags that apply to *globs*."
 msgstr ""
-"*compileflags* には、実行例を実行する際に Python コンパイラに適用するフラグ"
-"セットを指定します。*compileflags* を指定しない場合、デフォルト値は *globs* "
-"で適用されている future-import フラグセットになります。"
+"*compileflags* da el conjunto de banderas que se deben usar por el "
+"compilador de Python cuando se ejecutan los ejemplos. Si no se especifica, "
+"entonces su valor por defecto será el conjunto de banderas de *future-"
+"import* que aplican a *globs*."
 
-#: ../../library/doctest.rst:1512
+#: ../Doc/library/doctest.rst:1512
 msgid ""
 "The output of each example is checked using the :class:`DocTestRunner`'s "
 "output checker, and the results are formatted by the :meth:`DocTestRunner."
 "report_\\*` methods."
 msgstr ""
-"各実行例の出力は :class:`DocTestRunner` の出力チェッカで検査され、その結果"
-"は :meth:`DocTestRunner.report_\\*` メソッドで書式化されます。"
+"La salida de cada ejemplo es revisada usando el *output checker* del :class:"
+"`DocTestRunner`, y los resultados se formatean por los métodos de :meth:"
+"`DocTestRunner.report_\\*`."
 
-#: ../../library/doctest.rst:1519
+#: ../Doc/library/doctest.rst:1519
 msgid ""
 "Print a summary of all the test cases that have been run by this "
 "DocTestRunner, and return a :term:`named tuple` ``TestResults(failed, "
 "attempted)``."
 msgstr ""
-"この DocTestRunner が実行したすべてのテストケースのサマリを出力し、 :term:`名"
-"前付きタプル <named tuple>` ``TestResults(failed, attempted)`` を返します。"
+"Imprime un resumen de todos los casos de prueba que han sido ejecutados por "
+"este *DocTestRunner*, y retorna un :term:`named tuple` ``TestResults(failed, "
+"attempted)``."
 
-#: ../../library/doctest.rst:1522
+#: ../Doc/library/doctest.rst:1522
 msgid ""
 "The optional *verbose* argument controls how detailed the summary is.  If "
 "the verbosity is not specified, then the :class:`DocTestRunner`'s verbosity "
 "is used."
 msgstr ""
-"オプションの *verbose* 引数を使うと、どのくらいサマリを詳しくするかを制御でき"
-"ます。冗長度を指定しない場合、 :class:`DocTestRunner` 自体の冗長度を使いま"
-"す。"
+"El argumento opcional *verbose* controla qué tan detallado es el resumen. Si "
+"no se especifica la verbosidad, entonces se usa la verbosidad de :class:"
+"`DocTestRunner`."
 
-#: ../../library/doctest.rst:1529
+#: ../Doc/library/doctest.rst:1529
 msgid "OutputChecker objects"
-msgstr "OutputChecker オブジェクト"
+msgstr "Objetos *OutputChecker*"
 
-#: ../../library/doctest.rst:1534
+#: ../Doc/library/doctest.rst:1534
 msgid ""
 "A class used to check the whether the actual output from a doctest example "
 "matches the expected output.  :class:`OutputChecker` defines two methods: :"
@@ -2370,17 +2467,17 @@ msgid ""
 "``True`` if they match; and :meth:`output_difference`, which returns a "
 "string describing the differences between two outputs."
 msgstr ""
-"doctest 実行例を実際に実行したときの出力が期待する出力と一致するかどうかを"
-"チェックするために使われるクラスです。\n"
-":class:`OutputChecker` では、与えられた二つの出力を比較して、一致する場合に"
-"は ``True`` を返す :meth:`check_output` と、二つの出力間の違いを説明する文字"
-"列を返す :meth:`output_difference` の、二つのメソッドがあります。"
+"Una clase que se usa para verificar si la salida real de un ejemplo de "
+"doctest coincide con la salida esperada. :class:`OutputChecker` define dos "
+"métodos: :meth:`check_output`, que compara un par de salidas dadas, y "
+"retorna ``True`` si coinciden; y :meth:`output_difference`, que retorna una "
+"cadena que describe las diferencias entre las dos salidas."
 
-#: ../../library/doctest.rst:1541
+#: ../Doc/library/doctest.rst:1541
 msgid ":class:`OutputChecker` defines the following methods:"
-msgstr ":class:`OutputChecker` では以下のメソッドを定義しています:"
+msgstr ":class:`OutputChecker` define los siguientes métodos:"
 
-#: ../../library/doctest.rst:1545
+#: ../Doc/library/doctest.rst:1545
 msgid ""
 "Return ``True`` iff the actual output from an example (*got*) matches the "
 "expected output (*want*).  These strings are always considered to match if "
@@ -2388,118 +2485,120 @@ msgid ""
 "using, several non-exact match types are also possible.  See section :ref:"
 "`doctest-options` for more information about option flags."
 msgstr ""
-"実行例から実際に得られた出力 (*got*) と、期待する出力 (*want*) が一致する場合"
-"にのみ ``True`` を返します。二つの文字列がまったく同一の場合には常に一致する"
-"とみなしますが、テストランナーの使っているオプションフラグにより、厳密には同"
-"じ内容になっていなくても一致するとみなす場合もあります。オプションフラグにつ"
-"いての詳しい情報は :ref:`doctest-options` 節を参照してください。"
+"Retorna ``True`` si y sólo si la salida real de un ejemplo (*got*) coincide "
+"con la salida esperada (*want*). Siempre se considera que estas cadenas "
+"coinciden si son idénticas; pero dependiendo de qué banderas de opción el "
+"*test runner* esté usando, varias coincidencias inexactas son posibles. "
+"Véase la sección :ref:`doctest-options` para más información sobre las "
+"banderas de opción."
 
-#: ../../library/doctest.rst:1554
+#: ../Doc/library/doctest.rst:1554
 msgid ""
 "Return a string describing the differences between the expected output for a "
 "given example (*example*) and the actual output (*got*).  *optionflags* is "
 "the set of option flags used to compare *want* and *got*."
 msgstr ""
-"与えられた実行例 (*example*) の期待する出力と、実際に得られた出力 (*got*) の"
-"間の差異を解説している文字列を返します。*optionflags* は *want* と *got* を比"
-"較する際に使われるオプションフラグのセットです。"
+"Retorna una cadena que describe las diferencias entre la salida esperada "
+"para un ejemplo dado (*example*) y la salida real (*got*). *optionflags* es "
+"el conjunto de banderas de opción usado para comparar *want* y *got*."
 
-#: ../../library/doctest.rst:1562
+#: ../Doc/library/doctest.rst:1562
 msgid "Debugging"
-msgstr "デバッグ"
+msgstr "Depuración"
 
-#: ../../library/doctest.rst:1564
+#: ../Doc/library/doctest.rst:1564
 msgid "Doctest provides several mechanisms for debugging doctest examples:"
 msgstr ""
-":mod:`doctest` では、doctest 実行例をデバッグするメカニズムをいくつか提供して"
-"います:"
+"Doctest proporciona varios mecanismos para depurar los ejemplos de doctest:"
 
-#: ../../library/doctest.rst:1566
+#: ../Doc/library/doctest.rst:1566
 msgid ""
 "Several functions convert doctests to executable Python programs, which can "
 "be run under the Python debugger, :mod:`pdb`."
 msgstr ""
-"doctest を実行可能な Python プログラムに変換し、 Python デバッガ :mod:`pdb` "
-"で実行できるようにするための関数がいくつかあります。"
+"Varias funciones convierten los doctest en programas de Python ejecutables, "
+"que pueden ser ejecutadas bajo el depurador de Python, :mod:`pdb`."
 
-#: ../../library/doctest.rst:1569
+#: ../Doc/library/doctest.rst:1569
 msgid ""
 "The :class:`DebugRunner` class is a subclass of :class:`DocTestRunner` that "
 "raises an exception for the first failing example, containing information "
 "about that example. This information can be used to perform post-mortem "
 "debugging on the example."
 msgstr ""
-":class:`DocTestRunner` のサブクラス :class:`DebugRunner` クラスがあります。こ"
-"のクラスは、最初に失敗した実行例に対して例外を送出します。例外には実行例に関"
-"する情報が入っています。この情報は実行例の検死デバッグに利用できます。"
+"La clase :class:`DebugRunner` es una subclase de :class:`DocTestRunner` que "
+"lanza una excepción por el primer ejemplo fallido, conteniendo información "
+"sobre ese ejemplo. Esta información se puede usar para realizar depuración a "
+"posteriori en el ejemplo."
 
-#: ../../library/doctest.rst:1574
+#: ../Doc/library/doctest.rst:1574
 msgid ""
 "The :mod:`unittest` cases generated by :func:`DocTestSuite` support the :"
 "meth:`debug` method defined by :class:`unittest.TestCase`."
 msgstr ""
-":func:`DocTestSuite` の生成する :mod:`unittest` テストケースは、 :meth:"
-"`debug` メソッドをサポートしています。 :meth:`debug` は :class:`unittest."
-"TestCase` で定義されています。"
+"Los casos de :mod:`unittest` generados por :func:`DocTestSuite` admiten el "
+"método :meth:`debug` definido por :class:`unittest.TestCase`."
 
-#: ../../library/doctest.rst:1577
+#: ../Doc/library/doctest.rst:1577
 msgid ""
 "You can add a call to :func:`pdb.set_trace` in a doctest example, and you'll "
 "drop into the Python debugger when that line is executed.  Then you can "
 "inspect current values of variables, and so on.  For example, suppose :file:"
 "`a.py` contains just this module docstring::"
 msgstr ""
-":func:`pdb.set_trace` を doctest 実行例の中で呼び出しておけば、その行が実行さ"
-"れたときに Python デバッガが組み込まれます。デバッガを組み込んだあとは、変数"
-"の現在の値などを調べられます。たとえば、以下のようなモジュールレベルの "
-"docstring の入ったファイル :file:`a.py` があるとします::"
+"Puedes añadir una llamada a :func:`pdb.set_trace` en un ejemplo de doctest, "
+"y bajarás al depurador de Python cuando esa línea sea ejecutada. Entonces "
+"puedes inspeccionar los valores de las variables, y demás. Por ejemplo, "
+"supongamos que :file:`a.py` contiene sólo este docstring de módulo::"
 
-#: ../../library/doctest.rst:1592
+#: ../Doc/library/doctest.rst:1592
 msgid "Then an interactive Python session may look like this::"
-msgstr "対話セッションは以下のようになるでしょう::"
+msgstr "Entonces una sesión interactiva puede lucir como esta::"
 
-#: ../../library/doctest.rst:1625
+#: ../Doc/library/doctest.rst:1625
 msgid ""
 "Functions that convert doctests to Python code, and possibly run the "
 "synthesized code under the debugger:"
 msgstr ""
-"以下は、doctest を Python コードに変換して、できたコードをデバッガ下で実行で"
-"きるようにするための関数です:"
+"Funciones que convierten los doctest a código de Python, y posiblemente "
+"ejecuten el código sintetizado debajo del depurador:"
 
-#: ../../library/doctest.rst:1631
+#: ../Doc/library/doctest.rst:1631
 msgid "Convert text with examples to a script."
-msgstr "実行例の入ったテキストをスクリプトに変換します。"
+msgstr "Convierte texto con ejemplos a un script."
 
-#: ../../library/doctest.rst:1633
+#: ../Doc/library/doctest.rst:1633
 msgid ""
 "Argument *s* is a string containing doctest examples.  The string is "
 "converted to a Python script, where doctest examples in *s* are converted to "
 "regular code, and everything else is converted to Python comments.  The "
 "generated script is returned as a string. For example, ::"
 msgstr ""
-"引数 *s* は doctest 実行例の入った文字列です。この文字列は Python スクリプト"
-"に変換され、その中では *s* の doctest 実行例が通常のコードに、それ以外は "
-"Python のコメント文になります。生成したスクリプトを文字列で返します。例え"
-"ば、 ::"
+"El argumento *s* es una cadena que contiene los ejemplos de doctest. La "
+"cadena se convierte a un script de Python, donde los ejemplos de doctest en "
+"*s* se convierten en código regular, y todo lo demás se convierte en "
+"comentarios de Python. El script generado se retorna como una cadena, Por "
+"ejemplo, ::"
 
-#: ../../library/doctest.rst:1648
+#: ../Doc/library/doctest.rst:1648
 msgid "displays::"
-msgstr "は::"
+msgstr "muestra::"
 
-#: ../../library/doctest.rst:1658
+#: ../Doc/library/doctest.rst:1658
 msgid ""
 "This function is used internally by other functions (see below), but can "
 "also be useful when you want to transform an interactive Python session into "
 "a Python script."
 msgstr ""
-"この関数は内部的に他の関数から使われていますが (下記参照)、対話セッションを "
-"Python スクリプトに変換したいような場合にも便利でしょう。"
+"Esta función se usa internamente por otras funciones (véase más abajo), pero "
+"también pueden ser útiles cuando quieres transformar una sesión de Python "
+"interactiva en un script de Python."
 
-#: ../../library/doctest.rst:1665
+#: ../Doc/library/doctest.rst:1665
 msgid "Convert the doctest for an object to a script."
-msgstr "あるオブジェクトの doctest をスクリプトに変換します。"
+msgstr "Convierte el doctest para un objeto en un script."
 
-#: ../../library/doctest.rst:1667
+#: ../Doc/library/doctest.rst:1667
 msgid ""
 "Argument *module* is a module object, or dotted name of a module, containing "
 "the object whose doctests are of interest.  Argument *name* is the name "
@@ -2508,45 +2607,47 @@ msgid ""
 "as described for :func:`script_from_examples` above.  For example, if "
 "module :file:`a.py` contains a top-level function :func:`f`, then ::"
 msgstr ""
-"引数 *module* はモジュールオブジェクトか、対象の doctest を持つオブジェクトの"
-"入ったモジュールのドット表記名です。引数 *name* は対象の doctest を持つオブ"
-"ジェクトの (モジュール内の) 名前です。対象オブジェクトの docstring を上記の :"
-"func:`script_from_examples` で説明した方法で Python スクリプトに変換してでき"
-"た文字列を返します。例えば、 :file:`a.py` モジュールのトップレベルに関数 :"
-"func:`f` がある場合、以下のコード ::"
+"El argumento *module* es un objeto módulo, o un nombre por puntos de un "
+"módulo, que contiene el objeto cuyos doctest son de interés. El argumento "
+"*name* es el nombre (dentro del módulo) del objeto con los doctest de "
+"interés. El resultado es una cadena de caracteres, que contiene el docstring "
+"del objeto convertido en un script de Python, como se describe por :func:"
+"`script_from_examples` arriba. Por ejemplo, si el módulo :file:`a.py` "
+"contiene un función de alto nivel :func:`f`, entonces ::"
 
-#: ../../library/doctest.rst:1677
+#: ../Doc/library/doctest.rst:1677
 msgid ""
 "prints a script version of function :func:`f`'s docstring, with doctests "
 "converted to code, and the rest placed in comments."
 msgstr ""
-"を実行すると、 :func:`f` の docstring から doctest をコードに変換し、それ以外"
-"をコメントにしたスクリプトを出力します。"
+"imprime una versión de script del docstring de la función :func:`f`, con los "
+"doctest convertidos en código, y el resto puesto en comentarios."
 
-#: ../../library/doctest.rst:1683
+#: ../Doc/library/doctest.rst:1683
 msgid "Debug the doctests for an object."
-msgstr "オブジェクトの持つ doctest をデバッグします。"
+msgstr "Depura los doctest para un objeto."
 
-#: ../../library/doctest.rst:1685
+#: ../Doc/library/doctest.rst:1685
 msgid ""
 "The *module* and *name* arguments are the same as for function :func:"
 "`testsource` above.  The synthesized Python script for the named object's "
 "docstring is written to a temporary file, and then that file is run under "
 "the control of the Python debugger, :mod:`pdb`."
 msgstr ""
-"*module* および *name* 引数は上の :func:`testsource` と同じです。指定したオブ"
-"ジェクトの docstring から合成された Python スクリプトは一時ファイルに書き出さ"
-"れ、その後 Python デバッガ :mod:`pdb` の制御下で実行されます。"
+"Los argumentos *module* y *name* son los mismos que para la función :func:"
+"`testsource` arriba. El script de Python sintetizado para el docstring del "
+"objeto nombrado es escrito en un archivo temporal, y entonces ese archivo es "
+"ejecutado bajo el control del depurador de PYthon, :mod:`pdb`."
 
-#: ../../library/doctest.rst:1690
+#: ../Doc/library/doctest.rst:1690
 msgid ""
 "A shallow copy of ``module.__dict__`` is used for both local and global "
 "execution context."
 msgstr ""
-"ローカルおよびグローバルの実行コンテキストには、``module.__dict__`` の浅いコ"
-"ピーが使われます。"
+"Se usa una copia superficial de ``module.__dict__`` para el contexto de "
+"ejecución local y global."
 
-#: ../../library/doctest.rst:1693
+#: ../Doc/library/doctest.rst:1693
 msgid ""
 "Optional argument *pm* controls whether post-mortem debugging is used.  If "
 "*pm* has a true value, the script file is run directly, and the debugger "
@@ -2557,56 +2658,60 @@ msgid ""
 "the debugger from the start, via passing an appropriate :func:`exec` call "
 "to :func:`pdb.run`."
 msgstr ""
-"オプション引数 *pm* は、検死デバッグを行うかどうかを指定します。 *pm* が真の"
-"場合、スクリプトファイルは直接実行され、スクリプトが送出した例外が処理されな"
-"いまま終了した場合にのみデバッガが立ち入ります。その場合、 :func:`pdb."
-"post_mortem` によって検死デバッグを起動し、処理されなかった例外から得られたト"
-"レースバックオブジェクトを渡します。 *pm* を指定しないか値を偽にした場合、 :"
-"func:`pdb.run` に適切な :func:`exec` 呼び出しを渡して、最初からデバッガの下で"
-"スクリプトを実行します。"
+"El argumento opcional *pm* controla si se usa la depuración post-mortem. Si "
+"*pm* tiene un valor verdadero, el archivo de script es ejecutado "
+"directamente, y el depurador está involucrado sólo si el script termina a "
+"través del lanzamiento de una excepción. Si lo hace, entonces la depuración "
+"post-mortem es invocada, a través de :func:`pdb.post_mortem`, pasando el "
+"objeto de rastreo desde la excepción sin tratar. Si no se especifica *pm*, o "
+"si es falso, el script se ejecuta bajo el depurador desde el inicio, a "
+"través de una llamada de :func:`exec` apropiada a :func:`pdb.run`."
 
-#: ../../library/doctest.rst:1704
+#: ../Doc/library/doctest.rst:1704
 msgid "Debug the doctests in a string."
-msgstr "文字列中の doctest をデバッグします。"
+msgstr "Depura los doctest en una cadena de caracteres."
 
-#: ../../library/doctest.rst:1706
+#: ../Doc/library/doctest.rst:1706
 msgid ""
 "This is like function :func:`debug` above, except that a string containing "
 "doctest examples is specified directly, via the *src* argument."
 msgstr ""
-"上の :func:`debug` に似ていますが、doctest の入った文字列は *src* 引数で直接"
-"指定します。"
+"Es como la función function :func:`debug` arriba, excepto que una cadena de "
+"caracteres que contiene los ejemplos de doctest se especifica directamente, "
+"a través del argumento *src*."
 
-#: ../../library/doctest.rst:1709
+#: ../Doc/library/doctest.rst:1709
 msgid ""
 "Optional argument *pm* has the same meaning as in function :func:`debug` "
 "above."
-msgstr "オプション引数 *pm* は上の :func:`debug` と同じ意味です。"
+msgstr ""
+"El argumento opcional *pm* tiene el mismo significado como en la función :"
+"func:`debug` arriba."
 
-#: ../../library/doctest.rst:1711
+#: ../Doc/library/doctest.rst:1711
 msgid ""
 "Optional argument *globs* gives a dictionary to use as both local and global "
 "execution context.  If not specified, or ``None``, an empty dictionary is "
 "used. If specified, a shallow copy of the dictionary is used."
 msgstr ""
-"オプション引数 *globs* には、ローカルおよびグローバルな実行コンテキストの両方"
-"に使われる辞書を指定します。*globs* を指定しない場合や ``None`` にした場合、"
-"空の辞書を使います。辞書を指定した場合、実際の実行コンテキストには浅いコピー"
-"が使われます。"
+"El argumento opcional *globs* proporciona un diccionario a usar como "
+"contexto de ejecución local y global. Si no se especifica, o es ``None``, se "
+"usa un diccionario vacío. Si se especifica, se usa una copia superficial del "
+"diccionario."
 
-#: ../../library/doctest.rst:1716
+#: ../Doc/library/doctest.rst:1716
 msgid ""
 "The :class:`DebugRunner` class, and the special exceptions it may raise, are "
 "of most interest to testing framework authors, and will only be sketched "
 "here.  See the source code, and especially :class:`DebugRunner`'s docstring "
 "(which is a doctest!) for more details:"
 msgstr ""
-":class:`DebugRunner` クラス自体や :class:`DebugRunner` クラスが送出する特殊な"
-"例外は、テストフレームワークの作者にとって非常に興味のあるところですが、ここ"
-"では概要しか述べられません。詳しくはソースコード、とりわけ :class:"
-"`DebugRunner` の docstring (それ自体 doctest です!) を参照してください:"
+"La clase :class:`DebugRunner`, y las excepciones especiales que puede "
+"lanzar, son de más interés a los autores de frameworks de pruebas, y sólo "
+"serán descritos brevemente aquí. Véase el código fuente, y especialmente el "
+"docstring de :class:`DebugRunner` (¡que es un doctest!) para más detalles:"
 
-#: ../../library/doctest.rst:1724
+#: ../Doc/library/doctest.rst:1724
 msgid ""
 "A subclass of :class:`DocTestRunner` that raises an exception as soon as a "
 "failure is encountered.  If an unexpected exception occurs, an :exc:"
@@ -2615,112 +2720,117 @@ msgid ""
 "`DocTestFailure` exception is raised, containing the test, the example, and "
 "the actual output."
 msgstr ""
-"テストの失敗に遭遇するとすぐに例外を送出するようになっている :class:"
-"`DocTestRunner` のサブクラスです。予期しない例外が生じると、 :exc:"
-"`UnexpectedException` 例外を送出します。この例外には、テスト、実行例、もとも"
-"と送出された例外が入っています。期待する出力と実際の出力が一致しないために失"
-"敗した場合には、 :exc:`DocTestFailure` 例外を送出します。この例外には、テス"
-"ト、実行例、実際の出力が入っています。"
+"Una subclase de :class:`DocTestRunner` que lanza una excepción tan pronto "
+"como se encuentra una falla. Si ocurre una excepción inesperada, se lanza "
+"una excepción :exc:`UnexpectedException`, conteniendo la prueba, el ejemplo, "
+"y la excepción original. Si la salida no coincide, entonces se lanza una "
+"excepción :exc:`DocTestFailure`, conteniendo la prueba, el ejemplo, y la "
+"salida real."
 
-#: ../../library/doctest.rst:1731
+#: ../Doc/library/doctest.rst:1731
 msgid ""
 "For information about the constructor parameters and methods, see the "
 "documentation for :class:`DocTestRunner` in section :ref:`doctest-advanced-"
 "api`."
 msgstr ""
-"コンストラクタのパラメータやメソッドについては、 :ref:`doctest-advanced-api` "
-"節の :class:`DocTestRunner` のドキュメントを参照してください。"
+"Para información sobre los parámetros de construcción y los métodos, véase "
+"la documentación para :class:`DocTestRunner` en la sección :ref:`doctest-"
+"advanced-api`."
 
-#: ../../library/doctest.rst:1734
+#: ../Doc/library/doctest.rst:1734
 msgid ""
 "There are two exceptions that may be raised by :class:`DebugRunner` "
 "instances:"
 msgstr ""
-":class:`DebugRunner` インスタンスの送出する例外には以下の二つがあります:"
+"Hay dos excepciones que se pueden lanzar por instancias de :class:"
+"`DebugRunner`:"
 
-#: ../../library/doctest.rst:1739
+#: ../Doc/library/doctest.rst:1739
 msgid ""
 "An exception raised by :class:`DocTestRunner` to signal that a doctest "
 "example's actual output did not match its expected output. The constructor "
 "arguments are used to initialize the attributes of the same names."
 msgstr ""
-"doctest 実行例の実際の出力が期待する出力と一致しなかったことを示すために :"
-"class:`DocTestRunner` が送出する例外です。コンストラクタの引数は、インスタン"
-"スの同名の属性を初期化するために使われます。"
+"Una excepción lanzada por :class:`DocTestRunner` para señalar que la salida "
+"real del ejemplo de un doctest no coincidió con su salida esperada. Los "
+"argumentos del constructor se usan para inicializar los atributos del mismo "
+"nombre."
 
-#: ../../library/doctest.rst:1743
+#: ../Doc/library/doctest.rst:1743
 msgid ":exc:`DocTestFailure` defines the following attributes:"
-msgstr ":exc:`DocTestFailure` では以下の属性を定義しています:"
+msgstr ":exc:`DocTestFailure` define los siguientes atributos:"
 
-#: ../../library/doctest.rst:1748 ../../library/doctest.rst:1772
+#: ../Doc/library/doctest.rst:1748 ../Doc/library/doctest.rst:1772
 msgid "The :class:`DocTest` object that was being run when the example failed."
-msgstr "実行例が失敗した時に実行されていた :class:`DocTest` オブジェクトです。"
+msgstr ""
+"El objeto :class:`DocTest` que estaba siendo ejecutado cuando el ejemplo "
+"falló."
 
-#: ../../library/doctest.rst:1753 ../../library/doctest.rst:1777
+#: ../Doc/library/doctest.rst:1753 ../Doc/library/doctest.rst:1777
 msgid "The :class:`Example` that failed."
-msgstr "失敗した :class:`Example` オブジェクトです。"
+msgstr "El objeto :class:`Example` que falló."
 
-#: ../../library/doctest.rst:1758
+#: ../Doc/library/doctest.rst:1758
 msgid "The example's actual output."
-msgstr "実行例の実際の出力です。"
+msgstr "La salida real del ejemplo."
 
-#: ../../library/doctest.rst:1763
+#: ../Doc/library/doctest.rst:1763
 msgid ""
 "An exception raised by :class:`DocTestRunner` to signal that a doctest "
 "example raised an unexpected exception.  The constructor arguments are used "
 "to initialize the attributes of the same names."
 msgstr ""
-"doctest 実行例が予期しない例外を送出したことを示すために :class:"
-"`DocTestRunner` が送出する例外です。コンストラクタの引数は、インスタンスの同"
-"名の属性を初期化するために使われます。"
+"Una excepción lanzada por :class:`DocTestRunner` para señalar que un ejemplo "
+"de doctest lanzó una excepción inesperada. Los argumentos del constructor se "
+"usan para inicializar los atributos del mismo nombre."
 
-#: ../../library/doctest.rst:1767
+#: ../Doc/library/doctest.rst:1767
 msgid ":exc:`UnexpectedException` defines the following attributes:"
-msgstr ":exc:`UnexpectedException` では以下の属性を定義しています:"
+msgstr ":exc:`UnexpectedException` define los siguientes atributos:"
 
-#: ../../library/doctest.rst:1782
+#: ../Doc/library/doctest.rst:1782
 msgid ""
 "A tuple containing information about the unexpected exception, as returned "
 "by :func:`sys.exc_info`."
 msgstr ""
-"予期しない例外についての情報の入ったタプルで、 :func:`sys.exc_info` が返すの"
-"と同じものです。"
+"Una tupla que contiene información sobre la excepción inesperada, como es "
+"retornado por :func:`sys.exc_info`."
 
-#: ../../library/doctest.rst:1789
+#: ../Doc/library/doctest.rst:1789
 msgid "Soapbox"
-msgstr "アドバイス"
+msgstr "Plataforma improvisada"
 
-#: ../../library/doctest.rst:1791
+#: ../Doc/library/doctest.rst:1791
 msgid ""
 "As mentioned in the introduction, :mod:`doctest` has grown to have three "
 "primary uses:"
 msgstr ""
-"冒頭でも触れたように、 :mod:`doctest` は、以下の三つの主な用途を持つようにな"
-"りました:"
+"Como se menciona en la introducción, :mod:`doctest` ha crecido para tener "
+"tres usos primarios:"
 
-#: ../../library/doctest.rst:1794
+#: ../Doc/library/doctest.rst:1794
 msgid "Checking examples in docstrings."
-msgstr "docstring 内の実行例をチェックする。"
+msgstr "Verificar los ejemplos en los docstring."
 
-#: ../../library/doctest.rst:1796
+#: ../Doc/library/doctest.rst:1796
 msgid "Regression testing."
-msgstr "回帰テストを行う。"
+msgstr "Pruebas de regresión."
 
-#: ../../library/doctest.rst:1798
+#: ../Doc/library/doctest.rst:1798
 msgid "Executable documentation / literate testing."
-msgstr "実行可能なドキュメント/読めるテストの実現。"
+msgstr "Documentación ejecutable / pruebas literarias."
 
-#: ../../library/doctest.rst:1800
+#: ../Doc/library/doctest.rst:1800
 msgid ""
 "These uses have different requirements, and it is important to distinguish "
 "them. In particular, filling your docstrings with obscure test cases makes "
 "for bad documentation."
 msgstr ""
-"これらの用途にはそれぞれ違った要求があるので、区別して考えるのが重要です。特"
-"に、docstring を曖昧なテストケースに埋もれさせてしまうとドキュメントとしては"
-"最悪です。"
+"Estos usos tienen diferentes requerimientos, y es importante distinguirlos. "
+"En particular, llenar tus docstring con casos de prueba desconocidos conduce "
+"a mala documentación."
 
-#: ../../library/doctest.rst:1804
+#: ../Doc/library/doctest.rst:1804
 msgid ""
 "When writing a docstring, choose docstring examples with care. There's an "
 "art to this that needs to be learned---it may not be natural at first.  "
@@ -2731,15 +2841,16 @@ msgid ""
 "at how often one of my :mod:`doctest` examples stops working after a "
 "\"harmless\" change."
 msgstr ""
-"docstring の例は注意深く作成してください。 doctest の作成にはコツがあり、きち"
-"んと学ぶ必要があります --- 最初はすんなりできないでしょう。実行例はドキュメン"
-"トに本物の価値を与えます。良い例は、たくさんの言葉と同じ価値を持つことがしば"
-"しばあります。注意深くやれば、例はユーザにとっては非常に有益であり、時を経る"
-"につれて、あるいは状況が変わった際に、何度も修正するのにかかる時間を節約する"
-"という形で、きっと見返りを得るでしょう。私は今でも、自分の :mod:`doctest` 実"
-"行例が \"無害な\" 変更を行った際にうまく動作しなくなることに驚いています。"
+"Cuando se escribe un docstring, escoja ejemplos de docstring con cuidado. "
+"Hay un arte para eso que se debe aprender -- puede no ser natural al "
+"comienzo. Los ejemplos deben añadir valor genuino a la documentación. Un "
+"buen ejemplo a menudo puede valer muchas palabras. Si se hace con cuidado, "
+"los ejemplos serán invaluables para tus usuarios, y compensarán el tiempo "
+"que toma recolectarlos varias veces mientras los años pasan y las cosas "
+"cambian. Todavía estoy sorprendido de qué tan frecuente uno de mis ejemplos "
+"de :mod:`doctest` paran de funcionar después de un cambio \"inofensivo\"."
 
-#: ../../library/doctest.rst:1812
+#: ../Doc/library/doctest.rst:1812
 msgid ""
 "Doctest also makes an excellent tool for regression testing, especially if "
 "you don't skimp on explanatory text.  By interleaving prose and examples, it "
@@ -2759,85 +2870,147 @@ msgid ""
 "functionality seemingly at random.  It's a different attitude, and produces "
 "different results, blurring the distinction between testing and explaining."
 msgstr ""
-"説明テキストの作成をけちらなければ、:mod:`doctest` は回帰テストの優れたツール"
-"にもなり得ます。説明文と実行例を交互に記述していけば、実際に何をどうしてテス"
-"トしているのかもっと簡単に把握できるようになるでしょう。もちろん、コードベー"
-"スのテストに詳しくコメントを入れるのも手ですが、そんなことをするプログラマは"
-"ほとんどいません。多くの人々が、:mod:`doctest` のアプローチをとった方がきれい"
-"にテストを書けると気づいています。おそらく、これは単にコード中にコメントを書"
-"くのが少し面倒だからという理由でしょう。私はもう少し穿った見方もしています。"
-"doctest ベースのテストを書くときの自然な態度は、自分のソフトウェアのよい点を"
-"説明しようとして、実行例を使って説明しようとするときの態度そのものだからだ、"
-"という理由です。それゆえに、テストファイルは自然と単純な機能の解説から始め、"
-"論理的により複雑で境界条件的なケースに進むような形になります。結果的に、一見"
-"ランダムに見えるような個別の機能をテストしている個別の関数の集まりではなく、"
-"首尾一貫した説明ができるようになるのです。:mod:`doctest` によるテストの作成は"
-"まったく別の取り組み方であり、テストと説明の区別をなくして、まったく違う結果"
-"を生み出すのです。"
+"Doctest también es una excelente herramienta para pruebas de regresión, "
+"especialmente si no escatimas en texto explicativo. Al intercalar prosa y "
+"ejemplos, se hace mucho más fácil mantener el seguimiento de lo que "
+"realmente se está probando, y por qué. Cuando una prueba falla, buena prosa "
+"puede hacer mucho más fácil comprender cuál es el problema, y cómo debe ser "
+"arreglado. Es verdad que puedes escribir comentarios extensos en pruebas "
+"basadas en código, pero pocos programadores lo hacen. Quizás es porque "
+"simplemente doctest hace escribir pruebas mucho más fácil que escribir "
+"código, mientras que escribir comentarios en código es mucho más difícil. "
+"Pienso que va más allá de eso: la actitud natural cuando se escribe una "
+"prueba basada en doctest es que quieres explicar los puntos finos de tu "
+"software, e ilustrarlos con ejemplos. Esto naturalmente lleva a archivos de "
+"pruebas que empiezan con las características más simples, y lógicamente "
+"progresan a complicaciones y casos extremos. Una narrativa coherente es el "
+"resultado, en vez de una colección de funciones aisladas que pruebas trozos "
+"aislados de funcionalidad aparentemente al azar. Es una actitud diferente, y "
+"produce resultados diferentes, difuminando la distinción entre probar y "
+"explicar."
 
-#: ../../library/doctest.rst:1830
+#: ../Doc/library/doctest.rst:1830
 msgid ""
 "Regression testing is best confined to dedicated objects or files.  There "
 "are several options for organizing tests:"
 msgstr ""
-"回帰テストは特定のオブジェクトやファイルにまとめておくのがよいでしょう。回帰"
-"テストの組み方にはいくつか選択肢があります:"
+"Pruebas de regresión se limitan mejor a objetos o archivos dedicados. Hay "
+"varias opciones para organizar pruebas:"
 
-#: ../../library/doctest.rst:1833
+#: ../Doc/library/doctest.rst:1833
 msgid ""
 "Write text files containing test cases as interactive examples, and test the "
 "files using :func:`testfile` or :func:`DocFileSuite`.  This is recommended, "
 "although is easiest to do for new projects, designed from the start to use "
 "doctest."
 msgstr ""
-"テストケースを対話モードの実行例にして入れたテキストファイルを書き、 :func:"
-"`testfile` や :func:`DocFileSuite` を使ってそのファイルをテストします。この方"
-"法をお勧めします。最初から doctest を使うようにしている新たなプロジェクトで"
-"は、この方法が一番簡単です。"
+"Escribe archivos de texto que contienen los casos de prueba como ejemplos "
+"interactivos, y prueba los archivos usando :func:`testfile` o :func:"
+"`DocFileSuite`. Esto es lo recomendado, aunque es más fácil hacerlo para "
+"nuevos proyectos, diseñados desde el comienzo para usar doctest."
 
-#: ../../library/doctest.rst:1838
+#: ../Doc/library/doctest.rst:1838
 msgid ""
 "Define functions named ``_regrtest_topic`` that consist of single "
 "docstrings, containing test cases for the named topics.  These functions can "
 "be included in the same file as the module, or separated out into a separate "
 "test file."
 msgstr ""
-"``_regrtest_topic`` という名前の関数を定義します。この関数には、あるトピック"
-"に対応するテストケースの入った docstring が一つだけ入っています。この関数はモ"
-"ジュールと同じファイルの中にも置けますし、別のテストファイルに分けてもかまい"
-"ません。"
+"Define funciones nombradas ``_regrtest_topic`` que consisten en docstrings "
+"únicas, que contienen casos de prueba por los tópicos nombrados. Estas "
+"funciones se pueden incluir en el mismo archivo que el módulo, o separadas "
+"en un archivo de prueba separado."
 
-#: ../../library/doctest.rst:1842
+#: ../Doc/library/doctest.rst:1842
 msgid ""
 "Define a ``__test__`` dictionary mapping from regression test topics to "
 "docstrings containing test cases."
 msgstr ""
-"回帰テストのトピックをテストケースの入った docstring に対応付けた辞書 "
-"``__test__`` 辞書を定義します。"
+"Define un diccionario ``__test__`` que asigna desde temas de prueba de "
+"integración a los docstring que contienen casos de prueba."
 
-#: ../../library/doctest.rst:1845
+#: ../Doc/library/doctest.rst:1845
 msgid ""
 "When you have placed your tests in a module, the module can itself be the "
 "test runner.  When a test fails, you can arrange for your test runner to re-"
 "run only the failing doctest while you debug the problem.  Here is a minimal "
 "example of such a test runner::"
 msgstr ""
-"テストコードをモジュールに組み込むことで、そのモジュールは、モジュール自身が"
-"テストランナーになることができます。テストが失敗した場合には、問題箇所をデ"
-"バッグする際に、失敗したdoctestだけを再度実行することで、作成したテストラン"
-"ナーを修正することができます。これがこのようなテストランナーの最小例となりま"
-"す。"
+"Cuando has puesto tus pruebas en un módulo, el módulo puede ser el mismo "
+"*test runner*. Cuando una prueba falla, puedes hacer que tu *test runner* "
+"vuelva a ejecutar sólo los doctest fallidos mientras que tu depuras el "
+"problema. Aquí hay un ejemplo mínimo de tal *test runner*::"
 
-#: ../../library/doctest.rst:1867
+#: ../Doc/library/doctest.rst:1867
 msgid "Footnotes"
-msgstr "脚注"
+msgstr "Notas al pie de página"
 
-#: ../../library/doctest.rst:1868
+#: ../Doc/library/doctest.rst:1868
 msgid ""
 "Examples containing both expected output and an exception are not supported. "
 "Trying to guess where one ends and the other begins is too error-prone, and "
 "that also makes for a confusing test."
 msgstr ""
-"期待する出力結果と例外の両方を含んだ例はサポートされていません。一方の終わり"
-"と他方の始まりを見分けようとするのはエラーの元になりがちですし、解りにくいテ"
-"ストになってしまいます。"
+"No se admiten los ejemplos que contienen una salida esperada y una "
+"excepción. Intentar adivinar dónde una termina y la otra empieza es muy "
+"propenso a errores, y da lugar a una prueba confusa."
+
+#~ msgid ""
+#~ "When specified, an example that expects an exception passes if an "
+#~ "exception of the expected type is raised, even if the exception detail "
+#~ "does not match.  For example, an example expecting ``ValueError: 42`` "
+#~ "will pass if the actual exception raised is ``ValueError: 3*14``, but "
+#~ "will fail, e.g., if :exc:`TypeError` is raised."
+#~ msgstr ""
+#~ "Cuando se especifica, un ejemplo que espera una excepción pasa si una "
+#~ "excepción del tipo esperado es lanzada, incluso si el detalle de la "
+#~ "excepción no corresponde. Por ejemplo, un ejemplo esperando ``ValueError: "
+#~ "42`` pasará si la excepción real lanzada es ``ValueError: 3*14``, pero "
+#~ "fallará, e.g., si :exc:`TypeError` es lanzado."
+
+#~ msgid ""
+#~ "It will also ignore the module name used in Python 3 doctest reports. "
+#~ "Hence both of these variations will work with the flag specified, "
+#~ "regardless of whether the test is run under Python 2.7 or Python 3.2 (or "
+#~ "later versions)::"
+#~ msgstr ""
+#~ "También ignorará el nombre del módulo usado en los reportes de doctest de "
+#~ "Python 3. Por lo que ambas de estas variaciones trabajarán con las "
+#~ "banderas especificadas, sin importar si la prueba es ejecutada bajo "
+#~ "Python 2.7 o Python 3.2 (o versiones más modernas)::"
+
+#~ msgid ""
+#~ "Note that :const:`ELLIPSIS` can also be used to ignore the details of the "
+#~ "exception message, but such a test may still fail based on whether or not "
+#~ "the module details are printed as part of the exception name. Using :"
+#~ "const:`IGNORE_EXCEPTION_DETAIL` and the details from Python 2.3 is also "
+#~ "the only clear way to write a doctest that doesn't care about the "
+#~ "exception detail yet continues to pass under Python 2.3 or earlier (those "
+#~ "releases do not support :ref:`doctest directives <doctest-directives>` "
+#~ "and ignore them as irrelevant comments). For example::"
+#~ msgstr ""
+#~ "Note que :const:`ELLIPSIS` también se puede usar para ignorar los "
+#~ "detalles del mensaje de excepción, pero tal prueba todavía puede fallar "
+#~ "basado en si los detalles del módulo se imprimen como parte del nombre de "
+#~ "excepción. Usar :const:`IGNORE_EXCEPTION_DETAIL` y los detalles de Python "
+#~ "2.3 son también la única manera de escribir un doctest que no le importe "
+#~ "el detalle de excepción y todavía pase bajo Python 2.3 o menos (esas "
+#~ "versiones no soportan :ref:`directivas de doctest <doctest-directives>` y "
+#~ "los ignoran como comentarios irrelevantes). Por ejemplo::"
+
+#~ msgid ""
+#~ "passes under Python 2.3 and later Python versions with the flag "
+#~ "specified, even though the detail changed in Python 2.4 to say \"does "
+#~ "not\" instead of \"doesn't\"."
+#~ msgstr ""
+#~ "pasa bajo Python 2.3 y versiones posteriores de Python con la bandera "
+#~ "especificada, incluso si el detalle cambió en Python 2.4 para decir "
+#~ "\"*does not*\" en vez de \"*doesn't*\"."
+
+#~ msgid ""
+#~ "Before Python 3.6, when printing a dict, Python did not guarantee that "
+#~ "the key-value pairs was printed in any particular order."
+#~ msgstr ""
+#~ "Antes de Python 3.6, cuando se imprime un diccionario, Python no "
+#~ "aseguraba que los pares de claves y valores sean impresos en ningún orden "
+#~ "en particular."

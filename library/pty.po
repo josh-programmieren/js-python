@@ -1,57 +1,59 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Takeshi Nakazato, 2022
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:11+0000\n"
-"Last-Translator: Takeshi Nakazato, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2021-10-16 21:42+0200\n"
+"PO-Revision-Date: 2021-08-04 21:47+0200\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../library/pty.rst:2
+#: ../Doc/library/pty.rst:2
 msgid ":mod:`pty` --- Pseudo-terminal utilities"
-msgstr ":mod:`pty` --- 擬似端末ユーティリティ"
+msgstr ":mod:`pty` --- Utilidades para Pseudo-terminal"
 
-#: ../../library/pty.rst:11
+#: ../Doc/library/pty.rst:11
 msgid "**Source code:** :source:`Lib/pty.py`"
-msgstr "**ソースコード:** :source:`Lib/pty.py`"
+msgstr "**Código Fuente:** :source:`Lib/pty.py`"
 
-#: ../../library/pty.rst:15
+#: ../Doc/library/pty.rst:15
 msgid ""
 "The :mod:`pty` module defines operations for handling the pseudo-terminal "
 "concept: starting another process and being able to write to and read from "
 "its controlling terminal programmatically."
 msgstr ""
-":mod:`pty` モジュールは擬似端末(他のプロセスを実行してその制御をしている端末"
-"をプログラムで読み書きする)を制御する操作を定義しています。"
+"El módulo :mod:`pty` define las operaciones para manejar el concepto de "
+"pseudo-terminal: iniciar otro proceso para poder escribir y leer desde su "
+"propia terminal mediante programación."
 
-#: ../../library/pty.rst:19
+#: ../Doc/library/pty.rst:19
 msgid ""
 "Pseudo-terminal handling is highly platform dependent. This code is mainly "
 "tested on Linux, FreeBSD, and macOS (it is supposed to work on other POSIX "
 "platforms but it's not been thoroughly tested)."
 msgstr ""
+"El manejo de pseudo-terminales depende en gran medida de la plataforma. Este "
+"código se prueba principalmente en Linux, FreeBSD y macOS (se supone que "
+"funciona en otras plataformas POSIX, pero no se ha probado a fondo)."
 
-#: ../../library/pty.rst:23
+#: ../Doc/library/pty.rst:23
 msgid "The :mod:`pty` module defines the following functions:"
-msgstr ":mod:`pty` モジュールでは以下の関数を定義しています:"
+msgstr "El modulo :mod:`pty` define las siguientes funciones:"
 
-#: ../../library/pty.rst:28
+#: ../Doc/library/pty.rst:28
 msgid ""
 "Fork. Connect the child's controlling terminal to a pseudo-terminal. Return "
 "value is ``(pid, fd)``. Note that the child  gets *pid* 0, and the *fd* is "
@@ -59,24 +61,25 @@ msgid ""
 "a file descriptor connected to the child's controlling terminal (and also to "
 "the child's standard input and output)."
 msgstr ""
-"forkします。子プロセスの制御端末を擬似端末に接続します。返り値は ``(pid, "
-"fd)`` です。子プロセスは *pid* として0、*fd* として *invalid* をそれぞれ受け"
-"とります。親プロセスは *pid* として子プロセスのPID、*fd* として子プロセスの制"
-"御端末 (子プロセスの標準入出力に接続されている)のファイル記述子を受けとりま"
-"す。"
+"Bifurcación. Conectar en su propia terminal (terminal hijo) una pseudo-"
+"terminal. El valor de retorno es ``(pid, fd)``. Tener en cuenta que la "
+"terminal hijo tiene como valor *pid* 0 y *fd* es *invalid*. El valor de "
+"retorno del padre es el *pid* del hijo, y *fd* es un descriptor de archivo "
+"conectado a la terminal hijo (también a la salida y entrada estándar de la "
+"terminal hijo)"
 
-#: ../../library/pty.rst:37
+#: ../Doc/library/pty.rst:37
 msgid ""
 "Open a new pseudo-terminal pair, using :func:`os.openpty` if possible, or "
 "emulation code for generic Unix systems. Return a pair of file descriptors "
 "``(master, slave)``, for the master and the slave end, respectively."
 msgstr ""
-"新しい擬似端末のペアを開きます。利用できるなら :func:`os.openpty` を使い、利"
-"用できなければ一般的なUnixシステム用のエミュレーションコードを使います。マス"
-"ター、スレーブそれぞれのためのファイル記述子、 ``(master, slave)`` のタプルを"
-"返します。"
+"Abre un nuevo par de pseudo-terminales, usando :func:`os.openpty`, o código "
+"de emulación para sistemas genéricos de Unix. Retorna un par de descriptores "
+"de archivo ``(master, slave)``, para el *master* y el *slave* "
+"respectivamente."
 
-#: ../../library/pty.rst:44
+#: ../Doc/library/pty.rst:44
 msgid ""
 "Spawn a process, and connect its controlling terminal with the current "
 "process's standard io. This is often used to baffle programs which insist on "
@@ -84,23 +87,34 @@ msgid ""
 "spawned behind the pty will eventually terminate, and when it does *spawn* "
 "will return."
 msgstr ""
+"Genera un proceso conectado a su terminal con el io estándar del proceso "
+"actual. Esto se usa a frecuentemente para confundir programas que insisten "
+"en leer desde la terminal de control. Se espera que el proceso generado "
+"detrás de pty sea finalizado y cuando lo haga *spawn* se retornará."
 
-#: ../../library/pty.rst:50
+#: ../Doc/library/pty.rst:50
 msgid ""
 "A loop copies STDIN of the current process to the child and data received "
 "from the child to STDOUT of the current process. It is not signaled to the "
 "child if STDIN of the current process closes down."
 msgstr ""
+"Un bucle copia STDIN del proceso actual al hijo y los datos recibidos del "
+"niño a STDOUT del proceso actual. No se le indica al hijo si STDIN del "
+"proceso actual se cierra."
 
-#: ../../library/pty.rst:54
+#: ../Doc/library/pty.rst:54
 msgid ""
 "The functions *master_read* and *stdin_read* are passed a file descriptor "
 "which they should read from, and they should always return a byte string. In "
 "order to force spawn to return before the child process exits an empty byte "
 "array should be returned to signal end of file."
 msgstr ""
+"A las funciones *master_read* y *stdin_read* se les pasa un descriptor de "
+"archivo del cual deben leer, y siempre deben retornar una cadena de bytes. "
+"Para forzar el retorno de spawn antes de que el proceso hijo salga, se debe "
+"retornar un arreglo de bytes vacía para señalar el final del archivo."
 
-#: ../../library/pty.rst:59
+#: ../Doc/library/pty.rst:59
 msgid ""
 "The default implementation for both functions will read and return up to "
 "1024 bytes each time the function is called. The *master_read* callback is "
@@ -108,8 +122,13 @@ msgid ""
 "child process, and *stdin_read* is passed file descriptor 0, to read from "
 "the parent process's standard input."
 msgstr ""
+"La implementación predeterminada para ambas funciones retornará hasta 1024 "
+"bytes cada vez que se llamen. El dato retornado de *master_read* se pasa al "
+"descriptor de archivo maestro para leer la salida del proceso hijo, y "
+"*stdin_read* pasa el descriptor de archivo 0, para leer desde la entrada del "
+"proceso padre."
 
-#: ../../library/pty.rst:65
+#: ../Doc/library/pty.rst:65
 msgid ""
 "Returning an empty byte string from either callback is interpreted as an end-"
 "of-file (EOF) condition, and that callback will not be called after that. If "
@@ -118,44 +137,55 @@ msgid ""
 "quit without any input, *spawn* will then loop forever. If *master_read* "
 "signals EOF the same behavior results (on linux at least)."
 msgstr ""
+"Retornando una cadena de bytes vacía de cualquier llamado es interpretado "
+"como una condición de fin de archivo (EOF), y el llamado no se realizará "
+"después de eso. Si *stdin_read* retorna EOF la terminal de control ya no "
+"puede comunicarse con el proceso padre o el proceso hijo. A menos que el "
+"proceso hijo se cierre sin ninguna entrada *spawn* se repetirá para siempre. "
+"Si *master_read* retorna EOF se produce el mismo comportamiento (al menos en "
+"Linux)"
 
-#: ../../library/pty.rst:72
+#: ../Doc/library/pty.rst:72
 msgid ""
 "Return the exit status value from :func:`os.waitpid` on the child process."
 msgstr ""
+"Retorna el valor del estado de salida de :func:`os.waitpid` en el proceso "
+"hijo."
 
-#: ../../library/pty.rst:74
+#: ../Doc/library/pty.rst:74
 msgid ""
 ":func:`waitstatus_to_exitcode` can be used to convert the exit status into "
 "an exit code."
 msgstr ""
-"戻り値の終了ステータスを終了コードに変換するために :func:"
-"`waitstatus_to_exitcode` を使うことができます。"
+":func:`waitstatus_to_exitcode` se puede utilizar para convertir el estado de "
+"salida en un código de salida."
 
-#: ../../library/pty.rst:77
+#: ../Doc/library/pty.rst:77
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``pty.spawn`` with argument "
 "``argv``."
 msgstr ""
+"Lanza un :ref:`evento de auditoria <auditing>` ``pty.spawn``  con el "
+"argumento ``argv``."
 
-#: ../../library/pty.rst:79
+#: ../Doc/library/pty.rst:79
 msgid ""
 ":func:`spawn` now returns the status value from :func:`os.waitpid` on the "
 "child process."
 msgstr ""
-":func:`spawn` が :func:`os.waitpid` が返す子プロセスのステータス値を返すよう"
-"になりました。"
+":func:`spawn` ahora retorna el valor de estado de  :func:`os.waitpid` para "
+"los procesos hijos."
 
-#: ../../library/pty.rst:84
+#: ../Doc/library/pty.rst:84
 msgid "Example"
-msgstr "使用例"
+msgstr "Ejemplo"
 
-#: ../../library/pty.rst:88
+#: ../Doc/library/pty.rst:88
 msgid ""
 "The following program acts like the Unix command :manpage:`script(1)`, using "
 "a pseudo-terminal to record all input and output of a terminal session in a "
 "\"typescript\". ::"
 msgstr ""
-"下記のプログラムは Unix コマンド :manpage:`script(1)` のように動作します。疑"
-"似端末を使用して、端末セッションのすべての入出力を \"typescript\" に記録しま"
-"す。 ::"
+"El siguiente programa actúa como el comando de Unix :manpage:`script(1)`, "
+"usando una pseudo-terminal para registrar todas las entradas y salidas de "
+"una sesión en \"typescript\". ::"

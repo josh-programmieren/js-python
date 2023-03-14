@@ -1,72 +1,71 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:14+0000\n"
-"Last-Translator: Osamu NAKAMURA, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2020-10-27 19:25-0500\n"
+"Last-Translator: \n"
+"Language: es_CO\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/termios.rst:2
+#: ../Doc/library/termios.rst:2
 msgid ":mod:`termios` --- POSIX style tty control"
-msgstr ":mod:`termios` --- POSIX スタイルの端末制御"
+msgstr ":mod:`termios` ---Control tty estilo POSIX"
 
-#: ../../library/termios.rst:14
+#: ../Doc/library/termios.rst:14
 msgid ""
 "This module provides an interface to the POSIX calls for tty I/O control. "
 "For a complete description of these calls, see :manpage:`termios(3)` Unix "
 "manual page.  It is only available for those Unix versions that support "
 "POSIX *termios* style tty I/O control configured during installation."
 msgstr ""
-"このモジュールでは端末 I/O 制御のための POSIX 準拠の関数呼び出しインター"
-"フェースを提供します。これら呼び出しのための完全な記述については、 Unix マ"
-"ニュアルページの :manpage:`termios(3)` を参照してください。これは POSIX "
-"*termios* 形式の端末制御をサポートしていてインストール時に有効にした Unix の"
-"バージョンでのみ利用可能です。"
+"Este módulo proporciona una interfaz para las llamadas POSIX para el control "
+"de E/S (entrada/salida) tty. Para obtener una descripción completa de estas "
+"llamadas, consulte :manpage:`termios (3)` Página de manual de Unix. Solo "
+"está disponible para aquellas versiones de Unix que admitan el control de E/"
+"S tty estilo POSIX *termios* configurado durante la instalación."
 
-#: ../../library/termios.rst:19
+#: ../Doc/library/termios.rst:19
 msgid ""
 "All functions in this module take a file descriptor *fd* as their first "
 "argument.  This can be an integer file descriptor, such as returned by ``sys."
 "stdin.fileno()``, or a :term:`file object`, such as ``sys.stdin`` itself."
 msgstr ""
-"このモジュールの関数は全て、ファイル記述子 *fd* を最初の引数としてとります。"
-"この値は、 ``sys.stdin.fileno()`` が返すような整数のファイル記述子でも、 "
-"``sys.stdin`` 自体のような :term:`file object` でもかまいません。"
+"Todas las funciones de este módulo toman un descriptor de archivo *fd* como "
+"primer argumento. Puede ser un descriptor de archivo entero, como el que "
+"retorna ``sys.stdin.fileno()``, o un :term:`file object`, como el propio "
+"``sys.stdin``."
 
-#: ../../library/termios.rst:23
+#: ../Doc/library/termios.rst:23
 msgid ""
 "This module also defines all the constants needed to work with the functions "
 "provided here; these have the same name as their counterparts in C.  Please "
 "refer to your system documentation for more information on using these "
 "terminal control interfaces."
 msgstr ""
-"このモジュールではまた、モジュールで提供されている関数を使う上で必要となる全"
-"ての定数を定義しています; これらの定数は C の対応する関数と同じ名前を持ってい"
-"ます。これらの端末制御インターフェースを利用する上でのさらなる情報について"
-"は、あなたのシステムのドキュメンテーションを参考にしてください。"
+"Este módulo también define todas las constantes necesarias para trabajar con "
+"las funciones proporcionadas aquí; tienen el mismo nombre que sus "
+"contrapartes en C. Consulte la documentación de su sistema para obtener más "
+"información sobre el uso de estas interfaces de control de terminal."
 
-#: ../../library/termios.rst:28
+#: ../Doc/library/termios.rst:28
 msgid "The module defines the following functions:"
-msgstr "このモジュールには、以下の関数が定義されています:"
+msgstr "El módulo define las siguientes funciones:"
 
-#: ../../library/termios.rst:33
+#: ../Doc/library/termios.rst:33
 msgid ""
 "Return a list containing the tty attributes for file descriptor *fd*, as "
 "follows: ``[iflag, oflag, cflag, lflag, ispeed, ospeed, cc]`` where *cc* is "
@@ -76,15 +75,16 @@ msgid ""
 "as well as the indexing in the *cc* array must be done using the symbolic "
 "constants defined in the :mod:`termios` module."
 msgstr ""
-"ファイル記述子 *fd* の端末属性を含むリストを返します。その形式は: ``[iflag, "
-"oflag, cflag, lflag, ispeed, ospeed, cc]`` です。 *cc* は端末特殊文字のリスト"
-"です (それぞれ長さ 1 の文字列です。ただしインデクス :const:`VMIN` および  :"
-"const:`VTIME` の内容は、それらのフィールドが定義されていた場合整数の値となり"
-"ます)。端末設定フラグおよび端末速度の解釈、および配列 *cc* のインデクス検索"
-"は、 :mod:`termios` で定義されているシンボル定数を使って行わなければなりませ"
-"ん。"
+"Retorna una lista que contiene los atributos tty para el descriptor de "
+"archivo *fd*, como se muestra a continuación: ``[iflag, oflag, cflag, lflag, "
+"ispeed, ospeed, cc]`` donde *cc* es una lista de los caracteres especiales "
+"tty (cada una es una cadena de longitud 1, excepto los elementos con "
+"índices :const:`VMIN` and :const:`VTIME`, que son números enteros cuando se "
+"definen estos campos). La interpretación de las banderas y las velocidades, "
+"así como la indexación en el arreglo *cc*, debe realizarse utilizando las "
+"constantes simbólicas definidas en el módulo  :mod:`termios` ."
 
-#: ../../library/termios.rst:44
+#: ../Doc/library/termios.rst:44
 msgid ""
 "Set the tty attributes for file descriptor *fd* from the *attributes*, which "
 "is a list like the one returned by :func:`tcgetattr`.  The *when* argument "
@@ -93,56 +93,62 @@ msgid ""
 "output, or :const:`TCSAFLUSH` to change after transmitting all queued output "
 "and discarding all queued input."
 msgstr ""
-"ファイル記述子 *fd* の端末属性を *attributes* から取り出して設定します。 "
-"*attributes* は :func:`tcgetattr` が返すようなリストです。引数 *when* は属性"
-"がいつ変更されるかを決定します: :const:`TCSANOW` は即時変更を行い、 :const:"
-"`TCSADRAIN` は現在キューされている出力を全て転送した後に変更を行い、 :const:"
-"`TCSAFLUSH` は現在キューされている出力を全て転送し、全てのキューされている入"
-"力を無視した後に変更を行います。"
+"Establezca los atributos tty para el descriptor de archivo *fd* de los "
+"*atributos*, que es una lista como la retornada por :func:`tcgetattr`.  El "
+"argumento *when* determina cuándo se cambian los atributos: :const:`TCSANOW` "
+"para cambiar inmediatamente,  :const:`TCSADRAIN` para cambiar después de "
+"transmitir toda la salida en cola, o :const:`TCSAFLUSH` para cambiar después "
+"de transmitir toda la salida en cola y descartar toda la entrada en cola."
 
-#: ../../library/termios.rst:54
+#: ../Doc/library/termios.rst:54
 msgid ""
 "Send a break on file descriptor *fd*.  A zero *duration* sends a break for "
 "0.25--0.5 seconds; a nonzero *duration* has a system dependent meaning."
 msgstr ""
-"ファイル記述子 *fd* にブレークを送信します。*duration* をゼロにすると、0.25〜"
-"0.5 秒間のブレークを送信します; *duration* の値がゼロでない場合、その意味はシ"
-"ステム依存です。"
+"Envíe una pausa en el descriptor de archivo *fd*. Una *duración* cero envía "
+"una pausa de 0.25 a 0.5 segundos;  una *duración* distinta de cero tiene un "
+"significado dependiente del sistema."
 
-#: ../../library/termios.rst:60
+#: ../Doc/library/termios.rst:60
 msgid ""
 "Wait until all output written to file descriptor *fd* has been transmitted."
-msgstr "ファイル記述子 *fd* に書き込まれた全ての出力が転送されるまで待ちます。"
+msgstr ""
+"Espere hasta que se haya transmitido toda la salida escrita en el descriptor "
+"de archivo *fd*."
 
-#: ../../library/termios.rst:65
+#: ../Doc/library/termios.rst:65
 msgid ""
 "Discard queued data on file descriptor *fd*.  The *queue* selector specifies "
 "which queue: :const:`TCIFLUSH` for the input queue, :const:`TCOFLUSH` for "
 "the output queue, or :const:`TCIOFLUSH` for both queues."
 msgstr ""
-"ファイル記述子 *fd* にキューされたデータを無視します。どのキューかは *queue* "
-"セレクタで指定します: :const:`TCIFLUSH` は入力キュー、 :const:`TCOFLUSH` は出"
-"力キュー、 :const:`TCIOFLUSH` は両方のキューです。"
+"Descartar datos en cola en el descriptor de archivo *fd*. El selector "
+"*queue* especifica qué cola: :const:`TCIFLUSH` para la cola de entrada, :"
+"const:`TCOFLUSH` para la cola de salida, o :const:`TCIOFLUSH` para ambas "
+"colas."
 
-#: ../../library/termios.rst:72
+#: ../Doc/library/termios.rst:72
 msgid ""
 "Suspend or resume input or output on file descriptor *fd*.  The *action* "
 "argument can be :const:`TCOOFF` to suspend output, :const:`TCOON` to restart "
 "output, :const:`TCIOFF` to suspend input, or :const:`TCION` to restart input."
 msgstr ""
-"ファイル記述子 *fd* の入力または出力をサスペンドしたりレジュームしたりしま"
-"す。引数 *action* は出力をサスペンドする :const:`TCOOFF` 、出力をレジュームす"
-"る :const:`TCOON` 、入力をサスペンドする :const:`TCIOFF` 、入力をレジュームす"
-"る :const:`TCION` をとることができます。"
+"Suspender o reanudar la entrada o salida en el descriptor de archivo *fd*. "
+"El argumento *action* puede ser  :const:`TCOOFF` para suspender la salida, :"
+"const:`TCOON` para reiniciar la salida, :const:`TCIOFF` para suspender la "
+"entrada, o :const:`TCION` para reiniciar la entrada."
 
-#: ../../library/termios.rst:79
+#: ../Doc/library/termios.rst:79
 msgid ""
 "Return a tuple ``(ws_row, ws_col)`` containing the tty window size for file "
 "descriptor *fd*. Requires :const:`termios.TIOCGWINSZ` or :const:`termios."
 "TIOCGSIZE`."
 msgstr ""
+"Devuelve una tupla ``(ws_row, ws_col)`` que contiene el tamaño de la ventana "
+"tty para el descriptor de archivo *fd*. Requiere :const:`termios.TIOCGWINSZ` "
+"o :const:`termios.TIOCGSIZE`."
 
-#: ../../library/termios.rst:88
+#: ../Doc/library/termios.rst:88
 msgid ""
 "Set the tty window size for file descriptor *fd* from *winsize*, which is a "
 "two-item tuple ``(ws_row, ws_col)`` like the one returned by :func:"
@@ -150,26 +156,34 @@ msgid ""
 "TIOCGWINSZ`, :const:`termios.TIOCSWINSZ`); (:const:`termios.TIOCGSIZE`, :"
 "const:`termios.TIOCSSIZE`) to be defined."
 msgstr ""
+"Establezca el tamaño de la ventana tty para el descriptor de archivo *fd* de "
+"*winsize*, que es un tupla de dos elementos ``(ws_row, ws_col)`` como la "
+"devuelta por :func:`tcgetwinsize`. Requiere que al menos uno de los pares (:"
+"const:`termios.TIOCGWINSZ`, :const:`termios.TIOCSWINSZ`); (:const:`termios."
+"TIOCGSIZE`, :const:`termios.TIOCSSIZE`) por definir."
 
-#: ../../library/termios.rst:99
+#: ../Doc/library/termios.rst:99
 msgid "Module :mod:`tty`"
-msgstr ":mod:`tty` モジュール"
+msgstr "Módulo :mod:`tty`"
 
-#: ../../library/termios.rst:100
+#: ../Doc/library/termios.rst:100
 msgid "Convenience functions for common terminal control operations."
-msgstr "一般的な端末制御操作のための便利な関数。"
+msgstr ""
+"Funciones de conveniencia para operaciones comunes de control de terminal."
 
-#: ../../library/termios.rst:106
+#: ../Doc/library/termios.rst:106
 msgid "Example"
-msgstr "使用例"
+msgstr "Ejemplo"
 
-#: ../../library/termios.rst:108
+#: ../Doc/library/termios.rst:108
 msgid ""
 "Here's a function that prompts for a password with echoing turned off.  Note "
 "the technique using a separate :func:`tcgetattr` call and a :keyword:"
 "`try` ... :keyword:`finally` statement to ensure that the old tty attributes "
 "are restored exactly no matter what happens::"
 msgstr ""
-"以下はエコーバックを切った状態でパスワード入力を促す関数です。ユーザの入力に"
-"関わらず以前の端末属性を正確に回復するために、二つの :func:`tcgetattr` と :"
-"keyword:`try` ... :keyword:`finally` 文によるテクニックが使われています::"
+"Aquí hay una función que solicita una contraseña con el eco desactivado. "
+"Tenga en cuenta la técnica utilizando una llamada separada  :func:"
+"`tcgetattr` y una sentencia :keyword:`try` ... :keyword:`finally`  para "
+"asegurarse de que los antiguos atributos tty se restauran exactamente sin "
+"importar lo que suceda::"

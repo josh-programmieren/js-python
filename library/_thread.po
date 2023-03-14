@@ -1,34 +1,31 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2021
-# 菊池 健志, 2023
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-03 14:14+0000\n"
-"PO-Revision-Date: 2021-06-28 00:54+0000\n"
-"Last-Translator: 菊池 健志, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-12-18 17:01-0300\n"
+"Last-Translator: \n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/_thread.rst:2
+#: ../Doc/library/_thread.rst:2
 msgid ":mod:`_thread` --- Low-level threading API"
-msgstr ":mod:`_thread` --- 低水準の スレッド API"
+msgstr ":mod:`_thread` --- API de bajo nivel para manejo de hilos"
 
-#: ../../library/_thread.rst:15
+#: ../Doc/library/_thread.rst:15
 msgid ""
 "This module provides low-level primitives for working with multiple threads "
 "(also called :dfn:`light-weight processes` or :dfn:`tasks`) --- multiple "
@@ -37,114 +34,133 @@ msgid ""
 "provided. The :mod:`threading` module provides an easier to use and higher-"
 "level threading API built on top of this module."
 msgstr ""
-"このモジュールはマルチスレッド (別名 :dfn:`軽量プロセス` (:dfn:`light-weight "
-"processes`)または :dfn:`タスク` (:dfn:`tasks`)) に用いられる低水準プリミティ"
-"ブを提供します --- グローバルデータ空間を共有するマルチスレッドを制御します。"
-"同期のための単純なロック (別名 :dfn:`mutexes` またはバイナリセマフォ (:dfn:"
-"`binary semaphores`))が提供されています。 :mod:`threading` モジュールは、この"
-"モジュール上で、より使い易く高級なスレッディングの API を提供します。"
+"Este módulo ofrece primitivas de bajo nivel para trabajar con múltiples "
+"*threads* o hilos (también llamados :dfn:`light-weight processes` o :dfn:"
+"`tasks`) -- múltiples hilos de control compartiendo su espacio de datos "
+"global. Para sincronizar, provee \"candados\" simples (también llamados  :"
+"dfn:`mutexes` o :dfn:`binary semaphores`). El módulo :mod:`threading` provee "
+"una API de manejo de hilos más fácil de usar y de más alto nivel, construida "
+"sobre este módulo."
 
-#: ../../library/_thread.rst:26
+#: ../Doc/library/_thread.rst:26
 msgid "This module used to be optional, it is now always available."
-msgstr ""
-"このモジュールは以前はオプションでしたが、常に利用可能なモジュールとなりまし"
-"た。"
+msgstr "Este módulo solía ser opcional, pero ahora está siempre disponible."
 
-#: ../../library/_thread.rst:29
+#: ../Doc/library/_thread.rst:29
 msgid "This module defines the following constants and functions:"
-msgstr "このモジュールでは以下の定数および関数を定義しています:"
+msgstr "Este módulo define las siguientes constantes y funciones:"
 
-#: ../../library/_thread.rst:33
+#: ../Doc/library/_thread.rst:33
 msgid "Raised on thread-specific errors."
-msgstr "スレッド固有の例外です。"
+msgstr "Lanzado ante errores específicos de un hilo."
 
-#: ../../library/_thread.rst:35
+#: ../Doc/library/_thread.rst:35
 msgid "This is now a synonym of the built-in :exc:`RuntimeError`."
-msgstr "現在は組み込みの :exc:`RuntimeError` の別名です。"
+msgstr "Ahora es un sinónimo de la excepción incorporada :exc:`RuntimeError`."
 
-#: ../../library/_thread.rst:41
+#: ../Doc/library/_thread.rst:41
 msgid "This is the type of lock objects."
-msgstr "これはロックオブジェクトのタイプです。"
+msgstr "Este es el tipo de los objetos candado (*lock objects*)."
 
-#: ../../library/_thread.rst:46
+#: ../Doc/library/_thread.rst:46
 msgid ""
 "Start a new thread and return its identifier.  The thread executes the "
 "function *function* with the argument list *args* (which must be a tuple). "
 "The optional *kwargs* argument specifies a dictionary of keyword arguments."
 msgstr ""
-"新しいスレッドを開始して、そのIDを返します。スレッドは引数リスト *args* (タプ"
-"ルでなければなりません)の関数 *function* を実行します。オプション引数 "
-"*kwargs* はキーワード引数の辞書を指定します。"
+"Inicia un nuevo hilo y retorna su identificador. El hilo ejecuta la función "
+"*function* con la lista de argumentos *args* (que debe ser una tupla). El "
+"argumento opcional *kwargs* especifica un diccionario de argumentos por "
+"palabras clave."
 
-#: ../../library/_thread.rst:50
+#: ../Doc/library/_thread.rst:50
 msgid "When the function returns, the thread silently exits."
-msgstr "関数が戻るとき、スレッドは静かに終了します。"
+msgstr "Cuando la función retorna, el hilo finaliza silenciosamente."
 
-#: ../../library/_thread.rst:52
+#: ../Doc/library/_thread.rst:52
 msgid ""
 "When the function terminates with an unhandled exception, :func:`sys."
 "unraisablehook` is called to handle the exception. The *object* attribute of "
 "the hook argument is *function*. By default, a stack trace is printed and "
 "then the thread exits (but other threads continue to run)."
 msgstr ""
+"Cuando la función termina con una excepción no gestionada, se invoca a :func:"
+"`sys.unraisablehook` para que gestione la excepción. El atributo *object* "
+"del argumento gancho (*hook*), es *function*. Por defecto, se muestra un "
+"seguimiento de pila y luego el hilo sale (pero los otros hilos continúan "
+"funcionando)."
 
-#: ../../library/_thread.rst:57
+#: ../Doc/library/_thread.rst:57
 msgid ""
 "When the function raises a :exc:`SystemExit` exception, it is silently "
 "ignored."
 msgstr ""
+"Cuando la función lanza una excepción :exc:`SystemExit`, se ignora "
+"silenciosamente."
 
-#: ../../library/_thread.rst:60
+#: ../Doc/library/_thread.rst:60
 msgid ":func:`sys.unraisablehook` is now used to handle unhandled exceptions."
 msgstr ""
+"Ahora se utiliza :func:`sys.unraisablehook` para gestionar las excepciones "
+"no gestionadas."
 
-#: ../../library/_thread.rst:66
+#: ../Doc/library/_thread.rst:66
 msgid ""
 "Simulate the effect of a signal arriving in the main thread. A thread can "
 "use this function to interrupt the main thread, though there is no guarantee "
 "that the interruption will happen immediately."
 msgstr ""
+"Simular el efecto de una señal que llega al hilo principal. Un hilo puede "
+"usar esta función para interrumpir el hilo principal, aunque no hay "
+"garantías de que la interrupción ocurrirá inmediatamente."
 
-#: ../../library/_thread.rst:70
+#: ../Doc/library/_thread.rst:70
 msgid ""
 "If given, *signum* is the number of the signal to simulate. If *signum* is "
 "not given, :data:`signal.SIGINT` is simulated."
 msgstr ""
+"Si se da, *signum* es el número de la señal a simular. Si *signum* no se "
+"da, :data:`signal.SIGINT` es simulado."
 
-#: ../../library/_thread.rst:73
+#: ../Doc/library/_thread.rst:73
 msgid ""
 "If the given signal isn't handled by Python (it was set to :data:`signal."
 "SIG_DFL` or :data:`signal.SIG_IGN`), this function does nothing."
 msgstr ""
+"Si la señal dada no es manejada por Python (se estableció en :data:`signal."
+"SIG_DFL` o :data:`signal.SIG_IGN`), esta función no hace nada."
 
-#: ../../library/_thread.rst:77
+#: ../Doc/library/_thread.rst:77
 msgid "The *signum* argument is added to customize the signal number."
-msgstr ""
+msgstr "Se agrega el argumento *signum* para personalizar el número de señal."
 
-#: ../../library/_thread.rst:81
+#: ../Doc/library/_thread.rst:81
 msgid ""
 "This does not emit the corresponding signal but schedules a call to the "
 "associated handler (if it exists). If you want to truly emit the signal, "
 "use :func:`signal.raise_signal`."
 msgstr ""
+"Esto no emite la señal correspondiente, sino que programa una llamada al "
+"controlador asociado (si existe). Si realmente se quiere emitir la señal, se "
+"utiliza :func:`signal.raise_signal`."
 
-#: ../../library/_thread.rst:88
+#: ../Doc/library/_thread.rst:88
 msgid ""
 "Raise the :exc:`SystemExit` exception.  When not caught, this will cause the "
 "thread to exit silently."
 msgstr ""
-":exc:`SystemExit` を送出します。それが捕えられないときは、静かにスレッドを終"
-"了させます。"
+"Lanza la excepción :exc:`SystemExit`. Cuando no es gestionada, causa que el "
+"hilo salga silenciosamente."
 
-#: ../../library/_thread.rst:102
+#: ../Doc/library/_thread.rst:102
 msgid ""
 "Return a new lock object.  Methods of locks are described below.  The lock "
 "is initially unlocked."
 msgstr ""
-"新しいロックオブジェクトを返します。ロックのメソッドはこの後に記述されます。"
-"ロックは初期状態としてアンロック状態です。"
+"Retorna un nuevo objeto candado (*lock object*). Los métodos de los candados "
+"se describen más abajo. El candado está abierto al inicio."
 
-#: ../../library/_thread.rst:108
+#: ../Doc/library/_thread.rst:108
 msgid ""
 "Return the 'thread identifier' of the current thread.  This is a nonzero "
 "integer.  Its value has no direct meaning; it is intended as a magic cookie "
@@ -152,28 +168,34 @@ msgid ""
 "identifiers may be recycled when a thread exits and another thread is "
 "created."
 msgstr ""
-"現在のスレッドの 'スレッドID' を返します。非ゼロの整数です。この値は直接の意"
-"味を持っていません; 例えばスレッド特有のデータの辞書に索引をつけるためのよう"
-"な、マジッククッキーとして意図されています。スレッドが終了し、他のスレッドが"
-"作られたとき、スレッド ID は再利用されるかもしれません。"
+"Retorna el 'identificador de hilo' (*thread identifier*) del hilo actual. Es "
+"un entero distinto de cero. Su valor no tiene un significado directo, tiene "
+"la intención de ser utilizada como una *cookie* mágica para, por ejemplo, "
+"indexar un diccionario con datos específicos del hilo. Los identificadores "
+"de hilo pueden reciclarse cuando un hilo sale y otro se crea."
 
-#: ../../library/_thread.rst:116
+#: ../Doc/library/_thread.rst:116
 msgid ""
 "Return the native integral Thread ID of the current thread assigned by the "
 "kernel. This is a non-negative integer. Its value may be used to uniquely "
 "identify this particular thread system-wide (until the thread terminates, "
 "after which the value may be recycled by the OS)."
 msgstr ""
+"Retorna el ID de hilo nativo integral del hilo asignado por el kernel. Es un "
+"entero no-negativo. Su valor puede utilizarse para identificar "
+"inequívocamente este hilo en particular en todo el sistema (hasta que el "
+"hilo termine, luego de lo cual el valor puede ser reciclado por el Sistema "
+"Operativo)."
 
-#: ../../library/_thread.rst:121
+#: ../Doc/library/_thread.rst:122
 msgid ""
 ":ref:`Availability <availability>`: Windows, FreeBSD, Linux, macOS, OpenBSD, "
 "NetBSD, AIX."
 msgstr ""
-":ref:`利用可能な環境 <availability>`: Windows, FreeBSD, Linux, macOS, "
-"OpenBSD, NetBSD, AIX。"
+":ref:`Disponibilidad <availability>`: Windows, FreeBSD, Linux, macOS, "
+"OpenBSD, NetBSD, AIX."
 
-#: ../../library/_thread.rst:128
+#: ../Doc/library/_thread.rst:128
 msgid ""
 "Return the thread stack size used when creating new threads.  The optional "
 "*size* argument specifies the stack size to be used for subsequently created "
@@ -191,157 +213,175 @@ msgid ""
 "stack size is the suggested approach in the absence of more specific "
 "information)."
 msgstr ""
-"新しいスレッドを作るときのスレッドスタックサイズを返します。オプションの "
-"*size* 引数にはこれ以降に作成するスレッドのスタックサイズを指定し、0 (プラッ"
-"トフォームのデフォルト値または設定されたデフォルト値) か、 32,768 (32 KiB) 以"
-"上の正の整数でなければなりません。*size* が指定されない場合 0 が使われます。"
-"スレッドのスタックサイズの変更がサポートされていない場合、 :exc:"
-"`RuntimeError` を送出します。不正なスタックサイズが指定された場合、 :exc:"
-"`ValueError` を送出して、スタックサイズは変更されません。32 KiB は現在のイン"
-"タープリタ自身のために十分であると保証された最小のスタックサイズです。いくつ"
-"かのプラットフォームではスタックサイズに対して制限があることに注意してくださ"
-"い。例えば最小のスタックサイズが 32 KiB より大きかったり、システムのメモリ"
-"ページサイズ の整数倍の必要があるなどです。この制限についてはプラットフォーム"
-"のドキュメントを参照してください (一般的なページサイズは 4 KiB なので、プラッ"
-"トフォームに関する情報がない場合は 4096 の整数倍のスタックサイズを選ぶといい"
-"かもしれません)。"
+"Retorna el tamaño de la pila del hilo (*thread stack*) utilizada al crear "
+"nuevos hilos. El argumento opcional *size* especifica el tamaño de la pila a "
+"utilizar en los hilos que se creen a continuación, y debe ser 0 (utiliza el "
+"valor por defecto de la plataforma o el configurado) o un entero positivo de "
+"al menos 32768 (32KiB). Si *size* no se especifica, se utiliza 0. Si no está "
+"soportado el cambio del tamaño de pila del hilo, se lanza una excepción :exc:"
+"`RuntimeError`. Si la pila especificada es inválida se lanza un :exc:"
+"`ValueError` y el tamaño de la pila no se modifica. 32KiB es actualmente el "
+"menor valor soportado para el tamaño de la pila, para garantizar suficiente "
+"espacio en la misma para que quepa el propio intérprete. Tenga en cuenta que "
+"alguna plataformas pueden tener restricciones particulares en los valores "
+"para el tamaño de la pila, como requerir un mínimo que supere los 32KiB, o "
+"requerir una asignación en múltiplos del tamaño de página de memoria del "
+"sistema. Es necesario consultar la documentación de la plataforma para mayor "
+"información (son habituales las páginas de 4KiB; usar múltiplos de 4096 para "
+"el tamaño de pila es la estrategia sugerida si no se cuenta con información "
+"más específica)."
 
-#: ../../library/_thread.rst:143
+#, fuzzy
 msgid ":ref:`Availability <availability>`: Windows, pthreads."
-msgstr ":ref:`利用可能な環境 <availability>`: Windows, pthreads。"
+msgstr ""
+":ref:`Disponibilidad <availability>`: Sistemas Windows, con hilos POSIX."
 
-#: ../../library/_thread.rst:145
+#: ../Doc/library/_thread.rst:145
 msgid "Unix platforms with POSIX threads support."
 msgstr ""
 
-#: ../../library/_thread.rst:150
+#: ../Doc/library/_thread.rst:150
 msgid ""
 "The maximum value allowed for the *timeout* parameter of :meth:`Lock."
 "acquire`. Specifying a timeout greater than this value will raise an :exc:"
 "`OverflowError`."
 msgstr ""
-":meth:`Lock.acquire` の *timeout* 引数に許される最大値です。これ以上の値を "
-"timeout に指定すると :exc:`OverflowError` を発生させます。"
+"El máximo valor permitido para el parámetro *timeout* de :meth:`Lock."
+"acquire`. Especificar un tiempo de espera (*timeout*) mayor que este valor "
+"lanzará una excepción :exc:`OverflowError`."
 
-#: ../../library/_thread.rst:157
+#: ../Doc/library/_thread.rst:157
 msgid "Lock objects have the following methods:"
-msgstr "ロックオブジェクトは次のようなメソッドを持っています:"
+msgstr "Los objetos candado (*lock objects*) tienen los siguientes métodos:"
 
-#: ../../library/_thread.rst:162
+#: ../Doc/library/_thread.rst:162
 msgid ""
 "Without any optional argument, this method acquires the lock "
 "unconditionally, if necessary waiting until it is released by another thread "
 "(only one thread at a time can acquire a lock --- that's their reason for "
 "existence)."
 msgstr ""
-"オプションの引数なしで使用すると、このメソッドは他のスレッドがロックしている"
-"かどうかにかかわらずロックを獲得します。ただし、他のスレッドがすでにロックし"
-"ている場合には解除されるまで待ってからロックを獲得します (同時にロックを獲得"
-"できるスレッドはひとつだけであり、これこそがロックの存在理由です)。"
+"Sin ningún argumento opcional, este método adquiere el candado "
+"incondicionalmente, si es necesario esperando que éste sea liberado por otro "
+"hilo (solamente un hilo por vez puede adquirir un candado; para eso existen)."
 
-#: ../../library/_thread.rst:166
+#: ../Doc/library/_thread.rst:166
+#, fuzzy
 msgid ""
 "If the *blocking* argument is present, the action depends on its value: if "
 "it is False, the lock is only acquired if it can be acquired immediately "
 "without waiting, while if it is True, the lock is acquired unconditionally "
 "as above."
 msgstr ""
+"Si el argumento entero *waitflag* está presente, la acción depende de su "
+"valor: si es cero, el candado solamente es adquirido si está disponible de "
+"forma inmediata, sin esperas. Mientras que si es distinto de cero, el "
+"candado es adquirido sin condiciones, como en el caso anterior."
 
-#: ../../library/_thread.rst:171
+#: ../Doc/library/_thread.rst:171
+#, fuzzy
 msgid ""
 "If the floating-point *timeout* argument is present and positive, it "
 "specifies the maximum wait time in seconds before returning.  A negative "
 "*timeout* argument specifies an unbounded wait.  You cannot specify a "
 "*timeout* if *blocking* is False."
 msgstr ""
+"Si el argumento de punto flotante *timeout* está presente y es positivo, "
+"especifica el tiempo máximo de espera en segundos antes de retornar. Un "
+"argumento *timeout* negativo, especifica una espera ilimitada. No se puede "
+"especificar un *timeout* si *waitflag* es cero."
 
-#: ../../library/_thread.rst:176
+#: ../Doc/library/_thread.rst:176
 msgid ""
 "The return value is ``True`` if the lock is acquired successfully, ``False`` "
 "if not."
 msgstr ""
-"なお、ロックを獲得できた場合は ``True``、できなかった場合は ``False`` を返し"
-"ます。"
+"El valor de retorno es ``True`` si el candado (*lock*) se adquirió "
+"exitosamente, ``False`` de lo contrario."
 
-#: ../../library/_thread.rst:179
+#: ../Doc/library/_thread.rst:179
 msgid "The *timeout* parameter is new."
-msgstr "新しい *timeout* 引数。"
+msgstr "El parámetro *timeout* es nuevo."
 
-#: ../../library/_thread.rst:182
+#: ../Doc/library/_thread.rst:182
 msgid "Lock acquires can now be interrupted by signals on POSIX."
-msgstr "POSIX ではロックの取得がシグナルに割り込まれるようになりました。"
+msgstr ""
+"La adquisición de candados ahora puede ser interrumpida por señales en POSIX."
 
-#: ../../library/_thread.rst:188
+#: ../Doc/library/_thread.rst:188
 msgid ""
 "Releases the lock.  The lock must have been acquired earlier, but not "
 "necessarily by the same thread."
 msgstr ""
-"ロックを解放します。そのロックは既に獲得されたものでなければなりませんが、し"
-"かし同じスレッドによって獲得されたものである必要はありません。"
+"Libera el candado. El candado debe haber sido adquirido previamente, pero no "
+"necesariamente por el mismo hilo."
 
-#: ../../library/_thread.rst:194
+#: ../Doc/library/_thread.rst:194
 msgid ""
 "Return the status of the lock: ``True`` if it has been acquired by some "
 "thread, ``False`` if not."
 msgstr ""
-"ロックの状態を返します: 同じスレッドによって獲得されたものなら ``True`` 、違"
-"うのなら ``False`` を返します。"
+"Retorna el estado del candado: ``True`` si ha sido adquirido por algún hilo, "
+"``False`` de lo contrario."
 
-#: ../../library/_thread.rst:197
+#: ../Doc/library/_thread.rst:197
 msgid ""
 "In addition to these methods, lock objects can also be used via the :keyword:"
 "`with` statement, e.g.::"
 msgstr ""
-"これらのメソッドに加えて、ロックオブジェクトは :keyword:`with` 文を通じて以下"
-"の例のように使うこともできます。 ::"
+"Además de estos métodos, los objetos candado pueden ser utilizados mediante "
+"la declaración :keyword:`with`, por ejemplo::"
 
-#: ../../library/_thread.rst:207
+#: ../Doc/library/_thread.rst:207
 msgid "**Caveats:**"
-msgstr "**警告:**"
+msgstr "**Salvedades:**"
 
-#: ../../library/_thread.rst:211
+#: ../Doc/library/_thread.rst:211
 msgid ""
 "Threads interact strangely with interrupts: the :exc:`KeyboardInterrupt` "
 "exception will be received by an arbitrary thread.  (When the :mod:`signal` "
 "module is available, interrupts always go to the main thread.)"
 msgstr ""
-"スレッドは割り込みと奇妙な相互作用をします: :exc:`KeyboardInterrupt` 例外は任"
-"意のスレッドによって受け取られます。 (:mod:`signal` モジュールが利用可能なと"
-"き、割り込みは常にメインスレッドへ行きます。)"
+"Los hilos interactúan de manera extraña con interrupciones: la excepción :"
+"exc:`KeyboardInterrupt` va a ser recibida por un hilo cualquiera. (Cuando el "
+"módulo :mod:`signal` está disponible, la interrupción siempre se dirige al "
+"hilo principal."
 
-#: ../../library/_thread.rst:215
+#: ../Doc/library/_thread.rst:215
 msgid ""
 "Calling :func:`sys.exit` or raising the :exc:`SystemExit` exception is "
 "equivalent to calling :func:`_thread.exit`."
 msgstr ""
-":func:`sys.exit` を呼び出す、あるいは :exc:`SystemExit` 例外を送出すること"
-"は、 :func:`_thread.exit` を呼び出すことと同じです。"
+"Invocar a :func:`sys.exit` o lanzar la excepción :exc:`SystemExit` equivale "
+"a invocar :func:`_thread.exit`."
 
-#: ../../library/_thread.rst:218
+#: ../Doc/library/_thread.rst:218
 msgid ""
 "It is not possible to interrupt the :meth:`acquire` method on a lock --- "
 "the :exc:`KeyboardInterrupt` exception will happen after the lock has been "
 "acquired."
 msgstr ""
-"ロックの :meth:`acquire` メソッドに割り込むことはできません --- :exc:"
-"`KeyboardInterrupt` 例外は、ロックが獲得された後に発生します。"
+"No es posible interrumpir el método :meth:`acquire` en un candado. La "
+"excepción :exc:`KeyboardInterrupt` tendrá lugar después de que el candado "
+"haya sido adquirido."
 
-#: ../../library/_thread.rst:221
+#: ../Doc/library/_thread.rst:221
 msgid ""
 "When the main thread exits, it is system defined whether the other threads "
 "survive.  On most systems, they are killed without executing :keyword:"
 "`try` ... :keyword:`finally` clauses or executing object destructors."
 msgstr ""
-"メインスレッドが終了したとき、他のスレッドが生き残るかどうかは、システムに依"
-"存します。多くのシステムでは、 :keyword:`try` ... :keyword:`finally` 節や、オ"
-"ブジェクトデストラクタを実行せずに終了されます。"
+"Cuando el hilo principal sale, ¿sobreviven los otros hilos? Depende de cómo "
+"esté definido por el sistema. En la mayoría de los sistemas, los hilos se "
+"cierran inmediatamente (*killed*), sin ejecutar las cláusulas :keyword:"
+"`try` ... :keyword:`finally` o los destructores del objeto."
 
-#: ../../library/_thread.rst:226
+#: ../Doc/library/_thread.rst:226
 msgid ""
 "When the main thread exits, it does not do any of its usual cleanup (except "
 "that :keyword:`try` ... :keyword:`finally` clauses are honored), and the "
 "standard I/O files are not flushed."
 msgstr ""
-"メインスレッドが終了したとき、それの通常のクリーンアップは行なわれず、 (:"
-"keyword:`try` ... :keyword:`finally` 節が尊重されることは除きます)、標準 I/O "
-"ファイルはフラッシュされません。"
+"Cuando el hilo principal sale, no hace ninguna de las tareas de limpieza "
+"habituales (excepto que se haga honor a las cláusulas :keyword:`try` ... :"
+"keyword:`finally`), y los archivos de E/S estándar no son liberados."

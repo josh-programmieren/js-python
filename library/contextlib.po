@@ -1,58 +1,56 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-# Takeshi Nakazato, 2022
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 00:57+0000\n"
-"Last-Translator: Takeshi Nakazato, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2020-06-24 22:27+0200\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/contextlib.rst:2
+#: ../Doc/library/contextlib.rst:2
 msgid ""
 ":mod:`!contextlib` --- Utilities for :keyword:`!with`\\ -statement contexts"
-msgstr ":mod:`!contextlib` --- :keyword:`!with` 文コンテキスト用ユーティリティ"
+msgstr ""
+":mod:`!contextlib` --- Utilidades para declaraciones de contexto :keyword:`!"
+"with`"
 
-#: ../../library/contextlib.rst:7
+#: ../Doc/library/contextlib.rst:7
 msgid "**Source code:** :source:`Lib/contextlib.py`"
-msgstr "**ソースコード:** :source:`Lib/contextlib.py`"
+msgstr "**Código fuente:** :source:`Lib/contextlib.py`"
 
-#: ../../library/contextlib.rst:11
+#: ../Doc/library/contextlib.rst:11
 msgid ""
 "This module provides utilities for common tasks involving the :keyword:"
 "`with` statement. For more information see also :ref:`typecontextmanager` "
 "and :ref:`context-managers`."
 msgstr ""
-"このモジュールは :keyword:`with` 文に関わる一般的なタスクのためのユーティリ"
-"ティを提供します。詳しい情報は、 :ref:`typecontextmanager` と :ref:`context-"
-"managers` を参照してください。"
+"Este módulo proporciona utilidades para tareas comunes que involucran la "
+"declaración :keyword:`with`. Para obtener más información, consulte también :"
+"ref:`typecontextmanager` y :ref:`context-managers`."
 
-#: ../../library/contextlib.rst:17
+#: ../Doc/library/contextlib.rst:17
 msgid "Utilities"
-msgstr "ユーティリティ"
+msgstr "Utilidades"
 
-#: ../../library/contextlib.rst:19
+#: ../Doc/library/contextlib.rst:19
 msgid "Functions and classes provided:"
-msgstr "以下の関数とクラスを提供しています:"
+msgstr "Funciones y clases proporcionadas:"
 
-#: ../../library/contextlib.rst:23
+#: ../Doc/library/contextlib.rst:23
 msgid ""
 "An :term:`abstract base class` for classes that implement :meth:`object."
 "__enter__` and :meth:`object.__exit__`. A default implementation for :meth:"
@@ -60,13 +58,14 @@ msgid ""
 "__exit__` is an abstract method which by default returns ``None``. See also "
 "the definition of :ref:`typecontextmanager`."
 msgstr ""
-":meth:`object.__enter__` と :meth:`object.__exit__` の2つのメソッドを実装した"
-"抽象基底クラス (:term:`abstract base class`) です。 :meth:`object.__enter__` "
-"は ``self`` を返すデフォルトの実装が提供されるいっぽう、 :meth:`object."
-"__exit__` はデフォルトで ``None`` を返す抽象メソッドです。 :ref:"
-"`typecontextmanager` の定義も参照してください。"
+"Una :term:`clase base abstracta <abstract base class>` para clases que "
+"implementan :meth:`object.__aenter__` y :meth:`object.__exit__`. Se "
+"proporciona una implementación predeterminada para :meth:`object.__enter__` "
+"que retorna ``self`` mientras que :meth:`object.__exit__` es un método "
+"abstracto que por defecto retorna ``None``. Véase también la definición de :"
+"ref:`typecontextmanager`."
 
-#: ../../library/contextlib.rst:34
+#: ../Doc/library/contextlib.rst:34
 msgid ""
 "An :term:`abstract base class` for classes that implement :meth:`object."
 "__aenter__` and :meth:`object.__aexit__`. A default implementation for :meth:"
@@ -74,58 +73,60 @@ msgid ""
 "__aexit__` is an abstract method which by default returns ``None``. See also "
 "the definition of :ref:`async-context-managers`."
 msgstr ""
-":meth:`object.__aenter__` と :meth:`object.__aexit__` の2つのメソッドを実装す"
-"るクラスのための抽象基底クラス (:term:`abstract base class`) です。 :meth:"
-"`object.__aenter__` は ``self`` を返すデフォルト実装が提供されるいっぽう、 :"
-"meth:`object.__aexit__` はデフォルトで ``None`` を返す抽象メソッドです。 :"
-"ref:`async-context-managers` の定義も参照してください。"
+"Una :term:`clase base abstracta <abstract base class>` para clases que "
+"implementan :meth:`object.__aenter__` y :meth:`object.__aexit__`. Se "
+"proporciona una implementación predeterminada para :meth:`object.__aenter__` "
+"que retorna ``self`` mientras que :meth:`object.__aexit__` es un método "
+"abstracto que por defecto retorna ``None``. Véase también la definición de :"
+"ref:`async-context-managers`."
 
-#: ../../library/contextlib.rst:46
+#: ../Doc/library/contextlib.rst:46
 msgid ""
 "This function is a :term:`decorator` that can be used to define a factory "
 "function for :keyword:`with` statement context managers, without needing to "
 "create a class or separate :meth:`__enter__` and :meth:`__exit__` methods."
 msgstr ""
-"この関数は :keyword:`with` 文コンテキストマネージャのファクトリ関数を定義する"
-"ために利用できる :term:`デコレータ <decorator>` です。新しいクラスや :meth:"
-"`__enter__` と :meth:`__exit__` メソッドを別々に定義しなくても、ファクトリ関"
-"数を定義することができます。"
+"Esta función es :term:`decorador` que se puede usar para definir una función "
+"de fábrica para gestores de contexto de declaración :keyword:`with`, sin "
+"necesidad de crear una clase o separar :meth:`__enter__` y :meth:`__exit__` "
+"métodos."
 
-#: ../../library/contextlib.rst:50
+#: ../Doc/library/contextlib.rst:50
 msgid ""
 "While many objects natively support use in with statements, sometimes a "
 "resource needs to be managed that isn't a context manager in its own right, "
 "and doesn't implement a ``close()`` method for use with ``contextlib."
 "closing``"
 msgstr ""
-"多くのオブジェクトが with 文の仕様を固有にサポートしていますが、コンテキスト"
-"マネージャの権限に属さず、 ``close()`` メソッドを実装していないために "
-"``contextlib.closing`` の利用もできないリソースを管理する必要があることがあり"
-"ます。"
+"Si bien muchos objetos admiten de forma nativa el uso con declaraciones, a "
+"veces es necesario administrar un recurso que no sea un administrador de "
+"contexto por sí mismo y no implemente un método ``close()`` para usar con "
+"``contextlib.close``"
 
-#: ../../library/contextlib.rst:54
+#: ../Doc/library/contextlib.rst:54
 msgid ""
 "An abstract example would be the following to ensure correct resource "
 "management::"
 msgstr ""
-"リソースを正しく管理するよう保証する抽象的な例は以下のようなものでしょう::"
+"Un ejemplo abstracto sería el siguiente para garantizar la gestión correcta "
+"de los recursos::"
 
-#: ../../library/contextlib.rst:69
+#: ../Doc/library/contextlib.rst:69
 msgid "The function can then be used like this::"
-msgstr "このとき、関数は次のように使うことができます::"
+msgstr ""
 
-#: ../../library/contextlib.rst:75
+#: ../Doc/library/contextlib.rst:75
 msgid ""
 "The function being decorated must return a :term:`generator`-iterator when "
 "called. This iterator must yield exactly one value, which will be bound to "
 "the targets in the :keyword:`with` statement's :keyword:`!as` clause, if any."
 msgstr ""
-"デコレート対象の関数は呼び出されたときに :term:`ジェネレータ <generator>`-イ"
-"テレータを返す必要があります。このイテレータは必ず値を1つ yield しなければな"
-"りません。 :keyword:`with` 文の :keyword:`!as` 節が存在するなら、その値は as "
-"節のターゲットへ束縛されることになります。"
+"La función que se está decorando debe retornar un iterador :term:`generador` "
+"cuando se llama. Este iterador debe producir exactamente un valor, que "
+"estará vinculado a los objetivos en la :keyword:`with` declaración de la "
+"cláusula :keyword:`!as`, si existe."
 
-#: ../../library/contextlib.rst:79
+#: ../Doc/library/contextlib.rst:79
 msgid ""
 "At the point where the generator yields, the block nested in the :keyword:"
 "`with` statement is executed.  The generator is then resumed after the block "
@@ -140,19 +141,21 @@ msgid ""
 "handled, and execution will resume with the statement immediately following "
 "the :keyword:`!with` statement."
 msgstr ""
-"ジェネレータが yield を実行した箇所で :keyword:`with` 文のネストされたブロッ"
-"クが実行されます。ブロックから抜けた後でジェネレータは再開されます。ブロック"
-"内で処理されない例外が発生した場合は、ジェネレータ内部の yield を実行した箇所"
-"で例外が再送出されます。なので、(もしあれば) エラーを捕捉したり、クリーンアッ"
-"プ処理を確実に実行したりするために、:keyword:`try`...\\ :keyword:`except`..."
-"\\ :keyword:`finally` 構文を使用できます。例外を捕捉する目的が、(完全に例外を"
-"抑制してしまうのではなく) 単に例外のログをとるため、もしくはあるアクションを"
-"実行するためなら、ジェネレータはその例外を再送出しなければなりません。例外を"
-"再送出しない場合、ジェネレータのコンテキストマネージャは :keyword:`!with` 文"
-"に対して例外が処理されたことを示し、:keyword:`!with` 文の直後の文から実行を再"
-"開します。"
+"En el punto donde el generador cede, se ejecuta el bloque anidado en la "
+"palabra clave :keyword:`with`. El generador se reanuda luego de salir del "
+"bloque. Si se produce una excepción no controlada en el bloque, se vuelve a "
+"plantear dentro del generador en el punto donde se produjo el rendimiento. "
+"Por lo tanto, puede usar una declaración :keyword:`try`...\\ :keyword:"
+"`except`...\\ :keyword:`finally` para atrapar el error (si lo hay), o "
+"asegurarse de que se realice una limpieza. Si una excepción queda atrapada "
+"simplemente para registrarla o realizar alguna acción (en lugar de "
+"suprimirla por completo), el generador debe volver a generar esa excepción. "
+"De lo contrario, el administrador de contexto del generador indicará a la "
+"palabra clave :keyword:`!with` que se ha manejado la excepción, y la "
+"ejecución se reanudará con la declaración inmediatamente siguiente a la "
+"palabra clave :keyword:`!with`."
 
-#: ../../library/contextlib.rst:91
+#: ../Doc/library/contextlib.rst:91
 msgid ""
 ":func:`contextmanager` uses :class:`ContextDecorator` so the context "
 "managers it creates can be used as decorators as well as in :keyword:`with` "
@@ -162,29 +165,27 @@ msgid ""
 "that context managers support multiple invocations in order to be used as "
 "decorators)."
 msgstr ""
-":func:`contextmanager` は :class:`ContextDecorator` を使っているので、 :func:"
-"`contextmanager` で作ったコンテキストマネージャは :keyword:`with` 文だけでな"
-"くデコレータとしても利用できます。デコレーターとして利用された場合、新しい "
-"generator インスタンスが関数呼び出しのたびに暗黙に生成されます (このことに"
-"よって、 :func:`contextmanager` によって作られたなにがしか「単発」コンテキス"
-"トマネージャを、コンテキストマネージャがデコレータとして使われるためには多重"
-"に呼び出されることをサポートする必要がある、という要件に合致させることが出来"
-"ます。)"
+":func:`contextmanager` usa :class:`ContextDecorator` para que los gestores "
+"de contexto que crea se puedan usar como decoradores, así como en "
+"declaraciones :keyword:`with`. Cuando se usa como decorador, se crea "
+"implícitamente una nueva instancia de generador en cada llamada de función "
+"(esto permite que los gestores de contexto \"de-un-tiro\" creados por :func:"
+"`contextmanager` cumplan el requisito de que los gestores de contexto "
+"admitan múltiples invocaciones para ser utilizado como decoradores)."
 
-#: ../../library/contextlib.rst:98
+#: ../Doc/library/contextlib.rst:98
 msgid "Use of :class:`ContextDecorator`."
-msgstr ":class:`ContextDecorator` の使用。"
+msgstr "Uso de :class:`ContextDecorator`."
 
-#: ../../library/contextlib.rst:104
+#: ../Doc/library/contextlib.rst:104
 msgid ""
 "Similar to :func:`~contextlib.contextmanager`, but creates an :ref:"
 "`asynchronous context manager <async-context-managers>`."
 msgstr ""
-":func:`~contextlib.contextmanager` と似ていますが、 :ref:`非同期コンテキスト"
-"マネージャ (asynchronous context manager) <async-context-managers>` を生成し"
-"ます。"
+"Similar a :func:`~contextlib.contextmanager`, pero crea un :ref:"
+"`administrador de contexto asíncrono <async-context-managers>`."
 
-#: ../../library/contextlib.rst:107
+#: ../Doc/library/contextlib.rst:107
 msgid ""
 "This function is a :term:`decorator` that can be used to define a factory "
 "function for :keyword:`async with` statement asynchronous context managers, "
@@ -192,180 +193,177 @@ msgid ""
 "`__aexit__` methods. It must be applied to an :term:`asynchronous generator` "
 "function."
 msgstr ""
-"この関数は :keyword:`async with` 文のための非同期コンテキストマネージャのファ"
-"クトリ関数を定義するために利用できるデコレータ (:term:`decorator`) です。新し"
-"いクラスや  :meth:`__aenter__` と :meth:`__aexit__` メソッドを個別に定義する"
-"必要はありません。このデコレータは非同期ジェネレータ (:term:`asynchronous "
-"generator`) 関数に適用しなければなりません。"
+"Esta función es :term:`decorador` que se puede utilizar para definir una "
+"función de fábrica para gestores de contexto asíncrono de declaración :"
+"keyword:`async with`, sin necesidad de crear una clase o separar :meth:"
+"`__aenter__` y métodos :meth:`__aexit__`. Debe aplicarse a una función :term:"
+"`asynchronous generator`."
 
-#: ../../library/contextlib.rst:113
+#: ../Doc/library/contextlib.rst:113
 msgid "A simple example::"
-msgstr "簡単な例::"
+msgstr "Un ejemplo simple::"
 
-#: ../../library/contextlib.rst:131
+#: ../Doc/library/contextlib.rst:131
 msgid ""
 "Context managers defined with :func:`asynccontextmanager` can be used either "
 "as decorators or with :keyword:`async with` statements::"
 msgstr ""
-":func:`asynccontextmanager` とともに定義されたコンテキストマネージャは、デコ"
-"レータとして使うことも :keyword:`async with` 文と組み合わせて使うこともできま"
-"す::"
+"Los administradores de contexto definidos con :func:`asynccontextmanager` se "
+"pueden utilizar como decoradores o con declaraciones :keyword:`async with`:"
 
-#: ../../library/contextlib.rst:149
+#: ../Doc/library/contextlib.rst:149
 msgid ""
 "When used as a decorator, a new generator instance is implicitly created on "
 "each function call. This allows the otherwise \"one-shot\" context managers "
 "created by :func:`asynccontextmanager` to meet the requirement that context "
 "managers support multiple invocations in order to be used as decorators."
 msgstr ""
-"デコレータとして使われた場合は、各関数呼び出しに対して暗黙のうちに新しいジェ"
-"ネレータインスタンスが生成されます。これにより、 :func:`asynccontextmanager` "
-"で生成された単回使用のコンテキストマネージャが複数回呼び出し可能となり、コン"
-"テキストマネージャをデコレータとして使うことができるための要件を満たすように"
-"することができます。"
+"Cuando se utiliza como decorador, se crea implícitamente una nueva instancia "
+"de generador en cada llamada de función. Esto permite que los "
+"administradores de contexto de otro modo \"únicos\" creados por :func:"
+"`asynccontextmanager` cumplan con el requisito de que los administradores de "
+"contexto admitan múltiples invocaciones para ser utilizados como decoradores."
 
-#: ../../library/contextlib.rst:154
+#: ../Doc/library/contextlib.rst:154
 msgid ""
 "Async context managers created with :func:`asynccontextmanager` can be used "
 "as decorators."
 msgstr ""
-":func:`asynccontextmanager` により生成された非同期コンテキストマネージャをデ"
-"コレータとして使うことができるようになりました。"
+"Los administradores de contexto asíncronos creados con :func:"
+"`asynccontextmanager` se pueden utilizar como decoradores."
 
-#: ../../library/contextlib.rst:161
+#: ../Doc/library/contextlib.rst:161
 msgid ""
 "Return a context manager that closes *thing* upon completion of the block.  "
 "This is basically equivalent to::"
 msgstr ""
-"ブロックの完了時に *thing* を close するコンテキストマネージャを返します。こ"
-"れは基本的に以下と等価です::"
+"retorna un gestor de contexto que cierra *thing* al completar el bloque. "
+"Esto es básicamente equivalente a::"
 
-#: ../../library/contextlib.rst:173
+#: ../Doc/library/contextlib.rst:173
 msgid "And lets you write code like this::"
-msgstr ""
-"そして、明示的に ``page`` を close する必要なしに、次のように書くことができま"
-"す::"
+msgstr "Y te permite escribir código como este::"
 
-#: ../../library/contextlib.rst:182
+#: ../Doc/library/contextlib.rst:182
 msgid ""
 "without needing to explicitly close ``page``.  Even if an error occurs, "
 "``page.close()`` will be called when the :keyword:`with` block is exited."
 msgstr ""
-"``page`` を明示的に close する必要は無く、エラーが発生した場合でも、 :"
-"keyword:`with` ブロックを出るときに ``page.close()`` が呼ばれます。"
+"sin necesidad de cerrar explícitamente la ``page``. Incluso si se produce un "
+"error, se llamará a ``page.close()`` cuando salga el bloque :keyword:`with`."
 
-#: ../../library/contextlib.rst:188
+#: ../Doc/library/contextlib.rst:188
 msgid ""
 "Return an async context manager that calls the ``aclose()`` method of "
 "*thing* upon completion of the block.  This is basically equivalent to::"
 msgstr ""
-"ブロックの完了時に *thing* の ``aclose()`` メソッドを呼び出すような非同期コン"
-"テキストマネージャを返します。これは基本的に以下と等価です::"
+"Retorna un administrador de contexto asíncrono que llama al método "
+"``aclose()`` de *thing* una vez completado el bloque. Esto es básicamente "
+"equivalente a:"
 
-#: ../../library/contextlib.rst:200
+#: ../Doc/library/contextlib.rst:200
 msgid ""
 "Significantly, ``aclosing()`` supports deterministic cleanup of async "
 "generators when they happen to exit early by :keyword:`break` or an "
 "exception.  For example::"
 msgstr ""
-"重要なことは、たとえば次の例のように :keyword:`break` や例外によって早期にブ"
-"ロックが終了した場合に、 ``aclosing()`` は非同期ジェネレータの決定論的なク"
-"リーンアップをサポートすることです::"
+"Significativamente, ``aclosing()`` admite la limpieza determinista de "
+"generadores asincrónicos cuando salen temprano por :keyword:`break` o una "
+"excepción. Por ejemplo::"
 
-#: ../../library/contextlib.rst:211
+#: ../Doc/library/contextlib.rst:211
 msgid ""
 "This pattern ensures that the generator's async exit code is executed in the "
 "same context as its iterations (so that exceptions and context variables "
 "work as expected, and the exit code isn't run after the lifetime of some "
 "task it depends on)."
 msgstr ""
-"このパターンは、ジェネレータの非同期な終了のコードがイテレーション処理と同じ"
-"コンテキストの中で実行されることを保証します (すなわち例外とコンテキスト変数"
-"は期待通りに動作し、またジェネレータが依存するタスクの寿命が尽きたあとに終了"
-"のコードが実行されることもありません)。"
+"Este patrón garantiza que el código de salida asíncrono del generador se "
+"ejecute en el mismo contexto que sus iteraciones (de modo que las "
+"excepciones y las variables de contexto funcionen como se esperaba, y el "
+"código de salida no se ejecute después de la vida útil de alguna tarea de la "
+"que depende)."
 
-#: ../../library/contextlib.rst:223
+#: ../Doc/library/contextlib.rst:223
 msgid ""
 "Return a context manager that returns *enter_result* from ``__enter__``, but "
 "otherwise does nothing. It is intended to be used as a stand-in for an "
 "optional context manager, for example::"
 msgstr ""
-"*enter_result* を ``__enter__`` メソッドが返すだけで、その他は何もしないコン"
-"テキストマネージャを返します。たとえば以下のように、ある機能を持った別のコン"
-"テキストマネージャに対する、選択可能な代役として使われることが意図されていま"
-"す::"
+"retorna un gestor de contexto que retorna *enter_result* de ``__enter__``, "
+"pero de lo contrario no hace nada. Está destinado a ser utilizado como un "
+"sustituto para un administrador de contexto opcional, por ejemplo:"
 
-#: ../../library/contextlib.rst:237
+#: ../Doc/library/contextlib.rst:237
 msgid "An example using *enter_result*::"
-msgstr "*enter_result* を使った例です::"
+msgstr "Un ejemplo usando *enter_result*::"
 
-#: ../../library/contextlib.rst:250
+#: ../Doc/library/contextlib.rst:250
 msgid ""
 "It can also be used as a stand-in for :ref:`asynchronous context managers "
 "<async-context-managers>`::"
 msgstr ""
-":ref:`非同期コンテキストマネージャ <async-context-managers>` の代役として使う"
-"こともできます::"
+"También se puede utilizar como sustituto de :ref:`asynchronous context "
+"managers <async-context-managers>`:"
 
-#: ../../library/contextlib.rst:266
+#: ../Doc/library/contextlib.rst:266
 msgid ":term:`asynchronous context manager` support was added."
-msgstr ""
-"非同期コンテキストマネージャ (:term:`asynchronous context manager`) のサポー"
-"トが追加されました。"
+msgstr "Se agregó compatibilidad con :term:`asynchronous context manager`."
 
-#: ../../library/contextlib.rst:273
+#: ../Doc/library/contextlib.rst:273
 msgid ""
 "Return a context manager that suppresses any of the specified exceptions if "
 "they occur in the body of a :keyword:`!with` statement and then resumes "
 "execution with the first statement following the end of the :keyword:`!with` "
 "statement."
 msgstr ""
-":keyword:`!with` 文の内部で指定された例外の発生を抑えるコンテキストマネージャ"
-"を返します。 :keyword:`!with` 文の後に続く最初の文から処理が再開されます。"
+"Retorna un administrador de contexto que suprime cualquiera de las "
+"excepciones especificadas si ocurren en el cuerpo de una instrucción :"
+"keyword:`!with` y luego reanuda la ejecución con la primera instrucción que "
+"sigue al final de la instrucción :keyword:`!with`."
 
-#: ../../library/contextlib.rst:278
+#: ../Doc/library/contextlib.rst:278
 msgid ""
 "As with any other mechanism that completely suppresses exceptions, this "
 "context manager should be used only to cover very specific errors where "
 "silently continuing with program execution is known to be the right thing to "
 "do."
 msgstr ""
-"ほかの完全に例外を抑制するメカニズム同様、このコンテキストマネージャは、黙っ"
-"てプログラム実行を続けることが正しいことであるとわかっている、非常に限定的な"
-"エラーをカバーする以上の使い方はしてはいけません。"
+"Al igual que con cualquier otro mecanismo que suprima completamente las "
+"excepciones, este administrador de contexto debe usarse solo para cubrir "
+"errores muy específicos en los que se sabe que continuar silenciosamente con "
+"la ejecución del programa es lo correcto."
 
-#: ../../library/contextlib.rst:283
+#: ../Doc/library/contextlib.rst:283
 msgid "For example::"
-msgstr "例えば::"
+msgstr "Por ejemplo::"
 
-#: ../../library/contextlib.rst:293
+#: ../Doc/library/contextlib.rst:293
 msgid "This code is equivalent to::"
-msgstr "これは以下と等価です::"
+msgstr "Este código es equivalente a::"
 
-#: ../../library/contextlib.rst:305 ../../library/contextlib.rst:345
-#: ../../library/contextlib.rst:355 ../../library/contextlib.rst:372
+#: ../Doc/library/contextlib.rst:305 ../Doc/library/contextlib.rst:345
+#: ../Doc/library/contextlib.rst:355 ../Doc/library/contextlib.rst:372
 msgid "This context manager is :ref:`reentrant <reentrant-cms>`."
-msgstr ""
-"このコンテキストマネージャは :ref:`再入可能(リエントラント) <reentrant-cms>` "
-"です。"
+msgstr "Este gestor de contexto es :ref:`reentrant <reentrant-cms>`."
 
-#: ../../library/contextlib.rst:312
+#: ../Doc/library/contextlib.rst:312
 msgid ""
 "Context manager for temporarily redirecting :data:`sys.stdout` to another "
 "file or file-like object."
 msgstr ""
-":data:`sys.stdout` を一時的に別のファイルまたは file-like オブジェクトにリダ"
-"イレクトするコンテキストマネージャです。"
+"Administrador de contexto para redirigir temporalmente :data:`sys.stdout` a "
+"otro archivo u objeto similar a un archivo."
 
-#: ../../library/contextlib.rst:315
+#: ../Doc/library/contextlib.rst:315
 msgid ""
 "This tool adds flexibility to existing functions or classes whose output is "
 "hardwired to stdout."
 msgstr ""
-"このツールは、出力先が標準出力 (stdout) に固定されている既存の関数やクラスに"
-"出力先の柔軟性を追加します。"
+"Esta herramienta agrega flexibilidad a las funciones o clases existentes "
+"cuya salida está programada para stdout."
 
-#: ../../library/contextlib.rst:318
+#: ../Doc/library/contextlib.rst:318
 msgid ""
 "For example, the output of :func:`help` normally is sent to *sys.stdout*. "
 "You can capture that output in a string by redirecting the output to an :"
@@ -373,47 +371,46 @@ msgid ""
 "``__enter__`` method and so is available as the target of the :keyword:"
 "`with` statement::"
 msgstr ""
-"たとえば、 :func:`help` の出力は通常標準出力 (*sys.stdout*) に送られます。出"
-"力される文字列を :class:`io.StringIO` オブジェクトにリダイレクトすることに"
-"よって捕捉することができます。代替の出力ストリームは ``__enter__`` メソッドに"
-"よって返されるので、 :keyword:`with` 文のターゲットとして利用可能です::"
+"Por ejemplo, la salida de :func:`help` normalmente se envía a *sys.stdout*. "
+"Puede capturar esa salida en una cadena redirigiendo la salida a un objeto :"
+"class:`io.StringIO`. La secuencia de reemplazo se retorna desde el método "
+"``__enter__`` y, por lo tanto, está disponible como destino de la "
+"declaración :keyword:`with`:"
 
-#: ../../library/contextlib.rst:328
+#: ../Doc/library/contextlib.rst:328
 msgid ""
 "To send the output of :func:`help` to a file on disk, redirect the output to "
 "a regular file::"
 msgstr ""
-":func:`help` の出力をディスク上のファイルに送るためには、出力を通常のファイル"
-"にリダイレクトします::"
+"Para enviar la salida de :func:`help` a un archivo en el disco, redirija la "
+"salida a un archivo normal::"
 
-#: ../../library/contextlib.rst:335
+#: ../Doc/library/contextlib.rst:335
 msgid "To send the output of :func:`help` to *sys.stderr*::"
-msgstr ""
-":func:`help` の出力を標準エラー出力 (*sys.stderr*) に送るには以下のようにしま"
-"す::"
+msgstr "Para enviar la salida de :func:`help` a *sys.stderr*::"
 
-#: ../../library/contextlib.rst:340
+#: ../Doc/library/contextlib.rst:340
 msgid ""
 "Note that the global side effect on :data:`sys.stdout` means that this "
 "context manager is not suitable for use in library code and most threaded "
 "applications. It also has no effect on the output of subprocesses. However, "
 "it is still a useful approach for many utility scripts."
 msgstr ""
-":data:`sys.stdout` のシステム全体にわたる副作用により、このコンテキストマネー"
-"ジャはライブラリコードやマルチスレッドアプリケーションでの使用には適していま"
-"せん。また、サブプロセスの出力に対しても効果がありません。そのような制限はあ"
-"りますが、それでも多くのユーティリティスクリプトに対して有用なアプローチで"
-"す。"
+"Tenga en cuenta que el efecto secundario global en :data:`sys.stdout` "
+"significa que este administrador de contexto no es adecuado para su uso en "
+"el código de la biblioteca y en la mayoría de las aplicaciones con "
+"subprocesos. Tampoco tiene efecto en la salida de subprocesos. Sin embargo, "
+"sigue siendo un enfoque útil para muchos scripts de utilidad."
 
-#: ../../library/contextlib.rst:352
+#: ../Doc/library/contextlib.rst:352
 msgid ""
 "Similar to :func:`~contextlib.redirect_stdout` but redirecting :data:`sys."
 "stderr` to another file or file-like object."
 msgstr ""
-":func:`~contextlib.redirect_stdout` と同じですが、標準エラー出力 (:data:`sys."
-"stderr`) を別のファイルや file-like オブジェクトにリダイレクトします。"
+"Similar a :func:`~contextlib.redirect_stdout` pero redirigiendo :data:`sys."
+"stderr` a otro archivo u objeto similar a un archivo."
 
-#: ../../library/contextlib.rst:362
+#: ../Doc/library/contextlib.rst:362
 msgid ""
 "Non parallel-safe context manager to change the current working directory. "
 "As this changes a global state, the working directory, it is not suitable "
@@ -422,145 +419,145 @@ msgid ""
 "temporarily relinquished -- unless explicitly desired, you should not yield "
 "when this context manager is active."
 msgstr ""
-"現在の作業ディレクトリを変更するパラレル非安全なコンテキストマネージャです。"
-"グローバルな状態である作業ディレクトリを変更するため、ほとんどのマルチスレッ"
-"ドまたは非同期のコンテキストに対する利用は適切ではありません。また、プログラ"
-"ムの実行権限を一時的に放棄するジェネレータのような、直線的でないコードを実行"
-"する場合も適切ではありません -- 明確に必要でないかぎり、このコンテキストマ"
-"ネージャがアクティブな状態で yield すべきではありません。"
 
-#: ../../library/contextlib.rst:369
+#: ../Doc/library/contextlib.rst:369
 msgid ""
 "This is a simple wrapper around :func:`~os.chdir`, it changes the current "
 "working directory upon entering and restores the old one on exit."
 msgstr ""
-"これは :func:`~os.chdir` の単純なラッパーで、コンテキストに入るときに現在の作"
-"業ディレクトリを変更し、終了時に元の作業ディレクトリを復元します。"
 
-#: ../../library/contextlib.rst:379
+#: ../Doc/library/contextlib.rst:379
 msgid ""
 "A base class that enables a context manager to also be used as a decorator."
 msgstr ""
-"コンテキストマネージャをデコレータとしても使用できるようにする基底クラスで"
-"す。"
+"Una clase base que permite que un administrador de contexto también se use "
+"como decorador."
 
-#: ../../library/contextlib.rst:381
+#: ../Doc/library/contextlib.rst:381
 msgid ""
 "Context managers inheriting from ``ContextDecorator`` have to implement "
 "``__enter__`` and ``__exit__`` as normal. ``__exit__`` retains its optional "
 "exception handling even when used as a decorator."
 msgstr ""
-"``ContextDecorator`` から継承したコンテキストマネージャは、通常のコンテキスト"
-"マネージャーと同じく ``__enter__`` および ``__exit__`` を実装する必要がありま"
-"す。``__exit__`` はデコレータとして使用された場合でも例外をオプションの引数と"
-"して受け取ります。"
+"Los gestores de contexto que heredan de ``ContextDecorator`` tienen que "
+"implementar ``__enter__`` y ``__exit__`` de manera normal. ``__exit__`` "
+"conserva su manejo opcional de excepciones incluso cuando se usa como "
+"decorador."
 
-#: ../../library/contextlib.rst:385
+#: ../Doc/library/contextlib.rst:385
 msgid ""
 "``ContextDecorator`` is used by :func:`contextmanager`, so you get this "
 "functionality automatically."
 msgstr ""
-":func:`contextmanager` は ``ContextDecorator`` を利用しているので、自動的にデ"
-"コレーターとしても利用できるようになります。"
+"``ContextDecorator`` es utilizado por :func:`contextmanager`, por lo que "
+"obtiene esta funcionalidad automáticamente."
 
-#: ../../library/contextlib.rst:388
+#: ../Doc/library/contextlib.rst:388
 msgid "Example of ``ContextDecorator``::"
-msgstr "``ContextDecorator`` の例::"
+msgstr "Ejemplo de ``ContextDecorator``::"
 
-#: ../../library/contextlib.rst:401 ../../library/contextlib.rst:473
+#: ../Doc/library/contextlib.rst:401 ../Doc/library/contextlib.rst:473
 msgid "The class can then be used like this::"
-msgstr "このとき、クラスは次のように使うことができます::"
+msgstr ""
 
-#: ../../library/contextlib.rst:419
+#: ../Doc/library/contextlib.rst:419
 msgid ""
 "This change is just syntactic sugar for any construct of the following form::"
-msgstr "これは次のような形のコードに対するシンタックスシュガーになります::"
+msgstr ""
+"Este cambio es solo azúcar sintáctico para cualquier construcción de la "
+"siguiente forma:"
 
-#: ../../library/contextlib.rst:425
+#: ../Doc/library/contextlib.rst:425
 msgid "``ContextDecorator`` lets you instead write::"
-msgstr "``ContextDecorator`` を使うと代わりに次のように書けます::"
+msgstr "``ContextDecorator`` le permite escribir en su lugar::"
 
-#: ../../library/contextlib.rst:431
+#: ../Doc/library/contextlib.rst:431
 msgid ""
 "It makes it clear that the ``cm`` applies to the whole function, rather than "
 "just a piece of it (and saving an indentation level is nice, too)."
 msgstr ""
-"デコレーターを使うと、``cm`` が関数の一部ではなく全体に適用されていることが明"
-"確になります (インデントレベルを1つ節約できるのもメリットです)。"
+"Deja en claro que el ``cm`` se aplica a toda la función, en lugar de solo "
+"una parte de ella (y guardar un nivel de sangría también es bueno)."
 
-#: ../../library/contextlib.rst:434
+#: ../Doc/library/contextlib.rst:434
 msgid ""
 "Existing context managers that already have a base class can be extended by "
 "using ``ContextDecorator`` as a mixin class::"
 msgstr ""
-"すでに基底クラスを持っているコンテキストマネージャーも、``ContextDecorator`` "
-"を mixin クラスとして利用することで拡張できます::"
+"Los gestores de contexto existentes que ya tienen una clase base pueden "
+"ampliarse utilizando ``ContextDecorator`` como una clase mezcla (*mixin*)::"
 
-#: ../../library/contextlib.rst:447
+#: ../Doc/library/contextlib.rst:447
 msgid ""
 "As the decorated function must be able to be called multiple times, the "
 "underlying context manager must support use in multiple :keyword:`with` "
 "statements. If this is not the case, then the original construct with the "
 "explicit :keyword:`!with` statement inside the function should be used."
 msgstr ""
-"デコレートされた関数が複数回呼び出せるように、内部のコンテキストマネージャー"
-"は複数の :keyword:`with` 文に対応する必要があります。そうでないなら、明示的"
-"な :keyword:`!with` 文を関数内で利用するべきです。"
+"Como la función decorada debe poder llamarse varias veces, el gestor de "
+"contexto subyacente debe admitir el uso en múltiples declaraciones :keyword:"
+"`with`. Si este no es el caso, se debe utilizar la construcción original con "
+"la declaración explícita :keyword:`!with` dentro de la función."
 
-#: ../../library/contextlib.rst:457
+#: ../Doc/library/contextlib.rst:457
 msgid ""
 "Similar to :class:`ContextDecorator` but only for asynchronous functions."
-msgstr ":class:`ContextDecorator` と同じですが、非同期関数専用のクラスです。"
+msgstr ""
+"Similar a :class:`ContextDecorator` pero solo para funciones asincrónicas."
 
-#: ../../library/contextlib.rst:459
+#: ../Doc/library/contextlib.rst:459
 msgid "Example of ``AsyncContextDecorator``::"
-msgstr "``AsyncContextDecorator`` の使用例::"
+msgstr "Ejemplo de ``AsyncContextDecorator``:"
 
-#: ../../library/contextlib.rst:498
+#: ../Doc/library/contextlib.rst:498
 msgid ""
 "A context manager that is designed to make it easy to programmatically "
 "combine other context managers and cleanup functions, especially those that "
 "are optional or otherwise driven by input data."
 msgstr ""
-"他の、特にオプションであったり入力に依存するようなコンテキストマネージャーや"
-"クリーンアップ関数を動的に組み合わせるためのコンテキストマネージャーです。"
+"Un gestor de contexto que está diseñado para facilitar la combinación "
+"programática de otros gestores de contexto y funciones de limpieza, "
+"especialmente aquellas que son opcionales o que de otro modo son impulsadas "
+"por los datos de entrada."
 
-#: ../../library/contextlib.rst:502
+#: ../Doc/library/contextlib.rst:502
 msgid ""
 "For example, a set of files may easily be handled in a single with statement "
 "as follows::"
-msgstr "例えば、複数のファイルを1つの with 文で簡単に扱うことができます::"
+msgstr ""
+"Por ejemplo, un conjunto de archivos puede manejarse fácilmente en una sola "
+"declaración de la siguiente manera:"
 
-#: ../../library/contextlib.rst:511
+#: ../Doc/library/contextlib.rst:511
 msgid ""
 "The :meth:`__enter__` method returns the :class:`ExitStack` instance, and "
 "performs no additional operations."
 msgstr ""
-":meth:`__enter__` メソッドは :class:`ExitStack` インスタンスを返し、それ以外"
-"のいかなる処理も行いません。"
 
-#: ../../library/contextlib.rst:514
+#: ../Doc/library/contextlib.rst:514
 msgid ""
 "Each instance maintains a stack of registered callbacks that are called in "
 "reverse order when the instance is closed (either explicitly or implicitly "
 "at the end of a :keyword:`with` statement). Note that callbacks are *not* "
 "invoked implicitly when the context stack instance is garbage collected."
 msgstr ""
-"各インスタンスは登録されたコールバックのスタックを管理し、インスタンスが (明"
-"示的に、あるいは :keyword:`with` 文の終わりに暗黙的に)  close されるときに逆"
-"順でそれを呼び出します。コンテキストスタックのインスタンスが暗黙的にガベージ"
-"コレクトされたときには callback は呼び出され **ません** 。"
+"Cada instancia mantiene una pila de retrollamadas registradas que se llaman "
+"en orden inverso cuando la instancia se cierra (ya sea explícita o "
+"implícitamente al final de una instrucción :keyword:`with`). Tenga en cuenta "
+"que las retrollamadas *no* se invocan implícitamente cuando la instancia de "
+"la pila de contexto se recolecta basura."
 
-#: ../../library/contextlib.rst:519
+#: ../Doc/library/contextlib.rst:519
 msgid ""
 "This stack model is used so that context managers that acquire their "
 "resources in their ``__init__`` method (such as file objects) can be handled "
 "correctly."
 msgstr ""
-"このスタックモデルは、(file オブジェクトのように) ``__init__`` メソッドでリ"
-"ソースを確保するコンテキストマネージャーを正しく扱うためのものです。"
+"Este modelo de pila se utiliza para que los administradores de contexto que "
+"adquieren sus recursos en su método ``__init__`` (como los objetos de "
+"archivo) se puedan manejar correctamente."
 
-#: ../../library/contextlib.rst:523
+#: ../Doc/library/contextlib.rst:523
 msgid ""
 "Since registered callbacks are invoked in the reverse order of registration, "
 "this ends up behaving as if multiple nested :keyword:`with` statements had "
@@ -569,215 +566,219 @@ msgid ""
 "exception, then outer callbacks will be passed arguments based on that "
 "updated state."
 msgstr ""
-"登録されたコールバックが登録の逆順で実行されるので、複数のネストされた :"
-"keyword:`with` 文を利用するのと同じ振る舞いをします。これは例外処理にも適用さ"
-"れます。内側のコールバックが例外を抑制したり置き換えたりした場合、外側のコー"
-"ルバックには更新された状態に応じた引数が渡されます。"
+"Dado que las retrollamadas registradas se invocan en el orden inverso del "
+"registro, esto termina comportándose como si se hubieran utilizado múltiples "
+"instrucciones anidadas :keyword:`with` con el conjunto registrado de "
+"retrollamadas. Esto incluso se extiende al manejo de excepciones: si una "
+"retrollamada interna suprime o reemplaza una excepción, las retrollamadas "
+"externas se pasarán argumentos basados en ese estado actualizado."
 
-#: ../../library/contextlib.rst:530
+#: ../Doc/library/contextlib.rst:530
 msgid ""
 "This is a relatively low level API that takes care of the details of "
 "correctly unwinding the stack of exit callbacks. It provides a suitable "
 "foundation for higher level context managers that manipulate the exit stack "
 "in application specific ways."
 msgstr ""
-"これは正しく exit callback の stack を巻き戻すための、比較的低レベルな API で"
-"す。アプリケーション独自のより高レベルなコンテキストマネージャーを作るための"
-"基板として使うのに適しています。"
+"Esta es una API de nivel relativamente bajo que se ocupa de los detalles de "
+"desenrollar correctamente la pila de retrollamadas de salida. Proporciona "
+"una base adecuada para administradores de contexto de nivel superior que "
+"manipulan la pila de salida en formas específicas de la aplicación."
 
-#: ../../library/contextlib.rst:539
+#: ../Doc/library/contextlib.rst:539
 msgid ""
 "Enters a new context manager and adds its :meth:`__exit__` method to the "
 "callback stack. The return value is the result of the context manager's own :"
 "meth:`__enter__` method."
 msgstr ""
-"新しいコンテキストマネージャーに enter し、その :meth:`__exit__` method を"
-"コールバックスタックに追加します。渡されたコンテキストマネージャーの :meth:"
-"`__enter__` メソッドの戻り値を返します。"
+"Ingresa a un nuevo administrador de contexto y agrega su método :meth:"
+"`__exit__` a la pila de retrollamada. El valor de retorno es el resultado "
+"del método propio del administrador de contexto :meth:`__enter__`."
 
-#: ../../library/contextlib.rst:543
+#: ../Doc/library/contextlib.rst:543
 msgid ""
 "These context managers may suppress exceptions just as they normally would "
 "if used directly as part of a :keyword:`with` statement."
 msgstr ""
-"コンテキストマネージャーは、普段 :keyword:`with` 文で利用された時と同じよう"
-"に、例外を抑制することができます。"
+"Estos administradores de contexto pueden suprimir excepciones tal como lo "
+"harían normalmente si se usaran directamente como parte de una declaración :"
+"keyword:`with`."
 
-#: ../../library/contextlib.rst:546
+#: ../Doc/library/contextlib.rst:546
 msgid ""
 "Raises :exc:`TypeError` instead of :exc:`AttributeError` if *cm* is not a "
 "context manager."
 msgstr ""
-"*cm* がコンテキストマネージャでなかった場合、 :exc:`AttributeError` の代わり"
-"に :exc:`TypeError` 例外を送出します。"
 
-#: ../../library/contextlib.rst:552
+#: ../Doc/library/contextlib.rst:552
 msgid "Adds a context manager's :meth:`__exit__` method to the callback stack."
 msgstr ""
-"コンテキストマネージャーの :meth:`__exit__` メソッドをコールバックスタックに"
-"追加します。"
+"Agrega un método de gestor de contexto :meth:`__exit__` a la pila de "
+"retrollamada."
 
-#: ../../library/contextlib.rst:554
+#: ../Doc/library/contextlib.rst:554
 msgid ""
 "As ``__enter__`` is *not* invoked, this method can be used to cover part of "
 "an :meth:`__enter__` implementation with a context manager's own :meth:"
 "`__exit__` method."
 msgstr ""
-"このメソッドは ``__enter__`` を **呼び出さない** ので、コンテキストマネー"
-"ジャーを実装するときに、 :meth:`__enter__` の実装の一部を自身の :meth:"
-"`__exit__` メソッドでカバーするために利用できます。"
+"Como ``__enter__`` *no* se invoca, este método se puede usar para cubrir "
+"parte de una implementación :meth:`__enter__` con un método propio del "
+"gestor de contexto :meth:`__exit__`."
 
-#: ../../library/contextlib.rst:558
+#: ../Doc/library/contextlib.rst:558
 msgid ""
 "If passed an object that is not a context manager, this method assumes it is "
 "a callback with the same signature as a context manager's :meth:`__exit__` "
 "method and adds it directly to the callback stack."
 msgstr ""
-"コンテキストマネージャーではないオブジェクトが渡された場合、このメソッドはそ"
-"のオブジェクトをコンテキストマネージャーの :meth:`__exit__` メソッドと同じシ"
-"グネチャを持つコールバック関数だと仮定して、直接コールバックスタックに追加し"
-"ます。"
+"Si se pasa un objeto que no es un administrador de contexto, este método "
+"supone que es una retrollamada con la misma firma que el método :meth:"
+"`__exit__` de un gestor de contexto y lo agrega directamente a la pila de "
+"retrollamada."
 
-#: ../../library/contextlib.rst:562
+#: ../Doc/library/contextlib.rst:562
 msgid ""
 "By returning true values, these callbacks can suppress exceptions the same "
 "way context manager :meth:`__exit__` methods can."
 msgstr ""
-"それらのコールバック関数も、コンテキストマネージャーの :meth:`__exit__` と同"
-"じく、 true 値を返すことで例外を抑制することができます。"
+"Al retornar valores verdaderos, estas retrollamadas pueden suprimir "
+"excepciones de la misma manera que el gestor de contexto los métodos :meth:"
+"`__exit__` pueden hacerlo."
 
-#: ../../library/contextlib.rst:565
+#: ../Doc/library/contextlib.rst:565
 msgid ""
 "The passed in object is returned from the function, allowing this method to "
 "be used as a function decorator."
 msgstr ""
-"この関数はデコレータとしても使えるように、受け取ったオブジェクトをそのまま返"
-"します。"
+"El objeto pasado se retorna desde la función, lo que permite que este método "
+"se use como decorador de funciones."
 
-#: ../../library/contextlib.rst:570
+#: ../Doc/library/contextlib.rst:570
 msgid ""
 "Accepts an arbitrary callback function and arguments and adds it to the "
 "callback stack."
-msgstr "任意の関数と引数を受け取り、コールバックスタックに追加します。"
+msgstr ""
+"Acepta una función de retrollamada arbitraria y argumentos y la agrega a la "
+"pila de retrollamada."
 
-#: ../../library/contextlib.rst:573
+#: ../Doc/library/contextlib.rst:573
 msgid ""
 "Unlike the other methods, callbacks added this way cannot suppress "
 "exceptions (as they are never passed the exception details)."
 msgstr ""
-"他のメソッドと異なり、このメソッドで追加されたコールバックは例外を抑制しませ"
-"ん (例外の詳細も渡されません)。"
+"A diferencia de los otros métodos, las retrollamadas agregadas de esta "
+"manera no pueden suprimir excepciones (ya que nunca se pasan los detalles de "
+"excepción)."
 
-#: ../../library/contextlib.rst:576
+#: ../Doc/library/contextlib.rst:576
 msgid ""
 "The passed in callback is returned from the function, allowing this method "
 "to be used as a function decorator."
 msgstr ""
-"この関数はデコレータとしても使えるように、受け取った callback をそのまま返し"
-"ます。"
+"La retrollamada pasada se retorna desde la función, lo que permite que este "
+"método se use como decorador de funciones."
 
-#: ../../library/contextlib.rst:581
+#: ../Doc/library/contextlib.rst:581
 msgid ""
 "Transfers the callback stack to a fresh :class:`ExitStack` instance and "
 "returns it. No callbacks are invoked by this operation - instead, they will "
 "now be invoked when the new stack is closed (either explicitly or implicitly "
 "at the end of a :keyword:`with` statement)."
 msgstr ""
-"コールバックスタックを新しい :class:`ExitStack` インスタンスに移して、それを"
-"返します。このメソッドは callback を実行しません。代わりに、新しい stack が "
-"(明示的に、あるいは :keyword:`with` 文の終わりに暗黙的に) close されるときに"
-"実行されます。"
+"Transfiere la pila de retrollamada a una instancia fresca :class:`ExitStack` "
+"y la retorna. Esta operación no invoca retrollamadas; en cambio, ahora se "
+"invocarán cuando se cierre la nueva pila (ya sea explícita o implícitamente "
+"al final de una instrucción :keyword:`with`)."
 
-#: ../../library/contextlib.rst:586
+#: ../Doc/library/contextlib.rst:586
 msgid ""
 "For example, a group of files can be opened as an \"all or nothing\" "
 "operation as follows::"
 msgstr ""
-"例えば、複数のファイルを \"all or nothing\" に開く処理を次のように書けます::"
+"Por ejemplo, un grupo de archivos se puede abrir como una operación de "
+"\"todo o nada\" de la siguiente manera:"
 
-#: ../../library/contextlib.rst:600
+#: ../Doc/library/contextlib.rst:600
 msgid ""
 "Immediately unwinds the callback stack, invoking callbacks in the reverse "
 "order of registration. For any context managers and exit callbacks "
 "registered, the arguments passed in will indicate that no exception occurred."
 msgstr ""
-"すぐにコールバックスタックを巻き戻し、コールバック関数を登録の逆順に呼び出し"
-"ます。登録されたすべてのコンテキストマネージャーと終了 callback に、例外が起"
-"こらなかった場合の引数が渡されます。"
+"Inmediatamente desenrolla la pila de retrollamada, invocando retrollamadas "
+"en el orden inverso de registro. Para los administradores de contexto y las "
+"retrollamadas de salida registradas, los argumentos pasados indicarán que no "
+"se produjo ninguna excepción."
 
-#: ../../library/contextlib.rst:607
+#: ../Doc/library/contextlib.rst:607
 msgid ""
 "An :ref:`asynchronous context manager <async-context-managers>`, similar to :"
 "class:`ExitStack`, that supports combining both synchronous and asynchronous "
 "context managers, as well as having coroutines for cleanup logic."
 msgstr ""
-":class:`ExitStack` に似た :ref:`非同期コンテキストマネージャ <async-context-"
-"managers>` です。スタック上で同期と非同期の両方のコンテキストマネージャの組み"
-"合わせをサポートします。また、後処理のためのコルーチンも持っています。"
+"Un :ref:`gestor de contexto asíncrono <async-context-managers>`, similar a :"
+"class:`ExitStack`, que admite la combinación de gestores de contexto "
+"síncrono y asíncrono, además de tener rutinas para la lógica de limpieza."
 
-#: ../../library/contextlib.rst:612
+#: ../Doc/library/contextlib.rst:612
 msgid ""
 "The :meth:`close` method is not implemented, :meth:`aclose` must be used "
 "instead."
 msgstr ""
-":meth:`close` メソッドは実装されていません。代わりに :meth:`aclose` を使って"
-"ください。"
+"El método :meth:`close` no está implementado, :meth:`aclose` debe usarse en "
+"su lugar."
 
-#: ../../library/contextlib.rst:617
+#: ../Doc/library/contextlib.rst:617
 msgid ""
 "Similar to :meth:`enter_context` but expects an asynchronous context manager."
 msgstr ""
-":meth:`enter_context` と同様のメソッドですが、非同期コンテキストマネージャを"
-"受け取ります。"
+"Similar a :meth:`enter_context` pero espera un administrador de contexto "
+"asíncrono."
 
-#: ../../library/contextlib.rst:620
+#: ../Doc/library/contextlib.rst:620
 msgid ""
 "Raises :exc:`TypeError` instead of :exc:`AttributeError` if *cm* is not an "
 "asynchronous context manager."
 msgstr ""
-"*cm* が非同期コンテキストマネージャでなかった場合、 :exc:`AttributeError` の"
-"代わりに :exc:`TypeError` 例外を送出します。"
 
-#: ../../library/contextlib.rst:626
+#: ../Doc/library/contextlib.rst:626
 msgid ""
 "Similar to :meth:`push` but expects either an asynchronous context manager "
 "or a coroutine function."
 msgstr ""
-":meth:`push` と同様のメソッドですが、非同期コンテキストマネージャかコルーチン"
-"関数を受け取ります。"
+"Similar a :meth:`push` pero espera un gestor de contexto asíncrono o una "
+"función de rutina."
 
-#: ../../library/contextlib.rst:631
+#: ../Doc/library/contextlib.rst:631
 msgid "Similar to :meth:`callback` but expects a coroutine function."
-msgstr ""
-":meth:`callback` と同様のメソッドですが、コルーチン関数を受け取ります。"
+msgstr "Similar a :meth:`callback` pero espera una función de rutina."
 
-#: ../../library/contextlib.rst:635
+#: ../Doc/library/contextlib.rst:635
 msgid "Similar to :meth:`close` but properly handles awaitables."
 msgstr ""
-":meth:`close` と同様のメソッドですが、待ち受け可能オブジェクト (awaitables) "
-"を適切に処理します。"
+"Similar a :meth:`close` pero maneja adecuadamente los objetos de espera."
 
-#: ../../library/contextlib.rst:637
+#: ../Doc/library/contextlib.rst:637
 msgid "Continuing the example for :func:`asynccontextmanager`::"
-msgstr ":func:`asynccontextmanager` の使用例の続きです::"
+msgstr "Continuando con el ejemplo para :func:`asynccontextmanager`::"
 
-#: ../../library/contextlib.rst:649
+#: ../Doc/library/contextlib.rst:649
 msgid "Examples and Recipes"
-msgstr "例とレシピ"
+msgstr "Ejemplos y recetas"
 
-#: ../../library/contextlib.rst:651
+#: ../Doc/library/contextlib.rst:651
 msgid ""
 "This section describes some examples and recipes for making effective use of "
 "the tools provided by :mod:`contextlib`."
 msgstr ""
-"このセクションでは、 :mod:`contextlib` が提供するツールの効果的な使い方を示す"
-"例とレシピを紹介します。"
+"Esta sección describe algunos ejemplos y recetas para hacer un uso efectivo "
+"de las herramientas proporcionadas por :mod:`contextlib`."
 
-#: ../../library/contextlib.rst:656
+#: ../Doc/library/contextlib.rst:656
 msgid "Supporting a variable number of context managers"
-msgstr "可変数個のコンテキストマネージャーをサポートする"
+msgstr "Apoyando un número variable de gestores de contexto"
 
-#: ../../library/contextlib.rst:658
+#: ../Doc/library/contextlib.rst:658
 msgid ""
 "The primary use case for :class:`ExitStack` is the one given in the class "
 "documentation: supporting a variable number of context managers and other "
@@ -786,28 +787,29 @@ msgid ""
 "input (such as opening a user specified collection of files), or from some "
 "of the context managers being optional::"
 msgstr ""
-":class:`ExitStack` の第一のユースケースは、クラスのドキュメントにかかれている"
-"通り、一つの :keyword:`with` 文で可変数個のコンテキストマネージャーや他のク"
-"リーンアップ関数をサポートすることです。ユーザーの入力 (指定された複数個の"
-"ファイルを開く場合など) に応じて複数個のコンテキストマネージャーが必要となる"
-"場合や、いくつかのコンテキストマネージャーがオプションとなる場合に、可変数個"
-"のコンテキストマネージャーが必要になります::"
+"El caso de uso principal para :class:`ExitStack` es el que se proporciona en "
+"la documentación de la clase: admite un número variable de gestores de "
+"contexto y otras operaciones de limpieza en una sola :keyword:`with`. La "
+"variabilidad puede provenir de la cantidad de gestores de contexto que "
+"necesitan ser impulsados por la entrada del usuario (como abrir una "
+"colección de archivos especificada por el usuario), o de que algunos de los "
+"gestores de contexto sean opcionales:"
 
-#: ../../library/contextlib.rst:673
+#: ../Doc/library/contextlib.rst:673
 msgid ""
 "As shown, :class:`ExitStack` also makes it quite easy to use :keyword:`with` "
 "statements to manage arbitrary resources that don't natively support the "
 "context management protocol."
 msgstr ""
-"上の例にあるように、 :class:`ExitStack` はコンテキストマネージャープロトコル"
-"をサポートしていないリソースの管理を :keyword:`with` 文を使って簡単に行えるよ"
-"うにします。"
+"Como se muestra, :class:`ExitStack` también hace que sea bastante fácil de "
+"usar :keyword:`with` para administrar recursos arbitrarios que no admiten de "
+"forma nativa el protocolo de gestión de contexto."
 
-#: ../../library/contextlib.rst:679
+#: ../Doc/library/contextlib.rst:679
 msgid "Catching exceptions from ``__enter__`` methods"
-msgstr "``__enter__`` メソッドからの例外をキャッチする"
+msgstr "Capturando excepciones de los métodos ``__enter__``"
 
-#: ../../library/contextlib.rst:681
+#: ../Doc/library/contextlib.rst:681
 msgid ""
 "It is occasionally desirable to catch exceptions from an ``__enter__`` "
 "method implementation, *without* inadvertently catching exceptions from the :"
@@ -815,12 +817,13 @@ msgid ""
 "By using :class:`ExitStack` the steps in the context management protocol can "
 "be separated slightly in order to allow this::"
 msgstr ""
-"稀に、 ``__enter__`` メソッドからの例外を、 :keyword:`with` 文の body やコン"
-"テキストマネージャーの ``__exit__`` メソッドからの例外は間違えて捕まえないよ"
-"うに、 catch したい場合があります。 :class:`ExitStack` を使って、コンテキスト"
-"マネージャープロトコル内のステップを分離することができます::"
+"Ocasionalmente es deseable capturar excepciones de una implementación del "
+"método ``__enter__``, *sin* capturar inadvertidamente excepciones del cuerpo "
+"de la declaración :keyword:`with` o el método ``__exit__`` del gestor de "
+"contexto. Al usar :class:`ExitStack`, los pasos en el protocolo de gestor de "
+"contexto se pueden separar ligeramente para permitir esto::"
 
-#: ../../library/contextlib.rst:696
+#: ../Doc/library/contextlib.rst:696
 msgid ""
 "Actually needing to do this is likely to indicate that the underlying API "
 "should be providing a direct resource management interface for use with :"
@@ -830,121 +833,127 @@ msgid ""
 "to handle various situations that can't be handled directly in a :keyword:"
 "`with` statement."
 msgstr ""
-"実際のところ、このようなコードが必要になるのならば、利用している API 側で :"
-"keyword:`try`/:keyword:`except`/:keyword:`finally` 文を使った直接的なリソース"
-"管理インターフェースを提供するべきです。しかし、すべての API がそのようによく"
-"設計されているとは限りません。もしコンテキストマネージャーが提供されている唯"
-"一のリソース管理APIであるなら、 :class:`ExitStack` を使って :keyword:`with` "
-"文を使って処理することができない様々なシチュエーションの処理をすることができ"
-"ます。"
+"Es probable que la necesidad de hacer esto indique que la API subyacente "
+"debería proporcionar una interfaz de administración de recursos directa para "
+"usar con :keyword:`try`/:keyword:`except`/:keyword:`finally`, pero no todas "
+"las API están bien diseñados en ese sentido. Cuando un administrador de "
+"contexto es la única API de administración de recursos proporcionada, "
+"entonces :class:`ExitStack` puede facilitar el manejo de diversas "
+"situaciones que no se pueden manejar directamente en una declaración :"
+"keyword:`with`."
 
-#: ../../library/contextlib.rst:706
+#: ../Doc/library/contextlib.rst:706
 msgid "Cleaning up in an ``__enter__`` implementation"
-msgstr "``__enter__`` 実装内のクリーンアップ"
+msgstr "Limpieza en una implementación ``__enter__``"
 
-#: ../../library/contextlib.rst:708
+#: ../Doc/library/contextlib.rst:708
 msgid ""
 "As noted in the documentation of :meth:`ExitStack.push`, this method can be "
 "useful in cleaning up an already allocated resource if later steps in the :"
 "meth:`__enter__` implementation fail."
 msgstr ""
-":meth:`ExitStack.push` のドキュメントで言及したとおり、このメソッドはすでに獲"
-"得したリソースを、 :meth:`__enter__` メソッドの残りのステップが失敗した時にク"
-"リーンアップするために利用することができます。"
+"Como se señala en la documentación de :meth:`ExitStack.push`, este método "
+"puede ser útil para limpiar un recurso ya asignado si fallan los pasos "
+"posteriores en :meth:`__enter__`."
 
-#: ../../library/contextlib.rst:712
+#: ../Doc/library/contextlib.rst:712
 msgid ""
 "Here's an example of doing this for a context manager that accepts resource "
 "acquisition and release functions, along with an optional validation "
 "function, and maps them to the context management protocol::"
 msgstr ""
-"次の例では、リソースの確保と開放の関数に加えて、オプションのバリデーション関"
-"数を受け取るコンテキストマネージャーで、この方法を使ってコンテキストマネー"
-"ジャープロトコルを提供しています::"
+"Aquí hay un ejemplo de cómo hacer esto para un administrador de contexto que "
+"acepta funciones de adquisición y liberación de recursos, junto con una "
+"función de validación opcional, y las asigna al protocolo de administración "
+"de contexto::"
 
-#: ../../library/contextlib.rst:752
+#: ../Doc/library/contextlib.rst:752
 msgid "Replacing any use of ``try-finally`` and flag variables"
-msgstr "``try-finally`` + flag 変数パターンを置き換える"
+msgstr "Reemplazar cualquier uso de ``try-finally`` y marcar variables"
 
-#: ../../library/contextlib.rst:754
+#: ../Doc/library/contextlib.rst:754
 msgid ""
 "A pattern you will sometimes see is a ``try-finally`` statement with a flag "
 "variable to indicate whether or not the body of the ``finally`` clause "
 "should be executed. In its simplest form (that can't already be handled just "
 "by using an ``except`` clause instead), it looks something like this::"
 msgstr ""
-"``try-finally`` 文に、``finally`` 句の内容を実行するかどうかを示すフラグ変数"
-"を組み合わせたパターンを目にすることがあるかもしれません。一番シンプルな (単"
-"に ``except`` 句を使うだけでは処理できない) ケースでは次のようなコードになり"
-"ます::"
+"Un patrón que a veces verá es una declaración de ``try-finally`` con una "
+"variable de indicador para indicar si el cuerpo de la cláusula ``finally`` "
+"debe ejecutarse o no. En su forma más simple (que ya no puede manejarse "
+"simplemente usando una cláusula ``except`` en su lugar), se parece a esto::"
 
-#: ../../library/contextlib.rst:768
+#: ../Doc/library/contextlib.rst:768
 msgid ""
 "As with any ``try`` statement based code, this can cause problems for "
 "development and review, because the setup code and the cleanup code can end "
 "up being separated by arbitrarily long sections of code."
 msgstr ""
-"``try`` 文を使ったコードでは、セットアップとクリーンアップのコードが任意の長"
-"さのコードで分離してしまうので、開発者やレビューアにとって問題になりえます。"
+"Al igual que con cualquier código basado en la declaración ``try``, esto "
+"puede causar problemas de desarrollo y revisión, porque el código de "
+"configuración y el código de limpieza pueden terminar separados por "
+"secciones de código arbitrariamente largas."
 
-#: ../../library/contextlib.rst:772
+#: ../Doc/library/contextlib.rst:772
 msgid ""
 ":class:`ExitStack` makes it possible to instead register a callback for "
 "execution at the end of a ``with`` statement, and then later decide to skip "
 "executing that callback::"
 msgstr ""
-":class:`ExitStack` を使えば、代わりに ``with`` 文の終わりに実行されるコール"
-"バックを登録し、後でそのコールバックをスキップするかどうかを決定できます::"
+":class:`ExitStack` hace posible registrar una retrollamada para su ejecución "
+"al final de una instrucción ``with``, y luego decide omitir la ejecución de "
+"esa retrollamada::"
 
-#: ../../library/contextlib.rst:784
+#: ../Doc/library/contextlib.rst:784
 msgid ""
 "This allows the intended cleanup up behaviour to be made explicit up front, "
 "rather than requiring a separate flag variable."
 msgstr ""
-"これにより、別のフラグ変数を使う代わりに、必要なクリーンアップ処理を手前に明"
-"示しておくことができます。"
+"Esto permite que el comportamiento de limpieza previsto se haga explícito "
+"por adelantado, en lugar de requerir una variable de indicador separada."
 
-#: ../../library/contextlib.rst:787
+#: ../Doc/library/contextlib.rst:787
 msgid ""
 "If a particular application uses this pattern a lot, it can be simplified "
 "even further by means of a small helper class::"
 msgstr ""
-"もしあるアプリケーションがこのパターンを多用するのであれば、小さいヘルパーク"
-"ラスを導入してよりシンプルにすることができます::"
+"Si una aplicación particular usa mucho este patrón, puede simplificarse aún "
+"más por medio de una pequeña clase auxiliar::"
 
-#: ../../library/contextlib.rst:805
+#: ../Doc/library/contextlib.rst:805
 msgid ""
 "If the resource cleanup isn't already neatly bundled into a standalone "
 "function, then it is still possible to use the decorator form of :meth:"
 "`ExitStack.callback` to declare the resource cleanup in advance::"
 msgstr ""
-"もしリソースのクリーンアップが単体の関数にまとまってない場合でも、 :meth:"
-"`ExitStack.callback` のデコレーター形式を利用してリソース開放処理を宣言するこ"
-"とができます::"
+"Si la limpieza del recurso no está bien agrupada en una función "
+"independiente, entonces todavía es posible usar la forma decoradora de :meth:"
+"`ExitStack.callback` para declarar la limpieza del recurso por adelantado::"
 
-#: ../../library/contextlib.rst:820
+#: ../Doc/library/contextlib.rst:820
 msgid ""
 "Due to the way the decorator protocol works, a callback function declared "
 "this way cannot take any parameters. Instead, any resources to be released "
 "must be accessed as closure variables."
 msgstr ""
-"デコレータープロトコルの使用上、このように宣言されたコールバック関数は引数を"
-"取ることができません。その代わりに、リリースするリソースをクロージャー変数と"
-"してアクセスできる必要があります。"
+"Debido a la forma en que funciona el protocolo decorador, una función de "
+"retrollamada declarada de esta manera no puede tomar ningún parámetro. En "
+"cambio, se debe acceder a los recursos que se liberarán como variables de "
+"cierre."
 
-#: ../../library/contextlib.rst:826
+#: ../Doc/library/contextlib.rst:826
 msgid "Using a context manager as a function decorator"
-msgstr "コンテキストマネージャーを関数デコレーターとして使う"
+msgstr "Usar un gestor de contexto como decorador de funciones"
 
-#: ../../library/contextlib.rst:828
+#: ../Doc/library/contextlib.rst:828
 msgid ""
 ":class:`ContextDecorator` makes it possible to use a context manager in both "
 "an ordinary ``with`` statement and also as a function decorator."
 msgstr ""
-":class:`ContextDecorator` はコンテキストマネージャーを通常の ``with`` 文に加"
-"えて関数デコレーターとしても利用できるようにします。"
+":class:`ContextDecorator` hace posible usar un gestor de contexto tanto en "
+"una instrucción ordinaria ``with`` como también como decorador de funciones."
 
-#: ../../library/contextlib.rst:831
+#: ../Doc/library/contextlib.rst:831
 msgid ""
 "For example, it is sometimes useful to wrap functions or groups of "
 "statements with a logger that can track the time of entry and time of exit.  "
@@ -952,138 +961,148 @@ msgid ""
 "task, inheriting from :class:`ContextDecorator` provides both capabilities "
 "in a single definition::"
 msgstr ""
-"例えば、関数やまとまった文を、そこに入った時と出た時の時間をトラックするロ"
-"ガーでラップしたい場合があります。そのために関数デコレーターとコンテキストマ"
-"ネージャーを別々に書く代わりに、 :class:`ContextDecorator` を継承すると1つの"
-"定義で両方の機能を提供できます::"
+"Por ejemplo, a veces es útil envolver funciones o grupos de declaraciones "
+"con un registrador que puede rastrear la hora de entrada y la hora de "
+"salida. En lugar de escribir tanto un decorador de funciones como un "
+"administrador de contexto para la tarea, heredar de :class:"
+"`ContextDecorator` proporciona ambas capacidades en una sola definición::"
 
-#: ../../library/contextlib.rst:852
+#: ../Doc/library/contextlib.rst:852
 msgid "Instances of this class can be used as both a context manager::"
-msgstr "このクラスのインスタンスはコンテキストマネージャーとしても利用でき::"
+msgstr ""
+"Las instancias de esta clase se pueden usar como un gestor de contexto::"
 
-#: ../../library/contextlib.rst:858
+#: ../Doc/library/contextlib.rst:858
 msgid "And also as a function decorator::"
-msgstr "また関数デコレーターとしても利用できます::"
+msgstr "Y también como decorador de funciones::"
 
-#: ../../library/contextlib.rst:865
+#: ../Doc/library/contextlib.rst:865
 msgid ""
 "Note that there is one additional limitation when using context managers as "
 "function decorators: there's no way to access the return value of :meth:"
 "`__enter__`. If that value is needed, then it is still necessary to use an "
 "explicit ``with`` statement."
 msgstr ""
-"コンテキストマネージャーを関数デコレーターとして使う場合、 :meth:`__enter__` "
-"メソッドの戻り値にアクセスする手段がないという制限があることに注意してくださ"
-"い。もしその値が必要であれば、明示的な ``with`` 文を使う必要があります。"
+"Tenga en cuenta que hay una limitación adicional cuando se usan "
+"administradores de contexto como decoradores de funciones: no hay forma de "
+"acceder al valor de retorno de :meth:`__enter__`. Si se necesita ese valor, "
+"aún es necesario usar una declaración explícita ``with``."
 
-#: ../../library/contextlib.rst:873
+#: ../Doc/library/contextlib.rst:873
 msgid ":pep:`343` - The \"with\" statement"
-msgstr ":pep:`343` - \"with\" ステートメント"
+msgstr ":pep:`343` - La declaración \"with\""
 
-#: ../../library/contextlib.rst:873
+#: ../Doc/library/contextlib.rst:873
 msgid ""
 "The specification, background, and examples for the Python :keyword:`with` "
 "statement."
-msgstr "Python の :keyword:`with` 文の仕様、背景、および例が記載されています。"
+msgstr ""
+"La especificación, antecedentes y ejemplos de la declaración de Python :"
+"keyword:`with`."
 
-#: ../../library/contextlib.rst:879
+#: ../Doc/library/contextlib.rst:879
 msgid "Single use, reusable and reentrant context managers"
-msgstr "単回使用、再利用可能、およびリエントラントなコンテキストマネージャ"
+msgstr "Gestores de contexto de uso único, reutilizables y reentrantes"
 
-#: ../../library/contextlib.rst:881
+#: ../Doc/library/contextlib.rst:881
 msgid ""
 "Most context managers are written in a way that means they can only be used "
 "effectively in a :keyword:`with` statement once. These single use context "
 "managers must be created afresh each time they're used - attempting to use "
 "them a second time will trigger an exception or otherwise not work correctly."
 msgstr ""
-"ほとんどのコンテキストマネージャは、 :keyword:`with` 文の中で一度だけ使われる"
-"ような場合に効果的になるように書かれています。これら単回使用のコンテキストマ"
-"ネージャは毎回新規に生成されなければなりません - それらを再利用しようとする"
-"と、例外を引き起こすか、正しく動作しません。"
+"La mayoría de los gestores de contexto están escritos de una manera que "
+"significa que solo se pueden usar de manera efectiva en una declaración :"
+"keyword:`with` una vez. Estos administradores de contexto de un solo uso "
+"deben crearse de nuevo cada vez que se usan; si intenta usarlos por segunda "
+"vez, se activará una excepción o, de lo contrario, no funcionará "
+"correctamente."
 
-#: ../../library/contextlib.rst:887
+#: ../Doc/library/contextlib.rst:887
 msgid ""
 "This common limitation means that it is generally advisable to create "
 "context managers directly in the header of the :keyword:`with` statement "
 "where they are used (as shown in all of the usage examples above)."
 msgstr ""
-"この共通の制限が意味することは、コンテキストマネージャは (上記すべての使用例"
-"に示すとおり) 一般に :keyword:`with` 文のヘッダ部分で直接生成することが推奨さ"
-"れるということです。"
+"Esta limitación común significa que generalmente es aconsejable crear "
+"gestores de contexto directamente en el encabezado de la palabra clave :"
+"keyword:`with` donde se usan (como se muestra en todos los ejemplos de uso "
+"anteriores)."
 
-#: ../../library/contextlib.rst:891
+#: ../Doc/library/contextlib.rst:891
 msgid ""
 "Files are an example of effectively single use context managers, since the "
 "first :keyword:`with` statement will close the file, preventing any further "
 "IO operations using that file object."
 msgstr ""
-"ファイルオブジェクトは単回使用のコンテキストマネージャ有効に利用した例です。"
-"最初の :keyword:`with` 文によりファイルがクローズされ、それ以降そのファイルオ"
-"ブジェクトに対するすべての IO 操作を防止します。"
+"Los archivos son un ejemplo de gestores de contexto de un solo uso, ya que "
+"la primera :keyword:`with` cerrará el archivo, evitando cualquier otra "
+"operación de E/S que use ese objeto de archivo."
 
-#: ../../library/contextlib.rst:895
+#: ../Doc/library/contextlib.rst:895
 msgid ""
 "Context managers created using :func:`contextmanager` are also single use "
 "context managers, and will complain about the underlying generator failing "
 "to yield if an attempt is made to use them a second time::"
 msgstr ""
-":func:`contextmanager` により生成されたコンテキストマネージャも単回使用のコン"
-"テキスト  マネージャです。二回目に使おうとした場合、内部にあるジェネレータが"
-"値の生成に失敗したと訴えるでしょう::"
+"Los gestores de contexto creados usando :func:`contextmanager` también son "
+"gestores de contexto de un solo uso, y se quejarán de la falla del generador "
+"subyacente si se intenta usarlos por segunda vez::"
 
-#: ../../library/contextlib.rst:923
+#: ../Doc/library/contextlib.rst:923
 msgid "Reentrant context managers"
-msgstr "リエントラントなコンテキストマネージャ"
+msgstr "Gestores contextuales reentrantes"
 
-#: ../../library/contextlib.rst:925
+#: ../Doc/library/contextlib.rst:925
 msgid ""
 "More sophisticated context managers may be \"reentrant\". These context "
 "managers can not only be used in multiple :keyword:`with` statements, but "
 "may also be used *inside* a :keyword:`!with` statement that is already using "
 "the same context manager."
 msgstr ""
-"より洗練されたコンテキストマネージャには\"リエントラント\"なものがあります。"
-"そのようなコンテキストマネージャは、複数の :keyword:`with` 文で使えるだけでな"
-"く、同じコンテキストマネージャをすでに使っている :keyword:`!with` 文の *内部"
-"* でも使うことができます。"
+"Los gestores de contexto más sofisticados pueden ser \"reentrantes\". Estos "
+"administradores de contexto no solo se pueden usar en múltiples "
+"declaraciones :keyword:`with`, sino que también se pueden usar *inside* a :"
+"keyword:`!with` que ya está usando el mismo gestor de contexto."
 
-#: ../../library/contextlib.rst:930
+#: ../Doc/library/contextlib.rst:930
+#, fuzzy
 msgid ""
 ":class:`threading.RLock` is an example of a reentrant context manager, as "
 "are :func:`suppress`, :func:`redirect_stdout`, and :func:`chdir`. Here's a "
 "very simple example of reentrant use::"
 msgstr ""
-":class:`threading.RLock` はリエントラントなコンテキストマネージャの例であり、"
-"また :func:`suppress`, :func:`redirect_stdout`, そして :func:`chdir` もリエン"
-"トラントです。以下はリエントラントな利用法の非常に単純な例です::"
+":class:`threading.RLock` es un ejemplo de un administrador de contexto "
+"reentrante, como son :func:`suppress` y :func:`redirect_stdout`. Aquí hay un "
+"ejemplo muy simple de uso reentrante::"
 
-#: ../../library/contextlib.rst:949
+#: ../Doc/library/contextlib.rst:949
 msgid ""
 "Real world examples of reentrancy are more likely to involve multiple "
 "functions calling each other and hence be far more complicated than this "
 "example."
 msgstr ""
-"リエントラントな性質の実例はお互いを呼び出しあう複数の関数を含んでいる可能性"
-"が高く、したがってこの例よりもはるかに複雑です。"
+"Es más probable que los ejemplos del mundo real de reentrada impliquen "
+"múltiples funciones que se llaman entre sí y, por lo tanto, sean mucho más "
+"complicadas que este ejemplo."
 
-#: ../../library/contextlib.rst:953
+#: ../Doc/library/contextlib.rst:953
 msgid ""
 "Note also that being reentrant is *not* the same thing as being thread "
 "safe. :func:`redirect_stdout`, for example, is definitely not thread safe, "
 "as it makes a global modification to the system state by binding :data:`sys."
 "stdout` to a different stream."
 msgstr ""
-"リエントラントであることはスレッドセーフであることと同じ *ではない* ことには"
-"注意が必要です。たとえば :func:`redirect_stdout` は、 :data:`sys.stdout` を異"
-"なるストリームに束縛することによりシステムの状態に対してグローバルな変更を行"
-"うことから、明らかにスレッドセーフではありません。"
+"Tenga en cuenta también que ser reentrante *no* es lo mismo que ser seguro "
+"para subprocesos. :func:`redirect_stdout`, por ejemplo, definitivamente no "
+"es seguro para subprocesos, ya que realiza una modificación global al estado "
+"del sistema al vincular :data:`sys.stdout` a una secuencia diferente."
 
-#: ../../library/contextlib.rst:962
+#: ../Doc/library/contextlib.rst:962
 msgid "Reusable context managers"
-msgstr "再利用可能なコンテキストマネージャ"
+msgstr "Gestores contextuales reutilizables"
 
-#: ../../library/contextlib.rst:964
+#: ../Doc/library/contextlib.rst:964
 msgid ""
 "Distinct from both single use and reentrant context managers are "
 "\"reusable\" context managers (or, to be completely explicit, \"reusable, "
@@ -1092,49 +1111,52 @@ msgid ""
 "but will fail (or otherwise not work correctly) if the specific context "
 "manager instance has already been used in a containing with statement."
 msgstr ""
-"単回使用のコンテキストマネージャとリエントラントなコンテキストマネージャのい"
-"ずれとも異なるタイプに \"再利用可能\" なコンテキストマネージャがあります (あ"
-"るいは、より明確には、\"再利用可能だがリエントラントでない\" コンテキストマ"
-"ネージャです。リエントラントなコンテキストマネージャもまた再利用可能だからで"
-"す)。再利用可能なコンテキストマネージャは複数回利用をサポートしますが、同じコ"
-"ンテキストマネージャのインスタンスがすでに with 文で使われている場合には失敗"
-"します (もしくは正しく動作しません)。"
+"Distintos de los administradores de contexto de uso único y reentrante son "
+"los administradores de contexto \"reutilizables\" (o, para ser completamente "
+"explícitos, los administradores de contexto \"reutilizables, pero no "
+"reentrantes\", ya que los administradores de contexto reentrantes también "
+"son reutilizables). Estos administradores de contexto admiten que se usen "
+"varias veces, pero fallarán (o de lo contrario no funcionarán correctamente) "
+"si la instancia específica del administrador de contexto ya se ha utilizado "
+"en una declaración que contiene."
 
-#: ../../library/contextlib.rst:971
+#: ../Doc/library/contextlib.rst:971
 msgid ""
 ":class:`threading.Lock` is an example of a reusable, but not reentrant, "
 "context manager (for a reentrant lock, it is necessary to use :class:"
 "`threading.RLock` instead)."
 msgstr ""
-":class:`threading.Lock` は再利用可能だがリエントラントでないコンテキストマ"
-"ネージャの例です (リエントラントなロックのためには :class:`threading.RLock` "
-"を代わりに使う必要があります)。"
+":class:`threading.Lock` es un ejemplo de un gestor de contexto reutilizable, "
+"pero no reentrante (para un bloqueo reentrante, es necesario usar :class:"
+"`threading.RLock` en su lugar)."
 
-#: ../../library/contextlib.rst:975
+#: ../Doc/library/contextlib.rst:975
 msgid ""
 "Another example of a reusable, but not reentrant, context manager is :class:"
 "`ExitStack`, as it invokes *all* currently registered callbacks when leaving "
 "any with statement, regardless of where those callbacks were added::"
 msgstr ""
-"再利用可能だがリエントラントでないコンテキストマネージャのもうひとつの例は :"
-"class:`ExitStack` です。これは現在登録されている *全ての* コールバック関数"
-"を、どこで登録されたかにかかわらず、呼び出します::"
+"Otro ejemplo de un administrador de contexto reutilizable, pero no "
+"reentrante es :class:`ExitStack`, ya que invoca *all* las retrollamadas "
+"registradas actualmente al dejar cualquier con declaración, "
+"independientemente de dónde se agregaron esas retrollamadas::"
 
-#: ../../library/contextlib.rst:1006
+#: ../Doc/library/contextlib.rst:1006
 msgid ""
 "As the output from the example shows, reusing a single stack object across "
 "multiple with statements works correctly, but attempting to nest them will "
 "cause the stack to be cleared at the end of the innermost with statement, "
 "which is unlikely to be desirable behaviour."
 msgstr ""
-"例における出力が示すように、ひとつのスタックオブジェクトを複数の with 文で再"
-"利用しても正しく動作します。しかし入れ子にして使った場合は、一番内側の with "
-"文を抜ける際にスタックが空になります。これは望ましい動作とは思えません。"
+"Como muestra el resultado del ejemplo, la reutilización de un solo objeto de "
+"pila en múltiples con declaraciones funciona correctamente, pero intentar "
+"anidarlos hará que la pila se borre al final de la declaración más interna, "
+"lo que es poco probable que sea un comportamiento deseable."
 
-#: ../../library/contextlib.rst:1011
+#: ../Doc/library/contextlib.rst:1011
 msgid ""
 "Using separate :class:`ExitStack` instances instead of reusing a single "
 "instance avoids that problem::"
 msgstr ""
-"ひとつの :class:`ExitStack` インスタンスを再利用する代わりに複数のインスタン"
-"スを使うことにより、この問題は回避することができます::"
+"El uso de instancias separadas :class:`ExitStack` en lugar de reutilizar una "
+"sola instancia evita ese problema::"

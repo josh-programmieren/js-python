@@ -1,37 +1,37 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# souma987, 2022
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 00:55+0000\n"
-"Last-Translator: souma987, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2023-01-25 08:34+0800\n"
+"Last-Translator: Rodrigo Tobar <rtobarc@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.1.1\n"
 
-#: ../../library/base64.rst:2
+#: ../Doc/library/base64.rst:2
 msgid ":mod:`base64` --- Base16, Base32, Base64, Base85 Data Encodings"
-msgstr ":mod:`base64` --- Base16, Base32, Base64, Base85 データの符号化"
+msgstr ""
+":mod:`base64` --- Codificaciones de datos Base16, Base32, Base64, y Base85"
 
-#: ../../library/base64.rst:8
+#: ../Doc/library/base64.rst:8
 msgid "**Source code:** :source:`Lib/base64.py`"
-msgstr "**ソースコード:** :source:`Lib/base64.py`"
+msgstr "**Código fuente:** :source:`Lib/base64.py`"
 
-#: ../../library/base64.rst:16
+#: ../Doc/library/base64.rst:16
 msgid ""
 "This module provides functions for encoding binary data to printable ASCII "
 "characters and decoding such encodings back to binary data. It provides "
@@ -39,20 +39,27 @@ msgid ""
 "which defines the Base16, Base32, and Base64 algorithms, and for the de-"
 "facto standard Ascii85 and Base85 encodings."
 msgstr ""
-"このモジュールは、バイナリデータを印刷可能なASCII文字列にエンコードして、また"
-"逆にデコードするための関数を提供しています。:rfc:`4648` に定義されている "
-"Base16、Base32、 Base64 に加えて事実上の標準となっている Ascii85 と Base 85 "
-"をサポートしています。"
+"Este módulo proporciona funciones para codificar datos binarios en "
+"caracteres ASCII imprimibles y decodificar dichas codificaciones en datos "
+"binarios. Proporciona funciones de codificación y decodificación para las "
+"codificaciones especificadas en :rfc:`4648`, que define los algoritmos "
+"Base16, Base32 y Base64, y para las codificaciones estándar de facto Ascii85 "
+"y Base85."
 
-#: ../../library/base64.rst:22
+#: ../Doc/library/base64.rst:22
 msgid ""
 "The :rfc:`4648` encodings are suitable for encoding binary data so that it "
 "can be safely sent by email, used as parts of URLs, or included as part of "
 "an HTTP POST request.  The encoding algorithm is not the same as the :"
 "program:`uuencode` program."
 msgstr ""
+"Las codificaciones :rfc:`4648` son adecuadas para codificar datos binarios "
+"para que puedan enviarse de forma segura por correo electrónico, usarse como "
+"parte de las URL o incluirse como parte de una solicitud HTTP POST. El "
+"algoritmo de codificación no es el mismo que el del programa :program:"
+"`uuencode`."
 
-#: ../../library/base64.rst:27
+#: ../Doc/library/base64.rst:27
 msgid ""
 "There are two interfaces provided by this module.  The modern interface "
 "supports encoding :term:`bytes-like objects <bytes-like object>` to ASCII :"
@@ -60,8 +67,14 @@ msgid ""
 "or strings containing ASCII to :class:`bytes`.  Both base-64 alphabets "
 "defined in :rfc:`4648` (normal, and URL- and filesystem-safe) are supported."
 msgstr ""
+"Hay dos interfaces proporcionadas por este módulo. La interfaz moderna "
+"admite la codificación de :term:`objetos similares a bytes <bytes-like "
+"object>` a ASCII :class:`bytes` y la decodificación de :term:`objetos "
+"similares a bytes <bytes-like object>` o cadenas que contienen ASCII a :"
+"class:`bytes`. Se admiten los dos alfabetos base 64 definidos en :rfc:`4648` "
+"(normal y seguro para URL y sistema de archivos)."
 
-#: ../../library/base64.rst:33
+#: ../Doc/library/base64.rst:33
 msgid ""
 "The legacy interface does not support decoding from strings, but it does "
 "provide functions for encoding and decoding to and from :term:`file objects "
@@ -70,169 +83,176 @@ msgid ""
 "looking for :rfc:`2045` support you probably want to be looking at the :mod:"
 "`email` package instead."
 msgstr ""
-"従来のインターフェースは文字列からのデコードができませんが、:term:`file "
-"object` との間のエンコードとデコードが可能な関数を提供します。これは標準の "
-"base64 アルファベットのみをサポートし、:rfc:`2045` の規定にあるように、76文字"
-"ごとに改行されます。:rfc:`2045` のサポートのためには、代わりに :mod:`email` "
-"パッケージを参照する必要があるかもしれません。"
+"La interfaz heredada no admite la decodificación desde cadenas de "
+"caracteres, pero sí proporciona funciones para codificar y decodificar desde "
+"y hacia :term:`objetos de archivo <file object>`. Solo admite el alfabeto "
+"estándar Base64 y agrega nuevas líneas cada 76 caracteres según :rfc:`2045`. "
+"Tenga en cuenta que si está buscando soporte de :rfc:`2045`, probablemente "
+"desee ver el paquete :mod:`email` en su lugar."
 
-#: ../../library/base64.rst:41
+#: ../Doc/library/base64.rst:41
 msgid ""
 "ASCII-only Unicode strings are now accepted by the decoding functions of the "
 "modern interface."
 msgstr ""
-"モダンなインターフェイスのデコード関数が ASCII のみの Unicode 文字列を受け付"
-"けるようになりました。"
+"Las cadenas de caracteres Unicode de solo ASCII ahora son aceptadas por las "
+"funciones de decodificación de la interfaz moderna."
 
-#: ../../library/base64.rst:45
+#: ../Doc/library/base64.rst:45
 msgid ""
 "Any :term:`bytes-like objects <bytes-like object>` are now accepted by all "
 "encoding and decoding functions in this module.  Ascii85/Base85 support "
 "added."
 msgstr ""
-"このモジュールのすべてのエンコード・デコード関数が任意の :term:`bytes-like オ"
-"ブジェクト <bytes-like object>` を受け取るようになりました。Ascii85/Base85 の"
-"サポートが追加されました。"
+"Cualquier :term:`objeto similar a bytes <bytes-like object>` ahora son "
+"aceptados por todas las funciones de codificación y decodificación en este "
+"módulo. Ascii85/Base85 soporte agregado."
 
-#: ../../library/base64.rst:49
+#: ../Doc/library/base64.rst:49
 msgid "The modern interface provides:"
-msgstr "モダンなインターフェイスは以下のものを提供します:"
+msgstr "Las interfaces modernas proporcionan:"
 
-#: ../../library/base64.rst:53
+#: ../Doc/library/base64.rst:53
 msgid ""
 "Encode the :term:`bytes-like object` *s* using Base64 and return the "
 "encoded :class:`bytes`."
 msgstr ""
-"Base64 を使って :term:`bytes-like object` の *s* をエンコードし、エンコードさ"
-"れた :class:`bytes` を返します。"
+"Codifica el :term:`objeto similar a bytes <bytes-like object>` *s* "
+"utilizando Base64 y retorna los :class:`bytes` codificados."
 
-#: ../../library/base64.rst:56
+#: ../Doc/library/base64.rst:56
 msgid ""
-"Optional *altchars* must be a :term:`bytes-like object` of length 2 which "
-"specifies an alternative alphabet for the ``+`` and ``/`` characters. This "
-"allows an application to e.g. generate URL or filesystem safe Base64 "
-"strings.  The default is ``None``, for which the standard Base64 alphabet is "
-"used."
+"Optional *altchars* must be a :term:`bytes-like object` of at least length 2 "
+"(additional characters are ignored) which specifies an alternative alphabet "
+"for the ``+`` and ``/`` characters.  This allows an application to e.g. "
+"generate URL or filesystem safe Base64 strings.  The default is ``None``, "
+"for which the standard Base64 alphabet is used."
 msgstr ""
+"Los *altchars* opcionales deben ser un :term:`objeto similar a bytes <bytes-"
+"like object>` de al menos longitud 2 (se ignoran los caracteres adicionales) "
+"que especifica un alfabeto alternativo para los caracteres ``+`` y ``/``. "
+"Esto permite que una aplicación, por ejemplo, generar URL o cadenas de "
+"caracteres de Base64 seguras para el sistema de archivos. El valor "
+"predeterminado es ``None``, para el que se utiliza el alfabeto estándar "
+"Base64."
 
-#: ../../library/base64.rst:61
-msgid ""
-"May assert or raise a a :exc:`ValueError` if the length of *altchars* is not "
-"2.  Raises a :exc:`TypeError` if *altchars* is not a :term:`bytes-like "
-"object`."
-msgstr ""
-
-#: ../../library/base64.rst:67
+#: ../Doc/library/base64.rst:65
 msgid ""
 "Decode the Base64 encoded :term:`bytes-like object` or ASCII string *s* and "
 "return the decoded :class:`bytes`."
 msgstr ""
-"Base64 エンコードされた  :term:`bytes-like object` または ASCII 文字列 *s* を"
-"デコードし、デコードされた :class:`bytes` を返します。"
+"Decodifica el :term:`objeto similar a bytes <bytes-like object>` codificado "
+"en Base64 o cadena de caracteres ASCII *s* y retorna los :class:`bytes` "
+"decodificados."
 
-#: ../../library/base64.rst:70
+#: ../Doc/library/base64.rst:68
 msgid ""
 "Optional *altchars* must be a :term:`bytes-like object` or ASCII string of "
-"length 2 which specifies the alternative alphabet used instead of the ``+`` "
-"and ``/`` characters."
+"at least length 2 (additional characters are ignored) which specifies the "
+"alternative alphabet used instead of the ``+`` and ``/`` characters."
 msgstr ""
+"Los *altchars* opcionales deben ser :term:`objetos similares a byte <bytes-"
+"like object>` o cadena de caracteres ASCII de al menos longitud 2 (se "
+"ignoran los caracteres adicionales) que especifica el alfabeto alternativo "
+"utilizado en lugar de los caracteres ``+`` y ``/``."
 
-#: ../../library/base64.rst:74
+#: ../Doc/library/base64.rst:72
 msgid ""
 "A :exc:`binascii.Error` exception is raised if *s* is incorrectly padded."
 msgstr ""
-"*s* が正しくパディングされていない場合は :exc:`binascii.Error` 例外を発生させ"
-"ます。"
+"Una excepción :exc:`binascii.Error` se lanza si *s* está incorrectamente "
+"rellenado (*padded*)."
 
-#: ../../library/base64.rst:77
+#: ../Doc/library/base64.rst:75
 msgid ""
 "If *validate* is ``False`` (the default), characters that are neither in the "
 "normal base-64 alphabet nor the alternative alphabet are discarded prior to "
 "the padding check.  If *validate* is ``True``, these non-alphabet characters "
 "in the input result in a :exc:`binascii.Error`."
 msgstr ""
-"*validate* が ``False`` (デフォルト) の場合、標準の base64 アルファベットでも"
-"代替文字でもない文字はパディングチェックの前に無視されます。 *validate* が "
-"``True`` の場合、入力に base64 アルファベット以外の文字があると :exc:"
-"`binascii.Error` を発生させます。"
+"Si *validate* es ``False`` (el valor predeterminado), los caracteres que no "
+"están en el alfabeto normal de base 64 ni en el alfabeto alternativo se "
+"descartan antes de la verificación del relleno. Si *validate* es ``True``, "
+"estos caracteres no alfabéticos en la entrada dan como resultado :exc:"
+"`binascii.Error`."
 
-#: ../../library/base64.rst:83
+#: ../Doc/library/base64.rst:81
 msgid ""
 "For more information about the strict base64 check, see :func:`binascii."
 "a2b_base64`"
 msgstr ""
+"Para más información sobre la verificación estricta de base64, véase :func:"
+"`binascii.a2b_base64`"
 
-#: ../../library/base64.rst:85
-msgid ""
-"May assert or raise a :exc:`ValueError` if the length of *altchars* is not 2."
-msgstr ""
-
-#: ../../library/base64.rst:89
+#: ../Doc/library/base64.rst:86
 msgid ""
 "Encode :term:`bytes-like object` *s* using the standard Base64 alphabet and "
 "return the encoded :class:`bytes`."
 msgstr ""
-"標準の base64 アルファベットを使用して  :term:`bytes-like object` の *s* をエ"
-"ンコードし、エンコードされた :class:`bytes` を返します。"
+"Codifica el :term:`objeto similar a bytes <bytes-like object>` *s* usando el "
+"alfabeto estándar Base64 y retorna los :class:`bytes` codificados."
 
-#: ../../library/base64.rst:95
+#: ../Doc/library/base64.rst:92
 msgid ""
 "Decode :term:`bytes-like object` or ASCII string *s* using the standard "
 "Base64 alphabet and return the decoded :class:`bytes`."
 msgstr ""
-"標準の base64 アルファベットを使用した :term:`bytes-like object` または "
-"ASCII 文字列 *s* をデコードし、デコードされた :class:`bytes` を返します。"
+"Decodifica un :term:`bytes-like object` o cadena de caracteres ASCII *s* "
+"utilizando el alfabeto estándar Base64 y retorna los :class:`bytes` "
+"decodificados."
 
-#: ../../library/base64.rst:101
+#: ../Doc/library/base64.rst:98
 msgid ""
 "Encode :term:`bytes-like object` *s* using the URL- and filesystem-safe "
 "alphabet, which substitutes ``-`` instead of ``+`` and ``_`` instead of ``/"
 "`` in the standard Base64 alphabet, and return the encoded :class:`bytes`.  "
 "The result can still contain ``=``."
 msgstr ""
-":term:`bytes-like object` *s* を URLとファイルシステムセーフなアルファベット"
-"を利用してエンコードし、エンコードされた :class:`bytes` を返します。標準 "
-"base64 アルファベットに比べて、``+`` の替わりに ``-`` を、``/`` の替わりに "
-"``_`` を利用します。結果は ``=`` を含みます。 "
+"Codifica el :term:`objeto similar a bytes <bytes-like object>` *s* usando el "
+"alfabeto seguro para URL y sistemas de archivos, que sustituye a ``-`` en "
+"lugar de ``+`` y ``_`` en lugar de ``/`` en el alfabeto estándar de Base64, "
+"y retorna los :class:`bytes` codificados. El resultado aún puede contener "
+"``=``."
 
-#: ../../library/base64.rst:110
+#: ../Doc/library/base64.rst:107
 msgid ""
 "Decode :term:`bytes-like object` or ASCII string *s* using the URL- and "
 "filesystem-safe alphabet, which substitutes ``-`` instead of ``+`` and ``_`` "
 "instead of ``/`` in the standard Base64 alphabet, and return the decoded :"
 "class:`bytes`."
 msgstr ""
-":term:`bytes-like object` または ASCII 文字列 *s* を URLとファイルシステム"
-"セーフなアルファベットを利用してデコードし、デコードされた :class:`bytes` を"
-"返します。標準 base64 アルファベットに比べて、``+`` の替わりに ``-`` を、``/"
-"`` の替わりに ``_`` を置換します。"
+"Decodifica :term:`objeto similar a bytes <bytes-like object>` o cadena de "
+"caracteres ASCII *s* utilizando el alfabeto seguro para URL y sistema de "
+"archivos, que sustituye ``-`` en lugar de ``+`` y ``_`` en lugar de ``/`` en "
+"el alfabeto estándar de Base64, y retorna los :class:`bytes` decodificados."
 
-#: ../../library/base64.rst:119
+#: ../Doc/library/base64.rst:116
 msgid ""
 "Encode the :term:`bytes-like object` *s* using Base32 and return the "
 "encoded :class:`bytes`."
 msgstr ""
-"Base32 を使って :term:`bytes-like object` の *s* をエンコードし、エンコードさ"
-"れた :class:`bytes` を返します。"
+"Codifica el :term:`objeto similar a bytes <bytes-like object>` *s* "
+"utilizando Base32 y retorna los :class:`bytes` codificados."
 
-#: ../../library/base64.rst:125
+#: ../Doc/library/base64.rst:122
 msgid ""
 "Decode the Base32 encoded :term:`bytes-like object` or ASCII string *s* and "
 "return the decoded :class:`bytes`."
 msgstr ""
-"Base32 エンコードされた  :term:`bytes-like object` または ASCII 文字列 *s* を"
-"デコードし、デコードされた :class:`bytes` を返します。"
+"Decodifica el :term:`objeto similar a bytes <bytes-like object>` codificado "
+"en Base32 o cadena de caracteres ASCII *s* y retorna los :class:`bytes` "
+"decodificados."
 
-#: ../../library/base64.rst:128 ../../library/base64.rst:176
+#: ../Doc/library/base64.rst:125 ../Doc/library/base64.rst:173
 msgid ""
 "Optional *casefold* is a flag specifying whether a lowercase alphabet is "
 "acceptable as input.  For security purposes, the default is ``False``."
 msgstr ""
-"オプション引数 *casefold* は小文字のアルファベットを受けつけるかどうかを指定"
-"します。セキュリティ上の理由により、デフォルトではこれは ``False`` になってい"
-"ます。"
+"El opcional *casefold* es un flag que especifica si un alfabeto en minúscula "
+"es aceptable como entrada. Por motivos de seguridad, el valor predeterminado "
+"es ``Falso``."
 
-#: ../../library/base64.rst:132
+#: ../Doc/library/base64.rst:129
 msgid ""
 ":rfc:`4648` allows for optional mapping of the digit 0 (zero) to the letter "
 "O (oh), and for optional mapping of the digit 1 (one) to either the letter I "
@@ -242,184 +262,205 @@ msgid ""
 "purposes the default is ``None``, so that 0 and 1 are not allowed in the "
 "input."
 msgstr ""
+":rfc:`4648` permite la asignación opcional del dígito 0 (cero) a la letra O "
+"(oh), y la asignación opcional del dígito 1 (uno) a la letra I (ojo) o la "
+"letra L (el) . El argumento opcional *map01* cuando no es ``None``, "
+"especifica la letra a la cual el dígito 1 debería mapearse(cuando *map01* no "
+"es ``None``, el dígito 0 siempre se asigna a la letra O). Por motivos de "
+"seguridad, el valor predeterminado es ``None``, por lo que 0 y 1 no están "
+"permitidos en la entrada."
 
-#: ../../library/base64.rst:139 ../../library/base64.rst:180
+#: ../Doc/library/base64.rst:136 ../Doc/library/base64.rst:177
 msgid ""
 "A :exc:`binascii.Error` is raised if *s* is incorrectly padded or if there "
 "are non-alphabet characters present in the input."
 msgstr ""
-"*s* が正しくパディングされていない場合や、入力にアルファベットでない文字が含"
-"まれていた場合に、 :exc:`binascii.Error` 例外を発生させます。"
+"Una :exc:`binascii.Error` se lanza si *s* está incorrectamente rellenado "
+"(*padded*) o si hay caracteres no alfabéticos presentes en la entrada."
 
-#: ../../library/base64.rst:146
+#: ../Doc/library/base64.rst:143
 msgid ""
 "Similar to :func:`b32encode` but uses the Extended Hex Alphabet, as defined "
 "in :rfc:`4648`."
 msgstr ""
+"Similar a :func:`b32encode` pero usa el Alfabeto Hexagonal Extendido, como "
+"se define en :rfc:`4648`."
 
-#: ../../library/base64.rst:154
+#: ../Doc/library/base64.rst:151
 msgid ""
 "Similar to :func:`b32decode` but uses the Extended Hex Alphabet, as defined "
 "in :rfc:`4648`."
 msgstr ""
+"Similar a :func:`b32decode` pero usa el Alfabeto Hexagonal Extendido, como "
+"se define en :rfc:`4648`."
 
-#: ../../library/base64.rst:157
+#: ../Doc/library/base64.rst:154
 msgid ""
 "This version does not allow the digit 0 (zero) to the letter O (oh) and "
 "digit 1 (one) to either the letter I (eye) or letter L (el) mappings, all "
 "these characters are included in the Extended Hex Alphabet and are not "
 "interchangeable."
 msgstr ""
+"Esta versión no permite el dígito 0 (cero) a la letra O (oh) y el dígito 1 "
+"(uno) a las asignaciones de la letra I (ojo) o la letra L (el), todos estos "
+"caracteres están incluidos en el Alfabeto Hexagonal Extendido y no son "
+"intercambiables."
 
-#: ../../library/base64.rst:167
+#: ../Doc/library/base64.rst:164
 msgid ""
 "Encode the :term:`bytes-like object` *s* using Base16 and return the "
 "encoded :class:`bytes`."
 msgstr ""
-"Base16 を使って :term:`bytes-like object` の *s* をエンコードし、エンコードさ"
-"れた :class:`bytes` を返します。"
+"Codifica el :term:`objeto similar a bytes <bytes-like object>` *s* "
+"utilizando Base16 y retorna los :class:`bytes` codificados."
 
-#: ../../library/base64.rst:173
+#: ../Doc/library/base64.rst:170
 msgid ""
 "Decode the Base16 encoded :term:`bytes-like object` or ASCII string *s* and "
 "return the decoded :class:`bytes`."
 msgstr ""
-"Base16 エンコードされた  :term:`bytes-like object` または ASCII 文字列 *s* を"
-"デコードし、デコードされた :class:`bytes` を返します。"
+"Decodifica el :term:`objeto similar a bytes <bytes-like object>` codificado "
+"en Base16 o cadena de caracteres ASCII *s* y retorna los :class:`bytes` "
+"decodificados."
 
-#: ../../library/base64.rst:187
+#: ../Doc/library/base64.rst:184
 msgid ""
 "Encode the :term:`bytes-like object` *b* using Ascii85 and return the "
 "encoded :class:`bytes`."
 msgstr ""
-"Ascii85 を使って :term:`bytes-like object` の *b* をエンコードし、エンコード"
-"された :class:`bytes` を返します。 "
+"Codifica el :term:`objeto similar a bytes <bytes-like object>` *b* "
+"utilizando Ascii85 y retorna los :class:`bytes` codificados."
 
-#: ../../library/base64.rst:190
+#: ../Doc/library/base64.rst:187
 msgid ""
 "*foldspaces* is an optional flag that uses the special short sequence 'y' "
 "instead of 4 consecutive spaces (ASCII 0x20) as supported by 'btoa'. This "
 "feature is not supported by the \"standard\" Ascii85 encoding."
 msgstr ""
-"*foldspaces* を使うと、4 つの連続した空白文字(ASCII 0x20)を 'btoa' によってサ"
-"ポートされている短い特殊文字 'y' に置き換えます。この機能は \"標準\" Ascii85 "
-"ではサポートされていません。"
+"*foldspaces* es un flag opcional que utiliza la secuencia corta especial 'y' "
+"en lugar de 4 espacios consecutivos (ASCII 0x20) como lo admite 'btoa'. Esta "
+"característica no es compatible con la codificación Ascii85 \"estándar\"."
 
-#: ../../library/base64.rst:194
+#: ../Doc/library/base64.rst:191
 msgid ""
 "*wrapcol* controls whether the output should have newline (``b'\\n'``) "
 "characters added to it. If this is non-zero, each output line will be at "
 "most this many characters long."
 msgstr ""
-"*wrapcol* は何文字ごとに改行文字 (``b'\\n'``) を挿入するかを制御します。ゼロ"
-"でない場合、出力の各行はこの与えられた文字数を超えません。"
+"*wrapcol* controla si la salida debe tener caracteres de nueva línea "
+"(``b'\\n'``) agregados. Si esto no es cero, cada línea de salida tendrá como "
+"máximo esta cantidad de caracteres."
 
-#: ../../library/base64.rst:198
+#: ../Doc/library/base64.rst:195
 msgid ""
 "*pad* controls whether the input is padded to a multiple of 4 before "
 "encoding. Note that the ``btoa`` implementation always pads."
 msgstr ""
-"*pad* を指定すると、エンコード前に入力が 4 の倍数になるようにパディングされま"
-"す。なお、 ``btoa`` の実装は常にパディングします。"
+"*pad* controla si la entrada se rellena (*padded*) a un múltiplo de 4 antes "
+"de la codificación. Tenga en cuenta que la implementación de ``btoa`` "
+"siempre es rellenada (*pads*)."
 
-#: ../../library/base64.rst:201
+#: ../Doc/library/base64.rst:198
 msgid ""
 "*adobe* controls whether the encoded byte sequence is framed with ``<~`` and "
 "``~>``, which is used by the Adobe implementation."
 msgstr ""
-"*adobe* を指定すると、エンコードしたバイトシーケンスを ``<~`` と ``~>`` で囲"
-"みます。これは Adobe の実装で使われています。"
+"*adobe* controla si la secuencia de bytes codificada está enmarcada con "
+"``<~`` y ``~>``, que es utilizada por la implementación de Adobe."
 
-#: ../../library/base64.rst:209
+#: ../Doc/library/base64.rst:206
 msgid ""
 "Decode the Ascii85 encoded :term:`bytes-like object` or ASCII string *b* and "
 "return the decoded :class:`bytes`."
 msgstr ""
-"Ascii85 エンコードされた :term:`bytes-like object` または ASCII 文字列 *b* を"
-"デコードし、デコードされた :class:`bytes` を返します。 "
+"Decodifica el :term:`objeto similar a bytes <bytes-like object>` codificado "
+"en Ascii85 o cadena de caracteres ASCII *b* y retorna los :class:`bytes` "
+"decodificados."
 
-#: ../../library/base64.rst:212
+#: ../Doc/library/base64.rst:209
 msgid ""
 "*foldspaces* is a flag that specifies whether the 'y' short sequence should "
 "be accepted as shorthand for 4 consecutive spaces (ASCII 0x20). This feature "
 "is not supported by the \"standard\" Ascii85 encoding."
 msgstr ""
-"*foldspaces* は、短い特殊文字 'y' を受け取って 4 つの連続した空白文字(ASCII "
-"0x20)と解釈するかどうかを制御します。この機能は \"標準\" Ascii85 ではサポート"
-"されていません。"
+"*foldspaces* es un flag que especifica si la secuencia corta 'y' debe "
+"aceptarse como abreviatura durante 4 espacios consecutivos (ASCII 0x20). "
+"Esta característica no es compatible con la codificación Ascii85 "
+"\"estándar\"."
 
-#: ../../library/base64.rst:216
+#: ../Doc/library/base64.rst:213
 msgid ""
 "*adobe* controls whether the input sequence is in Adobe Ascii85 format (i.e. "
 "is framed with <~ and ~>)."
 msgstr ""
-"*adobe* で、入力シーケンスが Adobe Ascii85 (つまり ``<~`` と ``~>`` で囲まれ"
-"ている)かどうかを伝えます。"
+"*adobe* controla si la secuencia de entrada está en formato Adobe Ascii85 "
+"(es decir, se enmarca con <~ y ~>)."
 
-#: ../../library/base64.rst:219
+#: ../Doc/library/base64.rst:216
 msgid ""
 "*ignorechars* should be a :term:`bytes-like object` or ASCII string "
 "containing characters to ignore from the input. This should only contain "
 "whitespace characters, and by default contains all whitespace characters in "
 "ASCII."
 msgstr ""
-"*ignorechars* には、入力に含まれていれば無視する文字で構成された :term:"
-"`bytes-like object` または ASCII 文字列を指定してください。これは空白文字だけ"
-"で構成されているべきです。デフォルトは ASCII における空白文字全てです。"
+"*ignorechars* debe ser un :term:`objeto similar a byte <bytes-like object>` "
+"o cadena de caracteres ASCII que contiene caracteres para ignorar desde la "
+"entrada. Esto solo debe contener caracteres de espacio en blanco, y por "
+"defecto contiene todos los caracteres de espacio en blanco en ASCII."
 
-#: ../../library/base64.rst:229
+#: ../Doc/library/base64.rst:226
 msgid ""
 "Encode the :term:`bytes-like object` *b* using base85 (as used in e.g. git-"
 "style binary diffs) and return the encoded :class:`bytes`."
 msgstr ""
-"base85 (これは例えば git スタイルのバイナリ diff で用いられています) を使っ"
-"て :term:`bytes-like object` の *b* をエンコードし、エンコードされた :class:"
-"`bytes` を返します。"
+"Codifica el :term:`objeto similar a bytes <bytes-like object>` *b* "
+"utilizando base85 (como se usa en por ejemplo, diferencias binarias de "
+"estilo git) y retorna los :class:`bytes` codificados."
 
-#: ../../library/base64.rst:232
+#: ../Doc/library/base64.rst:229
 msgid ""
 "If *pad* is true, the input is padded with ``b'\\0'`` so its length is a "
 "multiple of 4 bytes before encoding."
 msgstr ""
-"*pad* が真ならば、エンコードに先立って、バイト数が 4 の倍数となるように入力"
-"が ``b'\\0'`` でパディングされます。"
+"Si *pad* es verdadero, la entrada se rellena con ``b'\\0'``, por lo que su "
+"longitud es un múltiplo de 4 bytes antes de la codificación."
 
-#: ../../library/base64.rst:240
+#: ../Doc/library/base64.rst:237
 msgid ""
 "Decode the base85-encoded :term:`bytes-like object` or ASCII string *b* and "
 "return the decoded :class:`bytes`.  Padding is implicitly removed, if "
 "necessary."
 msgstr ""
-"base85でエンコードされた :term:`bytes-like object`  または ASCII 文字列の "
-"*b* をデコードし、デコードされた :class:`bytes` を返します。パディングは、も"
-"しあれば、暗黙に削除されます。"
+"Decodifica el :term:`objeto similar a bytes <bytes-like object>` codificado "
+"en base85 o cadena de caracteres ASCII *b* y retorna los :class:`bytes` "
+"decodificados. El relleno se elimina implícitamente, si es necesario."
 
-#: ../../library/base64.rst:247
+#: ../Doc/library/base64.rst:244
 msgid "The legacy interface:"
-msgstr "レガシーなインターフェイスは以下のものを提供します:"
+msgstr "La interfaz antigua:"
 
-#: ../../library/base64.rst:251
+#: ../Doc/library/base64.rst:248
 msgid ""
 "Decode the contents of the binary *input* file and write the resulting "
 "binary data to the *output* file. *input* and *output* must be :term:`file "
 "objects <file object>`. *input* will be read until ``input.readline()`` "
 "returns an empty bytes object."
 msgstr ""
-"*input* ファイルの中身をデコードし、結果のバイナリデータを *output* ファイル"
-"に出力します。  *input* 、 *output* ともに :term:`file objects <file "
-"object>` でなければなりません。 *input* は ``input.readline()`` が空バイト列"
-"を返すまで読まれます。"
+"Decodifica el contenido del archivo binario *input* y escribe los datos "
+"binarios resultantes en el archivo *output*. *input* y *output* deben ser :"
+"term:`objetos archivo <file object>`. *input* se leerá hasta que ``input."
+"readline()`` retorne un objeto de bytes vacío."
 
-#: ../../library/base64.rst:259
+#: ../Doc/library/base64.rst:256
 msgid ""
 "Decode the :term:`bytes-like object` *s*, which must contain one or more "
 "lines of base64 encoded data, and return the decoded :class:`bytes`."
 msgstr ""
-":term:`bytes-like object` *s* をデコードし、デコードされた :class:`bytes` を"
-"返します。 *s* には一行以上の base64 形式でエンコードされたデータが含まれてい"
-"る必要があります。"
+"Decodifica el :term:`objeto similar a bytes <bytes-like object>` *s*, que "
+"debe contener una o más líneas de datos codificados en base64, y retornará "
+"los :class:`bytes` decodificados."
 
-#: ../../library/base64.rst:267
+#: ../Doc/library/base64.rst:264
 msgid ""
 "Encode the contents of the binary *input* file and write the resulting "
 "base64 encoded data to the *output* file. *input* and *output* must be :term:"
@@ -428,64 +469,70 @@ msgid ""
 "(``b'\\n'``) after every 76 bytes of the output, as well as ensuring that "
 "the output always ends with a newline, as per :rfc:`2045` (MIME)."
 msgstr ""
-"バイナリの *input* ファイルの中身を base64 形式でエンコードした結果を "
-"*output* ファイルに出力します。 *input* 、 *output* ともに :term:`file "
-"objects <file object>` でなければなりません。 *input* は ``input.read()`` が"
-"空バイト列を返すまで読まれます。 :func:`encode` は76バイトの出力ごとに改行文"
-"字(``b'\\n'``)を挿入し、:rfc:`2045` (MIME) の規定にあるように常に出力が新しい"
-"行で終わることを保証します。"
+"Codifica el contenido del archivo binario *input* y escribe los datos "
+"codificados en base64 resultantes en el archivo *output*. *input* y *output* "
+"deben ser :term:`objetos archivos <file object>`. *input* se leerá hasta que "
+"``input.read()`` retorna un objeto de bytes vacío. :func:`encode` inserta un "
+"carácter de nueva línea (``b'\\n'``) después de cada 76 bytes de la salida, "
+"además de garantizar que la salida siempre termine con una nueva línea, "
+"según :rfc:`2045` (MIME)."
 
-#: ../../library/base64.rst:277
+#: ../Doc/library/base64.rst:274
 msgid ""
 "Encode the :term:`bytes-like object` *s*, which can contain arbitrary binary "
 "data, and return :class:`bytes` containing the base64-encoded data, with "
 "newlines (``b'\\n'``) inserted after every 76 bytes of output, and ensuring "
 "that there is a trailing newline, as per :rfc:`2045` (MIME)."
 msgstr ""
-":term:`bytes-like object` *s* (任意のバイナリデータを含むことができます) "
-"を、:rfc:`2045` (MIME) に規定されるように末尾に新しい行のある、76バイトの出力"
-"ごとに新しい行 (``b'\\n'``) が挿入された、base64 形式でエンコードしたデータを"
-"含む :class:`bytes` を返します。"
+"Codifica el :term:`objeto similar a bytes <bytes-like object>` *s*, que "
+"puede contener datos binarios arbitrarios, y retorna :class:`bytes` que "
+"contienen los datos codificados en base64, con líneas nuevas (``b'\\n'``) "
+"insertado después de cada 76 bytes de salida, y asegurando que haya una "
+"nueva línea final, según :rfc:`2045` (MIME)."
 
-#: ../../library/base64.rst:285
+#: ../Doc/library/base64.rst:282
 msgid "An example usage of the module:"
-msgstr "モジュールの使用例:"
+msgstr "Un ejemplo de uso del módulo:"
 
-#: ../../library/base64.rst:298
+#: ../Doc/library/base64.rst:295
 msgid "Security Considerations"
-msgstr "セキュリティで考慮すべき点"
+msgstr "Consideraciones de Seguridad"
 
-#: ../../library/base64.rst:300
+#: ../Doc/library/base64.rst:297
 msgid ""
 "A new security considerations section was added to :rfc:`4648` (section 12); "
 "it's recommended to review the security section for any code deployed to "
 "production."
 msgstr ""
+"Se agregó una nueva sección de consideraciones de seguridad a :rfc:`4648` "
+"(sección 12); se recomienda revisar la sección de seguridad para cualquier "
+"código implementado en producción."
 
-#: ../../library/base64.rst:306
+#: ../Doc/library/base64.rst:303
 msgid "Module :mod:`binascii`"
-msgstr "モジュール :mod:`binascii`"
+msgstr "Módulo :mod:`binascii`"
 
-#: ../../library/base64.rst:306
+#: ../Doc/library/base64.rst:303
 msgid ""
 "Support module containing ASCII-to-binary and binary-to-ASCII conversions."
 msgstr ""
-"ASCII からバイナリへ、バイナリから ASCII への変換をサポートするモジュール。"
+"Módulo de soporte que contiene conversiones de ASCII a binario y binario a "
+"ASCII."
 
-#: ../../library/base64.rst:309
+#: ../Doc/library/base64.rst:306
 msgid ""
 ":rfc:`1521` - MIME (Multipurpose Internet Mail Extensions) Part One: "
 "Mechanisms for Specifying and Describing the Format of Internet Message "
 "Bodies"
 msgstr ""
-":rfc:`1521` - MIME (Multipurpose Internet Mail Extensions) Part One: "
-"Mechanisms for Specifying and Describing the Format of Internet Message "
-"Bodies"
+":rfc:`1521` - MIME (Extensiones multipropósito de correo de Internet) Parte "
+"uno: Mecanismos para especificar y describir el formato de los cuerpos de "
+"mensajes de Internet"
 
-#: ../../library/base64.rst:309
+#: ../Doc/library/base64.rst:306
 msgid ""
 "Section 5.2, \"Base64 Content-Transfer-Encoding,\" provides the definition "
 "of the base64 encoding."
 msgstr ""
-"Section 5.2, \"Base64 Content-Transfer-Encoding,\" provides the definition "
-"of the base64 encoding."
+"La Sección 5.2, \"Codificación de transferencia de contenido Base64\", "
+"proporciona la definición de la codificación base64."

@@ -1,87 +1,89 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2021
-# Tetsuo Koyama <tkoyama010@gmail.com>, 2021
-# souma987, 2023
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-03 14:14+0000\n"
-"PO-Revision-Date: 2021-06-28 01:10+0000\n"
-"Last-Translator: souma987, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-08-04 21:40+0200\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/nntplib.rst:2
+#: ../Doc/library/nntplib.rst:2
 msgid ":mod:`nntplib` --- NNTP protocol client"
-msgstr ":mod:`nntplib` --- NNTP プロトコルクライアント"
+msgstr ":mod:`nntplib` — Protocolo de cliente NNTP"
 
-#: ../../library/nntplib.rst:8
+#: ../Doc/library/nntplib.rst:8
 msgid "**Source code:** :source:`Lib/nntplib.py`"
-msgstr "**ソースコード:** :source:`Lib/nntplib.py`"
+msgstr "**Código fuente:** :source:`Lib/nntplib.py`"
 
-#: ../../library/nntplib.rst:14
+#: ../Doc/library/nntplib.rst:14
 msgid "The :mod:`nntplib` module is deprecated (see :pep:`594` for details)."
 msgstr ""
+"El módulo :mod:`nntplib` está en desuso (ver :pep:`594` para más detalles)."
 
-#: ../../library/nntplib.rst:19
+#: ../Doc/library/nntplib.rst:19
 msgid ""
 "This module defines the class :class:`NNTP` which implements the client side "
 "of the Network News Transfer Protocol.  It can be used to implement a news "
 "reader or poster, or automated news processors.  It is compatible with :rfc:"
 "`3977` as well as the older :rfc:`977` and :rfc:`2980`."
 msgstr ""
+"Este módulo define la clase :class:`NNTP` que implementa el lado del cliente "
+"del Protocolo de transferencia de noticias por red. Se puede utilizar para "
+"implementar un lector o póster de noticias, o procesadores de noticias "
+"automatizados. Es compatible con :rfc:`3977` así como con los antiguos :rfc:"
+"`977` y :rfc:`2980`."
 
-#: ../../includes/wasm-notavail.rst:3
+#, fuzzy
 msgid ":ref:`Availability <availability>`: not Emscripten, not WASI."
-msgstr ""
-":ref:`利用可能性<availability>`: Emscripten でなく、WASI でもないこと。"
+msgstr ":ref:`Disponibilidad <availability>`: no Emscripten, no WASI."
 
-#: ../../includes/wasm-notavail.rst:5
+#: ../Doc/library/cpython/Doc/includes/wasm-notavail.rst:5
 msgid ""
 "This module does not work or is not available on WebAssembly platforms "
 "``wasm32-emscripten`` and ``wasm32-wasi``. See :ref:`wasm-availability` for "
 "more information."
 msgstr ""
-"このモジュールは WebAssembly プラットフォーム ``wasm32-emscripten`` と "
-"``wasm32-wasi`` では動作しないか、利用不可です。詳しくは、:ref:`wasm-"
-"availability` を見てください。"
+"Este módulo no funciona o no está disponible en las plataformas WebAssembly "
+"``wasm32-emscripten`` y ``wasm32-wasi``. Consulte :ref:`wasm-availability` "
+"para obtener más información."
 
-#: ../../library/nntplib.rst:26
+#: ../Doc/library/nntplib.rst:26
 msgid ""
 "Here are two small examples of how it can be used.  To list some statistics "
 "about a newsgroup and print the subjects of the last 10 articles::"
 msgstr ""
-"以下にこのモジュールの使い方の小さな例を二つ示します。ニュースグループに関す"
-"る統計情報を列挙し、最新 10 件の記事を出力するには以下のようにします::"
+"Aquí hay dos pequeños ejemplos de cómo se puede utilizar. Para enumerar "
+"algunas estadísticas sobre un grupo de noticias e imprimir los temas de los "
+"últimos 10 artículos::"
 
-#: ../../library/nntplib.rst:50
+#: ../Doc/library/nntplib.rst:50
 msgid ""
 "To post an article from a binary file (this assumes that the article has "
 "valid headers, and that you have right to post on the particular newsgroup)::"
 msgstr ""
-"バイナリファイルから記事を投稿するには、以下のようにします。 (この例では記事"
-"番号は有効な番号を指定していて、あなたがそのニュースグループに投稿する 権限を"
-"持っていると仮定しています) ::"
+"Para publicar un artículo desde un archivo binario (esto supone que el "
+"artículo tiene encabezados válidos y que tienes permitido publicar en el "
+"grupo de noticias en particular)::"
 
-#: ../../library/nntplib.rst:60
+#: ../Doc/library/nntplib.rst:60
 msgid "The module itself defines the following classes:"
-msgstr "このモジュール自体では以下のクラスを定義しています:"
+msgstr "El módulo en sí define las siguientes clases:"
 
-#: ../../library/nntplib.rst:65
+#: ../Doc/library/nntplib.rst:65
 msgid ""
 "Return a new :class:`NNTP` object, representing a connection to the NNTP "
 "server running on host *host*, listening at port *port*. An optional "
@@ -98,50 +100,65 @@ msgid ""
 "`with` statement to unconditionally consume :exc:`OSError` exceptions and to "
 "close the NNTP connection when done, e.g.:"
 msgstr ""
+"Retorna un nuevo objeto :class:`NNTP` que representa una conexión con el "
+"servidor NNTP ejecutándose en el host *host*, escuchando en el puerto "
+"*port*. Se puede especificar un *timeout* opcional para la conexión de "
+"socket. Si se proporcionan las credenciales opcionales *user* y *password*, "
+"o si hay credenciales adecuadas en :file:`/.netrc` y el indicador opcional "
+"*usenetrc* es verdadero, los comandos ``AUTHINFO USER`` y ``AUTHINFO PASS`` "
+"se utilizan para identificar y autenticar al usuario en el servidor.  Si el "
+"indicador opcional *readermode* es verdadero, se envía un comando ``mode "
+"reader`` antes de que se realice la autenticación. El modo de lector a veces "
+"es necesario si se conecta a un servidor NNTP en el equipo local y tiene la "
+"intención de llamar a comandos específicos del lector, como ``group``. Si "
+"obtienes un valor inesperado :exc:`NNTPPermanentError`, es posible que debas "
+"establecer *readermode*. La clase :class:`NNTP` admite la instrucción :"
+"keyword:`with` para consumir incondicionalmente las excepciones :exc:"
+"`OSError` y para cerrar la conexión NNTP cuando haya terminado, e.g.:"
 
-#: ../../library/nntplib.rst:97 ../../library/nntplib.rst:129
+#: ../Doc/library/nntplib.rst:97 ../Doc/library/nntplib.rst:129
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``nntplib.connect`` with "
 "arguments ``self``, ``host``, ``port``."
 msgstr ""
-"引数 ``self``, ``host``, ``port`` を指定して :ref:`監査イベント <auditing>` "
-"``nntplib.connect`` を送出します。 "
+"Genera un :ref:`evento de auditoría <auditing>` ``nntplib.connect`` con los "
+"argumentos ``self``, ``host``, ``port``."
 
-#: ../../library/nntplib.rst:99 ../../library/nntplib.rst:131
+#: ../Doc/library/nntplib.rst:99 ../Doc/library/nntplib.rst:131
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``nntplib.putline`` with "
 "arguments ``self``, ``line``."
 msgstr ""
-"引数 ``self``, ``line`` を指定して :ref:`監査イベント <auditing>` ``nntplib."
-"putline`` を送出します。 "
+"Genera un :ref:`evento de auditoría <auditing>` ``nntplib.putline`` con los "
+"argumentos ``self``, ``line``."
 
-#: ../../library/nntplib.rst:92 ../../library/nntplib.rst:124
+#: ../Doc/library/nntplib.rst:92 ../Doc/library/nntplib.rst:124
 msgid ""
 "All commands will raise an :ref:`auditing event <auditing>` ``nntplib."
 "putline`` with arguments ``self`` and ``line``, where ``line`` is the bytes "
 "about to be sent to the remote host."
 msgstr ""
-"全てのコマンドは引数 ``self`` と ``line`` を指定して :ref:`auditing event "
-"<auditing>` ``nntplib.putline`` を送出します。ここで ``line`` はリモートホス"
-"トに送信されるバイト数です。"
+"Todos los comandos generarán un :ref:`evento de auditoría <auditing>` "
+"``nntplib.putline`` con los argumentos ``self`` y ``line``, donde ``line`` "
+"es los bytes a punto de ser enviados al host remoto."
 
-#: ../../library/nntplib.rst:96
+#: ../Doc/library/nntplib.rst:96
 msgid "*usenetrc* is now ``False`` by default."
-msgstr "*usenetrc* がデフォルトで ``False`` になりました。"
+msgstr "*usenetrc* es ahora ``False`` por defecto."
 
-#: ../../library/nntplib.rst:99
+#: ../Doc/library/nntplib.rst:99
 msgid "Support for the :keyword:`with` statement was added."
-msgstr ":keyword:`with` 構文のサポートが追加されました。"
+msgstr "El soporte para la declaración :keyword:`with` fue añadido."
 
-#: ../../library/nntplib.rst:102 ../../library/nntplib.rst:135
+#: ../Doc/library/nntplib.rst:102 ../Doc/library/nntplib.rst:135
 msgid ""
 "If the *timeout* parameter is set to be zero, it will raise a :class:"
 "`ValueError` to prevent the creation of a non-blocking socket."
 msgstr ""
-"*timeout* パラメータが0に設定されている場合、非ブロッキングソケットの作成を防"
-"ぐために :class:`ValueError` を送出します。"
+"Si el parámetro *timeout* se establece en cero, lanzará un :class:"
+"`ValueError` para evitar la creación de un socket sin bloqueo."
 
-#: ../../library/nntplib.rst:108
+#: ../Doc/library/nntplib.rst:108
 msgid ""
 "Return a new :class:`NNTP_SSL` object, representing an encrypted connection "
 "to the NNTP server running on host *host*, listening at port *port*.  :class:"
@@ -151,111 +168,131 @@ msgid ""
 "for best practices. All other parameters behave the same as for :class:"
 "`NNTP`."
 msgstr ""
+"Retorna un nuevo objeto :class:`NNTP_SSL`, que representa una conexión "
+"cifrada con el servidor NNTP ejecutándose en el host *host*, escuchando en "
+"el puerto *port*. Los objetos :class:`NNTP_SSL` tienen los mismos métodos "
+"que los objetos :class:`NNTP`. Si se omite el *port* se utiliza el puerto "
+"563 (NNTPS). *ssl_context* también es opcional, y también el objeto :class:"
+"`~ssl.SSLContext`. Por favor, lea :ref:`ssl-security` para conocer las "
+"buenas prácticas. Todos los demás parámetros se comportan igual que para :"
+"class:`NNTP`."
 
-#: ../../library/nntplib.rst:116
+#: ../Doc/library/nntplib.rst:116
 msgid ""
 "Note that SSL-on-563 is discouraged per :rfc:`4642`, in favor of STARTTLS as "
 "described below.  However, some servers only support the former."
 msgstr ""
+"Tenga en cuenta que SSL-on-563 no es recomendado por :rfc:`4642`, en favor "
+"de STARTTLS como se describe abajo. Sin embargo, algunos servidores solo "
+"admiten el primero."
 
-#: ../../library/nntplib.rst:130
+#: ../Doc/library/nntplib.rst:130
 msgid ""
 "The class now supports hostname check with :attr:`ssl.SSLContext."
 "check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
 msgstr ""
-"このクラスは :attr:`ssl.SSLContext.check_hostname` と *Server Name "
-"Indication* でホスト名のチェックをサポートしました。(:data:`ssl.HAS_SNI` を参"
-"照してください)。"
+"La clase ahora admite la verificación del nombre de host con :attr:`ssl."
+"SSLContext.check_hostname` e *Indicador del nombre del servidor* (SNI por "
+"sus siglas en inglés, consulte :data:`ssl.HAS_SNI`)."
 
-#: ../../library/nntplib.rst:141
+#: ../Doc/library/nntplib.rst:141
 msgid ""
 "Derived from the standard exception :exc:`Exception`, this is the base class "
 "for all exceptions raised by the :mod:`nntplib` module.  Instances of this "
 "class have the following attribute:"
 msgstr ""
-"標準の例外 :exc:`Exception` から派生しており、 :mod:`nntplib` モジュールが送"
-"出する全ての例外の基底クラスです。このクラスのインスタンスは以下の属性を持っ"
-"ています:"
+"Derivado de la excepción estándar :exc:`Exception`, esta es la clase base "
+"para todas las excepciones generadas por el módulo :mod:`nntplib`. Las "
+"instancias de esta clase tienen el siguiente atributo:"
 
-#: ../../library/nntplib.rst:147
+#: ../Doc/library/nntplib.rst:147
 msgid "The response of the server if available, as a :class:`str` object."
-msgstr "利用可能な場合サーバの応答です。:class:`str` オブジェクトです。"
+msgstr ""
+"La respuesta del servidor, si está disponible, como un objeto :class:`str`."
 
-#: ../../library/nntplib.rst:152
+#: ../Doc/library/nntplib.rst:152
 msgid "Exception raised when an unexpected reply is received from the server."
-msgstr "サーバから想定外の応答があったときに送出される例外。"
+msgstr ""
+"Excepción generada cuando se recibe una respuesta inesperada del servidor."
 
-#: ../../library/nntplib.rst:157
+#: ../Doc/library/nntplib.rst:157
 msgid ""
 "Exception raised when a response code in the range 400--499 is received."
-msgstr "400--499の範囲の応答コードを受け取ったときに送出される例外。"
+msgstr ""
+"Excepción generada cuando se recibe un código de respuesta dentro del rango "
+"del 400--499."
 
-#: ../../library/nntplib.rst:162
+#: ../Doc/library/nntplib.rst:162
 msgid ""
 "Exception raised when a response code in the range 500--599 is received."
-msgstr "500--599の範囲の応答コードを受け取ったときに送出される例外。"
+msgstr ""
+"Excepción generada cuando se recibe un código de respuesta dentro del rango "
+"del 500--599."
 
-#: ../../library/nntplib.rst:167
+#: ../Doc/library/nntplib.rst:167
 msgid ""
 "Exception raised when a reply is received from the server that does not "
 "begin with a digit in the range 1--5."
 msgstr ""
-"1--5の数字で始まらない応答コードをサーバから受け取ったときに送出される例外。"
+"Excepción generada cuando se recibe una respuesta del servidor que no "
+"comienza con un dígito dentro del rango 1--5."
 
-#: ../../library/nntplib.rst:173
+#: ../Doc/library/nntplib.rst:173
 msgid "Exception raised when there is some error in the response data."
-msgstr "応答データに何らかのエラーがあったときに送出される例外。"
+msgstr ""
+"Excepción generada cuando hay algún error en los datos de la respuesta."
 
-#: ../../library/nntplib.rst:179
+#: ../Doc/library/nntplib.rst:179
 msgid "NNTP Objects"
-msgstr "NNTP オブジェクト"
+msgstr "Objetos NNTP"
 
-#: ../../library/nntplib.rst:181
+#: ../Doc/library/nntplib.rst:181
 msgid ""
 "When connected, :class:`NNTP` and :class:`NNTP_SSL` objects support the "
 "following methods and attributes."
 msgstr ""
-"接続されたとき :class:`NNTP` および :class:`NNTP_SSL` オブジェクトは以下のメ"
-"ソッドと属性をサポートします:"
+"Cuando están conectados, los objetos :class:`NNTP` y :class:`NNTP_SSL` "
+"admiten los siguientes métodos y atributos."
 
-#: ../../library/nntplib.rst:185
+#: ../Doc/library/nntplib.rst:185
 msgid "Attributes"
-msgstr "属性"
+msgstr "Atributos"
 
-#: ../../library/nntplib.rst:189
+#: ../Doc/library/nntplib.rst:189
 msgid ""
 "An integer representing the version of the NNTP protocol supported by the "
 "server.  In practice, this should be ``2`` for servers advertising :rfc:"
 "`3977` compliance and ``1`` for others."
 msgstr ""
-"サーバがサポートしている NNTP プロトコルのバージョンを表す整数です。\n"
-"実際のところ、この値は :rfc:`3977` 準拠を通知しているサーバでは ``2`` で、他"
-"の場合は ``1`` のはずです。"
+"Un entero que representa la versión del protocolo NNTP compatible con el "
+"servidor. En la práctica, esto debería ser ``2`` para los servidores que "
+"anuncian el cumplimiento :rfc:`3977` y ``1`` para otros."
 
-#: ../../library/nntplib.rst:197
+#: ../Doc/library/nntplib.rst:197
 msgid ""
 "A string describing the software name and version of the NNTP server, or :"
 "const:`None` if not advertised by the server."
 msgstr ""
-"NNTP サーバのソフトウェア名とバージョンを記述する文字列です。\n"
-"サーバが通知していない場合は :const:`None` です。"
+"Cadena que describe el nombre de software y la versión del servidor NNTP, o :"
+"const:`None` si el servidor no lo anuncia."
 
-#: ../../library/nntplib.rst:203
+#: ../Doc/library/nntplib.rst:203
 msgid "Methods"
-msgstr "メソッド"
+msgstr "Métodos"
 
-#: ../../library/nntplib.rst:205
+#: ../Doc/library/nntplib.rst:205
 msgid ""
 "The *response* that is returned as the first item in the return tuple of "
 "almost all methods is the server's response: a string beginning with a three-"
 "digit code.  If the server's response indicates an error, the method raises "
 "one of the above exceptions."
 msgstr ""
-"全てのメソッドにおける戻り値のタプルで最初の要素となる *response* は、サーバ"
-"の応答です: この文字列は 3 桁の数字からなるコードで始まります。サーバの応答が"
-"エラーを示す場合、上記のいずれかの例外が送出されます。"
+"La *response* que es retornada como el primer elemento de la tupla de "
+"retorno de casi todos los métodos es la respuesta del servidor: una cadena "
+"que comienza con un código de tres dígitos. Si la respuesta del servidor "
+"indica un error, el método genera una de las excepciones anteriores."
 
-#: ../../library/nntplib.rst:210
+#: ../Doc/library/nntplib.rst:210
 msgid ""
 "Many of the following methods take an optional keyword-only argument *file*. "
 "When the *file* argument is supplied, it must be either a :term:`file "
@@ -264,81 +301,109 @@ msgid ""
 "(except for the response line and the terminating dot) to the file; any list "
 "of lines, tuples or objects that the method normally returns will be empty."
 msgstr ""
+"Muchos de los métodos siguientes toman un argumento opcional de solamente "
+"palabra clave *file*. Cuando se proporciona el argumento *file*, debe ser "
+"un :term:`file object` abierto para la escritura binaria o el nombre de un "
+"archivo en disco a ser escrito. El método escribirá los datos retornados por "
+"el servidor (excepto la línea de respuesta y el punto de terminación) en el "
+"archivo; cualquier lista de líneas, tuplas u objetos que el método retorna "
+"normalmente estará vacía."
 
-#: ../../library/nntplib.rst:217
+#: ../Doc/library/nntplib.rst:217
 msgid ""
 "Many of the following methods have been reworked and fixed, which makes them "
 "incompatible with their 3.1 counterparts."
 msgstr ""
-"以下のメソッドの多くは改訂・修正されました。このため、3.1 のものとは互換性が"
-"ありません。"
+"Muchos de los siguientes métodos se han rediseñado y corregido, lo que los "
+"hace incompatibles con sus contrapartes 3.1."
 
-#: ../../library/nntplib.rst:224
+#: ../Doc/library/nntplib.rst:224
 msgid ""
 "Send a ``QUIT`` command and close the connection.  Once this method has been "
 "called, no other methods of the NNTP object should be called."
 msgstr ""
-"``QUIT`` 命令を送信し、接続を閉じます。このメソッドを呼び出した後は、NTTP オ"
-"ブジェクトの他のいかなるメソッドも呼び出してはいけません。"
+"Envía un comando ``QUIT`` y cierra la conexión. Una vez que se ha invocado "
+"este método, no se debe invocar ningún otro método del objeto NNTP."
 
-#: ../../library/nntplib.rst:230
+#: ../Doc/library/nntplib.rst:230
 msgid ""
 "Return the welcome message sent by the server in reply to the initial "
 "connection.  (This message sometimes contains disclaimers or help "
 "information that may be relevant to the user.)"
 msgstr ""
-"サーバに最初に接続した際に送信される応答中のウェルカムメッセージを返します。"
-"(このメッセージには時に、ユーザにとって重要な免責事項や ヘルプ情報が入ってい"
-"ます。)"
+"Retorna el mensaje de bienvenida enviado por el servidor en respuesta a la "
+"conexión inicial. (Este mensaje a veces contiene aclaraciones o información "
+"de ayuda que puede ser relevante para el usuario.)"
 
-#: ../../library/nntplib.rst:237
+#: ../Doc/library/nntplib.rst:237
 msgid ""
 "Return the :rfc:`3977` capabilities advertised by the server, as a :class:"
 "`dict` instance mapping capability names to (possibly empty) lists of "
 "values. On legacy servers which don't understand the ``CAPABILITIES`` "
 "command, an empty dictionary is returned instead."
 msgstr ""
+"Retorna las capacidades :rfc:`3977` anunciadas por el servidor, como una "
+"instancia :class:`dict` mapeando nombres de capacidades a listas de valores "
+"(posiblemente vacías). En los servidores heredados que no entienden el "
+"comando ``CAPABILITIES``, se retorna un diccionario vacío en su lugar."
 
-#: ../../library/nntplib.rst:251
+#: ../Doc/library/nntplib.rst:251
 msgid ""
 "Send ``AUTHINFO`` commands with the user name and password.  If *user* and "
 "*password* are ``None`` and *usenetrc* is true, credentials from ``~/."
 "netrc`` will be used if possible."
 msgstr ""
+"Envía comandos ``AUTHINFO`` con el nombre de usuario y la contraseña. Si "
+"*user* y *password* son ``None`` y *usenetrc* es verdadero, se utilizarán "
+"las credenciales de ``~/.netrc`` si su uso es posible."
 
-#: ../../library/nntplib.rst:255
+#: ../Doc/library/nntplib.rst:255
 msgid ""
 "Unless intentionally delayed, login is normally performed during the :class:"
 "`NNTP` object initialization and separately calling this function is "
 "unnecessary.  To force authentication to be delayed, you must not set *user* "
 "or *password* when creating the object, and must set *usenetrc* to False."
 msgstr ""
+"A menos que se retrase intencionalmente, el inicio de sesión se realiza "
+"normalmente durante la inicialización del objeto :class:`NNTP` y no es "
+"necesario invocar esta función por separado. Para forzar el retraso de la "
+"autenticación, no debes establecer *user* o *password* al crear el objeto y "
+"debes establecer *usenetrc* en *False*."
 
-#: ../../library/nntplib.rst:266
+#: ../Doc/library/nntplib.rst:266
 msgid ""
 "Send a ``STARTTLS`` command.  This will enable encryption on the NNTP "
 "connection.  The *context* argument is optional and should be a :class:`ssl."
 "SSLContext` object.  Please read :ref:`ssl-security` for best practices."
 msgstr ""
+"Envía un comando ``STARTTLS``. Esto habilitará el cifrado en la conexión "
+"NNTP. El argumento *context* es opcional y debe ser el objeto :class:`ssl. "
+"SSLContext`. Por favor lea :ref:`ssl-security` para conocer las buenas "
+"prácticas."
 
-#: ../../library/nntplib.rst:271
+#: ../Doc/library/nntplib.rst:271
 msgid ""
 "Note that this may not be done after authentication information has been "
 "transmitted, and authentication occurs by default if possible during a :"
 "class:`NNTP` object initialization.  See :meth:`NNTP.login` for information "
 "on suppressing this behavior."
 msgstr ""
+"Tenga en cuenta que esto no se puede hacer después de que se haya "
+"transmitido la información de autenticación y la autenticación se produce de "
+"forma predeterminada, si es posible, durante la inicialización de un objeto :"
+"class:`NNTP`. Consulte :meth:`NNTP.login` para obtener información sobre "
+"cómo suprimir este comportamiento."
 
-#: ../../library/nntplib.rst:278
+#: ../Doc/library/nntplib.rst:278
 msgid ""
 "The method now supports hostname check with :attr:`ssl.SSLContext."
 "check_hostname` and *Server Name Indication* (see :data:`ssl.HAS_SNI`)."
 msgstr ""
-"このメソッドは :attr:`ssl.SSLContext.check_hostname` と *Server Name "
-"Indication* でホスト名のチェックをサポートしました。(:data:`ssl.HAS_SNI` を参"
-"照してください)。"
+"El método ahora admite la comprobación del nombre de host con :attr:`ssl. "
+"SSLContext.check_hostname` y *Indicador del nombre del servidor* (SNI por "
+"sus siglas en inglés, consulte :data:`ssl.HAS_SNI`)."
 
-#: ../../library/nntplib.rst:285
+#: ../Doc/library/nntplib.rst:285
 msgid ""
 "Send a ``NEWGROUPS`` command.  The *date* argument should be a :class:"
 "`datetime.date` or :class:`datetime.datetime` object. Return a pair "
@@ -346,19 +411,30 @@ msgid ""
 "are new since the given *date*. If *file* is supplied, though, then *groups* "
 "will be empty."
 msgstr ""
+"Envía un comando ``NEWGROUPS``. El argumento *date* debe ser un objeto :"
+"class:`datetime.date` o :class:`datetime.datetime`. Retorna un par "
+"``(response, groups)`` donde *groups* es una lista que representa los grupos "
+"que son nuevos desde la fecha determinada. Sin embargo, si se proporciona "
+"*file*, entonces *groups* estará vacío."
 
-#: ../../library/nntplib.rst:301
+#: ../Doc/library/nntplib.rst:301
 msgid ""
 "Send a ``NEWNEWS`` command.  Here, *group* is a group name or ``'*'``, and "
 "*date* has the same meaning as for :meth:`newgroups`.  Return a pair "
 "``(response, articles)`` where *articles* is a list of message ids."
 msgstr ""
+"Envía un comando ``NEWNEWS``. Aquí, *group* es un nombre de grupo o ``'*'``, "
+"y *date* tiene el mismo significado que para :meth:`newgroups`. Retorna un "
+"par ``(response, articles)`` donde *articles* es una lista de "
+"identificadores de mensaje."
 
-#: ../../library/nntplib.rst:305
+#: ../Doc/library/nntplib.rst:305
 msgid "This command is frequently disabled by NNTP server administrators."
-msgstr "このコマンドは NNTP サーバ管理者に無効にされていることがよくあります。"
+msgstr ""
+"Este comando es inhabilitado frecuentemente por los administradores del "
+"servidor NNTP."
 
-#: ../../library/nntplib.rst:310
+#: ../Doc/library/nntplib.rst:310
 msgid ""
 "Send a ``LIST`` or ``LIST ACTIVE`` command.  Return a pair ``(response, "
 "list)`` where *list* is a list of tuples representing all the groups "
@@ -367,75 +443,96 @@ msgid ""
 "where *group* is a group name, *last* and *first* are the last and first "
 "article numbers, and *flag* usually takes one of these values:"
 msgstr ""
+"Envía un comando ``LIST`` o ``LIST ACTIVE``. Retorna un par ``(response, "
+"list)`` donde *list* es una lista de tuplas que representan todos los grupos "
+"disponibles desde este servidor NNTP, opcionalmente coincidiendo con el "
+"patrón de cadena *group_pattern*. Cada tupla tiene el formato ``(group, "
+"last, first, flag)``, donde *group* es un nombre de grupo, *last* y *first* "
+"son los últimos y primeros números de artículo, y *flag* suele tomar uno de "
+"estos valores:"
 
-#: ../../library/nntplib.rst:318
+#: ../Doc/library/nntplib.rst:318
 msgid "``y``: Local postings and articles from peers are allowed."
-msgstr ""
+msgstr "``y``: Se permiten publicaciones locales y artículos de pares."
 
-#: ../../library/nntplib.rst:319
+#: ../Doc/library/nntplib.rst:319
 msgid "``m``: The group is moderated and all postings must be approved."
 msgstr ""
+"``m``: El grupo está moderado y todas las publicaciones deben ser aprobadas."
 
-#: ../../library/nntplib.rst:320
+#: ../Doc/library/nntplib.rst:320
 msgid "``n``: No local postings are allowed, only articles from peers."
-msgstr ""
+msgstr "``n``: No se permiten publicaciones locales, solo artículos de pares."
 
-#: ../../library/nntplib.rst:321
+#: ../Doc/library/nntplib.rst:321
 msgid "``j``: Articles from peers are filed in the junk group instead."
 msgstr ""
+"``j``: Los artículos de pares se archivan en el grupo de basura en su lugar."
 
-#: ../../library/nntplib.rst:322
+#: ../Doc/library/nntplib.rst:322
 msgid "``x``: No local postings, and articles from peers are ignored."
 msgstr ""
+"``x``: No hay publicaciones locales y los artículos de pares son ignorados."
 
-#: ../../library/nntplib.rst:323
+#: ../Doc/library/nntplib.rst:323
 msgid "``=foo.bar``: Articles are filed in the ``foo.bar`` group instead."
 msgstr ""
+"``=foo.bar``: Los artículos se archivan en el grupo ``foo.bar`` en su lugar."
 
-#: ../../library/nntplib.rst:325
+#: ../Doc/library/nntplib.rst:325
 msgid ""
 "If *flag* has another value, then the status of the newsgroup should be "
 "considered unknown."
 msgstr ""
+"Si *flag* tiene otro valor, el estado del grupo de noticias debe "
+"considerarse como desconocido."
 
-#: ../../library/nntplib.rst:328
+#: ../Doc/library/nntplib.rst:328
 msgid ""
 "This command can return very large results, especially if *group_pattern* is "
 "not specified.  It is best to cache the results offline unless you really "
 "need to refresh them."
 msgstr ""
+"Este comando puede retornar resultados muy grandes, especialmente si no se "
+"especifica *group_pattern*. Es mejor almacenar en caché los resultados sin "
+"conexión a menos que realmente necesite actualizarlos."
 
-#: ../../library/nntplib.rst:332
+#: ../Doc/library/nntplib.rst:332
 msgid "*group_pattern* was added."
-msgstr "*group_pattern* が追加されました。"
+msgstr "*group_pattern* fue añadido."
 
-#: ../../library/nntplib.rst:338
+#: ../Doc/library/nntplib.rst:338
 msgid ""
 "Send a ``LIST NEWSGROUPS`` command, where *grouppattern* is a wildmat string "
 "as specified in :rfc:`3977` (it's essentially the same as DOS or UNIX shell "
 "wildcard strings).  Return a pair ``(response, descriptions)``, where "
 "*descriptions* is a dictionary mapping group names to textual descriptions."
 msgstr ""
+"Envía un comando ``LIST NEWSGROUPS``, donde *grouppattern* es una cadena "
+"comodín como se especifica en :rfc:`3977` (es esencialmente lo mismo que las "
+"cadenas comodín de shell DOS o UNIX). Retorna un par ``(response, "
+"descriptions)``, donde *descriptions* es un diccionario que asigna nombres "
+"de grupos a descripciones textuales."
 
-#: ../../library/nntplib.rst:352
+#: ../Doc/library/nntplib.rst:352
 msgid ""
 "Get a description for a single group *group*.  If more than one group "
 "matches (if 'group' is a real wildmat string), return the first match.   If "
 "no group matches, return an empty string."
 msgstr ""
-"単一のグループ *group* から説明文字列を取り出します。 ('group' が実際には "
-"wildmat 文字列で) 複数のグループがマッチした場合、 最初にマッチしたものを返し"
-"ます。何もマッチしなければ空文字列を返します。"
+"Obtiene una descripción para un único grupo *group*. Si más de un grupo "
+"coincide (si *'group'* es una cadena comodín real), retorna la primera "
+"coincidencia. Si ningún grupo coincide, retorna una cadena vacía."
 
-#: ../../library/nntplib.rst:356
+#: ../Doc/library/nntplib.rst:356
 msgid ""
 "This elides the response code from the server.  If the response code is "
 "needed, use :meth:`descriptions`."
 msgstr ""
-"このメソッドはサーバからの応答コードを省略します。応答コードが必要なら、 :"
-"meth:`descriptions` を使ってください。"
+"Esto elude el código de respuesta del servidor. Si necesita el código de "
+"respuesta, use :meth:`descriptions`."
 
-#: ../../library/nntplib.rst:362
+#: ../Doc/library/nntplib.rst:362
 msgid ""
 "Send a ``GROUP`` command, where *name* is the group name.  The group is "
 "selected as the current group, if it exists.  Return a tuple ``(response, "
@@ -443,8 +540,14 @@ msgid ""
 "articles in the group, *first* is the first article number in the group, "
 "*last* is the last article number in the group, and *name* is the group name."
 msgstr ""
+"Envía un comando ``GROUP``, donde *name* es el nombre del grupo. El grupo se "
+"selecciona como el grupo actual, si este existe. Retorna una tupla "
+"``(response, count, first, last, name)`` donde *count* es el número "
+"(estimado) de artículos en el grupo, *first* es el primer número de artículo "
+"del grupo, *last* es el último número de artículo en el grupo y *name* es el "
+"nombre del grupo."
 
-#: ../../library/nntplib.rst:372
+#: ../Doc/library/nntplib.rst:372
 msgid ""
 "Send an ``OVER`` command, or an ``XOVER`` command on legacy servers. "
 "*message_spec* can be either a string representing a message id, or a "
@@ -453,8 +556,15 @@ msgid ""
 "starting from *first* to the last article in the current group, or :const:"
 "`None` to select the current article in the current group."
 msgstr ""
+"Envía un comando ``OVER`` o un comando ``XOVER`` en servidores heredados. "
+"*message_spec* puede ser una cadena que represente un identificador de "
+"mensaje o una tupla de números ``(first, None)`` que indique un rango de "
+"artículos en el grupo actual, o una tupla ``(first, None)`` que indique un "
+"rango de artículos comenzando desde *first* hasta el último artículo del "
+"grupo actual, o :const:`None` para seleccionar el artículo actual en el "
+"grupo actual."
 
-#: ../../library/nntplib.rst:379
+#: ../Doc/library/nntplib.rst:379
 msgid ""
 "Return a pair ``(response, overviews)``.  *overviews* is a list of "
 "``(article_number, overview)`` tuples, one for each article selected by "
@@ -464,41 +574,59 @@ msgid ""
 "items (the key is then the metadata name prepended with ``\":\"``).  The "
 "following items are guaranteed to be present by the NNTP specification:"
 msgstr ""
+"Retorna un par ``(response, overviews)``. *overviews* es una lista de tuplas "
+"del tipo ``(article_number, overview)``, una para cada artículo seleccionado "
+"por *message_spec*. Cada *overview* es un diccionario con el mismo número de "
+"elementos, pero este número depende del servidor. Estos elementos son "
+"encabezados de mensajes (la clave es entonces el nombre del encabezado en "
+"minúsculas) o elementos de metadatos (la clave es entonces el nombre de los "
+"metadatos precedido de ``\":\"``). Se garantiza la presencia de los "
+"siguientes elementos por la especificación NNTP:"
 
-#: ../../library/nntplib.rst:387
+#: ../Doc/library/nntplib.rst:387
 msgid ""
 "the ``subject``, ``from``, ``date``, ``message-id`` and ``references`` "
 "headers"
 msgstr ""
+"los encabezados ``subject``, ``from``, ``date``, ``message-id`` y "
+"``references``"
 
-#: ../../library/nntplib.rst:389
+#: ../Doc/library/nntplib.rst:389
 msgid ""
 "the ``:bytes`` metadata: the number of bytes in the entire raw article "
 "(including headers and body)"
 msgstr ""
+"los metadatos ``:bytes``: el número de bytes en todo el artículo sin "
+"procesar (incluidos los encabezados y el cuerpo)"
 
-#: ../../library/nntplib.rst:391
+#: ../Doc/library/nntplib.rst:391
 msgid "the ``:lines`` metadata: the number of lines in the article body"
 msgstr ""
+"los metadatos ``:lines``: el número de líneas en el cuerpo del artículo"
 
-#: ../../library/nntplib.rst:393
+#: ../Doc/library/nntplib.rst:393
 msgid ""
 "The value of each item is either a string, or :const:`None` if not present."
 msgstr ""
+"El valor de cada elemento es una cadena o :const:`None` si no está presente."
 
-#: ../../library/nntplib.rst:395
+#: ../Doc/library/nntplib.rst:395
 msgid ""
 "It is advisable to use the :func:`decode_header` function on header values "
 "when they may contain non-ASCII characters::"
 msgstr ""
+"Es aconsejable utilizar la función :func:`decode_header` en los valores del "
+"encabezado cuando pueden contener caracteres no-ASCII::"
 
-#: ../../library/nntplib.rst:415
+#: ../Doc/library/nntplib.rst:415
 msgid ""
 "Send a ``HELP`` command.  Return a pair ``(response, list)`` where *list* is "
 "a list of help strings."
 msgstr ""
+"Envía un comando ``HELP``. Retorna un par ``(response, list)`` donde *list* "
+"es una lista de cadenas de caracteres de ayuda."
 
-#: ../../library/nntplib.rst:421
+#: ../Doc/library/nntplib.rst:421
 msgid ""
 "Send a ``STAT`` command, where *message_spec* is either a message id "
 "(enclosed in ``'<'`` and ``'>'``) or an article number in the current group. "
@@ -506,16 +634,22 @@ msgid ""
 "current group is considered.  Return a triple ``(response, number, id)`` "
 "where *number* is the article number and *id* is the message id."
 msgstr ""
+"Envía un comando ``STAT``, donde *message_spec* es un identificador de "
+"mensaje (incluido en ``'<'`` y ``'>'``) o un número de artículo en el grupo "
+"actual. Si se omite *message_spec* o es :const:`None` se considera el "
+"artículo actual del grupo actual. Retorna un triple ``(response, number, "
+"id)`` donde *number* es el número de artículo e *id* es el identificador del "
+"mensaje."
 
-#: ../../library/nntplib.rst:435
+#: ../Doc/library/nntplib.rst:435
 msgid "Send a ``NEXT`` command.  Return as for :meth:`.stat`."
-msgstr "``NEXT`` 命令を送信します。 :meth:`.stat` のような応答を返します。"
+msgstr "Envía un comando ``NEXT``. Retorna como para :meth:`.stat`."
 
-#: ../../library/nntplib.rst:440
+#: ../Doc/library/nntplib.rst:440
 msgid "Send a ``LAST`` command.  Return as for :meth:`.stat`."
-msgstr "``LAST`` 命令を送信します。 :meth:`.stat` のような応答を返します。"
+msgstr "Envía un comando ``LAST``. Retorna como para :meth:`.stat`."
 
-#: ../../library/nntplib.rst:445
+#: ../Doc/library/nntplib.rst:445
 msgid ""
 "Send an ``ARTICLE`` command, where *message_spec* has the same meaning as "
 "for :meth:`.stat`.  Return a tuple ``(response, info)`` where *info* is a :"
@@ -525,22 +659,36 @@ msgid ""
 "string, and *lines* a list of lines (without terminating newlines) "
 "comprising the raw message including headers and body."
 msgstr ""
+"Envía un comando ``ARTICLE``, donde *message_spec* tiene el mismo "
+"significado que para :meth:`.stat`. Retorna una tupla ``(response, info)`` "
+"donde *info* es un :class:`~collections.namedtuple` con tres atributos "
+"*number*, *message_id* y *lines* (en ese orden). *number* es el número de "
+"artículo del grupo (o 0 si la información no está disponible), *message_id* "
+"el identificador del mensaje como una cadena y *lines* una lista de líneas "
+"(sin terminar líneas nuevas) que comprende el mensaje sin procesar, "
+"incluidos los encabezados y el cuerpo."
 
-#: ../../library/nntplib.rst:470
+#: ../Doc/library/nntplib.rst:470
 msgid ""
 "Same as :meth:`article()`, but sends a ``HEAD`` command.  The *lines* "
 "returned (or written to *file*) will only contain the message headers, not "
 "the body."
 msgstr ""
+"Igual que :meth:`article()`, pero envía un comando ``HEAD``. Las *lines* "
+"retornadas (o escritas a *file*) solo contendrán los encabezados del "
+"mensaje, no el cuerpo."
 
-#: ../../library/nntplib.rst:477
+#: ../Doc/library/nntplib.rst:477
 msgid ""
 "Same as :meth:`article()`, but sends a ``BODY`` command.  The *lines* "
 "returned (or written to *file*) will only contain the message body, not the "
 "headers."
 msgstr ""
+"Igual que :meth:`article()`, pero envía un comando ``BODY``. Las *lines* "
+"retornadas (o escritas a *file*) solo contendrán los encabezados del "
+"mensaje, no el cuerpo."
 
-#: ../../library/nntplib.rst:484
+#: ../Doc/library/nntplib.rst:484
 msgid ""
 "Post an article using the ``POST`` command.  The *data* argument is either "
 "a :term:`file object` opened for binary reading, or any iterable of bytes "
@@ -549,31 +697,45 @@ msgid ""
 "meth:`post` method automatically escapes lines beginning with ``.`` and "
 "appends the termination line."
 msgstr ""
+"Publica un artículo utilizando el comando ``POST``. El argumento *data* es "
+"un :term:`file object` abierto para la lectura binaria o cualquier iterable "
+"de objetos bytes (que representa las líneas sin procesar del artículo que se "
+"va a publicar). Debe representar un artículo de noticias bien formado, "
+"incluidos los encabezados requeridos. El método :meth:`post` escapa "
+"automáticamente las líneas que comienzan con ``.`` y añade la línea de "
+"terminación."
 
-#: ../../library/nntplib.rst:491
+#: ../Doc/library/nntplib.rst:491
 msgid ""
 "If the method succeeds, the server's response is returned.  If the server "
 "refuses posting, a :class:`NNTPReplyError` is raised."
 msgstr ""
+"Si el método tiene éxito, se retorna la respuesta del servidor. Si el "
+"servidor se niega a publicarlo, se genera un :class:`NNTPReplyError`."
 
-#: ../../library/nntplib.rst:497
+#: ../Doc/library/nntplib.rst:497
 msgid ""
 "Send an ``IHAVE`` command. *message_id* is the id of the message to send to "
 "the server (enclosed in  ``'<'`` and ``'>'``).  The *data* parameter and the "
 "return value are the same as for :meth:`post()`."
 msgstr ""
+"Envía un comando ``IHAVE``. *message_id* es el identificador del mensaje que "
+"se enviará al servidor (incluido entre ``'<'`` y ``'>'``). El parámetro "
+"*data* y el valor de retorno son los mismos que para :meth:`post()`."
 
-#: ../../library/nntplib.rst:504
+#: ../Doc/library/nntplib.rst:504
 msgid ""
 "Return a pair ``(response, date)``.  *date* is a :class:`~datetime.datetime` "
 "object containing the current date and time of the server."
 msgstr ""
+"Retorna un par ``(response, date)``. *date* es un objeto :class:`~datetime."
+"datetime` que contiene la fecha y hora actuales del servidor."
 
-#: ../../library/nntplib.rst:510
+#: ../Doc/library/nntplib.rst:510
 msgid "Send a ``SLAVE`` command.  Return the server's *response*."
-msgstr "``SLAVE`` 命令を送信します。サーバの *response* を返します。"
+msgstr "Envía un comando ``SLAVE``. Retorna la *response* del servidor."
 
-#: ../../library/nntplib.rst:515
+#: ../Doc/library/nntplib.rst:515
 msgid ""
 "Set the instance's debugging level.  This controls the amount of debugging "
 "output printed.  The default, ``0``, produces no debugging output.  A value "
@@ -582,20 +744,24 @@ msgid ""
 "maximum amount of debugging output, logging each line sent and received on "
 "the connection (including message text)."
 msgstr ""
-"インスタンスのデバッグレベルを設定します。このメソッドは印字されるデバッグ出"
-"力の量を制御します。標準では ``0`` に設定されていて、 これはデバッグ出力を全"
-"く印字しません。 ``1`` はそこそこの量、一般に NNTP 要求や応答あたり 1 行のデ"
-"バッグ出力を生成します。値が ``2`` やそれ以上の場合、(メッセージテキストを含"
-"めて) NNTP 接続上で送受信された全ての内容を一行ごとにログ出力する、最大限のデ"
-"バッグ出力を生成します。"
+"Establece el nivel de depuración de la instancia. Esto controla la cantidad "
+"de salida de depuración impresa. El valor por defecto, ``0``, no produce "
+"salida de depuración. Un valor de ``1`` produce una cantidad moderada de "
+"salida de depuración, generalmente una sola línea por solicitud o por "
+"respuesta. Un valor de ``2`` o superior produce la cantidad máxima de salida "
+"de depuración, registrando cada línea enviada y recibida en la conexión "
+"(incluyendo el texto del mensaje)."
 
-#: ../../library/nntplib.rst:523
+#: ../Doc/library/nntplib.rst:523
 msgid ""
 "The following are optional NNTP extensions defined in :rfc:`2980`.  Some of "
 "them have been superseded by newer commands in :rfc:`3977`."
 msgstr ""
+"Las siguientes son extensiones NNTP opcionales definidas en :rfc:`2980`. "
+"Algunas de ellas han sido reemplazados por comandos más nuevos en :rfc:"
+"`3977`."
 
-#: ../../library/nntplib.rst:529
+#: ../Doc/library/nntplib.rst:529
 msgid ""
 "Send an ``XHDR`` command.  The *hdr* argument is a header keyword, e.g. "
 "``'subject'``.  The *str* argument should have the form ``'first-last'`` "
@@ -609,27 +775,48 @@ msgid ""
 "calling :meth:`write` on it to store the lines of the command output. If "
 "*file* is supplied, then the returned *list* is an empty list."
 msgstr ""
+"Envía un comando ``XHDR``. El argumento *hdr* es una palabra clave de "
+"encabezado, por ejemplo ``'subject'``. El argumento *str* debe tener la "
+"forma ``'first-last'`` donde *first* y *last* son el primer y último número "
+"de artículo para buscar. Retorna un par ``(response, list)``, donde *list* "
+"es una lista de pares ``(id, text)``, donde *id* es un número de artículo "
+"(como una cadena) y *text* es el texto del encabezado solicitado para ese "
+"artículo. Si se proporciona el parámetro *file*, entonces la salida del "
+"comando ``XHDR`` se almacena en un archivo. Si *file* es una cadena, "
+"entonces el método abrirá un archivo con ese nombre, que escribirá en él y "
+"luego lo cerrará. Si *file* es un :term:`file object`, entonces comenzará "
+"invocando :meth:`write` en él para almacenar las líneas de la salida del "
+"comando. Si se proporciona *file*, entonces retorna *list* o una lista vacía."
 
-#: ../../library/nntplib.rst:544
+#: ../Doc/library/nntplib.rst:544
 msgid ""
 "Send an ``XOVER`` command.  *start* and *end* are article numbers delimiting "
 "the range of articles to select.  The return value is the same of for :meth:"
 "`over()`.  It is recommended to use :meth:`over()` instead, since it will "
 "automatically use the newer ``OVER`` command if available."
 msgstr ""
+"Envía un comando ``XOVER``. *start* and *end* son números de artículo que "
+"delimitan el rango de artículos a seleccionar. El valor de retorno es el "
+"mismo que para :meth:`over()`. Se recomienda usar :meth:`over()` en su "
+"lugar, ya que se usará automáticamente el comando más nuevo ``OVER`` si está "
+"disponible."
 
-#: ../../library/nntplib.rst:552
+#: ../Doc/library/nntplib.rst:552
 msgid "Utility functions"
-msgstr "ユーティリティー関数"
+msgstr "Funciones de utilidad"
 
-#: ../../library/nntplib.rst:554
+#: ../Doc/library/nntplib.rst:554
 msgid "The module also defines the following utility function:"
-msgstr "このモジュールは以下のユーティリティ関数も定義しています:"
+msgstr "El módulo también define la siguiente función de utilidad:"
 
-#: ../../library/nntplib.rst:559
+#: ../Doc/library/nntplib.rst:559
 msgid ""
 "Decode a header value, un-escaping any escaped non-ASCII characters. "
 "*header_str* must be a :class:`str` object.  The unescaped value is "
 "returned.  Using this function is recommended to display some headers in a "
 "human readable form::"
 msgstr ""
+"Decodifica un valor de encabezado, eliminando los caracteres de escape que "
+"no sean ASCII. *header_str* debe ser un objeto :class:`str`. Se retorna el "
+"valor sin escape. Se recomienda utilizar esta función para mostrar algunos "
+"encabezados en una forma legible por humanos::"

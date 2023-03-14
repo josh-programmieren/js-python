@@ -1,63 +1,60 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-# Translators:
-# tomo, 2021
+# Maintained by the python-doc-es workteam. 
+# docs-es@python.org / https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get the list of volunteers
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:09+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2019-05-06 11:59-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: python-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../library/modulefinder.rst:2
+#: ../Doc/library/modulefinder.rst:2
 msgid ":mod:`modulefinder` --- Find modules used by a script"
-msgstr ":mod:`modulefinder` --- スクリプト中で使われているモジュールを検索する"
+msgstr ":mod:`modulefinder` --- Buscar módulos usados por un script"
 
-#: ../../library/modulefinder.rst:9
+#: ../Doc/library/modulefinder.rst:9
 msgid "**Source code:** :source:`Lib/modulefinder.py`"
-msgstr "**ソースコード:** :source:`Lib/modulefinder.py`"
+msgstr "**Código fuente:** :source:`Lib/modulefinder.py`"
 
-#: ../../library/modulefinder.rst:13
+#: ../Doc/library/modulefinder.rst:13
 msgid ""
 "This module provides a :class:`ModuleFinder` class that can be used to "
 "determine the set of modules imported by a script. ``modulefinder.py`` can "
 "also be run as a script, giving the filename of a Python script as its "
 "argument, after which a report of the imported modules will be printed."
 msgstr ""
-"このモジュールでは、スクリプト中で import されているモジュールセットを調べる"
-"ために使える :class:`ModuleFinder` クラスを提供しています。 ``modulefinder."
-"py`` はまた、Python スクリプトのファイル名を引数に指定してスクリプトとして実"
-"行し、 import されているモジュールのレポートを出力させることもできます。"
+"Este módulo provee una clase :class:`ModuleFinder` que puede ser usada para "
+"determinar el conjunto de módulos importados en un script. ``modulefinder."
+"py`` puede también ejecutarse como un script, dando el nombre de un archivo "
+"de Python como argumento, tras lo cual se imprimirá un reporte de los "
+"módulos importados."
 
-#: ../../library/modulefinder.rst:21
+#: ../Doc/library/modulefinder.rst:21
 msgid ""
 "Record that the package named *pkg_name* can be found in the specified "
 "*path*."
 msgstr ""
-"*pkg_name* という名前のパッケージの在り処が *path* であることを記録します。"
+"Registra que el paquete llamado *pkg_name* pueda ser encontrado en el *path* "
+"especificado."
 
-#: ../../library/modulefinder.rst:26
+#: ../Doc/library/modulefinder.rst:26
 msgid ""
 "Allows specifying that the module named *oldname* is in fact the package "
 "named *newname*."
 msgstr ""
-"実際にはパッケージ内で *oldname* という名前になっているモジュールを "
-"*newname* という名前で指定できるようにします。"
+"Permite especificar que el módulo llamado *oldname* es de hecho el paquete "
+"llamado *newname*."
 
-#: ../../library/modulefinder.rst:32
+#: ../Doc/library/modulefinder.rst:32
 msgid ""
 "This class provides :meth:`run_script` and :meth:`report` methods to "
 "determine the set of modules imported by a script. *path* can be a list of "
@@ -67,52 +64,51 @@ msgid ""
 "names to exclude from the analysis. *replace_paths* is a list of ``(oldpath, "
 "newpath)`` tuples that will be replaced in module paths."
 msgstr ""
-"このクラスでは :meth:`run_script` および :meth:`report`  メソッドを提供してい"
-"ます。これらのメソッドは何らかのスクリプト中で import されているモジュールの"
-"集合を調べます。 *path* はモジュールを検索する先のディレクトリ名からなるリス"
-"トです。 *path* を指定しない場合、 ``sys.path`` を使います。 *debug* にはデ"
-"バッグレベルを設定します; 値を大きくすると、実行している内容を表すデバッグ"
-"メッセージを出力します。 *excludes* は検索から除外するモジュール名です。 "
-"*replace_paths* には、モジュールパス内で置き換えられるパスをタプル "
-"``(oldpath, newpath)`` からなるリストで指定します。"
+"Esta clase provee los métodos :meth:`run_script` y :meth:`report` que "
+"determinan el conjunto de módulos importados por un script. *path* puede ser "
+"un listado de directorios a buscar por módulos; si no es especificado, se "
+"usará ``sys.path``. *debug* define el nivel de depuración; valores más altos "
+"hacen que la clase imprima mensajes de depuración acerca de lo que está "
+"haciendo. *excludes* es una lista de nombres de módulos que serán excluidos "
+"del análisis. *replace_paths* es una lista de tuplas ``(oldpath, newpath)`` "
+"que serán remplazadas en las rutas de los módulos."
 
-#: ../../library/modulefinder.rst:43
+#: ../Doc/library/modulefinder.rst:43
 msgid ""
 "Print a report to standard output that lists the modules imported by the "
 "script and their paths, as well as modules that are missing or seem to be "
 "missing."
 msgstr ""
-"スクリプトで import しているモジュールと、そのパスからなるリストを列挙したレ"
-"ポートを標準出力に出力します。モジュールを見つけられなかったり、モジュールが"
-"ないように見える場合にも報告します。"
+"Imprime un reporte a la salida estándar que lista los módulos importados por "
+"el script y sus rutas, así como los módulos que faltan o parecieran faltar."
 
-#: ../../library/modulefinder.rst:49
+#: ../Doc/library/modulefinder.rst:49
 msgid ""
 "Analyze the contents of the *pathname* file, which must contain Python code."
 msgstr ""
-"*pathname* に指定したファイルの内容を解析します。ファイルには Python コードが"
-"入っていなければなりません。"
+"Analiza los contenidos del archivo *pathname*, que debe contener código "
+"Python."
 
-#: ../../library/modulefinder.rst:54
+#: ../Doc/library/modulefinder.rst:54
 msgid ""
 "A dictionary mapping module names to modules. See :ref:`modulefinder-"
 "example`."
 msgstr ""
-"モジュール名をモジュールに結びつける辞書。 :ref:`modulefinder-example` を参照"
-"して下さい。"
+"Un diccionario que mapea los nombres de los módulos a los módulos. Vea :ref:"
+"`modulefinder-example`."
 
-#: ../../library/modulefinder.rst:61
+#: ../Doc/library/modulefinder.rst:61
 msgid "Example usage of :class:`ModuleFinder`"
-msgstr ":class:`ModuleFinder` の使用例"
+msgstr "Ejemplo de uso de :class:`ModuleFinder`"
 
-#: ../../library/modulefinder.rst:63
+#: ../Doc/library/modulefinder.rst:63
 msgid "The script that is going to get analyzed later on (bacon.py)::"
-msgstr "解析対象のスクリプトはこれ (bacon.py) です::"
+msgstr "El script que será analizado más adelante (bacon.py)::"
 
-#: ../../library/modulefinder.rst:78
+#: ../Doc/library/modulefinder.rst:78
 msgid "The script that will output the report of bacon.py::"
-msgstr "bacon.py のレポートを出力するスクリプトです::"
+msgstr "El script que generará el reporte de bacon.py::"
 
-#: ../../library/modulefinder.rst:94
+#: ../Doc/library/modulefinder.rst:94
 msgid "Sample output (may vary depending on the architecture)::"
-msgstr "出力例です (アーキテクチャに依って違ってくるかもしれません)::"
+msgstr "Resultado de ejemplo (puede variar dependiendo de la arquitectura)::"

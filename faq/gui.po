@@ -1,47 +1,43 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# mollinaca, 2021
-# Shin Saito, 2021
-# 菊池 健志, 2023
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-17 14:14+0000\n"
-"PO-Revision-Date: 2021-06-28 00:52+0000\n"
-"Last-Translator: 菊池 健志, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-11-09 22:34-0600\n"
+"Last-Translator: Erick G. Islas Osuna <erickisos653@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../faq/gui.rst:5
+#: ../Doc/faq/gui.rst:5
 msgid "Graphic User Interface FAQ"
-msgstr "グラフィックユーザインターフェース FAQ"
+msgstr "Preguntas frecuentes sobre la Interfaz Gráfica de Usuario (*GUI*)"
 
-#: ../../faq/gui.rst:8
+#: ../Doc/faq/gui.rst:8
 msgid "Contents"
-msgstr "内容"
+msgstr "Contenidos"
 
-#: ../../faq/gui.rst:15
+#: ../Doc/faq/gui.rst:15
 msgid "General GUI Questions"
-msgstr "一般的な GUI の質問"
+msgstr "Preguntas generales de la GUI"
 
-#: ../../faq/gui.rst:18
+#: ../Doc/faq/gui.rst:18
 msgid "What GUI toolkits exist for Python?"
-msgstr "Python の GUI ツールキットには何がありますか？"
+msgstr "¿Qué conjuntos de herramientas de GUI existen para Python?"
 
-#: ../../faq/gui.rst:20
+#: ../Doc/faq/gui.rst:20
 msgid ""
 "Standard builds of Python include an object-oriented interface to the Tcl/Tk "
 "widget set, called :ref:`tkinter <Tkinter>`.  This is probably the easiest "
@@ -50,15 +46,16 @@ msgid ""
 "including pointers to the source, see the `Tcl/Tk home page <https://www.tcl."
 "tk>`_.  Tcl/Tk is fully portable to the macOS, Windows, and Unix platforms."
 msgstr ""
-"Python の標準的なビルドには、 :ref:`tkinter 1` という Tcl/Tk ウィジェットセッ"
-"トのオブジェクト指向インターフェースが含まれています。これは最も簡単にインス"
-"トールして使えるでしょう (なぜなら、これは Python のほとんどの `バイナリディ"
-"ストリビューション <https://www.python.org/downloads/>`_ に同梱されているから"
-"です)。ソースへのポインタなど、 Tk に関する詳しい情報は、 `Tcl/Tk ホームペー"
-"ジ <https://www.tcl.tk>`_ を参照してください。 Tcl/Tk は、 macOS 、"
-"Windows 、 Unix プラットフォームに完全にポータブルです。"
+"Los empaquetados estándar de Python incluyen una interfaz orientada a "
+"objetos para el conjunto de widgets de Tcl/Tk, llamada :ref:`tkinter "
+"<Tkinter>`. Esta es probablemente la más fácil de instalar (ya que viene "
+"incluida con la mayoría de `distribuciones binarias <https://www.python.org/"
+"downloads/>`_ de Python) y usar. Para obtener más información sobre Tk, "
+"incluyendo referencias a la fuente, ver la `Página de inicio Tcl/Tk <https://"
+"www.tcl.tk>`_. Tcl/Tk es totalmente portable a macOS, Windows y plataformas "
+"Unix."
 
-#: ../../faq/gui.rst:28
+#: ../Doc/faq/gui.rst:28
 msgid ""
 "Depending on what platform(s) you are aiming at, there are also several "
 "alternatives. A `list of cross-platform <https://wiki.python.org/moin/"
@@ -66,66 +63,71 @@ msgid ""
 "wiki.python.org/moin/GuiProgramming#Platform-specific_Frameworks>`_ GUI "
 "frameworks can be found on the python wiki."
 msgstr ""
-"対象とするプラットフォームによっては他の選択肢もあります。`プラットフォーム互"
-"換 <https://wiki.python.org/moin/GuiProgramming#Cross-Platform_Frameworks>`_ "
-"および `プラットフォーム固有 <https://wiki.python.org/moin/"
-"GuiProgramming#Platform-specific_Frameworks>`_ の GUI フレームワークのリスト"
-"を python wiki で参照できます。"
+"Dependiendo de a que plataforma(s) estés apuntando, hay también múltiples "
+"alternativas. Una lista de conjuntos de herramientas `multiplataforma "
+"<https://wiki.python.org/moin/GuiProgramming#Cross-Platform_Frameworks>`_ y "
+"`de plataforma específica <https://wiki.python.org/moin/"
+"GuiProgramming#Platform-specific_Frameworks>`_ puede ser encontrada en la "
+"wiki de Python."
 
-#: ../../faq/gui.rst:36
+#: ../Doc/faq/gui.rst:36
 msgid "Tkinter questions"
-msgstr "Tkinter の質問"
+msgstr "Preguntas de Tkinter"
 
-#: ../../faq/gui.rst:39
+#: ../Doc/faq/gui.rst:39
 msgid "How do I freeze Tkinter applications?"
-msgstr "Tkinter アプリケーションを凍結するにはどうしますか？"
+msgstr "¿Cómo congelo las aplicaciones de Tkinter?"
 
-#: ../../faq/gui.rst:41
+#: ../Doc/faq/gui.rst:41
 msgid ""
 "Freeze is a tool to create stand-alone applications.  When freezing Tkinter "
 "applications, the applications will not be truly stand-alone, as the "
 "application will still need the Tcl and Tk libraries."
 msgstr ""
-"Freeze はスタンドアロンアプリケーションを生成するツールです。Tkinter アプリ"
-"ケーションを凍結するとき、それは Tcl と Tk ライブラリを必要とするので、真のス"
-"タンドアロンにはなりません。"
+"Freeze es una herramienta para crear aplicaciones independientes. Al "
+"congelar aplicaciones Tkinter, las aplicaciones no serán realmente "
+"independientes, ya que la aplicación seguirá necesitando las bibliotecas Tcl "
+"y Tk."
 
-#: ../../faq/gui.rst:45
+#: ../Doc/faq/gui.rst:45
 msgid ""
 "One solution is to ship the application with the Tcl and Tk libraries, and "
 "point to them at run-time using the :envvar:`TCL_LIBRARY` and :envvar:"
 "`TK_LIBRARY` environment variables."
 msgstr ""
-"一つの解決策は、アプリケーションに Tcl と Tk ライブラリを同梱し、環境変数 :"
-"envvar:`TCL_LIBRARY` と :envvar:`TK_LIBRARY` でランタイムに指定することです。"
+"Una solución es enviar la aplicación con las bibliotecas Tcl y Tk, y "
+"apuntarlas en tiempo de ejecución utilizando :envvar:`TCL_LIBRARY` y las "
+"variables de entorno :envvar:`TK_LIBRARY`."
 
-#: ../../faq/gui.rst:49
+#: ../Doc/faq/gui.rst:49
+#, fuzzy
 msgid ""
 "To get truly stand-alone applications, the Tcl scripts that form the library "
 "have to be integrated into the application as well. One tool supporting that "
 "is SAM (stand-alone modules), which is part of the Tix distribution (https://"
 "tix.sourceforge.net/)."
 msgstr ""
-"真にスタンドアロンなアプリケーションにするためには、ライブラリを成す Tcl スク"
-"リプトもアプリケーションに統合されていなければなりません。それをサポートする"
-"ツールの一つは SAM (stand-alone modules) で、Tix ディストリビューション "
-"(https://tix.sourceforge.net/) の一部です。"
+"Para obtener aplicaciones verdaderamente independientes, los *scripts* Tcl "
+"que forman la biblioteca también deben integrarse en la aplicación. Una "
+"herramienta compatible es SAM (módulos independientes), que forma parte de "
+"la distribución Tix (http://tix.sourceforge.net/)."
 
-#: ../../faq/gui.rst:54
+#: ../Doc/faq/gui.rst:54
 msgid ""
 "Build Tix with SAM enabled, perform the appropriate call to :c:func:"
 "`Tclsam_init`, etc. inside Python's :file:`Modules/tkappinit.c`, and link "
 "with libtclsam and libtksam (you might include the Tix libraries as well)."
 msgstr ""
-"SAM を有効にするように Tix をビルドして、Python の :file:`Modules/tkappinit."
-"c` 内部の :c:func:`Tclsam_init` 等への適切なコールを実行し、libtclsam と "
-"libtksam にリンクしてください (Tix ライブラリを含んでも良いです)。"
+"Construya Tix con SAM habilitado, realice la llamada apropiada a :c:func:"
+"`Tclsam_init`, etc. dentro de Python :file:`Modules/tkappinit.c`, y enlace "
+"con libtclsam libtclsam y libtksam (también puede incluir las bibliotecas "
+"Tix)."
 
-#: ../../faq/gui.rst:61
+#: ../Doc/faq/gui.rst:61
 msgid "Can I have Tk events handled while waiting for I/O?"
-msgstr "I/O を待つ間に扱われる Tk イベントを作れますか？"
+msgstr "¿Puedo tener eventos Tk manejados mientras espero por *I/O*?"
 
-#: ../../faq/gui.rst:63
+#: ../Doc/faq/gui.rst:63
 msgid ""
 "On platforms other than Windows, yes, and you don't even need threads!  But "
 "you'll have to restructure your I/O code a bit.  Tk has the equivalent of "
@@ -133,34 +135,36 @@ msgid ""
 "function which will be called from the Tk mainloop when I/O is possible on a "
 "file descriptor.  See :ref:`tkinter-file-handlers`."
 msgstr ""
-"Windows 以外のプラットフォームについては、はい、スレッドさえ必要ありませ"
-"ん！  ただし、I/O コードを少し再構成しなければなりません。Tk には Xt の :c:"
-"func:`XtAddInput()` コールと同等なものがあるので、ファイルディスクリプタ上で "
-"I/O が可能なときに Tk メインループから呼ばれるコールバック関数を登録できま"
-"す。 :ref:`tkinter-file-handlers` を参照してください。"
+"En plataformas que no sean Windows, sí, ¡y ni siquiera necesita hilos! Pero "
+"tendrá que reestructurar un poco su código de I/O. Tk tiene el equivalente "
+"de la llamada Xt :c:func:`XtAddInput()`, que le permite registrar una "
+"función de *callback* que se llamará desde el bucle principal de Tk cuando "
+"sea posible I/O en un descriptor de archivo. Ver :ref:`tkinter-file-"
+"handlers`."
 
-#: ../../faq/gui.rst:71
+#: ../Doc/faq/gui.rst:71
 msgid "I can't get key bindings to work in Tkinter: why?"
-msgstr "Tkinter で働くキーバインディングが得られません。なぜですか？"
+msgstr ""
+"No puedo hacer que los atajos de teclado funcionen en Tkinter: ¿por qué?"
 
-#: ../../faq/gui.rst:73
+#: ../Doc/faq/gui.rst:73
 msgid ""
 "An often-heard complaint is that event handlers bound to events with the :"
 "meth:`bind` method don't get handled even when the appropriate key is "
 "pressed."
 msgstr ""
-":meth:`bind` メソッドでイベントに結び付けられたイベントハンドラが、適切なキー"
-"が押されたときにさえハンドルされないという苦情がよく聞かれます。"
+"Una queja que se escucha con frecuencia es que los controladores de eventos "
+"vinculados a eventos con el método :meth:`bind` no se manejan incluso cuando "
+"se presiona la tecla adecuada."
 
-#: ../../faq/gui.rst:76
+#: ../Doc/faq/gui.rst:76
 msgid ""
 "The most common cause is that the widget to which the binding applies "
 "doesn't have \"keyboard focus\".  Check out the Tk documentation for the "
 "focus command. Usually a widget is given the keyboard focus by clicking in "
 "it (but not for labels; see the takefocus option)."
 msgstr ""
-"最も一般的な原因は、バインディングが適用されるウィジェットが \"キーボード"
-"フォーカス\" を持たないことです。Tk ドキュメントでフォーカスコマンドを確認し"
-"てください。通常はウィジェットの中をクリックすることでキーボードフォーカスを"
-"与えられます (ただしラベルには与えられません。takefocus オプションを参照して"
-"ください)。"
+"La causa más común es que el widget al que se aplica el atajo no tiene "
+"enfoque de teclado. Consulte la documentación de Tk para el comando de "
+"*focus*. Por lo general, un *widget* recibe el foco del teclado haciendo "
+"clic en él (pero no para las etiquetas; consulte la opción *takefocus*)."

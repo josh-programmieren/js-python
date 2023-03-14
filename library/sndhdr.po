@@ -1,42 +1,43 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2022
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:13+0000\n"
-"Last-Translator: tomo, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2020-11-14 11:58-0300\n"
+"Last-Translator: \n"
+"Language-Team: python-doc-es\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/sndhdr.rst:2
+#: ../Doc/library/sndhdr.rst:2
 msgid ":mod:`sndhdr` --- Determine type of sound file"
-msgstr ":mod:`sndhdr` --- サウンドファイルの識別"
+msgstr ":mod:`sndhdr` --- Determinar el tipo de archivo de sonido"
 
-#: ../../library/sndhdr.rst:11
+#: ../Doc/library/sndhdr.rst:11
 msgid "**Source code:** :source:`Lib/sndhdr.py`"
-msgstr "**ソースコード:** :source:`Lib/sndhdr.py`"
+msgstr "**Código fuente:** :source:`Lib/sndhdr.py`"
 
-#: ../../library/sndhdr.rst:20
+#: ../Doc/library/sndhdr.rst:20
 msgid ""
 "The :mod:`sndhdr` module is deprecated (see :pep:`PEP 594 <594#sndhdr>` for "
 "details and alternatives)."
 msgstr ""
+"El módulo :mod:`sndhdr` está en desuso (consulte :pep:`PEP 594 <594#sndhdr>` "
+"para obtener detalles y alternativas)."
 
-#: ../../library/sndhdr.rst:23
+#: ../Doc/library/sndhdr.rst:23
 msgid ""
 "The :mod:`sndhdr` provides utility functions which attempt to determine the "
 "type of sound data which is in a file.  When these functions are able to "
@@ -53,165 +54,169 @@ msgid ""
 "the tuple, *bits_per_sample*, will either be the sample size in bits or "
 "``'A'`` for A-LAW or ``'U'`` for u-LAW."
 msgstr ""
-":mod:`sndhdr` モジュールには、ファイルに保存されたサウンドデータの形式を識別"
-"するのに便利な関数が定義されています。どんな形式のサウンドデータがファイルに"
-"保存されているのか識別可能な場合、これらの関数は5つの属性、つまり"
-"(``filetype``, ``framerate``, ``nchannels``, ``nframes``, ``sampwidth``)で構"
-"成される :func:`~collections.namedtuple` を返します。 *type* はデータの形式を"
-"示す文字列で、 ``'aifc'``, ``'aiff'``, ``'au'``, ``'hcom'``, ``'sndr'``, "
-"``'sndt'``, ``'voc'``, ``'wav'``, ``'8svx'``, ``'sb'``, ``'ub'``, ``'ul'`` の"
-"うちの一つです。 *sampling_rate* は実際のサンプリングレート値で、未知の場合や"
-"読み取ることが出来なかった場合は ``0`` です。同様に、 *channels* はチャンネル"
-"数で、識別できない場合や読み取ることが出来なかった場合は ``0`` です。 "
-"*frames* はフレーム数で、識別できない場合は ``-1`` です。タプルの最後の要素 "
-"*bits_per_sample* はサンプルサイズを示すビット数ですが、A-LAWなら ``'A'``, u-"
-"LAWなら ``'U'`` です。"
+"El :mod:`sndhdr` proporciona funciones de utilidad que intentan determinar "
+"el tipo de datos de sonido que hay en un archivo. Cuando estas funciones son "
+"capaces de determinar qué tipo de datos sonoros se almacenan en un archivo, "
+"retornan un :func:`~collections.namedtuple`, que contiene cinco atributos: "
+"(``filetype``, ``framerate``, ``nchannels``, ``nframes``, ``sampwidth``). El "
+"valor de *type* indica el tipo de datos y será una de las cadenas siguientes "
+"cadenas: ``'aifc'``, ``'aiff'``, ``'au'``, ``'hcom'``, ``'sndr'``, "
+"``'sndt'``, ``'voc'``, ``'wav'``, ``'8svx'``, ``'sb'``, ``'ub'``, o "
+"``'ul'``. El *sampling_rate* será el valor actual o ``0`` si es desconocido "
+"o difícil de decodificar. De forma similar, *channels* será el número de "
+"canales o ``0`` si no se puede determinar o si el valor es difícil de "
+"decodificar. El valor de *frames* será el número de fotogramas o ``-1``. El "
+"último elemento de la tupla, *bits_per_sample*, será el tamaño de la muestra "
+"en bits, ``'A'`` para A-LAW o ``'U'`` para u-LAW."
 
-#: ../../library/sndhdr.rst:40
+#: ../Doc/library/sndhdr.rst:40
 msgid ""
 "Determines the type of sound data stored in the file *filename* using :func:"
 "`whathdr`.  If it succeeds, returns a namedtuple as described above, "
 "otherwise ``None`` is returned."
 msgstr ""
-":func:`whathdr` を使って、ファイル *filename* に保存されたサウンドデータの形"
-"式を識別します。識別可能なら上記のnamedtupleを返し、識別できない場合は "
-"``None`` を返します。"
+"Determina el tipo de datos de sonido almacenados en el archivo *filename* "
+"usando :func:`whathdr`. Si se tiene éxito, retorna una namedtuple como se "
+"describe arriba, de lo contrario retorna ``None``."
 
-#: ../../library/sndhdr.rst:44 ../../library/sndhdr.rst:54
+#: ../Doc/library/sndhdr.rst:44 ../Doc/library/sndhdr.rst:54
 msgid "Result changed from a tuple to a namedtuple."
-msgstr "結果が tuple から namedtuple に変更されました。"
+msgstr "El resultado cambió de una tupla a una *namedtuple*."
 
-#: ../../library/sndhdr.rst:50
+#: ../Doc/library/sndhdr.rst:50
 msgid ""
 "Determines the type of sound data stored in a file based on the file  "
 "header. The name of the file is given by *filename*.  This function returns "
 "a namedtuple as described above on success, or ``None``."
 msgstr ""
-"ファイルのヘッダ情報をもとに、保存されたサウンドデータの形式を識別します。"
-"ファイル名は *filename* で渡されます。識別可能なら上記の namedtuple を返し、"
-"識別できない場合は ``None`` を返します。"
+"Determina el tipo de dato de sonido almacenado en un archivo basado en el "
+"encabezado del archivo. El nombre del archivo viene dado por *filename*. "
+"Esta función retorna una *namedtuple* como se ha descrito anteriormente en "
+"caso de éxito o ``None``."
 
-#: ../../library/sndhdr.rst:57
+#: ../Doc/library/sndhdr.rst:57
 msgid ""
 "The following sound header types are recognized, as listed below with the "
 "return value from :func:`whathdr`: and :func:`what`:"
 msgstr ""
+"Se reconocen los siguientes tipos de encabezados de sonido, como se indica a "
+"continuación con el valor de retorno de :func:`whathdr`: y :func:`what`:"
 
-#: ../../library/sndhdr.rst:61
+#: ../Doc/library/sndhdr.rst:61
 msgid "Value"
-msgstr "値"
+msgstr "Valor"
 
-#: ../../library/sndhdr.rst:61
+#: ../Doc/library/sndhdr.rst:61
 msgid "Sound header format"
-msgstr ""
+msgstr "Formato de encabezado de sonido"
 
-#: ../../library/sndhdr.rst:63
+#: ../Doc/library/sndhdr.rst:63
 msgid "``'aifc'``"
-msgstr ""
+msgstr "``'aifc'``"
 
-#: ../../library/sndhdr.rst:63
+#: ../Doc/library/sndhdr.rst:63
 msgid "Compressed Audio Interchange Files"
-msgstr ""
+msgstr "Archivos de intercambio de audio comprimido"
 
-#: ../../library/sndhdr.rst:65
+#: ../Doc/library/sndhdr.rst:65
 msgid "``'aiff'``"
-msgstr ""
+msgstr "``'aiff'``"
 
-#: ../../library/sndhdr.rst:65
+#: ../Doc/library/sndhdr.rst:65
 msgid "Audio Interchange Files"
-msgstr ""
+msgstr "Archivos de intercambio de audio"
 
-#: ../../library/sndhdr.rst:67
+#: ../Doc/library/sndhdr.rst:67
 msgid "``'au'``"
-msgstr ""
+msgstr "``'au'``"
 
-#: ../../library/sndhdr.rst:67
+#: ../Doc/library/sndhdr.rst:67
 msgid "Au Files"
-msgstr ""
+msgstr "Archivos Au"
 
-#: ../../library/sndhdr.rst:69
+#: ../Doc/library/sndhdr.rst:69
 msgid "``'hcom'``"
-msgstr ""
+msgstr "``'hcom'``"
 
-#: ../../library/sndhdr.rst:69
+#: ../Doc/library/sndhdr.rst:69
 msgid "HCOM Files"
-msgstr ""
+msgstr "HCOM de archivos"
 
-#: ../../library/sndhdr.rst:71
+#: ../Doc/library/sndhdr.rst:71
 msgid "``'sndt'``"
-msgstr ""
+msgstr "``'sndt'``"
 
-#: ../../library/sndhdr.rst:71
+#: ../Doc/library/sndhdr.rst:71
 msgid "Sndtool Sound Files"
-msgstr ""
+msgstr "Archivos de sonido Sndtool"
 
-#: ../../library/sndhdr.rst:73
+#: ../Doc/library/sndhdr.rst:73
 msgid "``'voc'``"
-msgstr ""
+msgstr "``'voc'``"
 
-#: ../../library/sndhdr.rst:73
+#: ../Doc/library/sndhdr.rst:73
 msgid "Creative Labs Audio Files"
-msgstr ""
+msgstr "Archivos de audio de Creative Labs"
 
-#: ../../library/sndhdr.rst:75
+#: ../Doc/library/sndhdr.rst:75
 msgid "``'wav'``"
-msgstr ""
+msgstr "``'wav'``"
 
-#: ../../library/sndhdr.rst:75
+#: ../Doc/library/sndhdr.rst:75
 msgid "Waveform Audio File Format Files"
-msgstr ""
+msgstr "Archivos de formato de archivo de audio de forma de onda"
 
-#: ../../library/sndhdr.rst:77
+#: ../Doc/library/sndhdr.rst:77
 msgid "``'8svx'``"
-msgstr ""
+msgstr "``'8svx'``"
 
-#: ../../library/sndhdr.rst:77
+#: ../Doc/library/sndhdr.rst:77
 msgid "8-Bit Sampled Voice Files"
-msgstr ""
+msgstr "Archivos de voz muestreados de 8 bits"
 
-#: ../../library/sndhdr.rst:79
+#: ../Doc/library/sndhdr.rst:79
 msgid "``'sb'``"
-msgstr ""
+msgstr "``'sb'``"
 
-#: ../../library/sndhdr.rst:79
+#: ../Doc/library/sndhdr.rst:79
 msgid "Signed Byte Audio Data Files"
-msgstr ""
+msgstr "Archivos de datos de audio de bytes firmados"
 
-#: ../../library/sndhdr.rst:81
+#: ../Doc/library/sndhdr.rst:81
 msgid "``'ub'``"
-msgstr ""
+msgstr "``'ub'``"
 
-#: ../../library/sndhdr.rst:81
+#: ../Doc/library/sndhdr.rst:81
 msgid "UB Files"
-msgstr ""
+msgstr "Archivos UB"
 
-#: ../../library/sndhdr.rst:83
+#: ../Doc/library/sndhdr.rst:83
 msgid "``'ul'``"
-msgstr ""
+msgstr "``'ul'``"
 
-#: ../../library/sndhdr.rst:83
+#: ../Doc/library/sndhdr.rst:83
 msgid "uLAW Audio Files"
-msgstr ""
+msgstr "Archivos de audio uLAW"
 
-#: ../../library/sndhdr.rst:88
+#: ../Doc/library/sndhdr.rst:88
 msgid ""
 "A list of functions performing the individual tests.  Each function takes "
 "two arguments: the byte-stream and an open file-like object. When :func:"
 "`what` is called with a byte-stream, the file-like object will be ``None``."
 msgstr ""
-"個別のテストを行う関数のリスト。それぞれの関数は二つの引数をとります: バイト"
-"ストリームとオープンされたファイルのようにふるまうオブジェクト。 :func:"
-"`what` がバイトストリームとともに呼び出されたときは、ファイルのようにふるまう"
-"オブジェクトは ``None`` でしょう。"
+"Una lista de funciones que realizan las pruebas individuales. Cada función "
+"toma dos argumentos: el flujo de bytes y un objeto similar a un archivo "
+"abierto. Cuando se llama a :func:`what` con un flujo de bytes, el objeto "
+"similar a un archivo será ``None``."
 
-#: ../../library/sndhdr.rst:92
+#: ../Doc/library/sndhdr.rst:92
 msgid ""
 "The test function should return a string describing the image type if the "
 "test succeeded, or ``None`` if it failed."
 msgstr ""
-"テストが成功した場合は、テスト関数は画像形式を表す文字列を返すべきです。ある"
-"いは、失敗した場合は ``None`` を返すべきです。"
+"La función de prueba debe devolver una cadena que describa el tipo de imagen "
+"si la prueba tuvo éxito, o ``None`` si falló."
 
-#: ../../library/sndhdr.rst:95
+#: ../Doc/library/sndhdr.rst:95
 msgid "Example:"
-msgstr "例:"
+msgstr "Ejemplo:"

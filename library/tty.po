@@ -1,79 +1,74 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org / https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:16+0000\n"
-"Last-Translator: Osamu NAKAMURA, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2019-05-06 11:59-0400\n"
+"PO-Revision-Date: 2021-02-02 10:07-0300\n"
+"Language-Team: python-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../library/tty.rst:2
+#: ../Doc/library/tty.rst:2
 msgid ":mod:`tty` --- Terminal control functions"
-msgstr ":mod:`tty` --- 端末制御のための関数群"
+msgstr ":mod:`tty` --- Funciones de control de terminal"
 
-#: ../../library/tty.rst:11
+#: ../Doc/library/tty.rst:11
 msgid "**Source code:** :source:`Lib/tty.py`"
-msgstr "**ソースコード:** :source:`Lib/tty.py`"
+msgstr "**Código fuente:** :source:`Lib/tty.py`"
 
-#: ../../library/tty.rst:15
+#: ../Doc/library/tty.rst:15
 msgid ""
 "The :mod:`tty` module defines functions for putting the tty into cbreak and "
 "raw modes."
 msgstr ""
-":mod:`tty` モジュールは端末を cbreak および raw モードにするための関数を定義"
-"しています。"
+"El módulo :mod:`tty` define funciones para poner la tty en los modos "
+"*cbreak* y *raw*."
 
-#: ../../library/tty.rst:18
+#: ../Doc/library/tty.rst:18
 msgid ""
 "Because it requires the :mod:`termios` module, it will work only on Unix."
 msgstr ""
-"このモジュールは :mod:`termios` モジュールを必要とするため、 Unix でしか動作"
-"しません。"
+"Dado que requiere el módulo :mod:`termios`, solamente funciona en Unix."
 
-#: ../../library/tty.rst:20
+#: ../Doc/library/tty.rst:20
 msgid "The :mod:`tty` module defines the following functions:"
-msgstr ":mod:`tty` モジュールでは、以下の関数を定義しています:"
+msgstr "El módulo :mod:`tty` define las siguientes funciones:"
 
-#: ../../library/tty.rst:25
+#: ../Doc/library/tty.rst:25
 msgid ""
 "Change the mode of the file descriptor *fd* to raw. If *when* is omitted, it "
 "defaults to :const:`termios.TCSAFLUSH`, and is passed to :func:`termios."
 "tcsetattr`."
 msgstr ""
-"ファイル記述子 *fd* のモードを raw モードに変えます。 *when* を省略すると標準"
-"の値は :const:`termios.TCSAFLUSH` になり、 :func:`termios.tcsetattr` に渡され"
-"ます。"
+"Cambia el modo del descriptor de archivo *fd* a *raw*. Si se omite *when*, "
+"el valor por defecto es :const:`termios.TCSAFLUSH`, que se pasa a :func:"
+"`termios.tcsetattr`."
 
-#: ../../library/tty.rst:32
+#: ../Doc/library/tty.rst:32
 msgid ""
 "Change the mode of file descriptor *fd* to cbreak. If *when* is omitted, it "
 "defaults to :const:`termios.TCSAFLUSH`, and is passed to :func:`termios."
 "tcsetattr`."
 msgstr ""
-"ファイル記述子 *fd* のモードを cbreakモードに変えます。 *when* を省略すると標"
-"準の値は :const:`termios.TCSAFLUSH` になり、 :func:`termios.tcsetattr` に渡さ"
-"れます。"
+"Cambia el modo del descriptor de archivo *fd* a *cbreak*. Si se omite "
+"*when*, el valor por defecto es :const:`termios.TCSAFLUSH`, que se pasa a :"
+"func:`termios.tcsetattr`."
 
-#: ../../library/tty.rst:39
+#: ../Doc/library/tty.rst:39
 msgid "Module :mod:`termios`"
-msgstr "モジュール :mod:`termios`"
+msgstr "Módulo :mod:`termios`"
 
-#: ../../library/tty.rst:40
+#: ../Doc/library/tty.rst:40
 msgid "Low-level terminal control interface."
-msgstr "低水準端末制御インターフェース。"
+msgstr "Interfaz de control de la terminal de bajo nivel."

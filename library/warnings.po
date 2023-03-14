@@ -1,39 +1,35 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-# rise sjack <s.tk345@gmail.com>, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:17+0000\n"
-"Last-Translator: rise sjack <s.tk345@gmail.com>, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2020-06-08 11:49-0500\n"
+"Last-Translator: \n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/warnings.rst:2
+#: ../Doc/library/warnings.rst:2
 msgid ":mod:`warnings` --- Warning control"
-msgstr ":mod:`warnings` --- 警告の制御"
+msgstr ":mod:`warnings` --- Control de advertencias"
 
-#: ../../library/warnings.rst:7
+#: ../Doc/library/warnings.rst:7
 msgid "**Source code:** :source:`Lib/warnings.py`"
-msgstr "**ソースコード:** :source:`Lib/warnings.py`"
+msgstr "**Código fuente:** :source:`Lib/warnings.py`"
 
-#: ../../library/warnings.rst:13
+#: ../Doc/library/warnings.rst:13
 msgid ""
 "Warning messages are typically issued in situations where it is useful to "
 "alert the user of some condition in a program, where that condition "
@@ -41,22 +37,23 @@ msgid ""
 "program.  For example, one might want to issue a warning when a program uses "
 "an obsolete module."
 msgstr ""
-"警告メッセージは一般に、ユーザに警告しておいた方がよいような状況下にプログラ"
-"ムが置かれているが、その状況は (通常は) 例外を送出したりそのプログラムを終了"
-"させるほどの正当な理由がないといった状況で発されます。例えば、プログラムが古"
-"いモジュールを使っている場合には警告を発したくなるかもしれません。"
+"Los mensajes de advertencia suelen emitirse en situaciones en las que es "
+"útil alertar al usuario de alguna condición en un programa, cuando esa "
+"condición (normalmente) no justifica que se haga una excepción y se termine "
+"el programa.  Por ejemplo, se puede emitir una advertencia cuando un "
+"programa utiliza un módulo obsoleto."
 
-#: ../../library/warnings.rst:18
+#: ../Doc/library/warnings.rst:18
 msgid ""
 "Python programmers issue warnings by calling the :func:`warn` function "
 "defined in this module.  (C programmers use :c:func:`PyErr_WarnEx`; see :ref:"
 "`exceptionhandling` for details)."
 msgstr ""
-"Python プログラマは、このモジュールの :func:`warn` 関数を使って警告を発するこ"
-"とができます。(C 言語のプログラマは :c:func:`PyErr_WarnEx` を使います; 詳細"
-"は :ref:`exceptionhandling` を参照してください)。"
+"Los programadores de Python emiten advertencias llamando a la función :func:"
+"`warn` definida en este módulo.  (Los programadores de C usan :c:func:"
+"`PyErr_WarnEx`; ver :ref:`exceptionhandling` para más detalles)"
 
-#: ../../library/warnings.rst:22
+#: ../Doc/library/warnings.rst:22
 msgid ""
 "Warning messages are normally written to :data:`sys.stderr`, but their "
 "disposition can be changed flexibly, from ignoring all warnings to turning "
@@ -65,25 +62,27 @@ msgid ""
 "message, and the source location where it is issued.  Repetitions of a "
 "particular warning for the same source location are typically suppressed."
 msgstr ""
-"警告メッセージは通常 :data:`sys.stderr` に出力されますが、すべての警告を無視"
-"したり、警告を例外にしたりと、その処理を柔軟に変更することができます。 警告の"
-"処理は :ref:`warning category` 、警告メッセージのテキスト、警告が発行された"
-"ソースの位置に基づいて変化します。 同じソースの位置で特定の警告が繰り返された"
-"場合、通常は抑制されます。"
+"Los mensajes de advertencia se escriben normalmente en :data:`sys.stderr`, "
+"pero su disposición puede cambiarse de manera flexible, desde ignorar todas "
+"las advertencias hasta convertirlas en excepciones.  La disposición de las "
+"advertencias puede variar en función de la :ref:`warning category <warning-"
+"categories>`, el texto del mensaje de advertencia y la ubicación de la "
+"fuente donde se emite.  Las repeticiones de una advertencia particular para "
+"la misma ubicación de la fuente son típicamente suprimidas."
 
-#: ../../library/warnings.rst:29
+#: ../Doc/library/warnings.rst:29
 msgid ""
 "There are two stages in warning control: first, each time a warning is "
 "issued, a determination is made whether a message should be issued or not; "
 "next, if a message is to be issued, it is formatted and printed using a user-"
 "settable hook."
 msgstr ""
-"警告制御には 2 つの段階 (stage) があります: 第一に、警告が発されるたびに、"
-"メッセージを出力すべきかどうかの決定が行われます; 次に、メッセージを出力する"
-"なら、メッセージはユーザによって設定が可能なフックを使って書式化され印字され"
-"ます。"
+"El control de las advertencias consta de dos etapas: en primer lugar, cada "
+"vez que se emite una advertencia, se determina si se debe emitir un mensaje "
+"o no; en segundo lugar, si se debe emitir un mensaje, se le da formato y se "
+"imprime utilizando un gancho establecido por el usuario."
 
-#: ../../library/warnings.rst:33
+#: ../Doc/library/warnings.rst:33
 msgid ""
 "The determination whether to issue a warning message is controlled by the :"
 "ref:`warning filter <warning-filter>`, which is a sequence of matching rules "
@@ -91,209 +90,228 @@ msgid ""
 "`filterwarnings` and reset to its default state by calling :func:"
 "`resetwarnings`."
 msgstr ""
-"警告メッセージを出力するかどうかの決定は、 :ref:`警告フィルタ <warning-"
-"filter>`によって制御されます。警告フィルタは一致規則 (matching rule)と動作か"
-"らなるシーケンスです。 :func:`filterwarnings` を呼び出して一致規則をフィルタ"
-"に追加することができ、 :func:`resetwarnings` を呼び出してフィルタを標準設定の"
-"状態にリセットすることができます。"
+"La determinación de si se debe emitir un mensaje de advertencia está "
+"controlada por el :ref:`warning filter <warning-filter>`, que es una "
+"secuencia de reglas y acciones que coinciden. Se pueden añadir reglas al "
+"filtro llamando a :func:`filterwarnings` y restablecer su estado por defecto "
+"llamando a :func:`resetwarnings`."
 
-#: ../../library/warnings.rst:38
+#: ../Doc/library/warnings.rst:38
 msgid ""
 "The printing of warning messages is done by calling :func:`showwarning`, "
 "which may be overridden; the default implementation of this function formats "
 "the message by calling :func:`formatwarning`, which is also available for "
 "use by custom implementations."
 msgstr ""
-"警告メッセージの印字は :func:`showwarning` を呼び出して行うことができ、この関"
-"数は上書きすることができます; この関数の標準の実装では、 :func:"
-"`formatwarning` を呼び出して警告メッセージを書式化しますが、この関数について"
-"も自作の実装を使うことができます。"
+"La impresión de los mensajes de advertencia se realiza llamando a :func:"
+"`showwarning`, que puede ser anulado; la implementación por defecto de esta "
+"función da formato al mensaje llamando a :func:`formatwarning`, que también "
+"está disponible para su uso en implementaciones personalizadas."
 
-#: ../../library/warnings.rst:44
+#: ../Doc/library/warnings.rst:44
 msgid ""
 ":func:`logging.captureWarnings` allows you to handle all warnings with the "
 "standard logging infrastructure."
 msgstr ""
-":func:`logging.captureWarnings` を使うことで、標準ロギング基盤ですべての警告"
-"を扱うことができます。"
+":func:`logging.captureWarnings` permite manejar todas las advertencias con "
+"la infraestructura de registro estándar."
 
-#: ../../library/warnings.rst:51
+#: ../Doc/library/warnings.rst:51
 msgid "Warning Categories"
-msgstr "警告カテゴリ"
+msgstr "Categorías de advertencia"
 
-#: ../../library/warnings.rst:53
+#: ../Doc/library/warnings.rst:53
 msgid ""
 "There are a number of built-in exceptions that represent warning categories. "
 "This categorization is useful to be able to filter out groups of warnings."
 msgstr ""
-"警告カテゴリを表現する組み込み例外は数多くあります。このカテゴリ化は警告をグ"
-"ループごとフィルタする上で便利です。"
+"Hay una serie de excepciones incorporadas que representan categorías de "
+"advertencia. Esta categorización es útil para poder filtrar grupos de "
+"advertencias."
 
-#: ../../library/warnings.rst:56
+#: ../Doc/library/warnings.rst:56
 msgid ""
 "While these are technically :ref:`built-in exceptions <warning-categories-as-"
 "exceptions>`, they are documented here, because conceptually they belong to "
 "the warnings mechanism."
 msgstr ""
-"これらは厳密に言えば :ref:`組み込み例外 <warning-categories-as-exceptions>` "
-"ですが、概念的には警告メカニズムに属しているのでここで記述されています。"
+"Aunque técnicamente se trata de :ref:`built-in exceptions <warning-"
+"categories-as-exceptions>`, están documentadas aquí, porque  pertenecen al "
+"mecanismo de advertencias."
 
-#: ../../library/warnings.rst:60
+#: ../Doc/library/warnings.rst:60
 msgid ""
 "User code can define additional warning categories by subclassing one of the "
 "standard warning categories.  A warning category must always be a subclass "
 "of the :exc:`Warning` class."
 msgstr ""
-"標準の警告カテゴリをユーザの作成したコード上でサブクラス化することで、さらに"
-"別の警告カテゴリを定義することができます。警告カテゴリは常に :exc:`Warning` "
-"クラスのサブクラスでなければなりません。"
+"El código de usuario puede definir categorías de advertencia adicionales "
+"mediante la subclasificación de una de las categorías de advertencia "
+"estándar.  Una categoría de advertencia siempre debe ser una subclase de la "
+"clase :exc:`Warning` class."
 
-#: ../../library/warnings.rst:64
+#: ../Doc/library/warnings.rst:64
 msgid "The following warnings category classes are currently defined:"
-msgstr "現在以下の警告カテゴリクラスが定義されています:"
+msgstr ""
+"Actualmente están definidas las siguientes clases de categorías de "
+"advertencias:"
 
-#: ../../library/warnings.rst:69
+#: ../Doc/library/warnings.rst:69
 msgid "Class"
-msgstr "Class"
+msgstr "Clase"
 
-#: ../../library/warnings.rst:69
+#: ../Doc/library/warnings.rst:69
 msgid "Description"
-msgstr "説明"
+msgstr "Descripción"
 
-#: ../../library/warnings.rst:71
+#: ../Doc/library/warnings.rst:71
 msgid ":exc:`Warning`"
 msgstr ":exc:`Warning`"
 
-#: ../../library/warnings.rst:71
+#: ../Doc/library/warnings.rst:71
 msgid ""
 "This is the base class of all warning category classes.  It is a subclass "
 "of :exc:`Exception`."
 msgstr ""
-"すべての警告カテゴリクラスの基底クラスです。 :exc:`Exception` のサブクラスで"
-"す。"
+"Esta es la clase principal para todas las clases que pertenecen a la "
+"categoría de advertencia.  Es una subclase de :exc:`Exception`."
 
-#: ../../library/warnings.rst:75
+#: ../Doc/library/warnings.rst:75
 msgid ":exc:`UserWarning`"
 msgstr ":exc:`UserWarning`"
 
-#: ../../library/warnings.rst:75
+#: ../Doc/library/warnings.rst:75
 msgid "The default category for :func:`warn`."
-msgstr ":func:`warn` の標準のカテゴリです。"
+msgstr "La categoría por defecto para :func:`warn`."
 
-#: ../../library/warnings.rst:77
+#: ../Doc/library/warnings.rst:77
 msgid ":exc:`DeprecationWarning`"
 msgstr ":exc:`DeprecationWarning`"
 
-#: ../../library/warnings.rst:77
+#: ../Doc/library/warnings.rst:77
 msgid ""
 "Base category for warnings about deprecated features when those warnings are "
 "intended for other Python developers (ignored by default, unless triggered "
 "by code in ``__main__``)."
 msgstr ""
-"他の Python 開発者へ向けて警告を発するときの、非推奨の機能についての警告の基"
-"底カテゴリです(``__main__`` によって引き起こされない限り通常は無視されます)。"
+"Categoría principal para advertencias sobre características obsoletas cuando "
+"esas advertencias están destinadas a otros desarrolladores de Python "
+"(ignoradas por defecto, a menos que sean activadas por el código en "
+"``__main__``)."
 
-#: ../../library/warnings.rst:82
+#: ../Doc/library/warnings.rst:82
 msgid ":exc:`SyntaxWarning`"
 msgstr ":exc:`SyntaxWarning`"
 
-#: ../../library/warnings.rst:82
+#: ../Doc/library/warnings.rst:82
 msgid "Base category for warnings about dubious syntactic features."
-msgstr "その文法機能があいまいであることを示す警告カテゴリの基底クラスです。"
+msgstr ""
+"Categoría principal para las advertencias sobre características sintácticas "
+"dudosas."
 
-#: ../../library/warnings.rst:85
+#: ../Doc/library/warnings.rst:85
 msgid ":exc:`RuntimeWarning`"
 msgstr ":exc:`RuntimeWarning`"
 
-#: ../../library/warnings.rst:85
+#: ../Doc/library/warnings.rst:85
 msgid "Base category for warnings about dubious runtime features."
 msgstr ""
-"そのランタイム機能があいまいであることを示す警告カテゴリの基底クラスです。"
+"Categoría principal para las advertencias sobre características dudosas de "
+"tiempo de ejecución."
 
-#: ../../library/warnings.rst:88
+#: ../Doc/library/warnings.rst:88
 msgid ":exc:`FutureWarning`"
 msgstr ":exc:`FutureWarning`"
 
-#: ../../library/warnings.rst:88
+#: ../Doc/library/warnings.rst:88
 msgid ""
 "Base category for warnings about deprecated features when those warnings are "
 "intended for end users of applications that are written in Python."
 msgstr ""
-"Python で書かれたアプリケーションのエンドユーザーへ向けて警告を発するときの、"
-"非推奨の機能についての警告の基底カテゴリです。"
+"Categoría principal para las advertencias sobre características obsoletas "
+"cuando esas advertencias están destinadas a los usuarios finales de "
+"aplicaciones escritas en Python."
 
-#: ../../library/warnings.rst:93
+#: ../Doc/library/warnings.rst:93
 msgid ":exc:`PendingDeprecationWarning`"
 msgstr ":exc:`PendingDeprecationWarning`"
 
-#: ../../library/warnings.rst:93
+#: ../Doc/library/warnings.rst:93
 msgid ""
 "Base category for warnings about features that will be deprecated in the "
 "future (ignored by default)."
 msgstr ""
-"将来その機能が廃止されることを示す警告カテゴリの基底クラスです(デフォルトでは"
-"無視されます)。"
+"Categoría principal para las advertencias sobre las características que "
+"serán desaprobadas en el futuro (ignoradas por defecto)."
 
-#: ../../library/warnings.rst:97
+#: ../Doc/library/warnings.rst:97
 msgid ":exc:`ImportWarning`"
 msgstr ":exc:`ImportWarning`"
 
-#: ../../library/warnings.rst:97
+#: ../Doc/library/warnings.rst:97
 msgid ""
 "Base category for warnings triggered during the process of importing a "
 "module (ignored by default)."
 msgstr ""
-"モジュールのインポート処理中に引き起こされる警告カテゴリの基底クラスです(デ"
-"フォルトでは無視されます)。"
+"Categoría principal para las advertencias que se activan durante el proceso "
+"de importación de un módulo (se ignoran por defecto)."
 
-#: ../../library/warnings.rst:101
+#: ../Doc/library/warnings.rst:101
 msgid ":exc:`UnicodeWarning`"
 msgstr ":exc:`UnicodeWarning`"
 
-#: ../../library/warnings.rst:101
+#: ../Doc/library/warnings.rst:101
 msgid "Base category for warnings related to Unicode."
-msgstr "Unicode に関係した警告カテゴリの基底クラスです。"
+msgstr "Categoría principal para las advertencias relacionadas con Unicode."
 
-#: ../../library/warnings.rst:104
+#: ../Doc/library/warnings.rst:104
 msgid ":exc:`BytesWarning`"
 msgstr ":exc:`BytesWarning`"
 
-#: ../../library/warnings.rst:104
+#: ../Doc/library/warnings.rst:104
 msgid ""
 "Base category for warnings related to :class:`bytes` and :class:`bytearray`."
 msgstr ""
-":class:`bytes` や :class:`bytearray` に関連した警告カテゴリの基底クラスです。"
+"Categoría principal para las advertencias relacionadas con :class:`bytes` y :"
+"class:`bytearray`."
 
-#: ../../library/warnings.rst:107
+#: ../Doc/library/warnings.rst:107
 msgid ":exc:`ResourceWarning`"
 msgstr ":exc:`ResourceWarning`"
 
-#: ../../library/warnings.rst:107
+#: ../Doc/library/warnings.rst:107
+#, fuzzy
 msgid ""
 "Base category for warnings related to resource usage (ignored by default)."
 msgstr ""
+"Categoría base para las advertencias relacionadas con el uso de los recursos."
 
-#: ../../library/warnings.rst:111
+#: ../Doc/library/warnings.rst:111
 msgid ""
 "Previously :exc:`DeprecationWarning` and :exc:`FutureWarning` were "
 "distinguished based on whether a feature was being removed entirely or "
 "changing its behaviour. They are now distinguished based on their intended "
 "audience and the way they're handled by the default warnings filters."
 msgstr ""
+"Anteriormente :exc:`DeprecationWarning` y :exc:`FutureWarning` se "
+"distinguían en función de si una característica se eliminaba por completo o "
+"se cambiaba su comportamiento. Ahora se distinguen en función de su público "
+"objetivo y de la forma en que son manejados por los filtros de advertencia "
+"predeterminados."
 
-#: ../../library/warnings.rst:122
+#: ../Doc/library/warnings.rst:122
 msgid "The Warnings Filter"
-msgstr "警告フィルタ"
+msgstr "El filtro de advertencias"
 
-#: ../../library/warnings.rst:124
+#: ../Doc/library/warnings.rst:124
 msgid ""
 "The warnings filter controls whether warnings are ignored, displayed, or "
 "turned into errors (raising an exception)."
 msgstr ""
-"警告フィルタは、ある警告を無視すべきか、表示すべきか、あるいは (例外を送出す"
-"る) エラーにするべきかを制御します。"
+"El filtro de advertencias controla si las advertencias se ignoran, se "
+"muestran o se convierten en errores (planteando una excepción)."
 
-#: ../../library/warnings.rst:127
+#: ../Doc/library/warnings.rst:127
 msgid ""
 "Conceptually, the warnings filter maintains an ordered list of filter "
 "specifications; any specific warning is matched against each filter "
@@ -301,80 +319,85 @@ msgid ""
 "determines the disposition of the match.  Each entry is a tuple of the form "
 "(*action*, *message*, *category*, *module*, *lineno*), where:"
 msgstr ""
-"概念的には、警告フィルタは複数のフィルタ仕様からなる順番リストを維持していま"
-"す; 何らかの特定の警告が生じると、一致するものが見つかるまでリスト中の各フィ"
-"ルタとの照合が行われます; 一致したフィルタ仕様がその警告の処理方法を決定しま"
-"す。フィルタの各エントリは (*action*, *message*, *category*, *module*, "
-"*lineno*) からなるタプルです。ここで:"
+"Conceptualmente, el filtro de advertencias mantiene una lista ordenada de "
+"especificaciones de filtros; cualquier advertencia específica se compara con "
+"cada especificación de filtro de la lista por turno hasta que se encuentra "
+"una coincidencia; el filtro determina la disposición de la coincidencia.  "
+"Cada entrada es una tupla de la forma (*action*, *message*, *category*, "
+"*module*, *lineno*), donde:"
 
-#: ../../library/warnings.rst:133
+#: ../Doc/library/warnings.rst:133
 msgid "*action* is one of the following strings:"
-msgstr "*action* は以下の文字列のうちの一つです:"
+msgstr "*action* es una de las siguientes cadenas:"
 
-#: ../../library/warnings.rst:136
+#: ../Doc/library/warnings.rst:136
 msgid "Value"
-msgstr "値"
+msgstr "Valor"
 
-#: ../../library/warnings.rst:136
+#: ../Doc/library/warnings.rst:136
 msgid "Disposition"
-msgstr "処理方法"
+msgstr "Disposición"
 
-#: ../../library/warnings.rst:138
+#: ../Doc/library/warnings.rst:138
 msgid "``\"default\"``"
 msgstr "``\"default\"``"
 
-#: ../../library/warnings.rst:138
+#: ../Doc/library/warnings.rst:138
 msgid ""
 "print the first occurrence of matching warnings for each location (module + "
 "line number) where the warning is issued"
 msgstr ""
+"imprime la primera ocurrencia de advertencias coincidentes para cada lugar "
+"(módulo + número de línea) donde se emite la advertencia"
 
-#: ../../library/warnings.rst:142
+#: ../Doc/library/warnings.rst:142
 msgid "``\"error\"``"
 msgstr "``\"error\"``"
 
-#: ../../library/warnings.rst:142
+#: ../Doc/library/warnings.rst:142
 msgid "turn matching warnings into exceptions"
-msgstr "一致した警告を例外に変えます"
+msgstr "convertir las advertencias de coincidencia en excepciones"
 
-#: ../../library/warnings.rst:144
+#: ../Doc/library/warnings.rst:144
 msgid "``\"ignore\"``"
 msgstr "``\"ignore\"``"
 
-#: ../../library/warnings.rst:144
+#: ../Doc/library/warnings.rst:144
 msgid "never print matching warnings"
-msgstr "一致した警告を出力しません"
+msgstr "nunca imprime advertencias que coincidan"
 
-#: ../../library/warnings.rst:146
+#: ../Doc/library/warnings.rst:146
 msgid "``\"always\"``"
 msgstr "``\"always\"``"
 
-#: ../../library/warnings.rst:146
+#: ../Doc/library/warnings.rst:146
 msgid "always print matching warnings"
-msgstr "一致した警告を常に出力します"
+msgstr "siempre imprime advertencias que coinciden"
 
-#: ../../library/warnings.rst:148
+#: ../Doc/library/warnings.rst:148
 msgid "``\"module\"``"
 msgstr "``\"module\"``"
 
-#: ../../library/warnings.rst:148
+#: ../Doc/library/warnings.rst:148
 msgid ""
 "print the first occurrence of matching warnings for each module where the "
 "warning is issued (regardless of line number)"
 msgstr ""
+"imprime la primera ocurrencia de advertencias coincidentes para cada módulo "
+"en el que se emite la advertencia (independientemente del número de línea)"
 
-#: ../../library/warnings.rst:152
+#: ../Doc/library/warnings.rst:152
 msgid "``\"once\"``"
 msgstr "``\"once\"``"
 
-#: ../../library/warnings.rst:152
+#: ../Doc/library/warnings.rst:152
 msgid ""
 "print only the first occurrence of matching warnings, regardless of location"
 msgstr ""
-"一致した警告のうち、警告の原因になった場所にかかわらず最初の警告のみ出力しま"
-"す"
+"imprime sólo la primera aparición de advertencias coincidentes, "
+"independientemente de la ubicación"
 
-#: ../../library/warnings.rst:156
+#: ../Doc/library/warnings.rst:156
 msgid ""
 "*message* is a string containing a regular expression that the start of the "
 "warning message must match, case-insensitively.  In :option:`-W` and :envvar:"
@@ -382,16 +405,22 @@ msgid ""
 "warning message must contain (case-insensitively), ignoring any whitespace "
 "at the start or end of *message*."
 msgstr ""
+"*message* esa cadena de caracteres que contiene una expresión regular que "
+"debería coincidir con el inicio del mensaje de advertencia, sin discriminar "
+"mayúsculas ni minúsculas. En :option:`-W` y :envvar:`PYTHONWARNINGS`, "
+"*message* es una cadena de caracteres literal que debería coincidir con el "
+"inicio del mensaje de advertencia discriminando mayúsculas y/o minúsculas, "
+"pero ignorando cualquier espacio en blanco al inicio de *message*."
 
-#: ../../library/warnings.rst:162
+#: ../Doc/library/warnings.rst:162
 msgid ""
 "*category* is a class (a subclass of :exc:`Warning`) of which the warning "
 "category must be a subclass in order to match."
 msgstr ""
-"*category* はクラス (:exc:`Warning` のサブクラス) です。警告クラスはこのクラ"
-"スのサブクラスに一致しなければなりません。"
+"*category* es una clase (una subclase de :exc:`Warning`) de la cual la "
+"categoría de advertencia debe ser una subclase para poder coincidir."
 
-#: ../../library/warnings.rst:165
+#: ../Doc/library/warnings.rst:165
 msgid ""
 "*module* is a string containing a regular expression that the start of the "
 "fully qualified module name must match, case-sensitively.  In :option:`-W` "
@@ -399,35 +428,44 @@ msgid ""
 "qualified module name must be equal to (case-sensitively), ignoring any "
 "whitespace at the start or end of *module*."
 msgstr ""
+"*module* es un cadena de caracteres que contiene una expresión regular, la "
+"cual debe coincidir exactamente (con mayúsculas y minúsculas) al nombre "
+"completo del módulo. En :option:`-W` y :envvar:`PYTHONWARNINGS`, *module* es "
+"string literal que debe ser igual (con mayúsculas y minúsculas) al nombre "
+"completo del módulo, ignorando cualquier espacio en blanco al inicio o final "
+"de *module*."
 
-#: ../../library/warnings.rst:171
+#: ../Doc/library/warnings.rst:171
 msgid ""
 "*lineno* is an integer that the line number where the warning occurred must "
 "match, or ``0`` to match all line numbers."
 msgstr ""
-"*lineno* は整数で、警告が発生した場所の行番号に一致しなければなりません。"
-"``0`` の場合はすべての行と一致します。"
+"*lineno* es un número entero que el número de línea donde ocurrió la "
+"advertencia debe coincidir, o ``0`` para coincidir con todos los números de "
+"línea."
 
-#: ../../library/warnings.rst:174
+#: ../Doc/library/warnings.rst:174
 msgid ""
 "Since the :exc:`Warning` class is derived from the built-in :exc:`Exception` "
 "class, to turn a warning into an error we simply raise ``category(message)``."
 msgstr ""
-":exc:`Warning` クラスは組み込みの :exc:`Exception` クラスから派生しているの"
-"で、警告をエラーに変換するには単に ``category(message)`` を ``raise`` しま"
-"す。"
+"Como la clase :exc:`Warning` se deriva de la clase :exc:`Excepción` "
+"incorporada, para convertir una advertencia en un error simplemente lanzamos "
+"``category(message)``."
 
-#: ../../library/warnings.rst:177
+#: ../Doc/library/warnings.rst:177
 msgid ""
 "If a warning is reported and doesn't match any registered filter then the "
 "\"default\" action is applied (hence its name)."
 msgstr ""
+"Si se informa de una advertencia y no coincide con ningún filtro registrado, "
+"se aplica la acción \"por defecto\" (de ahí su nombre)."
 
-#: ../../library/warnings.rst:184
+#: ../Doc/library/warnings.rst:184
 msgid "Describing Warning Filters"
-msgstr ""
+msgstr "Descripción de los filtros de advertencia"
 
-#: ../../library/warnings.rst:186
+#: ../Doc/library/warnings.rst:186
 msgid ""
 "The warnings filter is initialized by :option:`-W` options passed to the "
 "Python interpreter command line and the :envvar:`PYTHONWARNINGS` environment "
@@ -436,14 +474,22 @@ msgid ""
 "module parses these when it is first imported (invalid options are ignored, "
 "after printing a message to :data:`sys.stderr`)."
 msgstr ""
+"El filtro de advertencias se inicializa con :option:`-W` options pasado a la "
+"línea de comandos del intérprete de Python y la variable de entorno :envvar:"
+"`PYTHONWARNINGS`. El intérprete guarda los argumentos de todas las entradas "
+"suministradas sin interpretación en :data:`sys.warnoptions`; el módulo :mod:"
+"`warnings` los analiza cuando se importa por primera vez (las opciones no "
+"válidas se ignoran, después de imprimir un mensaje a :data:`sys.stderr`)."
 
-#: ../../library/warnings.rst:193
+#: ../Doc/library/warnings.rst:193
 msgid ""
 "Individual warnings filters are specified as a sequence of fields separated "
 "by colons::"
 msgstr ""
+"Los filtros de advertencia individuales se especifican como una secuencia de "
+"campos separados por dos puntos::"
 
-#: ../../library/warnings.rst:198
+#: ../Doc/library/warnings.rst:198
 msgid ""
 "The meaning of each of these fields is as described in :ref:`warning-"
 "filter`. When listing multiple filters on a single line (as for :envvar:"
@@ -452,63 +498,85 @@ msgid ""
 "they're applied left-to-right, and the most recently applied filters take "
 "precedence over earlier ones)."
 msgstr ""
+"El significado de cada uno de estos campos es como se describe en :ref:"
+"`warning-filter`. Cuando se enumeran varios filtros en una sola línea (como "
+"en :envvar:`PYTHONWARNINGS`), los filtros individuales se separan por comas "
+"y los filtros que se enumeran más tarde tienen prioridad sobre los que se "
+"enumeran antes de ellos (ya que se aplican de izquierda a derecha, y los "
+"filtros aplicados más recientemente tienen prioridad sobre los anteriores)."
 
-#: ../../library/warnings.rst:205
+#: ../Doc/library/warnings.rst:205
 msgid ""
 "Commonly used warning filters apply to either all warnings, warnings in a "
 "particular category, or warnings raised by particular modules or packages. "
 "Some examples::"
 msgstr ""
+"Los filtros de advertencia comúnmente utilizados se aplican a todas las "
+"advertencias, a las advertencias de una categoría particular o a las "
+"advertencias planteadas por módulos o paquetes particulares. Algunos "
+"ejemplos::"
 
-#: ../../library/warnings.rst:221
+#: ../Doc/library/warnings.rst:221
 msgid "Default Warning Filter"
-msgstr "デフォルトの警告フィルタ"
+msgstr "Filtro de advertencia predeterminado"
 
-#: ../../library/warnings.rst:223
+#: ../Doc/library/warnings.rst:223
 msgid ""
 "By default, Python installs several warning filters, which can be overridden "
 "by the :option:`-W` command-line option, the :envvar:`PYTHONWARNINGS` "
 "environment variable and calls to :func:`filterwarnings`."
 msgstr ""
+"Por defecto, Python instala varios filtros de advertencia, que pueden ser "
+"anulados por la opción de línea de comandos :option:`-W`, la variable de "
+"entorno :envvar:`PYTHONWARNINGS` y llamadas a :func:`filterwarnings`."
 
-#: ../../library/warnings.rst:227
+#: ../Doc/library/warnings.rst:227
 msgid ""
 "In regular release builds, the default warning filter has the following "
 "entries (in order of precedence)::"
 msgstr ""
+"En versiones regulares, el filtro de advertencia por defecto tiene las "
+"siguientes entradas (en orden de precedencia)::"
 
-#: ../../library/warnings.rst:236
+#: ../Doc/library/warnings.rst:236
 msgid ""
 "In a :ref:`debug build <debug-build>`, the list of default warning filters "
 "is empty."
 msgstr ""
+"En una :ref:`compilación de depuración <debug-build>`, la lista de filtros "
+"de advertencia predeterminados está vacía."
 
-#: ../../library/warnings.rst:238
+#: ../Doc/library/warnings.rst:238
 msgid ""
 ":exc:`DeprecationWarning` is now ignored by default in addition to :exc:"
 "`PendingDeprecationWarning`."
 msgstr ""
-":exc:`PendingDeprecationWarning` に加えて、 :exc:`DeprecationWarning` もデ"
-"フォルトで無視されるようになりました。"
+":exc:`DeprecationWarning` es ahora ignorado por defecto además de :exc:"
+"`PendingDeprecationWarning`."
 
-#: ../../library/warnings.rst:242
+#: ../Doc/library/warnings.rst:242
 msgid ""
 ":exc:`DeprecationWarning` is once again shown by default when triggered "
 "directly by code in ``__main__``."
 msgstr ""
+":exc:`DeprecationWarning` se muestra de nuevo por defecto cuando se activa "
+"directamente por código en ``__main__``."
 
-#: ../../library/warnings.rst:246
+#: ../Doc/library/warnings.rst:246
 msgid ""
 ":exc:`BytesWarning` no longer appears in the default filter list and is "
 "instead configured via :data:`sys.warnoptions` when :option:`-b` is "
 "specified twice."
 msgstr ""
+":exc:`BytesWarning` ya no aparece en la lista de filtros por defecto y en su "
+"lugar se configura a través de :data:`sys.warnoptions` cuando :option:`-b` "
+"se especifica dos veces."
 
-#: ../../library/warnings.rst:255
+#: ../Doc/library/warnings.rst:255
 msgid "Overriding the default filter"
-msgstr ""
+msgstr "Anulando el filtro por defecto"
 
-#: ../../library/warnings.rst:257
+#: ../Doc/library/warnings.rst:257
 msgid ""
 "Developers of applications written in Python may wish to hide *all* Python "
 "level warnings from their users by default, and only display them when "
@@ -517,35 +585,55 @@ msgid ""
 "can be used as a marker to indicate whether or not warnings should be "
 "disabled::"
 msgstr ""
+"Los desarrolladores de aplicaciones escritas en Python pueden desear ocultar "
+"*todas* las advertencias de nivel de Python a sus usuarios por defecto, y "
+"sólo mostrarlas cuando se realizan pruebas o se trabaja de otra manera en la "
+"aplicación. El atributo :data:`sys.warnoptions` utilizado para pasar las "
+"configuraciones de los filtros al intérprete puede utilizarse como marcador "
+"para indicar si las advertencias deben ser desactivadas o no::"
 
-#: ../../library/warnings.rst:269
+#: ../Doc/library/warnings.rst:269
 msgid ""
 "Developers of test runners for Python code are advised to instead ensure "
 "that *all* warnings are displayed by default for the code under test, using "
 "code like::"
 msgstr ""
+"Se aconseja a los desarrolladores de pruebas de código Python que se "
+"aseguren de que *todas* las advertencias se muestren por defecto para el "
+"código que se está probando, usando un código como::"
 
-#: ../../library/warnings.rst:280
+#: ../Doc/library/warnings.rst:280
 msgid ""
 "Finally, developers of interactive shells that run user code in a namespace "
 "other than ``__main__`` are advised to ensure that :exc:`DeprecationWarning` "
 "messages are made visible by default, using code like the following (where "
 "``user_ns`` is the module used to execute code entered interactively)::"
 msgstr ""
+"Por último, se aconseja a los desarrolladores de shells interactivos que "
+"ejecuten el código de usuario en un espacio de nombres distinto de "
+"``__main__`` que se aseguren de que los mensajes :exc:`DeprecationWarning` "
+"se hagan visibles por defecto, utilizando un código como el siguiente (donde "
+"``user_ns`` es el módulo utilizado para ejecutar el código introducido "
+"interactivamente)::"
 
-#: ../../library/warnings.rst:293
+#: ../Doc/library/warnings.rst:293
 msgid "Temporarily Suppressing Warnings"
-msgstr "一時的に警告を抑制する"
+msgstr "Eliminación temporal de las advertencias"
 
-#: ../../library/warnings.rst:295
+#: ../Doc/library/warnings.rst:295
 msgid ""
 "If you are using code that you know will raise a warning, such as a "
 "deprecated function, but do not want to see the warning (even when warnings "
 "have been explicitly configured via the command line), then it is possible "
 "to suppress the warning using the :class:`catch_warnings` context manager::"
 msgstr ""
+"Si está utilizando un código que sabe que va a provocar una advertencia, "
+"como una función obsoleta, pero no quiere ver la advertencia (incluso cuando "
+"las advertencias se han configurado explícitamente a través de la línea de "
+"comandos), entonces es posible suprimir la advertencia utilizando el gestor "
+"de contexto :class:`catch_warnings`::"
 
-#: ../../library/warnings.rst:309
+#: ../Doc/library/warnings.rst:309
 msgid ""
 "While within the context manager all warnings will simply be ignored. This "
 "allows you to use known-deprecated code without having to see the warning "
@@ -554,30 +642,31 @@ msgid ""
 "threaded application. If two or more threads use the :class:`catch_warnings` "
 "context manager at the same time, the behavior is undefined."
 msgstr ""
-"このサンプルのコンテキストマネージャーの中では、すべての警告が無視されていま"
-"す。これで、他の廃止予定のコードを含まない(つもりの)部分まで警告を抑止せず"
-"に、廃止予定だと分かっているコードだけ警告を表示させないようにすることができ"
-"ます。注意: これが保証できるのはシングルスレッドのアプリケーションだけです。 "
-"2つ以上のスレッドが同時に :class:`catch_warnings` コンテキストマネージャーを"
-"使用した場合、動作は未定義です。"
+"Mientras que dentro del gestor de contexto todas las advertencias serán "
+"simplemente ignoradas. Esto le permite utilizar el código conocido como "
+"obsoleto sin tener que ver la advertencia, mientras que no suprime la "
+"advertencia para otro código que podría no ser consciente de su uso de "
+"código obsoleto.  Nota: esto sólo puede garantizarse en una aplicación de un "
+"solo hilo. Si dos o más hilos utilizan el gestor de contexto :class:"
+"`catch_warnings` al mismo tiempo, el comportamiento es indefinido."
 
-#: ../../library/warnings.rst:321
+#: ../Doc/library/warnings.rst:321
 msgid "Testing Warnings"
-msgstr "警告のテスト"
+msgstr "Advertencias de prueba"
 
-#: ../../library/warnings.rst:323
+#: ../Doc/library/warnings.rst:323
 msgid ""
 "To test warnings raised by code, use the :class:`catch_warnings` context "
 "manager. With it you can temporarily mutate the warnings filter to "
 "facilitate your testing. For instance, do the following to capture all "
 "raised warnings to check::"
 msgstr ""
-"コードが警告を発生させることをテストするには、 :class:`catch_warnings` コンテ"
-"キストマネージャーを利用します。このクラスを使うと、一時的に警告フィルタを操"
-"作してテストに利用できます。例えば、次のコードでは、発生したすべての警告を取"
-"得してチェックしています::"
+"Para probar las advertencias planteadas por el código, use el administrador "
+"de contexto :class:`catch_warnings`. Con él puedes mutar temporalmente el "
+"filtro de advertencias para facilitar tus pruebas. Por ejemplo, haz lo "
+"siguiente para capturar todas las advertencias levantadas para comprobar::"
 
-#: ../../library/warnings.rst:343
+#: ../Doc/library/warnings.rst:343
 msgid ""
 "One can also cause all warnings to be exceptions by using ``error`` instead "
 "of ``always``. One thing to be aware of is that if a warning has already "
@@ -585,12 +674,14 @@ msgid ""
 "filters are set the warning will not be seen again unless the warnings "
 "registry related to the warning has been cleared."
 msgstr ""
-"``always`` の代わりに ``error`` を利用することで、すべての警告で例外を発生さ"
-"せることができます。1つ気をつけないといけないのは、一度 ``once``/``default`` "
-"ルールによって発生した警告は、フィルタに何をセットしているかにかかわらず、警"
-"告レジストリをクリアしない限りは 2度と発生しません。"
+"También se puede hacer que todas las advertencias sean excepciones usando "
+"``error`` en lugar de ``always``. Una cosa que hay que tener en cuenta es "
+"que si una advertencia ya se ha planteado debido a una regla de ``once`` o "
+"``default``, entonces no importa qué filtros estén establecidos, la "
+"advertencia no se verá de nuevo a menos que el registro de advertencias "
+"relacionadas con la advertencia se haya borrado."
 
-#: ../../library/warnings.rst:349
+#: ../Doc/library/warnings.rst:349
 msgid ""
 "Once the context manager exits, the warnings filter is restored to its state "
 "when the context was entered. This prevents tests from changing the warnings "
@@ -600,14 +691,16 @@ msgid ""
 "application. If two or more threads use the :class:`catch_warnings` context "
 "manager at the same time, the behavior is undefined."
 msgstr ""
-"コンテキストマネージャーが終了したら、警告フィルタはコンテキストマネージャー"
-"に入る前のものに戻されます。これは、テスト中に予期しない方法で警告フィルタが"
-"変更され、テスト結果が中途半端になる事を予防します。このモジュールの :func:"
-"`showwarning` 関数も元の値に戻されます。注意: これが保証できるのはシングルス"
-"レッドのアプリケーションだけです。 2つ以上のスレッドが同時に :class:"
-"`catch_warnings` コンテキストマネージャを使用した場合、動作は未定義です。"
+"Una vez que se cierra el gestor de contexto, el filtro de advertencias se "
+"restablece al estado en que se encontraba al entrar en el contexto. Esto "
+"evita que las pruebas cambien el filtro de advertencias de forma inesperada "
+"entre una prueba y otra, y que se produzcan resultados indeterminados en las "
+"pruebas. La función :func:`showwarning` del módulo también se restaura a su "
+"valor original.  Nota: esto sólo puede garantizarse en una aplicación de un "
+"solo hilo. Si dos o más hilos utilizan el gestor de contexto :class:"
+"`catch_warnings` al mismo tiempo, el comportamiento es indefinido."
 
-#: ../../library/warnings.rst:357
+#: ../Doc/library/warnings.rst:357
 msgid ""
 "When testing multiple operations that raise the same kind of warning, it is "
 "important to test them in a manner that confirms each operation is raising a "
@@ -616,23 +709,30 @@ msgid ""
 "continues to increase after each operation, or else delete the previous "
 "entries from the warnings list before each new operation)."
 msgstr ""
-"同じ種類の警告を発生させる複数の操作をテストする場合、各操作が新しい警告を発"
-"生させている事を確認するのは大切な事です (例えば、警告を例外として発生させて"
-"各操作が例外を発生させることを確認したり、警告リストの長さが各操作で増加して"
-"いることを確認したり、警告リストを各操作の前に毎回クリアする事ができます)。"
+"Cuando se prueban múltiples operaciones que plantean el mismo tipo de "
+"advertencia, es importante probarlas de manera que se confirme que cada "
+"operación plantea una nueva advertencia (por ejemplo, establecer "
+"advertencias que se planteen como excepciones y comprobar que las "
+"operaciones plantean excepciones, comprobar que la longitud de la lista de "
+"advertencias siga aumentando después de cada operación, o bien suprimir las "
+"entradas anteriores de la lista de advertencias antes de cada nueva "
+"operación)."
 
-#: ../../library/warnings.rst:368
+#: ../Doc/library/warnings.rst:368
 msgid "Updating Code For New Versions of Dependencies"
-msgstr ""
+msgstr "Actualización del código para las nuevas versiones de las dependencias"
 
-#: ../../library/warnings.rst:370
+#: ../Doc/library/warnings.rst:370
 msgid ""
 "Warning categories that are primarily of interest to Python developers "
 "(rather than end users of applications written in Python) are ignored by "
 "default."
 msgstr ""
+"Las categorías de advertencia que interesan principalmente a los "
+"desarrolladores de Python (más que a los usuarios finales de aplicaciones "
+"escritas en Python) se ignoran por defecto."
 
-#: ../../library/warnings.rst:373
+#: ../Doc/library/warnings.rst:373
 msgid ""
 "Notably, this \"ignored by default\" list includes :exc:`DeprecationWarning` "
 "(for every module except ``__main__``), which means developers should make "
@@ -640,15 +740,25 @@ msgid ""
 "order to receive timely notifications of future breaking API changes "
 "(whether in the standard library or third party packages)."
 msgstr ""
+"En particular, esta lista de \"ignorados por defecto\" incluye :exc:"
+"`DeprecationWarning` (para cada módulo excepto ``__main__``), lo que "
+"significa que los desarrolladores deben asegurarse de probar su código con "
+"advertencias típicamente ignoradas hechas visibles para recibir "
+"notificaciones oportunas de futuros cambios del API a última hora(ya sea en "
+"la biblioteca estándar o en paquetes de terceros)."
 
-#: ../../library/warnings.rst:379
+#: ../Doc/library/warnings.rst:379
 msgid ""
 "In the ideal case, the code will have a suitable test suite, and the test "
 "runner will take care of implicitly enabling all warnings when running tests "
 "(the test runner provided by the :mod:`unittest` module does this)."
 msgstr ""
+"En el caso ideal, el código tendrá un conjunto de pruebas adecuado, y el "
+"corredor de pruebas se encargará de habilitar implícitamente todas las "
+"advertencias cuando se ejecuten las pruebas (el corredor de pruebas "
+"proporcionado por el módulo :mod:`unittest` hace esto)."
 
-#: ../../library/warnings.rst:383
+#: ../Doc/library/warnings.rst:383
 msgid ""
 "In less ideal cases, applications can be checked for use of deprecated "
 "interfaces by passing :option:`-Wd <-W>` to the Python interpreter (this is "
@@ -659,12 +769,21 @@ msgid ""
 "W` (e.g. :option:`!-W error`). See the :option:`-W` flag for more details on "
 "what is possible."
 msgstr ""
+"En casos menos ideales, las aplicaciones pueden ser revisadas por el uso de "
+"interfaces desaprobadas pasando :option:`-Wd <-W>` al intérprete de Python "
+"(esto es la abreviatura de :option:`!-W default`) o ajustando "
+"``PYTHONWARNINGS=default`` en el entorno. Esto permite el manejo por defecto "
+"de todas las advertencias, incluyendo aquellas que son ignoradas por "
+"defecto. Para cambiar la acción que se lleva a cabo para las advertencias "
+"encontradas puede cambiar el argumento que se pasa a :option:`-W` (por "
+"ejemplo :option:`!-W error`). Consulte el indicador :option:`-W` para "
+"obtener más detalles sobre lo que es posible."
 
-#: ../../library/warnings.rst:396
+#: ../Doc/library/warnings.rst:396
 msgid "Available Functions"
-msgstr "利用可能な関数"
+msgstr "Funciones disponibles"
 
-#: ../../library/warnings.rst:401
+#: ../Doc/library/warnings.rst:401
 msgid ""
 "Issue a warning, or maybe ignore it or raise an exception.  The *category* "
 "argument, if given, must be a :ref:`warning category class <warning-"
@@ -676,38 +795,39 @@ msgid ""
 "<warning-filter>`.  The *stacklevel* argument can be used by wrapper "
 "functions written in Python, like this::"
 msgstr ""
-"警告を発するか、無視するか、あるいは例外を送出します。 *category* 引数が与え"
-"られた場合、 :ref:`警告カテゴリクラス <warning-categories>`でなければなりませ"
-"ん; 標準の値は :exc:`UserWarning` です。 *message* を :exc:`Warning` インスタ"
-"ンスで代用することもできますが、この場合 *category* は無視され、 ``message."
-"__class__`` が使われ、メッセージ文は ``str(message)`` になります。発された例"
-"外が前述した :ref:`警告フィルタ <warning-filter>` によってエラーに変更された"
-"場合、この関数は例外を送出します。引数 *stacklevel* は Python でラッパー関数"
-"を書く際に利用することができます。例えば::"
+"Emite una advertencia, o tal vez la ignorar o lanza una excepción.  El "
+"argumento *category*, si se da, debe ser un :ref:`warning category class "
+"<warning-categories>`; por defecto es :exc:`UserWarning`.  Alternativamente, "
+"*message* puede ser una instancia :exc:`Warning`, en cuyo caso *category* "
+"será ignorada y se usará ``message.__class__``. En este caso, el texto del "
+"mensaje será ``str(message)``. Esta función hace una excepción si la "
+"advertencia particular emitida es convertida en un error por el :ref:"
+"`warnings filter <warning-filter>`.   El argumento *stacklevel* puede ser "
+"usado por funciones de envoltura escritas en Python, como esta::"
 
-#: ../../library/warnings.rst:413
+#: ../Doc/library/warnings.rst:413
 msgid ""
 "This makes the warning refer to :func:`deprecation`'s caller, rather than to "
 "the source of :func:`deprecation` itself (since the latter would defeat the "
 "purpose of the warning message)."
 msgstr ""
-"こうすることで、警告が参照するソースコード部分を、 :func:`deprecation` 自身で"
-"はなく :func:`deprecation` を呼び出した側にできます (というのも、前者の場合は"
-"警告メッセージの目的を台無しにしてしまうからです)。"
+"Esto hace que la advertencia se refiera al invocador de :func:`deprecation`, "
+"en lugar de a la fuente de :func:`deprecation` en sí (ya que esta última "
+"perdería el propósito del mensaje de advertencia)."
 
-#: ../../library/warnings.rst:417 ../../library/warnings.rst:440
+#: ../Doc/library/warnings.rst:417 ../Doc/library/warnings.rst:440
 msgid ""
 "*source*, if supplied, is the destroyed object which emitted a :exc:"
 "`ResourceWarning`."
 msgstr ""
-"*source* 引数が与えられた場合、これは :exc:`ResourceWarning` を発生させた破壊"
-"されたオブジェクトです。"
+"*source*, si se suministra, es el objeto destruido que emitió un :exc:"
+"`ResourceWarning`."
 
-#: ../../library/warnings.rst:420
+#: ../Doc/library/warnings.rst:420
 msgid "Added *source* parameter."
-msgstr "*source* 引数を追加しました。"
+msgstr "Añadido parámetro *source*."
 
-#: ../../library/warnings.rst:426
+#: ../Doc/library/warnings.rst:426
 msgid ""
 "This is a low-level interface to the functionality of :func:`warn`, passing "
 "in explicitly the message, category, filename and line number, and "
@@ -718,32 +838,34 @@ msgid ""
 "of :exc:`Warning` or *message* may be a :exc:`Warning` instance, in which "
 "case *category* will be ignored."
 msgstr ""
-":func:`warn` の機能に対する低レベルのインターフェースで、メッセージ、警告カテ"
-"ゴリ、ファイル名および行番号、そしてオプションのモジュール名およびレジストリ"
-"情報 (モジュールの  ``__warningregistry__`` 辞書) を明示的に渡します。モ"
-"ジュール名は標準で ``.py`` が取り去られたファイル名になります; レジストリが渡"
-"されなかった場合、警告が抑制されることはありません。 *message* が文字列のと"
-"き、 *category* は :exc:`Warning` のサブクラスでなければなりません。また "
-"*message* は :exc:`Warning` のインスタンスであってもよく、この場合 "
-"*category* は無視されます。"
+"Se trata de una interfaz de bajo nivel para la funcionalidad de :func:"
+"`warn`, pasando explícitamente el mensaje, la categoría, el nombre de "
+"archivo y el número de línea, y opcionalmente el nombre del módulo y el "
+"registro (que debería ser el diccionario ``__warningregistry__`` del "
+"módulo).  El nombre del módulo por defecto es el nombre de archivo con `.py` "
+"desmembrado; si no se pasa el registro, la advertencia nunca se suprime. "
+"*message* debe ser una cadena y *category* una subclase de :exc:`Warning` o "
+"*message* puede ser una instancia :exc:`Warning`, en cuyo caso *category* "
+"será ignorada."
 
-#: ../../library/warnings.rst:435
+#: ../Doc/library/warnings.rst:435
 msgid ""
 "*module_globals*, if supplied, should be the global namespace in use by the "
 "code for which the warning is issued.  (This argument is used to support "
 "displaying source for modules found in zipfiles or other non-filesystem "
 "import sources)."
 msgstr ""
-"*module_globals* は、もし与えられるならば、警告が発せられるコードが使っている"
-"グローバル名前空間でなければなりません (この引数は zipfile やその他の非ファイ"
-"ルシステムのインポート元の中にあるモジュールのソースを表示することをサポート"
-"するためのものです)。"
+"*module_globals*, si se suministra, debe ser el espacio de nombres global en "
+"uso por el código para el que se emite la advertencia.  (Este argumento se "
+"utiliza para apoyar la visualización de la fuente de los módulos que se "
+"encuentran en los archivos zip o en otras fuentes de importación que no son "
+"del sistema de archivos)."
 
-#: ../../library/warnings.rst:443
+#: ../Doc/library/warnings.rst:443
 msgid "Add the *source* parameter."
-msgstr "*source* 引数を追加しました。"
+msgstr "Añade el parámetro *source*."
 
-#: ../../library/warnings.rst:449
+#: ../Doc/library/warnings.rst:449
 msgid ""
 "Write a warning to a file.  The default implementation calls "
 "``formatwarning(message, category, filename, lineno, line)`` and writes the "
@@ -753,15 +875,15 @@ msgid ""
 "message; if *line* is not supplied, :func:`showwarning` will try to read the "
 "line specified by *filename* and *lineno*."
 msgstr ""
-"警告をファイルに書き込みます。標準の実装では、 ``formatwarning(message, "
-"category, filename, lineno, line)`` を呼び出し、返された文字列を *file* に書"
-"き込みます。 *file* は標準では :data:`sys.stderr` です。この関数は "
-"``warnings.showwarning`` に任意の呼び出し可能オブジェクトを代入して置き換える"
-"ことができます。 *line* は警告メッセージに含めるソースコードの1行です。 "
-"*line* が与えられない場合、 :func:`showwarning` は *filename* と *lineno* か"
-"ら行を取得することを試みます。"
+"Escriba una advertencia en un archivo.  La implementación por defecto llama "
+"``formatwarning(message, category, filename, lineno, line)`` y escribe la "
+"cadena resultante a *file*, que por defecto es :data:`sys.stderr`.  Puede "
+"reemplazar esta función con cualquier interlocutor asignando a ``warnings."
+"showwarning``. *line* es una línea de código fuente que se incluirá en el "
+"mensaje de advertencia; si no se proporciona *line*, :func:`showwarning` "
+"intentará leer la línea especificada por *nombre de archivo* y *lineno*."
 
-#: ../../library/warnings.rst:460
+#: ../Doc/library/warnings.rst:460
 msgid ""
 "Format a warning the standard way.  This returns a string which may contain "
 "embedded newlines and ends in a newline.  *line* is a line of source code to "
@@ -769,12 +891,13 @@ msgid ""
 "`formatwarning` will try to read the line specified by *filename* and "
 "*lineno*."
 msgstr ""
-"警告を通常の方法で書式化します。返される文字列内には改行が埋め込まれている可"
-"能性があり、かつ文字列は改行で終端されています。 *line* は警告メッセージに含"
-"まれるソースコードの1行です。 *line* が渡されない場合、 :func:"
-"`formatwarning` は *filename* と *lineno* から行の取得を試みます。"
+"Formatea una advertencia de la manera estándar.  Esto retorna una cadena que "
+"puede contener nuevas líneas incrustadas y termina en una nueva línea.  "
+"*line* es una línea de código fuente a incluir en el mensaje de advertencia; "
+"si *line* no se suministra, :func:`formatwarning` intentará leer la línea "
+"especificada por el nombre de fichero *filename* y *lineno*."
 
-#: ../../library/warnings.rst:469
+#: ../Doc/library/warnings.rst:469
 msgid ""
 "Insert an entry into the list of :ref:`warnings filter specifications "
 "<warning-filter>`.  The entry is inserted at the front by default; if "
@@ -785,15 +908,16 @@ msgid ""
 "particular warning.  Omitted arguments default to a value that matches "
 "everything."
 msgstr ""
-":ref:`警告フィルタ仕様 <warning-filter>` のリストにエントリを一つ挿入します。"
-"標準ではエントリは先頭に挿入されます; *append* が真ならば、末尾に挿入されま"
-"す。この関数は引数の型をチェックし、 *message* および *module* の正規表現をコ"
-"ンパイルしてから、これらをタプルにして警告フィルタのリストに挿入します。二つ"
-"のエントリが特定の警告に合致した場合、リストの先頭に近い方のエントリが後方に"
-"あるエントリに優先します。引数が省略されると、標準ではすべてにマッチする値に"
-"設定されます。"
+"Inserta una entrada en la lista de :ref:`warnings filter specifications "
+"<warning-filter>`.  La entrada se inserta por defecto en el frente; si "
+"*append* es verdadero, se inserta al final.  Esto comprueba los tipos de los "
+"argumentos, compila las expresiones regulares *message* y *module*, y las "
+"inserta como una tupla en la lista de filtros de aviso.  Las entradas más "
+"cercanas al principio de la lista anulan las entradas posteriores de la "
+"lista, si ambas coinciden con una advertencia en particular.  Los argumentos "
+"omitidos predeterminan un valor que coincide con todo."
 
-#: ../../library/warnings.rst:481
+#: ../Doc/library/warnings.rst:481
 msgid ""
 "Insert a simple entry into the list of :ref:`warnings filter specifications "
 "<warning-filter>`.  The meaning of the function parameters is as for :func:"
@@ -801,26 +925,28 @@ msgid ""
 "inserted always matches any message in any module as long as the category "
 "and line number match."
 msgstr ""
-"単純なエントリを :ref:`警告フィルタ仕様 <warning-filter>` のリストに挿入しま"
-"す。引数の意味は :func:`filterwarnings` と同じですが、この関数により挿入され"
-"るフィルタはカテゴリと行番号が一致していればすべてのモジュールのすべてのメッ"
-"セージに合致しますので、正規表現は必要ありません。"
+"Inserte una simple entrada en la lista de :ref:`warnings filter "
+"specifications <warning-filter>`.  El significado de los parámetros de la "
+"función es el mismo que el de :func:`filterwarnings`, pero no se necesitan "
+"expresiones regulares ya que el filtro insertado siempre coincide con "
+"cualquier mensaje de cualquier módulo siempre que la categoría y el número "
+"de línea coincidan."
 
-#: ../../library/warnings.rst:490
+#: ../Doc/library/warnings.rst:490
 msgid ""
 "Reset the warnings filter.  This discards the effect of all previous calls "
 "to :func:`filterwarnings`, including that of the :option:`-W` command line "
 "options and calls to :func:`simplefilter`."
 msgstr ""
-"警告フィルタをリセットします。これにより、 :option:`-W` コマンドラインオプ"
-"ションによるもの :func:`simplefilter` 呼び出しによるものを含め、 :func:"
-"`filterwarnings` の呼び出しによる影響はすべて無効化されます。"
+"Reajusta el filtro de advertencias.  Esto descarta el efecto de todas las "
+"llamadas previas a :func:`filterwarnings`, incluyendo la de las opciones de "
+"línea de comandos de :option:`-W` y las llamadas a :func:`simplefilter`."
 
-#: ../../library/warnings.rst:496
+#: ../Doc/library/warnings.rst:496
 msgid "Available Context Managers"
-msgstr "利用可能なコンテキストマネージャー"
+msgstr "Gestores de contexto disponibles"
 
-#: ../../library/warnings.rst:500
+#: ../Doc/library/warnings.rst:500
 msgid ""
 "A context manager that copies and, upon exit, restores the warnings filter "
 "and the :func:`showwarning` function. If the *record* argument is :const:"
@@ -830,43 +956,64 @@ msgid ""
 "(which also suppresses output to ``sys.stdout``). Each object in the list "
 "has attributes with the same names as the arguments to :func:`showwarning`."
 msgstr ""
-"警告フィルタと :func:`showwarning` 関数をコピーし、終了時に復元するコンテキス"
-"トマネージャーです。 *record* 引数が :const:`False` (デフォルト値)だった場"
-"合、コンテキスト開始時には :const:`None` を返します。もし *record* が :const:"
-"`True` だった場合、リストを返します。このリストにはカスタムの :func:"
-"`showwarning` 関数(この関数は同時に ``sys.stdout`` への出力を抑制します)に"
-"よってオブジェクトが継続的に追加されます。リストの中の各オブジェクトは、 :"
-"func:`showwarning` 関数の引数と同じ名前の属性を持っています。"
+"Un gestor de contexto que copia y, al salir, restaura el filtro de "
+"advertencias y la función :func:`showwarning`. Si el argumento *record* es :"
+"const:`False` (por defecto) el gestor de contextos retorna :class:`None` al "
+"entrar. Si *record* es :const:`True`, se retorna una lista que se va "
+"poblando progresivamente de objetos como se ve por una función personalizada "
+"de :func:`showwarning` (que también suprime la salida a ``sys.stdout``). "
+"Cada objeto de la lista tiene atributos con los mismos nombres que los "
+"argumentos de :func:`showwarning`."
 
-#: ../../library/warnings.rst:509
+#: ../Doc/library/warnings.rst:509
 msgid ""
 "The *module* argument takes a module that will be used instead of the module "
 "returned when you import :mod:`warnings` whose filter will be protected. "
 "This argument exists primarily for testing the :mod:`warnings` module itself."
 msgstr ""
-"*module* 引数は、保護したいフィルタを持つモジュールを取ります。 :mod:"
-"`warnings` を import して得られるモジュールの代わりに利用されます。この引数"
-"は、主に :mod:`warnings` モジュール自体をテストする目的で追加されました。"
+"El argumento *module* toma un módulo que será usado en lugar del módulo "
+"retornado cuando se importa :mod:`warnings` cuyo filtro será protegido. Este "
+"argumento existe principalmente para probar el propio módulo :mod:`warnings`."
 
-#: ../../library/warnings.rst:514
+#: ../Doc/library/warnings.rst:514
 msgid ""
 "If the *action* argument is not ``None``, the remaining arguments are passed "
 "to :func:`simplefilter` as if it were called immediately on entering the "
 "context."
 msgstr ""
+"Si el argumento *action* es diferente a ``None``, los demás argumentos serán "
+"enviados a la función :func:`simplefilter` como si fueran invocados "
+"inmediatamente al entrar al contexto."
 
-#: ../../library/warnings.rst:520
+#: ../Doc/library/warnings.rst:520
 msgid ""
 "The :class:`catch_warnings` manager works by replacing and then later "
 "restoring the module's :func:`showwarning` function and internal list of "
 "filter specifications.  This means the context manager is modifying global "
 "state and therefore is not thread-safe."
 msgstr ""
-":class:`catch_warnings` マネージャーは、モジュールの :func:`showwarning` 関数"
-"と内部のフィルタ仕様のリストを置き換え、その後復元することによって動作してい"
-"ます。これは、コンテキストマネージャーがグローバルな状態を変更していることを"
-"意味していて、したがってスレッドセーフではありません。"
+"El gestor :class:`catch_warnings` funciona reemplazando y luego restaurando "
+"la función :func:`showwarning` del módulo y la lista interna de "
+"especificaciones del filtro.  Esto significa que el gestor de contexto está "
+"modificando el estado global y por lo tanto no es seguro para los hilos."
 
-#: ../../library/warnings.rst:528
+#: ../Doc/library/warnings.rst:528
 msgid "Added the *action*, *category*, *lineno*, and *append* parameters."
-msgstr ""
+msgstr "Agrega los parámetros *action*, *category*, *lineno* y *append*."
+
+#~ msgid ""
+#~ "*message* is a string containing a regular expression that the start of "
+#~ "the warning message must match.  The expression is compiled to always be "
+#~ "case-insensitive."
+#~ msgstr ""
+#~ "*message* es una cadena que contiene una expresión regular que el inicio "
+#~ "del mensaje de advertencia debe coincidir.  La expresión está compilada "
+#~ "para que siempre sea insensible a las mayúsculas y minúsculas."
+
+#~ msgid ""
+#~ "*module* is a string containing a regular expression that the module name "
+#~ "must match.  The expression is compiled to be case-sensitive."
+#~ msgstr ""
+#~ "*module* es una cadena que contiene una expresión regular que el nombre "
+#~ "del módulo debe coincidir.  La expresión se compila para que distinga "
+#~ "entre mayúsculas y minúsculas."

@@ -1,303 +1,289 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Atsuo Ishimoto <atsuoishimoto@gmail.com>, 2021
-# Yuto Oguchi, 2021
-# Takeshi Nakazato, 2022
-# souma987, 2022
-# Tetsuo Koyama <tkoyama010@gmail.com>, 2022
-# 菊池 健志, 2023
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-03 14:14+0000\n"
-"PO-Revision-Date: 2021-06-28 00:55+0000\n"
-"Last-Translator: 菊池 健志, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-08-04 13:41+0200\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/asyncio-task.rst:6
+#: ../Doc/library/asyncio-task.rst:6
 msgid "Coroutines and Tasks"
-msgstr "コルーチンと Task"
+msgstr "Corrutinas y tareas"
 
-#: ../../library/asyncio-task.rst:8
+#: ../Doc/library/asyncio-task.rst:8
 msgid ""
 "This section outlines high-level asyncio APIs to work with coroutines and "
 "Tasks."
 msgstr ""
-"この節では、コルーチンと Task を利用する高レベルの asyncio の API の概略を解"
-"説します。"
+"Esta sección describe las API de asyncio de alto nivel para trabajar con "
+"corrutinas y tareas."
 
-#: ../../library/asyncio-task.rst:19 ../../library/asyncio-task.rst:148
+#: ../Doc/library/asyncio-task.rst:19 ../Doc/library/asyncio-task.rst:144
 msgid "Coroutines"
-msgstr "コルーチン"
+msgstr "Corrutinas"
 
-#: ../../library/asyncio-task.rst:21
-msgid "**Source code:** :source:`Lib/asyncio/coroutines.py`"
-msgstr ""
-
-#: ../../library/asyncio-task.rst:25
+#: ../Doc/library/asyncio-task.rst:21
+#, fuzzy
 msgid ""
 ":term:`Coroutines <coroutine>` declared with the async/await syntax is the "
 "preferred way of writing asyncio applications.  For example, the following "
 "snippet of code prints \"hello\", waits 1 second, and then prints \"world\"::"
 msgstr ""
-"async/await 構文で宣言された :term:`コルーチン <coroutine>` は、 asyncio を"
-"使ったアプリケーションを書くのに推奨される方法です。例えば、次のコードスニ"
-"ペットは \"hello\" を出力し、そこから 1 秒待って \"world\" を出力します:: "
+":term:`Coroutines <coroutine>` declarado con la sintaxis async/await es la "
+"forma preferida de escribir aplicaciones asyncio. Por ejemplo, el siguiente "
+"fragmento de código (requiere Python 3.7+) imprime \"hola\", espera 1 "
+"segundo y, a continuación, imprime \"mundo\"::"
 
-#: ../../library/asyncio-task.rst:41
+#: ../Doc/library/asyncio-task.rst:37
 msgid ""
 "Note that simply calling a coroutine will not schedule it to be executed::"
 msgstr ""
-"単にコルーチンを呼び出しただけでは、コルーチンの実行スケジュールは予約されて"
-"いないことに注意してください::"
+"Tenga en cuenta que simplemente llamando a una corrutina no programará para "
+"que se ejecute::"
 
-#: ../../library/asyncio-task.rst:47
+#: ../Doc/library/asyncio-task.rst:43
+#, fuzzy
 msgid "To actually run a coroutine, asyncio provides the following mechanisms:"
 msgstr ""
-"実際にコルーチンを実行するために、asyncio は以下のメカニズムを提供していま"
-"す::"
+"Para ejecutar realmente una corrutina, asyncio proporciona tres mecanismos "
+"principales:"
 
-#: ../../library/asyncio-task.rst:49
+#: ../Doc/library/asyncio-task.rst:45
 msgid ""
 "The :func:`asyncio.run` function to run the top-level entry point \"main()\" "
 "function (see the above example.)"
 msgstr ""
-"最上位のエントリーポイントである \"main()\" 関数を実行する :func:`asyncio."
-"run` 関数 (上の例を参照してください。)"
+"La función :func:`asyncio.run` para ejecutar la función de punto de entrada "
+"de nivel superior \"main()\" (consulte el ejemplo anterior.)"
 
-#: ../../library/asyncio-task.rst:52
+#: ../Doc/library/asyncio-task.rst:48
 msgid ""
 "Awaiting on a coroutine.  The following snippet of code will print \"hello\" "
 "after waiting for 1 second, and then print \"world\" after waiting for "
 "*another* 2 seconds::"
 msgstr ""
-"コルーチンを await すること。次のコード片は 1 秒間待機した後に \"hello\" と出"
-"力し、 *更に* 2 秒間待機してから \"world\" と出力します::"
+"Esperando en una corrutina. El siguiente fragmento de código imprimirá "
+"\"hola\" después de esperar 1 segundo y luego imprimirá \"mundo\" después de "
+"esperar *otros* 2 segundos::"
 
-#: ../../library/asyncio-task.rst:73
+#: ../Doc/library/asyncio-task.rst:69
 msgid "Expected output::"
-msgstr "予想される出力::"
+msgstr "Salida esperada::"
 
-#: ../../library/asyncio-task.rst:80
+#: ../Doc/library/asyncio-task.rst:76
 msgid ""
 "The :func:`asyncio.create_task` function to run coroutines concurrently as "
 "asyncio :class:`Tasks <Task>`."
 msgstr ""
-"asyncio の :class:`Tasks <Task>` としてコルーチンを並行して走らせる :func:"
-"`asyncio.create_task` 関数。"
+"La función :func:`asyncio.create_task` para ejecutar corrutinas "
+"concurrentemente como asyncio :class:`Tasks <Task>`."
 
-#: ../../library/asyncio-task.rst:83
+#: ../Doc/library/asyncio-task.rst:79
 msgid ""
 "Let's modify the above example and run two ``say_after`` coroutines "
 "*concurrently*::"
 msgstr ""
-"上のコード例を編集して、ふたつの ``say_after`` コルーチンを *並行して* 走らせ"
-"てみましょう::"
+"Modifiquemos el ejemplo anterior y ejecutemos dos corrutinas ``say_after`` "
+"*concurrentemente*::"
 
-#: ../../library/asyncio-task.rst:102
+#: ../Doc/library/asyncio-task.rst:98
 msgid ""
 "Note that expected output now shows that the snippet runs 1 second faster "
 "than before::"
 msgstr ""
-"予想される出力が、スニペットの実行が前回よりも 1 秒早いことを示していることに"
-"注意してください::"
+"Tenga en cuenta que la salida esperada ahora muestra que el fragmento de "
+"código se ejecuta 1 segundo más rápido que antes::"
 
-#: ../../library/asyncio-task.rst:110
+#: ../Doc/library/asyncio-task.rst:106
 msgid ""
 "The :class:`asyncio.TaskGroup` class provides a more modern alternative to :"
 "func:`create_task`. Using this API, the last example becomes::"
 msgstr ""
 
-#: ../../library/asyncio-task.rst:128
+#: ../Doc/library/asyncio-task.rst:124
 msgid "The timing and output should be the same as for the previous version."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:130
+#: ../Doc/library/asyncio-task.rst:126
 msgid ":class:`asyncio.TaskGroup`."
-msgstr ":class:`asyncio.TaskGroup`."
+msgstr ""
 
-#: ../../library/asyncio-task.rst:137
+#: ../Doc/library/asyncio-task.rst:133
 msgid "Awaitables"
-msgstr "Awaitable"
+msgstr "Esperables"
 
-#: ../../library/asyncio-task.rst:139
+#: ../Doc/library/asyncio-task.rst:135
 msgid ""
 "We say that an object is an **awaitable** object if it can be used in an :"
 "keyword:`await` expression.  Many asyncio APIs are designed to accept "
 "awaitables."
 msgstr ""
-"あるオブジェクトを :keyword:`await` 式の中で使うことができる場合、そのオブ"
-"ジェクトを **awaitable** オブジェクトと言います。多くの asyncio API は "
-"awaitable を受け取るように設計されています。"
+"Decimos que un objeto es un objeto **esperable** si se puede utilizar en una "
+"expresión :keyword:`await`. Muchas API de asyncio están diseñadas para "
+"aceptar los valores esperables."
 
-#: ../../library/asyncio-task.rst:143
+#: ../Doc/library/asyncio-task.rst:139
 msgid ""
 "There are three main types of *awaitable* objects: **coroutines**, "
 "**Tasks**, and **Futures**."
 msgstr ""
-"*awaitable* オブジェクトには主に3つの種類があります: **コルーチン**, "
-"**Task**, そして **Future** です"
+"Hay tres tipos principales de objetos *esperables*: **corrutinas**, "
+"**Tareas** y **Futures**."
 
-#: ../../library/asyncio-task.rst:149
+#: ../Doc/library/asyncio-task.rst:145
 msgid ""
 "Python coroutines are *awaitables* and therefore can be awaited from other "
 "coroutines::"
 msgstr ""
-"Python のコルーチンは *awaitable* であり、他のコルーチンから待機されることが"
-"できます::"
+"Las corrutinas de Python son *esperables* y por lo tanto se pueden esperar "
+"de otras corrutinas::"
 
-#: ../../library/asyncio-task.rst:170
+#: ../Doc/library/asyncio-task.rst:166
 msgid ""
 "In this documentation the term \"coroutine\" can be used for two closely "
 "related concepts:"
 msgstr ""
-"このドキュメントにおいて「コルーチン」という用語は以下2つの密接に関連した概念"
-"に対して使用できます:"
+"En esta documentación se puede utilizar el término \"corrutina\" para dos "
+"conceptos estrechamente relacionados:"
 
-#: ../../library/asyncio-task.rst:173
+#: ../Doc/library/asyncio-task.rst:169
 msgid "a *coroutine function*: an :keyword:`async def` function;"
-msgstr "*コルーチン関数*: :keyword:`async def` 関数;"
+msgstr "una *función corrutina*: una función :keyword:`async def`;"
 
-#: ../../library/asyncio-task.rst:175
+#: ../Doc/library/asyncio-task.rst:171
 msgid ""
 "a *coroutine object*: an object returned by calling a *coroutine function*."
 msgstr ""
-"*コルーチンオブジェクト*: *コルーチン関数* を呼び出すと返ってくるオブジェク"
-"ト."
+"un *objeto corrutina*: un objeto retornado llamando a una *función "
+"corrutina*."
 
-#: ../../library/asyncio-task.rst:180
+#: ../Doc/library/asyncio-task.rst:176
 msgid "Tasks"
-msgstr "Task"
+msgstr "Tareas"
 
-#: ../../library/asyncio-task.rst:181
+#: ../Doc/library/asyncio-task.rst:177
 msgid "*Tasks* are used to schedule coroutines *concurrently*."
-msgstr "*Task* は、コルーチンを *並行に* スケジュールするのに使います。"
+msgstr "*Las tareas* se utilizan para programar corrutinas *concurrentemente*."
 
-#: ../../library/asyncio-task.rst:183
+#: ../Doc/library/asyncio-task.rst:179
 msgid ""
 "When a coroutine is wrapped into a *Task* with functions like :func:`asyncio."
 "create_task` the coroutine is automatically scheduled to run soon::"
 msgstr ""
-":func:`asyncio.create_task` のような関数で、コルーチンが *Task* にラップされ"
-"ているとき、自動的にコルーチンは即時実行されるようにスケジュールされます::"
+"Cuando una corrutina se envuelve en una *Tarea* con funciones como :func:"
+"`asyncio.create_task` la corrutina se programa automáticamente para "
+"ejecutarse pronto::"
 
-#: ../../library/asyncio-task.rst:205
+#: ../Doc/library/asyncio-task.rst:201
 msgid "Futures"
-msgstr "Future"
+msgstr "Futures"
 
-#: ../../library/asyncio-task.rst:206
+#: ../Doc/library/asyncio-task.rst:202
 msgid ""
 "A :class:`Future` is a special **low-level** awaitable object that "
 "represents an **eventual result** of an asynchronous operation."
 msgstr ""
-":class:`Future` は、非同期処理の **最終結果** を表現する特別な **低レベルの"
-"** awaitable オブジェクトです。"
+"Un :class:`Future` es un objeto esperable especial de **bajo-nivel** que "
+"representa un **resultado eventual** de una operación asíncrona."
 
-#: ../../library/asyncio-task.rst:209
+#: ../Doc/library/asyncio-task.rst:205
 msgid ""
 "When a Future object is *awaited* it means that the coroutine will wait "
 "until the Future is resolved in some other place."
 msgstr ""
-"Future オブジェクトが *待機 (await) されている* とは、Future がどこか他の場所"
-"で解決されるまでコルーチンが待機するということです。"
+"Cuando un objeto Future es *esperado* significa que la corrutina esperará "
+"hasta que el Future se resuelva en algún otro lugar."
 
-#: ../../library/asyncio-task.rst:212
+#: ../Doc/library/asyncio-task.rst:208
 msgid ""
 "Future objects in asyncio are needed to allow callback-based code to be used "
 "with async/await."
 msgstr ""
-"asyncioのFutureオブジェクトを使うと、async/awaitとコールバック形式のコードを"
-"併用できます。"
+"Los objetos Future de asyncio son necesarios para permitir que el código "
+"basado en retro llamada se use con async/await."
 
-#: ../../library/asyncio-task.rst:215
+#: ../Doc/library/asyncio-task.rst:211
 msgid ""
 "Normally **there is no need** to create Future objects at the application "
 "level code."
 msgstr ""
-"通常、アプリケーション水準のコードで Future オブジェクトを作る **必要はありま"
-"せん** 。"
+"Normalmente , **no es necesario** crear objetos Future en el código de nivel "
+"de aplicación."
 
-#: ../../library/asyncio-task.rst:218
+#: ../Doc/library/asyncio-task.rst:214
 msgid ""
 "Future objects, sometimes exposed by libraries and some asyncio APIs, can be "
 "awaited::"
 msgstr ""
-"Future オブジェクトはライブラリや asyncio の API で表に出ることもあり、他の "
-"awaitable を待機させられます::"
+"Los objetos Future, a veces expuestos por bibliotecas y algunas API de "
+"asyncio, pueden ser esperados::"
 
-#: ../../library/asyncio-task.rst:230
+#: ../Doc/library/asyncio-task.rst:226
 msgid ""
 "A good example of a low-level function that returns a Future object is :meth:"
 "`loop.run_in_executor`."
 msgstr ""
-"Future オブジェクトを返す低レベル関数の良い例は :meth:`loop.run_in_executor` "
-"です。"
+"Un buen ejemplo de una función de bajo nivel que retorna un objeto Future "
+"es :meth:`loop.run_in_executor`."
 
-#: ../../library/asyncio-task.rst:235
+#: ../Doc/library/asyncio-task.rst:231
 msgid "Creating Tasks"
-msgstr "Task の作成"
+msgstr "Creando Tareas"
 
-#: ../../library/asyncio-task.rst:237
-msgid "**Source code:** :source:`Lib/asyncio/tasks.py`"
-msgstr "**ソースコード:** :source:`Lib/asyncio/tasks.py`"
-
-#: ../../library/asyncio-task.rst:243
+#: ../Doc/library/asyncio-task.rst:235
 msgid ""
 "Wrap the *coro* :ref:`coroutine <coroutine>` into a :class:`Task` and "
 "schedule its execution.  Return the Task object."
 msgstr ""
-"*coro* :ref:`coroutine <coroutine>` を :class:`Task` でラップし、その実行をス"
-"ケジュールします。\n"
-"Task オブジェクトを返します。"
+"Envuelve una :ref:`coroutine <coroutine>` *coro* en una :class:`Task` y "
+"programa su ejecución. Retorna el objeto Tarea."
 
-#: ../../library/asyncio-task.rst:246
+#: ../Doc/library/asyncio-task.rst:238
 msgid ""
 "If *name* is not ``None``, it is set as the name of the task using :meth:"
 "`Task.set_name`."
 msgstr ""
-"もし *name* が ``None`` でない場合、:meth:`Task.set_name` を使用し、*name* が"
-"タスクの名前として設定されます。"
+"Si *name* no es ``None``, se establece como el nombre de la tarea mediante :"
+"meth:`Task.set_name`."
 
-#: ../../library/asyncio-task.rst:249
+#: ../Doc/library/asyncio-task.rst:241
 msgid ""
 "An optional keyword-only *context* argument allows specifying a custom :"
 "class:`contextvars.Context` for the *coro* to run in. The current context "
 "copy is created when no *context* is provided."
 msgstr ""
-"省略可能なキーワード引数 *context* によって、*coro* を実行するためのカスタム"
-"の :class:`contextvars.Context` を指定できます。*context* が省略された場合、"
-"現在のコンテキストのコピーが作成されます。"
 
-#: ../../library/asyncio-task.rst:253
+#: ../Doc/library/asyncio-task.rst:245
 msgid ""
 "The task is executed in the loop returned by :func:`get_running_loop`, :exc:"
 "`RuntimeError` is raised if there is no running loop in current thread."
 msgstr ""
-"その Task オブジェクトは :func:`get_running_loop` から返されたループの中で実"
-"行されます。現在のスレッドに実行中のループが無い場合は、 :exc:`RuntimeError` "
-"が送出されます。"
+"La tarea se ejecuta en el bucle retornado por :func:`get_running_loop`, :exc:"
+"`RuntimeError` se genera si no hay ningún bucle en ejecución en el "
+"subproceso actual."
 
-#: ../../library/asyncio-task.rst:259
+#: ../Doc/library/asyncio-task.rst:251
 msgid ""
 ":meth:`asyncio.TaskGroup.create_task` is a newer alternative that allows for "
 "convenient waiting for a group of related tasks."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:264
+#: ../Doc/library/asyncio-task.rst:256
 msgid ""
 "Save a reference to the result of this function, to avoid a task "
 "disappearing mid-execution. The event loop only keeps weak references to "
@@ -305,45 +291,36 @@ msgid ""
 "any time, even before it's done. For reliable \"fire-and-forget\" background "
 "tasks, gather them in a collection::"
 msgstr ""
-"タスクが実行中に消えないように、この関数の結果の参照を保存してください。イベ"
-"ントループは弱い参照のみを保持します。ほかに参照元のないタスクは、完了してい"
-"なくてもガーベジコレクションされる可能性があります。信頼性のある \"fire-and-"
-"forget\" バックグラウンドタスクが必要な場合、コレクションを使ってください。"
 
-#: ../../library/asyncio-task.rst:286 ../../library/asyncio-task.rst:1009
+#: ../Doc/library/asyncio-task.rst:278 ../Doc/library/asyncio-task.rst:1001
+#, fuzzy
 msgid "Added the *name* parameter."
-msgstr "*name* パラメータを追加しました。"
+msgstr "Se ha añadido el parámetro ``name``."
 
-#: ../../library/asyncio-task.rst:289
+#: ../Doc/library/asyncio-task.rst:281
+#, fuzzy
 msgid "Added the *context* parameter."
-msgstr "*context* パラメータを追加しました。"
+msgstr "Se ha añadido el parámetro ``name``."
 
-#: ../../library/asyncio-task.rst:294
+#: ../Doc/library/asyncio-task.rst:286
 msgid "Task Cancellation"
-msgstr "タスクのキャンセル"
+msgstr ""
 
-#: ../../library/asyncio-task.rst:296
+#: ../Doc/library/asyncio-task.rst:288
 msgid ""
 "Tasks can easily and safely be cancelled. When a task is cancelled, :exc:"
 "`asyncio.CancelledError` will be raised in the task at the next opportunity."
 msgstr ""
-"タスクは簡単に、そして安全にキャンセルできます。タスクがキャンセルされた場"
-"合、:exc:`asyncio.CancelledError` が次の機会に送出されます。"
 
-#: ../../library/asyncio-task.rst:300
+#: ../Doc/library/asyncio-task.rst:292
 msgid ""
 "It is recommended that coroutines use ``try/finally`` blocks to robustly "
 "perform clean-up logic. In case :exc:`asyncio.CancelledError` is explicitly "
 "caught, it should generally be propagated when clean-up is complete. Most "
 "code can safely ignore :exc:`asyncio.CancelledError`."
 msgstr ""
-"クリーンアップのロジックをロバストに実行するため、コルーチンは ``try/"
-"finally`` ブロックを使うことが推奨されています。:exc:`asyncio."
-"CancelledError` が明示的にキャッチされた場合、一般的にはクリーンアップが完了"
-"したときに伝播されるべきです。ほとんどの場合 :exc:`asyncio.CancelledError` は"
-"安全に無視できます。"
 
-#: ../../library/asyncio-task.rst:305
+#: ../Doc/library/asyncio-task.rst:297
 msgid ""
 "The asyncio components that enable structured concurrency, like :class:"
 "`asyncio.TaskGroup` and :func:`asyncio.timeout`, are implemented using "
@@ -352,37 +329,37 @@ msgid ""
 "`uncancel <asyncio.Task.uncancel>`."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:314
+#: ../Doc/library/asyncio-task.rst:306
 msgid "Task Groups"
 msgstr ""
 
-#: ../../library/asyncio-task.rst:316
+#: ../Doc/library/asyncio-task.rst:308
 msgid ""
 "Task groups combine a task creation API with a convenient and reliable way "
 "to wait for all tasks in the group to finish."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:321
+#: ../Doc/library/asyncio-task.rst:313
 msgid ""
 "An :ref:`asynchronous context manager <async-context-managers>` holding a "
 "group of tasks. Tasks can be added to the group using :meth:`create_task`. "
 "All tasks are awaited when the context manager exits."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:330
+#: ../Doc/library/asyncio-task.rst:322
 msgid ""
 "Create a task in this task group. The signature matches that of :func:"
 "`asyncio.create_task`."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:333 ../../library/asyncio-task.rst:463
-#: ../../library/asyncio-task.rst:591 ../../library/asyncio-task.rst:655
-#: ../../library/asyncio-task.rst:681 ../../library/asyncio-task.rst:724
-#: ../../library/asyncio-task.rst:820
+#: ../Doc/library/asyncio-task.rst:325 ../Doc/library/asyncio-task.rst:455
+#: ../Doc/library/asyncio-task.rst:583 ../Doc/library/asyncio-task.rst:647
+#: ../Doc/library/asyncio-task.rst:673 ../Doc/library/asyncio-task.rst:716
+#: ../Doc/library/asyncio-task.rst:812
 msgid "Example::"
-msgstr "以下はプログラム例です::"
+msgstr "Ejemplo::"
 
-#: ../../library/asyncio-task.rst:341
+#: ../Doc/library/asyncio-task.rst:333
 msgid ""
 "The ``async with`` statement will wait for all tasks in the group to finish. "
 "While waiting, new tasks may still be added to the group (for example, by "
@@ -391,7 +368,7 @@ msgid ""
 "block is exited, no new tasks may be added to the group."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:348
+#: ../Doc/library/asyncio-task.rst:340
 msgid ""
 "The first time any of the tasks belonging to the group fails with an "
 "exception other than :exc:`asyncio.CancelledError`, the remaining tasks in "
@@ -403,7 +380,7 @@ msgid ""
 "bubble out of the containing ``async with`` statement."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:358
+#: ../Doc/library/asyncio-task.rst:350
 msgid ""
 "Once all tasks have finished, if any tasks have failed with an exception "
 "other than :exc:`asyncio.CancelledError`, those exceptions are combined in "
@@ -411,7 +388,7 @@ msgid ""
 "their documentation) which is then raised."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:365
+#: ../Doc/library/asyncio-task.rst:357
 msgid ""
 "Two base exceptions are treated specially: If any task fails with :exc:"
 "`KeyboardInterrupt` or :exc:`SystemExit`, the task group still cancels the "
@@ -420,7 +397,7 @@ msgid ""
 "`ExceptionGroup` or :exc:`BaseExceptionGroup`."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:371
+#: ../Doc/library/asyncio-task.rst:363
 msgid ""
 "If the body of the ``async with`` statement exits with an exception (so :"
 "meth:`~object.__aexit__` is called with an exception set), this is treated "
@@ -432,128 +409,132 @@ msgid ""
 "`KeyboardInterrupt` and :exc:`SystemExit` as in the previous paragraph."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:385
+#: ../Doc/library/asyncio-task.rst:377
 msgid "Sleeping"
-msgstr "スリープ"
+msgstr "Durmiendo"
 
-#: ../../library/asyncio-task.rst:389
+#: ../Doc/library/asyncio-task.rst:381
 msgid "Block for *delay* seconds."
-msgstr "*delay* 秒だけ停止します。"
+msgstr "Bloquea por *delay* segundos."
 
-#: ../../library/asyncio-task.rst:391
+#: ../Doc/library/asyncio-task.rst:383
 msgid ""
 "If *result* is provided, it is returned to the caller when the coroutine "
 "completes."
 msgstr ""
-"*result* が提供されている場合は、コルーチン完了時にそれが呼び出し元に返されま"
-"す。"
+"Si se proporciona *result*, se retorna al autor de la llamada cuando se "
+"completa la corrutina."
 
-#: ../../library/asyncio-task.rst:394
+#: ../Doc/library/asyncio-task.rst:386
 msgid ""
 "``sleep()`` always suspends the current task, allowing other tasks to run."
 msgstr ""
-"``sleep()`` は常に現在の Task を一時中断し、他の Task が実行されるのを許可し"
-"ます。"
+"``sleep()`` siempre suspende la tarea actual, permitiendo que se ejecuten "
+"otras tareas."
 
-#: ../../library/asyncio-task.rst:397
+#: ../Doc/library/asyncio-task.rst:389
 msgid ""
 "Setting the delay to 0 provides an optimized path to allow other tasks to "
 "run. This can be used by long-running functions to avoid blocking the event "
 "loop for the full duration of the function call."
 msgstr ""
-"delay を 0 に設定することで、他のタスクを実行可能にする最適な方針を提供しま"
-"す。この方法は、実行時間の長い関数が、その実行時間全体にわたってイベントルー"
-"プをブロックしないようにするために利用できます。"
+"Establecer el retraso en 0 proporciona una ruta optimizada para permitir que "
+"se ejecuten otras tareas. Esto puede ser utilizado por funciones de "
+"ejecución prolongada para evitar bloquear el bucle de eventos durante toda "
+"la duración de la llamada a la función."
 
-#: ../../library/asyncio-task.rst:403
+#: ../Doc/library/asyncio-task.rst:395
 msgid ""
 "Example of coroutine displaying the current date every second for 5 seconds::"
-msgstr "現在の時刻を5秒間、毎秒表示するコルーチンの例::"
-
-#: ../../library/asyncio-task.rst:421 ../../library/asyncio-task.rst:512
-#: ../../library/asyncio-task.rst:566 ../../library/asyncio-task.rst:719
-#: ../../library/asyncio-task.rst:749 ../../library/asyncio-task.rst:801
-#: ../../library/asyncio-task.rst:817 ../../library/asyncio-task.rst:826
-msgid "Removed the *loop* parameter."
 msgstr ""
+"Ejemplo de una rutina que muestra la fecha actual cada segundo durante 5 "
+"segundos::"
 
-#: ../../library/asyncio-task.rst:426
+#: ../Doc/library/asyncio-task.rst:413 ../Doc/library/asyncio-task.rst:504
+#: ../Doc/library/asyncio-task.rst:558 ../Doc/library/asyncio-task.rst:711
+#: ../Doc/library/asyncio-task.rst:741 ../Doc/library/asyncio-task.rst:793
+#: ../Doc/library/asyncio-task.rst:809 ../Doc/library/asyncio-task.rst:818
+#, fuzzy
+msgid "Removed the *loop* parameter."
+msgstr "El parámetro *loop*."
+
+#: ../Doc/library/asyncio-task.rst:418
 msgid "Running Tasks Concurrently"
-msgstr "並行な Task 実行"
+msgstr "Ejecutando tareas concurrentemente"
 
-#: ../../library/asyncio-task.rst:430
+#: ../Doc/library/asyncio-task.rst:422
 msgid ""
 "Run :ref:`awaitable objects <asyncio-awaitables>` in the *aws* sequence "
 "*concurrently*."
 msgstr ""
-"*aws* シーケンスにある :ref:`awaitable オブジェクト <asyncio-awaitables>` を "
-"*並行* 実行します。"
+"Ejecute :ref:`objetos esperables <asyncio-awaitables>` en la secuencia *aws* "
+"de forma *concurrently*."
 
-#: ../../library/asyncio-task.rst:433
+#: ../Doc/library/asyncio-task.rst:425
 msgid ""
 "If any awaitable in *aws* is a coroutine, it is automatically scheduled as a "
 "Task."
 msgstr ""
-"*aws* にある awaitable がコルーチンである場合、自動的に Task としてスケジュー"
-"ルされます。"
+"Si cualquier esperable en *aws* es una corrutina, se programa "
+"automáticamente como una Tarea."
 
-#: ../../library/asyncio-task.rst:436
+#: ../Doc/library/asyncio-task.rst:428
 msgid ""
 "If all awaitables are completed successfully, the result is an aggregate "
 "list of returned values.  The order of result values corresponds to the "
 "order of awaitables in *aws*."
 msgstr ""
-"全ての awaitable が正常終了した場合、その結果は返り値を集めたリストになりま"
-"す。\n"
-"返り値の順序は、 *aws* での awaitable の順序に相当します。"
+"Si todos los esperables se completan correctamente, el resultado es una "
+"lista agregada de valores retornados. El orden de los valores de resultado "
+"corresponde al orden de esperables en *aws*."
 
-#: ../../library/asyncio-task.rst:440
+#: ../Doc/library/asyncio-task.rst:432
 msgid ""
 "If *return_exceptions* is ``False`` (default), the first raised exception is "
 "immediately propagated to the task that awaits on ``gather()``.  Other "
 "awaitables in the *aws* sequence **won't be cancelled** and will continue to "
 "run."
 msgstr ""
-"*return_exceptions* が ``False`` である場合(デフォルト)、``gather()`` で "
-"await しているタスクに対して、最初の例外が直接伝えられます。*aws* に並んでい"
-"る他の awaitable は、**キャンセルされずに** 引き続いて実行されます。"
+"Si *return_exceptions* es ``False`` (valor predeterminado), la primera "
+"excepción provocada se propaga inmediatamente a la tarea que espera en "
+"``gather()``. Otros esperables en la secuencia *aws* **no se cancelarán** y "
+"continuarán ejecutándose."
 
-#: ../../library/asyncio-task.rst:445
+#: ../Doc/library/asyncio-task.rst:437
 msgid ""
 "If *return_exceptions* is ``True``, exceptions are treated the same as "
 "successful results, and aggregated in the result list."
 msgstr ""
-"*return_exceptions* が ``True`` だった場合、例外は成功した結果と同じように取"
-"り扱われ、結果リストに集められます。"
+"Si *return_exceptions* es ``True``, las excepciones se tratan igual que los "
+"resultados correctos y se agregan en la lista de resultados."
 
-#: ../../library/asyncio-task.rst:448
+#: ../Doc/library/asyncio-task.rst:440
 msgid ""
 "If ``gather()`` is *cancelled*, all submitted awaitables (that have not "
 "completed yet) are also *cancelled*."
 msgstr ""
-"``gather()`` が *キャンセル* された場合、起動された全ての (未完了の) "
-"awaitable も *キャンセル* されます。"
+"Si ``gather()`` es *cancelado*, todos los esperables enviados (que aún no se "
+"han completado) también se *cancelan*."
 
-#: ../../library/asyncio-task.rst:451
+#: ../Doc/library/asyncio-task.rst:443
 msgid ""
 "If any Task or Future from the *aws* sequence is *cancelled*, it is treated "
 "as if it raised :exc:`CancelledError` -- the ``gather()`` call is **not** "
 "cancelled in this case.  This is to prevent the cancellation of one "
 "submitted Task/Future to cause other Tasks/Futures to be cancelled."
 msgstr ""
-"*aws* シーケンスにある Task あるいは Future が *キャンセル* された場合、 :"
-"exc:`CancelledError` を送出したかのうように扱われます。つまり、この場合 "
-"``gather()`` 呼び出しはキャンセル *されません*。\n"
-"これは、起動された 1 つの Task あるいは Future のキャンセルが、他の Task ある"
-"いは Future のキャンセルを引き起こすのを避けるためです。"
+"Si alguna Tarea o Future de la secuencia *aws* se *cancela*, se trata como "
+"si se lanzara :exc:`CancelledError` -- la llamada ``gather()`` **no** se "
+"cancela en este caso. Esto es para evitar la cancelación de una Tarea/Future "
+"enviada para hacer que otras Tareas/Futures sean canceladas."
 
-#: ../../library/asyncio-task.rst:458
+#: ../Doc/library/asyncio-task.rst:450
 msgid ""
 "A more modern way to create and run tasks concurrently and wait for their "
 "completion is :class:`asyncio.TaskGroup`."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:501
+#: ../Doc/library/asyncio-task.rst:493
 msgid ""
 "If *return_exceptions* is False, cancelling gather() after it has been "
 "marked done won't cancel any submitted awaitables. For instance, gather can "
@@ -561,54 +542,56 @@ msgid ""
 "calling ``gather.cancel()`` after catching an exception (raised by one of "
 "the awaitables) from gather won't cancel any other awaitables."
 msgstr ""
-"*return_exceptions* が False の場合、いったん完了状態となった gather() をキャ"
-"ンセルしても起動された awaitables がキャンセルされないことがあります。例え"
-"ば、 gather は例外を呼び出し元に送出したあと完了状態になることがあるため、 "
-"(起動した awaitable のいずれかから送出された) gather からの例外をキャッチした"
-"後で ``gather.cancel()`` を呼び出しても、他の awaitable がキャンセルされない"
-"可能性があります。"
+"Si *return_exceptions* es False, cancelar gather() después de que se haya "
+"marcado como hecho no cancelará ninguna espera enviada. Por ejemplo, la "
+"recopilación se puede marcar como hecha después de propagar una excepción a "
+"la persona que llama, por lo tanto, llamar a ``gather.cancel()`` después de "
+"detectar una excepción (generada por uno de los elementos pendientes) de "
+"recopilación no cancelará ningún otro elemento pendiente."
 
-#: ../../library/asyncio-task.rst:508
+#: ../Doc/library/asyncio-task.rst:500
 msgid ""
 "If the *gather* itself is cancelled, the cancellation is propagated "
 "regardless of *return_exceptions*."
 msgstr ""
-"*gather* 自身がキャンセルされた場合は、 *return_exceptions* の値に関わらず"
-"キャンセルが伝搬されます。"
+"Si se cancela el propio *gather*, la cancelación se propaga "
+"independientemente de *return_exceptions*."
 
-#: ../../library/asyncio-task.rst:515
+#: ../Doc/library/asyncio-task.rst:507
 msgid ""
 "Deprecation warning is emitted if no positional arguments are provided or "
 "not all positional arguments are Future-like objects and there is no running "
 "event loop."
 msgstr ""
+"Se emite una advertencia de obsolescencia si no se proporcionan argumentos "
+"posicionales o no todos los argumentos posicionales son objetos de tipo "
+"Future y no hay un bucle de eventos en ejecución."
 
-#: ../../library/asyncio-task.rst:522
+#: ../Doc/library/asyncio-task.rst:514
 msgid "Shielding From Cancellation"
-msgstr "キャンセルからの保護"
+msgstr "Protección contra cancelación"
 
-#: ../../library/asyncio-task.rst:526
+#: ../Doc/library/asyncio-task.rst:518
 msgid ""
 "Protect an :ref:`awaitable object <asyncio-awaitables>` from being :meth:"
 "`cancelled <Task.cancel>`."
 msgstr ""
-":meth:`キャンセル <Task.cancel>` から :ref:`awaitable オブジェクト <asyncio-"
-"awaitables>` を保護します。"
+"Protege un :ref:`objeto esperable <asyncio-awaitables>` de ser :meth:"
+"`cancelado <Task.cancel>`."
 
-#: ../../library/asyncio-task.rst:529 ../../library/asyncio-task.rst:701
+#: ../Doc/library/asyncio-task.rst:521 ../Doc/library/asyncio-task.rst:693
 msgid "If *aw* is a coroutine it is automatically scheduled as a Task."
-msgstr ""
-"*aw* がコルーチンだった場合、自動的に Task としてスケジュールされます。"
+msgstr "Si *aw* es una corrutina, se programa automáticamente como una Tarea."
 
-#: ../../library/asyncio-task.rst:531
+#: ../Doc/library/asyncio-task.rst:523
 msgid "The statement::"
-msgstr "文::"
+msgstr "La declaración::"
 
-#: ../../library/asyncio-task.rst:536
+#: ../Doc/library/asyncio-task.rst:528
 msgid "is equivalent to::"
-msgstr "は、以下と同じです ::"
+msgstr "es equivalente a::"
 
-#: ../../library/asyncio-task.rst:540
+#: ../Doc/library/asyncio-task.rst:532
 msgid ""
 "*except* that if the coroutine containing it is cancelled, the Task running "
 "in ``something()`` is not cancelled.  From the point of view of "
@@ -616,30 +599,31 @@ msgid ""
 "still cancelled, so the \"await\" expression still raises a :exc:"
 "`CancelledError`."
 msgstr ""
-"それを含むコルーチンがキャンセルされた場合を *除き*、``something()`` 内で動作"
-"している Task はキャンセルされません。\n"
-"``something()`` 側から見るとキャンセルは発生しません。\n"
-"呼び出し元がキャンセルされた場合でも、 \"await\" 式は :exc:`CancelledError` "
-"を送出します。"
+"*excepto* que si la corrutina que lo contiene se cancela, la tarea que se "
+"ejecuta en ``something()`` no se cancela. Desde el punto de vista de "
+"``something()``, la cancelación no ocurrió. Aunque su invocador siga "
+"cancelado, por lo que la expresión \"await\" sigue generando un :exc:"
+"`CancelledError`."
 
-#: ../../library/asyncio-task.rst:546
+#: ../Doc/library/asyncio-task.rst:538
 msgid ""
 "If ``something()`` is cancelled by other means (i.e. from within itself) "
 "that would also cancel ``shield()``."
 msgstr ""
-"注意: ``something()`` が他の理由 (例えば、原因が自分自身) でキャンセルされた"
-"場合は ``shield()`` でも保護できません。"
+"Si ``something()`` se cancela por otros medios (es decir, desde dentro de sí "
+"mismo) eso también cancelaría ``shield()``."
 
-#: ../../library/asyncio-task.rst:549
+#: ../Doc/library/asyncio-task.rst:541
 msgid ""
 "If it is desired to completely ignore cancellation (not recommended) the "
 "``shield()`` function should be combined with a try/except clause, as "
 "follows::"
 msgstr ""
-"完全にキャンセルを無視したい場合 (推奨はしません) は、 ``shield()`` 関数は次"
-"のように try/except 節と組み合わせることになるでしょう::"
+"Si se desea ignorar por completo la cancelación (no se recomienda) la "
+"función ``shield()`` debe combinarse con una cláusula try/except, como se "
+"indica a continuación::"
 
-#: ../../library/asyncio-task.rst:561
+#: ../Doc/library/asyncio-task.rst:553
 msgid ""
 "Save a reference to tasks passed to this function, to avoid a task "
 "disappearing mid-execution. The event loop only keeps weak references to "
@@ -647,36 +631,38 @@ msgid ""
 "any time, even before it's done."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:569
+#: ../Doc/library/asyncio-task.rst:561
 msgid ""
 "Deprecation warning is emitted if *aw* is not Future-like object and there "
 "is no running event loop."
 msgstr ""
+"Se emite una advertencia de obsolescencia si *aw* no es un objeto similares "
+"a Futures y no hay un bucle de eventos en ejecución."
 
-#: ../../library/asyncio-task.rst:575
+#: ../Doc/library/asyncio-task.rst:567
 msgid "Timeouts"
-msgstr "タイムアウト"
+msgstr "Tiempo agotado"
 
-#: ../../library/asyncio-task.rst:579
+#: ../Doc/library/asyncio-task.rst:571
 msgid ""
 "An :ref:`asynchronous context manager <async-context-managers>` that can be "
 "used to limit the amount of time spent waiting on something."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:583
+#: ../Doc/library/asyncio-task.rst:575
 msgid ""
 "*delay* can either be ``None``, or a float/int number of seconds to wait. If "
 "*delay* is ``None``, no time limit will be applied; this can be useful if "
 "the delay is unknown when the context manager is created."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:588
+#: ../Doc/library/asyncio-task.rst:580
 msgid ""
 "In either case, the context manager can be rescheduled after creation using :"
 "meth:`Timeout.reschedule`."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:597
+#: ../Doc/library/asyncio-task.rst:589
 msgid ""
 "If ``long_running_task`` takes more than 10 seconds to complete, the context "
 "manager will cancel the current task and handle the resulting :exc:`asyncio."
@@ -684,7 +670,7 @@ msgid ""
 "TimeoutError` which can be caught and handled."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:604
+#: ../Doc/library/asyncio-task.rst:596
 msgid ""
 "The :func:`asyncio.timeout` context manager is what transforms the :exc:"
 "`asyncio.CancelledError` into an :exc:`asyncio.TimeoutError`, which means "
@@ -692,576 +678,617 @@ msgid ""
 "manager."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:609
+#: ../Doc/library/asyncio-task.rst:601
 msgid "Example of catching :exc:`asyncio.TimeoutError`::"
 msgstr ""
 
-#: ../../library/asyncio-task.rst:620
+#: ../Doc/library/asyncio-task.rst:612
 msgid ""
 "The context manager produced by :func:`asyncio.timeout` can be rescheduled "
 "to a different deadline and inspected."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:625
+#: ../Doc/library/asyncio-task.rst:617
 msgid ""
 "An :ref:`asynchronous context manager <async-context-managers>` that limits "
 "time spent inside of it."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:632
+#: ../Doc/library/asyncio-task.rst:624
 msgid ""
 "Return the current deadline, or ``None`` if the current deadline is not set."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:635
+#: ../Doc/library/asyncio-task.rst:627
 msgid ""
 "The deadline is a float, consistent with the time returned by :meth:`loop."
 "time`."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:640
+#: ../Doc/library/asyncio-task.rst:632
 msgid "Change the time the timeout will trigger."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:642
+#: ../Doc/library/asyncio-task.rst:634
 msgid ""
 "If *when* is ``None``, any current deadline will be removed, and the context "
 "manager will wait indefinitely."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:645
+#: ../Doc/library/asyncio-task.rst:637
 msgid "If *when* is a float, it is set as the new deadline."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:647
+#: ../Doc/library/asyncio-task.rst:639
 msgid ""
 "if *when* is in the past, the timeout will trigger on the next iteration of "
 "the event loop."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:652
+#: ../Doc/library/asyncio-task.rst:644
 msgid "Return whether the context manager has exceeded its deadline (expired)."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:672
+#: ../Doc/library/asyncio-task.rst:664
 msgid "Timeout context managers can be safely nested."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:678
+#: ../Doc/library/asyncio-task.rst:670
 msgid ""
 "Similar to :func:`asyncio.timeout`, except *when* is the absolute time to "
 "stop waiting, or ``None``."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:698
+#: ../Doc/library/asyncio-task.rst:690
 msgid ""
 "Wait for the *aw* :ref:`awaitable <asyncio-awaitables>` to complete with a "
 "timeout."
 msgstr ""
-"*aw* :ref:`awaitable <asyncio-awaitables>` が、完了するかタイムアウトになるの"
-"を待ちます。"
+"Espere a que el *aw* :ref:`esperable <asyncio-awaitables>` se complete con "
+"un tiempo agotado."
 
-#: ../../library/asyncio-task.rst:703
+#: ../Doc/library/asyncio-task.rst:695
 msgid ""
 "*timeout* can either be ``None`` or a float or int number of seconds to wait "
 "for.  If *timeout* is ``None``, block until the future completes."
 msgstr ""
-"*timeout* には ``None`` もしくは待つ秒数の浮動小数点数か整数を指定できま"
-"す。\n"
-"*timeout* が ``None`` の場合、 Future が完了するまで待ちます。"
+"*timeout* puede ser ``None`` o punto flotante o un número entero de segundos "
+"a esperar. Si *timeout* es ``None``, se bloquea hasta que Future se completa."
 
-#: ../../library/asyncio-task.rst:707
+#: ../Doc/library/asyncio-task.rst:699
+#, fuzzy
 msgid ""
 "If a timeout occurs, it cancels the task and raises :exc:`TimeoutError`."
 msgstr ""
+"Si se produce un agotamiento de tiempo, cancela la tarea y genera :exc:"
+"`asyncio.TimeoutError`."
 
-#: ../../library/asyncio-task.rst:710
+#: ../Doc/library/asyncio-task.rst:702
 msgid ""
 "To avoid the task :meth:`cancellation <Task.cancel>`, wrap it in :func:"
 "`shield`."
 msgstr ""
-"Task の :meth:`キャンセル <Task.cancel>` を避けるためには、 :func:`shield` の"
-"中にラップしてください。"
+"Para evitar la :meth:`cancelación <Task.cancel>` de la tarea , envuélvala "
+"en :func:`shield`."
 
-#: ../../library/asyncio-task.rst:713
+#: ../Doc/library/asyncio-task.rst:705
 msgid ""
 "The function will wait until the future is actually cancelled, so the total "
 "wait time may exceed the *timeout*. If an exception happens during "
 "cancellation, it is propagated."
 msgstr ""
-"この関数は future が実際にキャンセルされるまで待つため、待ち時間の合計は "
-"*timeout*  を超えることがあります。キャンセル中に例外が発生した場合は、その例"
-"外は伝達されます。"
+"La función esperará hasta que se cancele el Future, por lo que el tiempo de "
+"espera total puede exceder el *timeout*. Si ocurre una excepción durante la "
+"cancelación, se propaga."
 
-#: ../../library/asyncio-task.rst:717
+#: ../Doc/library/asyncio-task.rst:709
 msgid "If the wait is cancelled, the future *aw* is also cancelled."
-msgstr "待機が中止された場合 *aw* も中止されます。"
+msgstr "Si se cancela la espera, el Future *aw* también se cancela."
 
-#: ../../library/asyncio-task.rst:744
+#: ../Doc/library/asyncio-task.rst:736
+#, fuzzy
 msgid ""
 "When *aw* is cancelled due to a timeout, ``wait_for`` waits for *aw* to be "
 "cancelled.  Previously, it raised :exc:`TimeoutError` immediately."
 msgstr ""
+"Cuando *aw* se cancela debido a un agotamiento de tiempo, ``wait_for`` "
+"espera a que se cancele *aw*. Anteriormente, se lanzó inmediatamente :exc:"
+"`asyncio.TimeoutError`."
 
-#: ../../library/asyncio-task.rst:754
+#: ../Doc/library/asyncio-task.rst:746
 msgid "Waiting Primitives"
-msgstr "要素の終了待機"
+msgstr "Esperando primitivas"
 
-#: ../../library/asyncio-task.rst:758
+#: ../Doc/library/asyncio-task.rst:750
+#, fuzzy
 msgid ""
 "Run :class:`~asyncio.Future` and :class:`~asyncio.Task` instances in the "
 "*aws* iterable concurrently and block until the condition specified by "
 "*return_when*."
 msgstr ""
+"Ejecuta :ref:`objetos en espera <asyncio-awaitables>` en el *aws* iterable "
+"simultáneamente y bloquee hasta la condición especificada por *return_when*."
 
-#: ../../library/asyncio-task.rst:762
+#: ../Doc/library/asyncio-task.rst:754
 msgid "The *aws* iterable must not be empty."
-msgstr "イテラブル *aws* は空であってはなりません。"
+msgstr "El iterable *aws* no debe estar vacío."
 
-#: ../../library/asyncio-task.rst:764
+#: ../Doc/library/asyncio-task.rst:756
 msgid "Returns two sets of Tasks/Futures: ``(done, pending)``."
-msgstr "Task/Future からなる 2 つの集合 ``(done, pending)`` を返します。"
+msgstr "Retorna dos conjuntos de Tareas/Futures: ``(done, pending)``."
 
-#: ../../library/asyncio-task.rst:766
+#: ../Doc/library/asyncio-task.rst:758
 msgid "Usage::"
-msgstr "使い方::"
+msgstr "Uso::"
 
-#: ../../library/asyncio-task.rst:770
+#: ../Doc/library/asyncio-task.rst:762
 msgid ""
 "*timeout* (a float or int), if specified, can be used to control the maximum "
 "number of seconds to wait before returning."
 msgstr ""
-"*timeout* (浮動小数点数または整数) が指定されていたら、処理を返すのを待つ最大"
-"秒数を制御するのに使われます。"
+"*timeout* (un punto flotante o int), si se especifica, se puede utilizar "
+"para controlar el número máximo de segundos que hay que esperar antes de "
+"retornar."
 
-#: ../../library/asyncio-task.rst:773
+#: ../Doc/library/asyncio-task.rst:765
+#, fuzzy
 msgid ""
 "Note that this function does not raise :exc:`TimeoutError`. Futures or Tasks "
 "that aren't done when the timeout occurs are simply returned in the second "
 "set."
 msgstr ""
+"Tenga en cuenta que esta función no lanza :exc:`asyncio.TimeoutError`. Los "
+"Futures o Tareas que no terminan cuando se agota el tiempo simplemente se "
+"retornan en el segundo conjunto."
 
-#: ../../library/asyncio-task.rst:777
+#: ../Doc/library/asyncio-task.rst:769
 msgid ""
 "*return_when* indicates when this function should return.  It must be one of "
 "the following constants:"
 msgstr ""
-"*return_when* でこの関数がいつ結果を返すか指定します。指定できる値は以下の 定"
-"数のどれか一つです:"
+"*return_when* indica cuándo debe retornar esta función. Debe ser una de las "
+"siguientes constantes:"
 
-#: ../../library/asyncio-task.rst:783
+#: ../Doc/library/asyncio-task.rst:775
 msgid "Constant"
-msgstr "定数"
+msgstr "Constante"
 
-#: ../../library/asyncio-task.rst:783
+#: ../Doc/library/asyncio-task.rst:775
 msgid "Description"
-msgstr "説明"
+msgstr "Descripción"
 
-#: ../../library/asyncio-task.rst:785
+#: ../Doc/library/asyncio-task.rst:777
 msgid ":const:`FIRST_COMPLETED`"
 msgstr ":const:`FIRST_COMPLETED`"
 
-#: ../../library/asyncio-task.rst:785
+#: ../Doc/library/asyncio-task.rst:777
 msgid "The function will return when any future finishes or is cancelled."
-msgstr "いずれかのフューチャが終了したかキャンセルされたときに返します。"
+msgstr "La función retornará cuando cualquier Future termine o se cancele."
 
-#: ../../library/asyncio-task.rst:788
+#: ../Doc/library/asyncio-task.rst:780
 msgid ":const:`FIRST_EXCEPTION`"
 msgstr ":const:`FIRST_EXCEPTION`"
 
-#: ../../library/asyncio-task.rst:788
+#: ../Doc/library/asyncio-task.rst:780
 msgid ""
 "The function will return when any future finishes by raising an exception.  "
 "If no future raises an exception then it is equivalent to :const:"
 "`ALL_COMPLETED`."
 msgstr ""
-"いずれかのフューチャが例外の送出で終了した場合に返します。例外を送出した"
-"フューチャがない場合は、:const:`ALL_COMPLETED` と等価になります。"
+"La función retornará cuando cualquier Future finalice lanzando una "
+"excepción. Si ningún Future lanza una excepción, entonces es equivalente a :"
+"const:`ALL_COMPLETED`."
 
-#: ../../library/asyncio-task.rst:794
+#: ../Doc/library/asyncio-task.rst:786
 msgid ":const:`ALL_COMPLETED`"
 msgstr ":const:`ALL_COMPLETED`"
 
-#: ../../library/asyncio-task.rst:794
+#: ../Doc/library/asyncio-task.rst:786
 msgid "The function will return when all futures finish or are cancelled."
-msgstr "すべてのフューチャが終了したかキャンセルされたときに返します。"
+msgstr "La función retornará cuando todos los Futures terminen o se cancelen."
 
-#: ../../library/asyncio-task.rst:798
+#: ../Doc/library/asyncio-task.rst:790
 msgid ""
 "Unlike :func:`~asyncio.wait_for`, ``wait()`` does not cancel the futures "
 "when a timeout occurs."
 msgstr ""
-":func:`~asyncio.wait_for` と異なり、  ``wait()`` はタイムアウトが起きたとき"
-"に Future をキャンセルしません。"
+"A diferencia de :func:`~asyncio.wait_for`, ``wait()`` no cancela los Futures "
+"cuando se produce un agotamiento de tiempo."
 
-#: ../../library/asyncio-task.rst:804
+#: ../Doc/library/asyncio-task.rst:796
+#, fuzzy
 msgid "Passing coroutine objects to ``wait()`` directly is forbidden."
-msgstr ""
+msgstr "El paso de objetos corrutina a ``wait()`` directamente está en desuso."
 
-#: ../../library/asyncio-task.rst:809
+#: ../Doc/library/asyncio-task.rst:801
 msgid ""
 "Run :ref:`awaitable objects <asyncio-awaitables>` in the *aws* iterable "
 "concurrently.  Return an iterator of coroutines. Each coroutine returned can "
 "be awaited to get the earliest next result from the iterable of the "
 "remaining awaitables."
 msgstr ""
-"イテラブル *aws* 内の :ref:`awaitable オブジェクト <asyncio-awaitables>` を並"
-"列実行します。コルーチンのイテレータを返します。戻り値の各コルーチンは、残り"
-"の awaitable のうちで最も早く得られた結果を待ち受けることができます。"
+"Ejecuta :ref:`objetos en espera <asyncio-awaitables>` en el *aws* iterable "
+"al mismo tiempo. Devuelve un iterador de corrutinas. Se puede esperar a cada "
+"corrutina devuelta para obtener el siguiente resultado más temprano del "
+"iterable de los esperables restantes."
 
-#: ../../library/asyncio-task.rst:814
+#: ../Doc/library/asyncio-task.rst:806
+#, fuzzy
 msgid ""
 "Raises :exc:`TimeoutError` if the timeout occurs before all Futures are done."
 msgstr ""
+"Lanza :exc:`asyncio.TimeoutError` si el agotamiento de tiempo ocurre antes "
+"que todos los Futures terminen."
 
-#: ../../library/asyncio-task.rst:829
+#: ../Doc/library/asyncio-task.rst:821
 msgid ""
 "Deprecation warning is emitted if not all awaitable objects in the *aws* "
 "iterable are Future-like objects and there is no running event loop."
 msgstr ""
+"Se emite una advertencia de obsolescencia si no todos los objetos en espera "
+"en el iterable *aws* son objetos de tipo Future y no hay un bucle de eventos "
+"en ejecución."
 
-#: ../../library/asyncio-task.rst:835
+#: ../Doc/library/asyncio-task.rst:827
 msgid "Running in Threads"
-msgstr "スレッド内での実行"
+msgstr "Ejecutando en hilos"
 
-#: ../../library/asyncio-task.rst:839
+#: ../Doc/library/asyncio-task.rst:831
 msgid "Asynchronously run function *func* in a separate thread."
-msgstr "別のスレッドで非同期的に関数 *func* を実行します。"
+msgstr "Ejecutar asincrónicamente la función *func* en un hilo separado."
 
-#: ../../library/asyncio-task.rst:841
+#: ../Doc/library/asyncio-task.rst:833
 msgid ""
 "Any \\*args and \\*\\*kwargs supplied for this function are directly passed "
 "to *func*. Also, the current :class:`contextvars.Context` is propagated, "
 "allowing context variables from the event loop thread to be accessed in the "
 "separate thread."
 msgstr ""
-"この関数に渡された \\*args と \\*\\*kwargs は関数 *func* に直接渡されます。ま"
-"た、イベントループスレッドのコンテキスト変数に関数を実行するスレッドからアク"
-"セスできるように、現在の :class:`contextvars.Context` も伝播されます。"
+"Cualquier \\*args y \\*\\*kwargs suministrados para esta función se pasan "
+"directamente a *func*. Además, el current :class:`contextvars.Context` se "
+"propaga, lo que permite acceder a las variables de contexto del subproceso "
+"del bucle de eventos en el subproceso separado."
 
-#: ../../library/asyncio-task.rst:846
+#: ../Doc/library/asyncio-task.rst:838
 msgid ""
 "Return a coroutine that can be awaited to get the eventual result of *func*."
-msgstr "関数 *func* の最終結果を待ち受けできるコルーチンを返します。"
+msgstr ""
+"Retorna una corrutina que se puede esperar para obtener el resultado final "
+"de *func*."
 
-#: ../../library/asyncio-task.rst:848
+#: ../Doc/library/asyncio-task.rst:840
+#, fuzzy
 msgid ""
 "This coroutine function is primarily intended to be used for executing IO-"
 "bound functions/methods that would otherwise block the event loop if they "
 "were run in the main thread. For example::"
 msgstr ""
+"Esta función de corrutina está destinada principalmente a ser utilizada para "
+"ejecutar funciones/métodos vinculados a IO que de otro modo bloquearían el "
+"bucle de eventos si se ejecutaran en el hilo principal. Por ejemplo::"
 
-#: ../../library/asyncio-task.rst:878
+#: ../Doc/library/asyncio-task.rst:870
+#, fuzzy
 msgid ""
 "Directly calling ``blocking_io()`` in any coroutine would block the event "
 "loop for its duration, resulting in an additional 1 second of run time. "
 "Instead, by using ``asyncio.to_thread()``, we can run it in a separate "
 "thread without blocking the event loop."
 msgstr ""
+"Llamando directamente a `blocking_io()` en cualquier corrutina bloquearía el "
+"bucle de eventos por su duración, lo que daría como resultado 1 segundo "
+"adicional de tiempo de ejecución. En cambio, usando `asyncio.to_thread()`, "
+"podemos ejecutarlo en un hilo separado sin bloquear el bucle de eventos."
 
-#: ../../library/asyncio-task.rst:885
+#: ../Doc/library/asyncio-task.rst:877
+#, fuzzy
 msgid ""
 "Due to the :term:`GIL`, ``asyncio.to_thread()`` can typically only be used "
 "to make IO-bound functions non-blocking. However, for extension modules that "
 "release the GIL or alternative Python implementations that don't have one, "
 "``asyncio.to_thread()`` can also be used for CPU-bound functions."
 msgstr ""
+"Debido al :term:`GIL`, `asyncio.to_thread()` normalmente solo se puede usar "
+"para hacer que las funciones vinculadas a IO no bloqueen. Sin embargo, para "
+"los módulos de extensión que lanzan GIL o implementaciones alternativas de "
+"Python que no tienen una, `asyncio.to_thread()` también se puede usar para "
+"funciones vinculadas a la CPU."
 
-#: ../../library/asyncio-task.rst:894
+#: ../Doc/library/asyncio-task.rst:886
 msgid "Scheduling From Other Threads"
-msgstr "外部スレッドからのスケジュール"
+msgstr "Planificación desde otros hilos"
 
-#: ../../library/asyncio-task.rst:898
+#: ../Doc/library/asyncio-task.rst:890
 msgid "Submit a coroutine to the given event loop.  Thread-safe."
 msgstr ""
-"与えられたイベントループにコルーチンを送ります。\n"
-"この処理は、スレッドセーフです。"
+"Envía una corrutina al bucle de eventos especificado. Seguro para Hilos."
 
-#: ../../library/asyncio-task.rst:900
+#: ../Doc/library/asyncio-task.rst:892
 msgid ""
 "Return a :class:`concurrent.futures.Future` to wait for the result from "
 "another OS thread."
 msgstr ""
-"他の OS スレッドから結果を待つための :class:`concurrent.futures.Future` を返"
-"します。"
+"Retorna :class:`concurrent.futures.Future` para esperar el resultado de otro "
+"hilo del SO (Sistema Operativo)."
 
-#: ../../library/asyncio-task.rst:903
+#: ../Doc/library/asyncio-task.rst:895
 msgid ""
 "This function is meant to be called from a different OS thread than the one "
 "where the event loop is running.  Example::"
 msgstr ""
-"この関数は、イベントループが動作しているスレッドとは異なる OS スレッドから呼"
-"び出すためのものです。\n"
-"例えば次のように使います::"
+"Esta función está pensada para llamarse desde un hilo del SO diferente al "
+"que se ejecuta el bucle de eventos. Ejemplo::"
 
-#: ../../library/asyncio-task.rst:915
+#: ../Doc/library/asyncio-task.rst:907
 msgid ""
 "If an exception is raised in the coroutine, the returned Future will be "
 "notified.  It can also be used to cancel the task in the event loop::"
 msgstr ""
-"コルーチンから例外が送出された場合、返された Future に通知されます。\n"
-"これはイベントループの Task をキャンセルするのにも使えます::"
+"Si se lanza una excepción en la corrutina, el Future retornado será "
+"notificado. También se puede utilizar para cancelar la tarea en el bucle de "
+"eventos::"
 
-#: ../../library/asyncio-task.rst:929
+#: ../Doc/library/asyncio-task.rst:921
 msgid ""
 "See the :ref:`concurrency and multithreading <asyncio-multithreading>` "
 "section of the documentation."
 msgstr ""
-"このドキュメントの :ref:`asyncio-multithreading` 節を参照してください。"
+"Consulte la sección de la documentación :ref:`Concurrencia y multi hilos "
+"<asyncio-multithreading>`."
 
-#: ../../library/asyncio-task.rst:932
+#: ../Doc/library/asyncio-task.rst:924
 msgid ""
 "Unlike other asyncio functions this function requires the *loop* argument to "
 "be passed explicitly."
 msgstr ""
-"他の asyncio 関数とは異なり、この関数は明示的に渡される *loop* 引数を必要とし"
-"ます。"
+"A diferencia de otras funciones asyncio, esta función requiere que el "
+"argumento *loop* se pase explícitamente."
 
-#: ../../library/asyncio-task.rst:939
+#: ../Doc/library/asyncio-task.rst:931
 msgid "Introspection"
-msgstr "イントロスペクション"
+msgstr "Introspección"
 
-#: ../../library/asyncio-task.rst:944
+#: ../Doc/library/asyncio-task.rst:936
 msgid ""
 "Return the currently running :class:`Task` instance, or ``None`` if no task "
 "is running."
 msgstr ""
-"現在実行中の :class:`Task` インスタンスを返します。実行中の Task が無い場合"
-"は ``None`` を返します。"
+"Retorna la instancia :class:`Task` actualmente en ejecución o ``None`` si no "
+"se está ejecutando ninguna tarea."
 
-#: ../../library/asyncio-task.rst:947
+#: ../Doc/library/asyncio-task.rst:939
 msgid ""
 "If *loop* is ``None`` :func:`get_running_loop` is used to get the current "
 "loop."
 msgstr ""
-"*loop* が ``None`` の場合、 :func:`get_running_loop` が現在のループを取得する"
-"のに使われます。"
+"Si *loop* es ``None`` :func:`get_running_loop` se utiliza para obtener el "
+"bucle actual."
 
-#: ../../library/asyncio-task.rst:955
+#: ../Doc/library/asyncio-task.rst:947
 msgid "Return a set of not yet finished :class:`Task` objects run by the loop."
 msgstr ""
-"ループで実行された :class:`Task` オブジェクトでまだ完了していないものの集合を"
-"返します。"
+"Retorna un conjunto de objetos :class:`Task` que se ejecutan por el bucle."
 
-#: ../../library/asyncio-task.rst:958
+#: ../Doc/library/asyncio-task.rst:950
 msgid ""
 "If *loop* is ``None``, :func:`get_running_loop` is used for getting current "
 "loop."
 msgstr ""
-"*loop* が ``None`` の場合、 :func:`get_running_loop` は現在のループを取得する"
-"のに使われます。"
+"Si *loop* es ``None``, :func:`get_running_loop` se utiliza para obtener el "
+"bucle actual."
 
-#: ../../library/asyncio-task.rst:965
+#: ../Doc/library/asyncio-task.rst:957
 msgid "Task Object"
-msgstr "Task オブジェクト"
+msgstr "Objeto Task"
 
-#: ../../library/asyncio-task.rst:969
+#: ../Doc/library/asyncio-task.rst:961
 msgid ""
 "A :class:`Future-like <Future>` object that runs a Python :ref:`coroutine "
 "<coroutine>`.  Not thread-safe."
 msgstr ""
-"Python :ref:`コルーチン <coroutine>` を実行する :class:`Future 類 <Future>` "
-"オブジェクトです。\n"
-"スレッドセーフではありません。"
+"Un objeto :class:`similar a Future <Future>` que ejecuta Python :ref:"
+"`coroutine <coroutine>`. No es seguro hilos."
 
-#: ../../library/asyncio-task.rst:972
+#: ../Doc/library/asyncio-task.rst:964
 msgid ""
 "Tasks are used to run coroutines in event loops. If a coroutine awaits on a "
 "Future, the Task suspends the execution of the coroutine and waits for the "
 "completion of the Future.  When the Future is *done*, the execution of the "
 "wrapped coroutine resumes."
 msgstr ""
-"Task はイベントループのコルーチンを実行するのに使われます。\n"
-"Future でコルーチンが待機している場合、 Task は自身のコルーチンの実行を一時停"
-"止させ、 Future の完了を待ちます。\n"
-"Future が *完了* したら、 Task が内包しているコルーチンの実行を再開します。"
+"Las tareas se utilizan para ejecutar corrutinas en bucles de eventos. Si una "
+"corrutina aguarda en un Future, la Tarea suspende la ejecución de la "
+"corrutina y espera la finalización del Future. Cuando el Future *termina*, "
+"se reanuda la ejecución de la corrutina envuelta."
 
-#: ../../library/asyncio-task.rst:978
+#: ../Doc/library/asyncio-task.rst:970
 msgid ""
 "Event loops use cooperative scheduling: an event loop runs one Task at a "
 "time.  While a Task awaits for the completion of a Future, the event loop "
 "runs other Tasks, callbacks, or performs IO operations."
 msgstr ""
-"イベントループは協調スケジューリングを使用します。つまり、イベントループは同"
-"時に 1 つの Task のみ実行します。\n"
-"Task が Future の完了を待っているときは、イベントループは他の Task やコール"
-"バックを動作させるか、 IO 処理を実行します。"
+"Los bucles de eventos usan la programación cooperativa: un bucle de eventos "
+"ejecuta una tarea a la vez. Mientras una Tarea espera para la finalización "
+"de un Future, el bucle de eventos ejecuta otras tareas, retorno de llamada o "
+"realiza operaciones de E/S."
 
-#: ../../library/asyncio-task.rst:983
+#: ../Doc/library/asyncio-task.rst:975
 msgid ""
 "Use the high-level :func:`asyncio.create_task` function to create Tasks, or "
 "the low-level :meth:`loop.create_task` or :func:`ensure_future` functions.  "
 "Manual instantiation of Tasks is discouraged."
 msgstr ""
-"Task を作成するには高レベルの :func:`asyncio.create_task` 関数、あるいは低レ"
-"ベルの :meth:`loop.create_task` 関数や :func:`ensure_future` 関数を使用してく"
-"ださい。\n"
-"手作業での Task の実装は推奨されません。"
+"Utilice la función de alto nivel :func:`asyncio.create_task` para crear "
+"Tareas, o las funciones de bajo nivel :meth:`loop.create_task` o :func:"
+"`ensure_future`. Se desaconseja la creación de instancias manuales de Tareas."
 
-#: ../../library/asyncio-task.rst:988
+#: ../Doc/library/asyncio-task.rst:980
 msgid ""
 "To cancel a running Task use the :meth:`cancel` method.  Calling it will "
 "cause the Task to throw a :exc:`CancelledError` exception into the wrapped "
 "coroutine.  If a coroutine is awaiting on a Future object during "
 "cancellation, the Future object will be cancelled."
 msgstr ""
-"実行中のタスクをキャンセルするためには、:meth:`cancel` メソッドを使用します。"
-"このメソッドを呼ぶと、タスクはそれを内包するコルーチンに対して :exc:"
-"`CancelledError` 例外を送出します。キャンセルの際にコルーチンが Future オブ"
-"ジェクトを待っていた場合、その Future オブジェクトはキャンセルされます。"
+"Para cancelar una Tarea en ejecución, utilice el método :meth:`cancel`. "
+"Llamarlo hará que la tarea lance una excepción :exc:`CancelledError` en la "
+"corrutina contenida. Si una corrutina está esperando en un objeto Future "
+"durante la cancelación, se cancelará el objeto Future."
 
-#: ../../library/asyncio-task.rst:993
+#: ../Doc/library/asyncio-task.rst:985
 msgid ""
 ":meth:`cancelled` can be used to check if the Task was cancelled. The method "
 "returns ``True`` if the wrapped coroutine did not suppress the :exc:"
 "`CancelledError` exception and was actually cancelled."
 msgstr ""
-":meth:`cancelled` は、タスクがキャンセルされたかを調べるのに使用できます。タ"
-"スクを内包するコルーチンで :exc:`CancelledError` 例外が抑制されておらず、かつ"
-"タスクが実際にキャンセルされている場合に、このメソッドは ``True`` を変えま"
-"す。"
+":meth:`cancelled` se puede utilizar para comprobar si la Tarea fue "
+"cancelada. El método devuelve ``True`` si la corrutina contenida no suprimió "
+"la excepción :exc:`CancelledError` y se canceló realmente."
 
-#: ../../library/asyncio-task.rst:998
+#: ../Doc/library/asyncio-task.rst:990
 msgid ""
 ":class:`asyncio.Task` inherits from :class:`Future` all of its APIs except :"
 "meth:`Future.set_result` and :meth:`Future.set_exception`."
 msgstr ""
-":class:`asyncio.Task` は、:meth:`Future.set_result` と :meth:`Future."
-"set_exception` を除いて、:class:`Future` の API をすべて継承しています。"
+":class:`asyncio.Task` hereda de :class:`Future` todas sus API excepto :meth:"
+"`Future.set_result` y :meth:`Future.set_exception`."
 
-#: ../../library/asyncio-task.rst:1002
+#: ../Doc/library/asyncio-task.rst:994
 msgid ""
 "Tasks support the :mod:`contextvars` module.  When a Task is created it "
 "copies the current context and later runs its coroutine in the copied "
 "context."
 msgstr ""
-"Task は :mod:`contextvars` モジュールをサポートします。Task が作られたときに"
-"現在のコンテキストがコピーされ、のちに Task のコルーチンを実行する際に、コ"
-"ピーされたコンテキストが使用されます。"
+"Las tareas admiten el módulo :mod:`contextvars`. Cuando se crea una Tarea, "
+"copia el contexto actual y, posteriormente, ejecuta su corrutina en el "
+"contexto copiado."
 
-#: ../../library/asyncio-task.rst:1006
+#: ../Doc/library/asyncio-task.rst:998
 msgid "Added support for the :mod:`contextvars` module."
-msgstr ":mod:`contextvars` モジュールのサポートを追加。"
+msgstr "Agregado soporte para el módulo :mod:`contextvars`."
 
-#: ../../library/asyncio-task.rst:1012
+#: ../Doc/library/asyncio-task.rst:1004
 msgid ""
 "Deprecation warning is emitted if *loop* is not specified and there is no "
 "running event loop."
 msgstr ""
+"Se emite una advertencia de obsolescencia si no se especifica *loop* y no "
+"hay un bucle de eventos en ejecución."
 
-#: ../../library/asyncio-task.rst:1018
+#: ../Doc/library/asyncio-task.rst:1010
 msgid "Return ``True`` if the Task is *done*."
-msgstr "Task が *完了* しているなら ``True`` を返します。"
+msgstr "Retorna ``True`` si la Tarea está *finalizada*."
 
-#: ../../library/asyncio-task.rst:1020
+#: ../Doc/library/asyncio-task.rst:1012
 msgid ""
 "A Task is *done* when the wrapped coroutine either returned a value, raised "
 "an exception, or the Task was cancelled."
 msgstr ""
-"Task がラップしているコルーチンが値を返すか、例外を送出するか、または Task が"
-"キャンセルされたとき、 Task は *完了* します。"
+"Una tarea está *finalizada* cuando la corrutina contenida retornó un valor, "
+"lanzó una excepción, o se canceló la Tarea."
 
-#: ../../library/asyncio-task.rst:1025
+#: ../Doc/library/asyncio-task.rst:1017
 msgid "Return the result of the Task."
-msgstr "Task の結果を返します。"
+msgstr "Retorna el resultado de la Tarea."
 
-#: ../../library/asyncio-task.rst:1027
+#: ../Doc/library/asyncio-task.rst:1019
 msgid ""
 "If the Task is *done*, the result of the wrapped coroutine is returned (or "
 "if the coroutine raised an exception, that exception is re-raised.)"
 msgstr ""
-"Task が *完了* している場合、ラップしているコルーチンの結果が返されます (コ"
-"ルーチンが例外を送出された場合、その例外が例外が再送出されます)"
+"Si la tarea está *terminada*, se devuelve el resultado de la corrutina "
+"contenida (o si la corrutina lanzó una excepción, esa excepción se vuelve a "
+"relanzar.)"
 
-#: ../../library/asyncio-task.rst:1031 ../../library/asyncio-task.rst:1045
+#: ../Doc/library/asyncio-task.rst:1023 ../Doc/library/asyncio-task.rst:1037
 msgid ""
 "If the Task has been *cancelled*, this method raises a :exc:`CancelledError` "
 "exception."
 msgstr ""
-"Task が *キャンセル* されている場合、このメソッドは :exc:`CancelledError` 例"
-"外を送出します。"
+"Si la Tarea ha sido *cancelada*, este método lanza una excepción :exc:"
+"`CancelledError`."
 
-#: ../../library/asyncio-task.rst:1034
+#: ../Doc/library/asyncio-task.rst:1026
 msgid ""
 "If the Task's result isn't yet available, this method raises a :exc:"
 "`InvalidStateError` exception."
 msgstr ""
-"Task の結果がまだ未設定の場合、このメソッドは :exc:`InvalidStateError` 例外を"
-"送出します。"
+"Si el resultado de la Tarea aún no está disponible, este método lanza una "
+"excepción :exc:`InvalidStateError`."
 
-#: ../../library/asyncio-task.rst:1039
+#: ../Doc/library/asyncio-task.rst:1031
 msgid "Return the exception of the Task."
-msgstr "Task の例外を返します。"
+msgstr "Retorna la excepción de la Tarea."
 
-#: ../../library/asyncio-task.rst:1041
+#: ../Doc/library/asyncio-task.rst:1033
 msgid ""
 "If the wrapped coroutine raised an exception that exception is returned.  If "
 "the wrapped coroutine returned normally this method returns ``None``."
 msgstr ""
-"ラップされたコルーチンが例外を送出した場合、その例外が返されます。ラップされ"
-"たコルーチンが正常終了した場合、このメソッドは ``None`` を返します。"
+"Si la corrutina contenida lanzó una excepción, esa excepción es retornada. "
+"Si la corrutina contenida retorna normalmente, este método retorna ``None``."
 
-#: ../../library/asyncio-task.rst:1048
+#: ../Doc/library/asyncio-task.rst:1040
 msgid ""
 "If the Task isn't *done* yet, this method raises an :exc:`InvalidStateError` "
 "exception."
 msgstr ""
-"Task がまだ *完了* していない場合、このメソッドは :exc:`InvalidStateError` 例"
-"外を送出します。"
+"Si la Tarea aún no está *terminada*, este método lanza una excepción :exc:"
+"`InvalidStateError`."
 
-#: ../../library/asyncio-task.rst:1053
+#: ../Doc/library/asyncio-task.rst:1045
 msgid "Add a callback to be run when the Task is *done*."
-msgstr "Task が *完了* したときに実行されるコールバックを追加します。"
+msgstr ""
+"Agrega una retro llamada que se ejecutará cuando la Tarea esté *terminada*."
 
-#: ../../library/asyncio-task.rst:1055 ../../library/asyncio-task.rst:1064
+#: ../Doc/library/asyncio-task.rst:1047 ../Doc/library/asyncio-task.rst:1056
 msgid "This method should only be used in low-level callback-based code."
-msgstr "このメソッドは低水準のコールバックベースのコードでのみ使うべきです。"
+msgstr ""
+"Este método solo se debe usar en código basado en retrollamada de bajo nivel."
 
-#: ../../library/asyncio-task.rst:1057
+#: ../Doc/library/asyncio-task.rst:1049
 msgid ""
 "See the documentation of :meth:`Future.add_done_callback` for more details."
 msgstr ""
-"詳細については :meth:`Future.add_done_callback` のドキュメントを参照してくだ"
-"さい。"
+"Consulte la documentación de :meth:`Future.add_done_callback` para obtener "
+"más detalles."
 
-#: ../../library/asyncio-task.rst:1062
+#: ../Doc/library/asyncio-task.rst:1054
 msgid "Remove *callback* from the callbacks list."
-msgstr "コールバックリストから *callback* を削除します。"
+msgstr "Remueve la *retrollamada* de la lista de retrollamadas."
 
-#: ../../library/asyncio-task.rst:1066
+#: ../Doc/library/asyncio-task.rst:1058
 msgid ""
 "See the documentation of :meth:`Future.remove_done_callback` for more "
 "details."
 msgstr ""
-"詳細については :meth:`Future.remove_done_callback` のドキュメントを参照してく"
-"ださい。"
+"Consulte la documentación de :meth:`Future.remove_done_callback` para "
+"obtener más detalles."
 
-#: ../../library/asyncio-task.rst:1071
+#: ../Doc/library/asyncio-task.rst:1063
 msgid "Return the list of stack frames for this Task."
-msgstr "このタスクのスタックフレームのリストを返します。"
+msgstr "Retorna la lista de marcos de pila para esta tarea."
 
-#: ../../library/asyncio-task.rst:1073
+#: ../Doc/library/asyncio-task.rst:1065
 msgid ""
 "If the wrapped coroutine is not done, this returns the stack where it is "
 "suspended.  If the coroutine has completed successfully or was cancelled, "
 "this returns an empty list. If the coroutine was terminated by an exception, "
 "this returns the list of traceback frames."
 msgstr ""
-"コルーチンが完了していない場合、これはサスペンドされた時点でのスタックを返し"
-"ます。コルーチンが正常に処理を完了したか、キャンセルされていた場合は空のリス"
-"トを返します。コルーチンが例外で終了した場合はトレースバックフレームのリスト"
-"を返します。"
+"Si la corrutina contenida no se termina, esto retorna la pila donde se "
+"suspende. Si la corrutina se ha completado correctamente o se ha cancelado, "
+"retorna una lista vacía. Si la corrutina terminó por una excepción, esto "
+"retorna la lista de marcos de seguimiento."
 
-#: ../../library/asyncio-task.rst:1079
+#: ../Doc/library/asyncio-task.rst:1071
 msgid "The frames are always ordered from oldest to newest."
-msgstr "フレームは常に古いものから新しい物へ並んでいます。"
+msgstr "Los marcos siempre se ordenan de más antiguo a más nuevo."
 
-#: ../../library/asyncio-task.rst:1081
+#: ../Doc/library/asyncio-task.rst:1073
 msgid "Only one stack frame is returned for a suspended coroutine."
-msgstr ""
-"サスペンドされているコルーチンの場合スタックフレームが 1 個だけ返されます。"
+msgstr "Solo se retorna un marco de pila para una corrutina suspendida."
 
-#: ../../library/asyncio-task.rst:1083
+#: ../Doc/library/asyncio-task.rst:1075
 msgid ""
 "The optional *limit* argument sets the maximum number of frames to return; "
 "by default all available frames are returned. The ordering of the returned "
@@ -1269,81 +1296,86 @@ msgid ""
 "newest frames of a stack are returned, but the oldest frames of a traceback "
 "are returned.  (This matches the behavior of the traceback module.)"
 msgstr ""
-"オプション引数 *limit* は返すフレームの最大数を指定します; デフォルトでは取得"
-"可能な全てのフレームを返します。返されるリストの順番は、スタックが返される"
-"か、トレースバックが返されるかによって変わります: スタックでは新しい順に並ん"
-"だリストが返されますが、トレースバックでは古い順に並んだリストが返されます"
-"（これは traceback モジュールの振る舞いと一致します）。"
+"El argumento opcional *limit* establece el número máximo de marcos que se "
+"retornarán; de forma predeterminada se retornan todos los marcos "
+"disponibles. El orden de la lista devuelta varía en función de si se retorna "
+"una pila o un *traceback*: se devuelven los marcos más recientes de una "
+"pila, pero se devuelven los marcos más antiguos de un *traceback*. (Esto "
+"coincide con el comportamiento del módulo traceback.)ss"
 
-#: ../../library/asyncio-task.rst:1092
+#: ../Doc/library/asyncio-task.rst:1084
 msgid "Print the stack or traceback for this Task."
-msgstr "このタスクのスタックまたはトレースバックを出力します。"
+msgstr "Imprime la pila o el seguimiento de esta tarea."
 
-#: ../../library/asyncio-task.rst:1094
+#: ../Doc/library/asyncio-task.rst:1086
 msgid ""
 "This produces output similar to that of the traceback module for the frames "
 "retrieved by :meth:`get_stack`."
 msgstr ""
-"このメソッドは :meth:`get_stack` によって取得されるフレームに対し、 "
-"traceback モジュールと同じような出力を生成します。"
+"Esto produce una salida similar a la del módulo traceback para los marcos "
+"recuperados por :meth:`get_stack`."
 
-#: ../../library/asyncio-task.rst:1097
+#: ../Doc/library/asyncio-task.rst:1089
 msgid "The *limit* argument is passed to :meth:`get_stack` directly."
-msgstr "引数 *limit* は :meth:`get_stack` にそのまま渡されます。"
+msgstr "El argumento *limit* se pasa directamente a :meth:`get_stack`."
 
-#: ../../library/asyncio-task.rst:1099
+#: ../Doc/library/asyncio-task.rst:1091
 msgid ""
 "The *file* argument is an I/O stream to which the output is written; by "
-"default output is written to :data:`sys.stdout`."
+"default output is written to :data:`sys.stderr`."
 msgstr ""
+"El argumento *file* es un flujo de E/S en el que se escribe la salida; por "
+"defecto, la salida se escribe en :data:`sys.stderr`."
 
-#: ../../library/asyncio-task.rst:1104
+#: ../Doc/library/asyncio-task.rst:1096
 msgid "Return the coroutine object wrapped by the :class:`Task`."
-msgstr ":class:`Task` がラップしているコルーチンオブジェクトを返します。"
+msgstr "Retorna el objeto corrutina contenido por :class:`Task`."
 
-#: ../../library/asyncio-task.rst:1110
+#: ../Doc/library/asyncio-task.rst:1102
 msgid "Return the name of the Task."
-msgstr "Task の名前を返します。"
+msgstr "Retorna el nombre de la Tarea."
 
-#: ../../library/asyncio-task.rst:1112
+#: ../Doc/library/asyncio-task.rst:1104
 msgid ""
 "If no name has been explicitly assigned to the Task, the default asyncio "
 "Task implementation generates a default name during instantiation."
 msgstr ""
-"Task に対して明示的に名前が設定されていない場合, デフォルトの asyncio Task 実"
-"装はタスクをインスタンス化する際にデフォルトの名前を生成します。"
+"Si no se ha asignado explícitamente ningún nombre a la Tarea, la "
+"implementación de Tarea asyncio predeterminada genera un nombre "
+"predeterminado durante la creación de instancias."
 
-#: ../../library/asyncio-task.rst:1120
+#: ../Doc/library/asyncio-task.rst:1112
 msgid "Set the name of the Task."
-msgstr "Task に名前を設定します。"
+msgstr "Establece el nombre de la Tarea."
 
-#: ../../library/asyncio-task.rst:1122
+#: ../Doc/library/asyncio-task.rst:1114
 msgid ""
 "The *value* argument can be any object, which is then converted to a string."
 msgstr ""
-"引数 *value* は文字列に変換可能なオブジェクトであれば何でもかまいません。"
+"El argumento *value* puede ser cualquier objeto, que luego se convierte en "
+"una cadena."
 
-#: ../../library/asyncio-task.rst:1125
+#: ../Doc/library/asyncio-task.rst:1117
 msgid ""
 "In the default Task implementation, the name will be visible in the :func:"
 "`repr` output of a task object."
 msgstr ""
-"Task のデフォルト実装では、名前はオブジェクトの :func:`repr` メソッドの出力で"
-"確認できます。"
+"En la implementación de Task predeterminada, el nombre será visible en la "
+"salida :func:`repr` de un objeto de tarea."
 
-#: ../../library/asyncio-task.rst:1132
+#: ../Doc/library/asyncio-task.rst:1124
 msgid "Request the Task to be cancelled."
-msgstr "このタスクに、自身のキャンセルを要求します。"
+msgstr "Solicita que se cancele la Tarea."
 
-#: ../../library/asyncio-task.rst:1134
+#: ../Doc/library/asyncio-task.rst:1126
 msgid ""
 "This arranges for a :exc:`CancelledError` exception to be thrown into the "
 "wrapped coroutine on the next cycle of the event loop."
 msgstr ""
-"このメソッドは、イベントループの次のステップにおいて、タスクがラップしている"
-"コルーチン内で :exc:`CancelledError` 例外が送出されるように準備します。"
+"Esto hace que una excepción :exc:`CancelledError` sea lanzada a la corrutina "
+"contenida en el próximo ciclo del bucle de eventos."
 
-#: ../../library/asyncio-task.rst:1137
+#: ../Doc/library/asyncio-task.rst:1129
 msgid ""
 "The coroutine then has a chance to clean up or even deny the request by "
 "suppressing the exception with a :keyword:`try` ... ... ``except "
@@ -1352,59 +1384,59 @@ msgid ""
 "be cancelled, although suppressing cancellation completely is not common and "
 "is actively discouraged."
 msgstr ""
-"コルーチン側では :keyword:`try` ... ... ``except CancelledError`` ... :"
-"keyword:`finally` ブロックで例外を処理することにより、クリーンアップ処理を行"
-"なったり、リクエストを拒否したりする機会が与えられます。この特性を使ってキャ"
-"ンセル処理を完全に抑え込むことも可能であることから、 :meth:`Future.cancel` と"
-"異なり、 :meth:`Task.cancel` は Task が実際にキャンセルされることを保証しませ"
-"ん。ただしそのような処理は一般的ではありませんし、そのような処理をしないこと"
-"が望ましいです。"
+"La corrutina entonces tiene la oportunidad de limpiar o incluso denegar la "
+"solicitud suprimiendo la excepción con un bloque :keyword:`try` ... ..."
+"``except CancelledError`` ... :keyword:`finally`. Por lo tanto, a diferencia "
+"de :meth:`Future.cancel`, :meth:`Task.cancel` no garantiza que la tarea será "
+"cancelada, aunque suprimir la cancelación por completo no es común y se "
+"desalienta activamente."
 
-#: ../../library/asyncio-task.rst:1145
+#: ../Doc/library/asyncio-task.rst:1137
+#, fuzzy
 msgid "Added the *msg* parameter."
-msgstr ""
+msgstr "Se agregó el parámetro ``msg``."
 
-#: ../../library/asyncio-task.rst:1148
+#: ../Doc/library/asyncio-task.rst:1140
 msgid "The ``msg`` parameter is propagated from cancelled task to its awaiter."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:1153
+#: ../Doc/library/asyncio-task.rst:1145
 msgid ""
 "The following example illustrates how coroutines can intercept the "
 "cancellation request::"
 msgstr ""
-"以下の例は、コルーチンがどのようにしてキャンセルのリクエストを阻止するかを示"
-"しています::"
+"En el ejemplo siguiente se muestra cómo las corrutinas pueden interceptar la "
+"solicitud de cancelación::"
 
-#: ../../library/asyncio-task.rst:1192
+#: ../Doc/library/asyncio-task.rst:1184
 msgid "Return ``True`` if the Task is *cancelled*."
-msgstr "Task が *キャンセルされた* 場合に ``True`` を返します。"
+msgstr "Retorna ``True`` si la Tarea se *cancela*."
 
-#: ../../library/asyncio-task.rst:1194
+#: ../Doc/library/asyncio-task.rst:1186
 msgid ""
 "The Task is *cancelled* when the cancellation was requested with :meth:"
 "`cancel` and the wrapped coroutine propagated the :exc:`CancelledError` "
 "exception thrown into it."
 msgstr ""
-":meth:`cancel` メソッドによりキャンセルがリクエストされ、かつ Task がラップし"
-"ているコルーチンが内部で送出された :exc:`CancelledError` 例外を伝達したと"
-"き、 Task は実際に *キャンセル* されます。"
+"La tarea se *cancela* cuando se solicitó la cancelación con :meth:`cancel` y "
+"la corrutina contenida propagó la excepción :exc:`CancelledError` que se le "
+"ha lanzado."
 
-#: ../../library/asyncio-task.rst:1200
+#: ../Doc/library/asyncio-task.rst:1192
 msgid "Decrement the count of cancellation requests to this Task."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:1202
+#: ../Doc/library/asyncio-task.rst:1194
 msgid "Returns the remaining number of cancellation requests."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:1204
+#: ../Doc/library/asyncio-task.rst:1196
 msgid ""
 "Note that once execution of a cancelled task completed, further calls to :"
 "meth:`uncancel` are ineffective."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:1209
+#: ../Doc/library/asyncio-task.rst:1201
 msgid ""
 "This method is used by asyncio's internals and isn't expected to be used by "
 "end-user code.  In particular, if a Task gets successfully uncancelled, this "
@@ -1413,7 +1445,7 @@ msgid ""
 "respective structured block. For example::"
 msgstr ""
 
-#: ../../library/asyncio-task.rst:1227
+#: ../Doc/library/asyncio-task.rst:1219
 msgid ""
 "While the block with ``make_request()`` and ``make_another_request()`` might "
 "get cancelled due to the timeout, ``unrelated_code()`` should continue "
@@ -1422,13 +1454,13 @@ msgid ""
 "similar fashion."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:1235
+#: ../Doc/library/asyncio-task.rst:1227
 msgid ""
 "Return the number of pending cancellation requests to this Task, i.e., the "
 "number of calls to :meth:`cancel` less the number of :meth:`uncancel` calls."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:1239
+#: ../Doc/library/asyncio-task.rst:1231
 msgid ""
 "Note that if this number is greater than zero but the Task is still "
 "executing, :meth:`cancelled` will still return ``False``. This is because "
@@ -1437,8 +1469,172 @@ msgid ""
 "to zero."
 msgstr ""
 
-#: ../../library/asyncio-task.rst:1245
+#: ../Doc/library/asyncio-task.rst:1237
 msgid ""
 "This method is used by asyncio's internals and isn't expected to be used by "
 "end-user code.  See :meth:`uncancel` for more details."
 msgstr ""
+
+#~ msgid ""
+#~ "asyncio also supports legacy :ref:`generator-based "
+#~ "<asyncio_generator_based_coro>` coroutines."
+#~ msgstr ""
+#~ "asyncio también es compatible con corrutinas heredadas :ref:`generator-"
+#~ "based <asyncio_generator_based_coro>`."
+
+#~ msgid "Running an asyncio Program"
+#~ msgstr "Ejecutando un programa asyncio"
+
+#~ msgid "Execute the :term:`coroutine` *coro* and return the result."
+#~ msgstr "Ejecuta la :term:`coroutine` *coro* y retornando el resultado."
+
+#~ msgid ""
+#~ "This function runs the passed coroutine, taking care of managing the "
+#~ "asyncio event loop, *finalizing asynchronous generators*, and closing the "
+#~ "threadpool."
+#~ msgstr ""
+#~ "Esta función ejecuta la corrutina pasada, encargándose de administrar el "
+#~ "bucle de eventos asyncio, *finalizing asynchronous generators* y cerrando "
+#~ "el threadpool."
+
+#~ msgid ""
+#~ "This function cannot be called when another asyncio event loop is running "
+#~ "in the same thread."
+#~ msgstr ""
+#~ "Esta función no se puede llamar cuando otro bucle de eventos asyncio se "
+#~ "está ejecutando en el mismo hilo."
+
+#~ msgid "If *debug* is ``True``, the event loop will be run in debug mode."
+#~ msgstr ""
+#~ "Si *debug* es ``True``, el bucle de eventos se ejecutará en modo debug."
+
+#~ msgid ""
+#~ "This function always creates a new event loop and closes it at the end.  "
+#~ "It should be used as a main entry point for asyncio programs, and should "
+#~ "ideally only be called once."
+#~ msgstr ""
+#~ "Esta función siempre crea un nuevo ciclo de eventos y lo cierra al final. "
+#~ "Debe usarse como un punto de entrada principal para los programas "
+#~ "asyncio, e idealmente solo debe llamarse una vez."
+
+#~ msgid "Updated to use :meth:`loop.shutdown_default_executor`."
+#~ msgstr "Actualizado para usar :meth:`loop.shutdown_default_executor`."
+
+#~ msgid ""
+#~ "The source code for ``asyncio.run()`` can be found in :source:`Lib/"
+#~ "asyncio/runners.py`."
+#~ msgstr ""
+#~ "El código fuente para ``asyncio.run()`` se puede encontrar en :source:"
+#~ "`Lib/asyncio/runners.py`."
+
+#~ msgid ""
+#~ "This function has been **added in Python 3.7**.  Prior to Python 3.7, the "
+#~ "low-level :func:`asyncio.ensure_future` function can be used instead::"
+#~ msgstr ""
+#~ "Esta función se ha **añadido en Python 3.7**. Antes de Python 3.7, la "
+#~ "función de bajo nivel :func:`asyncio.ensure_future` se puede utilizar en "
+#~ "su lugar::"
+
+#~ msgid ""
+#~ "The ``loop`` parameter.  This function has been implicitly getting the "
+#~ "current running loop since 3.7.  See :ref:`What's New in 3.10's Removed "
+#~ "section <whatsnew310-removed>` for more information."
+#~ msgstr ""
+#~ "El parámetro ``loop``. Esta función ha estado obteniendo implícitamente "
+#~ "el ciclo en ejecución actual desde 3.7. Consulte :ref:`What's New in "
+#~ "3.10's Removed section <whatsnew310-removed>` para obtener más "
+#~ "información."
+
+#~ msgid ""
+#~ "If any awaitable in *aws* is a coroutine, it is automatically scheduled "
+#~ "as a Task.  Passing coroutines objects to ``wait()`` directly is "
+#~ "deprecated as it leads to :ref:`confusing behavior "
+#~ "<asyncio_example_wait_coroutine>`."
+#~ msgstr ""
+#~ "Si cualquier aguardable en *aws* es una corrutina, se programa "
+#~ "automáticamente como una Tarea. El paso de objetos corrutinas a "
+#~ "``wait()`` directamente está en desuso, ya que conduce a :ref:"
+#~ "`comportamiento confuso <asyncio_example_wait_coroutine>`."
+
+#~ msgid ""
+#~ "``wait()`` schedules coroutines as Tasks automatically and later returns "
+#~ "those implicitly created Task objects in ``(done, pending)`` sets.  "
+#~ "Therefore the following code won't work as expected::"
+#~ msgstr ""
+#~ "``wait()`` programa las corrutinas como Tareas automáticamente y "
+#~ "posteriormente retorna los objetos Tarea creados implícitamente en "
+#~ "conjuntos ``(done, pending)``. Por lo tanto, el código siguiente no "
+#~ "funcionará como se esperaba::"
+
+#~ msgid "Here is how the above snippet can be fixed::"
+#~ msgstr "Aquí es cómo se puede arreglar el fragmento de código anterior::"
+
+#~ msgid "Generator-based Coroutines"
+#~ msgstr "Corrutinas basadas en generadores"
+
+#~ msgid ""
+#~ "Support for generator-based coroutines is **deprecated** and is scheduled "
+#~ "for removal in Python 3.10."
+#~ msgstr ""
+#~ "La compatibilidad con corrutinas basadas en generadores está **en "
+#~ "desuso** y está programada para su eliminación en Python 3.10."
+
+#~ msgid ""
+#~ "Generator-based coroutines predate async/await syntax.  They are Python "
+#~ "generators that use ``yield from`` expressions to await on Futures and "
+#~ "other coroutines."
+#~ msgstr ""
+#~ "Las corrutinas basadas en generadores son anteriores a la sintaxis async/"
+#~ "await. Son generadores de Python que utilizan expresiones ``yield from`` "
+#~ "para esperar en Futures y otras corrutinas."
+
+#~ msgid ""
+#~ "Generator-based coroutines should be decorated with :func:`@asyncio."
+#~ "coroutine <asyncio.coroutine>`, although this is not enforced."
+#~ msgstr ""
+#~ "Las corrutinas basadas en generadores deben estar decoradas con :func:"
+#~ "`@asyncio.coroutine <asyncio.coroutine>`, aunque esto no se aplica."
+
+#~ msgid "Decorator to mark generator-based coroutines."
+#~ msgstr "Decorador para marcar corrutinas basadas en generadores."
+
+#~ msgid ""
+#~ "This decorator enables legacy generator-based coroutines to be compatible "
+#~ "with async/await code::"
+#~ msgstr ""
+#~ "Este decorador permite que las corrutinas basadas en generadores de "
+#~ "versiones anteriores (*legacy*) sean compatibles con el código async/"
+#~ "await::"
+
+#~ msgid ""
+#~ "This decorator should not be used for :keyword:`async def` coroutines."
+#~ msgstr ""
+#~ "Este decorador no debe utilizarse para corrutinas :keyword:`async def`."
+
+#~ msgid "Use :keyword:`async def` instead."
+#~ msgstr "Usar :keyword:`async def` en su lugar."
+
+#~ msgid "Return ``True`` if *obj* is a :ref:`coroutine object <coroutine>`."
+#~ msgstr ""
+#~ "Retorna ``True`` si *obj* es un :ref:`coroutine object <coroutine>`."
+
+#~ msgid ""
+#~ "This method is different from :func:`inspect.iscoroutine` because it "
+#~ "returns ``True`` for generator-based coroutines."
+#~ msgstr ""
+#~ "Este método es diferente de :func:`inspect.iscoroutine` porque retorna "
+#~ "``True`` para corrutinas basadas en generadores."
+
+#~ msgid ""
+#~ "Return ``True`` if *func* is a :ref:`coroutine function <coroutine>`."
+#~ msgstr ""
+#~ "Retorna ``True`` si *func* es una :ref:`coroutine function <coroutine>`."
+
+#~ msgid ""
+#~ "This method is different from :func:`inspect.iscoroutinefunction` because "
+#~ "it returns ``True`` for generator-based coroutine functions decorated "
+#~ "with :func:`@coroutine <coroutine>`."
+#~ msgstr ""
+#~ "Este método es diferente de :func:`inspect.iscoroutinefunction` porque "
+#~ "retorna ``True`` para funciones de corrutinas basadas en generadores "
+#~ "decoradas con :func:`@coroutine <coroutine>`."

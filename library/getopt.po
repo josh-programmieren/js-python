@@ -1,37 +1,34 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org / https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:06+0000\n"
-"Last-Translator: Osamu NAKAMURA, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2019-05-06 11:59-0400\n"
+"PO-Revision-Date: 2020-07-07 23:33+0200\n"
+"Language-Team: python-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language: es\n"
+"X-Generator: Poedit 2.3\n"
 
-#: ../../library/getopt.rst:2
+#: ../Doc/library/getopt.rst:2
 msgid ":mod:`getopt` --- C-style parser for command line options"
-msgstr ":mod:`getopt` --- C 言語スタイルのコマンドラインオプションパーサ"
+msgstr ""
+":mod:`getopt` --- Analizador de estilo C para opciones de línea de comando"
 
-#: ../../library/getopt.rst:8
+#: ../Doc/library/getopt.rst:8
 msgid "**Source code:** :source:`Lib/getopt.py`"
-msgstr "**ソースコード:** :source:`Lib/getopt.py`"
+msgstr "**Código fuente:** :source:`Lib/getopt.py`"
 
-#: ../../library/getopt.rst:12
+#: ../Doc/library/getopt.rst:12
 msgid ""
 "The :mod:`getopt` module is a parser for command line options whose API is "
 "designed to be familiar to users of the C :c:func:`getopt` function. Users "
@@ -39,12 +36,14 @@ msgid ""
 "write less code and get better help and error messages should consider using "
 "the :mod:`argparse` module instead."
 msgstr ""
-":mod:`getopt` モジュールは、C 言語の :c:func:`getopt` 関数に慣れ親しんだ人た"
-"めにデザインされた API を持つコマンドラインオプションのパーサです。:c:func:"
-"`getopt` 関数に慣れ親しんでない人や、コードを少なくしてよりよいヘルプメッセー"
-"ジを表示させたい場合は、:mod:`argparse` モジュールの使用を検討してください。"
+"El módulo :mod:`getopt` es un analizador de opciones de línea de comando "
+"cuya API está diseñada para que los usuarios de la función C :c:func:"
+"`getopt` estén familiarizados. Los usuarios que no estén familiarizados con "
+"la función C :c:func:`getopt` o que deseen escribir menos código y obtener "
+"mejor ayuda y mensajes de error deberían considerar el uso del módulo :mod:"
+"`argparse`."
 
-#: ../../library/getopt.rst:20
+#: ../Doc/library/getopt.rst:20
 msgid ""
 "This module helps scripts to parse the command line arguments in ``sys."
 "argv``. It supports the same conventions as the Unix :c:func:`getopt` "
@@ -52,17 +51,18 @@ msgid ""
 "and '``--``').  Long options similar to those supported by GNU software may "
 "be used as well via an optional third argument."
 msgstr ""
-"このモジュールは ``sys.argv`` に入っているコマンドラインオプションの構文解析"
-"を支援します。'``-``' や '``--``' の特別扱いも含めて、Unix の :c:func:"
-"`getopt` と同じ記法をサポートしています。3番目の引数 (省略可能) を設定するこ"
-"とで、GNU のソフトウェアでサポートされているような長形式のオプションも利用で"
-"きます。"
+"Este módulo ayuda a los scripts a analizar los argumentos de la línea de "
+"comandos en ``sys.argv``. Admite las mismas convenciones que la función "
+"Unix :c:func:`getopt` (incluidos los significados especiales de los "
+"argumentos de la forma '``-``' y '``--``'). También se pueden usar opciones "
+"largas similares a las admitidas por el software GNU a través de un tercer "
+"argumento opcional."
 
-#: ../../library/getopt.rst:26
+#: ../Doc/library/getopt.rst:26
 msgid "This module provides two functions and an exception:"
-msgstr "このモジュールは2つの関数と1つの例外を提供しています:"
+msgstr "Este módulo proporciona dos funciones y una excepción:"
 
-#: ../../library/getopt.rst:32
+#: ../Doc/library/getopt.rst:32
 msgid ""
 "Parses command line options and parameter list.  *args* is the argument list "
 "to be parsed, without the leading reference to the running program. "
@@ -71,22 +71,24 @@ msgid ""
 "argument followed by a colon (``':'``; i.e., the same format that Unix :c:"
 "func:`getopt` uses)."
 msgstr ""
-"コマンドラインオプションとパラメータのリストを構文解析します。*args* は構文解"
-"析の対象になる引数のリストです。これは先頭のプログラム名を除いたもので、通常 "
-"``sys.argv[1:]`` で与えられます。*shortopts* はスクリプトで認識させたいオプ"
-"ション文字と、引数が必要な場合にはコロン (``':'``) をつけます。つまり Unix "
-"の :c:func:`getopt` と同じフォーマットになります。"
+"Analiza las opciones de la línea de comandos y la lista de parámetros. "
+"*args* es la lista de argumentos a analizar, sin la referencia principal al "
+"programa en ejecución. Por lo general, esto significa ``sys.argv[:]``. "
+"*shortopts* es la cadena de letras de opciones que el script quiere "
+"reconocer, con opciones que requieren un argumento seguido de dos puntos "
+"(``':'``; es decir, el mismo formato que Unix :c:func:`getopt` usa)."
 
-#: ../../library/getopt.rst:40
+#: ../Doc/library/getopt.rst:40
 msgid ""
 "Unlike GNU :c:func:`getopt`, after a non-option argument, all further "
 "arguments are considered also non-options. This is similar to the way non-"
 "GNU Unix systems work."
 msgstr ""
-"GNU の :c:func:`getopt` とは違って、オプションでない引数の後は全てオプション"
-"ではないと判断されます。これは GNUでない、Unix システムの挙動に近いものです。"
+"A diferencia de GNU :c:func:`getopt`, después de un argumento no-opcional, "
+"todos los argumentos adicionales se consideran también no-opcionales. Esto "
+"es similar a la forma en que funcionan los sistemas Unix que no son GNU."
 
-#: ../../library/getopt.rst:44
+#: ../Doc/library/getopt.rst:44
 msgid ""
 "*longopts*, if specified, must be a list of strings with the names of the "
 "long options which should be supported.  The leading ``'--'`` characters "
@@ -99,16 +101,19 @@ msgid ""
 "option ``--fo`` will match as ``--foo``, but ``--f`` will not match "
 "uniquely, so :exc:`GetoptError` will be raised."
 msgstr ""
-"*longopts* は長形式のオプションの名前を示す文字列のリストです。名前には、先頭"
-"の ``'--'`` は含めません。引数が必要な場合には名前の最後に等号 (``'='``) を入"
-"れます。オプション引数はサポートしていません。長形式のオプションだけを受けつ"
-"けるためには、*shortopts* は空文字列である必要があります。長形式のオプション"
-"は、該当するオプションを一意に決定できる長さまで入力されていれば認識されま"
-"す。たとえば、*longopts* が ``['foo', 'frob']`` の場合、``--fo`` は ``--"
-"foo`` にマッチしますが、``--f`` では一意に決定できないので、:exc:"
-"`GetoptError` が送出されます。"
+"*longopts*, si se especifica, debe ser una lista de cadenas con los nombres "
+"de las opciones largas que deben admitirse. Los caracteres principales "
+"``'-'`` no deben incluirse en el nombre de la opción. Las opciones largas "
+"que requieren un argumento deben ir seguidas de un signo igual (``'='``). "
+"Los argumentos opcionales no son compatibles. Para aceptar solo opciones "
+"largas, *shortopts* debe ser una cadena vacía. Las opciones largas en la "
+"línea de comando pueden reconocerse siempre que proporcionen un prefijo del "
+"nombre de la opción que coincida exactamente con una de las opciones "
+"aceptadas. Por ejemplo, si *longopts* es ``['foo', 'frob']``, la opción ``--"
+"fo`` coincidirá como ``--foo``, pero ``--f`` no coincidirá de forma "
+"exclusiva, por lo que se lanzará :exc:`GetoptError`."
 
-#: ../../library/getopt.rst:55
+#: ../Doc/library/getopt.rst:55
 msgid ""
 "The return value consists of two elements: the first is a list of ``(option, "
 "value)`` pairs; the second is the list of program arguments left after the "
@@ -120,38 +125,42 @@ msgid ""
 "list in the same order in which they were found, thus allowing multiple "
 "occurrences.  Long and short options may be mixed."
 msgstr ""
-"返り値は2つの要素から成っています: 最初は ``(option, value)`` のタプルのリス"
-"ト、2つ目はオプションリストを取り除いたあとに残ったプログラムの引数リストで"
-"す (*args* の末尾部分のスライスになります)。それぞれの引数と値のタプルの最初"
-"の要素は、短形式の時はハイフン 1つで始まる文字列 (例: ``'-x'``)、長形式の時は"
-"ハイフン2つで始まる文字列 (例: ``'--long-option'``) となり、引数が2番目の要素"
-"になります。引数をとらない場合には空文字列が入ります。オプションは見つかった"
-"順に並んでいて、複数回同じオプションを指定できます。長形式と短形式のオプショ"
-"ンは混在できます。"
+"El valor de retorno consta de dos elementos: el primero es una lista de "
+"pares ``(option, value)``; el segundo es la lista de argumentos del programa "
+"que quedan después de que se eliminó la lista de opciones (esta es una "
+"porción final de *args*). Cada par de opción y valor retornado tiene la "
+"opción como su primer elemento, con un guión para las opciones cortas (por "
+"ejemplo, ``'-x'``) o dos guiones para las opciones largas (por ejemplo, ``'--"
+"long-option'``), y el argumento de la opción como su segundo elemento, o una "
+"cadena vacía si la opción no tiene argumento. Las opciones aparecen en la "
+"lista en el mismo orden en que se encontraron, lo que permite múltiples "
+"ocurrencias. Las opciones largas y cortas pueden ser mixtas."
 
-#: ../../library/getopt.rst:68
+#: ../Doc/library/getopt.rst:68
 msgid ""
 "This function works like :func:`getopt`, except that GNU style scanning mode "
 "is used by default. This means that option and non-option arguments may be "
 "intermixed. The :func:`getopt` function stops processing options as soon as "
 "a non-option argument is encountered."
 msgstr ""
-"この関数はデフォルトで GNU スタイルのスキャンモードを使う以外は :func:"
-"`getopt` と同じように動作します。つまり、オプションとオプションでない引数とを"
-"混在させることができます。:func:`getopt` 関数はオプションでない引数を見つける"
-"と解析を停止します。"
+"Esta función funciona como :func:`getopt`, excepto que el modo de escaneo "
+"estilo GNU se usa por defecto. Esto significa que los argumentos opcionales "
+"y no opcionales pueden estar mezclados. La función :func:`getopt` detiene el "
+"procesamiento de opciones tan pronto como se encuentra un argumento no-"
+"opcionales."
 
-#: ../../library/getopt.rst:73
+#: ../Doc/library/getopt.rst:73
 msgid ""
 "If the first character of the option string is ``'+'``, or if the "
 "environment variable :envvar:`POSIXLY_CORRECT` is set, then option "
 "processing stops as soon as a non-option argument is encountered."
 msgstr ""
-"オプション文字列の最初の文字を ``'+'`` にするか、環境変数 :envvar:"
-"`POSIXLY_CORRECT` を設定することで、オプションでない引数を見つけると解析を停"
-"止するように振舞いを変えることができます。"
+"Si el primer carácter de la cadena de opciones es ``'+'``, o si la variable "
+"de entorno :envvar:`POSIXLY_CORRECT` está configurada, el procesamiento de "
+"opciones se detiene tan pronto como se encuentre un argumento que no sea de "
+"opción."
 
-#: ../../library/getopt.rst:80
+#: ../Doc/library/getopt.rst:80
 msgid ""
 "This is raised when an unrecognized option is found in the argument list or "
 "when an option requiring an argument is given none. The argument to the "
@@ -161,44 +170,48 @@ msgid ""
 "give the error message and related option; if there is no specific option to "
 "which the exception relates, :attr:`opt` is an empty string."
 msgstr ""
-"引数リストの中に認識できないオプションがあった場合か、引数が必要なオプション"
-"に引数が与えられなかった場合に発生します。例外の引数は原因を示す文字列です。"
-"長形式のオプションについては、不要な引数が与えられた場合にもこの例外が発生し"
-"ます。 :attr:`msg` 属性と :attr:`opt` 属性で、エラーメッセージと関連するオプ"
-"ションを取得できます。特に関係するオプションが無い場合には :attr:`opt` は空文"
-"字列となります。"
+"Esto se lanza cuando se encuentra una opción no reconocida en la lista de "
+"argumentos o cuando una opción que requiere un argumento no recibe ninguna. "
+"El argumento de la excepción es una cadena que indica la causa del error. "
+"Para opciones largas, un argumento dado a una opción que no requiere una "
+"también provocará que se lance esta excepción. Los atributos :attr:`msg` y :"
+"attr:`opt` dan el mensaje de error y la opción relacionada; si no hay una "
+"opción específica con la cual se relaciona la excepción, :attr:`opt` es una "
+"cadena vacía."
 
-#: ../../library/getopt.rst:91
+#: ../Doc/library/getopt.rst:91
 msgid "Alias for :exc:`GetoptError`; for backward compatibility."
 msgstr ""
-":exc:`GetoptError` へのエイリアスです。後方互換性のために残されています。"
+"Alias para :exc:`GetoptError`; para compatibilidad con versiones anteriores."
 
-#: ../../library/getopt.rst:93
+#: ../Doc/library/getopt.rst:93
 msgid "An example using only Unix style options:"
-msgstr "Unix スタイルのオプションを使った例です:"
+msgstr "Un ejemplo que usa solo opciones de estilo Unix:"
 
-#: ../../library/getopt.rst:105
+#: ../Doc/library/getopt.rst:105
 msgid "Using long option names is equally easy:"
-msgstr "長形式のオプションを使っても同様です:"
+msgstr "Usar nombres largos de opciones es igualmente fácil:"
 
-#: ../../library/getopt.rst:118
+#: ../Doc/library/getopt.rst:118
 msgid "In a script, typical usage is something like this::"
-msgstr "スクリプト中での典型的な使い方は以下のようになります::"
+msgstr "En un script, el uso típico es algo como esto::"
 
-#: ../../library/getopt.rst:147
+#: ../Doc/library/getopt.rst:147
 msgid ""
 "Note that an equivalent command line interface could be produced with less "
 "code and more informative help and error messages by using the :mod:"
 "`argparse` module::"
 msgstr ""
-":mod:`argparse` モジュールを使えば、より良いヘルプメッセージとエラーメッセー"
-"ジを持った同じコマンドラインインターフェースをより少ないコードで実現できま"
-"す::"
+"Tenga en cuenta que se podría generar una interfaz de línea de comando "
+"equivalente con menos código y más ayuda informativa y mensajes de error "
+"utilizando el módulo :mod:`argparse`::"
 
-#: ../../library/getopt.rst:162
+#: ../Doc/library/getopt.rst:162
 msgid "Module :mod:`argparse`"
-msgstr ":mod:`argparse` モジュール"
+msgstr "Módulo :mod:`argparse`"
 
-#: ../../library/getopt.rst:163
+#: ../Doc/library/getopt.rst:163
 msgid "Alternative command line option and argument parsing library."
-msgstr "別のコマンドラインオプションと引数の解析ライブラリ。"
+msgstr ""
+"Opción de línea de comando alternativa y biblioteca de análisis de "
+"argumentos."

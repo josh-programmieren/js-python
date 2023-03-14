@@ -1,51 +1,47 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# mollinaca, 2021
-# tomo, 2021
-# Atsuo Ishimoto <atsuoishimoto@gmail.com>, 2022
-# 菊池 健志, 2023
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-17 14:14+0000\n"
-"PO-Revision-Date: 2021-06-28 00:53+0000\n"
-"Last-Translator: 菊池 健志, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-10-22 10:38-0500\n"
+"Last-Translator: Kevin Cajachuán <kevincajachuan@hotmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../howto/functional.rst:3
+#: ../Doc/howto/functional.rst:3
 msgid "Functional Programming HOWTO"
-msgstr "関数型プログラミング HOWTO"
+msgstr "HOWTO - Programación funcional"
 
-#: ../../howto/functional.rst:0
+#: ../Doc/howto/functional.rst
 msgid "Author"
-msgstr "著者"
+msgstr "Autor"
 
-#: ../../howto/functional.rst:5
+#: ../Doc/howto/functional.rst:5
 msgid "A. M. Kuchling"
 msgstr "A. M. Kuchling"
 
-#: ../../howto/functional.rst:0
+#: ../Doc/howto/functional.rst
 msgid "Release"
-msgstr "リリース"
+msgstr "Publicación"
 
-#: ../../howto/functional.rst:6
+#: ../Doc/howto/functional.rst:6
 msgid "0.32"
 msgstr "0.32"
 
-#: ../../howto/functional.rst:8
+#: ../Doc/howto/functional.rst:8
 msgid ""
 "In this document, we'll take a tour of Python's features suitable for "
 "implementing programs in a functional style.  After an introduction to the "
@@ -53,44 +49,47 @@ msgid ""
 "term:`iterator`\\s and :term:`generator`\\s and relevant library modules "
 "such as :mod:`itertools` and :mod:`functools`."
 msgstr ""
-"この文書では、関数型スタイルでプログラムを実装するのにピッタリな Python の機"
-"能を見てまわることにしましょう。まず関数型プログラミングという概念を紹介した"
-"あと、 :term:`iterator` や :term:`generator` のような言語機能、および :mod:"
-"`itertools` や :mod:`functools` といった関連するライブラリモジュールを見るこ"
-"とにします。"
+"En este documento, haremos un recorrido de las características de Python "
+"adecuadas para implementar programas en un estilo funcional. Después de una "
+"introducción de los conceptos de programación funcional, veremos las "
+"características del lenguaje como :term:`iterador <iterator>`\\es y :term:"
+"`generador <generator>`\\es y módulos de librería relevantes como :mod:"
+"`itertools` y :mod:`functools`."
 
-#: ../../howto/functional.rst:16
+#: ../Doc/howto/functional.rst:16
 msgid "Introduction"
-msgstr "はじめに"
+msgstr "Introducción"
 
-#: ../../howto/functional.rst:18
+#: ../Doc/howto/functional.rst:18
 msgid ""
 "This section explains the basic concept of functional programming; if you're "
 "just interested in learning about Python language features, skip to the next "
 "section on :ref:`functional-howto-iterators`."
 msgstr ""
-"この章は関数型プログラミングの基本概念を説明します; Python の言語機能について"
-"だけ知りたい人は、次の章の :ref:`functional-howto-iterators` まで飛ばしてくだ"
-"さい。"
+"Esta sección explica el concepto básico de programación funcional; si solo "
+"está interesado en aprender acerca de las características del lenguaje "
+"Python, pase a la siguiente sección en :ref:`iteradores <functional-howto-"
+"iterators>`."
 
-#: ../../howto/functional.rst:22
+#: ../Doc/howto/functional.rst:22
 msgid ""
 "Programming languages support decomposing problems in several different ways:"
 msgstr ""
-"プログラミング言語とは問題を分解するものですが、各言語がサポートする分解方法"
-"にはいくつかの種類があります:"
+"Los lenguajes de programación soportan la descomposición de problemas en "
+"muchas formas diferentes:"
 
-#: ../../howto/functional.rst:24
+#: ../Doc/howto/functional.rst:24
 msgid ""
 "Most programming languages are **procedural**: programs are lists of "
 "instructions that tell the computer what to do with the program's input.  C, "
 "Pascal, and even Unix shells are procedural languages."
 msgstr ""
-"ほとんどのプログラミング言語は **手続き型** です: プログラムは、入力に対して"
-"行うべきことをコンピュータに教える指示リストとなります。 C, Pascal, さらには "
-"Unix シェルまでもが手続き型言語に入ります。"
+"La mayoría de los lenguajes de programación son **procedimentales**: los "
+"programas son listas de instrucciones que le dicen a la computadora qué "
+"hacer con la entrada del programa. C, Pascal e incluso las terminales Unix "
+"son lenguajes procedimentales."
 
-#: ../../howto/functional.rst:28
+#: ../Doc/howto/functional.rst:28
 msgid ""
 "In **declarative** languages, you write a specification that describes the "
 "problem to be solved, and the language implementation figures out how to "
@@ -99,13 +98,15 @@ msgid ""
 "to retrieve, and the SQL engine decides whether to scan tables or use "
 "indexes, which subclauses should be performed first, etc."
 msgstr ""
-"**宣言型** 言語で書くのは、解くべき問題を説明する仕様書であって、それを効率的"
-"に計算処理する方法を見付けるのは言語実装の役目です。SQL はおそらく一番よく知"
-"られた宣言型言語です; SQL のクエリは取得したいデータセットを説明しているだけ"
-"で、テーブルを走査するかインデックスを使うか、どのサブクローズから実行するか"
-"等々を決めるのは SQL エンジンなのです。"
+"En los lenguajes **declarativos**, se escribe una especificación que "
+"describe el problema que se resolverá, y la implementación del lenguaje "
+"averigua como realizar el cálculo de forma eficiente. SQL es el lenguaje "
+"declarativo con el que probablemente esté más familiarizado; una consulta "
+"SQL describe el conjunto de datos que quiere recuperar, y el motor SQL "
+"decide si escanear tablas o usar índices, qué subcláusulas deben ejecutarse "
+"primero, etc."
 
-#: ../../howto/functional.rst:35
+#: ../Doc/howto/functional.rst:35
 msgid ""
 "**Object-oriented** programs manipulate collections of objects.  Objects "
 "have internal state and support methods that query or modify this internal "
@@ -113,13 +114,14 @@ msgid ""
 "and Python are languages that support object-oriented programming, but don't "
 "force the use of object-oriented features."
 msgstr ""
-"**オブジェクト指向** プログラムはオブジェクトの集まりを操作します。オブジェク"
-"トには内部状態があり、その状態を調べたり色々と変更したりするためのメソッドが"
-"あります。Smalltalk や Java はオブジェクト指向言語です。 C++ と Python はオブ"
-"ジェクト指向プログラミングをサポートしていますが、関連する機能を使わなくても"
-"構わないようになっています。"
+"Los programas **orientados a objetos** manipulan colecciones de objetos. Los "
+"objetos tienen estado interno y soportan métodos que consultan o modifican "
+"su estado interno de alguna manera. Smalltalk y Java son lenguajes "
+"orientados a objetos. C++ y Python son lenguajes que soportan la "
+"programación orientada a objetos, pero no fuerzan el uso de las "
+"características orientadas a objetos."
 
-#: ../../howto/functional.rst:41
+#: ../Doc/howto/functional.rst:41
 msgid ""
 "**Functional** programming decomposes a problem into a set of functions. "
 "Ideally, functions only take inputs and produce outputs, and don't have any "
@@ -127,12 +129,13 @@ msgid ""
 "known functional languages include the ML family (Standard ML, OCaml, and "
 "other variants) and Haskell."
 msgstr ""
-"**関数型** プログラミングは問題をいくつかの関数にわけて考えます。理想的に言う"
-"と、関数は入力を受けて出力を吐くだけで、同じ入力に対して異なる出力をするよう"
-"な内部状態を一切持ちません。有名な関数型言語には ML 一家 (Standard ML, OCaml "
-"等々) と Haskell があります。"
+"La programación **funcional** descompone un problema en un conjunto de "
+"funciones. Idealmente, las funciones solo reciben entradas y producen "
+"salidas, y no tienen ningún estado interno que afecte la salida producida "
+"para una entrada dada. Los lenguajes funcionales bien conocidos incluyen la "
+"familia ML (Standard ML, OCaml, y otras variantes) y Haskell."
 
-#: ../../howto/functional.rst:47
+#: ../Doc/howto/functional.rst:47
 msgid ""
 "The designers of some computer languages choose to emphasize one particular "
 "approach to programming.  This often makes it difficult to write programs "
@@ -144,16 +147,18 @@ msgid ""
 "GUI might be object-oriented while the processing logic is procedural or "
 "functional, for example."
 msgstr ""
-"設計者が特定のアプローチを強調することにした言語もありますが、そうすると大抵"
-"は、別のアプローチを使うプログラムを書きにくくなります。複数のアプローチに対"
-"応した言語もあり、Lisp, C++, Python はそうしたマルチパラダイム言語です; この"
-"中のどれを使っても、基本的に手続き型な、または基本的にオブジェクト指向な、と"
-"か、基本的に関数型なプログラムやライブラリを書くことができます。大きなプログ"
-"ラムでは、各部で別々のアプローチを使って書くことがあるかもしれません; GUI は"
-"オブジェクト指向で、でも処理ロジックは手続き型や関数型で、といったようにで"
-"す。"
+"Los diseñadores de algunos lenguajes de computadora eligen enfatizar en un "
+"enfoque particular para programar. Esto a menudo hace difícil escribir "
+"programas que usen un enfoque diferente. Otros lenguajes son lenguajes "
+"multiparadigma que soportan varios enfoques diferentes. Lisp, C++ y Python "
+"son multiparadigma; puede escribir programas o librerías que son en gran "
+"parte procedimentales, orientados a objetos o funcionales en todos estos "
+"lenguajes. En un programa grande, las diferentes secciones podrían "
+"escribirse usando diferentes enfoques; la GUI podría ser orientada a objetos "
+"mientras la lógica de procesamiento es procedimental o funcional, por "
+"ejemplo."
 
-#: ../../howto/functional.rst:58
+#: ../Doc/howto/functional.rst:58
 msgid ""
 "In a functional program, input flows through a set of functions. Each "
 "function operates on its input and produces some output.  Functional style "
@@ -163,15 +168,17 @@ msgid ""
 "side effects means not using data structures that get updated as a program "
 "runs; every function's output must only depend on its input."
 msgstr ""
-"関数型プログラムでは、入力は一連の関数を通って流れていきます。それぞれの関数"
-"は入力に何らかの作業をして出力します。関数型スタイルにおいては、内部状態を変"
-"えてしまったり、返り値に現れない変更をしたりといった副作用のある関数はやめる"
-"ように言われています。副作用のまったくない関数は **純粋関数型** であるとされ"
-"ます。副作用をなくすということは、プログラムの実行中に順次変化していくデータ"
-"構造を持たない、つまり各関数の出力はその入力にしか影響を受けてはいけないとい"
-"うことです。"
+"En un programa funcional, la entrada fluye a través de un conjunto de "
+"funciones. Cada función opera sobre su entrada y produce alguna salida. El "
+"estilo funcional desalienta las funciones con efectos secundarios que "
+"modifican el estado interno o hacen otros cambios que no son visibles en el "
+"valor de retorno de la función. Las funciones que no tienen ningún efecto "
+"secundario se llaman **puramente funcionales**. Evitar los efectos "
+"secundarios significa no usar estructuras de datos que se actualicen "
+"mientras se ejecuta un programa; cada salida de la función debe depender "
+"solo de su entrada."
 
-#: ../../howto/functional.rst:66
+#: ../Doc/howto/functional.rst:66
 msgid ""
 "Some languages are very strict about purity and don't even have assignment "
 "statements such as ``a=3`` or ``c = a + b``, but it's difficult to avoid all "
@@ -181,8 +188,15 @@ msgid ""
 "their side effects of sending some text to the screen or pausing execution "
 "for a second."
 msgstr ""
+"Algunos lenguajes son demasiado estrictos y ni siquiera tienen declaraciones "
+"de asignación como ``a=3`` o ``c = a + b``, pero es difícil evitar todos los "
+"efectos secundarios, como imprimir en pantalla o escribir en un archivo de "
+"disco. Otro ejemplo es llamar a las funciones :func:`print` o :func:`time."
+"sleep`, ninguna de las dos retorna un valor útil, ambas son llamadas solo "
+"por sus efectos secundarios de enviar texto a la pantalla o pausar la "
+"ejecución por un segundo."
 
-#: ../../howto/functional.rst:73
+#: ../Doc/howto/functional.rst:73
 msgid ""
 "Python programs written in functional style usually won't go to the extreme "
 "of avoiding all I/O or all assignments; instead, they'll provide a "
@@ -191,13 +205,14 @@ msgid ""
 "assignments to local variables, but won't modify global variables or have "
 "other side effects."
 msgstr ""
-"関数型スタイルで書いた Python プログラムはふつう、I/O や代入を完全になくすと"
-"いった極端なところまでは行かずに、関数型っぽく見えるインターフェースを提供し"
-"つつも内部では非関数型の機能を使います。たとえば、関数内でローカル変数の代入"
-"は使いますが、グローバル変数は変更せず、他の副作用もないように実装するので"
-"す。"
+"Los programas de Python escritos en estilo funcional usualmente no irán al "
+"extremo de evitar todas las E/S o todas las asignaciones; en cambio, "
+"proveerán una interfaz aparentemente funcional pero internamente usará "
+"características no funcionales. Por ejemplo, la implementación de una "
+"función todavía usará asignaciones a variables locales, pero no modificará "
+"variables globales ni tendrá otros efectos secundarios."
 
-#: ../../howto/functional.rst:79
+#: ../Doc/howto/functional.rst:79
 msgid ""
 "Functional programming can be considered the opposite of object-oriented "
 "programming.  Objects are little capsules containing some internal state "
@@ -208,54 +223,55 @@ msgid ""
 "approaches by writing functions that take and return instances representing "
 "objects in your application (e-mail messages, transactions, etc.)."
 msgstr ""
-"関数型プログラミングはオブジェクト指向プログラミングの反対と考えることもでき"
-"ます。オブジェクト指向において、オブジェクトは内部状態とそれを変更するメソッ"
-"ドコールの入ったカプセルであり、プログラムはその状態を適正に変化させていく手"
-"順です。一方で、関数型プログラミングは可能なかぎり状態の変更を避け、関数どう"
-"しの間を流れるデータだけを扱おうとします。Python ではこの二つのアプローチを結"
-"び合わせることができます。アプリケーション内のオブジェクト (メール、トランザ"
-"クション、等々) を表現したインスタンスを、関数が受け渡しするようにするので"
-"す。"
+"La programación funcional se puede considerar lo opuesto a la programación "
+"orientada a objetos. Los objetos son pequeñas capsulas que contienen algún "
+"estado interno junto con una colección de llamadas a métodos que le permiten "
+"modificar este estado, y los programas consisten en realizar el conjunto "
+"correcto de cambios de estado. La programación funcional quiere evitar "
+"cambios de estado tanto como sea posible y trabaja con flujos de datos entre "
+"funciones. En Python podría combinar los dos enfoques para escribir "
+"funciones que reciban y retornen instancias que representen objetos en su "
+"aplicación (mensajes de e-mail, transacciones, etc.)."
 
-#: ../../howto/functional.rst:88
+#: ../Doc/howto/functional.rst:88
 msgid ""
 "Functional design may seem like an odd constraint to work under.  Why should "
 "you avoid objects and side effects?  There are theoretical and practical "
 "advantages to the functional style:"
 msgstr ""
-"関数型デザインは、わけのわからない制約に見えるかもしれません。どうしてオブ"
-"ジェクトも副作用もないほうが良いのでしょうか。実は、関数型スタイルには理論と"
-"実践に基づく次の利点があるのです:"
+"El diseño funcional puede parecer una restricción extraña bajo la cuál "
+"trabajar. ¿Por qué evitaría objetos y efectos secundarios? Hay ventajas "
+"teóricas y prácticas para el estilo funcional:"
 
-#: ../../howto/functional.rst:92
+#: ../Doc/howto/functional.rst:92
 msgid "Formal provability."
-msgstr "形式的証明可能性。"
+msgstr "Demostrabilidad formal."
 
-#: ../../howto/functional.rst:93
+#: ../Doc/howto/functional.rst:93
 msgid "Modularity."
-msgstr "モジュラー性。"
+msgstr "Modularidad."
 
-#: ../../howto/functional.rst:94
+#: ../Doc/howto/functional.rst:94
 msgid "Composability."
-msgstr "結合性。"
+msgstr "Componibilidad."
 
-#: ../../howto/functional.rst:95
+#: ../Doc/howto/functional.rst:95
 msgid "Ease of debugging and testing."
-msgstr "デバッグやテストの簡単さ。"
+msgstr "Facilidad de depurar y probar."
 
-#: ../../howto/functional.rst:99
+#: ../Doc/howto/functional.rst:99
 msgid "Formal provability"
-msgstr "形式的証明可能性"
+msgstr "Demostrabilidad formal"
 
-#: ../../howto/functional.rst:101
+#: ../Doc/howto/functional.rst:101
 msgid ""
 "A theoretical benefit is that it's easier to construct a mathematical proof "
 "that a functional program is correct."
 msgstr ""
-"理論面の利点としては、プログラムが正しいことの数学的証明を他より簡単に構築で"
-"きるという点があります。"
+"Un beneficio teórico es que es más fácil construir una demostración "
+"matemática de que un programa funcional es correcto."
 
-#: ../../howto/functional.rst:104
+#: ../Doc/howto/functional.rst:104
 msgid ""
 "For a long time researchers have been interested in finding ways to "
 "mathematically prove programs correct.  This is different from testing a "
@@ -264,13 +280,15 @@ msgid ""
 "looks right; the goal is instead a rigorous proof that a program produces "
 "the right result for all possible inputs."
 msgstr ""
-"研究者たちは長いあいだ、プログラムが正しいことを数学的に証明する方法の発見に"
-"血道をあげてきました。これは、色々な入力でテストして出力が正しかったからまあ"
-"正しいだろう、と結論するのとも違いますし、ソースコードを読んで「間違いはなさ"
-"そうだ」と言うのとも別の話です; 目指すのは、出現しうる入力すべてに対してプロ"
-"グラムが正しい結果を出すことの厳密な証明なのです。"
+"Por un largo tiempo los investigadores se han interesado en buscar formas de "
+"demostrar matemáticamente que los programas son correctos. Esto es diferente "
+"de probar un programa sobre numerosas entradas y concluir que su salida es "
+"usualmente correcta, o leer el código fuente de un programa y concluir que "
+"el código se ve bien; en lugar de eso el objetivo es una demostración "
+"rigurosa de que un programa produce el resultado correcto para todas las "
+"entradas posibles."
 
-#: ../../howto/functional.rst:111
+#: ../Doc/howto/functional.rst:111
 msgid ""
 "The technique used to prove programs correct is to write down "
 "**invariants**, properties of the input data and of the program's variables "
@@ -280,25 +298,28 @@ msgid ""
 "This continues until you reach the end of the program, at which point the "
 "invariants should match the desired conditions on the program's output."
 msgstr ""
-"プログラムを証明するために使われているのは **不変式** を書き出していくという"
-"テクニックで、不変式とは入力データやプログラム変数のうち常に真である性質のこ"
-"とです。コードの一行一行で、 **実行前** の不変式 X と Y が真なら **実行後に"
-"** ちょっと違う不変式 X' と Y' が真になることを示していき、これをプログラムの"
-"終わりまで続けるわけです。すると最終的な不変式はプログラムの出力に合った条件"
-"になっているはずです。"
+"La técnica utilizada para demostrar que los programas son correctos es "
+"anotar **invariantes**, propiedades de los datos de entrada y de las "
+"variables del programa que siempre son verdaderas. Por cada línea de código, "
+"debe mostrar que si las invariantes X e Y son verdaderas **antes** que la "
+"línea sea ejecutada, las invariantes ligeramente diferentes X' e Y' son "
+"verdaderas **después** que la línea se ejecutó. Esto continúa hasta que "
+"alcance el fin del programa, punto en el cuál las invariantes deben "
+"coincidir con las condiciones deseadas en la salida del programa."
 
-#: ../../howto/functional.rst:119
+#: ../Doc/howto/functional.rst:119
 msgid ""
 "Functional programming's avoidance of assignments arose because assignments "
 "are difficult to handle with this technique; assignments can break "
 "invariants that were true before the assignment without producing any new "
 "invariants that can be propagated onward."
 msgstr ""
-"関数型プログラミングが代入を嫌うのは、この不変式テクニックでは代入を扱いにく"
-"いからです; 代入は、それまで真だった不変式を壊しておいて、自分は次の行に伝え"
-"てゆける不変式を生み出さないことがあるのです。"
+"La evitación de las asignaciones de la programación funcional surge porque "
+"las asignaciones son difíciles de manejar con esta técnica; las asignaciones "
+"pueden romper invariantes que eran verdaderas antes de la asignación sin "
+"producir nuevas invariantes que se puedan propagar hacia adelante."
 
-#: ../../howto/functional.rst:124
+#: ../Doc/howto/functional.rst:124
 msgid ""
 "Unfortunately, proving programs correct is largely impractical and not "
 "relevant to Python software. Even trivial programs require proofs that are "
@@ -309,20 +330,22 @@ msgid ""
 "the question of verifying the proof; maybe there's an error in it, and you "
 "wrongly believe you've proved the program correct."
 msgstr ""
-"残念ながら、プログラムの証明はだいたい実際的でもありませんし、Python ソフト"
-"ウェアにも関係ありません。本当に簡単なプログラムでも、証明には数ページにわた"
-"る論文が必要なのです; ある程度の複雑なプログラムではもう尋常でない長さになっ"
-"てしまうので、日常で使っているプログラム (Python インタプリタ、XML パーサ、"
-"ウェブブラウザ) はほとんど、あるいはすべて、正しさを証明するのは不可能でしょ"
-"う。仮に証明を書き出したり生成したりしても、その証明を検証するための疑いが残"
-"ります; 証明に間違いがあるかもしれず、その場合は証明したと自分で勝手に思い込"
-"んでいただけになるのです。"
+"Desafortunadamente, demostrar que los programas son correctos es en gran "
+"parte impráctico y no relevante al software de Python. Incluso los programas "
+"triviales requieren demostraciones que tienen varias páginas; la "
+"demostración de correctitud para un programa moderadamente complicado sería "
+"enorme, y pocos o ninguno de los programas que usa diariamente (el "
+"interprete de Python, su analizador XML, su navegador web) se podrían "
+"demostrar que son correctos. Aún si anotó o generó una demostración, "
+"entonces estaría la cuestión de verificar la demostración; quizás hay un "
+"error en ella, y equivocadamente cree que demostró que el programa es "
+"correcto."
 
-#: ../../howto/functional.rst:135
+#: ../Doc/howto/functional.rst:135
 msgid "Modularity"
-msgstr "モジュラー性"
+msgstr "Modularidad"
 
-#: ../../howto/functional.rst:137
+#: ../Doc/howto/functional.rst:137
 msgid ""
 "A more practical benefit of functional programming is that it forces you to "
 "break apart your problem into small pieces.  Programs are more modular as a "
@@ -330,21 +353,22 @@ msgid ""
 "thing than a large function that performs a complicated transformation.  "
 "Small functions are also easier to read and to check for errors."
 msgstr ""
-"より実用的には、関数型プログラミングをすると問題を細かく切り分けることになる"
-"という利点があります。結果としてプログラムはモジュラー化されます。複雑な変形"
-"を施す大きな関数を書くより、一つのことに絞ってそれだけをする小さな関数のほう"
-"が書きやすいものです。それに、小さいほうが読むのもエラーをチェックするのも簡"
-"単です。"
+"Un beneficio más práctico de la programación funcional es que fuerza a "
+"romper su problema en pequeñas piezas. Como resultado los programas son más "
+"modulares. Es más fácil especificar y escribir una función pequeña que hace "
+"una cosa que una función grande que realiza una transformación complicada. "
+"Las funciones pequeñas también son más fáciles de leer y comprobar si hay "
+"errores."
 
-#: ../../howto/functional.rst:145
+#: ../Doc/howto/functional.rst:145
 msgid "Ease of debugging and testing"
-msgstr "デバッグやテストの簡単さ"
+msgstr "Facilidad de depurar y probar"
 
-#: ../../howto/functional.rst:147
+#: ../Doc/howto/functional.rst:147
 msgid "Testing and debugging a functional-style program is easier."
-msgstr "テストやデバッグも関数型プログラムなら簡単です。"
+msgstr "Probar y depurar un programa en estilo funcional es más fácil."
 
-#: ../../howto/functional.rst:149
+#: ../Doc/howto/functional.rst:149
 msgid ""
 "Debugging is simplified because functions are generally small and clearly "
 "specified.  When a program doesn't work, each function is an interface point "
@@ -352,28 +376,30 @@ msgid ""
 "intermediate inputs and outputs to quickly isolate the function that's "
 "responsible for a bug."
 msgstr ""
-"関数が一般的に小さくて明確に意味付けされているので、デバッグ方法は単純です。"
-"プログラムが正しく動かないときには、関数ひとつひとつがデータの正しさをチェッ"
-"クするポイントになるので、それぞれの時点における入力と出力を見ていけば、バグ"
-"の原因となる関数を素早く切り出すことができるのです。"
+"La depuración se simplifica porque las funciones generalmente son pequeñas y "
+"claramente especificadas. Cuando un programa no funciona, cada función es un "
+"punto de interfaz donde puede comprobar si los datos son correctos. Puede "
+"ver las entradas y salidas intermedias para aislar rápidamente la función "
+"que es responsable de un error."
 
-#: ../../howto/functional.rst:154
+#: ../Doc/howto/functional.rst:154
 msgid ""
 "Testing is easier because each function is a potential subject for a unit "
 "test. Functions don't depend on system state that needs to be replicated "
 "before running a test; instead you only have to synthesize the right input "
 "and then check that the output matches expectations."
 msgstr ""
-"ひとつひとつの関数がユニットテストの対象になり得るわけですから、テストも簡単"
-"です。関数はシステムの状態に依存しませんので、テストの実行前にそうした状態を"
-"再現する必要はありません; 単に適切な入力を合成して、出力が期待どおりかどうか"
-"チェックするだけで良いのです。"
+"Las pruebas son más fáciles porque cada función es un sujeto potencial para "
+"una prueba unitaria. Las funciones no dependen de un estado del sistema que "
+"necesite ser replicado antes de correr una prueba; en lugar de eso solo "
+"tiene que sintetizar la entrada correcta y comprobar que la salida coincida "
+"con las expectativas."
 
-#: ../../howto/functional.rst:161
+#: ../Doc/howto/functional.rst:161
 msgid "Composability"
-msgstr "結合性"
+msgstr "Componibilidad"
 
-#: ../../howto/functional.rst:163
+#: ../Doc/howto/functional.rst:163
 msgid ""
 "As you work on a functional-style program, you'll write a number of "
 "functions with varying inputs and outputs.  Some of these functions will be "
@@ -383,35 +409,38 @@ msgid ""
 "that takes a filename and returns its contents, can be applied to many "
 "different situations."
 msgstr ""
-"関数型スタイルのプログラムを作っていると、色々な入力や出力のために色々な関数"
-"を書くことになります。仕方なく特定のアプリケーションに特化した関数を書くこと"
-"もあるでしょうけれど、広範なプログラムに使える関数もあることでしょう。たとえ"
-"ば、ディレクトリ名を受け取ってその中の XML ファイル一覧を返す関数や、ファイル"
-"名を受け取って内容を返す関数などは、多様な場面に適用できそうです。"
+"Mientras trabaja en un programa en estilo funcional, escribirá un número de "
+"funciones con diferentes entradas y salidas. Algunas de estas funciones "
+"inevitablemente estarán especializadas en una aplicación en particular, pero "
+"otras serán útiles en una amplia variedad de programas. Por ejemplo, una "
+"función que recibe la ruta de un directorio y retorna todos los archivos XML "
+"en el directorio, o una función que recibe el nombre de un archivo y retorna "
+"su contenido, se puede aplicar a muchas situaciones diferentes."
 
-#: ../../howto/functional.rst:170
+#: ../Doc/howto/functional.rst:170
 msgid ""
 "Over time you'll form a personal library of utilities.  Often you'll "
 "assemble new programs by arranging existing functions in a new configuration "
 "and writing a few functions specialized for the current task."
 msgstr ""
-"時たつうちに自分の特製ライブラリやユーティリティが充実してくると、新しいプロ"
-"グラムも、既存の関数を調整して少し今回に特化した関数を書くだけで組み立てられ"
-"るようになります。"
+"Con el tiempo formará una librería personal de utilidades. A menudo "
+"ensamblará nuevos programas organizando funciones existentes en una nueva "
+"configuración y escribiendo unas pocas funciones especializadas para la "
+"tarea actual."
 
-#: ../../howto/functional.rst:178
+#: ../Doc/howto/functional.rst:178
 msgid "Iterators"
-msgstr "イテレータ (iterator)"
+msgstr "Iteradores"
 
-#: ../../howto/functional.rst:180
+#: ../Doc/howto/functional.rst:180
 msgid ""
 "I'll start by looking at a Python language feature that's an important "
 "foundation for writing functional-style programs: iterators."
 msgstr ""
-"まずは関数型スタイルのプログラムを書く際の基礎となる重要な Python 機能から見"
-"ていきましょう: イテレータです。"
+"Comenzaré viendo una característica del lenguaje Python que es una base "
+"importante para escribir programas en estilo funcional: iteradores."
 
-#: ../../howto/functional.rst:183
+#: ../Doc/howto/functional.rst:183
 msgid ""
 "An iterator is an object representing a stream of data; this object returns "
 "the data one element at a time.  A Python iterator must support a method "
@@ -421,15 +450,16 @@ msgid ""
 "exception. Iterators don't have to be finite, though; it's perfectly "
 "reasonable to write an iterator that produces an infinite stream of data."
 msgstr ""
-"イテレータは連続データを表現するオブジェクトです; このオブジェクトは一度に一"
-"つの要素ずつデータを返します。 Python のイテレータは :meth:`~iterator."
-"__next__` という、引数を取らず次の要素を返すメソッドを必ずサポートしていま"
-"す。データストリームに要素が残っていない場合、 :meth:`~iterator.__next__` は"
-"必ず :exc:`StopIteration` 例外を出します。ただし、イテレータの長さは有限であ"
-"る必要はありません; 無限のストリームを生成するイテレータを書くというのもまっ"
-"たく理に適ったことです。"
+"Un iterador es un objeto que representa un flujo de datos; este objeto "
+"retorna los datos de a un elemento a la vez. Un iterador de Python debe "
+"soportar un método llamado :meth:`~iterator.__next__` que no recibe "
+"argumentos y siempre retorna el siguiente elemento en el flujo. Si no hay "
+"más elementos en el flujo, :meth:`~iterator.__next__` debe lanzar la "
+"excepción :exc:`StopIteration`. Los iteradores no tienen que ser finitos; es "
+"perfectamente razonable escribir un iterador que produce un flujo de datos "
+"infinito."
 
-#: ../../howto/functional.rst:191
+#: ../Doc/howto/functional.rst:191
 msgid ""
 "The built-in :func:`iter` function takes an arbitrary object and tries to "
 "return an iterator that will return the object's contents or elements, "
@@ -438,45 +468,46 @@ msgid ""
 "lists and dictionaries.  An object is called :term:`iterable` if you can get "
 "an iterator for it."
 msgstr ""
-"ビルトインの :func:`iter` 関数は任意のオブジェクトを受けて、 その中身や要素を"
-"返すイテレータを返そうとします。引数のオブジェクトが イテレータを作れないとき"
-"は :exc:`TypeError` を投げます。Python の ビルトインなデータ型にもいくつかイ"
-"テレータ化のできるものがあり、 中でもよく使われるのはリストと辞書です。イテ"
-"レータを作れる オブジェクトは :term:`iterable` オブジェクトと呼ばれます。"
+"La función incorporada :func:`iter` recibe un objeto arbitrario e intenta "
+"retornar un iterador que retornará los contenidos o elementos del objeto, "
+"lanzando :exc:`TypeError` si el objeto no soporta iteración. Muchos tipos de "
+"datos integrados de Python soportan iteración, siendo los más comunes las "
+"listas y los diccionarios. Un objeto se llama :term:`iterable` si puede "
+"obtener un iterador para él."
 
-#: ../../howto/functional.rst:198
+#: ../Doc/howto/functional.rst:198
 msgid "You can experiment with the iteration interface manually:"
-msgstr "手を動かしてイテレータ化の実験をしてみましょう:"
+msgstr "Puede experimentar con la interfaz de iteración manualmente:"
 
-#: ../../howto/functional.rst:216
+#: ../Doc/howto/functional.rst:216
 msgid ""
 "Python expects iterable objects in several different contexts, the most "
 "important being the :keyword:`for` statement.  In the statement ``for X in "
 "Y``, Y must be an iterator or some object for which :func:`iter` can create "
 "an iterator.  These two statements are equivalent::"
 msgstr ""
-"Python は色々な文脈でイテラブルなオブジェクトを期待しますが、 最も重要なの"
-"は :keyword:`for` 文です。 ``for X in Y`` という文の Y は、 イテレータか、あ"
-"るいは :func:`iter` でイテレータを作れるオブジェクトである必要があります。次"
-"の二つは同じ意味になります::"
+"Python espera objetos iterables en muchos contextos diferentes, siendo el "
+"más importante la sentencia :keyword:`for`. En la sentencia ``for X in Y``, "
+"Y debe ser un iterador o algún objeto para el que :func:`iter` puede crear "
+"un iterador. Estas dos sentencias son equivalentes::"
 
-#: ../../howto/functional.rst:228
+#: ../Doc/howto/functional.rst:228
 msgid ""
 "Iterators can be materialized as lists or tuples by using the :func:`list` "
 "or :func:`tuple` constructor functions:"
 msgstr ""
-"イテレータは :func:`list` や :func:`tuple` といったコンストラクタ関数を使って"
-"リストやタプルに具現化することができます:"
+"Los iteradores se pueden materializar como listas o tuplas utilizando las "
+"funciones constructoras :func:`list` o :func:`tuple`:"
 
-#: ../../howto/functional.rst:237
+#: ../Doc/howto/functional.rst:237
 msgid ""
 "Sequence unpacking also supports iterators: if you know an iterator will "
 "return N elements, you can unpack them into an N-tuple:"
 msgstr ""
-"シーケンスのアンパックもイテレータに対応しています: イテレータが N 個の要素を"
-"返すということが事前にわかっていれば、N-タプルにアンパックすることができます:"
+"El desempaquetado de secuencias también soporta iteradores: si sabe que un "
+"iterador retornará N elementos, puede desempaquetarlos en una N-tupla:"
 
-#: ../../howto/functional.rst:246
+#: ../Doc/howto/functional.rst:246
 msgid ""
 "Built-in functions such as :func:`max` and :func:`min` can take a single "
 "iterator argument and will return the largest or smallest element.  The "
@@ -486,15 +517,16 @@ msgid ""
 "func:`min` will never return, and if the element X never appears in the "
 "stream, the ``\"in\"`` and ``\"not in\"`` operators won't return either."
 msgstr ""
-"ビルトイン関数の :func:`max` や :func:`min` なども、イテレータ一つだけを引数"
-"に取って最大・最小の要素を返すことができます。 ``\"in\"`` や ``\"not in\"`` "
-"演算子もイテレータに対応しています: ``X in iterator`` は、そのイテレータから"
-"返るストリームに X があれば真です。ですからイテレータが無限長だと、当然ながら"
-"問題に直面します; :func:`max`, :func:`min` はいつまでも戻って来ませんし、 要"
-"素 X がストリームに出てこなければ ``\"in\"``, ``\"not in\"`` オペレータも戻り"
-"ません。"
+"Las funciones incorporadas como :func:`max` y :func:`min` pueden recibir un "
+"solo iterador como argumento y retornarán el elemento más grande o más "
+"pequeño. Los operadores ``\"in\"`` y ``\"not in\"`` también soportan "
+"iteradores: ``X in iterator`` es verdadero si X se encuentra en el flujo que "
+"retornó el iterador. Se encontrará con problemas obvios si el iterador es "
+"infinito; :func:`max`, :func:`min` nunca retornarán, y si el elemento X "
+"nunca aparece en el flujo, los operadores ``\"in\"`` y ``\"not in\"`` "
+"tampoco retornarán."
 
-#: ../../howto/functional.rst:254
+#: ../Doc/howto/functional.rst:254
 msgid ""
 "Note that you can only go forward in an iterator; there's no way to get the "
 "previous element, reset the iterator, or make a copy of it.  Iterator "
@@ -504,89 +536,91 @@ msgid ""
 "need to do something different with the same stream, you'll have to create a "
 "new iterator."
 msgstr ""
-"イテレータは次に進むことしかできませんのでご注意ください; 前の要素を手に入れ"
-"たり、イテレータをリセットしたり、コピーを作ったりする方法はありません。イテ"
-"レータがオブジェクトとしてそうした追加機能を 持つことはできますが、プロトコル"
-"では :meth:`~iterator.__next__` メソッドのことしか指定されていません。ですか"
-"ら関数はイテレータの出力を使い尽くして しまうかもしれませんし、同じストリーム"
-"に何か別のことをする 必要があるなら新しいイテレータを作らなくてはいけません。"
+"Note que solo puede ir hacia adelante en un iterador; no hay forma de "
+"obtener el elemento anterior, reiniciar el iterador o hacer una copia de él. "
+"Los objetos iteradores opcionalmente pueden proveer estas capacidades "
+"adicionales, pero el protocolo del iterador solo especifica el método :meth:"
+"`~iterator.__next__`. Por lo tanto las funciones pueden consumir toda la "
+"salida del iterador, y si necesita hacer algo diferente con el mismo flujo, "
+"tendrá que crear un nuevo iterador."
 
-#: ../../howto/functional.rst:264
+#: ../Doc/howto/functional.rst:264
 msgid "Data Types That Support Iterators"
-msgstr "イテレータ対応のデータ型"
+msgstr "Tipos de datos que soportan iteradores"
 
-#: ../../howto/functional.rst:266
+#: ../Doc/howto/functional.rst:266
 msgid ""
 "We've already seen how lists and tuples support iterators.  In fact, any "
 "Python sequence type, such as strings, will automatically support creation "
 "of an iterator."
 msgstr ""
-"リストやタプルがイテレータに対応している方法については既に見ましたが、実のと"
-"ころ Python のシーケンス型はどれでも、たとえば文字列なども、自動でイテレータ"
-"生成に対応しています。"
+"Ya hemos visto cómo las listas y tuplas soportan iteradores. De hecho, "
+"cualquier tipo de secuencia de Python, como cadenas de caracteres, "
+"automáticamente soportará la creación de un iterador."
 
-#: ../../howto/functional.rst:270
+#: ../Doc/howto/functional.rst:270
 msgid ""
 "Calling :func:`iter` on a dictionary returns an iterator that will loop over "
 "the dictionary's keys::"
 msgstr ""
-"辞書に対して :func:`iter` すると、辞書のキーでループを回すイテレータが返され"
-"ます::"
+"Llamar a :func:`iter` en un diccionario retornará un iterador que recorrerá "
+"sobre las claves del diccionario::"
 
-#: ../../howto/functional.rst:290
+#: ../Doc/howto/functional.rst:290
 msgid ""
 "Note that starting with Python 3.7, dictionary iteration order is guaranteed "
 "to be the same as the insertion order. In earlier versions, the behaviour "
 "was unspecified and could vary between implementations."
 msgstr ""
-"Python 3.7 から、辞書の反復順序は挿入順序と同じであることが保証されていること"
-"に注意してください。\n"
-"以前のバージョンでは、その振る舞いは仕様が定められておらず、実装ごとに異なる"
-"ことがありました。"
+"Note que a partir de Python 3.7, se garantiza que el orden de iteración del "
+"diccionario es el mismo que el orden de inserción. En versiones anteriores, "
+"el comportamiento no estaba especificado y podía variar entre "
+"implementaciones."
 
-#: ../../howto/functional.rst:294
+#: ../Doc/howto/functional.rst:294
 msgid ""
 "Applying :func:`iter` to a dictionary always loops over the keys, but "
 "dictionaries have methods that return other iterators.  If you want to "
 "iterate over values or key/value pairs, you can explicitly call the :meth:"
 "`~dict.values` or :meth:`~dict.items` methods to get an appropriate iterator."
 msgstr ""
-"辞書は :func:`iter` を適用するとキーでループを回しますが、辞書には他のイテ"
-"レータを返すメソッドもあります。明示的に値、あるいはキーと値のペアでイテレー"
-"トしたければ、:meth:`~dict.values`, :meth:`~dict.items` というメソッドでイテ"
-"レータを作ることができます。"
+"Aplicar :func:`iter` a un diccionario siempre recorre sobre las claves, pero "
+"los diccionarios tienen métodos que retornan otros iteradores. Si quiere "
+"iterar sobre valores o pares clave/valor, puede explícitamente llamar a los "
+"métodos :meth:`~dict.values` o :meth:`~dict.items` para obtener un iterador "
+"apropiado."
 
-#: ../../howto/functional.rst:300
+#: ../Doc/howto/functional.rst:300
 msgid ""
 "The :func:`dict` constructor can accept an iterator that returns a finite "
 "stream of ``(key, value)`` tuples:"
 msgstr ""
-"逆に :func:`dict` コンストラクタは、有限な  ``(key, value)`` タプルのストリー"
-"ムを返すイテレータを受け入れることができます:"
+"El constructor :func:`dict` puede aceptar un iterador que retorna un flujo "
+"finito de tuplas ``(key, value)``:"
 
-#: ../../howto/functional.rst:307
+#: ../Doc/howto/functional.rst:307
 msgid ""
 "Files also support iteration by calling the :meth:`~io.TextIOBase.readline` "
 "method until there are no more lines in the file.  This means you can read "
 "each line of a file like this::"
 msgstr ""
-"ファイルも、最後の行まで :meth:`~io.TextIOBase.readline` メソッドを呼んでいく"
-"ことでイテレータ化に対応しています。つまりこうやってファイルの各行を読んでい"
-"くことができるわけです::"
+"Los archivos también soportan iteración llamando al método :meth:`~io."
+"TextIOBase.readline` hasta que no haya más líneas en el archivo. Esto "
+"significa que puede leer cada línea de un archivo de esta forma::"
 
-#: ../../howto/functional.rst:315
+#: ../Doc/howto/functional.rst:315
 msgid ""
 "Sets can take their contents from an iterable and let you iterate over the "
 "set's elements::"
 msgstr ""
-"セットはイテラブルを受け取れますし、そのセットの要素でイテレートすることもで"
-"きます::"
+"Los conjuntos pueden recibir sus contenidos de un iterable y le permiten "
+"iterar sobre los elementos del conjunto::"
 
-#: ../../howto/functional.rst:331
+#: ../Doc/howto/functional.rst:331
 msgid "Generator expressions and list comprehensions"
-msgstr "ジェネレータ式とリスト内包表記"
+msgstr "Expresiones generadoras y listas por comprensión"
 
-#: ../../howto/functional.rst:333
+#: ../Doc/howto/functional.rst:333
 msgid ""
 "Two common operations on an iterator's output are 1) performing some "
 "operation for every element, 2) selecting a subset of elements that meet "
@@ -594,29 +628,33 @@ msgid ""
 "strip off trailing whitespace from each line or extract all the strings "
 "containing a given substring."
 msgstr ""
-"イテレータの出力に対してよく使う操作トップ 2 は、(1) ひとつずつ全要素に操作を"
-"実行する、および (2) 条件に合う要素でサブセットを作る、です。たとえば文字列の"
-"リストなら、各行のうしろに付いた邪魔なホワイトスペースを削りたいとか、特定の"
-"文字列を含む部分をピックアップしたいなどと思うかもしれません。"
+"Dos operaciones comunes en la salida de un iterador son 1) realizar alguna "
+"operación para cada elemento, 2) elegir un subconjunto de elementos que "
+"reúnen alguna condición. Por ejemplo, dada una lista de cadena de "
+"caracteres, podría querer remover los espacios finales de cada línea o "
+"extraer todas las cadenas de caracteres que contienen una subcadena de "
+"caracteres dada."
 
-#: ../../howto/functional.rst:339
+#: ../Doc/howto/functional.rst:339
 msgid ""
 "List comprehensions and generator expressions (short form: \"listcomps\" and "
 "\"genexps\") are a concise notation for such operations, borrowed from the "
 "functional programming language Haskell (https://www.haskell.org/).  You can "
 "strip all the whitespace from a stream of strings with the following code::"
 msgstr ""
-"リスト内包表記とジェネレータ式 (略して「listcomp」と「genexp」) は、そうした"
-"操作向けの簡潔な表記方法です。これは関数型プログラミング言語 Haskell "
-"(https://www.haskell.org/) にインスパイアされました。文字列のストリームからホ"
-"ワイトスペースをすべて削るのは次のコードでできます::"
+"Las listas por comprensión y las expresiones generadoras (forma abreviada: "
+"\"listcomps\" y \"genexps\") son una notación concisa para tales "
+"operaciones, prestadas del lenguaje de programación funcional Haskell "
+"(https://www.haskell.org/). Puede remover todos los espacios de un flujo de "
+"cadena de caracteres con el siguiente código::"
 
-#: ../../howto/functional.rst:352
+#: ../Doc/howto/functional.rst:352
 msgid ""
 "You can select only certain elements by adding an ``\"if\"`` condition::"
-msgstr "特定の要素だけを選び出すのは ``\"if\"`` 条件式を付けることで可能です::"
+msgstr ""
+"Puede seleccionar solo ciertos elementos agregando una condición ``\"if\"``::"
 
-#: ../../howto/functional.rst:357
+#: ../Doc/howto/functional.rst:357
 msgid ""
 "With a list comprehension, you get back a Python list; ``stripped_list`` is "
 "a list containing the resulting lines, not an iterator.  Generator "
@@ -626,52 +664,56 @@ msgid ""
 "infinite stream or a very large amount of data.  Generator expressions are "
 "preferable in these situations."
 msgstr ""
-"リスト内包表記を使うと Python リストが返って来ます; ``stripped_list`` は実行"
-"結果の行が入ったリストであって、イテレータではありません。ジェネレータ式はイ"
-"テレータを返し、これだと必要に応じてだけ値を算出しますので、すべての値を一度"
-"に出す必要がありません。つまりリスト内包表記のほうは、無限長ストリームや膨大"
-"なデータを返すようなイテレータを扱う際には、あまり役に立たないということで"
-"す。そういった状況ではジェネレータ式のほうが好ましいと言えます。"
+"Con una lista por comprensión, obtiene una lista de Python; "
+"``stripped_list`` es una lista que contiene las líneas resultantes, no un "
+"iterador. Las expresiones generadoras retornan un iterador que calcula los "
+"valores cuando es necesario, sin necesidad de materializar todos los valores "
+"a la vez. Esto significa que las listas por comprensión son inútiles si está "
+"trabajando con iteradores que retornan un flujo infinito o una gran cantidad "
+"de datos. En estas situaciones son preferibles las expresiones generadoras."
 
-#: ../../howto/functional.rst:364
+#: ../Doc/howto/functional.rst:364
 msgid ""
 "Generator expressions are surrounded by parentheses (\"()\") and list "
 "comprehensions are surrounded by square brackets (\"[]\").  Generator "
 "expressions have the form::"
 msgstr ""
-"ジェネレータ式は丸括弧 \"()\" で囲まれ、リスト内包表記は角括弧 \"[]\" で囲ま"
-"れます。ジェネレータ式の形式は次のとおりです::"
+"Las expresiones generadoras están rodeadas por paréntesis (\"()\") y las "
+"listas por comprensión están rodeadas por corchetes (\"[]\"). Las "
+"expresiones generadoras tienen la forma::"
 
-#: ../../howto/functional.rst:378
+#: ../Doc/howto/functional.rst:378
 msgid ""
 "Again, for a list comprehension only the outside brackets are different "
 "(square brackets instead of parentheses)."
 msgstr ""
-"リスト内包表記も、外側の括弧が違うだけ (丸ではなく角括弧) で、あとは同じで"
-"す。"
+"Nuevamente, para una lista por comprensión solo los corchetes exteriores son "
+"diferentes (corchetes en lugar de paréntesis)."
 
-#: ../../howto/functional.rst:381
+#: ../Doc/howto/functional.rst:381
 msgid ""
 "The elements of the generated output will be the successive values of "
 "``expression``.  The ``if`` clauses are all optional; if present, "
 "``expression`` is only evaluated and added to the result when ``condition`` "
 "is true."
 msgstr ""
-"生成される出力は ``expression`` 部分の値を要素として並べたものになります。 "
-"``if`` 節はすべて、なくても大丈夫です; あれば ``condition`` が真のときだけ "
-"``expression`` が評価されて出力に追加されます。"
+"Los elementos de la salida generada serán valores sucesivos de "
+"``expression``. Las cláusulas ``if`` son todas opcionales; si está presente, "
+"``expression`` es solo evaluado y añadido al resultado cuando ``condition`` "
+"es verdadero."
 
-#: ../../howto/functional.rst:385
+#: ../Doc/howto/functional.rst:385
 msgid ""
 "Generator expressions always have to be written inside parentheses, but the "
 "parentheses signalling a function call also count.  If you want to create an "
 "iterator that will be immediately passed to a function you can write::"
 msgstr ""
-"ジェネレータ式は常に括弧の中に書かなければなりませんが、関数コールの目印に"
-"なっている括弧でも大丈夫です。関数にすぐ渡すイテレータを作りたければこう書け"
-"るのです::"
+"Las expresiones generadoras siempre se tienen que escribir dentro de "
+"paréntesis, pero los paréntesis que indican la llamada a una función también "
+"cuentan. Si quiere crear un iterador que se pase inmediatamente a una "
+"función puede escribir::"
 
-#: ../../howto/functional.rst:391
+#: ../Doc/howto/functional.rst:391
 msgid ""
 "The ``for...in`` clauses contain the sequences to be iterated over.  The "
 "sequences do not have to be the same length, because they are iterated over "
@@ -680,57 +722,59 @@ msgid ""
 "looped over for each resulting pair of elements from ``sequence1`` and "
 "``sequence2``."
 msgstr ""
-"``for...in`` 節は複数つなげられますが、どれにも、イテレートするためのシーケン"
-"スが含まれています。それらのシーケンスは並行して **ではなく** 、左から右へ順"
-"番にイテレートされるので、長さが同じである必要はありません。 ``sequence1`` の"
-"各要素ごとに毎回最初から ``sequence2`` をループで回すのです。その後 "
-"``sequence1`` と ``sequence2`` から出た要素ペアごとに、 ``sequence3`` でルー"
-"プします。"
+"Las cláusulas ``for...in`` contienen las secuencias sobre las que se itera. "
+"Las secuencias no tienen que tener la misma longitud, porque son iteradas de "
+"izquierda a derecha, **no** en paralelo. Por cada elemento en ``sequence1``, "
+"se recorre ``sequence2`` desde el inicio. Luego se recorre ``sequence3`` por "
+"cada par de elementos resultante de ``sequence1`` y ``sequence2``."
 
-#: ../../howto/functional.rst:397
+#: ../Doc/howto/functional.rst:397
 msgid ""
 "To put it another way, a list comprehension or generator expression is "
 "equivalent to the following Python code::"
 msgstr ""
-"別の書き方をすると、リスト内包表記やジェネレータ式は次の Python コードと同じ"
-"意味になります::"
+"Para ponerlo en otra forma, una lista por comprensión o expresión generadora "
+"es equivalente al siguiente código Python::"
 
-#: ../../howto/functional.rst:414
+#: ../Doc/howto/functional.rst:414
 msgid ""
 "This means that when there are multiple ``for...in`` clauses but no ``if`` "
 "clauses, the length of the resulting output will be equal to the product of "
 "the lengths of all the sequences.  If you have two lists of length 3, the "
 "output list is 9 elements long:"
 msgstr ""
-"つまり、複数の ``for...in`` 節があって ``if`` がないときの最終出力は、長さが"
-"各シーケンス長の積に等しくなるということです。長さ 3 のリスト二つなら、出力リ"
-"ストの長さは 9 要素です:"
+"Esto significa que cuando hay múltiples cláusulas ``for...in`` pero no "
+"cláusulas ``if``, la longitud de la salida resultante será igual al producto "
+"de las longitudes de todas las secuencias. Si tiene dos listas de longitud "
+"3, la lista de salida tendrá 9 elementos:"
 
-#: ../../howto/functional.rst:426
+#: ../Doc/howto/functional.rst:426
 msgid ""
 "To avoid introducing an ambiguity into Python's grammar, if ``expression`` "
 "is creating a tuple, it must be surrounded with parentheses.  The first list "
 "comprehension below is a syntax error, while the second one is correct::"
 msgstr ""
-"Python の文法に曖昧さを紛れ込ませないように、 ``expression`` でタプルを作るな"
-"ら括弧で囲わなくてはなりません。下にあるリスト内包表記で、最初のは構文エラー"
-"ですが、二番目は有効です::"
+"Para evitar introducir una ambigüedad en la gramática de Python, si "
+"``expression`` está creando una tupla, debe estar rodeada de paréntesis. La "
+"primera lista por comprensión de abajo tiene un error de sintaxis, mientras "
+"que la segunda es correcta::"
 
-#: ../../howto/functional.rst:437
+#: ../Doc/howto/functional.rst:437
 msgid "Generators"
-msgstr "ジェネレータ (generator)"
+msgstr "Generadores"
 
-#: ../../howto/functional.rst:439
+#: ../Doc/howto/functional.rst:439
 msgid ""
 "Generators are a special class of functions that simplify the task of "
 "writing iterators.  Regular functions compute a value and return it, but "
 "generators return an iterator that returns a stream of values."
 msgstr ""
-"ジェネレータは、イテレータを書く作業を簡単にする、特殊な関数です。標準的な関"
-"数は値を計算して返しますが、ジェネレータが返すのは、一連の値を返すイテレータ"
-"です。"
+"Los generadores son una clase especial de funciones que simplifican la tarea "
+"de escribir iteradores. Las funciones regulares calculan un valor y lo "
+"retornan, pero los generadores retornan un iterador que retorna un flujo de "
+"valores."
 
-#: ../../howto/functional.rst:443
+#: ../Doc/howto/functional.rst:443
 msgid ""
 "You're doubtless familiar with how regular function calls work in Python or "
 "C. When you call a function, it gets a private namespace where its local "
@@ -742,30 +786,32 @@ msgid ""
 "function where it left off?  This is what generators provide; they can be "
 "thought of as resumable functions."
 msgstr ""
-"Python や C の標準的な関数コールについては、よくご存じに違いありません。関数"
-"を呼ぶと、ローカル変数を作るプライベートな名前空間ができますね。その関数が "
-"``return`` 文まで来ると、ローカル変数が破壊されてから、返り値が呼び出し元に返"
-"ります。次に同じ関数をもう一度呼ぶと、新しいプライベート名前空間に新規のロー"
-"カル変数が作られるのです。しかし、関数を出るときにローカル変数を捨てなければ"
-"どうなるでしょうか。その出ていったところから関数を続行できたとしたら、どうで"
-"しょう。これこそジェネレータが提供する機能です; すなわち、ジェネレータは続行"
-"できる関数と考えることができます。"
+"Sin duda está relacionado con cómo funcionan las llamadas a funciones "
+"regulares en Python o C. Cuando llama a una función, esta obtiene su espacio "
+"de nombres privado donde se crean sus variables locales. Cuando la función "
+"alcanza una sentencia ``return``, las variables locales son destruidas y el "
+"valor se retorna al llamador. Una llamada posterior a la misma función crea "
+"un nuevo espacio de nombres privado y un conjunto limpio de variables "
+"locales. Pero, ¿qué pasa si las variables locales no fueron desechadas en la "
+"salida de una función? ¿Qué pasa si más tarde podría reanudar la función "
+"desde donde quedó? Esto es lo que proveen los generadores; se pueden pensar "
+"como funciones que se reanudan."
 
-#: ../../howto/functional.rst:452
+#: ../Doc/howto/functional.rst:452
 msgid "Here's the simplest example of a generator function:"
-msgstr "ごく単純なジェネレータ関数の例がこちらにあります:"
+msgstr "Este es el ejemplo más simple de una función generadora:"
 
-#: ../../howto/functional.rst:458
+#: ../Doc/howto/functional.rst:458
 msgid ""
 "Any function containing a :keyword:`yield` keyword is a generator function; "
 "this is detected by Python's :term:`bytecode` compiler which compiles the "
 "function specially as a result."
 msgstr ""
-":keyword:`yield` キーワードを含む関数はすべてジェネレータ関数です; Python "
-"の :term:`bytecode` コンパイラがこれを検出して、特別な方法でコンパイルしてく"
-"れるのです。"
+"Cualquier función que contiene una palabra clave :keyword:`yield` es una "
+"función generadora; esto es detectado por el compilador :term:`bytecode` de "
+"Python que compila la función de forma especial como resultado."
 
-#: ../../howto/functional.rst:462
+#: ../Doc/howto/functional.rst:462
 msgid ""
 "When you call a generator function, it doesn't return a single value; "
 "instead it returns a generator object that supports the iterator protocol.  "
@@ -776,38 +822,40 @@ msgid ""
 "preserved.  On the next call to the generator's :meth:`~generator.__next__` "
 "method, the function will resume executing."
 msgstr ""
-"ジェネレータ関数は、呼ばれたときに一回だけ値を返すのではなく、イテレータ プロ"
-"トコルに対応したオブジェクトを返します。上の例で ``yield`` を実行したとき、 "
-"ジェネレータは ``return`` 文のようにして ``i`` の値を出力します。 ``yield`` "
-"と ``return`` 文の大きな違いは、 ``yield`` に到達した段階でジェネレータの実行"
-"状態が一時停止になって、ローカル変数が保存される点です。 次回そのジェネレータ"
-"の :meth:`~generator.__next__` を呼ぶと、そこから関数が実行を再開します。"
+"Cuando llama a una función generadora, no retorna un solo valor; en lugar de "
+"eso retorna un objeto generador que soporta el protocolo iterador. Al "
+"ejecutar la expresión ``yield``, el generador produce el valor de ``i``, de "
+"forma similar a una sentencia ``return``. La gran diferencia entre una "
+"sentencia ``yield`` y un ``return`` es que al alcanzar un ``yield`` se "
+"suspende el estado de ejecución del generador y se preservan las variables "
+"locales. En la próxima llamada al método :meth:`~generator.__next__` del "
+"generador, la función reanudará la ejecución."
 
-#: ../../howto/functional.rst:471
+#: ../Doc/howto/functional.rst:471
 msgid "Here's a sample usage of the ``generate_ints()`` generator:"
-msgstr "上記 ``generate_ints()`` ジェネレータの使用例はこちらです:"
+msgstr "Este es un ejemplo de uso del generador ``generate_ints()``:"
 
-#: ../../howto/functional.rst:488
+#: ../Doc/howto/functional.rst:488
 msgid ""
 "You could equally write ``for i in generate_ints(5)``, or ``a, b, c = "
 "generate_ints(3)``."
 msgstr ""
-"同じく ``for i in generate_ints(5)`` や ``a, b, c = generate_ints(3)`` といっ"
-"た書き方もできます。"
+"De igual forma podría escribir ``for i in generate_ints(5)``, o ``a, b, c = "
+"generate_ints(3)``."
 
-#: ../../howto/functional.rst:491
+#: ../Doc/howto/functional.rst:491
 msgid ""
 "Inside a generator function, ``return value`` causes "
 "``StopIteration(value)`` to be raised from the :meth:`~generator.__next__` "
 "method.  Once this happens, or the bottom of the function is reached, the "
 "procession of values ends and the generator cannot yield any further values."
 msgstr ""
-"ジェネレータ関数の中では、``return value`` は :meth:`~generator.__next__` メ"
-"ソッドから送出された ``StopIteration(value)`` を引き起こします。これが発生し"
-"た場合や、関数の終わりに到達した場合は、値の生成が終了してジェネレーターがそ"
-"れ以上の値を返さない。"
+"Dentro de una función generadora, ``return value`` causa que se lance "
+"``StopIteration(value)`` del método :meth:`~generator.__next__`\\. Una vez "
+"que esto pase, o que se alcance el final de la función, termina la procesión "
+"de valores y el generador no puede producir más valores."
 
-#: ../../howto/functional.rst:496
+#: ../Doc/howto/functional.rst:496
 msgid ""
 "You could achieve the effect of generators manually by writing your own "
 "class and storing all the local variables of the generator as instance "
@@ -816,25 +864,27 @@ msgid ""
 "method increment ``self.count`` and return it. However, for a moderately "
 "complicated generator, writing a corresponding class can be much messier."
 msgstr ""
-"自分でクラスを書いて、ジェネレータで言うところのローカル変数をインスタンス変"
-"数として全部保管しておけば、同じ効果を得ることは可能です。たとえば整数のリス"
-"トを返すのは、 ``self.count`` を 0 にして、 :meth:`~iterator.__next__` メソッ"
-"ドが ``self.count`` をインクリメントして返すようにすればできます。しかしなが"
-"ら、ある程度複雑なジェネレータになってくると、同じことをするクラスを書くのは"
-"格段にややこしいことになります。"
+"Podría lograr el efecto de los generadores manualmente escribiendo su propia "
+"clase y guardando todas las variables locales del generador como variables "
+"de instancia. Por ejemplo, retornar una lista de enteros se podría hacer "
+"estableciendo ``self.count`` a 0, y teniendo el método :meth:`~iterator."
+"__next__` que incrementa ``self.count`` y lo retorna. Sin embargo, para un "
+"generador moderadamente complicado, escribir una clase correspondiente puede "
+"ser mucho más confuso."
 
-#: ../../howto/functional.rst:504
+#: ../Doc/howto/functional.rst:504
 msgid ""
 "The test suite included with Python's library, :source:`Lib/test/"
 "test_generators.py`, contains a number of more interesting examples.  Here's "
 "one generator that implements an in-order traversal of a tree using "
 "generators recursively. ::"
 msgstr ""
-"Python のライブラリに含まれているテストスイート :source:`Lib/test/"
-"test_generators.py` には、ほかにも興味深い例が数多く入っています。これは二分"
-"木の通りがけ順 (in-order) 探索を再帰で実装したジェネレータです。 ::"
+"El banco de pruebas incluido con la librería de Python, :source:`Lib/test/"
+"test_generators.py`, contiene un número de ejemplos más interesantes. Este "
+"es un generador que implementa un recorrido inorden de un árbol usando "
+"generadores recursivamente. ::"
 
-#: ../../howto/functional.rst:520
+#: ../Doc/howto/functional.rst:520
 msgid ""
 "Two other examples in ``test_generators.py`` produce solutions for the N-"
 "Queens problem (placing N queens on an NxN chess board so that no queen "
@@ -842,15 +892,17 @@ msgid ""
 "knight to every square of an NxN chessboard without visiting any square "
 "twice)."
 msgstr ""
-"ほかにも ``test_generators.py`` には、N-Queens 問題 (N×N コマのチェス盤に、互"
-"いに攻撃できないような配置で N 個のクイーンを置く) やナイト・ツアー (N×N 盤の"
-"全コマをナイトが一度ずつ通るような経路を探す) の解を出す例が入っています。"
+"Otros dos ejemplos en ``test_generators.py`` producen soluciones al problema "
+"de N-reinas (ubicar N reinas en un tablero de ajedrez de NxN de forma que "
+"ninguna reina amenace a otra) y el problema del caballo (encontrar una ruta "
+"que lleve a un caballo a cada cuadro de un tablero de ajedrez de NxN sin "
+"visitar ningún cuadro dos veces)."
 
-#: ../../howto/functional.rst:528
+#: ../Doc/howto/functional.rst:528
 msgid "Passing values into a generator"
-msgstr "ジェネレータに値を渡す"
+msgstr "Pasar valores a un generador"
 
-#: ../../howto/functional.rst:530
+#: ../Doc/howto/functional.rst:530
 msgid ""
 "In Python 2.4 and earlier, generators only produced output.  Once a "
 "generator's code was invoked to create an iterator, there was no way to pass "
@@ -859,33 +911,36 @@ msgid ""
 "variable or by passing in some mutable object that callers then modify, but "
 "these approaches are messy."
 msgstr ""
-"Python 2.4 までのジェネレータは出力することしかできませんでした。ジェネレータ"
-"のコードを実行してイテレータを作ってしまったあとで、その関数を再開するときに"
-"新しい情報を渡す手段はなかったのです。ジェネレータがグローバル変数を見るよう"
-"にしたり、ミュータブルなオブジェクトを渡しておいて呼び出し元であとからそれを"
-"変更したり、といったハックは可能でしたが、どれもゴチャゴチャしていますね。"
+"En Python 2.4 y anteriores, los generadores solo producían salida. Una vez "
+"que el código de un generador era invocado para crear un iterador, no había "
+"forma de pasar ninguna información nueva a la función cuando se reanuda su "
+"ejecución. Podría lograr esta habilidad haciendo que el generador mire una "
+"variable global o pasando en algún objeto mutable que el llamador luego "
+"modifica, pero estos enfoques son confusos."
 
-#: ../../howto/functional.rst:537
+#: ../Doc/howto/functional.rst:537
 msgid ""
 "In Python 2.5 there's a simple way to pass values into a generator. :keyword:"
 "`yield` became an expression, returning a value that can be assigned to a "
 "variable or otherwise operated on::"
 msgstr ""
-"Python 2.5 で、ジェネレータに値を渡す簡単な手段ができました。 :keyword:"
-"`yield` が、変数に代入したり演算したりできる値を返す式になったのです::"
+"En Python 2.5 hay una forma más simple de pasar valores a un generador. :"
+"keyword:`yield` se convirtió en una expresión, retornando un valor que se "
+"puede asignar a una variable o sobre el que se puede operar::"
 
-#: ../../howto/functional.rst:543
+#: ../Doc/howto/functional.rst:543
 msgid ""
 "I recommend that you **always** put parentheses around a ``yield`` "
 "expression when you're doing something with the returned value, as in the "
 "above example. The parentheses aren't always necessary, but it's easier to "
 "always add them instead of having to remember when they're needed."
 msgstr ""
-"上のように、返り値で何かをするときは ``yield`` 式の前後に **必ず** 括弧を付け"
-"るようお勧めします。括弧は常に必要なわけではありませんが、どんなとき付けなく"
-"て良いのかを覚えておくより、いつも付けておくほうが楽ですから。"
+"Recomiendo que **siempre** ponga paréntesis alrededor de una expresión "
+"``yield`` cuando esté haciendo algo con el valor retornado, como en el "
+"ejemplo de arriba. Los paréntesis no siempre son necesarios, pero siempre es "
+"más fácil agregarlos en lugar de tener que recordar cuándo son necesarios."
 
-#: ../../howto/functional.rst:548
+#: ../Doc/howto/functional.rst:548
 msgid ""
 "(:pep:`342` explains the exact rules, which are that a ``yield``-expression "
 "must always be parenthesized except when it occurs at the top-level "
@@ -893,65 +948,68 @@ msgid ""
 "write ``val = yield i`` but have to use parentheses when there's an "
 "operation, as in ``val = (yield i) + 12``.)"
 msgstr ""
-"(:pep:`342` がその規則を正確に説明していますが、それによると ``yield``-式は、"
-"代入式で右辺のトップレベルにあるとき以外はいつも括弧を付ける必要があります。"
-"つまり ``val = yield i`` とは書けますが、 ``val = (yield i) + 12`` のように演"
-"算子があるときは括弧を使わなくてはいけません。)"
+"(:pep:`342` explica las reglas exactas, que son que una expresión ``yield`` "
+"siempre debe estar entre paréntesis excepto cuando se encuentra en la "
+"expresión de primer nivel en el lado derecho de una asignación. Esto "
+"significa que puede escribir ``val = yield i`` pero tiene que usar "
+"paréntesis cuando hay una operación, como en ``val = (yield i) + 12``.)"
 
-#: ../../howto/functional.rst:554
+#: ../Doc/howto/functional.rst:554
 msgid ""
 "Values are sent into a generator by calling its :meth:`send(value) "
 "<generator.send>` method.  This method resumes the generator's code and the "
 "``yield`` expression returns the specified value.  If the regular :meth:"
 "`~generator.__next__` method is called, the ``yield`` returns ``None``."
 msgstr ""
-"ジェネレータに値を送るには :meth:`send(value) <generator.send>` メソッドを呼"
-"びます。 するとジェネレータのコードが実行を再開し、 ``yield`` 式がその値を返"
-"すのです。ふつうの :meth:`~generator.__next__` メソッドを呼ぶと、 ``yield`` "
-"は ``None`` を返します。"
+"Los valores son enviados a un generador llamando a su método :meth:"
+"`send(value) <generator.send>`. Este método reanuda el código del generador "
+"y la expresión ``yield`` retorna el valor especificado. Si se llama al "
+"método regular :meth:`~generator.__next__`, ``yield`` retorna ``None``."
 
-#: ../../howto/functional.rst:559
+#: ../Doc/howto/functional.rst:559
 msgid ""
 "Here's a simple counter that increments by 1 and allows changing the value "
 "of the internal counter."
 msgstr ""
-"下にあるのは 1 ずつ増える単純なカウンタですが、内部カウンタの値を変更すること"
-"ができるようになっています。"
+"Este es un simple contador que incrementa por 1 y permite cambiar los "
+"valores del contador interno."
 
-#: ../../howto/functional.rst:574
+#: ../Doc/howto/functional.rst:574
 msgid "And here's an example of changing the counter:"
-msgstr "そしてカウンタ変更の例がこちらです:"
+msgstr "Y este es un ejemplo del cambio del contador:"
 
-#: ../../howto/functional.rst:591
+#: ../Doc/howto/functional.rst:591
 msgid ""
 "Because ``yield`` will often be returning ``None``, you should always check "
 "for this case.  Don't just use its value in expressions unless you're sure "
 "that the :meth:`~generator.send` method will be the only method used to "
 "resume your generator function."
 msgstr ""
-"``yield`` が ``None`` を返すことはよくあるのですから、そうなっていないかどう"
-"か必ずチェックしておくべきです。ジェネレータ関数を再開するために使うメソッド"
-"が :meth:`~generator.send` しかないのだと確定してるのでない限り、式の値をその"
-"まま使ってはいけません。"
+"Como ``yield`` a menudo retornará ``None``, siempre debería comprobar este "
+"caso. No use simplemente su valor en expresiones a menos que esté seguro que "
+"el método :meth:`~generator.send` será el único método utilizado para "
+"reanudar su función generadora."
 
-#: ../../howto/functional.rst:596
+#: ../Doc/howto/functional.rst:596
 msgid ""
 "In addition to :meth:`~generator.send`, there are two other methods on "
 "generators:"
 msgstr ""
-"ジェネレータには、 :meth:`~generator.send` のほかにもメソッドが二つあります:"
+"Además del método :meth:`~generator.send`, hay otros dos métodos para "
+"generadores:"
 
-#: ../../howto/functional.rst:599
+#: ../Doc/howto/functional.rst:599
+#, fuzzy
 msgid ""
 ":meth:`throw(value) <generator.throw>` is used to raise an exception inside "
 "the generator; the exception is raised by the ``yield`` expression where the "
 "generator's execution is paused."
 msgstr ""
-":meth:`throw(value) <generator.throw>` はジェネレータ内で例外を投げるために使"
-"います; その例外はジェネレータの実行が停止したところの ``yield`` 式によって投"
-"げられます。"
+":meth:`throw(type, value=None, traceback=None) <generator.throw>` se usa "
+"para lanzar una excepción dentro del generador; la excepción se lanza en la "
+"expresión ``yield`` donde se pausa la ejecución del generador."
 
-#: ../../howto/functional.rst:603
+#: ../Doc/howto/functional.rst:603
 msgid ""
 ":meth:`~generator.close` raises a :exc:`GeneratorExit` exception inside the "
 "generator to terminate the iteration.  On receiving this exception, the "
@@ -961,32 +1019,32 @@ msgid ""
 "be called by Python's garbage collector when the generator is garbage-"
 "collected."
 msgstr ""
-":meth:`~generator.close` はジェネレータ内で :exc:`GeneratorExit` 例外を投げ"
-"て、 イテレートを終了させます。この例外を受け取ったジェネレータのコードは :"
-"exc:`GeneratorExit` か :exc:`StopIteration` を投げなくてはいけません; この例"
-"外を捕捉して何かほかのことをしようとするのは規則違反であり、 :exc:"
-"`RuntimeError` を引き起こします。 :meth:`~generator.close` はジェネレータが "
-"GC されるときにも呼ばれます。"
+":meth:`~generator.close` lanza una excepción :exc:`GeneratorExit` dentro del "
+"generador para terminar la iteración. Al recibir esta excepción, el código "
+"del generador debe lanzar :exc:`GeneratorExit` o :exc:`StopIteration`; "
+"capturar la excepción y hacer cualquier otra cosa es ilegal y disparará un :"
+"exc:`RuntimeError`. :meth:`~generator.close` también se llamará por el "
+"recolector de basura de Python cuando se recolecte el generador."
 
-#: ../../howto/functional.rst:611
+#: ../Doc/howto/functional.rst:611
 msgid ""
 "If you need to run cleanup code when a :exc:`GeneratorExit` occurs, I "
 "suggest using a ``try: ... finally:`` suite instead of catching :exc:"
 "`GeneratorExit`."
 msgstr ""
-":exc:`GeneratorExit` が起こったときにクリーンアップ作業をする必要があるな"
-"ら、 :exc:`GeneratorExit` を捕捉するのではなく ``try: ... finaly:`` するよう"
-"お勧めします。"
+"Si necesita ejecutar un código de limpieza cuando ocurre un :exc:"
+"`GeneratorExit`, sugiero usar un ``try: ... finally:`` en lugar de capturar :"
+"exc:`GeneratorExit`."
 
-#: ../../howto/functional.rst:614
+#: ../Doc/howto/functional.rst:614
 msgid ""
 "The cumulative effect of these changes is to turn generators from one-way "
 "producers of information into both producers and consumers."
 msgstr ""
-"これらの変更の合わせ技で、ジェネレータは情報の一方的な生産者から、生産者かつ"
-"消費者という存在に変貌を遂げたのです。"
+"El efecto acumulativo de estos cambios es convertir a los generadores de "
+"productores de información unidireccionales en productores y consumidores."
 
-#: ../../howto/functional.rst:617
+#: ../Doc/howto/functional.rst:617
 msgid ""
 "Generators also become **coroutines**, a more generalized form of "
 "subroutines. Subroutines are entered at one point and exited at another "
@@ -994,48 +1052,50 @@ msgid ""
 "can be entered, exited, and resumed at many different points (the ``yield`` "
 "statements)."
 msgstr ""
-"ジェネレータは **コルーチン** という、より一般化された形式のサブルーチンにも"
-"なります。サブルーチンは一カ所 (関数の冒頭) から入って別の一カ所 (``return`` "
-"文) から出るだけですが、コルーチンはいろいろな場所 (``yield`` 文) から入った"
-"り出たり再開したりできるのです。"
+"Los generadores también se convierten en **corrutinas**, una forma más "
+"generalizada de subrutinas. Las subrutinas inician en un punto y salen en "
+"otro punto (el inicio de la función, y la sentencia ``return``), pero las "
+"corrutinas pueden iniciar, salir, y reanudarse en muchos puntos diferentes "
+"(las sentencias ``yield``)."
 
-#: ../../howto/functional.rst:624
+#: ../Doc/howto/functional.rst:624
 msgid "Built-in functions"
-msgstr "組み込み関数 (built-in function)"
+msgstr "Funciones incorporadas"
 
-#: ../../howto/functional.rst:626
+#: ../Doc/howto/functional.rst:626
 msgid ""
 "Let's look in more detail at built-in functions often used with iterators."
 msgstr ""
-"よくイテレータと一緒に使うビルトイン関数について、もっと詳しく見ていきましょ"
-"う。"
+"Veamos con más detalle las funciones incorporadas usadas a menudo con "
+"iteradores."
 
-#: ../../howto/functional.rst:628
+#: ../Doc/howto/functional.rst:628
 msgid ""
 "Two of Python's built-in functions, :func:`map` and :func:`filter` duplicate "
 "the features of generator expressions:"
 msgstr ""
-"Python のビルトイン関数 :func:`map` と :func:`filter` は、機能がジェネレータ"
-"式と重複しています:"
+"Dos de las funciones incorporadas de Python, :func:`map` y :func:`filter` "
+"duplican las características de las expresiones generadoras:"
 
-#: ../../howto/functional.rst:640
+#: ../Doc/howto/functional.rst:640
 msgid ""
 ":func:`map(f, iterA, iterB, ...) <map>` returns an iterator over the sequence"
 msgstr ""
-":func:`map(f, iterA, iterB, ...) <map>` は以下のシーケンスのイテレータを返し"
-"ます"
+":func:`map(f, iterA, iterB, ...) <map>` retorna un iterador sobre la "
+"secuencia"
 
-#: ../../howto/functional.rst:632
+#: ../Doc/howto/functional.rst:632
 msgid ""
 "``f(iterA[0], iterB[0]), f(iterA[1], iterB[1]), f(iterA[2], iterB[2]), ...``."
 msgstr ""
 "``f(iterA[0], iterB[0]), f(iterA[1], iterB[1]), f(iterA[2], iterB[2]), ...``."
 
-#: ../../howto/functional.rst:642
+#: ../Doc/howto/functional.rst:642
 msgid "You can of course achieve the same effect with a list comprehension."
-msgstr "もちろん、リスト内包表記でも同じ結果が得られます。"
+msgstr ""
+"Por supuesto puede lograr el mismo efecto con una lista por comprensión."
 
-#: ../../howto/functional.rst:644
+#: ../Doc/howto/functional.rst:644
 msgid ""
 ":func:`filter(predicate, iter) <filter>` returns an iterator over all the "
 "sequence elements that meet a certain condition, and is similarly duplicated "
@@ -1043,184 +1103,195 @@ msgid ""
 "truth value of some condition; for use with :func:`filter`, the predicate "
 "must take a single value."
 msgstr ""
-":func:`filter(predicate, iter) <filter>` はある条件を満たす要素に渡るイテレー"
-"タを返すので、同様にリスト内包表記で再現できます。\n"
-"**predicate** は、ある条件に対する真偽値を返す関数です;\n"
-":func:`filter` で使うには、その関数の引数は一つでなければなりません。"
+":func:`filter(predicate, iter) <filter>` retorna un iterador sobre todos los "
+"elementos de la secuencia que reúnen cierta condición, y de forma similar "
+"está duplicado por las listas por comprensión. Un **predicado** es una "
+"función que retorna un valor de verdad de alguna condición; para usarlo con :"
+"func:`filter`, el predicado debe recibir un solo valor."
 
-#: ../../howto/functional.rst:657
+#: ../Doc/howto/functional.rst:657
 msgid "This can also be written as a list comprehension:"
-msgstr "これはリスト内包表記でも書けます:"
+msgstr "Esto también se puede escribir como una lista por comprensión:"
 
-#: ../../howto/functional.rst:663
+#: ../Doc/howto/functional.rst:663
 msgid ""
 ":func:`enumerate(iter, start=0) <enumerate>` counts off the elements in the "
 "iterable returning 2-tuples containing the count (from *start*) and each "
 "element. ::"
 msgstr ""
-":func:`enumerate(iter, start=0) <enumerate>` はイテラブルの要素に順番に番号を"
-"振っていき、(*start* から数え始めたときの) 番号とそれぞれの要素を含む 2 タプ"
-"ルを返します。"
+":func:`enumerate(iter, start=0) <enumerate>` enumera los elementos en el "
+"iterable retornando 2-tuplas que contienen la enumeración (desde *start*) y "
+"cada elemento. ::"
 
-#: ../../howto/functional.rst:673
+#: ../Doc/howto/functional.rst:673
 msgid ""
 ":func:`enumerate` is often used when looping through a list and recording "
 "the indexes at which certain conditions are met::"
 msgstr ""
-":func:`enumerate` はよく、リストに対してループさせて、条件に合う所に印を付け"
-"ていくときに使われます::"
+":func:`enumerate` a menudo se usa cuando se recorre una lista y se registran "
+"los índices en los que se reúnen una cierta condición::"
 
-#: ../../howto/functional.rst:681
+#: ../Doc/howto/functional.rst:681
 msgid ""
 ":func:`sorted(iterable, key=None, reverse=False) <sorted>` collects all the "
 "elements of the iterable into a list, sorts the list, and returns the sorted "
 "result.  The *key* and *reverse* arguments are passed through to the "
 "constructed list's :meth:`~list.sort` method. ::"
 msgstr ""
-":func:`sorted(iterable, key=None, reverse=False) <sorted>` はイテラブルの要素"
-"をすべて集めたリストを作り、ソートして返します。 引数 *key* および *reverse* "
-"は、リストの :meth:`~list.sort` メソッドにそのまま渡されます。 ::"
+":func:`sorted(iterable, key=None, reverse=False) <sorted>` reúne todos los "
+"elementos de un iterable en una lista, ordena la lista, y retorna el "
+"resultado ordenado. Los argumentos *key* y *reverse* se pasan a través del "
+"método :meth:`~list.sort` de la lista construida. ::"
 
-#: ../../howto/functional.rst:696
+#: ../Doc/howto/functional.rst:696
 msgid ""
 "(For a more detailed discussion of sorting, see the :ref:`sortinghowto`.)"
-msgstr "(ソートに関する詳細な論議は :ref:`sortinghowto` を参照)"
+msgstr ""
+"(Para un tratamiento más detallado del ordenamiento, ver :ref:"
+"`sortinghowto`.)"
 
-#: ../../howto/functional.rst:699
+#: ../Doc/howto/functional.rst:699
 msgid ""
 "The :func:`any(iter) <any>` and :func:`all(iter) <all>` built-ins look at "
 "the truth values of an iterable's contents.  :func:`any` returns ``True`` if "
 "any element in the iterable is a true value, and :func:`all` returns "
 "``True`` if all of the elements are true values:"
 msgstr ""
-"組み込みの :func:`any(iter) <any>` および :func:`all(iter) <all>` は "
-"iterable の値の真偽を調べます。 :func:`any` は要素のどれかが真値なら "
-"``True`` を返し、 :func:`all` は要素が全て真値なら ``True`` を返します:"
+"Las funciones incorporadas :func:`any(iter) <any>` y :func:`all(iter) <all>` "
+"ven los valores de verdad de los contenidos de un iterable. :func:`any` "
+"retorna ``True`` si algún elemento en el iterable es un valor verdadero, y :"
+"func:`all` retorna ``True`` si todos los elementos son valores verdaderos:"
 
-#: ../../howto/functional.rst:718
+#: ../Doc/howto/functional.rst:718
 msgid ""
 ":func:`zip(iterA, iterB, ...) <zip>` takes one element from each iterable "
 "and returns them in a tuple::"
 msgstr ""
-":func:`zip(iterA, iterB, ...) <zip>` はそれぞれの iterable から1つの要素を取"
-"り、それらをタプルに入れて返します::"
+":func:`zip(iterA, iterB, ...) <zip>` toma un elemento de cada iterable y los "
+"retorna en una tupla::"
 
-#: ../../howto/functional.rst:724
+#: ../Doc/howto/functional.rst:724
 msgid ""
 "It doesn't construct an in-memory list and exhaust all the input iterators "
 "before returning; instead tuples are constructed and returned only if "
 "they're requested.  (The technical term for this behaviour is `lazy "
 "evaluation <https://en.wikipedia.org/wiki/Lazy_evaluation>`__.)"
 msgstr ""
-":func:`zip` は結果を返す前に入力のイテレーターを全て消費してメモリ上に list "
-"を作成しません。代わりに要求されるたびに tuple を生成して返します。(この動作"
-"を技術的な用語で `lazy evaluation <https://en.wikipedia.org/wiki/"
-"Lazy_evaluation>`__ (訳: `遅延評価 <https://ja.wikipedia.org/wiki/"
-"%E9%81%85%E5%BB%B6%E8%A9%95%E4%BE%A1>`__) と呼びます。)"
+"Esto no construye una lista en memoria y consume todos los iteradores de "
+"entrada antes de ejecutar; en lugar de eso, las tuplas se construyen y "
+"retornan solo si son requeridas. (El término técnico para este "
+"comportamiento es `evaluación perezosa <https://es.wikipedia.org/wiki/"
+"Evaluaci%C3%B3n_perezosa>`__.)"
 
-#: ../../howto/functional.rst:729
+#: ../Doc/howto/functional.rst:729
 msgid ""
 "This iterator is intended to be used with iterables that are all of the same "
 "length.  If the iterables are of different lengths, the resulting stream "
 "will be the same length as the shortest iterable. ::"
 msgstr ""
-"このイテレータの用途には、すべて同じ長さのイテラブルを想定しています。長さが"
-"違っていれば、出力されるストリームは一番短いイテラブルと同じ長さになりま"
-"す。 ::"
+"Se pretende que el iterador se use con iterables que tengan todos la misma "
+"longitud. Si los iterables son de diferentes longitudes, el flujo resultante "
+"tendrá la misma longitud que el iterable más corto. ::"
 
-#: ../../howto/functional.rst:736
+#: ../Doc/howto/functional.rst:736
 msgid ""
 "You should avoid doing this, though, because an element may be taken from "
 "the longer iterators and discarded.  This means you can't go on to use the "
 "iterators further because you risk skipping a discarded element."
 msgstr ""
-"とは言え、これをやってしまうと長いイテレータから要素をひとつ無駄に多く取って"
-"捨ててしまうかもしれませんので、やめておいたほうが良いです。その捨てられた要"
-"素を抜かしてしまう危険があるので、もうそのイテレータはそれ以上使えなくなって"
-"しまいます。"
+"Sin embargo, debería evitar hacer esto, porque se puede tomar un elemento de "
+"los iteradores más largos y descartarlo. Esto significa que ya no puede "
+"seguir usando los iteradores porque corre el riesgo de saltarse un elemento "
+"descartado."
 
-#: ../../howto/functional.rst:742
+#: ../Doc/howto/functional.rst:742
 msgid "The itertools module"
-msgstr "itertools モジュール"
+msgstr "El módulo itertools"
 
-#: ../../howto/functional.rst:744
+#: ../Doc/howto/functional.rst:744
+#, fuzzy
 msgid ""
 "The :mod:`itertools` module contains a number of commonly used iterators as "
 "well as functions for combining several iterators.  This section will "
 "introduce the module's contents by showing small examples."
 msgstr ""
-":mod:`itertools` モジュールには、よく使うイテレータや、イテレータ同士の連結に"
-"使う関数がたくさん含まれています。この章では、そのモジュールの内容を小さな例"
-"で紹介していきたいと思います。"
+"El módulo :mod:`itertools` contiene un número de iteradores comúnmente "
+"usados así como funciones para combinar varios iteradores. Esta sección "
+"presentará los contenidos del módulo mostrando pequeños ejemplos."
 
-#: ../../howto/functional.rst:748
+#: ../Doc/howto/functional.rst:748
 msgid "The module's functions fall into a few broad classes:"
-msgstr "このモジュールの関数を大まかに分けるとこうなります:"
+msgstr "Las funciones del módulo caen en unas pocas clases generales:"
 
-#: ../../howto/functional.rst:750
+#: ../Doc/howto/functional.rst:750
 msgid "Functions that create a new iterator based on an existing iterator."
-msgstr "既存のイテレータに基づいて新しいイテレータを作る関数。"
+msgstr "Funciones que crean un nuevo iterador basado en un iterador existente."
 
-#: ../../howto/functional.rst:751
+#: ../Doc/howto/functional.rst:751
 msgid "Functions for treating an iterator's elements as function arguments."
-msgstr "イテレータの要素を引数として扱う関数。"
+msgstr ""
+"Funciones para tratar los elementos de un iterador como argumentos de "
+"función."
 
-#: ../../howto/functional.rst:752
+#: ../Doc/howto/functional.rst:752
 msgid "Functions for selecting portions of an iterator's output."
-msgstr "イテレータの出力から一部を取り出す関数。"
+msgstr "Funciones para seleccionar porciones de la salida de un iterador."
 
-#: ../../howto/functional.rst:753
+#: ../Doc/howto/functional.rst:753
 msgid "A function for grouping an iterator's output."
-msgstr "イテレータの出力をグループ分けする関数。"
+msgstr "Una función para agrupar la salida de un iterador."
 
-#: ../../howto/functional.rst:756
+#: ../Doc/howto/functional.rst:756
 msgid "Creating new iterators"
-msgstr "新しいイテレータを作る"
+msgstr "Crear nuevos iteradores"
 
-#: ../../howto/functional.rst:758
+#: ../Doc/howto/functional.rst:758
 msgid ""
 ":func:`itertools.count(start, step) <itertools.count>` returns an infinite "
 "stream of evenly spaced values.  You can optionally supply the starting "
 "number, which defaults to 0, and the interval between numbers, which "
 "defaults to 1::"
 msgstr ""
-":func:`itertools.count(start, step) <itertools.count>` は値の間隔が一定の無限"
-"ストリームを返します。\n"
-"オプションで開始する数 (デフォルトは 0) や数どうしの間隔 (デフォルトは 1) を"
-"与えられます::"
+":func:`itertools.count(start, step) <itertools.count>` retorna un flujo "
+"infinito de valores equiespaciados. Opcionalmente puede suministrar el "
+"número de inicio, que por defecto es 0, y el intervalo entre números, que "
+"por defecto es 1::"
 
-#: ../../howto/functional.rst:769
+#: ../Doc/howto/functional.rst:769
 msgid ""
 ":func:`itertools.cycle(iter) <itertools.cycle>` saves a copy of the contents "
 "of a provided iterable and returns a new iterator that returns its elements "
 "from first to last.  The new iterator will repeat these elements "
 "infinitely. ::"
 msgstr ""
-":func:`itertools.cycle(iter) <itertools.cycle>` は与えられたイテラブルの内容"
-"をコピーして、 その要素を最初から最後まで無限に繰り返していくイテレータを返し"
-"ます。 ::"
+":func:`itertools.cycle(iter) <itertools.cycle>` guarda una copia de los "
+"contenidos de un iterable provisto y retorna un nuevo iterador que retorna "
+"sus elementos del primero al último. El nuevo iterador repetirá estos "
+"elementos infinitamente. ::"
 
-#: ../../howto/functional.rst:776
+#: ../Doc/howto/functional.rst:776
 msgid ""
 ":func:`itertools.repeat(elem, [n]) <itertools.repeat>` returns the provided "
 "element *n* times, or returns the element endlessly if *n* is not "
 "provided. ::"
 msgstr ""
-":func:`itertools.repeat(elem, [n]) <itertools.repeat>` は、与えられた要素を "
-"*n* 回返しますが、 *n* がなければ永遠に返し続けます。 ::"
+":func:`itertools.repeat(elem, [n]) <itertools.repeat>` retorna el elemento "
+"provisto *n* veces, o retorna el elemento indefinidamente si no se provee "
+"*n*. ::"
 
-#: ../../howto/functional.rst:784
+#: ../Doc/howto/functional.rst:784
 msgid ""
 ":func:`itertools.chain(iterA, iterB, ...) <itertools.chain>` takes an "
 "arbitrary number of iterables as input, and returns all the elements of the "
 "first iterator, then all the elements of the second, and so on, until all of "
 "the iterables have been exhausted. ::"
 msgstr ""
-":func:`itertools.chain(iterA, iterB, ...) <itertools.chain>` は任意の数のイテ"
-"ラブルを受け取って、最初のイテレータから要素をすべて返し、次に二番目から 要素"
-"をすべて返し、ということを要素がなくなるまで続けます。 ::"
+":func:`itertools.chain(iterA, iterB, ...) <itertools.chain>` recibe un "
+"número arbitrario de iterables como entrada, y retorna todos los elementos "
+"del primer iterador, luego todos los elementos del segundo, y así "
+"sucesivamente, hasta que hayan sido agotados todos los iterables. ::"
 
-#: ../../howto/functional.rst:792
+#: ../Doc/howto/functional.rst:792
 msgid ""
 ":func:`itertools.islice(iter, [start], stop, [step]) <itertools.islice>` "
 "returns a stream that's a slice of the iterator.  With a single *stop* "
@@ -1230,14 +1301,15 @@ msgid ""
 "and list slicing, you can't use negative values for *start*, *stop*, or "
 "*step*. ::"
 msgstr ""
-":func:`itertools.islice(iter, [start], stop, [step]) <itertools.islice>` は、"
-"イテレータの スライスをストリームで返します。 *stop* 引数だけだと、最初の "
-"*stop* 個の要素を返します。開始インデックスを渡すと *stop-start* 個で、 "
-"*step* の値も渡せばそれに応じて要素を抜かします。Python における文字列やリス"
-"トのスライスとは違って、マイナスの値は *start*, *stop*, *step* に使えませ"
-"ん。 ::"
+":func:`itertools.islice(iter, [start], stop, [step]) <itertools.islice>` "
+"retorna un flujo que es un segmento del iterador. Con solo un argumento "
+"*stop*, retornará los primeros *stop* elementos. Si suministra un índice de "
+"inicio, obtendrá los elementos *stop-start*, y si suministra un valor para "
+"*step*, los elementos se saltarán en consecuencia. A diferencia de la "
+"segmentación de listas y cadenas de caracteres de Python, no puede usar "
+"valores negativos para *start*, *stop* o *step*. ::"
 
-#: ../../howto/functional.rst:806
+#: ../Doc/howto/functional.rst:806
 msgid ""
 ":func:`itertools.tee(iter, [n]) <itertools.tee>` replicates an iterator; it "
 "returns *n* independent iterators that will all return the contents of the "
@@ -1246,18 +1318,18 @@ msgid ""
 "iterator, so this can consume significant memory if the iterator is large "
 "and one of the new iterators is consumed more than the others. ::"
 msgstr ""
-":func:`itertools.tee(iter, [n]) <itertools.tee>` はイテレータを複製します; 元"
-"のイテレータの内容を同じように返す、独立した *n* 個のイテレータを返すので"
-"す。 *n* の値は、指定しなければ既定が 2 になっています。複製するには元のイテ"
-"レータの内容を一部保存しておく必要がありますから、大きなイテレータから複製し"
-"たうちの一つが他よりも進んでいってしまうと、大量のメモリを消費することがあり"
-"ます。 ::"
+":func:`itertools.tee(iter, [n]) <itertools.tee>` replica un iterador; "
+"retorna *n* iteradores independientes que retornarán los contenidos del "
+"iterador fuente. Si no suministra un valor para *n*, por defecto es 2. "
+"Replicar iteradores requiere guardar algunos de los contenidos del iterador "
+"fuente, esto puede consumir memoria significativa si el iterador es grande y "
+"uno de los nuevos iteradores se consume más que los otros. ::"
 
-#: ../../howto/functional.rst:825
+#: ../Doc/howto/functional.rst:825
 msgid "Calling functions on elements"
-msgstr "要素に対して関数を呼ぶ"
+msgstr "Aplicar funciones a los elementos"
 
-#: ../../howto/functional.rst:827
+#: ../Doc/howto/functional.rst:827
 msgid ""
 "The :mod:`operator` module contains a set of functions corresponding to "
 "Python's operators.  Some examples are :func:`operator.add(a, b) <operator."
@@ -1265,89 +1337,91 @@ msgid ""
 "``a != b``), and :func:`operator.attrgetter('id') <operator.attrgetter>` "
 "(returns a callable that fetches the ``.id`` attribute)."
 msgstr ""
-"いま使った :mod:`operator` モジュールには、Python の演算子に対応する関数が"
-"入っています。いくつか例を挙げると、 :func:`operator.add(a, b) <operator."
-"add>` (二つの値を加算)、 :func:`operator.ne(a, b) <operator.ne>` (``a != b`` "
-"と同じ)、 :func:`operator.attrgetter('id') <operator.attrgetter>` (``.id`` 属"
-"性を取得するコーラブルを返す) といった関数です。"
+"El módulo :mod:`operator` contiene un conjunto de funciones correspondientes "
+"a los operadores de Python. Algunos ejemplos son :func:`operator.add(a, b) "
+"<operator.add>` (suma dos valores), :func:`operator.ne(a, b) <operator.ne>` "
+"(lo mismo que ``a != b``) y :func:`operator.attrgetter('id') <operator."
+"attrgetter>` (retorna un invocable que obtiene el atributo ``.id``)."
 
-#: ../../howto/functional.rst:833
+#: ../Doc/howto/functional.rst:833
 msgid ""
 ":func:`itertools.starmap(func, iter) <itertools.starmap>` assumes that the "
 "iterable will return a stream of tuples, and calls *func* using these tuples "
 "as the arguments::"
 msgstr ""
-":func:`itertools.starmap(func, iter) <itertools.starmap>` は、イテラブルがタ"
-"プルのストリームを返すとみなして、 そのタプルを引数に使って *func* を呼びま"
-"す::"
+":func:`itertools.starmap(func, iter) <itertools.starmap>` asume que el "
+"iterable retornará un flujo de tuplas, y llama a *func* usando estas tuplas "
+"como los argumentos::"
 
-#: ../../howto/functional.rst:845
+#: ../Doc/howto/functional.rst:845
 msgid "Selecting elements"
-msgstr "要素を選択する"
+msgstr "Seleccionar elementos"
 
-#: ../../howto/functional.rst:847
+#: ../Doc/howto/functional.rst:847
 msgid ""
 "Another group of functions chooses a subset of an iterator's elements based "
 "on a predicate."
 msgstr ""
-"さらに別のグループとして、述語 (predicate) に基づいてイテレータの要素からサブ"
-"セットを選び出す関数があります。"
+"Otro grupo de funciones elige un subconjunto de elementos de un iterador "
+"basado en un predicado dado."
 
-#: ../../howto/functional.rst:850
+#: ../Doc/howto/functional.rst:850
 msgid ""
 ":func:`itertools.filterfalse(predicate, iter) <itertools.filterfalse>` is "
 "the opposite of :func:`filter`, returning all elements for which the "
 "predicate returns false::"
 msgstr ""
-":func:`itertools.filterfalse(predicate, iter) <itertools.filterfalse>` は :"
-"func:`filter` とは反対に、 述語が偽を返す要素をすべて返します::"
+":func:`itertools.filterfalse(predicate, iter) <itertools.filterfalse>` es el "
+"opuesto de :func:`filter`, retornando todos los elementos para los que el "
+"predicado retorna falso::"
 
-#: ../../howto/functional.rst:857
+#: ../Doc/howto/functional.rst:857
 msgid ""
 ":func:`itertools.takewhile(predicate, iter) <itertools.takewhile>` returns "
 "elements for as long as the predicate returns true.  Once the predicate "
 "returns false, the iterator will signal the end of its results. ::"
 msgstr ""
-":func:`itertools.takewhile(predicate, iter) <itertools.takewhile>` は述語が真"
-"を返している間だけ要素を返します。一度でも述語が偽を返すと、イテレータは出力"
-"終了の合図をします。 ::"
+":func:`itertools.takewhile(predicate, iter) <itertools.takewhile>` retorna "
+"los elementos mientras el predicado retorne verdadero. Una vez que el "
+"predicado retorna falso, el iterador indicará el final de sus resultados. ::"
 
-#: ../../howto/functional.rst:870
+#: ../Doc/howto/functional.rst:870
 msgid ""
 ":func:`itertools.dropwhile(predicate, iter) <itertools.dropwhile>` discards "
 "elements while the predicate returns true, and then returns the rest of the "
 "iterable's results. ::"
 msgstr ""
-":func:`itertools.dropwhile(predicate, iter) <itertools.dropwhile>` は、述語が"
-"真を返しているうちは要素を無視し、偽になってから残りの出力をすべて返しま"
-"す。 ::"
+":func:`itertools.dropwhile(predicate, iter) <itertools.dropwhile>` descarta "
+"los elementos mientras el predicado retorne verdadero, y luego retorna el "
+"resto de los resultados del iterable. ::"
 
-#: ../../howto/functional.rst:880
+#: ../Doc/howto/functional.rst:880
 msgid ""
 ":func:`itertools.compress(data, selectors) <itertools.compress>` takes two "
 "iterators and returns only those elements of *data* for which the "
 "corresponding element of *selectors* is true, stopping whenever either one "
 "is exhausted::"
 msgstr ""
-":func:`itertools.compress(data, selectors) <itertools.compress>` は 2つのイテ"
-"レータを取り、 どちらかのイテレータを使い果たすまでの、 *selectors* が真とな"
-"る要素に対応する *data* 要素だけを返します::"
+":func:`itertools.compress(data, selectors) <itertools.compress>` recibe dos "
+"iteradores y retorna solo aquellos elementos de *data* para los cuales el "
+"elemento correspondiente de *selectors* es verdadero, deteniéndose cuando "
+"alguno se termine::"
 
-#: ../../howto/functional.rst:889
+#: ../Doc/howto/functional.rst:889
 msgid "Combinatoric functions"
-msgstr "組合せ関数"
+msgstr "Funciones combinatorias"
 
-#: ../../howto/functional.rst:891
+#: ../Doc/howto/functional.rst:891
 msgid ""
 "The :func:`itertools.combinations(iterable, r) <itertools.combinations>` "
 "returns an iterator giving all possible *r*-tuple combinations of the "
 "elements contained in *iterable*.  ::"
 msgstr ""
-":func:`itertools.combinations(iterable, r) <itertools.combinations>` は、 "
-"*iterable* から *r*-tuple 選択する全ての組み合わせを提供するイテレータを返し"
-"ます ::"
+"La función :func:`itertools.combinations(iterable, r) <itertools."
+"combinations>` retorna un iterador proporcionando todas las combinaciones de "
+"*r*-tuplas de los elementos contenidos en *iterable*. ::"
 
-#: ../../howto/functional.rst:906
+#: ../Doc/howto/functional.rst:906
 msgid ""
 "The elements within each tuple remain in the same order as *iterable* "
 "returned them.  For example, the number 1 is always before 2, 3, 4, or 5 in "
@@ -1355,37 +1429,38 @@ msgid ""
 "permutations(iterable, r=None) <itertools.permutations>`, removes this "
 "constraint on the order, returning all possible arrangements of length *r*::"
 msgstr ""
-"それぞれのタプル内では、要素は *iterable* がそれを返したのと同じ順序を保ちま"
-"す。例えば上の例であれば、 1 はいつでも 2, 3, 4, 5 の前に来ます。似たような関"
-"数に :func:`itertools.permutations(iterable, r=None) <itertools."
-"permutations>` があり、こちらはこの順序についての制約がなく、 *r* 個選択する"
-"全ての順列を返します。"
+"Los elementos dentro de cada tupla permanecen en el mismo orden en el que "
+"*iterable* los retornó. Por ejemplo, el número 1 siempre está antes que 2, "
+"3, 4 o 5 en los ejemplos de arriba. Una función similar, :func:`itertools."
+"permutations(iterable, r=None) <itertools.permutations>`, remueve esta "
+"restricción en el orden, retornando todas las disposiciones posibles de "
+"longitud *r*::"
 
-#: ../../howto/functional.rst:925
+#: ../Doc/howto/functional.rst:925
 msgid ""
 "If you don't supply a value for *r* the length of the iterable is used, "
 "meaning that all the elements are permuted."
 msgstr ""
-"*r* を与えない場合は iterable の長さが使われます。つまり iterable の全ての要"
-"素を選んだ順列を返します。"
+"Si no suministra un valor para *r* se usa la longitud del iterable, lo que "
+"significa que se permutan todos los elementos."
 
-#: ../../howto/functional.rst:928
+#: ../Doc/howto/functional.rst:928
 msgid ""
 "Note that these functions produce all of the possible combinations by "
 "position and don't require that the contents of *iterable* are unique::"
 msgstr ""
-"これらの関数が生成する組み合わせは、位置が基準ですので、 *iterable* の内容が"
-"一意でなくとも良いことに注目してください::"
+"Note que estas funciones producen todas las combinaciones posibles por "
+"posición y no requieren que los contenidos de *iterable* sean únicos::"
 
-#: ../../howto/functional.rst:935
+#: ../Doc/howto/functional.rst:935
 msgid ""
 "The identical tuple ``('a', 'a', 'b')`` occurs twice, but the two 'a' "
 "strings came from different positions."
 msgstr ""
-"全く同じタプル ``('a', 'a', 'b')`` が 2度現れていますが、これは 2つの 'a' が"
-"別の位置からのものだからです。"
+"La tupla idéntica ``('a', 'a', 'b')`` aparece dos veces, pero las dos "
+"cadenas de caracteres 'a' provienen de diferentes posiciones."
 
-#: ../../howto/functional.rst:938
+#: ../Doc/howto/functional.rst:938
 msgid ""
 "The :func:`itertools.combinations_with_replacement(iterable, r) <itertools."
 "combinations_with_replacement>` function relaxes a different constraint: "
@@ -1393,16 +1468,17 @@ msgid ""
 "selected for the first position of each tuple and then is replaced before "
 "the second element is selected.  ::"
 msgstr ""
-":func:`itertools.combinations_with_replacement(iterable, r) <itertools."
-"combinations_with_replacement>` 関数は別の制約を取り払います: 一回の選択で同"
-"じ要素を繰り返し選んでも良い。概念的には、それぞれのタプルの最初のものとして"
-"一つ要素が選ばれ、続いて 2つ目の選択のかわりにそれで置き換わります ::"
+"La función :func:`itertools.combinations_with_replacement(iterable, r) "
+"<itertools.combinations_with_replacement>` relaja una restricción diferente: "
+"los elementos se pueden repetir dentro de una misma tupla. Conceptualmente "
+"un elemento se elige para la primera posición de cada tupla y luego se "
+"reemplaza antes de que se elija el segundo elemento. ::"
 
-#: ../../howto/functional.rst:953
+#: ../Doc/howto/functional.rst:953
 msgid "Grouping elements"
-msgstr "要素をグループ分けする"
+msgstr "Agrupar elementos"
 
-#: ../../howto/functional.rst:955
+#: ../Doc/howto/functional.rst:955
 msgid ""
 "The last function I'll discuss, :func:`itertools.groupby(iter, "
 "key_func=None) <itertools.groupby>`, is the most complicated.  "
@@ -1410,49 +1486,52 @@ msgid ""
 "element returned by the iterable.  If you don't supply a key function, the "
 "key is simply each element itself."
 msgstr ""
-"最後に議題に上げる関数 :func:`itertools.groupby(iter, key_func=None) "
-"<itertools.groupby>` は、 これまでで最も複雑です。 ``key_func(elem)`` は、イ"
-"テラブルから返ってきた要素それぞれのキー値を計算する関数です。この関数が指定"
-"されていなければ、 キーは単に各要素そのものになります。"
+"La última función que trataré, :func:`itertools.groupby(iter, key_func=None) "
+"<itertools.groupby>`, es la más complicada. ``key_func(elem)`` es una "
+"función que calcula un valor clave para cada elemento retornado por el "
+"iterable. Si no suministra una función de clave, la clave será simplemente "
+"el elemento mismo."
 
-#: ../../howto/functional.rst:960
+#: ../Doc/howto/functional.rst:960
 msgid ""
 ":func:`~itertools.groupby` collects all the consecutive elements from the "
 "underlying iterable that have the same key value, and returns a stream of 2-"
 "tuples containing a key value and an iterator for the elements with that key."
 msgstr ""
-":func:`~itertools.groupby` は、元になるイテラブルから同じキー値を持つ連続する"
-"要素を集めて、キー値とそのキーに対応する要素のイテレータの 2-タプルのストリー"
-"ムを返します。"
+":func:`~itertools.groupby` reúne todos los elementos consecutivos del "
+"iterable subyacente que tienen el mismo valor clave, y retorna un flujo de 2-"
+"tuplas que contienen un valor clave y un iterador para los elementos con esa "
+"clave."
 
-#: ../../howto/functional.rst:988
+#: ../Doc/howto/functional.rst:988
 msgid ""
 ":func:`~itertools.groupby` assumes that the underlying iterable's contents "
 "will already be sorted based on the key.  Note that the returned iterators "
 "also use the underlying iterable, so you have to consume the results of "
 "iterator-1 before requesting iterator-2 and its corresponding key."
 msgstr ""
-":func:`~itertools.groupby` は、元になるイテラブルの内容がキー値でソートされた"
-"状態で与えられることを想定しています。ここで、返されるイテレータ自体も元のイ"
-"テラブルを使うということに注意してください。そのため、 iterator-1 の結果を読"
-"み終わるまでは iterator-2 とそれに対応するキー値を要求することはできません。"
+":func:`~itertools.groupby` asume que los contenidos del iterable subyacente "
+"ya se ordenó basado en la clave. Note que los iteradores retornados también "
+"usan el iterable subyacente, así que tiene que consumir los resultados de "
+"iterador-1 antes de solicitar iterador-2 y su clave correspondiente."
 
-#: ../../howto/functional.rst:995
+#: ../Doc/howto/functional.rst:995
 msgid "The functools module"
-msgstr "functools モジュール"
+msgstr "El módulo functools"
 
-#: ../../howto/functional.rst:997
+#: ../Doc/howto/functional.rst:997
 msgid ""
-"The :mod:`functools` module contains some higher-order functions. A **higher-"
-"order function** takes one or more functions as input and returns a new "
-"function.  The most useful tool in this module is the :func:`functools."
-"partial` function."
+"The :mod:`functools` module in Python 2.5 contains some higher-order "
+"functions. A **higher-order function** takes one or more functions as input "
+"and returns a new function.  The most useful tool in this module is the :"
+"func:`functools.partial` function."
 msgstr ""
-":mod:`functools` モジュールには、高階関数がいくつか入っています。 **高階関数"
-"** とは、入力として関数を受け取って新たな関数を返す関数です。このモジュールで"
-"一番便利なツールは :func:`functools.partial` 関数です。"
+"El módulo :mod:`functools` en Python 2.5 contiene algunas funciones de orden "
+"superior. Una **función de orden superior** recibe una o más funciones como "
+"entrada y retorna una nueva función. La herramienta más útil en este módulo "
+"es la función :func:`functools.partial`."
 
-#: ../../howto/functional.rst:1002
+#: ../Doc/howto/functional.rst:1002
 msgid ""
 "For programs written in a functional style, you'll sometimes want to "
 "construct variants of existing functions that have some of the parameters "
@@ -1461,29 +1540,30 @@ msgid ""
 "filling in a value for one of ``f()``'s parameters.  This is called "
 "\"partial function application\"."
 msgstr ""
-"関数型スタイルのプログラムでは時折、既存の関数から一部のパラメータを埋めた変"
-"種を作りたくなることがあります。Python の関数 ``f(a, b, c)`` というものがある"
-"としてください; ``f(1, b, c)`` と同じ意味の ``g(b, c)`` という関数を作りたく"
-"なることがあります; つまり ``f()`` のパラメータを一つ埋めるわけです。これは"
-"「関数の部分適用」と呼ばれています。"
+"Para programas escritos en un estilo funcional, a veces querrá construir "
+"variantes de funciones existentes que tienen algunos de los parámetros "
+"predefinidos. Considere una función de Python ``f(a, b, c)``; puede querer "
+"crear una nueva función ``g(b, c)`` que sea equivalente a ``f(1, b, c)``; "
+"está completando un valor para uno de los parámetros de ``f()``. Esto se "
+"llama \"aplicación parcial de funciones\"."
 
-#: ../../howto/functional.rst:1008
+#: ../Doc/howto/functional.rst:1008
 msgid ""
 "The constructor for :func:`~functools.partial` takes the arguments "
 "``(function, arg1, arg2, ..., kwarg1=value1, kwarg2=value2)``.  The "
 "resulting object is callable, so you can just call it to invoke ``function`` "
 "with the filled-in arguments."
 msgstr ""
-":func:`~functools.partial` のコンストラクタは ``(function, arg1, arg2, ..., "
-"kwarg1=value1, kwarg2=value2)`` という引数を取ります。できあがったオブジェク"
-"トはコーラブルなので、それを呼べば、引数の埋まった状態で ``function`` を実行"
-"したのと同じことになります。"
+"El constructor para :func:`~functools.partial` recibe los argumentos "
+"``(function, arg1, arg2, ..., kwarg1=value1, kwarg2=value2)``. El objeto "
+"resultante es invocable, por lo que puede invocar a ``function`` con los "
+"argumentos rellenados."
 
-#: ../../howto/functional.rst:1013
+#: ../Doc/howto/functional.rst:1013
 msgid "Here's a small but realistic example::"
-msgstr "以下にあるのは、小さいけれども現実的な一つの例です::"
+msgstr "Aquí hay un ejemplo pequeño pero realista::"
 
-#: ../../howto/functional.rst:1025
+#: ../Doc/howto/functional.rst:1025
 msgid ""
 ":func:`functools.reduce(func, iter, [initial_value]) <functools.reduce>` "
 "cumulatively performs an operation on all the iterable's elements and, "
@@ -1497,114 +1577,120 @@ msgid ""
 "If the initial value is supplied, it's used as a starting point and "
 "``func(initial_value, A)`` is the first calculation. ::"
 msgstr ""
-":func:`functools.reduce(func, iter, [initial_value]) <functools.reduce>` はイ"
-"テラブルの要素に対して次々に演算を実行していった最終結果を出すもので、それゆ"
-"え無限長イテラブルには適用できません。 *func* には、要素を二つ取って値を一つ"
-"返す関数が入ります。 :func:`functools.reduce` はイテレータが返す最初の二要素 "
-"A と B を取って ``func(A, B)`` を計算します。それから三番目の要素 C を要求し"
-"て ``func(func(A, B), C)`` を計算すると、その結果をさらに四番目の要素と組み合"
-"わせて……ということをイテラブルが尽きるまで続けるのです。 もしイテラブルが一つ"
-"も値を返さなければ :exc:`TypeError` が発生します。 初期値 ``initial_value`` "
-"があるときには、最初の計算で ``func(initial_value, A)`` が実行されます。 ::"
+":func:`functools.reduce(func, iter, [initial_value]) <functools.reduce>` "
+"realiza acumulativamente una operación en todos los elementos del iterable "
+"y, por lo tanto, no se puede aplicar a infinitos iterables. *func* debe ser "
+"una función que recibe dos elementos y retorna un solo valor. :func:"
+"`functools.reduce` recibe los primeros dos elementos A y B retornados por el "
+"iterador y calcula ``func(A, B)``. Luego pide el tercer elemento, C, calcula "
+"``func(func(A, B), C)``, combina este resultado con el cuarto elemento "
+"retornado, y continua hasta que se agote el iterable. Si el iterable no "
+"retorna ningún valor, se lanza una excepción :exc:`TypeError`. Si se "
+"suministra el valor inicial, se usa como punto inicial y "
+"``func(initial_value, A)`` es el primer cálculo. ::"
 
-#: ../../howto/functional.rst:1049
+#: ../Doc/howto/functional.rst:1049
 msgid ""
 "If you use :func:`operator.add` with :func:`functools.reduce`, you'll add up "
 "all the elements of the iterable.  This case is so common that there's a "
 "special built-in called :func:`sum` to compute it:"
 msgstr ""
-":func:`operator.add` を :func:`functools.reduce` で使うと、 iterable の全要素"
-"を合計することになります。これは使用頻度が高いので、そのための :func:`sum` と"
-"いうビルトイン関数があります:"
+"Si usa :func:`operator.add` con :func:`functools.reduce`, sumará todos los "
+"elementos del iterable. Este caso es tan común que hay una función "
+"incorporada especial llamada :func:`sum` para calcularla:"
 
-#: ../../howto/functional.rst:1061
+#: ../Doc/howto/functional.rst:1061
 msgid ""
 "For many uses of :func:`functools.reduce`, though, it can be clearer to just "
 "write the obvious :keyword:`for` loop::"
 msgstr ""
-"とはいえ、多くの場合 :func:`functools.reduce` を使うよりは、単に :keyword:"
-"`for` ループを書いたほうがわかりやすくなります::"
+"Sin embargo, para muchos usos de :func:`functools.reduce` puede ser mas "
+"claro simplemente escribir el ciclo :keyword:`for`::"
 
-#: ../../howto/functional.rst:1073
+#: ../Doc/howto/functional.rst:1073
 msgid ""
 "A related function is :func:`itertools.accumulate(iterable, func=operator."
 "add) <itertools.accumulate>`.  It performs the same calculation, but instead "
 "of returning only the final result, :func:`accumulate` returns an iterator "
 "that also yields each partial result::"
 msgstr ""
-"関連する関数は :func:`itertools.accumulate(iterable, func=operator.add) "
-"<itertools.accumulate>` です。この関数は同じ計算をしますが、最終結果を返すの"
-"ではなく、 :func:`accumulate` はそれぞれの中間結果を返すイテレータが返り値と"
-"なります。"
+"Una función relacionada es :func:`itertools.accumulate(iterable, "
+"func=operator.add) <itertools.accumulate>`. Realiza el mismo cálculo, pero "
+"en lugar de retornar solo el resultado final, :func:`accumulate` retorna un "
+"iterador que también produce cada resultado parcial::"
 
-#: ../../howto/functional.rst:1086
+#: ../Doc/howto/functional.rst:1086
 msgid "The operator module"
-msgstr "operator モジュール"
+msgstr "El módulo operator"
 
-#: ../../howto/functional.rst:1088
+#: ../Doc/howto/functional.rst:1088
 msgid ""
 "The :mod:`operator` module was mentioned earlier.  It contains a set of "
 "functions corresponding to Python's operators.  These functions are often "
 "useful in functional-style code because they save you from writing trivial "
 "functions that perform a single operation."
 msgstr ""
-":mod:`operator` モジュールは、既に取り上げましたが、Python の演算子に対応する"
-"関数が入っているモジュールです。関数型スタイルのコードにおいて、演算を一つ実"
-"行するだけのくだらない関数を書かずに済むので、よく世話になります。"
+"El módulo :mod:`operator` se mencionó anteriormente. Contiene un conjunto de "
+"funciones que corresponden a los operadores de Python. Estas funciones a "
+"menudo son útiles en código en estilo funcional porque le salvan de escribir "
+"funciones triviales que realizan una sola operación."
 
-#: ../../howto/functional.rst:1093
+#: ../Doc/howto/functional.rst:1093
 msgid "Some of the functions in this module are:"
-msgstr "このモジュールの関数を一部だけ紹介しましょう:"
+msgstr "Algunas de las funciones en este módulo son:"
 
-#: ../../howto/functional.rst:1095
+#: ../Doc/howto/functional.rst:1095
 msgid ""
 "Math operations: ``add()``, ``sub()``, ``mul()``, ``floordiv()``, "
 "``abs()``, ..."
 msgstr ""
-"数学演算子: ``add()``, ``sub()``, ``mul()``, ``floordiv()``, ``abs()``, ..."
+"Operaciones matemáticas: ``add()``, ``sub()``, ``mul()``, ``floordiv()``, "
+"``abs()``, ..."
 
-#: ../../howto/functional.rst:1096
+#: ../Doc/howto/functional.rst:1096
 msgid "Logical operations: ``not_()``, ``truth()``."
-msgstr "論理演算子: ``not_()``, ``truth()``"
+msgstr "Operaciones lógicas: ``not_()``, ``truth()``."
 
-#: ../../howto/functional.rst:1097
+#: ../Doc/howto/functional.rst:1097
 msgid "Bitwise operations: ``and_()``, ``or_()``, ``invert()``."
-msgstr "ビット演算子: ``and_()``, ``or_()``, ``invert()``"
+msgstr "Operaciones bit a bit: ``and_()``, ``or_()``, ``invert()``."
 
-#: ../../howto/functional.rst:1098
+#: ../Doc/howto/functional.rst:1098
 msgid ""
 "Comparisons: ``eq()``, ``ne()``, ``lt()``, ``le()``, ``gt()``, and ``ge()``."
-msgstr "比較: ``eq()``, ``ne()``, ``lt()``, ``le()``, ``gt()``, ``ge()``"
+msgstr ""
+"Comparaciones: ``eq()``, ``ne()``, ``lt()``, ``le()``, ``gt()`` y ``ge()``."
 
-#: ../../howto/functional.rst:1099
+#: ../Doc/howto/functional.rst:1099
 msgid "Object identity: ``is_()``, ``is_not()``."
-msgstr "オブジェクト識別: ``is_()``, ``is_not()``"
+msgstr "Identidad de objeto: ``is_()``, ``is_not()``."
 
-#: ../../howto/functional.rst:1101
+#: ../Doc/howto/functional.rst:1101
 msgid "Consult the operator module's documentation for a complete list."
-msgstr "ちゃんとした一覧は operator モジュールの文書でご覧ください。"
+msgstr "Consulte la documentación del módulo operator para una lista completa."
 
-#: ../../howto/functional.rst:1105
+#: ../Doc/howto/functional.rst:1105
 msgid "Small functions and the lambda expression"
-msgstr "小さな関数とラムダ式"
+msgstr "Funciones pequeñas y la expresión lambda"
 
-#: ../../howto/functional.rst:1107
+#: ../Doc/howto/functional.rst:1107
 msgid ""
 "When writing functional-style programs, you'll often need little functions "
 "that act as predicates or that combine elements in some way."
 msgstr ""
-"関数型スタイルのプログラムを書いていると、述語として働いたり、何らかの形で要"
-"素をつなぎ合わせたりするミニサイズの関数を必要とすることがよくあります。"
+"Cuando se escriben programas en estilo funcional, a menudo necesitará "
+"pequeñas funciones que actúen como predicados o que combinen elementos de "
+"alguna manera."
 
-#: ../../howto/functional.rst:1110
+#: ../Doc/howto/functional.rst:1110
 msgid ""
 "If there's a Python built-in or a module function that's suitable, you don't "
 "need to define a new function at all::"
 msgstr ""
-"ちょうど良い関数がビルトインやモジュールで存在していれば、新しい関数を定義す"
-"る必要はまったくありません::"
+"Si hay una función incorporada o un módulo de Python, no necesita definir "
+"una nueva función en absoluto::"
 
-#: ../../howto/functional.rst:1116
+#: ../Doc/howto/functional.rst:1116
 msgid ""
 "If the function you need doesn't exist, you need to write it.  One way to "
 "write small functions is to use the :keyword:`lambda` expression.  "
@@ -1612,25 +1698,28 @@ msgid ""
 "parameters, and creates an anonymous function that returns the value of the "
 "expression::"
 msgstr ""
-"しかし、欲しい関数がないなら書くしかありません。そうした小さな関数を書く方法"
-"の 一つが :keyword:`lambda` 式です。 ``lambda`` は引数として複数のパラメータ"
-"と それをつなぐ式を取り、その式の値を返す無名の関数を作ります::"
+"Si la función que necesita no existe, necesita escribirla. Una forma de "
+"escribir funciones pequeñas es usar la expresión :keyword:`lambda`. "
+"``lambda`` recibe un número de parámetros y una expresión que combina estos "
+"parámetros, y crea una función anónima que retorna el valor de la expresión::"
 
-#: ../../howto/functional.rst:1125
+#: ../Doc/howto/functional.rst:1125
 msgid ""
 "An alternative is to just use the ``def`` statement and define a function in "
 "the usual way::"
-msgstr "もう一つの選択肢は、ふつうに ``def`` 文で関数を定義するだけです::"
+msgstr ""
+"Una alternativa es simplemente usar la sentencia ``def`` y definir una "
+"función en la forma usual::"
 
-#: ../../howto/functional.rst:1134
+#: ../Doc/howto/functional.rst:1134
 msgid ""
 "Which alternative is preferable?  That's a style question; my usual course "
 "is to avoid using ``lambda``."
 msgstr ""
-"どちらのほうが良いのでしょうか。それは好みの問題です; 著者のスタイルとしては"
-"できるだけ ``lambda`` を使わないようにしています。"
+"¿Qué alternativa es preferible? Esa es una pregunta de estilo; mi rumbo "
+"usual es evitar usar ``lambda``."
 
-#: ../../howto/functional.rst:1137
+#: ../Doc/howto/functional.rst:1137
 msgid ""
 "One reason for my preference is that ``lambda`` is quite limited in the "
 "functions it can define.  The result has to be computable as a single "
@@ -1639,131 +1728,140 @@ msgid ""
 "``lambda`` statement, you'll end up with an overly complicated expression "
 "that's hard to read.  Quick, what's the following code doing? ::"
 msgstr ""
-"そのようにしている理由の一つに、``lambda`` は定義できる関数が非常に限られてい"
-"るという点があります。一つの式として算出できる結果にしなければいけませんの"
-"で、``if... elif... else`` や ``try... except`` のような分岐を持つことができ"
-"ないのです。``lambda`` 文の中でたくさんのことをやろうとしすぎると、ごちゃご"
-"ちゃして読みにくい式になってしまいます。さて、次のコードは何をしているでしょ"
-"うか、素早くお答えください! ::"
+"Una razón para mi preferencia es que ``lambda`` es muy limitado en las "
+"funciones que puede definir. El resultado tiene que ser calculable como una "
+"sola expresión, que significa que no tiene comparaciones multivía ``if... "
+"elif... else`` o sentencias ``try... except``. Si intenta hacer mucho en una "
+"sentencia ``lambda``, terminará con una expresión demasiado complicada que "
+"es difícil de leer. Rápido, ¿qué hace el siguiente código? ::"
 
-#: ../../howto/functional.rst:1147
+#: ../Doc/howto/functional.rst:1147
 msgid ""
 "You can figure it out, but it takes time to disentangle the expression to "
 "figure out what's going on.  Using a short nested ``def`` statements makes "
 "things a little bit better::"
 msgstr ""
-"わかるにはわかるでしょうが、何がどうなっているのか紐解いていくには時間がかか"
-"るはずです。短い ``def`` 文で入れ子にすると、少し見通しが良くなりますが::"
+"Puede averiguarlo, pero toma tiempo desenredar la expresión para averiguar "
+"que está pasando. Usar una corta sentencia ``def`` anidada hace las cosas un "
+"poco mejor::"
 
-#: ../../howto/functional.rst:1157
+#: ../Doc/howto/functional.rst:1157
 msgid "But it would be best of all if I had simply used a ``for`` loop::"
-msgstr "でも単純に ``for`` ループにすれば良かったのです::"
+msgstr ""
+"Pero lo mejor de todo sería si simplemente hubiese usado un ciclo ``for``::"
 
-#: ../../howto/functional.rst:1163
+#: ../Doc/howto/functional.rst:1163
 msgid "Or the :func:`sum` built-in and a generator expression::"
-msgstr "あるいは :func:`sum` ビルトインとジェネレータ式でも良いですね::"
+msgstr "O la función incorporada :func:`sum` y una expresión generadora::"
 
-#: ../../howto/functional.rst:1167
+#: ../Doc/howto/functional.rst:1167
 msgid ""
 "Many uses of :func:`functools.reduce` are clearer when written as ``for`` "
 "loops."
 msgstr ""
-"多くの場合、 :func:`functools.reduce` を使っているところは ``for`` ループに "
-"書き直したほうが見やすいです。"
+"Muchos usos de :func:`functools.reduce` son más claros cuando se escriben "
+"como ciclos ``for``."
 
-#: ../../howto/functional.rst:1169
+#: ../Doc/howto/functional.rst:1169
 msgid ""
 "Fredrik Lundh once suggested the following set of rules for refactoring uses "
 "of ``lambda``:"
 msgstr ""
-"Fredrik Lundh は以前 ``lambda`` 利用のリファクタリングに関して以下の指針を提"
-"案したことがあります:"
+"Fredrik Lundh una vez sugirió el siguiente conjunto de reglas para "
+"refactorizar los usos de ``lambda``:"
 
-#: ../../howto/functional.rst:1172
+#: ../Doc/howto/functional.rst:1172
 msgid "Write a lambda function."
-msgstr "ラムダ関数を書く。"
+msgstr "Escribir una función lambda."
 
-#: ../../howto/functional.rst:1173
+#: ../Doc/howto/functional.rst:1173
 msgid "Write a comment explaining what the heck that lambda does."
-msgstr "そのラムダが一体ぜんたい何をしているのかコメントで説明する。"
+msgstr "Escribir un comentario explicando qué demonios hace esa lambda."
 
-#: ../../howto/functional.rst:1174
+#: ../Doc/howto/functional.rst:1174
 msgid ""
 "Study the comment for a while, and think of a name that captures the essence "
 "of the comment."
-msgstr "そのコメントをしばらく研究して、本質をとらえた名前を考える。"
+msgstr ""
+"Estudiar el comentario por un momento, y pensar en un nombre que capture la "
+"esencia del comentario."
 
-#: ../../howto/functional.rst:1176
+#: ../Doc/howto/functional.rst:1176
 msgid "Convert the lambda to a def statement, using that name."
-msgstr "ラムダをその名前で def 文に書き換える。"
+msgstr "Convertir la lambda a una sentencia def, usando ese nombre."
 
-#: ../../howto/functional.rst:1177
+#: ../Doc/howto/functional.rst:1177
 msgid "Remove the comment."
-msgstr "コメントを消す。"
+msgstr "Remover el comentario."
 
-#: ../../howto/functional.rst:1179
+#: ../Doc/howto/functional.rst:1179
 msgid ""
 "I really like these rules, but you're free to disagree about whether this "
 "lambda-free style is better."
 msgstr ""
-"著者はこの指針を本当に気に入っていますが、こうしたラムダなしスタイルが他より"
-"優れているかどうかについて、異論は認めます。"
+"Me gustan mucho estas reglas, pero es libre de disentir acerca de si este "
+"estilo libre de lambda es mejor."
 
-#: ../../howto/functional.rst:1184
+#: ../Doc/howto/functional.rst:1184
 msgid "Revision History and Acknowledgements"
-msgstr "更新履歴と謝辞"
+msgstr "Historia de revisiones y reconocimientos"
 
-#: ../../howto/functional.rst:1186
+#: ../Doc/howto/functional.rst:1186
 msgid ""
 "The author would like to thank the following people for offering "
 "suggestions, corrections and assistance with various drafts of this article: "
 "Ian Bicking, Nick Coghlan, Nick Efford, Raymond Hettinger, Jim Jewett, Mike "
 "Krell, Leandro Lameiro, Jussi Salmela, Collin Winter, Blake Winton."
 msgstr ""
-"著者は提案の申し出や修正、様々なこの記事の草稿の助けをしてくれた以下の人々に"
-"感謝します: Ian Bicking, Nick Coghlan, Nick Efford, Raymond Hettinger, Jim "
+"Al autor le gustaría agradecer a las siguientes personar por ofrecer "
+"sugerencias, correcciones y asistencia con varios borradores de este "
+"articulo: Ian Bicking, Nick Coghlan, Nick Efford, Raymond Hettinger, Jim "
 "Jewett, Mike Krell, Leandro Lameiro, Jussi Salmela, Collin Winter, Blake "
 "Winton."
 
-#: ../../howto/functional.rst:1191
+#: ../Doc/howto/functional.rst:1191
 msgid "Version 0.1: posted June 30 2006."
-msgstr "Version 0.1: posted June 30 2006."
+msgstr "Versión 0.1: publicada el 30 de junio de 2006."
 
-#: ../../howto/functional.rst:1193
+#: ../Doc/howto/functional.rst:1193
 msgid "Version 0.11: posted July 1 2006.  Typo fixes."
-msgstr "Version 0.11: posted July 1 2006.  Typo fixes."
+msgstr ""
+"Versión 0.11: publicada el 1 de julio de 2006. Errores tipográficos "
+"arreglados."
 
-#: ../../howto/functional.rst:1195
+#: ../Doc/howto/functional.rst:1195
 msgid ""
 "Version 0.2: posted July 10 2006.  Merged genexp and listcomp sections into "
 "one. Typo fixes."
 msgstr ""
-"Version 0.2: posted July 10 2006.  Merged genexp and listcomp sections into "
-"one. Typo fixes."
+"Versión 0.2: publicada el 10 de julio de 2006. Secciones genexp y listcomp "
+"unidas en una sola. Errores tipográficos arreglados."
 
-#: ../../howto/functional.rst:1198
+#: ../Doc/howto/functional.rst:1198
 msgid ""
 "Version 0.21: Added more references suggested on the tutor mailing list."
 msgstr ""
-"Version 0.21: Added more references suggested on the tutor mailing list."
+"Versión 0.21: Agregadas mas referencias sugeridas en la lista de correos "
+"tutor."
 
-#: ../../howto/functional.rst:1200
+#: ../Doc/howto/functional.rst:1200
 msgid ""
 "Version 0.30: Adds a section on the ``functional`` module written by Collin "
 "Winter; adds short section on the operator module; a few other edits."
 msgstr ""
-"Version 0.30: Adds a section on the ``functional`` module written by Collin "
-"Winter; adds short section on the operator module; a few other edits."
+"Versión 0.30: Agrega una sección sobre el módulo ``functional`` escrito por "
+"Collin Winter; agrega una sección corta sobre el módulo operator; y unas "
+"pocas otras ediciones."
 
-#: ../../howto/functional.rst:1205
+#: ../Doc/howto/functional.rst:1205
 msgid "References"
-msgstr "参考資料"
+msgstr "Referencias"
 
-#: ../../howto/functional.rst:1208
+#: ../Doc/howto/functional.rst:1208
 msgid "General"
-msgstr "一般論"
+msgstr "Generales"
 
-#: ../../howto/functional.rst:1210
+#: ../Doc/howto/functional.rst:1210
 msgid ""
 "**Structure and Interpretation of Computer Programs**, by Harold Abelson and "
 "Gerald Jay Sussman with Julie Sussman.  Full text at https://mitpress.mit."
@@ -1773,91 +1871,98 @@ msgid ""
 "approaches described in these chapters are applicable to functional-style "
 "Python code."
 msgstr ""
-"Harold Abelson と Gerald Jay Sussman, Julie Sussman による **Structure and "
-"Interpretation of Computer Programs**。https://mitpress.mit.edu/sicp/ に全文"
-"があります。この計算機科学に関する古典的な教科書では、2 章と 3 章でデータフ"
-"ローをプログラム内でまとめるためのシーケンスとストリームの利用について議論し"
-"ています。この本は例として Scheme を使っていますが、これらの章内の多くのデザ"
-"インアプローチは関数スタイルな Python コードにも適用できます。"
+"**Estructura e interpretación de programas de computadora**, por Harold "
+"Abelson y Gerald Jay Sussman con Julie Sussman. Texto completo en https://"
+"mitpress.mit.edu/sicp/. En este libro clásico de ciencia de computación, los "
+"capítulos 2 y 3 tratan el uso de secuencias y flujos para organizar el flujo "
+"de datos dentro de un programa. El libro usa Scheme para sus ejemplos, pero "
+"muchos de los enfoques de diseño descritos en estos capítulos son aplicables "
+"al código de Python en estilo funcional."
 
-#: ../../howto/functional.rst:1218
+#: ../Doc/howto/functional.rst:1218
+#, fuzzy
 msgid ""
 "https://www.defmacro.org/ramblings/fp.html: A general introduction to "
 "functional programming that uses Java examples and has a lengthy historical "
 "introduction."
 msgstr ""
-"https://www.defmacro.org/ramblings/fp.html: 関数プログラミングの一般的な入門"
-"で Java での例を利用していて、長大な歴史の紹介があります。"
+"http://www.defmacro.org/ramblings/fp.html: Una introducción general a la "
+"programación funcional que usa ejemplos en Java y tiene una introducción "
+"histórica extensa."
 
-#: ../../howto/functional.rst:1221
+#: ../Doc/howto/functional.rst:1221
 msgid ""
 "https://en.wikipedia.org/wiki/Functional_programming: General Wikipedia "
 "entry describing functional programming."
 msgstr ""
-"https://en.wikipedia.org/wiki/Functional_programming: 関数プログラミングに関"
-"する一般的な内容の記事。"
+"https://es.wikipedia.org/wiki/Programaci%C3%B3n_funcional: Entrada general "
+"de Wikipedia que describe la programación funcional."
 
-#: ../../howto/functional.rst:1224
+#: ../Doc/howto/functional.rst:1224
 msgid "https://en.wikipedia.org/wiki/Coroutine: Entry for coroutines."
-msgstr "https://en.wikipedia.org/wiki/Coroutine: コルーチンに関する記事。"
+msgstr "https://es.wikipedia.org/wiki/Corrutina: Entrada para corrutinas."
 
-#: ../../howto/functional.rst:1226
+#: ../Doc/howto/functional.rst:1226
 msgid ""
 "https://en.wikipedia.org/wiki/Currying: Entry for the concept of currying."
-msgstr "https://en.wikipedia.org/wiki/Currying: カリー化の概念に関する記事。"
+msgstr ""
+"https://es.wikipedia.org/wiki/Currificaci%C3%B3n: Entrada para el concepto "
+"de currificación."
 
-#: ../../howto/functional.rst:1229
+#: ../Doc/howto/functional.rst:1229
 msgid "Python-specific"
-msgstr "Python 特有の話"
+msgstr "Específicas de Python"
 
-#: ../../howto/functional.rst:1231
+#: ../Doc/howto/functional.rst:1231
+#, fuzzy
 msgid ""
 "https://gnosis.cx/TPiP/: The first chapter of David Mertz's book :title-"
 "reference:`Text Processing in Python` discusses functional programming for "
 "text processing, in the section titled \"Utilizing Higher-Order Functions in "
 "Text Processing\"."
 msgstr ""
-"https://gnosis.cx/TPiP/: David Mertz's の本の最初の章 :title-reference:`Text "
-"Processing in Python` では文書処理のための関数プログラミングについて議論して"
-"います、この議論の節には \"Utilizing Higher-Order Functions in Text "
-"Processing\" というタイトルがついています。"
+"http://gnosis.cx/TPiP/: El primer capítulo del libro de David Mertz :title-"
+"reference:`Text Processing in Python` trata la programación funcional para "
+"procesamiento de texto, en la sección titulada \"Utilizando funciones de "
+"orden superior en procesamiento de texto\"."
 
-#: ../../howto/functional.rst:1236
+#: ../Doc/howto/functional.rst:1236
 msgid ""
 "Mertz also wrote a 3-part series of articles on functional programming for "
 "IBM's DeveloperWorks site; see `part 1 <https://developer.ibm.com/articles/l-"
 "prog/>`__, `part 2 <https://developer.ibm.com/tutorials/l-prog2/>`__, and "
 "`part 3 <https://developer.ibm.com/tutorials/l-prog3/>`__,"
 msgstr ""
-"Mertz は IBM の DeveloperWorks サイトにも関数型プログラミングに関する 3 部構"
-"成の記事を書いています; `part 1 <https://developer.ibm.com/articles/l-prog/"
-">`__, `part 2 <https://developer.ibm.com/tutorials/l-prog2/>`__, `part 3 "
-"<https://developer.ibm.com/tutorials/l-prog3/>`__,"
+"Mertz también escribió una serie de artículos de 3 partes sobre programación "
+"funcional para el sitio DeveloperWorks de IBM; ver `parte 1 <https://"
+"developer.ibm.com/articles/l-prog/>`__, `parte 2 <https://developer.ibm.com/"
+"tutorials/l-prog2/>`__, y `parte 3 <https://developer.ibm.com/tutorials/l-"
+"prog3/>`__,"
 
-#: ../../howto/functional.rst:1244
+#: ../Doc/howto/functional.rst:1244
 msgid "Python documentation"
-msgstr "Python 文書"
+msgstr "Documentación de Python"
 
-#: ../../howto/functional.rst:1246
+#: ../Doc/howto/functional.rst:1246
 msgid "Documentation for the :mod:`itertools` module."
-msgstr ":mod:`itertools` モジュールの文書。"
+msgstr "Documentación del módulo :mod:`itertools`."
 
-#: ../../howto/functional.rst:1248
+#: ../Doc/howto/functional.rst:1248
 msgid "Documentation for the :mod:`functools` module."
-msgstr ":mod:`functools` モジュールについてのドキュメント。"
+msgstr "Documentación del módulo :mod:`functools`."
 
-#: ../../howto/functional.rst:1250
+#: ../Doc/howto/functional.rst:1250
 msgid "Documentation for the :mod:`operator` module."
-msgstr ":mod:`operator` モジュールの文書。"
+msgstr "Documentación del módulo :mod:`operator`."
 
-#: ../../howto/functional.rst:1252
+#: ../Doc/howto/functional.rst:1252
 msgid ":pep:`289`: \"Generator Expressions\""
-msgstr ":pep:`289`: \"Generator Expressions\""
+msgstr ":pep:`289`: \"Expresiones generadoras\""
 
-#: ../../howto/functional.rst:1254
+#: ../Doc/howto/functional.rst:1254
 msgid ""
 ":pep:`342`: \"Coroutines via Enhanced Generators\" describes the new "
 "generator features in Python 2.5."
 msgstr ""
-":pep:`342`: \"Coroutines via Enhanced Generators\" describes the new "
-"generator features in Python 2.5."
+":pep:`342`: \"Corrutinas a través de generadores mejorados\" describe las "
+"características del nuevo generador en Python 2.5."

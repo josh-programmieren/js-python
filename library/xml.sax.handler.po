@@ -1,36 +1,35 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:18+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-11-24 11:22-0300\n"
+"Last-Translator: \n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/xml.sax.handler.rst:2
+#: ../Doc/library/xml.sax.handler.rst:2
 msgid ":mod:`xml.sax.handler` --- Base classes for SAX handlers"
-msgstr ":mod:`xml.sax.handler` --- SAX ハンドラの基底クラス"
+msgstr ":mod:`xml.sax.handler` --- Base classes for SAX handlers"
 
-#: ../../library/xml.sax.handler.rst:10
+#: ../Doc/library/xml.sax.handler.rst:10
 msgid "**Source code:** :source:`Lib/xml/sax/handler.py`"
-msgstr "**ソースコード:** :source:`Lib/xml/sax/handler.py`"
+msgstr "**Source code** :source:`Lib/xml/sax/handler.py`"
 
-#: ../../library/xml.sax.handler.rst:14
+#: ../Doc/library/xml.sax.handler.rst:14
 msgid ""
 "The SAX API defines five kinds of handlers: content handlers, DTD handlers, "
 "error handlers, entity resolvers and lexical handlers. Applications normally "
@@ -40,279 +39,303 @@ msgid ""
 "module :mod:`xml.sax.handler`, so that all methods get default "
 "implementations."
 msgstr ""
+"La API de SAX define cuatro tipos de manejadores: manejadores de contenido, "
+"manejadores de DTD, manejadores de errores y resolvedores de entidades. "
+"Normalmente, las aplicaciones solo necesitan implementar las interfaces "
+"cuyos eventos les interesan; pueden implementar las interfaces en un solo "
+"objeto o en múltiples objetos. Las implementaciones de los manejadores deben "
+"heredar de las clases base provistas en el módulo :mod:`xml.sax.handler`, de "
+"modo que todos los métodos obtengan implementaciones por defecto."
 
-#: ../../library/xml.sax.handler.rst:24
+#: ../Doc/library/xml.sax.handler.rst:24
 msgid ""
 "This is the main callback interface in SAX, and the one most important to "
 "applications. The order of events in this interface mirrors the order of the "
 "information in the document."
 msgstr ""
-"アプリケーションにとって最も重要なメインの SAX コールバック・インターフェース"
-"です。このインターフェースで発生するイベントの順序はドキュメント内の情報の順"
-"序を反映しています。"
+"Esta es la principal interfaz de devolución de llamada en el SAX, y la más "
+"importante para las aplicaciones. El orden de los eventos en esta interfaz "
+"refleja el orden de la información en el documento."
 
-#: ../../library/xml.sax.handler.rst:31
+#: ../Doc/library/xml.sax.handler.rst:31
 msgid "Handle DTD events."
-msgstr "DTD イベントのハンドラです。"
+msgstr "Manejar eventos de DTD."
 
-#: ../../library/xml.sax.handler.rst:33
+#: ../Doc/library/xml.sax.handler.rst:33
 msgid ""
 "This interface specifies only those DTD events required for basic parsing "
 "(unparsed entities and attributes)."
 msgstr ""
-"パースされていないエンティティや属性など、基本的なパースに必要な DTD イベント"
-"の指定だけを行うインターフェースです。"
+"Esta interfaz especifica solo los eventos DTD necesarios para el análisis "
+"básico (entidades y atributos no analizados)."
 
-#: ../../library/xml.sax.handler.rst:39
+#: ../Doc/library/xml.sax.handler.rst:39
 msgid ""
 "Basic interface for resolving entities. If you create an object implementing "
 "this interface, then register the object with your Parser, the parser will "
 "call the method in your object to resolve all external entities."
 msgstr ""
-"エンティティ解決用の基本インターフェースです。このインターフェースを実装した"
-"オブジェクトを作成しパーサに登録することで、パーサはすべての外部エンティティ"
-"を解決するメソッドを呼び出すようになります。"
+"Interfaz básica para resolver entidades. Si creas un objeto implementando "
+"esta interfaz, y luego registras el objeto con tu Parser, el parser "
+"(analizador) invocara al método en tu objeto para resolver todas las "
+"entidades externas."
 
-#: ../../library/xml.sax.handler.rst:46
+#: ../Doc/library/xml.sax.handler.rst:46
 msgid ""
 "Interface used by the parser to present error and warning messages to the "
 "application.  The methods of this object control whether errors are "
 "immediately converted to exceptions or are handled in some other way."
 msgstr ""
-"エラーや警告メッセージをアプリケーションに通知するためにパーサが使用するイン"
-"ターフェースです。このオブジェクトのメソッドが、エラーをただちに例外に変換す"
-"るか、あるいは別の方法で処理するかの制御をしています。"
+"Interfaz utilizada por el parser para presentar mensajes de error y "
+"advertencia a la aplicación.  Los métodos de este objeto controlan si los "
+"errores se convierten inmediatamente en excepciones o se manejan de alguna "
+"otra manera."
 
-#: ../../library/xml.sax.handler.rst:53
+#: ../Doc/library/xml.sax.handler.rst:53
 msgid ""
 "Interface used by the parser to represent low frequency events which may not "
 "be of interest to many applications."
 msgstr ""
+"Interface usada por el parser para representar eventos de baja frecuencia "
+"que pueden no ser de interés para muchas aplicaciones."
 
-#: ../../library/xml.sax.handler.rst:56
+#: ../Doc/library/xml.sax.handler.rst:56
 msgid ""
 "In addition to these classes, :mod:`xml.sax.handler` provides symbolic "
 "constants for the feature and property names."
 msgstr ""
-"これらのクラスに加え、 :mod:`xml.sax.handler` は機能やプロパティ名のシンボル"
-"定数を提供しています。"
+"Además de estas clases, :mod:`xml.sax.handler` proporciona constantes "
+"simbólicas para los nombres de las características y propiedades."
 
-#: ../../library/xml.sax.handler.rst:62
+#: ../Doc/library/xml.sax.handler.rst:62
 msgid "value: ``\"http://xml.org/sax/features/namespaces\"``"
-msgstr "値: ``\"http://xml.org/sax/features/namespaces\"``"
+msgstr "value: ``\"http://xml.org/sax/features/namespaces\"``"
 
-#: ../../library/xml.sax.handler.rst:63
+#: ../Doc/library/xml.sax.handler.rst:63
 msgid "true: Perform Namespace processing."
-msgstr "真: 名前空間を処理します。"
+msgstr "true: Realizar el procesamiento del Namespace (espacio de nombres)."
 
-#: ../../library/xml.sax.handler.rst:65
+#: ../Doc/library/xml.sax.handler.rst:65
 msgid ""
 "false: Optionally do not perform Namespace processing (implies namespace-"
 "prefixes; default)."
 msgstr ""
-"偽: オプションで名前空間を処理しません (暗黙に名前空間接頭辞も無効にします; "
-"デフォルト)。"
+"false: Opcionalmente no realizar el procesamiento del Namespace (espacio de "
+"nombres) (implica prefijos de espacio de nombres; por defecto)."
 
-#: ../../library/xml.sax.handler.rst:66 ../../library/xml.sax.handler.rst:76
-#: ../../library/xml.sax.handler.rst:85 ../../library/xml.sax.handler.rst:94
-#: ../../library/xml.sax.handler.rst:102 ../../library/xml.sax.handler.rst:112
-#: ../../library/xml.sax.handler.rst:144
+#: ../Doc/library/xml.sax.handler.rst:66 ../Doc/library/xml.sax.handler.rst:76
+#: ../Doc/library/xml.sax.handler.rst:85 ../Doc/library/xml.sax.handler.rst:94
+#: ../Doc/library/xml.sax.handler.rst:102
+#: ../Doc/library/xml.sax.handler.rst:112
+#: ../Doc/library/xml.sax.handler.rst:144
 msgid "access: (parsing) read-only; (not parsing) read/write"
-msgstr "アクセス: (パース時) 読み込み専用; (パース時以外) 読み書き可"
+msgstr "acceso: (parsing) solo de lectura; (not parsing) lectura/escritura"
 
-#: ../../library/xml.sax.handler.rst:71
+#: ../Doc/library/xml.sax.handler.rst:71
 msgid "value: ``\"http://xml.org/sax/features/namespace-prefixes\"``"
-msgstr "値: ``\"http://xml.org/sax/features/namespace-prefixes\"``"
+msgstr "value: ``\"http://xml.org/sax/features/namespace-prefixes\"``"
 
-#: ../../library/xml.sax.handler.rst:73
+#: ../Doc/library/xml.sax.handler.rst:73
 msgid ""
 "true: Report the original prefixed names and attributes used for Namespace "
 "declarations."
 msgstr ""
-"真: 名前空間宣言で用いられている元々の接頭辞付きの名前と属性を報告します。"
+"true: Reporte de los nombres prefijados originales y los atributos "
+"utilizados para las declaraciones del Namespace (espacio de nombres)."
 
-#: ../../library/xml.sax.handler.rst:75
+#: ../Doc/library/xml.sax.handler.rst:75
 msgid ""
 "false: Do not report attributes used for Namespace declarations, and "
 "optionally do not report original prefixed names (default)."
 msgstr ""
-"偽: 名前空間宣言で用いられている属性を報告しません。オプションで元々の接頭辞"
-"付きの名前も報告しません (デフォルト)。"
+"false: No informar de los atributos utilizados para las declaraciones del "
+"Namespace (espacio de nombres), y opcionalmente no informar de los nombres "
+"prefijados originales (por defecto)."
 
-#: ../../library/xml.sax.handler.rst:81
+#: ../Doc/library/xml.sax.handler.rst:81
 msgid "value: ``\"http://xml.org/sax/features/string-interning\"``"
-msgstr "値: ``\"http://xml.org/sax/features/string-interning\"``"
+msgstr "value: ``\"http://xml.org/sax/features/string-interning\"``"
 
-#: ../../library/xml.sax.handler.rst:83
+#: ../Doc/library/xml.sax.handler.rst:83
 msgid ""
 "true: All element names, prefixes, attribute names, Namespace URIs, and "
 "local names are interned using the built-in intern function."
 msgstr ""
-"真: 全ての要素名、接頭辞、属性名、名前空間 URI、ローカル名を組込みの intern "
-"関数を使ってシンボルに登録します。"
+"true: Todos los nombres de elementos, prefijos, nombres de atributos, URIs "
+"del Namespace (espacio de nombres) y nombres locales son internados usando "
+"la función interna incorporada."
 
-#: ../../library/xml.sax.handler.rst:84
+#: ../Doc/library/xml.sax.handler.rst:84
 msgid ""
 "false: Names are not necessarily interned, although they may be (default)."
 msgstr ""
-"偽: 名前を必ずしもシンボルに登録しませんが、されるかもしれません (デフォル"
-"ト)。"
+"false: Los nombres no están necesariamente internados, aunque pueden estarlo "
+"(por defecto)."
 
-#: ../../library/xml.sax.handler.rst:90
+#: ../Doc/library/xml.sax.handler.rst:90
 msgid "value: ``\"http://xml.org/sax/features/validation\"``"
-msgstr "値: ``\"http://xml.org/sax/features/validation\"``"
+msgstr "value: ``\"http://xml.org/sax/features/validation\"``"
 
-#: ../../library/xml.sax.handler.rst:92
+#: ../Doc/library/xml.sax.handler.rst:92
 msgid ""
 "true: Report all validation errors (implies external-general-entities and "
 "external-parameter-entities)."
 msgstr ""
-"真: 全ての妥当性検査エラーを報告します (外部一般エンティティと外部変数エン"
-"ティティが暗示されます)。"
+"true: Reportar de todos los errores de validación (implica entidades "
+"generales externas y entidades de parámetros externos)."
 
-#: ../../library/xml.sax.handler.rst:93
+#: ../Doc/library/xml.sax.handler.rst:93
 msgid "false: Do not report validation errors."
-msgstr "偽: 妥当性検査エラーを報告しません。"
+msgstr "false: No informe de los errores de validación."
 
-#: ../../library/xml.sax.handler.rst:99
+#: ../Doc/library/xml.sax.handler.rst:99
 msgid "value: ``\"http://xml.org/sax/features/external-general-entities\"``"
-msgstr "値: ``\"http://xml.org/sax/features/external-general-entities\"``"
+msgstr "value: ``\"http://xml.org/sax/features/external-parameter-entities\"``"
 
-#: ../../library/xml.sax.handler.rst:100
+#: ../Doc/library/xml.sax.handler.rst:100
 msgid "true: Include all external general (text) entities."
-msgstr "真: 全ての外部一般 (テキスト) エンティティを取り込みます。"
+msgstr "true: Incluye todas las entidades externas generales de texto (text)."
 
-#: ../../library/xml.sax.handler.rst:101
+#: ../Doc/library/xml.sax.handler.rst:101
 msgid "false: Do not include external general entities."
-msgstr "偽: 外部一般エンティティを取り込みません。"
+msgstr "false: No incluya entidades generales externas."
 
-#: ../../library/xml.sax.handler.rst:107
+#: ../Doc/library/xml.sax.handler.rst:107
 msgid "value: ``\"http://xml.org/sax/features/external-parameter-entities\"``"
-msgstr "値: ``\"http://xml.org/sax/features/external-parameter-entities\"``"
+msgstr "value: ``\"http://xml.org/sax/features/external-parameter-entities\"``"
 
-#: ../../library/xml.sax.handler.rst:109
+#: ../Doc/library/xml.sax.handler.rst:109
 msgid ""
 "true: Include all external parameter entities, including the external DTD "
 "subset."
 msgstr ""
-"真: 外部 DTD サブセットを含む全ての外部変数エンティティを取り込みます。"
+"true: Incluye todas las entidades paramétricas externas, incluyendo el "
+"subconjunto DTD externo."
 
-#: ../../library/xml.sax.handler.rst:111
+#: ../Doc/library/xml.sax.handler.rst:111
 msgid ""
 "false: Do not include any external parameter entities, even the external DTD "
 "subset."
 msgstr ""
-"偽: 外部 DTD サブセットであっても外部変数エンティティを取り込みません。"
+"false: No incluya ninguna entidad paramétrica externa, ni siquiera el "
+"subconjunto DTD externo."
 
-#: ../../library/xml.sax.handler.rst:117
+#: ../Doc/library/xml.sax.handler.rst:117
 msgid "List of all features."
-msgstr "全機能のリスト。"
+msgstr "Lista de todas las características."
 
-#: ../../library/xml.sax.handler.rst:122
+#: ../Doc/library/xml.sax.handler.rst:122
 msgid "value: ``\"http://xml.org/sax/properties/lexical-handler\"``"
-msgstr "値: ``\"http://xml.org/sax/properties/lexical-handler\"``"
+msgstr "value: ``\"http://xml.org/sax/properties/lexical-handler\"``"
 
-#: ../../library/xml.sax.handler.rst:123
+#: ../Doc/library/xml.sax.handler.rst:123
 msgid "data type: xml.sax.handler.LexicalHandler (not supported in Python 2)"
-msgstr ""
+msgstr "data type: xml.sax.sax2lib.LexicalHandler (no soportado en Python 2)"
 
-#: ../../library/xml.sax.handler.rst:125
+#: ../Doc/library/xml.sax.handler.rst:125
 msgid ""
 "description: An optional extension handler for lexical events like comments."
-msgstr "説明: コメントなど字句解析イベント用のオプション拡張ハンドラ。"
+msgstr ""
+"descripción: Un  handler (manipulador) de extensión opcional para eventos "
+"léxicos como los comentarios."
 
-#: ../../library/xml.sax.handler.rst:126 ../../library/xml.sax.handler.rst:135
+#: ../Doc/library/xml.sax.handler.rst:126
+#: ../Doc/library/xml.sax.handler.rst:135
 msgid "access: read/write"
-msgstr "アクセス: 読み書き可"
+msgstr "acceso: read/write (leer/escribir)"
 
-#: ../../library/xml.sax.handler.rst:131
+#: ../Doc/library/xml.sax.handler.rst:131
 msgid "value: ``\"http://xml.org/sax/properties/declaration-handler\"``"
-msgstr "値: ``\"http://xml.org/sax/properties/declaration-handler\"``"
+msgstr "value: ``\"http://xml.org/sax/properties/declaration-handler\"``"
 
-#: ../../library/xml.sax.handler.rst:132
+#: ../Doc/library/xml.sax.handler.rst:132
 msgid "data type: xml.sax.sax2lib.DeclHandler (not supported in Python 2)"
-msgstr "データ型: xml.sax.sax2lib.DeclHandler (Python 2 では未サポート)"
+msgstr "data type: xml.sax.sax2lib.DeclHandler (no soportado en Python 2)"
 
-#: ../../library/xml.sax.handler.rst:134
+#: ../Doc/library/xml.sax.handler.rst:134
 msgid ""
 "description: An optional extension handler for DTD-related events other than "
 "notations and unparsed entities."
 msgstr ""
-"説明: 表記や未解析エンティティをのぞく DTD 関連イベント用のオプション拡張ハン"
-"ドラ。"
+"description: Un gestor de extensión opcional para eventos relacionados con "
+"la DTD que no sean anotaciones y entidades no preparadas."
 
-#: ../../library/xml.sax.handler.rst:140
+#: ../Doc/library/xml.sax.handler.rst:140
 msgid "value: ``\"http://xml.org/sax/properties/dom-node\"``"
-msgstr "値: ``\"http://xml.org/sax/properties/dom-node\"``"
+msgstr "value: ``\"http://xml.org/sax/properties/dom-node\"``"
 
-#: ../../library/xml.sax.handler.rst:141
+#: ../Doc/library/xml.sax.handler.rst:141
 msgid "data type: org.w3c.dom.Node (not supported in Python 2)"
-msgstr "データ型: org.w3c.dom.Node (Python 2 では未サポート)"
+msgstr "data type: org.w3c.dom.Node (not supported in Python 2)"
 
-#: ../../library/xml.sax.handler.rst:143
+#: ../Doc/library/xml.sax.handler.rst:143
 msgid ""
 "description: When parsing, the current DOM node being visited if this is a "
 "DOM iterator; when not parsing, the root DOM node for iteration."
 msgstr ""
-"説明: パース時は DOM イテレータならば現在の DOM ノードです。非パース時はイテ"
-"レートのルート DOM ノードです。"
+"descripción: Cuando se analiza, el nodo DOM actual que se visita si se trata "
+"de un iterador DOM; cuando no se analiza, el nodo DOM raíz para la iteración."
 
-#: ../../library/xml.sax.handler.rst:149
+#: ../Doc/library/xml.sax.handler.rst:149
 msgid "value: ``\"http://xml.org/sax/properties/xml-string\"``"
-msgstr "値: ``\"http://xml.org/sax/properties/xml-string\"``"
+msgstr "value: ``\"http://xml.org/sax/properties/xml-string\"``"
 
-#: ../../library/xml.sax.handler.rst:150
+#: ../Doc/library/xml.sax.handler.rst:150
+#, fuzzy
 msgid "data type: Bytes"
-msgstr ""
+msgstr "tipo de datos: String"
 
-#: ../../library/xml.sax.handler.rst:152
+#: ../Doc/library/xml.sax.handler.rst:152
 msgid ""
 "description: The literal string of characters that was the source for the "
 "current event."
-msgstr "説明: 現在のイベントの元になったリテラル文字列。"
+msgstr ""
+"description: La cadena literal de caracteres que fue la fuente del evento "
+"actual."
 
-#: ../../library/xml.sax.handler.rst:153
+#: ../Doc/library/xml.sax.handler.rst:153
 msgid "access: read-only"
-msgstr "アクセス: 読み出し専用"
+msgstr "acceso: solo-lectura"
 
-#: ../../library/xml.sax.handler.rst:158
+#: ../Doc/library/xml.sax.handler.rst:158
 msgid "List of all known property names."
-msgstr "既知の全プロパティ名のリスト。"
+msgstr "Lista de todos los nombres de propiedades conocidas."
 
-#: ../../library/xml.sax.handler.rst:164
+#: ../Doc/library/xml.sax.handler.rst:164
 msgid "ContentHandler Objects"
-msgstr "ContentHandler オブジェクト"
+msgstr "Objetos ContentHandler"
 
-#: ../../library/xml.sax.handler.rst:166
+#: ../Doc/library/xml.sax.handler.rst:166
 msgid ""
 "Users are expected to subclass :class:`ContentHandler` to support their "
 "application.  The following methods are called by the parser on the "
 "appropriate events in the input document:"
 msgstr ""
-":class:`ContentHandler` はアプリケーション側でサブクラス化して利用することが"
-"前提になっています。パーサは入力ドキュメントのイベントにより、それぞれに対応"
-"する以下のメソッドを呼び出します:"
+"Se espera que los usuarios subclasifiquen :class:`ContentHandler` para "
+"apoyar su aplicación.  Los siguientes métodos son llamados por el analizador "
+"en los eventos apropiados en el documento de entrada:"
 
-#: ../../library/xml.sax.handler.rst:173
+#: ../Doc/library/xml.sax.handler.rst:173
 msgid ""
 "Called by the parser to give the application a locator for locating the "
 "origin of document events."
 msgstr ""
-"アプリケーションにドキュメントイベントの発生位置を指すロケータを与えるために"
-"パーサから呼び出されます。"
+"Invocado por el parser (analizador) para dar a la aplicación un localizador "
+"para determinar el origen de los eventos del documento."
 
-#: ../../library/xml.sax.handler.rst:176
+#: ../Doc/library/xml.sax.handler.rst:176
 msgid ""
 "SAX parsers are strongly encouraged (though not absolutely required) to "
 "supply a locator: if it does so, it must supply the locator to the "
 "application by invoking this method before invoking any of the other methods "
 "in the DocumentHandler interface."
 msgstr ""
-"SAX パーサによるロケータの提供は強く推奨されています(必須ではありません)。も"
-"し提供する場合は、DocumentHandler インターフェースのどのメソッドよりも先にこ"
-"のメソッドが呼び出されるようにしなければなりません。"
+"Se recomienda encarecidamente a los parsers (analizadores) SAX (aunque no es "
+"absolutamente necesario) que proporcionen un localizador: si lo hace, debe "
+"proporcionar el localizador a la aplicación invocando este método antes de "
+"invocar cualquiera de los otros métodos de la interfaz DocumentHandler."
 
-#: ../../library/xml.sax.handler.rst:181
+#: ../Doc/library/xml.sax.handler.rst:181
 msgid ""
 "The locator allows the application to determine the end position of any "
 "document-related event, even if the parser is not reporting an error. "
@@ -321,64 +344,70 @@ msgid ""
 "business rules). The information returned by the locator is probably not "
 "sufficient for use with a search engine."
 msgstr ""
-"パーサがエラーを報告しない場合でも、ロケータによってアプリケーションは全ての"
-"ドキュメント関連イベントの終了位置を知ることが出来ます。\n"
-"通常、アプリケーションは自身のエラー (例えば文字コンテンツがアプリケーション"
-"の規則に適合しない場合) を報告するためにこれを使用します。\n"
-"ロケータが返す情報は検索エンジンでの利用にはおそらく不充分です。"
+"El localizador permite a la aplicación determinar la posición final de "
+"cualquier evento relacionado con el documento, incluso si el analizador no "
+"informa de un error. Normalmente, la aplicación utilizará esta información "
+"para informar de sus propios errores (como el contenido de los caracteres "
+"que no coinciden con las reglas de negocio de la aplicación). Es probable "
+"que la información retornada por el localizador no sea suficiente para su "
+"uso con un motor de búsqueda."
 
-#: ../../library/xml.sax.handler.rst:188
+#: ../Doc/library/xml.sax.handler.rst:188
 msgid ""
 "Note that the locator will return correct information only during the "
 "invocation of the events in this interface. The application should not "
 "attempt to use it at any other time."
 msgstr ""
-"ロケータが正しい情報を返すのは、このインターフェースからイベントの呼出しが実"
-"行されている間だけです。それ以外のときは使用すべきでありません。"
+"Tenga en cuenta que el localizador retornará la información correcta solo "
+"durante la invocación de los eventos en esta interfaz. La aplicación no debe "
+"intentar utilizarlo en ningún otro momento."
 
-#: ../../library/xml.sax.handler.rst:195
+#: ../Doc/library/xml.sax.handler.rst:195
 msgid "Receive notification of the beginning of a document."
-msgstr "ドキュメントの開始通知を受け取ります。"
+msgstr "Recibir la notificación del inicio de un documento."
 
-#: ../../library/xml.sax.handler.rst:197
+#: ../Doc/library/xml.sax.handler.rst:197
 msgid ""
 "The SAX parser will invoke this method only once, before any other methods "
 "in this interface or in DTDHandler (except for :meth:`setDocumentLocator`)."
 msgstr ""
-"SAX パーサはこのインターフェースやDTDHandler のどのメソッド (:meth:"
-"`setDocumentLocator` を除く) よりも先にこのメソッドを一度だけ呼び出します。"
+"El parser (analizador) SAX invocará este método solo una vez, antes que "
+"cualquier otro método en esta interfaz o en DTDHandler (excepto :meth:"
+"`setDocumentLocator`)."
 
-#: ../../library/xml.sax.handler.rst:203
+#: ../Doc/library/xml.sax.handler.rst:203
 msgid "Receive notification of the end of a document."
-msgstr "ドキュメントの終了通知を受け取ります。"
+msgstr "Recibir una notificación del final de un documento."
 
-#: ../../library/xml.sax.handler.rst:205
+#: ../Doc/library/xml.sax.handler.rst:205
 msgid ""
 "The SAX parser will invoke this method only once, and it will be the last "
 "method invoked during the parse. The parser shall not invoke this method "
 "until it has either abandoned parsing (because of an unrecoverable error) or "
 "reached the end of input."
 msgstr ""
-"SAX パーサはこのメソッドを一度だけ呼び出します。パース中に呼び出す最後のメ"
-"ソッドです。パーサは (回復不能なエラーで) パース処理を中断するか、あるいは入"
-"力の最後に到達するまでこのメソッドを呼び出しません。"
+"El analizador (parser) SAX invocará este método solo una vez, y será el "
+"último método invocado durante el análisis. El analizador no invocará este "
+"método hasta que no haya abandonado el análisis sintáctico (debido a un "
+"error irrecuperable) o haya llegado al final de la entrada."
 
-#: ../../library/xml.sax.handler.rst:213
+#: ../Doc/library/xml.sax.handler.rst:213
 msgid "Begin the scope of a prefix-URI Namespace mapping."
-msgstr "接頭辞と URI 名前空間の関連付けのスコープを開始します。"
+msgstr "Comienza el alcance de un mapeo del prefijo-URI Namespace."
 
-#: ../../library/xml.sax.handler.rst:215
+#: ../Doc/library/xml.sax.handler.rst:215
 msgid ""
 "The information from this event is not necessary for normal Namespace "
 "processing: the SAX XML reader will automatically replace prefixes for "
 "element and attribute names when the ``feature_namespaces`` feature is "
 "enabled (the default)."
 msgstr ""
-"このイベントからの情報は名前空間処理に必須ではありません。SAX XML リーダは "
-"``feature_namespaces`` 機能が有効な場合 (デフォルト)、要素と属性名の接頭辞を"
-"自動的に置換します。"
+"La información de este evento no es necesaria para el procesamiento normal "
+"del Namespace (espacio de nombres): el lector de XML SAX sustituirá "
+"automáticamente los prefijos de los nombres de elementos y atributos cuando "
+"se active la función ``feature_namespaces`` default (el valor por defecto)."
 
-#: ../../library/xml.sax.handler.rst:220
+#: ../Doc/library/xml.sax.handler.rst:220
 msgid ""
 "There are cases, however, when applications need to use prefixes in "
 "character data or in attribute values, where they cannot safely be expanded "
@@ -386,13 +415,14 @@ msgid ""
 "events supply the information to the application to expand prefixes in those "
 "contexts itself, if necessary."
 msgstr ""
-"しかしながら、接頭辞の自動展開を安全に行えないために、アプリケーションが文字"
-"データや属性値の中で接頭辞を使わなければならない場合があります。\n"
-"必要ならば :meth:`startPrefixMapping` や :meth:`endPrefixMapping` イベントは"
-"アプリケーションにコンテキスト自身の中で接頭辞を展開するための情報を提供しま"
-"す。"
+"Sin embargo, hay casos en que las aplicaciones necesitan utilizar prefijos "
+"en los datos de los caracteres o en los valores de los atributos, en los que "
+"no se pueden expandir automáticamente de forma segura; los eventos :meth:"
+"`startPrefixMapping` y :meth:`endPrefixMapping` suministran la información a "
+"la aplicación para expandir los prefijos en esos contextos por sí mismos, si "
+"es necesario."
 
-#: ../../library/xml.sax.handler.rst:228
+#: ../Doc/library/xml.sax.handler.rst:228
 msgid ""
 "Note that :meth:`startPrefixMapping` and :meth:`endPrefixMapping` events are "
 "not guaranteed to be properly nested relative to each-other: all :meth:"
@@ -401,31 +431,32 @@ msgid ""
 "after the corresponding :meth:`endElement` event, but their order is not "
 "guaranteed."
 msgstr ""
-":meth:`startPrefixMapping` と :meth:`endPrefixMapping` イベントは相互に正しい"
-"入れ子関係になることが保証されていないので注意が必要です。すべての :meth:"
-"`startPrefixMapping` は対応する :meth:`startElement` の前に発生し、 :meth:"
-"`endPrefixMapping` イベントは対応する :meth:`endElement` の後で発生しますが、"
-"その順序は保証されていません。"
+"Note que los eventos :meth:`startPrefixMapping` y :meth:`endPrefixMapping` "
+"no están garantizados de estar apropiadamente anidados en relación a cada "
+"uno: todos los eventos :meth:`startPrefixMapping` ocurrirán antes del "
+"correspondiente evento :meth:`startElement`, y todos los eventos :meth:"
+"`endPrefixMapping` ocurrirán después del correspondiente evento :meth:"
+"`endElement`, pero su orden no está garantizado."
 
-#: ../../library/xml.sax.handler.rst:238
+#: ../Doc/library/xml.sax.handler.rst:238
 msgid "End the scope of a prefix-URI mapping."
-msgstr "接頭辞と URI の関連付けのスコープを終了します。"
+msgstr "Terminar con el alcance de un mapeo de prefijos-URI."
 
-#: ../../library/xml.sax.handler.rst:240
+#: ../Doc/library/xml.sax.handler.rst:240
 msgid ""
 "See :meth:`startPrefixMapping` for details. This event will always occur "
 "after the corresponding :meth:`endElement` event, but the order of :meth:"
 "`endPrefixMapping` events is not otherwise guaranteed."
 msgstr ""
-"詳しくは :meth:`startPrefixMapping` を参照してください。このイベントは常に対"
-"応する :meth:`endElement` の後で発生しますが、複数の :meth:"
-"`endPrefixMapping` イベントの順序は特に保証されません。"
+"Ver :meth:`startPrefixMapping` para más detalles. Este evento siempre "
+"ocurrirá después del correspondiente evento :meth:`endElement`, pero el "
+"orden de los eventos :meth:`endPrefixMapping` no está garantizado."
 
-#: ../../library/xml.sax.handler.rst:247
+#: ../Doc/library/xml.sax.handler.rst:247
 msgid "Signals the start of an element in non-namespace mode."
-msgstr "非名前空間モードでの要素の開始を通知します。"
+msgstr "Señala el inicio de un elemento en modo no espacial."
 
-#: ../../library/xml.sax.handler.rst:249
+#: ../Doc/library/xml.sax.handler.rst:249
 msgid ""
 "The *name* parameter contains the raw XML 1.0 name of the element type as a "
 "string and the *attrs* parameter holds an object of the :class:`~xml.sax."
@@ -435,31 +466,32 @@ msgid ""
 "a copy of the attributes. To keep a copy of the attributes, use the :meth:"
 "`copy` method of the *attrs* object."
 msgstr ""
-"*name* 引数は要素型の生の XML 1.0 名を文字列として持ち、*attrs* 引数は要素の"
-"属性を持つ :class:`~xml.sax.xmlreader.Attributes` インターフェイス (:ref:"
-"`attributes-objects` を参照) のオブジェクトを保持します。 \n"
-"*attrs* ととして渡されたオブジェクトはパーサに再利用されるかもしれません。\n"
-"そのため、それへの参照を確保するのは属性のコピーを保持する確実な方法ではあり"
-"ません。\n"
-"属性のコピーを保持するには *attrs* 属性の :meth:`copy` メソッドを使用してくだ"
-"さい。"
+"El parámetro *name* contiene el nombre XML 1.0 en bruto del tipo de elemento "
+"como una cadena y el parámetro *attrs* contiene un objeto de la interfaz :"
+"class:`~xml.sax.xmlreader.Attributes` (véase :ref:`attributes-objects`) que "
+"contiene los atributos del elemento.  El objeto pasado como *attrs* puede "
+"ser reutilizado por el parser (analizador); mantener una referencia a él no "
+"es una forma fiable de conservar una copia de los atributos. Para guardar "
+"una copia de los atributos, usa el método :meth:`copy` del objeto *attrs*."
 
-#: ../../library/xml.sax.handler.rst:261
+#: ../Doc/library/xml.sax.handler.rst:261
 msgid "Signals the end of an element in non-namespace mode."
-msgstr "非名前空間モードでの要素の終了を通知します。"
+msgstr "Señala el final de un elemento en modo no espacial."
 
-#: ../../library/xml.sax.handler.rst:263
+#: ../Doc/library/xml.sax.handler.rst:263
 msgid ""
 "The *name* parameter contains the name of the element type, just as with "
 "the :meth:`startElement` event."
 msgstr ""
-"*name* 引数は :meth:`startElement` イベントとまったく同じ要素型名を持ちます。"
+"El parámetro *name* contiene el nombre del tipo de elemento, al igual que "
+"con el evento :meth:`startElement`."
 
-#: ../../library/xml.sax.handler.rst:269
+#: ../Doc/library/xml.sax.handler.rst:269
 msgid "Signals the start of an element in namespace mode."
-msgstr "名前空間モードでの要素の開始を通知します。"
+msgstr ""
+"Señala el inicio de un elemento en el modo de Namespace (espacio de nombres)."
 
-#: ../../library/xml.sax.handler.rst:271
+#: ../Doc/library/xml.sax.handler.rst:271
 msgid ""
 "The *name* parameter contains the name of the element type as a ``(uri, "
 "localname)`` tuple, the *qname* parameter contains the raw XML 1.0 name used "
@@ -472,43 +504,42 @@ msgid ""
 "attributes.  To keep a copy of the attributes, use the :meth:`copy` method "
 "of the *attrs* object."
 msgstr ""
-"*name* 引数は要素型の名前を ``(uri, localname)`` というタプルとして持ち、"
-"*qname* 引数は元の文書で使われている生の XML 1.0 名を持ち、要素の属性を持つ :"
-"class:`~xml.sax.xmlreader.AttributesNS` インターフェイス (:ref:`attributes-"
-"ns-objects` を参照) のインスタンスを保持します。\n"
-"名前空間が要素に関連付けられていない場合、*name* の *uri* 要素は ``None`` で"
-"す。\n"
-"*attrs* ととして渡されたオブジェクトはパーサに再利用されるかもしれません。\n"
-"そのため、それへの参照を確保するのは属性のコピーを保持する確実な方法ではあり"
-"ません。\n"
-"属性のコピーを保持するには *attrs* 属性の :meth:`copy` メソッドを使用してくだ"
-"さい。"
+"El parámetro *name* contiene el nombre del tipo de elemento como una tupla "
+"``(uri, localname)``, el parámetro *qname* contiene el nombre XML 1.0 en "
+"bruto usado en el documento fuente, y el parámetro *attrs* contiene una "
+"instancia de la interfaz :class:`~xml.sax.xmlreader.AttributesNS` (ver :ref:"
+"`attributes-ns-objects`) que contiene los atributos del elemento.  Si no hay "
+"ningún Namespace (espacio de nombres) asociado al elemento, el componente "
+"*uri* de *name* será ``Ninguno``.  El objeto pasado como *attrs* puede ser "
+"reutilizado por el analizador; mantener una referencia a él no es una forma "
+"fiable de conservar una copia de los atributos.  Para guardar una copia de "
+"los atributos, usa el método :meth:`copy`` del objeto *attrs*."
 
-#: ../../library/xml.sax.handler.rst:282
+#: ../Doc/library/xml.sax.handler.rst:282
 msgid ""
 "Parsers may set the *qname* parameter to ``None``, unless the "
 "``feature_namespace_prefixes`` feature is activated."
 msgstr ""
-"``feature_namespace_prefixes`` 機能が有効でなければ、パーサで *qname* を "
-"``None`` に設定することも可能です。"
+"Los parsers (analizadores) pueden establecer el parámetro *qname* como "
+"``None``, a menos que se active la función  ``feature_namespace_prefixes``."
 
-#: ../../library/xml.sax.handler.rst:288
+#: ../Doc/library/xml.sax.handler.rst:288
 msgid "Signals the end of an element in namespace mode."
-msgstr "名前空間モードでの要素の終了を通知します。"
+msgstr "Señala el final de un elemento en el modo de namespace."
 
-#: ../../library/xml.sax.handler.rst:290
+#: ../Doc/library/xml.sax.handler.rst:290
 msgid ""
 "The *name* parameter contains the name of the element type, just as with "
 "the :meth:`startElementNS` method, likewise the *qname* parameter."
 msgstr ""
-"*name* 引数は :meth:`startElementNS` イベントとまったく同じ要素型を持ちま"
-"す。 *qname* 引数も同様です。"
+"El parámetro *name* contiene el nombre del tipo de elemento, al igual que "
+"con el método :meth:`startElementNS`, así como el parámetro *qname*."
 
-#: ../../library/xml.sax.handler.rst:296
+#: ../Doc/library/xml.sax.handler.rst:296
 msgid "Receive notification of character data."
-msgstr "文字データの通知を受け取ります。"
+msgstr "Recibir la notificación de los datos de los caracteres."
 
-#: ../../library/xml.sax.handler.rst:298
+#: ../Doc/library/xml.sax.handler.rst:298
 msgid ""
 "The Parser will call this method to report each chunk of character data. SAX "
 "parsers may return all contiguous character data in a single chunk, or they "
@@ -516,20 +547,21 @@ msgid ""
 "single event must come from the same external entity so that the Locator "
 "provides useful information."
 msgstr ""
-"パーサはこのメソッドを呼び出して文字データの各チャンクを報告します。SAX パー"
-"サは一連の文字データを単一のチャンクとして返す場合と複数のチャンクに分けて返"
-"す場合がありますが、ロケータの情報が正しく保たれるように、一つのイベントの文"
-"字データは常に同じ外部エンティティのものでなければなりません。"
+"El Parser (analizador) llamará a este método para informar de cada dato de "
+"carácter. Los parsers (analizadores) SAX pueden retornar todos los datos de "
+"caracteres contiguos en un solo trozo, o pueden dividirlos en varios trozos; "
+"sin embargo, todos los caracteres de un mismo evento deben provenir de la "
+"misma entidad externa para que el Localizador proporcione información útil."
 
-#: ../../library/xml.sax.handler.rst:304
+#: ../Doc/library/xml.sax.handler.rst:304
 msgid ""
 "*content* may be a string or bytes instance; the ``expat`` reader module "
 "always produces strings."
 msgstr ""
-"*content* は文字列、バイト列のどちらでもかまいませんが、``expat`` リーダ・モ"
-"ジュールは常に文字列を生成するようになっています。"
+"**content**  puede ser una cadena o una instancia de bytes; el módulo lector "
+"de \"Expat\" siempre produce cadenas."
 
-#: ../../library/xml.sax.handler.rst:309
+#: ../Doc/library/xml.sax.handler.rst:309
 msgid ""
 "The earlier SAX 1 interface provided by the Python XML Special Interest "
 "Group used a more Java-like interface for this method.  Since most parsers "
@@ -538,67 +570,72 @@ msgid ""
 "interface, use *content* instead of slicing content with the old *offset* "
 "and *length* parameters."
 msgstr ""
-"Python XML SIG が提供していた初期 SAX 1 では、このメソッドにもっと JAVA 風の"
-"インターフェースが用いられています。しかし Python で採用されている大半のパー"
-"サでは古いインターフェースを有効に使うことができないため、よりシンプルなもの"
-"に変更されました。古いコードを新しいインターフェースに変更するには、古い "
-"*offset* と *length* パラメータでスライスせずに、*content* を指定するようにし"
-"てください。"
+"La anterior interfaz SAX 1 proporcionada por el Grupo de Interés Especial de "
+"Python XML utilizaba una interfaz más parecida a Java para este método.  "
+"Dado que la mayoría de los parsers (analizadores) utilizados de Python no "
+"aprovecharon la interfaz más antigua, se eligió la firma más simple para "
+"reemplazarla.  Para convertir el código antiguo en la nueva interfaz, se "
+"utilizó *content* en lugar de cortar el contenido con los antiguos "
+"parámetros *offset* y *length*."
 
-#: ../../library/xml.sax.handler.rst:318
+#: ../Doc/library/xml.sax.handler.rst:318
 msgid "Receive notification of ignorable whitespace in element content."
-msgstr "要素内容中の無視できる空白文字の通知を受け取ります。"
+msgstr ""
+"Recibir notificación de espacios en blanco ignorables en el contenido de los "
+"elementos."
 
-#: ../../library/xml.sax.handler.rst:320
+#: ../Doc/library/xml.sax.handler.rst:320
 msgid ""
 "Validating Parsers must use this method to report each chunk of ignorable "
 "whitespace (see the W3C XML 1.0 recommendation, section 2.10): non-"
 "validating parsers may also use this method if they are capable of parsing "
 "and using content models."
 msgstr ""
-"妥当性検査を行うパーサはこのメソッドを使って、無視できる空白文字 (W3C XML "
-"1.0 勧告の 2.10 節参照) の各チャンクを報告しなければなりません。妥当性検査を"
-"しないパーサもコンテンツモデルの利用とパースが可能な場合、このメソッドを利用"
-"することが可能です。"
+"Los parsers  validadores deben utilizar este método para informar de cada "
+"trozo de espacio en blanco desconocido (véase la recomendación W3C XML 1.0, "
+"sección 2.10): los analizadores no validadores también pueden utilizar este "
+"método si son capaces de analizar y utilizar modelos de contenido."
 
-#: ../../library/xml.sax.handler.rst:325
+#: ../Doc/library/xml.sax.handler.rst:325
 msgid ""
 "SAX parsers may return all contiguous whitespace in a single chunk, or they "
 "may split it into several chunks; however, all of the characters in any "
 "single event must come from the same external entity, so that the Locator "
 "provides useful information."
 msgstr ""
-"SAX パーサは連続する複数の空白文字を単一のチャンクとして返す場合と複数のチャ"
-"ンクに分けて返す場合があります。しかし、ロケータが有用な情報を提供できるよう"
-"に、単一のイベント中のすべての文字は同じ外部エンティティからのものでなければ"
-"なりません。"
+"Los parsers (analizadores) SAX pueden retornar todos los espacios blancos "
+"contiguos en un solo trozo, o pueden dividirlo en varios trozos; sin "
+"embargo, todos los caracteres de un mismo evento deben provenir de la misma "
+"entidad externa, para que el Localizador proporcione información útil."
 
-#: ../../library/xml.sax.handler.rst:333
+#: ../Doc/library/xml.sax.handler.rst:333
 msgid "Receive notification of a processing instruction."
-msgstr "処理命令の通知を受け取ります。"
+msgstr "Recibir la notificación de una instrucción de procesamiento."
 
-#: ../../library/xml.sax.handler.rst:335
+#: ../Doc/library/xml.sax.handler.rst:335
 msgid ""
 "The Parser will invoke this method once for each processing instruction "
 "found: note that processing instructions may occur before or after the main "
 "document element."
 msgstr ""
-"パーサは処理命令が見つかるたびにこのメソッドを呼び出します。処理命令はメイン"
-"のドキュメント要素の前や後にも発生することがあるので注意してください。"
+"El Parser (analizador) invocará este método una vez por cada instrucción de "
+"procesamiento encontrada: nótese que las instrucciones de procesamiento "
+"pueden ocurrir antes o después del elemento principal del documento."
 
-#: ../../library/xml.sax.handler.rst:339
+#: ../Doc/library/xml.sax.handler.rst:339
 msgid ""
 "A SAX parser should never report an XML declaration (XML 1.0, section 2.8) "
 "or a text declaration (XML 1.0, section 4.3.1) using this method."
 msgstr ""
-"SAX パーサがこのメソッドを使って XML 宣言 (XML 1.0 のセクション 2.8) やテキス"
-"ト宣言 (XML 1.0 のセクション 4.3.1) の通知をすることはありません。"
+"Un parser (analizador) SAX nunca debe informar de una declaración XML (XML "
+"1.0, sección 2.8) o una declaración de texto (XML 1.0, sección 4.3.1) "
+"utilizando este método."
 
-#: ../../library/xml.sax.handler.rst:345
+#: ../Doc/library/xml.sax.handler.rst:345
 msgid "Receive notification of a skipped entity."
-msgstr "スキップしたエンティティの通知を受け取ります。"
+msgstr "Recibir la notificación de una entidad salteada."
 
-#: ../../library/xml.sax.handler.rst:347
+#: ../Doc/library/xml.sax.handler.rst:347
 msgid ""
 "The Parser will invoke this method once for each entity skipped. Non-"
 "validating processors may skip entities if they have not seen the "
@@ -607,47 +644,48 @@ msgid ""
 "values of the ``feature_external_ges`` and the ``feature_external_pes`` "
 "properties."
 msgstr ""
-"パーサはエンティティをスキップするたびにこのメソッドを呼び出します。妥当性検"
-"査をしないプロセッサは (外部 DTD サブセットで宣言されているなどの理由で) 宣言"
-"が見当たらないエンティティをスキップします。すべてのプロセッサは "
-"``feature_external_ges`` および ``feature_external_pes`` 属性の値によっては外"
-"部エンティティをスキップすることがあります。"
+"El Parser invocará este método una vez por cada entidad omitida. Los "
+"procesos no validadores pueden omitir entidades si no han visto las "
+"declaraciones (porque, por ejemplo, la entidad fue declarada en un "
+"subconjunto DTD externo). Todos los procesos pueden omitir entidades "
+"externas, dependiendo de los valores de las propiedades "
+"``feature_external_ges`` y ``feature_external_pes``."
 
-#: ../../library/xml.sax.handler.rst:357
+#: ../Doc/library/xml.sax.handler.rst:357
 msgid "DTDHandler Objects"
-msgstr "DTDHandler オブジェクト"
+msgstr "Objetos DTDHandler"
 
-#: ../../library/xml.sax.handler.rst:359
+#: ../Doc/library/xml.sax.handler.rst:359
 msgid ":class:`DTDHandler` instances provide the following methods:"
-msgstr ":class:`DTDHandler` インスタンスは以下のメソッドを提供します:"
+msgstr ":class:`DTDHandler` la instancia provee los siguientes métodos:"
 
-#: ../../library/xml.sax.handler.rst:364
+#: ../Doc/library/xml.sax.handler.rst:364
 msgid "Handle a notation declaration event."
-msgstr "表記宣言イベントの通知を扱います。"
+msgstr "Manejar un evento de declaración de anotación."
 
-#: ../../library/xml.sax.handler.rst:369
+#: ../Doc/library/xml.sax.handler.rst:369
 msgid "Handle an unparsed entity declaration event."
-msgstr "未パースのエンティティ宣言イベントの通知を扱います。"
+msgstr "Manejar un evento de declaración de entidad no preparada."
 
-#: ../../library/xml.sax.handler.rst:375
+#: ../Doc/library/xml.sax.handler.rst:375
 msgid "EntityResolver Objects"
-msgstr "EntityResolver オブジェクト"
+msgstr "Objetos EntityResolver"
 
-#: ../../library/xml.sax.handler.rst:380
+#: ../Doc/library/xml.sax.handler.rst:380
 msgid ""
 "Resolve the system identifier of an entity and return either the system "
 "identifier to read from as a string, or an InputSource to read from. The "
 "default implementation returns *systemId*."
 msgstr ""
-"エンティティのシステム識別子を解決し、文字列として読み込んだシステム識別子あ"
-"るいは InputSource オブジェクトのいずれかを返します。デフォルトの実装では "
-"*systemId* を返します。"
+"Resolver el identificador de sistema de una entidad y retornar ya sea el "
+"identificador de sistema para leerlo como una cadena, o una fuente de "
+"entrada para leerlo. La implementación por defecto retorna *systemId*."
 
-#: ../../library/xml.sax.handler.rst:388
+#: ../Doc/library/xml.sax.handler.rst:388
 msgid "ErrorHandler Objects"
-msgstr "ErrorHandler オブジェクト"
+msgstr "Objetos ErrorHandler"
 
-#: ../../library/xml.sax.handler.rst:390
+#: ../Doc/library/xml.sax.handler.rst:390
 msgid ""
 "Objects with this interface are used to receive error and warning "
 "information from the :class:`~xml.sax.xmlreader.XMLReader`.  If you create "
@@ -659,18 +697,17 @@ msgid ""
 "Errors and warnings may be converted to an exception by raising the passed-"
 "in exception object."
 msgstr ""
-"このインターフェイスのあるオブジェクトを使って :class:`~xml.sax.xmlreader."
-"XMLReader` からエラーと警告情報を受け取ります。\n"
-"このインターフェイスを実装しているオブジェクトを作った場合、それを :class:"
-"`~xml.sax.xmlreader.XMLReader` に登録します。そうすると、パーサはすべての警告"
-"とエラーを報告するためにオブジェクトのメソッドを呼びます。\n"
-"利用可能なエラーには、次の3つのレベルがあります: 警告、(おそらく) 回復可能な"
-"エラー、回復不能なエラーです。\n"
-"全てのメソッドは唯一の引数として :exc:`SAXParseException` を受け取ります。\n"
-"警告とエラーは、渡された例外オブジェクトを送出することにより、例外に変換され"
-"る場合があります。"
+"Los objetos con esta interfaz se usan para recibir información de error y "
+"advertencia del :class:`~xml.sax.xmlreader.XMLReader`.  Si creas un objeto "
+"que implemente esta interfaz, y luego registras el objeto con tu :class:"
+"`~xml.sax.xmlreader.XMLReader`, el parser (analizador) invocará a los "
+"métodos de tu objeto para informar de todas las advertencias y errores. Hay "
+"tres niveles de errores disponibles: advertencias, (posiblemente) errores "
+"recuperables y errores no recuperables.  Todos los métodos toman un :exc:"
+"`SAXParseException` como único parámetro.  Los errores y advertencias pueden "
+"ser convertidos en una excepción lanzando el objeto de excepción pasado."
 
-#: ../../library/xml.sax.handler.rst:403
+#: ../Doc/library/xml.sax.handler.rst:403
 msgid ""
 "Called when the parser encounters a recoverable error.  If this method does "
 "not raise an exception, parsing may continue, but further document "
@@ -678,40 +715,43 @@ msgid ""
 "to continue may allow additional errors to be discovered in the input "
 "document."
 msgstr ""
-"パーサが回復可能なエラーに遭遇すると呼び出されます。このメソッドが例外を送出"
-"しない場合パースは継続されますが、アプリケーションは更なるドキュメント情報を"
-"期待すべきではありません。パーサの処理を継続を認めることで入力ドキュメント内"
-"の他のエラーを見つけることができます。"
+"Invocación cuando el parser (analizador) encuentra un error recuperable.  Si "
+"este método no lanza una excepción, el análisis sintáctico puede continuar, "
+"pero la aplicación no debe esperar más información del documento.  Permitir "
+"que el parser (analizador) continúe puede permitir que se descubran errores "
+"adicionales en el documento de entrada."
 
-#: ../../library/xml.sax.handler.rst:411
+#: ../Doc/library/xml.sax.handler.rst:411
 msgid ""
 "Called when the parser encounters an error it cannot recover from; parsing "
 "is expected to terminate when this method returns."
 msgstr ""
-"パーサが回復不能なエラーに遭遇すると呼び出されます。このメソッドが return し"
-"たとき、パースの停止が求められています。"
+"Invocación cuando el parser (analizador) encuentra un error del que no puede "
+"recuperarse; se espera que el análisis sintáctico termine cuando vuelva este "
+"método."
 
-#: ../../library/xml.sax.handler.rst:417
+#: ../Doc/library/xml.sax.handler.rst:417
 msgid ""
 "Called when the parser presents minor warning information to the "
 "application. Parsing is expected to continue when this method returns, and "
 "document information will continue to be passed to the application. Raising "
 "an exception in this method will cause parsing to end."
 msgstr ""
-"パーサが軽微な警告情報をアプリケーションに通知するときに呼び出されます。この"
-"メソッドが return したときはパースの継続が求められ、ドキュメント情報はアプリ"
-"ケーションに送り続けられます。このメソッドでの例外の送出はパースを終了しま"
-"す。"
+"Invocación cuando el parser (analizador) presenta información de advertencia "
+"menor a la aplicación. Se espera que el análisis sintáctico continúe cuando "
+"vuelva este método, y la información del documento seguirá pasando a la "
+"aplicación. Si se lanza una excepción con este método, el análisis "
+"sintáctico terminará."
 
-#: ../../library/xml.sax.handler.rst:426
+#: ../Doc/library/xml.sax.handler.rst:426
 msgid "LexicalHandler Objects"
-msgstr ""
+msgstr "Objetos DTDHandler"
 
-#: ../../library/xml.sax.handler.rst:427
+#: ../Doc/library/xml.sax.handler.rst:427
 msgid "Optional SAX2 handler for lexical events."
-msgstr ""
+msgstr "Handler (manipulador) de extensión opcional para eventos léxicos SAX2."
 
-#: ../../library/xml.sax.handler.rst:429
+#: ../Doc/library/xml.sax.handler.rst:429
 msgid ""
 "This handler is used to obtain lexical information about an XML document. "
 "Lexical information includes information describing the document encoding "
@@ -719,39 +759,54 @@ msgid ""
 "boundaries for the DTD and for any CDATA sections. The lexical handlers are "
 "used in the same manner as content handlers."
 msgstr ""
+"Este handler se usa para obtener información léxica de un documento XML. La "
+"información léxica incluye información que describe la codificación del "
+"documento usado u los comentarios XML embebidos en el documento, como "
+"también una sección para el DTD y para cada sección CDTA. Estos "
+"manipuladores léxicos son usado de la misma forma que los manipuladores de "
+"contenido (content handlers)."
 
-#: ../../library/xml.sax.handler.rst:435
+#: ../Doc/library/xml.sax.handler.rst:435
 msgid ""
 "Set the LexicalHandler of an XMLReader by using the setProperty method with "
 "the property identifier ``'http://xml.org/sax/properties/lexical-handler'``."
 msgstr ""
+"Configurar el LexicalHandlerde un XMLReader usando el método setProperty con "
+"la propiedad identificadora ``'http://xml.org/sax/properties/lexical-"
+"handler'``."
 
-#: ../../library/xml.sax.handler.rst:442
+#: ../Doc/library/xml.sax.handler.rst:442
 msgid ""
 "Reports a comment anywhere in the document (including the DTD and outside "
 "the document element)."
 msgstr ""
+"Reporta un comentario en cualquier lugar en el documento (incluyendo el DTD "
+"y elementos por fuera del documento)."
 
-#: ../../library/xml.sax.handler.rst:447
+#: ../Doc/library/xml.sax.handler.rst:447
 msgid ""
 "Reports the start of the DTD declarations if the document has an associated "
 "DTD."
 msgstr ""
+"Reporta el estado de las declaraciones del DTD en caso de tenga asociado un "
+"DTD."
 
-#: ../../library/xml.sax.handler.rst:452
+#: ../Doc/library/xml.sax.handler.rst:452
 msgid "Reports the end of DTD declaration."
-msgstr ""
+msgstr "Reporta el fin de la declaración del DTD."
 
-#: ../../library/xml.sax.handler.rst:456
+#: ../Doc/library/xml.sax.handler.rst:456
 msgid "Reports the start of a CDATA marked section."
-msgstr ""
+msgstr "Reporta el inicio de la sección CDATA marcada."
 
-#: ../../library/xml.sax.handler.rst:458
+#: ../Doc/library/xml.sax.handler.rst:458
 msgid ""
 "The contents of the CDATA marked section will be reported through the "
 "characters handler."
 msgstr ""
+"El contenido de la sección marcada del CDATA se reportará a través de "
+"manipulador de caracteres."
 
-#: ../../library/xml.sax.handler.rst:463
+#: ../Doc/library/xml.sax.handler.rst:463
 msgid "Reports the end of a CDATA marked section."
-msgstr ""
+msgstr "Reporta el final de la sección marcada del CDATA."

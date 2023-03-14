@@ -1,43 +1,41 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:11+0000\n"
-"Last-Translator: Osamu NAKAMURA, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-01-15 09:58+0100\n"
+"Last-Translator: Juan Biondi <juanernestobiondi@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/posix.rst:2
+#: ../Doc/library/posix.rst:2
 msgid ":mod:`posix` --- The most common POSIX system calls"
-msgstr ":mod:`posix` --- 最も一般的な POSIX システムコール群"
+msgstr ":mod:`posix` --- Las llamadas más comunes al sistema POSIX"
 
-#: ../../library/posix.rst:10
+#: ../Doc/library/posix.rst:10
 msgid ""
 "This module provides access to operating system functionality that is "
 "standardized by the C Standard and the POSIX standard (a thinly disguised "
 "Unix interface)."
 msgstr ""
-"このモジュールはオペレーティングシステムの機能のうち、C 言語標準および  "
-"(Unix インターフェースをほんの少し隠蔽した) POSIX 標準で標準化されている機能"
-"に対するアクセス機構を提供します。"
+"Este módulo proporciona acceso a la funcionalidad del sistema operativo que "
+"está estandarizada por el estándar C y el estándar POSIX (una interfaz Unix "
+"finamente disfrazada)."
 
-#: ../../library/posix.rst:16
+#: ../Doc/library/posix.rst:16
 msgid ""
 "**Do not import this module directly.**  Instead, import the module :mod:"
 "`os`, which provides a *portable* version of this interface.  On Unix, the :"
@@ -49,29 +47,31 @@ msgid ""
 "such as automatically calling :func:`~os.putenv` when an entry in ``os."
 "environ`` is changed."
 msgstr ""
-"**このモジュールを直接インポートしてはいけません。** その代わりに、このイン"
-"ターフェースの *ポータブル* 版である :mod:`os` モジュールをインポートしてくだ"
-"さい。 Unix では、:mod:`os` モジュールは :mod:`posix` インターフェースのスー"
-"パーセットを提供しています。非 Unix オペレーティングシステムでは、 :mod:"
-"`posix` モジュールは利用できませんが、その一部分は :mod:`os` インターフェース"
-"を通して常に利用可能です。一度 :mod:`os` をインポートし :mod:`posix` の代わり"
-"にそれを使えば、パフォーマンス上の代償は *ありません* 。加えて :mod:`os` "
-"は、 ``os.environ`` の要素が変更されたときに :func:`~os.putenv` を呼び出すな"
-"どの追加の機能も提供します。"
+"**No importe este módulo directamente.** En su lugar, importe el módulo :mod:"
+"`os`, que proporciona una versión *portable* de esta interfaz.  En Unix, el "
+"módulo :mod:`os` proporciona un superconjunto de la interfaz :mod:`posix`.  "
+"En sistemas operativos que no son Unix, el módulo :mod:`posix` no está "
+"disponible, pero un subconjunto siempre está disponible a través de la "
+"interfaz :mod:`os`.  Una vez que se importa :mod:`os`, *no* hay penalización "
+"de rendimiento en su uso en lugar de :mod:`posix`.  Además, :mod:`os` "
+"proporciona algunas funciones adicionales, como llamar automáticamente a :"
+"func:`~os.putenv` cuando se cambia una entrada en ``os.environ``."
 
-#: ../../library/posix.rst:25
+#: ../Doc/library/posix.rst:25
 msgid ""
 "Errors are reported as exceptions; the usual exceptions are given for type "
 "errors, while errors reported by the system calls raise :exc:`OSError`."
 msgstr ""
-"エラーは例外として報告されます; よくある例外は型エラーです。一方、システム"
-"コールから報告されたエラーは以下に述べるように :exc:`OSError` を送出します。"
+"Los errores se notifican como excepciones; las excepciones habituales se "
+"proporcionan para los errores de tipo, mientras que los errores notificados "
+"por las llamadas del sistema lanzan :exc:`OSError`."
 
-#: ../../library/posix.rst:32
+#: ../Doc/library/posix.rst:32
 msgid "Large File Support"
-msgstr "ラージファイルのサポート"
+msgstr "Soporte de archivos grandes"
 
-#: ../../library/posix.rst:40
+#: ../Doc/library/posix.rst:40
+#, fuzzy
 msgid ""
 "Several operating systems (including AIX and Solaris) provide support for "
 "files that are larger than 2 GiB from a C programming model where :c:expr:"
@@ -79,8 +79,14 @@ msgid ""
 "by defining the relevant size and offset types as 64-bit values. Such files "
 "are sometimes referred to as :dfn:`large files`."
 msgstr ""
+"Varios sistemas operativos (incluidos AIX, HP-UX y Solaris) brindan soporte "
+"para archivos de más de 2 GiB de un modelo de programación C donde :c:type:"
+"`int` y :c:type:`long` son valores de 32 bits. Por lo general, esto se logra "
+"definiendo el tamaño relevante y los tipos de desplazamiento como valores de "
+"64 bits. Estos archivos a veces se denominan: dfn: `archivos grandes`."
 
-#: ../../library/posix.rst:46
+#: ../Doc/library/posix.rst:46
+#, fuzzy
 msgid ""
 "Large file support is enabled in Python when the size of an :c:type:`off_t` "
 "is larger than a :c:expr:`long` and the :c:expr:`long long` is at least as "
@@ -88,37 +94,45 @@ msgid ""
 "Python with certain compiler flags to enable this mode. For example, with "
 "Solaris 2.6 and 2.7 you need to do something like::"
 msgstr ""
+"La compatibilidad con archivos grandes está habilitada en Python cuando el "
+"tamaño de un :c:type:`off_t` es mayor que un :c:type:`long` y el :c:type:"
+"`long long` es al menos tan grande como un :c:type:`off_t`. Puede ser "
+"necesario configurar y compilar Python con ciertos indicadores del "
+"compilador para habilitar este modo. Por ejemplo, con Solaris 2.6 y 2.7 "
+"necesita hacer algo como:"
 
-#: ../../library/posix.rst:56
+#: ../Doc/library/posix.rst:56
 msgid "On large-file-capable Linux systems, this might work::"
 msgstr ""
-"ラージファイル対応の Linux システムでは、以下のようにすれば良いでしょう::"
+"En sistemas Linux con capacidad para archivos grandes, esto podría "
+"funcionar::"
 
-#: ../../library/posix.rst:65
+#: ../Doc/library/posix.rst:65
 msgid "Notable Module Contents"
-msgstr "注目すべきモジュールの内容"
+msgstr "Contenido notable del módulo"
 
-#: ../../library/posix.rst:67
+#: ../Doc/library/posix.rst:67
 msgid ""
 "In addition to many functions described in the :mod:`os` module "
 "documentation, :mod:`posix` defines the following data item:"
 msgstr ""
-":mod:`os` モジュールのドキュメントで説明されている多数の関数に加え、 :mod:"
-"`posix` では以下のデータ項目を定義しています:"
+"Además de muchas funciones descritas en la documentación del módulo :mod:"
+"`os`, :mod:`posix` define el siguiente elemento de datos:"
 
-#: ../../library/posix.rst:72
+#: ../Doc/library/posix.rst:72
 msgid ""
 "A dictionary representing the string environment at the time the interpreter "
 "was started. Keys and values are bytes on Unix and str on Windows. For "
 "example, ``environ[b'HOME']`` (``environ['HOME']`` on Windows) is the "
 "pathname of your home directory, equivalent to ``getenv(\"HOME\")`` in C."
 msgstr ""
-"インタプリタが起動したときの環境を表す文字列辞書です。キーと値は Unix ではバ"
-"イト列、 Windows では文字列です。例えば、 ``environ[b'HOME']`` (Windows では "
-"``environ['HOME']``) はホームディレクトリのパス名で、 C の "
-"``getenv(\"HOME\")`` と同じ値です。"
+"Diccionario que representa el entorno de cadena en el momento en que se "
+"inició el intérprete. Las claves y los valores son bytes en Unix y str en "
+"Windows. Por ejemplo, ``environ[b'HOME']`` (``environ['HOME']`` en Windows) "
+"es el nombre de ruta de acceso de su directorio principal, equivalente a "
+"``getenv(\"HOME\")`` en C."
 
-#: ../../library/posix.rst:77
+#: ../Doc/library/posix.rst:77
 msgid ""
 "Modifying this dictionary does not affect the string environment passed on "
 "by :func:`~os.execv`, :func:`~os.popen` or :func:`~os.system`; if you need "
@@ -126,17 +140,17 @@ msgid ""
 "variable assignments and export statements to the command string for :func:"
 "`~os.system` or :func:`~os.popen`."
 msgstr ""
-"この辞書を編集しても、 :func:`~os.execv` 、 :func:`~os.popen` 、 :func:`~os."
-"system` で渡された環境変数文字列には影響は与えません; 環境変数を変更したい場"
-"合は、 ``environ`` を :func:`~os.execve` に渡すか、変数への代入文と export 文"
-"を :func:`~os.system` や :func:`~os.popen` に渡すコマンド文字列に追加してくだ"
-"さい。"
+"La modificación de este diccionario no afecta al entorno de cadena que "
+"transmite :func:`~os.execv`, :func:`~os.popen` o :func:`~os.system`; si "
+"necesita cambiar el entorno, pase ``environ`` a :func:`~os.execve` o agregue "
+"asignaciones variables y declaraciones de exportación a la cadena de "
+"comandos para :func:`~os.system` o :func:`~os.popen`."
 
-#: ../../library/posix.rst:83
+#: ../Doc/library/posix.rst:83
 msgid "On Unix, keys and values are bytes."
-msgstr "Unix ではキーと値はバイト列になりました。"
+msgstr "En Unix, las claves y los valores son bytes."
 
-#: ../../library/posix.rst:88
+#: ../Doc/library/posix.rst:88
 msgid ""
 "The :mod:`os` module provides an alternate implementation of ``environ`` "
 "which updates the environment on modification. Note also that updating :data:"
@@ -144,8 +158,8 @@ msgid ""
 "module version of this is recommended over direct access to the :mod:`posix` "
 "module."
 msgstr ""
-":mod:`os` モジュールでは、もう一つの :data:`os.environ` 実装を提供しており、"
-"環境変数が変更された場合、その内容を更新するようになっています。 ``environ`` "
-"を更新した場合、この辞書は古い内容を表していることになってしまうので、このこ"
-"とにも注意してください。 :mod:`posix` モジュール版を直接アクセスするより"
-"も、 :mod:`os` モジュール版を使う方が推奨されています。"
+"El módulo :mod:`os` proporciona una implementación alternativa de "
+"``environ`` que actualiza el entorno en la modificación. Tenga en cuenta "
+"también que la actualización :data:`os.environ` hará que este diccionario "
+"sea obsoleto. El uso de la versión del módulo :mod:`os` de esto se "
+"recomienda sobre el acceso directo al módulo :mod:`posix`."

@@ -1,62 +1,57 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
+# Ignasi Fosch <natx@y10k.ws>, 2020.
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:17+0000\n"
-"Last-Translator: Osamu NAKAMURA, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-11-26 19:11-0300\n"
+"Last-Translator: Sofía Denner <sofi.denner@gmail.com>\n"
+"Language-Team: Spanish - Spain <natx@y10k.ws>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.2\n"
 
-#: ../../library/wsgiref.rst:2
+#: ../Doc/library/wsgiref.rst:2
 msgid ":mod:`wsgiref` --- WSGI Utilities and Reference Implementation"
-msgstr ":mod:`wsgiref` --- WSGI ユーティリティとリファレンス実装"
+msgstr ":mod:`wsgiref` --- Utilidades WSGI e implementación de referencia"
 
-#: ../../library/wsgiref.rst:10
-msgid "**Source code:** :source:`Lib/wsgiref`"
-msgstr ""
-
-#: ../../library/wsgiref.rst:14
+#: ../Doc/library/wsgiref.rst:12
 msgid ""
 "The Web Server Gateway Interface (WSGI) is a standard interface between web "
 "server software and web applications written in Python. Having a standard "
 "interface makes it easy to use an application that supports WSGI with a "
 "number of different web servers."
 msgstr ""
-"Web Server Gateway Interface (WSGI) は、Web サーバソフトウェアと Python で記"
-"述された Web アプリケーションとの標準インターフェースです。標準インターフェー"
-"スを持つことで、WSGI をサポートするアプリケーションを幾つもの異なる Web サー"
-"バで使うことが容易になります。"
+"La Interfaz de Pasarela del Servidor Web, o *Web Server Gateway Interface* "
+"en inglés (WSGI), es una interfaz estándar entre el servidor web y "
+"aplicaciones web escritas en Python. Con una interfaz estándar es más "
+"sencillo usar una aplicación que soporte WSGI con diferentes servidores web."
 
-#: ../../library/wsgiref.rst:19
+#: ../Doc/library/wsgiref.rst:17
 msgid ""
 "Only authors of web servers and programming frameworks need to know every "
 "detail and corner case of the WSGI design.  You don't need to understand "
 "every detail of WSGI just to install a WSGI application or to write a web "
 "application using an existing framework."
 msgstr ""
-"Web サーバとプログラミングフレームワークの作者だけが、WSGI デザインのあらゆる"
-"細部や特例などを知る必要があります。WSGI アプリケーションをインストールした"
-"り、既存のフレームワークを使ったアプリケーションを記述するだけの皆さんは、す"
-"べてについて理解する必要はありません。"
+"Sólo los autores de servidores y frameworks web necesitan conocer cada "
+"detalle y caso límite del diseño WSGI. No es necesario conocer cada detalle "
+"de WSGI sólo para instalar o escribir una aplicación web usando un "
+"*framework* existente."
 
-#: ../../library/wsgiref.rst:24
+#: ../Doc/library/wsgiref.rst:22
 msgid ""
 ":mod:`wsgiref` is a reference implementation of the WSGI specification that "
 "can be used to add WSGI support to a web server or framework.  It provides "
@@ -66,20 +61,28 @@ msgid ""
 "that checks WSGI servers and applications for conformance to the WSGI "
 "specification (:pep:`3333`)."
 msgstr ""
+":mod:`wsgiref` es una implementación de referencia de la especificación WSGI "
+"que se puede usar para añadir soporte WSGI a un servidor o *framework* web. "
+"Este módulo provee utilidades para manipular las variables de entorno WSGI y "
+"las cabeceras de respuesta, clases base para implementar servidores WSGI, un "
+"servidor HTTP de demostración que sirve aplicaciones WSGI, tipos para "
+"validadores estáticos de tipos, y una herramienta de validación que "
+"comprueba la compatibilidad de servidores y aplicaciones WSGI en base a la "
+"especificación :pep:`3333`."
 
-#: ../../library/wsgiref.rst:32
+#: ../Doc/library/wsgiref.rst:30
 msgid ""
 "See `wsgi.readthedocs.io <https://wsgi.readthedocs.io/>`_ for more "
 "information about WSGI, and links to tutorials and other resources."
 msgstr ""
-"`wsgi.readthedocs.io <https://wsgi.readthedocs.io/>`_ に、WSGIに関するさらな"
-"る情報と、チュートリアルやその他のリソースへのリンクがあります。"
+"Vea `wsgi.readthedocs.io <https://wsgi.readthedocs.io/>`_ para más "
+"información sobre WSGI, así como enlaces a tutoriales y otros recursos."
 
-#: ../../library/wsgiref.rst:39
+#: ../Doc/library/wsgiref.rst:37
 msgid ":mod:`wsgiref.util` -- WSGI environment utilities"
-msgstr ":mod:`wsgiref.util` -- WSGI 環境のユーティリティ"
+msgstr ":mod:`wsgiref.util` -- Utilidades de entorno WSGI"
 
-#: ../../library/wsgiref.rst:45
+#: ../Doc/library/wsgiref.rst:43
 msgid ""
 "This module provides a variety of utility functions for working with WSGI "
 "environments.  A WSGI environment is a dictionary containing HTTP request "
@@ -88,18 +91,25 @@ msgid ""
 "please see :pep:`3333` for a detailed specification and :data:`~wsgiref."
 "types.WSGIEnvironment` for a type alias that can be used in type annotations."
 msgstr ""
+"Este módulo ofrece una variedad de funciones útiles para trabajar con "
+"entornos WSGI. Un entorno WSGI es un diccionario que contiene variables de "
+"la petición HTTP, descrito en :pep:`3333`. Todas las funciones que aceptan "
+"un parámetro *environ* esperan un diccionario compatible con WSGI. Por "
+"favor, consulte la especificación detallada en :pep:`3333`, y los alias de "
+"tipos que pueden usarse en las anotaciones de tipo en :data:`~wsgiref.types."
+"WSGIEnvironment`."
 
-#: ../../library/wsgiref.rst:56
+#: ../Doc/library/wsgiref.rst:54
 msgid ""
 "Return a guess for whether ``wsgi.url_scheme`` should be \"http\" or "
 "\"https\", by checking for a ``HTTPS`` environment variable in the *environ* "
 "dictionary.  The return value is a string."
 msgstr ""
-"*environ* 辞書の ``HTTPS`` 環境変数を調べることで ``wsgi.url_scheme`` が "
-"\"http\" か \"https\" のどちらであるべきか推測し、その結果を返します。戻り値"
-"は文字列です。"
+"Retorna una deducción del valor para ``wsgi.url_scheme`` que debería ser "
+"\"http\" o \"https\", buscando la variable de entorno ``HTTPS`` en el "
+"diccionario *environ*. El valor de retorno es una cadena."
 
-#: ../../library/wsgiref.rst:60
+#: ../Doc/library/wsgiref.rst:58
 msgid ""
 "This function is useful when creating a gateway that wraps CGI or a CGI-like "
 "protocol such as FastCGI.  Typically, servers providing such protocols will "
@@ -107,52 +117,51 @@ msgid ""
 "a request is received via SSL.  So, this function returns \"https\" if such "
 "a value is found, and \"http\" otherwise."
 msgstr ""
-"この関数は、CGI や FastCGI のような CGI に似たプロトコルをラップするゲート"
-"ウェイを作成する場合に便利です。典型的には、それらのプロトコルを提供するサー"
-"バが SSL 経由でリクエストを受け取った場合には ``HTTPS`` 変数に値 \"1\", "
-"\"yes\" または \"on\" を持つでしょう。そのため、この関数はそのような値が見つ"
-"かった場合には \"https\" を返し、そうでなければ \"http\" を返します。"
+"Esta función es útil al crear un *gateway* que envuelve CGI o un protocolo "
+"similar como FastCGI. Habitualmente, los servidores que ofrecen estos "
+"protocolos incluyen una variable ``HTTPS`` con el valor \"1\", \"yes\", o "
+"\"on\" cuando reciben una petición vía SSL. Así, esta función retorna "
+"\"https\" si encuentra ese valor, o \"http\", en caso contrario."
 
-#: ../../library/wsgiref.rst:69
+#: ../Doc/library/wsgiref.rst:67
 msgid ""
 "Return the full request URI, optionally including the query string, using "
 "the algorithm found in the \"URL Reconstruction\" section of :pep:`3333`.  "
 "If *include_query* is false, the query string is not included in the "
 "resulting URI."
 msgstr ""
-"リクエスト URI 全体 (オプションでクエリ文字列を含む) を、 :pep:`3333` の "
-"\"URL 再構築(URL Reconstruction)\" にあるアルゴリズムを使って返します。 "
-"*include_query* が false の場合、クエリ文字列は結果となる文字列には含まれませ"
-"ん。"
+"Retorna la URI completa de la petición, opcionalmente la cadena de consulta, "
+"usando el algoritmo encontrado en la sección \"URL Reconstruction\" de :pep:"
+"`3333`. Si *include_query* es falso, la cadena de consulta no se incluye en "
+"la URI resultante."
 
-#: ../../library/wsgiref.rst:76
+#: ../Doc/library/wsgiref.rst:74
 msgid ""
 "Similar to :func:`request_uri`, except that the ``PATH_INFO`` and "
 "``QUERY_STRING`` variables are ignored.  The result is the base URI of the "
 "application object addressed by the request."
 msgstr ""
-"``PATH_INFO`` と ``QUERY_STRING`` 変数が無視されることを除けば :func:"
-"`request_uri` に似ています。結果はリクエストによって指定されたアプリケーショ"
-"ンオブジェクトのベース URI です。"
+"Similar a :func:`request_uri` excepto que se ignoran las variables "
+"``PATH_INFO`` y ``QUERY_STRING``. El resultado es la URI base del objeto de "
+"aplicación indicado en la petición."
 
-#: ../../library/wsgiref.rst:83
+#: ../Doc/library/wsgiref.rst:81
 msgid ""
 "Shift a single name from ``PATH_INFO`` to ``SCRIPT_NAME`` and return the "
 "name. The *environ* dictionary is *modified* in-place; use a copy if you "
 "need to keep the original ``PATH_INFO`` or ``SCRIPT_NAME`` intact."
 msgstr ""
-"``PATH_INFO`` から ``SCRIPT_NAME`` に一つの名前をシフトしてその名前を返しま"
-"す。*environ* 辞書は *変更されます* \\。``PATH_INFO`` や ``SCRIPT_NAME`` のオ"
-"リジナルをそのまま残したい場合にはコピーを使ってください。"
+"Desplaza un solo nombre de ``PATH_INFO`` a ``SCRIPT_NAME`` y retorna el "
+"nombre. Se modifica el diccionario *environ*, por lo que se deberá usar una "
+"copia si se quiere mantener ``PATH_INFO`` o ``SCRIPT_NAME`` intactos."
 
-#: ../../library/wsgiref.rst:87
+#: ../Doc/library/wsgiref.rst:85
 msgid ""
 "If there are no remaining path segments in ``PATH_INFO``, ``None`` is "
 "returned."
-msgstr ""
-"``PATH_INFO`` にパスセグメントが何も残っていなければ、``None`` が返されます。"
+msgstr "Si no quedan segmentos en ``PATH_INFO``, retornará ``None``."
 
-#: ../../library/wsgiref.rst:89
+#: ../Doc/library/wsgiref.rst:87
 msgid ""
 "Typically, this routine is used to process each portion of a request URI "
 "path, for example to treat the path as a series of dictionary keys. This "
@@ -165,17 +174,17 @@ msgid ""
 "bar``.  That is, ``SCRIPT_NAME`` will change from ``/foo`` to ``/foo/bar``, "
 "and ``PATH_INFO`` will change from ``/bar/baz`` to ``/baz``."
 msgstr ""
-"典型的なこのルーチンの使い方はリクエスト URI のそれぞれの要素の処理で、例えば"
-"パスを一連の辞書のキーとして取り扱う場合です。このルーチンは、渡された環境"
-"を、ターゲット URL で示される別の WSGI アプリケーションの呼び出しに合うように"
-"調整します。例えば、 ``/foo`` に WSGI アプリケーションがあったとして、そして"
-"リクエスト URL パスが ``/foo/bar/baz`` で、 ``/foo`` の WSGI アプリケーション"
-"が :func:`shift_path_info` を呼んだ場合、これは \"bar\" 文字列を受け取り、 "
-"environ は ``/foo/bar`` の WSGI アプリケーションへの受け渡しに適するように更"
-"新されます。つまり、 ``SCRIPT_NAME`` は ``/foo`` から ``/foo/bar`` に変わっ"
-"て、 ``PATH_INFO`` は ``/bar/baz`` から ``/baz`` に変化するのです。"
+"Habitualmente, esta rutina se usa para procesar cada porción de la ruta del "
+"URI de la petición, por ejemplo, para usar la ruta como una serie de claves "
+"en un diccionario. Esta rutina modifica el entorno pasado para permitir "
+"invocar otra aplicación WSGI que esté localizada en la URI objetivo. Por "
+"ejemplo, si hay una aplicación WSGI en ``/foo``, y la ruta es ``/foo/bar/"
+"baz``, y la aplicación WSGI en ``/foo`` llama a :func:`shift_path_info`, "
+"recibirá la cadena \"bar\", y se actualizará el entorno para pasarlo a una "
+"aplicación WSGI en ``/foo/bar``. Es decir, ``SCRIPT_NAME`` cambiará de ``/"
+"foo`` a ``/foo/bar`` y ``PATH_INFO`` cambiará de ``/bar/baz`` a ``/baz``."
 
-#: ../../library/wsgiref.rst:100
+#: ../Doc/library/wsgiref.rst:98
 msgid ""
 "When ``PATH_INFO`` is just a \"/\", this routine returns an empty string and "
 "appends a trailing slash to ``SCRIPT_NAME``, even though empty path segments "
@@ -184,18 +193,20 @@ msgid ""
 "difference between URIs ending in ``/x`` from ones ending in ``/x/`` when "
 "using this routine to do object traversal."
 msgstr ""
-"``PATH_INFO`` が単に \"/\" の場合、このルーチンは空の文字列を返し、"
-"``SCRIPT_NAME`` の末尾にスラッシュを加えます、これはたとえ空のパスセグメント"
-"が通常は無視され、そして ``SCRIPT_NAME`` は通常スラッシュで終わる事が無かった"
-"としてもです。これは意図的な振る舞いで、このルーチンでオブジェクト巡回"
-"(object traversal) をした場合に ``/x`` で終わる URI と ``/x/`` で終わるものを"
-"アプリケーションが識別できることを保証するためのものです。"
+"Cuando ``PATH_INFO`` es únicamente \"/\", esta rutina retornará una cadena "
+"vacía y añadirá una barra final a ``SCRIPT_NAME``, incluso cuando "
+"normalmente los segmentos de ruta vacíos se ignoran y ``SCRIPT_NAME`` no "
+"acaba con una barra. Este comportamiento es intencional, para asegurar que "
+"una aplicación puede diferenciar entre URIs que acaban en ``/x`` de las que "
+"acaban en ``/x/`` cuando usan esta rutina para atravesar objetos."
 
-#: ../../library/wsgiref.rst:110
+#: ../Doc/library/wsgiref.rst:108
 msgid "Update *environ* with trivial defaults for testing purposes."
-msgstr "*environ* をテスト用に自明なデフォルト値で更新します。"
+msgstr ""
+"Actualiza *environ* con valores por defecto triviales con propósito de "
+"prueba."
 
-#: ../../library/wsgiref.rst:112
+#: ../Doc/library/wsgiref.rst:110
 msgid ""
 "This routine adds various parameters required for WSGI, including "
 "``HTTP_HOST``, ``SERVER_NAME``, ``SERVER_PORT``, ``REQUEST_METHOD``, "
@@ -203,45 +214,44 @@ msgid ""
 "*`` variables.  It only supplies default values, and does not replace any "
 "existing settings for these variables."
 msgstr ""
-"このルーチンは WSGI に必要な様々なパラメータを追加します。そのようなパラメー"
-"タとして ``HTTP_HOST`` 、 ``SERVER_NAME`` 、 ``SERVER_PORT`` 、 "
-"``REQUEST_METHOD`` 、 ``SCRIPT_NAME`` 、 ``PATH_INFO`` 、そして :pep:`3333` "
-"で定義されている ``wsgi.*`` 変数群が含まれます。このルーチンはデフォルト値を"
-"提供するだけで、これらの変数の既存設定は一切置きかえません。"
+"Esta rutina añade varios parámetros requeridos por WSGI, incluyendo "
+"``HTTP_POST``, ``SERVER_NAME``, ``SERVER_PORT``, ``REQUEST_METHOD``, "
+"``SCRIPT_NAME``, ``PATH_INFO``, y todas las variables ``wsgi.*`` definidas "
+"en :pep:`3333`. Sólo ofrece valores por defecto y no reemplaza ningún valor "
+"existente en esas variables."
 
-#: ../../library/wsgiref.rst:118
+#: ../Doc/library/wsgiref.rst:116
 msgid ""
 "This routine is intended to make it easier for unit tests of WSGI servers "
 "and applications to set up dummy environments.  It should NOT be used by "
 "actual WSGI servers or applications, since the data is fake!"
 msgstr ""
-"このルーチンは、ダミー環境をセットアップすることによって WSGI サーバとアプリ"
-"ケーションのユニットテストを容易にすることを意図しています。これは実際の "
-"WSGI サーバやアプリケーションで使うべきではありません。なぜならこのデータは偽"
-"物なのです！"
+"Esta rutina pretende facilitar la preparación de entornos ficticios para "
+"pruebas unitarias de servidores y aplicaciones WSGI. NO debería usarse en "
+"servidores y aplicaciones WSGI reales, ya que los valores son ficticios!"
 
-#: ../../library/wsgiref.rst:122 ../../library/wsgiref.rst:170
-#: ../../library/wsgiref.rst:292 ../../library/wsgiref.rst:425
+#: ../Doc/library/wsgiref.rst:120 ../Doc/library/wsgiref.rst:168
+#: ../Doc/library/wsgiref.rst:290 ../Doc/library/wsgiref.rst:423
 msgid "Example usage::"
-msgstr "使用例::"
+msgstr "Ejemplo de uso::"
 
-#: ../../library/wsgiref.rst:146
+#: ../Doc/library/wsgiref.rst:144
 msgid ""
 "In addition to the environment functions above, the :mod:`wsgiref.util` "
 "module also provides these miscellaneous utilities:"
 msgstr ""
-"上記の環境用関数に加えて、 :mod:`wsgiref.util` モジュールも以下のようなその他"
-"のユーティリティを提供します:"
+"Además de las funciones de entorno previas, el módulo :mod:`wsgiref.util` "
+"también ofrece las siguientes utilidades varias:"
 
-#: ../../library/wsgiref.rst:152
+#: ../Doc/library/wsgiref.rst:150
 msgid ""
 "Return ``True`` if 'header_name' is an HTTP/1.1 \"Hop-by-Hop\" header, as "
 "defined by :rfc:`2616`."
 msgstr ""
-"'header_name' が :rfc:`2616` で定義されている HTTP/1.1 の \"Hop-by-Hop\" ヘッ"
-"ダの場合に ``True`` を返します。"
+"Retorna ``True`` si 'header_name' es una cabecera \"Hop-by-Hop\" HTTP/1.1, "
+"como se define en :rfc:`2616`."
 
-#: ../../library/wsgiref.rst:158
+#: ../Doc/library/wsgiref.rst:156
 msgid ""
 "A concrete implementation of the :class:`wsgiref.types.FileWrapper` protocol "
 "used to convert a file-like object to an :term:`iterator`. The resulting "
@@ -250,44 +260,54 @@ msgid ""
 "object's :meth:`read` method to obtain bytestrings to yield.  When :meth:"
 "`read` returns an empty bytestring, iteration is ended and is not resumable."
 msgstr ""
+"Una implementación concreta del protocolo :class:`wsgiref.types.FileWrapper` "
+"usado para convertir objetos de tipo archivo en un :term:`iterator`. Los "
+"objetos resultantes son :term:`iterable`\\ s. A medida que se itera sobre el "
+"objeto, el parámetro opcional *blksize* se pasará repetidamente al método :"
+"meth:`read` del objeto archivo para obtener cadenas de bytes para entregar. "
+"Cuando :meth:`read` retorna una cadena de bytes vacía, la iteración "
+"finalizará y no se podrá reiniciar."
 
-#: ../../library/wsgiref.rst:166
+#: ../Doc/library/wsgiref.rst:164
 msgid ""
 "If *filelike* has a :meth:`close` method, the returned object will also have "
 "a :meth:`close` method, and it will invoke the *filelike* object's :meth:"
 "`close` method when called."
 msgstr ""
-"*filelike* に :meth:`close` メソッドがある場合、返されたオブジェクトも :meth:"
-"`close` メソッドを持ち、これが呼ばれた場合には *filelike* オブジェクトの :"
-"meth:`close` メソッドを呼び出します。"
+"Si *filelike* tiene un método :meth:`close`, el objeto retornado también "
+"tendrá un método :meth:`close` que llamará al método :meth:`close` del "
+"objeto archivo subyacente."
 
-#: ../../library/wsgiref.rst:182
+#: ../Doc/library/wsgiref.rst:180
 msgid "Support for :meth:`__getitem__` method has been removed."
 msgstr ""
+"Se ha quitado el soporte para el método :meth:`sequence protocol "
+"<__getitem__>`."
 
-#: ../../library/wsgiref.rst:187
+#: ../Doc/library/wsgiref.rst:185
 msgid ":mod:`wsgiref.headers` -- WSGI response header tools"
-msgstr ":mod:`wsgiref.headers` -- WSGI レスポンスヘッダツール群"
+msgstr ""
+":mod:`wsgiref.headers` -- Herramientas para cabeceras de respuesta WSGI"
 
-#: ../../library/wsgiref.rst:193
+#: ../Doc/library/wsgiref.rst:191
 msgid ""
 "This module provides a single class, :class:`Headers`, for convenient "
 "manipulation of WSGI response headers using a mapping-like interface."
 msgstr ""
-"このモジュールは単一のクラス、 :class:`Headers` を提供し、WSGI レスポンスヘッ"
-"ダの操作をマップに似たインターフェースで便利にします。"
+"Este módulo ofrece una sola clase, :class:`Headers`, para la manipulación de "
+"cabeceras de respuesta WSGI usando un interfaz de mapa."
 
-#: ../../library/wsgiref.rst:199
+#: ../Doc/library/wsgiref.rst:197
 msgid ""
 "Create a mapping-like object wrapping *headers*, which must be a list of "
 "header name/value tuples as described in :pep:`3333`. The default value of "
 "*headers* is an empty list."
 msgstr ""
-"*headers* をラップするマップ風オブジェクトを生成します。これは :pep:`3333` に"
-"定義されるようなヘッダの名前／値のタプルのリストです。 *headers* のデフォルト"
-"値は空のリストです。"
+"Crea un objeto con interfaz de mapa envolviendo *headers*, que debe ser una "
+"lista de tuplas nombre/valor de las cabeceras, como se describe en :pep:"
+"`3333`. El valor por defecto de *headers* es una lista vacía."
 
-#: ../../library/wsgiref.rst:203
+#: ../Doc/library/wsgiref.rst:201
 msgid ""
 ":class:`Headers` objects support typical mapping operations including :meth:"
 "`__getitem__`, :meth:`get`, :meth:`__setitem__`, :meth:`setdefault`, :meth:"
@@ -298,28 +318,30 @@ msgid ""
 "wrapped header list.  Headers' existing order is generally maintained, with "
 "new headers added to the end of the wrapped list."
 msgstr ""
-":class:`Headers` オブジェクトは典型的なマッピング操作をサポートし、これには :"
-"meth:`__getitem__` 、 :meth:`get` 、 :meth:`__setitem__` 、 :meth:"
-"`setdefault` 、 :meth:`__delitem__` 、 :meth:`__contains__` を含みます。これ"
-"らメソッドのそれぞれにおいて、キーはヘッダ名で（大文字小文字は区別しませ"
-"ん）、値はそのヘッダ名に関連づけられた最初の値です。ヘッダを設定すると既存の"
-"ヘッダ値は削除され、ラップされたヘッダのリストの末尾に新しい値が加えられま"
-"す。既存のヘッダの順番は一般に維持され、ラップされたリストの最後に新しいヘッ"
-"ダが追加されます。"
+"Los objetos :class:`Headers` soportan las operaciones de mapa habituales "
+"incluyendo :meth:`__getitem__`, :meth:`get`, :meth:`__setitem__`, :meth:"
+"`setdefault`, :meth:`__delitem__` y :meth:`__contains__`. Para cada uno de "
+"esos métodos, la clave es el nombre de la cabecera, sin distinción entre "
+"mayúsculas y minúsculas, y el valor es el primer valor asociado con el "
+"nombre de la cabecera. Establecer una cabecera borra cualquier valor "
+"previamente existente y añade un nuevo valor al final de la lista de "
+"cabeceras. En general, el orden de las cabeceras existentes se mantiene, con "
+"las nuevas cabeceras añadidas al final de la lista de cabeceras."
 
-#: ../../library/wsgiref.rst:212
+#: ../Doc/library/wsgiref.rst:210
 msgid ""
 "Unlike a dictionary, :class:`Headers` objects do not raise an error when you "
 "try to get or delete a key that isn't in the wrapped header list. Getting a "
 "nonexistent header just returns ``None``, and deleting a nonexistent header "
 "does nothing."
 msgstr ""
-"辞書とは違って、 :class:`Headers` オブジェクトはラップされたヘッダリストに存"
-"在しないキーを取得または削除しようとした場合にもエラーを発生しません。単に、"
-"存在しないヘッダの取得は ``None`` を返し、存在しないヘッダの削除は何もしませ"
-"ん。"
+"A diferencia de un diccionario, los objetos :class:`Headers` no lanzan un "
+"error cuando se intenta obtener o eliminar una clave que no está en la lista "
+"de cabeceras subyacente. Al intentar obtener una clave inexistente "
+"simplemente se retornará ``None``, mientras que el intento de eliminación de "
+"una cabecera inexistente simplemente no tendrá ningún efecto."
 
-#: ../../library/wsgiref.rst:217
+#: ../Doc/library/wsgiref.rst:215
 msgid ""
 ":class:`Headers` objects also support :meth:`keys`, :meth:`values`, and :"
 "meth:`items` methods.  The lists returned by :meth:`keys` and :meth:`items` "
@@ -329,14 +351,15 @@ msgid ""
 "In fact, the :meth:`items` method just returns a copy of the wrapped header "
 "list."
 msgstr ""
-":class:`Headers` オブジェクトは :meth:`keys` 、 :meth:`values` 、 :meth:"
-"`items` メソッドもサポートします。複数の値を持つヘッダがある場合には、 :meth:"
-"`keys` と :meth:`items` で返されるリストは同じキーを一つ以上含むことがありま"
-"す。 :class:`Headers` オブジェクトの ``len()`` は、その :meth:`items` の長さ"
-"と同じであり、ラップされたヘッダリストの長さと同じです。実際、 :meth:`items` "
-"メソッドは単にラップされたヘッダリストのコピーを返しているだけです。"
+"Los objetos :class:`Headers` también soportan los métodos :meth:`keys`, :"
+"meth:`values`, y :meth:`items`. Las listas retornadas por :meth:`keys` y :"
+"meth:`items` pueden incluir la misma clave más de una vez si se trata de una "
+"cabecera de valor múltiple. La ``len()`` de un objeto :class:`Headers` es la "
+"misma que la longitud de sus :meth:`items`, que es la misma que la longitud "
+"de la lista de cabeceras envuelta. De hecho, el método :meth:`items` "
+"simplemente retorna una copia de la lista de cabeceras."
 
-#: ../../library/wsgiref.rst:224
+#: ../Doc/library/wsgiref.rst:222
 msgid ""
 "Calling ``bytes()`` on a :class:`Headers` object returns a formatted "
 "bytestring suitable for transmission as HTTP response headers.  Each header "
@@ -344,47 +367,49 @@ msgid ""
 "line is terminated by a carriage return and line feed, and the bytestring is "
 "terminated with a blank line."
 msgstr ""
-":class:`Headers` オブジェクトに対して ``bytes()`` を呼ぶと、HTTP レスポンス"
-"ヘッダとして送信するのに適した形に整形されたバイト文字列を返します。それぞれ"
-"のヘッダはコロンとスペースで区切られた値と共に一列に並んでいます。それぞれの"
-"行はキャリッジリターンとラインフィードで終了し、バイト文字列は空行で終了して"
-"います。"
+"La llamada ``bytes()`` sobre un objeto :class:`Headers` retorna una cadena "
+"de bytes formateada y lista para su transmisión como cabeceras de respuesta "
+"HTTP. Cada cabecera se ubica en una línea con su valor separado por dos "
+"puntos y un espacio. Cada línea finaliza con un retorno de carro y un salto "
+"de línea, y la cadena de bytes finaliza con una línea en blanco."
 
-#: ../../library/wsgiref.rst:230
+#: ../Doc/library/wsgiref.rst:228
 msgid ""
 "In addition to their mapping interface and formatting features, :class:"
 "`Headers` objects also have the following methods for querying and adding "
 "multi-valued headers, and for adding headers with MIME parameters:"
 msgstr ""
-"これらのマッピングインターフェースと整形機能に加えて、 :class:`Headers` オブ"
-"ジェクトは複数の値を持つヘッダの取得と追加、MIME パラメータでヘッダを追加する"
-"ための以下のようなメソッド群も持っています:"
+"Además de la interfaz de mapa y las funcionalidades de formateado, los "
+"objetos :class:`Headers` también ofrecen los siguientes métodos para "
+"consultar y añadir cabeceras con múltiples valores, y para añadir cabeceras "
+"con parámetros MIME:"
 
-#: ../../library/wsgiref.rst:237
+#: ../Doc/library/wsgiref.rst:235
 msgid "Return a list of all the values for the named header."
-msgstr "指定されたヘッダのすべての値のリストを返します。"
+msgstr "Retorna una lista de todos los valores para la cabecera indicada."
 
-#: ../../library/wsgiref.rst:239
+#: ../Doc/library/wsgiref.rst:237
 msgid ""
 "The returned list will be sorted in the order they appeared in the original "
 "header list or were added to this instance, and may contain duplicates.  Any "
 "fields deleted and re-inserted are always appended to the header list.  If "
 "no fields exist with the given name, returns an empty list."
 msgstr ""
-"返されるリストは、元々のヘッダリストに現れる順、またはこのインスタンスに追加"
-"された順に並んでいて、重複を含む場合があります。削除されて加えられたフィール"
-"ドはすべてヘッダリストの末尾に付きます。与えられた name に対するフィールドが"
-"何もなければ、空のリストが返ります。"
+"La lista retornada tendrá los valores ordenados según la lista de cabeceras "
+"original o según se hayan añadido a esta instancia, y podrá contener "
+"duplicados. Cualquier campo eliminado y añadido de nuevo estará al final de "
+"la lista. Si no existen campos con el nombre indicado, retornará una lista "
+"vacía."
 
-#: ../../library/wsgiref.rst:247
+#: ../Doc/library/wsgiref.rst:245
 msgid ""
 "Add a (possibly multi-valued) header, with optional MIME parameters "
 "specified via keyword arguments."
 msgstr ""
-"(複数の値を持つ可能性のある) ヘッダを、キーワード引数を通じて指定するオプショ"
-"ンの MIME パラメータと共に追加します。"
+"Añade una cabecera, posiblemente de valor múltiple, con los parámetros MIME "
+"opcionales especificados vía argumentos por palabra clave."
 
-#: ../../library/wsgiref.rst:250
+#: ../Doc/library/wsgiref.rst:248
 msgid ""
 "*name* is the header field to add.  Keyword arguments can be used to set "
 "MIME parameters for the header field.  Each parameter must be a string or "
@@ -395,28 +420,29 @@ msgid ""
 "only the parameter name is added. (This is used for MIME parameters without "
 "a value.)  Example usage::"
 msgstr ""
-"*name* は追加するヘッダフィールドです。このヘッダフィールドに MIME パラメータ"
-"を設定するためにキーワード引数を使うことができます。それぞれのパラメータは文"
-"字列か ``None`` でなければいけません。パラメータ中のアンダースコアはダッシュ "
-"(-) に変換されます。これは、ダッシュが Python の識別子としては不正なのです"
-"が、多くの MIME パラメータはダッシュを含むためです。パラメータ値が文字列の場"
-"合、これはヘッダ値のパラメータに ``name=\"value\"`` の形で追加されます。この"
-"値がもし ``None`` の場合、パラメータ名だけが追加されます。（これは値なしの "
-"MIME パラメータの場合に使われます。）使い方の例は::"
+"*name* es el nombre de la cabecera a añadir. Se pueden usar argumentos por "
+"palabra clave para establecer parámetros MIME para la cabecera. Cada "
+"parámetro debe ser una cadena o ``None``. Todos los guiones bajos en los "
+"nombres de parámetros se convierten en guiones, dado que los guiones son "
+"inválidos en identificadores Python y muchos parámetros MIME incluyen "
+"guiones. Si el valor del parámetro es una cadena, se añade a los parámetros "
+"del valor de la cabecera con la forma ``nombre=valor``. Si es ``None``, sólo "
+"se añade el nombre del parámetro, para reflejar parámetros MIME sin valor. "
+"Ejemplo de uso::"
 
-#: ../../library/wsgiref.rst:260
+#: ../Doc/library/wsgiref.rst:258
 msgid "The above will add a header that looks like this::"
-msgstr "上記はこのようなヘッダを追加します::"
+msgstr "El código anterior añadirá una cabecera como la siguiente::"
 
-#: ../../library/wsgiref.rst:265
+#: ../Doc/library/wsgiref.rst:263
 msgid "*headers* parameter is optional."
-msgstr "*headers* 引数が任意になりました。"
+msgstr "El parámetro *headers* es opcional."
 
-#: ../../library/wsgiref.rst:270
+#: ../Doc/library/wsgiref.rst:268
 msgid ":mod:`wsgiref.simple_server` -- a simple WSGI HTTP server"
-msgstr ":mod:`wsgiref.simple_server` -- シンプルな WSGI HTTP サーバ"
+msgstr ":mod:`wsgiref.simple_server`-- Un servidor HTTP WSGI simple"
 
-#: ../../library/wsgiref.rst:276
+#: ../Doc/library/wsgiref.rst:274
 msgid ""
 "This module implements a simple HTTP server (based on :mod:`http.server`) "
 "that serves WSGI applications.  Each server instance serves a single WSGI "
@@ -426,15 +452,15 @@ msgid ""
 "request.  (E.g., using the :func:`shift_path_info` function from :mod:"
 "`wsgiref.util`.)"
 msgstr ""
-"このモジュールは WSGI アプリケーションを提供するシンプルな HTTP サーバです (:"
-"mod:`http.server` がベースです)。個々のサーバインスタンスは単一の WSGI アプリ"
-"ケーションを、特定のホストとポート上で提供します。もし一つのホストとポート上"
-"で複数のアプリケーションを提供したいならば、 ``PATH_INFO`` をパースして個々の"
-"リクエストでどのアプリケーションを呼び出すか選択するような WSGI アプリケー"
-"ションを作る必要があります。（例えば、 :mod:`wsgiref.util` から :func:"
-"`shift_path_info` を利用します。）"
+"Este módulo implementa un servidor HTTP simple, basado en :mod:`http."
+"server`, que sirve aplicaciones WSGI. Cada instancia del servidor sirve una "
+"aplicación WSGI simple en una máquina y puerto dados. Si se quiere servir "
+"múltiples aplicaciones en una misma máquina y puerto, se deberá crear una "
+"aplicación WSGI que analiza ``PATH_INFO`` para seleccionar qué aplicación "
+"invocar para cada petición. Por ejemplo, usando la función :func:"
+"`shift_path_info` de :mod:`wsgiref.util`."
 
-#: ../../library/wsgiref.rst:287
+#: ../Doc/library/wsgiref.rst:285
 msgid ""
 "Create a new WSGI server listening on *host* and *port*, accepting "
 "connections for *app*.  The return value is an instance of the supplied "
@@ -442,12 +468,12 @@ msgid ""
 "*handler_class*.  *app* must be a WSGI application object, as defined by :"
 "pep:`3333`."
 msgstr ""
-"*host* と *port* 上で待機し、 *app* へのコネクションを受け付ける  WSGI サーバ"
-"を作成します。戻り値は与えられた *server_class* のインスタンスで、指定された "
-"*handler_class* を使ってリクエストを処理します。 *app* は :pep:`3333` で定義"
-"されるところの WSGI アプリケーションでなければいけません。"
+"Crea un nuevo servidor WSGI que sirve en *host* y *port*, aceptando "
+"conexiones para *app*. El valor de retorno es una instancia de "
+"*server_class* y procesará peticiones usando *handler_class*. *app* debe ser "
+"un objeto aplicación WSGI, como se define en :pep:`3333`."
 
-#: ../../library/wsgiref.rst:308
+#: ../Doc/library/wsgiref.rst:306
 msgid ""
 "This function is a small but complete WSGI application that returns a text "
 "page containing the message \"Hello world!\" and a list of the key/value "
@@ -455,74 +481,75 @@ msgid ""
 "WSGI server (such as :mod:`wsgiref.simple_server`) is able to run a simple "
 "WSGI application correctly."
 msgstr ""
-"この関数は小規模ながら完全な WSGI アプリケーションで、 \"Hello world!\" メッ"
-"セージと、 *environ* パラメータに提供されているキー／値のペアを含むテキスト"
-"ページを返します。これは WSGI サーバ (:mod:`wsgiref.simple_server` のような) "
-"がシンプルな WSGI アプリケーションを正しく実行できるかを確かめるのに便利で"
-"す。"
+"Esta función es una pequeña pero completa aplicación WSGI que retorna una "
+"página de texto con el mensaje \"Hello world!\" y una lista de pares clave/"
+"valor obtenida del parámetro *environ*. Es útil para verificar que un "
+"servidor WSGI, como :mod:`wsgiref.simple_server`, es capaz de ejecutar una "
+"aplicación WSGI simple correctamente."
 
-#: ../../library/wsgiref.rst:317
+#: ../Doc/library/wsgiref.rst:315
 msgid ""
 "Create a :class:`WSGIServer` instance.  *server_address* should be a ``(host,"
 "port)`` tuple, and *RequestHandlerClass* should be the subclass of :class:"
 "`http.server.BaseHTTPRequestHandler` that will be used to process requests."
 msgstr ""
-":class:`WSGIServer` インスタンスを作成します。 *server_address* は ``(host,"
-"port)`` のタプル、そして *RequestHandlerClass* はリクエストの処理に使われる :"
-"class:`http.server.BaseHTTPRequestHandler` のサブクラスでなければいけません。"
+"Crea una instancia de :class:`WSGIServer`. *server_address* debe ser una "
+"tupla ``(máquina,puerto)`` y *RequestHandlerClass* debe ser la subclase de :"
+"class:`http.server.BaseHTTPRequestHandler` que se usará para procesar "
+"peticiones."
 
-#: ../../library/wsgiref.rst:322
+#: ../Doc/library/wsgiref.rst:320
 msgid ""
 "You do not normally need to call this constructor, as the :func:"
 "`make_server` function can handle all the details for you."
 msgstr ""
-":func:`make_server` が細かい調整をやってくれるので、通常はこのコンストラクタ"
-"を呼ぶ必要はありません。"
+"Normalmente, no es necesario invocar este constructor, ya que la función :"
+"func:`make_server` puede gestionar todos los detalles."
 
-#: ../../library/wsgiref.rst:325
+#: ../Doc/library/wsgiref.rst:323
 msgid ""
 ":class:`WSGIServer` is a subclass of :class:`http.server.HTTPServer`, so all "
 "of its methods (such as :meth:`serve_forever` and :meth:`handle_request`) "
 "are available. :class:`WSGIServer` also provides these WSGI-specific methods:"
 msgstr ""
-":class:`WSGIServer` は :class:`http.server.HTTPServer` のサブクラスなので、そ"
-"のすべてのメソッド (:meth:`serve_forever` や :meth:`handle_request` のよう"
-"な) が利用できます。 :class:`WSGIServer` も以下のような WSGI 固有メソッドを提"
-"供します:"
+":class:`WSGIServer` es una subclase de :class:`http.server.HTTPServer`, por "
+"lo que todos sus métodos, como :meth:`serve_forever` y :meth:"
+"`handle_request`, están disponibles. :class:`WSGIServer` también ofrece los "
+"siguientes métodos específicos de WSGI:"
 
-#: ../../library/wsgiref.rst:332
+#: ../Doc/library/wsgiref.rst:330
 msgid ""
 "Sets the callable *application* as the WSGI application that will receive "
 "requests."
 msgstr ""
-"呼び出し可能 (callable) な *application* をリクエストを受け取る WSGI アプリ"
-"ケーションとして設定します。"
+"Establece el invocable *application* como la aplicación WSGI que recibirá "
+"las peticiones."
 
-#: ../../library/wsgiref.rst:338
+#: ../Doc/library/wsgiref.rst:336
 msgid "Returns the currently set application callable."
-msgstr ""
+msgstr "Retorna la aplicación invocable actualmente establecida."
 
-#: ../../library/wsgiref.rst:340
+#: ../Doc/library/wsgiref.rst:338
 msgid ""
 "Normally, however, you do not need to use these additional methods, as :meth:"
 "`set_app` is normally called by :func:`make_server`, and the :meth:`get_app` "
 "exists mainly for the benefit of request handler instances."
 msgstr ""
-"しかしながら、通常はこれらの追加されたメソッドを使う必要はありません。 :meth:"
-"`set_app` は普通は :func:`make_server` によって呼ばれ、 :meth:`get_app` は主"
-"にリクエストハンドラインスタンスの便宜上存在するからです。"
+"Habitualmente, sin embargo, no es necesario usar estos métodos adicionales, "
+"ya que :meth:`set_app` se llama desde :func:`make_server` y :meth:`get_app` "
+"existe sobretodo para el beneficio de instancias del gestor de peticiones."
 
-#: ../../library/wsgiref.rst:347
+#: ../Doc/library/wsgiref.rst:345
 msgid ""
 "Create an HTTP handler for the given *request* (i.e. a socket), "
 "*client_address* (a ``(host,port)`` tuple), and *server* (:class:"
 "`WSGIServer` instance)."
 msgstr ""
-"与えられた *request* （すなわちソケット）の HTTP ハンドラ、 *client_address* "
-"(``(host,port)`` のタプル)、 *server* (:class:`WSGIServer` インスタンス) の "
-"HTTP ハンドラを作成します。"
+"Crea un gestor HTTP para la *request* indicada (es decir un socket), "
+"*client_address (una tupla ``(máquina,puerto)``), y *server* (una instancia :"
+"class:`WSGIServer`)."
 
-#: ../../library/wsgiref.rst:350
+#: ../Doc/library/wsgiref.rst:348
 msgid ""
 "You do not need to create instances of this class directly; they are "
 "automatically created as needed by :class:`WSGIServer` objects.  You can, "
@@ -530,13 +557,13 @@ msgid ""
 "`make_server` function.  Some possibly relevant methods for overriding in "
 "subclasses:"
 msgstr ""
-"このクラスのインスタンスを直接生成する必要はありません; これらは必要に応じ"
-"て :class:`WSGIServer` オブジェクトによって自動的に生成されます。しかしなが"
-"ら、このクラスをサブクラス化し、 :func:`make_server` 関数に *handler_class* "
-"として与えることは可能でしょう。サブクラスにおいてオーバーライドする意味のあ"
-"りそうなものは:"
+"No es necesario crear instancias de esta clase directamente. Se crean "
+"automáticamente bajo demanda por objetos :class:`WSGIServer`. Sin embargo, "
+"se pueden crear subclases de esta clase y proveerlas como *handler_class* a "
+"la función :func:`make_server`. Algunos métodos posiblemente relevantes para "
+"sobreescribir en estas subclases:"
 
-#: ../../library/wsgiref.rst:359
+#: ../Doc/library/wsgiref.rst:357
 msgid ""
 "Return a :data:`~wsgiref.types.WSGIEnvironment` dictionary for a request.  "
 "The default implementation copies the contents of the :class:`WSGIServer` "
@@ -545,30 +572,36 @@ msgid ""
 "return a new dictionary containing all of the relevant CGI environment "
 "variables as specified in :pep:`3333`."
 msgstr ""
+"Retorna un diccionario :data:`~wsgiref.types.WSGIEnvironment` para una "
+"petición. La implementación por defecto copia el contenido del diccionario "
+"atributo :attr:`base_environ` del objeto :class:`WSGIserver` y añade varias "
+"cabeceras derivadas de la petición HTTP. Cada llamada a este método debe "
+"retornar un nuevo diccionario con todas las variables de entorno CGI "
+"relevantes especificadas en :pep:`3333`."
 
-#: ../../library/wsgiref.rst:370
+#: ../Doc/library/wsgiref.rst:368
 msgid ""
 "Return the object that should be used as the ``wsgi.errors`` stream. The "
 "default implementation just returns ``sys.stderr``."
 msgstr ""
-"``wsgi.errors`` ストリームとして使われるオブジェクトを返します。デフォルト実"
-"装では単に ``sys.stderr`` を返します。"
+"Retorna el objeto que debe usarse como el flujo de ``wsgi.errors``. La "
+"implementación por defecto retorna simplemente ``sys.stderr``."
 
-#: ../../library/wsgiref.rst:376
+#: ../Doc/library/wsgiref.rst:374
 msgid ""
 "Process the HTTP request.  The default implementation creates a handler "
 "instance using a :mod:`wsgiref.handlers` class to implement the actual WSGI "
 "application interface."
 msgstr ""
-"HTTP リクエストを処理します。デフォルト実装では実際の WGI アプリケーションイ"
-"ンターフェースを実装するのに :mod:`wsgiref.handlers` クラスを使ってハンドライ"
-"ンスタンスを作成します。"
+"Procesa la petición HTTP. La implementación por defecto crea una instancia "
+"gestora usando una clase :mod:`wsgiref.handlers` para implementar la "
+"interfaz de aplicación WSGI real."
 
-#: ../../library/wsgiref.rst:382
+#: ../Doc/library/wsgiref.rst:380
 msgid ":mod:`wsgiref.validate` --- WSGI conformance checker"
-msgstr ":mod:`wsgiref.validate` --- WSGI 準拠チェッカー"
+msgstr ":mod:`wsgiref.validate` --- Verificador de compatibilidad WSGI"
 
-#: ../../library/wsgiref.rst:388
+#: ../Doc/library/wsgiref.rst:386
 msgid ""
 "When creating new WSGI application objects, frameworks, servers, or "
 "middleware, it can be useful to validate the new code's conformance using :"
@@ -577,46 +610,48 @@ msgid ""
 "gateway and a WSGI application object, to check both sides for protocol "
 "conformance."
 msgstr ""
-"WSGI アプリケーションのオブジェクト、フレームワーク、サーバまたはミドルウェア"
-"の作成時には、その新規のコードを :mod:`wsgiref.validate` を使って準拠の検証を"
-"すると便利です。このモジュールは WSGI サーバやゲートウェイと WSGI アプリケー"
-"ションオブジェクト間の通信を検証する WSGI アプリケーションオブジェクトを作成"
-"する関数を提供し、双方のプロトコル準拠をチェックします。"
+"Al crear nuevos objetos aplicación WSGI, *frameworks*, servidores, o "
+"*middleware*, puede ser útil validar la compatibilidad del nuevo código "
+"usando :mod:`wsgiref.validate`. Este módulo ofrece una función que crea "
+"objetos de aplicación WSGI que validan las comunicaciones entre un servidor "
+"o *gateway* WSGI y un objeto de aplicación WSGI, para comprobar la "
+"compatibilidad del protocolo en ambos lados."
 
-#: ../../library/wsgiref.rst:395
+#: ../Doc/library/wsgiref.rst:393
+#, python-format
 msgid ""
 "Note that this utility does not guarantee complete :pep:`3333` compliance; "
 "an absence of errors from this module does not necessarily mean that errors "
 "do not exist.  However, if this module does produce an error, then it is "
-"virtually certain that either the server or application is not 100% "
-"compliant."
+"virtually certain that either the server or application is not "
+"100% compliant."
 msgstr ""
-"このユーティリティは完全な :pep:`3333` 準拠を保証するものでないことは注意して"
-"ください; このモジュールでエラーが出ないことは必ずしもエラーが存在しないこと"
-"を意味しません。しかしこのモジュールがエラーを出したならば、ほぼ確実にサーバ"
-"かアプリケーションのどちらかが 100% 準拠ではありません。"
+"Hay que observar que esta utilidad no garantiza compatibilidad completa con :"
+"pep:`3333`. La ausencia de errores usando este módulo no implica que no "
+"existan errores. Sin embargo, si este módulo produce errores, implica que o "
+"el servidor o la aplicación no son 100% compatibles."
 
-#: ../../library/wsgiref.rst:400
+#: ../Doc/library/wsgiref.rst:398
 msgid ""
 "This module is based on the :mod:`paste.lint` module from Ian Bicking's "
 "\"Python Paste\" library."
 msgstr ""
-"このモジュールは lan Bicking の \"Python Paste\" ライブラリの :mod:`paste."
-"lint` モジュールをベースにしています。"
+"Este módulo se basa en el módulo :mod:`paste.lint` de la librería *Python "
+"Paste* de *Ian Bicking*."
 
-#: ../../library/wsgiref.rst:406
+#: ../Doc/library/wsgiref.rst:404
 msgid ""
 "Wrap *application* and return a new WSGI application object.  The returned "
 "application will forward all requests to the original *application*, and "
 "will check that both the *application* and the server invoking it are "
 "conforming to the WSGI specification and to :rfc:`2616`."
 msgstr ""
-"*application* をラップし、新しい WSGI アプリケーションオブジェクトを返しま"
-"す。返されたアプリケーションは全てのリクエストを元々の *application* に転送"
-"し、*application* とそれを呼び出すサーバの両方が WSGI 仕様と :rfc:`2616` の両"
-"方に準拠しているかをチェックします。"
+"Envuelve *application* y retorna un nuevo objeto de aplicación WSGI. La "
+"aplicación retornada reenviará todas las peticiones a la *application* "
+"original y comprobará que tanto la *application* como el servidor que la "
+"llama son compatibles con la especificación WSGI y con :rfc:`2616`."
 
-#: ../../library/wsgiref.rst:411
+#: ../Doc/library/wsgiref.rst:409
 msgid ""
 "Any detected nonconformance results in an :exc:`AssertionError` being "
 "raised; note, however, that how these errors are handled is server-"
@@ -626,14 +661,15 @@ msgid ""
 "occurred, and dump the traceback to ``sys.stderr`` or some other error "
 "stream."
 msgstr ""
-"何らかの非準拠が検出されると、 :exc:`AssertionError` 例外が送出されます; しか"
-"し、このエラーがどう扱われるかはサーバ依存であることに注意してください。例え"
-"ば、 :mod:`wsgiref.simple_server` とその他 :mod:`wsgiref.handlers` ベースの"
-"サーバ（エラー処理メソッドが他のことをするようにオーバライドしていないもの）"
-"は単純にエラーが発生したというメッセージとトレースバックのダンプを ``sys."
-"stderr`` やその他のエラーストリームに出力します。"
+"Cualquier incompatibilidad detectada provocará el lanzamiento de un :exc:"
+"`AssertionError`. Nótese que, sin embargo, cómo se gestionan estos errores "
+"depende del servidor. Por ejemplo, :mod:`wsgiref.simple_server` y otros "
+"servidores basados en :mod:`wsgiref.handlers`, que no sobreescriben los "
+"métodos de gestión de errores para hacer otras cosas, simplemente escribirán "
+"un mensaje de que el error ha ocurrido y volcarán la traza de error en ``sys."
+"stderr`` o algún otro flujo de errores."
 
-#: ../../library/wsgiref.rst:418
+#: ../Doc/library/wsgiref.rst:416
 msgid ""
 "This wrapper may also generate output using the :mod:`warnings` module to "
 "indicate behaviors that are questionable but which may not actually be "
@@ -642,71 +678,76 @@ msgid ""
 "to ``sys.stderr`` (*not* ``wsgi.errors``, unless they happen to be the same "
 "object)."
 msgstr ""
-"このラッパーは、疑わしいものの実際には :pep:`3333` で禁止されていないかもしれ"
-"ない挙動を指摘するために :mod:`warnings` モジュールを使って出力を生成します。"
-"これらは Python のコマンドラインオプションや :mod:`warnings` API で抑制されな"
-"ければ、 ``sys.stderr`` (``wsgi.errors`` では *ありません* 。ただし、たまたま"
-"同一のオブジェクトだった場合を除く)に書き出されます。"
+"Este *wrapper* puede también generar salidas usando el módulo :mod:"
+"`warnings` para señalar comportamientos que son cuestionables pero que no "
+"están realmente prohibidos por :pep:`3333`. A no ser que se suprima esta "
+"salida usando opciones de línea de comandos de Python o la API de :mod:"
+"`warnings`, cualquier aviso se escribirá en ``sys.stderr``, en lugar de en "
+"``wsgi.errors``, aunque sean el mismo objeto."
 
-#: ../../library/wsgiref.rst:450
+#: ../Doc/library/wsgiref.rst:448
 msgid ":mod:`wsgiref.handlers` -- server/gateway base classes"
-msgstr ":mod:`wsgiref.handlers` -- サーバ／ゲートウェイのベースクラス"
+msgstr ":mod:`wsgiref.handlers` -- Clases base servidor/*gateway*"
 
-#: ../../library/wsgiref.rst:456
+#: ../Doc/library/wsgiref.rst:454
 msgid ""
 "This module provides base handler classes for implementing WSGI servers and "
 "gateways.  These base classes handle most of the work of communicating with "
 "a WSGI application, as long as they are given a CGI-like environment, along "
 "with input, output, and error streams."
 msgstr ""
-"このモジュールは WSGI サーバとゲートウェイ実装のベースハンドラクラスを提供し"
-"ます。これらのベースクラスは、CGI 風の環境と、それに加えて入力、出力そしてエ"
-"ラーストリームが与えられることで、WSGI アプリケーションとの通信の大部分を処理"
-"します。"
+"Este módulo ofrece clases gestoras base para implementar servidores y "
+"*gateways* WSGI. Estas clases base gestionan la mayoría del trabajo de "
+"comunicarse con una aplicación WSGI, siempre que se les dé un entorno CGI, "
+"junto con una entrada, una salida, y un flujo de errores."
 
-#: ../../library/wsgiref.rst:464
+#: ../Doc/library/wsgiref.rst:462
 msgid ""
 "CGI-based invocation via ``sys.stdin``, ``sys.stdout``, ``sys.stderr`` and "
 "``os.environ``.  This is useful when you have a WSGI application and want to "
 "run it as a CGI script.  Simply invoke ``CGIHandler().run(app)``, where "
 "``app`` is the WSGI application object you wish to invoke."
 msgstr ""
-"``sys.stdin``、``sys.stdout``、``sys.stderr`` そして ``os.environ`` 経由での "
-"CGI ベースの呼び出しです。これは、もしあなたが WSGI アプリケーションを持って"
-"いて、これを CGI スクリプトとして実行したい場合に有用です。単に "
-"``CGIHandler().run(app)`` を起動してください。``app`` はあなたが起動したい "
-"WSGI アプリケーションオブジェクトです。"
+"Invocación basada en CGI vía ``sys.stdin``, ``sys.stdout``, ``sys.stderr`` y "
+"``os.environ``. Esto es útil cuando se quiere ejecutar una aplicación WSGI "
+"como un script CGI. Simplemente es necesario invocar ``CGIHandler()."
+"run(app)``, donde ``app`` es el objeto de aplicación WSGI que se quiere "
+"invocar."
 
-#: ../../library/wsgiref.rst:469
+#: ../Doc/library/wsgiref.rst:467
 msgid ""
 "This class is a subclass of :class:`BaseCGIHandler` that sets ``wsgi."
 "run_once`` to true, ``wsgi.multithread`` to false, and ``wsgi.multiprocess`` "
 "to true, and always uses :mod:`sys` and :mod:`os` to obtain the necessary "
 "CGI streams and environment."
 msgstr ""
-"このクラスは :class:`BaseCGIHandler` のサブクラスで、これは ``wsgi."
-"run_once`` を true、 ``wsgi.multithread`` を false、そして ``wsgi."
-"multiprocess`` を true にセットし、常に :mod:`sys` と :mod:`os` を、必要な "
-"CGI ストリームと環境を取得するために使用します。"
+"Esta clase es una subclase de :class:`BaseCGIHandler` que establece ``wsgi."
+"run_once`` a cierto, ``wsgi.multithread`` a falso, y ``wsgi.multiprocess`` a "
+"cierto, y siempre usa :mod:`sys` y :mod:`os` para obtener los flujos y "
+"entorno CGI necesarios."
 
-#: ../../library/wsgiref.rst:477
+#: ../Doc/library/wsgiref.rst:475
 msgid ""
 "A specialized alternative to :class:`CGIHandler`, for use when deploying on "
 "Microsoft's IIS web server, without having set the config allowPathInfo "
 "option (IIS>=7) or metabase allowPathInfoForScriptMappings (IIS<7)."
 msgstr ""
-"(IIS 7 以降の) 設定オプションの allowPathInfo や (IIS 7 より前の) メタベース"
-"の allowPathInfoForScriptMappings を設定せずに Microsoft の IIS Web サーバに"
-"デプロイするときに使う、 :class:`CGIHandler` クラス以外の専用の選択肢です。"
+"Una alternativa especializada a :class:`CGIHandler`, para usar al desplegar "
+"en servidores web Microsoft IIS, sin establecer la opción de configuración "
+"``allowPathInfo`` (IIS>=7) o la meta-base ``allowPathInfoForScriptMappings`` "
+"(IIS<7)."
 
-#: ../../library/wsgiref.rst:481
+#: ../Doc/library/wsgiref.rst:479
 msgid ""
 "By default, IIS gives a ``PATH_INFO`` that duplicates the ``SCRIPT_NAME`` at "
 "the front, causing problems for WSGI applications that wish to implement "
 "routing. This handler strips any such duplicated path."
 msgstr ""
+"Por defecto, IIS entrega ``PATH_INFO`` que duplica ``SCRIPT_NAME`` al "
+"principio, causando problemas con aplicaciones WSGI que implementan "
+"enrutamiento. Este gestor elimina las partes duplicadas de la ruta."
 
-#: ../../library/wsgiref.rst:485
+#: ../Doc/library/wsgiref.rst:483
 msgid ""
 "IIS can be configured to pass the correct ``PATH_INFO``, but this causes "
 "another bug where ``PATH_TRANSLATED`` is wrong. Luckily this variable is "
@@ -716,16 +757,28 @@ msgid ""
 "IIS<7 is almost never deployed with the fix (Even IIS7 rarely uses it "
 "because there is still no UI for it.)."
 msgstr ""
+"IIS se puede configurar para pasar el ``PATH_INFO`` correcto, pero esto "
+"causa otro error donde ``PATH_TRANSLATED`` es incorrecto. Afortunadamente, "
+"esta variable rara vez se usa y no está garantizada por WSGI. Sin embargo, "
+"en IIS<7, la configuración solo se puede realizar en un nivel de vhost, lo "
+"que afecta a todas las demás asignaciones de scripts, muchas de las cuales "
+"se rompen cuando se exponen al error ``PATH_TRANSLATED``. Por esta razón, "
+"IIS<7 casi nunca se implementa con la solución (incluso IIS7 rara vez lo usa "
+"porque todavía no tiene una interfaz de usuario)."
 
-#: ../../library/wsgiref.rst:493
+#: ../Doc/library/wsgiref.rst:491
 msgid ""
 "There is no way for CGI code to tell whether the option was set, so a "
 "separate handler class is provided.  It is used in the same way as :class:"
 "`CGIHandler`, i.e., by calling ``IISCGIHandler().run(app)``, where ``app`` "
 "is the WSGI application object you wish to invoke."
 msgstr ""
+"No hay forma de que el código CGI detecte cuándo la opción está activada, "
+"por lo que se ofrece una clase gestora separada. Se usa de la misma forma "
+"que :class:`CGIHandler`, p.e. llamando a ``IISCGIHandler().run(app)``, donde "
+"``app`` es el objeto aplicación WSGI que se desea invocar."
 
-#: ../../library/wsgiref.rst:503
+#: ../Doc/library/wsgiref.rst:501
 msgid ""
 "Similar to :class:`CGIHandler`, but instead of using the :mod:`sys` and :mod:"
 "`os` modules, the CGI environment and I/O streams are specified explicitly. "
@@ -733,12 +786,13 @@ msgid ""
 "multithread`` and ``wsgi.multiprocess`` flags for any applications run by "
 "the handler instance."
 msgstr ""
-":class:`CGIHandler` に似ていますが、 :mod:`sys` と :mod:`os` モジュールを使う"
-"代わりに CGI 環境と I/O ストリームを明示的に指定します。 *multithread* と "
-"*multiprocess* の値は、ハンドラインスタンスにより実行されるアプリケーション"
-"の ``wsgi.multithread`` と ``wsgi.multiprocess`` フラグの設定に使われます。"
+"Similar a :class:`CGIHandler`, pero en lugar de usar los módulos :mod:`sys` "
+"y :mod:`os`, el entorno CGI y los flujos de E/S se especifican "
+"explícitamente. Los valores *multithread* y *multiprocess* se pasan a las "
+"aplicaciones ejecutadas por la instancia de gestión como ``wsgi."
+"multithread`` y ``wsgi.multiprocess``."
 
-#: ../../library/wsgiref.rst:509
+#: ../Doc/library/wsgiref.rst:507
 msgid ""
 "This class is a subclass of :class:`SimpleHandler` intended for use with "
 "software other than HTTP \"origin servers\".  If you are writing a gateway "
@@ -746,23 +800,25 @@ msgid ""
 "``Status:`` header to send an HTTP status, you probably want to subclass "
 "this instead of :class:`SimpleHandler`."
 msgstr ""
-"このクラスは :class:`SimpleHandler` のサブクラスで、HTTP の \"本サーバ\" でな"
-"いソフトウェアと使うことを意図しています。もしあなたが ``Status:`` ヘッダを "
-"HTTP ステータスを送信するのに使うようなゲートウェイプロトコルの実装（CGI、"
-"FastCGI、SCGIなど）を書いている場合、おそらく :class:`SimpleHandler` ではなく"
-"このクラスをサブクラス化するとよいでしょう。"
+"Esta clase es una subclase de :class:`SimpleHandler` para usarse con "
+"servidores HTTP que no reciben peticiones directas de Internet, *HTTP origin "
+"servers*. Al escribir una implementación de un protocolo de pasarela, como "
+"CGI, FastCGI, SCGI, etcétera, que use una cabecera ``Status:`` para enviar "
+"un estado HTTP, probablemente sea adecuado heredar de esta clase, en lugar "
+"de :class:`SimpleHandler`."
 
-#: ../../library/wsgiref.rst:518
+#: ../Doc/library/wsgiref.rst:516
 msgid ""
 "Similar to :class:`BaseCGIHandler`, but designed for use with HTTP origin "
 "servers.  If you are writing an HTTP server implementation, you will "
 "probably want to subclass this instead of :class:`BaseCGIHandler`."
 msgstr ""
-":class:`BaseCGIHandler` と似ていますが、HTTP の本サーバと使うためにデザインさ"
-"れています。もしあなたが HTTP サーバ実装を書いている場合、おそらく :class:"
-"`BaseCGIHandler` ではなくこのクラスをサブクラス化するとよいでしょう。"
+"Similar a :class:`BaseCGIHandler` pero diseñada para usarse con servidores "
+"que reciban peticiones directamente de Internet, o *HTTP origin servers*. Al "
+"escribir una implementación de un servidor HTTP, probablemente prefiera "
+"heredar de esta clase en lugar de :class:`BaseCGIHandler`."
 
-#: ../../library/wsgiref.rst:522
+#: ../Doc/library/wsgiref.rst:520
 msgid ""
 "This class is a subclass of :class:`BaseHandler`.  It overrides the :meth:"
 "`__init__`, :meth:`get_stdin`, :meth:`get_stderr`, :meth:`add_cgi_vars`, :"
@@ -771,96 +827,106 @@ msgid ""
 "streams are stored in the :attr:`stdin`, :attr:`stdout`, :attr:`stderr`, "
 "and :attr:`environ` attributes."
 msgstr ""
-"このクラスは :class:`BaseHandler` のサブクラスです。これは :meth:"
-"`__init__` 、 :meth:`get_stdin` 、 :meth:`get_stderr` 、 :meth:"
-"`add_cgi_vars` 、 :meth:`_write` 、 :meth:`_flush` をオーバーライドして、コン"
-"ストラクタから明示的に環境とストリームを設定するようにしています。与えられた"
-"環境とストリームは :attr:`stdin` 、 :attr:`stdout` 、 :attr:`stderr` それに :"
-"attr:`environ` 属性に保存されています。"
+"Esta clase es una subclase de :class:`BaseHandler`. Sobreescribe los "
+"métodos :meth:`__init__`, :meth:`get_stdin`, :meth:`get_stderr`, :meth:"
+"`add_cgi_vars`, :meth:`_write` y :meth:`_flush` para soportar el uso "
+"explícito del entorno y los flujos a partir del constructor. El entorno y "
+"los flujos especificados se almacenan en los atributos :attr:`stdin`, :attr:"
+"`stdout`, :attr:`stderr` y :attr:`environ`."
 
-#: ../../library/wsgiref.rst:529
+#: ../Doc/library/wsgiref.rst:527
 msgid ""
 "The :meth:`~io.BufferedIOBase.write` method of *stdout* should write each "
 "chunk in full, like :class:`io.BufferedIOBase`."
 msgstr ""
+"El método :meth:`~io.BufferedIOBase.write` de *stdout* podría escribir cada "
+"fragmento de información completamente, como :class:`io.BufferedIOBase`."
 
-#: ../../library/wsgiref.rst:535
+#: ../Doc/library/wsgiref.rst:533
 msgid ""
 "This is an abstract base class for running WSGI applications.  Each instance "
 "will handle a single HTTP request, although in principle you could create a "
 "subclass that was reusable for multiple requests."
 msgstr ""
-"これは WSGI アプリケーションを実行するための抽象ベースクラスです。それぞれの"
-"インスタンスは一つの HTTP リクエストを処理します。しかし原理上は複数のリクエ"
-"スト用に再利用可能なサブクラスを作成することができます。"
+"Esta es una clase base abstracta para ejecutar aplicaciones WSGI. Cada "
+"instancia gestionará una sola petición HTTP, aunque en principio se podría "
+"crear una subclase reutilizable para múltiples peticiones."
 
-#: ../../library/wsgiref.rst:539
+#: ../Doc/library/wsgiref.rst:537
 msgid ""
 ":class:`BaseHandler` instances have only one method intended for external "
 "use:"
 msgstr ""
-":class:`BaseHandler` インスタンスは外部から利用されるたった一つのメソッドを持"
-"ちます:"
+"Las instancias de :class:`BaseHandler` tiene un sólo método para uso externo:"
 
-#: ../../library/wsgiref.rst:544
+#: ../Doc/library/wsgiref.rst:542
 msgid "Run the specified WSGI application, *app*."
-msgstr "指定された WSGI アプリケーション、*app* を実行します。"
+msgstr "Ejecuta la aplicación WSGI *app* indicada."
 
-#: ../../library/wsgiref.rst:546
+#: ../Doc/library/wsgiref.rst:544
 msgid ""
 "All of the other :class:`BaseHandler` methods are invoked by this method in "
 "the process of running the application, and thus exist primarily to allow "
 "customizing the process."
 msgstr ""
-"その他のすべての :class:`BaseHandler` のメソッドはアプリケーション実行プロセ"
-"スでこのメソッドから呼ばれます。したがって、それらは主にそのプロセスのカスタ"
-"マイズのために存在しています。"
+"Todos los otros métodos de :class:`BaseHandler` se invocan por este método "
+"en el proceso de ejecutar la aplicación, es decir, existen principalmente "
+"para permitir personalizar el proceso."
 
-#: ../../library/wsgiref.rst:550
+#: ../Doc/library/wsgiref.rst:548
 msgid "The following methods MUST be overridden in a subclass:"
-msgstr "以下のメソッドはサブクラスでオーバーライドされなければいけません:"
+msgstr "Los métodos siguientes DEBEN sobrescribirse en una subclase:"
 
-#: ../../library/wsgiref.rst:555
+#: ../Doc/library/wsgiref.rst:553
 msgid ""
 "Buffer the bytes *data* for transmission to the client.  It's okay if this "
 "method actually transmits the data; :class:`BaseHandler` just separates "
 "write and flush operations for greater efficiency when the underlying system "
 "actually has such a distinction."
 msgstr ""
-"バイト列の *data* をクライアントへの転送用にバッファします。このメソッドが実"
-"際にデータを転送しても OK です: 下部システムが実際にそのような区別をしている"
-"場合に効率をより良くするために、 :class:`BaseHandler` は書き出しとフラッシュ"
-"操作を分けているからです。"
+"Enviar los bytes *data* para la transmisión al cliente. Es correcto que este "
+"método realmente transmita la información. La clase :class:`BaseHandler` "
+"simplemente separa las operaciones de escritura y liberación para una mayor "
+"eficiencia cuando el sistema subyacente realmente hace esa distinción."
 
-#: ../../library/wsgiref.rst:563
+#: ../Doc/library/wsgiref.rst:561
 msgid ""
 "Force buffered data to be transmitted to the client.  It's okay if this "
 "method is a no-op (i.e., if :meth:`_write` actually sends the data)."
 msgstr ""
-"バッファされたデータをクライアントに強制的に転送します。このメソッドは何もし"
-"なくても OK です（すなわち、 :meth:`_write` が実際にデータを送る場合）。"
+"Forzar la transmisión de los datos en el búfer al cliente. Es correcto si "
+"este método no es operativo, p.e., si :meth:`_write` realmente envía los "
+"datos."
 
-#: ../../library/wsgiref.rst:569
+#: ../Doc/library/wsgiref.rst:567
 msgid ""
 "Return an object compatible with :class:`~wsgiref.types.InputStream` "
 "suitable for use as the ``wsgi.input`` of the request currently being "
 "processed."
 msgstr ""
+"Retorna un objeto compatible con :class:`~wsgiref.types.InputStream`, "
+"apropiado para usar como ``wsgi.input`` de la petición en proceso "
+"actualmente."
 
-#: ../../library/wsgiref.rst:576
+#: ../Doc/library/wsgiref.rst:574
 msgid ""
 "Return an object compatible with :class:`~wsgiref.types.ErrorStream` "
 "suitable for use as the ``wsgi.errors`` of the request currently being "
 "processed."
 msgstr ""
+"Retorna un objeto compatible con :class:`~wsgiref.types.ErrorStream`, "
+"apropiado para usar como ``wsgi.errors`` de la petición en proceso "
+"actualmente."
 
-#: ../../library/wsgiref.rst:583
+#: ../Doc/library/wsgiref.rst:581
 msgid ""
 "Insert CGI variables for the current request into the :attr:`environ` "
 "attribute."
-msgstr "現在のリクエストの CGI 変数を :attr:`environ` 属性に追加します。"
+msgstr ""
+"Inserta las variables CGI para la petición actual en el atributo :attr:"
+"`environ`."
 
-#: ../../library/wsgiref.rst:585
+#: ../Doc/library/wsgiref.rst:583
 msgid ""
 "Here are some other methods and attributes you may wish to override. This "
 "list is only a summary, however, and does not include every method that can "
@@ -868,46 +934,47 @@ msgid ""
 "additional information before attempting to create a customized :class:"
 "`BaseHandler` subclass."
 msgstr ""
-"オーバーライドされることの多いメソッド及び属性を以下に挙げます。しかし、この"
-"リストは単にサマリであり、オーバーライド可能なすべてのメソッドは含んでいませ"
-"ん。カスタマイズした :class:`BaseHandler` サブクラスを作成しようとする前に "
-"docstring やソースコードでさらなる情報を調べてください。"
+"A continuación se describen algunos métodos y atributos más que podría ser "
+"interesante sobrescribir. Esta lista es sólo un sumario, sin embargo, y no "
+"incluye cada método que puede ser sobrescrito. Conviene consultar las "
+"docstrings y el código fuente para obtener información adicional antes de "
+"intentar crear una subclase de :class:`BaseHandler` personalizada."
 
-#: ../../library/wsgiref.rst:591
+#: ../Doc/library/wsgiref.rst:589
 msgid "Attributes and methods for customizing the WSGI environment:"
-msgstr "WSGI 環境のカスタマイズのための属性とメソッド:"
+msgstr "Atributos y métodos para personalizar el entorno WSGI:"
 
-#: ../../library/wsgiref.rst:596
+#: ../Doc/library/wsgiref.rst:594
 msgid ""
 "The value to be used for the ``wsgi.multithread`` environment variable.  It "
 "defaults to true in :class:`BaseHandler`, but may have a different default "
 "(or be set by the constructor) in the other subclasses."
 msgstr ""
-"``wsgi.multithread`` 環境変数で使われる値。 :class:`BaseHandler` ではデフォル"
-"トが true ですが、別のサブクラスではデフォルトで（またはコンストラクタによっ"
-"て設定されて）異なる値を持つことがあります。"
+"El valor a usar en la variable de entorno ``wsgi.multithread``. Por defecto "
+"es cierto en :class:`BaseHandler`, pero puede tener un valor por defecto "
+"distinto (o establecerse en el constructor) en otras subclases."
 
-#: ../../library/wsgiref.rst:603
+#: ../Doc/library/wsgiref.rst:601
 msgid ""
 "The value to be used for the ``wsgi.multiprocess`` environment variable.  It "
 "defaults to true in :class:`BaseHandler`, but may have a different default "
 "(or be set by the constructor) in the other subclasses."
 msgstr ""
-"``wsgi.multiprocess`` 環境変数で使われる値。 :class:`BaseHandler` ではデフォ"
-"ルトが true ですが、別のサブクラスではデフォルトで（またはコンストラクタに"
-"よって設定されて）異なる値を持つことがあります。"
+"El valor a usar en la variable de entorno ``wsgi.multiprocess``. Por defecto "
+"es cierto en :class:`BaseHandler`, pero puede tener un valor por defecto "
+"distinto (o establecerse en el constructor) en otras subclases."
 
-#: ../../library/wsgiref.rst:610
+#: ../Doc/library/wsgiref.rst:608
 msgid ""
 "The value to be used for the ``wsgi.run_once`` environment variable.  It "
 "defaults to false in :class:`BaseHandler`, but :class:`CGIHandler` sets it "
 "to true by default."
 msgstr ""
-"``wsgi.run_once`` 環境変数で使われる値。 :class:`BaseHandler` ではデフォルト"
-"が false ですが、 :class:`CGIHandler` はデフォルトでこれを true に設定しま"
-"す。"
+"El valor a usar en la variable de entorno ``wsgi.run_once``. Por defecto es "
+"falso en :class:`BaseHandler`, pero en :class:`CGIHandler` es cierto por "
+"defecto."
 
-#: ../../library/wsgiref.rst:617
+#: ../Doc/library/wsgiref.rst:615
 msgid ""
 "The default environment variables to be included in every request's WSGI "
 "environment.  By default, this is a copy of ``os.environ`` at the time that :"
@@ -916,13 +983,14 @@ msgid ""
 "considered read-only, since the default value is shared between multiple "
 "classes and instances."
 msgstr ""
-"すべてのリクエストの WSGI 環境に含まれるデフォルトの環境変数。デフォルトで"
-"は :mod:`wsgiref.handlers` がインポートされた時点の ``os.environ`` のコピーで"
-"すが、サブクラスはクラスまたはインスタンスレベルでそれら自身のものを作ること"
-"ができます。デフォルト値は複数のクラスとインスタンスで共有されるため、この辞"
-"書は読み出し専用と考えるべきだという点に注意してください。"
+"Las variables de entorno por defecto que se incluirán en el entorno WSGI de "
+"cada petición. Por defecto, es una copia de ``os.environ`` cuando se "
+"importa :mod:`wsgiref.handlers`, pero otras subclases pueden crear las suyas "
+"propias a nivel de clase o de instancia. Se debe tener en cuenta que el "
+"diccionario se debe considerar como de sólo lectura, ya que el valor por "
+"defecto se comparte entre múltiples clases e instancias."
 
-#: ../../library/wsgiref.rst:627
+#: ../Doc/library/wsgiref.rst:625
 msgid ""
 "If the :attr:`origin_server` attribute is set, this attribute's value is "
 "used to set the default ``SERVER_SOFTWARE`` WSGI environment variable, and "
@@ -930,32 +998,33 @@ msgid ""
 "for handlers (such as :class:`BaseCGIHandler` and :class:`CGIHandler`) that "
 "are not HTTP origin servers."
 msgstr ""
-":attr:`origin_server` 属性が設定されている場合、この属性の値がデフォルトの "
-"``SERVER_SOFTWARE`` WSGI 環境変数の設定や HTTP レスポンス中のデフォルトの "
-"``Server:`` ヘッダの設定に使われます。これは (:class:`BaseCGIHandler` や :"
-"class:`CGIHandler` のような) HTTP オリジンサーバでないハンドラでは無視されま"
-"す。"
+"Si el atributo :attr:`origin_server` tiene valor, éste se usa para "
+"establecer el valor por defecto de la variable de entorno WSGI "
+"``SERVER_SOFTWARE`` y un cabecera ``Server:`` por defecto en las respuestas "
+"HTTP. Las clases gestoras que no son *HTTP origin servers*, como :class:"
+"`BaseCGIHandler` y :class:`CGIHandler`, ignoran este atributo."
 
-#: ../../library/wsgiref.rst:633
+#: ../Doc/library/wsgiref.rst:631
 msgid ""
 "The term \"Python\" is replaced with implementation specific term like "
 "\"CPython\", \"Jython\" etc."
 msgstr ""
-"\"Python\" という語は \"CPython\" や \"Jython\" などのような個別実装の語に置"
-"き換えられました。"
+"El término \"Python\" se reemplaza con el término específico correspondiente "
+"a la implementación del intérprete, como \"CPython\", \"Jython\", etc."
 
-#: ../../library/wsgiref.rst:639
+#: ../Doc/library/wsgiref.rst:637
 msgid ""
 "Return the URL scheme being used for the current request.  The default "
 "implementation uses the :func:`guess_scheme` function from :mod:`wsgiref."
 "util` to guess whether the scheme should be \"http\" or \"https\", based on "
 "the current request's :attr:`environ` variables."
 msgstr ""
-"現在のリクエストで使われている URL スキームを返します。デフォルト実装は :mod:"
-"`wsgiref.util` の :func:`guess_scheme` を使い、現在のリクエストの :attr:"
-"`environ` 変数に基づいてスキームが\"http\" か \"https\" かを推測します。"
+"Retorna el esquema usado en la URL para la petición actual. La "
+"implementación por defecto utiliza la función :func:`guess_scheme` de :mod:"
+"`wsgiref.util` para adivinar si el esquema debería ser \"http\" o \"https\", "
+"basándose en las variables de :attr:`environ` de la petición actual."
 
-#: ../../library/wsgiref.rst:647
+#: ../Doc/library/wsgiref.rst:645
 msgid ""
 "Set the :attr:`environ` attribute to a fully populated WSGI environment.  "
 "The default implementation uses all of the above methods and attributes, "
@@ -964,12 +1033,19 @@ msgid ""
 "``SERVER_SOFTWARE`` key if not present, as long as the :attr:`origin_server` "
 "attribute is a true value and the :attr:`server_software` attribute is set."
 msgstr ""
+"Establece el atributo :attr:`environ` a un entorno WSGI completo. La "
+"implementación por defecto utiliza todos los métodos y atributos "
+"anteriormente mencionados, más los métodos :meth:`get_stdin`, :meth:"
+"`get_stderr` y :meth:`add_cgi_vars`, y el atributo :attr:"
+"`wsgi_file_wrapper`. También incluye una clave ``SERVER_SOFTWARE`` si no "
+"existe, siempre y cuando el atributo :attr:`origin_server` tiene un valor "
+"válido y el atributo :attr:`server_software` está establecido."
 
-#: ../../library/wsgiref.rst:654
+#: ../Doc/library/wsgiref.rst:652
 msgid "Methods and attributes for customizing exception handling:"
-msgstr "例外処理のカスタマイズのためのメソッドと属性:"
+msgstr "Métodos y atributos para personalizar el manejo de excepciones:"
 
-#: ../../library/wsgiref.rst:659
+#: ../Doc/library/wsgiref.rst:657
 msgid ""
 "Log the *exc_info* tuple in the server log.  *exc_info* is a ``(type, value, "
 "traceback)`` tuple.  The default implementation simply writes the traceback "
@@ -978,104 +1054,115 @@ msgid ""
 "traceback to an administrator, or whatever other action may be deemed "
 "suitable."
 msgstr ""
-"*exc_info* タプルをサーバログに記録します。*exc_info* は ``(type, value, "
-"traceback)`` のタプルです。デフォルトの実装は単純にトレースバックをリクエスト"
-"の ``wsgi.errors`` ストリームに書き出してフラッシュします。サブクラスはこのメ"
-"ソッドをオーバーライドしてフォーマットを変更したり出力先の変更、トレースバッ"
-"クを管理者にメールしたりその他適切と思われるいかなるアクションも取ることがで"
-"きます。"
+"Envía la tupla *exc_info* al registro del servidor. *exc_info* es un tupla "
+"``(type, value, traceback)``. La implementación por defecto simplemente "
+"escribe el seguimiento de la pila en el flujo ``wsgi.errors`` de la petición "
+"y lo vacía. Las subclases pueden sobrescribir éste método para cambiar el "
+"formato o redirigir la salida, enviar mensajes de correo con el seguimiento "
+"de pila a un administrador o cualquier otra acción que se considere adecuada."
 
-#: ../../library/wsgiref.rst:668
+#: ../Doc/library/wsgiref.rst:666
 msgid ""
 "The maximum number of frames to include in tracebacks output by the default :"
 "meth:`log_exception` method.  If ``None``, all frames are included."
 msgstr ""
-"デフォルトの :meth:`log_exception` メソッドで出力されるトレースバック出力に含"
-"まれる最大のフレーム数です。 ``None`` ならば、すべてのフレームが含まれます。"
+"El máximo número de marcos a incluir en la salida de seguimientos de pilas "
+"por el método por defecto :meth:`log_exception`. Si vale ``None``, se "
+"incluyen todos los marcos."
 
-#: ../../library/wsgiref.rst:674
+#: ../Doc/library/wsgiref.rst:672
 msgid ""
 "This method is a WSGI application to generate an error page for the user.  "
 "It is only invoked if an error occurs before headers are sent to the client."
 msgstr ""
-"このメソッドは、ユーザに対してエラーページを出力する WSGI アプリケーションで"
-"す。これはクライアントにヘッダが送出される前にエラーが発生した場合にのみ呼び"
-"出されます。"
+"Este método es una aplicación WSGI para generar una página de error para el "
+"usuario. Sólo se invoca si un error ocurre antes de enviar las cabeceras al "
+"cliente."
 
-#: ../../library/wsgiref.rst:677
+#: ../Doc/library/wsgiref.rst:675
 msgid ""
-"This method can access the current error using ``sys.exception()``, and "
-"should pass that information to *start_response* when calling it (as "
-"described in the \"Error Handling\" section of :pep:`3333`)."
+"This method can access the current error information using ``sys."
+"exc_info()``, and should pass that information to *start_response* when "
+"calling it (as described in the \"Error Handling\" section of :pep:`3333`)."
 msgstr ""
+"Este método puede acceder a la información de error actual usando ``sys."
+"exc_info()`` y debería pasar esa información a *start_response* cuando es "
+"llamada, tal y como se describe en la sección \"Error Handling\" de :pep:"
+"`3333`."
 
-#: ../../library/wsgiref.rst:681
+#: ../Doc/library/wsgiref.rst:679
 msgid ""
 "The default implementation just uses the :attr:`error_status`, :attr:"
 "`error_headers`, and :attr:`error_body` attributes to generate an output "
 "page.  Subclasses can override this to produce more dynamic error output."
 msgstr ""
-"デフォルト実装は単に :attr:`error_status` 、 :attr:`error_headers` 、 :attr:"
-"`error_body` 属性を出力ページの生成に使います。サブクラスではこれをオーバーラ"
-"イドしてもっと動的なエラー出力をすることができます。"
+"La implementación por defecto sólo utiliza los atributos :attr:"
+"`error_status`, :attr:`error_headers` y :attr:`error_body` para generar una "
+"página de salida. Las subclases pueden sobrescribir éste para producir una "
+"salida de error dinámica mejor."
 
-#: ../../library/wsgiref.rst:685
+#: ../Doc/library/wsgiref.rst:683
 msgid ""
 "Note, however, that it's not recommended from a security perspective to spit "
 "out diagnostics to any old user; ideally, you should have to do something "
 "special to enable diagnostic output, which is why the default implementation "
 "doesn't include any."
 msgstr ""
-"しかし、セキュリティの観点からは診断をあらゆるユーザに吐き出すことは推奨され"
-"ないことに気をつけてください; 理想的には、診断的な出力を有効にするには何らか"
-"の特別なことをする必要があるようにすべきで、これがデフォルト実装では何も含ま"
-"れていない理由です。"
+"Hay que tener en cuenta, sin embargo, que no se recomienda, desde una "
+"perspectiva de seguridad, mostrar información de diagnóstico a cualquier "
+"usuario antiguo. Idealmente, se debería hacer algo especial para activar la "
+"salida de información de diagnóstico, motivo por el que la implementación "
+"por defecto no incluye ninguna."
 
-#: ../../library/wsgiref.rst:693
+#: ../Doc/library/wsgiref.rst:691
 msgid ""
 "The HTTP status used for error responses.  This should be a status string as "
 "defined in :pep:`3333`; it defaults to a 500 code and message."
 msgstr ""
-"エラーレスポンスで使われる HTTP ステータスです。これは :pep:`3333` で定義され"
-"ているステータス文字列です; デフォルトは 500 コードとメッセージです。"
+"El estado HTTP utilizado para las respuestas de error. Se debería utilizar "
+"una de las cadenas de estado definidas en :pep:`3333`. Por defecto es un "
+"código 500 y un mensaje."
 
-#: ../../library/wsgiref.rst:699
+#: ../Doc/library/wsgiref.rst:697
 msgid ""
 "The HTTP headers used for error responses.  This should be a list of WSGI "
 "response headers (``(name, value)`` tuples), as described in :pep:`3333`.  "
 "The default list just sets the content type to ``text/plain``."
 msgstr ""
-"エラーレスポンスで使われる HTTP ヘッダです。これは :pep:`3333` で述べられてい"
-"るような、 WSGI レスポンスヘッダ (``(name, value)`` タプル) のリストであるべ"
-"きです。デフォルトのリストはコンテントタイプを ``text/plain`` にセットしてい"
-"るだけです。"
+"Las cabeceras HTTP utilizadas por las respuestas de error. Debería tratarse "
+"de una lista de cabeceras de respuesta WSGI (tuplas ``(name, value)``), tal "
+"y como se describe en :pep:`3333`. La lista por defecto simplemente "
+"establece el tipo de contenido a ``text/plain``."
 
-#: ../../library/wsgiref.rst:706
+#: ../Doc/library/wsgiref.rst:704
 msgid ""
 "The error response body.  This should be an HTTP response body bytestring. "
 "It defaults to the plain text, \"A server error occurred.  Please contact "
 "the administrator.\""
 msgstr ""
-"エラーレスポンスボディ。これは HTTP レスポンスのボディバイト文字列であるべき"
-"です。これはデフォルトではプレーンテキストで \"A server error occurred.  "
-"Please contact the administrator.\" です。"
+"El cuerpo de la respuesta de error. Debería ser una cadena de bytes con el "
+"cuerpo de la respuesta HTTP. Por defecto contiene el texto plano *A server "
+"error occurred. Please contact the administrator.*"
 
-#: ../../library/wsgiref.rst:710
+#: ../Doc/library/wsgiref.rst:708
 msgid ""
 "Methods and attributes for :pep:`3333`'s \"Optional Platform-Specific File "
 "Handling\" feature:"
 msgstr ""
-":pep:`3333` の \"オプションのプラットフォーム固有のファイルハンドリング\" 機"
-"能のためのメソッドと属性:"
+"Métodos y atributos para la funcionalidad \"Optional Platform-Specific File "
+"Handling\" de :pep:`3333`:"
 
-#: ../../library/wsgiref.rst:716
+#: ../Doc/library/wsgiref.rst:714
 msgid ""
 "A ``wsgi.file_wrapper`` factory, compatible with :class:`wsgiref.types."
 "FileWrapper`, or ``None``.  The default value of this attribute is the :"
 "class:`wsgiref.util.FileWrapper` class."
 msgstr ""
+"Una fábrica ``wsgi.file_wrapper`` compatible con :class:`wsgiref.types."
+"FileWrapper`, o ``None``. El valor por defecto de este atributo es la clase :"
+"class:`wsgiref.util.FileWrapper`."
 
-#: ../../library/wsgiref.rst:723
+#: ../Doc/library/wsgiref.rst:721
 msgid ""
 "Override to implement platform-specific file transmission.  This method is "
 "called only if the application's return value is an instance of the class "
@@ -1084,46 +1171,48 @@ msgid ""
 "default transmission code will not be executed. The default implementation "
 "of this method just returns a false value."
 msgstr ""
-"オーバーライドしてプラットフォーム固有のファイル転送を実装します。このメソッ"
-"ドはアプリケーションの戻り値が :attr:`wsgi_file_wrapper` 属性で指定されたクラ"
-"スのインスタンスの場合にのみ呼ばれます。これはファイルの転送が成功できた場合"
-"には true を返して、デフォルトの転送コードが実行されないようにするべきです。"
-"このデフォルトの実装は単に false 値を返します。"
+"Sobrescribir para implementar la transmisión de ficheros específica para la "
+"plataforma. Este método se llama sólo si el valor de retorno de la "
+"aplicación es una instancia de la clase especificada por el atributo :attr:"
+"`wsgi_file_wrapper`. Debería retornar un valor cierto si fue capaz de "
+"transmitir correctamente el fichero, de modo que el código por defecto de "
+"transmisión no será ejecutado. La implementación por defecto de este método "
+"simplemente retorna un valor falso."
 
-#: ../../library/wsgiref.rst:730
+#: ../Doc/library/wsgiref.rst:728
 msgid "Miscellaneous methods and attributes:"
-msgstr "その他のメソッドと属性:"
+msgstr "Métodos y atributos varios:"
 
-#: ../../library/wsgiref.rst:735
+#: ../Doc/library/wsgiref.rst:733
 msgid ""
 "This attribute should be set to a true value if the handler's :meth:`_write` "
 "and :meth:`_flush` are being used to communicate directly to the client, "
 "rather than via a CGI-like gateway protocol that wants the HTTP status in a "
 "special ``Status:`` header."
 msgstr ""
-"この属性はハンドラの :meth:`_write` と :meth:`_flush` が、特別に ``Status:`` "
-"ヘッダに HTTP ステータスを求めるような CGI 風のゲートウェイプロトコル経由でな"
-"く、クライアントと直接通信をするような場合には true 値に設定されているべきで"
-"す。"
+"Este atributo debería establecerse a cierto si los métodos :meth:`_write` y :"
+"meth:`_flush` están siendo usados para comunicar directamente al cliente, en "
+"lugar de usar un protocolo de pasarela CGI que requiere el estado HTTP en "
+"una cabecera ``Status:`` especial."
 
-#: ../../library/wsgiref.rst:740
+#: ../Doc/library/wsgiref.rst:738
 msgid ""
 "This attribute's default value is true in :class:`BaseHandler`, but false "
 "in :class:`BaseCGIHandler` and :class:`CGIHandler`."
 msgstr ""
-"この属性のデフォルト値は :class:`BaseHandler` では true ですが、 :class:"
-"`BaseCGIHandler` と :class:`CGIHandler` では false です。"
+"El valor por defecto de este atributo es cierto en :class:`BaseHandler`, "
+"pero en :class:`BaseCGIHandler` y :class:`CGIHandler` es falso."
 
-#: ../../library/wsgiref.rst:746
+#: ../Doc/library/wsgiref.rst:744
 msgid ""
 "If :attr:`origin_server` is true, this string attribute is used to set the "
 "HTTP version of the response set to the client.  It defaults to ``\"1.0\"``."
 msgstr ""
-":attr:`origin_server` が true の場合、この文字列属性はクライアントへのレスポ"
-"ンスセットの HTTP バージョンの設定に使われます。デフォルトは ``\"1.0\"`` で"
-"す。"
+"Si :attr:`origin_server` es cierto, este atributo de tipo cadena se usa para "
+"establecer la versión HTTP de la respuesta enviada al cliente. Por defecto "
+"es ``\"1.0\"``."
 
-#: ../../library/wsgiref.rst:752
+#: ../Doc/library/wsgiref.rst:750
 msgid ""
 "Transcode CGI variables from ``os.environ`` to :pep:`3333` \"bytes in "
 "unicode\" strings, returning a new dictionary.  This function is used by :"
@@ -1134,67 +1223,96 @@ msgid ""
 "bytes, but the system encoding used by Python to decode it is anything other "
 "than ISO-8859-1 (e.g. Unix systems using UTF-8)."
 msgstr ""
+"Transcodifica las variables CGI de ``os.environ`` a cadenas \"bytes in "
+"unicode\" definidas en :pep:`3333`, retornando un nuevo diccionario. Esta "
+"función se usa en :class:`CGIHandler` y :class:`IISCGIHandler` en lugar de "
+"usar directamente ``os.environ``, lo que no es necesariamente compatible con "
+"EWGI en todas las plataformas y servidores web usando Python 3 -- "
+"específicamente, aquellas en las que el entorno actual del sistema operativo "
+"es Unicode, p.e. Windows, o en las que el entorno está en bytes, pero la "
+"codificación del sistema usada por Python para descodificar lo es cualquier "
+"otro que ISO-8859-1, por ejemplo, sistemas UNIX que usen UTF-8."
 
-#: ../../library/wsgiref.rst:761
+#: ../Doc/library/wsgiref.rst:759
 msgid ""
 "If you are implementing a CGI-based handler of your own, you probably want "
 "to use this routine instead of just copying values out of ``os.environ`` "
 "directly."
 msgstr ""
+"Cuando se está implementando un gestor basado en CGI propio, probablemente "
+"se requiera usar esta rutina en lugar de sólo copiar directamente los "
+"valores de ``os.environ``."
 
-#: ../../library/wsgiref.rst:769
+#: ../Doc/library/wsgiref.rst:767
 msgid ":mod:`wsgiref.types` -- WSGI types for static type checking"
 msgstr ""
+":mod:`wsgiref.types` --- Tipos de WSGI para validadores estáticos de tipos"
 
-#: ../../library/wsgiref.rst:775
+#: ../Doc/library/wsgiref.rst:773
 msgid ""
 "This module provides various types for static type checking as described in :"
 "pep:`3333`."
 msgstr ""
+"Este módulo provee varios tipos para validadores estáticos de tipos, como se "
+"describe en :pep:`3333`."
 
-#: ../../library/wsgiref.rst:783
+#: ../Doc/library/wsgiref.rst:781
 msgid ""
 "A :class:`typing.Protocol` describing `start_response() <https://peps.python."
 "org/pep-3333/#the-start-response-callable>`_ callables (:pep:`3333`)."
 msgstr ""
+"Un :class:`typing.Protocol` que describe los invocables `start_response() "
+"<https://peps.python.org/pep-3333/#the-start-response-callable>`_ (:pep:"
+"`3333`)."
 
-#: ../../library/wsgiref.rst:789
+#: ../Doc/library/wsgiref.rst:787
 msgid "A type alias describing a WSGI environment dictionary."
-msgstr ""
+msgstr "Un alias de tipo que describe un diccionario de entorno WSGI."
 
-#: ../../library/wsgiref.rst:793
+#: ../Doc/library/wsgiref.rst:791
 msgid "A type alias describing a WSGI application callable."
-msgstr ""
+msgstr "Un alias de tipo que describe una aplicación WSGI invocable."
 
-#: ../../library/wsgiref.rst:797
+#: ../Doc/library/wsgiref.rst:795
 msgid ""
 "A :class:`typing.Protocol` describing a `WSGI Input Stream <https://peps."
 "python.org/pep-3333/#input-and-error-streams>`_."
 msgstr ""
+"Un :class:`typing.Protocol` que describe un `flujo de entrada WSGI <https://"
+"peps.python.org/pep-3333/#input-and-error-streams>`_."
 
-#: ../../library/wsgiref.rst:802
+#: ../Doc/library/wsgiref.rst:800
 msgid ""
 "A :class:`typing.Protocol` describing a `WSGI Error Stream <https://peps."
 "python.org/pep-3333/#input-and-error-streams>`_."
 msgstr ""
+"Un :class:`typing.Protocol` que describe un `flujo de error WSGI <https://"
+"peps.python.org/pep-3333/#input-and-error-streams>`_."
 
-#: ../../library/wsgiref.rst:807
+#: ../Doc/library/wsgiref.rst:805
 msgid ""
 "A :class:`typing.Protocol` describing a `file wrapper <https://peps.python."
 "org/pep-3333/#optional-platform-specific-file-handling>`_. See :class:"
 "`wsgiref.util.FileWrapper` for a concrete implementation of this protocol."
 msgstr ""
+"Un :class:`typing.Protocol` que describe un `envoltorio de archivo <https://"
+"peps.python.org/pep-3333/#optional-platform-specific-file-handling>`_. Vea :"
+"class:`wsgiref.util.FileWrapper` para una implementación concreta de este "
+"protocolo."
 
-#: ../../library/wsgiref.rst:814
+#: ../Doc/library/wsgiref.rst:812
 msgid "Examples"
-msgstr "使用例"
+msgstr "Ejemplos"
 
-#: ../../library/wsgiref.rst:816
+#: ../Doc/library/wsgiref.rst:814
 msgid "This is a working \"Hello World\" WSGI application::"
-msgstr "これは動作する \"Hello World\" WSGIアプリケーションです::"
+msgstr "Ésta es una aplicación WSGI \"Hello World\" que funciona:"
 
-#: ../../library/wsgiref.rst:845
+#: ../Doc/library/wsgiref.rst:843
 msgid ""
 "Example of a WSGI application serving the current directory, accept optional "
 "directory and port number (default: 8000) on the command line::"
 msgstr ""
+"Ejemplo de una aplicación WSGI que sirve el directorio actual, acepta un "
+"directorio opcional y un número de puerto (default: 8000) en la línea de "
+"comandos::"

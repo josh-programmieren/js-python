@@ -1,133 +1,141 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
-# This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) 2001-2021, Python Software Foundation
+# This file is distributed under the same license as the Python en Español
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-# Shin Saito, 2021
-# Yasuyuki ARAKI, 2021
-# yaakiyu, 2022
-# Takanori Suzuki <takanori@takanory.net>, 2022
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python en Español 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-03 14:14+0000\n"
-"PO-Revision-Date: 2021-06-29 13:04+0000\n"
-"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-10-29 22:32-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.2\n"
 
-#: ../../whatsnew/3.9.rst:3
+#: ../Doc/whatsnew/3.9.rst:3
 msgid "What's New In Python 3.9"
-msgstr "What's New In Python 3.9"
+msgstr "Qué hay de nuevo en Python 3.9"
 
-#: ../../whatsnew/3.9.rst:0
+#: ../Doc/whatsnew/3.9.rst
+msgid "Release"
+msgstr "Versión"
+
+#: ../Doc/whatsnew/3.9.rst:5
+msgid "|release|"
+msgstr "|release|"
+
+#: ../Doc/whatsnew/3.9.rst
+msgid "Date"
+msgstr "Fecha"
+
+#: ../Doc/whatsnew/3.9.rst:6
+msgid "|today|"
+msgstr "|today|"
+
+#: ../Doc/whatsnew/3.9.rst
 msgid "Editor"
-msgstr "編集者"
+msgstr "Editor"
 
-#: ../../whatsnew/3.9.rst:5
+#: ../Doc/whatsnew/3.9.rst:7
 msgid "Łukasz Langa"
 msgstr "Łukasz Langa"
 
-#: ../../whatsnew/3.9.rst:45
+#: ../Doc/whatsnew/3.9.rst:47
 msgid ""
 "This article explains the new features in Python 3.9, compared to 3.8. "
 "Python 3.9 was released on October 5, 2020."
 msgstr ""
+"Este artículo explica las nuevas funciones de Python 3.9, en comparación con "
+"3.8. Python 3.9 se lanzó el 5 de octubre de 2020."
 
-#: ../../whatsnew/3.9.rst:48
+#: ../Doc/whatsnew/3.9.rst:50
 msgid "For full details, see the :ref:`changelog <changelog>`."
 msgstr ""
-"全詳細については :ref:`changelog <変更履歴> <changelog>` をご覧ください。"
+"Para obtener detalles completos, consulte el :ref:`changelog <changelog>`."
 
-#: ../../whatsnew/3.9.rst:52
+#: ../Doc/whatsnew/3.9.rst:54
 msgid ":pep:`596` - Python 3.9 Release Schedule"
-msgstr ":pep:`596` - Python 3.9 リリーススケジュール"
+msgstr ":pep:`596` - Programa de lanzamiento de Python 3.9"
 
-#: ../../whatsnew/3.9.rst:56
+#: ../Doc/whatsnew/3.9.rst:58
 msgid "Summary -- Release highlights"
-msgstr "概要 -- リリースハイライト"
+msgstr "Resumen: aspectos destacados de la versión"
 
-#: ../../whatsnew/3.9.rst:61
+#: ../Doc/whatsnew/3.9.rst:63
 msgid "New syntax features:"
-msgstr "新たな文法機能:"
+msgstr "Nuevas funciones de sintaxis:"
 
-#: ../../whatsnew/3.9.rst:63
+#: ../Doc/whatsnew/3.9.rst:65
 msgid ":pep:`584`, union operators added to ``dict``;"
-msgstr ":pep:`584`、 ``dict`` に和集合の演算子が追加されました。"
+msgstr ":pep:`584`, operadores unión agregados a ``dict``;"
 
-#: ../../whatsnew/3.9.rst:64
+#: ../Doc/whatsnew/3.9.rst:66
 msgid ":pep:`585`, type hinting generics in standard collections;"
-msgstr ""
-":pep:`585`、標準コレクション型の型ヒントにおける総称型 (generics) の使用。"
+msgstr ":pep:`585`, genéricos de sugerencia de tipo en colecciones estándar;"
 
-#: ../../whatsnew/3.9.rst:65
+#: ../Doc/whatsnew/3.9.rst:67
 msgid ":pep:`614`, relaxed grammar restrictions on decorators."
-msgstr ":pep:`614`、デコレータの適用における文法的制約の緩和。"
+msgstr ":pep:`614`, restricciones gramaticales relajadas para los decoradores."
 
-#: ../../whatsnew/3.9.rst:67
+#: ../Doc/whatsnew/3.9.rst:69
 msgid "New built-in features:"
-msgstr "新たな組み込み機能:"
+msgstr "Nuevas funciones integradas:"
 
-#: ../../whatsnew/3.9.rst:69
+#: ../Doc/whatsnew/3.9.rst:71
 msgid ":pep:`616`, string methods to remove prefixes and suffixes."
-msgstr ":pep:`616`、prefixとsuffixを削除する文字列メソッド。"
+msgstr ":pep:`616`, métodos de cadena para eliminar prefijos y sufijos."
 
-#: ../../whatsnew/3.9.rst:71
+#: ../Doc/whatsnew/3.9.rst:73
 msgid "New features in the standard library:"
-msgstr "標準ライブラリの新機能:"
+msgstr "Nuevas funciones en la biblioteca estándar:"
 
-#: ../../whatsnew/3.9.rst:73
+#: ../Doc/whatsnew/3.9.rst:75
 msgid ":pep:`593`, flexible function and variable annotations;"
-msgstr ""
-":pep:`593`、より柔軟な変数・関数アノテーション (訳注: ``Annotated`` の導入)。"
+msgstr ":pep:`593`, función flexible y anotaciones variables;"
 
-#: ../../whatsnew/3.9.rst:74
+#: ../Doc/whatsnew/3.9.rst:76
 msgid ""
 ":func:`os.pidfd_open` added that allows process management without races and "
 "signals."
 msgstr ""
-":func:`os.pidfd_open` が追加され、レースやシグナルを使わずにプロセス管理がで"
-"きるようになりました。"
+"Se agregó :func:`os.pidfd_open` que permite la gestión de procesos sin razas "
+"ni señales."
 
-#: ../../whatsnew/3.9.rst:77
+#: ../Doc/whatsnew/3.9.rst:79
 msgid "Interpreter improvements:"
-msgstr "インタプリタの改善:"
+msgstr "Mejoras en el intérprete:"
 
-#: ../../whatsnew/3.9.rst:79
+#: ../Doc/whatsnew/3.9.rst:81
 msgid ""
 ":pep:`573`, fast access to module state from methods of C extension types;"
 msgstr ""
+":pep:`573`, acceso rápido al estado del módulo desde métodos de tipos de "
+"extensión C;"
 
-#: ../../whatsnew/3.9.rst:81
+#: ../Doc/whatsnew/3.9.rst:83
 msgid ":pep:`617`, CPython now uses a new parser based on PEG;"
-msgstr ""
-":pep:`617`、CPython における PEG (Parser Expression Grammar) ベースの新しい構"
-"文解析器の使用。"
+msgstr ":pep:`617`, CPython ahora usa un nuevo analizador basado en PEG;"
 
-#: ../../whatsnew/3.9.rst:82
+#: ../Doc/whatsnew/3.9.rst:84
 msgid ""
 "a number of Python builtins (range, tuple, set, frozenset, list, dict) are "
 "now sped up using :pep:`590` vectorcall;"
 msgstr ""
-"いくつかのPythonの組み込み型（range, tuple, set, frozenset, list, dict） を :"
-"pep:`590` vectorcall を用いて高速化しました。"
+"varias incorporaciones de Python (rango, tupla, conjunto, conjunto "
+"frozenset, lista, dict) ahora se aceleran usando :pep:`590` vectorcall;"
 
-#: ../../whatsnew/3.9.rst:84
+#: ../Doc/whatsnew/3.9.rst:86
 msgid "garbage collection does not block on resurrected objects;"
-msgstr ""
+msgstr "la recolección de basura no bloquea los objetos resucitados;"
 
-#: ../../whatsnew/3.9.rst:85
+#: ../Doc/whatsnew/3.9.rst:87
 msgid ""
 "a number of Python modules (:mod:`_abc`, :mod:`audioop`, :mod:`_bz2`, :mod:"
 "`_codecs`, :mod:`_contextvars`, :mod:`_crypt`, :mod:`_functools`, :mod:"
@@ -135,53 +143,57 @@ msgid ""
 "`time`, :mod:`_weakref`) now use multiphase initialization as defined by PEP "
 "489;"
 msgstr ""
-"いくつかのPython モジュール (:mod:`_abc`, :mod:`audioop`, :mod:`_bz2`, :mod:"
+"varios módulos de Python (:mod:`_abc`, :mod:`audioop`, :mod:`_bz2`, :mod:"
 "`_codecs`, :mod:`_contextvars`, :mod:`_crypt`, :mod:`_functools`, :mod:"
 "`_json`, :mod:`_locale`, :mod:`math`, :mod:`operator`, :mod:`resource`, :mod:"
-"`time`, :mod:`_weakref`) がPEP 489で定義されたマルチフェーズ初期化を利用する"
-"ようになりました。"
+"`time`, :mod:`_weakref`) ahora utilizan la inicialización multifase según lo "
+"definido por PEP 489;"
 
-#: ../../whatsnew/3.9.rst:90
+#: ../Doc/whatsnew/3.9.rst:92
 msgid ""
 "a number of standard library modules (:mod:`audioop`, :mod:`ast`, :mod:"
 "`grp`, :mod:`_hashlib`, :mod:`pwd`, :mod:`_posixsubprocess`, :mod:`random`, :"
 "mod:`select`, :mod:`struct`, :mod:`termios`, :mod:`zlib`) are now using the "
 "stable ABI defined by PEP 384."
 msgstr ""
-"いくつかの標準ライブラリモジュール (:mod:`audioop`, :mod:`ast`, :mod:`grp`, :"
-"mod:`_hashlib`, :mod:`pwd`, :mod:`_posixsubprocess`, :mod:`random`, :mod:"
-"`select`, :mod:`struct`, :mod:`termios`, :mod:`zlib`) がPEP 384で定義された "
-"stable ABI を利用するようになりました。"
+"varios módulos de biblioteca estándar (:mod:`audioop`, :mod:`ast`, :mod:"
+"`grp`, :mod:`_hashlib`, :mod:`pwd`, :mod:`_posixsubprocess`, :mod:`random`, :"
+"mod:`select`, :mod:`struct`, :mod:`termios`, :mod:`zlib`) ahora utilizan la "
+"ABI estable definida por PEP 384."
 
-#: ../../whatsnew/3.9.rst:95
+#: ../Doc/whatsnew/3.9.rst:97
 msgid "New library modules:"
-msgstr "新たなライブラリモジュール:"
+msgstr "Nuevos módulos de biblioteca:"
 
-#: ../../whatsnew/3.9.rst:97
+#: ../Doc/whatsnew/3.9.rst:99
 msgid ""
 ":pep:`615`, the IANA Time Zone Database is now present in the standard "
 "library in the :mod:`zoneinfo` module;"
 msgstr ""
+":pep:`615`, la base de datos de zona horaria de IANA ahora está presente en "
+"la biblioteca estándar en el módulo :mod:`zoneinfo`;"
 
-#: ../../whatsnew/3.9.rst:99
+#: ../Doc/whatsnew/3.9.rst:101
 msgid ""
 "an implementation of a topological sort of a graph is now provided in the "
 "new :mod:`graphlib` module."
 msgstr ""
+"ahora se proporciona una implementación de una especie de gráfico topológico "
+"en el nuevo módulo :mod:`graphlib`."
 
-#: ../../whatsnew/3.9.rst:102
+#: ../Doc/whatsnew/3.9.rst:104
 msgid "Release process changes:"
-msgstr "リリースプロセスの変更:"
+msgstr "Cambios en el proceso de lanzamiento:"
 
-#: ../../whatsnew/3.9.rst:104
+#: ../Doc/whatsnew/3.9.rst:106
 msgid ":pep:`602`, CPython adopts an annual release cycle."
-msgstr ":pep:`602`、CPythonは年次のリリースサイクルを採用します。"
+msgstr ":pep:`602`, CPython adopta un ciclo de lanzamiento anual."
 
-#: ../../whatsnew/3.9.rst:108
+#: ../Doc/whatsnew/3.9.rst:110
 msgid "You should check for DeprecationWarning in your code"
-msgstr "コード中の非推奨警告(DeprecationWarning)をチェックして下さい"
+msgstr "Debe verificar DeprecationWarning en su código"
 
-#: ../../whatsnew/3.9.rst:110
+#: ../Doc/whatsnew/3.9.rst:112
 msgid ""
 "When Python 2.7 was still supported, a lot of functionality in Python 3 was "
 "kept for backward compatibility with Python 2.7. With the end of Python 2 "
@@ -191,14 +203,16 @@ msgid ""
 "``collections.abc.Mapping`` emits a :exc:`DeprecationWarning` since Python "
 "3.3, released in 2012."
 msgstr ""
-"Python 2.7がまだサポートされていた期間、Python 3の多くの機能はPython 2.7との"
-"後方互換性を保っていました。Python 2サポートの終了とともに、この後方互換性レ"
-"イヤは除去されたか、間もなく除去されます。ここ数年で、それらの多くは警告 :"
-"exc:`DeprecationWarning`を出すようになりました。例えば、2012年にリリースされ"
-"たPython 3.3以降、``collections.abc.Mapping``の代りに``collections.Mapping``"
-"を使うと、警告:exc:`DeprecationWarning` が出ます。"
+"Cuando todavía se admitía Python 2.7, se conservaba una gran cantidad de "
+"funciones en Python 3 por compatibilidad con versiones anteriores de Python "
+"2.7. Con el fin de la compatibilidad con Python 2, estas capas de "
+"compatibilidad con versiones anteriores se eliminaron o se eliminarán "
+"pronto. La mayoría de ellos emitió una advertencia :exc:`DeprecationWarning` "
+"durante varios años. Por ejemplo, usar ``collections.Mapping`` en lugar de "
+"``collections.abc.Mapping`` emite un :exc:`DeprecationWarning` desde Python "
+"3.3, lanzado en 2012."
 
-#: ../../whatsnew/3.9.rst:118
+#: ../Doc/whatsnew/3.9.rst:120
 msgid ""
 "Test your application with the :option:`-W` ``default`` command-line option "
 "to see :exc:`DeprecationWarning` and :exc:`PendingDeprecationWarning`, or "
@@ -206,82 +220,89 @@ msgid ""
 "Filter <warning-filter>` can be used to ignore warnings from third-party "
 "code."
 msgstr ""
-"警告:exc:`DeprecationWarning`および:exc:`PendingDeprecationWarning`を確認する"
-"ために、:option:`-W` ``default``コマンドラインオプションを付けて、あなたのア"
-"プリケーションをテストして下さい。あるいは、:option:`-W` ``error``で警告をエ"
-"ラーとして扱うこともできます。サードパーティによるコードの警告を無視するに"
-"は、:ref:`Warnings Filter <warning-filter>`を使うことができます。"
+"Pruebe su aplicación con la opción de línea de comandos :option:`-W` "
+"``default`` para ver :exc:`DeprecationWarning` y :exc:"
+"`PendingDeprecationWarning`, o incluso con :option:`-W` ``error`` para "
+"tratarlos como errores. :ref:`Warnings Filter <warning-filter>` se puede "
+"utilizar para ignorar las advertencias del código de terceros."
 
-#: ../../whatsnew/3.9.rst:123
+#: ../Doc/whatsnew/3.9.rst:125
 msgid ""
 "Python 3.9 is the last version providing those Python 2 backward "
 "compatibility layers, to give more time to Python projects maintainers to "
 "organize the removal of the Python 2 support and add support for Python 3.9."
 msgstr ""
-"Python 3.9は、Python 2後方互換性レイヤを提供する最後のバージョンです。このレ"
-"イヤは、Pythonプロジェクトの保守管理者に、Python 2サポートを止めてPython 3.9"
-"サポートを追加する時間的な余裕を与えるためのものです。"
+"Python 3.9 es la última versión que proporciona esas capas de compatibilidad "
+"con versiones anteriores de Python 2, para dar más tiempo a los mantenedores "
+"de proyectos de Python para organizar la eliminación del soporte de Python 2 "
+"y agregar soporte para Python 3.9."
 
-#: ../../whatsnew/3.9.rst:127
+#: ../Doc/whatsnew/3.9.rst:129
 msgid ""
 "Aliases to :ref:`Abstract Base Classes <collections-abstract-base-classes>` "
 "in the :mod:`collections` module, like ``collections.Mapping`` alias to :"
 "class:`collections.abc.Mapping`, are kept for one last release for backward "
 "compatibility. They will be removed from Python 3.10."
 msgstr ""
+"Los alias de :ref:`Abstract Base Classes <collections-abstract-base-"
+"classes>` en el módulo :mod:`collections`, como el alias de ``collections."
+"Mapping`` de :class:`collections.abc.Mapping`, se mantienen para una última "
+"versión por compatibilidad con versiones anteriores. Se eliminarán de Python "
+"3.10."
 
-#: ../../whatsnew/3.9.rst:132
+#: ../Doc/whatsnew/3.9.rst:134
 msgid ""
 "More generally, try to run your tests in the :ref:`Python Development Mode "
 "<devmode>` which helps to prepare your code to make it compatible with the "
 "next Python version."
 msgstr ""
-"より一般的には、あなたのコードが次のバージョンのPythonと互換性を保てるよう、:"
-"ref:`Python Development Mode <devmode>`でテストするようにしてください。"
+"De manera más general, intente ejecutar sus pruebas en el :ref:`Python "
+"Development Mode <devmode>`, lo que ayuda a preparar su código para que sea "
+"compatible con la próxima versión de Python."
 
-#: ../../whatsnew/3.9.rst:136
+#: ../Doc/whatsnew/3.9.rst:138
 msgid ""
 "Note: a number of pre-existing deprecations were removed in this version of "
 "Python as well. Consult the :ref:`removed-in-python-39` section."
 msgstr ""
-"注釈: Pythonのこのバージョンで、既存の多くの非推奨機能が削除されました。詳し"
-"くは :ref:`removed-in-python-39`を見て下さい。"
+"Nota: también se eliminaron varias obsoletas en esta versión de Python. "
+"Consulte la sección :ref:`removed-in-python-39`."
 
-#: ../../whatsnew/3.9.rst:141 ../../whatsnew/3.9.rst:1274
+#: ../Doc/whatsnew/3.9.rst:143 ../Doc/whatsnew/3.9.rst:1276
 msgid "New Features"
-msgstr "新しい機能"
+msgstr "Nuevas características"
 
-#: ../../whatsnew/3.9.rst:144
+#: ../Doc/whatsnew/3.9.rst:146
 msgid "Dictionary Merge & Update Operators"
-msgstr "辞書のマージと更新演算子"
+msgstr "Operadores de combinación y actualización de diccionarios"
 
-#: ../../whatsnew/3.9.rst:146
+#: ../Doc/whatsnew/3.9.rst:148
 msgid ""
 "Merge (``|``) and update (``|=``) operators have been added to the built-in :"
 "class:`dict` class. Those complement the existing ``dict.update`` and "
 "``{**d1, **d2}`` methods of merging dictionaries."
 msgstr ""
-"組み込みの :class:`dict` クラスにマージ(``|``)と更新(``|=``)演算子が追加され"
-"ました。この演算子は、辞書をマージする既存の方法 ``dict.update`` と ``{**d1, "
-"**d2}`` を補完します。"
+"Los operadores de fusión (``|``) y actualización (``|=``) se han agregado a "
+"la clase :class:`dict` incorporada. Estos complementan los métodos ``dict."
+"update`` y ``{**d1, **d2}`` existentes para fusionar diccionarios."
 
-#: ../../whatsnew/3.9.rst:150 ../../whatsnew/3.9.rst:283
+#: ../Doc/whatsnew/3.9.rst:152 ../Doc/whatsnew/3.9.rst:285
 msgid "Example::"
-msgstr "以下はプログラム例です::"
+msgstr "Ejemplo::"
 
-#: ../../whatsnew/3.9.rst:159
+#: ../Doc/whatsnew/3.9.rst:161
 msgid ""
 "See :pep:`584` for a full description. (Contributed by Brandt Bucher in :"
 "issue:`36144`.)"
 msgstr ""
-"詳細は :pep:`584` を参照してください。(Brandt Bucher の貢献による :issue:"
-"`36144`)"
+"Consulte :pep:`584` para obtener una descripción completa. (Contribuido por "
+"Brandt Bucher en :issue:`36144`.)"
 
-#: ../../whatsnew/3.9.rst:163
+#: ../Doc/whatsnew/3.9.rst:165
 msgid "New String Methods to Remove Prefixes and Suffixes"
-msgstr "prefixとsuffixを削除する新しい文字列メソッド"
+msgstr "Nuevos métodos de cadena para eliminar prefijos y sufijos"
 
-#: ../../whatsnew/3.9.rst:165
+#: ../Doc/whatsnew/3.9.rst:167
 msgid ""
 ":meth:`str.removeprefix(prefix)<str.removeprefix>` and :meth:`str."
 "removesuffix(suffix)<str.removesuffix>` have been added to easily remove an "
@@ -290,18 +311,18 @@ msgid ""
 "See :pep:`616` for a full description. (Contributed by Dennis Sweeney in :"
 "issue:`39939`.)"
 msgstr ""
-"文字列から不要な prefix や suffix を簡単に削除する :meth:`str."
-"removeprefix(prefix)<str.removeprefix>` と :meth:`str."
-"removesuffix(suffix)<str.removesuffix>` が追加されました。 ``bytes``, "
-"``bytearray``, ``collections.UserString`` にも同様のメソッドが追加されまし"
-"た。詳細は :pep:`616` を参照してください。(Dennis Sweeney の貢献による :"
-"issue:`39939`)"
+"Se han agregado :meth:`str.removeprefix(prefix)<str.removeprefix>` y :meth:"
+"`str.removesuffix(suffix)<str.removesuffix>` para eliminar fácilmente un "
+"prefijo o sufijo innecesario de una cadena. También se han agregado los "
+"métodos correspondientes ``bytes``, ``bytearray`` y ``collections."
+"UserString``. Consulte :pep:`616` para obtener una descripción completa. "
+"(Contribuido por Dennis Sweeney en :issue:`39939`.)"
 
-#: ../../whatsnew/3.9.rst:173
+#: ../Doc/whatsnew/3.9.rst:175
 msgid "Type Hinting Generics in Standard Collections"
-msgstr ""
+msgstr "Tipos genéricos de sugerencia en colecciones estándar"
 
-#: ../../whatsnew/3.9.rst:175
+#: ../Doc/whatsnew/3.9.rst:177
 msgid ""
 "In type annotations you can now use built-in collection types such as "
 "``list`` and ``dict`` as generic types instead of importing the "
@@ -309,24 +330,29 @@ msgid ""
 "``typing``.  Some other types in the standard library are also now generic, "
 "for example ``queue.Queue``."
 msgstr ""
+"En las anotaciones de tipo, ahora puede usar tipos de colección integrados "
+"como ``list`` y ``dict`` como tipos genéricos en lugar de importar los tipos "
+"en mayúsculas correspondientes (por ejemplo, ``List`` o ``Dict``) desde "
+"``typing``. Algunos otros tipos de la biblioteca estándar ahora también son "
+"genéricos, por ejemplo, ``queue.Queue``."
 
-#: ../../whatsnew/3.9.rst:181 ../../whatsnew/3.9.rst:1162
+#: ../Doc/whatsnew/3.9.rst:183 ../Doc/whatsnew/3.9.rst:1164
 msgid "Example:"
-msgstr "例:"
+msgstr "Ejemplo:"
 
-#: ../../whatsnew/3.9.rst:189
+#: ../Doc/whatsnew/3.9.rst:191
 msgid ""
 "See :pep:`585` for more details.  (Contributed by Guido van Rossum, Ethan "
 "Smith, and Batuhan Taşkaya in :issue:`39481`.)"
 msgstr ""
-"詳細は :pep:`585` を参照してください。(Guido van Rossum、Ethan Smith、"
-"Batuhan Taşkaya の貢献による :issue:`39481`)"
+"Consulte :pep:`585` para obtener más detalles. (Contribuido por Guido van "
+"Rossum, Ethan Smith y Batuhan Taşkaya en :issue:`39481`.)"
 
-#: ../../whatsnew/3.9.rst:193
+#: ../Doc/whatsnew/3.9.rst:195
 msgid "New Parser"
-msgstr "新しいパーサー"
+msgstr "Nuevo analizador"
 
-#: ../../whatsnew/3.9.rst:195
+#: ../Doc/whatsnew/3.9.rst:197
 msgid ""
 "Python 3.9 uses a new parser, based on `PEG <https://en.wikipedia.org/wiki/"
 "Parsing_expression_grammar>`_ instead of `LL(1) <https://en.wikipedia.org/"
@@ -335,21 +361,23 @@ msgid ""
 "when it comes to designing new language features.  We'll start using this "
 "flexibility in Python 3.10 and later."
 msgstr ""
-"Python 3.9は、 `LL(1) <https://en.wikipedia.org/wiki/LL_parser>`_ に代えて "
-"`PEG <https://en.wikipedia.org/wiki/Parsing_expression_grammar>`_ に基づく新"
-"しいパーサーを採用しています。新しいパーサーのパフォーマンスは古いパーサーと"
-"ほぼ同程度ですが、新しい言語の機能を設計する際に、PEGの形式主義はより柔軟で"
-"す。我々は、この柔軟性をPython 3.10以降に使い始める予定です。"
+"Python 3.9 usa un nuevo analizador, basado en `PEG <https://en.wikipedia.org/"
+"wiki/Parsing_expression_grammar>`_ en lugar de `LL(1) <https://en.wikipedia."
+"org/wiki/LL_parser>`_. El rendimiento del analizador nuevo es "
+"aproximadamente comparable al del analizador anterior, pero el formalismo "
+"PEG es más flexible que LL (1) cuando se trata de diseñar nuevas funciones "
+"de lenguaje. Comenzaremos a usar esta flexibilidad en Python 3.10 y "
+"versiones posteriores."
 
-#: ../../whatsnew/3.9.rst:203
+#: ../Doc/whatsnew/3.9.rst:205
 msgid ""
 "The :mod:`ast` module uses the new parser and produces the same AST as the "
 "old parser."
 msgstr ""
-":mod:`ast` モジュールは、新しいパーサーを使って古いパーサーと同じASTを生成し"
-"ます。"
+"El módulo :mod:`ast` usa el nuevo analizador y produce el mismo AST que el "
+"analizador anterior."
 
-#: ../../whatsnew/3.9.rst:206
+#: ../Doc/whatsnew/3.9.rst:208
 msgid ""
 "In Python 3.10, the old parser will be deleted and so will all functionality "
 "that depends on it (primarily the :mod:`parser` module, which has long been "
@@ -357,31 +385,36 @@ msgid ""
 "using a command line switch (``-X oldparser``) or an environment variable "
 "(``PYTHONOLDPARSER=1``)."
 msgstr ""
-"Python 3.10では古いパーサーは削除され、それに依存する全ての機能(主に、長い間"
-"非推奨だった :mod:`parser` モジュール)も削除されます。Python 3.9で *のみ* 、"
-"コマンドラインスイッチ (``-X oldparser``)あるいは環境変数"
-"(``PYTHONOLDPARSER=1``)で、LL(1)パーサーにスイッチバックすることができます。"
+"En Python 3.10, el analizador anterior se eliminará y también lo hará toda "
+"la funcionalidad que depende de él (principalmente el módulo :mod:`parser`, "
+"que ha estado en desuso durante mucho tiempo). En Python 3.9 *only*, puede "
+"volver al analizador LL (1) utilizando un modificador de línea de comando "
+"(``-X oldparser``) o una variable de entorno (``PYTHONOLDPARSER=1``)."
 
-#: ../../whatsnew/3.9.rst:212
+#: ../Doc/whatsnew/3.9.rst:214
 msgid ""
 "See :pep:`617` for more details.  (Contributed by Guido van Rossum, Pablo "
 "Galindo and Lysandros Nikolaou in :issue:`40334`.)"
 msgstr ""
-"詳細は :pep:`617` を参照してください。(Guido van Rossum,、Pablo Galindo、およ"
-"びLysandros Nikolaouの貢献による :issue:`40334`)"
+"Consulte :pep:`617` para obtener más detalles. (Contribuido por Guido van "
+"Rossum, Pablo Galindo y Lysandros Nikolaou en :issue:`40334`.)"
 
-#: ../../whatsnew/3.9.rst:217
+#: ../Doc/whatsnew/3.9.rst:219
 msgid "Other Language Changes"
-msgstr "その他の言語変更"
+msgstr "Otros cambios de idioma"
 
-#: ../../whatsnew/3.9.rst:219
+#: ../Doc/whatsnew/3.9.rst:221
 msgid ""
 ":func:`__import__` now raises :exc:`ImportError` instead of :exc:"
 "`ValueError`, which used to occur when a relative import went past its top-"
 "level package. (Contributed by Ngalim Siregar in :issue:`37444`.)"
 msgstr ""
+":func:`__import__` ahora lanza :exc:`ImportError` en lugar de :exc:"
+"`ValueError`, que solía ocurrir cuando una importación relativa pasaba de su "
+"paquete de nivel superior. (Contribuido por Ngalim Siregar en :issue:"
+"`37444`.)"
 
-#: ../../whatsnew/3.9.rst:224
+#: ../Doc/whatsnew/3.9.rst:226
 msgid ""
 "Python now gets the absolute path of the script filename specified on the "
 "command line (ex: ``python3 script.py``): the ``__file__`` attribute of the :"
@@ -391,38 +424,61 @@ msgid ""
 "for :mod:`__main__` module frames in this case. (Contributed by Victor "
 "Stinner in :issue:`20443`.)"
 msgstr ""
+"Python ahora obtiene la ruta absoluta del nombre de archivo del script "
+"especificado en la línea de comando (por ejemplo: ``python3 script.py``): el "
+"módulo ``__file__`` attribute of the :mod:`__main__` se convirtió en una "
+"ruta absoluta, en lugar de una ruta relativa. Estas rutas ahora siguen "
+"siendo válidas después de que las tramas del módulo :func:`os.chdir`. Como "
+"efecto alterno, la traza también muestra la ruta absoluta para los marcos "
+"del módulo :mod:`__main__` en este caso. (Contribuido por Victor Stinner en :"
+"issue:`20443`.)"
 
-#: ../../whatsnew/3.9.rst:232
+#: ../Doc/whatsnew/3.9.rst:234
 msgid ""
 "In the :ref:`Python Development Mode <devmode>` and in :ref:`debug build "
 "<debug-build>`, the *encoding* and *errors* arguments are now checked for "
 "string encoding and decoding operations. Examples: :func:`open`, :meth:`str."
 "encode` and :meth:`bytes.decode`."
 msgstr ""
+"En :ref:`Python Development Mode <devmode>` y en :ref:`debug build <debug-"
+"build>`, los argumentos de *encoding* and *errors* ahora se comprueban para "
+"las operaciones de codificación y decodificación de cadenas. Ejemplos: :func:"
+"`open`, :meth:`str.encode` y :meth:`bytes.decode`."
 
-#: ../../whatsnew/3.9.rst:237
+#: ../Doc/whatsnew/3.9.rst:239
 msgid ""
 "By default, for best performance, the *errors* argument is only checked at "
 "the first encoding/decoding error and the *encoding* argument is sometimes "
 "ignored for empty strings. (Contributed by Victor Stinner in :issue:`37388`.)"
 msgstr ""
+"De forma predeterminada, para un mejor rendimiento, el argumento *errors* "
+"argument is only checked at the first encoding/decoding error and the "
+"*encoding* a veces se ignora para cadenas vacías. (Contribuido por Victor "
+"Stinner en :issue:`37388`.)"
 
-#: ../../whatsnew/3.9.rst:242
+#: ../Doc/whatsnew/3.9.rst:244
 msgid ""
 "``\"\".replace(\"\", s, n)`` now returns ``s`` instead of an empty string "
 "for all non-zero ``n``.  It is now consistent with ``\"\".replace(\"\", "
 "s)``. There are similar changes for :class:`bytes` and :class:`bytearray` "
 "objects. (Contributed by Serhiy Storchaka in :issue:`28029`.)"
 msgstr ""
+"``\"\".replace(\"\", s, n)`` ahora devuelve ``s`` en lugar de una cadena "
+"vacía para todos los ``n`` distintos de cero. Ahora es compatible con ``\"\"."
+"replace(\"\", s)``. Hay cambios similares para los objetos :class:`bytes` y :"
+"class:`bytearray`. (Contribuido por Serhiy Storchaka en :issue:`28029`.)"
 
-#: ../../whatsnew/3.9.rst:247
+#: ../Doc/whatsnew/3.9.rst:249
 msgid ""
 "Any valid expression can now be used as a :term:`decorator`.  Previously, "
 "the grammar was much more restrictive.  See :pep:`614` for details. "
 "(Contributed by Brandt Bucher in :issue:`39702`.)"
 msgstr ""
+"Cualquier expresión válida ahora se puede utilizar como :term:`decorator`. "
+"Anteriormente, la gramática era mucho más restrictiva. Consulte :pep:`614` "
+"para obtener más detalles. (Contribuido por Brandt Bucher en :issue:`39702`.)"
 
-#: ../../whatsnew/3.9.rst:251
+#: ../Doc/whatsnew/3.9.rst:253
 msgid ""
 "Improved help for the :mod:`typing` module. Docstrings are now shown for all "
 "special forms and special generic aliases (like ``Union`` and ``List``). "
@@ -430,107 +486,149 @@ msgid ""
 "for the correspondent concrete type (``list`` in this case). (Contributed by "
 "Serhiy Storchaka in :issue:`40257`.)"
 msgstr ""
+"Ayuda mejorada para el módulo :mod:`typing`. Las cadenas de documentos ahora "
+"se muestran para todas las formas especiales y alias genéricos especiales "
+"(como ``Union`` y ``List``). El uso de :func:`help` con un alias genérico "
+"como ``List[int]`` mostrará la ayuda para el tipo concreto correspondiente "
+"(``list`` en este caso). (Contribuido por Serhiy Storchaka en :issue:"
+"`40257`.)"
 
-#: ../../whatsnew/3.9.rst:257
+#: ../Doc/whatsnew/3.9.rst:259
 msgid ""
 "Parallel running of :meth:`~agen.aclose` / :meth:`~agen.asend` / :meth:"
 "`~agen.athrow` is now prohibited, and ``ag_running`` now reflects the actual "
 "running status of the async generator. (Contributed by Yury Selivanov in :"
 "issue:`30773`.)"
 msgstr ""
+"La ejecución en paralelo de :meth:`~agen.aclose` / :meth:`~agen.asend` / :"
+"meth:`~agen.athrow` ahora está prohibida, y ``ag_running`` ahora refleja el "
+"estado de ejecución real del generador asíncrono. (Contribuido por Yury "
+"Selivanov en :issue:`30773`.)"
 
-#: ../../whatsnew/3.9.rst:262
+#: ../Doc/whatsnew/3.9.rst:264
 msgid ""
 "Unexpected errors in calling the ``__iter__`` method are no longer masked by "
 "``TypeError`` in the :keyword:`in` operator and functions :func:`~operator."
 "contains`, :func:`~operator.indexOf` and :func:`~operator.countOf` of the :"
 "mod:`operator` module. (Contributed by Serhiy Storchaka in :issue:`40824`.)"
 msgstr ""
+"Los errores inesperados al llamar al método ``__iter__`` ya no están "
+"enmascarados por ``TypeError`` en el operador :keyword:`in` y funciones :"
+"func:`~operator.contains`, :func:`~operator.indexOf` y :func:`~operator."
+"countOf` del módulo :mod:`operator`. (Contribuido por Serhiy Storchaka en :"
+"issue:`40824`.)"
 
-#: ../../whatsnew/3.9.rst:268
+#: ../Doc/whatsnew/3.9.rst:270
 msgid ""
 "Unparenthesized lambda expressions can no longer be the expression part in "
 "an ``if`` clause in comprehensions and generator expressions. See :issue:"
 "`41848` and :issue:`43755` for details."
 msgstr ""
+"Las expresiones lambda sin paréntesis ya no pueden ser la parte de expresión "
+"en una cláusula ``if`` en comprensiones y expresiones generadoras. Consulte :"
+"issue:`41848` y :issue:`43755` para obtener más detalles."
 
-#: ../../whatsnew/3.9.rst:274
+#: ../Doc/whatsnew/3.9.rst:276
 msgid "New Modules"
-msgstr "新たなモジュール"
+msgstr "Nuevos módulos"
 
-#: ../../whatsnew/3.9.rst:277
+#: ../Doc/whatsnew/3.9.rst:279
 msgid "zoneinfo"
-msgstr ""
+msgstr "zoneinfo"
 
-#: ../../whatsnew/3.9.rst:279
+#: ../Doc/whatsnew/3.9.rst:281
 msgid ""
 "The :mod:`zoneinfo` module brings support for the IANA time zone database to "
 "the standard library. It adds :class:`zoneinfo.ZoneInfo`, a concrete :class:"
 "`datetime.tzinfo` implementation backed by the system's time zone data."
 msgstr ""
+"El módulo :mod:`zoneinfo` brinda soporte para la base de datos de zona "
+"horaria de IANA a la biblioteca estándar. Agrega :class:`zoneinfo.ZoneInfo`, "
+"una implementación de :class:`datetime.tzinfo` concreta respaldada por los "
+"datos de la zona horaria del sistema."
 
-#: ../../whatsnew/3.9.rst:303
+#: ../Doc/whatsnew/3.9.rst:305
 msgid ""
 "As a fall-back source of data for platforms that don't ship the IANA "
 "database, the |tzdata|_ module was released as a first-party package -- "
 "distributed via PyPI and maintained by the CPython core team."
 msgstr ""
+"Como fuente de datos alternativa para las plataformas que no envían la base "
+"de datos de la IANA, el módulo |tzdata|_ se lanzó como un paquete propio, "
+"distribuido a través de PyPI y mantenido por el equipo central de CPython."
 
-#: ../../whatsnew/3.9.rst:312
+#: ../Doc/whatsnew/3.9.rst:314
 msgid ""
 ":pep:`615` -- Support for the IANA Time Zone Database in the Standard Library"
 msgstr ""
+":pep:`615`: compatibilidad con la base de datos de zona horaria de IANA en "
+"la biblioteca estándar"
 
-#: ../../whatsnew/3.9.rst:313
+#: ../Doc/whatsnew/3.9.rst:315
 msgid "PEP written and implemented by Paul Ganssle"
-msgstr ""
+msgstr "PEP escrito e implementado por Paul Ganssle"
 
-#: ../../whatsnew/3.9.rst:317
+#: ../Doc/whatsnew/3.9.rst:319
 msgid "graphlib"
-msgstr "graphlib"
+msgstr "Graphlib"
 
-#: ../../whatsnew/3.9.rst:319
+#: ../Doc/whatsnew/3.9.rst:321
 msgid ""
 "A new module, :mod:`graphlib`, was added that contains the :class:`graphlib."
 "TopologicalSorter` class to offer functionality to perform topological "
 "sorting of graphs. (Contributed by Pablo Galindo, Tim Peters and Larry "
 "Hastings in :issue:`17005`.)"
 msgstr ""
+"Se agregó un nuevo módulo, :mod:`graphlib`, que contiene la clase :class:"
+"`graphlib.TopologicalSorter` para ofrecer funcionalidad para realizar la "
+"clasificación topológica de gráficos. (Contribuido por Pablo Galindo, Tim "
+"Peters y Larry Hastings en :issue:`17005`.)"
 
-#: ../../whatsnew/3.9.rst:326
+#: ../Doc/whatsnew/3.9.rst:328
 msgid "Improved Modules"
-msgstr "改良されたモジュール"
+msgstr "Módulos mejorados"
 
-#: ../../whatsnew/3.9.rst:329
+#: ../Doc/whatsnew/3.9.rst:331
 msgid "ast"
 msgstr "ast"
 
-#: ../../whatsnew/3.9.rst:331
+#: ../Doc/whatsnew/3.9.rst:333
 msgid ""
 "Added the *indent* option to :func:`~ast.dump` which allows it to produce a "
 "multiline indented output. (Contributed by Serhiy Storchaka in :issue:"
 "`37995`.)"
 msgstr ""
+"Se agregó la opción *indent* a :func:`~ast.dump` que le permite producir una "
+"salida con sangría de varias líneas. (Contribuido por Serhiy Storchaka en :"
+"issue:`37995`.)"
 
-#: ../../whatsnew/3.9.rst:335
+#: ../Doc/whatsnew/3.9.rst:337
 msgid ""
 "Added :func:`ast.unparse` as a function in the :mod:`ast` module that can be "
 "used to unparse an :class:`ast.AST` object and produce a string with code "
 "that would produce an equivalent :class:`ast.AST` object when parsed. "
 "(Contributed by Pablo Galindo and Batuhan Taskaya in :issue:`38870`.)"
 msgstr ""
+"Se agregó :func:`ast.unparse` como una función en el módulo :mod:`ast` que "
+"se puede usar para descomprimir un objeto :class:`ast.AST` y producir una "
+"cadena con código que produciría un objeto :class:`ast.AST` equivalente "
+"cuando se analiza. (Contribuido por Pablo Galindo y Batuhan Taskaya en :"
+"issue:`38870`.)"
 
-#: ../../whatsnew/3.9.rst:340
+#: ../Doc/whatsnew/3.9.rst:342
 msgid ""
 "Added docstrings to AST nodes that contains the ASDL signature used to "
 "construct that node. (Contributed by Batuhan Taskaya in :issue:`39638`.)"
 msgstr ""
+"Se agregaron cadenas de documentación a los nodos AST que contienen la firma "
+"ASDL utilizada para construir ese nodo. (Contribuido por Batuhan Taskaya en :"
+"issue:`39638`.)"
 
-#: ../../whatsnew/3.9.rst:344
+#: ../Doc/whatsnew/3.9.rst:346
 msgid "asyncio"
 msgstr "asyncio"
 
-#: ../../whatsnew/3.9.rst:346
+#: ../Doc/whatsnew/3.9.rst:348
 msgid ""
 "Due to significant security concerns, the *reuse_address* parameter of :meth:"
 "`asyncio.loop.create_datagram_endpoint` is no longer supported. This is "
@@ -539,13 +637,14 @@ msgid ""
 "(Contributed by Kyle Stanley, Antoine Pitrou, and Yury Selivanov in :issue:"
 "`37228`.)"
 msgstr ""
-"セキュリティ上の重大な懸念により、:meth:`asyncio.loop."
-"create_datagram_endpoint` での *reuse_address* 引数は無効になりました。これは"
-"ソケットオプション `SO_REUSEADDR`` のUDP における挙動が原因です。詳しくは、"
-"``loop.create_datagram_endpoint()`` のドキュメントを参照してください。(Kyle "
-"Stanley, Antoine Pitrou, Yury Selivanov による貢献 :issue:`37228`)"
+"Debido a importantes problemas de seguridad, el parámetro *reuse_address* "
+"de :meth:`asyncio.loop.create_datagram_endpoint` ya no es compatible. Esto "
+"se debe al comportamiento de la opción de socket ``SO_REUSEADDR`` en UDP. "
+"Para obtener más detalles, consulte la documentación de ``loop."
+"create_datagram_endpoint()``. (Contribuido por Kyle Stanley, Antoine Pitrou "
+"y Yury Selivanov en :issue:`37228`.)"
 
-#: ../../whatsnew/3.9.rst:353
+#: ../Doc/whatsnew/3.9.rst:355
 msgid ""
 "Added a new :term:`coroutine` :meth:`~asyncio.loop."
 "shutdown_default_executor` that schedules a shutdown for the default "
@@ -553,14 +652,23 @@ msgid ""
 "to finish closing. Also, :func:`asyncio.run` has been updated to use the "
 "new :term:`coroutine`. (Contributed by Kyle Stanley in :issue:`34037`.)"
 msgstr ""
+"Se agregó un nuevo :term:`coroutine` :meth:`~asyncio.loop."
+"shutdown_default_executor` que programa un apagado para el ejecutor "
+"predeterminado que espera en el :class:`~concurrent.futures."
+"ThreadPoolExecutor` para finalizar el cierre. Además, :func:`asyncio.run` se "
+"ha actualizado para utilizar el nuevo :term:`coroutine`. (Contribuido por "
+"Kyle Stanley en :issue:`34037`.)"
 
-#: ../../whatsnew/3.9.rst:359
+#: ../Doc/whatsnew/3.9.rst:361
 msgid ""
 "Added :class:`asyncio.PidfdChildWatcher`, a Linux-specific child watcher "
 "implementation that polls process file descriptors. (:issue:`38692`)"
 msgstr ""
+"Se agregó :class:`asyncio.PidfdChildWatcher`, una implementación de "
+"observador de niños específica de Linux que sondea los descriptores de "
+"archivos de proceso. (:issue:`38692`)"
 
-#: ../../whatsnew/3.9.rst:362
+#: ../Doc/whatsnew/3.9.rst:364
 msgid ""
 "Added a new :term:`coroutine` :func:`asyncio.to_thread`. It is mainly used "
 "for running IO-bound functions in a separate thread to avoid blocking the "
@@ -568,34 +676,50 @@ msgid ""
 "loop.run_in_executor` that can directly take keyword arguments. (Contributed "
 "by Kyle Stanley and Yury Selivanov in :issue:`32309`.)"
 msgstr ""
+"Se agregó un nuevo :term:`coroutine` :func:`asyncio.to_thread`. Se utiliza "
+"principalmente para ejecutar funciones vinculadas a IO en un hilo separado "
+"para evitar bloquear el bucle de eventos, y esencialmente funciona como una "
+"versión de alto nivel de :meth:`~asyncio.loop.run_in_executor` que puede "
+"tomar directamente argumentos de palabras clave. (Contribuido por Kyle "
+"Stanley y Yury Selivanov en :issue:`32309`.)"
 
-#: ../../whatsnew/3.9.rst:368
+#: ../Doc/whatsnew/3.9.rst:370
 msgid ""
 "When cancelling the task due to a timeout, :meth:`asyncio.wait_for` will now "
 "wait until the cancellation is complete also in the case when *timeout* is "
 "<= 0, like it does with positive timeouts. (Contributed by Elvis "
 "Pranskevichus in :issue:`32751`.)"
 msgstr ""
+"Al cancelar la tarea debido a un tiempo de espera, :meth:`asyncio.wait_for` "
+"ahora esperará hasta que se complete la cancelación también en el caso de "
+"que *timeout* sea <= 0, como ocurre con los tiempos de espera positivos. "
+"(Contribuido por Elvis Pranskevichus en :issue:`32751`.)"
 
-#: ../../whatsnew/3.9.rst:373
+#: ../Doc/whatsnew/3.9.rst:375
 msgid ""
 ":mod:`asyncio` now raises :exc:`TyperError` when calling incompatible "
 "methods with an :class:`ssl.SSLSocket` socket. (Contributed by Ido Michael "
 "in :issue:`37404`.)"
 msgstr ""
+":mod:`asyncio` ahora lanza :exc:`TyperError` al llamar a métodos "
+"incompatibles con un socket :class:`ssl.SSLSocket`. (Contribuido por Ido "
+"Michael en :issue:`37404`.)"
 
-#: ../../whatsnew/3.9.rst:378
+#: ../Doc/whatsnew/3.9.rst:380
 msgid "compileall"
-msgstr "compileall"
+msgstr "compilar todo"
 
-#: ../../whatsnew/3.9.rst:380
+#: ../Doc/whatsnew/3.9.rst:382
 msgid ""
 "Added new possibility to use hardlinks for duplicated ``.pyc`` files: "
 "*hardlink_dupes* parameter and --hardlink-dupes command line option. "
 "(Contributed by  Lumír 'Frenzy' Balhar in :issue:`40495`.)"
 msgstr ""
+"Se agregó una nueva posibilidad de usar enlaces duros para archivos ``.pyc`` "
+"duplicados: parámetro *hardlink_dupes* y opción de línea de comando --"
+"hardlink-dupes. (Contribuido por Lumír 'Frenzy' Balhar en :issue:`40495`.)"
 
-#: ../../whatsnew/3.9.rst:383
+#: ../Doc/whatsnew/3.9.rst:385
 msgid ""
 "Added new options for path manipulation in resulting ``.pyc`` files: "
 "*stripdir*, *prependdir*, *limit_sl_dest* parameters and -s, -p, -e command "
@@ -603,103 +727,131 @@ msgid ""
 "optimization level multiple times. (Contributed by Lumír 'Frenzy' Balhar in :"
 "issue:`38112`.)"
 msgstr ""
+"Se agregaron nuevas opciones para la manipulación de rutas en los archivos "
+"``.pyc`` resultantes: parámetros *stripdir*, *prependdir*, *limit_sl_dest* y "
+"opciones de línea de comando -s, -p, -e. Se agregó la posibilidad de "
+"especificar la opción para un nivel de optimización varias veces. "
+"(Contribuido por Lumír 'Frenzy' Balhar en :issue:`38112`.)"
 
-#: ../../whatsnew/3.9.rst:388
+#: ../Doc/whatsnew/3.9.rst:390
 msgid "concurrent.futures"
-msgstr "concurrent.futures"
+msgstr "Futuros concurrentes"
 
-#: ../../whatsnew/3.9.rst:390
+#: ../Doc/whatsnew/3.9.rst:392
 msgid ""
 "Added a new *cancel_futures* parameter to :meth:`concurrent.futures.Executor."
 "shutdown` that cancels all pending futures which have not started running, "
 "instead of waiting for them to complete before shutting down the executor. "
 "(Contributed by Kyle Stanley in :issue:`39349`.)"
 msgstr ""
+"Se agregó un nuevo parámetro *cancel_futures* a :meth:`concurrent.futures."
+"Executor.shutdown` que cancela todos los futuros pendientes que no han "
+"comenzado a ejecutarse, en lugar de esperar a que se completen antes de "
+"apagar el ejecutor. (Contribuido por Kyle Stanley en :issue:`39349`.)"
 
-#: ../../whatsnew/3.9.rst:396
+#: ../Doc/whatsnew/3.9.rst:398
 msgid ""
 "Removed daemon threads from :class:`~concurrent.futures.ThreadPoolExecutor` "
 "and :class:`~concurrent.futures.ProcessPoolExecutor`. This improves "
 "compatibility with subinterpreters and predictability in their shutdown "
 "processes. (Contributed by Kyle Stanley in :issue:`39812`.)"
 msgstr ""
+"Se eliminaron los subprocesos del demonio de :class:`~concurrent.futures."
+"ThreadPoolExecutor` y :class:`~concurrent.futures.ProcessPoolExecutor`. Esto "
+"mejora la compatibilidad con los subinterpretadores y la previsibilidad en "
+"sus procesos de cierre. (Contribuido por Kyle Stanley en :issue:`39812`.)"
 
-#: ../../whatsnew/3.9.rst:401
+#: ../Doc/whatsnew/3.9.rst:403
 msgid ""
 "Workers in :class:`~concurrent.futures.ProcessPoolExecutor` are now spawned "
 "on demand, only when there are no available idle workers to reuse. This "
 "optimizes startup overhead and reduces the amount of lost CPU time to idle "
 "workers. (Contributed by Kyle Stanley in :issue:`39207`.)"
 msgstr ""
+"Los trabajadores en :class:`~concurrent.futures.ProcessPoolExecutor` ahora "
+"se generan a pedido, solo cuando no hay trabajadores inactivos disponibles "
+"para reutilizar. Esto optimiza la sobrecarga de inicio y reduce la cantidad "
+"de tiempo de CPU perdido para los trabajadores inactivos. (Contribuido por "
+"Kyle Stanley en :issue:`39207`.)"
 
-#: ../../whatsnew/3.9.rst:407
+#: ../Doc/whatsnew/3.9.rst:409
 msgid "curses"
-msgstr "curses"
+msgstr "maldiciones"
 
-#: ../../whatsnew/3.9.rst:409
+#: ../Doc/whatsnew/3.9.rst:411
 msgid ""
 "Added :func:`curses.get_escdelay`, :func:`curses.set_escdelay`, :func:"
 "`curses.get_tabsize`, and :func:`curses.set_tabsize` functions. (Contributed "
 "by Anthony Sottile in :issue:`38312`.)"
 msgstr ""
-":func:`curses.get_escdelay`, :func:`curses.set_escdelay`, :func:`curses."
-"get_tabsize`,  :func:`curses.set_tabsize` の関数が追加されました。(Anthony "
-"Sottileによる :issue:`38312` でのコントリビュート。)"
+"Se agregaron funciones :func:`curses.get_escdelay`, :func:`curses."
+"set_escdelay`, :func:`curses.get_tabsize` y :func:`curses.set_tabsize`. "
+"(Contribuido por Anthony Sottile en :issue:`38312`.)"
 
-#: ../../whatsnew/3.9.rst:414
+#: ../Doc/whatsnew/3.9.rst:416
 msgid "datetime"
-msgstr "datetime"
+msgstr "fecha y hora"
 
-#: ../../whatsnew/3.9.rst:415
+#: ../Doc/whatsnew/3.9.rst:417
 msgid ""
 "The :meth:`~datetime.date.isocalendar()` of :class:`datetime.date` and :meth:"
 "`~datetime.datetime.isocalendar()` of :class:`datetime.datetime` methods now "
 "returns a :func:`~collections.namedtuple` instead of a :class:`tuple`. "
 "(Contributed by Dong-hee Na in :issue:`24416`.)"
 msgstr ""
-" :class:`datetime.date` の :meth:`~datetime.date.isocalendar()` メソッドと :"
-"class:`datetime.datetime` の :meth:`~datetime.datetime.isocalendar()` メソッ"
-"ドは class:`tuple` の代わりに :func:`~collections.namedtuple` を返すようにな"
-"りました。(Dong-hee Na の貢献による :issue:`24416`)"
+"Los métodos :meth:`~datetime.date.isocalendar()` de :class:`datetime.date` "
+"y :meth:`~datetime.datetime.isocalendar()` de :class:`datetime.datetime` "
+"ahora devuelven un :func:`~collections.namedtuple` en lugar de un :class:"
+"`tuple`. (Contribuido por Dong-hee Na en :issue:`24416`.)"
 
-#: ../../whatsnew/3.9.rst:421
+#: ../Doc/whatsnew/3.9.rst:423
 msgid "distutils"
 msgstr "distutils"
 
-#: ../../whatsnew/3.9.rst:423
+#: ../Doc/whatsnew/3.9.rst:425
 msgid ""
 "The :command:`upload` command now creates SHA2-256 and Blake2b-256 hash "
 "digests. It skips MD5 on platforms that block MD5 digest. (Contributed by "
 "Christian Heimes in :issue:`40698`.)"
 msgstr ""
+"El comando: command: `upload` ahora crea resúmenes de hash SHA2-256 y "
+"Blake2b-256. Omite MD5 en plataformas que bloquean el resumen de MD5. "
+"(Contribuido por Christian Heimes en :issue:`40698`.)"
 
-#: ../../whatsnew/3.9.rst:428
+#: ../Doc/whatsnew/3.9.rst:430
 msgid "fcntl"
 msgstr "fcntl"
 
-#: ../../whatsnew/3.9.rst:430
+#: ../Doc/whatsnew/3.9.rst:432
 msgid ""
 "Added constants :data:`~fcntl.F_OFD_GETLK`, :data:`~fcntl.F_OFD_SETLK` and :"
 "data:`~fcntl.F_OFD_SETLKW`. (Contributed by Dong-hee Na in :issue:`38602`.)"
 msgstr ""
+"Se agregaron las constantes :data:`~fcntl.F_OFD_GETLK`, :data:`~fcntl."
+"F_OFD_SETLK` y :data:`~fcntl.F_OFD_SETLKW`. (Contribuido por Dong-hee Na en :"
+"issue:`38602`.)"
 
-#: ../../whatsnew/3.9.rst:435
+#: ../Doc/whatsnew/3.9.rst:437
 msgid "ftplib"
 msgstr "ftplib"
 
-#: ../../whatsnew/3.9.rst:437
+#: ../Doc/whatsnew/3.9.rst:439
 msgid ""
 ":class:`~ftplib.FTP` and :class:`~ftplib.FTP_TLS` now raise a :class:"
 "`ValueError` if the given timeout for their constructor is zero to prevent "
 "the creation of a non-blocking socket. (Contributed by Dong-hee Na in :issue:"
 "`39259`.)"
 msgstr ""
+":class:`~ftplib.FTP` y :class:`~ftplib.FTP_TLS` ahora lanzan un :class:"
+"`ValueError` si el tiempo de espera dado para su constructor es cero para "
+"evitar la creación de un socket sin bloqueo. (Contribuido por Dong-hee Na "
+"en :issue:`39259`.)"
 
-#: ../../whatsnew/3.9.rst:442
+#: ../Doc/whatsnew/3.9.rst:444
 msgid "gc"
-msgstr "gc"
+msgstr "GC"
 
-#: ../../whatsnew/3.9.rst:444
+#: ../Doc/whatsnew/3.9.rst:446
 msgid ""
 "When the garbage collector makes a collection in which some objects "
 "resurrect (they are reachable from outside the isolated cycles after the "
@@ -707,84 +859,110 @@ msgid ""
 "that are still unreachable. (Contributed by Pablo Galindo and Tim Peters in :"
 "issue:`38379`.)"
 msgstr ""
+"Cuando el recolector de basura realiza una recolección en la que resucitan "
+"algunos objetos (se puede acceder a ellos desde fuera de los ciclos aislados "
+"después de que se hayan ejecutado los finalizadores), no bloquee la "
+"recolección de todos los objetos que aún no se pueden alcanzar. (Contribuido "
+"por Pablo Galindo y Tim Peters en :issue:`38379`.)"
 
-#: ../../whatsnew/3.9.rst:449
+#: ../Doc/whatsnew/3.9.rst:451
 msgid ""
 "Added a new function :func:`gc.is_finalized` to check if an object has been "
 "finalized by the garbage collector. (Contributed by Pablo Galindo in :issue:"
 "`39322`.)"
 msgstr ""
+"Se agregó una nueva función :func:`gc.is_finalized` para verificar si el "
+"recolector de basura ha finalizado un objeto. (Contribuido por Pablo Galindo "
+"en :issue:`39322`.)"
 
-#: ../../whatsnew/3.9.rst:454
+#: ../Doc/whatsnew/3.9.rst:456
 msgid "hashlib"
 msgstr "hashlib"
 
-#: ../../whatsnew/3.9.rst:456
+#: ../Doc/whatsnew/3.9.rst:458
 msgid ""
 "The :mod:`hashlib` module can now use SHA3 hashes and SHAKE XOF from OpenSSL "
 "when available. (Contributed by Christian Heimes in :issue:`37630`.)"
 msgstr ""
+"El módulo :mod:`hashlib` ahora puede usar hashes SHA3 y SHAKE XOF de OpenSSL "
+"cuando esté disponible. (Contribuido por Christian Heimes en :issue:`37630`.)"
 
-#: ../../whatsnew/3.9.rst:460
+#: ../Doc/whatsnew/3.9.rst:462
 msgid ""
 "Builtin hash modules can now be disabled with ``./configure --without-"
 "builtin-hashlib-hashes`` or selectively enabled with e.g. ``./configure --"
 "with-builtin-hashlib-hashes=sha3,blake2`` to force use of OpenSSL based "
 "implementation. (Contributed by Christian Heimes in :issue:`40479`)"
 msgstr ""
+"Los módulos hash incorporados ahora pueden desactivarse con ``./configure --"
+"without-builtin-hashlib-hashes`` o activarse selectivamente con p. Ej. ``./"
+"configure --with-builtin-hashlib-hashes=sha3,blake2`` para forzar el uso de "
+"la implementación basada en OpenSSL. (Contribuido por Christian Heimes en :"
+"issue:`40479`)"
 
-#: ../../whatsnew/3.9.rst:468
+#: ../Doc/whatsnew/3.9.rst:470
 msgid "http"
 msgstr "http"
 
-#: ../../whatsnew/3.9.rst:470
+#: ../Doc/whatsnew/3.9.rst:472
 msgid ""
 "HTTP status codes ``103 EARLY_HINTS``, ``418 IM_A_TEAPOT`` and ``425 "
 "TOO_EARLY`` are added to :class:`http.HTTPStatus`. (Contributed by Dong-hee "
 "Na in :issue:`39509` and Ross Rhodes in :issue:`39507`.)"
 msgstr ""
-"HTTPステータスコード ``103 EARLY_HINTS``, ``418 IM_A_TEAPOT``, ``425 "
-"TOO_EARLY`` が :class:`http.HTTPStatus` に追加されました。(Dong-hee Na の貢"
-"献 :issue:`39509` とRoss Rhodesの貢献による :issue:`39507`)"
+"Los códigos de estado HTTP ``103 EARLY_HINTS``, ``418 IM_A_TEAPOT`` y ``425 "
+"TOO_EARLY`` se agregan a :class:`http.HTTPStatus`. (Contribuido por Dong-hee "
+"Na en :issue:`39509` y Ross Rhodes en :issue:`39507`.)"
 
-#: ../../whatsnew/3.9.rst:474
+#: ../Doc/whatsnew/3.9.rst:476
 msgid "IDLE and idlelib"
-msgstr "IDLE と idelelib"
+msgstr "IDLE e idlelib"
 
-#: ../../whatsnew/3.9.rst:476
+#: ../Doc/whatsnew/3.9.rst:478
 msgid ""
 "Added option to toggle cursor blink off.  (Contributed by Zackery Spytz in :"
 "issue:`4603`.)"
 msgstr ""
+"Opción agregada para apagar el cursor parpadeando. (Contribuido por Zackery "
+"Spytz en :issue:`4603`.)"
 
-#: ../../whatsnew/3.9.rst:479
+#: ../Doc/whatsnew/3.9.rst:481
 msgid ""
 "Escape key now closes IDLE completion windows.  (Contributed by Johnny "
 "Najera in :issue:`38944`.)"
 msgstr ""
+"La tecla Escape ahora cierra las ventanas de finalización IDLE. (Contribuido "
+"por Johnny Najera en :issue:`38944`.)"
 
-#: ../../whatsnew/3.9.rst:482
+#: ../Doc/whatsnew/3.9.rst:484
 msgid ""
 "Added keywords to module name completion list.  (Contributed by Terry J. "
 "Reedy in :issue:`37765`.)"
 msgstr ""
+"Se agregaron palabras clave a la lista de finalización del nombre del "
+"módulo. (Contribuido por Terry J. Reedy en :issue:`37765`.)"
 
-#: ../../whatsnew/3.9.rst:485
+#: ../Doc/whatsnew/3.9.rst:487
 msgid "New in 3.9 maintenance releases"
-msgstr ""
+msgstr "Novedades de la versión de mantenimiento 3.9"
 
-#: ../../whatsnew/3.9.rst:487
+#: ../Doc/whatsnew/3.9.rst:489
 msgid ""
 "Make IDLE invoke :func:`sys.excepthook` (when started without '-n'). User "
 "hooks were previously ignored.  (Contributed by Ken Hilton in :issue:"
 "`43008`.)"
 msgstr ""
+"Hacer que IDLE invoque :func:`sys.excepthook` (cuando se inicia sin '-n'). "
+"Anteriormente se ignoraban los hooks de usuario.  (Contribuido por Ken "
+"Hilton en :issue:`43008`.)"
 
-#: ../../whatsnew/3.9.rst:491
+#: ../Doc/whatsnew/3.9.rst:493
 msgid "The changes above have been backported to 3.8 maintenance releases."
 msgstr ""
+"Los cambios anteriores se han actualizado a las versiones de mantenimiento "
+"3.8."
 
-#: ../../whatsnew/3.9.rst:493
+#: ../Doc/whatsnew/3.9.rst:495
 msgid ""
 "Rearrange the settings dialog.  Split the General tab into Windows and Shell/"
 "Ed tabs.  Move help sources, which extend the Help menu, to the Extensions "
@@ -794,18 +972,27 @@ msgid ""
 "Windows tab.  (Contributed by Mark Roseman and Terry Jan Reedy in :issue:"
 "`33962`.)"
 msgstr ""
+"Reorganizar el diálogo de configuración. Dividir la pestaña General en "
+"Windows y Shell/Ed. Mover las fuentes de ayuda, que amplían el menú Ayuda, a "
+"la pestaña Extensiones. Hacer espacio para nuevas opciones y acortar el "
+"diálogo. Esto último hace que el diálogo se adapte mejor a las pantallas "
+"pequeñas. (Contribuido por Terry Jan Reedy en :issue:`40468`.) Mover la "
+"configuración del espacio de sangría de la pestaña Fuente a la nueva pestaña "
+"Windows. (Contribuido por Mark Roseman y Terry Jan Reedy en :issue:`33962`.)"
 
-#: ../../whatsnew/3.9.rst:501
+#: ../Doc/whatsnew/3.9.rst:503
 msgid ""
 "Apply syntax highlighting to ``.pyi`` files. (Contributed by Alex Waygood "
 "and Terry Jan Reedy in :issue:`45447`.)"
 msgstr ""
+"Aplicar el resaltado de sintaxis a los archivos ``.pyi``. (Contribución de "
+"Alex Waygood y Terry Jan Reedy en :issue:`45447`)"
 
-#: ../../whatsnew/3.9.rst:505
+#: ../Doc/whatsnew/3.9.rst:507
 msgid "imaplib"
 msgstr "imaplib"
 
-#: ../../whatsnew/3.9.rst:507
+#: ../Doc/whatsnew/3.9.rst:509
 msgid ""
 ":class:`~imaplib.IMAP4` and :class:`~imaplib.IMAP4_SSL` now have an optional "
 "*timeout* parameter for their constructors. Also, the :meth:`~imaplib.IMAP4."
@@ -814,8 +1001,14 @@ msgid ""
 "IMAP4_stream` were applied to this change. (Contributed by Dong-hee Na in :"
 "issue:`38615`.)"
 msgstr ""
+":class:`~imaplib.IMAP4` y :class:`~imaplib.IMAP4_SSL` ahora tienen un "
+"parámetro *timeout* parameter for their constructors. También el método :"
+"meth:`~imaplib.IMAP4.open` ahora tiene un parámetro opcional *timeout* con "
+"este cambio. Los métodos anulados de :class:`~imaplib.IMAP4_SSL` y :class:"
+"`~imaplib.IMAP4_stream` se aplicaron a este cambio. (Contribuido por Dong-"
+"hee Na en :issue:`38615`.)"
 
-#: ../../whatsnew/3.9.rst:514
+#: ../Doc/whatsnew/3.9.rst:516
 msgid ""
 ":meth:`imaplib.IMAP4.unselect` is added. :meth:`imaplib.IMAP4.unselect` "
 "frees server's resources associated with the selected mailbox and returns "
@@ -824,306 +1017,390 @@ msgid ""
 "permanently removed from the currently selected mailbox. (Contributed by "
 "Dong-hee Na in :issue:`40375`.)"
 msgstr ""
+"Se agrega :meth:`imaplib.IMAP4.unselect`. :meth:`imaplib.IMAP4.unselect` "
+"libera los recursos del servidor asociados con el buzón de correo "
+"seleccionado y devuelve el servidor al estado autenticado. Este comando "
+"realiza las mismas acciones que :meth:`imaplib.IMAP4.close`, excepto que "
+"ningún mensaje se elimina permanentemente del buzón de correo seleccionado "
+"actualmente. (Contribuido por Dong-hee Na en :issue:`40375`.)"
 
-#: ../../whatsnew/3.9.rst:522
+#: ../Doc/whatsnew/3.9.rst:524
 msgid "importlib"
 msgstr "importlib"
 
-#: ../../whatsnew/3.9.rst:524
+#: ../Doc/whatsnew/3.9.rst:526
 msgid ""
 "To improve consistency with import statements, :func:`importlib.util."
 "resolve_name` now raises :exc:`ImportError` instead of :exc:`ValueError` for "
 "invalid relative import attempts. (Contributed by Ngalim Siregar in :issue:"
 "`37444`.)"
 msgstr ""
+"Para mejorar la coherencia con las declaraciones de importación, :func:"
+"`importlib.util.resolve_name` ahora lanza :exc:`ImportError` en lugar de :"
+"exc:`ValueError` para intentos de importación relativa no válidos. "
+"(Contribuido por Ngalim Siregar en :issue:`37444`.)"
 
-#: ../../whatsnew/3.9.rst:529
+#: ../Doc/whatsnew/3.9.rst:531
 msgid ""
 "Import loaders which publish immutable module objects can now publish "
 "immutable packages in addition to individual modules. (Contributed by Dino "
 "Viehland in :issue:`39336`.)"
 msgstr ""
+"Los cargadores de importación que publican objetos de módulo inmutables "
+"ahora pueden publicar paquetes inmutables además de módulos individuales. "
+"(Contribuido por Dino Viehland en :issue:`39336`.)"
 
-#: ../../whatsnew/3.9.rst:533
+#: ../Doc/whatsnew/3.9.rst:535
 msgid ""
 "Added :func:`importlib.resources.files` function with support for "
 "subdirectories in package data, matching backport in ``importlib_resources`` "
 "version 1.5. (Contributed by Jason R. Coombs in :issue:`39791`.)"
 msgstr ""
+"Se agregó la función :func:`importlib.resources.files` con soporte para "
+"subdirectorios en los datos del paquete, compatible con el backport en "
+"``importlib_resources`` versión 1.5. (Contribuido por Jason R. Coombs en :"
+"issue:`39791`.)"
 
-#: ../../whatsnew/3.9.rst:538
+#: ../Doc/whatsnew/3.9.rst:540
 msgid ""
 "Refreshed ``importlib.metadata`` from ``importlib_metadata`` version 1.6.1."
 msgstr ""
+"``importlib.metadata`` actualizado de ``importlib_metadata`` versión 1.6.1."
 
-#: ../../whatsnew/3.9.rst:541
+#: ../Doc/whatsnew/3.9.rst:543
 msgid "inspect"
-msgstr "inspect"
+msgstr "inspeccionar"
 
-#: ../../whatsnew/3.9.rst:543
+#: ../Doc/whatsnew/3.9.rst:545
 msgid ""
 ":attr:`inspect.BoundArguments.arguments` is changed from ``OrderedDict`` to "
 "regular dict.  (Contributed by Inada Naoki in :issue:`36350` and :issue:"
 "`39775`.)"
 msgstr ""
-"attr:`inspect.BoundArguments.arguments` は ``OrderedDict`` から標準のdictに変"
-"更されました。(Inada Naoki の貢献による :issue:`36350`, :issue:`39775`)"
+":attr:`inspect.BoundArguments.arguments` se cambia de ``OrderedDict`` a "
+"dictado regular. (Contribuido por Inada Naoki en :issue:`36350` y :issue:"
+"`39775`.)"
 
-#: ../../whatsnew/3.9.rst:547
+#: ../Doc/whatsnew/3.9.rst:549
 msgid "ipaddress"
-msgstr "ipaddress"
+msgstr "dirección IP"
 
-#: ../../whatsnew/3.9.rst:549
+#: ../Doc/whatsnew/3.9.rst:551
 msgid ""
 ":mod:`ipaddress` now supports IPv6 Scoped Addresses (IPv6 address with "
 "suffix ``%<scope_id>``)."
 msgstr ""
+":mod:`ipaddress` ahora admite direcciones de ámbito IPv6 (dirección IPv6 con "
+"sufijo ``%<scope_id>``)."
 
-#: ../../whatsnew/3.9.rst:551
+#: ../Doc/whatsnew/3.9.rst:553
 msgid ""
 "Scoped IPv6 addresses can be parsed using :class:`ipaddress.IPv6Address`. If "
 "present, scope zone ID is available through the :attr:`~ipaddress."
 "IPv6Address.scope_id` attribute. (Contributed by Oleksandr Pavliuk in :issue:"
 "`34788`.)"
 msgstr ""
+"Las direcciones IPv6 con alcance se pueden analizar mediante :class:"
+"`ipaddress.IPv6Address`. Si está presente, la identificación de la zona del "
+"alcance está disponible a través del atributo :attr:`~ipaddress.IPv6Address."
+"scope_id`. (Contribuido por Oleksandr Pavliuk en :issue:`34788`.)"
 
-#: ../../whatsnew/3.9.rst:555
+#: ../Doc/whatsnew/3.9.rst:557
 msgid ""
 "Starting with Python 3.9.5 the :mod:`ipaddress` module no longer accepts any "
 "leading zeros in IPv4 address strings. (Contributed by Christian Heimes in :"
 "issue:`36384`)."
 msgstr ""
+"A partir de Python 3.9.5, el módulo :mod:`ipaddress` ya no acepta ceros a la "
+"izquierda en cadenas de direcciones IPv4. (Contribuido por Christian Heimes "
+"en :issue:`36384`)."
 
-#: ../../whatsnew/3.9.rst:560
+#: ../Doc/whatsnew/3.9.rst:562
 msgid "math"
-msgstr "math"
+msgstr "Matemáticas"
 
-#: ../../whatsnew/3.9.rst:562
+#: ../Doc/whatsnew/3.9.rst:564
 msgid ""
 "Expanded the :func:`math.gcd` function to handle multiple arguments. "
 "Formerly, it only supported two arguments. (Contributed by Serhiy Storchaka "
 "in :issue:`39648`.)"
 msgstr ""
+"Se amplió la función :func:`math.gcd` para manejar múltiples argumentos. "
+"Anteriormente, solo respaldaba dos argumentos. (Contribuido por Serhiy "
+"Storchaka en :issue:`39648`.)"
 
-#: ../../whatsnew/3.9.rst:566
+#: ../Doc/whatsnew/3.9.rst:568
 msgid ""
 "Added :func:`math.lcm`: return the least common multiple of specified "
 "arguments. (Contributed by Mark Dickinson, Ananthakrishnan and Serhiy "
 "Storchaka in :issue:`39479` and :issue:`39648`.)"
 msgstr ""
+":func:`math.lcm` agregado: devuelve el mínimo común múltiplo de argumentos "
+"especificados. (Contribuido por Mark Dickinson, Ananthakrishnan y Serhiy "
+"Storchaka en :issue:`39479` y :issue:`39648`.)"
 
-#: ../../whatsnew/3.9.rst:570
+#: ../Doc/whatsnew/3.9.rst:572
 msgid ""
 "Added :func:`math.nextafter`: return the next floating-point value after *x* "
 "towards *y*. (Contributed by Victor Stinner in :issue:`39288`.)"
 msgstr ""
+":func:`math.nextafter` agregado: devuelve el siguiente valor de punto "
+"flotante después de *x* towards *y*. (Contribuido por Victor Stinner en :"
+"issue:`39288`.)"
 
-#: ../../whatsnew/3.9.rst:574
+#: ../Doc/whatsnew/3.9.rst:576
 msgid ""
 "Added :func:`math.ulp`: return the value of the least significant bit of a "
 "float. (Contributed by Victor Stinner in :issue:`39310`.)"
 msgstr ""
+":func:`math.ulp` agregado: devuelve el valor del bit menos significativo de "
+"un flotador. (Contribuido por Victor Stinner en :issue:`39310`.)"
 
-#: ../../whatsnew/3.9.rst:579
+#: ../Doc/whatsnew/3.9.rst:581
 msgid "multiprocessing"
-msgstr "multiprocessing"
+msgstr "multiprocesamiento"
 
-#: ../../whatsnew/3.9.rst:581
+#: ../Doc/whatsnew/3.9.rst:583
 msgid ""
 "The :class:`multiprocessing.SimpleQueue` class has a new :meth:"
 "`~multiprocessing.SimpleQueue.close` method to explicitly close the queue. "
 "(Contributed by Victor Stinner in :issue:`30966`.)"
 msgstr ""
+"La clase :class:`multiprocessing.SimpleQueue` tiene un nuevo método :meth:"
+"`~multiprocessing.SimpleQueue.close` para cerrar explícitamente la cola. "
+"(Contribuido por Victor Stinner en :issue:`30966`.)"
 
-#: ../../whatsnew/3.9.rst:587
+#: ../Doc/whatsnew/3.9.rst:589
 msgid "nntplib"
 msgstr "nntplib"
 
-#: ../../whatsnew/3.9.rst:589
+#: ../Doc/whatsnew/3.9.rst:591
 msgid ""
 ":class:`~nntplib.NNTP` and :class:`~nntplib.NNTP_SSL` now raise a :class:"
 "`ValueError` if the given timeout for their constructor is zero to prevent "
 "the creation of a non-blocking socket. (Contributed by Dong-hee Na in :issue:"
 "`39259`.)"
 msgstr ""
+":class:`~nntplib.NNTP` y :class:`~nntplib.NNTP_SSL` ahora lanzan un :class:"
+"`ValueError` si el tiempo de espera dado para su constructor es cero para "
+"evitar la creación de un socket sin bloqueo. (Contribuido por Dong-hee Na "
+"en :issue:`39259`.)"
 
-#: ../../whatsnew/3.9.rst:594
+#: ../Doc/whatsnew/3.9.rst:596
 msgid "os"
 msgstr "os"
 
-#: ../../whatsnew/3.9.rst:596
+#: ../Doc/whatsnew/3.9.rst:598
 msgid ""
 "Added :data:`~os.CLD_KILLED` and :data:`~os.CLD_STOPPED` for :attr:"
 "`si_code`. (Contributed by Dong-hee Na in :issue:`38493`.)"
 msgstr ""
-":attr:`si_code`に、`~os.CLD_KILLED`と`~os.CLD_STOPPED`が追加されました。(:"
-"issue:`38493`でのDong-hee Naの貢献による)"
+"Se agregaron :data:`~os.CLD_KILLED` y :data:`~os.CLD_STOPPED` para :attr:"
+"`si_code`. (Contribuido por Dong-hee Na en :issue:`38493`.)"
 
-#: ../../whatsnew/3.9.rst:599
+#: ../Doc/whatsnew/3.9.rst:601
 msgid ""
 "Exposed the Linux-specific :func:`os.pidfd_open` (:issue:`38692`) and :data:"
 "`os.P_PIDFD` (:issue:`38713`) for process management with file descriptors."
 msgstr ""
+"Se expusieron los :func:`os.pidfd_open` (:issue:`38692`) y :data:`os."
+"P_PIDFD` (:issue:`38713`) específicos de Linux para la gestión de procesos "
+"con descriptores de archivos."
 
-#: ../../whatsnew/3.9.rst:603
+#: ../Doc/whatsnew/3.9.rst:605
 msgid ""
 "The :func:`os.unsetenv` function is now also available on Windows. "
 "(Contributed by Victor Stinner in :issue:`39413`.)"
 msgstr ""
-":func:`os.unsetenv`関数が、Windowsでも使えるようになりました。(:issue:`39413`"
-"におけるVictor Stinnerの貢献による)"
+"La función :func:`os.unsetenv` ahora también está disponible en Windows. "
+"(Contribuido por Victor Stinner en :issue:`39413`.)"
 
-#: ../../whatsnew/3.9.rst:606
+#: ../Doc/whatsnew/3.9.rst:608
 msgid ""
 "The :func:`os.putenv` and :func:`os.unsetenv` functions are now always "
 "available. (Contributed by Victor Stinner in :issue:`39395`.)"
 msgstr ""
-":func:`os.putenv`と:func:`os.unsetenv`関数が、常に利用できるようになりまし"
-"た。(:issue:`39395`におけるVictor Stinnerの貢献による)"
+"Las funciones :func:`os.putenv` y :func:`os.unsetenv` ahora están siempre "
+"disponibles. (Contribuido por Victor Stinner en :issue:`39395`.)"
 
-#: ../../whatsnew/3.9.rst:610
+#: ../Doc/whatsnew/3.9.rst:612
 msgid ""
 "Added :func:`os.waitstatus_to_exitcode` function: convert a wait status to "
 "an exit code. (Contributed by Victor Stinner in :issue:`40094`.)"
 msgstr ""
+"Función :func:`os.waitstatus_to_exitcode` agregada: convierte un estado de "
+"espera en un código de salida. (Contribuido por Victor Stinner en :issue:"
+"`40094`.)"
 
-#: ../../whatsnew/3.9.rst:615
+#: ../Doc/whatsnew/3.9.rst:617
 msgid "pathlib"
-msgstr "pathlib"
+msgstr "Pathlib"
 
-#: ../../whatsnew/3.9.rst:617
+#: ../Doc/whatsnew/3.9.rst:619
 msgid ""
 "Added :meth:`pathlib.Path.readlink()` which acts similarly to :func:`os."
 "readlink`. (Contributed by Girts Folkmanis in :issue:`30618`)"
 msgstr ""
-":func:`os.readlink` と同様の動作をする :meth:`pathlib.Path.readlink()` が追加"
-"されました。(Girts Folkmanis の貢献による :issue:`30618`)"
+"Se agregó :meth:`pathlib.Path.readlink()` que actúa de manera similar a :"
+"func:`os.readlink`. (Contribuido por Girts Folkmanis en :issue:`30618`)"
 
-#: ../../whatsnew/3.9.rst:622
+#: ../Doc/whatsnew/3.9.rst:624
 msgid "pdb"
 msgstr "pdb"
 
-#: ../../whatsnew/3.9.rst:624
+#: ../Doc/whatsnew/3.9.rst:626
 msgid ""
 "On Windows now :class:`~pdb.Pdb` supports ``~/.pdbrc``. (Contributed by Tim "
 "Hopper and Dan Lidral-Porter in :issue:`20523`.)"
 msgstr ""
+"En Windows, ahora :class:`~pdb.Pdb` es compatible con ``~/.pdbrc``. "
+"(Contribuido por Tim Hopper y Dan Lidral-Porter en :issue:`20523`.)"
 
-#: ../../whatsnew/3.9.rst:628
+#: ../Doc/whatsnew/3.9.rst:630
 msgid "poplib"
 msgstr "poplib"
 
-#: ../../whatsnew/3.9.rst:630
+#: ../Doc/whatsnew/3.9.rst:632
 msgid ""
 ":class:`~poplib.POP3` and :class:`~poplib.POP3_SSL` now raise a :class:"
 "`ValueError` if the given timeout for their constructor is zero to prevent "
 "the creation of a non-blocking socket. (Contributed by Dong-hee Na in :issue:"
 "`39259`.)"
 msgstr ""
+":class:`~poplib.POP3` y :class:`~poplib.POP3_SSL` ahora lanzan un :class:"
+"`ValueError` si el tiempo de espera dado para su constructor es cero para "
+"evitar la creación de un socket sin bloqueo. (Contribuido por Dong-hee Na "
+"en :issue:`39259`.)"
 
-#: ../../whatsnew/3.9.rst:635
+#: ../Doc/whatsnew/3.9.rst:637
 msgid "pprint"
 msgstr "pprint"
 
-#: ../../whatsnew/3.9.rst:637
+#: ../Doc/whatsnew/3.9.rst:639
 msgid ""
 ":mod:`pprint` can now pretty-print :class:`types.SimpleNamespace`. "
 "(Contributed by Carl Bordum Hansen in :issue:`37376`.)"
 msgstr ""
+":mod:`pprint` ahora puede imprimir :class:`types.SimpleNamespace` de forma "
+"bonita. (Contribuido por Carl Bordum Hansen en :issue:`37376`.)"
 
-#: ../../whatsnew/3.9.rst:641
+#: ../Doc/whatsnew/3.9.rst:643
 msgid "pydoc"
-msgstr "pydoc"
+msgstr "Pydoc"
 
-#: ../../whatsnew/3.9.rst:643
+#: ../Doc/whatsnew/3.9.rst:645
 msgid ""
 "The documentation string is now shown not only for class, function, method "
 "etc, but for any object that has its own ``__doc__`` attribute. (Contributed "
 "by Serhiy Storchaka in :issue:`40257`.)"
 msgstr ""
+"La cadena de documentación ahora se muestra no solo para la clase, función, "
+"método, etc., sino para cualquier objeto que tenga su propio atributo "
+"``__doc__``. (Contribuido por Serhiy Storchaka en :issue:`40257`.)"
 
-#: ../../whatsnew/3.9.rst:648
+#: ../Doc/whatsnew/3.9.rst:650
 msgid "random"
-msgstr "random"
+msgstr "aleatorio"
 
-#: ../../whatsnew/3.9.rst:650
+#: ../Doc/whatsnew/3.9.rst:652
 msgid ""
 "Added a new :attr:`random.Random.randbytes` method: generate random bytes. "
 "(Contributed by Victor Stinner in :issue:`40286`.)"
 msgstr ""
-"ランダムなbytesを生成する :attr:`random.Random.randbytes` メソッドが追加され"
-"ました。(Victor Stinner による貢献 :issue:`40286`)"
+"Se agregó un nuevo método :attr:`random.Random.randbytes`: generar bytes "
+"aleatorios. (Contribuido por Victor Stinner en :issue:`40286`.)"
 
-#: ../../whatsnew/3.9.rst:654
+#: ../Doc/whatsnew/3.9.rst:656
 msgid "signal"
-msgstr "signal"
+msgstr "señal"
 
-#: ../../whatsnew/3.9.rst:656
+#: ../Doc/whatsnew/3.9.rst:658
 msgid ""
 "Exposed the Linux-specific :func:`signal.pidfd_send_signal` for sending to "
 "signals to a process using a file descriptor instead of a pid. (:issue:"
 "`38712`)"
 msgstr ""
+"Expuso el :func:`signal.pidfd_send_signal` específico de Linux para enviar "
+"señales a un proceso utilizando un descriptor de archivo en lugar de un pid. "
+"(:issue:`38712`)"
 
-#: ../../whatsnew/3.9.rst:660
+#: ../Doc/whatsnew/3.9.rst:662
 msgid "smtplib"
 msgstr "smtplib"
 
-#: ../../whatsnew/3.9.rst:662
+#: ../Doc/whatsnew/3.9.rst:664
 msgid ""
 ":class:`~smtplib.SMTP` and :class:`~smtplib.SMTP_SSL` now raise a :class:"
 "`ValueError` if the given timeout for their constructor is zero to prevent "
 "the creation of a non-blocking socket. (Contributed by Dong-hee Na in :issue:"
 "`39259`.)"
 msgstr ""
+":class:`~smtplib.SMTP` y :class:`~smtplib.SMTP_SSL` ahora lanzan un :class:"
+"`ValueError` si el tiempo de espera dado para su constructor es cero para "
+"evitar la creación de un socket sin bloqueo. (Contribuido por Dong-hee Na "
+"en :issue:`39259`.)"
 
-#: ../../whatsnew/3.9.rst:666
+#: ../Doc/whatsnew/3.9.rst:668
 msgid ""
 ":class:`~smtplib.LMTP` constructor  now has an optional *timeout* parameter. "
 "(Contributed by Dong-hee Na in :issue:`39329`.)"
 msgstr ""
+"El constructor :class:`~smtplib.LMTP` ahora tiene un parámetro *timeout* "
+"opcional. (Contribuido por Dong-hee Na en :issue:`39329`.)"
 
-#: ../../whatsnew/3.9.rst:670
+#: ../Doc/whatsnew/3.9.rst:672
 msgid "socket"
-msgstr "socket"
+msgstr "enchufe"
 
-#: ../../whatsnew/3.9.rst:672
+#: ../Doc/whatsnew/3.9.rst:674
 msgid ""
 "The :mod:`socket` module now exports the :data:`~socket."
 "CAN_RAW_JOIN_FILTERS` constant on Linux 4.1 and greater. (Contributed by "
 "Stefan Tatschner and Zackery Spytz in :issue:`25780`.)"
 msgstr ""
+"El módulo :mod:`socket` ahora exporta la constante :data:`~socket."
+"CAN_RAW_JOIN_FILTERS` en Linux 4.1 y superior. (Contribuido por Stefan "
+"Tatschner y Zackery Spytz en :issue:`25780`.)"
 
-#: ../../whatsnew/3.9.rst:676
+#: ../Doc/whatsnew/3.9.rst:678
 msgid ""
 "The socket module now supports the :data:`~socket.CAN_J1939` protocol on "
 "platforms that support it.  (Contributed by Karl Ding in :issue:`40291`.)"
 msgstr ""
+"El módulo de socket ahora admite el protocolo :data:`~socket.CAN_J1939` en "
+"plataformas que lo admiten. (Contribuido por Karl Ding en :issue:`40291`.)"
 
-#: ../../whatsnew/3.9.rst:679
+#: ../Doc/whatsnew/3.9.rst:681
 msgid ""
 "The socket module now has the :func:`socket.send_fds` and :func:`socket."
 "recv_fds` functions. (Contributed by Joannah Nanjekye, Shinya Okano and "
 "Victor Stinner in :issue:`28724`.)"
 msgstr ""
+"El módulo de enchufe ahora tiene las funciones :func:`socket.send_fds` y :"
+"func:`socket.recv_fds`. (Contribuido por Joannah Nanjekye, Shinya Okano y "
+"Victor Stinner en :issue:`28724`.)"
 
-#: ../../whatsnew/3.9.rst:685
+#: ../Doc/whatsnew/3.9.rst:687
 msgid "time"
-msgstr "time"
+msgstr "tiempo"
 
-#: ../../whatsnew/3.9.rst:687
+#: ../Doc/whatsnew/3.9.rst:689
 msgid ""
 "On AIX, :func:`~time.thread_time` is now implemented with "
 "``thread_cputime()`` which has nanosecond resolution, rather than "
 "``clock_gettime(CLOCK_THREAD_CPUTIME_ID)`` which has a resolution of 10 "
 "milliseconds. (Contributed by Batuhan Taskaya in :issue:`40192`)"
 msgstr ""
+"En AIX, :func:`~time.thread_time` ahora se implementa con "
+"``thread_cputime()`` que tiene una resolución de nanosegundos, en lugar de "
+"``clock_gettime(CLOCK_THREAD_CPUTIME_ID)`` que tiene una resolución de 10 "
+"ms. (Contribuido por Batuhan Taskaya en :issue:`40192`)"
 
-#: ../../whatsnew/3.9.rst:693
+#: ../Doc/whatsnew/3.9.rst:695
 msgid "sys"
 msgstr "sys"
 
-#: ../../whatsnew/3.9.rst:695
+#: ../Doc/whatsnew/3.9.rst:697
 msgid ""
 "Added a new :attr:`sys.platlibdir` attribute: name of the platform-specific "
 "library directory. It is used to build the path of standard library and the "
@@ -1132,52 +1409,72 @@ msgid ""
 "platforms. (Contributed by Jan Matějek, Matěj Cepl, Charalampos Stratakis "
 "and Victor Stinner in :issue:`1294959`.)"
 msgstr ""
+"Se agregó un nuevo atributo :attr:`sys.platlibdir`: nombre del directorio de "
+"biblioteca específico de la plataforma. Se utiliza para construir la ruta de "
+"la biblioteca estándar y las rutas de los módulos de extensión instalados. "
+"Es igual a ``\"lib\"`` en la mayoría de las plataformas. En Fedora y SuSE, "
+"es igual a ``\"lib64\"`` en plataformas de 64 bits. (Contribuido por Jan "
+"Matějek, Matěj Cepl, Charalampos Stratakis y Victor Stinner en :issue:"
+"`1294959`.)"
 
-#: ../../whatsnew/3.9.rst:701
+#: ../Doc/whatsnew/3.9.rst:703
 msgid ""
 "Previously, :attr:`sys.stderr` was block-buffered when non-interactive. Now "
 "``stderr`` defaults to always being line-buffered. (Contributed by Jendrik "
 "Seipp in :issue:`13601`.)"
 msgstr ""
+"Anteriormente, :attr:`sys.stderr` estaba bloqueado en búfer cuando no era "
+"interactivo. Ahora ``stderr`` tiene como valor predeterminado que siempre "
+"tenga búfer de línea. (Contribuido por Jendrik Seipp en :issue:`13601`.)"
 
-#: ../../whatsnew/3.9.rst:706
+#: ../Doc/whatsnew/3.9.rst:708
 msgid "tracemalloc"
 msgstr "tracemalloc"
 
-#: ../../whatsnew/3.9.rst:708
+#: ../Doc/whatsnew/3.9.rst:710
 msgid ""
 "Added :func:`tracemalloc.reset_peak` to set the peak size of traced memory "
 "blocks to the current size, to measure the peak of specific pieces of code. "
 "(Contributed by Huon Wilson in :issue:`40630`.)"
 msgstr ""
+"Se agregó :func:`tracemalloc.reset_peak` para establecer el tamaño máximo de "
+"los bloques de memoria rastreados al tamaño actual, para medir el pico de "
+"piezas de código específicas. (Contribuido por Huon Wilson en :issue:"
+"`40630`.)"
 
-#: ../../whatsnew/3.9.rst:713 ../../whatsnew/3.9.rst:1496
+#: ../Doc/whatsnew/3.9.rst:715 ../Doc/whatsnew/3.9.rst:1498
 msgid "typing"
-msgstr "typing"
+msgstr "mecanografía"
 
-#: ../../whatsnew/3.9.rst:715
+#: ../Doc/whatsnew/3.9.rst:717
 msgid ""
 ":pep:`593` introduced an :data:`typing.Annotated` type to decorate existing "
 "types with context-specific metadata and new ``include_extras`` parameter "
 "to :func:`typing.get_type_hints` to access the metadata at runtime. "
 "(Contributed by Till Varoquaux and Konstantin Kashin.)"
 msgstr ""
+":pep:`593` introdujo un tipo :data:`typing.Annotated` para decorar tipos "
+"existentes con metadatos específicos del contexto y el nuevo parámetro "
+"``include_extras`` en :func:`typing.get_type_hints` para acceder a los "
+"metadatos en tiempo de ejecución. (Contribuido por Till Varoquaux y "
+"Konstantin Kashin.)"
 
-#: ../../whatsnew/3.9.rst:721
+#: ../Doc/whatsnew/3.9.rst:723
 msgid "unicodedata"
 msgstr "unicodedata"
 
-#: ../../whatsnew/3.9.rst:723
+#: ../Doc/whatsnew/3.9.rst:725
 msgid ""
 "The Unicode database has been updated to version 13.0.0. (:issue:`39926`)."
 msgstr ""
-"Unicode データベースが、バージョン 13.0.0 に更新されました。(:issue:`39926`)"
+"La base de datos Unicode se ha actualizado a la versión 13.0.0. (:issue:"
+"`39926`)."
 
-#: ../../whatsnew/3.9.rst:726
+#: ../Doc/whatsnew/3.9.rst:728
 msgid "venv"
 msgstr "venv"
 
-#: ../../whatsnew/3.9.rst:728
+#: ../Doc/whatsnew/3.9.rst:730
 msgid ""
 "The activation scripts provided by :mod:`venv` now all specify their prompt "
 "customization consistently by always using the value specified by "
@@ -1186,45 +1483,61 @@ msgid ""
 "default case), and one used ``__VENV_NAME__`` instead. (Contributed by Brett "
 "Cannon in :issue:`37663`.)"
 msgstr ""
+"Los scripts de activación proporcionados por :mod:`venv` ahora especifican "
+"su personalización de solicitud de manera consistente utilizando siempre el "
+"valor especificado por ``__VENV_PROMPT__``. Anteriormente, algunos scripts "
+"usaban ``__VENV_PROMPT__`` incondicionalmente, otros solo si estaba "
+"configurado (que era el caso predeterminado) y uno usaba ``__VENV_NAME__`` "
+"en su lugar. (Contribuido por Brett Cannon en :issue:`37663`.)"
 
-#: ../../whatsnew/3.9.rst:736
+#: ../Doc/whatsnew/3.9.rst:738
 msgid "xml"
 msgstr "xml"
 
-#: ../../whatsnew/3.9.rst:738
+#: ../Doc/whatsnew/3.9.rst:740
 msgid ""
 "White space characters within attributes are now preserved when serializing :"
 "mod:`xml.etree.ElementTree` to XML file. EOLNs are no longer normalized to "
 "\"\\n\". This is the result of discussion about how to interpret section "
 "2.11 of XML spec. (Contributed by Mefistotelis in :issue:`39011`.)"
 msgstr ""
+"Los caracteres de espacio en blanco dentro de los atributos ahora se "
+"conservan al serializar :mod:`xml.etree.ElementTree` en un archivo XML. Los "
+"EOLN ya no se normalizan a \"\\ n\". Este es el resultado de la discusión "
+"sobre cómo interpretar la sección 2.11 de la especificación XML. "
+"(Contribuido por Mefistotelis en :issue:`39011`.)"
 
-#: ../../whatsnew/3.9.rst:746
+#: ../Doc/whatsnew/3.9.rst:748
 msgid "Optimizations"
-msgstr "最適化"
+msgstr "Optimizaciones"
 
-#: ../../whatsnew/3.9.rst:748
+#: ../Doc/whatsnew/3.9.rst:750
 msgid ""
 "Optimized the idiom for assignment a temporary variable in comprehensions. "
 "Now ``for y in [expr]`` in comprehensions is as fast as a simple assignment "
 "``y = expr``.  For example:"
 msgstr ""
+"Optimización del idioma para la asignación de una variable temporal en las "
+"comprensiones. Ahora ``for y in [expr]`` en comprensiones es tan rápido como "
+"una simple asignación ``y = expr``. Por ejemplo:"
 
-#: ../../whatsnew/3.9.rst:752
+#: ../Doc/whatsnew/3.9.rst:754
 msgid "sums = [s for s in [0] for x in data for s in [s + x]]"
-msgstr ""
+msgstr "sumas = [s para s en [0] para x en datos para s en [s + x]]"
 
-#: ../../whatsnew/3.9.rst:754
+#: ../Doc/whatsnew/3.9.rst:756
 msgid ""
 "Unlike the ``:=`` operator this idiom does not leak a variable to the outer "
 "scope."
 msgstr ""
+"A diferencia del operador ``:=``, este idioma no filtra una variable al "
+"alcance externo."
 
-#: ../../whatsnew/3.9.rst:757
+#: ../Doc/whatsnew/3.9.rst:759
 msgid "(Contributed by Serhiy Storchaka in :issue:`32856`.)"
-msgstr ""
+msgstr "(Contribuido por Serhiy Storchaka en :issue:`32856`.)"
 
-#: ../../whatsnew/3.9.rst:759
+#: ../Doc/whatsnew/3.9.rst:761
 msgid ""
 "Optimized signal handling in multithreaded applications. If a thread "
 "different than the main thread gets a signal, the bytecode evaluation loop "
@@ -1232,43 +1545,64 @@ msgid ""
 "signals which cannot be handled. Only the main thread of the main "
 "interpreter can handle signals."
 msgstr ""
+"Manejo de señal optimizado en aplicaciones multiproceso. Si un subproceso "
+"diferente al subproceso principal recibe una señal, el bucle de evaluación "
+"del código de bytes ya no se interrumpe en cada instrucción de código de "
+"bytes para verificar si hay señales pendientes que no se pueden manejar. "
+"Solo el hilo principal del intérprete principal puede manejar señales."
 
-#: ../../whatsnew/3.9.rst:765
+#: ../Doc/whatsnew/3.9.rst:767
 msgid ""
 "Previously, the bytecode evaluation loop was interrupted at each instruction "
 "until the main thread handles signals. (Contributed by Victor Stinner in :"
 "issue:`40010`.)"
 msgstr ""
+"Anteriormente, el ciclo de evaluación del código de bytes se interrumpía en "
+"cada instrucción hasta que el hilo principal manejaba las señales. "
+"(Contribuido por Victor Stinner en :issue:`40010`.)"
 
-#: ../../whatsnew/3.9.rst:769
+#: ../Doc/whatsnew/3.9.rst:771
 msgid ""
 "Optimized the :mod:`subprocess` module on FreeBSD using ``closefrom()``. "
 "(Contributed by Ed Maste, Conrad Meyer, Kyle Evans, Kubilay Kocak and Victor "
 "Stinner in :issue:`38061`.)"
 msgstr ""
+"Optimicé el módulo :mod:`subprocess` en FreeBSD usando ``closefrom()``. "
+"(Contribuido por Ed Maste, Conrad Meyer, Kyle Evans, Kubilay Kocak y Victor "
+"Stinner en :issue:`38061`.)"
 
-#: ../../whatsnew/3.9.rst:773
+#: ../Doc/whatsnew/3.9.rst:775
 msgid ""
 ":c:func:`PyLong_FromDouble` is now up to 1.87x faster for values that fit "
 "into :c:expr:`long`. (Contributed by Sergey Fedoseev in :issue:`37986`.)"
 msgstr ""
+":c:func:`PyLong_FromDouble` ahora es hasta 1,87 veces más rápido para "
+"valores que se ajustan a :c:expr:`long`. (Contribuido por Sergey Fedoseev "
+"en :issue:`37986`.)"
 
-#: ../../whatsnew/3.9.rst:777
+#: ../Doc/whatsnew/3.9.rst:779
 msgid ""
 "A number of Python builtins (:class:`range`, :class:`tuple`, :class:`set`, :"
 "class:`frozenset`, :class:`list`, :class:`dict`) are now sped up by using :"
 "pep:`590` vectorcall protocol. (Contributed by Dong-hee Na, Mark Shannon, "
 "Jeroen Demeyer and Petr Viktorin in :issue:`37207`.)"
 msgstr ""
+"Varias incorporaciones de Python (:class:`range`, :class:`tuple`, :class:"
+"`set`, :class:`frozenset`, :class:`list`, :class:`dict`) ahora se aceleran "
+"mediante el protocolo de llamada vectorial :pep:`590`. (Contribuido por Dong-"
+"hee Na, Mark Shannon, Jeroen Demeyer y Petr Viktorin en :issue:`37207`.)"
 
-#: ../../whatsnew/3.9.rst:782
+#: ../Doc/whatsnew/3.9.rst:784
 msgid ""
 "Optimized :func:`~set.difference_update` for the case when the other set is "
 "much larger than the base set. (Suggested by Evgeny Kapun with code "
 "contributed by Michele Orrù in :issue:`8425`.)"
 msgstr ""
+":func:`~set.difference_update` optimizado para el caso en el que el otro "
+"conjunto es mucho más grande que el conjunto base. (Sugerido por Evgeny "
+"Kapun con código aportado por Michele Orrù en :issue:`8425`.)"
 
-#: ../../whatsnew/3.9.rst:786
+#: ../Doc/whatsnew/3.9.rst:788
 msgid ""
 "Python's small object allocator (``obmalloc.c``) now allows (no more than) "
 "one empty arena to remain available for immediate reuse, without returning "
@@ -1276,27 +1610,41 @@ msgid ""
 "be created and destroyed anew on each iteration. (Contributed by Tim Peters "
 "in :issue:`37257`.)"
 msgstr ""
+"El asignador de objetos pequeños de Python (``obmalloc.c``) ahora permite "
+"(no más de) que una arena vacía permanezca disponible para su reutilización "
+"inmediata, sin devolverla al sistema operativo. Esto evita la paliza en "
+"bucles simples donde una arena podría crearse y destruirse de nuevo en cada "
+"iteración. (Contribuido por Tim Peters en :issue:`37257`.)"
 
-#: ../../whatsnew/3.9.rst:792
+#: ../Doc/whatsnew/3.9.rst:794
 msgid ""
 ":term:`floor division` of float operation now has a better performance. Also "
 "the message of :exc:`ZeroDivisionError` for this operation is updated. "
 "(Contributed by Dong-hee Na in :issue:`39434`.)"
 msgstr ""
+":term:`floor division` de operación flotante ahora tiene un mejor "
+"rendimiento. También se actualiza el mensaje de :exc:`ZeroDivisionError` "
+"para esta operación. (Contribuido por Dong-hee Na en :issue:`39434`.)"
 
-#: ../../whatsnew/3.9.rst:796
+#: ../Doc/whatsnew/3.9.rst:798
+#, python-format
 msgid ""
-"Decoding short ASCII strings with UTF-8 and ascii codecs is now about 15% "
-"faster.  (Contributed by Inada Naoki in :issue:`37348`.)"
+"Decoding short ASCII strings with UTF-8 and ascii codecs is now about "
+"15% faster.  (Contributed by Inada Naoki in :issue:`37348`.)"
 msgstr ""
+"La decodificación de cadenas cortas ASCII con códecs UTF-8 y ascii ahora es "
+"aproximadamente un 15% más rápida. (Contribuido por Inada Naoki en :issue:"
+"`37348`.)"
 
-#: ../../whatsnew/3.9.rst:799
+#: ../Doc/whatsnew/3.9.rst:801
 msgid ""
 "Here's a summary of performance improvements from Python 3.4 through Python "
 "3.9:"
 msgstr ""
+"A continuación, se muestra un resumen de las mejoras de rendimiento desde "
+"Python 3.4 hasta Python 3.9:"
 
-#: ../../whatsnew/3.9.rst:846
+#: ../Doc/whatsnew/3.9.rst:848
 msgid ""
 "These results were generated from the variable access benchmark script at: "
 "``Tools/scripts/var_access_benchmark.py``. The benchmark script displays "
@@ -1306,22 +1654,29 @@ msgid ""
 "html>`_ running the macOS 64-bit builds found at `python.org <https://www."
 "python.org/downloads/mac-osx/>`_."
 msgstr ""
+"Estos resultados se generaron a partir del script de referencia de acceso "
+"variable en: ``Tools/scripts/var_access_benchmark.py``. El script de "
+"referencia muestra tiempos en nanosegundos. Los puntos de referencia se "
+"midieron en un `Intel® Core™ i7-4960HQ processor <https://ark.intel.com/"
+"content/www/us/en/ark/products/76088/intel-core-i7-4960hq-processor-6m-cache-"
+"up-to-3-80-ghz.html>`_ que ejecuta las compilaciones de macOS de 64 bits que "
+"se encuentran en `python.org <https://www.python.org/downloads/mac-osx/>`_."
 
-#: ../../whatsnew/3.9.rst:856
+#: ../Doc/whatsnew/3.9.rst:858
 msgid "Deprecated"
-msgstr "非推奨"
+msgstr "Obsoleto"
 
-#: ../../whatsnew/3.9.rst:858
+#: ../Doc/whatsnew/3.9.rst:860
 msgid ""
 "The distutils ``bdist_msi`` command is now deprecated, use ``bdist_wheel`` "
 "(wheel packages) instead. (Contributed by Hugo van Kemenade in :issue:"
 "`39586`.)"
 msgstr ""
-"distutilsの``bdist_msi``コマンドは、現在非推奨です。代わりに、"
-"``bdist_wheel``(wheelパッケージ)を使って下さい。 ( :issue:`39586`でのHugo "
-"van Kemenadeによる貢献による)"
+"El comando distutils ``bdist_msi`` ahora está en desuso, use ``bdist_wheel`` "
+"(paquetes de ruedas) en su lugar. (Contribuido por Hugo van Kemenade en :"
+"issue:`39586`.)"
 
-#: ../../whatsnew/3.9.rst:862
+#: ../Doc/whatsnew/3.9.rst:864
 msgid ""
 "Currently :func:`math.factorial` accepts :class:`float` instances with non-"
 "negative integer values (like ``5.0``).  It raises a :exc:`ValueError` for "
@@ -1329,32 +1684,50 @@ msgid ""
 "versions it will raise a :exc:`TypeError` for all floats. (Contributed by "
 "Serhiy Storchaka in :issue:`37315`.)"
 msgstr ""
+"Actualmente, :func:`math.factorial` acepta instancias de :class:`float` con "
+"valores enteros no negativos (como ``5.0``). Sube un :exc:`ValueError` para "
+"flotadores no integrales y negativos. Ahora está en desuso. En futuras "
+"versiones de Python, lanzará un :exc:`TypeError` para todos los flotadores. "
+"(Contribuido por Serhiy Storchaka en :issue:`37315`.)"
 
-#: ../../whatsnew/3.9.rst:868
+#: ../Doc/whatsnew/3.9.rst:870
 msgid ""
 "The :mod:`parser` and :mod:`symbol` modules are deprecated and will be "
 "removed in future versions of Python. For the majority of use cases, users "
 "can leverage the Abstract Syntax Tree (AST) generation and compilation "
 "stage, using the :mod:`ast` module."
 msgstr ""
+"Los módulos :mod:`parser` y :mod:`symbol` están obsoletos y se eliminarán en "
+"futuras versiones de Python. Para la mayoría de los casos de uso, los "
+"usuarios pueden aprovechar la etapa de generación y compilación del árbol de "
+"sintaxis abstracta (AST), utilizando el módulo :mod:`ast`."
 
-#: ../../whatsnew/3.9.rst:873
+#: ../Doc/whatsnew/3.9.rst:875
 msgid ""
 "The Public C API functions :c:func:`PyParser_SimpleParseStringFlags`, :c:"
 "func:`PyParser_SimpleParseStringFlagsFilename`, :c:func:"
 "`PyParser_SimpleParseFileFlags` and :c:func:`PyNode_Compile` are deprecated "
 "and will be removed in Python 3.10 together with the old parser."
 msgstr ""
+"Las funciones de la API pública de C :c:func:"
+"`PyParser_SimpleParseStringFlags`, :c:func:"
+"`PyParser_SimpleParseStringFlagsFilename`, :c:func:"
+"`PyParser_SimpleParseFileFlags` y :c:func:`PyNode_Compile` están en desuso y "
+"se eliminarán en Python 3.10 junto con el analizador anterior."
 
-#: ../../whatsnew/3.9.rst:878
+#: ../Doc/whatsnew/3.9.rst:880
 msgid ""
 "Using :data:`NotImplemented` in a boolean context has been deprecated, as it "
 "is almost exclusively the result of incorrect rich comparator "
 "implementations. It will be made a :exc:`TypeError` in a future version of "
 "Python. (Contributed by Josh Rosenberg in :issue:`35712`.)"
 msgstr ""
+"El uso de :data:`NotImplemented` en un contexto booleano ha quedado "
+"obsoleto, ya que es casi exclusivamente el resultado de implementaciones "
+"incorrectas de comparadores ricos. Se convertirá en :exc:`TypeError` en una "
+"versión futura de Python. (Contribuido por Josh Rosenberg en :issue:`35712`.)"
 
-#: ../../whatsnew/3.9.rst:884
+#: ../Doc/whatsnew/3.9.rst:886
 msgid ""
 "The :mod:`random` module currently accepts any hashable type as a possible "
 "seed value.  Unfortunately, some of those types are not guaranteed to have a "
@@ -1362,8 +1735,13 @@ msgid ""
 "seeds to :const:`None`, :class:`int`, :class:`float`, :class:`str`, :class:"
 "`bytes`, and :class:`bytearray`."
 msgstr ""
+"El módulo :mod:`random` actualmente acepta cualquier tipo hash como posible "
+"valor semilla. Desafortunadamente, no se garantiza que algunos de esos tipos "
+"tengan un valor hash determinista. Después de Python 3.9, el módulo "
+"restringirá sus semillas a :const:`None`, :class:`int`, :class:`float`, :"
+"class:`str`, :class:`bytes` y :class:`bytearray`."
 
-#: ../../whatsnew/3.9.rst:890
+#: ../Doc/whatsnew/3.9.rst:892
 msgid ""
 "Opening the :class:`~gzip.GzipFile` file for writing without specifying the "
 "*mode* argument is deprecated.  In future Python versions it will always be "
@@ -1371,40 +1749,53 @@ msgid ""
 "for writing and silencing a warning. (Contributed by Serhiy Storchaka in :"
 "issue:`28286`.)"
 msgstr ""
+"Abrir el archivo :class:`~gzip.GzipFile` para escritura sin especificar el "
+"argumento *mode* argument is deprecated.  In future Python versions it will "
+"always be opened for reading by default.  Specify the *mode* para abrirlo "
+"para escribir y silenciar una advertencia. (Contribuido por Serhiy Storchaka "
+"en :issue:`28286`.)"
 
-#: ../../whatsnew/3.9.rst:896
+#: ../Doc/whatsnew/3.9.rst:898
 msgid ""
 "Deprecated the ``split()`` method of :class:`_tkinter.TkappType` in favour "
 "of the ``splitlist()`` method which has more consistent and predicable "
 "behavior. (Contributed by Serhiy Storchaka in :issue:`38371`.)"
 msgstr ""
+"En desuso del método ``split ()`` de :class:`_tkinter.TkappType` en favor "
+"del método ``splitlist()`` que tiene un comportamiento más consistente y "
+"predecible. (Contribuido por Serhiy Storchaka en :issue:`38371`.)"
 
-#: ../../whatsnew/3.9.rst:901
+#: ../Doc/whatsnew/3.9.rst:903
 msgid ""
 "The explicit passing of coroutine objects to :func:`asyncio.wait` has been "
 "deprecated and will be removed in version 3.11. (Contributed by Yury "
 "Selivanov and Kyle Stanley in :issue:`34790`.)"
 msgstr ""
+"El paso explícito de objetos de rutina a :func:`asyncio.wait` ha quedado "
+"obsoleto y se eliminará en la versión 3.11. (Contribuido por Yury Selivanov "
+"y Kyle Stanley en :issue:`34790`.)"
 
-#: ../../whatsnew/3.9.rst:905
+#: ../Doc/whatsnew/3.9.rst:907
 msgid ""
 "binhex4 and hexbin4 standards are now deprecated. The :mod:`binhex` module "
 "and the following :mod:`binascii` functions are now deprecated:"
 msgstr ""
+"Los estándares binhex4 y hexbin4 ahora están en desuso. El módulo :mod:"
+"`binhex` y las siguientes funciones :mod:`binascii` ahora están en desuso:"
 
-#: ../../whatsnew/3.9.rst:908
+#: ../Doc/whatsnew/3.9.rst:910
 msgid ":func:`~binascii.b2a_hqx`, :func:`~binascii.a2b_hqx`"
-msgstr ""
+msgstr ":func:`~binascii.b2a_hqx`, :func:`~binascii.a2b_hqx`"
 
-#: ../../whatsnew/3.9.rst:909
+#: ../Doc/whatsnew/3.9.rst:911
 msgid ":func:`~binascii.rlecode_hqx`, :func:`~binascii.rledecode_hqx`"
-msgstr ""
+msgstr ":func:`~binascii.rlecode_hqx`, :func:`~binascii.rledecode_hqx`"
 
-#: ../../whatsnew/3.9.rst:911
+#: ../Doc/whatsnew/3.9.rst:913
 msgid "(Contributed by Victor Stinner in :issue:`39353`.)"
-msgstr ""
+msgstr "(Contribuido por Victor Stinner en :issue:`39353`.)"
 
-#: ../../whatsnew/3.9.rst:913
+#: ../Doc/whatsnew/3.9.rst:915
 msgid ""
 ":mod:`ast` classes ``slice``, ``Index`` and ``ExtSlice`` are considered "
 "deprecated and will be removed in future Python versions.  ``value`` itself "
@@ -1412,8 +1803,13 @@ msgid ""
 "should be used instead of ``ExtSlice(slices)``. (Contributed by Serhiy "
 "Storchaka in :issue:`34822`.)"
 msgstr ""
+"Las clases :mod:`ast` ``slice``, ``Index`` y ``ExtSlice`` se consideran "
+"obsoletas y se eliminarán en futuras versiones de Python. El propio "
+"``value`` debe utilizarse en lugar de ``Index(value)``. Se debe utilizar "
+"``Tuple(slices, Load())`` en lugar de ``ExtSlice(slices)``. (Contribuido por "
+"Serhiy Storchaka en :issue:`34822`.)"
 
-#: ../../whatsnew/3.9.rst:919
+#: ../Doc/whatsnew/3.9.rst:921
 msgid ""
 ":mod:`ast` classes ``Suite``, ``Param``, ``AugLoad`` and ``AugStore`` are "
 "considered deprecated and will be removed in future Python versions. They "
@@ -1421,8 +1817,13 @@ msgid ""
 "Python 3. (Contributed by Batuhan Taskaya in :issue:`39639` and :issue:"
 "`39969` and Serhiy Storchaka in :issue:`39988`.)"
 msgstr ""
+"Las clases :mod:`ast` ``Suite``, ``Param``, ``AugLoad`` y ``AugStore`` se "
+"consideran obsoletas y se eliminarán en futuras versiones de Python. No "
+"fueron generados por el analizador y no aceptados por el generador de código "
+"en Python 3. (Contribuido por Batuhan Taskaya en :issue:`39639` y :issue:"
+"`39969` y Serhiy Storchaka en :issue:`39988`)."
 
-#: ../../whatsnew/3.9.rst:926
+#: ../Doc/whatsnew/3.9.rst:928
 msgid ""
 "The :c:func:`PyEval_InitThreads` and :c:func:`PyEval_ThreadsInitialized` "
 "functions are now deprecated and will be removed in Python 3.11. Calling :c:"
@@ -1430,23 +1831,31 @@ msgid ""
 "by :c:func:`Py_Initialize()` since Python 3.7. (Contributed by Victor "
 "Stinner in :issue:`39877`.)"
 msgstr ""
+"Las funciones :c:func:`PyEval_InitThreads` y :c:func:"
+"`PyEval_ThreadsInitialized` ahora están en desuso y se eliminarán en Python "
+"3.11. Llamar a :c:func:`PyEval_InitThreads` ahora no hace nada. :term:`GIL` "
+"es inicializado por :c:func:`Py_Initialize()` desde Python 3.7. (Contribuido "
+"por Victor Stinner en :issue:`39877`.)"
 
-#: ../../whatsnew/3.9.rst:932
+#: ../Doc/whatsnew/3.9.rst:934
 msgid ""
 "Passing ``None`` as the first argument to the :func:`shlex.split` function "
 "has been deprecated.  (Contributed by Zackery Spytz in :issue:`33262`.)"
 msgstr ""
+"Pasar ``None`` como primer argumento a la función :func:`shlex.split` ha "
+"quedado obsoleto. (Contribuido por Zackery Spytz en :issue:`33262`.)"
 
-#: ../../whatsnew/3.9.rst:935
+#: ../Doc/whatsnew/3.9.rst:937
 msgid ""
 ":func:`smtpd.MailmanProxy` is now deprecated as it is unusable without an "
 "external module, ``mailman``.  (Contributed by Samuel Colvin in :issue:"
 "`35800`.)"
 msgstr ""
-":func:`smtpd.MailmanProxy` は、外部モジュールである ``mailman`` がないと使え"
-"ないため、非推奨となりました。 (Samuel Colvinの貢献による :issue:`35800`)"
+":func:`smtpd.MailmanProxy` ahora está en desuso porque no se puede utilizar "
+"sin un módulo externo, ``mailman``. (Contribuido por Samuel Colvin en :issue:"
+"`35800`.)"
 
-#: ../../whatsnew/3.9.rst:938
+#: ../Doc/whatsnew/3.9.rst:940
 msgid ""
 "The :mod:`lib2to3` module now emits a :exc:`PendingDeprecationWarning`. "
 "Python 3.9 switched to a PEG parser (see :pep:`617`), and Python 3.10 may "
@@ -1455,34 +1864,33 @@ msgid ""
 "Python version. Consider third-party alternatives such as `LibCST`_ or "
 "`parso`_. (Contributed by Carl Meyer in :issue:`40360`.)"
 msgstr ""
-":mod:`lib2to3` モジュールは :exc:`PendingDeprecationWarning` を出力するように"
-"なりました。Python 3.9 では PEG パーサーに切り替わりました (:pep:`617` 参"
-"照)。Python 3.10 では lib2to3 の LL(1) パーサーでは解析できない新しい言語構文"
-"が含まれる可能性があります。 ``lib2to3`` モジュールは、将来の Python のバー"
-"ジョンで標準ライブラリから削除されるかもしれません。 `LibCST`_ や  `parso`_ "
-"のようなサードパーティの代替品を検討してみてください。(Carl Meyer の貢献によ"
-"る :issue:`40360`)"
+"El módulo :mod:`lib2to3` ahora emite un :exc:`PendingDeprecationWarning`. "
+"Python 3.9 cambió a un analizador PEG (consulte :pep:`617`), y Python 3.10 "
+"puede incluir una nueva sintaxis de lenguaje que no es analizable por el "
+"analizador LL (1) de lib2to3. El módulo ``lib2to3`` puede eliminarse de la "
+"biblioteca estándar en una versión futura de Python. Considere alternativas "
+"de terceros como `LibCST`_ o `parso`_. (Contribuido por Carl Meyer en :issue:"
+"`40360`.)"
 
-#: ../../whatsnew/3.9.rst:946
+#: ../Doc/whatsnew/3.9.rst:948
 msgid ""
 "The *random* parameter of :func:`random.shuffle` has been deprecated. "
 "(Contributed by Raymond Hettinger in :issue:`40465`)"
 msgstr ""
-":func:`random.shuffle` の*random* パラメータは非推奨になりました。(Raymond "
-"Hettingerの貢献による :issue:`40465`)"
+"El parámetro *random* de :func:`random.shuffle` ha quedado obsoleto. "
+"(Contribuido por Raymond Hettinger en :issue:`40465`)"
 
-#: ../../whatsnew/3.9.rst:955 ../../whatsnew/3.9.rst:1410
+#: ../Doc/whatsnew/3.9.rst:957 ../Doc/whatsnew/3.9.rst:1412
 msgid "Removed"
-msgstr "削除"
+msgstr "Remoto"
 
-#: ../../whatsnew/3.9.rst:957
+#: ../Doc/whatsnew/3.9.rst:959
 msgid ""
 "The erroneous version at :data:`unittest.mock.__version__` has been removed."
 msgstr ""
-":data:`unittest.mock.__version__` における誤ったバージョン表記は削除されまし"
-"た。"
+"Se ha eliminado la versión errónea en :data:`unittest.mock.__version__`."
 
-#: ../../whatsnew/3.9.rst:959
+#: ../Doc/whatsnew/3.9.rst:961
 msgid ""
 ":class:`nntplib.NNTP`: ``xpath()`` and ``xgtitle()`` methods have been "
 "removed. These methods are deprecated since Python 3.3. Generally, these "
@@ -1491,60 +1899,91 @@ msgid ""
 "`nntplib.NNTP.description` instead. (Contributed by Dong-hee Na in :issue:"
 "`39366`.)"
 msgstr ""
+":class:`nntplib.NNTP`: Se han eliminado los métodos ``xpath()`` y "
+"``xgtitle()``. Estos métodos están obsoletos desde Python 3.3. Generalmente, "
+"estas extensiones no son compatibles o no están habilitadas por los "
+"administradores del servidor NNTP. Para ``xgtitle()``, utilice :meth:"
+"`nntplib.NNTP.descriptions` o :meth:`nntplib.NNTP.description` en su lugar. "
+"(Contribuido por Dong-hee Na en :issue:`39366`.)"
 
-#: ../../whatsnew/3.9.rst:966
+#: ../Doc/whatsnew/3.9.rst:968
 msgid ""
 ":class:`array.array`: ``tostring()`` and ``fromstring()`` methods have been "
 "removed. They were aliases to ``tobytes()`` and ``frombytes()``, deprecated "
 "since Python 3.2. (Contributed by Victor Stinner in :issue:`38916`.)"
 msgstr ""
+":class:`array.array`: Se han eliminado los métodos ``tostring()`` y "
+"``fromstring()``. Eran alias de ``tobytes()`` y ``frombytes()``, obsoletos "
+"desde Python 3.2. (Contribuido por Victor Stinner en :issue:`38916`.)"
 
-#: ../../whatsnew/3.9.rst:971
+#: ../Doc/whatsnew/3.9.rst:973
 msgid ""
 "The undocumented ``sys.callstats()`` function has been removed. Since Python "
 "3.7, it was deprecated and always returned :const:`None`. It required a "
 "special build option ``CALL_PROFILE`` which was already removed in Python "
 "3.7. (Contributed by Victor Stinner in :issue:`37414`.)"
 msgstr ""
+"Se ha eliminado la función ``sys.callstats()`` sin documentar. Desde Python "
+"3.7, quedó obsoleto y siempre devolvió :const:`None`. Requería una opción de "
+"compilación especial ``CALL_PROFILE`` que ya se eliminó en Python 3.7. "
+"(Contribuido por Victor Stinner en :issue:`37414`.)"
 
-#: ../../whatsnew/3.9.rst:976
+#: ../Doc/whatsnew/3.9.rst:978
 msgid ""
 "The ``sys.getcheckinterval()`` and ``sys.setcheckinterval()`` functions have "
 "been removed. They were deprecated since Python 3.2. Use :func:`sys."
 "getswitchinterval` and :func:`sys.setswitchinterval` instead. (Contributed "
 "by Victor Stinner in :issue:`37392`.)"
 msgstr ""
+"Se han eliminado las funciones ``sys.getcheckinterval()`` y ``sys."
+"setcheckinterval()``. Fueron obsoletos desde Python 3.2. Utilice :func:`sys."
+"getswitchinterval` y :func:`sys.setswitchinterval` en su lugar. (Contribuido "
+"por Victor Stinner en :issue:`37392`.)"
 
-#: ../../whatsnew/3.9.rst:981
+#: ../Doc/whatsnew/3.9.rst:983
 msgid ""
 "The C function ``PyImport_Cleanup()`` has been removed. It was documented "
 "as: \"Empty the module table.  For internal use only.\" (Contributed by "
 "Victor Stinner in :issue:`36710`.)"
 msgstr ""
+"Se ha eliminado la función C ``PyImport_Cleanup()``. Se documentó como: "
+"\"Vacíe la tabla del módulo. Solo para uso interno\". (Contribuido por "
+"Victor Stinner en :issue:`36710`.)"
 
-#: ../../whatsnew/3.9.rst:985
+#: ../Doc/whatsnew/3.9.rst:987
 msgid ""
 "``_dummy_thread`` and ``dummy_threading`` modules have been removed. These "
 "modules were deprecated since Python 3.7 which requires threading support. "
 "(Contributed by Victor Stinner in :issue:`37312`.)"
 msgstr ""
+"Se han eliminado los módulos ``_dummy_thread`` y ``dummy_threading``. Estos "
+"módulos quedaron obsoletos desde Python 3.7, que requiere compatibilidad con "
+"subprocesos. (Contribuido por Victor Stinner en :issue:`37312`.)"
 
-#: ../../whatsnew/3.9.rst:989
+#: ../Doc/whatsnew/3.9.rst:991
 msgid ""
 "``aifc.openfp()`` alias to ``aifc.open()``, ``sunau.openfp()`` alias to "
 "``sunau.open()``, and ``wave.openfp()`` alias to :func:`wave.open()` have "
 "been removed. They were deprecated since Python 3.7. (Contributed by Victor "
 "Stinner in :issue:`37320`.)"
 msgstr ""
+"Se han eliminado el alias de ``aifc.openfp()`` a ``aifc.open()``, el alias "
+"de ``sunau.openfp()`` a ``sunau.open()`` y el alias de ``wave.openfp()`` a :"
+"func:`wave.open()`. Fueron obsoletos desde Python 3.7. (Contribuido por "
+"Victor Stinner en :issue:`37320`.)"
 
-#: ../../whatsnew/3.9.rst:994
+#: ../Doc/whatsnew/3.9.rst:996
 msgid ""
 "The :meth:`~threading.Thread.isAlive()` method of :class:`threading.Thread` "
 "has been removed. It was deprecated since Python 3.8. Use :meth:`~threading."
 "Thread.is_alive()` instead. (Contributed by Dong-hee Na in :issue:`37804`.)"
 msgstr ""
+"Se ha eliminado el método :meth:`~threading.Thread.isAlive()` de :class:"
+"`threading.Thread`. Quedó en desuso desde Python 3.8. Utilice :meth:"
+"`~threading.Thread.is_alive()` en su lugar. (Contribuido por Dong-hee Na en :"
+"issue:`37804`.)"
 
-#: ../../whatsnew/3.9.rst:999
+#: ../Doc/whatsnew/3.9.rst:1001
 msgid ""
 "Methods ``getchildren()`` and ``getiterator()`` of classes :class:`~xml."
 "etree.ElementTree.ElementTree` and :class:`~xml.etree.ElementTree.Element` "
@@ -1553,8 +1992,14 @@ msgid ""
 "getchildren()`` and ``x.iter()`` or ``list(x.iter())`` instead of ``x."
 "getiterator()``. (Contributed by Serhiy Storchaka in :issue:`36543`.)"
 msgstr ""
+"Se han eliminado los métodos ``getchildren()`` y ``getiterator()`` de las "
+"clases :class:`~xml.etree.ElementTree.ElementTree` y :class:`~xml.etree."
+"ElementTree.Element` en el módulo :mod:`~xml.etree.ElementTree`. Fueron "
+"obsoletos en Python 3.2. Utilice ``iter(x)`` o ``list(x)`` en lugar de ``x."
+"getchildren()`` y ``x.iter()`` o ``list(x.iter())`` en lugar de ``x."
+"getiterator()``. (Contribuido por Serhiy Storchaka en :issue:`36543`.)"
 
-#: ../../whatsnew/3.9.rst:1007
+#: ../Doc/whatsnew/3.9.rst:1009
 msgid ""
 "The old :mod:`plistlib` API has been removed, it was deprecated since Python "
 "3.4. Use the :func:`~plistlib.load`, :func:`~plistlib.loads`, :func:"
@@ -1562,55 +2007,83 @@ msgid ""
 "*use_builtin_types* parameter was removed, standard :class:`bytes` objects "
 "are always used instead. (Contributed by Jon Janzen in :issue:`36409`.)"
 msgstr ""
+"Se eliminó la antigua API :mod:`plistlib`, quedó en desuso desde Python 3.4. "
+"Utilice las funciones :func:`~plistlib.load`, :func:`~plistlib.loads`, :func:"
+"`~plistlib.dump` y :func:`~plistlib.dumps`. Además, se eliminó el parámetro "
+"*use_builtin_types*; en su lugar, siempre se utilizan objetos :class:`bytes` "
+"estándar. (Contribuido por Jon Janzen en :issue:`36409`.)"
 
-#: ../../whatsnew/3.9.rst:1013
+#: ../Doc/whatsnew/3.9.rst:1015
 msgid ""
 "The C function ``PyGen_NeedsFinalizing`` has been removed. It was not "
 "documented, tested, or used anywhere within CPython after the implementation "
 "of :pep:`442`. Patch by Joannah Nanjekye. (Contributed by Joannah Nanjekye "
 "in :issue:`15088`)"
 msgstr ""
+"Se ha eliminado la función C ``PyGen_NeedsFinalizing``. No se documentó, "
+"probó ni usó en ningún lugar dentro de CPython después de la implementación "
+"de :pep:`442`. Parche de Joannah Nanjekye. (Contribuido por Joannah Nanjekye "
+"en :issue:`15088`)"
 
-#: ../../whatsnew/3.9.rst:1018
+#: ../Doc/whatsnew/3.9.rst:1020
 msgid ""
 "``base64.encodestring()`` and ``base64.decodestring()``, aliases deprecated "
 "since Python 3.1, have been removed: use :func:`base64.encodebytes` and :"
 "func:`base64.decodebytes` instead. (Contributed by Victor Stinner in :issue:"
 "`39351`.)"
 msgstr ""
+"``base64.encodestring()`` y ``base64.decodestring()``, los alias obsoletos "
+"desde Python 3.1, se han eliminado: utilice :func:`base64.encodebytes` y :"
+"func:`base64.decodebytes` en su lugar. (Contribuido por Victor Stinner en :"
+"issue:`39351`.)"
 
-#: ../../whatsnew/3.9.rst:1023
+#: ../Doc/whatsnew/3.9.rst:1025
 msgid ""
 "``fractions.gcd()`` function has been removed, it was deprecated since "
 "Python 3.5 (:issue:`22486`): use :func:`math.gcd` instead. (Contributed by "
 "Victor Stinner in :issue:`39350`.)"
 msgstr ""
+"La función ``fractions.gcd()`` se ha eliminado, está obsoleta desde Python "
+"3.5 (:issue:`22486`): utilice :func:`math.gcd` en su lugar. (Contribuido por "
+"Victor Stinner en :issue:`39350`.)"
 
-#: ../../whatsnew/3.9.rst:1027
+#: ../Doc/whatsnew/3.9.rst:1029
 msgid ""
 "The *buffering* parameter of :class:`bz2.BZ2File` has been removed. Since "
 "Python 3.0, it was ignored and using it emitted a :exc:`DeprecationWarning`. "
 "Pass an open file object to control how the file is opened. (Contributed by "
 "Victor Stinner in :issue:`39357`.)"
 msgstr ""
+"Se ha eliminado el parámetro *buffering* de :class:`bz2.BZ2File`. Desde "
+"Python 3.0, se ignoró y su uso emitió un :exc:`DeprecationWarning`. Pase un "
+"objeto de archivo abierto para controlar cómo se abre el archivo. "
+"(Contribuido por Victor Stinner en :issue:`39357`.)"
 
-#: ../../whatsnew/3.9.rst:1032
+#: ../Doc/whatsnew/3.9.rst:1034
 msgid ""
 "The *encoding* parameter of :func:`json.loads` has been removed. As of "
 "Python 3.1, it was deprecated and ignored; using it has emitted a :exc:"
 "`DeprecationWarning` since Python 3.8. (Contributed by Inada Naoki in :issue:"
 "`39377`)"
 msgstr ""
+"Se ha eliminado el parámetro *encoding* de :func:`json.loads`. A partir de "
+"Python 3.1, fue obsoleto e ignorado; su uso ha emitido un :exc:"
+"`DeprecationWarning` desde Python 3.8. (Contribuido por Inada Naoki en :"
+"issue:`39377`)"
 
-#: ../../whatsnew/3.9.rst:1037
+#: ../Doc/whatsnew/3.9.rst:1039
 msgid ""
 "``with (await asyncio.lock):`` and ``with (yield from asyncio.lock):`` "
 "statements are not longer supported, use ``async with lock`` instead.  The "
 "same is correct for ``asyncio.Condition`` and ``asyncio.Semaphore``. "
 "(Contributed by Andrew Svetlov in :issue:`34793`.)"
 msgstr ""
+"Las declaraciones ``with (await asyncio.lock):`` y ``with (yield from "
+"asyncio.lock):`` ya no son compatibles, utilice ``async with lock`` en su "
+"lugar. Lo mismo es correcto para ``asyncio.Condition`` y ``asyncio."
+"Semaphore``. (Contribuido por Andrew Svetlov en :issue:`34793`.)"
 
-#: ../../whatsnew/3.9.rst:1042
+#: ../Doc/whatsnew/3.9.rst:1044
 msgid ""
 "The :func:`sys.getcounts` function, the ``-X showalloccount`` command line "
 "option and the ``show_alloc_count`` field of the C structure :c:type:"
@@ -1618,128 +2091,184 @@ msgid ""
 "defining ``COUNT_ALLOCS`` macro. (Contributed by Victor Stinner in :issue:"
 "`39489`.)"
 msgstr ""
+"Se han eliminado la función :func:`sys.getcounts`, la opción de línea de "
+"comando ``-X showalloccount`` y el campo ``show_alloc_count`` de la "
+"estructura C :c:type:`PyConfig`. Necesitaban una compilación especial de "
+"Python definiendo la macro ``COUNT_ALLOCS``. (Contribuido por Victor Stinner "
+"en :issue:`39489`.)"
 
-#: ../../whatsnew/3.9.rst:1048
+#: ../Doc/whatsnew/3.9.rst:1050
 msgid ""
 "The ``_field_types`` attribute of the :class:`typing.NamedTuple` class has "
 "been removed.  It was deprecated since Python 3.8.  Use the "
 "``__annotations__`` attribute instead. (Contributed by Serhiy Storchaka in :"
 "issue:`40182`.)"
 msgstr ""
+"Se ha eliminado el atributo ``_field_types`` de la clase :class:`typing."
+"NamedTuple`. Quedó en desuso desde Python 3.8. En su lugar, utilice el "
+"atributo ``__annotations__``. (Contribuido por Serhiy Storchaka en :issue:"
+"`40182`.)"
 
-#: ../../whatsnew/3.9.rst:1053
+#: ../Doc/whatsnew/3.9.rst:1055
 msgid ""
 "The :meth:`symtable.SymbolTable.has_exec` method has been removed. It was "
 "deprecated since 2006, and only returning ``False`` when it's called. "
 "(Contributed by Batuhan Taskaya in :issue:`40208`)"
 msgstr ""
+"Se ha eliminado el método :meth:`symtable.SymbolTable.has_exec`. Quedó en "
+"desuso desde 2006 y solo devuelve ``False`` cuando se llama. (Contribuido "
+"por Batuhan Taskaya en :issue:`40208`)"
 
-#: ../../whatsnew/3.9.rst:1057
+#: ../Doc/whatsnew/3.9.rst:1059
 msgid ""
 "The :meth:`asyncio.Task.current_task` and :meth:`asyncio.Task.all_tasks` "
 "have been removed. They were deprecated since Python 3.7 and you can use :"
 "func:`asyncio.current_task` and :func:`asyncio.all_tasks` instead. "
 "(Contributed by Rémi Lapeyre in :issue:`40967`)"
 msgstr ""
+"Se han eliminado :meth:`asyncio.Task.current_task` y :meth:`asyncio.Task."
+"all_tasks`. Fueron obsoletos desde Python 3.7 y puede usar :func:`asyncio."
+"current_task` y :func:`asyncio.all_tasks` en su lugar. (Contribución de Rémi "
+"Lapeyre en :issue:`40967`)"
 
-#: ../../whatsnew/3.9.rst:1062
+#: ../Doc/whatsnew/3.9.rst:1064
 msgid ""
 "The ``unescape()`` method in the :class:`html.parser.HTMLParser` class has "
 "been removed (it was deprecated since Python 3.4).  :func:`html.unescape` "
 "should be used for converting character references to the corresponding "
 "unicode characters."
 msgstr ""
+"El método ``unescape()`` en la clase :class:`html.parser.HTMLParser` se ha "
+"eliminado (quedó obsoleto desde Python 3.4). :func:`html.unescape` debe "
+"usarse para convertir referencias de caracteres a los caracteres Unicode "
+"correspondientes."
 
-#: ../../whatsnew/3.9.rst:1069 ../../whatsnew/3.9.rst:1336
+#: ../Doc/whatsnew/3.9.rst:1071 ../Doc/whatsnew/3.9.rst:1338
 msgid "Porting to Python 3.9"
-msgstr "Python 3.9への移植"
+msgstr "Portar a Python 3.9"
 
-#: ../../whatsnew/3.9.rst:1071
+#: ../Doc/whatsnew/3.9.rst:1073
 msgid ""
 "This section lists previously described changes and other bugfixes that may "
 "require changes to your code."
 msgstr ""
-"このセクションでは前述の変更とバグフィックスにより必要となるかもしれないコー"
-"ドの変更を列挙します:"
+"Esta sección enumera los cambios descritos anteriormente y otras "
+"correcciones de errores que pueden requerir cambios en su código."
 
-#: ../../whatsnew/3.9.rst:1076
+#: ../Doc/whatsnew/3.9.rst:1078
 msgid "Changes in the Python API"
-msgstr "Python API の変更"
+msgstr "Cambios en la API de Python"
 
-#: ../../whatsnew/3.9.rst:1078
+#: ../Doc/whatsnew/3.9.rst:1080
 msgid ""
 ":func:`__import__` and :func:`importlib.util.resolve_name` now raise :exc:"
 "`ImportError` where it previously raised :exc:`ValueError`. Callers catching "
 "the specific exception type and supporting both Python 3.9 and earlier "
 "versions will need to catch both using ``except (ImportError, ValueError):``."
 msgstr ""
+":func:`__import__` y :func:`importlib.util.resolve_name` ahora lanzan :exc:"
+"`ImportError` donde anteriormente lanzaban :exc:`ValueError`. Las personas "
+"que llaman que detectan el tipo de excepción específico y son compatibles "
+"con Python 3.9 y versiones anteriores deberán detectar ambas usando ``except "
+"(ImportError, ValueError):``."
 
-#: ../../whatsnew/3.9.rst:1083
+#: ../Doc/whatsnew/3.9.rst:1085
 msgid ""
 "The :mod:`venv` activation scripts no longer special-case when "
 "``__VENV_PROMPT__`` is set to ``\"\"``."
 msgstr ""
+"Los scripts de activación de :mod:`venv` ya no son casos especiales cuando "
+"``__VENV_PROMPT__`` se establece en ``\"\"``."
 
-#: ../../whatsnew/3.9.rst:1086
+#: ../Doc/whatsnew/3.9.rst:1088
 msgid ""
 "The :meth:`select.epoll.unregister` method no longer ignores the :data:"
 "`~errno.EBADF` error. (Contributed by Victor Stinner in :issue:`39239`.)"
 msgstr ""
+"El método :meth:`select.epoll.unregister` ya no ignora el error :data:"
+"`~errno.EBADF`. (Contribuido por Victor Stinner en :issue:`39239`.)"
 
-#: ../../whatsnew/3.9.rst:1090
+#: ../Doc/whatsnew/3.9.rst:1092
 msgid ""
 "The *compresslevel* parameter of :class:`bz2.BZ2File` became keyword-only, "
 "since the *buffering* parameter has been removed. (Contributed by Victor "
 "Stinner in :issue:`39357`.)"
 msgstr ""
+"Se ha eliminado el parámetro *compresslevel* :class:`bz2.BZ2File` se "
+"convirtió solo en un parámetro de llave, ya que *buffering* se quitó. "
+"(Contribuido por Victor Stinner en :issue:`39357`.)"
 
-#: ../../whatsnew/3.9.rst:1094
+#: ../Doc/whatsnew/3.9.rst:1096
 msgid ""
 "Simplified AST for subscription. Simple indices will be represented by their "
 "value, extended slices will be represented as tuples. ``Index(value)`` will "
 "return a ``value`` itself, ``ExtSlice(slices)`` will return ``Tuple(slices, "
 "Load())``. (Contributed by Serhiy Storchaka in :issue:`34822`.)"
 msgstr ""
+"AST simplificado para suscripción. Los índices simples se representarán por "
+"su valor, los segmentos extendidos se representarán como tuplas. "
+"``Index(value)`` devolverá un ``value`` en sí mismo, ``ExtSlice(slices)`` "
+"devolverá ``Tuple(slices, Load())``. (Contribuido por Serhiy Storchaka en :"
+"issue:`34822`.)"
 
-#: ../../whatsnew/3.9.rst:1100
+#: ../Doc/whatsnew/3.9.rst:1102
 msgid ""
 "The :mod:`importlib` module now ignores the :envvar:`PYTHONCASEOK` "
 "environment variable when the :option:`-E` or :option:`-I` command line "
 "options are being used."
 msgstr ""
+"El módulo :mod:`importlib` ahora ignora la variable de entorno :envvar:"
+"`PYTHONCASEOK` cuando se utilizan las opciones de línea de comando :option:`-"
+"E` o :option:`-I`."
 
-#: ../../whatsnew/3.9.rst:1104
+#: ../Doc/whatsnew/3.9.rst:1106
 msgid ""
 "The *encoding* parameter has been added to the classes :class:`ftplib.FTP` "
 "and :class:`ftplib.FTP_TLS` as a keyword-only parameter, and the default "
 "encoding is changed from Latin-1 to UTF-8 to follow :rfc:`2640`."
 msgstr ""
+"El parámetro *encoding* se ha agregado a las clases :class:`ftplib.FTP` y :"
+"class:`ftplib.FTP_TLS` como un parámetro de solo palabra clave, y la "
+"codificación predeterminada se cambia de Latin-1 a UTF-8 para seguir: rfc: "
+"`2640`."
 
-#: ../../whatsnew/3.9.rst:1108
+#: ../Doc/whatsnew/3.9.rst:1110
 msgid ""
 ":meth:`asyncio.loop.shutdown_default_executor` has been added to :class:"
 "`~asyncio.AbstractEventLoop`, meaning alternative event loops that inherit "
 "from it should have this method defined. (Contributed by Kyle Stanley in :"
 "issue:`34037`.)"
 msgstr ""
+":meth:`asyncio.loop.shutdown_default_executor` se ha agregado a :class:"
+"`~asyncio.AbstractEventLoop`, lo que significa que los bucles de eventos "
+"alternativos que heredan de él deben tener definido este método. "
+"(Contribuido por Kyle Stanley en :issue:`34037`.)"
 
-#: ../../whatsnew/3.9.rst:1113
+#: ../Doc/whatsnew/3.9.rst:1115
 msgid ""
 "The constant values of future flags in the :mod:`__future__` module is "
 "updated in order to prevent collision with compiler flags. Previously "
 "``PyCF_ALLOW_TOP_LEVEL_AWAIT`` was clashing with ``CO_FUTURE_DIVISION``. "
 "(Contributed by Batuhan Taskaya in :issue:`39562`)"
 msgstr ""
+"Los valores constantes de los indicadores futuros en el módulo :mod:"
+"`__future__` se actualizan para evitar la colisión con los indicadores del "
+"compilador. Anteriormente, ``PyCF_ALLOW_TOP_LEVEL_AWAIT`` chocaba con "
+"``CO_FUTURE_DIVISION``. (Contribuido por Batuhan Taskaya en :issue:`39562`)"
 
-#: ../../whatsnew/3.9.rst:1118
+#: ../Doc/whatsnew/3.9.rst:1120
 msgid ""
 "``array('u')`` now uses ``wchar_t`` as C type instead of ``Py_UNICODE``. "
 "This change doesn't affect to its behavior because ``Py_UNICODE`` is alias "
 "of ``wchar_t`` since Python 3.3. (Contributed by Inada Naoki in :issue:"
 "`34538`.)"
 msgstr ""
+"``array('u')`` ahora usa ``wchar_t`` como tipo C en lugar de ``Py_UNICODE``. "
+"Este cambio no afecta su comportamiento porque ``Py_UNICODE`` es alias de "
+"``wchar_t`` desde Python 3.3. (Contribuido por Inada Naoki en :issue:"
+"`34538`.)"
 
-#: ../../whatsnew/3.9.rst:1123
+#: ../Doc/whatsnew/3.9.rst:1125
 msgid ""
 "The :func:`logging.getLogger` API now returns the root logger when passed "
 "the name ``'root'``, whereas previously it returned a non-root logger named "
@@ -1748,8 +2277,15 @@ msgid ""
 "getLogger(__name__)`` in some top-level module called ``'root.py'``. "
 "(Contributed by Vinay Sajip in :issue:`37742`.)"
 msgstr ""
+"La API :func:`logging.getLogger` ahora devuelve el registrador raíz cuando "
+"se le pasó el nombre ``'root'``, mientras que anteriormente devolvía un "
+"registrador no raíz llamado ``'root'``. Esto podría afectar los casos en los "
+"que el código de usuario desea explícitamente un registrador no root llamado "
+"``'root'``, o crea una instancia de un registrador usando ``logging."
+"getLogger(__name__)`` en algún módulo de nivel superior llamado ``'root."
+"py'``. (Contribuido por Vinay Sajip en :issue:`37742`.)"
 
-#: ../../whatsnew/3.9.rst:1130
+#: ../Doc/whatsnew/3.9.rst:1132
 msgid ""
 "Division handling of :class:`~pathlib.PurePath` now returns "
 "``NotImplemented`` instead of raising a :exc:`TypeError` when passed "
@@ -1757,8 +2293,13 @@ msgid ""
 "This allows creating compatible classes that don't inherit from those "
 "mentioned types. (Contributed by Roger Aiudi in :issue:`34775`)."
 msgstr ""
+"El manejo de división de :class:`~pathlib.PurePath` ahora devuelve "
+"``NotImplemented`` en lugar de lanzar un :exc:`TypeError` cuando se pasa "
+"algo que no sea una instancia de ``str`` o :class:`~pathlib.PurePath`. Esto "
+"permite crear clases compatibles que no hereden de esos tipos mencionados. "
+"(Contribución de Roger Aiudi en :issue:`34775`)."
 
-#: ../../whatsnew/3.9.rst:1136
+#: ../Doc/whatsnew/3.9.rst:1138
 msgid ""
 "Starting with Python 3.9.5 the :mod:`ipaddress` module no longer accepts any "
 "leading zeros in IPv4 address strings. Leading zeros are ambiguous and "
@@ -1767,8 +2308,15 @@ msgid ""
 "glibc implementation of modern :func:`~socket.inet_pton` does not accept any "
 "leading zeros. (Contributed by Christian Heimes in :issue:`36384`)."
 msgstr ""
+"A partir de Python 3.9.5, el módulo :mod:`ipaddress` ya no acepta ceros a la "
+"izquierda en las cadenas de direcciones IPv4. Los ceros iniciales son "
+"ambiguos y algunas bibliotecas los interpretan como notación octal. Por "
+"ejemplo, la función heredada :func:`socket.inet_aton` trata los ceros "
+"iniciales como una notación octal. La implementación glibc del :func:"
+"`~socket.inet_pton` moderno no acepta ceros a la izquierda. (Contribuido por "
+"Christian Heimes en :issue:`36384`)."
 
-#: ../../whatsnew/3.9.rst:1144
+#: ../Doc/whatsnew/3.9.rst:1146
 msgid ""
 ":func:`codecs.lookup` now normalizes the encoding name the same way as :func:"
 "`encodings.normalize_encoding`, except that :func:`codecs.lookup` also "
@@ -1776,12 +2324,17 @@ msgid ""
 "name is now normalized to ``\"latex_latin1\"``. (Contributed by Jordon Xu "
 "in :issue:`37751`.)"
 msgstr ""
+":func:`codecs.lookup` ahora normaliza el nombre de codificación de la misma "
+"manera que :func:`encodings.normalize_encoding`, excepto que :func:`codecs."
+"lookup` también convierte el nombre a minúsculas. Por ejemplo, el nombre de "
+"codificación ``\"latex+latin1\"`` ahora está normalizado a "
+"``\"latex_latin1\"``. (Contribuido por Jordon Xu en :issue:`37751`.)"
 
-#: ../../whatsnew/3.9.rst:1152
+#: ../Doc/whatsnew/3.9.rst:1154
 msgid "Changes in the C API"
-msgstr "C API の変更"
+msgstr "Cambios en la API de C"
 
-#: ../../whatsnew/3.9.rst:1154
+#: ../Doc/whatsnew/3.9.rst:1156
 msgid ""
 "Instances of :ref:`heap-allocated types <heap-types>` (such as those created "
 "with :c:func:`PyType_FromSpec` and similar APIs) hold a reference to their "
@@ -1791,78 +2344,103 @@ msgid ""
 "tp_traverse` function, ensure that all custom ``tp_traverse`` functions of "
 "heap-allocated types visit the object's type."
 msgstr ""
+"Las instancias de :ref:`heap-allocated types <heap-types>` (como las creadas "
+"con :c:func:`PyType_FromSpec` y API similares) contienen una referencia a su "
+"objeto de tipo desde Python 3.8. Como se indica en los \"Cambios en la API "
+"C\" de Python 3.8, para la gran mayoría de los casos, no debería haber "
+"efectos secundarios, pero para los tipos que tienen una función "
+"personalizada :c:member:`~PyTypeObject.tp_traverse`, asegúrese de que todas "
+"las funciones ``tp_traverse`` personalizadas de los tipos asignados al "
+"montón visitan el tipo del objeto."
 
-#: ../../whatsnew/3.9.rst:1175
+#: ../Doc/whatsnew/3.9.rst:1177
 msgid ""
 "If your traverse function delegates to ``tp_traverse`` of its base class (or "
 "another type), ensure that ``Py_TYPE(self)`` is visited only once. Note that "
 "only :ref:`heap type <heap-types>` are expected to visit the type in "
 "``tp_traverse``."
 msgstr ""
+"Si su función transversal delega en ``tp_traverse`` de su clase base (u otro "
+"tipo), asegúrese de que ``Py_TYPE(self)`` se visite solo una vez. Tenga en "
+"cuenta que solo se espera que :ref:`heap type <heap-types>` visite el tipo "
+"en ``tp_traverse``."
 
-#: ../../whatsnew/3.9.rst:1180
+#: ../Doc/whatsnew/3.9.rst:1182
 msgid "For example, if your ``tp_traverse`` function includes:"
-msgstr ""
+msgstr "Por ejemplo, si su función ``tp_traverse`` incluye:"
 
-#: ../../whatsnew/3.9.rst:1186
+#: ../Doc/whatsnew/3.9.rst:1188
 msgid "then add:"
-msgstr ""
+msgstr "Luego añade:"
 
-#: ../../whatsnew/3.9.rst:1199
+#: ../Doc/whatsnew/3.9.rst:1201
 msgid "(See :issue:`35810` and :issue:`40217` for more information.)"
 msgstr ""
+"(Consulte :issue:`35810` y :issue:`40217` para obtener más información)."
 
-#: ../../whatsnew/3.9.rst:1201
+#: ../Doc/whatsnew/3.9.rst:1203
 msgid ""
 "The functions ``PyEval_CallObject``, ``PyEval_CallFunction``, "
 "``PyEval_CallMethod`` and ``PyEval_CallObjectWithKeywords`` are deprecated. "
 "Use :c:func:`PyObject_Call` and its variants instead. (See more details in :"
 "issue:`29548`.)"
 msgstr ""
+"Las funciones ``PyEval_CallObject``, ``PyEval_CallFunction``, "
+"``PyEval_CallMethod`` y ``PyEval_CallObjectWithKeywords`` están en desuso. "
+"Utilice :c:func:`PyObject_Call` y sus variantes en su lugar. (Ver más "
+"detalles en :issue:`29548`.)"
 
-#: ../../whatsnew/3.9.rst:1207
+#: ../Doc/whatsnew/3.9.rst:1209
 msgid "CPython bytecode changes"
-msgstr "CPython バイトコードの変更"
+msgstr "Cambios en el código de bytes de CPython"
 
-#: ../../whatsnew/3.9.rst:1209
+#: ../Doc/whatsnew/3.9.rst:1211
 msgid ""
 "The :opcode:`LOAD_ASSERTION_ERROR` opcode was added for handling the :"
 "keyword:`assert` statement. Previously, the assert statement would not work "
 "correctly if the :exc:`AssertionError` exception was being shadowed. "
 "(Contributed by Zackery Spytz in :issue:`34880`.)"
 msgstr ""
+"Se agregó el código de operación :opcode:`LOAD_ASSERTION_ERROR` para manejar "
+"la declaración :keyword:`assert`. Anteriormente, la declaración de aserción "
+"no funcionaría correctamente si la excepción :exc:`AssertionError` estuviera "
+"siendo sombreada. (Contribuido por Zackery Spytz en :issue:`34880`.)"
 
-#: ../../whatsnew/3.9.rst:1214
+#: ../Doc/whatsnew/3.9.rst:1216
 msgid ""
 "The :opcode:`COMPARE_OP` opcode was split into four distinct instructions:"
 msgstr ""
+"El código de operación :opcode:`COMPARE_OP` se dividió en cuatro "
+"instrucciones distintas:"
 
-#: ../../whatsnew/3.9.rst:1216
+#: ../Doc/whatsnew/3.9.rst:1218
 msgid "``COMPARE_OP`` for rich comparisons"
-msgstr ""
+msgstr "``COMPARE_OP`` para comparaciones enriquecidas"
 
-#: ../../whatsnew/3.9.rst:1217
+#: ../Doc/whatsnew/3.9.rst:1219
 msgid "``IS_OP`` for 'is' and 'is not' tests"
-msgstr ""
+msgstr "``IS_OP`` para pruebas 'es' y 'no es'"
 
-#: ../../whatsnew/3.9.rst:1218
+#: ../Doc/whatsnew/3.9.rst:1220
 msgid "``CONTAINS_OP`` for 'in' and 'not in' tests"
-msgstr ""
+msgstr "``CONTAINS_OP`` para pruebas 'in' y 'not in'"
 
-#: ../../whatsnew/3.9.rst:1219
+#: ../Doc/whatsnew/3.9.rst:1221
 msgid ""
 "``JUMP_IF_NOT_EXC_MATCH`` for checking exceptions in 'try-except' statements."
 msgstr ""
+"``JUMP_IF_NOT_EXC_MATCH`` para verificar las excepciones en las "
+"declaraciones 'try-except'."
 
-#: ../../whatsnew/3.9.rst:1222
+#: ../Doc/whatsnew/3.9.rst:1224
 msgid "(Contributed by Mark Shannon in :issue:`39156`.)"
-msgstr ""
+msgstr "(Contribuido por Mark Shannon en :issue:`39156`.)"
 
-#: ../../whatsnew/3.9.rst:1226
+#: ../Doc/whatsnew/3.9.rst:1228
 msgid "Build Changes"
-msgstr ""
+msgstr "Construir cambios"
 
-#: ../../whatsnew/3.9.rst:1228
+#: ../Doc/whatsnew/3.9.rst:1230
 msgid ""
 "Added ``--with-platlibdir`` option to the ``configure`` script: name of the "
 "platform-specific library directory, stored in the new :attr:`sys."
@@ -1870,27 +2448,40 @@ msgid ""
 "information. (Contributed by Jan Matějek, Matěj Cepl, Charalampos Stratakis "
 "and Victor Stinner in :issue:`1294959`.)"
 msgstr ""
+"Se agregó la opción ``--with-platlibdir`` al script ``configure``: nombre "
+"del directorio de biblioteca específico de la plataforma, almacenado en el "
+"nuevo atributo :attr:`sys.platlibdir`. Consulte el atributo :attr:`sys."
+"platlibdir` para obtener más información. (Contribuido por Jan Matějek, "
+"Matěj Cepl, Charalampos Stratakis y Victor Stinner en :issue:`1294959`.)"
 
-#: ../../whatsnew/3.9.rst:1234
+#: ../Doc/whatsnew/3.9.rst:1236
 msgid ""
 "The ``COUNT_ALLOCS`` special build macro has been removed. (Contributed by "
 "Victor Stinner in :issue:`39489`.)"
 msgstr ""
+"Se ha eliminado la macro de compilación especial ``COUNT_ALLOCS``. "
+"(Contribuido por Victor Stinner en :issue:`39489`.)"
 
-#: ../../whatsnew/3.9.rst:1237
+#: ../Doc/whatsnew/3.9.rst:1239
 msgid ""
 "On non-Windows platforms, the :c:func:`setenv` and :c:func:`unsetenv` "
 "functions are now required to build Python. (Contributed by Victor Stinner "
 "in :issue:`39395`.)"
 msgstr ""
+"En plataformas que no son de Windows, ahora se requieren las funciones :c:"
+"func:`setenv` y :c:func:`unsetenv` para compilar Python. (Contribuido por "
+"Victor Stinner en :issue:`39395`.)"
 
-#: ../../whatsnew/3.9.rst:1241
+#: ../Doc/whatsnew/3.9.rst:1243
 msgid ""
 "On non-Windows platforms, creating ``bdist_wininst`` installers is now "
 "officially unsupported.  (See :issue:`10945` for more details.)"
 msgstr ""
+"En plataformas que no son de Windows, la creación de instaladores "
+"``bdist_wininst`` ahora no es compatible oficialmente. (Consulte :issue:"
+"`10945` para obtener más detalles)."
 
-#: ../../whatsnew/3.9.rst:1244
+#: ../Doc/whatsnew/3.9.rst:1246
 msgid ""
 "When building Python on macOS from source, ``_tkinter`` now links with non-"
 "system Tcl and Tk frameworks if they are installed in ``/Library/"
@@ -1900,14 +2491,23 @@ msgid ""
 "be overridden with ``--with-tcltk-includes`` and ``--with-tcltk-libs``. "
 "(Contributed by Ned Deily in :issue:`34956`.)"
 msgstr ""
+"Al compilar Python en macOS desde la fuente, ``_tkinter`` ahora se vincula "
+"con marcos Tcl y Tk que no son del sistema si están instalados en ``/Library/"
+"Frameworks``, como había sido el caso en versiones anteriores de macOS. Si "
+"un SDK de macOS está configurado explícitamente, mediante :option:`--enable-"
+"universalsdk` o ``-isysroot``, solo se busca en el SDK. El comportamiento "
+"predeterminado aún se puede anular con `--with-tcltk-includes` y `--with-"
+"tcltk-libs`. (Contribuido por Ned Deily en :issue:`34956`.)"
 
-#: ../../whatsnew/3.9.rst:1253
+#: ../Doc/whatsnew/3.9.rst:1255
 msgid ""
 "Python can now be built for Windows 10 ARM64. (Contributed by Steve Dower "
 "in :issue:`33125`.)"
 msgstr ""
+"Python ahora se puede construir para Windows 10 ARM64. (Contribuido por "
+"Steve Dower en :issue:`33125`.)"
 
-#: ../../whatsnew/3.9.rst:1256
+#: ../Doc/whatsnew/3.9.rst:1258
 msgid ""
 "Some individual tests are now skipped when ``--pgo`` is used.  The tests in "
 "question increased the PGO task time significantly and likely didn't help "
@@ -1922,12 +2522,26 @@ msgid ""
 "and compiler tool chain. (See :issue:`36044` and :issue:`37707` for more "
 "details.)"
 msgstr ""
+"Algunas pruebas individuales ahora se omiten cuando se usa ``--pgo``. Las "
+"pruebas en cuestión aumentaron significativamente el tiempo de la tarea PGO "
+"y probablemente no ayudaron a mejorar la optimización del ejecutable final. "
+"Esto acelera la tarea en un factor de aproximadamente 15 veces. La ejecución "
+"del conjunto de pruebas unitarias completo es lenta. Este cambio puede "
+"resultar en una compilación ligeramente menos optimizada ya que no se "
+"ejecutarán tantas ramas de código. Si está dispuesto a esperar la "
+"compilación mucho más lenta, el comportamiento anterior se puede restaurar "
+"usando ``./configure [..] PROFILE_TASK=\"-m test --pgo-extended\"``. No "
+"garantizamos qué conjunto de tareas de PGO produce una compilación más "
+"rápida. Los usuarios interesados deben ejecutar sus propios puntos de "
+"referencia relevantes, ya que los resultados pueden depender del entorno, la "
+"carga de trabajo y la cadena de herramientas del compilador. (Consulte :"
+"issue:`36044` y :issue:`37707` para obtener más detalles)."
 
-#: ../../whatsnew/3.9.rst:1271
+#: ../Doc/whatsnew/3.9.rst:1273
 msgid "C API Changes"
-msgstr "C API の変更"
+msgstr "Cambios en la API de C"
 
-#: ../../whatsnew/3.9.rst:1276
+#: ../Doc/whatsnew/3.9.rst:1278
 msgid ""
 ":pep:`573`: Added :c:func:`PyType_FromModuleAndSpec` to associate a module "
 "with a class; :c:func:`PyType_GetModule` and :c:func:`PyType_GetModuleState` "
@@ -1935,21 +2549,32 @@ msgid ""
 "`METH_METHOD` to allow a method to access the class it was defined in. "
 "(Contributed by Marcel Plch and Petr Viktorin in :issue:`38787`.)"
 msgstr ""
+":pep:`573`: Se agregó :c:func:`PyType_FromModuleAndSpec` para asociar un "
+"módulo con una clase; :c:func:`PyType_GetModule` y :c:func:"
+"`PyType_GetModuleState` para recuperar el módulo y su estado; y :c:data:"
+"`PyCMethod` y :c:data:`METH_METHOD` para permitir que un método acceda a la "
+"clase en la que se definió. (Contribuido por Marcel Plch y Petr Viktorin en :"
+"issue:`38787`.)"
 
-#: ../../whatsnew/3.9.rst:1283
+#: ../Doc/whatsnew/3.9.rst:1285
 msgid ""
 "Added :c:func:`PyFrame_GetCode` function: get a frame code. Added :c:func:"
 "`PyFrame_GetBack` function: get the frame next outer frame. (Contributed by "
 "Victor Stinner in :issue:`40421`.)"
 msgstr ""
+"Se agregó la función :c:func:`PyFrame_GetCode`: obtenga un código de marco. "
+"Se agregó la función :c:func:`PyFrame_GetBack`: obtenga el siguiente marco "
+"exterior del marco. (Contribuido por Victor Stinner en :issue:`40421`.)"
 
-#: ../../whatsnew/3.9.rst:1287
+#: ../Doc/whatsnew/3.9.rst:1289
 msgid ""
 "Added :c:func:`PyFrame_GetLineNumber` to the limited C API. (Contributed by "
 "Victor Stinner in :issue:`40421`.)"
 msgstr ""
+"Se agregó :c:func:`PyFrame_GetLineNumber` a la API C limitada. (Contribuido "
+"por Victor Stinner en :issue:`40421`.)"
 
-#: ../../whatsnew/3.9.rst:1290
+#: ../Doc/whatsnew/3.9.rst:1292
 msgid ""
 "Added :c:func:`PyThreadState_GetInterpreter` and :c:func:"
 "`PyInterpreterState_Get` functions to get the interpreter. Added :c:func:"
@@ -1958,20 +2583,31 @@ msgid ""
 "identifier of a Python thread state. (Contributed by Victor Stinner in :"
 "issue:`39947`.)"
 msgstr ""
+"Se agregaron funciones :c:func:`PyThreadState_GetInterpreter` y :c:func:"
+"`PyInterpreterState_Get` para obtener el intérprete. Se agregó la función :c:"
+"func:`PyThreadState_GetFrame` para obtener el marco actual de un estado de "
+"subproceso de Python. Se agregó la función :c:func:`PyThreadState_GetID`: "
+"obtenga el identificador único de un estado de subproceso de Python. "
+"(Contribuido por Victor Stinner en :issue:`39947`.)"
 
-#: ../../whatsnew/3.9.rst:1298
+#: ../Doc/whatsnew/3.9.rst:1300
 msgid ""
 "Added a new public :c:func:`PyObject_CallNoArgs` function to the C API, "
 "which calls a callable Python object without any arguments. It is the most "
 "efficient way to call a callable Python object without any argument. "
 "(Contributed by Victor Stinner in :issue:`37194`.)"
 msgstr ""
+"Se agregó una nueva función pública :c:func:`PyObject_CallNoArgs` a la API "
+"de C, que llama a un objeto de Python invocable sin ningún argumento. Es la "
+"forma más eficiente de llamar a un objeto de Python invocable sin ningún "
+"argumento. (Contribuido por Victor Stinner en :issue:`37194`.)"
 
-#: ../../whatsnew/3.9.rst:1303 ../../whatsnew/3.9.rst:1421
+#: ../Doc/whatsnew/3.9.rst:1305 ../Doc/whatsnew/3.9.rst:1423
 msgid "Changes in the limited C API (if ``Py_LIMITED_API`` macro is defined):"
 msgstr ""
+"Cambios en la API C limitada (si se define la macro ``Py_LIMITED_API``):"
 
-#: ../../whatsnew/3.9.rst:1305
+#: ../Doc/whatsnew/3.9.rst:1307
 msgid ""
 "Provide :c:func:`Py_EnterRecursiveCall` and :c:func:`Py_LeaveRecursiveCall` "
 "as regular functions for the limited API. Previously, there were defined as "
@@ -1979,24 +2615,33 @@ msgid ""
 "access ``PyThreadState.recursion_depth`` field (the structure is opaque in "
 "the limited C API)."
 msgstr ""
+"Proporcione :c:func:`Py_EnterRecursiveCall` y :c:func:"
+"`Py_LeaveRecursiveCall` como funciones regulares para la API limitada. "
+"Anteriormente, se definían como macros, pero estas macros no se compilaban "
+"con la API C limitada que no puede acceder al campo ``PyThreadState."
+"recursion_depth`` (la estructura es opaca en la API C limitada)."
 
-#: ../../whatsnew/3.9.rst:1311
+#: ../Doc/whatsnew/3.9.rst:1313
 msgid ""
 "``PyObject_INIT()`` and ``PyObject_INIT_VAR()`` become regular \"opaque\" "
 "function to hide implementation details."
 msgstr ""
+"``PyObject_INIT()`` y ``PyObject_INIT_VAR()`` se convierten en funciones "
+"\"opacas\" habituales para ocultar los detalles de la implementación."
 
-#: ../../whatsnew/3.9.rst:1314 ../../whatsnew/3.9.rst:1448
+#: ../Doc/whatsnew/3.9.rst:1316 ../Doc/whatsnew/3.9.rst:1450
 msgid "(Contributed by Victor Stinner in :issue:`38644` and :issue:`39542`.)"
-msgstr ""
+msgstr "(Contribuido por Victor Stinner en :issue:`38644` y :issue:`39542`.)"
 
-#: ../../whatsnew/3.9.rst:1316
+#: ../Doc/whatsnew/3.9.rst:1318
 msgid ""
 "The :c:func:`PyModule_AddType` function is added to help adding a type to a "
 "module. (Contributed by Dong-hee Na in :issue:`40024`.)"
 msgstr ""
+"Se agrega la función :c:func:`PyModule_AddType` para ayudar a agregar un "
+"tipo a un módulo. (Contribuido por Dong-hee Na en :issue:`40024`.)"
 
-#: ../../whatsnew/3.9.rst:1320
+#: ../Doc/whatsnew/3.9.rst:1322
 msgid ""
 "Added the functions :c:func:`PyObject_GC_IsTracked` and :c:func:"
 "`PyObject_GC_IsFinalized` to the public API to allow to query if Python "
@@ -2004,28 +2649,41 @@ msgid ""
 "garbage collector respectively. (Contributed by Pablo Galindo Salgado in :"
 "issue:`40241`.)"
 msgstr ""
+"Se agregaron las funciones :c:func:`PyObject_GC_IsTracked` y :c:func:"
+"`PyObject_GC_IsFinalized` a la API pública para permitir consultar si los "
+"objetos de Python se están rastreando actualmente o si ya han sido "
+"finalizados por el recolector de basura, respectivamente. (Contribuido por "
+"Pablo Galindo Salgado en :issue:`40241`.)"
 
-#: ../../whatsnew/3.9.rst:1326
+#: ../Doc/whatsnew/3.9.rst:1328
 msgid ""
 "Added :c:func:`_PyObject_FunctionStr` to get a user-friendly string "
 "representation of a function-like object. (Patch by Jeroen Demeyer in :issue:"
 "`37645`.)"
 msgstr ""
+"Se agregó :c:func:`_PyObject_FunctionStr` para obtener una representación de "
+"cadena fácil de usar de un objeto similar a una función. (Parche de Jeroen "
+"Demeyer en :issue:`37645`.)"
 
-#: ../../whatsnew/3.9.rst:1330
+#: ../Doc/whatsnew/3.9.rst:1332
 msgid ""
 "Added :c:func:`PyObject_CallOneArg` for calling an object with one "
 "positional argument (Patch by Jeroen Demeyer in :issue:`37483`.)"
 msgstr ""
+"Se agregó :c:func:`PyObject_CallOneArg` para llamar a un objeto con un "
+"argumento posicional (parche de Jeroen Demeyer en :issue:`37483`)."
 
-#: ../../whatsnew/3.9.rst:1338
+#: ../Doc/whatsnew/3.9.rst:1340
 msgid ""
 "``PyInterpreterState.eval_frame`` (:pep:`523`) now requires a new mandatory "
 "*tstate* parameter (``PyThreadState*``). (Contributed by Victor Stinner in :"
 "issue:`38500`.)"
 msgstr ""
+"``PyInterpreterState.eval_frame`` (:pep:`523`) ahora requiere un nuevo "
+"parámetro *tstate* obligatorio (``PyThreadState*``). (Contribuido por Victor "
+"Stinner en :issue:`38500`.)"
 
-#: ../../whatsnew/3.9.rst:1342
+#: ../Doc/whatsnew/3.9.rst:1344
 msgid ""
 "Extension modules: :c:member:`~PyModuleDef.m_traverse`, :c:member:"
 "`~PyModuleDef.m_clear` and :c:member:`~PyModuleDef.m_free` functions of :c:"
@@ -2036,43 +2694,68 @@ msgid ""
 "m_size` is greater than 0 and the module state (as returned by :c:func:"
 "`PyModule_GetState`) is ``NULL``."
 msgstr ""
+"Módulos de extensión: :c:member:`~PyModuleDef.m_traverse`, :c:member:"
+"`~PyModuleDef.m_clear` y :c:member:`~PyModuleDef.m_free` Las funciones de :c:"
+"type:`PyModuleDef` ya no se llaman si el estado del módulo era solicitado "
+"pero aún no asignado. Este es el caso inmediatamente después de que se crea "
+"el módulo y antes de que se ejecute (función :c:data:`Py_mod_exec`). Más "
+"precisamente, estas funciones no se llaman si :c:member:`~PyModuleDef."
+"m_size` es mayor que 0 y el estado del módulo (como lo devuelve :c:func:"
+"`PyModule_GetState`) es ``NULL``."
 
-#: ../../whatsnew/3.9.rst:1351
+#: ../Doc/whatsnew/3.9.rst:1353
 msgid ""
 "Extension modules without module state (``m_size <= 0``) are not affected."
 msgstr ""
+"Los módulos de extensión sin estado de módulo (``m_size <= 0``) no se ven "
+"afectados."
 
-#: ../../whatsnew/3.9.rst:1353
+#: ../Doc/whatsnew/3.9.rst:1355
 msgid ""
 "If :c:func:`Py_AddPendingCall` is called in a subinterpreter, the function "
 "is now scheduled to be called from the subinterpreter, rather than being "
 "called from the main interpreter. Each subinterpreter now has its own list "
 "of scheduled calls. (Contributed by Victor Stinner in :issue:`39984`.)"
 msgstr ""
+"Si se llama a :c:func:`Py_AddPendingCall` en un subinterpretador, la función "
+"ahora está programada para ser llamada desde el subinterpretador, en lugar "
+"de ser llamada desde el intérprete principal. Cada subinterpretador ahora "
+"tiene su propia lista de llamadas programadas. (Contribuido por Victor "
+"Stinner en :issue:`39984`.)"
 
-#: ../../whatsnew/3.9.rst:1359
+#: ../Doc/whatsnew/3.9.rst:1361
 msgid ""
 "The Windows registry is no longer used to initialize :data:`sys.path` when "
 "the ``-E`` option is used (if :c:member:`PyConfig.use_environment` is set to "
 "``0``). This is significant when embedding Python on Windows. (Contributed "
 "by Zackery Spytz in :issue:`8901`.)"
 msgstr ""
+"El registro de Windows ya no se usa para inicializar :data:`sys.path` cuando "
+"se usa la opción ``-E`` (si :c:member:`PyConfig.use_environment` está "
+"configurado en ``0``). Esto es importante al incrustar Python en Windows. "
+"(Contribuido por Zackery Spytz en :issue:`8901`.)"
 
-#: ../../whatsnew/3.9.rst:1364
+#: ../Doc/whatsnew/3.9.rst:1366
 msgid ""
 "The global variable :c:data:`PyStructSequence_UnnamedField` is now a "
 "constant and refers to a constant string. (Contributed by Serhiy Storchaka "
 "in :issue:`38650`.)"
 msgstr ""
+"La variable global :c:data:`PyStructSequence_UnnamedField` ahora es una "
+"constante y se refiere a una cadena constante. (Contribuido por Serhiy "
+"Storchaka en :issue:`38650`.)"
 
-#: ../../whatsnew/3.9.rst:1368
+#: ../Doc/whatsnew/3.9.rst:1370
 msgid ""
 "The :c:type:`PyGC_Head` structure is now opaque. It is only defined in the "
 "internal C API (``pycore_gc.h``). (Contributed by Victor Stinner in :issue:"
 "`40241`.)"
 msgstr ""
+"La estructura :c:type:`PyGC_Head` ahora es opaca. Solo se define en la API C "
+"interna (``pycore_gc.h``). (Contribuido por Victor Stinner en :issue:"
+"`40241`.)"
 
-#: ../../whatsnew/3.9.rst:1372
+#: ../Doc/whatsnew/3.9.rst:1374
 msgid ""
 "The ``Py_UNICODE_COPY``, ``Py_UNICODE_FILL``, ``PyUnicode_WSTR_LENGTH``, :c:"
 "func:`PyUnicode_FromUnicode`, :c:func:`PyUnicode_AsUnicode`, "
@@ -2080,233 +2763,289 @@ msgid ""
 "marked as deprecated in C.  They have been deprecated by :pep:`393` since "
 "Python 3.3. (Contributed by Inada Naoki in :issue:`36346`.)"
 msgstr ""
+"``Py_UNICODE_COPY``, ``Py_UNICODE_FILL``, ``PyUnicode_WSTR_LENGTH``, :c:func:"
+"`PyUnicode_FromUnicode`, :c:func:`PyUnicode_AsUnicode`, "
+"``_PyUnicode_AsUnicode`` y :c:func:`PyUnicode_AsUnicodeAndSize` están "
+"marcados como obsoletos en C. Han sido obsoletos por :pep:`393` desde Python "
+"3.3. (Contribuido por Inada Naoki en :issue:`36346`.)"
 
-#: ../../whatsnew/3.9.rst:1379
+#: ../Doc/whatsnew/3.9.rst:1381
 msgid ""
 "The :c:func:`Py_FatalError` function is replaced with a macro which logs "
 "automatically the name of the current function, unless the "
 "``Py_LIMITED_API`` macro is defined. (Contributed by Victor Stinner in :"
 "issue:`39882`.)"
 msgstr ""
+"La función :c:func:`Py_FatalError` se reemplaza con una macro que registra "
+"automáticamente el nombre de la función actual, a menos que se defina la "
+"macro ``Py_LIMITED_API``. (Contribuido por Victor Stinner en :issue:`39882`.)"
 
-#: ../../whatsnew/3.9.rst:1384
+#: ../Doc/whatsnew/3.9.rst:1386
 msgid ""
 "The vectorcall protocol now requires that the caller passes only strings as "
 "keyword names. (See :issue:`37540` for more information.)"
 msgstr ""
+"El protocolo vectorcall ahora requiere que la persona que llama solo pase "
+"cadenas como nombres de palabras clave. (Consulte :issue:`37540` para "
+"obtener más información)."
 
-#: ../../whatsnew/3.9.rst:1387
+#: ../Doc/whatsnew/3.9.rst:1389
 msgid ""
 "Implementation details of a number of macros and functions are now hidden:"
 msgstr ""
+"Los detalles de implementación de una serie de macros y funciones ahora "
+"están ocultos:"
 
-#: ../../whatsnew/3.9.rst:1389
+#: ../Doc/whatsnew/3.9.rst:1391
 msgid ":c:func:`PyObject_IS_GC` macro was converted to a function."
-msgstr ""
+msgstr "La macro :c:func:`PyObject_IS_GC` se convirtió en una función."
 
-#: ../../whatsnew/3.9.rst:1391
+#: ../Doc/whatsnew/3.9.rst:1393
 msgid ""
 "The :c:func:`PyObject_NEW` macro becomes an alias to the :c:func:"
 "`PyObject_New` macro, and the :c:func:`PyObject_NEW_VAR` macro becomes an "
 "alias to the :c:func:`PyObject_NewVar` macro. They no longer access directly "
 "the :c:member:`PyTypeObject.tp_basicsize` member."
 msgstr ""
+"La macro :c:func:`PyObject_NEW` se convierte en un alias de la macro :c:func:"
+"`PyObject_New` y la macro :c:func:`PyObject_NEW_VAR` se convierte en un "
+"alias de la macro :c:func:`PyObject_NewVar`. Ya no acceden directamente al "
+"miembro :c:member:`PyTypeObject.tp_basicsize`."
 
-#: ../../whatsnew/3.9.rst:1396
+#: ../Doc/whatsnew/3.9.rst:1398
 msgid ""
 ":c:func:`PyObject_GET_WEAKREFS_LISTPTR` macro was converted to a function: "
 "the macro accessed directly the :c:member:`PyTypeObject.tp_weaklistoffset` "
 "member."
 msgstr ""
+"La macro :c:func:`PyObject_GET_WEAKREFS_LISTPTR` se convirtió en una "
+"función: la macro accedió directamente al miembro :c:member:`PyTypeObject."
+"tp_weaklistoffset`."
 
-#: ../../whatsnew/3.9.rst:1400
+#: ../Doc/whatsnew/3.9.rst:1402
 msgid ""
 ":c:func:`PyObject_CheckBuffer` macro was converted to a function: the macro "
 "accessed directly the :c:member:`PyTypeObject.tp_as_buffer` member."
 msgstr ""
+"La macro :c:func:`PyObject_CheckBuffer` se convirtió en una función: la "
+"macro accedió directamente al miembro :c:member:`PyTypeObject.tp_as_buffer`."
 
-#: ../../whatsnew/3.9.rst:1403
+#: ../Doc/whatsnew/3.9.rst:1405
 msgid ""
 ":c:func:`PyIndex_Check` is now always declared as an opaque function to hide "
 "implementation details: removed the ``PyIndex_Check()`` macro. The macro "
 "accessed directly the :c:member:`PyTypeObject.tp_as_number` member."
 msgstr ""
+":c:func:`PyIndex_Check` ahora siempre se declara como una función opaca para "
+"ocultar los detalles de implementación: se eliminó la macro "
+"``PyIndex_Check()``. La macro accedió directamente al miembro :c:member:"
+"`PyTypeObject.tp_as_number`."
 
-#: ../../whatsnew/3.9.rst:1407
+#: ../Doc/whatsnew/3.9.rst:1409
 msgid "(See :issue:`40170` for more details.)"
-msgstr ""
+msgstr "(Consulte :issue:`40170` para obtener más detalles)."
 
-#: ../../whatsnew/3.9.rst:1412
+#: ../Doc/whatsnew/3.9.rst:1414
 msgid ""
 "Excluded ``PyFPE_START_PROTECT()`` and ``PyFPE_END_PROTECT()`` macros of "
 "``pyfpe.h`` from the limited C API. (Contributed by Victor Stinner in :issue:"
 "`38835`.)"
 msgstr ""
+"Se excluyeron las macros ``PyFPE_START_PROTECT()`` y ``PyFPE_END_PROTECT()`` "
+"de ``pyfpe.h`` de la API C limitada. (Contribuido por Victor Stinner en :"
+"issue:`38835`.)"
 
-#: ../../whatsnew/3.9.rst:1416
+#: ../Doc/whatsnew/3.9.rst:1418
 msgid ""
 "The ``tp_print`` slot of :ref:`PyTypeObject <type-structs>` has been "
 "removed. It was used for printing objects to files in Python 2.7 and before. "
 "Since Python 3.0, it has been ignored and unused. (Contributed by Jeroen "
 "Demeyer in :issue:`36974`.)"
 msgstr ""
+"Se ha eliminado la ranura ``tp_print`` de :ref:`PyTypeObject <type-"
+"structs>`. Se usó para imprimir objetos en archivos en Python 2.7 y antes. "
+"Desde Python 3.0, se ha ignorado y no se ha utilizado. (Contribuido por "
+"Jeroen Demeyer en :issue:`36974`.)"
 
-#: ../../whatsnew/3.9.rst:1423
+#: ../Doc/whatsnew/3.9.rst:1425
 msgid "Excluded the following functions from the limited C API:"
-msgstr ""
+msgstr "Se excluyeron las siguientes funciones de la API C limitada:"
 
-#: ../../whatsnew/3.9.rst:1425
+#: ../Doc/whatsnew/3.9.rst:1427
 msgid ""
 "``PyThreadState_DeleteCurrent()`` (Contributed by Joannah Nanjekye in :issue:"
 "`37878`.)"
 msgstr ""
+"``PyThreadState_DeleteCurrent()`` (Contribuido por Joannah Nanjekye en :"
+"issue:`37878`.)"
 
-#: ../../whatsnew/3.9.rst:1427
+#: ../Doc/whatsnew/3.9.rst:1429
 msgid "``_Py_CheckRecursionLimit``"
 msgstr "``_Py_CheckRecursionLimit``"
 
-#: ../../whatsnew/3.9.rst:1428
+#: ../Doc/whatsnew/3.9.rst:1430
 msgid "``_Py_NewReference()``"
 msgstr "``_Py_NewReference()``"
 
-#: ../../whatsnew/3.9.rst:1429
+#: ../Doc/whatsnew/3.9.rst:1431
 msgid "``_Py_ForgetReference()``"
 msgstr "``_Py_ForgetReference()``"
 
-#: ../../whatsnew/3.9.rst:1430
+#: ../Doc/whatsnew/3.9.rst:1432
 msgid "``_PyTraceMalloc_NewReference()``"
 msgstr "``_PyTraceMalloc_NewReference()``"
 
-#: ../../whatsnew/3.9.rst:1431
+#: ../Doc/whatsnew/3.9.rst:1433
 msgid "``_Py_GetRefTotal()``"
 msgstr "``_Py_GetRefTotal()``"
 
-#: ../../whatsnew/3.9.rst:1432
+#: ../Doc/whatsnew/3.9.rst:1434
 msgid "The trashcan mechanism which never worked in the limited C API."
-msgstr ""
+msgstr "El mecanismo de papelera que nunca funcionó en la API C limitada."
 
-#: ../../whatsnew/3.9.rst:1433
+#: ../Doc/whatsnew/3.9.rst:1435
 msgid "``PyTrash_UNWIND_LEVEL``"
 msgstr "``PyTrash_UNWIND_LEVEL``"
 
-#: ../../whatsnew/3.9.rst:1434
+#: ../Doc/whatsnew/3.9.rst:1436
 msgid "``Py_TRASHCAN_BEGIN_CONDITION``"
 msgstr "``Py_TRASHCAN_BEGIN_CONDITION``"
 
-#: ../../whatsnew/3.9.rst:1435
+#: ../Doc/whatsnew/3.9.rst:1437
 msgid "``Py_TRASHCAN_BEGIN``"
 msgstr "``Py_TRASHCAN_BEGIN``"
 
-#: ../../whatsnew/3.9.rst:1436
+#: ../Doc/whatsnew/3.9.rst:1438
 msgid "``Py_TRASHCAN_END``"
 msgstr "``Py_TRASHCAN_END``"
 
-#: ../../whatsnew/3.9.rst:1437
+#: ../Doc/whatsnew/3.9.rst:1439
 msgid "``Py_TRASHCAN_SAFE_BEGIN``"
 msgstr "``Py_TRASHCAN_SAFE_BEGIN``"
 
-#: ../../whatsnew/3.9.rst:1438
+#: ../Doc/whatsnew/3.9.rst:1440
 msgid "``Py_TRASHCAN_SAFE_END``"
 msgstr "``Py_TRASHCAN_SAFE_END``"
 
-#: ../../whatsnew/3.9.rst:1440
+#: ../Doc/whatsnew/3.9.rst:1442
 msgid "Moved following functions and definitions to the internal C API:"
 msgstr ""
+"Se movieron las siguientes funciones y definiciones a la API de C interna:"
 
-#: ../../whatsnew/3.9.rst:1442
+#: ../Doc/whatsnew/3.9.rst:1444
 msgid "``_PyDebug_PrintTotalRefs()``"
 msgstr "``_PyDebug_PrintTotalRefs()``"
 
-#: ../../whatsnew/3.9.rst:1443
+#: ../Doc/whatsnew/3.9.rst:1445
 msgid "``_Py_PrintReferences()``"
 msgstr "``_Py_PrintReferences()``"
 
-#: ../../whatsnew/3.9.rst:1444
+#: ../Doc/whatsnew/3.9.rst:1446
 msgid "``_Py_PrintReferenceAddresses()``"
 msgstr "``_Py_PrintReferenceAddresses()``"
 
-#: ../../whatsnew/3.9.rst:1445
+#: ../Doc/whatsnew/3.9.rst:1447
 msgid "``_Py_tracemalloc_config``"
 msgstr "``_Py_tracemalloc_config``"
 
-#: ../../whatsnew/3.9.rst:1446
+#: ../Doc/whatsnew/3.9.rst:1448
 msgid "``_Py_AddToAllObjects()`` (specific to ``Py_TRACE_REFS`` build)"
 msgstr ""
+"``_Py_AddToAllObjects()`` (específico para ``Py_TRACE_REFS`` acumulación)"
 
-#: ../../whatsnew/3.9.rst:1450
+#: ../Doc/whatsnew/3.9.rst:1452
 msgid ""
 "Removed ``_PyRuntime.getframe`` hook and removed ``_PyThreadState_GetFrame`` "
 "macro which was an alias to ``_PyRuntime.getframe``. They were only exposed "
 "by the internal C API. Removed also ``PyThreadFrameGetter`` type. "
 "(Contributed by Victor Stinner in :issue:`39946`.)"
 msgstr ""
+"Se eliminó el gancho ``_PyRuntime.getframe`` y se eliminó la macro "
+"``_PyThreadState_GetFrame``, que era un alias de ``_PyRuntime.getframe``. "
+"Solo fueron expuestos por la API C interna. También se eliminó el tipo "
+"``PyThreadFrameGetter``. (Contribuido por Victor Stinner en :issue:`39946`.)"
 
-#: ../../whatsnew/3.9.rst:1455
+#: ../Doc/whatsnew/3.9.rst:1457
 msgid ""
 "Removed the following functions from the C API. Call :c:func:`PyGC_Collect` "
 "explicitly to clear all free lists. (Contributed by Inada Naoki and Victor "
 "Stinner in :issue:`37340`, :issue:`38896` and :issue:`40428`.)"
 msgstr ""
+"Se eliminaron las siguientes funciones de la API de C. Llame a :c:func:"
+"`PyGC_Collect` explícitamente para borrar todas las listas libres. "
+"(Contribuido por Inada Naoki y Victor Stinner en :issue:`37340`, :issue:"
+"`38896` y :issue:`40428`.)"
 
-#: ../../whatsnew/3.9.rst:1460
+#: ../Doc/whatsnew/3.9.rst:1462
 msgid "``PyAsyncGen_ClearFreeLists()``"
 msgstr "``PyAsyncGen_ClearFreeLists()``"
 
-#: ../../whatsnew/3.9.rst:1461
+#: ../Doc/whatsnew/3.9.rst:1463
 msgid "``PyContext_ClearFreeList()``"
 msgstr "``PyContext_ClearFreeList()``"
 
-#: ../../whatsnew/3.9.rst:1462
+#: ../Doc/whatsnew/3.9.rst:1464
 msgid "``PyDict_ClearFreeList()``"
 msgstr "``PyDict_ClearFreeList()``"
 
-#: ../../whatsnew/3.9.rst:1463
+#: ../Doc/whatsnew/3.9.rst:1465
 msgid "``PyFloat_ClearFreeList()``"
 msgstr "``PyFloat_ClearFreeList()``"
 
-#: ../../whatsnew/3.9.rst:1464
+#: ../Doc/whatsnew/3.9.rst:1466
 msgid "``PyFrame_ClearFreeList()``"
 msgstr "``PyFrame_ClearFreeList()``"
 
-#: ../../whatsnew/3.9.rst:1465
+#: ../Doc/whatsnew/3.9.rst:1467
 msgid "``PyList_ClearFreeList()``"
 msgstr "``PyList_ClearFreeList()``"
 
-#: ../../whatsnew/3.9.rst:1466
+#: ../Doc/whatsnew/3.9.rst:1468
 msgid ""
 "``PyMethod_ClearFreeList()`` and ``PyCFunction_ClearFreeList()``: the free "
 "lists of bound method objects have been removed."
 msgstr ""
+"``PyMethod_ClearFreeList()`` y ``PyCFunction_ClearFreeList()``: se han "
+"eliminado las listas libres de objetos de método enlazados."
 
-#: ../../whatsnew/3.9.rst:1468
+#: ../Doc/whatsnew/3.9.rst:1470
 msgid ""
 "``PySet_ClearFreeList()``: the set free list has been removed in Python 3.4."
 msgstr ""
+"``PySet_ClearFreeList()``: la lista de conjuntos libres se ha eliminado en "
+"Python 3.4."
 
-#: ../../whatsnew/3.9.rst:1470
+#: ../Doc/whatsnew/3.9.rst:1472
 msgid "``PyTuple_ClearFreeList()``"
 msgstr "``PyTuple_ClearFreeList()``"
 
-#: ../../whatsnew/3.9.rst:1471
+#: ../Doc/whatsnew/3.9.rst:1473
 msgid ""
 "``PyUnicode_ClearFreeList()``: the Unicode free list has been removed in "
 "Python 3.3."
 msgstr ""
+"``PyUnicode_ClearFreeList()``: la lista libre de Unicode se ha eliminado en "
+"Python 3.3."
 
-#: ../../whatsnew/3.9.rst:1474
+#: ../Doc/whatsnew/3.9.rst:1476
 msgid ""
 "Removed ``_PyUnicode_ClearStaticStrings()`` function. (Contributed by Victor "
 "Stinner in :issue:`39465`.)"
 msgstr ""
+"Función ``_PyUnicode_ClearStaticStrings()`` eliminada. (Contribuido por "
+"Victor Stinner en :issue:`39465`.)"
 
-#: ../../whatsnew/3.9.rst:1477
+#: ../Doc/whatsnew/3.9.rst:1479
 msgid ""
 "Removed ``Py_UNICODE_MATCH``. It has been deprecated by :pep:`393`, and "
 "broken since Python 3.3. The :c:func:`PyUnicode_Tailmatch` function can be "
 "used instead. (Contributed by Inada Naoki in :issue:`36346`.)"
 msgstr ""
+"Eliminado ``Py_UNICODE_MATCH``. Ha sido obsoleto por :pep:`393` y roto desde "
+"Python 3.3. En su lugar, se puede utilizar la función :c:func:"
+"`PyUnicode_Tailmatch`. (Contribuido por Inada Naoki en :issue:`36346`.)"
 
-#: ../../whatsnew/3.9.rst:1482
+#: ../Doc/whatsnew/3.9.rst:1484
 msgid ""
 "Cleaned header files of interfaces defined but with no implementation. The "
 "public API symbols being removed are: "
@@ -2318,51 +3057,73 @@ msgid ""
 "``PyNoArgsFunction``. (Contributed by Pablo Galindo Salgado in :issue:"
 "`39372`.)"
 msgstr ""
+"Archivos de encabezado limpios de interfaces definidas pero sin "
+"implementación. Los símbolos API públicos que se eliminan son: "
+"``_PyBytes_InsertThousandsGroupingLocale``, "
+"``_PyBytes_InsertThousandsGrouping``, ``_Py_InitializeFromArgs``, "
+"``_Py_InitializeFromWideArgs``, ``_PyFloat_Repr``, ``_PyFloat_Digits``, "
+"``_PyFloat_DigitsInit``, ``PyFrame_ExtendStack``, ``_PyAIterWrapper_Type``, "
+"``PyNullImporter_Type``, ``PyCmpWrapper_Type``, ``PySortWrapper_Type``, "
+"``PyNoArgsFunction``. (Contribuido por Pablo Galindo Salgado en :issue:"
+"`39372`.)"
 
-#: ../../whatsnew/3.9.rst:1493
+#: ../Doc/whatsnew/3.9.rst:1495
 msgid "Notable changes in Python 3.9.1"
-msgstr "Python 3.9.1 での重要な変更点"
+msgstr "Cambios notables en Python 3.9.1"
 
-#: ../../whatsnew/3.9.rst:1498
+#: ../Doc/whatsnew/3.9.rst:1500
 msgid ""
 "The behavior of :class:`typing.Literal` was changed to conform with :pep:"
 "`586` and to match the behavior of static type checkers specified in the PEP."
 msgstr ""
+"El comportamiento de :class:`typing.Literal` se modificó para cumplir con :"
+"pep:`586` y para coincidir con el comportamiento de los verificadores de "
+"tipo estático especificados en el PEP."
 
-#: ../../whatsnew/3.9.rst:1501
+#: ../Doc/whatsnew/3.9.rst:1503
 msgid "``Literal`` now de-duplicates parameters."
-msgstr ""
+msgstr "``Literal`` ahora elimina los parámetros duplicados."
 
-#: ../../whatsnew/3.9.rst:1502
+#: ../Doc/whatsnew/3.9.rst:1504
 msgid ""
 "Equality comparisons between ``Literal`` objects are now order independent."
 msgstr ""
+"Las comparaciones de igualdad entre objetos ``Literal`` ahora son "
+"independientes del orden."
 
-#: ../../whatsnew/3.9.rst:1503
+#: ../Doc/whatsnew/3.9.rst:1505
 msgid ""
 "``Literal`` comparisons now respect types.  For example, ``Literal[0] == "
 "Literal[False]`` previously evaluated to ``True``.  It is now ``False``.  To "
 "support this change, the internally used type cache now supports "
 "differentiating types."
 msgstr ""
+"Las comparaciones de ``Literal`` ahora respetan los tipos. Por ejemplo, "
+"``Literal[0] == Literal[False]`` evaluado previamente como ``True``. Ahora "
+"es ``False``. Para respaldar este cambio, la caché de tipos utilizada "
+"internamente ahora admite tipos diferenciados."
 
-#: ../../whatsnew/3.9.rst:1507
+#: ../Doc/whatsnew/3.9.rst:1509
 msgid ""
 "``Literal`` objects will now raise a :exc:`TypeError` exception during "
 "equality comparisons if any of their parameters are not :term:`hashable`. "
 "Note that declaring ``Literal`` with mutable parameters will not throw an "
 "error::"
 msgstr ""
+"Los objetos ``Literal`` ahora lanzarán una excepción :exc:`TypeError` "
+"durante las comparaciones de igualdad si alguno de sus parámetros no es :"
+"term:`hashable`. Tenga en cuenta que declarar ``Literal`` con parámetros "
+"mutables no arrojará un error:"
 
-#: ../../whatsnew/3.9.rst:1519
+#: ../Doc/whatsnew/3.9.rst:1521
 msgid "(Contributed by Yurii Karabas in :issue:`42345`.)"
-msgstr "(:issue:`42345`でのYurii Karabasの貢献による)"
+msgstr "(Contribuido por Yurii Karabas en :issue:`42345`.)"
 
-#: ../../whatsnew/3.9.rst:1522
+#: ../Doc/whatsnew/3.9.rst:1524
 msgid "macOS 11.0 (Big Sur) and Apple Silicon Mac support"
-msgstr "macOS 11.0 (Big Sur) と Appleシリコンの Mac のサポート"
+msgstr "Compatibilidad con macOS 11.0 (Big Sur) y Apple Silicon Mac"
 
-#: ../../whatsnew/3.9.rst:1524
+#: ../Doc/whatsnew/3.9.rst:1526
 msgid ""
 "As of 3.9.1, Python now fully supports building and running on macOS 11.0 "
 "(Big Sur) and on Apple Silicon Macs (based on the ``ARM64`` architecture). A "
@@ -2373,20 +3134,30 @@ msgid ""
 "functions and options conditionally available based on the operating system "
 "version in use at runtime (\"weaklinking\")."
 msgstr ""
+"A partir de 3.9.1, Python ahora es totalmente compatible con la construcción "
+"y ejecución en macOS 11.0 (Big Sur) y en Apple Silicon Macs (basado en la "
+"arquitectura ``ARM64``). Una nueva variante de compilación universal, "
+"``universal2``, ahora está disponible para admitir de forma nativa tanto "
+"``ARM64`` como ``Intel 64`` en un conjunto de ejecutables. Los binarios "
+"ahora también se pueden construir en versiones actuales de macOS para ser "
+"implementados en una variedad de versiones anteriores de macOS (probadas a "
+"10.9) mientras hacen que algunas funciones y opciones más nuevas del sistema "
+"operativo estén disponibles condicionalmente según la versión del sistema "
+"operativo en uso en tiempo de ejecución (\"vinculación débil\" )."
 
-#: ../../whatsnew/3.9.rst:1533
+#: ../Doc/whatsnew/3.9.rst:1535
 msgid "(Contributed by Ronald Oussoren and Lawrence D'Anna in :issue:`41100`.)"
-msgstr "(:issue:`41100`でのRonald OussorenとLawrence D'Annaの貢献による)"
+msgstr "(Contribuido por Ronald Oussoren y Lawrence D'Anna en :issue:`41100`.)"
 
-#: ../../whatsnew/3.9.rst:1536
+#: ../Doc/whatsnew/3.9.rst:1538
 msgid "Notable changes in Python 3.9.2"
-msgstr "Python 3.9.2 での重要な変更点"
+msgstr "Cambios notables en Python 3.9.2"
 
-#: ../../whatsnew/3.9.rst:1539
+#: ../Doc/whatsnew/3.9.rst:1541
 msgid "collections.abc"
-msgstr "collections.abc"
+msgstr "colecciones.abc"
 
-#: ../../whatsnew/3.9.rst:1541
+#: ../Doc/whatsnew/3.9.rst:1543
 msgid ""
 ":class:`collections.abc.Callable` generic now flattens type parameters, "
 "similar to what :data:`typing.Callable` currently does.  This means that "
@@ -2401,12 +3172,25 @@ msgid ""
 "3.9.1.  This :exc:`DeprecationWarning` will become a :exc:`TypeError` in "
 "Python 3.10. (Contributed by Ken Jin in :issue:`42195`.)"
 msgstr ""
+":class:`collections.abc.Callable` genérico ahora aplana los parámetros de "
+"tipo, similar a lo que hace actualmente :data:`typing.Callable`. Esto "
+"significa que ``collections.abc.Callable[[int, str], str]`` tendrá "
+"``__args__`` de ``(int, str, str)``; anteriormente esto era ``([int, str], "
+"str)``. Para permitir este cambio, :class:`types.GenericAlias` ahora puede "
+"ser subclasificado, y se devolverá una subclase al subíndice el tipo :class:"
+"`collections.abc.Callable`. El código que accede a los argumentos a través "
+"de :func:`typing.get_args` o ``__args__`` debe tener en cuenta este cambio. "
+"Se puede emitir un :exc:`DeprecationWarning` para formas no válidas de "
+"parametrizar :class:`collections.abc.Callable` que pueden haber pasado "
+"silenciosamente en Python 3.9.1. Este :exc:`DeprecationWarning` se "
+"convertirá en un :exc:`TypeError` en Python 3.10. (Contribuido por Ken Jin "
+"en :issue:`42195`.)"
 
-#: ../../whatsnew/3.9.rst:1555
+#: ../Doc/whatsnew/3.9.rst:1557
 msgid "urllib.parse"
 msgstr "urllib.parse"
 
-#: ../../whatsnew/3.9.rst:1557
+#: ../Doc/whatsnew/3.9.rst:1559
 msgid ""
 "Earlier Python versions allowed using both ``;`` and ``&`` as query "
 "parameter separators in :func:`urllib.parse.parse_qs` and :func:`urllib."
@@ -2417,3 +3201,21 @@ msgid ""
 "For more details, please see their respective documentation. (Contributed by "
 "Adam Goldschmidt, Senthil Kumaran and Ken Jin in :issue:`42967`.)"
 msgstr ""
+"Las versiones anteriores de Python permitían el uso de ``;`` y ``&`` como "
+"separadores de parámetros de consulta en :func:`urllib.parse.parse_qs` y :"
+"func:`urllib.parse.parse_qsl`. Debido a problemas de seguridad y para "
+"cumplir con las recomendaciones más recientes del W3C, esto se ha cambiado "
+"para permitir solo una clave separadora, con ``&`` como predeterminado. Este "
+"cambio también afecta a :func:`cgi.parse` y :func:`cgi.parse_multipart` ya "
+"que utilizan las funciones afectadas internamente. Para obtener más "
+"detalles, consulte su documentación respectiva. (Contribuido por Adam "
+"Goldschmidt, Senthil Kumaran y Ken Jin en :issue:`42967`.)"
+
+#~ msgid ""
+#~ ":c:func:`PyType_HasFeature` now always calls :c:func:`PyType_GetFlags`. "
+#~ "Previously, it accessed directly the :c:member:`PyTypeObject.tp_flags` "
+#~ "member when the limited C API was not used."
+#~ msgstr ""
+#~ ":c:func:`PyType_HasFeature` ahora siempre llama a :c:func:"
+#~ "`PyType_GetFlags`. Anteriormente, accedía directamente al miembro :c:"
+#~ "member:`PyTypeObject.tp_flags` cuando no se usaba la API C limitada."

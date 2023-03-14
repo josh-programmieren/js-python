@@ -1,179 +1,181 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-# mollinaca, 2021
-# Akira inamori <akira.inamori@tf-ebina.com>, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 00:49+0000\n"
-"Last-Translator: Akira inamori <akira.inamori@tf-ebina.com>, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2023-01-14 14:22-0500\n"
+"Last-Translator: CatalinaArrey <CatalinaArreyA@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: ../../c-api/init.rst:8
+#: ../Doc/c-api/init.rst:8
 msgid "Initialization, Finalization, and Threads"
-msgstr "初期化 (initialization)、終了処理 (finalization)、スレッド"
+msgstr "Inicialización, finalización e hilos"
 
-#: ../../c-api/init.rst:10
+#: ../Doc/c-api/init.rst:10
 msgid "See also :ref:`Python Initialization Configuration <init-config>`."
-msgstr ":ref:`Python 初期化設定 <init-config>` も参照してください。"
+msgstr ""
+"Consulte también :ref:`Configuración de inicialización de Python <init-"
+"config>`."
 
-#: ../../c-api/init.rst:15
+#: ../Doc/c-api/init.rst:15
 msgid "Before Python Initialization"
-msgstr "Python 初期化以前"
+msgstr "Antes de la inicialización de Python"
 
-#: ../../c-api/init.rst:17
+#: ../Doc/c-api/init.rst:17
 msgid ""
 "In an application embedding  Python, the :c:func:`Py_Initialize` function "
 "must be called before using any other Python/C API functions; with the "
 "exception of a few functions and the :ref:`global configuration variables "
 "<global-conf-vars>`."
 msgstr ""
-"Python が埋め込まれているアプリケーションでは、他の Python/C API 関数を使う前"
-"に :c:func:`Py_Initialize` 関数を呼ばなければなりません。これには例外として、"
-"いくつかの関数と :ref:`グローバルな設定変数 <global-conf-vars>` があります。"
+"En una aplicación que incorpora Python, se debe llamar a la función :c:func:"
+"`Py_Initialize` antes de usar cualquier otra función de API Python/C; con la "
+"excepción de algunas funciones y :ref:`variables de configuración global "
+"<global-conf-vars>`."
 
-#: ../../c-api/init.rst:22
+#: ../Doc/c-api/init.rst:22
 msgid ""
 "The following functions can be safely called before Python is initialized:"
-msgstr "次の関数は Python の初期化の前でも安全に呼び出せます:"
+msgstr ""
+"Las siguientes funciones se pueden invocar de forma segura antes de que se "
+"inicializa Python:"
 
-#: ../../c-api/init.rst:24
+#: ../Doc/c-api/init.rst:24
 msgid "Configuration functions:"
-msgstr "設定関数:"
+msgstr "Funciones de configuración:"
 
-#: ../../c-api/init.rst:26
+#: ../Doc/c-api/init.rst:26
 msgid ":c:func:`PyImport_AppendInittab`"
 msgstr ":c:func:`PyImport_AppendInittab`"
 
-#: ../../c-api/init.rst:27
+#: ../Doc/c-api/init.rst:27
 msgid ":c:func:`PyImport_ExtendInittab`"
 msgstr ":c:func:`PyImport_ExtendInittab`"
 
-#: ../../c-api/init.rst:28
+#: ../Doc/c-api/init.rst:28
 msgid ":c:func:`PyInitFrozenExtensions`"
 msgstr ":c:func:`PyInitFrozenExtensions`"
 
-#: ../../c-api/init.rst:29
+#: ../Doc/c-api/init.rst:29
 msgid ":c:func:`PyMem_SetAllocator`"
 msgstr ":c:func:`PyMem_SetAllocator`"
 
-#: ../../c-api/init.rst:30
+#: ../Doc/c-api/init.rst:30
 msgid ":c:func:`PyMem_SetupDebugHooks`"
 msgstr ":c:func:`PyMem_SetupDebugHooks`"
 
-#: ../../c-api/init.rst:31
+#: ../Doc/c-api/init.rst:31
 msgid ":c:func:`PyObject_SetArenaAllocator`"
 msgstr ":c:func:`PyObject_SetArenaAllocator`"
 
-#: ../../c-api/init.rst:32
+#: ../Doc/c-api/init.rst:32
 msgid ":c:func:`Py_SetPath`"
 msgstr ":c:func:`Py_SetPath`"
 
-#: ../../c-api/init.rst:33
+#: ../Doc/c-api/init.rst:33
 msgid ":c:func:`Py_SetProgramName`"
 msgstr ":c:func:`Py_SetProgramName`"
 
-#: ../../c-api/init.rst:34
+#: ../Doc/c-api/init.rst:34
 msgid ":c:func:`Py_SetPythonHome`"
 msgstr ":c:func:`Py_SetPythonHome`"
 
-#: ../../c-api/init.rst:35
+#: ../Doc/c-api/init.rst:35
 msgid ":c:func:`Py_SetStandardStreamEncoding`"
 msgstr ":c:func:`Py_SetStandardStreamEncoding`"
 
-#: ../../c-api/init.rst:36
+#: ../Doc/c-api/init.rst:36
 msgid ":c:func:`PySys_AddWarnOption`"
 msgstr ":c:func:`PySys_AddWarnOption`"
 
-#: ../../c-api/init.rst:37
+#: ../Doc/c-api/init.rst:37
 msgid ":c:func:`PySys_AddXOption`"
 msgstr ":c:func:`PySys_AddXOption`"
 
-#: ../../c-api/init.rst:38
+#: ../Doc/c-api/init.rst:38
 msgid ":c:func:`PySys_ResetWarnOptions`"
 msgstr ":c:func:`PySys_ResetWarnOptions`"
 
-#: ../../c-api/init.rst:40
+#: ../Doc/c-api/init.rst:40
 msgid "Informative functions:"
-msgstr "情報取得の関数:"
+msgstr "Funciones informativas:"
 
-#: ../../c-api/init.rst:42
+#: ../Doc/c-api/init.rst:42
 msgid ":c:func:`Py_IsInitialized`"
 msgstr ":c:func:`Py_IsInitialized`"
 
-#: ../../c-api/init.rst:43
+#: ../Doc/c-api/init.rst:43
 msgid ":c:func:`PyMem_GetAllocator`"
 msgstr ":c:func:`PyMem_GetAllocator`"
 
-#: ../../c-api/init.rst:44
+#: ../Doc/c-api/init.rst:44
 msgid ":c:func:`PyObject_GetArenaAllocator`"
 msgstr ":c:func:`PyObject_GetArenaAllocator`"
 
-#: ../../c-api/init.rst:45
+#: ../Doc/c-api/init.rst:45
 msgid ":c:func:`Py_GetBuildInfo`"
 msgstr ":c:func:`Py_GetBuildInfo`"
 
-#: ../../c-api/init.rst:46
+#: ../Doc/c-api/init.rst:46
 msgid ":c:func:`Py_GetCompiler`"
 msgstr ":c:func:`Py_GetCompiler`"
 
-#: ../../c-api/init.rst:47
+#: ../Doc/c-api/init.rst:47
 msgid ":c:func:`Py_GetCopyright`"
 msgstr ":c:func:`Py_GetCopyright`"
 
-#: ../../c-api/init.rst:48
+#: ../Doc/c-api/init.rst:48
 msgid ":c:func:`Py_GetPlatform`"
 msgstr ":c:func:`Py_GetPlatform`"
 
-#: ../../c-api/init.rst:49
+#: ../Doc/c-api/init.rst:49
 msgid ":c:func:`Py_GetVersion`"
 msgstr ":c:func:`Py_GetVersion`"
 
-#: ../../c-api/init.rst:51
+#: ../Doc/c-api/init.rst:51
 msgid "Utilities:"
-msgstr "ユーティリティ:"
+msgstr "Utilidades:"
 
-#: ../../c-api/init.rst:53
+#: ../Doc/c-api/init.rst:53
 msgid ":c:func:`Py_DecodeLocale`"
 msgstr ":c:func:`Py_DecodeLocale`"
 
-#: ../../c-api/init.rst:55
+#: ../Doc/c-api/init.rst:55
 msgid "Memory allocators:"
-msgstr "メモリアロケータ:"
+msgstr "Asignadores de memoria:"
 
-#: ../../c-api/init.rst:57
+#: ../Doc/c-api/init.rst:57
 msgid ":c:func:`PyMem_RawMalloc`"
 msgstr ":c:func:`PyMem_RawMalloc`"
 
-#: ../../c-api/init.rst:58
+#: ../Doc/c-api/init.rst:58
 msgid ":c:func:`PyMem_RawRealloc`"
 msgstr ":c:func:`PyMem_RawRealloc`"
 
-#: ../../c-api/init.rst:59
+#: ../Doc/c-api/init.rst:59
 msgid ":c:func:`PyMem_RawCalloc`"
 msgstr ":c:func:`PyMem_RawCalloc`"
 
-#: ../../c-api/init.rst:60
+#: ../Doc/c-api/init.rst:60
 msgid ":c:func:`PyMem_RawFree`"
 msgstr ":c:func:`PyMem_RawFree`"
 
-#: ../../c-api/init.rst:64
+#: ../Doc/c-api/init.rst:64
 msgid ""
 "The following functions **should not be called** before :c:func:"
 "`Py_Initialize`: :c:func:`Py_EncodeLocale`, :c:func:`Py_GetPath`, :c:func:"
@@ -181,296 +183,312 @@ msgid ""
 "`Py_GetProgramFullPath`, :c:func:`Py_GetPythonHome`, :c:func:"
 "`Py_GetProgramName` and :c:func:`PyEval_InitThreads`."
 msgstr ""
-"次の関数は :c:func:`Py_Initialize` より前に **呼び出すべき ではありません"
-"** : :c:func:`Py_EncodeLocale`, :c:func:`Py_GetPath`, :c:func:"
+"Las siguientes funciones **no deben llamarse** antes de :c:func:"
+"`Py_Initialize`: :c:func:`Py_EncodeLocale`, :c:func:`Py_GetPath`, :c:func:"
 "`Py_GetPrefix`, :c:func:`Py_GetExecPrefix`, :c:func:"
 "`Py_GetProgramFullPath`, :c:func:`Py_GetPythonHome`, :c:func:"
-"`Py_GetProgramName`, :c:func:`PyEval_InitThreads` 。"
+"`Py_GetProgramName` y :c:func:`PyEval_InitThreads`."
 
-#: ../../c-api/init.rst:74
+#: ../Doc/c-api/init.rst:74
 msgid "Global configuration variables"
-msgstr "グローバルな設定変数"
+msgstr "Variables de configuración global"
 
-#: ../../c-api/init.rst:76
+#: ../Doc/c-api/init.rst:76
 msgid ""
 "Python has variables for the global configuration to control different "
 "features and options. By default, these flags are controlled by :ref:"
 "`command line options <using-on-interface-options>`."
 msgstr ""
-"Python には、様々な機能やオプションを制御するグローバルな設定のための変数があ"
-"ります。\n"
-"デフォルトでは、これらのフラグは :ref:`コマンドラインオプション <using-on-"
-"interface-options>` で制御されます。"
+"Python tiene variables para la configuración global para controlar "
+"diferentes características y opciones. De forma predeterminada, estos "
+"indicadores están controlados por :ref:`opciones de línea de comando <using-"
+"on-interface-options>`."
 
-#: ../../c-api/init.rst:80
+#: ../Doc/c-api/init.rst:80
 msgid ""
 "When a flag is set by an option, the value of the flag is the number of "
 "times that the option was set. For example, ``-b`` sets :c:data:"
 "`Py_BytesWarningFlag` to 1 and ``-bb`` sets :c:data:`Py_BytesWarningFlag` to "
 "2."
 msgstr ""
-"オプションでフラグがセットされると、フラグの値はそのオプションがセットされた"
-"回数になります。\n"
-"例えば、 ``-b`` では :c:data:`Py_BytesWarningFlag` が 1 に設定され、 ``-bb`` "
-"では :c:data:`Py_BytesWarningFlag` が 2 に設定されます。"
+"Cuando una opción establece un indicador, el valor del indicador es la "
+"cantidad de veces que se configuró la opción. Por ejemplo, ``-b`` establece :"
+"c:data:`Py_BytesWarningFlag` en 1 y ``-bb`` establece :c:data:"
+"`Py_BytesWarningFlag` en 2."
 
-#: ../../c-api/init.rst:86
+#: ../Doc/c-api/init.rst:86
 msgid ""
 "Issue a warning when comparing :class:`bytes` or :class:`bytearray` with :"
 "class:`str` or :class:`bytes` with :class:`int`.  Issue an error if greater "
 "or equal to ``2``."
 msgstr ""
-":class:`bytes` または :class:`bytearray` を :class:`str` と比較した場合、また"
-"は、 :class:`bytes` を :class:`int` と比較した場合に警告を発生させます。\n"
-"``2`` 以上の値を設定している場合は、エラーを発生させます。"
+"Emite una advertencia al comparar :class:`bytes` o :class:`bytearray` con :"
+"class:`str` o :class:`bytes` con :class:`int`. Emite un error si es mayor o "
+"igual a ``2``."
 
-#: ../../c-api/init.rst:90
+#: ../Doc/c-api/init.rst:90
 msgid "Set by the :option:`-b` option."
-msgstr ":option:`-b` オプションで設定します。"
+msgstr "Establecido por la opción :option:`-b`."
 
-#: ../../c-api/init.rst:94
+#: ../Doc/c-api/init.rst:94
 msgid ""
 "Turn on parser debugging output (for expert only, depending on compilation "
 "options)."
 msgstr ""
-"パーサーのデバッグ出力を有効にします。(専門家専用です。コンパイルオプションに"
-"依存します)。"
+"Activa la salida de depuración del analizador (solo para expertos, según las "
+"opciones de compilación)."
 
-#: ../../c-api/init.rst:97
+#: ../Doc/c-api/init.rst:97
 msgid ""
 "Set by the :option:`-d` option and the :envvar:`PYTHONDEBUG` environment "
 "variable."
-msgstr ":option:`-d` オプションと :envvar:`PYTHONDEBUG` 環境変数で設定します。"
+msgstr ""
+"Establecido por la opción :option:`-d` y la variable de entorno :envvar:"
+"`PYTHONDEBUG`."
 
-#: ../../c-api/init.rst:102
+#: ../Doc/c-api/init.rst:102
 msgid ""
 "If set to non-zero, Python won't try to write ``.pyc`` files on the import "
 "of source modules."
 msgstr ""
-"非ゼロに設定した場合、Python はソースモジュールのインポート時に ``.pyc`` ファ"
-"イルの作成を試みません。"
+"Si se establece en un valor distinto de cero, Python no intentará escribir "
+"archivos ``.pyc`` en la importación de módulos fuente."
 
-#: ../../c-api/init.rst:105
+#: ../Doc/c-api/init.rst:105
 msgid ""
 "Set by the :option:`-B` option and the :envvar:`PYTHONDONTWRITEBYTECODE` "
 "environment variable."
 msgstr ""
-":option:`-B` オプションと :envvar:`PYTHONDONTWRITEBYTECODE` 環境変数で設定し"
-"ます。"
+"Establecido por la opción :option:`-B` y la variable de entorno :envvar:"
+"`PYTHONDONTWRITEBYTECODE`."
 
-#: ../../c-api/init.rst:110
+#: ../Doc/c-api/init.rst:110
 msgid ""
 "Suppress error messages when calculating the module search path in :c:func:"
 "`Py_GetPath`."
 msgstr ""
-":c:func:`Py_GetPath` の中でモジュール検索パスを割り出しているときのエラーメッ"
-"セージを抑制します。"
+"Suprime los mensajes de error al calcular la ruta de búsqueda del módulo en :"
+"c:func:`Py_GetPath`."
 
-#: ../../c-api/init.rst:113
+#: ../Doc/c-api/init.rst:113
 msgid "Private flag used by ``_freeze_module`` and ``frozenmain`` programs."
 msgstr ""
+"Indicador privado utilizado por los programas ``_freeze_module`` y "
+"``frozenmain``."
 
-#: ../../c-api/init.rst:117
+#: ../Doc/c-api/init.rst:117
 msgid ""
 "Set to ``1`` if the :envvar:`PYTHONHASHSEED` environment variable is set to "
 "a non-empty string."
 msgstr ""
-":envvar:`PYTHONHASHSEED` 環境変数が空でない文字列に設定された場合に、 ``1`` "
-"が設定されます。"
+"Se establece en ``1`` si la variable de entorno :envvar:`PYTHONHASHSEED` se "
+"establece en una cadena de caracteres no vacía."
 
-#: ../../c-api/init.rst:120
+#: ../Doc/c-api/init.rst:120
 msgid ""
 "If the flag is non-zero, read the :envvar:`PYTHONHASHSEED` environment "
 "variable to initialize the secret hash seed."
 msgstr ""
-"フラグがゼロでない場合、 :envvar:`PYTHONHASHSEED` 環境変数を読みシークレット"
-"ハッシュシードを初期化します。"
+"Si el indicador no es cero, lee la variable de entorno :envvar:"
+"`PYTHONHASHSEED` para inicializar la semilla de *hash* secreta."
 
-#: ../../c-api/init.rst:125
+#: ../Doc/c-api/init.rst:125
 msgid ""
 "Ignore all :envvar:`PYTHON*` environment variables, e.g. :envvar:"
 "`PYTHONPATH` and :envvar:`PYTHONHOME`, that might be set."
 msgstr ""
-"全ての :envvar:`PYTHON*` 環境変数を無視します。例えば、 :envvar:`PYTHONPATH` "
-"や :envvar:`PYTHONHOME` などです。"
+"Ignorar todas las variables de entorno :envvar:`PYTHON*`, por ejemplo :"
+"envvar:`PYTHONPATH` y :envvar:`PYTHONHOME`, eso podría establecerse."
 
-#: ../../c-api/init.rst:128
+#: ../Doc/c-api/init.rst:128
 msgid "Set by the :option:`-E` and :option:`-I` options."
-msgstr ":option:`-E` オプションと :option:`-I` オプションで設定します。"
+msgstr "Establecido por las opciones :option:`-E` y :option:`-I`."
 
-#: ../../c-api/init.rst:132
+#: ../Doc/c-api/init.rst:132
 msgid ""
 "When a script is passed as first argument or the :option:`-c` option is "
 "used, enter interactive mode after executing the script or the command, even "
 "when :data:`sys.stdin` does not appear to be a terminal."
 msgstr ""
-"最初の引数にスクリプトが指定されたときや :option:`-c` オプションが利用された"
-"際に、 :data:`sys.stdin` がターミナルに出力されないときであっても、スクリプト"
-"かコマンドを実行した後にインタラクティブモードに入ります。"
+"Cuando se pasa una secuencia de comandos (*script*) como primer argumento o "
+"se usa la opción :option:`-c`, ingresa al modo interactivo después de "
+"ejecutar la secuencia de comandos o el comando, incluso cuando :data:`sys."
+"stdin` no parece ser un terminal."
 
-#: ../../c-api/init.rst:136
+#: ../Doc/c-api/init.rst:136
 msgid ""
 "Set by the :option:`-i` option and the :envvar:`PYTHONINSPECT` environment "
 "variable."
 msgstr ""
-":option:`-i` オプションと :envvar:`PYTHONINSPECT` 環境変数で設定します。"
+"Establecido por la opción :option:`-i` y la variable de entorno :envvar:"
+"`PYTHONINSPECT`."
 
-#: ../../c-api/init.rst:141
+#: ../Doc/c-api/init.rst:141
 msgid "Set by the :option:`-i` option."
-msgstr ":option:`-i` オプションで設定します。"
+msgstr "Establecido por la opción :option:`-i`."
 
-#: ../../c-api/init.rst:145
+#: ../Doc/c-api/init.rst:145
 msgid ""
 "Run Python in isolated mode. In isolated mode :data:`sys.path` contains "
 "neither the script's directory nor the user's site-packages directory."
 msgstr ""
-"Python を隔離モードで実行します。\n"
-"隔離モードでは :data:`sys.path` はスクリプトのディレクトリやユーザのサイト"
-"パッケージのディレクトリを含みません。"
+"Ejecuta Python en modo aislado. En modo aislado :data:`sys.path` no contiene "
+"ni el directorio de la secuencia de comandos (*script*) ni el directorio de "
+"paquetes del sitio del usuario (*site-pacages*)."
 
-#: ../../c-api/init.rst:148
+#: ../Doc/c-api/init.rst:148
 msgid "Set by the :option:`-I` option."
-msgstr ":option:`-I` オプションで設定します。"
+msgstr "Establecido por la opción :option:`-I`."
 
-#: ../../c-api/init.rst:154
+#: ../Doc/c-api/init.rst:154
 msgid ""
 "If the flag is non-zero, use the ``mbcs`` encoding with ``replace`` error "
 "handler, instead of the UTF-8 encoding with ``surrogatepass`` error handler, "
 "for the :term:`filesystem encoding and error handler`."
 msgstr ""
+"Si la bandera no es cero, utilice la codificación ``mbcs`` con el gestor de "
+"errores ``replace`` en lugar de la codificación UTF-8 con el gestor de error "
+"``surrogatepass``, para la :term:`filesystem encoding and error handler` "
+"(codificación del sistema de archivos y gestor de errores)."
 
-#: ../../c-api/init.rst:158
+#: ../Doc/c-api/init.rst:158
 msgid ""
 "Set to ``1`` if the :envvar:`PYTHONLEGACYWINDOWSFSENCODING` environment "
 "variable is set to a non-empty string."
 msgstr ""
-":envvar:`PYTHONLEGACYWINDOWSFSENCODING` 環境変数が空でない文字列に設定された"
-"場合に、 ``1`` に設定されます。"
+"Establece en ``1`` si la variable de entorno :envvar:"
+"`PYTHONLEGACYWINDOWSFSENCODING` está configurada en una cadena de caracteres "
+"no vacía."
 
-#: ../../c-api/init.rst:161
+#: ../Doc/c-api/init.rst:161
 msgid "See :pep:`529` for more details."
-msgstr "より詳しくは :pep:`529` を参照してください。"
+msgstr "Ver :pep:`529` para más detalles."
 
-#: ../../c-api/init.rst:163 ../../c-api/init.rst:175
+#: ../Doc/c-api/init.rst:163 ../Doc/c-api/init.rst:175
 msgid ":ref:`Availability <availability>`: Windows."
-msgstr ":ref:`利用可能な環境 <availability>`: Windows 。"
+msgstr ":ref:`Disponibilidad <availability>`: Windows."
 
-#: ../../c-api/init.rst:167
+#: ../Doc/c-api/init.rst:167
 msgid ""
 "If the flag is non-zero, use :class:`io.FileIO` instead of :class:"
 "`WindowsConsoleIO` for :mod:`sys` standard streams."
 msgstr ""
-"フラグがゼロでない場合、 :class:`WindowsConsoleIO` の代わりに :class:`io."
-"FileIO` を :mod:`sys` の標準ストリームとして使います。"
+"Si el indicador no es cero, use :class:`io.FileIO` en lugar de :class:"
+"`WindowsConsoleIO` para secuencias estándar :mod:`sys`."
 
-#: ../../c-api/init.rst:170
+#: ../Doc/c-api/init.rst:170
 msgid ""
 "Set to ``1`` if the :envvar:`PYTHONLEGACYWINDOWSSTDIO` environment variable "
 "is set to a non-empty string."
 msgstr ""
-":envvar:`PYTHONLEGACYWINDOWSSTDIO` 環境変数が空でない文字列に設定された場合"
-"に、 ``1`` に設定されます。"
+"Establece en ``1`` si la variable de entorno :envvar:"
+"`PYTHONLEGACYWINDOWSSTDIO` está configurada en una cadena de caracteres no "
+"vacía."
 
-#: ../../c-api/init.rst:173
+#: ../Doc/c-api/init.rst:173
 msgid "See :pep:`528` for more details."
-msgstr "より詳しくは :pep:`528` を参照してください。"
+msgstr "Ver :pep:`528` para más detalles."
 
-#: ../../c-api/init.rst:179
+#: ../Doc/c-api/init.rst:179
 msgid ""
 "Disable the import of the module :mod:`site` and the site-dependent "
 "manipulations of :data:`sys.path` that it entails.  Also disable these "
 "manipulations if :mod:`site` is explicitly imported later (call :func:`site."
 "main` if you want them to be triggered)."
 msgstr ""
-":mod:`site` モジュールの import と、そのモジュールが行なっていた site ごと"
-"の :data:`sys.path` への操作を無効にします。後で :mod:`site` を明示的に "
-"import しても、これらの操作は実行されません (実行したい場合は、 :func:`site."
-"main` を呼び出してください)。"
+"Deshabilita la importación del módulo :mod:`site` y las manipulaciones "
+"dependientes del sitio de :data:`sys.path` que conlleva. También deshabilita "
+"estas manipulaciones si :mod:`site` se importa explícitamente más tarde "
+"(llama a :func:`site.main` si desea que se activen)."
 
-#: ../../c-api/init.rst:184
+#: ../Doc/c-api/init.rst:184
 msgid "Set by the :option:`-S` option."
-msgstr ":option:`-S` オプションで設定します。"
+msgstr "Establecido por la opción :option:`-S`."
 
-#: ../../c-api/init.rst:188
+#: ../Doc/c-api/init.rst:188
 msgid ""
 "Don't add the :data:`user site-packages directory <site.USER_SITE>` to :data:"
 "`sys.path`."
 msgstr ""
-":data:`ユーザのサイトパッケージのディレクトリ <site.USER_SITE>` を :data:"
-"`sys.path` に追加しません。"
+"No agregue el :data:`directorio de paquetes de sitio del usuario <site."
+"USER_SITE>` (*site-packages*) a :data:`sys.path`."
 
-#: ../../c-api/init.rst:191
+#: ../Doc/c-api/init.rst:191
 msgid ""
 "Set by the :option:`-s` and :option:`-I` options, and the :envvar:"
 "`PYTHONNOUSERSITE` environment variable."
 msgstr ""
-":option:`-s` オプション、 :option:`-I` 、 :envvar:`PYTHONNOUSERSITE` 環境変数"
-"で設定します。"
+"Establecido por las opciones :option:`-s` y :option:`-I`, y la variable de "
+"entorno :envvar:`PYTHONNOUSERSITE`."
 
-#: ../../c-api/init.rst:196
+#: ../Doc/c-api/init.rst:196
 msgid ""
 "Set by the :option:`-O` option and the :envvar:`PYTHONOPTIMIZE` environment "
 "variable."
 msgstr ""
-":option:`-O` オプションと :envvar:`PYTHONOPTIMIZE` 環境変数で設定します。"
+"Establecido por la opción :option:`-O` y la variable de entorno :envvar:"
+"`PYTHONOPTIMIZE`."
 
-#: ../../c-api/init.rst:201
+#: ../Doc/c-api/init.rst:201
 msgid ""
 "Don't display the copyright and version messages even in interactive mode."
 msgstr ""
-"インタラクティブモードでも copyright とバージョンのメッセージを表示しません。"
+"No muestre los mensajes de *copyright* y de versión incluso en modo "
+"interactivo."
 
-#: ../../c-api/init.rst:203
+#: ../Doc/c-api/init.rst:203
 msgid "Set by the :option:`-q` option."
-msgstr ":option:`-q` オプションで設定します。"
+msgstr "Establecido por la opción :option:`-q`."
 
-#: ../../c-api/init.rst:209
+#: ../Doc/c-api/init.rst:209
 msgid "Force the stdout and stderr streams to be unbuffered."
-msgstr "標準出力と標準エラーをバッファリングしないように強制します。"
+msgstr "Obliga a las secuencias *stdout* y *stderr* a que no tengan búfer."
 
-#: ../../c-api/init.rst:211
+#: ../Doc/c-api/init.rst:211
 msgid ""
 "Set by the :option:`-u` option and the :envvar:`PYTHONUNBUFFERED` "
 "environment variable."
 msgstr ""
-":option:`-u` オプションと :envvar:`PYTHONUNBUFFERED` 環境変数で設定します。"
+"Establecido por la opción :option:`-u` y la variable de entorno :envvar:"
+"`PYTHONUNBUFFERED`."
 
-#: ../../c-api/init.rst:216
+#: ../Doc/c-api/init.rst:216
 msgid ""
 "Print a message each time a module is initialized, showing the place "
 "(filename or built-in module) from which it is loaded.  If greater or equal "
 "to ``2``, print a message for each file that is checked for when searching "
 "for a module. Also provides information on module cleanup at exit."
 msgstr ""
-"モジュールが初期化されるたびにメッセージを出力し、それがどこ (ファイル名やビ"
-"ルトインモジュール) からロードされたのかを表示します。\n"
-"値が 2 以上の場合は、モジュールを検索するときにチェックしたファイルごとにメッ"
-"セージを出力します。また、終了時のモジュールクリーンアップに関する情報も提供"
-"します。"
+"Imprime un mensaje cada vez que se inicializa un módulo, mostrando el lugar "
+"(nombre de archivo o módulo incorporado) desde el que se carga. Si es mayor "
+"o igual a ``2``, imprime un mensaje para cada archivo que se verifica al "
+"buscar un módulo. También proporciona información sobre la limpieza del "
+"módulo a la salida."
 
-#: ../../c-api/init.rst:221
+#: ../Doc/c-api/init.rst:221
 msgid ""
 "Set by the :option:`-v` option and the :envvar:`PYTHONVERBOSE` environment "
 "variable."
 msgstr ""
-":option:`-v` オプションと :envvar:`PYTHONVERBOSE` 環境変数で設定します。"
+"Establecido por la opción :option:`-v` y la variable de entorno :envvar:"
+"`PYTHONVERBOSE`."
 
-#: ../../c-api/init.rst:226
+#: ../Doc/c-api/init.rst:226
 msgid "Initializing and finalizing the interpreter"
-msgstr "インタープリタの初期化と終了処理"
+msgstr "Inicializando y finalizando el intérprete"
 
-#: ../../c-api/init.rst:244
+#: ../Doc/c-api/init.rst:244
 msgid ""
 "Initialize the Python interpreter.  In an application embedding  Python, "
 "this should be called before using any other Python/C API functions; see :"
 "ref:`Before Python Initialization <pre-init-safe>` for the few exceptions."
 msgstr ""
-"Python インタープリタを初期化します。\n"
-"Python の埋め込みを行うアプリケーションでは、他のあらゆる Python/C API を使用"
-"するよりも前にこの関数を呼び出さなければなりません。いくつかの例外について"
-"は :ref:`Python 初期化以前 <pre-init-safe>` を参照してください。"
+"Inicializa el intérprete de Python. En una aplicación que incorpora Python, "
+"se debe llamar antes de usar cualquier otra función de API Python/C; vea :"
+"ref:`Antes de la inicialización de Python <pre-init-safe>` para ver algunas "
+"excepciones."
 
-#: ../../c-api/init.rst:248
+#: ../Doc/c-api/init.rst:248
 msgid ""
 "This initializes the table of loaded modules (``sys.modules``), and creates "
 "the fundamental modules :mod:`builtins`, :mod:`__main__` and :mod:`sys`.  It "
@@ -479,44 +497,44 @@ msgid ""
 "called for a second time (without calling :c:func:`Py_FinalizeEx` first).  "
 "There is no return value; it is a fatal error if the initialization fails."
 msgstr ""
-"この関数はロード済みモジュールのテーブル (``sys.modules``) を初期化し、基盤と"
-"なるモジュール群、 :mod:`builtins`, :mod:`__main__`, :mod:`sys` を生成しま"
-"す。また、モジュール検索パス (``sys.path``) も初期化します。 ``sys.argv`` の"
-"設定は行いません。設定するには、 :c:func:`PySys_SetArgvEx` を使ってください。"
-"この関数を (:c:func:`Py_FinalizeEx` を呼ばずに) 再度呼び出しても何も行いませ"
-"ん。戻り値はありません。初期化が失敗すれば、それは致命的なエラーです。"
+"Esto inicializa la tabla de módulos cargados (``sys.modules``) y crea los "
+"módulos fundamentales :mod:`builtins`, :mod:`__main__` y :mod:`sys`. También "
+"inicializa la ruta de búsqueda del módulo (``sys.path``). No establece ``sys."
+"argv``; use :c:func:`PySys_SetArgvEx` para eso. Este es un *no-op* cuando se "
+"llama por segunda vez (sin llamar primero a :c:func:`Py_FinalizeEx`). No hay "
+"valor de retorno; es un error fatal si falla la inicialización."
 
-#: ../../c-api/init.rst:257
+#: ../Doc/c-api/init.rst:257
 msgid ""
 "On Windows, changes the console mode from ``O_TEXT`` to ``O_BINARY``, which "
 "will also affect non-Python uses of the console using the C Runtime."
 msgstr ""
-"Windows では ``O_TEXT`` から ``O_BINARY`` へコンソールモードが変更されます"
-"が、これはその C ランタイムを使っているコンソールでの Python 以外の使い勝手に"
-"も影響を及ぼします。"
+"En Windows, cambia el modo de consola de ``O_TEXT`` a ``O_BINARY``, lo que "
+"también afectará los usos de la consola que no sean de Python utilizando C "
+"*Runtime*."
 
-#: ../../c-api/init.rst:263
+#: ../Doc/c-api/init.rst:263
 msgid ""
 "This function works like :c:func:`Py_Initialize` if *initsigs* is ``1``. If "
 "*initsigs* is ``0``, it skips initialization registration of signal "
 "handlers, which might be useful when Python is embedded."
 msgstr ""
-"*initsigs* に ``1`` を指定した場合、この関数は :c:func:`Py_Initialize` と同じ"
-"ように動作します。\n"
-"*initsigs* に ``0`` を指定した場合、初期化時のシグナルハンドラの登録をスキッ"
-"プすることができ、これは Python の埋め込みで便利でしょう。"
+"Esta función funciona como :c:func:`Py_Initialize` si *initsigs* es ``1``. "
+"Si *initsigs* es ``0``, omite el registro de inicialización de los "
+"manejadores de señal, lo que podría ser útil cuando Python está incrustado."
 
-#: ../../c-api/init.rst:270
+#: ../Doc/c-api/init.rst:270
 msgid ""
 "Return true (nonzero) when the Python interpreter has been initialized, "
 "false (zero) if not.  After :c:func:`Py_FinalizeEx` is called, this returns "
 "false until :c:func:`Py_Initialize` is called again."
 msgstr ""
-"Python インタプリタが初期化済みであれば真(非ゼロ)を、さもなければ偽(ゼロ)を返"
-"します。:c:func:`Py_FinalizeEx` を呼び出した後は、:c:func:`Py_Initialize` を"
-"再び呼び出すまで、この関数は偽を返します。"
+"Retorna verdadero (distinto de cero) cuando el intérprete de Python se ha "
+"inicializado, falso (cero) si no. Después de que se llama a :c:func:"
+"`Py_FinalizeEx`, esto retorna falso hasta que :c:func:`Py_Initialize` se "
+"llama de nuevo."
 
-#: ../../c-api/init.rst:277
+#: ../Doc/c-api/init.rst:277
 msgid ""
 "Undo all initializations made by :c:func:`Py_Initialize` and subsequent use "
 "of Python/C API functions, and destroy all sub-interpreters (see :c:func:"
@@ -527,18 +545,17 @@ msgid ""
 "the return value is ``0``.  If there were errors during finalization "
 "(flushing buffered data), ``-1`` is returned."
 msgstr ""
-":c:func:`Py_Initialize` とそれ以後の Python/C API 関数で行った全ての初期化処"
-"理を取り消し、最後の :c:func:`Py_Initialize`  呼び出し以後に Python インタプ"
-"リタが生成した全てのサブインタプリタ  (sub-interpreter, 下記の :c:func:"
-"`Py_NewInterpreter` を参照) を消去します。\n"
-"理想的な状況では、この関数によって Python インタプリタが確保したメモリは全て"
-"解放されます。\n"
-"この関数を (:c:func:`Py_Initialize` を呼ばずに) 再度呼び出しても何も行いませ"
-"ん。\n"
-"通常は返り値は ``0`` です。終了処理中 (バッファリングされたデータの書き出し) "
-"のエラーがあった場合は ``-1`` が返されます。"
+"Deshace todas las inicializaciones realizadas por :c:func:`Py_Initialize` y "
+"el uso posterior de las funciones de Python/C API, y destruye todos los sub-"
+"intérpretes (ver :c:func:`Py_NewInterpreter` a continuación) que se crearon "
+"y aún no se destruyeron desde el última llamada a :c:func:`Py_Initialize`. "
+"Idealmente, esto libera toda la memoria asignada por el intérprete de "
+"Python. Este es un *no-op* cuando se llama por segunda vez (sin llamar a :c:"
+"func:`Py_Initialize` nuevamente primero). Normalmente el valor de retorno es "
+"``0``. Si hubo errores durante la finalización (lavado de datos almacenados "
+"en el búfer), se retorna ``-1``."
 
-#: ../../c-api/init.rst:286
+#: ../Doc/c-api/init.rst:286
 msgid ""
 "This function is provided for a number of reasons.  An embedding application "
 "might want to restart Python without having to restart the application "
@@ -548,15 +565,16 @@ msgid ""
 "in an application a developer might want to free all memory allocated by "
 "Python before exiting from the application."
 msgstr ""
-"この関数が提供されている理由はいくつかあります。Python の埋め込みを行っている"
-"アプリケーションでは、アプリケーションを再起動することなく Python を再起動し"
-"たいことがあります。また、動的ロード可能イブラリ (あるいは DLL) から Python "
-"インタプリタをロードするアプリケーションでは、DLL をアンロードする前に "
-"Python が確保したメモリを全て解放したいと考えるかもしれません。アプリケーショ"
-"ン内で起きているメモリリークを追跡する際に、開発者は Python が確保したメモリ"
-"をアプリケーションの終了前に解放させたいと思う場合もあります。"
+"Esta función se proporciona por varias razones. Una aplicación de "
+"incrustación puede querer reiniciar Python sin tener que reiniciar la "
+"aplicación misma. Una aplicación que ha cargado el intérprete de Python "
+"desde una biblioteca cargable dinámicamente (o DLL) puede querer liberar "
+"toda la memoria asignada por Python antes de descargar la DLL. Durante una "
+"búsqueda de pérdidas de memoria en una aplicación, un desarrollador puede "
+"querer liberar toda la memoria asignada por Python antes de salir de la "
+"aplicación."
 
-#: ../../c-api/init.rst:294
+#: ../Doc/c-api/init.rst:294
 msgid ""
 "**Bugs and caveats:** The destruction of modules and objects in modules is "
 "done in random order; this may cause destructors (:meth:`__del__` methods) "
@@ -570,102 +588,113 @@ msgid ""
 "application calls :c:func:`Py_Initialize` and :c:func:`Py_FinalizeEx` more "
 "than once."
 msgstr ""
-"**バグおよび注意事項:** モジュールやモジュール内のオブジェクトはランダムな順"
-"番で削除されます。このため、他のオブジェクト(関数オブジェクトも含みます) やモ"
-"ジュールに依存するデストラクタ  (:meth:`__del__` メソッド) が失敗してしまうこ"
-"とがあります。動的にロードされるようになっている拡張モジュールが Python に"
-"よってロードされていた場合、アンロードされません。 Python が確保したメモリが"
-"わずかながら解放されないかもしれません (メモリリークを発見したら、どうか報告"
-"してください)。オブジェクト間の循環参照に捕捉されているメモリは解放されないこ"
-"とがあります。拡張モジュールが確保したメモリは解放されないことがあります。拡"
-"張モジュールによっては、初期化ルーチンを 2 度以上呼び出すと正しく動作しないこ"
-"とがあります。こうした状況は、 :c:func:`Py_Initialize`  や :c:func:"
-"`Py_FinalizeEx` を 2 度以上呼び出すと起こり得ます。"
+"**Errores y advertencias:** La destrucción de módulos y objetos en módulos "
+"se realiza en orden aleatorio; esto puede causar que los destructores "
+"(métodos :meth:`__del__`) fallen cuando dependen de otros objetos (incluso "
+"funciones) o módulos. Los módulos de extensión cargados dinámicamente "
+"cargados por Python no se descargan. Es posible que no se liberen pequeñas "
+"cantidades de memoria asignadas por el intérprete de Python (si encuentra "
+"una fuga, informe por favor). La memoria atada en referencias circulares "
+"entre objetos no se libera. Es posible que parte de la memoria asignada por "
+"los módulos de extensión no se libere. Algunas extensiones pueden no "
+"funcionar correctamente si su rutina de inicialización se llama más de una "
+"vez; Esto puede suceder si una aplicación llama a :c:func:`Py_Initialize` y :"
+"c:func:`Py_FinalizeEx` más de una vez."
 
-#: ../../c-api/init.rst:305
+#: ../Doc/c-api/init.rst:305
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``cpython."
 "_PySys_ClearAuditHooks`` with no arguments."
 msgstr ""
+"Genera un :ref:`evento de auditoría <auditing>` ``cpython."
+"_PySys_ClearAuditHooks`` sin argumentos."
 
-#: ../../c-api/init.rst:311
+#: ../Doc/c-api/init.rst:311
 msgid ""
 "This is a backwards-compatible version of :c:func:`Py_FinalizeEx` that "
 "disregards the return value."
 msgstr ""
-"この関数は :c:func:`Py_FinalizeEx` の後方互換性バージョンで、戻り値がありませ"
-"ん。"
+"Esta es una versión compatible con versiones anteriores de :c:func:"
+"`Py_FinalizeEx` que ignora el valor de retorno."
 
-#: ../../c-api/init.rst:316
+#: ../Doc/c-api/init.rst:316
 msgid "Process-wide parameters"
-msgstr "プロセスワイドのパラメータ"
+msgstr "Parámetros de todo el proceso"
 
-#: ../../c-api/init.rst:326
+#: ../Doc/c-api/init.rst:326
 msgid ""
 "This API is kept for backward compatibility: setting :c:member:`PyConfig."
 "stdio_encoding` and :c:member:`PyConfig.stdio_errors` should be used "
 "instead, see :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
+"Esta API se mantiene para la compatibilidad con versiones anteriores: en su "
+"lugar, se debe usar la configuración de :c:member:`PyConfig.stdio_encoding` "
+"y :c:member:`PyConfig.stdio_errors`, consulta :ref:`Configuración de "
+"inicialización de Python <init-config>`."
 
-#: ../../c-api/init.rst:331
+#: ../Doc/c-api/init.rst:331
 msgid ""
 "This function should be called before :c:func:`Py_Initialize`, if it is "
 "called at all. It specifies which encoding and error handling to use with "
 "standard IO, with the same meanings as in :func:`str.encode`."
 msgstr ""
-"もし :c:func:`Py_Initialize` が呼ばれるなら、この関数はその前に呼ばなければな"
-"りません。標準の IO において、どのエンコーディングおよびどんなエラー処理を使"
-"うかを、 :func:`str.encode` と同様の意味で指定します。"
+"Esta función debería llamarse antes de :c:func:`Py_Initialize`, si es que se "
+"llama. Especifica qué codificación y manejo de errores usar con IO estándar, "
+"con los mismos significados que en :func:`str.encode`."
 
-#: ../../c-api/init.rst:335
+#: ../Doc/c-api/init.rst:335
 msgid ""
 "It overrides :envvar:`PYTHONIOENCODING` values, and allows embedding code to "
 "control IO encoding when the environment variable does not work."
 msgstr ""
-"これは、環境変数が働かない時に :envvar:`PYTHONIOENCODING` の値を上書きし、埋"
-"め込みコードが IO エンコーディングをコントロールできるようにします。"
+"Reemplaza los valores :envvar:`PYTHONIOENCODING`, y permite incrustar código "
+"para controlar la codificación IO cuando la variable de entorno no funciona."
 
-#: ../../c-api/init.rst:338
+#: ../Doc/c-api/init.rst:338
 msgid ""
 "*encoding* and/or *errors* may be ``NULL`` to use :envvar:`PYTHONIOENCODING` "
 "and/or default values (depending on other settings)."
 msgstr ""
-"*encoding* と *errors* のどちらかまたは両方を ``NULL`` にすることで、 :"
-"envvar:`PYTHONIOENCODING` とデフォルト値のどちらかまたは両方を使うことができ"
-"ます (他の設定に依存します)。"
+"*codificación* o *errores* pueden ser ``NULL`` para usar :envvar:"
+"`PYTHONIOENCODING` o valores predeterminados (dependiendo de otras "
+"configuraciones)."
 
-#: ../../c-api/init.rst:342
+#: ../Doc/c-api/init.rst:342
 msgid ""
 "Note that :data:`sys.stderr` always uses the \"backslashreplace\" error "
 "handler, regardless of this (or any other) setting."
 msgstr ""
-"この設定 (あるいは他の設定) に関わらず、 :data:`sys.stderr` は常に "
-"\"backslashreplace\" エラーハンドラを使うことに注意してください。"
+"Tenga en cuenta que :data:`sys.stderr` siempre usa el controlador de error "
+"\"*backslashreplace*\", independientemente de esta configuración (o "
+"cualquier otra)."
 
-#: ../../c-api/init.rst:345
+#: ../Doc/c-api/init.rst:345
 msgid ""
 "If :c:func:`Py_FinalizeEx` is called, this function will need to be called "
 "again in order to affect subsequent calls to :c:func:`Py_Initialize`."
 msgstr ""
-":c:func:`Py_FinalizeEx` を呼び出した場合は、:c:func:`Py_Initialize` を呼び出"
-"す前に、この関数を再度呼び出す必要があるでしょう。"
+"Si se llama a :c:func:`Py_FinalizeEx`, será necesario volver a llamar a esta "
+"función para afectar las llamadas posteriores a :c:func:`Py_Initialize`."
 
-#: ../../c-api/init.rst:348
+#: ../Doc/c-api/init.rst:348
 msgid ""
 "Returns ``0`` if successful, a nonzero value on error (e.g. calling after "
 "the interpreter has already been initialized)."
 msgstr ""
-"成功したら ``0`` を、エラーの場合は ``0`` でない値を返します (例えば、インタ"
-"プリタが初期化された後に、この関数が呼び出された場合)。"
+"Retorna ``0`` si tiene éxito, un valor distinto de cero en caso de error "
+"(por ejemplo, llamar después de que el intérprete ya se haya inicializado)"
 
-#: ../../c-api/init.rst:363
+#: ../Doc/c-api/init.rst:363
 msgid ""
 "This API is kept for backward compatibility: setting :c:member:`PyConfig."
 "program_name` should be used instead, see :ref:`Python Initialization "
 "Configuration <init-config>`."
 msgstr ""
+"Esta API se mantiene para la compatibilidad con versiones anteriores: en su "
+"lugar, se debe usar la configuración de :c:member:`PyConfig.program_name`, "
+"consulta :ref:`Configuración de inicialización de Python <init-config>`."
 
-#: ../../c-api/init.rst:367
+#: ../Doc/c-api/init.rst:367
 msgid ""
 "This function should be called before :c:func:`Py_Initialize` is called for "
 "the first time, if it is called at all.  It tells the interpreter the value "
@@ -678,46 +707,56 @@ msgid ""
 "execution.  No code in the Python interpreter will change the contents of "
 "this storage."
 msgstr ""
-"この関数を呼び出すなら、最初に :c:func:`Py_Initialize` を呼び出すよりも前に呼"
-"び出さなければなりません。この関数はインタプリタにプログラムの :c:func:"
-"`main` 関数に指定した ``argv[0]`` 引数の値を教えます (ワイドキャラクタに変換"
-"されます)。この引数値は、 :c:func:`Py_GetPath` や、以下に示すその他の関数が、"
-"インタプリタの実行可能形式から Python ランタイムライブラリへの相対パスを取得"
-"するために使われます。デフォルトの値は ``'python'`` です。引数はゼロ終端され"
-"たワイドキャラクタ文字列で、静的な記憶領域に入っていなければならず、その内容"
-"はプログラムの実行中に変更してはなりません。 Python インタプリタ内のコード"
-"で、この記憶領域の内容を変更するものは一切ありません。"
+"Esta función debería llamarse antes :c:func:`Py_Initialize` se llama por "
+"primera vez, si es que se llama. Le dice al intérprete el valor del "
+"argumento ``argv[0]`` para la función :c:func:`main` del programa "
+"(convertido a caracteres anchos). Esto es utilizado por :c:func:`Py_GetPath` "
+"y algunas otras funciones a continuación para encontrar las bibliotecas de "
+"tiempo de ejecución de Python relativas al ejecutable del intérprete. El "
+"valor predeterminado es ``'python'``. El argumento debe apuntar a una cadena "
+"de caracteres anchos terminada en cero en almacenamiento estático cuyo "
+"contenido no cambiará mientras dure la ejecución del programa. Ningún código "
+"en el intérprete de Python cambiará el contenido de este almacenamiento."
 
-#: ../../c-api/init.rst:378 ../../c-api/init.rst:529 ../../c-api/init.rst:644
-#: ../../c-api/init.rst:680 ../../c-api/init.rst:706
+#: ../Doc/c-api/init.rst:378 ../Doc/c-api/init.rst:529
+#: ../Doc/c-api/init.rst:644 ../Doc/c-api/init.rst:680
+#: ../Doc/c-api/init.rst:706
 msgid ""
 "Use :c:func:`Py_DecodeLocale` to decode a bytes string to get a :c:expr:"
 "`wchar_*` string."
 msgstr ""
+"Utilice :c:func:`Py_DecodeLocale` para decodificar una cadena de bytes para "
+"obtener una cadena de tipo :c:expr:`wchar_*`."
 
-#: ../../c-api/init.rst:388
+#: ../Doc/c-api/init.rst:388
 msgid ""
 "Return the program name set with :c:func:`Py_SetProgramName`, or the "
 "default. The returned string points into static storage; the caller should "
 "not modify its value."
 msgstr ""
-":c:func:`Py_SetProgramName` で設定されたプログラム名か、デフォルトのプログラ"
-"ム名を返します。関数が返す文字列ポインタは静的な記憶領域を返します。関数の呼"
-"び出し側はこの値を変更できません。"
+"Retorna el nombre del programa establecido con :c:func:`Py_SetProgramName`, "
+"o el valor predeterminado. La cadena de caracteres retornada apunta al "
+"almacenamiento estático; la persona que llama no debe modificar su valor."
 
-#: ../../c-api/init.rst:392 ../../c-api/init.rst:411 ../../c-api/init.rst:452
-#: ../../c-api/init.rst:471 ../../c-api/init.rst:495 ../../c-api/init.rst:718
+#: ../Doc/c-api/init.rst:392 ../Doc/c-api/init.rst:411
+#: ../Doc/c-api/init.rst:452 ../Doc/c-api/init.rst:471
+#: ../Doc/c-api/init.rst:495 ../Doc/c-api/init.rst:718
 msgid ""
 "This function should not be called before :c:func:`Py_Initialize`, otherwise "
 "it returns ``NULL``."
 msgstr ""
+"Esta función ya no se puede llamar antes de :c:func:`Py_Initialize()`, de "
+"otra forma retornará ``NULL``."
 
-#: ../../c-api/init.rst:395 ../../c-api/init.rst:414 ../../c-api/init.rst:455
-#: ../../c-api/init.rst:474 ../../c-api/init.rst:500 ../../c-api/init.rst:721
+#: ../Doc/c-api/init.rst:395 ../Doc/c-api/init.rst:414
+#: ../Doc/c-api/init.rst:455 ../Doc/c-api/init.rst:474
+#: ../Doc/c-api/init.rst:500 ../Doc/c-api/init.rst:721
 msgid "It now returns ``NULL`` if called before :c:func:`Py_Initialize`."
 msgstr ""
+"Todas las siguientes funciones deben llamarse después de :c:func:"
+"`Py_Initialize`, de lo contrario retornará ``NULL``."
 
-#: ../../c-api/init.rst:401
+#: ../Doc/c-api/init.rst:401
 msgid ""
 "Return the *prefix* for installed platform-independent files. This is "
 "derived through a number of complicated rules from the program name set "
@@ -730,18 +769,19 @@ msgid ""
 "Python code as ``sys.prefix``. It is only useful on Unix.  See also the next "
 "function."
 msgstr ""
-"プラットフォーム非依存のファイル群がインストールされている場所である "
-"*prefix* を返します。この値は :c:func:`Py_SetProgramName` でセットされたプロ"
-"グラム名やいくつかの環境変数をもとに、数々の複雑な規則から導出されます。例え"
-"ば、プログラム名が ``'/usr/local/bin/python'`` の場合、prefix は ``'/usr/"
-"local'`` になります。関数が返す文字列ポインタは静的な記憶領域を返します; 関数"
-"の呼び出し側はこの値を変更できません。この値はトップレベルの :file:"
-"`Makefile` に指定されている変数 :makevar:`prefix` や、ビルド値に :program:"
-"`configure` スクリプトに指定した ``--prefix`` 引数に対応しています。この値は "
-"Python コードからは ``sys.prefix`` として利用できます。これはUnixでのみ有用で"
-"す。次に説明する関数も参照してください。"
+"Retorna el prefijo *prefix* para los archivos instalados independientes de "
+"la plataforma. Esto se deriva a través de una serie de reglas complicadas "
+"del nombre del programa establecido con :c:func:`Py_SetProgramName` y "
+"algunas variables de entorno; por ejemplo, si el nombre del programa es ``'/"
+"usr/local/bin/python'``, el prefijo es ``'/usr/local'``. La cadena de "
+"caracteres retornada apunta al almacenamiento estático; la persona que llama "
+"no debe modificar su valor. Esto corresponde a la variable :makevar:`prefix` "
+"en el archivo de nivel superior :file:`Makefile` y el argumento ``--prefix`` "
+"a la secuencia de comandos (*script*) :program:`configure` en tiempo de "
+"compilación. El valor está disponible para el código de Python como ``sys."
+"prefix``. Solo es útil en Unix. Ver también la siguiente función."
 
-#: ../../c-api/init.rst:420
+#: ../Doc/c-api/init.rst:420
 msgid ""
 "Return the *exec-prefix* for installed platform-*dependent* files.  This is "
 "derived through a number of complicated rules from the program name set "
@@ -754,18 +794,19 @@ msgid ""
 "value is available to Python code as ``sys.exec_prefix``.  It is only useful "
 "on Unix."
 msgstr ""
-"プラットフォーム *依存* のファイルがインストールされている場所である *exec-"
-"prefix* を返します。この値は :c:func:`Py_SetProgramName` でセットされたプログ"
-"ラム名やいくつかの環境変数をもとに、数々の複雑な規則から導出されます。例え"
-"ば、プログラム名が ``'/usr/local/bin/python'`` の場合、exec-prefix は ``'/"
-"usr/local'`` になります。関数が返す文字列ポインタは静的な記憶領域を返します; "
-"関数の呼び出し側はこの値を変更できません。この値はトップレベルの :file:"
-"`Makefile` に指定されている変数 :makevar:`exec_prefix` や、ビルド値に :"
-"program:`configure` スクリプトに指定した ``--exec-prefix`` 引数に対応していま"
-"す。この値は Python コードからは ``sys.exec_prefix`` として利用できます。 "
-"Unixのみで有用です。"
+"Retorna el *exec-prefix* para los archivos instalados *dependientes* de la "
+"plataforma. Esto se deriva a través de una serie de reglas complicadas del "
+"nombre del programa establecido con :c:func:`Py_SetProgramName` y algunas "
+"variables de entorno; por ejemplo, si el nombre del programa es ``'/usr/"
+"local/bin/python'``, el prefijo `exec` es ``'/usr/local'``. La cadena de "
+"caracteres retornada apunta al almacenamiento estático; la persona que llama "
+"no debe modificar su valor. Esto corresponde a la variable :makevar:"
+"`exec_prefix` en el archivo de nivel superior :file:`Makefile` y el "
+"argumento ``--exec-prefix`` a la secuencia de comandos (*script*) :program:"
+"`configure` en tiempo de compilación. El valor está disponible para el "
+"código de Python como ``sys.exec_prefix``. Solo es útil en Unix."
 
-#: ../../c-api/init.rst:430
+#: ../Doc/c-api/init.rst:430
 msgid ""
 "Background: The exec-prefix differs from the prefix when platform dependent "
 "files (such as executables and shared libraries) are installed in a "
@@ -773,13 +814,14 @@ msgid ""
 "files may be installed in the :file:`/usr/local/plat` subtree while platform "
 "independent may be installed in :file:`/usr/local`."
 msgstr ""
-"背景: プラットフォーム依存のファイル (実行形式や共有ライブラリ) が別のディレ"
-"クトリツリー内にインストールされている場合、 exec-prefix は prefix と異なりま"
-"す。典型的なインストール形態では、プラットフォーム非依存のファイルが :file:`/"
-"usr/local` に収められる一方、プラットフォーム依存のファイルは :file:`/usr/"
-"local/plat` サブツリーに収められます。"
+"Antecedentes: el prefijo *exec* difiere del prefijo cuando los archivos "
+"dependientes de la plataforma (como ejecutables y bibliotecas compartidas) "
+"se instalan en un árbol de directorios diferente. En una instalación típica, "
+"los archivos dependientes de la plataforma pueden instalarse en el subárbol :"
+"file:`/usr/local/plat` mientras que la plataforma independiente puede "
+"instalarse en :file:`/usr/local`."
 
-#: ../../c-api/init.rst:436
+#: ../Doc/c-api/init.rst:436
 msgid ""
 "Generally speaking, a platform is a combination of hardware and software "
 "families, e.g.  Sparc machines running the Solaris 2.x operating system are "
@@ -792,31 +834,32 @@ msgid ""
 "Note that compiled Python bytecode files are platform independent (but not "
 "independent from the Python version by which they were compiled!)."
 msgstr ""
-"一般的に、プラットフォームとは、ハードウェアとソフトウェアファミリの組み合わ"
-"せを指します。例えば、Solaris 2.x を動作させている Sparc マシンは全て同じプ"
-"ラットフォームであるとみなしますが、Solaris 2.x を動作させている Intel マシン"
-"は違うプラットフォームになりますし、同じ Intel マシンでも Linux を動作させて"
-"いるならまた別のプラットフォームです。一般的には、同じオペレーティングシステ"
-"ムでも、メジャーリビジョンの違うものは異なるプラットフォームです。非 Unix の"
-"オペレーティングシステムの場合は話はまた別です; 非 Unix のシステムでは、イン"
-"ストール方法はとても異なっていて、prefix や exec-prefix には意味がなく、空文"
-"字列が設定されています。コンパイル済みの Python バイトコードはプラットフォー"
-"ムに依存しないので注意してください (ただし、どのバージョンの Python でコンパ"
-"イルされたかには依存します!)。"
+"En términos generales, una plataforma es una combinación de familias de "
+"hardware y software, por ejemplo, las máquinas Sparc que ejecutan el sistema "
+"operativo Solaris 2.x se consideran la misma plataforma, pero las máquinas "
+"Intel que ejecutan Solaris 2.x son otra plataforma, y las máquinas Intel que "
+"ejecutan Linux son otra plataforma más. Las diferentes revisiones "
+"importantes del mismo sistema operativo generalmente también forman "
+"plataformas diferentes. Los sistemas operativos que no son Unix son una "
+"historia diferente; Las estrategias de instalación en esos sistemas son tan "
+"diferentes que el prefijo y el prefijo ``exec`` no tienen sentido y se "
+"configuran en la cadena vacía. Tenga en cuenta que los archivos de bytecode "
+"compilados de Python son independientes de la plataforma (¡pero no "
+"independientes de la versión de Python con la que fueron compilados!)."
 
-#: ../../c-api/init.rst:447
+#: ../Doc/c-api/init.rst:447
 msgid ""
 "System administrators will know how to configure the :program:`mount` or :"
 "program:`automount` programs to share :file:`/usr/local` between platforms "
 "while having :file:`/usr/local/plat` be a different filesystem for each "
 "platform."
 msgstr ""
-"システム管理者は、 :program:`mount` や :program:`automount` プログラムを使っ"
-"て、各プラットフォーム用の :file:`/usr/local/plat` を異なったファイルシステム"
-"に置き、プラットフォーム間で :file:`/usr/local` を共有するための設定方法を"
-"知っているでしょう。"
+"Los administradores de sistemas sabrán cómo configurar los programas :"
+"program:`mount` o :program:`automount` para compartir :file:`/usr/local` "
+"entre plataformas mientras que :file:`/usr/local/plat` sea un sistema de "
+"archivos diferente para cada plataforma."
 
-#: ../../c-api/init.rst:465
+#: ../Doc/c-api/init.rst:465
 msgid ""
 "Return the full program name of the Python executable; this is  computed as "
 "a side-effect of deriving the default module search path  from the program "
@@ -824,13 +867,14 @@ msgid ""
 "into static storage; the caller should not modify its value.  The value is "
 "available to Python code as ``sys.executable``."
 msgstr ""
-"Python 実行可能形式の完全なプログラム名を返します; この値はデフォルトのモ"
-"ジュール検索パスを (前述の :c:func:`Py_SetProgramName`  で設定された) プログ"
-"ラム名から導出する際に副作用的に計算されます。関数が返す文字列ポインタは静的"
-"な記憶領域を返します; 関数の呼び出し側はこの値を変更できません。この値は "
-"Python コードからは ``sys.executable`` として利用できます。"
+"Retorna el nombre completo del programa del ejecutable de Python; esto se "
+"calcula como un efecto secundario de derivar la ruta de búsqueda "
+"predeterminada del módulo del nombre del programa (establecido por :c:func:"
+"`Py_SetProgramName` arriba). La cadena de caracteres retornada apunta al "
+"almacenamiento estático; la persona que llama no debe modificar su valor. El "
+"valor está disponible para el código de Python como ``sys.executable``."
 
-#: ../../c-api/init.rst:485
+#: ../Doc/c-api/init.rst:485
 msgid ""
 "Return the default module search path; this is computed from the program "
 "name (set by :c:func:`Py_SetProgramName` above) and some environment "
@@ -842,16 +886,32 @@ msgid ""
 "startup; it can be (and usually is) modified later to change the search path "
 "for loading modules."
 msgstr ""
+"Retorna la ruta de búsqueda del módulo predeterminado; esto se calcula a "
+"partir del nombre del programa (establecido por :c:func:`Py_SetProgramName` "
+"antes mencionado) y algunas variables de entorno. La cadena de caracteres "
+"retornada consiste en una serie de nombres de directorio separados por un "
+"carácter delimitador dependiente de la plataforma. El carácter delimitador "
+"es ``':'`` en Unix y macOS, ``';'`` en Windows. La cadena de caracteres "
+"retornada apunta al almacenamiento estático; la persona que llama no debe "
+"modificar su valor. La lista :data:`sys.path` se inicializa con este valor "
+"en el inicio del intérprete; se puede (y generalmente se realiza) modificar "
+"más adelante para cambiar la ruta de búsqueda para cargar módulos."
 
-#: ../../c-api/init.rst:511
+#: ../Doc/c-api/init.rst:511
 msgid ""
 "This API is kept for backward compatibility: setting :c:member:`PyConfig."
 "module_search_paths` and :c:member:`PyConfig.module_search_paths_set` should "
 "be used instead, see :ref:`Python Initialization Configuration <init-"
 "config>`."
 msgstr ""
+"Esta API se mantiene para la compatibilidad con versiones anteriores: en su "
+"lugar, se debe usar la configuración de :c:member:`PyConfig."
+"module_search_paths` y :c:member:`PyConfig.module_search_paths_set`, "
+"consulta :ref:`Configuración de inicialización de Python <init-config>`."
 
-#: ../../c-api/init.rst:516
+# Actualmente se está usando el sistema operativo macOS, mientras que Mac OS X
+# es un versión más antigua de la misma.
+#: ../Doc/c-api/init.rst:516
 msgid ""
 "Set the default module search path.  If this function is called before :c:"
 "func:`Py_Initialize`, then :c:func:`Py_GetPath` won't attempt to compute a "
@@ -861,40 +921,53 @@ msgid ""
 "dependent delimiter character, which is ``':'`` on Unix and macOS, ``';'`` "
 "on Windows."
 msgstr ""
+"Establece la ruta de búsqueda del módulo predeterminado. Si se llama a esta "
+"función antes de :c:func:`Py_Initialize`, entonces :c:func:`Py_GetPath` no "
+"intentará computar una ruta de búsqueda predeterminada, sino que utilizará "
+"la proporcionada en su lugar. Esto es útil si Python está incrustado por una "
+"aplicación que tiene pleno conocimiento de la ubicación de todos los "
+"módulos. Los componentes de la ruta deben estar separados por el carácter "
+"delimitador dependiente de la plataforma, el cual es ``':'`` en Unix y "
+"macOS, ``';'`` en Windows."
 
-#: ../../c-api/init.rst:524
+#: ../Doc/c-api/init.rst:524
 msgid ""
 "This also causes :data:`sys.executable` to be set to the program full path "
 "(see :c:func:`Py_GetProgramFullPath`) and for :data:`sys.prefix` and :data:"
 "`sys.exec_prefix` to be empty.  It is up to the caller to modify these if "
 "required after calling :c:func:`Py_Initialize`."
 msgstr ""
+"Esto también hace que :data:`sys.executable` se configure en la ruta "
+"completa del programa (consulte :c:func:`Py_GetProgramFullPath`) y para :"
+"data:`sys.prefix` y :data:`sys.exec_prefix` a estar vacío. Depende de la "
+"persona que llama modificarlos si es necesario después de llamar :c:func:"
+"`Py_Initialize`."
 
-#: ../../c-api/init.rst:532
+#: ../Doc/c-api/init.rst:532
 msgid ""
 "The path argument is copied internally, so the caller may free it after the "
 "call completes."
 msgstr ""
-"パス引数は内部でコピーされます。したがって、呼び出し完了後に呼び出し元は引数"
-"を解放できます。"
+"El argumento de ruta se copia internamente, por lo que la persona que llama "
+"puede liberarlo después de que se complete la llamada."
 
-#: ../../c-api/init.rst:535
+#: ../Doc/c-api/init.rst:535
 msgid ""
 "The program full path is now used for :data:`sys.executable`, instead of the "
 "program name."
 msgstr ""
-"プログラムの名前に代わって、プログラムのフルパスが:data:`sys.executable` に使"
-"われるようになりました。"
+"La ruta completa del programa ahora se usa para :data:`sys.executable`, en "
+"lugar del nombre del programa."
 
-#: ../../c-api/init.rst:544
+#: ../Doc/c-api/init.rst:544
 msgid ""
 "Return the version of this Python interpreter.  This is a string that looks "
 "something like ::"
 msgstr ""
-"Python インタプリタのバージョンを返します。バージョンは、次のような形式の文字"
-"列です ::"
+"Retorna la versión de este intérprete de Python. Esta es una cadena de "
+"caracteres que se parece a ::"
 
-#: ../../c-api/init.rst:551
+#: ../Doc/c-api/init.rst:551
 msgid ""
 "The first word (up to the first space character) is the current Python "
 "version; the first characters are the major and minor version separated by a "
@@ -902,12 +975,17 @@ msgid ""
 "not modify its value.  The value is available to Python code as :data:`sys."
 "version`."
 msgstr ""
+"La primera palabra (hasta el primer carácter de espacio) es la versión "
+"actual de Python; los primeros tres caracteres son la versión mayor y menor "
+"separados por un punto. La cadena de caracteres retornada apunta al "
+"almacenamiento estático; la persona que llama no debe modificar su valor. El "
+"valor está disponible para el código Python como :data:`sys.version`."
 
-#: ../../c-api/init.rst:556
+#: ../Doc/c-api/init.rst:556
 msgid "See also the :c:var:`Py_Version` constant."
-msgstr ""
+msgstr "Consulta también la constante :c:var:`Py_Version`."
 
-#: ../../c-api/init.rst:563
+#: ../Doc/c-api/init.rst:563
 msgid ""
 "Return the platform identifier for the current platform.  On Unix, this is "
 "formed from the \"official\" name of the operating system, converted to "
@@ -917,62 +995,75 @@ msgid ""
 "into static storage; the caller should not modify its value.  The value is "
 "available to Python code as ``sys.platform``."
 msgstr ""
+"Retorna el identificador de plataforma para la plataforma actual. En Unix, "
+"esto se forma a partir del nombre \"oficial\" del sistema operativo, "
+"convertido a minúsculas, seguido del número de revisión principal; por "
+"ejemplo, para Solaris 2.x, que también se conoce como SunOS 5.x, el valor es "
+"``'sunos5'``. En macOS, es ``'darwin'``. En Windows, es ``'win'``. La cadena "
+"de caracteres retornada apunta al almacenamiento estático; la persona que "
+"llama no debe modificar su valor. El valor está disponible para el código de "
+"Python como ``sys.platform``."
 
-#: ../../c-api/init.rst:574
+#: ../Doc/c-api/init.rst:574
 msgid ""
 "Return the official copyright string for the current Python version, for "
 "example"
 msgstr ""
-"現在の Python バージョンに対する公式の著作権表示文字列を返します。例えば"
+"Retorna la cadena de caracteres de copyright oficial para la versión actual "
+"de Python, por ejemplo"
 
-#: ../../c-api/init.rst:576
+#: ../Doc/c-api/init.rst:576
 msgid "``'Copyright 1991-1995 Stichting Mathematisch Centrum, Amsterdam'``"
 msgstr "``'Copyright 1991-1995 Stichting Mathematisch Centrum, Amsterdam'``"
 
-#: ../../c-api/init.rst:580
+#: ../Doc/c-api/init.rst:580
 msgid ""
 "The returned string points into static storage; the caller should not modify "
 "its value.  The value is available to Python code as ``sys.copyright``."
 msgstr ""
-"関数が返す文字列ポインタは静的な記憶領域を返します; 関数の呼び出し側はこの値"
-"を変更できません。この値は Python コードからは ``sys.copyright`` として利用で"
-"きます。"
+"La cadena de caracteres retornada apunta al almacenamiento estático; la "
+"persona que llama no debe modificar su valor. El valor está disponible para "
+"el código de Python como ``sys.copyright``."
 
-#: ../../c-api/init.rst:586
+#: ../Doc/c-api/init.rst:586
 msgid ""
 "Return an indication of the compiler used to build the current Python "
 "version, in square brackets, for example::"
 msgstr ""
-"現在使っているバージョンの Python をビルドする際に用いたコンパイラを示す文字"
-"列を、角括弧で囲った文字列を返します。例えば::"
+"Retorna una indicación del compilador utilizado para construir la versión "
+"actual de Python, entre corchetes, por ejemplo:"
 
-#: ../../c-api/init.rst:593 ../../c-api/init.rst:607
+#: ../Doc/c-api/init.rst:593 ../Doc/c-api/init.rst:607
 msgid ""
 "The returned string points into static storage; the caller should not modify "
 "its value.  The value is available to Python code as part of the variable "
 "``sys.version``."
 msgstr ""
-"関数が返す文字列ポインタは静的な記憶領域を返します; 関数の呼び出し側はこの値"
-"を変更できません。この値は Python コードからは ``sys.version`` の一部として取"
-"り出せます。"
+"La cadena de caracteres retornada apunta al almacenamiento estático; la "
+"persona que llama no debe modificar su valor. El valor está disponible para "
+"el código Python como parte de la variable ``sys.version``."
 
-#: ../../c-api/init.rst:600
+#: ../Doc/c-api/init.rst:600
 msgid ""
 "Return information about the sequence number and build date and time  of the "
 "current Python interpreter instance, for example ::"
 msgstr ""
-"現在使っている Python インタプリタインスタンスの、シーケンス番号とビルド日時"
-"に関する情報を返します。例えば ::"
+"Retorna información sobre el número de secuencia y la fecha y hora de "
+"compilación de la instancia actual de intérprete de Python, por ejemplo::"
 
-#: ../../c-api/init.rst:619
+#: ../Doc/c-api/init.rst:619
 msgid ""
 "This API is kept for backward compatibility: setting :c:member:`PyConfig."
 "argv`, :c:member:`PyConfig.parse_argv` and :c:member:`PyConfig.safe_path` "
 "should be used instead, see :ref:`Python Initialization Configuration <init-"
 "config>`."
 msgstr ""
+"Esta API se mantiene para la compatibilidad con versiones anteriores: en su "
+"lugar, se debe usar la configuración de :c:member:`PyConfig.argv`, :c:member:"
+"`PyConfig.parse_argv` y :c:member:`PyConfig.safe_path`, consulta :ref:"
+"`Configuración de inicialización de Python <init-config>`."
 
-#: ../../c-api/init.rst:624
+#: ../Doc/c-api/init.rst:624
 msgid ""
 "Set :data:`sys.argv` based on *argc* and *argv*.  These parameters are "
 "similar to those passed to the program's :c:func:`main` function with the "
@@ -982,135 +1073,149 @@ msgid ""
 "empty string.  If this function fails to initialize :data:`sys.argv`, a "
 "fatal condition is signalled using :c:func:`Py_FatalError`."
 msgstr ""
-"*argc* および *argv* に基づいて :data:`sys.argv` を設定します。これらの引数は"
-"プログラムの :c:func:`main` に渡した引数に似ていますが、最初の要素が Python "
-"インタプリタの宿主となっている実行形式の名前ではなく、実行されるスクリプト名"
-"を参照しなければならない点が違います。実行するスクリプトがない場合、 *argv* "
-"の最初の要素は空文字列にしてもかまいません。この関数が :data:`sys.argv` の初"
-"期化に失敗した場合、致命的エラーを :c:func:`Py_FatalError` で知らせます。"
+"Establece :data:`sys.argv` basado en *argc* y *argv*. Estos parámetros son "
+"similares a los pasados a la función del programa :c:func:`main` con la "
+"diferencia de que la primera entrada debe referirse al archivo de la "
+"secuencia de comandos (*script*) que se ejecutará en lugar del ejecutable "
+"que aloja el intérprete de Python. Si no se ejecuta una secuencia de "
+"comandos (*script*), la primera entrada en *argv* puede ser una cadena de "
+"caracteres vacía. Si esta función no puede inicializar :data:`sys.argv`, una "
+"condición fatal se señala usando :c:func:`Py_FatalError`."
 
-#: ../../c-api/init.rst:632
+#: ../Doc/c-api/init.rst:632
 msgid ""
 "If *updatepath* is zero, this is all the function does.  If *updatepath* is "
 "non-zero, the function also modifies :data:`sys.path` according to the "
 "following algorithm:"
 msgstr ""
-"*updatepath* が 0 の場合、ここまでの動作がこの関数がすることの全てです。 "
-"*updatepath* が 0 でない場合、この関数は :data:`sys.path` を以下のアルゴリズ"
-"ムに基づいて修正します:"
+"Si *updatepath* es cero, esto es todo lo que hace la función. Si "
+"*updatepath* no es cero, la función también modifica :data:`sys.path` de "
+"acuerdo con el siguiente algoritmo:"
 
-#: ../../c-api/init.rst:636
+#: ../Doc/c-api/init.rst:636
 msgid ""
 "If the name of an existing script is passed in ``argv[0]``, the absolute "
 "path of the directory where the script is located is prepended to :data:`sys."
 "path`."
 msgstr ""
-"存在するスクリプトの名前が ``argv[0]`` に渡された場合、そのスクリプトがある場"
-"所の絶対パスを :data:`sys.path` の先頭に追加します。"
+"Si el nombre de una secuencia de comandos (*script*) existente se pasa en "
+"``argv[0]``, la ruta absoluta del directorio donde se encuentra el *script* "
+"se antepone a :data:`sys.path`."
 
-#: ../../c-api/init.rst:639
+#: ../Doc/c-api/init.rst:639
 msgid ""
 "Otherwise (that is, if *argc* is ``0`` or ``argv[0]`` doesn't point to an "
 "existing file name), an empty string is prepended to :data:`sys.path`, which "
 "is the same as prepending the current working directory (``\".\"``)."
 msgstr ""
-"それ以外の場合 (*argc* が ``0`` だったり、 ``argv[0]`` が存在するファイル名を"
-"指していない場合)、 :data:`sys.path` の先頭に空の文字列を追加します。\n"
-"これは現在の作業ディレクトリ (``\".\"``) を先頭に追加するのと同じです。"
+"De lo contrario (es decir, si *argc* es ``0`` o ``argv[0]`` no apunta a un "
+"nombre de archivo existente), una cadena de caracteres vacía se antepone a :"
+"data:`sys.path`, que es lo mismo que anteponer el directorio de trabajo "
+"actual (``\".\"``)."
 
-#: ../../c-api/init.rst:647 ../../c-api/init.rst:683
+#: ../Doc/c-api/init.rst:647 ../Doc/c-api/init.rst:683
 msgid ""
 "See also :c:member:`PyConfig.orig_argv` and :c:member:`PyConfig.argv` "
 "members of the :ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
+"Consulta también los miembros de :c:member:`PyConfig.orig_argv` y :c:member:"
+"`PyConfig.argv` de :ref:`Python Initialization Configuration <init-config>`."
 
-#: ../../c-api/init.rst:651
+#: ../Doc/c-api/init.rst:651
 msgid ""
 "It is recommended that applications embedding the Python interpreter for "
 "purposes other than executing a single script pass ``0`` as *updatepath*, "
 "and update :data:`sys.path` themselves if desired. See `CVE-2008-5983 "
 "<https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5983>`_."
 msgstr ""
-"単一のスクリプトを実行する以外の目的でPython インタプリタを埋め込んでいるアプ"
-"リケーションでは、 *updatepath* に ``0`` を渡して、必要な場合は自分で :data:"
-"`sys.path` を更新することをおすすめします。\n"
-"`CVE-2008-5983 <https://cve.mitre.org/cgi-bin/cvename.cgi?"
-"name=CVE-2008-5983>`_ を参照してください。"
+"Se recomienda que las aplicaciones que incorporan el intérprete de Python "
+"para otros fines que no sean ejecutar una sola secuencia de comandos "
+"(*script*) pasen ``0`` como *updatepath* y actualicen :data:`sys.path` si lo "
+"desean. Ver `CVE-2008-5983 <https://cve.mitre.org/cgi-bin/cvename.cgi?"
+"name=CVE-2008-5983>`_."
 
-#: ../../c-api/init.rst:656
+#: ../Doc/c-api/init.rst:656
 msgid ""
 "On versions before 3.1.3, you can achieve the same effect by manually "
 "popping the first :data:`sys.path` element after having called :c:func:"
 "`PySys_SetArgv`, for example using::"
 msgstr ""
-"3.1.3 より前のバージョンでは、 :c:func:`PySys_SetArgv` の呼び出しが完了した後"
-"に :data:`sys.path` の先頭の要素を取り出すことで、同じ効果が得られます。例え"
-"ばこのように使います::"
+"En las versiones anteriores a 3.1.3, puede lograr el mismo efecto quitando "
+"manualmente el primer elemento (*popping*) :data:`sys.path` después de haber "
+"llamado :c:func:`PySys_SetArgv`, por ejemplo usando ::"
 
-#: ../../c-api/init.rst:672
+#: ../Doc/c-api/init.rst:672
 msgid ""
 "This API is kept for backward compatibility: setting :c:member:`PyConfig."
 "argv` and :c:member:`PyConfig.parse_argv` should be used instead, see :ref:"
 "`Python Initialization Configuration <init-config>`."
 msgstr ""
+"Esta API se mantiene para la compatibilidad con versiones anteriores: en su "
+"lugar, se debe usar la configuración de :c:member:`PyConfig.argv` y :c:"
+"member:`PyConfig.parse_argv`, consulta :ref:`Configuración de inicialización "
+"de Python <init-config>`."
 
-#: ../../c-api/init.rst:676
+#: ../Doc/c-api/init.rst:676
 msgid ""
 "This function works like :c:func:`PySys_SetArgvEx` with *updatepath* set to "
 "``1`` unless the :program:`python` interpreter was started with the :option:"
 "`-I`."
 msgstr ""
-"この関数は、 :program:`python` インタプリタが :option:`-I` オプション付きで実"
-"行されている場合を除き :c:func:`PySys_SetArgvEx` の *updatepath* に ``1`` を"
-"設定したのと同じように動作します。"
+"Esta función funciona como :c:func:`PySys_SetArgvEx` con *updatepath* "
+"establecido en ``1`` a menos que el intérprete :program:`python` se haya "
+"iniciado con la opción :option:`-I`."
 
-#: ../../c-api/init.rst:686
+#: ../Doc/c-api/init.rst:686
 msgid "The *updatepath* value depends on :option:`-I`."
-msgstr "*updatepath* の値は :option:`-I` オプションに依存します。"
+msgstr "El valor *updatepath* depende de la opción :option:`-I`."
 
-#: ../../c-api/init.rst:693
+#: ../Doc/c-api/init.rst:693
 msgid ""
 "This API is kept for backward compatibility: setting :c:member:`PyConfig."
 "home` should be used instead, see :ref:`Python Initialization Configuration "
 "<init-config>`."
 msgstr ""
+"Esta API se mantiene para la compatibilidad con versiones anteriores: en su "
+"lugar, se debe usar la configuración de :c:member:`PyConfig.home`, consulta :"
+"ref:`Configuración de inicialización de Python <init-config>`."
 
-#: ../../c-api/init.rst:697
+#: ../Doc/c-api/init.rst:697
 msgid ""
 "Set the default \"home\" directory, that is, the location of the standard "
 "Python libraries.  See :envvar:`PYTHONHOME` for the meaning of the argument "
 "string."
 msgstr ""
-"Python の標準ライブラリがある、デフォルトの \"home\" ディレクトリを設定しま"
-"す。引数の文字列の意味については :envvar:`PYTHONHOME` を参照してください。"
+"Establece el directorio \"inicio\" (*\"home\"*) predeterminado, es decir, la "
+"ubicación de las bibliotecas estándar de Python. Ver :envvar:`PYTHONHOME` "
+"para el significado de la cadena de caracteres de argumento."
 
-#: ../../c-api/init.rst:701
+#: ../Doc/c-api/init.rst:701
 msgid ""
 "The argument should point to a zero-terminated character string in static "
 "storage whose contents will not change for the duration of the program's "
 "execution.  No code in the Python interpreter will change the contents of "
 "this storage."
 msgstr ""
-"引数は静的なストレージに置かれてプログラム実行中に書き換えられないようなゼロ"
-"終端の文字列であるべきです。Python インタプリタはこのストレージの内容を変更し"
-"ません。"
+"El argumento debe apuntar a una cadena de caracteres terminada en cero en el "
+"almacenamiento estático cuyo contenido no cambiará mientras dure la "
+"ejecución del programa. Ningún código en el intérprete de Python cambiará el "
+"contenido de este almacenamiento."
 
-#: ../../c-api/init.rst:714
+#: ../Doc/c-api/init.rst:714
 msgid ""
 "Return the default \"home\", that is, the value set by a previous call to :c:"
 "func:`Py_SetPythonHome`, or the value of the :envvar:`PYTHONHOME` "
 "environment variable if it is set."
 msgstr ""
-"前回の :c:func:`Py_SetPythonHome` 呼び出しで設定されたデフォルトの \"home\" "
-"か、 :envvar:`PYTHONHOME` 環境変数が設定されていればその値を返します。"
+"Retorna el \"inicio\" (*home*) predeterminado, es decir, el valor "
+"establecido por una llamada anterior a :c:func:`Py_SetPythonHome`, o el "
+"valor de la variable de entorno :envvar:`PYTHONHOME` si está configurado."
 
-#: ../../c-api/init.rst:728
+#: ../Doc/c-api/init.rst:728
 msgid "Thread State and the Global Interpreter Lock"
-msgstr ""
-"スレッド状態 (thread state) とグローバルインタプリタロック (global "
-"interpreter lock)"
+msgstr "Estado del hilo y el bloqueo global del intérprete"
 
-#: ../../c-api/init.rst:735
+#: ../Doc/c-api/init.rst:735
 msgid ""
 "The Python interpreter is not fully thread-safe.  In order to support multi-"
 "threaded Python programs, there's a global lock, called the :term:`global "
@@ -1121,17 +1226,17 @@ msgid ""
 "the same object, the reference count could end up being incremented only "
 "once instead of twice."
 msgstr ""
-"Python インタプリタは完全にはスレッドセーフではありません。マルチスレッドの "
-"Python プログラムをサポートするために、 :term:`グローバルインタプリタロック "
-"<global interpreter lock>` あるいは :term:`GIL` と呼ばれるグローバルなロック"
-"が存在していて、現在のスレッドが Python オブジェクトに安全にアクセスする前に"
-"必ずロックを獲得しなければならなくなっています。ロック機構がなければ、単純な"
-"操作でさえ、マルチスレッドプログラムの実行に問題を引き起こす可能性がありま"
-"す。たとえば、二つのスレッドが同じオブジェクトの参照カウントを同時にインクリ"
-"メントすると、結果的に参照カウントは二回でなく一回だけしかインクリメントされ"
-"ないかもしれません。"
+"El intérprete de Python no es completamente seguro para hilos (*thread-"
+"safe*). Para admitir programas Python multiproceso, hay un bloqueo global, "
+"denominado :term:`global interpreter lock` o :term:`GIL`, que debe mantener "
+"el hilo actual antes de que pueda acceder de forma segura a los objetos "
+"Python. Sin el bloqueo, incluso las operaciones más simples podrían causar "
+"problemas en un programa de hilos múltiples: por ejemplo, cuando dos hilos "
+"incrementan simultáneamente el conteo de referencias del mismo objeto, el "
+"conteo de referencias podría terminar incrementándose solo una vez en lugar "
+"de dos veces."
 
-#: ../../c-api/init.rst:745
+#: ../Doc/c-api/init.rst:745
 msgid ""
 "Therefore, the rule exists that only the thread that has acquired the :term:"
 "`GIL` may operate on Python objects or call Python/C API functions. In order "
@@ -1140,56 +1245,57 @@ msgid ""
 "released around potentially blocking I/O operations like reading or writing "
 "a file, so that other Python threads can run in the meantime."
 msgstr ""
-"このため、 :term:`GIL` を獲得したスレッドだけが Python オブジェクトを操作した"
-"り、 Python/C API 関数を呼び出したりできるというルールがあります。並行処理を"
-"エミュレートするために、インタプリタは定期的にロックを解放したり獲得したりし"
-"ます。 (:func:`sys.setswitchinterval` を参照) このロックはブロックが起こりう"
-"る I/O 操作の付近でも解放・獲得され、 I/O を要求するスレッドが I/O 操作の完了"
-"を待つ間、他のスレッドが動作できるようにしています。"
+"Por lo tanto, existe la regla de que solo el hilo que ha adquirido :term:"
+"`GIL` puede operar en objetos Python o llamar a funciones API Python/C. Para "
+"emular la concurrencia de ejecución, el intérprete regularmente intenta "
+"cambiar los hilos (ver :func:`sys.setswitchinterval`). El bloqueo también se "
+"libera para bloquear potencialmente las operaciones de E/S, como leer o "
+"escribir un archivo, para que otros hilos de Python puedan ejecutarse "
+"mientras tanto."
 
-#: ../../c-api/init.rst:756
+#: ../Doc/c-api/init.rst:756
 msgid ""
 "The Python interpreter keeps some thread-specific bookkeeping information "
 "inside a data structure called :c:type:`PyThreadState`.  There's also one "
 "global variable pointing to the current :c:type:`PyThreadState`: it can be "
 "retrieved using :c:func:`PyThreadState_Get`."
 msgstr ""
-"Python インタプリタはスレッドごとに必要な情報を :c:type:`PyThreadState` と呼"
-"ばれるデータ構造の中に保存します。そしてグローバル変数として現在の :c:type:"
-"`PyThreadState` を指すポインタを1つ持ちます。このグローバル変数は :c:func:"
-"`PyThreadState_Get` を使って取得できます。"
+"El intérprete de Python mantiene cierta información de contabilidad "
+"específica de hilos dentro de una estructura de datos llamada :c:type:"
+"`PyThreadState`. También hay una variable global que apunta a la actual :c:"
+"type:`PyThreadState`: se puede recuperar usando :c:func:`PyThreadState_Get`."
 
-#: ../../c-api/init.rst:762
+#: ../Doc/c-api/init.rst:762
 msgid "Releasing the GIL from extension code"
-msgstr "拡張コード内で GIL を解放する"
+msgstr "Liberando el GIL del código de extensión"
 
-#: ../../c-api/init.rst:764
+#: ../Doc/c-api/init.rst:764
 msgid ""
 "Most extension code manipulating the :term:`GIL` has the following simple "
 "structure::"
 msgstr ""
-":term:`GIL` を操作するほとんどのコードは、次のような単純な構造になります::"
+"La mayoría del código de extensión que manipula el :term:`GIL` tiene la "
+"siguiente estructura simple ::"
 
-#: ../../c-api/init.rst:773
+#: ../Doc/c-api/init.rst:773
 msgid "This is so common that a pair of macros exists to simplify it::"
-msgstr ""
-"この構造は非常に一般的なので、作業を単純にするために2つのマクロが用意されてい"
-"ます::"
+msgstr "Esto es tan común que existen un par de macros para simplificarlo:"
 
-#: ../../c-api/init.rst:783
+#: ../Doc/c-api/init.rst:783
 msgid ""
 "The :c:macro:`Py_BEGIN_ALLOW_THREADS` macro opens a new block and declares a "
 "hidden local variable; the :c:macro:`Py_END_ALLOW_THREADS` macro closes the "
 "block."
 msgstr ""
-":c:macro:`Py_BEGIN_ALLOW_THREADS` マクロは新たなブロックを開始し、隠しローカ"
-"ル変数を宣言します; :c:macro:`Py_END_ALLOW_THREADS` はブロックを閉じます。"
+"La macro :c:macro:`Py_BEGIN_ALLOW_THREADS` abre un nuevo bloque y declara "
+"una variable local oculta; la macro :c:macro:`Py_END_ALLOW_THREADS` cierra "
+"el bloque."
 
-#: ../../c-api/init.rst:787
+#: ../Doc/c-api/init.rst:787
 msgid "The block above expands to the following code::"
-msgstr "上のブロックは次のコードに展開されます::"
+msgstr "El bloque anterior se expande al siguiente código::"
 
-#: ../../c-api/init.rst:799
+#: ../Doc/c-api/init.rst:799
 msgid ""
 "Here is how these functions work: the global interpreter lock is used to "
 "protect the pointer to the current thread state.  When releasing the lock "
@@ -1199,15 +1305,16 @@ msgid ""
 "variable). Conversely, when acquiring the lock and restoring the thread "
 "state, the lock must be acquired before storing the thread state pointer."
 msgstr ""
-"これらの関数の動作を説明します。GIL は現在のスレッド状態を指すポインタを保護"
-"するために使われます。ロックを解放してスレッド状態を退避する際、ロックを解放"
-"する前に現在のスレッド状態ポインタを取得しておかなければなりません (他のス"
-"レッドがすぐさまロックを獲得して、自らのスレッド状態をグローバル変数に保存し"
-"てしまうかもしれないからです)。逆に、ロックを獲得してスレッド状態を復帰する際"
-"には、グローバル変数にスレッド状態ポインタを保存する前にロックを獲得しておか"
-"なければなりません。"
+"Así es como funcionan estas funciones: el bloqueo global del intérprete se "
+"usa para proteger el puntero al estado actual del hilo. Al liberar el "
+"bloqueo y guardar el estado del hilo, el puntero del estado del hilo actual "
+"debe recuperarse antes de que se libere el bloqueo (ya que otro hilo podría "
+"adquirir inmediatamente el bloqueo y almacenar su propio estado de hilo en "
+"la variable global). Por el contrario, al adquirir el bloqueo y restaurar el "
+"estado del hilo, el bloqueo debe adquirirse antes de almacenar el puntero "
+"del estado del hilo."
 
-#: ../../c-api/init.rst:808
+#: ../Doc/c-api/init.rst:808
 msgid ""
 "Calling system I/O functions is the most common use case for releasing the "
 "GIL, but it can also be useful before calling long-running computations "
@@ -1216,17 +1323,18 @@ msgid ""
 "standard :mod:`zlib` and :mod:`hashlib` modules release the GIL when "
 "compressing or hashing data."
 msgstr ""
-"GIL を解放するのはほとんどがシステムのI/O関数を呼び出す時ですが、メモリバッ"
-"ファに対する圧縮や暗号化のように、 Python のオブジェクトにアクセスしない長時"
-"間かかる計算処理を呼び出すときも GIL を解放することは有益です。例えば、 :mod:"
-"`zlib` や :mod:`hashlib` モジュールは圧縮やハッシュ計算の前に GIL を解放しま"
-"す。"
+"Llamar a las funciones de E/S del sistema es el caso de uso más común para "
+"liberar el GIL, pero también puede ser útil antes de llamar a cálculos de "
+"larga duración que no necesitan acceso a objetos de Python, como las "
+"funciones de compresión o criptográficas que operan sobre memorias "
+"intermedias. Por ejemplo, los módulos estándar :mod:`zlib` y :mod:`hashlib` "
+"liberan el GIL al comprimir o mezclar datos."
 
-#: ../../c-api/init.rst:819
+#: ../Doc/c-api/init.rst:819
 msgid "Non-Python created threads"
-msgstr "Python 以外で作られたスレッド"
+msgstr "Hilos creados sin Python"
 
-#: ../../c-api/init.rst:821
+#: ../Doc/c-api/init.rst:821
 msgid ""
 "When threads are created using the dedicated Python APIs (such as the :mod:"
 "`threading` module), a thread state is automatically associated to them and "
@@ -1235,13 +1343,14 @@ msgid ""
 "management), they don't hold the GIL, nor is there a thread state structure "
 "for them."
 msgstr ""
-"Python API を通して作られたスレッド (:mod:`threading` モジュールなど) では自"
-"動的にスレッド状態が割り当てられて、上記のコードは正しく動きます。しかし、(自"
-"前でスレッド管理を行う外部のライブラリなどにより)C言語でスレッドを生成した場"
-"合、そのスレッドには GIL がなく、スレッド状態データ構造体もないことに注意する"
-"必要があります。"
+"Cuando se crean hilos utilizando las API dedicadas de Python (como el "
+"módulo :mod:`threading`), se les asocia automáticamente un estado del hilo "
+"y, por lo tanto, el código que se muestra arriba es correcto. Sin embargo, "
+"cuando los hilos se crean desde C (por ejemplo, por una biblioteca de "
+"terceros con su propia administración de hilos), no contienen el GIL, ni "
+"existe una estructura de estado de hilos para ellos."
 
-#: ../../c-api/init.rst:828
+#: ../Doc/c-api/init.rst:828
 msgid ""
 "If you need to call Python code from these threads (often this will be part "
 "of a callback API provided by the aforementioned third-party library), you "
@@ -1251,24 +1360,27 @@ msgid ""
 "are done, you should reset the thread state pointer, release the GIL, and "
 "finally free the thread state data structure."
 msgstr ""
-"このようなスレッドから Python コードを呼び出す必要がある場合 (外部のライブラ"
-"リからコールバックするAPIなどがよくある例です)、Python/C API を呼び出す前に、"
-"スレッド状態データ構造体を生成し、GIL を獲得し、スレッド状態ポインタを保存す"
-"ることで、スレッドをインタプリタに登録しなければなりません。スレッドが作業を"
-"終えたら、スレッド状態ポインタをリセットして、ロックを解放し、最後にスレッド"
-"状態データ構造体のメモリを解放しなければなりません。"
+"Si necesita llamar al código Python desde estos subprocesos (a menudo esto "
+"será parte de una API de devolución de llamada proporcionada por la "
+"biblioteca de terceros mencionada anteriormente), primero debe registrar "
+"estos subprocesos con el intérprete creando una estructura de datos de "
+"estado del subproceso, luego adquiriendo el GIL, y finalmente almacenando su "
+"puntero de estado de hilo, antes de que pueda comenzar a usar la API Python/"
+"C Cuando haya terminado, debe restablecer el puntero del estado del hilo, "
+"liberar el GIL y finalmente liberar la estructura de datos del estado del "
+"hilo."
 
-#: ../../c-api/init.rst:836
+#: ../Doc/c-api/init.rst:836
 msgid ""
 "The :c:func:`PyGILState_Ensure` and :c:func:`PyGILState_Release` functions "
 "do all of the above automatically.  The typical idiom for calling into "
 "Python from a C thread is::"
 msgstr ""
-":c:func:`PyGILState_Ensure` と :c:func:`PyGILState_Release` はこの処理を自動"
-"的に行います。 Cのスレッドから Python を呼び出す典型的な方法は以下のとおりで"
-"す::"
+"Las funciones :c:func:`PyGILState_Ensure` y :c:func:`PyGILState_Release` "
+"hacen todo lo anterior automáticamente. El idioma típico para llamar a "
+"Python desde un hilo C es::"
 
-#: ../../c-api/init.rst:850
+#: ../Doc/c-api/init.rst:850
 msgid ""
 "Note that the ``PyGILState_*`` functions assume there is only one global "
 "interpreter (created automatically by :c:func:`Py_Initialize`).  Python "
@@ -1276,12 +1388,17 @@ msgid ""
 "`Py_NewInterpreter`), but mixing multiple interpreters and the "
 "``PyGILState_*`` API is unsupported."
 msgstr ""
+"Tenga en cuenta que las funciones ``PyGILState_*``  asumen que solo hay un "
+"intérprete global (creado automáticamente por :c:func:`Py_Initialize`). "
+"Python admite la creación de intérpretes adicionales (usando :c:func:"
+"`Py_NewInterpreter`), pero la mezcla de varios intérpretes y la API "
+"``PyGILState_*`` no está soportada."
 
-#: ../../c-api/init.rst:860
+#: ../Doc/c-api/init.rst:860
 msgid "Cautions about fork()"
-msgstr ""
+msgstr "Precauciones sobre ``fork()``"
 
-#: ../../c-api/init.rst:862
+#: ../Doc/c-api/init.rst:862
 msgid ""
 "Another important thing to note about threads is their behaviour in the face "
 "of the C :c:func:`fork` call. On most systems with :c:func:`fork`, after a "
@@ -1289,8 +1406,14 @@ msgid ""
 "concrete impact both on how locks must be handled and on all stored state in "
 "CPython's runtime."
 msgstr ""
+"Otra cosa importante a tener en cuenta sobre los hilos es su comportamiento "
+"frente a la llamada C :c:func:`fork`. En la mayoría de los sistemas con :c:"
+"func:`fork`, después de que un proceso se bifurca, solo existirá el hilo que "
+"emitió el *fork*. Esto tiene un impacto concreto tanto en cómo se deben "
+"manejar las cerraduras como en todo el estado almacenado en el tiempo de "
+"ejecución de CPython."
 
-#: ../../c-api/init.rst:868
+#: ../Doc/c-api/init.rst:868
 msgid ""
 "The fact that only the \"current\" thread remains means any locks held by "
 "other threads will never be released. Python solves this for :func:`os.fork` "
@@ -1306,8 +1429,23 @@ msgid ""
 "after the fork. :c:func:`PyOS_AfterFork_Child` tries to reset the necessary "
 "locks, but is not always able to."
 msgstr ""
+"El hecho de que solo permanezca al hilo \"actual\" significa que ningún "
+"bloqueo retenido por otros hilos nunca se liberará. Python resuelve esto "
+"para :func:`os.fork` adquiriendo los bloqueos que usa internamente antes de "
+"la bifurcación (*fork*) y soltándolos después. Además, restablece cualquier :"
+"ref:`lock-objects` en el elemento secundario. Al extender o incrustar "
+"Python, no hay forma de informar a Python de bloqueos adicionales (que no "
+"sean Python) que deben adquirirse antes o restablecerse después de una "
+"bifurcación. Las instalaciones del sistema operativo como :c:func:"
+"`pthread_atfork` tendrían que usarse para lograr lo mismo. Además, al "
+"extender o incrustar Python, llamando :c:func:`fork` directamente en lugar "
+"de a través de :func:`os.fork` (y retornar o llamar a Python) puede resultar "
+"en un punto muerto (*deadlock*) por uno de los bloqueos internos de Python. "
+"sostenido por un hilo que no funciona después del *fork*. :c:func:"
+"`PyOS_AfterFork_Child` intenta restablecer los bloqueos necesarios, pero no "
+"siempre puede hacerlo."
 
-#: ../../c-api/init.rst:883
+#: ../Doc/c-api/init.rst:883
 msgid ""
 "The fact that all other threads go away also means that CPython's runtime "
 "state there must be cleaned up properly, which :func:`os.fork` does.  This "
@@ -1319,119 +1457,134 @@ msgid ""
 "originally initialized. The only exception is if :c:func:`exec` will be "
 "called immediately after."
 msgstr ""
+"El hecho de que todos los otros hilos desaparezcan también significa que el "
+"estado de ejecución de CPython debe limpiarse correctamente, lo que :func:"
+"`os.fork` lo hace. Esto significa finalizar todos los demás objetos :c:type:"
+"`PyThreadState` que pertenecen al intérprete actual y todos los demás "
+"objetos :c:type:`PyInterpreterState`. Debido a esto y a la naturaleza "
+"especial del :ref:`intérprete \"principal\" <sub-interpreter-support>`, :c:"
+"func:`fork` solo debería llamarse en el hilo \"principal\" de ese "
+"intérprete, donde el CPython global el tiempo de ejecución se inicializó "
+"originalmente. La única excepción es si :c:func:`exec` se llamará "
+"inmediatamente después."
 
-#: ../../c-api/init.rst:896
+#: ../Doc/c-api/init.rst:896
 msgid "High-level API"
-msgstr "高レベルAPI"
+msgstr "API de alto nivel"
 
-#: ../../c-api/init.rst:898
+#: ../Doc/c-api/init.rst:898
 msgid ""
 "These are the most commonly used types and functions when writing C "
 "extension code, or when embedding the Python interpreter:"
 msgstr ""
-"C拡張を書いたりPythonインタプリタを埋め込むときに最も一般的に使われる型や関数"
-"は次のとおりです:"
+"Estos son los tipos y funciones más utilizados al escribir código de "
+"extensión C o al incrustar el intérprete de Python:"
 
-#: ../../c-api/init.rst:903
+#: ../Doc/c-api/init.rst:903
 msgid ""
 "This data structure represents the state shared by a number of cooperating "
 "threads.  Threads belonging to the same interpreter share their module "
 "administration and a few other internal items. There are no public members "
 "in this structure."
 msgstr ""
-"このデータ構造体は、協調動作する多数のスレッド間で共有されている状態を表現し"
-"ます。同じインタプリタに属するスレッドはモジュール管理情報やその他いくつかの"
-"内部的な情報を共有しています。この構造体には公開 (public) のメンバはありませ"
-"ん。"
+"Esta estructura de datos representa el estado compartido por varios "
+"subprocesos cooperantes. Los hilos que pertenecen al mismo intérprete "
+"comparten la administración de su módulo y algunos otros elementos internos. "
+"No hay miembros públicos en esta estructura."
 
-#: ../../c-api/init.rst:908
+#: ../Doc/c-api/init.rst:908
 msgid ""
 "Threads belonging to different interpreters initially share nothing, except "
 "process state like available memory, open file descriptors and such.  The "
 "global interpreter lock is also shared by all threads, regardless of to "
 "which interpreter they belong."
 msgstr ""
-"異なるインタプリタに属するスレッド間では、利用可能なメモリ、開かれているファ"
-"イルデスクリプタなどといったプロセス状態を除いて、初期状態では何も共有されて"
-"いません。GILもまた、スレッドがどのインタプリタに属しているかに関わらずすべて"
-"のスレッドで共有されています。"
+"Los hilos que pertenecen a diferentes intérpretes inicialmente no comparten "
+"nada, excepto el estado del proceso como memoria disponible, descriptores de "
+"archivos abiertos y demás. El bloqueo global del intérprete también es "
+"compartido por todos los hilos, independientemente de a qué intérprete "
+"pertenezcan."
 
-#: ../../c-api/init.rst:916
+#: ../Doc/c-api/init.rst:916
 msgid ""
 "This data structure represents the state of a single thread.  The only "
 "public data member is :attr:`interp` (:c:expr:`PyInterpreterState *`), which "
 "points to this thread's interpreter state."
 msgstr ""
+"Esta estructura de datos representa el estado de un solo hilo. El único "
+"miembro de datos públicos es :attr:`interp` (:c:expr:`PyInterpreterState "
+"*`), que apunta al estado del intérprete de este hilo."
 
-#: ../../c-api/init.rst:929
+#: ../Doc/c-api/init.rst:929
 msgid "Deprecated function which does nothing."
-msgstr ""
+msgstr "Función deprecada que no hace nada."
 
-#: ../../c-api/init.rst:931
+#: ../Doc/c-api/init.rst:931
 msgid ""
 "In Python 3.6 and older, this function created the GIL if it didn't exist."
 msgstr ""
+"En Python 3.6 y versiones anteriores, esta función creaba el GIL si no "
+"existía."
 
-#: ../../c-api/init.rst:933
+#: ../Doc/c-api/init.rst:933
 msgid "The function now does nothing."
-msgstr ""
+msgstr "La función ahora no hace nada."
 
-#: ../../c-api/init.rst:936
+#: ../Doc/c-api/init.rst:936
 msgid ""
 "This function is now called by :c:func:`Py_Initialize()`, so you don't have "
 "to call it yourself anymore."
 msgstr ""
-"この関数は :c:func:`Py_Initialize()` から呼び出されるようになり、わざわざ呼び"
-"出す必要はもう無くなりました。"
+"Esta función ahora es llamada por :c:func:`Py_Initialize()`, por lo que ya "
+"no tiene que llamarla usted mismo."
 
-#: ../../c-api/init.rst:940
+#: ../Doc/c-api/init.rst:940
 msgid ""
 "This function cannot be called before :c:func:`Py_Initialize()` anymore."
-msgstr ""
-"この関数は :c:func:`Py_Initialize()` より前に呼び出すことができなくなりまし"
-"た。"
+msgstr "Esta función ya no se puede llamar antes de :c:func:`Py_Initialize()`."
 
-#: ../../c-api/init.rst:950
+#: ../Doc/c-api/init.rst:950
 msgid ""
 "Returns a non-zero value if :c:func:`PyEval_InitThreads` has been called.  "
 "This function can be called without holding the GIL, and therefore can be "
 "used to avoid calls to the locking API when running single-threaded."
 msgstr ""
-":c:func:`PyEval_InitThreads` をすでに呼び出している場合は真 (非ゼロ) を返しま"
-"す。この関数は、GILを獲得せずに呼び出すことができますので、シングルスレッドで"
-"実行している場合にはロック関連のAPI呼び出しを避けるために使うことができます。"
+"Retorna un valor distinto de cero si se ha llamado a :c:func:"
+"`PyEval_InitThreads`. Esta función se puede invocar sin mantener el GIL y, "
+"por lo tanto, se puede utilizar para evitar llamadas a la API de bloqueo "
+"cuando se ejecuta un solo hilo."
 
-#: ../../c-api/init.rst:954
+#: ../Doc/c-api/init.rst:954
 msgid "The :term:`GIL` is now initialized by :c:func:`Py_Initialize()`."
 msgstr ""
-":term:`GIL` が :c:func:`Py_Initialize()` で初期化されるようになりました。"
+"El término :term:`GIL` ahora se inicializa con :c:func:`Py_Initialize()`."
 
-#: ../../c-api/init.rst:962
+#: ../Doc/c-api/init.rst:962
 msgid ""
 "Release the global interpreter lock (if it has been created) and reset the "
 "thread state to ``NULL``, returning the previous thread state (which is not "
 "``NULL``).  If the lock has been created, the current thread must have "
 "acquired it."
 msgstr ""
-"(GIL が生成されている場合) GILを解放して、スレッドの状態を ``NULL`` にし、以"
-"前のスレッド状態 (``NULL`` にはなりません) を返します。\n"
-"ロックがすでに生成されている場合、現在のスレッドがロックを獲得していなければ"
-"なりません。"
+"Libere el bloqueo global del intérprete (si se ha creado) y restablezca el "
+"estado del hilo a ``NULL``, retornando el estado del hilo anterior (que no "
+"es ``NULL``). Si se ha creado el bloqueo, el hilo actual debe haberlo "
+"adquirido."
 
-#: ../../c-api/init.rst:970
+#: ../Doc/c-api/init.rst:970
 msgid ""
 "Acquire the global interpreter lock (if it has been created) and set the "
 "thread state to *tstate*, which must not be ``NULL``.  If the lock has been "
 "created, the current thread must not have acquired it, otherwise deadlock "
 "ensues."
 msgstr ""
-"(GIL が生成されている場合) GIL を獲得して、現在のスレッド状態を *tstate* に設"
-"定します。 *tstate* は ``NULL`` であってはなりません。 GIL が生成されていて、"
-"この関数を呼び出したスレッドがすでにロックを獲得している場合、デッドロックに"
-"陥ります。"
+"Adquiera el bloqueo global del intérprete (si se ha creado) y establezca el "
+"estado del hilo en *tstate*, que no debe ser ``NULL``. Si se ha creado el "
+"bloqueo, el hilo actual no debe haberlo adquirido, de lo contrario se "
+"produce un *deadlock*."
 
-#: ../../c-api/init.rst:976 ../../c-api/init.rst:1022 ../../c-api/init.rst:1304
-#: ../../c-api/init.rst:1342
+#: ../Doc/c-api/init.rst:976 ../Doc/c-api/init.rst:1022
+#: ../Doc/c-api/init.rst:1304 ../Doc/c-api/init.rst:1342
 msgid ""
 "Calling this function from a thread when the runtime is finalizing will "
 "terminate the thread, even if the thread was not created by Python. You can "
@@ -1439,41 +1592,41 @@ msgid ""
 "interpreter is in process of being finalized before calling this function to "
 "avoid unwanted termination."
 msgstr ""
-"ランタイムが終了処理をしているときに、スレッドからこの関数を呼び出すと、その"
-"スレッドが Python によって作成されたものではなかったとしても終了させられま"
-"す。\n"
-":c:func:`_Py_IsFinalizing` や :func:`sys.is_finalizing` を使うと、この関数を"
-"呼び出す前にインタプリタが終了される過程の途中なのか確認でき、望まないスレッ"
-"ドの終了が避けられます。"
+"Llamar a esta función desde un hilo cuando finalice el tiempo de ejecución "
+"terminará el hilo, incluso si Python no creó el hilo. Puede usar :c:func:"
+"`_Py_IsFinalizing` o :func:`sys.is_finalizing` para verificar si el "
+"intérprete está en proceso de finalización antes de llamar a esta función "
+"para evitar una terminación no deseada."
 
-#: ../../c-api/init.rst:984
+#: ../Doc/c-api/init.rst:984
 msgid ""
 "Return the current thread state.  The global interpreter lock must be held. "
 "When the current thread state is ``NULL``, this issues a fatal error (so "
 "that the caller needn't check for ``NULL``)."
 msgstr ""
-"現在のスレッド状態を返します。GIL を保持していなければなりません。現在のス"
-"レッド状態が ``NULL`` なら、(呼び出し側が ``NULL`` チェックをしなくてすむよう"
-"に) この関数は致命的エラーを起こすようになっています。"
+"Retorna el estado actual del hilo. Se debe mantener el bloqueo global del "
+"intérprete. Cuando el estado actual del hilo es ``NULL``, esto genera un "
+"error fatal (por lo que la persona que llama no necesita verificar ``NULL``)."
 
-#: ../../c-api/init.rst:991
+#: ../Doc/c-api/init.rst:991
 msgid ""
 "Swap the current thread state with the thread state given by the argument "
 "*tstate*, which may be ``NULL``.  The global interpreter lock must be held "
 "and is not released."
 msgstr ""
-"現在のスレッド状態を *tstate* に指定したスレッド状態と入れ変えます。*tstate* "
-"は ``NULL`` の場合があります。GIL を保持していなければならず、解放しません。"
+"Cambia el estado del hilo actual con el estado del hilo dado por el "
+"argumento *tstate*, que puede ser ``NULL``. El bloqueo global del intérprete "
+"debe mantenerse y no se libera."
 
-#: ../../c-api/init.rst:996
+#: ../Doc/c-api/init.rst:996
 msgid ""
 "The following functions use thread-local storage, and are not compatible "
 "with sub-interpreters:"
 msgstr ""
-"以下の関数はスレッドローカルストレージを利用していて、サブインタプリタとの互"
-"換性がありません:"
+"Las siguientes funciones utilizan almacenamiento local de hilos y no son "
+"compatibles con subinterpretes:"
 
-#: ../../c-api/init.rst:1001
+#: ../Doc/c-api/init.rst:1001
 msgid ""
 "Ensure that the current thread is ready to call the Python C API regardless "
 "of the current state of Python, or of the global interpreter lock. This may "
@@ -1485,16 +1638,18 @@ msgid ""
 "c:macro:`Py_BEGIN_ALLOW_THREADS` and :c:macro:`Py_END_ALLOW_THREADS` macros "
 "is acceptable."
 msgstr ""
-"Pythonの状態やGILに関わらず、実行中スレッドでPython C APIの呼び出しが可能とな"
-"るようにします。この関数はスレッド内で何度でも呼び出すことができますが、必ず"
-"全ての呼び出しに対応して :c:func:`PyGILState_Release` を呼び出す必要がありま"
-"す。通常、 :c:func:`PyGILState_Ensure` 呼び出しと :c:func:"
-"`PyGILState_Release` 呼び出しの間でこれ以外のスレッド関連API を使用することが"
-"できますが、Release()の前にスレッド状態は復元されていなければなりません。例え"
-"ば、通常の :c:macro:`Py_BEGIN_ALLOW_THREADS` マクロと :c:macro:"
-"`Py_END_ALLOW_THREADS` は使用することができます。"
+"Asegúrese de que el subproceso actual esté listo para llamar a la API de "
+"Python C, independientemente del estado actual de Python o del bloqueo "
+"global del intérprete. Esto se puede invocar tantas veces como lo desee un "
+"subproceso siempre que cada llamada coincida con una llamada a :c:func:"
+"`PyGILState_Release`. En general, se pueden usar otras API relacionadas con "
+"subprocesos entre :c:func:`PyGILState_Ensure` y :c:func:`PyGILState_Release` "
+"invoca siempre que el estado del subproceso se restablezca a su estado "
+"anterior antes del *Release()*. Por ejemplo, el uso normal de las macros :c:"
+"macro:`Py_BEGIN_ALLOW_THREADS` y :c:macro:`Py_END_ALLOW_THREADS` es "
+"aceptable."
 
-#: ../../c-api/init.rst:1011
+#: ../Doc/c-api/init.rst:1011
 msgid ""
 "The return value is an opaque \"handle\" to the thread state when :c:func:"
 "`PyGILState_Ensure` was called, and must be passed to :c:func:"
@@ -1503,54 +1658,56 @@ msgid ""
 "call to :c:func:`PyGILState_Ensure` must save the handle for its call to :c:"
 "func:`PyGILState_Release`."
 msgstr ""
-"戻り値は :c:func:`PyGILState_Ensure` 呼び出し時のスレッド状態を隠蔽した\"ハン"
-"ドル\"で、 :c:func:`PyGILState_Release` に渡してPythonを同じ状態に保たなけれ"
-"ばなりません。再起呼び出しも可能ですが、ハンドルを共有することは *できません"
-"* - それぞれの :c:func:`PyGILState_Ensure` 呼び出しでハンドルを保存し、対応す"
-"る :c:func:`PyGILState_Release` 呼び出しで渡してください。"
+"El valor de retorno es un \"identificador\" opaco al estado del hilo cuando :"
+"c:func:`PyGILState_Ensure` fue llamado, y debe pasarse a :c:func:"
+"`PyGILState_Release` para asegurar que Python se deje en el mismo estado. "
+"Aunque las llamadas recursivas están permitidas, estos identificadores *no* "
+"pueden compartirse; cada llamada única a :c:func:`PyGILState_Ensure` debe "
+"guardar el identificador para su llamada a :c:func:`PyGILState_Release`."
 
-#: ../../c-api/init.rst:1018
+#: ../Doc/c-api/init.rst:1018
 msgid ""
 "When the function returns, the current thread will hold the GIL and be able "
 "to call arbitrary Python code.  Failure is a fatal error."
 msgstr ""
-"関数から復帰したとき、実行中のスレッドはGILを所有していて、任意の Python コー"
-"ドを実行できます。処理の失敗は致命的なエラーです。"
+"Cuando la función regrese, el hilo actual contendrá el GIL y podrá llamar a "
+"código arbitrario de Python. El fracaso es un error fatal."
 
-#: ../../c-api/init.rst:1030
+#: ../Doc/c-api/init.rst:1030
 msgid ""
 "Release any resources previously acquired.  After this call, Python's state "
 "will be the same as it was prior to the corresponding :c:func:"
 "`PyGILState_Ensure` call (but generally this state will be unknown to the "
 "caller, hence the use of the GILState API)."
 msgstr ""
-"獲得したすべてのリソースを解放します。この関数を呼び出すと、Pythonの状態は対"
-"応する :c:func:`PyGILState_Ensure` を呼び出す前と同じとなります (通常、この状"
-"態は呼び出し元でははわかりませんので、GILState APIを利用するようにしてくださ"
-"い)。"
+"Libera cualquier recurso previamente adquirido. Después de esta llamada, el "
+"estado de Python será el mismo que antes de la llamada correspondiente :c:"
+"func:`PyGILState_Ensure` (pero en general este estado será desconocido para "
+"la persona que llama, de ahí el uso de la API ``GILState``)."
 
-#: ../../c-api/init.rst:1035
+#: ../Doc/c-api/init.rst:1035
 msgid ""
 "Every call to :c:func:`PyGILState_Ensure` must be matched by a call to :c:"
 "func:`PyGILState_Release` on the same thread."
 msgstr ""
-":c:func:`PyGILState_Ensure` を呼び出す場合は、必ず同一スレッド内で対応する :"
-"c:func:`PyGILState_Release` を呼び出してください。"
+"Cada llamada a :c:func:`PyGILState_Ensure` debe coincidir con una llamada a :"
+"c:func:`PyGILState_Release` en el mismo hilo."
 
-#: ../../c-api/init.rst:1041
+#: ../Doc/c-api/init.rst:1041
 msgid ""
 "Get the current thread state for this thread.  May return ``NULL`` if no "
 "GILState API has been used on the current thread.  Note that the main thread "
 "always has such a thread-state, even if no auto-thread-state call has been "
 "made on the main thread.  This is mainly a helper/diagnostic function."
 msgstr ""
-"このスレッドの現在のスレッドの状態を取得します。これまで現在のスレッドで "
-"GILState API を使ったことが無い場合は、``NULL`` が返ります。メインスレッドで"
-"自身のスレッド状態に関する呼び出しを全くしないとしても、メインスレッドは常に"
-"スレッド状態の情報を持っていることに注意してください。こうなっている目的は主"
-"にヘルパ機能もしくは診断機能のためです。"
+"Obtenga el estado actual del hilo para este hilo. Puede retornar ``NULL`` si "
+"no se ha utilizado la API ``GILState`` en el hilo actual. Tenga en cuenta "
+"que el subproceso principal siempre tiene dicho estado de subproceso, "
+"incluso si no se ha realizado una llamada de estado de subproceso automático "
+"en el subproceso principal. Esta es principalmente una función auxiliar y de "
+"diagnóstico."
 
-#: ../../c-api/init.rst:1049
+#: ../Doc/c-api/init.rst:1049
 msgid ""
 "Return ``1`` if the current thread is holding the GIL and ``0`` otherwise. "
 "This function can be called from any thread at any time. Only if it has had "
@@ -1560,280 +1717,311 @@ msgid ""
 "that the GIL is locked can allow the caller to perform sensitive actions or "
 "otherwise behave differently."
 msgstr ""
-"現在のスレッドが GILを保持しているならば ``1`` を、そうでなければ ``0`` を返"
-"します。この関数はいつでもどのスレッドからでも呼び出すことができます。 "
-"Python スレッドの状態が初期化されており、現在 GIL を保持している場合にのみ "
-"``1`` を返します。これは主にヘルパー/診断用の関数です。この関数は、例えばコー"
-"ルバックのコンテキストやメモリ割り当て機能で有益でしょう。なぜなら、 GIL が"
-"ロックされていると知っていれば、呼び出し元は sensitive な行動を実行することが"
-"でき、そうでなければ異なるやりかたで振る舞うことができるからです。"
+"Retorna ``1`` si el hilo actual mantiene el GIL y ``0`` de lo contrario. "
+"Esta función se puede llamar desde cualquier hilo en cualquier momento. Solo "
+"si se ha inicializado el hilo de Python y actualmente mantiene el GIL, "
+"retornará ``1``. Esta es principalmente una función auxiliar y de "
+"diagnóstico. Puede ser útil, por ejemplo, en contextos de devolución de "
+"llamada o funciones de asignación de memoria cuando saber que el GIL está "
+"bloqueado puede permitir que la persona que llama realice acciones "
+"confidenciales o se comporte de otra manera de manera diferente."
 
-#: ../../c-api/init.rst:1061
+#: ../Doc/c-api/init.rst:1061
 msgid ""
 "The following macros are normally used without a trailing semicolon; look "
 "for example usage in the Python source distribution."
 msgstr ""
-"以下のマクロは、通常末尾にセミコロンを付けずに使います; Python ソース配布物内"
-"の使用例を見てください。"
+"Las siguientes macros se usan normalmente sin punto y coma final; busque, "
+"por ejemplo, el uso en la distribución fuente de Python."
 
-#: ../../c-api/init.rst:1067
+#: ../Doc/c-api/init.rst:1067
 msgid ""
 "This macro expands to ``{ PyThreadState *_save; _save = PyEval_SaveThread();"
 "``. Note that it contains an opening brace; it must be matched with a "
 "following :c:macro:`Py_END_ALLOW_THREADS` macro.  See above for further "
 "discussion of this macro."
 msgstr ""
-"このマクロを展開すると ``{ PyThreadState *_save; _save = PyEval_SaveThread();"
-"`` になります。マクロに開き波括弧が入っていることに注意してください; この波括"
-"弧は後で :c:macro:`Py_END_ALLOW_THREADS` マクロと対応させなければなりません。"
-"マクロについての詳しい議論は上記を参照してください。"
+"Esta macro se expande a ``{PyThreadState *_save; _save = PyEval_SaveThread();"
+"``. Tenga en cuenta que contiene una llave de apertura; debe coincidir con "
+"la siguiente macro :c:macro:`Py_END_ALLOW_THREADS`. Ver arriba para una "
+"discusión más detallada de esta macro."
 
-#: ../../c-api/init.rst:1075
+#: ../Doc/c-api/init.rst:1075
 msgid ""
 "This macro expands to ``PyEval_RestoreThread(_save); }``. Note that it "
 "contains a closing brace; it must be matched with an earlier :c:macro:"
 "`Py_BEGIN_ALLOW_THREADS` macro.  See above for further discussion of this "
 "macro."
 msgstr ""
-"このマクロを展開すると ``PyEval_RestoreThread(_save); }`` になります。マクロ"
-"に開き波括弧が入っていることに注意してください; この波括弧は事前の :c:macro:"
-"`Py_BEGIN_ALLOW_THREADS` マクロと対応していなければなりません。マクロについて"
-"の詳しい議論は上記を参照してください。"
+"Esta macro se expande a ``PyEval_RestoreThread(_save); }``. Tenga en cuenta "
+"que contiene una llave de cierre; debe coincidir con una macro anterior :c:"
+"macro:`Py_BEGIN_ALLOW_THREADS`. Ver arriba para una discusión más detallada "
+"de esta macro."
 
-#: ../../c-api/init.rst:1083
+#: ../Doc/c-api/init.rst:1083
 msgid ""
 "This macro expands to ``PyEval_RestoreThread(_save);``: it is equivalent to :"
 "c:macro:`Py_END_ALLOW_THREADS` without the closing brace."
 msgstr ""
-"このマクロを展開すると ``PyEval_RestoreThread(_save);`` になります: 閉じ波括"
-"弧のない :c:macro:`Py_END_ALLOW_THREADS` と同じです。"
+"Esta macro se expande a ``PyEval_RestoreThread(_save);``: es equivalente a :"
+"c:macro:`Py_END_ALLOW_THREADS` sin la llave de cierre."
 
-#: ../../c-api/init.rst:1089
+#: ../Doc/c-api/init.rst:1089
 msgid ""
 "This macro expands to ``_save = PyEval_SaveThread();``: it is equivalent to :"
 "c:macro:`Py_BEGIN_ALLOW_THREADS` without the opening brace and variable "
 "declaration."
 msgstr ""
-"このマクロを展開すると ``_save = PyEval_SaveThread();`` になります: 開き波括"
-"弧のない :c:macro:`Py_BEGIN_ALLOW_THREADS` と同じです。"
+"Esta macro se expande a ``_save = PyEval_SaveThread();``: es equivalente a :"
+"c:macro:`Py_BEGIN_ALLOW_THREADS` sin la llave de apertura y la declaración "
+"de variable."
 
-#: ../../c-api/init.rst:1095
+#: ../Doc/c-api/init.rst:1095
 msgid "Low-level API"
-msgstr "低レベルAPI"
+msgstr "API de bajo nivel"
 
-#: ../../c-api/init.rst:1097
+#: ../Doc/c-api/init.rst:1097
 msgid ""
 "All of the following functions must be called after :c:func:`Py_Initialize`."
 msgstr ""
-"次の全ての関数は :c:func:`Py_Initialize` の後に呼び出さなければなりません。"
+"Todas las siguientes funciones deben llamarse después de :c:func:"
+"`Py_Initialize`."
 
-#: ../../c-api/init.rst:1099
+#: ../Doc/c-api/init.rst:1099
 msgid ":c:func:`Py_Initialize()` now initializes the :term:`GIL`."
-msgstr ""
-":c:func:`Py_Initialize()` は :term:`GIL` を初期化するようになりました。"
+msgstr ":c:func:`Py_Initialize()` ahora inicializa el :term:`GIL`."
 
-#: ../../c-api/init.rst:1105
+#: ../Doc/c-api/init.rst:1105
 msgid ""
 "Create a new interpreter state object.  The global interpreter lock need not "
 "be held, but may be held if it is necessary to serialize calls to this "
 "function."
 msgstr ""
-"新しいインタプリタ状態オブジェクトを生成します。GIL を保持しておく必要はあり"
-"ませんが、この関数を次々に呼び出す必要がある場合には保持しておいたほうがよい"
-"でしょう。"
+"Crea un nuevo objeto de estado de intérprete. No es necesario retener el "
+"bloqueo global del intérprete, pero se puede retener si es necesario para "
+"serializar llamadas a esta función."
 
-#: ../../c-api/init.rst:1109
+#: ../Doc/c-api/init.rst:1109
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``cpython."
 "PyInterpreterState_New`` with no arguments."
 msgstr ""
+"Genera un :ref:`evento de auditoría <auditing>` ``python."
+"PyInterpreterState_New`` sin argumentos."
 
-#: ../../c-api/init.rst:1114
+#: ../Doc/c-api/init.rst:1114
 msgid ""
 "Reset all information in an interpreter state object.  The global "
 "interpreter lock must be held."
 msgstr ""
-"インタプリタ状態オブジェクト内の全ての情報をリセットします。GIL を保持してい"
-"なければなりません。"
+"Restablece toda la información en un objeto de estado de intérprete. Se debe "
+"mantener el bloqueo global del intérprete."
 
-#: ../../c-api/init.rst:1117
+#: ../Doc/c-api/init.rst:1117
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``cpython."
 "PyInterpreterState_Clear`` with no arguments."
 msgstr ""
+"Lanza una :ref:`eventos de auditoría <auditing>` ``python.PyInterpreterState "
+"Clear`` sin argumentos."
 
-#: ../../c-api/init.rst:1122
+#: ../Doc/c-api/init.rst:1122
 msgid ""
 "Destroy an interpreter state object.  The global interpreter lock need not "
 "be held.  The interpreter state must have been reset with a previous call "
 "to :c:func:`PyInterpreterState_Clear`."
 msgstr ""
-"インタプリタ状態オブジェクトを破壊します。GIL を保持しておく必要はありませ"
-"ん。インタプリタ状態は :c:func:`PyInterpreterState_Clear` であらかじめリセッ"
-"トしておかなければなりません。"
+"Destruye un objeto de estado de intérprete. No es necesario mantener el "
+"bloqueo global del intérprete. El estado del intérprete debe haberse "
+"restablecido con una llamada previa a :c:func:`PyInterpreterState_Clear`."
 
-#: ../../c-api/init.rst:1129
+#: ../Doc/c-api/init.rst:1129
 msgid ""
 "Create a new thread state object belonging to the given interpreter object. "
 "The global interpreter lock need not be held, but may be held if it is "
 "necessary to serialize calls to this function."
 msgstr ""
-"指定したインタプリタオブジェクトに属する新たなスレッド状態オブジェクトを生成"
-"します。GIL を保持しておく必要はありませんが、この関数を次々に呼び出す必要が"
-"ある場合には保持しておいたほうがよいでしょう。"
+"Crea un nuevo objeto de estado de hilo que pertenece al objeto de intérprete "
+"dado. No es necesario retener el bloqueo global del intérprete, pero se "
+"puede retener si es necesario para serializar llamadas a esta función."
 
-#: ../../c-api/init.rst:1136
+#: ../Doc/c-api/init.rst:1136
 msgid ""
 "Reset all information in a thread state object.  The global interpreter lock "
 "must be held."
 msgstr ""
-"スレッド状態オブジェクト内の全ての情報をリセットします。GIL を保持していなけ"
-"ればなりません。"
+"Restablece toda la información en un objeto de estado de hilo. Se debe "
+"mantener el bloqueo global del intérprete."
 
-#: ../../c-api/init.rst:1139
+#: ../Doc/c-api/init.rst:1139
 msgid ""
 "This function now calls the :c:member:`PyThreadState.on_delete` callback. "
 "Previously, that happened in :c:func:`PyThreadState_Delete`."
 msgstr ""
+"Esta función ahora llama a la retrollamada :c:member:`PyThreadState."
+"on_delete`. Anteriormente, eso sucedía en :c:func:`PyThreadState_Delete`."
 
-#: ../../c-api/init.rst:1146
+#: ../Doc/c-api/init.rst:1146
 msgid ""
 "Destroy a thread state object.  The global interpreter lock need not be "
 "held. The thread state must have been reset with a previous call to :c:func:"
 "`PyThreadState_Clear`."
 msgstr ""
-"スレッド状態オブジェクトを破壊します。GIL を保持する必要はありません。スレッ"
-"ド状態は :c:func:`PyThreadState_Clear` であらかじめリセットしておかなければな"
-"りません。"
+"Destruye un objeto de estado de hilo. No es necesario mantener el bloqueo "
+"global del intérprete. El estado del hilo debe haberse restablecido con una "
+"llamada previa a :c:func:`PyThreadState_Clear`."
 
-#: ../../c-api/init.rst:1153
+#: ../Doc/c-api/init.rst:1153
 msgid ""
 "Destroy the current thread state and release the global interpreter lock. "
 "Like :c:func:`PyThreadState_Delete`, the global interpreter lock need not be "
 "held. The thread state must have been reset with a previous call to :c:func:"
 "`PyThreadState_Clear`."
 msgstr ""
+"Destruye un objeto de estado de hilo y suelta el bloqueo del intérprete "
+"global. Como :c:func:`PyThreadState_Delete`, no es necesario mantener el "
+"bloqueo del intérprete global. El estado del hilo debe haberse restablecido "
+"con una llamada anterior a :c:func:`PyThreadState_Clear`."
 
-#: ../../c-api/init.rst:1161
+#: ../Doc/c-api/init.rst:1161
 msgid "Get the current frame of the Python thread state *tstate*."
-msgstr ""
+msgstr "Obtiene el marco actual del estado del hilo de Python *tstate*."
 
-#: ../../c-api/init.rst:1163
+# Como bien tradujeron con anterioridad, está más claro el decir referencia
+# sólida a referencia fuerte, el cual no calzaría en este contexto.
+#: ../Doc/c-api/init.rst:1163
 msgid ""
 "Return a :term:`strong reference`. Return ``NULL`` if no frame is currently "
 "executing."
 msgstr ""
+"Retorna una :term:`strong reference` (referencia sólida). Retorna ``NULL`` "
+"si no se está ejecutando ningún cuadro."
 
-#: ../../c-api/init.rst:1166
+#: ../Doc/c-api/init.rst:1166
 msgid "See also :c:func:`PyEval_GetFrame`."
-msgstr ""
+msgstr "Vea también :c:func:`PyEval_GetFrame`."
 
-#: ../../c-api/init.rst:1168 ../../c-api/init.rst:1177
-#: ../../c-api/init.rst:1186
+#: ../Doc/c-api/init.rst:1168 ../Doc/c-api/init.rst:1177
+#: ../Doc/c-api/init.rst:1186
 msgid "*tstate* must not be ``NULL``."
-msgstr ""
+msgstr "*tstate* no debe ser ``NULL``."
 
-#: ../../c-api/init.rst:1175
+#: ../Doc/c-api/init.rst:1175
 msgid ""
 "Get the unique thread state identifier of the Python thread state *tstate*."
 msgstr ""
+"Obtiene el identificador de estado de subproceso único del estado del hilo "
+"de Python *tstate*."
 
-#: ../../c-api/init.rst:1184
+#: ../Doc/c-api/init.rst:1184
 msgid "Get the interpreter of the Python thread state *tstate*."
-msgstr ""
+msgstr "Obtiene el intérprete del estado del hilo de Python *tstate*."
 
-#: ../../c-api/init.rst:1193
+#: ../Doc/c-api/init.rst:1193
 msgid "Suspend tracing and profiling in the Python thread state *tstate*."
 msgstr ""
+"Suspender el seguimiento y el perfilado en el estado del hilo de Python "
+"*tstate*."
 
-#: ../../c-api/init.rst:1195
+#: ../Doc/c-api/init.rst:1195
 msgid "Resume them using the :c:func:`PyThreadState_LeaveTracing` function."
-msgstr ""
+msgstr "Reanudelos usando la función :c:func:`PyThreadState_LeaveTracing`."
 
-#: ../../c-api/init.rst:1202
+#: ../Doc/c-api/init.rst:1202
 msgid ""
 "Resume tracing and profiling in the Python thread state *tstate* suspended "
 "by the :c:func:`PyThreadState_EnterTracing` function."
 msgstr ""
+"Reanudar el seguimiento y el perfilado en el estado del hilo de Python "
+"*tstate* suspendido por la función :c:func:`PyThreadState_EnterTracing`."
 
-#: ../../c-api/init.rst:1205
+#: ../Doc/c-api/init.rst:1205
 msgid ""
 "See also :c:func:`PyEval_SetTrace` and :c:func:`PyEval_SetProfile` functions."
 msgstr ""
+"Consulte también las funciones :c:func:`PyEval_SetTrace` y :c:func:"
+"`PyEval_SetProfile`."
 
-#: ../../c-api/init.rst:1213
+#: ../Doc/c-api/init.rst:1213
 msgid "Get the current interpreter."
-msgstr ""
+msgstr "Obtiene el intérprete actual."
 
-#: ../../c-api/init.rst:1215
+#: ../Doc/c-api/init.rst:1215
 msgid ""
 "Issue a fatal error if there no current Python thread state or no current "
 "interpreter. It cannot return NULL."
 msgstr ""
+"Emite un error fatal si no hay un estado actual del hilo de Python o no hay "
+"un intérprete actual. No puede retornar NULL."
 
-#: ../../c-api/init.rst:1218 ../../c-api/init.rst:1228
+#: ../Doc/c-api/init.rst:1218 ../Doc/c-api/init.rst:1228
 msgid "The caller must hold the GIL."
-msgstr "呼び出し側はGILを獲得する必要があります"
+msgstr "La persona que llama debe retener el GIL."
 
-#: ../../c-api/init.rst:1225
+#: ../Doc/c-api/init.rst:1225
 msgid ""
 "Return the interpreter's unique ID.  If there was any error in doing so then "
 "``-1`` is returned and an error is set."
 msgstr ""
-"インタプリタの一意な ID を返します。\n"
-"処理中に何かエラーが起きたら、 ``-1`` が返され、エラーがセットされます。"
+"Retorna la identificación única del intérprete. Si hubo algún error al "
+"hacerlo, entonces se retorna ``-1`` y se establece un error."
 
-#: ../../c-api/init.rst:1235
+#: ../Doc/c-api/init.rst:1235
 msgid ""
 "Return a dictionary in which interpreter-specific data may be stored. If "
 "this function returns ``NULL`` then no exception has been raised and the "
 "caller should assume no interpreter-specific dict is available."
 msgstr ""
-"インタプリタ固有のデータを保持している辞書を返します。\n"
-"この関数が ``NULL`` を返した場合は、ここまでで例外は送出されておらず、呼び出"
-"し側はインタプリタ固有の辞書は利用できないと考えなければなりません。"
+"Retorna un diccionario en el que se pueden almacenar datos específicos del "
+"intérprete. Si esta función retorna ``NULL``, no se ha producido ninguna "
+"excepción y la persona que llama debe suponer que no hay disponible una "
+"instrucción específica del intérprete."
 
-#: ../../c-api/init.rst:1239
+#: ../Doc/c-api/init.rst:1239
 msgid ""
 "This is not a replacement for :c:func:`PyModule_GetState()`, which "
 "extensions should use to store interpreter-specific state information."
 msgstr ""
-"この関数は :c:func:`PyModule_GetState()` を置き換えるものではなく、拡張モ"
-"ジュールがインタプリタ固有の状態情報を格納するのに使うべきものです。"
+"Esto no reemplaza a :c:func:`PyModule_GetState()`, que las extensiones deben "
+"usar para almacenar información de estado específica del intérprete."
 
-#: ../../c-api/init.rst:1246
+#: ../Doc/c-api/init.rst:1246
 msgid "Type of a frame evaluation function."
-msgstr ""
+msgstr "Tipo de función de evaluación de marcos."
 
-#: ../../c-api/init.rst:1248
+#: ../Doc/c-api/init.rst:1248
 msgid ""
 "The *throwflag* parameter is used by the ``throw()`` method of generators: "
 "if non-zero, handle the current exception."
 msgstr ""
+"El parámetro *throwflag* es usado por el método de generadores ``throw()``: "
+"si no es cero, maneja la excepción actual."
 
-#: ../../c-api/init.rst:1251
+#: ../Doc/c-api/init.rst:1251
 msgid "The function now takes a *tstate* parameter."
-msgstr ""
+msgstr "La función ahora recibe un parámetro *tstate*."
 
-#: ../../c-api/init.rst:1254
+#: ../Doc/c-api/init.rst:1254
 msgid ""
 "The *frame* parameter changed from ``PyFrameObject*`` to "
 "``_PyInterpreterFrame*``."
 msgstr ""
+"El parámetro *frame* cambió de ``PyFrameObject*`` a ``_PyInterpreterFrame*``."
 
-#: ../../c-api/init.rst:1259
+#: ../Doc/c-api/init.rst:1259
 msgid "Get the frame evaluation function."
-msgstr ""
+msgstr "Obtiene la función de evaluación de marcos."
 
-#: ../../c-api/init.rst:1261 ../../c-api/init.rst:1269
+#: ../Doc/c-api/init.rst:1261 ../Doc/c-api/init.rst:1269
 msgid "See the :pep:`523` \"Adding a frame evaluation API to CPython\"."
 msgstr ""
+"Consulte :pep:`523` \"Adición de una API de evaluación de marcos a CPython\"."
 
-#: ../../c-api/init.rst:1267
+#: ../Doc/c-api/init.rst:1267
 msgid "Set the frame evaluation function."
-msgstr ""
+msgstr "Configura la función de evaluación del marco."
 
-#: ../../c-api/init.rst:1276
+#: ../Doc/c-api/init.rst:1276
 msgid ""
 "Return a dictionary in which extensions can store thread-specific state "
 "information.  Each extension should use a unique key to use to store state "
@@ -1841,13 +2029,14 @@ msgid ""
 "state is available. If this function returns ``NULL``, no exception has been "
 "raised and the caller should assume no current thread state is available."
 msgstr ""
-"拡張モジュールがスレッド固有の状態情報を保存できるような辞書を返します。各々"
-"の拡張モジュールが辞書に状態情報を保存するためには唯一のキーを使わなければな"
-"りません。現在のスレッド状態がない時にこの関数を呼び出してもかまいません。こ"
-"の関数が ``NULL`` を返す場合、例外はまったく送出されず、呼び出し側は現在のス"
-"レッド状態が利用できないと考えなければなりません。"
+"Retorna un diccionario en el que las extensiones pueden almacenar "
+"información de estado específica del hilo. Cada extensión debe usar una "
+"clave única para almacenar el estado en el diccionario. Está bien llamar a "
+"esta función cuando no hay un estado del hilo actual disponible. Si esta "
+"función retorna ``NULL``, no se ha producido ninguna excepción y la persona "
+"que llama debe asumir que no hay disponible ningún estado del hilo actual."
 
-#: ../../c-api/init.rst:1285
+#: ../Doc/c-api/init.rst:1285
 msgid ""
 "Asynchronously raise an exception in a thread. The *id* argument is the "
 "thread id of the target thread; *exc* is the exception object to be raised. "
@@ -1858,44 +2047,53 @@ msgid ""
 "const:`NULL`, the pending exception (if any) for the thread is cleared. This "
 "raises no exceptions."
 msgstr ""
-"スレッド内で非同期的に例外を送出します。 *id* 引数はターゲットとなるスレッド"
-"のスレッド id です; *exc* は送出する例外オブジェクトです。この関数は *exc* に"
-"対する参照を一切盗み取りません。安直な間違いを防ぐため、この関数を呼び出すに"
-"は独自に C 拡張モジュールを書かなければなりません。 GIL を保持した状態で呼び"
-"出さなければなりません。状態が変更されたスレッドの数を返します; 通常は 1 です"
-"が、スレッドが見付からなかった場合は 0 になることもあります。 *exc* が :"
-"const:`NULL` の場合は、このスレッドのまだ送出されていない例外は (何であれ) 消"
-"去されます。この場合は例外を送出しません。"
+"Asincrónicamente lanza una excepción en un hilo. El argumento *id* es el id "
+"del hilo del hilo de destino; *exc* es el objeto de excepción que se debe "
+"generar. Esta función no roba ninguna referencia a *exc*. Para evitar el uso "
+"indebido ingenuo, debe escribir su propia extensión C para llamar a esto. "
+"Debe llamarse con el GIL retenido. Retorna el número de estados de hilo "
+"modificados; normalmente es uno, pero será cero si no se encuentra la "
+"identificación del hilo. Si *exc* es :const:`NULL`, se borra la excepción "
+"pendiente (si existe) para el hilo. Esto no lanza excepciones."
 
-#: ../../c-api/init.rst:1293
+#: ../Doc/c-api/init.rst:1293
 msgid ""
 "The type of the *id* parameter changed from :c:expr:`long` to :c:expr:"
 "`unsigned long`."
 msgstr ""
+"El tipo del parámetro *id* cambia de :c:expr:`long` a :c:expr:`unsigned "
+"long`."
 
-#: ../../c-api/init.rst:1299
+#: ../Doc/c-api/init.rst:1299
 msgid ""
 "Acquire the global interpreter lock and set the current thread state to "
 "*tstate*, which must not be ``NULL``.  The lock must have been created "
 "earlier. If this thread already has the lock, deadlock ensues."
 msgstr ""
+"Adquiere el bloqueo global del intérprete y establece el estado actual del "
+"hilo en *tstate*, que no debe ser ``NULL``. El bloqueo debe haber sido "
+"creado anteriormente. Si este hilo ya tiene el bloqueo, se produce un "
+"deadlock."
 
-#: ../../c-api/init.rst:1310 ../../c-api/init.rst:1348
+#: ../Doc/c-api/init.rst:1310 ../Doc/c-api/init.rst:1348
 msgid ""
 "Updated to be consistent with :c:func:`PyEval_RestoreThread`, :c:func:"
 "`Py_END_ALLOW_THREADS`, and :c:func:`PyGILState_Ensure`, and terminate the "
 "current thread if called while the interpreter is finalizing."
 msgstr ""
+"Actualiza para ser coherente con :c:func:`PyEval_RestoreThread`, :c:func:"
+"`Py_END_ALLOW_THREADS`, y :c:func:`PyGILState_Ensure`, y termina el hilo "
+"actual si se llama mientras el intérprete está finalizando."
 
-#: ../../c-api/init.rst:1315
+#: ../Doc/c-api/init.rst:1315
 msgid ""
 ":c:func:`PyEval_RestoreThread` is a higher-level function which is always "
 "available (even when threads have not been initialized)."
 msgstr ""
-":c:func:`PyEval_RestoreThread` はいつでも (スレッドが初期化されたいないときで"
-"も) 利用可能な高レベル関数です。"
+":c:func:`PyEval_RestoreThread` es una función de nivel superior que siempre "
+"está disponible (incluso cuando los subprocesos no se han inicializado)."
 
-#: ../../c-api/init.rst:1321
+#: ../Doc/c-api/init.rst:1321
 msgid ""
 "Reset the current thread state to ``NULL`` and release the global "
 "interpreter lock.  The lock must have been created earlier and must be held "
@@ -1903,69 +2101,69 @@ msgid ""
 "is only used to check that it represents the current thread state --- if it "
 "isn't, a fatal error is reported."
 msgstr ""
-"現在のスレッド状態をリセットして ``NULL`` にし、GIL を解放します。ロックはあ"
-"らかじめ作成されていなければならず、かつ現在のスレッドが保持していなければな"
-"りません。*tstate* は ``NULL`` であってはなりませんが、その値が現在のスレッド"
-"状態を表現しているかどうかを調べるためにだけ使われます --- もしそうでなけれ"
-"ば、致命的エラーが報告されます。"
+"Restablece el estado actual del hilo a ``NULL`` y libera el bloqueo global "
+"del intérprete. El bloqueo debe haberse creado antes y debe estar retenido "
+"por el hilo actual. El argumento *tstate*, que no debe ser ``NULL``, solo se "
+"usa para verificar que representa el estado actual del hilo --- si no lo es, "
+"se informa un error fatal."
 
-#: ../../c-api/init.rst:1327
+#: ../Doc/c-api/init.rst:1327
 msgid ""
 ":c:func:`PyEval_SaveThread` is a higher-level function which is always "
 "available (even when threads have not been initialized)."
 msgstr ""
-":c:func:`PyEval_SaveThread` はより高レベルな関数で常に (スレッドが初期化され"
-"ていないときでも) 利用できます。"
+":c:func:`PyEval_SaveThread` es una función de nivel superior que siempre "
+"está disponible (incluso cuando los hilos no se han inicializado)."
 
-#: ../../c-api/init.rst:1333
+#: ../Doc/c-api/init.rst:1333
 msgid ""
 "Acquire the global interpreter lock.  The lock must have been created "
 "earlier. If this thread already has the lock, a deadlock ensues."
 msgstr ""
-"GILを獲得します。ロックは前もって作成されていなければなりません。この関数を呼"
-"び出したスレッドがすでにロックを獲得している場合、デッドロックに陥ります。"
+"Adquiera el bloqueo global de intérprete. El bloqueo debe haber sido creado "
+"anteriormente. Si este hilo ya tiene el bloqueo, se produce un *deadlock*."
 
-#: ../../c-api/init.rst:1336
+#: ../Doc/c-api/init.rst:1336
 msgid ""
 "This function does not update the current thread state.  Please use :c:func:"
 "`PyEval_RestoreThread` or :c:func:`PyEval_AcquireThread` instead."
 msgstr ""
-"この関数は現在のスレッドの状態を更新しません。代わりに :c:func:"
-"`PyEval_RestoreThread` もしくは :c:func:`PyEval_AcquireThread` を使用してくだ"
-"さい。"
+"Esta función no actualiza el estado actual del hilo. Utilice :c:func:"
+"`PyEval_RestoreThread` o :c:func:`PyEval_AcquireThread` en su lugar."
 
-#: ../../c-api/init.rst:1356
+#: ../Doc/c-api/init.rst:1356
 msgid ""
 "Release the global interpreter lock.  The lock must have been created "
 "earlier."
-msgstr "GILを解放します。ロックは前もって作成されていなければなりません。"
+msgstr ""
+"Libere el bloqueo global del intérprete. El bloqueo debe haber sido creado "
+"anteriormente."
 
-#: ../../c-api/init.rst:1358
+#: ../Doc/c-api/init.rst:1358
 msgid ""
 "This function does not update the current thread state.  Please use :c:func:"
 "`PyEval_SaveThread` or :c:func:`PyEval_ReleaseThread` instead."
 msgstr ""
-"この関数は現在のスレッドの状態を更新しません。代わりに :c:func:"
-"`PyEval_SaveThread` もしくは :c:func:`PyEval_ReleaseThread` を使用してくださ"
-"い。"
+"Esta función no actualiza el estado actual del hilo. Utilice :c:func:"
+"`PyEval_SaveThread` o :c:func:`PyEval_ReleaseThread` en su lugar."
 
-#: ../../c-api/init.rst:1367
+#: ../Doc/c-api/init.rst:1367
 msgid "Sub-interpreter support"
-msgstr "サブインタプリタサポート"
+msgstr "Soporte de subinterprete"
 
-#: ../../c-api/init.rst:1369
+#: ../Doc/c-api/init.rst:1369
 msgid ""
 "While in most uses, you will only embed a single Python interpreter, there "
 "are cases where you need to create several independent interpreters in the "
 "same process and perhaps even in the same thread. Sub-interpreters allow you "
 "to do that."
 msgstr ""
-"ほとんどの場合は埋め込む Python インタプリタは1つだけですが、いくつかの場合に"
-"同一プロセス内、あるいは同一スレッド内で、複数の独立したインタプリタを作成す"
-"る必要があります。\n"
-"これを可能にするのがサブインタプリタです。"
+"Si bien en la mayoría de los usos, solo incrustará un solo intérprete de "
+"Python, hay casos en los que necesita crear varios intérpretes "
+"independientes en el mismo proceso y tal vez incluso en el mismo hilo. Los "
+"subinterpretes le permiten hacer eso."
 
-#: ../../c-api/init.rst:1374
+#: ../Doc/c-api/init.rst:1374
 msgid ""
 "The \"main\" interpreter is the first one created when the runtime "
 "initializes. It is usually the only Python interpreter in a process.  Unlike "
@@ -1975,17 +2173,26 @@ msgid ""
 "runtime finalization.  The :c:func:`PyInterpreterState_Main` function "
 "returns a pointer to its state."
 msgstr ""
+"El intérprete \"principal\" es el primero creado cuando se inicializa el "
+"tiempo de ejecución. Suele ser el único intérprete de Python en un proceso. "
+"A diferencia de los subinterpretes, el intérprete principal tiene "
+"responsabilidades globales de proceso únicas, como el manejo de señales. "
+"También es responsable de la ejecución durante la inicialización del tiempo "
+"de ejecución y generalmente es el intérprete activo durante la finalización "
+"del tiempo de ejecución. La función :c:func:`PyInterpreterState_Main` "
+"retorna un puntero a su estado."
 
-#: ../../c-api/init.rst:1381
+#: ../Doc/c-api/init.rst:1381
 msgid ""
 "You can switch between sub-interpreters using the :c:func:"
 "`PyThreadState_Swap` function. You can create and destroy them using the "
 "following functions:"
 msgstr ""
-"サブインタプリタを切り替えが :c:func:`PyThreadState_Swap` 関数でできます。\n"
-"次の関数を使ってサブインタプリタの作成と削除が行えます:"
+"Puede cambiar entre subinterpretes utilizando la función :c:func:"
+"`PyThreadState_Swap`. Puede crearlos y destruirlos utilizando las siguientes "
+"funciones:"
 
-#: ../../c-api/init.rst:1395
+#: ../Doc/c-api/init.rst:1395
 msgid ""
 "Create a new sub-interpreter.  This is an (almost) totally separate "
 "environment for the execution of Python code.  In particular, the new "
@@ -1997,18 +2204,17 @@ msgid ""
 "``sys.stdout`` and ``sys.stderr`` (however these refer to the same "
 "underlying file descriptors)."
 msgstr ""
-"新しいサブインタプリタ (sub-interpreter) を生成します。サブインタプリタとは、"
-"(ほぼ完全に) 個別に分割された Python コードの実行環境です。特に、新しいサブイ"
-"ンタプリタは、 import されるモジュール全てについて個別のバージョンを持ち、こ"
-"れには基盤となるモジュール :mod:`builtins`, :mod:`__main__` および :mod:"
-"`sys` も含まれます。ロード済みのモジュールからなるテーブル (``sys."
-"modules``)  およびモジュール検索パス (``sys.path``) もサブインタプリタ毎に別"
-"個のものになります。新たなサブインタプリタ環境には ``sys.argv`` 変数がありま"
-"せん。また、サブインタプリタは新たな標準 I/O ストリーム ``sys.stdin``, ``sys."
-"stdout``, ``sys.stderr`` を持ちます (とはいえ、これらのストリームは根底にある"
-"同じファイル記述子を参照しています)。"
+"Crea un nuevo subinterprete. Este es un entorno (casi) totalmente separado "
+"para la ejecución de código Python. En particular, el nuevo intérprete tiene "
+"versiones separadas e independientes de todos los módulos importados, "
+"incluidos los módulos fundamentales :mod:`builtins`, :mod:`__main__` y :mod:"
+"`sys`. La tabla de módulos cargados (``sys.modules``) y la ruta de búsqueda "
+"del módulo (``sys.path``) también están separados. El nuevo entorno no tiene "
+"variable ``sys.argv``. Tiene nuevos objetos de archivo de flujo de E/S "
+"estándar ``sys.stdin``, ``sys.stdout`` y ``sys.stderr`` (sin embargo, estos "
+"se refieren a los mismos descriptores de archivo subyacentes)."
 
-#: ../../c-api/init.rst:1405
+#: ../Doc/c-api/init.rst:1405
 msgid ""
 "The return value points to the first thread state created in the new sub-"
 "interpreter.  This thread state is made in the current thread state. Note "
@@ -2021,31 +2227,37 @@ msgid ""
 "unlike most other Python/C API functions, there needn't be a current thread "
 "state on entry.)"
 msgstr ""
-"戻り値は、新たなサブインタプリタが生成したスレッド状態 (thread state) オブ"
-"ジェクトのうち、最初のものを指しています。このスレッド状態が現在のスレッド状"
-"態 (current thread state) になります。実際のスレッドが生成されるわけではない"
-"ので注意してください; 下記のスレッド状態に関する議論を参照してください。新た"
-"なインタプリタの生成に失敗すると、``NULL`` を返します; 例外状態はセットされま"
-"せんが、これは例外状態が現在のスレッド状態に保存されることになっていて、現在"
-"のスレッド状態なるものが存在しないことがあるからです。(他の Python/C API 関数"
-"のように、この関数を呼び出す前にはGILが保持されていなければならず、関数が処理"
-"を戻した際にも保持されたままになります; しかし、他の Python/C API 関数とは違"
-"い、関数から戻ったときの現在のスレッド状態が関数に入るときと同じとは限らない"
-"ので注意してください。)"
+"El valor de retorno apunta al primer estado del hilo creado en el nuevo "
+"subinterprete. Este estado de hilo se realiza en el estado de hilo actual. "
+"Tenga en cuenta que no se crea ningún hilo real; vea la discusión de los "
+"estados del hilo a continuación. Si la creación del nuevo intérprete no "
+"tiene éxito, se retorna ``NULL``; no se establece ninguna excepción, ya que "
+"el estado de excepción se almacena en el estado actual del hilo y es posible "
+"que no haya un estado actual del hilo. (Al igual que todas las otras "
+"funciones de Python/C API, el bloqueo global del intérprete debe mantenerse "
+"antes de llamar a esta función y aún se mantiene cuando regresa; sin "
+"embargo, a diferencia de la mayoría de las otras funciones de Python/C API, "
+"no es necesario que haya un estado del hilo actual en entrada.)"
 
-#: ../../c-api/init.rst:1420
+#: ../Doc/c-api/init.rst:1420
 msgid "Extension modules are shared between (sub-)interpreters as follows:"
 msgstr ""
+"Los módulos de extensión se comparten entre (sub) intérpretes de la "
+"siguiente manera:"
 
-#: ../../c-api/init.rst:1422
+#: ../Doc/c-api/init.rst:1422
 msgid ""
 "For modules using multi-phase initialization, e.g. :c:func:"
 "`PyModule_FromDefAndSpec`, a separate module object is created and "
 "initialized for each interpreter. Only C-level static and global variables "
 "are shared between these module objects."
 msgstr ""
+"Para módulos que usan inicialización multifase, por ejemplo :c:func:"
+"`PyModule_FromDefAndSpec`, se crea e inicializa un objeto de módulo separado "
+"para cada intérprete. Solo las variables estáticas y globales de nivel C se "
+"comparten entre estos objetos de módulo."
 
-#: ../../c-api/init.rst:1428
+#: ../Doc/c-api/init.rst:1428
 msgid ""
 "For modules using single-phase initialization, e.g. :c:func:"
 "`PyModule_Create`, the first time a particular extension is imported, it is "
@@ -2056,8 +2268,17 @@ msgid ""
 "the module's dictionary thus end up shared across (sub-)interpreters, which "
 "might cause unwanted behavior (see `Bugs and caveats`_ below)."
 msgstr ""
+"Para módulos que utilizan inicialización monofásica, por ejemplo :c:func:"
+"`PyModule_Create`, la primera vez que se importa una extensión en "
+"particular, se inicializa normalmente y una copia (superficial) del "
+"diccionario de su módulo se guarda. Cuando otro (sub) intérprete importa la "
+"misma extensión, se inicializa un nuevo módulo y se llena con el contenido "
+"de esta copia; no se llama a la función ``init`` de la extensión. Los "
+"objetos en el diccionario del módulo terminan compartidos entre (sub) "
+"intérpretes, lo que puede causar un comportamiento no deseado (ver Errores y "
+"advertencias (`Bugs and caveats`_) a continuación)."
 
-#: ../../c-api/init.rst:1439
+#: ../Doc/c-api/init.rst:1439
 msgid ""
 "Note that this is different from what happens when an extension is imported "
 "after the interpreter has been completely re-initialized by calling :c:func:"
@@ -2066,8 +2287,14 @@ msgid ""
 "initialization, this means that only C-level static and global variables are "
 "shared between these modules."
 msgstr ""
+"Tenga en cuenta que esto es diferente de lo que sucede cuando se importa una "
+"extensión después de que el intérprete se haya reiniciado por completo "
+"llamando a :c:func:`Py_FinalizeEx` y :c:func:`Py_Initialize`; en ese caso, "
+"la función ``initmodule`` de la extensión *es* llamada nuevamente. Al igual "
+"que con la inicialización de múltiples fases, esto significa que solo se "
+"comparten variables estáticas y globales de nivel C entre estos módulos."
 
-#: ../../c-api/init.rst:1453
+#: ../Doc/c-api/init.rst:1453
 msgid ""
 "Destroy the (sub-)interpreter represented by the given thread state. The "
 "given thread state must be the current thread state.  See the discussion of "
@@ -2078,19 +2305,20 @@ msgid ""
 "destroy all sub-interpreters that haven't been explicitly destroyed at that "
 "point."
 msgstr ""
-"指定されたスレッド状態 *tstate* で表現される (サブ) インタプリタを抹消しま"
-"す。 *tstate* は現在のスレッド状態でなければなりません。下記のスレッド状態に"
-"関する議論を参照してください。関数呼び出しが戻ったとき、現在のスレッド状態は "
-"``NULL`` になっています。このインタプリタに関連付けられた全てのスレッド状態は"
-"抹消されます。 (この関数を呼び出す前にはGILを保持しておかなければならず、ロッ"
-"クは関数が戻ったときも保持されています。) :c:func:`Py_FinalizeEx` は、その時"
-"点で明示的に抹消されていない全てのサブインタプリタを抹消します。"
+"Destruye el (sub) intérprete representado por el estado del hilo dado. El "
+"estado del hilo dado debe ser el estado del hilo actual. Vea la discusión de "
+"los estados del hilo a continuación. Cuando la llamada regresa, el estado "
+"actual del hilo es ``NULL``. Todos los estados de hilo asociados con este "
+"intérprete se destruyen. (El bloqueo global del intérprete debe mantenerse "
+"antes de llamar a esta función y aún se mantiene cuando vuelve). :c:func:"
+"`Py_FinalizeEx` destruirá todos los subinterpretes que no se hayan destruido "
+"explícitamente en ese punto."
 
-#: ../../c-api/init.rst:1463
+#: ../Doc/c-api/init.rst:1463
 msgid "Bugs and caveats"
-msgstr "バグと注意事項"
+msgstr "Errores y advertencias"
 
-#: ../../c-api/init.rst:1465
+#: ../Doc/c-api/init.rst:1465
 msgid ""
 "Because sub-interpreters (and the main interpreter) are part of the same "
 "process, the insulation between them isn't perfect --- for example, using "
@@ -2102,8 +2330,18 @@ msgid ""
 "one sub-interpreter into a namespace of another (sub-)interpreter; this "
 "should be avoided if possible."
 msgstr ""
+"Debido a que los subinterpretes (y el intérprete principal) son parte del "
+"mismo proceso, el aislamiento entre ellos no es perfecto --- por ejemplo, "
+"usando operaciones de archivos de bajo nivel como :func:`os.close` pueden "
+"(accidentalmente o maliciosamente) afectar los archivos abiertos del otro. "
+"Debido a la forma en que las extensiones se comparten entre (sub) "
+"intérpretes, algunas extensiones pueden no funcionar correctamente; esto es "
+"especialmente probable cuando se utiliza la inicialización monofásica o las "
+"variables globales (estáticas). Es posible insertar objetos creados en un "
+"subinterprete en un espacio de nombres de otro (sub) intérprete; Esto debe "
+"evitarse si es posible."
 
-#: ../../c-api/init.rst:1475
+#: ../Doc/c-api/init.rst:1475
 msgid ""
 "Special care should be taken to avoid sharing user-defined functions, "
 "methods, instances or classes between sub-interpreters, since import "
@@ -2111,8 +2349,14 @@ msgid ""
 "dictionary of loaded modules. It is equally important to avoid sharing "
 "objects from which the above are reachable."
 msgstr ""
+"Se debe tener especial cuidado para evitar compartir funciones, métodos, "
+"instancias o clases definidas por el usuario entre los subinterpretes, ya "
+"que las operaciones de importación ejecutadas por dichos objetos pueden "
+"afectar el diccionario (sub-) intérprete incorrecto de los módulos cargados. "
+"Es igualmente importante evitar compartir objetos desde los que se pueda "
+"acceder a lo anterior."
 
-#: ../../c-api/init.rst:1481
+#: ../Doc/c-api/init.rst:1481
 msgid ""
 "Also note that combining this functionality with ``PyGILState_*`` APIs is "
 "delicate, because these APIs assume a bijection between Python thread states "
@@ -2123,82 +2367,96 @@ msgid ""
 "`ctypes`) using these APIs to allow calling of Python code from non-Python "
 "created threads will probably be broken when using sub-interpreters."
 msgstr ""
+"También tenga en cuenta que la combinación de esta funcionalidad con "
+"``PyGILState_*`` APIs es delicada, porque estas APIs suponen una biyección "
+"entre los estados de hilo de Python e hilos a nivel del sistema operativo, "
+"una suposición rota por la presencia de subinterpretes. Se recomienda "
+"encarecidamente que no cambie los subinterpretes entre un par de llamadas "
+"coincidentes :c:func:`PyGILState_Ensure` y :c:func:`PyGILState_Release`. "
+"Además, las extensiones (como :mod:`ctypes`) que usan estas APIs para "
+"permitir la llamada de código Python desde hilos no creados por Python "
+"probablemente se rompan cuando se usan subinterpretes."
 
-#: ../../c-api/init.rst:1492
+#: ../Doc/c-api/init.rst:1492
 msgid "Asynchronous Notifications"
-msgstr "非同期通知"
+msgstr "Notificaciones asincrónicas"
 
-#: ../../c-api/init.rst:1494
+#: ../Doc/c-api/init.rst:1494
 msgid ""
 "A mechanism is provided to make asynchronous notifications to the main "
 "interpreter thread.  These notifications take the form of a function pointer "
 "and a void pointer argument."
 msgstr ""
-"インタプリタのメインスレッドに非同期な通知を行うために提供されている仕組みで"
-"す。これらの通知は関数ポインタと void ポインタ引数という形態を取ります。"
+"Se proporciona un mecanismo para hacer notificaciones asincrónicas al hilo "
+"principal del intérprete. Estas notificaciones toman la forma de un puntero "
+"de función y un argumento de puntero nulo."
 
-#: ../../c-api/init.rst:1503
+#: ../Doc/c-api/init.rst:1503
 msgid ""
 "Schedule a function to be called from the main interpreter thread.  On "
 "success, ``0`` is returned and *func* is queued for being called in the main "
 "thread.  On failure, ``-1`` is returned without setting any exception."
 msgstr ""
-"インタプリタのメインスレッドから関数が呼び出される予定を組みます。成功すると "
-"``0`` が返り、*func* はメインスレッドの呼び出しキューに詰められます。失敗する"
-"と、例外をセットせずに ``-1`` が返ります。"
+"Programa una función para que se llame desde el hilo principal del "
+"intérprete. En caso de éxito, se retorna ``0`` y se pone en cola *func* para "
+"ser llamado en el hilo principal. En caso de fallo, se retorna ``-1`` sin "
+"establecer ninguna excepción."
 
-#: ../../c-api/init.rst:1507
+#: ../Doc/c-api/init.rst:1507
 msgid ""
 "When successfully queued, *func* will be *eventually* called from the main "
 "interpreter thread with the argument *arg*.  It will be called "
 "asynchronously with respect to normally running Python code, but with both "
 "these conditions met:"
 msgstr ""
-"無事にキューに詰められると、*func* は *いつかは必ず* インタプリタのメインス"
-"レッドから、*arg* を引数として呼び出されます。この関数は、通常の実行中の "
-"Python コードに対して非同期に呼び出されますが、次の両方の条件に合致したときに"
-"呼び出されます:"
+"Cuando se puso en cola con éxito, *func* será *eventualmente* invocado desde "
+"el hilo principal del intérprete con el argumento *arg*. Se llamará de forma "
+"asincrónica con respecto al código Python que se ejecuta normalmente, pero "
+"con ambas condiciones cumplidas:"
 
-#: ../../c-api/init.rst:1512
+#: ../Doc/c-api/init.rst:1512
 msgid "on a :term:`bytecode` boundary;"
-msgstr ":term:`bytecode` 境界上にいるとき、"
+msgstr "en un límite :term:`bytecode`;"
 
-#: ../../c-api/init.rst:1513
+#: ../Doc/c-api/init.rst:1513
 msgid ""
 "with the main thread holding the :term:`global interpreter lock` (*func* can "
 "therefore use the full C API)."
 msgstr ""
-"メインスレッドが :term:`global interpreter lock` を保持している (すなわち "
-"*func* が全ての C API を呼び出せる) とき。"
+"con el hilo principal que contiene el :term:`global interpreter lock` "
+"(*func*, por lo tanto, puede usar la API C completa)."
 
-#: ../../c-api/init.rst:1516
+#: ../Doc/c-api/init.rst:1516
 msgid ""
 "*func* must return ``0`` on success, or ``-1`` on failure with an exception "
 "set.  *func* won't be interrupted to perform another asynchronous "
 "notification recursively, but it can still be interrupted to switch threads "
 "if the global interpreter lock is released."
 msgstr ""
-"成功したら *func* は ``0`` を返さねばならず、失敗したら ``-1`` を返し例外を"
-"セットしなければいけません。*func* は、他の非同期通知を行うために、さらに割り"
-"込まれることはありませんが、グローバルインタプリタロックが解放された場合は、"
-"スレッドの切り替えによって割り込まれる可能性が残っています。"
+"*func* debe retornar ``0`` en caso de éxito o ``-1`` en caso de error con "
+"una excepción establecida. *func* no se interrumpirá para realizar otra "
+"notificación asíncrona de forma recursiva, pero aún se puede interrumpir "
+"para cambiar hilos si se libera el bloqueo global del intérprete."
 
-#: ../../c-api/init.rst:1521
+#: ../Doc/c-api/init.rst:1521
 msgid ""
 "This function doesn't need a current thread state to run, and it doesn't "
 "need the global interpreter lock."
 msgstr ""
-"この関数は実行するのに現在のスレッド状態を必要とせず、グローバルインタプリタ"
-"ロックも必要としません。"
+"Esta función no necesita un estado de hilo actual para ejecutarse y no "
+"necesita el bloqueo global del intérprete."
 
-#: ../../c-api/init.rst:1524
+#: ../Doc/c-api/init.rst:1524
 msgid ""
 "To call this function in a subinterpreter, the caller must hold the GIL. "
 "Otherwise, the function *func* can be scheduled to be called from the wrong "
 "interpreter."
 msgstr ""
+"Para llamar a esta función en un subinterprete, quien llama debe mantener el "
+"GIL. De lo contrario, la función *func* se puede programar para que se llame "
+"desde el intérprete incorrecto."
 
-#: ../../c-api/init.rst:1529
+#: ../Doc/c-api/init.rst:1529
 msgid ""
 "This is a low-level function, only useful for very special cases. There is "
 "no guarantee that *func* will be called as quick as possible.  If the main "
@@ -2207,37 +2465,40 @@ msgid ""
 "calling Python code from arbitrary C threads.  Instead, use the :ref:"
 "`PyGILState API<gilstate>`."
 msgstr ""
-"これは、非常に特別な場合にのみ役立つ、低レベルな関数です。 *func* が可能な限"
-"り早く呼び出される保証はありません。メインスレッドがシステムコールを実行する"
-"のに忙しい場合は、 *func* はシステムコールが返ってくるまで呼び出されないで"
-"しょう。この関数は一般的には、任意の C スレッドから Python コードを呼び出すの"
-"には **向きません** 。これの代わりに、 :ref:`PyGILState API<gilstate>` を使用"
-"してください。"
+"Esta es una función de bajo nivel, solo útil para casos muy especiales. No "
+"hay garantía de que *func* se llame lo más rápido posible. Si el hilo "
+"principal está ocupado ejecutando una llamada al sistema, no se llamará "
+"*func* antes de que vuelva la llamada del sistema. Esta función generalmente "
+"**no** es adecuada para llamar a código Python desde hilos C arbitrarios. En "
+"su lugar, use :ref:`PyGILState API <gilstate>`."
 
-#: ../../c-api/init.rst:1536
+#: ../Doc/c-api/init.rst:1536
 msgid ""
 "If this function is called in a subinterpreter, the function *func* is now "
 "scheduled to be called from the subinterpreter, rather than being called "
 "from the main interpreter. Each subinterpreter now has its own list of "
 "scheduled calls."
 msgstr ""
+"Si esta función se llama en un subinterprete, la función *func* ahora está "
+"programada para ser llamada desde el subinterprete, en lugar de ser llamada "
+"desde el intérprete principal. Cada subinterprete ahora tiene su propia "
+"lista de llamadas programadas."
 
-#: ../../c-api/init.rst:1547
+#: ../Doc/c-api/init.rst:1547
 msgid "Profiling and Tracing"
-msgstr "プロファイルとトレース (profiling and tracing)"
+msgstr "Perfilado y Rastreo"
 
-#: ../../c-api/init.rst:1552
+#: ../Doc/c-api/init.rst:1552
 msgid ""
 "The Python interpreter provides some low-level support for attaching "
 "profiling and execution tracing facilities.  These are used for profiling, "
 "debugging, and coverage analysis tools."
 msgstr ""
-"Python インタプリタは、プロファイル: 分析 (profile) や実行のトレース: 追跡 "
-"(trace) といった機能を組み込むために低水準のサポートを提供しています。このサ"
-"ポートは、プロファイルやデバッグ、適用範囲分析 (coverage analysis) ツールなど"
-"に使われます。"
+"El intérprete de Python proporciona soporte de bajo nivel para adjuntar "
+"funciones de creación de perfiles y seguimiento de ejecución. Estos se "
+"utilizan para herramientas de análisis de perfiles, depuración y cobertura."
 
-#: ../../c-api/init.rst:1556
+#: ../Doc/c-api/init.rst:1556
 msgid ""
 "This C interface allows the profiling or tracing code to avoid the overhead "
 "of calling through Python-level callable objects, making a direct C function "
@@ -2246,14 +2507,15 @@ msgid ""
 "basic events reported to the trace function are the same as had been "
 "reported to the Python-level trace functions in previous versions."
 msgstr ""
-"この C インターフェースは、プロファイルやトレース作業時に、Python レベルの呼"
-"び出し可能オブジェクトが呼び出されることによるオーバヘッドを避け、直接 C 関数"
-"呼び出しが行えるようにしています。プロファイルやトレース機能の本質的な特性は"
-"変わっていません; インターフェースではトレース関数をスレッドごとにインストー"
-"ルでき、トレース関数に報告される基本イベント (basic event) は以前のバージョン"
-"において Python レベルのトレース関数で報告されていたものと同じです。"
+"Esta interfaz C permite que el código de perfilado o rastreo evite la "
+"sobrecarga de llamar a través de objetos invocables a nivel de Python, "
+"haciendo una llamada directa a la función C en su lugar. Los atributos "
+"esenciales de la instalación no han cambiado; la interfaz permite instalar "
+"funciones de rastreo por hilos, y los eventos básicos informados a la "
+"función de rastreo son los mismos que se informaron a las funciones de "
+"rastreo a nivel de Python en versiones anteriores."
 
-#: ../../c-api/init.rst:1566
+#: ../Doc/c-api/init.rst:1566
 msgid ""
 "The type of the trace function registered using :c:func:`PyEval_SetProfile` "
 "and :c:func:`PyEval_SetTrace`. The first parameter is the object passed to "
@@ -2263,76 +2525,76 @@ msgid ""
 "`PyTrace_C_CALL`, :const:`PyTrace_C_EXCEPTION`, :const:`PyTrace_C_RETURN`, "
 "or :const:`PyTrace_OPCODE`, and *arg* depends on the value of *what*:"
 msgstr ""
-":c:func:`PyEval_SetProfile` および :c:func:`PyEval_SetTrace` を使って登録でき"
-"るトレース関数の形式です。最初のパラメタはオブジェクトで、登録関数に *obj* と"
-"して渡されます。 *frame* はイベントが属している実行フレームオブジェクトで、 "
-"*what* は定数 :const:`PyTrace_CALL`, :const:`PyTrace_EXCEPTION`, :const:"
-"`PyTrace_LINE`, :const:`PyTrace_RETURN`, :const:`PyTrace_C_CALL`,  :const:"
-"`PyTrace_C_RETURN`, :const:`PyTrace_OPCODE` のいずれかで、 *arg* は *what* の"
-"値によって以下のように異なります:"
+"El tipo de la función de rastreo registrada usando :c:func:"
+"`PyEval_SetProfile` y :c:func:`PyEval_SetTrace`. El primer parámetro es el "
+"objeto pasado a la función de registro como *obj*, *frame* es el objeto de "
+"marco al que pertenece el evento, *what* es una de las constantes :const:"
+"`PyTrace_CALL`, :const:`PyTrace_EXCEPTION` , :const:`PyTrace_LINE`, :const:"
+"`PyTrace_RETURN`, :const:`PyTrace_C_CALL`, :const:`PyTrace_C_EXCEPTION`, :"
+"const:`PyTrace_C_RETURN`, o :const:`PyTrace_OPCODE`, y *arg* depende de el "
+"valor de *what*:"
 
-#: ../../c-api/init.rst:1575
+#: ../Doc/c-api/init.rst:1575
 msgid "Value of *what*"
-msgstr "*what* の値"
+msgstr "Valor de *what*"
 
-#: ../../c-api/init.rst:1575
+#: ../Doc/c-api/init.rst:1575
 msgid "Meaning of *arg*"
-msgstr "*arg* の意味"
+msgstr "Significado de *arg*"
 
-#: ../../c-api/init.rst:1577
+#: ../Doc/c-api/init.rst:1577
 msgid ":const:`PyTrace_CALL`"
 msgstr ":const:`PyTrace_CALL`"
 
-#: ../../c-api/init.rst:1577 ../../c-api/init.rst:1582
-#: ../../c-api/init.rst:1593
+#: ../Doc/c-api/init.rst:1577 ../Doc/c-api/init.rst:1582
+#: ../Doc/c-api/init.rst:1593
 msgid "Always :c:data:`Py_None`."
-msgstr "常に :c:data:`Py_None` 。"
+msgstr "Siempre :c:data:`Py_None`."
 
-#: ../../c-api/init.rst:1579
+#: ../Doc/c-api/init.rst:1579
 msgid ":const:`PyTrace_EXCEPTION`"
 msgstr ":const:`PyTrace_EXCEPTION`"
 
-#: ../../c-api/init.rst:1579
+#: ../Doc/c-api/init.rst:1579
 msgid "Exception information as returned by :func:`sys.exc_info`."
-msgstr ":func:`sys.exc_info` の返す例外情報です。"
+msgstr "Información de excepción retornada por :func:`sys.exc_info`."
 
-#: ../../c-api/init.rst:1582
+#: ../Doc/c-api/init.rst:1582
 msgid ":const:`PyTrace_LINE`"
 msgstr ":const:`PyTrace_LINE`"
 
-#: ../../c-api/init.rst:1584
+#: ../Doc/c-api/init.rst:1584
 msgid ":const:`PyTrace_RETURN`"
 msgstr ":const:`PyTrace_RETURN`"
 
-#: ../../c-api/init.rst:1584
+#: ../Doc/c-api/init.rst:1584
 msgid ""
 "Value being returned to the caller, or ``NULL`` if caused by an exception."
 msgstr ""
-"呼び出し側に返される予定の値か、例外によって関数を抜ける場合は ``NULL`` で"
-"す。"
+"Valor retornado al que llama, o ``NULL`` si es causado por una excepción."
 
-#: ../../c-api/init.rst:1587
+#: ../Doc/c-api/init.rst:1587
 msgid ":const:`PyTrace_C_CALL`"
 msgstr ":const:`PyTrace_C_CALL`"
 
-#: ../../c-api/init.rst:1587 ../../c-api/init.rst:1589
-#: ../../c-api/init.rst:1591
+#: ../Doc/c-api/init.rst:1587 ../Doc/c-api/init.rst:1589
+#: ../Doc/c-api/init.rst:1591
 msgid "Function object being called."
-msgstr "呼び出される関数オブジェクト。"
+msgstr "Objeto función que se llaman."
 
-#: ../../c-api/init.rst:1589
+#: ../Doc/c-api/init.rst:1589
 msgid ":const:`PyTrace_C_EXCEPTION`"
 msgstr ":const:`PyTrace_C_EXCEPTION`"
 
-#: ../../c-api/init.rst:1591
+#: ../Doc/c-api/init.rst:1591
 msgid ":const:`PyTrace_C_RETURN`"
 msgstr ":const:`PyTrace_C_RETURN`"
 
-#: ../../c-api/init.rst:1593
+#: ../Doc/c-api/init.rst:1593
 msgid ":const:`PyTrace_OPCODE`"
 msgstr ":const:`PyTrace_OPCODE`"
 
-#: ../../c-api/init.rst:1598
+#: ../Doc/c-api/init.rst:1598
 msgid ""
 "The value of the *what* parameter to a :c:type:`Py_tracefunc` function when "
 "a new call to a function or method is being reported, or a new entry into a "
@@ -2340,13 +2602,13 @@ msgid ""
 "is not reported as there is no control transfer to the Python bytecode in "
 "the corresponding frame."
 msgstr ""
-"関数やメソッドが新たに呼び出されたり、ジェネレータが新たなエントリの処理に"
-"入ったことを報告する際の、 :c:type:`Py_tracefunc` の *what* の値です。イテ"
-"レータやジェネレータ関数の生成は、対応するフレーム内の Python バイトコードに"
-"制御の委譲 (control transfer) が起こらないため報告されないので注意してくださ"
-"い。"
+"El valor del parámetro *what* para una función :c:type:`Py_tracefunc` cuando "
+"se informa una nueva llamada a una función o método, o una nueva entrada en "
+"un generador. Tenga en cuenta que la creación del iterador para una función "
+"de generador no se informa ya que no hay transferencia de control al código "
+"de bytes de Python en la marco correspondiente."
 
-#: ../../c-api/init.rst:1607
+#: ../Doc/c-api/init.rst:1607
 msgid ""
 "The value of the *what* parameter to a :c:type:`Py_tracefunc` function when "
 "an exception has been raised.  The callback function is called with this "
@@ -2357,70 +2619,74 @@ msgid ""
 "Only trace functions receives these events; they are not needed by the "
 "profiler."
 msgstr ""
-"例外が送出された際の :c:type:`Py_tracefunc` の *what* の値です。現在実行され"
-"ているフレームで例外がセットされ、何らかのバイトコードが処理された後に、 "
-"*what* にこの値がセットされた状態でコールバック関数が呼び出されます。この結"
-"果、例外の伝播によって Python が呼び出しスタックを逆戻りする際に、各フレーム"
-"から処理が戻るごとにコールバック関数が呼び出されます。トレース関数だけがこれ"
-"らのイベントを受け取ります; プロファイラはこの種のイベントを必要としません。"
+"El valor del parámetro *what* para una función :c:type:`Py_tracefunc` cuando "
+"se ha producido una excepción. La función de devolución de llamada se llama "
+"con este valor para *what* cuando después de que se procese cualquier "
+"bytecode, después de lo cual la excepción se establece dentro del marco que "
+"se está ejecutando. El efecto de esto es que a medida que la propagación de "
+"la excepción hace que la pila de Python se desenrolle, el retorno de llamada "
+"se llama al retornar a cada marco a medida que se propaga la excepción. Solo "
+"las funciones de rastreo reciben estos eventos; el perfilador (*profiler*) "
+"no los necesita."
 
-#: ../../c-api/init.rst:1618
+#: ../Doc/c-api/init.rst:1618
 msgid ""
 "The value passed as the *what* parameter to a :c:type:`Py_tracefunc` "
 "function (but not a profiling function) when a line-number event is being "
 "reported. It may be disabled for a frame by setting :attr:`f_trace_lines` to "
 "*0* on that frame."
 msgstr ""
-"行番号イベントを報告するときに、 (プロファイル関数ではなく) :c:type:"
-"`Py_tracefunc` 関数に *what* 引数として渡す値です。\n"
-":attr:`f_trace_lines` が *0* に設定されたフレームでは無効化されていることもあ"
-"ります。"
+"El valor pasado como parámetro *what* a una función :c:type:`Py_tracefunc` "
+"(pero no una función de creación de perfiles) cuando se informa un evento de "
+"número de línea. Puede deshabilitarse para un marco configurando :attr:"
+"`f_trace_lines` en *0* en ese marco."
 
-#: ../../c-api/init.rst:1625
+#: ../Doc/c-api/init.rst:1625
 msgid ""
 "The value for the *what* parameter to :c:type:`Py_tracefunc` functions when "
 "a call is about to return."
 msgstr ""
-"呼び出しが返るときに :c:type:`Py_tracefunc` 関数に *what* 引数として渡す値で"
-"す。"
+"El valor para el parámetro *what* para :c:type:`Py_tracefunc` funciona "
+"cuando una llamada está por regresar."
 
-#: ../../c-api/init.rst:1631
+#: ../Doc/c-api/init.rst:1631
 msgid ""
 "The value for the *what* parameter to :c:type:`Py_tracefunc` functions when "
 "a C function is about to be called."
 msgstr ""
-"C関数を呼び出す直前に :c:type:`Py_tracefunc` 関数の *what* 引数として渡す値で"
-"す。"
+"El valor del parámetro *what* para :c:type:`Py_tracefunc` funciona cuando "
+"una función C está a punto de ser invocada."
 
-#: ../../c-api/init.rst:1637
+#: ../Doc/c-api/init.rst:1637
 msgid ""
 "The value for the *what* parameter to :c:type:`Py_tracefunc` functions when "
 "a C function has raised an exception."
 msgstr ""
-"C関数が例外を送出したときに :c:type:`Py_tracefunc` 関数の *what* 引数として渡"
-"す値です。"
+"El valor del parámetro *what* para funciones :c:type:`Py_tracefunc` cuando "
+"una función C ha lanzado una excepción."
 
-#: ../../c-api/init.rst:1643
+#: ../Doc/c-api/init.rst:1643
 msgid ""
 "The value for the *what* parameter to :c:type:`Py_tracefunc` functions when "
 "a C function has returned."
 msgstr ""
-"C関数から戻るときに :c:type:`Py_tracefunc` 関数の *what* 引数として渡す値で"
-"す。"
+"El valor del parámetro *what* para :c:type:`Py_tracefunc` funciona cuando "
+"una función C ha retornado."
 
-#: ../../c-api/init.rst:1649
+#: ../Doc/c-api/init.rst:1649
 msgid ""
 "The value for the *what* parameter to :c:type:`Py_tracefunc` functions (but "
 "not profiling functions) when a new opcode is about to be executed.  This "
 "event is not emitted by default: it must be explicitly requested by setting :"
 "attr:`f_trace_opcodes` to *1* on the frame."
 msgstr ""
-"新しい opcode が実行されるときに、 (プロファイル関数ではなく) :c:type:"
-"`Py_tracefunc` 関数に *what* 引数として渡す値です。\n"
-"デフォルトではイベントは発火しません。フレーム上で :attr:`f_trace_lines` を "
-"*1* に設定して、明示的に要請しなければなりません。"
+"El valor del parámetro *what* para funciones :c:type:`Py_tracefunc` (pero no "
+"funciones de creación de perfiles) cuando un nuevo código de operación está "
+"a punto de ejecutarse. Este evento no se emite de forma predeterminada: debe "
+"solicitarse explícitamente estableciendo :attr:`f_trace_opcodes` en *1* en "
+"el marco."
 
-#: ../../c-api/init.rst:1657
+#: ../Doc/c-api/init.rst:1657
 msgid ""
 "Set the profiler function to *func*.  The *obj* parameter is passed to the "
 "function as its first parameter, and may be any Python object, or ``NULL``.  "
@@ -2429,25 +2695,23 @@ msgid ""
 "it.  The profile function is called for all monitored events except :const:"
 "`PyTrace_LINE` :const:`PyTrace_OPCODE` and :const:`PyTrace_EXCEPTION`."
 msgstr ""
-"プロファイル関数を *func* に設定します。\n"
-"*obj* パラメタは関数の第一引数として渡されるもので、何らかの Python オブジェ"
-"クトあるいは ``NULL`` です。\n"
-"プロファイル関数がスレッド状態を維持する必要があるなら、各々のスレッドに異な"
-"る *obj* を使うことで、状態を記憶しておく便利でスレッドセーフな場所を提供でき"
-"ます。\n"
-"プロファイル関数は、モニタされているイベントのうち、 :const:`PyTrace_LINE` :"
-"const:`PyTrace_OPCODE`, :const:`PyTrace_EXCEPTION` を除く全てのイベントに対し"
-"て呼び出されます。"
+"Establece la función del generador de perfiles en *func*. El parámetro *obj* "
+"se pasa a la función como su primer parámetro, y puede ser cualquier objeto "
+"de Python o ``NULL``. Si la función de perfilado necesita mantener el "
+"estado, el uso de un valor diferente para *obj* para cada hilo proporciona "
+"un lugar conveniente y seguro para guardarlo. Se llama a la función de "
+"perfilado para todos los eventos supervisados, excepto :const:"
+"`PyTrace_LINE` :const:`PyTrace_OPCODE` y :const:`PyTrace_EXCEPTION`."
 
-#: ../../c-api/init.rst:1664
+#: ../Doc/c-api/init.rst:1664
 msgid "See also the :func:`sys.setprofile` function."
-msgstr ""
+msgstr "Consulte también la función :func:`sys.setprofile`."
 
-#: ../../c-api/init.rst:1666 ../../c-api/init.rst:1680
+#: ../Doc/c-api/init.rst:1666 ../Doc/c-api/init.rst:1680
 msgid "The caller must hold the :term:`GIL`."
-msgstr ""
+msgstr "La persona que llama debe mantener el :term:`GIL`."
 
-#: ../../c-api/init.rst:1671
+#: ../Doc/c-api/init.rst:1671
 msgid ""
 "Set the tracing function to *func*.  This is similar to :c:func:"
 "`PyEval_SetProfile`, except the tracing function does receive line-number "
@@ -2457,67 +2721,71 @@ msgid ""
 "`PyTrace_C_EXCEPTION` or :const:`PyTrace_C_RETURN` as a value for the *what* "
 "parameter."
 msgstr ""
-"トレース関数を *func* に設定します。\n"
-"この関数は :c:func:`PyEval_SetProfile` と同じですが、トレース関数は行番号イベ"
-"ントおよび opcode イベントを受け取り、呼び出された C 関数オブジェクトと関係す"
-"る任意のイベントを受け取らないところが異なっています。\n"
-":c:func:`PyEval_SetTrace` で登録されたトレース関数は、*what* 引数の値として :"
-"const:`PyTrace_C_CALL`, :const:`PyTrace_C_EXCEPTION`, :const:"
-"`PyTrace_C_RETURN` を受け取りません。"
+"Establece la función de rastreo en *func*. Esto es similar a :c:func:"
+"`PyEval_SetProfile`, excepto que la función de rastreo recibe eventos de "
+"número de línea y eventos por código de operación, pero no recibe ningún "
+"evento relacionado con los objetos de la función C. Cualquier función de "
+"rastreo registrada con :c:func:`PyEval_SetTrace` no recibirá :const:"
+"`PyTrace_C_CALL`, :const:`PyTrace_C_EXCEPTION` o :const:`PyTrace_C_RETURN` "
+"como valor para el parámetro *what*."
 
-#: ../../c-api/init.rst:1678
+#: ../Doc/c-api/init.rst:1678
 msgid "See also the :func:`sys.settrace` function."
-msgstr ""
+msgstr "Consulte también la función :func:`sys.settrace`."
 
-#: ../../c-api/init.rst:1686
+#: ../Doc/c-api/init.rst:1686
 msgid "Advanced Debugger Support"
-msgstr "高度なデバッガサポート (advanced debugger support)"
+msgstr "Soporte avanzado del depurador"
 
-#: ../../c-api/init.rst:1691
+#: ../Doc/c-api/init.rst:1691
 msgid ""
 "These functions are only intended to be used by advanced debugging tools."
-msgstr "以下の関数は高度なデバッグツールでの使用のためだけのものです。"
+msgstr ""
+"Estas funciones solo están destinadas a ser utilizadas por herramientas de "
+"depuración avanzadas."
 
-#: ../../c-api/init.rst:1696
+#: ../Doc/c-api/init.rst:1696
 msgid ""
 "Return the interpreter state object at the head of the list of all such "
 "objects."
 msgstr ""
-"インタプリタ状態オブジェクトからなるリストのうち、先頭にあるものを返します。"
+"Retorna el objeto de estado del intérprete al principio de la lista de todos "
+"esos objetos."
 
-#: ../../c-api/init.rst:1701
+#: ../Doc/c-api/init.rst:1701
 msgid "Return the main interpreter state object."
-msgstr "メインインタプリタの状態オブジェクトを返します。"
+msgstr "Retorna el objeto de estado del intérprete principal."
 
-#: ../../c-api/init.rst:1706
+#: ../Doc/c-api/init.rst:1706
 msgid ""
 "Return the next interpreter state object after *interp* from the list of all "
 "such objects."
 msgstr ""
-"インタプリタ状態オブジェクトからなるリストのうち、*interp* の次にあるものを返"
-"します。"
+"Retorna el siguiente objeto de estado de intérprete después de *interp* de "
+"la lista de todos esos objetos."
 
-#: ../../c-api/init.rst:1712
+#: ../Doc/c-api/init.rst:1712
 msgid ""
 "Return the pointer to the first :c:type:`PyThreadState` object in the list "
 "of threads associated with the interpreter *interp*."
 msgstr ""
-"インタプリタ *interp* に関連付けられているスレッドからなるリストのうち、先頭"
-"にある :c:type:`PyThreadState` オブジェクトを返します。"
+"Retorna el puntero al primer objeto :c:type:`PyThreadState` en la lista de "
+"hilos asociados con el intérprete *interp*."
 
-#: ../../c-api/init.rst:1718
+#: ../Doc/c-api/init.rst:1718
 msgid ""
 "Return the next thread state object after *tstate* from the list of all such "
 "objects belonging to the same :c:type:`PyInterpreterState` object."
 msgstr ""
-"*tstate* と同じ :c:type:`PyInterpreterState` オブジェクトに属しているスレッド"
-"状態オブジェクトのうち、 *tstate* の次にあるものを返します。"
+"Retorna el siguiente objeto de estado del hilo después de *tstate* de la "
+"lista de todos los objetos que pertenecen al mismo objeto :c:type:"
+"`PyInterpreterState`."
 
-#: ../../c-api/init.rst:1725
+#: ../Doc/c-api/init.rst:1725
 msgid "Thread Local Storage Support"
-msgstr "スレッドローカルストレージのサポート"
+msgstr "Soporte de almacenamiento local de hilo"
 
-#: ../../c-api/init.rst:1729
+#: ../Doc/c-api/init.rst:1729
 msgid ""
 "The Python interpreter provides low-level support for thread-local storage "
 "(TLS) which wraps the underlying native TLS implementation to support the "
@@ -2526,126 +2794,158 @@ msgid ""
 "use a thread key and functions to associate a :c:expr:`void*` value per "
 "thread."
 msgstr ""
+"El intérprete de Python proporciona soporte de bajo nivel para el "
+"almacenamiento local de hilos (TLS) que envuelve la implementación de TLS "
+"nativa subyacente para admitir la API de almacenamiento local de hilos de "
+"nivel Python (:class:`threading.local`). Las APIs de nivel CPython C son "
+"similares a las ofrecidas por pthreads y Windows: use una clave de hilo y "
+"funciones para asociar un valor de :c:expr:`void*` por hilo."
 
-#: ../../c-api/init.rst:1736
+#: ../Doc/c-api/init.rst:1736
 msgid ""
 "The GIL does *not* need to be held when calling these functions; they supply "
 "their own locking."
 msgstr ""
-"API で使われる関数を呼ぶときは、 GIL を取得する必要は *ありません* 。関数自身"
-"のロックがサポートされています。"
+"El GIL *no* necesita ser retenido al llamar a estas funciones; proporcionan "
+"su propio bloqueo."
 
-#: ../../c-api/init.rst:1739
+#: ../Doc/c-api/init.rst:1739
 msgid ""
 "Note that :file:`Python.h` does not include the declaration of the TLS APIs, "
 "you need to include :file:`pythread.h` to use thread-local storage."
 msgstr ""
-":file:`Python.h` は TLS API の宣言を include せず、スレッドローカルストレージ"
-"を使うには :file:`pythread.h` を include する必要があることに注意してくださ"
-"い。"
+"Tenga en cuenta que :file:`Python.h` no incluye la declaración de las API de "
+"TLS, debe incluir :file:`pythread.h` para usar el almacenamiento local de "
+"hilos."
 
-#: ../../c-api/init.rst:1743
+#: ../Doc/c-api/init.rst:1743
 msgid ""
 "None of these API functions handle memory management on behalf of the :c:"
 "expr:`void*` values.  You need to allocate and deallocate them yourself. If "
 "the :c:expr:`void*` values happen to be :c:expr:`PyObject*`, these functions "
 "don't do refcount operations on them either."
 msgstr ""
+"Ninguna de estas funciones API maneja la administración de memoria en nombre "
+"de los valores :c:expr:`void*`. Debe asignarlos y desasignarlos usted mismo. "
+"Si los valores :c:expr:`void*` son :c:expr:`PyObject*`, estas funciones "
+"tampoco realizan operaciones de conteo de referencias en ellos."
 
-#: ../../c-api/init.rst:1751
+#: ../Doc/c-api/init.rst:1751
 msgid "Thread Specific Storage (TSS) API"
-msgstr "スレッド固有ストレージ (Thread Specific Storage, TSS) API"
+msgstr ""
+"API de almacenamiento específico de hilo (TSS, *Thread Specific Storage*)"
 
-#: ../../c-api/init.rst:1753
+#: ../Doc/c-api/init.rst:1753
 msgid ""
 "TSS API is introduced to supersede the use of the existing TLS API within "
 "the CPython interpreter.  This API uses a new type :c:type:`Py_tss_t` "
 "instead of :c:expr:`int` to represent thread keys."
 msgstr ""
+"La API de TSS se introduce para reemplazar el uso de la API TLS existente "
+"dentro del intérprete de CPython. Esta API utiliza un nuevo tipo :c:type:"
+"`Py_tss_t` en lugar de :c:expr:`int` para representar las claves del hilo."
 
-#: ../../c-api/init.rst:1759
+#: ../Doc/c-api/init.rst:1759
 msgid "\"A New C-API for Thread-Local Storage in CPython\" (:pep:`539`)"
 msgstr ""
-"\"CPython のスレッドローカルストレージのための新しい C API\" (:pep:`539`)"
+"\"Una nueva C-API para *Thread-Local Storage* en CPython\" (:pep:`539`)"
 
-#: ../../c-api/init.rst:1764
+#: ../Doc/c-api/init.rst:1764
 msgid ""
 "This data structure represents the state of a thread key, the definition of "
 "which may depend on the underlying TLS implementation, and it has an "
 "internal field representing the key's initialization state.  There are no "
 "public members in this structure."
 msgstr ""
-"このデータ構造体はスレッドキーの状態を表現しています。この構造体の定義は、根"
-"底の TLS 実装に依存し、キーの初期化状態を表現する内部フィールドを持ちます。\n"
-"この構造体には公開 (public) のメンバはありません。"
+"Esta estructura de datos representa el estado de una clave del hilo, cuya "
+"definición puede depender de la implementación de TLS subyacente, y tiene un "
+"campo interno que representa el estado de inicialización de la clave. No hay "
+"miembros públicos en esta estructura."
 
-#: ../../c-api/init.rst:1769
+#: ../Doc/c-api/init.rst:1769
 msgid ""
 "When :ref:`Py_LIMITED_API <stable>` is not defined, static allocation of "
 "this type by :c:macro:`Py_tss_NEEDS_INIT` is allowed."
 msgstr ""
-":ref:`Py_LIMITED_API <stable>` が定義されていないときは、この型の :c:macro:"
-"`Py_tss_NEEDS_INIT` による静的メモリ確保ができます。"
+"Cuando :ref:`Py_LIMITED_API <stable>` no está definido, la asignación "
+"estática de este tipo por :c:macro:`Py_tss_NEEDS_INIT` está permitida."
 
-#: ../../c-api/init.rst:1775
+#: ../Doc/c-api/init.rst:1775
 msgid ""
 "This macro expands to the initializer for :c:type:`Py_tss_t` variables. Note "
 "that this macro won't be defined with :ref:`Py_LIMITED_API <stable>`."
 msgstr ""
-"このマクロは :c:type:`Py_tss_t` 変数の初期化子に展開されます。\n"
-"このマクロは :ref:`Py_LIMITED_API <stable>` があるときは定義されません。"
+"Esta macro se expande al inicializador para variables :c:type:`Py_tss_t`. "
+"Tenga en cuenta que esta macro no se definirá con :ref:`Py_LIMITED_API "
+"<stable>`."
 
-#: ../../c-api/init.rst:1780
+#: ../Doc/c-api/init.rst:1780
 msgid "Dynamic Allocation"
-msgstr "動的メモリ確保"
+msgstr "Asignación dinámica"
 
-#: ../../c-api/init.rst:1782
+#: ../Doc/c-api/init.rst:1782
 msgid ""
 "Dynamic allocation of the :c:type:`Py_tss_t`, required in extension modules "
 "built with :ref:`Py_LIMITED_API <stable>`, where static allocation of this "
 "type is not possible due to its implementation being opaque at build time."
 msgstr ""
-"動的な :c:type:`Py_tss_t` のメモリ確保は :ref:`Py_LIMITED_API <stable>` でビ"
-"ルドされた拡張モジュールで必要になりますが、その実装がビルド時に不透明なため"
-"に、この型の静的なメモリ確保は不可能です。"
+"Asignación dinámica de :c:type:`Py_tss_t`, requerida en los módulos de "
+"extensión construidos con :ref:`Py_LIMITED_API <stable>`, donde la "
+"asignación estática de este tipo no es posible debido a que su "
+"implementación es opaca en el momento de la compilación."
 
-#: ../../c-api/init.rst:1789
+#: ../Doc/c-api/init.rst:1789
 msgid ""
 "Return a value which is the same state as a value initialized with :c:macro:"
 "`Py_tss_NEEDS_INIT`, or ``NULL`` in the case of dynamic allocation failure."
 msgstr ""
+"Retorna un valor que es el mismo estado que un valor inicializado con :c:"
+"macro:`Py_tss_NEEDS_INIT`, o ``NULL`` en caso de falla de asignación "
+"dinámica."
 
-#: ../../c-api/init.rst:1796
+#: ../Doc/c-api/init.rst:1796
 msgid ""
 "Free the given *key* allocated by :c:func:`PyThread_tss_alloc`, after first "
 "calling :c:func:`PyThread_tss_delete` to ensure any associated thread locals "
 "have been unassigned. This is a no-op if the *key* argument is ``NULL``."
 msgstr ""
+"Libera la *clave* asignada por :c:func:`PyThread_tss_alloc`, después de "
+"llamar por primera vez :c:func:`PyThread_tss_delete` para asegurarse de que "
+"los hilos locales asociados no hayan sido asignados. Esto es un no-op si el "
+"argumento *clave* es ``NULL``."
 
-#: ../../c-api/init.rst:1802
+#: ../Doc/c-api/init.rst:1802
 msgid ""
 "A freed key becomes a dangling pointer. You should reset the key to ``NULL``."
 msgstr ""
+"Una clave liberada se convierte en un puntero colgante. Debería restablecer "
+"la clave a ``NULL``."
 
-#: ../../c-api/init.rst:1807
+#: ../Doc/c-api/init.rst:1807
 msgid "Methods"
-msgstr "メソッド"
+msgstr "Métodos"
 
-#: ../../c-api/init.rst:1809
+#: ../Doc/c-api/init.rst:1809
 msgid ""
 "The parameter *key* of these functions must not be ``NULL``.  Moreover, the "
 "behaviors of :c:func:`PyThread_tss_set` and :c:func:`PyThread_tss_get` are "
 "undefined if the given :c:type:`Py_tss_t` has not been initialized by :c:"
 "func:`PyThread_tss_create`."
 msgstr ""
+"El parámetro *key* de estas funciones no debe ser ``NULL``. Además, los "
+"comportamientos de :c:func:`PyThread_tss_set` y :c:func:`PyThread_tss_get` "
+"no están definidos si el :c:type:`Py_tss_t` dado no ha sido inicializado "
+"por :c:func:`PyThread_tss_create`."
 
-#: ../../c-api/init.rst:1817
+#: ../Doc/c-api/init.rst:1817
 msgid ""
 "Return a non-zero value if the given :c:type:`Py_tss_t` has been initialized "
 "by :c:func:`PyThread_tss_create`."
 msgstr ""
+"Retorna un valor distinto de cero si :c:type:`Py_tss_t` ha sido inicializado "
+"por :c:func:`PyThread_tss_create`."
 
-#: ../../c-api/init.rst:1823
+#: ../Doc/c-api/init.rst:1823
 msgid ""
 "Return a zero value on successful initialization of a TSS key.  The behavior "
 "is undefined if the value pointed to by the *key* argument is not "
@@ -2653,8 +2953,13 @@ msgid ""
 "repeatedly on the same key -- calling it on an already initialized key is a "
 "no-op and immediately returns success."
 msgstr ""
+"Retorna un valor cero en la inicialización exitosa de una clave TSS. El "
+"comportamiento no está definido si el valor señalado por el argumento *key* "
+"no se inicializa con :c:macro:`Py_tss_NEEDS_INIT`. Esta función se puede "
+"invocar repetidamente en la misma tecla: llamarla a una tecla ya "
+"inicializada es un *no-op* e inmediatamente retorna el éxito."
 
-#: ../../c-api/init.rst:1832
+#: ../Doc/c-api/init.rst:1832
 msgid ""
 "Destroy a TSS key to forget the values associated with the key across all "
 "threads, and change the key's initialization state to uninitialized.  A "
@@ -2662,32 +2967,46 @@ msgid ""
 "`PyThread_tss_create`. This function can be called repeatedly on the same "
 "key -- calling it on an already destroyed key is a no-op."
 msgstr ""
+"Destruye una clave TSS para olvidar los valores asociados con la clave en "
+"todos los hilos y cambie el estado de inicialización de la clave a no "
+"inicializado. Una clave destruida se puede inicializar nuevamente mediante :"
+"c:func:`PyThread_tss_create`. Esta función se puede invocar repetidamente en "
+"la misma llave; llamarla en una llave ya destruida es un *no-op*."
 
-#: ../../c-api/init.rst:1841
+#: ../Doc/c-api/init.rst:1841
 msgid ""
 "Return a zero value to indicate successfully associating a :c:expr:`void*` "
 "value with a TSS key in the current thread.  Each thread has a distinct "
 "mapping of the key to a :c:expr:`void*` value."
 msgstr ""
+"Retorna un valor cero para indicar la asociación exitosa de un valor a :c:"
+"expr:`void*` con una clave TSS en el hilo actual. Cada hilo tiene un mapeo "
+"distinto de la clave a un valor :c:expr:`void*`."
 
-#: ../../c-api/init.rst:1848
+#: ../Doc/c-api/init.rst:1848
 msgid ""
 "Return the :c:expr:`void*` value associated with a TSS key in the current "
 "thread.  This returns ``NULL`` if no value is associated with the key in the "
 "current thread."
 msgstr ""
+"Retorna el valor :c:expr:`void*` asociado con una clave TSS en el hilo "
+"actual. Esto retorna ``NULL`` si no hay ningún valor asociado con la clave "
+"en el hilo actual."
 
-#: ../../c-api/init.rst:1856
+#: ../Doc/c-api/init.rst:1856
 msgid "Thread Local Storage (TLS) API"
-msgstr "スレッドローカルストレージ (TLS) API"
+msgstr "API de almacenamiento local de hilos (TLS, *Thread Local Storage*)"
 
-#: ../../c-api/init.rst:1858
+#: ../Doc/c-api/init.rst:1858
 msgid ""
 "This API is superseded by :ref:`Thread Specific Storage (TSS) API <thread-"
 "specific-storage-api>`."
 msgstr ""
+"Esta API es reemplazada por :ref:`API de Almacenamiento Específico de Hilos "
+"(TSS, por sus significado en inglés *Thread Specific Storage*) <thread-"
+"specific-storage-api>`."
 
-#: ../../c-api/init.rst:1863
+#: ../Doc/c-api/init.rst:1863
 msgid ""
 "This version of the API does not support platforms where the native TLS key "
 "is defined in a way that cannot be safely cast to ``int``.  On such "
@@ -2695,11 +3014,29 @@ msgid ""
 "failure status, and the other TLS functions will all be no-ops on such "
 "platforms."
 msgstr ""
+"Esta versión de la API no es compatible con plataformas donde la clave TLS "
+"nativa se define de una manera que no se puede transmitir de forma segura a "
+"``int``. En tales plataformas, :c:func:`PyThread_create_key` regresará "
+"inmediatamente con un estado de falla, y las otras funciones TLS serán no "
+"operativas en tales plataformas."
 
-#: ../../c-api/init.rst:1868
+#: ../Doc/c-api/init.rst:1868
 msgid ""
 "Due to the compatibility problem noted above, this version of the API should "
 "not be used in new code."
 msgstr ""
-"前述の互換性の問題により、このバージョンのAPIは新規のコードで利用すべきではあ"
-"りません。"
+"Debido al problema de compatibilidad mencionado anteriormente, esta versión "
+"de la API no debe usarse en código nuevo."
+
+#~ msgid ""
+#~ "Note that the :c:func:`PyGILState_\\*` functions assume there is only one "
+#~ "global interpreter (created automatically by :c:func:`Py_Initialize`).  "
+#~ "Python supports the creation of additional interpreters (using :c:func:"
+#~ "`Py_NewInterpreter`), but mixing multiple interpreters and the :c:func:"
+#~ "`PyGILState_\\*` API is unsupported."
+#~ msgstr ""
+#~ "Tenga en cuenta que las funciones :c:func:`PyGILState_\\*` suponen que "
+#~ "solo hay un intérprete global (creado automáticamente por :c:func:"
+#~ "`Py_Initialize`). Python admite la creación de intérpretes adicionales "
+#~ "(usando :c:func:`Py_NewInterpreter`), pero la mezcla de múltiples "
+#~ "intérpretes y la API :c:func:`PyGILState_\\*` no son compatibles."

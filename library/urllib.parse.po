@@ -1,52 +1,50 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# Osamu NAKAMURA, 2021
-# mollinaca, 2021
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2022
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:17+0000\n"
-"Last-Translator: tomo, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2021-10-16 21:42+0200\n"
+"PO-Revision-Date: 2021-12-13 22:07-0300\n"
+"Last-Translator: Rodrigo Tobar <rtobarc@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.9.1\n"
+"X-Generator: Poedit 3.0\n"
 
-#: ../../library/urllib.parse.rst:2
+#: ../Doc/library/urllib.parse.rst:2
 msgid ":mod:`urllib.parse` --- Parse URLs into components"
-msgstr ":mod:`urllib.parse` --- URL を解析して構成要素にする"
+msgstr ":mod:`urllib.parse` --- Analiza URL en componentes"
 
-#: ../../library/urllib.parse.rst:7
+#: ../Doc/library/urllib.parse.rst:7
 msgid "**Source code:** :source:`Lib/urllib/parse.py`"
-msgstr "**ソースコード:** :source:`Lib/urllib/parse.py`"
+msgstr "**Código fuente:** :source:`Lib/urllib/parse.py`"
 
-#: ../../library/urllib.parse.rst:18
+#: ../Doc/library/urllib.parse.rst:18
 msgid ""
 "This module defines a standard interface to break Uniform Resource Locator "
 "(URL) strings up in components (addressing scheme, network location, path "
 "etc.), to combine the components back into a URL string, and to convert a "
 "\"relative URL\" to an absolute URL given a \"base URL.\""
 msgstr ""
-"このモジュールでは URL (Uniform Resource Locator) 文字列をその構成要素 (アド"
-"レススキーム、ネットワーク上の位置、パスその他) に分解したり、構成要素を URL "
-"に組みなおしたり、 \"相対 URL (relative URL)\" を指定した \"基底 URL (base "
-"URL)\" に基づいて絶対 URL に変換するための標準的なインターフェースを定義して"
-"います。"
+"Este modulo define una interfaz estándar para separar cadenas de texto del "
+"Localizador de recursos uniforme (más conocido por las siglas URL, del "
+"inglés *Uniform Resource Locator*) en componentes (esquema de dirección, "
+"ubicación de red, ruta de acceso, etc.), para poder combinar los "
+"componentes  nuevamente en una cadena de texto URL, y convertir una \"URL "
+"relativa\" a una URL absoluta a partir de una \"URL base\"."
 
-#: ../../library/urllib.parse.rst:23
+#: ../Doc/library/urllib.parse.rst:23
 msgid ""
 "The module has been designed to match the internet RFC on Relative Uniform "
 "Resource Locators. It supports the following URL schemes: ``file``, ``ftp``, "
@@ -55,35 +53,38 @@ msgid ""
 "``shttp``, ``sip``, ``sips``, ``snews``, ``svn``, ``svn+ssh``, ``telnet``, "
 "``wais``, ``ws``, ``wss``."
 msgstr ""
-"このモジュールは Relative Uniform Resource Locators (相対 URL) に関するイン"
-"ターネット RFC に適合するよう設計されており、次の URL スキームをサポートして"
-"います: ``file``, ``ftp``, ``gopher``, ``hdl``, ``http``, ``https``, "
+"Este módulo ha sido diseñado para coincidir con el RFC de internet sobre "
+"localizadores de recursos uniformes relativos. Admite los siguientes "
+"esquemas URL: ``file``, ``ftp``, ``gopher``, ``hdl``, ``http``, ``https``, "
 "``imap``, ``mailto``, ``mms``, ``news``, ``nntp``, ``prospero``, ``rsync``, "
 "``rtsp``, ``rtspu``, ``sftp``, ``shttp``, ``sip``, ``sips``, ``snews``, "
-"``svn``, ``svn+ssh``, ``telnet``, ``wais``, ``ws``, ``wss``"
+"``svn``, ``svn+ssh``, ``telnet``, ``wais``, ``ws``, ``wss``."
 
-#: ../../library/urllib.parse.rst:30
+#: ../Doc/library/urllib.parse.rst:30
 msgid ""
 "The :mod:`urllib.parse` module defines functions that fall into two broad "
 "categories: URL parsing and URL quoting. These are covered in detail in the "
 "following sections."
 msgstr ""
-":mod:`urllib.parse` モジュールは、大きく分けると URL の解析を行う関数と URL "
-"のクオートを行う関数を定義しています。以下にこれらの詳細を説明します。"
+"El módulo :mod:`urllib.parse` define funciones que se dividen en dos "
+"categorías amplias: análisis de URL y cita de URL. Estos se tratan en "
+"detalle en las secciones siguientes."
 
-#: ../../library/urllib.parse.rst:35
+#: ../Doc/library/urllib.parse.rst:35
 msgid "URL Parsing"
-msgstr "URL の解析"
+msgstr "Análisis de URL"
 
-#: ../../library/urllib.parse.rst:37
+#: ../Doc/library/urllib.parse.rst:37
 msgid ""
 "The URL parsing functions focus on splitting a URL string into its "
 "components, or on combining URL components into a URL string."
 msgstr ""
-"URL 解析関数は、URL 文字列を各構成要素に分割するか、あるいは URL の構成要素を"
-"組み合わせて URL 文字列を生成します。"
+"Las funciones de análisis de url se centran en dividir una cadena de "
+"dirección URL en sus componentes o en combinar componentes de dirección URL "
+"en una cadena de dirección URL."
 
-#: ../../library/urllib.parse.rst:42
+#: ../Doc/library/urllib.parse.rst:42
+#, python-format
 msgid ""
 "Parse a URL into six components, returning a 6-item :term:`named tuple`.  "
 "This corresponds to the general structure of a URL: ``scheme://netloc/path;"
@@ -93,275 +94,296 @@ msgid ""
 "delimiters as shown above are not part of the result, except for a leading "
 "slash in the *path* component, which is retained if present.  For example:"
 msgstr ""
-"URL を解析して 6 つの構成要素にし、6 要素の :term:`named tuple` を返します。"
-"このタプルは URL の一般的な構造: ``scheme://netloc/path;parameters?"
-"query#fragment`` に対応しています。各タプル要素は文字列で、空の場合もありま"
-"す。構成要素がさらに小さい要素に分解されることはありません (例えばネットワー"
-"ク上の位置は単一の文字列になります)。また % によるエスケープは展開されませ"
-"ん。上で示された区切り文字がタプルの各要素の一部分として含まれることはありま"
-"せんが、*path* 要素の先頭のスラッシュがある場合には例外です。たとえば以下のよ"
-"うになります:"
+"Analiza una URL en seis componentes, retornando una :term:`tupla nombrada "
+"<named tuple>` de 6 elementos.  Esto corresponde a la estructura general de "
+"una URL: ``scheme://netloc/path;parameters?query#fragment``. Cada elemento "
+"de la tupla es una cadena de caracteres, posiblemente vacía. Los componentes "
+"no se dividen en piezas más pequeñas (por ejemplo, la ubicación de red es "
+"una sola cadena) y los caracteres % de escape no están expandidos. Los "
+"delimitadores como se muestra anteriormente no forman parte del resultado, "
+"excepto una barra diagonal inicial en el componente *path*, el cual es "
+"conservado si está presente.  Por ejemplo:"
 
-#: ../../library/urllib.parse.rst:75
+#: ../Doc/library/urllib.parse.rst:63
 msgid ""
 "Following the syntax specifications in :rfc:`1808`, urlparse recognizes a "
 "netloc only if it is properly introduced by '//'.  Otherwise the input is "
 "presumed to be a relative URL and thus to start with a path component."
 msgstr ""
-":rfc:`1808` にある文法仕様に基づき、urlparse は '//' で始まる場合にのみ "
-"netloc を認識します。それ以外の場合は、入力は相対URLであると推定され、path 部"
-"分で始まることになります。"
+"Siguiendo las especificaciones de sintaxis en :rfc:`1808`, urlparse reconoce "
+"un netloc sólo si es introducido correctamente por '//'.  De lo contrario, "
+"se supone que la entrada es una dirección URL relativa y, por lo tanto, "
+"comienza con un componente de ruta de acceso."
 
-#: ../../library/urllib.parse.rst:94
+#: ../Doc/library/urllib.parse.rst:82
 msgid ""
 "The *scheme* argument gives the default addressing scheme, to be used only "
 "if the URL does not specify one.  It should be the same type (text or bytes) "
 "as *urlstring*, except that the default value ``''`` is always allowed, and "
 "is automatically converted to ``b''`` if appropriate."
 msgstr ""
-"*scheme* 引数によってデフォルトのアドレススキームを与えると、アドレススキーム"
-"を指定していない URL のみに使用されます。常に許されるデフォルトの ``''`` "
-"(``b''`` に自動変換出来る)を除き、 *urlstring* と同じ型(テキストもしくはバイ"
-"ト列)であるべきです。"
+"El argumento *scheme* proporciona el esquema de direccionamiento "
+"predeterminado, que solo se utilizará si la dirección URL no especifica "
+"uno.  Debe ser del mismo tipo (texto o bytes) que *urlstring*, excepto que "
+"el valor predeterminado ``''``  siempre está permitido, y se convierte "
+"automáticamente a ``b''`` si aplica."
 
-#: ../../library/urllib.parse.rst:99
+#: ../Doc/library/urllib.parse.rst:87
 msgid ""
 "If the *allow_fragments* argument is false, fragment identifiers are not "
 "recognized.  Instead, they are parsed as part of the path, parameters or "
 "query component, and :attr:`fragment` is set to the empty string in the "
 "return value."
 msgstr ""
-"引数 *allow_fragments* が false の場合、フラグメント識別子は認識されません。"
-"その代わり、それはパス、パラメータ、またはクエリ要素の一部として解析され、戻"
-"り値の :attr:`fragment` は空文字に設定されます。"
+"Si el argumento *allow_fragments* es falso, los identificadores de fragmento "
+"no son reconocidos. Sino que, son analizados como parte de la ruta, "
+"parámetros o componentes de la consulta y el :attr:`fragment` es configurado "
+"como una cadena vacía en el valor retornado."
 
-#: ../../library/urllib.parse.rst:104
+#: ../Doc/library/urllib.parse.rst:92
 msgid ""
 "The return value is a :term:`named tuple`, which means that its items can be "
 "accessed by index or as named attributes, which are:"
 msgstr ""
-"戻り値は :term:`名前付きタプル` です。これは、インデックス指定もしくは以下の"
-"ような名前属性で要素にアクセスできることを意味します:"
+"El valor retornado es un :term:`named tuple`, lo que significa que se puede "
+"tener acceso a sus elementos por índice o como atributos con nombre, que son:"
 
-#: ../../library/urllib.parse.rst:108 ../../library/urllib.parse.rst:293
-#: ../../library/urllib.parse.rst:397
+#: ../Doc/library/urllib.parse.rst:96 ../Doc/library/urllib.parse.rst:281
+#: ../Doc/library/urllib.parse.rst:385
 msgid "Attribute"
-msgstr "属性"
+msgstr "Atributo"
 
-#: ../../library/urllib.parse.rst:108 ../../library/urllib.parse.rst:293
-#: ../../library/urllib.parse.rst:397
+#: ../Doc/library/urllib.parse.rst:96 ../Doc/library/urllib.parse.rst:281
+#: ../Doc/library/urllib.parse.rst:385
 msgid "Index"
-msgstr "インデックス"
+msgstr "Índice"
 
-#: ../../library/urllib.parse.rst:108 ../../library/urllib.parse.rst:293
-#: ../../library/urllib.parse.rst:397
+#: ../Doc/library/urllib.parse.rst:96 ../Doc/library/urllib.parse.rst:281
+#: ../Doc/library/urllib.parse.rst:385
 msgid "Value"
-msgstr "値"
+msgstr "Valor"
 
-#: ../../library/urllib.parse.rst:108 ../../library/urllib.parse.rst:293
-#: ../../library/urllib.parse.rst:397
+#: ../Doc/library/urllib.parse.rst:96 ../Doc/library/urllib.parse.rst:281
+#: ../Doc/library/urllib.parse.rst:385
 msgid "Value if not present"
-msgstr "指定されなかった場合の値"
+msgstr "Valor si no está presente"
 
-#: ../../library/urllib.parse.rst:110 ../../library/urllib.parse.rst:295
+#: ../Doc/library/urllib.parse.rst:98 ../Doc/library/urllib.parse.rst:283
 msgid ":attr:`scheme`"
 msgstr ":attr:`scheme`"
 
-#: ../../library/urllib.parse.rst:110 ../../library/urllib.parse.rst:295
-#: ../../library/urllib.parse.rst:399
+#: ../Doc/library/urllib.parse.rst:98 ../Doc/library/urllib.parse.rst:283
+#: ../Doc/library/urllib.parse.rst:387
 msgid "0"
 msgstr "0"
 
-#: ../../library/urllib.parse.rst:110 ../../library/urllib.parse.rst:295
+#: ../Doc/library/urllib.parse.rst:98 ../Doc/library/urllib.parse.rst:283
 msgid "URL scheme specifier"
-msgstr "URL スキーム"
+msgstr "Especificador de esquema de URL"
 
-#: ../../library/urllib.parse.rst:110 ../../library/urllib.parse.rst:295
+#: ../Doc/library/urllib.parse.rst:98 ../Doc/library/urllib.parse.rst:283
 msgid "*scheme* parameter"
-msgstr "*scheme* パラメータ"
+msgstr "parámetro *scheme*"
 
-#: ../../library/urllib.parse.rst:112 ../../library/urllib.parse.rst:297
+#: ../Doc/library/urllib.parse.rst:100 ../Doc/library/urllib.parse.rst:285
 msgid ":attr:`netloc`"
 msgstr ":attr:`netloc`"
 
-#: ../../library/urllib.parse.rst:112 ../../library/urllib.parse.rst:297
-#: ../../library/urllib.parse.rst:401
+#: ../Doc/library/urllib.parse.rst:100 ../Doc/library/urllib.parse.rst:285
+#: ../Doc/library/urllib.parse.rst:389
 msgid "1"
 msgstr "1"
 
-#: ../../library/urllib.parse.rst:112 ../../library/urllib.parse.rst:297
+#: ../Doc/library/urllib.parse.rst:100 ../Doc/library/urllib.parse.rst:285
 msgid "Network location part"
-msgstr "ネットワーク上の位置"
+msgstr "Parte de ubicación de red"
 
-#: ../../library/urllib.parse.rst:112 ../../library/urllib.parse.rst:114
-#: ../../library/urllib.parse.rst:116 ../../library/urllib.parse.rst:119
-#: ../../library/urllib.parse.rst:121 ../../library/urllib.parse.rst:297
-#: ../../library/urllib.parse.rst:299 ../../library/urllib.parse.rst:301
-#: ../../library/urllib.parse.rst:303 ../../library/urllib.parse.rst:399
-#: ../../library/urllib.parse.rst:401
+#: ../Doc/library/urllib.parse.rst:100 ../Doc/library/urllib.parse.rst:102
+#: ../Doc/library/urllib.parse.rst:104 ../Doc/library/urllib.parse.rst:107
+#: ../Doc/library/urllib.parse.rst:109 ../Doc/library/urllib.parse.rst:285
+#: ../Doc/library/urllib.parse.rst:287 ../Doc/library/urllib.parse.rst:289
+#: ../Doc/library/urllib.parse.rst:291 ../Doc/library/urllib.parse.rst:387
+#: ../Doc/library/urllib.parse.rst:389
 msgid "empty string"
-msgstr "空文字列"
+msgstr "cadena vacía"
 
-#: ../../library/urllib.parse.rst:114 ../../library/urllib.parse.rst:299
+#: ../Doc/library/urllib.parse.rst:102 ../Doc/library/urllib.parse.rst:287
 msgid ":attr:`path`"
 msgstr ":attr:`path`"
 
-#: ../../library/urllib.parse.rst:114 ../../library/urllib.parse.rst:299
+#: ../Doc/library/urllib.parse.rst:102 ../Doc/library/urllib.parse.rst:287
 msgid "2"
 msgstr "2"
 
-#: ../../library/urllib.parse.rst:114 ../../library/urllib.parse.rst:299
+#: ../Doc/library/urllib.parse.rst:102 ../Doc/library/urllib.parse.rst:287
 msgid "Hierarchical path"
-msgstr "階層的パス"
+msgstr "Hierarchical path"
 
-#: ../../library/urllib.parse.rst:116
+#: ../Doc/library/urllib.parse.rst:104
 msgid ":attr:`params`"
 msgstr ":attr:`params`"
 
-#: ../../library/urllib.parse.rst:116 ../../library/urllib.parse.rst:301
+#: ../Doc/library/urllib.parse.rst:104 ../Doc/library/urllib.parse.rst:289
 msgid "3"
 msgstr "3"
 
-#: ../../library/urllib.parse.rst:116
+#: ../Doc/library/urllib.parse.rst:104
 msgid "Parameters for last path element"
-msgstr "最後のパス要素に対するパラメータ"
+msgstr "Parámetros para el último elemento de ruta de acceso"
 
-#: ../../library/urllib.parse.rst:119 ../../library/urllib.parse.rst:301
+#: ../Doc/library/urllib.parse.rst:107 ../Doc/library/urllib.parse.rst:289
 msgid ":attr:`query`"
 msgstr ":attr:`query`"
 
-#: ../../library/urllib.parse.rst:119 ../../library/urllib.parse.rst:303
+#: ../Doc/library/urllib.parse.rst:107 ../Doc/library/urllib.parse.rst:291
 msgid "4"
 msgstr "4"
 
-#: ../../library/urllib.parse.rst:119 ../../library/urllib.parse.rst:301
+#: ../Doc/library/urllib.parse.rst:107 ../Doc/library/urllib.parse.rst:289
 msgid "Query component"
-msgstr "クエリ要素"
+msgstr "Componente de consulta"
 
-#: ../../library/urllib.parse.rst:121 ../../library/urllib.parse.rst:303
-#: ../../library/urllib.parse.rst:401
+#: ../Doc/library/urllib.parse.rst:109 ../Doc/library/urllib.parse.rst:291
+#: ../Doc/library/urllib.parse.rst:389
 msgid ":attr:`fragment`"
 msgstr ":attr:`fragment`"
 
-#: ../../library/urllib.parse.rst:121
+#: ../Doc/library/urllib.parse.rst:109
 msgid "5"
 msgstr "5"
 
-#: ../../library/urllib.parse.rst:121 ../../library/urllib.parse.rst:303
-#: ../../library/urllib.parse.rst:401
+#: ../Doc/library/urllib.parse.rst:109 ../Doc/library/urllib.parse.rst:291
+#: ../Doc/library/urllib.parse.rst:389
 msgid "Fragment identifier"
-msgstr "フラグメント識別子"
+msgstr "Identificador de fragmento"
 
-#: ../../library/urllib.parse.rst:123 ../../library/urllib.parse.rst:305
+#: ../Doc/library/urllib.parse.rst:111 ../Doc/library/urllib.parse.rst:293
 msgid ":attr:`username`"
 msgstr ":attr:`username`"
 
-#: ../../library/urllib.parse.rst:123 ../../library/urllib.parse.rst:305
+#: ../Doc/library/urllib.parse.rst:111 ../Doc/library/urllib.parse.rst:293
 msgid "User name"
-msgstr "ユーザ名"
+msgstr "Nombre de usuario"
 
-#: ../../library/urllib.parse.rst:123 ../../library/urllib.parse.rst:125
-#: ../../library/urllib.parse.rst:127 ../../library/urllib.parse.rst:129
-#: ../../library/urllib.parse.rst:305 ../../library/urllib.parse.rst:307
-#: ../../library/urllib.parse.rst:309 ../../library/urllib.parse.rst:311
+#: ../Doc/library/urllib.parse.rst:111 ../Doc/library/urllib.parse.rst:113
+#: ../Doc/library/urllib.parse.rst:115 ../Doc/library/urllib.parse.rst:117
+#: ../Doc/library/urllib.parse.rst:293 ../Doc/library/urllib.parse.rst:295
+#: ../Doc/library/urllib.parse.rst:297 ../Doc/library/urllib.parse.rst:299
 msgid ":const:`None`"
 msgstr ":const:`None`"
 
-#: ../../library/urllib.parse.rst:125 ../../library/urllib.parse.rst:307
+#: ../Doc/library/urllib.parse.rst:113 ../Doc/library/urllib.parse.rst:295
 msgid ":attr:`password`"
 msgstr ":attr:`password`"
 
-#: ../../library/urllib.parse.rst:125 ../../library/urllib.parse.rst:307
+#: ../Doc/library/urllib.parse.rst:113 ../Doc/library/urllib.parse.rst:295
 msgid "Password"
-msgstr "パスワード"
+msgstr "Contraseña"
 
-#: ../../library/urllib.parse.rst:127 ../../library/urllib.parse.rst:309
+#: ../Doc/library/urllib.parse.rst:115 ../Doc/library/urllib.parse.rst:297
 msgid ":attr:`hostname`"
 msgstr ":attr:`hostname`"
 
-#: ../../library/urllib.parse.rst:127 ../../library/urllib.parse.rst:309
+#: ../Doc/library/urllib.parse.rst:115 ../Doc/library/urllib.parse.rst:297
 msgid "Host name (lower case)"
-msgstr "ホスト名 (小文字)"
+msgstr "Nombre de host (minúsculas)"
 
-#: ../../library/urllib.parse.rst:129 ../../library/urllib.parse.rst:311
+#: ../Doc/library/urllib.parse.rst:117 ../Doc/library/urllib.parse.rst:299
 msgid ":attr:`port`"
 msgstr ":attr:`port`"
 
-#: ../../library/urllib.parse.rst:129 ../../library/urllib.parse.rst:311
+#: ../Doc/library/urllib.parse.rst:117 ../Doc/library/urllib.parse.rst:299
 msgid "Port number as integer, if present"
-msgstr "ポート番号を表わす整数 (もしあれば)"
+msgstr "Número de puerto como entero, si está presente"
 
-#: ../../library/urllib.parse.rst:133 ../../library/urllib.parse.rst:315
+#: ../Doc/library/urllib.parse.rst:121 ../Doc/library/urllib.parse.rst:303
 msgid ""
 "Reading the :attr:`port` attribute will raise a :exc:`ValueError` if an "
 "invalid port is specified in the URL.  See section :ref:`urlparse-result-"
 "object` for more information on the result object."
 msgstr ""
-"URL中で不正なポートが指定されている場合、 :attr:`port` 属性を読みだすと、:"
-"exc:`ValueError` を送出します。結果オブジェクトのより詳しい情報は :ref:"
-"`urlparse-result-object` 節を参照してください。"
+"La lectura del atributo :attr:`port` lanzará un :exc:`ValueError` si se "
+"especifica un puerto no válido en la dirección URL.  Consulte la sección :"
+"ref:`urlparse-result-object` para obtener más información sobre el objeto de "
+"resultado."
 
-#: ../../library/urllib.parse.rst:137 ../../library/urllib.parse.rst:319
+#: ../Doc/library/urllib.parse.rst:125 ../Doc/library/urllib.parse.rst:307
 msgid ""
 "Unmatched square brackets in the :attr:`netloc` attribute will raise a :exc:"
 "`ValueError`."
 msgstr ""
-":attr:`netloc` 属性にマッチしなかった角括弧があると :exc:`ValueError` を送出"
-"します。"
+"Los corchetes no coincidentes en el atributo :attr:`netloc` lanzarán un :exc:"
+"`ValueError`."
 
-#: ../../library/urllib.parse.rst:140 ../../library/urllib.parse.rst:322
+#: ../Doc/library/urllib.parse.rst:128 ../Doc/library/urllib.parse.rst:310
 msgid ""
 "Characters in the :attr:`netloc` attribute that decompose under NFKC "
 "normalization (as used by the IDNA encoding) into any of ``/``, ``?``, "
 "``#``, ``@``, or ``:`` will raise a :exc:`ValueError`. If the URL is "
 "decomposed before parsing, no error will be raised."
 msgstr ""
+"Los caracteres del atributo :attr:`netloc` que se descomponen en la "
+"normalización de NFKC (según lo utilizado por la codificación IDNA) en "
+"cualquiera de ``/``, ``?``, ``#``, ``@`` o ``:`` lanzará un :exc:"
+"`ValueError`. Si la dirección URL se descompone antes del análisis, no se "
+"producirá ningún error."
 
-#: ../../library/urllib.parse.rst:145
+#: ../Doc/library/urllib.parse.rst:133
 msgid ""
 "As is the case with all named tuples, the subclass has a few additional "
 "methods and attributes that are particularly useful. One such method is :"
 "meth:`_replace`. The :meth:`_replace` method will return a new ParseResult "
 "object replacing specified fields with new values."
 msgstr ""
+"Como es el caso con todas las tuplas con nombre, la subclase tiene algunos "
+"métodos y atributos adicionales que son particularmente útiles. Uno de estos "
+"métodos es :meth:`_replace`. El método :meth:`_replace` retornará un nuevo "
+"objeto ParseResult reemplazando los campos especificados por nuevos valores."
 
-#: ../../library/urllib.parse.rst:163
+#: ../Doc/library/urllib.parse.rst:151
 msgid "Added IPv6 URL parsing capabilities."
-msgstr "IPv6 URL の解析も行えるようになりました。"
+msgstr "Se han añadido capacidades de análisis de URL IPv6."
 
-#: ../../library/urllib.parse.rst:166
+#: ../Doc/library/urllib.parse.rst:154
 msgid ""
 "The fragment is now parsed for all URL schemes (unless *allow_fragment* is "
 "false), in accordance with :rfc:`3986`.  Previously, an allowlist of schemes "
 "that support fragments existed."
 msgstr ""
+"El fragmento ahora es analizado para todos los esquemas de URL (a menos que "
+"*allow_fragment* sea falso), de acuerdo con :rfc:`3986`.  Anteriormente, "
+"existía una lista de permisos de esquemas que admitían fragmentos."
 
-#: ../../library/urllib.parse.rst:171 ../../library/urllib.parse.rst:330
+#: ../Doc/library/urllib.parse.rst:159 ../Doc/library/urllib.parse.rst:318
 msgid ""
 "Out-of-range port numbers now raise :exc:`ValueError`, instead of returning :"
 "const:`None`."
 msgstr ""
-"範囲外のポート番号を指定すると、 :const:`None` を返す代わりに、:exc:"
-"`ValueError` を送出するようになりました。"
+"Los números de puerto fuera de rango ahora generan :exc:`ValueError`, en "
+"lugar de retornar :const:`None`."
 
-#: ../../library/urllib.parse.rst:175 ../../library/urllib.parse.rst:334
+#: ../Doc/library/urllib.parse.rst:163 ../Doc/library/urllib.parse.rst:322
 msgid ""
 "Characters that affect netloc parsing under NFKC normalization will now "
 "raise :exc:`ValueError`."
 msgstr ""
+"Los caracteres que afectan al análisis de netloc en la normalización de NFKC "
+"ahora lanzarán :exc:`ValueError`."
 
-#: ../../library/urllib.parse.rst:182
+#: ../Doc/library/urllib.parse.rst:170
 msgid ""
 "Parse a query string given as a string argument (data of type :mimetype:"
 "`application/x-www-form-urlencoded`).  Data are returned as a dictionary.  "
 "The dictionary keys are the unique query variable names and the values are "
 "lists of values for each name."
 msgstr ""
-"文字列引数として渡されたクエリ文字列  (:mimetype:`application/x-www-form-"
-"urlencoded` 型のデータ) を解析します。解析されたデータを辞書として返します。"
-"辞書のキーは一意なクエリ変数名で、値は各変数名に対する値からなるリストです。"
+"Analizar una cadena de consulta proporcionada como argumento de cadena "
+"(datos de tipo :mimetype:`application/x-www-form-urlencoded`).  Los datos se "
+"retornan como un diccionario.  Las claves de diccionario son los nombres de "
+"variable de consulta únicos y los valores son listas de valores para cada "
+"nombre."
 
-#: ../../library/urllib.parse.rst:187 ../../library/urllib.parse.rst:232
+#: ../Doc/library/urllib.parse.rst:175 ../Doc/library/urllib.parse.rst:220
 msgid ""
 "The optional argument *keep_blank_values* is a flag indicating whether blank "
 "values in percent-encoded queries should be treated as blank strings. A true "
@@ -369,88 +391,100 @@ msgid ""
 "default false value indicates that blank values are to be ignored and "
 "treated as if they were not included."
 msgstr ""
-"任意の引数 *keep_blank_values* は、パーセントエンコードされたクエリの中の値が"
-"入っていないクエリの値を空白文字列と見なすかどうかを示すフラグです。値が真で"
-"あれば、値の入っていないフィールドは空文字列のままになります。標準では偽で、"
-"値の入っていないフィールドを無視し、そのフィールドはクエリに含まれていないも"
-"のとして扱います。"
+"El argumento opcional *keep_blank_values* es un indicador que indica si los "
+"valores en blanco de las consultas codificadas por porcentaje deben tratarse "
+"como cadenas en blanco. Un valor verdadero indica que los espacios en blanco "
+"deben conservarse como cadenas en blanco.  El valor falso predeterminado "
+"indica que los valores en blanco deben omitirse y tratarse como si no se "
+"hubieran incluido."
 
-#: ../../library/urllib.parse.rst:193 ../../library/urllib.parse.rst:238
+#: ../Doc/library/urllib.parse.rst:181 ../Doc/library/urllib.parse.rst:226
 msgid ""
 "The optional argument *strict_parsing* is a flag indicating what to do with "
 "parsing errors.  If false (the default), errors are silently ignored.  If "
 "true, errors raise a :exc:`ValueError` exception."
 msgstr ""
-"任意の引数 *strict_parsing* はパース時のエラーをどう扱うかを決めるフラグで"
-"す。値が偽なら (デフォルトの設定です)、エラーは暗黙のうちに無視します。値が真"
-"なら :exc:`ValueError` 例外を送出します。"
+"El argumento opcional *strict_parsing* es una marca que indica qué hacer con "
+"los errores de análisis.  Si es falso (valor predeterminado), los errores se "
+"omiten silenciosamente.  Si es verdadero, los errores generan una excepción :"
+"exc:`ValueError`."
 
-#: ../../library/urllib.parse.rst:197 ../../library/urllib.parse.rst:242
+#: ../Doc/library/urllib.parse.rst:185 ../Doc/library/urllib.parse.rst:230
 msgid ""
 "The optional *encoding* and *errors* parameters specify how to decode "
 "percent-encoded sequences into Unicode characters, as accepted by the :meth:"
 "`bytes.decode` method."
 msgstr ""
-"任意のパラメータ *encoding* および *errors* はパーセントエンコードされたシー"
-"ケンスを Unicode 文字にデコードする方法を指定します。これは :meth:`bytes."
-"decode` メソッドに渡されます。"
+"Los parámetros opcionales *encoding* y *errors* especifican cómo "
+"descodificar secuencias codificadas porcentualmente en caracteres Unicode, "
+"tal como lo acepta el método :meth:`bytes.decode`."
 
-#: ../../library/urllib.parse.rst:201 ../../library/urllib.parse.rst:246
+#: ../Doc/library/urllib.parse.rst:189 ../Doc/library/urllib.parse.rst:234
 msgid ""
 "The optional argument *max_num_fields* is the maximum number of fields to "
 "read. If set, then throws a :exc:`ValueError` if there are more than "
 "*max_num_fields* fields read."
 msgstr ""
+"El argumento opcional *max_num_fields* es el número máximo de campos que se "
+"van a leer. Si se establece, se produce un :exc:`ValueError` si hay más de "
+"*max_num_fields* campos leídos."
 
-#: ../../library/urllib.parse.rst:205 ../../library/urllib.parse.rst:250
+#: ../Doc/library/urllib.parse.rst:193 ../Doc/library/urllib.parse.rst:238
 msgid ""
 "The optional argument *separator* is the symbol to use for separating the "
 "query arguments. It defaults to ``&``."
 msgstr ""
+"El argumento opcional *separator* es el símbolo que se usa para separar los "
+"argumentos de la cadena de consulta. El valor por defecto es ``&``."
 
-#: ../../library/urllib.parse.rst:208
+#: ../Doc/library/urllib.parse.rst:196
 msgid ""
 "Use the :func:`urllib.parse.urlencode` function (with the ``doseq`` "
 "parameter set to ``True``) to convert such dictionaries into query strings."
 msgstr ""
-"このような辞書をクエリ文字列に変換するには :func:`urllib.parse.urlencode` 関"
-"数を (``doseq`` パラメータに ``True`` を指定して) 使用します。"
+"Utilice la función :func:`urllib.parse.urlencode` (con el parámetro "
+"``doseq`` establecido en ``True``) para convertir dichos diccionarios en "
+"cadenas de consulta."
 
-#: ../../library/urllib.parse.rst:213 ../../library/urllib.parse.rst:256
+#: ../Doc/library/urllib.parse.rst:201 ../Doc/library/urllib.parse.rst:244
 msgid "Add *encoding* and *errors* parameters."
-msgstr "*encoding* および *errors* パラメータが追加されました。"
+msgstr "Agregue los parámetros *encoding* y *errors*."
 
-#: ../../library/urllib.parse.rst:216 ../../library/urllib.parse.rst:259
+#: ../Doc/library/urllib.parse.rst:204 ../Doc/library/urllib.parse.rst:247
 msgid "Added *max_num_fields* parameter."
-msgstr "*max_num_fields* パラメータが追加されました。"
+msgstr "Añadido parámetro *max_num_fields*."
 
-#: ../../library/urllib.parse.rst:219 ../../library/urllib.parse.rst:262
+#: ../Doc/library/urllib.parse.rst:207 ../Doc/library/urllib.parse.rst:250
 msgid ""
 "Added *separator* parameter with the default value of ``&``. Python versions "
 "earlier than Python 3.10 allowed using both ``;`` and ``&`` as query "
 "parameter separator. This has been changed to allow only a single separator "
 "key, with ``&`` as the default separator."
 msgstr ""
+"Añadido parámetro *separator* con un valor por defecto de ``&``. Versiones "
+"de Python anterior a Python 3.10 permitían el uso de ``;`` y ``&`` como "
+"separadores de la cadena de consulta. Esto ha sido cambiado para aceptar "
+"sólo una llave separadora, siendo ``&`` el separador por defecto."
 
-#: ../../library/urllib.parse.rst:228
+#: ../Doc/library/urllib.parse.rst:216
 msgid ""
 "Parse a query string given as a string argument (data of type :mimetype:"
 "`application/x-www-form-urlencoded`).  Data are returned as a list of name, "
 "value pairs."
 msgstr ""
-"文字列引数として渡されたクエリ文字列 (:mimetype:`application/x-www-form-"
-"urlencoded` 型のデータ) を解析します。解析されたデータは名前と値のペアからな"
-"るリストです。"
+"Analizar una cadena de consulta proporcionada como argumento de cadena "
+"(datos de tipo :mimetype:`application/x-www-form-urlencoded`).  Los datos se "
+"retornan como una lista de pares de nombre y valor."
 
-#: ../../library/urllib.parse.rst:253
+#: ../Doc/library/urllib.parse.rst:241
 msgid ""
 "Use the :func:`urllib.parse.urlencode` function to convert such lists of "
 "pairs into query strings."
 msgstr ""
-"ペアのリストからクエリ文字列を生成する場合には :func:`urllib.parse."
-"urlencode` 関数を使用します。"
+"Utilice la función :func:`urllib.parse.urlencode` para convertir dichas "
+"listas de pares en cadenas de consulta."
 
-#: ../../library/urllib.parse.rst:271
+#: ../Doc/library/urllib.parse.rst:259
 msgid ""
 "Construct a URL from a tuple as returned by ``urlparse()``. The *parts* "
 "argument can be any six-item iterable. This may result in a slightly "
@@ -458,12 +492,14 @@ msgid ""
 "unnecessary delimiters (for example, a ``?`` with an empty query; the RFC "
 "states that these are equivalent)."
 msgstr ""
-"``urlparse()`` が返すような形式のタプルから URL を構築します。*parts* 引数は"
-"任意の 6 要素イテラブルです。解析された元の URL が、不要な区切り文字を持って"
-"いた場合には、多少違いはあるが等価な URL になるかもしれません (例えばクエリ内"
-"容が空の ``?`` のようなもので、RFC はこれらを等価だと述べています)。"
+"Construir una URL a partir de una tupla retornada por ``urlparse()``. El "
+"argumento *parts* puede ser iterable de seis elementos. Esto puede dar lugar "
+"a una dirección URL ligeramente diferente, pero equivalente, si la dirección "
+"URL que se analizó originalmente tenía delimitadores innecesarios (por "
+"ejemplo, un ``?`` con una consulta vacía; la RFC indica que son "
+"equivalentes)."
 
-#: ../../library/urllib.parse.rst:280
+#: ../Doc/library/urllib.parse.rst:268
 msgid ""
 "This is similar to :func:`urlparse`, but does not split the params from the "
 "URL. This should generally be used instead of :func:`urlparse` if the more "
@@ -472,29 +508,36 @@ msgid ""
 "is needed to separate the path segments and parameters.  This function "
 "returns a 5-item :term:`named tuple`::"
 msgstr ""
-":func:`urlparse` に似ていますが、URL から params を切り離しません。このメソッ"
-"ドは通常、URL の *path* 部分において、各セグメントにパラメータ指定をできるよ"
-"うにした最近の URL 構文 (:rfc:`2396` 参照) が必要な場合に、 :func:`urlparse` "
-"の代わりに使われます。パスセグメントとパラメータを分割するためには分割用の関"
-"数が必要です。この関数は 5 要素の :term:`named tuple` を返します::"
+"Esto es similar a :func:`urlparse`, pero no divide los parámetros de la "
+"dirección URL. Esto se debe utilizar generalmente en lugar de :func:"
+"`urlparse` si se desea la sintaxis de URL más reciente que permite aplicar "
+"parámetros a cada segmento de la parte *path* de la dirección URL (consulte :"
+"rfc:`2396`).  Se necesita una función independiente para separar los "
+"segmentos y parámetros de ruta.  Esta función retorna un 5-item :term:`named "
+"tuple`::"
 
-#: ../../library/urllib.parse.rst:289 ../../library/urllib.parse.rst:393
+#: ../Doc/library/urllib.parse.rst:277 ../Doc/library/urllib.parse.rst:381
 msgid ""
 "The return value is a :term:`named tuple`, its items can be accessed by "
 "index or as named attributes:"
 msgstr ""
+"El valor retornado es un :term:`named tuple`, se puede acceder a sus "
+"elementos por índice o como atributos con nombre:"
 
-#: ../../library/urllib.parse.rst:327
+#: ../Doc/library/urllib.parse.rst:315
 msgid ""
 "Following the `WHATWG spec`_ that updates RFC 3986, ASCII newline ``\\n``, "
 "``\\r`` and tab ``\\t`` characters are stripped from the URL."
 msgstr ""
+"Siguiendo la especificación `WHATWG spec`_ que actualiza RFC 3986, los "
+"caracteres ASCII nueva línea ``\\n``, ``\\r`` y tab ``\\t`` se eliminan de "
+"la URL."
 
-#: ../../library/urllib.parse.rst:338
+#: ../Doc/library/urllib.parse.rst:326
 msgid "ASCII newline and tab characters are stripped from the URL."
-msgstr ""
+msgstr "Los caracteres ASCII de nueva línea y tab se eliminan de la URL."
 
-#: ../../library/urllib.parse.rst:345
+#: ../Doc/library/urllib.parse.rst:333
 msgid ""
 "Combine the elements of a tuple as returned by :func:`urlsplit` into a "
 "complete URL as a string. The *parts* argument can be any five-item "
@@ -502,101 +545,110 @@ msgid ""
 "the URL that was parsed originally had unnecessary delimiters (for example, "
 "a ? with an empty query; the RFC states that these are equivalent)."
 msgstr ""
-":func:`urlsplit` が返すような形式のタプル中のエレメントを組み合わせて、文字列"
-"の完全な URL にします。 *parts* 引数は任意の 5 要素イテラブルです。解析された"
-"元の URL が、不要な区切り文字を持っていた場合には、多少違いはあるが等価な "
-"URL になるかもしれません (例えばクエリ内容が空の ? のようなもので、RFC はこれ"
-"らを等価だと述べています)。"
+"Combine los elementos de una tupla retornados por :func:`urlsplit` en una "
+"URL completa como una cadena. El argumento *parts* puede ser iterable de "
+"cinco elementos. Esto puede dar lugar a una dirección URL ligeramente "
+"diferente, pero equivalente, si la dirección URL que se analizó "
+"originalmente tenía delimitadores innecesarios (por ejemplo, un ? con una "
+"consulta vacía; la RFC indica que son equivalentes)."
 
-#: ../../library/urllib.parse.rst:354
+#: ../Doc/library/urllib.parse.rst:342
 msgid ""
 "Construct a full (\"absolute\") URL by combining a \"base URL\" (*base*) "
 "with another URL (*url*).  Informally, this uses components of the base URL, "
 "in particular the addressing scheme, the network location and (part of) the "
 "path, to provide missing components in the relative URL.  For example:"
 msgstr ""
-"\"基底 URL\"(*base*)と別のURL(*url*)を組み合わせて、完全な URL (\"絶対 "
-"URL\") を構成します。くだけて言えば、この関数は相対 URL にない要素を提供する"
-"ために基底 URL の要素、特にアドレススキーム、ネットワーク上の位置、およびパ"
-"ス (の一部) を使います。例えば:"
+"Construya una URL completa (\"absoluta\") combinando una \"URL "
+"base\" (*base*) con otra URL (*url*).  Informalmente, esto utiliza "
+"componentes de la dirección URL base, en particular el esquema de "
+"direccionamiento, la ubicación de red y (parte de) la ruta de acceso, para "
+"proporcionar los componentes que faltan en la dirección URL relativa.  Por "
+"ejemplo:"
 
-#: ../../library/urllib.parse.rst:363
+#: ../Doc/library/urllib.parse.rst:351
 msgid ""
 "The *allow_fragments* argument has the same meaning and default as for :func:"
 "`urlparse`."
 msgstr ""
-"*allow_fragments* 引数は :func:`urlparse` における引数と同じ意味とデフォルト"
-"を持ちます。"
+"El argumento *allow_fragments* tiene el mismo significado y el valor "
+"predeterminado que para :func:`urlparse`."
 
-#: ../../library/urllib.parse.rst:368
+#: ../Doc/library/urllib.parse.rst:356
 msgid ""
 "If *url* is an absolute URL (that is, it starts with ``//`` or ``scheme://"
 "``), the *url*'s hostname and/or scheme will be present in the result.  For "
 "example:"
 msgstr ""
-"*url* が (``//`` か ``scheme://`` で始まる) 絶対URLであれば、その *url* のホ"
-"スト名と / もしくは scheme は結果に反映されます。例えば:"
+"Si *url* es una URL absoluta (es decir, comienza con ``//`` o ``scheme://"
+"``), el nombre de host y/o esquema de *url* estará presente en el "
+"resultado.  Por ejemplo:"
 
-#: ../../library/urllib.parse.rst:377
+#: ../Doc/library/urllib.parse.rst:365
 msgid ""
 "If you do not want that behavior, preprocess the *url* with :func:`urlsplit` "
 "and :func:`urlunsplit`, removing possible *scheme* and *netloc* parts."
 msgstr ""
-"もしこの動作が望みのものでない場合は、 *url* を :func:`urlsplit` と :func:"
-"`urlunsplit` で先に処理して、 *scheme* と *netloc* を削除してください。"
+"Si no desea ese comportamiento, preprocesa las partes *url* con :func:"
+"`urlsplit` y :func:`urlunsplit`, eliminando posibles partes *esquema* y "
+"*netloc*."
 
-#: ../../library/urllib.parse.rst:383
+#: ../Doc/library/urllib.parse.rst:371
 msgid "Behavior updated to match the semantics defined in :rfc:`3986`."
 msgstr ""
-":rfc:`3986` で定義された意味論とマッチするように挙動がアップデートされまし"
-"た。"
+"Comportamiento actualizado para coincidir con la semántica definida en :rfc:"
+"`3986`."
 
-#: ../../library/urllib.parse.rst:388
+#: ../Doc/library/urllib.parse.rst:376
 msgid ""
 "If *url* contains a fragment identifier, return a modified version of *url* "
 "with no fragment identifier, and the fragment identifier as a separate "
 "string.  If there is no fragment identifier in *url*, return *url* "
 "unmodified and an empty string."
 msgstr ""
-"*url* がフラグメント識別子を含む場合、フラグメント識別子を持たないバージョン"
-"に修正された *url* と、別の文字列に分割されたフラグメント識別子を返します。"
-"*url* 中にフラグメント識別子がない場合、そのままの *url* と空文字列を返しま"
-"す。"
+"Si *url* contiene un identificador de fragmento, retorne una versión "
+"modificada de *url* sin identificador de fragmento y el identificador de "
+"fragmento como una cadena independiente.  Si no hay ningún identificador de "
+"fragmento en *url*, retorne *url* sin modificar y una cadena vacía."
 
-#: ../../library/urllib.parse.rst:399
+#: ../Doc/library/urllib.parse.rst:387
 msgid ":attr:`url`"
 msgstr ":attr:`url`"
 
-#: ../../library/urllib.parse.rst:399
+#: ../Doc/library/urllib.parse.rst:387
 msgid "URL with no fragment"
-msgstr "フラグメントのない URL"
+msgstr "URL sin fragmento"
 
-#: ../../library/urllib.parse.rst:404
+#: ../Doc/library/urllib.parse.rst:392
 msgid ""
 "See section :ref:`urlparse-result-object` for more information on the result "
 "object."
 msgstr ""
-"結果オブジェクトのより詳しい情報は :ref:`urlparse-result-object` 節を参照して"
-"ください。"
+"Consulte la sección :ref:`urlparse-result-object` para obtener más "
+"información sobre el objeto de resultado."
 
-#: ../../library/urllib.parse.rst:407
+#: ../Doc/library/urllib.parse.rst:395
 msgid "Result is a structured object rather than a simple 2-tuple."
 msgstr ""
-"結果はシンプルな 2 要素のタプルから構造化オブジェクトに変更されました。"
+"El resultado es un objeto estructurado en lugar de una simple tupla de 2."
 
-#: ../../library/urllib.parse.rst:412
+#: ../Doc/library/urllib.parse.rst:400
 msgid ""
 "Extract the url from a wrapped URL (that is, a string formatted as ``<URL:"
 "scheme://host/path>``, ``<scheme://host/path>``, ``URL:scheme://host/path`` "
 "or ``scheme://host/path``). If *url* is not a wrapped URL, it is returned "
 "without changes."
 msgstr ""
+"Extrae la url de una URL envuelta (es decir, una cadena de caracteres "
+"formateada como ``<URL:scheme://host/path>``, ``<scheme://host/path>``, "
+"``URL:scheme://host/path`` or ``scheme://host/path``). Si *url* no es una "
+"URL envuelta, se retorna sin cambios."
 
-#: ../../library/urllib.parse.rst:420
+#: ../Doc/library/urllib.parse.rst:408
 msgid "Parsing ASCII Encoded Bytes"
-msgstr "ASCII エンコードバイト列の解析"
+msgstr "Análisis de bytes codificados ASCII"
 
-#: ../../library/urllib.parse.rst:422
+#: ../Doc/library/urllib.parse.rst:410
 msgid ""
 "The URL parsing functions were originally designed to operate on character "
 "strings only. In practice, it is useful to be able to manipulate properly "
@@ -604,34 +656,36 @@ msgid ""
 "parsing functions in this module all operate on :class:`bytes` and :class:"
 "`bytearray` objects in addition to :class:`str` objects."
 msgstr ""
-"URL を解析する関数は元々文字列のみ操作するよう設計されていました。実際のとこ"
-"ろ、それは URL が正しくクオートされエンコードされた ASCII バイト列を操作でき"
-"た方が有用でした。結果的にこのモジュールの URL 解析関数はすべて :class:"
-"`bytes` および :class:`bytearray` オブジェクトに加えて :class:`str` オブジェ"
-"クトでも処理するようになりました。"
+"Las funciones de análisis de URL se diseñaron originalmente para funcionar "
+"solo en cadenas de caracteres. En la práctica, es útil poder manipular las "
+"direcciones URL correctamente citadas y codificadas como secuencias de bytes "
+"ASCII. En consecuencia, las funciones de análisis de URL de este módulo "
+"funcionan en los objetos :class:`bytes` y :class:`bytearray`, además de los "
+"objetos :class:`str`."
 
-#: ../../library/urllib.parse.rst:428
+#: ../Doc/library/urllib.parse.rst:416
 msgid ""
 "If :class:`str` data is passed in, the result will also contain only :class:"
 "`str` data. If :class:`bytes` or :class:`bytearray` data is passed in, the "
 "result will contain only :class:`bytes` data."
 msgstr ""
-":class:`str` データが渡された場合、戻り値は :class:`str` データのみを含んだも"
-"のになります。:class:`bytes` あるいは :class:`bytearray` が渡された場合、戻り"
-"値は :class:`bytes` データのみを含んだものになります。"
+"Si se pasan datos :class:`str`, el resultado también contendrá solo los "
+"datos :class:`str`. Si se pasan datos :class:`bytes` o :class:`bytearray`, "
+"el resultado contendrá solo los datos :class:`bytes`."
 
-#: ../../library/urllib.parse.rst:432
+#: ../Doc/library/urllib.parse.rst:420
 msgid ""
 "Attempting to mix :class:`str` data with :class:`bytes` or :class:"
 "`bytearray` in a single function call will result in a :exc:`TypeError` "
 "being raised, while attempting to pass in non-ASCII byte values will "
 "trigger :exc:`UnicodeDecodeError`."
 msgstr ""
-"単一の関数を呼び出す時に :class:`bytes` または :class:`bytearray` が混在し"
-"た :class:`str` を渡した場合、:exc:`TypeError` が、非 ASCII バイト値が渡され"
-"た場合 :exc:`UnicodeDecodeError` が送出されます。"
+"Si intenta mezclar datos :class:`str` con :class:`bytes` o :class:"
+"`bytearray` en una sola llamada de función, se producirá un :exc:"
+"`TypeError`, mientras que al intentar pasar valores de bytes no ASCII se "
+"desencadenará :exc:`UnicodeDecodeError`."
 
-#: ../../library/urllib.parse.rst:437
+#: ../Doc/library/urllib.parse.rst:425
 msgid ""
 "To support easier conversion of result objects between :class:`str` and :"
 "class:`bytes`, all return values from URL parsing functions provide either "
@@ -643,46 +697,51 @@ msgid ""
 "contains either :class:`bytes` data (for :meth:`encode` methods) or :class:"
 "`str` data (for :meth:`decode` methods)."
 msgstr ""
-":class:`str` と :class:`bytes` 間で容易に変換を行えるよう、すべての URL 解析"
-"関数は :meth:`encode` メソッド (結果に :class:`str` データが含まれる時用) "
-"か :meth:`decode` メソッド (結果に :class:`bytes` データが含まれる時用) のど"
-"ちらかを提供しています。これらメソッドの動作は対応する :class:`str` と :"
-"class:`bytes` メソッドが持つものと同じです (ただしデフォルトのエンコーディン"
-"グは ``'utf-8'`` ではなく ``'ascii'`` になります)。それぞれは :meth:`encode` "
-"メソッドを持つ :class:`bytes` データか :meth:`decode` メソッドを持つ :class:"
-"`str` データのどちらかに対応した型を生成します。"
+"Para admitir una conversión más sencilla de objetos de resultado entre :"
+"class:`str` y :class:`bytes`, todos los valores retornados de las funciones "
+"de análisis de URL proporcionan un método :meth:`encode` (cuando el "
+"resultado contiene :class:`str` data) o un método :meth:`decode` (cuando el "
+"resultado contiene datos :class:`bytes`). Las firmas de estos métodos "
+"coinciden con las de los métodos correspondientes :class:`str` y :class:"
+"`bytes` (excepto que la codificación predeterminada es ``'ascii``' en lugar "
+"de ``'utf-8``'). Cada uno produce un valor de un tipo correspondiente que "
+"contiene datos :class:`bytes` (para los métodos :meth:`encode`) o :class:"
+"`str` (para :meth:`decode` métodos)."
 
-#: ../../library/urllib.parse.rst:448
+#: ../Doc/library/urllib.parse.rst:436
 msgid ""
 "Applications that need to operate on potentially improperly quoted URLs that "
 "may contain non-ASCII data will need to do their own decoding from bytes to "
 "characters before invoking the URL parsing methods."
 msgstr ""
-"非 ASCII データを含むなど、不適切にクオートされた URL を操作する可能性のある"
-"アプリケーションでは、URL 解析メソッドを呼び出す前に独自にバイト列から文字列"
-"にデコードする必要があります。"
+"Las aplicaciones que necesitan operar en direcciones URL potencialmente "
+"citadas incorrectamente que pueden contener datos no ASCII tendrán que "
+"realizar su propia decodificación de bytes a caracteres antes de invocar los "
+"métodos de análisis de URL."
 
-#: ../../library/urllib.parse.rst:452
+#: ../Doc/library/urllib.parse.rst:440
 msgid ""
 "The behaviour described in this section applies only to the URL parsing "
 "functions. The URL quoting functions use their own rules when producing or "
 "consuming byte sequences as detailed in the documentation of the individual "
 "URL quoting functions."
 msgstr ""
-"この項で説明された挙動は URL 解析関数にのみ該当します。URL クオート関数でバイ"
-"トシーケンスを生成もしくは消化する際には、別にURL クオート関数の項で詳説され"
-"ている通りのルールに従います。"
+"El comportamiento descrito en esta sección solo se aplica a las funciones de "
+"análisis de URL. Las funciones de citación de URL utilizan sus propias "
+"reglas al producir o consumir secuencias de bytes como se detalla en la "
+"documentación de las funciones de citación de URL individuales."
 
-#: ../../library/urllib.parse.rst:457
+#: ../Doc/library/urllib.parse.rst:445
 msgid "URL parsing functions now accept ASCII encoded byte sequences"
 msgstr ""
-"URL 解析関数は ASCII エンコードバイトシーケンスも受け付けるようになりました"
+"Las funciones de análisis de URL ahora aceptan secuencias de bytes "
+"codificadas en ASCII"
 
-#: ../../library/urllib.parse.rst:464
+#: ../Doc/library/urllib.parse.rst:452
 msgid "Structured Parse Results"
-msgstr "構造化された解析結果"
+msgstr "Resultados del análisis estructurado"
 
-#: ../../library/urllib.parse.rst:466
+#: ../Doc/library/urllib.parse.rst:454
 msgid ""
 "The result objects from the :func:`urlparse`, :func:`urlsplit`  and :func:"
 "`urldefrag` functions are subclasses of the :class:`tuple` type. These "
@@ -690,108 +749,119 @@ msgid ""
 "functions, the encoding and decoding support described in the previous "
 "section, as well as an additional method:"
 msgstr ""
-":func:`urlparse`、:func:`urlsplit`、および :func:`urldefrag` 関数が返すオブ"
-"ジェクトは :class:`tuple` 型のサブクラスになります。これらサブクラスにはそれ"
-"ぞれの関数で説明されている属性が追加されており、前述のとおりエンコーディング"
-"とデコーディングをサポートしています:"
+"Los objetos resultantes de las funciones :func:`urlparse`, :func:`urlsplit` "
+"y :func:`urldefrag` son subclases del tipo :class:`tuple`. Estas subclases "
+"agregan los atributos enumerados en la documentación para esas funciones, el "
+"soporte de codificación y decodificación descrito en la sección anterior, "
+"así como un método adicional:"
 
-#: ../../library/urllib.parse.rst:474
+#: ../Doc/library/urllib.parse.rst:462
 msgid ""
 "Return the re-combined version of the original URL as a string. This may "
 "differ from the original URL in that the scheme may be normalized to lower "
 "case and empty components may be dropped. Specifically, empty parameters, "
 "queries, and fragment identifiers will be removed."
 msgstr ""
-"オリジナルの URL を再結合した場合は文字列で返されます。これはスキームが小文字"
-"に正規化されていたり、空の構成要素が除去されるなど、オリジナルの URL とは異な"
-"る場合があります。特に、空のパラメータ、クエリ、およびフラグメント識別子は削"
-"除されます。"
+"Retorna la versión re-combinada de la dirección URL original como una "
+"cadena. Esto puede diferir de la dirección URL original en que el esquema se "
+"puede normalizar a minúsculas y los componentes vacíos pueden descartarse. "
+"En concreto, se quitarán los parámetros vacíos, las consultas y los "
+"identificadores de fragmento."
 
-#: ../../library/urllib.parse.rst:479
+#: ../Doc/library/urllib.parse.rst:467
 msgid ""
 "For :func:`urldefrag` results, only empty fragment identifiers will be "
 "removed. For :func:`urlsplit` and :func:`urlparse` results, all noted "
 "changes will be made to the URL returned by this method."
 msgstr ""
-":func:`urldefrag` の戻り値では、空のフラグメント識別子のみ削除されます。:"
-"func:`urlsplit` および :func:`urlparse` の戻り値では、このメソッドが返す URL "
-"には説明されているすべての変更が加えられます。"
+"Para los resultados :func:`urldefrag`, solo se eliminarán los "
+"identificadores de fragmento vacíos. Para los resultados :func:`urlsplit` y :"
+"func:`urlparse`, todos los cambios observados se realizarán en la URL "
+"retornada por este método."
 
-#: ../../library/urllib.parse.rst:483
+#: ../Doc/library/urllib.parse.rst:471
 msgid ""
 "The result of this method remains unchanged if passed back through the "
 "original parsing function:"
-msgstr "加えた解析関数を逆に行えばこのメソッドの戻り値は元の URL になります:"
+msgstr ""
+"El resultado de este método permanece inalterado si se pasa de nuevo a "
+"través de la función de análisis original:"
 
-#: ../../library/urllib.parse.rst:496
+#: ../Doc/library/urllib.parse.rst:484
 msgid ""
 "The following classes provide the implementations of the structured parse "
 "results when operating on :class:`str` objects:"
 msgstr ""
-"以下のクラスは :class:`str` オブジェクトを操作した場合、構造化された解析結果"
-"の実装を提供します:"
+"Las clases siguientes proporcionan las implementaciones de los resultados "
+"del análisis estructurado cuando se opera en objetos :class:`str`:"
 
-#: ../../library/urllib.parse.rst:501
+#: ../Doc/library/urllib.parse.rst:489
 msgid ""
 "Concrete class for :func:`urldefrag` results containing :class:`str` data. "
 "The :meth:`encode` method returns a :class:`DefragResultBytes` instance."
 msgstr ""
-":func:`urldefrag` の具象クラスの結果には :class:`str` データが含まれます。:"
-"meth:`encode` メソッドは :class:`DefragResultBytes` インスタンスを返します。"
+"Clase concreta para los resultados de :func:`urldefrag` que contienen datos :"
+"class:`str`. El método :meth:`encode` retorna una instancia :class:"
+"`DefragResultBytes`."
 
-#: ../../library/urllib.parse.rst:509
+#: ../Doc/library/urllib.parse.rst:497
 msgid ""
 "Concrete class for :func:`urlparse` results containing :class:`str` data. "
 "The :meth:`encode` method returns a :class:`ParseResultBytes` instance."
 msgstr ""
-":func:`urlparse` の具象クラスの結果には :class:`str` データが含まれます。:"
-"meth:`encode` メソッドは :class:`ParseResultBytes` インスタンスを返します。"
+"Clase concreta para los resultados de :func:`urlparse` que contiene :class:"
+"`str` data. El método :meth:`encode` retorna una instancia :class:"
+"`ParseResultBytes`."
 
-#: ../../library/urllib.parse.rst:515
+#: ../Doc/library/urllib.parse.rst:503
 msgid ""
 "Concrete class for :func:`urlsplit` results containing :class:`str` data. "
 "The :meth:`encode` method returns a :class:`SplitResultBytes` instance."
 msgstr ""
-":func:`urlsplit` の具象クラスの結果には :class:`str` データが含まれます。:"
-"meth:`encode` メソッドは :class:`SplitResultBytes` インスタンスを返します。"
+"Clase concreta para los resultados de :func:`urlsplit` que contiene :class:"
+"`str` data. El método :meth:`encode` retorna una instancia :class:"
+"`SplitResultBytes`."
 
-#: ../../library/urllib.parse.rst:520
+#: ../Doc/library/urllib.parse.rst:508
 msgid ""
 "The following classes provide the implementations of the parse results when "
 "operating on :class:`bytes` or :class:`bytearray` objects:"
 msgstr ""
-"以下のクラスは :class:`bytes` または :class:`bytearray` オブジェクトを操作し"
-"た時に解析結果の実装を提供します:"
+"Las clases siguientes proporcionan las implementaciones de los resultados "
+"del análisis cuando se opera en objetos :class:`bytes` o :class:`bytearray`:"
 
-#: ../../library/urllib.parse.rst:525
+#: ../Doc/library/urllib.parse.rst:513
 msgid ""
 "Concrete class for :func:`urldefrag` results containing :class:`bytes` data. "
 "The :meth:`decode` method returns a :class:`DefragResult` instance."
 msgstr ""
-":func:`urldefrag` の具象クラスの結果には :class:`bytes` データが含まれます。:"
-"meth:`decode` メソッドは :class:`DefragResult` インスタンスを返します。"
+"Clase concreta para los resultados de :func:`urldefrag` que contienen datos :"
+"class:`bytes`. El método :meth:`decode` retorna una instancia :class:"
+"`DefragResult`."
 
-#: ../../library/urllib.parse.rst:533
+#: ../Doc/library/urllib.parse.rst:521
 msgid ""
 "Concrete class for :func:`urlparse` results containing :class:`bytes` data. "
 "The :meth:`decode` method returns a :class:`ParseResult` instance."
 msgstr ""
-":func:`urlparse` の具象クラスの結果には :class:`bytes` が含まれます。:meth:"
-"`decode` メソッドは :class:`ParseResult` インスタンスを返します。"
+"Clase concreta para los resultados :func:`urlparse` que contienen datos :"
+"class:`bytes`. El método :meth:`decode` retorna una instancia :class:"
+"`ParseResult`."
 
-#: ../../library/urllib.parse.rst:541
+#: ../Doc/library/urllib.parse.rst:529
 msgid ""
 "Concrete class for :func:`urlsplit` results containing :class:`bytes` data. "
 "The :meth:`decode` method returns a :class:`SplitResult` instance."
 msgstr ""
-":func:`urlsplit` の具象クラスの結果には :class:`bytes` データが含まれます。:"
-"meth:`decode` メソッドは :class:`SplitResult` インスタンスを返します。"
+"Clase concreta para los resultados de :func:`urlsplit` que contienen datos :"
+"class:`bytes`. El método :meth:`decode` retorna una instancia :class:"
+"`SplitResult`."
 
-#: ../../library/urllib.parse.rst:549
+#: ../Doc/library/urllib.parse.rst:537
 msgid "URL Quoting"
-msgstr "URL のクオート"
+msgstr "Cita de URL"
 
-#: ../../library/urllib.parse.rst:551
+#: ../Doc/library/urllib.parse.rst:539
 msgid ""
 "The URL quoting functions focus on taking program data and making it safe "
 "for use as URL components by quoting special characters and appropriately "
@@ -799,12 +869,15 @@ msgid ""
 "recreate the original data from the contents of a URL component if that task "
 "isn't already covered by the URL parsing functions above."
 msgstr ""
-"URL クオート関数は、プログラムデータを取り URL 構成要素として使用できるよう特"
-"殊文字をクオートしたり非 ASCII 文字を適切にエンコードすることに焦点を当ててい"
-"ます。これらは上述の URL 解析関数でカバーされていない URL 構成要素からオリジ"
-"ナルデータの再作成もサポートしています。"
+"Las funciones de citación de URL se centran en tomar datos del programa y "
+"hacerlos seguros para su uso como componentes URL citando caracteres "
+"especiales y codificando adecuadamente texto no ASCII. También admiten la "
+"inversión de estas operaciones para volver a crear los datos originales a "
+"partir del contenido de un componente de dirección URL si esa tarea aún no "
+"está cubierta por las funciones de análisis de URL anteriores."
 
-#: ../../library/urllib.parse.rst:559
+#: ../Doc/library/urllib.parse.rst:547
+#, python-format
 msgid ""
 "Replace special characters in *string* using the ``%xx`` escape. Letters, "
 "digits, and the characters ``'_.-~'`` are never quoted. By default, this "
@@ -812,24 +885,27 @@ msgid ""
 "*safe* parameter specifies additional ASCII characters that should not be "
 "quoted --- its default value is ``'/'``."
 msgstr ""
-"*string* 内の特殊文字を ``%xx`` を使用してエスケープします。文字、数字、およ"
-"び ``'_.-~'`` はクオートされません。デフォルトでは、この関数は URL のパス部分"
-"のクオートのために用意されています。任意のパラメータ *safe* を指定すると、指"
-"定した ASCII 文字もクオートされません。デフォルトは ``'/'`` です。"
+"Reemplaza caracteres especiales en *string* con la secuencia de escape "
+"``%xx``. Las letras, los dígitos y los caracteres ``'_.-~'`` nunca se citan. "
+"De forma predeterminada, esta función está pensada para citar la sección de "
+"ruta de acceso de la dirección URL. El parámetro opcional *safe* especifica "
+"caracteres ASCII adicionales que no se deben citar --- su valor "
+"predeterminado es ``'/'``."
 
-#: ../../library/urllib.parse.rst:565 ../../library/urllib.parse.rst:611
-#: ../../library/urllib.parse.rst:640
+#: ../Doc/library/urllib.parse.rst:553 ../Doc/library/urllib.parse.rst:599
+#: ../Doc/library/urllib.parse.rst:628
 msgid "*string* may be either a :class:`str` or a :class:`bytes` object."
-msgstr ""
-"*string* に使用できるのは :class:`str` か :class:`bytes` オブジェクトです。"
+msgstr "*string* puede ser un objeto :class:`str` o :class:`bytes`."
 
-#: ../../library/urllib.parse.rst:567
+#: ../Doc/library/urllib.parse.rst:555
 msgid ""
 "Moved from :rfc:`2396` to :rfc:`3986` for quoting URL strings. \"~\" is now "
 "included in the set of unreserved characters."
 msgstr ""
+"Se ha movido de :rfc:`2396` a :rfc:`3986` para citar cadenas URL. Ahora se "
+"incluye \"~\" en el conjunto de caracteres reservados."
 
-#: ../../library/urllib.parse.rst:571
+#: ../Doc/library/urllib.parse.rst:559
 msgid ""
 "The optional *encoding* and *errors* parameters specify how to deal with non-"
 "ASCII characters, as accepted by the :meth:`str.encode` method. *encoding* "
@@ -838,116 +914,129 @@ msgid ""
 "*errors* must not be supplied if *string* is a :class:`bytes`, or a :class:"
 "`TypeError` is raised."
 msgstr ""
-"任意のパラメータ *encoding* と *errors* は :meth:`str.encode` で受け付けられ"
-"る非 ASCII 文字への対処法を指定します。*encoding* のデフォルトは "
-"``'utf-8'``、*errors* のデフォルトは ``'strict'`` で、非サポート文字がある"
-"と :class:`UnicodeEncodeError` を送出します。*string* が :class:`bytes` の場"
-"合 *encoding* と *errors* を指定してはいけません。指定すると :class:"
-"`TypeError` が送出されます。"
+"Los parámetros opcionales *encoding* y *errors* especifican cómo tratar con "
+"caracteres no ASCII, tal como lo acepta el método :meth:`str.encode`. "
+"*encoding* por defecto es ``'utf-8'``. *errors* tiene como valor "
+"predeterminado ``'strict'``, lo que significa que los caracteres no "
+"admitidos generan un :class:`UnicodeEncodeError`. *encoding* y *errors* no "
+"se deben proporcionar si *string* es :class:`bytes` o se genera :class:"
+"`TypeError`."
 
-#: ../../library/urllib.parse.rst:579
+#: ../Doc/library/urllib.parse.rst:567
 msgid ""
 "Note that ``quote(string, safe, encoding, errors)`` is equivalent to "
 "``quote_from_bytes(string.encode(encoding, errors), safe)``."
 msgstr ""
-"``quote(string, safe, encoding, errors)`` は ``quote_from_bytes(string."
-"encode(encoding, errors), safe)`` と等価であることに留意してください。"
+"Tenga en cuenta que ``quote(string, safe, encoding, errors)`` es equivalente "
+"a ``quote_from_bytes(string.encode(encoding, errors), safe)``."
 
-#: ../../library/urllib.parse.rst:582
+#: ../Doc/library/urllib.parse.rst:570
 msgid "Example: ``quote('/El Niño/')`` yields ``'/El%20Ni%C3%B1o/'``."
-msgstr "例: ``quote('/El Niño/')`` は ``'/El%20Ni%C3%B1o/'`` を返します。"
+msgstr "Ejemplo: ``quote('/El Niño/')`` produce ``'/El%20Ni%C3%B1o/'``."
 
-#: ../../library/urllib.parse.rst:587
+#: ../Doc/library/urllib.parse.rst:575
 msgid ""
 "Like :func:`quote`, but also replace spaces with plus signs, as required for "
 "quoting HTML form values when building up a query string to go into a URL. "
 "Plus signs in the original string are escaped unless they are included in "
 "*safe*.  It also does not have *safe* default to ``'/'``."
 msgstr ""
+"Como :func:`quote`, pero también reemplaza espacios con signos más, como se "
+"requiere para citar valores de formularios HTML al momento de construir una "
+"cadena de consulta que será parte de una URL. Los signos más en la cadena de "
+"caracteres original se escapan, a no ser que se incluyan en *safe*. Además "
+"el valor de *safe* no es `/` por defecto."
 
-#: ../../library/urllib.parse.rst:592
+#: ../Doc/library/urllib.parse.rst:580
+#, python-format
 msgid "Example: ``quote_plus('/El Niño/')`` yields ``'%2FEl+Ni%C3%B1o%2F'``."
-msgstr ""
-"例: ``quote_plus('/El Niño/')`` は ``'%2FEl+Ni%C3%B1o%2F'`` を返します。"
+msgstr "Ejemplo: ``quote_plus('/El Niño/')`` produce ``'%2FEl+Ni%C3%B1o%2F'``."
 
-#: ../../library/urllib.parse.rst:597
+#: ../Doc/library/urllib.parse.rst:585
 msgid ""
 "Like :func:`quote`, but accepts a :class:`bytes` object rather than a :class:"
 "`str`, and does not perform string-to-bytes encoding."
 msgstr ""
-":func:`quote` と似ていますが、:class:`str` ではなく :class:`bytes` オブジェク"
-"トを取り、文字列からバイト列へのエンコードを行いません。"
+"Como :func:`quote`, pero acepta un objeto :class:`bytes` en lugar de un :"
+"class:`str`, y no realiza la codificación de cadena a bytes."
 
-#: ../../library/urllib.parse.rst:600
+#: ../Doc/library/urllib.parse.rst:588
+#, python-format
 msgid "Example: ``quote_from_bytes(b'a&\\xef')`` yields ``'a%26%EF'``."
-msgstr "例: ``quote_from_bytes(b'a&\\xef')`` は ``'a%26%EF'`` を返します。"
+msgstr "Ejemplo: ``quote_from_bytes(b'a&\\xef')`` produce ``'a%26%EF'``."
 
-#: ../../library/urllib.parse.rst:606
+#: ../Doc/library/urllib.parse.rst:594
+#, python-format
 msgid ""
 "Replace ``%xx`` escapes with their single-character equivalent. The optional "
 "*encoding* and *errors* parameters specify how to decode percent-encoded "
 "sequences into Unicode characters, as accepted by the :meth:`bytes.decode` "
 "method."
 msgstr ""
-"エスケープされた ``%xx`` をそれに対応した単一文字に置き換えます。オプション引"
-"数の *encoding* と *errors* は :meth:`bytes.decode` メソッドで受け付けられる"
-"パーセントエンコードされたシーケンスから Unicode 文字へのデコード法を指定しま"
-"す。"
+"Reemplaza secuencias de escape ``%xx`` con los caracteres individuales "
+"correspondientes. Los parámetros opcionales *encoding* y *errors* "
+"especifican cómo descodificar secuencias codificadas porcentualmente a "
+"caracteres Unicode, tal como lo acepta el método :meth:`bytes.decode`."
 
-#: ../../library/urllib.parse.rst:613
+#: ../Doc/library/urllib.parse.rst:601
 msgid ""
 "*encoding* defaults to ``'utf-8'``. *errors* defaults to ``'replace'``, "
 "meaning invalid sequences are replaced by a placeholder character."
 msgstr ""
-"*encoding* のデフォルトは ``'utf-8'``、*errors* のデフォルトは ``'replace'`` "
-"で、不正なシーケンスはプレースホルダー文字に置き換えられます。"
+"*encoding* por defecto es ``'utf-8``'. *errors* por defecto es "
+"``'replace``', lo que significa que las secuencias no válidas se reemplazan "
+"por un carácter de marcador de posición."
 
-#: ../../library/urllib.parse.rst:617
+#: ../Doc/library/urllib.parse.rst:605
 msgid "Example: ``unquote('/El%20Ni%C3%B1o/')`` yields ``'/El Niño/'``."
-msgstr "例: ``unquote('/El%20Ni%C3%B1o/')`` は ``'/El Niño/'`` を返します。"
+msgstr "Ejemplo: ``unquote('/El%20Ni%C3%B1o/')`` produce ``'/El Niño/'``."
 
-#: ../../library/urllib.parse.rst:619
+#: ../Doc/library/urllib.parse.rst:607
 msgid ""
 "*string* parameter supports bytes and str objects (previously only str)."
 msgstr ""
+"El parámetro *string* admite bytes y cadenas de caracteres (anteriormente "
+"sólo cadenas de caracteres)."
 
-#: ../../library/urllib.parse.rst:627
+#: ../Doc/library/urllib.parse.rst:615
 msgid ""
 "Like :func:`unquote`, but also replace plus signs with spaces, as required "
 "for unquoting HTML form values."
 msgstr ""
-":func:`unquote` と似ていますが、HTML フォームの値のアンクオートのために「+」"
-"を空白に置き換えます。"
+"Como :func:`unquote`, pero también reemplaza los signos más por espacios, "
+"como es requerido al decodificar valores de formularios HTML."
 
-#: ../../library/urllib.parse.rst:630
+#: ../Doc/library/urllib.parse.rst:618
 msgid "*string* must be a :class:`str`."
-msgstr "*string* は :class:`str` でなければなりません。"
+msgstr "*string* debe ser :class:`str`."
 
-#: ../../library/urllib.parse.rst:632
+#: ../Doc/library/urllib.parse.rst:620
 msgid "Example: ``unquote_plus('/El+Ni%C3%B1o/')`` yields ``'/El Niño/'``."
-msgstr "例: ``unquote_plus('/El+Ni%C3%B1o/')`` は ``'/El Niño/'`` を返します。"
+msgstr "Ejemplo: ``unquote_plus('/El+Ni%C3%B1o/')`` produce ``'/El Niño/'``."
 
-#: ../../library/urllib.parse.rst:637
+#: ../Doc/library/urllib.parse.rst:625
+#, python-format
 msgid ""
 "Replace ``%xx`` escapes with their single-octet equivalent, and return a :"
 "class:`bytes` object."
 msgstr ""
-"スケープされた ``%xx`` をそれに対応した 1 オクテットに置き換え、:class:"
-"`bytes` オブジェクトを返します。"
+"Reemplaza los escapes ``%xx`` por sus equivalentes de un solo octeto y "
+"retorna un objeto :class:`bytes`."
 
-#: ../../library/urllib.parse.rst:642
+#: ../Doc/library/urllib.parse.rst:630
 msgid ""
 "If it is a :class:`str`, unescaped non-ASCII characters in *string* are "
 "encoded into UTF-8 bytes."
 msgstr ""
-":class:`str` だった場合、*string* 内のエスケープされていない非 ASCII 文字は "
-"UTF-8 バイト列にエンコードされます。"
+"Si es un :class:`str`, los caracteres no ASCII sin escapar en *string* se "
+"codifican en bytes UTF-8."
 
-#: ../../library/urllib.parse.rst:645
+#: ../Doc/library/urllib.parse.rst:633
+#, python-format
 msgid "Example: ``unquote_to_bytes('a%26%EF')`` yields ``b'a&\\xef'``."
-msgstr "例: ``unquote_to_bytes('a%26%EF')`` は ``b'a&\\xef'`` を返します。"
+msgstr "Ejemplo: ``unquote_to_bytes('a%26%EF')`` produce ``b'a&\\xef'``."
 
-#: ../../library/urllib.parse.rst:651
+#: ../Doc/library/urllib.parse.rst:639
 msgid ""
 "Convert a mapping object or a sequence of two-element tuples, which may "
 "contain :class:`str` or :class:`bytes` objects, to a percent-encoded ASCII "
@@ -955,14 +1044,15 @@ msgid ""
 "operation with the :func:`~urllib.request.urlopen` function, then it should "
 "be encoded to bytes, otherwise it would result in a :exc:`TypeError`."
 msgstr ""
-"マッピング型オブジェクトまたは 2 個の要素からなるタプルのシーケンス (:class:"
-"`str` か :class:`bytes` オブジェクトが含まれているかもしれません) を、パーセ"
-"ントエンコードされた ASCII 文字列に変換します。戻り値の文字列が :func:"
-"`~urllib.request.urlopen` 関数での POST 操作の *data* で使用される場合はバイ"
-"ト列にエンコードしなければなりません。そうでない場合は :exc:`TypeError` が送"
-"出されます。"
+"Convierta un objeto de asignación o una secuencia de tuplas de dos "
+"elementos, que pueden contener objetos :class:`str` o :class:`bytes`, en una "
+"cadena de texto ASCII codificada porcentualmente.  Si la cadena resultante "
+"se va a utilizar como una operación *data* para post con la función :func:"
+"`URLlib.request.urlopen`, entonces debe codificarse en bytes, de lo "
+"contrario resultaría en un :exc:`TypeError`."
 
-#: ../../library/urllib.parse.rst:658
+#: ../Doc/library/urllib.parse.rst:646
+#, python-format
 msgid ""
 "The resulting string is a series of ``key=value`` pairs separated by ``'&'`` "
 "characters, where both *key* and *value* are quoted using the *quote_via* "
@@ -974,17 +1064,18 @@ msgid ""
 "and not encode '/' characters.  For maximum control of what is quoted, use "
 "``quote`` and specify a value for *safe*."
 msgstr ""
-"戻り値は ``'&'`` 文字で区切られた ``key=value`` のペアからなる一組の文字列に"
-"なります。 *key* と *value* は *quote_via* を使用してクオートされます。デフォ"
-"ルトで、値をクォートするために :func:`quote_plus` が使用されます。つまり、ス"
-"ペースは ``'+'`` 文字に、 '/' 文字は ``%2F`` にクォートされます。これは GET "
-"リクエストの標準に準拠します (``application/x-www-form-urlencoded``)。 "
-"*quote_via* として渡すことができる別の関数は :func:`quote` です。それはスペー"
-"スを ``%20`` にエンコードし、 '/' をエンコードしません。何がクォートされるか"
-"を最大限コントロールしたければ、 ``quote`` を使って *safe* に値を指定してくだ"
-"さい。"
+"La cadena resultante es una serie de pares ``key=value`` separados por "
+"caracteres ``'&'``, donde tanto *key* como *value* se citan mediante la "
+"función *quote_via*.  De forma predeterminada, :func:`quote_plus` se utiliza "
+"para citar los valores, lo que significa que los espacios se citan como un "
+"carácter ``'+'`` y '/' los caracteres se codifican como ``%2F``, que sigue "
+"el estándar para las solicitudes GET (``application/x-www-form-"
+"urlencoded``).  Una función alternativa que se puede pasar como *quote_via* "
+"es :func:`quote`, que codificará espacios como ``%20`` y no codificará "
+"caracteres '/'.  Para obtener el máximo control de lo que se cita, utilice "
+"``quote`` y especifique un valor para *safe*."
 
-#: ../../library/urllib.parse.rst:668
+#: ../Doc/library/urllib.parse.rst:656
 msgid ""
 "When a sequence of two-element tuples is used as the *query* argument, the "
 "first element of each tuple is a key and the second is a value. The value "
@@ -994,123 +1085,131 @@ msgid ""
 "for the key.  The order of parameters in the encoded string will match the "
 "order of parameter tuples in the sequence."
 msgstr ""
-"引数 *query* が 2 要素のタプルのシーケンスの場合、各タプルの第一要素はキー"
-"に、第二要素は値になります。\n"
-"値となる要素はシーケンスを取ることもでき、この場合、オプションのパラメーター "
-"*doseq* が ``True`` と評価されるのであれば、キーに対し値シーケンスの各要素を"
-"個別に結び付けた ``key=value`` のペアを、 ``'&'`` 文字でつないだものを生成し"
-"ます。\n"
-"エンコードされた文字列内のパラメーターの順序はシーケンス内のパラメータータプ"
-"ルの順序と一致します。"
+"Cuando se utiliza una secuencia de tuplas de dos elementos como argumento "
+"*query*, el primer elemento de cada tupla es una clave y el segundo es un "
+"valor. El valor en sí mismo puede ser una secuencia y, en ese caso, si el "
+"parámetro opcional *doseq* se evalúa como ``True``, se generan pares "
+"individuales ``key=value`` separados por ``'&'`` para cada elemento de la "
+"secuencia de valores de la clave.  El orden de los parámetros de la cadena "
+"codificada coincidirá con el orden de las tuplas de parámetros de la "
+"secuencia."
 
-#: ../../library/urllib.parse.rst:676
+#: ../Doc/library/urllib.parse.rst:664
 msgid ""
 "The *safe*, *encoding*, and *errors* parameters are passed down to "
 "*quote_via* (the *encoding* and *errors* parameters are only passed when a "
 "query element is a :class:`str`)."
 msgstr ""
-"*safe*, *encoding*, および *errors* パラメータは *quote_via* にそのまま渡され"
-"ます (クエリ要素が :class:`str` の場合は、 *encoding* と *errors* パラメータ"
-"だけが渡されます)。"
+"Los parámetros *safe*, *encoding* y *errors* se pasan a *quote_via* (los "
+"parámetros *encoding* y *errors* solo se pasan cuando un elemento de "
+"consulta es :class:`str`)."
 
-#: ../../library/urllib.parse.rst:680
+#: ../Doc/library/urllib.parse.rst:668
 msgid ""
 "To reverse this encoding process, :func:`parse_qs` and :func:`parse_qsl` are "
 "provided in this module to parse query strings into Python data structures."
 msgstr ""
-"このエンコード処理の逆を行うには、このモジュールで提供されている :func:"
-"`parse_qs` と :func:`parse_qsl` を使用して、クエリ文字列を Python データ構造"
-"に変換できます。"
+"Para revertir este proceso de codificación, en este módulo se proporcionan :"
+"func:`parse_qs` y :func:`parse_qsl` para analizar cadenas de consulta en "
+"estructuras de datos de Python."
 
-#: ../../library/urllib.parse.rst:683
+#: ../Doc/library/urllib.parse.rst:671
 msgid ""
 "Refer to :ref:`urllib examples <urllib-examples>` to find out how the :func:"
 "`urllib.parse.urlencode` method can be used for generating the query string "
 "of a URL or data for a POST request."
 msgstr ""
-"POST リクエストのデータ、あるいは URL クエリ文字列を生成するために、 :func:"
-"`urllib.parse.urlencode` メソッドをどのように使えばよいかを見るには、:ref:"
-"`urllib の使用例 <urllib-examples>` を参照してください。"
+"Consulte :ref:`urllib examples <urllib-examples>` para averiguar cómo se "
+"puede utilizar el método  :func:`urllib.parse.urlencode` para generar una "
+"cadena de consulta para una dirección URL o datos para POST."
 
-#: ../../library/urllib.parse.rst:687
+#: ../Doc/library/urllib.parse.rst:675
 msgid "*query* supports bytes and string objects."
-msgstr "*query* はバイト列と文字列オブジェクトをサポートします。"
+msgstr "El parámetro *query* admite bytes y objetos de cadena."
 
-#: ../../library/urllib.parse.rst:690
+#: ../Doc/library/urllib.parse.rst:678
 msgid "*quote_via* parameter."
-msgstr "*quote_via* 引数。"
+msgstr "*quote_via*."
 
-#: ../../library/urllib.parse.rst:698
+#: ../Doc/library/urllib.parse.rst:686
 msgid "`WHATWG`_ -  URL Living standard"
-msgstr ""
+msgstr "`WHATWG`_ -  URL estándar actual"
 
-#: ../../library/urllib.parse.rst:697
+#: ../Doc/library/urllib.parse.rst:685
 msgid ""
 "Working Group for the URL Standard that defines URLs, domains, IP addresses, "
 "the application/x-www-form-urlencoded format, and their API."
 msgstr ""
+"Grupo de trabajo para el estándar URL que define URLs, dominio, dirección "
+"IP, formato *application/x-www-form-urlencoded* y su API."
 
-#: ../../library/urllib.parse.rst:704
+#: ../Doc/library/urllib.parse.rst:692
 msgid ":rfc:`3986` - Uniform Resource Identifiers"
-msgstr ":rfc:`3986` - Uniform Resource Identifiers"
+msgstr ":rfc:`3986` - Identificadores uniformes de recursos"
 
-#: ../../library/urllib.parse.rst:701
+#: ../Doc/library/urllib.parse.rst:689
 msgid ""
 "This is the current standard (STD66). Any changes to urllib.parse module "
 "should conform to this. Certain deviations could be observed, which are "
 "mostly for backward compatibility purposes and for certain de-facto parsing "
 "requirements as commonly observed in major browsers."
 msgstr ""
-"これが現在の標準規格 (STD66) です。urllib.parse モジュールに対するすべての変"
-"更はこの規格に準拠していなければなりませんが、若干の逸脱はありえます。これは"
-"主には後方互換性のため、また主要なブラウザで一般的に見られる、URL を解析する"
-"上でのいくつかの事実上の要件を満たすためです。"
+"Este es el estándar actual (STD66). Cualquier cambio en el módulo urllib."
+"parse debe ajustarse a esto. Se podrían observar ciertas desviaciones, que "
+"son principalmente para fines de compatibilidad con versiones anteriores y "
+"para ciertos requisitos de análisis de facto como se observa comúnmente en "
+"los principales navegadores."
 
-#: ../../library/urllib.parse.rst:707
+#: ../Doc/library/urllib.parse.rst:695
 msgid ":rfc:`2732` - Format for Literal IPv6 Addresses in URL's."
-msgstr ":rfc:`2732` - Format for Literal IPv6 Addresses in URL's."
+msgstr ":rfc:`2732` - Formato de direcciones IPv6 literales en URL."
 
-#: ../../library/urllib.parse.rst:707
+#: ../Doc/library/urllib.parse.rst:695
 msgid "This specifies the parsing requirements of IPv6 URLs."
-msgstr "この規格は IPv6 の URL を解析するときの要求事項を記述しています。"
+msgstr ""
+"Esto especifica los requisitos de análisis de las direcciones URL IPv6."
 
-#: ../../library/urllib.parse.rst:711
+#: ../Doc/library/urllib.parse.rst:699
 msgid ":rfc:`2396` - Uniform Resource Identifiers (URI): Generic Syntax"
-msgstr ":rfc:`2396` - Uniform Resource Identifiers (URI): Generic Syntax"
+msgstr ""
+":rfc:`2396` - Identificadores uniformes de recursos (URI): Sintaxis genérica"
 
-#: ../../library/urllib.parse.rst:710
+#: ../Doc/library/urllib.parse.rst:698
 msgid ""
 "Document describing the generic syntactic requirements for both Uniform "
 "Resource Names (URNs) and Uniform Resource Locators (URLs)."
 msgstr ""
-"この RFC では Uniform Resource Name (URN) と Uniform Resource Locator (URL) "
-"の両方に対する一般的な文法的要求事項を記述しています。"
+"Documento que describe los requisitos sintácticos genéricos para los nombres "
+"de recursos uniformes (URL) y los localizadores uniformes de recursos (URL)."
 
-#: ../../library/urllib.parse.rst:714
+#: ../Doc/library/urllib.parse.rst:702
 msgid ":rfc:`2368` - The mailto URL scheme."
-msgstr ":rfc:`2368` - The mailto URL scheme."
+msgstr ":rfc:`2368` - El esquema mailto URL."
 
-#: ../../library/urllib.parse.rst:714
+#: ../Doc/library/urllib.parse.rst:702
 msgid "Parsing requirements for mailto URL schemes."
-msgstr "mailto URL スキームに対する文法的要求事項です。"
+msgstr "Análisis de requisitos para esquemas de URL de correo a correo."
 
-#: ../../library/urllib.parse.rst:719
+#: ../Doc/library/urllib.parse.rst:707
 msgid ":rfc:`1808` - Relative Uniform Resource Locators"
-msgstr ":rfc:`1808` - Relative Uniform Resource Locators"
+msgstr ":rfc:`1808` - Localizadores uniformes de recursos relativos"
 
-#: ../../library/urllib.parse.rst:717
+#: ../Doc/library/urllib.parse.rst:705
 msgid ""
 "This Request For Comments includes the rules for joining an absolute and a "
 "relative URL, including a fair number of \"Abnormal Examples\" which govern "
 "the treatment of border cases."
 msgstr ""
-"この RFC には絶対 URL と相対 URL を結合するための規則がボーダケースの取扱い方"
-"を決定する \"異常な例\" つきで収められています。"
+"Esta solicitud de comentarios incluye las reglas para unirse a una URL "
+"absoluta y relativa, incluyendo un buen número de \"Ejemplos anormales\" que "
+"rigen el tratamiento de los casos fronterizos."
 
-#: ../../library/urllib.parse.rst:721
+#: ../Doc/library/urllib.parse.rst:709
 msgid ":rfc:`1738` - Uniform Resource Locators (URL)"
-msgstr ":rfc:`1738` - Uniform Resource Locators (URL)"
+msgstr ":rfc:`1738` - Localizadores uniformes de recursos (URL)"
 
-#: ../../library/urllib.parse.rst:722
+#: ../Doc/library/urllib.parse.rst:710
 msgid "This specifies the formal syntax and semantics of absolute URLs."
-msgstr "この RFC では絶対 URL の形式的な文法と意味付けを仕様化しています。"
+msgstr ""
+"Esto especifica la sintaxis formal y la semántica de las direcciones URL "
+"absolutas."

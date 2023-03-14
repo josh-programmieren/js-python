@@ -1,97 +1,102 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version:  Traduccion-filecmp\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:06+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2021-10-16 21:42+0200\n"
+"PO-Revision-Date: 2020-09-27 12:59-0400\n"
+"Last-Translator: Enrique Giménez <fenriquegimenez@gmail.com>\n"
+"Language: es_PY\n"
+"Language-Team: Enrique Giménez\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../library/filecmp.rst:2
+#: ../Doc/library/filecmp.rst:2
 msgid ":mod:`filecmp` --- File and Directory Comparisons"
-msgstr ":mod:`filecmp` --- ファイルおよびディレクトリの比較"
+msgstr ":mod:`filecmp`--- Comparaciones de Archivo y Directorio"
 
-#: ../../library/filecmp.rst:9
+#: ../Doc/library/filecmp.rst:9
 msgid "**Source code:** :source:`Lib/filecmp.py`"
-msgstr "**ソースコード:** :source:`Lib/filecmp.py`"
+msgstr "**Código fuente:**:source:`Lib/filecmp.py`"
 
-#: ../../library/filecmp.rst:13
+#: ../Doc/library/filecmp.rst:13
 msgid ""
 "The :mod:`filecmp` module defines functions to compare files and "
 "directories, with various optional time/correctness trade-offs. For "
 "comparing files, see also the :mod:`difflib` module."
 msgstr ""
-":mod:`filecmp` モジュールでは、ファイルおよびディレクトリを比較するため、様々"
-"な時間／正確性のトレードオフに関するオプションを備えた関数を定義しています。"
-"ファイルの比較については、 :mod:`difflib` モジュールも参照してください。"
+"El módulo :mod:`filecmp` define funciones para comparar ficheros y "
+"directorios, con varias compensaciones de tiempo/corrección. Para comparar "
+"ficheros, vea también el módulo :mod:`difflib`."
 
-#: ../../library/filecmp.rst:17
+#: ../Doc/library/filecmp.rst:17
 msgid "The :mod:`filecmp` module defines the following functions:"
-msgstr ":mod:`filecmp` モジュールでは以下の関数を定義しています:"
+msgstr "El módulo :mod:`filecmp` define las siguientes funciones:"
 
-#: ../../library/filecmp.rst:22
+#: ../Doc/library/filecmp.rst:22
 msgid ""
 "Compare the files named *f1* and *f2*, returning ``True`` if they seem "
 "equal, ``False`` otherwise."
 msgstr ""
-"名前が *f1* および *f2* のファイルを比較し、二つのファイルが同じらしければ "
-"``True`` を返し、そうでなければ ``False`` を返します。"
+"Compara los ficheros llamados *f1* y *f2*, retornando ``True`` si son "
+"iguales, ``False`` en caso contrario."
 
-#: ../../library/filecmp.rst:25
+#: ../Doc/library/filecmp.rst:25
 msgid ""
 "If *shallow* is true and the :func:`os.stat` signatures (file type, size, "
 "and modification time) of both files are identical, the files are taken to "
 "be equal."
 msgstr ""
+"Si *shallow* es verdadero y las firmas :func:`os.stat` (tipo de fichero, "
+"tamaño, y tiempo de modificación) de los dos ficheros son idénticas, los "
+"ficheros se consideran iguales"
 
-#: ../../library/filecmp.rst:29
+#: ../Doc/library/filecmp.rst:29
 msgid ""
 "Otherwise, the files are treated as different if their sizes or contents "
 "differ."
 msgstr ""
+"De lo contrario, los ficheros son tratados como diferentes si sus tamaños o "
+"contenidos difieren."
 
-#: ../../library/filecmp.rst:31
+#: ../Doc/library/filecmp.rst:31
 msgid ""
 "Note that no external programs are called from this function, giving it "
 "portability and efficiency."
 msgstr ""
-"可搬性と効率のために、この関数は外部プログラムを一切呼び出さないので注意して"
-"ください。"
+"Note que ningún programa externo es llamado desde esta función, dándole "
+"portabilidad y eficiencia."
 
-#: ../../library/filecmp.rst:34
+#: ../Doc/library/filecmp.rst:34
 msgid ""
 "This function uses a cache for past comparisons and the results, with cache "
 "entries invalidated if the :func:`os.stat` information for the file "
 "changes.  The entire cache may be cleared using :func:`clear_cache`."
 msgstr ""
-"この関数は過去の比較と結果のキャッシュを使用します。ファイルの :func:`os."
-"stat` 情報が変更された場合、キャッシュの項目は無効化されます。:func:"
-"`clear_cache` を使用して全キャッシュを削除することが出来ます。"
+"La función utiliza un caché para comparaciones pasadas y los resultados, con "
+"entradas de caché invalidadas si la información de :func:`os.stat` para el "
+"fichero cambia. El caché entero puede ser limpiado utilizando :func:"
+"`clear_cache`."
 
-#: ../../library/filecmp.rst:41
+#: ../Doc/library/filecmp.rst:41
 msgid ""
 "Compare the files in the two directories *dir1* and *dir2* whose names are "
 "given by *common*."
 msgstr ""
-"*dir1* と *dir2* ディレクトリの中の、*common* で指定されたファイルを比較しま"
-"す。"
+"Compara los ficheros en los dos directorios *dir1* y *dir2* cuyos nombres "
+"son dados por *common*."
 
-#: ../../library/filecmp.rst:44
+#: ../Doc/library/filecmp.rst:44
 msgid ""
 "Returns three lists of file names: *match*, *mismatch*, *errors*.  *match* "
 "contains the list of files that match, *mismatch* contains the names of "
@@ -100,193 +105,198 @@ msgid ""
 "directories, the user lacks permission to read them or if the comparison "
 "could not be done for some other reason."
 msgstr ""
-"ファイル名からなる3つのリスト: *match*, *mismatch*, *errors* を返します。"
-"*match* には双方のディレクトリで一致したファイルのリストが含まれ、*mismatch* "
-"にはそうでないファイル名のリストが入ります。そして *errors* は比較されなかっ"
-"たファイルが列挙されます。*errors* になるのは、片方あるいは両方のディレクトリ"
-"に存在しなかった、ユーザーにそのファイルを読む権限がなかった、その他何らかの"
-"理由で比較を完了することができなかった場合です。"
+"Retorna tres listas de nombres de fichero: *match*, *mismatch*, *errors*. "
+"*match* contiene la lista de ficheros que coinciden, *mismatch* contiene los "
+"nombres de aquellos que no, y *errors* lista los nombres de los ficheros que "
+"no deberían ser comparados. Los ficheros son listados en *errors* si no "
+"existen en uno de los directorios, el usuario carece de permisos para "
+"leerlos o si la comparación no puede hacerse por alguna razón."
 
-#: ../../library/filecmp.rst:51
+#: ../Doc/library/filecmp.rst:51
 msgid ""
 "The *shallow* parameter has the same meaning and default value as for :func:"
 "`filecmp.cmp`."
 msgstr ""
-"引数 *shallow* はその意味も標準の設定も :func:`filecmp.cmp` と同じです。"
+"El parámetro *shallow* tiene el mismo significado y valor por defecto en "
+"cuanto a :func:`filecmp.cmp`."
 
-#: ../../library/filecmp.rst:54
+#: ../Doc/library/filecmp.rst:54
 msgid ""
 "For example, ``cmpfiles('a', 'b', ['c', 'd/e'])`` will compare ``a/c`` with "
 "``b/c`` and ``a/d/e`` with ``b/d/e``.  ``'c'`` and ``'d/e'`` will each be in "
 "one of the three returned lists."
 msgstr ""
-"例えば、``cmpfiles('a', 'b', ['c', 'd/e'])`` は ``a/c`` を ``b/c`` と、``a/d/"
-"e`` を ``b/d/e`` と、それぞれ比較します。``'c'`` と ``'d/e'`` はそれぞれ、返"
-"される3つのリストのいずれかに登録されます。"
+"Por ejemplo, ``cmpfiles('a', 'b', ['c', 'd/e'])`` comparará ``a/c`` con ``b/"
+"c`` y ``a/d/e`` con ``b/d/e``. ``'c'`` y ``'d/e'`` estará cada uno en una de "
+"las tres listas retornadas."
 
-#: ../../library/filecmp.rst:61
+#: ../Doc/library/filecmp.rst:61
 msgid ""
 "Clear the filecmp cache. This may be useful if a file is compared so quickly "
 "after it is modified that it is within the mtime resolution of the "
 "underlying filesystem."
 msgstr ""
-"filecmp のキャッシュをクリアします。背後のファイルシステムの mtime 分解能未満"
-"でのファイル変更後にすぐに比較するような場合に有用です。"
+"Limpia el caché de filecmp. Esto podría ser útil si un fichero es comparado "
+"muy rápido después de que es modificado que está dentro de la resolución "
+"mtime del sistema de archivos subyacente."
 
-#: ../../library/filecmp.rst:71
+#: ../Doc/library/filecmp.rst:71
 msgid "The :class:`dircmp` class"
-msgstr ":class:`dircmp` クラス"
+msgstr "La clase :class:`dircmp`"
 
-#: ../../library/filecmp.rst:75
+#: ../Doc/library/filecmp.rst:75
 msgid ""
 "Construct a new directory comparison object, to compare the directories *a* "
 "and *b*.  *ignore* is a list of names to ignore, and defaults to :attr:"
 "`filecmp.DEFAULT_IGNORES`.  *hide* is a list of names to hide, and defaults "
 "to ``[os.curdir, os.pardir]``."
 msgstr ""
-"ディレクトリ *a* および *b* を比較するための新しいディレクトリ比較オブジェク"
-"トを生成します。 *ignore* は比較の際に無視するファイル名のリストで、標準の設"
-"定では :attr:`filecmp.DEFAULT_IGNORES` です。 *hide* は表示しない名前のリスト"
-"で、標準の設定では ``[os.curdir, os.pardir]`` です。"
+"Construye un nuevo objeto de comparación de directorio, para comparar los "
+"directorios *a* y *b*. *ignore* es una lista de nombres a ignorar, y "
+"predetermina a :attr:`filecmp.DEFAULT_IGNORES`. *hide* es una lista de "
+"nombres a ocultar, y predetermina a ``[os.curdir, os.pardir]``."
 
-#: ../../library/filecmp.rst:80
+#: ../Doc/library/filecmp.rst:80
 msgid ""
 "The :class:`dircmp` class compares files by doing *shallow* comparisons as "
 "described for :func:`filecmp.cmp`."
 msgstr ""
-":class:`dircmp` クラスは、 :func:`filecmp.cmp` で説明されているような *浅い* "
-"比較を行うことによりファイルを比較します。"
+"La clase :class:`dircmp` compara ficheros haciendo comparaciones *shallow* "
+"como está descrito en :func:`filecmp.cmp`."
 
-#: ../../library/filecmp.rst:83
+#: ../Doc/library/filecmp.rst:83
 msgid "The :class:`dircmp` class provides the following methods:"
-msgstr ":class:`dircmp` クラスは以下のメソッドを提供しています:"
+msgstr "La clase :class:`dircmp` provee los siguientes métodos:"
 
-#: ../../library/filecmp.rst:87
+#: ../Doc/library/filecmp.rst:87
 msgid "Print (to :data:`sys.stdout`) a comparison between *a* and *b*."
-msgstr "*a* と *b* の比較を (:data:`sys.stdout` に) 表示します。"
+msgstr "Imprime (a :data:`sys.stdout`) una comparación entre *a* y *b*."
 
-#: ../../library/filecmp.rst:91
+#: ../Doc/library/filecmp.rst:91
 msgid ""
 "Print a comparison between *a* and *b* and common immediate subdirectories."
 msgstr ""
-"*a* および *b* およびそれらの直下にある共通のサブディレクトリ間での比較結果を"
-"出力します。"
+"Imprime una comparación entre *a* y *b* y subdirectorios inmediatos comunes."
 
-#: ../../library/filecmp.rst:96
+#: ../Doc/library/filecmp.rst:96
 msgid ""
 "Print a comparison between *a* and *b* and common subdirectories "
 "(recursively)."
 msgstr ""
-"*a* および *b* およびそれらの共通のサブディレクトリ間での比較結果を (再帰的に"
-"比較して) 出力します。"
+"Imprime una comparación entre *a* y *b* y subdirectorios comunes "
+"(recursivamente)."
 
-#: ../../library/filecmp.rst:99
+#: ../Doc/library/filecmp.rst:99
 msgid ""
 "The :class:`dircmp` class offers a number of interesting attributes that may "
 "be used to get various bits of information about the directory trees being "
 "compared."
 msgstr ""
-":class:`dircmp` クラスは、比較されているディレクトリ階層に関する様々な情報の"
-"ビットを得るために使用することのできる、興味深い属性を数多く提供しています。"
+"La clase :class:`dircmp` ofrece un número de atributos interesantes que "
+"pueden ser utilizados para obtener varios bits de información sobre los "
+"árboles de directorio que están siendo comparados."
 
-#: ../../library/filecmp.rst:103
+#: ../Doc/library/filecmp.rst:103
 msgid ""
 "Note that via :meth:`__getattr__` hooks, all attributes are computed lazily, "
 "so there is no speed penalty if only those attributes which are lightweight "
 "to compute are used."
 msgstr ""
-"すべての属性は :meth:`__getattr__` フックによって遅延評価されるので、計算が軽"
-"い属性のみを使用した場合は、属性の計算による速度の低下は起こりません。"
+"Note que vía los hooks :meth:`__getattr__`, todos los atributos son "
+"perezosamente computados, así que no hay penalización de velocidad si sólo "
+"esos atributos que son ligeros de computar son utilizados."
 
-#: ../../library/filecmp.rst:110
+#: ../Doc/library/filecmp.rst:110
 msgid "The directory *a*."
-msgstr "ディレクトリ *a*  です。"
+msgstr "El directorio *a*."
 
-#: ../../library/filecmp.rst:115
+#: ../Doc/library/filecmp.rst:115
 msgid "The directory *b*."
-msgstr "ディレクトリ *b*  です。"
+msgstr "El directorio *b*."
 
-#: ../../library/filecmp.rst:120
+#: ../Doc/library/filecmp.rst:120
 msgid "Files and subdirectories in *a*, filtered by *hide* and *ignore*."
-msgstr ""
-"*a* にあるファイルおよびサブディレクトリです。*hide* および *ignore* でフィル"
-"タされています。"
+msgstr "Ficheros y subdirectorios en *a*, filtrados por *hide* e *ignore*."
 
-#: ../../library/filecmp.rst:125
+#: ../Doc/library/filecmp.rst:125
 msgid "Files and subdirectories in *b*, filtered by *hide* and *ignore*."
-msgstr ""
-"*b* にあるファイルおよびサブディレクトリです。*hide* および *ignore* でフィル"
-"タされています。"
+msgstr "Ficheros y subdirectorios en *b*, filtrados por *hide* e *ignore*."
 
-#: ../../library/filecmp.rst:130
+#: ../Doc/library/filecmp.rst:130
 msgid "Files and subdirectories in both *a* and *b*."
-msgstr "*a* および *b* の両方にあるファイルおよびサブディレクトリです。"
+msgstr "Ficheros y subdirectorios en *a* y *b*."
 
-#: ../../library/filecmp.rst:135
+#: ../Doc/library/filecmp.rst:135
 msgid "Files and subdirectories only in *a*."
-msgstr "*a* だけにあるファイルおよびサブディレクトリです。"
+msgstr "Ficheros y subdirectorios sólo en *a*."
 
-#: ../../library/filecmp.rst:140
+#: ../Doc/library/filecmp.rst:140
 msgid "Files and subdirectories only in *b*."
-msgstr "*b* だけにあるファイルおよびサブディレクトリです。"
+msgstr "Ficheros y subdirectorios sólo en *b*."
 
-#: ../../library/filecmp.rst:145
+#: ../Doc/library/filecmp.rst:145
 msgid "Subdirectories in both *a* and *b*."
-msgstr "*a* および *b* の両方にあるサブディレクトリです。"
+msgstr "Subdirectorios en *a* y *b*."
 
-#: ../../library/filecmp.rst:150
+#: ../Doc/library/filecmp.rst:150
 msgid "Files in both *a* and *b*."
-msgstr "*a* および *b* の両方にあるファイルです。"
+msgstr "Ficheros en *a* y *b*."
 
-#: ../../library/filecmp.rst:155
+#: ../Doc/library/filecmp.rst:155
 msgid ""
 "Names in both *a* and *b*, such that the type differs between the "
 "directories, or names for which :func:`os.stat` reports an error."
 msgstr ""
-"*a* および *b* の両方にあり、ディレクトリ間でタイプが異なるか、 :func:`os."
-"stat` がエラーを報告するような名前です。"
+"Nombres en *a* y *b*, de forma que el tipo difiera entre los directorios, o "
+"los nombres por los que :func:`os.stat` reporta un error."
 
-#: ../../library/filecmp.rst:161
+#: ../Doc/library/filecmp.rst:161
 msgid ""
 "Files which are identical in both *a* and *b*, using the class's file "
 "comparison operator."
 msgstr ""
-"クラスのファイル比較オペレータを用いて *a* と *b* の両方において同一のファイ"
-"ルです。"
+"Ficheros que son idénticos en *a* y *b*, utilizando el operador de "
+"comparación de fichero de la clase."
 
-#: ../../library/filecmp.rst:167
+#: ../Doc/library/filecmp.rst:167
 msgid ""
 "Files which are in both *a* and *b*, whose contents differ according to the "
 "class's file comparison operator."
 msgstr ""
-"*a* と *b* の両方に存在し、クラスのファイル比較オペレータに基づいて内容が異な"
-"るファイルです。"
+"Ficheros que están en *a* y *b*, cuyos contenidos difieren acorde al "
+"operador de comparación del fichero de clase."
 
-#: ../../library/filecmp.rst:173
+#: ../Doc/library/filecmp.rst:173
 msgid "Files which are in both *a* and *b*, but could not be compared."
-msgstr "*a* および *b* 両方にあるが、比較されなかったファイルです。"
+msgstr "Ficheros que están en *a* y *b*, pero no deberían ser comparados."
 
-#: ../../library/filecmp.rst:178
+#: ../Doc/library/filecmp.rst:178
 msgid ""
 "A dictionary mapping names in :attr:`common_dirs` to :class:`dircmp` "
 "instances (or MyDirCmp instances if this instance is of type MyDirCmp, a "
 "subclass of :class:`dircmp`)."
 msgstr ""
+"Un diccionario que asigna nombres en :attr:`common_dirs` a instancias :class:"
+"`dircmp` (o instancias MyDirCmp si esa instancias es del tipo MyDirCmp, una "
+"subclase de :class:`dircmp`)."
 
-#: ../../library/filecmp.rst:182
+#: ../Doc/library/filecmp.rst:182
 msgid ""
 "Previously entries were always :class:`dircmp` instances. Now entries are "
 "the same type as *self*, if *self* is a subclass of :class:`dircmp`."
 msgstr ""
+"Anteriormente las entradas siempre eran instancias :class:`dircmp`. Ahora "
+"son del mismo tipo que *self*, si *self* es una subclase de :class:`dircmp`."
 
-#: ../../library/filecmp.rst:191
+#: ../Doc/library/filecmp.rst:191
 msgid "List of directories ignored by :class:`dircmp` by default."
-msgstr "デフォルトで :class:`dircmp` に無視されるディレクトリのリストです。"
+msgstr "Lista de directorios ignorados por :class:`dircmp` por defecto."
 
-#: ../../library/filecmp.rst:194
+#: ../Doc/library/filecmp.rst:194
 msgid ""
 "Here is a simplified example of using the ``subdirs`` attribute to search "
 "recursively through two directories to show common different files::"
 msgstr ""
-"これは ``subdirs`` 属性を使用して 2 つのディレクトリを再帰的に探索して、共通"
-"の異なるファイルを示すための単純化された例です::"
+"Aquí hay un ejemplo simplificado de uso del atributo ``subdirs`` para buscar "
+"recursivamente a través de dos directorios para mostrar diferentes ficheros "
+"comunes::"

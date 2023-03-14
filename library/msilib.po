@@ -1,42 +1,45 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:09+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2023-02-20 11:02-0300\n"
+"Last-Translator: \n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: ../../library/msilib.rst:2
+#: ../Doc/library/msilib.rst:2
 msgid ":mod:`msilib` --- Read and write Microsoft Installer files"
-msgstr ":mod:`msilib` --- Microsoft インストーラーファイルの読み書き"
+msgstr ":mod:`msilib` --- Leer y escribir archivos *Microsoft Installer*"
 
-#: ../../library/msilib.rst:12
+#: ../Doc/library/msilib.rst:12
 msgid "**Source code:** :source:`Lib/msilib/__init__.py`"
-msgstr "**ソースコード:** :source:`Lib/msilib/__init__.py`"
+msgstr "**Código fuente:** :source:`Lib/msilib/__init__.py`"
 
-#: ../../library/msilib.rst:19
+#: ../Doc/library/msilib.rst:19
 msgid ""
 "The :mod:`msilib` module is deprecated (see :pep:`PEP 594 <594#msilib>` for "
 "details)."
 msgstr ""
+"El :mod:`msilib` se descontinuó (consulte :pep:`PEP 594 <594#msilib>` para "
+"más información)."
 
-#: ../../library/msilib.rst:22
+# La última frase es rara
+#: ../Doc/library/msilib.rst:22
 msgid ""
 "The :mod:`msilib` supports the creation of Microsoft Installer (``.msi``) "
 "files. Because these files often contain an embedded \"cabinet\" file (``."
@@ -44,66 +47,73 @@ msgid ""
 "cab`` files is currently not implemented; read support for the ``.msi`` "
 "database is possible."
 msgstr ""
-":mod:`msilib` モジュールは Microsoft インストーラー(``.msi``)の作成を支援しま"
-"す。このファイルは大抵の場合埋め込まれた「キャビネット」ファイル (``.cab``) "
-"を含むので、CAB ファイル作成用の API も公開されています。``.cab`` ファイルの"
-"読み出しは現時点では実装されていませんが、 ``.msi`` データベースの読み出しは"
-"可能です。"
+"El :mod:`msilib` soporta la creación de archivos *Microsoft Installer* (``."
+"msi``). Como estos archivos a menudo contienen archivos *cabinet* (``.cab``) "
+"embebidos, se expone también una API para crear archivos CAB. El soporte "
+"para leer archivos ``.cab`` todavía no está implementado; el soporte a "
+"lectura de base de datos ``.msi`` es posible."
 
-#: ../../library/msilib.rst:27
+#: ../Doc/library/msilib.rst:27
 msgid ""
 "This package aims to provide complete access to all tables in an ``.msi`` "
 "file, therefore, it is a fairly low-level API. One primary application of "
 "this package is the creation of Python installer package itself (although "
 "that currently uses a different version of ``msilib``)."
 msgstr ""
+"Este paquete se centra en proveer acceso completo a todas las tablas de un "
+"archivo ``.msi``, por lo que se puede considerar una API de bajo nivel. Una "
+"aplicación principal de este paquete es la creación del propio paquete de "
+"instalación de Python (aunque actualmente usa una versión diferente de "
+"``msilib``)."
 
-#: ../../library/msilib.rst:32
+#: ../Doc/library/msilib.rst:32
 msgid ""
 "The package contents can be roughly split into four parts: low-level CAB "
 "routines, low-level MSI routines, higher-level MSI routines, and standard "
 "table structures."
 msgstr ""
-"パッケージの内容は大きく四つのパートに分けられます。低レベル CAB ルーチン、低"
-"レベル MSI ルーチン、少し高レベルの MSI ルーチン、標準的なテーブル構造、の四"
-"つです。"
+"El contenido del paquete se puede dividir en cuatro partes: rutinas CAB de "
+"bajo nivel, rutinas MSI de bajo nivel, rutinas MSI de alto nivel, y "
+"estructuras de tabla estándar."
 
-#: ../../library/msilib.rst:39
+#: ../Doc/library/msilib.rst:39
 msgid ""
 "Create a new CAB file named *cabname*. *files* must be a list of tuples, "
 "each containing the name of the file on disk, and the name of the file "
 "inside the CAB file."
 msgstr ""
-"新しい CAB ファイルを *cabname* という名前で作ります。*files* はタプルのリス"
-"トで、それぞれのタプルはディスク上のファイル名と CAB ファイルで付けられるファ"
-"イル名で構成されなければなりません。"
+"Crea un nuevo archivo CAB llamado *cabname*. *files* debe ser una lista de "
+"tuplas, donde cada una contiene el nombre del archivo en disco, y el nombre "
+"del archivo dentro del archivo CAB."
 
-#: ../../library/msilib.rst:43
+#: ../Doc/library/msilib.rst:43
 msgid ""
 "The files are added to the CAB file in the order they appear in the list. "
 "All files are added into a single CAB file, using the MSZIP compression "
 "algorithm."
 msgstr ""
-"ファイルはリストに現れた順番で CAB ファイルに追加されます。全てのファイルは "
-"MSZIP 圧縮アルゴリズムを使って一つの CAB ファイルに追加されます。"
+"Los archivos son añadidos al archivo CAB en el orden en el cual aparecen en "
+"la lista. Todos los archivos son añadidos a un solo archivo CAB, utilizando "
+"el algoritmo de compresión MSZIP."
 
-#: ../../library/msilib.rst:46
+#: ../Doc/library/msilib.rst:46
 msgid ""
 "Callbacks to Python for the various steps of MSI creation are currently not "
 "exposed."
 msgstr ""
-"MSI 作成の様々なステップに対する Python コールバックは現在公開されていませ"
-"ん。"
+"Las retrollamadas a Python para los diferentes pasos de la creación de MSI "
+"no están actualmente expuestas."
 
-#: ../../library/msilib.rst:52
+#: ../Doc/library/msilib.rst:52
 msgid ""
 "Return the string representation of a new unique identifier. This wraps the "
 "Windows API functions :c:func:`UuidCreate` and :c:func:`UuidToString`."
 msgstr ""
-"新しい一意な識別子の文字列表現を返します。この関数は Windows API の関数 :c:"
-"func:`UuidCreate` と :c:func:`UuidToString` をラップしたものです。"
+"Retorna la representación de un nuevo identificador único como cadena de "
+"caracteres. Esto envuelve las funciones :c:func:`UuidCreate` y :c:func:"
+"`UuidToString` de la API de Windows."
 
-#: ../../library/msilib.rst:58
+#: ../Doc/library/msilib.rst:58
 msgid ""
 "Return a new database object by calling MsiOpenDatabase.   *path* is the "
 "file name of the MSI file; *persist* can be one of the constants "
@@ -113,158 +123,164 @@ msgid ""
 "these flags; depending on the flags, an existing database is opened, or a "
 "new one created."
 msgstr ""
-"MsiOpenDatabase を呼び出して新しいデータベースオブジェクトを返します。*path* "
-"は MSI ファイルのファイル名です。*persist* は五つの定数 "
+"Retorna una nueva base de datos llamando a MsiOpenDatabase. *path* es el "
+"nombre del archivo MSI; *persist* puede ser una de las constantes "
 "``MSIDBOPEN_CREATEDIRECT``, ``MSIDBOPEN_CREATE``, ``MSIDBOPEN_DIRECT``, "
-"``MSIDBOPEN_READONLY``, ``MSIDBOPEN_TRANSACT`` のどれか一つで、フラグ "
-"``MSIDBOPEN_PATCHFILE`` を含めても構いません。これらのフラグの意味は "
-"Microsoft のドキュメントを参照してください。フラグに従って、既存のデータベー"
-"スを開いたり新しいデータベースを作成したりします。"
+"``MSIDBOPEN_READONLY`` o ``MSIDBOPEN_TRANSACT``, y puede incluir la bandera "
+"``MSIDBOPEN_PATCHFILE``. El significado de estas banderas se puede consultar "
+"en la documentación de Microsoft; dependiendo de las banderas, se abrirá una "
+"base de datos existente, o se creará una nueva."
 
-#: ../../library/msilib.rst:69
+#: ../Doc/library/msilib.rst:69
 msgid ""
 "Return a new record object by calling :c:func:`MSICreateRecord`. *count* is "
 "the number of fields of the record."
 msgstr ""
-":c:func:`MSICreateRecord` を呼び出して新しいレコードオブジェクトを返します。 "
-"*count* はレコードのフィールドの数です。"
+"Retorna un nuevo objeto de registro llamando a :c:func:`MSICreateRecord`. "
+"*count* es el número de campos del registro."
 
-#: ../../library/msilib.rst:75
+#: ../Doc/library/msilib.rst:75
 msgid ""
 "Create and return a new database *name*, initialize it with *schema*, and "
 "set the properties *ProductName*, *ProductCode*, *ProductVersion*, and "
 "*Manufacturer*."
 msgstr ""
-"*name* という名前の新しいデータベースを作り、*schema* で初期化し、プロパティ "
-"*ProductName*, *ProductCode*, *ProductVersion*, *Manufacturer* をセットして、"
-"返します。"
+"Crea y retorna una nueva base de datos *name*, la inicializa con *schema*, y "
+"establece las propiedades *ProductName*, *ProductCode*, *ProductVersion* y "
+"*Manufacturer*."
 
-#: ../../library/msilib.rst:79
+#: ../Doc/library/msilib.rst:79
 msgid ""
 "*schema* must be a module object containing ``tables`` and "
 "``_Validation_records`` attributes; typically, :mod:`msilib.schema` should "
 "be used."
 msgstr ""
-"*schema* は ``tables`` と ``_Validation_records`` という属性をもったモジュー"
-"ルオブジェクトでなければなりません。大抵の場合、 :mod:`msilib.schema` を使う"
-"べきです。"
+"*schema* debe ser un objeto módulo que contenga los atributos ``tables`` y "
+"``_Validation_records``; normalmente se debería usar :mod:`msilib.schema`."
 
-#: ../../library/msilib.rst:83
+#: ../Doc/library/msilib.rst:83
 msgid ""
 "The database will contain just the schema and the validation records when "
 "this function returns."
 msgstr ""
-"データベースはこの関数から返された時点でスキーマとバリデーションレコードだけ"
-"が収められています。"
+"La base de datos contendrá únicamente el esquema y los registros de "
+"validación cuando esta función retorne."
 
-#: ../../library/msilib.rst:89
+#: ../Doc/library/msilib.rst:89
 msgid "Add all *records* to the table named *table* in *database*."
-msgstr "全ての *records* を *database* の *table* テーブルに追加します。"
+msgstr "Añade todos los *records* de la tabla llamada *table* a *database*."
 
-#: ../../library/msilib.rst:91
+#: ../Doc/library/msilib.rst:91
 msgid ""
 "The *table* argument must be one of the predefined tables in the MSI schema, "
 "e.g. ``'Feature'``, ``'File'``, ``'Component'``, ``'Dialog'``, "
 "``'Control'``, etc."
 msgstr ""
-"*table* 引数は MSI スキーマで事前に定義されたテーブルでなければなりません。例"
-"えば、``'Feature'``, ``'File'``, ``'Component'``, ``'Dialog'``, "
-"``'Control'``, などです。"
+"El argumento *table* debe ser una de las tablas predefinidas en el esquema "
+"MSI, como ``'Feature'``, ``'File'``, ``'Component'``, ``'Dialog'``, "
+"``'Control'``, etc."
 
-#: ../../library/msilib.rst:95
+#: ../Doc/library/msilib.rst:95
 msgid ""
 "*records* should be a list of tuples, each one containing all fields of a "
 "record according to the schema of the table.  For optional fields, ``None`` "
 "can be passed."
 msgstr ""
-"*records* はタプルのリストで、それぞれのタプルにはテーブルのスキーマに従った"
-"レコードの全てのフィールドを含んでいるものでなければなりません。オプションの"
-"フィールドには ``None`` を渡すことができます。"
+"*records* debería ser una lista de tuplas, donde cada una contenga todos los "
+"campos de un registro, acorde al esquema de la tabla. Para los campos "
+"opcionales se puede asignar ``None``."
 
-#: ../../library/msilib.rst:99
+#: ../Doc/library/msilib.rst:99
 msgid "Field values can be ints, strings, or instances of the Binary class."
 msgstr ""
-"フィールドの値には、整数・文字列・Binary クラスのインスタンスが使えます。"
+"Los valores de los campos pueden ser enteros, cadenas de caracteres o "
+"instancias de la clase Binary."
 
-#: ../../library/msilib.rst:104
+#: ../Doc/library/msilib.rst:104
 msgid ""
 "Represents entries in the Binary table; inserting such an object using :func:"
 "`add_data` reads the file named *filename* into the table."
 msgstr ""
-"Binary テーブル中のエントリーを表わします。 :func:`add_data` を使ってこのクラ"
-"スのオブジェクトを挿入するときには *filename* という名前のファイルをテーブル"
-"に読み込みます。"
+"Representa entradas en la tabla Binary; insertar un objeto así utilizando :"
+"func:`add_data` lee el archivo llamado **filename** en la tabla."
 
-#: ../../library/msilib.rst:110
+#: ../Doc/library/msilib.rst:110
 msgid ""
 "Add all table content from *module* to *database*. *module* must contain an "
 "attribute *tables* listing all tables for which content should be added, and "
 "one attribute per table that has the actual content."
 msgstr ""
-"*module* の全てのテーブルの内容を *database* に追加します。*module* は "
-"*tables* という内容が追加されるべき全てのテーブルのリストと、テーブルごとに一"
-"つある実際の内容を持っている属性とを含んでいなければなりません。"
+"Añade todos los contenidos de la tabla de *module* a *database*. *module* "
+"debe contener un atributo *tables*, que liste todas las tablas cuyos "
+"contenidos deban ser añadidos, y un atributo por tabla que contenga el "
+"propio contenido."
 
-#: ../../library/msilib.rst:114
+#: ../Doc/library/msilib.rst:114
 msgid "This is typically used to install the sequence tables."
-msgstr ""
-"この関数は典型的にシーケンステーブルをインストールするために使われます。"
+msgstr "Esto suele utilizarse para instalar las tablas secuenciales."
 
-#: ../../library/msilib.rst:119
+#: ../Doc/library/msilib.rst:119
 msgid ""
 "Add the file *path* into the ``_Stream`` table of *database*, with the "
 "stream name *name*."
 msgstr ""
-"*database* の ``_Stream`` テーブルに、ファイル *path* を *name* というスト"
-"リーム名で追加します。"
+"Añade el archivo *path* en la tabla ``_Stream`` de *database*, con el nombre "
+"del flujo *name*."
 
-#: ../../library/msilib.rst:125
+#: ../Doc/library/msilib.rst:125
 msgid ""
 "Return a new UUID, in the format that MSI typically requires (i.e. in curly "
 "braces, and with all hexdigits in uppercase)."
 msgstr ""
+"Retorna un nuevo UUID, en el formato que MSI suele requerir (es decir, entre "
+"llaves y con todos los dígitos hexadecimales en mayúsculas)."
 
-#: ../../library/msilib.rst:131
+#: ../Doc/library/msilib.rst:131
 msgid ""
 "`FCICreate <https://msdn.microsoft.com/en-us/library/bb432265.aspx>`_ "
 "`UuidCreate <https://msdn.microsoft.com/en-us/library/windows/desktop/"
 "aa379205.aspx>`_ `UuidToString <https://msdn.microsoft.com/en-us/library/"
 "windows/desktop/aa379352.aspx>`_"
 msgstr ""
+"`FCICreate <https://msdn.microsoft.com/en-us/library/bb432265.aspx>`_ "
+"`UuidCreate <https://msdn.microsoft.com/en-us/library/windows/desktop/"
+"aa379205.aspx>`_ `UuidToString <https://msdn.microsoft.com/en-us/library/"
+"windows/desktop/aa379352.aspx>`_"
 
-#: ../../library/msilib.rst:138
+#: ../Doc/library/msilib.rst:138
 msgid "Database Objects"
-msgstr "データベースオブジェクト"
+msgstr "Objetos Database"
 
-#: ../../library/msilib.rst:143
+#: ../Doc/library/msilib.rst:143
 msgid ""
 "Return a view object, by calling :c:func:`MSIDatabaseOpenView`. *sql* is the "
 "SQL statement to execute."
 msgstr ""
-":c:func:`MSIDatabaseOpenView` を呼び出して取得したビューオブジェクトを返しま"
-"す。 *sql* は実行される SQL ステートメントです。"
+"Retorna un objeto de vista, llamando a :c:func:`MSIDatabaseOpenView`. *sql* "
+"es la sentencia SQL a ejecutar."
 
-#: ../../library/msilib.rst:149
+#: ../Doc/library/msilib.rst:149
 msgid ""
 "Commit the changes pending in the current transaction, by calling :c:func:"
 "`MSIDatabaseCommit`."
 msgstr ""
-":c:func:`MSIDatabaseCommit` を呼び出して現在のトランザクションで保留されてい"
-"る変更をコミットします。"
+"Persiste (**commit**) los cambios pendientes en la transacción actual, "
+"llamando a :c:func:`MSIDatabaseCommit`."
 
-#: ../../library/msilib.rst:155
+#: ../Doc/library/msilib.rst:155
 msgid ""
 "Return a new summary information object, by calling :c:func:"
 "`MsiGetSummaryInformation`.  *count* is the maximum number of updated values."
 msgstr ""
-":c:func:`MsiGetSummaryInformation` を呼び出して新しいサマリー情報オブジェクト"
-"を返します。 *count* は更新された値の最大数です。"
+"Retorna un nuevo objeto de información resumida, llamando a :c:func:"
+"`MsiGetSummaryInformation`. *count* es el número máximo de valores "
+"actualizados."
 
-#: ../../library/msilib.rst:161
+#: ../Doc/library/msilib.rst:161
 msgid "Close the database object, through :c:func:`MsiCloseHandle`."
-msgstr ""
+msgstr "Cierra el objeto de base de datos, mediante :c:func:`MsiCloseHandle`."
 
-#: ../../library/msilib.rst:167
+#: ../Doc/library/msilib.rst:167
 msgid ""
 "`MSIDatabaseOpenView <https://msdn.microsoft.com/en-us/library/windows/"
 "desktop/aa370082.aspx>`_ `MSIDatabaseCommit <https://msdn.microsoft.com/en-"
@@ -273,38 +289,45 @@ msgid ""
 "`MsiCloseHandle <https://msdn.microsoft.com/en-us/library/windows/desktop/"
 "aa370067.aspx>`_"
 msgstr ""
+"`MSIDatabaseOpenView <https://msdn.microsoft.com/en-us/library/windows/"
+"desktop/aa370082.aspx>`_ `MSIDatabaseCommit <https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/aa370075.aspx>`_ `MSIGetSummaryInformation "
+"<https://msdn.microsoft.com/en-us/library/windows/desktop/aa370301.aspx>`_ "
+"`MsiCloseHandle <https://msdn.microsoft.com/en-us/library/windows/desktop/"
+"aa370067.aspx>`_"
 
-#: ../../library/msilib.rst:175
+#: ../Doc/library/msilib.rst:175
 msgid "View Objects"
-msgstr "ビューオブジェクト"
+msgstr "Objetos View"
 
-#: ../../library/msilib.rst:180
+#: ../Doc/library/msilib.rst:180
 msgid ""
 "Execute the SQL query of the view, through :c:func:`MSIViewExecute`. If "
 "*params* is not ``None``, it is a record describing actual values of the "
 "parameter tokens in the query."
 msgstr ""
-":c:func:`MSIViewExecute` を通してビューに対する SQL 問い合わせを実行します。 "
-"*params* が ``None`` でない場合、クエリ中のパラメータトークンの実際の値を与え"
-"るものです。"
+"Ejecuta la consulta SQL de la vista, mediante :c:func:`MSIViewExecute`. Si "
+"*params* no es ``None``, es un registro que describe los valores actuales de "
+"los *tokens* del parámetro en la consulta."
 
-#: ../../library/msilib.rst:187
+#: ../Doc/library/msilib.rst:187
 msgid ""
 "Return a record describing the columns of the view, through calling :c:func:"
 "`MsiViewGetColumnInfo`. *kind* can be either ``MSICOLINFO_NAMES`` or "
 "``MSICOLINFO_TYPES``."
 msgstr ""
-":c:func:`MsiViewGetColumnInfo` の呼び出しを通してビューのカラムを説明するレ"
-"コードを返します。 *kind* は ``MSICOLINFO_NAMES`` または "
-"``MSICOLINFO_TYPES`` です。"
+"Retorna un registro que describe las columnas de la vista, llamando a :c:"
+"func:`MsiViewGetColumnInfo`. *kind* puede ser ``MSICOLINFO_NAMES`` o "
+"``MSICOLINFO_TYPES``."
 
-#: ../../library/msilib.rst:194
+#: ../Doc/library/msilib.rst:194
 msgid ""
 "Return a result record of the query, through calling :c:func:`MsiViewFetch`."
 msgstr ""
-":c:func:`MsiViewFetch` の呼び出しを通してクエリの結果レコードを返します。"
+"Retorna un registro de resultado de la consulta, llamando a :c:func:"
+"`MsiViewFetch`."
 
-#: ../../library/msilib.rst:199
+#: ../Doc/library/msilib.rst:199
 msgid ""
 "Modify the view, by calling :c:func:`MsiViewModify`. *kind* can be one of "
 "``MSIMODIFY_SEEK``, ``MSIMODIFY_REFRESH``, ``MSIMODIFY_INSERT``, "
@@ -313,22 +336,22 @@ msgid ""
 "``MSIMODIFY_VALIDATE``, ``MSIMODIFY_VALIDATE_NEW``, "
 "``MSIMODIFY_VALIDATE_FIELD``, or ``MSIMODIFY_VALIDATE_DELETE``."
 msgstr ""
-":c:func:`MsiViewModify` を呼び出してビューを変更します。 *kind* は "
+"Modifica la vista, llamando a :c:func:`MsiViewModify`. *kind* puede ser "
 "``MSIMODIFY_SEEK``, ``MSIMODIFY_REFRESH``, ``MSIMODIFY_INSERT``, "
 "``MSIMODIFY_UPDATE``, ``MSIMODIFY_ASSIGN``, ``MSIMODIFY_REPLACE``, "
 "``MSIMODIFY_MERGE``, ``MSIMODIFY_DELETE``, ``MSIMODIFY_INSERT_TEMPORARY``, "
 "``MSIMODIFY_VALIDATE``, ``MSIMODIFY_VALIDATE_NEW``, "
-"``MSIMODIFY_VALIDATE_FIELD``, ``MSIMODIFY_VALIDATE_DELETE`` のいずれかです。"
+"``MSIMODIFY_VALIDATE_FIELD`` o ``MSIMODIFY_VALIDATE_DELETE``."
 
-#: ../../library/msilib.rst:206
+#: ../Doc/library/msilib.rst:206
 msgid "*data* must be a record describing the new data."
-msgstr "*data* は新しいデータを表わすレコードでなければなりません。"
+msgstr "*data* debe ser un registro que describa los nuevos datos."
 
-#: ../../library/msilib.rst:211
+#: ../Doc/library/msilib.rst:211
 msgid "Close the view, through :c:func:`MsiViewClose`."
-msgstr ":c:func:`MsiViewClose` を通してビューを閉じます。"
+msgstr "Cierra la vista, mediante :c:func:`MsiViewClose`."
 
-#: ../../library/msilib.rst:216
+#: ../Doc/library/msilib.rst:216
 msgid ""
 "`MsiViewExecute <https://msdn.microsoft.com/en-us/library/windows/desktop/"
 "aa370513.aspx>`_ `MSIViewGetColumnInfo <https://msdn.microsoft.com/en-us/"
@@ -338,12 +361,19 @@ msgid ""
 "`MsiViewClose <https://msdn.microsoft.com/en-us/library/windows/desktop/"
 "aa370510.aspx>`_"
 msgstr ""
+"`MsiViewExecute <https://msdn.microsoft.com/en-us/library/windows/desktop/"
+"aa370513.aspx>`_ `MSIViewGetColumnInfo <https://msdn.microsoft.com/en-us/"
+"library/windows/desktop/aa370516.aspx>`_ `MsiViewFetch <https://msdn."
+"microsoft.com/en-us/library/windows/desktop/aa370514.aspx>`_ `MsiViewModify "
+"<https://msdn.microsoft.com/en-us/library/windows/desktop/aa370519.aspx>`_ "
+"`MsiViewClose <https://msdn.microsoft.com/en-us/library/windows/desktop/"
+"aa370510.aspx>`_"
 
-#: ../../library/msilib.rst:225
+#: ../Doc/library/msilib.rst:225
 msgid "Summary Information Objects"
-msgstr "サマリー情報オブジェクト"
+msgstr "Objetos Summary Information"
 
-#: ../../library/msilib.rst:230
+#: ../Doc/library/msilib.rst:230
 msgid ""
 "Return a property of the summary, through :c:func:"
 "`MsiSummaryInfoGetProperty`. *field* is the name of the property, and can be "
@@ -353,41 +383,42 @@ msgid ""
 "``PID_CREATE_DTM``, ``PID_LASTSAVE_DTM``, ``PID_PAGECOUNT``, "
 "``PID_WORDCOUNT``, ``PID_CHARCOUNT``, ``PID_APPNAME``, or ``PID_SECURITY``."
 msgstr ""
-":c:func:`MsiSummaryInfoGetProperty` を通してサマリーのプロパティを返します。 "
-"*field* はプロパティ名で、定数 ``PID_CODEPAGE``, ``PID_TITLE``, "
-"``PID_SUBJECT``, ``PID_AUTHOR``, ``PID_KEYWORDS``, ``PID_COMMENTS``, "
-"``PID_TEMPLATE``, ``PID_LASTAUTHOR``, ``PID_REVNUMBER``, "
-"``PID_LASTPRINTED``, ``PID_CREATE_DTM``, ``PID_LASTSAVE_DTM``, "
-"``PID_PAGECOUNT``, ``PID_WORDCOUNT``, ``PID_CHARCOUNT``, ``PID_APPNAME``, "
-"``PID_SECURITY`` のいずれかです。"
+"Retorna una propiedad del resumen, mediante :c:func:"
+"`MsiSummaryInfoGetProperty`. *field* es el nombre de la propiedad, y puede "
+"ser una de las constantes: ``PID_CODEPAGE``, ``PID_TITLE``, ``PID_SUBJECT``, "
+"``PID_AUTHOR``, ``PID_KEYWORDS``, ``PID_COMMENTS``, ``PID_TEMPLATE``, "
+"``PID_LASTAUTHOR``, ``PID_REVNUMBER``, ``PID_LASTPRINTED``, "
+"``PID_CREATE_DTM``, ``PID_LASTSAVE_DTM``, ``PID_PAGECOUNT``, "
+"``PID_WORDCOUNT``, ``PID_CHARCOUNT``, ``PID_APPNAME`` o ``PID_SECURITY``."
 
-#: ../../library/msilib.rst:241
+#: ../Doc/library/msilib.rst:241
 msgid ""
 "Return the number of summary properties, through :c:func:"
 "`MsiSummaryInfoGetPropertyCount`."
 msgstr ""
-":c:func:`MsiSummaryInfoGetPropertyCount` を通してサマリープロパティの個数を返"
-"します。"
+"Retorna el número de propiedades del resumen, mediante :c:func:"
+"`MsiSummaryInfoGetPropertyCount`."
 
-#: ../../library/msilib.rst:247
+#: ../Doc/library/msilib.rst:247
 msgid ""
 "Set a property through :c:func:`MsiSummaryInfoSetProperty`. *field* can have "
 "the same values as in :meth:`GetProperty`, *value* is the new value of the "
 "property. Possible value types are integer and string."
 msgstr ""
-":c:func:`MsiSummaryInfoSetProperty` を通してプロパティをセットします。 "
-"*field* は :meth:`GetProperty` におけるものと同じ値をとります。 *value* はプ"
-"ロパティの新しい値です。許される値の型は整数と文字列です。"
+"Establece una propiedad mediante :c:func:`MsiSummaryInfoSetProperty`. "
+"*field* puede tener los mismos valores que en :meth:`GetProperty`; *value* "
+"es el nuevo valor de la propiedad. Los tipos de los valores pueden ser "
+"enteros o cadenas de caracteres."
 
-#: ../../library/msilib.rst:254
+#: ../Doc/library/msilib.rst:254
 msgid ""
 "Write the modified properties to the summary information stream, using :c:"
 "func:`MsiSummaryInfoPersist`."
 msgstr ""
-":c:func:`MsiSummaryInfoPersist` を使って変更されたプロパティをサマリー情報ス"
-"トリームに書き込みます。"
+"Escribe las propiedades modificadas al flujo de información resumida, "
+"mediante :c:func:`MsiSummaryInfoPersist`."
 
-#: ../../library/msilib.rst:260
+#: ../Doc/library/msilib.rst:260
 msgid ""
 "`MsiSummaryInfoGetProperty <https://msdn.microsoft.com/en-us/library/windows/"
 "desktop/aa370409.aspx>`_ `MsiSummaryInfoGetPropertyCount <https://msdn."
@@ -396,66 +427,74 @@ msgid ""
 "desktop/aa370491.aspx>`_ `MsiSummaryInfoPersist <https://msdn.microsoft.com/"
 "en-us/library/windows/desktop/aa370490.aspx>`_"
 msgstr ""
+"`MsiSummaryInfoGetProperty <https://msdn.microsoft.com/en-us/library/windows/"
+"desktop/aa370409.aspx>`_ `MsiSummaryInfoGetPropertyCount <https://msdn."
+"microsoft.com/en-us/library/windows/desktop/aa370488.aspx>`_ "
+"`MsiSummaryInfoSetProperty <https://msdn.microsoft.com/en-us/library/windows/"
+"desktop/aa370491.aspx>`_ `MsiSummaryInfoPersist <https://msdn.microsoft.com/"
+"en-us/library/windows/desktop/aa370490.aspx>`_"
 
-#: ../../library/msilib.rst:268
+#: ../Doc/library/msilib.rst:268
 msgid "Record Objects"
-msgstr "レコードオブジェクト"
+msgstr "Objetos Record"
 
-#: ../../library/msilib.rst:273
+#: ../Doc/library/msilib.rst:273
 msgid ""
 "Return the number of fields of the record, through :c:func:"
 "`MsiRecordGetFieldCount`."
 msgstr ""
-":c:func:`MsiRecordGetFieldCount` を通してレコードのフィールド数を返します。"
+"Retorna el número de campos del registro, mediante :c:func:"
+"`MsiRecordGetFieldCount`."
 
-#: ../../library/msilib.rst:279
+#: ../Doc/library/msilib.rst:279
 msgid ""
 "Return the value of *field* as an integer where possible.  *field* must be "
 "an integer."
 msgstr ""
-"*field* の値を可能なら整数として返します。*field* は整数でなければなりませ"
-"ん。"
+"Retorna el valor de *field* como entero cuando sea posible. *field* debe ser "
+"un entero."
 
-#: ../../library/msilib.rst:285
+#: ../Doc/library/msilib.rst:285
 msgid ""
 "Return the value of *field* as a string where possible.  *field* must be an "
 "integer."
 msgstr ""
-"*field* の値を可能なら文字列として返します。*field* は整数でなければなりませ"
-"ん。"
+"Retorna el valor de *field* como una cadena de caracteres cuando sea "
+"posible. *field* debe ser un entero."
 
-#: ../../library/msilib.rst:291
+#: ../Doc/library/msilib.rst:291
 msgid ""
 "Set *field* to *value* through :c:func:`MsiRecordSetString`. *field* must be "
 "an integer; *value* a string."
 msgstr ""
-":c:func:`MsiRecordSetString` を通して *field* を *value* にセットします。 "
-"*field* は整数、 *value* は文字列でなければなりません。"
+"Establece *field* a *value* mediante :c:func:`MsiRecordSetString`. *field* "
+"debe ser un entero; *value* una cadena de caracteres."
 
-#: ../../library/msilib.rst:297
+#: ../Doc/library/msilib.rst:297
 msgid ""
 "Set *field* to the contents of the file named *value*, through :c:func:"
 "`MsiRecordSetStream`. *field* must be an integer; *value* a string."
 msgstr ""
-":c:func:`MsiRecordSetStream` を通して *field* を *value* という名のファイルの"
-"内容にセットします。 *field* は整数、 *value* は文字列でなければなりません。"
+"Establece *field* al contenido del archivo llamado *value*, mediante :c:func:"
+"`MsiRecordSetStream`. *field* debe ser un entero; *value* una cadena de "
+"caracteres."
 
-#: ../../library/msilib.rst:303
+#: ../Doc/library/msilib.rst:303
 msgid ""
 "Set *field* to *value* through :c:func:`MsiRecordSetInteger`. Both *field* "
 "and *value* must be an integer."
 msgstr ""
-":c:func:`MsiRecordSetInteger` を通して *field* を *value* にセットします。 "
-"*field* も *value* も整数でなければなりません。"
+"Establece *field* a *value* mediante :c:func:`MsiRecordSetInteger`. *field* "
+"y *value* deben ser enteros."
 
-#: ../../library/msilib.rst:309
+#: ../Doc/library/msilib.rst:309
 msgid ""
 "Set all fields of the record to 0, through :c:func:`MsiRecordClearData`."
 msgstr ""
-":c:func:`MsiRecordClearData` を通してレコードの全てのフィールドを 0 にセット"
-"します。"
+"Establece todos los campos del registro a 0, mediante :c:func:"
+"`MsiRecordClearData`."
 
-#: ../../library/msilib.rst:314
+#: ../Doc/library/msilib.rst:314
 msgid ""
 "`MsiRecordGetFieldCount <https://msdn.microsoft.com/en-us/library/windows/"
 "desktop/aa370366.aspx>`_ `MsiRecordSetString <https://msdn.microsoft.com/en-"
@@ -465,65 +504,77 @@ msgid ""
 "desktop/aa370371.aspx>`_ `MsiRecordClearData <https://msdn.microsoft.com/en-"
 "us/library/windows/desktop/aa370364.aspx>`_"
 msgstr ""
+"`MsiRecordGetFieldCount <https://msdn.microsoft.com/en-us/library/windows/"
+"desktop/aa370366.aspx>`_ `MsiRecordSetString <https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/aa370373.aspx>`_ `MsiRecordSetStream <https://"
+"msdn.microsoft.com/en-us/library/windows/desktop/aa370372.aspx>`_ "
+"`MsiRecordSetInteger <https://msdn.microsoft.com/en-us/library/windows/"
+"desktop/aa370371.aspx>`_ `MsiRecordClearData <https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/aa370364.aspx>`_"
 
-#: ../../library/msilib.rst:323
+#: ../Doc/library/msilib.rst:323
 msgid "Errors"
-msgstr "エラー"
+msgstr "Errores"
 
-#: ../../library/msilib.rst:325
+#: ../Doc/library/msilib.rst:325
 msgid ""
 "All wrappers around MSI functions raise :exc:`MSIError`; the string inside "
 "the exception will contain more detail."
 msgstr ""
+"Todos los *wrappers* sobre funciones MSI lanzan :exc:`MSIError`; la cadena "
+"de caracteres dentro de la excepción contendrá más detalles."
 
-#: ../../library/msilib.rst:332
+#: ../Doc/library/msilib.rst:332
 msgid "CAB Objects"
-msgstr "CAB オブジェクト"
+msgstr "Objetos CAB"
 
-#: ../../library/msilib.rst:337
+#: ../Doc/library/msilib.rst:337
 msgid ""
 "The class :class:`CAB` represents a CAB file. During MSI construction, files "
 "will be added simultaneously to the ``Files`` table, and to a CAB file. "
 "Then, when all files have been added, the CAB file can be written, then "
 "added to the MSI file."
 msgstr ""
-":class:`CAB` クラスは CAB ファイルを表わすものです。MSI 構築中、ファイルは "
-"``Files`` テーブルと CAB ファイルとに同時に追加されます。そして、全てのファイ"
-"ルを追加し終えたら、CAB ファイルは書き込まれることが可能になり、MSI ファイル"
-"に追加されます。"
+"La clase :class:`CAB` representa un archivo CAB. Durante la construcción del "
+"MSI, los archivos se añadirán simultáneamente a la table ``Files``, y a un "
+"archivo CAB. Después, cuando todos los archivos sean añadidos, el archivo "
+"CAB puede ser sobreescrito, y finalmente añadido al archivo MSI."
 
-#: ../../library/msilib.rst:342
+#: ../Doc/library/msilib.rst:342
 msgid "*name* is the name of the CAB file in the MSI file."
-msgstr "*name* は MSI ファイル中の CAB ファイルの名前です。"
+msgstr "*name* es el nombre del archivo CAB dentro del archivo MSI."
 
-#: ../../library/msilib.rst:347
+#: ../Doc/library/msilib.rst:347
 msgid ""
 "Add the file with the pathname *full* to the CAB file, under the name "
 "*logical*.  If there is already a file named *logical*, a new file name is "
 "created."
 msgstr ""
-"パス名 *full* のファイルを CAB ファイルに *logical* という名で追加します。"
-"*logical* という名が既に存在したならば、新しいファイル名が作られます。"
+"Añade el archivo con la ruta *full* al archivo CAB, bajo el nombre "
+"*logical*. Si ya existe algún archivo llamado *logical*, se creará un nuevo "
+"archivo."
 
-#: ../../library/msilib.rst:351
+#: ../Doc/library/msilib.rst:351
 msgid ""
 "Return the index of the file in the CAB file, and the new name of the file "
 "inside the CAB file."
-msgstr "ファイルの CAB ファイル中のインデクスと新しいファイル名を返します。"
+msgstr ""
+"Retorna el índice del archivo dentro del archivo CAB, y el nuevo nombre del "
+"archivo dentro del archivo CAB."
 
-#: ../../library/msilib.rst:357
+#: ../Doc/library/msilib.rst:357
 msgid ""
 "Generate a CAB file, add it as a stream to the MSI file, put it into the "
 "``Media`` table, and remove the generated file from the disk."
 msgstr ""
-"CAB ファイルを作り、MSI ファイルにストリームとして追加し、``Media`` テーブル"
-"に送り込み、作ったファイルはディスクから削除します。"
+"Genera un archivo CAB, lo añade como un flujo al archivo MSI, lo añade a la "
+"tabla ``Media``, y elimina el archivo generado del disco."
 
-#: ../../library/msilib.rst:364
+#: ../Doc/library/msilib.rst:364
 msgid "Directory Objects"
-msgstr "ディレクトリオブジェクト"
+msgstr "Objetos Directory"
 
-#: ../../library/msilib.rst:369
+#: ../Doc/library/msilib.rst:369
 msgid ""
 "Create a new directory in the Directory table. There is a current component "
 "at each point in time for the directory, which is either explicitly created "
@@ -534,16 +585,17 @@ msgid ""
 "directory name.  *default* specifies the DefaultDir slot in the directory "
 "table. *componentflags* specifies the default flags that new components get."
 msgstr ""
-"新しいディレクトリを Directory テーブルに作成します。ディレクトリには各時点で"
-"現在のコンポーネントがあります。そのコンポーネントは :meth:`start_component` "
-"を使って明示的に作成されたか、最初にファイルが追加された際に暗黙裡に作成され"
-"たものです。ファイルは現在のコンポーネントと cab ファイルの両方に追加されま"
-"す。ディレクトリを作成するには親ディレクトリオブジェクト(``None`` でも可)、物"
-"理的ディレクトリへのパス、論理的ディレクトリ名を指定する必要があります。 "
-"*default* はディレクトリテーブルの DefaultDir スロットを指定します。 "
-"*componentflags* は新しいコンポーネントが得るデフォルトのフラグを指定します。"
+"Crea un nuevo directorio en la tabla *Directory*. Hay un componente actual "
+"en cada punto temporal para el directorio, el cual es, o bien explícitamente "
+"creado mediante :meth:`start_component`, o bien implícito cuando los "
+"archivos se añaden por primera vez. Los archivos son añadidos en el "
+"componente actual, y al archivo CAB. Para crear un directorio, un objeto de "
+"directorio base tiene que ser especificado (puede ser ``None``), la ruta al "
+"directorio físico, y un nombre de directorio lógico. *default* especifica el "
+"zócalo *DefaultDir* en la table de directorio. *componentflags* especifica "
+"las banderas por defecto que obtendrán los nuevos componentes."
 
-#: ../../library/msilib.rst:381
+#: ../Doc/library/msilib.rst:381
 msgid ""
 "Add an entry to the Component table, and make this component the current "
 "component for this directory. If no component name is given, the directory "
@@ -551,13 +603,14 @@ msgid ""
 "*flags* are given, the directory's default flags are used. If no *keyfile* "
 "is given, the KeyPath is left null in the Component table."
 msgstr ""
-"エントリを Component テーブルに追加し、このコンポーネントをこのディレクトリの"
-"現在のコンポーネントにします。もしコンポーネント名が与えられなければディレク"
-"トリ名が使われます。*feature* が与えられなければ、ディレクトリのデフォルトフ"
-"ラグが使われます。*keyfile* が与えられなければ、Component テーブルの KeyPath "
-"は null のままになります。"
+"Añade una entrada a la tabla *Component*, y hace este componente el actual "
+"componente para este directorio. Si no se especifica ningún nombre de "
+"componente, se usará el nombre del directorio. Si no se especifica ninguna "
+"*feature*, se usará la característica actual. Si no se especifican *flags*, "
+"se usarán las banderas por defecto del directorio. Si no se especifica "
+"ningún *keyfile*, el *KeyPath* quedará nulo en la tabla *Component*."
 
-#: ../../library/msilib.rst:390
+#: ../Doc/library/msilib.rst:390
 msgid ""
 "Add a file to the current component of the directory, starting a new one if "
 "there is no current component. By default, the file name in the source and "
@@ -565,25 +618,27 @@ msgid ""
 "interpreted relative to the current directory. Optionally, a *version* and a "
 "*language* can be specified for the entry in the File table."
 msgstr ""
-"ファイルをディレクトリの現在のコンポーネントに追加します。現在のコンポーネン"
-"トが存在しない場合、新しいコンポーネントを開始します。デフォルトではソースと"
-"ファイルテーブルのファイル名は同じになります。*src* ファイルが指定された場"
-"合、それは現在のディレクトリから相対的に解釈されます。オプションで *version* "
-"と *language* を File テーブルのエントリ用に指定することができます。"
+"Añade el archivo al componente actual del directorio, inicializando uno "
+"nuevo si no existe un componente actual. Por defecto, el nombre del archivo "
+"en el origen y la tabla del archivo serán idénticos. Si se especifica el "
+"archivo *src*, se interpretará como relativo al directorio actual. "
+"Opcionalmente, se pueden especificar una *version* y un *language* para la "
+"entrada en la tabla *File*."
 
-#: ../../library/msilib.rst:399
+#: ../Doc/library/msilib.rst:399
 msgid ""
 "Add a list of files to the current component as specified in the glob "
 "pattern.  Individual files can be excluded in the *exclude* list."
 msgstr ""
-"現在のコンポーネントに glob パターンで指定されたファイルのリストを追加しま"
-"す。個々のファイルを *exclude* リストで除外することができます。"
+"Añade una lista de archivos al componente actual, como se especifica en el "
+"patrón *glob*. Se pueden excluir archivos individualmente en la lista "
+"*exclude*."
 
-#: ../../library/msilib.rst:405
+#: ../Doc/library/msilib.rst:405
 msgid "Remove ``.pyc`` files on uninstall."
-msgstr ""
+msgstr "Elimina los archivos ``.pyc`` al desinstalar."
 
-#: ../../library/msilib.rst:410
+#: ../Doc/library/msilib.rst:410
 msgid ""
 "`Directory Table <https://msdn.microsoft.com/en-us/library/windows/desktop/"
 "aa368295.aspx>`_ `File Table <https://msdn.microsoft.com/en-us/library/"
@@ -591,138 +646,151 @@ msgid ""
 "com/en-us/library/windows/desktop/aa368007.aspx>`_ `FeatureComponents Table "
 "<https://msdn.microsoft.com/en-us/library/windows/desktop/aa368579.aspx>`_"
 msgstr ""
+"`Directory Table <https://msdn.microsoft.com/en-us/library/windows/desktop/"
+"aa368295.aspx>`_ `File Table <https://msdn.microsoft.com/en-us/library/"
+"windows/desktop/aa368596.aspx>`_ `Component Table <https://msdn.microsoft."
+"com/en-us/library/windows/desktop/aa368007.aspx>`_ `FeatureComponents Table "
+"<https://msdn.microsoft.com/en-us/library/windows/desktop/aa368579.aspx>`_"
 
-#: ../../library/msilib.rst:418
+#: ../Doc/library/msilib.rst:418
 msgid "Features"
-msgstr "フィーチャー"
+msgstr "Features"
 
-#: ../../library/msilib.rst:423
+#: ../Doc/library/msilib.rst:423
 msgid ""
 "Add a new record to the ``Feature`` table, using the values *id*, *parent."
 "id*, *title*, *desc*, *display*, *level*, *directory*, and *attributes*. The "
 "resulting feature object can be passed to the :meth:`start_component` method "
 "of :class:`Directory`."
 msgstr ""
-"*id*, *parent.id*, *title*, *desc*, *display*, *level*, *directory*, "
-"*attributes* の値を使って、新しいレコードを ``Feature`` テーブルに追加しま"
-"す。出来上がったフィーチャーオブジェクトは :class:`Directory` の :meth:"
-"`start_component` メソッドに渡すことができます。"
+"Añade un nuevo registro a la tabla ``Feature``, usando los valores *id*, "
+"*parent.id*, *title*, *desc*, *display*, *level*, *directory* y "
+"*attributes*. El objeto de característica resultante se le puede dar al "
+"método :meth:`start_component` de :class:`Directory`."
 
-#: ../../library/msilib.rst:431
+#: ../Doc/library/msilib.rst:431
 msgid ""
 "Make this feature the current feature of :mod:`msilib`. New components are "
 "automatically added to the default feature, unless a feature is explicitly "
 "specified."
 msgstr ""
-"このフィーチャーを :mod:`msilib` の現在のフィーチャーにします。フィーチャーを"
-"明示的に指定しない場合、新しいコンポーネントが自動的にデフォルトのフィー"
-"チャーに追加されます。"
+"Establece esta característica como la actual característica de :mod:"
+"`msilib`. Los nuevos componentes serán añadidos automáticamente a la "
+"característica por defecto, a no ser que se especifique explícitamente una "
+"característica."
 
-#: ../../library/msilib.rst:438
+#: ../Doc/library/msilib.rst:438
 msgid ""
 "`Feature Table <https://msdn.microsoft.com/en-us/library/windows/desktop/"
 "aa368585.aspx>`_"
 msgstr ""
+"`Feature Table <https://msdn.microsoft.com/en-us/library/windows/desktop/"
+"aa368585.aspx>`_"
 
-#: ../../library/msilib.rst:443
+#: ../Doc/library/msilib.rst:443
 msgid "GUI classes"
-msgstr "GUI クラス"
+msgstr "Clases GUI"
 
-#: ../../library/msilib.rst:445
+#: ../Doc/library/msilib.rst:445
 msgid ""
 ":mod:`msilib` provides several classes that wrap the GUI tables in an MSI "
 "database. However, no standard user interface is provided."
 msgstr ""
+":mod:`msilib` proporciona varias clases que envuelven las tablas GUI en una "
+"base de datos MSI. Sin embargo, no proporciona una interfaz de usuario "
+"estándar."
 
-#: ../../library/msilib.rst:451
+#: ../Doc/library/msilib.rst:451
 msgid ""
 "Base class of the dialog controls. *dlg* is the dialog object the control "
 "belongs to, and *name* is the control's name."
 msgstr ""
-"ダイアログコントロールの基底クラス。*dlg* はコントロールの属するダイアログオ"
-"ブジェクト、*name* はコントロールの名前です。"
+"Clase base de los controles de diálogo. *dlg* es el objeto de diálogo al que "
+"pertenece el control, y *name* es el nombre del control."
 
-#: ../../library/msilib.rst:457
+#: ../Doc/library/msilib.rst:457
 msgid "Make an entry into the ``ControlEvent`` table for this control."
-msgstr "このコントロールの ``ControlEvent`` テーブルにエントリを作ります。"
+msgstr "Crea una entrada en la tabla ``ControlEvent`` para este control."
 
-#: ../../library/msilib.rst:462
+#: ../Doc/library/msilib.rst:462
 msgid "Make an entry into the ``EventMapping`` table for this control."
-msgstr "このコントロールの ``EventMapping`` テーブルにエントリを作ります。"
+msgstr "Crea una entrada en la tabla ``EventMapping`` para este control."
 
-#: ../../library/msilib.rst:467
+#: ../Doc/library/msilib.rst:467
 msgid "Make an entry into the ``ControlCondition`` table for this control."
-msgstr "このコントロールの ``ControlCondition`` テーブルにエントリを作ります。"
+msgstr "Crea una entrada en la tabla ``ControlCondition`` para este control."
 
-#: ../../library/msilib.rst:472
+#: ../Doc/library/msilib.rst:472
 msgid ""
 "Create a radio button control named *name*. *property* is the installer "
 "property that gets set when a radio button is selected."
 msgstr ""
-"*name* という名前のラジオボタンコントロールを作成します。*property* はラジオ"
-"ボタンが選ばれたときにセットされるインストーラープロパティです。"
+"Crea un control de botón de selección llamado *name*. *property* es la "
+"propiedad del instalador que se establece cuando un botón de selección es "
+"seleccionado."
 
-#: ../../library/msilib.rst:478
+#: ../Doc/library/msilib.rst:478
 msgid ""
 "Add a radio button named *name* to the group, at the coordinates *x*, *y*, "
 "*width*, *height*, and with the label *text*. If *value* is ``None``, it "
 "defaults to *name*."
 msgstr ""
-"グループに *name* という名前で、座標 *x*, *y* に大きさが *width*, *height* "
-"で *text* というラベルの付いたラジオボタンを追加します。*value* が ``None`` "
-"なら、デフォルトは *name* になります。"
+"Añade un botón de selección llamado *name* al grupo, en las coordenadas *x*, "
+"*y*, *width*, *height*, con la etiqueta *text*. Si *value* es ``None``, se "
+"establecerá por defecto a *name*."
 
-#: ../../library/msilib.rst:485
+#: ../Doc/library/msilib.rst:485
 msgid ""
 "Return a new :class:`Dialog` object. An entry in the ``Dialog`` table is "
 "made, with the specified coordinates, dialog attributes, title, name of the "
 "first, default, and cancel controls."
 msgstr ""
-"新しい :class:`Dialog` オブジェクトを返します。 ``Dialog`` テーブルを以下の引"
-"数に渡された情報を元に作成します: 座標、ダイアログ属性、タイトル、first・"
-"default・cancelという三つのコントロールに対する名前。"
+"Retorna un nuevo objeto :class:`Dialog`. Se creará una entrada en la tabla "
+"``Dialog`` con las coordenadas, atributos de diálogo y título especificados, "
+"así como los nombres del primer control y los controles por defecto y de "
+"cancelación."
 
-#: ../../library/msilib.rst:492
+#: ../Doc/library/msilib.rst:492
 msgid ""
 "Return a new :class:`Control` object. An entry in the ``Control`` table is "
 "made with the specified parameters."
 msgstr ""
-"新しい :class:`Control` オブジェクトを返します。 ``Control`` テーブルに指定さ"
-"れたパラメータのエントリが作られます。"
+"Retorna un nuevo objeto :class:`Control`. Se creará una entrada en la tabla "
+"``Control`` con los parámetros especificados."
 
-#: ../../library/msilib.rst:495
+#: ../Doc/library/msilib.rst:495
 msgid ""
 "This is a generic method; for specific types, specialized methods are "
 "provided."
 msgstr ""
-"これは汎用のメソッドで、特定の型に対しては特化したメソッドが提供されていま"
-"す。"
+"Este es un método genérico; para tipos específicos hay métodos "
+"especializados disponibles."
 
-#: ../../library/msilib.rst:501
+#: ../Doc/library/msilib.rst:501
 msgid "Add and return a ``Text`` control."
-msgstr "``Text`` コントロールを追加して返します。"
+msgstr "Añade y retorna un control ``Text``."
 
-#: ../../library/msilib.rst:506
+#: ../Doc/library/msilib.rst:506
 msgid "Add and return a ``Bitmap`` control."
-msgstr "``Bitmap`` コントロールを追加して返します。"
+msgstr "Añade y retorna un control ``Bitmap``."
 
-#: ../../library/msilib.rst:511
+#: ../Doc/library/msilib.rst:511
 msgid "Add and return a ``Line`` control."
-msgstr "``Line`` コントロールを追加して返します。"
+msgstr "Añade y retorna un control ``Line``."
 
-#: ../../library/msilib.rst:516
+#: ../Doc/library/msilib.rst:516
 msgid "Add and return a ``PushButton`` control."
-msgstr "``PushButton`` コントロールを追加して返します。"
+msgstr "Añade y retorna un control ``PushButton``."
 
-#: ../../library/msilib.rst:521
+#: ../Doc/library/msilib.rst:521
 msgid "Add and return a ``RadioButtonGroup`` control."
-msgstr "``RadioButtonGroup`` コントロールを追加して返します。"
+msgstr "Añade y retorna un control ``RadioButtonGroup``."
 
-#: ../../library/msilib.rst:526
+#: ../Doc/library/msilib.rst:526
 msgid "Add and return a ``CheckBox`` control."
-msgstr "``CheckBox`` コントロールを追加して返します。"
+msgstr "Añade y retorna un control ``CheckBox``."
 
-#: ../../library/msilib.rst:531
+#: ../Doc/library/msilib.rst:531
 msgid ""
 "`Dialog Table <https://msdn.microsoft.com/en-us/library/windows/desktop/"
 "aa368286.aspx>`_ `Control Table <https://msdn.microsoft.com/en-us/library/"
@@ -734,44 +802,53 @@ msgid ""
 "us/library/windows/desktop/aa368559.aspx>`_ `RadioButton Table <https://msdn."
 "microsoft.com/en-us/library/windows/desktop/aa370962.aspx>`_"
 msgstr ""
+"`Dialog Table <https://msdn.microsoft.com/en-us/library/windows/desktop/"
+"aa368286.aspx>`_ `Control Table <https://msdn.microsoft.com/en-us/library/"
+"windows/desktop/aa368044.aspx>`_ `Control Types <https://msdn.microsoft.com/"
+"en-us/library/windows/desktop/aa368039.aspx>`_ `ControlCondition Table "
+"<https://msdn.microsoft.com/en-us/library/windows/desktop/aa368035.aspx>`_ "
+"`ControlEvent Table <https://msdn.microsoft.com/en-us/library/windows/"
+"desktop/aa368037.aspx>`_ `EventMapping Table <https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/aa368559.aspx>`_ `RadioButton Table <https://msdn."
+"microsoft.com/en-us/library/windows/desktop/aa370962.aspx>`_"
 
-#: ../../library/msilib.rst:542
+#: ../Doc/library/msilib.rst:542
 msgid "Precomputed tables"
-msgstr "事前に計算されたテーブル"
+msgstr "Tablas pre-calculadas"
 
-#: ../../library/msilib.rst:544
+#: ../Doc/library/msilib.rst:544
 msgid ""
 ":mod:`msilib` provides a few subpackages that contain only schema and table "
 "definitions. Currently, these definitions are based on MSI version 2.0."
 msgstr ""
-":mod:`msilib` はスキーマとテーブル定義だけから成るサブパッケージをいくつか提"
-"供しています。現在のところ、これらの定義は MSI バージョン 2.0 に基づいていま"
-"す。"
+":mod:`msilib` proporciona algunos subpaquetes que contienen únicamente "
+"definiciones de esquema y tabla. Actualmente, estas definiciones están "
+"basadas en la versión 2.0 de MSI."
 
-#: ../../library/msilib.rst:550
+#: ../Doc/library/msilib.rst:550
 msgid ""
 "This is the standard MSI schema for MSI 2.0, with the *tables* variable "
 "providing a list of table definitions, and *_Validation_records* providing "
 "the data for MSI validation."
 msgstr ""
-"これは MSI 2.0 用の標準 MSI スキーマで、テーブル定義のリストを提供する "
-"*tables* 変数と、MSI バリデーション用のデータを提供する "
-"*_Validation_records* 変数があります。"
+"Este es el esquema estándar MSI para MSI 2.0, con la variable *tables* "
+"proporcionando una lista de definición de tablas, y *_Validation_records* "
+"proporcionando la información para la validación MSI."
 
-#: ../../library/msilib.rst:557
+#: ../Doc/library/msilib.rst:557
 msgid ""
 "This module contains table contents for the standard sequence tables: "
 "*AdminExecuteSequence*, *AdminUISequence*, *AdvtExecuteSequence*, "
 "*InstallExecuteSequence*, and *InstallUISequence*."
 msgstr ""
-"このモジュールは標準シーケンステーブルのテーブル内容を含んでいます。"
-"*AdminExecuteSequence*, *AdminUISequence*, *AdvtExecuteSequence*, "
-"*InstallExecuteSequence*, *InstallUISequence* が含まれています。"
+"Este módulo alberga los contenidos de la tabla para las tablas de secuencia "
+"estándar: *AdminExecuteSequence*, *AdminUISequence*, *AdvtExecuteSequence*, "
+"*InstallExecuteSequence*, and *InstallUISequence*."
 
-#: ../../library/msilib.rst:564
+#: ../Doc/library/msilib.rst:564
 msgid ""
 "This module contains definitions for the UIText and ActionText tables, for "
 "the standard installer actions."
 msgstr ""
-"このモジュールは標準的なインストーラーのアクションのための UIText および "
-"ActionText テーブルの定義を含んでいます。"
+"Este módulo contiene definiciones para las tablas *UIText* y *ActionText*, "
+"para las acciones estándar del instalador."

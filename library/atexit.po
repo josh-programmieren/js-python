@@ -1,33 +1,32 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Shin Saito, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 00:55+0000\n"
-"Last-Translator: Shin Saito, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2021-10-16 21:42+0200\n"
+"PO-Revision-Date: 2021-12-31 09:29-0300\n"
+"Last-Translator: \n"
+"Language: es_AR\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.9.1\n"
+"X-Generator: Poedit 3.0\n"
 
-#: ../../library/atexit.rst:2
+#: ../Doc/library/atexit.rst:2
 msgid ":mod:`atexit` --- Exit handlers"
-msgstr ":mod:`atexit` --- 終了ハンドラ"
+msgstr ":mod:`atexit` --- Gestores de Salida"
 
-#: ../../library/atexit.rst:12
+#: ../Doc/library/atexit.rst:12
 msgid ""
 "The :mod:`atexit` module defines functions to register and unregister "
 "cleanup functions.  Functions thus registered are automatically executed "
@@ -36,42 +35,45 @@ msgid ""
 "``B``, and ``C``, at interpreter termination time they will be run in the "
 "order ``C``, ``B``, ``A``."
 msgstr ""
-":mod:`atexit` モジュールは、クリーンアップ関数の登録およびその解除を行う関数"
-"を定義します。登録された関数はインタプリタの通常終了時に自動的に実行されま"
-"す。:mod:`atexit` はそれら関数を登録した順と *逆に* 実行します; ``A``、"
-"``B``、``C`` の順に登録した場合、インタプリタ終了時に ``C``、``B``、``A`` の"
-"順に実行されます。"
+"El módulo :mod:`atexit` define funciones para registrar y cancelar el "
+"registro de las funciones de limpieza. Las funciones así registradas se "
+"ejecutan automáticamente cuando el intérprete se detiene normalmente. El "
+"módulo :mod:`atexit` realiza estas funciones en el orden inverso en el que "
+"se registraron; si ingresa ``A``, ``B``, y ``C``, cuando el intérprete se "
+"detenga, se ejecutarán en el orden ``C``, ``B``, ``A``."
 
-#: ../../library/atexit.rst:19
+#: ../Doc/library/atexit.rst:19
 msgid ""
 "**Note:** The functions registered via this module are not called when the "
 "program is killed by a signal not handled by Python, when a Python fatal "
 "internal error is detected, or when :func:`os._exit` is called."
 msgstr ""
-"**注意:** このモジュールを使用して登録された関数は、プログラムが Python が扱"
-"わないシグナルによって kill された場合、Python 内部で致命的なエラーが検出され"
-"た場合、あるいは :func:`os._exit` が呼び出された場合は実行されません。"
+"**Nota:** Las funciones registradas a través de este módulo no se invocan "
+"cuando el programa es eliminado por una señal no gestionada por Python, "
+"cuando se detecta un error fatal interno en Python o cuando se llama a la "
+"función :func:`os._exit`."
 
-#: ../../library/atexit.rst:23
+#: ../Doc/library/atexit.rst:23
 msgid ""
 "When used with C-API subinterpreters, registered functions are local to the "
 "interpreter they were registered in."
 msgstr ""
-"C-API のサブインタープリタで使われているとき、登録された関数は登録先のイン"
-"タープリタのローカルな関数になります。"
+"Cuando se usan con sub-intérpretes API C, las funciones registradas son "
+"locales para el intérprete en el que se registraron."
 
-#: ../../library/atexit.rst:29
+#: ../Doc/library/atexit.rst:29
 msgid ""
 "Register *func* as a function to be executed at termination.  Any optional "
 "arguments that are to be passed to *func* must be passed as arguments to :"
 "func:`register`.  It is possible to register the same function and arguments "
 "more than once."
 msgstr ""
-"*func* を終了時に実行する関数として登録します。*func* に渡す引数は :func:"
-"`register` の引数として指定しなければなりません。同じ関数を同じ引数で複数回登"
-"録できます。"
+"Registra *func* como una función que se ejecutará cuando el intérprete se "
+"detenga. Cualquier argumento opcional que deba pasarse a *func* debe pasarse "
+"como un argumento para la función :func:`register`. Es posible registrar las "
+"mismas funciones y argumentos más de una vez."
 
-#: ../../library/atexit.rst:34
+#: ../Doc/library/atexit.rst:34
 msgid ""
 "At normal program termination (for instance, if :func:`sys.exit` is called "
 "or the main module's execution completes), all functions registered are "
@@ -79,30 +81,34 @@ msgid ""
 "modules will normally be imported before higher level modules and thus must "
 "be cleaned up later."
 msgstr ""
-"通常のプログラムの終了時、例えば :func:`sys.exit` が呼び出されるとき、あるい"
-"は、メインモジュールの実行が完了したときに、登録された全ての関数を、最後に登"
-"録されたものから順に呼び出します。通常、より低レベルのモジュールはより高レベ"
-"ルのモジュールより前に import されるので、後で後始末が行われるという仮定に基"
-"づいています。"
+"En la finalización normal del programa (por ejemplo, si se llama a la "
+"función :func:`sys.exit` o finaliza la ejecución del módulo principal), "
+"todas las funciones registradas se invocan en el orden último en entrar, "
+"primero en salir. Se supone que los módulos de nivel más bajo normalmente se "
+"importarán antes que los módulos de nivel alto y, por lo tanto, se limpiarán "
+"al final."
 
-#: ../../library/atexit.rst:40
+#: ../Doc/library/atexit.rst:40
 msgid ""
 "If an exception is raised during execution of the exit handlers, a traceback "
 "is printed (unless :exc:`SystemExit` is raised) and the exception "
 "information is saved.  After all exit handlers have had a chance to run, the "
 "last exception to be raised is re-raised."
 msgstr ""
-"終了ハンドラの実行中に例外が発生すると、(:exc:`SystemExit` 以外の場合は)ト"
-"レースバックを表示して、例外の情報を保存します。全ての終了ハンドラに動作する"
-"チャンスを与えた後に、最後に送出された例外を再送出します。"
+"Si se lanza una excepción durante la ejecución de los gestores de salida, se "
+"muestra un traceback (a menos que se haya lanzado :exc:`SystemExit`) y se "
+"guarda la información de la excepción. Después de que todos los gestores de "
+"salida hayan tenido la oportunidad de ejecutarse, la última excepción a ser "
+"lanzada se vuelve a lanzar."
 
-#: ../../library/atexit.rst:45
+#: ../Doc/library/atexit.rst:45
 msgid ""
 "This function returns *func*, which makes it possible to use it as a "
 "decorator."
-msgstr "この関数は *func* を返し、これをデコレータとして利用できます。"
+msgstr ""
+"Esta función retorna *func*, lo que hace posible usarlo como decorador."
 
-#: ../../library/atexit.rst:51
+#: ../Doc/library/atexit.rst:51
 msgid ""
 "Remove *func* from the list of functions to be run at interpreter shutdown. :"
 "func:`unregister` silently does nothing if *func* was not previously "
@@ -111,53 +117,55 @@ msgid ""
 "comparisons (``==``) are used internally during unregistration, so function "
 "references do not need to have matching identities."
 msgstr ""
-"関数 *func* をインタプリタ終了時に実行する関数のリストから削除します。*func* "
-"が登録されていなければ、:func:`unregister` は何もしません。*func* が2回以上登"
-"録されている場合は :mod:`atexit` のコールスタックにおける *func* のすべての出"
-"現が削除されます。削除の際の比較には等価比較 (``==``) が使われます。したがっ"
-"て削除したいものと同一の関数を *func* に指定する必要はありません。"
+"Elimina *func* de la lista de funciones que se ejecutarán en el apagado del "
+"intérprete. :func:`unregister` silenciosamente no hace nada si *func* no se "
+"registró previamente. Si *func* se ha registrado más de una vez, se "
+"eliminarán todas las apariciones de esa función en la pila de llamadas de :"
+"mod:`atexit`. Se utilizan comparaciones de igualdad (''=='') internamente "
+"durante la cancelación del registro, por lo que las referencias de funciones "
+"no necesitan tener identidades coincidentes."
 
-#: ../../library/atexit.rst:62
+#: ../Doc/library/atexit.rst:62
 msgid "Module :mod:`readline`"
-msgstr ":mod:`readline` モジュール"
+msgstr "Módulo :mod:`readline`"
 
-#: ../../library/atexit.rst:62
+#: ../Doc/library/atexit.rst:62
 msgid ""
 "Useful example of :mod:`atexit` to read and write :mod:`readline` history "
 "files."
 msgstr ""
-":mod:`readline` ヒストリファイルを読み書きするための :mod:`atexit` の有用な例"
-"です。"
+"Un ejemplo útil del uso de :mod:`atexit` para leer y escribir archivos de "
+"historial :mod:`readline`."
 
-#: ../../library/atexit.rst:69
+#: ../Doc/library/atexit.rst:69
 msgid ":mod:`atexit` Example"
-msgstr ":mod:`atexit` の例"
+msgstr "Ejemplo con :mod:`atexit`"
 
-#: ../../library/atexit.rst:71
+#: ../Doc/library/atexit.rst:71
 msgid ""
 "The following simple example demonstrates how a module can initialize a "
 "counter from a file when it is imported and save the counter's updated value "
 "automatically when the program terminates without relying on the application "
 "making an explicit call into this module at termination. ::"
 msgstr ""
-"次の簡単な例では、あるモジュールを import した時にカウンタを初期化しておき、"
-"プログラムが終了するときにアプリケーションがこのモジュールを明示的に呼び出さ"
-"なくてもカウンタが更新されるようにする方法を示しています。 ::"
+"El siguiente ejemplo simple muestra cómo un módulo puede inicializar un "
+"contador desde un archivo cuando se importa, y guardar el valor del contador "
+"actualizado automáticamente cuando finaliza el programa, sin necesidad de "
+"que la aplicación realice una llamada explícita en este módulo cuando el "
+"intérprete se detiene. ::"
 
-#: ../../library/atexit.rst:94
+#: ../Doc/library/atexit.rst:94
 msgid ""
 "Positional and keyword arguments may also be passed to :func:`register` to "
 "be passed along to the registered function when it is called::"
 msgstr ""
-":func:`register` に指定した位置引数とキーワード引数は登録した関数を呼び出す際"
-"に渡されます::"
+"Los argumentos posicionales y de palabras clave también se pueden pasar a :"
+"func:`register` para volver a pasar a la función registrada cuando se llama::"
 
-#: ../../library/atexit.rst:106
+#: ../Doc/library/atexit.rst:106
 msgid "Usage as a :term:`decorator`::"
-msgstr ":term:`デコレータ <decorator>` として利用する例::"
+msgstr "Usar como un :term:`decorator`::"
 
-#: ../../library/atexit.rst:114
+#: ../Doc/library/atexit.rst:114
 msgid "This only works with functions that can be called without arguments."
-msgstr ""
-"デコレータとして利用できるのは、その関数が引数なしで呼び出された場合に限られ"
-"ます。"
+msgstr "Esto solo funciona con funciones que se pueden invocar sin argumentos."

@@ -1,178 +1,176 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2021
-# 渋川よしき <yoshiki@shibu.jp>, 2022
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:09+0000\n"
-"Last-Translator: 渋川よしき <yoshiki@shibu.jp>, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-10-31 14:33-0300\n"
+"Last-Translator: Diego Cristobal Herreros <diecristher@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es_AR\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.2\n"
 
-#: ../../library/logging.handlers.rst:2
+#: ../Doc/library/logging.handlers.rst:2
 msgid ":mod:`logging.handlers` --- Logging handlers"
-msgstr ":mod:`logging.handlers` --- ロギングハンドラ"
+msgstr ":mod:`logging.handlers` --- Gestores de *logging*"
 
-#: ../../library/logging.handlers.rst:10
+#: ../Doc/library/logging.handlers.rst:10
 msgid "**Source code:** :source:`Lib/logging/handlers.py`"
-msgstr "**ソースコード:** :source:`Lib/logging/handlers.py`"
+msgstr "**Código fuente** :source:`Lib/logging/handlers.py`"
 
-#: ../../library/logging.handlers.rst:14
+#: ../Doc/library/logging.handlers.rst:14
 msgid ""
 "This page contains only reference information. For tutorials, please see"
 msgstr ""
-"このページには、リファレンス情報だけが含まれています。チュートリアルは、以下"
-"のページを参照してください"
+"Esta página contiene solo información de referencia. Para tutoriales por "
+"favor véase"
 
-#: ../../library/logging.handlers.rst:17
+#: ../Doc/library/logging.handlers.rst:17
 msgid ":ref:`Basic Tutorial <logging-basic-tutorial>`"
-msgstr ":ref:`基本チュートリアル <logging-basic-tutorial>`"
+msgstr ":ref:`Tutorial Básico <logging-basic-tutorial>`"
 
-#: ../../library/logging.handlers.rst:18
+#: ../Doc/library/logging.handlers.rst:18
 msgid ":ref:`Advanced Tutorial <logging-advanced-tutorial>`"
-msgstr ":ref:`上級チュートリアル <logging-advanced-tutorial>`"
+msgstr ":ref:`Tutorial avanzado <logging-advanced-tutorial>`"
 
-#: ../../library/logging.handlers.rst:19
+#: ../Doc/library/logging.handlers.rst:19
 msgid ":ref:`Logging Cookbook <logging-cookbook>`"
-msgstr ":ref:`ロギングクックブック <logging-cookbook>`"
+msgstr ":ref:`Libro de cocina de *Logging* <logging-cookbook>`"
 
-#: ../../library/logging.handlers.rst:25
+#: ../Doc/library/logging.handlers.rst:25
 msgid ""
 "The following useful handlers are provided in the package. Note that three "
 "of the handlers (:class:`StreamHandler`, :class:`FileHandler` and :class:"
 "`NullHandler`) are actually defined in the :mod:`logging` module itself, but "
 "have been documented here along with the other handlers."
 msgstr ""
-"このパッケージでは、以下の便利なハンドラが提供されています。なお、これらのハ"
-"ンドラのうち、3 つ (:class:`StreamHandler`, :class:`FileHandler` および :"
-"class:`NullHandler`) は、実際には :mod:`logging` モジュール自身で定義されてい"
-"ますが、他のハンドラと一緒にここでドキュメント化します。"
+"Estos gestores son muy útiles y están provistos en este paquete. Nota que "
+"tres de los gestores de las clases (:class:`StreamHandler`, :class:"
+"`FileHandler` and :class:`NullHandler`) están definidos en propio módulo :"
+"mod:`logging` pero fueron documentados aquí junto con los otros gestores."
 
-#: ../../library/logging.handlers.rst:33
+#: ../Doc/library/logging.handlers.rst:33
 msgid "StreamHandler"
 msgstr "StreamHandler"
 
-#: ../../library/logging.handlers.rst:35
+#: ../Doc/library/logging.handlers.rst:35
 msgid ""
 "The :class:`StreamHandler` class, located in the core :mod:`logging` "
 "package, sends logging output to streams such as *sys.stdout*, *sys.stderr* "
 "or any file-like object (or, more precisely, any object which supports :meth:"
 "`write` and :meth:`flush` methods)."
 msgstr ""
-":mod:`logging` コアパッケージに含まれる :class:`StreamHandler` クラスは、ログ"
-"出力を *sys.stdout*, *sys.stderr* あるいは何らかのファイル風 (file-like) オブ"
-"ジェクト (あるいは、より正確に言えば :meth:`write` および :meth:`flush` メ"
-"ソッドをサポートする何らかのオブジェクト) といったストリームに送信します。"
+"La clase :class:`StreamHandler` ubicada en el paquete núcleo :mod:`logging` "
+"envía la salida del *logging* a un *stream* como *sys.stdout*, *sys.stderr* "
+"o cualquier objeto tipo archivo (o mas precisamente cualquier objeto que "
+"soporte los métodos :meth:`write` y :meth:`flush`)."
 
-#: ../../library/logging.handlers.rst:43
+#: ../Doc/library/logging.handlers.rst:43
 msgid ""
 "Returns a new instance of the :class:`StreamHandler` class. If *stream* is "
 "specified, the instance will use it for logging output; otherwise, *sys."
 "stderr* will be used."
 msgstr ""
-":class:`StreamHandler` クラスの新たなインスタンスを返します。 *stream* が指定"
-"された場合、インスタンスはログ出力先として指定されたストリームを使います; そ"
-"うでない場合、 *sys.stderr* が使われます。"
+"Retorna una nueva instancia de la clase :class:`StreamHandler`. Si *stream* "
+"esta especificado, la instancia lo usará para la salida del registro, sino "
+"se usará *sys.stderr*."
 
-#: ../../library/logging.handlers.rst:50
+#: ../Doc/library/logging.handlers.rst:50
 msgid ""
 "If a formatter is specified, it is used to format the record. The record is "
 "then written to the stream followed by :attr:`terminator`. If exception "
 "information is present, it is formatted using :func:`traceback."
 "print_exception` and appended to the stream."
 msgstr ""
-"フォーマッタが指定されていれば、フォーマッタを使ってレコードを書式化します。 "
-"次に、レコードが終端記号とともにストリームに書き込まれます。 例外情報が存在す"
-"る場合、 :func:`traceback.print_exception` を使って書式化され、 ストリームの"
-"末尾につけられます。"
+"Si se especifica un formateador, se utiliza para formatear el registro. "
+"Luego, el registro se escribe en el flujo seguido de :attr:`terminator`. Si "
+"hay información de excepción, se formatea con :func:`traceback."
+"print_exception` y se agrega al flujo."
 
-#: ../../library/logging.handlers.rst:58
+#: ../Doc/library/logging.handlers.rst:58
 msgid ""
 "Flushes the stream by calling its :meth:`flush` method. Note that the :meth:"
 "`close` method is inherited from :class:`~logging.Handler` and so does no "
 "output, so an explicit :meth:`flush` call may be needed at times."
 msgstr ""
-"ストリームの :meth:`flush` メソッドを呼び出してバッファをフラッシュします。 :"
-"meth:`close` メソッドは :class:`~logging.Handler` から継承しているため何も出"
-"力を行わないので、 :meth:`flush` 呼び出しを明示的に行う必要があるかもしれませ"
-"ん。"
+"Descarga el *stream* llamando a su método :meth:`flush`. Nota que el método :"
+"meth:`close` es heredado de la clase :class:`~logging.Handler` y por lo "
+"tanto no produce ninguna salida. Por eso muchas veces será necesario invocar "
+"al método explícito :meth:`flush`."
 
-#: ../../library/logging.handlers.rst:64
+#: ../Doc/library/logging.handlers.rst:64
 msgid ""
 "Sets the instance's stream to the specified value, if it is different. The "
 "old stream is flushed before the new stream is set."
 msgstr ""
-"このインスタンスの stream と指定された値が異なる場合、指定された値に設定しま"
-"す。\n"
-"新しい stream を設定する前に、古い stream はフラッシュされます。"
+"Establece el *stream* de la instancia a un valor especifico, si este es "
+"diferente. El anterior *stream* es vaciado antes de que el nuevo *stream* "
+"sea establecido."
 
-#: ../../library/logging.handlers.rst:0
+#: ../Doc/library/logging.handlers.rst
 msgid "Parameters"
-msgstr "パラメーター"
+msgstr "Parámetros"
 
-#: ../../library/logging.handlers.rst:67
+#: ../Doc/library/logging.handlers.rst:67
 msgid "The stream that the handler should use."
-msgstr "ハンドラがこれから使う stream 。"
+msgstr "El *stream* que el gestor debe usar."
 
-#: ../../library/logging.handlers.rst:0
+#: ../Doc/library/logging.handlers.rst
 msgid "Returns"
-msgstr "返り値"
+msgstr "Retorna"
 
-#: ../../library/logging.handlers.rst:69
+#: ../Doc/library/logging.handlers.rst:69
 msgid "the old stream, if the stream was changed, or *None* if it wasn't."
-msgstr "stream が変更された場合は古い stream 、そうでない場合は *None* 。"
+msgstr "el anterior *stream*. si el *stream* cambió o *None* si no cambió."
 
-#: ../../library/logging.handlers.rst:75
+#: ../Doc/library/logging.handlers.rst:75
 msgid ""
 "String used as the terminator when writing a formatted record to a stream. "
 "Default value is ``'\\n'``."
 msgstr ""
-"フォーマット済みのレコードをストリームに出力するときの終端として使われる文字"
-"列です。デフォルト値は ``'\\n'`` です。"
+"Cadena utilizada como terminador al escribir un registro formateado en un "
+"flujo. El valor por defecto es ``'\\n'``."
 
-#: ../../library/logging.handlers.rst:78
+#: ../Doc/library/logging.handlers.rst:78
 msgid ""
 "If you don't want a newline termination, you can set the handler instance's "
 "``terminator`` attribute to the empty string."
 msgstr ""
-"もし改行区切りにしたくない場合はハンドラーインスタンスの ``terminator`` 属性"
-"に空文字列を設定してください。"
+"Si no quieres una terminación de nueva línea, puedes establecer el atributo "
+"``terminator`` de la instancia del manejador a la cadena vacía."
 
-#: ../../library/logging.handlers.rst:81
+#: ../Doc/library/logging.handlers.rst:81
 msgid "In earlier versions, the terminator was hardcoded as ``'\\n'``."
 msgstr ""
-"以前のバージョンでは、区切り文字は ``'\\n'`` にハードコードされていました。"
+"En versiones anteriores, el terminador estaba codificado como ``'\\n'``."
 
-#: ../../library/logging.handlers.rst:89
+#: ../Doc/library/logging.handlers.rst:89
 msgid "FileHandler"
 msgstr "FileHandler"
 
-#: ../../library/logging.handlers.rst:91
+#: ../Doc/library/logging.handlers.rst:91
 msgid ""
 "The :class:`FileHandler` class, located in the core :mod:`logging` package, "
 "sends logging output to a disk file.  It inherits the output functionality "
 "from :class:`StreamHandler`."
 msgstr ""
-":mod:`logging` コアパッケージに含まれる :class:`FileHandler` クラスは、ログ出"
-"力をディスク上のファイルに送信します。このクラスは出力機能を :class:"
-"`StreamHandler` から継承しています。"
+"La clase :class:`FileHandler` está localizada en el paquete núcleo :mod:"
+"`logging`, envía la salida del *logging* a un archivo de disco. Hereda la "
+"funcionalidad de salida de la clase :class:`StreamHandler`."
 
-#: ../../library/logging.handlers.rst:98
+#: ../Doc/library/logging.handlers.rst:98
 msgid ""
 "Returns a new instance of the :class:`FileHandler` class. The specified file "
 "is opened and used as the stream for logging. If *mode* is not specified, :"
@@ -182,101 +180,105 @@ msgid ""
 "indefinitely. If *errors* is specified, it's used to determine how encoding "
 "errors are handled."
 msgstr ""
-":class:`FileHandler` クラスの新たなインスタンスを返します。指定されたファイル"
-"が開かれ、ログ記録のためのストリームとして使われます。 *mode* が指定されな"
-"かった場合、 :const:`'a'`  が使われます。 *encoding* が ``None`` でない場合、"
-"その値はファイルを開くときのエンコーディングとして使われます。 *delay* が真な"
-"らば、ファイルを開くのは最初の :meth:`emit` 呼び出しまで遅らせられます。デ"
-"フォルトでは、ファイルは無制限に大きくなりつづけます。 *errors* を指定される"
-"と、エンコーディングエラーの処理方法を決定します。"
+"Retorna una nueva instancia de la clase :class:`FileHandler`. El archivo "
+"especificado se abre y se utiliza como flujo para el registro. Si no se "
+"especifica *mode*, se utiliza :const:`'a'`. Si *encoding* no es ``None``, se "
+"utiliza para abrir el archivo con esa codificación. Si *delay* es verdadero, "
+"la apertura del archivo se aplaza hasta la primera llamada a :meth:`emit`. "
+"De forma predeterminada, el archivo crece indefinidamente. Si se especifica "
+"*errors*, se usa para determinar cómo se manejan los errores de codificación."
 
-#: ../../library/logging.handlers.rst:105
-#: ../../library/logging.handlers.rst:190
-#: ../../library/logging.handlers.rst:338
-#: ../../library/logging.handlers.rst:444
+#: ../Doc/library/logging.handlers.rst:105
+#: ../Doc/library/logging.handlers.rst:190
+#: ../Doc/library/logging.handlers.rst:338
+#: ../Doc/library/logging.handlers.rst:444
 msgid ""
 "As well as string values, :class:`~pathlib.Path` objects are also accepted "
 "for the *filename* argument."
 msgstr ""
-"文字列値に加え、 :class:`~pathlib.Path` オブジェクトも *filename* 引数が受け"
-"取るようになりました。"
+"Así como valores de cadena de caracteres, también se aceptan objetos de la "
+"clase :class:`~pathlib.Path` para el argumento \"*filename*\"."
 
-#: ../../library/logging.handlers.rst:109
-#: ../../library/logging.handlers.rst:194
-#: ../../library/logging.handlers.rst:342
-#: ../../library/logging.handlers.rst:448
+#: ../Doc/library/logging.handlers.rst:109
+#: ../Doc/library/logging.handlers.rst:194
+#: ../Doc/library/logging.handlers.rst:342
+#: ../Doc/library/logging.handlers.rst:448
 msgid "The *errors* parameter was added."
-msgstr "*errors* 引数が追加されました。"
+msgstr "Se agregó el parámetro *errors*."
 
-#: ../../library/logging.handlers.rst:114
+#: ../Doc/library/logging.handlers.rst:114
 msgid "Closes the file."
-msgstr "ファイルを閉じます。"
+msgstr "Cierra el archivo."
 
-#: ../../library/logging.handlers.rst:118
+#: ../Doc/library/logging.handlers.rst:118
 msgid "Outputs the record to the file."
-msgstr "*record* をファイルに出力します。"
+msgstr "Da la salida del registro al archivo."
 
-#: ../../library/logging.handlers.rst:120
+#: ../Doc/library/logging.handlers.rst:120
 msgid ""
 "Note that if the file was closed due to logging shutdown at exit and the "
 "file mode is 'w', the record will not be emitted (see :issue:`42378`)."
 msgstr ""
+"Ten en cuenta que si el archivo se cerró debido al apagado del registro al "
+"salir y el modo de archivo es 'w', el registro no se emitirá (consulta :"
+"issue:`42378`)."
 
-#: ../../library/logging.handlers.rst:127
+#: ../Doc/library/logging.handlers.rst:127
 msgid "NullHandler"
 msgstr "NullHandler"
 
-#: ../../library/logging.handlers.rst:131
+#: ../Doc/library/logging.handlers.rst:131
 msgid ""
 "The :class:`NullHandler` class, located in the core :mod:`logging` package, "
 "does not do any formatting or output. It is essentially a 'no-op' handler "
 "for use by library developers."
 msgstr ""
-":mod:`logging` コアパッケージに含まれる :class:`NullHandler` クラスは、いかな"
-"る書式化も出力も行いません。これは本質的には、ライブラリ開発者に使われる 'no-"
-"op' ハンドラです。"
+"La clase :class:`NullHandler` está ubicada en el núcleo biblioteca :mod:"
+"`logging` . No realiza ningún formateo o salida. Es en esencia un gestor 'no-"
+"op' para uso de desarrolladores de bibliotecas."
 
-#: ../../library/logging.handlers.rst:137
+#: ../Doc/library/logging.handlers.rst:137
 msgid "Returns a new instance of the :class:`NullHandler` class."
-msgstr ":class:`NullHandler` クラスの新しいインスタンスを返します。"
+msgstr "Retorna una nueva instancia de la clase :class:`NullHandler`."
 
-#: ../../library/logging.handlers.rst:141
-#: ../../library/logging.handlers.rst:145
+#: ../Doc/library/logging.handlers.rst:141
+#: ../Doc/library/logging.handlers.rst:145
 msgid "This method does nothing."
-msgstr "このメソッドは何もしません。"
+msgstr "Este método no realiza ninguna acción."
 
-#: ../../library/logging.handlers.rst:149
+#: ../Doc/library/logging.handlers.rst:149
 msgid ""
 "This method returns ``None`` for the lock, since there is no underlying I/O "
 "to which access needs to be serialized."
 msgstr ""
-"アクセスが特殊化される必要がある I/O が下にないので、このメソッドはロックに対"
-"して ``None`` を返します。"
+"Este método retorna ``None`` para el bloqueo , dado que no hay una E/S "
+"subyacente cuyo acceso se necesite serializar."
 
-#: ../../library/logging.handlers.rst:153
+#: ../Doc/library/logging.handlers.rst:153
 msgid ""
 "See :ref:`library-config` for more information on how to use :class:"
 "`NullHandler`."
 msgstr ""
-":class:`NullHandler` の使い方の詳しい情報は、 :ref:`library-config` を参照し"
-"てください。"
+"Véase :ref:`library-config` para mas información en como usar la clase :"
+"class:`NullHandler`."
 
-#: ../../library/logging.handlers.rst:159
+#: ../Doc/library/logging.handlers.rst:159
 msgid "WatchedFileHandler"
 msgstr "WatchedFileHandler"
 
-#: ../../library/logging.handlers.rst:163
+#: ../Doc/library/logging.handlers.rst:163
 msgid ""
 "The :class:`WatchedFileHandler` class, located in the :mod:`logging."
 "handlers` module, is a :class:`FileHandler` which watches the file it is "
 "logging to. If the file changes, it is closed and reopened using the file "
 "name."
 msgstr ""
-":mod:`logging.handlers` モジュールに含まれる :class:`WatchedFileHandler` クラ"
-"スは、ログ記録先のファイルを監視する :class:`FileHandler` の一種です。ファイ"
-"ルが変更された場合、ファイルを閉じてからファイル名を使って開き直します。"
+"La clase :class:`WatchedFileHandler` está ubicada en el módulo :mod:`logging."
+"handlers`, es una clase :class:`FileHandler` que vigila a que archivo se "
+"está enviando el *logging*. Si el archivo cambia , este se cerrará y se "
+"volverá a abrir usando el nombre de archivo."
 
-#: ../../library/logging.handlers.rst:167
+#: ../Doc/library/logging.handlers.rst:167
 msgid ""
 "A file change can happen because of usage of programs such as *newsyslog* "
 "and *logrotate* which perform log file rotation. This handler, intended for "
@@ -285,14 +287,15 @@ msgid ""
 "changed.) If the file has changed, the old file stream is closed, and the "
 "file opened to get a new stream."
 msgstr ""
-"ファイルはログファイルをローテーションさせる *newsyslog* や *logrotate* のよ"
-"うなプログラムを使うことで変更されることがあります。このハンドラは、 Unix/"
-"Linux で使われることを意図していますが、ファイルが最後にログを出力してから変"
-"わったかどうかを監視します。 (ファイルはデバイスや inode が変わることで変わっ"
-"たと判断します。) ファイルが変わったら古いファイルのストリームは閉じて、現在"
-"のファイルを新しいストリームを取得するために開きます。"
+"Puede suceder que haya un cambio de archivo por uso de programas como "
+"*newsyslog* y *logrotate* que realizan una rotación del archivo log. Este "
+"gestor destinado para uso bajo Unix/Linux controla el archivo para ver si "
+"hubo cambios desde la última emisión. (Un archivo se considera que cambió si "
+"su dispositivo o nodo índice cambió). Si el archivo cambió entonces el "
+"anterior *stream* de archivo se cerrará, y se abrirá el nuevo para obtener "
+"un nuevo *stream*."
 
-#: ../../library/logging.handlers.rst:174
+#: ../Doc/library/logging.handlers.rst:174
 msgid ""
 "This handler is not appropriate for use under Windows, because under Windows "
 "open log files cannot be moved or renamed - logging opens the files with "
@@ -300,13 +303,13 @@ msgid ""
 "*ST_INO* is not supported under Windows; :func:`~os.stat` always returns "
 "zero for this value."
 msgstr ""
-"このハンドラを Windows で使うことは適切ではありません。というのも Windows で"
-"は開いているログファイルを移動したり削除したりできないからです - logging は"
-"ファイルを排他的ロックを掛けて開きます - そのためこうしたハンドラは必要ないの"
-"です。さらに、 Windows では *ST_INO* がサポートされていません; :func:`~os."
-"stat` はこの値として常に 0 を返します。"
+"Este gestor no es apropiado para uso bajo Windows porque bajo Windows los "
+"archivos log abiertos no se pueden mover o renombrar. *Logging* abre los "
+"archivos con bloqueos exclusivos y entonces no hay necesidad de usar el "
+"gestor. Por otra parte *ST_INO* no es soportado bajo Windows. La función :"
+"func:`~os.stat` siempre retorna cero para este valor."
 
-#: ../../library/logging.handlers.rst:183
+#: ../Doc/library/logging.handlers.rst:183
 msgid ""
 "Returns a new instance of the :class:`WatchedFileHandler` class. The "
 "specified file is opened and used as the stream for logging. If *mode* is "
@@ -316,39 +319,38 @@ msgid ""
 "file grows indefinitely. If *errors* is provided, it determines how encoding "
 "errors are handled."
 msgstr ""
-":class:`WatchedFileHandler` クラスの新たなインスタンスを返します。\n"
-"指定されたファイルが開かれ、ログ記録のためのストリームとして使われます。\n"
-"*mode* が指定されなかった場合、 :const:`'a'` が使われます。\n"
-"*encoding* が ``None`` でない場合、その値はファイルを開くときのエンコーディン"
-"グとして使われます。\n"
-"*delay* が真ならば、ファイルを開くのは最初の :meth:`emit` 呼び出しまで遅らせ"
-"られます。\n"
-"デフォルトでは、ファイルは無制限に大きくなりつづけます。 *errors* が提供され"
-"ると、エンコーディングエラーの処理方法を決定します。"
+"Retorna una nueva instancia de la clase :class:`WatchedFileHandler`. El "
+"archivo especificado se abre y se utiliza como flujo para el registro. Si no "
+"se especifica *mode*, se utiliza :const:`'a'`. Si *encoding* no es ``None``, "
+"se utiliza para abrir el archivo con esa codificación. Si *delay* es "
+"verdadero, la apertura del archivo se aplaza hasta la primera llamada a :"
+"meth:`emit`. De forma predeterminada, el archivo crece indefinidamente. Si "
+"se proporciona *errors*, determina cómo se manejan los errores de "
+"codificación."
 
-#: ../../library/logging.handlers.rst:199
+#: ../Doc/library/logging.handlers.rst:199
 msgid ""
 "Checks to see if the file has changed.  If it has, the existing stream is "
 "flushed and closed and the file opened again, typically as a precursor to "
 "outputting the record to the file."
 msgstr ""
-"ファイルが変更されていないかチェックします。\n"
-"もし変更されていれば、手始めにレコードをファイルに出力し、既存のストリームは"
-"フラッシュして閉じられ、ファイルが再度開かれます。"
+"Revisa si el archivo cambió. Si hubo cambio, el *stream* existente se vacía "
+"y cierra y el archivo se abre nuevamente. Típicamente es un precursor para "
+"dar salida del registro a un archivo."
 
-#: ../../library/logging.handlers.rst:208
+#: ../Doc/library/logging.handlers.rst:208
 msgid ""
 "Outputs the record to the file, but first calls :meth:`reopenIfNeeded` to "
 "reopen the file if it has changed."
 msgstr ""
-"レコードをファイルに出力しますが、最初に :meth:`reopenIfNeeded` を呼び出し"
-"て、変更があった場合はファイルを再度開きます。"
+"Da salida al registro a un archivo, pero primero invoca al método :meth:"
+"`reopenIfNeeded` para reabrir el archivo si es que cambió."
 
-#: ../../library/logging.handlers.rst:214
+#: ../Doc/library/logging.handlers.rst:214
 msgid "BaseRotatingHandler"
 msgstr "BaseRotatingHandler"
 
-#: ../../library/logging.handlers.rst:216
+#: ../Doc/library/logging.handlers.rst:216
 msgid ""
 "The :class:`BaseRotatingHandler` class, located in the :mod:`logging."
 "handlers` module, is the base class for the rotating file handlers, :class:"
@@ -356,39 +358,41 @@ msgid ""
 "need to instantiate this class, but it has attributes and methods you may "
 "need to override."
 msgstr ""
-":mod:`logging.handlers` モジュールに存在する :class:`BaseRotatingHandler` ク"
-"ラスは、ローテートを行うファイルハンドラ :class:`RotatingFileHandler` と :"
-"class:`TimedRotatingFileHandler` のベースクラスです。このクラスをインスタンス"
-"化する必要はありませんが、オーバーライドすることになるかもしれない属性とメ"
-"ソッドを持っています。"
+"La clase :class:`BaseRotatingHandler` ubicada en el módulo :mod:`logging."
+"handlers` es la clase base para rotar los gestores de archivos de clases :"
+"class:`RotatingFileHandler` y :class:`TimedRotatingFileHandler`. No debería "
+"ser necesario instanciar esta clase, pero tiene métodos y atributos que "
+"quizá se necesiten sobrescribir (*override*)."
 
-#: ../../library/logging.handlers.rst:224
+#: ../Doc/library/logging.handlers.rst:224
 msgid "The parameters are as for :class:`FileHandler`. The attributes are:"
-msgstr "パラメータは :class:`FileHandler` と同じです。属性は次の通りです:"
+msgstr ""
+"Los parámetros son como los de la clase :class:`FileHandler`. Los atributos "
+"son:"
 
-#: ../../library/logging.handlers.rst:228
+#: ../Doc/library/logging.handlers.rst:228
 msgid ""
 "If this attribute is set to a callable, the :meth:`rotation_filename` method "
 "delegates to this callable. The parameters passed to the callable are those "
 "passed to :meth:`rotation_filename`."
 msgstr ""
-"この属性に callable がセットされた場合、 :meth:`rotation_filename` メソッドは"
-"この callable に委譲されます。 callable に渡されるパラメータは :meth:"
-"`rotation_filename` に渡されたものです。"
+"Si este atributo se establece como invocable, el método :meth:"
+"`rotation_filename` delega a este invocable. Los parámetros pasados al "
+"invocable son aquellos pasados al método :meth:`rotation_filename`."
 
-#: ../../library/logging.handlers.rst:232
+#: ../Doc/library/logging.handlers.rst:232
 msgid ""
 "The namer function is called quite a few times during rollover, so it should "
 "be as simple and as fast as possible. It should also return the same output "
 "every time for a given input, otherwise the rollover behaviour may not work "
 "as expected."
 msgstr ""
-"namer 関数はロールオーバー中にかなりの回数呼ばれます。そのため、できるだけ単"
-"純で、速くあるべきです。さらに、それは与えられた入力に対しては常に同じ出力を"
-"返すべきです。そうでなければ、ロールオーバーの振る舞いは期待通りに動かないか"
-"もしれません。"
+"La función de nombrado es invocada unas cuantas veces durante el volcado "
+"(*rollover*) , entonces debe ser tan simple y rápida como sea posible. Debe "
+"también retornar siempre la misma salida para una misma entrada, de otra "
+"manera el volcado puede no funcionar como se espera."
 
-#: ../../library/logging.handlers.rst:237
+#: ../Doc/library/logging.handlers.rst:237
 msgid ""
 "It's also worth noting that care should be taken when using a namer to "
 "preserve certain attributes in the filename which are used during rotation. "
@@ -404,69 +408,86 @@ msgid ""
 "`~TimedRotatingFileHandler.getFilesToDelete` method to fit in with the "
 "custom naming scheme.)"
 msgstr ""
+"También vale la pena señalar que se debe tener cuidado al usar un nombrador "
+"para conservar ciertos atributos en el nombre de archivo que se usan durante "
+"la rotación. Por ejemplo, :class:`RotatingFileHandler` espera tener un "
+"conjunto de archivos de registro cuyos nombres contengan números enteros "
+"sucesivos, para que la rotación funcione como se espera, y :class:"
+"`TimedRotatingFileHandler` elimina los archivos de registro antiguos (según "
+"el parámetro ``backupCount`` pasado al inicializador del controlador), "
+"determinando los archivos más antiguos para eliminar. Para que esto suceda, "
+"los nombres de los archivos deben poder ordenarse utilizando la parte de "
+"fecha/hora del nombre del archivo, y un nombrador debe respetar esto. (Si se "
+"desea un nombrador que no respete este esquema, deberá usarse en una "
+"subclase de :class:`TimedRotatingFileHandler` que anula el método :meth:"
+"`~TimedRotatingFileHandler.getFilesToDelete` para encajar con el esquema de "
+"denominación personalizada.)"
 
-#: ../../library/logging.handlers.rst:255
+#: ../Doc/library/logging.handlers.rst:255
 msgid ""
 "If this attribute is set to a callable, the :meth:`rotate` method delegates "
 "to this callable.  The parameters passed to the callable are those passed "
 "to :meth:`rotate`."
 msgstr ""
-"この属性に callable がセットされた場合、 :meth:`rotate` メソッドはこの "
-"callable に委譲されます。 callable に渡されるパラメータは :meth:`rotate` に渡"
-"されたものです。"
+"Si este atributo se estableció como invocable, el método :meth:`rotate` "
+"delega a este invocable. Los parámetros pasados al invocable son aquellos "
+"pasados al método :meth:`rotate`."
 
-#: ../../library/logging.handlers.rst:263
+#: ../Doc/library/logging.handlers.rst:263
 msgid "Modify the filename of a log file when rotating."
-msgstr "ローテートを行う際にログファイルのファイル名を変更します。"
+msgstr "Modifica el nombre de un archivo log cuando esta rotando."
 
-#: ../../library/logging.handlers.rst:265
+#: ../Doc/library/logging.handlers.rst:265
 msgid "This is provided so that a custom filename can be provided."
-msgstr "このメソッドは、ファイル名をカスタマイズするために提供されます。"
+msgstr ""
+"Esto esta previsto para que pueda usarse un nombre de archivo personalizado."
 
-#: ../../library/logging.handlers.rst:267
+#: ../Doc/library/logging.handlers.rst:267
 msgid ""
 "The default implementation calls the 'namer' attribute of the handler, if "
 "it's callable, passing the default name to it. If the attribute isn't "
 "callable (the default is ``None``), the name is returned unchanged."
 msgstr ""
-"デフォルト実装は、ハンドラの 'namer' 属性が callable だった場合、その "
-"callable を呼んでデフォルト名を渡します。属性が callable でない場合 (デフォル"
-"トは ``None`` です)、名前は変更せずに返されます。"
+"La implementación por defecto llama al atributo 'namer' del gestor, si este "
+"es invocable, pasando el nombre por defecto a él. Si el atributo no es "
+"invocable (por defecto es ``None``) el nombre se retorna sin cambios."
 
-#: ../../library/logging.handlers.rst:271
+#: ../Doc/library/logging.handlers.rst:271
 msgid "The default name for the log file."
-msgstr "ログファイルのデフォルトのファイル名。"
+msgstr "El nombre por defecto para el archivo de log."
 
-#: ../../library/logging.handlers.rst:278
+#: ../Doc/library/logging.handlers.rst:278
 msgid "When rotating, rotate the current log."
-msgstr "ローテートが行われる時、現在のログをローテートします。"
+msgstr "Cuando está rotando, rotar el actual log."
 
-#: ../../library/logging.handlers.rst:280
+#: ../Doc/library/logging.handlers.rst:280
 msgid ""
 "The default implementation calls the 'rotator' attribute of the handler, if "
 "it's callable, passing the source and dest arguments to it. If the attribute "
 "isn't callable (the default is ``None``), the source is simply renamed to "
 "the destination."
 msgstr ""
-"デフォルト実装は、 ハンドラの 'rotator' 属性が callable だった場合、その "
-"callable を呼んで source と dest 引数を渡します。属性が callable でない場合 "
-"(デフォルトは ``None`` です)、単に source が destination に改名されます。"
+"La implementación por defecto llama al atributo 'rotator' del gestor, si es "
+"invocable, pasando los argumentos de origen y destino a él. Si no se puede "
+"invocar (porque el atributo por defecto es 'None') el origen es simplemente "
+"renombrado al destino."
 
-#: ../../library/logging.handlers.rst:285
+#: ../Doc/library/logging.handlers.rst:285
 msgid ""
 "The source filename. This is normally the base filename, e.g. 'test.log'."
 msgstr ""
-"ソースファイル名。これは通常ベースファイル名 、例えば 'test.log' となります。"
+"El nombre de archivo origen . Normalmente el nombre de archivo base, por "
+"ejemplo 'test.log'."
 
-#: ../../library/logging.handlers.rst:287
+#: ../Doc/library/logging.handlers.rst:287
 msgid ""
 "The destination filename. This is normally what the source is rotated to, e."
 "g. 'test.log.1'."
 msgstr ""
-"変更先ファイル名。これは通常ソースファイルをローテートしたもの (例えば 'test."
-"log.1') です。"
+"El nombre de archivo de destino. Normalmente es el nombre al que se rota el "
+"archivo origen por ejemplo 'test.log.1'."
 
-#: ../../library/logging.handlers.rst:292
+#: ../Doc/library/logging.handlers.rst:292
 msgid ""
 "The reason the attributes exist is to save you having to subclass - you can "
 "use the same callables for instances of :class:`RotatingFileHandler` and :"
@@ -475,37 +496,39 @@ msgid ""
 "exception during an :meth:`emit` call, i.e. via the :meth:`handleError` "
 "method of the handler."
 msgstr ""
-"これらの属性が存在する理由は、サブクラス化を省略できるようにするためです。 :"
-"class:`RotatingFileHandler` と :class:`TimedRotatingFileHandler` のインスタン"
-"スに対して同じ callable が使えます。もし namer や rotator callable が例外を上"
-"げれば、 :meth:`emit` 呼び出しで発生した他の例外と同じ方法で、つまりハンドラ"
-"の :meth:`handleError` メソッドによって扱われます。"
+"La razón de que existen los atributos es para evitar tener que usar una "
+"subclase - puedes usar los mismos invocadores para instancias de clase :"
+"class:`RotatingFileHandler` y :class:`TimedRotatingFileHandler`. Si el "
+"rotador invocable o la función de nombrado plantean una excepción esta se "
+"manejará de la misma manera que cualquier otra excepción durante una llamada "
+"al método :meth:`emit` por ejemplo a través del método :meth:`handleError` "
+"del gestor."
 
-#: ../../library/logging.handlers.rst:299
+#: ../Doc/library/logging.handlers.rst:299
 msgid ""
 "If you need to make more significant changes to rotation processing, you can "
 "override the methods."
 msgstr ""
-"ローテート処理に大幅な変更を加える必要があれば、メソッドをオーバーライドする"
-"ことができます。"
+"Si necesitas hacer cambios mas significativos al proceso de rotación puedes "
+"obviar los métodos."
 
-#: ../../library/logging.handlers.rst:302
+#: ../Doc/library/logging.handlers.rst:302
 msgid "For an example, see :ref:`cookbook-rotator-namer`."
-msgstr "例えば、 :ref:`cookbook-rotator-namer` を参照してください。"
+msgstr "Para un ejemplo véase :ref:`cookbook-rotator-namer`."
 
-#: ../../library/logging.handlers.rst:308
+#: ../Doc/library/logging.handlers.rst:308
 msgid "RotatingFileHandler"
 msgstr "RotatingFileHandler"
 
-#: ../../library/logging.handlers.rst:310
+#: ../Doc/library/logging.handlers.rst:310
 msgid ""
 "The :class:`RotatingFileHandler` class, located in the :mod:`logging."
 "handlers` module, supports rotation of disk log files."
 msgstr ""
-":mod:`logging.handlers` モジュールに含まれる :class:`RotatingFileHandler` ク"
-"ラスは、ディスク上のログファイルに対するローテーション処理をサポートします。"
+"La clase :class:`RotatingFileHandler`, localizada en el módulo :mod:`logging."
+"handlers` soporta la rotación de archivos log de disco."
 
-#: ../../library/logging.handlers.rst:316
+#: ../Doc/library/logging.handlers.rst:316
 msgid ""
 "Returns a new instance of the :class:`RotatingFileHandler` class. The "
 "specified file is opened and used as the stream for logging. If *mode* is "
@@ -515,17 +538,15 @@ msgid ""
 "grows indefinitely. If *errors* is provided, it determines how encoding "
 "errors are handled."
 msgstr ""
-":class:`RotatingFileHandler` クラスの新たなインスタンスを返します。\n"
-"指定されたファイルが開かれ、ログ記録のためのストリームとして使われます。\n"
-"*mode* が指定されなかった場合、 ``'a'`` が使われます。\n"
-"*encoding* が ``None`` でない場合、その値はファイルを開くときのエンコーディン"
-"グとして使われます。\n"
-"*delay* が真ならば、ファイルを開くのは最初の :meth:`emit` 呼び出しまで遅らせ"
-"られます。\n"
-"デフォルトでは、ファイルは無制限に大きくなりつづけます。 *errors* が提供され"
-"ると、エンコーディングエラーの処理方法を決定します。"
+"Retorna una nueva instancia de la clase :class:`RotatingFileHandler`. El "
+"archivo especificado se abre y se utiliza como flujo para el registro. Si no "
+"se especifica *mode*, se utiliza ``'a'``. Si *encoding* no es ``None``, se "
+"utiliza para abrir el archivo con esa codificación. Si *delay* es verdadero, "
+"la apertura del archivo se aplaza hasta la primera llamada a :meth:`emit`. "
+"De forma predeterminada, el archivo crece indefinidamente. Si se proporciona "
+"*errors*, determina cómo se manejan los errores de codificación."
 
-#: ../../library/logging.handlers.rst:323
+#: ../Doc/library/logging.handlers.rst:323
 msgid ""
 "You can use the *maxBytes* and *backupCount* values to allow the file to :"
 "dfn:`rollover` at a predetermined size. When the size is about to be "
@@ -542,204 +563,209 @@ msgid ""
 "log.1`, and if files :file:`app.log.1`, :file:`app.log.2`, etc. exist, then "
 "they are renamed to :file:`app.log.2`, :file:`app.log.3` etc. respectively."
 msgstr ""
-"*maxBytes* および *backupCount* 値を指定することで、あらかじめ決められたサイ"
-"ズでファイルをロールオーバ (:dfn:`rollover`) させることができます。\n"
-"指定サイズを超えそうになると、ファイルは閉じられ、暗黙のうちに新たなファイル"
-"が開かれます。\n"
-"ロールオーバは現在のログファイルの長さが *maxBytes* に近くなると常に起きます"
-"が、 *maxBytes* または *backupCount* がゼロならロールオーバは起きなくなってし"
-"まうので、一般的には *backupCount* を少なくとも 1 に設定し *maxBytes* を非ゼ"
-"ロにするのが良いでしょう。\n"
-"*backupCount* が非ゼロのとき、システムは古いログファイルをファイル名に "
-"\".1\", \".2\" といった拡張子を追加して保存します。\n"
-"例えば、 *backupCount* が 5 で、基本のファイル名が :file:`app.log` なら、 :"
-"file:`app.log`, :file:`app.log.1`, :file:`app.log.2` ... と続き、 :file:`app."
-"log.5` までを得ることになります。\n"
-"ログの書き込み対象になるファイルは常に :file:`app.log` です。このファイルが満"
-"杯になると、ファイルは閉じられ、 :file:`app.log.1` に名前が変更されます。\n"
-":file:`app.log.1`, :file:`app.log.2` などが存在する場合、それらのファイルはそ"
-"れぞれ :file:`app.log.2`, :file:`app.log.3` といった具合に名前が変更されま"
-"す。"
+"Se pueden usar los valores *maxBytes* y *backupCount* para permitir que el "
+"archivo :dfn:`rollover` tenga un tamaño predeterminado. Cuando el tamaño del "
+"archivo está a punto de excederse, se cerrará y un nuevo archivo se abrirá "
+"silenciosamente para salida. El volcado (*rollover*) ocurre cada vez que el "
+"actual archivo log esta cerca de *maxBytes* en tamaño , pero si cualquiera "
+"*maxBytes* o *backupCount* es cero, el volcado (*rollover*) no ocurre. Por "
+"eso generalmente necesitas establecer *backupCount* por lo menos en 1 y no "
+"tener cero en *maxBytes*. Cuando *backupCount* no es cero, el sistema "
+"guardará los anteriores archivos log agregando las extensiones '.1', '.2' "
+"etc. al nombre del archivo. Por ejemplo con un *backupCount* de 5 y un "
+"nombre de archivo base de :file:`app.log`, tendrás como nombre de archivo t :"
+"file:`app.log`, :file:`app.log.1`, :file:`app.log.2`, hasta :file:`app."
+"log.5`. El archivo que esta siendo escrito es siempre :file:`app.log`. "
+"Cuando este se completa , se cierra y se renombra a :file:`app.log.1` y si "
+"ya existen :file:`app.log.1`, :file:`app.log.2`, etc. Entonces se renombrará "
+"como :file:`app.log.2`, :file:`app.log.3` etc. respectivamente."
 
-#: ../../library/logging.handlers.rst:347
-#: ../../library/logging.handlers.rst:453
+#: ../Doc/library/logging.handlers.rst:347
+#: ../Doc/library/logging.handlers.rst:453
 msgid "Does a rollover, as described above."
-msgstr "上述のような方法でロールオーバを行います。"
+msgstr "Realiza un volcado (*rollover*) como se describe arriba."
 
-#: ../../library/logging.handlers.rst:352
+#: ../Doc/library/logging.handlers.rst:352
 msgid ""
 "Outputs the record to the file, catering for rollover as described "
 "previously."
-msgstr "上述のようなロールオーバを行いながら、レコードをファイルに出力します。"
+msgstr ""
+"Da la salida del registro al archivo , dando suministro para el volcado "
+"(*rollover*) como está descripto anteriormente."
 
-#: ../../library/logging.handlers.rst:358
+#: ../Doc/library/logging.handlers.rst:358
 msgid "TimedRotatingFileHandler"
 msgstr "TimedRotatingFileHandler"
 
-#: ../../library/logging.handlers.rst:360
+#: ../Doc/library/logging.handlers.rst:360
 msgid ""
 "The :class:`TimedRotatingFileHandler` class, located in the :mod:`logging."
 "handlers` module, supports rotation of disk log files at certain timed "
 "intervals."
 msgstr ""
-":mod:`logging.handlers` モジュールに含まれる :class:"
-"`TimedRotatingFileHandler` クラスは、特定の時間間隔でのログローテーションをサ"
-"ポートしています。"
+"La clase :class:`TimedRotatingFileHandler` está ubicada en el módulo :mod:"
+"`logging.handlers`. Soporta la rotación de archivos de log a ciertos "
+"intervalos de tiempo."
 
-#: ../../library/logging.handlers.rst:367
+#: ../Doc/library/logging.handlers.rst:367
 msgid ""
 "Returns a new instance of the :class:`TimedRotatingFileHandler` class. The "
 "specified file is opened and used as the stream for logging. On rotating it "
 "also sets the filename suffix. Rotating happens based on the product of "
 "*when* and *interval*."
 msgstr ""
-":class:`TimedRotatingFileHandler` クラスの新たなインスタンスを返します。 "
-"*filename* に指定したファイルを開き、ログ出力先のストリームとして使います。ロ"
-"グファイルのローテーション時には、ファイル名に拡張子 (suffix) をつけます。ロ"
-"グファイルのローテーションは *when* および *interval* の積に基づいて行いま"
-"す。"
+"Retorna una nueva instancia de la clase :class:`TimedRotatingFileHandler` . "
+"El archivo especificado es abierto y usado como *stream* para el historial "
+"de log. En la rotación también establece el sufijo del nombre de archivo. La "
+"rotación ocurre basada en el producto de *when* y *interval*."
 
-#: ../../library/logging.handlers.rst:372
+#: ../Doc/library/logging.handlers.rst:372
 msgid ""
 "You can use the *when* to specify the type of *interval*. The list of "
 "possible values is below.  Note that they are not case sensitive."
 msgstr ""
-"*when* は *interval* の単位を指定するために使います。使える値は下表の通りで"
-"す。大小文字の区別は行いません。"
+"Puedes usar el *when* para especificar el tipo de intervalo *interval*. La "
+"lista de posibles valores esta debajo. Nota que no distingue mayúsculas y "
+"minúsculas."
 
-#: ../../library/logging.handlers.rst:376
+#: ../Doc/library/logging.handlers.rst:376
 msgid "Value"
-msgstr "値"
+msgstr "Valor"
 
-#: ../../library/logging.handlers.rst:376
+#: ../Doc/library/logging.handlers.rst:376
 msgid "Type of interval"
-msgstr "*interval* の単位"
+msgstr "Tipo de intervalo"
 
-#: ../../library/logging.handlers.rst:376
+#: ../Doc/library/logging.handlers.rst:376
 msgid "If/how *atTime* is used"
-msgstr "*atTime* の使用有無/使用方法"
+msgstr "Si/como *atTime* es usado"
 
-#: ../../library/logging.handlers.rst:378
+#: ../Doc/library/logging.handlers.rst:378
 msgid "``'S'``"
 msgstr "``'S'``"
 
-#: ../../library/logging.handlers.rst:378
+#: ../Doc/library/logging.handlers.rst:378
 msgid "Seconds"
-msgstr "秒"
+msgstr "Segundos"
 
-#: ../../library/logging.handlers.rst:378
-#: ../../library/logging.handlers.rst:380
-#: ../../library/logging.handlers.rst:382
-#: ../../library/logging.handlers.rst:384
+#: ../Doc/library/logging.handlers.rst:378
+#: ../Doc/library/logging.handlers.rst:380
+#: ../Doc/library/logging.handlers.rst:382
+#: ../Doc/library/logging.handlers.rst:384
 msgid "Ignored"
-msgstr "無視"
+msgstr "Ignorado"
 
-#: ../../library/logging.handlers.rst:380
+#: ../Doc/library/logging.handlers.rst:380
 msgid "``'M'``"
 msgstr "``'M'``"
 
-#: ../../library/logging.handlers.rst:380
+#: ../Doc/library/logging.handlers.rst:380
 msgid "Minutes"
-msgstr "分"
+msgstr "Minutos"
 
-#: ../../library/logging.handlers.rst:382
+#: ../Doc/library/logging.handlers.rst:382
 msgid "``'H'``"
 msgstr "``'H'``"
 
-#: ../../library/logging.handlers.rst:382
+#: ../Doc/library/logging.handlers.rst:382
 msgid "Hours"
-msgstr "時間"
+msgstr "Horas"
 
-#: ../../library/logging.handlers.rst:384
+#: ../Doc/library/logging.handlers.rst:384
 msgid "``'D'``"
 msgstr "``'D'``"
 
-#: ../../library/logging.handlers.rst:384
+#: ../Doc/library/logging.handlers.rst:384
 msgid "Days"
-msgstr "日"
+msgstr "Días"
 
-#: ../../library/logging.handlers.rst:386
+#: ../Doc/library/logging.handlers.rst:386
 msgid "``'W0'-'W6'``"
 msgstr "``'W0'-'W6'``"
 
-#: ../../library/logging.handlers.rst:386
+#: ../Doc/library/logging.handlers.rst:386
 msgid "Weekday (0=Monday)"
-msgstr "曜日 (0=月曜)"
+msgstr "Día de la semana (0=Lunes)"
 
-#: ../../library/logging.handlers.rst:386
-#: ../../library/logging.handlers.rst:389
+#: ../Doc/library/logging.handlers.rst:386
+#: ../Doc/library/logging.handlers.rst:389
 msgid "Used to compute initial rollover time"
-msgstr "初期のロールオーバー時刻の算出に使用"
+msgstr "Usado para calcular la hora inicial del volcado *rollover*"
 
-#: ../../library/logging.handlers.rst:389
+#: ../Doc/library/logging.handlers.rst:389
 msgid "``'midnight'``"
 msgstr "``'midnight'``"
 
-#: ../../library/logging.handlers.rst:389
+#: ../Doc/library/logging.handlers.rst:389
 msgid "Roll over at midnight, if *atTime* not specified, else at time *atTime*"
 msgstr ""
-"*atTime* が指定されなかった場合は深夜に、そうでない場合は *atTime* の時刻に"
-"ロールオーバーされます"
+"Volcado (*rollover*) a medianoche , si *atTime* no está especificado, sino "
+"el volcado se hará *atTime*"
 
-#: ../../library/logging.handlers.rst:394
+#: ../Doc/library/logging.handlers.rst:394
 msgid ""
 "When using weekday-based rotation, specify 'W0' for Monday, 'W1' for "
 "Tuesday, and so on up to 'W6' for Sunday. In this case, the value passed for "
 "*interval* isn't used."
 msgstr ""
-"曜日ベースのローテーションを使う場合は、月曜として 'W0' を、火曜として 'W1' "
-"を、…、日曜として 'W6' を指定します。このケースの場合は、 *interval* は使われ"
-"ません。"
+"Cuando se usa rotación basada en día de la semana, especifica 'W0' para "
+"Lunes, 'W1' para Martes y así, hasta 'W6' para Domingo. en este caso el "
+"valor pasado para *Interval* no se usa."
 
-#: ../../library/logging.handlers.rst:398
+#: ../Doc/library/logging.handlers.rst:398
+#, python-format
 msgid ""
 "The system will save old log files by appending extensions to the filename. "
 "The extensions are date-and-time based, using the strftime format ``%Y-%m-"
 "%d_%H-%M-%S`` or a leading portion thereof, depending on the rollover "
 "interval."
 msgstr ""
-"古いログファイルの保存時、ロギングシステムによりファイル名に拡張子が付けられ"
-"ます。 ロールオーバ間隔によって、strftime の ``%Y-%m-%d_%H-%M-%S`` 形式または"
-"その前方の一部を使って、日付と時間に基づいた拡張子が付けられます。"
+"El sistema guardará los archivos de log anteriores agregándoles extensiones "
+"al nombre de archivo. Las extensiones están basadas en día-hora usando el "
+"formato ``%Y-%m-%d_%H-%M-%S`` o un prefijo respecto el intervalo del volcado "
+"(*rollover*)."
 
-#: ../../library/logging.handlers.rst:403
+#: ../Doc/library/logging.handlers.rst:403
 msgid ""
 "When computing the next rollover time for the first time (when the handler "
 "is created), the last modification time of an existing log file, or else the "
 "current time, is used to compute when the next rotation will occur."
 msgstr ""
-"最初に次のロールオーバー時間を計算するとき (ハンドラが生成されるとき)、次の"
-"ローテーションがいつ起こるかを計算するために、既存のログファイルの最終変更時"
-"刻または現在の時間が使用されます。"
+"Cuando se calcula la hora del siguiente volcado (*rollover*) por primera vez "
+"(cuando el gestor es creado), la última hora de modificación de un archivo "
+"log existente o sino la hora actual, se usa para calcular cuando será la "
+"próxima rotación."
 
-#: ../../library/logging.handlers.rst:407
+#: ../Doc/library/logging.handlers.rst:407
 msgid ""
 "If the *utc* argument is true, times in UTC will be used; otherwise local "
 "time is used."
 msgstr ""
-"*utc* 引数が true の場合時刻は UTC になり、それ以外では現地時間が使われます。"
+"Si el argumento *utc* es *true* se usará la hora en UTC, sino se usará la "
+"hora local."
 
-#: ../../library/logging.handlers.rst:410
+#: ../Doc/library/logging.handlers.rst:410
 msgid ""
 "If *backupCount* is nonzero, at most *backupCount* files will be kept, and "
 "if more would be created when rollover occurs, the oldest one is deleted. "
 "The deletion logic uses the interval to determine which files to delete, so "
 "changing the interval may leave old files lying around."
 msgstr ""
-"*backupCount* がゼロでない場合、保存されるファイル数は高々 *backupCount* 個"
-"で、それ以上のファイルがロールオーバされる時に作られるならば、一番古いものが"
-"削除されます。削除のロジックは interval で決まるファイルを削除するので、 "
-"interval を変えると古いファイルが残ったままになることもあります。"
+"Si *backupCount* no es cero, se conservará como máximo una cantidad de "
+"archivos especificada en *backupCount*,y si son creados más, cuando ocurre "
+"el volcado (*rollover*) se borrará el último. La lógica de borrado usa el "
+"intervalo para determinar que archivos borrar, pues entonces cambiando el "
+"intervalo puede dejar viejos archivos abandonados."
 
-#: ../../library/logging.handlers.rst:415
+#: ../Doc/library/logging.handlers.rst:415
 msgid ""
 "If *delay* is true, then file opening is deferred until the first call to :"
 "meth:`emit`."
 msgstr ""
-"*delay* が true なら、ファイルを開くのは :meth:`emit` の最初の呼び出しまで延"
-"期されます。"
+"Si *delay* es *true* entonces la apertura del archivo se demorará hasta la "
+"primer llamada a :meth:`emit`."
 
-#: ../../library/logging.handlers.rst:418
+#: ../Doc/library/logging.handlers.rst:418
 msgid ""
 "If *atTime* is not ``None``, it must be a ``datetime.time`` instance which "
 "specifies the time of day when rollover occurs, for the cases where rollover "
@@ -748,19 +774,22 @@ msgid ""
 "*initial* rollover, and subsequent rollovers would be calculated via the "
 "normal interval calculation."
 msgstr ""
-"*atTime* が ``None`` でない場合、それは ``datetime.time`` インスタンスでなけ"
-"ればなりません。ロールオーバーが「夜中」「特定の曜日」に設定されていて、ロー"
-"ルが発生する時刻を指定します。 *atTime* の値は *初期*のロールオーバーの計算に"
-"使われますが、後続のロールオーバーは通常の間隔の計算で算出されます。"
+"Si *atTime* no es \"None\", debe haber una instancia ``datetime.time`` que "
+"especifica la hora que ocurre el volcado (*rollover*) , para los casos en "
+"que el volcado esta establecido para ocurrir \"a medianoche\" o \"un día en "
+"particular\". Nótese que en estos casos el valor *atTime* se usa para "
+"calcular el valor *initial* del volcado (*rollover*) y los subsecuentes "
+"volcados serán calculados a través del calculo normal de intervalos."
 
-#: ../../library/logging.handlers.rst:425
+#: ../Doc/library/logging.handlers.rst:425
 msgid ""
 "If *errors* is specified, it's used to determine how encoding errors are "
 "handled."
 msgstr ""
-"*errors* が指定されると、エンコーディングエラーの取り扱い方法を決定します。"
+"Si se especifica *errors*, se utiliza para determinar cómo se manejan los "
+"errores de codificación."
 
-#: ../../library/logging.handlers.rst:428
+#: ../Doc/library/logging.handlers.rst:428
 msgid ""
 "Calculation of the initial rollover time is done when the handler is "
 "initialised. Calculation of subsequent rollover times is done only when "
@@ -774,68 +803,77 @@ msgid ""
 "five minutes (say), then there will be gaps in the file times corresponding "
 "to the minutes where no output (and hence no rollover) occurred."
 msgstr ""
-"最初のロールオーバーの計算はハンドラーが初期化されたときに行われます。後続の"
-"ロールオーバーは、ロールオーバーが発生し、ロールオーバーが出力した時にのみ行"
-"われます。これを念頭に置いておかないと混乱する可能性があります。例えば、イン"
-"ターバルが *毎分* に設定されていて、1分ごとにログファイルが常に生成されるとは"
-"限りません。アプリケーションが実行されている間、1分に1回以上のログ出力されて "
-"*いるとすると* 毎分、分割されたログファイルが出力されますが、そうでなく、5分"
-"ごとに出力される場合は、出力されずにロールオーバーが実行されなかった時間分の"
-"ギャップが生じます。"
+"El cálculo de la hora en que se realizara el volcado (*rollover*) inicial "
+"cuando se inicializa el gestor. El cálculo de la hora de los siguientes "
+"volcados (*rollovers*) se realiza solo cuando este ocurre, y el volcado "
+"ocurre solo cuando se emite una salida. Si esto no se tiene en cuenta puede "
+"generar cierta confusión. Por ejemplo si se establece un intervalo de \"cada "
+"minuto\" eso no significa que siempre se verán archivos log con hora (en el "
+"nombre del archivo) separados por un minuto. Si durante la ejecución de la "
+"aplicación el *logging* se genera con mayor frecuencia que un minuto "
+"entonces se pueden esperar archivos log separados por un minuto. Si por otro "
+"lado los mensajes *logging* son establecidos cada digamos cinco minutos, "
+"entonces habrá brechas de tiempo en los archivos correspondientes a los "
+"minutos que no hubo salida (y no ocurrió por tanto volcado alguno)."
 
-#: ../../library/logging.handlers.rst:441
+#: ../Doc/library/logging.handlers.rst:441
 msgid "*atTime* parameter was added."
-msgstr "*atTime* パラメータが追加されました。"
+msgstr "Se agregó el parámetro *atTime*."
 
-#: ../../library/logging.handlers.rst:457
+#: ../Doc/library/logging.handlers.rst:457
 msgid ""
 "Outputs the record to the file, catering for rollover as described above."
 msgstr ""
-"上で説明した方法でロールオーバを行いながら、レコードをファイルに出力します。"
+"Da la salida del registro a un archivo , proveyendo la información para el "
+"volcado (*rollover*) como esta descripto anteriormente."
 
-#: ../../library/logging.handlers.rst:461
+#: ../Doc/library/logging.handlers.rst:461
 msgid ""
 "Returns a list of filenames which should be deleted as part of rollover. "
 "These are the absolute paths of the oldest backup log files written by the "
 "handler."
 msgstr ""
+"Retorna una lista de nombres de archivos que deben eliminarse como parte del "
+"volcado (*rollover*). Estas son las rutas absolutas de los archivos de "
+"registro de copia de seguridad más antiguos escritos por el controlador."
 
-#: ../../library/logging.handlers.rst:467
+#: ../Doc/library/logging.handlers.rst:467
 msgid "SocketHandler"
 msgstr "SocketHandler"
 
-#: ../../library/logging.handlers.rst:469
+#: ../Doc/library/logging.handlers.rst:469
 msgid ""
 "The :class:`SocketHandler` class, located in the :mod:`logging.handlers` "
 "module, sends logging output to a network socket. The base class uses a TCP "
 "socket."
 msgstr ""
-":mod:`logging.handlers` モジュールに含まれる :class:`SocketHandler` クラス"
-"は、ログ出力をネットワークソケットに送信します。基底クラスでは TCP ソケットを"
-"用います。"
+"La clase :class:`SocketHandler` esta localizada en el módulo :mod:`logging."
+"handlers`, envía el *logging* a un socket de la red. La clase base usa "
+"*sockets* TCP."
 
-#: ../../library/logging.handlers.rst:475
+#: ../Doc/library/logging.handlers.rst:475
 msgid ""
 "Returns a new instance of the :class:`SocketHandler` class intended to "
 "communicate with a remote machine whose address is given by *host* and "
 "*port*."
 msgstr ""
-"アドレスが *host* および *port* で与えられた遠隔のマシンと通信するようにし"
-"た :class:`SocketHandler` クラスのインスタンスを生成して返します。"
+"Retorna una nueva instancia de la clase :class:`SocketHandler` destinada "
+"para comunicarse con una terminal remota cuya dirección esta dada por *host* "
+"y *port*."
 
-#: ../../library/logging.handlers.rst:478
+#: ../Doc/library/logging.handlers.rst:478
 msgid ""
 "If ``port`` is specified as ``None``, a Unix domain socket is created using "
 "the value in ``host`` - otherwise, a TCP socket is created."
 msgstr ""
-"``port`` に ``None`` を指定すると、Unix ドメインソケットが ``host`` 値を用い"
-"て作られます - そうでない場合は TCP ソケットが作られます。"
+"Si \"port\" se especifica como ``None`` se crea un socket de dominio Unix, "
+"usando el valor en ``host`` - de otra manera se creará un socket TCP."
 
-#: ../../library/logging.handlers.rst:484
+#: ../Doc/library/logging.handlers.rst:484
 msgid "Closes the socket."
-msgstr "ソケットを閉じます。"
+msgstr "Cierra el socket."
 
-#: ../../library/logging.handlers.rst:489
+#: ../Doc/library/logging.handlers.rst:489
 msgid ""
 "Pickles the record's attribute dictionary and writes it to the socket in "
 "binary format. If there is an error with the socket, silently drops the "
@@ -843,42 +881,44 @@ msgid ""
 "connection. To unpickle the record at the receiving end into a :class:"
 "`~logging.LogRecord`, use the :func:`~logging.makeLogRecord` function."
 msgstr ""
-"レコードの属性辞書を pickle して、バイナリ形式でソケットに書き込みます。ソ"
-"ケット操作でエラーが生じた場合、暗黙のうちにパケットは捨てられます。事前に接"
-"続が失われていた場合、接続を再度確立します。受信端でレコードを unpickle し"
-"て :class:`~logging.LogRecord` にするには、 :func:`~logging.makeLogRecord` 関"
-"数を使ってください。"
+"Serializa (*Pickles*) el registro del diccionario de atributos y lo escribe "
+"en el socket en formato binario. Si hay un error con el socket, "
+"silenciosamente descarta el paquete. Si la conexión se perdió previamente, "
+"la restablece. Para deserializar (*unpickle*) un registro en el extremo "
+"receptor a una clase :class:`~logging.LogRecord`, usa la función :func:"
+"`~logging.makeLogRecord`."
 
-#: ../../library/logging.handlers.rst:499
+#: ../Doc/library/logging.handlers.rst:499
 msgid ""
 "Handles an error which has occurred during :meth:`emit`. The most likely "
 "cause is a lost connection. Closes the socket so that we can retry on the "
 "next event."
 msgstr ""
-":meth:`emit` の処理中に発生したエラーを処理します。よくある原因は接続の消失で"
-"す。次のイベント発生時に再試行できるようにソケットを閉じます。"
+"Maneja un error que ocurrió durante el método :meth:`emit`. La causa mas "
+"común es una perdida de conexión. Cierra el socket para que podamos "
+"reintentar en el próximo evento."
 
-#: ../../library/logging.handlers.rst:506
+#: ../Doc/library/logging.handlers.rst:506
 msgid ""
 "This is a factory method which allows subclasses to define the precise type "
 "of socket they want. The default implementation creates a TCP socket (:const:"
 "`socket.SOCK_STREAM`)."
 msgstr ""
-"サブクラスで必要なソケット形式を詳細に定義できるようにするためのファクトリメ"
-"ソッドです。デフォルトの実装では、 TCP ソケット (:const:`socket."
-"SOCK_STREAM`) を生成します。"
+"Este es un método patrón que permite subclases para definir el tipo preciso "
+"de socket que se necesita. La implementación por defecto crea un socket TCP(:"
+"const:`socket.SOCK_STREAM`)."
 
-#: ../../library/logging.handlers.rst:513
+#: ../Doc/library/logging.handlers.rst:513
 msgid ""
 "Pickles the record's attribute dictionary in binary format with a length "
 "prefix, and returns it ready for transmission across the socket. The details "
 "of this operation are equivalent to::"
 msgstr ""
-"レコードの属性辞書をバイナリ形式に pickle したものの先頭に長さ情報を付け、ソ"
-"ケットを介して送信できるようにして返します。\n"
-"この操作の詳細は次のコードと同等です::"
+"Serializa (*pickles*) el registro del diccionario de atributos en formato "
+"binario con un prefijo de tamaño, y lo retorna listo para transmitir a "
+"través del socket. Los detalles de esta operación son equivalentes a::"
 
-#: ../../library/logging.handlers.rst:521
+#: ../Doc/library/logging.handlers.rst:521
 msgid ""
 "Note that pickles aren't completely secure. If you are concerned about "
 "security, you may want to override this method to implement a more secure "
@@ -886,30 +926,32 @@ msgid ""
 "on the receiving end, or alternatively you can disable unpickling of global "
 "objects on the receiving end."
 msgstr ""
-"pickle が完全に安全というわけではないことに注意してください。セキュリティに関"
-"して心配なら、より安全なメカニズムを実装するためにこのメソッドをオーバーライ"
-"ドすると良いでしょう。例えば、 HMAC を使って pickle に署名して、受け取る側で"
-"はそれを検証することができます。あるいはまた、受け取る側でグローバルなオブ"
-"ジェクトの unpickle を無効にすることができます。"
+"Nota que los serializados (*pickles*) no son totalmente seguros. Si te "
+"preocupa la seguridad desearás evitar este método para implementar un "
+"mecanismo mas seguro. Por ejemplo puedes firmar *pickles* usando HMAC y "
+"verificarlos después en el extremo receptor. O alternativamente puedes "
+"deshabilitar la deserialización (*unpickling*) de objetos globales en el "
+"extremo receptor."
 
-#: ../../library/logging.handlers.rst:530
+#: ../Doc/library/logging.handlers.rst:530
 msgid ""
 "Send a pickled byte-string *packet* to the socket. The format of the sent "
 "byte-string is as described in the documentation for :meth:`~SocketHandler."
 "makePickle`."
 msgstr ""
-"pickle したバイト文字列 *packet* をソケットに送信します。\n"
-"送信するバイト文字列のフォーマットは、 :meth:`~SocketHandler.makePickle` のド"
-"キュメントで解説されています。"
+"Envía un paquete serializado (*pickled*) de cadena de caracteres al socket. "
+"El formato de la cadena de bytes enviada es tal como se describe en la "
+"documentación de :meth:`~SocketHandler.makePickle`."
 
-#: ../../library/logging.handlers.rst:534
+#: ../Doc/library/logging.handlers.rst:534
 msgid ""
 "This function allows for partial sends, which can happen when the network is "
 "busy."
 msgstr ""
-"この関数はネットワークがビジーの時に発生する部分的送信に対応しています。"
+"Esta función permite envíos parciales, que pueden ocurrir cuando la red esta "
+"ocupada."
 
-#: ../../library/logging.handlers.rst:540
+#: ../Doc/library/logging.handlers.rst:540
 msgid ""
 "Tries to create a socket; on failure, uses an exponential back-off "
 "algorithm.  On initial failure, the handler will drop the message it was "
@@ -919,64 +961,68 @@ msgid ""
 "delay the connection still can't be made, the handler will double the delay "
 "each time up to a maximum of 30 seconds."
 msgstr ""
-"ソケットの生成を試みます。失敗時には、指数的な減速アルゴリズムを使います。最"
-"初の失敗時には、ハンドラは送ろうとしていたメッセージを落とします。続くメッ"
-"セージが同じインスタンスで扱われたとき、幾らかの時間が経過するまで接続を試み"
-"ません。デフォルトのパラメタは、最初の遅延時間が 1 秒で、その遅延時間の後でそ"
-"れでも接続が確保できないなら、遅延時間は 2 倍づつになり、最大で 30 秒になりま"
-"す。"
+"Intenta crear un socket, si hay una falla usa un algoritmo de marcha atrás "
+"exponencial. En el fallo inicial el gestor desechará el mensaje que "
+"intentaba enviar. Cuando los siguientes mensajes sean gestionados por la "
+"misma instancia no intentará conectarse hasta que haya transcurrido cierto "
+"tiempo. Los parámetros por defecto son tales que el retardo inicial es un "
+"segundo y si después del retardo la conexión todavía no se puede realizar, "
+"el gestor doblará el retardo cada vez hasta un máximo de 30 segundos."
 
-#: ../../library/logging.handlers.rst:548
+#: ../Doc/library/logging.handlers.rst:548
 msgid "This behaviour is controlled by the following handler attributes:"
-msgstr "この働きは、以下のハンドラ属性で制御されます:"
+msgstr ""
+"Este comportamiento es controlado por los siguientes atributos del gestor:"
 
-#: ../../library/logging.handlers.rst:550
+#: ../Doc/library/logging.handlers.rst:550
 msgid "``retryStart`` (initial delay, defaulting to 1.0 seconds)."
-msgstr "``retryStart`` (最初の遅延時間、デフォルトは 1.0 秒)。"
+msgstr "``retryStart`` (retardo inicial por defecto 1.0 segundos)"
 
-#: ../../library/logging.handlers.rst:551
+#: ../Doc/library/logging.handlers.rst:551
 msgid "``retryFactor`` (multiplier, defaulting to 2.0)."
-msgstr "``retryFactor`` (乗数、デフォルトは 2.0)。"
+msgstr "``retryFactor`` (multiplicador por defecto 2.0)"
 
-#: ../../library/logging.handlers.rst:552
+#: ../Doc/library/logging.handlers.rst:552
 msgid "``retryMax`` (maximum delay, defaulting to 30.0 seconds)."
-msgstr "``retryMax`` (最大遅延時間、デフォルトは 30.0 秒)。"
+msgstr "``retryMax`` (máximo retardo por defecto 30.0 segundos)"
 
-#: ../../library/logging.handlers.rst:554
+#: ../Doc/library/logging.handlers.rst:554
 msgid ""
 "This means that if the remote listener starts up *after* the handler has "
 "been used, you could lose messages (since the handler won't even attempt a "
 "connection until the delay has elapsed, but just silently drop messages "
 "during the delay period)."
 msgstr ""
-"つまり、ハンドラが使われた *後に* リモートリスナが起動した場合、メッセージが"
-"失われてしまうことがあります (ハンドラは、遅延時間が経過するまで接続を試みよ"
-"うとさえせず、その遅延時間中に通知なくメッセージを捨てるので)。"
+"Esto significa que si el oyente remoto (*listener*) comienza después de que "
+"se usó el gestor , pueden perderse mensajes (dado que el gestor no puede "
+"siquiera intentar una conexión hasta que se haya cumplido el retardo, y "
+"silenciosamente desechará los mensajes mientras se cumpla el retardo)."
 
-#: ../../library/logging.handlers.rst:563
+#: ../Doc/library/logging.handlers.rst:563
 msgid "DatagramHandler"
 msgstr "DatagramHandler"
 
-#: ../../library/logging.handlers.rst:565
+#: ../Doc/library/logging.handlers.rst:565
 msgid ""
 "The :class:`DatagramHandler` class, located in the :mod:`logging.handlers` "
 "module, inherits from :class:`SocketHandler` to support sending logging "
 "messages over UDP sockets."
 msgstr ""
-":mod:`logging.handlers` モジュールに含まれる :class:`DatagramHandler` クラス"
-"は、 :class:`SocketHandler` を継承しており、 UDP ソケットを介したログ記録メッ"
-"セージの送信をサポートしています。"
+"La clase :class:`DatagramHandler` está ubicada en el módulo :mod:`logging."
+"handlers`, hereda de la clase :class:`SocketHandler` para realizar el "
+"soporte de mensajes *logging* por los *sockets* UDP."
 
-#: ../../library/logging.handlers.rst:572
+#: ../Doc/library/logging.handlers.rst:572
 msgid ""
 "Returns a new instance of the :class:`DatagramHandler` class intended to "
 "communicate with a remote machine whose address is given by *host* and "
 "*port*."
 msgstr ""
-"アドレスが *host* および *port* で与えられた遠隔のマシンと通信するようにし"
-"た :class:`DatagramHandler` クラスのインスタンスを生成して返します。"
+"Retorna una nueva instancia de la clase :class:`DatagramHandler` destinada "
+"para comunicarse con la terminal remota cuya dirección es dada por *host* y "
+"*port*."
 
-#: ../../library/logging.handlers.rst:575
+#: ../Doc/library/logging.handlers.rst:575
 msgid ""
 "As UDP is not a streaming protocol, there is no persistent connection "
 "between an instance of this handler and *host*. For this reason, when using "
@@ -985,59 +1031,66 @@ msgid ""
 "you, you can do a lookup yourself and initialize this handler using the "
 "looked-up IP address rather than the hostname."
 msgstr ""
+"Como UDP no es un protocolo de transmisión, no existe una conexión "
+"persistente entre una instancia de este controlador y *host*. Por esta "
+"razón, cuando se usa un socket de red, es posible que se deba realizar una "
+"búsqueda de DNS cada vez que se registra un evento, lo que puede generar "
+"cierta latencia en el sistema. Si esto te afecta, puedes realizar una "
+"búsqueda tu mismo e inicializar este controlador utilizando la dirección IP "
+"buscada en lugar del nombre de host."
 
-#: ../../library/logging.handlers.rst:582
+#: ../Doc/library/logging.handlers.rst:582
 msgid ""
 "If ``port`` is specified as ``None``, a Unix domain socket is created using "
 "the value in ``host`` - otherwise, a UDP socket is created."
 msgstr ""
-"``port`` に ``None`` を指定すると、Unix ドメインソケットが ``host`` 値を用い"
-"て作られます - そうでない場合は UDP ソケットが作られます。"
+"Si 'port' se especifica como \"None\", se crea un socket de dominio Unix, "
+"usando el valor en \"host\" - de otra manera se crea un socket UDP."
 
-#: ../../library/logging.handlers.rst:588
+#: ../Doc/library/logging.handlers.rst:588
 msgid ""
 "Pickles the record's attribute dictionary and writes it to the socket in "
 "binary format. If there is an error with the socket, silently drops the "
 "packet. To unpickle the record at the receiving end into a :class:`~logging."
 "LogRecord`, use the :func:`~logging.makeLogRecord` function."
 msgstr ""
-"レコードの属性辞書を pickle して、バイナリ形式でソケットに書き込みます。ソ"
-"ケット操作でエラーが生じた場合、暗黙のうちにパケットは捨てられます。事前に接"
-"続が失われていた場合、接続を再度確立します。受信端でレコードを unpickle し"
-"て :class:`~logging.LogRecord` にするには、 :func:`~logging.makeLogRecord` 関"
-"数を使ってください。"
+"Serializa (*pickles*) el registro del diccionario de atributos y lo escribe "
+"en el socket en formato binario. Si hay un error con el socket, "
+"silenciosamente desecha el paquete. Para deserializar (*unpickle*) el "
+"registro en el extremo de recepción a una clase :class:`~logging.LogRecord`, "
+"usa la función :func:`~logging.makeLogRecord`."
 
-#: ../../library/logging.handlers.rst:597
+#: ../Doc/library/logging.handlers.rst:597
 msgid ""
 "The factory method of :class:`SocketHandler` is here overridden to create a "
 "UDP socket (:const:`socket.SOCK_DGRAM`)."
 msgstr ""
-"ここで :class:`SocketHandler` のファクトリメソッドをオーバライドして、 UDP ソ"
-"ケット (:const:`socket.SOCK_DGRAM`) を生成しています。"
+"El método original de la clase :class:`SocketHandler` se omite para crear un "
+"socket UDP (:const:`socket.SOCK_DGRAM`)."
 
-#: ../../library/logging.handlers.rst:603
+#: ../Doc/library/logging.handlers.rst:603
 msgid ""
 "Send a pickled byte-string to a socket. The format of the sent byte-string "
 "is as described in the documentation for :meth:`SocketHandler.makePickle`."
 msgstr ""
-"pickle したバイト文字列をソケットに送信します。\n"
-"送信するバイト文字列のフォーマットは、 :meth:`SocketHandler.makePickle` のド"
-"キュメントで解説されています。"
+"Enviar una cadena de caracteres serializada (*pickled*) a un socket de red. "
+"El formato de la cadena de *bytes* enviado es tal como se describe en la "
+"documentación para :meth:`SocketHandler.makePickle`."
 
-#: ../../library/logging.handlers.rst:610
+#: ../Doc/library/logging.handlers.rst:610
 msgid "SysLogHandler"
-msgstr "SysLogHandler"
+msgstr "Gestor *SysLog* (*SysLogHandler*)"
 
-#: ../../library/logging.handlers.rst:612
+#: ../Doc/library/logging.handlers.rst:612
 msgid ""
 "The :class:`SysLogHandler` class, located in the :mod:`logging.handlers` "
 "module, supports sending logging messages to a remote or local Unix syslog."
 msgstr ""
-":mod:`logging.handlers` モジュールに含まれる :class:`SysLogHandler` クラス"
-"は、ログ記録メッセージを遠隔またはローカルの Unix syslog に送信する機能をサ"
-"ポートしています。"
+"La clase :class:`SysLogHandler` está ubicada en el módulo :mod:`logging."
+"handlers`. Realiza el soporte de los mensajes de *logging* a un *syslog* "
+"Unix local o remoto."
 
-#: ../../library/logging.handlers.rst:618
+#: ../Doc/library/logging.handlers.rst:618
 msgid ""
 "Returns a new instance of the :class:`SysLogHandler` class intended to "
 "communicate with a remote Unix machine whose address is given by *address* "
@@ -1051,19 +1104,20 @@ msgid ""
 "socket. To open a TCP socket (for use with the newer syslog daemons such as "
 "rsyslog), specify a value of :const:`socket.SOCK_STREAM`."
 msgstr ""
-"遠隔の Unix マシンと通信するための、 :class:`SysLogHandler` クラスの新たなイ"
-"ンスタンスを返します。マシンのアドレスは ``(host, port)`` のタプル形式をとる "
-"*address* で与えられます。 *address* が指定されない場合、 ``('localhost', "
-"514)`` が使われます。アドレスは UDP ソケットを使って開かれます。 ``(host, "
-"port)`` のタプル形式の代わりに文字列で \"/dev/log\" のように与えることもでき"
-"ます。この場合、 Unix ドメインソケットが syslog にメッセージを送るのに使われ"
-"ます。 *facility* が指定されない場合、 :const:`LOG_USER` が使われます。開かれ"
-"るソケットの型は、 *socktype* 引数に依り、デフォルトは :const:`socket."
-"SOCK_DGRAM` で、UDP ソケットを開きます。 (rsyslog のような新しい syslog デー"
-"モンと使うために) TCP ソケットを開くには、 :const:`socket.SOCK_STREAM` の値を"
-"指定してください。"
+"Retorna una nueva instancia de la clase :class:`SysLogHandler` concebida "
+"para comunicarse con una terminal remota Unix cuya dirección esta dada por "
+"*address* en la forma de una tupla ``(host, port)`` . Si *address* no se "
+"especifica se usará ``('localhost', 514)``. La dirección se usa para abrir "
+"el socket. Una alternativa a consignar una tupla ``(host, port)`` es proveer "
+"una dirección como cadena de caracteres, por ejemplo '/dev/log'. En este "
+"caso se usa un socket de dominio Unix para enviar el mensaje al syslog. Si "
+"*facility* no se especifica se usara :const:`LOG_USER` . El tipo de socket "
+"abierto usado depende del argumento *socktype* , que por defecto es :const:"
+"`socket.SOCK_DGRAM` y por lo tanto abre un socket UDP . Para abrir un socket "
+"TCP (para usar con los nuevos *daemons syslog* como rsyslog) se debe "
+"especificar un valor de :const:`socket.SOCK_STREAM`."
 
-#: ../../library/logging.handlers.rst:630
+#: ../Doc/library/logging.handlers.rst:630
 msgid ""
 "Note that if your server is not listening on UDP port 514, :class:"
 "`SysLogHandler` may appear not to work. In that case, check what address you "
@@ -1073,35 +1127,38 @@ msgid ""
 "do this check at runtime if your application needs to run on several "
 "platforms). On Windows, you pretty much have to use the UDP option."
 msgstr ""
-"使用中のサーバが UDP ポート 514 を待機していない場合、 :class:"
-"`SysLogHandler` が正常に動作していないように見える場合があります。その場合、"
-"ドメインソケットに使うべきアドレスを調べてください。そのアドレスはシステムに"
-"よって異なります。例えば、Linux システムでは通常 '/dev/log' ですが、 OS X で"
-"は '/var/run/syslog' です。プラットフォームを確認し、適切なアドレスを使う必要"
-"があります (アプリケーションを複数のプラットフォーム上で動作させる必要がある"
-"場合、実行時に確認する必要があるかもしれません)。Windows では、多くの場合、"
-"UDP オプションを使用する必要があります。"
+"Nótese que si el servidor no esta escuchando el puerto UDP 514, la clase :"
+"class:`SysLogHandler` puede parecer no funcionar. En ese caso chequea que "
+"dirección deberías usar para un socket de dominio . Es sistema-dependiente. "
+"Por ejemplo en Linux generalmente es '/dev/log' pero en OS/X es '/var/run/"
+"syslog'. Será necesario chequear tu plataforma y usar la dirección adecuada "
+"(quizá sea necesario realizar este chequeo mientras corre la aplicación si "
+"necesita correr en diferentes plataformas). En Windows seguramente tengas "
+"que usar la opción UDP."
 
-#: ../../library/logging.handlers.rst:639
+#: ../Doc/library/logging.handlers.rst:639
 msgid ""
 "On macOS 12.x (Monterey), Apple has changed the behaviour of their syslog "
 "daemon - it no longer listens on a domain socket. Therefore, you cannot "
 "expect :class:`SysLogHandler` to work on this system."
 msgstr ""
+"En macOS 12.x (Monterey), Apple cambió el comportamiento de su syslog "
+"daemon: ya no escucha en un socket de dominio. Por lo tanto, no puedes "
+"esperar que :class:`SysLogHandler` funcione en este sistema."
 
-#: ../../library/logging.handlers.rst:643
+#: ../Doc/library/logging.handlers.rst:643
 msgid "See :gh:`91070` for more information."
-msgstr ""
+msgstr "Ver :gh:`91070` para más información."
 
-#: ../../library/logging.handlers.rst:645
+#: ../Doc/library/logging.handlers.rst:645
 msgid "*socktype* was added."
-msgstr "*socktype* が追加されました。"
+msgstr "Se agregó *socktype*."
 
-#: ../../library/logging.handlers.rst:651
+#: ../Doc/library/logging.handlers.rst:651
 msgid "Closes the socket to the remote host."
-msgstr "遠隔ホストへのソケットを閉じます。"
+msgstr "Cierra el socket del host remoto."
 
-#: ../../library/logging.handlers.rst:655
+#: ../Doc/library/logging.handlers.rst:655
 msgid ""
 "Tries to create a socket and, if it's not a datagram socket, connect it to "
 "the other end. This method is called during handler initialization, but it's "
@@ -1111,16 +1168,23 @@ msgid ""
 "will be called again when emitting an event, if there is no socket at that "
 "point."
 msgstr ""
+"Intenta crear un socket y, si no es un socket de datagrama, lo conecta al "
+"otro extremo. Este método es llamado durante la inicialización del "
+"controlador, pero no se considera un error si el otro extremo no está "
+"escuchando en este momento; el método se volverá a llamar cuando se emita un "
+"evento, pero no se considera un error si el otro extremo no está escuchando "
+"todavía --- el método se volverá a llamar cuando se emita un evento, si no "
+"hay ningún socket en ese momento."
 
-#: ../../library/logging.handlers.rst:667
+#: ../Doc/library/logging.handlers.rst:667
 msgid ""
 "The record is formatted, and then sent to the syslog server. If exception "
 "information is present, it is *not* sent to the server."
 msgstr ""
-"レコードは書式化された後、 syslog サーバに送信されます。例外情報が存在して"
-"も、サーバには *送信されません* 。"
+"El registro es formateado, y luego enviado al servidor *syslog*. Si hay "
+"información de excepción presente entonces no se enviará al servidor."
 
-#: ../../library/logging.handlers.rst:670
+#: ../Doc/library/logging.handlers.rst:670
 msgid ""
 "(See: :issue:`12168`.) In earlier versions, the message sent to the syslog "
 "daemons was always terminated with a NUL byte, because early versions of "
@@ -1130,15 +1194,15 @@ msgid ""
 "more recent daemons (which adhere more closely to RFC 5424) pass the NUL "
 "byte on as part of the message."
 msgstr ""
-"(参照: :issue:`12168`) 初期のバージョンでは、 syslog デーモンに送られるメッ"
-"セージは常に NUL バイトで終端していました。初期のバージョンの syslog デーモン"
-"が NUL 終端されたメッセージを期待していたからです - たとえ、それが適切な仕様 "
-"(:rfc:`5424`) にはなかったとしても。 syslog デーモンの新しいバージョンは NUL "
-"バイトを期待せず、代わりにもしそれがある場合は削除します。さらに、より最近の"
-"デーモン (RFC 5424 により忠実なバージョン) は、メッセージの一部として NUL バ"
-"イトを通します。"
+"(Véase el :issue:`12168`.) En versiones anteriores , los mensajes enviados a "
+"los *daemons syslog* siempre terminaban con un byte NUL ya que versiones "
+"anteriores de estos *daemons* esperaban un mensaje NUL de terminación. "
+"Incluso a pesar que no es relevante la especificación (:rfc:`5424`). "
+"Versiones mas recientes de estos *daemons* no esperan el byte NUL pero lo "
+"quitan si esta ahí. Versiones aún mas recientes que están mas cercanas a la "
+"especificación RFC 5424 pasan el byte NUL como parte del mensaje."
 
-#: ../../library/logging.handlers.rst:679
+#: ../Doc/library/logging.handlers.rst:679
 msgid ""
 "To enable easier handling of syslog messages in the face of all these "
 "differing daemon behaviours, the appending of the NUL byte has been made "
@@ -1147,13 +1211,14 @@ msgid ""
 "to ``False`` on a ``SysLogHandler`` instance in order for that instance to "
 "*not* append the NUL terminator."
 msgstr ""
-"このような異なるデーモンの振る舞いすべてに対して syslog メッセージの取り扱い"
-"をより容易にするため、 NUL バイトの追加はクラスレベル属性 ``append_nul`` を使"
-"用して設定できるようになりました。これはデフォルトで ``True`` (既存の振る舞い"
-"を保持) ですが、 ``SysLogHandler`` インスタンスが NUL 終端文字を追加 *しない"
-"* ように ``False`` にセットすることができます。"
+"Para habilitar una gestión mas sencilla de los mensajes *syslog* respecto de "
+"todos esos *daemons* de diferentes comportamientos el agregado del byte NUL "
+"es configurable a través del uso del atributo de nivel de clase "
+"``append_nul``. Este es por defecto '``True`` (preservando el comportamiento "
+"ya existente) pero se puede establecer a 'False' en una instancia "
+"``SysLogHandler`` como para que esa instancia no añada el terminador NUL."
 
-#: ../../library/logging.handlers.rst:686
+#: ../Doc/library/logging.handlers.rst:686
 msgid ""
 "(See: :issue:`12419`.) In earlier versions, there was no facility for an "
 "\"ident\" or \"tag\" prefix to identify the source of the message. This can "
@@ -1163,275 +1228,275 @@ msgid ""
 "to every message handled. Note that the provided ident must be text, not "
 "bytes, and is prepended to the message exactly as is."
 msgstr ""
-"(参照: :issue:`12419`) 以前のバージョンでは、メッセージソースを識別するため"
-"の \"ident\" あるいは \"tag\" プリフィックス機能はありませんでした。これは、"
-"今ではクラスレベル属性を使用して指定することができるようになりました。デフォ"
-"ルトでは既存の振る舞いを保持するために ``\"\"`` ですが、特定の "
-"``SysLogHandler`` インスタンスが扱うすべてのメッセージに識別子を前置するよう"
-"にそれをオーバーライドすることができます。識別子はバイトではなくテキストでな"
-"ければならず、正確にそのままメッセージに前置されることに注意してください。"
+"(Véase: issue '12419') en versiones anteriores, no había posibilidades para "
+"un prefijo 'ident' o 'tag' para identificar el origen del mensaje. Esto "
+"ahora se puede especificar usando un atributo de nivel de clase, que por "
+"defecto será \"''\" para preservar el comportamiento existente , pero puede "
+"ser sorteado en una instancia ``SysLogHandler`` para que esta instancia "
+"anteponga el *ident* a todos los mensajes gestionados. Nótese que el *ident* "
+"provisto debe ser texto, no bytes y se antepone al mensaje tal como es."
 
-#: ../../library/logging.handlers.rst:697
+#: ../Doc/library/logging.handlers.rst:697
 msgid ""
 "Encodes the facility and priority into an integer. You can pass in strings "
 "or integers - if strings are passed, internal mapping dictionaries are used "
 "to convert them to integers."
 msgstr ""
-"ファシリティおよび優先度を整数に符号化します。値は文字列でも整数でも渡すこと"
-"ができます。文字列が渡された場合、内部の対応付け辞書が使われ、整数に変換され"
-"ます。"
+"Codifica la funcionalidad y prioridad en un entero. Puedes pasar cadenas de "
+"caracteres o enteros, si pasas cadenas de caracteres se usarán los "
+"diccionarios de mapeo interno para convertirlos en enteros."
 
-#: ../../library/logging.handlers.rst:701
+#: ../Doc/library/logging.handlers.rst:701
 msgid ""
 "The symbolic ``LOG_`` values are defined in :class:`SysLogHandler` and "
 "mirror the values defined in the ``sys/syslog.h`` header file."
 msgstr ""
-"シンボリックな ``LOG_`` 値は :class:`SysLogHandler` で定義されています。これ"
-"は ``sys/syslog.h`` ヘッダーファイルで定義された値を反映しています。"
+"Los valores simbólicos ``LOG_`` están definidos en :class:`SysLogHandler` e "
+"invierten los valores definidos en el archivo de encabezado ``sys/syslog.h``."
 
-#: ../../library/logging.handlers.rst:704
+#: ../Doc/library/logging.handlers.rst:704
 msgid "**Priorities**"
-msgstr "**優先度**"
+msgstr "**Prioridades**"
 
-#: ../../library/logging.handlers.rst:707
-#: ../../library/logging.handlers.rst:729
+#: ../Doc/library/logging.handlers.rst:707
+#: ../Doc/library/logging.handlers.rst:729
 msgid "Name (string)"
-msgstr "名前 (文字列)"
+msgstr "Nombre (cadena de caracteres)"
 
-#: ../../library/logging.handlers.rst:707
-#: ../../library/logging.handlers.rst:729
+#: ../Doc/library/logging.handlers.rst:707
+#: ../Doc/library/logging.handlers.rst:729
 msgid "Symbolic value"
-msgstr "シンボル値"
+msgstr "Valor simbólico"
 
-#: ../../library/logging.handlers.rst:709
+#: ../Doc/library/logging.handlers.rst:709
 msgid "``alert``"
 msgstr "``alert``"
 
-#: ../../library/logging.handlers.rst:709
+#: ../Doc/library/logging.handlers.rst:709
 msgid "LOG_ALERT"
 msgstr "LOG_ALERT"
 
-#: ../../library/logging.handlers.rst:711
+#: ../Doc/library/logging.handlers.rst:711
 msgid "``crit`` or ``critical``"
 msgstr "``crit`` or ``critical``"
 
-#: ../../library/logging.handlers.rst:711
+#: ../Doc/library/logging.handlers.rst:711
 msgid "LOG_CRIT"
 msgstr "LOG_CRIT"
 
-#: ../../library/logging.handlers.rst:713
+#: ../Doc/library/logging.handlers.rst:713
 msgid "``debug``"
 msgstr "``debug``"
 
-#: ../../library/logging.handlers.rst:713
+#: ../Doc/library/logging.handlers.rst:713
 msgid "LOG_DEBUG"
 msgstr "LOG_DEBUG"
 
-#: ../../library/logging.handlers.rst:715
+#: ../Doc/library/logging.handlers.rst:715
 msgid "``emerg`` or ``panic``"
 msgstr "``emerg`` or ``panic``"
 
-#: ../../library/logging.handlers.rst:715
+#: ../Doc/library/logging.handlers.rst:715
 msgid "LOG_EMERG"
 msgstr "LOG_EMERG"
 
-#: ../../library/logging.handlers.rst:717
+#: ../Doc/library/logging.handlers.rst:717
 msgid "``err`` or ``error``"
 msgstr "``err`` or ``error``"
 
-#: ../../library/logging.handlers.rst:717
+#: ../Doc/library/logging.handlers.rst:717
 msgid "LOG_ERR"
 msgstr "LOG_ERR"
 
-#: ../../library/logging.handlers.rst:719
+#: ../Doc/library/logging.handlers.rst:719
 msgid "``info``"
 msgstr "``info``"
 
-#: ../../library/logging.handlers.rst:719
+#: ../Doc/library/logging.handlers.rst:719
 msgid "LOG_INFO"
 msgstr "LOG_INFO"
 
-#: ../../library/logging.handlers.rst:721
+#: ../Doc/library/logging.handlers.rst:721
 msgid "``notice``"
 msgstr "``notice``"
 
-#: ../../library/logging.handlers.rst:721
+#: ../Doc/library/logging.handlers.rst:721
 msgid "LOG_NOTICE"
 msgstr "LOG_NOTICE"
 
-#: ../../library/logging.handlers.rst:723
+#: ../Doc/library/logging.handlers.rst:723
 msgid "``warn`` or ``warning``"
-msgstr "``warn`` or ``warning``"
+msgstr "``warn`` o ``warning``"
 
-#: ../../library/logging.handlers.rst:723
+#: ../Doc/library/logging.handlers.rst:723
 msgid "LOG_WARNING"
 msgstr "LOG_WARNING"
 
-#: ../../library/logging.handlers.rst:726
+#: ../Doc/library/logging.handlers.rst:726
 msgid "**Facilities**"
-msgstr "**ファシリティ**"
+msgstr "**Facilities**"
 
-#: ../../library/logging.handlers.rst:731
+#: ../Doc/library/logging.handlers.rst:731
 msgid "``auth``"
 msgstr "``auth``"
 
-#: ../../library/logging.handlers.rst:731
+#: ../Doc/library/logging.handlers.rst:731
 msgid "LOG_AUTH"
 msgstr "LOG_AUTH"
 
-#: ../../library/logging.handlers.rst:733
+#: ../Doc/library/logging.handlers.rst:733
 msgid "``authpriv``"
 msgstr "``authpriv``"
 
-#: ../../library/logging.handlers.rst:733
+#: ../Doc/library/logging.handlers.rst:733
 msgid "LOG_AUTHPRIV"
 msgstr "LOG_AUTHPRIV"
 
-#: ../../library/logging.handlers.rst:735
+#: ../Doc/library/logging.handlers.rst:735
 msgid "``cron``"
 msgstr "``cron``"
 
-#: ../../library/logging.handlers.rst:735
+#: ../Doc/library/logging.handlers.rst:735
 msgid "LOG_CRON"
 msgstr "LOG_CRON"
 
-#: ../../library/logging.handlers.rst:737
+#: ../Doc/library/logging.handlers.rst:737
 msgid "``daemon``"
 msgstr "``daemon``"
 
-#: ../../library/logging.handlers.rst:737
+#: ../Doc/library/logging.handlers.rst:737
 msgid "LOG_DAEMON"
 msgstr "LOG_DAEMON"
 
-#: ../../library/logging.handlers.rst:739
+#: ../Doc/library/logging.handlers.rst:739
 msgid "``ftp``"
 msgstr "``ftp``"
 
-#: ../../library/logging.handlers.rst:739
+#: ../Doc/library/logging.handlers.rst:739
 msgid "LOG_FTP"
 msgstr "LOG_FTP"
 
-#: ../../library/logging.handlers.rst:741
+#: ../Doc/library/logging.handlers.rst:741
 msgid "``kern``"
 msgstr "``kern``"
 
-#: ../../library/logging.handlers.rst:741
+#: ../Doc/library/logging.handlers.rst:741
 msgid "LOG_KERN"
 msgstr "LOG_KERN"
 
-#: ../../library/logging.handlers.rst:743
+#: ../Doc/library/logging.handlers.rst:743
 msgid "``lpr``"
 msgstr "``lpr``"
 
-#: ../../library/logging.handlers.rst:743
+#: ../Doc/library/logging.handlers.rst:743
 msgid "LOG_LPR"
 msgstr "LOG_LPR"
 
-#: ../../library/logging.handlers.rst:745
+#: ../Doc/library/logging.handlers.rst:745
 msgid "``mail``"
 msgstr "``mail``"
 
-#: ../../library/logging.handlers.rst:745
+#: ../Doc/library/logging.handlers.rst:745
 msgid "LOG_MAIL"
 msgstr "LOG_MAIL"
 
-#: ../../library/logging.handlers.rst:747
+#: ../Doc/library/logging.handlers.rst:747
 msgid "``news``"
 msgstr "``news``"
 
-#: ../../library/logging.handlers.rst:747
+#: ../Doc/library/logging.handlers.rst:747
 msgid "LOG_NEWS"
 msgstr "LOG_NEWS"
 
-#: ../../library/logging.handlers.rst:749
+#: ../Doc/library/logging.handlers.rst:749
 msgid "``syslog``"
 msgstr "``syslog``"
 
-#: ../../library/logging.handlers.rst:749
+#: ../Doc/library/logging.handlers.rst:749
 msgid "LOG_SYSLOG"
 msgstr "LOG_SYSLOG"
 
-#: ../../library/logging.handlers.rst:751
+#: ../Doc/library/logging.handlers.rst:751
 msgid "``user``"
 msgstr "``user``"
 
-#: ../../library/logging.handlers.rst:751
+#: ../Doc/library/logging.handlers.rst:751
 msgid "LOG_USER"
 msgstr "LOG_USER"
 
-#: ../../library/logging.handlers.rst:753
+#: ../Doc/library/logging.handlers.rst:753
 msgid "``uucp``"
 msgstr "``uucp``"
 
-#: ../../library/logging.handlers.rst:753
+#: ../Doc/library/logging.handlers.rst:753
 msgid "LOG_UUCP"
 msgstr "LOG_UUCP"
 
-#: ../../library/logging.handlers.rst:755
+#: ../Doc/library/logging.handlers.rst:755
 msgid "``local0``"
 msgstr "``local0``"
 
-#: ../../library/logging.handlers.rst:755
+#: ../Doc/library/logging.handlers.rst:755
 msgid "LOG_LOCAL0"
 msgstr "LOG_LOCAL0"
 
-#: ../../library/logging.handlers.rst:757
+#: ../Doc/library/logging.handlers.rst:757
 msgid "``local1``"
 msgstr "``local1``"
 
-#: ../../library/logging.handlers.rst:757
+#: ../Doc/library/logging.handlers.rst:757
 msgid "LOG_LOCAL1"
 msgstr "LOG_LOCAL1"
 
-#: ../../library/logging.handlers.rst:759
+#: ../Doc/library/logging.handlers.rst:759
 msgid "``local2``"
 msgstr "``local2``"
 
-#: ../../library/logging.handlers.rst:759
+#: ../Doc/library/logging.handlers.rst:759
 msgid "LOG_LOCAL2"
 msgstr "LOG_LOCAL2"
 
-#: ../../library/logging.handlers.rst:761
+#: ../Doc/library/logging.handlers.rst:761
 msgid "``local3``"
 msgstr "``local3``"
 
-#: ../../library/logging.handlers.rst:761
+#: ../Doc/library/logging.handlers.rst:761
 msgid "LOG_LOCAL3"
 msgstr "LOG_LOCAL3"
 
-#: ../../library/logging.handlers.rst:763
+#: ../Doc/library/logging.handlers.rst:763
 msgid "``local4``"
 msgstr "``local4``"
 
-#: ../../library/logging.handlers.rst:763
+#: ../Doc/library/logging.handlers.rst:763
 msgid "LOG_LOCAL4"
 msgstr "LOG_LOCAL4"
 
-#: ../../library/logging.handlers.rst:765
+#: ../Doc/library/logging.handlers.rst:765
 msgid "``local5``"
 msgstr "``local5``"
 
-#: ../../library/logging.handlers.rst:765
+#: ../Doc/library/logging.handlers.rst:765
 msgid "LOG_LOCAL5"
 msgstr "LOG_LOCAL5"
 
-#: ../../library/logging.handlers.rst:767
+#: ../Doc/library/logging.handlers.rst:767
 msgid "``local6``"
 msgstr "``local6``"
 
-#: ../../library/logging.handlers.rst:767
+#: ../Doc/library/logging.handlers.rst:767
 msgid "LOG_LOCAL6"
 msgstr "LOG_LOCAL6"
 
-#: ../../library/logging.handlers.rst:769
+#: ../Doc/library/logging.handlers.rst:769
 msgid "``local7``"
 msgstr "``local7``"
 
-#: ../../library/logging.handlers.rst:769
+#: ../Doc/library/logging.handlers.rst:769
 msgid "LOG_LOCAL7"
 msgstr "LOG_LOCAL7"
 
-#: ../../library/logging.handlers.rst:774
+#: ../Doc/library/logging.handlers.rst:774
 msgid ""
 "Maps a logging level name to a syslog priority name. You may need to "
 "override this if you are using custom levels, or if the default algorithm is "
@@ -1439,30 +1504,31 @@ msgid ""
 "``WARNING``, ``ERROR`` and ``CRITICAL`` to the equivalent syslog names, and "
 "all other level names to 'warning'."
 msgstr ""
-"ログレベル名を syslog 優先度名に対応付けます。カスタムレベルを使用している場"
-"合や、デフォルトアルゴリズムがニーズに適していない場合には、このメソッドを"
-"オーバーライドする必要があるかもしれません。デフォルトアルゴリズムは、 "
-"``DEBUG``, ``INFO``, ``WARNING``, ``ERROR``, ``CRITICAL`` を等価な syslog 名"
-"に、他のすべてのレベル名を \"warning\" に対応付けます。"
+"Mapea un nombre de nivel *logging* a un nombre de prioridad *syslog*. Puedes "
+"necesitar omitir esto si estas usando niveles personalizados, o si el "
+"algoritmo por defecto no es aplicable a tus necesidades. El algoritmo por "
+"defecto mapea ``DEBUG``, ``INFO``, ``WARNING``, ``ERROR`` y ``CRITICAL`` a "
+"sus nombres equivalentes *syslog*, y todos los demás nombres de nivel a "
+"'warning'."
 
-#: ../../library/logging.handlers.rst:784
+#: ../Doc/library/logging.handlers.rst:784
 msgid "NTEventLogHandler"
-msgstr "NTEventLogHandler"
+msgstr "Gestor de eventos *NTELog* (NTEventLogHandler)"
 
-#: ../../library/logging.handlers.rst:786
+#: ../Doc/library/logging.handlers.rst:786
 msgid ""
 "The :class:`NTEventLogHandler` class, located in the :mod:`logging.handlers` "
 "module, supports sending logging messages to a local Windows NT, Windows "
 "2000 or Windows XP event log. Before you can use it, you need Mark Hammond's "
 "Win32 extensions for Python installed."
 msgstr ""
-":mod:`logging.handlers` モジュールに含まれる :class:`NTEventLogHandler` クラ"
-"スは、ログ記録メッセージをローカルな Windows NT, Windows 2000, または "
-"Windows XP のイベントログに送信する機能をサポートします。この機能を使えるよう"
-"にするには、 Mark Hammond による Python 用 Win32 拡張パッケージをインストール"
-"する必要があります。"
+"La clase :class:`NTEventLogHandler` esta localizada en el módulo :mod:"
+"`logging.handlers`, soporta el envío de mensajes de *logging* a un log de "
+"eventos local Windows NT, Windows 2000 o Windows XP. Antes de que puedas "
+"usarlo, necesitarás tener instaladas las extensiones de Win32 de Mark "
+"Hammond para Python."
 
-#: ../../library/logging.handlers.rst:794
+#: ../Doc/library/logging.handlers.rst:794
 msgid ""
 "Returns a new instance of the :class:`NTEventLogHandler` class. The "
 "*appname* is used to define the application name as it appears in the event "
@@ -1477,18 +1543,21 @@ msgid ""
 "in the event log). The *logtype* is one of ``'Application'``, ``'System'`` "
 "or ``'Security'``, and defaults to ``'Application'``."
 msgstr ""
-":class:`NTEventLogHandler` クラスの新たなインスタンスを返します。 *appname* "
-"はイベントログに表示する際のアプリケーション名を定義するために使われます。こ"
-"の名前を使って適切なレジストリエントリが生成されます。 *dllname* はログに保存"
-"するメッセージ定義の入った .dll または .exe ファイルへの完全修飾パス名を与え"
-"なければなりません (指定されない場合、 ``'win32service.pyd'`` が使われます - "
-"このライブラリは Win32 拡張とともにインストールされ、いくつかのプレースホルダ"
-"となるメッセージ定義を含んでいます)。これらのプレースホルダを利用すると、メッ"
-"セージの発信源全体がログに記録されるため、イベントログは巨大になるので注意し"
-"てください。 *logtype* は ``'Application'``, ``'System'``, ``'Security'`` の"
-"いずれかで、デフォルトは ``'Application'`` です。"
+"Retorna una nueva instancia de la clase :class:`NTEventLogHandler` la "
+"*appname* se usa para definir el nombre de la aplicación tal como aparece en "
+"el log de eventos. Se crea una entrada de registro apropiada usando este "
+"nombre. El *dllname* debe dar la ruta completa calificada de un .dll o .exe "
+"que contiene definiciones de mensaje para conservar en el log. (si no esta "
+"especificada, se usara ``'win32service.pyd'`` esto es instalado con las "
+"extensiones de Win32 y contiene algunas definiciones básicas de mensajes de "
+"conservación de lugar. Nótese que el uso de estos conservadores de lugar "
+"harán tu log de eventos extenso, dado que el origen completo del mensaje es "
+"guardado en el log. Si quieres *logs* menos extensos deberás pasar el nombre "
+"de tu propio .dll o .exe que contiene la definición de mensajes que quieres "
+"usar en el log. El *logtype* puede ser de ``'Application'``, ``'System'`` or "
+"``'Security'`` y sino por defecto será de ``'Application'``."
 
-#: ../../library/logging.handlers.rst:810
+#: ../Doc/library/logging.handlers.rst:810
 msgid ""
 "At this point, you can remove the application name from the registry as a "
 "source of event log entries. However, if you do this, you will not be able "
@@ -1496,30 +1565,29 @@ msgid ""
 "able to access the registry to get the .dll name. The current version does "
 "not do this."
 msgstr ""
-"現時点では、イベントログエントリの発信源としてのアプリケーション名をレジスト"
-"リから除去することはできます。しかしこれを行うと、イベントログビューアで意図"
-"した通りにログが見えなくなるでしょう - これはイベントログが .dll 名を取得する"
-"ためにレジストリにアクセスできなければならないからです。現在のバージョンでは"
-"この操作を行いません。"
+"Llegado a este punto puedes remover el nombre de aplicación del registro "
+"como origen de entrada de log de eventos. Sin embargo si haces esto no te "
+"será posible ver los eventos tal como has propuesto en el visor del log de "
+"eventos - necesita ser capaz de acceder al registro para tomar el nombre ."
+"dll. Esto no lo hace la versión actual."
 
-#: ../../library/logging.handlers.rst:819
+#: ../Doc/library/logging.handlers.rst:819
 msgid ""
 "Determines the message ID, event category and event type, and then logs the "
 "message in the NT event log."
 msgstr ""
-"メッセージ ID\\ 、イベントカテゴリ、イベント型を決定し、メッセージを NT イベ"
-"ントログに記録します。"
+"Determina el ID del mensaje, categoría y tipo de evento y luego registra el "
+"mensaje en el log de eventos NT."
 
-#: ../../library/logging.handlers.rst:825
+#: ../Doc/library/logging.handlers.rst:825
 msgid ""
 "Returns the event category for the record. Override this if you want to "
 "specify your own categories. This version returns 0."
 msgstr ""
-"レコードに対するイベントカテゴリを返します。自作のカテゴリを指定したい場合、"
-"このメソッドをオーバライドしてください。このクラスのバージョンのメソッドは 0 "
-"を返します。"
+"Retorna la categoría de evento del registro. Evita esto si quieres "
+"especificar tus propias categorías. Esta versión retorna 0."
 
-#: ../../library/logging.handlers.rst:831
+#: ../Doc/library/logging.handlers.rst:831
 msgid ""
 "Returns the event type for the record. Override this if you want to specify "
 "your own types. This version does a mapping using the handler's typemap "
@@ -1529,15 +1597,15 @@ msgid ""
 "will either need to override this method or place a suitable dictionary in "
 "the handler's *typemap* attribute."
 msgstr ""
-"レコードのイベント型を返します。自作の型を指定したい場合、このメソッドをオー"
-"バライドしてください。このクラスのバージョンのメソッドは、ハンドラの "
-"*typemap* 属性を使って対応付けを行います。この属性は :meth:`__init__` で初期"
-"化され、 :const:`DEBUG`, :const:`INFO`, :const:`WARNING`, :const:`ERROR`, :"
-"const:`CRITICAL` が入っています。自作のレベルを使っているのなら、このメソッド"
-"をオーバライドするか、ハンドラの *typemap* 属性に適切な辞書を配置する必要があ"
-"るでしょう。"
+"Retorna el tipo de evento del registro. Haz caso omiso de esto si quieres "
+"especificar tus propios tipos. Esta versión realiza un mapeo usando el "
+"atributo *typemap* del gestor, que se establece en :meth:`__init__` a un "
+"diccionario que contiene mapeo para :const:`DEBUG`, :const:`INFO`, :const:"
+"`WARNING`, :const:`ERROR` y :const:`CRITICAL`. Si estas usando tus propios "
+"niveles, necesitarás omitir este método o colocar un diccionario a medida en "
+"el atributo *typemap* del gestor."
 
-#: ../../library/logging.handlers.rst:842
+#: ../Doc/library/logging.handlers.rst:842
 msgid ""
 "Returns the message ID for the record. If you are using your own messages, "
 "you could do this by having the *msg* passed to the logger being an ID "
@@ -1545,24 +1613,26 @@ msgid ""
 "lookup to get the message ID. This version returns 1, which is the base "
 "message ID in :file:`win32service.pyd`."
 msgstr ""
-"レコードのメッセージ ID を返します。自作のメッセージを使っているのなら、ロ"
-"ガーに渡される *msg* を書式化文字列ではなく ID にします。その上で、辞書参照を"
-"行ってメッセージ ID を得ます。このクラスのバージョンでは 1 を返します。この値"
-"は :file:`win32service.pyd` における基本メッセージ ID です。"
+"Retorna el ID de mensaje para el registro. Si estas usando tus propios "
+"mensajes, podrás hacerlo pasando el *msg* al *logger* siendo un ID mas que "
+"un formato de cadena de caracteres. Luego aquí puedes usar una búsqueda de "
+"diccionario para obtener el ID de mensaje. Esta versión retorna 1, que es el "
+"ID de mensaje base en :file:`win32service.pyd`."
 
-#: ../../library/logging.handlers.rst:851
+#: ../Doc/library/logging.handlers.rst:851
 msgid "SMTPHandler"
 msgstr "SMTPHandler"
 
-#: ../../library/logging.handlers.rst:853
+#: ../Doc/library/logging.handlers.rst:853
 msgid ""
 "The :class:`SMTPHandler` class, located in the :mod:`logging.handlers` "
 "module, supports sending logging messages to an email address via SMTP."
 msgstr ""
-":mod:`logging.handlers` モジュールに含まれる :class:`SMTPHandler` クラスは、 "
-"SMTP を介したログ記録メッセージの送信機能をサポートします。"
+"La clase :class:`SMTPHandler` esta ubicada en el módulo :mod:`logging."
+"handlers` y soporta el envío de mensajes de *logging* a un a dirección de "
+"correo electrónico a través de SMTP."
 
-#: ../../library/logging.handlers.rst:859
+#: ../Doc/library/logging.handlers.rst:859
 msgid ""
 "Returns a new instance of the :class:`SMTPHandler` class. The instance is "
 "initialized with the from and to addresses and subject line of the email. "
@@ -1572,15 +1642,16 @@ msgid ""
 "authentication, you can specify a (username, password) tuple for the "
 "*credentials* argument."
 msgstr ""
-"新たな :class:`SMTPHandler` クラスのインスタンスを返します。インスタンスは "
-"email の from および to アドレス行、および subject 行とともに初期化されま"
-"す。 *toaddrs* は文字列からなるリストでなければなりません。非標準の SMTP ポー"
-"トを指定するには、 *mailhost* 引数に (host, port) のタプル形式を指定します。"
-"文字列を使った場合、標準の SMTP ポートが使われます。もし SMTP サーバが認証を"
-"必要とするならば、 (username, password) のタプル形式を *credentials* 引数に指"
-"定することができます。"
+"Retorna una nueva instancia de la clase :class:`SMTPHandler` . Esta "
+"instancia se inicializa con la dirección de: y para: y asunto: del correo "
+"electrónico. El *toaddrs* debe ser una lista de cadena de caracteres. Para "
+"especificar un puerto SMTP no estandarizado usa el formato de tupla (host, "
+"puerto) para el argumento *mailhost*. Si usas una cadena de caracteres, se "
+"utiliza el puerto estándar SMTP. Si tu servidor SMTP necesita autenticación, "
+"puedes especificar una tupla (usuario, contraseña) para el argumento de "
+"*credentials*."
 
-#: ../../library/logging.handlers.rst:866
+#: ../Doc/library/logging.handlers.rst:866
 msgid ""
 "To specify the use of a secure protocol (TLS), pass in a tuple to the "
 "*secure* argument. This will only be used when authentication credentials "
@@ -1589,54 +1660,55 @@ msgid ""
 "keyfile and certificate file. (This tuple is passed to the :meth:`smtplib."
 "SMTP.starttls` method.)"
 msgstr ""
-"セキュアプロトコル (TLS) の使用を指定するには *secure* 引数にタプルを渡してく"
-"ださい。これは認証情報が渡された場合のみ使用されます。タプルは、空のタプル"
-"か、キーファイルの名前を持つ1要素のタプルか、またはキーファイルと証明書ファイ"
-"ルの名前を持つ2要素のタプルのいずれかでなければなりません。 (このタプルは :"
-"meth:`smtplib.SMTP.starttls` メソッドに渡されます。)"
+"Para especificar el uso de un protocolo de seguridad (TLS), pasa una tupla "
+"al argumento *secure*. Esto solo se utilizará cuando sean provistas las "
+"credenciales de autenticación. La tupla deberá ser una tupla vacía o una "
+"tupla con único valor con el nombre de un archivo-clave *keyfile*, o una "
+"tupla de 2 valores con el nombre del archivo-clave *keyfile* y archivo "
+"certificado. (Esta tupla se pasa al método :meth:`smtplib.SMTP.starttls` "
+"method.)."
 
-#: ../../library/logging.handlers.rst:873
+#: ../Doc/library/logging.handlers.rst:873
 msgid ""
 "A timeout can be specified for communication with the SMTP server using the "
 "*timeout* argument."
 msgstr ""
-"SMTP サーバとのコミュニケーションのために、 *timeout* 引数を使用してタイムア"
-"ウトを指定することができます。"
+"Se puede especificar un tiempo de espera para comunicación con el servidor "
+"SMTP usando el argumento *timeout*."
 
-#: ../../library/logging.handlers.rst:876
+#: ../Doc/library/logging.handlers.rst:876
 msgid "The *timeout* argument was added."
-msgstr "*timeout* 引数が追加されました。"
+msgstr "Se agregó el argumento *timeout*."
 
-#: ../../library/logging.handlers.rst:881
+#: ../Doc/library/logging.handlers.rst:881
 msgid "Formats the record and sends it to the specified addressees."
-msgstr "レコードを書式化し、指定されたアドレスに送信します。"
+msgstr "Formatea el registro y lo envía a las direcciones especificadas."
 
-#: ../../library/logging.handlers.rst:886
+#: ../Doc/library/logging.handlers.rst:886
 msgid ""
 "If you want to specify a subject line which is record-dependent, override "
 "this method."
 msgstr ""
-"レコードに応じたサブジェクト行を指定したいなら、このメソッドをオーバライドし"
-"てください。"
+"Si quieres especificar una línea de argumento que es registro-dependiente, "
+"sobrescribe (*override*) este método."
 
-#: ../../library/logging.handlers.rst:892
+#: ../Doc/library/logging.handlers.rst:892
 msgid "MemoryHandler"
 msgstr "MemoryHandler"
 
-#: ../../library/logging.handlers.rst:894
+#: ../Doc/library/logging.handlers.rst:894
 msgid ""
 "The :class:`MemoryHandler` class, located in the :mod:`logging.handlers` "
 "module, supports buffering of logging records in memory, periodically "
 "flushing them to a :dfn:`target` handler. Flushing occurs whenever the "
 "buffer is full, or when an event of a certain severity or greater is seen."
 msgstr ""
-":mod:`logging.handlers` モジュールに含まれる :class:`MemoryHandler` は、ログ"
-"記録するレコードをメモリ上にバッファリングし、定期的にその内容をターゲット (:"
-"dfn:`target`) となるハンドラにフラッシュする機能をサポートしています。フラッ"
-"シュ処理はバッファが一杯になるか、ある深刻度かそれ以上のレベルを持つイベント"
-"が観測された際に行われます。"
+"La clase :class:`MemoryHandler` esta ubicada en el módulo :mod:`logging."
+"handlers` .Soporta el almacenamiento temporal de registros *logging* en "
+"memoria. Periódicamente los descarga al gestor :dfn:`target`. Esto ocurre "
+"cuando el búfer está lleno o cuando ocurre un evento de cierta importancia."
 
-#: ../../library/logging.handlers.rst:899
+#: ../Doc/library/logging.handlers.rst:899
 msgid ""
 ":class:`MemoryHandler` is a subclass of the more general :class:"
 "`BufferingHandler`, which is an abstract class. This buffers logging records "
@@ -1644,46 +1716,47 @@ msgid ""
 "calling :meth:`shouldFlush` to see if the buffer should be flushed.  If it "
 "should, then :meth:`flush` is expected to do the flushing."
 msgstr ""
-":class:`MemoryHandler` はより一般的な抽象クラス、 :class:`BufferingHandler` "
-"のサブクラスです。この抽象クラスでは、ログ記録するレコードをメモリ上にバッ"
-"ファリングします。各レコードがバッファに追加される毎に、 :meth:`shouldFlush` "
-"を呼び出してバッファをフラッシュすべきかどうか調べます。フラッシュする必要が"
-"ある場合、 :meth:`flush` がフラッシュ処理を行うものと想定されます。"
+":class:`MemoryHandler` es una subclase de la clase mas general :class:"
+"`BufferingHandler`, que es una clase abstracta. Este almacena temporalmente "
+"registros *logging* en la memoria. Cada vez que un registro es agregado al "
+"búfer, se realiza una comprobación llamando al método :meth:`shouldFlush` "
+"para ver si dicho búfer debe ser descargado. Si debiera, entonces el método :"
+"meth:`flush` se espera que realice la descarga."
 
-#: ../../library/logging.handlers.rst:908
+#: ../Doc/library/logging.handlers.rst:908
 msgid ""
 "Initializes the handler with a buffer of the specified capacity. Here, "
 "*capacity* means the number of logging records buffered."
 msgstr ""
-"容量つきのバッファーを設定してハンドラーが初期化されます。 *capacity* はバッ"
-"ファ可能なログレコード数を意味します。"
+"Inicializa el gestor con un búfer de una capacidad especifica. Aquí "
+"capacidad significa el número de registros *logging* en el almacenamiento "
+"temporal."
 
-#: ../../library/logging.handlers.rst:914
+#: ../Doc/library/logging.handlers.rst:914
 msgid ""
 "Append the record to the buffer. If :meth:`shouldFlush` returns true, call :"
 "meth:`flush` to process the buffer."
 msgstr ""
-"レコードをバッファに追加します。 :meth:`shouldFlush` が true を返す場合、バッ"
-"ファを処理するために :meth:`flush` を呼び出します。"
+"Añade un registro al búfer. Si el método :meth:`shouldFlush` retorna "
+"*true* , entonces llama al método :meth:`flush` para procesar el búfer."
 
-#: ../../library/logging.handlers.rst:920
+#: ../Doc/library/logging.handlers.rst:920
 msgid ""
 "You can override this to implement custom flushing behavior. This version "
 "just zaps the buffer to empty."
 msgstr ""
-"このメソッドをオーバライドして、自作のフラッシュ動作を実装することができま"
-"す。このクラスのバージョンのメソッドでは、単にバッファの内容を削除して空にし"
-"ます。"
+"Puedes sobrescribir (*override*) esto para implementar un comportamiento 'a "
+"medida' de la descarga. Esta versión solo vacía el búfer."
 
-#: ../../library/logging.handlers.rst:926
+#: ../Doc/library/logging.handlers.rst:926
 msgid ""
 "Return ``True`` if the buffer is up to capacity. This method can be "
 "overridden to implement custom flushing strategies."
 msgstr ""
-"バッファが許容量に達している場合に ``True`` を返します。このメソッドは自作の"
-"フラッシュ処理方針を実装するためにオーバライドすることができます。"
+"Retorna ``True`` si el búfer tiene aún capacidad. Este método puede ser "
+"omitido para implementar estrategias a medida de vaciado."
 
-#: ../../library/logging.handlers.rst:932
+#: ../Doc/library/logging.handlers.rst:932
 msgid ""
 "Returns a new instance of the :class:`MemoryHandler` class. The instance is "
 "initialized with a buffer size of *capacity* (number of records buffered). "
@@ -1694,62 +1767,62 @@ msgid ""
 "not specified or specified as ``True``, the previous behaviour of flushing "
 "the buffer will occur when the handler is closed."
 msgstr ""
-":class:`MemoryHandler` クラスの新たなインスタンスを返します。\n"
-"インスタンスはサイズ *capacity* （バッファされるレコード数）のバッファととも"
-"に初期化されます。\n"
-"*flushLevel* が指定されていない場合、 :const:`ERROR` が使われます。\n"
-"*target* が指定されていない場合、ハンドラが何らかの意味のある処理を行う前に :"
-"meth:`setTarget` でターゲットを指定する必要があります。\n"
-"*flushOnClose* が ``False`` に指定されていた場合、ハンドラが閉じられるときに"
-"バッファはフラッシュ *されません* 。\n"
-"*flushOnClose* が指定されていないか ``True`` に指定されていた場合、ハンドラが"
-"閉じられるときのバッファのフラッシュは以前の挙動になります。"
+"Retorna una nueva instancia de la clase :class:`MemoryHandler` . La "
+"instancia se inicializa con un búfer del tamaño *capacity*. Si el "
+"*flushLevel* no se especifica, se usará :const:`ERROR` . Si no se especifica "
+"*target* el objetivo deberá especificarse usando el método :meth:`setTarget` "
+"-Antes de esto el gestor no realizará nada útil. Si se especifica "
+"*flushOnClose* como ``False``, entonces el búfer no se vaciará cuando el "
+"gestor se cierra. Si no se especifica o se especifica como ``True``, el "
+"comportamiento previo de vaciado del búfer sucederá cuando se cierre el "
+"gestor."
 
-#: ../../library/logging.handlers.rst:941
+#: ../Doc/library/logging.handlers.rst:941
 msgid "The *flushOnClose* parameter was added."
-msgstr "*flushOnClose* パラメータが追加されました。"
+msgstr "Se añadió el parámetro *flushOnClose*."
 
-#: ../../library/logging.handlers.rst:947
+#: ../Doc/library/logging.handlers.rst:947
 msgid "Calls :meth:`flush`, sets the target to ``None`` and clears the buffer."
 msgstr ""
-":meth:`flush` を呼び出し、ターゲットを ``None`` に設定してバッファを消去しま"
-"す。"
+"Invoca al método :meth:`flush` y establece el objetivo a 'None' y vacía el "
+"búfer."
 
-#: ../../library/logging.handlers.rst:953
+#: ../Doc/library/logging.handlers.rst:953
 msgid ""
 "For a :class:`MemoryHandler`, flushing means just sending the buffered "
 "records to the target, if there is one. The buffer is also cleared when this "
 "happens. Override if you want different behavior."
 msgstr ""
-":class:`MemoryHandler` の場合、フラッシュ処理は単に、バッファされたレコードを"
-"ターゲットがあれば送信することを意味します。これと異なる動作を行いたい場合、"
-"オーバライドしてください。"
+"Para la clase :class:`MemoryHandler` el vaciado significa simplemente enviar "
+"los registros del búfer al objetivo, si es que hay uno. El búfer además se "
+"vacía cuando esto ocurre. Sobrescribe (*override*) si deseas un "
+"comportamiento diferente."
 
-#: ../../library/logging.handlers.rst:960
+#: ../Doc/library/logging.handlers.rst:960
 msgid "Sets the target handler for this handler."
-msgstr "ターゲットハンドラをこのハンドラに設定します。"
+msgstr "Establece el gestor de objetivo para este gestor."
 
-#: ../../library/logging.handlers.rst:965
+#: ../Doc/library/logging.handlers.rst:965
 msgid "Checks for buffer full or a record at the *flushLevel* or higher."
 msgstr ""
-"バッファが一杯になっているか、 *flushLevel* またはそれ以上のレコードでないか"
-"を調べます。"
+"Comprueba si el búfer esta lleno o un registro igual o mas alto que "
+"*flushLevel*."
 
-#: ../../library/logging.handlers.rst:971
+#: ../Doc/library/logging.handlers.rst:971
 msgid "HTTPHandler"
 msgstr "HTTPHandler"
 
-#: ../../library/logging.handlers.rst:973
+#: ../Doc/library/logging.handlers.rst:973
 msgid ""
 "The :class:`HTTPHandler` class, located in the :mod:`logging.handlers` "
 "module, supports sending logging messages to a web server, using either "
 "``GET`` or ``POST`` semantics."
 msgstr ""
-":mod:`logging.handlers` モジュールに含まれる :class:`HTTPHandler` クラスは、"
-"ログ記録メッセージを ``GET`` または ``POST`` セマンティクスを使って Web サー"
-"バに送信する機能をサポートしています。"
+"La clase :class:`HTTPHandler`, ubicada en el módulo :mod:`logging.handlers`, "
+"admite el envío de mensajes de registro a un servidor web, utilizando la "
+"semántica ``GET`` o ``POST``."
 
-#: ../../library/logging.handlers.rst:980
+#: ../Doc/library/logging.handlers.rst:980
 msgid ""
 "Returns a new instance of the :class:`HTTPHandler` class. The *host* can be "
 "of the form ``host:port``, should you need to use a specific port number.  "
@@ -1762,21 +1835,23 @@ msgid ""
 "also specify secure=True so that your userid and password are not passed in "
 "cleartext across the wire."
 msgstr ""
-":class:`HTTPHandler` クラスの新たなインスタンスを返します。特別なポートを使う"
-"必要がある場合、*host* は ``host:port`` の形式で使うことができます。 "
-"*method* が指定されない場合、 ``GET`` が使われます。 *secure* が真の場合、"
-"HTTPS 接続が使われます。 HTTPS 接続で使用する SSL 設定のために *context* 引数"
-"を :class:`ssl.SSLContext` のインスタンスに設定することができます。 "
-"*credentials* を指定する場合、BASIC 認証の際の HTTP 'Authorization' ヘッダに"
-"使われるユーザIDとパスワードからなる 2要素タプルを渡してください。 "
-"credentials を指定する場合、ユーザIDとパスワードが通信中に平文として剥き出し"
-"にならないよう、secure=True も指定すべきです。"
+"Retorna una nueva instancia de la clase :class:`HTTPHandler`. el *host* "
+"puede ser de la forma \"host:puerto\", y necesitarás usar un numero de "
+"puerto especifico. Si no se especifica *method* se usará ``GET`` . Si "
+"*secure* es true se usará una conexión HTTPS. El parámetro *context* puede "
+"establecerse a una instancia :class:`ssl.SSLContext` para establecer la "
+"configuración de SSL usado en la conexión HTTPS. Si se especifica "
+"*credentials* debe ser una tupla doble, consistente en usuario y contraseña, "
+"que se colocará en un encabezado de autorización HTTP usando autenticación "
+"básica. Si especificas credenciales también deberás especificar "
+"*secure=True* así tu usuario y contraseña no son pasados como texto en "
+"blanco por la conexión."
 
-#: ../../library/logging.handlers.rst:991
+#: ../Doc/library/logging.handlers.rst:991
 msgid "The *context* parameter was added."
-msgstr "*context* パラメータが追加されました。"
+msgstr "Se agregó el parámetro *context*."
 
-#: ../../library/logging.handlers.rst:996
+#: ../Doc/library/logging.handlers.rst:996
 msgid ""
 "Provides a dictionary, based on ``record``, which is to be URL-encoded and "
 "sent to the web server. The default implementation just returns ``record."
@@ -1784,22 +1859,23 @@ msgid ""
 "`~logging.LogRecord` is to be sent to the web server, or if more specific "
 "customization of what's sent to the server is required."
 msgstr ""
-"URL エンコードされて Web サーバに送信することになる、 ``record`` に基づく辞書"
-"を供給します。デフォルトの実装では単に ``record.__dict__`` を返します。例え"
-"ば :class:`~logging.LogRecord` のサブセットのみを Web サーバに送信する場合"
-"や、 サーバーに送信する内容を特別にカスタマイズする必要がある場合には、このメ"
-"ソッドをオーバライドできます。"
+"Provee un diccionario, basado en ``record`` para ser codificado en forma URL "
+"y enviado al servidor web. La implementación por defecto retorna ``record."
+"__dict__``. Este método puede omitirse si por ejemplo solo se enviará al "
+"servidor web un subconjunto de la clase :class:`~logging.LogRecord` o si se "
+"requiere enviar al servidor algo mas específico."
 
-#: ../../library/logging.handlers.rst:1004
+#: ../Doc/library/logging.handlers.rst:1004
 msgid ""
 "Sends the record to the web server as a URL-encoded dictionary. The :meth:"
 "`mapLogRecord` method is used to convert the record to the dictionary to be "
 "sent."
 msgstr ""
-"レコードを URL エンコードされた辞書形式で Web サーバに送信します。レコードを"
-"送信のために辞書に変換するために :meth:`mapLogRecord` が呼び出されます。"
+"Envía el registro al servidor web como un diccionario codificado en URL. El "
+"método :meth:`mapLogRecord` se utiliza para convertir el registro al "
+"diccionario que se enviará."
 
-#: ../../library/logging.handlers.rst:1008
+#: ../Doc/library/logging.handlers.rst:1008
 msgid ""
 "Since preparing a record for sending it to a web server is not the same as a "
 "generic formatting operation, using :meth:`~logging.Handler.setFormatter` to "
@@ -1808,29 +1884,29 @@ msgid ""
 "calls :meth:`mapLogRecord` and then :func:`urllib.parse.urlencode` to encode "
 "the dictionary in a form suitable for sending to a web server."
 msgstr ""
-"Web server に送信するためのレコードを準備することは一般的な書式化操作とは同じ"
-"ではありませんので、 :meth:`~logging.Handler.setFormatter` を使って :class:"
-"`~logging.Formatter` を指定することは、 :class:`HTTPHandler` には効果はありま"
-"せん。 :meth:`~logging.Handler.format` を呼び出す代わりに、このハンドラは :"
-"meth:`mapLogRecord` を呼び出し、その後その返却辞書を Web server に送信するの"
-"に適した様式にエンコードするために :func:`urllib.parse.urlencode`  を呼び出し"
-"ます。"
+"Dado que preparar un registro para enviarlo a un servidor web no es lo mismo "
+"que una operación de formateo genérico, el uso de :meth:`~logging.Handler."
+"setFormatter` para especificar un :class:`~logging.Formatter` para un :class:"
+"`HTTPHandler` no tiene ningún efecto. En lugar de llamar a :meth:`~logging."
+"Handler.format`, este controlador llama a :meth:`mapLogRecord` y luego a :"
+"func:`urllib.parse.urlencode` para codificar el diccionario en una forma "
+"adecuada para enviar a un servidor web."
 
-#: ../../library/logging.handlers.rst:1021
+#: ../Doc/library/logging.handlers.rst:1021
 msgid "QueueHandler"
 msgstr "QueueHandler"
 
-#: ../../library/logging.handlers.rst:1025
+#: ../Doc/library/logging.handlers.rst:1025
 msgid ""
 "The :class:`QueueHandler` class, located in the :mod:`logging.handlers` "
 "module, supports sending logging messages to a queue, such as those "
 "implemented in the :mod:`queue` or :mod:`multiprocessing` modules."
 msgstr ""
-":mod:`logging.handlers` モジュールに含まれる :class:`QueueHandler` クラス"
-"は、 :mod:`queue` モジュールや :mod:`multiprocessing` のモジュールで実装され"
-"るようなキューにログメッセージを送信する機能をサポートしています。"
+"La clase :class:`QueueHandler` localizada en el módulo :mod:`logging."
+"handlers` soporta el envío de mensajes de *logging* a una cola, tal como los "
+"implementados en los módulos :mod:`queue` o :mod:`multiprocessing` ."
 
-#: ../../library/logging.handlers.rst:1029
+#: ../Doc/library/logging.handlers.rst:1029
 msgid ""
 "Along with the :class:`QueueListener` class, :class:`QueueHandler` can be "
 "used to let handlers do their work on a separate thread from the one which "
@@ -1839,14 +1915,15 @@ msgid ""
 "quickly as possible, while any potentially slow operations (such as sending "
 "an email via :class:`SMTPHandler`) are done on a separate thread."
 msgstr ""
-":class:`QueueListener` クラスとともに :class:`QueueHandler` を使うと、ロギン"
-"グを行うスレッドから分離されたスレッド上でハンドラを動かすことができます。こ"
-"れは、クライアントに対してサービスするスレッドができるだけ速く応答する必要が"
-"ある一方、別のスレッド上で (:class:`SMTPHandler` によって電子メールを送信する"
-"ような) 潜在的に遅い操作が行われるような、ウェブアプリケーションおよびその他"
-"のサービスアプリケーションにおいて重要です。"
+"Junto con la clase :class:`QueueListener`, :class:`QueueHandler` se puede "
+"usar para permitir que los controladores hagan su trabajo en un hilo "
+"separado del que realiza el registro. Esto es importante en aplicaciones web "
+"y también en otras aplicaciones de servicio donde los subprocesos que "
+"atienden a los clientes deben responder lo más rápido posible, mientras que "
+"cualquier operación potencialmente lenta (como enviar un correo electrónico "
+"a través de :class:`SMTPHandler`) se realiza en un subproceso separado."
 
-#: ../../library/logging.handlers.rst:1038
+#: ../Doc/library/logging.handlers.rst:1038
 msgid ""
 "Returns a new instance of the :class:`QueueHandler` class. The instance is "
 "initialized with the queue to send messages to. The *queue* can be any queue-"
@@ -1855,21 +1932,23 @@ msgid ""
 "task tracking API, which means that you can use :class:`~queue.SimpleQueue` "
 "instances for *queue*."
 msgstr ""
-":class:`QueueHandler` クラスの新しいインスタンスを返します。インスタンスは、"
-"キューにメッセージを送るように初期化されます。キューは任意のキューのようなオ"
-"ブジェクトが可能です; それはそのまま :meth:`enqueue` メソッドによって使用され"
-"ます。そのメソッドはメッセージを送る方法を知っている必要があります。もしタス"
-"クのトラッキングAPIにキューが必要でない場合はキューとして :class:`~queue."
-"SimpleQueue` のインスタンスが使用できます。"
+"Retorna una nueva instancia de la clase :class:`QueueHandler`. La instancia "
+"se inicializa con la cola a la que se enviarán los mensajes. La cola puede "
+"ser cualquier objeto tipo-cola; es usado tal como por el método :meth:"
+"`enqueue` que necesita saber como enviar los mensajes a ella. La cola no es "
+"*requerida* para tener una API de rastreo de tareas, lo que significa que "
+"puedes usar instancias de :class:`~queue.SimpleQueue` como *queue*."
 
-#: ../../library/logging.handlers.rst:1045
-#: ../../library/logging.handlers.rst:1128
+#: ../Doc/library/logging.handlers.rst:1045
+#: ../Doc/library/logging.handlers.rst:1128
 msgid ""
 "If you are using :mod:`multiprocessing`, you should avoid using :class:"
 "`~queue.SimpleQueue` and instead use :class:`multiprocessing.Queue`."
 msgstr ""
+"Si estás usando :mod:`multiprocessing`, debes evitar usar :class:`~queue."
+"SimpleQueue` y en su lugar usar :class:`multiprocessing.Queue`."
 
-#: ../../library/logging.handlers.rst:1050
+#: ../Doc/library/logging.handlers.rst:1050
 msgid ""
 "Enqueues the result of preparing the LogRecord. Should an exception occur (e."
 "g. because a bounded queue has filled up), the :meth:`~logging.Handler."
@@ -1878,22 +1957,22 @@ msgid ""
 "``False``) or a message printed to ``sys.stderr`` (if :attr:`logging."
 "raiseExceptions` is ``True``)."
 msgstr ""
-"LogRecordの準備結果をキューに入れます。容量制限のあるキューがいっぱいになった"
-"など、例外が発生した場合は、エラーを処理するために :meth:`~logging.Handler."
-"handleError` メソッドが呼ばれます。これにより、レコードが応答なく消滅したり"
-"（もし :attr:`logging.raiseExceptions` が ``False`` の場合）、 ``sys."
-"stderr`` に出力されます（もし :attr:`logging.raiseExceptions` が ``True`` の"
-"場合）。"
+"Pone en la cola el resultado de preparar el registro historial de log. Si "
+"ocurre una excepción (por ejemplo por que una cola de destino se llenó) "
+"entonces se llama al método :meth:`~logging.Handler.handleError`. Esto puede "
+"resultar en que el registro se descarte (si :attr:`logging.raiseExceptions` "
+"es ``False``) o que se imprima un mensaje a ``sys.stderr`` (si :attr:"
+"`logging.raiseExceptions` es ``True``)."
 
-#: ../../library/logging.handlers.rst:1059
+#: ../Doc/library/logging.handlers.rst:1059
 msgid ""
 "Prepares a record for queuing. The object returned by this method is "
 "enqueued."
 msgstr ""
-"キューに追加するためレコードを準備します。このメソッドが返したオブジェクトが"
-"キューに追加されます。"
+"Prepara un registro para poner en la cola. El objeto que retorna este método "
+"se colocará en cola."
 
-#: ../../library/logging.handlers.rst:1062
+#: ../Doc/library/logging.handlers.rst:1062
 msgid ""
 "The base implementation formats the record to merge the message, arguments, "
 "exception and stack information, if present.  It also removes unpickleable "
@@ -1902,18 +1981,25 @@ msgid ""
 "by calling the handler's :meth:`format` method), and sets the :attr:`args`, :"
 "attr:`exc_info` and :attr:`exc_text` attributes to ``None``."
 msgstr ""
+"La implementación base le da formato al registro para fusionar el mensaje, "
+"los argumentos, la excepción y la información de la pila, si está presente. "
+"También elimina elementos que no se pueden serializar (*pickle*) del "
+"registro en el lugar. Específicamente, sobrescribe los atributos :attr:`msg` "
+"y :attr:`message` del registro con el mensaje fusionado (obtenido llamando "
+"al método :meth:`format` del controlador) y establece los atributos :attr:"
+"`args`, :attr:`exc_info` y :attr:`exc_text` a ``None``."
 
-#: ../../library/logging.handlers.rst:1070
+#: ../Doc/library/logging.handlers.rst:1070
 msgid ""
 "You might want to override this method if you want to convert the record to "
 "a dict or JSON string, or send a modified copy of the record while leaving "
 "the original intact."
 msgstr ""
-"レコードを dict や JSON 文字列に変換したい場合や、オリジナルのレコードを変更"
-"せずに修正済のコピーを送りたい場合は、このメソッドをオーバーライドすると良い"
-"でしょう。"
+"Puedes querer hacer caso omiso de este método si quieres convertir el "
+"registro en un diccionario o cadena de caracteres JSON, o enviar una copia "
+"modificada del registro mientras dejas el original intacto."
 
-#: ../../library/logging.handlers.rst:1074
+#: ../Doc/library/logging.handlers.rst:1074
 msgid ""
 "The base implementation formats the message with arguments, sets the "
 "``message`` and ``msg`` attributes to the formatted message and sets the "
@@ -1928,22 +2014,35 @@ msgid ""
 "that you may have to consider not only your own code but also code in any "
 "libraries that you use.)"
 msgstr ""
+"La implementación base formatea el mensaje con argumentos, establece los "
+"atributos ``message`` y ``msg`` en el mensaje formateado y establece los "
+"atributos ``args`` y ``exc_text`` en ``None`` para permitir serializado "
+"(*pickle*) y para evitar nuevos intentos de formateo. Esto significa que un "
+"controlador en el lado :class:`QueueListener` no tendrá la información para "
+"hacer un formato personalizado, por ej. de excepciones. Es posible que "
+"desees crear una subclase de ``QueueHandler`` y anular este método para, por "
+"ej. evitar establecer ``exc_text`` en ``None``. Ten en cuenta que los "
+"cambios de ``message`` / ``msg`` / ``args`` están relacionados con "
+"garantizar que el registro se pueda seleccionar, y es posible que puedas o "
+"no evitar hacerlo dependiendo de si sus ``args`` son serializables. (Ten en "
+"cuenta que es posible que debas considerar no solo tu propio código, sino "
+"también el código en cualquier biblioteca que uses)."
 
-#: ../../library/logging.handlers.rst:1090
+#: ../Doc/library/logging.handlers.rst:1090
 msgid ""
 "Enqueues the record on the queue using ``put_nowait()``; you may want to "
 "override this if you want to use blocking behaviour, or a timeout, or a "
 "customized queue implementation."
 msgstr ""
-"キューにレコードを  ``put_nowait()`` を使ってエンキューします; ブロッキングや"
-"タイムアウト、あるいはなにか特別なキューの実装を使いたければ、これをオーバラ"
-"イドしてみてください。"
+"Coloca en la cola al registro usando ``put_nowait()``; puede que quieras "
+"sobrescribe (*override*) esto si quieres usar una acción de bloqueo, o un "
+"tiempo de espera, o una implementación de cola a medida."
 
-#: ../../library/logging.handlers.rst:1099
+#: ../Doc/library/logging.handlers.rst:1099
 msgid "QueueListener"
 msgstr "QueueListener"
 
-#: ../../library/logging.handlers.rst:1103
+#: ../Doc/library/logging.handlers.rst:1103
 msgid ""
 "The :class:`QueueListener` class, located in the :mod:`logging.handlers` "
 "module, supports receiving logging messages from a queue, such as those "
@@ -1953,14 +2052,15 @@ msgid ""
 "`QueueListener` is not itself a handler, it is documented here because it "
 "works hand-in-hand with :class:`QueueHandler`."
 msgstr ""
-":mod:`logging.handlers` モジュールに含まれる :class:`QueueListener` クラス"
-"は、 :mod:`queue` モジュールや :mod:`multiprocessing` のモジュールで実装され"
-"るようなキューからログメッセージを受信する機能をサポートしています。メッセー"
-"ジは内部スレッドのキューから受信され、同じスレッド上の複数のハンドラに渡され"
-"て処理されます。 :class:`QueueListener` それ自体はハンドラではありません"
-"が、 :class:`QueueHandler` と連携して動作するのでここで文書化されています。"
+"La clase :class:`QueueListener` esta localizada en el módulo :mod:`logging."
+"handlers`. Soporta la recepción de mensajes *logging* de una cola, tal como "
+"los implementados en los módulos :mod:`queue` or :mod:`multiprocessing` . "
+"Los mensajes son recibidos de una cola en un hilo interno y se pasan en el "
+"mismo hilo, a uno o mas gestores para procesarlos. Mientras la clase :class:"
+"`QueueListener` no es en si misma un gestor, esta documentada aquí porque "
+"trabaja mano a mano con la clase :class:`QueueHandler`."
 
-#: ../../library/logging.handlers.rst:1111
+#: ../Doc/library/logging.handlers.rst:1111
 msgid ""
 "Along with the :class:`QueueHandler` class, :class:`QueueListener` can be "
 "used to let handlers do their work on a separate thread from the one which "
@@ -1969,14 +2069,15 @@ msgid ""
 "quickly as possible, while any potentially slow operations (such as sending "
 "an email via :class:`SMTPHandler`) are done on a separate thread."
 msgstr ""
-":class:`QueueHandler` クラスとともに :class:`QueueListener` を使うと、ロギン"
-"グを行うスレッドから分離されたスレッド上でハンドラを動かすことができます。こ"
-"れは、クライアントに対してサービスするスレッドができるだけ速く応答する必要が"
-"ある一方、別のスレッド上で (:class:`SMTPHandler` によって電子メールを送信する"
-"ような) 潜在的に遅い操作が行われるような、ウェブアプリケーションおよびその他"
-"のサービスアプリケーションにおいて重要です。"
+"Junto con la clase :class:`QueueHandler`, :class:`QueueListener` se puede "
+"usar para permitir que los controladores hagan su trabajo en un hilo "
+"separado del que realiza el registro. Esto es importante en aplicaciones web "
+"y también en otras aplicaciones de servicio donde los subprocesos que "
+"atienden a los clientes deben responder lo más rápido posible, mientras que "
+"cualquier operación potencialmente lenta (como enviar un correo electrónico "
+"a través de :class:`SMTPHandler`) se realiza en un subproceso separado."
 
-#: ../../library/logging.handlers.rst:1120
+#: ../Doc/library/logging.handlers.rst:1120
 msgid ""
 "Returns a new instance of the :class:`QueueListener` class. The instance is "
 "initialized with the queue to send messages to and a list of handlers which "
@@ -1986,121 +2087,131 @@ msgid ""
 "tracking API (though it's used if available), which means that you can use :"
 "class:`~queue.SimpleQueue` instances for *queue*."
 msgstr ""
-":class:`QueueListener` クラスの新しいインスタンスを返します。インスタンスは、"
-"メッセージを送るためのキューと、キューに格納されたエントリーを処理するハンド"
-"ラーのリストが設定されて初期化されます。キューは任意のキューのようなオブジェ"
-"クトが可能です; それはそのまま :meth:`dequeue` メソッドによって使用されます。"
-"そのメソッドはメッセージを送る方法を知っている必要があります。もしタスクのト"
-"ラッキングAPIにキューが必要でない場合はキューとして :class:`~queue."
-"SimpleQueue` のインスタンスが使用できます（トラッキングAPIが使用可能な場合は"
-"使用されます）。"
+"Retorna una nueva instancia de la clase :class:`QueueListener`. La instancia "
+"se inicializa con la cola para enviar mensajes a una lista de gestores que "
+"manejarán entradas colocadas en la cola. La cola puede ser cualquier objeto "
+"de tipo-cola, es usado tal como está por el método :meth:`dequeue` que "
+"necesita saber como tomar los mensajes de esta. La cola no es *obligatoria* "
+"para tener la API de seguimiento de tareas (aunque se usa si está "
+"disponible), lo que significa que puede usar instancias :class:`~queue."
+"SimpleQueue` para *queue*."
 
-#: ../../library/logging.handlers.rst:1131
+#: ../Doc/library/logging.handlers.rst:1131
 msgid ""
 "If ``respect_handler_level`` is ``True``, a handler's level is respected "
 "(compared with the level for the message) when deciding whether to pass "
 "messages to that handler; otherwise, the behaviour is as in previous Python "
 "versions - to always pass each message to each handler."
 msgstr ""
-"もし ``respect_handler_level`` が ``True`` なら、メッセージをハンドラーに渡す"
-"か決める時に（メッセージのレベルに比べて）ハンドラーのレベルが尊重されます。"
-"そうでない場合は依然のPythonバージョンと同様にすべてのメッセージは常にハンド"
-"ラーに渡されます。"
+"Si ``respect_handler_level`` es ``True``, se respeta un nivel de gestor "
+"(comparado con el nivel del mensaje) cuando decide si pasar el mensajes al "
+"gestor; de otra manera, el comportamiento es como en versiones anteriores de "
+"Python - de pasar cada mensaje a cada gestor."
 
-#: ../../library/logging.handlers.rst:1136
+#: ../Doc/library/logging.handlers.rst:1136
 msgid "The ``respect_handler_level`` argument was added."
-msgstr " ``respect_handler_level`` 引数が追加されました。"
+msgstr "Se agregó el argumento ``respect_handler_levels``."
 
-#: ../../library/logging.handlers.rst:1141
+#: ../Doc/library/logging.handlers.rst:1141
 msgid "Dequeues a record and return it, optionally blocking."
-msgstr ""
-"キューからレコードを取り除き、それを返します。ブロッキングすることがありま"
-"す。"
+msgstr "Extrae de la cola un registro y lo retorna, con opción a bloquearlo."
 
-#: ../../library/logging.handlers.rst:1143
+#: ../Doc/library/logging.handlers.rst:1143
 msgid ""
 "The base implementation uses ``get()``. You may want to override this method "
 "if you want to use timeouts or work with custom queue implementations."
 msgstr ""
-"ベース実装は ``get()`` を使用します。タイムアウトを有効にしたい場合や、カスタ"
-"ムのキュー実装を使いたい場合は、このメソッドをオーバーライドすると良いでしょ"
-"う。"
+"La implementación base usa ``get()``. Puedes sobrescribir (*override*) este "
+"método si quieres usar tiempos de espera o trabajar con colas implementadas "
+"a medida."
 
-#: ../../library/logging.handlers.rst:1149
+#: ../Doc/library/logging.handlers.rst:1149
 msgid "Prepare a record for handling."
-msgstr "レコードを扱うための準備をします。"
+msgstr "Prepara un registro para ser gestionado."
 
-#: ../../library/logging.handlers.rst:1151
+#: ../Doc/library/logging.handlers.rst:1151
 msgid ""
 "This implementation just returns the passed-in record. You may want to "
 "override this method if you need to do any custom marshalling or "
 "manipulation of the record before passing it to the handlers."
 msgstr ""
-"この実装は渡されたレコードをそのまま返します。その値をハンドラに渡す前に何ら"
-"かのカスタムな整列化 (marshalling) あるいはレコードに対する操作を行う必要があ"
-"れば、このメソッドをオーバーライドすると良いでしょう。"
+"Esta implementación solo retorna el registro que fue pasado. Puedes "
+"sobrescribir (*override*) este método para hacer una serialización a medida "
+"o una manipulación del registro antes de pasarlo a los gestores."
 
-#: ../../library/logging.handlers.rst:1157
+#: ../Doc/library/logging.handlers.rst:1157
 msgid "Handle a record."
-msgstr "レコードを処理します。"
+msgstr "Manejar un registro."
 
-#: ../../library/logging.handlers.rst:1159
+#: ../Doc/library/logging.handlers.rst:1159
 msgid ""
 "This just loops through the handlers offering them the record to handle. The "
 "actual object passed to the handlers is that which is returned from :meth:"
 "`prepare`."
 msgstr ""
-"これは、ハンドラをループしてそれらに処理すべきレコードを渡します。ハンドラに"
-"渡される実際のオブジェクトは、 :meth:`prepare` から返されたものです。"
+"Esto solo realiza un bucle a través de los gestores ofreciéndoles el "
+"registro para ser gestionado. El objeto actual pasado a los gestores es "
+"aquel que es retornado por el método :meth:`prepare`."
 
-#: ../../library/logging.handlers.rst:1165
+#: ../Doc/library/logging.handlers.rst:1165
 msgid "Starts the listener."
-msgstr "リスナーを開始します。"
+msgstr "Da comienzo al oyente (*listener*)."
 
-#: ../../library/logging.handlers.rst:1167
+#: ../Doc/library/logging.handlers.rst:1167
 msgid ""
 "This starts up a background thread to monitor the queue for LogRecords to "
 "process."
 msgstr ""
-"これは、 LogRecord を処理するキューを監視するために、バックグラウンドスレッド"
-"を開始します。"
+"Esto da comienzo a un hilo en segundo plano para supervisar la cola de "
+"registros log a procesar."
 
-#: ../../library/logging.handlers.rst:1172
+#: ../Doc/library/logging.handlers.rst:1172
 msgid "Stops the listener."
-msgstr "リスナーを停止します。"
+msgstr "Detiene el oyente (*listener*)."
 
-#: ../../library/logging.handlers.rst:1174
+#: ../Doc/library/logging.handlers.rst:1174
 msgid ""
 "This asks the thread to terminate, and then waits for it to do so. Note that "
 "if you don't call this before your application exits, there may be some "
 "records still left on the queue, which won't be processed."
 msgstr ""
-"スレッドに終了するように依頼し、終了するまで待ちます。アプリケーションの終了"
-"前にこのメソッドを呼ばないと、いくつかのレコードがキューに残り、処理されなく"
-"なるかもしれないことに注意してください。"
+"Esto solicita terminar al hilo, y luego espera hasta que termine. Nota que "
+"si no llamas a esto antes de que tu aplicación salga, puede haber algunos "
+"registros que aun están en la cola, que no serán procesados."
 
-#: ../../library/logging.handlers.rst:1180
+#: ../Doc/library/logging.handlers.rst:1180
 msgid ""
 "Writes a sentinel to the queue to tell the listener to quit. This "
 "implementation uses ``put_nowait()``.  You may want to override this method "
 "if you want to use timeouts or work with custom queue implementations."
 msgstr ""
-"リスナーに停止するように指示するためキューに番兵を書き込みます。この実装は "
-"``put_nowait()`` を使用します。タイムアウトを有効にしたい場合や、カスタムの"
-"キュー実装を使いたい場合は、このメソッドをオーバーライドすると良いでしょう。"
+"Escribe un centinela (*sentinel*) en la cola para decir al oyente "
+"(*listener*) de salir. Esta implementación usa ``put_nowait()``. Puedes "
+"sobrescribir (*override*) este método si quieres usar tiempos de espera o "
+"trabajar con implementaciones de cola a tu medida."
 
-#: ../../library/logging.handlers.rst:1191
+#: ../Doc/library/logging.handlers.rst:1191
 msgid "Module :mod:`logging`"
-msgstr ":mod:`logging` モジュール"
+msgstr "Módulo :mod:`logging`"
 
-#: ../../library/logging.handlers.rst:1191
+#: ../Doc/library/logging.handlers.rst:1191
 msgid "API reference for the logging module."
-msgstr "logging モジュールの API リファレンス。"
+msgstr "Referencia API para el módulo de *logging*."
 
-#: ../../library/logging.handlers.rst:1193
+#: ../Doc/library/logging.handlers.rst:1193
 msgid "Module :mod:`logging.config`"
-msgstr ":mod:`logging.config` モジュール"
+msgstr "Módulo :mod:`logging.config`"
 
-#: ../../library/logging.handlers.rst:1194
+#: ../Doc/library/logging.handlers.rst:1194
 msgid "Configuration API for the logging module."
-msgstr "logging モジュールの環境設定 API です。"
+msgstr "Configuración API para el módulo de *logging*."
+
+#~ msgid ""
+#~ "The base implementation formats the record to merge the message, "
+#~ "arguments, and exception information, if present.  It also removes "
+#~ "unpickleable items from the record in-place."
+#~ msgstr ""
+#~ "La implementación base da formato al registro para unir la información de "
+#~ "los mensajes, argumentos y excepciones, si están presentes. También "
+#~ "remueve los elementos que no se pueden serializar (*unpickleables*) de "
+#~ "los registros in-situ."

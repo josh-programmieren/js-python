@@ -1,282 +1,296 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:14+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-08-04 22:00+0200\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/tarfile.rst:2
+#: ../Doc/library/tarfile.rst:2
 msgid ":mod:`tarfile` --- Read and write tar archive files"
-msgstr ":mod:`tarfile` --- tar アーカイブファイルの読み書き"
+msgstr ":mod:`tarfile` --- Leer y escribir archivos tar"
 
-#: ../../library/tarfile.rst:10
+#: ../Doc/library/tarfile.rst:10
 msgid "**Source code:** :source:`Lib/tarfile.py`"
-msgstr "**ソースコード:** :source:`Lib/tarfile.py`"
+msgstr "**Código fuente:** :source:`Lib/tarfile.py`"
 
-#: ../../library/tarfile.rst:14
+#: ../Doc/library/tarfile.rst:14
 msgid ""
 "The :mod:`tarfile` module makes it possible to read and write tar archives, "
 "including those using gzip, bz2 and lzma compression. Use the :mod:`zipfile` "
 "module to read or write :file:`.zip` files, or the higher-level functions "
 "in :ref:`shutil <archiving-operations>`."
 msgstr ""
-":mod:`tarfile` モジュールは、gzip、bz2、および lzma 圧縮されたものを含む、"
-"tar アーカイブを読み書きできます。:file:`.zip` ファイルの読み書きには :mod:"
-"`zipfile` モジュールか、あるいは :ref:`shutil <archiving-operations>` の高水"
-"準関数を使用してください。"
+"El módulo :mod:`tarfile` hace posible escribir y leer archivos tar, "
+"incluyendo aquellos que hacen uso de compresión gzip, bz2 y lzma. Utiliza el "
+"módulo :mod:`zipfile` para leer o escribir archivos :file:`.zip`, o las "
+"funciones de nivel superior en :ref:`shutil <archiving-operations>`."
 
-#: ../../library/tarfile.rst:19
+#: ../Doc/library/tarfile.rst:19
 msgid "Some facts and figures:"
-msgstr "いくつかの事実と形態:"
+msgstr "Algunos hechos y cifras:"
 
-#: ../../library/tarfile.rst:21
+#: ../Doc/library/tarfile.rst:21
 msgid ""
 "reads and writes :mod:`gzip`, :mod:`bz2` and :mod:`lzma` compressed archives "
 "if the respective modules are available."
 msgstr ""
-"モジュールが利用可能な場合、:mod:`gzip`、:mod:`bz2` ならびに :mod:`lzma` で圧"
-"縮されたアーカイブを読み書きします。"
+"lee y escribe archivos comprimidos :mod:`gzip`, :mod:`bz2` y :mod:`lzma` si "
+"los respectivos módulos están disponibles."
 
-#: ../../library/tarfile.rst:24
+#: ../Doc/library/tarfile.rst:24
 msgid "read/write support for the POSIX.1-1988 (ustar) format."
-msgstr "POSIX.1-1988 (ustar) フォーマットの読み書きをサポートしています。"
+msgstr "soporte de lectura/escritura para el formato POSIX.1-1988 (ustar)."
 
-#: ../../library/tarfile.rst:26
+#: ../Doc/library/tarfile.rst:26
 msgid ""
 "read/write support for the GNU tar format including *longname* and "
 "*longlink* extensions, read-only support for all variants of the *sparse* "
 "extension including restoration of sparse files."
 msgstr ""
-"*longname* および *longlink* 拡張を含む GNU tar フォーマットの読み書きをサ"
-"ポートしています。スパースファイルの復元を含む *sparse* 拡張は読み込みのみサ"
-"ポートしています。"
+"soporte de lectura/escritura para el formato GNU tar incluyendo extensiones "
+"*longname* y *longlink*, soporte de solo escritura para todas las variantes "
+"de extensiones de *sparse* (archivo disperso) incluyendo restablecimiento de "
+"archivos dispersos."
 
-#: ../../library/tarfile.rst:30
+#: ../Doc/library/tarfile.rst:30
 msgid "read/write support for the POSIX.1-2001 (pax) format."
-msgstr "POSIX.1-2001 (pax) フォーマットの読み書きをサポートしています。"
+msgstr "soporte de lectura/escritura para el formato POSIX.1-2001 (pax)."
 
-#: ../../library/tarfile.rst:32
+#: ../Doc/library/tarfile.rst:32
 msgid ""
 "handles directories, regular files, hardlinks, symbolic links, fifos, "
 "character devices and block devices and is able to acquire and restore file "
 "information like timestamp, access permissions and owner."
 msgstr ""
-"ディレクトリ、一般ファイル、ハードリンク、シンボリックリンク、fifo、キャラク"
-"ターデバイスおよびブロックデバイスを処理します。また、タイムスタンプ、アクセ"
-"ス許可や所有者のようなファイル情報の取得および保存が可能です。"
+"gestiona directorios, archivos regulares, enlaces duros, enlaces simbólicos, "
+"fifos, dispositivos de carácter, dispositivos de bloque y puede adquirir y "
+"restaurar información de archivo como marca de tiempo, permisos de acceso y "
+"dueño."
 
-#: ../../library/tarfile.rst:36
+#: ../Doc/library/tarfile.rst:36
 msgid "Added support for :mod:`lzma` compression."
-msgstr ":mod:`lzma` 圧縮をサポートしました。"
+msgstr "Añadido soporte para compresión :mod:`lzma`."
 
-#: ../../library/tarfile.rst:42
+#: ../Doc/library/tarfile.rst:42
 msgid ""
 "Return a :class:`TarFile` object for the pathname *name*. For detailed "
 "information on :class:`TarFile` objects and the keyword arguments that are "
 "allowed, see :ref:`tarfile-objects`."
 msgstr ""
-"パス名 *name* の :class:`TarFile` オブジェクトを返します。:class:`TarFile` オ"
-"ブジェクトと、利用できるキーワード引数に関する詳細な情報については、:ref:"
-"`tarfile-objects` 節を参照してください。"
+"Retorna un objeto :class:`TarFile` para el nombre de ruta *name*. Para "
+"información detallada en los objetos de la clase :class:`TarFile` y los "
+"argumentos por palabra clave que están permitidos, dirígete a :ref:`tarfile-"
+"objects`."
 
-#: ../../library/tarfile.rst:46
+#: ../Doc/library/tarfile.rst:46
 msgid ""
 "*mode* has to be a string of the form ``'filemode[:compression]'``, it "
 "defaults to ``'r'``. Here is a full list of mode combinations:"
 msgstr ""
-"*mode* は ``'filemode[:compression]'`` の形式をとる文字列でなければなりませ"
-"ん。デフォルトの値は ``'r'`` です。以下に *mode* のとりうる組み合わせすべてを"
-"示します:"
+"*mode* tiene que ser una cadena de texto en el formato ``'filemode[:"
+"compression]'``, adquiere el valor de ``'r'`` de forma predeterminada. Aquí "
+"hay una lista completa de combinaciones de modo:"
 
-#: ../../library/tarfile.rst:50
+#: ../Doc/library/tarfile.rst:50
 msgid "mode"
-msgstr "mode"
+msgstr "modo"
 
-#: ../../library/tarfile.rst:50
+#: ../Doc/library/tarfile.rst:50
 msgid "action"
-msgstr "action"
+msgstr "acción"
 
-#: ../../library/tarfile.rst:52
+#: ../Doc/library/tarfile.rst:52
 msgid "``'r' or 'r:*'``"
-msgstr "``'r' または 'r:*'``"
+msgstr "``'r' o 'r:*'``"
 
-#: ../../library/tarfile.rst:52
+#: ../Doc/library/tarfile.rst:52
 msgid "Open for reading with transparent compression (recommended)."
-msgstr "圧縮方法に関して透過的に、読み込み用にオープンします (推奨)。"
+msgstr "Abrir para leer con compresión transparente (recomendado)."
 
-#: ../../library/tarfile.rst:55
+#: ../Doc/library/tarfile.rst:55
 msgid "``'r:'``"
 msgstr "``'r:'``"
 
-#: ../../library/tarfile.rst:55
+#: ../Doc/library/tarfile.rst:55
 msgid "Open for reading exclusively without compression."
-msgstr "非圧縮で読み込み用に排他的にオープンします。"
+msgstr "Abrir para leer exclusivamente sin compresión."
 
-#: ../../library/tarfile.rst:58
+#: ../Doc/library/tarfile.rst:58
 msgid "``'r:gz'``"
 msgstr "``'r:gz'``"
 
-#: ../../library/tarfile.rst:58
+#: ../Doc/library/tarfile.rst:58
 msgid "Open for reading with gzip compression."
-msgstr "gzip 圧縮で読み込み用にオープンします。"
+msgstr "Abrir para leer con compresión gzip."
 
-#: ../../library/tarfile.rst:60
+#: ../Doc/library/tarfile.rst:60
 msgid "``'r:bz2'``"
 msgstr "``'r:bz2'``"
 
-#: ../../library/tarfile.rst:60
+#: ../Doc/library/tarfile.rst:60
 msgid "Open for reading with bzip2 compression."
-msgstr "bzip2 圧縮で読み込み用にオープンします。"
+msgstr "Abrir para leer con compresión bzip2."
 
-#: ../../library/tarfile.rst:62
+#: ../Doc/library/tarfile.rst:62
 msgid "``'r:xz'``"
 msgstr "``'r:xz'``"
 
-#: ../../library/tarfile.rst:62
+#: ../Doc/library/tarfile.rst:62
 msgid "Open for reading with lzma compression."
-msgstr "lzma 圧縮で読み込み用にオープンします。"
+msgstr "Abrir para leer con compresión lzma."
 
-#: ../../library/tarfile.rst:64
+#: ../Doc/library/tarfile.rst:64
 msgid "``'x'`` or ``'x:'``"
-msgstr "``'x'`` or ``'x:'``"
+msgstr "``'x'`` o ``'x:'``"
 
-#: ../../library/tarfile.rst:64
+#: ../Doc/library/tarfile.rst:64
+#, fuzzy
 msgid ""
 "Create a tarfile exclusively without compression. Raise a :exc:"
 "`FileExistsError` exception if it already exists."
 msgstr ""
+"Crear un archivo *tarfile* exclusivamente sin compresión. Lanza una "
+"excepción :exc:`FileExistsError` si el archivo ya existe."
 
-#: ../../library/tarfile.rst:69
+#: ../Doc/library/tarfile.rst:69
 msgid "``'x:gz'``"
 msgstr "``'x:gz'``"
 
-#: ../../library/tarfile.rst:69
+#: ../Doc/library/tarfile.rst:69
+#, fuzzy
 msgid ""
 "Create a tarfile with gzip compression. Raise a :exc:`FileExistsError` "
 "exception if it already exists."
 msgstr ""
+"Crear un archivo tar con compresión gzip. Lanza una excepción :exc:"
+"`FileExistsError` si ya existe."
 
-#: ../../library/tarfile.rst:73
+#: ../Doc/library/tarfile.rst:73
 msgid "``'x:bz2'``"
 msgstr "``'x:bz2'``"
 
-#: ../../library/tarfile.rst:73
+#: ../Doc/library/tarfile.rst:73
+#, fuzzy
 msgid ""
 "Create a tarfile with bzip2 compression. Raise a :exc:`FileExistsError` "
 "exception if it already exists."
 msgstr ""
+"Crear un archivo tar con compresión bzip2. Lanza una excepción :exc:"
+"`FileExistsError` si ya existe."
 
-#: ../../library/tarfile.rst:77
+#: ../Doc/library/tarfile.rst:77
 msgid "``'x:xz'``"
 msgstr "``'x:xz'``"
 
-#: ../../library/tarfile.rst:77
+#: ../Doc/library/tarfile.rst:77
+#, fuzzy
 msgid ""
 "Create a tarfile with lzma compression. Raise a :exc:`FileExistsError` "
 "exception if it already exists."
 msgstr ""
+"Crear un archivo tar con compresión lzma. Lanza una excepción :exc:"
+"`FileExistsError` si ya existe."
 
-#: ../../library/tarfile.rst:81
+#: ../Doc/library/tarfile.rst:81
 msgid "``'a' or 'a:'``"
-msgstr "``'a' または 'a:'``"
+msgstr "``'a' or 'a:'``"
 
-#: ../../library/tarfile.rst:81
+#: ../Doc/library/tarfile.rst:81
 msgid ""
 "Open for appending with no compression. The file is created if it does not "
 "exist."
-msgstr ""
-"非圧縮で追記用にオープンします。ファイルが存在しない場合は新たに作成されま"
-"す。"
+msgstr "Abrir para anexar sin compresión. El archivo se crea si no existe."
 
-#: ../../library/tarfile.rst:84
+#: ../Doc/library/tarfile.rst:84
 msgid "``'w' or 'w:'``"
-msgstr "``'w' または 'w:'``"
+msgstr "``'w' o 'w:'``"
 
-#: ../../library/tarfile.rst:84
+#: ../Doc/library/tarfile.rst:84
 msgid "Open for uncompressed writing."
-msgstr "非圧縮で書き込み用にオープンします。"
+msgstr "Abrir para escritura con compresión lzma."
 
-#: ../../library/tarfile.rst:86
+#: ../Doc/library/tarfile.rst:86
 msgid "``'w:gz'``"
 msgstr "``'w:gz'``"
 
-#: ../../library/tarfile.rst:86
+#: ../Doc/library/tarfile.rst:86
 msgid "Open for gzip compressed writing."
-msgstr "gzip 圧縮で書き込み用にオープンします。"
+msgstr "Abrir para escritura con compresión gzip."
 
-#: ../../library/tarfile.rst:88
+#: ../Doc/library/tarfile.rst:88
 msgid "``'w:bz2'``"
 msgstr "``'w:bz2'``"
 
-#: ../../library/tarfile.rst:88
+#: ../Doc/library/tarfile.rst:88
 msgid "Open for bzip2 compressed writing."
-msgstr "bzip2 圧縮で書き込み用にオープンします。"
+msgstr "Abrir para escritura con compresión bzip2."
 
-#: ../../library/tarfile.rst:90
+#: ../Doc/library/tarfile.rst:90
 msgid "``'w:xz'``"
 msgstr "``'w:xz'``"
 
-#: ../../library/tarfile.rst:90
+#: ../Doc/library/tarfile.rst:90
 msgid "Open for lzma compressed writing."
-msgstr "lzma 圧縮で書き込み用にオープンします。"
+msgstr "Abrir para escritura con compresión lzma."
 
-#: ../../library/tarfile.rst:93
+#: ../Doc/library/tarfile.rst:93
 msgid ""
 "Note that ``'a:gz'``, ``'a:bz2'`` or ``'a:xz'`` is not possible. If *mode* "
 "is not suitable to open a certain (compressed) file for reading, :exc:"
 "`ReadError` is raised. Use *mode* ``'r'`` to avoid this.  If a compression "
 "method is not supported, :exc:`CompressionError` is raised."
 msgstr ""
-"``'a:gz'``、``'a:bz2'``、``'a:xz'`` は利用できないことに注意して下さい。もし "
-"*mode* が、ある (圧縮した) ファイルを読み込み用にオープンするのに適していない"
-"なら、:exc:`ReadError` が送出されます。これを防ぐには *mode* ``'r'`` を使って"
-"下さい。もし圧縮方式がサポートされていなければ、:exc:`CompressionError` が送"
-"出されます。"
+"Ten en cuenta que ``'a:gz'``, ``'a:bz2'`` or ``'a:xz'`` no son posibles. Si "
+"*mode* no es apropiado para abrir ciertos archivos (comprimidos) para "
+"lectura, se lanza una excepción de tipo :exc:`ReadError`. Usa el *modo* "
+"``'r'`` para evitar esto. Si el método de compresión no es admitido, se "
+"lanza una excepción :exc:`CompressionError`."
 
-#: ../../library/tarfile.rst:98
+#: ../Doc/library/tarfile.rst:98
 msgid ""
 "If *fileobj* is specified, it is used as an alternative to a :term:`file "
 "object` opened in binary mode for *name*. It is supposed to be at position 0."
 msgstr ""
-"もし *fileobj* が指定されていれば、それは *name* でバイナリモードでオープンさ"
-"れた :term:`ファイルオブジェクト <file object>` の代替として使うことができま"
-"す。そのファイルオブジェクトの位置が 0 であることを前提に動作します。"
+"Si *fileobj* es especificado, se utiliza como alternativa a :term:`file "
+"object` abierto en modo binario para *name*. Debe estar en la posición 0."
 
-#: ../../library/tarfile.rst:101
+#: ../Doc/library/tarfile.rst:101
 msgid ""
 "For modes ``'w:gz'``, ``'r:gz'``, ``'w:bz2'``, ``'r:bz2'``, ``'x:gz'``, ``'x:"
 "bz2'``, :func:`tarfile.open` accepts the keyword argument *compresslevel* "
 "(default ``9``) to specify the compression level of the file."
 msgstr ""
-"``'w:gz'``、``'r:gz'``、``'w:bz2'``、``'r:bz2'``, ``'x:gz'``, ``'x:bz2'`` "
-"モードの場合、:func:`tarfile.open` はファイルの圧縮レベルを指定するキーワード"
-"引数 *compresslevel* (デフォルトは ``9``) を受け付けます。"
+"Para los modos ``'w:gz'``, ``'r:gz'``, ``'w:bz2'``, ``'r:bz2'``, ``'x:gz'``, "
+"``'x:bz2'``, :func:`tarfile.open` acepta el argumento por palabra clave "
+"*compresslevel* (por defecto ``9``) para especificar el nivel de compresión "
+"del archivo."
 
-#: ../../library/tarfile.rst:105
+#: ../Doc/library/tarfile.rst:105
 msgid ""
 "For modes ``'w:xz'`` and ``'x:xz'``, :func:`tarfile.open` accepts the "
 "keyword argument *preset* to specify the compression level of the file."
 msgstr ""
+"Para los modos ``'w:xz'`` y ``'x:xz'``, :func:`tarfile.open` acepta el "
+"argumento de palabra clave *preset* para especificar el nivel de compresión "
+"del archivo."
 
-#: ../../library/tarfile.rst:108
+#: ../Doc/library/tarfile.rst:108
 msgid ""
 "For special purposes, there is a second format for *mode*: ``'filemode|"
 "[compression]'``.  :func:`tarfile.open` will return a :class:`TarFile` "
@@ -289,264 +303,262 @@ msgid ""
 "does not allow random access, see :ref:`tar-examples`.  The currently "
 "possible modes:"
 msgstr ""
-"特別な目的のために、*mode* には 2 番目の形式: ``'ファイルモード|[圧縮]'`` が"
-"あります。この形式を使うと、:func:`tarfile.open` が返すのは、データをブロック"
-"からなるストリームとして扱う :class:`TarFile` オブジェクトになります。この場"
-"合、ファイルに対してランダムなシークが行えなくなります。*fileobj* を指定する"
-"場合、 :meth:`read` および :meth:`write` メソッドを持つ (*mode* に依存した) "
-"任意のオブジェクトにできます。*bufsize* にはブロックサイズを指定します。デ"
-"フォルトは ``20 * 512`` バイトです。``sys.stdin``、ソケット :term:`file "
-"object`、あるいはテープデバイスと組み合わせる場合にはこの形式を使ってくださ"
-"い。ただし、このような :class:`TarFile` オブジェクトにはランダムアクセスを行"
-"えないという制限があります。:ref:`tar-examples` 節を参照してください。現在可"
-"能なモードは以下のとおりです。"
+"Para propósitos especiales, hay un segundo formato para *modo*: ``'filemode|"
+"[compression]'``.  :func:`tarfile.open` retornará un objeto :class:`TarFile` "
+"que procesa sus datos como un *stream* de bloques. No se realizará una "
+"búsqueda aleatoria en el archivo. Si se proporciona, *fileobj* puede ser un "
+"objeto con los métodos :meth:`read` o :meth:`write` (dependiendo del "
+"*modo*). *bufsize* especifica el *blocksize* y por default tiene un valor de "
+"``20 * 512`` bytes. Utiliza esta variante en combinación con por ejemplo "
+"``sys.stdin``, un socket  :term:`file object` o un *tape device*. Sin "
+"embargo, dicho objeto :class:`TarFile` está limitado en el aspecto de que no "
+"permite acceso aleatorio. Consulta :ref:`tar-examples`. Los modos posibles:"
 
-#: ../../library/tarfile.rst:120
+#: ../Doc/library/tarfile.rst:120
 msgid "Mode"
-msgstr "モード"
+msgstr "Modo"
 
-#: ../../library/tarfile.rst:120
+#: ../Doc/library/tarfile.rst:120
 msgid "Action"
-msgstr "動作"
+msgstr "Acción"
 
-#: ../../library/tarfile.rst:122
+#: ../Doc/library/tarfile.rst:122
 msgid "``'r|*'``"
 msgstr "``'r|*'``"
 
-#: ../../library/tarfile.rst:122
+#: ../Doc/library/tarfile.rst:122
 msgid "Open a *stream* of tar blocks for reading with transparent compression."
-msgstr ""
-"tar ブロックの *stream* を圧縮方法に関して透過的に読み込み用にオープンしま"
-"す。"
+msgstr "Abre un *stream* de bloques tar para leer con compresión transparente."
 
-#: ../../library/tarfile.rst:125
+#: ../Doc/library/tarfile.rst:125
 msgid "``'r|'``"
 msgstr "``'r|'``"
 
-#: ../../library/tarfile.rst:125
+#: ../Doc/library/tarfile.rst:125
 msgid "Open a *stream* of uncompressed tar blocks for reading."
-msgstr "非圧縮 tar ブロックの *stream* を読み込み用にオープンします。"
+msgstr "Abre un *stream* de bloques tar sin comprimir para lectura."
 
-#: ../../library/tarfile.rst:128
+#: ../Doc/library/tarfile.rst:128
 msgid "``'r|gz'``"
 msgstr "``'r|gz'``"
 
-#: ../../library/tarfile.rst:128
+#: ../Doc/library/tarfile.rst:128
 msgid "Open a gzip compressed *stream* for reading."
-msgstr "gzip 圧縮の *stream* を読み込み用にオープンします。"
+msgstr "Abre un *stream* comprimido con gzip para lectura."
 
-#: ../../library/tarfile.rst:131
+#: ../Doc/library/tarfile.rst:131
 msgid "``'r|bz2'``"
 msgstr "``'r|bz2'``"
 
-#: ../../library/tarfile.rst:131
+#: ../Doc/library/tarfile.rst:131
 msgid "Open a bzip2 compressed *stream* for reading."
-msgstr "bzip2 圧縮の *stream* を読み込み用にオープンします。"
+msgstr "Abre un *stream* bzip2 comprimido para lectura."
 
-#: ../../library/tarfile.rst:134
+#: ../Doc/library/tarfile.rst:134
 msgid "``'r|xz'``"
 msgstr "``'r|xz'``"
 
-#: ../../library/tarfile.rst:134
+#: ../Doc/library/tarfile.rst:134
 msgid "Open an lzma compressed *stream* for reading."
-msgstr "lzma 圧縮の *stream* を読み込み用にオープンします。"
+msgstr "Abre un *stream* lzma comprimido para lectura."
 
-#: ../../library/tarfile.rst:137
+#: ../Doc/library/tarfile.rst:137
 msgid "``'w|'``"
 msgstr "``'w|'``"
 
-#: ../../library/tarfile.rst:137
+#: ../Doc/library/tarfile.rst:137
 msgid "Open an uncompressed *stream* for writing."
-msgstr "非圧縮の *stream* を書き込み用にオープンします。"
+msgstr "Abre un *stream* sin comprimir para escritura."
 
-#: ../../library/tarfile.rst:139
+#: ../Doc/library/tarfile.rst:139
 msgid "``'w|gz'``"
 msgstr "``'w|gz'``"
 
-#: ../../library/tarfile.rst:139
+#: ../Doc/library/tarfile.rst:139
 msgid "Open a gzip compressed *stream* for writing."
-msgstr "gzip 圧縮の *stream* を書き込み用にオープンします。"
+msgstr "Abre un *stream* gzip comprimido para escritura."
 
-#: ../../library/tarfile.rst:142
+#: ../Doc/library/tarfile.rst:142
 msgid "``'w|bz2'``"
 msgstr "``'w|bz2'``"
 
-#: ../../library/tarfile.rst:142
+#: ../Doc/library/tarfile.rst:142
 msgid "Open a bzip2 compressed *stream* for writing."
-msgstr "bzip2 圧縮の *stream* を書き込み用にオープンします。"
+msgstr "Abre un *stream* bzip2 comprimido para escritura."
 
-#: ../../library/tarfile.rst:145
+#: ../Doc/library/tarfile.rst:145
 msgid "``'w|xz'``"
 msgstr "``'w|xz'``"
 
-#: ../../library/tarfile.rst:145
+#: ../Doc/library/tarfile.rst:145
 msgid "Open an lzma compressed *stream* for writing."
-msgstr "lzma 圧縮の *stream* を書き込み用にオープンします。"
+msgstr "Abre un *stream* lzma comprimido para escritura."
 
-#: ../../library/tarfile.rst:149 ../../library/tarfile.rst:336
+#: ../Doc/library/tarfile.rst:149 ../Doc/library/tarfile.rst:336
 msgid "The ``'x'`` (exclusive creation) mode was added."
-msgstr "``'x'`` (排他的作成) モードが追加されました。"
+msgstr "El modo ``'x'`` (creación exclusiva) fue añadido."
 
-#: ../../library/tarfile.rst:152 ../../library/tarfile.rst:339
-#: ../../library/tarfile.rst:508
+#: ../Doc/library/tarfile.rst:152 ../Doc/library/tarfile.rst:339
+#: ../Doc/library/tarfile.rst:508
 msgid "The *name* parameter accepts a :term:`path-like object`."
-msgstr ""
-"*name* パラメタが :term:`path-like object` を受け付けるようになりました。"
+msgstr "El parámetro *name* acepta un objeto :term:`path-like object`."
 
-#: ../../library/tarfile.rst:159
+#: ../Doc/library/tarfile.rst:159
 msgid ""
 "Class for reading and writing tar archives. Do not use this class directly: "
 "use :func:`tarfile.open` instead. See :ref:`tarfile-objects`."
 msgstr ""
-"tar アーカイブを読み書きするためのクラスです。このクラスを直接使わないこと: "
-"代わりに :func:`tarfile.open` を使ってください。:ref:`tarfile-objects` を参照"
-"してください。"
+"Clase para leer y escribir archivos tar. No utilices esta clase "
+"directamente; usa :func:`tarfile.open` en su lugar. Consulta :ref:`tarfile-"
+"objects`."
 
-#: ../../library/tarfile.rst:165
+#: ../Doc/library/tarfile.rst:165
 msgid ""
 "Return :const:`True` if *name* is a tar archive file, that the :mod:"
 "`tarfile` module can read. *name* may be a :class:`str`, file, or file-like "
 "object."
 msgstr ""
-"もし *name* が tar アーカイブファイルであり、:mod:`tarfile` モジュールで読み"
-"込める場合に :const:`True` を返します。 *name* は文字列、ファイルまたは file-"
-"like オブジェクトです。"
+"Retorna :const:`True` si *name* es un archivo tar, que el módulo :mod:"
+"`tarfile` puede leer. *name* puede ser un :class:`str`, archivo o un objeto "
+"similar a un archivo."
 
-#: ../../library/tarfile.rst:168
+#: ../Doc/library/tarfile.rst:168
 msgid "Support for file and file-like objects."
-msgstr "ファイルおよびファイルライクオブジェクトをサポートしました。"
+msgstr "Soporte para archivos y objetos similares a archivos."
 
-#: ../../library/tarfile.rst:172
+#: ../Doc/library/tarfile.rst:172
 msgid "The :mod:`tarfile` module defines the following exceptions:"
-msgstr ":mod:`tarfile` モジュールは以下の例外を定義しています:"
+msgstr "El módulo :mod:`tarfile` define las siguientes excepciones:"
 
-#: ../../library/tarfile.rst:177
+#: ../Doc/library/tarfile.rst:177
 msgid "Base class for all :mod:`tarfile` exceptions."
-msgstr "すべての :mod:`tarfile` 例外のための基本クラスです。"
+msgstr "Clase base para todas las excepciones del módulo :mod:`tarfile`."
 
-#: ../../library/tarfile.rst:182
+#: ../Doc/library/tarfile.rst:182
 msgid ""
 "Is raised when a tar archive is opened, that either cannot be handled by "
 "the :mod:`tarfile` module or is somehow invalid."
 msgstr ""
-"tar アーカイブがオープンされた時、:mod:`tarfile` モジュールで操作できないか、"
-"あるいは何か無効であるとき送出されます。"
+"Se lanza cuando un archivo tar se abre, que no puede ser manejado por el "
+"módulo :mod:`tarfile` o de alguna manera no es válido."
 
-#: ../../library/tarfile.rst:188
+#: ../Doc/library/tarfile.rst:188
 msgid ""
 "Is raised when a compression method is not supported or when the data cannot "
 "be decoded properly."
 msgstr ""
-"圧縮方法がサポートされていないか、あるいはデータを正しくデコードできない時に"
-"送出されます。"
+"Se lanza cuando un método de compresión no tiene soporte o cuando la "
+"información no puede ser decodificada de manera apropiada."
 
-#: ../../library/tarfile.rst:194
+#: ../Doc/library/tarfile.rst:194
 msgid ""
 "Is raised for the limitations that are typical for stream-like :class:"
 "`TarFile` objects."
 msgstr ""
-"ストリームのような :class:`TarFile` オブジェクトで典型的な制限のために送出さ"
-"れます。"
+"Se lanza para limitaciones que son comunes para objetos *stream-like* :class:"
+"`TarFile`."
 
-#: ../../library/tarfile.rst:200
+#: ../Doc/library/tarfile.rst:200
 msgid ""
 "Is raised for *non-fatal* errors when using :meth:`TarFile.extract`, but "
 "only if :attr:`TarFile.errorlevel`\\ ``== 2``."
 msgstr ""
-":meth:`TarFile.extract` を使った時に *致命的でない* エラーに対して送出されま"
-"す。ただし :attr:`TarFile.errorlevel`\\ ``== 2`` の場合に限ります。"
+"Se lanza para errores no fatales cuando se utiliza :meth:`TarFile.extract`, "
+"pero solo si :attr:`TarFile.errorlevel`\\ ``== 2``."
 
-#: ../../library/tarfile.rst:206
+#: ../Doc/library/tarfile.rst:206
 msgid "Is raised by :meth:`TarInfo.frombuf` if the buffer it gets is invalid."
 msgstr ""
-":meth:`TarInfo.frombuf` メソッドが取得したバッファーが不正だったときに送出さ"
-"れます。"
+"Se lanza por :meth:`TarInfo.frombuf` si el buffer que obtiene es invalido."
 
-#: ../../library/tarfile.rst:209
+#: ../Doc/library/tarfile.rst:209
 msgid "The following constants are available at the module level:"
-msgstr "モジュールレベルで以下の定数が利用できます。"
+msgstr "Las siguientes constantes están disponibles a nivel de módulo:"
 
-#: ../../library/tarfile.rst:213
+#: ../Doc/library/tarfile.rst:213
 msgid ""
 "The default character encoding: ``'utf-8'`` on Windows, the value returned "
 "by :func:`sys.getfilesystemencoding` otherwise."
 msgstr ""
-"既定の文字エンコーディング。Windows では ``'utf-8'`` 、それ以外では :func:"
-"`sys.getfilesystemencoding` の返り値です。"
+"La codificación para caracteres predeterminada: ``'utf-8'`` en Windows, de "
+"otra manera, el valor retornado por :func:`sys.getfilesystemencoding`."
 
-#: ../../library/tarfile.rst:217
+#: ../Doc/library/tarfile.rst:217
 msgid ""
 "Each of the following constants defines a tar archive format that the :mod:"
 "`tarfile` module is able to create. See section :ref:`tar-formats` for "
 "details."
 msgstr ""
-"以下の各定数は、:mod:`tarfile` モジュールが作成できる tar アーカイブフォー"
-"マットを定義しています。詳細は、:ref:`tar-formats` を参照してください。"
+"Cada una de las siguientes constantes define un formato de archivo tar que "
+"el módulo :mod:`tarfile` puede crear. Ve la sección: :ref:`tar-formats` para "
+"más detalles."
 
-#: ../../library/tarfile.rst:224
+#: ../Doc/library/tarfile.rst:224
 msgid "POSIX.1-1988 (ustar) format."
-msgstr "POSIX.1-1988 (ustar) フォーマット。"
+msgstr "Formato POSIX.1-1988 (ustar)."
 
-#: ../../library/tarfile.rst:229
+#: ../Doc/library/tarfile.rst:229
 msgid "GNU tar format."
-msgstr "GNU tar フォーマット。"
+msgstr "Formato GNU tar."
 
-#: ../../library/tarfile.rst:234
+#: ../Doc/library/tarfile.rst:234
 msgid "POSIX.1-2001 (pax) format."
-msgstr "POSIX.1-2001 (pax) フォーマット。"
+msgstr "Formato POSIX.1-2001 (pax)."
 
-#: ../../library/tarfile.rst:239
+#: ../Doc/library/tarfile.rst:239
 msgid ""
 "The default format for creating archives. This is currently :const:"
 "`PAX_FORMAT`."
 msgstr ""
-"アーカイブを作成する際のデフォルトのフォーマット。現在は :const:`PAX_FORMAT` "
-"です。"
+"El formato predeterminado para crear archivos. Es actualmente :const:"
+"`PAX_FORMAT`."
 
-#: ../../library/tarfile.rst:241
+#: ../Doc/library/tarfile.rst:241
 msgid ""
 "The default format for new archives was changed to :const:`PAX_FORMAT` from :"
 "const:`GNU_FORMAT`."
 msgstr ""
-"新しいアーカイブのデフォルトフォーマットが :const:`GNU_FORMAT` から :const:"
-"`PAX_FORMAT` に変更されました。"
+"El formato predeterminado para nuevos archivos fue cambiado de :const:"
+"`GNU_FORMAT` a :const:`PAX_FORMAT`."
 
-#: ../../library/tarfile.rst:249
+#: ../Doc/library/tarfile.rst:249
 msgid "Module :mod:`zipfile`"
-msgstr ":mod:`zipfile` モジュール"
+msgstr "Módulo :mod:`zipfile`"
 
-#: ../../library/tarfile.rst:249
+#: ../Doc/library/tarfile.rst:249
 msgid "Documentation of the :mod:`zipfile` standard module."
-msgstr ":mod:`zipfile` 標準モジュールのドキュメント。"
+msgstr "Documentación del módulo estándar :mod:`zipfile`."
 
-#: ../../library/tarfile.rst:253
+#: ../Doc/library/tarfile.rst:253
 msgid ":ref:`archiving-operations`"
 msgstr ":ref:`archiving-operations`"
 
-#: ../../library/tarfile.rst:252
+#: ../Doc/library/tarfile.rst:252
 msgid ""
 "Documentation of the higher-level archiving facilities provided by the "
 "standard :mod:`shutil` module."
 msgstr ""
-":mod:`shutil` が提供するより高水準のアーカイブ機能についてのドキュメント。"
+"Documentación para las facilidades de archivos de más alto nivel "
+"proporcionadas por el módulo estándar :mod:`shutil`."
 
-#: ../../library/tarfile.rst:255
+#: ../Doc/library/tarfile.rst:255
 msgid ""
 "`GNU tar manual, Basic Tar Format <https://www.gnu.org/software/tar/manual/"
 "html_node/Standard.html>`_"
 msgstr ""
-"`GNU tar manual, Basic Tar Format <https://www.gnu.org/software/tar/manual/"
+"`Manual GNU tar, formato básico tar <https://www.gnu.org/software/tar/manual/"
 "html_node/Standard.html>`_"
 
-#: ../../library/tarfile.rst:256
+#: ../Doc/library/tarfile.rst:256
 msgid "Documentation for tar archive files, including GNU tar extensions."
-msgstr "GNU tar 拡張機能を含む、tar アーカイブファイルのためのドキュメント。"
+msgstr ""
+"Documentación para archivos de tipo tar, incluyendo extensiones GNU tar."
 
-#: ../../library/tarfile.rst:262
+#: ../Doc/library/tarfile.rst:262
 msgid "TarFile Objects"
-msgstr "TarFile オブジェクト"
+msgstr "Objetos *TarFile*"
 
-#: ../../library/tarfile.rst:264
+#: ../Doc/library/tarfile.rst:264
 msgid ""
 "The :class:`TarFile` object provides an interface to a tar archive. A tar "
 "archive is a sequence of blocks. An archive member (a stored file) is made "
@@ -554,14 +566,14 @@ msgid ""
 "in a tar archive several times. Each archive member is represented by a :"
 "class:`TarInfo` object, see :ref:`tarinfo-objects` for details."
 msgstr ""
-":class:`TarFile` オブジェクトは、tar アーカイブへのインターフェースを提供しま"
-"す。tar アーカイブは一連のブロックです。アーカイブメンバー (保存されたファイ"
-"ル) は、ヘッダーブロックとそれに続くデータブロックで構成されています。一つの "
-"tar アーカイブにファイルを何回も保存することができます。各アーカイブメンバー"
-"は、:class:`TarInfo` オブジェクトで確認できます。詳細については :ref:"
-"`tarinfo-objects` を参照してください。"
+"El objeto :class:`TarFile` provee una interfaz a un archivo tar. Un archivo "
+"tar es una secuencia de bloques. Un miembro de archivos (un archivo "
+"almacenado) está hecho de un bloque de encabezado seguido de bloques de "
+"datos. Es posible almacenar un archivo dentro de un tar múltiples veces. "
+"Cada archivo miembro está representado por un objeto :class:`TarInfo`, "
+"consulta :ref:`tarinfo-objects` para más detalles."
 
-#: ../../library/tarfile.rst:270
+#: ../Doc/library/tarfile.rst:270
 msgid ""
 "A :class:`TarFile` object can be used as a context manager in a :keyword:"
 "`with` statement. It will automatically be closed when the block is "
@@ -569,112 +581,115 @@ msgid ""
 "for writing will not be finalized; only the internally used file object will "
 "be closed. See the :ref:`tar-examples` section for a use case."
 msgstr ""
-":class:`TarFile` オブジェクトは :keyword:`with` 文のコンテキストマネージャー"
-"として利用できます。with ブロックが終了したときにオブジェクトはクローズされま"
-"す。例外が発生した時、内部で利用されているファイルオブジェクトのみがクローズ"
-"され、書き込み用にオープンされたアーカイブのファイナライズは行われないことに"
-"注意してください。:ref:`tar-examples` 節のユースケースを参照してください。"
+"Un objeto :class:`TarFile` puede ser usado como un administrador de contexto "
+"en una declaración :keyword:`with`. Será automáticamente cerrado cuando el "
+"bloque sea completado. Ten en cuenta que en el evento de una excepción un "
+"archivo abierto para escritura no será terminado; solo el objeto de archivo "
+"interno será cerrado. Consulta la sección :ref:`tar-examples` para un caso "
+"de uso."
 
-#: ../../library/tarfile.rst:276
+#: ../Doc/library/tarfile.rst:276
 msgid "Added support for the context management protocol."
-msgstr "コンテキスト管理のプロトコルがサポートされました。"
+msgstr "Añadido soporte para el protocolo de administración de contexto."
 
-#: ../../library/tarfile.rst:281
+#: ../Doc/library/tarfile.rst:281
 msgid ""
 "All following arguments are optional and can be accessed as instance "
 "attributes as well."
 msgstr ""
-"以下のすべての引数はオプションで、インスタンス属性としてもアクセスできます。"
+"Los siguientes argumentos son opcionales y también se pueden acceder como "
+"atributos de instancia."
 
-#: ../../library/tarfile.rst:284
+#: ../Doc/library/tarfile.rst:284
 msgid ""
 "*name* is the pathname of the archive. *name* may be a :term:`path-like "
 "object`. It can be omitted if *fileobj* is given. In this case, the file "
 "object's :attr:`name` attribute is used if it exists."
 msgstr ""
-"*name* はアーカイブのパス名です。*name* は :term:`path-like object` でも構い"
-"ません。*fileobj* が渡された場合は省略可能です。その場合、ファイルオブジェク"
-"トに :attr:`name` 属性があれば、それを利用します。"
+"*name* es el nombre de ruta del archivo. *name* puede ser un objeto :term:"
+"`path-like object`. Puede ser omitido si *fileobj* se proporciona. En este "
+"caso, el atributo :attr:`name` del objeto de archivo se usa si existe."
 
-#: ../../library/tarfile.rst:288
+#: ../Doc/library/tarfile.rst:288
 msgid ""
 "*mode* is either ``'r'`` to read from an existing archive, ``'a'`` to append "
 "data to an existing file, ``'w'`` to create a new file overwriting an "
 "existing one, or ``'x'`` to create a new file only if it does not already "
 "exist."
 msgstr ""
-"*mode* は、既存のアーカイブから読み込むための ``'r'``、既存のアーカイブに追記"
-"するための ``'a'``、既存のファイルがあれば上書きして新しいファイルを作成する "
-"``'w'`` 、あるいは存在しない場合にのみ新しいファイルを作成する ``'x'`` のいず"
-"れかです。"
+"*mode* puede ser ``'r'`` para leer desde un archivo existente, ``'a'`` para "
+"adjuntar datos a un archivo existente,``'w'`` para crear un nuevo archivo "
+"sobrescribiendo uno existente, o ``'x'`` para crear un nuevo archivo "
+"únicamente si este no existe."
 
-#: ../../library/tarfile.rst:292
+#: ../Doc/library/tarfile.rst:292
 msgid ""
 "If *fileobj* is given, it is used for reading or writing data. If it can be "
 "determined, *mode* is overridden by *fileobj*'s mode. *fileobj* will be used "
 "from position 0."
 msgstr ""
-"*fileobj* が与えられていれば、それを使ってデータを読み書きします。もしそれが"
-"決定できれば、*mode* は *fileobj* のモードで上書きされます。*fileobj* は位置 "
-"0 から利用されます。"
+"Si *fileobj* es proporcionado, se utiliza para escritura o lectura de datos. "
+"Si puede ser determinado, *mode* puede ser anulado por el modo de *fileobj*. "
+"*fileobj* será usado desde la posición 0."
 
-#: ../../library/tarfile.rst:298
+#: ../Doc/library/tarfile.rst:298
 msgid "*fileobj* is not closed, when :class:`TarFile` is closed."
-msgstr ":class:`TarFile` をクローズした時、*fileobj* はクローズされません。"
+msgstr "*fileobj* no se cierra cuando :class:`TarFile` se cierra."
 
-#: ../../library/tarfile.rst:300
+#: ../Doc/library/tarfile.rst:300
 msgid ""
 "*format* controls the archive format for writing. It must be one of the "
 "constants :const:`USTAR_FORMAT`, :const:`GNU_FORMAT` or :const:`PAX_FORMAT` "
 "that are defined at module level. When reading, format will be automatically "
 "detected, even if different formats are present in a single archive."
 msgstr ""
-"*format* はアーカイブの書き込みフォーマットを制御します。モジュールレベルで定"
-"義されている、:const:`USTAR_FORMAT`、:const:`GNU_FORMAT`、あるいは :const:"
-"`PAX_FORMAT` のいずれかである必要があります。\n"
-"読み出しのときは、1 つのアーカイブに異なるフォーマットが混在していたとして"
-"も、フォーマットは自動的に検知されます。"
+"*format* controla el formato de archivo para la escritura. Debe ser una de "
+"las constantes :const:`USTAR_FORMAT`, :const:`GNU_FORMAT` o :const:"
+"`PAX_FORMAT` que se definen a nivel de módulo. Al leer, el formato se "
+"detectará automáticamente, incluso si hay diferentes formatos en un solo "
+"archivo."
 
-#: ../../library/tarfile.rst:305
+#: ../Doc/library/tarfile.rst:305
 msgid ""
 "The *tarinfo* argument can be used to replace the default :class:`TarInfo` "
 "class with a different one."
 msgstr ""
-"*tarinfo* 引数を利用して、デフォルトの :class:`TarInfo` クラスを別のクラスで"
-"置き換えることができます。"
+"El argumento *tarinfo* puede ser utilizado para reemplazar la clase "
+"predeterminada :class:`TarInfo` con una diferente."
 
-#: ../../library/tarfile.rst:308
+#: ../Doc/library/tarfile.rst:308
 msgid ""
 "If *dereference* is :const:`False`, add symbolic and hard links to the "
 "archive. If it is :const:`True`, add the content of the target files to the "
 "archive. This has no effect on systems that do not support symbolic links."
 msgstr ""
-"*dereference* が :const:`False` だった場合、シンボリックリンクやハードリンク"
-"がアーカイブに追加されます。:const:`True` だった場合、リンクのターゲットとな"
-"るファイルの内容がアーカイブに追加されます。シンボリックリンクをサポートして"
-"いないシステムでは効果がありません。"
+"Si *dereference* tiene el valor de :const:`False`, añade enlaces simbólicos "
+"y duros al archivo. Si tiene el valor de :const:`True`, añade el contenido "
+"de archivos objetivo al archivo. Esto no tiene ningún efecto en los sistemas "
+"que no admiten enlaces simbólicos."
 
-#: ../../library/tarfile.rst:312
+#: ../Doc/library/tarfile.rst:312
 msgid ""
 "If *ignore_zeros* is :const:`False`, treat an empty block as the end of the "
 "archive. If it is :const:`True`, skip empty (and invalid) blocks and try to "
 "get as many members as possible. This is only useful for reading "
 "concatenated or damaged archives."
 msgstr ""
-"*ignore_zeros* が :const:`False` だった場合、空ブロックをアーカイブの終端とし"
-"て扱います。:const:`True` だった場合、空の (無効な) ブロックをスキップして、"
-"可能な限り多くのメンバーを取得しようとします。このオプションは、連結された"
-"り、壊れたアーカイブファイルを扱うときにのみ、意味があります。"
+"Si *ignore_zeros* tiene el valor de :const:`False`, trata un bloque vacío "
+"como el final del archivo. Si es :const:`True`, omite los bloques vacíos (y "
+"no válidos) e intenta obtener tantos miembros como sea posible. Esto solo es "
+"útil para leer archivos concatenados o dañados."
 
-#: ../../library/tarfile.rst:316
+#: ../Doc/library/tarfile.rst:316
 msgid ""
 "*debug* can be set from ``0`` (no debug messages) up to ``3`` (all debug "
 "messages). The messages are written to ``sys.stderr``."
 msgstr ""
-"*debug* は ``0`` (デバッグメッセージ無し) から ``3`` (全デバッグメッセージ) "
-"まで設定できます。このメッセージは ``sys.stderr`` に書き込まれます。"
+"*debug* puede ser establecido con valores desde ``0`` (sin mensajes de "
+"depuración) hasta ``3`` (todos los mensajes de depuración). Los mensajes son "
+"escritos en ``sys.stderr``."
 
-#: ../../library/tarfile.rst:319
+#: ../Doc/library/tarfile.rst:319
 msgid ""
 "If *errorlevel* is ``0``, all errors are ignored when using :meth:`TarFile."
 "extract`. Nevertheless, they appear as error messages in the debug output, "
@@ -682,103 +697,110 @@ msgid ""
 "`OSError` exceptions. If ``2``, all *non-fatal* errors are raised as :exc:"
 "`TarError` exceptions as well."
 msgstr ""
-"*errorlevel* が ``0`` の場合、:meth:`TarFile.extract` 使用時にすべてのエラー"
-"が無視されます。エラーが無視された場合でも、*debug* が有効であれば、エラー"
-"メッセージは出力されます。``1`` の場合、すべての *致命的な(fatal)* エラーは :"
-"exc:`OSError` を送出します。``2`` の場合、すべての *致命的でない(non-fatal)* "
-"エラーも :exc:`TarError` 例外として送出されます。"
+"Si *errorlevel* es ``0``, todos los errores son ignorados cuando se utiliza :"
+"meth:`TarFile.extract`. Sin embargo, aparecen como mensajes de error en la "
+"salida de depuración, cuando la depuración está habilitada. Si *errorlevel* "
+"es ``1``, todos los errores *fatal* son levantados como excepciones :exc:"
+"`OSError`. Si *errorlevel* es ``2``, todos los errores *non-fatal* son "
+"levantados como excepciones :exc:`TarError`."
 
-#: ../../library/tarfile.rst:325
+#: ../Doc/library/tarfile.rst:325
 msgid ""
 "The *encoding* and *errors* arguments define the character encoding to be "
 "used for reading or writing the archive and how conversion errors are going "
 "to be handled. The default settings will work for most users. See section :"
 "ref:`tar-unicode` for in-depth information."
 msgstr ""
-"引数 *encoding* および *errors* にはアーカイブの読み書きやエラー文字列の変換"
-"に使用する文字エンコーディングを指定します。ほとんどのユーザーはデフォルト設"
-"定のままで動作します。詳細に関しては :ref:`tar-unicode` 節を参照してくださ"
-"い。"
+"Los argumentos *encoding* y *errors* definen la codificación de caracteres "
+"que se utilizará para lectura o escritura del archivo y como los errores de "
+"conversión van a ser manejados. La configuración predeterminada funcionará "
+"para la mayoría de los usuarios. Mira la sección :ref:`tar-unicode` para más "
+"información a detalle."
 
-#: ../../library/tarfile.rst:330
+#: ../Doc/library/tarfile.rst:330
 msgid ""
 "The *pax_headers* argument is an optional dictionary of strings which will "
 "be added as a pax global header if *format* is :const:`PAX_FORMAT`."
 msgstr ""
-"引数 *pax_headers* は、オプションの文字列辞書で、*format* が :const:"
-"`PAX_FORMAT` だった場合に pax グローバルヘッダーに追加されます。"
+"El argumento *pax_headers* es un diccionario opcional de cadenas las cuales "
+"serán añadidas como un encabezado pax global si el valor de *format* es :"
+"const:`PAX_FORMAT`."
 
-#: ../../library/tarfile.rst:333 ../../library/tarfile.rst:561
+#: ../Doc/library/tarfile.rst:333 ../Doc/library/tarfile.rst:561
 msgid "Use ``'surrogateescape'`` as the default for the *errors* argument."
-msgstr "引数 *errors* のデフォルトが ``'surrogateescape'`` になりました。"
+msgstr ""
+"Utiliza ``'surrogateescape'`` como valor predeterminado del argumento "
+"*errors*."
 
-#: ../../library/tarfile.rst:345
+#: ../Doc/library/tarfile.rst:345
 msgid ""
 "Alternative constructor. The :func:`tarfile.open` function is actually a "
 "shortcut to this classmethod."
 msgstr ""
-"代替コンストラクターです。モジュールレベルでの :func:`tarfile.open` 関数は、"
-"実際はこのクラスメソッドへのショートカットです。"
+"Constructor alternativo. La función :func:`tarfile.open` es un acceso "
+"directo a este método de la clase."
 
-#: ../../library/tarfile.rst:351
+#: ../Doc/library/tarfile.rst:351
 msgid ""
 "Return a :class:`TarInfo` object for member *name*. If *name* can not be "
 "found in the archive, :exc:`KeyError` is raised."
 msgstr ""
-"メンバー *name* に対する :class:`TarInfo` オブジェクトを返します。*name* が"
-"アーカイブに見つからなければ、:exc:`KeyError` が送出されます。"
+"Retorna un objeto :class:`TarInfo` para el miembro *name*. Si *name* no "
+"puede ser encontrado, entonces una excepción de tipo :exc:`KeyError` será "
+"lanzada."
 
-#: ../../library/tarfile.rst:356
+#: ../Doc/library/tarfile.rst:356
 msgid ""
 "If a member occurs more than once in the archive, its last occurrence is "
 "assumed to be the most up-to-date version."
 msgstr ""
-"アーカイブ内にメンバーが複数ある場合は、最後に出現するものが最新のバージョン"
-"とみなされます。"
+"Si un miembro aparece más de una vez en el archivo, se asume que su última "
+"aparición es la versión más actualizada."
 
-#: ../../library/tarfile.rst:362
+#: ../Doc/library/tarfile.rst:362
 msgid ""
 "Return the members of the archive as a list of :class:`TarInfo` objects. The "
 "list has the same order as the members in the archive."
 msgstr ""
-":class:`TarInfo` アーカイブのメンバーをオブジェクトのリストとして返します。こ"
-"のリストはアーカイブ内のメンバーと同じ順番です。"
+"Retorna los miembros del archivo como una lista de objetos :class:`TarInfo`. "
+"La lista tiene el mismo orden que los miembros del archivo."
 
-#: ../../library/tarfile.rst:368
+#: ../Doc/library/tarfile.rst:368
 msgid ""
 "Return the members as a list of their names. It has the same order as the "
 "list returned by :meth:`getmembers`."
 msgstr ""
-"メンバーをその名前のリストを返します。これは :meth:`getmembers` で返されるリ"
-"ストと同じ順番です。"
+"Retorna los miembros como una lista de sus nombres. Tiene el mismo orden que "
+"la lista retornada por :meth:`getmembers`."
 
-#: ../../library/tarfile.rst:374
+#: ../Doc/library/tarfile.rst:374
 msgid ""
 "Print a table of contents to ``sys.stdout``. If *verbose* is :const:`False`, "
 "only the names of the members are printed. If it is :const:`True`, output "
 "similar to that of :program:`ls -l` is produced. If optional *members* is "
 "given, it must be a subset of the list returned by :meth:`getmembers`."
 msgstr ""
-"内容の一覧を ``sys.stdout`` に出力します。*verbose* が :const:`False` の場"
-"合、メンバー名のみ表示します。:const:`True` の場合、 :program:`ls -l` に似た"
-"出力を生成します。オプションの *members* を与える場合、 :meth:`getmembers` が"
-"返すリストのサブセットである必要があります。"
+"Imprime en ``sys.stdout`` una tabla de contenidos. Si *verbose* es :const:"
+"`False`, solo los nombres de los miembros son impresos. si es :const:`True`, "
+"se produce una salida de impresión similar a la de :program:`ls -l`. Si el "
+"parámetro *members* es proporcionado, debe ser un subconjunto de la lista "
+"retornada por :meth:`getmembers`."
 
-#: ../../library/tarfile.rst:379
+#: ../Doc/library/tarfile.rst:379
 msgid "Added the *members* parameter."
-msgstr "*members* 引数が追加されました。."
+msgstr "Se agregó el parámetro *members*."
 
-#: ../../library/tarfile.rst:385
+#: ../Doc/library/tarfile.rst:385
 msgid ""
 "Return the next member of the archive as a :class:`TarInfo` object, when :"
 "class:`TarFile` is opened for reading. Return :const:`None` if there is no "
 "more available."
 msgstr ""
-":class:`TarFile` が読み込み用にオープンされている時、アーカイブの次のメンバー"
-"を :class:`TarInfo` オブジェクトとして返します。もしそれ以上利用可能なものが"
-"なければ、:const:`None` を返します。"
+"Retorna el siguiente miembro del archivo como un objeto :class:`TarInfo` "
+"cuando :class:`TarFile` se abre para lectura. Retorna :const:`None` si no "
+"hay más miembros disponibles."
 
-#: ../../library/tarfile.rst:392
+#: ../Doc/library/tarfile.rst:392
 msgid ""
 "Extract all members from the archive to the current working directory or "
 "directory *path*. If optional *members* is given, it must be a subset of the "
@@ -789,46 +811,48 @@ msgid ""
 "directory's permissions do not allow writing, extracting files to it will "
 "fail."
 msgstr ""
-"すべてのメンバーをアーカイブから現在の作業ディレクトリまたは *path* に抽出し"
-"ます。オプションの *members* が与えられるときには、:meth:`getmembers` で返さ"
-"れるリストの一部でなければなりません。所有者、変更時刻、アクセス権限のような"
-"ディレクトリ情報はすべてのメンバーが抽出された後にセットされます。これは二つ"
-"の問題を回避するためです。一つはディレクトリの変更時刻はその中にファイルが作"
-"成されるたびにリセットされるということ、もう一つはディレクトリに書き込み許可"
-"がなければその中のファイル抽出は失敗してしまうということです。"
+"Extrae todos los miembros de un archivo al directorio de trabajo actual o al "
+"directorio de *path*. Si se proporciona el parámetro opcional *members*, "
+"debe ser un subconjunto de la lista retornada por el método :meth:"
+"`getmembers`. Información de directorio como dueño, fecha de modificación y "
+"permisos son establecidos una vez que todos los miembros han sido extraídos. "
+"Esto se realiza para trabajar con dos problemáticas: La fecha de "
+"modificación de un directorio es modificada cada vez que un archivo es "
+"creado en el. Y si los permisos de un directorio no permiten escritura, "
+"extraer archivos en el no será posible."
 
-#: ../../library/tarfile.rst:400 ../../library/tarfile.rst:426
+#: ../Doc/library/tarfile.rst:400 ../Doc/library/tarfile.rst:426
 msgid ""
 "If *numeric_owner* is :const:`True`, the uid and gid numbers from the "
 "tarfile are used to set the owner/group for the extracted files. Otherwise, "
 "the named values from the tarfile are used."
 msgstr ""
-"*numeric_owner* が :const:`True` の場合、tarfile の uid と gid 数値が抽出され"
-"たファイルのオーナー/グループを設定するために使用されます。False の場合、"
-"tarfile の名前付きの値が使用されます。"
+"Si *numeric_owner* tiene el valor de :const:`True`, los números uid y gid "
+"del archivo tar se utilizan para establecer el dueño/grupo de los archivos "
+"extraídos. De lo contrario, se utilizan los valores nombrados del archivo "
+"tar."
 
-#: ../../library/tarfile.rst:406
+#: ../Doc/library/tarfile.rst:406
 msgid ""
 "Never extract archives from untrusted sources without prior inspection. It "
 "is possible that files are created outside of *path*, e.g. members that have "
 "absolute filenames starting with ``\"/\"`` or filenames with two dots ``\".."
 "\"``."
 msgstr ""
-"内容を信頼できない tar アーカイブを、事前の内部チェック前に展開してはいけませ"
-"ん。ファイルが *path* の外側に作られる可能性があります。例えば、``\"/\"`` で"
-"始まる絶対パスのファイル名や、2 重ドット ``\"..\"`` で始まるパスのファイル名"
-"です。"
+"Nunca extraigas archivos de fuentes no confiables sin una inspección previa. "
+"Es posible que los archivos se creen fuera de *path*, Ej. miembros que "
+"tienen nombres de archivo absolutos que comienzan con ``\"/\"`` o nombres de "
+"archivo con dos puntos ``\"..\"``."
 
-#: ../../library/tarfile.rst:411 ../../library/tarfile.rst:442
+#: ../Doc/library/tarfile.rst:411 ../Doc/library/tarfile.rst:442
 msgid "Added the *numeric_owner* parameter."
-msgstr "*numeric_owner* 引数が追加されました。"
+msgstr "Se agregó el parámetro *numeric_owner*."
 
-#: ../../library/tarfile.rst:414 ../../library/tarfile.rst:445
+#: ../Doc/library/tarfile.rst:414 ../Doc/library/tarfile.rst:445
 msgid "The *path* parameter accepts a :term:`path-like object`."
-msgstr ""
-"*path* パラメタが :term:`path-like object` を受け付けるようになりました。"
+msgstr "El parámetro *path* acepta a :term:`path-like object`."
 
-#: ../../library/tarfile.rst:420
+#: ../Doc/library/tarfile.rst:420
 msgid ""
 "Extract a member from the archive to the current working directory, using "
 "its full name. Its file information is extracted as accurately as possible. "
@@ -836,30 +860,32 @@ msgid ""
 "different directory using *path*. *path* may be a :term:`path-like object`. "
 "File attributes (owner, mtime, mode) are set unless *set_attrs* is false."
 msgstr ""
-"アーカイブからメンバーの完全な名前を使って、現在のディレクトリに展開します。"
-"ファイル情報はできる限り正確に展開されます。 *member* はファイル名もしくは :"
-"class:`TarInfo` オブジェクトです。 *path* を使って別のディレクトリを指定する"
-"こともできます。 *path* は　:term:`path-like object` でも構いません。"
-"*set_attrs* が false でない限り、ファイルの属性 (所有者、最終更新時刻、モー"
-"ド) は設定されます。"
+"Extrae un miembro del archivo al directorio de trabajo actual utilizando su "
+"nombre completo. La información de su archivo se extrae con la mayor "
+"precisión posible. *member* puede ser un nombre de archivo o un objeto :"
+"class:`TarInfo`. Puedes especificar un directorio diferente utilizando "
+"*path*. *path* puede ser un :term:`path-like object`. Los atributos de "
+"archivo (dueño, fecha de modificación, modo) son establecidos a no ser que "
+"*set_attrs* sea falso."
 
-#: ../../library/tarfile.rst:432
+#: ../Doc/library/tarfile.rst:432
 msgid ""
 "The :meth:`extract` method does not take care of several extraction issues. "
 "In most cases you should consider using the :meth:`extractall` method."
 msgstr ""
-":meth:`extract` メソッドはいくつかの展開に関する問題を扱いません。ほとんどの"
-"場合、:meth:`extractall` メソッドの利用を考慮するべきです。"
+"El método :meth:`extract` no cuida de varios problemas de extracción. En la "
+"mayoría de los casos deberías considerar utilizar el método :meth:"
+"`extractall`."
 
-#: ../../library/tarfile.rst:437
+#: ../Doc/library/tarfile.rst:437
 msgid "See the warning for :meth:`extractall`."
-msgstr ":meth:`extractall` の警告を参してください。"
+msgstr "Consulta la advertencia para :meth:`extractall`."
 
-#: ../../library/tarfile.rst:439
+#: ../Doc/library/tarfile.rst:439
 msgid "Added the *set_attrs* parameter."
-msgstr "パラメーターに *set_attrs* を追加しました。"
+msgstr "Se agregó el parámetro *set_attrs*."
 
-#: ../../library/tarfile.rst:451
+#: ../Doc/library/tarfile.rst:451
 msgid ""
 "Extract a member from the archive as a file object. *member* may be a "
 "filename or a :class:`TarInfo` object. If *member* is a regular file or a "
@@ -867,19 +893,17 @@ msgid ""
 "existing members, :const:`None` is returned. If *member* does not appear in "
 "the archive, :exc:`KeyError` is raised."
 msgstr ""
-"アーカイブからメンバーをファイルオブジェクトとして抽出します。\n"
-"*member* はファイル名でも :class:`TarInfo` オブジェクトでも構いません。"
-"*member* が一般ファイルまたはリンクの場合、:class:`io.BufferedReader` オブ"
-"ジェクトが返されます。\n"
-"存在するそれ以外のメンバーでは、 :const:`None` が返されます。\n"
-"それ以外の場合、:const:`None` が返されます。\n"
-"アーカイブに *member* が存在しない場合は :exc:`KeyError` が送出されます。"
+"Extrae un miembro del archivo como un objeto de archivo. *member* puede ser "
+"un nombre de archivo o un objeto :class:`TarInfo`. Si *member* es un archivo "
+"normal o un enlace, se retorna un objeto :class:`io.BufferedReader`. Para "
+"todos los demás miembros existentes, se retorna :const:`None`. Si *member* "
+"no aparece en el archivo, se lanza :exc:`KeyError`."
 
-#: ../../library/tarfile.rst:457
+#: ../Doc/library/tarfile.rst:457
 msgid "Return an :class:`io.BufferedReader` object."
-msgstr "戻り値が :class:`io.BufferedReader` オブジェクトになりました。"
+msgstr "Retorna un objeto :class:`io.BufferedReader`."
 
-#: ../../library/tarfile.rst:463
+#: ../Doc/library/tarfile.rst:463
 msgid ""
 "Add the file *name* to the archive. *name* may be any type of file "
 "(directory, fifo, symbolic link, etc.). If given, *arcname* specifies an "
@@ -891,42 +915,38 @@ msgid ""
 "`None` the :class:`TarInfo` object will be excluded from the archive. See :"
 "ref:`tar-examples` for an example."
 msgstr ""
-"ファイル *name* をアーカイブに追加します。\n"
-"*name* は、任意のファイルタイプ (ディレクトリ、fifo、シンボリックリンク等)で"
-"す。\n"
-"*arcname* が与えられている場合は、それはアーカイブ内のファイルの代替名を指定"
-"します。\n"
-"デフォルトではディレクトリは再帰的に追加されます。\n"
-"これは、 *recursive* を :const:`False` に設定すると避けられます。\n"
-"再帰処理はソートされた順序でエントリーを追加します。\n"
-"*filter* が与えられた場合、それは :class:`TarInfo` オブジェクトを引数として受"
-"け取り、操作した :class:`TarInfo` オブジェクトを返す関数でなければなりませ"
-"ん。\n"
-"代わりに :const:`None` を返した場合、 :class:`TarInfo` オブジェクトはアーカイ"
-"ブから除外されます。\n"
-":ref:`tar-examples` にある例を参照してください。"
+"Añade el archivo *name* al archivo. *name* puede ser cualquier tipo de "
+"archivo (directorio, fifo, enlace simbólico, etc.). Si se proporciona, "
+"*arcname* especifica un nombre alternativo para el archivo en el archivo. "
+"Los directorios se agregan de forma recursiva de forma predeterminada. Esto "
+"se puede evitar estableciendo *recursive* con el valor de :const:`False`. La "
+"recursividad agrega entradas en orden ordenado. Si se proporciona *filter*, "
+"debería ser una función que tome un argumento de objeto :class:`TarInfo` y "
+"retorna el objeto :class:`TarInfo` modificado. Si en cambio retorna :const:"
+"`None`, el objeto :class:`TarInfo` será excluido del archivo. Consulta :ref:"
+"`tar-examples` para ver un ejemplo."
 
-#: ../../library/tarfile.rst:474
+#: ../Doc/library/tarfile.rst:474
 msgid "Added the *filter* parameter."
-msgstr "*filter* パラメータが追加されました。"
+msgstr "Se agregó el parámetro *filter*."
 
-#: ../../library/tarfile.rst:477
+#: ../Doc/library/tarfile.rst:477
 msgid "Recursion adds entries in sorted order."
-msgstr "再帰処理はソートされた順序でエントリーを追加するようになりました。"
+msgstr "La recursividad agrega entradas en orden ordenado."
 
-#: ../../library/tarfile.rst:483
+#: ../Doc/library/tarfile.rst:483
 msgid ""
 "Add the :class:`TarInfo` object *tarinfo* to the archive. If *fileobj* is "
 "given, it should be a :term:`binary file`, and ``tarinfo.size`` bytes are "
 "read from it and added to the archive.  You can create :class:`TarInfo` "
 "objects directly, or by using :meth:`gettarinfo`."
 msgstr ""
-":class:`TarInfo` オブジェクト *tarinfo* をアーカイブに追加します。*fileobj* "
-"を与える場合、:term:`binary file` にしなければならず、 ``tarinfo.size`` バイ"
-"トがそれから読まれ、アーカイブに追加されます。:class:`TarInfo` オブジェクトを"
-"直接作成するか、:meth:`gettarinfo` を使って作成することができます。"
+"Añade el objeto :class:`TarInfo` *tarinfo* al archivo. Si se proporciona "
+"*fileobj*, debería ser un :term:`binary file`, y los bytes de ``tarinfo."
+"size`` se leen y se agregan al archivo. Puedes crear objetos :class:"
+"`TarInfo` directamente o usando :meth:`gettarinfo`."
 
-#: ../../library/tarfile.rst:491
+#: ../Doc/library/tarfile.rst:491
 msgid ""
 "Create a :class:`TarInfo` object from the result of :func:`os.stat` or "
 "equivalent on an existing file.  The file is either named by *name*, or "
@@ -936,15 +956,16 @@ msgid ""
 "from *fileobj*’s :attr:`~io.FileIO.name` attribute, or the *name* argument.  "
 "The name should be a text string."
 msgstr ""
-":func:`os.stat` の結果か、既存のファイルに相当するものから、:class:`TarInfo` "
-"オブジェクトを作成します。このファイルは、*name* で名付けられるか、ファイル記"
-"述子を持つ :term:`file object` *fileobj* として指定されます。*name* は:term:"
-"`path-like object` でも構いません。 *arcname* が与えられた場合、アーカイブ内"
-"のファイルに対して代替名を指定します。与えられない場合、名前は *fileobj* の :"
-"attr:`~io.FileIO.name` 属性 *name* 属性から取られます。名前はテキスト文字列に"
-"してください。"
+"Crea un objeto :class:`TarInfo` a partir del resultado de :func:`os.stat` o "
+"equivalente en un archivo existente. El archivo es nombrado por *name* o "
+"especificado como un objeto :term:`file object` *fileobj* con un descriptor "
+"de archivo. *name* puede ser un objeto :term:`path-like object`. Si es "
+"proporcionado, *arcname* especifica un nombre alternativo para el archivo en "
+"el archivo, de otra forma, el nombre es tomado del atributo *fileobj*’s :"
+"attr:`~io.FileIO.name`, o el argumento *name*. El nombre puede ser una "
+"cadena de texto."
 
-#: ../../library/tarfile.rst:500
+#: ../Doc/library/tarfile.rst:500
 msgid ""
 "You can modify some of the :class:`TarInfo`’s attributes before you add it "
 "using :meth:`addfile`. If the file object is not an ordinary file object "
@@ -953,101 +974,103 @@ msgid ""
 "`~gzip.GzipFile`. The :attr:`~TarInfo.name` may also be modified, in which "
 "case *arcname* could be a dummy string."
 msgstr ""
-":class:`TarInfo` の属性の一部は、:meth:`addfile` を使用して追加する前に修正で"
-"きます。ファイルオブジェクトが、ファイルの先頭にある通常のファイルオブジェク"
-"トでない場合、 :attr:`~TarInfo.size` などの属性は修正が必要かもしれません。こ"
-"れは、 :class:`~gzip.GzipFile` などの属性に当てはまります。:attr:`~TarInfo."
-"name` も修正できるかもしれず、この場合、*arcname* はダミーの文字列にすること"
-"ができます。"
+"Puedes modificar algunos de los atributos de la clase :class:`TarInfo`’ "
+"antes de que lo añadas utilizado el método :meth:`addfile`. Si el archivo "
+"objeto no es un archivo objeto ordinario posicionado al principio del "
+"archivo, atributos como :attr:`~TarInfo.size` puede que necesiten "
+"modificaciones. Este es el caso para objetos como :class:`~gzip.GzipFile`. "
+"El atributo :attr:`~TarInfo.name` también puede ser modificado, en cuyo caso "
+"*arcname* podría ser una cadena ficticia."
 
-#: ../../library/tarfile.rst:514
+#: ../Doc/library/tarfile.rst:514
 msgid ""
 "Close the :class:`TarFile`. In write mode, two finishing zero blocks are "
 "appended to the archive."
 msgstr ""
-":class:`TarFile` をクローズします。書き込みモードでは、完了ゼロブロックが 2 "
-"個アーカイブに追加されます。"
+"Cierra :class:`TarFile`. En el modo de escritura, se añaden dos bloques de "
+"cero de finalización al archivo."
 
-#: ../../library/tarfile.rst:520
+#: ../Doc/library/tarfile.rst:520
 msgid "A dictionary containing key-value pairs of pax global headers."
-msgstr "pax グローバルヘッダーに含まれる key-value ペアの辞書です。"
+msgstr ""
+"Un diccionario que contiene pares claves-valor de los encabezados globales "
+"pax."
 
-#: ../../library/tarfile.rst:527
+#: ../Doc/library/tarfile.rst:527
 msgid "TarInfo Objects"
-msgstr "TarInfo オブジェクト"
+msgstr "Objetos TarInfo"
 
-#: ../../library/tarfile.rst:529
+#: ../Doc/library/tarfile.rst:529
 msgid ""
 "A :class:`TarInfo` object represents one member in a :class:`TarFile`. Aside "
 "from storing all required attributes of a file (like file type, size, time, "
 "permissions, owner etc.), it provides some useful methods to determine its "
 "type. It does *not* contain the file's data itself."
 msgstr ""
-":class:`TarInfo` オブジェクトは :class:`TarFile` の一つのメンバーを表します。"
-"ファイルに必要なすべての属性 (ファイルタイプ、ファイルサイズ、時刻、アクセス"
-"権限、所有者等のような) を保存する他に、そのタイプを決定するのに役に立ついく"
-"つかのメソッドを提供します。これにはファイルのデータそのものは *含まれません"
-"* 。"
+"Un objeto :class:`TarInfo` representa un miembro en :class:`TarFile`. Además "
+"de almacenar todos los atributos requeridos de un archivo (como tipo de "
+"archivo, tamaño, fecha, permisos, dueño, etc.), provee de algunos métodos "
+"útiles para determinar su tipo. No contiene los datos del archivo por si "
+"mismo."
 
-#: ../../library/tarfile.rst:534
+#: ../Doc/library/tarfile.rst:534
 msgid ""
 ":class:`TarInfo` objects are returned by :class:`TarFile`'s methods :meth:"
 "`getmember`, :meth:`getmembers` and :meth:`gettarinfo`."
 msgstr ""
-":class:`TarInfo` オブジェクトは :class:`TarFile` のメソッド :meth:"
-"`getmember`、 :meth:`getmembers` および :meth:`gettarinfo` によって返されま"
-"す。"
+"Los objetos :class:`TarInfo` son retornados por métodos :class:`TarFile`' :"
+"meth:`getmember`, :meth:`getmembers` y :meth:`gettarinfo`."
 
-#: ../../library/tarfile.rst:540
+#: ../Doc/library/tarfile.rst:540
 msgid "Create a :class:`TarInfo` object."
-msgstr ":class:`TarInfo` オブジェクトを作成します。"
+msgstr "Crea un objeto :class:`TarInfo`."
 
-#: ../../library/tarfile.rst:545
+#: ../Doc/library/tarfile.rst:545
 msgid "Create and return a :class:`TarInfo` object from string buffer *buf*."
-msgstr ""
-":class:`TarInfo` オブジェクトを文字列バッファー *buf* から作成して返します。"
+msgstr "Crea y retorna un objeto :class:`TarInfo`."
 
-#: ../../library/tarfile.rst:547
+#: ../Doc/library/tarfile.rst:547
 msgid "Raises :exc:`HeaderError` if the buffer is invalid."
-msgstr "バッファーが不正な場合 :exc:`HeaderError` を送出します。"
+msgstr "Lanza una excepción :exc:`HeaderError` si el buffer es invalido."
 
-#: ../../library/tarfile.rst:552
+#: ../Doc/library/tarfile.rst:552
 msgid ""
 "Read the next member from the :class:`TarFile` object *tarfile* and return "
 "it as a :class:`TarInfo` object."
 msgstr ""
-":class:`TarFile` オブジェクトの *tarfile* から、次のメンバーを読み込んで、そ"
-"れを :class:`TarInfo` オブジェクトとして返します。"
+"Lee el siguiente miembro del objeto de la clase :class:`TarFile` *tarfile* y "
+"lo retorna como un objeto :class:`TarInfo`."
 
-#: ../../library/tarfile.rst:558
+#: ../Doc/library/tarfile.rst:558
 msgid ""
 "Create a string buffer from a :class:`TarInfo` object. For information on "
 "the arguments see the constructor of the :class:`TarFile` class."
 msgstr ""
-":class:`TarInfo` オブジェクトから文字列バッファーを作成します。引数についての"
-"情報は、:class:`TarFile` クラスのコンストラクターを参照してください。"
+"Crear un *buffer* de cadena a partir de un objeto :class:`TarInfo`. Para "
+"información sobre los argumentos consulta el constructor de la clase :class:"
+"`TarFile`."
 
-#: ../../library/tarfile.rst:565
+#: ../Doc/library/tarfile.rst:565
 msgid "A ``TarInfo`` object has the following public data attributes:"
-msgstr "``TarInfo`` オブジェクトには以下のデータ属性があります:"
+msgstr "Un objeto ``TarInfo`` tiene los siguientes atributos de dato públicos:"
 
-#: ../../library/tarfile.rst:570
+#: ../Doc/library/tarfile.rst:570
 msgid "Name of the archive member."
-msgstr "アーカイブメンバーの名前。"
+msgstr "Nombre del archivo miembro."
 
-#: ../../library/tarfile.rst:575
+#: ../Doc/library/tarfile.rst:575
 msgid "Size in bytes."
-msgstr "バイト単位でのサイズ。"
+msgstr "Tamaño en bytes."
 
-#: ../../library/tarfile.rst:580
+#: ../Doc/library/tarfile.rst:580
 msgid "Time of last modification."
-msgstr "最後に変更された時刻。"
+msgstr "Hora de la última modificación."
 
-#: ../../library/tarfile.rst:585
+#: ../Doc/library/tarfile.rst:585
 msgid "Permission bits."
-msgstr "許可ビット。"
+msgstr "Bits de permiso."
 
-#: ../../library/tarfile.rst:590
+#: ../Doc/library/tarfile.rst:590
 msgid ""
 "File type.  *type* is usually one of these constants: :const:`REGTYPE`, :"
 "const:`AREGTYPE`, :const:`LNKTYPE`, :const:`SYMTYPE`, :const:`DIRTYPE`, :"
@@ -1055,236 +1078,244 @@ msgid ""
 "const:`GNUTYPE_SPARSE`.  To determine the type of a :class:`TarInfo` object "
 "more conveniently, use the ``is*()`` methods below."
 msgstr ""
-"ファイルタイプ。*type* は通常、定数 :const:`REGTYPE`、:const:`AREGTYPE`、:"
-"const:`LNKTYPE`、:const:`SYMTYPE`、:const:`DIRTYPE`、:const:`FIFOTYPE`、:"
-"const:`CONTTYPE`、:const:`CHRTYPE`、:const:`BLKTYPE`、あるいは :const:"
-"`GNUTYPE_SPARSE` のいずれかです。:class:`TarInfo` オブジェクトのタイプをもっ"
-"と簡単に解決するには、下記の ``is*()`` メソッドを使って下さい。"
+"Tipo de archivo. *type* es por lo general una de las siguientes constantes: :"
+"const:`REGTYPE`, :const:`AREGTYPE`, :const:`LNKTYPE`, :const:`SYMTYPE`, :"
+"const:`DIRTYPE`, :const:`FIFOTYPE`, :const:`CONTTYPE`, :const:`CHRTYPE`, :"
+"const:`BLKTYPE`, :const:`GNUTYPE_SPARSE`. Para determinar el tipo de un "
+"objeto :class:`TarInfo` de forma más conveniente, utiliza los métodos "
+"``is*()`` de abajo."
 
-#: ../../library/tarfile.rst:599
+#: ../Doc/library/tarfile.rst:599
 msgid ""
 "Name of the target file name, which is only present in :class:`TarInfo` "
 "objects of type :const:`LNKTYPE` and :const:`SYMTYPE`."
 msgstr ""
-"リンク先ファイルの名前。これはタイプ :const:`LNKTYPE` と :const:`SYMTYPE` "
-"の :class:`TarInfo` オブジェクトにだけ存在します。"
+"Nombre del archivo objetivo, el cual solo está presente en los objetos :"
+"class:`TarInfo` de tipo :const:`LNKTYPE` y del tipo :const:`SYMTYPE`."
 
-#: ../../library/tarfile.rst:605
+#: ../Doc/library/tarfile.rst:605
 msgid "User ID of the user who originally stored this member."
-msgstr "ファイルメンバーを保存した元のユーザーのユーザー ID。"
+msgstr "ID de usuario que originalmente almacenó este miembro."
 
-#: ../../library/tarfile.rst:610
+#: ../Doc/library/tarfile.rst:610
 msgid "Group ID of the user who originally stored this member."
-msgstr "ファイルメンバーを保存した元のユーザーのグループ ID。"
+msgstr "ID de grupo del usuario que originalmente almacenó este miembro."
 
-#: ../../library/tarfile.rst:615
+#: ../Doc/library/tarfile.rst:615
 msgid "User name."
-msgstr "ファイルメンバーを保存した元のユーザーのユーザー名。"
+msgstr "Nombre de usuario."
 
-#: ../../library/tarfile.rst:620
+#: ../Doc/library/tarfile.rst:620
 msgid "Group name."
-msgstr "ファイルメンバーを保存した元のユーザーのグループ名。"
+msgstr "Nombre del grupo."
 
-#: ../../library/tarfile.rst:625
+#: ../Doc/library/tarfile.rst:625
 msgid ""
 "A dictionary containing key-value pairs of an associated pax extended header."
-msgstr "pax 拡張ヘッダーに関連付けられた、key-value ペアの辞書。"
+msgstr ""
+"Un diccionario que contiene pares *key-value* de un encabezado *pax "
+"extended*."
 
-#: ../../library/tarfile.rst:628
+#: ../Doc/library/tarfile.rst:628
 msgid "A :class:`TarInfo` object also provides some convenient query methods:"
 msgstr ""
-":class:`TarInfo` オブジェクトは便利な照会用のメソッドもいくつか提供していま"
-"す:"
+"Un objeto :class:`TarInfo` también provee de algunos métodos de consulta "
+"convenientes:"
 
-#: ../../library/tarfile.rst:633
+#: ../Doc/library/tarfile.rst:633
 msgid "Return :const:`True` if the :class:`Tarinfo` object is a regular file."
 msgstr ""
-":class:`Tarinfo` オブジェクトが一般ファイルの場合に、:const:`True` を返しま"
-"す。"
+"Retorna :const:`True` si el objeto :class:`Tarinfo` es un archivo regular."
 
-#: ../../library/tarfile.rst:638
+#: ../Doc/library/tarfile.rst:638
 msgid "Same as :meth:`isfile`."
-msgstr ":meth:`isfile` と同じです。"
+msgstr "Igual que :meth:`isfile`."
 
-#: ../../library/tarfile.rst:643
+#: ../Doc/library/tarfile.rst:643
 msgid "Return :const:`True` if it is a directory."
-msgstr "ディレクトリの場合に :const:`True` を返します。"
+msgstr "Retorna :const:`True` si es un directorio."
 
-#: ../../library/tarfile.rst:648
+#: ../Doc/library/tarfile.rst:648
 msgid "Return :const:`True` if it is a symbolic link."
-msgstr "シンボリックリンクの場合に :const:`True` を返します。"
+msgstr "Retorna :const:`True` si es un enlace simbólico."
 
-#: ../../library/tarfile.rst:653
+#: ../Doc/library/tarfile.rst:653
 msgid "Return :const:`True` if it is a hard link."
-msgstr "ハードリンクの場合に :const:`True` を返します。"
+msgstr "Retorna :const:`True` si es un enlace duro."
 
-#: ../../library/tarfile.rst:658
+#: ../Doc/library/tarfile.rst:658
 msgid "Return :const:`True` if it is a character device."
-msgstr "キャラクターデバイスの場合に :const:`True` を返します。"
+msgstr "Retorna :const:`True` si es un dispositivo de caracter."
 
-#: ../../library/tarfile.rst:663
+#: ../Doc/library/tarfile.rst:663
 msgid "Return :const:`True` if it is a block device."
-msgstr "ブロックデバイスの場合に :const:`True` を返します。"
+msgstr "Retorna :const:`True` si es un dispositivo de bloque."
 
-#: ../../library/tarfile.rst:668
+#: ../Doc/library/tarfile.rst:668
 msgid "Return :const:`True` if it is a FIFO."
-msgstr "FIFO の場合に :const:`True` を返します。"
+msgstr "Retorna :const:`True` si es un FIFO."
 
-#: ../../library/tarfile.rst:673
+#: ../Doc/library/tarfile.rst:673
 msgid ""
 "Return :const:`True` if it is one of character device, block device or FIFO."
 msgstr ""
-"キャラクターデバイス、ブロックデバイスあるいは FIFO のいずれかの場合に :"
-"const:`True` を返します。"
+"Retorna :const:`True` si es uno de los caracteres de dispositivo, "
+"dispositivo de bloque o FIFO."
 
-#: ../../library/tarfile.rst:680
+#: ../Doc/library/tarfile.rst:680
 msgid "Command-Line Interface"
-msgstr "コマンドラインインターフェイス"
+msgstr "Interfaz de línea de comandos"
 
-#: ../../library/tarfile.rst:684
+#: ../Doc/library/tarfile.rst:684
 msgid ""
 "The :mod:`tarfile` module provides a simple command-line interface to "
 "interact with tar archives."
 msgstr ""
-":mod:`tarfile` モジュールは、 tar アーカイブを操作するための簡単なコマンドラ"
-"インインターフェースを提供しています。"
+"El módulo :mod:`tarfile` provee una interfaz de línea de comandos sencilla "
+"para interactuar con archivos tar."
 
-#: ../../library/tarfile.rst:687
+#: ../Doc/library/tarfile.rst:687
 msgid ""
 "If you want to create a new tar archive, specify its name after the :option:"
 "`-c` option and then list the filename(s) that should be included:"
 msgstr ""
-"tar アーカイブを新規に作成したい場合、:option:`-c` オプションの後にまとめたい"
-"ファイル名のリストを指定してください:"
+"Si quieres crear un nuevo archivo tar, especifica su nombre después de la "
+"opción :option:`-c` y después lista el nombre de archivo(s) que deberían ser "
+"incluidos:"
 
-#: ../../library/tarfile.rst:694
+#: ../Doc/library/tarfile.rst:694
 msgid "Passing a directory is also acceptable:"
-msgstr "ディレクトリを渡すこともできます:"
+msgstr "Proporcionar un directorio también es aceptable:"
 
-#: ../../library/tarfile.rst:700
+#: ../Doc/library/tarfile.rst:700
 msgid ""
 "If you want to extract a tar archive into the current directory, use the :"
 "option:`-e` option:"
 msgstr ""
-"tar アーカイブをカレントディレクトリに展開したい場合、:option:`-e` オプション"
-"を使用してください:"
+"Si deseas extraer un archivo tar en el directorio actual, utiliza la opción :"
+"option:`-e`:"
 
-#: ../../library/tarfile.rst:707
+#: ../Doc/library/tarfile.rst:707
 msgid ""
 "You can also extract a tar archive into a different directory by passing the "
 "directory's name:"
 msgstr ""
-"ディレクトリ名を渡すことで tar アーカイブを別のディレクトリに取り出すこともで"
-"きます:"
+"También puedes extraer un archivo tar en un directorio diferente pasando el "
+"nombre del directorio como parámetro:"
 
-#: ../../library/tarfile.rst:714
+#: ../Doc/library/tarfile.rst:714
 msgid "For a list of the files in a tar archive, use the :option:`-l` option:"
 msgstr ""
-"tar アーカイブ内のファイル一覧を表示するには :option:`-l` を使用してください:"
+"Para obtener una lista de archivos dentro de un archivo tar, utiliza la "
+"opción  :option:`-l`:"
 
-#: ../../library/tarfile.rst:722
+#: ../Doc/library/tarfile.rst:722
 msgid "Command-line options"
-msgstr "コマンドラインオプション"
+msgstr "Opciones de línea de comandos"
 
-#: ../../library/tarfile.rst:727
+#: ../Doc/library/tarfile.rst:727
 msgid "List files in a tarfile."
-msgstr "tarfile 内のファイル一覧を表示します。"
+msgstr "Listar archivos en un tar."
 
-#: ../../library/tarfile.rst:732
+#: ../Doc/library/tarfile.rst:732
 msgid "Create tarfile from source files."
-msgstr "ソースファイルから tarfile を作成します。"
+msgstr "Crear archivo tar desde archivos fuente."
 
-#: ../../library/tarfile.rst:737
+#: ../Doc/library/tarfile.rst:737
 msgid ""
 "Extract tarfile into the current directory if *output_dir* is not specified."
 msgstr ""
-"*output_dir* が指定されていない場合、カレントディレクトリに tarfile を展開し"
-"ます。"
+"Extrae el archivo tar en el directorio actual si *output_dir* no es "
+"especificado."
 
-#: ../../library/tarfile.rst:742
+#: ../Doc/library/tarfile.rst:742
 msgid "Test whether the tarfile is valid or not."
-msgstr "tarfile が有効かどうか調べます。"
+msgstr "Probar si el archivo tar es valido o no."
 
-#: ../../library/tarfile.rst:746
+#: ../Doc/library/tarfile.rst:746
 msgid "Verbose output."
-msgstr "詳細も出力します。"
+msgstr "Output *verbose*."
 
-#: ../../library/tarfile.rst:751
+#: ../Doc/library/tarfile.rst:751
 msgid "Examples"
-msgstr "使用例"
+msgstr "Ejemplos"
 
-#: ../../library/tarfile.rst:753
+#: ../Doc/library/tarfile.rst:753
 msgid "How to extract an entire tar archive to the current working directory::"
-msgstr "tar アーカイブから現在のディレクトリにすべて抽出する方法::"
+msgstr "Cómo extraer un archivo tar entero al directorio de trabajo actual::"
 
-#: ../../library/tarfile.rst:760
+#: ../Doc/library/tarfile.rst:760
 msgid ""
 "How to extract a subset of a tar archive with :meth:`TarFile.extractall` "
 "using a generator function instead of a list::"
 msgstr ""
-"tar アーカイブの一部を、リストの代わりにジェネレーター関数を利用して :meth:"
-"`TarFile.extractall` で展開する方法::"
+"Cómo extraer un subconjunto de un archivo tar con :meth:`TarFile.extractall` "
+"utilizando una función generadora en lugar de una lista::"
 
-#: ../../library/tarfile.rst:775
+#: ../Doc/library/tarfile.rst:775
 msgid "How to create an uncompressed tar archive from a list of filenames::"
-msgstr "非圧縮 tar アーカイブをファイル名のリストから作成する方法::"
+msgstr ""
+"Cómo crear un archivo tar sin comprimir desde una lista de nombres de "
+"archivo::"
 
-#: ../../library/tarfile.rst:783
+#: ../Doc/library/tarfile.rst:783
 msgid "The same example using the :keyword:`with` statement::"
-msgstr ":keyword:`with` 文を利用した同じ例::"
+msgstr "El mismo ejemplo utilizando la declaración :keyword:`with`::"
 
-#: ../../library/tarfile.rst:790
+#: ../Doc/library/tarfile.rst:790
 msgid ""
 "How to read a gzip compressed tar archive and display some member "
 "information::"
 msgstr ""
-"gzip 圧縮 tar アーカイブを作成してメンバー情報のいくつかを表示する方法::"
+"Cómo leer un archivo tar comprimido con gzip y desplegar un poco de "
+"información del miembro::"
 
-#: ../../library/tarfile.rst:804
+#: ../Doc/library/tarfile.rst:804
 msgid ""
 "How to create an archive and reset the user information using the *filter* "
 "parameter in :meth:`TarFile.add`::"
 msgstr ""
-":meth:`TarFile.add` 関数の *filter* 引数を利用してユーザー情報をリセットしな"
-"がらアーカイブを作成する方法::"
+"Cómo crear un archivo y reiniciar la información del usuario usando el "
+"parámetro *filter* en :meth:`TarFile.add`::"
 
-#: ../../library/tarfile.rst:820
+#: ../Doc/library/tarfile.rst:820
 msgid "Supported tar formats"
-msgstr "サポートしている tar フォーマット"
+msgstr "Formatos tar con soporte"
 
-#: ../../library/tarfile.rst:822
+#: ../Doc/library/tarfile.rst:822
 msgid ""
 "There are three tar formats that can be created with the :mod:`tarfile` "
 "module:"
 msgstr ""
-":mod:`tarfile` モジュールは 3 種類の tar フォーマットを作成することができま"
-"す:"
+"Hay tres formatos tar que puede ser creados con el módulo :mod:`tarfile`:"
 
-#: ../../library/tarfile.rst:824
+#: ../Doc/library/tarfile.rst:824
 msgid ""
 "The POSIX.1-1988 ustar format (:const:`USTAR_FORMAT`). It supports filenames "
 "up to a length of at best 256 characters and linknames up to 100 characters. "
 "The maximum file size is 8 GiB. This is an old and limited but widely "
 "supported format."
 msgstr ""
-"POSIX.1-1988 ustar format (:const:`USTAR_FORMAT`). ファイル名の長さは256文字"
-"までで、リンク名の長さは100文字までです。最大のファイルサイズは8GiBです。この"
-"フォーマットは古くて制限が多いですが、広くサポートされています。"
+"El formato (:const:`USTAR_FORMAT`) POSIX.1-1988 ustar. Admite nombres de "
+"archivos de hasta una longitud de 256 caracteres y nombres de enlace de "
+"hasta 100 caracteres. El tamaño máximo de archivo es de 8 GiB. Este es un "
+"formato viejo y limitado pero con amplio soporte."
 
-#: ../../library/tarfile.rst:829
+#: ../Doc/library/tarfile.rst:829
 msgid ""
 "The GNU tar format (:const:`GNU_FORMAT`). It supports long filenames and "
 "linknames, files bigger than 8 GiB and sparse files. It is the de facto "
 "standard on GNU/Linux systems. :mod:`tarfile` fully supports the GNU tar "
 "extensions for long names, sparse file support is read-only."
 msgstr ""
-"GNU tar format (:const:`GNU_FORMAT`). 長いファイル名とリンク名、8GiBを超える"
-"ファイルやスパース(sparse)ファイルをサポートしています。これは GNU/Linux シス"
-"テムにおいてデファクト・スタンダードになっています。 :mod:`tarfile` モジュー"
-"ルは長いファイル名を完全にサポートしています。 スパースファイルは読み込みのみ"
-"サポートしています。"
+"El formato GNU tar (:const:`GNU_FORMAT`). Admite nombres de archivo largos y "
+"nombres de enlace, archivos más grandes que 8 GiB de tamaño y archivos "
+"dispersos. Es el estándar *de facto* en sistemas GNU/Linux. :mod:`tarfile` "
+"admite de forma completa las extensiones de GNU tar para nombres largos, el "
+"soporte para archivos dispersos es de solo lectura."
 
-#: ../../library/tarfile.rst:834
+#: ../Doc/library/tarfile.rst:834
+#, fuzzy
 msgid ""
 "The POSIX.1-2001 pax format (:const:`PAX_FORMAT`). It is the most flexible "
 "format with virtually no limits. It supports long filenames and linknames, "
@@ -1294,8 +1325,17 @@ msgid ""
 "but should treat *pax* archives as if they were in the universally supported "
 "*ustar* format. It is the current default format for new archives."
 msgstr ""
+"El formato pax POSIX.1-2001 (:const:`PAX_FORMAT`). Es el formato más "
+"flexible prácticamente sin límites. Admite nombres de archivo largos y "
+"nombres de enlaces, archivos grandes y almacena nombres de ruta de forma "
+"portátil. Las implementaciones modernas de tar, incluyendo GNU tar, bsdtar/"
+"libarchive y star, son totalmente compatibles con las características "
+"extendidas *pax*; Es posible que algunas bibliotecas antiguas o no "
+"mantenidas no lo hagan, pero deberían tratar los archivos *pax* como si "
+"estuvieran en el formato *ustar* compatible universalmente. Es el formato "
+"predeterminado actual para archivos nuevos."
 
-#: ../../library/tarfile.rst:842
+#: ../Doc/library/tarfile.rst:842
 msgid ""
 "It extends the existing *ustar* format with extra headers for information "
 "that cannot be stored otherwise. There are two flavours of pax headers: "
@@ -1303,15 +1343,21 @@ msgid ""
 "valid for the complete archive and affect all following files. All the data "
 "in a pax header is encoded in *UTF-8* for portability reasons."
 msgstr ""
+"Extiende el formato existente *ustar* con cabeceras adicionales para "
+"información que no puede ser almacenada de otra manera. Hay dos variaciones "
+"de encabezados pax: Los encabezados extendidos solo afectan al encabezado "
+"del archivo posterior, las encabezados globales son validos para el archivo "
+"entero y afectan todos los siguientes archivos. Todos los datos en un "
+"encabezado pax son codificados en *UTF-8* por razones de portabilidad."
 
-#: ../../library/tarfile.rst:848
+#: ../Doc/library/tarfile.rst:848
 msgid ""
 "There are some more variants of the tar format which can be read, but not "
 "created:"
 msgstr ""
-"他にも、読み込みのみサポートしている tar フォーマットがいくつかあります:"
+"Existen más variantes del formato tar que puede ser leídas, pero no creadas:"
 
-#: ../../library/tarfile.rst:851
+#: ../Doc/library/tarfile.rst:851
 msgid ""
 "The ancient V7 format. This is the first tar format from Unix Seventh "
 "Edition, storing only regular files and directories. Names must not be "
@@ -1319,25 +1365,26 @@ msgid ""
 "archives have miscalculated header checksums in case of fields with non-"
 "ASCII characters."
 msgstr ""
-"ancient V7 フォーマット。これは Unix 7th Edition から存在する、最初の tar "
-"フォーマットです。通常のファイルとディレクトリのみ保存します。名前は 100 文字"
-"を超えてはならず、ユーザー/グループ名に関する情報は保存されません。いくつかの"
-"アーカイブは、フィールドが ASCII でない文字を含む場合に、ヘッダーのチェックサ"
-"ムの計算を誤ります。"
+"El antiguo formato V7. Este es el primer formato tar de *Unix Seventh "
+"Edition*, almacena solo archivos y directorios normales. Los nombres no "
+"deben tener más de 100 caracteres, no hay información de nombre de usuario/"
+"grupo disponible. Algunos archivos tienen sumas de comprobación de "
+"encabezado mal calculadas en el caso de campos con caracteres que no son "
+"ASCII."
 
-#: ../../library/tarfile.rst:856
+#: ../Doc/library/tarfile.rst:856
 msgid ""
 "The SunOS tar extended format. This format is a variant of the POSIX.1-2001 "
 "pax format, but is not compatible."
 msgstr ""
-"SunOS tar 拡張フォーマット。POSIX.1-2001 pax フォーマットの亜流ですが、互換性"
-"がありません。"
+"El formato extendido tar de SunOS. Este formato es una variante del formato "
+"POSIX.1-2001 pax, pero no es compatible."
 
-#: ../../library/tarfile.rst:862
+#: ../Doc/library/tarfile.rst:862
 msgid "Unicode issues"
-msgstr "Unicode に関する問題"
+msgstr "Problemas unicode"
 
-#: ../../library/tarfile.rst:864
+#: ../Doc/library/tarfile.rst:864
 msgid ""
 "The tar format was originally conceived to make backups on tape drives with "
 "the main focus on preserving file system information. Nowadays tar archives "
@@ -1351,27 +1398,31 @@ msgid ""
 "encoding of an archive. The pax format was designed to solve this problem. "
 "It stores non-ASCII metadata using the universal character encoding *UTF-8*."
 msgstr ""
-"tar フォーマットは、もともとテープドライブにファイルシステムのバックアップを"
-"とる目的で設計されました。現在、tarアーカイブはファイルを配布する際に一般的に"
-"用いられ、ネットワーク上で交換されています。オリジナルフォーマットが抱える一"
-"つの問題は (他の多くのフォーマットでも同じですが)、様々な文字エンコーディング"
-"のサポートについて考慮していないことです。例えば、*UTF-8* システム上で作成さ"
-"れた通常の tar アーカイブは、非 *ASCII* 文字を含んでいた場合、*Latin-1* シス"
-"テムでは正しく読み取ることができません。テキストのメタデータ (ファイル名、リ"
-"ンク名、ユーザー/グループ名など) は破壊されます。残念なことに、アーカイブのエ"
-"ンコーディングを自動検出する方法はありません。pax フォーマットはこの問題を解"
-"決するために設計されました。これは非 ASCII メタデータをユニバーサル文字エン"
-"コーディング *UTF-8* を使用して格納します。"
+"El formato tar fue originalmente concebido para realizar respaldos en "
+"unidades de cinta con el objetivo principal de preservar la información del "
+"sistema de archivos. Hoy en día los archivos tar son comúnmente utilizados "
+"para distribución de archivos e intercambio de archivos sobre redes. Un "
+"problema del formato original (el cual es la base de todos los demás "
+"formatos) es que no hay concepto de soporte para diferentes codificaciones "
+"de caracteres. Por ejemplo, un archivo tar ordinario creado en un sistema "
+"*UTF-8* no puede ser leído correctamente en un sistema *Latin-1* si este "
+"contiene caracteres de tipo no ASCII. Los meta-datos textuales (como nombres "
+"de archivos, nombres de enlace, nombres de usuario/grupo) aparecerán "
+"dañados. Desafortunadamente, no hay manera de detectar de forma automática "
+"la codificación de un archivo. El formato *pax* fue diseñado para resolver "
+"este problema. Almacena los metadatos no ASCII usando una codificación de "
+"caracteres universal *UTF-8*."
 
-#: ../../library/tarfile.rst:876
+#: ../Doc/library/tarfile.rst:876
 msgid ""
 "The details of character conversion in :mod:`tarfile` are controlled by the "
 "*encoding* and *errors* keyword arguments of the :class:`TarFile` class."
 msgstr ""
-":mod:`tarfile` における文字変換処理の詳細は :class:`TarFile` クラスのキーワー"
-"ド引数 *encoding* および *errors* によって制御されます。"
+"Los detalles de la conversión de caracteres en el módulo :mod:`tarfile` son "
+"controlados por los argumentos de palabra clave *encoding* y *errors* de la "
+"clase :class:`TarFile`."
 
-#: ../../library/tarfile.rst:879
+#: ../Doc/library/tarfile.rst:879
 msgid ""
 "*encoding* defines the character encoding to use for the metadata in the "
 "archive. The default value is :func:`sys.getfilesystemencoding` or "
@@ -1379,32 +1430,35 @@ msgid ""
 "written, the metadata must be either decoded or encoded. If *encoding* is "
 "not set appropriately, this conversion may fail."
 msgstr ""
-"*encoding* はアーカイブのメタデータに使用する文字エンコーディングを指定しま"
-"す。デフォルト値は :func:`sys.getfilesystemencoding` で、フォールバックとし"
-"て ``'ascii'`` が使用されます。アーカイブの読み書き時に、メタデータはそれぞれ"
-"デコードまたはエンコードしなければなりません。*encoding* に適切な値が設定され"
-"ていない場合、その変換は失敗することがあります。"
+"*encoding* define la codificación de caracteres a utilizar para los "
+"metadatos del archivo. El valor predeterminado es :func:`sys."
+"getfilesystemencoding` o ``'ascii'`` como una alternativa. Dependiendo de si "
+"el archivo se lee o escribe, los metadatos deben decodificarse o "
+"codificarse. Si el *encoding* no se configura correctamente, esta conversión "
+"puede fallar."
 
-#: ../../library/tarfile.rst:885
+#: ../Doc/library/tarfile.rst:885
 msgid ""
 "The *errors* argument defines how characters are treated that cannot be "
 "converted. Possible values are listed in section :ref:`error-handlers`. The "
 "default scheme is ``'surrogateescape'`` which Python also uses for its file "
 "system calls, see :ref:`os-filenames`."
 msgstr ""
-"引数 *errors* は文字を変換できない時の扱いを指定します。指定できる値は :ref:"
-"`error-handlers` 節を参照してください。デフォルトのスキームは "
-"``'surrogateescape'`` で、Python はそのファイルシステムの呼び出しも使用しま"
-"す。:ref:`os-filenames` を参照してください。"
+"El argumento *errors* define como van a ser tratados los caracteres que no "
+"pueden ser transformados. Los valores admitidos están listados en la "
+"sección :ref:`error-handlers`. El esquema predeterminado es "
+"``'surrogateescape'`` el cual Python también utiliza para sus llamadas al "
+"sistema de archivos. Consulta :ref:`os-filenames`."
 
-#: ../../library/tarfile.rst:890
+#: ../Doc/library/tarfile.rst:890
 msgid ""
 "For :const:`PAX_FORMAT` archives (the default), *encoding* is generally not "
 "needed because all the metadata is stored using *UTF-8*. *encoding* is only "
 "used in the rare cases when binary pax headers are decoded or when strings "
 "with surrogate characters are stored."
 msgstr ""
-"デフォルトの :const:`PAX_FORMAT` アーカイブでは、メタデータはすべて *UTF-8* "
-"で格納されるため、*encoding* は通常指定する必要はありません。*encoding* は、"
-"まれにある、バイナリの pax ヘッダーがデコードされた場合、あるいはサロゲート文"
-"字を含む文字列が格納されていた場合に使用されます。"
+"Para archivos :const:`PAX_FORMAT` (el formato default), el *encoding* "
+"generalmente no es necesario porque todos los meta-datos son almacenados "
+"utilizando *UTF-8*, el *encoding* solo es utilizado en aquellos casos cuando "
+"las cabeceras binarias PAX son decodificadas o cuando se almacenan cadenas "
+"de texto con caracteres sustitutos."

@@ -1,37 +1,36 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2022
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:07+0000\n"
-"Last-Translator: tomo, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2023-02-10 12:24-0300\n"
+"Last-Translator: Francisco Mora <fr.morac@duocuc.cl>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../../library/hashlib.rst:2
+#: ../Doc/library/hashlib.rst:2
 msgid ":mod:`hashlib` --- Secure hashes and message digests"
-msgstr ":mod:`hashlib` --- セキュアハッシュおよびメッセージダイジェスト"
+msgstr ":mod:`hashlib` --- Hashes seguros y resúmenes de mensajes"
 
-#: ../../library/hashlib.rst:10
+#: ../Doc/library/hashlib.rst:10
 msgid "**Source code:** :source:`Lib/hashlib.py`"
-msgstr "**ソースコード:** :source:`Lib/hashlib.py`"
+msgstr "**Código fuente:** :source:`Lib/hashlib.py`"
 
-#: ../../library/hashlib.rst:23
+#: ../Doc/library/hashlib.rst:23
 msgid ""
 "This module implements a common interface to many different secure hash and "
 "message digest algorithms.  Included are the FIPS secure hash algorithms "
@@ -40,34 +39,35 @@ msgid ""
 "hash\" and \"message digest\" are interchangeable.  Older algorithms were "
 "called message digests.  The modern term is secure hash."
 msgstr ""
-"このモジュールは、セキュアハッシュやメッセージダイジェスト用のさまざまなアル"
-"ゴリズムを実装したものです。FIPSのセキュアなハッシュアルゴリズムである SHA1、"
-"SHA224、SHA256、SHA384およびSHA512 (FIPS 180-2 で定義されているもの) だけでな"
-"くRSAのMD5アルゴリズム (インターネットの :rfc:`1321` で定義されています)も実"
-"装しています。「セキュアなハッシュ」と「メッセージダイジェスト」はどちらも同"
-"じ意味です。古くからあるアルゴリズムは「メッセージダイジェスト」と呼ばれてい"
-"ますが、最近は「セキュアハッシュ」という用語が用いられています。"
+"Este módulo implementa una interfaz común a diferentes algoritmos de hash "
+"seguro y resúmenes de mensajes. Están incluidos los algoritmos de hash "
+"seguro FIPS  SHA1, SHA224, SHA256, SHA384 y SHA512 (definidos en FIPS 180-2) "
+"además del algoritmo MD5 de RSA (definido en Internet :rfc:`1321`). Los "
+"términos \"hash seguro\" y \"resumen de mensaje\" son intercambiables. Los "
+"algoritmos más antiguos eran denominados resúmenes de mensajes. El término "
+"moderno es hash seguro."
 
-#: ../../library/hashlib.rst:32
+#: ../Doc/library/hashlib.rst:32
 msgid ""
 "If you want the adler32 or crc32 hash functions, they are available in the :"
 "mod:`zlib` module."
 msgstr ""
-"adler32 や crc32 ハッシュ関数は :mod:`zlib` モジュールで提供されています。"
+"Si quieres las funciones de hash adler32 o crc32, están disponibles en el "
+"módulo :mod:`zlib`."
 
-#: ../../library/hashlib.rst:37
+#: ../Doc/library/hashlib.rst:37
 msgid ""
 "Some algorithms have known hash collision weaknesses, refer to the \"See "
 "also\" section at the end."
 msgstr ""
-"幾つかのアルゴリズムはハッシュの衝突に弱いことが知られています。最後の \"参考"
-"\" セクションを見てください。"
+"Algunos algoritmos tienen conocidas debilidades de colisión de hash, "
+"consulte la sección \"Ver también\" al final."
 
-#: ../../library/hashlib.rst:44
+#: ../Doc/library/hashlib.rst:44
 msgid "Hash algorithms"
-msgstr "ハッシュアルゴリズム"
+msgstr "Algoritmos de hash"
 
-#: ../../library/hashlib.rst:46
+#: ../Doc/library/hashlib.rst:46
 msgid ""
 "There is one constructor method named for each type of :dfn:`hash`.  All "
 "return a hash object with the same simple interface. For example: use :func:"
@@ -77,32 +77,31 @@ msgid ""
 "`digest` of the concatenation of the data fed to it so far using the :meth:"
 "`digest` or :meth:`hexdigest` methods."
 msgstr ""
-"各 :dfn:`hash` の名前が付いたコンストラクタがあります。いずれも同一で簡単なイ"
-"ンターフェイスのあるハッシュオブジェクトを返します。例えば、SHA-256 ハッシュ"
-"オブジェクトを作るには :func:`sha256` を使います。このオブジェクトには :meth:"
-"`update` メソッドを用いて :term:`bytes-like オブジェクト <bytes-like "
-"object>` (通常 :class:`bytes`) を渡すことができます。:meth:`digest` や :meth:"
-"`hexdigest` メソッドを用いて、それまでに渡したデータを連結したものの :dfn:"
-"`digest` をいつでも要求することができます。"
+"Hay un método constructor nombrado para cada tipo de :dfn:`hash`. Todos "
+"retornan un objeto de hash con la misma interfaz simple. Por ejemplo, usa :"
+"func:`sha256` para crear un objeto de hash SHA-256. Ahora puedes alimentar "
+"este objeto con :term:`objetos como bytes <bytes-like object>` (normalmente :"
+"class:`bytes`) usando el método :meth:`update`. En cualquier punto puedes "
+"pedir el resumen (:dfn:`digest`) de la concatenación de los datos "
+"alimentados al mismo usando los métodos :meth:`digest` o :meth:`hexdigest`."
 
-#: ../../library/hashlib.rst:56
+#: ../Doc/library/hashlib.rst:56
 msgid ""
 "For better multithreading performance, the Python :term:`GIL` is released "
 "for data larger than 2047 bytes at object creation or on update."
 msgstr ""
-"マルチスレッドにおける良好なパフォーマンスを得るために、オブジェクトの生成時"
-"または更新時に与えるデータが 2047 バイトを超えている場合、Python :term:`GIL` "
-"が解除されます。"
+"Para un rendimiento multihilo mejor, el :term:`GIL` de Python es liberado "
+"para datos superiores a 2047 bytes en la creación o actualización de objetos."
 
-#: ../../library/hashlib.rst:61
+#: ../Doc/library/hashlib.rst:61
 msgid ""
 "Feeding string objects into :meth:`update` is not supported, as hashes work "
 "on bytes, not on characters."
 msgstr ""
-"文字列オブジェクトを :meth:`update` に渡すのはサポートされていません。ハッ"
-"シュはバイトには機能しますが、文字には機能しないからです。"
+"La alimentación de objetos de cadenas en :meth:`update` no está soportada, "
+"ya que los hashes funcionan en bytes, no en caracteres."
 
-#: ../../library/hashlib.rst:66
+#: ../Doc/library/hashlib.rst:66
 msgid ""
 "Constructors for hash algorithms that are always present in this module are :"
 "func:`sha1`, :func:`sha224`, :func:`sha256`, :func:`sha384`, :func:"
@@ -114,21 +113,29 @@ msgid ""
 "`sha3_384`, :func:`sha3_512`, :func:`shake_128`, :func:`shake_256` are also "
 "available."
 msgstr ""
+"Los constructores para algoritmos hash que siempre están presentes en este "
+"módulo son :func:`sha1`, :func:`sha224`, :func:`sha256`, :func:`sha384`, :"
+"func:`sha512`, :func:`blake2b` y :func:`blake2s`. :func:`md5` normalmente "
+"también está disponible, aunque puede faltar o estar bloqueado si está "
+"utilizando una rara compilación de Python \"compatible con FIPS \". También "
+"pueden estar disponibles algoritmos adicionales dependiendo de la biblioteca "
+"OpenSSL que Python use en su plataforma. En la mayoría de las plataformas "
+"también están disponibles :func:`sha3_224`, :func:`sha3_256`, :func:"
+"`sha3_384`, :func:`sha3_512`, :func:`shake_128`, :func:`shake_256`."
 
-#: ../../library/hashlib.rst:76
+#: ../Doc/library/hashlib.rst:76
 msgid ""
 "SHA3 (Keccak) and SHAKE constructors :func:`sha3_224`, :func:`sha3_256`, :"
 "func:`sha3_384`, :func:`sha3_512`, :func:`shake_128`, :func:`shake_256`."
 msgstr ""
-"SHA3 (Keccak) ならびに SHAKE コンストラクタ :func:`sha3_224`, :func:"
-"`sha3_256`, :func:`sha3_384`, :func:`sha3_512`, :func:`shake_128`, :func:"
-"`shake_256`。"
+"Constructores SHA3 (Keccak) y SHAKE :func:`sha3_224`, :func:`sha3_256`, :"
+"func:`sha3_384`, :func:`sha3_512`, :func:`shake_128`, :func:`shake_256`."
 
-#: ../../library/hashlib.rst:80
+#: ../Doc/library/hashlib.rst:80
 msgid ":func:`blake2b` and :func:`blake2s` were added."
-msgstr ":func:`blake2b` と :func:`blake2s` が追加されました。"
+msgstr "Fueron añadidas :func:`blake2b` y :func:`blake2s`."
 
-#: ../../library/hashlib.rst:85
+#: ../Doc/library/hashlib.rst:85
 msgid ""
 "All hashlib constructors take a keyword-only argument *usedforsecurity* with "
 "default value ``True``. A false value allows the use of insecure and blocked "
@@ -136,22 +143,30 @@ msgid ""
 "hashing algorithm is not used in a security context, e.g. as a non-"
 "cryptographic one-way compression function."
 msgstr ""
+"Todos los constructores hashlib toman un argumento de solo palabra clave "
+"*usedforsecurity* con el valor predeterminado ``True``. Un valor falso "
+"permite el uso de algoritmos hash inseguros y bloqueados en entornos "
+"restringidos. ``False`` indica que el algoritmo hash no se utiliza en un "
+"contexto de seguridad, por ejemplo, como una función de compresión "
+"unidireccional no criptográfica."
 
-#: ../../library/hashlib.rst:92
+#: ../Doc/library/hashlib.rst:92
 msgid "Hashlib now uses SHA3 and SHAKE from OpenSSL 1.1.1 and newer."
-msgstr ""
+msgstr "Hashlib ahora usa SHA3 y SHAKE de OpenSSL 1.1.1 y posteriores."
 
-#: ../../library/hashlib.rst:94
+#: ../Doc/library/hashlib.rst:94
 msgid ""
 "For example, to obtain the digest of the byte string ``b\"Nobody inspects "
 "the spammish repetition\"``::"
 msgstr ""
+"Por ejemplo, para obtener el resumen de la cadena de bytes ``b'Nobody "
+"inspects the spammish repetition'``::"
 
-#: ../../library/hashlib.rst:106
+#: ../Doc/library/hashlib.rst:106
 msgid "More condensed:"
-msgstr "もっと簡潔に書くと、このようになります:"
+msgstr "Más resumido:"
 
-#: ../../library/hashlib.rst:113
+#: ../Doc/library/hashlib.rst:113
 msgid ""
 "Is a generic constructor that takes the string *name* of the desired "
 "algorithm as its first parameter.  It also exists to allow access to the "
@@ -159,32 +174,33 @@ msgid ""
 "library may offer.  The named constructors are much faster than :func:`new` "
 "and should be preferred."
 msgstr ""
-"一般的なコンストラクタで、第一引数にアルゴリズム名を文字列 *name* で受け取り"
-"ます。他にも、前述のハッシュアルゴリズムだけでなく OpenSSL ライブラリーが提供"
-"するような他のアルゴリズムにアクセスすることができます。名前のあるコンストラ"
-"クタの方が :func:`new` よりもずっと速いので望ましいです。"
+"Es un constructor genérico que toma la cadena *name* del algoritmo deseado "
+"como su primer parámetro. También existe para permitir acceso a los hashes "
+"arriba listados así como cualquiera de los otros algoritmos que tu "
+"biblioteca OpenSSL puede ofrecer. Los constructores nombrados son mucho más "
+"rápidos que :func:`new` y deberían preferirse."
 
-#: ../../library/hashlib.rst:119
+#: ../Doc/library/hashlib.rst:119
 msgid "Using :func:`new` with an algorithm provided by OpenSSL:"
-msgstr ":func:`new` にOpenSSLのアルゴリズムを指定する例です:"
+msgstr "Usando :func:`new` con un algoritmo provisto por OpenSSL:"
 
-#: ../../library/hashlib.rst:126
+#: ../Doc/library/hashlib.rst:126
 msgid "Hashlib provides the following constant attributes:"
-msgstr "Hashlib は以下の定数属性を提供しています:"
+msgstr "Hashlib provee los siguientes atributos constantes:"
 
-#: ../../library/hashlib.rst:130
+#: ../Doc/library/hashlib.rst:130
 msgid ""
 "A set containing the names of the hash algorithms guaranteed to be supported "
 "by this module on all platforms.  Note that 'md5' is in this list despite "
 "some upstream vendors offering an odd \"FIPS compliant\" Python build that "
 "excludes it."
 msgstr ""
-"このモジュールによってすべてのプラットフォームでサポートされていることが保証"
-"されるハッシュアルゴリズムの名前を含む集合です。一部のアップストリームのベン"
-"ダーが提供する奇妙な \"FIPS準拠の\" Pythonビルドではmd5のサポートを除外してい"
-"ますが、その場合であっても 'md5' がリストに含まれることに注意してください。"
+"Un conjunto que contiene los nombres de los algoritmos garantizados a ser "
+"soportados por este módulo en todas las plataformas. Ten en cuenta que 'md5' "
+"se encuentra en esta lista a pesar de que algunos proveedores ofrecen una "
+"extraña construcción Python \"compatible con FIPS\" que la excluye."
 
-#: ../../library/hashlib.rst:139
+#: ../Doc/library/hashlib.rst:139
 msgid ""
 "A set containing the names of the hash algorithms that are available in the "
 "running Python interpreter.  These names will be recognized when passed to :"
@@ -192,138 +208,151 @@ msgid ""
 "same algorithm may appear multiple times in this set under different names "
 "(thanks to OpenSSL)."
 msgstr ""
-"実行中の Python インタープリタで利用可能なハッシュアルゴリズム名の set です。"
-"これらの名前は :func:`new` に渡すことができます。:attr:"
-"`algorithms_guaranteed` は常にサブセットです。この set の中に同じアルゴリズム"
-"が違う名前で複数回現れることがあります (OpenSSL 由来)。"
+"Un conjunto que contiene los nombres de los algoritmos de hash que están "
+"disponibles en el intérprete de Python en ejecución. Estos nombres serán "
+"reconocidos cuando sean pasados a :func:`new`. :attr:`algorithms_guaranteed` "
+"siempre será un subconjunto. El mismo algoritmo puede aparecer múltiples "
+"veces en este conjunto bajo diferentes nombres (gracias a OpenSSL)."
 
-#: ../../library/hashlib.rst:147
+#: ../Doc/library/hashlib.rst:147
 msgid ""
 "The following values are provided as constant attributes of the hash objects "
 "returned by the constructors:"
 msgstr ""
-"コンストラクタが返すハッシュオブジェクトには、次のような定数属性が用意されて"
-"います:"
+"Los siguientes valores son provistos como atributos constantes de los "
+"objetos hash retornados por los constructores:"
 
-#: ../../library/hashlib.rst:153
+#: ../Doc/library/hashlib.rst:153
 msgid "The size of the resulting hash in bytes."
-msgstr "生成されたハッシュのバイト数。"
+msgstr "El tamaño del hash resultante en bytes."
 
-#: ../../library/hashlib.rst:157
+#: ../Doc/library/hashlib.rst:157
 msgid "The internal block size of the hash algorithm in bytes."
-msgstr "内部で使われるハッシュアルゴリズムのブロックのバイト数。"
+msgstr "El tamaño del bloque interno del algoritmo de hash en bytes."
 
-#: ../../library/hashlib.rst:159
+#: ../Doc/library/hashlib.rst:159
 msgid "A hash object has the following attributes:"
-msgstr "ハッシュオブジェクトには次のような属性があります:"
+msgstr "Un objeto hash tiene los siguientes atributos:"
 
-#: ../../library/hashlib.rst:163
+#: ../Doc/library/hashlib.rst:163
 msgid ""
 "The canonical name of this hash, always lowercase and always suitable as a "
 "parameter to :func:`new` to create another hash of this type."
 msgstr ""
-"このハッシュの正規名です。常に小文字で、:func:`new` の引数として渡してこのタ"
-"イプの別のハッシュを生成することができます。"
+"El nombre canónico de este hash, siempre en minúsculas y siempre adecuado "
+"como un parámetro a :func:`new` para crear otro hash de este tipo."
 
-#: ../../library/hashlib.rst:166
+#: ../Doc/library/hashlib.rst:166
 msgid ""
 "The name attribute has been present in CPython since its inception, but "
 "until Python 3.4 was not formally specified, so may not exist on some "
 "platforms."
 msgstr ""
-"name 属性は CPython には最初からありましたが、Python 3.4 までは正式に明記され"
-"ていませんでした。そのため、プラットフォームによっては存在しないかもしれませ"
-"ん。"
+"El atributo *name* ha estado presente en CPython desde su inicio, pero desde "
+"Python 3.4 no fue especificado formalmente, por lo que puede no existir en "
+"algunas plataformas."
 
-#: ../../library/hashlib.rst:171
+#: ../Doc/library/hashlib.rst:171
 msgid "A hash object has the following methods:"
-msgstr "ハッシュオブジェクトには次のようなメソッドがあります:"
+msgstr "Un objeto hash tiene los siguientes métodos:"
 
-#: ../../library/hashlib.rst:176
+#: ../Doc/library/hashlib.rst:176
 msgid ""
 "Update the hash object with the :term:`bytes-like object`. Repeated calls "
 "are equivalent to a single call with the concatenation of all the arguments: "
 "``m.update(a); m.update(b)`` is equivalent to ``m.update(a+b)``."
 msgstr ""
-"hash オブジェクトを :term:`bytes-like object` で更新します。このメソッドの呼"
-"出しの繰り返しは、それらの引数を全て結合した引数で単一の呼び出しをした際と同"
-"じになります。すなわち ``m.update(a); m.update(b)``  は ``m.update(a + b)`` "
-"と等価です。"
+"Actualiza el objeto de hash con el :term:`bytes-like object`. Invocaciones "
+"repetidas son equivalentes a una única invocación con la concatenación de "
+"todos los argumentos: ``m.update(a); m.update(b)`` es equivalente a ``m."
+"update(a+b)``."
 
-#: ../../library/hashlib.rst:181
+#: ../Doc/library/hashlib.rst:181
 msgid ""
 "The Python GIL is released to allow other threads to run while hash updates "
 "on data larger than 2047 bytes is taking place when using hash algorithms "
 "supplied by OpenSSL."
 msgstr ""
-"ハッシュアルゴリズムが OpenSSL によって提供されていて、データが 2047 バイトを"
-"超えている場合には、ハッシュの更新が実行中でも他のスレッドが実行できるよう"
-"に、Python :term:`GIL` が解放されます。"
+"El GIL de Python es liberado para permitir a otros hilos ejecutarse mientras "
+"ocurren actualizaciones de hash en datos con tamaños superiores a 2047 bytes "
+"cuando se usan algoritmos de hash suministrados por OpenSSL."
 
-#: ../../library/hashlib.rst:189
+#: ../Doc/library/hashlib.rst:189
 msgid ""
 "Return the digest of the data passed to the :meth:`update` method so far. "
 "This is a bytes object of size :attr:`digest_size` which may contain bytes "
 "in the whole range from 0 to 255."
 msgstr ""
-"これまで :meth:`update` メソッドに渡されたデータのダイジェスト値を返します。"
-"これは :attr:`digest_size` と同じ長さの、0 から 255 の範囲全てを含み得るバイ"
-"トの列です。"
+"Retorna el resumen de los datos pasados al método :meth:`update` hasta el "
+"momento. Este es un objeto de bytes de tamaño :attr:`digest_size` el cual "
+"puede contener bytes en el rango completo desde 0 a 255."
 
-#: ../../library/hashlib.rst:196 ../../library/hashlib.rst:224
+#: ../Doc/library/hashlib.rst:196 ../Doc/library/hashlib.rst:224
 msgid ""
 "Like :meth:`digest` except the digest is returned as a string object of "
 "double length, containing only hexadecimal digits.  This may be used to "
 "exchange the value safely in email or other non-binary environments."
 msgstr ""
-":meth:`digest` と似ていますが、倍の長さの、16進形式文字列を返します。これは、"
-"電子メールなどの非バイナリ環境で値を交換する場合に便利です。"
+"Como :meth:`digest` excepto que el resumen es retornado como un objeto de "
+"cadena del doble de largo, conteniendo sólo dígitos hexadecimales. Este "
+"puede ser usado para intercambiar el valor de forma segura en correos "
+"electrónicos u otros entornos no binarios."
 
-#: ../../library/hashlib.rst:203
+#: ../Doc/library/hashlib.rst:203
 msgid ""
 "Return a copy (\"clone\") of the hash object.  This can be used to "
 "efficiently compute the digests of data sharing a common initial substring."
 msgstr ""
-"ハッシュオブジェクトのコピー (\"クローン\") を返します。これは、最初の部分文"
-"字列が共通なデータのダイジェストを効率的に計算するために使用します。"
+"Retorna una copia (\"clon\") del objeto hash. Este puede ser usado para "
+"calcular eficientemente los resúmenes de datos compartiendo una subcadena "
+"inicial común."
 
-#: ../../library/hashlib.rst:208
+#: ../Doc/library/hashlib.rst:208
 msgid "SHAKE variable length digests"
-msgstr "SHAKE 可変長ダイジェスト"
+msgstr "Resúmenes SHAKE de largo variable"
 
-#: ../../library/hashlib.rst:210
+#: ../Doc/library/hashlib.rst:210
 msgid ""
 "The :func:`shake_128` and :func:`shake_256` algorithms provide variable "
 "length digests with length_in_bits//2 up to 128 or 256 bits of security. As "
 "such, their digest methods require a length. Maximum length is not limited "
 "by the SHAKE algorithm."
 msgstr ""
+"Los algoritmos :func:`shake_128` y :func:`shake_256` proveen resúmenes de "
+"largo variable con largo_en_bits//2 hasta 128 ó 256 bits de seguridad. Como "
+"tales, sus métodos de resumen requieren un largo. El largo máximo no está "
+"limitado por el algoritmo SHAKE."
 
-#: ../../library/hashlib.rst:217
+#: ../Doc/library/hashlib.rst:217
 msgid ""
 "Return the digest of the data passed to the :meth:`update` method so far. "
 "This is a bytes object of size *length* which may contain bytes in the whole "
 "range from 0 to 255."
 msgstr ""
-"これまで :meth:`update` メソッドに渡されたデータのダイジェスト値を返します。"
-"これは *length* と同じ長さの、0 から 255 の範囲全てを含み得るバイトの列です。"
+"Retorna el resumen de los datos pasados al método :meth:`update` hasta el "
+"momento. Este es un objeto de bytes de tamaño *length* el cual puede "
+"contener bytes en el rango completo desde 0 a 255."
 
-#: ../../library/hashlib.rst:230
+#: ../Doc/library/hashlib.rst:230
 msgid "File hashing"
-msgstr ""
+msgstr "Cifrado de archivos"
 
-#: ../../library/hashlib.rst:232
+#: ../Doc/library/hashlib.rst:232
 msgid ""
 "The hashlib module provides a helper function for efficient hashing of a "
 "file or file-like object."
 msgstr ""
+"El módulo hashlib proporciona una función de ayuda para el cifrado eficiente "
+"de un archivo o un objeto similar a un archivo."
 
-#: ../../library/hashlib.rst:237
+#: ../Doc/library/hashlib.rst:237
 msgid ""
 "Return a digest object that has been updated with contents of file object."
 msgstr ""
+"Retorna un objeto digest que ha sido actualizado con el contenido del objeto "
+"de tipo archivo."
 
-#: ../../library/hashlib.rst:239
+#: ../Doc/library/hashlib.rst:239
 msgid ""
 "*fileobj* must be a file-like object opened for reading in binary mode. It "
 "accepts file objects from  builtin :func:`open`, :class:`~io.BytesIO` "
@@ -333,22 +362,32 @@ msgid ""
 "an unknown state after this function returns or raises. It is up to the "
 "caller to close *fileobj*."
 msgstr ""
+"*fileobj* debe ser un objeto similar a un archivo abierto para lectura en "
+"modo binario. Acepta objetos fichero de instancias :func:`open`, :class:`~io."
+"BytesIO`, objetos SocketIO de :meth:`socket.socket.makefile`, y similares. "
+"La función puede saltarse la E/S de Python y usar directamente el descriptor "
+"de fichero de :meth:`~io.IOBase.fileno`. Debe asumirse que *fileobj* está en "
+"un estado desconocido después de que esta función devuelva o lance. Es "
+"responsabilidad del que llama cerrar *fileobj*."
 
-#: ../../library/hashlib.rst:247
+#: ../Doc/library/hashlib.rst:247
 msgid ""
 "*digest* must either be a hash algorithm name as a *str*, a hash "
 "constructor, or a callable that returns a hash object."
 msgstr ""
+"*digest* debe ser un nombre de algoritmo de cifrado como *str*, un "
+"constructor de cifrado o un invocable que devuelva un objeto cifrado."
 
-#: ../../library/hashlib.rst:250
+#: ../Doc/library/hashlib.rst:250
 msgid "Example:"
-msgstr "例:"
+msgstr "Ejemplo:"
 
-#: ../../library/hashlib.rst:273
+#: ../Doc/library/hashlib.rst:273
 msgid "Key derivation"
-msgstr "鍵導出"
+msgstr "Derivación de clave"
 
-#: ../../library/hashlib.rst:275
+#: ../Doc/library/hashlib.rst:275
+#, python-format
 msgid ""
 "Key derivation and key stretching algorithms are designed for secure "
 "password hashing. Naive algorithms such as ``sha1(password)`` are not "
@@ -356,21 +395,21 @@ msgid ""
 "be tunable, slow, and include a `salt <https://en.wikipedia.org/wiki/"
 "Salt_%28cryptography%29>`_."
 msgstr ""
-"鍵の導出 (derivation) と引き伸ばし (stretching) のアルゴリズムはセキュアなパ"
-"スワードのハッシュ化のために設計されました。 ``sha1(password)`` のような甘い"
-"アルゴリズムは、ブルートフォース攻撃に抵抗できません。良いパスワードハッシュ"
-"化は調節可能で、遅くて、 `salt <https://en.wikipedia.org/wiki/"
-"Salt_%28cryptography%29>`_ を含まなければなりません。"
+"Los algoritmos de derivación de clave y estiramiento de clave están "
+"diseñados para el cifrado seguro de contraseña. Algoritmos ingenuos como "
+"``sha1(password)`` no son resistentes contra ataques de fuerza bruta. Una "
+"buena función hash de contraseña debe ser afinable, lenta e incluir una `sal "
+"<https://en.wikipedia.org/wiki/Salt_%28cryptography%29>`_."
 
-#: ../../library/hashlib.rst:283
+#: ../Doc/library/hashlib.rst:283
 msgid ""
 "The function provides PKCS#5 password-based key derivation function 2. It "
 "uses HMAC as pseudorandom function."
 msgstr ""
-"この関数は PKCS#5 のパスワードに基づいた鍵導出関数 2 を提供しています。疑似乱"
-"数関数として HMAC を使用しています。"
+"La función provee contraseñas PKCS#5 basadas en función de derivación de "
+"clave 2. Usa HMAC como función de pseudoaleatoriedad."
 
-#: ../../library/hashlib.rst:286
+#: ../Doc/library/hashlib.rst:286
 msgid ""
 "The string *hash_name* is the desired name of the hash digest algorithm for "
 "HMAC, e.g. 'sha1' or 'sha256'. *password* and *salt* are interpreted as "
@@ -378,13 +417,13 @@ msgid ""
 "sensible length (e.g. 1024). *salt* should be about 16 or more bytes from a "
 "proper source, e.g. :func:`os.urandom`."
 msgstr ""
-"文字列 *hash_name* は、HMAC のハッシュダイジェストアルゴリズムの望ましい名前"
-"で、例えば 'sha1' や 'sha256' です。 *password* と *salt* はバイト列のバッ"
-"ファとして解釈されます。アプリケーションとライブラリは、 *password* を適切な"
-"長さ (例えば 1024) に制限すべきです。 *salt* は :func:`os.urandom` のような適"
-"切なソースからの、およそ 16 バイトかそれ以上のバイト列にするべきです。"
+"La cadena *hash_name* es el nombre deseado del algoritmo de resumen de hash "
+"para HMAC, ej. 'sha1' o 'sha256'. *password* y *salt* son interpretados como "
+"búferes de bytes. Aplicaciones y bibliotecas deberían limitar *password* a "
+"un largo razonable (ej. 1024). *salt* debería ser sobre 16 o más bytes desde "
+"una fuente adecuada, ej. :func:`os.urandom`."
 
-#: ../../library/hashlib.rst:292
+#: ../Doc/library/hashlib.rst:292
 msgid ""
 "The number of *iterations* should be chosen based on the hash algorithm and "
 "computing power. As of 2022, hundreds of thousands of iterations of SHA-256 "
@@ -392,187 +431,217 @@ msgid ""
 "your application, read *Appendix A.2.2* of NIST-SP-800-132_. The answers on "
 "the `stackexchange pbkdf2 iterations question`_ explain in detail."
 msgstr ""
+"El número de *iterations* debe elegirse en función del algoritmo de cifrado "
+"y la potencia de cálculo. A partir de 2022, se sugieren cientos de miles de "
+"iteraciones de SHA-256. Para saber por qué y cómo elegir lo mejor para su "
+"aplicación, lea el *Apéndice A.2.2* de NIST-SP-800-132_. Las respuestas "
+"sobre `stackexchange pbkdf2 iterations question`_  lo explican en detalle."
 
-#: ../../library/hashlib.rst:298
+#: ../Doc/library/hashlib.rst:298
 msgid ""
 "*dklen* is the length of the derived key. If *dklen* is ``None`` then the "
 "digest size of the hash algorithm *hash_name* is used, e.g. 64 for SHA-512."
 msgstr ""
-"*dklen* は、導出された鍵の長さです。 *dklen* が ``None`` の場合、ハッシュアル"
-"ゴリズム *hash_name* のダイジェストサイズが使われます。例えば SHA-512 では "
-"64 です。"
+"*dklen* es el largo de la clave derivada. Si *dklen* es ``None`` entonces el "
+"tamaño de resumen del algoritmo de hash *hash_name* es usado, ej. 64 para "
+"SHA-512."
 
-#: ../../library/hashlib.rst:311
+#: ../Doc/library/hashlib.rst:311
 msgid ""
 "A fast implementation of *pbkdf2_hmac* is available with OpenSSL.  The "
 "Python implementation uses an inline version of :mod:`hmac`. It is about "
 "three times slower and doesn't release the GIL."
 msgstr ""
-"*pbkdf2_hmac* の高速な実装は OpenSSL 使用版で利用可能です。Python 実装は :"
-"mod:`hmac` のインラインバージョンを使います。それはおよそ 3 倍遅く、GIL を解"
-"放しません。"
+"Una implementación rápida de *pbkdf2_hmac* está disponible con OpenSSL. La "
+"implementación Python usa una versión en línea de :mod:`hmac`. Es "
+"aproximadamente tres veces más lenta y no libera el GIL."
 
-#: ../../library/hashlib.rst:317
+#: ../Doc/library/hashlib.rst:317
 msgid ""
 "Slow Python implementation of *pbkdf2_hmac* is deprecated. In the future the "
 "function will only be available when Python is compiled with OpenSSL."
 msgstr ""
+"La implementación lenta en Python de *pbkdf2_hmac* está obsoleta. En el "
+"futuro la función estará disponible sólo cuando Python sea compilado con "
+"OpenSSL."
 
-#: ../../library/hashlib.rst:323
+#: ../Doc/library/hashlib.rst:323
 msgid ""
 "The function provides scrypt password-based key derivation function as "
 "defined in :rfc:`7914`."
 msgstr ""
-"この関数は、 :rfc:`7914` で定義されるscrypt のパスワードに基づいた鍵導出関数"
-"を提供します。"
+"La función provee una contraseña scrypt basada en una función derivación de "
+"clave como es definida en :rfc:`7914`."
 
-#: ../../library/hashlib.rst:326
+#: ../Doc/library/hashlib.rst:326
 msgid ""
 "*password* and *salt* must be :term:`bytes-like objects <bytes-like "
 "object>`.  Applications and libraries should limit *password* to a sensible "
 "length (e.g. 1024).  *salt* should be about 16 or more bytes from a proper "
 "source, e.g. :func:`os.urandom`."
 msgstr ""
-"*password* と *salt* は :term:`bytes-like objects` でなければなりません。アプ"
-"リケーションとライブラリは、 *password* を適切な長さ (例えば 1024) に制限すべ"
-"きです。 *salt* は :func:`os.urandom` のような適切なソースからの、およそ 16 "
-"バイトかそれ以上のバイト列にするべきです。"
+"*password* y *salt* deben ser :term:`objetos de bytes <bytes-like object>`. "
+"Aplicaciones y bibliotecas deberían limitar *password* a un largo razonable "
+"(ej. 1024). *salt* debería ser aproximadamente 16 o más bytes de una fuente "
+"adecuada, ej. :func:`os.unrandom`."
 
-#: ../../library/hashlib.rst:331
+#: ../Doc/library/hashlib.rst:331
 msgid ""
 "*n* is the CPU/Memory cost factor, *r* the block size, *p* parallelization "
 "factor and *maxmem* limits memory (OpenSSL 1.1.0 defaults to 32 MiB). "
 "*dklen* is the length of the derived key."
 msgstr ""
+"*n* es el factor de coste de CPU/Memoria, *r* el tamaño de bloque, *p* el "
+"factor de paralelización y *maxmem* limita la memoria (OpenSSL 1.1.0 por "
+"defecto a 32 MiB). *dklen* es el largo de la clave derivada."
 
-#: ../../library/hashlib.rst:339
+#: ../Doc/library/hashlib.rst:339
 msgid "BLAKE2"
 msgstr "BLAKE2"
 
-#: ../../library/hashlib.rst:346
+#: ../Doc/library/hashlib.rst:346
 msgid ""
 "BLAKE2_ is a cryptographic hash function defined in :rfc:`7693` that comes "
 "in two flavors:"
 msgstr ""
+"BLAKE2_ es una función de hash criptográfico definida en :rfc:`7693` que "
+"viene en dos sabores:"
 
-#: ../../library/hashlib.rst:349
+#: ../Doc/library/hashlib.rst:349
 msgid ""
 "**BLAKE2b**, optimized for 64-bit platforms and produces digests of any size "
 "between 1 and 64 bytes,"
 msgstr ""
+"**BLAKE2b**, optimizada para plataformas de 64 bits y produce resúmenes de "
+"cualquier tamaño entre 1 y 64 bytes,"
 
-#: ../../library/hashlib.rst:352
+#: ../Doc/library/hashlib.rst:352
 msgid ""
 "**BLAKE2s**, optimized for 8- to 32-bit platforms and produces digests of "
 "any size between 1 and 32 bytes."
 msgstr ""
+"**BLAKE2s**, optimizada para plataformas de 8 a 32 bits y produce resúmenes "
+"de cualquier tamaño entre 1 y 32 bytes."
 
-#: ../../library/hashlib.rst:355
+#: ../Doc/library/hashlib.rst:355
 msgid ""
 "BLAKE2 supports **keyed mode** (a faster and simpler replacement for HMAC_), "
 "**salted hashing**, **personalization**, and **tree hashing**."
 msgstr ""
+"BLAKE2 proporciona el **modo keyed** (un remplazamiento más simple rápido "
+"para HMAC_), **cifrado salado** (*salted hashing*), **personalización** y "
+"**cifrado de árbol**."
 
-#: ../../library/hashlib.rst:358
+#: ../Doc/library/hashlib.rst:358
 msgid ""
 "Hash objects from this module follow the API of standard library's :mod:"
 "`hashlib` objects."
 msgstr ""
-"このモジュールのハッシュオブジェクトは標準ライブラリーの :mod:`hashlib` オブ"
-"ジェクトの API に従います。"
+"Los objetos hash de este módulo siguen los estándares de los objetos de la "
+"biblioteca :mod:`hashlib`."
 
-#: ../../library/hashlib.rst:363
+#: ../Doc/library/hashlib.rst:363
 msgid "Creating hash objects"
-msgstr "ハッシュオブジェクトの作成"
+msgstr "Creando objetos hash"
 
-#: ../../library/hashlib.rst:365
+#: ../Doc/library/hashlib.rst:365
 msgid "New hash objects are created by calling constructor functions:"
-msgstr ""
-"新しいハッシュオブジェクトは、コンストラクタ関数を呼び出すことで生成されます:"
+msgstr "Se crean nuevos objetos hash invocando a las funciones de constructor:"
 
-#: ../../library/hashlib.rst:379
+#: ../Doc/library/hashlib.rst:379
 msgid ""
 "These functions return the corresponding hash objects for calculating "
 "BLAKE2b or BLAKE2s. They optionally take these general parameters:"
 msgstr ""
+"Estas funciones retornan los objetos hash correspondientes para calcular "
+"BLAKE2b o BLAKE2s. Ellas toman opcionalmente estos parámetros generales:"
 
-#: ../../library/hashlib.rst:382
+#: ../Doc/library/hashlib.rst:382
 msgid ""
 "*data*: initial chunk of data to hash, which must be :term:`bytes-like "
 "object`.  It can be passed only as positional argument."
 msgstr ""
+"*data*: trozo inicial de datos a cifrar, el cual debe ser un :term:`bytes-"
+"like object`. Puede ser pasado sólo como argumento posicional."
 
-#: ../../library/hashlib.rst:385
+#: ../Doc/library/hashlib.rst:385
 msgid "*digest_size*: size of output digest in bytes."
-msgstr "*digest_size*: 出力するダイジェストのバイト数。"
+msgstr "*digest_size*: tamaño del resumen de salida en bytes."
 
-#: ../../library/hashlib.rst:387
+#: ../Doc/library/hashlib.rst:387
 msgid ""
 "*key*: key for keyed hashing (up to 64 bytes for BLAKE2b, up to 32 bytes for "
 "BLAKE2s)."
 msgstr ""
+"*key*: clave para el cifrado de clave (*keyed hashing*) (hasta 64 bytes para "
+"BLAKE2b, hasta 32 bytes para BLAKE2s)."
 
-#: ../../library/hashlib.rst:390
+#: ../Doc/library/hashlib.rst:390
 msgid ""
 "*salt*: salt for randomized hashing (up to 16 bytes for BLAKE2b, up to 8 "
 "bytes for BLAKE2s)."
 msgstr ""
+"*salt*: sal para el cifrado aleatorio (hasta 16 bytes para BLAKE2b, hasta 8 "
+"bytes para BLAKE2s)."
 
-#: ../../library/hashlib.rst:393
+#: ../Doc/library/hashlib.rst:393
 msgid ""
 "*person*: personalization string (up to 16 bytes for BLAKE2b, up to 8 bytes "
 "for BLAKE2s)."
 msgstr ""
+"*person*: cadena de personalización (hasta 16 bytes para BLAKE2b, hasta 8 "
+"bytes para BLAKE2s)."
 
-#: ../../library/hashlib.rst:396
+#: ../Doc/library/hashlib.rst:396
 msgid "The following table shows limits for general parameters (in bytes):"
-msgstr "下の表は一般的なパラメータの上限 (バイト単位) です:"
+msgstr ""
+"La siguiente tabla muestra los límites para parámetros generales (en bytes):"
 
-#: ../../library/hashlib.rst:399
+#: ../Doc/library/hashlib.rst:399
 msgid "Hash"
-msgstr "Hash"
+msgstr "Cifrado"
 
-#: ../../library/hashlib.rst:399
+#: ../Doc/library/hashlib.rst:399
 msgid "digest_size"
 msgstr "digest_size"
 
-#: ../../library/hashlib.rst:399
+#: ../Doc/library/hashlib.rst:399
 msgid "len(key)"
 msgstr "len(key)"
 
-#: ../../library/hashlib.rst:399
+#: ../Doc/library/hashlib.rst:399
 msgid "len(salt)"
 msgstr "len(salt)"
 
-#: ../../library/hashlib.rst:399
+#: ../Doc/library/hashlib.rst:399
 msgid "len(person)"
 msgstr "len(person)"
 
-#: ../../library/hashlib.rst:401
+#: ../Doc/library/hashlib.rst:401
 msgid "BLAKE2b"
 msgstr "BLAKE2b"
 
-#: ../../library/hashlib.rst:401
+#: ../Doc/library/hashlib.rst:401
 msgid "64"
 msgstr "64"
 
-#: ../../library/hashlib.rst:401
+#: ../Doc/library/hashlib.rst:401
 msgid "16"
 msgstr "16"
 
-#: ../../library/hashlib.rst:402
+#: ../Doc/library/hashlib.rst:402
 msgid "BLAKE2s"
 msgstr "BLAKE2s"
 
-#: ../../library/hashlib.rst:402
+#: ../Doc/library/hashlib.rst:402
 msgid "32"
 msgstr "32"
 
-#: ../../library/hashlib.rst:402
+#: ../Doc/library/hashlib.rst:402
 msgid "8"
 msgstr "8"
 
-#: ../../library/hashlib.rst:407
+#: ../Doc/library/hashlib.rst:407
 msgid ""
 "BLAKE2 specification defines constant lengths for salt and personalization "
 "parameters, however, for convenience, this implementation accepts byte "
@@ -581,97 +650,123 @@ msgid ""
 "example, ``b'salt'`` and ``b'salt\\x00'`` is the same value. (This is not "
 "the case for *key*.)"
 msgstr ""
+"La especificación BLAKE2 define largos constantes para los parámetros de sal "
+"y personalización, sin embargo, por conveniencia, esta implementación acepta "
+"cadenas de bytes de cualquier tamaño hasta el largo especificado. Si el "
+"largo del parámetro es menor que el especificado, es acolchado con ceros, "
+"por lo tanto, por ejemplo, ``b'salt'`` y ``b'salt\\x00'`` es el mismo valor. "
+"(Este no es el caso para *key*.)"
 
-#: ../../library/hashlib.rst:414
+#: ../Doc/library/hashlib.rst:414
 msgid "These sizes are available as module `constants`_ described below."
-msgstr "これらのサイズは以下に述べるモジュール `constants`_ で利用できます。"
+msgstr ""
+"Estos tamaños están disponibles como `constantes`_ del módulo descritas "
+"abajo."
 
-#: ../../library/hashlib.rst:416
+#: ../Doc/library/hashlib.rst:416
 msgid ""
 "Constructor functions also accept the following tree hashing parameters:"
-msgstr "コンストラクタ関数は以下のツリーハッシングパラメタを受け付けます:"
+msgstr ""
+"Las funciones constructoras también aceptan los siguientes parámetros de "
+"cifrado de árbol:"
 
-#: ../../library/hashlib.rst:418
+#: ../Doc/library/hashlib.rst:418
 msgid "*fanout*: fanout (0 to 255, 0 if unlimited, 1 in sequential mode)."
 msgstr ""
+"*fanout*: despliegue en abanico (0 a 255, 0 si ilimitado, 1 en modo "
+"secuencial)."
 
-#: ../../library/hashlib.rst:420
+#: ../Doc/library/hashlib.rst:420
 msgid ""
 "*depth*: maximal depth of tree (1 to 255, 255 if unlimited, 1 in sequential "
 "mode)."
 msgstr ""
-"*depth*: ツリーの深さの最大値（1から255までの値で、無制限であれば255、シーケ"
-"ンスモードでは1）。"
+"*depth*: profundidad máxima del árbol (1 a 255, 255 si ilimitado, 1 en modo "
+"secuencial)."
 
-#: ../../library/hashlib.rst:423
+#: ../Doc/library/hashlib.rst:423
 msgid ""
 "*leaf_size*: maximal byte length of leaf (0 to ``2**32-1``, 0 if unlimited "
 "or in sequential mode)."
 msgstr ""
+"*leaf_size*: tamaño máximo en bytes de hoja (0 a ``2**32-1``, 0 si ilimitado "
+"o en modo secuencial)."
 
-#: ../../library/hashlib.rst:426
+#: ../Doc/library/hashlib.rst:426
 msgid ""
 "*node_offset*: node offset (0 to ``2**64-1`` for BLAKE2b, 0 to ``2**48-1`` "
 "for BLAKE2s, 0 for the first, leftmost, leaf, or in sequential mode)."
 msgstr ""
+"*node_offset*: desplazamiento del nodo (0 a ``2**64-1`` para BLAKE2b, 0 a "
+"``2**48-1`` para BLAKE2s, 0 para la primera hoja más a la izquierda, o en "
+"modo secuencial)."
 
-#: ../../library/hashlib.rst:429
+#: ../Doc/library/hashlib.rst:429
 msgid ""
 "*node_depth*: node depth (0 to 255, 0 for leaves, or in sequential mode)."
 msgstr ""
+"*node_depth*: profundidad de nodo (0 a 255, 0 para hojas o en modo "
+"secuencial)."
 
-#: ../../library/hashlib.rst:431
+#: ../Doc/library/hashlib.rst:431
 msgid ""
 "*inner_size*: inner digest size (0 to 64 for BLAKE2b, 0 to 32 for BLAKE2s, 0 "
 "in sequential mode)."
 msgstr ""
+"*inner_size*: tamaño interno del resumen (0 a 64 para BLAKE2b, 0 a 32 para "
+"BLAKE2s, 0 en modo secuencial)."
 
-#: ../../library/hashlib.rst:434
+#: ../Doc/library/hashlib.rst:434
 msgid ""
 "*last_node*: boolean indicating whether the processed node is the last one "
 "(``False`` for sequential mode)."
 msgstr ""
+"*last_node*: booleano indicando si el nodo procesado es el último (``False`` "
+"para modo secuencial)."
 
-#: ../../library/hashlib.rstNone
 msgid "Explanation of tree mode parameters."
-msgstr ""
+msgstr "Explicación de los parámetros del modo árbol."
 
-#: ../../library/hashlib.rst:440
+#: ../Doc/library/hashlib.rst:440
 msgid ""
 "See section 2.10 in `BLAKE2 specification <https://blake2.net/"
 "blake2_20130129.pdf>`_ for comprehensive review of tree hashing."
 msgstr ""
+"Consulta la sección 2.10 en la `especificación BLAKE2 <https://blake2.net/"
+"blake2_20130129.pdf>`_ para una revisión integral del cifrado en árbol."
 
-#: ../../library/hashlib.rst:446
+#: ../Doc/library/hashlib.rst:446
 msgid "Constants"
-msgstr "定数"
+msgstr "Constantes"
 
-#: ../../library/hashlib.rst:451
+#: ../Doc/library/hashlib.rst:451
 msgid "Salt length (maximum length accepted by constructors)."
-msgstr "ソルト長（コンストラクタが受け付けれる最大長）"
+msgstr "Largo de sal (largo máximo aceptado por los constructores)."
 
-#: ../../library/hashlib.rst:457
+#: ../Doc/library/hashlib.rst:457
 msgid ""
 "Personalization string length (maximum length accepted by constructors)."
 msgstr ""
+"Largo de cadena de personalización (largo máximo aceptado por los "
+"constructores)."
 
-#: ../../library/hashlib.rst:463
+#: ../Doc/library/hashlib.rst:463
 msgid "Maximum key size."
-msgstr "最大キー長"
+msgstr "Tamaño máximo de clave."
 
-#: ../../library/hashlib.rst:469
+#: ../Doc/library/hashlib.rst:469
 msgid "Maximum digest size that the hash function can output."
-msgstr "ハッシュ関数が出力しうるダイジェストの最大長"
+msgstr "Tamaño máximo de resumen que puede producir la función hash."
 
-#: ../../library/hashlib.rst:473
+#: ../Doc/library/hashlib.rst:473
 msgid "Examples"
-msgstr "使用例"
+msgstr "Ejemplos"
 
-#: ../../library/hashlib.rst:476
+#: ../Doc/library/hashlib.rst:476
 msgid "Simple hashing"
-msgstr "簡単なハッシュ化"
+msgstr "Cifrado simple"
 
-#: ../../library/hashlib.rst:478
+#: ../Doc/library/hashlib.rst:478
 msgid ""
 "To calculate hash of some data, you should first construct a hash object by "
 "calling the appropriate constructor function (:func:`blake2b` or :func:"
@@ -679,83 +774,113 @@ msgid ""
 "object, and, finally, get the digest out of the object by calling :meth:"
 "`digest` (or :meth:`hexdigest` for hex-encoded string)."
 msgstr ""
+"Para calcular el hash de algunos datos, primero debes construir un objeto "
+"hash invocando a la función del constructor apropiada (:func:`blake2b` o :"
+"func:`blake2s`), entonces actualizarlo con los datos invocando :meth:"
+"`update` en el objeto y, finalmente, obtener el resumen del objeto "
+"invocando :meth:`digest` (o :meth:`hexdigest` para una cadena codificada en "
+"hexadecimal)."
 
-#: ../../library/hashlib.rst:491
+#: ../Doc/library/hashlib.rst:491
 msgid ""
 "As a shortcut, you can pass the first chunk of data to update directly to "
 "the constructor as the positional argument:"
 msgstr ""
+"Como atajo, puedes pasar el primer trozo de datos para actualizar "
+"directamente el constructor como el argumento posicional:"
 
-#: ../../library/hashlib.rst:498
+#: ../Doc/library/hashlib.rst:498
 msgid ""
 "You can call :meth:`hash.update` as many times as you need to iteratively "
 "update the hash:"
 msgstr ""
+"Puedes invocar :meth:`hash.update` tantas veces como necesites para "
+"actualizar el hash iterativamente:"
 
-#: ../../library/hashlib.rst:511
+#: ../Doc/library/hashlib.rst:511
 msgid "Using different digest sizes"
-msgstr ""
+msgstr "Usar diferentes tamaños de resumen"
 
-#: ../../library/hashlib.rst:513
+#: ../Doc/library/hashlib.rst:513
 msgid ""
 "BLAKE2 has configurable size of digests up to 64 bytes for BLAKE2b and up to "
 "32 bytes for BLAKE2s. For example, to replace SHA-1 with BLAKE2b without "
 "changing the size of output, we can tell BLAKE2b to produce 20-byte digests:"
 msgstr ""
-"BLAKE2 はダイジェストの長さを、BLAKE2bでは64バイトまで、BLAKE2sでは32バイトま"
-"でのダイジェスト長を指定できます。例えばSHA-1を、出力を同じ長さのままで"
-"BLAKE2bで置き換えるには、BLAKE2bに20バイトのダイジェストを生成するように指示"
-"できます:"
+"BLAKE2 tiene tamaño de resúmenes configurables de hasta 64 bytes para "
+"BLAKE2b y 32 bytes para BLAKE2s. Por ejemplo, para remplazar SHA-1 con "
+"BLAKE2b sin cambiar el tamaño de la salida, puedes decirle a BLAKE2b que "
+"produzca resúmenes de 20 bytes:"
 
-#: ../../library/hashlib.rst:527
+#: ../Doc/library/hashlib.rst:527
 msgid ""
 "Hash objects with different digest sizes have completely different outputs "
 "(shorter hashes are *not* prefixes of longer hashes); BLAKE2b and BLAKE2s "
 "produce different outputs even if the output length is the same:"
 msgstr ""
+"Objetos hash con diferentes tamaños de resumen tienen salidas completamente "
+"diferentes (hashes más cortos *no* son prefijos de hashes más largos); "
+"BLAKE2b y BLAKE2s producen salidas diferentes incluso si el largo de salida "
+"es el mismo:"
 
-#: ../../library/hashlib.rst:543
+#: ../Doc/library/hashlib.rst:543
 msgid "Keyed hashing"
-msgstr ""
+msgstr "Cifrado de clave"
 
-#: ../../library/hashlib.rst:545
+#: ../Doc/library/hashlib.rst:545
 msgid ""
 "Keyed hashing can be used for authentication as a faster and simpler "
 "replacement for `Hash-based message authentication code <https://en."
 "wikipedia.org/wiki/HMAC>`_ (HMAC). BLAKE2 can be securely used in prefix-MAC "
 "mode thanks to the indifferentiability property inherited from BLAKE."
 msgstr ""
+"El cifrado de clave puede ser usado para autentificación como un remplazo "
+"más rápido y simple para `Código de autentificación de mensajes en clave-"
+"hash <https://es.wikipedia.org/wiki/HMAC>`_ (HMAC). BLAKE2 puede ser usado "
+"de forma segura en modo de prefijo MAC gracias a la propiedad de "
+"indiferenciabilidad heredada de BLAKE."
 
-#: ../../library/hashlib.rst:551
+#: ../Doc/library/hashlib.rst:551
 msgid ""
 "This example shows how to get a (hex-encoded) 128-bit authentication code "
 "for message ``b'message data'`` with key ``b'pseudorandom key'``::"
 msgstr ""
+"Este ejemplo muestra como obtener un código de autentificación (codificado "
+"como hexadecimal) de 128 bits para el mensaje ``b'message data'`` con la "
+"clave ``b'pseudorandom key'``::"
 
-#: ../../library/hashlib.rst:561
+#: ../Doc/library/hashlib.rst:561
 msgid ""
 "As a practical example, a web application can symmetrically sign cookies "
 "sent to users and later verify them to make sure they weren't tampered with::"
 msgstr ""
+"Como ejemplo práctico, una aplicación web puede firmar simétricamente "
+"cookies enviadas a los usuarios y verificarlas más tarde para asegurar que "
+"no fueron manipuladas con::"
 
-#: ../../library/hashlib.rst:590
+#: ../Doc/library/hashlib.rst:590
 msgid ""
 "Even though there's a native keyed hashing mode, BLAKE2 can, of course, be "
 "used in HMAC construction with :mod:`hmac` module::"
 msgstr ""
+"Incluso aunque hay un modo de cifrado de claves nativo, BLAKE2 puede, por "
+"supuesto, ser usado en construcción de HMAC con el módulo :mod:`hmac`::"
 
-#: ../../library/hashlib.rst:601
+#: ../Doc/library/hashlib.rst:601
 msgid "Randomized hashing"
-msgstr ""
+msgstr "Cifrado aleatorio"
 
-#: ../../library/hashlib.rst:603
+#: ../Doc/library/hashlib.rst:603
 msgid ""
 "By setting *salt* parameter users can introduce randomization to the hash "
 "function. Randomized hashing is useful for protecting against collision "
 "attacks on the hash function used in digital signatures."
 msgstr ""
+"Definiendo el parámetro *salt* los usuarios pueden introducir aleatoriedad a "
+"la función hash. El cifrado aleatorio es útil para proteger contra ataques "
+"de colisión en la función hash usada en firmas digitales."
 
-#: ../../library/hashlib.rst:607
+#: ../Doc/library/hashlib.rst:607
 msgid ""
 "Randomized hashing is designed for situations where one party, the message "
 "preparer, generates all or part of a message to be signed by a second party, "
@@ -775,38 +900,69 @@ msgid ""
 "hashing may reduce the amount of security provided by a digital signature "
 "when all portions of the message are prepared by the signer."
 msgstr ""
+"El cifrado aleatorio está diseñado para situaciones en las que una parte, el "
+"preparador del mensaje, genera todo o parte de un mensaje para ser firmado "
+"por una segunda parte, el firmante del mensaje. Si el preparador del mensaje "
+"es capaz de encontrar colisiones de funciones hash criptográficas (ej., dos "
+"mensajes produciendo el mismo valor de hash), entonces ellos pueden preparar "
+"versiones significativas del mensaje que producirían el mismo valor de hash "
+"y firma digital, pero con diferentes resultados (ej., transfiriendo "
+"1,000,000 $ a una cuenta, en lugar de 10 $), Las funciones de hash "
+"criptográfico han sido diseñadas con resistencia de colisión como objetivo "
+"principal, pero la concentración actual en el ataque a las funciones hash "
+"criptográficas puede resultar en una función hash criptográfica dada que "
+"provea menor resistencia de colisión de la esperada. El cifrado aleatorio "
+"ofrece al firmante protección adicional reduciendo la probabilidad de que un "
+"preparador puede generar dos o más mensajes que en última instancia producen "
+"el mismo valor hash durante el proceso de generación de la firma digital, "
+"--- incluso si es práctico encontrar colisiones para la función hash. Sin "
+"embargo, el uso de cifrado aleatorio puede reducir la cantidad de seguridad "
+"provista por una firma digital cuando todas las porciones del mensaje son "
+"preparadas por el firmante."
 
-#: ../../library/hashlib.rst:626
+#: ../Doc/library/hashlib.rst:626
 msgid ""
 "(`NIST SP-800-106 \"Randomized Hashing for Digital Signatures\" <https://"
 "csrc.nist.gov/publications/detail/sp/800-106/final>`_)"
 msgstr ""
+"(`NIST SP-800-106 \"Randomized Hashing for Digital Signatures\" <https://"
+"csrc.nist.gov/publications/detail/sp/800-106/final>`_)"
 
-#: ../../library/hashlib.rst:629
+#: ../Doc/library/hashlib.rst:629
 msgid ""
 "In BLAKE2 the salt is processed as a one-time input to the hash function "
 "during initialization, rather than as an input to each compression function."
 msgstr ""
+"En BLAKE2 la sal es procesada como una entrada de una vez a la función hash "
+"durante la inicialización, en lugar de como una entrada para cada función de "
+"compresión."
 
-#: ../../library/hashlib.rst:634
+#: ../Doc/library/hashlib.rst:634
 msgid ""
 "*Salted hashing* (or just hashing) with BLAKE2 or any other general-purpose "
 "cryptographic hash function, such as SHA-256, is not suitable for hashing "
 "passwords.  See `BLAKE2 FAQ <https://blake2.net/#qa>`_ for more information."
 msgstr ""
+"El *cifrado salado* (o sólo cifrado) con BLAKE2 o cualquier otra función de "
+"hash criptográfico de propósito general, como SHA-256, no son aptas para "
+"cifrar contraseñas. Ver `BLAKE2 FAQ <https://blake2.net/#qa>`_ para más "
+"información."
 
-#: ../../library/hashlib.rst:657
+#: ../Doc/library/hashlib.rst:657
 msgid "Personalization"
-msgstr ""
+msgstr "Personalización"
 
-#: ../../library/hashlib.rst:659
+#: ../Doc/library/hashlib.rst:659
 msgid ""
 "Sometimes it is useful to force hash function to produce different digests "
 "for the same input for different purposes. Quoting the authors of the Skein "
 "hash function:"
 msgstr ""
+"A veces es útil forzar a la función hash para producir diferentes resúmenes "
+"para la misma entrada para diferentes propósitos. Citando a los autores de "
+"la función hash Skein:"
 
-#: ../../library/hashlib.rst:663
+#: ../Doc/library/hashlib.rst:663
 msgid ""
 "We recommend that all application designers seriously consider doing this; "
 "we have seen many protocols where a hash that is computed in one part of the "
@@ -815,178 +971,210 @@ msgid ""
 "force the application to make the hash inputs the same. Personalizing each "
 "hash function used in the protocol summarily stops this type of attack."
 msgstr ""
+"Recomendamos que todos los diseñadores de aplicaciones consideren seriamente "
+"hacer esto; hemos visto muchos protocolos donde un hash que es calculado en "
+"una parte del protocolo puede ser usado en una parte completamente diferente "
+"porque dos cálculos hash fueron realizados en datos similares o "
+"relacionados, y el atacante puede forzar a la aplicación a hacer las "
+"entradas hash iguales. Personalizar cada función hash usada en el protocolo "
+"resumidamente detiene este tipo de ataque."
 
-#: ../../library/hashlib.rst:670
+#: ../Doc/library/hashlib.rst:670
 msgid ""
 "(`The Skein Hash Function Family <https://www.schneier.com/wp-content/"
 "uploads/2016/02/skein.pdf>`_, p. 21)"
 msgstr ""
+"(`The Skein Hash Function Family <https://www.schneier.com/wp-content/"
+"uploads/2016/02/skein.pdf>`_, p. 21)"
 
-#: ../../library/hashlib.rst:674
+#: ../Doc/library/hashlib.rst:674
 msgid "BLAKE2 can be personalized by passing bytes to the *person* argument::"
-msgstr "BLAKE2は *person* 引数にバイト列を渡すことでパーソナライズできます::"
+msgstr "BLAKE2 puede ser personalizado pasando bytes al argumento *person*::"
 
-#: ../../library/hashlib.rst:688
+#: ../Doc/library/hashlib.rst:688
 msgid ""
 "Personalization together with the keyed mode can also be used to derive "
 "different keys from a single one."
 msgstr ""
+"Se puede usar también personalización en conjunto con el modo de clave para "
+"derivar diferentes claves desde una sola."
 
-#: ../../library/hashlib.rst:702
+#: ../Doc/library/hashlib.rst:702
 msgid "Tree mode"
-msgstr "ツリーモード"
+msgstr "Modo de árbol"
 
-#: ../../library/hashlib.rst:704
+#: ../Doc/library/hashlib.rst:704
 msgid "Here's an example of hashing a minimal tree with two leaf nodes::"
-msgstr "これが二つの葉ノードからなる最小の木をハッシュする例です::"
+msgstr "Aquí hay un ejemplo de cifrar un árbol mínimo con dos nodos de hoja::"
 
-#: ../../library/hashlib.rst:710
+#: ../Doc/library/hashlib.rst:710
 msgid ""
 "This example uses 64-byte internal digests, and returns the 32-byte final "
 "digest::"
 msgstr ""
-"次の例では、64バイトの内部桁が使われ、32バイトの最終的なダイジェストを返して"
-"います::"
+"Este ejemplo usa resúmenes internos de 64 bytes, y retorna el resumen final "
+"de 32 bytes::"
 
-#: ../../library/hashlib.rst:740
+#: ../Doc/library/hashlib.rst:740
 msgid "Credits"
-msgstr "クレジット::"
+msgstr "Créditos"
 
-#: ../../library/hashlib.rst:742
+#: ../Doc/library/hashlib.rst:742
 msgid ""
 "BLAKE2_ was designed by *Jean-Philippe Aumasson*, *Samuel Neves*, *Zooko "
 "Wilcox-O'Hearn*, and *Christian Winnerlein* based on SHA-3_ finalist BLAKE_ "
 "created by *Jean-Philippe Aumasson*, *Luca Henzen*, *Willi Meier*, and "
 "*Raphael C.-W. Phan*."
 msgstr ""
-"BLAKE2_ は*Jean-Philippe Aumasson*、 *Luca Henzen*、 *Willi Meier* そして "
-"*Raphael C.-W. Phan* によって作成された SHA-3_ の最終候補である BLAKE_  を元"
-"に、*Jean-Philippe Aumasson*、 *Samuel Neves*、 *Zooko Wilcox-O'Hearn*, そし"
-"て *Christian Winnerlein* によって設計されました。"
+"BLAKE2_ fue diseñado por *Jean-Philippe Aumasson*, *Samuel Neves*, *Zooko "
+"Wilcox-O'Hearn* y *Christian Winnerlein* basado en el SHA-3_ finalista "
+"BLAKE_ creado por *Jean-Philippe Aumasson*, *Luca Henzen*, *Willi Meier* y "
+"*Raphael C.-W. Phan*."
 
-#: ../../library/hashlib.rst:747
+#: ../Doc/library/hashlib.rst:747
 msgid ""
 "It uses core algorithm from ChaCha_ cipher designed by *Daniel J.  "
 "Bernstein*."
 msgstr ""
-"それは、 *Daniel J.  Bernstein* によって設計されたChaCha_ 暗号由来のアルゴリ"
-"ズムを用いています。"
+"Usa el algoritmo núcleo del cifrado ChaCha_ diseñado por *Daniel J. "
+"Bernstein*."
 
-#: ../../library/hashlib.rst:749
+#: ../Doc/library/hashlib.rst:749
 msgid ""
 "The stdlib implementation is based on pyblake2_ module. It was written by "
 "*Dmitry Chestnykh* based on C implementation written by *Samuel Neves*. The "
 "documentation was copied from pyblake2_ and written by *Dmitry Chestnykh*."
 msgstr ""
-"標準ライブラリは pyblake2_ モジュールを基礎として実装されています。\n"
-"このモジュールは *Dmitry Chestnykh* によって、*Samuel Neves* が作成した C実装"
-"を元に書かれました。\n"
-"このドキュメントは、pyblake2_ からコピーされ、*Dmitry Chestnykh* によって書か"
-"れました。"
+"La implementación stdlib está basada en el módulo pyblake2_. Fue escrita por "
+"*Dmitry Chestnykh* basada en la implementación C escrita por *Samuel Neves*. "
+"La documentación fue copiada desde pyblake2_ y escrita por *Dmitry "
+"Chestnykh*."
 
-#: ../../library/hashlib.rst:753
+#: ../Doc/library/hashlib.rst:753
 msgid "The C code was partly rewritten for Python by *Christian Heimes*."
 msgstr ""
-"*Christian Heimes* によって、一部のCコードがPython向けに書き直されました。"
+"El código C fue parcialmente reescrito para Python por *Christian Heimes*."
 
-#: ../../library/hashlib.rst:755
+#: ../Doc/library/hashlib.rst:755
 msgid ""
 "The following public domain dedication applies for both C hash function "
 "implementation, extension code, and this documentation:"
 msgstr ""
-"以下の public domain dedicationが、Cのハッシュ関数実装と、拡張コードと、この"
-"ドキュメントに適用されます:"
+"La siguiente dedicación de dominio público aplica tanto para la "
+"implementación de la función hash C, el código de extensión y su "
+"documentación:"
 
-#: ../../library/hashlib.rst:758
+#: ../Doc/library/hashlib.rst:758
 msgid ""
 "To the extent possible under law, the author(s) have dedicated all copyright "
 "and related and neighboring rights to this software to the public domain "
 "worldwide. This software is distributed without any warranty."
 msgstr ""
+"En la medida en que la ley lo permite, el/los autor/es han dedicado todos "
+"los derechos de autor y los derechos relacionados y vecinos de este software "
+"al dominio público mundial. Este software se distribuye sin ninguna garantía."
 
-#: ../../library/hashlib.rst:762
+#: ../Doc/library/hashlib.rst:762
 msgid ""
 "You should have received a copy of the CC0 Public Domain Dedication along "
 "with this software. If not, see https://creativecommons.org/publicdomain/"
 "zero/1.0/."
 msgstr ""
+"Deberías haber recibido una copia de la Dedicación CC0 de Dominio Público "
+"junto a este software. Si no, consulta https://creativecommons.org/"
+"publicdomain/zero/1.0/."
 
-#: ../../library/hashlib.rst:766
+#: ../Doc/library/hashlib.rst:766
 msgid ""
 "The following people have helped with development or contributed their "
 "changes to the project and the public domain according to the Creative "
 "Commons Public Domain Dedication 1.0 Universal:"
 msgstr ""
+"Las siguientes personas han ayudado con el desarrollo o contribuyeron con "
+"sus cambios al proyecto y el dominio público de acuerdo a Creative Commons "
+"Public Domain Dedication 1.0 Universal:"
 
-#: ../../library/hashlib.rst:770
+#: ../Doc/library/hashlib.rst:770
 msgid "*Alexandr Sokolovskiy*"
 msgstr "*Alexandr Sokolovskiy*"
 
-#: ../../library/hashlib.rst:785
+#: ../Doc/library/hashlib.rst:785
 msgid "Module :mod:`hmac`"
-msgstr ":mod:`hmac` モジュール"
+msgstr "Módulo :mod:`hmac`"
 
-#: ../../library/hashlib.rst:785
+#: ../Doc/library/hashlib.rst:785
 msgid "A module to generate message authentication codes using hashes."
-msgstr "ハッシュを用いてメッセージ認証コードを生成するモジュールです。"
-
-#: ../../library/hashlib.rst:788
-msgid "Module :mod:`base64`"
-msgstr ":mod:`base64` モジュール"
-
-#: ../../library/hashlib.rst:788
-msgid "Another way to encode binary hashes for non-binary environments."
 msgstr ""
-"バイナリハッシュを非バイナリ環境用にエンコードするもうひとつの方法です。"
+"Un módulo para generar mensajes de códigos de autentificación usando hashes."
 
-#: ../../library/hashlib.rst:791
+#: ../Doc/library/hashlib.rst:788
+msgid "Module :mod:`base64`"
+msgstr "Módulo :mod:`base64`"
+
+#: ../Doc/library/hashlib.rst:788
+msgid "Another way to encode binary hashes for non-binary environments."
+msgstr "Otra forma de codificar hashes binarios para entornos no binarios."
+
+#: ../Doc/library/hashlib.rst:791
 msgid "https://blake2.net"
 msgstr "https://blake2.net"
 
-#: ../../library/hashlib.rst:791
+#: ../Doc/library/hashlib.rst:791
 msgid "Official BLAKE2 website."
-msgstr "BLAKE2 の公式ウェブサイト"
+msgstr "Sitio web oficial de BLAKE2."
 
-#: ../../library/hashlib.rst:794
+#: ../Doc/library/hashlib.rst:794
 msgid ""
 "https://csrc.nist.gov/csrc/media/publications/fips/180/2/archive/2002-08-01/"
 "documents/fips180-2.pdf"
 msgstr ""
+"https://csrc.nist.gov/csrc/media/publications/fips/180/2/archive/2002-08-01/"
+"documents/fips180-2.pdf"
 
-#: ../../library/hashlib.rst:794
+#: ../Doc/library/hashlib.rst:794
 msgid "The FIPS 180-2 publication on Secure Hash Algorithms."
-msgstr "FIPS 180-2 のセキュアハッシュアルゴリズムについての説明。"
+msgstr "La publicación FIPS 180-2 sobre Algoritmos de Cifrado Seguros."
 
-#: ../../library/hashlib.rst:798
+#: ../Doc/library/hashlib.rst:798
 msgid ""
 "https://en.wikipedia.org/wiki/"
 "Cryptographic_hash_function#Cryptographic_hash_algorithms"
 msgstr ""
 "https://en.wikipedia.org/wiki/"
-"Cryptographic_hash_function#Cryptographic_hash_algorithms (日本語版: https://"
-"暗号学的ハッシュ関数)"
+"Cryptographic_hash_function#Cryptographic_hash_algorithms"
 
-#: ../../library/hashlib.rst:797
+#: ../Doc/library/hashlib.rst:797
 msgid ""
 "Wikipedia article with information on which algorithms have known issues and "
 "what that means regarding their use."
 msgstr ""
-"どのアルゴリズムにどんな既知の問題があって、それが実際に利用する際にどう影響"
-"するかについての Wikipedia の記事。"
+"Artículo de Wikipedia con información sobre cuáles algoritmos tienen errores "
+"conocidos y lo que eso significa con respecto a su uso."
 
-#: ../../library/hashlib.rst:801
+#: ../Doc/library/hashlib.rst:801
 msgid "https://www.ietf.org/rfc/rfc8018.txt"
-msgstr ""
+msgstr "https://www.ietf.org/rfc/rfc8018.txt"
 
-#: ../../library/hashlib.rst:801
+#: ../Doc/library/hashlib.rst:801
 msgid "PKCS #5: Password-Based Cryptography Specification Version 2.1"
-msgstr ""
+msgstr "PKCS #5: Password-Based Cryptography Specification Version 2.1"
 
-#: ../../library/hashlib.rst:803
+#: ../Doc/library/hashlib.rst:803
 msgid ""
 "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-132.pdf"
 msgstr ""
+"https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-132.pdf"
 
-#: ../../library/hashlib.rst:804
+#: ../Doc/library/hashlib.rst:804
 msgid "NIST Recommendation for Password-Based Key Derivation."
 msgstr ""
+"Recomendación de NIST para la derivación de claves basadas en contraseña."
+
+#~ msgid ""
+#~ "The number of *iterations* should be chosen based on the hash algorithm "
+#~ "and computing power. As of 2013, at least 100,000 iterations of SHA-256 "
+#~ "are suggested."
+#~ msgstr ""
+#~ "El número de *iterations* debería ser elegido basado en el algoritmo de "
+#~ "hash y el poder de cómputo. A partir del 2013, se sugiere al menos "
+#~ "100,000 iteraciones de SHA-256."

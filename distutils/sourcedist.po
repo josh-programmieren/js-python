@@ -1,283 +1,286 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2022
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 00:51+0000\n"
-"Last-Translator: tomo, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-10-29 14:31-0500\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.2\n"
 
-#: ../../distutils/sourcedist.rst:5
+#: ../Doc/distutils/sourcedist.rst:5
 msgid "Creating a Source Distribution"
-msgstr "ソースコード配布物を作成する"
+msgstr "Crear una distribución del código fuente"
 
-#: ../../distutils/_setuptools_disclaimer.rst:3
+#: ../Doc/distutils/cpython/Doc/distutils/_setuptools_disclaimer.rst:3
 msgid ""
 "This document is being retained solely until the ``setuptools`` "
 "documentation at https://setuptools.readthedocs.io/en/latest/setuptools.html "
 "independently covers all of the relevant information currently included here."
 msgstr ""
-"このドキュメントは、 https://setuptools.readthedocs.io/en/latest/setuptools."
-"html にある ``setuptools`` のドキュメントが現時点でここにある関連情報を全て網"
-"羅するまで、単独でここに載せておかれます。"
+"Este documento se mantiene únicamente hasta que la documentación de "
+"``setuptools`` en https://setuptools.readthedocs.io/en/latest/setuptools."
+"html cubra de forma independiente toda la información relevante actualmente "
+"incluida aquí."
 
-#: ../../distutils/sourcedist.rst:9
+#: ../Doc/distutils/sourcedist.rst:9
 msgid ""
 "As shown in section :ref:`distutils-simple-example`, you use the :command:"
 "`sdist` command to create a source distribution.  In the simplest case, ::"
 msgstr ""
-":ref:`distutils-simple-example` 節で示したように、ソースコード配布物を作成す"
-"るには :command:`sdist` コマンドを使います。最も単純な例では、 ::"
+"Como se muestra en la sección :ref:`distutils-simple-example`, use el "
+"comando :command:`sdist` para crear una distribución de código fuente. En el "
+"caso más simple, ::"
 
-#: ../../distutils/sourcedist.rst:14
+#: ../Doc/distutils/sourcedist.rst:14
 msgid ""
 "(assuming you haven't specified any :command:`sdist` options in the setup "
 "script or config file), :command:`sdist` creates the archive of the default "
 "format for the current platform.  The default format is a gzip'ed tar file (:"
 "file:`.tar.gz`) on Unix, and ZIP file on Windows."
 msgstr ""
-"のようにします (ここでは、 :command:`sdist` に関するオプションを setup スクリ"
-"プトや設定ファイル中で行っていないものと仮定します)。 :command:`sdist` は、現"
-"在のプラットフォームでのデフォルトのアーカイブ形式でアーカイブを生成します。"
-"デフォルトの形式は Unixでは gzip で圧縮された tar ファイル形式 (:file:`.tar."
-"gz`) で、Windows では ZIP 形式です。"
+"(suponiendo que no ha especificado ninguna opción :command:`sdist` en el "
+"script de configuración o en el archivo de configuración), :command:`sdist` "
+"crea el archivo con el formato predeterminado para la plataforma actual.El "
+"formato predeterminado es un archivo tar comprimido con gzip (:file:`.tar."
+"gz`) en Unix, y el archivo ZIP en Windows."
 
-#: ../../distutils/sourcedist.rst:19
+#: ../Doc/distutils/sourcedist.rst:19
 msgid ""
 "You can specify as many formats as you like using the :option:`!--formats` "
 "option, for example::"
 msgstr ""
-":option:`!--formats` オプションを使えば、好きな数だけ圧縮形式を指定できます。"
-"例えば::"
+"Puede especificar tantos formatos como desee usando la opción :option:`!--"
+"formats`, por ejemplo::"
 
-#: ../../distutils/sourcedist.rst:24
+#: ../Doc/distutils/sourcedist.rst:24
 msgid "to create a gzipped tarball and a zip file.  The available formats are:"
 msgstr ""
-"は、gzip された tarball と zip ファイルを作成します。利用可能な形式は以下の通"
-"りです:"
+"para crear un *tarball* comprimido y un archivo zip. Los formatos "
+"disponibles son:"
 
-#: ../../distutils/sourcedist.rst:27
+#: ../Doc/distutils/sourcedist.rst:27
 msgid "Format"
-msgstr "フォーマット"
+msgstr "Formato"
 
-#: ../../distutils/sourcedist.rst:27
+#: ../Doc/distutils/sourcedist.rst:27
 msgid "Description"
-msgstr "説明"
+msgstr "Descripción"
 
-#: ../../distutils/sourcedist.rst:27
+#: ../Doc/distutils/sourcedist.rst:27
 msgid "Notes"
-msgstr "注釈"
+msgstr "Notas"
 
-#: ../../distutils/sourcedist.rst:29
+#: ../Doc/distutils/sourcedist.rst:29
 msgid "``zip``"
 msgstr "``zip``"
 
-#: ../../distutils/sourcedist.rst:29
+#: ../Doc/distutils/sourcedist.rst:29
 msgid "zip file (:file:`.zip`)"
-msgstr "zip ファイル (:file:`.zip`)"
+msgstr "archivo zip (:file:`.zip`)"
 
-#: ../../distutils/sourcedist.rst:29
+#: ../Doc/distutils/sourcedist.rst:29
 msgid "(1),(3)"
 msgstr "(1),(3)"
 
-#: ../../distutils/sourcedist.rst:31
+#: ../Doc/distutils/sourcedist.rst:31
 msgid "``gztar``"
 msgstr "``gztar``"
 
-#: ../../distutils/sourcedist.rst:31
+#: ../Doc/distutils/sourcedist.rst:31
 msgid "gzip'ed tar file (:file:`.tar.gz`)"
-msgstr "gzip 圧縮された tar ファイル (:file:`.tar.gz`)"
+msgstr "archivo tar comprimido con gzip (:file:`.tar.gz`)"
 
-#: ../../distutils/sourcedist.rst:31
+#: ../Doc/distutils/sourcedist.rst:31
 msgid "\\(2)"
 msgstr "\\(2)"
 
-#: ../../distutils/sourcedist.rst:34
+#: ../Doc/distutils/sourcedist.rst:34
 msgid "``bztar``"
 msgstr "``bztar``"
 
-#: ../../distutils/sourcedist.rst:34
+#: ../Doc/distutils/sourcedist.rst:34
 msgid "bzip2'ed tar file (:file:`.tar.bz2`)"
-msgstr "bzip2 圧縮された tar ファイル (:file:`.tar.bz2`)"
+msgstr "archivo tar comprimido con bzip2 (:file:`.tar.bz2`)"
 
-#: ../../distutils/sourcedist.rst:34 ../../distutils/sourcedist.rst:37
-#: ../../distutils/sourcedist.rst:43
+#: ../Doc/distutils/sourcedist.rst:34 ../Doc/distutils/sourcedist.rst:37
+#: ../Doc/distutils/sourcedist.rst:43
 msgid "\\(5)"
 msgstr "\\(5)"
 
-#: ../../distutils/sourcedist.rst:37
+#: ../Doc/distutils/sourcedist.rst:37
 msgid "``xztar``"
 msgstr "``xztar``"
 
-#: ../../distutils/sourcedist.rst:37
+#: ../Doc/distutils/sourcedist.rst:37
 msgid "xz'ed tar file (:file:`.tar.xz`)"
-msgstr "xz 圧縮された tar ファイル (:file:`.tar.xz`)"
+msgstr "archivo tar comprimido con xz (:file:`.tar.xz`)"
 
-#: ../../distutils/sourcedist.rst:40
+#: ../Doc/distutils/sourcedist.rst:40
 msgid "``ztar``"
 msgstr "``ztar``"
 
-#: ../../distutils/sourcedist.rst:40
+#: ../Doc/distutils/sourcedist.rst:40
 msgid "compressed tar file (:file:`.tar.Z`)"
-msgstr "compress 圧縮された tar ファイル (:file:`.tar.Z`)"
+msgstr "archivo tar comprimido (:file:`.tar.Z`)"
 
-#: ../../distutils/sourcedist.rst:40
+#: ../Doc/distutils/sourcedist.rst:40
 msgid "(4),(5)"
-msgstr ""
+msgstr "(4),(5)"
 
-#: ../../distutils/sourcedist.rst:43
+#: ../Doc/distutils/sourcedist.rst:43
 msgid "``tar``"
 msgstr "``tar``"
 
-#: ../../distutils/sourcedist.rst:43
+#: ../Doc/distutils/sourcedist.rst:43
 msgid "tar file (:file:`.tar`)"
-msgstr "tar ファイル (:file:`.tar`)"
+msgstr "archivo tar (:file:`.tar`)"
 
-#: ../../distutils/sourcedist.rst:46
+#: ../Doc/distutils/sourcedist.rst:46
 msgid "Added support for the ``xztar`` format."
-msgstr "``xztar`` 形式のサポートが追加されました。"
+msgstr "Soporte agregado para el formato ``xztar``."
 
-#: ../../distutils/sourcedist.rst:49
+#: ../Doc/distutils/sourcedist.rst:49
 msgid "Notes:"
-msgstr "注釈:"
+msgstr "Notas:"
 
-#: ../../distutils/sourcedist.rst:52
+#: ../Doc/distutils/sourcedist.rst:52
 msgid "default on Windows"
-msgstr "Windows でのデフォルト形式です"
+msgstr "por defecto en Windows"
 
-#: ../../distutils/sourcedist.rst:55
+#: ../Doc/distutils/sourcedist.rst:55
 msgid "default on Unix"
-msgstr "Unixでのデフォルト形式です"
+msgstr "por defecto en Unix"
 
-#: ../../distutils/sourcedist.rst:58
+#: ../Doc/distutils/sourcedist.rst:58
 msgid ""
 "requires either external :program:`zip` utility or :mod:`zipfile` module "
 "(part of the standard Python library since Python 1.6)"
 msgstr ""
-"外部ユーティリティの :program:`zip` か、 :mod:`zipfile` モジュール (Python "
-"1.6 からは標準 Python ライブラリの一部になっています) が必要です"
+"se requiere o bien un programa externo :program:`zip` o el módulo :mod:"
+"`zipfile` (parte del estándar de la biblioteca de Python desde Python 1.6)"
 
-#: ../../distutils/sourcedist.rst:62
+#: ../Doc/distutils/sourcedist.rst:62
 msgid ""
 "requires the :program:`compress` program. Notice that this format is now "
 "pending for deprecation and will be removed in the future versions of Python."
 msgstr ""
-":program:`compress` プログラムが必要です。このフォーマットは廃止が検討されて"
-"いて、将来のバージョンの Python では削除されるであろうことに注意してくださ"
-"い。"
+"requiere el programa :program:`compress`. Tenga en cuenta que ahora este "
+"formato está deprecado y será eliminado en las futuras versiones de Python."
 
-#: ../../distutils/sourcedist.rst:65
+#: ../Doc/distutils/sourcedist.rst:65
 msgid ""
 "deprecated by `PEP 527 <https://peps.python.org/pep-0527/>`_; `PyPI <https://"
 "pypi.org>`_ only accepts ``.zip`` and ``.tar.gz`` files."
 msgstr ""
+"deprecado por `PEP 527 <https://peps.python.org/pep-0527/>`_; `PyPI <https://"
+"pypi.org>`_ solo acepta archivos ``.zip`` y ``.tar.gz``."
 
-#: ../../distutils/sourcedist.rst:68
+#: ../Doc/distutils/sourcedist.rst:68
 msgid ""
 "When using any ``tar`` format (``gztar``, ``bztar``, ``xztar``, ``ztar`` or "
 "``tar``), under Unix you can specify the ``owner`` and ``group`` names that "
 "will be set for each member of the archive."
 msgstr ""
-"``tar`` フォーマットのどれか (``gztar``, ``bztar``, ``xztar``, ``ztar``, "
-"``tar``) を利用する時、 Unix ではアーカイブ内の各メンバに設定される "
-"``owner`` と ``group`` 名を指定することができます。"
+"Al usar cualquier formato ``tar`` (``gztar``, ``bztar``, ``xztar``, ``ztar`` "
+"o ``tar``), en Unix se puede especificar el nombre del ``propietario`` y "
+"``grupo`` que se establecerá para cada uno de los miembros del archivo."
 
-#: ../../distutils/sourcedist.rst:72
+#: ../Doc/distutils/sourcedist.rst:72
 msgid "For example, if you want all files of the archive to be owned by root::"
 msgstr ""
-"例えば、アーカイブ内の全てのファイルの所有者を root にするには、次のようにし"
-"ます。 ::"
+"Por ejemplo, si quiere que todos los archivos pertenezcan al usuario root::"
 
-#: ../../distutils/sourcedist.rst:80
+#: ../Doc/distutils/sourcedist.rst:80
 msgid "Specifying the files to distribute"
-msgstr "配布するファイルを指定する"
+msgstr "Especificar los archivos a distribuir"
 
-#: ../../distutils/sourcedist.rst:82
+#: ../Doc/distutils/sourcedist.rst:82
 msgid ""
 "If you don't supply an explicit list of files (or instructions on how to "
 "generate one), the :command:`sdist` command puts a minimal default set into "
 "the source distribution:"
 msgstr ""
-"明確なファイルのリスト (またはファイルリストを生成する方法) を明示的に与えな"
-"かった場合、 :command:`sdist` コマンドはソース配布物に以下のような最小のデ"
-"フォルトのセットを含めます:"
+"Si no se proporciona una lista explícita de los archivos (o instrucciones "
+"sobre cómo generar uno), el comando :command:`sdist` pone un conjunto mínimo "
+"por defecto en la distribución de código fuente:"
 
-#: ../../distutils/sourcedist.rst:86
+#: ../Doc/distutils/sourcedist.rst:86
 msgid ""
 "all Python source files implied by the ``py_modules`` and ``packages`` "
 "options"
 msgstr ""
-"``py_modules`` と ``packages`` オプションに指定された Python ソースファイル全"
-"て"
+"todos los archivos de código fuente de Python implícitos por las opciones "
+"``py_modules`` y ``packages``"
 
-#: ../../distutils/sourcedist.rst:89
+#: ../Doc/distutils/sourcedist.rst:89
 msgid ""
 "all C source files mentioned in the ``ext_modules`` or ``libraries`` options"
 msgstr ""
-"``ext_modules`` オプションと ``libraries`` オプションで挙げられている C ソー"
-"スファイル全て"
+"todos los archivos de código fuente de C mencionados en las opciones "
+"``ext_modules`` o ``libraries``"
 
-#: ../../distutils/sourcedist.rst:95
+#: ../Doc/distutils/sourcedist.rst:95
 msgid ""
 "scripts identified by the ``scripts`` option See :ref:`distutils-installing-"
 "scripts`."
 msgstr ""
-"``scripts`` オプションで指定されたスクリプト。 :ref:`distutils-installing-"
-"scripts` を参照してください。"
+"*scripts* identificados por la opción ``scripts`` Ver :ref:`distutils-"
+"installing-scripts`."
 
-#: ../../distutils/sourcedist.rst:98
+#: ../Doc/distutils/sourcedist.rst:98
 msgid ""
 "anything that looks like a test script: :file:`test/test\\*.py` (currently, "
 "the Distutils don't do anything with test scripts except include them in "
 "source distributions, but in the future there will be a standard for testing "
 "Python module distributions)"
 msgstr ""
-"テストスクリプトと思しきファイル全て: :file:`test/test\\*.py` (現状では、"
-"Distutils はテストスクリプトをただソース配布物に含めるだけですが、将来は "
-"Python モジュール配布物に対するテスト標準ができるかもしれません)"
+"cualquier archivo que parezca un *script* de pruebas: :file:`test/test\\*."
+"py` (actualmente, Distutils no hace nada con *scripts* de prueba, solo los "
+"incluye en la distribución, pero en el futuro habrá un estándar para "
+"realizar pruebas de los módulos de Python en las distribuciones)"
 
-#: ../../distutils/sourcedist.rst:103
+#: ../Doc/distutils/sourcedist.rst:103
 msgid ""
 "Any of the standard README files (:file:`README`, :file:`README.txt`, or :"
 "file:`README.rst`), :file:`setup.py` (or whatever you called your setup "
 "script), and :file:`setup.cfg`."
 msgstr ""
-"標準 README ファイル (:file:`README`, :file:`README.txt`, :file:`README."
-"rst`) のどれか、 :file:`setup.py`  (または setup スクリプトにしているもの) 、"
-"および :file:`setup.cfg` 。"
+"Cualquiera de los archivos estándar LÉAME (:file:`README`, :file:`README."
+"txt`, o :file:`README.rst`), :file:`setup.py` (o cualquier nombre que le "
+"haya puesto al script de configuración), y :file:`setup.cfg`."
 
-#: ../../distutils/sourcedist.rst:107
+#: ../Doc/distutils/sourcedist.rst:107
 msgid ""
 "all files that matches the ``package_data`` metadata. See :ref:`distutils-"
 "installing-package-data`."
 msgstr ""
-"``package_data`` メタデータにマッチする全てのファイル。 :ref:`distutils-"
-"installing-package-data` を参照してください。"
+"todos los archivos que coincidan con los metadatos ``package_data``. Vea :"
+"ref:`distutils-installing-package-data`."
 
-#: ../../distutils/sourcedist.rst:110
+#: ../Doc/distutils/sourcedist.rst:110
 msgid ""
 "all files that matches the ``data_files`` metadata. See :ref:`distutils-"
 "additional-files`."
 msgstr ""
-"``data_files`` メタデータにマッチする全てのファイル。 :ref:`distutils-"
-"additional-files` を参照してください。"
+"todos los archivos que coincidan con los metadatos ``data_files``. Vea :ref:"
+"`distutils-additional-files`."
 
-#: ../../distutils/sourcedist.rst:113
+#: ../Doc/distutils/sourcedist.rst:113
 msgid ""
 "Sometimes this is enough, but usually you will want to specify additional "
 "files to distribute.  The typical way to do this is to write a *manifest "
@@ -288,70 +291,74 @@ msgid ""
 "generates a manifest based on its instructions and what it finds in the "
 "filesystem."
 msgstr ""
-"上記のセットで十分なこともありますが、大抵他のファイルを配布物に含めたいと思"
-"うでしょう。普通は、 :file:`MANIFEST.in` と呼ばれる *マニフェストテンプレー"
-"ト (manifest template)* を使ってこれを行います。マニフェストテンプレートは、"
-"ソース配布物に含めるファイルの正確なリストであるマニフェストファイル :file:"
-"`MANIFEST` をどうやって作成するか指示しているリストです。 :command:`sdist` コ"
-"マンドはこのテンプレートを処理し、書かれた指示とファイルシステム上に見つかっ"
-"たファイルに基づいてマニフェストファイルを作成します。"
+"A veces esto es suficiente, pero por lo general, va a querer especificar "
+"archivos adicionales a distribuir. La forma típica de hacer esto es escribir "
+"una *plantilla de manifiesto*, por defecto con el nombre :file:`MANIFEST."
+"in`. La plantilla de manifiesto es sólo una lista de instrucciones para "
+"generar el archivo de manifiesto, :file:`MANIFEST`, el cual es la lista "
+"exacta de archivos a incluir en la distribución de código fuente. El "
+"comando :command:`sdist` procesa esta plantilla y genera un manifiesto "
+"basado en las instrucciones y en lo que encuentra en el sistema de ficheros."
 
-#: ../../distutils/sourcedist.rst:121
+#: ../Doc/distutils/sourcedist.rst:121
 msgid ""
 "If you prefer to roll your own manifest file, the format is simple: one "
 "filename per line, regular files (or symlinks to them) only.  If you do "
 "supply your own :file:`MANIFEST`, you must specify everything: the default "
 "set of files described above does not apply in this case."
 msgstr ""
-"自分用のマニフェストファイルを書きたいなら、その形式は簡単です: 一行あたり一"
-"つの通常ファイル (または通常ファイルに対するシンボリックリンク) だけを書きま"
-"す。自分で :file:`MANIFEST` を提供する場合、全てを自分で指定しなければなりま"
-"せん: ただし、上で説明したデフォルトのファイルセットは、この中には含まれませ"
-"ん。"
+"Si prefiere crear su propio archivo de manifiesto, el formato es simple: un "
+"nombre de archivo por línea, solamente archivos normales (o enlaces "
+"simbólicos a ellos). Si hace su propio :file:`MANIFEST`, debe especificar "
+"todo: el conjunto predeterminado de los archivos descritos más arriba no se "
+"aplica en este caso."
 
-#: ../../distutils/sourcedist.rst:126
+#: ../Doc/distutils/sourcedist.rst:126
 msgid ""
 "An existing generated :file:`MANIFEST` will be regenerated without :command:"
 "`sdist` comparing its modification time to the one of :file:`MANIFEST.in` "
 "or :file:`setup.py`."
 msgstr ""
-":command:`sdist` は :file:`MANIFEST.in` もしくは :file:`setup.py` と更新時刻"
-"を比較せずに、生成されて既に存在している :file:`MANIFEST` を再生成します。"
+"Un :file:`MANIFEST` ya existente y generado, será regenerado sin :command:"
+"`sdist` comparando su tiempo de modificación con el de :file:`MANIFEST.in` "
+"o :file:`setup.py`."
 
-#: ../../distutils/sourcedist.rst:131
+#: ../Doc/distutils/sourcedist.rst:131
 msgid ""
 ":file:`MANIFEST` files start with a comment indicating they are generated. "
 "Files without this comment are not overwritten or removed."
 msgstr ""
-":file:`MANIFEST` ファイルの先頭に、生成されたものであることを示すコメントが付"
-"きます。このコメントが無いファイルは上書きや削除はされません。"
+":file:`MANIFEST` los archivos comienzan con un comentario indicando que son "
+"generados. Los archivos que no tengan este comentario no se sobrescriben ni "
+"eliminan."
 
-#: ../../distutils/sourcedist.rst:135
+#: ../Doc/distutils/sourcedist.rst:135
 msgid ""
 ":command:`sdist` will read a :file:`MANIFEST` file if no :file:`MANIFEST.in` "
 "exists, like it used to do."
 msgstr ""
-"以前そうであったように、 :file:`MANIFEST.in` が無い場合、 :command:`sdist` "
-"は :file:`MANIFEST` を読みに行きます。"
+":command:`sdist` leerá un archivo :file:`MANIFEST` si no existe el archivo :"
+"file:`MANIFEST.in`, como solía hacer."
 
-#: ../../distutils/sourcedist.rst:139
+#: ../Doc/distutils/sourcedist.rst:139
 msgid ""
 ":file:`README.rst` is now included in the list of distutils standard READMEs."
 msgstr ""
-":file:`README.rst` が distutils の標準 README のリストに含まれるようになりま"
-"した。"
+":file:`README.rst` ahora está incluido en la lista de LEAMEs estándar de "
+"distutils."
 
-#: ../../distutils/sourcedist.rst:143
+#: ../Doc/distutils/sourcedist.rst:143
 msgid ""
 "The manifest template has one command per line, where each command specifies "
 "a set of files to include or exclude from the source distribution.  For an "
 "example, again we turn to the Distutils' own manifest template:"
 msgstr ""
-"マニフェストテンプレートには 1 行ごとに 1 つのコマンドがあり、それぞれのコマ"
-"ンドはソース配布物に含む、もしくは含まないファイルの集合を指定します。例とし"
-"て、再度 Distutils 自身のマニフェストテンプレートに戻りましょう:"
+"La plantilla de manifiesto tiene un comando por línea, donde cada comando "
+"especifica un conjunto de archivos para incluir o excluir de la distribución "
+"de código fuente. Para un ejemplo, de nuevo nos dirigimos a la Distutils la "
+"propia plantilla de manifiesto:"
 
-#: ../../distutils/sourcedist.rst:153
+#: ../Doc/distutils/sourcedist.rst:153
 msgid ""
 "The meanings should be fairly clear: include all files in the distribution "
 "root matching :file:`\\*.txt`, all files anywhere under the :file:`examples` "
@@ -363,18 +370,19 @@ msgid ""
 "There are several other commands available in the manifest template mini-"
 "language; see section :ref:`sdist-cmd`."
 msgstr ""
-"その意味はかなり明白です: 配布物ルートの :file:`\\*.txt` のパターンに当て嵌ま"
-"る全てのファイルと、 :file:`examples` ディレクトリ以下の :file:`\\*.txt` また"
-"は :file:`\\*.py` のパターンに当て嵌まる全てのファイルを含み、 :file:"
-"`examples/sample?/build` のパターンに当て嵌まる全てのディレクトリを除外しま"
-"す。これらの処理は、標準で含むファイル一式が定まった *後に* 行われ、マニフェ"
-"ストテンプレートに明示的に指示を書くことで、標準のファイル一式からファイルを"
-"除外することができます。 (もしくは、 :option:`!--no-defaults` オプションを"
-"使って、標準のファイル一式の定義を全て無効にすることもできます。) マニフェス"
-"トテンプレートの小言語では、他にもいくつかのコマンドが利用できます; :ref:"
-"`sdist-cmd` を参照してください。"
+"Los significados debe ser bastante claros: incluya todos los archivos en la "
+"raíz de la distribución, que coincidan con :file:`\\*.txt`, todos los "
+"archivos dentro del directorio :file:`examples` que coincidan con :file:`\\*."
+"txt` o :file:`\\*.py`, y excluir todos los directorios que coincidan con :"
+"file:`examples/sample?/build`.  Todo esto se hace *después* de seguir el "
+"conjunto estándar de inclusión, por lo que puede excluir archivos del "
+"conjunto establecido con instrucciones explícitas en la plantilla del  "
+"manifiesto. (O bien, puede utilizar la opción :option:`!--no-defaults` para "
+"desactivar el conjunto estándar completo.) Hay varios otros comandos "
+"disponibles en el mini-lenguaje de la plantilla de manifiesto; vea la "
+"sección :ref:`sdist-cmd`."
 
-#: ../../distutils/sourcedist.rst:163
+#: ../Doc/distutils/sourcedist.rst:163
 msgid ""
 "The order of commands in the manifest template matters: initially, we have "
 "the list of default files as described above, and each command in the "
@@ -382,191 +390,197 @@ msgid ""
 "processed the manifest template, we remove files that should not be included "
 "in the source distribution:"
 msgstr ""
-"マニフェストテンプレート中のコマンドの順番には意味があります; 初期状態では、"
-"上で述べたようなデフォルトのファイルがあり、テンプレート中の各コマンドによっ"
-"て、逐次ファイルを追加したり除去したりしていいます。マニフェストテンプレート"
-"を完全に処理し終えたら、ソース配布物中に含めるべきでない以下のファイルをリス"
-"トから除去します:"
+"El orden de los comandos en la plantilla de manifiesto es importante: "
+"inicialmente, tenemos la lista de archivos predeterminados como se describió "
+"anteriormente, y cada comando en la plantilla agrega o elimina de esa lista "
+"de archivos. Una vez que hemos procesado completamente la plantilla del "
+"manifiesto, eliminamos los archivos que no deberían incluirse en la "
+"distribución del código fuente:"
 
-#: ../../distutils/sourcedist.rst:169
+#: ../Doc/distutils/sourcedist.rst:169
 msgid "all files in the Distutils \"build\" tree (default :file:`build/`)"
 msgstr ""
-"Distutls の \"build\" (デフォルトの名前は :file:`build/`) ツリー下にある全て"
-"のファイル"
+"todos los archivos en el árbol \"build\" de Distutils (por defecto :file:"
+"`build/`)"
 
-#: ../../distutils/sourcedist.rst:171
+#: ../Doc/distutils/sourcedist.rst:171
 msgid ""
 "all files in directories named :file:`RCS`, :file:`CVS`, :file:`.svn`, :file:"
 "`.hg`, :file:`.git`, :file:`.bzr` or :file:`_darcs`"
 msgstr ""
-":file:`RCS`, :file:`CVS`, :file:`.svn`, :file:`.hg`, :file:`.git`, :file:`."
-"bzr`, :file:`_darcs` といった名前のディレクトリ下にある全てのファイル"
+"todos los archivos en directorios nombrados :file:`RCS`, :file:`CVS`, :file:"
+"`.svn`, :file:`.hg`, :file:`.git`, :file:`.bzr` o :file:`_darcs`"
 
-#: ../../distutils/sourcedist.rst:174
+#: ../Doc/distutils/sourcedist.rst:174
 msgid ""
 "Now we have our complete list of files, which is written to the manifest for "
 "future reference, and then used to build the source distribution archive(s)."
 msgstr ""
-"こうして完全なファイルのリストができ、後で参照するためにマニフェストに書き込"
-"まれます。この内容は、ソース配布物のアーカイブを作成する際に使われます。"
+"Ahora tenemos la lista completa de archivos, que está escrita en el "
+"manifiesto para una futura referencia, y luego se utilizará para construir "
+"los archivos de distribución de código fuente."
 
-#: ../../distutils/sourcedist.rst:177
+#: ../Doc/distutils/sourcedist.rst:177
 msgid ""
 "You can disable the default set of included files with the :option:`!--no-"
 "defaults` option, and you can disable the standard exclude set with :option:"
 "`!--no-prune`."
 msgstr ""
-"含めるファイルのデフォルトセットは :option:`!--no-defaults` で無効化でき、標"
-"準で除外するセットは :option:`!--no-prune` で無効化できます。"
+"Puede deshabilitar el conjunto predeterminado de archivos incluidos con la "
+"opción :option:`!--no-defaults`, y puede deshabilitar el conjunto de "
+"exclusión estándar con :option:`!--no-prune`."
 
-#: ../../distutils/sourcedist.rst:181
+#: ../Doc/distutils/sourcedist.rst:181
 msgid ""
 "Following the Distutils' own manifest template, let's trace how the :command:"
 "`sdist` command builds the list of files to include in the Distutils source "
 "distribution:"
 msgstr ""
-"Distutils 自体のマニフェストテンプレートから、 :command:`sdist` コマンドがど"
-"のようにして Distutils ソース配布物に含めるファイルのリストを作成するか見てみ"
-"ましょう:"
+"Siguiendo la propia plantilla de manifiesto de Distutils, rastreemos cómo el "
+"comando :command:`sdist` crea la lista de archivos para incluir en la "
+"distribución fuente de Distutils:"
 
-#: ../../distutils/sourcedist.rst:185
+#: ../Doc/distutils/sourcedist.rst:185
 msgid ""
 "include all Python source files in the :file:`distutils` and :file:"
 "`distutils/command` subdirectories (because packages corresponding to those "
 "two directories were mentioned in the ``packages`` option in the setup "
 "script---see section :ref:`setup-script`)"
 msgstr ""
-":file:`distutils` ディレクトリ、および :file:`distutils/command` サブディレク"
-"トリの下にある全ての Python ソースファイルを含めます (これらの二つのディレク"
-"トリが、setup スクリプト下の ``packages`` オプションに記載されているからです "
-"--- :ref:`setup-script` を参照してください)"
+"incluir todos los archivos fuente de Python en los sub-directorios :file:"
+"`distutils` y :file:`distutils/command` (porque los paquetes "
+"correspondientes a esos dos directorios se mencionaron en la opción "
+"``packages`` en el script de configuración ---vea la sección :ref:`setup-"
+"script`)"
 
-#: ../../distutils/sourcedist.rst:190
+#: ../Doc/distutils/sourcedist.rst:190
 msgid ""
 "include :file:`README.txt`, :file:`setup.py`, and :file:`setup.cfg` "
 "(standard files)"
 msgstr ""
-":file:`README.txt`, :file:`setup.py`, および :file:`setup.cfg` (標準のファイ"
-"ルセット) を含めます"
+"incluir :file:`README.txt`, :file:`setup.py`, y :file:`setup.cfg` (archivos "
+"estándar)"
 
-#: ../../distutils/sourcedist.rst:193
+#: ../Doc/distutils/sourcedist.rst:193
 msgid "include :file:`test/test\\*.py` (standard files)"
-msgstr ":file:`test/test\\*.py` (標準のファイルセット) を含めます"
+msgstr "incluir :file:`test/test\\*.py` (archivos estándar)"
 
-#: ../../distutils/sourcedist.rst:195
+#: ../Doc/distutils/sourcedist.rst:195
 msgid ""
 "include :file:`\\*.txt` in the distribution root (this will find :file:"
 "`README.txt` a second time, but such redundancies are weeded out later)"
 msgstr ""
-"配布物ルート下の :file:`\\*.txt` を含めます (この処理で、 :file:`README.txt` "
-"がもう一度見つかりますが、こうした冗長性は後で刈り取られます)"
+"incluir :file:`\\*.txt` en la raíz de la distribución(esto encontrará  :file:"
+"`README.txt` por segunda vez, pero tales redundancias se eliminan más tarde)"
 
-#: ../../distutils/sourcedist.rst:198
+#: ../Doc/distutils/sourcedist.rst:198
 msgid ""
 "include anything matching :file:`\\*.txt` or :file:`\\*.py` in the sub-tree "
 "under :file:`examples`,"
 msgstr ""
-":file:`examples` 下にあるサブツリー内で :file:`\\*.txt` または :file:`\\*."
-"py` にマッチする全てのファイルを含めます"
+"incluir cualquier archivo que coincida con :file:`\\*.txt` or :file:`\\*.py` "
+"en el subárbol dentro de :file:`examples`,"
 
-#: ../../distutils/sourcedist.rst:201
+#: ../Doc/distutils/sourcedist.rst:201
 msgid ""
 "exclude all files in the sub-trees starting at directories matching :file:"
 "`examples/sample?/build`\\ ---this may exclude files included by the "
 "previous two steps, so it's important that the ``prune`` command in the "
 "manifest template comes after the ``recursive-include`` command"
 msgstr ""
-"ディレクトリ名が :file:`examples/sample?/build` にマッチするディレクトリ以下"
-"のサブツリー内にあるファイル全てを除外します--- この操作によって、上の二つの"
-"ステップでリストに含められたファイルが除外されることがあるので、マニフェスト"
-"テンプレート内では ``recursive-include`` コマンドの後に ``prune`` コマンドを"
-"持ってくることが重要です"
+"excluir todos los archivos en los subárboles que comiencen en los "
+"directorios que coincidan con :file:`examples/sample?/build`\\ ---esto puede "
+"excluir los archivos incluidos en los dos pasos anteriores, por lo que es "
+"importante que el comando ``prune`` en la plantilla de manifiesto vaya "
+"después del comando ``recursive-include``"
 
-#: ../../distutils/sourcedist.rst:206
+#: ../Doc/distutils/sourcedist.rst:206
 msgid ""
 "exclude the entire :file:`build` tree, and any :file:`RCS`, :file:`CVS`, :"
 "file:`.svn`, :file:`.hg`, :file:`.git`, :file:`.bzr` and :file:`_darcs` "
 "directories"
 msgstr ""
-":file:`build` ツリー全体、および :file:`RCS`, :file:`CVS`, :file:`.svn`, :"
-"file:`.hg`, :file:`.git`, :file:`.bzr`, :file:`_darcs` ディレクトリ全てを除外"
-"します。"
+"excluir todo el árbol :file:`build` y cualquier directorio :file:`RCS`, :"
+"file:`CVS`, :file:`.svn`, :file:`.hg`, :file:`.git`, :file:`.bzr` y :file:"
+"`_darcs`"
 
-#: ../../distutils/sourcedist.rst:210
+#: ../Doc/distutils/sourcedist.rst:210
 msgid ""
 "Just like in the setup script, file and directory names in the manifest "
 "template should always be slash-separated; the Distutils will take care of "
 "converting them to the standard representation on your platform. That way, "
 "the manifest template is portable across operating systems."
 msgstr ""
-"setup スクリプトと同様、マニフェストテンプレート中のディレクトリ名は常にス"
-"ラッシュ区切りで表記します; Distutils は、こうしたディレクトリ名を注意深くプ"
-"ラットフォームでの標準的な表現に変換します。このため、マニフェストテンプレー"
-"トは複数のオペレーティングシステムにわたって可搬性を持ちます。"
+"Al igual que en el script de configuración, los nombres de archivos y "
+"directorios en la plantilla de manifiesto siempre deben estar separados por "
+"barras; Distutils se encargará de convertirlos a la representación estándar "
+"en su plataforma. De esa manera, la plantilla de manifiesto es portable en "
+"todos los sistemas operativos."
 
-#: ../../distutils/sourcedist.rst:219
+#: ../Doc/distutils/sourcedist.rst:219
 msgid "Manifest-related options"
-msgstr "マニフェスト (manifest) 関連のオプション"
+msgstr "Opciones relacionadas con el manifesto"
 
-#: ../../distutils/sourcedist.rst:221
+#: ../Doc/distutils/sourcedist.rst:221
 msgid ""
 "The normal course of operations for the :command:`sdist` command is as "
 "follows:"
 msgstr ""
-":command:`sdist` コマンドが通常行う処理の流れは、以下のようになっています:"
+"El curso normal de operaciones para el comando :command:`sdist` es el "
+"siguiente:"
 
-#: ../../distutils/sourcedist.rst:223
+#: ../Doc/distutils/sourcedist.rst:223
 msgid ""
 "if the manifest file (:file:`MANIFEST` by default) exists and the first line "
 "does not have a comment indicating it is generated from :file:`MANIFEST.in`, "
 "then it is used as is, unaltered"
 msgstr ""
-"マニフェストファイル (デフォルトでは :file:`MANIFEST`) が存在し、1行目に :"
-"file:`MANIFEST.in` から生成されたことを示すコメントが無い場合は、変更を加えず"
-"にそのまま使用します"
+"si el archivo de manifiesto (:file:`MANIFEST` por defecto) existe y la "
+"primera línea no tiene un comentario que indique que se genera a partir de :"
+"file:`MANIFEST.in`, entonces se usa como está, sin alteraciones"
 
-#: ../../distutils/sourcedist.rst:227
+#: ../Doc/distutils/sourcedist.rst:227
 msgid ""
 "if the manifest file doesn't exist or has been previously automatically "
 "generated, read :file:`MANIFEST.in` and create the manifest"
 msgstr ""
-"マニフェストファイルが存在しないか、前回自動生成されていた場合は、 :file:"
-"`MANIFEST.in` を読み込み、マニフェストを作成します"
+"si el archivo de manifiesto no existe o si se ha generado previamente de "
+"forma automática, lea :file:`MANIFEST.in` y cree el manifiesto"
 
-#: ../../distutils/sourcedist.rst:230
+#: ../Doc/distutils/sourcedist.rst:230
 msgid ""
 "if neither :file:`MANIFEST` nor :file:`MANIFEST.in` exist, create a manifest "
 "with just the default file set"
 msgstr ""
-":file:`MANIFEST` も :file:`MANIFEST.in` もなければ、デフォルトのファイルセッ"
-"トだけでできたマニフェストファイルを作成します"
+"si no existe :file:`MANIFEST` ni :file:`MANIFEST.in`, cree un manifiesto "
+"solamente con el conjunto de archivos predeterminado"
 
-#: ../../distutils/sourcedist.rst:233
+#: ../Doc/distutils/sourcedist.rst:233
 msgid ""
 "use the list of files now in :file:`MANIFEST` (either just generated or read "
 "in) to create the source distribution archive(s)"
 msgstr ""
-"(生成されたか、読み出された) :file:`MANIFEST` 内にあるファイルのリストを使っ"
-"てソース配布物アーカイブを作成します"
+"use la lista de archivos, que ahora están en :file:`MANIFEST` (ya sea "
+"generado o leído) para crear los archivos de distribución de código fuente"
 
-#: ../../distutils/sourcedist.rst:236
+#: ../Doc/distutils/sourcedist.rst:236
 msgid ""
 "There are a couple of options that modify this behaviour.  First, use the :"
 "option:`!--no-defaults` and :option:`!--no-prune` to disable the standard "
 "\"include\" and \"exclude\" sets."
 msgstr ""
-"上の動作は二種類のオプションを使って変更できます。まず、標準の \"include\" お"
-"よび \"exclude\" セットを無効化するには :option:`!--no-defaults` および :"
-"option:`!--no-prune`  を使います。"
+"Existen un par de opciones que modifican este comportamiento.  Primero, use :"
+"option:`!--no-defaults` y :option:`!--no-prune` para desactivar los "
+"conjuntos estándar \"include\" y \"exclude\"."
 
-#: ../../distutils/sourcedist.rst:240
+#: ../Doc/distutils/sourcedist.rst:240
 msgid ""
 "Second, you might just want to (re)generate the manifest, but not create a "
 "source distribution::"
 msgstr ""
-"第2に、単にマニフェストを (再)生成したいだけで、ソース配布物は作成したくない"
-"場合があるかもしれません::"
+"Segundo, quizá quiera (re)generar el manifesto, pero no crear la "
+"distribución del código fuente::"
 
-#: ../../distutils/sourcedist.rst:245
+#: ../Doc/distutils/sourcedist.rst:245
 msgid ":option:`!-o` is a shortcut for :option:`!--manifest-only`."
-msgstr ":option:`!-o` は :option:`!--manifest-only` のショートカットです。"
+msgstr ":option:`!-o` es una forma corta de :option:`!--manifest-only`."

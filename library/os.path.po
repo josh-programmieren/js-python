@@ -1,72 +1,79 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-# Atsuo Ishimoto <atsuoishimoto@gmail.com>, 2021
-# mollinaca, 2021
-# Takanori Suzuki <takanori@takanory.net>, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-03 14:14+0000\n"
-"PO-Revision-Date: 2021-06-28 01:10+0000\n"
-"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-11-02 13:49-0300\n"
+"Last-Translator: Claudia Millan <clmilneb@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: ../../library/os.path.rst:2
+#: ../Doc/library/os.path.rst:2
 msgid ":mod:`os.path` --- Common pathname manipulations"
-msgstr ":mod:`os.path` --- 共通のパス名操作"
+msgstr ":mod:`os.path` --- Manipulaciones comunes de nombre de ruta"
 
-#: ../../library/os.path.rst:7
+#: ../Doc/library/os.path.rst:7
 msgid ""
 "**Source code:** :source:`Lib/posixpath.py` (for POSIX) and :source:`Lib/"
 "ntpath.py` (for Windows)."
 msgstr ""
+"**Código fuente:** :source:`Lib/posixpath.py` (para POSIX) y :source:`Lib/"
+"ntpath.py` (para Windows)."
 
-#: ../../library/os.path.rst:14
+#: ../Doc/library/os.path.rst:14
 msgid ""
 "This module implements some useful functions on pathnames. To read or write "
 "files see :func:`open`, and for accessing the filesystem see the :mod:`os` "
 "module. The path parameters can be passed as strings, or bytes, or any "
 "object implementing the :class:`os.PathLike` protocol."
 msgstr ""
+"Este módulo implementa algunas funciones útiles sobre los nombres de rutas. "
+"Para leer o escribir archivos consulte :func:`open`, y para acceder a "
+"archivos del sistema vea el :mod:`os`. Los parámetros para las rutas pueden "
+"ser pasados como caracteres, o bytes ,o cualquier objeto implementado en el "
+"protocolo :class:`os.PathLike`."
 
-#: ../../library/os.path.rst:19
+#: ../Doc/library/os.path.rst:19
 msgid ""
 "Unlike a Unix shell, Python does not do any *automatic* path expansions. "
 "Functions such as :func:`expanduser` and :func:`expandvars` can be invoked "
 "explicitly when an application desires shell-like path expansion.  (See also "
 "the :mod:`glob` module.)"
 msgstr ""
+"A diferencia de un shell Unix, Python no realiza ninguna expansión de ruta "
+"*automática*. Las funciones como :func:`expanduser` y :func:`expandvars` "
+"puede ser invocadas de manera explicita cuando una aplicación desea realizar "
+"una expansión de ruta *shell-like*. (Consulte el módulo :mod:`glob`.)"
 
-#: ../../library/os.path.rst:26
+#: ../Doc/library/os.path.rst:26
 msgid "The :mod:`pathlib` module offers high-level path objects."
-msgstr ":mod:`pathlib` モジュールは高水準のパスオブジェクトを提供します。"
+msgstr "El módulo :mod:`pathlib` ofrece objetos de ruta de alto nivel."
 
-#: ../../library/os.path.rst:31
+#: ../Doc/library/os.path.rst:31
 msgid ""
 "All of these functions accept either only bytes or only string objects as "
 "their parameters.  The result is an object of the same type, if a path or "
 "file name is returned."
 msgstr ""
-"以下のすべての関数は、そのパラメータにバイト列のみ、あるいは文字列のみ受け付"
-"けます。パスまたはファイル名を返す場合、返り値は同じ型のオブジェクトになりま"
-"す。"
+"Todas estas funciones aceptan solo bytes o solo objetos de cadena como sus "
+"parámetros. El resultado es un objeto del mismo tipo, si se retorna una ruta "
+"o un nombre de archivo."
 
-#: ../../library/os.path.rst:37
+#: ../Doc/library/os.path.rst:37
 msgid ""
 "Since different operating systems have different path name conventions, "
 "there are several versions of this module in the standard library.  The :mod:"
@@ -76,58 +83,61 @@ msgid ""
 "path that is *always* in one of the different formats.  They all have the "
 "same interface:"
 msgstr ""
-"OS によって異なるパス名の決まりがあるため、標準ライブラリにはこのモジュールの"
-"いくつかのバージョンが含まれています。 :mod:`os.path` モジュールは常に現在 "
-"Python が動作している OS に適したパスモジュールであるため、ローカルのパスを扱"
-"うのに適しています。各々のモジュールをインポートして *常に* 一つのフォーマッ"
-"トを利用することも可能です。これらはすべて同じインターフェースを持っています:"
+"Dado que los diferentes sistemas operativos tienen diferentes convenciones "
+"de nombres de ruta, existen varias versiones de este módulo en la librería "
+"estándar. El módulo :mod:`os.path` siempre es el módulo adecuado para el "
+"sistema operativo en el cual Python está operando, y por lo tanto es "
+"utilizable para rutas locales. Sin embargo, también puedes importar y "
+"utilizar los módulos individuales si deseas manipular una ruta que *siempre* "
+"está en uno de los diferentes formatos. Todos tienen la misma interfaz:"
 
-#: ../../library/os.path.rst:45
+#: ../Doc/library/os.path.rst:45
 msgid ":mod:`posixpath` for UNIX-style paths"
-msgstr ":mod:`posixpath` UNIX スタイルのパス用"
+msgstr ":mod:`posixpath` para rutas con estilo UNIX"
 
-#: ../../library/os.path.rst:46
+#: ../Doc/library/os.path.rst:46
 msgid ":mod:`ntpath` for Windows paths"
-msgstr ":mod:`ntpath` Windows パス用"
+msgstr ":mod:`ntpath` para rutas Windows"
 
-#: ../../library/os.path.rst:51
+#: ../Doc/library/os.path.rst:51
 msgid ""
 ":func:`exists`, :func:`lexists`, :func:`isdir`, :func:`isfile`, :func:"
 "`islink`, and :func:`ismount` now return ``False`` instead of raising an "
 "exception for paths that contain characters or bytes unrepresentable at the "
 "OS level."
 msgstr ""
-":func:`exists`、 :func:`lexists`、 :func:`isdir`、 :func:`isfile`、 :func:"
-"`islink`、および :func:`ismount` は、OS レベルで表現できない文字列を含む可能"
-"性がある例外を送出する代わりに ``False`` を返すようになりました。"
+":func:`exists`, :func:`lexists`, :func:`isdir`, :func:`isfile`, :func:"
+"`islink`, y :func:`ismount` ahora retornan ``False`` en lugar de lanzar una "
+"excepción para rutas que contienen caracteres o bytes que no se puedan "
+"representar a nivel de sistema operativo."
 
-#: ../../library/os.path.rst:59
+#: ../Doc/library/os.path.rst:59
 msgid ""
 "Return a normalized absolutized version of the pathname *path*. On most "
 "platforms, this is equivalent to calling the function :func:`normpath` as "
 "follows: ``normpath(join(os.getcwd(), path))``."
 msgstr ""
-"パス名 *path* の正規化された絶対パスを返します。ほとんどのプラットフォームで"
-"は、これは関数 :func:`normpath` を次のように呼び出した時と等価です: "
-"``normpath(join(os.getcwd(), path))``。"
+"Retorna una versión normalizada y absoluta del nombre de ruta *path*. En la "
+"mayoría de las plataformas esto es el equivalente a invocar la función :func:"
+"`normpath`de la siguiente manera: ``normpath(join(os.getcwd(), path))``."
 
-#: ../../library/os.path.rst:63 ../../library/os.path.rst:76
-#: ../../library/os.path.rst:116 ../../library/os.path.rst:125
-#: ../../library/os.path.rst:141 ../../library/os.path.rst:151
-#: ../../library/os.path.rst:177 ../../library/os.path.rst:197
-#: ../../library/os.path.rst:214 ../../library/os.path.rst:226
-#: ../../library/os.path.rst:235 ../../library/os.path.rst:245
-#: ../../library/os.path.rst:255 ../../library/os.path.rst:265
-#: ../../library/os.path.rst:275 ../../library/os.path.rst:294
-#: ../../library/os.path.rst:325 ../../library/os.path.rst:345
-#: ../../library/os.path.rst:368 ../../library/os.path.rst:390
-#: ../../library/os.path.rst:408 ../../library/os.path.rst:421
-#: ../../library/os.path.rst:437 ../../library/os.path.rst:453
-#: ../../library/os.path.rst:478 ../../library/os.path.rst:509
+#: ../Doc/library/os.path.rst:63 ../Doc/library/os.path.rst:76
+#: ../Doc/library/os.path.rst:116 ../Doc/library/os.path.rst:125
+#: ../Doc/library/os.path.rst:141 ../Doc/library/os.path.rst:151
+#: ../Doc/library/os.path.rst:177 ../Doc/library/os.path.rst:197
+#: ../Doc/library/os.path.rst:214 ../Doc/library/os.path.rst:226
+#: ../Doc/library/os.path.rst:235 ../Doc/library/os.path.rst:245
+#: ../Doc/library/os.path.rst:255 ../Doc/library/os.path.rst:265
+#: ../Doc/library/os.path.rst:275 ../Doc/library/os.path.rst:294
+#: ../Doc/library/os.path.rst:324 ../Doc/library/os.path.rst:344
+#: ../Doc/library/os.path.rst:367 ../Doc/library/os.path.rst:389
+#: ../Doc/library/os.path.rst:407 ../Doc/library/os.path.rst:420
+#: ../Doc/library/os.path.rst:436 ../Doc/library/os.path.rst:452
+#: ../Doc/library/os.path.rst:477 ../Doc/library/os.path.rst:508
 msgid "Accepts a :term:`path-like object`."
-msgstr ":term:`path-like object` を受け入れるようになりました。"
+msgstr "Acepta un :term:`path-like object`."
 
-#: ../../library/os.path.rst:69
+#: ../Doc/library/os.path.rst:69
 msgid ""
 "Return the base name of pathname *path*.  This is the second element of the "
 "pair returned by passing *path* to the function :func:`split`.  Note that "
@@ -135,64 +145,62 @@ msgid ""
 "program; where :program:`basename` for ``'/foo/bar/'`` returns ``'bar'``, "
 "the :func:`basename` function returns an empty string (``''``)."
 msgstr ""
-"パス名 *path* の末尾のファイル名部分を返します。これは関数 :func:`split` に "
-"*path* を渡した時に返されるペアの 2 番めの要素です。この関数が返すのは Unix "
-"の :program:`basename` とは異なります; Unix の :program:`basename` は ``'/"
-"foo/bar/'`` に対して ``'bar'`` を返しますが、関数 :func:`basename` は空文字"
-"列 (``''``) を返します。"
+"Retorna un nombre base de nombre de ruta *path*. Este es el segundo elemento "
+"del par retornado al pasar *path* a la función :func:`split`. Toma en cuenta "
+"que el resultado de esta función es diferente a la del programa de Unix :"
+"program:`basename`; donde :program:`basename` para ``'/foo/bar/'`` retorna "
+"``'bar'``, la función :func:`basename` retorna una cadena vacía (``''``)."
 
-#: ../../library/os.path.rst:82
+#: ../Doc/library/os.path.rst:82
 msgid ""
 "Return the longest common sub-path of each pathname in the sequence "
 "*paths*.  Raise :exc:`ValueError` if *paths* contain both absolute and "
 "relative pathnames, the *paths* are on the different drives or if *paths* is "
 "empty.  Unlike :func:`commonprefix`, this returns a valid path."
 msgstr ""
-"シーケンス *paths* 中の各パス名に共通するサブパスのうち、最も長いものを返しま"
-"す。\n"
-"*paths* に絶対パス名と相対パス名の両方が含まれている、 *paths* が異なるドライ"
-"ブ上にある、または *paths* が空の場合、 :exc:`ValueError` を送出します。\n"
-":func:`commonprefix` とは異なり、有効なパスを返します。"
+"Retorna la sub-ruta común más larga de cada nombre de ruta en la secuencia "
+"*paths*. Lanza una excepción :exc:`ValueError` si *paths* contiene nombres "
+"de ruta absolutos y relativos, o los *paths* están en discos diferentes o si "
+"*paths* está vacío. A diferencia de :func:`commonprefix`, retorna una ruta "
+"valida."
 
-#: ../../library/os.path.rst:88 ../../library/os.path.rst:388
-#: ../../library/os.path.rst:400 ../../library/os.path.rst:416
-#: ../../library/os.path.rst:432
+#: ../Doc/library/os.path.rst:89 ../Doc/library/os.path.rst:388
+#: ../Doc/library/os.path.rst:400 ../Doc/library/os.path.rst:416
+#: ../Doc/library/os.path.rst:432
 msgid ":ref:`Availability <availability>`: Unix, Windows."
-msgstr ":ref:`Availability <availability>`: Unix, Windows。"
+msgstr ":ref:`Availability <availability>`: Unix, Windows."
 
-#: ../../library/os.path.rst:92
+#: ../Doc/library/os.path.rst:92
 msgid "Accepts a sequence of :term:`path-like objects <path-like object>`."
-msgstr ""
-":term:`path-like objects <path-like object>` のシーケンスを受け入れるようにな"
-"りました。"
+msgstr "Acepta una secuencia de :term:`path-like objects <path-like object>`."
 
-#: ../../library/os.path.rst:98
+#: ../Doc/library/os.path.rst:98
 msgid ""
 "Return the longest path prefix (taken character-by-character) that is a "
 "prefix of all paths in  *list*.  If *list* is empty, return the empty string "
 "(``''``)."
 msgstr ""
-"*list* 内のすべてのパスに共通する接頭辞のうち、最も長いものを (パス名の 1 文"
-"字 1 文字を判断して) 返します。*list* が空の場合、空文字列 (``''``) を返しま"
-"す。"
+"Retorna el prefijo de ruta más largo (tomado carácter por carácter) que es "
+"un prefijo de todas las rutas en *list*. Si *list* está vacía, retorna la "
+"cadena vacía (``''``)."
 
-#: ../../library/os.path.rst:104
+#: ../Doc/library/os.path.rst:104
 msgid ""
 "This function may return invalid paths because it works a character at a "
 "time.  To obtain a valid path, see :func:`commonpath`."
 msgstr ""
-"この関数は一度に 1 文字ずつ処理するため、不正なパスを返す場合があります。有効"
-"なパスを取得するためには、:func:`commonpath` を参照してください。"
+"Esta función puede que retorne rutas invalidas porque trabaja un carácter a "
+"la vez. Para obtener una ruta valida, consulta :func:`commonpath`."
 
-#: ../../library/os.path.rst:122
+#: ../Doc/library/os.path.rst:122
 msgid ""
 "Return the directory name of pathname *path*.  This is the first element of "
 "the pair returned by passing *path* to the function :func:`split`."
 msgstr ""
-"パス名 *path* のディレクトリ名を返します。これは関数 :func:`split` に *path* "
-"を渡した時に返されるペアの 1 番めの要素です。"
+"Retorna el nombre del directorio de la ruta *path*. Es el primer elemento "
+"del par retornado al pasar *path* a la función :func:`split`."
 
-#: ../../library/os.path.rst:131
+#: ../Doc/library/os.path.rst:131
 msgid ""
 "Return ``True`` if *path* refers to an existing path or an open file "
 "descriptor.  Returns ``False`` for broken symbolic links.  On some "
@@ -200,52 +208,52 @@ msgid ""
 "to execute :func:`os.stat` on the requested file, even if the *path* "
 "physically exists."
 msgstr ""
-"*path* が実在するパスかオープンしているファイル記述子を参照している場合 "
-"``True`` を返します。壊れたシンボリックリンクについては ``False`` を返しま"
-"す。一部のプラットフォームでは、たとえ *path* が物理的に存在していたとして"
-"も、要求されたファイルに対する :func:`os.stat` の実行権がなければこの関数が "
-"``False`` を返すことがあります。"
+"Retorna ``True`` si *path* se refiere a una ruta existente o un descriptor "
+"de archivo abierto. Retorna ``False`` para enlaces simbólicos rotos. En "
+"algunas plataformas, esta función puede retornar ``False`` si no se concede "
+"permiso para ejecutar :func:`os.stat` en el archivo solicitado, incluso la "
+"ruta *path* existe físicamente."
 
-#: ../../library/os.path.rst:137
+#: ../Doc/library/os.path.rst:137
 msgid ""
 "*path* can now be an integer: ``True`` is returned if it is an  open file "
 "descriptor, ``False`` otherwise."
 msgstr ""
-"*path* は整数でも可能になりました: それがオープンしているファイル記述子なら "
-"``True`` が返り、それ以外なら ``False`` が返ります。"
+"*path* ahora puede ser un valor entero: retorna ``True`` si es un descriptor "
+"de archivo abierto, de otro modo retorna ``False``."
 
-#: ../../library/os.path.rst:147
+#: ../Doc/library/os.path.rst:147
 msgid ""
 "Return ``True`` if *path* refers to an existing path. Returns ``True`` for "
 "broken symbolic links.   Equivalent to :func:`exists` on platforms lacking :"
 "func:`os.lstat`."
 msgstr ""
-"*path* が実在するパスなら ``True`` を返します。壊れたシンボリックリンクについ"
-"ては ``True`` を返します。 :func:`os.lstat` がない環境では :func:`exists` と"
-"等価です。"
+"Retorna ``True`` si *path* se refiere a un camino existente. Retorna "
+"``True`` para los enlaces simbólicos rotos. Equivalente a :func:`exists` en "
+"plataformas que carecen de :func:`os.lstat`."
 
-#: ../../library/os.path.rst:159
+#: ../Doc/library/os.path.rst:159
 msgid ""
 "On Unix and Windows, return the argument with an initial component of ``~`` "
 "or ``~user`` replaced by that *user*'s home directory."
 msgstr ""
-"Unix および Windows では、与えられた引数の先頭のパス要素 ``~`` 、または "
-"``~user`` を、 *user* のホームディレクトリのパスに置き換えて返します。"
+"En Unix y Windows, retorna el argumento con un componente inicial de ``~`` o "
+"``~user`` reemplazado por el directorio *home* de *user*."
 
-#: ../../library/os.path.rst:164
+#: ../Doc/library/os.path.rst:164
 msgid ""
 "On Unix, an initial ``~`` is replaced by the environment variable :envvar:"
 "`HOME` if it is set; otherwise the current user's home directory is looked "
 "up in the password directory through the built-in module :mod:`pwd`. An "
 "initial ``~user`` is looked up directly in the password directory."
 msgstr ""
-"Unix では、先頭の ``~`` は、環境変数 :envvar:`HOME` が設定されているならその"
-"値に置き換えられます。設定されていない場合は、現在のユーザのホームディレクト"
-"リをビルトインモジュール :mod:`pwd` を使ってパスワードディレクトリから探して"
-"置き換えます。先頭の ``~user`` については、直接パスワードディレクトリから探し"
-"ます。"
+"En Unix, el ``~`` inicial es reemplazado por la variable de entorno :envvar:"
+"`HOME` si está activada; si no, el directorio principal del usuario actual "
+"se busca en el directorio de contraseñas a través del módulo incorporado :"
+"mod:`pwd`. Un ``~user`` inicial es buscado directamente en el directorio de "
+"contraseñas."
 
-#: ../../library/os.path.rst:169
+#: ../Doc/library/os.path.rst:169
 msgid ""
 "On Windows, :envvar:`USERPROFILE` will be used if set, otherwise a "
 "combination of :envvar:`HOMEPATH` and :envvar:`HOMEDRIVE` will be used.  An "
@@ -253,65 +261,69 @@ msgid ""
 "of the current user's home directory matches :envvar:`USERNAME`, and "
 "replacing it if so."
 msgstr ""
+"En Windows, se usará :envvar:`USERPROFILE` si se establece, de lo contrario "
+"se usará una combinación de :envvar:`HOMEPATH` y :envvar:`HOMEDRIVE`.  Un "
+"``~user``  inicial se maneja comprobando que el último componente de "
+"directorio del directorio de inicio del usuario actual coincide con :envvar:"
+"`USERNAME`, y reemplazándolo si es así."
 
-#: ../../library/os.path.rst:174
+#: ../Doc/library/os.path.rst:174
 msgid ""
 "If the expansion fails or if the path does not begin with a tilde, the path "
 "is returned unchanged."
 msgstr ""
-"置き換えに失敗したり、引数のパスがチルダで始まっていなかった場合は、パスをそ"
-"のまま返します。"
+"Si la expansión falla o si la ruta no comienza con una tilde, la ruta se "
+"retorna sin cambios."
 
-#: ../../library/os.path.rst:180
+#: ../Doc/library/os.path.rst:180
 msgid "No longer uses :envvar:`HOME` on Windows."
-msgstr "Windowsで  :envvar:`HOME` は参照しなくなりました。"
+msgstr "Ya no utiliza :envvar:`HOME` en Windows."
 
-#: ../../library/os.path.rst:189
+#: ../Doc/library/os.path.rst:189
 msgid ""
 "Return the argument with environment variables expanded.  Substrings of the "
 "form ``$name`` or ``${name}`` are replaced by the value of environment "
 "variable *name*.  Malformed variable names and references to non-existing "
 "variables are left unchanged."
 msgstr ""
-"引数のパスの環境変数を展開して返します。引数の中の ``$name`` または ``${name}"
-"`` のような形式の文字列は環境変数、 *name* の値に置き換えられます。不正な変数"
-"名や存在しない変数名の場合には変換されず、そのまま返します。"
+"Retorna el argumento con variables de entorno expandidas. Las sub-cadenas de "
+"la forma ``$name`` or ``${name}`` se reemplazan por el valor de la variable "
+"de entorno *name*. Los nombres de variables mal formadas y las referencias a "
+"variables no existentes se dejan sin cambios."
 
-#: ../../library/os.path.rst:194
+#: ../Doc/library/os.path.rst:194
 msgid ""
 "On Windows, ``%name%`` expansions are supported in addition to ``$name`` and "
 "``${name}``."
 msgstr ""
-"Windows では、 ``$name`` や ``${name}`` の形式に加えて、 ``%name%`` の形式も"
-"サポートされています。"
+"En Windows, las expansiones ``%name%`` están soportadas además de ``$name`` "
+"y ``${name}``."
 
-#: ../../library/os.path.rst:203
+#: ../Doc/library/os.path.rst:203
 msgid ""
 "Return the time of last access of *path*.  The return value is a floating "
 "point number giving the number of seconds since the epoch (see the  :mod:"
 "`time` module).  Raise :exc:`OSError` if the file does not exist or is "
 "inaccessible."
 msgstr ""
-"*path* に最後にアクセスした時刻を返します。\n"
-"返り値は、エポック (:mod:`time` モジュールを参照) からの経過秒数を与える浮動"
-"小数点数です。\n"
-"ファイルが存在しない、あるいはアクセスできなかった場合は :exc:`OSError` を送"
-"出します。"
+"Retorna la hora del último acceso de *path*. El valor de retorno es un "
+"número de punto flotante que da el número de segundos desde la época "
+"(Consulta el módulo :mod:`time`). Lanza una excepción :exc:`OSError` si el "
+"archivo no existe o es inaccesible."
 
-#: ../../library/os.path.rst:210
+#: ../Doc/library/os.path.rst:210
 msgid ""
 "Return the time of last modification of *path*.  The return value is a "
 "floating point number giving the number of seconds since the epoch (see "
 "the  :mod:`time` module). Raise :exc:`OSError` if the file does not exist or "
 "is inaccessible."
 msgstr ""
-"*path* に最後に更新した時刻を返します。\n"
-"返り値は、エポック (:mod:`time` モジュールを参照) からの経過秒数を与える浮動"
-"小数点数です。\n"
-"ファイルが存在しない、あるいはアクセスできなかった場合は :exc:`OSError` を送"
-"出します。"
+"Retorna el tiempo de la última modificación de *path*. El valor de retorno "
+"es un número de punto flotante que da el número de segundos desde la época "
+"(consulta el módulo :mod:`time`). lanza una excepción :exc:`OSError` si el "
+"archivo no existe o es inaccesible."
 
-#: ../../library/os.path.rst:220
+#: ../Doc/library/os.path.rst:220
 msgid ""
 "Return the system's ctime which, on some systems (like Unix) is the time of "
 "the last metadata change, and, on others (like Windows), is the creation "
@@ -319,61 +331,62 @@ msgid ""
 "since the epoch (see the  :mod:`time` module).  Raise :exc:`OSError` if the "
 "file does not exist or is inaccessible."
 msgstr ""
-"システムの ctime、Unix系など一部のシステムでは最後にメタデータが変更された時"
-"刻、Windows などその他のシステムでは *path* の作成時刻を返します。返り値はエ"
-"ポック (:mod:`time` モジュールを参照) からの経過時間を示す秒数になります。"
-"ファイルが存在しない、あるいはアクセスできなかった場合は :exc:`OSError` を送"
-"出します。"
+"Retorna el *ctime* del sistema que, en algunos sistemas (como Unix) es la "
+"hora del último cambio de metadatos y, en otros (como Windows), es el tiempo "
+"de creación de *path*. El valor retornado es un número que da el número de "
+"segundos desde la época (consulta el módulo :mod:`time`). Lanza una "
+"excepción :exc:`OSError` si el archivo no existe o es inaccesible."
 
-#: ../../library/os.path.rst:232
+#: ../Doc/library/os.path.rst:232
 msgid ""
 "Return the size, in bytes, of *path*.  Raise :exc:`OSError` if the file does "
 "not exist or is inaccessible."
 msgstr ""
-"*path* のサイズをバイト数で返します。ファイルが存在しない、あるいはアクセスで"
-"きなかった場合は :exc:`OSError` を送出します。"
+"Retorna el tamaño en bytes de *path*, Lanza una excepción :exc:`OSError` si "
+"el archivo no existe o es inaccesible."
 
-#: ../../library/os.path.rst:241
+#: ../Doc/library/os.path.rst:241
 msgid ""
 "Return ``True`` if *path* is an absolute pathname.  On Unix, that means it "
 "begins with a slash, on Windows that it begins with a (back)slash after "
 "chopping off a potential drive letter."
 msgstr ""
-"*path* が絶対パスなら ``True`` を返します。すなわち、 Unix ではスラッシュで始"
-"まり、 Windows ではドライブレターに続く (バック) スラッシュで始まる場合です。"
+"Retorna ``True`` si *path* es un nombre de ruta de acceso absoluto. En Unix, "
+"eso significa que comienza con una barra diagonal, en Windows que comienza "
+"con una barra diagonal (invertida) después de cortar una letra de unidad "
+"potencial."
 
-#: ../../library/os.path.rst:251
+#: ../Doc/library/os.path.rst:251
 msgid ""
 "Return ``True`` if *path* is an :func:`existing <exists>` regular file. This "
 "follows symbolic links, so both :func:`islink` and :func:`isfile` can be "
 "true for the same path."
 msgstr ""
-"*path* が :func:`存在する <exists>` 一般ファイルなら ``True`` を返します。\n"
-"この関数はシンボリックリンクの先を辿るので、同じパスに対して :func:`islink` "
-"と :func:`isfile` の両方が真を返すことがあります。"
+"Retorna ``True`` si *path* es un archivo :func:`existing <exists>`. Esto "
+"sigue los enlaces simbólicos, por lo que tanto :func:`islink` como :func:"
+"`isfile` pueden ser verdaderos para la misma ruta."
 
-#: ../../library/os.path.rst:261
+#: ../Doc/library/os.path.rst:261
 msgid ""
 "Return ``True`` if *path* is an :func:`existing <exists>` directory.  This "
 "follows symbolic links, so both :func:`islink` and :func:`isdir` can be true "
 "for the same path."
 msgstr ""
-"*path* が :func:`存在する <exists>` ディレクトリなら ``True`` を返します。\n"
-"この関数はシンボリックリンクの先を辿るので、同じパスに対して :func:`islink` "
-"と :func:`isdir` の両方が真を返すことがあります。"
+"Retorna ``True`` si *path* es un directorio :func:`existing <exists>`. Esto "
+"sigue los enlaces simbólicos, por lo que tanto :func:`islink` como :func:"
+"`isdir` pueden ser verdaderos para la misma ruta."
 
-#: ../../library/os.path.rst:271
+#: ../Doc/library/os.path.rst:271
 msgid ""
 "Return ``True`` if *path* refers to an :func:`existing <exists>` directory "
 "entry that is a symbolic link.  Always ``False`` if symbolic links are not "
 "supported by the Python runtime."
 msgstr ""
-"*path* が :func:`存在する <exists>` ディレクトリを指すシンボリックリンクなら "
-"``True`` を返します。\n"
-"Python ランタイムがシンボリックリンクをサポートしていないプラットフォームで"
-"は、常に ``False`` を返します。"
+"Retorna  ``True`` si *path* hace referencia a una entrada de directorio :"
+"func:`existing <exists>` que es un enlace simbólico. Siempre ``False`` si el "
+"entorno de ejecución de Python no admite vínculos simbólicos.."
 
-#: ../../library/os.path.rst:281
+#: ../Doc/library/os.path.rst:281
 msgid ""
 "Return ``True`` if pathname *path* is a :dfn:`mount point`: a point in a "
 "file system where a different file system has been mounted.  On POSIX, the "
@@ -385,62 +398,72 @@ msgid ""
 "UNC are always mount points, and for any other path ``GetVolumePathName`` is "
 "called to see if it is different from the input path."
 msgstr ""
-"パス名 *path* がマウントポイント :dfn:`mount point` (ファイルシステムの中で異"
-"なるファイルシステムがマウントされているところ) なら、 ``True`` を返しま"
-"す。\n"
-"POSIX では、この関数は *path* の親ディレクトリである :file:`{path}/..` が "
-"*path* と異なるデバイス上にあるか、あるいは :file:`{path}/..` と *path* が同"
-"じデバイス上の同じ i-node を指しているかをチェックします --- これによって全て"
-"の Unix 系システムと POSIX 標準でマウントポイントが検出できます。\n"
-"だたし、同じファイルシステムの bind mount の信頼できる検出はできません。\n"
-"Windows では、ドライブレターを持つルートと共有 UNC は常にマウントポイントであ"
-"り、また他のパスでは、入力のパスが異なるデバイスからのものか見るために "
-"``GetVolumePathName`` が呼び出されます。"
+"Retorna ``True`` si el nombre de ruta *path* es un :dfn:`mount point`: un "
+"punto en un sistema de archivos donde se ha montado un sistema de archivos "
+"diferente. En POSIX, la función comprueba si el elemento primario de "
+"*path*, :file:`{path}/..`, se encuentra en un dispositivo diferente de "
+"*path*, o si :file:`{path}/..` y *path* apuntan al mismo *i-node* en el "
+"mismo dispositivo --- esto debería detectar puntos de montaje para todas las "
+"variantes Unix y POSIX. No es capaz de detectar de forma fiable los montajes "
+"de enlace en el mismo sistema de archivos. En Windows, una raíz de letra de "
+"unidad y un recurso compartido UNC siempre son puntos de montaje, y para "
+"cualquier otra ruta de acceso ``GetVolumePathName`` se llama para ver si es "
+"diferente de la ruta de acceso de entrada."
 
-#: ../../library/os.path.rst:291
+#: ../Doc/library/os.path.rst:291
 msgid "Support for detecting non-root mount points on Windows."
-msgstr ""
-"Windows での、ルートでないマウントポイントの検出をサポートするようになってい"
-"ます。"
+msgstr "Soporte para detectar puntos de montaje *non-root* en Windows."
 
-#: ../../library/os.path.rst:300
+#: ../Doc/library/os.path.rst:300
 msgid ""
-"Join one or more path segments intelligently.  The return value is the "
-"concatenation of *path* and all members of *\\*paths*, with exactly one "
-"directory separator following each non-empty part, except the last. That is, "
-"the result will only end in a separator if the last part is either empty or "
-"ends in a separator. If a segment is an absolute path (which on Windows "
-"requires both a drive and a root), then all previous segments are ignored "
-"and joining continues from the absolute path segment."
+"Join one or more path components intelligently.  The return value is the "
+"concatenation of *path* and any members of *\\*paths* with exactly one "
+"directory separator following each non-empty part except the last, meaning "
+"that the result will only end in a separator if the last part is empty.  If "
+"a component is an absolute path, all previous components are thrown away and "
+"joining continues from the absolute path component."
 msgstr ""
+"Une uno o más componentes de ruta de forma inteligente.  El valor retornado "
+"es la concatenación de *path* y cualquier miembro de *\\*paths* con "
+"exactamente un separador de directorios después de cada parte no vacía "
+"excepto la última, lo que significa que el resultado solo terminará en un "
+"separador si la última parte está vacía.  Si un componente es una ruta "
+"absoluta, todos los componentes anteriores se desechan y la unión continúa "
+"desde el componente de ruta absoluta."
 
-#: ../../library/os.path.rst:308
+#: ../Doc/library/os.path.rst:307
 msgid ""
-"On Windows, the drive is not reset when a rooted path segment (e.g., "
-"``r'\\foo'``) is encountered. If a segment is on a different drive or is an "
-"absolute path, all previous segments are ignored and the drive is reset. "
-"Note that since there is a current directory for each drive, ``os.path."
-"join(\"c:\", \"foo\")`` represents a path relative to the current directory "
-"on drive :file:`C:` (:file:`c:foo`), not :file:`c:\\\\foo`."
+"On Windows, the drive letter is not reset when an absolute path component (e."
+"g., ``r'\\foo'``) is encountered.  If a component contains a drive letter, "
+"all previous components are thrown away and the drive letter is reset.  Note "
+"that since there is a current directory for each drive, ``os.path.join(\"c:"
+"\", \"foo\")`` represents a path relative to the current directory on drive :"
+"file:`C:` (:file:`c:foo`), not :file:`c:\\\\foo`."
 msgstr ""
+"En Windows, la letra de la unidad no se restablece cuando se encuentra un "
+"componente de ruta absoluta (por ejemplo, ``r'\\foo'``). Si un componente "
+"contiene una letra de unidad, todos los componentes anteriores se desechan y "
+"la letra de unidad se restablece. Ten en cuenta que, dado que hay un "
+"directorio actual para cada unidad, ``os.path.join (\"c:\", \"foo\")`` "
+"representa una ruta relativa al directorio actual en la unidad :file:`C:` (:"
+"file:`c:foo`),, no :file:`c:\\\\foo`."
 
-#: ../../library/os.path.rst:315
+#: ../Doc/library/os.path.rst:314
 msgid "Accepts a :term:`path-like object` for *path* and *paths*."
-msgstr ""
-"*path* と *paths* が :term:`path-like object` を受け付けるようになりました。"
+msgstr "Acepta un objeto :term:`path-like object` para *path* y *paths*."
 
-#: ../../library/os.path.rst:321
+#: ../Doc/library/os.path.rst:320
 msgid ""
 "Normalize the case of a pathname.  On Windows, convert all characters in the "
 "pathname to lowercase, and also convert forward slashes to backward slashes. "
 "On other operating systems, return the path unchanged."
 msgstr ""
-"パス名の大文字・小文字を正規化します。\n"
-"Windowsでは、パス名にある文字を全て小文字に、スラッシュをバックスラッシュに変"
-"換します。\n"
-"他のオペレーティングシステムでは、パスを変更せずに返します。"
+"Normaliza las mayúsculas y minúsculas de un nombre de ruta. En Windows "
+"convierte todos los caracteres en el nombre de ruta a minúsculas y también "
+"convierte las barras inclinadas hacia atrás en barras inclinadas hacia "
+"atrás. En otros sistemas operativos, retorna la ruta sin cambios."
 
-#: ../../library/os.path.rst:331
+#: ../Doc/library/os.path.rst:330
 msgid ""
 "Normalize a pathname by collapsing redundant separators and up-level "
 "references so that ``A//B``, ``A/B/``, ``A/./B`` and ``A/foo/../B`` all "
@@ -448,13 +471,14 @@ msgid ""
 "that contains symbolic links.  On Windows, it converts forward slashes to "
 "backward slashes. To normalize case, use :func:`normcase`."
 msgstr ""
-"パスを正規化します。余分な区切り文字や上位レベル参照を除去し、``A//B``、``A/"
-"B/``、``A/./B`` や ``A/foo/../B`` などはすべて ``A/B`` になります。この文字列"
-"操作は、シンボリックリンクを含むパスの意味を変えてしまう場合があります。"
-"Windows では、スラッシュをバックスラッシュに変換します。大文字小文字の正規化"
-"には :func:`normcase` を使用してください。"
+"Normaliza un nombre de ruta colapsando separadores redundantes y referencias "
+"de nivel superior para que ``A//B``, ``A/B/``, ``A/./B`` y ``A/foo/../B`` se "
+"transformen en ``A/B``. Esta modificación de cadena puede que modifique el "
+"significado de la ruta que contenga enlaces simbólicos. En Windows, "
+"convierte las barras inclinadas hacia adelante en barras hacia atrás. Para "
+"normalizar mayúsculas y minúsculas, utiliza :func:`normcase`."
 
-#: ../../library/os.path.rst:338
+#: ../Doc/library/os.path.rst:337
 msgid ""
 "On POSIX systems, in accordance with `IEEE Std 1003.1 2013 Edition; 4.13 "
 "Pathname Resolution <https://pubs.opengroup.org/onlinepubs/9699919799/"
@@ -463,49 +487,63 @@ msgid ""
 "interpreted in an implementation-defined manner, although more than two "
 "leading characters shall be treated as a single character."
 msgstr ""
+"En sistemas POSIX, de acuerdo con `IEEE Std 1003.1 Edición 2013; 4.13 "
+"Resolución de Nombres de Rutas <https://pubs.opengroup.org/"
+"onlinepubs/9699919799/basedefs/V1_chap04.html#tag_04_13>`_, si el nombre de "
+"ruta comienza con exactamente dos barras diagonales, el primer componente "
+"que sigue a los caracteres principales puede interpretarse de una manera "
+"definida por la implementación, aunque más de dos caracteres principales se "
+"tratarán como un solo carácter."
 
-#: ../../library/os.path.rst:351
+#: ../Doc/library/os.path.rst:350
 msgid ""
 "Return the canonical path of the specified filename, eliminating any "
 "symbolic links encountered in the path (if they are supported by the "
 "operating system)."
 msgstr ""
-"パスの中のシンボリックリンク (もしそれが当該オペレーティングシステムでサポー"
-"トされていれば) を取り除いて、指定されたファイル名を正規化したパスを返しま"
-"す。"
+"Retorna la ruta canónica del nombre de archivo especificado, eliminando "
+"cualquier enlace simbólico encontrado en la ruta (si es que tienen soporte "
+"por el sistema operativo)."
 
-#: ../../library/os.path.rst:355
+#: ../Doc/library/os.path.rst:354
 msgid ""
 "If a path doesn't exist or a symlink loop is encountered, and *strict* is "
 "``True``, :exc:`OSError` is raised. If *strict* is ``False``, the path is "
 "resolved as far as possible and any remainder is appended without checking "
 "whether it exists."
 msgstr ""
+"Si no existe una ruta o se encuentra un bucle de enlace simbólico, y "
+"*strict* es ``True``, se genera :exc:`OSError`. Si *strict* es ``False``, la "
+"ruta se resuelve en la medida de lo posible y cualquier resto se anexa sin "
+"verificar si existe."
 
-#: ../../library/os.path.rst:361
+#: ../Doc/library/os.path.rst:360
 msgid ""
 "This function emulates the operating system's procedure for making a path "
 "canonical, which differs slightly between Windows and UNIX with respect to "
 "how links and subsequent path components interact."
 msgstr ""
+"Esta función emula el procedimiento del sistema operativo para hacer que una "
+"ruta sea canónica, que difiere ligeramente entre Windows y UNIX con respecto "
+"a cómo interactúan los enlaces y los componentes de la ruta posterior."
 
-#: ../../library/os.path.rst:365
+#: ../Doc/library/os.path.rst:364
 msgid ""
 "Operating system APIs make paths canonical as needed, so it's not normally "
 "necessary to call this function."
 msgstr ""
+"Las API del sistema operativo hacen que las rutas sean canónicas según sea "
+"necesario, por lo que normalmente no es necesario llamar a esta función."
 
-#: ../../library/os.path.rst:371
+#: ../Doc/library/os.path.rst:370
 msgid "Symbolic links and junctions are now resolved on Windows."
-msgstr ""
-"Windows においてシンボリックリンクとジャンクションが解決されるようになりまし"
-"た。"
+msgstr "Los enlaces y uniones simbólicos ahora se resuelven en Windows."
 
-#: ../../library/os.path.rst:374
+#: ../Doc/library/os.path.rst:373
 msgid "The *strict* parameter was added."
-msgstr "*strict* 引数が追加されました。"
+msgstr "Se agregó el parámetro *strict*."
 
-#: ../../library/os.path.rst:380
+#: ../Doc/library/os.path.rst:379
 msgid ""
 "Return a relative filepath to *path* either from the current directory or "
 "from an optional *start* directory.  This is a path computation:  the "
@@ -513,55 +551,60 @@ msgid ""
 "*start*.  On Windows, :exc:`ValueError` is raised when *path* and *start* "
 "are on different drives."
 msgstr ""
-"カレントディレクトリあるいはオプションの *start* ディレクトリからの *path* へ"
-"の相対パスを返します。これはパス計算で行っており、ファイルシステムにアクセス"
-"して *path* や *start* の存在や性質を確認することはありません。Windowsでは、 "
-"*path* と *start* が異なるドライブの場合、 :exc:`ValueError` を送出します。"
+"Retorna un nombre de ruta relativo a *path* desde el directorio actual o de "
+"un directorio *start* opcional. Este es un cálculo de ruta: No se accede al "
+"sistema de archivos para confirmar la existencia o la naturaleza de *path* o "
+"*start*. En Windows, se lanza :exc:`ValueError`  cuando *path* y *start* "
+"están en discos diferentes."
 
-#: ../../library/os.path.rst:386
+#: ../Doc/library/os.path.rst:385
 msgid "*start* defaults to :attr:`os.curdir`."
-msgstr "*start* のデフォルト値は :attr:`os.curdir` です。"
+msgstr "*start* toma de forma predeterminada el valor de :attr:`os.curdir`."
 
-#: ../../library/os.path.rst:396
+#: ../Doc/library/os.path.rst:395
 msgid ""
 "Return ``True`` if both pathname arguments refer to the same file or "
 "directory. This is determined by the device number and i-node number and "
 "raises an exception if an :func:`os.stat` call on either pathname fails."
 msgstr ""
-"引数の両パス名が同じファイルまたはディレクトリを参照している場合、 ``True`` "
-"を返します。これは、デバイス番号と i-node 番号で決定されます。どちらかのパス"
-"名への :func:`os.stat` 呼び出しが失敗した場合、例外が送出されます。"
+"Retorna ``True`` si ambos argumentos de nombre de ruta refieren al mismo "
+"archivo o directorio. Esto se determina por el número de dispositivo y el "
+"número de *i-node* y lanza una excepción si una llamada de :func:`os.stat` "
+"en alguno de los nombres de ruta falla."
 
-#: ../../library/os.path.rst:402 ../../library/os.path.rst:418
-#: ../../library/os.path.rst:434
+#: ../Doc/library/os.path.rst:401 ../Doc/library/os.path.rst:417
+#: ../Doc/library/os.path.rst:433
 msgid "Added Windows support."
-msgstr "Windows サポートを追加しました。"
+msgstr "Añadido soporte para Windows."
 
-#: ../../library/os.path.rst:405
+#: ../Doc/library/os.path.rst:404
 msgid "Windows now uses the same implementation as all other platforms."
-msgstr "Windows が他のプラットフォームと同じ実装を使用するようになりました。"
+msgstr ""
+"Windows ahora utiliza la misma implementación que en el resto de las "
+"plataformas."
 
-#: ../../library/os.path.rst:414
+#: ../Doc/library/os.path.rst:413
 msgid ""
 "Return ``True`` if the file descriptors *fp1* and *fp2* refer to the same "
 "file."
 msgstr ""
-"ファイル記述子 *fp1* と *fp2* が同じファイルを参照していたら ``True`` を返し"
-"ます。"
+"Retorna ``True`` si los descriptores de archivo *fp1* y *fp2* se refieren al "
+"mismo archivo."
 
-#: ../../library/os.path.rst:427
+#: ../Doc/library/os.path.rst:426
 msgid ""
 "Return ``True`` if the stat tuples *stat1* and *stat2* refer to the same "
 "file. These structures may have been returned by :func:`os.fstat`, :func:`os."
 "lstat`, or :func:`os.stat`.  This function implements the underlying "
 "comparison used by :func:`samefile` and :func:`sameopenfile`."
 msgstr ""
-"stat タプル *stat1* と *stat2* が同じファイルを参照していれば ``True`` を返し"
-"ます。これらのタプルは :func:`os.fstat` 、 :func:`os.lstat` あるいは :func:"
-"`os.stat` の返り値で構いません。この関数は :func:`samefile` と :func:"
-"`sameopenfile` を使用した比較に基いて実装しています。"
+"Retorna ``True`` si las tuplas de *stat* (*stat1* y *stat2*) refieren al "
+"mismo archivo. Estas estructuras pueden haber sido retornadas por :func:`os."
+"fstat`, :func:`os.lstat`, o :func:`os.stat`. Esta función implementa la "
+"comparación subyacente utilizada por: :func:`samefile` y :func:"
+"`sameopenfile`."
 
-#: ../../library/os.path.rst:443
+#: ../Doc/library/os.path.rst:442
 msgid ""
 "Split the pathname *path* into a pair, ``(head, tail)`` where *tail* is the "
 "last pathname component and *head* is everything leading up to that.  The "
@@ -573,74 +616,115 @@ msgid ""
 "*path* (but the strings may differ).  Also see the functions :func:`dirname` "
 "and :func:`basename`."
 msgstr ""
-"パス名 *path* を ``(head, tail)`` のペアに分割します。 *tail* はパス名の構成"
-"要素の末尾で、 *head* はそれより前の部分です。 *tail* はスラッシュを含みませ"
-"ん; もし *path* がスラッシュで終わっていれば *tail* は空文字列になります。も"
-"し *path* にスラッシュがなければ、 *head* は空文字になります。 *path* が空文"
-"字なら、 *head* と *tail* の両方が空文字になります。 *head* の末尾のスラッ"
-"シュは *head* がルートディレクトリ (または 1 個以上のスラッシュだけ) でない限"
-"り取り除かれます。 ``join(head, tail)`` は常に *path* と同じ場所を返します"
-"が、文字列としては異なるかもしれません。関数 :func:`dirname`, :func:"
-"`basename` も参照してください。"
+"Divide el nombre de la ruta *path * en un par, ``(head, tail)`` donde *tail* "
+"es el último componente del nombre de la ruta y *head* es todo lo que "
+"conduce a eso. La parte *head* nunca contendrá una barra; si *head* termina "
+"en una barra, *tail* estará vacía. Si no hay barra inclinada en *path*, "
+"*head* estará vacío. Si *path* está vacía, tanto *head* como *tail* estarán "
+"vacíos. Las barras diagonales finales se eliminan de *head* a menos que sea "
+"la raíz (solo una o más barras). En todos los casos, ``join(head, tail)`` "
+"retorna una ruta a la misma ubicación que *path* (pero las cadenas pueden "
+"diferir). Consulta las funciones :func:`dirname` y :func:`basename`."
 
-#: ../../library/os.path.rst:459
+#: ../Doc/library/os.path.rst:458
 msgid ""
 "Split the pathname *path* into a pair ``(drive, tail)`` where *drive* is "
 "either a mount point or the empty string.  On systems which do not use drive "
 "specifications, *drive* will always be the empty string.  In all cases, "
 "``drive + tail`` will be the same as *path*."
 msgstr ""
-"パス名 *path* を ``(drive, tail)`` のペアに分割します。*drive* はマウントポイ"
-"ントか空文字列になります。ドライブ指定をサポートしていないシステムでは、"
-"*drive* は常に空文字になります。どの場合でも、``drive + tail`` は *path* と等"
-"しくなります。"
+"Divide el nombre de ruta *path* en un par ``(drive, tail)`` donde *drive* es "
+"un punto de montaje o una cadena vacía. En sistemas que no utilizan "
+"especificaciones de unidad, *drive* siempre será una cadena vacía. En todos "
+"los casos, ``drive + tail`` será lo mismo que *path*."
 
-#: ../../library/os.path.rst:464
+#: ../Doc/library/os.path.rst:463
 msgid ""
 "On Windows, splits a pathname into drive/UNC sharepoint and relative path."
 msgstr ""
-"Windows では、パス名はドライブ名/UNC 共有ポイントと相対パスに分割されます。"
+"En Windows, divide un nombre de ruta en unidad / punto compartido UNC y ruta "
+"relativa."
 
-#: ../../library/os.path.rst:466
+#: ../Doc/library/os.path.rst:465
 msgid ""
 "If the path contains a drive letter, drive will contain everything up to and "
 "including the colon::"
 msgstr ""
-"パスがドライブレターを含む場合、ドライブレターにはコロンまでが含まれます::"
+"Si la ruta contiene una letra de unidad, la unidad contendrá todo hasta los "
+"dos puntos inclusive::"
 
-#: ../../library/os.path.rst:472
+#: ../Doc/library/os.path.rst:471
 msgid ""
 "If the path contains a UNC path, drive will contain the host name and share, "
 "up to but not including the fourth separator::"
 msgstr ""
+"Si la ruta contiene una ruta UNC, *drive* contendrá el nombre de host y el "
+"recurso compartido, hasta el cuarto separador, pero sin incluirlo::"
 
-#: ../../library/os.path.rst:484
+#: ../Doc/library/os.path.rst:483
 msgid ""
 "Split the pathname *path* into a pair ``(root, ext)``  such that ``root + "
 "ext == path``, and the extension, *ext*, is empty or begins with a period "
 "and contains at most one period."
 msgstr ""
+"Divide el nombre de la ruta *path* en un par ``(root, ext)`` de tal forma "
+"que ``root + ext == path``, y *ext* queda vacío o inicia con un punto y "
+"contiene a lo mucho un punto."
 
-#: ../../library/os.path.rst:488
+#: ../Doc/library/os.path.rst:487
 msgid "If the path contains no extension, *ext* will be ``''``::"
-msgstr ""
+msgstr "Si la ruta no contiene ninguna extensión, *ext* será  ``’’``::"
 
-#: ../../library/os.path.rst:493
+#: ../Doc/library/os.path.rst:492
 msgid ""
 "If the path contains an extension, then *ext* will be set to this extension, "
 "including the leading period. Note that previous periods will be ignored::"
 msgstr ""
+"Si la ruta contiene una extensión, *ext* se establecerá como esta extensión, "
+"incluido el punto por delante. Tenga en cuenta que los puntos anteriores se "
+"ignorarán:"
 
-#: ../../library/os.path.rst:501
+#: ../Doc/library/os.path.rst:500
 msgid ""
 "Leading periods of the last component of the path are considered to be part "
 "of the root::"
 msgstr ""
+"Los puntos que están por delante del último componente de la ruta son "
+"considerados parte de la raíz::"
 
-#: ../../library/os.path.rst:515
+#: ../Doc/library/os.path.rst:514
 msgid ""
 "``True`` if arbitrary Unicode strings can be used as file names (within "
 "limitations imposed by the file system)."
 msgstr ""
-"ファイル名に任意の Unicode 文字列を (システムの制限内で) 使用できる場合は "
-"``True`` になります。"
+"``True`` si se pueden utilizar cadenas Unicode arbitrarias como nombres de "
+"archivo (dentro de las limitaciones impuestas por el sistema de archivos)."
+
+#~ msgid ""
+#~ "This module implements some useful functions on pathnames. To read or "
+#~ "write files see :func:`open`, and for accessing the filesystem see the :"
+#~ "mod:`os` module. The path parameters can be passed as either strings, or "
+#~ "bytes. Applications are encouraged to represent file names as (Unicode) "
+#~ "character strings. Unfortunately, some file names may not be "
+#~ "representable as strings on Unix, so applications that need to support "
+#~ "arbitrary file names on Unix should use bytes objects to represent path "
+#~ "names. Vice versa, using bytes objects cannot represent all file names on "
+#~ "Windows (in the standard ``mbcs`` encoding), hence Windows applications "
+#~ "should use string objects to access all files."
+#~ msgstr ""
+#~ "Este módulo implementa algunas funciones útiles en nombres de ruta. Para "
+#~ "leer o escribir archivos consulta :func:`open`, y para acceder al sistema "
+#~ "de archivos consulta el módulo :mod:`os`. Los parámetros de ruta puede "
+#~ "ser pasados tanto siendo cadenas o bytes. Se recomienda que las "
+#~ "aplicaciones representen los nombres de archivo como caracteres de cadena "
+#~ "(Unicode). Desafortunadamente, algunos nombres de archivo puede que no "
+#~ "sean representables como cadenas en Unix, así que las aplicaciones que "
+#~ "necesiten tener soporte para nombres de archivo arbitrarios deberían usar "
+#~ "objetos byte para representar nombres de archivo. Viceversa, el uso de "
+#~ "objetos de bytes no puede representar todos los nombres de archivo en "
+#~ "Windows (en la codificación estándar ``mbcs``), por lo tanto, las "
+#~ "aplicaciones de Windows deben usar objetos de cadena para acceder a todos "
+#~ "los archivos."
+
+#~ msgid "Leading periods on the basename are ignored::"
+#~ msgstr "Los puntos por delante del *basename* son ignorados::"

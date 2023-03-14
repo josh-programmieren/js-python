@@ -1,51 +1,51 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-29 13:04+0000\n"
-"Last-Translator: Osamu NAKAMURA, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2020-10-22 15:48+0200\n"
+"Last-Translator: \n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../whatsnew/3.1.rst:3
+#: ../Doc/whatsnew/3.1.rst:3
 msgid "What's New In Python 3.1"
-msgstr "What's New In Python 3.1"
+msgstr "Qué hay de nuevo en Python 3.1"
 
-#: ../../whatsnew/3.1.rst:0
+#: ../Doc/whatsnew/3.1.rst
 msgid "Author"
-msgstr "著者"
+msgstr "Autor"
 
-#: ../../whatsnew/3.1.rst:5
+#: ../Doc/whatsnew/3.1.rst:5
 msgid "Raymond Hettinger"
 msgstr "Raymond Hettinger"
 
-#: ../../whatsnew/3.1.rst:49
+#: ../Doc/whatsnew/3.1.rst:49
 msgid ""
 "This article explains the new features in Python 3.1, compared to 3.0. "
 "Python 3.1 was released on June 27, 2009."
 msgstr ""
+"Este artículo explica las nuevas características de Python 3.1, en "
+"comparación con 3.0. Python 3.1 se lanzó el 27 de junio de 2009."
 
-#: ../../whatsnew/3.1.rst:54
+#: ../Doc/whatsnew/3.1.rst:54
 msgid "PEP 372: Ordered Dictionaries"
-msgstr "PEP 372: 順序付き辞書"
+msgstr "PEP 372: Diccionarios ordenados"
 
-#: ../../whatsnew/3.1.rst:56
+#: ../Doc/whatsnew/3.1.rst:56
 msgid ""
 "Regular Python dictionaries iterate over key/value pairs in arbitrary order. "
 "Over the years, a number of authors have written alternative implementations "
@@ -53,12 +53,14 @@ msgid ""
 "the experiences from those implementations, a new :class:`collections."
 "OrderedDict` class has been introduced."
 msgstr ""
-"通常の Python 辞書は、 key/value ペアを不定の順序でイテレートします。何年にも"
-"わたり、いろいろな人が key の挿入順を保存する辞書の別実装を書いてきました。そ"
-"の経験に基づき、新しい :class:`~collections.OrderedDict` クラスが導入されまし"
-"た。"
+"Los diccionarios de Python normales iteran sobre los pares clave/valor en "
+"orden arbitrario. A través de los años, varios autores han escrito "
+"implementaciones alternativas que recuerdan el orden en el que se insertaron "
+"originalmente las claves. Basándose en las experiencias de esas "
+"implementaciones, una nueva clase :class:`collections.OrderedDict` ha sido "
+"introducida."
 
-#: ../../whatsnew/3.1.rst:62
+#: ../Doc/whatsnew/3.1.rst:62
 msgid ""
 "The OrderedDict API is substantially the same as regular dictionaries but "
 "will iterate over keys and values in a guaranteed order depending on when a "
@@ -66,12 +68,14 @@ msgid ""
 "original insertion position is left unchanged.  Deleting an entry and "
 "reinserting it will move it to the end."
 msgstr ""
-"OrderedDict API は通常の辞書と同じインターフェースを提供していますが、 key/"
-"value をイテレートするときに key が最初に挿入された順番になることが保証されて"
-"います。新しいエントリが既存のエントリを上書きした場合は、元の挿入順序が保持"
-"されます。エントリを削除して再挿入すると、順序は一番最後に移動します。"
+"La API de OrderedDict es sustancialmente la misma que la de los diccionarios "
+"normales, pero iterará sobre las claves y los valores en un orden "
+"garantizado, dependiendo de cuándo se insertó una clave por primera vez.  Si "
+"una nueva entrada sobrescribe una entrada existente, la posición de "
+"inserción original se deja sin cambios.  Eliminar una entrada y volver a "
+"insertarla la moverá hasta el final."
 
-#: ../../whatsnew/3.1.rst:68
+#: ../Doc/whatsnew/3.1.rst:68
 msgid ""
 "The standard library now supports use of ordered dictionaries in several "
 "modules.  The :mod:`configparser` module uses them by default.  This lets "
@@ -83,76 +87,86 @@ msgid ""
 "the decoder. Support was also added for third-party tools like `PyYAML "
 "<https://pyyaml.org/>`_."
 msgstr ""
+"La biblioteca estándar ahora admite el uso de diccionarios ordenados en "
+"varios módulos. El módulo :mod:`configparser` los usa por defecto. Esto "
+"permite leer, modificar y volver a escribir los archivos de configuración en "
+"su orden original. El método *_asdict()* para :func:`collections.namedtuple` "
+"ahora devuelve un diccionario ordenado con los valores que aparecen en el "
+"mismo orden que los índices de tupla subyacentes. El módulo :mod:`json` se "
+"está construyendo con un *object_pairs_hook* para permitir que el "
+"decodificador construya OrderedDicts. También se agregó soporte para "
+"herramientas de terceros como `PyYAML <https://pyyaml.org/>`_."
 
-#: ../../whatsnew/3.1.rst:80
+#: ../Doc/whatsnew/3.1.rst:80
 msgid ":pep:`372` - Ordered Dictionaries"
-msgstr ":pep:`372` - 順序付き辞書"
+msgstr ":pep:`372` - Diccionarios ordenados"
 
-#: ../../whatsnew/3.1.rst:80
+#: ../Doc/whatsnew/3.1.rst:80
 msgid ""
 "PEP written by Armin Ronacher and Raymond Hettinger.  Implementation written "
 "by Raymond Hettinger."
 msgstr ""
-"PEP written by Armin Ronacher and Raymond Hettinger.  Implementation written "
-"by Raymond Hettinger."
+"PEP escrito por Armin Ronacher y Raymond Hettinger.  Implementación escrita "
+"por Raymond Hettinger."
 
-#: ../../whatsnew/3.1.rst:85
+#: ../Doc/whatsnew/3.1.rst:85
 msgid "PEP 378: Format Specifier for Thousands Separator"
-msgstr "PEP 378: 1000区切りのための書式指定子"
+msgstr "PEP 378: Especificador de formato para el separador de miles"
 
-#: ../../whatsnew/3.1.rst:87
+#: ../Doc/whatsnew/3.1.rst:87
 msgid ""
 "The built-in :func:`format` function and the :meth:`str.format` method use a "
 "mini-language that now includes a simple, non-locale aware way to format a "
 "number with a thousands separator.  That provides a way to humanize a "
 "program's output, improving its professional appearance and readability::"
 msgstr ""
-"組み込みの :func:`format` 関数と :meth:`str.format` メソッドが使うミニ言語"
-"に、単純でロケールに依存しない 1000 区切りカンマの書式化が追加されました。こ"
-"れによって簡単にプログラムの出力を、その玄人ちっくな見た目を改善してひとさま"
-"にとって読みやすいものに出来ます::"
+"La función incorporada :func:`format` y el método :meth:`str.format` usan un "
+"mini-lenguaje que ahora incluye una forma simple, que no tiene en cuenta la "
+"configuración regional, de formatear un número con un separador de miles. "
+"Eso proporciona una manera de humanizar la salida de un programa, mejorando "
+"su apariencia profesional y legibilidad::"
 
-#: ../../whatsnew/3.1.rst:101
+#: ../Doc/whatsnew/3.1.rst:101
 msgid ""
 "The supported types are :class:`int`, :class:`float`, :class:`complex` and :"
 "class:`decimal.Decimal`."
 msgstr ""
-"これをサポートする型は :class:`int`, :class:`float`, :class:`complex` , :"
-"class:`decimal.Decimal` です。"
+"Los tipos soportados son :class:`int`, :class:`float`, :class:`complex` y :"
+"class:`decimal.Decimal`."
 
-#: ../../whatsnew/3.1.rst:104
+#: ../Doc/whatsnew/3.1.rst:104
 msgid ""
 "Discussions are underway about how to specify alternative separators like "
 "dots, spaces, apostrophes, or underscores.  Locale-aware applications should "
 "use the existing *n* format specifier which already has some support for "
 "thousands separators."
 msgstr ""
-"ドットやら空白やらアポストロフィやらあるいはアンダースコアなどの他のセパレー"
-"タをどうやって指定するかの議論は水面下にありますが、ロケールに従う必要がある"
-"アプリケーションは、1000区切りセパレータについていくつかのサポートを既に持っ"
-"ている既存の *n* 指定子を使うべきです。"
+"Se está discutiendo cómo especificar separadores alternativos como puntos, "
+"espacios, apóstrofos o guiones bajos. Las aplicaciones que reconocen la "
+"configuración regional deben usar el especificador de formato *n* existente, "
+"que ya es compatible con el separadores de miles."
 
-#: ../../whatsnew/3.1.rst:112
+#: ../Doc/whatsnew/3.1.rst:112
 msgid ":pep:`378` - Format Specifier for Thousands Separator"
-msgstr ":pep:`378` - 1000区切りのための書式指定子"
+msgstr ":pep:`378` - Especificador de formato para el separador de miles"
 
-#: ../../whatsnew/3.1.rst:112
+#: ../Doc/whatsnew/3.1.rst:112
 msgid ""
 "PEP written by Raymond Hettinger and implemented by Eric Smith and Mark "
 "Dickinson."
 msgstr ""
-"PEP written by Raymond Hettinger and implemented by Eric Smith and Mark "
+"PEP escrito por Raymond Hettinger e implementado por Eric Smith y Mark "
 "Dickinson."
 
-#: ../../whatsnew/3.1.rst:117
+#: ../Doc/whatsnew/3.1.rst:117
 msgid "Other Language Changes"
-msgstr "その他の言語変更"
+msgstr "Otros cambios del lenguaje"
 
-#: ../../whatsnew/3.1.rst:119
+#: ../Doc/whatsnew/3.1.rst:119
 msgid "Some smaller changes made to the core Python language are:"
-msgstr "Python 言語コアに小さな変更がいくつか行われました:"
+msgstr "Algunos cambios pequeños en el núcleo del lenguaje Python son:"
 
-#: ../../whatsnew/3.1.rst:121
+#: ../Doc/whatsnew/3.1.rst:121
 msgid ""
 "Directories and zip archives containing a :file:`__main__.py` file can now "
 "be executed directly by passing their name to the interpreter. The directory/"
@@ -160,47 +174,48 @@ msgid ""
 "(Suggestion and initial patch by Andy Chu; revised patch by Phillip J. Eby "
 "and Nick Coghlan; :issue:`1739468`.)"
 msgstr ""
-":file:`__main__.py` を含むディレクトと zip アーカイブを、その名前をインタプリ"
-"タに渡すことで直接実行出来るようになりました。そのディレクトリと zip ファイル"
-"は自動的に sys.path エントリの先頭に挿入されます。(Suggestion and initial "
-"patch by Andy Chu; revised patch by Phillip J. Eby and Nick Coghlan; :issue:"
-"`1739468`.)"
+"Los directorios y archivos zip que contienen un archivo :file:`__main__.py` "
+"pueden ahora ser ejecutados directamente pasando su nombre al intérprete. El "
+"directorio/archivo zip es automáticamente insertado como la primera entrada "
+"en sys.path.  (Sugerencia y parche inicial por Andy Chu; parche revisado por "
+"Phillip J. Eby y Nick Coghlan; :issue:`1739468`.)"
 
-#: ../../whatsnew/3.1.rst:127
+#: ../Doc/whatsnew/3.1.rst:127
 msgid ""
 "The :func:`int` type gained a ``bit_length`` method that returns the number "
 "of bits necessary to represent its argument in binary::"
 msgstr ""
-":func:`int` 型に ``bit_length`` メソッドが追加されました。\n"
-"このメソッドはその値を二進数で表現するのに必要なビット数を返します::"
+"El tipo :func:`int` ganó un método ``bit_length`` que retorna el número de "
+"bits necesarios para representar sus argumentos en binario::"
 
-#: ../../whatsnew/3.1.rst:141
+#: ../Doc/whatsnew/3.1.rst:141
 msgid ""
 "(Contributed by Fredrik Johansson, Victor Stinner, Raymond Hettinger, and "
 "Mark Dickinson; :issue:`3439`.)"
 msgstr ""
-"(Contributed by Fredrik Johansson, Victor Stinner, Raymond Hettinger, and "
-"Mark Dickinson; :issue:`3439`.)"
+"(Contribución de Fredrik Johansson, Victor Stinner, Raymond Hettinger y Mark "
+"Dickinson; :issue:`3439`.)"
 
-#: ../../whatsnew/3.1.rst:144
+#: ../Doc/whatsnew/3.1.rst:144
 msgid ""
 "The fields in :func:`format` strings can now be automatically numbered::"
 msgstr ""
-":func:`format` 文字列のフィールドに自動的に番号が振られるようになりました::"
+"Los campos en las cadenas de formato de :func:`format` ahora pueden ser "
+"automáticamente numerados::"
 
-#: ../../whatsnew/3.1.rst:150
+#: ../Doc/whatsnew/3.1.rst:150
 msgid ""
 "Formerly, the string would have required numbered fields such as: ``'Sir {0} "
 "of {1}'``."
 msgstr ""
-"以前は、文字列は ``'Sir {0} of {1}'`` のようにフィールドに番号を振らなければ"
-"なりませんでした。"
+"Anteriormente, la cadena requería campos numerados como: ``'Sir {0} of "
+"{1}'``."
 
-#: ../../whatsnew/3.1.rst:153
+#: ../Doc/whatsnew/3.1.rst:153
 msgid "(Contributed by Eric Smith; :issue:`5237`.)"
-msgstr "(Contributed by Eric Smith; :issue:`5237`.)"
+msgstr "(Contribución de Eric Smith; :issue:`5237`.)"
 
-#: ../../whatsnew/3.1.rst:155
+#: ../Doc/whatsnew/3.1.rst:155
 msgid ""
 "The :func:`string.maketrans` function is deprecated and is replaced by new "
 "static methods, :meth:`bytes.maketrans` and :meth:`bytearray.maketrans`. "
@@ -209,64 +224,65 @@ msgid ""
 "`bytearray` each have their own **maketrans** and **translate** methods with "
 "intermediate translation tables of the appropriate type."
 msgstr ""
-":func:`string.maketrans` 関数は撤廃され、それぞれの静的メソッド :meth:`bytes."
-"maketrans` と :meth:`bytearray.maketrans` に置き換えられました。この変更"
-"は、 :mod:`string` によってサポートされるのがどちらの型なのかにまつわる混乱を"
-"解決します。今や :class:`str`, :class:`bytes`, :class:`bytearray` は、その適"
-"切な型の中間変換テーブルを持つそれぞれの **maketrans** 、 **translate** メ"
-"ソッドを持っています。"
+"La función :func:`string.maketrans` está en desuso y se reemplaza por nuevos "
+"métodos estáticos, :meth:`bytes.maketrans` y :meth:`bytearray.maketrans`. "
+"Este cambio resuelve la confusión en torno a los tipos que fueron soportados "
+"por el módulo :mod:`string`. Ahora, :class:`str`, :class:`bytes` y :class:"
+"`bytearray` tienen sus propios métodos **maketrans** y **translate** con "
+"tablas de traducción intermedias del tipo adecuado."
 
-#: ../../whatsnew/3.1.rst:162
+#: ../Doc/whatsnew/3.1.rst:162
 msgid "(Contributed by Georg Brandl; :issue:`5675`.)"
-msgstr "(Contributed by Georg Brandl; :issue:`5675`.)"
+msgstr "(Contribución de Georg Brandl; :issue:`5675`.)"
 
-#: ../../whatsnew/3.1.rst:164
+#: ../Doc/whatsnew/3.1.rst:164
 msgid ""
 "The syntax of the :keyword:`with` statement now allows multiple context "
 "managers in a single statement::"
 msgstr ""
-":keyword:`with` 文のシンタックスは一つの文で複数のコンテキストマネージャを使"
-"えるようになりました::"
+"La sintaxis de la sentencia :keyword:`with` ahora permite múltiples gestores "
+"de contexto en una sola declaración::"
 
-#: ../../whatsnew/3.1.rst:172
+#: ../Doc/whatsnew/3.1.rst:172
 msgid ""
 "With the new syntax, the :func:`contextlib.nested` function is no longer "
 "needed and is now deprecated."
 msgstr ""
-"新しいシンタックスによって :func:`contextlib.nested` はもう必要ではなくなり、"
-"非推奨になりました。"
+"Con la nueva sintaxis, la función :func:`contextlib.nested` ya no es "
+"necesaria y ahora está obsoleta."
 
-#: ../../whatsnew/3.1.rst:175
+#: ../Doc/whatsnew/3.1.rst:175
 msgid ""
 "(Contributed by Georg Brandl and Mattias Brändström; `appspot issue 53094 "
 "<https://codereview.appspot.com/53094>`_.)"
 msgstr ""
-"(Georg Brandl と Mattias Brändström の貢献; `appspot issue 53094 <https://"
-"codereview.appspot.com/53094>`_.)"
+"(Contribución de Georg Brandl y Mattias Brändström; `appspot issue 53094 "
+"<https://codereview.appspot.com/53094>`_.)"
 
-#: ../../whatsnew/3.1.rst:178
+#: ../Doc/whatsnew/3.1.rst:178
 msgid ""
 "``round(x, n)`` now returns an integer if *x* is an integer. Previously it "
 "returned a float::"
 msgstr ""
-"``round(x, n)`` は *x* が整数の場合、整数を返すようになりました。以前は浮動小"
-"数点を返していました::"
+"``round(x, n)`` ahora retorna un número entero si *x* es un entero. "
+"Anteriormente retornaba un número flotante::"
 
-#: ../../whatsnew/3.1.rst:184
+#: ../Doc/whatsnew/3.1.rst:184
 msgid "(Contributed by Mark Dickinson; :issue:`4707`.)"
-msgstr "(Contributed by Mark Dickinson; :issue:`4707`.)"
+msgstr "(Contribución de Mark Dickinson; :issue:`4707`.)"
 
-#: ../../whatsnew/3.1.rst:186
+#: ../Doc/whatsnew/3.1.rst:186
 msgid ""
 "Python now uses David Gay's algorithm for finding the shortest floating "
 "point representation that doesn't change its value.  This should help "
 "mitigate some of the confusion surrounding binary floating point numbers."
 msgstr ""
-"Python は浮動小数点数について、その値を変更しない最も短い表現を見つけるのに "
-"David Gay のアルゴリズムを使うようになりました。これは二進浮動小数点数にまつ"
-"わるいくつかの困惑を軽減する助けとなるはずです。"
+"Python ahora utiliza el algoritmo de David Gay para encontrar la "
+"representación de coma flotante más corta que no cambia su valor.  Esto "
+"debería ayudar a mitigar parte de la confusión que rodea a los números de "
+"coma flotante binarios."
 
-#: ../../whatsnew/3.1.rst:191
+#: ../Doc/whatsnew/3.1.rst:191
 msgid ""
 "The significance is easily seen with a number like ``1.1`` which does not "
 "have an exact equivalent in binary floating point.  Since there is no exact "
@@ -276,14 +292,15 @@ msgid ""
 "nearest value was and still is used in subsequent floating point "
 "calculations."
 msgstr ""
-"有意な違いは ``1.1`` のような値ですぐに見て取れます。これは二進浮動小数点数で"
-"正確に表現出来ない数です。完全に同じとなるものはありませんから、例えば式 "
-"``float('1.1')`` は表現可能な最近接である十六進での "
-"``0x1.199999999999ap+0`` 、十進での "
-"``1.100000000000000088817841970012523233890533447265625`` として評価されま"
-"す。その最近接値は昔も今も、後続の浮動小数点数計算で使われます。"
+"La importancia se ve fácilmente con un número como ``1.1``, que no tiene un "
+"equivalente exacto en coma flotante binaria.  Puesto que no hay un "
+"equivalente exacto, una expresión como ``float('1.1')`` se evalúa como el "
+"valor representable más cercano, que es ``0x1.199999999999ap+0`` en "
+"hexadecimal o ``1.100000000000000088817841970012523233890533447265625`` en "
+"decimal. Ese valor más cercano fue y todavía es utilizado en los cálculos de "
+"coma flotante posteriores."
 
-#: ../../whatsnew/3.1.rst:199
+#: ../Doc/whatsnew/3.1.rst:199
 msgid ""
 "What is new is how the number gets displayed.  Formerly, Python used a "
 "simple approach.  The value of ``repr(1.1)`` was computed as ``format(1.1, "
@@ -294,120 +311,123 @@ msgid ""
 "intrinsic limitations of binary floating point representation as being a "
 "problem with Python itself)."
 msgstr ""
-"何が新しくなったかと言えば、それはその数がどのように表示されるか、です。以前"
-"は Python は単純なアプローチを使っていました。値 ``repr(1.1)`` は "
-"``format(1.1, '.17g')`` として計算され、 ``'1.1000000000000001'`` として評価"
-"されていました。17 桁を使うことが好都合だったのは、IEEE-754 のもとでは "
-"``eval(repr(1.1))`` がその元の値に正確に戻ることに依存出来たことでした。です"
-"が不都合として、多くの人々がその出力を (二進浮動小数点数表現に本来備わってい"
-"る制限を Python そのものの問題であると誤解して) 混乱していると理解していまし"
-"た。"
+"La novedad es cómo se muestra el número.  Anteriormente, Python usaba un "
+"enfoque simple.  El valor de ``repr(1.1)`` se calculaba como ``format(1.1, "
+"'.17g')`` que era evaluado como ``'1.1000000000000001'``. La ventaja de "
+"utilizar 17 dígitos era que se basaba en las garantías de IEEE-754 para "
+"asegurar que ``eval(repr(1.1))`` se volviera a redondear exactamente a su "
+"valor original. La desventaja es que muchas personas encontraban el "
+"resultado confuso (confundiendo las limitaciones intrínsecas de la "
+"representación de coma flotante binaria con un problema con Python en sí)."
 
-#: ../../whatsnew/3.1.rst:208
+#: ../Doc/whatsnew/3.1.rst:208
 msgid ""
 "The new algorithm for ``repr(1.1)`` is smarter and returns ``'1.1'``. "
 "Effectively, it searches all equivalent string representations (ones that "
 "get stored with the same underlying float value) and returns the shortest "
 "representation."
 msgstr ""
-"新しいアルゴリズムでは ``repr(1.1)`` はより賢明で ``'1.1'`` を返します。実際"
-"的には、これは全ての等価な文字列表現 (前提となる同じ浮動小数点数に戻るもの) "
-"を探し、そして一番短い表現を返します。"
+"El nuevo algoritmo para ``repr(1.1)`` es más inteligente y retorna "
+"``'1.1'``. Efectivamente, busca todas las representaciones de cadenas "
+"equivalentes (las que se almacenan con el mismo valor flotante subyacente) y "
+"retorna la representación más corta."
 
-#: ../../whatsnew/3.1.rst:213
+#: ../Doc/whatsnew/3.1.rst:213
 msgid ""
 "The new algorithm tends to emit cleaner representations when possible, but "
 "it does not change the underlying values.  So, it is still the case that "
 "``1.1 + 2.2 != 3.3`` even though the representations may suggest otherwise."
 msgstr ""
-"新アルゴリズムは、可能な限りよりわかりやすい表現を生み出す傾向がありますが、"
-"元の値を変更しません。ですから ``1.1 + 2.2 != 3.3`` は表示がどうであれ、今で"
-"も問題です。"
+"El nuevo algoritmo tiende a emitir representaciones más limpias cuando es "
+"posible, pero esto no cambia los valores subyacentes.  Por lo tanto, todavía "
+"se da el caso ``1.1 + 2.2 != 3.3``, aún cuando las representaciones puedan "
+"sugerir lo contrario."
 
-#: ../../whatsnew/3.1.rst:217
+#: ../Doc/whatsnew/3.1.rst:217
 msgid ""
 "The new algorithm depends on certain features in the underlying floating "
 "point implementation.  If the required features are not found, the old "
 "algorithm will continue to be used.  Also, the text pickle protocols assure "
 "cross-platform portability by using the old algorithm."
 msgstr ""
-"新アルゴリズムは根底にある浮動小数点数実装の、ある機能に依存しています。その"
-"必要としている機能がないならば、古いアルゴリズムが引き続き使われます。なお、"
-"テキストの pickle プロトコルは、このアルゴリズム変更によりクロスプラット"
-"フォーム互換が保たれません。"
+"El nuevo algoritmo depende de ciertas características de la implementación "
+"de coma flotante subyacente.  Si no se encuentran las características "
+"necesarias, el algoritmo antiguo seguirá utilizándose.  Además, los "
+"protocolos de pickle de texto aseguran la portabilidad multiplataforma "
+"mediante el algoritmo antiguo."
 
-#: ../../whatsnew/3.1.rst:222
+#: ../Doc/whatsnew/3.1.rst:222
 msgid "(Contributed by Eric Smith and Mark Dickinson; :issue:`1580`)"
-msgstr "(Contributed by Eric Smith and Mark Dickinson; :issue:`1580`)"
+msgstr "(Contribución de Eric Smith y Mark Dickinson; :issue:`1580`)"
 
-#: ../../whatsnew/3.1.rst:225
+#: ../Doc/whatsnew/3.1.rst:225
 msgid "New, Improved, and Deprecated Modules"
-msgstr "新たなモジュール、改良されたモジュール、非推奨のモジュール"
+msgstr "Módulos nuevos, mejorados y obsoletos"
 
-#: ../../whatsnew/3.1.rst:227
+#: ../Doc/whatsnew/3.1.rst:227
 msgid ""
 "Added a :class:`collections.Counter` class to support convenient counting of "
 "unique items in a sequence or iterable::"
 msgstr ""
-"シーケンスまたはイテラブル内にある一意な要素を数え上げるのに便利な :class:"
-"`collections.Counter` クラスが追加されました::"
+"Se ha añadido una clase :class:`collections.Counter` para admitir el "
+"recuento conveniente de elementos únicos en una secuencia o una iteración::"
 
-#: ../../whatsnew/3.1.rst:233
+#: ../Doc/whatsnew/3.1.rst:233
 msgid "(Contributed by Raymond Hettinger; :issue:`1696199`.)"
-msgstr "(Contributed by Raymond Hettinger; :issue:`1696199`.)"
+msgstr "(Contribución de Raymond Hettinger; :issue:`1696199`.)"
 
-#: ../../whatsnew/3.1.rst:235
+#: ../Doc/whatsnew/3.1.rst:235
 msgid ""
 "Added a new module, :mod:`tkinter.ttk` for access to the Tk themed widget "
 "set. The basic idea of ttk is to separate, to the extent possible, the code "
 "implementing a widget's behavior from the code implementing its appearance."
 msgstr ""
-"Tk のテーマ付きウィジェットへのアクセスを提供する、新しい :mod:`tkinter.ttk` "
-"モジュールが追加されました。 :mod:`tkinter.ttk` の基本的なアイディアは、拡張"
-"可能性のためにウィジェットの動作を実装するコードと見た目を記述するコードを分"
-"離することです。"
+"Se ha añadido un nuevo módulo :mod:`tkinter.ttk` para acceder al conjunto de "
+"widgets temáticos de Tk. La idea básica de ttk es separar, dentro de lo "
+"posible, el código que implementa el comportamiento de un widget del código "
+"que implementa su apariencia."
 
-#: ../../whatsnew/3.1.rst:239
+#: ../Doc/whatsnew/3.1.rst:239
 msgid "(Contributed by Guilherme Polo; :issue:`2983`.)"
-msgstr "(Contributed by Guilherme Polo; :issue:`2983`.)"
+msgstr "(Contribución de Guilherme Polo; :issue:`2983`.)"
 
-#: ../../whatsnew/3.1.rst:241
+#: ../Doc/whatsnew/3.1.rst:241
 msgid ""
 "The :class:`gzip.GzipFile` and :class:`bz2.BZ2File` classes now support the "
 "context management protocol::"
 msgstr ""
-":class:`gzip.GzipFile` と :class:`bz2.BZ2File` クラスはコンテキストマネジメン"
-"トプロトコルをサポートするようになりました::"
+"Las clases :class:`gzip.GzipFile` y :class:`bz2.BZ2File` ahora admiten el "
+"protocolo de gestión de contexto::"
 
-#: ../../whatsnew/3.1.rst:248
+#: ../Doc/whatsnew/3.1.rst:248
 msgid "(Contributed by Antoine Pitrou.)"
-msgstr "(Contributed by Antoine Pitrou.)"
+msgstr "(Contribución de Antoine Pitrou.)"
 
-#: ../../whatsnew/3.1.rst:250
+#: ../Doc/whatsnew/3.1.rst:250
 msgid ""
 "The :mod:`decimal` module now supports methods for creating a decimal object "
 "from a binary :class:`float`.  The conversion is exact but can sometimes be "
 "surprising::"
 msgstr ""
-":mod:`decimal` モジュールが二進 :class:`float` から decimal オブジェクトを生"
-"成するメソッドをサポートしました。\n"
-"変換は正確ですが時に意外なことがあります::"
+"El módulo :mod:`decimal` ahora admite métodos para crear un objeto decimal "
+"de un :class:`float` binario.  La conversión es exacta pero puede ser a "
+"veces una sorpresa::"
 
-#: ../../whatsnew/3.1.rst:257
+#: ../Doc/whatsnew/3.1.rst:257
 msgid ""
 "The long decimal result shows the actual binary fraction being stored for "
 "*1.1*.  The fraction has many digits because *1.1* cannot be exactly "
 "represented in binary."
 msgstr ""
-"長い十進の結果が、 *1.1* を記憶するための現実の二進での端数を表しています。 "
-"*1.1* は二進数で正確に表現出来ないので、端数は十進表現でとても多くの桁数に"
-"なっています。"
+"El resultado decimal largo muestra la fracción binaria real que se almacena "
+"para *1.1*. La fracción tiene muchos dígitos porque *1.1* no se puede "
+"representar exactamente en binario."
 
-#: ../../whatsnew/3.1.rst:261
+#: ../Doc/whatsnew/3.1.rst:261
 msgid "(Contributed by Raymond Hettinger and Mark Dickinson.)"
-msgstr "(Contributed by Raymond Hettinger and Mark Dickinson.)"
+msgstr "(Contribución de Raymond Hettinger y Mark Dickinson.)"
 
-#: ../../whatsnew/3.1.rst:263
+#: ../Doc/whatsnew/3.1.rst:263
 msgid ""
 "The :mod:`itertools` module grew two new functions.  The :func:`itertools."
 "combinations_with_replacement` function is one of four for generating "
@@ -417,19 +437,19 @@ msgid ""
 "argument and can accept any type of counting sequence including :class:"
 "`fractions.Fraction` and :class:`decimal.Decimal`::"
 msgstr ""
-":mod:`itertools` に 2 つの関数が追加されました。 :func:`itertools."
-"combinations_with_replacement` 関数は、置換 (順列, permutation) や直積 "
-"(Cartesian product) を含む組合せ論の 4 つの生成関数のうちの 1 つです。 :func:"
-"`itertools.compress` 関数は `APL <https://ja.wikipedia.org/wiki/APL>`_ の同名"
-"機能の模倣品です。また、既存の :func:`itertools.count` 関数は新たにオプショナ"
-"ルな *step* 引数を取るようになり、そして数え方に :class:`fractions.Fraction` "
-"や :class:`decimal.Decimal` を含む任意の数値型を使えるようになりました。 ::"
+"El módulo :mod:`itertools` desarrolló dos nuevas funciones.  La función :"
+"func:`itertools.combinations_with_replacement` es una de las cuatro para "
+"generar combinatorias que incluyen permutaciones y productos cartesianos.  "
+"La función :func:`itertools.compress` imita su homónimo de APL.  Además, la "
+"función existente :func:`itertools.count` tiene ahora un argumento *step* "
+"opcional y puede aceptar cualquier tipo de secuencia de conteo, incluyendo :"
+"class:`fractions.Fraction` y :class:`decimal.Decimal`::"
 
-#: ../../whatsnew/3.1.rst:282
+#: ../Doc/whatsnew/3.1.rst:282
 msgid "(Contributed by Raymond Hettinger.)"
-msgstr "(Contributed by Raymond Hettinger.)"
+msgstr "(Contribución de Raymond Hettinger.)"
 
-#: ../../whatsnew/3.1.rst:284
+#: ../Doc/whatsnew/3.1.rst:284
 msgid ""
 ":func:`collections.namedtuple` now supports a keyword argument *rename* "
 "which lets invalid fieldnames be automatically converted to positional names "
@@ -437,119 +457,119 @@ msgid ""
 "created by an external source such as a CSV header, SQL field list, or user "
 "input::"
 msgstr ""
-":func:`collections.namedtuple` が新たにキーワード引数 *rename* をサポートし、"
-"これにより不正なフィールド名を自動で _0, _1, ... といった位置による名前に変換"
-"することが出来ます。これはフィールド名が何か外部ソースに基いて作られる場合に"
-"有用です。例えば CSV のヘッダ、SQL のフィールドリスト、あるいはユーザ入力など"
-"です::"
+":func:`collections.namedtuple` ahora admite un argumento de palabra clave "
+"*rename* que permite que los campos de nombre inválidos se conviertan "
+"automáticamente en nombres posicionados de la forma _0, _1, etc.  Esto es de "
+"utilidad cuando los nombres del campo están siendo creados por una fuente "
+"externa como un encabezado CSV, una lista de campos SQL, o la entrada del "
+"usuario::"
 
-#: ../../whatsnew/3.1.rst:301
+#: ../Doc/whatsnew/3.1.rst:301
 msgid "(Contributed by Raymond Hettinger; :issue:`1818`.)"
-msgstr "(Contributed by Raymond Hettinger; :issue:`1818`.)"
+msgstr "(Contribución de Raymond Hettinger; :issue:`1818`.)"
 
-#: ../../whatsnew/3.1.rst:303
+#: ../Doc/whatsnew/3.1.rst:303
 msgid ""
 "The :func:`re.sub`, :func:`re.subn` and :func:`re.split` functions now "
 "accept a flags parameter."
 msgstr ""
-":func:`re.sub`、:func:`re.subn` および :func:`re.split` 関数は flags 引数を受"
-"け取るようになりました。"
+"Las funciones :func:`re.sub`, :func:`re.subn` y :func:`re.split` ahora "
+"admiten un parámetro *flags*."
 
-#: ../../whatsnew/3.1.rst:306
+#: ../Doc/whatsnew/3.1.rst:306
 msgid "(Contributed by Gregory Smith.)"
-msgstr "(Contributed by Gregory Smith.)"
+msgstr "(Contribución de Gregory Smith.)"
 
-#: ../../whatsnew/3.1.rst:308
+#: ../Doc/whatsnew/3.1.rst:308
 msgid ""
 "The :mod:`logging` module now implements a simple :class:`logging."
 "NullHandler` class for applications that are not using logging but are "
 "calling library code that does.  Setting-up a null handler will suppress "
 "spurious warnings such as \"No handlers could be found for logger foo\"::"
 msgstr ""
-"logging を自身では使わずとも使用ライブラリがそうしているようなアプリケーショ"
-"ンのために、 :mod:`logging` モジュールが単純な :class:`logging.NullHandler` "
-"を実装しました。null ハンドラをセットアップすることは、 \"No handlers could "
-"be found for logger foo\" のような警告を抑制します。"
+"El módulo :mod:`logging` ahora implementa una clase simple :class:`logging."
+"NullHandler` para aplicaciones que no utilizan el registro pero llaman al "
+"código de una biblioteca que si lo hace.  La configuración de un controlador "
+"nulo suprimirá las advertencias falsas como \"No handlers could be found for "
+"logger foo\"::"
 
-#: ../../whatsnew/3.1.rst:316
+#: ../Doc/whatsnew/3.1.rst:316
 msgid "(Contributed by Vinay Sajip; :issue:`4384`)."
-msgstr "(Contributed by Vinay Sajip; :issue:`4384`)."
+msgstr "(Contribución de Vinay Sajip; :issue:`4384`)."
 
-#: ../../whatsnew/3.1.rst:318
+#: ../Doc/whatsnew/3.1.rst:318
 msgid ""
 "The :mod:`runpy` module which supports the ``-m`` command line switch now "
 "supports the execution of packages by looking for and executing a "
 "``__main__`` submodule when a package name is supplied."
 msgstr ""
-"コマンドラインスイッチ ``-m`` をサポートしている :mod:`runpy` がパッケージの"
-"実行をサポートするようになりました。パッケージ名が与えられると ``__main__`` "
-"サブモジュールを探し出して実行します。"
+"El módulo :mod:`runpy` que admite el modificador de línea de comando ``-m`` "
+"ahora admite la ejecución de paquetes al buscar y ejecutar un submódulo "
+"``__main__`` cuando se proporciona un nombre de paquete."
 
-#: ../../whatsnew/3.1.rst:322
+#: ../Doc/whatsnew/3.1.rst:322
 msgid "(Contributed by Andi Vajda; :issue:`4195`.)"
-msgstr "(Contributed by Andi Vajda; :issue:`4195`.)"
+msgstr "(Contribución de Andi Vajda; :issue:`4195`.)"
 
-#: ../../whatsnew/3.1.rst:324
+#: ../Doc/whatsnew/3.1.rst:324
 msgid ""
 "The :mod:`pdb` module can now access and display source code loaded via :mod:"
 "`zipimport` (or any other conformant :pep:`302` loader)."
 msgstr ""
-":mod:`pdb` モジュールが :mod:`zipimport` (あるいはなにかほかの :pep:`302` 準"
-"拠ローダ) でロードされたモジュールのソースコードにアクセスでき、表示できるよ"
-"うになりました。"
+"El módulo :mod:`pdb` puede ahora acceder y mostrar el código fuente cargado "
+"a través de :mod:`zipimport` (o cualquier otro cargador conforme :pep:`302`)."
 
-#: ../../whatsnew/3.1.rst:327
+#: ../Doc/whatsnew/3.1.rst:327
 msgid "(Contributed by Alexander Belopolsky; :issue:`4201`.)"
-msgstr "(Contributed by Alexander Belopolsky; :issue:`4201`.)"
+msgstr "(Contribución de Alexander Belopolsky; :issue:`4201`.)"
 
-#: ../../whatsnew/3.1.rst:329
+#: ../Doc/whatsnew/3.1.rst:329
 msgid ":class:`functools.partial` objects can now be pickled."
 msgstr ""
-":class:`functools.partial` オブジェクトが pickle 化出来るようになりました。"
+"Los objetos :class:`functools.partial` pueden ser ahora serializados "
+"(*pickled*)."
 
-#: ../../whatsnew/3.1.rst:331
+#: ../Doc/whatsnew/3.1.rst:331
 msgid ""
 "(Suggested by Antoine Pitrou and Jesse Noller.  Implemented by Jack "
 "Diederich; :issue:`5228`.)"
 msgstr ""
-"(Suggested by Antoine Pitrou and Jesse Noller.  Implemented by Jack "
+"(Sugerido por Antoine Pitrou y Jesse Noller.  Implementado por Jack "
 "Diederich; :issue:`5228`.)"
 
-#: ../../whatsnew/3.1.rst:334
+#: ../Doc/whatsnew/3.1.rst:334
 msgid ""
 "Add :mod:`pydoc` help topics for symbols so that ``help('@')`` works as "
 "expected in the interactive environment."
 msgstr ""
-"シンボルのための :mod:`pydoc` ヘルプトピックが追加されました。これで対話環境"
-"で ``help('@')`` などが期待通りの働きをします (---訳注: 実装としては "
-"pydoc_data パッケージのこと。 :file:`pydoc_data/topics.py` に docstring から"
-"は生成出来ない、シンボルについてのドキュメントが収められています  ---)。"
+"Se agrega temas de ayuda :mod:`pydoc` para símbolos de modo que "
+"``help('@')`` funcione como se espera en un entorno interactivo."
 
-#: ../../whatsnew/3.1.rst:337
+#: ../Doc/whatsnew/3.1.rst:337
 msgid "(Contributed by David Laban; :issue:`4739`.)"
-msgstr "(Contributed by David Laban; :issue:`4739`.)"
+msgstr "(Contribución de David Laban; :issue:`4739`.)"
 
-#: ../../whatsnew/3.1.rst:339
+#: ../Doc/whatsnew/3.1.rst:339
 msgid ""
 "The :mod:`unittest` module now supports skipping individual tests or classes "
 "of tests. And it supports marking a test as an expected failure, a test that "
 "is known to be broken, but shouldn't be counted as a failure on a "
 "TestResult::"
 msgstr ""
-":mod:`unittest` に特定のテストメソッドやテストクラス全体をスキップする仕組み"
-"のサポートが追加されました。さらに、この機能はテスト結果を「意図的な失敗」と"
-"することができ、テストが失敗しても :class:`TestResult` の失敗数にはカウントさ"
-"れなくなります::"
+"El módulo :mod:`unittest` ahora admite saltear pruebas individuales o clases "
+"de pruebas. Y admite marcar una prueba como una falla esperada, una prueba "
+"que se sabe que está rota, pero que no debe contarse como una falla en un "
+"TestResult::"
 
-#: ../../whatsnew/3.1.rst:354
+#: ../Doc/whatsnew/3.1.rst:354
 msgid ""
 "Also, tests for exceptions have been builtout to work with context managers "
 "using the :keyword:`with` statement::"
 msgstr ""
-"また例外についてのテストが、 :keyword:`with` 文で使えるコンテキストマネージャ"
-"として増強されました::"
+"Además, se han creado pruebas de excepciones para trabajar con gestores de "
+"contexto usando la declaración :keyword:`with`::"
 
-#: ../../whatsnew/3.1.rst:361
+#: ../Doc/whatsnew/3.1.rst:361
 msgid ""
 "In addition, several new assertion methods were added including :func:"
 "`assertSetEqual`, :func:`assertDictEqual`, :func:"
@@ -557,43 +577,42 @@ msgid ""
 "`assertTupleEqual`, :func:`assertSequenceEqual`, :func:"
 "`assertRaisesRegexp`, :func:`assertIsNone`, and :func:`assertIsNotNone`."
 msgstr ""
-"加えて、いくつもの新たなアサーションメソッドが追加されました。  :func:"
+"Además, se agregaron varios métodos de aserción nuevos, incluyendo :func:"
 "`assertSetEqual`, :func:`assertDictEqual`, :func:"
 "`assertDictContainsSubset`, :func:`assertListEqual`, :func:"
 "`assertTupleEqual`, :func:`assertSequenceEqual`, :func:"
-"`assertRaisesRegexp`, :func:`assertIsNone`, and :func:`assertIsNotNone` など"
-"です。"
+"`assertRaisesRegexp`, :func:`assertIsNone`, y :func:`assertIsNotNone`."
 
-#: ../../whatsnew/3.1.rst:368
+#: ../Doc/whatsnew/3.1.rst:368
 msgid "(Contributed by Benjamin Peterson and Antoine Pitrou.)"
-msgstr "(Contributed by Benjamin Peterson and Antoine Pitrou.)"
+msgstr "(Contribución de Benjamin Peterson y Antoine Pitrou.)"
 
-#: ../../whatsnew/3.1.rst:370
+#: ../Doc/whatsnew/3.1.rst:370
 msgid ""
 "The :mod:`io` module has three new constants for the :meth:`seek` method :"
 "data:`SEEK_SET`, :data:`SEEK_CUR`, and :data:`SEEK_END`."
 msgstr ""
-":mod:`io` モジュールに :meth:`seek` メソッドのための3つの新しい定数が追加され"
-"ました: :data:`SEEK_SET`, :data:`SEEK_CUR`, and :data:`SEEK_END`."
+"El módulo :mod:`io` tiene tres nuevas constantes para el método :meth:"
+"`seek`: :data:`SEEK_SET`, :data:`SEEK_CUR` y :data:`SEEK_END`."
 
-#: ../../whatsnew/3.1.rst:373
+#: ../Doc/whatsnew/3.1.rst:373
 msgid "The :attr:`sys.version_info` tuple is now a named tuple::"
-msgstr ":attr:`sys.version_info` タプルが名前付きタプルになりました。"
+msgstr "La tupla :attr:`sys.version_info` es ahora una tupla nombrada::"
 
-#: ../../whatsnew/3.1.rst:378
+#: ../Doc/whatsnew/3.1.rst:378
 msgid "(Contributed by Ross Light; :issue:`4285`.)"
-msgstr "(Contributed by Ross Light; :issue:`4285`.)"
+msgstr "(Contribución de Ross Light; :issue:`4285`.)"
 
-#: ../../whatsnew/3.1.rst:380
+#: ../Doc/whatsnew/3.1.rst:380
 msgid "The :mod:`nntplib` and :mod:`imaplib` modules now support IPv6."
 msgstr ""
-":mod:`nntplib` および :mod:`imaplib` モジュールが IPv6 をサポートしました。"
+"Los módulos :mod:`nntplib` y :mod:`imaplib` ahora tienen soporte de IPv6."
 
-#: ../../whatsnew/3.1.rst:382
+#: ../Doc/whatsnew/3.1.rst:382
 msgid "(Contributed by Derek Morr; :issue:`1655` and :issue:`1664`.)"
-msgstr "(Contributed by Derek Morr; :issue:`1655` and :issue:`1664`.)"
+msgstr "(Contribución de Derek Morr; :issue:`1655` y :issue:`1664`.)"
 
-#: ../../whatsnew/3.1.rst:384
+#: ../Doc/whatsnew/3.1.rst:384
 msgid ""
 "The :mod:`pickle` module has been adapted for better interoperability with "
 "Python 2.x when used with protocol 2 or lower.  The reorganization of the "
@@ -605,16 +624,18 @@ msgid ""
 "dumping. This remapping is turned-on by default but can be disabled with the "
 "*fix_imports* option::"
 msgstr ""
-":mod:`pickle` を、プロトコル 2 以下を使う際に Python 2.x との相互運用に順応す"
-"るようにしました。標準ライブラリの再編成はたくさんのオブジェクトへの公式な参"
-"照を変えました。例えば Python 2 の ``__builtin__.set`` は Python 3 では "
-"``builtins.set`` です。この変化は異なる Python バージョン間でのデータ共有の取"
-"り組みを複雑にしました。ですが今回のこの修正により、プロトコル 2 以下を選んだ"
-"場合は pickler は自動的にロード時もダンプ時も古い Python 2 命名を使うようにな"
-"ります。この再マッピングはデフォルトで有効になりますが、 *fix_imports* オプ"
-"ションで無効に出来ます::"
+"El módulo :mod:`pickle` ha sido adaptado para una mejor interoperabilidad "
+"con 2.x cuando es usado con un protocolo 2 o menor.  La reorganización de la "
+"biblioteca estándar cambió la referencia formal para varios objetos.  Por "
+"ejemplo, ``__builtin__.set`` en Python 2 es llamado ``builtins.set`` en "
+"Python 3. Este cambio confundió los esfuerzos de compartir datos entre "
+"diferentes versiones de Python.  Pero ahora cuando el protocolo 2 o menor es "
+"seleccionado, el pickler va a usar automáticamente los nombres antiguos de "
+"Python 2 tanto para carga como para volcado. Esta reasignación es activada "
+"de manera predeterminada pero puede ser desactivada con la opción "
+"*fix_imports*::"
 
-#: ../../whatsnew/3.1.rst:400
+#: ../Doc/whatsnew/3.1.rst:400
 msgid ""
 "An unfortunate but unavoidable side-effect of this change is that protocol 2 "
 "pickles produced by Python 3.1 won't be readable with Python 3.0. The latest "
@@ -622,18 +643,19 @@ msgid ""
 "Python 3.x implementations, as it doesn't attempt to remain compatible with "
 "Python 2.x."
 msgstr ""
-"不幸にも、そして避けられないこの変更による副作用は、Python 3.1 によって生成さ"
-"れたプロトコル 2 pickle が Python 3.0 で読めなくなるであろうことです。Python "
-"2.x との互換性を維持するつもりがないのであれば、Python 3.x 実装間でのデータ移"
-"行では最新 pickle プロトコルバージョン 3 を使うべきです。"
+"Un efecto secundario, desafortunado pero inevitable, de este cambio es que "
+"los pickles del protocolo 2 producidos con Python 3.1 no serán legibles con "
+"Python 3.0. El protocolo de pickle más reciente, protocolo 3, debe "
+"utilizarse al migrar datos entre implementaciones de Python 3.x, ya que no "
+"intenta seguir siendo compatible con Python 2.x."
 
-#: ../../whatsnew/3.1.rst:406
+#: ../Doc/whatsnew/3.1.rst:406
 msgid ""
 "(Contributed by Alexandre Vassalotti and Antoine Pitrou, :issue:`6137`.)"
 msgstr ""
-"(Contributed by Alexandre Vassalotti and Antoine Pitrou, :issue:`6137`.)"
+"(Contribución de Alexandre Vassalotti y Antoine Pitrou, :issue:`6137`.)"
 
-#: ../../whatsnew/3.1.rst:408
+#: ../Doc/whatsnew/3.1.rst:408
 msgid ""
 "A new module, :mod:`importlib` was added.  It provides a complete, portable, "
 "pure Python reference implementation of the :keyword:`import` statement and "
@@ -641,24 +663,25 @@ msgid ""
 "substantial step forward in documenting and defining the actions that take "
 "place during imports."
 msgstr ""
-"新規モジュール :mod:`importlib` が追加されました。 :keyword:`import` 文とその"
-"相棒の :func:`__import__` 関数の、完全で移植性が高いピュア Python 参照実装を"
-"提供しています。これはインポートで行う動作の文書化と定義における、確かな前進"
-"です。"
+"Se agregó un nuevo módulo, :mod:`importlib`. Proporciona una implementación "
+"de referencia de Python completa, portátil y pura de la instrucción :keyword:"
+"`import` y su contraparte, la función  :func:`__import__` . Representa un "
+"avance sustancial en la documentación y definición de las acciones que "
+"tienen lugar durante las importaciones."
 
-#: ../../whatsnew/3.1.rst:414
+#: ../Doc/whatsnew/3.1.rst:414
 msgid "(Contributed by Brett Cannon.)"
-msgstr "(Contributed by Brett Cannon.)"
+msgstr "(Contribución de Brett Cannon.)"
 
-#: ../../whatsnew/3.1.rst:417
+#: ../Doc/whatsnew/3.1.rst:417
 msgid "Optimizations"
-msgstr "最適化"
+msgstr "Optimizaciones"
 
-#: ../../whatsnew/3.1.rst:419
+#: ../Doc/whatsnew/3.1.rst:419
 msgid "Major performance enhancements have been added:"
-msgstr "大きな性能向上がありました:"
+msgstr "Se han agregado importantes mejoras de rendimiento:"
 
-#: ../../whatsnew/3.1.rst:421
+#: ../Doc/whatsnew/3.1.rst:421
 msgid ""
 "The new I/O library (as defined in :pep:`3116`) was mostly written in Python "
 "and quickly proved to be a problematic bottleneck in Python 3.0. In Python "
@@ -666,51 +689,69 @@ msgid ""
 "faster depending on the task at hand. The pure Python version is still "
 "available for experimentation purposes through the ``_pyio`` module."
 msgstr ""
+"La nueva biblioteca I/O (definida en :pep:`3116`) estaba escrita mayormente "
+"en Python y rápidamente demostró ser un cuello de botella problemático en "
+"Python 3.0. En Python 3.1, la biblioteca I/O ha sido reescrita enteramente "
+"en C y es de 2 a 20 veces más rápida dependiendo en la tarea a manejar. La "
+"versión puramente en Python está aún disponible para fines experimentales a "
+"través del módulo ``_pyio``."
 
-#: ../../whatsnew/3.1.rst:428
+#: ../Doc/whatsnew/3.1.rst:428
 msgid "(Contributed by Amaury Forgeot d'Arc and Antoine Pitrou.)"
-msgstr "(Contributed by Amaury Forgeot d'Arc and Antoine Pitrou.)"
+msgstr "(Contribución de Amaury Forgeot d'Arc y Antoine Pitrou.)"
 
-#: ../../whatsnew/3.1.rst:430
+#: ../Doc/whatsnew/3.1.rst:430
 msgid ""
 "Added a heuristic so that tuples and dicts containing only untrackable "
 "objects are not tracked by the garbage collector. This can reduce the size "
 "of collections and therefore the garbage collection overhead on long-running "
 "programs, depending on their particular use of datatypes."
 msgstr ""
+"Se ha añadido una heurística para que el recolector de basura no realice el "
+"seguimiento de tuplas y diccionarios que contengan solo objetos no "
+"rastreables. Esto puede reducir el tamaño de las colecciones y, por lo "
+"tanto, la sobrecarga de recolección de elementos no utilizados en programas "
+"de larga ejecución, en función de su uso particular de los tipos de datos."
 
-#: ../../whatsnew/3.1.rst:435
+#: ../Doc/whatsnew/3.1.rst:435
 msgid "(Contributed by Antoine Pitrou, :issue:`4688`.)"
-msgstr "(Contributed by Antoine Pitrou, :issue:`4688`.)"
+msgstr "(Contribución de Antoine Pitrou, :issue:`4688`.)"
 
-#: ../../whatsnew/3.1.rst:437
+#: ../Doc/whatsnew/3.1.rst:437
 msgid ""
 "Enabling a configure option named ``--with-computed-gotos`` on compilers "
 "that support it (notably: gcc, SunPro, icc), the bytecode evaluation loop is "
 "compiled with a new dispatch mechanism which gives speedups of up to 20%, "
 "depending on the system, the compiler, and the benchmark."
 msgstr ""
+"Habilitando una opción de configuración llamada ``--with-computed-gotos`` en "
+"compiladores que la admiten (en particular: gcc, SunPro, icc), el ciclo de "
+"evaluación del bytecode se compila con un nuevo mecanismo de despacho que "
+"proporciona aceleraciones de hasta un 20% , dependiendo del sistema, del "
+"compilador y del punto de referencia."
 
-#: ../../whatsnew/3.1.rst:443
+#: ../Doc/whatsnew/3.1.rst:443
 msgid ""
 "(Contributed by Antoine Pitrou along with a number of other participants, :"
 "issue:`4753`)."
 msgstr ""
-"(Contributed by Antoine Pitrou along with a number of other participants, :"
-"issue:`4753`)."
+"(Contribución de Antoine Pitrou junto con varios otros participantes, :issue:"
+"`4753`)."
 
-#: ../../whatsnew/3.1.rst:446
+#: ../Doc/whatsnew/3.1.rst:446
 msgid ""
 "The decoding of UTF-8, UTF-16 and LATIN-1 is now two to four times faster."
 msgstr ""
-"UTF-8, UTF-16 ならびに LATIN-1 のデコーディングが2から4倍速くなりました。"
+"La decodificación de UTF-8, UTF-16 y LATIN-1 es ahora de dos a cuatro veces "
+"más rápida."
 
-#: ../../whatsnew/3.1.rst:449
+#: ../Doc/whatsnew/3.1.rst:449
 msgid ""
 "(Contributed by Antoine Pitrou and Amaury Forgeot d'Arc, :issue:`4868`.)"
-msgstr "(Antoine Pitrou と Amaury Forgeot d'Arc の貢献, :issue:`4868`.)"
+msgstr ""
+"(Contribución de Antoine Pitrou y Amaury Forgeot d'Arc, :issue:`4868`.)"
 
-#: ../../whatsnew/3.1.rst:451
+#: ../Doc/whatsnew/3.1.rst:451
 msgid ""
 "The :mod:`json` module now has a C extension to substantially improve its "
 "performance.  In addition, the API was modified so that json works only "
@@ -718,50 +759,59 @@ msgid ""
 "closely match the `JSON specification <https://json.org/>`_ which is defined "
 "in terms of Unicode."
 msgstr ""
+"El módulo :mod:`json` ahora tiene una extensión C para mejorar "
+"sustancialmente su rendimiento. Además, se modificó la API para que json "
+"funcione solo con :class:`str`, no con :class:`bytes`. Ese cambio hace que "
+"el módulo coincida estrechamente con el `JSON specification <https://json."
+"org/>`_ que se define en términos de Unicode."
 
-#: ../../whatsnew/3.1.rst:457
+#: ../Doc/whatsnew/3.1.rst:457
 msgid ""
 "(Contributed by Bob Ippolito and converted to Py3.1 by Antoine Pitrou and "
 "Benjamin Peterson; :issue:`4136`.)"
 msgstr ""
-"(Contributed by Bob Ippolito and converted to Py3.1 by Antoine Pitrou and "
+"(Contribución de Bob Ippolito y convertido a Py3.1 por Antoine Pitrou y "
 "Benjamin Peterson; :issue:`4136`.)"
 
-#: ../../whatsnew/3.1.rst:460
+#: ../Doc/whatsnew/3.1.rst:460
 msgid ""
 "Unpickling now interns the attribute names of pickled objects.  This saves "
 "memory and allows pickles to be smaller."
 msgstr ""
+"La deserialización (*unpickling*) ahora interna los nombres de los atributos "
+"de los objetos serializados (*pickled*). Esto ahorra memoria y permite que "
+"los pickles sean más pequeños."
 
-#: ../../whatsnew/3.1.rst:463
+#: ../Doc/whatsnew/3.1.rst:463
 msgid "(Contributed by Jake McGuire and Antoine Pitrou; :issue:`5084`.)"
-msgstr "(Contributed by Jake McGuire and Antoine Pitrou; :issue:`5084`.)"
+msgstr "(Contribución de Jake McGuire y Antoine Pitrou; :issue:`5084`.)"
 
-#: ../../whatsnew/3.1.rst:466
+#: ../Doc/whatsnew/3.1.rst:466
 msgid "IDLE"
 msgstr "IDLE"
 
-#: ../../whatsnew/3.1.rst:468
+#: ../Doc/whatsnew/3.1.rst:468
 msgid ""
 "IDLE's format menu now provides an option to strip trailing whitespace from "
 "a source file."
 msgstr ""
-"IDLE のフォーマットメニューに、ソースコードから末尾の空白を取り除くことが出来"
-"るオプションが追加されました。"
+"El menú de formato del IDLE ahora proporciona una opción para eliminar los "
+"espacios en blanco finales de un archivo de código fuente."
 
-#: ../../whatsnew/3.1.rst:471
+#: ../Doc/whatsnew/3.1.rst:471
 msgid "(Contributed by Roger D. Serwy; :issue:`5150`.)"
-msgstr "(Contributed by Roger D. Serwy; :issue:`5150`.)"
+msgstr "(Contribución de Roger D. Serwy; :issue:`5150`.)"
 
-#: ../../whatsnew/3.1.rst:474
+#: ../Doc/whatsnew/3.1.rst:474
 msgid "Build and C API Changes"
-msgstr "ビルドならびに C API の変更"
+msgstr "Cambios en la compilación y la API de C"
 
-#: ../../whatsnew/3.1.rst:476
+#: ../Doc/whatsnew/3.1.rst:476
 msgid "Changes to Python's build process and to the C API include:"
-msgstr "Python のビルド過程と C API の変更は以下の通りです:"
+msgstr ""
+"Los cambios en el proceso de compilación de Python y en la API C incluyen:"
 
-#: ../../whatsnew/3.1.rst:478
+#: ../Doc/whatsnew/3.1.rst:478
 msgid ""
 "Integers are now stored internally either in base ``2**15`` or in base "
 "``2**30``, the base being determined at build time.  Previously, they were "
@@ -772,8 +822,17 @@ msgid ""
 "new configure option ``--enable-big-digits`` that can be used to override "
 "this default."
 msgstr ""
+"Los enteros ahora se almacenan internamente en base 2**15 o en base 2**30, "
+"la base se determina en el momento de la construcción. Anteriormente, "
+"siempre se almacenaban en base 2**15. El uso de base 2**30 ofrece mejoras "
+"significativas en el rendimiento en máquinas de 64 bits, pero los resultados "
+"de las pruebas comparativas en máquinas de 32 bits han sido diversos. Por lo "
+"tanto, el valor predeterminado es usar base 2**30 en máquinas de 64 bits y "
+"base 2**15 en máquinas de 32 bits; en Unix, hay una nueva opción de "
+"configuración ``--enable-big-digits`` que puede ser usada para sobre "
+"escribir este valor predeterminado."
 
-#: ../../whatsnew/3.1.rst:487
+#: ../Doc/whatsnew/3.1.rst:487
 msgid ""
 "Apart from the performance improvements this change should be invisible to "
 "end users, with one exception: for testing and debugging purposes there's a "
@@ -781,53 +840,55 @@ msgid ""
 "format, giving the number of bits per digit and the size in bytes of the C "
 "type used to store each digit::"
 msgstr ""
-"この変更は性能向上以外ではエンドユーザには分からないはずですが、例外が1つあり"
-"ます。\n"
-"テストおよびデバッグ目的で内部形式の情報を提供する :attr:`sys.int_info` が追"
-"加されましたが、これにより数字あたりのビット数と各数字の格納に使われる C の型"
-"のバイトサイズが分かります::"
+"Aparte de las mejoras de rendimiento, este cambio debería ser invisible para "
+"los usuarios finales, con una excepción: para propósitos de prueba y "
+"depuración, hay un nuevo :attr:`sys.int_info` que proporciona información "
+"sobre el formato interno, dando el número de bits por dígito y el tamaño en "
+"bytes del tipo C utilizado para almacenar cada dígito::"
 
-#: ../../whatsnew/3.1.rst:497
+#: ../Doc/whatsnew/3.1.rst:497
 msgid "(Contributed by Mark Dickinson; :issue:`4258`.)"
-msgstr "(Contributed by Mark Dickinson; :issue:`4258`.)"
+msgstr "(Contribución de Mark Dickinson; :issue:`4258`.)"
 
-#: ../../whatsnew/3.1.rst:499
+#: ../Doc/whatsnew/3.1.rst:499
 msgid ""
 "The :c:func:`PyLong_AsUnsignedLongLong()` function now handles a negative "
 "*pylong* by raising :exc:`OverflowError` instead of :exc:`TypeError`."
 msgstr ""
-":c:func:`PyLong_AsUnsignedLongLong()` 関数は負の *pylong* に対し :exc:"
-"`TypeError` ではなく :exc:`OverflowError` を送出するようになりました。"
+"La función :c:func:`PyLong_AsUnsignedLongLong()` es ahora capaz de manejar "
+"un *pylong* negativo lanzando una excepción :exc:`OverflowError` en lugar "
+"de :exc:`TypeError`."
 
-#: ../../whatsnew/3.1.rst:502
+#: ../Doc/whatsnew/3.1.rst:502
 msgid "(Contributed by Mark Dickinson and Lisandro Dalcrin; :issue:`5175`.)"
-msgstr "(Contributed by Mark Dickinson and Lisandro Dalcrin; :issue:`5175`.)"
+msgstr "(Contribución de Mark Dickinson y Lisandro Dalcrin; :issue:`5175`.)"
 
-#: ../../whatsnew/3.1.rst:504
+#: ../Doc/whatsnew/3.1.rst:504
 msgid ""
 "Deprecated :c:func:`PyNumber_Int`.  Use :c:func:`PyNumber_Long` instead."
 msgstr ""
-":c:func:`PyNumber_Int` が非推奨になりました。代わりに :c:func:"
-"`PyNumber_Long` を使用してください。"
+":c:func:`PyNumber_Int` está ahora obsoleto.  Utilice :c:func:`PyNumber_Long` "
+"en su lugar."
 
-#: ../../whatsnew/3.1.rst:506
+#: ../Doc/whatsnew/3.1.rst:506
 msgid "(Contributed by Mark Dickinson; :issue:`4910`.)"
-msgstr "(Contributed by Mark Dickinson; :issue:`4910`.)"
+msgstr "(Contribución de Mark Dickinson; :issue:`4910`.)"
 
-#: ../../whatsnew/3.1.rst:508
+#: ../Doc/whatsnew/3.1.rst:508
 msgid ""
 "Added a new :c:func:`PyOS_string_to_double` function to replace the "
 "deprecated functions :c:func:`PyOS_ascii_strtod` and :c:func:"
 "`PyOS_ascii_atof`."
 msgstr ""
-"非推奨の関数 :c:func:`PyOS_ascii_strtod` および :c:func:`PyOS_ascii_atof` を"
-"置き換えるために新しく :c:func:`PyOS_string_to_double` 関数が追加されました。"
+"Se agrega una nueva función :c:func:`PyOS_string_to_double` para reemplazar "
+"las funciones obsoletas :c:func:`PyOS_ascii_strtod` y :c:func:"
+"`PyOS_ascii_atof`."
 
-#: ../../whatsnew/3.1.rst:511
+#: ../Doc/whatsnew/3.1.rst:511
 msgid "(Contributed by Mark Dickinson; :issue:`5914`.)"
-msgstr "(Contributed by Mark Dickinson; :issue:`5914`.)"
+msgstr "(Contribución de Mark Dickinson; :issue:`5914`.)"
 
-#: ../../whatsnew/3.1.rst:513
+#: ../Doc/whatsnew/3.1.rst:513
 msgid ""
 "Added :c:type:`PyCapsule` as a replacement for the :c:type:`PyCObject` API. "
 "The principal difference is that the new type has a well defined interface "
@@ -835,39 +896,45 @@ msgid ""
 "calling a destructor.  The old type had a problematic API and is now "
 "deprecated."
 msgstr ""
-":c:type:`PyCObject` API を置き換えるものとして、 :c:type:`PyCapsule` が追加さ"
-"れました。主な違いとしては、新しい型は、型安全に情報を渡すための良く定義され"
-"たインターフェイスを持ち、また、デストラクタの呼び出しのシグネチャの複雑さが"
-"小さくなっています。古い型は問題のある API で、今では非推奨です。"
+"Se agrega :c:type:`PyCapsule` como un reemplazo para la API :c:type:"
+"`PyCObject`. La principal diferencia es que el nuevo tipo tiene una interfaz "
+"bien definida para pasar información de seguridad de escritura y una firma "
+"menos complicada para llamar a un destructor. El tipo anterior tenía una API "
+"problemática y ahora está obsoleta."
 
-#: ../../whatsnew/3.1.rst:519
+#: ../Doc/whatsnew/3.1.rst:519
 msgid "(Contributed by Larry Hastings; :issue:`5630`.)"
-msgstr "(Contributed by Larry Hastings; :issue:`5630`.)"
+msgstr "(Contribución de Larry Hastings; :issue:`5630`.)"
 
-#: ../../whatsnew/3.1.rst:522
+#: ../Doc/whatsnew/3.1.rst:522
 msgid "Porting to Python 3.1"
-msgstr "Python 3.1 への移植"
+msgstr "Portando a Python 3.1"
 
-#: ../../whatsnew/3.1.rst:524
+#: ../Doc/whatsnew/3.1.rst:524
 msgid ""
 "This section lists previously described changes and other bugfixes that may "
 "require changes to your code:"
 msgstr ""
-"このセクションでは前述の変更とバグフィックスにより必要となるかもしれないコー"
-"ドの変更を列挙します:"
+"Esta sección enumera los cambios descritos anteriormente y otras "
+"correcciones de errores que pueden requerir cambios en su código:"
 
-#: ../../whatsnew/3.1.rst:527
+#: ../Doc/whatsnew/3.1.rst:527
 msgid ""
 "The new floating point string representations can break existing doctests. "
 "For example::"
 msgstr ""
-"新しい浮動小数点の文字列表現は既存の doctest に違反する惧れがあります。例え"
-"ば、"
+"Las nuevas representaciones de cadenas de coma flotante pueden romper las "
+"pruebas de documentación existentes. Por ejemplo::"
 
-#: ../../whatsnew/3.1.rst:550
+#: ../Doc/whatsnew/3.1.rst:550
 msgid ""
 "The automatic name remapping in the pickle module for protocol 2 or lower "
 "can make Python 3.1 pickles unreadable in Python 3.0.  One solution is to "
 "use protocol 3.  Another solution is to set the *fix_imports* option to "
 "``False``. See the discussion above for more details."
 msgstr ""
+"La reasignación automática de nombres en el módulo pickle para el protocolo "
+"2 o inferior puede hacer que los pickles de Python 3.1 sean ilegibles en "
+"Python 3.0.  Una solución es usar el protocolo 3.  Otra solución es "
+"establecer la opción *fix_imports* en ``False``. Consulte la discusión "
+"anterior para obtener más detalles."

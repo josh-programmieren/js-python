@@ -1,77 +1,80 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Tetsuo Koyama <tkoyama010@gmail.com>, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:04+0000\n"
-"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2021-03-19 11:16+0100\n"
+"PO-Revision-Date: 2021-08-07 18:10+0200\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.8.0\n"
+"X-Generator: Poedit 3.0\n"
 
-#: ../../library/email.encoders.rst:2
+#: ../Doc/library/email.encoders.rst:2
 msgid ":mod:`email.encoders`: Encoders"
-msgstr ":mod:`email.encoders`: エンコーダ"
+msgstr ":mod:`email.encoders`: Codificadores"
 
-#: ../../library/email.encoders.rst:7
+#: ../Doc/library/email.encoders.rst:7
 msgid "**Source code:** :source:`Lib/email/encoders.py`"
-msgstr "**ソースコード:** :source:`Lib/email/encoders.py`"
+msgstr "**Código fuente:** :source:`Lib/email/encoders.py`"
 
-#: ../../library/email.encoders.rst:11
+#: ../Doc/library/email.encoders.rst:11
 msgid ""
 "This module is part of the legacy (``Compat32``) email API.  In the new API "
 "the functionality is provided by the *cte* parameter of the :meth:`~email."
 "message.EmailMessage.set_content` method."
 msgstr ""
-"このモジュールは、レガシーな (``Compat32``) email APIの一部です。新しいAPIで"
-"は、この機能は :meth:`~email.message.EmailMessage.set_content` メソッドの"
-"*cte*パラメータによって提供されます。"
+"Este módulo forma parte de la anterior API de correo electrónico "
+"(``Compat32``). En la nueva API, la funcionalidad la proporciona el "
+"parámetro *cte* del método :meth:`~email.message.EmailMessage.set_content`."
 
-#: ../../library/email.encoders.rst:15
+#: ../Doc/library/email.encoders.rst:15
 msgid ""
 "This module is deprecated in Python 3.  The functions provided here should "
 "not be called explicitly since the :class:`~email.mime.text.MIMEText` class "
 "sets the content type and CTE header using the *_subtype* and *_charset* "
 "values passed during the instantiation of that class."
 msgstr ""
-"このモジュールはPython3で非推奨になりました。 :class:`~email.mime.text."
-"MIMEText` クラスはクラスのインスタンス化中に渡された *_subtype* と "
-"*_charset* の値を使ってcontent typeとCTEヘッダを設定するので、ここで提供され"
-"ている関数は明示的に呼び出すべきではありません。"
+"Este módulo está obsoleto en Python 3. Las funciones que aparecen aquí no "
+"deberían ser llamadas explícitamente ya que la clase :class:`~email.mime."
+"text.MIMEText` establece el tipo de contenido y el encabezado CTE utilizando "
+"los valores del *_subtype* y del *_charset* que se pasan cuando se instancia "
+"esa clase."
 
-#: ../../library/email.encoders.rst:20
+#: ../Doc/library/email.encoders.rst:20
 msgid ""
 "The remaining text in this section is the original documentation of the "
 "module."
-msgstr "この節の以降のテキストはモジュールの元々のドキュメントです。"
+msgstr ""
+"El texto que viene a continuación corresponde a la documentación original "
+"del módulo."
 
-#: ../../library/email.encoders.rst:22
+#: ../Doc/library/email.encoders.rst:22
 msgid ""
 "When creating :class:`~email.message.Message` objects from scratch, you "
 "often need to encode the payloads for transport through compliant mail "
 "servers. This is especially true for :mimetype:`image/\\*` and :mimetype:"
 "`text/\\*` type messages containing binary data."
 msgstr ""
-"何もないところから :class:`~email.message.Message` を作成するときしばしば必要"
-"になるのが、ペイロードをメールサーバに通すためにエンコードすることです。これ"
-"はとくにバイナリデータを含んだ :mimetype:`image/\\*` や :mimetype:`text/\\*` "
-"タイプのメッセージで必要です。"
+"Cuando se crean objetos :class:`~email.message.Message` desde 0, a menudo se "
+"necesita codificar el contenido del mensaje para transportarlo a través de "
+"servidores de correo electrónico adecuados. Esto es así especialmente para "
+"el tipo de mensajes :mimetype:`image/\\*` y :mimetype:`text/\\*` que "
+"contienen datos binarios."
 
-#: ../../library/email.encoders.rst:27
+#: ../Doc/library/email.encoders.rst:27
 msgid ""
 "The :mod:`email` package provides some convenient encoders in its :mod:"
 "`encoders` module.  These encoders are actually used by the :class:`~email."
@@ -82,42 +85,46 @@ msgid ""
 "They should also set the :mailheader:`Content-Transfer-Encoding` header as "
 "appropriate."
 msgstr ""
-":mod:`email` パッケージでは、 :mod:`encoders` モジュールにおいていくかの便宜"
-"的なエンコーダをサポートしています。実際にはこれらのエンコーダは :class:"
-"`~email.mime.audio.MIMEAudio` および :class:`~email.mime.image.MIMEImage` ク"
-"ラスのコンストラクタでデフォルトエンコーダとして使われています。すべてのエン"
-"コーディング関数は、エンコードするメッセージオブジェクトひとつだけを引数にと"
-"ります。これらはふつうペイロードを取りだし、それをエンコードして、ペイロード"
-"をエンコードされたものにセットしなおします。これらはまた :mailheader:"
-"`Content-Transfer-Encoding` ヘッダを適切な値に設定します。"
+"El paquete :mod:`email` proporciona algunos codificadores adecuados en su "
+"módulo :mod:`encoders`. Estos codificadores son en realidad utilizados por "
+"los constructores de las clases :class:`~email.mime.audio.MIMEAudio` y :"
+"class:`~email.mime.image.MIMEImage` para proporcionar codificadores por "
+"defecto. Todas las funciones de codificación tienen exactamente un "
+"argumento, el mensaje a codificar Normalmente extraen el contenido, lo "
+"codifican y borran el contenido para introducir el nuevo contenido "
+"codificado.  También deberían marcar el encabezado :mailheader:`Content-"
+"Transfer-Encoding` como apropiado."
 
-#: ../../library/email.encoders.rst:35
+#: ../Doc/library/email.encoders.rst:35
 msgid ""
 "Note that these functions are not meaningful for a multipart message.  They "
 "must be applied to individual subparts instead, and will raise a :exc:"
 "`TypeError` if passed a message whose type is multipart."
 msgstr ""
-"マルチパートメッセージにこれら関数を使うことは全く無意味です。それらは各々の"
-"サブパートごとに適用されるべきものです。メッセージがマルチパートのものを渡す"
-"と :exc:`TypeError` が発生します。"
+"Ten en cuenta que estas funciones no sirven para un mensaje con múltiples "
+"partes. En lugar de aplicarlo al mensaje completo, las funciones deben "
+"aplicarse a cada subparte individual. Si se pasa un mensaje de múltiples "
+"partes como argumento se activara un mensaje de error :exc:`TypeError`."
 
-#: ../../library/email.encoders.rst:39
+#: ../Doc/library/email.encoders.rst:39
 msgid "Here are the encoding functions provided:"
-msgstr "提供されているエンコーディング関数は以下のとおりです:"
+msgstr ""
+"A continuación, una lista de las funciones de codificación facilitadas:"
 
-#: ../../library/email.encoders.rst:44
+#: ../Doc/library/email.encoders.rst:44
 msgid ""
 "Encodes the payload into quoted-printable form and sets the :mailheader:"
 "`Content-Transfer-Encoding` header to ``quoted-printable`` [#]_. This is a "
 "good encoding to use when most of your payload is normal printable data, but "
 "contains a few unprintable characters."
 msgstr ""
-"ペイロードを quoted-printable 形式にエンコードし、 :mailheader:`Content-"
-"Transfer-Encoding` ヘッダを ``quoted-printable`` [#]_ に設定します。これはそ"
-"のペイロードのほとんどが通常の印刷可能な文字からなっているが、印刷不可能な文"
-"字がすこしだけあるときのエンコード方法として適しています。"
+"Codifica el contenido en formularios entrecomillados e imprimibles y marca "
+"el encabezado :mailheader:`Content-Transfer-Encoding` como ``quoted-"
+"printable`` [#]_. Es un buen codificador para usar cuando la mayoría del "
+"contenido son datos imprimibles normales pero hay algún dato que no es "
+"imprimible."
 
-#: ../../library/email.encoders.rst:52
+#: ../Doc/library/email.encoders.rst:52
 msgid ""
 "Encodes the payload into base64 form and sets the :mailheader:`Content-"
 "Transfer-Encoding` header to ``base64``.  This is a good encoding to use "
@@ -125,38 +132,38 @@ msgid ""
 "form than quoted-printable.  The drawback of base64 encoding is that it "
 "renders the text non-human readable."
 msgstr ""
-"ペイロードを base64 形式でエンコードし、 :mailheader:`Content-Transfer-"
-"Encoding` ヘッダを ``base64`` に変更します。これはペイロード中のデータのほと"
-"んどが印刷不可能な文字である場合に適しています。 quoted-printable 形式よりも"
-"結果としてはコンパクトなサイズになるからです。 base64 形式の欠点は、これが人"
-"間にはまったく読めないテキストになってしまうことです。"
+"Codifica el contenido en un formulario base64 y marca el encabezado  :"
+"mailheader:`Content-Transfer-Encoding` como ``base64``. Esta codificación es "
+"buena cuando la mayoría del contenido son datos no imprimibles ya que es un "
+"formulario más compacto que formularios entrecomillados e imprimibles. La "
+"desventaja es que incluye el texto que no es leíble por los humanos."
 
-#: ../../library/email.encoders.rst:61
+#: ../Doc/library/email.encoders.rst:61
 msgid ""
 "This doesn't actually modify the message's payload, but it does set the :"
 "mailheader:`Content-Transfer-Encoding` header to either ``7bit`` or ``8bit`` "
 "as appropriate, based on the payload data."
 msgstr ""
-"これは実際にはペイロードを変更はしませんが、ペイロードの形式に応じて :"
-"mailheader:`Content-Transfer-Encoding` ヘッダを ``7bit`` あるいは ``8bit`` に"
-"適した形に設定します。"
+"Esto, en realidad, no modifica el contenido del mensaje, pero fija el "
+"encabezado :mailheader:`Content-Transfer-Encoding` a ``7bit`` u ``8bit``, lo "
+"que considere más adecuado en función del contenido del mensaje."
 
-#: ../../library/email.encoders.rst:68
+#: ../Doc/library/email.encoders.rst:68
 msgid ""
 "This does nothing; it doesn't even set the :mailheader:`Content-Transfer-"
 "Encoding` header."
 msgstr ""
-"これは何もしないエンコーダです。 :mailheader:`Content-Transfer-Encoding` ヘッ"
-"ダを設定さえしません。"
+"Esto no hace nada; ni siquiera fija el encabezado :mailheader:`Content-"
+"Transfer-Encoding`."
 
-#: ../../library/email.encoders.rst:72
+#: ../Doc/library/email.encoders.rst:72
 msgid "Footnotes"
-msgstr "脚注"
+msgstr "Notas"
 
-#: ../../library/email.encoders.rst:73
+#: ../Doc/library/email.encoders.rst:73
 msgid ""
 "Note that encoding with :meth:`encode_quopri` also encodes all tabs and "
 "space characters in the data."
 msgstr ""
-"注意: :meth:`encode_quopri` を使ってエンコードすると、データ中のタブ文字や空"
-"白文字もエンコードされます。"
+"El codificado con :meth:`encode_quopri` también codifica todas las "
+"tabulaciones y caracteres de espacios en los datos."

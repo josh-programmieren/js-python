@@ -1,44 +1,46 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-03 14:14+0000\n"
-"PO-Revision-Date: 2021-06-28 01:04+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2023-01-03 09:47-0300\n"
+"Last-Translator: Francisco Mora <fr.morac@duocuc.cl>\n"
+"Language-Team: python-doc-es\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.2.2\n"
 
-#: ../../library/decimal.rst:2
+#: ../Doc/library/decimal.rst:2
 msgid ":mod:`decimal` --- Decimal fixed point and floating point arithmetic"
-msgstr ":mod:`decimal` --- 十進固定及び浮動小数点数の算術演算"
+msgstr ":mod:`decimal` --- Aritmética decimal de coma fija y coma flotante"
 
-#: ../../library/decimal.rst:15
+#: ../Doc/library/decimal.rst:15
 msgid "**Source code:** :source:`Lib/decimal.py`"
-msgstr "**ソースコード:** :source:`Lib/decimal.py`"
+msgstr "**Código fuente:** :source:`Lib/decimal.py`"
 
-#: ../../library/decimal.rst:33
+#: ../Doc/library/decimal.rst:33
 msgid ""
 "The :mod:`decimal` module provides support for fast correctly rounded "
 "decimal floating point arithmetic. It offers several advantages over the :"
 "class:`float` datatype:"
 msgstr ""
+"El módulo :mod:`decimal` proporciona soporte para aritmética de coma "
+"flotante decimal rápida y redondeada correctamente. Ofrece varias ventajas "
+"en comparación con el tipo de dato :class:`float`:"
 
-#: ../../library/decimal.rst:37
+#: ../Doc/library/decimal.rst:37
 msgid ""
 "Decimal \"is based on a floating-point model which was designed with people "
 "in mind, and necessarily has a paramount guiding principle -- computers must "
@@ -46,49 +48,71 @@ msgid ""
 "people learn at school.\" -- excerpt from the decimal arithmetic "
 "specification."
 msgstr ""
-"「(Decimal は) 人々を念頭にデザインされた浮動小数点モデルを元にしており、必然"
-"的に最も重要な指針があります -- コンピュータは人々が学校で習った算術と同じよ"
-"うに動作する算術を提供しなければならない」 -- 十進数演算仕様より。"
+"Decimal \"se basa en un modelo de coma flotante que se diseñó pensando en "
+"las personas, y necesariamente tiene un principio rector supremo: las "
+"computadoras deben proporcionar una aritmética que funcione de la misma "
+"manera que la aritmética que las personas aprenden en la escuela.\" -- "
+"extracto (traducido) de la especificación de la aritmética decimal."
 
-#: ../../library/decimal.rst:42
+#: ../Doc/library/decimal.rst:42
 msgid ""
-"Decimal numbers can be represented exactly.  In contrast, numbers like "
-"``1.1`` and ``2.2`` do not have exact representations in binary floating "
-"point. End users typically would not expect ``1.1 + 2.2`` to display as "
-"``3.3000000000000003`` as it does with binary floating point."
+"Decimal numbers can be represented exactly.  In contrast, numbers like :"
+"const:`1.1` and :const:`2.2` do not have exact representations in binary "
+"floating point. End users typically would not expect ``1.1 + 2.2`` to "
+"display as :const:`3.3000000000000003` as it does with binary floating point."
 msgstr ""
+"Los números decimales se pueden representar de forma exacta en coma flotante "
+"decimal. En cambio, números como :const:`1.1` y :const:`2.2` no tienen "
+"representaciones exactas en coma flotante binaria. Los usuarios finales "
+"normalmente no esperaran que ``1.1 + 2.2`` se muestre como :const:"
+"`3.3000000000000003`, como ocurre al usar la representación binaria en coma "
+"flotante."
 
-#: ../../library/decimal.rst:47
+#: ../Doc/library/decimal.rst:47
 msgid ""
 "The exactness carries over into arithmetic.  In decimal floating point, "
 "``0.1 + 0.1 + 0.1 - 0.3`` is exactly equal to zero.  In binary floating "
-"point, the result is ``5.5511151231257827e-017``.  While near to zero, the "
-"differences prevent reliable equality testing and differences can "
+"point, the result is :const:`5.5511151231257827e-017`.  While near to zero, "
+"the differences prevent reliable equality testing and differences can "
 "accumulate. For this reason, decimal is preferred in accounting applications "
 "which have strict equality invariants."
 msgstr ""
+"La exactitud se traslada a la aritmética. En coma flotante decimal, ``0.1 + "
+"0.1 + 0.1 - 0.3`` es exactamente igual a cero. En coma flotante binaria, el "
+"resultado es :const:`5.5511151231257827e-017`. Aunque cercanas a cero, las "
+"diferencias impiden pruebas de igualdad confiables y las diferencias pueden "
+"acumularse. Por estas razones, se recomienda el uso de decimal en "
+"aplicaciones de contabilidad con estrictas restricciones de confiabilidad."
 
-#: ../../library/decimal.rst:54
+#: ../Doc/library/decimal.rst:54
 msgid ""
 "The decimal module incorporates a notion of significant places so that "
-"``1.30 + 1.20`` is ``2.50``.  The trailing zero is kept to indicate "
+"``1.30 + 1.20`` is :const:`2.50`.  The trailing zero is kept to indicate "
 "significance. This is the customary presentation for monetary applications. "
 "For multiplication, the \"schoolbook\" approach uses all the figures in the "
-"multiplicands.  For instance, ``1.3 * 1.2`` gives ``1.56`` while ``1.30 * "
-"1.20`` gives ``1.5600``."
+"multiplicands.  For instance, ``1.3 * 1.2`` gives :const:`1.56` while ``1.30 "
+"* 1.20`` gives :const:`1.5600`."
 msgstr ""
+"El módulo decimal incorpora una noción de dígitos significativos, de modo "
+"que ``1.30 + 1.20`` es :const:`2.50`. El cero final se mantiene para indicar "
+"el número de dígitos significativos. Esta es la representación habitual en "
+"aplicaciones monetarias. Para la multiplicación, el método de \"libro "
+"escolar\" utilizado usa todas las cifras de los multiplicandos. Por ejemplo, "
+"``1.3 * 1.2`` es igual a :const:`1.56`, mientras que ``1.30 * 1.20`` es "
+"igual a :const:`1.5600`."
 
-#: ../../library/decimal.rst:61
+#: ../Doc/library/decimal.rst:61
 msgid ""
 "Unlike hardware based binary floating point, the decimal module has a user "
 "alterable precision (defaulting to 28 places) which can be as large as "
 "needed for a given problem:"
 msgstr ""
-"ハードウェアによる 2 進浮動小数点表現と違い、:mod:`decimal` モジュールでは計"
-"算精度をユーザが変更できます(デフォルトでは 28 桁です)。この桁数はほとんどの"
-"問題解決に十分な大きさです:"
+"A diferencia del punto flotante binario basado en hardware, el módulo "
+"decimal tiene una precisión modificable por el usuario (por defecto es de 28 "
+"dígitos decimales) que puede ser tan grande como sea necesario para un "
+"problema dado:"
 
-#: ../../library/decimal.rst:73
+#: ../Doc/library/decimal.rst:73
 msgid ""
 "Both binary and decimal floating point are implemented in terms of published "
 "standards.  While the built-in float type exposes only a modest portion of "
@@ -97,42 +121,49 @@ msgid ""
 "signal handling. This includes an option to enforce exact arithmetic by "
 "using exceptions to block any inexact operations."
 msgstr ""
-"二進と十進の浮動小数点は、いずれも広く公開されている標準仕様のもとに実装され"
-"ています。組み込みの浮動小数点型では、標準仕様で提唱されている機能のほんのさ"
-"さやかな部分を利用できるにすぎませんが、:mod:`decimal` では標準仕様が要求して"
-"いる全ての機能を利用できます。必要に応じて、プログラマは値の丸めやシグナル処"
-"理を完全に制御できます。この中には全ての不正確な操作を例外でブロックして正確"
-"な算術を遵守させるオプションもあります。"
+"Tanto la representación en coma flotante binaria como la decimal se "
+"implementan de acuerdo a estándares publicados. Mientras que el tipo float "
+"expone solo una pequeña parte de sus capacidades, el módulo decimal expone "
+"todos los componentes requeridos del estándar. Cuando es necesario, el "
+"desarrollador tiene control total sobre el redondeo y la gestión de las "
+"señales. Esto incluye la capacidad de forzar la aritmética exacta, "
+"utilizando excepciones para bloquear cualquier operación inexacta."
 
-#: ../../library/decimal.rst:80
+#: ../Doc/library/decimal.rst:80
 msgid ""
 "The decimal module was designed to support \"without prejudice, both exact "
 "unrounded decimal arithmetic (sometimes called fixed-point arithmetic) and "
 "rounded floating-point arithmetic.\"  -- excerpt from the decimal arithmetic "
 "specification."
 msgstr ""
-"decimal モジュールは「偏見なく、正確な丸めなしの十進算術(固定小数点算術と呼ば"
-"れることもある)と丸めありの浮動小数点数算術」(十進数演算仕様より引用)をサポー"
-"トするようにデザインされました。"
+"El módulo decimal fue diseñado para admitir \"indiscriminadamente, tanto "
+"aritmética decimal exacta sin redondeo (a veces llamada aritmética de coma "
+"fija) como la aritmética de coma flotante con redondeo.\" -- extracto "
+"(traducido) de la especificación de la aritmética decimal."
 
-#: ../../library/decimal.rst:85
+#: ../Doc/library/decimal.rst:85
 msgid ""
 "The module design is centered around three concepts:  the decimal number, "
 "the context for arithmetic, and signals."
 msgstr ""
-"このモジュールは、十進数型、算術コンテキスト (context for arithmetic)、そして"
-"シグナル (signal) という三つの概念を中心に設計されています。"
+"El módulo está diseñado en torno a tres conceptos: el número decimal, el "
+"contexto aritmético y las señales."
 
-#: ../../library/decimal.rst:88
+#: ../Doc/library/decimal.rst:88
 msgid ""
 "A decimal number is immutable.  It has a sign, coefficient digits, and an "
 "exponent.  To preserve significance, the coefficient digits do not truncate "
-"trailing zeros.  Decimals also include special values such as ``Infinity``, "
-"``-Infinity``, and ``NaN``.  The standard also differentiates ``-0`` from "
-"``+0``."
+"trailing zeros.  Decimals also include special values such as :const:"
+"`Infinity`, :const:`-Infinity`, and :const:`NaN`.  The standard also "
+"differentiates :const:`-0` from :const:`+0`."
 msgstr ""
+"Un número decimal es inmutable. Tiene un signo, un coeficiente y un "
+"exponente. Para conservar el número de dígitos significativos, los ceros "
+"iniciales no se truncan. Los números decimales también incluyen valores "
+"especiales como :const:`Infinity`, :const:`-Infinity` y :const:`NaN`. El "
+"estándar también marca la diferencia entre :const:`-0` y :const:`+0`."
 
-#: ../../library/decimal.rst:94
+#: ../Doc/library/decimal.rst:94
 msgid ""
 "The context for arithmetic is an environment specifying precision, rounding "
 "rules, limits on exponents, flags indicating the results of operations, and "
@@ -141,14 +172,16 @@ msgid ""
 "`ROUND_FLOOR`, :const:`ROUND_HALF_DOWN`, :const:`ROUND_HALF_EVEN`, :const:"
 "`ROUND_HALF_UP`, :const:`ROUND_UP`, and :const:`ROUND_05UP`."
 msgstr ""
-"算術コンテキストとは、精度や値丸めの規則、指数部の制限を決めている環境です。"
-"この環境では、演算結果を表すためのフラグや、演算上発生した特定のシグナルを例"
-"外として扱うかどうかを決めるトラップイネーブラも定義しています。丸め規則に"
-"は :const:`ROUND_CEILING`, :const:`ROUND_DOWN`, :const:`ROUND_FLOOR`, :const:"
+"El contexto aritmético es un entorno que permite especificar una precisión, "
+"reglas de redondeo, límites en los exponentes, flags que indican el "
+"resultado de las operaciones y habilitadores de trampas que especifican si "
+"las señales (reportadas durante operaciones ilegales) son tratadas o no como "
+"excepciones de Python. Las opciones de redondeo incluyen :const:"
+"`ROUND_CEILING`, :const:`ROUND_DOWN`, :const:`ROUND_FLOOR`, :const:"
 "`ROUND_HALF_DOWN`, :const:`ROUND_HALF_EVEN`, :const:`ROUND_HALF_UP`, :const:"
-"`ROUND_UP`, および :const:`ROUND_05UP` があります。"
+"`ROUND_UP` y :const:`ROUND_05UP`."
 
-#: ../../library/decimal.rst:101
+#: ../Doc/library/decimal.rst:101
 msgid ""
 "Signals are groups of exceptional conditions arising during the course of "
 "computation.  Depending on the needs of the application, signals may be "
@@ -158,154 +191,183 @@ msgid ""
 "`Subnormal`, :const:`Overflow`, :const:`Underflow` and :const:"
 "`FloatOperation`."
 msgstr ""
-"シグナルとは、演算の過程で生じる例外的条件です。個々のシグナルは、アプリケー"
-"ションそれぞれの要求に従って、無視されたり、単なる情報とみなされたり、例外と"
-"して扱われたりします。 :mod:`decimal` モジュールには、 :const:`Clamped`, :"
-"const:`InvalidOperation`, :const:`DivisionByZero`, :const:`Inexact`, :const:"
-"`Rounded`, :const:`Subnormal`, :const:`Overflow`, :const:`Underflow`, およ"
-"び :const:`FloatOperation` といったシグナルがあります。"
+"Las señales son grupos de condiciones excepcionales que ocurren durante el "
+"cálculo. Dependiendo de las necesidades de la aplicación, las señales pueden "
+"ignorarse, tratarse como información o tratarse como excepciones. Las "
+"señales existentes en el módulo decimal son :const:`Clamped`, :const:"
+"`InvalidOperation`, :const:`DivisionByZero`, :const:`Inexact`, :const:"
+"`Rounded`, :const:`Subnormal`, :const:`Overflow`, :const:`Underflow` y :"
+"const:`FloatOperation`."
 
-#: ../../library/decimal.rst:108
+#: ../Doc/library/decimal.rst:108
 msgid ""
 "For each signal there is a flag and a trap enabler.  When a signal is "
 "encountered, its flag is set to one, then, if the trap enabler is set to "
 "one, an exception is raised.  Flags are sticky, so the user needs to reset "
 "them before monitoring a calculation."
 msgstr ""
-"各シグナルには、フラグとトラップイネーブラがあります。演算上何らかのシグナル"
-"に遭遇すると、フラグは 1 にセットされます。このとき、もしトラップイネーブラ"
-"が 1 にセットされていれば、例外を送出します。フラグの値は膠着型 (sticky) なの"
-"で、演算によるフラグの変化をモニタしたければ、予めフラグをリセットしておかな"
-"ければなりません。"
+"Por cada señal hay un flag y un habilitador de trampa. Cuando ocurre una "
+"operación ilegal, su flag se establece en uno, luego, si su habilitador de "
+"trampa está establecido en uno, se lanza una excepción. La configuración de "
+"los flags es persistente, por lo que el usuario debe restablecerlos antes de "
+"comenzar un cálculo que desee monitorear."
 
-#: ../../library/decimal.rst:116
+#: ../Doc/library/decimal.rst:116
+#, fuzzy
 msgid ""
 "IBM's General Decimal Arithmetic Specification, `The General Decimal "
 "Arithmetic Specification <https://speleotrove.com/decimal/decarith.html>`_."
 msgstr ""
+"Especificación general de la aritmética decimal de IBM, `The General Decimal "
+"Arithmetic Specification <http://speleotrove.com/decimal/decarith.html>`_."
 
-#: ../../library/decimal.rst:125
+#: ../Doc/library/decimal.rst:125
 msgid "Quick-start Tutorial"
-msgstr "クイックスタートチュートリアル"
+msgstr "Tutorial de inicio rápido"
 
-#: ../../library/decimal.rst:127
+#: ../Doc/library/decimal.rst:127
 msgid ""
 "The usual start to using decimals is importing the module, viewing the "
 "current context with :func:`getcontext` and, if necessary, setting new "
 "values for precision, rounding, or enabled traps::"
 msgstr ""
-"普通、 :mod:`decimal` を使うときには、モジュールをインポートし、現在の演算コ"
-"ンテキストを :func:`getcontext` で調べ、必要なら、精度、丸め、有効なトラップ"
-"を設定します::"
+"El punto de partida habitual para usar decimales es importar el módulo, ver "
+"el contexto actual con :func:`getcontext` y, si es necesario, establecer "
+"nuevos valores para la precisión, el redondeo o trampas de señales "
+"habilitadas::"
 
-#: ../../library/decimal.rst:139
+#: ../Doc/library/decimal.rst:139
 msgid ""
 "Decimal instances can be constructed from integers, strings, floats, or "
 "tuples. Construction from an integer or a float performs an exact conversion "
 "of the value of that integer or float.  Decimal numbers include special "
-"values such as ``NaN`` which stands for \"Not a number\", positive and "
-"negative ``Infinity``, and ``-0``::"
+"values such as :const:`NaN` which stands for \"Not a number\", positive and "
+"negative :const:`Infinity`, and :const:`-0`::"
 msgstr ""
+"Las instancias de la clase Decimal se pueden construir a partir de números "
+"enteros, cadenas de caracteres, flotantes o tuplas. La construcción a partir "
+"de un número entero o flotante realiza una conversión exacta del valor de "
+"ese número. Los números decimales incluyen valores especiales como :const:"
+"`NaN`, que significa \"No es un número\", :const:`Infinity` positivo y "
+"negativo o :const:`-0`::"
 
-#: ../../library/decimal.rst:163
+#: ../Doc/library/decimal.rst:163
 msgid ""
 "If the :exc:`FloatOperation` signal is trapped, accidental mixing of "
 "decimals and floats in constructors or ordering comparisons raises an "
 "exception::"
 msgstr ""
-":exc:`FloatOperation` シグナルがトラップされる場合、コンストラクタや順序比較"
-"において誤って decimal と float が混ざると、例外が送出されます::"
+"Si la señal :exc:`FloatOperation` es atrapada, la mezcla accidental de "
+"decimales y flotantes en constructores o comparaciones de orden lanzará una "
+"excepción::"
 
-#: ../../library/decimal.rst:182
+#: ../Doc/library/decimal.rst:182
 msgid ""
 "The significance of a new Decimal is determined solely by the number of "
 "digits input.  Context precision and rounding only come into play during "
 "arithmetic operations."
 msgstr ""
-"新たな :class:`Decimal` の有効桁数は入力の桁数だけで決まります。演算コンテキ"
-"ストにおける精度や値丸めの設定が影響するのは算術演算の間だけです。"
+"La significación de un nuevo objeto Decimal es determinada únicamente por el "
+"número de dígitos ingresados. La precisión y el redondeo establecidos en el "
+"contexto solo entran en juego durante las operaciones aritméticas."
 
-#: ../../library/decimal.rst:199
+#: ../Doc/library/decimal.rst:199
 msgid ""
 "If the internal limits of the C version are exceeded, constructing a decimal "
 "raises :class:`InvalidOperation`::"
 msgstr ""
-"C バージョンの内部制限を超えた場合、decimal の構成は :class:"
-"`InvalidOperation` を送出します::"
+"Se lanza una excepción :class:`InvalidOperation` si durante la construcción "
+"de un objeto Decimal se exceden los límites internos de la versión de C::"
 
-#: ../../library/decimal.rst:209
+#: ../Doc/library/decimal.rst:209
 msgid ""
 "Decimals interact well with much of the rest of Python.  Here is a small "
 "decimal floating point flying circus:"
 msgstr ""
-"decimal はほとんどの場面で Python の他の機能とうまくやりとりできます。"
-"decimal 浮動小数点の空飛ぶサーカス (flying circus) をお見せしましょう:"
+"Los objetos Decimal interactúan bien con gran parte del resto de Python. "
+"Aquí hay un pequeño circo volador de punto flotante decimal:"
 
-#: ../../library/decimal.rst:241
+#: ../Doc/library/decimal.rst:241
 msgid "And some mathematical functions are also available to Decimal:"
-msgstr "いくつかの数学的関数も Decimal には用意されています:"
-
-#: ../../library/decimal.rst:253
-msgid ""
-"The :meth:`~Decimal.quantize` method rounds a number to a fixed exponent.  "
-"This method is useful for monetary applications that often round results to "
-"a fixed number of places:"
 msgstr ""
+"Y algunas funciones matemáticas también están disponibles para Decimal:"
 
-#: ../../library/decimal.rst:262
+#: ../Doc/library/decimal.rst:253
+msgid ""
+"The :meth:`quantize` method rounds a number to a fixed exponent.  This "
+"method is useful for monetary applications that often round results to a "
+"fixed number of places:"
+msgstr ""
+"El método :meth:`quantize` redondea un número a un exponente fijo. Este "
+"método es útil para aplicaciones monetarias, que a menudo redondean los "
+"resultados a un número fijo de dígitos significativos:"
+
+#: ../Doc/library/decimal.rst:262
 msgid ""
 "As shown above, the :func:`getcontext` function accesses the current context "
 "and allows the settings to be changed.  This approach meets the needs of "
 "most applications."
 msgstr ""
-"前述のように、 :func:`getcontext` 関数を使うと現在の演算コンテキストにアクセ"
-"スでき、設定を変更できます。ほとんどのアプリケーションはこのアプローチで十分"
-"です。"
+"Como se muestra arriba, la función :func:`getcontext` accede al contexto "
+"actual y permite cambiar la configuración. Este enfoque satisface las "
+"necesidades de la mayoría de las aplicaciones."
 
-#: ../../library/decimal.rst:266
+#: ../Doc/library/decimal.rst:266
 msgid ""
 "For more advanced work, it may be useful to create alternate contexts using "
 "the Context() constructor.  To make an alternate active, use the :func:"
 "`setcontext` function."
 msgstr ""
-"より高度な作業を行う場合、 :func:`Context` コンストラクタを使って別の演算コン"
-"テキストを作っておくと便利なことがあります。別の演算コンテキストをアクティブ"
-"にしたければ、 :func:`setcontext` を使います。"
+"Para trabajos más avanzados, puede resultar útil crear contextos "
+"alternativos utilizando el constructor Context(). Para activar un contexto "
+"alternativo, usa la función :func:`setcontext`."
 
-#: ../../library/decimal.rst:270
+#: ../Doc/library/decimal.rst:270
 msgid ""
 "In accordance with the standard, the :mod:`decimal` module provides two "
 "ready to use standard contexts, :const:`BasicContext` and :const:"
 "`ExtendedContext`. The former is especially useful for debugging because "
 "many of the traps are enabled:"
 msgstr ""
-":mod:`decimal` モジュールでは、標準仕様に従って、すぐ利用できる二つの標準コン"
-"テキスト、 :const:`BasicContext` および :const:`ExtendedContext` を提供してい"
-"ます。前者はほとんどのトラップが有効になっており、とりわけデバッグの際に便利"
-"です:"
+"De acuerdo con el estándar, el módulo :mod:`decimal` proporciona dos "
+"contextos estándar listos para usar, :const:`BasicContext` y :const:"
+"`ExtendedContext`. El primero es particularmente útil para la depuración, ya "
+"que muchas de las trampas de señales están habilitadas por defecto:"
 
-#: ../../library/decimal.rst:299
+#: ../Doc/library/decimal.rst:299
 msgid ""
 "Contexts also have signal flags for monitoring exceptional conditions "
 "encountered during computations.  The flags remain set until explicitly "
 "cleared, so it is best to clear the flags before each set of monitored "
-"computations by using the :meth:`~Context.clear_flags` method. ::"
+"computations by using the :meth:`clear_flags` method. ::"
 msgstr ""
+"Los objetos Context también tienen flags de señalización para detectar "
+"condiciones excepcionales detectadas durante los cálculos. Estos flags "
+"permanecen habilitados hasta que se restablecen explícitamente. Por esta "
+"razón, suele ser buena idea restablecerlos mediante el método :meth:"
+"`clear_flags` antes de proceder con cada conjunto de cálculos "
+"monitorizados. ::"
 
-#: ../../library/decimal.rst:312
+#: ../Doc/library/decimal.rst:312
 msgid ""
-"The *flags* entry shows that the rational approximation to pi was rounded "
-"(digits beyond the context precision were thrown away) and that the result "
-"is inexact (some of the discarded digits were non-zero)."
+"The *flags* entry shows that the rational approximation to :const:`Pi` was "
+"rounded (digits beyond the context precision were thrown away) and that the "
+"result is inexact (some of the discarded digits were non-zero)."
 msgstr ""
+"La entrada *flags* muestra que la aproximación racional de :const:`Pi` fue "
+"redondeada (los dígitos más allá de la precisión especificada por el "
+"contexto se descartaron) y que el resultado es inexacto (algunos de los "
+"dígitos descartados no eran cero)."
 
-#: ../../library/decimal.rst:316
+#: ../Doc/library/decimal.rst:316
 msgid ""
-"Individual traps are set using the dictionary in the :attr:`~Context.traps` "
-"attribute of a context:"
+"Individual traps are set using the dictionary in the :attr:`traps` field of "
+"a context:"
 msgstr ""
+"Las trampas de señales se habilitan a través del diccionario expuesto por el "
+"atributo :attr:`traps` del objeto Context:"
 
-#: ../../library/decimal.rst:331
+#: ../Doc/library/decimal.rst:331
 msgid ""
 "Most programs adjust the current context only once, at the beginning of the "
 "program.  And, in many applications, data is converted to :class:`Decimal` "
@@ -313,21 +375,21 @@ msgid ""
 "the bulk of the program manipulates the data no differently than with other "
 "Python numeric types."
 msgstr ""
-"ほとんどのプログラムでは、開始時に一度だけ現在の演算コンテキストを修正しま"
-"す。また、多くのアプリケーションでは、データから :class:`Decimal` への変換は"
-"ループ内で一度だけキャストして行います。コンテキストを設定し、 :class:"
-"`Decimal` オブジェクトを生成できたら、ほとんどのプログラムは他の Python 数値"
-"型と全く変わらないかのように :class:`Decimal` を操作できます。"
+"La mayoría de los programas ajustan el contexto actual una sola vez, al "
+"comienzo del programa. Y, en muchas aplicaciones, los datos se convierten a :"
+"class:`Decimal` mediante una única conversión dentro de un bucle. Con el "
+"contexto establecido y los decimales creados, la mayor parte del programa "
+"manipula los datos de la misma forma que con otros tipos numéricos de Python."
 
-#: ../../library/decimal.rst:343
+#: ../Doc/library/decimal.rst:343
 msgid "Decimal objects"
-msgstr "Decimal オブジェクト"
+msgstr "Objetos Decimal"
 
-#: ../../library/decimal.rst:348
+#: ../Doc/library/decimal.rst:348
 msgid "Construct a new :class:`Decimal` object based from *value*."
-msgstr "*value* に基づいて新たな :class:`Decimal` オブジェクトを構築します。"
+msgstr "Construye un nuevo objeto :class:`Decimal` basado en *value*."
 
-#: ../../library/decimal.rst:350
+#: ../Doc/library/decimal.rst:350
 msgid ""
 "*value* can be an integer, string, tuple, :class:`float`, or another :class:"
 "`Decimal` object. If no *value* is given, returns ``Decimal('0')``.  If "
@@ -335,31 +397,37 @@ msgid ""
 "after leading and trailing whitespace characters, as well as underscores "
 "throughout, are removed::"
 msgstr ""
-"*value* は整数、文字列、タプル、 :class:`float` および他の :class:`Decimal` "
-"オブジェクトにできます。 *value* を指定しない場合、 ``Decimal('0')`` を返しま"
-"す。 *value* が文字列の場合、先頭と末尾の空白および全てのアンダースコアを取り"
-"除いた後には以下の 10進数文字列の文法に従わなければなりません::"
+"*value* puede ser un entero, una cadena de caracteres, una tupla, un :class:"
+"`float` u otro objeto :class:`Decimal`. Si no se proporciona *value*, "
+"retorna ``Decimal('0')``. Si *value* es una cadena, debe ajustarse a la "
+"sintaxis de cadena numérica decimal después de que los espacios en blanco "
+"iniciales y finales, así como los guiones bajos, sean eliminados::"
 
-#: ../../library/decimal.rst:366
+#: ../Doc/library/decimal.rst:366
 msgid ""
 "Other Unicode decimal digits are also permitted where ``digit`` appears "
 "above.  These include decimal digits from various other alphabets (for "
 "example, Arabic-Indic and Devanāgarī digits) along with the fullwidth digits "
 "``'\\uff10'`` through ``'\\uff19'``."
 msgstr ""
-"他の Unicode 数字も上の ``digit`` の場所に使うことができます。つまり各書記体"
-"系における(アラビア-インド系やデーヴァナーガリーなど)の数字や、全角数字０"
-"(``'\\uff10'``)から９(``'\\uff19'``)までなどです。"
+"También se permiten otros dígitos decimales Unicode en aquellos lugares en "
+"los que arriba aparece ``digit``. Estos incluyen dígitos decimales de otros "
+"alfabetos (por ejemplo, dígitos del alfabeto árabe-índico y devanāgarī) "
+"junto con los dígitos de ancho completo desde ``'\\uff10'`` a ``'\\uff19'``."
 
-#: ../../library/decimal.rst:371
+#: ../Doc/library/decimal.rst:371
 msgid ""
-"If *value* is a :class:`tuple`, it should have three components, a sign "
-"(``0`` for positive or ``1`` for negative), a :class:`tuple` of digits, and "
-"an integer exponent. For example, ``Decimal((0, (1, 4, 1, 4), -3))`` returns "
-"``Decimal('1.414')``."
+"If *value* is a :class:`tuple`, it should have three components, a sign (:"
+"const:`0` for positive or :const:`1` for negative), a :class:`tuple` of "
+"digits, and an integer exponent. For example, ``Decimal((0, (1, 4, 1, 4), "
+"-3))`` returns ``Decimal('1.414')``."
 msgstr ""
+"Si *value* es un objeto :class:`tuple`, debe tener tres componentes, un "
+"signo (:const:`0` para positivo o :const:`1` para negativo), un objeto :"
+"class:`tuple` con los dígitos y un exponente entero. Por ejemplo, "
+"``Decimal((0, (1, 4, 1, 4), -3))`` retorna ``Decimal('1.414')``."
 
-#: ../../library/decimal.rst:376
+#: ../Doc/library/decimal.rst:376
 msgid ""
 "If *value* is a :class:`float`, the binary floating point value is "
 "losslessly converted to its exact decimal equivalent.  This conversion can "
@@ -367,63 +435,65 @@ msgid ""
 "``Decimal(float('1.1'))`` converts to "
 "``Decimal('1.100000000000000088817841970012523233890533447265625')``."
 msgstr ""
-"*value* を :class:`float` にする場合、二進浮動小数点数値が損失なく正確に等価"
-"な Decimal に変換されます。この変換はしばしば 53 桁以上の精度を要求します。例"
-"えば、 ``Decimal(float('1.1'))`` は "
-"``Decimal('1.100000000000000088817841970012523233890533447265625')`` に変換さ"
-"れます。"
+"Si *value* es un :class:`float`, el valor binario de coma flotante se "
+"convierte sin pérdidas a su equivalente decimal exacto. Esta conversión a "
+"menudo puede requerir 53 o más dígitos de precisión. Por ejemplo, "
+"``Decimal(float('1.1'))`` se convierte en "
+"``Decimal('1.100000000000000088817841970012523233890533447265625')``."
 
-#: ../../library/decimal.rst:382
+#: ../Doc/library/decimal.rst:382
 msgid ""
 "The *context* precision does not affect how many digits are stored. That is "
 "determined exclusively by the number of digits in *value*. For example, "
 "``Decimal('3.00000')`` records all five zeros even if the context precision "
 "is only three."
 msgstr ""
-"*context* の精度 (precision) は、記憶される桁数には影響しません。桁数は "
-"*value* に指定した桁数だけから決定されます。例えば、演算コンテキストに指定さ"
-"れた精度が 3 桁しかなくても、``Decimal('3.00000')`` は 5 つのゼロを全て記憶し"
-"ます。"
+"La precisión de *context* no afecta a la cantidad de dígitos almacenados. "
+"Eso está determinado exclusivamente por el número de dígitos en *value*. Por "
+"ejemplo, ``Decimal('3.00000')`` registra los cinco ceros incluso si la "
+"precisión del contexto es solo tres."
 
-#: ../../library/decimal.rst:387
+#: ../Doc/library/decimal.rst:387
 msgid ""
 "The purpose of the *context* argument is determining what to do if *value* "
 "is a malformed string.  If the context traps :const:`InvalidOperation`, an "
 "exception is raised; otherwise, the constructor returns a new Decimal with "
-"the value of ``NaN``."
+"the value of :const:`NaN`."
 msgstr ""
+"El propósito del argumento *context* es determinar qué hacer si *value* es "
+"una cadena de caracteres mal formada. Si el contexto atrapa la señal :const:"
+"`InvalidOperation`, se genera una excepción; de lo contrario, el constructor "
+"retorna un nuevo decimal con el valor :const:`NaN`."
 
-#: ../../library/decimal.rst:392
+#: ../Doc/library/decimal.rst:392
 msgid "Once constructed, :class:`Decimal` objects are immutable."
-msgstr ""
-"一度生成すると、 :class:`Decimal` オブジェクトは変更不能 (immutable) になりま"
-"す。"
+msgstr "Una vez construidos, los objetos :class:`Decimal` son inmutables."
 
-#: ../../library/decimal.rst:394
+#: ../Doc/library/decimal.rst:394
 msgid ""
 "The argument to the constructor is now permitted to be a :class:`float` "
 "instance."
 msgstr ""
-"コンストラクタに対する引数に :class:`float` インスタンスも許されるようになり"
-"ました。"
+"Ahora se permite que el argumento del constructor sea una instancia :class:"
+"`float`."
 
-#: ../../library/decimal.rst:398
+#: ../Doc/library/decimal.rst:398
 msgid ""
 ":class:`float` arguments raise an exception if the :exc:`FloatOperation` "
 "trap is set. By default the trap is off."
 msgstr ""
-":exc:`FloatOperation` トラップがセットされていた場合 :class:`float` 引数は例"
-"外を送出します。デフォルトでトラップはオフです。"
+"Los argumentos :class:`float` ahora generan una excepción si se establece la "
+"trampa :exc:`FloatOperation`. Por defecto, la trampa está desactivada."
 
-#: ../../library/decimal.rst:402
+#: ../Doc/library/decimal.rst:402
 msgid ""
 "Underscores are allowed for grouping, as with integral and floating-point "
 "literals in code."
 msgstr ""
-"コード中の整数リテラルや浮動小数点リテラルと同様に、アンダースコアを用いて桁"
-"をグルーピングできます。"
+"Se permiten guiones bajos para la agrupación, como ocurre en el código con "
+"los literales enteros y de punto flotante."
 
-#: ../../library/decimal.rst:406
+#: ../Doc/library/decimal.rst:406
 msgid ""
 "Decimal floating point objects share many properties with the other built-in "
 "numeric types such as :class:`float` and :class:`int`.  All of the usual "
@@ -432,42 +502,46 @@ msgid ""
 "compared, sorted, and coerced to another type (such as :class:`float` or :"
 "class:`int`)."
 msgstr ""
-"十進浮動小数点オブジェクトは、 :class:`float` や :class:`int` のような他の組"
-"み込み型と多くの点で似ています。通常の数学演算や特殊メソッドを適用できます。"
-"また、 :class:`Decimal` オブジェクトはコピーでき、pickle 化でき、print で出力"
-"でき、辞書のキーにでき、集合の要素にでき、比較、保存、他の型 (:class:`float` "
-"や :class:`int`) への型強制を行えます。"
+"Los objetos de coma flotante decimal comparten muchas propiedades con los "
+"otros tipos numéricos integrados, como :class:`float` e :class:`int`. Se "
+"aplican todas las operaciones matemáticas habituales y los métodos "
+"especiales. Asimismo, los objetos decimales se pueden copiar, serializar con "
+"pickle, imprimir, usar como claves de un diccionario o como elementos de un "
+"conjunto, comparar, ordenar y convertir a otros tipos (como :class:`float` "
+"o :class:`int`)."
 
-#: ../../library/decimal.rst:413
+#: ../Doc/library/decimal.rst:413
 msgid ""
 "There are some small differences between arithmetic on Decimal objects and "
 "arithmetic on integers and floats.  When the remainder operator ``%`` is "
 "applied to Decimal objects, the sign of the result is the sign of the "
 "*dividend* rather than the sign of the divisor::"
 msgstr ""
-"十進オブジェクトの算術演算と整数や浮動小数点数の算術演算には少々違いがありま"
-"す。十進オブジェクトに対して剰余演算を適用すると、計算結果の符号は除数の符号"
-"ではなく *被除数* の符号と一致します::"
+"Hay algunas pequeñas diferencias entre la aritmética en objetos decimales y "
+"la aritmética en enteros y flotantes. Cuando el operador de resto ``%`` se "
+"aplica a objetos Decimal, el signo del resultado es el signo del *dividendo* "
+"en lugar del signo del divisor::"
 
-#: ../../library/decimal.rst:423
+#: ../Doc/library/decimal.rst:423
 msgid ""
 "The integer division operator ``//`` behaves analogously, returning the "
 "integer part of the true quotient (truncating towards zero) rather than its "
 "floor, so as to preserve the usual identity ``x == (x // y) * y + x % y``::"
 msgstr ""
-"整数除算演算子 ``//`` も同様に、実際の商の切り捨てではなく (0に近付くように丸"
-"めた) 整数部分を返します。そのため通常の恒等式 ``x == (x // y) * y + x % y`` "
-"が維持されます::"
+"El operador de división entera ``//`` se comporta de manera análoga, "
+"retornando la parte entera del cociente verdadero (truncando hacia cero) en "
+"lugar del resultado de aplicarle la función suelo. Esto se hace con la "
+"finalidad de preservar la identidad habitual ``x == (x // y) * y + x % y``::"
 
-#: ../../library/decimal.rst:432
+#: ../Doc/library/decimal.rst:432
 msgid ""
 "The ``%`` and ``//`` operators implement the ``remainder`` and ``divide-"
 "integer`` operations (respectively) as described in the specification."
 msgstr ""
-"演算子 ``%`` と演算子 ``//`` は (それぞれ) 仕様にあるような ``剰余`` 操作と "
-"``整数除算`` 操作を実装しています。"
+"Los operadores ``%`` y ``//`` implementan las operaciones ``remainder`` y "
+"``divide-integer`` (respectivamente) como se describe en la especificación."
 
-#: ../../library/decimal.rst:436
+#: ../Doc/library/decimal.rst:436
 msgid ""
 "Decimal objects cannot generally be combined with floats or instances of :"
 "class:`fractions.Fraction` in arithmetic operations: an attempt to add a :"
@@ -477,95 +551,100 @@ msgid ""
 "This avoids confusing results when doing equality comparisons between "
 "numbers of different types."
 msgstr ""
-"Decimal オブジェクトは一般に、算術演算で浮動小数点数や :class:`fractions."
-"Fraction` オブジェクトと組み合わせることができません。例えば、 :class:"
-"`Decimal` に :class:`float` を足そうとすると、 :exc:`TypeError` が送出されま"
-"す。ただし、Python の比較演算子を使って :class:`Decimal` インスタンス ``x`` "
-"と別の数 ``y`` を比較することができます。これにより、異なる型の数間の等価比較"
-"の際に、紛らわしい結果を避けます。"
+"Los objetos de la clase Decimal generalmente no se pueden combinar con "
+"flotantes o instancias de :class:`fractions.Fraction` en operaciones "
+"aritméticas: un intento de agregar un objeto :class:`Decimal` a un :class:"
+"`float`, por ejemplo, lanzará una excepción :exc:`TypeError`. Sin embargo, "
+"es posible usar los operadores de comparación de Python para comparar una "
+"instancia de :class:`Decimal` ``x`` con otro número ``y``. Esto evita "
+"resultados confusos al hacer comparaciones de igualdad entre números de "
+"diferentes tipos."
 
-#: ../../library/decimal.rst:444
+#: ../Doc/library/decimal.rst:444
 msgid ""
 "Mixed-type comparisons between :class:`Decimal` instances and other numeric "
 "types are now fully supported."
 msgstr ""
-":class:`Decimal` インスタンスと他の数値型が混在する比較が完全にサポートされる"
-"ようになりました。"
+"Las comparaciones de tipo mixto entre instancias de :class:`Decimal` y otros "
+"tipos numéricos ahora son totalmente compatibles."
 
-#: ../../library/decimal.rst:448
+#: ../Doc/library/decimal.rst:448
 msgid ""
 "In addition to the standard numeric properties, decimal floating point "
 "objects also have a number of specialized methods:"
 msgstr ""
-"こうした標準的な数値型の特性の他に、十進浮動小数点オブジェクトには様々な特殊"
-"メソッドがあります:"
+"Además de las propiedades numéricas estándar, los objetos de coma flotante "
+"decimal también tienen varios métodos especializados:"
 
-#: ../../library/decimal.rst:454
+#: ../Doc/library/decimal.rst:454
 msgid ""
 "Return the adjusted exponent after shifting out the coefficient's rightmost "
 "digits until only the lead digit remains: ``Decimal('321e+5').adjusted()`` "
 "returns seven.  Used for determining the position of the most significant "
 "digit with respect to the decimal point."
 msgstr ""
-"仮数の先頭の一桁だけが残るように右側の数字を追い出す桁シフトを行い、その結果"
-"の指数部を返します: ``Decimal('321e+5').adjusted()`` は 7 を返します。最上桁"
-"の小数点からの相対位置を調べる際に使います。"
+"Retorna el exponente ajustado después de desplazar los dígitos del extremo "
+"derecho del coeficiente hasta que solo quede el dígito principal: "
+"``Decimal('321e+5').adjusted()`` retorna siete. Se utiliza para determinar "
+"la posición del dígito más significativo con respecto al punto decimal."
 
-#: ../../library/decimal.rst:461
+#: ../Doc/library/decimal.rst:461
 msgid ""
 "Return a pair ``(n, d)`` of integers that represent the given :class:"
 "`Decimal` instance as a fraction, in lowest terms and with a positive "
 "denominator::"
 msgstr ""
-"与えられた :class:`Decimal` インスタンスを、既約分数で分母が正数の分数として"
-"表現した整数のペア ``(n, d)`` を返します。"
+"Retorna un par de enteros ``(n, d)`` que representan la instancia de :class:"
+"`Decimal` proporcionada como una fracción irreducible y con un denominador "
+"positivo::"
 
-#: ../../library/decimal.rst:468
+#: ../Doc/library/decimal.rst:468
 msgid ""
 "The conversion is exact.  Raise OverflowError on infinities and ValueError "
 "on NaNs."
 msgstr ""
-"変換は正確に行われます。無限大に対してはOverflowErrorを、NaNに対しては"
-"ValueError を送出します。"
+"La conversión es exacta. Lanza una excepción OverflowError si se "
+"proporcionan valores infinitos y ValueError con valores NaN."
 
-#: ../../library/decimal.rst:475
+#: ../Doc/library/decimal.rst:475
 msgid ""
 "Return a :term:`named tuple` representation of the number: "
 "``DecimalTuple(sign, digits, exponent)``."
 msgstr ""
-"数値を表現するための :term:`名前付きタプル <named tuple>`: "
-"``DecimalTuple(sign, digittuple, exponent)`` を返します。"
+"Retorna una representación en forma de :term:`named tuple` del número: "
+"``DecimalTuple(sign, digits, exponent)``."
 
-#: ../../library/decimal.rst:481
+#: ../Doc/library/decimal.rst:481
 msgid ""
 "Return the canonical encoding of the argument.  Currently, the encoding of "
 "a :class:`Decimal` instance is always canonical, so this operation returns "
 "its argument unchanged."
 msgstr ""
-"引数の標準的(canonical)エンコーディングを返します。現在のところ、 :class:"
-"`Decimal` インスタンスのエンコーディングは常に標準的なので、この操作は引数に"
-"手を加えずに返します。"
+"Retorna la codificación canónica del argumento. Actualmente, la codificación "
+"de una instancia de :class:`Decimal` es siempre canónica, por lo que esta "
+"operación retorna su argumento sin cambios."
 
-#: ../../library/decimal.rst:487
+#: ../Doc/library/decimal.rst:487
 msgid ""
 "Compare the values of two Decimal instances.  :meth:`compare` returns a "
 "Decimal instance, and if either operand is a NaN then the result is a NaN::"
 msgstr ""
-"二つの Decimal インスタンスの値を比較します。 :meth:`compare` は Decimal イン"
-"スタンスを返し、被演算子のどちらかが NaN ならば結果は NaN です::"
+"Compara los valores de dos instancias de Decimal. El método :meth:`compare` "
+"retorna una instancia de Decimal, y si alguno de los operandos es un NaN, el "
+"resultado es un NaN::"
 
-#: ../../library/decimal.rst:498
+#: ../Doc/library/decimal.rst:498
 msgid ""
 "This operation is identical to the :meth:`compare` method, except that all "
 "NaNs signal.  That is, if neither operand is a signaling NaN then any quiet "
 "NaN operand is treated as though it were a signaling NaN."
 msgstr ""
-"この演算は :meth:`compare` とほとんど同じですが、全ての NaN がシグナルを送る"
-"ところが異なります。すなわち、どちらの比較対象も発信 (signaling) NaN でないな"
-"らば無言 (quiet) NaN である比較対象があたかも発信 NaN であるかのように扱われ"
-"ます。"
+"Esta operación es idéntica al método :meth:`compare`, excepto que todos los "
+"valores NaN generan una señal. Es decir, si ninguno de los operandos es un "
+"NaN señalizador, cualquier operando de NaN silencioso se trata como si fuera "
+"un NaN señalizador."
 
-#: ../../library/decimal.rst:504
+#: ../Doc/library/decimal.rst:504
 msgid ""
 "Compare two operands using their abstract representation rather than their "
 "numerical value.  Similar to the :meth:`compare` method, but the result "
@@ -573,12 +652,13 @@ msgid ""
 "instances with the same numeric value but different representations compare "
 "unequal in this ordering:"
 msgstr ""
-"二つの対象を数値によらず抽象表現によって比較します。 :meth:`compare` に似てい"
-"ますが、結果は :class:`Decimal` に全順序を与えます。この順序づけによると、数"
-"値的に等しくても異なった表現を持つ二つの :class:`Decimal` インスタンスの比較"
-"は等しくなりません:"
+"Compara dos operandos utilizando su representación abstracta en lugar de su "
+"valor numérico. Similar al método :meth:`compare`, pero el resultado "
+"proporciona un ordenamiento total en las instancias de :class:`Decimal`. Dos "
+"instancias de :class:`Decimal` con el mismo valor numérico, pero diferentes "
+"representaciones, se comparan como desiguales usando este orden:"
 
-#: ../../library/decimal.rst:513
+#: ../Doc/library/decimal.rst:513
 msgid ""
 "Quiet and signaling NaNs are also included in the total ordering.  The "
 "result of this function is ``Decimal('0')`` if both operands have the same "
@@ -587,78 +667,90 @@ msgid ""
 "in the total order than the second operand.  See the specification for "
 "details of the total order."
 msgstr ""
-"無言 NaN と発信 NaN もこの全順序に位置付けられます。この関数の結果は、もし比"
-"較対象が同じ表現を持つならば ``Decimal('0')`` であり、一つめの比較対象が二つ"
-"めより下位にあれば ``Decimal('-1')``、上位にあれば ``Decimal('1')`` です。全"
-"順序の詳細については仕様を参照してください。"
+"Los NaN silenciosos y señalizadores también se incluyen en el ordenamiento "
+"total. El resultado de esta función es ``Decimal('0')`` si ambos operandos "
+"tienen la misma representación, ``Decimal('-1')`` si el primer operando es "
+"menor en el orden total que el segundo y ``Decimal('1')`` si el primer "
+"operando es mayor en el orden total que el segundo operando. Consulta las "
+"especificaciones para obtener detalles sobre el ordenamiento total."
 
-#: ../../library/decimal.rst:520 ../../library/decimal.rst:531
-#: ../../library/decimal.rst:559 ../../library/decimal.rst:835
+#: ../Doc/library/decimal.rst:520 ../Doc/library/decimal.rst:531
+#: ../Doc/library/decimal.rst:559 ../Doc/library/decimal.rst:835
 msgid ""
 "This operation is unaffected by context and is quiet: no flags are changed "
 "and no rounding is performed.  As an exception, the C version may raise "
 "InvalidOperation if the second operand cannot be converted exactly."
 msgstr ""
-"この演算はコンテキストに影響されず、静かです。すなわち、フラグは変更されず、"
-"丸めは行われません。例外として、2番目の比較対象の厳密な変換ができない場合、C "
-"バージョンのライブラリでは InvalidOperation 例外を送出するかもしれません。"
+"Esta operación no se ve afectada por el contexto y es silenciosa: no se "
+"cambian los flags y no se realiza ningún redondeo. Como excepción, la "
+"versión de C puede lanzar InvalidOperation si el segundo operando no se "
+"puede convertir exactamente."
 
-#: ../../library/decimal.rst:526
+#: ../Doc/library/decimal.rst:526
 msgid ""
 "Compare two operands using their abstract representation rather than their "
 "value as in :meth:`compare_total`, but ignoring the sign of each operand. "
 "``x.compare_total_mag(y)`` is equivalent to ``x.copy_abs().compare_total(y."
 "copy_abs())``."
 msgstr ""
-"二つの対象を :meth:`compare_total` のように数値によらず抽象表現によって比較し"
-"ますが、両者の符号を無視します。 ``x.compare_total_mag(y)`` は ``x."
-"copy_abs().compare_total(y.copy_abs())`` と等価です。"
+"Compara dos operandos usando su representación abstracta en lugar de su "
+"valor, como en :meth:`compare_total`, pero ignorando el signo de cada "
+"operando. ``x.compare_total_mag(y)`` es equivalente a ``x.copy_abs()."
+"compare_total(y.copy_abs())``."
 
-#: ../../library/decimal.rst:537
+#: ../Doc/library/decimal.rst:537
 msgid ""
 "Just returns self, this method is only to comply with the Decimal "
 "Specification."
 msgstr ""
-"self を返すだけです。このメソッドは十進演算仕様に適合するためだけのものです。"
+"Simplemente retorna self (el propio objeto al que pertenece el método "
+"invocado). Este método existe solo para cumplir con la Especificación "
+"decimal."
 
-#: ../../library/decimal.rst:542
+#: ../Doc/library/decimal.rst:542
 msgid ""
 "Return the absolute value of the argument.  This operation is unaffected by "
 "the context and is quiet: no flags are changed and no rounding is performed."
 msgstr ""
-"引数の絶対値を返します。この演算はコンテキストに影響されず、静かです。すなわ"
-"ち、フラグは変更されず、丸めは行われません。"
+"Retorna el valor absoluto del argumento. Esta operación no se ve afectada "
+"por el contexto y es silenciosa: no se modifican los flags y no se realiza "
+"ningún redondeo."
 
-#: ../../library/decimal.rst:548
+#: ../Doc/library/decimal.rst:548
 msgid ""
 "Return the negation of the argument.  This operation is unaffected by the "
 "context and is quiet: no flags are changed and no rounding is performed."
 msgstr ""
-"引数の符号を変えて返します。この演算はコンテキストに影響されず、静かです。す"
-"なわち、フラグは変更されず、丸めは行われません。"
+"Retorna la negación del argumento. Esta operación no se ve afectada por el "
+"contexto y es silenciosa: no se cambian los flags y no se realiza ningún "
+"redondeo."
 
-#: ../../library/decimal.rst:553
+#: ../Doc/library/decimal.rst:553
 msgid ""
 "Return a copy of the first operand with the sign set to be the same as the "
 "sign of the second operand.  For example:"
-msgstr "最初の演算対象のコピーに二つめと同じ符号を付けて返します。たとえば:"
+msgstr ""
+"Retorna una copia del primer operando pero con el signo establecido para que "
+"sea el mismo que el del segundo operando. Por ejemplo:"
 
-#: ../../library/decimal.rst:565
+#: ../Doc/library/decimal.rst:565
 msgid ""
 "Return the value of the (natural) exponential function ``e**x`` at the given "
 "number.  The result is correctly rounded using the :const:`ROUND_HALF_EVEN` "
 "rounding mode."
 msgstr ""
-"与えられた数での(自然)指数関数 ``e**x`` の値を返します。結果は :const:"
-"`ROUND_HALF_EVEN` 丸めモードで正しく丸められます。"
+"Retorna el valor de la función exponencial (natural) ``e**x`` en el número "
+"dado. El resultado es correctamente redondeado utilizando el modo de "
+"redondeo :const:`ROUND_HALF_EVEN`."
 
-#: ../../library/decimal.rst:576
+#: ../Doc/library/decimal.rst:576
 msgid ""
 "Alternative constructor that only accepts instances of :class:`float` or :"
 "class:`int`."
 msgstr ""
 
-#: ../../library/decimal.rst:579
+#: ../Doc/library/decimal.rst:579
+#, fuzzy
 msgid ""
 "Note ``Decimal.from_float(0.1)`` is not the same as ``Decimal('0.1')``. "
 "Since 0.1 is not exactly representable in binary floating point, the value "
@@ -666,311 +758,354 @@ msgid ""
 "``0x1.999999999999ap-4``.  That equivalent value in decimal is "
 "``0.1000000000000000055511151231257827021181583404541015625``."
 msgstr ""
+"Nota que `Decimal.from_float (0.1)` no es lo mismo que `Decimal('0.1')`. "
+"Dado que 0.1 no es exactamente representable en coma flotante binaria, el "
+"valor se almacena como el valor representable más cercano, que es "
+"`0x1.999999999999ap-4`. Ese valor equivalente en decimal es "
+"`0.1000000000000000055511151231257827021181583404541015625`."
 
-#: ../../library/decimal.rst:585
+#: ../Doc/library/decimal.rst:585
 msgid ""
 "From Python 3.2 onwards, a :class:`Decimal` instance can also be constructed "
 "directly from a :class:`float`."
 msgstr ""
-"Python 3.2 以降では、 :class:`Decimal` インスタンスは :class:`float` から直接"
-"構成できるようになりました。"
+"Desde Python 3.2 en adelante, una instancia de :class:`Decimal` también se "
+"puede construir directamente desde una instancia de :class:`float`."
 
-#: ../../library/decimal.rst:603
+#: ../Doc/library/decimal.rst:603
 msgid ""
 "Fused multiply-add.  Return self*other+third with no rounding of the "
 "intermediate product self*other."
 msgstr ""
-"融合積和(fused multiply-add)です。self*other+third を途中結果の積 self*other "
-"で丸めを行わずに計算して返します。"
+"Fusión de la multiplicación y la suma. Retorna self*other+third sin redondeo "
+"del producto intermedio self*other."
 
-#: ../../library/decimal.rst:611
+#: ../Doc/library/decimal.rst:611
 msgid ""
 "Return :const:`True` if the argument is canonical and :const:`False` "
 "otherwise.  Currently, a :class:`Decimal` instance is always canonical, so "
 "this operation always returns :const:`True`."
 msgstr ""
-"引数が標準的(canonical)ならば :const:`True` を返し、そうでなければ :const:"
-"`False` を返します。現在のところ、 :class:`Decimal` のインスタンスは常に標準"
-"的なのでこのメソッドの結果はいつでも :const:`True` です。"
+"Retorna :const:`True` si el argumento es canónico y :const:`False` en caso "
+"contrario. Actualmente, una instancia de :class:`Decimal` es siempre "
+"canónica, por lo que esta operación siempre retorna :const:`True`."
 
-#: ../../library/decimal.rst:617
+#: ../Doc/library/decimal.rst:617
 msgid ""
 "Return :const:`True` if the argument is a finite number, and :const:`False` "
 "if the argument is an infinity or a NaN."
 msgstr ""
-"引数が有限の数値ならば :const:`True` を、無限大か NaN ならば :const:`False` "
-"を返します。"
+"Retorna :const:`True` si el argumento es un número finito y :const:`False` "
+"si el argumento es un valor infinito o un NaN."
 
-#: ../../library/decimal.rst:622
+#: ../Doc/library/decimal.rst:622
 msgid ""
 "Return :const:`True` if the argument is either positive or negative infinity "
 "and :const:`False` otherwise."
 msgstr ""
-"引数が正または負の無限大ならば :const:`True` を、そうでなければ :const:"
-"`False` を返します。"
+"Retorna :const:`True` si el argumento es un valor infinito positivo o "
+"negativo y :const:`False` en caso contrario."
 
-#: ../../library/decimal.rst:627
+#: ../Doc/library/decimal.rst:627
 msgid ""
 "Return :const:`True` if the argument is a (quiet or signaling) NaN and :"
 "const:`False` otherwise."
 msgstr ""
-"引数が (無言か発信かは問わず) NaN であれば :const:`True` を、そうでなければ :"
-"const:`False` を返します。"
+"Retorna :const:`True` si el argumento es un NaN (silencioso o señalizador) "
+"y :const:`False` en caso contrario."
 
-#: ../../library/decimal.rst:632
+#: ../Doc/library/decimal.rst:632
 msgid ""
 "Return :const:`True` if the argument is a *normal* finite number.  Return :"
 "const:`False` if the argument is zero, subnormal, infinite or a NaN."
 msgstr ""
-"引数が *正規(normal)* の有限数値ならば :const:`True` を返します。引数がゼロ、"
-"非正規(subnormal)、無限大または NaN であれば :const:`False` を返します。"
+"Retorna :const:`True` si el argumento es un número finito *normal*. Retorna :"
+"const:`False` si el argumento es cero, subnormal, infinito o un NaN."
 
-#: ../../library/decimal.rst:637
+#: ../Doc/library/decimal.rst:637
 msgid ""
 "Return :const:`True` if the argument is a quiet NaN, and :const:`False` "
 "otherwise."
 msgstr ""
-"引数が無言 NaN であれば :const:`True` を、そうでなければ :const:`False` を返"
-"します。"
+"Retorna :const:`True` si el argumento es un NaN silencioso y :const:`False` "
+"en caso contrario."
 
-#: ../../library/decimal.rst:642
+#: ../Doc/library/decimal.rst:642
 msgid ""
 "Return :const:`True` if the argument has a negative sign and :const:`False` "
 "otherwise.  Note that zeros and NaNs can both carry signs."
 msgstr ""
-"引数に負の符号がついていれば :const:`True` を、そうでなければ :const:`False` "
-"を返します。注意すべきはゼロや NaN なども符号を持ち得ることです。"
+"Retorna :const:`True` si el argumento tiene signo negativo y :const:`False` "
+"en caso contrario. Ten en cuenta que tanto los ceros como los NaN pueden "
+"tener signo."
 
-#: ../../library/decimal.rst:647
+#: ../Doc/library/decimal.rst:647
 msgid ""
 "Return :const:`True` if the argument is a signaling NaN and :const:`False` "
 "otherwise."
 msgstr ""
-"引数が発信 NaN であれば :const:`True` を、そうでなければ :const:`False` を返"
-"します。"
+"Retorna :const:`True` si el argumento es un NaN señalizador y :const:`False` "
+"en caso contrario."
 
-#: ../../library/decimal.rst:652
+#: ../Doc/library/decimal.rst:652
 msgid ""
 "Return :const:`True` if the argument is subnormal, and :const:`False` "
 "otherwise."
 msgstr ""
-"引数が非正規数(subnormal)であれば :const:`True` を、そうでなければ :const:"
-"`False` を返します。"
+"Retorna :const:`True` si el argumento es subnormal y :const:`False` en caso "
+"contrario."
 
-#: ../../library/decimal.rst:657
+#: ../Doc/library/decimal.rst:657
 msgid ""
 "Return :const:`True` if the argument is a (positive or negative) zero and :"
 "const:`False` otherwise."
 msgstr ""
-"引数が(正または負の)ゼロであれば :const:`True` を、そうでなければ :const:"
-"`False` を返します。"
+"Retorna :const:`True` si el argumento es un cero (positivo o negativo) y :"
+"const:`False` en caso contrario."
 
-#: ../../library/decimal.rst:662
+#: ../Doc/library/decimal.rst:662
 msgid ""
 "Return the natural (base e) logarithm of the operand.  The result is "
 "correctly rounded using the :const:`ROUND_HALF_EVEN` rounding mode."
 msgstr ""
-"演算対象の自然対数(底 e の対数)を返します。結果は :const:`ROUND_HALF_EVEN` 丸"
-"めモードで正しく丸められます。"
+"Retorna el logaritmo natural (base e) del operando. El resultado es "
+"correctamente redondeado utilizando el modo de redondeo :const:"
+"`ROUND_HALF_EVEN`."
 
-#: ../../library/decimal.rst:667
+#: ../Doc/library/decimal.rst:667
 msgid ""
 "Return the base ten logarithm of the operand.  The result is correctly "
 "rounded using the :const:`ROUND_HALF_EVEN` rounding mode."
 msgstr ""
-"演算対象の底 10 の対数を返します。結果は :const:`ROUND_HALF_EVEN` 丸めモード"
-"で正しく丸められます。"
+"Retorna el logaritmo en base diez del operando. El resultado es "
+"correctamente redondeado utilizando el modo de redondeo :const:"
+"`ROUND_HALF_EVEN`."
 
-#: ../../library/decimal.rst:672
+#: ../Doc/library/decimal.rst:672
 msgid ""
 "For a nonzero number, return the adjusted exponent of its operand as a :"
 "class:`Decimal` instance.  If the operand is a zero then ``Decimal('-"
 "Infinity')`` is returned and the :const:`DivisionByZero` flag is raised.  If "
 "the operand is an infinity then ``Decimal('Infinity')`` is returned."
 msgstr ""
-"非零の数値については、 :class:`Decimal` インスタンスとして調整された指数を返"
-"します。演算対象がゼロだった場合、 ``Decimal('-Infinity')`` が返され :const:"
-"`DivisionByZero` フラグが送出されます。演算対象が無限大だった場合、 "
-"``Decimal('Infinity')`` が返されます。"
+"Para un número distinto de cero, retorna el exponente ajustado de su "
+"operando como una instancia de :class:`Decimal`. Si el operando es cero, se "
+"retorna ``Decimal('-Infinity')`` y se activa el flag :const:"
+"`DivisionByZero`. Si el operando es infinito, se retorna "
+"``Decimal('Infinity')``."
 
-#: ../../library/decimal.rst:680
+#: ../Doc/library/decimal.rst:680
 msgid ""
 ":meth:`logical_and` is a logical operation which takes two *logical "
 "operands* (see :ref:`logical_operands_label`).  The result is the digit-wise "
 "``and`` of the two operands."
 msgstr ""
-":meth:`logical_and` は二つの *論理引数* (:ref:`logical_operands_label` 参照)"
-"を取る論理演算です。結果は二つの引数の数字ごとの ``and`` です。"
+":meth:`logic_and` es una operación lógica que toma dos *operandos lógicos* "
+"(consultar :ref:`logical_operands_label`). El resultado es el ``and`` dígito "
+"por dígito de los dos operandos."
 
-#: ../../library/decimal.rst:686
+#: ../Doc/library/decimal.rst:686
 msgid ""
 ":meth:`logical_invert` is a logical operation.  The result is the digit-wise "
 "inversion of the operand."
 msgstr ""
-":meth:`logical_invert` は論理演算です。結果は引数の数字ごとの反転です。"
+":meth:`logic_invert` es una operación lógica. El resultado es la inversión "
+"dígito a dígito del operando."
 
-#: ../../library/decimal.rst:691
+#: ../Doc/library/decimal.rst:691
 msgid ""
 ":meth:`logical_or` is a logical operation which takes two *logical operands* "
 "(see :ref:`logical_operands_label`).  The result is the digit-wise ``or`` of "
 "the two operands."
 msgstr ""
-":meth:`logical_or` は二つの *論理引数* (:ref:`logical_operands_label` 参照)を"
-"取る論理演算です。結果は二つの引数の数字ごとの ``or`` です。"
+":meth:`logical_or` es una operación lógica que toma dos *operandos lógicos* "
+"(consultar :ref:`logical_operands_label`). El resultado es un ``or`` dígito "
+"a dígito de los dos operandos."
 
-#: ../../library/decimal.rst:697
+#: ../Doc/library/decimal.rst:697
 msgid ""
 ":meth:`logical_xor` is a logical operation which takes two *logical "
 "operands* (see :ref:`logical_operands_label`).  The result is the digit-wise "
 "exclusive or of the two operands."
 msgstr ""
-":meth:`logical_xor` は二つの *論理引数* (:ref:`logical_operands_label` 参照)"
-"を取る論理演算です。結果は二つの引数の数字ごとの排他的論理和です。"
+":meth:`logic_xor` es una operación lógica que toma dos *operandos lógicos* "
+"(consultar :ref:`logical_operands_label`). El resultado es la disyunción "
+"exclusiva (\"exclusive or\") dígito a dígito de ambos operandos."
 
-#: ../../library/decimal.rst:703
+#: ../Doc/library/decimal.rst:703
 msgid ""
 "Like ``max(self, other)`` except that the context rounding rule is applied "
-"before returning and that ``NaN`` values are either signaled or ignored "
+"before returning and that :const:`NaN` values are either signaled or ignored "
 "(depending on the context and whether they are signaling or quiet)."
 msgstr ""
+"Como ``max(self, other)``, excepto que la regla de redondeo del contexto se "
+"aplica antes de retornar y que los valores :const:`NaN` generan una señal o "
+"son ignorados (dependiendo del contexto y de si son señalizadores o "
+"silenciosos)."
 
-#: ../../library/decimal.rst:710
+#: ../Doc/library/decimal.rst:710
 msgid ""
 "Similar to the :meth:`.max` method, but the comparison is done using the "
 "absolute values of the operands."
-msgstr ":meth:`.max` メソッドに似ていますが、比較は絶対値で行われます。"
+msgstr ""
+"Similar al método :meth:`.max`, pero la comparación se realiza utilizando "
+"los valores absolutos de los operandos."
 
-#: ../../library/decimal.rst:715
+#: ../Doc/library/decimal.rst:715
 msgid ""
 "Like ``min(self, other)`` except that the context rounding rule is applied "
-"before returning and that ``NaN`` values are either signaled or ignored "
+"before returning and that :const:`NaN` values are either signaled or ignored "
 "(depending on the context and whether they are signaling or quiet)."
 msgstr ""
+"Como ``min(self, other)``, excepto que la regla de redondeo del contexto se "
+"aplica antes de retornar y que los valores :const:`NaN` generan una señal o "
+"se ignoran (según el contexto y si son señalizadores o no)."
 
-#: ../../library/decimal.rst:722
+#: ../Doc/library/decimal.rst:722
 msgid ""
 "Similar to the :meth:`.min` method, but the comparison is done using the "
 "absolute values of the operands."
-msgstr ":meth:`.min` メソッドに似ていますが、比較は絶対値で行われます。"
+msgstr ""
+"Similar al método :meth:`.min`, pero la comparación se realiza utilizando "
+"los valores absolutos de los operandos."
 
-#: ../../library/decimal.rst:727
+#: ../Doc/library/decimal.rst:727
 msgid ""
 "Return the largest number representable in the given context (or in the "
 "current thread's context if no context is given) that is smaller than the "
 "given operand."
 msgstr ""
-"与えられたコンテキスト(またはコンテキストが渡されなければ現スレッドのコンテキ"
-"スト)において表現可能な、操作対象より小さい最大の数を返します。"
+"Retorna el número más grande representable en el contexto proporcionado (o "
+"en el contexto del hilo actual si no se proporciona un contexto) que sea más "
+"pequeño que el operando proporcionado."
 
-#: ../../library/decimal.rst:733
+#: ../Doc/library/decimal.rst:733
 msgid ""
 "Return the smallest number representable in the given context (or in the "
 "current thread's context if no context is given) that is larger than the "
 "given operand."
 msgstr ""
-"与えられたコンテキスト(またはコンテキストが渡されなければ現スレッドのコンテキ"
-"スト)において表現可能な、操作対象より大きい最小の数を返します。"
+"Retorna el número más pequeño representable en el contexto proporcionado (o "
+"en el contexto del hilo actual si no se proporciona ningún contexto) que sea "
+"más grande que el operando proporcionado."
 
-#: ../../library/decimal.rst:739
+#: ../Doc/library/decimal.rst:739
 msgid ""
 "If the two operands are unequal, return the number closest to the first "
 "operand in the direction of the second operand.  If both operands are "
 "numerically equal, return a copy of the first operand with the sign set to "
 "be the same as the sign of the second operand."
 msgstr ""
-"二つの比較対象が等しくなければ、一つめの対象に最も近く二つめの対象へ近付く方"
-"向の数を返します。もし両者が数値的に等しければ、二つめの対象の符号を採った一"
-"つめの対象のコピーを返します。"
+"Si los dos operandos no son iguales, retorna el número más cercano al primer "
+"operando en la dirección del segundo operando. Si ambos operandos son "
+"numéricamente iguales, retorna una copia del primer operando con el signo "
+"establecido para que sea el mismo que el signo del segundo operando."
 
-#: ../../library/decimal.rst:746
+#: ../Doc/library/decimal.rst:746
 msgid ""
 "Normalize the number by stripping the rightmost trailing zeros and "
-"converting any result equal to ``Decimal('0')`` to ``Decimal('0e0')``. Used "
-"for producing canonical values for attributes of an equivalence class. For "
-"example, ``Decimal('32.100')`` and ``Decimal('0.321000e+2')`` both normalize "
-"to the equivalent value ``Decimal('32.1')``."
+"converting any result equal to :const:`Decimal('0')` to :const:"
+"`Decimal('0e0')`. Used for producing canonical values for attributes of an "
+"equivalence class. For example, ``Decimal('32.100')`` and "
+"``Decimal('0.321000e+2')`` both normalize to the equivalent value "
+"``Decimal('32.1')``."
 msgstr ""
+"Normaliza el número, eliminando los ceros finales situados más a la derecha "
+"y convirtiendo cualquier resultado igual a :const:`Decimal('0')` en :const:"
+"`Decimal('0e0')`. Se utiliza para producir valores canónicos para atributos "
+"de una clase de equivalencia. Por ejemplo, ``Decimal('32 .100')`` y "
+"``Decimal('0.321000e+2')`` se normalizan ambos al valor equivalente "
+"``Decimal('32 .1')``."
 
-#: ../../library/decimal.rst:755
+#: ../Doc/library/decimal.rst:755
 msgid ""
 "Return a string describing the *class* of the operand.  The returned value "
 "is one of the following ten strings."
 msgstr ""
-"操作対象の *クラス* を表す文字列を返します。返されるのは以下の10種類のいずれ"
-"かです。"
+"Retorna una cadena de caracteres que describe la *class* del operando. El "
+"valor retornado es una de las siguientes diez cadenas de caracteres."
 
-#: ../../library/decimal.rst:758
+#: ../Doc/library/decimal.rst:758
 msgid "``\"-Infinity\"``, indicating that the operand is negative infinity."
-msgstr "``\"-Infinity\"``, 負の無限大であることを示します。"
+msgstr "``\"-Infinity\"``, que indica que el operando es un infinito negativo."
 
-#: ../../library/decimal.rst:759
+#: ../Doc/library/decimal.rst:759
 msgid ""
 "``\"-Normal\"``, indicating that the operand is a negative normal number."
-msgstr "``\"-Normal\"``, 負の通常数であることを示します。"
+msgstr ""
+"``\"-Normal\"``, que indica que el operando es un número normal negativo."
 
-#: ../../library/decimal.rst:760
+#: ../Doc/library/decimal.rst:760
 msgid ""
 "``\"-Subnormal\"``, indicating that the operand is negative and subnormal."
-msgstr "``\"-Subnormal\"``, 負の非正規数であることを示します。"
+msgstr ""
+"``\"-Subnormal\"``, que indica que el operando es negativo y subnormal."
 
-#: ../../library/decimal.rst:761
+#: ../Doc/library/decimal.rst:761
 msgid "``\"-Zero\"``, indicating that the operand is a negative zero."
-msgstr "``\"-Zero\"``, 負のゼロであることを示します。"
+msgstr "``\"-Zero\"``, que indica que el operando es un cero negativo."
 
-#: ../../library/decimal.rst:762
+#: ../Doc/library/decimal.rst:762
 msgid "``\"+Zero\"``, indicating that the operand is a positive zero."
-msgstr "``\"+Zero\"``, 正のゼロであることを示します。"
+msgstr "``\"+Zero\"``, que indica que el operando es un cero positivo."
 
-#: ../../library/decimal.rst:763
+#: ../Doc/library/decimal.rst:763
 msgid ""
 "``\"+Subnormal\"``, indicating that the operand is positive and subnormal."
-msgstr "``\"+Subnormal\"``, 正の非正規数であることを示します。"
+msgstr "``\"+Subnormal\"``,que indica que el operando es positivo y subnormal."
 
-#: ../../library/decimal.rst:764
+#: ../Doc/library/decimal.rst:764
 msgid ""
 "``\"+Normal\"``, indicating that the operand is a positive normal number."
-msgstr "``\"+Normal\"``, 正の通常数であることを示します。"
+msgstr ""
+"``\"+Normal\"``, que indica que el operando es un número normal positivo."
 
-#: ../../library/decimal.rst:765
+#: ../Doc/library/decimal.rst:765
 msgid "``\"+Infinity\"``, indicating that the operand is positive infinity."
-msgstr "``\"+Infinity\"``, 正の無限大であることを示します。"
+msgstr "``\"+Infinity\"``, que indica que el operando es un infinito positivo."
 
-#: ../../library/decimal.rst:766
+#: ../Doc/library/decimal.rst:766
 msgid "``\"NaN\"``, indicating that the operand is a quiet NaN (Not a Number)."
-msgstr "``\"NaN\"``, 無言 (quiet) NaN (Not a Number) であることを示します。"
+msgstr ""
+"``\"NaN\"``, que indica que el operando es un NaN (no es un número) "
+"silencioso."
 
-#: ../../library/decimal.rst:767
+#: ../Doc/library/decimal.rst:767
 msgid "``\"sNaN\"``, indicating that the operand is a signaling NaN."
-msgstr "``\"sNaN\"``, 発信(signaling) NaN であることを示します。"
+msgstr ""
+"``\"sNaN\"``, que indica que el operando es un NaN (no es un número) "
+"señalizador."
 
-#: ../../library/decimal.rst:771
+#: ../Doc/library/decimal.rst:771
 msgid ""
 "Return a value equal to the first operand after rounding and having the "
 "exponent of the second operand."
 msgstr ""
-"二つ目の操作対象と同じ指数を持つように丸めを行った、一つめの操作対象と等しい"
-"値を返します。"
+"Retorna un valor igual al primer operando después de ser redondeado y de "
+"asignarle el exponente del segundo operando."
 
-#: ../../library/decimal.rst:777
+#: ../Doc/library/decimal.rst:777
 msgid ""
 "Unlike other operations, if the length of the coefficient after the quantize "
 "operation would be greater than precision, then an :const:`InvalidOperation` "
 "is signaled. This guarantees that, unless there is an error condition, the "
 "quantized exponent is always equal to that of the right-hand operand."
 msgstr ""
-"他の操作と違い、打ち切り(quantize)操作後の係数の長さが精度を越えた場合に"
-"は、 :const:`InvalidOperation` がシグナルされます。これによりエラー条件がない"
-"限り打ち切られた指数が常に右側の引数と同じになることが保証されます。"
+"A diferencia de otras operaciones, se genera una señal :const:"
+"`InvalidOperation` si la longitud del coeficiente después de la operación "
+"quantize es mayor que la precisión. Esto garantiza que, a menos que exista "
+"una condición de error, el exponente cuantificado sea siempre igual al del "
+"operando de la derecha."
 
-#: ../../library/decimal.rst:783
+#: ../Doc/library/decimal.rst:783
 msgid ""
 "Also unlike other operations, quantize never signals Underflow, even if the "
 "result is subnormal and inexact."
 msgstr ""
-"同様に、他の操作と違い、quantize は Underflow を、たとえ結果が非正規になった"
-"り不正確になったとしても、シグナルしません。"
+"Además, a diferencia de otras operaciones, quantize nunca genera una señal "
+"Underflow, incluso si el resultado es subnormal e inexacto."
 
-#: ../../library/decimal.rst:786
+#: ../Doc/library/decimal.rst:786
 msgid ""
 "If the exponent of the second operand is larger than that of the first then "
 "rounding may be necessary.  In this case, the rounding mode is determined by "
@@ -978,27 +1113,31 @@ msgid ""
 "if neither argument is given the rounding mode of the current thread's "
 "context is used."
 msgstr ""
-"二つ目の演算対象の指数が一つ目のそれよりも大きければ丸めが必要かもしれませ"
-"ん。この場合、丸めモードは以下のように決められます。``rounding`` 引数が与えら"
-"れていればそれが使われます。そうでなければ ``context`` 引数で決まります。どち"
-"らの引数も渡されなければ現在のスレッドのコンテキストの丸めモードが使われま"
-"す。"
+"Si el exponente del segundo operando es mayor que el del primero, puede ser "
+"necesario redondear. En este caso, el modo de redondeo está determinado por "
+"el argumento ``rounding``, si se proporciona, o por el argumento ``context`` "
+"en caso contrario. Si no se proporciona ninguno de estos dos argumentos, se "
+"utiliza el modo de redondeo establecido en el contexto del hilo actual."
 
-#: ../../library/decimal.rst:792
+#: ../Doc/library/decimal.rst:792
 msgid ""
 "An error is returned whenever the resulting exponent is greater than :attr:"
-"`~Context.Emax` or less than :meth:`~Context.Etiny`."
+"`Emax` or less than :attr:`Etiny`."
 msgstr ""
+"Se retorna un error siempre que el exponente resultante sea mayor que :attr:"
+"`Emax` o menor que :attr:`Etiny`."
 
-#: ../../library/decimal.rst:797
+#: ../Doc/library/decimal.rst:797
 msgid ""
 "Return ``Decimal(10)``, the radix (base) in which the :class:`Decimal` class "
 "does all its arithmetic.  Included for compatibility with the specification."
 msgstr ""
-"``Decimal(10)`` つまり :class:`Decimal` クラスがその全ての算術を実行する基数"
-"を返します。仕様との互換性のために取り入れられています。"
+"Retorna ``Decimal(10)``, que es la raíz (base) en la que la clase :class:"
+"`Decimal` hace toda su aritmética. Este método está incluido solo por "
+"compatibilidad con la especificación."
 
-#: ../../library/decimal.rst:803
+#: ../Doc/library/decimal.rst:803
+#, python-format
 msgid ""
 "Return the remainder from dividing *self* by *other*.  This differs from "
 "``self % other`` in that the sign of the remainder is chosen so as to "
@@ -1006,17 +1145,18 @@ msgid ""
 "* other`` where ``n`` is the integer nearest to the exact value of ``self / "
 "other``, and if two integers are equally near then the even one is chosen."
 msgstr ""
-"*self* を *other* で割った剰余を返します。これは ``self % other`` とは違っ"
-"て、剰余の絶対値を小さくするように符号が選ばれます。より詳しく言うと、``n`` "
-"を ``self / other`` の正確な値に最も近い整数としたときの ``self - n * "
-"other`` が返り値になります。最も近い整数が2つある場合には偶数のものが選ばれま"
-"す。"
+"Retorna el resto de dividir *self* entre *other*. Esto difiere de la "
+"operación ``self%other``, en la que el signo del resto se elige para "
+"minimizar su valor absoluto. Más precisamente, el valor de retorno es ``self "
+"- n * other``, donde ``n`` es el número entero más cercano al valor exacto "
+"de ``self / other``. Si dos enteros están igualmente cerca, entonces el "
+"valor par es el elegido."
 
-#: ../../library/decimal.rst:810
+#: ../Doc/library/decimal.rst:810
 msgid "If the result is zero then its sign will be the sign of *self*."
-msgstr "結果が0になる場合の符号は *self* の符号と同じになります。"
+msgstr "Si el resultado es cero, entonces su signo será el signo de *self*."
 
-#: ../../library/decimal.rst:821
+#: ../Doc/library/decimal.rst:821
 msgid ""
 "Return the result of rotating the digits of the first operand by an amount "
 "specified by the second operand.  The second operand must be an integer in "
@@ -1027,30 +1167,35 @@ msgid ""
 "length precision if necessary.  The sign and exponent of the first operand "
 "are unchanged."
 msgstr ""
-"一つ目の演算対象の数字を二つ目で指定された量だけ巡回(rotate)した結果を返しま"
-"す。二つめの演算対象は -precision から precision までの範囲の整数でなければな"
-"りません。この二つ目の演算対象の絶対値を何桁ずらすかを決めます。そしてもし正"
-"の数ならば巡回の方向は左に、そうでなければ右になります。一つ目の演算対象の仮"
-"数部は必要ならば精度いっぱいまでゼロで埋められます。符号と指数は変えられませ"
-"ん。"
+"Retorna el resultado de rotar los dígitos del primer operando en una "
+"cantidad especificada por el segundo operando. El segundo operando debe ser "
+"un número entero en el rango comprendido desde -precisión hasta precisión. "
+"El valor absoluto del segundo operando da el número de lugares a rotar. Si "
+"el segundo operando es positivo, la rotación es hacia la izquierda; de lo "
+"contrario, la rotación es hacia la derecha. El coeficiente del primer "
+"operando se rellena con ceros a la izquierda para satisfacer la precisión de "
+"longitud si es necesario. El signo y el exponente del primer operando no se "
+"modifican."
 
-#: ../../library/decimal.rst:832
+#: ../Doc/library/decimal.rst:832
 msgid ""
-"Test whether self and other have the same exponent or whether both are "
-"``NaN``."
+"Test whether self and other have the same exponent or whether both are :"
+"const:`NaN`."
 msgstr ""
+"Comprueba si self y other tienen el mismo exponente o si ambos son :const:"
+"`NaN`."
 
-#: ../../library/decimal.rst:841
+#: ../Doc/library/decimal.rst:841
 msgid ""
 "Return the first operand with exponent adjusted by the second. Equivalently, "
 "return the first operand multiplied by ``10**other``.  The second operand "
 "must be an integer."
 msgstr ""
-"二つ目の演算対象で調整された指数の一つ目の演算対象を返します。同じことです"
-"が、一つめの演算対象を ``10**other`` 倍したものを返します。二つ目の演算対象は"
-"整数でなければなりません。"
+"Retorna el primer operando con su exponente ajustado por el segundo. De "
+"manera equivalente, retorna el primer operando multiplicado por "
+"``10**other``. El segundo operando debe ser un número entero."
 
-#: ../../library/decimal.rst:847
+#: ../Doc/library/decimal.rst:847
 msgid ""
 "Return the result of shifting the digits of the first operand by an amount "
 "specified by the second operand.  The second operand must be an integer in "
@@ -1060,121 +1205,132 @@ msgid ""
 "right.  Digits shifted into the coefficient are zeros.  The sign and "
 "exponent of the first operand are unchanged."
 msgstr ""
-"一つ目の演算対象の数字を二つ目で指定された量だけシフトした結果を返します。二"
-"つ目の演算対象は -precision から precision までの範囲の整数でなければなりませ"
-"ん。この二つ目の演算対象の絶対値が何桁ずらすかを決めます。そしてもし正の数な"
-"らばシフトの方向は左に、そうでなければ右になります。一つ目の演算対象の係数は"
-"必要ならば精度いっぱいまでゼロで埋められます。符号と指数は変えられません。"
+"Retorna el resultado de cambiar los dígitos del primer operando en una "
+"cantidad especificada por el segundo operando. El segundo operando debe ser "
+"un número entero en el rango comprendido desde -precisión hasta precisión. "
+"El valor absoluto del segundo operando da el número de lugares a desplazar. "
+"Si el segundo operando es positivo, el desplazamiento es hacia la izquierda; "
+"de lo contrario, el desplazamiento es hacia la derecha. Los dígitos "
+"desplazados en el coeficiente son ceros. El signo y el exponente del primer "
+"operando no se modifican."
 
-#: ../../library/decimal.rst:857
+#: ../Doc/library/decimal.rst:857
 msgid "Return the square root of the argument to full precision."
-msgstr "引数の平方根を最大精度で求めます。"
+msgstr "Retorna la raíz cuadrada del argumento con precisión total."
 
-#: ../../library/decimal.rst:862 ../../library/decimal.rst:1457
+#: ../Doc/library/decimal.rst:862 ../Doc/library/decimal.rst:1457
 msgid ""
 "Convert to a string, using engineering notation if an exponent is needed."
-msgstr "文字列に変換します。指数が必要なら工学表記が使われます。"
+msgstr ""
+"Convierte a una cadena de caracteres, usando notación de ingeniería si se "
+"necesita un exponente."
 
-#: ../../library/decimal.rst:864 ../../library/decimal.rst:1459
+#: ../Doc/library/decimal.rst:864 ../Doc/library/decimal.rst:1459
 msgid ""
 "Engineering notation has an exponent which is a multiple of 3.  This can "
 "leave up to 3 digits to the left of the decimal place and may require the "
 "addition of either one or two trailing zeros."
 msgstr ""
-"工学表記法では指数は 3 の倍数になります。これにより、基数の小数部には最大で "
-"3 桁までの数字が残されるとともに、末尾に 1 つまたは 2 つの 0 の付加が必要とさ"
-"れるかもしれません。"
+"La notación de ingeniería tiene como exponente un múltiplo de 3. Esto puede "
+"dejar hasta 3 dígitos a la izquierda del punto decimal y puede requerir la "
+"adición de uno o dos ceros finales."
 
-#: ../../library/decimal.rst:868
+#: ../Doc/library/decimal.rst:868
 msgid ""
 "For example, this converts ``Decimal('123E+1')`` to ``Decimal('1.23E+3')``."
 msgstr ""
-"たとえば、``Decimal('123E+1')`` は ``Decimal('1.23E+3')`` に変換されます。"
+"Por ejemplo, este método convierte ``Decimal('123E+1')`` en "
+"``Decimal('1.23E+3')``."
 
-#: ../../library/decimal.rst:872
+#: ../Doc/library/decimal.rst:872
 msgid ""
 "Identical to the :meth:`to_integral_value` method.  The ``to_integral`` name "
 "has been kept for compatibility with older versions."
 msgstr ""
-":meth:`to_integral_value` メソッドと同じです。``to_integral`` の名前は古い"
-"バージョンとの互換性のために残されています。"
+"Idéntico al método :meth:`to_integral_value`. El nombre ``to_integral`` se "
+"ha mantenido por compatibilidad con versiones anteriores."
 
-#: ../../library/decimal.rst:877
+#: ../Doc/library/decimal.rst:877
 msgid ""
 "Round to the nearest integer, signaling :const:`Inexact` or :const:`Rounded` "
 "as appropriate if rounding occurs.  The rounding mode is determined by the "
 "``rounding`` parameter if given, else by the given ``context``.  If neither "
 "parameter is given then the rounding mode of the current context is used."
 msgstr ""
-"最近傍の整数に値を丸め、丸めが起こった場合には :const:`Inexact` または :"
-"const:`Rounded` のシグナルを適切に出します。丸めモードは以下のように決められ"
-"ます。 ``rounding`` 引数が与えられていればそれが使われます。そうでなければ "
-"``context`` 引数で決まります。どちらの引数も渡されなければ現在のスレッドのコ"
-"ンテキストの丸めモードが使われます。"
+"Redondea al entero más cercano, generando la señal :const:`Inexact` o :const:"
+"`Rounded`, según corresponda, si se produce un redondeo. El modo de redondeo "
+"está determinado por el parámetro ``rounding`` si es proporcionado, o por el "
+"establecido en el ``context`` proporcionado en caso contrario. Si no se "
+"proporciona ninguno de estos dos parámetros, se utiliza el modo de redondeo "
+"establecido en el contexto actual."
 
-#: ../../library/decimal.rst:885
+#: ../Doc/library/decimal.rst:885
 msgid ""
 "Round to the nearest integer without signaling :const:`Inexact` or :const:"
 "`Rounded`.  If given, applies *rounding*; otherwise, uses the rounding "
 "method in either the supplied *context* or the current context."
 msgstr ""
-":const:`Inexact` や :const:`Rounded` といったシグナルを出さずに最近傍の整数に"
-"値を丸めます。 *rounding* が指定されていれば適用されます; それ以外の場合、値"
-"丸めの方法は *context* の設定か現在のコンテキストの設定になります。"
+"Redondea al entero más cercano sin generar la señal :const:`Inexact` o :"
+"const:`Rounded`. Si se proporciona, se aplica el método de redondeo "
+"especificado por *rounding*; en caso contrario, se utiliza el método de "
+"redondeo del *context* proporcionado o el del contexto actual."
 
-#: ../../library/decimal.rst:893
+#: ../Doc/library/decimal.rst:893
 msgid "Logical operands"
-msgstr "論理引数"
+msgstr "Operandos lógicos"
 
-#: ../../library/decimal.rst:895
+#: ../Doc/library/decimal.rst:895
 msgid ""
-"The :meth:`~Decimal.logical_and`, :meth:`~Decimal.logical_invert`, :meth:"
-"`~Decimal.logical_or`, and :meth:`~Decimal.logical_xor` methods expect their "
-"arguments to be *logical operands*.  A *logical operand* is a :class:"
-"`Decimal` instance whose exponent and sign are both zero, and whose digits "
-"are all either ``0`` or ``1``."
+"The :meth:`logical_and`, :meth:`logical_invert`, :meth:`logical_or`, and :"
+"meth:`logical_xor` methods expect their arguments to be *logical operands*.  "
+"A *logical operand* is a :class:`Decimal` instance whose exponent and sign "
+"are both zero, and whose digits are all either :const:`0` or :const:`1`."
 msgstr ""
+"Los métodos :meth:`logical_and`, :meth:`logical_invert`, :meth:`logical_or` "
+"y :meth:`logical_xor` esperan que sus argumentos sean *operandos lógicos*. "
+"Un *operando lógico* es una instancia de :class:`Decimal` cuyo exponente y "
+"signo son ambos cero, y cuyos dígitos son todos :const:`0` o :const:`1`."
 
-#: ../../library/decimal.rst:907
+#: ../Doc/library/decimal.rst:907
 msgid "Context objects"
-msgstr "Context オブジェクト"
+msgstr "Objetos context"
 
-#: ../../library/decimal.rst:909
+#: ../Doc/library/decimal.rst:909
 msgid ""
 "Contexts are environments for arithmetic operations.  They govern precision, "
 "set rules for rounding, determine which signals are treated as exceptions, "
 "and limit the range for exponents."
 msgstr ""
-"コンテキスト (context) とは、算術演算における環境設定です。コンテキストは計算"
-"精度を決定し、値丸めの方法を設定し、シグナルのどれが例外になるかを決め、指数"
-"の範囲を制限しています。"
+"Los contextos son entornos para operaciones aritméticas. Gobiernan la "
+"precisión, establecen reglas para el redondeo, determinan qué señales se "
+"tratan como excepciones y limitan el rango para los exponentes."
 
-#: ../../library/decimal.rst:913
+#: ../Doc/library/decimal.rst:913
 msgid ""
 "Each thread has its own current context which is accessed or changed using "
 "the :func:`getcontext` and :func:`setcontext` functions:"
 msgstr ""
-"多重スレッドで処理を行う場合には各スレッドごとに現在のコンテキストがあり、 :"
-"func:`getcontext` や :func:`setcontext` といった関数でアクセスしたり設定変更"
-"できます:"
+"Cada hilo tiene su propio contexto actual, al que se accede o se reemplaza "
+"usando las funciones :func:`getcontext` y :func:`setcontext` respectivamente:"
 
-#: ../../library/decimal.rst:919
+#: ../Doc/library/decimal.rst:919
 msgid "Return the current context for the active thread."
-msgstr "アクティブなスレッドの現在のコンテキストを返します。"
+msgstr "Retorna el contexto actual del hilo activo."
 
-#: ../../library/decimal.rst:924
+#: ../Doc/library/decimal.rst:924
 msgid "Set the current context for the active thread to *c*."
-msgstr "アクティブなスレッドのコンテキストを *c* に設定します。"
+msgstr "Establece *c* como contexto actual para el hilo activo."
 
-#: ../../library/decimal.rst:926
+#: ../Doc/library/decimal.rst:926
 msgid ""
 "You can also use the :keyword:`with` statement and the :func:`localcontext` "
 "function to temporarily change the active context."
 msgstr ""
-":keyword:`with` 文と :func:`localcontext` 関数を使って実行するコンテキストを"
-"一時的に変更することもできます。"
+"También puedes usar la declaración :keyword:`with` y la función :func:"
+"`localcontext` para cambiar temporalmente el contexto activo."
 
-#: ../../library/decimal.rst:931
+#: ../Doc/library/decimal.rst:931
+#, fuzzy
 msgid ""
 "Return a context manager that will set the current context for the active "
 "thread to a copy of *ctx* on entry to the with-statement and restore the "
@@ -1182,43 +1338,53 @@ msgid ""
 "specified, a copy of the current context is used.  The *kwargs* argument is "
 "used to set the attributes of the new context."
 msgstr ""
+"Retorna un gestor de contexto que establecerá el contexto actual para el "
+"hilo activo en una copia de *ctx* al ingresar en la declaración with y "
+"restaurará el contexto anterior al salir de la misma. Si no se especifica "
+"ningún contexto, se utiliza una copia del contexto actual."
 
-#: ../../library/decimal.rst:937
+#: ../Doc/library/decimal.rst:937
 msgid ""
 "For example, the following code sets the current decimal precision to 42 "
 "places, performs a calculation, and then automatically restores the previous "
 "context::"
 msgstr ""
-"たとえば、以下のコードでは精度を42桁に設定し、計算を実行し、そして元のコンテ"
-"キストに復帰します::"
+"Por ejemplo, el siguiente código establece la precisión decimal actual en 42 "
+"lugares, realiza un cálculo y luego restaura automáticamente el contexto "
+"anterior::"
 
-#: ../../library/decimal.rst:947
+#: ../Doc/library/decimal.rst:947
 msgid "Using keyword arguments, the code would be the following::"
-msgstr ""
+msgstr "Usando argumentos de palabra clave, el código sería el siguiente::"
 
-#: ../../library/decimal.rst:955
+#: ../Doc/library/decimal.rst:955
 msgid ""
 "Raises :exc:`TypeError` if *kwargs* supplies an attribute that :class:"
 "`Context` doesn't support.  Raises either :exc:`TypeError` or :exc:"
 "`ValueError` if *kwargs* supplies an invalid value for an attribute."
 msgstr ""
+"Lanza :exc:`TypeError` si *kwargs* proporciona un atributo que :class:"
+"`Context` no soporta. Lanza también :exc:`TypeError` o :exc:`ValueError` si "
+"*kwargs* proporciona un valor no válido para un atributo."
 
-#: ../../library/decimal.rst:959
+#: ../Doc/library/decimal.rst:959
 msgid ""
 ":meth:`localcontext` now supports setting context attributes through the use "
 "of keyword arguments."
 msgstr ""
+":meth:`localcontext` ahora admite la configuración de atributos de contexto "
+"mediante el uso de argumentos de palabra clave."
 
-#: ../../library/decimal.rst:962
+#: ../Doc/library/decimal.rst:962
 msgid ""
 "New contexts can also be created using the :class:`Context` constructor "
 "described below. In addition, the module provides three pre-made contexts:"
 msgstr ""
-"新たなコンテキストは、以下で説明する :class:`Context` コンストラクタを使って"
-"生成できます。その他にも、 :mod:`decimal` モジュールでは作成済みのコンテキス"
-"トを提供しています:"
+"También se pueden crear nuevos contextos utilizando el constructor de la "
+"clase :class:`Context` que se describe a continuación. Además, el módulo "
+"proporciona tres contextos prediseñados:"
 
-#: ../../library/decimal.rst:968
+#: ../Doc/library/decimal.rst:968
 msgid ""
 "This is a standard context defined by the General Decimal Arithmetic "
 "Specification.  Precision is set to nine.  Rounding is set to :const:"
@@ -1226,191 +1392,239 @@ msgid ""
 "exceptions) except :const:`Inexact`, :const:`Rounded`, and :const:"
 "`Subnormal`."
 msgstr ""
-"汎用十進演算仕様で定義されている標準コンテキストの一つです。精度は 9 桁に設定"
-"されています。丸め規則は :const:`ROUND_HALF_UP` です。すべての演算結果フラグ"
-"はクリアされています。 :const:`Inexact`, :const:`Rounded`, :const:"
-"`Subnormal` を除く全ての演算エラートラップが有効 (例外として扱う) になってい"
-"ます。"
+"Este es un contexto estándar definido por la Especificación general de la "
+"aritmética decimal. La precisión se establece en nueve. El redondeo se "
+"establece en :const:`ROUND_HALF_UP`. Se restablecen todos los flags. Todas "
+"las trampas están habilitadas (las señales son tratadas como excepciones) "
+"excepto :const:`Inexact`, :const:`Rounded` y :const:`Subnormal`."
 
-#: ../../library/decimal.rst:974
+#: ../Doc/library/decimal.rst:974
 msgid ""
 "Because many of the traps are enabled, this context is useful for debugging."
 msgstr ""
-"多くのトラップが有効になっているので、デバッグの際に便利なコンテキストです。"
+"Debido a que la mayoría de las trampas están habilitadas, este contexto es "
+"especialmente útil para la depuración."
 
-#: ../../library/decimal.rst:979
+#: ../Doc/library/decimal.rst:979
 msgid ""
 "This is a standard context defined by the General Decimal Arithmetic "
 "Specification.  Precision is set to nine.  Rounding is set to :const:"
 "`ROUND_HALF_EVEN`.  All flags are cleared.  No traps are enabled (so that "
 "exceptions are not raised during computations)."
 msgstr ""
-"汎用十進演算仕様で定義されている標準コンテキストの一つです。精度は 9 桁に設定"
-"されています。丸め規則は :const:`ROUND_HALF_EVEN` です。すべての演算結果フラ"
-"グはクリアされています。トラップは全て無効(演算中に一切例外を送出しない) に"
-"なっています。"
+"Este es un contexto estándar definido por la Especificación general de la "
+"aritmética decimal. La precisión se establece en nueve. El redondeo se "
+"establece en :const:`ROUND_HALF_EVEN`. Se restablecen todos los flags. No se "
+"habilitan trampas (para que no se generen excepciones durante los cálculos)."
 
-#: ../../library/decimal.rst:984
+#: ../Doc/library/decimal.rst:984
 msgid ""
 "Because the traps are disabled, this context is useful for applications that "
-"prefer to have result value of ``NaN`` or ``Infinity`` instead of raising "
-"exceptions.  This allows an application to complete a run in the presence of "
-"conditions that would otherwise halt the program."
+"prefer to have result value of :const:`NaN` or :const:`Infinity` instead of "
+"raising exceptions.  This allows an application to complete a run in the "
+"presence of conditions that would otherwise halt the program."
 msgstr ""
+"Debido a que las trampas están deshabilitadas, este contexto es útil para "
+"aplicaciones que prefieren tener un valor :const:`NaN` o :const:`Infinity` "
+"como resultado en lugar de lanzar excepciones. Esto permite que una "
+"aplicación complete una ejecución en presencia de condiciones que, de otra "
+"manera, detendrían el programa."
 
-#: ../../library/decimal.rst:992
+#: ../Doc/library/decimal.rst:992
 msgid ""
 "This context is used by the :class:`Context` constructor as a prototype for "
 "new contexts.  Changing a field (such a precision) has the effect of "
 "changing the default for new contexts created by the :class:`Context` "
 "constructor."
 msgstr ""
-":class:`Context` コンストラクタが新たなコンテキストを作成するさいに雛形にする"
-"コンテキストです。このコンテキストのフィールド (精度の設定など) を変更する"
-"と、 :class:`Context` コンストラクタが生成する新たなコンテキストに影響を及ぼ"
-"します。"
+"Este contexto es utilizado por el constructor de la clase :class:`Context` "
+"como un prototipo para nuevos contextos. Cambiar un campo (como la "
+"precisión) tiene el efecto de cambiar el valor predeterminado para los "
+"nuevos contextos creados por el constructor de :class:`Context`."
 
-#: ../../library/decimal.rst:996
+#: ../Doc/library/decimal.rst:996
 msgid ""
 "This context is most useful in multi-threaded environments.  Changing one of "
 "the fields before threads are started has the effect of setting system-wide "
 "defaults.  Changing the fields after threads have started is not recommended "
 "as it would require thread synchronization to prevent race conditions."
 msgstr ""
-"このコンテキストは、主に多重スレッド環境で便利です。スレッドを開始する前に何"
-"らかのフィールドを変更しておくと、システム全体のデフォルト設定に効果を及ぼす"
-"ことができます。スレッドを開始した後にフィールドを変更すると、競合条件を抑制"
-"するためにスレッドを同期化しなければならないので、推奨しません。"
+"Este contexto es más útil en entornos con múltiples hilos. Cambiar uno de "
+"los campos antes de que se inicien los hilos tiene el efecto de establecer "
+"valores predeterminados en todo el sistema. No se recomienda cambiar los "
+"campos después de que se hayan iniciado los hilos, ya que requeriría el uso "
+"de mecanismos de sincronización para evitar condiciones de carrera entre los "
+"hilos."
 
-#: ../../library/decimal.rst:1001
+#: ../Doc/library/decimal.rst:1001
 msgid ""
 "In single threaded environments, it is preferable to not use this context at "
 "all.  Instead, simply create contexts explicitly as described below."
 msgstr ""
-"単一スレッドの環境では、このコンテキストを使わないよう薦めます。下で述べるよ"
-"うに明示的にコンテキストを作成してください。"
+"En entornos de un solo hilo, es preferible no utilizar este contexto en "
+"absoluto. En su lugar, simplemente crea contextos explícitamente como se "
+"describe a continuación."
 
-#: ../../library/decimal.rst:1004
+#: ../Doc/library/decimal.rst:1004
 msgid ""
-"The default values are :attr:`Context.prec`\\ =\\ ``28``, :attr:`Context."
-"rounding`\\ =\\ :const:`ROUND_HALF_EVEN`, and enabled traps for :class:"
-"`Overflow`, :class:`InvalidOperation`, and :class:`DivisionByZero`."
+"The default values are :attr:`prec`\\ =\\ :const:`28`, :attr:`rounding`\\ "
+"=\\ :const:`ROUND_HALF_EVEN`, and enabled traps for :class:`Overflow`, :"
+"class:`InvalidOperation`, and :class:`DivisionByZero`."
 msgstr ""
+"Los valores predeterminados son :attr:`prec`\\ =\\ :const:`28`, :attr:"
+"`rounding`\\ =\\ :const:`ROUND_HALF_EVEN` y trampas habilitadas para :class:"
+"`Overflow`, :class:`InvalidOperation` y :class:`DivisionByZero`."
 
-#: ../../library/decimal.rst:1009
+#: ../Doc/library/decimal.rst:1009
 msgid ""
 "In addition to the three supplied contexts, new contexts can be created with "
 "the :class:`Context` constructor."
 msgstr ""
-"上に挙げた三つのコンテキストに加え、 :class:`Context` コンストラクタを使って"
-"新たなコンテキストを生成できます。"
+"Además de los tres contextos proporcionados, se pueden crear nuevos "
+"contextos mediante el constructor de la clase :class:`Context`."
 
-#: ../../library/decimal.rst:1015
+#: ../Doc/library/decimal.rst:1015
 msgid ""
 "Creates a new context.  If a field is not specified or is :const:`None`, the "
 "default values are copied from the :const:`DefaultContext`.  If the *flags* "
 "field is not specified or is :const:`None`, all flags are cleared."
 msgstr ""
-"新たなコンテキストを生成します。あるフィールドが定義されていないか :const:"
-"`None` であれば、 :const:`DefaultContext` からデフォルト値をコピーします。 "
-"*flags* フィールドが設定されていいか :const:`None` の場合には、全てのフラグが"
-"クリアされます。"
+"Crea un nuevo contexto. Si no se especifica un campo, o es :const:`None`, "
+"los valores predeterminados se copian de :const:`DefaultContext`. Si el "
+"campo *flags* no está especificado, o es :const:`None`, se restablecen todas "
+"los flags."
 
-#: ../../library/decimal.rst:1019
+#: ../Doc/library/decimal.rst:1019
 msgid ""
-"*prec* is an integer in the range [``1``, :const:`MAX_PREC`] that sets the "
-"precision for arithmetic operations in the context."
+"*prec* is an integer in the range [:const:`1`, :const:`MAX_PREC`] that sets "
+"the precision for arithmetic operations in the context."
 msgstr ""
+"*prec* es un número entero en el rango [:const:`1`, :const:`MAX_PREC`] que "
+"establece la precisión para las operaciones aritméticas en el contexto."
 
-#: ../../library/decimal.rst:1022
+#: ../Doc/library/decimal.rst:1022
 msgid ""
 "The *rounding* option is one of the constants listed in the section "
 "`Rounding Modes`_."
-msgstr "*rounding* オプションは、節 `丸めモード`_ で挙げられる定数の一つです。"
+msgstr ""
+"La opción *rounding* es una de las constantes enumeradas en la sección "
+"`Rounding Modes`_."
 
-#: ../../library/decimal.rst:1025
+#: ../Doc/library/decimal.rst:1025
 msgid ""
 "The *traps* and *flags* fields list any signals to be set. Generally, new "
 "contexts should only set traps and leave the flags clear."
 msgstr ""
-"*traps* および *flags* フィールドには、セットしたいシグナルを列挙します。一般"
-"的に、新たなコンテキストを作成するときにはトラップだけを設定し、フラグはクリ"
-"アしておきます。"
+"Los campos *traps* y *flags* enumeran las señales que se deben establecer. "
+"Generalmente, los nuevos contextos solo deben establecer trampas y dejar los "
+"flags sin establecer."
 
-#: ../../library/decimal.rst:1028
+#: ../Doc/library/decimal.rst:1028
 msgid ""
 "The *Emin* and *Emax* fields are integers specifying the outer limits "
-"allowable for exponents. *Emin* must be in the range [:const:`MIN_EMIN`, "
-"``0``], *Emax* in the range [``0``, :const:`MAX_EMAX`]."
+"allowable for exponents. *Emin* must be in the range [:const:`MIN_EMIN`, :"
+"const:`0`], *Emax* in the range [:const:`0`, :const:`MAX_EMAX`]."
 msgstr ""
+"Los campos *Emin* y *Emax* son números enteros que especifican los límites "
+"externos permitidos para los exponentes. *Emin* debe estar en el rango [:"
+"const:`MIN_EMIN`, :const:`0`] y *Emax* en el rango [:const:`0`, :const:"
+"`MAX_EMAX`]."
 
-#: ../../library/decimal.rst:1032
+#: ../Doc/library/decimal.rst:1032
 msgid ""
-"The *capitals* field is either ``0`` or ``1`` (the default). If set to "
-"``1``, exponents are printed with a capital ``E``; otherwise, a lowercase "
-"``e`` is used: ``Decimal('6.02e+23')``."
+"The *capitals* field is either :const:`0` or :const:`1` (the default). If "
+"set to :const:`1`, exponents are printed with a capital :const:`E`; "
+"otherwise, a lowercase :const:`e` is used: :const:`Decimal('6.02e+23')`."
 msgstr ""
+"El campo *capitals* es :const:`0` o :const:`1` (por defecto). Si se "
+"establece en :const:`1`, los exponentes se imprimen usando una :const:`E` "
+"mayúscula; de lo contrario, se usa una :const:`e` minúscula: :const:"
+"`Decimal('6.02e+23')`."
 
-#: ../../library/decimal.rst:1036
+#: ../Doc/library/decimal.rst:1036
 msgid ""
-"The *clamp* field is either ``0`` (the default) or ``1``. If set to ``1``, "
-"the exponent ``e`` of a :class:`Decimal` instance representable in this "
-"context is strictly limited to the range ``Emin - prec + 1 <= e <= Emax - "
-"prec + 1``.  If *clamp* is ``0`` then a weaker condition holds: the adjusted "
-"exponent of the :class:`Decimal` instance is at most :attr:`~Context.Emax`.  "
-"When *clamp* is ``1``, a large normal number will, where possible, have its "
-"exponent reduced and a corresponding number of zeros added to its "
-"coefficient, in order to fit the exponent constraints; this preserves the "
-"value of the number but loses information about significant trailing zeros.  "
-"For example::"
+"The *clamp* field is either :const:`0` (the default) or :const:`1`. If set "
+"to :const:`1`, the exponent ``e`` of a :class:`Decimal` instance "
+"representable in this context is strictly limited to the range ``Emin - prec "
+"+ 1 <= e <= Emax - prec + 1``.  If *clamp* is :const:`0` then a weaker "
+"condition holds: the adjusted exponent of the :class:`Decimal` instance is "
+"at most ``Emax``.  When *clamp* is :const:`1`, a large normal number will, "
+"where possible, have its exponent reduced and a corresponding number of "
+"zeros added to its coefficient, in order to fit the exponent constraints; "
+"this preserves the value of the number but loses information about "
+"significant trailing zeros.  For example::"
 msgstr ""
+"El campo *clamp* es :const:`0` (por defecto) o :const:`1`. Si se establece "
+"en :const:`1`, el exponente ``e`` representable en este contexto de una "
+"instancia de :class:`Decimal` está estrictamente limitado al rango ``Emin - "
+"prec + 1 <= e <= Emax - prec + 1``. Si *clamp* es :const:`0`, entonces se "
+"cumple una condición más laxa: el exponente ajustado de la instancia de :"
+"class:`Decimal` es como máximo ``Emax``. Cuando *clamp* es :const:`1`, "
+"cuando sea posible, se reducirá el exponente de un número normal grande y se "
+"agregarán el número correspondiente de ceros a su coeficiente, a fin de que "
+"se ajuste a las restricciones del exponente; esto conserva el valor del "
+"número pero conlleva una pérdida de información causada por los ceros "
+"finales significativos. Por ejemplo::"
 
-#: ../../library/decimal.rst:1051
+#: ../Doc/library/decimal.rst:1051
 msgid ""
-"A *clamp* value of ``1`` allows compatibility with the fixed-width decimal "
-"interchange formats specified in IEEE 754."
+"A *clamp* value of :const:`1` allows compatibility with the fixed-width "
+"decimal interchange formats specified in IEEE 754."
 msgstr ""
+"Un valor *clamp* de :const:`1` permite la compatibilidad con los formatos de "
+"intercambio decimal de ancho fijo especificados en IEEE 754."
 
-#: ../../library/decimal.rst:1054
+#: ../Doc/library/decimal.rst:1054
 msgid ""
 "The :class:`Context` class defines several general purpose methods as well "
 "as a large number of methods for doing arithmetic directly in a given "
 "context. In addition, for each of the :class:`Decimal` methods described "
-"above (with the exception of the :meth:`~Decimal.adjusted` and :meth:"
-"`~Decimal.as_tuple` methods) there is a corresponding :class:`Context` "
-"method.  For example, for a :class:`Context` instance ``C`` and :class:"
-"`Decimal` instance ``x``, ``C.exp(x)`` is equivalent to ``x."
-"exp(context=C)``.  Each :class:`Context` method accepts a Python integer (an "
-"instance of :class:`int`) anywhere that a Decimal instance is accepted."
+"above (with the exception of the :meth:`adjusted` and :meth:`as_tuple` "
+"methods) there is a corresponding :class:`Context` method.  For example, for "
+"a :class:`Context` instance ``C`` and :class:`Decimal` instance ``x``, ``C."
+"exp(x)`` is equivalent to ``x.exp(context=C)``.  Each :class:`Context` "
+"method accepts a Python integer (an instance of :class:`int`) anywhere that "
+"a Decimal instance is accepted."
 msgstr ""
+"La clase :class:`Context` define varios métodos de propósito general, así "
+"como una gran cantidad de métodos para hacer aritmética directamente en un "
+"contexto dado. Además, para cada uno de los métodos de la clase :class:"
+"`Decimal` descritos anteriormente (con la excepción de los métodos :meth:"
+"`adjusted` y :meth:`as_tuple`) hay un método correspondiente en la clase :"
+"class:`Context`. Por ejemplo, para una instancia de :class:`Context` ``C`` y "
+"una instancia de :class:`Decimal` ``x``, ``C.exp(x)`` es equivalente a ``x."
+"exp(context=C)``. Cada método :class:`Context` acepta también un entero de "
+"Python (una instancia de :class:`int`) en cualquier lugar donde se acepte "
+"una instancia de Decimal."
 
-#: ../../library/decimal.rst:1067
-msgid "Resets all of the flags to ``0``."
-msgstr ""
+#: ../Doc/library/decimal.rst:1067
+msgid "Resets all of the flags to :const:`0`."
+msgstr "Restablece todos los flags a :const:`0`."
 
-#: ../../library/decimal.rst:1071
-msgid "Resets all of the traps to ``0``."
-msgstr ""
+#: ../Doc/library/decimal.rst:1071
+msgid "Resets all of the traps to :const:`0`."
+msgstr "Restablece todas las trampas a :const:`0`."
 
-#: ../../library/decimal.rst:1077
+#: ../Doc/library/decimal.rst:1077
 msgid "Return a duplicate of the context."
-msgstr "コンテキストの複製を返します。"
+msgstr "Retorna un duplicado del contexto."
 
-#: ../../library/decimal.rst:1081
+#: ../Doc/library/decimal.rst:1081
 msgid "Return a copy of the Decimal instance num."
-msgstr "Decimal インスタンス num のコピーを返します。"
+msgstr "Retorna una copia de la instancia de Decimal num."
 
-#: ../../library/decimal.rst:1085
+#: ../Doc/library/decimal.rst:1085
 msgid ""
 "Creates a new Decimal instance from *num* but using *self* as context. "
 "Unlike the :class:`Decimal` constructor, the context precision, rounding "
 "method, flags, and traps are applied to the conversion."
 msgstr ""
-"*self* をコンテキストとする新たな Decimal インスタンスを *num* から生成しま"
-"す。 :class:`Decimal` コンストラクタと違い、数値を変換する際にコンテキストの"
-"精度、値丸め方法、フラグ、トラップを適用します。"
+"Crea una nueva instancia de Decimal a partir de *num* pero usando *self* "
+"como contexto. A diferencia del constructor de :class:`Decimal`, la "
+"precisión del contexto, el método de redondeo, los flags y las trampas se "
+"aplican a la conversión."
 
-#: ../../library/decimal.rst:1089
+#: ../Doc/library/decimal.rst:1089
 msgid ""
 "This is useful because constants are often given to a greater precision than "
 "is needed by the application.  Another benefit is that rounding immediately "
@@ -1418,49 +1632,50 @@ msgid ""
 "the following example, using unrounded inputs means that adding zero to a "
 "sum can change the result:"
 msgstr ""
-"定数値はしばしばアプリケーションの要求よりも高い精度を持っているため、このメ"
-"ソッドが役に立ちます。また、値丸めを即座に行うため、例えば以下のように、入力"
-"値に値丸めを行わないために合計値にゼロの加算を追加するだけで結果が変わってし"
-"まうといった、現在の精度よりも細かい値の影響が紛れ込む問題を防げるという恩恵"
-"もあります。以下の例は、丸められていない入力を使うということは和にゼロを加え"
-"ると結果が変わり得るという見本です:"
+"Esto es útil porque las constantes a menudo se proporcionan con una "
+"precisión mayor que la que necesita la aplicación. Otro beneficio es que el "
+"redondeo elimina inmediatamente los efectos no deseados de los dígitos más "
+"allá de la precisión actual. En el siguiente ejemplo, usar entradas no "
+"redondeadas significa que agregar cero a una suma puede cambiar el resultado:"
 
-#: ../../library/decimal.rst:1103
+#: ../Doc/library/decimal.rst:1103
 msgid ""
 "This method implements the to-number operation of the IBM specification. If "
 "the argument is a string, no leading or trailing whitespace or underscores "
 "are permitted."
 msgstr ""
-"このメソッドは IBM 仕様の to-number 演算を実装したものです。引数が文字列の場"
-"合、前や後ろに余計な空白を付けたり、アンダースコアを含めたりすることは許され"
-"ません。"
+"Este método implementa la operación to-number de la especificación de IBM. "
+"Si el argumento es una cadena de caracteres, no se permiten espacios en "
+"blanco ni guiones bajos, ni al principio ni al final."
 
-#: ../../library/decimal.rst:1109
+#: ../Doc/library/decimal.rst:1109
 msgid ""
 "Creates a new Decimal instance from a float *f* but rounding using *self* as "
 "the context.  Unlike the :meth:`Decimal.from_float` class method, the "
 "context precision, rounding method, flags, and traps are applied to the "
 "conversion."
 msgstr ""
-"浮動小数点数 *f* から新しい Decimal インスタンスを生成しますが、 *self* をコ"
-"ンテキストとして丸めます。 :meth:`Decimal.from_float` クラスメソッドとは違"
-"い、変換にコンテキストの精度、丸めメソッド、フラグ、そしてトラップが適用され"
-"ます。"
+"Crea una nueva instancia de Decimal a partir de un flotante *f*, pero "
+"redondeando usando *self* como contexto. A diferencia del método de clase :"
+"meth:`Decimal.from_float`, la precisión del contexto, el método de redondeo, "
+"los flags y las trampas se aplican a la conversión."
 
-#: ../../library/decimal.rst:1129
+#: ../Doc/library/decimal.rst:1129
 msgid ""
 "Returns a value equal to ``Emin - prec + 1`` which is the minimum exponent "
 "value for subnormal results.  When underflow occurs, the exponent is set to :"
 "const:`Etiny`."
 msgstr ""
-"``Emin - prec + 1`` に等しい値を返します。演算結果の劣化が起こる桁の最小値で"
-"す。アンダーフローが起きた場合、指数は :const:`Etiny` に設定されます。"
+"Retorna un valor igual a ``Emin - prec + 1`` que es el valor mínimo del "
+"exponente para resultados subnormales. Cuando ocurre un desbordamiento "
+"numérico negativo (\"underflow\"), el exponente se establece en :const:"
+"`Etiny`."
 
-#: ../../library/decimal.rst:1135
+#: ../Doc/library/decimal.rst:1135
 msgid "Returns a value equal to ``Emax - prec + 1``."
-msgstr "``Emax - prec + 1`` に等しい値を返します。"
+msgstr "Retorna un valor igual a ``Emax - prec + 1``."
 
-#: ../../library/decimal.rst:1137
+#: ../Doc/library/decimal.rst:1137
 msgid ""
 "The usual approach to working with decimals is to create :class:`Decimal` "
 "instances and then apply arithmetic operations which take place within the "
@@ -1469,210 +1684,227 @@ msgid ""
 "similar to those for the :class:`Decimal` class and are only briefly "
 "recounted here."
 msgstr ""
-":class:`Decimal` を使った処理を行う場合、通常は :class:`Decimal` インスタンス"
-"を生成して、算術演算を適用するというアプローチをとります。演算はアクティブな"
-"スレッドにおける現在のコンテキストの下で行われます。もう一つのアプローチは、"
-"コンテキストのメソッドを使った特定のコンテキスト下での計算です。コンテキスト"
-"のメソッドは :class:`Decimal` クラスのメソッドに似ているので、ここでは簡単な"
-"説明にとどめます。"
+"El enfoque habitual para trabajar con decimales es crear instancias de la "
+"clase :class:`Decimal` y luego aplicar operaciones aritméticas que tienen "
+"lugar dentro del contexto actual para el hilo activo. Un enfoque alternativo "
+"es utilizar métodos de contexto para calcular dentro de un contexto "
+"específico. Los métodos son similares a los de la clase :class:`Decimal` y "
+"aquí solo se relatan brevemente."
 
-#: ../../library/decimal.rst:1147
+#: ../Doc/library/decimal.rst:1147
 msgid "Returns the absolute value of *x*."
-msgstr "*x* の絶対値を返します。"
+msgstr "Retorna el valor absoluto de *x*."
 
-#: ../../library/decimal.rst:1152
+#: ../Doc/library/decimal.rst:1152
 msgid "Return the sum of *x* and *y*."
-msgstr "*x* と *y* の和を返します。"
+msgstr "Retorna la suma de *x* e *y*."
 
-#: ../../library/decimal.rst:1157
+#: ../Doc/library/decimal.rst:1157
 msgid "Returns the same Decimal object *x*."
-msgstr "同じ Decimal オブジェクト *x* を返します。"
+msgstr "Retorna el mismo objeto Decimal *x*."
 
-#: ../../library/decimal.rst:1162
+#: ../Doc/library/decimal.rst:1162
 msgid "Compares *x* and *y* numerically."
-msgstr "*x* と *y* を数値として比較します。"
+msgstr "Compara *x* e *y* numéricamente."
 
-#: ../../library/decimal.rst:1167
+#: ../Doc/library/decimal.rst:1167
 msgid "Compares the values of the two operands numerically."
-msgstr "二つの演算対象の値を数値として比較します。"
+msgstr "Compara los valores de los dos operandos numéricamente."
 
-#: ../../library/decimal.rst:1172
+#: ../Doc/library/decimal.rst:1172
 msgid "Compares two operands using their abstract representation."
-msgstr "二つの演算対象を抽象的な表現を使って比較します。"
+msgstr "Compara los dos operandos utilizando su representación abstracta."
 
-#: ../../library/decimal.rst:1177
+#: ../Doc/library/decimal.rst:1177
 msgid ""
 "Compares two operands using their abstract representation, ignoring sign."
-msgstr "二つの演算対象を抽象的な表現を使い符号を無視して比較します。"
-
-#: ../../library/decimal.rst:1182
-msgid "Returns a copy of *x* with the sign set to 0."
-msgstr "*x* のコピーの符号を 0 にセットして返します。"
-
-#: ../../library/decimal.rst:1187
-msgid "Returns a copy of *x* with the sign inverted."
-msgstr "*x* のコピーの符号を反転して返します。"
-
-#: ../../library/decimal.rst:1192
-msgid "Copies the sign from *y* to *x*."
-msgstr "*y* から *x* に符号をコピーします。"
-
-#: ../../library/decimal.rst:1197
-msgid "Return *x* divided by *y*."
-msgstr "*x* を *y* で除算した値を返します。"
-
-#: ../../library/decimal.rst:1202
-msgid "Return *x* divided by *y*, truncated to an integer."
-msgstr "*x* を *y* で除算した値を整数に切り捨てて返します。"
-
-#: ../../library/decimal.rst:1207
-msgid "Divides two numbers and returns the integer part of the result."
-msgstr "二つの数値間の除算を行い、結果の整数部を返します。"
-
-#: ../../library/decimal.rst:1212
-msgid "Returns ``e ** x``."
 msgstr ""
+"Compara los dos operandos utilizando su representación abstracta, ignorando "
+"el signo."
 
-#: ../../library/decimal.rst:1217
+#: ../Doc/library/decimal.rst:1182
+msgid "Returns a copy of *x* with the sign set to 0."
+msgstr "Retorna una copia de *x* con el signo establecido en 0."
+
+#: ../Doc/library/decimal.rst:1187
+msgid "Returns a copy of *x* with the sign inverted."
+msgstr "Retorna una copia de *x* con el signo invertido."
+
+#: ../Doc/library/decimal.rst:1192
+msgid "Copies the sign from *y* to *x*."
+msgstr "Copia el signo de *y* en *x*."
+
+#: ../Doc/library/decimal.rst:1197
+msgid "Return *x* divided by *y*."
+msgstr "Retorna *x* dividido entre *y*."
+
+#: ../Doc/library/decimal.rst:1202
+msgid "Return *x* divided by *y*, truncated to an integer."
+msgstr ""
+"Retorna *x* dividido entre *y*, truncando el resultado a un número entero."
+
+#: ../Doc/library/decimal.rst:1207
+msgid "Divides two numbers and returns the integer part of the result."
+msgstr "Divide dos números y retorna la parte entera del resultado."
+
+#: ../Doc/library/decimal.rst:1212
+#, fuzzy
+msgid "Returns ``e ** x``."
+msgstr "Retorna `e ** x`."
+
+#: ../Doc/library/decimal.rst:1217
 msgid "Returns *x* multiplied by *y*, plus *z*."
-msgstr "*x* を *y* 倍したものに *z* を加えて返します。"
+msgstr "Retorna *x* multiplicado por *y*, más *z*."
 
-#: ../../library/decimal.rst:1222
+#: ../Doc/library/decimal.rst:1222
 msgid "Returns ``True`` if *x* is canonical; otherwise returns ``False``."
 msgstr ""
-"*x* が標準的(canonical)ならば ``True`` を返します。そうでなければ ``False`` "
-"です。"
+"Retorna ``True`` si *x* está en forma canónica, en caso contrario retorna "
+"``False``."
 
-#: ../../library/decimal.rst:1227
+#: ../Doc/library/decimal.rst:1227
 msgid "Returns ``True`` if *x* is finite; otherwise returns ``False``."
-msgstr "*x* が有限ならば ``True`` を返します。そうでなければ ``False`` です。"
+msgstr ""
+"Retorna ``True`` si *x* es un valor finito, en caso contrario retorna "
+"``False``."
 
-#: ../../library/decimal.rst:1232
+#: ../Doc/library/decimal.rst:1232
 msgid "Returns ``True`` if *x* is infinite; otherwise returns ``False``."
-msgstr "*x* が無限ならば ``True`` を返します。そうでなければ ``False`` です。"
+msgstr ""
+"Retorna ``True`` si *x* es un valor infinito, en caso contrario retorna "
+"``False``."
 
-#: ../../library/decimal.rst:1237
+#: ../Doc/library/decimal.rst:1237
 msgid "Returns ``True`` if *x* is a qNaN or sNaN; otherwise returns ``False``."
 msgstr ""
-"*x* が qNaN か sNaN であれば ``True`` を返します。そうでなければ ``False`` で"
-"す。"
+"Retorna ``True`` si *x* es un valor qNaN o sNaN , en caso contrario retorna "
+"``False``."
 
-#: ../../library/decimal.rst:1242
+#: ../Doc/library/decimal.rst:1242
 msgid ""
 "Returns ``True`` if *x* is a normal number; otherwise returns ``False``."
 msgstr ""
-"*x* が通常の数ならば ``True`` を返します。そうでなければ ``False`` です。"
+"Retorna ``True`` si *x* es un número normal, en caso contrario retorna "
+"``False``."
 
-#: ../../library/decimal.rst:1247
+#: ../Doc/library/decimal.rst:1247
 msgid "Returns ``True`` if *x* is a quiet NaN; otherwise returns ``False``."
 msgstr ""
-"*x* が無言 NaN であれば ``True`` を返します。そうでなければ ``False`` です。"
+"Retorna ``True`` si *x* es un NaN silencioso, en caso contrario retorna "
+"``False``."
 
-#: ../../library/decimal.rst:1252
+#: ../Doc/library/decimal.rst:1252
 msgid "Returns ``True`` if *x* is negative; otherwise returns ``False``."
 msgstr ""
-"*x* が負の数であれば ``True`` を返します。そうでなければ ``False`` です。"
+"Retorna ``True`` si *x* es un valor negativo, en caso contrario retorna "
+"``False``."
 
-#: ../../library/decimal.rst:1257
+#: ../Doc/library/decimal.rst:1257
 msgid ""
 "Returns ``True`` if *x* is a signaling NaN; otherwise returns ``False``."
 msgstr ""
-"*x* が発信 NaN であれば ``True`` を返します。そうでなければ ``False`` です。"
+"Retorna ``True`` si *x* es un NaN señalizador, en caso contrario retorna "
+"``False``."
 
-#: ../../library/decimal.rst:1262
+#: ../Doc/library/decimal.rst:1262
 msgid "Returns ``True`` if *x* is subnormal; otherwise returns ``False``."
 msgstr ""
-"*x* が非正規数であれば ``True`` を返します。そうでなければ ``False`` です。"
+"Retorna ``True`` si *x* es un número subnormal, en caso contrario retorna "
+"``False``."
 
-#: ../../library/decimal.rst:1267
+#: ../Doc/library/decimal.rst:1267
 msgid "Returns ``True`` if *x* is a zero; otherwise returns ``False``."
 msgstr ""
-"*x* がゼロであれば ``True`` を返します。そうでなければ ``False`` です。"
+"Retorna ``True`` si *x* es un cero, en caso contrario retorna ``False``."
 
-#: ../../library/decimal.rst:1272
+#: ../Doc/library/decimal.rst:1272
 msgid "Returns the natural (base e) logarithm of *x*."
-msgstr "*x* の自然対数(底 e の対数)を返します。"
+msgstr "Retorna el logaritmo natural (base e) de *x*."
 
-#: ../../library/decimal.rst:1277
+#: ../Doc/library/decimal.rst:1277
 msgid "Returns the base 10 logarithm of *x*."
-msgstr "*x* の底 10 の対数を返します。"
+msgstr "Retorna el logaritmo en base 10 de *x*."
 
-#: ../../library/decimal.rst:1282
+#: ../Doc/library/decimal.rst:1282
 msgid "Returns the exponent of the magnitude of the operand's MSD."
-msgstr "演算対象の MSD の大きさの指数部を返します。"
+msgstr ""
+"Retorna el exponente de la magnitud del MSD (\"dígito más significativo\") "
+"del operando."
 
-#: ../../library/decimal.rst:1287
+#: ../Doc/library/decimal.rst:1287
 msgid "Applies the logical operation *and* between each operand's digits."
-msgstr "それぞれの桁に論理演算 *and* を当てはめます。"
+msgstr "Aplica la operación lógica *and* entre los dígitos de cada operando."
 
-#: ../../library/decimal.rst:1292
+#: ../Doc/library/decimal.rst:1292
 msgid "Invert all the digits in *x*."
-msgstr "*x* の全ての桁を反転させます。"
+msgstr "Invierte todos los dígitos en *x*."
 
-#: ../../library/decimal.rst:1297
+#: ../Doc/library/decimal.rst:1297
 msgid "Applies the logical operation *or* between each operand's digits."
-msgstr "それぞれの桁に論理演算 *or* を当てはめます。"
+msgstr "Aplica la operación lógica *or* entre los dígitos de cada operando."
 
-#: ../../library/decimal.rst:1302
+#: ../Doc/library/decimal.rst:1302
 msgid "Applies the logical operation *xor* between each operand's digits."
-msgstr "それぞれの桁に論理演算 *xor* を当てはめます。"
+msgstr "Aplica la operación lógica *xor* entre los dígitos de cada operando."
 
-#: ../../library/decimal.rst:1307
+#: ../Doc/library/decimal.rst:1307
 msgid "Compares two values numerically and returns the maximum."
-msgstr "二つの値を数値として比較し、大きいほうを返します。"
+msgstr "Compara dos valores numéricamente y retorna el mayor de ellos."
 
-#: ../../library/decimal.rst:1312 ../../library/decimal.rst:1322
+#: ../Doc/library/decimal.rst:1312 ../Doc/library/decimal.rst:1322
 msgid "Compares the values numerically with their sign ignored."
-msgstr "値を符号を無視して数値として比較します。"
+msgstr "Compara los valores numéricamente ignorando sus signos."
 
-#: ../../library/decimal.rst:1317
+#: ../Doc/library/decimal.rst:1317
 msgid "Compares two values numerically and returns the minimum."
-msgstr "二つの値を数値として比較し、小さいほうを返します。"
+msgstr "Compara dos valores numéricamente y retorna el menor de ellos."
 
-#: ../../library/decimal.rst:1327
+#: ../Doc/library/decimal.rst:1327
 msgid "Minus corresponds to the unary prefix minus operator in Python."
-msgstr "Python における単項マイナス演算子に対応する演算です。"
+msgstr "Se corresponde con el operador unario de resta (prefijo) de Python."
 
-#: ../../library/decimal.rst:1332
+#: ../Doc/library/decimal.rst:1332
 msgid "Return the product of *x* and *y*."
-msgstr "*x* と *y* の積を返します。"
+msgstr "Retorna el producto de *x* por *y*."
 
-#: ../../library/decimal.rst:1337
+#: ../Doc/library/decimal.rst:1337
 msgid "Returns the largest representable number smaller than *x*."
-msgstr "*x* より小さい最大の表現可能な数を返します。"
+msgstr "Retorna el número más grande representable menor que *x*."
 
-#: ../../library/decimal.rst:1342
+#: ../Doc/library/decimal.rst:1342
 msgid "Returns the smallest representable number larger than *x*."
-msgstr "*x* より大きい最小の表現可能な数を返します。"
+msgstr "Retorna el número más pequeño representable mayor que *x*."
 
-#: ../../library/decimal.rst:1347
+#: ../Doc/library/decimal.rst:1347
 msgid "Returns the number closest to *x*, in direction towards *y*."
-msgstr "*x* に *y* の方向に向かって最も近い数を返します。"
+msgstr "Retorna el número más cercano a *x*, en la dirección de *y*."
 
-#: ../../library/decimal.rst:1352
+#: ../Doc/library/decimal.rst:1352
 msgid "Reduces *x* to its simplest form."
-msgstr "*x* をもっとも単純な形にします。"
+msgstr "Reduce *x* a su forma más simple."
 
-#: ../../library/decimal.rst:1357
+#: ../Doc/library/decimal.rst:1357
 msgid "Returns an indication of the class of *x*."
-msgstr "*x* のクラスを指し示すものを返します。"
+msgstr "Retorna una cadena de caracteres indicando la clase de *x*."
 
-#: ../../library/decimal.rst:1362
+#: ../Doc/library/decimal.rst:1362
 msgid ""
 "Plus corresponds to the unary prefix plus operator in Python.  This "
 "operation applies the context precision and rounding, so it is *not* an "
 "identity operation."
 msgstr ""
-"Python における単項のプラス演算子に対応する演算です。コンテキストにおける精度"
-"や値丸めを適用するので、等値 (identity) 演算とは *違います*。"
+"Se corresponde con el operador unario de suma (prefijo) de Python. Esta "
+"operación aplica la precisión y el redondeo establecidos en el contexto, por "
+"lo que *no* es una operación de identidad."
 
-#: ../../library/decimal.rst:1369
+#: ../Doc/library/decimal.rst:1369
 msgid "Return ``x`` to the power of ``y``, reduced modulo ``modulo`` if given."
 msgstr ""
-"``x`` の ``y`` 乗を計算します。``modulo`` が指定されていればモジュロを取りま"
-"す。"
+"Retorna ``x`` elevado a la potencia ``y``, reconduciendo al módulo "
+"``modulo`` si se proporciona."
 
-#: ../../library/decimal.rst:1371
+#: ../Doc/library/decimal.rst:1371
+#, fuzzy
 msgid ""
 "With two arguments, compute ``x**y``.  If ``x`` is negative then ``y`` must "
 "be integral.  The result will be inexact unless ``y`` is integral and the "
@@ -1680,45 +1912,59 @@ msgid ""
 "rounding mode of the context is used. Results are always correctly rounded "
 "in the Python version."
 msgstr ""
+"Con dos argumentos, calcula ``x**y``. Si ``x`` es negativo, entonces ``y`` "
+"debe ser un entero. El resultado será inexacto, a menos que ``y`` sea un "
+"entero y el resultado sea finito y pueda expresarse exactamente con los "
+"dígitos de la 'precisión' establecida. Se utiliza el modo de redondeo "
+"establecido en el contexto. Los resultados siempre se redondean "
+"correctamente en la versión de Python."
 
-#: ../../library/decimal.rst:1377
+#: ../Doc/library/decimal.rst:1377
 msgid ""
 "``Decimal(0) ** Decimal(0)`` results in ``InvalidOperation``, and if "
 "``InvalidOperation`` is not trapped, then results in ``Decimal('NaN')``."
 msgstr ""
+"``Decimal(0) ** Decimal(0)`` da como resultado ``InvalidOperation``, y si "
+"``InvalidOperation`` no es atrapada, entonces da como resultado "
+"``Decimal('NaN')``."
 
-#: ../../library/decimal.rst:1380
+#: ../Doc/library/decimal.rst:1380
+#, fuzzy
 msgid ""
 "The C module computes :meth:`power` in terms of the correctly rounded :meth:"
 "`exp` and :meth:`ln` functions. The result is well-defined but only \"almost "
 "always correctly rounded\"."
 msgstr ""
+"El módulo C calcula :meth:`power` en términos de las funciones :meth:`exp` "
+"y :meth:`ln` redondeadas correctamente. El resultado está bien definido pero "
+"sólo \"casi siempre correctamente redondeado\"."
 
-#: ../../library/decimal.rst:1385
+#: ../Doc/library/decimal.rst:1385
 msgid ""
 "With three arguments, compute ``(x**y) % modulo``.  For the three argument "
 "form, the following restrictions on the arguments hold:"
 msgstr ""
-"引数が 3 つの場合、 ``(x**y) % modulo`` を計算します。この 3 引数の形式の場"
-"合、引数には以下の制限が課せられます。"
+"Con tres argumentos, calcula ``(x**y) % modulo``. Para la forma de tres "
+"argumentos, se mantienen las siguientes restricciones sobre los argumentos:"
 
-#: ../../library/decimal.rst:1388
+#: ../Doc/library/decimal.rst:1388
 msgid "all three arguments must be integral"
-msgstr "全ての引数は整数"
+msgstr "los tres argumentos deben ser enteros"
 
-#: ../../library/decimal.rst:1389
+#: ../Doc/library/decimal.rst:1389
 msgid "``y`` must be nonnegative"
-msgstr "``y`` は非負でなければならない"
+msgstr "``y`` debe ser un valor no negativo"
 
-#: ../../library/decimal.rst:1390
+#: ../Doc/library/decimal.rst:1390
 msgid "at least one of ``x`` or ``y`` must be nonzero"
-msgstr "``x`` と ``y`` の少なくともどちらかはゼロでない"
+msgstr "al menos uno, ``x`` o ``y`` , no debe ser cero"
 
-#: ../../library/decimal.rst:1391
+#: ../Doc/library/decimal.rst:1391
 msgid "``modulo`` must be nonzero and have at most 'precision' digits"
-msgstr "``modulo`` は非零で大きくても 'precision' 桁"
+msgstr ""
+"``modulo`` no debe ser cero y tener como mínimo los dígitos de la 'precisión'"
 
-#: ../../library/decimal.rst:1393
+#: ../Doc/library/decimal.rst:1393
 msgid ""
 "The value resulting from ``Context.power(x, y, modulo)`` is equal to the "
 "value that would be obtained by computing ``(x**y) % modulo`` with unbounded "
@@ -1726,121 +1972,132 @@ msgid ""
 "zero, regardless of the exponents of ``x``, ``y`` and ``modulo``.  The "
 "result is always exact."
 msgstr ""
-"``Context.power(x, y, modulo)`` で得られる値は ``(x**y) % modulo`` を精度無制"
-"限で計算して得られるものと同じ値ですが、より効率的に計算されます。結果の指数"
-"は ``x``, ``y``, ``modulo`` の指数に関係なくゼロです。この計算は常に正確で"
-"す。"
+"El valor resultante de ``Context.power(x, y, modulo)`` es igual al valor que "
+"se obtendría calculando ``(x**y) % modulo`` con precisión ilimitada, la "
+"diferencia es que se calcula de manera más eficiente . El exponente del "
+"resultado es cero, independientemente de los exponentes de ``x``, ``y`` y  "
+"``modulo``. El resultado siempre es exacto."
 
-#: ../../library/decimal.rst:1403
+#: ../Doc/library/decimal.rst:1403
 msgid "Returns a value equal to *x* (rounded), having the exponent of *y*."
-msgstr "*x* に値丸めを適用し、指数を *y* にした値を返します。"
+msgstr ""
+"Retorna un valor igual a *x* (redondeado), pero que tiene el exponente de "
+"*y*."
 
-#: ../../library/decimal.rst:1408
+#: ../Doc/library/decimal.rst:1408
 msgid "Just returns 10, as this is Decimal, :)"
-msgstr "単に 10 を返します。何せ十進ですから :)"
+msgstr "Simplemente retorna 10, ya que es Decimal, :)"
 
-#: ../../library/decimal.rst:1413
+#: ../Doc/library/decimal.rst:1413
 msgid "Returns the remainder from integer division."
-msgstr "整数除算の剰余を返します。"
+msgstr "Retorna el resto de la división entera."
 
-#: ../../library/decimal.rst:1415
+#: ../Doc/library/decimal.rst:1415
 msgid ""
 "The sign of the result, if non-zero, is the same as that of the original "
 "dividend."
-msgstr "剰余がゼロでない場合、符号は割られる数の符号と同じになります。"
+msgstr ""
+"El signo del resultado, si no es cero, es el mismo que el del dividendo "
+"original."
 
-#: ../../library/decimal.rst:1421
+#: ../Doc/library/decimal.rst:1421
 msgid ""
 "Returns ``x - y * n``, where *n* is the integer nearest the exact value of "
 "``x / y`` (if the result is 0 then its sign will be the sign of *x*)."
 msgstr ""
-"``x - y * n`` を返します。ここで *n* は ``x / y`` の正確な値に一番近い整数で"
-"す (この結果が 0 ならばその符号は *x* の符号と同じです)。"
+"Retorna ``x - y * n``, donde *n* es el número entero más cercano al valor "
+"exacto de ``x / y`` (si el resultado es 0, entonces su signo será el signo "
+"de *x*)."
 
-#: ../../library/decimal.rst:1427
+#: ../Doc/library/decimal.rst:1427
 msgid "Returns a rotated copy of *x*, *y* times."
-msgstr "*x* の *y* 回巡回したコピーを返します。"
+msgstr "Retorna una copia de *x* rotada *y* veces."
 
-#: ../../library/decimal.rst:1432
+#: ../Doc/library/decimal.rst:1432
 msgid "Returns ``True`` if the two operands have the same exponent."
-msgstr "2つの演算対象が同じ指数を持っている場合に ``True`` を返します。"
+msgstr "Retorna ``True`` si los dos operandos tienen el mismo exponente."
 
-#: ../../library/decimal.rst:1437
+#: ../Doc/library/decimal.rst:1437
 msgid "Returns the first operand after adding the second value its exp."
-msgstr "一つめの演算対象の指数部に二つめの値を加えたものを返します。"
+msgstr ""
+"Retorna el primer operando después de agregar el segundo valor a su "
+"exponente."
 
-#: ../../library/decimal.rst:1442
+#: ../Doc/library/decimal.rst:1442
 msgid "Returns a shifted copy of *x*, *y* times."
-msgstr "*x* を *y* 回シフトしたコピーを返します。"
+msgstr "Retorna una copia de *x* desplazada *y* veces."
 
-#: ../../library/decimal.rst:1447
+#: ../Doc/library/decimal.rst:1447
 msgid "Square root of a non-negative number to context precision."
-msgstr "*x* の平方根を精度いっぱいまで求めます。"
+msgstr ""
+"Retorna la raíz cuadrada de un número no negativo para la precisión del "
+"contexto."
 
-#: ../../library/decimal.rst:1452
+#: ../Doc/library/decimal.rst:1452
 msgid "Return the difference between *x* and *y*."
-msgstr "*x* と *y* の間の差を返します。"
+msgstr "Retorna la diferencia entre *x* e *y*."
 
-#: ../../library/decimal.rst:1466
+#: ../Doc/library/decimal.rst:1466
 msgid "Rounds to an integer."
-msgstr "最近傍の整数に値を丸めます。"
+msgstr "Redondea a un entero."
 
-#: ../../library/decimal.rst:1471
+#: ../Doc/library/decimal.rst:1471
 msgid "Converts a number to a string using scientific notation."
-msgstr "数値を科学表記で文字列に変換します。"
+msgstr ""
+"Convierte un número en una cadena de caracteres usando notación científica."
 
-#: ../../library/decimal.rst:1478
+#: ../Doc/library/decimal.rst:1478
 msgid "Constants"
-msgstr "定数"
+msgstr "Constantes"
 
-#: ../../library/decimal.rst:1480
+#: ../Doc/library/decimal.rst:1480
 msgid ""
 "The constants in this section are only relevant for the C module. They are "
 "also included in the pure Python version for compatibility."
 msgstr ""
-"この節の定数は C モジュールにのみ意味があります。互換性のために、pure Python "
-"版も含まれます。"
+"Las constantes detalladas en esta sección solo son relevantes para el módulo "
+"de C. Se incluyen también en la versión pura de Python por compatibilidad."
 
-#: ../../library/decimal.rst:1484
+#: ../Doc/library/decimal.rst:1484
 msgid "32-bit"
 msgstr "32-bit"
 
-#: ../../library/decimal.rst:1484
+#: ../Doc/library/decimal.rst:1484
 msgid "64-bit"
 msgstr "64-bit"
 
-#: ../../library/decimal.rst:1486 ../../library/decimal.rst:1488
-msgid "``425000000``"
-msgstr ""
+#: ../Doc/library/decimal.rst:1486 ../Doc/library/decimal.rst:1488
+msgid ":const:`425000000`"
+msgstr ":const:`425000000`"
 
-#: ../../library/decimal.rst:1486 ../../library/decimal.rst:1488
-msgid "``999999999999999999``"
-msgstr ""
+#: ../Doc/library/decimal.rst:1486 ../Doc/library/decimal.rst:1488
+msgid ":const:`999999999999999999`"
+msgstr ":const:`999999999999999999`"
 
-#: ../../library/decimal.rst:1490
-msgid "``-425000000``"
-msgstr ""
+#: ../Doc/library/decimal.rst:1490
+msgid ":const:`-425000000`"
+msgstr ":const:`-425000000`"
 
-#: ../../library/decimal.rst:1490
-msgid "``-999999999999999999``"
-msgstr ""
+#: ../Doc/library/decimal.rst:1490
+msgid ":const:`-999999999999999999`"
+msgstr ":const:`-999999999999999999`"
 
-#: ../../library/decimal.rst:1492
-msgid "``-849999999``"
-msgstr ""
+#: ../Doc/library/decimal.rst:1492
+msgid ":const:`-849999999`"
+msgstr ":const:`-849999999`"
 
-#: ../../library/decimal.rst:1492
-msgid "``-1999999999999999997``"
-msgstr ""
+#: ../Doc/library/decimal.rst:1492
+msgid ":const:`-1999999999999999997`"
+msgstr ":const:`-1999999999999999997`"
 
-#: ../../library/decimal.rst:1498
+#: ../Doc/library/decimal.rst:1498
 msgid ""
 "The value is ``True``.  Deprecated, because Python now always has threads."
 msgstr ""
-"値は ``True`` です。現在のPythonは常にスレッドを持っているので、非推奨になり"
-"ました。"
+"El valor es ``True``. Está obsoleta, debido ha que Python ahora siempre "
+"tiene soporte para hilos."
 
-#: ../../library/decimal.rst:1504
+#: ../Doc/library/decimal.rst:1504
 msgid ""
 "The default value is ``True``. If Python is :option:`configured using the --"
 "without-decimal-contextvar option <--without-decimal-contextvar>`, the C "
@@ -1848,190 +2105,222 @@ msgid ""
 "value is ``False``.  This is slightly faster in some nested context "
 "scenarios."
 msgstr ""
+"El valor predeterminado es ``True``. Si Python se :option:`configura usando "
+"--without-decimal-contextvar <--without-decimal-contextvar>`, la versión de "
+"C usa un contexto de hilos-locales en lugar de un contexto de corrutinas-"
+"locales y el valor de la constante es ``False``. Esto es algo más rápido en "
+"algunos escenarios de contexto anidado."
 
-#: ../../library/decimal.rst:1509
+#: ../Doc/library/decimal.rst:1509
 msgid "backported to 3.7 and 3.8."
-msgstr "3.7 と 3.8 にバックポートされました。"
+msgstr "retro-portado a las versiones 3.7 y 3.8."
 
-#: ../../library/decimal.rst:1513
+#: ../Doc/library/decimal.rst:1513
 msgid "Rounding modes"
-msgstr "丸めモード"
+msgstr "Modos de redondeo"
 
-#: ../../library/decimal.rst:1517
-msgid "Round towards ``Infinity``."
-msgstr ""
+#: ../Doc/library/decimal.rst:1517
+msgid "Round towards :const:`Infinity`."
+msgstr "Redondear hacia :const:`Infinity`."
 
-#: ../../library/decimal.rst:1521
+#: ../Doc/library/decimal.rst:1521
 msgid "Round towards zero."
-msgstr "ゼロ方向に丸めます。"
+msgstr "Redondear hacia cero."
 
-#: ../../library/decimal.rst:1525
-msgid "Round towards ``-Infinity``."
-msgstr ""
+#: ../Doc/library/decimal.rst:1525
+msgid "Round towards :const:`-Infinity`."
+msgstr "Redondear hacia :const:`-Infinity`."
 
-#: ../../library/decimal.rst:1529
+#: ../Doc/library/decimal.rst:1529
 msgid "Round to nearest with ties going towards zero."
-msgstr "近い方に、引き分けはゼロ方向に向けて丸めます。"
+msgstr "Redondear al valor contiguo más cercano, con empates hacia cero."
 
-#: ../../library/decimal.rst:1533
+#: ../Doc/library/decimal.rst:1533
 msgid "Round to nearest with ties going to nearest even integer."
-msgstr "近い方に、引き分けは偶数整数方向に向けて丸めます。"
+msgstr ""
+"Redondear al valor contiguo más cercano, con empates al entero par contiguo."
 
-#: ../../library/decimal.rst:1537
+#: ../Doc/library/decimal.rst:1537
 msgid "Round to nearest with ties going away from zero."
-msgstr "近い方に、引き分けはゼロから遠い方向に向けて丸めます。"
+msgstr ""
+"Redondear al valor contiguo más cercano, con empates alejándose de cero."
 
-#: ../../library/decimal.rst:1541
+#: ../Doc/library/decimal.rst:1541
 msgid "Round away from zero."
-msgstr "ゼロから遠い方向に丸めます。"
+msgstr "Redondear alejándose de cero."
 
-#: ../../library/decimal.rst:1545
+#: ../Doc/library/decimal.rst:1545
 msgid ""
 "Round away from zero if last digit after rounding towards zero would have "
 "been 0 or 5; otherwise round towards zero."
 msgstr ""
-"ゼロ方向に丸めた後の最後の桁が 0 または 5 ならばゼロから遠い方向に、そうでな"
-"ければゼロ方向に丸めます。"
+"Si el último dígito después de redondear hacia cero es 0 ó 5, redondear "
+"alejándose de cero, en caso contrario, redondear hacia cero."
 
-#: ../../library/decimal.rst:1552
+#: ../Doc/library/decimal.rst:1552
 msgid "Signals"
-msgstr "シグナル"
+msgstr "Señales"
 
-#: ../../library/decimal.rst:1554
+#: ../Doc/library/decimal.rst:1554
 msgid ""
 "Signals represent conditions that arise during computation. Each corresponds "
 "to one context flag and one context trap enabler."
 msgstr ""
-"シグナルは、計算中に生じた様々なエラー条件を表現します。各々のシグナルは一つ"
-"のコンテキストフラグと一つのトラップイネーブラに対応しています。"
+"Las señales representan condiciones que surgen durante el cálculo. Cada una "
+"se corresponde con un solo flag de contexto y un habilitador de trampas de "
+"contexto."
 
-#: ../../library/decimal.rst:1557
+#: ../Doc/library/decimal.rst:1557
 msgid ""
 "The context flag is set whenever the condition is encountered. After the "
 "computation, flags may be checked for informational purposes (for instance, "
 "to determine whether a computation was exact). After checking the flags, be "
 "sure to clear all flags before starting the next computation."
 msgstr ""
-"コンテキストフラグは、該当するエラー条件に遭遇するたびにセットされます。演算"
-"後にフラグを調べれば、演算に関する情報 (例えば計算が厳密だったかどうか) がわ"
-"かります。フラグを調べたら、次の計算を始める前にフラグを全てクリアするように"
-"してください。"
+"El flag de contexto se establece siempre que se encuentra la condición. "
+"Después del cálculo, los flags pueden comprobarse con fines informativos "
+"(por ejemplo, para determinar si un cálculo fue exacto). Después de "
+"verificar los flags, asegúrate de borrarlos antes de comenzar con el "
+"siguiente cálculo."
 
-#: ../../library/decimal.rst:1562
+#: ../Doc/library/decimal.rst:1562
 msgid ""
 "If the context's trap enabler is set for the signal, then the condition "
 "causes a Python exception to be raised.  For example, if the :class:"
 "`DivisionByZero` trap is set, then a :exc:`DivisionByZero` exception is "
 "raised upon encountering the condition."
 msgstr ""
-"あるコンテキストのトラップイネーブラがあるシグナルに対してセットされている場"
-"合、該当するエラー条件が生じると Python の例外を送出します。例えば、 :class:"
-"`DivisionByZero` が設定されていると、エラー条件が生じた際に :exc:"
-"`DivisionByZero` 例外を送出します。"
+"Si el habilitador de trampas del contexto está configurado para la señal, "
+"entonces la condición hace que se lance una excepción de Python. Por "
+"ejemplo, si se establece la trampa :class:`DivisionByZero`, se genera una "
+"excepción :exc:`DivisionByZero` al encontrar la condición."
 
-#: ../../library/decimal.rst:1570
+#: ../Doc/library/decimal.rst:1570
 msgid "Altered an exponent to fit representation constraints."
-msgstr "値の表現上の制限に沿わせるために指数部が変更されたことを通知します。"
+msgstr "Cambia un exponente para ajustar las restricciones de representación."
 
-#: ../../library/decimal.rst:1572
+#: ../Doc/library/decimal.rst:1572
 msgid ""
 "Typically, clamping occurs when an exponent falls outside the context's :"
-"attr:`~Context.Emin` and :attr:`~Context.Emax` limits.  If possible, the "
-"exponent is reduced to fit by adding zeros to the coefficient."
+"attr:`Emin` and :attr:`Emax` limits.  If possible, the exponent is reduced "
+"to fit by adding zeros to the coefficient."
 msgstr ""
+"Normalmente, la restricción ocurre cuando un exponente cae fuera de los "
+"límites :attr:`Emin` y :attr:`Emax` del contexto. Si es posible, el "
+"exponente se reduce para ajustar agregando ceros al coeficiente."
 
-#: ../../library/decimal.rst:1579
+#: ../Doc/library/decimal.rst:1579
 msgid "Base class for other signals and a subclass of :exc:`ArithmeticError`."
-msgstr "他のシグナルの基底クラスで、 :exc:`ArithmeticError` のサブクラスです。"
+msgstr ""
+"Clase base para otras señales. Es una subclase de :exc:`ArithmeticError`."
 
-#: ../../library/decimal.rst:1584
+#: ../Doc/library/decimal.rst:1584
 msgid "Signals the division of a non-infinite number by zero."
-msgstr "有限値をゼロで除算したときのシグナルです。"
+msgstr "Señala la división de un número no infinito entre cero."
 
-#: ../../library/decimal.rst:1586
+#: ../Doc/library/decimal.rst:1586
 msgid ""
 "Can occur with division, modulo division, or when raising a number to a "
-"negative power.  If this signal is not trapped, returns ``Infinity`` or ``-"
-"Infinity`` with the sign determined by the inputs to the calculation."
+"negative power.  If this signal is not trapped, returns :const:`Infinity` "
+"or :const:`-Infinity` with the sign determined by the inputs to the "
+"calculation."
 msgstr ""
+"Puede ocurrir en la división, en la división modular o al elevar un número a "
+"una potencia negativa. Si esta señal no es atrapada, se retorna :const:"
+"`Infinity` o :const:`-Infinity`, con el signo determinado por las entradas "
+"del cálculo."
 
-#: ../../library/decimal.rst:1593
+#: ../Doc/library/decimal.rst:1593
 msgid "Indicates that rounding occurred and the result is not exact."
-msgstr "値の丸めによって演算結果から厳密さが失われたことを通知します。"
+msgstr "Indica que se produjo un redondeo y el resultado no es exacto."
 
-#: ../../library/decimal.rst:1595
+#: ../Doc/library/decimal.rst:1595
 msgid ""
 "Signals when non-zero digits were discarded during rounding. The rounded "
 "result is returned.  The signal flag or trap is used to detect when results "
 "are inexact."
 msgstr ""
-"このシグナルは値丸め操作中にゼロでない桁を無視した際に生じます。演算結果は値"
-"丸め後の値です。シグナルのフラグやトラップは、演算結果の厳密さが失われたこと"
-"を検出するために使えるだけです。"
+"Señala que se descartaron dígitos distintos de cero durante el redondeo. Se "
+"retorna el resultado redondeado. El flag o la trampa de señal se utiliza "
+"para detectar cuando los resultados son inexactos."
 
-#: ../../library/decimal.rst:1602
+#: ../Doc/library/decimal.rst:1602
 msgid "An invalid operation was performed."
-msgstr "無効な演算が実行されたことを通知します。"
+msgstr "Señala que se realizó una operación no válida."
 
-#: ../../library/decimal.rst:1604
+#: ../Doc/library/decimal.rst:1604
 msgid ""
 "Indicates that an operation was requested that does not make sense. If not "
-"trapped, returns ``NaN``.  Possible causes include::"
+"trapped, returns :const:`NaN`.  Possible causes include::"
 msgstr ""
+"Indica que se solicitó una operación que no tiene lógica. Si esta señal no "
+"está atrapada, se retorna :const:`NaN`. Las posibles causas incluyen::"
 
-#: ../../library/decimal.rst:1620
+#: ../Doc/library/decimal.rst:1620
 msgid "Numerical overflow."
-msgstr "数値オーバフローを示すシグナルです。"
+msgstr "Desbordamiento numérico."
 
-#: ../../library/decimal.rst:1622
+#: ../Doc/library/decimal.rst:1622
 msgid ""
-"Indicates the exponent is larger than :attr:`Context.Emax` after rounding "
-"has occurred.  If not trapped, the result depends on the rounding mode, "
-"either pulling inward to the largest representable finite number or rounding "
-"outward to ``Infinity``.  In either case, :class:`Inexact` and :class:"
+"Indicates the exponent is larger than :attr:`Emax` after rounding has "
+"occurred.  If not trapped, the result depends on the rounding mode, either "
+"pulling inward to the largest representable finite number or rounding "
+"outward to :const:`Infinity`.  In either case, :class:`Inexact` and :class:"
 "`Rounded` are also signaled."
 msgstr ""
+"Indica que el exponente es mayor que :attr:`max` después de que se haya "
+"producido el redondeo. Si no está atrapada, el resultado depende del modo de "
+"redondeo, ya sea tirando hacia adentro hasta el mayor número finito "
+"representable o redondeando hacia afuera a :const:`Infinity`. En cualquier "
+"caso, también se activan las señales :class:`Inexact` y :class:`Rounded`."
 
-#: ../../library/decimal.rst:1631
+#: ../Doc/library/decimal.rst:1631
 msgid "Rounding occurred though possibly no information was lost."
-msgstr "情報が全く失われていない場合も含み、値丸めが起きたときのシグナルです。"
+msgstr ""
+"Se produjo un redondeo, aunque posiblemente no hubo pérdida de información."
 
-#: ../../library/decimal.rst:1633
+#: ../Doc/library/decimal.rst:1633
 msgid ""
 "Signaled whenever rounding discards digits; even if those digits are zero "
-"(such as rounding ``5.00`` to ``5.0``).  If not trapped, returns the result "
-"unchanged.  This signal is used to detect loss of significant digits."
+"(such as rounding :const:`5.00` to :const:`5.0`).  If not trapped, returns "
+"the result unchanged.  This signal is used to detect loss of significant "
+"digits."
 msgstr ""
+"Señal lanzada cada vez que el redondeo descarta dígitos; incluso si esos "
+"dígitos son cero (como al redondear :const:`5.00` a :const:`5.0`). Si no "
+"está atrapada, se retorna el resultado sin cambios. Esta señal se utiliza "
+"para detectar la pérdida de dígitos significativos."
 
-#: ../../library/decimal.rst:1641
-msgid "Exponent was lower than :attr:`~Context.Emin` prior to rounding."
-msgstr ""
+#: ../Doc/library/decimal.rst:1641
+msgid "Exponent was lower than :attr:`Emin` prior to rounding."
+msgstr "El exponente antes del redondeo era menor que :attr:`Emin`."
 
-#: ../../library/decimal.rst:1643
+#: ../Doc/library/decimal.rst:1643
 msgid ""
 "Occurs when an operation result is subnormal (the exponent is too small). If "
 "not trapped, returns the result unchanged."
 msgstr ""
-"演算結果が微小である場合 (指数が小さすぎる場合) に発生します。このシグナルを"
-"トラップしなければ、演算結果をそのまま返します。"
+"Ocurre cuando el resultado de una operación es subnormal (el exponente es "
+"demasiado pequeño). Si no está atrapada, se retorna el resultado sin cambios."
 
-#: ../../library/decimal.rst:1649
+#: ../Doc/library/decimal.rst:1649
 msgid "Numerical underflow with result rounded to zero."
-msgstr "演算結果が値丸めによってゼロになった場合に生じる数値アンダフローです。"
+msgstr "Desbordamiento numérico negativo con resultado redondeado a cero."
 
-#: ../../library/decimal.rst:1651
+#: ../Doc/library/decimal.rst:1651
 msgid ""
 "Occurs when a subnormal result is pushed to zero by rounding. :class:"
 "`Inexact` and :class:`Subnormal` are also signaled."
 msgstr ""
-"演算結果が微小なため、値丸めによってゼロになった場合に発生します。 :class:"
-"`Inexact` および :class:`Subnormal` シグナルも同時に発生します。"
+"Ocurre cuando un resultado subnormal se lleva a cero mediante redondeo. :"
+"class:`Inexact` y :class:`Subnormal` también se señalan."
 
-#: ../../library/decimal.rst:1657
+#: ../Doc/library/decimal.rst:1657
 msgid "Enable stricter semantics for mixing floats and Decimals."
-msgstr "float と Decimal の混合の厳密なセマンティクスを有効にします。"
+msgstr ""
+"Habilita una semántica más estricta para mezclar flotantes y objetos Decimal."
 
-#: ../../library/decimal.rst:1659
+#: ../Doc/library/decimal.rst:1659
 msgid ""
 "If the signal is not trapped (default), mixing floats and Decimals is "
 "permitted in the :class:`~decimal.Decimal` constructor, :meth:`~decimal."
@@ -2041,44 +2330,50 @@ msgid ""
 "conversions with :meth:`~decimal.Decimal.from_float` or :meth:`~decimal."
 "Context.create_decimal_from_float` do not set the flag."
 msgstr ""
-"シグナルがトラップされなかった場合 (デフォルト)、:class:`~decimal.Decimal` コ"
-"ンストラクタ、 :meth:`~decimal.Context.create_decimal` 、およびすべての比較演"
-"算子において float と Decimal の混合が許されます。変換も比較も正確です。コン"
-"テキストフラグ内に :exc:`FloatOperation` を設定することで、混合操作は現れるた"
-"びに暗黙に記録されます。 :meth:`~decimal.Decimal.from_float` や :meth:"
-"`~decimal.Context.create_decimal_from_float` による明示的な変換はフラグを設定"
-"しません。"
+"Si la señal no está atrapada (predeterminado), se permite mezclar flotantes "
+"y objetos Decimal en el constructor de :class:`~decimal.Decimal`, en el "
+"método :meth:`~decimal.Context.create_decimal` y en todos los operadores de "
+"comparación. Tanto la conversión como las comparaciones son exactas. "
+"Cualquier ocurrencia de una operación mixta se registra silenciosamente "
+"estableciendo :exc:`FloatOperation` a los flags del contexto. Las "
+"conversiones explícitas usando :meth:`~decimal.Decimal.from_float` o :meth:"
+"`~decimal.Context.create_decimal_from_float` no establecen el flag."
 
-#: ../../library/decimal.rst:1667
+#: ../Doc/library/decimal.rst:1667
 msgid ""
 "Otherwise (the signal is trapped), only equality comparisons and explicit "
 "conversions are silent. All other mixed operations raise :exc:"
 "`FloatOperation`."
 msgstr ""
-"そうでなければ (シグナルがトラップされれば)、等価性比較および明示的な変換のみ"
-"が静かにに行われ、その他の混合演算は :exc:`FloatOperation` を送出します。"
+"En caso contrario (la señal está atrapada), solo las comparaciones de "
+"igualdad y las conversiones explícitas permanecen silenciadas. Todas las "
+"demás operaciones mixtas lanzan una excepción :exc:`FloatOperation`."
 
-#: ../../library/decimal.rst:1671
+#: ../Doc/library/decimal.rst:1671
 msgid "The following table summarizes the hierarchy of signals::"
-msgstr "これらのシグナルの階層構造をまとめると、以下の表のようになります::"
+msgstr "La siguiente tabla resume la jerarquía de señales::"
 
-#: ../../library/decimal.rst:1692
+#: ../Doc/library/decimal.rst:1692
 msgid "Floating Point Notes"
-msgstr "浮動小数点数に関する注意"
+msgstr "Notas sobre la representación en coma flotante"
 
-#: ../../library/decimal.rst:1696
+#: ../Doc/library/decimal.rst:1696
 msgid "Mitigating round-off error with increased precision"
-msgstr "精度を上げて丸め誤差を抑制する"
+msgstr "Mitigación del error de redondeo usando mayor precisión"
 
-#: ../../library/decimal.rst:1698
+#: ../Doc/library/decimal.rst:1698
 msgid ""
 "The use of decimal floating point eliminates decimal representation error "
-"(making it possible to represent ``0.1`` exactly); however, some operations "
-"can still incur round-off error when non-zero digits exceed the fixed "
-"precision."
+"(making it possible to represent :const:`0.1` exactly); however, some "
+"operations can still incur round-off error when non-zero digits exceed the "
+"fixed precision."
 msgstr ""
+"El uso de la coma flotante decimal elimina el error de representación "
+"decimal (haciendo posible representar :const:`0.1` de forma exacta). Sin "
+"embargo, algunas operaciones aún pueden incurrir en errores de redondeo "
+"cuando los dígitos distintos de cero exceden la precisión fija."
 
-#: ../../library/decimal.rst:1702
+#: ../Doc/library/decimal.rst:1702
 msgid ""
 "The effects of round-off error can be amplified by the addition or "
 "subtraction of nearly offsetting quantities resulting in loss of "
@@ -2086,31 +2381,35 @@ msgid ""
 "floating point arithmetic with insufficient precision causes the breakdown "
 "of the associative and distributive properties of addition:"
 msgstr ""
-"値丸めによる誤差の影響は、桁落ちを生じるような、ほとんど相殺される量での加算"
-"や減算によって増幅されます。Knuth は、十分でない計算精度の下で値丸めを伴う浮"
-"動小数点演算を行った結果、加算の結合則や分配則における恒等性が崩れてしまう例"
-"を二つ示しています:"
+"Los efectos del error de redondeo pueden amplificarse mediante la suma o "
+"resta de cantidades casi compensadas, lo que da como resultado una pérdida "
+"de significación. Knuth proporciona dos ejemplos instructivos en los que la "
+"aritmética de coma flotante redondeada con precisión insuficiente provoca la "
+"ruptura de las propiedades asociativas y distributivas de la suma:"
 
-#: ../../library/decimal.rst:1726
+#: ../Doc/library/decimal.rst:1726
 msgid ""
 "The :mod:`decimal` module makes it possible to restore the identities by "
 "expanding the precision sufficiently to avoid loss of significance:"
 msgstr ""
-":mod:`decimal` モジュールでは、最下桁を失わないように十分に計算精度を広げるこ"
-"とで、上で問題にしたような恒等性をとりもどせます:"
+"El módulo :mod:`decimal` permite restaurar las identidades ampliando la "
+"precisión lo suficiente para evitar la pérdida de significación:"
 
-#: ../../library/decimal.rst:1746
+#: ../Doc/library/decimal.rst:1746
 msgid "Special values"
-msgstr "特殊値"
+msgstr "Valores especiales"
 
-#: ../../library/decimal.rst:1748
+#: ../Doc/library/decimal.rst:1748
 msgid ""
 "The number system for the :mod:`decimal` module provides special values "
-"including ``NaN``, ``sNaN``, ``-Infinity``, ``Infinity``, and two zeros, "
-"``+0`` and ``-0``."
+"including :const:`NaN`, :const:`sNaN`, :const:`-Infinity`, :const:"
+"`Infinity`, and two zeros, :const:`+0` and :const:`-0`."
 msgstr ""
+"El sistema numérico para el módulo :mod:`decimal` proporciona valores "
+"especiales que incluyen: :const:`NaN`, :const:`sNaN`, :const:`-Infinity`, :"
+"const:`Infinity`, y dos ceros, :const:`+0` y :const:`-0`."
 
-#: ../../library/decimal.rst:1752
+#: ../Doc/library/decimal.rst:1752
 msgid ""
 "Infinities can be constructed directly with:  ``Decimal('Infinity')``. Also, "
 "they can arise from dividing by zero when the :exc:`DivisionByZero` signal "
@@ -2118,69 +2417,98 @@ msgid ""
 "infinity can result from rounding beyond the limits of the largest "
 "representable number."
 msgstr ""
-"無限大 (Infinity) は ``Decimal('Infinity')`` で直接構築できます。また、 :exc:"
-"`DivisionByZero` をトラップせずにゼロで除算を行った場合にも出てきます。同様"
-"に、 :exc:`Overflow` シグナルをトラップしなければ、表現可能な最大の数値の制限"
-"を越えた値を丸めたときに出てきます。"
+"Los infinitos se pueden construir directamente con ``Decimal('Infinity')``. "
+"Además, pueden surgir al dividir entre cero cuando la señal :exc:"
+"`DivisionByZero` no es interceptada. Asimismo, cuando la señal :exc:"
+"`Overflow` no es interceptada, un infinito puede resultar del redondeo más "
+"allá de los límites del mayor número representable."
 
-#: ../../library/decimal.rst:1757
+#: ../Doc/library/decimal.rst:1757
 msgid ""
 "The infinities are signed (affine) and can be used in arithmetic operations "
 "where they get treated as very large, indeterminate numbers.  For instance, "
 "adding a constant to infinity gives another infinite result."
 msgstr ""
-"無限大には符号があり (アフィン: affine であり)、算術演算に使用でき、非常に巨"
-"大で不確定の(indeterminate)値として扱われます。例えば、無限大に何らかの定数を"
-"加算すると、演算結果は別の無限大になります。"
+"Los infinitos tienen signo (afín) y se pueden usar en operaciones "
+"aritméticas donde se tratan como números muy grandes e indeterminados. Por "
+"ejemplo, adicionar una constante a infinito resulta en otro infinito."
 
-#: ../../library/decimal.rst:1761
+#: ../Doc/library/decimal.rst:1761
 msgid ""
-"Some operations are indeterminate and return ``NaN``, or if the :exc:"
+"Some operations are indeterminate and return :const:`NaN`, or if the :exc:"
 "`InvalidOperation` signal is trapped, raise an exception.  For example, "
-"``0/0`` returns ``NaN`` which means \"not a number\".  This variety of "
-"``NaN`` is quiet and, once created, will flow through other computations "
-"always resulting in another ``NaN``.  This behavior can be useful for a "
+"``0/0`` returns :const:`NaN` which means \"not a number\".  This variety of :"
+"const:`NaN` is quiet and, once created, will flow through other computations "
+"always resulting in another :const:`NaN`.  This behavior can be useful for a "
 "series of computations that occasionally have missing inputs --- it allows "
 "the calculation to proceed while flagging specific results as invalid."
 msgstr ""
+"Algunas operaciones son indeterminadas y retornan :const:`NaN`, o lanzan una "
+"excepción si la señal :exc:`InvalidOperation` es atrapada. Por ejemplo, "
+"``0/0`` retorna :const:`NaN` que significa \"no es un número\". Esta "
+"variedad de :const:`NaN` es silenciosa y, una vez creada, fluirá a través de "
+"otros cálculos dando siempre como resultado otro :const:`NaN`. Este "
+"comportamiento puede ser útil para una serie de cálculos a los que "
+"ocasionalmente les faltan entradas, permitiendo que el cálculo continúe "
+"mientras se marcan resultados específicos como no válidos."
 
-#: ../../library/decimal.rst:1769
+#: ../Doc/library/decimal.rst:1769
 msgid ""
-"A variant is ``sNaN`` which signals rather than remaining quiet after every "
-"operation.  This is a useful return value when an invalid result needs to "
-"interrupt a calculation for special handling."
+"A variant is :const:`sNaN` which signals rather than remaining quiet after "
+"every operation.  This is a useful return value when an invalid result needs "
+"to interrupt a calculation for special handling."
 msgstr ""
+"Una variante es :const:`sNaN`, que emite una señal en lugar de permanecer en "
+"silencio después de cada operación. Este es un valor de retorno útil cuando "
+"un resultado no válido requiere interrumpir un cálculo para un manejo "
+"especial."
 
-#: ../../library/decimal.rst:1773
+#: ../Doc/library/decimal.rst:1773
 msgid ""
 "The behavior of Python's comparison operators can be a little surprising "
-"where a ``NaN`` is involved.  A test for equality where one of the operands "
-"is a quiet or signaling ``NaN`` always returns :const:`False` (even when "
-"doing ``Decimal('NaN')==Decimal('NaN')``), while a test for inequality "
-"always returns :const:`True`.  An attempt to compare two Decimals using any "
-"of the ``<``, ``<=``, ``>`` or ``>=`` operators will raise the :exc:"
-"`InvalidOperation` signal if either operand is a ``NaN``, and return :const:"
-"`False` if this signal is not trapped.  Note that the General Decimal "
-"Arithmetic specification does not specify the behavior of direct "
-"comparisons; these rules for comparisons involving a ``NaN`` were taken from "
-"the IEEE 854 standard (see Table 3 in section 5.7).  To ensure strict "
-"standards-compliance, use the :meth:`~Decimal.compare` and :meth:`~Decimal."
-"compare_signal` methods instead."
+"where a :const:`NaN` is involved.  A test for equality where one of the "
+"operands is a quiet or signaling :const:`NaN` always returns :const:`False` "
+"(even when doing ``Decimal('NaN')==Decimal('NaN')``), while a test for "
+"inequality always returns :const:`True`.  An attempt to compare two Decimals "
+"using any of the ``<``, ``<=``, ``>`` or ``>=`` operators will raise the :"
+"exc:`InvalidOperation` signal if either operand is a :const:`NaN`, and "
+"return :const:`False` if this signal is not trapped.  Note that the General "
+"Decimal Arithmetic specification does not specify the behavior of direct "
+"comparisons; these rules for comparisons involving a :const:`NaN` were taken "
+"from the IEEE 854 standard (see Table 3 in section 5.7).  To ensure strict "
+"standards-compliance, use the :meth:`compare` and :meth:`compare-signal` "
+"methods instead."
 msgstr ""
+"El comportamiento de los operadores de comparación de Python puede ser un "
+"poco sorprendente cuando está involucrado un valor :const:`NaN`. Una prueba "
+"de igualdad donde uno de los operandos es un :const:`NaN` silencioso o "
+"señalizador siempre retorna :const:`False` (incluso cuando se hace "
+"``Decimal('NaN')==Decimal('NaN')``), mientras que una prueba de desigualdad "
+"siempre retorna :const:`True`. Un intento de comparar dos objetos Decimal "
+"usando cualquiera de los operadores ``<``, ``<=``, ``>`` o ``>=`` lanzará la "
+"señal :exc:`InvalidOperation` si alguno de los operandos es :const:`NaN`, y "
+"retornará :const:`False` si esta señal no es capturada. Ten en cuenta que la "
+"Especificación general de la aritmética decimal no especifica el "
+"comportamiento de las comparaciones directas. Estas reglas para las "
+"comparaciones que involucran a :const:`NaN` se tomaron del estándar IEEE 854 "
+"(consulta la Tabla 3 en la sección 5.7). Utiliza en su lugar los métodos :"
+"meth:`compare` y :meth:`compare-signal` para garantizar el cumplimiento "
+"estricto de los estándares."
 
-#: ../../library/decimal.rst:1786
+#: ../Doc/library/decimal.rst:1786
 msgid ""
 "The signed zeros can result from calculations that underflow. They keep the "
 "sign that would have resulted if the calculation had been carried out to "
 "greater precision.  Since their magnitude is zero, both positive and "
 "negative zeros are treated as equal and their sign is informational."
 msgstr ""
-"アンダフローの起きた計算は、符号付きのゼロ (signed zero) を返すことがありま"
-"す。符号は、より高い精度で計算を行った結果の符号と同じになります。符号付きゼ"
-"ロの大きさはやはりゼロなので、正のゼロと負のゼロは等しいとみなされ、符号は単"
-"なる参考にすぎません。"
+"Los ceros con signo pueden resultar de cálculos que desbordan la precisión "
+"establecida. Mantienen el signo que habría resultado si el cálculo se "
+"hubiera realizado con mayor precisión. Dado que su magnitud es cero, los "
+"ceros positivos y negativos se tratan como iguales y su signo es solo "
+"informativo."
 
-#: ../../library/decimal.rst:1791
+#: ../Doc/library/decimal.rst:1791
 msgid ""
 "In addition to the two signed zeros which are distinct yet equal, there are "
 "various representations of zero with differing precisions yet equivalent in "
@@ -2188,46 +2516,47 @@ msgid ""
 "normalized floating point representations, it is not immediately obvious "
 "that the following calculation returns a value equal to zero:"
 msgstr ""
-"二つの符号付きゼロが区別されているのに等価であることに加えて、異なる精度にお"
-"けるゼロの表現はまちまちなのに、値は等価とみなされるということがあります。こ"
-"れに慣れるには多少時間がかかります。正規化浮動小数点表現に目が慣れてしまう"
-"と、以下の計算でゼロに等しい値が返っているとは即座に分かりません:"
+"Además de los dos ceros con signo, que son distintos pero iguales, hay "
+"varias representaciones del cero con diferente precisión pero equivalentes "
+"en valor. Esto requiere de algo de tiempo para acostumbrarse. Para un ojo "
+"habituado a las representaciones normalizadas de coma flotante, no es "
+"inmediatamente obvio que el siguiente cálculo retorne un valor igual a cero:"
 
-#: ../../library/decimal.rst:1806
+#: ../Doc/library/decimal.rst:1806
 msgid "Working with threads"
-msgstr "スレッドを使った処理"
+msgstr "Trabajando con hilos"
 
-#: ../../library/decimal.rst:1808
+#: ../Doc/library/decimal.rst:1808
 msgid ""
 "The :func:`getcontext` function accesses a different :class:`Context` object "
 "for each thread.  Having separate thread contexts means that threads may "
 "make changes (such as ``getcontext().prec=10``) without interfering with "
 "other threads."
 msgstr ""
-"関数 :func:`getcontext` は、スレッド毎に別々の :class:`Context` オブジェクト"
-"にアクセスします。別のスレッドコンテキストを持つということは、複数のスレッド"
-"が互いに影響を及ぼさずに (``getcontext().prec=10`` のような) 変更を適用できる"
-"ということです。"
+"La función :func:`getcontext` accede a un objeto :class:`Context` diferente "
+"para cada hilo. Tener contextos de hilo separados significa que los hilos "
+"pueden realizar cambios (como ``getcontext().prec=10``) sin interferir con "
+"otros hilos."
 
-#: ../../library/decimal.rst:1812
+#: ../Doc/library/decimal.rst:1812
 msgid ""
 "Likewise, the :func:`setcontext` function automatically assigns its target "
 "to the current thread."
 msgstr ""
-"同様に、:func:`setcontext` 関数は自動的に引数のコンテキストを現在のスレッドの"
-"コンテキストに設定します。"
+"Asimismo, la función :func:`setcontext` asigna automáticamente su objetivo "
+"al hilo actual."
 
-#: ../../library/decimal.rst:1815
+#: ../Doc/library/decimal.rst:1815
 msgid ""
 "If :func:`setcontext` has not been called before :func:`getcontext`, then :"
 "func:`getcontext` will automatically create a new context for use in the "
 "current thread."
 msgstr ""
-":func:`getcontext` を呼び出す前に :func:`setcontext` が呼び出されていなけれ"
-"ば、現在のスレッドで使うための新たなコンテキストを生成するために :func:"
-"`getcontext` が自動的に呼び出されます。"
+"Si :func:`setcontext` no ha sido invocada antes de :func:`getcontext`, "
+"entonces :func:`getcontext` creará automáticamente un nuevo contexto para "
+"usar en el hilo actual."
 
-#: ../../library/decimal.rst:1819
+#: ../Doc/library/decimal.rst:1819
 msgid ""
 "The new context is copied from a prototype context called *DefaultContext*. "
 "To control the defaults so that each thread will use the same values "
@@ -2235,163 +2564,187 @@ msgid ""
 "This should be done *before* any threads are started so that there won't be "
 "a race condition between threads calling :func:`getcontext`. For example::"
 msgstr ""
-"新たなコンテキストは、*DefaultContext* と呼ばれる雛形からコピーされます。アプ"
-"リケーションを通じて全てのスレッドに同じ値を使うようにデフォルトを設定したけ"
-"れば、*DefaultContext* オブジェクトを直接変更します。 :func:`getcontext` を呼"
-"び出すスレッド間で競合条件が生じないようにするため、*DefaultContext* への変更"
-"はいかなるスレッドを開始するよりも *前に* 行わなければなりません。以下に例を"
-"示します::"
+"El nuevo contexto es copiado a partir de un contexto prototipo llamado "
+"*DefaultContext*. Modifica directamente el objeto *DefaultContext* para "
+"controlar los valores predeterminados, de modo que cada hilo utilice los "
+"mismos valores en toda la aplicación. Esto debe hacerse *antes* de que se "
+"inicien los hilos, para evitar que tenga lugar una condición de carrera "
+"entre los mismos al invocar a :func:`getcontext`. Por ejemplo::"
 
-#: ../../library/decimal.rst:1844
+#: ../Doc/library/decimal.rst:1844
 msgid "Recipes"
-msgstr "レシピ"
+msgstr "Casos prácticos"
 
-#: ../../library/decimal.rst:1846
+#: ../Doc/library/decimal.rst:1846
 msgid ""
 "Here are a few recipes that serve as utility functions and that demonstrate "
 "ways to work with the :class:`Decimal` class::"
 msgstr ""
-":class:`Decimal` クラスの利用を実演している例をいくつか示します。これらはユー"
-"ティリティ関数としても利用できます::"
+"A continuación hay algunos casos prácticos que sirven como funciones de "
+"utilidad y que muestran formas de trabajar con la clase :class:`Decimal`::"
 
-#: ../../library/decimal.rst:2001
+#: ../Doc/library/decimal.rst:2001
 msgid "Decimal FAQ"
-msgstr "Decimal FAQ"
+msgstr "Preguntas frecuentes sobre decimal"
 
-#: ../../library/decimal.rst:2003
+#: ../Doc/library/decimal.rst:2003
 msgid ""
 "Q. It is cumbersome to type ``decimal.Decimal('1234.5')``.  Is there a way "
 "to minimize typing when using the interactive interpreter?"
 msgstr ""
-"Q. ``decimal.Decimal('1234.5')`` などと打ち込むのは煩わしいのですが、対話式イ"
-"ンタプリタを使う際にタイプ量を少なくする方法はありませんか?"
+"P. Es engorroso escribir ``decimal.Decimal('1234.5')``. ¿Hay alguna forma de "
+"minimizar la escritura cuando se usa el intérprete interactivo?"
 
-#: ../../library/decimal.rst:2006
+#: ../Doc/library/decimal.rst:2006
 msgid "A. Some users abbreviate the constructor to just a single letter:"
-msgstr "A. コンストラクタを1文字に縮める人もいるようです:"
+msgstr "R. Algunos usuarios abrevian el constructor a una sola letra:"
 
-#: ../../library/decimal.rst:2012
+#: ../Doc/library/decimal.rst:2012
 msgid ""
 "Q. In a fixed-point application with two decimal places, some inputs have "
 "many places and need to be rounded.  Others are not supposed to have excess "
 "digits and need to be validated.  What methods should be used?"
 msgstr ""
-"Q. 小数点以下2桁の固定小数点数のアプリケーションの中で、いくつかの入力が余計"
-"な桁を保持しているのでこれを丸めなければなりません。その他のものに余計な桁は"
-"なくそのまま使えます。どのメソッドを使うのがいいでしょうか?"
+"P. En una aplicación de coma fija con dos decimales, algunas entradas tienen "
+"muchos dígitos decimales y deben redondearse. En cambio, otras no tienen "
+"dígitos en exceso y deben ser validadas. ¿Qué métodos deben utilizarse?"
 
-#: ../../library/decimal.rst:2016
+#: ../Doc/library/decimal.rst:2016
 msgid ""
-"A. The :meth:`~Decimal.quantize` method rounds to a fixed number of decimal "
-"places. If the :const:`Inexact` trap is set, it is also useful for "
-"validation:"
+"A. The :meth:`quantize` method rounds to a fixed number of decimal places. "
+"If the :const:`Inexact` trap is set, it is also useful for validation:"
 msgstr ""
+"R. El método :meth:`quantize` redondea a un número fijo de decimales. Si se "
+"establece la trampa :const:`Inexact`, también es útil para la validación:"
 
-#: ../../library/decimal.rst:2034
+#: ../Doc/library/decimal.rst:2034
 msgid ""
 "Q. Once I have valid two place inputs, how do I maintain that invariant "
 "throughout an application?"
 msgstr ""
-"Q. 正当な2桁の入力が得られたとして、その正当性をアプリケーション実行中も変わ"
-"らず保ち続けるにはどうすればいいでしょうか?"
+"P. Si tengo entradas validadas con dos dígitos decimales, ¿cómo mantengo eso "
+"invariante en una aplicación?"
 
-#: ../../library/decimal.rst:2037
+#: ../Doc/library/decimal.rst:2037
 msgid ""
 "A. Some operations like addition, subtraction, and multiplication by an "
 "integer will automatically preserve fixed point.  Others operations, like "
 "division and non-integer multiplication, will change the number of decimal "
-"places and need to be followed-up with a :meth:`~Decimal.quantize` step:"
+"places and need to be followed-up with a :meth:`quantize` step:"
 msgstr ""
+"R. Algunas operaciones como la suma, la resta y la multiplicación por un "
+"número entero conservarán automáticamente el punto fijo. Otras operaciones, "
+"como la división y la multiplicación de números no enteros, cambiarán el "
+"número de lugares decimales y deberá aplicarse :meth:`quantize` después de "
+"ellas:"
 
-#: ../../library/decimal.rst:2055
+#: ../Doc/library/decimal.rst:2055
 msgid ""
 "In developing fixed-point applications, it is convenient to define functions "
-"to handle the :meth:`~Decimal.quantize` step:"
+"to handle the :meth:`quantize` step:"
 msgstr ""
+"Al desarrollar aplicaciones de coma fija, es conveniente definir funciones "
+"para gestionar el paso :meth:`quantize`:"
 
-#: ../../library/decimal.rst:2068
+#: ../Doc/library/decimal.rst:2068
 msgid ""
-"Q. There are many ways to express the same value.  The numbers ``200``, "
-"``200.000``, ``2E2``, and ``.02E+4`` all have the same value at various "
-"precisions. Is there a way to transform them to a single recognizable "
-"canonical value?"
+"Q. There are many ways to express the same value.  The numbers :const:"
+"`200`, :const:`200.000`, :const:`2E2`, and :const:`.02E+4` all have the same "
+"value at various precisions. Is there a way to transform them to a single "
+"recognizable canonical value?"
 msgstr ""
+"P. Hay muchas formas de expresar un mismo valor. Los números :const:`200`, :"
+"const:`200.000`, :const:`2E2` y :const:`.02E+4` tienen todos el mismo valor "
+"pero con varias precisiones. ¿Hay alguna manera de transformarlos en un "
+"único valor canónico reconocible?"
 
-#: ../../library/decimal.rst:2073
+#: ../Doc/library/decimal.rst:2073
 msgid ""
-"A. The :meth:`~Decimal.normalize` method maps all equivalent values to a "
-"single representative:"
+"A. The :meth:`normalize` method maps all equivalent values to a single "
+"representative:"
 msgstr ""
+"R. El método :meth:`normalize` mapea todos los valores equivalentes a un "
+"solo representante:"
 
-#: ../../library/decimal.rst:2080
+#: ../Doc/library/decimal.rst:2080
 msgid ""
 "Q. Some decimal values always print with exponential notation.  Is there a "
 "way to get a non-exponential representation?"
 msgstr ""
-"Q. ある種の十進数値はいつも指数表記で表示されます。指数表記以外の表示にする方"
-"法はありますか?"
+"P. Algunos valores decimales siempre se imprimen usando notación "
+"exponencial. ¿Hay alguna forma de obtener una representación no exponencial?"
 
-#: ../../library/decimal.rst:2083
+#: ../Doc/library/decimal.rst:2083
 msgid ""
 "A. For some values, exponential notation is the only way to express the "
-"number of significant places in the coefficient.  For example, expressing "
-"``5.0E+3`` as ``5000`` keeps the value constant but cannot show the "
+"number of significant places in the coefficient.  For example, expressing :"
+"const:`5.0E+3` as :const:`5000` keeps the value constant but cannot show the "
 "original's two-place significance."
 msgstr ""
+"R. Para algunos valores, la notación exponencial es la única forma de "
+"expresar el número de lugares significativos que tiene el coeficiente. Por "
+"ejemplo, expresar :const:`5.0E+3` como :const:`5000` mantiene el valor "
+"constante, pero no puede mostrar la significación de dos lugares que tiene "
+"el original."
 
-#: ../../library/decimal.rst:2088
+#: ../Doc/library/decimal.rst:2088
 msgid ""
 "If an application does not care about tracking significance, it is easy to "
 "remove the exponent and trailing zeroes, losing significance, but keeping "
 "the value unchanged:"
 msgstr ""
-"もしアプリケーションが有効数字の追跡を等閑視するならば、指数部や末尾のゼロを"
-"取り除き、有効数字を忘れ、しかし値を変えずにおくことは容易です:"
+"Si una aplicación no necesita preocuparse por el seguimiento de "
+"significación, es fácil eliminar el exponente y los ceros finales, perdiendo "
+"significación, pero manteniendo el valor sin cambios:"
 
-#: ../../library/decimal.rst:2098
+#: ../Doc/library/decimal.rst:2098
 msgid "Q. Is there a way to convert a regular float to a :class:`Decimal`?"
-msgstr "Q. 普通の float を :class:`Decimal` に変換できますか?"
+msgstr ""
+"P. ¿Hay alguna forma de convertir un flotante regular en un :class:`Decimal`?"
 
-#: ../../library/decimal.rst:2100
+#: ../Doc/library/decimal.rst:2100
 msgid ""
 "A. Yes, any binary floating point number can be exactly expressed as a "
 "Decimal though an exact conversion may take more precision than intuition "
 "would suggest:"
 msgstr ""
-"A. はい。どんな 2 進浮動小数点数も Decimal として正確に表現できます。ただし、"
-"正確な変換は直感的に考えたよりも多い桁になることがあります:"
+"R. Sí, cualquier número de coma flotante binario se puede expresar "
+"exactamente mediante un Decimal, aunque una conversión exacta puede requerir "
+"más precisión de la que sugiere la intuición:"
 
-#: ../../library/decimal.rst:2109
+#: ../Doc/library/decimal.rst:2109
 msgid ""
 "Q. Within a complex calculation, how can I make sure that I haven't gotten a "
 "spurious result because of insufficient precision or rounding anomalies."
 msgstr ""
-"Q. 複雑な計算の中で、精度不足や丸めの異常で間違った結果になっていないことをど"
-"うやって保証すれば良いでしょうか。"
+"P. Dentro de un cálculo complejo, cómo puedo asegurarme de que no he "
+"obtenido un resultado adulterado debido a una precisión insuficiente o "
+"anomalías de redondeo."
 
-#: ../../library/decimal.rst:2112
+#: ../Doc/library/decimal.rst:2112
 msgid ""
 "A. The decimal module makes it easy to test results.  A best practice is to "
 "re-run calculations using greater precision and with various rounding modes. "
 "Widely differing results indicate insufficient precision, rounding mode "
 "issues, ill-conditioned inputs, or a numerically unstable algorithm."
 msgstr ""
-"A. decimal モジュールでは検算は容易です。一番良い方法は、大きめの精度や様々な"
-"丸めモードで再計算してみることです。大きく異なった結果が出てきたら、精度不足"
-"や丸めの問題や悪条件の入力、または数値計算的に不安定なアルゴリズムを示唆して"
-"います。"
+"R. El módulo decimal facilita la comprobación de resultados. Una buena "
+"práctica es volver a ejecutar los cálculos con mayor precisión y con varios "
+"modos de redondeo. La obtención de resultados muy dispares indica una "
+"precisión insuficiente, problemas relacionados con el modo de redondeo, "
+"entradas mal acondicionadas o un algoritmo numéricamente inestable."
 
-#: ../../library/decimal.rst:2117
+#: ../Doc/library/decimal.rst:2117
 msgid ""
 "Q. I noticed that context precision is applied to the results of operations "
 "but not to the inputs.  Is there anything to watch out for when mixing "
 "values of different precisions?"
 msgstr ""
-"Q. コンテキストの精度は計算結果には適用されていますが入力には適用されていない"
-"ようです。様々に異なる精度の入力値を混ぜて計算する時に注意すべきことはありま"
-"すか?"
+"P. Noté que la precisión del contexto se aplica a los resultados de las "
+"operaciones pero no a las entradas. ¿Hay algo a tener en cuenta al mezclar "
+"valores con distintas precisiones?"
 
-#: ../../library/decimal.rst:2121
+#: ../Doc/library/decimal.rst:2121
 msgid ""
 "A. Yes.  The principle is that all values are considered to be exact and so "
 "is the arithmetic on those values.  Only the results are rounded.  The "
@@ -2399,32 +2752,34 @@ msgid ""
 "disadvantage is that the results can look odd if you forget that the inputs "
 "haven't been rounded:"
 msgstr ""
-"A. はい。原則として入力値は正確であると見做しておりそれらの値を使った計算も同"
-"様です。結果だけが丸められます。入力の強みは \"what you type is what you "
-"get\" (打ち込んだ値が得られる値)という点にあります。入力が丸められないという"
-"ことを忘れていると結果が奇妙に見えるというのは弱点です:"
+"R. Sí. El principio es que todos los valores se consideran exactos y también "
+"lo es la aritmética de esos valores. Solo se redondean los resultados. La "
+"ventaja para las entradas es que \"lo que escribes es lo que obtienes\". Una "
+"desventaja es que los resultados pueden parecer extraños si olvidas que las "
+"entradas no se han redondeado:"
 
-#: ../../library/decimal.rst:2134
+#: ../Doc/library/decimal.rst:2134
 msgid ""
 "The solution is either to increase precision or to force rounding of inputs "
 "using the unary plus operation:"
 msgstr ""
-"解決策は、精度を増やすか、単項プラス演算子を使って入力の丸めを強制することで"
-"す:"
+"La solución es aumentar la precisión o forzar el redondeo de las entradas "
+"utilizando la operación unaria más:"
 
-#: ../../library/decimal.rst:2143
+#: ../Doc/library/decimal.rst:2143
 msgid ""
 "Alternatively, inputs can be rounded upon creation using the :meth:`Context."
 "create_decimal` method:"
 msgstr ""
-"もしくは、入力を :meth:`Context.create_decimal` を使って生成時に丸めてしまう"
-"こともできます:"
+"Alternativamente, las entradas se pueden redondear en el momento que se "
+"crean usando el método :meth:`Context.create_decimal`:"
 
-#: ../../library/decimal.rst:2149
+#: ../Doc/library/decimal.rst:2149
 msgid "Q. Is the CPython implementation fast for large numbers?"
-msgstr "Q. CPython 実装は大きな数に対しても速いでしょうか?"
+msgstr "P. ¿La implementación de CPython es rápida para números grandes?"
 
-#: ../../library/decimal.rst:2151
+#: ../Doc/library/decimal.rst:2151
+#, fuzzy
 msgid ""
 "A. Yes.  In the CPython and PyPy3 implementations, the C/CFFI versions of "
 "the decimal module integrate the high speed `libmpdec <https://www.bytereef."
@@ -2436,43 +2791,74 @@ msgid ""
 "Discrete_Fourier_transform_(general)#Number-theoretic_transform>`_ for very "
 "large numbers."
 msgstr ""
+"R. Sí. En las implementaciones de CPython y PyPy3, las versiones C/CFFI del "
+"módulo decimal integran la biblioteca de alta velocidad `libmpdec <https://"
+"www.bytereef.org/mpdecimal/doc/libmpdec/index.html>`_ para aritmética de "
+"precisión arbitraria de coma flotante decimal correctamente redondeada [#]_. "
+"``libmpdec`` usa la `multiplicación de Karatsuba <https://es.wikipedia.org/"
+"wiki/Algoritmo_de_Karatsuba>`_ para números de tamaño mediano y la "
+"transformada teórico-numérica (`Number Theoretic Transform <https://en."
+"wikipedia.org/wiki/Discrete_Fourier_transform_(general)#Number-"
+"theoretic_transform>`_) para números muy grandes."
 
-#: ../../library/decimal.rst:2161
+#: ../Doc/library/decimal.rst:2161
 msgid ""
 "The context must be adapted for exact arbitrary precision arithmetic. :attr:"
-"`~Context.Emin` and :attr:`~Context.Emax` should always be set to the "
-"maximum values, :attr:`~Context.clamp` should always be 0 (the default).  "
-"Setting :attr:`~Context.prec` requires some care."
+"`Emin` and :attr:`Emax` should always be set to the maximum values, :attr:"
+"`clamp` should always be 0 (the default).  Setting :attr:`prec` requires "
+"some care."
 msgstr ""
+"El contexto debe adaptarse para una aritmética de precisión arbitraria "
+"exacta. :attr:`Emin` y :attr:`Emax` siempre deben establecerse en sus "
+"valores máximos, :attr:`clamp` siempre debe ser 0 (el valor predeterminado). "
+"Establecer :attr:`prec` requiere cierto cuidado."
 
-#: ../../library/decimal.rst:2165
+#: ../Doc/library/decimal.rst:2165
 msgid ""
 "The easiest approach for trying out bignum arithmetic is to use the maximum "
-"value for :attr:`~Context.prec` as well [#]_::"
+"value for :attr:`prec` as well [#]_::"
 msgstr ""
+"El enfoque más fácil para probar la aritmética bignum es usar también el "
+"valor máximo para :attr:`prec` [#]_::"
 
-#: ../../library/decimal.rst:2174
+#: ../Doc/library/decimal.rst:2174
 msgid ""
 "For inexact results, :attr:`MAX_PREC` is far too large on 64-bit platforms "
 "and the available memory will be insufficient::"
 msgstr ""
+"Para resultados inexactos, :attr:`MAX_PREC` es demasiado grande en "
+"plataformas de 64 bits y la memoria disponible será insuficiente::"
 
-#: ../../library/decimal.rst:2182
+#: ../Doc/library/decimal.rst:2182
 msgid ""
 "On systems with overallocation (e.g. Linux), a more sophisticated approach "
-"is to adjust :attr:`~Context.prec` to the amount of available RAM.  Suppose "
-"that you have 8GB of RAM and expect 10 simultaneous operands using a maximum "
-"of 500MB each::"
+"is to adjust :attr:`prec` to the amount of available RAM.  Suppose that you "
+"have 8GB of RAM and expect 10 simultaneous operands using a maximum of 500MB "
+"each::"
 msgstr ""
+"En sistemas con sobreasignación (por ejemplo, Linux), un enfoque más "
+"sofisticado es establecer :attr:`prec` a la cantidad de RAM disponible. "
+"Supongamos que tenemos 8GB de RAM y esperamos 10 operandos simultáneos "
+"usando un máximo de 500 MB cada uno::"
 
-#: ../../library/decimal.rst:2206
+#: ../Doc/library/decimal.rst:2206
 msgid ""
 "In general (and especially on systems without overallocation), it is "
 "recommended to estimate even tighter bounds and set the :attr:`Inexact` trap "
 "if all calculations are expected to be exact."
 msgstr ""
+"En general (y especialmente en sistemas sin sobreasignación), se recomienda "
+"estimar límites aún más estrictos y establecer la trampa :attr:`Inexact` si "
+"se espera que todos los cálculos sean exactos."
 
-#: ../../library/decimal.rst:2215
+#: ../Doc/library/decimal.rst:2215
 msgid ""
 "This approach now works for all exact results except for non-integer powers."
 msgstr ""
+"Este enfoque ahora funciona para todos los resultados exactos excepto para "
+"las potencias no enteras. También retro-portado a 3.7 y 3.8."
+
+#~ msgid "Classmethod that converts a float to a decimal number, exactly."
+#~ msgstr ""
+#~ "Método de clase que convierte un flotante en un número decimal, de forma "
+#~ "exacta."

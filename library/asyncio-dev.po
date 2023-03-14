@@ -1,145 +1,149 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Takeshi Nakazato, 2022
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 00:54+0000\n"
-"Last-Translator: Takeshi Nakazato, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2023-02-28 11:21-0300\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: ../../library/asyncio-dev.rst:7
+#: ../Doc/library/asyncio-dev.rst:7
 msgid "Developing with asyncio"
-msgstr "asyncio での開発"
+msgstr "Desarrollando con asyncio"
 
-#: ../../library/asyncio-dev.rst:9
+#: ../Doc/library/asyncio-dev.rst:9
 msgid ""
 "Asynchronous programming is different from classic \"sequential\" "
 "programming."
 msgstr ""
-"非同期プログラミングは伝統的な \"同期的\" プログラミングとは異なります。"
+"La programación asincrónica es diferente a la programación \"secuencial\" "
+"clásica."
 
-#: ../../library/asyncio-dev.rst:12
+#: ../Doc/library/asyncio-dev.rst:12
 msgid ""
 "This page lists common mistakes and traps and explains how to avoid them."
 msgstr ""
-"このページはよくある間違いや落とし穴を列挙し、それらを回避する方法を説明しま"
-"す。"
+"Esta página enumera errores y trampas comunes y explica cómo evitarlos."
 
-#: ../../library/asyncio-dev.rst:19
+#: ../Doc/library/asyncio-dev.rst:19
 msgid "Debug Mode"
-msgstr "デバッグモード"
+msgstr "Modo depuración"
 
-#: ../../library/asyncio-dev.rst:21
+#: ../Doc/library/asyncio-dev.rst:21
 msgid ""
 "By default asyncio runs in production mode.  In order to ease the "
 "development asyncio has a *debug mode*."
 msgstr ""
-"asyncio はデフォルトで本運用モードで実行されます。いっぽう、開発を容易にする"
-"ために asyncio は \"デバッグモード\" を持っています。"
+"Por defecto asyncio se ejecuta en modo producción. Para facilitar el "
+"desarrollo asyncio tiene un *modo depuración*."
 
-#: ../../library/asyncio-dev.rst:24
+#: ../Doc/library/asyncio-dev.rst:24
 msgid "There are several ways to enable asyncio debug mode:"
-msgstr "asyncio のデバッグモードを有効化する方法はいくつかあります:"
+msgstr "Hay varias maneras de habilitar el modo depuración de asyncio:"
 
-#: ../../library/asyncio-dev.rst:26
+#: ../Doc/library/asyncio-dev.rst:26
 msgid "Setting the :envvar:`PYTHONASYNCIODEBUG` environment variable to ``1``."
-msgstr ":envvar:`PYTHONASYNCIODEBUG` 環境変数の値を ``1`` に設定する。"
+msgstr ""
+"Definiendo la variable de entorno :envvar:`PYTHONASYNCIODEBUG` a ``1``."
 
-#: ../../library/asyncio-dev.rst:28
+#: ../Doc/library/asyncio-dev.rst:28
 msgid "Using the :ref:`Python Development Mode <devmode>`."
-msgstr ":ref:`Python 開発モード <devmode>` を使う。"
+msgstr "Usando :ref:`Modo de Desarrollo de Python <devmode>`."
 
-#: ../../library/asyncio-dev.rst:30
+#: ../Doc/library/asyncio-dev.rst:30
 msgid "Passing ``debug=True`` to :func:`asyncio.run`."
-msgstr ":func:`asyncio.run` 実行時に ``debug=True`` を設定する。"
+msgstr "Pasando ``debug=True`` a :func:`asyncio.run`."
 
-#: ../../library/asyncio-dev.rst:32
+#: ../Doc/library/asyncio-dev.rst:32
 msgid "Calling :meth:`loop.set_debug`."
-msgstr ":meth:`loop.set_debug` を呼び出す。"
+msgstr "Invocando :meth:`loop.set_debug`."
 
-#: ../../library/asyncio-dev.rst:34
+#: ../Doc/library/asyncio-dev.rst:34
 msgid "In addition to enabling the debug mode, consider also:"
-msgstr "デバッグモードを有効化することに加え、以下も検討してください:"
+msgstr "Además de habilitar el modo depuración, considere también:"
 
-#: ../../library/asyncio-dev.rst:36
+#: ../Doc/library/asyncio-dev.rst:36
 msgid ""
 "setting the log level of the :ref:`asyncio logger <asyncio-logger>` to :py:"
 "data:`logging.DEBUG`, for example the following snippet of code can be run "
 "at startup of the application::"
 msgstr ""
-":ref:`asyncio ロガー <asyncio-logger>` のログレベルを :py:data:`logging."
-"DEBUG` に設定します。例えばアプリケーションの起動時に以下を実行します::"
+"definir el nivel de log del :ref:`asyncio logger <asyncio-logger>` a :py:"
+"data:`logging.DEBUG`, por ejemplo el siguiente fragmento de código puede ser "
+"ejecutado al inicio de la aplicación:"
 
-#: ../../library/asyncio-dev.rst:42
+#: ../Doc/library/asyncio-dev.rst:42
 msgid ""
 "configuring the :mod:`warnings` module to display :exc:`ResourceWarning` "
 "warnings.  One way of doing that is by using the :option:`-W` ``default`` "
 "command line option."
 msgstr ""
-":mod:`warnings` モジュールが :exc:`ResourceWarning` 警告を表示するように設定"
-"します。やり方のひとつは :option:`-W` ``default`` コマンドラインオプションを"
-"使うことです。"
+"configurando el módulo :mod:`warnings` para mostrar advertencias :exc:"
+"`ResourceWarning`. Una forma de hacerlo es usando la opción :option:`-W` "
+"``default`` de la línea de comandos."
 
-#: ../../library/asyncio-dev.rst:47
+#: ../Doc/library/asyncio-dev.rst:47
 msgid "When the debug mode is enabled:"
-msgstr "デバッグモードが有効化されたときの動作:"
+msgstr "Cuando el modo depuración está habilitado:"
 
-#: ../../library/asyncio-dev.rst:49
+#: ../Doc/library/asyncio-dev.rst:49
 msgid ""
 "asyncio checks for :ref:`coroutines that were not awaited <asyncio-coroutine-"
 "not-scheduled>` and logs them; this mitigates the \"forgotten await\" "
 "pitfall."
 msgstr ""
-"asyncio は :ref:`待ち受け処理 (await) を伴わないコルーチン <asyncio-"
-"coroutine-not-scheduled>` がないかをチェックし、それらを記録します; これによ"
-"り \"待ち受け忘れ\" の落とし穴にはまる可能性を軽減します。"
+"asyncio comprueba las :ref:`corrutinas que no son esperadas <asyncio-"
+"coroutine-not-scheduled>` y las registra; esto mitiga la dificultad de las "
+"\"esperas olvidadas\"."
 
-#: ../../library/asyncio-dev.rst:53
+#: ../Doc/library/asyncio-dev.rst:53
 msgid ""
 "Many non-threadsafe asyncio APIs (such as :meth:`loop.call_soon` and :meth:"
 "`loop.call_at` methods) raise an exception if they are called from a wrong "
 "thread."
 msgstr ""
-"スレッドセーフでない asyncio APIs の多く (:meth:`loop.call_soon` や :meth:"
-"`loop.call_at` など) は、誤ったスレッドから呼び出されたときに例外を送出しま"
-"す。"
+"Muchas APIs asyncio que no son seguras para hilos (como los métodos :meth:"
+"`loop.call_soon` y :meth:`loop.call_at`) generan una excepción si son "
+"llamados desde un hilo equivocado."
 
-#: ../../library/asyncio-dev.rst:57
+#: ../Doc/library/asyncio-dev.rst:57
 msgid ""
 "The execution time of the I/O selector is logged if it takes too long to "
 "perform an I/O operation."
 msgstr ""
-"I/O セレクタが I/O 処理を実行する時間が長すぎる場合、その実行時間が記録されま"
-"す。"
+"El tiempo de ejecución del selector E/S es registrado si tarda demasiado "
+"tiempo en realizar una operación E/S."
 
-#: ../../library/asyncio-dev.rst:60
+#: ../Doc/library/asyncio-dev.rst:60
 msgid ""
 "Callbacks taking longer than 100 milliseconds are logged.  The :attr:`loop."
 "slow_callback_duration` attribute can be used to set the minimum execution "
 "duration in seconds that is considered \"slow\"."
 msgstr ""
+"Los callbacks que tardan más de 100ms son registrados. El atributo :attr:"
+"`loop.slow_callback_duration` puede ser usado para definir la duración "
+"mínima de ejecución en segundos que se considere como \"lenta\"."
 
-#: ../../library/asyncio-dev.rst:68
+#: ../Doc/library/asyncio-dev.rst:68
 msgid "Concurrency and Multithreading"
-msgstr "並行処理とマルチスレッド処理"
+msgstr "Concurrencia y multihilo"
 
-#: ../../library/asyncio-dev.rst:70
+#: ../Doc/library/asyncio-dev.rst:70
 msgid ""
 "An event loop runs in a thread (typically the main thread) and executes all "
 "callbacks and Tasks in its thread.  While a Task is running in the event "
@@ -147,65 +151,64 @@ msgid ""
 "``await`` expression, the running Task gets suspended, and the event loop "
 "executes the next Task."
 msgstr ""
-"イベントループはスレッド（典型的にはメインスレッド）内で動作し、すべてのコー"
-"ルバックとタスクをそのスレッド内で実行します。ひとつのタスクがイベントループ"
-"内で実行される間、他のタスクを同じスレッド内で実行することはできません。タス"
-"クが ``await`` 式を実行すると、実行中のタスクはサスペンドされ、イベントループ"
-"は次のタスクを実行します。"
+"Un bucle de eventos se ejecuta en un hilo (generalmente el hilo principal) y "
+"ejecuta todos los callbacks y las Tareas en su hilo. Mientras una Tarea está "
+"ejecutándose en el bucle de eventos, ninguna otra Tarea puede ejecutarse en "
+"el mismo hilo. Cuando una Tarea ejecuta una expresión ``await``, la Tarea en "
+"ejecución se suspende y el bucle de eventos ejecuta la siguiente Tarea."
 
-#: ../../library/asyncio-dev.rst:76
+#: ../Doc/library/asyncio-dev.rst:76
 msgid ""
 "To schedule a :term:`callback` from another OS thread, the :meth:`loop."
 "call_soon_threadsafe` method should be used. Example::"
 msgstr ""
-"別の OS スレッドからのコールバック (:term:`callback`) をスケジュールする場"
-"合、  :meth:`loop.call_soon_threadsafe` メソッドを使ってください。例:"
+"Para programar un :term:`callback` desde otro hilo del SO, se debe usar el "
+"método :meth:`loop.call_soon_threadsafe`. Ejemplo::"
 
-#: ../../library/asyncio-dev.rst:81
+#: ../Doc/library/asyncio-dev.rst:81
 msgid ""
 "Almost all asyncio objects are not thread safe, which is typically not a "
 "problem unless there is code that works with them from outside of a Task or "
 "a callback.  If there's a need for such code to call a low-level asyncio "
 "API, the :meth:`loop.call_soon_threadsafe` method should be used, e.g.::"
 msgstr ""
-"ほぼ全ての非同期オブジェクトはスレッドセーフではありませんが、タスクやコール"
-"バックの外側で非同期オブジェクトを使うコードが存在しない限り、それが問題には"
-"なることはほとんどありません。もしそのような目的で低レベルの asyncio API を呼"
-"び出すようなコードを書く必要がある場合、 :meth:`loop.call_soon_threadsafe` メ"
-"ソッドを使ってください。例: "
+"Casi ningún objeto asyncio es seguro entre hilos (*thread safe*), lo cual "
+"generalmente no es un problema a no ser que haya código que trabaje con "
+"ellos desde fuera de una Tarea o un callback. Si tal código necesita llamar "
+"a la API de asyncio de bajo nivel, se debe usar el método :meth:`loop."
+"call_soon_threadsafe`, por ejemplo::"
 
-#: ../../library/asyncio-dev.rst:89
+#: ../Doc/library/asyncio-dev.rst:89
 msgid ""
 "To schedule a coroutine object from a different OS thread, the :func:"
 "`run_coroutine_threadsafe` function should be used. It returns a :class:"
 "`concurrent.futures.Future` to access the result::"
 msgstr ""
-"別の OS スレッドからコルーチンオブジェクトをスケジュールする場合は、 :func:"
-"`run_coroutine_threadsafe` メソッドを使ってください。 :func:"
-"`run_coroutine_threadsafe` は結果にアクセスするための :class:`concurrent."
-"futures.Future`  オブジェクトを返します:"
+"Para programar un objeto de corrutina desde una hilo diferente del sistema "
+"operativo se debe usar la función :func:`run_coroutine_threadsafe`. Esta "
+"retorna un :class:`concurrent.futures.Future` para acceder al resultado::"
 
-#: ../../library/asyncio-dev.rst:102
+#: ../Doc/library/asyncio-dev.rst:102
 msgid ""
 "To handle signals and to execute subprocesses, the event loop must be run in "
 "the main thread."
 msgstr ""
-"シグナルの処理やサブプロセスの実行を行うには、イベントループはメインスレッド"
-"内で実行しなければなりません。"
+"Para manejar señales y ejecutar subprocesos, el bucle de eventos debe ser "
+"ejecutado en el hilo principal."
 
-#: ../../library/asyncio-dev.rst:105
+#: ../Doc/library/asyncio-dev.rst:105
 msgid ""
 "The :meth:`loop.run_in_executor` method can be used with a :class:"
 "`concurrent.futures.ThreadPoolExecutor` to execute blocking code in a "
 "different OS thread without blocking the OS thread that the event loop runs "
 "in."
 msgstr ""
-"The :meth:`loop.run_in_executor` メソッドを :class:`concurrent.futures."
-"ThreadPoolExecutor` とともに使用することで、イベントループの OS スレッドをブ"
-"ロックすることなく、別の OS スレッド内でブロッキングコードを実行することがで"
-"きます。 "
+"El método :meth:`loop.run_in_executor` puede ser usado con un :class:"
+"`concurrent.futures.ThreadPoolExecutor` para ejecutar código bloqueante en "
+"un hilo diferente del sistema operativo sin bloquear el hilo del sistema "
+"operativo en el que el bucle de eventos está siendo ejecutado."
 
-#: ../../library/asyncio-dev.rst:110
+#: ../Doc/library/asyncio-dev.rst:110
 msgid ""
 "There is currently no way to schedule coroutines or callbacks directly from "
 "a different process (such as one started with :mod:`multiprocessing`). The :"
@@ -217,113 +220,149 @@ msgid ""
 "class:`concurrent.futures.ProcessPoolExecutor` to execute code in a "
 "different process."
 msgstr ""
+"Actualmente no hay forma de programar corrutinas o retrollamadas "
+"directamente desde un proceso diferente (como uno que haya comenzado con :"
+"mod:`multiprocessing`). La sección :ref:`asyncio-event-loop-methods` enumera "
+"las API que pueden leer desde tuberías y descriptores de archivos sin "
+"bloquear el bucle de eventos. Además, las API :ref:`Subprocess <asyncio-"
+"subprocess>` de asyncio proporcionan una forma de iniciar un proceso y "
+"comunicarse con él desde el bucle de eventos. Por último, el método :meth:"
+"`loop.run_in_executor` mencionado anteriormente también se puede usar con "
+"un :class:`concurrent.futures.ProcessPoolExecutor` para ejecutar código en "
+"un proceso diferente."
 
-#: ../../library/asyncio-dev.rst:124
+#: ../Doc/library/asyncio-dev.rst:124
 msgid "Running Blocking Code"
-msgstr "ブロッキングコードの実行"
+msgstr "Ejecutando código bloqueante"
 
-#: ../../library/asyncio-dev.rst:126
+#: ../Doc/library/asyncio-dev.rst:126
 msgid ""
 "Blocking (CPU-bound) code should not be called directly.  For example, if a "
 "function performs a CPU-intensive calculation for 1 second, all concurrent "
 "asyncio Tasks and IO operations would be delayed by 1 second."
 msgstr ""
-"ブロッキングコード (CPU バウンドなコード) を直接呼び出すべきではありません。"
-"たとえば、 CPU 負荷の高い関数を1秒実行したとすると、並行に処理されている全て"
-"の非同期タスクと I/O 処理は1秒遅れる可能性があります。 "
+"Código bloqueante (dependiente de la CPU) no debe ser ejecutado "
+"directamente. Por ejemplo, si una función realiza un cálculo intensivo de "
+"CPU durante 1 segundo, todas las Tareas y operaciones de Entrada/Salida (IO) "
+"concurrentes se retrasarían 1 segundo."
 
-#: ../../library/asyncio-dev.rst:131
+#: ../Doc/library/asyncio-dev.rst:131
 msgid ""
 "An executor can be used to run a task in a different thread or even in a "
 "different process to avoid blocking the OS thread with the event loop.  See "
 "the :meth:`loop.run_in_executor` method for more details."
 msgstr ""
-"エグゼキューターを使用することにより、イベントループの OS スレッドをブロック"
-"することなく、別のスレッドや別のプロセス上でタスクを実行することができます。"
-"詳しくは :meth:`loop.run_in_executor` メソッドを参照してください。"
+"Un ejecutor puede ser usado para ejecutar una tarea en un hilo diferente o "
+"incluso en un proceso diferente para evitar bloquear el hilo del sistema "
+"operativo con el bucle de eventos. Consulte el método :meth:`loop."
+"run_in_executor` para más detalles."
 
-#: ../../library/asyncio-dev.rst:140
+#: ../Doc/library/asyncio-dev.rst:140
 msgid "Logging"
-msgstr "ログ記録"
+msgstr "Logueando"
 
-#: ../../library/asyncio-dev.rst:142
+#: ../Doc/library/asyncio-dev.rst:142
 msgid ""
 "asyncio uses the :mod:`logging` module and all logging is performed via the "
 "``\"asyncio\"`` logger."
 msgstr ""
-"asyncio は :mod:`logging` モジュールを利用し、 全てのログ記録は "
-"``\"asyncio\"`` ロガーを通じて行われます。"
+"asyncio usa el módulo :mod:`logging` y todo el logueo es realizado mediante "
+"el logger ``\"asyncio\"``."
 
-#: ../../library/asyncio-dev.rst:145
+#: ../Doc/library/asyncio-dev.rst:145
 msgid ""
 "The default log level is :py:data:`logging.INFO`, which can be easily "
 "adjusted::"
 msgstr ""
-"デフォルトのログレベルは :py:data:`logging.INFO` ですが、これは簡単に調節でき"
-"ます:"
+"El nivel de log por defecto es :py:data:`logging.INFO`, el cual puede ser "
+"fácilmente ajustado::"
 
-#: ../../library/asyncio-dev.rst:151
+#: ../Doc/library/asyncio-dev.rst:151
 msgid ""
 "Network logging can block the event loop. It is recommended to use a "
 "separate thread for handling logs or use non-blocking IO. For example, see :"
 "ref:`blocking-handlers`."
 msgstr ""
+"Loguear por la red puede bloquear el bucle de eventos. Se recomienda usar un "
+"subproceso separado para manejar registros o usar sin bloqueo IO. Por "
+"ejemplo, consulte :ref:`blocking-handlers`."
 
-#: ../../library/asyncio-dev.rst:159
+#: ../Doc/library/asyncio-dev.rst:159
 msgid "Detect never-awaited coroutines"
-msgstr "待ち受け処理を伴わないコルーチンの検出"
+msgstr "Detectar corrutinas no esperadas"
 
-#: ../../library/asyncio-dev.rst:161
+#: ../Doc/library/asyncio-dev.rst:161
 msgid ""
 "When a coroutine function is called, but not awaited (e.g. ``coro()`` "
 "instead of ``await coro()``) or the coroutine is not scheduled with :meth:"
 "`asyncio.create_task`, asyncio will emit a :exc:`RuntimeWarning`::"
 msgstr ""
-"コルーチンが呼び出されただけで、待ち受け処理がない場合 (たとえば ``await "
-"coro()`` のかわりに ``coro()`` と書いてしまった場合) 、またはコルーチンが :"
-"meth:`asyncio.create_task` を使わずにスケジュールされた場合、 asyncio は :"
-"exc:`RuntimeWarning` 警告を送出します:"
+"Cuando una función de corrutina es invocada, pero no esperada (por ejemplo "
+"``coro()`` en lugar de ``await coro()``) o la corrutina no es programada "
+"con :meth:`asyncio.create_task`, asyncio emitirá una :exc:`RuntimeWarning`::"
 
-#: ../../library/asyncio-dev.rst:176 ../../library/asyncio-dev.rst:221
+#: ../Doc/library/asyncio-dev.rst:176 ../Doc/library/asyncio-dev.rst:221
 msgid "Output::"
-msgstr "出力::"
+msgstr "Salida::"
 
-#: ../../library/asyncio-dev.rst:181 ../../library/asyncio-dev.rst:237
+#: ../Doc/library/asyncio-dev.rst:181 ../Doc/library/asyncio-dev.rst:237
 msgid "Output in debug mode::"
-msgstr "デバッグモードの出力::"
+msgstr "Salida en modo depuración::"
 
-#: ../../library/asyncio-dev.rst:194
+#: ../Doc/library/asyncio-dev.rst:194
 msgid ""
 "The usual fix is to either await the coroutine or call the :meth:`asyncio."
 "create_task` function::"
 msgstr ""
-"通常の修正方法はコルーチンを待ち受ける (await) か、 :meth:`asyncio."
-"create_task` 関数を呼び出すことです:"
+"La solución habitual es esperar la corrutina o llamar a la función :meth:"
+"`asyncio.create_task`::"
 
-#: ../../library/asyncio-dev.rst:202
+#: ../Doc/library/asyncio-dev.rst:202
 msgid "Detect never-retrieved exceptions"
-msgstr "回収されない例外の検出"
+msgstr "Detectar excepciones nunca recuperadas"
 
-#: ../../library/asyncio-dev.rst:204
+#: ../Doc/library/asyncio-dev.rst:204
 msgid ""
 "If a :meth:`Future.set_exception` is called but the Future object is never "
 "awaited on, the exception would never be propagated to the user code.  In "
 "this case, asyncio would emit a log message when the Future object is "
 "garbage collected."
 msgstr ""
-"もし :meth:`Future.set_exception` メソッドが呼び出されても、その Future オブ"
-"ジェクトを待ち受けていなければ、例外は決してユーザーコードまで伝播しません。"
-"この場合 asyncio は、 Future オブジェクトがガベージコレクションの対象となった"
-"ときにログメッセージを送出することがあります。"
+"Si un :meth:`Future.set_exception` es invocado pero el objeto Futuro nunca "
+"es esperado, la excepción nunca será propagada al código del usuario. En "
+"este caso, asyncio emitiría un mensaje de registro cuando el objeto Futuro "
+"fuera recolectado como basura."
 
-#: ../../library/asyncio-dev.rst:209
+#: ../Doc/library/asyncio-dev.rst:209
 msgid "Example of an unhandled exception::"
-msgstr "処理されない例外の例:"
+msgstr "Ejemplo de una excepción no manejada::"
 
-#: ../../library/asyncio-dev.rst:232
+#: ../Doc/library/asyncio-dev.rst:232
 msgid ""
 ":ref:`Enable the debug mode <asyncio-debug-mode>` to get the traceback where "
 "the task was created::"
 msgstr ""
-"タスクが生成された箇所を特定するには、 :ref:`デバッグモードを有効化して "
-"<asyncio-debug-mode>` トレースバックを取得してください:"
+":ref:`Habilita el modo depuración <asyncio-debug-mode>` para obtener el "
+"seguimiento de pila (*traceback*) donde la tarea fue creada::"
+
+#~ msgid ""
+#~ "There is currently no way to schedule coroutines or callbacks directly "
+#~ "from a different process (such as one started with :mod:"
+#~ "`multiprocessing`). The :ref:`Event Loop Methods <asyncio-event-loop>` "
+#~ "section lists APIs that can read from pipes and watch file descriptors "
+#~ "without blocking the event loop. In addition, asyncio's :ref:`Subprocess "
+#~ "<asyncio-subprocess>` APIs provide a way to start a process and "
+#~ "communicate with it from the event loop. Lastly, the aforementioned :meth:"
+#~ "`loop.run_in_executor` method can also be used with a :class:`concurrent."
+#~ "futures.ProcessPoolExecutor` to execute code in a different process."
+#~ msgstr ""
+#~ "Actualmente no hay forma de programar corrutinas o devoluciones de "
+#~ "llamada directamente desde un proceso diferente (como uno que comenzó "
+#~ "con :mod:`multiprocessing`). La sección :ref:`Event Loop Methods <asyncio-"
+#~ "event-loop>` enumera las APIs que pueden leer desde las tuberías y ver "
+#~ "descriptores de archivos sin bloquear el bucle de eventos. Además, las "
+#~ "APIs de asyncio :ref:`Subprocess <asyncio-subprocess>` proporcionan una "
+#~ "forma de iniciar un proceso y comunicarse con él desde el bucle de "
+#~ "eventos. Por último, el método :meth:`loop.run_in_executor` mencionado "
+#~ "anteriormente también se puede usar con un :class:`concurrent.futures."
+#~ "ProcessPoolExecutor` para ejecutar código en un proceso diferente."

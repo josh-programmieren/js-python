@@ -1,45 +1,44 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:12+0000\n"
-"Last-Translator: Osamu NAKAMURA, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2020-05-05 12:54+0200\n"
+"PO-Revision-Date: 2020-07-09 11:20-0300\n"
+"Language-Team: python-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 2.2.1\n"
 
-#: ../../library/sched.rst:2
+#: ../Doc/library/sched.rst:2
 msgid ":mod:`sched` --- Event scheduler"
-msgstr ":mod:`sched` --- イベントスケジューラ"
+msgstr ":mod:`sched` --- Eventos del planificador"
 
-#: ../../library/sched.rst:9
+#: ../Doc/library/sched.rst:9
 msgid "**Source code:** :source:`Lib/sched.py`"
-msgstr "**ソースコード:** :source:`Lib/sched.py`"
+msgstr "**Código fuente:** :source:`Lib/sched.py`"
 
-#: ../../library/sched.rst:15
+#: ../Doc/library/sched.rst:15
 msgid ""
 "The :mod:`sched` module defines a class which implements a general purpose "
 "event scheduler:"
 msgstr ""
-":mod:`sched` モジュールは一般的な目的のためのイベントスケジューラを実装するク"
-"ラスを定義します:"
+"El módulo :mod:`sched` define una clase que implementa un planificador de "
+"eventos de propósito general:"
 
-#: ../../library/sched.rst:20
+#: ../Doc/library/sched.rst:20
 msgid ""
 "The :class:`scheduler` class defines a generic interface to scheduling "
 "events. It needs two functions to actually deal with the \"outside world\" "
@@ -50,155 +49,156 @@ msgid ""
 "argument ``0`` after each event is run to allow other threads an opportunity "
 "to run in multi-threaded applications."
 msgstr ""
-":class:`scheduler` クラスはイベントをスケジュールするための一般的なインター"
-"フェースを定義します。それは \"外の世界\" を実際に扱うための2つの関数を必要と"
-"します --- *timefunc* は引数なしで呼ばれて 1 つの数値を返す callable オブジェ"
-"クトでなければなりません (戻り値は任意の単位で「時間」を表します)。 "
-"*delayfunc* は 1 つの引数を持つ callable オブジェクトでなければならず、その時"
-"間だけ遅延する必要があります (引数は *timefunc* の出力と互換)。 *delayfunc* "
-"は、各々のイベントが実行された後に引数 ``0`` で呼ばれることがあります。これ"
-"は、マルチスレッドアプリケーションの中で他のスレッドが実行する機会を与えるた"
-"めです。"
+"La clase :class:`scheduler` define una interfaz genérica para planificar "
+"eventos. Necesita dos funciones para tratar con el \"mundo exterior\" --- "
+"*timefunc* debe poder llamarse sin argumentos y retornar un número (el "
+"\"time\", en cualquier unidad). La función *delayfunc* debería ser invocable "
+"con un argumento, compatible con la salida de *timefunc*, y debería retrasar "
+"tantas unidades de tiempo. *delayfunc* también se llamará con el argumento "
+"``0`` después de que se ejecute cada evento para permitir que otros hilos "
+"tengan la oportunidad de ejecutarse en aplicaciones multihilo."
 
-#: ../../library/sched.rst:29
+#: ../Doc/library/sched.rst:29
 msgid "*timefunc* and *delayfunc* parameters are optional."
-msgstr "*timefunc* と *delayfunc* がオプション引数になりました。"
+msgstr "Los argumentos *timefunc* and *delayfunc* son opcionales."
 
-#: ../../library/sched.rst:32
+#: ../Doc/library/sched.rst:32
 msgid ""
 ":class:`scheduler` class can be safely used in multi-threaded environments."
 msgstr ""
-":class:`scheduler` クラスをマルチスレッド環境で安全に使用出来るようになりまし"
-"た。"
+":class:`scheduler` La clase se puede usar de forma segura en entornos "
+"multihilo."
 
-#: ../../library/sched.rst:36
+#: ../Doc/library/sched.rst:36
 msgid "Example::"
-msgstr "以下はプログラム例です::"
+msgstr "Ejemplo::"
 
-#: ../../library/sched.rst:67
+#: ../Doc/library/sched.rst:61
 msgid "Scheduler Objects"
-msgstr "スケジューラオブジェクト"
+msgstr "Objetos de ``Scheduler``"
 
-#: ../../library/sched.rst:69
+#: ../Doc/library/sched.rst:63
 msgid ":class:`scheduler` instances have the following methods and attributes:"
-msgstr ":class:`scheduler` インスタンスは以下のメソッドと属性を持っています:"
+msgstr ""
+":class:`scheduler` Las sentencias tienen los siguientes métodos y atributos:"
 
-#: ../../library/sched.rst:74
+#: ../Doc/library/sched.rst:68
 msgid ""
 "Schedule a new event. The *time* argument should be a numeric type "
 "compatible with the return value of the *timefunc* function passed  to the "
 "constructor. Events scheduled for the same *time* will be executed in the "
 "order of their *priority*. A lower number represents a higher priority."
 msgstr ""
-"新しいイベントをスケジュールします。\n"
-"引数 *time* は、コンストラクタへ渡された *timefunc* の戻り値と互換な数値型で"
-"なければいけません。\n"
-"同じ *time* によってスケジュールされたイベントは、それらの *priority* によっ"
-"て実行されます。\n"
-"数値の小さい方が高い優先度となります。"
+"Planifica un nuevo evento. El argumento *time* debe ser un tipo numérico "
+"compatible con el valor de retorno de la función *timefunc* que se pasa al "
+"constructor. Los eventos planificados para la misma *time* se ejecutarán en "
+"el orden de su *priority*. Un número más bajo representa una prioridad más "
+"alta."
 
-#: ../../library/sched.rst:79
+#: ../Doc/library/sched.rst:73
 msgid ""
 "Executing the event means executing ``action(*argument, **kwargs)``. "
 "*argument* is a sequence holding the positional arguments for *action*. "
 "*kwargs* is a dictionary holding the keyword arguments for *action*."
 msgstr ""
-"イベントを実行することは、 ``action(*argument, **kwargs)`` を実行することを意"
-"味します。 *argument* は *action* のための位置引数を保持するシーケンスでなけ"
-"ればいけません。 *kwargs* は *action* のためのキーワード引数を保持する辞書で"
-"なければいけません。"
+"Ejecutar el evento significa ejecutar ``action(*argument, **kwargs)``. "
+"*argument* es una secuencia que contiene los argumentos posicionales para "
+"*action*. *kwargs* es un diccionario que contiene los argumentos de palabras "
+"clave para *action*."
 
-#: ../../library/sched.rst:83
+#: ../Doc/library/sched.rst:77
 msgid ""
 "Return value is an event which may be used for later cancellation of the "
 "event (see :meth:`cancel`)."
 msgstr ""
-"戻り値は、後にイベントをキャンセルする時に使われる可能性のあるイベントです (:"
-"meth:`cancel` を参照)。"
+"El valor de retorno es un evento que puede usarse para una cancelación "
+"posterior del evento (ver :meth:`cancel`)."
 
-#: ../../library/sched.rst:86 ../../library/sched.rst:99
+#: ../Doc/library/sched.rst:80 ../Doc/library/sched.rst:93
 msgid "*argument* parameter is optional."
-msgstr "*argument* 引数が任意になりました。"
+msgstr "El argumento *argument* es opcional."
 
-#: ../../library/sched.rst:89 ../../library/sched.rst:102
+#: ../Doc/library/sched.rst:83 ../Doc/library/sched.rst:96
 msgid "*kwargs* parameter was added."
-msgstr "*kwargs* 引数が追加されました。"
+msgstr "Se agregó el argumento *kwargs*."
 
-#: ../../library/sched.rst:95
+#: ../Doc/library/sched.rst:89
 msgid ""
 "Schedule an event for *delay* more time units. Other than the relative time, "
 "the other arguments, the effect and the return value are the same as those "
 "for :meth:`enterabs`."
 msgstr ""
-"時間単位以上の *delay* でイベントをスケジュールします。相対的時間以外の、引"
-"数、効果、戻り値は、 :meth:`enterabs` に対するものと同じです。"
+"Planifica un evento *delay* para más unidades de tiempo. Aparte del tiempo "
+"relativo, los otros argumentos, el efecto y el valor de retorno son los "
+"mismos que para :meth:`enterabs`."
 
-#: ../../library/sched.rst:107
+#: ../Doc/library/sched.rst:101
 msgid ""
 "Remove the event from the queue. If *event* is not an event currently in the "
 "queue, this method will raise a :exc:`ValueError`."
 msgstr ""
-"キューからイベントを消去します。もし *event* がキューにある現在のイベントでな"
-"いならば、このメソッドは :exc:`ValueError` を送出します。"
+"Elimina el evento de la cola. Si *event* no es un evento actualmente en la "
+"cola, este método lanzará un :exc:`ValueError`."
 
-#: ../../library/sched.rst:113
+#: ../Doc/library/sched.rst:107
 msgid "Return ``True`` if the event queue is empty."
-msgstr "もしイベントキューが空ならば、 ``True`` を返します。"
+msgstr "Retorna ``True`` si la cola de eventos está vacía."
 
-#: ../../library/sched.rst:118
+#: ../Doc/library/sched.rst:112
 msgid ""
 "Run all scheduled events. This method will wait  (using the :func:"
 "`delayfunc` function passed to the constructor) for the next event, then "
 "execute it and so on until there are no more scheduled events."
 msgstr ""
-"すべてのスケジュールされたイベントを実行します。このメソッドは次のイベントを"
-"待ち、それを実行し、スケジュールされたイベントがなくなるまで同じことを繰り返"
-"します。(イベントの待機は、 コンストラクタへ渡された関数 :func:`delayfunc` を"
-"使うことで行います。)"
+"Ejecuta todos los eventos programados. Este método esperará (usando la "
+"función :func:`delayfunc` enviada al constructor) el próximo evento, luego "
+"lo ejecutará y así sucesivamente hasta que no haya más eventos programados."
 
-#: ../../library/sched.rst:122
+#: ../Doc/library/sched.rst:116
 msgid ""
 "If *blocking* is false executes the scheduled events due to expire soonest "
 "(if any) and then return the deadline of the next scheduled call in the "
 "scheduler (if any)."
 msgstr ""
-"*blocking* が False の場合、最も早く期限が来るスケジュールされたイベントを "
-"(存在する場合) 実行し、スケジューラ内で次にスケジュールされた呼び出しの期限"
-"を (存在する場合) 返します。 "
+"Si *blocking* es falso, se ejecutan los eventos planificados que expiran mas "
+"pronto (si corresponde) y luego retorna la fecha límite de la próxima "
+"llamada programada en el planificador (si corresponde)."
 
-#: ../../library/sched.rst:126
+#: ../Doc/library/sched.rst:120
 msgid ""
 "Either *action* or *delayfunc* can raise an exception.  In either case, the "
 "scheduler will maintain a consistent state and propagate the exception.  If "
 "an exception is raised by *action*, the event will not be attempted in "
 "future calls to :meth:`run`."
 msgstr ""
-"*action* あるいは *delayfunc* は例外を投げることができます。いずれの場合も、"
-"スケジューラは一貫した状態を維持し、例外を伝播するでしょう。例外が *action* "
-"によって投げられる場合、イベントは :meth:`run` への呼出しを未来に行なわないで"
-"しょう。"
+"*action* o *delayfunc* pueden generar una excepción. En cualquier caso, el "
+"planificador mantendrá un estado consistente y propagará la excepción. Si "
+"*action* genera una excepción, el evento no se intentará en futuras llamadas "
+"a :meth:`run`."
 
-#: ../../library/sched.rst:131
+#: ../Doc/library/sched.rst:125
 msgid ""
 "If a sequence of events takes longer to run than the time available before "
 "the next event, the scheduler will simply fall behind.  No events will be "
 "dropped; the calling code is responsible for canceling  events which are no "
 "longer pertinent."
 msgstr ""
-"イベントのシーケンスが、次イベントの前に、利用可能時間より実行時間が長いと、"
-"スケジューラは単に遅れることになるでしょう。イベントが落ちることはありませ"
-"ん; 呼出しコードはもはや適切でないキャンセルイベントに対して責任があります。"
+"Si una secuencia de eventos tarda más en ejecutarse que el tiempo disponible "
+"antes del próximo evento, el planificador simplemente se retrasará. No se "
+"descartarán eventos; el código de llamada es responsable de cancelar eventos "
+"que ya no son oportunos."
 
-#: ../../library/sched.rst:136
+#: ../Doc/library/sched.rst:130
 msgid "*blocking* parameter was added."
-msgstr "*blocking* 引数が追加されました。"
+msgstr "Se agregó el argumento *blocking*."
 
-#: ../../library/sched.rst:141
+#: ../Doc/library/sched.rst:135
 msgid ""
 "Read-only attribute returning a list of upcoming events in the order they "
 "will be run.  Each event is shown as a :term:`named tuple` with the "
 "following fields:  time, priority, action, argument, kwargs."
 msgstr ""
-"読み出し専用の属性で、これから起こるイベントが実行される順序で格納されたリス"
-"トを返します。各イベントは、次の属性 time, priority, action, argument, "
-"kwargs を持った :term:`named tuple` の形式になります。"
+"Atributo de solo lectura que retorna una lista de los próximos eventos en el "
+"orden en que se ejecutarán. Cada evento se muestra como un :term:`named "
+"tuple` con los siguientes campos : *time, priority, action, argument, "
+"kwargs*."

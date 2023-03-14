@@ -1,53 +1,51 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:17+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-08-04 21:07+0200\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language: es_PE\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/weakref.rst:4
+#: ../Doc/library/weakref.rst:4
 msgid ":mod:`weakref` --- Weak references"
-msgstr ":mod:`weakref` --- 弱参照"
+msgstr ":mod:`weakref` --- Referencias débiles"
 
-#: ../../library/weakref.rst:14
+#: ../Doc/library/weakref.rst:14
 msgid "**Source code:** :source:`Lib/weakref.py`"
-msgstr "**ソースコード:** :source:`Lib/weakref.py`"
+msgstr "**Código Fuente:** :source:`Lib/weakref.py`"
 
-#: ../../library/weakref.rst:18
+#: ../Doc/library/weakref.rst:18
 msgid ""
 "The :mod:`weakref` module allows the Python programmer to create :dfn:`weak "
 "references` to objects."
 msgstr ""
-":mod:`weakref` モジュールは、Pythonプログラマがオブジェクトへの弱参照 (:dfn:"
-"`weak refarence`)を作成できるようにします。"
+"El módulo :mod:`weakref` le permite al programador de Python crear :dfn:"
+"`referencias débiles<weak references>` a objetos."
 
-#: ../../library/weakref.rst:24
+#: ../Doc/library/weakref.rst:24
 msgid ""
 "In the following, the term :dfn:`referent` means the object which is "
 "referred to by a weak reference."
 msgstr ""
-"以下では、用語リファレント(:dfn:`referent`) は弱参照が参照するオブジェクトを"
-"意味します。"
+"En lo consecutivo, el término :dfn:`referente` aludirá al objeto que es "
+"referenciado por una referencia débil."
 
-#: ../../library/weakref.rst:27
+#: ../Doc/library/weakref.rst:27
 msgid ""
 "A weak reference to an object is not enough to keep the object alive: when "
 "the only remaining references to a referent are weak references, :term:"
@@ -56,23 +54,24 @@ msgid ""
 "weak reference may return the object even if there are no strong references "
 "to it."
 msgstr ""
-"オブジェクトへの弱参照があることは、そのオブジェクトを生かしておくのには不十"
-"分です。リファレントへの参照が弱参照しか残っていない場合、 :term:`garbage "
-"collection` はリファレントを自由に破棄し、メモリを別のものに再利用することが"
-"できます。しかし、オブジェクトへの強参照がなくても、オブジェクトが実際に破棄"
-"されるまでは、弱参照はオブジェクトを返す場合があります。"
+"Una referencia débil a un objeto no es suficiente para mantener al objeto "
+"con vida: cuando las únicas referencias que le queden a un referente son "
+"referencias débiles, la (:term:`recolección de basura<garbage collection>`) "
+"es libre de destruir al referente y reusar su memoria para algo más.  Sin "
+"embargo, hasta que el objeto no sea realmente destruido, la referencia débil "
+"puede retornar el objeto incluso si no tiene referencias fuertes."
 
-#: ../../library/weakref.rst:33
+#: ../Doc/library/weakref.rst:33
 msgid ""
 "A primary use for weak references is to implement caches or mappings holding "
 "large objects, where it's desired that a large object not be kept alive "
 "solely because it appears in a cache or mapping."
 msgstr ""
-"弱参照の主な用途は、巨大なオブジェクトを保持するキャッシュやマッピングを実装"
-"することです。ここで、キャッシュやマッピングに保持されているからという理由だ"
-"けで、巨大なオブジェクトが生き続けることは望ましくありません。"
+"Un uso principal para las referencias débiles es para implementar caches o "
+"mapeados que mantienen objetos grandes, cuando no se desea que un objeto "
+"grande no sea mantenido con vida sólo porque aparece en un cache o mapeado."
 
-#: ../../library/weakref.rst:37
+#: ../Doc/library/weakref.rst:37
 msgid ""
 "For example, if you have a number of large binary image objects, you may "
 "wish to associate a name with each.  If you used a Python dictionary to map "
@@ -87,19 +86,21 @@ msgid ""
 "collection can reclaim the object, and its corresponding entries in weak "
 "mappings are simply deleted."
 msgstr ""
-"例えば、巨大なバイナリ画像のオブジェクトがたくさんあり、それぞれに名前を関連"
-"付けたいとします。 Python の辞書型を使って名前を画像に対応付けたり画像を名前"
-"に対応付けたりすると、画像オブジェクトは辞書内のキーや値に使われているため存"
-"続しつづけることになります。 :mod:`weakref` モジュールが提供している :class:"
-"`WeakKeyDictionary` や :class:`WeakValueDictionary` クラスはその代用で、対応"
-"付けを構築するのに弱参照を使い、キャッシュやマッピングに存在するという理由だ"
-"けでオブジェクトを存続させないようにします。例えば、もしある画像オブジェクト"
-"が :class:`WeakValueDictionary` の値になっていた場合、最後に残った画像オブ"
-"ジェクトへの参照を弱参照マッピングが保持していれば、ガーベジコレクションはこ"
-"のオブジェクトを再利用でき、画像オブジェクトに対する弱参照内の対応付けは削除"
-"されます。"
+"Por ejemplo, si tienes un número de grandes objetos de imágenes binarias, "
+"puedes desear asociar un nombre con cada uno. Si usaras un diccionario de "
+"Python para mapear los nombres a imágenes, o imágenes a nombres, los objetos "
+"imagen quedarían con vida sólo porque aparecen como valores o llaves en los "
+"diccionarios.  Las clases :class:`WeakKeyDictionary` y :class:"
+"`WeakValueDictionary` que se proporcionan por el módulo :mod:`weakref` son "
+"una alternativa, usando referencias débiles para construir mapeados que no "
+"mantengan con vida el objeto sólo porque aparecen en el mapeado de objetos.  "
+"Si, por ejemplo, un objeto imagen es un valor en un :class:"
+"`WeakValueDictionary`, entonces cuando las últimas referencias que queden de "
+"ese objeto imagen sean las referencias débiles guardadas por mapeados "
+"débiles, la recolección de basura puede reclamar el objeto, y sus entradas "
+"correspondientes en mapeados débiles son simplemente eliminadas."
 
-#: ../../library/weakref.rst:50
+#: ../Doc/library/weakref.rst:50
 msgid ""
 ":class:`WeakKeyDictionary` and :class:`WeakValueDictionary` use weak "
 "references in their implementation, setting up callback functions on the "
@@ -108,13 +109,14 @@ msgid ""
 "class:`set` interface, but keeps weak references to its elements, just like "
 "a :class:`WeakKeyDictionary` does."
 msgstr ""
-":class:`WeakKeyDictionary` と :class:`WeakValueDictionary` はその実装に弱参照"
-"を使用しており、キーや値がガーベジコレクションによって回収されたことを弱参照"
-"辞書に通知するコールバック関数を設定しています。 :class:`WeakSet` は :class:"
-"`set` インターフェースを実装していますが、 :class:`WeakKeyDictionary` のよう"
-"に要素への弱参照を持ちます。"
+":class:`WeakKeyDictionary` y :class:`WeakValueDictionary` usan referencias "
+"débiles en sus implementaciones, estableciendo retrollamadas (*callback*) en "
+"las referencias débiles que notifiquen a los diccionarios débiles cuando una "
+"llave o valor ha sido reclamado por la recolección de basura. :class:"
+"`WeakSet` implementa la interfaz :class:`set`, pero mantiene referencias "
+"débiles de sus elementos, justo como lo hace :class:`WeakKeyDictionary`."
 
-#: ../../library/weakref.rst:57
+#: ../Doc/library/weakref.rst:57
 msgid ""
 ":class:`finalize` provides a straight forward way to register a cleanup "
 "function to be called when an object is garbage collected. This is simpler "
@@ -122,25 +124,27 @@ msgid ""
 "the module automatically ensures that the finalizer remains alive until the "
 "object is collected."
 msgstr ""
-":class:`finalize` は、オブジェクトのガベージコレクションの実行時にクリーン"
-"アップ関数が呼び出されるように登録する、単純な方法を提供します。これは、未加"
-"工の弱参照上にコールバック関数を設定するよりも簡単です。なぜなら、オブジェク"
-"トのコレクションが完了するまでファイナライザが生き続けることを、モジュールが"
-"自動的に保証するからです。"
+":class:`finalize` provee una forma directa de registrar una función de "
+"limpieza que se llame cuando un objeto es recogido por la recolección de "
+"basura. Esto es más simple que configurar una retrollamada en una referencia "
+"débil pura, ya que el módulo automáticamente se asegura que el finalizador "
+"se mantenga con vida hasta que el objeto sea recolectado."
 
-#: ../../library/weakref.rst:63
+#: ../Doc/library/weakref.rst:63
 msgid ""
 "Most programs should find that using one of these weak container types or :"
 "class:`finalize` is all they need -- it's not usually necessary to create "
 "your own weak references directly.  The low-level machinery is exposed by "
 "the :mod:`weakref` module for the benefit of advanced uses."
 msgstr ""
-"ほとんどのプログラムでは弱参照コンテナまたは :class:`finalize` のどれかを使え"
-"ば必要なものは揃うはずです。通常は直接自前の弱参照を作成する必要はありませ"
-"ん。低レベルな機構は、より進んだ使い方をするために :mod:`weakref` モジュール"
-"として公開されています。"
+"La mayoría de programas deben descubrir que usar uno de estos tipos de "
+"contenedores débiles o la clase :class:`finalize` es todo lo que necesitan "
+"-- usualmente no es necesario crear tus propias referencias débiles "
+"directamente.  La maquinaria de bajo nivel está expuesta por el módulo :mod:"
+"`weakref` para el beneficio de usuarios avanzados."
 
-#: ../../library/weakref.rst:68
+#: ../Doc/library/weakref.rst:68
+#, fuzzy
 msgid ""
 "Not all objects can be weakly referenced. Objects which support weak "
 "references include class instances, functions written in Python (but not in "
@@ -148,45 +152,57 @@ msgid ""
 "object>`, :term:`generators <generator>`, type objects, sockets, arrays, "
 "deques, regular expression pattern objects, and code objects."
 msgstr ""
+"No todos los objetos pueden ser débilmente referenciados; esos objetos que "
+"pueden incluir instancias de clases, funciones escritas en Python (pero no "
+"en C), métodos de instancia, conjuntos, frozensets, algunos :term:`objetos "
+"de archivo <file object>`, :term:`generadores <generator>`, objetos de "
+"tipos, sockets, arreglos, deques, objetos de patrones de expresiones "
+"regulares, y objetos código."
 
-#: ../../library/weakref.rst:74
+#: ../Doc/library/weakref.rst:74
 msgid "Added support for thread.lock, threading.Lock, and code objects."
 msgstr ""
-"thread.lock, threading.Lock, code オブジェクトのサポートが追加されました。"
+"Se añadió el soporte para thread.lock, threading.Lock, y objetos código."
 
-#: ../../library/weakref.rst:77
+#: ../Doc/library/weakref.rst:77
 msgid ""
 "Several built-in types such as :class:`list` and :class:`dict` do not "
 "directly support weak references but can add support through subclassing::"
 msgstr ""
-":class:`list` や :class:`dict` など、いくつかの組み込み型は弱参照を直接サポー"
-"トしませんが、以下のようにサブクラス化を行えばサポートを追加できます::"
+"Varios tipos incorporados como :class:`list` y :class:`dict` no soportan "
+"directamente referencias débiles pero pueden añadir soporte al crear una "
+"subclase:"
 
-#: ../../library/weakref.rst:87
+#: ../Doc/library/weakref.rst:87
 msgid ""
 "Other built-in types such as :class:`tuple` and :class:`int` do not support "
 "weak references even when subclassed."
 msgstr ""
-":class:`tuple` や :class:`int` など、他の組み込み型はサブクラス化しても弱参照"
-"をサポートしません。"
+"Otros tipos incorporados como :class:`tuple` y :class:`int` no soportan "
+"referencias débiles incluso cuando son usadas como clase base."
 
-#: ../../library/weakref.rst:90
+#: ../Doc/library/weakref.rst:90
 msgid ""
 "Extension types can easily be made to support weak references; see :ref:"
 "`weakref-support`."
 msgstr ""
-"拡張型は、簡単に弱参照をサポートできます。詳細については、 :ref:`weakref-"
-"support` を参照してください。"
+"Los tipos de extensiones se pueden hacer para soportar referencias débiles; "
+"véase :ref:`weakref-support`."
 
-#: ../../library/weakref.rst:93
+#: ../Doc/library/weakref.rst:93
 msgid ""
 "When ``__slots__`` are defined for a given type, weak reference support is "
 "disabled unless a ``'__weakref__'`` string is also present in the sequence "
 "of strings in the ``__slots__`` declaration. See :ref:`__slots__ "
 "documentation <slots>` for details."
 msgstr ""
+"Cuando ``__slots__`` es definido para un tipo específico, el soporte para "
+"referencia débil es deshabilitado a menos que una cadena ``'__weakref__'`` "
+"también esté presente en la secuencia de cadenas en la declaración "
+"``__slots__``. Véase :ref:`__slots__ documentation <slots>` para más "
+"detalles."
 
-#: ../../library/weakref.rst:100
+#: ../Doc/library/weakref.rst:100
 msgid ""
 "Return a weak reference to *object*.  The original object can be retrieved "
 "by calling the reference object if the referent is still alive; if the "
@@ -197,46 +213,49 @@ msgid ""
 "passed as the only parameter to the callback; the referent will no longer be "
 "available."
 msgstr ""
-"*object* への弱参照を返します。リファレントがまだ生きているならば、元のオブ"
-"ジェクトは参照オブジェクトの呼び出しで取り出せす。リファレントがもはや生きて"
-"いないならば、参照オブジェクトを呼び出したときに :const:`None` を返します。 "
-"*callback* に :const:`None` 以外の値を与えた場合、オブジェクトをまさに後始末"
-"処理しようとするときに呼び出します。このとき弱参照オブジェクトは *callback* "
-"の唯一のパラメタとして渡されます。リファレントはもはや利用できません。"
+"Retorna una referencia débil de *object*.  El objeto original puede ser "
+"recuperado al llamar la referencia del objeto si el referente sigue con "
+"vida; si el referente ya no está con vida, llamar a la  referencia del "
+"objeto causará que se retorne un :const:`None`.  Si se proporciona "
+"*callback* y no :const:`None`, y el objeto weakref retornado aún sigue con "
+"vida, la retrollamada (*callback*) será llamado cuando el objeto esté a "
+"punto de ser finalizado; el objeto de la referencia débil será pasado como "
+"el único parámetro a la retrollamada, el referente ya no estará disponible."
 
-#: ../../library/weakref.rst:108
+#: ../Doc/library/weakref.rst:108
 msgid ""
 "It is allowable for many weak references to be constructed for the same "
 "object. Callbacks registered for each weak reference will be called from the "
 "most recently registered callback to the oldest registered callback."
 msgstr ""
-"同じオブジェクトに対してたくさんの弱参照を作れます。それぞれの弱参照に対して"
-"登録されたコールバックは、もっとも新しく登録されたコールバックからもっとも古"
-"いものへと呼び出されます。"
+"Se permite que muchas referencias débiles sean construidas por el mismo "
+"objeto. Las retrollamadas registradas por cada referencia débil serán "
+"llamados desde la retrollamada registrada más recientemente hasta la "
+"retrollamada registrada más antigua."
 
-#: ../../library/weakref.rst:112
+#: ../Doc/library/weakref.rst:112
 msgid ""
 "Exceptions raised by the callback will be noted on the standard error "
 "output, but cannot be propagated; they are handled in exactly the same way "
 "as exceptions raised from an object's :meth:`__del__` method."
 msgstr ""
-"コールバックが発生させた例外は標準エラー出力に書き込まれますが、伝播されませ"
-"ん。それらはオブジェクトの :meth:`__del__` メソッドが発生させる例外と完全に同"
-"じ方法で処理されます。"
+"Las excepciones lanzadas por la retrollamada serán anotadas en la salida de "
+"error estándar, pero no pueden ser propagadas; son manejadas igual que las "
+"excepciones lanzadas por el método :meth:`__del__` de un objeto."
 
-#: ../../library/weakref.rst:116
+#: ../Doc/library/weakref.rst:116
 msgid ""
 "Weak references are :term:`hashable` if the *object* is hashable.  They will "
 "maintain their hash value even after the *object* was deleted.  If :func:"
 "`hash` is called the first time only after the *object* was deleted, the "
 "call will raise :exc:`TypeError`."
 msgstr ""
-"*object* が :term:`ハッシュ可能 <hashable>` ならば、弱参照はハッシュ可能で"
-"す。それらは *object* が削除された後でもそれらのハッシュ値を保持します。 "
-"*object* が削除されてから初めて :func:`hash` が呼び出された場合に、その呼び出"
-"しは :exc:`TypeError` を発生させます。"
+"Las referencias débiles son :term:`hashable` si el *object* es mapeable.  "
+"Ellos mantendrán su valor del hash incluso cuando el *objet* haya sido "
+"eliminado.  Si :func:`hash` es llamado por primera vez sólo después de que "
+"*object* sea eliminado, la llamada lanzará un :exc:`TypeError`."
 
-#: ../../library/weakref.rst:121
+#: ../Doc/library/weakref.rst:121
 msgid ""
 "Weak references support tests for equality, but not ordering.  If the "
 "referents are still alive, two references have the same equality "
@@ -244,30 +263,33 @@ msgid ""
 "referent has been deleted, the references are equal only if the reference "
 "objects are the same object."
 msgstr ""
-"弱参照は等価性のテストをサポートしていますが、順序をサポートしていません。参"
-"照がまだ生きているならば、 *callback* に関係なく二つの参照はそれらのリファレ"
-"ントと同じ等価関係を持ちます。リファレントのどちらか一方が削除された場合、参"
-"照オブジェクトが同一である場合に限り、その参照は等価です。"
+"Las referencias débiles soportan pruebas para igualdad, pero no para "
+"ordenación.  Si los referentes están todavía con vida, dos referencias tiene "
+"la misma relación de igualdad como sus referentes (sin importar el "
+"*callback*).  Si un referente ha sido eliminado, las referencias son iguales "
+"sólo si el objetos de referencia son el mismo objeto."
 
-#: ../../library/weakref.rst:126
+#: ../Doc/library/weakref.rst:126
 msgid "This is a subclassable type rather than a factory function."
-msgstr "これはサブクラス化可能な型というよりファクトリ関数です。"
+msgstr ""
+"Es un tipo del que se puede crear una subclase en vez de una función de "
+"fábrica."
 
-#: ../../library/weakref.rst:130
+#: ../Doc/library/weakref.rst:130
 msgid ""
 "This read-only attribute returns the callback currently associated to the "
 "weakref.  If there is no callback or if the referent of the weakref is no "
 "longer alive then this attribute will have value ``None``."
 msgstr ""
-"この読み出し専用の属性は、現在弱参照に関連付けられているコールバックを返しま"
-"す。コールバックが存在しないか、弱参照のリファレントが生きていない場合、この"
-"属性の値は ``None``  になります。"
+"Este atributo de sólo lectura retorna la llamada que está asociada "
+"actualmente con el weakref.  Si no hay retrollamadas o si el referente del "
+"weakref no está con vida entonces este atributo tendrá de valor ``None``."
 
-#: ../../library/weakref.rst:134
+#: ../Doc/library/weakref.rst:134
 msgid "Added the :attr:`__callback__` attribute."
-msgstr ":attr:`__callback__` 属性が追加されました。"
+msgstr "Se añadió el atributo :attr:`__callback__`."
 
-#: ../../library/weakref.rst:140
+#: ../Doc/library/weakref.rst:140
 msgid ""
 "Return a proxy to *object* which uses a weak reference.  This supports use "
 "of the proxy in most contexts instead of requiring the explicit "
@@ -275,36 +297,43 @@ msgid ""
 "have a type of either ``ProxyType`` or ``CallableProxyType``, depending on "
 "whether *object* is callable.  Proxy objects are not :term:`hashable` "
 "regardless of the referent; this avoids a number of problems related to "
-"their fundamentally mutable nature, and prevents their use as dictionary "
+"their fundamentally mutable nature, and prevent their use as dictionary "
 "keys.  *callback* is the same as the parameter of the same name to the :func:"
 "`ref` function."
 msgstr ""
+"Retorna un proxy a *object* que usa una referencia débil.  Esto soporta el "
+"uso del proxy en la mayoría de los contextos en vez de requerir la "
+"dereferencia explícita usada con los objetos de referencia débil. El objeto "
+"retornado tendrá un tipo ``ProxyType`` o ``CallableProxyType``, dependiendo "
+"si *object* es invocable. Objetos Proxy no son :term:`hashable` "
+"independiente de la referencia; esto evita un número de problemas "
+"relacionados a su naturaleza mutable fundamental, y previene su uso como "
+"claves de diccionario. *callback* es el mismo como el parámetro del mismo "
+"nombre de la función :func:`ref`."
 
-#: ../../library/weakref.rst:149
-msgid ""
-"Accessing an attribute of the proxy object after the referent is garbage "
-"collected raises :exc:`ReferenceError`."
-msgstr ""
-
-#: ../../library/weakref.rst:152
+#: ../Doc/library/weakref.rst:149
 msgid ""
 "Extended the operator support on proxy objects to include the matrix "
 "multiplication operators ``@`` and ``@=``."
 msgstr ""
+"Se extendió el soporto de operadores en objetos proxy para incluir los "
+"operadores de multiplicación de matrices ``@`` and ``@=``."
 
-#: ../../library/weakref.rst:159
+#: ../Doc/library/weakref.rst:156
 msgid ""
 "Return the number of weak references and proxies which refer to *object*."
-msgstr "*object* を参照する弱参照とプロキシの数を返します。"
+msgstr ""
+"Retorna el número de referencias débiles y proxies que refieren a *object*."
 
-#: ../../library/weakref.rst:164
+#: ../Doc/library/weakref.rst:161
 msgid ""
 "Return a list of all weak reference and proxy objects which refer to "
 "*object*."
 msgstr ""
-"*object* を参照するすべての弱参照とプロキシオブジェクトのリストを返します。"
+"Retorna una lista de todas las referencias débiles y objetos proxy que "
+"refieren a *object*."
 
-#: ../../library/weakref.rst:169
+#: ../Doc/library/weakref.rst:166
 msgid ""
 "Mapping class that references keys weakly.  Entries in the dictionary will "
 "be discarded when there is no longer a strong reference to the key.  This "
@@ -312,31 +341,20 @@ msgid ""
 "of an application without adding attributes to those objects.  This can be "
 "especially useful with objects that override attribute accesses."
 msgstr ""
-"キーを弱参照するマッピングクラス。キーへの強参照がなくなったときに、辞書のエ"
-"ントリは捨てられます。アプリケーションの他の部分が所有するオブジェクトへ属性"
-"を追加することもなく、それらのオブジェクトに追加データを関連づけるために使う"
-"ことができます。これは属性へのアクセスをオーバーライドするオブジェクトに特に"
-"便利です。"
+"Clase de mapeado que referencia llaves débilmente.  Las entradas en el "
+"diccionario serán descartadas cuando no haya una referencia fuerte a la "
+"llave.  Esto puede ser usado para asociar datos con un objeto apropiado por "
+"otras partes de una aplicación sin añadir atributos a esos objetos.  Esto "
+"puede ser especialmente útil con objetos que sobre escriben atributos de "
+"acceso."
 
-#: ../../library/weakref.rst:175
-msgid ""
-"Note that when a key with equal value to an existing key (but not equal "
-"identity) is inserted into the dictionary, it replaces the value but does "
-"not replace the existing key. Due to this, when the reference to the "
-"original key is deleted, it also deletes the entry in the dictionary::"
-msgstr ""
-
-#: ../../library/weakref.rst:188
-msgid "A workaround would be to remove the key prior to reassignment::"
-msgstr ""
-
-#: ../../library/weakref.rst:199
+#: ../Doc/library/weakref.rst:172
 msgid "Added support for ``|`` and ``|=`` operators, specified in :pep:`584`."
 msgstr ""
-":pep:`584` で規定されている ``|`` 演算子と ``|=`` 演算子のサポートを追加しま"
-"した。"
+"Se agregó soporte para los operadores ``|`` y ``|=``, especificados en :pep:"
+"`584`."
 
-#: ../../library/weakref.rst:202
+#: ../Doc/library/weakref.rst:175
 msgid ""
 ":class:`WeakKeyDictionary` objects have an additional method that exposes "
 "the internal references directly.  The references are not guaranteed to be "
@@ -345,54 +363,57 @@ msgid ""
 "references that will cause the garbage collector to keep the keys around "
 "longer than needed."
 msgstr ""
-":class:`WeakKeyDictionary` オブジェクトは、追加のメソッドを持ちます。このメ"
-"ソッドは、内部の参照を直接公開します。その参照は、利用される時に生存している"
-"とは限りません。なので、参照を利用する前に、その参照をチェックする必要があり"
-"ます。これにより、必要なくなったキーの参照が残っているために、ガベージコレク"
-"タがそのキーを削除できなくなる事態を避ける事ができます。"
+"Los objetos :class:`WeakKeyDictionary` tiene un método adicional que expone "
+"las referencias internas directamente.  Las referencias no tienen garantía "
+"de estar con \"vida\" en el momento en que son usadas, por lo que el "
+"resultado de llamar las referencias necesita ser revisado antes de ser "
+"usado. Esto puede ser usado para evitar crear referencias que causen que "
+"recolector de basura mantenga las llaves en existencia más tiempo del que "
+"necesitan."
 
-#: ../../library/weakref.rst:212
+#: ../Doc/library/weakref.rst:185
 msgid "Return an iterable of the weak references to the keys."
-msgstr "キーへの弱参照を持つ iterable オブジェクトを返します。"
+msgstr "Retorna un iterable de las referencias débiles a las llaves."
 
-#: ../../library/weakref.rst:217
+#: ../Doc/library/weakref.rst:190
 msgid ""
 "Mapping class that references values weakly.  Entries in the dictionary will "
 "be discarded when no strong reference to the value exists any more."
 msgstr ""
-"値を弱参照するマッピングクラス。値への強参照が存在しなくなったときに、辞書の"
-"エントリは捨てられます。"
+"Clase de mapeado que referencia valores débilmente.  Las entradas en el "
+"diccionario serán descartadas cuando ya no existan las referencias fuertes a "
+"los valores."
 
-#: ../../library/weakref.rst:220
+#: ../Doc/library/weakref.rst:193
 msgid ""
 "Added support for ``|`` and ``|=`` operators, as specified in :pep:`584`."
 msgstr ""
-":pep:`584` で規定されている ``|`` 演算子と ``|=`` 演算子のサポートを追加しま"
-"した。"
+"Se agregó soporte para los operadores ``|`` y ``|=``, como se especifica en :"
+"pep:`584`."
 
-#: ../../library/weakref.rst:223
+#: ../Doc/library/weakref.rst:196
 msgid ""
 ":class:`WeakValueDictionary` objects have an additional method that has the "
 "same issues as the :meth:`keyrefs` method of :class:`WeakKeyDictionary` "
 "objects."
 msgstr ""
-":class:`WeakValueDictionary` オブジェクトは :class:`WeakKeyDictionary` オブ"
-"ジェクトの :meth:`keyrefs` メソッドと同じ目的を持つ追加のメソッドを持っていま"
-"す。"
+"Los objetos :class:`WeakValueDictionary` tienen un método adicional que "
+"tiene los mismos problemas que el método :meth:`keyrefs` de los objetos :"
+"class:`WeakyKeyDictionary`."
 
-#: ../../library/weakref.rst:230
+#: ../Doc/library/weakref.rst:203
 msgid "Return an iterable of the weak references to the values."
-msgstr "値への弱参照を持つ iterable オブジェクトを返します。"
+msgstr "Retorna un iterable de las referencias débiles a los valores."
 
-#: ../../library/weakref.rst:235
+#: ../Doc/library/weakref.rst:208
 msgid ""
 "Set class that keeps weak references to its elements.  An element will be "
 "discarded when no strong reference to it exists any more."
 msgstr ""
-"要素への弱参照を持つ集合型。要素への強参照が無くなったときに、その要素は削除"
-"されます。"
+"Clase Conjunto que mantiene referencias débiles a sus elementos.  Un "
+"elemento será descartado cuando ya no existan referencias fuertes."
 
-#: ../../library/weakref.rst:241
+#: ../Doc/library/weakref.rst:214
 msgid ""
 "A custom :class:`ref` subclass which simulates a weak reference to a bound "
 "method (i.e., a method defined on a class and looked up on an instance). "
@@ -400,188 +421,207 @@ msgid ""
 "hold of it.  :class:`WeakMethod` has special code to recreate the bound "
 "method until either the object or the original function dies::"
 msgstr ""
-"拡張された :class:`ref` のサブクラスで、束縛されたメソッドへの弱参照をシミュ"
-"レートします (つまり、クラスで定義され、インスタンスにあるメソッド)。\n"
-"束縛されたメソッドは短命なので、標準の弱参照では保持し続けられません。\n"
-":class:`WeakMethod` には、オブジェクトと元々の関数が死ぬまで束縛されたメソッ"
-"ドを再作成する特別なコードがあります::"
+"Una subclase :class:`ref` personalizada que simula una referencia débil a un "
+"método vinculado (i.e., un método definido en una clase y visto en una "
+"instancia). Ya que un método atado es efímero, una referencia débil estándar "
+"no puede mantenerlo.  El :class:`WeakMethod` tiene un código especial para "
+"recrear el método atado hasta que o el objeto o la función original muera::"
 
-#: ../../library/weakref.rst:265
-msgid ""
-"*callback* is the same as the parameter of the same name to the :func:`ref` "
-"function."
-msgstr ""
-
-#: ../../library/weakref.rst:271
+#: ../Doc/library/weakref.rst:242
 msgid ""
 "Return a callable finalizer object which will be called when *obj* is "
 "garbage collected. Unlike an ordinary weak reference, a finalizer will "
 "always survive until the reference object is collected, greatly simplifying "
 "lifecycle management."
 msgstr ""
-"*obj* がガベージコレクションで回収されるときに呼び出される、呼び出し可能な"
-"ファイナライザオブジェクトを返します。\n"
-"通常の弱参照とは異なり、ファイナライザは参照しているオブジェクトが回収される"
-"まで必ず生き残り、そのおかげでライフサイクル管理が大いに簡単になります。"
+"Retorna un objeto finalizador invocable que será llamado cuando *obj* sea "
+"recolectado por el recolector de basura. A diferencia de referencias débiles "
+"ordinarias, un finalizador siempre sobrevivirá hasta que el objeto de "
+"referencia sea recolectado, simplificando enormemente la gestión del ciclo "
+"de vida."
 
-#: ../../library/weakref.rst:276
+#: ../Doc/library/weakref.rst:247
 msgid ""
 "A finalizer is considered *alive* until it is called (either explicitly or "
 "at garbage collection), and after that it is *dead*.  Calling a live "
 "finalizer returns the result of evaluating ``func(*arg, **kwargs)``, whereas "
 "calling a dead finalizer returns :const:`None`."
 msgstr ""
-"ファイナライザは (直接もしくはガベージコレクションのときに) 呼び出されるまで "
-"*生きている* と見なされ、呼び出された後には *死んでいます* 。\n"
-"生きているファイナライザを呼び出すと、 ``func(*arg, **kwargs)`` を評価した結"
-"果を返します。一方、死んでいるファイナライザを呼び出すと :const:`None` を返し"
-"ます。"
+"Se considera a un finalizador como *vivo* hasta que sea llamado (o "
+"explícitamente o en la recolección de basura), y después que esté *muerto*.  "
+"Llamar a un finalizador vivo retorna el resultado de evaluar ``func(*arg, "
+"**kwargs)``, mientras que llamar a un finalizador muerto retorna :const:"
+"`None`."
 
-#: ../../library/weakref.rst:281
+#: ../Doc/library/weakref.rst:252
 msgid ""
 "Exceptions raised by finalizer callbacks during garbage collection will be "
 "shown on the standard error output, but cannot be propagated.  They are "
 "handled in the same way as exceptions raised from an object's :meth:"
 "`__del__` method or a weak reference's callback."
 msgstr ""
-"ガベージコレクション中にファイナライザコールバックが発生させた例外は、標準エ"
-"ラー出力に表示されますが、伝播することはできません。これらの例外は、オブジェ"
-"クトの :meth:`__del__` メソッドや弱参照のコールバックが発生させる例外と同じ方"
-"法で処理されます。"
+"Las excepciones lanzadas por retrollamadas de finalizadores durante la "
+"recolección de basura serán mostradas en la salida de error estándar, pero "
+"no pueden ser propagadas.  Son gestionados de la misma forma que las "
+"excepciones lanzadas del método :meth:`__del__` de un objeto o la "
+"retrollamada de una referencia débil."
 
-#: ../../library/weakref.rst:287
+#: ../Doc/library/weakref.rst:258
 msgid ""
 "When the program exits, each remaining live finalizer is called unless its :"
 "attr:`atexit` attribute has been set to false.  They are called in reverse "
 "order of creation."
 msgstr ""
-"プログラムが終了するとき、生き残ったそれぞれのファイナライザは、自身の :attr:"
-"`atexit` 属性が偽に設定されるまで呼び出され続けます。\n"
-"ファイナライザは生成された順序の逆順で呼び出されます。"
+"Cuando el programa sale, cada finalizador vivo que quede es llamado a menos "
+"que su atributo :attr:`atexit` sea falso.  Son llamados en el orden reverso "
+"de creación."
 
-#: ../../library/weakref.rst:291
+#: ../Doc/library/weakref.rst:262
 msgid ""
 "A finalizer will never invoke its callback during the later part of the :"
 "term:`interpreter shutdown` when module globals are liable to have been "
 "replaced by :const:`None`."
 msgstr ""
+"Un finalizador nunca invocará su retrollamada durante la última parte del :"
+"term:`interpreter shutdown <apagado del intérprete>` cuando los módulos "
+"globales están sujetos a ser reemplazados por :const:`None`."
 
-#: ../../library/weakref.rst:297
+#: ../Doc/library/weakref.rst:268
 msgid ""
 "If *self* is alive then mark it as dead and return the result of calling "
 "``func(*args, **kwargs)``.  If *self* is dead then return :const:`None`."
 msgstr ""
+"Si *self* está vivo entonces lo marca como muerto y retorna el resultado de "
+"llamar a ``func(*args, **kwargs)``.  Si *self* está muerto entonces retorna :"
+"const:`None`."
 
-#: ../../library/weakref.rst:303
+#: ../Doc/library/weakref.rst:274
 msgid ""
 "If *self* is alive then mark it as dead and return the tuple ``(obj, func, "
 "args, kwargs)``.  If *self* is dead then return :const:`None`."
 msgstr ""
+"Si *self* está vivo entonces lo marca como muerto y retorna la tupla ``(obj, "
+"func, args, kwargs)``.  Si *self* está muerto entonces retorna :const:`None`."
 
-#: ../../library/weakref.rst:309
+#: ../Doc/library/weakref.rst:280
 msgid ""
 "If *self* is alive then return the tuple ``(obj, func, args, kwargs)``.  If "
 "*self* is dead then return :const:`None`."
 msgstr ""
+"Si *self* está vivo entonces retorna la tupla ``(obj, func, args, "
+"kwargs)``.  Si *self* está muerto entonces retorna :const:`None`."
 
-#: ../../library/weakref.rst:314
+#: ../Doc/library/weakref.rst:285
 msgid "Property which is true if the finalizer is alive, false otherwise."
 msgstr ""
-"ファイナライザが生きている場合には真、そうでない場合には偽のプロパティです。"
+"Propiedad que es verdadera si el finalizador está vivo, caso contrario, "
+"falso."
 
-#: ../../library/weakref.rst:318
+#: ../Doc/library/weakref.rst:289
 msgid ""
 "A writable boolean property which by default is true.  When the program "
 "exits, it calls all remaining live finalizers for which :attr:`.atexit` is "
 "true.  They are called in reverse order of creation."
 msgstr ""
+"Una propiedad booleana con permisos de escritura que por defecto es "
+"verdadero.  Cuando el programa sale, llama a todos los finalizadores vivos "
+"que queden para los cuales :attr:`atexit` es verdadero.  Ellos son llamados "
+"en el orden reverso de creación."
 
-#: ../../library/weakref.rst:325
+#: ../Doc/library/weakref.rst:296
 msgid ""
 "It is important to ensure that *func*, *args* and *kwargs* do not own any "
 "references to *obj*, either directly or indirectly, since otherwise *obj* "
 "will never be garbage collected.  In particular, *func* should not be a "
 "bound method of *obj*."
 msgstr ""
+"Es importante asegurar que *func*, *args* y *kwargs* no sean dueños de "
+"ninguna referencia a *obj*, o directamente o indirectamente, ya que de otra "
+"manera *obj* nunca será recolectado por el recolector de basura.  En "
+"particular, *func* no debe ser un método vinculado de *obj*."
 
-#: ../../library/weakref.rst:335
+#: ../Doc/library/weakref.rst:306
 msgid "The type object for weak references objects."
-msgstr "弱参照オブジェクトのための型オブジェクト。"
+msgstr "El objeto de tipo para objetos de referencias débiles."
 
-#: ../../library/weakref.rst:340
+#: ../Doc/library/weakref.rst:311
 msgid "The type object for proxies of objects which are not callable."
-msgstr "呼び出し可能でないオブジェクトのプロキシのための型オブジェクト。"
+msgstr "El objeto de tipo para proxies de objetos que no son invocables."
 
-#: ../../library/weakref.rst:345
+#: ../Doc/library/weakref.rst:316
 msgid "The type object for proxies of callable objects."
-msgstr "呼び出し可能なオブジェクトのプロキシのための型オブジェクト。"
+msgstr "El objeto de tipo para proxies de objetos invocables."
 
-#: ../../library/weakref.rst:350
+#: ../Doc/library/weakref.rst:321
 msgid ""
 "Sequence containing all the type objects for proxies.  This can make it "
 "simpler to test if an object is a proxy without being dependent on naming "
 "both proxy types."
 msgstr ""
-"プロキシのためのすべての型オブジェクトを含むシーケンス。これは両方のプロキシ"
-"型の名前付けに依存しないで、オブジェクトがプロキシかどうかのテストをより簡単"
-"にできます。"
+"Una secuencia que contiene todos los objetos de tipo para los proxies. Esto "
+"puede hacerlo más simple para pruebas si un objeto es un proxy sin ser "
+"dependiente en nombrar a ambos tipos proxy."
 
-#: ../../library/weakref.rst:358
+#: ../Doc/library/weakref.rst:329
 msgid ":pep:`205` - Weak References"
-msgstr ":pep:`205` - 弱参照"
+msgstr ":pep:`205` - Referencias Débiles"
 
-#: ../../library/weakref.rst:358
+#: ../Doc/library/weakref.rst:329
 msgid ""
 "The proposal and rationale for this feature, including links to earlier "
 "implementations and information about similar features in other languages."
 msgstr ""
-"この機能の提案と理論的根拠。初期の実装と他の言語における類似の機能についての"
-"情報へのリンクを含んでいます。"
+"La propuesta y lógica de esta característica, incluyendo los enlaces a "
+"implementaciones tempranas e información acerca de características similares "
+"en otros lenguajes."
 
-#: ../../library/weakref.rst:365
+#: ../Doc/library/weakref.rst:336
 msgid "Weak Reference Objects"
-msgstr "弱参照オブジェクト"
+msgstr "Objetos de referencias débiles"
 
-#: ../../library/weakref.rst:367
+#: ../Doc/library/weakref.rst:338
 msgid ""
 "Weak reference objects have no methods and no attributes besides :attr:`ref."
 "__callback__`. A weak reference object allows the referent to be obtained, "
 "if it still exists, by calling it:"
 msgstr ""
+"Los objetos de referencias débiles no tiene métodos y atributos aparte de :"
+"attr:`ref.__calback__`. Un objeto de referencia débil permite que el "
+"referente sea obtenido, si todavía existe, al llamarlo:"
 
-#: ../../library/weakref.rst:381
+#: ../Doc/library/weakref.rst:352
 msgid ""
 "If the referent no longer exists, calling the reference object returns :"
 "const:`None`:"
 msgstr ""
-"リファレントがもはや存在しないならば、参照オブジェクトの呼び出しは :const:"
-"`None` を返します:"
+"Si el referente no existe, llamar al objeto de referencia retorna :const:"
+"`None`:"
 
-#: ../../library/weakref.rst:388
+#: ../Doc/library/weakref.rst:359
 msgid ""
 "Testing that a weak reference object is still live should be done using the "
 "expression ``ref() is not None``.  Normally, application code that needs to "
 "use a reference object should follow this pattern::"
 msgstr ""
-"弱参照オブジェクトがまだ生きているかどうかのテストは、式 ``ref() is not "
-"None`` を用いて行われます。通常、参照オブジェクトを使う必要があるアプリケー"
-"ションコードはこのパターンに従います::"
+"Probar que un objeto de referencia débil está todavía con vida debe ser "
+"hecho usando la expresión ``ref() is not None``.  Normalmente, el código de "
+"aplicación que necesite usar un objeto de referencia debe seguir este "
+"patrón::"
 
-#: ../../library/weakref.rst:401
+#: ../Doc/library/weakref.rst:372
 msgid ""
 "Using a separate test for \"liveness\" creates race conditions in threaded "
 "applications; another thread can cause a weak reference to become "
 "invalidated before the weak reference is called; the idiom shown above is "
 "safe in threaded applications as well as single-threaded applications."
 msgstr ""
-"\"生存性(liveness)\"のテストを分割すると、スレッド化されたアプリケーションに"
-"おいて競合状態を作り出します。 (訳注:``if r() is not None: r()."
-"do_something()`` では、2度目のr()がNoneを返す可能性があります) 弱参照が呼び出"
-"される前に、他のスレッドは弱参照が無効になる原因となり得ます。上で示したイ"
-"ディオムは、シングルスレッドのアプリケーションと同じくマルチスレッド化された"
-"アプリケーションにおいても安全です。"
+"Usar una prueba separada para \"vivacidad\" crea una condición de carrera en "
+"aplicaciones con hilos; otro hilo puede hacer que una referencia débil sea "
+"invalidada antes de que la referencia débil sea llamada; El modismo mostrado "
+"arriba es seguro en aplicaciones con hilos también como aplicaciones de un "
+"sólo hilo."
 
-#: ../../library/weakref.rst:406
+#: ../Doc/library/weakref.rst:377
 msgid ""
 "Specialized versions of :class:`ref` objects can be created through "
 "subclassing. This is used in the implementation of the :class:"
@@ -590,144 +630,177 @@ msgid ""
 "reference, but could also be used to insert additional processing on calls "
 "to retrieve the referent."
 msgstr ""
-"サブクラス化を行えば、 :class:`ref` オブジェクトの特殊なバージョンを作成でき"
-"ます。これは :class:`WeakValueDictionary` の実装で使われており、マップ内の各"
-"エントリによるメモリのオーバヘッドを減らしています。こうした実装は、ある参照"
-"に追加情報を関連付けたい場合に便利ですし、リファレントを取り出すための呼び出"
-"し時に何らかの追加処理を行いたい場合にも使えます。"
+"Versiones especializadas de objetos :class:`ref` pueden ser creadas a través "
+"de creación por subclase. Esto es usado en la implementación de :class:"
+"`WeakValueDictionary` para reducir la memoria elevada por cada entrada en el "
+"mapeado.  Esto puede ser lo más útil para asociar información adicional con "
+"un referencia, pero también puede ser usado para insertar procesamiento "
+"adicional en llamadas para recuperar el referente."
 
-#: ../../library/weakref.rst:412
+#: ../Doc/library/weakref.rst:383
 msgid ""
 "This example shows how a subclass of :class:`ref` can be used to store "
 "additional information about an object and affect the value that's returned "
 "when the referent is accessed::"
 msgstr ""
-"以下の例では、 :class:`ref` のサブクラスを使って、あるオブジェクトに追加情報"
-"を保存し、リファレントがアクセスされたときにその値に作用をできるようにするた"
-"めの方法を示しています::"
+"Este ejemplo muestra como una subclase de :class:`ref` puede ser usado para "
+"guardar información adicional sobre un objeto y afectar el valor que se "
+"retorna cuando el referente es accedido::"
 
-#: ../../library/weakref.rst:439
+#: ../Doc/library/weakref.rst:410
 msgid "Example"
-msgstr "使用例"
+msgstr "Ejemplo"
 
-#: ../../library/weakref.rst:441
+#: ../Doc/library/weakref.rst:412
 msgid ""
 "This simple example shows how an application can use object IDs to retrieve "
 "objects that it has seen before.  The IDs of the objects can then be used in "
 "other data structures without forcing the objects to remain alive, but the "
 "objects can still be retrieved by ID if they do."
 msgstr ""
-"この簡単な例では、アプリケーションが以前に参照したオブジェクトを取り出すため"
-"にオブジェクトIDを利用する方法を示します。オブジェクトに生きたままであること"
-"を強制することなく、オブジェクトの IDを他のデータ構造の中で使うことができ、必"
-"要に応じてIDからオブジェクトを取り出せます。"
+"Este simple ejemplo muestra como una aplicación puede usar objetos ID para "
+"recuperar objetos que han sido visto antes.  Los ID de los objetos pueden "
+"ser usados en otras estructuras de datos sin forzar que los objetos "
+"permanezcan con vida, pero los objetos pueden aún pueden ser recuperados por "
+"el ID si lo hacen."
 
-#: ../../library/weakref.rst:466
+#: ../Doc/library/weakref.rst:437
 msgid "Finalizer Objects"
-msgstr "ファイナライザオブジェクト"
+msgstr "Objetos finalizadores"
 
-#: ../../library/weakref.rst:468
+#: ../Doc/library/weakref.rst:439
 msgid ""
 "The main benefit of using :class:`finalize` is that it makes it simple to "
 "register a callback without needing to preserve the returned finalizer "
 "object.  For instance"
 msgstr ""
+"El principal beneficio de usar :class:`finalize` es que hace simple "
+"registrar una retrollamada sin necesitar preservar el objeto finalizador "
+"retornado.  Por ejemplo"
 
-#: ../../library/weakref.rst:482
+#: ../Doc/library/weakref.rst:453
 msgid ""
 "The finalizer can be called directly as well.  However the finalizer will "
 "invoke the callback at most once."
 msgstr ""
-"ファイナライザは直接呼び出すこともできます。ただし、ファイナライザはコール"
-"バックを最大でも一度しか呼び出しません。"
+"El finalizador puede ser llamado directamente también.  Sin embargo, el "
+"finalizador invocará la retrollamada como máximo una vez."
 
-#: ../../library/weakref.rst:498
+#: ../Doc/library/weakref.rst:469
 msgid ""
 "You can unregister a finalizer using its :meth:`~finalize.detach` method.  "
 "This kills the finalizer and returns the arguments passed to the constructor "
 "when it was created."
 msgstr ""
+"Puedes de-registrar un finalizador usando su método :meth:`~finalize."
+"detach`. Esto mata el finalizador y retorna los argumentos pasados al "
+"constructor cuando fue creado."
 
-#: ../../library/weakref.rst:512
+#: ../Doc/library/weakref.rst:483
 msgid ""
 "Unless you set the :attr:`~finalize.atexit` attribute to :const:`False`, a "
 "finalizer will be called when the program exits if it is still alive.  For "
 "instance"
 msgstr ""
+"A menos que pongas el atributo :attr:`~finalize.atexit` a :const:`False`, un "
+"finalizador será llamado cuando el programa salga si todavía está con vida.  "
+"Por ejemplo"
 
-#: ../../library/weakref.rst:527
+#: ../Doc/library/weakref.rst:498
 msgid "Comparing finalizers with :meth:`__del__` methods"
-msgstr "ファイナライザと :meth:`__del__` メソッドとの比較"
+msgstr "Comparando finalizadores con los métodos :meth:`__del__`"
 
-#: ../../library/weakref.rst:529
+#: ../Doc/library/weakref.rst:500
 msgid ""
 "Suppose we want to create a class whose instances represent temporary "
 "directories.  The directories should be deleted with their contents when the "
 "first of the following events occurs:"
 msgstr ""
-"インスタンスが一時ディレクトリを表す、クラスを作成するとします。そのディレク"
-"トリは、次のイベントのいずれかが起きた時に、そのディレクトリの内容とともに削"
-"除されるべきです。"
+"Suponga que queremos crear una clase cuyas instancias representan "
+"directorios temporales.  Los directorios deben ser eliminados con sus "
+"contenidos cuando el primero de los siguiente eventos ocurre:"
 
-#: ../../library/weakref.rst:533
+#: ../Doc/library/weakref.rst:504
 msgid "the object is garbage collected,"
-msgstr "オブジェクトのガベージコレクションが行われた場合"
+msgstr "el objeto es recolectado por el recolector de basura,"
 
-#: ../../library/weakref.rst:534
+#: ../Doc/library/weakref.rst:505
 msgid "the object's :meth:`remove` method is called, or"
-msgstr "オブジェクトの :meth:`remove` メソッドが呼び出された場合"
+msgstr "el método :meth:`remove` del objeto es llamado, o"
 
-#: ../../library/weakref.rst:535
+#: ../Doc/library/weakref.rst:506
 msgid "the program exits."
-msgstr "プログラムが終了した場合"
+msgstr "el programa sale."
 
-#: ../../library/weakref.rst:537
+#: ../Doc/library/weakref.rst:508
 msgid ""
 "We might try to implement the class using a :meth:`__del__` method as "
 "follows::"
 msgstr ""
-"ここでは、 :meth:`__del__` メソッドを使用して次のようにクラスを実装します::"
+"Nosotros podemos intentar implementar la clase usando el método :meth:"
+"`__del__` como sigue::"
 
-#: ../../library/weakref.rst:556
+#: ../Doc/library/weakref.rst:527
 msgid ""
 "Starting with Python 3.4, :meth:`__del__` methods no longer prevent "
 "reference cycles from being garbage collected, and module globals are no "
 "longer forced to :const:`None` during :term:`interpreter shutdown`. So this "
 "code should work without any issues on CPython."
 msgstr ""
+"Empezando con Python 3.4, Los métodos :meth:`__del__` ya no previenen ciclos "
+"de referencia de ser recolectado como basura, y los módulos globales ya no "
+"fuerzan :const:`None` durante :term:`interpreter shutdown`. Por lo que este "
+"código debe trabajar sin ningún problema en CPython."
 
-#: ../../library/weakref.rst:561
+#: ../Doc/library/weakref.rst:532
 msgid ""
 "However, handling of :meth:`__del__` methods is notoriously implementation "
 "specific, since it depends on internal details of the interpreter's garbage "
 "collector implementation."
 msgstr ""
+"Sin embargo, la gestión de métodos :meth:`__del__` es notoriamente "
+"específico por la implementación, ya que depende de detalles internos de la "
+"implementación del recolector de basura del intérprete."
 
-#: ../../library/weakref.rst:565
+#: ../Doc/library/weakref.rst:536
 msgid ""
 "A more robust alternative can be to define a finalizer which only references "
 "the specific functions and objects that it needs, rather than having access "
 "to the full state of the object::"
 msgstr ""
+"Una alternativa más robusta puede ser para definir un finalizador que sólo "
+"hace referencia a funciones específicas y objetos que necesite, en vez de "
+"tener acceso al estado completo del objeto::"
 
-#: ../../library/weakref.rst:581
+#: ../Doc/library/weakref.rst:552
 msgid ""
 "Defined like this, our finalizer only receives a reference to the details it "
 "needs to clean up the directory appropriately. If the object never gets "
 "garbage collected the finalizer will still be called at exit."
 msgstr ""
+"Definido así, nuestro finalizador sólo recibe una referencia a los detalles "
+"que necesita limpiar los directorios apropiadamente. Si el objeto nueva "
+"llega a ser recolectado como basura el finalizador aún será llamado al salir."
 
-#: ../../library/weakref.rst:585
+#: ../Doc/library/weakref.rst:556
 msgid ""
 "The other advantage of weakref based finalizers is that they can be used to "
 "register finalizers for classes where the definition is controlled by a "
 "third party, such as running code when a module is unloaded::"
 msgstr ""
+"La otra ventaja de weakref basados en finalizadores es que ellos pueden ser "
+"usados para registrar finalizadores para clases donde la definición es "
+"controlado por terceros, como un código que corre cuando un módulo es "
+"descargado::"
 
-#: ../../library/weakref.rst:597
+#: ../Doc/library/weakref.rst:568
 msgid ""
 "If you create a finalizer object in a daemonic thread just as the program "
 "exits then there is the possibility that the finalizer does not get called "
 "at exit.  However, in a daemonic thread :func:`atexit.register`, ``try: ... "
 "finally: ...`` and ``with: ...`` do not guarantee that cleanup occurs either."
 msgstr ""
+"Si creas un objeto finalizador en un hilo daemon sólo como el programa sale "
+"entonces hay la posibilidad de que el finalizador no llegue a ser llamado. "
+"Sin embargo, en un hilo daemonic :func:`atexit.register`, ``try: ... "
+"finally: ...`` y ``with: ...`` no garantizan que la limpieza ocurra tampoco."

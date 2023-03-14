@@ -1,69 +1,70 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 00:48+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-10-30 17:20-0300\n"
+"Last-Translator: Sofía Denner <sofi.denner@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.2\n"
 
-#: ../../c-api/code.rst:8
+#: ../Doc/c-api/code.rst:8
 msgid "Code Objects"
-msgstr "コードオブジェクト"
+msgstr "Objetos código"
 
-#: ../../c-api/code.rst:12
+#: ../Doc/c-api/code.rst:12
 msgid ""
 "Code objects are a low-level detail of the CPython implementation. Each one "
 "represents a chunk of executable code that hasn't yet been bound into a "
 "function."
 msgstr ""
-"コードオブジェクト(Code objects)は CPython 実装の低レベルな詳細部分です。各オ"
-"ブジェクトは関数に束縛されていない実行可能コードの塊を表現しています。"
+"Los objetos código son un detalle de bajo nivel de la implementación de "
+"CPython. Cada uno representa un fragmento de código ejecutable que aún no se "
+"ha vinculado a una función."
 
-#: ../../c-api/code.rst:18
+#: ../Doc/c-api/code.rst:18
 msgid ""
 "The C structure of the objects used to describe code objects.  The fields of "
 "this type are subject to change at any time."
 msgstr ""
-"コードオブジェクトを表現するために利用されるC構造体。この型のフィールドは何時"
-"でも変更され得ます。"
+"La estructura en C de los objetos utilizados para describir objetos código. "
+"Los campos de este tipo están sujetos a cambios en cualquier momento."
 
-#: ../../c-api/code.rst:24
+#: ../Doc/c-api/code.rst:24
 msgid ""
 "This is an instance of :c:type:`PyTypeObject` representing the Python :class:"
 "`code` type."
 msgstr ""
-"これは Python の :class:`code` 型を表現する :c:type:`PyTypeObject` のインスタ"
-"ンスです。"
+"Esta es una instancia de :c:type:`PyTypeObject` que representa el tipo "
+"Python :class:`code`."
 
-#: ../../c-api/code.rst:30
+#: ../Doc/c-api/code.rst:30
 msgid ""
 "Return true if *co* is a :class:`code` object.  This function always "
 "succeeds."
 msgstr ""
-"*co* が :class:`code` オブジェクトの場合に真を返します。この関数は常に成功し"
-"ます。"
+"Retorna verdadero si *co* es un objeto :class:`code`. Esta función siempre "
+"finaliza con éxito."
 
-#: ../../c-api/code.rst:34
+#: ../Doc/c-api/code.rst:34
 msgid "Return the number of free variables in *co*."
-msgstr "*co* 内の自由変数(free variables)の数を返します。"
+msgstr "Retorna el número de variables libres en *co*."
 
-#: ../../c-api/code.rst:38
+#: ../Doc/c-api/code.rst:38
 msgid ""
 "Return a new code object.  If you need a dummy code object to create a "
 "frame, use :c:func:`PyCode_NewEmpty` instead.  Calling :c:func:`PyCode_New` "
@@ -73,82 +74,126 @@ msgid ""
 "to result in incorrect execution or VM crashes. Use this function only with "
 "extreme care."
 msgstr ""
+"Retorna un nuevo objeto de código. Si se necesita un objeto de código "
+"ficticio para crear un marco (*frame*), usar :c:func:`PyCode_NewEmpty` en su "
+"lugar. Llamando :c:func:`PyCode_New` directamente puede enlazarlo a una "
+"versión precisa de Python ya que la definición del código de bytes cambia a "
+"menudo. Muchos de los argumentos de esta función están relacionados "
+"mutuamente de formas complejas, lo cual significa que cambios sutiles en "
+"estos valores probablemente resulten en ejecuciones incorrectas o fallas en "
+"la VM."
 
-#: ../../c-api/code.rst:45 ../../c-api/code.rst:55
+#: ../Doc/c-api/code.rst:45 ../Doc/c-api/code.rst:55
 msgid "Added ``exceptiontable`` parameter."
-msgstr ""
+msgstr "Se agregó el parámetro ``exceptiontable``."
 
-#: ../../c-api/code.rst:50
+#: ../Doc/c-api/code.rst:50
 msgid ""
 "Similar to :c:func:`PyCode_New`, but with an extra \"posonlyargcount\" for "
 "positional-only arguments. The same caveats that apply to ``PyCode_New`` "
 "also apply to this function."
 msgstr ""
+"Similar a :c:func:`PyCode_New`, pero con un \"*posonlyargcount*\" adicional "
+"para argumentos solo posicionales. Las mismas advertencias que aplican a "
+"``PyCode_New`` también aplican a esta función."
 
-#: ../../c-api/code.rst:60
+#: ../Doc/c-api/code.rst:60
 msgid ""
 "Return a new empty code object with the specified filename, function name, "
 "and first line number. The resulting code object will raise an ``Exception`` "
 "if executed."
 msgstr ""
+"Retorna un nuevo objeto de código vacío con el nombre de archivo "
+"especificado, el nombre de la función y el número de la primera línea. Si el "
+"objeto código resultante es ejecutado, lanzará una ``Exception``."
 
-#: ../../c-api/code.rst:66
+#: ../Doc/c-api/code.rst:66
 msgid ""
 "Return the line number of the instruction that occurs on or before "
 "``byte_offset`` and ends after it. If you just need the line number of a "
 "frame, use :c:func:`PyFrame_GetLineNumber` instead."
 msgstr ""
+"Retorna el número de línea de la instrucción que se produce en o antes de "
+"``byte_offset`` y finaliza después. Si solo necesita el número de línea de "
+"un marco, use :c:func:`PyFrame_GetLineNumber` en su lugar."
 
-#: ../../c-api/code.rst:69
+#: ../Doc/c-api/code.rst:69
 msgid ""
 "For efficiently iterating over the line numbers in a code object, use `the "
 "API described in PEP 626 <https://peps.python.org/pep-0626/#out-of-process-"
 "debuggers-and-profilers>`_."
 msgstr ""
+"Para iterar de manera eficiente sobre los números de línea en un objeto de "
+"código, use `la API descrita en PEP 626 <https://peps.python.org/pep-0626/"
+"#out-of-process-debuggers-and-profilers>`_."
 
-#: ../../c-api/code.rst:74
+#: ../Doc/c-api/code.rst:74
 msgid ""
 "Sets the passed ``int`` pointers to the source code line and column numbers "
 "for the instruction at ``byte_offset``. Sets the value to ``0`` when "
 "information is not available for any particular element."
 msgstr ""
+"Establece los punteros ``int`` pasados en los números de línea y columna del "
+"código fuente para las instrucciones en ``byte_offset``. Establece el valor "
+"en ``0`` cuando la información no está disponible para algún elemento en "
+"particular."
 
-#: ../../c-api/code.rst:78
+#: ../Doc/c-api/code.rst:78
 msgid "Returns ``1`` if the function succeeds and 0 otherwise."
-msgstr ""
+msgstr "Retorna ``1`` si la función fue exitosa y ``0`` de lo contrario."
 
-#: ../../c-api/code.rst:84
+#: ../Doc/c-api/code.rst:82
 msgid ""
 "Equivalent to the Python code ``getattr(co, 'co_code')``. Returns a strong "
 "reference to a :c:type:`PyBytesObject` representing the bytecode in a code "
 "object. On error, ``NULL`` is returned and an exception is raised."
 msgstr ""
+"Equivalente al código Python ``getattr(co, 'co_code')``. Retorna una "
+"referencia fuerte a un :c:type:`PyBytesObject` representando el bytecode en "
+"un objecto código. En caso de error se retorna ``NULL`` y se lanza una "
+"excepción."
 
-#: ../../c-api/code.rst:89
+#: ../Doc/c-api/code.rst:87
 msgid ""
 "This ``PyBytesObject`` may be created on-demand by the interpreter and does "
 "not necessarily represent the bytecode actually executed by CPython. The "
 "primary use case for this function is debuggers and profilers."
 msgstr ""
+"Este ``PyBytesObject`` puede ser creado a pedido del intérprete y no "
+"necesariamente representa el bytecode que es realmente ejecutado por "
+"CPython. Los casos de uso principales para esta función son depuradores y "
+"perfiladores."
 
-#: ../../c-api/code.rst:97
+#: ../Doc/c-api/code.rst:95
 msgid ""
 "Equivalent to the Python code ``getattr(co, 'co_varnames')``. Returns a new "
 "reference to a :c:type:`PyTupleObject` containing the names of the local "
 "variables. On error, ``NULL`` is returned and an exception is raised."
 msgstr ""
+"Equivalente al código Python ``getattr(co, 'co_varnames')``. Retorna una "
+"nueva referencia a un :c:type:`PyTupleObject` que contiene los nombres de "
+"las variables locales. En caso de error, retorna ``NULL`` y lanza una "
+"excepción."
 
-#: ../../c-api/code.rst:106
+#: ../Doc/c-api/code.rst:104
 msgid ""
 "Equivalent to the Python code ``getattr(co, 'co_cellvars')``. Returns a new "
 "reference to a :c:type:`PyTupleObject` containing the names of the local "
 "variables that are referenced by nested functions. On error, ``NULL`` is "
 "returned and an exception is raised."
 msgstr ""
+"Equivalente al código Python ``getattr(co, 'co_cellvars')``. Retorna una "
+"nueva referencia a un :c:type:`PyTupleObject` que contiene los nombres de "
+"las variables locales referenciadas por funciones anidadas. En caso de "
+"error, retorna ``NULL`` y lanza una excepción."
 
-#: ../../c-api/code.rst:115
+#: ../Doc/c-api/code.rst:113
 msgid ""
 "Equivalent to the Python code ``getattr(co, 'co_freevars')``. Returns a new "
 "reference to a :c:type:`PyTupleObject` containing the names of the free "
 "variables. On error, ``NULL`` is returned and an exception is raised."
 msgstr ""
+"Equivalente al código Python ``getattr(co, 'co_freevars')``. Retorna una "
+"nueva referencia a un :c:type:`PyTupleObject` que contiene los nombres de "
+"las variables libres. En caso de error, retorna ``NULL`` y lanza una "
+"excepción."

@@ -1,110 +1,114 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:10+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-11-26 19:22-0300\n"
+"Last-Translator: Sofía Denner <sofi.denner@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es_CO\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.2\n"
 
-#: ../../library/ossaudiodev.rst:2
+#: ../Doc/library/ossaudiodev.rst:2
 msgid ":mod:`ossaudiodev` --- Access to OSS-compatible audio devices"
-msgstr ":mod:`ossaudiodev` --- OSS互換オーディオデバイスへのアクセス"
+msgstr ""
+":mod:`ossaudiodev` --- Acceso a dispositivos de audio compatibles con OSS"
 
-#: ../../library/ossaudiodev.rst:12
+#: ../Doc/library/ossaudiodev.rst:12
 msgid ""
 "The :mod:`ossaudiodev` module is deprecated (see :pep:`PEP 594 "
 "<594#ossaudiodev>` for details)."
 msgstr ""
+"El módulo :mod:`ossaudiodev` está deprecado (vea :pep:`PEP 594 "
+"<594#ossaudiodev>` para más detalles)."
 
-#: ../../library/ossaudiodev.rst:15
+#: ../Doc/library/ossaudiodev.rst:15
 msgid ""
 "This module allows you to access the OSS (Open Sound System) audio "
 "interface. OSS is available for a wide range of open-source and commercial "
 "Unices, and is the standard audio interface for Linux and recent versions of "
 "FreeBSD."
 msgstr ""
-"このモジュールを使うとOSS (Open Sound System) オーディオインターフェースにア"
-"クセスできます。OSSはオープンソースあるいは商用のUnixで広く利用でき、Linux "
-"(カーネル 2.4まで) とFreeBSDで標準のオーディオインターフェースです。"
+"Este módulo le permite acceder a la interfaz de audio OSS (Open Sound "
+"System). OSS está disponible para una amplia gama de Unices comerciales y de "
+"código abierto, y es la interfaz de audio estándar para Linux y versiones "
+"recientes de FreeBSD."
 
-#: ../../library/ossaudiodev.rst:47
+#: ../Doc/library/ossaudiodev.rst:47
 msgid ""
 "Operations in this module now raise :exc:`OSError` where :exc:`IOError` was "
 "raised."
 msgstr ""
-"このモジュールの操作で以前は :exc:`IOError` が送出されていたところで :exc:"
-"`OSError` が送出されるようになりました。"
+"Las operaciones en este módulo ahora generan :exc:`OSError` donde :exc:"
+"`IOError`` es generado."
 
-#: ../../library/ossaudiodev.rst:55
+#: ../Doc/library/ossaudiodev.rst:55
 msgid ""
 "`Open Sound System Programmer's Guide <http://www.opensound.com/pguide/oss."
 "pdf>`_"
 msgstr ""
-"`Open Sound System Programmer's Guide <http://www.opensound.com/pguide/oss."
+"`Open Sound System Programmer’s Guide <http://www.opensound.com/pguide/oss."
 "pdf>`_"
 
-#: ../../library/ossaudiodev.rst:55
+#: ../Doc/library/ossaudiodev.rst:55
 msgid "the official documentation for the OSS C API"
-msgstr "OSS C API の公式ドキュメント"
+msgstr "la documentación oficial de la API de OSS C"
 
-#: ../../library/ossaudiodev.rst:57
+#: ../Doc/library/ossaudiodev.rst:57
 msgid ""
 "The module defines a large number of constants supplied by the OSS device "
 "driver; see ``<sys/soundcard.h>`` on either Linux or FreeBSD for a listing."
 msgstr ""
-"このモジュールでは、OSS デバイスドライバが提供している大量の定数が定義されて"
-"います; 一覧は Linux や FreeBSD 上の ``<sys/soundcard.h>`` を参照してくださ"
-"い。"
+"El módulo define una gran cantidad de constantes suministradas por el "
+"controlador de dispositivo OSS; consulte ``<sys/soundcard.h>`` en Linux o "
+"FreeBSD para obtener un listado."
 
-#: ../../library/ossaudiodev.rst:60
+#: ../Doc/library/ossaudiodev.rst:60
 msgid ":mod:`ossaudiodev` defines the following variables and functions:"
-msgstr ":mod:`ossaudiodev` では以下の変数と関数を定義しています:"
+msgstr ":mod:`ossaudiodev` define las siguientes variables y funciones:"
 
-#: ../../library/ossaudiodev.rst:65
+#: ../Doc/library/ossaudiodev.rst:65
 msgid ""
 "This exception is raised on certain errors.  The argument is a string "
 "describing what went wrong."
 msgstr ""
-"何らかのエラーのときに送出される例外です。引数は何が誤っているかを示す文字列"
-"です。"
+"Esta excepción se genera en ciertos errores. El argumento es una cadena que "
+"describe qué salió mal."
 
-#: ../../library/ossaudiodev.rst:68
+#: ../Doc/library/ossaudiodev.rst:68
 msgid ""
 "(If :mod:`ossaudiodev` receives an error from a system call such as :c:func:"
 "`open`, :c:func:`write`, or :c:func:`ioctl`, it raises :exc:`OSError`. "
 "Errors detected directly by :mod:`ossaudiodev` result in :exc:"
 "`OSSAudioError`.)"
 msgstr ""
-"(:mod:`ossaudiodev` が :c:func:`open`、 :c:func:`write` 、:c:func:`ioctl` な"
-"どのシステムコールからエラーを受け取った場合、  :exc:`OSError` を送出しま"
-"す。 :mod:`ossaudiodev` によって直接検知されたエラーでは :exc:"
-"`OSSAudioError` になります。)"
+"(Si :mod:`ossaudiodev`` recibe un error de una llamada al sistema como :c:"
+"func:`open`, :c:func:`write`, o :c:func:`ioctl`, genera :exc:`OSError`. Los "
+"errores detectados directamente por :mod:`ossaudiodev` dan como resultado :"
+"exc:`OSSAudioError`.)"
 
-#: ../../library/ossaudiodev.rst:72
+#: ../Doc/library/ossaudiodev.rst:72
 msgid ""
 "(For backwards compatibility, the exception class is also available as "
 "``ossaudiodev.error``.)"
 msgstr ""
-"(以前のバージョンとの互換性のため、この例外クラスは ``ossaudiodev.error`` と"
-"しても利用できます。)"
+"(Para compatibilidad con versiones anteriores, la clase de excepción también "
+"está disponible como ``ossaudiodev.error``.)"
 
-#: ../../library/ossaudiodev.rst:79
+#: ../Doc/library/ossaudiodev.rst:79
 msgid ""
 "Open an audio device and return an OSS audio device object.  This object "
 "supports many file-like methods, such as :meth:`read`, :meth:`write`, and :"
@@ -113,24 +117,25 @@ msgid ""
 "a number of audio-specific methods; see below for the complete list of "
 "methods."
 msgstr ""
-"オーディオデバイスを開き、OSSオーディオデバイスオブジェクトを返します。このオ"
-"ブジェクトは :meth:`read` 、 :meth:`write` 、 :meth:`fileno` といったファイル"
-"類似オブジェクトのメソッドを数多くサポートしています。 (とはいえ、伝統的な "
-"Unix の read/write における意味づけと OSS デバイスの read/write との間には微"
-"妙な違いがあります)。また、オーディオ特有の多くのメソッドがあります;メソッド"
-"の完全なリストについては下記を参照してください。"
+"Abra un dispositivo de audio y retorne un objeto de dispositivo de audio "
+"OSS. Este objeto admite muchos métodos similares a archivos, como :meth:"
+"`read`, :meth:`write`, and :meth:`fileno` (aunque existen diferencias "
+"sutiles entre la semántica de lectura/escritura convencional de Unix y la de "
+"audio OSS dispositivos). También es compatible con varios métodos "
+"específicos de audio; vea a continuación la lista completa de métodos."
 
-#: ../../library/ossaudiodev.rst:85
+#: ../Doc/library/ossaudiodev.rst:85
 msgid ""
 "*device* is the audio device filename to use.  If it is not specified, this "
 "module first looks in the environment variable :envvar:`AUDIODEV` for a "
 "device to use.  If not found, it falls back to :file:`/dev/dsp`."
 msgstr ""
-"*device* は使用するオーディオデバイスファイルネームです。もしこれが指定されな"
-"いなら、このモジュールは使うデバイスとして最初に環境変数 :envvar:`AUDIODEV` "
-"を参照します。見つからなければ :file:`/dev/dsp` を参照します。"
+"*device* es el nombre de archivo del dispositivo de audio que se utilizará. "
+"Si no se especifica, este módulo primero busca en la variable de entorno :"
+"envvar:`AUDIODEV` para un dispositivo a usar. Si no se encuentra, vuelve a :"
+"file:`/dev/dsp`."
 
-#: ../../library/ossaudiodev.rst:89
+#: ../Doc/library/ossaudiodev.rst:89
 msgid ""
 "*mode* is one of ``'r'`` for read-only (record) access, ``'w'`` for write-"
 "only (playback) access and ``'rw'`` for both. Since many sound cards only "
@@ -139,105 +144,107 @@ msgid ""
 "sound cards are half-duplex: they can be opened for reading or writing, but "
 "not both at once."
 msgstr ""
-"*mode* は読み出し専用アクセスの場合には ``'r'``、書き込み専用 (プレイバック) "
-"アクセスの場合には ``'w'``、読み書きアクセスの場合には ``'rw'`` にします。多"
-"くのサウンドカードは一つのプロセスが一度にレコーダとプレーヤのどちらかしか開"
-"けないようにしているため、必要な操作に応じたデバイスだけを開くようにするのが"
-"よいでしょう。また、サウンドカードには半二重 (half- duplex) 方式のものがあり"
-"ます: こうしたカードでは、デバイスを読み出しまたは書き込み用に開くことはでき"
-"ますが、両方同時には開けません。"
+"*mode* es uno de ``’r’`` para acceso de solo lectura (grabación), ``’w’`` "
+"para acceso de solo escritura (reproducción) y ``’rw’`` para ambos. Dado que "
+"muchas tarjetas de sonido solo permiten que un proceso tenga la grabadora o "
+"el reproductor abiertos a la vez, es una buena idea abrir el dispositivo "
+"solo para la actividad necesaria. Además, algunas tarjetas de sonido son "
+"semidúplex: se pueden abrir para leer o escribir, pero no ambas a la vez."
 
-#: ../../library/ossaudiodev.rst:96
+#: ../Doc/library/ossaudiodev.rst:96
 msgid ""
 "Note the unusual calling syntax: the *first* argument is optional, and the "
 "second is required.  This is a historical artifact for compatibility with "
 "the older :mod:`linuxaudiodev` module which :mod:`ossaudiodev` supersedes."
 msgstr ""
-"呼び出しの文法が普通と異なることに注意してください: *最初の* 引数は省略可能"
-"で、2番目が必須です。これは :mod:`ossaudiodev` にとってかわられた古い :mod:"
-"`linuxaudiodev` との互換性のためという歴史的な産物です。"
+"Tenga en cuenta la sintaxis de llamada inusual: el *first* argumento es "
+"opcional y el segundo es obligatorio. Este es un artefacto histórico para la "
+"compatibilidad con el módulo anterior :mod:`linuxaudiodev` que :mod:"
+"`ossaudiodev` reemplaza."
 
-#: ../../library/ossaudiodev.rst:107
+#: ../Doc/library/ossaudiodev.rst:107
 msgid ""
 "Open a mixer device and return an OSS mixer device object.   *device* is the "
 "mixer device filename to use.  If it is not specified, this module first "
 "looks in the environment variable :envvar:`MIXERDEV` for a device to use.  "
 "If not found, it falls back to :file:`/dev/mixer`."
 msgstr ""
-"ミキサデバイスを開き、OSSミキサデバイスオブジェクトを返します。 *device* は使"
-"用するミキサデバイスのファイル名です。 *device* を指定しない場合、モジュール"
-"はまず環境変数 :envvar:`MIXERDEV` を参照して使用するデバイスを探します。見つ"
-"からなければ、 :file:`/dev/mixer` を参照します。"
+"Abra un dispositivo mezclador y retorne un objeto de dispositivo mezclador "
+"OSS. *device* es el nombre de archivo del dispositivo mezclador que se "
+"utilizará. Si no se especifica, este módulo primero busca en la variable de "
+"entorno :envvar:`MIXERDEV` para usar un dispositivo. Si no se encuentra, "
+"vuelve a :file:`/dev/mixer`."
 
-#: ../../library/ossaudiodev.rst:116
+#: ../Doc/library/ossaudiodev.rst:116
 msgid "Audio Device Objects"
-msgstr "オーディオデバイスオブジェクト"
+msgstr "Objetos de dispositivo de audio"
 
-#: ../../library/ossaudiodev.rst:118
+#: ../Doc/library/ossaudiodev.rst:118
 msgid ""
 "Before you can write to or read from an audio device, you must call three "
 "methods in the correct order:"
 msgstr ""
-"オーディオデバイスに読み書きできるようになるには、まず 3 つのメソッドを正しい"
-"順序で呼び出さねばなりません:"
+"Antes de poder escribir o leer desde un dispositivo de audio, debe llamar a "
+"tres métodos en el orden correcto:"
 
-#: ../../library/ossaudiodev.rst:121
+#: ../Doc/library/ossaudiodev.rst:121
 msgid ":meth:`setfmt` to set the output format"
-msgstr ":meth:`setfmt` で出力形式を設定し"
+msgstr ":meth:`setfmt` para configurar el formato de salida"
 
-#: ../../library/ossaudiodev.rst:123
+#: ../Doc/library/ossaudiodev.rst:123
 msgid ":meth:`channels` to set the number of channels"
-msgstr ":meth:`channels` でチャンネル数を設定し"
+msgstr ":meth:`channels` para configurar el número de canales"
 
-#: ../../library/ossaudiodev.rst:125
+#: ../Doc/library/ossaudiodev.rst:125
 msgid ":meth:`speed` to set the sample rate"
-msgstr ":meth:`speed` でサンプリングレートを設定します"
+msgstr ":meth:`speed` para configurar la frecuencia de muestreo"
 
-#: ../../library/ossaudiodev.rst:127
+#: ../Doc/library/ossaudiodev.rst:127
 msgid ""
 "Alternately, you can use the :meth:`setparameters` method to set all three "
 "audio parameters at once.  This is more convenient, but may not be as "
 "flexible in all cases."
 msgstr ""
-"この代わりに :meth:`setparameters` メソッドを呼び出せば、三つのオーディオパラ"
-"メタを一度で設定できます。 :meth:`setparameters` は便利ですが、多くの状況で柔"
-"軟性に欠けるでしょう。"
+"Alternativamente, puede usar el método :meth:`setparameters` para configurar "
+"los tres parámetros de audio a la vez. Esto es más conveniente, pero puede "
+"que no sea tan flexible en todos los casos."
 
-#: ../../library/ossaudiodev.rst:131
+#: ../Doc/library/ossaudiodev.rst:131
 msgid ""
 "The audio device objects returned by :func:`.open` define the following "
 "methods and (read-only) attributes:"
 msgstr ""
-":func:`.open` の返すオーディオデバイスオブジェクトには以下のメソッドおよび(読"
-"み出し専用の)属性があります:"
+"Los objetos de dispositivo de audio retornados por :func:`.open` definen los "
+"siguientes métodos y atributos (de solo lectura):"
 
-#: ../../library/ossaudiodev.rst:137
+#: ../Doc/library/ossaudiodev.rst:137
 msgid ""
 "Explicitly close the audio device.  When you are done writing to or reading "
 "from an audio device, you should explicitly close it.  A closed device "
 "cannot be used again."
 msgstr ""
-"オーディオデバイスを明示的に閉じます。オーディオデバイスは、読み出しや書き込"
-"みが終了したら必ず閉じねばなりません。閉じたオブジェクトを再度開くことはでき"
-"ません。"
+"Cierre explícitamente el dispositivo de audio. Cuando haya terminado de "
+"escribir o leer desde un dispositivo de audio, debe cerrarlo explícitamente. "
+"Un dispositivo cerrado no se puede volver a utilizar."
 
-#: ../../library/ossaudiodev.rst:144
+#: ../Doc/library/ossaudiodev.rst:144
 msgid "Return the file descriptor associated with the device."
-msgstr "デバイスに関連付けられているファイル記述子を返します。"
+msgstr "Retorna el descriptor de archivo asociado con el dispositivo."
 
-#: ../../library/ossaudiodev.rst:149
+#: ../Doc/library/ossaudiodev.rst:149
 msgid ""
 "Read *size* bytes from the audio input and return them as a Python string. "
 "Unlike most Unix device drivers, OSS audio devices in blocking mode (the "
 "default) will block :func:`read` until the entire requested amount of data "
 "is available."
 msgstr ""
-"オーディオ入力から *size* バイトを読みだし、 Python 文字列型にして返します。"
-"多くの Unix デバイスドライバと違い、ブロックデバイスモード (デフォルト) の "
-"OSS オーディオデバイスでは、要求した量のデータ全体を取り込むまで :func:"
-"`read` がブロックします。"
+"Leer *size* bytes de la entrada de audio y retornarlos como una cadena de "
+"Python. A diferencia de la mayoría de los controladores de dispositivos "
+"Unix, los dispositivos de audio OSS en modo de bloqueo (el predeterminado) "
+"bloquearán :func:`read` hasta que esté disponible toda la cantidad de datos "
+"solicitada."
 
-#: ../../library/ossaudiodev.rst:157
+#: ../Doc/library/ossaudiodev.rst:157
 msgid ""
 "Write a :term:`bytes-like object` *data* to the audio device and return the "
 "number of bytes written.  If the audio device is in blocking mode (the "
@@ -245,18 +252,20 @@ msgid ""
 "usual Unix device semantics).  If the device is in non-blocking mode, some "
 "data may not be written---see :meth:`writeall`."
 msgstr ""
-":term:`bytes-like object` *data* の内容をオーディオデバイスに書き込み、書き込"
-"まれたバイト数を返します。オーディオデバイスがブロックモード (デフォルト) の"
-"場合、常にデータ全体を書き込みます (前述のように、これは通常のUnix デバイスの"
-"振舞いとは異なります)。デバイスが非ブロックモードの場合、データの一部が書き込"
-"まれないことがあります --- :meth:`writeall` を参照してください。"
+"Escriba un :term:`bytes-like object` *data* en el dispositivo de audio y "
+"retorne el número de bytes escritos. Si el dispositivo de audio está en modo "
+"de bloqueo (el predeterminado), todos los datos siempre se escriben "
+"(nuevamente, esto es diferente de la semántica habitual del dispositivo "
+"Unix). Si el dispositivo está en modo sin bloqueo, es posible que algunos "
+"datos no se escriban---see :meth:`writeall`."
 
-#: ../../library/ossaudiodev.rst:163 ../../library/ossaudiodev.rst:177
+#: ../Doc/library/ossaudiodev.rst:163 ../Doc/library/ossaudiodev.rst:177
 msgid "Writable :term:`bytes-like object` is now accepted."
 msgstr ""
-"書き込み可能な :term:`bytes-like object` を使用できるようになりました。"
+"Ahora se aceptan objetos con permisos de escritura con formato :term:`bytes-"
+"like object`."
 
-#: ../../library/ossaudiodev.rst:169
+#: ../Doc/library/ossaudiodev.rst:169
 msgid ""
 "Write a :term:`bytes-like object` *data* to the audio device: waits until "
 "the audio device is able to accept data, writes as much data as it will "
@@ -266,22 +275,23 @@ msgid ""
 "return value, since the amount of data written is always equal to the amount "
 "of data supplied."
 msgstr ""
-":term:`bytes-like object` *data* をオーディオデバイスに書き込みます。オーディ"
-"オデバイスがデータを受け取れるようになるまで待機し、書き込めるだけのデータを"
-"書き込むという操作を、 *data* を全て書き込み終わるまで繰り返します。デバイス"
-"がブロックモード (デフォルト) の場合には、このメソッドは :meth:`write` と同じ"
-"です。 :meth:`writeall` が有用なのは非ブロックモードだけです。実際に書き込ま"
-"れたデータの量と渡したデータの量は必ず同じになるので、戻り値はありません。"
+"Escriba un :term:`bytes-like object` *data* en el dispositivo de audio: "
+"espera hasta que el dispositivo de audio sea capaz de aceptar datos, escribe "
+"tantos datos como acepte y repite hasta que *data* se hayan escrito por "
+"completo. Si el dispositivo está en modo de bloqueo (el predeterminado), "
+"esto tiene el mismo efecto que :meth:`write`; :meth:`writeall` solo es útil "
+"en el modo sin bloqueo. No tiene valor de retorno, ya que la cantidad de "
+"datos escritos siempre es igual a la cantidad de datos suministrados."
 
-#: ../../library/ossaudiodev.rst:181
+#: ../Doc/library/ossaudiodev.rst:181
 msgid ""
 "Audio device objects also support the context management protocol, i.e. they "
 "can be used in a :keyword:`with` statement."
 msgstr ""
-"オーディオデバイスオブジェクトはコンテキストマネージメントプロトコルをサポー"
-"トしています。つまり :keyword:`with` 文で使うことができます。"
+"Los objetos de dispositivo de audio también admiten el protocolo de gestión "
+"de contexto, es decir, se pueden utilizar en una declaración :keyword:`with`."
 
-#: ../../library/ossaudiodev.rst:186
+#: ../Doc/library/ossaudiodev.rst:186
 msgid ""
 "The following methods each map to exactly one :c:func:`ioctl` system call.  "
 "The correspondence is obvious: for example, :meth:`setfmt` corresponds to "
@@ -289,243 +299,252 @@ msgid ""
 "(this can be useful when consulting the OSS documentation).  If the "
 "underlying :c:func:`ioctl` fails, they all raise :exc:`OSError`."
 msgstr ""
-"以下の各メソッドは、厳密に 1 つの :c:func:`ioctl` システムコールに対応してい"
-"ます。対応関係は明らかです: 例えば、 :meth:`setfmt` は ioctl の "
-"``SNDCTL_DSP_SETFMT`` に対応し、 :meth:`sync` は ``SNDCTL_DSP_SYNC`` に対応し"
-"ます (これは OSS のドキュメントを調べるときに便利です) 。中で呼んでいる :c:"
-"func:`ioctl` が失敗した場合は、 :exc:`OSError` が送出されます。"
+"Los siguientes métodos se asignan exactamente a una llamada al sistema :c:"
+"func:`ioctl`. La correspondencia es obvia: por ejemplo, :meth:`setfmt` "
+"corresponde al ``SNDCTL_DSP_SETFMT`` ioctl, y :meth:`sync` a "
+"``SNDCTL_DSP_SYNC`` (esto puede ser útil cuando se consulta la documentación "
+"de OSS). Si el subyacente :c:func:`ioctl` falla, todos generan :exc:"
+"`OSError`."
 
-#: ../../library/ossaudiodev.rst:195
+#: ../Doc/library/ossaudiodev.rst:195
 msgid ""
 "Put the device into non-blocking mode.  Once in non-blocking mode, there is "
 "no way to return it to blocking mode."
 msgstr ""
-"デバイスを非ブロックモードにします。いったん非ブロックモードにしたら、ブロッ"
-"クモードは戻せません。"
+"Ponga el dispositivo en modo sin bloqueo. Una vez en el modo sin bloqueo, no "
+"hay forma de volverlo al modo de bloqueo."
 
-#: ../../library/ossaudiodev.rst:201
+#: ../Doc/library/ossaudiodev.rst:201
 msgid ""
 "Return a bitmask of the audio output formats supported by the soundcard.  "
 "Some of the formats supported by OSS are:"
 msgstr ""
-"サウンドカードがサポートしているオーディオ出力形式をビットマスクで返します。"
-"以下はOSSでサポートされているフォーマットの一部です:"
+"Retorna una máscara de bits de los formatos de salida de audio admitidos por "
+"la tarjeta de sonido. Algunos de los formatos admitidos por OSS son:"
 
-#: ../../library/ossaudiodev.rst:205
+#: ../Doc/library/ossaudiodev.rst:205
 msgid "Format"
-msgstr "フォーマット"
+msgstr "Formato"
 
-#: ../../library/ossaudiodev.rst:205 ../../library/ossaudiodev.rst:259
+#: ../Doc/library/ossaudiodev.rst:205 ../Doc/library/ossaudiodev.rst:259
 msgid "Description"
-msgstr "説明"
+msgstr "Descripción"
 
-#: ../../library/ossaudiodev.rst:207
+#: ../Doc/library/ossaudiodev.rst:207
 msgid ":const:`AFMT_MU_LAW`"
 msgstr ":const:`AFMT_MU_LAW`"
 
-#: ../../library/ossaudiodev.rst:207
+#: ../Doc/library/ossaudiodev.rst:207
 msgid ""
 "a logarithmic encoding (used by Sun ``.au`` files and :file:`/dev/audio`)"
 msgstr ""
-"対数符号化 (Sun の ``.au`` 形式や :file:`/dev/audio` で使われている形式)"
+"una codificación logarítmica (utilizada por los archivos Sun ``.au`` y :file:"
+"`/dev/audio`)"
 
-#: ../../library/ossaudiodev.rst:210
+#: ../Doc/library/ossaudiodev.rst:210
 msgid ":const:`AFMT_A_LAW`"
 msgstr ":const:`AFMT_A_LAW`"
 
-#: ../../library/ossaudiodev.rst:210
+#: ../Doc/library/ossaudiodev.rst:210
 msgid "a logarithmic encoding"
-msgstr "対数符号化"
+msgstr "una codificación logarítmica"
 
-#: ../../library/ossaudiodev.rst:212
+#: ../Doc/library/ossaudiodev.rst:212
 msgid ":const:`AFMT_IMA_ADPCM`"
 msgstr ":const:`AFMT_IMA_ADPCM`"
 
-#: ../../library/ossaudiodev.rst:212
+#: ../Doc/library/ossaudiodev.rst:212
 msgid ""
 "a 4:1 compressed format defined by the Interactive Multimedia Association"
-msgstr "Interactive Multimedia Association で定義されている 4:1 圧縮形式"
+msgstr ""
+"un formato comprimido 4:1 definido por la Interactive Multimedia Association"
 
-#: ../../library/ossaudiodev.rst:215
+#: ../Doc/library/ossaudiodev.rst:215
 msgid ":const:`AFMT_U8`"
 msgstr ":const:`AFMT_U8`"
 
-#: ../../library/ossaudiodev.rst:215
+#: ../Doc/library/ossaudiodev.rst:215
 msgid "Unsigned, 8-bit audio"
-msgstr "符号なし 8 ビットオーディオ"
+msgstr "Audio de 8 bits sin firmar"
 
-#: ../../library/ossaudiodev.rst:217
+#: ../Doc/library/ossaudiodev.rst:217
 msgid ":const:`AFMT_S16_LE`"
 msgstr ":const:`AFMT_S16_LE`"
 
-#: ../../library/ossaudiodev.rst:217
+#: ../Doc/library/ossaudiodev.rst:217
 msgid ""
 "Signed, 16-bit audio, little-endian byte order (as used by Intel processors)"
 msgstr ""
-"符号つき 16 ビットオーディオ、リトルエンディアンバイトオーダ (Intelプロセッサ"
-"で使われている形式)"
+"Orden de bytes little-endian firmado, audio de 16 bits (como lo utilizan los "
+"procesadores Intel)"
 
-#: ../../library/ossaudiodev.rst:220
+#: ../Doc/library/ossaudiodev.rst:220
 msgid ":const:`AFMT_S16_BE`"
 msgstr ":const:`AFMT_S16_BE`"
 
-#: ../../library/ossaudiodev.rst:220
+#: ../Doc/library/ossaudiodev.rst:220
 msgid ""
 "Signed, 16-bit audio, big-endian byte order (as used by 68k, PowerPC, Sparc)"
 msgstr ""
-"符号つき 16 ビットオーディオ、ビッグエンディアンバイトオーダ (68k、PowerPC、"
-"Sparcで使われている形式)"
+"Orden de bytes big-endian firmado, audio de 16 bits (como lo utilizan 68k, "
+"PowerPC, Sparc)"
 
-#: ../../library/ossaudiodev.rst:223
+#: ../Doc/library/ossaudiodev.rst:223
 msgid ":const:`AFMT_S8`"
 msgstr ":const:`AFMT_S8`"
 
-#: ../../library/ossaudiodev.rst:223
+#: ../Doc/library/ossaudiodev.rst:223
 msgid "Signed, 8 bit audio"
-msgstr "符号つき 8 ビットオーディオ"
+msgstr "Firmado, audio de 8 bits"
 
-#: ../../library/ossaudiodev.rst:225
+#: ../Doc/library/ossaudiodev.rst:225
 msgid ":const:`AFMT_U16_LE`"
 msgstr ":const:`AFMT_U16_LE`"
 
-#: ../../library/ossaudiodev.rst:225
+#: ../Doc/library/ossaudiodev.rst:225
 msgid "Unsigned, 16-bit little-endian audio"
-msgstr "符号なし 16 ビットリトルエンディアンオーディオ"
+msgstr "Audio little-endian de 16 bits sin firmar"
 
-#: ../../library/ossaudiodev.rst:227
+#: ../Doc/library/ossaudiodev.rst:227
 msgid ":const:`AFMT_U16_BE`"
 msgstr ":const:`AFMT_U16_BE`"
 
-#: ../../library/ossaudiodev.rst:227
+#: ../Doc/library/ossaudiodev.rst:227
 msgid "Unsigned, 16-bit big-endian audio"
-msgstr "符号なし 16 ビットビッグエンディアンオーディオ"
+msgstr "Audio big-endian de 16 bits sin firmar"
 
-#: ../../library/ossaudiodev.rst:230
+#: ../Doc/library/ossaudiodev.rst:230
 msgid ""
 "Consult the OSS documentation for a full list of audio formats, and note "
 "that most devices support only a subset of these formats.  Some older "
 "devices only support :const:`AFMT_U8`; the most common format used today is :"
 "const:`AFMT_S16_LE`."
 msgstr ""
-"オーディオ形式の完全なリストは OSS の文書をひもといてください。ただ、ほとんど"
-"のシステムは、こうした形式のサブセットしかサポートしていません。古めのデバイ"
-"スの中には :const:`AFMT_U8` だけしかサポートしていないものがあります。現在使"
-"われている最も一般的な形式は :const:`AFMT_S16_LE` です。"
+"Consulte la documentación de OSS para obtener una lista completa de los "
+"formatos de audio y tenga en cuenta que la mayoría de los dispositivos solo "
+"admiten un subconjunto de estos formatos. Algunos dispositivos antiguos solo "
+"admiten :const:`AFMT_U8`; el formato más común utilizado hoy en día es :"
+"const:`AFMT_S16_LE`."
 
-#: ../../library/ossaudiodev.rst:238
+#: ../Doc/library/ossaudiodev.rst:238
 msgid ""
 "Try to set the current audio format to *format*---see :meth:`getfmts` for a "
 "list.  Returns the audio format that the device was set to, which may not be "
 "the requested format.  May also be used to return the current audio format---"
 "do this by passing an \"audio format\" of :const:`AFMT_QUERY`."
 msgstr ""
-"現在のオーディオ形式を *format* に設定しようと試みます --- *format* について"
-"は :meth:`getfmts` のリストを参照してください。実際にデバイスに設定されたオー"
-"ディオ形式を返します。要求通りの形式でないこともあります。 :const:"
-"`AFMT_QUERY` を渡すと現在デバイスに設定されているオーディオ形式を返します。"
+"Intente establecer el formato de audio actual en *format*---consulte :meth:"
+"`getfmts` para obtener una lista. Retorna el formato de audio en el que se "
+"configuró el dispositivo, que puede no ser el formato solicitado. También se "
+"puede utilizar para retornar el formato de audio actual. Haga esto pasando "
+"un \"formato de audio\" de :const:`AFMT_QUERY`."
 
-#: ../../library/ossaudiodev.rst:246
+#: ../Doc/library/ossaudiodev.rst:246
 msgid ""
 "Set the number of output channels to *nchannels*.  A value of 1 indicates "
 "monophonic sound, 2 stereophonic.  Some devices may have more than 2 "
 "channels, and some high-end devices may not support mono. Returns the number "
 "of channels the device was set to."
 msgstr ""
-"出力チャネル数を *nchannels* に設定します。1 はモノラル、2 はステレオです。い"
-"くつかのデバイスでは2つより多いチャンネルを持つものもありますし、ハイエンドな"
-"デバイスではモノラルをサポートしないものもあります。デバイスに設定されたチャ"
-"ンネル数を返します。"
+"Establezca el número de canales de salida en *nchannels*. Un valor de 1 "
+"indica sonido monofónico, 2 estereofónico. Algunos dispositivos pueden tener "
+"más de 2 canales y algunos dispositivos de gama alta pueden no admitir mono. "
+"Retorna el número de canales en los que se configuró el dispositivo."
 
-#: ../../library/ossaudiodev.rst:254
+#: ../Doc/library/ossaudiodev.rst:254
 msgid ""
 "Try to set the audio sampling rate to *samplerate* samples per second.  "
 "Returns the rate actually set.  Most sound devices don't support arbitrary "
 "sampling rates.  Common rates are:"
 msgstr ""
-"サンプリングレートを1秒あたり *samplerate* に設定しようと試み、実際に設定され"
-"たレートを返します。たいていのサウンドデバイスでは任意のサンプリングレートを"
-"サポートしていません。一般的なレートは以下の通りです:"
+"Intente establecer la frecuencia de muestreo de audio en *samplerate* "
+"muestras por segundo. Retorna la tasa realmente establecida. La mayoría de "
+"los dispositivos de sonido no admiten frecuencias de muestreo arbitrarias. "
+"Las tarifas comunes son:"
 
-#: ../../library/ossaudiodev.rst:259
+#: ../Doc/library/ossaudiodev.rst:259
 msgid "Rate"
-msgstr "レート"
+msgstr "Velocidad"
 
-#: ../../library/ossaudiodev.rst:261
+#: ../Doc/library/ossaudiodev.rst:261
 msgid "8000"
 msgstr "8000"
 
-#: ../../library/ossaudiodev.rst:261
+#: ../Doc/library/ossaudiodev.rst:261
 msgid "default rate for :file:`/dev/audio`"
-msgstr ":file:`/dev/audio` のデフォルト"
+msgstr "tasa predeterminada para :file:`/dev/audio`"
 
-#: ../../library/ossaudiodev.rst:263
+#: ../Doc/library/ossaudiodev.rst:263
 msgid "11025"
 msgstr "11025"
 
-#: ../../library/ossaudiodev.rst:263
+#: ../Doc/library/ossaudiodev.rst:263
 msgid "speech recording"
-msgstr "会話音声の録音に使われるレート"
+msgstr "grabación de voz"
 
-#: ../../library/ossaudiodev.rst:265
+#: ../Doc/library/ossaudiodev.rst:265
 msgid "22050"
 msgstr "22050"
 
-#: ../../library/ossaudiodev.rst:267
+#: ../Doc/library/ossaudiodev.rst:267
 msgid "44100"
 msgstr "44100"
 
-#: ../../library/ossaudiodev.rst:267
+#: ../Doc/library/ossaudiodev.rst:267
 msgid "CD quality audio (at 16 bits/sample and 2 channels)"
-msgstr "(サンプルあたり 16 ビットで 2 チャネルの場合) CD 品質のオーディオ"
+msgstr "Audio con calidad de CD (a 16 bits/muestra y 2 canales)"
 
-#: ../../library/ossaudiodev.rst:270
+#: ../Doc/library/ossaudiodev.rst:270
 msgid "96000"
 msgstr "96000"
 
-#: ../../library/ossaudiodev.rst:270
+#: ../Doc/library/ossaudiodev.rst:270
 msgid "DVD quality audio (at 24 bits/sample)"
-msgstr "(サンプル当たり 24 ビットの場合) DVD 品質のオーディオ"
+msgstr "Audio con calidad de DVD (a 24 bits/muestra)"
 
-#: ../../library/ossaudiodev.rst:276
+#: ../Doc/library/ossaudiodev.rst:276
 msgid ""
 "Wait until the sound device has played every byte in its buffer.  (This "
 "happens implicitly when the device is closed.)  The OSS documentation "
 "recommends closing and re-opening the device rather than using :meth:`sync`."
 msgstr ""
-"サウンドデバイスがバッファ内の全てのデータを再生し終えるまで待機します。 (デ"
-"バイスを閉じると暗黙のうちに :meth:`sync` が起こります) OSS のドキュメント上"
-"では、 :meth:`sync` を使うよりデバイスを一度閉じて開き直すよう勧めています。"
+"Espere hasta que el dispositivo de sonido haya reproducido todos los bytes "
+"de su búfer. (Esto sucede implícitamente cuando el dispositivo está "
+"cerrado). La documentación de OSS recomienda cerrar y volver a abrir el "
+"dispositivo en lugar de usar :meth:`sync`."
 
-#: ../../library/ossaudiodev.rst:283
+#: ../Doc/library/ossaudiodev.rst:283
 msgid ""
 "Immediately stop playing or recording and return the device to a state where "
 "it can accept commands.  The OSS documentation recommends closing and re-"
 "opening the device after calling :meth:`reset`."
 msgstr ""
-"再生あるいは録音を即座に中止して、デバイスをコマンドを受け取れる状態に戻しま"
-"す。OSSのドキュメントでは、 :meth:`reset` を呼び出した後に一度デバイスを閉"
-"じ、開き直すよう勧めています。"
+"Deje de reproducir o grabar inmediatamente y retorne el dispositivo a un "
+"estado en el que pueda aceptar comandos. La documentación de OSS recomienda "
+"cerrar y volver a abrir el dispositivo después de llamar :meth:`reset`."
 
-#: ../../library/ossaudiodev.rst:290
+#: ../Doc/library/ossaudiodev.rst:290
 msgid ""
 "Tell the driver that there is likely to be a pause in the output, making it "
 "possible for the device to handle the pause more intelligently.  You might "
 "use this after playing a spot sound effect, before waiting for user input, "
 "or before doing disk I/O."
 msgstr ""
-"ドライバに出力の一時停止 (pause) が起きそうであることを伝え、ドライバが一時停"
-"止をより賢く扱えるようにします。短いサウンドエフェクトを再生した直後やユーザ"
-"入力待ちの前、またディスク I/O 前などに使うことになるでしょう。"
+"Dígale al controlador que es probable que haya una pausa en la salida, lo "
+"que hace posible que el dispositivo maneje la pausa de manera más "
+"inteligente. Puede usar esto después de reproducir un efecto de sonido "
+"puntual, antes de esperar la entrada del usuario o antes de realizar E/S de "
+"disco."
 
-#: ../../library/ossaudiodev.rst:295
+#: ../Doc/library/ossaudiodev.rst:295
 msgid ""
 "The following convenience methods combine several ioctls, or one ioctl and "
 "some simple calculations."
 msgstr ""
-"以下のメソッドは、複数の :func:`ioctl` を組み合わせたり、:func:`ioctl` と単純"
-"な計算を組み合わせたりした便宜用メソッドです。"
+"Los siguientes métodos de conveniencia combinan varios ioctl, o un ioctl y "
+"algunos cálculos simples."
 
-#: ../../library/ossaudiodev.rst:301
+#: ../Doc/library/ossaudiodev.rst:301
 msgid ""
 "Set the key audio sampling parameters---sample format, number of channels, "
 "and sampling rate---in one method call.  *format*,  *nchannels*, and "
@@ -537,90 +556,96 @@ msgid ""
 "device driver (i.e., the same as the return values of :meth:`setfmt`, :meth:"
 "`channels`, and :meth:`speed`)."
 msgstr ""
-"主要なオーディオパラメタ、サンプル形式、チャネル数、サンプルレートを一つのメ"
-"ソッド呼び出しで設定します。 *format* 、 *nchannels* および *samplerate* に"
-"は、それぞれ :meth:`setfmt` 、 :meth:`channels` および :meth:`speed` と同じや"
-"り方で値を設定します。 *strict* の値が真の場合、 :meth:`setparameters` は値が"
-"実際に要求通りにデバイスに設定されたかどうか調べ、違っていれば :exc:"
-"`OSSAudioError` を送出します。実際にデバイスドライバが設定したパラメタ値を表"
-"す  (*format*, *nchannels*, *samplerate*) からなるタプルを返します (:meth:"
-"`setfmt` 、 :meth:`channels` および :meth:`speed` の返す値と同じです)。"
+"Configure los parámetros clave de muestreo de audio (formato de muestra, "
+"número de canales y frecuencia de muestreo) en una llamada de método. "
+"*format*, *nchannels*, y *samplerate* deben ser como se especifica en los "
+"métodos :meth:`setfmt`, :meth:`channels`, y :meth:`speed`. Si *strict* es "
+"verdadero, :meth:`setparameters` comprueba si cada parámetro se estableció "
+"realmente en el valor solicitado, y genera :exc:`OSSAudioError` si no es "
+"así. Retorna una tupla (*format*, *nchannels*, *samplerate*) que indica los "
+"valores de los parámetros que realmente estableció el controlador del "
+"dispositivo (es decir, los mismos que los valores retornados de :meth:"
+"`setfmt`, :meth:`channels`, y :meth:`speed`)."
 
-#: ../../library/ossaudiodev.rst:311
+#: ../Doc/library/ossaudiodev.rst:311
 msgid "For example,  ::"
-msgstr "例えば、 ::"
+msgstr "Por ejemplo, ::"
 
-#: ../../library/ossaudiodev.rst:315
+#: ../Doc/library/ossaudiodev.rst:315
 msgid "is equivalent to  ::"
-msgstr "は以下と同等です ::"
+msgstr "es equivalente a  ::"
 
-#: ../../library/ossaudiodev.rst:324
+#: ../Doc/library/ossaudiodev.rst:324
 msgid "Returns the size of the hardware buffer, in samples."
-msgstr "ハードウェアのバッファサイズをサンプル数で返します。"
+msgstr "Retorna el tamaño del búfer de hardware, en muestras."
 
-#: ../../library/ossaudiodev.rst:329
+#: ../Doc/library/ossaudiodev.rst:329
 msgid ""
 "Returns the number of samples that are in the hardware buffer yet to be "
 "played."
 msgstr ""
-"ハードウェアバッファ上に残っていてまだ再生されていないサンプル数を返します。"
+"Retorna el número de muestras que están en el búfer de hardware que aún no "
+"se han reproducido."
 
-#: ../../library/ossaudiodev.rst:334
+#: ../Doc/library/ossaudiodev.rst:334
 msgid ""
 "Returns the number of samples that could be queued into the hardware buffer "
 "to be played without blocking."
 msgstr ""
-"ブロックを起こさずにハードウェアの再生キューに書き込めるサンプル数を返しま"
-"す。"
+"Retorna el número de muestras que se podrían poner en cola en el búfer de "
+"hardware para reproducirse sin bloqueos."
 
-#: ../../library/ossaudiodev.rst:337
+#: ../Doc/library/ossaudiodev.rst:337
 msgid "Audio device objects also support several read-only attributes:"
 msgstr ""
-"オーディオデバイスオブジェクトは読み出し専用の属性もサポートしています:"
+"Los objetos de dispositivo de audio también admiten varios atributos de solo "
+"lectura:"
 
-#: ../../library/ossaudiodev.rst:342
+#: ../Doc/library/ossaudiodev.rst:342
 msgid "Boolean indicating whether the device has been closed."
-msgstr "デバイスが閉じられたかどうかを示す真偽値です。"
+msgstr "Booleano que indica si el dispositivo se ha cerrado."
 
-#: ../../library/ossaudiodev.rst:347
+#: ../Doc/library/ossaudiodev.rst:347
 msgid "String containing the name of the device file."
-msgstr "デバイスファイルの名前を含む文字列です。"
+msgstr "Cadena que contiene el nombre del archivo del dispositivo."
 
-#: ../../library/ossaudiodev.rst:352
+#: ../Doc/library/ossaudiodev.rst:352
 msgid "The I/O mode for the file, either ``\"r\"``, ``\"rw\"``, or ``\"w\"``."
 msgstr ""
-"ファイルの I/O モードで、``\"r\"``, ``\"rw\"``, ``\"w\"`` のどれかです。"
+"El modo de E/S para el archivo, ya sea ``\"r\"``, ``\"rw\"``, o ``\"w\"``."
 
-#: ../../library/ossaudiodev.rst:358
+#: ../Doc/library/ossaudiodev.rst:358
 msgid "Mixer Device Objects"
-msgstr "ミキサデバイスオブジェクト"
+msgstr "Objetos del dispositivo mezclador"
 
-#: ../../library/ossaudiodev.rst:360
+#: ../Doc/library/ossaudiodev.rst:360
 msgid "The mixer object provides two file-like methods:"
-msgstr "ミキサオブジェクトには、2つのファイル類似メソッドがあります:"
+msgstr "El objeto del mezclador proporciona dos métodos similares a archivos:"
 
-#: ../../library/ossaudiodev.rst:365
+#: ../Doc/library/ossaudiodev.rst:365
 msgid ""
 "This method closes the open mixer device file.  Any further attempts to use "
 "the mixer after this file is closed will raise an :exc:`OSError`."
 msgstr ""
-"このメソッドは開いているミキサデバイスオブジェクトを閉じます。このファイルを"
-"閉じた後もミキサを使おうとすると、 :exc:`OSError` が送出されます。"
+"Este método cierra el archivo del dispositivo mezclador abierto. Cualquier "
+"otro intento de usar el mezclador después de que este archivo esté cerrado "
+"lanzará un :exc:`OSError`."
 
-#: ../../library/ossaudiodev.rst:371
+#: ../Doc/library/ossaudiodev.rst:371
 msgid "Returns the file handle number of the open mixer device file."
-msgstr "開かれているミキサデバイスファイルのファイルハンドルナンバを返します。"
-
-#: ../../library/ossaudiodev.rst:373
-msgid "Mixer objects also support the context management protocol."
 msgstr ""
-"ミキサオブジェクトはコンテキストマネージメントプロトコルもサポートします。"
+"Retorna el número de identificador de archivo del archivo del dispositivo "
+"mezclador abierto."
 
-#: ../../library/ossaudiodev.rst:377
+#: ../Doc/library/ossaudiodev.rst:373
+msgid "Mixer objects also support the context management protocol."
+msgstr "Los objetos Mixer también admiten el protocolo de gestión de contexto."
+
+#: ../Doc/library/ossaudiodev.rst:377
 msgid "The remaining methods are specific to audio mixing:"
-msgstr "以下はオーディオミキシング固有のメソッドです:"
+msgstr "Los métodos restantes son específicos para la mezcla de audio:"
 
-#: ../../library/ossaudiodev.rst:382
+#: ../Doc/library/ossaudiodev.rst:382
 msgid ""
 "This method returns a bitmask specifying the available mixer controls "
 "(\"Control\" being a specific mixable \"channel\", such as :const:"
@@ -629,75 +654,79 @@ msgid ""
 "constants defined at module level. To determine if, for example, the current "
 "mixer object supports a PCM mixer, use the following Python code::"
 msgstr ""
-"このメソッドは、利用可能なミキサコントロール (:const:`SOUND_MIXER_PCM` や :"
-"const:`SOUND_MIXER_SYNTH` のように、ミキシングを行えるチャネル) を指定する"
-"ビットマスクを返します。このビットマスクは利用可能な全てのミキサコントロール"
-"のサブセットです --- 定数 :const:`SOUND_MIXER_\\*` はモジュールレベルで定義さ"
-"れています。例えば、もし現在のミキサオブジェクトがPCM ミキサをサポートしてい"
-"るか調べるには、以下のPythonコードを実行します::"
+"Este método retorna una máscara de bits que especifica los controles del "
+"mezclador disponibles (\"Control\"  es un \"canal\" mezclable específico, "
+"como :const:`SOUND_MIXER_PCM` o :const:`SOUND_MIXER_SYNTH`). Esta máscara de "
+"bits indica un subconjunto de todos los controles de mezclador disponibles "
+"--- las constantes :const:`SOUND_MIXER_\\*` definidas a nivel de módulo. "
+"Para determinar si, por ejemplo, el objeto mezclador actual admite un "
+"mezclador PCM, utilice el siguiente código Python::"
 
-#: ../../library/ossaudiodev.rst:394
+#: ../Doc/library/ossaudiodev.rst:394
 msgid ""
 "For most purposes, the :const:`SOUND_MIXER_VOLUME` (master volume) and :"
 "const:`SOUND_MIXER_PCM` controls should suffice---but code that uses the "
 "mixer should be flexible when it comes to choosing mixer controls.  On the "
 "Gravis Ultrasound, for example, :const:`SOUND_MIXER_VOLUME` does not exist."
 msgstr ""
-"ほとんどの用途には、 :const:`SOUND_MIXER_VOLUME` (マスタボリューム) と :"
-"const:`SOUND_MIXER_PCM` コントロールがあれば十分でしょう --- とはいえ、ミキサ"
-"を使うコードを書くときには、コントロールを選ぶ時に柔軟性を持たせるべきです。"
-"例えば Gravis Ultrasound には :const:`SOUND_MIXER_VOLUME` がありません。"
+"Para la mayoría de los propósitos, los controles :const:`SOUND_MIXER_VOLUME` "
+"(volumen maestro) y :const:`SOUND_MIXER_PCM` deberían ser suficientes --- "
+"pero el código que usa el mezclador debe ser flexible cuando se trata de "
+"elegir los controles del mezclador. En el Ultrasonido Gravis, por ejemplo, :"
+"const:`SOUND_MIXER_VOLUME` no existe."
 
-#: ../../library/ossaudiodev.rst:402
+#: ../Doc/library/ossaudiodev.rst:402
 msgid ""
 "Returns a bitmask indicating stereo mixer controls.  If a bit is set, the "
 "corresponding control is stereo; if it is unset, the control is either "
 "monophonic or not supported by the mixer (use in combination with :meth:"
 "`controls` to determine which)."
 msgstr ""
-"ステレオミキサコントロールを示すビットマスクを返します。ビットが立っているコ"
-"ントロールはステレオであることを示し、立っていないコントロールはモノラルか、"
-"ミキサがサポートしていないコントロールである (どちらの理由かは :meth:"
-"`controls` と組み合わせて使うことで判別できます) ことを示します。"
+"Retorna una máscara de bits que indica los controles del mezclador estéreo. "
+"Si se establece un bit, el control correspondiente es estéreo; si no está "
+"configurado, el control es monofónico o no es compatible con el mezclador "
+"(úselo en combinación con :meth:`controls` para determinar cuál)."
 
-#: ../../library/ossaudiodev.rst:407
+#: ../Doc/library/ossaudiodev.rst:407
 msgid ""
 "See the code example for the :meth:`controls` function for an example of "
 "getting data from a bitmask."
 msgstr ""
-"ビットマスクから情報を得る例は関数 :meth:`controls` のコード例を参照してくだ"
-"さい。"
+"Consulte el ejemplo de código de la función :meth:`controls` para ver un "
+"ejemplo de cómo obtener datos de una máscara de bits."
 
-#: ../../library/ossaudiodev.rst:413
+#: ../Doc/library/ossaudiodev.rst:413
 msgid ""
 "Returns a bitmask specifying the mixer controls that may be used to record.  "
 "See the code example for :meth:`controls` for an example of reading from a "
 "bitmask."
 msgstr ""
-"録音に使用できるミキサコントロールを特定するビットマスクを返します。ビットマ"
-"スクから情報を得る例は関数 :meth:`controls` のコード例を参照してください。"
+"Retorna una máscara de bits que especifica los controles del mezclador que "
+"se pueden usar para grabar. Consulte el ejemplo de código de :meth:"
+"`controls` para ver un ejemplo de lectura desde una máscara de bits."
 
-#: ../../library/ossaudiodev.rst:419
+#: ../Doc/library/ossaudiodev.rst:419
 msgid ""
 "Returns the volume of a given mixer control.  The returned volume is a 2-"
 "tuple ``(left_volume,right_volume)``.  Volumes are specified as numbers from "
 "0 (silent) to 100 (full volume).  If the control is monophonic, a 2-tuple is "
 "still returned, but both volumes are the same."
 msgstr ""
-"指定したミキサコントロールのボリュームを返します。2 要素のタプル "
-"``(left_volume,right_volume)`` を返します。ボリュームの値は 0 (無音) から100 "
-"(最大) で示されます。コントロールがモノラルでも2要素のタプルが返されますが、2"
-"つの要素の値は同じになります。"
+"Retorna el volumen de un control de mezcla determinado. El volumen retornado "
+"es una tupla de 2 ``(left_volume,right_volume)``. Los volúmenes se "
+"especifican como números del 0 (silencioso) al 100 (volumen completo). Si el "
+"control es monofónico, todavía se retorna una tupla de 2, pero ambos "
+"volúmenes son iguales."
 
-#: ../../library/ossaudiodev.rst:424
+#: ../Doc/library/ossaudiodev.rst:424
 msgid ""
 "Raises :exc:`OSSAudioError` if an invalid control is specified, or :exc:"
 "`OSError` if an unsupported control is specified."
 msgstr ""
-"不正なコントロールを指定した場合は :exc:`OSSAudioError` を、サポートされてい"
-"ないコントロールを指定した場合は :exc:`OSError` を送出します。"
+"Genera :exc:`OSSAudioError` si se especifica un control no válido, o :exc:"
+"`OSError` si se especifica un control no admitido."
 
-#: ../../library/ossaudiodev.rst:430
+#: ../Doc/library/ossaudiodev.rst:430
 msgid ""
 "Sets the volume for a given mixer control to ``(left,right)``. ``left`` and "
 "``right`` must be ints and between 0 (silent) and 100 (full volume).  On "
@@ -705,35 +734,37 @@ msgid ""
 "exactly the same as the volume specified, because of the limited resolution "
 "of some soundcard's mixers."
 msgstr ""
-"指定したミキサコントロールのボリュームを ``(left,right)`` に設定します。"
-"``left`` と ``right`` は整数で、0 (無音) から100 (最大) の間で指定せねばなり"
-"ません。呼び出しに成功すると新しいボリューム値を 2 要素のタプルで返します。サ"
-"ウンドカードによっては、ミキサの分解能上の制限から、指定したボリュームと厳密"
-"に同じにはならない場合があります。"
+"Establece el volumen para un control de mezclador dado en ``(left,right)``. "
+"``left`` y ``right`` deben ser enteros y estar entre 0 (silencio) y 100 "
+"(volumen completo). En caso de éxito, el nuevo volumen se retorna como 2 "
+"tuplas. Tenga en cuenta que puede que no sea exactamente el mismo que el "
+"volumen especificado, debido a la resolución limitada de algunos mezcladores "
+"de tarjetas de sonido."
 
-#: ../../library/ossaudiodev.rst:436
+#: ../Doc/library/ossaudiodev.rst:436
 msgid ""
 "Raises :exc:`OSSAudioError` if an invalid mixer control was specified, or if "
 "the specified volumes were out-of-range."
 msgstr ""
-"不正なコントロールを指定した場合や、指定したボリューム値が範囲外であった場"
-"合、 :exc:`OSSAudioError` を送出します。"
+"Aumenta :exc:`OSSAudioError` si se especificó un control de mezcla no "
+"válido, o si los volúmenes especificados estaban fuera de rango."
 
-#: ../../library/ossaudiodev.rst:442
+#: ../Doc/library/ossaudiodev.rst:442
 msgid ""
 "This method returns a bitmask indicating which control(s) are currently "
 "being used as a recording source."
 msgstr ""
-"現在録音のソースに使われているコントロールを示すビットマスクを返します。"
+"Este método retorna una máscara de bits que indica qué control(es) se están "
+"utilizando actualmente como fuente de grabación."
 
-#: ../../library/ossaudiodev.rst:448
+#: ../Doc/library/ossaudiodev.rst:448
 msgid ""
 "Call this function to specify a recording source.  Returns a bitmask "
 "indicating the new recording source (or sources) if successful; raises :exc:"
 "`OSError` if an invalid source was specified.  To set the current recording "
 "source to the microphone input::"
 msgstr ""
-"録音のソースを指定するために、この関数を呼び出します。成功した場合は、新しい"
-"録音のソース (1 つもしくは複数) を示すビットマスクを返します; 不正なソースを"
-"指定した場合は、 :exc:`OSError` を送出します。現在の録音のソースをマイク入力"
-"に設定するには以下のように呼び出します::"
+"Llame a esta función para especificar una fuente de grabación. Retorna una "
+"máscara de bits que indica la nueva fuente de grabación (o fuentes) si tiene "
+"éxito; plantea :exc:`OSError` si se especificó una fuente no válida. Para "
+"configurar la fuente de grabación actual a la entrada del micrófono::"

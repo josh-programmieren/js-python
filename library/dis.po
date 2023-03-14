@@ -1,267 +1,268 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2022
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-17 14:14+0000\n"
-"PO-Revision-Date: 2021-06-28 01:04+0000\n"
-"Last-Translator: tomo, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-11-05 23:34+0800\n"
+"Last-Translator: Rodrigo Tobar <rtobarc@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/dis.rst:2
+#: ../Doc/library/dis.rst:2
 msgid ":mod:`dis` --- Disassembler for Python bytecode"
-msgstr ":mod:`dis` --- Python バイトコードの逆アセンブラ"
+msgstr ":mod:`dis` --- Desensamblador para bytecode de Python"
 
-#: ../../library/dis.rst:7
+#: ../Doc/library/dis.rst:7
 msgid "**Source code:** :source:`Lib/dis.py`"
-msgstr "**ソースコード:** :source:`Lib/dis.py`"
+msgstr "**Código fuente:** :source:`Lib/dis.py`"
 
-#: ../../library/dis.rst:17
+#: ../Doc/library/dis.rst:17
 msgid ""
 "The :mod:`dis` module supports the analysis of CPython :term:`bytecode` by "
 "disassembling it. The CPython bytecode which this module takes as an input "
 "is defined in the file :file:`Include/opcode.h` and used by the compiler and "
 "the interpreter."
 msgstr ""
-":mod:`dis` モジュールは CPython :term:`バイトコード bytecode` を逆アセンブル"
-"することでバイトコードの解析をサポートします。 このモジュールが入力として受け"
-"取る CPython バイトコードはファイル :file:`Include/opcode.h` に定義されてお"
-"り、 コンパイラとインタプリタが使用しています。"
+"El módulo :mod:`dis` admite el análisis de CPython :term:`bytecode` al "
+"desarmarlo. El bytecode de CPython que este módulo toma como entrada se "
+"define en el archivo :file:`Include/opcode.h` y lo utilizan el compilador y "
+"el intérprete."
 
-#: ../../library/dis.rst:24
+#: ../Doc/library/dis.rst:24
 msgid ""
 "Bytecode is an implementation detail of the CPython interpreter.  No "
 "guarantees are made that bytecode will not be added, removed, or changed "
 "between versions of Python.  Use of this module should not be considered to "
 "work across Python VMs or Python releases."
 msgstr ""
-"バイトコードは CPython インタプリタの実装詳細です。Python のバージョン間でバ"
-"イトコードの追加や、削除、変更がないという保証はありません。このモジュールを"
-"使用することによって Python の異なる VM または異なるリリースの間で動作すると"
-"考えるべきではありません。"
+"Bytecode es un detalle de implementación del intérprete CPython. No se "
+"garantiza que el bytecode no se agregará, eliminará ni cambiará entre las "
+"versiones de Python. El uso de este módulo no debe considerarse para "
+"trabajar en diferentes máquinas virtuales Python o versiones de Python."
 
-#: ../../library/dis.rst:29
+#: ../Doc/library/dis.rst:29
 msgid ""
 "Use 2 bytes for each instruction. Previously the number of bytes varied by "
 "instruction."
 msgstr ""
-"従来は使用されるバイト数は命令ごとに異なりましたが、このモジュールでは各々一"
-"つの命令につき2バイト使用することとなっています。"
+"Use 2 bytes para cada instrucción. Anteriormente, el número de bytes variaba "
+"según la instrucción."
 
-#: ../../library/dis.rst:33
+#: ../Doc/library/dis.rst:33
 msgid ""
 "The argument of jump, exception handling and loop instructions is now the "
 "instruction offset rather than the byte offset."
 msgstr ""
 
-#: ../../library/dis.rst:37
+#: ../Doc/library/dis.rst:37
 msgid ""
 "Some instructions are accompanied by one or more inline cache entries, which "
 "take the form of :opcode:`CACHE` instructions. These instructions are hidden "
 "by default, but can be shown by passing ``show_caches=True`` to any :mod:"
-"`dis` utility. Furthermore, the interpreter now adapts the bytecode to "
-"specialize it for different runtime conditions. The adaptive bytecode can be "
-"shown by passing ``adaptive=True``."
+"`dis` utility."
 msgstr ""
 
-#: ../../library/dis.rst:46
+#: ../Doc/library/dis.rst:44
 msgid "Example: Given the function :func:`myfunc`::"
-msgstr "例: 以下の関数 :func:`myfunc` を考えると"
+msgstr "Ejemplo: dada la función :func:`myfunc`::"
 
-#: ../../library/dis.rst:51
+#: ../Doc/library/dis.rst:49
+#, fuzzy
 msgid ""
 "the following command can be used to display the disassembly of :func:"
 "`myfunc`:"
 msgstr ""
+"el siguiente comando se puede utilizar para mostrar el desensamblaje de :"
+"func:`myfunc`::"
 
-#: ../../library/dis.rst:65
+#: ../Doc/library/dis.rst:63
 msgid "(The \"2\" is a line number)."
-msgstr "(\"2\" は行番号です)。"
+msgstr "(El \"2\" es un número de línea)."
 
-#: ../../library/dis.rst:68
+#: ../Doc/library/dis.rst:66
 msgid "Bytecode analysis"
-msgstr "バイトコード解析"
+msgstr "Análisis de bytecode"
 
-#: ../../library/dis.rst:72
+#: ../Doc/library/dis.rst:70
 msgid ""
 "The bytecode analysis API allows pieces of Python code to be wrapped in a :"
 "class:`Bytecode` object that provides easy access to details of the compiled "
 "code."
 msgstr ""
-"バイトコード解析の API を使うと、 Python のコード片を :class:`Bytecode` オブ"
-"ジェクトでラップでき、コンパイルされたコードの細かいところに簡単にアクセスで"
-"きます。"
+"La API de análisis de bytecode permite que partes del código Python se "
+"envuelvan en un objeto :class:`Bytecode` que proporciona un fácil acceso a "
+"los detalles del código compilado."
 
-#: ../../library/dis.rst:79
+#: ../Doc/library/dis.rst:77
 msgid ""
 "Analyse the bytecode corresponding to a function, generator, asynchronous "
 "generator, coroutine, method, string of source code, or a code object (as "
 "returned by :func:`compile`)."
 msgstr ""
+"Analiza el bytecode correspondiente a una función, generador, generador "
+"asíncrono, corutina, método, cadena de código fuente o un objeto de código "
+"(como lo retorna :func:`compile`)."
 
-#: ../../library/dis.rst:83
+#: ../Doc/library/dis.rst:81
 msgid ""
 "This is a convenience wrapper around many of the functions listed below, "
 "most notably :func:`get_instructions`, as iterating over a :class:`Bytecode` "
 "instance yields the bytecode operations as :class:`Instruction` instances."
 msgstr ""
-"これは、下で並べられている関数の多くのものをまとめた便利なラッパーです。\n"
-"とりわけ目立つのは :func:`get_instructions` で、 :class:`Bytecode` インスタン"
-"スに対し反復処理をしながら、バイトコード命令を :class:`Instruction` インスタ"
-"ンスとして返します。"
+"Este es un contenedor conveniente para muchas de las funciones enumeradas a "
+"continuación, en particular :func:`get_instructions`, ya que iterar sobre "
+"una instancia de :class:`Bytecode` produce las operaciones de bytecode como "
+"instancias de :class:`Instruction`."
 
-#: ../../library/dis.rst:87 ../../library/dis.rst:276
+#: ../Doc/library/dis.rst:85 ../Doc/library/dis.rst:262
 msgid ""
 "If *first_line* is not ``None``, it indicates the line number that should be "
 "reported for the first source line in the disassembled code.  Otherwise, the "
 "source line information (if any) is taken directly from the disassembled "
 "code object."
 msgstr ""
-"*first_line* が ``None`` でない場合は、それを逆アセンブルしたコードのソースの"
-"最初の行に表示する行番号とします。\n"
-"そうでない場合は、ソースの行の情報 (もしあれば) を逆アセンブルされたコードオ"
-"ブジェクトから直接取得します。"
+"Si *first_line* no es ``None``, indica el número de línea que se debe "
+"informar para la primera línea de origen en el código desmontado. De lo "
+"contrario, la información de la línea de origen (si la hay) se toma "
+"directamente del objeto de código desmontado."
 
-#: ../../library/dis.rst:92
+#: ../Doc/library/dis.rst:90
 msgid ""
 "If *current_offset* is not ``None``, it refers to an instruction offset in "
 "the disassembled code. Setting this means :meth:`.dis` will display a "
 "\"current instruction\" marker against the specified opcode."
 msgstr ""
-"*current_offset* が ``None`` でない場合は、逆アセンブルされたコードでのあるイ"
-"ンストラクションのオフセット位置を示します。\n"
-"これを設定すると、 :meth:`.dis` の出力において、指定された命令コード "
-"(opcode) に \"現在の命令 (instruction)\" を表す印が表示されます。"
+"Si *current_offset* no es ``None``, se refiere a un desplazamiento de "
+"instrucción en el código desmontado. Establecer esto significa :meth:`.dis` "
+"mostrará un marcador de \"instrucción actual\" contra el código de operación "
+"especificado."
 
-#: ../../library/dis.rst:96
-msgid ""
-"If *show_caches* is ``True``, :meth:`.dis` will display inline cache entries "
-"used by the interpreter to specialize the bytecode."
-msgstr ""
-
-#: ../../library/dis.rst:99
-msgid ""
-"If *adaptive* is ``True``, :meth:`.dis` will display specialized bytecode "
-"that may be different from the original bytecode."
-msgstr ""
-
-#: ../../library/dis.rst:104
+#: ../Doc/library/dis.rst:96
 msgid ""
 "Construct a :class:`Bytecode` instance from the given traceback, setting "
 "*current_offset* to the instruction responsible for the exception."
 msgstr ""
-"与えられたトレースバックから :class:`Bytecode` インスタンスを構築し、 "
-"*current_offset* がその例外の原因となった命令となるよう設定します。"
+"Construye una instancia de :class:`Bytecode` a partir del *traceback* dado, "
+"estableciendo *current_offset* en la instrucción responsable de la excepción."
 
-#: ../../library/dis.rst:109
+#: ../Doc/library/dis.rst:101
 msgid "The compiled code object."
-msgstr "コンパイルされたコードオブジェクト。"
+msgstr "El objeto de código compilado."
 
-#: ../../library/dis.rst:113
+#: ../Doc/library/dis.rst:105
 msgid "The first source line of the code object (if available)"
-msgstr "コードオブジェクトのソースの最初の行 (利用可能であれば)"
+msgstr "La primera línea de origen del objeto de código (si está disponible)"
 
-#: ../../library/dis.rst:117
+#: ../Doc/library/dis.rst:109
 msgid ""
 "Return a formatted view of the bytecode operations (the same as printed by :"
 "func:`dis.dis`, but returned as a multi-line string)."
 msgstr ""
-"バイトコード命令の整形された表示を返します (:func:`dis.dis` と同じ出力になり"
-"ますが、複数行文字列として返されます)。"
+"Retorna una vista formateada de las operaciones de bytecode (lo mismo que "
+"impreso por :func:`dis.dis`, pero retornado como una cadena de caracteres "
+"multilínea)."
 
-#: ../../library/dis.rst:122
+#: ../Doc/library/dis.rst:114
 msgid ""
 "Return a formatted multi-line string with detailed information about the "
 "code object, like :func:`code_info`."
 msgstr ""
-":func:`code_info` のようなコードオブジェクトの詳細を含んだ整形された複数行文"
-"字列を返します。"
+"Retorna una cadena de caracteres multilínea formateada con información "
+"detallada sobre el objeto de código, como :func:`code_info`."
 
-#: ../../library/dis.rst:125 ../../library/dis.rst:166
-#: ../../library/dis.rst:218
+#: ../Doc/library/dis.rst:117 ../Doc/library/dis.rst:158
+#: ../Doc/library/dis.rst:204
 msgid "This can now handle coroutine and asynchronous generator objects."
 msgstr ""
+"Esto ahora puede manejar objetos generadores asíncronos y de corutinas."
 
-#: ../../library/dis.rst:128 ../../library/dis.rst:221
-#: ../../library/dis.rst:237 ../../library/dis.rst:264
-#: ../../library/dis.rst:285
-msgid "Added the *show_caches* and *adaptive* parameters."
+#: ../Doc/library/dis.rst:120 ../Doc/library/dis.rst:207
+#: ../Doc/library/dis.rst:223 ../Doc/library/dis.rst:250
+#: ../Doc/library/dis.rst:269
+msgid "Added the ``show_caches`` parameter."
 msgstr ""
 
-#: ../../library/dis.rst:131
+#: ../Doc/library/dis.rst:123
+#, fuzzy
 msgid "Example:"
-msgstr "例:"
+msgstr "Ejemplo::"
 
-#: ../../library/dis.rst:148
+#: ../Doc/library/dis.rst:140
 msgid "Analysis functions"
-msgstr "解析関数"
+msgstr "Funciones de análisis"
 
-#: ../../library/dis.rst:150
+#: ../Doc/library/dis.rst:142
 msgid ""
 "The :mod:`dis` module also defines the following analysis functions that "
 "convert the input directly to the desired output. They can be useful if only "
 "a single operation is being performed, so the intermediate analysis object "
 "isn't useful:"
 msgstr ""
-":mod:`dis` モジュールには、以下に挙げる入力を直接欲しい出力に変換する解析関数"
-"も定義してあります。\n"
-"1つの命令だけが実行されている場合は、解析オブジェクトをいったん作るよりはこち"
-"らの方が便利です:"
+"El módulo :mod:`dis` también define las siguientes funciones de análisis que "
+"convierten la entrada directamente en la salida deseada. Pueden ser útiles "
+"si solo se realiza una sola operación, por lo que el objeto de análisis "
+"intermedio no es útil:"
 
-#: ../../library/dis.rst:156
+#: ../Doc/library/dis.rst:148
 msgid ""
 "Return a formatted multi-line string with detailed code object information "
 "for the supplied function, generator, asynchronous generator, coroutine, "
 "method, source code string or code object."
 msgstr ""
+"Retorna una cadena de caracteres multilínea formateada con información "
+"detallada del objeto de código para la función, generador, generador "
+"asíncrono, corutina, método, cadena de código fuente u objeto de código "
+"suministrados."
 
-#: ../../library/dis.rst:160
+#: ../Doc/library/dis.rst:152
 msgid ""
 "Note that the exact contents of code info strings are highly implementation "
 "dependent and they may change arbitrarily across Python VMs or Python "
 "releases."
 msgstr ""
-"この結果は実装に強く依存しており、Python VM や Python のバージョンによって異"
-"なることがあります。"
+"Tenga en cuenta que el contenido exacto de las cadenas de información de "
+"código depende en gran medida de la implementación y puede cambiar "
+"arbitrariamente en las diferentes máquinas virtuales Python o las versiones "
+"de Python."
 
-#: ../../library/dis.rst:172
+#: ../Doc/library/dis.rst:164
 msgid ""
 "Print detailed code object information for the supplied function, method, "
 "source code string or code object to *file* (or ``sys.stdout`` if *file* is "
 "not specified)."
 msgstr ""
-"渡された関数、メソッド、ソースコード文字列、コードオブジェクトに対する、詳細"
-"なコードオブジェクトの情報を、*file* (または *file* が指定されていなければ "
-"``sys.stdout``) に表示します。"
+"Imprime información detallada del objeto de código para la función, método, "
+"cadena de código fuente u objeto de código suministrado en *file* (o ``sys."
+"stdout`` si *file* no está especificado)."
 
-#: ../../library/dis.rst:176
+#: ../Doc/library/dis.rst:168
 msgid ""
 "This is a convenient shorthand for ``print(code_info(x), file=file)``, "
 "intended for interactive exploration at the interpreter prompt."
 msgstr ""
-"これは、インタラクティブシェル上で使うことを想定した、``print(code_info(x), "
-"file=file)`` の便利なショートカットです。"
+"Esta es una abreviatura conveniente para ``print(code_info(x), file=file)``, "
+"destinado a la exploración interactiva en el indicador del intérprete "
+"(*prompt*)."
 
-#: ../../library/dis.rst:181 ../../library/dis.rst:212
-#: ../../library/dis.rst:234 ../../library/dis.rst:261
+#: ../Doc/library/dis.rst:173 ../Doc/library/dis.rst:198
+#: ../Doc/library/dis.rst:220 ../Doc/library/dis.rst:247
 msgid "Added *file* parameter."
-msgstr "*file* 引数が追加されました。"
+msgstr "Agrega un parámetro *file*."
 
-#: ../../library/dis.rst:187
+#: ../Doc/library/dis.rst:179
 msgid ""
 "Disassemble the *x* object.  *x* can denote either a module, a class, a "
 "method, a function, a generator, an asynchronous generator, a coroutine, a "
@@ -275,251 +276,277 @@ msgid ""
 "`compile` built-in function before being disassembled.  If no object is "
 "provided, this function disassembles the last traceback."
 msgstr ""
+"Desmontar el objeto *x*. *x* puede denotar un módulo, una clase, un método, "
+"una función, un generador, un generador asíncrono, una corutina, un objeto "
+"de código, una cadena de código fuente o una secuencia de bytes de código de "
+"bytes sin procesar. Para un módulo, desmonta todas las funciones. Para una "
+"clase, desmonta todos los métodos (incluidos los métodos de clase y "
+"estáticos). Para un objeto de código o secuencia de bytecode sin procesar, "
+"imprime una línea por instrucción de bytecode. También desmonta "
+"recursivamente objetos de código anidados (el código de comprensiones, "
+"expresiones generadoras y funciones anidadas, y el código utilizado para "
+"construir clases anidadas). Las cadenas de caracteres se compilan primero en "
+"objetos de código con la función incorporada :func:`compile` antes de "
+"desmontarse. Si no se proporciona ningún objeto, esta función desmonta el "
+"último rastreo."
 
-#: ../../library/dis.rst:200 ../../library/dis.rst:231
-#: ../../library/dis.rst:258
+#: ../Doc/library/dis.rst:192 ../Doc/library/dis.rst:217
+#: ../Doc/library/dis.rst:244
 msgid ""
 "The disassembly is written as text to the supplied *file* argument if "
 "provided and to ``sys.stdout`` otherwise."
 msgstr ""
-"*file* 引数が渡された場合は、アセンブリをそこに書き込みます。\n"
-"そうでない場合は ``sys.stdout`` に出力します。"
+"El desensamblaje se escribe como texto en el argumento *file* proporcionado "
+"si se proporciona y, de lo contrario, ``sys.stdout``."
 
-#: ../../library/dis.rst:203
+#: ../Doc/library/dis.rst:195
 msgid ""
 "The maximal depth of recursion is limited by *depth* unless it is ``None``. "
 "``depth=0`` means no recursion."
 msgstr ""
+"La profundidad máxima de recursión está limitada por *depth* a menos que sea "
+"``None``. ``depth=0`` significa que no hay recursión."
 
-#: ../../library/dis.rst:206
-msgid ""
-"If *show_caches* is ``True``, this function will display inline cache "
-"entries used by the interpreter to specialize the bytecode."
-msgstr ""
-
-#: ../../library/dis.rst:209
-msgid ""
-"If *adaptive* is ``True``, this function will display specialized bytecode "
-"that may be different from the original bytecode."
-msgstr ""
-
-#: ../../library/dis.rst:215
+#: ../Doc/library/dis.rst:201
 msgid "Implemented recursive disassembling and added *depth* parameter."
-msgstr ""
+msgstr "Desensamblaje recursivo implementado y parámetro agregado *depth*."
 
-#: ../../library/dis.rst:227
+#: ../Doc/library/dis.rst:213
 msgid ""
 "Disassemble the top-of-stack function of a traceback, using the last "
 "traceback if none was passed.  The instruction causing the exception is "
 "indicated."
 msgstr ""
-"トレースバックのスタックの先頭の関数を逆アセンブルします。Noneが渡された場合"
-"は最後のトレースバックを使います。例外を引き起こした命令が表示されます。"
+"Desmonta la función de inicio de pila de un rastreo, utilizando el último "
+"rastreo si no se pasó ninguno. Se indica la instrucción que causa la "
+"excepción."
 
-#: ../../library/dis.rst:244
+#: ../Doc/library/dis.rst:230
 msgid ""
 "Disassemble a code object, indicating the last instruction if *lasti* was "
 "provided.  The output is divided in the following columns:"
 msgstr ""
-"コードオブジェクトを逆アセンブルします。*lasti* が与えられた場合は、最後の命"
-"令を示します。出力は次のようなカラムに分割されます:"
+"Desmonta un objeto de código, que indica la última instrucción si se "
+"proporcionó *lasti*. La salida se divide en las siguientes columnas:"
 
-#: ../../library/dis.rst:247
+#: ../Doc/library/dis.rst:233
 msgid "the line number, for the first instruction of each line"
-msgstr "各行の最初の命令に対する行番号。"
+msgstr "el número de línea, para la primera instrucción de cada línea"
 
-#: ../../library/dis.rst:248
+#: ../Doc/library/dis.rst:234
 msgid "the current instruction, indicated as ``-->``,"
-msgstr "現在の命令。 ``-->`` として示されます。"
+msgstr "la instrucción actual, indicada como ``-->``,"
 
-#: ../../library/dis.rst:249
+#: ../Doc/library/dis.rst:235
 msgid "a labelled instruction, indicated with ``>>``,"
-msgstr "ラベル付けされた命令。 ``>>`` とともに表示されます。"
+msgstr "una instrucción etiquetada, indicada con ``>>``,"
 
-#: ../../library/dis.rst:250
+#: ../Doc/library/dis.rst:236
 msgid "the address of the instruction,"
-msgstr "命令のアドレス。"
+msgstr "la dirección de la instrucción,"
 
-#: ../../library/dis.rst:251
+#: ../Doc/library/dis.rst:237
 msgid "the operation code name,"
-msgstr "命令コード名。"
+msgstr "el nombre del código de operación,"
 
-#: ../../library/dis.rst:252
+#: ../Doc/library/dis.rst:238
 msgid "operation parameters, and"
-msgstr "命令パラメタ。"
+msgstr "parámetros de operación, y"
 
-#: ../../library/dis.rst:253
+#: ../Doc/library/dis.rst:239
 msgid "interpretation of the parameters in parentheses."
-msgstr "パラメタの解釈を括弧で囲んだもの。"
+msgstr "interpretación de los parámetros entre paréntesis."
 
-#: ../../library/dis.rst:255
+#: ../Doc/library/dis.rst:241
 msgid ""
 "The parameter interpretation recognizes local and global variable names, "
 "constant values, branch targets, and compare operators."
 msgstr ""
-"パラメタの解釈は、ローカル変数とグローバル変数の名前、定数の値、 分岐先、比較"
-"命令を認識します。"
+"La interpretación de parámetros reconoce nombres de variables locales y "
+"globales, valores constantes, objetivos de ramificación y operadores de "
+"comparación."
 
-#: ../../library/dis.rst:270
+#: ../Doc/library/dis.rst:256
 msgid ""
 "Return an iterator over the instructions in the supplied function, method, "
 "source code string or code object."
 msgstr ""
-"渡された関数、メソッド、ソースコード文字列、コードオブジェクトにある命令のイ"
-"テレータを返します。"
+"Retorna un iterador sobre las instrucciones en la función, método, cadena de "
+"código fuente u objeto de código suministrado."
 
-#: ../../library/dis.rst:273
+#: ../Doc/library/dis.rst:259
 msgid ""
 "The iterator generates a series of :class:`Instruction` named tuples giving "
 "the details of each operation in the supplied code."
 msgstr ""
-"イテレータは、与えられたコードの各命令の詳細情報を保持する名前付きタプル :"
-"class:`Instruction` からなる列を生成します。"
+"El iterador genera una serie de tuplas con nombre :class:`Instruction` que "
+"dan los detalles de cada operación en el código suministrado."
 
-#: ../../library/dis.rst:281
-msgid ""
-"The *show_caches* and *adaptive* parameters work as they do in :func:`dis`."
-msgstr ""
-
-#: ../../library/dis.rst:291
+#: ../Doc/library/dis.rst:275
+#, fuzzy
 msgid ""
 "This generator function uses the ``co_lines`` method of the code object "
 "*code* to find the offsets which are starts of lines in the source code.  "
 "They are generated as ``(offset, lineno)`` pairs."
 msgstr ""
+"Esta función de generador utiliza los atributos ``co_firstlineno`` y "
+"``co_lnotab`` del objeto de código *code* para encontrar los desplazamientos "
+"que son comienzos de líneas en el código fuente. Se generan como pares "
+"``(offset, lineno)``. Ver :source:`Objects/lnotab_notes.txt` para el formato "
+"``co_lnotab`` y cómo decodificarlo."
 
-#: ../../library/dis.rst:295
+#: ../Doc/library/dis.rst:279
 msgid "Line numbers can be decreasing. Before, they were always increasing."
 msgstr ""
+"Los números de línea pueden estar disminuyendo. Antes, siempre estaban "
+"aumentando."
 
-#: ../../library/dis.rst:298
+#: ../Doc/library/dis.rst:282
 msgid ""
 "The :pep:`626` ``co_lines`` method is used instead of the ``co_firstlineno`` "
 "and ``co_lnotab`` attributes of the code object."
 msgstr ""
 
-#: ../../library/dis.rst:305
+#: ../Doc/library/dis.rst:289
 msgid ""
 "Detect all offsets in the raw compiled bytecode string *code* which are jump "
 "targets, and return a list of these offsets."
 msgstr ""
+"Detecta todos los desplazamientos en la cadena de caracteres de código de "
+"byte compilada *code* que son objetivos de salto y retorna una lista de "
+"estos desplazamientos."
 
-#: ../../library/dis.rst:311
+#: ../Doc/library/dis.rst:295
 msgid "Compute the stack effect of *opcode* with argument *oparg*."
-msgstr "*opcode* と引数 *oparg* がスタックに与える影響を計算します。"
+msgstr "Calcula el efecto de pila de *opcode* con el argumento *oparg*."
 
-#: ../../library/dis.rst:313
+#: ../Doc/library/dis.rst:297
 msgid ""
 "If the code has a jump target and *jump* is ``True``, :func:`~stack_effect` "
 "will return the stack effect of jumping.  If *jump* is ``False``, it will "
 "return the stack effect of not jumping. And if *jump* is ``None`` (default), "
 "it will return the maximal stack effect of both cases."
 msgstr ""
+"Si el código tiene un objetivo de salto y *jump* es ``True``, :func:"
+"`~stack_effect` retornará el efecto de pila del salto. Si *jump* es "
+"``False``, retornará el efecto de acumulación de no saltar. Y si *jump* es "
+"``None`` (predeterminado), retornará el efecto de acumulación máxima de "
+"ambos casos."
 
-#: ../../library/dis.rst:320
+#: ../Doc/library/dis.rst:304
 msgid "Added *jump* parameter."
-msgstr ""
+msgstr "Agrega un parámetro *jump*."
 
-#: ../../library/dis.rst:327
+#: ../Doc/library/dis.rst:311
 msgid "Python Bytecode Instructions"
-msgstr "Python バイトコード命令"
+msgstr "Instrucciones bytecode de Python"
 
-#: ../../library/dis.rst:329
+#: ../Doc/library/dis.rst:313
 msgid ""
 "The :func:`get_instructions` function and :class:`Bytecode` class provide "
 "details of bytecode instructions as :class:`Instruction` instances:"
 msgstr ""
-":func:`get_instructions` 関数と :class:`Bytecode` クラスはバイトコード命令の"
-"詳細を :class:`Instruction` インスタンスの形で提供します:"
+"La función :func:`get_instructions` y clase :class:`Bytecode` proporcionan "
+"detalles de las instrucciones bytecode como instancias :class:`Instruction`:"
 
-#: ../../library/dis.rst:334
+#: ../Doc/library/dis.rst:318
 msgid "Details for a bytecode operation"
-msgstr "バイトコード命令の詳細"
+msgstr "Detalles para una operación de bytecode"
 
-#: ../../library/dis.rst:338
+#: ../Doc/library/dis.rst:322
 msgid ""
 "numeric code for operation, corresponding to the opcode values listed below "
 "and the bytecode values in the :ref:`opcode_collections`."
 msgstr ""
-"以下の命令コードの値と :ref:`opcode_collections` のバイトコードの値に対応す"
-"る、命令の数値コードです。"
+"código numérico para la operación, correspondiente a los valores del opcode "
+"listados a continuación y los valores de bytecode en :ref:"
+"`opcode_collections`."
 
-#: ../../library/dis.rst:344
+#: ../Doc/library/dis.rst:328
 msgid "human readable name for operation"
-msgstr "人間が読むための命令名"
+msgstr "nombre legible por humanos para la operación"
 
-#: ../../library/dis.rst:349
+#: ../Doc/library/dis.rst:333
 msgid "numeric argument to operation (if any), otherwise ``None``"
-msgstr "(ある場合は) 命令の数値引数、無ければ ``None``"
-
-#: ../../library/dis.rst:354
-msgid "resolved arg value (if any), otherwise ``None``"
 msgstr ""
+"argumento numérico para la operación (si existe), de lo contrario ``None``"
 
-#: ../../library/dis.rst:359
+#: ../Doc/library/dis.rst:338
+#, fuzzy
+msgid "resolved arg value (if any), otherwise ``None``"
+msgstr "valor *arg* resuelto (si se conoce), de lo contrario igual que *arg*"
+
+#: ../Doc/library/dis.rst:343
+#, fuzzy
 msgid ""
 "human readable description of operation argument (if any), otherwise an "
 "empty string."
-msgstr ""
+msgstr "descripción legible por humanos del argumento de operación"
 
-#: ../../library/dis.rst:365
+#: ../Doc/library/dis.rst:349
 msgid "start index of operation within bytecode sequence"
-msgstr "バイトコード列の中での命令の開始位置"
+msgstr "índice de inicio de operación dentro de la secuencia de bytecode"
 
-#: ../../library/dis.rst:370
+#: ../Doc/library/dis.rst:354
 msgid "line started by this opcode (if any), otherwise ``None``"
-msgstr "(ある場合は) この命令コードが始まる行、無ければ ``None``"
-
-#: ../../library/dis.rst:375
-msgid "``True`` if other code jumps to here, otherwise ``False``"
 msgstr ""
-"他のコードからここへジャンプする場合は ``True`` 、そうでない場合は ``False``"
+"línea iniciada por este código de operación (si existe), de lo contrario "
+"``None``"
 
-#: ../../library/dis.rst:380
+#: ../Doc/library/dis.rst:359
+msgid "``True`` if other code jumps to here, otherwise ``False``"
+msgstr "``True`` si otro código salta aquí, de lo contrario, ``False``"
+
+#: ../Doc/library/dis.rst:364
 msgid ""
 ":class:`dis.Positions` object holding the start and end locations that are "
 "covered by this instruction."
 msgstr ""
 
-#: ../../library/dis.rst:387
+#: ../Doc/library/dis.rst:371
 msgid "Field ``positions`` is added."
 msgstr ""
 
-#: ../../library/dis.rst:392
+#: ../Doc/library/dis.rst:376
 msgid ""
 "In case the information is not available, some fields might be ``None``."
 msgstr ""
 
-#: ../../library/dis.rst:402
+#: ../Doc/library/dis.rst:386
 msgid ""
 "The Python compiler currently generates the following bytecode instructions."
-msgstr "現在 Python コンパイラは次のバイトコード命令を生成します。"
+msgstr ""
+"El compilador de Python actualmente genera las siguientes instrucciones de "
+"bytecode."
 
-#: ../../library/dis.rst:405
+#: ../Doc/library/dis.rst:389
 msgid "**General instructions**"
-msgstr "**一般的な命令**"
+msgstr "**Instrucciones generales**"
 
-#: ../../library/dis.rst:409
+#: ../Doc/library/dis.rst:393
+#, fuzzy
 msgid ""
 "Do nothing code.  Used as a placeholder by the bytecode optimizer, and to "
 "generate line tracing events."
 msgstr ""
+"Código que hace nada. Utilizado como marcador de posición por el optimizador "
+"de código de bytes."
 
-#: ../../library/dis.rst:415
+#: ../Doc/library/dis.rst:399
 msgid "Removes the top-of-stack (TOS) item."
-msgstr "スタックの先頭 (TOS) の要素を取り除きます。"
+msgstr "Elimina el elemento de la parte superior de la pila (TOS)."
 
-#: ../../library/dis.rst:420
+#: ../Doc/library/dis.rst:404
 msgid ""
 "Push the *i*-th item to the top of the stack. The item is not removed from "
 "its original location."
 msgstr ""
 
-#: ../../library/dis.rst:428
+#: ../Doc/library/dis.rst:412
 msgid "Swap TOS with the item at position *i*."
 msgstr ""
 
-#: ../../library/dis.rst:435
+#: ../Doc/library/dis.rst:419
 msgid ""
 "Rather than being an actual instruction, this opcode is used to mark extra "
 "space for the interpreter to cache useful data directly in the bytecode "
@@ -527,279 +554,305 @@ msgid ""
 "viewed with ``show_caches=True``."
 msgstr ""
 
-#: ../../library/dis.rst:440
+#: ../Doc/library/dis.rst:424
 msgid ""
 "Logically, this space is part of the preceding instruction. Many opcodes "
 "expect to be followed by an exact number of caches, and will instruct the "
 "interpreter to skip over them at runtime."
 msgstr ""
 
-#: ../../library/dis.rst:444
+#: ../Doc/library/dis.rst:428
 msgid ""
 "Populated caches can look like arbitrary instructions, so great care should "
 "be taken when reading or modifying raw, adaptive bytecode containing "
 "quickened data."
 msgstr ""
 
-#: ../../library/dis.rst:451
+#: ../Doc/library/dis.rst:435
 msgid "**Unary operations**"
-msgstr "**1オペランド命令**"
+msgstr "**Operaciones unarias**"
 
-#: ../../library/dis.rst:453
+#: ../Doc/library/dis.rst:437
 msgid ""
 "Unary operations take the top of the stack, apply the operation, and push "
 "the result back on the stack."
 msgstr ""
-"1オペランド命令はスタックの先頭を取り出して操作を適用し、結果をスタックへプッ"
-"シュし戻します。"
+"Las operaciones unarias toman la parte superior de la pila, aplican la "
+"operación y retornan el resultado a la pila."
 
-#: ../../library/dis.rst:458
+#: ../Doc/library/dis.rst:442
 msgid "Implements ``TOS = +TOS``."
-msgstr "``TOS = +TOS`` を実行します。"
+msgstr "Implementa ``TOS = +TOS``."
 
-#: ../../library/dis.rst:463
+#: ../Doc/library/dis.rst:447
 msgid "Implements ``TOS = -TOS``."
-msgstr "``TOS = -TOS`` を実行します。"
+msgstr "Implementa ``TOS = -TOS``."
 
-#: ../../library/dis.rst:468
+#: ../Doc/library/dis.rst:452
 msgid "Implements ``TOS = not TOS``."
-msgstr "``TOS = not TOS`` を実行します。"
+msgstr "Implementa ``TOS = not TOS``."
 
-#: ../../library/dis.rst:473
+#: ../Doc/library/dis.rst:457
 msgid "Implements ``TOS = ~TOS``."
-msgstr "``TOS = ~TOS`` を実行します。"
+msgstr "Implementa ``TOS = ~TOS``."
 
-#: ../../library/dis.rst:478
+#: ../Doc/library/dis.rst:462
 msgid "Implements ``TOS = iter(TOS)``."
-msgstr "``TOS = iter(TOS)`` を実行します。"
+msgstr "Implementa ``TOS = iter(TOS)``."
 
-#: ../../library/dis.rst:483
+#: ../Doc/library/dis.rst:467
 msgid ""
 "If ``TOS`` is a :term:`generator iterator` or :term:`coroutine` object it is "
 "left as is.  Otherwise, implements ``TOS = iter(TOS)``."
 msgstr ""
-"``TOS`` が :term:`generator iterator` もしくは :term:`coroutine` オブジェクト"
-"の場合は、そのままにしておきます。\n"
-"そうでない場合は ``TOS = iter(TOS)`` を実行します。"
+"Si ``TOS`` es un :term:`iterador generador <generator iterator>` o un "
+"objeto :term:`corutina <coroutine>` se deja como está. De lo contrario, "
+"implementa ``TOS = iter(TOS)``."
 
-#: ../../library/dis.rst:489
+#: ../Doc/library/dis.rst:473
+#, fuzzy
 msgid "**Binary and in-place operations**"
-msgstr ""
+msgstr "**Operaciones en su lugar**"
 
-#: ../../library/dis.rst:491
+#: ../Doc/library/dis.rst:475
 msgid ""
 "Binary operations remove the top of the stack (TOS) and the second top-most "
 "stack item (TOS1) from the stack.  They perform the operation, and put the "
 "result back on the stack."
 msgstr ""
-"二項命令はスタックの先頭 (TOS) と先頭から二番目の要素をスタックから取り除きま"
-"す。 命令を実行し、スタックへ結果をプッシュし戻します。"
+"Las operaciones binarias eliminan el elemento superior de la pila (TOS) y el "
+"segundo elemento de la pila superior (TOS1) de la pila. Realizan la "
+"operación y retornan el resultado a la pila."
 
-#: ../../library/dis.rst:495
+#: ../Doc/library/dis.rst:479
 msgid ""
 "In-place operations are like binary operations, in that they remove TOS and "
 "TOS1, and push the result back on the stack, but the operation is done in-"
 "place when TOS1 supports it, and the resulting TOS may be (but does not have "
 "to be) the original TOS1."
 msgstr ""
-"インプレース命令は TOS と TOS1 を取り除いて結果をスタックへプッシュするという"
-"点で二項命令と似ています。 しかし、TOS1 がインプレース命令をサポートしている"
-"場合には操作が直接 TOS1 に行われます。 また、操作結果の TOS は (常に同じとい"
-"うわけではありませんが) 元の TOS1 と同じオブジェクトになることが多いです。"
+"Las operaciones en el lugar son como operaciones binarias, ya que eliminan "
+"TOS y TOS1, y retornan el resultado a la pila, pero la operación se realiza "
+"en el lugar cuando TOS1 lo admite, y el TOS resultante puede ser (pero no "
+"tiene ser) el TOS1 original."
 
-#: ../../library/dis.rst:503
+#: ../Doc/library/dis.rst:487
 msgid ""
 "Implements the binary and in-place operators (depending on the value of "
 "*op*)."
 msgstr ""
 
-#: ../../library/dis.rst:511
+#: ../Doc/library/dis.rst:495
 msgid "Implements ``TOS = TOS1[TOS]``."
-msgstr "``TOS = TOS1[TOS]`` を実行します。"
+msgstr "Implementa ``TOS = TOS1[TOS]``."
 
-#: ../../library/dis.rst:516
+#: ../Doc/library/dis.rst:500
 msgid "Implements ``TOS1[TOS] = TOS2``."
-msgstr "``TOS1[TOS] = TOS2`` を実行します。"
+msgstr "Implementa ``TOS1[TOS] = TOS2``."
 
-#: ../../library/dis.rst:521
+#: ../Doc/library/dis.rst:505
 msgid "Implements ``del TOS1[TOS]``."
-msgstr "``del TOS1[TOS]`` を実行します。"
+msgstr "Implementa ``del TOS1[TOS]``."
 
-#: ../../library/dis.rst:524
+#: ../Doc/library/dis.rst:508
 msgid "**Coroutine opcodes**"
-msgstr "**コルーチン命令コード**"
+msgstr "**Opcodes de corutinas**"
 
-#: ../../library/dis.rst:528
+#: ../Doc/library/dis.rst:512
 msgid ""
 "Implements ``TOS = get_awaitable(TOS)``, where ``get_awaitable(o)`` returns "
 "``o`` if ``o`` is a coroutine object or a generator object with the "
 "CO_ITERABLE_COROUTINE flag, or resolves ``o.__await__``."
 msgstr ""
-"``TOS = get_awaitable(TOS)`` を実行します。\n"
-"``get_awaitable(o)`` は、 ``o`` がコルーチンオブジェクトもしくは "
-"CO_ITERABLE_COROUTINE フラグの付いたジェネレータオブジェクトの場合に ``o`` を"
-"返し、そうでない場合は ``o.__await__`` を解決します。"
+"Implementa ``TOS = get_awaitable(TOS)``, donde ``get_awaitable(o)`` retorna "
+"``o`` si ``o`` es un objeto de corutina o un objeto generador con el "
+"indicador CO_ITERABLE_COROUTINE, o resuelve ``o.__await__``."
 
-#: ../../library/dis.rst:533
+#: ../Doc/library/dis.rst:517
 msgid ""
 "If the ``where`` operand is nonzero, it indicates where the instruction "
 "occurs:"
 msgstr ""
 
-#: ../../library/dis.rst:536
+#: ../Doc/library/dis.rst:520
 msgid "``1`` After a call to ``__aenter__``"
 msgstr ""
 
-#: ../../library/dis.rst:537
+#: ../Doc/library/dis.rst:521
 msgid "``2`` After a call to ``__aexit__``"
 msgstr ""
 
-#: ../../library/dis.rst:541
+#: ../Doc/library/dis.rst:525
 msgid "Previously, this instruction did not have an oparg."
 msgstr ""
 
-#: ../../library/dis.rst:547
+#: ../Doc/library/dis.rst:531
 msgid "Implements ``TOS = TOS.__aiter__()``."
-msgstr ""
+msgstr "Implementa ``TOS = TOS.__aiter__()``."
 
-#: ../../library/dis.rst:550
+#: ../Doc/library/dis.rst:534
 msgid "Returning awaitable objects from ``__aiter__`` is no longer supported."
-msgstr ""
+msgstr "Ya no se admite el retorno de objetos *awaitable* de ``__aiter__``."
 
-#: ../../library/dis.rst:557
+#: ../Doc/library/dis.rst:541
+#, fuzzy
 msgid ""
 "Pushes ``get_awaitable(TOS.__anext__())`` to the stack.  See "
 "``GET_AWAITABLE`` for details about ``get_awaitable``."
 msgstr ""
+"Implementa ``PUSH(get_awaitable(TOS.__anext__()))``. Consulte "
+"``GET_AWAITABLE`` para obtener detalles sobre ``get_awaitable``"
 
-#: ../../library/dis.rst:565
+#: ../Doc/library/dis.rst:549
+#, fuzzy
 msgid ""
 "Terminates an :keyword:`async for` loop.  Handles an exception raised when "
-"awaiting a next item. The stack contains the async iterable in TOS1 and the "
-"raised exception in TOS. Both are popped. If the exception is not :exc:"
-"`StopAsyncIteration`, it is re-raised."
+"awaiting a next item.  If TOS is :exc:`StopAsyncIteration` pop 3 values from "
+"the stack and restore the exception state using the second of them.  "
+"Otherwise re-raise the exception using the value from the stack.  An "
+"exception handler block is removed from the block stack."
 msgstr ""
+"Termina un bucle :keyword:`async for`. Maneja una excepción planteada cuando "
+"se espera un próximo elemento. Si TOS es :exc:`StopAsyncIteration` desapila "
+"7 valores de la pila y restaura el estado de excepción utilizando los tres "
+"últimos. De lo contrario, vuelva a lanzar la excepción utilizando los tres "
+"valores de la pila. Se elimina un bloque de controlador de excepción de la "
+"pila de bloques."
 
-#: ../../library/dis.rst:572 ../../library/dis.rst:650
-#: ../../library/dis.rst:661
+#: ../Doc/library/dis.rst:557 ../Doc/library/dis.rst:635
+#: ../Doc/library/dis.rst:646
 msgid ""
 "Exception representation on the stack now consist of one, not three, items."
 msgstr ""
 
-#: ../../library/dis.rst:577
+#: ../Doc/library/dis.rst:562
 msgid ""
 "Resolves ``__aenter__`` and ``__aexit__`` from the object on top of the "
 "stack.  Pushes ``__aexit__`` and result of ``__aenter__()`` to the stack."
 msgstr ""
-"スタックの先頭にあるオブジェクトの ``__aenter__`` と ``__aexit__`` を解決しま"
-"す。\n"
-"``__aexit__`` と ``__aenter__()`` の結果をスタックに積みます。"
+"Resuelve ``__aenter__`` y ``__aexit__`` del objeto en la parte superior de "
+"la pila. Apila ``__aexit__`` y el resultado de ``__aenter__()`` a la pila."
 
-#: ../../library/dis.rst:584
+#: ../Doc/library/dis.rst:569
 msgid "**Miscellaneous opcodes**"
-msgstr "**その他の命令コード**"
+msgstr "**Opcodes misceláneos**"
 
-#: ../../library/dis.rst:588
+#: ../Doc/library/dis.rst:573
 msgid ""
 "Implements the expression statement for the interactive mode.  TOS is "
 "removed from the stack and printed.  In non-interactive mode, an expression "
 "statement is terminated with :opcode:`POP_TOP`."
 msgstr ""
-"対話モードのための式文を実行します。TOS はスタックから取り除かれ表示されま"
-"す。 非対話モードにおいては、式文は :opcode:`POP_TOP` で終了しています。"
+"Implementa la declaración de expresión para el modo interactivo. TOS se "
+"elimina de la pila y se imprime. En modo no interactivo, una declaración de "
+"expresión termina con :opcode:`POP_TOP`."
 
-#: ../../library/dis.rst:595
+#: ../Doc/library/dis.rst:580
 msgid ""
 "Calls ``set.add(TOS1[-i], TOS)``.  Used to implement set comprehensions."
 msgstr ""
-"``set.add(TOS1[-i], TOS)`` を呼び出します。集合内包表記の実装に使われます。"
+"Llama a ``set.add(TOS1[-i], TOS)``. Se utiliza para implementar "
+"comprensiones de conjuntos."
 
-#: ../../library/dis.rst:600
+#: ../Doc/library/dis.rst:585
 msgid ""
 "Calls ``list.append(TOS1[-i], TOS)``.  Used to implement list comprehensions."
 msgstr ""
+"Llama a ``list.append(TOS1[-i], TOS)``. Se utiliza para implementar listas "
+"por comprensión."
 
-#: ../../library/dis.rst:605
+#: ../Doc/library/dis.rst:590
 msgid ""
 "Calls ``dict.__setitem__(TOS1[-i], TOS1, TOS)``.  Used to implement dict "
 "comprehensions."
 msgstr ""
+"Llama a ``dict.__setitem__(TOS1[-i], TOS1, TOS)``. Se utiliza para "
+"implementar comprensiones de diccionarios."
 
-#: ../../library/dis.rst:609
+#: ../Doc/library/dis.rst:594
 msgid "Map value is TOS and map key is TOS1. Before, those were reversed."
 msgstr ""
+"El valor del mapa es TOS y la clave del mapa es TOS1. Antes, esos fueron "
+"revertidos."
 
-#: ../../library/dis.rst:612
+#: ../Doc/library/dis.rst:597
 msgid ""
 "For all of the :opcode:`SET_ADD`, :opcode:`LIST_APPEND` and :opcode:"
 "`MAP_ADD` instructions, while the added value or key/value pair is popped "
 "off, the container object remains on the stack so that it is available for "
 "further iterations of the loop."
 msgstr ""
-":opcode:`SET_ADD`, :opcode:`LIST_APPEND`, :opcode:`MAP_ADD` は、追加した値ま"
-"たは key/value ペアをスタックから取り除きますが、コンテナオブジェクトはループ"
-"の次のイテレーションで利用できるようにスタックに残しておきます。"
+"Para todas las instrucciones :opcode:`SET_ADD`, :opcode:`LIST_APPEND` y :"
+"opcode:`MAP_ADD`, mientras el valor agregado o el par clave/valor aparece, "
+"el objeto contenedor permanece en la pila para que quede disponible para "
+"futuras iteraciones del bucle."
 
-#: ../../library/dis.rst:620
+#: ../Doc/library/dis.rst:605
 msgid "Returns with TOS to the caller of the function."
-msgstr "関数の呼び出し元へ TOS を返します。"
+msgstr "Retorna con TOS a quien llama la función."
 
-#: ../../library/dis.rst:625
+#: ../Doc/library/dis.rst:610
 msgid "Pops TOS and yields it from a :term:`generator`."
-msgstr ""
-"TOS をポップし、それを :term:`ジェネレータ <generator>` から yield します。"
+msgstr "Desapila TOS y lo genera (*yield*) de un :term:`generator`."
 
-#: ../../library/dis.rst:631
+#: ../Doc/library/dis.rst:616
 msgid ""
 "Checks whether ``__annotations__`` is defined in ``locals()``, if not it is "
 "set up to an empty ``dict``. This opcode is only emitted if a class or "
 "module body contains :term:`variable annotations <variable annotation>` "
 "statically."
 msgstr ""
+"Comprueba si ``__anotaciones__`` está definido en ``locals()``, si no está "
+"configurado como un ``dict`` vacío. Este código de operación solo se emite "
+"si el cuerpo de una clase o módulo contiene :term:`anotaciones de variables "
+"<variable annotation>` estáticamente."
 
-#: ../../library/dis.rst:641
+#: ../Doc/library/dis.rst:626
 msgid ""
 "Loads all symbols not starting with ``'_'`` directly from the module TOS to "
 "the local namespace. The module is popped after loading all names. This "
 "opcode implements ``from module import *``."
 msgstr ""
-"``'_'`` で始まっていないすべてのシンボルをモジュール TOS から直接ローカル名前"
-"空間へロードします。\n"
-"モジュールはすべての名前をロードした後にポップされます。\n"
-"この命令コードは ``from module import *`` を実行します。"
+"Carga todos los símbolos que no comienzan con ``'_'`` directamente desde el "
+"TOS del módulo al espacio de nombres local. El módulo se desapila después de "
+"cargar todos los nombres. Este opcode implementa ``from module import *``."
 
-#: ../../library/dis.rst:648
+#: ../Doc/library/dis.rst:633
 msgid ""
 "Pops a value from the stack, which is used to restore the exception state."
 msgstr ""
 
-#: ../../library/dis.rst:655
+#: ../Doc/library/dis.rst:640
+#, fuzzy
 msgid ""
 "Re-raises the exception currently on top of the stack. If oparg is non-zero, "
 "pops an additional value from the stack which is used to set ``f_lasti`` of "
 "the current frame."
 msgstr ""
+"Re-lanza la excepción que se encuentra actualmente al tope de la pila. Si "
+"oparg no es cero, restaura ``f_lasti`` del marco actual a su valor cuando se "
+"lanza la excepción."
 
-#: ../../library/dis.rst:666
+#: ../Doc/library/dis.rst:651
 msgid ""
 "Pops a value from the stack. Pushes the current exception to the top of the "
 "stack. Pushes the value originally popped back to the stack. Used in "
 "exception handlers."
 msgstr ""
 
-#: ../../library/dis.rst:674
+#: ../Doc/library/dis.rst:659
 msgid ""
 "Performs exception matching for ``except``. Tests whether the TOS1 is an "
 "exception matching TOS. Pops TOS and pushes the boolean result of the test."
 msgstr ""
 
-#: ../../library/dis.rst:681
+#: ../Doc/library/dis.rst:666
 msgid ""
 "Performs exception matching for ``except*``. Applies ``split(TOS)`` on the "
 "exception group representing TOS1."
 msgstr ""
 
-#: ../../library/dis.rst:684
+#: ../Doc/library/dis.rst:669
 msgid ""
 "In case of a match, pops two items from the stack and pushes the non-"
 "matching subgroup (``None`` in case of full match) followed by the matching "
@@ -807,7 +860,7 @@ msgid ""
 "``None``."
 msgstr ""
 
-#: ../../library/dis.rst:693
+#: ../Doc/library/dis.rst:678
 msgid ""
 "Combines the raised and reraised exceptions list from TOS, into an exception "
 "group to propagate from a try-except* block. Uses the original exception "
@@ -816,33 +869,44 @@ msgid ""
 "there isn't one."
 msgstr ""
 
-#: ../../library/dis.rst:703
+#: ../Doc/library/dis.rst:688
+#, fuzzy
 msgid ""
 "Calls the function in position 4 on the stack with arguments (type, val, tb) "
 "representing the exception at the top of the stack. Used to implement the "
 "call ``context_manager.__exit__(*exc_info())`` when an exception has "
 "occurred in a :keyword:`with` statement."
 msgstr ""
+"Llama a la función en la posición 7 de la pila con los tres elementos "
+"superiores de la pila como argumentos. Se usa para implementar la llamada "
+"``context_manager.__ exit __(*exc_info())`` cuando se ha producido una "
+"excepción en una sentencia :keyword:`with`."
 
-#: ../../library/dis.rst:710
+#: ../Doc/library/dis.rst:695
 msgid ""
 "The ``__exit__`` function is in position 4 of the stack rather than 7. "
 "Exception representation on the stack now consist of one, not three, items."
 msgstr ""
 
-#: ../../library/dis.rst:717
+#: ../Doc/library/dis.rst:702
 msgid ""
 "Pushes :exc:`AssertionError` onto the stack.  Used by the :keyword:`assert` "
 "statement."
 msgstr ""
+"Inserta :exc:`AssertionError` en la pila. Utilizado por la declaración :"
+"keyword:`assert`."
 
-#: ../../library/dis.rst:725
+#: ../Doc/library/dis.rst:710
+#, fuzzy
 msgid ""
 "Pushes :func:`builtins.__build_class__` onto the stack.  It is later called "
 "to construct a class."
 msgstr ""
+"Apila :func:`builtins.__build_class__` en la pila. Más tarde se llama por :"
+"opcode:`CALL_FUNCTION` para construir una clase."
 
-#: ../../library/dis.rst:731
+#: ../Doc/library/dis.rst:716
+#, fuzzy
 msgid ""
 "This opcode performs several operations before a with block starts.  First, "
 "it loads :meth:`~object.__exit__` from the context manager and pushes it "
@@ -850,20 +914,32 @@ msgid ""
 "`~object.__enter__` is called. Finally, the result of calling the "
 "``__enter__()`` method is pushed onto the stack."
 msgstr ""
+"Este opcode realiza varias operaciones antes de que comience un bloque "
+"*with*. Primero, carga :meth:`~object.__exit__` desde el administrador de "
+"contexto y lo apila a la pila para su uso posterior por :opcode:"
+"`WITH_EXCEPT_START`. Luego, :meth:`~object.__enter__` se llama, y un bloque "
+"finally que apunta a *delta* se apila. Finalmente, el resultado de llamar al "
+"método ``__enter__()`` se apila en la pila. El siguiente opcode lo ignorará "
+"(:opcode:`POP_TOP`), o lo almacenará en (una) variable (s) (:opcode:"
+"`STORE_FAST`, :opcode:`STORE_NAME`, o :opcode:`UNPACK_SEQUENCE`) ."
 
-#: ../../library/dis.rst:742
+#: ../Doc/library/dis.rst:727
 msgid "Push ``len(TOS)`` onto the stack."
-msgstr ""
+msgstr "Apila ``len(TOS)`` en la pila."
 
-#: ../../library/dis.rst:749
+#: ../Doc/library/dis.rst:734
 msgid ""
 "If TOS is an instance of :class:`collections.abc.Mapping` (or, more "
 "technically: if it has the :const:`Py_TPFLAGS_MAPPING` flag set in its :c:"
 "member:`~PyTypeObject.tp_flags`), push ``True`` onto the stack.  Otherwise, "
 "push ``False``."
 msgstr ""
+"Si TOS es una instancia de :class:`collections.abc.Mapping` (o, más "
+"técnicamente, si tiene el indicador :const:`Py_TPFLAGS_MAPPING`  establecido "
+"en su :c:member:`~PyTypeObject.tp_flags`), apila ``True`` en la pila. De lo "
+"contrario apila ``False``."
 
-#: ../../library/dis.rst:759
+#: ../Doc/library/dis.rst:744
 msgid ""
 "If TOS is an instance of :class:`collections.abc.Sequence` and is *not* an "
 "instance of :class:`str`/:class:`bytes`/:class:`bytearray` (or, more "
@@ -871,190 +947,207 @@ msgid ""
 "member:`~PyTypeObject.tp_flags`), push ``True`` onto the stack.  Otherwise, "
 "push ``False``."
 msgstr ""
+"Si TOS es una instancia de :class:`collections.abc.Sequence` y *no* es una "
+"instancia de :class:`str`/:class:`bytes`/:class:`bytearray` (o, más "
+"técnicamente, si tiene el indicador :const:`Py_TPFLAGS_SEQUENCE`  "
+"establecido en su :c:member:`~PyTypeObject.tp_flags`), apila ``True`` en la "
+"pila. De lo contrario apila ``False``."
 
-#: ../../library/dis.rst:769
+#: ../Doc/library/dis.rst:754
+#, fuzzy
 msgid ""
 "TOS is a tuple of mapping keys, and TOS1 is the match subject.  If TOS1 "
 "contains all of the keys in TOS, push a :class:`tuple` containing the "
 "corresponding values. Otherwise, push ``None``."
 msgstr ""
+"TOS es una tuple de llaves de mapeo, y TOS1 es el sujeto de la coincidencia. "
+"Si TOS1 contiene todas las llaves en TOS, apila un :class:`tuple` que "
+"contiene los valores correspondientes, seguido por ``True``. De lo contrario "
+"apila ``None``, seguido de ``False``."
 
-#: ../../library/dis.rst:775 ../../library/dis.rst:1320
+#: ../Doc/library/dis.rst:760 ../Doc/library/dis.rst:1305
 msgid ""
 "Previously, this instruction also pushed a boolean value indicating success "
 "(``True``) or failure (``False``)."
 msgstr ""
 
-#: ../../library/dis.rst:782
+#: ../Doc/library/dis.rst:767
 msgid ""
 "Implements ``name = TOS``. *namei* is the index of *name* in the attribute :"
 "attr:`co_names` of the code object. The compiler tries to use :opcode:"
 "`STORE_FAST` or :opcode:`STORE_GLOBAL` if possible."
 msgstr ""
-"``name = TOS`` を実行します。\n"
-"*namei* はコードオブジェクトの属性 :attr:`co_names` における *name* のイン"
-"デックスです。\n"
-"コンパイラは可能ならば :opcode:`STORE_FAST` または :opcode:`STORE_GLOBAL` を"
-"使おうとします。"
+"Implementa ``name = TOS``. *namei* es el índice de *name* en el atributo :"
+"attr:`co_names` del objeto de código. El compilador intenta usar :opcode:"
+"`STORE_FAST` o :opcode:`STORE_GLOBAL` si es posible."
 
-#: ../../library/dis.rst:789
+#: ../Doc/library/dis.rst:774
 msgid ""
 "Implements ``del name``, where *namei* is the index into :attr:`co_names` "
 "attribute of the code object."
 msgstr ""
-"``del name`` を実行します。 *namei* はコードオブジェクトの :attr:`co_names` "
-"属性へのインデックスです。"
+"Implementa ``del name``, donde *namei* es el índice en atributo :attr:"
+"`co_names` del objeto de código."
 
-#: ../../library/dis.rst:795
+#: ../Doc/library/dis.rst:780
 msgid ""
 "Unpacks TOS into *count* individual values, which are put onto the stack "
 "right-to-left."
 msgstr ""
-"TOS を *count* 個の個別の値にアンパックして、右から左の順にスタックに積みま"
-"す。"
+"Descomprime TOS en *count* valores individuales, que se colocan en la pila "
+"de derecha a izquierda."
 
-#: ../../library/dis.rst:801
+#: ../Doc/library/dis.rst:786
 msgid ""
 "Implements assignment with a starred target: Unpacks an iterable in TOS into "
 "individual values, where the total number of values can be smaller than the "
 "number of items in the iterable: one of the new values will be a list of all "
 "leftover items."
 msgstr ""
-"星付きの対象ありの代入を実行します:\n"
-"TOS にあるイテラブルを個別の値にばらしますが、ばらした値の総数はイテラブルの"
-"要素数より小さくなることがあります:\n"
-"そのときは、値の1つはばらされずに残った要素からなるリストです。"
+"Implementa la asignación con un objetivo destacado: desempaqueta un iterable "
+"en TOS en valores individuales, donde el número total de valores puede ser "
+"menor que el número de elementos en el iterable: uno de los nuevos valores "
+"será una lista de todos los elementos sobrantes."
 
-#: ../../library/dis.rst:806
+#: ../Doc/library/dis.rst:791
 msgid ""
 "The low byte of *counts* is the number of values before the list value, the "
 "high byte of *counts* the number of values after it.  The resulting values "
 "are put onto the stack right-to-left."
 msgstr ""
-"*counts* の下位バイトはそのリスト値より前にある値の個数で、 *counts* の上位バ"
-"イトはそれより後ろにある値の個数です。\n"
-"そうしてできた値は右から左の順でスタックに積まれます。"
+"El byte bajo de *count* es el número de valores antes del valor de la lista, "
+"el byte alto de *count* es el número de valores después de él. Los valores "
+"resultantes se colocan en la pila de derecha a izquierda."
 
-#: ../../library/dis.rst:813
+#: ../Doc/library/dis.rst:798
 msgid ""
 "Implements ``TOS.name = TOS1``, where *namei* is the index of name in :attr:"
 "`co_names`."
 msgstr ""
-"``TOS.name = TOS1`` を実行します。\n"
-"*namei* は :attr:`co_names` における名前のインデックスです。"
+"Implementa ``TOS.name = TOS1``, donde *namei* es el índice del nombre en :"
+"attr:`co_names`."
 
-#: ../../library/dis.rst:819
+#: ../Doc/library/dis.rst:804
 msgid ""
 "Implements ``del TOS.name``, using *namei* as index into :attr:`co_names`."
 msgstr ""
-"``del TOS.name`` を実行します。\n"
-":attr:`co_names` へのインデックスとして *namei* を使います。"
+"Implementa ``del TOS.name``, usando *namei* como índice en :attr:`co_names`."
 
-#: ../../library/dis.rst:824
+#: ../Doc/library/dis.rst:809
 msgid "Works as :opcode:`STORE_NAME`, but stores the name as a global."
 msgstr ""
-":opcode:`STORE_NAME` と同じように動作しますが、 name をグローバルとして保存し"
-"ます。"
+"Funciona como :opcode:`STORE_NAME`, pero almacena el nombre como global."
 
-#: ../../library/dis.rst:829
+#: ../Doc/library/dis.rst:814
 msgid "Works as :opcode:`DELETE_NAME`, but deletes a global name."
-msgstr ""
-":opcode:`DELETE_NAME` と同じように動作しますが、グローバルの name を削除しま"
-"す。"
+msgstr "Funciona como :opcode:`DELETE_NAME`, pero elimina un nombre global."
 
-#: ../../library/dis.rst:834
+#: ../Doc/library/dis.rst:819
 msgid "Pushes ``co_consts[consti]`` onto the stack."
-msgstr "``co_consts[consti]`` をスタックにプッシュします。"
+msgstr "Apila ``co_consts[consti]`` en la pila."
 
-#: ../../library/dis.rst:839
+#: ../Doc/library/dis.rst:824
 msgid "Pushes the value associated with ``co_names[namei]`` onto the stack."
-msgstr "``co_names[namei]`` に関連付けられた値をスタックにプッシュします。"
+msgstr "Apila el valor asociado con ``co_names [namei]`` en la pila."
 
-#: ../../library/dis.rst:844
+#: ../Doc/library/dis.rst:829
 msgid ""
 "Creates a tuple consuming *count* items from the stack, and pushes the "
 "resulting tuple onto the stack."
 msgstr ""
-"スタックから *count* 個の要素を消費してタプルを作り出し、できたタプルをスタッ"
-"クにプッシュします。"
+"Crea una tupla que consume elementos *count* de la pila, y apila la tupla "
+"resultante a la pila."
 
-#: ../../library/dis.rst:850
+#: ../Doc/library/dis.rst:835
 msgid "Works as :opcode:`BUILD_TUPLE`, but creates a list."
-msgstr ""
-":opcode:`BUILD_TUPLE` と同じように動作しますが、この命令はリストを作り出しま"
-"す。"
+msgstr "Funciona como :opcode:`BUILD_TUPLE`, pero crea una lista."
 
-#: ../../library/dis.rst:855
+#: ../Doc/library/dis.rst:840
 msgid "Works as :opcode:`BUILD_TUPLE`, but creates a set."
-msgstr ""
-":opcode:`BUILD_TUPLE` と同じように動作しますが、この命令は set を作り出しま"
-"す。"
+msgstr "Funciona como :opcode:`BUILD_TUPLE`, pero crea un conjunto."
 
-#: ../../library/dis.rst:860
+#: ../Doc/library/dis.rst:845
 msgid ""
 "Pushes a new dictionary object onto the stack.  Pops ``2 * count`` items so "
 "that the dictionary holds *count* entries: ``{..., TOS3: TOS2, TOS1: TOS}``."
 msgstr ""
+"Apila un nuevo objeto de diccionario en la pila. Desapila ``2 * count`` "
+"elementos para que el diccionario contenga *count* entradas: ``{..., TOS3: "
+"TOS2, TOS1: TOS}``."
 
-#: ../../library/dis.rst:864
+#: ../Doc/library/dis.rst:849
 msgid ""
 "The dictionary is created from stack items instead of creating an empty "
 "dictionary pre-sized to hold *count* items."
 msgstr ""
+"El diccionario se crea a partir de elementos de la pila en lugar de crear un "
+"diccionario vacío dimensionado previamente para contener *count* elementos."
 
-#: ../../library/dis.rst:871
+#: ../Doc/library/dis.rst:856
 msgid ""
 "The version of :opcode:`BUILD_MAP` specialized for constant keys. Pops the "
 "top element on the stack which contains a tuple of keys, then starting from "
 "``TOS1``, pops *count* values to form values in the built dictionary."
 msgstr ""
+"La versión de :opcode:`BUILD_MAP` especializada para claves constantes. "
+"Desapila el elemento superior en la pila que contiene una tupla de claves, "
+"luego, a partir de ``TOS1``, muestra los valores *count* para formar valores "
+"en el diccionario incorporado."
 
-#: ../../library/dis.rst:880
+#: ../Doc/library/dis.rst:865
 msgid ""
 "Concatenates *count* strings from the stack and pushes the resulting string "
 "onto the stack."
 msgstr ""
+"Concatena *count* cadenas de caracteres de la pila y empuja la cadena de "
+"caracteres resultante en la pila."
 
-#: ../../library/dis.rst:888
+#: ../Doc/library/dis.rst:873
 msgid ""
 "Pops a list from the stack and pushes a tuple containing the same values."
 msgstr ""
+"Saca una lista de la pila y empuja una tupla que contiene los mismos valores."
 
-#: ../../library/dis.rst:895
+#: ../Doc/library/dis.rst:880
 msgid "Calls ``list.extend(TOS1[-i], TOS)``.  Used to build lists."
-msgstr ""
+msgstr "Llama a ``list.extend(TOS1[-i], TOS)``. Se utiliza para crear listas."
 
-#: ../../library/dis.rst:902
+#: ../Doc/library/dis.rst:887
 msgid "Calls ``set.update(TOS1[-i], TOS)``.  Used to build sets."
 msgstr ""
+"Llama a ``set.update(TOS1[-i], TOS)``. Se usa para construir decorados."
 
-#: ../../library/dis.rst:909
+#: ../Doc/library/dis.rst:894
 msgid "Calls ``dict.update(TOS1[-i], TOS)``.  Used to build dicts."
 msgstr ""
+"Llama a ``dict.update(TOS1[-i], TOS)``. Se usa para construir dictados."
 
-#: ../../library/dis.rst:916
+#: ../Doc/library/dis.rst:901
 msgid "Like :opcode:`DICT_UPDATE` but raises an exception for duplicate keys."
 msgstr ""
+"Como :opcode:`DICT_UPDATE` pero lanza una excepción para claves duplicadas."
 
-#: ../../library/dis.rst:923
+#: ../Doc/library/dis.rst:908
 msgid "Replaces TOS with ``getattr(TOS, co_names[namei])``."
-msgstr "TOS を ``getattr(TOS, co_names[namei])`` と入れ替えます。"
+msgstr "Reemplaza TOS con ``getattr(TOS, co_names[namei])``."
 
-#: ../../library/dis.rst:928
+#: ../Doc/library/dis.rst:913
 msgid ""
 "Performs a Boolean operation.  The operation name can be found in "
 "``cmp_op[opname]``."
-msgstr "ブール命令を実行します。命令名は ``cmp_op[opname]`` にあります。"
+msgstr ""
+"Realiza una operación booleana. El nombre de la operación se puede encontrar "
+"en ``cmp_op[opname]``."
 
-#: ../../library/dis.rst:934
+#: ../Doc/library/dis.rst:919
 msgid "Performs ``is`` comparison, or ``is not`` if ``invert`` is 1."
-msgstr ""
+msgstr "Realiza una comparación ``is`` o ``is not`` si ``invert`` es 1."
 
-#: ../../library/dis.rst:941
+#: ../Doc/library/dis.rst:926
 msgid "Performs ``in`` comparison, or ``not in`` if ``invert`` is 1."
-msgstr ""
+msgstr "Realiza una comparación ``in`` o ``not in`` si ``invert`` es 1."
 
-#: ../../library/dis.rst:948
+#: ../Doc/library/dis.rst:933
 msgid ""
 "Imports the module ``co_names[namei]``.  TOS and TOS1 are popped and provide "
 "the *fromlist* and *level* arguments of :func:`__import__`.  The module "
@@ -1062,253 +1155,303 @@ msgid ""
 "a proper import statement, a subsequent :opcode:`STORE_FAST` instruction "
 "modifies the namespace."
 msgstr ""
-"モジュール ``co_names[namei]`` をインポートします。 TOS と TOS1 がポップさ"
-"れ、 :func:`__import__` の *fromlist* と *level* 引数になります。モジュールオ"
-"ブジェクトはスタックへプッシュされます。現在の名前空間は影響されません: 適切"
-"な import 文のためには、後続の :opcode:`STORE_FAST` 命令が名前空間を変更しま"
-"す。"
+"Importa el módulo ``co_names[namei]``. TOS y TOS1 aparecen y proporcionan "
+"los argumentos *fromlist* y *level* de :func:`__import__`. El objeto del "
+"módulo se empuja a la pila. El espacio de nombres actual no se ve afectado: "
+"para una instrucción de importación adecuada, una instrucción posterior :"
+"opcode:`STORE_FAST` modifica el espacio de nombres."
 
-#: ../../library/dis.rst:957
+#: ../Doc/library/dis.rst:942
 msgid ""
 "Loads the attribute ``co_names[namei]`` from the module found in TOS. The "
 "resulting object is pushed onto the stack, to be subsequently stored by a :"
 "opcode:`STORE_FAST` instruction."
 msgstr ""
-"TOS にあるモジュールから属性 ``co_names[namei]`` をロードします。作成されたオ"
-"ブジェクトはスタックにプッシュされ、後続の :opcode:`STORE_FAST` 命令によって"
-"保存されます。"
+"Carga el atributo ``co_names[namei]`` del módulo que se encuentra en TOS. El "
+"objeto resultante se apila en la pila, para luego ser almacenado por la "
+"instrucción :opcode:`STORE_FAST`."
 
-#: ../../library/dis.rst:964
+#: ../Doc/library/dis.rst:949
 msgid "Increments bytecode counter by *delta*."
-msgstr "バイトコードカウンタを *delta* だけ増加させます。"
+msgstr "Incrementa el contador de bytecode en *delta*."
 
-#: ../../library/dis.rst:969
+#: ../Doc/library/dis.rst:954
+#, fuzzy
 msgid "Decrements bytecode counter by *delta*. Checks for interrupts."
-msgstr ""
+msgstr "Incrementa el contador de bytecode en *delta*."
 
-#: ../../library/dis.rst:976
+#: ../Doc/library/dis.rst:961
+#, fuzzy
 msgid "Decrements bytecode counter by *delta*. Does not check for interrupts."
-msgstr ""
+msgstr "Incrementa el contador de bytecode en *delta*."
 
-#: ../../library/dis.rst:983
+#: ../Doc/library/dis.rst:968
+#, fuzzy
 msgid ""
 "If TOS is true, increments the bytecode counter by *delta*.  TOS is popped."
 msgstr ""
+"Si TOS es true, establece el contador de bytecode en *target*. TOS es "
+"desapilado (*popped*)."
 
-#: ../../library/dis.rst:990
+#: ../Doc/library/dis.rst:975
+#, fuzzy
 msgid ""
 "If TOS is true, decrements the bytecode counter by *delta*.  TOS is popped."
 msgstr ""
+"Si TOS es true, establece el contador de bytecode en *target*. TOS es "
+"desapilado (*popped*)."
 
-#: ../../library/dis.rst:997
+#: ../Doc/library/dis.rst:982
+#, fuzzy
 msgid ""
 "If TOS is false, increments the bytecode counter by *delta*.  TOS is popped."
 msgstr ""
+"Si TOS es falso, establece el contador de bytecode en *target*. TOS es "
+"desapilado (*popped*)."
 
-#: ../../library/dis.rst:1004
+#: ../Doc/library/dis.rst:989
+#, fuzzy
 msgid ""
 "If TOS is false, decrements the bytecode counter by *delta*.  TOS is popped."
 msgstr ""
+"Si TOS es falso, establece el contador de bytecode en *target*. TOS es "
+"desapilado (*popped*)."
 
-#: ../../library/dis.rst:1011
+#: ../Doc/library/dis.rst:996
+#, fuzzy
 msgid ""
 "If TOS is not ``None``, increments the bytecode counter by *delta*.  TOS is "
 "popped."
 msgstr ""
+"Si TOS es true, establece el contador de bytecode en *target*. TOS es "
+"desapilado (*popped*)."
 
-#: ../../library/dis.rst:1018
+#: ../Doc/library/dis.rst:1003
+#, fuzzy
 msgid ""
 "If TOS is not ``None``, decrements the bytecode counter by *delta*.  TOS is "
 "popped."
 msgstr ""
+"Si TOS es true, establece el contador de bytecode en *target*. TOS es "
+"desapilado (*popped*)."
 
-#: ../../library/dis.rst:1025
+#: ../Doc/library/dis.rst:1010
+#, fuzzy
 msgid ""
 "If TOS is ``None``, increments the bytecode counter by *delta*.  TOS is "
 "popped."
 msgstr ""
+"Si TOS es true, establece el contador de bytecode en *target*. TOS es "
+"desapilado (*popped*)."
 
-#: ../../library/dis.rst:1032
+#: ../Doc/library/dis.rst:1017
+#, fuzzy
 msgid ""
 "If TOS is ``None``, decrements the bytecode counter by *delta*.  TOS is "
 "popped."
 msgstr ""
+"Si TOS es true, establece el contador de bytecode en *target*. TOS es "
+"desapilado (*popped*)."
 
-#: ../../library/dis.rst:1039
+#: ../Doc/library/dis.rst:1024
+#, fuzzy
 msgid ""
 "If TOS is true, increments the bytecode counter by *delta* and leaves TOS on "
 "the stack.  Otherwise (TOS is false), TOS is popped."
 msgstr ""
+"Si TOS es verdadero, establece el contador de bytecode en *target* y deja "
+"TOS en la pila. De lo contrario (TOS es falso), TOS se desapila."
 
-#: ../../library/dis.rst:1044 ../../library/dis.rst:1054
+#: ../Doc/library/dis.rst:1029 ../Doc/library/dis.rst:1039
 msgid "The oparg is now a relative delta rather than an absolute target."
 msgstr ""
 
-#: ../../library/dis.rst:1049
+#: ../Doc/library/dis.rst:1034
+#, fuzzy
 msgid ""
 "If TOS is false, increments the bytecode counter by *delta* and leaves TOS "
 "on the stack.  Otherwise (TOS is true), TOS is popped."
 msgstr ""
+"Si TOS es falso, establece el contador de bytecode en *target* y deja TOS en "
+"la pila. De lo contrario (TOS es verdadero), TOS se desapila."
 
-#: ../../library/dis.rst:1060
+#: ../Doc/library/dis.rst:1045
 msgid ""
 "TOS is an :term:`iterator`.  Call its :meth:`~iterator.__next__` method.  If "
 "this yields a new value, push it on the stack (leaving the iterator below "
 "it).  If the iterator indicates it is exhausted, TOS is popped, and the byte "
 "code counter is incremented by *delta*."
 msgstr ""
+"TOS es un :term:`iterador`. Llama a su método :meth:`~iterator.__next__`. Si "
+"esto produce un nuevo valor, lo apila en la pila (dejando el iterador debajo "
+"de él). Si el iterador indica que está agotado, se abre TOS y el contador de "
+"código de bytes se incrementa en *delta*."
 
-#: ../../library/dis.rst:1068
+#: ../Doc/library/dis.rst:1053
+#, fuzzy
 msgid "Loads the global named ``co_names[namei>>1]`` onto the stack."
-msgstr ""
+msgstr "Carga el nombre global ``co_names[namei]`` en la pila."
 
-#: ../../library/dis.rst:1070
+#: ../Doc/library/dis.rst:1055
 msgid ""
 "If the low bit of ``namei`` is set, then a ``NULL`` is pushed to the stack "
 "before the global variable."
 msgstr ""
 
-#: ../../library/dis.rst:1076
+#: ../Doc/library/dis.rst:1061
 msgid ""
 "Pushes a reference to the local ``co_varnames[var_num]`` onto the stack."
-msgstr ""
-"ローカルな ``co_varnames[var_num]`` への参照をスタックにプッシュします。"
+msgstr "Apila una referencia al local ``co_varnames[var_num]`` sobre la pila."
 
-#: ../../library/dis.rst:1081
+#: ../Doc/library/dis.rst:1066
 msgid "Stores TOS into the local ``co_varnames[var_num]``."
-msgstr "TOS をローカルな ``co_varnames[var_num]`` の中に保存します。"
+msgstr "Almacena TOS en el local ``co_varnames[var_num]``."
 
-#: ../../library/dis.rst:1086
+#: ../Doc/library/dis.rst:1071
 msgid "Deletes local ``co_varnames[var_num]``."
-msgstr "ローカルな ``co_varnames[var_num]`` を削除します。"
+msgstr "Elimina la ``co_varnames[var_num]`` local."
 
-#: ../../library/dis.rst:1091
+#: ../Doc/library/dis.rst:1076
 msgid ""
 "Creates a new cell in slot ``i``.  If that slot is empty then that value is "
 "stored into the new cell."
 msgstr ""
 
-#: ../../library/dis.rst:1099
+#: ../Doc/library/dis.rst:1084
 msgid ""
 "Pushes a reference to the cell contained in slot ``i`` of the \"fast "
 "locals\" storage.  The name of the variable is ``co_fastlocalnames[i]``."
 msgstr ""
 
-#: ../../library/dis.rst:1102
+#: ../Doc/library/dis.rst:1087
 msgid ""
 "Note that ``LOAD_CLOSURE`` is effectively an alias for ``LOAD_FAST``. It "
 "exists to keep bytecode a little more readable."
 msgstr ""
 
-#: ../../library/dis.rst:1105 ../../library/dis.rst:1114
-#: ../../library/dis.rst:1126 ../../library/dis.rst:1135
-#: ../../library/dis.rst:1146
+#: ../Doc/library/dis.rst:1090 ../Doc/library/dis.rst:1099
+#: ../Doc/library/dis.rst:1111 ../Doc/library/dis.rst:1120
+#: ../Doc/library/dis.rst:1131
 msgid "``i`` is no longer offset by the length of ``co_varnames``."
 msgstr ""
 
-#: ../../library/dis.rst:1111
+#: ../Doc/library/dis.rst:1096
+#, fuzzy
 msgid ""
 "Loads the cell contained in slot ``i`` of the \"fast locals\" storage. "
 "Pushes a reference to the object the cell contains on the stack."
 msgstr ""
+"Carga la celda contenida en la ranura *i* de la celda y el almacenamiento "
+"variable libre. Apila una referencia al objeto que contiene la celda en la "
+"pila."
 
-#: ../../library/dis.rst:1120
+#: ../Doc/library/dis.rst:1105
 msgid ""
 "Much like :opcode:`LOAD_DEREF` but first checks the locals dictionary before "
 "consulting the cell.  This is used for loading free variables in class "
 "bodies."
 msgstr ""
-":opcode:`LOAD_DEREF` とほぼ同じですが、セルを調べる前にまずローカルの辞書を確"
-"認します。\n"
-"これはクラス本体に自由変数を読み込むために使います。"
+"Al igual que :opcode:`LOAD_DEREF` pero primero verifica el diccionario local "
+"antes de consultar la celda. Esto se usa para cargar variables libres en los "
+"cuerpos de clase."
 
-#: ../../library/dis.rst:1132
+#: ../Doc/library/dis.rst:1117
+#, fuzzy
 msgid ""
 "Stores TOS into the cell contained in slot ``i`` of the \"fast locals\" "
 "storage."
 msgstr ""
+"Almacena TOS en la celda contenida en la ranura *i* de la celda y "
+"almacenamiento variable libre."
 
-#: ../../library/dis.rst:1141
+#: ../Doc/library/dis.rst:1126
+#, fuzzy
 msgid ""
 "Empties the cell contained in slot ``i`` of the \"fast locals\" storage. "
 "Used by the :keyword:`del` statement."
 msgstr ""
+"Vacía la celda contenida en la ranura *i* de la celda y el almacenamiento "
+"variable libre. Utilizado por la declaración :keyword:`del`."
 
-#: ../../library/dis.rst:1152
+#: ../Doc/library/dis.rst:1137
 msgid ""
 "Copies the ``n`` free variables from the closure into the frame. Removes the "
 "need for special code on the caller's side when calling closures."
 msgstr ""
 
-#: ../../library/dis.rst:1161
+#: ../Doc/library/dis.rst:1146
 msgid ""
 "Raises an exception using one of the 3 forms of the ``raise`` statement, "
 "depending on the value of *argc*:"
 msgstr ""
+"Provoca una excepción utilizando una de las 3 formas de la declaración "
+"``raise``, dependiendo del valor de *argc*:"
 
-#: ../../library/dis.rst:1164
+#: ../Doc/library/dis.rst:1149
 msgid "0: ``raise`` (re-raise previous exception)"
-msgstr ""
+msgstr "0: ``raise`` (vuelve a lanzar la excepción anterior)"
 
-#: ../../library/dis.rst:1165
+#: ../Doc/library/dis.rst:1150
 msgid "1: ``raise TOS`` (raise exception instance or type at ``TOS``)"
-msgstr ""
+msgstr "1: ``raise TOS`` (lanza instancia de excepción o un tipo en ``TOS``)"
 
-#: ../../library/dis.rst:1166
+#: ../Doc/library/dis.rst:1151
 msgid ""
 "2: ``raise TOS1 from TOS`` (raise exception instance or type at ``TOS1`` "
 "with ``__cause__`` set to ``TOS``)"
 msgstr ""
+"2: ``raise TOS1 desde TOS`` (lanza una instancia de excepción o tipo en "
+"``TOS1`` con ``__cause__`` establecida en ``TOS``)"
 
-#: ../../library/dis.rst:1172
+#: ../Doc/library/dis.rst:1157
 msgid ""
 "Calls a callable object with the number of arguments specified by ``argc``, "
 "including the named arguments specified by the preceding :opcode:`KW_NAMES`, "
 "if any. On the stack are (in ascending order), either:"
 msgstr ""
 
-#: ../../library/dis.rst:1177
+#: ../Doc/library/dis.rst:1162
 msgid "NULL"
-msgstr "NULL"
+msgstr ""
 
-#: ../../library/dis.rst:1178 ../../library/dis.rst:1184
+#: ../Doc/library/dis.rst:1163 ../Doc/library/dis.rst:1169
 msgid "The callable"
 msgstr ""
 
-#: ../../library/dis.rst:1179
+#: ../Doc/library/dis.rst:1164
 msgid "The positional arguments"
 msgstr ""
 
-#: ../../library/dis.rst:1180 ../../library/dis.rst:1187
+#: ../Doc/library/dis.rst:1165 ../Doc/library/dis.rst:1172
 msgid "The named arguments"
 msgstr ""
 
-#: ../../library/dis.rst:1182
+#: ../Doc/library/dis.rst:1167
 msgid "or:"
 msgstr ""
 
-#: ../../library/dis.rst:1185
+#: ../Doc/library/dis.rst:1170
 msgid "``self``"
 msgstr ""
 
-#: ../../library/dis.rst:1186
+#: ../Doc/library/dis.rst:1171
 msgid "The remaining positional arguments"
 msgstr ""
 
-#: ../../library/dis.rst:1189
+#: ../Doc/library/dis.rst:1174
 msgid ""
 "``argc`` is the total of the positional and named arguments, excluding "
 "``self`` when a ``NULL`` is not present."
 msgstr ""
 
-#: ../../library/dis.rst:1192
+#: ../Doc/library/dis.rst:1177
 msgid ""
 "``CALL`` pops all arguments and the callable object off the stack, calls the "
 "callable object with those arguments, and pushes the return value returned "
 "by the callable object."
 msgstr ""
 
-#: ../../library/dis.rst:1201
+#: ../Doc/library/dis.rst:1186
 msgid ""
 "Calls a callable object with variable set of positional and keyword "
 "arguments.  If the lowest bit of *flags* is set, the top of the stack "
@@ -1319,8 +1462,18 @@ msgid ""
 "callable object off the stack, calls the callable object with those "
 "arguments, and pushes the return value returned by the callable object."
 msgstr ""
+"Llama a un objeto invocable con un conjunto variable de argumentos "
+"posicionales y de palabras clave. Si se establece el bit más bajo de "
+"*flags*, la parte superior de la pila contiene un objeto de mapeo que "
+"contiene argumentos de palabras clave adicionales. Antes de que se llame al "
+"invocable, el objeto de mapeo y el objeto iterable se \"desempaquetan\" y su "
+"contenido se pasa como palabra clave y argumentos posicionales, "
+"respectivamente. ``CALL_FUNCTION_EX`` saca todos los argumentos y el objeto "
+"invocable de la pila, llama al objeto invocable con esos argumentos y empuja "
+"el valor de retorno devuelto por el objeto invocable."
 
-#: ../../library/dis.rst:1216
+#: ../Doc/library/dis.rst:1201
+#, fuzzy
 msgid ""
 "Loads a method named ``co_names[namei]`` from the TOS object. TOS is popped. "
 "This bytecode distinguishes two cases: if TOS has a method with the correct "
@@ -1329,249 +1482,560 @@ msgid ""
 "method. Otherwise, ``NULL`` and the object return by the attribute lookup "
 "are pushed."
 msgstr ""
+"Carga un método llamado ``co_names[namei]`` desde el objeto TOS. TOS "
+"aparece. Este bytecode distingue dos casos: si TOS tiene un método con el "
+"nombre correcto, el bytecode apila el método no vinculado y TOS. TOS se "
+"usará como primer argumento (``self``) por :opcode:`CALL_METHOD` cuando se "
+"llama al método independiente. De lo contrario, ``NULL`` y el objeto "
+"retornado por la búsqueda de atributos son apilados."
 
-#: ../../library/dis.rst:1228
+#: ../Doc/library/dis.rst:1213
 msgid ""
 "Prefixes :opcode:`CALL`. Logically this is a no op. It exists to enable "
 "effective specialization of calls. ``argc`` is the number of arguments as "
 "described in :opcode:`CALL`."
 msgstr ""
 
-#: ../../library/dis.rst:1237
+#: ../Doc/library/dis.rst:1222
 msgid ""
 "Pushes a ``NULL`` to the stack. Used in the call sequence to match the "
 "``NULL`` pushed by :opcode:`LOAD_METHOD` for non-method calls."
 msgstr ""
 
-#: ../../library/dis.rst:1246
+#: ../Doc/library/dis.rst:1231
 msgid ""
 "Prefixes :opcode:`PRECALL`. Stores a reference to ``co_consts[consti]`` into "
 "an internal variable for use by :opcode:`CALL`. ``co_consts[consti]`` must "
 "be a tuple of strings."
 msgstr ""
 
-#: ../../library/dis.rst:1255
+#: ../Doc/library/dis.rst:1240
 msgid ""
 "Pushes a new function object on the stack.  From bottom to top, the consumed "
 "stack must consist of values if the argument carries a specified flag value"
 msgstr ""
+"Apila un nuevo objeto de función en la pila. De abajo hacia arriba, la pila "
+"consumida debe constar de valores si el argumento lleva un valor de marca "
+"especificado"
 
-#: ../../library/dis.rst:1258
+#: ../Doc/library/dis.rst:1243
 msgid ""
 "``0x01`` a tuple of default values for positional-only and positional-or-"
 "keyword parameters in positional order"
 msgstr ""
+"``0x01``, una tupla de valores predeterminados para solo parámetros "
+"posicionales y posicionales o de palabras clave en orden posicional"
 
-#: ../../library/dis.rst:1260
+#: ../Doc/library/dis.rst:1245
 msgid "``0x02`` a dictionary of keyword-only parameters' default values"
 msgstr ""
+"``0x02`` un diccionario de valores predeterminados de solo palabras clave"
 
-#: ../../library/dis.rst:1261
+#: ../Doc/library/dis.rst:1246
 msgid "``0x04`` a tuple of strings containing parameters' annotations"
 msgstr ""
+"``0x04`` una tupla de cadenas de caracteres que contiene anotaciones de "
+"parámetros"
 
-#: ../../library/dis.rst:1262
+#: ../Doc/library/dis.rst:1247
 msgid "``0x08`` a tuple containing cells for free variables, making a closure"
 msgstr ""
+"``0x08`` una tupla que contiene celdas para variables libres, haciendo un "
+"cierre (*closure*)"
 
-#: ../../library/dis.rst:1263
+#: ../Doc/library/dis.rst:1248
 msgid "the code associated with the function (at TOS1)"
-msgstr "関数に関連付けられたコード (TOS1の位置)"
+msgstr "el código asociado con la función (en TOS1)"
 
-#: ../../library/dis.rst:1264
+#: ../Doc/library/dis.rst:1249
 msgid "the :term:`qualified name` of the function (at TOS)"
-msgstr "関数の :term:`qualified name` (TOSの位置)"
+msgstr "el :term:`nombre calificado` de la función (en TOS)"
 
-#: ../../library/dis.rst:1266
+#: ../Doc/library/dis.rst:1251
 msgid "Flag value ``0x04`` is a tuple of strings instead of dictionary"
 msgstr ""
+"El valor indicador ``0x04`` es una tupla de cadena de caracteres en vez de "
+"un diccionario"
 
-#: ../../library/dis.rst:1273
+#: ../Doc/library/dis.rst:1258
 msgid ""
 "Pushes a slice object on the stack.  *argc* must be 2 or 3.  If it is 2, "
 "``slice(TOS1, TOS)`` is pushed; if it is 3, ``slice(TOS2, TOS1, TOS)`` is "
 "pushed. See the :func:`slice` built-in function for more information."
 msgstr ""
-"スライスオブジェクトをスタックにプッシュします。 *argc* は2あるいは3でなけれ"
-"ばなりません。 2 ならば ``slice(TOS1, TOS)`` がプッシュされます。 3 ならば "
-"``slice(TOS2, TOS1, TOS)`` がプッシュされます。 これ以上の情報については、 :"
-"func:`slice()` 組み込み関数を参照してください。"
+"Apila un objeto de rebanada en la pila. *argc* debe ser 2 o 3. Si es 2, se "
+"apila ``slice(TOS1, TOS)``; si es 3, se apila ``slice(TOS2, TOS1, TOS)``. "
+"Consulte la función incorporada :func:`slice` para obtener más información."
 
-#: ../../library/dis.rst:1280
+#: ../Doc/library/dis.rst:1265
 msgid ""
 "Prefixes any opcode which has an argument too big to fit into the default "
 "one byte. *ext* holds an additional byte which act as higher bits in the "
 "argument. For each opcode, at most three prefixal ``EXTENDED_ARG`` are "
 "allowed, forming an argument from two-byte to four-byte."
 msgstr ""
+"Prefija cualquier código de operación que tenga un argumento demasiado "
+"grande para caber en el byte predeterminado. *ext* contiene un byte "
+"adicional que actúa como bits más altos en el argumento. Para cada opcode, "
+"como máximo se permiten tres prefijos ``EXTENDED_ARG``, formando un "
+"argumento de dos bytes a cuatro bytes."
 
-#: ../../library/dis.rst:1288
+#: ../Doc/library/dis.rst:1273
 msgid ""
 "Used for implementing formatted literal strings (f-strings).  Pops an "
 "optional *fmt_spec* from the stack, then a required *value*. *flags* is "
 "interpreted as follows:"
 msgstr ""
+"Se utiliza para implementar cadenas literales formateadas (cadenas de "
+"caracteres f). Desapila un *fmt_spec* opcional de la pila, luego un *value* "
+"requerido. *flags* se interpreta de la siguiente manera:"
 
-#: ../../library/dis.rst:1292
+#: ../Doc/library/dis.rst:1277
 msgid "``(flags & 0x03) == 0x00``: *value* is formatted as-is."
-msgstr ""
+msgstr "``(flags & 0x03) == 0x00``: *value* es formateado como está."
 
-#: ../../library/dis.rst:1293
+#: ../Doc/library/dis.rst:1278
 msgid ""
 "``(flags & 0x03) == 0x01``: call :func:`str` on *value* before formatting it."
 msgstr ""
+"``(flags & 0x03) == 0x01``: llama :func:`str` sobre *value* antes de "
+"formatearlo."
 
-#: ../../library/dis.rst:1295
+#: ../Doc/library/dis.rst:1280
 msgid ""
 "``(flags & 0x03) == 0x02``: call :func:`repr` on *value* before formatting "
 "it."
 msgstr ""
+"``(flags & 0x03) == 0x02``: llama :func:`repr` sobre *value* antes de "
+"formatearlo."
 
-#: ../../library/dis.rst:1297
+#: ../Doc/library/dis.rst:1282
 msgid ""
 "``(flags & 0x03) == 0x03``: call :func:`ascii` on *value* before formatting "
 "it."
 msgstr ""
+"``(flags & 0x03) == 0x03``: llama :func:`ascii` sobre *value* antes de "
+"formatearlo."
 
-#: ../../library/dis.rst:1299
+#: ../Doc/library/dis.rst:1284
 msgid ""
 "``(flags & 0x04) == 0x04``: pop *fmt_spec* from the stack and use it, else "
 "use an empty *fmt_spec*."
 msgstr ""
+"``(flags & 0x04) == 0x04``: desapila *fmt_spec* de la pila y lo usa, de lo "
+"contrario usa un *fmt_spec* vacío."
 
-#: ../../library/dis.rst:1302
+#: ../Doc/library/dis.rst:1287
 msgid ""
 "Formatting is performed using :c:func:`PyObject_Format`.  The result is "
 "pushed on the stack."
 msgstr ""
+"El formateo se realiza usando :c:func:`PyObject_Format`. El resultado se "
+"apila en la pila."
 
-#: ../../library/dis.rst:1310
+#: ../Doc/library/dis.rst:1295
 msgid ""
 "TOS is a tuple of keyword attribute names, TOS1 is the class being matched "
 "against, and TOS2 is the match subject.  *count* is the number of positional "
 "sub-patterns."
 msgstr ""
+"TOS es una tupla de nombres de atributos clave, TOS1 es la clase contra la "
+"cual se hace la coincidencia, y TOS2 es el sujeto de la coincidencia. "
+"*count* es el número de sub-patrones posicionales."
 
-#: ../../library/dis.rst:1314
+#: ../Doc/library/dis.rst:1299
+#, fuzzy
 msgid ""
 "Pop TOS, TOS1, and TOS2.  If TOS2 is an instance of TOS1 and has the "
 "positional and keyword attributes required by *count* and TOS, push a tuple "
 "of extracted attributes.  Otherwise, push ``None``."
 msgstr ""
+"Desapila TOS. Si TOS2 es una instancia de TOS1 y tiene los atributos clave y "
+"posicionales requeridos por *count* y TOS, establece TOS como ``True`` y "
+"TOS1 es una tupla de atributos extraídos. De lo contrario, establece TOS "
+"como ``False``."
 
-#: ../../library/dis.rst:1327
+#: ../Doc/library/dis.rst:1312
 msgid "A no-op. Performs internal tracing, debugging and optimization checks."
 msgstr ""
 
-#: ../../library/dis.rst:1329
+#: ../Doc/library/dis.rst:1314
 msgid "The ``where`` operand marks where the ``RESUME`` occurs:"
 msgstr ""
 
-#: ../../library/dis.rst:1331
+#: ../Doc/library/dis.rst:1316
 msgid "``0`` The start of a function"
 msgstr ""
 
-#: ../../library/dis.rst:1332
+#: ../Doc/library/dis.rst:1317
 msgid "``1`` After a ``yield`` expression"
 msgstr ""
 
-#: ../../library/dis.rst:1333
+#: ../Doc/library/dis.rst:1318
 msgid "``2`` After a ``yield from`` expression"
 msgstr ""
 
-#: ../../library/dis.rst:1334
+#: ../Doc/library/dis.rst:1319
 msgid "``3`` After an ``await`` expression"
 msgstr ""
 
-#: ../../library/dis.rst:1341
+#: ../Doc/library/dis.rst:1326
 msgid ""
 "Create a generator, coroutine, or async generator from the current frame. "
 "Clear the current frame and return the newly created generator."
 msgstr ""
 
-#: ../../library/dis.rst:1349
+#: ../Doc/library/dis.rst:1334
 msgid ""
 "Sends ``None`` to the sub-generator of this generator. Used in ``yield "
 "from`` and ``await`` statements."
 msgstr ""
 
-#: ../../library/dis.rst:1357
+#: ../Doc/library/dis.rst:1342
 msgid ""
 "Wraps the value on top of the stack in an ``async_generator_wrapped_value``. "
 "Used to yield in async generators."
 msgstr ""
 
-#: ../../library/dis.rst:1365
+#: ../Doc/library/dis.rst:1350
 msgid ""
 "This is not really an opcode.  It identifies the dividing line between "
 "opcodes which don't use their argument and those that do (``< "
 "HAVE_ARGUMENT`` and ``>= HAVE_ARGUMENT``, respectively)."
 msgstr ""
+"Esto no es realmente un opcode. Identifica la línea divisoria entre los "
+"opcode que no usan su argumento y los que lo hacen (``< HAVE_ARGUMENT`` y "
+"``>= HAVE_ARGUMENT``, respectivamente)."
 
-#: ../../library/dis.rst:1369
+#: ../Doc/library/dis.rst:1354
 msgid ""
 "Now every instruction has an argument, but opcodes ``< HAVE_ARGUMENT`` "
 "ignore it. Before, only opcodes ``>= HAVE_ARGUMENT`` had an argument."
 msgstr ""
+"Ahora cada instrucción tiene un argumento, pero los códigos de operación "
+"``<HAVE_ARGUMENT`` la ignoran. Antes, solo los códigos de operación ``> = "
+"HAVE_ARGUMENT`` tenían un argumento."
 
-#: ../../library/dis.rst:1377
+#: ../Doc/library/dis.rst:1362
 msgid "Opcode collections"
-msgstr "命令コードコレクション"
+msgstr "Colecciones opcode"
 
-#: ../../library/dis.rst:1379
+#: ../Doc/library/dis.rst:1364
 msgid ""
 "These collections are provided for automatic introspection of bytecode "
 "instructions:"
 msgstr ""
-"これらのコレクションは、自動でバイトコード命令を解析するために提供されていま"
-"す:"
+"Estas colecciones se proporcionan para la introspección automática de "
+"instrucciones de bytecode:"
 
-#: ../../library/dis.rst:1384
+#: ../Doc/library/dis.rst:1369
 msgid "Sequence of operation names, indexable using the bytecode."
-msgstr ""
-"命令コード名のリスト。\n"
-"バイトコードをインデックスに使って参照できます。"
+msgstr "Secuencia de nombres de operaciones, indexable utilizando el bytecode."
 
-#: ../../library/dis.rst:1389
+#: ../Doc/library/dis.rst:1374
 msgid "Dictionary mapping operation names to bytecodes."
-msgstr "命令コード名をバイトコードに対応づける辞書。"
+msgstr "Nombres de operaciones de mapeo de diccionario a bytecodes."
 
-#: ../../library/dis.rst:1394
+#: ../Doc/library/dis.rst:1379
 msgid "Sequence of all compare operation names."
-msgstr "すべての比較命令の名前のリスト。"
+msgstr "Secuencia de todos los nombres de operaciones de comparación."
 
-#: ../../library/dis.rst:1399
+#: ../Doc/library/dis.rst:1384
 msgid "Sequence of bytecodes that access a constant."
-msgstr ""
+msgstr "Secuencia de bytecodes que acceden a una constante."
 
-#: ../../library/dis.rst:1404
+#: ../Doc/library/dis.rst:1389
 msgid ""
 "Sequence of bytecodes that access a free variable (note that 'free' in this "
 "context refers to names in the current scope that are referenced by inner "
 "scopes or names in outer scopes that are referenced from this scope.  It "
 "does *not* include references to global or builtin scopes)."
 msgstr ""
-"自由変数にアクセスするバイトコードのリスト (この文脈での '自由' とは、現在の"
-"スコープにある名前で内側のスコープから参照されているもの、もしくは外側のス"
-"コープにある名前で現在のスコープから参照しているものを指します。グローバルス"
-"コープや組み込みのスコープへの参照は含み *ません*)。"
+"Secuencia de bytecodes que acceden a una variable libre (tenga en cuenta que "
+"'libre' en este contexto se refiere a nombres en el alcance actual a los que "
+"hacen referencia los ámbitos internos o los nombres en los ámbitos externos "
+"a los que se hace referencia desde este ámbito. **No** incluye referencias a "
+"ámbitos globales o integrados)."
 
-#: ../../library/dis.rst:1412
+#: ../Doc/library/dis.rst:1397
 msgid "Sequence of bytecodes that access an attribute by name."
-msgstr "名前によって属性にアクセスするバイトコードのリスト。"
+msgstr "Secuencia de bytecodes que acceden a un atributo por nombre."
 
-#: ../../library/dis.rst:1417
+#: ../Doc/library/dis.rst:1402
 msgid "Sequence of bytecodes that have a relative jump target."
-msgstr "相対ジャンプ先を持つバイトコードのリスト。"
+msgstr "Secuencia de bytecodes que tienen un objetivo de salto relativo."
 
-#: ../../library/dis.rst:1422
+#: ../Doc/library/dis.rst:1407
 msgid "Sequence of bytecodes that have an absolute jump target."
-msgstr "絶対ジャンプ先を持つバイトコードのリスト。"
+msgstr "Secuencia de bytecodes que tienen un objetivo de salto absoluto."
 
-#: ../../library/dis.rst:1427
+#: ../Doc/library/dis.rst:1412
 msgid "Sequence of bytecodes that access a local variable."
-msgstr "ローカル変数にアクセスするバイトコードのリスト。"
+msgstr "Secuencia de códigos de bytes que acceden a una variable local."
 
-#: ../../library/dis.rst:1432
+#: ../Doc/library/dis.rst:1417
 msgid "Sequence of bytecodes of Boolean operations."
-msgstr "ブール命令のバイトコードのリスト。"
+msgstr "Secuencia de bytecodes de operaciones booleanas."
+
+#~ msgid "Swaps the two top-most stack items."
+#~ msgstr "Intercambia los dos elementos más apilados."
+
+#~ msgid ""
+#~ "Lifts second and third stack item one position up, moves top down to "
+#~ "position three."
+#~ msgstr ""
+#~ "Levanta el segundo y tercer elemento de la pila una posición hacia "
+#~ "arriba, mueve el elemento superior hacia abajo a la posición tres."
+
+#~ msgid ""
+#~ "Lifts second, third and fourth stack items one position up, moves top "
+#~ "down to position four."
+#~ msgstr ""
+#~ "Eleva los elementos de la segunda, tercera y cuarta pila una posición "
+#~ "hacia arriba, se mueve de arriba hacia abajo a la posición cuatro."
+
+#~ msgid "Duplicates the reference on top of the stack."
+#~ msgstr "Duplica la referencia en la parte superior de la pila."
+
+#~ msgid ""
+#~ "Duplicates the two references on top of the stack, leaving them in the "
+#~ "same order."
+#~ msgstr ""
+#~ "Duplica las dos referencias en la parte superior de la pila, dejándolas "
+#~ "en el mismo orden."
+
+#~ msgid "**Binary operations**"
+#~ msgstr "**Operaciones binarias**"
+
+#~ msgid "Implements ``TOS = TOS1 ** TOS``."
+#~ msgstr "Implementa ``TOS = TOS1 ** TOS``."
+
+#~ msgid "Implements ``TOS = TOS1 * TOS``."
+#~ msgstr "Implementa ``TOS = TOS1 * TOS``."
+
+#~ msgid "Implements ``TOS = TOS1 @ TOS``."
+#~ msgstr "Implementa ``TOS = TOS1 @ TOS``."
+
+#~ msgid "Implements ``TOS = TOS1 // TOS``."
+#~ msgstr "Implementa ``TOS = TOS1 // TOS``."
+
+#~ msgid "Implements ``TOS = TOS1 / TOS``."
+#~ msgstr "Implementa ``TOS = TOS1 / TOS``."
+
+#~ msgid "Implements ``TOS = TOS1 % TOS``."
+#~ msgstr "Implementa ``TOS = TOS1 % TOS``."
+
+#~ msgid "Implements ``TOS = TOS1 + TOS``."
+#~ msgstr "Implementa ``TOS = TOS1 + TOS``."
+
+#~ msgid "Implements ``TOS = TOS1 - TOS``."
+#~ msgstr "Implementa ``TOS = TOS1 - TOS``."
+
+#~ msgid "Implements ``TOS = TOS1 << TOS``."
+#~ msgstr "Implementa ``TOS = TOS1 << TOS``."
+
+#~ msgid "Implements ``TOS = TOS1 >> TOS``."
+#~ msgstr "Implementa ``TOS = TOS1 >> TOS``."
+
+#~ msgid "Implements ``TOS = TOS1 & TOS``."
+#~ msgstr "Implementa ``TOS = TOS1 & TOS``."
+
+#~ msgid "Implements ``TOS = TOS1 ^ TOS``."
+#~ msgstr "Implementa ``TOS = TOS1 ^ TOS``."
+
+#~ msgid "Implements ``TOS = TOS1 | TOS``."
+#~ msgstr "Implementa ``TOS = TOS1 | TOS``."
+
+#~ msgid "Implements in-place ``TOS = TOS1 ** TOS``."
+#~ msgstr "Implementa en su lugar ``TOS = TOS1 ** TOS``."
+
+#~ msgid "Implements in-place ``TOS = TOS1 * TOS``."
+#~ msgstr "Implementa en su lugar ``TOS = TOS1 * TOS``."
+
+#~ msgid "Implements in-place ``TOS = TOS1 @ TOS``."
+#~ msgstr "Implementa en su lugar ``TOS = TOS1 @ TOS``."
+
+#~ msgid "Implements in-place ``TOS = TOS1 // TOS``."
+#~ msgstr "Implementa en su lugar ``TOS = TOS1 // TOS``."
+
+#~ msgid "Implements in-place ``TOS = TOS1 / TOS``."
+#~ msgstr "Implementa en su lugar ``TOS = TOS1 / TOS``."
+
+#~ msgid "Implements in-place ``TOS = TOS1 % TOS``."
+#~ msgstr "Implementa en su lugar ``TOS = TOS1 % TOS``."
+
+#~ msgid "Implements in-place ``TOS = TOS1 + TOS``."
+#~ msgstr "Implementa en su lugar ``TOS = TOS1 + TOS``."
+
+#~ msgid "Implements in-place ``TOS = TOS1 - TOS``."
+#~ msgstr "Implementa en su lugar ``TOS = TOS1 - TOS``."
+
+#~ msgid "Implements in-place ``TOS = TOS1 << TOS``."
+#~ msgstr "Implementa en su lugar ``TOS = TOS1 << TOS``."
+
+#~ msgid "Implements in-place ``TOS = TOS1 >> TOS``."
+#~ msgstr "Implementa en su lugar ``TOS = TOS1 >> TOS``."
+
+#~ msgid "Implements in-place ``TOS = TOS1 & TOS``."
+#~ msgstr "Implementa en su lugar ``TOS = TOS1 & TOS``."
+
+#~ msgid "Implements in-place ``TOS = TOS1 ^ TOS``."
+#~ msgstr "Implementa en su lugar ``TOS = TOS1 ^ TOS``."
+
+#~ msgid "Implements in-place ``TOS = TOS1 | TOS``."
+#~ msgstr "Implementa en su lugar ``TOS = TOS1 | TOS``."
+
+#~ msgid "Creates a new frame object."
+#~ msgstr "Crea un nuevo objeto marco."
+
+#~ msgid ""
+#~ "Pops TOS and delegates to it as a subiterator from a :term:`generator`."
+#~ msgstr ""
+#~ "Desapila TOS y delega en él como un subiterador de un :term:`generator`."
+
+#~ msgid ""
+#~ "Removes one block from the block stack.  Per frame, there is a stack of "
+#~ "blocks, denoting :keyword:`try` statements, and such."
+#~ msgstr ""
+#~ "Elimina un bloque de la pila de bloques. Por cuadro, hay una pila de "
+#~ "bloques, que denota declaraciones :keyword:`try`, y tal."
+
+#~ msgid ""
+#~ "Removes one block from the block stack. The popped block must be an "
+#~ "exception handler block, as implicitly created when entering an except "
+#~ "handler.  In addition to popping extraneous values from the frame stack, "
+#~ "the last three popped values are used to restore the exception state."
+#~ msgstr ""
+#~ "Elimina un bloque de la pila de bloques. El bloque desapilado debe ser un "
+#~ "bloque de controlador de excepción, como se crea implícitamente al "
+#~ "ingresar un controlador de excepción. Además de desapilar valores "
+#~ "extraños de la pila de cuadros, los últimos tres valores desapilados se "
+#~ "utilizan para restaurar el estado de excepción."
+
+#~ msgid ""
+#~ "TOS is a tuple of mapping keys, and TOS1 is the match subject.  Replace "
+#~ "TOS with a :class:`dict` formed from the items of TOS1, but without any "
+#~ "of the keys in TOS."
+#~ msgstr ""
+#~ "TOS es una tuple de llaves de mapeo, y TOS1 es el sujeto de la "
+#~ "coincidencia. Reemplaza TOS con un :class:`dict` formado por los ítems de "
+#~ "TOS1, pero sin ninguna de las llaves en TOS."
+
+#~ msgid "All of the following opcodes use their arguments."
+#~ msgstr "Todos los siguientes códigos de operación utilizan sus argumentos."
+
+#~ msgid ""
+#~ "Tests whether the second value on the stack is an exception matching TOS, "
+#~ "and jumps if it is not. Pops two values from the stack."
+#~ msgstr ""
+#~ "Comprueba si el segundo valor de la pila es una excepción que coincide "
+#~ "con el TOS y salta si no lo es. Saca dos valores de la pila."
+
+#~ msgid "Set bytecode counter to *target*."
+#~ msgstr "Establezca el contador de bytecode en *target*."
+
+#~ msgid ""
+#~ "Pushes a try block from a try-finally or try-except clause onto the block "
+#~ "stack.  *delta* points to the finally block or the first except block."
+#~ msgstr ""
+#~ "Apila un bloque try de una cláusula try-finally o try-except en la pila "
+#~ "de bloques. *delta* apunta al último bloque o al primero excepto el "
+#~ "bloque."
+
+#~ msgid ""
+#~ "Pushes a reference to the cell contained in slot *i* of the cell and free "
+#~ "variable storage.  The name of the variable is ``co_cellvars[i]`` if *i* "
+#~ "is less than the length of *co_cellvars*.  Otherwise it is "
+#~ "``co_freevars[i - len(co_cellvars)]``."
+#~ msgstr ""
+#~ "Apila una referencia a la celda contenida en la ranura *i* de la celda y "
+#~ "el almacenamiento variable libre. El nombre de la variable es "
+#~ "``co_cellvars[i]`` si *i* es menor que la longitud de *co_cellvars*. De "
+#~ "lo contrario, es ``co_freevars[i - len(co_cellvars)]``."
+
+#~ msgid ""
+#~ "Calls a callable object with positional arguments. *argc* indicates the "
+#~ "number of positional arguments. The top of the stack contains positional "
+#~ "arguments, with the right-most argument on top.  Below the arguments is a "
+#~ "callable object to call. ``CALL_FUNCTION`` pops all arguments and the "
+#~ "callable object off the stack, calls the callable object with those "
+#~ "arguments, and pushes the return value returned by the callable object."
+#~ msgstr ""
+#~ "Llama a un objeto invocable con argumentos posicionales. *argc* indica el "
+#~ "número de argumentos posicionales. La parte superior de la pila contiene "
+#~ "argumentos posicionales, con el argumento más a la derecha en la parte "
+#~ "superior. Debajo de los argumentos hay un objeto invocable para llamar. "
+#~ "``CALL_FUNCTION`` saca todos los argumentos y el objeto invocable de la "
+#~ "pila, llama al objeto invocable con esos argumentos y empuja el valor de "
+#~ "retorno retornado por el objeto invocable."
+
+#~ msgid "This opcode is used only for calls with positional arguments."
+#~ msgstr ""
+#~ "Este código de operación se usa solo para llamadas con argumentos "
+#~ "posicionales."
+
+#~ msgid ""
+#~ "Calls a callable object with positional (if any) and keyword arguments. "
+#~ "*argc* indicates the total number of positional and keyword arguments. "
+#~ "The top element on the stack contains a tuple with the names of the "
+#~ "keyword arguments, which must be strings. Below that are the values for "
+#~ "the keyword arguments, in the order corresponding to the tuple. Below "
+#~ "that are positional arguments, with the right-most parameter on top.  "
+#~ "Below the arguments is a callable object to call. ``CALL_FUNCTION_KW`` "
+#~ "pops all arguments and the callable object off the stack, calls the "
+#~ "callable object with those arguments, and pushes the return value "
+#~ "returned by the callable object."
+#~ msgstr ""
+#~ "Llama a un objeto invocable con argumentos posicionales (si los hay) y "
+#~ "palabras clave. *argc* indica el número total de argumentos posicionales "
+#~ "y de palabras clave. El elemento superior de la pila contiene una tupla "
+#~ "con los nombres de los argumentos de la palabra clave, que deben ser "
+#~ "cadenas de caracteres. Debajo están los valores para los argumentos de la "
+#~ "palabra clave, en el orden correspondiente a la tupla. Debajo están los "
+#~ "argumentos posicionales, con el parámetro más a la derecha en la parte "
+#~ "superior. Debajo de los argumentos hay un objeto invocable para llamar. "
+#~ "``CALL_FUNCTION_KW`` saca todos los argumentos y el objeto invocable de "
+#~ "la pila, llama al objeto invocable con esos argumentos y empuja el valor "
+#~ "de retorno retornado por el objeto invocable."
+
+#~ msgid ""
+#~ "Keyword arguments are packed in a tuple instead of a dictionary, *argc* "
+#~ "indicates the total number of arguments."
+#~ msgstr ""
+#~ "Los argumentos de palabras clave se empaquetan en una tupla en lugar de "
+#~ "un diccionario, *argc* indica el número total de argumentos."
+
+#~ msgid ""
+#~ "Calls a method.  *argc* is the number of positional arguments. Keyword "
+#~ "arguments are not supported.  This opcode is designed to be used with :"
+#~ "opcode:`LOAD_METHOD`.  Positional arguments are on top of the stack. "
+#~ "Below them, the two items described in :opcode:`LOAD_METHOD` are on the "
+#~ "stack (either ``self`` and an unbound method object or ``NULL`` and an "
+#~ "arbitrary callable). All of them are popped and the return value is "
+#~ "pushed."
+#~ msgstr ""
+#~ "Llama a un método. *argc* es el número de argumentos posicionales. Los "
+#~ "argumentos de palabras clave no son compatibles. Este código de operación "
+#~ "está diseñado para usarse con :opcode:`LOAD_METHOD`. Los argumentos "
+#~ "posicionales están en la parte superior de la pila. Debajo de ellos, los "
+#~ "dos elementos descritos en :opcode:`LOAD_METHOD` están en la pila "
+#~ "(``self`` y un objeto de método independiente o ``NULL`` y un invocable "
+#~ "arbitrario). Todos ellos aparecen y se apila el valor de retorno."
+
+#~ msgid ""
+#~ "Pops TOS. If TOS was not ``None``, raises an exception. The ``kind`` "
+#~ "operand corresponds to the type of generator or coroutine and determines "
+#~ "the error message. The legal kinds are 0 for generator, 1 for coroutine, "
+#~ "and 2 for async generator."
+#~ msgstr ""
+#~ "Desapila TOS. Si TOS no era ``None``, lanza una excepción. El operando "
+#~ "``kind`` corresponde al tipo de generador o corrutina y determina el "
+#~ "mensaje de error. Los tipos legales son 0 para generador, 1 para "
+#~ "corrutina, y 2 para generador asíncrono."
+
+#~ msgid ""
+#~ "Lift the top *count* stack items one position up, and move TOS down to "
+#~ "position *count*."
+#~ msgstr ""
+#~ "Eleva los *count* elementos más altos de la pila una posición hacia "
+#~ "arriba, y baja TOS hacia la posición *count*."

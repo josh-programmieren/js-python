@@ -1,49 +1,49 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Tetsuo Koyama <tkoyama010@gmail.com>, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:15+0000\n"
-"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2021-03-19 11:16+0100\n"
+"PO-Revision-Date: 2021-08-03 14:02+0200\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.8.0\n"
+"X-Generator: Poedit 3.0\n"
 
-#: ../../library/tkinter.scrolledtext.rst:2
+#: ../Doc/library/tkinter.scrolledtext.rst:2
 msgid ":mod:`tkinter.scrolledtext` --- Scrolled Text Widget"
-msgstr ":mod:`tkinter.scrolledtext` --- スクロールするテキストウィジェット"
+msgstr ":mod:`tkinter.scrolledtext` --- Widget de texto desplazado"
 
-#: ../../library/tkinter.scrolledtext.rst:10
+#: ../Doc/library/tkinter.scrolledtext.rst:10
 msgid "**Source code:** :source:`Lib/tkinter/scrolledtext.py`"
-msgstr "**ソースコード:** :source:`Lib/tkinter/scrolledtext.py`"
+msgstr "**Código fuente:** :source:`Lib/tkinter/scrolledtext.py`"
 
-#: ../../library/tkinter.scrolledtext.rst:14
+#: ../Doc/library/tkinter.scrolledtext.rst:14
 msgid ""
 "The :mod:`tkinter.scrolledtext` module provides a class of the same name "
 "which implements a basic text widget which has a vertical scroll bar "
 "configured to do the \"right thing.\"  Using the :class:`ScrolledText` class "
 "is a lot easier than setting up a text widget and scroll bar directly."
 msgstr ""
-":mod:`tkinter.scrolledtext` モジュールは\"正しい動作\"をするように設定された"
-"垂直スクロールバーをもつ基本的なテキストウィジェットを実装する同じ名前のクラ"
-"スを提供します。 :class:`ScrolledText` クラスを使うことは、テキストウィジェッ"
-"トとスクロールバーを直接設定するより簡単です。"
+"El módulo :mod:`tkinter.scrolledtext` proporciona una clase del mismo nombre "
+"que implementa un widget de texto básico que tiene una barra de "
+"desplazamiento vertical configurada para hacer \"lo correcto\". Usar la "
+"clase :class:`ScrolledText` es mucho más fácil que configurar un widget de "
+"texto y una barra de desplazamiento directamente."
 
-#: ../../library/tkinter.scrolledtext.rst:19
+#: ../Doc/library/tkinter.scrolledtext.rst:19
 msgid ""
 "The text widget and scrollbar are packed together in a :class:`Frame`, and "
 "the methods of the :class:`Grid` and :class:`Pack` geometry managers are "
@@ -51,22 +51,25 @@ msgid ""
 "`ScrolledText` widget to be used directly to achieve most normal geometry "
 "management behavior."
 msgstr ""
-"テキストウィジェットとスクロールバーは :class:`Frame` の中に一緒にpack\\ さ"
-"れ、 :class:`Grid` と :class:`Pack` ジオメトリマネジャのメソッドは\\ :class:"
-"`Frame` オブジェクトから得られます。これによって、もっとも標準的なジオメトリ"
-"マネジャの振る舞いにするために、直接 :class:`ScrolledText` ウィジェットを使え"
-"るようになります。"
+"El widget de texto y la barra de desplazamiento se empaquetan juntos en un :"
+"class:`Frame`, y los métodos de los administradores de geometría :class:"
+"`Grid` y :class:`Pack` se adquieren del objeto :class:`Frame`. Esto permite "
+"que el widget :class:`ScrolledText` sea usado directamente para lograr el "
+"funcionamiento más normal del administrador de geometría."
 
-#: ../../library/tkinter.scrolledtext.rst:24
+#: ../Doc/library/tkinter.scrolledtext.rst:24
 msgid ""
 "Should more specific control be necessary, the following attributes are "
 "available:"
-msgstr "特定の制御が必要ならば、以下の属性が利用できます:"
+msgstr ""
+"Si fuera necesario un control más específico, los siguientes atributos están "
+"disponibles:"
 
-#: ../../library/tkinter.scrolledtext.rst:32
+#: ../Doc/library/tkinter.scrolledtext.rst:32
 msgid "The frame which surrounds the text and scroll bar widgets."
-msgstr "テキストとスクロールバーウィジェットを取り囲むフレーム。"
+msgstr ""
+"El marco que rodea el texto y los widgets de la barra de desplazamiento."
 
-#: ../../library/tkinter.scrolledtext.rst:37
+#: ../Doc/library/tkinter.scrolledtext.rst:37
 msgid "The scroll bar widget."
-msgstr "スクロールバーウィジェット。"
+msgstr "El widget de la barra de desplazamiento."

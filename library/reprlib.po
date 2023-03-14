@@ -1,174 +1,181 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-# Translators:
-# tomo, 2021
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:12+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: python-doc-es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/reprlib.rst:2
+#: ../Doc/library/reprlib.rst:2
 msgid ":mod:`reprlib` --- Alternate :func:`repr` implementation"
-msgstr ":mod:`reprlib` --- もう一つの :func:`repr` の実装"
+msgstr ":mod:`reprlib` --- Implementación :func:`repr` alternativa"
 
-#: ../../library/reprlib.rst:9
+#: ../Doc/library/reprlib.rst:9
 msgid "**Source code:** :source:`Lib/reprlib.py`"
-msgstr "**ソースコード:** :source:`Lib/reprlib.py`"
+msgstr "**Código fuente:** :source:`Lib/reprlib.py`"
 
-#: ../../library/reprlib.rst:13
+#: ../Doc/library/reprlib.rst:13
 msgid ""
 "The :mod:`reprlib` module provides a means for producing object "
 "representations with limits on the size of the resulting strings. This is "
 "used in the Python debugger and may be useful in other contexts as well."
 msgstr ""
-":mod:`reprlib` モジュールは、結果の文字列のサイズに対する制限付きでオブジェク"
-"ト表現を生成するための手段を提供します。これは Python デバッガの中で使用され"
-"ており、他の文脈でも同様に役に立つかもしれません。"
+"El módulo :mod:`reprlib` provee de los medios necesarios para producir "
+"representaciones de objetos con límites en el tamaño de las cadenas "
+"resultantes. Es usado en el depurador de Python y puede ser útil también en "
+"otros contextos."
 
-#: ../../library/reprlib.rst:17
+#: ../Doc/library/reprlib.rst:17
 msgid "This module provides a class, an instance, and a function:"
-msgstr "このモジュールはクラスとインスタンス、それに関数を提供します:"
+msgstr "Este módulo provee una clase, una instancia y una función:"
 
-#: ../../library/reprlib.rst:22
+#: ../Doc/library/reprlib.rst:22
 msgid ""
 "Class which provides formatting services useful in implementing functions "
 "similar to the built-in :func:`repr`; size limits for  different object "
 "types are added to avoid the generation of representations which are "
 "excessively long."
 msgstr ""
-"組み込み関数 :func:`repr` に似た関数を実装するために役に立つフォーマット用"
-"サービスを提供します。\n"
-"過度に長い表現を作り出さないようにするための大きさの制限をオブジェクト型ごと"
-"に設定できます。"
+"Clase que provee de servicios de formateo útiles en la implementación de "
+"funciones similar a la integrada :func:`repr`; los límites de tamaño para "
+"diferentes tipos de objetos son añadidos para evitar la generación de "
+"representaciones que son excesivamente largas."
 
-#: ../../library/reprlib.rst:29
+#: ../Doc/library/reprlib.rst:29
 msgid ""
 "This is an instance of :class:`Repr` which is used to provide the :func:`."
 "repr` function described below.  Changing the attributes of this object will "
 "affect the size limits used by :func:`.repr` and the Python debugger."
 msgstr ""
-"これは下で説明される :func:`.repr` 関数を提供するために使われる :class:"
-"`Repr` のインスタンスです。このオブジェクトの属性を変更すると、 :func:`."
-"repr` と Python デバッガが使うサイズ制限に影響します。"
+"Esta es una instancia de :class:`Repr` que es usada para proveer la función :"
+"func:`.repr` descrita debajo. Cambiar los atributos de este objeto afectará "
+"los límites de tamaño usados por :func:`.repr` y el depurador de Python."
 
-#: ../../library/reprlib.rst:37
+#: ../Doc/library/reprlib.rst:37
 msgid ""
 "This is the :meth:`~Repr.repr` method of ``aRepr``.  It returns a string "
 "similar to that returned by the built-in function of the same name, but with "
 "limits on most sizes."
 msgstr ""
-"これは ``aRepr`` の :meth:`~Repr.repr` メソッドです。同じ名前の組み込み関数が"
-"返す文字列と似ていますが、最大サイズに制限のある文字列を返します。"
+"Este es el método :meth:`~Repr.repr` de ``aRepr``. Retorna una cadena "
+"similar a la retornada por la función integrada del mismo nombre, pero con "
+"límites en la mayoría de tamaños."
 
-#: ../../library/reprlib.rst:41
+#: ../Doc/library/reprlib.rst:41
 msgid ""
 "In addition to size-limiting tools, the module also provides a decorator for "
 "detecting recursive calls to :meth:`__repr__` and substituting a placeholder "
 "string instead."
 msgstr ""
-"サイズを制限するツールに加えて、このモジュールはさらに  :meth:`__repr__` に対"
-"する再帰呼び出しの検出とプレースホルダー文字列による置換のためのデコレータを"
-"提供します。"
+"Además de las herramientas de limitación de tamaño, el módulo también provee "
+"un decorador para detectar invocaciones recursivas a :meth:`__repr__` y "
+"sustituyendo por un marcador de posición de cadena en su lugar."
 
-#: ../../library/reprlib.rst:50
+#: ../Doc/library/reprlib.rst:50
 msgid ""
 "Decorator for :meth:`__repr__` methods to detect recursive calls within the "
 "same thread.  If a recursive call is made, the *fillvalue* is returned, "
 "otherwise, the usual :meth:`__repr__` call is made.  For example:"
 msgstr ""
-":meth:`__repr__` メソッドに対する同一スレッド内の再帰呼び出しを検出するデコ"
-"レータです。再帰呼び出しが行われている場合 *fillvalue* が返されます。そうでな"
-"ければ通常の :meth:`__repr__` 呼び出しが行われます。例えば:"
+"Decorador para métodos :meth:`__repr__` que detecta invocaciones recursivas "
+"dentro del mismo hilo. Si se produce una invocación recursiva, el "
+"*fillvalue* es retornado, si no, se produce la invocación :meth:`__repr__` "
+"habitual. Por ejemplo:"
 
-#: ../../library/reprlib.rst:72
+#: ../Doc/library/reprlib.rst:72
 msgid "Repr Objects"
-msgstr "Reprオブジェクト"
+msgstr "Objetos Repr"
 
-#: ../../library/reprlib.rst:74
+#: ../Doc/library/reprlib.rst:74
 msgid ""
 ":class:`Repr` instances provide several attributes which can be used to "
 "provide size limits for the representations of different object types,  and "
 "methods which format specific object types."
 msgstr ""
-":class:`Repr` インスタンスはオブジェクト型毎に表現する文字列のサイズを制限す"
-"るために使えるいくつかの属性と、特定のオブジェクト型をフォーマットするメソッ"
-"ドを提供します。"
+"Las instancias :class:`Repr` proveen varios atributos que pueden ser usados "
+"para proporcionar límites de tamaño para las representaciones de diferentes "
+"tipos de objetos, y métodos que formatean tipos de objetos específicos."
 
-#: ../../library/reprlib.rst:81
+#: ../Doc/library/reprlib.rst:81
 msgid ""
 "This string is displayed for recursive references. It defaults to ``...``."
 msgstr ""
+"Esta cadena se muestra para referencias recursivas. El valor predeterminado "
+"es ``...``."
 
-#: ../../library/reprlib.rst:89
+#: ../Doc/library/reprlib.rst:89
 msgid ""
 "Depth limit on the creation of recursive representations.  The default is "
 "``6``."
-msgstr "再帰的な表現を作る場合の深さ制限。デフォルトは ``6`` です。"
+msgstr ""
+"Límite de profundidad en la creación de representaciones recursivas. El "
+"valor por defecto es ``6``."
 
-#: ../../library/reprlib.rst:100
+#: ../Doc/library/reprlib.rst:100
 msgid ""
 "Limits on the number of entries represented for the named object type.  The "
 "default is ``4`` for :attr:`maxdict`, ``5`` for :attr:`maxarray`, and  ``6`` "
 "for the others."
 msgstr ""
-"指定されたオブジェクト型に対するエントリ表現の数についての制限。 :attr:"
-"`maxdict` に対するデフォルトは ``4`` で、 :attr:`maxarray` は ``5`` 、その他"
-"に対しては ``6`` です。"
+"Límites en el número de entradas representadas por el tipo de objeto "
+"nombrado. El valor por defecto es ``4`` para :attr:`maxdict`, ``5`` para  :"
+"attr:`maxarray`, y ``6`` para los otros."
 
-#: ../../library/reprlib.rst:107
+#: ../Doc/library/reprlib.rst:107
 msgid ""
 "Maximum number of characters in the representation for an integer.  Digits "
 "are dropped from the middle.  The default is ``40``."
 msgstr ""
-"整数の表現のおける文字数の最大値。中央の数字が抜け落ちます。デフォルトは "
-"``40`` です。"
+"Máximo número de caracteres en la representación para un entero. Los dígitos "
+"son eliminados desde el medio. El valor por defecto es ``40``."
 
-#: ../../library/reprlib.rst:113
+#: ../Doc/library/reprlib.rst:113
 msgid ""
 "Limit on the number of characters in the representation of the string.  Note "
 "that the \"normal\" representation of the string is used as the character "
 "source: if escape sequences are needed in the representation, these may be "
 "mangled when the representation is shortened.  The default is ``30``."
 msgstr ""
-"文字列の表現における文字数の制限。文字列の\"通常の\"表現は文字の「元」として"
-"使われることに注意してください。表現にエスケープシーケンスが必要とされる場"
-"合、表現が短縮されるときにこれらのエスケープシーケンスの形式は崩れます。デ"
-"フォルトは ``30`` です。"
+"Límite en el número de caracteres en la representación de la cadena. Fíjese "
+"que la representación \"normal\" de la cadena  es la usada como la fuente de "
+"caracteres: si se necesitan secuencias de escape en la representación, estas "
+"pueden ser desordenadas cuando la representación se ha acortado. El valor "
+"por defecto es ``30``."
 
-#: ../../library/reprlib.rst:121
+#: ../Doc/library/reprlib.rst:121
 msgid ""
 "This limit is used to control the size of object types for which no specific "
 "formatting method is available on the :class:`Repr` object. It is applied in "
 "a similar manner as :attr:`maxstring`.  The default is ``20``."
 msgstr ""
-"この制限は :class:`Repr` オブジェクトに利用できる特定のフォーマットメソッドが"
-"ないオブジェクト型のサイズをコントロールするために使われます。 :attr:"
-"`maxstring` と同じようなやり方で適用されます。デフォルトは ``20`` です。"
+"Este límite es usado para controlar el tamaño de los tipos de objetos para "
+"los cuales no hay ningún método de formateo específico en el objeto :class:"
+"`Repr`. Se aplica de una manera similar a :attr:`maxstring`. El valor por "
+"defecto es ``20``."
 
-#: ../../library/reprlib.rst:128
+#: ../Doc/library/reprlib.rst:128
 msgid ""
 "The equivalent to the built-in :func:`repr` that uses the formatting imposed "
 "by the instance."
 msgstr ""
-"このインスタンスで設定されたフォーマットを使う、組み込み :func:`repr` と等価"
-"なもの。"
+"El equivalente a la función integrada :func:`repr` que usa el formateo  "
+"impuesto por la instancia."
 
-#: ../../library/reprlib.rst:134
+#: ../Doc/library/reprlib.rst:134
 msgid ""
 "Recursive implementation used by :meth:`.repr`.  This uses the type of *obj* "
 "to determine which formatting method to call, passing it *obj* and *level*.  "
@@ -176,14 +183,13 @@ msgid ""
 "formatting, with ``level - 1`` for the value of *level* in the recursive  "
 "call."
 msgstr ""
-":meth:`.repr` が使う再帰的な実装。\n"
-"*obj* の型を使ってどのフォーマットメソッドを呼び出すかを決定し、それに *obj* "
-"と *level* を渡します。\n"
-"再帰呼び出しにおいて *level* の値に対して ``level - 1`` を与える再帰的な"
-"フォーマットを実行するために、型に固有のメソッドは :meth:`repr1` を呼び出しま"
-"す。"
+"Implementación recursiva usada por :meth:`.repr`. Este usa el tipo de *obj* "
+"para determinar qué método invocar, pasándole *obj* y *level*. Los métodos "
+"de tipo específico deben invocar :meth:`repr1` para realizar formateo "
+"recursivo, con ``level - 1`` para el valor de *level* en la invocación "
+"recursiva."
 
-#: ../../library/reprlib.rst:143
+#: ../Doc/library/reprlib.rst:143
 msgid ""
 "Formatting methods for specific types are implemented as methods with a name "
 "based on the type name.  In the method name, **TYPE** is replaced by ``'_'."
@@ -191,25 +197,25 @@ msgid ""
 "meth:`repr1`. Type-specific methods which need to recursively format a value "
 "should call ``self.repr1(subobj, level - 1)``."
 msgstr ""
-"型名に基づく名前をもつメソッドとして、特定の型に対するフォーマットメソッドは"
-"実装されます。メソッド名では、 **TYPE** は ``'_'.join(type(obj).__name__."
-"split())`` に置き換えられます。これらのメソッドへのディスパッチは :meth:"
-"`repr1` によって処理されます。再帰的に値をフォーマットする必要がある型固有の"
-"メソッドは、 ``self.repr1(subobj, level - 1)`` を呼び出します。"
+"Métodos de formateo para tipos específicos son implementados como métodos "
+"con un nombre basado en el nombre del tipo. En el nombre del método, "
+"**TYPE** es reemplazado por ``'_'.join(type(obj).__name__.split())``. El "
+"envío a estos métodos es gestionado por :meth:`repr1`. Los métodos de tipo "
+"específico que necesitan formatear recursivamente un valor deben invocar "
+"``self.repr1(subobj, level - 1)``."
 
-#: ../../library/reprlib.rst:153
+#: ../Doc/library/reprlib.rst:153
 msgid "Subclassing Repr Objects"
-msgstr "Reprオブジェクトをサブクラス化する"
+msgstr "Subclasificando Objetos Repr"
 
-#: ../../library/reprlib.rst:155
+#: ../Doc/library/reprlib.rst:155
 msgid ""
 "The use of dynamic dispatching by :meth:`Repr.repr1` allows subclasses of :"
 "class:`Repr` to add support for additional built-in object types or to "
 "modify the handling of types already supported. This example shows how "
 "special support for file objects could be added::"
 msgstr ""
-"更なる組み込みオブジェクト型へのサポートを追加するため、あるいはすでにサポー"
-"トされている型の扱いを変更するために、 :meth:`Repr.repr1` による動的なディス"
-"パッチは :class:`Repr` のサブクラス化に対応しています。\n"
-"この例はファイルオブジェクトのための特別なサポートを追加する方法を示していま"
-"す::"
+"El uso de envíos dinámicos por :meth:`Repr.repr1` permite a las subclases "
+"de :class:`Repr` añadir soporte para tipos adicionales de objetos integrados "
+"o modificar el manejo de tipos ya soportados. Este ejemplo muestra como el "
+"soporte especial para objetos de tipo archivo puede ser añadido."

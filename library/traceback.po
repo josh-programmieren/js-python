@@ -1,37 +1,36 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:16+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-10-26 22:07+0200\n"
+"Last-Translator: Jaime Resano <resano.138736@e.unavarra.es>\n"
+"Language-Team: python-doc-es\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.2\n"
 
-#: ../../library/traceback.rst:2
+#: ../Doc/library/traceback.rst:2
 msgid ":mod:`traceback` --- Print or retrieve a stack traceback"
-msgstr ":mod:`traceback` --- スタックトレースの表示または取得"
+msgstr ":mod:`traceback` --- Imprimir o recuperar un seguimiento de pila"
 
-#: ../../library/traceback.rst:7
+#: ../Doc/library/traceback.rst:7
 msgid "**Source code:** :source:`Lib/traceback.py`"
-msgstr "**ソースコード:** :source:`Lib/traceback.py`"
+msgstr "**Código fuente:** :source:`Lib/traceback.py`"
 
-#: ../../library/traceback.rst:11
+#: ../Doc/library/traceback.rst:11
 msgid ""
 "This module provides a standard interface to extract, format and print stack "
 "traces of Python programs.  It exactly mimics the behavior of the Python "
@@ -39,42 +38,27 @@ msgid ""
 "print stack traces under program control, such as in a \"wrapper\" around "
 "the interpreter."
 msgstr ""
-"このモジュールは Python プログラムのスタックトレースを抽出し、書式を整え、表"
-"示するための標準インターフェースを提供します。モジュールがスタックトレースを"
-"表示するとき、Python インタープリタの動作を正確に模倣します。インタープリタの"
-"\"ラッパー\"の場合のように、プログラムの制御の元でスタックトレースを表示した"
-"いと思ったときに役に立ちます。"
+"Este módulo brinda una interfaz estándar para extraer, formatear y mostrar "
+"trazas de pilas de programas de Python. Dicho módulo copia el comportamiento "
+"del intérprete de Python cuando muestra una traza de pila. Es útil a la hora "
+"de querer mostrar trazas de pilas bajo el control del programa, como si de "
+"un *wrapper* alrededor del intérprete se tratara."
 
-#: ../../library/traceback.rst:19
+#: ../Doc/library/traceback.rst:19
 msgid ""
-"The module uses traceback objects --- these are objects of type :class:"
-"`types.TracebackType`, which are assigned to the ``__traceback__`` field of :"
-"class:`BaseException` instances."
+"The module uses traceback objects --- this is the object type that is stored "
+"in the :data:`sys.last_traceback` variable and returned as the third item "
+"from :func:`sys.exc_info`."
 msgstr ""
+"El módulo utiliza objetos *traceback* --- Este es el tipo de objeto que se "
+"almacena en la variable :data:`sys.last_traceback` y es retornada como el "
+"tercer elemento de :func:`sys.exc_info`."
 
-#: ../../library/traceback.rst:25
-msgid "Module :mod:`faulthandler`"
-msgstr ""
-
-#: ../../library/traceback.rst:25
-msgid ""
-"Used to dump Python tracebacks explicitly, on a fault, after a timeout, or "
-"on a user signal."
-msgstr ""
-
-#: ../../library/traceback.rst:27
-msgid "Module :mod:`pdb`"
-msgstr ""
-
-#: ../../library/traceback.rst:28
-msgid "Interactive source code debugger for Python programs."
-msgstr ""
-
-#: ../../library/traceback.rst:30
+#: ../Doc/library/traceback.rst:23
 msgid "The module defines the following functions:"
-msgstr "このモジュールには、以下の関数が定義されています:"
+msgstr "El módulo define las siguientes funciones:"
 
-#: ../../library/traceback.rst:34
+#: ../Doc/library/traceback.rst:28
 msgid ""
 "Print up to *limit* stack trace entries from traceback object *tb* (starting "
 "from the caller's frame) if *limit* is positive.  Otherwise, print the last "
@@ -83,57 +67,61 @@ msgid ""
 "stderr``; otherwise it should be an open file or file-like object to receive "
 "the output."
 msgstr ""
-"*limit* が正の場合、トレースバックオブジェクト *tb* から *limit* までのスタッ"
-"クトレース項目 (呼び出し側のフレームから開始) を出力します。\n"
-"そうでない場合、最新 ``abs(limit)`` 項目を出力します。\n"
-"*limit* が省略されるか ``None`` の場合、すべての項目が出力されます。\n"
-"*file* が省略されるか ``None`` の場合は、 ``sys.stderr`` へ出力されます。\n"
-"そうでない場合、 *file* は出力を受け取る開いたファイルまたは file-like オブ"
-"ジェクトでなければなりません。"
+"Muestra hasta *limit* entradas de trazas de pila desde el objeto *traceback* "
+"*tb* (empezando desde el marco de la llamada) si *limit* es positivo. De lo "
+"contrario, muestra las últimas ``abs(limit)`` entradas. Si *limit* es "
+"omitido o ``None``, todas las entradas se muestran. Si *file* es omitido o "
+"``None``, la salida va a ``sys.stderr``; de lo contrario, debería ser un "
+"archivo o un objeto de tipo similar a un archivo para recibir la salida."
 
-#: ../../library/traceback.rst:41 ../../library/traceback.rst:104
+#: ../Doc/library/traceback.rst:35 ../Doc/library/traceback.rst:98
 msgid "Added negative *limit* support."
-msgstr "負の *limit* がサポートされました。"
+msgstr "Soporte para *limit* negativo añadido."
 
-#: ../../library/traceback.rst:48
+#: ../Doc/library/traceback.rst:42
 msgid ""
 "Print exception information and stack trace entries from traceback object "
 "*tb* to *file*. This differs from :func:`print_tb` in the following ways:"
 msgstr ""
-"トレースバックオブジェクト *tb* から例外の情報とスタックトレースの項目を "
-"*file* に出力します。\n"
-"この関数は以下の点で :func:`print_tb` と異なります:"
+"Muestra información de excepciones y entradas de trazas de pila desde el "
+"objeto *traceback* *tb* a *file*. Esto difiere de :func:`print_tb` de las "
+"siguientes maneras:"
 
-#: ../../library/traceback.rst:52
+#: ../Doc/library/traceback.rst:46
 msgid ""
 "if *tb* is not ``None``, it prints a header ``Traceback (most recent call "
 "last):``"
 msgstr ""
-"*tb* が ``None`` でない場合ヘッダ ``Traceback (most recent call last):`` を出"
-"力します"
+"si *tb* no es ``None``, muestra una cabecera ``Traceback (most recent call "
+"last):``"
 
-#: ../../library/traceback.rst:55
+#: ../Doc/library/traceback.rst:49
 msgid "it prints the exception type and *value* after the stack trace"
 msgstr ""
+"imprime el tipo de excepción y *value* después del seguimiento de la pila"
 
-#: ../../library/traceback.rst:59
+#: ../Doc/library/traceback.rst:53
 msgid ""
 "if *type(value)* is :exc:`SyntaxError` and *value* has the appropriate "
 "format, it prints the line where the syntax error occurred with a caret "
 "indicating the approximate position of the error."
 msgstr ""
-"*type(value)* が :exc:`SyntaxError` であり、 *value* が適切な形式を持っていれ"
-"ば、そのエラーのおおよその位置を示すマークと共にシンタックスエラーが発生した"
-"行が表示されます。"
+"si *type(value)* es :exc:`SyntaxError` y *value* tiene el formato apropiado, "
+"muestra la línea donde el error sintáctico ha ocurrido con un cursor "
+"indicando la posición aproximada del error."
 
-#: ../../library/traceback.rst:63
+#: ../Doc/library/traceback.rst:57
 msgid ""
 "Since Python 3.10, instead of passing *value* and *tb*, an exception object "
 "can be passed as the first argument. If *value* and *tb* are provided, the "
 "first argument is ignored in order to provide backwards compatibility."
 msgstr ""
+"Desde Python 3.10, en lugar de pasar *value* y *tb*, se puede pasar un "
+"objeto de excepción como primer argumento. Si se proporcionan *value* y "
+"*tb*, el primer argumento se ignora para proporcionar compatibilidad con "
+"versiones anteriores."
 
-#: ../../library/traceback.rst:67
+#: ../Doc/library/traceback.rst:61
 msgid ""
 "The optional *limit* argument has the same meaning as for :func:`print_tb`. "
 "If *chain* is true (the default), then chained exceptions (the :attr:"
@@ -141,38 +129,43 @@ msgid ""
 "printed as well, like the interpreter itself does when printing an unhandled "
 "exception."
 msgstr ""
-"オプション引数 *limit* の意味は  :func:`print_tb` のものと同じです。\n"
-"*chain* が真の場合 (デフォルト)、連鎖した例外 (例外の :attr:`__cause__` か :"
-"attr:`__context__` 属性) も出力されます。\n"
-"これはインタープリタ自身が処理されていない例外を出力するときと同じです。"
+"El argumento opcional *limit* tiene el mismo significado que para :func:"
+"`print_tb`. Si *chain* es verdad (por defecto), entonces excepciones "
+"encadenadas (:attr:`__cause__` o :attr:`__context__` atributos de la "
+"excepción) también se imprimirán, como lo hace el propio intérprete al "
+"imprimir una excepción no controlada."
 
-#: ../../library/traceback.rst:73 ../../library/traceback.rst:166
+#: ../Doc/library/traceback.rst:67 ../Doc/library/traceback.rst:160
 msgid "The *etype* argument is ignored and inferred from the type of *value*."
-msgstr "引数 *etype* は無視され、 *value* の型から推論されます。"
+msgstr "El argumento *etype* es ignorado e infiere desde el tipo de *value*."
 
-#: ../../library/traceback.rst:76 ../../library/traceback.rst:153
+#: ../Doc/library/traceback.rst:70 ../Doc/library/traceback.rst:147
 msgid ""
 "The *etype* parameter has been renamed to *exc* and is now positional-only."
 msgstr ""
+"El parámetro *etype* ha cambiado de nombre a *exc* y ahora es solo "
+"posicional."
 
-#: ../../library/traceback.rst:83
+#: ../Doc/library/traceback.rst:77
 msgid ""
-"This is a shorthand for ``print_exception(sys.exception(), limit, file, "
+"This is a shorthand for ``print_exception(*sys.exc_info(), limit, file, "
 "chain)``."
 msgstr ""
+"Esto es un atajo para ``print_exception(*sys.exc_info(), limit, file, "
+"chain)``."
 
-#: ../../library/traceback.rst:89
+#: ../Doc/library/traceback.rst:83
 msgid ""
 "This is a shorthand for ``print_exception(sys.last_type, sys.last_value, sys."
 "last_traceback, limit, file, chain)``.  In general it will work only after "
 "an exception has reached an interactive prompt (see :data:`sys.last_type`)."
 msgstr ""
-"``print_exception(sys.last_type, sys.last_value, sys.last_traceback, limit, "
-"file, chain)`` の省略表現です。\n"
-"一般に、例外が対話的なプロンプトに達した後にのみ機能します (:data:`sys."
-"last_type` 参照)。"
+"Esto es un atajo para ``print_exception(sys.last_type, sys.last_value, sys."
+"last_traceback, limit, file, chain)``. En general, solo funciona después de "
+"que una excepción ha alcanzado un prompt interactivo (ver :data:`sys."
+"last_type`)."
 
-#: ../../library/traceback.rst:97
+#: ../Doc/library/traceback.rst:91
 msgid ""
 "Print up to *limit* stack trace entries (starting from the invocation point) "
 "if *limit* is positive.  Otherwise, print the last ``abs(limit)`` entries.  "
@@ -180,14 +173,14 @@ msgid ""
 "argument can be used to specify an alternate stack frame to start.  The "
 "optional *file* argument has the same meaning as for :func:`print_tb`."
 msgstr ""
-"*limit* が正の場合、最大 *limit* 個のスタックトレース項目 (呼び出し地点から開"
-"始) を出力します。 そうでない場合、最新の ``abs(limit)`` 個を出力します。 "
-"*limit* が省略されるか ``None`` の場合、すべての項目が出力されます。オプショ"
-"ンの *f* 引数は、開始するスタックフレームを指定するために用いることができま"
-"す。オプションの *file* 引数は :func:`print_tb` の *file* 引数と同様の意味を"
-"持っています。"
+"Muestra hasta *limit* entradas de trazas de pila (empezando desde el punto "
+"de invocación) si *limit* es positivo. De lo contrario, muestra las últimas "
+"``abs(limit)`` entradas. Si *limit* es omitido o ``None``, todas las "
+"entradas se muestran. El argumento opcional *f* puede ser usado para "
+"especificar un marco de pila alternativo para empezar. El argumento opcional "
+"*file* tiene el mismo significado que para :func:`print_tb`."
 
-#: ../../library/traceback.rst:110
+#: ../Doc/library/traceback.rst:104
 msgid ""
 "Return a :class:`StackSummary` object representing a list of \"pre-"
 "processed\" stack trace entries extracted from the traceback object *tb*.  "
@@ -200,18 +193,30 @@ msgid ""
 "`~FrameSummary.line` is a string with leading and trailing whitespace "
 "stripped; if the source is not available it is ``None``."
 msgstr ""
+"Retorna un objeto :class:`StackSummary` representando una lista de entradas "
+"de trazas de pila \"pre-procesadas\" extraídas del objeto *traceback* *tb*. "
+"Esto es útil para el formateo alternativo de trazas de pila. El argumento "
+"opcional *limit* tiene el mismo significado que para :func:`print_tb`. Una "
+"entrada de traza de pila \"pre-procesada\" es un objeto :class:"
+"`FrameSummary` que contiene los atributos :attr:`~FrameSummary.filename`, :"
+"attr:`~FrameSummary.lineno`, :attr:`~FrameSummary.name`, y :attr:"
+"`~FrameSummary.line` representando la información que normalmente es "
+"mostrada por una traza de pila. El atributo :attr:`~FrameSummary.line` es "
+"una cadena con espacios en blanco iniciales y finales *stripped*; si la "
+"fuente no está disponible, es ``None``."
 
-#: ../../library/traceback.rst:124
+#: ../Doc/library/traceback.rst:118
 msgid ""
 "Extract the raw traceback from the current stack frame.  The return value "
 "has the same format as for :func:`extract_tb`.  The optional *f* and *limit* "
 "arguments have the same meaning as for :func:`print_stack`."
 msgstr ""
-"現在のスタックフレームから生のトレースバックを取り出します。戻り値は :func:"
-"`extract_tb` と同じ形式です。オプションの *f* と *limit* 引数は :func:"
-"`print_stack` と同じ意味を持ちます。"
+"Extrae el seguimiento de pila crudo desde el marco de pila actual. El valor "
+"retornado tiene el mismo formato que para :func:`extract_tb`. Los argumentos "
+"opcionales *f* y *limit* tienen el mismo significado que para :func:"
+"`print_stack`."
 
-#: ../../library/traceback.rst:131
+#: ../Doc/library/traceback.rst:125
 msgid ""
 "Given a list of tuples or :class:`FrameSummary` objects as returned by :func:"
 "`extract_tb` or :func:`extract_stack`, return a list of strings ready for "
@@ -220,14 +225,15 @@ msgid ""
 "strings may contain internal newlines as well, for those items whose source "
 "text line is not ``None``."
 msgstr ""
-":func:`extract_tb` または :func:`extract_stack` が返すタプルのリストまたは :"
-"class:`FrameSummary` オブジェクトが与えられると、出力の準備を整えた文字列のリ"
-"ストを返します。結果として生じるリストの中の各文字列は、引数リストの中の同じ"
-"インデックスの要素に対応します。各文字列は末尾に改行が付いています。さらに、"
-"ソーステキスト行が ``None`` でないそれらの要素に対しては、文字列は内部に改行"
-"を含んでいるかもしれません。"
+"Dada una lista de tuplas u objetos :class:`FrameSummary` según lo retornado "
+"por :func:`extract_tb` o :func:`extract_stack`, retorna una lista de cadenas "
+"preparadas para ser mostradas. Cada cadena en la lista resultante "
+"corresponde con el elemento con el mismo índice en la lista de argumentos. "
+"Cada cadena finaliza en una nueva línea; las cadenas pueden contener nuevas "
+"líneas internas también, para aquellos elementos cuya línea de texto de "
+"origen no es ``None``."
 
-#: ../../library/traceback.rst:141
+#: ../Doc/library/traceback.rst:135
 msgid ""
 "Format the exception part of a traceback using an exception value such as "
 "given by ``sys.last_value``.  The return value is a list of strings, each "
@@ -237,15 +243,25 @@ msgid ""
 "The message indicating which exception occurred is the always last string in "
 "the list."
 msgstr ""
+"Formatee la parte de excepción de un rastreo utilizando un valor de "
+"excepción como el proporcionado por ``sys.last_value``. El valor de retorno "
+"es una lista de cadenas, cada una termina en una nueva línea. Normalmente, "
+"la lista contiene una sola cadena; sin embargo, para las excepciones :exc:"
+"`SyntaxError`, contiene varias líneas que (cuando se imprimen) muestran "
+"información detallada sobre dónde ocurrió el error de sintaxis. El mensaje "
+"que indica qué excepción ocurrió es siempre la última cadena de la lista."
 
-#: ../../library/traceback.rst:149
+#: ../Doc/library/traceback.rst:143
 msgid ""
 "Since Python 3.10, instead of passing *value*, an exception object can be "
 "passed as the first argument.  If *value* is provided, the first argument is "
 "ignored in order to provide backwards compatibility."
 msgstr ""
+"Desde Python 3,10, en lugar de pasar *value*, un objeto de excepción se "
+"puede pasar como primer argumento. Si se proporciona *value*, el primer "
+"argumento se ignora el fin de proporcionar compatibilidad hacia atrás."
 
-#: ../../library/traceback.rst:160
+#: ../Doc/library/traceback.rst:154
 msgid ""
 "Format a stack trace and the exception information.  The arguments  have the "
 "same meaning as the corresponding arguments to :func:`print_exception`.  The "
@@ -253,218 +269,246 @@ msgid ""
 "containing internal newlines.  When these lines are concatenated and "
 "printed, exactly the same text is printed as does :func:`print_exception`."
 msgstr ""
-"スタックトレースと例外情報を書式化します。引数は :func:`print_exception` の対"
-"応する引数と同じ意味を持ちます。戻り値は文字列のリストで、それぞれの文字列は"
-"改行で終わり、そのいくつかは内部に改行を含みます。これらの行が連結されて出力"
-"される場合は、厳密に :func:`print_exception` と同じテキストが出力されます。"
+"Formatea una traza de pila y la información de la excepción. Los argumentos "
+"tienen el mismo significado que los argumentos correspondientes a :func:"
+"`print_exception`. El valor retornado es una lista de cadenas, acabando cada "
+"una en una nueva línea y algunas contienen nuevas líneas internas. Cuando "
+"estas líneas son concatenadas y mostradas, exactamente el mismo texto es "
+"mostrado como hace :func:`print_exception`."
 
-#: ../../library/traceback.rst:169
+#: ../Doc/library/traceback.rst:163
 msgid ""
 "This function's behavior and signature were modified to match :func:"
 "`print_exception`."
 msgstr ""
+"El comportamiento y la firma de esta función se modificaron para coincidir "
+"con :func:`print_exception`."
 
-#: ../../library/traceback.rst:176
+#: ../Doc/library/traceback.rst:170
 msgid ""
 "This is like ``print_exc(limit)`` but returns a string instead of printing "
 "to a file."
 msgstr ""
-"これは、``print_exc(limit)`` に似ていますが、ファイルに出力する代わりに文字列"
-"を返します。"
+"Esto es como ``print_exc(limit)`` pero retorna una cadena en lugar de "
+"imprimirlo en un archivo."
 
-#: ../../library/traceback.rst:182
+#: ../Doc/library/traceback.rst:176
 msgid "A shorthand for ``format_list(extract_tb(tb, limit))``."
-msgstr "``format_list(extract_tb(tb, limit))`` の省略表現です。"
+msgstr "Un atajo para ``format_list(extract_tb(tb, limit))``."
 
-#: ../../library/traceback.rst:187
+#: ../Doc/library/traceback.rst:181
 msgid "A shorthand for ``format_list(extract_stack(f, limit))``."
-msgstr "``format_list(extract_stack(f, limit))`` の省略表現です。"
+msgstr "Un atajo para ``format_list(extract_stack(f, limit))``."
 
-#: ../../library/traceback.rst:191
+#: ../Doc/library/traceback.rst:185
 msgid ""
 "Clears the local variables of all the stack frames in a traceback *tb* by "
 "calling the :meth:`clear` method of each frame object."
 msgstr ""
-"各フレームオブジェクトの :meth:`clear` メソッドを呼んでトレースバック *tb* 内"
-"の全スタックフレームの局所変数を消去します。"
+"Limpia las variables locales de todos los marcos de pila en un seguimiento "
+"de pila *tb* llamando al método :meth:`clear` de cada objeto de marco."
 
-#: ../../library/traceback.rst:198
+#: ../Doc/library/traceback.rst:192
 msgid ""
 "Walk a stack following ``f.f_back`` from the given frame, yielding the frame "
 "and line number for each frame. If *f* is ``None``, the current stack is "
 "used. This helper is used with :meth:`StackSummary.extract`."
 msgstr ""
+"Recorre una pila siguiendo ``f.f_back`` desde el marco dado, produciendo el "
+"marco y el número de línea de cada marco. Si *f* es ``None``, la pila actual "
+"es usada. Este auxiliar es usado con :meth:`StackSummary.extract`."
 
-#: ../../library/traceback.rst:206
+#: ../Doc/library/traceback.rst:200
 msgid ""
 "Walk a traceback following ``tb_next`` yielding the frame and line number "
 "for each frame. This helper is used with :meth:`StackSummary.extract`."
 msgstr ""
+"Recorre un seguimiento de pila siguiendo ``tb_next`` produciendo el marco y "
+"el número de línea de cada marco. Este auxiliar es usado con :meth:"
+"`StackSummary.extract`."
 
-#: ../../library/traceback.rst:211
+#: ../Doc/library/traceback.rst:205
 msgid "The module also defines the following classes:"
-msgstr "このモジュールは以下のクラスも定義しています:"
+msgstr "El módulo también define las siguientes clases:"
 
-#: ../../library/traceback.rst:214
+#: ../Doc/library/traceback.rst:208
 msgid ":class:`TracebackException` Objects"
-msgstr ":class:`TracebackException` オブジェクト"
+msgstr "Objetos :class:`TracebackException`"
 
-#: ../../library/traceback.rst:218
+#: ../Doc/library/traceback.rst:212
 msgid ""
 ":class:`TracebackException` objects are created from actual exceptions to "
 "capture data for later printing in a lightweight fashion."
 msgstr ""
-":class:`TracebackException` オブジェクトは実際の例外から作られ、後の出力のた"
-"めに軽量な方法でデータをキャプチャします。"
+"Los objetos :class:`TracebackException` son creados a partir de excepciones "
+"reales para capturar datos para su posterior impresión de una manera ligera."
 
-#: ../../library/traceback.rst:223 ../../library/traceback.rst:283
+#: ../Doc/library/traceback.rst:217 ../Doc/library/traceback.rst:277
 msgid ""
 "Capture an exception for later rendering. *limit*, *lookup_lines* and "
 "*capture_locals* are as for the :class:`StackSummary` class."
 msgstr ""
-"後のレンダリングのために例外をキャプチャします。\n"
-"*limit*、*lookup_lines*、*capture_locals* は :class:`StackSummary` class のも"
-"のです。"
+"Captura una excepción para su posterior procesado. *limit*, *lookup_lines* y "
+"*capture_locals* son como para la clase :class:`StackSummary`."
 
-#: ../../library/traceback.rst:226
+#: ../Doc/library/traceback.rst:220
 msgid ""
 "If *compact* is true, only data that is required by :class:"
 "`TracebackException`'s ``format`` method is saved in the class attributes. "
 "In particular, the ``__context__`` field is calculated only if ``__cause__`` "
 "is ``None`` and ``__suppress_context__`` is false."
 msgstr ""
+"Si *compact* es verdadero, solo los datos requeridos por el método "
+"``format`` de :class:`TracebackException` se guardan en los atributos de "
+"clase. En particular, el campo ``__context__`` se calcula solo si "
+"``__cause__`` es ``None`` y ``__suppress_context__`` es falso."
 
-#: ../../library/traceback.rst:231 ../../library/traceback.rst:286
+#: ../Doc/library/traceback.rst:225 ../Doc/library/traceback.rst:280
 msgid ""
 "Note that when locals are captured, they are also shown in the traceback."
 msgstr ""
-"局所変数がキャプチャされたとき、それらはトレースバックに表示されることに注意"
-"してください。"
+"Tenga en cuenta que cuando se capturan locales, también se muestran en el "
+"rastreo."
 
-#: ../../library/traceback.rst:235
+#: ../Doc/library/traceback.rst:229
 msgid "A :class:`TracebackException` of the original ``__cause__``."
-msgstr "元々の ``__cause__`` の :class:`TracebackException`。"
+msgstr "Una clase :class:`TracebackException` del original ``__cause__``."
 
-#: ../../library/traceback.rst:239
+#: ../Doc/library/traceback.rst:233
 msgid "A :class:`TracebackException` of the original ``__context__``."
-msgstr "元々の ``__context__`` の :class:`TracebackException`。"
+msgstr "Una clase :class:`TracebackException` del original ``__context__``."
 
-#: ../../library/traceback.rst:243
+#: ../Doc/library/traceback.rst:237
 msgid "The ``__suppress_context__`` value from the original exception."
-msgstr "元々の例外からの ``__suppress_context__``。"
+msgstr "El valor ``__suppress_context__`` de la excepción original."
 
-#: ../../library/traceback.rst:247
+#: ../Doc/library/traceback.rst:241
 msgid ""
 "The ``__notes__`` value from the original exception, or ``None`` if the "
 "exception does not have any notes. If it is not ``None`` is it formatted in "
 "the traceback after the exception string."
 msgstr ""
+"Los valores de las ``__notes__`` de la excepción original, o ``None`` si la "
+"excepción no tiene ninguna nota. Si no es ``None`` se formatea en el rastreo "
+"después de la cadena de texto de la excepción."
 
-#: ../../library/traceback.rst:255
+#: ../Doc/library/traceback.rst:249
 msgid "A :class:`StackSummary` representing the traceback."
-msgstr "トレースバックを表す :class:`StackSummary`。"
+msgstr "Una clase :class:`StackSummary` representando el seguimiento de pila."
 
-#: ../../library/traceback.rst:259
+#: ../Doc/library/traceback.rst:253
 msgid "The class of the original traceback."
-msgstr "元々のトレースバックのクラス。"
+msgstr "La clase del seguimiento de pila original."
 
-#: ../../library/traceback.rst:263
+#: ../Doc/library/traceback.rst:257
 msgid "For syntax errors - the file name where the error occurred."
-msgstr "構文エラー用 - エラーが発生したファイルの名前。"
+msgstr ""
+"Para errores sintácticos - el nombre del archivo donde el error ha ocurrido."
 
-#: ../../library/traceback.rst:267
+#: ../Doc/library/traceback.rst:261
 msgid "For syntax errors - the line number where the error occurred."
-msgstr "構文エラー用 - エラーが発生した行番号。"
+msgstr ""
+"Para errores sintácticos - el número de línea donde el error ha ocurrido."
 
-#: ../../library/traceback.rst:271
+#: ../Doc/library/traceback.rst:265
 msgid "For syntax errors - the text where the error occurred."
-msgstr "構文エラー用 - エラーが発生したテクスト。"
+msgstr "Para errores sintácticos - el texto donde el error ha ocurrido."
 
-#: ../../library/traceback.rst:275
+#: ../Doc/library/traceback.rst:269
 msgid "For syntax errors - the offset into the text where the error occurred."
-msgstr "構文エラー用 - エラーが発生したテクストへのオフセット。"
+msgstr ""
+"Para errores sintácticos - el *offset* en el texto donde el error ha "
+"ocurrido."
 
-#: ../../library/traceback.rst:279
+#: ../Doc/library/traceback.rst:273
 msgid "For syntax errors - the compiler error message."
-msgstr "構文エラー用 - コンパイラのエラーメッセージ。"
+msgstr "Para errores sintácticos - el mensaje de error del compilador."
 
-#: ../../library/traceback.rst:290
+#: ../Doc/library/traceback.rst:284
 msgid ""
 "Print to *file* (default ``sys.stderr``) the exception information returned "
 "by :meth:`format`."
 msgstr ""
+"Imprime en *file* (``sys.stderr`` por defecto) la información de la "
+"excepción retornada por :meth:`format`."
 
-#: ../../library/traceback.rst:297
+#: ../Doc/library/traceback.rst:291
 msgid "Format the exception."
-msgstr "例外を書式化します。"
+msgstr "Formatea la excepción."
 
-#: ../../library/traceback.rst:299
+#: ../Doc/library/traceback.rst:293
 msgid ""
 "If *chain* is not ``True``, ``__cause__`` and ``__context__`` will not be "
 "formatted."
 msgstr ""
-"*chain* が ``True`` でない場合 ``__cause__`` と ``__context__`` は書式化され"
-"ません。"
+"Si *chain* no es ``True``, ``__cause__`` y ``__context__`` no serán "
+"formateados."
 
-#: ../../library/traceback.rst:302
+#: ../Doc/library/traceback.rst:296
 msgid ""
 "The return value is a generator of strings, each ending in a newline and "
 "some containing internal newlines. :func:`~traceback.print_exception` is a "
 "wrapper around this method which just prints the lines to a file."
 msgstr ""
-"返り値は文字列のジェネレータで、それぞれ改行で終わりますが、内部に改行を持つ"
-"ものもあります。\n"
-":func:`~traceback.print_exception` はこのメソッドのラッパで、単にファイルに出"
-"力します。"
+"El valor retornado es un generador de cadenas, donde cada una acaba en una "
+"nueva línea y algunas contienen nuevas líneas internas. :func:`~traceback."
+"print_exception` es un contenedor alrededor de este método que simplemente "
+"muestra las líneas de un archivo."
 
-#: ../../library/traceback.rst:306 ../../library/traceback.rst:320
+#: ../Doc/library/traceback.rst:300 ../Doc/library/traceback.rst:314
 msgid ""
 "The message indicating which exception occurred is always the last string in "
 "the output."
-msgstr "例外発生を指すメッセージは常に出力の最後の文字列です。"
+msgstr ""
+"El mensaje que indica qué excepción ocurrió siempre es la última cadena en "
+"la salida."
 
-#: ../../library/traceback.rst:311
+#: ../Doc/library/traceback.rst:305
 msgid "Format the exception part of the traceback."
-msgstr "トレースバックの例外部を書式化します。"
+msgstr "Formatea la parte de la excepción de un seguimiento de pila."
 
-#: ../../library/traceback.rst:313
+#: ../Doc/library/traceback.rst:307
 msgid "The return value is a generator of strings, each ending in a newline."
-msgstr "返り値は文字列のジェネレータで、それぞれ改行で終わります。"
+msgstr ""
+"El valor retornado es un generador de cadenas, donde cada una acaba en una "
+"nueva línea."
 
-#: ../../library/traceback.rst:315
+#: ../Doc/library/traceback.rst:309
 msgid ""
 "Normally, the generator emits a single string; however, for :exc:"
 "`SyntaxError` exceptions, it emits several lines that (when printed) display "
 "detailed information about where the syntax error occurred."
 msgstr ""
-"通常、ジェネレータが出す文字列は一つです。\n"
-"しかしながら :exc:`SyntaxError` 例外の場合、構文例外が発生した箇所の詳細な情"
-"報を表す行を複数出します。"
+"Normalmente, el generador emite una sola cadena, sin embargo, para "
+"excepciones :exc:`SyntaxError`, este emite múltiples líneas que (cuando son "
+"mostradas) imprimen información detallada sobre dónde ha ocurrido el error "
+"sintáctico."
 
-#: ../../library/traceback.rst:323
+#: ../Doc/library/traceback.rst:317
 msgid "Added the *compact* parameter."
-msgstr "*compact* 引数が追加されました。"
+msgstr "Se agregó el parámetro *compact*."
 
-#: ../../library/traceback.rst:328
+#: ../Doc/library/traceback.rst:322
 msgid ":class:`StackSummary` Objects"
-msgstr ":class:`StackSummary` オブジェクト"
+msgstr "Objetos :class:`StackSummary`"
 
-#: ../../library/traceback.rst:332
+#: ../Doc/library/traceback.rst:326
 msgid ""
 ":class:`StackSummary` objects represent a call stack ready for formatting."
 msgstr ""
-":class:`StackSummary` オブジェクトは書式化の準備ができているコールスタックを"
-"表します。"
+"Los objetos :class:`StackSummary` representan una pila de llamadas lista "
+"para formatear."
 
-#: ../../library/traceback.rst:338
+#: ../Doc/library/traceback.rst:332
 msgid ""
 "Construct a :class:`StackSummary` object from a frame generator (such as is "
 "returned by :func:`~traceback.walk_stack` or :func:`~traceback.walk_tb`)."
 msgstr ""
-"ジェネレータ (例えば :func:`~traceback.walk_stack` や :func:`~traceback."
-"walk_tb` が返すもの) から :class:`StackSummary` を構築します。"
+"Construye un objeto :class:`StackSummary` desde un generador de marcos (tal "
+"como es retornado por :func:`~traceback.walk_stack` o :func:`~traceback."
+"walk_tb`)."
 
-#: ../../library/traceback.rst:342
+#: ../Doc/library/traceback.rst:336
 msgid ""
 "If *limit* is supplied, only this many frames are taken from *frame_gen*. If "
 "*lookup_lines* is ``False``, the returned :class:`FrameSummary` objects will "
@@ -473,51 +517,75 @@ msgid ""
 "formatted). If *capture_locals* is ``True`` the local variables in each :"
 "class:`FrameSummary` are captured as object representations."
 msgstr ""
+"Si *limit* es suministrado, solo esta cantidad de cuadros son tomados de "
+"*frame_gen*. Si *lookup_lines* es ``False``, los objeto :class:"
+"`FrameSummary` retornados aún no han leído sus líneas, lo que hace que el "
+"costo de crear :class:`StackSummary` será más barato (lo que puede ser "
+"valioso si no se formatea). Si *capture_locals* es ``True``, las variables "
+"locales en cada :class:`FrameSummary` son capturadas como representaciones "
+"de objetos."
 
-#: ../../library/traceback.rst:352
+#: ../Doc/library/traceback.rst:346
 msgid ""
 "Construct a :class:`StackSummary` object from a supplied list of :class:"
 "`FrameSummary` objects or old-style list of tuples.  Each tuple should be a "
 "4-tuple with filename, lineno, name, line as the elements."
 msgstr ""
+"Construye un objeto :class:`StackSummary` desde una lista suministrada de "
+"objetos :class:`FrameSummary` o una lista antigua de tuplas. Cada tupa debe "
+"ser una 4-tupla con nombre de archivo, número de líneas, nombre, línea como "
+"los elementos."
 
-#: ../../library/traceback.rst:358
+#: ../Doc/library/traceback.rst:352
 msgid ""
 "Returns a list of strings ready for printing.  Each string in the resulting "
 "list corresponds to a single frame from the stack. Each string ends in a "
 "newline; the strings may contain internal newlines as well, for those items "
 "with source text lines."
 msgstr ""
+"Retorna una lista de cadenas lista para mostrarse. Cada cadena en la lista "
+"resultante corresponde a un único marco de la pila. Cada cadena termina en "
+"una nueva línea;las cadenas también pueden contener nuevas líneas internas, "
+"para aquellos elementos con líneas de texto fuente."
 
-#: ../../library/traceback.rst:363
+#: ../Doc/library/traceback.rst:357
 msgid ""
 "For long sequences of the same frame and line, the first few repetitions are "
 "shown, followed by a summary line stating the exact number of further "
 "repetitions."
 msgstr ""
+"Para secuencias largas del mismo marco y línea, se muestran las primeras "
+"repeticiones, seguidas de una línea de resumen que indica el número exacto "
+"de repeticiones adicionales."
 
-#: ../../library/traceback.rst:367
+#: ../Doc/library/traceback.rst:361
 msgid "Long sequences of repeated frames are now abbreviated."
-msgstr ""
+msgstr "Las secuencias largas de cuadros repetidos ahora se abrevian."
 
-#: ../../library/traceback.rst:372
+#: ../Doc/library/traceback.rst:366
 msgid ""
 "Returns a string for printing one of the frames involved in the stack. This "
 "method is called for each :class:`FrameSummary` object to be printed by :"
 "meth:`StackSummary.format`. If it returns ``None``, the frame is omitted "
 "from the output."
 msgstr ""
+"Retorna una cadena de texto para imprimir uno de los marcos implicados en la "
+"pila. Este método lo llama cada objeto :class:`FrameSummary` para ser "
+"imprimido por :meth:`StackSummary.format`. Si retorna ``None``, se omite el "
+"marco del resultado."
 
-#: ../../library/traceback.rst:381
+#: ../Doc/library/traceback.rst:375
 msgid ":class:`FrameSummary` Objects"
-msgstr ":class:`FrameSummary` オブジェクト"
+msgstr "Objetos :class:`FrameSummary`"
 
-#: ../../library/traceback.rst:385
+#: ../Doc/library/traceback.rst:379
 msgid ""
 "A :class:`FrameSummary` object represents a single frame in a traceback."
 msgstr ""
+"Los objetos :class:`FrameSummary` representan un único marco en el "
+"seguimiento de pila."
 
-#: ../../library/traceback.rst:389
+#: ../Doc/library/traceback.rst:383
 msgid ""
 "Represent a single frame in the traceback or stack that is being formatted "
 "or printed. It may optionally have a stringified version of the frames "
@@ -529,39 +597,52 @@ msgid ""
 "supplied the variable representations are stored in the summary for later "
 "display."
 msgstr ""
+"Representa un único marco en el seguimiento de pila o pila que es formateado "
+"o mostrado. Opcionalmente, puede tener una versión en cadena de los marcos "
+"locales incluidos en él. Si *lookup_line* es ``False``, el código fuente no "
+"se busca hasta que :class:`FrameSummary` tenga el atributo :attr:"
+"`~FrameSummary.line` accedido (lo que también sucede cuando lo conviertes en "
+"una tupla). :attr:`~FrameSummary.line` puede proporcionarse directamente y "
+"evitará que se realicen búsquedas de línea. *locals* es un diccionario de "
+"variables locales opcional y, si se proporciona, las representaciones de "
+"variables se almacenan en el resumen para su posterior visualización."
 
-#: ../../library/traceback.rst:402
+#: ../Doc/library/traceback.rst:396
 msgid "Traceback Examples"
-msgstr "トレースバックの例"
+msgstr "Ejemplos de seguimiento de pila"
 
-#: ../../library/traceback.rst:404
+#: ../Doc/library/traceback.rst:398
 msgid ""
 "This simple example implements a basic read-eval-print loop, similar to (but "
 "less useful than) the standard Python interactive interpreter loop.  For a "
 "more complete implementation of the interpreter loop, refer to the :mod:"
 "`code` module. ::"
 msgstr ""
-"この簡単な例では基本的な read-eval-print ループを実装しています。標準的な "
-"Python の対話インタープリタループに似ていますが、 Python のものより便利ではあ"
-"りません。インタープリタループのより完全な実装については、 :mod:`code` モ"
-"ジュールを参照してください。 ::"
+"Este ejemplo sencillo implementa un bucle de lectura, evaluación e impresión "
+"básico, similar a (pero menos útil) el bucle del intérprete interactivo "
+"estándar de Python. Para una implementación más completa del bucle del "
+"intérprete, ir al módulo :mod:`code` ::"
 
-#: ../../library/traceback.rst:426
+#: ../Doc/library/traceback.rst:420
 msgid ""
 "The following example demonstrates the different ways to print and format "
 "the exception and traceback:"
-msgstr "次の例は例外とトレースバックの出力並びに形式が異なることを示します:"
+msgstr ""
+"El siguiente ejemplo demuestra las diferentes manera para mostrar y "
+"formatear la excepción y el seguimiento de pila:"
 
-#: ../../library/traceback.rst:461
+#: ../Doc/library/traceback.rst:455
 msgid "The output for the example would look similar to this:"
-msgstr "この例の出力は次のようになります:"
+msgstr "La salida para el ejemplo podría ser similar a esto:"
 
-#: ../../library/traceback.rst:503
+#: ../Doc/library/traceback.rst:497
 msgid ""
 "The following example shows the different ways to print and format the "
 "stack::"
-msgstr "次の例は、スタックの print と format の違いを示しています::"
+msgstr ""
+"El siguiente ejemplo muestra las diferentes maneras de imprimir y formatear "
+"la pila::"
 
-#: ../../library/traceback.rst:529
+#: ../Doc/library/traceback.rst:523
 msgid "This last example demonstrates the final few formatting functions:"
-msgstr "最後の例は、残りの幾つかの関数のデモをします:"
+msgstr "Este último ejemplo demuestra las últimas funciones de formateo:"

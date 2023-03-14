@@ -1,42 +1,40 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org / https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:07+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2019-05-06 11:59-0400\n"
+"PO-Revision-Date: 2020-10-04 20:26+0200\n"
+"Language-Team: python-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 2.4.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
 
-#: ../../library/i18n.rst:5
+#: ../Doc/library/i18n.rst:5
 msgid "Internationalization"
-msgstr "国際化"
+msgstr "Internacionalización"
 
-#: ../../library/i18n.rst:7
+#: ../Doc/library/i18n.rst:7
 msgid ""
 "The modules described in this chapter help you write software that is "
 "independent of language and locale by providing mechanisms for selecting a "
 "language to be used in  program messages or by tailoring output to match "
 "local conventions."
 msgstr ""
-"この章で解説されるモジュールは、プログラムのメッセージで使用される言語を選択"
-"したり、または出力を地域の習慣に従って変更するメカニズムを提供して、言語や地"
-"域に依存しないソフトの開発を手助けします。"
+"Los módulos descritos en este capítulo te ayudan a escribir software que es "
+"independiente del idioma y lugar al proporcionar mecanismos para seleccionar "
+"un idioma a ser usado en  mensajes de programas o adaptar la salida para que "
+"coincida con las convenciones locales."
 
-#: ../../library/i18n.rst:12
+#: ../Doc/library/i18n.rst:12
 msgid "The list of modules described in this chapter is:"
-msgstr "この章で解説されるモジュールのリスト:"
+msgstr "La lista de módulos descritos en este capítulo es:"

@@ -1,149 +1,169 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 00:53+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2021-10-16 21:42+0200\n"
+"PO-Revision-Date: 2021-08-12 20:30+0200\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../howto/pyporting.rst:5
+#: ../Doc/howto/pyporting.rst:5
 msgid "Porting Python 2 Code to Python 3"
-msgstr "Python 2 から Python 3 への移植"
+msgstr "Portando código de Python 2 a Python 3"
 
-#: ../../howto/pyporting.rst:0
+#: ../Doc/howto/pyporting.rst
 msgid "author"
-msgstr "author"
+msgstr "autor"
 
-#: ../../howto/pyporting.rst:7
+#: ../Doc/howto/pyporting.rst:7
 msgid "Brett Cannon"
 msgstr "Brett Cannon"
 
-#: ../../howto/pyporting.rstNone
 msgid "Abstract"
-msgstr "概要"
+msgstr "Resumen"
 
-#: ../../howto/pyporting.rst:11
+#: ../Doc/howto/pyporting.rst:11
 msgid ""
 "With Python 3 being the future of Python while Python 2 is still in active "
 "use, it is good to have your project available for both major releases of "
 "Python. This guide is meant to help you figure out how best to support both "
 "Python 2 & 3 simultaneously."
 msgstr ""
-"現在は Python 3 が最新版の Python ですが、 Python 2 もまだ活発に利用されてい"
-"ます。なのであなたのプロジェクトを両方のメジャーリリースにおいて動作可能にし"
-"ておくのがよいでしょう。このガイドでは、 Python 2 と 3 を同時にサポートするに"
-"はどうすればよいかを解説します。"
+"Dado que Python 3 es el futuro de Python mientras Python 2 todavía está en "
+"uso activo, es bueno tener su proyecto disponible para ambas versiones "
+"principales de Python. Esta guía está diseñada para ayudarle a averiguar la "
+"mejor manera de admitir Python 2 y 3 simultáneamente."
 
-#: ../../howto/pyporting.rst:16
+#: ../Doc/howto/pyporting.rst:16
 msgid ""
 "If you are looking to port an extension module instead of pure Python code, "
 "please see :ref:`cporting-howto`."
 msgstr ""
-"もしあなたが標準 Python ライブラリではなく拡張ライブラリでの移植手段を探して"
-"いるならば :ref:`cporting-howto` を参照してください。"
+"Si está buscando portar un módulo de extensión en lugar de código Python "
+"puro, consulte :ref:`cporting-howto`."
 
-#: ../../howto/pyporting.rst:19
+#: ../Doc/howto/pyporting.rst:19
 msgid ""
 "If you would like to read one core Python developer's take on why Python 3 "
 "came into existence, you can read Nick Coghlan's `Python 3 Q & A`_ or Brett "
 "Cannon's `Why Python 3 exists`_."
 msgstr ""
-"コア開発者の視点から Python3 が世に出てきたが理由を読みたい場合は、 Nick "
-"Coghlan の `Python 3 Q & A`_ または `Brett Cannonによる `Why Python 3 "
-"exists`_ がおすすめです。"
+"Si desea leer la opinión de un desarrollador central de Python sobre por qué "
+"Python 3 nació, puede leer las `Python 3 Q & A`_ de Nick Coghlan o el "
+"artículo de Brett Cannon `Why Python 3 exists`_."
 
-#: ../../howto/pyporting.rst:24
+#: ../Doc/howto/pyporting.rst:24
 msgid ""
 "For help with porting, you can view the archived python-porting_ mailing "
 "list."
 msgstr ""
+"Para obtener ayuda con la portabilidad, puede ver la lista de correo "
+"archivada de python-porting_."
 
-#: ../../howto/pyporting.rst:27
+#: ../Doc/howto/pyporting.rst:27
 msgid "The Short Explanation"
-msgstr "短い説明"
+msgstr "La breve explicación"
 
-#: ../../howto/pyporting.rst:29
+#: ../Doc/howto/pyporting.rst:29
 msgid ""
 "To make your project be single-source Python 2/3 compatible, the basic steps "
 "are:"
 msgstr ""
-"あなたのプロジェクトを、単一ソースで Python 2/3 両方に対応させる基本的なス"
-"テップは次のとおりです。"
+"Para que su proyecto sea compatible con Python 2/3 de una sola fuente, los "
+"pasos básicos son:"
 
-#: ../../howto/pyporting.rst:32
+#: ../Doc/howto/pyporting.rst:32
 msgid "Only worry about supporting Python 2.7"
-msgstr "Python 2.7 だけをサポートすることに気を配ってください。"
+msgstr "Sólo preocúpate por admitir Python 2.7"
 
-#: ../../howto/pyporting.rst:33
+#: ../Doc/howto/pyporting.rst:33
 msgid ""
 "Make sure you have good test coverage (coverage.py_ can help; ``python -m "
 "pip install coverage``)"
 msgstr ""
+"Asegúrese de tener una buena cobertura de prueba (coberturas.py_ puede "
+"ayudar; ``python -m pip install coverage``)"
 
-#: ../../howto/pyporting.rst:35 ../../howto/pyporting.rst:122
+#: ../Doc/howto/pyporting.rst:35 ../Doc/howto/pyporting.rst:122
 msgid "Learn the differences between Python 2 & 3"
-msgstr "Python 2 と 3 の違いを学びましょう。"
+msgstr "Aprende las diferencias entre Python 2 & 3"
 
-#: ../../howto/pyporting.rst:36
+#: ../Doc/howto/pyporting.rst:36
 msgid ""
 "Use Futurize_ (or Modernize_) to update your code (e.g. ``python -m pip "
 "install future``)"
 msgstr ""
+"Utilice Futurize_ (o Modernize_) para actualizar su código (por ejemplo, "
+"``python -m pip install future``)"
 
-#: ../../howto/pyporting.rst:37
+#: ../Doc/howto/pyporting.rst:37
 msgid ""
 "Use Pylint_ to help make sure you don't regress on your Python 3 support "
 "(``python -m pip install pylint``)"
 msgstr ""
+"Use Pylint_ para asegurarse de que no retrocede en su compatibilidad con "
+"Python 3 (``python -m pip install pylint``)"
 
-#: ../../howto/pyporting.rst:39
+#: ../Doc/howto/pyporting.rst:39
 msgid ""
 "Use caniusepython3_ to find out which of your dependencies are blocking your "
 "use of Python 3 (``python -m pip install caniusepython3``)"
 msgstr ""
+"Use caniusepython3_ para averiguar cuáles de sus dependencias están "
+"bloqueando el uso de Python 3 (``python -m pip install caniusepython3``)"
 
-#: ../../howto/pyporting.rst:41
+#: ../Doc/howto/pyporting.rst:41
 msgid ""
 "Once your dependencies are no longer blocking you, use continuous "
 "integration to make sure you stay compatible with Python 2 & 3 (tox_ can "
 "help test against multiple versions of Python; ``python -m pip install tox``)"
 msgstr ""
+"Una vez que sus dependencias ya no lo bloqueen, use la integración continua "
+"para asegurarse de que sigue siendo compatible con Python 2 y 3 (tox_ puede "
+"ayudar a probar contra múltiples versiones de Python; ``python -m pip "
+"install tox``)"
 
-#: ../../howto/pyporting.rst:44
+#: ../Doc/howto/pyporting.rst:44
 msgid ""
 "Consider using optional static type checking to make sure your type usage "
 "works in both Python 2 & 3 (e.g. use mypy_ to check your typing under both "
 "Python 2 & Python 3; ``python -m pip install mypy``)."
 msgstr ""
+"Considere usar la verificación de tipo estática opcional para asegurarse de "
+"que su uso de tipo funcione tanto en Python 2 como en 3 (por ejemplo, use "
+"mypy_ para verificar su escritura en Python 2 y Python 3; ``python -m pip "
+"install mypy``)."
 
-#: ../../howto/pyporting.rst:50
+#: ../Doc/howto/pyporting.rst:50
 msgid ""
 "Note: Using ``python -m pip install`` guarantees that the ``pip`` you invoke "
 "is the one installed for the Python currently in use, whether it be a system-"
 "wide ``pip`` or one installed within a :ref:`virtual environment <tut-venv>`."
 msgstr ""
+"Nota: El uso de ``python -m pip install`` garantiza que el ``pip`` que "
+"invoca es el que está instalado para el Python actualmente en uso, ya sea un "
+"``pip`` de todo el sistema o uno instalado dentro de un :ref:`entorno "
+"virtual <tut-venv>`."
 
-#: ../../howto/pyporting.rst:56
+#: ../Doc/howto/pyporting.rst:56
 msgid "Details"
-msgstr "詳細"
+msgstr "Detalles"
 
-#: ../../howto/pyporting.rst:58
+#: ../Doc/howto/pyporting.rst:58
 msgid ""
 "A key point about supporting Python 2 & 3 simultaneously is that you can "
 "start **today**! Even if your dependencies are not supporting Python 3 yet "
@@ -151,14 +171,14 @@ msgid ""
 "3. Most changes required to support Python 3 lead to cleaner code using "
 "newer practices even in Python 2 code."
 msgstr ""
-"Python 2 と 3 の同時サポートについてのキーポイントのひとつは、 **今日から** "
-"開始出来る、というものです。たとえあなたが持っている依存物がまだ Python 3 を"
-"サポートしていなくとも、それはあなたのコードを Python 3 サポートのために **今"
-"すぐ** 現代化出来ないことを意味するのではありません。Python 3 サポートのため"
-"に必要なほとんどの変更は、Python 2 コード内にあっても新しいプラクティスを伴う"
-"明快なコードに導いてくれます。"
+"Un punto clave sobre el soporte de Python 2 & 3 simultáneamente es que se "
+"puede empezar **hoy**! Incluso si sus dependencias no son compatibles con "
+"Python 3 todavía eso no significa que no puede modernizar el código "
+"**ahora** para admitir Python 3. La mayoría de los cambios necesarios para "
+"admitir Python 3 conducen a código más limpio utilizando prácticas más "
+"recientes incluso en código Python 2."
 
-#: ../../howto/pyporting.rst:64
+#: ../Doc/howto/pyporting.rst:64
 msgid ""
 "Another key point is that modernizing your Python 2 code to also support "
 "Python 3 is largely automated for you. While you might have to make some API "
@@ -166,26 +186,26 @@ msgid ""
 "lower-level work is now mostly done for you and thus can at least benefit "
 "from the automated changes immediately."
 msgstr ""
-"もうひとつのキーポイントは、あなたの Python 2 コードの Python 3 サポートを加"
-"える現代化は、あなたのために大部分は自動化されているということです。Python 3 "
-"によるテキストデータとバイナリデータの明確な区別のおかげで、あなたはいくつか"
-"の API に決断をしなければならないかもしれない一方で、下位レベルの仕事は今やほ"
-"とんど済んでいて、それゆえに最低でもその自動化された修正からの恩恵をすぐさま"
-"受けることが出来ます。"
+"Otro punto clave es que la modernización del código de Python 2 para que "
+"también admita Python 3 está en gran medida automatizada para usted. Si bien "
+"es posible que tenga que tomar algunas decisiones de API gracias a python 3 "
+"aclarando los datos de texto frente a los datos binarios, el trabajo de "
+"nivel inferior ahora se realiza principalmente por usted y, por lo tanto, al "
+"menos puede beneficiarse de los cambios automatizados inmediatamente."
 
-#: ../../howto/pyporting.rst:70
+#: ../Doc/howto/pyporting.rst:70
 msgid ""
 "Keep those key points in mind while you read on about the details of porting "
 "your code to support Python 2 & 3 simultaneously."
 msgstr ""
-"Python 2 と 3 の同時サポートのために、あなたのコードを移植するための以降の詳"
-"細を読む際には、これらのキーポイントを心に留めておいてください。"
+"Tenga en cuenta esos puntos clave mientras lee sobre los detalles de la "
+"migración del código para admitir Python 2 & 3 simultáneamente."
 
-#: ../../howto/pyporting.rst:75
+#: ../Doc/howto/pyporting.rst:75
 msgid "Drop support for Python 2.6 and older"
-msgstr "Python 2.6 とそれ以前のサポートを落とす"
+msgstr "Compatibilidad con Python 2.6 y versiones anteriores"
 
-#: ../../howto/pyporting.rst:77
+#: ../Doc/howto/pyporting.rst:77
 msgid ""
 "While you can make Python 2.5 work with Python 3, it is **much** easier if "
 "you only have to work with Python 2.7. If dropping Python 2.5 is not an "
@@ -193,8 +213,14 @@ msgid ""
 "simultaneously (``python -m pip install six``). Do realize, though, that "
 "nearly all the projects listed in this HOWTO will not be available to you."
 msgstr ""
+"Si bien puede hacer que Python 2.5 funcione con Python 3, es **mucho** más "
+"fácil si solo tiene que trabajar con Python 2.7. Si eliminar Python 2.5 no "
+"es una opción, entonces el proyecto six_ puede ayudarlo a admitir Python 2.5 "
+"y 3 simultáneamente (``python -m pip install six``). Sin embargo, tenga en "
+"cuenta que casi todos los proyectos enumerados en este COMO no estarán "
+"disponibles para usted."
 
-#: ../../howto/pyporting.rst:83
+#: ../Doc/howto/pyporting.rst:83
 msgid ""
 "If you are able to skip Python 2.5 and older, then the required changes to "
 "your code should continue to look and feel like idiomatic Python code. At "
@@ -202,13 +228,13 @@ msgid ""
 "or have to import a function instead of using a built-in one, but otherwise "
 "the overall transformation should not feel foreign to you."
 msgstr ""
-"Python 2.5 以下のサポートをスキップ出来るならば、あなたのコードに必要な変更"
-"は Python の常套句のような外観と雰囲気を壊すべきではありません。最悪の場合あ"
-"るインスタンス内のメソッドの代わりに関数を使う必要があったり、ビルトインを使"
-"う代わりに関数をインポートする必要があるでしょうが、そうしないならば、全体通"
-"した変換はあなたにとって異質に感じさせないものに違いありません。"
+"Si puede omitir Python 2.5 y versiones anteriores, los cambios necesarios en "
+"el código deben seguir pareciendo código Python idiomático. En el peor de "
+"los casos tendrá que utilizar una función en lugar de un método en algunos "
+"casos o tendrá que importar una función en lugar de usar una integrada, pero "
+"de lo contrario la transformación general no debería sentirse ajena a usted."
 
-#: ../../howto/pyporting.rst:89
+#: ../Doc/howto/pyporting.rst:89
 msgid ""
 "But you should aim for only supporting Python 2.7. Python 2.6 is no longer "
 "freely supported and thus is not receiving bugfixes. This means **you** will "
@@ -218,21 +244,23 @@ msgid ""
 "simply be easier for you if you only support the versions of Python that you "
 "have to support."
 msgstr ""
-"ですが、Python 2.6 以上と言わず Python 2.7 を目標にしてください。Python 2.6 "
-"はもう積極的にはサポートされていません。これは **あなたが** Python 2.6 に関係"
-"するあらゆる問題に取り組まなければならないことを意味します。この HOWTO で言及"
-"しているいくつかのツールも Python 2.6 をサポートしていません (Pylint_ など)"
-"し、時につれこのようなことはもっと当たり前になってくるでしょう。2.7 以上だけ"
-"をサポートするということは、話をより簡単にしてくれます。"
+"Pero usted debe apuntar a sólo apoyar Python 2.7. Python 2.6 ya no se admite "
+"libremente y, por lo tanto, no recibe correcciones de errores. Esto "
+"significa que **usted** tendrá que solucionar cualquier problema que "
+"encuentre con Python 2.6. También hay algunas herramientas mencionadas en "
+"este HOWTO que no son compatibles con Python 2.6 (por ejemplo, Pylint_), y "
+"esto se volverá más común a medida que pasa el tiempo. Simplemente será más "
+"fácil para usted si sólo admite las versiones de Python que tiene que "
+"admitir."
 
-#: ../../howto/pyporting.rst:98
+#: ../Doc/howto/pyporting.rst:98
 msgid ""
 "Make sure you specify the proper version support in your ``setup.py`` file"
 msgstr ""
-"あなたの ``setup.py`` ファイルに、相応しいサポートバージョンを明記することを"
-"忘れないこと"
+"Asegúrese de especificar el soporte de versión adecuado en su archivo "
+"``setup.py``"
 
-#: ../../howto/pyporting.rst:100
+#: ../Doc/howto/pyporting.rst:100
 msgid ""
 "In your ``setup.py`` file you should have the proper `trove classifier`_ "
 "specifying what versions of Python you support. As your project does not "
@@ -241,18 +269,19 @@ msgid ""
 "minor version of Python that you do support, e.g. ``Programming Language :: "
 "Python :: 2.7``."
 msgstr ""
-"``setup.py`` ファイルに、あなたがサポートする Python バージョンを `Trove 分"
-"類 <trove classifier>`_ で正しく明記すべきです。あなたのプロジェクトはまだ "
-"Python 3 をサポートしていないので、少なくとも ``Programming Language :: "
-"Python :: 2 :: Only`` と明記すべきです。理想的には Python のメジャー/マイナー"
-"バージョンも指定すべきです。例えば ``Programming Language :: Python :: 2.7`` "
-"のように。"
+"En su archivo ``setup.py`` debe tener el `trove classifier`_ adecuado "
+"especificando qué versiones de Python admite. Como su proyecto no es "
+"compatible con Python 3, al menos debe tener ``Programming Language :: "
+"Python :: 2 :: Only`` especificado. Idealmente también debe especificar cada "
+"versión principal/menor de Python que admita, por ejemplo, ``Programming "
+"Language :: Python :: 2.7``."
 
-#: ../../howto/pyporting.rst:109
+#: ../Doc/howto/pyporting.rst:109
 msgid "Have good test coverage"
-msgstr "良いテストカバレッジを確保する。"
+msgstr "Tener una buena cobertura de prueba"
 
-#: ../../howto/pyporting.rst:111
+#: ../Doc/howto/pyporting.rst:111
+#, python-format
 msgid ""
 "Once you have your code supporting the oldest version of Python 2 you want "
 "it to, you will want to make sure your test suite has good coverage. A good "
@@ -263,16 +292,17 @@ msgid ""
 "get better than 90% coverage). If you don't already have a tool to measure "
 "test coverage then coverage.py_ is recommended."
 msgstr ""
-"そうしたい一番古いバージョンの Python 2 をサポート出来ているならば、あなたの"
-"テストスイートが十分な網羅性かを確認したいでしょう。あなたのコードをツールで"
-"書き換えた後に現れるあらゆる失敗が実際にはツールのバグで、あなたのコードのバ"
-"グではないとするのに十分なだけの確信をあなたのテストスイートに持ちたいなら"
-"ば、良い経験則がこれです。目標とする数値で言えば、80% 以上の網羅性を目指して"
-"みてください (そしてカバレッジ 90% を越えるのが難しかったとしても気に病む必要"
-"はありません)。テストカバレッジの計測ツールを手持ちでないならば、 coverage."
-"py_ がお奨めです。"
+"Una vez que tenga su código compatible con la versión más antigua de Python "
+"2 que desee, querrá asegurarse de que su conjunto de pruebas tenga una buena "
+"cobertura. Una buena regla general es que si desea tener la suficiente "
+"confianza en su conjunto de pruebas, cualquier falla que aparezca después de "
+"que las herramientas reescriban su código son errores reales en las "
+"herramientas y no en su código. Si desea un número al que apuntar, intente "
+"obtener una cobertura superior al 80% (y no se sienta mal si le resulta "
+"difícil obtener una cobertura superior al 90%). Si aún no tiene una "
+"herramienta para medir la cobertura de la prueba, se recomienda cover.py_."
 
-#: ../../howto/pyporting.rst:124
+#: ../Doc/howto/pyporting.rst:124
 msgid ""
 "Once you have your code well-tested you are ready to begin porting your code "
 "to Python 3! But to fully understand how your code is going to change and "
@@ -282,12 +312,20 @@ msgid ""
 "each release of Python 3 and the `Porting to Python 3`_ book (which is free "
 "online). There is also a handy `cheat sheet`_ from the Python-Future project."
 msgstr ""
+"Una vez que tenga su código bien probado, ¡está listo para comenzar a migrar "
+"su código a Python 3! Pero para comprender completamente cómo va a cambiar "
+"el código y qué desea tener en cuenta mientras codifica, querrá aprender qué "
+"cambios produce Python 3 en términos de Python 2. Típicamente las dos "
+"mejores maneras de hacer eso es leer la documentación :ref:`\"What's New\" "
+"<whatsnew-index>` para cada versión de Python 3 y el libro `Porting to "
+"Python 3`_ (que es gratis en línea). También hay una práctica `cheat sheet`_ "
+"del proyecto Python-Future.</whatsnew-index>."
 
-#: ../../howto/pyporting.rst:134
+#: ../Doc/howto/pyporting.rst:134
 msgid "Update your code"
-msgstr "コードをアップデートする。"
+msgstr "Actualiza tu código"
 
-#: ../../howto/pyporting.rst:136
+#: ../Doc/howto/pyporting.rst:136
 msgid ""
 "Once you feel like you know what is different in Python 3 compared to Python "
 "2, it's time to update your code! You have a choice between two tools in "
@@ -301,22 +339,20 @@ msgid ""
 "future, it might be best to consider Futurize to begin adjusting to any new "
 "practices that Python 3 introduces which you are not accustomed to yet."
 msgstr ""
-"Python 2 と比較した Python 3 の違いがわかってきたら、いよいよあなたのコードを"
-"更新するそのときです!\n"
-"あなたのコードの移植の自動化ツールとしては 2 つの選択肢があります: Futurize_ "
-"と Modernize_ です。\n"
-"どちらのツールが良いかはあなたのコードをどのくらい Python 3 寄りに近付けたい"
-"かによります。\n"
-"Futurize_ は、例えば Python のメジャーバージョン間の意味論的な等価性を持つよ"
-"うに Python 3 からバックポートされた ``bytes`` 型のように、Python 2 に取り込"
-"まれた Python 3 のイディオムと慣例を積極的に使います。\n"
-"他方 Modernize_ はより保守的で、互換性保持を six_ によって提供することで、 "
-"Python 2/3 のサブセットであることを目標にします。\n"
-"Python 3 は確実にやってくる未来なので、 Python 3 で導入された、まだ慣れていな"
-"い新しい慣例に合わせ始めるためには Futurize を検討するのが最良かもしれませ"
-"ん。"
+"Una vez que sientas que sabes lo que es diferente en Python 3 en comparación "
+"con Python 2, ¡es hora de actualizar tu código! Puede elegir entre dos "
+"herramientas para migrar el código automáticamente: Futurize_ y Modernize_. "
+"La herramienta que elija dependerá de la cantidad similar a Python 3 que "
+"desea que sea el código. Futurize_ hace todo lo posible para que Python 3 "
+"modismos y prácticas existan en Python 2, por ejemplo, backporting el tipo "
+"``bytes`` de Python 3 para que tenga paridad semántica entre las versiones "
+"principales de Python. Modernize_, por otro lado, es más conservador y se "
+"dirige a un subconjunto de Python 2/3 de Python, basándose directamente en "
+"six_ para ayudar a proporcionar compatibilidad. Como Python 3 es el futuro, "
+"podría ser mejor considerar Futurize para comenzar a adaptarse a cualquier "
+"nueva práctica que Python 3 introduce a la que aún no está acostumbrado."
 
-#: ../../howto/pyporting.rst:148
+#: ../Doc/howto/pyporting.rst:148
 msgid ""
 "Regardless of which tool you choose, they will update your code to run under "
 "Python 3 while staying compatible with the version of Python 2 you started "
@@ -327,15 +363,17 @@ msgid ""
 "transform your application code knowing that any tests which fail is a "
 "translation failure."
 msgstr ""
-"どちらのツールを選ぶにせよ、それらはあなたのコードを、あなたが開始した "
-"Python 2 バージョンへの互換性を保ったままで Python 3 で動作するように書き換え"
-"ます。念には念を入れたければ、まずはテストスイートに対してツールを適用して、"
-"変換が正しいものであることを確認するために差分を視覚的に点検しましょう。あな"
-"たのテストスイートを変換して、テストがそれでもまだ期待通りにパスすることが検"
-"証出来てしまえば、あなたのアプリケーションコードを、全ての失敗するテストは変"
-"換の失敗を意味することがわかる状態で変換出来ます。"
+"Independientemente de la herramienta que elija, actualizarán el código para "
+"que se ejecute en Python 3 mientras se mantienen compatibles con la versión "
+"de Python 2 con la que comenzó. Dependiendo de lo conservador que desee ser, "
+"es posible que desee ejecutar la herramienta sobre el conjunto de pruebas "
+"primero e inspeccionar visualmente la diferencia para asegurarse de que la "
+"transformación es precisa. Después de transformar el conjunto de pruebas y "
+"comprobar que todas las pruebas siguen pasando según lo esperado, puede "
+"transformar el código de la aplicación sabiendo que cualquier prueba que "
+"falle es un error de traducción."
 
-#: ../../howto/pyporting.rst:156
+#: ../Doc/howto/pyporting.rst:156
 msgid ""
 "Unfortunately the tools can't automate everything to make your code work "
 "under Python 3 and so there are a handful of things you will need to update "
@@ -348,21 +386,24 @@ msgid ""
 "watch out for which can be considered large issues that may be hard to debug "
 "if not watched for."
 msgstr ""
-"悪い報せ。これらツールは Python 3 であなたのコードを動作させるために、全ての"
-"自動化が出来ているわけではありませんので、Python 3 のフルサポートのためには手"
-"動で更新しなければならないわずかばかりの事項があります(必要な手作業はツールに"
-"よって違います)。選んだツールのドキュメントを読んで、デフォルトでは何が修正さ"
-"れて、選択的に何を修正する(しない)を選べるのか、そして何を自身で修正する必要"
-"があるのかを理解してください (例えばビルトインの ``open()`` ではなく ``io."
-"open()`` を使う修正は、Modernize ではデフォルトでオフです)。良い報せ。です"
-"が、注意深くみなければデバッグを困難にするような大きな問題として考えられる、"
-"警戒するようなことは、2 つだけです。"
+"Desafortunadamente, las herramientas no pueden automatizar todo para que su "
+"código funcione bajo Python 3 y por lo que hay un puñado de cosas que tendrá "
+"que actualizar manualmente para obtener soporte completo de Python 3 (cuáles "
+"de estos pasos son necesarios varían entre las herramientas). Lea la "
+"documentación de la herramienta que elige utilizar para ver lo que corrige "
+"de forma predeterminada y lo que puede hacer opcionalmente para saber lo que "
+"(no) se fijará para usted y lo que puede tener que corregir por su cuenta "
+"(por ejemplo, usando ``io.open()`` sobre la función incorporada ``open()`` "
+"está desactivada por defecto en Modernizar). Afortunadamente, sin embargo, "
+"sólo hay un par de cosas a tener en cuenta por las cuales se pueden "
+"considerar grandes problemas que pueden ser difíciles de depurar si no se "
+"observan."
 
-#: ../../howto/pyporting.rst:168
+#: ../Doc/howto/pyporting.rst:168
 msgid "Division"
-msgstr "除算"
+msgstr "División"
 
-#: ../../howto/pyporting.rst:170
+#: ../Doc/howto/pyporting.rst:170
 msgid ""
 "In Python 3, ``5 / 2 == 2.5`` and not ``2``; all division between ``int`` "
 "values result in a ``float``. This change has actually been planned since "
@@ -372,44 +413,45 @@ msgid ""
 "Q`` flag. If you have not been doing this then you will need to go through "
 "your code and do two things:"
 msgstr ""
-"Python 3 では、 ``5 / 2 == 2.5`` であり ``2`` ではありません; ``int`` 同士の"
-"全ての除算は ``float`` の結果になります。この変更については実際のところ、 "
-"2002 年にリリースされた Python 2.2 から計画されました。そのようなわけで、 ``/"
-"``, ``//`` 演算子を使うどんなファイルにも ``from __future__ import "
-"division`` を追加するか、あるいはインタプリタを ``-Q`` フラグとともに起動する"
-"ことが推奨されていました。これをまだやったことがなければ、コードをくまなく調"
-"べて対象箇所を見つけ、 2 つのことをします:"
+"En Python 3, ``5 / 2 == 2.5`` y no ``2``; toda división entre los valores "
+"``int`` da lugar a un ``float``. Este cambio ha sido planeado desde Python "
+"2.2, que fue lanzado en 2002. Desde entonces, se ha alentado a los usuarios "
+"a añadir ``from __future__ import division`` a todos y cada uno de los "
+"archivos que utilizan los operadores ``/`` y ``//`` o que ejecuten el "
+"intérprete con el indicador ``-Q``. Si no ha estado haciendo esto, entonces "
+"tendrá que ir a través de su código y hacer dos cosas:"
 
-#: ../../howto/pyporting.rst:178
+#: ../Doc/howto/pyporting.rst:178
 msgid "Add ``from __future__ import division`` to your files"
-msgstr "``from __future__ import division`` をあなたのファイルに追加します"
+msgstr "Añadir ``from __future__ import division`` a sus archivos"
 
-#: ../../howto/pyporting.rst:179
+#: ../Doc/howto/pyporting.rst:179
 msgid ""
 "Update any division operator as necessary to either use ``//`` to use floor "
 "division or continue using ``/`` and expect a float"
 msgstr ""
-"floor division (訳注: float での結果に :func:`~math.floor` 適用したのと同じ振"
-"る舞いをする除算) に対しては ``//`` を、浮動小数点数の演算を期待する箇所では"
-"そのまま ``/`` を使うように、除算演算子を必要に応じて変更します。"
+"Actualice cualquier operador de división según sea necesario para utilizar "
+"``//`` para usar la división de suelo o continuar usando ``/`` y esperar un "
+"número flotante"
 
-#: ../../howto/pyporting.rst:182
+#: ../Doc/howto/pyporting.rst:182
 msgid ""
 "The reason that ``/`` isn't simply translated to ``//`` automatically is "
 "that if an object defines a ``__truediv__`` method but not ``__floordiv__`` "
 "then your code would begin to fail (e.g. a user-defined class that uses ``/"
 "`` to signify some operation but not ``//`` for the same thing or at all)."
 msgstr ""
-"オブジェクトが自身の ``__truediv__`` メソッドを持っているのに "
-"``__floordiv__`` を持っていない場合に壊れてしまうので、 ``/`` を ``//`` に単"
-"純に自動的に変換することは出来ません(例えばユーザ定義クラスで ``/`` を何かの"
-"演算に使っていて、 ``//`` は同じ事をしないか何もしないような場合)。"
+"La razón por la que ``/`` no se traduce simplemente a ``//`` automáticamente "
+"es que si un objeto define un método ``__truediv__`` pero no "
+"``__floordiv__`` entonces su código comenzaría a fallar (por ejemplo, una "
+"clase definida por el usuario que utiliza ``/`` para significar alguna "
+"operación pero no ``//`` para la misma cosa o en absoluto)."
 
-#: ../../howto/pyporting.rst:189
+#: ../Doc/howto/pyporting.rst:189
 msgid "Text versus binary data"
-msgstr "テキスト対バイナリデータ"
+msgstr "Texto frente a datos binarios"
 
-#: ../../howto/pyporting.rst:191
+#: ../Doc/howto/pyporting.rst:191
 msgid ""
 "In Python 2 you could use the ``str`` type for both text and binary data. "
 "Unfortunately this confluence of two different concepts could lead to "
@@ -420,17 +462,17 @@ msgid ""
 "supporting multiple languages as APIs wouldn't bother explicitly supporting "
 "``unicode`` when they claimed text data support."
 msgstr ""
-"Python 2 では ``str`` 型をテキストとバイナリデータのどちらにも使うことが出来"
-"ていました。不幸なことにこれは、2 つの異なる概念を重ね合わせていて、両方の種"
-"類のデータに対して、時々動作して時々はそうではない、といった傷つきやすいコー"
-"ドに繋がりやすいものでした。人々が特定の一つの型の代わりに ``str`` を受け付け"
-"る何かが、それが許容するのはテキストなのかバイナリデータなのかを名言しないと"
-"きの、悩ましい API を生み出してしまう要因でもありました。これはとりわけマルチ"
-"リンガルをサポートするための状況を、テキストデータをサポートしていると主張し"
-"ているのに明示的に ``unicode`` をサポートすることに注意を払わない API、という"
-"形で複雑にしていました。"
+"En Python 2 puede usar el tipo ``str`` tanto para texto como para datos "
+"binarios. Desafortunadamente, esta confluencia de dos conceptos diferentes "
+"podría conducir a código frágil que a veces funcionaba para cualquier tipo "
+"de datos, a veces no. También podría dar lugar a API confusas si las "
+"personas no declaraban explícitamente que algo que aceptaba ``str`` aceptaba "
+"datos binarios o de texto en lugar de un tipo específico. Esto complicó la "
+"situación especialmente para cualquier persona que admita varios idiomas, ya "
+"que las API no se molestarían explícitamente en admitir explícitamente "
+"``Unicode`` cuando reclamaban compatibilidad con datos de texto."
 
-#: ../../howto/pyporting.rst:200
+#: ../Doc/howto/pyporting.rst:200
 msgid ""
 "To make the distinction between text and binary data clearer and more "
 "pronounced, Python 3 did what most languages created in the age of the "
@@ -441,16 +483,17 @@ msgid ""
 "it does mean you might have to now care about when you are using text "
 "compared to binary data, which is why this cannot be entirely automated."
 msgstr ""
-"テキストとバイナリデータの区別をより明快に、よりはっきり宣言するために、 "
-"Python 3 はインターネット時代に作られたほとんどの言語がしたこと、すなわちテキ"
-"ストとバイナリデータを区別できる別々の型とし、無分別にお互い混ぜこぜには出来"
-"ないようにしました (Python はインターネットが広く普及する前からありました)。"
-"テキストのみを取り扱うコード、バイナリデータのみを扱うコードのいずれにとって"
-"も、この分離は問題を引き起こしません。ですが両方を処理するコードにとっては、"
-"それはテキストとバイナリデータの比較をする際に新たな注意点が増えたことを意味"
-"していて、これが完全には移行の自動化が出来ない理由なのです。"
+"Para hacer la distinción entre texto y datos binarios más claros y "
+"pronunciados, Python 3 hizo lo que la mayoría de los lenguajes creados en la "
+"era de Internet han hecho y ha hecho texto y datos binarios distintos tipos "
+"que no se pueden mezclar ciegamente (Python es anterior al acceso "
+"generalizado a Internet). Para cualquier código que se ocupe solo de texto o "
+"solo de datos binarios, esta separación no plantea un problema. Pero para el "
+"código que tiene que lidiar con ambos, significa que es posible que tenga "
+"que preocuparse ahora cuando está utilizando texto en comparación con los "
+"datos binarios, por lo que esto no se puede automatizar por completo."
 
-#: ../../howto/pyporting.rst:209
+#: ../Doc/howto/pyporting.rst:209
 msgid ""
 "To start, you will need to decide which APIs take text and which take binary "
 "(it is **highly** recommended you don't design APIs that can take both due "
@@ -469,40 +512,57 @@ msgid ""
 "Python 3 doesn't have the method). Do note that as of Python 3.5 the "
 "``__mod__`` method was added to the bytes type."
 msgstr ""
+"Para empezar, tendrá que decidir qué API toman texto y cuáles toman binario "
+"(es **altamente** recomendado no diseñar API que pueden tomar ambos debido a "
+"la dificultad de mantener el código funcionando; como se indicó "
+"anteriormente es difícil hacerlo bien). En Python 2 esto significa "
+"asegurarse de que las API que toman texto pueden trabajar con ``unicode`` y "
+"las que funcionan con datos binarios funcionan con el tipo ``bytes`` de "
+"Python 3 (que es un subconjunto de ``str`` en Python 2 y actúa como un alias "
+"para ``bytes`` tipo en Python 2). Por lo general, el mayor problema es darse "
+"cuenta de qué métodos existen en qué tipos en Python 2 y 3 simultáneamente "
+"(para el texto que es ``Unicode`` en Python 2 y ``str`` en Python 3, para "
+"binario que es ``str``/``bytes`` en Python 2 y ``bytes`` en Python 3). En la "
+"tabla siguiente se enumeran los métodos **unicos** de cada tipo de datos en "
+"Python 2 y 3 (por ejemplo, el método ``decode()`` se puede utilizar en el "
+"tipo de datos binarios equivalente en Python 2 o 3, pero no puede ser "
+"utilizado por el tipo de datos textuales consistentemente entre Python 2 y 3 "
+"porque ``str`` en Python 3 no tiene el método). Tenga en cuenta que a partir "
+"de Python 3.5 se agregó el método ``__mod__`` al tipo bytes."
 
-#: ../../howto/pyporting.rst:226
+#: ../Doc/howto/pyporting.rst:226
 msgid "**Text data**"
-msgstr "**テキストデータ**"
+msgstr "**Datos de texto**"
 
-#: ../../howto/pyporting.rst:226
+#: ../Doc/howto/pyporting.rst:226
 msgid "**Binary data**"
-msgstr "**バイナリデータ**"
+msgstr "**Datos binarios**"
 
-#: ../../howto/pyporting.rst:228
+#: ../Doc/howto/pyporting.rst:228
 msgid "\\"
 msgstr "\\"
 
-#: ../../howto/pyporting.rst:228
+#: ../Doc/howto/pyporting.rst:228
 msgid "decode"
 msgstr "decode"
 
-#: ../../howto/pyporting.rst:230
+#: ../Doc/howto/pyporting.rst:230
 msgid "encode"
 msgstr "encode"
 
-#: ../../howto/pyporting.rst:232
+#: ../Doc/howto/pyporting.rst:232
 msgid "format"
 msgstr "format"
 
-#: ../../howto/pyporting.rst:234
+#: ../Doc/howto/pyporting.rst:234
 msgid "isdecimal"
 msgstr "isdecimal"
 
-#: ../../howto/pyporting.rst:236
+#: ../Doc/howto/pyporting.rst:236
 msgid "isnumeric"
 msgstr "isnumeric"
 
-#: ../../howto/pyporting.rst:239
+#: ../Doc/howto/pyporting.rst:239
 msgid ""
 "Making the distinction easier to handle can be accomplished by encoding and "
 "decoding between binary data and text at the edge of your code. This means "
@@ -511,14 +571,16 @@ msgid ""
 "possible. This allows your code to work with only text internally and thus "
 "eliminates having to keep track of what type of data you are working with."
 msgstr ""
-"処理の区別を簡単にするには、バイナリデータとテキストの間のエンコードとデコー"
-"ドを、あなたのコードの境界で行うようにすることです。バイナリデータとしてテキ"
-"ストを受け取ったならば、即座にデコード。テキストをバイナリデータにして送信す"
-"る必要があったら、出来るだけあとでエンコード。このようにすることで、あなたの"
-"コードは内部的にはテキストだけで動作し、ですから、今処理しているのがどの型な"
-"のかを逐一追跡しなくても良くなります。"
+"La creación de la distinción más fácil de controlar se puede realizar "
+"mediante la codificación y descodificación entre datos binarios y texto en "
+"el borde del código. Esto significa que cuando reciba texto en datos "
+"binarios, debe descodificarlo inmediatamente. Y si el código necesita enviar "
+"texto como datos binarios, codificarlo lo más tarde posible. Esto permite "
+"que el código funcione solo con texto internamente y, por lo tanto, elimina "
+"tener que realizar un seguimiento del tipo de datos con los que está "
+"trabajando."
 
-#: ../../howto/pyporting.rst:246
+#: ../Doc/howto/pyporting.rst:246
 msgid ""
 "The next issue is making sure you know whether the string literals in your "
 "code represent text or binary data. You should add a ``b`` prefix to any "
@@ -527,8 +589,15 @@ msgid ""
 "unspecified literals to be Unicode, but usage has shown it isn't as "
 "effective as adding a ``b`` or ``u`` prefix to all literals explicitly)"
 msgstr ""
+"El siguiente problema es asegurarse de saber si los literales de cadena en "
+"el código representan texto o datos binarios. Debe agregar un prefijo ``b`` "
+"a cualquier literal que presente datos binarios. Para el texto debe agregar "
+"un prefijo ``u`` al literal de texto. (hay una importación :mod:`__future__` "
+"para forzar que todos los literales no especificados sean Unicode, pero el "
+"uso ha demostrado que no es tan eficaz como agregar un prefijo ``b`` o ``u`` "
+"a todos los literales explícitamente)"
 
-#: ../../howto/pyporting.rst:253
+#: ../Doc/howto/pyporting.rst:253
 msgid ""
 "As part of this dichotomy you also need to be careful about opening files. "
 "Unless you have been working on Windows, there is a chance you have not "
@@ -545,8 +614,23 @@ msgid ""
 "`codecs.open` as that's only necessary for keeping compatibility with Python "
 "2.5."
 msgstr ""
+"Como parte de esta dicotomía también hay que tener cuidado con la apertura "
+"de archivos. A menos que haya estado trabajando en Windows, existe la "
+"posibilidad de que no siempre se haya molestado en agregar el modo ``b`` al "
+"abrir un archivo binario (por ejemplo, ``rb`` para la lectura binaria).  En "
+"Python 3, los archivos binarios y los archivos de texto son claramente "
+"distintos y mutuamente incompatibles; ver el módulo :mod:`io` para más "
+"detalles. Por lo tanto, **debe** tomar una decisión de si un archivo se "
+"utilizará para el acceso binario (permitiendo que los datos binarios se lean "
+"y/o escriban) o el acceso textual (permitiendo que los datos de texto sean "
+"leídos y/o escritos). También debe utilizar :func:`io.open` para abrir "
+"archivos en lugar de la función incorporada :func:`open` como el módulo :mod:"
+"`io` es consistente de Python 2 a 3, mientras que la función incorporada :"
+"func:`open` no es (en Python 3 es en realidad :func:`io.open`). No se "
+"moleste con la práctica obsoleta de usar :func:`codecs.open` ya que sólo es "
+"necesario para mantener la compatibilidad con Python 2.5."
 
-#: ../../howto/pyporting.rst:267
+#: ../Doc/howto/pyporting.rst:267
 msgid ""
 "The constructors of both ``str`` and ``bytes`` have different semantics for "
 "the same arguments between Python 2 & 3. Passing an integer to ``bytes`` in "
@@ -558,17 +642,18 @@ msgid ""
 "back: ``str(b'3') == b'3'``. But in Python 3 you get the string "
 "representation of the bytes object: ``str(b'3') == \"b'3'\"``."
 msgstr ""
-"``str`` と ``bytes`` の両方のコンストラクタは同じ引数を与えても Python 2 と "
-"3 で異なる意味を持ちます。Python 2 で ``bytes`` に数値を与えると、整数の文字"
-"列表現を生成します: ``bytes(3) == '3'`` 。ですが Python 3 では、 ``bytes`` に"
-"整数を与えると、整数値で与えたぶんの長さの、null バイトで埋められたバイト列を"
-"生成します: ``bytes(3) == b'\\x00\\x00\\x00'`` 。似たような話はバイト列オブ"
-"ジェクトを ``str`` に与える場合にも起こります。Python 2 ではバイト列が渡した"
-"ものがそのまま戻ってきます: ``str(b'3') == b'3'`` 。対して Python 3 では、バ"
-"イト列オブジェクトの文字列表現になって返ってきます: ``str(b'3') == "
-"\"b'3'\"`` 。"
+"Los constructores de ``str`` y ``bytes`` tienen una semántica diferente para "
+"los mismos argumentos entre Python 2 y 3. Pasar un entero a ``bytes`` en "
+"Python 2 le dará la representación de cadena de texto del entero: ``bytes(3) "
+"== '3'``. Pero en Python 3, un argumento entero para ''bytes'' le dará un "
+"objeto bytes siempre y cuando el entero especificado, lleno de bytes nulos: "
+"``bytes(3) == b'\\x00\\x00\\x00'``. Una preocupación similar es necesaria "
+"cuando se pasa un objeto bytes a ``str``. En Python 2, solo se obtiene el "
+"objeto bytes: ``str(b'3') == b'3'``. Pero en Python 3 se obtiene la "
+"representación de cadena de texto del objeto bytes: ``str(b'3') == "
+"\"b'3'\"``."
 
-#: ../../howto/pyporting.rst:277
+#: ../Doc/howto/pyporting.rst:277
 msgid ""
 "Finally, the indexing of binary data requires careful handling (slicing does "
 "**not** require any special handling). In Python 2, ``b'123'[1] == b'2'`` "
@@ -579,66 +664,68 @@ msgid ""
 "``six.indexbytes()`` which will return an integer like in Python 3: ``six."
 "indexbytes(b'123', 1)``."
 msgstr ""
-"最後に、バイナリデータに対するインデクシングには取り扱いに注意が必要です(スラ"
-"イシングには特別な取り扱いは **不要** です)。Python 2 では、 ``b'123'[1] == "
-"b'2'`` ですが、Python 3 では ``b'123'[1] == 50`` です。バイナリデータはただの"
-"バイナリ数値の羅列ですから、Python 3 では指示した位置のバイトの整数値を返しま"
-"す。ですが Python 2 の場合、 ``bytes == str`` であるために、インデクシングは "
-"bytes の要素一つを取り出すスライスとして振舞います。 six_ プロジェクトには "
-"``six.indexbytes()`` と名付けられた関数があって、これは Python 3 がそうするよ"
-"うに整数値を返します: ``six.indexbytes(b'123', 1)`` 。"
+"Por último, la indexación de datos binarios requiere un control cuidadoso "
+"(el corte **no** requiere ningún control especial). En Python 2, ``b'123'[1] "
+"== b'2'`` mientras que en Python 3 ``b'123'[1] == 50``. Dado que los datos "
+"binarios son simplemente una colección de números binarios, Python 3 retorna "
+"el valor entero para el byte en el que indexa. Pero en Python 2, ya que "
+"``bytes == str``, la indexación retorna un segmento de bytes de un solo "
+"elemento. El proyecto six_ tiene una función denominada ``six.indexbytes()`` "
+"que devolverá un entero como en Python 3: ``six.indexbytes(b'123', 1)``."
 
-#: ../../howto/pyporting.rst:286
+#: ../Doc/howto/pyporting.rst:286
 msgid "To summarize:"
-msgstr "まとめると、以下のようになります:"
+msgstr "Para resumir:"
 
-#: ../../howto/pyporting.rst:288
+#: ../Doc/howto/pyporting.rst:288
 msgid "Decide which of your APIs take text and which take binary data"
-msgstr ""
-"どの API がテキストデータを受付け、どの API がバイナリデータを受け付けるのか"
-"を決めてください。"
+msgstr "Decida cuál de sus API toma texto y cuáles toman datos binarios"
 
-#: ../../howto/pyporting.rst:289
+#: ../Doc/howto/pyporting.rst:289
 msgid ""
 "Make sure that your code that works with text also works with ``unicode`` "
 "and code for binary data works with ``bytes`` in Python 2 (see the table "
 "above for what methods you cannot use for each type)"
 msgstr ""
-"あなたのコードが Python 2 で確実に、テキストで動くものは ``unicode`` でも動く"
-"ように、バイナリデータで動くものは ``bytes`` でも動くようにしてください(どの"
-"メソッドがそれぞれの型で使えないのかを示した上記テーブルをみてください)。"
+"Asegúrese de que el código que funciona con texto también funciona con "
+"``unicode`` y el código para datos binarios funciona con ``bytes`` en Python "
+"2 (consulte la tabla anterior para los métodos que no puede usar para cada "
+"tipo)"
 
-#: ../../howto/pyporting.rst:292
+#: ../Doc/howto/pyporting.rst:292
 msgid ""
 "Mark all binary literals with a ``b`` prefix, textual literals with a ``u`` "
 "prefix"
 msgstr ""
+"Marque todos los literales binarios con un prefijo ``b``, literales "
+"textuales con un prefijo ``u``"
 
-#: ../../howto/pyporting.rst:294
+#: ../Doc/howto/pyporting.rst:294
 msgid ""
 "Decode binary data to text as soon as possible, encode text as binary data "
 "as late as possible"
 msgstr ""
-"バイナリデータをテキストにデコードするのは出来るだけ早く、テキストデータをバ"
-"イナリデータにエンコードするのは出来るだけ遅く。"
+"Descodificar datos binarios en texto tan pronto como sea posible, codificar "
+"texto como datos binarios tan tarde como sea posible"
 
-#: ../../howto/pyporting.rst:296
+#: ../Doc/howto/pyporting.rst:296
 msgid ""
 "Open files using :func:`io.open` and make sure to specify the ``b`` mode "
 "when appropriate"
 msgstr ""
-"ファイルは :func:`io.open` を使って開き、そうすべきときには必ず ``b`` モード"
-"を指定してください。"
+"Abra los archivos con :func:`io.open` y asegúrese de especificar el modo "
+"``b`` cuando sea apropiado"
 
-#: ../../howto/pyporting.rst:298
+#: ../Doc/howto/pyporting.rst:298
 msgid "Be careful when indexing into binary data"
-msgstr ""
+msgstr "Tenga cuidado al indexar en datos binarios"
 
-#: ../../howto/pyporting.rst:302
+#: ../Doc/howto/pyporting.rst:302
 msgid "Use feature detection instead of version detection"
-msgstr "バージョン検出ではなく機能検出を使う"
+msgstr ""
+"Utilice la detección de funciones en lugar de la detección de versiones"
 
-#: ../../howto/pyporting.rst:304
+#: ../Doc/howto/pyporting.rst:304
 msgid ""
 "Inevitably you will have code that has to choose what to do based on what "
 "version of Python is running. The best way to do this is with feature "
@@ -647,73 +734,89 @@ msgid ""
 "version check be against Python 2 and not Python 3. To help explain this, "
 "let's look at an example."
 msgstr ""
+"Inevitablemente tendrá código que tiene que elegir qué hacer en función de "
+"qué versión de Python se está ejecutando. La mejor manera de hacerlo es con "
+"la detección de características de si la versión de Python en la que se "
+"ejecuta es compatible con lo que necesita. Si por alguna razón eso no "
+"funciona, entonces usted debe hacer que la comprobación de la versión sea "
+"contra Python 2 y no Python 3. Para ayudar a explicar esto, veamos un "
+"ejemplo."
 
-#: ../../howto/pyporting.rst:311
+#: ../Doc/howto/pyporting.rst:311
 msgid ""
 "Let's pretend that you need access to a feature of :mod:`importlib` that is "
 "available in Python's standard library since Python 3.3 and available for "
 "Python 2 through importlib2_ on PyPI. You might be tempted to write code to "
 "access e.g. the :mod:`importlib.abc` module by doing the following::"
 msgstr ""
+"Supongamos que necesita acceso a una característica de :mod:`importlib` que "
+"está disponible en la biblioteca estándar de Python desde Python 3.3 y "
+"disponible para Python 2 a través de importlib2_ en PyPI. Es posible que "
+"tenga la tentación de escribir código para acceder, por ejemplo, al módulo :"
+"mod:`importlib.abc` haciendo lo siguiente:"
 
-#: ../../howto/pyporting.rst:323
+#: ../Doc/howto/pyporting.rst:323
 msgid ""
 "The problem with this code is what happens when Python 4 comes out? It would "
 "be better to treat Python 2 as the exceptional case instead of Python 3 and "
 "assume that future Python versions will be more compatible with Python 3 "
 "than Python 2::"
 msgstr ""
-"このコードの問題は、 Python 4 が出たときに起きます。\n"
-"Python 3 ではなく Python 2 を例外的なケースとして扱い、将来の Python のバー"
-"ジョンは Python 2 よりも Python 3 と互換性があると仮定する方が良さそうです::"
+"El problema con este código es ¿qué sucede cuando sale Python 4? Sería mejor "
+"tratar Python 2 como el caso excepcional en lugar de Python 3 y asumir que "
+"las futuras versiones de Python serán más compatibles con Python 3 que "
+"Python 2::"
 
-#: ../../howto/pyporting.rst:335
+#: ../Doc/howto/pyporting.rst:335
 msgid ""
 "The best solution, though, is to do no version detection at all and instead "
 "rely on feature detection. That avoids any potential issues of getting the "
 "version detection wrong and helps keep you future-compatible::"
 msgstr ""
-"ところが、最適解はバージョン検出を一切せずに、代わりに機能検出に頼ることで"
-"す。\n"
-"機能検出を使うことで、バージョン検出が上手く行かなくなる潜在的な問題を避けら"
-"れ、機能の互換性を保つ助けになります::"
+"La mejor solución, sin embargo, es no hacer ninguna detección de versiones "
+"en absoluto y en su lugar confiar en la detección de características. Esto "
+"evita cualquier problema potencial de conseguir la detección de la versión "
+"incorrecta y le ayuda a mantenerse compatible con el futuro:"
 
-#: ../../howto/pyporting.rst:346
+#: ../Doc/howto/pyporting.rst:346
 msgid "Prevent compatibility regressions"
-msgstr "互換性オプション"
+msgstr "Evitar regresiones de compatibilidad"
 
-#: ../../howto/pyporting.rst:348
+#: ../Doc/howto/pyporting.rst:348
 msgid ""
 "Once you have fully translated your code to be compatible with Python 3, you "
 "will want to make sure your code doesn't regress and stop working under "
 "Python 3. This is especially true if you have a dependency which is blocking "
 "you from actually running under Python 3 at the moment."
 msgstr ""
-"あなたのコードを完全に Python 3 互換に変換できたら、今度は Python 3 での動作"
-"が退化したり止まってしまうことがないようにしたいでしょう。この時点ではまだ実"
-"際に Python 3 で動作させられない阻害要因となる依存物を持っている場合に、これ"
-"は特に当てはまります。"
+"Una vez que haya traducido completamente el código para que sea compatible "
+"con Python 3, querrá asegurarse de que el código no retroceda y deje de "
+"funcionar bajo Python 3. Esto es especialmente cierto si tiene una "
+"dependencia que le está bloqueando para que no se ejecute realmente en "
+"Python 3 en este momento."
 
-#: ../../howto/pyporting.rst:353
+#: ../Doc/howto/pyporting.rst:353
 msgid ""
 "To help with staying compatible, any new modules you create should have at "
 "least the following block of code at the top of it::"
 msgstr ""
-"互換性を保ち続けるために、あなたが作る全ての新しいモジュールは、最低でもソー"
-"スコードの先頭に以下のコードブロックを持つべきです::"
+"Para ayudar a mantenerse compatible, los módulos nuevos que cree deben tener "
+"al menos el siguiente bloque de código en la parte superior del misma::"
 
-#: ../../howto/pyporting.rst:360
+#: ../Doc/howto/pyporting.rst:360
 msgid ""
 "You can also run Python 2 with the ``-3`` flag to be warned about various "
 "compatibility issues your code triggers during execution. If you turn "
 "warnings into errors with ``-Werror`` then you can make sure that you don't "
 "accidentally miss a warning."
 msgstr ""
-"実行時に種々の互換性問題を警告してもらうために Python 2 を ``-3`` フラグ付き"
-"で実行することも出来ます。 ``-Werror`` にすれば警告ではなくエラーになるので、"
-"うっかり警告を見逃すことがなくなります。"
+"También puede ejecutar Python 2 con el indicador ``-3`` para recibir una "
+"advertencia sobre varios problemas de compatibilidad que el código "
+"desencadena durante la ejecución. Si convierte las advertencias en errores "
+"con ``-Werror``, puede asegurarse de que no se pierda accidentalmente una "
+"advertencia."
 
-#: ../../howto/pyporting.rst:365
+#: ../Doc/howto/pyporting.rst:365
 msgid ""
 "You can also use the Pylint_ project and its ``--py3k`` flag to lint your "
 "code to receive warnings when your code begins to deviate from Python 3 "
@@ -722,18 +825,19 @@ msgid ""
 "does require you only support Python 2.7 and Python 3.4 or newer as that is "
 "Pylint's minimum Python version support."
 msgstr ""
-"Pylint_ プロジェクトとその ``--py3k`` フラグを使って、Python 3 互換性から乖離"
-"し始めている際の警告を受け取ることも出来ます。これにより、 Modernize_ や "
-"Futurize_ を普通に実行してみて互換性を失っていないかを確認する、という必要が"
-"なくなります。この場合 Python 2.7 と Python 3.4 以上だけのサポートにすること"
-"が必要になります。それが Pylint がサポートする最小の Python バージョンだから"
-"です。"
+"También puede usar el proyecto de Pylint_ y su indicador ``--py3k`` para "
+"lintar el código para recibir advertencias cuando el código comienza a "
+"desviarse de la compatibilidad con Python 3. Esto también evita que tenga "
+"que ejecutar Modernize_ o Futurize_ sobre el código con regularidad para "
+"detectar las regresiones de compatibilidad. Esto requiere que solo admita "
+"Python 2.7 y Python 3.4 o posterior, ya que es la compatibilidad mínima de "
+"la versión mínima de Python de Pylint."
 
-#: ../../howto/pyporting.rst:374
+#: ../Doc/howto/pyporting.rst:374
 msgid "Check which dependencies block your transition"
-msgstr "どの依存性があなたの移行を阻んでいるのかチェックする"
+msgstr "Compruebe qué dependencias bloquean la transición"
 
-#: ../../howto/pyporting.rst:376
+#: ../Doc/howto/pyporting.rst:376
 msgid ""
 "**After** you have made your code compatible with Python 3 you should begin "
 "to care about whether your dependencies have also been ported. The "
@@ -742,8 +846,14 @@ msgid ""
 "is both a command-line tool as well as a web interface at https://"
 "caniusepython3.com."
 msgstr ""
+"**Después** de que haya hecho que su código sea compatible con Python 3, "
+"debe empezar a preocuparse por si sus dependencias también se han portado. "
+"El proyecto caniusepython3_ se creó para ayudarle a determinar qué proyectos "
+"-- directa o indirectamente -- le impiden admitir Python 3. Hay una "
+"herramienta de línea de comandos, así como una interfaz web en https://"
+"caniusepython3.com."
 
-#: ../../howto/pyporting.rst:383
+#: ../Doc/howto/pyporting.rst:383
 msgid ""
 "The project also provides code which you can integrate into your test suite "
 "so that you will have a failing test when you no longer have dependencies "
@@ -751,16 +861,18 @@ msgid ""
 "manually check your dependencies and to be notified quickly when you can "
 "start running on Python 3."
 msgstr ""
-"このプロジェクトは同時にあなたのテストスイートに組み込むことが出来る、もう "
-"Python 3 使用を妨げる依存物がなくなった時点で失敗するテストコードも提供してい"
-"ます。これにより、Python 3 での動作を開始する際に、依存物を手動でチェックする"
-"ことなく即座に気付くことが出来ます。"
+"El proyecto también proporciona código que puede integrar en el conjunto de "
+"pruebas para que tenga una prueba con errores cuando ya no tenga "
+"dependencias que le impidan usar Python 3. Esto le permite evitar tener que "
+"comprobar manualmente sus dependencias y recibir notificaciones rápidamente "
+"cuando puede empezar a ejecutarse en Python 3."
 
-#: ../../howto/pyporting.rst:390
+#: ../Doc/howto/pyporting.rst:390
 msgid "Update your ``setup.py`` file to denote Python 3 compatibility"
-msgstr "あなたの ``setup.py`` ファイルを更新して Python 3 互換を謳う"
+msgstr ""
+"Actualice su archivo ``setup.py`` para denotar compatibilidad con Python 3"
 
-#: ../../howto/pyporting.rst:392
+#: ../Doc/howto/pyporting.rst:392
 msgid ""
 "Once your code works under Python 3, you should update the classifiers in "
 "your ``setup.py`` to contain ``Programming Language :: Python :: 3`` and to "
@@ -768,18 +880,18 @@ msgid ""
 "that you support Python 2 **and** 3. Ideally you will also want to add "
 "classifiers for each major/minor version of Python you now support."
 msgstr ""
-"あなたのコードが Python 3 で動作するようになったら、 ``setup.py`` の "
-"classifiers を ``Programming Language :: Python :: 3`` を含めるように更新し"
-"て、Python 2 だけのサポートではないことを明記すべきです。これによって、あなた"
-"のコードを利用する人はあなたが Python 2 *と* 3 をサポートすることを知ることが"
-"出来ます。理想的には、今サポートしている Python のメジャー/マイナーバージョン"
-"も classifiers に追加したいでしょう。"
+"Una vez que el código funciona en Python 3, debe actualizar los "
+"clasificadores en su ``setup.py`` para que contenga ``Programming "
+"Language :: Python :: 3`` y no especificar solo compatibilidad con Python 2. "
+"Esto le dirá a cualquier persona que use su código que admite Python 2 **y** "
+"3. Lo ideal es que también desee agregar clasificadores para cada versión "
+"principal/menor de Python que ahora admita."
 
-#: ../../howto/pyporting.rst:400
+#: ../Doc/howto/pyporting.rst:400
 msgid "Use continuous integration to stay compatible"
-msgstr "継続的インテグレーションを使って互換性を維持し続ける。"
+msgstr "Utilice la integración continua para seguir siendo compatible"
 
-#: ../../howto/pyporting.rst:402
+#: ../Doc/howto/pyporting.rst:402
 msgid ""
 "Once you are able to fully run under Python 3 you will want to make sure "
 "your code always works under both Python 2 & 3. Probably the best tool for "
@@ -787,13 +899,14 @@ msgid ""
 "integrate tox with your continuous integration system so that you never "
 "accidentally break Python 2 or 3 support."
 msgstr ""
-"Python 3 で完全に動作出来てしまったら、あなたのコードが Python 2、3 の両方で"
-"いつでも動くことを保障したいでしょう。おそらく、複数バージョンの Python イン"
-"タプリタでテストを実施するのに最良のツールは、 tox_ です。継続的インテグレー"
-"ションシステムに tox を統合して、うっかり Python 2 か 3 のサポートを壊してし"
-"まわないようにすることが出来ます。"
+"Una vez que pueda ejecutar completamente bajo Python 3, querrá asegurarse de "
+"que el código siempre funciona en Python 2 y 3. Probablemente la mejor "
+"herramienta para ejecutar las pruebas en varios intérpretes de Python es "
+"tox_. A continuación, puede integrar tox con su sistema de integración "
+"continua para que nunca interrumpa accidentalmente la compatibilidad con "
+"Python 2 o 3."
 
-#: ../../howto/pyporting.rst:408
+#: ../Doc/howto/pyporting.rst:408
 msgid ""
 "You may also want to use the ``-bb`` flag with the Python 3 interpreter to "
 "trigger an exception when you are comparing bytes to strings or bytes to an "
@@ -804,32 +917,36 @@ msgid ""
 "these kinds of comparisons occur, making the mistake much easier to track "
 "down."
 msgstr ""
-"Python 3 インタプリタで ``-bb`` フラグを使って、 bytes と string 、もしくは "
-"bytes と int を比較したときに例外を引き起こしたいと思うでしょう (後者は "
-"Python 3.5 から使えます)。\n"
-"デフォルトでは型の異なる比較は単純に ``False`` を返しますが、テキスト/バイナ"
-"リデータ処理の分離を誤ったり、バイト列への添え字操作を誤ると、簡単には間違い"
-"を見つけられません。\n"
-"このフラグはそれが起こった場合に例外を起こすことで、その種のケースを追跡する"
-"助けになります。"
+"También es posible que desee utilizar el indicador ``-bb`` con el intérprete "
+"de Python 3 para desencadenar una excepción cuando se comparan bytes con "
+"cadenas o bytes con un int (este último está disponible a partir de Python "
+"3.5). De forma predeterminada, las comparaciones de tipos diferentes "
+"simplemente retornan ``False``, pero si cometió un error en la separación "
+"del control de datos de texto/binario o la indexación en bytes, no "
+"encontraría fácilmente el error. Esta marca lanzará una excepción cuando se "
+"produzcan este tipo de comparaciones, lo que hace que el error sea mucho más "
+"fácil de rastrear."
 
-#: ../../howto/pyporting.rst:416
+#: ../Doc/howto/pyporting.rst:416
 msgid ""
 "And that's mostly it! At this point your code base is compatible with both "
 "Python 2 and 3 simultaneously. Your testing will also be set up so that you "
 "don't accidentally break Python 2 or 3 compatibility regardless of which "
 "version you typically run your tests under while developing."
 msgstr ""
-"そしてこれでほぼ全てです! 今の時点であなたのコードベースは Python 2 と 3 の両"
-"方に対して同時に互換です。あなたのテストは、開発時点ではどちらのバージョンで"
-"テストすることが多いのかによらずに、誤って Python 2 か 3 の互換性を破壊してし"
-"まわないようにも組み立てられるでしょう。"
+"¡Y eso es sobre todo! En este punto, la base de código es compatible con "
+"Python 2 y 3 simultáneamente. Las pruebas también se configurarán para que "
+"no interrumpa accidentalmente la compatibilidad de Python 2 o 3, "
+"independientemente de la versión en la que ejecute normalmente las pruebas "
+"durante el desarrollo."
 
-#: ../../howto/pyporting.rst:423
+#: ../Doc/howto/pyporting.rst:423
 msgid "Consider using optional static type checking"
 msgstr ""
+"Considere la posibilidad de usar la comprobación de tipos estáticos "
+"opcionales"
 
-#: ../../howto/pyporting.rst:425
+#: ../Doc/howto/pyporting.rst:425
 msgid ""
 "Another way to help port your code is to use a static type checker like "
 "mypy_ or pytype_ on your code. These tools can be used to analyze your code "
@@ -841,3 +958,14 @@ msgid ""
 "binary data, helping to make sure everything functions as expected in both "
 "versions of Python."
 msgstr ""
+"Otra forma de ayudar a transferir el código es usar un comprobador de tipos "
+"estáticos como mypy_ o pytype_ en el código. Estas herramientas se pueden "
+"utilizar para analizar el código como si se estuviera ejecutando en Python "
+"2, puede ejecutar la herramienta por segunda vez como si el código se "
+"ejecutara en Python 3. Al ejecutar un comprobador de tipos estáticos dos "
+"veces como este, puede descubrir si, por ejemplo, está usando "
+"incorrectamente el tipo de datos binarios en una versión de Python en "
+"comparación con otra. Si agrega sugerencias de tipo opcionales al código, "
+"también puede indicar explícitamente si las API usan datos textuales o "
+"binarios, lo que ayuda a asegurarse de que todo funciona según lo esperado "
+"en ambas versiones de Python."

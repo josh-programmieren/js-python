@@ -1,36 +1,36 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:03+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-11-20 20:53+0100\n"
+"Last-Translator: Carlos AlMA <carlos@>\n"
+"Language-Team: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.2.1\n"
 
-#: ../../library/copyreg.rst:2
+#: ../Doc/library/copyreg.rst:2
 msgid ":mod:`copyreg` --- Register :mod:`pickle` support functions"
-msgstr ":mod:`copyreg` --- :mod:`pickle` サポート関数を登録する"
+msgstr ":mod:`copyreg` --- Registrar funciones de soporte de :mod:`pickle`"
 
-#: ../../library/copyreg.rst:7
+#: ../Doc/library/copyreg.rst:7
 msgid "**Source code:** :source:`Lib/copyreg.py`"
-msgstr "**ソースコード:** :source:`Lib/copyreg.py`"
+msgstr "**Código fuente:** :source:`Lib/copyreg.py`"
 
-#: ../../library/copyreg.rst:15
+#: ../Doc/library/copyreg.rst:15
 msgid ""
 "The :mod:`copyreg` module offers a way to define functions used while "
 "pickling specific objects.  The :mod:`pickle` and :mod:`copy` modules use "
@@ -38,51 +38,74 @@ msgid ""
 "configuration information about object constructors which are not classes. "
 "Such constructors may be factory functions or class instances."
 msgstr ""
-":mod:`copyreg` モジュールは、特定のオブジェクトを pickle する際に使われる関数"
-"を定義する手段を提供します。 :mod:`pickle` モジュールと :mod:`copy` モジュー"
-"ルは、オブジェクトを pickle/コピーする場合にそれらの関数を使用します。このモ"
-"ジュールは、クラスでないオブジェクトコンストラクタに関する設定情報を提供しま"
-"す。そのようなコンストラクタは、ファクトリ関数か、クラスインスタンスかもしれ"
-"ません。"
+"El módulo :mod:`copyreg` ofrece una manera de definir las funciones usadas "
+"cuando se serializan (*pickling*) objetos específicos. Los módulos :mod:"
+"`pickle` y :mod:`copy` utilizan estas funciones cuando se realizan acciones "
+"de serializado/copiado en esos objetos. El módulo provee información de "
+"configuración acerca de los objetos constructores, los cuales no son clases. "
+"Estos objetos constructores pueden ser funciones-fábrica o instancias de "
+"clase."
 
-#: ../../library/copyreg.rst:24
+#: ../Doc/library/copyreg.rst:24
 msgid ""
 "Declares *object* to be a valid constructor.  If *object* is not callable "
 "(and hence not valid as a constructor), raises :exc:`TypeError`."
 msgstr ""
-"*object* を有効なコンストラクタであると宣言します。 *object* が呼び出し可能で"
-"なければ(したがってコンストラクタとして有効でなければ)、 :exc:`TypeError` を"
-"発生します。"
+"Declara que el *object* es un constructor válido. Si el *object* no es "
+"invocable (y por lo tanto, no es válido como constructor), lanza una "
+"excepción :exc:`TypeError`."
 
-#: ../../library/copyreg.rst:30
+#: ../Doc/library/copyreg.rst:30
 msgid ""
 "Declares that *function* should be used as a \"reduction\" function for "
 "objects of type *type*.  *function* should return either a string or a tuple "
 "containing two or three elements. See the :attr:`~pickle.Pickler."
 "dispatch_table` for more details on the interface of *function*."
 msgstr ""
+"Declara que la *function* deber ser usada como una función de \"reducción\" "
+"para objetos de tipo *type*. La *function* debe retornar ya sea una cadena "
+"de caracteres o una tupla que contenga dos o tres elementos. Consulte :attr:"
+"`~pickle.Pickler.dispatch_table` para obtener más detalles sobre la interfaz "
+"de *función*."
 
-#: ../../library/copyreg.rst:35
+#: ../Doc/library/copyreg.rst:35
 msgid ""
 "The *constructor_ob* parameter is a legacy feature and is now ignored, but "
 "if passed it must be a callable."
 msgstr ""
+"El parámetro *constructor_ob* es una característica heredada y ahora se "
+"ignora, pero si se pasa debe ser invocable."
 
-#: ../../library/copyreg.rst:38
+#: ../Doc/library/copyreg.rst:38
 msgid ""
 "Note that the :attr:`~pickle.Pickler.dispatch_table` attribute of a pickler "
 "object or subclass of :class:`pickle.Pickler` can also be used for declaring "
 "reduction functions."
 msgstr ""
+"Note que el atributo :attr:`~pickle.Pickler.dispatch_table` de un objeto "
+"pickler o subclase de :class:`pickle.Pickler` también puede ser utilizado "
+"para declarar funciones de reducción."
 
-#: ../../library/copyreg.rst:43
+#: ../Doc/library/copyreg.rst:43
 msgid "Example"
-msgstr "使用例"
+msgstr "Ejemplo"
 
-#: ../../library/copyreg.rst:45
+#: ../Doc/library/copyreg.rst:45
 msgid ""
 "The example below would like to show how to register a pickle function and "
 "how it will be used:"
 msgstr ""
-"下記の例は、pickle 関数を登録する方法と、それがどのように使用されるかを示そう"
-"としています:"
+"El siguiente ejemplo pretende mostrar cómo registrar una función pickle y "
+"cómo se utilizará:"
+
+#~ msgid ""
+#~ "The optional *constructor* parameter, if provided, is a callable object "
+#~ "which can be used to reconstruct the object when called with the tuple of "
+#~ "arguments returned by *function* at pickling time.  :exc:`TypeError` will "
+#~ "be raised if *object* is a class or *constructor* is not callable."
+#~ msgstr ""
+#~ "El parámetro opcional *constructor*, si se proporciona, es un objeto "
+#~ "invocable el cual, que puede ser usado para reconstruir el objeto cuando "
+#~ "se llama con la tupla de argumentos retornados por la *function* en el "
+#~ "momento de pickling.  La excepción :exc:`TypeError` se lanzará si el "
+#~ "*objeto*  es una clase o si el *constructor* no es invocable."

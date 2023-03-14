@@ -1,62 +1,83 @@
-build/
-__pycache__
+*.mo
+/_build/
+
+# Submodules to avoid issues
+cpython
+.migration/tutorialpyar
+
+# Files overriden by our scripts
+Doc/tools/templates/customsourcelink.html
+Doc/tools/templates/indexsidebar.html
+Doc/CONTRIBUTING.rst
+Doc/translation-memory.rst
+Doc/upgrade-python-version.rst
+locales/
+dict.txt
+
+# Translations of our own files
+coc.po
+faq.po
+progress.po
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
 *.py[cod]
-*~
-/build
-/env*/
-docs/build/
-docs/source/_build
-mypyc/doc/_build
-*.iml
-/out/
-.venv*
-venv/
-.mypy_cache/
-.incremental_checker_cache.json
-.cache
-test-data/packages/.pip_lock
-dmypy.json
-.dmypy.json
 
-# Packages
+# C extensions
+*.so
+
+# Distribution / packaging
+venv
+.venv
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
 *.egg
-*.egg-info
-*.eggs
+.mypy_cache/
+.python-version
 
-# IDEs
-.idea
-.vscode
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
 
-# vim temporary files
-.*.sw?
-*.sw?
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Operating Systems
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Ides
+.vscode/
+.idea/
+/translation-memory.po
+/locale/
+*.swp
+*~
+
+# OSX
 .DS_Store
 
-# Coverage Files
-htmlcov
-.coverage*
-
-# pytest cache
-.pytest_cache/
-
-# virtualenv
-.Python
-bin/
-lib/
-include/
-.python-version
-pyvenv.cfg
-
-.tox
-pip-wheel-metadata
-
-
-test_capi
-*.o
-*.a
-test_capi
-/.mypyc-flake8-cache.json
-/mypyc/lib-rt/build/
-/mypyc/lib-rt/*.so
+.potodo/
+git_diff.po
+CONTRIBUTING.po
+reviewers-guide.po
+upgrade-python-version.po

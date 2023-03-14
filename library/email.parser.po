@@ -1,37 +1,33 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org / https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get the list of volunteers
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:05+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2019-05-06 11:59-0400\n"
+"PO-Revision-Date: 2020-07-26 11:31-0500\n"
+"Language-Team: python-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Adolfo Hristo David Roque Gámez <hristo.roqueg@gmail.com>\n"
+"Language: es_AR\n"
+"X-Generator: Poedit 2.4\n"
 
-#: ../../library/email.parser.rst:2
+#: ../Doc/library/email.parser.rst:2
 msgid ":mod:`email.parser`: Parsing email messages"
-msgstr ":mod:`email.parser`: 電子メールメッセージのパース"
+msgstr ":mod:`email.parser`: Analizar mensajes de correo electrónico"
 
-#: ../../library/email.parser.rst:7
+#: ../Doc/library/email.parser.rst:7
 msgid "**Source code:** :source:`Lib/email/parser.py`"
-msgstr "**ソースコード:** :source:`Lib/email/parser.py`"
+msgstr "**Código fuente:** :source:`Lib/email/parser.py`"
 
-#: ../../library/email.parser.rst:11
+#: ../Doc/library/email.parser.rst:11
 msgid ""
 "Message object structures can be created in one of two ways: they can be "
 "created from whole cloth by creating an :class:`~email.message.EmailMessage` "
@@ -40,8 +36,14 @@ msgid ""
 "or they can be created by parsing a serialized representation of the email "
 "message."
 msgstr ""
+"Se pueden construir estructuras de objetos de mensaje de dos formas: pueden "
+"ser creados de puro invento al crear un objeto :class:`~email.message."
+"EmailMessage`, añadir encabezados usando la interfaz de diccionario, y "
+"añadir carga(s) usando el método :meth:`~email.message.EmailMessage."
+"set_content` y otros relacionados, o pueden ser creados al analizar una "
+"representación serializada de un mensaje de correo electrónico."
 
-#: ../../library/email.parser.rst:18
+#: ../Doc/library/email.parser.rst:18
 msgid ""
 "The :mod:`email` package provides a standard parser that understands most "
 "email document structures, including MIME documents.  You can pass the "
@@ -55,8 +57,20 @@ msgid ""
 "meth:`~email.message.EmailMessage.iter_parts`, and :meth:`~email.message."
 "EmailMessage.walk`."
 msgstr ""
+"El paquete :mod:`email` proporciona un analizador estándar que entiende la "
+"mayoría de estructuras de documentos de correo electrónico, incluyendo "
+"documentos MIME.  Le puedes pasar al analizador bytes, una cadena de "
+"caracteres o una archivo de objeto, y el analizador te retornará la "
+"instancia :class:`~email.message.EmailMessage` raíz de la estructura del "
+"objeto. Para mensajes simples que no sean MIME, la carga de su objeto raíz "
+"probablemente será una cadena de caracteres conteniendo el texto o el "
+"mensaje. Para mensajes MIME, el objeto raíz retornará ``True`` de su método :"
+"meth:`~email.message.EmailMessage.is_multipart`, y las subpartes pueden ser "
+"accedidas a través de los métodos de manipulación de carga, tales como :meth:"
+"`~email.message.EmailMessage.get_body`, :meth:`~email.message.EmailMessage."
+"iter_parts`, y :meth:`~email.message.EmailMessage.walk`."
 
-#: ../../library/email.parser.rst:30
+#: ../Doc/library/email.parser.rst:30
 msgid ""
 "There are actually two parser interfaces available for use, the :class:"
 "`Parser` API and the incremental :class:`FeedParser` API.  The :class:"
@@ -68,8 +82,17 @@ msgid ""
 "message incrementally, and only returns the root object when you close the "
 "parser."
 msgstr ""
+"De hecho hay dos interfaces de analizadores disponibles para usar, la API :"
+"class:`Parser` y la API progresiva :class:`FeedParser`.  La API :class:"
+"`Parser` es más útil si tú tienes el texto del mensaje entero en memoria, o "
+"si el mensaje entero reside en un archivo en el sistema. :class:`FeedParser` "
+"es más apropiado cuando estás leyendo el mensaje de un *stream* que puede "
+"ser bloqueado esperando más entrada (tal como leer un mensaje de correo "
+"electrónico de un socket).  El :class:`FeedParser` puede consumir y analizar "
+"el mensaje de forma progresiva, y sólo retorna el objeto raíz cuando cierras "
+"el analizador."
 
-#: ../../library/email.parser.rst:39
+#: ../Doc/library/email.parser.rst:39
 msgid ""
 "Note that the parser can be extended in limited ways, and of course you can "
 "implement your own parser completely from scratch.  All of the logic that "
@@ -78,12 +101,20 @@ msgid ""
 "custom parser can create message object trees any way it finds necessary by "
 "implementing custom versions of the appropriate :mod:`policy` methods."
 msgstr ""
+"Tenga en cuenta que el analizador puede ser extendido en formas limitadas, y "
+"por supuesto puedes implementar tu propio analizador completamente desde "
+"cero.  Toda la lógica que conecta el analizador empaquetado del paquete :mod:"
+"`email` y la clase :class:`~email.message.EmailMessage` está encarnada en la "
+"clase :mod:`policy`, por lo que un analizador personalizado puede crear "
+"árboles de objetos mensaje en cualquier forma que encuentre necesario al "
+"implementar versiones personalizadas de los métodos apropiados de :mod:"
+"`policy`."
 
-#: ../../library/email.parser.rst:49
+#: ../Doc/library/email.parser.rst:49
 msgid "FeedParser API"
-msgstr "FeedParser API"
+msgstr "API *FeedParser*"
 
-#: ../../library/email.parser.rst:51
+#: ../Doc/library/email.parser.rst:51
 msgid ""
 "The :class:`BytesFeedParser`, imported from the :mod:`email.feedparser` "
 "module, provides an API that is conducive to incremental parsing of email "
@@ -94,8 +125,18 @@ msgid ""
 "`BytesParser` API may be more convenient for such use cases.  The semantics "
 "and results of the two parser APIs are identical."
 msgstr ""
+"La clase :class:`BytesFeedParser`, importado del módulo :mod:`email."
+"feedparser`, proporciona una API que es propicia para el análisis progresivo "
+"de mensajes de correo electrónico, tal como sería necesario cuando se esté "
+"leyendo el texto de un mensaje de correo electrónico de una fuente que puede "
+"bloquear (tal como un socket).  Desde luego se puede usar la clase :class:"
+"`BytesFeedParser` para analizar un mensaje de correo electrónico "
+"completamente contenido en un :term:`bytes-like object`, cadena de "
+"caracteres, o archivo, pero la API :class:`BytesParser` puede ser más "
+"conveniente para tales casos de uso.  Las semánticas y resultados de las dos "
+"API de los analizadores son idénticas."
 
-#: ../../library/email.parser.rst:60
+#: ../Doc/library/email.parser.rst:60
 msgid ""
 "The :class:`BytesFeedParser`'s API is simple; you create an instance, feed "
 "it a bunch of bytes until there's no more to feed it, then close the parser "
@@ -107,29 +148,34 @@ msgid ""
 "it found in a message.  See the :mod:`email.errors` module for the list of "
 "defects that it can find."
 msgstr ""
-":class:`BytesFeedParser` API は簡単です。まずインスタンスをつくり、それに "
-"bytes を (それ以上 bytes が必要なくなるまで) 流しこみます。その後パーザを "
-"close すると根っこ (root) のメッセージオブジェクトが返されます。標準に従った"
-"メッセージを解析する場合、 :class:`BytesFeedParser` は非常に正確であり、標準"
-"に従っていないメッセージでもちゃんと動きます。そのさい、これはメッセージがど"
-"のように壊れていると認識されたかについての情報を残します。これはメッセージオ"
-"ブジェクトの :attr:`~email.message.EmailMessage.defects` 属性にリストとして現"
-"れ、メッセージ中に発見された問題が記録されます。パーザが検出できる障害 "
-"(defect) については :mod:`email.errors` モジュールを参照してください。"
+"La API de :class:`BytesFeedParser` es simple; puedes crear una instancia, le "
+"proporcionas un montón de bytes hasta que no haya más necesidad de hacerlo, "
+"entonces cierras el analizador para recuperar el objeto del mensaje raíz. "
+"El :class:`BytesFeedParser` es extremadamente preciso cuando está analizando "
+"mensajes conformes al estándar, y hace un buen trabajo al analizar mensajes "
+"no conformes, proporcionando información acerca de cómo un mensaje fue "
+"considerado inservible.  Ingresará una lista de cualquier problema que "
+"encontró en el atributo :attr:`~email.message.EmailMessage.defects` del "
+"objeto mensaje.  Véase el módulo :mod:`email.errors` para la lista de "
+"defectos que puede encontrar."
 
-#: ../../library/email.parser.rst:70
+#: ../Doc/library/email.parser.rst:70
 msgid "Here is the API for the :class:`BytesFeedParser`:"
-msgstr "以下は :class:`BytesFeedParser` の API です:"
+msgstr "Aquí está el API para :class:`BytesFeedParser`:"
 
-#: ../../library/email.parser.rst:75
+#: ../Doc/library/email.parser.rst:75
 msgid ""
 "Create a :class:`BytesFeedParser` instance.  Optional *_factory* is a no-"
 "argument callable; if not specified use the :attr:`~email.policy.Policy."
 "message_factory` from the *policy*.  Call *_factory* whenever a new message "
 "object is needed."
 msgstr ""
+"Crea una instancia de :class:`BytesFeedParser`. El argumento opcional "
+"*_factory* es un invocable sin argumentos; si no se especifica, usa el :attr:"
+"`~email.policy.Policy.message_factory` de *policy*.  Llama a *_factory* "
+"cuando sea necesario un nuevo objeto mensaje."
 
-#: ../../library/email.parser.rst:80
+#: ../Doc/library/email.parser.rst:80
 msgid ""
 "If *policy* is specified use the rules it specifies to update the "
 "representation of the message.  If *policy* is not set, use the :class:"
@@ -140,22 +186,33 @@ msgid ""
 "more information on what else *policy* controls, see the :mod:`~email."
 "policy` documentation."
 msgstr ""
+"Si se especifica *policy*, usa las reglas que especifica para actualizar la "
+"representación del mensaje.  Si *policy* no está puesta, usa la política "
+"(*policy*) :class:`compat32<email.policy.Compat32>`, que mantiene "
+"compatibilidad con la versión 3.2 de Python del paquete de correo "
+"electrónico y proporciona a :class:`~email.message.Message` como la fábrica "
+"por defecto. Todas las otras políticas proveen a :class:`~email.message."
+"EmailMessage` como el *_factory* por defecto. Para más información en lo "
+"demás que *policy* controla, véase la documentación :mod:`~email.policy`."
 
-#: ../../library/email.parser.rst:89 ../../library/email.parser.rst:145
+#: ../Doc/library/email.parser.rst:89 ../Doc/library/email.parser.rst:145
 msgid ""
 "Note: **The policy keyword should always be specified**; The default will "
 "change to :data:`email.policy.default` in a future version of Python."
 msgstr ""
+"Nota: **La palabra clave *policy* siempre debe estar especificada**; El "
+"valor por defecto cambiará a :data:`email.policy.default` en una versión "
+"futura de Python."
 
-#: ../../library/email.parser.rst:94 ../../library/email.parser.rst:122
+#: ../Doc/library/email.parser.rst:94 ../Doc/library/email.parser.rst:122
 msgid "Added the *policy* keyword."
-msgstr "キーワード引数 *policy* が追加されました。"
+msgstr "Se añadió la palabra clave *policy*."
 
-#: ../../library/email.parser.rst:95
+#: ../Doc/library/email.parser.rst:95
 msgid "*_factory* defaults to the policy ``message_factory``."
-msgstr ""
+msgstr "*_factory* es por defecto la *policy* ``message_factory``."
 
-#: ../../library/email.parser.rst:100
+#: ../Doc/library/email.parser.rst:100
 msgid ""
 "Feed the parser some more data.  *data* should be a :term:`bytes-like "
 "object` containing one or more lines.  The lines can be partial and the "
@@ -163,20 +220,24 @@ msgid ""
 "any of the three common line endings: carriage return, newline, or carriage "
 "return and newline (they can even be mixed)."
 msgstr ""
-"パーサーにデータを供給します。 *data* は 1行または複数行からなる :term:"
-"`bytes-like object` を渡します。渡される行は完結していなくてもよく、その場合"
-"パーサーは部分的な行を適切につなぎ合わせます。各行は3種類の標準的な行末文字 "
-"(復帰 CR、改行 LF、または CR+LF) どれかの組み合わせでよく、これらが混在しても"
-"かまいません。"
+"Le proporciona al analizador algunos datos más.  *data* debe ser un :term:"
+"`bytes-like object` conteniendo una o más líneas.  Las líneas pueden ser "
+"parciales y el analizador va a juntar tales líneas parciales "
+"apropiadamente.  las líneas pueden tener cualquiera de las tres "
+"terminaciones de línea comunes: retorno de cargo (*retorno de cargo*), nueva "
+"línea (*newline*), o retorno de cargo y nueva línea (pueden ser mezclados)."
 
-#: ../../library/email.parser.rst:109
+#: ../Doc/library/email.parser.rst:109
 msgid ""
 "Complete the parsing of all previously fed data and return the root message "
 "object.  It is undefined what happens if :meth:`~feed` is called after this "
 "method has been called."
 msgstr ""
+"Completa el análisis de todos los datos previamente proporcionados y retorna "
+"la raíz del objeto mensaje. No está definido lo que pasa si se llama a :meth:"
+"`~feed` después de que este método haya sido llamado."
 
-#: ../../library/email.parser.rst:116
+#: ../Doc/library/email.parser.rst:116
 msgid ""
 "Works like :class:`BytesFeedParser` except that the input to the :meth:"
 "`~BytesFeedParser.feed` method must be a string.  This is of limited "
@@ -184,12 +245,17 @@ msgid ""
 "contain only ASCII text or, if :attr:`~email.policy.Policy.utf8` is "
 "``True``, no binary attachments."
 msgstr ""
+"Funciona como :class:`BytesFeedParser` excepto que la entrada al método :"
+"meth:`~BytesFeedParser.feed` no debe ser una cadena de caracteres.  Esto es "
+"utilidad limitada, ya que la única manera de que tal mensaje sea válido es "
+"que sólo contenga texto ASCII o, si :attr:`~email.policy.Policy.utf8` es "
+"``True``, sin binarios adjuntos."
 
-#: ../../library/email.parser.rst:126
+#: ../Doc/library/email.parser.rst:126
 msgid "Parser API"
-msgstr ""
+msgstr "API *Parser*"
 
-#: ../../library/email.parser.rst:128
+#: ../Doc/library/email.parser.rst:128
 msgid ""
 "The :class:`BytesParser` class, imported from the :mod:`email.parser` "
 "module, provides an API that can be used to parse a message when the "
@@ -202,34 +268,51 @@ msgid ""
 "do not attempt to parse the message body, instead setting the payload to the "
 "raw body."
 msgstr ""
+"La clase :class:`BytesParser`, importado del módulo :mod:`email.parser`, "
+"proporciona una API que puede ser usada para analizar un mensaje cuando el "
+"contenido completo del mensaje esté disponible en un :term:`bytes-like "
+"object` o archivo. El módulo :mod:`email.parser` también proporciona a :"
+"class:`Parser` para analizar cadenas de caracteres, y analizadores de sólo "
+"cabeceras, :class:`BytesHeaderParser` y :class:`HeaderParser` que pueden ser "
+"usados si sólo estás interesado en las cabeceras del mensaje. :class:"
+"`BytesHeaderParser` y :class:`HeaderParser` puede ser más rápidos en estas "
+"situaciones, ya que no intentan analizar el cuerpo del mensaje, en vez de "
+"eso configuran la carga al cuerpo puro."
 
-#: ../../library/email.parser.rst:141
+#: ../Doc/library/email.parser.rst:141
 msgid ""
 "Create a :class:`BytesParser` instance.  The *_class* and *policy* arguments "
 "have the same meaning and semantics as the *_factory* and *policy* arguments "
 "of :class:`BytesFeedParser`."
 msgstr ""
+"Crea una instancia de :class:`BytesParser`. Los argumentos *_class* y "
+"*policy* tiene el mismo significado y semántica que los argumentos "
+"*_factory* y *policy* de :class:`BytesFeedParser`."
 
-#: ../../library/email.parser.rst:148
+#: ../Doc/library/email.parser.rst:148
 msgid ""
 "Removed the *strict* argument that was deprecated in 2.4.  Added the "
 "*policy* keyword."
 msgstr ""
-"2.4 で非推奨になった *strict* 引数の削除。キーワード引数 *policy* の追加。"
+"Se eliminó el argumento *strict* que fue deprecado en 2.4.  Se añadió la "
+"palabra clave *policy*."
 
-#: ../../library/email.parser.rst:151 ../../library/email.parser.rst:200
-#: ../../library/email.parser.rst:280
+#: ../Doc/library/email.parser.rst:151 ../Doc/library/email.parser.rst:200
+#: ../Doc/library/email.parser.rst:280
 msgid "*_class* defaults to the policy ``message_factory``."
-msgstr ""
+msgstr "*_class* es por defecto la política ``message_factory``."
 
-#: ../../library/email.parser.rst:156
+#: ../Doc/library/email.parser.rst:156
 msgid ""
 "Read all the data from the binary file-like object *fp*, parse the resulting "
 "bytes, and return the message object.  *fp* must support both the :meth:`~io."
 "IOBase.readline` and the :meth:`~io.IOBase.read` methods."
 msgstr ""
+"Lee todos los datos del objeto binario parecido a archivo *fp*, analiza los "
+"bytes resultantes, y retorna el objeto mensaje.  *fp* debe soportar tanto el "
+"método :meth:`~io.IOBase.readline` como el método :meth:`~io.IOBase.read`."
 
-#: ../../library/email.parser.rst:161
+#: ../Doc/library/email.parser.rst:161
 msgid ""
 "The bytes contained in *fp* must be formatted as a block of :rfc:`5322` (or, "
 "if :attr:`~email.policy.Policy.utf8` is ``True``, :rfc:`6532`) style headers "
@@ -239,160 +322,188 @@ msgid ""
 "contain MIME-encoded subparts, including subparts with a :mailheader:"
 "`Content-Transfer-Encoding` of ``8bit``)."
 msgstr ""
+"Los bytes contenidos en *fp* deben ser formateados como un bloque de "
+"cabeceras de estilo y líneas de continuación de cabecera de :rfc:`5322` (o, "
+"si :attr:`~email.policy.Policy.utf8` es ``True``, :rfc:`6532`).  El bloque "
+"cabecera se termina o al final de los datos o por una línea blanca.  Después "
+"del bloque de cabecera esta él cuerpo del mensaje (que puede contener "
+"subpartes codificadas como MIME, incluyendo subpartes con un :mailheader:"
+"`Content-Transfer-Encoding` de ``8bit``)."
 
-#: ../../library/email.parser.rst:169
+#: ../Doc/library/email.parser.rst:169
 msgid ""
 "Optional *headersonly* is a flag specifying whether to stop parsing after "
 "reading the headers or not.  The default is ``False``, meaning it parses the "
 "entire contents of the file."
 msgstr ""
-"オプション引数 *headersonly* はヘッダを読み終えた後にパースを止めるかを指定す"
-"るフラグです。デフォルトは ``False`` で、ファイルの内容全体をパースします。"
+"El argumento opcional *headersonly* es un flag que especifica si se debe "
+"analizar después de leer las cabeceras o no.  El valor por defecto es "
+"``False``, significando que analiza el contenido entero del archivo."
 
-#: ../../library/email.parser.rst:176
+#: ../Doc/library/email.parser.rst:176
 msgid ""
 "Similar to the :meth:`parse` method, except it takes a :term:`bytes-like "
 "object` instead of a file-like object.  Calling this method on a :term:"
 "`bytes-like object` is equivalent to wrapping *bytes* in a :class:`~io."
 "BytesIO` instance first and calling :meth:`parse`."
 msgstr ""
+"Similar al método :meth:`parse`, excepto que toma un :term:`bytes-like "
+"object` en vez de un objeto similar a un archivo.  Llamar a este método en "
+"un :term:`bytes-like object` es equivalente a envolver a *bytes* en una "
+"instancia de :class:`~io.BytesIO` primero y llamar a :meth:`parse`."
 
-#: ../../library/email.parser.rst:181 ../../library/email.parser.rst:221
+#: ../Doc/library/email.parser.rst:181 ../Doc/library/email.parser.rst:221
 msgid "Optional *headersonly* is as with the :meth:`parse` method."
-msgstr "オプション引数 *headersonly* は :meth:`parse` メソッドと同じです。"
+msgstr "El argumento opcional *headersonly* es como el método :meth:`parse`."
 
-#: ../../library/email.parser.rst:188
+#: ../Doc/library/email.parser.rst:188
 msgid ""
 "Exactly like :class:`BytesParser`, except that *headersonly* defaults to "
 "``True``."
 msgstr ""
+"Exactamente como :class:`BytesParser`, excepto que *headersonly* es por "
+"defecto ``True``."
 
-#: ../../library/email.parser.rst:196
+#: ../Doc/library/email.parser.rst:196
 msgid ""
 "This class is parallel to :class:`BytesParser`, but handles string input."
 msgstr ""
+"Esta clase es paralela a :class:`BytesParser`, pero trata entradas de "
+"cadenas de caracteres."
 
-#: ../../library/email.parser.rst:198 ../../library/email.parser.rst:245
-#: ../../library/email.parser.rst:258 ../../library/email.parser.rst:268
-#: ../../library/email.parser.rst:278
+#: ../Doc/library/email.parser.rst:198 ../Doc/library/email.parser.rst:245
+#: ../Doc/library/email.parser.rst:258 ../Doc/library/email.parser.rst:268
+#: ../Doc/library/email.parser.rst:278
 msgid "Removed the *strict* argument.  Added the *policy* keyword."
-msgstr "*strict* 引数の削除。キーワード引数 *policy* の追加。"
+msgstr ""
+"Se eliminó el argumento *strict*.  Se añadió la palabra clave *policy*."
 
-#: ../../library/email.parser.rst:205
+#: ../Doc/library/email.parser.rst:205
 msgid ""
 "Read all the data from the text-mode file-like object *fp*, parse the "
 "resulting text, and return the root message object.  *fp* must support both "
 "the :meth:`~io.TextIOBase.readline` and the :meth:`~io.TextIOBase.read` "
 "methods on file-like objects."
 msgstr ""
-"ファイルなどテキストモードのストリーム形式 (file-like) のオブジェクト *fp* か"
-"らすべてのデータを読み込み、得られたテキストを解析して基底 (root) メッセージ"
-"オブジェクト構造を返します。 *fp* はストリーム形式のオブジェクトで :meth:"
-"`~io.TextIOBase.readline` および :meth:`~io.TextIOBase.read` 両方のメソッドを"
-"サポートしている必要があります。"
+"Lee todos los datos del modo texto del objeto parecido a archivo *fp*, "
+"analiza el texto resultante, y retorna el objeto mensaje raíz.  *fp* debe "
+"soportar tanto el método :meth:`~io.TextIOBase.readline` y el método :meth:"
+"`~io.TextIOBase.read` en objetos parecidos a archivos."
 
-#: ../../library/email.parser.rst:210
+#: ../Doc/library/email.parser.rst:210
 msgid ""
 "Other than the text mode requirement, this method operates like :meth:"
 "`BytesParser.parse`."
 msgstr ""
+"Además de el requisito del modo texto, este método opera como :meth:"
+"`BytesParser.parse`."
 
-#: ../../library/email.parser.rst:216
+#: ../Doc/library/email.parser.rst:216
 msgid ""
 "Similar to the :meth:`parse` method, except it takes a string object instead "
 "of a file-like object.  Calling this method on a string is equivalent to "
 "wrapping *text* in a :class:`~io.StringIO` instance first and calling :meth:"
 "`parse`."
 msgstr ""
-":meth:`parse` メソッドに似ていますが、ファイルなどのストリーム形式のかわりに"
-"文字列を引数としてとるところが違います。文字列に対してこのメソッドを呼ぶこと"
-"は、 *text* を :class:`~io.StringIO` インスタンスとして作成して :meth:"
-"`parse` を適用するのと同じです。"
+"Similar al método :meth:`parse`, excepto que toma un objeto de cadena de "
+"caracteres de un objeto similar a un archivo.  Llamar a este método en una "
+"cadena de caracteres es equivalente a envolver a *text* en una instancia de :"
+"class:`~io.StringIO` primero y llamar a :meth:`parse`."
 
-#: ../../library/email.parser.rst:226
+#: ../Doc/library/email.parser.rst:226
 msgid ""
 "Exactly like :class:`Parser`, except that *headersonly* defaults to ``True``."
 msgstr ""
+"Exactamente como :class:`Parser`, excepto que *headersonly* es por defecto "
+"``True``."
 
-#: ../../library/email.parser.rst:230
+#: ../Doc/library/email.parser.rst:230
 msgid ""
 "Since creating a message object structure from a string or a file object is "
 "such a common task, four functions are provided as a convenience.  They are "
 "available in the top-level :mod:`email` package namespace."
 msgstr ""
-"ファイルや文字列からメッセージオブジェクト構造を作成するのはかなりよくおこな"
-"われる作業なので、便宜上次のような 4つの関数が提供されています。これらは :"
-"mod:`email` パッケージのトップレベルの名前空間で使用できます。"
+"Ya que crear una estructura de un objeto mensaje de una cadena de caracteres "
+"o un objeto archivo es una tarea tan común, Se proporcionaron 4 funciones "
+"como una conveniencia.  Están disponibles en paquete de espacio de nombres "
+"de alto nivel :mod:`email`."
 
-#: ../../library/email.parser.rst:239
+#: ../Doc/library/email.parser.rst:239
 msgid ""
 "Return a message object structure from a :term:`bytes-like object`.  This is "
 "equivalent to ``BytesParser().parsebytes(s)``.  Optional *_class* and "
 "*policy* are interpreted as with the :class:`~email.parser.BytesParser` "
 "class constructor."
 msgstr ""
-":term:`bytes-like オブジェクト <bytes-like object>` からメッセージオブジェク"
-"ト構造を作成して返します。これは ``BytesParser().parsebytes(s)`` と同じです。"
-"オプション引数 *_class* および *policy* は :class:`~email.parser."
-"BytesParser` クラスのコンストラクタと同様に解釈されます。"
+"Retorna una estructura del objeto mensaje de un :term:`bytes-like object`. "
+"Esto es equivalente a ``BytesParser().parsebytes(s)``. El argumento opcional "
+"*_class* y *policy* son interpretados como sucede con el constructor de "
+"clase :class:`~email.parser.BytesParser`."
 
-#: ../../library/email.parser.rst:252
+#: ../Doc/library/email.parser.rst:252
 msgid ""
 "Return a message object structure tree from an open binary :term:`file "
 "object`.  This is equivalent to ``BytesParser().parse(fp)``.  *_class* and "
 "*policy* are interpreted as with the :class:`~email.parser.BytesParser` "
 "class constructor."
 msgstr ""
-"オープンされたバイナリ :term:`file object` からメッセージオブジェクト構造を作"
-"成して返します。これは ``BytesParser().parse(fp)`` と同じです。 *_class* およ"
-"び *policy* は :class:`~email.parser.BytesParser` クラスのコンストラクタと同"
-"様に解釈されます。"
+"Retorna una estructura árbol del objeto mensaje de un :term:`file object` "
+"binario abierto.  Esto es equivalente a ``BytesParser().parse(fp)``.  "
+"*_class* y *policy* son interpretados como sucede con el constructor de "
+"clase :class:`~email.parser.BytesParser`."
 
-#: ../../library/email.parser.rst:264
+#: ../Doc/library/email.parser.rst:264
 msgid ""
 "Return a message object structure from a string.  This is equivalent to "
 "``Parser().parsestr(s)``.  *_class* and *policy* are interpreted as with "
 "the :class:`~email.parser.Parser` class constructor."
 msgstr ""
-"文字列からメッセージオブジェクト構造を作成して返します。これは ``Parser()."
-"parsestr(s)`` と同じです。 *_class* および *policy* は :class:`~email.parser."
-"Parser` クラスのコンストラクタと同様に解釈されます。"
+"Retorna una estructura del objeto mensaje de una cadena de caracteres.  Esto "
+"es equivalente a ``Parser().parsestr(s)``. *_class* y *policy* son "
+"interpretados como sucede con el constructor de clase :class:`~email.parser."
+"Parser`."
 
-#: ../../library/email.parser.rst:274
+#: ../Doc/library/email.parser.rst:274
 msgid ""
 "Return a message object structure tree from an open :term:`file object`. "
 "This is equivalent to ``Parser().parse(fp)``.  *_class* and *policy* are "
 "interpreted as with the :class:`~email.parser.Parser` class constructor."
 msgstr ""
-"オープンされた :term:`file object` からメッセージオブジェクト構造を作成して返"
-"します。これは ``Parser().parse(fp)`` と同じです。 *_class* および *policy* "
-"は :class:`~email.parser.Parser` クラスのコンストラクタと同様に解釈されます。"
+"Retorna una estructura árbol del objeto mensaje de un :term:`file object` "
+"abierto. Esto es equivalente a ``Parser().parse(fp)``.  *_class* y *policy* "
+"son interpretados como sucede con el constructor de clase :class:`~email."
+"parser.Parser`."
 
-#: ../../library/email.parser.rst:283
+#: ../Doc/library/email.parser.rst:283
 msgid ""
 "Here's an example of how you might use :func:`message_from_bytes` at an "
 "interactive Python prompt::"
 msgstr ""
-"対話的な Python プロンプトで :func:`message_from_bytes` を使用するとすれば、"
-"このようになります::"
+"Aquí está un ejemplo de cómo puedes usar :func:`message_from_bytes` en una "
+"entrada interactiva de Python::"
 
-#: ../../library/email.parser.rst:291
+#: ../Doc/library/email.parser.rst:291
 msgid "Additional notes"
-msgstr "追記事項"
+msgstr "Notas adicionales"
 
-#: ../../library/email.parser.rst:293
+#: ../Doc/library/email.parser.rst:293
 msgid "Here are some notes on the parsing semantics:"
-msgstr "以下はテキスト解析の際に適用されるいくつかの規約です:"
+msgstr "Aquí están algunas notas sobre la semántica del análisis:"
 
-#: ../../library/email.parser.rst:295
+#: ../Doc/library/email.parser.rst:295
 msgid ""
 "Most non-\\ :mimetype:`multipart` type messages are parsed as a single "
 "message object with a string payload.  These objects will return ``False`` "
 "for :meth:`~email.message.EmailMessage.is_multipart`, and :meth:`~email."
 "message.EmailMessage.iter_parts` will yield an empty list."
 msgstr ""
+"La mayoría de los mensajes de tipo que no son :mimetype:`multipart` son "
+"actualizados como un solo objeto mensaje con una carga de cadena de "
+"caracteres.  Estos objetos retornarán ``False`` para :meth:`~email.message."
+"EmailMessage.is_multipart`, y :meth:`~email.message.EmailMessage.iter_parts` "
+"cederá (*yield*) una lista vacía."
 
-#: ../../library/email.parser.rst:300
+#: ../Doc/library/email.parser.rst:300
 msgid ""
 "All :mimetype:`multipart` type messages will be parsed as a container "
 "message object with a list of sub-message objects for their payload.  The "
@@ -400,8 +511,13 @@ msgid ""
 "EmailMessage.is_multipart`, and :meth:`~email.message.EmailMessage."
 "iter_parts` will yield a list of subparts."
 msgstr ""
+"Todos los mensajes de tipo :mimetype:`multipart` serán analizados como un "
+"objeto mensaje contenedor con una lista de objetos sub-mensajes para sus "
+"cargas.  El mensaje del contenedor externo retornará ``True`` para :meth:"
+"`~email.message.EmailMessage.is_multipart`, y :meth:`~email.message."
+"EmailMessage.iter_parts` cederá (*yield*) una lista de subpartes."
 
-#: ../../library/email.parser.rst:306
+#: ../Doc/library/email.parser.rst:306
 msgid ""
 "Most messages with a content type of :mimetype:`message/\\*` (such as :"
 "mimetype:`message/delivery-status` and :mimetype:`message/rfc822`) will also "
@@ -410,8 +526,14 @@ msgid ""
 "The single element yielded by :meth:`~email.message.EmailMessage.iter_parts` "
 "will be a sub-message object."
 msgstr ""
+"La mayoría de mensajes con una tipo de contenido de :mimetype:`message/\\*` "
+"(tal como :mimetype:`message/delivery-status` y :mimetype:`message/rfc822`) "
+"también serán analizados como objetos contenedores que contienen una lista "
+"de cargas de longitud 1. Su método :meth:`~email.message.EmailMessage."
+"is_multipart` retornará ``True``. El único elemento cedido (*yielded*) por :"
+"meth:`~email.message.EmailMessage.iter_parts` será un objeto sub-mensaje."
 
-#: ../../library/email.parser.rst:313
+#: ../Doc/library/email.parser.rst:313
 msgid ""
 "Some non-standards-compliant messages may not be internally consistent about "
 "their :mimetype:`multipart`\\ -edness.  Such messages may have a :mailheader:"
@@ -422,11 +544,11 @@ msgid ""
 "MultipartInvariantViolationDefect` class in their *defects* attribute list.  "
 "See :mod:`email.errors` for details."
 msgstr ""
-"いくつかの標準的でないメッセージは、 :mimetype:`multipart` の使い方に統一がと"
-"れていない場合があります。このようなメッセージは :mailheader:`Content-Type` "
-"ヘッダに :mimetype:`multipart` を指定しているものの、その :meth:`~email."
-"message.EmailMessage.is_multipart` メソッドは ``False`` を返すことがありま"
-"す。もしこのようなメッセージが :class:`~email.parser.FeedParser` によって解析"
-"されると、その *defects* 属性のリスト中には :class:`~email.errors."
-"MultipartInvariantViolationDefect` クラスのインスタンスが現れます。詳しい情報"
-"については :mod:`email.errors` を参照してください。"
+"Algunos mensajes de conformidad no estándar pueden no ser internamente "
+"consistentes acerca de su :mimetype:`multipart`\\ -idad. Tales mensajes "
+"pueden tener una cabecera :mailheader:`Content-Type` de tipo :mimetype:"
+"`multipart`, pero su método :meth:`~email.message.EmailMessage.is_multipart` "
+"puede retornar ``False``. Si tales mensajes son analizados con :class:"
+"`~email.parser.FeedParser`, tendrán una instancia de la clase :class:`~email."
+"errors.MultipartInvariantViolationDefect` en su lista de atributos "
+"*defects*.  Véase :mod:`email.errors` para más detalles."

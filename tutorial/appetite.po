@@ -1,35 +1,32 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-# Yusuke Miyazaki <miyazaki.dev@gmail.com>, 2021
-# Takanori Suzuki <takanori@takanory.net>, 2023
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:49+0000\n"
-"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2021-10-16 21:42+0200\n"
+"PO-Revision-Date: 2022-11-11 08:53-0300\n"
+"Last-Translator: Carlos A. Crespo <lvccrespo@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.9.1\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: ../../tutorial/appetite.rst:5
+#: ../Doc/tutorial/appetite.rst:5
 msgid "Whetting Your Appetite"
-msgstr "やる気を高めよう"
+msgstr "Abriendo el apetito"
 
-#: ../../tutorial/appetite.rst:7
+#: ../Doc/tutorial/appetite.rst:7
 msgid ""
 "If you do much work on computers, eventually you find that there's some task "
 "you'd like to automate.  For example, you may wish to perform a search-and-"
@@ -37,13 +34,13 @@ msgid ""
 "of photo files in a complicated way. Perhaps you'd like to write a small "
 "custom database, or a specialized GUI application, or a simple game."
 msgstr ""
-"コンピュータを使っていろいろな作業をしていると、自動化したい作業が出てくるで"
-"しょう。たとえば、たくさんのテキストファイルで検索-置換操作を行いたい、大量の"
-"写真ファイルを込み入ったやりかたでファイル名を整理して変更したり、などです。"
-"ちょっとした専用のデータベースや、何か専用のGUIアプリケーション、シンプルな"
-"ゲームを作りたいかもしれません。"
+"Si trabajas mucho con ordenadores, en algún momento encontrarás que hay "
+"alguna tarea que quieres automatizar. Por ejemplo, quizás quieres buscar y "
+"remplazar un texto en muchos ficheros o renombrar y reordenar un montón de "
+"imágenes de forma complicada. Quizás lo que quieres es escribir una pequeña "
+"base de datos personalizada, una interfaz gráfica o un juego simple."
 
-#: ../../tutorial/appetite.rst:13
+#: ../Doc/tutorial/appetite.rst:13
 msgid ""
 "If you're a professional software developer, you may have to work with "
 "several C/C++/Java libraries but find the usual write/compile/test/re-"
@@ -52,17 +49,18 @@ msgid ""
 "written a program that could use an extension language, and you don't want "
 "to design and implement a whole new language for your application."
 msgstr ""
-"あなたがプロのソフト開発者として、C/C++/Java ライブラリを扱う必要があるけど"
-"も、通常の編集/コンパイル/テスト/再コンパイルのサイクルを遅すぎると感じている"
-"かもしれません。上記ライブラリのためのテストを書くことにうんざりしているかも"
-"しれません。または、拡張言語を持つアプリケーションを書いているなら、そのため"
-"に新しい言語一式の設計と実装をしたくないでしょう。"
+"Si eres un desarrollador profesional, quizás quieres trabajar con varias "
+"librerías de C/C++/Java pero encuentras el ciclo de escribir/compilar/probar/"
+"recompilar bastante lento. Quizás estás escribiendo una serie de pruebas "
+"para éstas librerías y te parece tedioso escribir el código de pruebas. O "
+"quizás has escrito un programa que puede utilizar un lenguaje como extensión "
+"y no quieres diseñar e implementar un lenguaje entero para tu aplicación."
 
-#: ../../tutorial/appetite.rst:20
+#: ../Doc/tutorial/appetite.rst:20
 msgid "Python is just the language for you."
-msgstr "Pythonはそんなあなたのための言語です。"
+msgstr "Python es justo el lenguaje para ti."
 
-#: ../../tutorial/appetite.rst:22
+#: ../Doc/tutorial/appetite.rst:22
 msgid ""
 "You could write a Unix shell script or Windows batch files for some of these "
 "tasks, but shell scripts are best at moving around files and changing text "
@@ -71,14 +69,16 @@ msgid ""
 "draft program.  Python is simpler to use, available on Windows, macOS, and "
 "Unix operating systems, and will help you get the job done more quickly."
 msgstr ""
-"そういった処理は、Unix シェルスクリプトや Windows バッチファイルで書くことも"
-"できます。しかし、シェルスクリプトはファイル操作やテキストデータの操作には向"
-"いていますが、GUIアプリケーションやゲームにはむいていません。C/C++/Java プロ"
-"グラムを書くこともできますが、最初の試し書きだけでもかなりの時間がかかってし"
-"まいます。Pythonはもっと簡単に利用でき、Windows、macOS、そして Unix オペレー"
-"ティングシステムで動作し、あなたの仕事をすばやく片付ける助けになるでしょう。"
+"Puedes escribir un script de shell de Unix o archivos por lotes de Windows "
+"para algunas de estas tareas. Los scripts de shell son mejores para mover "
+"archivos y cambiar datos de texto, pero no son adecuados para juegos o "
+"aplicaciones GUI. Podrías escribir un programa C / C ++ / Java, pero "
+"llevaría mucho tiempo de desarrollo obtener incluso un primer programa de "
+"borrador. Python es más fácil de usar, está disponible en los sistemas "
+"operativos Windows, macOS y Unix, y te ayudará a hacer el trabajo más "
+"rápidamente."
 
-#: ../../tutorial/appetite.rst:29
+#: ../Doc/tutorial/appetite.rst:29
 msgid ""
 "Python is simple to use, but it is a real programming language, offering "
 "much more structure and support for large programs than shell scripts or "
@@ -89,15 +89,16 @@ msgid ""
 "problem domain than Awk or even Perl, yet many things are at least as easy "
 "in Python as in those languages."
 msgstr ""
-"Python は簡単に利用できますが、本物のプログラミング言語であり、シェルスクリプ"
-"トやバッチファイルよりも多くの機構があり、大きなプログラムの開発にも適してい"
-"ます。一方では、Python は C よりたくさんのエラーチェックを実行時に行ってお"
-"り、また可変長配列や辞書などの高級な型を組込みで持つ *超高級言語(very-high-"
-"level language)* です。Python は Awk や Perl などよりも汎用的なデータ型を備え"
-"ており、より多くの領域で利用できます。また、Pythonはこれらの言語と比べても、"
-"少なくとも同じぐらいには簡単です。"
+"Python es fácil de utilizar y es un verdadero lenguaje de programación "
+"ofreciendo mucha más estructura y soporte para programas grandes que la que "
+"ofrecen scripts de shell o archivos por lotes. Por otro lado, Python también "
+"ofrece mayor comprobación de errores que C y siendo un *lenguaje de muy alto "
+"nivel* tiene tipos de datos de alto nivel incorporados como listas flexibles "
+"y diccionarios. Debido a sus tipos de datos más generales, Python es "
+"aplicable a más dominios que Awk o Perl, aunque hay muchas cosas que son tan "
+"sencillas en Python como en esos lenguajes."
 
-#: ../../tutorial/appetite.rst:37
+#: ../Doc/tutorial/appetite.rst:37
 msgid ""
 "Python allows you to split your program into modules that can be reused in "
 "other Python programs.  It comes with a large collection of standard modules "
@@ -106,14 +107,14 @@ msgid ""
 "file I/O, system calls, sockets, and even interfaces to graphical user "
 "interface toolkits like Tk."
 msgstr ""
-"Python では、プログラムをモジュールに分割して、他の Python プログラムで再利用"
-"できます。Python には膨大な標準モジュールが付属していて、プログラムを作る上で"
-"の基盤として、あるいは Python プログラミングを学ぶためのサンプルとして利用で"
-"きます。標準モジュールには、ファイル I/O、システムコール、ソケットといった機"
-"能や、Tk のようなグラフィカルユーザインターフェースツールキットを使うためのイ"
-"ンターフェイスなども提供しています。"
+"Python te permite dividir tu programa en módulos que pueden reutilizarse en "
+"otros programas de Python. Tiene una gran colección de módulos estándar que "
+"puedes utilizar como la base de tus programas o como ejemplos para empezar a "
+"aprender Python. Algunos de estos módulos proporcionan cosas como entrada/"
+"salida de ficheros, llamadas a sistema, sockets e incluso interfaces a "
+"herramientas de interfaz gráfica como Tk."
 
-#: ../../tutorial/appetite.rst:44
+#: ../Doc/tutorial/appetite.rst:44
 msgid ""
 "Python is an interpreted language, which can save you considerable time "
 "during program development because no compilation and linking is necessary.  "
@@ -122,41 +123,44 @@ msgid ""
 "functions during bottom-up program development. It is also a handy desk "
 "calculator."
 msgstr ""
-"Python はインタプリタ言語です。コンパイルやリンクの必要がないので、プログラム"
-"を開発する際にかなりの時間を節約できます。インタプリタは対話的にも使えるの"
-"で、言語の様々な機能について実験してみたり、書き捨てのプログラムを書いたり、"
-"ボトムアップでプログラムを開発する際に、関数をテストしたりといったことが簡単"
-"にできます。便利な電卓にもなります。"
+"Python es un lenguaje interpretado, lo cual puede ahorrarte mucho tiempo "
+"durante el desarrollo ya que no es necesario compilar ni enlazar. El "
+"intérprete puede usarse interactivamente, lo que facilita experimentar con "
+"características del lenguaje, escribir programas desechables o probar "
+"funciones cuando se hace desarrollo de programas de abajo hacia arriba. Es "
+"también una calculadora de escritorio práctica."
 
-#: ../../tutorial/appetite.rst:50
+#: ../Doc/tutorial/appetite.rst:50
 msgid ""
 "Python enables programs to be written compactly and readably.  Programs "
 "written in Python are typically much shorter than equivalent C,  C++, or "
 "Java programs, for several reasons:"
 msgstr ""
-"Python では、とてもコンパクトで読みやすいプログラムを書けます。Python で書か"
-"れたプログラムは大抵、同じ機能の C 言語, C++ 言語や Java のプログラムよりもは"
-"るかに短くなります。これには以下のようないくつかの理由があります:"
+"Python permite escribir programas compactos y legibles. Los programas en "
+"Python son típicamente más cortos que sus programas equivalentes en C, C++ o "
+"Java por varios motivos:"
 
-#: ../../tutorial/appetite.rst:54
+#: ../Doc/tutorial/appetite.rst:54
 msgid ""
 "the high-level data types allow you to express complex operations in a "
 "single statement;"
-msgstr "高レベルのデータ型によって、複雑な操作を一つの実行文で表現できます。"
+msgstr ""
+"los tipos de datos de alto nivel permiten expresar operaciones complejas en "
+"una sola instrucción;"
 
-#: ../../tutorial/appetite.rst:57
+#: ../Doc/tutorial/appetite.rst:57
 msgid ""
 "statement grouping is done by indentation instead of beginning and ending "
 "brackets;"
 msgstr ""
-"実行文のグループ化を、グループの開始や終了の括弧ではなくインデントで行えま"
-"す。"
+"la agrupación de instrucciones se hace mediante indentación en vez de llaves "
+"de apertura y cierre;"
 
-#: ../../tutorial/appetite.rst:60
+#: ../Doc/tutorial/appetite.rst:60
 msgid "no variable or argument declarations are necessary."
-msgstr "変数や引数の宣言が不要です。"
+msgstr "no es necesario declarar variables ni argumentos."
 
-#: ../../tutorial/appetite.rst:62
+#: ../Doc/tutorial/appetite.rst:62
 msgid ""
 "Python is *extensible*: if you know how to program in C it is easy to add a "
 "new built-in function or module to the interpreter, either to perform "
@@ -166,53 +170,54 @@ msgid ""
 "Python interpreter into an application written in C and use it as an "
 "extension or command language for that application."
 msgstr ""
-"Python には *拡張性* があります: C 言語でプログラムを書く方法を知っているな"
-"ら、簡単に新たな組み込み関数やモジュールを、簡単にインタプリタに追加できま"
-"す。これによって、いちばん時間のかかる処理を高速化したり、ベンダ特有のグラ"
-"フィクスライブラリなどの、 バイナリ形式でしか手に入らないライブラリを Python "
-"にリンクしたりできます。その気になれば、Python インタプリタを C で書かれたア"
-"プリケーションにリンクして、アプリケーションに対する拡張言語や命令言語として"
-"も使えます。"
+"Python es *extensible*: si ya sabes programar en C es fácil añadir nuevas "
+"funciones o módulos al intérprete, ya sea para realizar operaciones críticas "
+"a velocidad máxima, o para enlazar programas de Python con bibliotecas que "
+"tal vez sólo estén disponibles de forma binaria (por ejemplo bibliotecas "
+"gráficas específicas de un fabricante). Una vez estés realmente "
+"entusiasmado, puedes enlazar el intérprete Python en una aplicación hecha en "
+"C y usarlo como lenguaje de extensión o de comando para esa aplicación."
 
-#: ../../tutorial/appetite.rst:70
+#: ../Doc/tutorial/appetite.rst:70
 msgid ""
 "By the way, the language is named after the BBC show \"Monty Python's Flying "
 "Circus\" and has nothing to do with reptiles.  Making references to Monty "
 "Python skits in documentation is not only allowed, it is encouraged!"
 msgstr ""
-"ところで、この言語は BBC のショー番組、\"モンティパイソンの空飛ぶサーカス "
-"(Monty Python's Flying Circus)\" から取ったもので、爬虫類とは関係ありません。"
-"このドキュメントでは、モンティパイソンの寸劇への参照が許可されているだけでな"
-"く、むしろ推奨されています！"
+"Por cierto, el lenguaje recibe su nombre del programa de televisión de la "
+"BBC \"Monty Python's Flying Circus\" y no tiene nada que ver con reptiles. "
+"Hacer referencias sobre Monty Python en la documentación no sólo esta "
+"permitido, ¡sino que también está bien visto!"
 
-#: ../../tutorial/appetite.rst:74
+#: ../Doc/tutorial/appetite.rst:74
 msgid ""
 "Now that you are all excited about Python, you'll want to examine it in some "
 "more detail.  Since the best way to learn a language is to use it, the "
 "tutorial invites you to play with the Python interpreter as you read."
 msgstr ""
-"さて、皆さんはもう Python にワクワクして、もうちょっと詳しく調べてみたくなっ"
-"たはずです。プログラミング言語を習得する最良の方法は使ってみることですから、"
-"このチュートリアルではみなさんが読んだ内容を Python インタプリタで試してみる"
-"ことをおすすめします。"
+"Ahora que estás emocionado con Python, querrás verlo en más detalle. Como la "
+"mejor forma de aprender un lenguaje es usarlo, el tutorial te invita a que "
+"juegues con el intérprete de Python a medida que vas leyendo."
 
-#: ../../tutorial/appetite.rst:78
+#: ../Doc/tutorial/appetite.rst:78
 msgid ""
 "In the next chapter, the mechanics of using the interpreter are explained.  "
 "This is rather mundane information, but essential for trying out the "
 "examples shown later."
 msgstr ""
-"次の章では、まずインタプリタの使い方を説明します。これはわかりきった内容かも"
-"しれませんが、後に説明する例題を試してみる上で不可欠なことです。"
+"En el próximo capítulo se explicará la mecánica de uso del intérprete. Esta "
+"es información bastante mundana, pero es esencial para poder probar los "
+"ejemplos que aparecerán más adelante."
 
-#: ../../tutorial/appetite.rst:82
+#: ../Doc/tutorial/appetite.rst:82
 msgid ""
 "The rest of the tutorial introduces various features of the Python language "
 "and system through examples, beginning with simple expressions, statements "
 "and data types, through functions and modules, and finally touching upon "
 "advanced concepts like exceptions and user-defined classes."
 msgstr ""
-"チュートリアルの残りの部分では、Python プログラム言語と実行システムの様々な機"
-"能を例題を交えて紹介します。単純な式、実行文、データ型から始めて、関数とモ"
-"ジュールを経て、最後には例外処理やユーザ定義クラスといったやや高度な概念にも"
-"触れます。"
+"El resto del tutorial introduce varias características del lenguaje y el "
+"sistema Python a través de ejemplos, empezando con expresiones, "
+"instrucciones y tipos de datos simples, pasando por funciones y módulos, y "
+"finalmente tocando conceptos avanzados como excepciones y clases definidas "
+"por el usuario."

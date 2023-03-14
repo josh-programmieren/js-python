@@ -1,37 +1,37 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:08+0000\n"
-"Last-Translator: Osamu NAKAMURA, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2023-01-28 10:00-0300\n"
+"Last-Translator: Francisco Mora <fr.morac@duocuc.cl>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.2.2\n"
 
-#: ../../library/intro.rst:5
+#: ../Doc/library/intro.rst:5
 msgid "Introduction"
-msgstr "はじめに"
+msgstr "Introducción"
 
-#: ../../library/intro.rst:7
+#: ../Doc/library/intro.rst:7
 msgid "The \"Python library\" contains several different kinds of components."
-msgstr "この \"Python ライブラリ\" には様々な内容が収録されています。"
+msgstr ""
+"La \"biblioteca Python\" contiene varios tipos de componentes diferentes."
 
-#: ../../library/intro.rst:9
+#: ../Doc/library/intro.rst:9
 msgid ""
 "It contains data types that would normally be considered part of the "
 "\"core\" of a language, such as numbers and lists.  For these types, the "
@@ -40,26 +40,27 @@ msgid ""
 "(On the other hand, the language core does define syntactic properties like "
 "the spelling and priorities of operators.)"
 msgstr ""
-"このライブラリには、数値型やリスト型のような、通常は言語の \"核\" をなす部分"
-"とみなされるデータ型が含まれています。Python 言語のコア部分では、これらの型に"
-"対してリテラル表現形式を与え、意味づけ上のいくつかの制約を与えていますが、完"
-"全にその意味づけを定義しているわけではありません。(一方で、言語のコア部分では"
-"演算子のスペルや優先順位のような構文法的な属性を定義しています。)"
+"Contiene tipos de datos que normalmente se considerarían parte del "
+"\"núcleo\" de un lenguaje, como números y listas.  Para estos tipos, el "
+"núcleo del lenguaje Python define la forma de los literales y coloca algunas "
+"restricciones a su semántica, pero no define completamente la semántica.  "
+"(Por otro lado, el núcleo del lenguaje sí define propiedades sintácticas "
+"como la ortografía y las prioridades de los operadores.)"
 
-#: ../../library/intro.rst:15
+#: ../Doc/library/intro.rst:15
 msgid ""
 "The library also contains built-in functions and exceptions --- objects that "
 "can be used by all Python code without the need of an :keyword:`import` "
 "statement. Some of these are defined by the core language, but many are not "
 "essential for the core semantics and are only described here."
 msgstr ""
-"このライブラリにはまた、組み込み関数と例外が納められています --- 組み込み関数"
-"および例外は、全ての Python で書かれたコード上で、 :keyword:`import` 文を使わ"
-"ずに使うことができるオブジェクトです。これらの組み込み要素のうちいくつかは言"
-"語のコア部分で定義されていますが、大半は言語コアの意味づけ上不可欠なものでは"
-"ないのでここでしか記述されていません。"
+"La biblioteca también contiene funciones y excepciones incorporadas --- "
+"objetos que pueden ser utilizados por todo código Python sin la necesidad de "
+"una declaración :keyword:`import`. Algunas de ellos están definidas por el "
+"núcleo del lenguaje, pero muchos no son esenciales para la semántica del "
+"núcleo y sólo se describen aquí."
 
-#: ../../library/intro.rst:20
+#: ../Doc/library/intro.rst:20
 msgid ""
 "The bulk of the library, however, consists of a collection of modules. There "
 "are many ways to dissect this collection.  Some modules are written in C and "
@@ -74,30 +75,31 @@ msgid ""
 "available only when a particular configuration option was chosen at the time "
 "when Python was compiled and installed."
 msgstr ""
-"とはいえ、このライブラリの大部分に収録されているのはモジュールのコレクション"
-"です。このコレクションを細分化する方法はいろいろあります。あるモジュールは C "
-"言語で書かれ、Python インタプリタに組み込まれています; 一方別のモジュールは "
-"Python で書かれ、ソースコードの形式で取り込まれます。またあるモジュールは、例"
-"えば実行スタックの追跡結果を出力するといった、Python に非常に特化したインター"
-"フェースを提供し、一方他のモジュールでは、特定のハードウェアにアクセスすると"
-"いった、特定のオペレーティングシステムに特化したインターフェースを提供し、さ"
-"らに別のモジュールでは WWW (ワールドワイドウェブ) のような特定のアプリケー"
-"ション分野に特化したインターフェースを提供しています。モジュールによっては全"
-"てのバージョン、全ての移植版の Python で利用することができたり、背後にあるシ"
-"ステムがサポートしている場合にのみ使えたり、Python をコンパイルしてインストー"
-"ルする際に特定の設定オプションを選んだときにのみ利用できたりします。"
+"La mayor parte de la biblioteca, sin embargo, consiste en una colección de "
+"módulos. Hay muchas maneras de diseccionar esta colección.  Algunos módulos "
+"están escritos en C y fueron incorporados en el intérprete de Python; otros "
+"están escritos en Python y se importan en código fuente.  Algunos módulos "
+"proporcionan interfaces muy específicas de Python, como la impresión de un "
+"*stack trace*; otros proporcionan interfaces que son específicas para "
+"determinados sistemas operativos, como el acceso a hardware específico; "
+"otros proveen interfaces específicas para un dominio de aplicación concreto, "
+"como la World Wide Web. Algunos módulos están disponibles en todas las "
+"versiones y plataformas de Python; otros sólo están disponibles cuando el "
+"sistema subyacente los soporta o los requiere; otros solo están disponibles "
+"cuando se ha elegido una opción de configuración particular en el momento en "
+"que compiló e instaló Python."
 
-#: ../../library/intro.rst:32
+#: ../Doc/library/intro.rst:32
 msgid ""
 "This manual is organized \"from the inside out:\" it first describes the "
 "built-in functions, data types and exceptions, and finally the modules, "
 "grouped in chapters of related modules."
 msgstr ""
-"このマニュアルは \"内部から外部へ\" と構成されています。つまり、最初に組み込"
-"みの関数を記述し、組み込みのデータ型、例外、そして最後に各モジュールと続きま"
-"す。モジュールは関係のあるものでグループ化して一つの章にしています。"
+"Este manual está organizado \"desde adentro hacia afuera:\" primero describe "
+"las funciones integradas, los tipos de datos y las excepciones, y finalmente "
+"describe los módulos, agrupados en capítulos de módulos relacionados."
 
-#: ../../library/intro.rst:36
+#: ../Doc/library/intro.rst:36
 msgid ""
 "This means that if you start reading this manual from the start, and skip to "
 "the next chapter when you get bored, you will get a reasonable overview of "
@@ -111,53 +113,65 @@ msgid ""
 "chapter :ref:`built-in-funcs`, as the remainder of the manual assumes "
 "familiarity with this material."
 msgstr ""
-"つまり、このマニュアルを最初から読み始め、読み飽きたところで次の章に進めば、 "
-"Python ライブラリで利用できるモジュールやサポートしているアプリケーション領域"
-"の概要をそこそこ理解できるということです。もちろん、このマニュアルを小説のよ"
-"うに読む必要は *ありません* --- (マニュアルの先頭部分にある) 目次にざっと目を"
-"通したり、 (最後尾にある) 索引でお目当ての関数やモジュール、用語を探すこと"
-"だってできます。もしランダムな項目について勉強してみたいのなら、ランダムに"
-"ページを選び (:mod:`random` 参照)、そこから 1, 2 節読むこともできます。このマ"
-"ニュアルの各節をどんな順番で読むかに関わらず、 :ref:`built-in-funcs` の章から"
-"始めるとよいでしょう。マニュアルの他の部分は、この節の内容について知っている"
-"ものとして書かれているからです。"
+"Esto significa que si comienza a leer este manual desde el principio, y "
+"salta al siguiente capítulo cuando se aburra, obtendrá una visión general "
+"razonable de los módulos y áreas de aplicación disponibles que son "
+"soportados por la biblioteca de Python.  Por supuesto, no *tienes* que "
+"leerlo necesariamente como una novela --- sino que también puedes navegar "
+"por la tabla de contenidos (al principio del manual), o buscar una función, "
+"módulo o término específico en el glosario (en la parte final del manual).  "
+"Y por último, si disfruta aprender sobre diferentes temas de manera "
+"aleatoria, puede escoger un número de página al azar (ver módulo :mod:"
+"`random`) y leer una o dos secciones.  Independientemente del orden en que "
+"lea las secciones de este manual, es útil comenzar con el capítulo :ref:"
+"`built-in-funcs`, ya que el resto del manual asume la familiaridad con este "
+"material."
 
-#: ../../library/intro.rst:48
+#: ../Doc/library/intro.rst:48
 msgid "Let the show begin!"
-msgstr "それでは、ショーの始まりです！"
+msgstr "¡Que comience el espectáculo!"
 
-#: ../../library/intro.rst:54
+#: ../Doc/library/intro.rst:54
 msgid "Notes on availability"
-msgstr "利用可能性について"
+msgstr "Notas sobre la disponibilidad"
 
-#: ../../library/intro.rst:56
+#: ../Doc/library/intro.rst:56
 msgid ""
 "An \"Availability: Unix\" note means that this function is commonly found on "
 "Unix systems.  It does not make any claims about its existence on a specific "
 "operating system."
 msgstr ""
-"「利用できる環境 : Unix 」の意味はこの関数が Unix システムにあることが多いと"
-"いうことです。このことは特定の OS における存在を主張するものではありません。"
+"Una nota de \"Disponibilidad: Unix\" significa que esta función se encuentra "
+"comúnmente en los sistemas Unix.  Pero no hace ninguna afirmación sobre su "
+"existencia en un sistema operativo específico."
 
-#: ../../library/intro.rst:60
+#: ../Doc/library/intro.rst:60
 msgid ""
 "If not separately noted, all functions that claim \"Availability: Unix\" are "
 "supported on macOS, which builds on a Unix core."
 msgstr ""
+"Si no se indica por separado, todas las funciones que afirman "
+"\"Disponibilidad: Unix\" son compatibles con macOS, que se basa en un núcleo "
+"de Unix."
 
-#: ../../library/intro.rst:63
+#: ../Doc/library/intro.rst:63
 msgid ""
 "If an availability note contains both a minimum Kernel version and a minimum "
 "libc version, then both conditions must hold. For example a feature with "
 "note *Availability: Linux >= 3.17 with glibc >= 2.27* requires both Linux "
 "3.17 or newer and glibc 2.27 or newer."
 msgstr ""
+"Si una nota de disponibilidad contiene tanto una versión mínima del Kernel "
+"como una versión mínima de libc, entonces ambas condiciones deben cumplirse. "
+"Por ejemplo, una característica con la nota *Availability: Linux >= 3.17 "
+"with glibc >= 2.27* requiere tanto Linux 3.17 o posterior como glibc 2.27 o "
+"posterior."
 
-#: ../../library/intro.rst:71
+#: ../Doc/library/intro.rst:71
 msgid "WebAssembly platforms"
-msgstr ""
+msgstr "Plataformas WebAssembly"
 
-#: ../../library/intro.rst:73
+#: ../Doc/library/intro.rst:73
 msgid ""
 "The `WebAssembly`_ platforms ``wasm32-emscripten`` (`Emscripten`_) and "
 "``wasm32-wasi`` (`WASI`_) provide a subset of POSIX APIs. WebAssembly "
@@ -170,8 +184,19 @@ msgid ""
 "Other blocking operations like :func:`~time.sleep` block the browser event "
 "loop."
 msgstr ""
+"Las plataformas `WebAssembly`_ ``wasm32-emscripten`` (`Emscripten`_) y "
+"``wasm32-wasi`` (`WASI`_) proporcionan un subconjunto de APIs POSIX. Los "
+"tiempos de ejecución de WebAssembly y los navegadores están aislados y "
+"tienen acceso limitado al host y a los recursos externos. Cualquier módulo "
+"de la biblioteca estándar de Python que utilice procesos, hilos, redes, "
+"señales u otras formas de comunicación entre procesos (IPC), no está "
+"disponible o puede no funcionar como en otros sistemas tipo Unix. La E/S de "
+"archivos, el sistema de archivos y las funciones relacionadas con permisos "
+"Unix también están restringidas. Emscripten no permite el bloqueo de E/S. "
+"Otras operaciones bloqueantes como :func:`~time.sleep` bloquean el bucle de "
+"eventos del navegador."
 
-#: ../../library/intro.rst:83
+#: ../Doc/library/intro.rst:83
 msgid ""
 "The properties and behavior of Python on WebAssembly platforms depend on the "
 "`Emscripten`_-SDK or `WASI`_-SDK version, WASM runtimes (browser, NodeJS, "
@@ -179,8 +204,14 @@ msgid ""
 "are evolving standards; some features like networking may be supported in "
 "the future."
 msgstr ""
+"Las propiedades y el comportamiento de Python en plataformas WebAssembly "
+"dependen de la versión del SDK `Emscripten`_ o del SDK `WASI`_, de los "
+"tiempos de ejecución WASM (navegador, NodeJS, `wasmtime`_) y de los "
+"indicadores de tiempo de compilación de Python. WebAssembly, Emscripten, y "
+"WASI son estándares en evolución; algunas características como las redes "
+"pueden ser soportadas en el futuro."
 
-#: ../../library/intro.rst:89
+#: ../Doc/library/intro.rst:89
 msgid ""
 "For Python in the browser, users should consider `Pyodide`_ or `PyScript`_. "
 "PyScript is built on top of Pyodide, which itself is built on top of CPython "
@@ -188,8 +219,14 @@ msgid ""
 "as well as limited networking capabilities with JavaScript's "
 "``XMLHttpRequest`` and ``Fetch`` APIs."
 msgstr ""
+"Para Python en el navegador, los usuarios deberían considerar `Pyodide`_ o "
+"`PyScript`_. PyScript está construido sobre Pyodide, que a su vez está "
+"construido sobre CPython y Emscripten. Pyodide proporciona acceso a las APIs "
+"JavaScript y DOM de los navegadores, así como capacidades de red limitadas "
+"con las APIs ``XMLHttpRequest`` y ``Fetch`` de JavaScript."
 
-#: ../../library/intro.rst:95
+# No estoy seguro de la traducción de importable.
+#: ../Doc/library/intro.rst:95
 msgid ""
 "Process-related APIs are not available or always fail with an error. That "
 "includes APIs that spawn new processes (:func:`~os.fork`, :func:`~os."
@@ -197,8 +234,13 @@ msgid ""
 "kill`), or otherwise interact with processes. The :mod:`subprocess` is "
 "importable but does not work."
 msgstr ""
+"Las APIs relacionadas con procesos no están disponibles o siempre fallan con "
+"un error. Esto incluye APIs que generan nuevos procesos (:func:`~os.fork`, :"
+"func:`~os.execve`), esperan procesos (:func:`~os.waitpid`), envían señales (:"
+"func:`~os.kill`), o interactúan con procesos. El :mod:`subprocess` se puede "
+"importar pero no funciona."
 
-#: ../../library/intro.rst:101
+#: ../Doc/library/intro.rst:101
 msgid ""
 "The :mod:`socket` module is available, but is limited and behaves "
 "differently from other platforms. On Emscripten, sockets are always non-"
@@ -207,16 +249,29 @@ msgid ""
 "information. WASI snapshot preview 1 only permits sockets from an existing "
 "file descriptor."
 msgstr ""
+"El módulo :mod:`socket` está disponible, pero es limitado y se comporta de "
+"forma diferente a otras plataformas. En Emscripten, los sockets son siempre "
+"no bloqueantes y requieren código JavaScript adicional y auxiliares en el "
+"servidor para proxy TCP a través de WebSockets; ver `Emscripten Networking`_ "
+"para más información. Vista previa de instantánea WASI  1 permite sólo "
+"sockets desde un descriptor de fichero existente."
 
-#: ../../library/intro.rst:108
+# No estoy seguro de la traducción de "stubs", creo que se debería dejar en su versión en inglés.
+#: ../Doc/library/intro.rst:108
 msgid ""
 "Some functions are stubs that either don't do anything and always return "
 "hardcoded values."
 msgstr ""
+"Algunas funciones son stubs que no hacen nada y siempre devuelven valores "
+"codificados."
 
-#: ../../library/intro.rst:111
+#: ../Doc/library/intro.rst:111
 msgid ""
 "Functions related to file descriptors, file permissions, file ownership, and "
 "links are limited and don't support some operations. For example, WASI does "
 "not permit symlinks with absolute file names."
 msgstr ""
+"Las funciones relacionadas con descriptores de archivos, permisos de "
+"archivos, propiedad de archivos y enlaces son limitadas y no admiten algunas "
+"operaciones. Por ejemplo, WASI no permite enlaces simbólicos con nombres de "
+"archivo absolutos."

@@ -1,188 +1,201 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 00:47+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-10-31 21:13-0300\n"
+"Last-Translator: \n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.2.1\n"
 
-#: ../../c-api/apiabiversion.rst:7
+#: ../Doc/c-api/apiabiversion.rst:7
 msgid "API and ABI Versioning"
-msgstr "API と ABI のバージョニング"
+msgstr "Versiones de API y ABI"
 
-#: ../../c-api/apiabiversion.rst:9
+#: ../Doc/c-api/apiabiversion.rst:9
 msgid ""
 "CPython exposes its version number in the following macros. Note that these "
 "correspond to the version code is **built** with, not necessarily the "
 "version used at **run time**."
 msgstr ""
+"CPython expone su número de versión en las siguientes macros. Tenga en "
+"cuenta que estos corresponden a la versión con la que se **construye** el "
+"código, no necesariamente la versión utilizada en **tiempo de ejecución**."
 
-#: ../../c-api/apiabiversion.rst:13
+#: ../Doc/c-api/apiabiversion.rst:13
 msgid ""
 "See :ref:`stable` for a discussion of API and ABI stability across versions."
 msgstr ""
+"Consulte :ref:`stable` para obtener una discusión sobre la estabilidad de "
+"API y ABI en todas las versiones."
 
-#: ../../c-api/apiabiversion.rst:17
+#: ../Doc/c-api/apiabiversion.rst:17
 msgid "The ``3`` in ``3.4.1a2``."
-msgstr ""
+msgstr "El ``3`` en ``3.4.1a2``."
 
-#: ../../c-api/apiabiversion.rst:21
+#: ../Doc/c-api/apiabiversion.rst:21
 msgid "The ``4`` in ``3.4.1a2``."
-msgstr ""
+msgstr "El ``4`` en ``3.4.1a2``."
 
-#: ../../c-api/apiabiversion.rst:25
+#: ../Doc/c-api/apiabiversion.rst:25
 msgid "The ``1`` in ``3.4.1a2``."
-msgstr ""
+msgstr "El ``1`` en ``3.4.1a2``."
 
-#: ../../c-api/apiabiversion.rst:29
+#: ../Doc/c-api/apiabiversion.rst:29
 msgid ""
 "The ``a`` in ``3.4.1a2``. This can be ``0xA`` for alpha, ``0xB`` for beta, "
 "``0xC`` for release candidate or ``0xF`` for final."
 msgstr ""
+"La ``a`` en ``3.4.1a2``. Puede ser ``0xA`` para la versión alfa, ``0xB`` "
+"para la versión beta, ``0xC`` para la versión candidata o ``0xF`` para la "
+"versión final."
 
-#: ../../c-api/apiabiversion.rst:35
+#: ../Doc/c-api/apiabiversion.rst:35
 msgid "The ``2`` in ``3.4.1a2``. Zero for final releases."
-msgstr ""
+msgstr "El ``2`` en ``3.4.1a2``, cero para lanzamientos finales."
 
-#: ../../c-api/apiabiversion.rst:39
+#: ../Doc/c-api/apiabiversion.rst:39
 msgid "The Python version number encoded in a single integer."
-msgstr ""
+msgstr "El número de versión de Python codificado en un solo entero."
 
-#: ../../c-api/apiabiversion.rst:41
+#: ../Doc/c-api/apiabiversion.rst:41
 msgid ""
 "The underlying version information can be found by treating it as a 32 bit "
 "number in the following manner:"
 msgstr ""
+"La información de la versión subyacente se puede encontrar tratándola como "
+"un número de 32 bits de la siguiente manera:"
 
-#: ../../c-api/apiabiversion.rst:45
+#: ../Doc/c-api/apiabiversion.rst:45
 msgid "Bytes"
-msgstr "bytes"
+msgstr "Bytes"
 
-#: ../../c-api/apiabiversion.rst:45
+#: ../Doc/c-api/apiabiversion.rst:45
 msgid "Bits (big endian order)"
-msgstr "ビット (ビッグエンディアンオーダ)"
+msgstr "Bits (orden *big-endian*)"
 
-#: ../../c-api/apiabiversion.rst:45
+#: ../Doc/c-api/apiabiversion.rst:45
 msgid "Meaning"
-msgstr "意味"
+msgstr "Significado"
 
-#: ../../c-api/apiabiversion.rst:45
+#: ../Doc/c-api/apiabiversion.rst:45
 msgid "Value for ``3.4.1a2``"
-msgstr ""
+msgstr "Valor para ``3.4.1a2``"
 
-#: ../../c-api/apiabiversion.rst:47
+#: ../Doc/c-api/apiabiversion.rst:47
 msgid "1"
 msgstr "1"
 
-#: ../../c-api/apiabiversion.rst:47
+#: ../Doc/c-api/apiabiversion.rst:47
 msgid "1-8"
-msgstr ""
+msgstr "1-8"
 
-#: ../../c-api/apiabiversion.rst:47
+#: ../Doc/c-api/apiabiversion.rst:47
 msgid "``PY_MAJOR_VERSION``"
-msgstr ""
+msgstr "``PY_MAJOR_VERSION``"
 
-#: ../../c-api/apiabiversion.rst:47
+#: ../Doc/c-api/apiabiversion.rst:47
 msgid "``0x03``"
-msgstr ""
+msgstr "``0x03``"
 
-#: ../../c-api/apiabiversion.rst:49
+#: ../Doc/c-api/apiabiversion.rst:49
 msgid "2"
 msgstr "2"
 
-#: ../../c-api/apiabiversion.rst:49
+#: ../Doc/c-api/apiabiversion.rst:49
 msgid "9-16"
-msgstr ""
+msgstr "9-16"
 
-#: ../../c-api/apiabiversion.rst:49
+#: ../Doc/c-api/apiabiversion.rst:49
 msgid "``PY_MINOR_VERSION``"
-msgstr ""
+msgstr "``PY_MINOR_VERSION``"
 
-#: ../../c-api/apiabiversion.rst:49
+#: ../Doc/c-api/apiabiversion.rst:49
 msgid "``0x04``"
-msgstr ""
+msgstr "``0x04``"
 
-#: ../../c-api/apiabiversion.rst:51
+#: ../Doc/c-api/apiabiversion.rst:51
 msgid "3"
 msgstr "3"
 
-#: ../../c-api/apiabiversion.rst:51
+#: ../Doc/c-api/apiabiversion.rst:51
 msgid "17-24"
-msgstr ""
+msgstr "17-24"
 
-#: ../../c-api/apiabiversion.rst:51
+#: ../Doc/c-api/apiabiversion.rst:51
 msgid "``PY_MICRO_VERSION``"
-msgstr ""
+msgstr "``PY_MICRO_VERSION``"
 
-#: ../../c-api/apiabiversion.rst:51
+#: ../Doc/c-api/apiabiversion.rst:51
 msgid "``0x01``"
-msgstr ""
+msgstr "``0x01``"
 
-#: ../../c-api/apiabiversion.rst:53
+#: ../Doc/c-api/apiabiversion.rst:53
 msgid "4"
 msgstr "4"
 
-#: ../../c-api/apiabiversion.rst:53
+#: ../Doc/c-api/apiabiversion.rst:53
 msgid "25-28"
-msgstr ""
+msgstr "25-28"
 
-#: ../../c-api/apiabiversion.rst:53
+#: ../Doc/c-api/apiabiversion.rst:53
 msgid "``PY_RELEASE_LEVEL``"
-msgstr ""
+msgstr "``PY_RELEASE_LEVEL``"
 
-#: ../../c-api/apiabiversion.rst:53
+#: ../Doc/c-api/apiabiversion.rst:53
 msgid "``0xA``"
-msgstr ""
+msgstr "``0xA``"
 
-#: ../../c-api/apiabiversion.rst:55
+#: ../Doc/c-api/apiabiversion.rst:55
 msgid "29-32"
-msgstr ""
+msgstr "29-32"
 
-#: ../../c-api/apiabiversion.rst:55
+#: ../Doc/c-api/apiabiversion.rst:55
 msgid "``PY_RELEASE_SERIAL``"
-msgstr ""
+msgstr "``PY_RELEASE_SERIAL``"
 
-#: ../../c-api/apiabiversion.rst:55
+#: ../Doc/c-api/apiabiversion.rst:55
 msgid "``0x2``"
-msgstr ""
+msgstr "``0x2``"
 
-#: ../../c-api/apiabiversion.rst:58
+#: ../Doc/c-api/apiabiversion.rst:58
 msgid ""
 "Thus ``3.4.1a2`` is hexversion ``0x030401a2`` and ``3.10.0`` is hexversion "
 "``0x030a00f0``."
 msgstr ""
+"Así, ``3.4.1a2`` es la hexadecimal ``0x030401a2`` y ``3.10.0`` es la "
+"hexadecimal ``0x030a00f0``."
 
-#: ../../c-api/apiabiversion.rst:61
-msgid "Use this for numeric comparisons, e.g. ``#if PY_VERSION_HEX >= ...``."
-msgstr ""
-
-#: ../../c-api/apiabiversion.rst:63
+#: ../Doc/c-api/apiabiversion.rst:61
 msgid "This version is also available via the symbol :data:`Py_Version`."
 msgstr ""
+"Esta versión también está disponible a través del símbolo :data:`Py_Version`."
 
-#: ../../c-api/apiabiversion.rst:67
+#: ../Doc/c-api/apiabiversion.rst:65
 msgid ""
 "The Python runtime version number encoded in a single constant integer, with "
 "the same format as the :c:macro:`PY_VERSION_HEX` macro. This contains the "
 "Python version used at run time."
 msgstr ""
+"El número de versión de Python en tiempo de ejecución codificado en un único "
+"entero constante, con el mismo formato que la macro :c:macro:"
+"`PY_VERSION_HEX`. Contiene la versión de Python utilizada en tiempo de "
+"ejecución."
 
-#: ../../c-api/apiabiversion.rst:73
+#: ../Doc/c-api/apiabiversion.rst:71
 msgid "All the given macros are defined in :source:`Include/patchlevel.h`."
-msgstr "これらのマクロは :source:`Include/patchlevel.h` で定義されています。"
+msgstr "Todas las macros dadas se definen en :source:`Include/patchlevel.h`."

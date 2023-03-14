@@ -1,178 +1,198 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 00:48+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-12-09 10:18+0800\n"
+"Last-Translator: Rodrigo Tobar <rtobarc@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../c-api/complex.rst:6
+#: ../Doc/c-api/complex.rst:6
 msgid "Complex Number Objects"
-msgstr "複素数オブジェクト (complex number object)"
+msgstr "Objetos de números complejos"
 
-#: ../../c-api/complex.rst:10
+#: ../Doc/c-api/complex.rst:10
 msgid ""
 "Python's complex number objects are implemented as two distinct types when "
 "viewed from the C API:  one is the Python object exposed to Python programs, "
 "and the other is a C structure which represents the actual complex number "
 "value. The API provides functions for working with both."
 msgstr ""
-"Python の複素数オブジェクトは、C API 側から見ると二つの別個の型として実装され"
-"ています: 一方は Python プログラムに対して公開されている Python のオブジェク"
-"トで、他方は実際の複素数値を表現する C の構造体です。API では、これら双方を扱"
-"う関数を提供しています。"
+"Los objetos de números complejos de Python se implementan como dos tipos "
+"distintos cuando se ven desde la API de C: uno es el objeto de Python "
+"expuesto a los programas de Python, y el otro es una estructura en C que "
+"representa el valor de número complejo real. La API proporciona funciones "
+"para trabajar con ambos."
 
-#: ../../c-api/complex.rst:17
+#: ../Doc/c-api/complex.rst:17
 msgid "Complex Numbers as C Structures"
-msgstr "C 構造体としての複素数"
+msgstr "Números complejos como estructuras C"
 
-#: ../../c-api/complex.rst:19
+#: ../Doc/c-api/complex.rst:19
 msgid ""
 "Note that the functions which accept these structures as parameters and "
 "return them as results do so *by value* rather than dereferencing them "
 "through pointers.  This is consistent throughout the API."
 msgstr ""
-"複素数の C 構造体を引数として受理したり、戻り値として返したりする関数は、ポイ"
-"ンタ渡しを行うのではなく *値渡し* を行うので注意してください。これは API 全体"
-"を通して一貫しています。"
+"Tenga en cuenta que las funciones que aceptan estas estructuras como "
+"parámetros y las retornan como resultados lo hacen *por valor* en lugar de "
+"desreferenciarlas a través de punteros. Esto es consistente en toda la API."
 
-#: ../../c-api/complex.rst:26
+#: ../Doc/c-api/complex.rst:26
 msgid ""
 "The C structure which corresponds to the value portion of a Python complex "
 "number object.  Most of the functions for dealing with complex number "
 "objects use structures of this type as input or output values, as "
 "appropriate.  It is defined as::"
 msgstr ""
-"Python 複素数オブジェクトの値の部分に対応する C の構造体です。複素数オブジェ"
-"クトを扱うほとんどの関数は、この型の構造体を場合に応じて入力や出力として使い"
-"ます。構造体は以下のように定義されています::"
+"La estructura C que corresponde a la porción de valor de un objeto de número "
+"complejo de Python. La mayoría de las funciones para tratar con objetos de "
+"números complejos utilizan estructuras de este tipo como valores de entrada "
+"o salida, según corresponda. Se define como::"
 
-#: ../../c-api/complex.rst:39
+#: ../Doc/c-api/complex.rst:39
 msgid ""
 "Return the sum of two complex numbers, using the C :c:type:`Py_complex` "
 "representation."
-msgstr "二つの複素数の和を C の :c:type:`Py_complex` 型で返します。"
+msgstr ""
+"Retorna la suma de dos números complejos, utilizando la representación C :c:"
+"type:`Py_complex`."
 
-#: ../../c-api/complex.rst:45
+#: ../Doc/c-api/complex.rst:45
 msgid ""
 "Return the difference between two complex numbers, using the C :c:type:"
 "`Py_complex` representation."
-msgstr "二つの複素数の差を C の :c:type:`Py_complex` 型で返します。"
+msgstr ""
+"Retorna la diferencia entre dos números complejos, usando la representación "
+"C :c:type:`Py_complex`."
 
-#: ../../c-api/complex.rst:51
+#: ../Doc/c-api/complex.rst:51
 msgid ""
 "Return the negation of the complex number *num*, using the C :c:type:"
 "`Py_complex` representation."
-msgstr "複素数 *num* の符号反転 C の :c:type:`Py_complex` 型で返します。"
+msgstr ""
+"Retorna la negación del número complejo *num*, utilizando la representación "
+"C :c:type:`Py_complex`."
 
-#: ../../c-api/complex.rst:57
+#: ../Doc/c-api/complex.rst:57
 msgid ""
 "Return the product of two complex numbers, using the C :c:type:`Py_complex` "
 "representation."
-msgstr "二つの複素数の積を C の :c:type:`Py_complex` 型で返します。"
+msgstr ""
+"Retorna el producto de dos números complejos, usando la representación C :c:"
+"type:`Py_complex`."
 
-#: ../../c-api/complex.rst:63
+#: ../Doc/c-api/complex.rst:63
 msgid ""
 "Return the quotient of two complex numbers, using the C :c:type:`Py_complex` "
 "representation."
-msgstr "二つの複素数の商を C の :c:type:`Py_complex` 型で返します。"
+msgstr ""
+"Retorna el cociente de dos números complejos, utilizando la representación "
+"C :c:type:`Py_complex`."
 
-#: ../../c-api/complex.rst:66
+#: ../Doc/c-api/complex.rst:66
 msgid ""
 "If *divisor* is null, this method returns zero and sets :c:data:`errno` to :"
 "c:data:`EDOM`."
 msgstr ""
-"*divisor* が null の場合は、このメソッドはゼロを返し、 :c:data:`errno` に :c:"
-"data:`EDOM` をセットします。"
+"Si *divisor* es nulo, este método retorna cero y establece :c:data:`errno` "
+"en :c:data:`EDOM`."
 
-#: ../../c-api/complex.rst:72
+#: ../Doc/c-api/complex.rst:72
 msgid ""
 "Return the exponentiation of *num* by *exp*, using the C :c:type:"
 "`Py_complex` representation."
-msgstr "指数 *exp* の *num* 乗を C の :c:type:`Py_complex` 型で返します。"
+msgstr ""
+"Retorna la exponenciación de *num* por *exp*, utilizando la representación "
+"C :c:type:`Py_complex`."
 
-#: ../../c-api/complex.rst:75
+#: ../Doc/c-api/complex.rst:75
 msgid ""
 "If *num* is null and *exp* is not a positive real number, this method "
 "returns zero and sets :c:data:`errno` to :c:data:`EDOM`."
 msgstr ""
-"*num* が null で *exp* が正の実数でない場合は、このメソッドはゼロを返し、 :c:"
-"data:`errno` に :c:data:`EDOM` をセットします。"
+"Si *num* es nulo y *exp* no es un número real positivo, este método retorna "
+"cero y establece :c:data:`errno` a :c:data:`EDOM`."
 
-#: ../../c-api/complex.rst:80
+#: ../Doc/c-api/complex.rst:80
 msgid "Complex Numbers as Python Objects"
-msgstr "Python オブジェクトとしての複素数型"
+msgstr "Números complejos como objetos de Python"
 
-#: ../../c-api/complex.rst:85
+#: ../Doc/c-api/complex.rst:85
 msgid ""
 "This subtype of :c:type:`PyObject` represents a Python complex number object."
-msgstr "この :c:type:`PyObject` のサブタイプは Python の複素数型を表現します。"
+msgstr ""
+"Este subtipo de :c:type:`PyObject` representa un objeto de número complejo "
+"de Python."
 
-#: ../../c-api/complex.rst:90
+#: ../Doc/c-api/complex.rst:90
 msgid ""
 "This instance of :c:type:`PyTypeObject` represents the Python complex number "
 "type. It is the same object as :class:`complex` in the Python layer."
 msgstr ""
-"この :c:type:`PyTypeObject` のインスタンスは Python の複素数型を表現します。 "
-"Pythonレイヤの :class:`complex` と同じオブジェクトです。"
+"Esta instancia de :c:type:`PyTypeObject` representa el tipo de número "
+"complejo de Python. Es el mismo objeto que :class:`complex` en la capa de "
+"Python."
 
-#: ../../c-api/complex.rst:96
+#: ../Doc/c-api/complex.rst:96
 msgid ""
 "Return true if its argument is a :c:type:`PyComplexObject` or a subtype of :"
 "c:type:`PyComplexObject`.  This function always succeeds."
 msgstr ""
-"引数が :c:type:`PyComplexObject` か :c:type:`PyComplexObject` のサブタイプで"
-"あるときに真を返します。この関数は常に成功します。"
+"Retorna verdadero si su argumento es un :c:type:`PyComplexObject` o un "
+"subtipo de :c:type:`PyComplexObject`. Esta función siempre finaliza con "
+"éxito."
 
-#: ../../c-api/complex.rst:102
+#: ../Doc/c-api/complex.rst:102
 msgid ""
 "Return true if its argument is a :c:type:`PyComplexObject`, but not a "
 "subtype of :c:type:`PyComplexObject`.  This function always succeeds."
 msgstr ""
-"引数が :c:type:`PyComplexObject` であるが :c:type:`PyComplexObject` のサブタ"
-"イプでないときに真を返します。この関数は常に成功します。"
+"Retorna verdadero si su argumento es un :c:type:`PyComplexObject`, pero no "
+"un subtipo de :c:type:`PyComplexObject`. Esta función siempre finaliza con "
+"éxito."
 
-#: ../../c-api/complex.rst:108
+#: ../Doc/c-api/complex.rst:108
 msgid ""
 "Create a new Python complex number object from a C :c:type:`Py_complex` "
 "value."
-msgstr "C の :c:type:`Py_complex` 型から Python の複素数値を生成します。"
+msgstr ""
+"Crea un nuevo objeto de número complejo de Python a partir de un valor C :c:"
+"type:`Py_complex`."
 
-#: ../../c-api/complex.rst:113
+#: ../Doc/c-api/complex.rst:113
 msgid "Return a new :c:type:`PyComplexObject` object from *real* and *imag*."
-msgstr ""
-"新たな :c:type:`PyComplexObject` オブジェクトを *real* と *imag* から生成しま"
-"す。"
+msgstr "Retorna un nuevo objeto :c:type:`PyComplexObject` de *real* e *imag*."
 
-#: ../../c-api/complex.rst:118
+#: ../Doc/c-api/complex.rst:118
+#, fuzzy
 msgid "Return the real part of *op* as a C :c:expr:`double`."
-msgstr ""
+msgstr "Retorna la parte real de *op* como :c:type:`double` en C."
 
-#: ../../c-api/complex.rst:123
+#: ../Doc/c-api/complex.rst:123
+#, fuzzy
 msgid "Return the imaginary part of *op* as a C :c:expr:`double`."
-msgstr ""
+msgstr "Retorna la parte imaginaria de *op* como un :c:type:`double` de C."
 
-#: ../../c-api/complex.rst:128
+#: ../Doc/c-api/complex.rst:128
 msgid "Return the :c:type:`Py_complex` value of the complex number *op*."
-msgstr "複素数値 *op* から :c:type:`Py_complex` 型を生成します。"
+msgstr "Retorna el valor :c:type:`Py_complex` del número complejo *op*."
 
-#: ../../c-api/complex.rst:130
+#: ../Doc/c-api/complex.rst:130
 msgid ""
 "If *op* is not a Python complex number object but has a :meth:`__complex__` "
 "method, this method will first be called to convert *op* to a Python complex "
@@ -181,15 +201,13 @@ msgid ""
 "meth:`__index__`.  Upon failure, this method returns ``-1.0`` as a real "
 "value."
 msgstr ""
-"*op* が Python の複素数オブジェクトではないが、 :meth:`__complex__` メソッド"
-"を持っていた場合、このメソッドが最初に呼ばれ、 *op* が Python の複素数オブ"
-"ジェクトに変換されます。\n"
-"``__complex__()`` が定義されていない場合は、 :meth:`__float__` にフォールバッ"
-"クされます。\n"
-"``__float__()`` が定義されていない場合は、 :meth:`__index__` にフォールバック"
-"されます。\n"
-"処理が失敗した場合は、このメソッドは実数の ``-1.0`` を返します。"
+"Si *op* no es un objeto de número complejo de Python pero tiene un método :"
+"meth:`__complex__`, primero se llamará a este método para convertir *op* en "
+"un objeto de número complejo de Python. Si ``__complex__()`` no está "
+"definido, vuelve a :meth:`__float__`. Si ``__float__()`` no está definido, "
+"entonces recurre a :meth:`__index__`. En caso de falla, este método retorna "
+"``-1.0`` como un valor real."
 
-#: ../../c-api/complex.rst:137
+#: ../Doc/c-api/complex.rst:137
 msgid "Use :meth:`__index__` if available."
-msgstr "可能であれば :meth:`__index__` を使うようになりました。"
+msgstr "Use :meth:`__index__` si está disponible."

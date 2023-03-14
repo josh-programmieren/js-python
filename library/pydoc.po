@@ -1,47 +1,46 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Takanori Suzuki <takanori@takanory.net>, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:12+0000\n"
-"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2021-10-16 21:42+0200\n"
+"PO-Revision-Date: 2020-07-14 13:47-0500\n"
+"Last-Translator: Adolfo Hristo David Roque Gámez <hristo.roqueg@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es_PE\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../library/pydoc.rst:2
+#: ../Doc/library/pydoc.rst:2
 msgid ":mod:`pydoc` --- Documentation generator and online help system"
-msgstr ":mod:`pydoc` --- ドキュメント生成とオンラインヘルプシステム"
+msgstr ""
+":mod:`pydoc` --- Generador de documentación y Sistema de ayuda en línea"
 
-#: ../../library/pydoc.rst:10
+#: ../Doc/library/pydoc.rst:10
 msgid "**Source code:** :source:`Lib/pydoc.py`"
-msgstr "**ソースコード:** :source:`Lib/pydoc.py`"
+msgstr "**Código fuente:** :source:`Lib/pydoc.py`"
 
-#: ../../library/pydoc.rst:19
+#: ../Doc/library/pydoc.rst:19
 msgid ""
 "The :mod:`pydoc` module automatically generates documentation from Python "
 "modules.  The documentation can be presented as pages of text on the "
 "console, served to a web browser, or saved to HTML files."
 msgstr ""
-":mod:`pydoc` モジュールは、Pythonモジュールから自動的にドキュメントを生成しま"
-"す。生成されたドキュメントをテキスト形式でコンソールに表示したり、 ウェブブラ"
-"ウザにサーバとして提供したり、HTMLファイルとして保存したりできます。"
+"El módulo :mod:`pydoc` genera automáticamente documentación a partir de "
+"módulos de Python. La documentación puede presentarse como páginas de texto "
+"en la consola, enviarse a un navegador web o guardarse en archivos HTML."
 
-#: ../../library/pydoc.rst:23
+#: ../Doc/library/pydoc.rst:23
 msgid ""
 "For modules, classes, functions and methods, the displayed documentation is "
 "derived from the docstring (i.e. the :attr:`__doc__` attribute) of the "
@@ -51,14 +50,14 @@ msgid ""
 "the source file, or at the top of the module (see :func:`inspect."
 "getcomments`)."
 msgstr ""
-"モジュール、クラス、関数、メソッドについての表示されるドキュメンテーション"
-"は、オブジェクトの docstring (つまり :attr:`__doc__` 属性)に基き、またそれの"
-"ドキュメント可能なメンバが再帰的に続きます。  docstring がない場合、 :mod:"
-"`pydoc` は、クラス、関数、メソッドについてはその定義の直前の、モジュールにつ"
-"いてはファイル先頭の、ソースファイルのコメント行のブロックから記述を取得しよ"
-"うと試みます(:func:`inspect.getcomments` を参照してください)。"
+"Para módulos, clases, funciones y métodos, la documentación mostrada es "
+"derivada del *docstring* (i.e. el atributo :attr:`__doc__`) del objeto, y "
+"recursivamente de sus miembros que se puedan documentar.  Si no existe el "
+"*docstring*, :mod:`pydoc` trata de obtener una descripción del bloque de "
+"comentarios arriba de la definición de la clase, función o método en el "
+"archivo fuente, o encima del módulo (véase :func:`inspect.getcomments`)."
 
-#: ../../library/pydoc.rst:30
+#: ../Doc/library/pydoc.rst:30
 msgid ""
 "The built-in function :func:`help` invokes the online help system in the "
 "interactive interpreter, which uses :mod:`pydoc` to generate its "
@@ -66,14 +65,14 @@ msgid ""
 "be viewed from outside the Python interpreter by running :program:`pydoc` as "
 "a script at the operating system's command prompt. For example, running ::"
 msgstr ""
-"組み込み関数の :func:`help` を使うことで、対話型インタプリタからオンラインヘ"
-"ルプを起動することができます。コンソール用のテキスト形式のドキュメントをつく"
-"るのにオンラインヘルプでは :mod:`pydoc` を使っています。 :program:`pydoc` を"
-"Pythonインタプリタからはなく、オペレーティングシステムのコマンドプロンプトか"
-"ら起動した場合でも、同じテキスト形式のドキュメントを見ることができます。例え"
-"ば、以下の実行を ::"
+"La función incorporada :func:`help` invoca el sistema de ayuda en línea en "
+"el interpretador interactivo, que usa :mod:`pydoc` para generar su "
+"documentación como texto en la consola.  La misma documentación del texto se "
+"puede ver desde afuera del interpretador de python al ejecutar :program:"
+"`pydoc` como un script en la consola del sistema operativo. Por ejemplo, "
+"ejecutando ::"
 
-#: ../../library/pydoc.rst:38
+#: ../Doc/library/pydoc.rst:38
 msgid ""
 "at a shell prompt will display documentation on the :mod:`sys` module, in a "
 "style similar to the manual pages shown by the Unix :program:`man` command.  "
@@ -84,101 +83,122 @@ msgid ""
 "system, such as a slash in Unix), and refers to an existing Python source "
 "file, then documentation is produced for that file."
 msgstr ""
-"シェルから行うと :mod:`sys` モジュールのドキュメントを、Unix の :program:"
-"`man` コマンドのような形式で表示させることができます。 :program:`pydoc` の引"
-"数として与えることができるのは、関数名・モジュール名・パッケージ名、また、モ"
-"ジュールやパッケージ内のモジュールに含まれるクラス・メソッド・関数へのドット"
-"形式での参照です。 :program:`pydoc` への引数がパスと解釈されるような場合で(オ"
-"ペレーティングシステムのパス区切り記号を含む場合です。例えばUnixならばスラッ"
-"シュ含む場合になります)、さらに、そのパスがPythonのソースファイルを指している"
-"なら、そのファイルに対するドキュメントが生成されます。"
+"en la entrada de la consola mostrará la documentación sobre el módulo :mod:"
+"`sys`, en un estilo similar a las páginas del manual que se muestran por el "
+"comando :program:`man` de Unix.  El argumento de :program:`pydoc` puede ser "
+"el nombre de una función, módulo, o paquete, o una referencia con puntos "
+"(*dotted reference*) de una clase, método, o función dentro de un módulo o "
+"módulo en un paquete.  Si el argumento de :program:`pydoc` se parece a una "
+"ruta (*path*) (es decir, que contiene el separador de rutas para tu sistema "
+"operativo como una barra en Unix), y hace referencia a un archivo fuente de "
+"Python existente, entonces se produce la documentación para ese archivo."
 
-#: ../../library/pydoc.rst:49
+#: ../Doc/library/pydoc.rst:49
 msgid ""
 "In order to find objects and their documentation, :mod:`pydoc` imports the "
 "module(s) to be documented.  Therefore, any code on module level will be "
 "executed on that occasion.  Use an ``if __name__ == '__main__':`` guard to "
 "only execute code when a file is invoked as a script and not just imported."
 msgstr ""
-"オブジェクトとそのドキュメントを探すために、 :mod:`pydoc` はドキュメント対象"
-"のモジュールを import します。そのため、モジュールレベルのコードはそのときに"
-"実行されます。 ``if __name__ == '__main__':`` ガードを使って、ファイルがスク"
-"リプトとして実行したときのみコードを実行し、importされたときには実行されない"
-"ようにして下さい。"
+"Para encontrar los objetos y su documentación, :mod:`pydoc` importa el "
+"módulo o los módulos que serán documentados.  Por lo tanto, cualquier código "
+"a nivel de módulo va a ser ejecutado en esa ocasión.  Use ``if "
+"__name__=='__main__':`` como protección para sólo ejecutar código cuando un "
+"archivo es invocado como un script y no sólo importado."
 
-#: ../../library/pydoc.rst:54
+#: ../Doc/library/pydoc.rst:54
 msgid ""
 "When printing output to the console, :program:`pydoc` attempts to paginate "
 "the output for easier reading.  If the :envvar:`PAGER` environment variable "
 "is set, :program:`pydoc` will use its value as a pagination program."
 msgstr ""
-"コンソールへの出力時には、 :program:`pydoc`  は読みやすさのために出力をページ"
-"化しようと試みます。環境変数 :envvar:`PAGER` がセットされていれば  :program:"
-"`pydoc` はその値で設定されたページ化プログラムを使います。"
+"Cuando se imprime la salida a la consola, :program:`pydoc` intenta paginar "
+"la salida para una lectura más fácil.  Si la variable de entorno :envvar:"
+"`PAGER` está puesta, :program:`pydoc` usará su valor como el programa de "
+"paginación."
 
-#: ../../library/pydoc.rst:58
+#: ../Doc/library/pydoc.rst:58
 msgid ""
 "Specifying a ``-w`` flag before the argument will cause HTML documentation "
 "to be written out to a file in the current directory, instead of displaying "
 "text on the console."
 msgstr ""
-"引数の前に ``-w`` フラグを指定すると、コンソールにテキストを表示させるかわり"
-"にカレントディレクトリにHTMLドキュメントを生成します。"
+"Especificar un bandera (*flag*) ``-w`` antes del argumento hará que la "
+"documentación HTML sea escrita en un archivo de la carpeta actual, en vez de "
+"mostrar el texto en la consola."
 
-#: ../../library/pydoc.rst:62
+#: ../Doc/library/pydoc.rst:62
 msgid ""
 "Specifying a ``-k`` flag before the argument will search the synopsis lines "
 "of all available modules for the keyword given as the argument, again in a "
 "manner similar to the Unix :program:`man` command.  The synopsis line of a "
 "module is the first line of its documentation string."
 msgstr ""
-"引数の前に ``-k`` フラグを指定すると、引数をキーワードとして利用可能な全ての"
-"モジュールの概要を検索します。検索のやりかたは、Unixの :program:`man` コマン"
-"ドと同様です。モジュールの概要というのは、モジュールのドキュメントの一行目の"
-"ことです。"
+"Especificar una bandera (*flag*) ``-k`` antes del argumento buscará las "
+"líneas de la sinopsis de todos los módulos disponibles por la palabra clave "
+"(*keyword*) dada como argumento, de nuevo en una manera similar al comando :"
+"program:`man` de Unix.  La sinopsis de un módulo es la primera línea de su "
+"cadena de documentación."
 
-#: ../../library/pydoc.rst:67
+#: ../Doc/library/pydoc.rst:67
 msgid ""
 "You can also use :program:`pydoc` to start an HTTP server on the local "
 "machine that will serve documentation to visiting web browsers.  :program:"
-"`python -m pydoc -p 1234` will start a HTTP server on port 1234, allowing "
-"you to browse the documentation at ``http://localhost:1234/`` in your "
-"preferred web browser. Specifying ``0`` as the port number will select an "
-"arbitrary unused port."
+"`pydoc -p 1234` will start a HTTP server on port 1234, allowing you to "
+"browse the documentation at ``http://localhost:1234/`` in your preferred web "
+"browser. Specifying ``0`` as the port number will select an arbitrary unused "
+"port."
 msgstr ""
+"También puede utilizar :program:`pydoc` para iniciar un servidor HTTP en la "
+"máquina local que proporcionará documentación a los navegadores web "
+"visitantes. :program:`pydoc -p 1234` iniciará un servidor HTTP en el puerto "
+"1234, lo que le permitirá navegar por la documentación en ``http://"
+"localhost:1234/`` en su navegador web preferido. Si especifica ``0`` como "
+"número de puerto, se seleccionará un puerto arbitrario no utilizado."
 
-#: ../../library/pydoc.rst:73
+#: ../Doc/library/pydoc.rst:73
 msgid ""
-":program:`python -m pydoc -n <hostname>` will start the server listening at "
-"the given hostname.  By default the hostname is 'localhost' but if you want "
-"the server to be reached from other machines, you may want to change the "
-"host name that the server responds to.  During development this is "
-"especially useful if you want to run pydoc from within a container."
+":program:`pydoc -n <hostname>` will start the server listening at the given "
+"hostname.  By default the hostname is 'localhost' but if you want the server "
+"to be reached from other machines, you may want to change the host name that "
+"the server responds to.  During development this is especially useful if you "
+"want to run pydoc from within a container."
 msgstr ""
+":program:`pydoc -n <hostname>` empezará el servidor escuchando al *hostname* "
+"(nombre del servidor) dado.  Por defecto, el nombre del servidor es "
+"'localhost' pero si quieres que se llegue al servidor desde otras máquinas, "
+"quizás quieras cambiar el nombre por el cual el servidor responde.  Durante "
+"el desarrollo esto es especialmente útil si quieres correr *pydoc* desde "
+"dentro de un contenedor."
 
-#: ../../library/pydoc.rst:79
+#: ../Doc/library/pydoc.rst:79
 msgid ""
-":program:`python -m pydoc -b` will start the server and additionally open a "
-"web browser to a module index page.  Each served page has a navigation bar "
-"at the top where you can *Get* help on an individual item, *Search* all "
-"modules with a keyword in their synopsis line, and go to the *Module index*, "
+":program:`pydoc -b` will start the server and additionally open a web "
+"browser to a module index page.  Each served page has a navigation bar at "
+"the top where you can *Get* help on an individual item, *Search* all modules "
+"with a keyword in their synopsis line, and go to the *Module index*, "
 "*Topics* and *Keywords* pages."
 msgstr ""
+":program:`pydoc -b` empezará un servidor y adicionalmente abrirá un buscador "
+"web con una página del índice del módulo.  Cada página servida tiene una "
+"barra de navegación arriba donde puedes obtener (*Get*) ayuda sobre una "
+"sección individual, buscar (*Search*) todos los módulos con una palabra "
+"clave y sus sinopsis, e ir a las páginas del índice del módulo (*Module "
+"index*), temas (*Topics*), y palabras clave (*Keywords*)."
 
-#: ../../library/pydoc.rst:85
+#: ../Doc/library/pydoc.rst:85
 msgid ""
 "When :program:`pydoc` generates documentation, it uses the current "
 "environment and path to locate modules.  Thus, invoking :program:`pydoc "
 "spam` documents precisely the version of the module you would get if you "
 "started the Python interpreter and typed ``import spam``."
 msgstr ""
-":program:`pydoc` でドキュメントを生成する場合、その時点での環境とパス情報に基"
-"づいてモジュールがどこにあるのか決定されます。そのため、 :program:`pydoc "
-"spam` を実行した場合につくられるドキュメントは、 Pythonインタプリタを起動し"
-"て ``import spam`` と入力したときに読み込まれるモジュールに対するドキュメント"
-"になります。"
+"Cuando :program:`pydoc` genera la documentación, se usa el entorno y ruta "
+"actual para localizar los módulos.  Así, invocar :program:`pydoc spam` "
+"precisamente documenta la versión del módulo que tu obtendrías si empezaras "
+"el interpretador de Python y escribieras ``import spam``."
 
-#: ../../library/pydoc.rst:90
+#: ../Doc/library/pydoc.rst:90
 msgid ""
 "Module docs for core modules are assumed to reside in ``https://docs.python."
 "org/X.Y/library/`` where ``X`` and ``Y`` are the major and minor version "
@@ -186,28 +206,29 @@ msgid ""
 "envvar:`PYTHONDOCS` environment variable to a different URL or to a local "
 "directory containing the Library Reference Manual pages."
 msgstr ""
-"コアモジュールのドキュメントは https://docs.python.org/X.Y/library/ にあると"
-"仮定されています。 ``X``, ``Y`` はそれぞれ Python インタプリタのメジャー、マ"
-"イナーバージョン番号です。環境変数 :envvar:`PYTHONDOCS` を設定することでこれ"
-"をオーバライドすることが出来、ライブラリリファレンスページを含む別の URL や"
-"ローカルディレクトリを指定出来ます。"
+"Se asume que la documentación del módulos principales residen en ``https://"
+"docs.python.org/X.Y/library/`` donde ``X`` y ``Y`` son la versión mayor y "
+"menor de tu interpretador de Python.  Esto puede ser sobre-escrito al poner "
+"a la variable de entorno :envvar:`PYTHONDOCS` una URL diferente o un "
+"directorio local conteniendo la páginas de referencia."
 
-#: ../../library/pydoc.rst:97
+#: ../Doc/library/pydoc.rst:97
 msgid "Added the ``-b`` option."
-msgstr "``-b`` オプションが追加されました。"
+msgstr "Se añadió la opción ``-b``."
 
-#: ../../library/pydoc.rst:100
+#: ../Doc/library/pydoc.rst:100
 msgid "The ``-g`` command line option was removed."
-msgstr "``-g`` コマンドラインオプションが削除されました。"
+msgstr "La opción de la línea de comandos ``-g`` se eliminó."
 
-#: ../../library/pydoc.rst:103
+#: ../Doc/library/pydoc.rst:103
 msgid ""
 ":mod:`pydoc` now uses :func:`inspect.signature` rather than :func:`inspect."
 "getfullargspec` to extract signature information from callables."
 msgstr ""
-":mod:`pydoc` は、callable からシグニチャの情報を得るのに :func:`inspect."
-"getfullargspec` ではなく :func:`inspect.signature` を使うようになりました。"
+":mod:`pydoc` ahora usa :func:`inspect.signature` en vez de :func:`inspect."
+"getfullargspec` para extraer la información distintiva de los invocables "
+"(*callables*)."
 
-#: ../../library/pydoc.rst:108
+#: ../Doc/library/pydoc.rst:108
 msgid "Added the ``-n`` option."
-msgstr "``-n`` オプションが追加されました。"
+msgstr "Se añadió la opción ``-n``."

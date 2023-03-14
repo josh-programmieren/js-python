@@ -1,48 +1,47 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:51+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-10-28 11:57+0200\n"
+"Last-Translator: \n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../whatsnew/2.4.rst:3
+#: ../Doc/whatsnew/2.4.rst:3
 msgid "What's New in Python 2.4"
-msgstr "What's New in Python 2.4"
+msgstr "Qué hay de nuevo en Python 2.4"
 
-#: ../../whatsnew/2.4.rst:0
+#: ../Doc/whatsnew/2.4.rst
 msgid "Author"
-msgstr "著者"
+msgstr "Autor"
 
-#: ../../whatsnew/2.4.rst:5
+#: ../Doc/whatsnew/2.4.rst:5
 msgid "A.M. Kuchling"
 msgstr "A.M. Kuchling"
 
-#: ../../whatsnew/2.4.rst:14
+#: ../Doc/whatsnew/2.4.rst:14
 msgid ""
 "This article explains the new features in Python 2.4.1, released on March "
 "30, 2005."
 msgstr ""
-"この文書は 2005 年 3 月 30 日にリリースされた Python 2.4.1 の新機能について解"
-"説します。 "
+"Este artículo explica las nuevas funcionalidades en Python 2.4.1 lanzadas el "
+"30 de marzo de 2005."
 
-#: ../../whatsnew/2.4.rst:17
+#: ../Doc/whatsnew/2.4.rst:17
 msgid ""
 "Python 2.4 is a medium-sized release.  It doesn't introduce as many changes "
 "as the radical Python 2.2, but introduces more features than the "
@@ -50,21 +49,23 @@ msgid ""
 "function decorators and generator expressions; most other changes are to the "
 "standard library."
 msgstr ""
-"Python 2.4 は、真ん中サイズ、のリリースです。急進的だった Python 2.2 ほどには"
-"多くの変更をしていませんが、保守的だった 2.3 よりは多くの機能を導入していま"
-"す。新しい言語機能で最も重要なのが、関数デコレータとジェネレータ式です。ほか"
-"のほとんどの変更は標準ライブラリに対するものです。"
+"Python 2.4 es un lanzamiento de término medio. Esto significa que no se han "
+"introducido grandes cambios como en la versión 2.2 de Python pero si son más "
+"significativas que la versión 2.3. Lo más relevante de estas nuevas "
+"funcionalidades son los decoradores y generadores de expresiones, la mayor "
+"parte del resto de los cambios son a la librería estándar."
 
-#: ../../whatsnew/2.4.rst:22
+#: ../Doc/whatsnew/2.4.rst:22
 msgid ""
 "According to the CVS change logs, there were 481 patches applied and 502 "
 "bugs fixed between Python 2.3 and 2.4.  Both figures are likely to be "
 "underestimates."
 msgstr ""
-"Python 2.3 から 2.4 の CVS 変更ログによれば、適用されたパッチは 481、フィック"
-"スされたバグは 502 ありました。ともに、少なく見積もって、です。"
+"De acuerdo al registro de cambios CVS , han sido aplicados 481 parches y 502 "
+"bugs han sido corregidos entre las versiones 2.3 y 2.4 de Python. Es posible "
+"que ambas cifras no concuerden con la realidad, podrían estar subestimadas."
 
-#: ../../whatsnew/2.4.rst:25
+#: ../Doc/whatsnew/2.4.rst:25
 msgid ""
 "This article doesn't attempt to provide a complete specification of every "
 "single new feature, but instead provides a brief introduction to each "
@@ -73,17 +74,19 @@ msgid ""
 "Often you will be referred to the PEP for a particular new feature for "
 "explanations of the implementation and design rationale."
 msgstr ""
-"このドキュメントは個々の新機能の完全な詳細を提供するのではなくて、簡易な概要"
-"を提供することを目的にしています。完全な詳細が知りたければ、 Python ライブラ"
-"リリファレンス、Python リファレンスマニュアルのような Python 2.4 のドキュメン"
-"トを参照してください。多くの場合個別の新機能についての実装の説明やデザインの"
-"根拠については PEP に託されています。"
+"Este artículo no pretende proveer una especificación completa y detallada de "
+"cada funcionalidad nueva, en vez de esto, se provee una breve descripción de "
+"las nuevas características. Para obtener más información se debe consultar "
+"la documentación oficial de Python 2.4, tal como la librería de referencia "
+"de Python y el manual de referencia de Python. Otra fuente de información es "
+"PEP (guía de estilo-mejoras de python) para buscar información sobre la "
+"implementación y fundamentación del diseño."
 
-#: ../../whatsnew/2.4.rst:36
+#: ../Doc/whatsnew/2.4.rst:36
 msgid "PEP 218: Built-In Set Objects"
-msgstr "PEP 218: ビルトインの集合オブジェクト"
+msgstr "PEP 218: Objetos conjunto integrados"
 
-#: ../../whatsnew/2.4.rst:38
+#: ../Doc/whatsnew/2.4.rst:38
 msgid ""
 "Python 2.3 introduced the :mod:`sets` module.  C implementations of set data "
 "types have now been added to the Python core as two new built-in types, "
@@ -92,50 +95,50 @@ msgid ""
 "sequences, and for mathematical operations like unions, intersections, "
 "differences, and symmetric differences. ::"
 msgstr ""
-"Python 2.3 では :mod:`sets` を導入しました。集合データ型の C 実装が Python コ"
-"アに新たに、2 つの新しいビルトイン型 :func:`set(iterable)` と :func:"
-"`frozenset(iterable)` として追加されています。これらは要素が集合に属している"
-"かのメンバシップテスト、シーケンスからの重複の削除、それに和集合 (union)、共"
-"通集合 (intersection)、 差 (difference)、対称差 (symmetric difference) といっ"
-"た数学演算を高速に行います::"
+"Python 2.3 introdujo el módulo :mod:`sets` , implementaciones del lenguaje C "
+"de tipos de datos han sido agregados al core de Python como dos nuevos tipos "
+"integrados. ``set (iterable)`` y ``frozenset (iterable)`` . Ellos proveen "
+"operaciones de alto rendimiento para pruebas de pertenencia, eliminar datos "
+"duplicados de una secuencia y operaciones matemáticas como: uniones, "
+"intersecciones, diferencias y diferencias simétricas. ::"
 
-#: ../../whatsnew/2.4.rst:71
+#: ../Doc/whatsnew/2.4.rst:71
 msgid ""
 "The :func:`frozenset` type is an immutable version of :func:`set`. Since it "
 "is immutable and hashable, it may be used as a dictionary key or as a member "
 "of another set."
 msgstr ""
-":func:`frozenset` 型は :func:`set` の :term:`immutable` 版です。 immutable か"
-"つハッシュ可能なので、辞書のキーやほかの set のメンバとして使えるでしょう。"
+"La función de conjuntos integrados :func:`frozenset` es una versión "
+"inmutable de :func:`set`. Como es inmutable y hashable (su valor no cambia), "
+"se puede usar como una llave de diccionario o como parte de otro set."
 
-#: ../../whatsnew/2.4.rst:75
+#: ../Doc/whatsnew/2.4.rst:75
 msgid ""
 "The :mod:`sets` module remains in the standard library, and may be useful if "
 "you wish to subclass the :class:`Set` or :class:`ImmutableSet` classes.  "
 "There are currently no plans to deprecate the module."
 msgstr ""
-"2.3 で追加された :mod:`sets` モジュールは標準ライブラリに残されていて、 :"
-"class:`Set` や :class:`ImmutableSet` をサブクラス化したければ便利かもしれませ"
-"ん。今のところこれを撤廃する予定はありません。(---訳注: :mod:`sets` モジュー"
-"ルは 2.6 で非推奨となっています。---)"
+"El módulo set :mod:`sets` se encuentra en la librería estándar y puede ser "
+"útil si se desea usar una subclase de :class:`Set` o :class:`ImmutableSet` "
+"No existen planes de deprecación del módulo."
 
-#: ../../whatsnew/2.4.rst:83
+#: ../Doc/whatsnew/2.4.rst:83
 msgid ":pep:`218` - Adding a Built-In Set Object Type"
-msgstr ":pep:`218` - 集合オブジェクト型をビルトインに追加する"
+msgstr ":pep:`218` - Agregando tipo de objeto integrado set"
 
-#: ../../whatsnew/2.4.rst:83
+#: ../Doc/whatsnew/2.4.rst:83
 msgid ""
 "Originally proposed by Greg Wilson and ultimately implemented by Raymond "
 "Hettinger."
 msgstr ""
-"元々は Greg Wilson によって提案され、完全な実装は Raymond Hettinger によって"
-"なされました。"
+"Originalmente propuesto por Greg Wilson e implementado finalmente por "
+"Raymond Hettinger."
 
-#: ../../whatsnew/2.4.rst:90
+#: ../Doc/whatsnew/2.4.rst:90
 msgid "PEP 237: Unifying Long Integers and Integers"
-msgstr "PEP 237: 長整数と整数を一体化していく"
+msgstr "PEP 237: Unificando enteros largos y enteros"
 
-#: ../../whatsnew/2.4.rst:92
+#: ../Doc/whatsnew/2.4.rst:92
 msgid ""
 "The lengthy transition process for this PEP, begun in Python 2.2, takes "
 "another step forward in Python 2.4.  In 2.3, certain integer operations that "
@@ -144,42 +147,44 @@ msgid ""
 "(depending on your platform).  In 2.4, these expressions no longer produce a "
 "warning and instead produce a different result that's usually a long integer."
 msgstr ""
-"この PEP の非常に長期に渡る移行は Python 2.2 に始まり、Python 2.4 でさらにも"
-"う一歩前進しています。2.3 では int/long の一体化後に異なる振る舞いをする整数"
-"演算をすると :exc:`FutureWarning` 警告を出して、結果の値は (プラットフォーム"
-"依存で) 32 ビットまたは 64 ビットに制限していました。2.4 ではこれらの式はもう"
-"警告は出さず、代わりにいつでも(2.3 とは違った)長整数となる結果をはじき出しま"
-"す。"
+"El prolongado proceso de transición para este PEP que comenzó en Python 2.2 "
+"ha dado un paso más adelante en Python 2.4. En la versión 2.3 ciertas "
+"operaciones de enteros podían comportarse diferente después de lanzar la "
+"unificación del tipo de dato int-long entregando alertas :exc:"
+"`FutureWarning` y retornando valores limitados a 32 o 64 bits dependiendo de "
+"su plataforma. En la versión 2.4 estas expresiones ya no producen alertas y "
+"en vez de eso entrega un resultado diferente que suele ser un entero largo."
 
-#: ../../whatsnew/2.4.rst:99
+#: ../Doc/whatsnew/2.4.rst:99
 msgid ""
 "The problematic expressions are primarily left shifts and lengthy "
 "hexadecimal and octal constants.  For example, ``2 << 32`` results in a "
 "warning in 2.3, evaluating to 0 on 32-bit platforms.  In Python 2.4, this "
 "expression now returns the correct answer, 8589934592."
 msgstr ""
-"問題を起こしうる式は主として左シフトで、そして長い 16 進リテラルと 8 進リテラ"
-"ルです。例えば ``2 << 32`` は 2.3 では警告とともに 32 ビットプラットフォーム"
-"では結果は 0 になります。Python 2.4 ではこの式は正しい答えの 8589934592 にな"
-"ります。"
+"Las expresiones problemáticas son principalmente desplazamientos a la "
+"izquierda y constantes largas de hexadecimales y octales. Por ejemplo, ``2 "
+"<< 32``  entrega una alerta en la versión 2.3 y evalúa 0 en plataformas 32-"
+"bit. Ahora en Python 2.4 la expresión retorna la respuesta correcta, "
+"8589934592."
 
-#: ../../whatsnew/2.4.rst:108
+#: ../Doc/whatsnew/2.4.rst:108
 msgid ":pep:`237` - Unifying Long Integers and Integers"
-msgstr ":pep:`237` - 長整数と整数を一体化していく"
+msgstr ":pep:`237` - Unificando enteros largos y enteros"
 
-#: ../../whatsnew/2.4.rst:108
+#: ../Doc/whatsnew/2.4.rst:108
 msgid ""
 "Original PEP written by Moshe Zadka and GvR.  The changes for 2.4 were "
 "implemented by  Kalle Svensson."
 msgstr ""
-"オリジナルの PEP は Moshe Zadka と GvR (Guido van Rossum) によって書かれまし"
-"た。.2.4 での変更については Kalle Svensson によって実装されました。"
+"PEP original escrito por Moshe Zadka y GvR.  Los cambios a la versión 2.4 "
+"fueron implementados por Kalle Svensson."
 
-#: ../../whatsnew/2.4.rst:115
+#: ../Doc/whatsnew/2.4.rst:115
 msgid "PEP 289: Generator Expressions"
-msgstr "PEP 289: ジェネレータ式"
+msgstr "PEP 289: Expresiones generadoras"
 
-#: ../../whatsnew/2.4.rst:117
+#: ../Doc/whatsnew/2.4.rst:117
 msgid ""
 "The iterator feature introduced in Python 2.2 and the :mod:`itertools` "
 "module make it easier to write programs that loop through large data sets "
@@ -190,43 +195,55 @@ msgid ""
 "large.  When trying to write a functionally styled program, it would be "
 "natural to write something like::"
 msgstr ""
+"La función de iterador introducida en Python 2.2 y el módulo :mod:"
+"`itertools` facilitan la escritura de programas que recorren grandes "
+"conjuntos de datos sin tener todo el conjunto de datos en la memoria al "
+"mismo tiempo. Las listas de comprensión no encajan muy bien en esta imagen "
+"porque producen un objeto de lista de Python que contiene todos los "
+"elementos. Esto inevitablemente lleva todos los objetos a la memoria, lo que "
+"puede ser un problema si su conjunto de datos es muy grande. Al tratar de "
+"escribir un programa de estilo funcional, sería natural escribir algo como:"
 
-#: ../../whatsnew/2.4.rst:129
+#: ../Doc/whatsnew/2.4.rst:129
 msgid "instead of  ::"
-msgstr "こうではなく  ::"
+msgstr "en vez de ::"
 
-#: ../../whatsnew/2.4.rst:136
+#: ../Doc/whatsnew/2.4.rst:136
 msgid ""
 "The first form is more concise and perhaps more readable, but if you're "
 "dealing with a large number of link objects you'd have to write the second "
 "form to avoid having all link objects in memory at the same time."
 msgstr ""
-"最初の形の方が簡潔でおそらく読みやすいですが、扱っているのがとても多くのリン"
-"クオブジェクトであるならば、全てのリンクオブジェクトが一気にメモリに載らない"
-"ように二つ目の形で書く必要がありました。"
+"La primera forma es mas concisa y quizás mas legible pero en caso de "
+"trabajar con un gran número largo de objetos podría ser necesario el "
+"escribir una segunda línea para evitar tener los objetos enlazados en "
+"memoria al mismo tiempo."
 
-#: ../../whatsnew/2.4.rst:140
+#: ../Doc/whatsnew/2.4.rst:140
 msgid ""
 "Generator expressions work similarly to list comprehensions but don't "
 "materialize the entire list; instead they create a generator that will "
 "return elements one by one.  The above example could be written as::"
 msgstr ""
-"ジェネレータ式はリスト内包と似た動作をしますが、リスト全体を実体化しません; "
-"代わりにそれは、要素を一つずつ返すジェネレータを返します。上述の例はこう書け"
-"ます::"
+"Las expresiones generadoras trabajan de forma similar a las listas por "
+"comprensión pero no materializan la lista completa, en vez de eso se crea un "
+"generador que retornará los elementos uno a uno.\n"
+"El siguiente ejemplo podría ser escrito como:"
 
-#: ../../whatsnew/2.4.rst:148
+#: ../Doc/whatsnew/2.4.rst:148
 msgid ""
 "Generator expressions always have to be written inside parentheses, as in "
 "the above example.  The parentheses signalling a function call also count, "
 "so if you want to create an iterator that will be immediately passed to a "
 "function you could write::"
 msgstr ""
-"上の例でのように、ジェネレータ式は常に括弧の中に書かなければなりません。関数"
-"呼び出しを囲む括弧もそれに含まれるので、関数にそのまま渡すイテレータを作りた"
-"ければこれで良いです::"
+"Los generadores de expresiones siempre tienen que ser escritos dentro de "
+"paréntesis como en el ejemplo descrito arriba. Los paréntesis señalan una "
+"llamada a la función que también se puede contar, entonces si se necesita "
+"crear un iterador que inmediatamente pasara a una función se podría "
+"escribir::"
 
-#: ../../whatsnew/2.4.rst:155
+#: ../Doc/whatsnew/2.4.rst:155
 msgid ""
 "Generator expressions differ from list comprehensions in various small ways. "
 "Most notably, the loop variable (*obj* in the above example) is not "
@@ -235,46 +252,48 @@ msgid ""
 "change this, making list comprehensions match generator expressions in this "
 "respect."
 msgstr ""
-"ジェネレータ式はリスト内包とは色々小さい点で違います。最も顕著なのはループ変"
-"数 (上の例での *obj*) がジェネレータ式の外からアクセス不能なことです。リスト"
-"内包はループの制御変数が最後に代入された値で残ります; 将来のバージョンの "
-"Python では、この振る舞いはリスト内包がこの点でジェネレータ式と同じになるよう"
-"に変更されます。 (---訳注: Python 2.7 でもリスト内包のこの振る舞いは変わって"
-"おらず、警告ともなりません。制御変数が内包のスコープ外で可視でなくなったのは "
-"Python 3.0 からです。---)"
+"Las expresiones generadoras difieren de las listas de comprensión por "
+"pequeñas diferencias. La mas notable es que la variable del loop (*obj* en "
+"el ejemplo de arriba) no es accesible fuera de la expresión generadora. Las "
+"listas de comprensión dejan la variable asignada a su último valor, en "
+"versiones futuras de Python esto será cambiado en lo que respecta a hacer "
+"que las listas de comprensión coincidan con las expresiones de los "
+"generadores."
 
-#: ../../whatsnew/2.4.rst:165
+#: ../Doc/whatsnew/2.4.rst:165
 msgid ":pep:`289` - Generator Expressions"
-msgstr ":pep:`289` - ジェネレータ式"
+msgstr ":pep:`289` - Expresiones generadoras"
 
-#: ../../whatsnew/2.4.rst:165
+#: ../Doc/whatsnew/2.4.rst:165
 msgid ""
 "Proposed by Raymond Hettinger and implemented by Jiwon Seo with early "
 "efforts steered by Hye-Shik Chang."
 msgstr ""
-"Raymond Hettinger によって提案され、Hye-Shik Chang に導かれた早期の尽力によっ"
-"て Jiwon Seo により実装されました。"
+"Propuesto por Raymond Hettinger e implementada por Jiwon Seo con los "
+"primeros esfuerzos dirigidos por Hye-Shik Chang."
 
-#: ../../whatsnew/2.4.rst:172
+#: ../Doc/whatsnew/2.4.rst:172
 msgid "PEP 292: Simpler String Substitutions"
-msgstr "PEP 292: より単純な文字列置換 (string substitution)"
+msgstr "PEP 292: Sustituciones simples de cadenas de caracteres"
 
-#: ../../whatsnew/2.4.rst:174
+#: ../Doc/whatsnew/2.4.rst:174
 msgid ""
 "Some new classes in the standard library provide an alternative mechanism "
 "for substituting variables into strings; this style of substitution may be "
 "better for applications where untrained users need to edit templates."
 msgstr ""
-"標準ライブラリに、文字列を変数で置換するための代替メカニズムをもたらす新しい"
-"くつかのクラスが追加されました; この置換のスタイルは、訓練されていないユーザ"
-"がテンプレートを編集する必要があるようなアプリケーションにとって、より良いも"
-"のでしょう。"
+"Algunas nuevas clases en la librería estándar proveen un mecanismo "
+"alternativo para sustituir variables dentro de cadenas de caracteres, este "
+"estilo de sustituciones puede ser mejor por aplicaciones donde usuarios sin "
+"experiencia necesitan editar plantillas."
 
-#: ../../whatsnew/2.4.rst:178
+#: ../Doc/whatsnew/2.4.rst:178
 msgid "The usual way of substituting variables by name is the ``%`` operator::"
-msgstr "変数置換を名前で行うためのいつもの方法は ``%`` 演算子です::"
+msgstr ""
+"La manera usual de sustituir variables por el nombre es con el operador "
+"``%`` :"
 
-#: ../../whatsnew/2.4.rst:183
+#: ../Doc/whatsnew/2.4.rst:183
 msgid ""
 "When writing the template string, it can be easy to forget the ``i`` or "
 "``s`` after the closing parenthesis.  This isn't a big problem if the "
@@ -286,46 +305,48 @@ msgid ""
 "users, and if they make a mistake, it's difficult to provide helpful "
 "feedback to them."
 msgstr ""
-"テンプレート文字列を書くのに、閉じ括弧のあとの ``i`` や ``s`` を忘れやすいで"
-"す。これはそのテンプレートが Python モジュール内にあるなら大問題でもありませ"
-"ん。コードを実行し、「サポートされないフォーマット文字 (unsupported format "
-"character)」な :exc:`ValueError` を喰らい、問題を直すだけのことです。ですが、"
-"例えば Mailman のようなアプリケーションを考えてみてください。テンプレート文字"
-"列や翻訳は、Python 言語について承知していないユーザが編集するのです。フォー"
-"マット文字列の構文はそのようなユーザに説明するには複雑で、彼らが間違いをやら"
-"かした場合には、親切なフィードバックを彼らに与えるのは難しいのです。"
+"Cuando se escriben plantillas con cadenas de caracteres puede ser muy fácil "
+"olvidar el uso de ``i`` or ``s`` después de cerrar paréntesis. Esto no es un "
+"problema grande si se está dentro de un módulo de Python pues al correr el "
+"código se lanza el siguiente mensaje de error \"Unsupported format "
+"character\" :exc:`ValueError` y el problema se resuelve. Sin embargo, "
+"tengamos en cuenta una aplicación como Mailman donde una plantilla de "
+"caracteres o traducciones son editadas por usuarios que no están "
+"familiarizados con Python. La sintaxis de como formatear las cadenas de "
+"caracteres es complicada de explicar para ciertos usuarios y si ellos "
+"cometen un error es una dificultad el entregar retroalimentación y ayuda."
 
-#: ../../whatsnew/2.4.rst:192
+#: ../Doc/whatsnew/2.4.rst:192
 msgid ""
 "PEP 292 adds a :class:`Template` class to the :mod:`string` module that uses "
 "``$`` to indicate a substitution::"
 msgstr ""
-"PEP 292 は :mod:`string` モジュールに :class:`Template` クラスを追加します。"
-"これは置換を指示するのに ``$`` を使います::"
+"PEP 292 agrega una clase :class:`Template` al módulo :mod:`string` al módulo "
+"que usa ``$`` para indicar una sustitución::"
 
-#: ../../whatsnew/2.4.rst:200
+#: ../Doc/whatsnew/2.4.rst:200
 msgid ""
 "If a key is missing from the dictionary, the :meth:`substitute` method will "
 "raise a :exc:`KeyError`.  There's also a :meth:`safe_substitute` method that "
 "ignores missing keys::"
 msgstr ""
-"辞書にキーが見つからない場合、 :meth:`substitute` メソッドは :exc:`KeyError` "
-"を送出します。 :meth:`safe_substitute` メソッドもあり、これはキー不在を無視し"
-"ます::"
+"Si una llave falta en el diccionario, el método :meth:`substitute` lanzará "
+"una :exc:`KeyError`. También el método :meth:`safe_substitute` que ignora "
+"las llaves faltantes::"
 
-#: ../../whatsnew/2.4.rst:211
+#: ../Doc/whatsnew/2.4.rst:211
 msgid ":pep:`292` - Simpler String Substitutions"
-msgstr ":pep:`292` - より単純な文字列置換 (string substitution)"
+msgstr ":pep:`292` - Sustituciones simples de cadenas de caracteres"
 
-#: ../../whatsnew/2.4.rst:212
+#: ../Doc/whatsnew/2.4.rst:212
 msgid "Written and implemented  by Barry Warsaw."
-msgstr "Barry Warsaw 著、実装"
+msgstr "Escrito e implementado por Barry Warsaw."
 
-#: ../../whatsnew/2.4.rst:218
+#: ../Doc/whatsnew/2.4.rst:218
 msgid "PEP 318: Decorators for Functions and Methods"
-msgstr "PEP 318: 関数とメソッドのためのデコレータ"
+msgstr "PEP 318: Decoradores para funciones y métodos"
 
-#: ../../whatsnew/2.4.rst:220
+#: ../Doc/whatsnew/2.4.rst:220
 msgid ""
 "Python 2.2 extended Python's object model by adding static methods and class "
 "methods, but it didn't extend Python's syntax to provide any new way of "
@@ -334,22 +355,23 @@ msgid ""
 "`staticmethod` or :func:`classmethod` function that would wrap up the "
 "function as a method of the new type. Your code would look like this::"
 msgstr ""
-"Python 2.2 は Python オブジェクトモデルを静的メソッド、クラスメソッドを追加す"
-"ることで拡張はしましたが、それらを定義する新たな手段を提供するような Python "
-"構文の拡張はしませんでした。このため、 :keyword:`def` でメソッドは普通に書い"
-"たのち、新型メソッドとしての関数へ仕立て上げる :func:`staticmethod` または :"
-"func:`classmethod` にその結果のメソッドを渡す、という手順を取る必要がありまし"
-"た。このような具合でした::"
+"Python 2.2 extendió el modelo de objeto de Python añadiendo métodos "
+"estáticos y métodos de clase pero no se extendió la sintaxis de Python para "
+"proveer alguna nueva forma de definir métodos estáticos o de clase. En vez "
+"de eso se tenía que escribir la palabra clave :keyword:`def` de manera usual "
+"y pasar el método resultante a la :func:`staticmethod` o a la :func:"
+"`classmethod` que podía agrupar la función como método de un nuevo tipo. El "
+"código podría verse como esto:"
 
-#: ../../whatsnew/2.4.rst:233
+#: ../Doc/whatsnew/2.4.rst:233
 msgid ""
 "If the method was very long, it would be easy to miss or forget the :func:"
 "`classmethod` invocation after the function body."
 msgstr ""
-"メソッドがとても長かったりすると、関数のボディの後ろの :func:`classmethod` 呼"
-"び出しは見失ったり忘れたりしやすいものでした。"
+"Si el método era muy largo, era muy probable el perder o olvidar la "
+"invocación :func:`classmethod` dentro del cuerpo de la función."
 
-#: ../../whatsnew/2.4.rst:236
+#: ../Doc/whatsnew/2.4.rst:236
 msgid ""
 "The intention was always to add some syntax to make such definitions more "
 "readable, but at the time of 2.2's release a good syntax was not obvious.  "
@@ -357,45 +379,47 @@ msgid ""
 "access to the feature; a new syntactic feature has been added to meet this "
 "need."
 msgstr ""
-"そのような定義をもっと読みやすくするために何か構文を追加する、という意図は常"
-"にありましたが、2.2 のリリース時点では良い構文は明らかではありませんでした。"
-"本日時点でさえ *いまだ* 明らかとは言えませんが、ユーザは静的メソッドとクラス"
-"メソッドを簡単に手にする手段を注文し続けています; 新たな構文的機能はこの要求"
-"に合うように追加されました。"
+"La intención era siempre agregar alguna sintaxis que hicieran las "
+"definiciones mas entendibles pero al tiempo del lanzamiento de la versión "
+"2.2 una buena sintaxis no era clara. Al día de hoy una buena sintaxis aun no "
+"es clara pero los usuarios están preguntando por formas más fáciles de "
+"acceder a las características, entonces una nueva funcionalidad sintáctica "
+"ha sido añadida para satisfacer esta necesidad."
 
-#: ../../whatsnew/2.4.rst:241
+#: ../Doc/whatsnew/2.4.rst:241
 msgid ""
 "The new feature is called \"function decorators\".  The name comes from the "
 "idea that :func:`classmethod`, :func:`staticmethod`, and friends are storing "
 "additional information on a function object; they're *decorating* functions "
 "with more details."
 msgstr ""
-"この新たな機能は「関数デコレータ (function decorators)」と呼ばれます。この名"
-"前は :func:`classmethod`, :func:`staticmethod`, とその仲間たちが関数オブジェ"
-"クトに追加的な情報を保存することから着想を得たものです; それらは関数をより多"
-"くの詳細で *デコレート (修飾) している* というわけです。"
+"La nueva característica es llamada decoradores de funciones. El nombre "
+"proviene de la idea de que :func:`classmethod`, :func:`staticmethod` son "
+"amigos y guardan información adicional en un objeto de una función. ellos "
+"están decorando funciones con mas detalles."
 
-#: ../../whatsnew/2.4.rst:246
+#: ../Doc/whatsnew/2.4.rst:246
 msgid ""
 "The notation borrows from Java and uses the ``'@'`` character as an "
 "indicator. Using the new syntax, the example above would be written::"
 msgstr ""
-"記法は Java より拝借して ``'@'`` 文字を指示子として使います。この新たな構文を"
-"使うと、上記の例はこのように書けます::"
+"La notación proviene de Java y usa el ``'@'`` símbolo arroba como un "
+"indicador. Usando la nueva sintaxis el ejemplo descrito arriba podría ser "
+"escrito de la siguiente forma:"
 
-#: ../../whatsnew/2.4.rst:256
+#: ../Doc/whatsnew/2.4.rst:256
 msgid ""
 "The ``@classmethod`` is shorthand for the ``meth=classmethod(meth)`` "
 "assignment. More generally, if you have the following::"
 msgstr ""
-"``@classmethod`` は ``meth=classmethod(meth)`` 代入の速記法です。より一般的に"
-"は、このように書けば…:"
+"El ``@classmethod``  es un atajo para ``meth=classmethod(meth)``. De forma "
+"general si se tiene lo siguiente:"
 
-#: ../../whatsnew/2.4.rst:265
+#: ../Doc/whatsnew/2.4.rst:265
 msgid "It's equivalent to the following pre-decorator code::"
-msgstr "これはデコレータ前史の以下コードと等価です::"
+msgstr "Es el equivalente para el siguiente código de pre decorador::"
 
-#: ../../whatsnew/2.4.rst:270
+#: ../Doc/whatsnew/2.4.rst:270
 msgid ""
 "Decorators must come on the line before a function definition, one decorator "
 "per line, and can't be on the same line as the def statement, meaning that "
@@ -403,13 +427,14 @@ msgid ""
 "either at the module level or inside a class; you can't decorate class "
 "definitions."
 msgstr ""
-"デコレータは関数定義の前になければなりません。一行ごとに一つのデコレータで"
-"す。 def ステートメントと同じ行にあってはダメです。つまり ``@A def f(): ..."
-"`` は不正です。モジュールレベルかクラス内の関数定義のみをデコレート出来ます; "
-"クラス定義はデコレート出来ません。(--- 訳注: クラス定義のデコレータは Python "
-"2.6 で追加されました (PEP 3129) 。---)"
+"Los decoradores deben agregarse en una línea antes de la definición de la "
+"función, un decorador por línea y no puede estar en la misma línea donde se "
+"usa la palabra def para comenzar una función, por ejemplo ``@A def f(): ..."
+"`` es incorrecto. Solo se puede decorar una definición de función tanto al "
+"nivel de módulo o dentro de una clase pero no puedes decorar definiciones de "
+"clase."
 
-#: ../../whatsnew/2.4.rst:275
+#: ../Doc/whatsnew/2.4.rst:275
 msgid ""
 "A decorator is just a function that takes the function to be decorated as an "
 "argument and returns either the same function or some new object.  The "
@@ -418,29 +443,31 @@ msgid ""
 "your own decorators.  The following simple example just sets an attribute on "
 "the function object::"
 msgstr ""
-"デコレータはただの関数です。引数としてデコレートされる関数を取り、同じ関数か"
-"何か新しいオブジェクトを返すだけの。結果がほかのデコレータ適用されるの出ない"
-"限りは、デコレータの戻り値は呼び出し可能である必要はありません (普通はそうで"
-"すが)。あなた自身のデコレータを書くのは簡単です。続く単純な例は、関数オブジェ"
-"クトに単に属性をセットするだけのものです::"
+"Un decorador es simplemente una función que toma la función a ser decorada "
+"como un argumento y retorna tanto la misma función o un nuevo objeto. El "
+"valor de retorno del decorador no necesita ser llamado (como típicamente se "
+"cree) si no que los decoradores podrán ser aplicados al resultado. Es fácil "
+"escribir sus propios decoradores. El siguiente ejemplo agrega un atributo a "
+"la función objetiva::"
 
-#: ../../whatsnew/2.4.rst:295
+#: ../Doc/whatsnew/2.4.rst:295
 msgid ""
 "As a slightly more realistic example, the following decorator checks that "
 "the supplied argument is an integer::"
 msgstr ""
-"もう少しだけ現実的な例として、続く例ではデコレータに、与えられた引数が整数か"
-"どうかチェックさせてみます::"
+"Como un ejemplo un poco mas realista, el siguiente decorador revisa si el "
+"argumento entregado es un entero::"
 
-#: ../../whatsnew/2.4.rst:313
+#: ../Doc/whatsnew/2.4.rst:313
 msgid ""
 "An example in :pep:`318` contains a fancier version of this idea that lets "
 "you both specify the required type and check the returned type."
 msgstr ""
-":pep:`318` にある例はこのアイディアのもっと凝った版が含まれていて、それは要求"
-"型の指定と戻り値のチェックの両方が出来ます。"
+"Un ejemplo en :pep:`318`  contiene una versión mas elegante de esta idea "
+"donde deja que usted elija específicamente el tipo y revisa el tipo de "
+"retorno."
 
-#: ../../whatsnew/2.4.rst:316
+#: ../Doc/whatsnew/2.4.rst:316
 msgid ""
 "Decorator functions can take arguments.  If arguments are supplied, your "
 "decorator function is called with only those arguments and must return a new "
@@ -448,95 +475,98 @@ msgid ""
 "function, as previously described.  In other words, ``@A @B @C(args)`` "
 "becomes::"
 msgstr ""
-"デコレータ関数は引数を取ることが出来ます。引数が与えられた場合、あなたのデコ"
-"レータ関数はそれら引数のみで呼び出され、そして新しいデコレータを返さなければ"
-"なりません; この関数は単一の関数を取らなければならず、前述のように関数を返さ"
-"なければなりません。言い換えると、 ``@A @B @C(args)`` はこうなります::"
+"Los decoradores de funciones pueden tomar argumentos. Si los argumentos son "
+"provistos, el decorador de la función es llamado con solo esos argumentos y "
+"retorna un nuevo decorador de función, esta función debe tomar una función "
+"sola y retorna una función como previamente se ha descrito. En otras "
+"palabras ``@A @B @C(args)`` comienza:"
 
-#: ../../whatsnew/2.4.rst:325
+#: ../Doc/whatsnew/2.4.rst:325
 msgid ""
 "Getting this right can be slightly brain-bending, but it's not too difficult."
 msgstr ""
-"これが正しいと理解するには少しばかり頭をひねる必要がありますが、難しすぎるこ"
-"とはありません。"
+"Conseguir que esto resulte correcto puede ser un acertijo pero tampoco es "
+"muy dificultoso."
 
-#: ../../whatsnew/2.4.rst:327
+#: ../Doc/whatsnew/2.4.rst:327
 msgid ""
 "A small related change makes the :attr:`func_name` attribute of functions "
 "writable.  This attribute is used to display function names in tracebacks, "
 "so decorators should change the name of any new function that's constructed "
 "and returned."
 msgstr ""
-"デコレータに関係した小さな変更は、関数の :attr:`func_name` 属性が書き込み可能"
-"になったことです。この属性はトレースバックでの関数名表示に使われますので、デ"
-"コレータは構築して返却する新しい関数の名前を変更すべきです。"
+"Un pequeño cambio relacionado hace el atributo :attr:`func_name` de la "
+"función modificable. Este atributo es usado para desplegar nombres de "
+"funciones en el rastreo, entonces los decoradores cambia el nombre de "
+"cualquier nueva función que es construida y retornada."
 
-#: ../../whatsnew/2.4.rst:338
+#: ../Doc/whatsnew/2.4.rst:338
 msgid ":pep:`318` - Decorators for Functions, Methods and Classes"
-msgstr ":pep:`318` - 関数、メソッド、クラスのためのデコレータ"
+msgstr ":pep:`318` Decoradores para funciones, métodos y clases"
 
-#: ../../whatsnew/2.4.rst:336
+#: ../Doc/whatsnew/2.4.rst:336
 msgid ""
 "Written  by Kevin D. Smith, Jim Jewett, and Skip Montanaro.  Several people "
 "wrote patches implementing function decorators, but the one that was "
 "actually checked in was patch #979728, written by Mark Russell."
 msgstr ""
-"Kevin D. Smith, Jim Jewett, Skip Montanaro により著されました。数多くの人々が"
-"関数デコレータ実装のパッチを書きましたが、実際にチェックインされたものは "
-"Mark Russell が書いた #979728 でした。"
+"Escrito por Kevin D.Smith, Jim Jewett y Skip Montanaro. Varias personas "
+"escribieron parches sobre la implementación de los decoradores de funciones, "
+"pero el único que fue chequeado fue #979728 por Mark Russell."
 
-#: ../../whatsnew/2.4.rst:340
+#: ../Doc/whatsnew/2.4.rst:340
 msgid "https://wiki.python.org/moin/PythonDecoratorLibrary"
 msgstr "https://wiki.python.org/moin/PythonDecoratorLibrary"
 
-#: ../../whatsnew/2.4.rst:341
+#: ../Doc/whatsnew/2.4.rst:341
 msgid "This Wiki page contains several examples of decorators."
-msgstr "数多くのデコレータ例を含む Wiki ページ。"
+msgstr "Esta pagina de wiki contiene múltiples ejemplos de decoradores."
 
-#: ../../whatsnew/2.4.rst:347
+#: ../Doc/whatsnew/2.4.rst:347
 msgid "PEP 322: Reverse Iteration"
-msgstr "PEP 322: 逆順のイテレーション"
+msgstr "PEP 322: Iteración inversa"
 
-#: ../../whatsnew/2.4.rst:349
+#: ../Doc/whatsnew/2.4.rst:349
 msgid ""
 "A new built-in function, ``reversed(seq)``, takes a sequence and returns an "
 "iterator that loops over the elements of the sequence  in reverse order.   ::"
 msgstr ""
-"新しいビルトイン関数 ``reversed(seq)`` は、シーケンスを受け取って、シーケンス"
-"の要素を逆順にループするイテレータを返します::"
+"Una nueva función de conjuntos integrados, ``reversed(seq)`` toma una "
+"secuencia y retorna un iterador que recorre los elementos de la secuencia en "
+"orden inverso.:"
 
-#: ../../whatsnew/2.4.rst:359
+#: ../Doc/whatsnew/2.4.rst:359
 msgid ""
 "Compared to extended slicing, such as ``range(1,4)[::-1]``, :func:`reversed` "
 "is easier to read, runs faster, and uses substantially less memory."
 msgstr ""
-"``range(1,4)[::-1]`` のようにする拡張スライスでのやり方に比較して :func:"
-"`reversed` は読みやすく、実行が高速で、大体の場合はメモリ使用が少なく済みま"
-"す。"
+"Comparado con el uso tradicional de la segmentación tal como ``range(1,4)"
+"[::-1]`` la  función :func:`reversed` es fácil de leer,  se ejecuta mas "
+"rápido y usa sustancialmente menos memoria."
 
-#: ../../whatsnew/2.4.rst:362
+#: ../Doc/whatsnew/2.4.rst:362
 msgid ""
 "Note that :func:`reversed` only accepts sequences, not arbitrary iterators.  "
 "If you want to reverse an iterator, first convert it to  a list with :func:"
 "`list`. ::"
 msgstr ""
-":func:`reversed` は任意のイテレータは受け付けず、シーケンスのみ受け付けること"
-"に注意してください。イテレータを逆順にしたければ、最初に :func:`list` でリス"
-"トに変換してください::"
+"Señalar que la función :func:`reversed` solo acepta secuencias, no "
+"iteradores arbitrarios. Si se quiere revertir un iterador, primero se debe "
+"convertir a una lista usando la función :func:`list`.:"
 
-#: ../../whatsnew/2.4.rst:376
+#: ../Doc/whatsnew/2.4.rst:376
 msgid ":pep:`322` - Reverse Iteration"
-msgstr ":pep:`322`  - 逆順のイテレーション"
+msgstr ":pep:`322` - Iteración inversa"
 
-#: ../../whatsnew/2.4.rst:377
+#: ../Doc/whatsnew/2.4.rst:377
 msgid "Written and implemented by Raymond Hettinger."
-msgstr "Raymond Hettinger 著、実装."
+msgstr "Escrita e implementada por Raymond Hettinger."
 
-#: ../../whatsnew/2.4.rst:383
+#: ../Doc/whatsnew/2.4.rst:383
 msgid "PEP 324: New subprocess Module"
-msgstr "PEP 324: 新しい subprocess モジュール"
+msgstr "PEP 324: Nuevo módulo de subproceso"
 
-#: ../../whatsnew/2.4.rst:385
+#: ../Doc/whatsnew/2.4.rst:385
 msgid ""
 "The standard library provides a number of ways to execute a subprocess, "
 "offering different features and different levels of complexity. ``os."
@@ -547,86 +577,92 @@ msgid ""
 "naming is confusing.  The :mod:`subprocess` module cleans  this up, "
 "providing a unified interface that offers all the features you might need."
 msgstr ""
-"標準ライブラリはサブプロセスを実行するのに数多くの手段を提供しています。これ"
-"らは異なった機能、異なった複雑さのレベルを提供しています。 ``os."
-"system(command)`` の利用は簡単です。ですがこれは遅く (コマンドを実行するシェ"
-"ルを起動しますので)、危険でもあります (シェルのメタ文字を注意深くエスケープす"
-"る必要があります)。 :mod:`popen2` モジュールが提供するクラス群はサブプロセス"
-"より標準出力、標準エラー出力をキャプチャ出来ますが、名前付けがややこしいで"
-"す。 :mod:`subprocess` モジュールはこれを綺麗にし、必要とするであろう機能全て"
-"を与える一体化されたインターフェイスを提供しています。"
+"La librería estándar provee un cierto número de formas de ejecutar un "
+"subproceso, ofreciendo diferentes funcionalidades y diferentes niveles de "
+"complejidad. ``os.system(command)`` es fácil de usar pero lento (esto corre "
+"un proceso a nivel de interprete de comandos)y peligroso (se tiene que ser "
+"cuidadoso con no considerar los metacaracteres usados en el intérprete)\n"
+"El módulo :mod:`popen2` ofrece clases que pueden capturar la salida estándar "
+"y el error estándar del subproceso, pero el nombre puede ser confuso.\n"
+"El módulo :mod:`subprocess` deja esto mas claro proveyendo una interface "
+"unificada que ofrece todas las funcionalidades que usted necesita."
 
-#: ../../whatsnew/2.4.rst:394
+#: ../Doc/whatsnew/2.4.rst:394
 msgid ""
 "Instead of :mod:`popen2`'s collection of classes, :mod:`subprocess` contains "
 "a single class called :class:`Popen`  whose constructor supports a number of "
 "different keyword arguments. ::"
 msgstr ""
-":mod:`popen2` のクラス所蔵品群の代わりに :mod:`subprocess` には :class:"
-"`Popen` と呼ばれる単一のクラスが含まれています。これのコンストラクタは数多く"
-"の異なるキーワード引数を取ります::"
+"En vez de :mod:`popen2` que es una colección de clases el :mod:`subprocess` "
+"contiene una sola clase llamada :class:`Popen` cuyo constructor soporta un "
+"número de diferentes argumentos de palabra clave:"
 
-#: ../../whatsnew/2.4.rst:404
+#: ../Doc/whatsnew/2.4.rst:404
 msgid ""
 "*args* is commonly a sequence of strings that will be the arguments to the "
 "program executed as the subprocess.  (If the *shell* argument is true, "
 "*args* can be a string which will then be passed on to the shell for "
 "interpretation, just as :func:`os.system` does.)"
 msgstr ""
-"*args* は普通は文字列のシーケンスで、サブプロセスとして実行するプログラムへの"
-"引数群となります。 (*shell* 引数が真の場合は *args* はシェルに解釈を任せるた"
-"めに渡す文字列に出来、つまりこの場合 :func:`os.system` と同じことをします。)"
+"*args* es comúnmente una secuencia de cadenas de caracteres que podrán ser "
+"los argumentos del programa ejecutado como un subproceso. (Si el argumento "
+"*shell* es verdadero, *args* puede ser una cadena de caracteres que serán "
+"pasados directamente a la shell para su interpretación, tal como :func:`os."
+"system` lo hace.)"
 
-#: ../../whatsnew/2.4.rst:409
+#: ../Doc/whatsnew/2.4.rst:409
 msgid ""
 "*stdin*, *stdout*, and *stderr* specify what the subprocess's input, output, "
 "and error streams will be.  You can provide a file object or a file "
 "descriptor, or you can use the constant ``subprocess.PIPE`` to create a pipe "
 "between the subprocess and the parent."
 msgstr ""
-"*stdin*, *stdout*, *stderr* はサブプロセスの入力・出力・エラーのストリームを"
-"指定します。ファイルオブジェクトかファイル記述子を渡すことが出来ます。あるい"
-"は定数 ``subprocess.PIPE`` を渡してサブプロセスと親とのパイプを作成することが"
-"出来ます。"
+"*stdin*, *stdout*, y *stderr* especifican que flujos de entrada, salida y "
+"error serán utilizados. Se puede proceder un objeto de archivo o un archivo "
+"de descripción o se puede usar la constante ``subprocess.PIPE`` para crear "
+"un enlace entre el subproceso y el proceso principal."
 
-#: ../../whatsnew/2.4.rst:417
+#: ../Doc/whatsnew/2.4.rst:417
 msgid "The constructor has a number of handy options:"
-msgstr "コンストラクタには多くの便利なオプションがあります:"
+msgstr "El constructor tiene un número de opciones útiles:"
 
-#: ../../whatsnew/2.4.rst:419
+#: ../Doc/whatsnew/2.4.rst:419
 msgid ""
 "*close_fds* requests that all file descriptors be closed before running the "
 "subprocess."
 msgstr ""
-"*close_fds* はサブプロセス実行前に全てのファイル記述子をクローズすることを要"
-"求します。"
+"*close_fds* requiere que todos los descriptores de archivos sean cerrados "
+"antes de correr el subproceso."
 
-#: ../../whatsnew/2.4.rst:422
+#: ../Doc/whatsnew/2.4.rst:422
 msgid ""
 "*cwd* specifies the working directory in which the subprocess will be "
 "executed (defaulting to whatever the parent's working directory is)."
 msgstr ""
-"*cwd* はサブプロセスを実行する作業ディレクトリを指定します (デフォルトは親の"
-"作業ディレクトリです)。"
+"*cwd*  especifica el directorio operativo donde el subproceso será ejecutado "
+"(por defecto, cualquiera que sea el directorio principal)"
 
-#: ../../whatsnew/2.4.rst:425
+#: ../Doc/whatsnew/2.4.rst:425
 msgid "*env* is a dictionary specifying environment variables."
-msgstr "*env* は環境変数を指定する辞書です。"
+msgstr ""
+"*env*  es un diccionario donde se especifican las variables de entorno."
 
-#: ../../whatsnew/2.4.rst:427
+#: ../Doc/whatsnew/2.4.rst:427
 msgid ""
 "*preexec_fn* is a function that gets called before the child is started."
-msgstr "*preexec_fn* は子が開始する前に呼び出される関数です。"
+msgstr ""
+"*preexec_fn* es una función que es llamada antes de que el proceso hijo sea "
+"llamado."
 
-#: ../../whatsnew/2.4.rst:429
+#: ../Doc/whatsnew/2.4.rst:429
 msgid ""
 "*universal_newlines* opens the child's input and output using Python's :term:"
 "`universal newlines` feature."
 msgstr ""
-"*universal_newlines* で、子の入出力を、Python の :term:`universal newlines` "
-"機能で開きます。"
+"*universal_newlines* abre el flujo de entrada y salida del hijo usando la "
+"característica de Python :term:`universal newlines` ."
 
-#: ../../whatsnew/2.4.rst:432
+#: ../Doc/whatsnew/2.4.rst:432
 msgid ""
 "Once you've created the :class:`Popen` instance,  you can call its :meth:"
 "`wait` method to pause until the subprocess has exited, :meth:`poll` to "
@@ -635,61 +671,64 @@ msgid ""
 "then reads any data that the subprocess has sent to its standard output  or "
 "standard error, returning a tuple ``(stdout_data, stderr_data)``."
 msgstr ""
-":class:`Popen` インスタンスを作ってしまえば、あとはサブプロセスが終了するまで"
-"停止するために :meth:`wait` メソッド呼び出すことが出来、停止することなく終了"
-"をチェックするのに :meth:`poll` メソッドを呼び出すことが出来、あるいは "
-"``communicate(data)`` を呼び出して、子の標準入力に *data* を送信することが出"
-"来ます。 ``communicate(data)`` はサブプロセスが送信する標準出力と標準エラー出"
-"力を読み込み、タプル ``(stdout_data, stderr_data)`` を返します。"
+"Una vez que se ha creado la instancia de la :class:`Popen`  se puede llamar "
+"al método :meth:`wait` para poner en pausa hasta que el subproceso ha "
+"terminado, el método :meth:`poll` comprueba si se ha salido sin pausar o el "
+"uso de ``communicate(data)`` envía la cadena de caracteres *data* a la "
+"entrada estándar del subproceso. Y el uso de ``communicate(data)`` que lee "
+"cualquier dato que el subproceso ha enviado a la salida estándar, retornando "
+"una tupla ``(stdout_data, stderr_data)``."
 
-#: ../../whatsnew/2.4.rst:439
+#: ../Doc/whatsnew/2.4.rst:439
 msgid ""
 ":func:`call` is a shortcut that passes its arguments along to the :class:"
 "`Popen` constructor, waits for the command to complete, and returns the "
 "status code of the subprocess.  It can serve as a safer analog to :func:`os."
 "system`::"
 msgstr ""
-":func:`call` は :class:`Popen` コンストラクタにその引数を流し込むショートカッ"
-"トで、コマンドが終了するまで待ち、サブプロセスの終了コードを返します。これ"
-"は :func:`os.system` に対する安全な置き換えとなりえます::"
+":func:`call` es un atajo que pasa estos argumentos a lo largo del "
+"constructor de la clase :class:`Popen`, espera por el comando para completar "
+"la secuencia y retorna el código de estatus del subproceso. Esto puede "
+"servir como un análogo mas seguro de :func:`os.system`:"
 
-#: ../../whatsnew/2.4.rst:451
+#: ../Doc/whatsnew/2.4.rst:451
 msgid ""
 "The command is invoked without use of the shell.  If you really do want to  "
 "use the shell, you can add ``shell=True`` as a keyword argument and provide "
 "a string instead of a sequence::"
 msgstr ""
-"コマンドはシェルを使うことなく呼び出されます。もしシェルを本当に使いたいので"
-"あればキーワード引数として ``shell=True`` を与えた上でシーケンスの代わりに文"
-"字列を与えることが出来ます::"
+"El comando es invocado sin el uso del interprete de comandos. Si se desea "
+"usar el intérprete se puede agregar ``shell=True`` como un argumento de "
+"palabra clave y proveer una cadena de caracteres en vez de una secuencia:"
 
-#: ../../whatsnew/2.4.rst:457
+#: ../Doc/whatsnew/2.4.rst:457
 msgid ""
 "The PEP takes various examples of shell and Python code and shows how they'd "
 "be translated into Python code that uses :mod:`subprocess`.  Reading this "
 "section of the PEP is highly recommended."
 msgstr ""
-"PEP にはシェルと Python コードの様々な例が採られていて、シェルスクリプトをい"
-"かにして :mod:`subprocess` を用いて Python コードに変換するかを示しています。"
-"PEP のこのセクションを読むことを強くお勧めします。"
+"La guía de estilo de Python toma varios ejemplos de línea de comandos y "
+"código python y muestra como estos son traducidos en el código python :mod:"
+"`subprocess`. Leer esta sección de la guía de estilo es altamente "
+"recomendado."
 
-#: ../../whatsnew/2.4.rst:465
+#: ../Doc/whatsnew/2.4.rst:465
 msgid ":pep:`324` - subprocess - New process module"
-msgstr ":pep:`324` - subprocess - プロセスのための新たなモジュール"
+msgstr ":pep:`324` - subprocess - Nuevo módulo de procesos"
 
-#: ../../whatsnew/2.4.rst:465
+#: ../Doc/whatsnew/2.4.rst:465
 msgid ""
 "Written and implemented by Peter Åstrand, with assistance from Fredrik Lundh "
 "and others."
 msgstr ""
-"Fredrik Lundh 他によるサポートによって、Peter Åstrand により PEP 著と実装が行"
-"われました。"
+"Escrito e implementado por Peter Åstrand, con asistencia de Frederik Lundh y "
+"otros."
 
-#: ../../whatsnew/2.4.rst:472
+#: ../Doc/whatsnew/2.4.rst:472
 msgid "PEP 327: Decimal Data Type"
-msgstr "PEP 327: Decimal データ型"
+msgstr "PEP 327: Tipo de dato decimal"
 
-#: ../../whatsnew/2.4.rst:474
+#: ../Doc/whatsnew/2.4.rst:474
 msgid ""
 "Python has always supported floating-point (FP) numbers, based on the "
 "underlying C :c:expr:`double` type, as a data type.  However, while most "
@@ -698,39 +737,49 @@ msgid ""
 "decimal fractions accurately.  The new :class:`Decimal` type can represent "
 "these fractions accurately, up to a user-specified precision limit."
 msgstr ""
+"Python siempre ha soportado números de punto flotante (FP), basados ​​en el "
+"tipo subyacente C :c:expr:`double`, como un tipo de datos. Sin embargo, "
+"aunque la mayoría de los lenguajes de programación proporcionan un tipo de "
+"punto flotante, muchas personas (incluso los programadores) no saben que los "
+"números de punto flotante no representan ciertas fracciones decimales con "
+"precisión. El nuevo tipo :class:`Decimal` puede representar estas fracciones "
+"con precisión, hasta un límite de precisión especificado por el usuario."
 
-#: ../../whatsnew/2.4.rst:483
+#: ../Doc/whatsnew/2.4.rst:483
 msgid "Why is Decimal needed?"
-msgstr "なぜ Decimal が必要なのか?"
+msgstr "¿Por qué se necesita Decimal?"
 
-#: ../../whatsnew/2.4.rst:485
+#: ../Doc/whatsnew/2.4.rst:485
 msgid ""
 "The limitations arise from the representation used for floating-point "
 "numbers. FP numbers are made up of three components:"
 msgstr ""
-"浮動小数点数が使う表現方法に起因する制約があります。浮動小数点数は 3 つの構成"
-"要素から成ります:"
+"Las limitaciones surgen de la representación usada para los números de punto "
+"flotante. Los números de punto flotante están hechos de tres componentes:"
 
-#: ../../whatsnew/2.4.rst:488
+#: ../Doc/whatsnew/2.4.rst:488
 msgid "The sign, which is positive or negative."
-msgstr "符号(sign)。正または負。"
+msgstr "El signo, el cual es positivo o negativo."
 
-#: ../../whatsnew/2.4.rst:490
+#: ../Doc/whatsnew/2.4.rst:490
 msgid ""
 "The mantissa, which is a single-digit binary number   followed by a "
 "fractional part.  For example, ``1.01`` in base-2 notation is ``1 + 0/2 + "
 "1/4``, or 1.25 in decimal notation."
 msgstr ""
-"仮数部(mantissa)。一桁の 2 進値に端数部が続きます。例えば 2 進数で ``1.01`` "
-"は ``1 + 0/2 + 1/4`` で 10 進表記で 1.25 です。"
+"El significando o mantisa el cual es el un dígito binario seguido de su "
+"parte fraccional. Por ejemplo, ``1.01`` en notación base 2 es ``1 + 0/2 + "
+"1/4`` o 1.25 en notación decimal."
 
-#: ../../whatsnew/2.4.rst:494
+#: ../Doc/whatsnew/2.4.rst:494
 msgid ""
 "The exponent, which tells where the decimal point is located in the number "
 "represented."
-msgstr "指数部(exponent)。小数点がその数値のどこに位置するかを表します。"
+msgstr ""
+"El exponente, que indica dónde se encuentra el punto decimal en el número "
+"representado."
 
-#: ../../whatsnew/2.4.rst:497
+#: ../Doc/whatsnew/2.4.rst:497
 msgid ""
 "For example, the number 1.25 has positive sign, a mantissa value of 1.01 (in "
 "binary), and an exponent of 0 (the decimal point doesn't need to be "
@@ -738,11 +787,13 @@ msgid ""
 "because the mantissa is multiplied by 4 (2 to the power of the exponent 2); "
 "1.25 \\* 4 equals 5."
 msgstr ""
-"例えば 1.25 は、正の符号を持ち、仮数部の値は (2 進数で) 1.01 で、指数部は 0 "
-"です (小数点は移動の必要がありません)。5 は同じ符号と仮数部を持ち、指数部は、"
-"仮数部が 4 倍なので 2 (2 を底とする 2 の 冪乗) です; 1.25 \\* 4 は 5 です。"
+"Por ejemplo, el número 1.25 tiene un signo positivo, una mantisa de valor "
+"1.01 (en binario) y un exponente de 0 (el punto decimal no necesita ser "
+"desplazado. El números 5 tiene el mismo signo y significando pero, el "
+"exponente es 2 porque el significando es multiplicado por 4 (2 elevado a la "
+"potencia del exponente 2), 1.25 \\* 4 es igual a 5."
 
-#: ../../whatsnew/2.4.rst:503
+#: ../Doc/whatsnew/2.4.rst:503
 msgid ""
 "Modern systems usually provide floating-point support that conforms to a "
 "standard called IEEE 754.  C's :c:expr:`double` type is usually implemented "
@@ -756,12 +807,27 @@ msgid ""
 "additional terms.  IEEE 754 has to chop off that infinitely repeated decimal "
 "after 52 digits, so the representation is slightly inaccurate."
 msgstr ""
+"Los sistemas modernos generalmente brindan soporte de coma flotante que se "
+"ajusta a un estándar llamado IEEE 754. El tipo :c:expr:`double` de C "
+"generalmente se implementa como un número IEEE 754 de 64 bits, que usa 52 "
+"bits de espacio para la mantisa. Esto significa que los números solo se "
+"pueden especificar con 52 bits de precisión. Si está tratando de representar "
+"números cuya expansión se repite sin cesar, la expansión se corta después de "
+"52 bits. Desafortunadamente, la mayoría del software necesita producir "
+"resultados en base 10, y las fracciones comunes en base 10 a menudo son "
+"decimales repetidos en binario. Por ejemplo, 1.1 decimal es binario "
+"``1.0001100110011 ...``; .1 = 1/16 + 1/32 + 1/256 más un número infinito de "
+"términos adicionales. IEEE 754 tiene que cortar ese decimal repetido "
+"infinitamente después de 52 dígitos, por lo que la representación es un poco "
+"inexacta."
 
-#: ../../whatsnew/2.4.rst:515
+#: ../Doc/whatsnew/2.4.rst:515
 msgid "Sometimes you can see this inaccuracy when the number is printed::"
-msgstr "ときどきあなたはこの不正確さを、数値を表示する際に目にするでしょう::"
+msgstr ""
+"Algunas veces se puede ver esta inexactitud cuando el número es impreso por "
+"pantalla:"
 
-#: ../../whatsnew/2.4.rst:520
+#: ../Doc/whatsnew/2.4.rst:520
 msgid ""
 "The inaccuracy isn't always visible when you print the number because the FP-"
 "to-decimal-string conversion is provided by the C library, and most C "
@@ -769,13 +835,13 @@ msgid ""
 "however, the inaccuracy is still there and subsequent operations can magnify "
 "the error."
 msgstr ""
-"この不正確さは数値を表示する際にいつでも目に見えるわけではありません。浮動小"
-"数点数から文字列への変換が C ライブラリによって提供されていて、C ライブラリの"
-"ほとんどが賢明な出力を生成しようと頑張っているからです。それが表示されないに"
-"しても、不正確さはそれでも存在していて、後続の計算への誤差が大きくなりえま"
-"す。"
+"La inexactitud no siempre es visible cuando se imprime el número porque el "
+"punto flotante a decimal y conversión a cadena de texto es entregada por la "
+"librería C y la mayoría de las librerías C tratan de producir una salida "
+"sensible. Incluso si no es mostrado, la inexactitud sigue ahí y las "
+"operaciones subsecuentes pueden agrandar el error."
 
-#: ../../whatsnew/2.4.rst:525
+#: ../Doc/whatsnew/2.4.rst:525
 msgid ""
 "For many applications this doesn't matter.  If I'm plotting points and "
 "displaying them on my monitor, the difference between 1.1 and "
@@ -785,22 +851,23 @@ msgid ""
 "for applications where it does matter,  it's a lot of work to implement your "
 "own custom arithmetic routines."
 msgstr ""
-"多くのアプリケーションではこれは重要ではありません。モニタにプロットして表示"
-"するのに 1.1 と 1.1000000000000001 の差は小さすぎて見えません。大抵は出力を一"
-"定の桁位置までに制限して出力するものですし、2 やら 3 やら 8 桁などの位置で丸"
-"めたりすれば誤差は決して露わにはなりません。ですがそれが重要なアプリケーショ"
-"ンにとっては、あなた自身のカスタム数学ルーチンのための実装作業は膨大になりま"
-"す。"
+"Para muchas aplicaciones esto no importa. Si estoy trazando puntos y "
+"mostrándolos en el monitor la diferencia entre 1.1 y 1.1000000000000001 es "
+"muy pequeña para ser visible.  Los reportes a menudo limitan la salida de un "
+"cierto número de decimales y si se redondea el número a dos o tres e incluso "
+"a 8 decimales, el error nunca aparece. Sin embargo, para las aplicaciones "
+"donde esto importa, es una cantidad de trabajo importante el personalizar "
+"los cálculos aritméticos."
 
-#: ../../whatsnew/2.4.rst:533
+#: ../Doc/whatsnew/2.4.rst:533
 msgid "Hence, the :class:`Decimal` type was created."
-msgstr "こうして :class:`Decimal` 型が作られました。"
+msgstr "Es por eso que el tipo de clase :class:`Decimal` fue creada."
 
-#: ../../whatsnew/2.4.rst:537
+#: ../Doc/whatsnew/2.4.rst:537
 msgid "The :class:`Decimal` type"
-msgstr ":class:`Decimal` 型"
+msgstr "El tipo de clase :class:`Decimal`"
 
-#: ../../whatsnew/2.4.rst:539
+#: ../Doc/whatsnew/2.4.rst:539
 msgid ""
 "A new module, :mod:`decimal`, was added to Python's standard library.  It "
 "contains two classes, :class:`Decimal` and :class:`Context`.  :class:"
@@ -808,37 +875,42 @@ msgid ""
 "used to wrap up various settings such as the precision and default rounding "
 "mode."
 msgstr ""
-"新しいモジュール :mod:`decimal` が Python 標準ライブラリに追加されました。こ"
-"れには 2 つのクラス :class:`Decimal`, :class:`Context` を含みます。 :class:"
-"`Decimal` インスタンスは数値を表現し、 :class:`Context` インスタンスは、精度"
-"やデフォルトの丸めモードなどのさまざまな設定をまとめるのに使われます。"
+"Un nuevo módulo, :mod:`decimal`, fue añadido a la librería estándar de "
+"Python. Esta contiene dos clases, :class:`Decimal` y :class:`Context`. Las "
+"instancias de la clase decimal :class:`Decimal` representan números y la "
+"instancia de la :class:`Context` son usadas para condensar varios ajustes "
+"como la precisión y el modo de redondeo por defecto."
 
-#: ../../whatsnew/2.4.rst:544
+#: ../Doc/whatsnew/2.4.rst:544
 msgid ""
 ":class:`Decimal` instances are immutable, like regular Python integers and "
 "FP numbers; once it's been created, you can't change the value an instance "
 "represents.  :class:`Decimal` instances can be created from integers or "
 "strings::"
 msgstr ""
-":class:`Decimal` のインスタンスは普通の Python 整数や浮動小数点数のように :"
-"term:`immutable` です。 :class:`Decimal` のインスタンスは整数や文字列から構築"
-"出来ます::"
+"Las instancias de la clase :class:`Decimal` son inmutables como los números "
+"enteros y números de punto flotante en Python, una vez han sido creadas no "
+"se puede cambiar el valor de lo que la instancia representa. Las instancias "
+"de la :class:`Decimal` pueden ser creados desde números enteros o cadenas de "
+"texto:"
 
-#: ../../whatsnew/2.4.rst:555
+#: ../Doc/whatsnew/2.4.rst:555
 msgid ""
 "You can also provide tuples containing the sign, the mantissa represented  "
 "as a tuple of decimal digits, and the exponent::"
 msgstr ""
-"符号(sign)、10進数値のタプルで表した仮数部(mantissa)、指数部(exponent)を含ん"
-"だタプルを渡すことも出来ます::"
+"También se pueden proveer tuplas que contentan el signo, la mantisa "
+"representada como una tupla de números decimales y el exponente:"
 
-#: ../../whatsnew/2.4.rst:561
+#: ../Doc/whatsnew/2.4.rst:561
 msgid ""
 "Cautionary note: the sign bit is a Boolean value, so 0 is positive and 1 is "
 "negative."
-msgstr "注意: 符号ビットは負符号の有無なので、 0 が正、1  が負です。"
+msgstr ""
+"Precaución: El signo bit es un valor booleano entonces 0 es positivo y 1 es "
+"negativo."
 
-#: ../../whatsnew/2.4.rst:564
+#: ../Doc/whatsnew/2.4.rst:564
 msgid ""
 "Converting from floating-point numbers poses a bit of a problem: should the "
 "FP number representing 1.1 turn into the decimal number for exactly 1.1, or "
@@ -847,31 +919,32 @@ msgid ""
 "convert the floating-point number into a string using the desired precision "
 "and pass the string to the :class:`Decimal` constructor::"
 msgstr ""
-"浮動小数点数からの変換は少々問題です: 1.1 を表現する浮動小数点数は 10 進数値"
-"の正確な 1.1 に変換すべきでしょうか、それとも 1.1 が持つどんな不正確さもその"
-"まま持ち込むべきでしょうか? 決定は、問題をはぐらかして、その種の変換を API の"
-"範疇外とする、というものでした。代わりにあなたは浮動小数点数を望みの精度で文"
-"字列に変換して、その文字列を :class:`Decimal` コンストラクタに渡す必要があり"
-"ます::"
+"Convertir desde números de punto flotante posee un pequeño problema, el "
+"punto flotante representa 1.1 y se convierte en número decimal como 1.1 o "
+"por 1.1 mas cualquier inexactitud que se introduzca? La decisión fue evitar "
+"el problema y dejar tal conversión fuera de la API. En su lugar se debe "
+"convertir el número de punto flotante en una cadena con la precisión deseada "
+"y pasar la cadena al constructor :class:`Decimal` :"
 
-#: ../../whatsnew/2.4.rst:577
+#: ../Doc/whatsnew/2.4.rst:577
 msgid ""
 "Once you have :class:`Decimal` instances, you can perform the usual "
 "mathematical operations on them.  One limitation: exponentiation requires an "
 "integer exponent::"
 msgstr ""
-"いったん :class:`Decimal` を手にしてしまえばあとは普通の数学演算が使えます。"
-"制約の一つ: べき乗には整数の指数しか使えません::"
+"Una vez que se tiene la instancia de la clase :class:`Decimal` se pueden "
+"realizar las operaciones matemáticas de rigor. Una limitación, la "
+"exponenciación requiere un exponente expresado en tipo de dato entero:"
 
-#: ../../whatsnew/2.4.rst:598
+#: ../Doc/whatsnew/2.4.rst:598
 msgid ""
 "You can combine :class:`Decimal` instances with integers, but not with "
 "floating-point numbers::"
 msgstr ""
-":class:`Decimal` インスタンスと整数は混ぜて使えますが、浮動小数点数とは出来ま"
-"せん::"
+"Se puede combinar la instancia de la clase :class:`Decimal` con enteros pero "
+"no con números de punto flotante:"
 
-#: ../../whatsnew/2.4.rst:609
+#: ../Doc/whatsnew/2.4.rst:609
 msgid ""
 ":class:`Decimal` numbers can be used with the :mod:`math` and :mod:`cmath` "
 "modules, but note that they'll be immediately converted to  floating-point "
@@ -879,140 +952,144 @@ msgid ""
 "precision and accuracy.  You'll also get back a regular floating-point "
 "number and not a :class:`Decimal`.   ::"
 msgstr ""
-":class:`Decimal` 数を :mod:`math`, :mod:`cmath` モジュールで使うことは出来ま"
-"すが、演算実行前にその場で浮動小数点数に変換されて、結果精度と正確性を失う可"
-"能性があります。戻り値は普通の浮動小数点数であって :class:`Decimal` ではあり"
-"ません::"
+"Los números en la clase :class:`Decimal` pueden ser usados con los módulos :"
+"mod:`math` y :mod:`cmath` pero es preciso aclarar que ellos serán "
+"inmediatamente convertidos a números de punto flotante antes de realizar la "
+"operación, resultando en una posible perdida de precisión y exactitud. "
+"También obtendrá un número de punto flotante y no una clase :class:`Decimal`:"
 
-#: ../../whatsnew/2.4.rst:622
+#: ../Doc/whatsnew/2.4.rst:622
 msgid ""
 ":class:`Decimal` instances have a :meth:`sqrt` method that returns a :class:"
 "`Decimal`, but if you need other things such as trigonometric functions "
 "you'll have to implement them. ::"
 msgstr ""
-":class:`Decimal` インスタンスは :class:`Decimal` インスタンスを返す :meth:"
-"`sqrt` メソッドを持っていますが、三角関数のようななにかほかのことが必要な場合"
-"は、それらを実装する必要があるでしょう。::"
+"Las instancias de la clase :class:`Decimal` poseen un método :meth:`sqrt` "
+"que retorna una clase :class:`Decimal` pero si se necesita otro tipo de "
+"cosas como funciones trigonométricas se tendrían que implementar:"
 
-#: ../../whatsnew/2.4.rst:631
+#: ../Doc/whatsnew/2.4.rst:631
 msgid "The :class:`Context` type"
-msgstr ":class:`Context` 型"
+msgstr "El tipo de clase :class:`Context`"
 
-#: ../../whatsnew/2.4.rst:633
+#: ../Doc/whatsnew/2.4.rst:633
 msgid ""
 "Instances of the :class:`Context` class encapsulate several settings for "
 "decimal operations:"
 msgstr ""
-":class:`Context` クラスのインスタンスは decimal 演算についてのいくつかの設定"
-"をカプセル化しています:"
+"Las instancias de la :class:`Context` encapsulan varios ajustes para "
+"operaciones con decimales:"
 
-#: ../../whatsnew/2.4.rst:636
+#: ../Doc/whatsnew/2.4.rst:636
 msgid ":attr:`prec` is the precision, the number of decimal places."
-msgstr ":attr:`prec` は精度で、小数桁数です。"
+msgstr "atributo :attr:`prec` es la precisión del número de decimales."
 
-#: ../../whatsnew/2.4.rst:638
+#: ../Doc/whatsnew/2.4.rst:638
 msgid ""
 ":attr:`rounding` specifies the rounding mode.  The :mod:`decimal` module has "
 "constants for the various possibilities: :const:`ROUND_DOWN`, :const:"
 "`ROUND_CEILING`,  :const:`ROUND_HALF_EVEN`, and various others."
 msgstr ""
-":attr:`rounding` は丸めのモードを指定します。 :mod:`decimal` にはこの値に渡せ"
-"る定数が定義されています: :const:`ROUND_DOWN`, :const:`ROUND_CEILING`, :"
-"const:`ROUND_HALF_EVEN`, それに色々。"
+"El atributo :attr:`rounding` especifica el modo de redondeo. El módulo :mod:"
+"`decimal` tiene constantes para varias posibilidades, :const:`ROUND_DOWN`, :"
+"const:`ROUND_CEILING`,  :const:`ROUND_HALF_EVEN` y varias otras."
 
-#: ../../whatsnew/2.4.rst:642
+#: ../Doc/whatsnew/2.4.rst:642
 msgid ""
 ":attr:`traps` is a dictionary specifying what happens on encountering "
 "certain error conditions: either  an exception is raised or  a value is "
 "returned.  Some examples of error conditions are division by zero, loss of "
 "precision, and overflow."
 msgstr ""
-":attr:`traps` は特定のエラー状態に出会った場合に何が起こるべきかを指定する辞"
-"書です: 例外を発生させるか値を返すかどちらかです。いくつかのエラー状態の例と"
-"しては、ゼロ除算、精度損失、オーバーフローがあります。"
+"El atributo :attr:`traps` es un diccionario que especifica lo que sucede al "
+"encontrar ciertas condiciones de error: Ya sea una excepción lanzada o un "
+"valor es retornado. algunos ejemplos de errores son las divisiones por cero, "
+"perdida de precisión o desbordamiento."
 
-#: ../../whatsnew/2.4.rst:647
+#: ../Doc/whatsnew/2.4.rst:647
 msgid ""
 "There's a thread-local default context available by calling :func:"
 "`getcontext`; you can change the properties of this context to alter the "
 "default precision, rounding, or trap handling.  The following example shows "
 "the effect of changing the precision of the default context::"
 msgstr ""
-"スレッドローカルなデフォルトのコンテキストを、 :func:`getcontext` を呼び出す"
-"ことで利用出来ます; デフォルトの精度、丸めモード、トラップ処理に代えてこのコ"
-"ンテキストのプロパティを変更出来ます。続く例はデフォルトコンテキストの精度を"
-"変更する効果についてお見せします::"
+"Hay un contexto predeterminado local de subprocesos disponible llamando a la "
+"función :func:`getcontext`, se puede cambiar las propiedades de este "
+"contexto para alterar la precisión por defecto, redondear o manejar trampas. "
+"el siguiente ejemplo muestra el efecto de cambiar la precisión del contexto "
+"por defecto:"
 
-#: ../../whatsnew/2.4.rst:660
+#: ../Doc/whatsnew/2.4.rst:660
 msgid ""
 "The default action for error conditions is selectable; the module can either "
 "return a special value such as infinity or not-a-number, or exceptions can "
 "be raised::"
 msgstr ""
-"エラー状態の場合のデフォルトアクションを選択出来ます; モジュールは無限大"
-"(infinity)あるいは非数(not-a-number: NaN)を返すか、例外を投げるかです::"
+"Las acciones por defecto para condiciones de error se puede seleccionar, ya "
+"sea que el módulo pueda retornar un valor especial como un infinito o un "
+"valor no numérico NaN o se pueden lanzar excepciones:"
 
-#: ../../whatsnew/2.4.rst:673
+#: ../Doc/whatsnew/2.4.rst:673
 msgid ""
 "The :class:`Context` instance also has various methods for formatting  "
 "numbers such as :meth:`to_eng_string` and :meth:`to_sci_string`."
 msgstr ""
-":class:`Context` インスタンスは :meth:`to_eng_string`, :meth:`to_sci_string` "
-"のような、数値の書式化のための色々なメソッドも持っています。"
+"La instancia de la clase :class:`Context` también tiene varios métodos para "
+"formatear números tales como :meth:`to_eng_string` y :meth:`to_sci_string`."
 
-#: ../../whatsnew/2.4.rst:676
+#: ../Doc/whatsnew/2.4.rst:676
 msgid ""
 "For more information, see the documentation for the :mod:`decimal` module, "
 "which includes a quick-start tutorial and a reference."
 msgstr ""
-"さらに詳しく知りたければ :mod:`decimal` モジュールのドキュメントを読んで下さ"
-"い。これには簡単に始められるチュートリアルとリファレンスが入っています。"
+"Para mas información, revisar la documentación para el módulo :mod:`decimal` "
+"el cual incluye un tutoría de inicio rápido y una referencia."
 
-#: ../../whatsnew/2.4.rst:684
+#: ../Doc/whatsnew/2.4.rst:684
 msgid ":pep:`327` - Decimal Data Type"
-msgstr ":pep:`327` - Decimal データ型"
+msgstr ":pep:`327` - Tipo de dato decimal"
 
-#: ../../whatsnew/2.4.rst:683
+#: ../Doc/whatsnew/2.4.rst:683
 msgid ""
 "Written by Facundo Batista and implemented by Facundo Batista, Eric Price, "
 "Raymond Hettinger, Aahz, and Tim Peters."
 msgstr ""
-"Facundo Batista によって著され、Facundo Batista, Eric Price, Raymond "
-"Hettinger, Aahz,  Tim Peters らによって実装されました。"
+"Escrito por Facundo Batista e implementado por Facundo Batista, Eric Price, "
+"Raymond Hettinger, Aahz y Tim Peters."
 
-#: ../../whatsnew/2.4.rst:688
+#: ../Doc/whatsnew/2.4.rst:688
 msgid "http://www.lahey.com/float.htm"
 msgstr "http://www.lahey.com/float.htm"
 
-#: ../../whatsnew/2.4.rst:687
+#: ../Doc/whatsnew/2.4.rst:687
 msgid ""
 "The article uses Fortran code to illustrate many of the problems that "
 "floating-point inaccuracy can cause."
 msgstr ""
-"この記事は浮動小数点数の不正確さが起こりうるたくさんの問題について、Fortran "
-"コードを使って解説しています。"
+"El articulo usa código Fortran para ilustrar varios de los problemas que la "
+"inexactitud de los puntos flotantes pueden causar."
 
-#: ../../whatsnew/2.4.rst:692
+#: ../Doc/whatsnew/2.4.rst:692
 msgid "http://speleotrove.com/decimal/"
 msgstr "http://speleotrove.com/decimal/"
 
-#: ../../whatsnew/2.4.rst:691
+#: ../Doc/whatsnew/2.4.rst:691
 msgid ""
 "A description of a decimal-based representation.  This representation is "
 "being proposed as a standard, and underlies the new Python decimal type.  "
 "Much of this material was written by Mike Cowlishaw, designer of the Rexx "
 "language."
 msgstr ""
-"10 進数ベースの表現についての記述です(訳注: decimal-based は小数ベースとも "
-"10 進数ベースとも取れるのですが、後者にしておきました)。この表現方法は標準と"
-"して提案されていて、この Python の decimal 型の基礎になっています。この題材の"
-"多くが Rexx 言語設計者である Mike Cowlishaw によって著されました。"
+"Una descripción de una representación basada en decimales. Esta "
+"representación ha sido propuesta como un estándar y subyace al nuevo tipo de "
+"dato decimal en Python. La mayor parte de este material fue escrita por Mike "
+"Cowlishaw, diseñador del lenguaje Rexx."
 
-#: ../../whatsnew/2.4.rst:699
+#: ../Doc/whatsnew/2.4.rst:699
 msgid "PEP 328: Multi-line Imports"
-msgstr "PEP 328: マルチラインインポート"
+msgstr "PEP 328: Importaciones multilínea"
 
-#: ../../whatsnew/2.4.rst:701
+#: ../Doc/whatsnew/2.4.rst:701
 msgid ""
 "One language change is a small syntactic tweak aimed at making it easier to "
 "import many names from a module.  In a ``from module import names`` "
@@ -1020,47 +1097,54 @@ msgid ""
 "sequence is  very long, you can either write multiple imports from the same "
 "module, or you can use backslashes to escape the line endings like this::"
 msgstr ""
-"言語の変更の一つは小さな文法的な微調整で、モジュールからたくさんの名前をイン"
-"ポートするのを簡単にするためのものです。 ``from module import names`` 文にお"
-"いて、 *names* はカンマ区切りのシーケンスです。シーケンスがとても長くなった場"
-"合、同じモジュールからのインポート文を何度も書くか、行末をバックスラッシュで"
-"エスケープするかするでしょう、このように::"
+"Un pequeño cambio en el lenguaje ha sido una modificación a una sintaxis "
+"confusa que ha sido cambiada para hacer mas fácil el agregar varios nombres "
+"en un módulo. En una declaración ``from module import names``, *names* es "
+"una secuencia de nombres separados por comas. Si la sentencia es muy larga, "
+"se puede ya sea escribir múltiples sentencias import desde el mismo módulo o "
+"se pueden usar barras invertidas para escapar de los términos de línea como "
+"esto:"
 
-#: ../../whatsnew/2.4.rst:712
+#: ../Doc/whatsnew/2.4.rst:712
 msgid ""
 "The syntactic change in Python 2.4 simply allows putting the names within "
 "parentheses.  Python ignores newlines within a parenthesized expression, so "
 "the backslashes are no longer needed::"
 msgstr ""
-"Python 2.4 での文法的な変更は、単純に names を丸括弧で囲んでも良い、とするだ"
-"けのものです。Python は丸括弧内の改行を無視しますので、バックスラッシュはもう"
-"必要ありません::"
+"La sintaxis cambió en Python 2.4 y es simplemente el permitir poner los "
+"nombres dentro de paréntesis. Python ignora nuevas líneas dentro de una "
+"expresión entre paréntesis por lo que las barras invertidas ya no se "
+"necesitan:"
 
-#: ../../whatsnew/2.4.rst:721
+#: ../Doc/whatsnew/2.4.rst:721
 msgid ""
 "The PEP also proposes that all :keyword:`import` statements be absolute "
 "imports, with a leading ``.`` character to indicate a relative import.  This "
 "part of the PEP was not implemented for Python 2.4, but was completed for "
 "Python 2.5."
 msgstr ""
-"その PEP は、全ての :keyword:`import` 文が絶対インポートであること、相対イン"
-"ポートであることを示すには ``.`` 文字で開始すること、の提案もしています。PEP "
-"のこの部分は Python 2.4 では実装されていませんが、 Python 2.5 向けには完了し"
-"ています。"
+"La convención de estilo también propone que todas las declaraciones usando  :"
+"keyword:`import` son importaciones absolutas, con el siguiente carácter ``."
+"`` indica una importación relativa. Esta parte de la convención de estilo no "
+"fue implementada para Python 2.4 pero fue completada para la versión 2.5."
 
-#: ../../whatsnew/2.4.rst:728
+#: ../Doc/whatsnew/2.4.rst:728
 msgid ":pep:`328` - Imports: Multi-Line and Absolute/Relative"
-msgstr ":pep:`328` - マルチラインインポートと、絶対/相対インポート"
+msgstr ":pep:`328` - Importaciones multi línea y absolutas/relativas"
 
-#: ../../whatsnew/2.4.rst:729
+#: ../Doc/whatsnew/2.4.rst:729
 msgid "Written by Aahz.  Multi-line imports were implemented by Dima Dorfman."
-msgstr "Aahz 著.  Multi-line imports は Dima Dorfman により実装。"
+msgstr ""
+"Escrita por Aahz.  Importaciones multi línea fueron implementadas por Dima "
+"Dorfman."
 
-#: ../../whatsnew/2.4.rst:735
+#: ../Doc/whatsnew/2.4.rst:735
 msgid "PEP 331: Locale-Independent Float/String Conversions"
-msgstr "PEP 331: Locale に依存しない Float/String 変換"
+msgstr ""
+"PEP 331: Conversiones locales-independientes números flotantes/cadenas de "
+"texto"
 
-#: ../../whatsnew/2.4.rst:737
+#: ../Doc/whatsnew/2.4.rst:737
 msgid ""
 "The :mod:`locale` modules lets Python software select various conversions "
 "and display conventions that are localized to a particular country or "
@@ -1069,42 +1153,52 @@ msgid ""
 "numeric locale remain set to the ``'C'`` locale.  Often this was because the "
 "code was using the C library's :c:func:`atof` function."
 msgstr ""
-":mod:`locale` モジュールにより、Python ソフトウェアは特定の国や言語の地域化を"
-"する色々な変換や表示の変換を選択出来ます。ところがこのモジュールは、数値ロ"
-"ケールを変更しないように気を配らなければなりませんでした。というのも Python "
-"内の色んな関数実装が、数値ロケールが ``'C'`` ロケールにセットされたままである"
-"ことを必要としていたからです。しばしばこれは、コードが C ライブラリの :c:"
-"func:`atof` 関数を使っていることに原因がありました。"
+"Los módulos :mod:`locale` deja que el software de Python seleccione varias "
+"conversiones y despliegue convenciones que están localizadas en un país "
+"particular o lenguaje. Sin embargo, el módulo es cuidadoso en no cambiar el "
+"local numérico porque la implementación de Python requería que la "
+"configuración regional numérica permaneciera establecida en la configuración "
+"regional ``'C'`` . A menudo, esto se debía a que el código utilizaba la "
+"función :c:func:`atof` de la biblioteca C."
 
-#: ../../whatsnew/2.4.rst:744
+#: ../Doc/whatsnew/2.4.rst:744
 msgid ""
 "Not setting the numeric locale caused trouble for extensions that used third-"
 "party C libraries, however, because they wouldn't have the correct locale "
 "set. The motivating example was GTK+, whose user interface widgets weren't "
 "displaying numbers in the current locale."
 msgstr ""
+"No configurar la configuración regional numérica causaba problemas para las "
+"extensiones que usaban librerías externas de C, sin embargo, porque no "
+"configuraban la correcta configuración. El ejemplo mas patente fue GTK+, "
+"cuya interfaz de usuario no mostraba números en la ubicación actual."
 
-#: ../../whatsnew/2.4.rst:749
+#: ../Doc/whatsnew/2.4.rst:749
 msgid ""
 "The solution described in the PEP is to add three new functions to the "
 "Python API that perform ASCII-only conversions, ignoring the locale setting:"
 msgstr ""
-"この PEP に記述された解法は、ロケール設定を無視して ASCII のみの変換を実施す"
-"る 3 つの新しい Python API 関数を追加することです:"
+"La solución descrita en la convención de estilo es añadir tres nuevas "
+"funciones a la API de python que ejecuta solo conversiones a ASCII, "
+"ignorando las configuraciones locales:"
 
-#: ../../whatsnew/2.4.rst:752
+#: ../Doc/whatsnew/2.4.rst:752
 msgid ""
 "``PyOS_ascii_strtod(str, ptr)``  and ``PyOS_ascii_atof(str, ptr)`` both "
 "convert a string to a C :c:expr:`double`."
 msgstr ""
+"``PyOS_ascii_strtod(str, ptr)`` y ``PyOS_ascii_atof(str, ptr)`` convierten "
+"una cadena en C :c:expr:`double`."
 
-#: ../../whatsnew/2.4.rst:755
+#: ../Doc/whatsnew/2.4.rst:755
 msgid ""
 "``PyOS_ascii_formatd(buffer, buf_len, format, d)`` converts a :c:expr:"
 "`double` to an ASCII string."
 msgstr ""
+"``PyOS_ascii_formatd(buffer, buf_len, format, d)`` convierte un :c:expr:"
+"`double` en una cadena ASCII."
 
-#: ../../whatsnew/2.4.rst:758
+#: ../Doc/whatsnew/2.4.rst:758
 msgid ""
 "The code for these functions came from the GLib library (https://developer."
 "gnome.org/glib/stable/), whose developers kindly relicensed the relevant "
@@ -1112,98 +1206,110 @@ msgid ""
 "`locale` module  can now change the numeric locale, letting extensions such "
 "as GTK+  produce the correct results."
 msgstr ""
+"El código para estas funciones proviene desde la librería GLib  (https://"
+"developer.gnome.org/glib/stable/) cuyos desarrolladores amablemente han "
+"residenciado las funciones relevantes y las han donado a la fundación de "
+"software Python. El módulo :mod:`locale` ahora puede cambiar la "
+"configuración local, dejando que las extensiones como GTK¿ produzcan los "
+"resultados correctos."
 
-#: ../../whatsnew/2.4.rst:767
+#: ../Doc/whatsnew/2.4.rst:767
 msgid ":pep:`331` - Locale-Independent Float/String Conversions"
-msgstr ":pep:`331` - Locale に依存しない Float/String 変換"
+msgstr ":pep:`331` Conversiones Local-Independiente flotante/cadena de texto"
 
-#: ../../whatsnew/2.4.rst:768
+#: ../Doc/whatsnew/2.4.rst:768
 msgid "Written by Christian R. Reis, and implemented by Gustavo Carneiro."
-msgstr "Christian R. Reis 著, 実装 Gustavo Carneiro."
+msgstr "Escrito por Christian R. Reis, e implementado por Gustavo Carneiro."
 
-#: ../../whatsnew/2.4.rst:774
+#: ../Doc/whatsnew/2.4.rst:774
 msgid "Other Language Changes"
-msgstr "その他の言語変更"
+msgstr "Otros cambios en el lenguaje"
 
-#: ../../whatsnew/2.4.rst:776
+#: ../Doc/whatsnew/2.4.rst:776
 msgid ""
 "Here are all of the changes that Python 2.4 makes to the core Python "
 "language."
-msgstr "以下が、Python 2.4 言語コアに加えられた全ての変更点です。"
+msgstr ""
+"Aquí están todos los cambios que Python 2.4 ha hecho al core del lenguaje "
+"Python."
 
-#: ../../whatsnew/2.4.rst:778
+#: ../Doc/whatsnew/2.4.rst:778
 msgid "Decorators for functions and methods were added (:pep:`318`)."
-msgstr "関数とメソッドのためのデコレータが追加されました。 (:pep:`318`)."
+msgstr "Fueron añadidos decoraciones para funciones (:pep:`318`)."
 
-#: ../../whatsnew/2.4.rst:780
+#: ../Doc/whatsnew/2.4.rst:780
 msgid ""
 "Built-in :func:`set` and :func:`frozenset` types were  added (:pep:`218`). "
 "Other new built-ins include the ``reversed(seq)`` function (:pep:`322`)."
 msgstr ""
-"ビルトインの :func:`set` 型と :func:`frozenset` 型が追加されました (:pep:"
-"`218`)。ほか新たなビルトイン関数 ``reversed(seq)`` 関数が追加されました (:"
-"pep:`322`)。"
+"Funciones de conjuntos integrados :func:`set` y :func:`frozenset` fueron "
+"añadidas (:pep:`218`). Otras nuevas funciones de conjuntos integrados "
+"incluyen la función ``reversed(seq)`` (:pep:`322`)."
 
-#: ../../whatsnew/2.4.rst:783
+#: ../Doc/whatsnew/2.4.rst:783
 msgid "Generator expressions were added (:pep:`289`)."
-msgstr "ジェネレータ式が追加されました (:pep:`289`)."
+msgstr "Generador de expresiones fueron añadidas (:pep:`289`)."
 
-#: ../../whatsnew/2.4.rst:785
+#: ../Doc/whatsnew/2.4.rst:785
 msgid ""
 "Certain numeric expressions no longer return values restricted to 32 or 64 "
 "bits (:pep:`237`)."
 msgstr ""
-"いくらかの数値式は、もう 32 ビットや 64 ビットに制限されません (:pep:`237`)."
+"Algunas expresiones numéricas ya no retornan valores restringidos a 32 o 64 "
+"bits (:pep:`237`)."
 
-#: ../../whatsnew/2.4.rst:788
+#: ../Doc/whatsnew/2.4.rst:788
 msgid ""
 "You can now put parentheses around the list of names in a ``from module "
 "import names`` statement (:pep:`328`)."
 msgstr ""
-"``from module import names`` ステートメントにおいて、 *names* を括弧で囲むこ"
-"とが出来るようになりました (:pep:`328`)."
+"Se puede poner entre paréntesis una lista de nombres en la declaración "
+"``from module import names`` (:pep:`328`)."
 
-#: ../../whatsnew/2.4.rst:791
+#: ../Doc/whatsnew/2.4.rst:791
 msgid ""
 "The :meth:`dict.update` method now accepts the same argument forms as the :"
 "class:`dict` constructor.  This includes any mapping, any iterable of key/"
 "value pairs, and keyword arguments. (Contributed by Raymond Hettinger.)"
 msgstr ""
-":meth:`dict.update` メソッドが :class:`dict` コンストラクタと同じ形式の引数を"
-"取れるようになりました。これには任意のマッピング、キー/値ペアのイテラブルと"
-"キーワード引数を含みます。 (Contributed by Raymond Hettinger.)"
+"El método :meth:`dict.update` ahora acepta el mismo argumento que el "
+"constructor de la :class:`dict`. Esto incluye cualquier tipo de mapeo, "
+"iterable pares de clave/valor y argumentos de palabra clave. (Contribución "
+"de Raymond Hettinger)"
 
-#: ../../whatsnew/2.4.rst:795
+#: ../Doc/whatsnew/2.4.rst:795
 msgid ""
 "The string methods :meth:`ljust`, :meth:`rjust`, and :meth:`center` now take "
 "an optional argument for specifying a fill character other than a space. "
 "(Contributed by Raymond Hettinger.)"
 msgstr ""
-"文字列の :meth:`ljust`, :meth:`rjust`, :meth:`center` メソッドで空白以外の埋"
-"め文字を省略可能引数で指定出来るようになりました。 (Contributed by Raymond "
-"Hettinger.)"
+"Los métodos de cadena de caracteres :meth:`ljust`, :meth:`rjust` y :meth:"
+"`center` ahora toman un argumento de tipo opcional para especificar un "
+"carácter de relleno que no sea un espacio. (Contribución de Raymond "
+"Hettinger)."
 
-#: ../../whatsnew/2.4.rst:799
+#: ../Doc/whatsnew/2.4.rst:799
 msgid ""
 "Strings also gained an :meth:`rsplit` method that works like the :meth:"
 "`split` method but splits from the end of the string.   (Contributed by Sean "
 "Reifschneider.) ::"
 msgstr ""
-"ほかに、文字列には :meth:`rsplit` メソッドも追加されています。これは :meth:"
-"`split` メソッドと似た動きをしますが、後ろから順に分割します (Contributed by "
-"Sean Reifschneider.) ::"
+"Cadenas de caracteres también han ganado un método :meth:`rsplit` que "
+"funciona como el método :meth:`split` pero divide desde el final de la "
+"cadena de caracteres. (Contribución de Sean Reifschneider)"
 
-#: ../../whatsnew/2.4.rst:808
+#: ../Doc/whatsnew/2.4.rst:808
 msgid ""
 "Three keyword parameters, *cmp*, *key*, and *reverse*, were added to the :"
 "meth:`sort` method of lists. These parameters make some common usages of :"
 "meth:`sort` simpler. All of these parameters are optional."
 msgstr ""
-"リストの :meth:`sort` メソッドに 3 つのキーワード引数 *cmp*, *key*, "
-"*reverse* が追加されています。これらパラメータは :meth:`sort` のある種の用法"
-"を単純にします。これらは全て省略可能です。"
+"Tres parámetros de argumentos de palabra clave *cmp*, *key* y *reverse* "
+"fueron añadidos al método de listas :meth:`sort`. Estos parámetros hacen "
+"algunos usos comunes del método :meth:`sort` mas simple. Todos estos "
+"parámetros son opcionales."
 
-#: ../../whatsnew/2.4.rst:812
+#: ../Doc/whatsnew/2.4.rst:812
 msgid ""
 "For the *cmp* parameter, the value should be a comparison function that "
 "takes two parameters and returns -1, 0, or +1 depending on how the "
@@ -1211,22 +1317,23 @@ msgid ""
 "Previously this was the only parameter that could be provided to :meth:"
 "`sort`."
 msgstr ""
-"*cmp* パラメータには比較関数を渡します。これは 2 つのパラメータを取り、パラ"
-"メータの比較結果に応じて -1, 0, +1 のいずれかを返します。この関数はリストの"
-"ソートに使われます。これまでの :meth:`sort` に唯一許されていたのがこの *cmp* "
-"パラメータでした。"
+"Para el parámetro *cmp*  el valor debe ser una función comparativa que toma "
+"dos parámetros y retorna -1, 0 o + 1 dependiendo de como compare los "
+"parámetros. Esta función será usada para ordenar la lista. Previamente esto "
+"era el único parámetro que podía ser entregado al :meth:`sort`."
 
-#: ../../whatsnew/2.4.rst:817
+#: ../Doc/whatsnew/2.4.rst:817
 msgid ""
 "*key* should be a single-parameter function that takes a list element and "
 "returns a comparison key for the element.  The list is then sorted using the "
 "comparison keys.  The following example sorts a list case-insensitively::"
 msgstr ""
-"*key* には単一パラメータ関数を渡します。これはリスト要素を受け取り、要素の比"
-"較キーを返す関数です。リストはその比較キーを使ってソートされます。続く例はリ"
-"ストを大文字小文字区別なく並び替えます::"
+"*key* debe ser una función con un solo parámetro que toma un elemento de la "
+"lista y retorna una llave de comparación para el elemento. Entonces la lista "
+"es ordenado usando las claves de comparación. El siguiente ejemplo ordena "
+"una lista sin distinción de mayúsculas ni minúsculas::"
 
-#: ../../whatsnew/2.4.rst:834
+#: ../Doc/whatsnew/2.4.rst:834
 msgid ""
 "The last example, which uses the *cmp* parameter, is the old way to perform "
 "a case-insensitive sort.  It works but is slower than using a *key* "
@@ -1234,33 +1341,35 @@ msgid ""
 "the list while using *cmp* will call it twice for each comparison, so using "
 "*key* saves on invocations of the :meth:`lower` method."
 msgstr ""
-"例の最後のものは *cmp* パラメータを使っています。これが大文字小文字区別のない"
-"並び替えの昔ながらの方法です。むろん動きます。が、 *key* パラメータでのやり方"
-"より遅いです。 *cmp* では :meth:`lower` メソッド呼び出しが比較ごとなので要素"
-"ごとに 2 回呼び出すことになりますが、 *key* だと呼び出しはそれぞれの要素ごと"
-"に :meth:`lower` 呼び出しを一回だけで済ませられます。"
+"El ultimo ejemplo el cual usa el parámetro *cmp*  es la antigua forma de "
+"ejecutar el orden sin distinción de mayúsculas y minúsculas. Funciona pero "
+"es mas lento en vez de usar el parámetro *key*.  El uso de *key* llama al "
+"método :meth:`lower` una vez para cada elemento de la lista mientras el uso "
+"de *cmp* lo llamara dos veces para cada comparación, entonces al usar * key "
+"* se guardan las llamadas del método :meth:`lower`."
 
-#: ../../whatsnew/2.4.rst:840
+#: ../Doc/whatsnew/2.4.rst:840
 msgid ""
 "For simple key functions and comparison functions, it is often possible to "
 "avoid a :keyword:`lambda` expression by using an unbound method instead.  "
 "For example, the above case-insensitive sort is best written as::"
 msgstr ""
-"単純なキー関数や比較関数には、しばしば :keyword:`lambda` 関数を避けて非束縛メ"
-"ソッドを使えます。例えば上記の大文字小文字によらない並べ替えはこのように書く"
-"のが最善です::"
+"Para funciones de clave sencillas y comparativas es a menudo posible el "
+"obviar la palabra clave :keyword:`lambda` usando un método sin ligar en "
+"reemplazo. El siguiente ejemplo de orden sin importar mayúsculas ni "
+"minúsculas es mejor escrito como se muestra::"
 
-#: ../../whatsnew/2.4.rst:848
+#: ../Doc/whatsnew/2.4.rst:848
 msgid ""
 "Finally, the *reverse* parameter takes a Boolean value.  If the value is "
 "true, the list will be sorted into reverse order. Instead of ``L.sort(); L."
 "reverse()``, you can now write ``L.sort(reverse=True)``."
 msgstr ""
-"最後の *reverse* パラメータはブーリアン値を取ります。真ならばリストは逆順に"
-"ソートされます。 ``L.sort(); L.reverse()`` と書く代わりにこれからは ``L."
-"sort(reverse=True)`` と書けます。"
+"Finalmente el parámetro *reverse* toma un valor de tipo booleano. Si el "
+"valor es verdadero la lista será ordenada de forma inversa. En vez de ``L."
+"sort(); L.reverse()`` ahora se puede escribir ``L.sort(reverse=True)``."
 
-#: ../../whatsnew/2.4.rst:852
+#: ../Doc/whatsnew/2.4.rst:852
 msgid ""
 "The results of sorting are now guaranteed to be stable.  This means that two "
 "entries with equal keys will be returned in the same order as they were "
@@ -1268,107 +1377,118 @@ msgid ""
 "list by age, resulting in a list sorted by age where people with the same "
 "age are in name-sorted order."
 msgstr ""
-"ソートの結果がステーブル(安定)であることが保障されるようになりました。つまり "
-"2 つの要素が同列である場合、入力と同じ順序が保たれます。例えば人物リストを名"
-"前でソートしたのちに年齢でソートすると結果は、年齢でソートされていますが同年"
-"齢の人物は名前順です。"
+"Los resultados del ordenamiento ahora están garantizados que son estables. "
+"Esto significa que dos entradas con iguales claves serán retiradas en el "
+"mismo orden en que fueron ingresadas. Por ejemplo se puede ordenar una lista "
+"de personas por el nombre y entonces ordenarla por edad, resultando en una "
+"lista ordenada donde las personas con la misma edad están en el mismo orden "
+"por nombre."
 
-#: ../../whatsnew/2.4.rst:858
+#: ../Doc/whatsnew/2.4.rst:858
 msgid "(All changes to :meth:`sort` contributed by Raymond Hettinger.)"
-msgstr "(All changes to :meth:`sort` contributed by Raymond Hettinger.)"
+msgstr ""
+"(Todos los cambios al método :meth:`sort` fueron realizados por Raymond "
+"Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:860
+#: ../Doc/whatsnew/2.4.rst:860
 msgid ""
 "There is a new built-in function ``sorted(iterable)`` that works like the in-"
 "place :meth:`list.sort` method but can be used in expressions.  The "
 "differences are:"
 msgstr ""
-"新たに追加されたビルトイン関数 ``sorted(iterable)`` はインプレイスなメソッ"
-"ド :meth:`list.sort` と似た振る舞いをしますが、式内で使えます。違いは:"
+"Se tiene una nueva función incorporada ``sorted(iterable)`` que trabaja como "
+"el método in situ :meth:`list.sort` que se puede usar en expresiones. Las "
+"diferencias son:"
 
-#: ../../whatsnew/2.4.rst:864
+#: ../Doc/whatsnew/2.4.rst:864
 msgid "the input may be any iterable;"
-msgstr "入力には任意のイテラブルを取れます;"
+msgstr "el dato de entrada puede ser algún iterable;"
 
-#: ../../whatsnew/2.4.rst:866
+#: ../Doc/whatsnew/2.4.rst:866
 msgid "a newly formed copy is sorted, leaving the original intact; and"
-msgstr ""
-"新しく構築されたコピーをソートし、オリジナルは無傷のままにします; そして"
+msgstr "se ordena una copia recién formada, manteniendo el original intacto y"
 
-#: ../../whatsnew/2.4.rst:868
+#: ../Doc/whatsnew/2.4.rst:868
 msgid "the expression returns the new sorted copy"
-msgstr "式として新しいソート済みコピーを返します。"
+msgstr "la expresión retorna una nueva copia ordenada"
 
-#: ../../whatsnew/2.4.rst:891 ../../whatsnew/2.4.rst:919
-#: ../../whatsnew/2.4.rst:1212
+#: ../Doc/whatsnew/2.4.rst:891 ../Doc/whatsnew/2.4.rst:919
+#: ../Doc/whatsnew/2.4.rst:1212
 msgid "(Contributed by Raymond Hettinger.)"
-msgstr "(Contributed by Raymond Hettinger.)"
+msgstr "(Contribución de Raymond Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:893 ../../whatsnew/2.4.rst:1519
+#: ../Doc/whatsnew/2.4.rst:893 ../Doc/whatsnew/2.4.rst:1519
 msgid ""
 "Integer operations will no longer trigger an :exc:`OverflowWarning`. The :"
 "exc:`OverflowWarning` warning will disappear in Python 2.5."
 msgstr ""
-"整数演算はもはや :exc:`OverflowWarning` は引き起こしません。 :exc:"
-"`OverflowWarning` 警告は Python 2.5 で撤廃されます。"
+"Operaciones de números enteros no lanzaran una excepción :exc:"
+"`OverflowWarning`. La advertencia sobre :exc:`OverflowWarning` desaparecerá "
+"en Python 2.5."
 
-#: ../../whatsnew/2.4.rst:896
+#: ../Doc/whatsnew/2.4.rst:896
 msgid ""
 "The interpreter gained a new switch, :option:`-m`, that takes a name, "
 "searches for the corresponding  module on ``sys.path``, and runs the module "
 "as a script. For example,  you can now run the Python profiler with ``python "
 "-m profile``. (Contributed by Nick Coghlan.)"
 msgstr ""
-"インタプリタに新たに :option:`-m` スイッチが加わりました。これは名前を取り、 "
-"``sys.path`` にある対応するモジュールを検索し、そしてそのモジュールをスクリプ"
-"トとして実行します。たとえば Python プロファイラを ``python -m profile`` で起"
-"動することが出来るようになりました。 (Contributed by Nick Coghlan.)"
+"Se añadió al interprete una nueva opción de cambio :option:`-m` la cual toma "
+"un nombre, busca el módulo correspondiente en ``sys.path`` y corre el módulo "
+"como script. Ahora por ejemplo se puede correr el perfilador de Python con "
+"``python -m profile``. (Contribución de Nick Coghlan)"
 
-#: ../../whatsnew/2.4.rst:901
+#: ../Doc/whatsnew/2.4.rst:901
 msgid ""
 "The ``eval(expr, globals, locals)`` and ``execfile(filename, globals, "
 "locals)`` functions and the ``exec`` statement now accept any mapping type "
 "for the *locals* parameter.  Previously this had to be a regular Python "
 "dictionary.  (Contributed by Raymond Hettinger.)"
 msgstr ""
-"``eval(expr, globals, locals)`` 関数と ``execfile(filename, globals, "
-"locals)`` 関数、 ``exec`` 文が *locals* パラメータに任意のマッピング型を受け"
-"取れるようになりました。以前は正規の Python 辞書である必要がありました。 "
-"(Contributed by Raymond Hettinger.)"
+"La expresión ``eval(expr, globals, locals)`` la función ``execfile(filename, "
+"globals, locals)`` y la sentencia ``exec`` ahora aceptan cualquier tipo de "
+"mapeo para parámetros locales. Previamente esto era parte de un diccionario "
+"de Python. (Contribución de Raymond Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:906
+#: ../Doc/whatsnew/2.4.rst:906
 msgid ""
 "The :func:`zip` built-in function and :func:`itertools.izip` now return an "
 "empty list if called with no arguments. Previously they raised a :exc:"
 "`TypeError` exception.  This makes them more suitable for use with variable "
 "length argument lists::"
 msgstr ""
-"ビルトイン関数の :func:`zip` と :func:`itertools.izip` が引数なしで呼ばれた場"
-"合に空リストを返すようになりました。以前は :exc:`TypeError` 例外でした。これ"
-"により可変引数リストをこなしやすくなります::"
+"La función incorporada :func:`zip` y la función :func:`itertools.izip` ahora "
+"retornan una lista hacia si se llama sin argumentos. Previamente estos "
+"lanzaban una excepción de tipo :exc:`TypeError`. Esto lo hace mas apropiado "
+"de usar con listas de argumentos de longitud variable:"
 
-#: ../../whatsnew/2.4.rst:921
+#: ../Doc/whatsnew/2.4.rst:921
 msgid ""
 "Encountering a failure while importing a module no longer leaves a partially "
 "initialized module object in ``sys.modules``.  The incomplete module object "
 "left behind would fool further imports of the same module into succeeding, "
 "leading to confusing errors.   (Fixed by Tim Peters.)"
 msgstr ""
+"Encontrar un error al importar un módulo ya no deja un objeto de módulo "
+"parcialmente inicializado en ``sys.modules``. El objeto de módulo incompleto "
+"que se deja atrás engañaría a las importaciones posteriores del mismo módulo "
+"para que tuvieran éxito, lo que generaría errores confusos. (Reparado por "
+"Tim Peters.)"
 
-#: ../../whatsnew/2.4.rst:926
+#: ../Doc/whatsnew/2.4.rst:926
 msgid ""
 ":const:`None` is now a constant; code that binds a new value to  the name "
 "``None`` is now a syntax error. (Contributed by Raymond Hettinger.)"
 msgstr ""
-":const:`None` が定数になっています。 ``None`` という名前に新しい値を割り当て"
-"ようとするコードは、今では構文エラーになります。 (Contributed by Raymond "
-"Hettinger.)"
+":const:`None`es ahora una constante, el código que une un nuevo valor con el "
+"nombre :const:`None` es ahora un error de sintaxis (Contribución de Raymond "
+"Hettinger)"
 
-#: ../../whatsnew/2.4.rst:933
+#: ../Doc/whatsnew/2.4.rst:933
 msgid "Optimizations"
-msgstr "最適化"
+msgstr "Optimizaciones"
 
-#: ../../whatsnew/2.4.rst:935
+#: ../Doc/whatsnew/2.4.rst:935
 msgid ""
 "The inner loops for list and tuple slicing were optimized and now run about "
 "one-third faster.  The inner loops for dictionaries were also optimized, "
@@ -1376,8 +1496,13 @@ msgid ""
 "`items`, :meth:`iterkeys`, :meth:`itervalues`, and :meth:`iteritems`. "
 "(Contributed by Raymond Hettinger.)"
 msgstr ""
+"Los bucles internos para separar listas y tuplas fueron optimizados y ahora "
+"corren un tercio mas rápido. Los bucles internos para diccionarios también "
+"fueron optimizados resultando en una mejora en el rendimiento para :meth:"
+"`keys`, :meth:`values`, :meth:`items`, :meth:`iterkeys`, :meth:`itervalues`, "
+"y :meth:`iteritems`. (Contribución de Raymond Hettinger)"
 
-#: ../../whatsnew/2.4.rst:941
+#: ../Doc/whatsnew/2.4.rst:941
 msgid ""
 "The machinery for growing and shrinking lists was optimized for speed and "
 "for space efficiency.  Appending and popping from lists now runs faster due "
@@ -1386,15 +1511,26 @@ msgid ""
 "was also optimized and no longer converts its argument into a temporary list "
 "before extending the base list.  (Contributed by Raymond Hettinger.)"
 msgstr ""
+"El mecanismo para mejorar y contraer listas fue optimizada  para efectos de "
+"velocidad y eficiencia en la utilización de recursos. Anexar y quitar "
+"elementos de una lista es ahora mas rápido debido al código mas eficiente y "
+"al menos frecuente uso de la función subyacente  :c:func:`realloc`. Las "
+"listas por comprensión también son beneficiadas, el método :meth:`list."
+"extend` fue también optimizado y ya no convierte mas el argumento en una "
+"lista temporal antes de extender la lista base. (Contribución de Raymond "
+"Hettinger)"
 
-#: ../../whatsnew/2.4.rst:948
+#: ../Doc/whatsnew/2.4.rst:948
 msgid ""
 ":func:`list`, :func:`tuple`, :func:`map`, :func:`filter`, and :func:`zip` "
 "now run several times faster with non-sequence arguments that supply a :meth:"
 "`__len__` method.  (Contributed by Raymond Hettinger.)"
 msgstr ""
+"Las funciones :func:`list`, :func:`tuple`, :func:`map`, :func:`filter` y :"
+"func:`zip` ahora corren mucho mas rápido con argumentos no secuenciales que "
+"ahora suministra el método :meth:`__len__`. (Contribución Raymond Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:952
+#: ../Doc/whatsnew/2.4.rst:952
 msgid ""
 "The methods :meth:`list.__getitem__`, :meth:`dict.__getitem__`, and :meth:"
 "`dict.__contains__` are now implemented as :class:`method_descriptor` "
@@ -1403,22 +1539,34 @@ msgid ""
 "arguments to functionals: ``map(mydict.__getitem__, keylist)``. (Contributed "
 "by Raymond Hettinger.)"
 msgstr ""
+"Los métodos :meth:`list.__getitem__`, :meth:`dict.__getitem__` y :meth:`dict."
+"__contains__`  ahora son implementados como objetos de la clase :class:"
+"`method_descriptor` en vez de los objetos de la clase :class:"
+"`wrapper_descriptor` . Este acceso dobla el rendimiento y hace que sea mas "
+"apropiado para ser usado como argumentos de:``map(mydict.__getitem__, "
+"keylist)``. (Contribución de Raymond Hettinger)"
 
-#: ../../whatsnew/2.4.rst:959
+#: ../Doc/whatsnew/2.4.rst:959
 msgid ""
 "Added a new opcode, ``LIST_APPEND``, that simplifies the generated bytecode "
 "for list comprehensions and speeds them up by about a third.  (Contributed "
 "by Raymond Hettinger.)"
 msgstr ""
+"Adicionalmente se ha agregado a un nuevo código de operación ``LIST_APPEND`` "
+"esto simplifica la generación de código a nivel de byte para las listas por "
+"comprensión y las agiliza en aproximadamente un tercio."
 
-#: ../../whatsnew/2.4.rst:963
+#: ../Doc/whatsnew/2.4.rst:963
 msgid ""
 "The peephole bytecode optimizer has been improved to  produce shorter, "
 "faster bytecode; remarkably, the resulting bytecode is  more readable.  "
 "(Enhanced by Raymond Hettinger.)"
 msgstr ""
+"El optimizador de código a nivel de byte ha sido mejorado para producir "
+"código a nivel de byte mas corto y rápido. Esto resulta en código mas "
+"legible. (Contribución de Raymond Hettinger)"
 
-#: ../../whatsnew/2.4.rst:967
+#: ../Doc/whatsnew/2.4.rst:967
 msgid ""
 "String concatenations in statements of the form ``s = s + \"abc\"`` and ``s "
 "+= \"abc\"`` are now performed more efficiently in certain circumstances.  "
@@ -1427,8 +1575,16 @@ msgid ""
 "strings is still recommended when you want to efficiently glue a large "
 "number of strings together. (Contributed by Armin Rigo.)"
 msgstr ""
+"La concatenación de cadenas de texto en la declaración de ``s = s + "
+"\"abc\"`` and ``s += \"abc\"`` ahora son ejecutadas de forma mas eficiente "
+"en ciertas circunstancias. Esta optimizaciones no serán mostradas en otras "
+"implementaciones de Python tales como Python, entonces no se debe utilizar, "
+"es mejor seguir utilizando el método :meth:`join` de cadenas de caracteres "
+"si se quiere mantener la eficiencia de concatenar un largo número de cadenas "
+"de caracteres. (Contribución de Armin Rigo.)"
 
-#: ../../whatsnew/2.4.rst:974
+#: ../Doc/whatsnew/2.4.rst:974
+#, python-format
 msgid ""
 "The net result of the 2.4 optimizations is that Python 2.4 runs the pystone "
 "benchmark around 5% faster than Python 2.3 and 35% faster than Python 2.2. "
@@ -1436,12 +1592,18 @@ msgid ""
 "used measurement of Python's performance.  Your own applications may show "
 "greater or smaller benefits from Python 2.4.)"
 msgstr ""
+"El resultado de las optimizaciones de la versión 2.4 es que tomando Python "
+"2.4 como punto de referencia corre alrededor de un 5% mas rápido que Python "
+"2.3 y un 35% mas rápido que Python 2.2 (pystone no es particularmente un "
+"buen punto de referencia pero es el mas usado para medir rendimiento en "
+"Python. Sus propias aplicaciones pueden mostrar beneficios mas grandes o "
+"mínimos desde Python 2.4)"
 
-#: ../../whatsnew/2.4.rst:990
+#: ../Doc/whatsnew/2.4.rst:990
 msgid "New, Improved, and Deprecated Modules"
-msgstr "新たなモジュール、改良されたモジュール、非推奨のモジュール"
+msgstr "Módulos nuevos, mejorados y obsoletos"
 
-#: ../../whatsnew/2.4.rst:992
+#: ../Doc/whatsnew/2.4.rst:992
 msgid ""
 "As usual, Python's standard library received a number of enhancements and "
 "bug fixes.  Here's a partial list of the most notable changes, sorted "
@@ -1449,77 +1611,83 @@ msgid ""
 "source tree for a more complete list of changes, or look through the CVS "
 "logs for all the details."
 msgstr ""
-"いつものように、Python の標準ライブラリには数多くの拡張とバグ修正がありまし"
-"た。ここでは最も注目に値する変更について、モジュールの辞書順に列挙します。変"
-"更の完全なリストについてはソースツリーの :file:`Misc/NEWS` を調べるか、あるい"
-"は全ての詳細について CVS ログに目を通してみてください。"
+"Como es usual, la librería estándar de Python recibió un número de mejoras y "
+"corrección de errores. Aquí hay una lista parcial de los cambios mas "
+"notables, ordenados alfabéticamente por nombre de módulo. Consulte el "
+"archivo :file:`Misc/NEWS` en la estructura del directorio para una completa "
+"lista de los cambios o se puede buscar a través del registro CVS para "
+"obtener todos los detalles."
 
-#: ../../whatsnew/2.4.rst:997
+#: ../Doc/whatsnew/2.4.rst:997
 msgid ""
 "The :mod:`asyncore` module's :func:`loop` function now has a *count* "
 "parameter that lets you perform a limited number of passes through the "
 "polling loop.  The default is still to loop forever."
 msgstr ""
-":mod:`asyncore` モジュールの :func:`loop` 関数に、 *count* パラメータが追加さ"
-"れました。これはポーリングのループ回数を制限するものです。デフォルトは無限"
-"ループです。"
+"El módulo :mod:`asyncore` y la función :func:`loop` ahora tiene un parámetro "
+"*count* que permite ejecutar un limitado número de pases mediante el bucle. "
+"El valor predeterminado sigue siendo el bucle para siempre."
 
-#: ../../whatsnew/2.4.rst:1001
+#: ../Doc/whatsnew/2.4.rst:1001
 msgid ""
 "The :mod:`base64` module now has more complete :rfc:`3548` support for "
 "Base64, Base32, and Base16 encoding and decoding, including optional case "
 "folding and optional alternative alphabets. (Contributed by Barry Warsaw.)"
 msgstr ""
+"El módulo :mod:`base64` ahora tiene un soporte mas completo :rfc:`3548` para "
+"Base64, Base32 y  Base16 para codificación y descodificación, incluyendo "
+"procesos de convertir caracteres a minúsculas y alfabetos alternativos. "
+"(Contribución de Barry Warsaw)"
 
-#: ../../whatsnew/2.4.rst:1005
+#: ../Doc/whatsnew/2.4.rst:1005
 msgid ""
 "The :mod:`bisect` module now has an underlying C implementation for improved "
 "performance. (Contributed by Dmitry Vasiliev.)"
 msgstr ""
-":mod:`bisect` モジュールが性能改善のために C 実装を使うようになりました。 "
-"(Contributed by Dmitry Vasiliev.)"
+"El módulo :mod:`bisect` ahora tiene una implementación C subyacente para "
+"mejorar el rendimiento. (Contribuido por Dmitry Vasiliev.)"
 
-#: ../../whatsnew/2.4.rst:1008
+#: ../Doc/whatsnew/2.4.rst:1008
 msgid ""
 "The CJKCodecs collections of East Asian codecs, maintained by Hye-Shik "
 "Chang, was integrated into 2.4.   The new encodings are:"
 msgstr ""
-"Hye-Shik Chang によって保守されている東アジアのコーデックの CJKCodecs コレク"
-"ションが Python 2.4 に統合されました。新たなエンコーディングは:"
+"Las colecciones CJKCodecs de códecs de Asia oriental, mantenidas por Hye-"
+"Shik Chang, se integraron en 2.4. Las nuevas codificaciones son:"
 
-#: ../../whatsnew/2.4.rst:1011
+#: ../Doc/whatsnew/2.4.rst:1011
 msgid "Chinese (PRC): gb2312, gbk, gb18030, big5hkscs, hz"
-msgstr "Chinese (PRC): gb2312, gbk, gb18030, big5hkscs, hz"
+msgstr "Chino (PRC): gb2312, gbk, gb18030, big5hkscs, hz"
 
-#: ../../whatsnew/2.4.rst:1013
+#: ../Doc/whatsnew/2.4.rst:1013
 msgid "Chinese (ROC): big5, cp950"
-msgstr "Chinese (ROC): big5, cp950"
+msgstr "Chino (República de China): big5, cp950"
 
-#: ../../whatsnew/2.4.rst:1017
+#: ../Doc/whatsnew/2.4.rst:1017
 msgid "Japanese: cp932, euc-jis-2004, euc-jp, euc-jisx0213, iso-2022-jp,"
-msgstr "Japanese: cp932, euc-jis-2004, euc-jp, euc-jisx0213, iso-2022-jp,"
+msgstr "Japonés: cp932, euc-jis-2004, euc-jp, euc-jisx0213, iso-2022-jp,"
 
-#: ../../whatsnew/2.4.rst:1016
+#: ../Doc/whatsnew/2.4.rst:1016
 msgid ""
 "iso-2022-jp-1, iso-2022-jp-2, iso-2022-jp-3, iso-2022-jp-ext, iso-2022-"
 "jp-2004, shift-jis, shift-jisx0213, shift-jis-2004"
 msgstr ""
 "iso-2022-jp-1, iso-2022-jp-2, iso-2022-jp-3, iso-2022-jp-ext, iso-2022-"
-"jp-2004, shift-jis, shift-jisx0213, shift-jis-2004"
+"jp-2004, shift-jis, shift-jisx0213, shift- jis-2004"
 
-#: ../../whatsnew/2.4.rst:1019
+#: ../Doc/whatsnew/2.4.rst:1019
 msgid "Korean: cp949, euc-kr, johab, iso-2022-kr"
-msgstr "Korean: cp949, euc-kr, johab, iso-2022-kr"
+msgstr "Coreano: cp949, euc-kr, johab, iso-2022-kr"
 
-#: ../../whatsnew/2.4.rst:1021
+#: ../Doc/whatsnew/2.4.rst:1021
 msgid ""
 "Some other new encodings were added: HP Roman8,  ISO_8859-11, ISO_8859-16, "
 "PCTP-154, and TIS-620."
 msgstr ""
-"ほか、新たなエンコーディングが追加されています: HP Roman8,  ISO_8859-11, "
-"ISO_8859-16, PCTP-154, TIS-620."
+"Se agregaron algunas otras codificaciones nuevas: HP Roman8, ISO_8859-11, "
+"ISO_8859-16, PCTP-154 y TIS-620."
 
-#: ../../whatsnew/2.4.rst:1024
+#: ../Doc/whatsnew/2.4.rst:1024
 msgid ""
 "The UTF-8 and UTF-16 codecs now cope better with receiving partial input. "
 "Previously the :class:`StreamReader` class would try to read more data, "
@@ -1527,32 +1695,36 @@ msgid ""
 "method will now return as much data as it can and future calls will resume "
 "decoding where previous ones left off.  (Implemented by Walter Dörwald.)"
 msgstr ""
-"UTF-8, UTF-16 コーデックが部分的な入力を受け取った場合により上手に処理するよ"
-"うになりました。以前は :class:`StreamReader` クラスは不足データを読み出そうと"
-"試みるために、それがストリームからデコード処理を再開することを不可能にしてい"
-"ました。 :meth:`read` メソッドは今ではそのとき読めているデータを返し、次の呼"
-"び出しで以前の読み残しのデコード処理から再開します。(Implemented by Walter "
-"Dörwald.)"
+"Los códecs UTF-8 y UTF-16 ahora se adaptan mejor a la recepción de entradas "
+"parciales. Anteriormente, la clase :class:`StreamReader` intentaba leer más "
+"datos, lo que hacía imposible reanudar la decodificación desde el flujo. El "
+"método :meth:`read` ahora devolverá tantos datos como pueda y las llamadas "
+"futuras reanudarán la decodificación donde lo dejaron las anteriores. "
+"(Implementado por Walter Dörwald.)"
 
-#: ../../whatsnew/2.4.rst:1030
+#: ../Doc/whatsnew/2.4.rst:1030
 msgid ""
 "There is a new :mod:`collections` module for  various specialized collection "
 "datatypes.  Currently it contains just one type, :class:`deque`, a double-"
 "ended queue that supports efficiently adding and removing elements from "
 "either end::"
 msgstr ""
+"Hay un nuevo módulo :mod:`collections` para varios tipos de datos de "
+"recopilación especializados. Actualmente contiene solo un tipo, :class:"
+"`deque`, una cola de dos extremos que admite la adición y eliminación de "
+"elementos de manera eficiente desde cualquier extremo:"
 
-#: ../../whatsnew/2.4.rst:1050
+#: ../Doc/whatsnew/2.4.rst:1050
 msgid ""
 "Several modules, such as the :mod:`Queue` and :mod:`threading` modules, now "
 "take advantage of :class:`collections.deque` for improved performance.  "
 "(Contributed by Raymond Hettinger.)"
 msgstr ""
-":mod:`Queue` や :mod:`threading` のようないくつかのモジュールで、 :class:"
-"`collections.deque` を生かして性能改善を成し遂げています。 (Contributed by "
-"Raymond Hettinger.)"
+"Varios módulos, como los módulos :mod:`Queue` y :mod:`threading`, ahora "
+"aprovechan :class:`collections.deque` para mejorar el rendimiento. "
+"(Contribuido por Raymond Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:1054
+#: ../Doc/whatsnew/2.4.rst:1054
 msgid ""
 "The :mod:`ConfigParser` classes have been enhanced slightly. The :meth:"
 "`read` method now returns a list of the files that were successfully parsed, "
@@ -1560,33 +1732,34 @@ msgid ""
 "argument that isn't a string.   (Contributed by John Belmonte and David "
 "Goodger.)"
 msgstr ""
-":mod:`ConfigParser` クラスは少し拡張されました。 :meth:`read` メソッドが解析"
-"成功したファイルのリストを返すようになり、 :meth:`set` メソッドは *value* 引"
-"数が文字列でないと :exc:`TypeError` を送出するようになりました。(Contributed "
-"by John Belmonte and David Goodger.)"
+"Las clases de :mod:`ConfigParser` se han mejorado ligeramente. El método :"
+"meth:`read` ahora devuelve una lista de los archivos que se analizaron "
+"correctamente y el método :meth:`set` lanza :exc:`TypeError` si se pasa un "
+"argumento *value* que no es una cadena. (Contribuido por John Belmonte y "
+"David Goodger.)"
 
-#: ../../whatsnew/2.4.rst:1059
+#: ../Doc/whatsnew/2.4.rst:1059
 msgid ""
 "The :mod:`curses` module now supports the ncurses extension :func:"
 "`use_default_colors`.  On platforms where the terminal supports "
 "transparency, this makes it possible to use a transparent background. "
 "(Contributed by Jörg Lehmann.)"
 msgstr ""
-":mod:`curses` モジュールが ncurses 拡張の :func:`use_default_colors` をサポー"
-"トするようになりました。透明性をサポートするターミナルを持つプラットフォーム"
-"ならば、このことで透明背景に出来ます。 (Contributed by Jörg Lehmann.)"
+"El módulo :mod:`curses` ahora admite la extensión ncurses :func:"
+"`use_default_colors`. En plataformas donde el terminal admite transparencia, "
+"esto permite utilizar un fondo transparente. (Contribución de Jörg Lehmann.)"
 
-#: ../../whatsnew/2.4.rst:1064
+#: ../Doc/whatsnew/2.4.rst:1064
 msgid ""
 "The :mod:`difflib` module now includes an :class:`HtmlDiff` class that "
 "creates an HTML table showing a side by side comparison of two versions of a "
 "text. (Contributed by Dan Gass.)"
 msgstr ""
-":mod:`difflib` モジュールに :class:`HtmlDiff` クラスが追加されています。これ"
-"は対象テキストをサイドバイサイドで視覚化する HTML テーブルを作ります。 "
-"(Contributed by Dan Gass.)"
+"El módulo :mod:`difflib` ahora incluye una clase :class:`HtmlDiff` que crea "
+"una tabla HTML que muestra una comparación lado a lado de dos versiones de "
+"un texto. (Contribuido por Dan Gass.)"
 
-#: ../../whatsnew/2.4.rst:1068
+#: ../Doc/whatsnew/2.4.rst:1068
 msgid ""
 "The :mod:`email` package was updated to version 3.0,  which dropped various "
 "deprecated APIs and removes support for Python versions earlier than 2.3.  "
@@ -1597,16 +1770,16 @@ msgid ""
 "the  :attr:`defect` attribute of the message.  (Developed by Anthony Baxter, "
 "Barry Warsaw, Thomas Wouters, and others.)"
 msgstr ""
-":mod:`email` パッケージがバージョン 3.0 に更新されています。多くの非推奨だっ"
-"た API が削除され、Python 2.3 以前のバージョンへのサポートが削除されていま"
-"す。パッケージのバージョン 3.0 は MIME メッセージについての漸増的な新パーサを"
-"使います。これは :mod:`email.FeedParser` モジュールで利用可能です。この新パー"
-"サはメモリ内に全てのメッセージを読み込んでおく必要がなく、メッセージが不正で"
-"あっても例外は投げません; 代わりにメッセージの全ての問題についてを :attr:"
-"`defect` 属性に記録します。 (Developed by Anthony Baxter, Barry Warsaw, "
-"Thomas Wouters, and others.)"
+"El paquete :mod:`email` se actualizó a la versión 3.0, que eliminó varias "
+"API obsoletas y elimina la compatibilidad con versiones de Python anteriores "
+"a la 2.3. La versión 3.0 del paquete usa un nuevo analizador incremental "
+"para mensajes MIME, disponible en el módulo :mod:`email.FeedParser`. El "
+"nuevo analizador no requiere leer todo el mensaje en la memoria y no genera "
+"excepciones si un mensaje tiene un formato incorrecto; en su lugar, registra "
+"cualquier problema en el atributo :attr:`defect` del mensaje. (Desarrollado "
+"por Anthony Baxter, Barry Warsaw, Thomas Wouters y otros)."
 
-#: ../../whatsnew/2.4.rst:1077
+#: ../Doc/whatsnew/2.4.rst:1077
 msgid ""
 "The :mod:`heapq` module has been converted to C.  The resulting tenfold "
 "improvement in speed makes the module suitable for handling high volumes of "
@@ -1615,14 +1788,14 @@ msgid ""
 "a dataset without the expense of a full sort.  (Contributed by Raymond "
 "Hettinger.)"
 msgstr ""
-":mod:`heapq` モジュールは C に変換されました。性能改善は 10 倍となり、モ"
-"ジュールはより大きなデータを扱うのに相応しいものになりました。加えて、モ"
-"ジュールには新しく 2 つの関数が追加されました。それは :func:`nlargest` と :"
-"func:`nsmallest` で、データセット内の大きいものから N 番目まで、小さいものか"
-"ら N 番目までを、高価な完全なソートを要することなく取り出すのに使います。"
-"(Contributed by Raymond Hettinger.)"
+"El módulo :mod:`heapq` se ha convertido a C. La mejora de diez veces "
+"resultante en la velocidad hace que el módulo sea adecuado para manejar "
+"grandes volúmenes de datos. Además, el módulo tiene dos funciones nuevas :"
+"func:`nlargest` y :func:`nsmallest` que usan montones para encontrar los N "
+"valores más grandes o más pequeños en un conjunto de datos sin el gasto de "
+"una clasificación completa. (Contribuido por Raymond Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:1083
+#: ../Doc/whatsnew/2.4.rst:1083
 msgid ""
 "The :mod:`httplib` module now contains constants for HTTP status codes "
 "defined in various HTTP-related RFC documents.  Constants have names such "
@@ -1630,23 +1803,23 @@ msgid ""
 "`MOVED_PERMANENTLY`; use pydoc to get a full list.  (Contributed by Andrew "
 "Eland.)"
 msgstr ""
-":mod:`httplib` モジュールに、HTTP 関連の種々の RFC ドキュメントで定義されてい"
-"る HTTP ステータスコードについての定数群が追加されました。定数名は例えば :"
-"const:`OK`, :const:`CREATED`, :const:`CONTINUE`, :const:`MOVED_PERMANENTLY` "
-"のようなものです。完全なリストは pydoc を使って列挙してください。 "
-"(Contributed by Andrew Eland.)"
+"El módulo :mod:`httplib` ahora contiene constantes para códigos de estado "
+"HTTP definidos en varios documentos RFC relacionados con HTTP. Las "
+"constantes tienen nombres como :const:`OK`, :const:`CREATED`, :const:"
+"`CONTINUE`, y :const:`MOVED_PERMANENTLY`; use pydoc para obtener una lista "
+"completa. (Contribuido por Andrew Eland.)"
 
-#: ../../whatsnew/2.4.rst:1089
+#: ../Doc/whatsnew/2.4.rst:1089
 msgid ""
 "The :mod:`imaplib` module now supports IMAP's THREAD command (contributed by "
 "Yves Dionne) and new :meth:`deleteacl` and :meth:`myrights` methods "
 "(contributed by Arnaud Mazin)."
 msgstr ""
-":mod:`imaplib` モジュールが IMAP の THREAD コマンドをサポートするようになりま"
-"した。 (contributed by Yves Dionne) また、 :meth:`deleteacl` メソッドと :"
-"meth:`myrights` メソッドが追加されました。 (contributed by Arnaud Mazin)."
+"El módulo :mod:`imaplib` ahora es compatible con el comando THREAD de IMAP "
+"(aportado por Yves Dionne) y los nuevos métodos :meth:`deleteacl` y :meth:"
+"`myrights` (aportado por Arnaud Mazin)."
 
-#: ../../whatsnew/2.4.rst:1093
+#: ../Doc/whatsnew/2.4.rst:1093
 msgid ""
 "The :mod:`itertools` module gained a ``groupby(iterable[, *func*])`` "
 "function. *iterable* is something that can be iterated over to return a "
@@ -1656,47 +1829,49 @@ msgid ""
 "which have matching values of the key, and returns a series of 2-tuples "
 "containing the key value and an iterator over the subsequence."
 msgstr ""
-":mod:`itertools` モジュールに ``groupby(iterable[, *func*])`` 関数が追加され"
-"ました。 *iterable* は何か要素のストリームを返すものをイテレート出来るもの"
-"で、省略可能な *func* パラメータは要素を取ってキー値を返す関数です。省略され"
-"ればキーは要素自身です。 :func:`groupby` は要素群をキー値の合致ごとサブシーケ"
-"ンスにグループ化して、キー値とサブシーケンスに対するイテレータを組とする 2 要"
-"素タプルのシリーズを返します。"
+"El módulo :mod:`itertools` ganó una función ``groupby(iterable[, *func*])``. "
+"El parámetro *iterable* is something that can be iterated over to return a "
+"stream of elements, and the optional *func* es una función que toma un "
+"elemento y devuelve un valor clave; si se omite, la clave es simplemente el "
+"elemento en sí. :func:`groupby` luego agrupa los elementos en subsecuencias "
+"que tienen valores coincidentes de la clave y devuelve una serie de 2 tuplas "
+"que contienen el valor de la clave y un iterador sobre la subsecuencia."
 
-#: ../../whatsnew/2.4.rst:1101
+#: ../Doc/whatsnew/2.4.rst:1101
 msgid ""
 "Here's an example to make this clearer.  The *key* function simply returns "
 "whether a number is even or odd, so the result of :func:`groupby` is to "
 "return consecutive runs of odd or even numbers. ::"
 msgstr ""
-"例をお見せするのが早いでしょう。ここでは *key* 関数は単に数値が偶数か奇数かを"
-"返すだけです。 :func:`groupby` の結果は偶数または奇数の一連の流れを返します::"
+"Aquí hay un ejemplo para aclarar esto. La función *key* simplemente devuelve "
+"si un número es par o impar, por lo que el resultado de :func:`groupby` es "
+"devolver series consecutivas de números pares o impares. ::"
 
-#: ../../whatsnew/2.4.rst:1117
+#: ../Doc/whatsnew/2.4.rst:1117
 msgid ""
 ":func:`groupby` is typically used with sorted input.  The logic for :func:"
 "`groupby` is similar to the Unix ``uniq`` filter which makes it handy for "
 "eliminating, counting, or identifying duplicate elements::"
 msgstr ""
-":func:`groupby` は典型的にはソート済み入力に使います。 :func:`groupby` のロ"
-"ジックは除外、数え上げ、重複要素の特定を手軽に行う Unix の ``uniq`` フィルタ"
-"に似ています::"
+":func:`groupby` se utiliza normalmente con entrada ordenada. La lógica para :"
+"func:`groupby` es similar al filtro Unix ``uniq``, lo que lo hace útil para "
+"eliminar, contar o identificar elementos duplicados:"
 
-#: ../../whatsnew/2.4.rst:1140
+#: ../Doc/whatsnew/2.4.rst:1140
 msgid "(Contributed by Hye-Shik Chang.)"
-msgstr "(Contributed by Hye-Shik Chang.)"
+msgstr "(Contribuido por Hye-Shik Chang.)"
 
-#: ../../whatsnew/2.4.rst:1142
+#: ../Doc/whatsnew/2.4.rst:1142
 msgid ""
 ":mod:`itertools` also gained a function named ``tee(iterator, N)`` that "
 "returns *N* independent iterators that replicate *iterator*.  If *N* is "
 "omitted, the default is 2. ::"
 msgstr ""
-":mod:`itertools` には ``tee(iterator, N)`` という新たな関数も追加されていま"
-"す。これは *iterator* の、独立した *N* 個の複製イテレータを返します。 *N* は"
-"省略されればデフォルトは 2 です。::"
+":mod:`itertools` también obtuvo una función denominada ``tee(iterator, N)`` "
+"que devuelve *N* independent iterators that replicate *iterator*.  If *N* se "
+"omite, el valor predeterminado es 2. ::"
 
-#: ../../whatsnew/2.4.rst:1155
+#: ../Doc/whatsnew/2.4.rst:1155
 msgid ""
 "Note that :func:`tee` has to keep copies of the values returned  by the "
 "iterator; in the worst case, it may need to keep all of them.   This should "
@@ -1707,28 +1882,29 @@ msgid ""
 "include bookmarking, windowing, or lookahead iterators. (Contributed by "
 "Raymond Hettinger.)"
 msgstr ""
-":func:`tee` がイテレータから返される値のコピーを維持する必要があることに注意"
-"してください。最悪の場合はそれら全てを維持する必要があるかもしれません。です"
-"のでこれは長丁場の入力に対して、先行するイテレータが後続のイテレータの遥か先"
-"を突っ走れる場合には注意深く使わなければなりません。その分断が大きいようであ"
-"れば、 :func:`list` を代わりに使うほうが良いかもしれません。イテレータたちが"
-"相互に近い場所を追跡する場合は :func:`tee` は理想的です。ブックマーク、ウィン"
-"ドウ処理、あるいは先読みイテレータといったものに適用出来るのではないでしょう"
-"か。 (Contributed by Raymond Hettinger.)"
+"Tenga en cuenta que :func:`tee` debe mantener copias de los valores "
+"devueltos por el iterador; en el peor de los casos, es posible que deba "
+"conservarlos todos. Por lo tanto, esto debe usarse con cuidado si el "
+"iterador principal puede ejecutarse muy por delante del iterador final en un "
+"flujo largo de entradas. Si la separación es grande, entonces también podría "
+"usar :func:`list` en su lugar. Cuando los iteradores se siguen de cerca "
+"entre sí, :func:`tee` es ideal. Las posibles aplicaciones incluyen "
+"marcadores, ventanas o iteradores de anticipación. (Contribuido por Raymond "
+"Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:1164
+#: ../Doc/whatsnew/2.4.rst:1164
 msgid ""
 "A number of functions were added to the :mod:`locale`  module, such as :func:"
 "`bind_textdomain_codeset` to specify a particular encoding and a family of :"
 "func:`l\\*gettext` functions that return messages in the chosen encoding. "
 "(Contributed by Gustavo Niemeyer.)"
 msgstr ""
-":mod:`locale` モジュールに数多くの関数が追加されました。例えば :func:"
-"`bind_textdomain_codeset` は特定のエンコーディングを指定し、 ``l\\*gettext`` "
-"系の関数は選択されたエンコーディングでメッセージを返します。(Contributed by "
-"Gustavo Niemeyer.)"
+"Se agregaron varias funciones al módulo :mod:`locale`, como :func:"
+"`bind_textdomain_codeset` para especificar una codificación particular y una "
+"familia de funciones :func:`l\\*gettext` que devuelven mensajes en la "
+"codificación elegida. (Contribución de Gustavo Niemeyer.)"
 
-#: ../../whatsnew/2.4.rst:1169
+#: ../Doc/whatsnew/2.4.rst:1169
 msgid ""
 "Some keyword arguments were added to the :mod:`logging` package's :func:"
 "`basicConfig` function to simplify log configuration.  The default behavior "
@@ -1736,13 +1912,14 @@ msgid ""
 "specified to log to a particular file, change the logging format, or set the "
 "logging level. For example::"
 msgstr ""
-":mod:`logging` パッケージの :func:`basicConfig` 関数に、ログ設定を簡単にする"
-"いくつかのキーワード引数が追加されました。デフォルトの振る舞いはログメッセー"
-"ジを標準エラー出力に出力することですが、様々なキーワード引数でログを特定の"
-"ファイルに書いたり、ログのフォーマットを変えたり、ロギングのレベルを変えたり"
-"出来ます。例えば::"
+"Se agregaron algunos argumentos de palabras clave a la función :func:"
+"`basicConfig` del paquete :mod:`logging` para simplificar la configuración "
+"del registro. El comportamiento predeterminado es registrar mensajes con "
+"error estándar, pero se pueden especificar varios argumentos de palabras "
+"clave para registrar en un archivo en particular, cambiar el formato de "
+"registro o establecer el nivel de registro. Por ejemplo::"
 
-#: ../../whatsnew/2.4.rst:1180
+#: ../Doc/whatsnew/2.4.rst:1180
 msgid ""
 "Other additions to the :mod:`logging` package include a ``log(level, msg)`` "
 "convenience method, as well as a :class:`TimedRotatingFileHandler` class "
@@ -1751,41 +1928,42 @@ msgid ""
 "certain size.  Both classes derive from a new :class:`BaseRotatingHandler` "
 "class that can be used to implement other rotating handlers."
 msgstr ""
-"ほかの :mod:`logging` パッケージへの追加としては、 便利メソッド ``log(level, "
-"msg)`` や、ログファイルを時間間隔でローテートするクラス :class:"
-"`TimedRotatingFileHandler` などがあります。モジュールには元々 :class:"
-"`RotatingFileHandler` が含まれており、こちらはファイルが特定のサイズを超過し"
-"た場合にローテートするものです。両クラスとも新しく導出された :class:"
-"`BaseRotatingHandler` 基底クラスから派生していて、これはまた別のローテートす"
-"るハンドラを実装するのに使えます。"
+"Otras adiciones al paquete :mod:`logging` incluyen un método de conveniencia "
+"``log(level, msg)``, así como una clase :class:`TimedRotatingFileHandler` "
+"que rota sus archivos de registro en un intervalo cronometrado. El módulo ya "
+"tenía :class:`RotatingFileHandler`, que rotaba los registros una vez que el "
+"archivo excedía un cierto tamaño. Ambas clases derivan de una nueva clase :"
+"class:`BaseRotatingHandler` que se puede utilizar para implementar otros "
+"controladores rotativos."
 
-#: ../../whatsnew/2.4.rst:1187
+#: ../Doc/whatsnew/2.4.rst:1187
 msgid "(Changes implemented by Vinay Sajip.)"
-msgstr "(Changes implemented by Vinay Sajip.)"
+msgstr "(Cambios implementados por Vinay Sajip.)"
 
-#: ../../whatsnew/2.4.rst:1189
+#: ../Doc/whatsnew/2.4.rst:1189
 msgid ""
 "The :mod:`marshal` module now shares interned strings on unpacking a  data "
 "structure.  This may shrink the size of certain pickle strings, but the "
 "primary effect is to make :file:`.pyc` files significantly smaller. "
 "(Contributed by Martin von Löwis.)"
 msgstr ""
-":mod:`marshal` モジュールが、データ構造のアンパックで内部化した文字列を共有す"
-"るようになりました。これはある種の pickle 文字列のサイズを切り詰めるでしょう"
-"が、主要な効能は :file:`.pyc` ファイルが顕著に小さくなることです。"
-"(Contributed by Martin von Löwis.)"
+"El módulo :mod:`marshal` ahora comparte cadenas internas al desempaquetar "
+"una estructura de datos. Esto puede reducir el tamaño de ciertas cadenas de "
+"pickle, pero el efecto principal es hacer que los archivos :file:`.pyc` sean "
+"significativamente más pequeños. (Contribución de Martin von Löwis.)"
 
-#: ../../whatsnew/2.4.rst:1194
+#: ../Doc/whatsnew/2.4.rst:1194
 msgid ""
 "The :mod:`nntplib` module's :class:`NNTP` class gained :meth:`description` "
 "and :meth:`descriptions` methods to retrieve  newsgroup descriptions for a "
 "single group or for a range of groups. (Contributed by Jürgen A. Erhard.)"
 msgstr ""
-":mod:`nntplib` モジュールの :class:`NNTP` クラスに :meth:`description` メソッ"
-"ドと :meth:`descriptions` メソッドが追加されています。各々単一の、もしくは範"
-"囲で、ニュースグループを抽出します。 (Contributed by Jürgen A. Erhard.)"
+"La clase :class:`NNTP` del módulo :mod:`nntplib` obtuvo los métodos :meth:"
+"`description` y :meth:`descriptions` para recuperar descripciones de grupos "
+"de noticias para un solo grupo o para un rango de grupos. (Contribución de "
+"Jürgen A. Erhard.)"
 
-#: ../../whatsnew/2.4.rst:1198
+#: ../Doc/whatsnew/2.4.rst:1198
 msgid ""
 "Two new functions were added to the :mod:`operator` module, "
 "``attrgetter(attr)`` and ``itemgetter(index)``. Both functions return "
@@ -1793,13 +1971,14 @@ msgid ""
 "or item; these callables make excellent data extractors when used with :func:"
 "`map` or :func:`sorted`.  For example::"
 msgstr ""
-":mod:`operator` モジュールに 2 つの関数 ``attrgetter(attr)`` と "
-"``itemgetter(index)`` が追加されています。両関数ともに、単一引数を取ってそれ"
-"に対応する属性かアイテムを返す呼び出し可能オブジェクトを返します。これら呼び"
-"出し可能オブジェクトは :func:`map` や :func:`sorted` とともに使う際の優れた"
-"データ抽出器になります。例えば::"
+"Se agregaron dos nuevas funciones al módulo :mod:`operator`, "
+"``attrgetter(attr)`` y ``itemgetter(index)``. Ambas funciones devuelven "
+"invocables que toman un solo argumento y devuelven el atributo o elemento "
+"correspondiente; estos llamables son excelentes extractores de datos cuando "
+"se utilizan con :func:`map` o :func:`sorted`. Por ejemplo::"
 
-#: ../../whatsnew/2.4.rst:1214
+#: ../Doc/whatsnew/2.4.rst:1214
+#, python-format
 msgid ""
 "The :mod:`optparse` module was updated in various ways.  The module now "
 "passes its messages through :func:`gettext.gettext`, making it possible to "
@@ -1807,13 +1986,14 @@ msgid ""
 "can now include the string ``'%default'``, which will be replaced by the "
 "option's default value.  (Contributed by Greg Ward.)"
 msgstr ""
-":mod:`optparse` モジュールが色々更新されました。モジュールはメッセージを :"
-"func:`gettext.gettext` を通して Optik のヘルプとエラーメッセージを国際化する"
-"のを可能にしています。オプションのヘルプメッセージは文字列 ``'%default'`` を"
-"含めることが出来るようになっており、これはオプションのデフォルト値に置換され"
-"ます。(Contributed by Greg Ward.)"
+"El módulo :mod:`optparse` se actualizó de varias formas. El módulo ahora "
+"pasa sus mensajes a través de :func:`gettext.gettext`, lo que permite "
+"internacionalizar los mensajes de error y ayuda de Optik. Los mensajes de "
+"ayuda para las opciones ahora pueden incluir la cadena ``'%default'``, que "
+"será reemplazada por el valor predeterminado de la opción. (Contribuido por "
+"Greg Ward.)"
 
-#: ../../whatsnew/2.4.rst:1220
+#: ../Doc/whatsnew/2.4.rst:1220
 msgid ""
 "The long-term plan is to deprecate the :mod:`rfc822` module in some future "
 "Python release in favor of the :mod:`email` package. To this end, the :func:"
@@ -1821,25 +2001,27 @@ msgid ""
 "replacement for :func:`rfc822.formatdate`.  You may want to write new e-mail "
 "processing code with this in mind.  (Change implemented by Anthony Baxter.)"
 msgstr ""
-"長期間の計画として、いつかの将来の Python バージョンでは :mod:`email` パッ"
-"ケージにより :mod:`rfc822` モジュールを置き換える計画です。この目的のため"
-"に、 :func:`email.utils.formatdate` が、 :func:`rfc822.formatdate` の置き換え"
-"として使えるように変更されています。新しい e-mail 処理コードはこれを使って書"
-"くことを考えてください。(Change implemented by Anthony Baxter.)"
+"El plan a largo plazo es desaprobar el módulo :mod:`rfc822` en alguna "
+"versión futura de Python a favor del paquete :mod:`email`. Con este fin, la "
+"función :func:`email.Utils.formatdate` se ha modificado para que pueda "
+"utilizarse como reemplazo de :func:`rfc822.formatdate`. Es posible que desee "
+"escribir un nuevo código de procesamiento de correo electrónico con esto en "
+"mente. (Cambio implementado por Anthony Baxter)."
 
-#: ../../whatsnew/2.4.rst:1226
+#: ../Doc/whatsnew/2.4.rst:1226
 msgid ""
 "A new ``urandom(n)`` function was added to the :mod:`os` module, returning a "
 "string containing *n* bytes of random data.  This function provides access "
 "to platform-specific sources of randomness such as :file:`/dev/urandom` on "
 "Linux or the Windows CryptoAPI.  (Contributed by Trevor Perrin.)"
 msgstr ""
-":mod:`os` モジュールに ``urandom(n)`` が追加されました。これは *n* バイトの乱"
-"数データを含む文字列を返します。この関数はプラットフォーム固有の乱数発生源に"
-"アクセスします。例えば Linux での :file:`/dev/urandom` や Windows での "
-"CryptoAPI です。 (Contributed by Trevor Perrin.)"
+"Se agregó una nueva función ``urandom(n)`` al módulo :mod:`os`, que devuelve "
+"una cadena que contiene *n* bytes de datos aleatorios. Esta función "
+"proporciona acceso a fuentes de aleatoriedad específicas de la plataforma, "
+"como :file:`/dev/urandom` en Linux o Windows CryptoAPI. (Contribuido por "
+"Trevor Perrin.)"
 
-#: ../../whatsnew/2.4.rst:1231
+#: ../Doc/whatsnew/2.4.rst:1231
 msgid ""
 "Another new function: ``os.path.lexists(path)``  returns true if the file "
 "specified by *path* exists, whether or not it's a symbolic link.  This "
@@ -1847,37 +2029,37 @@ msgid ""
 "false if *path* is a symlink that points to a destination that doesn't "
 "exist. (Contributed by Beni Cherniavsky.)"
 msgstr ""
-"もう一つの新規関数 ``os.path.lexists(path)`` は *path* によって指定されたファ"
-"イルがそれがシンボリックリンクかどうかによらず、存在している場合に真を返しま"
-"す。これは、既存の ``os.path.exists(path)`` 関数が *path* がシンボリックリン"
-"クでその指し先が存在しない場合に偽を返すのとは異なります。 (Contributed by "
-"Beni Cherniavsky.)"
+"Otra función nueva: ``os.path.lexists(path)`` devuelve verdadero si el "
+"archivo especificado por *path* exists, whether or not it's a symbolic "
+"link.  This differs from the existing ASDF01 function, which returns false "
+"if *path* es un enlace simbólico que apunta a un destino que no existe. "
+"(Contribuido por Beni Cherniavsky.)"
 
-#: ../../whatsnew/2.4.rst:1237
+#: ../Doc/whatsnew/2.4.rst:1237
 msgid ""
 "A new :func:`getsid` function was added to the :mod:`posix` module that "
 "underlies the :mod:`os` module. (Contributed by J. Raynor.)"
 msgstr ""
-":mod:`os` モジュールの下層にある :mod:`posix` モジュールに :func:`getsid` 関"
-"数が追加されました。 (Contributed by J. Raynor.)"
+"Se agregó una nueva función :func:`getsid` al módulo :mod:`posix` que "
+"subyace al módulo :mod:`os`. (Contribuido por J. Raynor.)"
 
-#: ../../whatsnew/2.4.rst:1240
+#: ../Doc/whatsnew/2.4.rst:1240
 msgid ""
 "The :mod:`poplib` module now supports POP over SSL.  (Contributed by Hector "
 "Urtubia.)"
 msgstr ""
-":mod:`poplib` モジュールが  POP over SSL をサポートするようになりました.  "
-"(Contributed by Hector Urtubia.)"
+"El módulo :mod:`poplib` ahora admite POP sobre SSL. (Contribuido por Héctor "
+"Urtubia.)"
 
-#: ../../whatsnew/2.4.rst:1243
+#: ../Doc/whatsnew/2.4.rst:1243
 msgid ""
 "The :mod:`profile` module can now profile C extension functions. "
 "(Contributed by Nick Bastin.)"
 msgstr ""
-":mod:`profile` モジュールが C 拡張の関数をプロファイル出来るようになりまし"
-"た。 (Contributed by Nick Bastin.)"
+"El módulo :mod:`profile` ahora puede perfilar funciones de extensión C. "
+"(Contribuido por Nick Bastin.)"
 
-#: ../../whatsnew/2.4.rst:1246
+#: ../Doc/whatsnew/2.4.rst:1246
 msgid ""
 "The :mod:`random` module has a new method called ``getrandbits(N)`` that "
 "returns a long integer *N* bits in length.  The existing :meth:`randrange` "
@@ -1885,12 +2067,13 @@ msgid ""
 "arbitrarily large random numbers more efficient.  (Contributed by Raymond "
 "Hettinger.)"
 msgstr ""
-":mod:`random` モジュールに、 ``getrandbits(N)`` 関数が追加されました。 *N* "
-"ビット長の長整数を返します。既存の :meth:`randrange` メソッドは :meth:"
-"`getrandbits` を適切な場所で使うようになり、任意の大きな乱数値生成をより効果"
-"的にしています。 (Contributed by Raymond Hettinger.)"
+"El módulo :mod:`random` tiene un nuevo método llamado ``getrandbits(N)`` que "
+"devuelve un entero largo *N* bits de longitud. El método :meth:`randrange` "
+"existente ahora usa :meth:`getrandbits` cuando corresponde, lo que hace que "
+"la generación de números aleatorios arbitrariamente grandes sea más "
+"eficiente. (Contribuido por Raymond Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:1252
+#: ../Doc/whatsnew/2.4.rst:1252
 msgid ""
 "The regular expression language accepted by the :mod:`re` module was "
 "extended with simple conditional expressions, written as ``(?(group)A|B)``.  "
@@ -1900,13 +2083,15 @@ msgid ""
 "group didn't match, the pattern *B* will be used instead. (Contributed by "
 "Gustavo Niemeyer.)"
 msgstr ""
-":mod:`re` モジュールの正規表現言語が拡張されて、単純な条件式 ``(?(group)A|"
-"B)`` を書けるようになっています。 *group* は数値グループ ID か正規表現内で "
-"``(?P<group>...)`` で定義したグループ名のどちらかです。指定したグループが合致"
-"した場合は、正規表現パターン *A* が文字列に対してテストされ、そうでなければパ"
-"ターン *B* が代わりに試されます。(Contributed by Gustavo Niemeyer.)"
+"El lenguaje de expresiones regulares aceptado por el módulo :mod:`re` se "
+"amplió con expresiones condicionales simples, escritas como ``(?(group)A|"
+"B)``. En su lugar, se utilizará *group* is either a numeric group ID or a "
+"group name defined with ASDF02 earlier in the expression.  If the specified "
+"group matched, the regular expression pattern *A* will be tested against the "
+"string; if the group didn't match, the pattern *B*. (Contribución de Gustavo "
+"Niemeyer.)"
 
-#: ../../whatsnew/2.4.rst:1259
+#: ../Doc/whatsnew/2.4.rst:1259
 msgid ""
 "The :mod:`re` module is also no longer recursive, thanks to a massive amount "
 "of work by Gustavo Niemeyer.  In a recursive regular expression engine, "
@@ -1919,17 +2104,18 @@ msgid ""
 "Python 2.4's regular expression engine can match this pattern without "
 "problems."
 msgstr ""
-":mod:`re` モジュールはもう再帰をすることはありません。Gustavo Niemeyer による"
-"膨大な量の仕事のおかげです。再帰する正規表現エンジンでは、ある種のパターンで"
-"は大量の C スタック空間を消費し、スタックのオーバーフローを起こすことがありま"
-"した。例えば表現 ``(a|b)+`` が文字 ``a`` から成る 3 万バイトの文字列に対して"
-"マッチすると、一文字ごとに一つのスタックフレームを消費していました。Python "
-"2.3 ではスタックオーバーフローのチェックを試みて :exc:`RuntimeError` を投げよ"
-"うとしましたが、ある種のパターンではチェックをすり抜けてしまって、運が悪いと"
-"セグメンテーション違反を起こしていました。Python 2.4 の正規表現エンジンではこ"
-"のパターンと問題を起こすことなくマッチ出来ます。"
+"El módulo :mod:`re` ya no es recursivo, gracias a la enorme cantidad de "
+"trabajo de Gustavo Niemeyer. En un motor de expresión regular recursivo, "
+"ciertos patrones dan como resultado que se consuma una gran cantidad de "
+"espacio de pila de C y es posible desbordar la pila. Por ejemplo, si comparó "
+"una cadena de 30000 bytes de caracteres ``a`` con la expresión ``(a|b)+``, "
+"se consumió un marco de pila por carácter. Python 2.3 intentó verificar el "
+"desbordamiento de la pila y generar una excepción :exc:`RuntimeError`, pero "
+"ciertos patrones podrían eludir la verificación y, si no tuvo suerte, Python "
+"podría segregar. El motor de expresiones regulares de Python 2.4 puede "
+"coincidir con este patrón sin problemas."
 
-#: ../../whatsnew/2.4.rst:1269
+#: ../Doc/whatsnew/2.4.rst:1269
 msgid ""
 "The :mod:`signal` module now performs tighter error-checking on the "
 "parameters to the :func:`signal.signal` function.  For example, you can't "
@@ -1937,106 +2123,111 @@ msgid ""
 "would quietly accept this, but 2.4 will raise a :exc:`RuntimeError` "
 "exception."
 msgstr ""
-":mod:`signal` モジュールで、 :func:`signal.signal` へのパラメータのエラー"
-"チェックを厳しくしています。例えば :const:`SIGKILL` シグナルへのハンドラは"
-"セット出来ません。以前のバージョンの Python ではこれを黙って受け容れていまし"
-"たが、2.4 では :exc:`RuntimeError` を投げます。"
+"El módulo :mod:`signal` ahora realiza una verificación de errores más "
+"estricta en los parámetros de la función :func:`signal.signal`. Por ejemplo, "
+"no puede establecer un controlador en la señal :const:`SIGKILL`; las "
+"versiones anteriores de Python aceptarían silenciosamente esto, pero 2.4 "
+"lanzará una excepción :exc:`RuntimeError`."
 
-#: ../../whatsnew/2.4.rst:1274
+#: ../Doc/whatsnew/2.4.rst:1274
 msgid ""
 "Two new functions were added to the :mod:`socket` module. :func:`socketpair` "
 "returns a pair of connected sockets and ``getservbyport(port)`` looks up the "
 "service name for a given port number. (Contributed by Dave Cole and Barry "
 "Warsaw.)"
 msgstr ""
-":mod:`socket` モジュールに 2 つ新しい関数が追加されています。 :func:"
-"`socketpair` 関数は接続したソケットのペアを返し、 ``getservbyport(port)`` は"
-"与えたポート番号からサービス名を探して返します。(Contributed by Dave Cole "
-"and Barry Warsaw.)"
+"Se agregaron dos nuevas funciones al módulo :mod:`socket`. :func:"
+"`socketpair` devuelve un par de sockets conectados y ``getservbyport(port)`` "
+"busca el nombre del servicio para un número de puerto determinado. "
+"(Contribuido por Dave Cole y Barry Warsaw.)"
 
-#: ../../whatsnew/2.4.rst:1279
+#: ../Doc/whatsnew/2.4.rst:1279
 msgid ""
 "The :func:`sys.exitfunc` function has been deprecated.  Code should be using "
 "the existing :mod:`atexit` module, which correctly handles calling multiple "
 "exit functions.  Eventually :func:`sys.exitfunc` will become a purely "
 "internal interface, accessed only by :mod:`atexit`."
 msgstr ""
-":func:`sys.exitfunc` 関数は非推奨となりました。コードは既存の :mod:`atexit` "
-"モジュールを使うべきです。これは複数の終了関数呼び出しを正しく処理出来ます。"
-"結果的には :func:`sys.exitfunc` は純粋に :mod:`atexit` のみから使われる内部イ"
-"ンターフェイスとなるでしょう。"
+"La función :func:`sys.exitfunc` ha quedado obsoleta. El código debe usar el "
+"módulo :mod:`atexit` existente, que maneja correctamente la llamada a "
+"múltiples funciones de salida. Finalmente, :func:`sys.exitfunc` se "
+"convertirá en una interfaz puramente interna, a la que solo accederá :mod:"
+"`atexit`."
 
-#: ../../whatsnew/2.4.rst:1284
+#: ../Doc/whatsnew/2.4.rst:1284
 msgid ""
 "The :mod:`tarfile` module now generates GNU-format tar files by default. "
 "(Contributed by Lars Gustäbel.)"
 msgstr ""
-":mod:`tarfile` モジュールがデフォルトで GNU フォーマットを生成するようになっ"
-"ています。 (Contributed by Lars Gustäbel.)"
+"El módulo :mod:`tarfile` ahora genera archivos tar en formato GNU de forma "
+"predeterminada. (Contribución de Lars Gustäbel.)"
 
-#: ../../whatsnew/2.4.rst:1287
+#: ../Doc/whatsnew/2.4.rst:1287
 msgid ""
 "The :mod:`threading` module now has an elegantly simple way to support "
 "thread-local data.  The module contains a :class:`local` class whose "
 "attribute values are local to different threads. ::"
 msgstr ""
-":mod:`threading` モジュールで、スレッドローカルなデータのサポートについて、品"
-"の良い単純な方法でサポート出来ました。モジュールは :class:`local` クラスを"
-"持っており、その属性値は異なるスレッドごとにローカルになります::"
+"El módulo :mod:`threading` ahora tiene una forma elegante y sencilla de "
+"admitir datos locales de subprocesos. El módulo contiene una clase :class:"
+"`local` cuyos valores de atributo son locales para diferentes subprocesos. ::"
 
-#: ../../whatsnew/2.4.rst:1297
+#: ../Doc/whatsnew/2.4.rst:1297
 msgid ""
 "Other threads can assign and retrieve their own values for the :attr:"
 "`number` and :attr:`url` attributes.  You can subclass :class:`local` to "
 "initialize attributes or to add methods. (Contributed by Jim Fulton.)"
 msgstr ""
-"この場合他のスレッドは :attr:`number` 属性、 :attr:`url` 属性に自身の値を代"
-"入、抽出出来ます。 :class:`local` クラスは属性初期化であるとかメソッドの追加"
-"のためにサブクラス化することも出来ます。 (Contributed by Jim Fulton.)"
+"Otros subprocesos pueden asignar y recuperar sus propios valores para los "
+"atributos :attr:`number` y :attr:`url`. Puede crear una subclase de :class:"
+"`local` para inicializar atributos o agregar métodos. (Contribuido por Jim "
+"Fulton.)"
 
-#: ../../whatsnew/2.4.rst:1301
+#: ../Doc/whatsnew/2.4.rst:1301
 msgid ""
 "The :mod:`timeit` module now automatically disables periodic garbage "
 "collection during the timing loop.  This change makes consecutive timings "
 "more comparable.  (Contributed by Raymond Hettinger.)"
 msgstr ""
-":mod:`timeit` モジュールはループを計測中は周期的なガーベージコレクションを自"
-"動で無効化するようになりました。この変更により、繰り返しの計測の比較がやりや"
-"すくなります。 (Contributed by Raymond Hettinger.)"
+"El módulo :mod:`timeit` ahora deshabilita automáticamente la recolección de "
+"basura periódica durante el ciclo de temporización. Este cambio hace que los "
+"tiempos consecutivos sean más comparables. (Contribuido por Raymond "
+"Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:1305
+#: ../Doc/whatsnew/2.4.rst:1305
 msgid ""
 "The :mod:`weakref` module now supports a wider variety of objects including "
 "Python functions, class instances, sets, frozensets, deques, arrays, files, "
 "sockets, and regular expression pattern objects. (Contributed by Raymond "
 "Hettinger.)"
 msgstr ""
-":mod:`weakref` モジュールがサポートするオブジェクトが非常に幅広くなりました。"
-"これには Python 関数、クラスインスタンス, set, frozenset, deque, array と正規"
-"表現パターンオブジェクトが含まれます。(Contributed by Raymond Hettinger.)"
+"El módulo :mod:`weakref` ahora admite una variedad más amplia de objetos, "
+"incluidas funciones de Python, instancias de clases, conjuntos, frozensets, "
+"deques, matrices, archivos, sockets y objetos de patrones de expresión "
+"regular. (Contribuido por Raymond Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:1310
+#: ../Doc/whatsnew/2.4.rst:1310
 msgid ""
 "The :mod:`xmlrpclib` module now supports a multi-call extension for "
 "transmitting multiple XML-RPC calls in a single HTTP operation. (Contributed "
 "by Brian Quinlan.)"
 msgstr ""
-":mod:`xmlrpclib` モジュールが、単一の HTTP 操作内で複数 XML-RPC 呼び出しを転"
-"送するためのマルチコール拡張をサポートするようになりました。 (Contributed by "
-"Brian Quinlan.)"
+"El módulo :mod:`xmlrpclib` ahora admite una extensión de múltiples llamadas "
+"para transmitir múltiples llamadas XML-RPC en una sola operación HTTP. "
+"(Contribuido por Brian Quinlan.)"
 
-#: ../../whatsnew/2.4.rst:1314
+#: ../Doc/whatsnew/2.4.rst:1314
 msgid ""
 "The :mod:`mpz`, :mod:`rotor`, and :mod:`xreadlines` modules have  been "
 "removed."
 msgstr ""
-":mod:`mpz`, :mod:`rotor`,  :mod:`xreadlines`  モジュールは削除されました。"
+"Se han eliminado los módulos :mod:`mpz`, :mod:`rotor` y :mod:`xreadlines`."
 
-#: ../../whatsnew/2.4.rst:1323
+#: ../Doc/whatsnew/2.4.rst:1323
 msgid "cookielib"
 msgstr "cookielib"
 
-#: ../../whatsnew/2.4.rst:1325
+#: ../Doc/whatsnew/2.4.rst:1325
 msgid ""
 "The :mod:`cookielib` library supports client-side handling for HTTP cookies, "
 "mirroring the :mod:`Cookie` module's server-side cookie support. Cookies are "
@@ -2045,203 +2236,220 @@ msgid ""
 "connecting to the server. As in web browsers, policy objects control whether "
 "cookies are accepted or not."
 msgstr ""
-":mod:`cookielib` ライブラリは HTTP クッキーのクライアントサイドでの処理をサ"
-"ポートするもので、サーバサイドでのクッキーサポートを模倣したものです。クッ"
-"キーはクッキー瓶 (cookie jar) に記憶されます。ライブラリはウェブサーバから提"
-"供されたクッキーをクッキー瓶に保存し、サーバに接続時に瓶からクッキーを取り出"
-"します。ウェブブラウザ内と同じく、ポリシーオブジェクトがクッキーを受け容れる"
-"かどうかを制御します。"
+"La biblioteca :mod:`cookielib` admite el manejo del lado del cliente para "
+"las cookies HTTP, reflejando el soporte de cookies del lado del servidor del "
+"módulo :mod:`Cookie`. Las cookies se almacenan en frascos de galletas; la "
+"biblioteca almacena de forma transparente las cookies ofrecidas por el "
+"servidor web en el tarro de cookies y recupera la cookie del tarro cuando se "
+"conecta al servidor. Al igual que en los navegadores web, los objetos de "
+"política controlan si las cookies se aceptan o no."
 
-#: ../../whatsnew/2.4.rst:1332
+#: ../Doc/whatsnew/2.4.rst:1332
 msgid ""
 "In order to store cookies across sessions, two implementations of cookie "
 "jars are provided: one that stores cookies in the Netscape format so "
 "applications can use the Mozilla or Lynx cookie files, and one that stores "
 "cookies in the same format as the Perl libwww library."
 msgstr ""
-"セッションを跨いでクッキーを記憶するために、2 つのクッキー瓶実装が提供されて"
-"います。一つは Netscape フォーマットでクッキーを記憶するのでアプリケーション"
-"は Mozilla か Lynx のクッキーファイルを使え、もう一つは Perl の libwww ライブ"
-"ラリと同じフォーマットでクッキーを記憶します。"
+"Para almacenar cookies entre sesiones, se proporcionan dos implementaciones "
+"de tarros de cookies: una que almacena cookies en formato Netscape para que "
+"las aplicaciones puedan usar los archivos de cookies de Mozilla o Lynx, y "
+"otra que almacena cookies en el mismo formato que la biblioteca libwww de "
+"Perl."
 
-#: ../../whatsnew/2.4.rst:1337
+#: ../Doc/whatsnew/2.4.rst:1337
 msgid ""
 ":mod:`urllib2` has been changed to interact with :mod:`cookielib`: :class:"
 "`HTTPCookieProcessor` manages a cookie jar that is used when accessing URLs."
 msgstr ""
-":mod:`urllib2` は :mod:`cookielib` と連携するように変更されました: :class:"
-"`HTTPCookieProcessor` がアクセスしている URL で使われるクッキー瓶を管理しま"
-"す。"
+":mod:`urllib2` se ha cambiado para interactuar con :mod:`cookielib`: :class:"
+"`HTTPCookieProcessor` administra un tarro de cookies que se utiliza al "
+"acceder a las URL."
 
-#: ../../whatsnew/2.4.rst:1341
+#: ../Doc/whatsnew/2.4.rst:1341
 msgid "This module was contributed by John J. Lee."
-msgstr "このモジュールは John J. Lee により寄稿されました。"
+msgstr "Este módulo fue una contribución de John J. Lee."
 
-#: ../../whatsnew/2.4.rst:1347
+#: ../Doc/whatsnew/2.4.rst:1347
 msgid "doctest"
 msgstr "doctest"
 
-#: ../../whatsnew/2.4.rst:1349
+#: ../Doc/whatsnew/2.4.rst:1349
 msgid ""
 "The :mod:`doctest` module underwent considerable refactoring thanks to "
 "Edward Loper and Tim Peters.  Testing can still be as simple as running :"
 "func:`doctest.testmod`, but the refactorings allow customizing the module's "
 "operation in various ways"
 msgstr ""
-"Edward Loper と Tim Peters のおかげにより、 :mod:`doctest` モジュールに注目に"
-"値するリファクタリングが入りました。テストはこれまで通り単純に :func:"
-"`doctest.testmod` を実行するすることで行えますが、リファクタリングはモジュー"
-"ルの操作をカスタマイズする色々な手段を提供してくれます。"
+"El módulo :mod:`doctest` se sometió a una refactorización considerable "
+"gracias a Edward Loper y Tim Peters. Las pruebas pueden ser tan simples como "
+"ejecutar :func:`doctest.testmod`, pero las refactorizaciones permiten "
+"personalizar el funcionamiento del módulo de varias formas."
 
-#: ../../whatsnew/2.4.rst:1354
+#: ../Doc/whatsnew/2.4.rst:1354
 msgid ""
 "The new :class:`DocTestFinder` class extracts the tests from a given  "
 "object's docstrings::"
 msgstr ""
-"新規クラス :class:`DocTestFinder` は指定したオブジェクトの docstring からテス"
-"トを抽出します::"
+"La nueva clase :class:`DocTestFinder` extrae las pruebas de las cadenas de "
+"documentos de un objeto dado:"
 
-#: ../../whatsnew/2.4.rst:1370
+#: ../Doc/whatsnew/2.4.rst:1370
 msgid ""
 "The new :class:`DocTestRunner` class then runs individual tests and can "
 "produce a summary of the results::"
 msgstr ""
-"新規クラス :class:`DocTestRunner` はテストを個々に実行し、結果の要約を生成出"
-"来ます::"
+"La nueva clase :class:`DocTestRunner` luego ejecuta pruebas individuales y "
+"puede producir un resumen de los resultados:"
 
-#: ../../whatsnew/2.4.rst:1379
+#: ../Doc/whatsnew/2.4.rst:1379
 msgid "The above example produces the following output::"
-msgstr "上の例はこのような出力を生成します::"
+msgstr "El ejemplo anterior produce la siguiente salida:"
 
-#: ../../whatsnew/2.4.rst:1387
+#: ../Doc/whatsnew/2.4.rst:1387
 msgid ""
 ":class:`DocTestRunner` uses an instance of the :class:`OutputChecker` class "
 "to compare the expected output with the actual output.  This class takes a "
 "number of different flags that customize its behaviour; ambitious users can "
 "also write a completely new subclass of :class:`OutputChecker`."
 msgstr ""
-":class:`DocTestRunner` は実際の出力と結果の期待値の比較に、 :class:"
-"`OutputChecker` のインスタンスを使います。このクラスはその振る舞いをカスタマ"
-"イズする色々なフラグを取ります。意欲的なユーザであれば :class:"
-"`OutputChecker` の完全な新しいサブクラスも書けます。"
+":class:`DocTestRunner` usa una instancia de la clase :class:`OutputChecker` "
+"para comparar la salida esperada con la salida real. Esta clase toma varios "
+"indicadores diferentes que personalizan su comportamiento; Los usuarios "
+"ambiciosos también pueden escribir una subclase completamente nueva de :"
+"class:`OutputChecker`."
 
-#: ../../whatsnew/2.4.rst:1392
+#: ../Doc/whatsnew/2.4.rst:1392
 msgid ""
 "The default output checker provides a number of handy features. For example, "
 "with the :const:`doctest.ELLIPSIS` option flag, an ellipsis (``...``) in the "
 "expected output matches any substring,  making it easier to accommodate "
 "outputs that vary in minor ways::"
 msgstr ""
-"デフォルトの出力チェッカーは多くのお手軽機能を持っています。例えば :const:"
-"`doctest.ELLIPSIS` オプションフラグは、出力の期待値内での省略記号 (``...``) "
-"と任意文字列を一致するとみなし、瑣末な部分が変化するような出力に簡単に適合す"
-"るように出来ます::"
+"El comprobador de salida predeterminado proporciona una serie de funciones "
+"útiles. Por ejemplo, con el indicador de opción :const:`doctest.ELLIPSIS`, "
+"una elipsis (``...``) en la salida esperada coincide con cualquier "
+"subcadena, lo que facilita la adaptación de salidas que varían en formas "
+"menores:"
 
-#: ../../whatsnew/2.4.rst:1403
+#: ../Doc/whatsnew/2.4.rst:1403
 msgid "Another special string, ``<BLANKLINE>``, matches a blank line::"
-msgstr "もう一つの特殊文字列 ``<BLANKLINE>`` は空行に合致します::"
+msgstr ""
+"Otra cadena especial, ``<BLANKLINE>``, coincide con una línea en blanco:"
 
-#: ../../whatsnew/2.4.rst:1411
+#: ../Doc/whatsnew/2.4.rst:1411
 msgid ""
 "Another new capability is producing a diff-style display of the output by "
 "specifying the :const:`doctest.REPORT_UDIFF` (unified diffs), :const:"
 "`doctest.REPORT_CDIFF` (context diffs), or :const:`doctest.REPORT_NDIFF` "
 "(delta-style) option flags.  For example::"
 msgstr ""
-"もう一つの新機能は出力の diff スタイル出力で、オプションフラグに :const:"
-"`doctest.REPORT_UDIFF` (unified diffs), :const:`doctest.REPORT_CDIFF` "
-"(context diffs), :const:`doctest.REPORT_NDIFF` (delta-style) を指定することで"
-"利用出来ます。例えば以下があるとして::"
+"Otra nueva capacidad es producir una visualización de estilo diff de la "
+"salida especificando :const:`doctest.REPORT_UDIFF` (diferencias "
+"unificadas), :const:`doctest.REPORT_CDIFF` (diferencias de contexto), o :"
+"const:`doctest.REPORT_NDIFF` Indicadores de opción (estilo delta). Por "
+"ejemplo::"
 
-#: ../../whatsnew/2.4.rst:1427
+#: ../Doc/whatsnew/2.4.rst:1427
 msgid ""
 "Running the above function's tests with :const:`doctest.REPORT_UDIFF` "
 "specified, you get the following output:"
 msgstr ""
+"Al ejecutar las pruebas de la función anterior con :const:`doctest."
+"REPORT_UDIFF` especificado, obtiene el siguiente resultado:"
 
-#: ../../whatsnew/2.4.rst:1448
+#: ../Doc/whatsnew/2.4.rst:1448
 msgid "Build and C API Changes"
-msgstr "ビルドならびに C API の変更"
+msgstr "Cambios en la API de Build y C"
 
-#: ../../whatsnew/2.4.rst:1450
+#: ../Doc/whatsnew/2.4.rst:1450
 msgid "Some of the changes to Python's build process and to the C API are:"
-msgstr "Python のビルド過程と C API の変更は以下の通りです:"
+msgstr ""
+"Algunos de los cambios en el proceso de compilación de Python y en la API de "
+"C son:"
 
-#: ../../whatsnew/2.4.rst:1452
+#: ../Doc/whatsnew/2.4.rst:1452
 msgid ""
 "Three new convenience macros were added for common return values from "
 "extension functions: :c:macro:`Py_RETURN_NONE`, :c:macro:`Py_RETURN_TRUE`, "
 "and :c:macro:`Py_RETURN_FALSE`. (Contributed by Brett Cannon.)"
 msgstr ""
-"拡張関数からの戻り値として一般的に使うための 3 つの便利なマクロが追加されてい"
-"ます: :c:macro:`Py_RETURN_NONE`, :c:macro:`Py_RETURN_TRUE`, :c:macro:"
-"`Py_RETURN_FALSE` (Contributed by Brett Cannon.)"
+"Se agregaron tres nuevas macros de conveniencia para valores de retorno "
+"comunes de funciones de extensión: :c:macro:`Py_RETURN_NONE`, :c:macro:"
+"`Py_RETURN_TRUE`, y :c:macro:`Py_RETURN_FALSE`. (Contribuido por Brett "
+"Cannon.)"
 
-#: ../../whatsnew/2.4.rst:1456
+#: ../Doc/whatsnew/2.4.rst:1456
 msgid ""
 "Another new macro, :c:macro:`Py_CLEAR`,  decreases the reference count of "
 "*obj* and sets *obj* to the null pointer.  (Contributed by Jim Fulton.)"
 msgstr ""
+"Otra macro nueva, :c:macro:`Py_CLEAR`, reduce el recuento de referencias de "
+"*obj* y establece *obj* en el puntero nulo. (Aportado por Jim Fulton.)"
 
-#: ../../whatsnew/2.4.rst:1459
+#: ../Doc/whatsnew/2.4.rst:1459
 msgid ""
 "A new function, ``PyTuple_Pack(N, obj1, obj2, ..., objN)``, constructs "
 "tuples from a variable length argument list of Python objects.  (Contributed "
 "by Raymond Hettinger.)"
 msgstr ""
-"新規関数 ``PyTuple_Pack(N, obj1, obj2, ..., objN)`` は Python オブジェクトの"
-"可変長引数リストからタプルを構築します。 (Contributed by Raymond Hettinger.)"
+"Una nueva función, ``PyTuple_Pack(N, obj1, obj2, ..., objN)``, construye "
+"tuplas a partir de una lista de argumentos de longitud variable de objetos "
+"Python. (Contribuido por Raymond Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:1463
+#: ../Doc/whatsnew/2.4.rst:1463
 msgid ""
 "A new function, ``PyDict_Contains(d, k)``, implements fast dictionary "
 "lookups without masking exceptions raised during the look-up process. "
 "(Contributed by Raymond Hettinger.)"
 msgstr ""
-"新規関数 ``PyDict_Contains(d, k)`` は、処理内で起こる例外のマスキングなしでの"
-"高速なルックアップを実装しています。 (Contributed by Raymond Hettinger.)"
+"Una nueva función, ``PyDict_Contains(d, k)``, implementa búsquedas rápidas "
+"de diccionarios sin enmascarar las excepciones que surgen durante el proceso "
+"de búsqueda. (Contribuido por Raymond Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:1467
+#: ../Doc/whatsnew/2.4.rst:1467
 msgid ""
 "The :c:expr:`Py_IS_NAN(X)` macro returns 1 if  its float or double argument "
 "*X* is a NaN.   (Contributed by Tim Peters.)"
 msgstr ""
+"La macro :c:expr:`Py_IS_NAN(X)` retorna 1 si su argumento flotante o doble "
+"*X* es un NaN. (Aportado por Tim Peters.)"
 
-#: ../../whatsnew/2.4.rst:1470
+#: ../Doc/whatsnew/2.4.rst:1470
 msgid ""
 "C code can avoid unnecessary locking by using the new :c:func:"
 "`PyEval_ThreadsInitialized` function to tell  if any thread operations have "
 "been performed.  If this function  returns false, no lock operations are "
 "needed. (Contributed by Nick Coghlan.)"
 msgstr ""
-"C コードは新たに追加された :c:func:`PyEval_ThreadsInitialized` 関数を呼び出す"
-"ことで、必要のないロックを避けることが出来ます。これは任意のスレッド操作が実"
-"行されているかどうかを教えてくれます。この関数が偽を返すなら、ロック操作は必"
-"要ありません。 (Contributed by Nick Coghlan.)"
+"El código C puede evitar el bloqueo innecesario mediante el uso de la nueva "
+"función :c:func:`PyEval_ThreadsInitialized` para saber si se ha realizado "
+"alguna operación de subproceso. Si esta función devuelve falso, no se "
+"necesitan operaciones de bloqueo. (Contribuido por Nick Coghlan.)"
 
-#: ../../whatsnew/2.4.rst:1475
+#: ../Doc/whatsnew/2.4.rst:1475
 msgid ""
 "A new function, :c:func:`PyArg_VaParseTupleAndKeywords`, is the same as :c:"
 "func:`PyArg_ParseTupleAndKeywords` but takes a  :c:type:`va_list` instead of "
 "a number of arguments. (Contributed by Greg Chapman.)"
 msgstr ""
-"新規関数 :c:func:`PyArg_VaParseTupleAndKeywords` は :c:func:"
-"`PyArg_ParseTupleAndKeywords` と同じですが、たくさんの引数の代わりに :c:type:"
-"`va_list` を取ることだけが違います。(Contributed by Greg Chapman.)"
+"Una nueva función, :c:func:`PyArg_VaParseTupleAndKeywords`, es la misma que :"
+"c:func:`PyArg_ParseTupleAndKeywords` pero toma un :c:type:`va_list` en lugar "
+"de varios argumentos. (Contribuido por Greg Chapman.)"
 
-#: ../../whatsnew/2.4.rst:1479
+#: ../Doc/whatsnew/2.4.rst:1479
 msgid ""
 "A new method flag, :const:`METH_COEXISTS`, allows a function defined in "
 "slots to co-exist with a :c:type:`PyCFunction` having the same name.  This "
 "can halve the access time for a method such as :meth:`set.__contains__`.  "
 "(Contributed by Raymond Hettinger.)"
 msgstr ""
-"新たなメソッドフラグ :const:`METH_COEXISTS` は、同じ名前を持っている :c:type:"
-"`PyCFunction` と共存する、スロット内で定義される関数を許します。これは :meth:"
-"`set.__contains__` のようなメソッドへのアクセス時間を半分にします。 "
-"(Contributed by Raymond Hettinger.)"
+"Un nuevo indicador de método, :const:`METH_COEXISTS`, permite que una "
+"función definida en ranuras coexista con un :c:type:`PyCFunction` que tiene "
+"el mismo nombre. Esto puede reducir a la mitad el tiempo de acceso para un "
+"método como :meth:`set.__contains__`. (Contribuido por Raymond Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:1484
+#: ../Doc/whatsnew/2.4.rst:1484
 msgid ""
 "Python can now be built with additional profiling for the interpreter "
 "itself, intended as an aid to people developing the Python core.  Providing :"
@@ -2253,136 +2461,154 @@ msgid ""
 "that processor architecture doesn't call that register \"the TSC "
 "register\".  (Contributed by Jeremy Hylton.)"
 msgstr ""
+"Python ahora se puede construir con perfiles adicionales para el intérprete "
+"en sí, con la intención de ayudar a las personas que desarrollan el núcleo "
+"de Python. Proporcionar :option:`! - enable-profiling` al :program:"
+"`configure` script le permitirá perfilar el intérprete con :program:`gprof`, "
+"y proporcionar el :option:`! - with-tsc` switch permite la creación de "
+"perfiles utilizando el registro de contador de marcas de tiempo del Pentium. "
+"Tenga en cuenta que el conmutador :option:`! - with-tsc` tiene un nombre "
+"ligeramente incorrecto, porque la función de creación de perfiles también "
+"funciona en la plataforma PowerPC, aunque la arquitectura del procesador no "
+"llama a ese registro\" el registro TSC \". (Contribuido por Jeremy Hylton.)"
 
-#: ../../whatsnew/2.4.rst:1494
+#: ../Doc/whatsnew/2.4.rst:1494
 msgid ""
 "The :c:type:`tracebackobject` type has been renamed to :c:type:"
 "`PyTracebackObject`."
 msgstr ""
-":c:type:`tracebackobject` 型は :c:type:`PyTracebackObject` にリネームされまし"
-"た。"
+"El tipo :c:type:`tracebackobject` ha sido renombrado a :c:type:"
+"`PyTracebackObject`."
 
-#: ../../whatsnew/2.4.rst:1501
+#: ../Doc/whatsnew/2.4.rst:1501
 msgid "Port-Specific Changes"
-msgstr "ポート特有の変更"
+msgstr "Cambios específicos del puerto"
 
-#: ../../whatsnew/2.4.rst:1503
+#: ../Doc/whatsnew/2.4.rst:1503
 msgid ""
 "The Windows port now builds under MSVC++ 7.1 as well as version 6. "
 "(Contributed by Martin von Löwis.)"
 msgstr ""
-"Windows ポートは MSVC++ 6 と 7.1 でビルド出来ます。 (Contributed by Martin "
-"von Löwis.)"
+"El puerto de Windows ahora se construye bajo MSVC ++ 7.1 y también con la "
+"versión 6. (Contribuido por Martin von Löwis)."
 
-#: ../../whatsnew/2.4.rst:1510
+#: ../Doc/whatsnew/2.4.rst:1510
 msgid "Porting to Python 2.4"
-msgstr "Python 2.4 への移植"
+msgstr "Portar a Python 2.4"
 
-#: ../../whatsnew/2.4.rst:1512
+#: ../Doc/whatsnew/2.4.rst:1512
 msgid ""
 "This section lists previously described changes that may require changes to "
 "your code:"
 msgstr ""
-"このセクションでは前述の変更により必要となるかもしれないコードの変更を列挙し"
-"ます:"
+"Esta sección enumera los cambios descritos anteriormente que pueden requerir "
+"cambios en su código:"
 
-#: ../../whatsnew/2.4.rst:1515
+#: ../Doc/whatsnew/2.4.rst:1515
 msgid ""
 "Left shifts and hexadecimal/octal constants that are too  large no longer "
 "trigger a :exc:`FutureWarning` and return  a value limited to 32 or 64 bits; "
 "instead they return a long integer."
 msgstr ""
-"大き過ぎる値を持つ左シフトと 16 進/ 8 進定数が :exc:`FutureWarning` を引き起"
-"こした上で 32 ビットまたは 64 ビットに制限される、という振る舞いはもうしませ"
-"ん。代わりに長整数を返します。"
+"Los desplazamientos a la izquierda y las constantes hexadecimales / octales "
+"que son demasiado grandes ya no activan un :exc:`FutureWarning` y devuelven "
+"un valor limitado a 32 o 64 bits; en su lugar, devuelven un entero largo."
 
-#: ../../whatsnew/2.4.rst:1522
+#: ../Doc/whatsnew/2.4.rst:1522
 msgid ""
 "The :func:`zip` built-in function and :func:`itertools.izip` now return  an "
 "empty list instead of raising a :exc:`TypeError` exception if called with no "
 "arguments."
 msgstr ""
-"ビルトイン関数の :func:`zip` と :func:`itertools.izip` が引数なしで呼ばれた場"
-"合に、 :exc:`TypeError` 例外を起こすのではなく空リストを返すようになりまし"
-"た。"
+"La función de conjunto integrado :func:`zip` y la :func:`itertools.izip` "
+"ahora retornan una lista hacia en vez de lanzar una excepción de tipo :exc:"
+"`TypeError` si son llamados sin argumentos."
 
-#: ../../whatsnew/2.4.rst:1526
+#: ../Doc/whatsnew/2.4.rst:1526
 msgid ""
 "You can no longer compare the :class:`date` and :class:`~datetime.datetime` "
 "instances provided by the :mod:`datetime` module.  Two  instances of "
 "different classes will now always be unequal, and  relative comparisons "
 "(``<``, ``>``) will raise a :exc:`TypeError`."
 msgstr ""
+"Ya no puede comparar las instancias :class:`date` y :class:`~datetime."
+"datetime` proporcionadas por el módulo :mod:`datetime`. Dos instancias de "
+"clases diferentes ahora siempre serán desiguales, y las comparaciones "
+"relativas (``<``, ``>``) lanzarán un :exc:`TypeError`."
 
-#: ../../whatsnew/2.4.rst:1531
+#: ../Doc/whatsnew/2.4.rst:1531
 msgid ""
 ":func:`dircache.listdir` now passes exceptions to the caller instead of "
 "returning empty lists."
 msgstr ""
-":func:`dircache.listdir` は空リストを返す代わりに呼び出し元に例外を投げます。"
+":func:`dircache.listdir` ahora pasa excepciones a la persona que llama en "
+"lugar de devolver listas vacías."
 
-#: ../../whatsnew/2.4.rst:1534
+#: ../Doc/whatsnew/2.4.rst:1534
 msgid ""
 ":func:`LexicalHandler.startDTD` used to receive the public and system IDs in "
 "the wrong order.  This has been corrected; applications relying on the wrong "
 "order need to be fixed."
 msgstr ""
-":func:`LexicalHandler.startDTD` はパブリックでシステムの ID を間違った順序で"
-"受け取っていました。これは修正されました; この間違った順序に依存したアプリ"
-"ケーションは修正しなければなりません。"
+":func:`LexicalHandler.startDTD` solía recibir los identificadores públicos y "
+"del sistema en el orden incorrecto. Esto ha sido corregido; las aplicaciones "
+"que se basan en el orden incorrecto deben corregirse."
 
-#: ../../whatsnew/2.4.rst:1538
+#: ../Doc/whatsnew/2.4.rst:1538
 msgid ""
 ":func:`fcntl.ioctl` now warns if the *mutate*  argument is omitted and "
 "relevant."
 msgstr ""
-":func:`fcntl.ioctl` は *mutate_flag* 引数が省略されて問題に関係がある場合は警"
-"告を出します。"
+":func:`fcntl.ioctl` ahora advierte si el argumento *mutate* se omite y es "
+"relevante."
 
-#: ../../whatsnew/2.4.rst:1541
+#: ../Doc/whatsnew/2.4.rst:1541
 msgid ""
 "The :mod:`tarfile` module now generates GNU-format tar files by default."
 msgstr ""
-":mod:`tarfile` モジュールがデフォルトで GNU フォーマットを生成するようになっ"
-"ています。"
+"El módulo :mod:`tarfile` ahora genera archivos de GNU tar-formato por "
+"defecto."
 
-#: ../../whatsnew/2.4.rst:1543
+#: ../Doc/whatsnew/2.4.rst:1543
 msgid ""
 "Encountering a failure while importing a module no longer leaves a partially "
 "initialized module object in ``sys.modules``."
 msgstr ""
+"Encontrar un error al importar un módulo ya no deja un objeto de módulo "
+"parcialmente inicializado en ``sys.modules``."
 
-#: ../../whatsnew/2.4.rst:1546
+#: ../Doc/whatsnew/2.4.rst:1546
 msgid ""
 ":const:`None` is now a constant; code that binds a new value to  the name "
 "``None`` is now a syntax error."
 msgstr ""
-":const:`None` が定数になっています。 ``None`` という名前に新しい値を割り当て"
-"ようとするコードは、今では構文エラーになります。"
+":const:`None` ahora es una constante; El código que une un nuevo valor al "
+"nombre ``None`` ahora es un error de sintaxis."
 
-#: ../../whatsnew/2.4.rst:1549
+#: ../Doc/whatsnew/2.4.rst:1549
 msgid ""
 "The :func:`signals.signal` function now raises a :exc:`RuntimeError` "
 "exception for certain illegal values; previously these errors would pass "
 "silently.  For example, you can no longer set a handler on the :const:"
 "`SIGKILL` signal."
 msgstr ""
-":func:`signals.signal` 関数は、ある種の不正な値では :exc:`RuntimeError` を投"
-"げるようになっています。以前はこれらエラーは黙って通していました。例えばも"
-"う :const:`SIGKILL` へはハンドラは渡せません。"
+"La función :func:`signals.signal` ahora genera una excepción :exc:"
+"`RuntimeError` para ciertos valores ilegales; anteriormente estos errores "
+"pasaban silenciosamente. Por ejemplo, ya no puede configurar un controlador "
+"en la señal :const:`SIGKILL`."
 
-#: ../../whatsnew/2.4.rst:1559
+#: ../Doc/whatsnew/2.4.rst:1559
 msgid "Acknowledgements"
-msgstr "謝辞"
+msgstr "Agradecimientos"
 
-#: ../../whatsnew/2.4.rst:1561
+#: ../Doc/whatsnew/2.4.rst:1561
 msgid ""
 "The author would like to thank the following people for offering "
 "suggestions, corrections and assistance with various drafts of this article: "
 "Koray Can, Hye-Shik Chang, Michael Dyck, Raymond Hettinger, Brian Hurt, "
 "Hamish Lawson, Fredrik Lundh, Sean Reifschneider, Sadruddin Rejeb."
 msgstr ""
-"著者は提案の申し出や修正、様々なこの記事の草稿の助けをしてくれた以下の人々に"
-"感謝します: Koray Can, Hye-Shik Chang, Michael Dyck, Raymond Hettinger, "
-"Brian Hurt, Hamish Lawson, Fredrik Lundh, Sean Reifschneider, Sadruddin "
-"Rejeb."
+"El autor desea agradecer a las siguientes personas por ofrecer sugerencias, "
+"correcciones y ayuda con varios borradores de este artículo: Koray Can, Hye-"
+"Shik Chang, Michael Dyck, Raymond Hettinger, Brian Hurt, Hamish Lawson, "
+"Fredrik Lundh, Sean Reifschneider, Sadruddin Rejeb."

@@ -1,47 +1,44 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-# mollinaca, 2021
-# 菊池 健志, 2023
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-17 14:14+0000\n"
-"PO-Revision-Date: 2021-06-28 00:52+0000\n"
-"Last-Translator: 菊池 健志, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-10-31 21:27-0300\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.2\n"
 
-#: ../../faq/general.rst:5
+#: ../Doc/faq/general.rst:5
 msgid "General Python FAQ"
-msgstr "一般 Python FAQ"
+msgstr "Preguntas frecuentes generales sobre Python"
 
-#: ../../faq/general.rst:8
+#: ../Doc/faq/general.rst:8
 msgid "Contents"
-msgstr "内容"
+msgstr "Contenido"
 
-#: ../../faq/general.rst:13
+#: ../Doc/faq/general.rst:13
 msgid "General Information"
-msgstr "一般情報"
+msgstr "Información general"
 
-#: ../../faq/general.rst:16
+#: ../Doc/faq/general.rst:16
 msgid "What is Python?"
-msgstr "Python とは何ですか？"
+msgstr "¿Qué es Python?"
 
-#: ../../faq/general.rst:18
+#: ../Doc/faq/general.rst:18
 msgid ""
 "Python is an interpreted, interactive, object-oriented programming "
 "language.  It incorporates modules, exceptions, dynamic typing, very high "
@@ -54,33 +51,30 @@ msgid ""
 "Finally, Python is portable: it runs on many Unix variants including Linux "
 "and macOS, and on Windows."
 msgstr ""
-"Python は、インタプリタ形式の、対話的な、オブジェクト指向プログラミング言語で"
-"す。この言語には、モジュール、例外、動的な型付け、超高水準の動的なデータ型、"
-"およびクラスが取り入れられています。\n"
-"Pythonは、オブジェクト指向プログラミングを越えて、手続き型プログラミングや関"
-"数型プログラミングなど複数のプログラミングパラダイムをサポートしています。\n"
-"Python は驚くべきパワーと非常に分かりやすい文法を持ち合わせています。そして、"
-"多くのシステムコールやライブラリへだけでなく、様々なウィンドウシステムへのイ"
-"ンターフェースがあり、C や C++ で拡張することもできます。また、プログラム可能"
-"なインターフェースが必要なアプリケーションのための拡張言語としても利用できま"
-"す。最後に、Python はポータブルです。Linux や macOS を含む多くの Unix の派生"
-"システムで動き、Windows でも動きます。"
+"Python es un lenguaje interpretado, interactivo y orientado a objetos. "
+"Incorpora módulos, excepciones, tipado dinámico, tipos de datos de muy alto "
+"nivel y clases. Python combina un poder destacado con una sintaxis muy "
+"clara. Tiene interfaces a muchas llamadas de sistema y bibliotecas, así como "
+"a varios sistemas de ventana, y es extensible en C o C++. También es usable "
+"como un lenguaje de extensión para aplicaciones que necesitan una interfaz "
+"programable. Por último, Python es portable: corre en muchas variantes de "
+"Unix, en Mac y en Windows 2000 y posteriores."
 
-#: ../../faq/general.rst:28
+#: ../Doc/faq/general.rst:28
 msgid ""
 "To find out more, start with :ref:`tutorial-index`.  The `Beginner's Guide "
 "to Python <https://wiki.python.org/moin/BeginnersGuide>`_ links to other "
 "introductory tutorials and resources for learning Python."
 msgstr ""
-"さらに知りたければ、 :ref:`tutorial-index` から始めましょう。他にも、 "
-"`Beginner's Guide to Python <https://wiki.python.org/moin/BeginnersGuide>`_ "
-"から、Python 学習のための入門用チュートリアルやリソースを参照できます。"
+"Para saber más, comienza con :ref:`tutorial-index`. La `Beginner's Guide to "
+"Python <https://wiki.python.org/moin/BeginnersGuide>`_ vincula a otros "
+"recursos y tutoriales introductorios para aprender Python."
 
-#: ../../faq/general.rst:34
+#: ../Doc/faq/general.rst:34
 msgid "What is the Python Software Foundation?"
-msgstr "Python Software Foundation とは何ですか？"
+msgstr "¿Que es la *Python Software Foundation*?"
 
-#: ../../faq/general.rst:36
+#: ../Doc/faq/general.rst:36
 msgid ""
 "The Python Software Foundation is an independent non-profit organization "
 "that holds the copyright on Python versions 2.1 and newer.  The PSF's "
@@ -88,26 +82,27 @@ msgid ""
 "programming language and to publicize the use of Python.  The PSF's home "
 "page is at https://www.python.org/psf/."
 msgstr ""
-"Python Software Foundation は、Python バージョン 2.1 以降の著作権を保持する独"
-"立の非営利組織です。PSF の任務は、Python プログラミング言語に関するオープン"
-"ソース技術を進め、Python の使用を広めることです。PSF のホームページが "
-"https://www.python.org/psf/ にあります。"
+"La *Python Software Foundation* es una organización independiente sin fines "
+"de lucro que posee los derechos sobre Python desde la versión 2.1 en "
+"adelante. La misión de la PSF es hacer avanzar la tecnología *open source* "
+"relacionada al lenguaje de programación Python y publicitar su uso. El sitio "
+"web de la PSF es https://www.python.org/psf/."
 
-#: ../../faq/general.rst:42
+#: ../Doc/faq/general.rst:42
 msgid ""
 "Donations to the PSF are tax-exempt in the US.  If you use Python and find "
 "it helpful, please contribute via `the PSF donation page <https://www.python."
 "org/psf/donations/>`_."
 msgstr ""
-"PSF への寄付は米国で免税されています。Python を利用して役立ったと感じたら、"
-"`the PSF donation page <https://www.python.org/psf/donations/>`_ で貢献をお願"
-"いします。"
+"Las donaciones a la PSF están exentas de impuestos en Estados Unidos. Si "
+"usas Python y lo encuentras útil, por favor contribuye a través de la "
+"`página de donaciones de la PSF <https://www.python.org/psf/donations/>`_."
 
-#: ../../faq/general.rst:48
+#: ../Doc/faq/general.rst:48
 msgid "Are there copyright restrictions on the use of Python?"
-msgstr "Python を使うのに著作権の制限はありますか？"
+msgstr "¿Hay restricciones de *copyright* sobre el uso de Python?"
 
-#: ../../faq/general.rst:50
+#: ../Doc/faq/general.rst:50
 msgid ""
 "You can do anything you want with the source, as long as you leave the "
 "copyrights in and display those copyrights in any documentation about Python "
@@ -117,44 +112,46 @@ msgid ""
 "some form.  We would still like to know about all commercial use of Python, "
 "of course."
 msgstr ""
-"あなたが作成する Python に関するドキュメントのすべてに著作権を残し、それらの"
-"著作権を表示する限り、ソースコードをどのように扱ってもかまいません。この著作"
-"権規則を尊重する限り、商用に Python を利用しても、ソースあるいはバイナリ形式"
-"で(変更の有無にかかわらず) Python のコピーを販売しても、Python が何らかの形で"
-"組み込まれた製品を販売してかまいません。もちろん、Python のあらゆる商業用途に"
-"ついても同様です。"
+"Puedes hacer cualquier cosa que quieras con el código fuente mientras "
+"mantengas y muestres los mensajes de derechos de autor en cualquier "
+"documentación sobre Python que produzcas. Si respetas las reglas de derechos "
+"de autor, está permitido usar Python para fines comerciales, vender copias "
+"de Python en forma de código fuente o binarios (modificados o no), o vender "
+"productos que incorporen Python de alguna manera. De cualquier manera nos "
+"gustaría saber de todos los usos comerciales de Python, por supuesto."
 
-#: ../../faq/general.rst:57
+#: ../Doc/faq/general.rst:57
 msgid ""
 "See `the PSF license page <https://www.python.org/psf/license/>`_ to find "
 "further explanations and a link to the full text of the license."
 msgstr ""
-"ライセンスのより詳しい説明と全文へのリンクは `the PSF license page <https://"
-"www.python.org/psf/license/>`_ を参照してください。"
+"Mira la página `PSF license <https://www.python.org/psf/license/>`_ para "
+"encontrar explicaciones más detalladas y un vínculo al texto completo de la "
+"licencia."
 
-#: ../../faq/general.rst:60
+#: ../Doc/faq/general.rst:60
 msgid ""
 "The Python logo is trademarked, and in certain cases permission is required "
 "to use it.  Consult `the Trademark Usage Policy <https://www.python.org/psf/"
 "trademarks/>`__ for more information."
 msgstr ""
-"Python のロゴは商標登録されていて、使用に許可が必要な場合があります。詳しい情"
-"報は `the Trademark Usage Policy <https://www.python.org/psf/trademarks/>`__ "
-"を参照してください。"
+"El logo de Python tiene derechos comerciales (*trademarked*) y en ciertos "
+"casos se requiere un permiso de uso. Consulta la `Trademark Usage Policy "
+"<https://www.python.org/psf/trademarks/>`__ para más información."
 
-#: ../../faq/general.rst:66
+#: ../Doc/faq/general.rst:66
 msgid "Why was Python created in the first place?"
-msgstr "そもそも Python は何故創られたのですか？"
+msgstr "¿Por qué se creó Python en primer lugar?"
 
-#: ../../faq/general.rst:68
+#: ../Doc/faq/general.rst:68
 msgid ""
 "Here's a *very* brief summary of what started it all, written by Guido van "
 "Rossum:"
 msgstr ""
-"Guido van Rossum によると、すべての始まりについての *非常に* 簡潔な概要は以下"
-"のとおりです:"
+"Aquí hay un *muy* breve resumen sobre qué fue lo que comenzó todo, escrita "
+"por Guido van Rossum:"
 
-#: ../../faq/general.rst:71
+#: ../Doc/faq/general.rst:71
 msgid ""
 "I had extensive experience with implementing an interpreted language in the "
 "ABC group at CWI, and from working with this group I had learned a lot about "
@@ -162,12 +159,14 @@ msgid ""
 "use of indentation for statement grouping and the inclusion of very-high-"
 "level data types (although the details are all different in Python)."
 msgstr ""
-"私は CWI の ABC グループでインタプリタ言語を実装する幅広い経験をしていて、そ"
-"こで共に働くことで言語設計に関して大いに学びました。これは文のグループ化にイ"
-"ンデントを使用することや超高水準のデータ型の包含など、(詳細は Python とは全く"
-"異なりますが) Python の多くの特徴のもととなっています。"
+"Tenía vasta experiencia implementando un lenguaje interpretado en el grupo "
+"ABC en CWI y trabajando con este grupo había aprendido mucho sobre diseño de "
+"lenguajes. Este es el origen de muchas características de Python, incluyendo "
+"el uso de sangría para el agrupamiento de sentencias y la inclusión de tipos "
+"de datos de muy alto nivel (aunque los detalles son todos diferentes en "
+"Python)."
 
-#: ../../faq/general.rst:78
+#: ../Doc/faq/general.rst:78
 msgid ""
 "I had a number of gripes about the ABC language, but also liked many of its "
 "features.  It was impossible to extend the ABC language (or its "
@@ -177,14 +176,15 @@ msgid ""
 "Modula-3 is the origin of the syntax and semantics used for exceptions, and "
 "some other Python features."
 msgstr ""
-"私は ABC 言語に対して多くの不満を持っていましたが、同時に特徴の多くが好きでも"
-"ありました。ABC 言語 (やその実装)を拡張して私の不満を解消することは不可能でし"
-"た (実際、拡張性の欠如は大きな問題だったのです)。私は Modula-2+ を使用するこ"
-"とでいくらかの経験を積み、Modula-3 のデザイナーと話して Modula-3 のレポートを"
-"読みました。Modula-3 は例外処理に使う構文や語義、その他いくつかの Python の特"
-"徴の起源です。"
+"Tenía algunos resquemores sobre el lenguaje ABC pero también me gustaban "
+"muchas de sus características. Era imposible extenderlo (al lenguaje o sus "
+"implementaciones) para remediar mis quejas -- de hecho, la ausencia de "
+"extensibilidad fue uno de los mayores problemas. Contaba con alguna "
+"experiencia usando Modula-2+ y conversé con los diseñadores de Modula-3 y "
+"leí su reporte. Modula-3 es el origen de la sintaxis y semántica que usé "
+"para las excepciones y otras características de Python."
 
-#: ../../faq/general.rst:86
+#: ../Doc/faq/general.rst:86
 msgid ""
 "I was working in the Amoeba distributed operating system group at CWI.  We "
 "needed a better way to do system administration than by writing either C "
@@ -193,24 +193,28 @@ msgid ""
 "experience with error handling in Amoeba made me acutely aware of the "
 "importance of exceptions as a programming language feature."
 msgstr ""
-"私は CWI で Amoeba 分散オペレーティングシステムのグループで働いていました。"
-"Amoeba のシステムコールインターフェースには Bourne シェルからアクセスしにく"
-"かったので、C プログラムや Bourne シェルスクリプトを書くよりも良いシステム管"
-"理の方法が必要でした。Amoeba のエラー処理の経験から、プログラミング言語の機能"
-"としての例外の重要さを強く意識するようになりました。"
+"Estaba trabajando en Grupo del sistema operativo distribuido Amoeba en CWI. "
+"Necesitábamos una mejor manera de hacer administración de sistemas que "
+"escribir programas en C o *scripts* de *Bourne shell*, ya que Amoeba tenía "
+"sus propia interfaz de llamadas a sistema que no era fácilmente accesible "
+"desde *Bourne shell*. Mi experiencia con el manejo de errores de Amoeba me "
+"hizo muy consciente de la importancia de las excepciones como una "
+"característica de los lenguaje de programación."
 
-#: ../../faq/general.rst:93
+#: ../Doc/faq/general.rst:93
 msgid ""
 "It occurred to me that a scripting language with a syntax like ABC but with "
 "access to the Amoeba system calls would fill the need.  I realized that it "
 "would be foolish to write an Amoeba-specific language, so I decided that I "
 "needed a language that was generally extensible."
 msgstr ""
-"ABC のような構文と Amoeba のようなシステムコールを合わせ持ったスクリプト言語"
-"が必要だろうと思いつきました。Amoeba 専用の言語を書くのは愚かであるだろうと気"
-"づき、一般に拡張できるような言語を求めることに決めました。"
+"Se me ocurrió que un lenguaje de scripts con una sintaxis como ABC pero con "
+"acceso a las llamadas al sistema Amoeba satisfaría la necesidad. Me di "
+"cuenta de que sería una tontería escribir un lenguaje específico para "
+"Amoeba, así que decidí que necesitaba un lenguaje que fuera generalmente "
+"extensible."
 
-#: ../../faq/general.rst:98
+#: ../Doc/faq/general.rst:98
 msgid ""
 "During the 1989 Christmas holidays, I had a lot of time on my hand, so I "
 "decided to give it a try.  During the next year, while still mostly working "
@@ -218,31 +222,33 @@ msgid ""
 "success, and the feedback from colleagues made me add many early "
 "improvements."
 msgstr ""
-"1989 年のクリスマス休暇の間、自由な時間がたくさんできたので、その言語を実際に"
-"作ってみることにしました。翌年の間、勤務時間以外はほとんどその開発に費やし、"
-"Python は Amoeba プロジェクトのなかで成果を重ね、同僚からのフィードバックは私"
-"の開発を大いに加速させてくれました。"
+"Durante las vacaciones de Navidad de 1989 tenía mucho tiempo libre, así que "
+"decidí hacer un intento. Durante el año siguiente, mientras seguía "
+"trabajando principalmente en él durante mi propio tiempo, Python se utilizó "
+"en el proyecto Amoeba con un éxito creciente, y los comentarios de mis "
+"colegas me hicieron agregar muchas mejoras iniciales."
 
-#: ../../faq/general.rst:104
+#: ../Doc/faq/general.rst:104
 msgid ""
 "In February 1991, after just over a year of development, I decided to post "
 "to USENET.  The rest is in the ``Misc/HISTORY`` file."
 msgstr ""
-"1991 年 2 月、1 年間と少しの開発を経て、USENET に投稿することにしました。それ"
-"は ``Misc/HISTORY`` ファイルに残っています。"
+"En febrero de 1991, justo después de un año de desarrollo, decidí publicarlo "
+"en USENET. El resto está en el archivo ``Misc/HISTORY``."
 
-#: ../../faq/general.rst:109
+#: ../Doc/faq/general.rst:109
 msgid "What is Python good for?"
-msgstr "Python は何をするのに向いていますか？"
+msgstr "¿Para qué es bueno Python?"
 
-#: ../../faq/general.rst:111
+#: ../Doc/faq/general.rst:111
 msgid ""
 "Python is a high-level general-purpose programming language that can be "
 "applied to many different classes of problems."
 msgstr ""
-"Python は、多岐にわたる問題に適用できる高水準な汎用プログラム言語です。"
+"Python es un lenguaje de programación de propósito general de alto nivel que "
+"se puede aplicar a muchas clases diferentes de problemas."
 
-#: ../../faq/general.rst:114
+#: ../Doc/faq/general.rst:114
 msgid ""
 "The language comes with a large standard library that covers areas such as "
 "string processing (regular expressions, Unicode, calculating differences "
@@ -254,45 +260,55 @@ msgid ""
 "available.  Consult `the Python Package Index <https://pypi.org>`_ to find "
 "packages of interest to you."
 msgstr ""
-"この言語は、文字列処理(正規表現、Unicode、ファイル間の差分の計算)、インター"
-"ネットプロトコル(HTTP、FTP、SMTP、XML-RPC、POP、IMAP)、ソフトウェアエンジニア"
-"リング(Python コードのユニットテスト、ロギング、プロファイリング、解析)、オペ"
-"レーティングシステムインターフェース(システムコール、ファイルシステム、 TCP/"
-"IP ソケット) のような領域をカバーする大規模な標準ライブラリから成り立っていま"
-"す。何ができるかを知るには :ref:`library-index` の一覧を参照してください。ま"
-"た、様々なサードパーティの拡張も使えます。 `the Python Package Index "
-"<https://pypi.org>`_ から興味のあるパッケージを探してみましょう。"
+"El lenguaje viene con una gran biblioteca estándar que cubre áreas como "
+"procesamiento de cadenas de caracteres (expresiones regulares, Unicode, "
+"cálculo de diferencias entre archivos), protocolos de Internet (HTTP, FTP, "
+"SMTP, XML-RPC, POP, IMAP), ingeniería de software. (pruebas unitarias, "
+"registro, análisis de rendimiento (*profiling*), análisis de código Python) "
+"e interfaces del sistema operativo (llamadas al sistema, sistemas de "
+"archivos, sockets TCP / IP). Mira la tabla de contenido de :ref:`library-"
+"index` para tener una idea de lo que está disponible. También hay disponible "
+"una amplia variedad de extensiones de terceros. Consulta `the Python Package "
+"Index <https://pypi.org>`_ para encontrar paquetes de interés."
 
-#: ../../faq/general.rst:126
+#: ../Doc/faq/general.rst:126
 msgid "How does the Python version numbering scheme work?"
-msgstr "Python のバージョン番号の仕組みはどうなっているのですか？"
+msgstr "¿Cómo funciona el esquema numérico de versiones de Python?"
 
-#: ../../faq/general.rst:128
+#: ../Doc/faq/general.rst:128
 msgid "Python versions are numbered \"A.B.C\" or \"A.B\":"
-msgstr ""
+msgstr "Las versions de Python son numeradas \"A.B.C\" o \"A.B\":"
 
-#: ../../faq/general.rst:130
+#: ../Doc/faq/general.rst:130
 msgid ""
 "*A* is the major version number -- it is only incremented for really major "
 "changes in the language."
 msgstr ""
+"*A* es el número de version principal -- sólo es incrementada en cambios "
+"realmente importantes en el lenguaje."
 
-#: ../../faq/general.rst:132
+#: ../Doc/faq/general.rst:132
 msgid ""
 "*B* is the minor version number -- it is incremented for less earth-"
 "shattering changes."
 msgstr ""
+"*B* es el número de versión menor -- se incrementa para cambios menos "
+"trascendentales."
 
-#: ../../faq/general.rst:134
+#: ../Doc/faq/general.rst:134
 msgid ""
 "*C* is the micro version number -- it is incremented for each bugfix release."
 msgstr ""
+"*C* es el número de versión micro -- se incrementa para cada versión de "
+"corrección de errores."
 
-#: ../../faq/general.rst:136
+#: ../Doc/faq/general.rst:136
 msgid "See :pep:`6` for more information about bugfix releases."
 msgstr ""
+"Ver :pep:`6` para mayor información sobre lanzamientos de corrección de "
+"errores."
 
-#: ../../faq/general.rst:138
+#: ../Doc/faq/general.rst:138
 msgid ""
 "Not all releases are bugfix releases.  In the run-up to a new major release, "
 "a series of development releases are made, denoted as alpha, beta, or "
@@ -302,39 +318,48 @@ msgid ""
 "adding new modules, and release candidates are frozen, making no changes "
 "except as needed to fix critical bugs."
 msgstr ""
-"すべてのリリースがバグフィックスリリースであるというわけではありません。メ"
-"ジャーリリースへの準備段階では、一連の開発リリースが作られ、アルファ版、ベー"
-"タ版、またはリリース候補と名付けられます。アルファ版はインターフェースが確定"
-"されないうちにリリースされる早期リリースで、２つのアルファリリース間でイン"
-"ターフェースが変わるかもしれません。ベータ版はもっと安定していて、現存のイン"
-"ターフェースは保存されますが新しいモジュールが追加されるかもしれません。リ"
-"リース候補は固まったもので、致命的なバグを直すのでなければ変更されません。"
+"No todos los lanzamientos son de corrección de errores. En el período previo "
+"a un lanzamiento importante, una serie de lanzamientos de desarrollo son "
+"realizados, denotados como *alpha*, *beta* o *release candidate*. Las "
+"versiones *alphas* son lanzamientos tempranos en los que las interfaces no "
+"están todavía finalizadas; no es inesperado que una interfaz cambie entre "
+"dos lanzamientos *alpha*. Las *betas* son más estables, preservando las "
+"interfaces existentes pero posiblemente agregando nuevos módulos. Los "
+"*release candidates* están congelados, sin hacer cambios excepto los "
+"necesarios para corregir bugs críticos."
 
-#: ../../faq/general.rst:146
+#: ../Doc/faq/general.rst:146
 msgid "Alpha, beta and release candidate versions have an additional suffix:"
 msgstr ""
+"Las versiones *alpha*, *beta* o *release candidate* tienen un sufijo "
+"adicional:"
 
-#: ../../faq/general.rst:148
+#: ../Doc/faq/general.rst:148
 msgid "The suffix for an alpha version is \"aN\" for some small number *N*."
-msgstr ""
+msgstr "El sufijo para una versión alfa es \"aN\" para un pequeño número *N*."
 
-#: ../../faq/general.rst:149
+#: ../Doc/faq/general.rst:149
 msgid "The suffix for a beta version is \"bN\" for some small number *N*."
-msgstr ""
+msgstr "El sufijo para una versión beta es \"bN\" para un pequeño número *N*."
 
-#: ../../faq/general.rst:150
+#: ../Doc/faq/general.rst:150
 msgid ""
 "The suffix for a release candidate version is \"rcN\" for some small number "
 "*N*."
 msgstr ""
+"El sufijo para una versión *release candidate * es \"rcN\" para un pequeño "
+"número *N*."
 
-#: ../../faq/general.rst:152
+#: ../Doc/faq/general.rst:152
 msgid ""
 "In other words, all versions labeled *2.0aN* precede the versions labeled "
 "*2.0bN*, which precede versions labeled *2.0rcN*, and *those* precede 2.0."
 msgstr ""
+"En otras palabras, todas las versiones con la etiqueta *2.0aN* preceden a "
+"las versiones con la etiqueta *2.0bN*, que preceden a las versiones con la "
+"etiqueta *2.0rcN*, y *esas* preceden a la 2.0."
 
-#: ../../faq/general.rst:155
+#: ../Doc/faq/general.rst:155
 msgid ""
 "You may also find version numbers with a \"+\" suffix, e.g. \"2.2+\".  These "
 "are unreleased versions, built directly from the CPython development "
@@ -342,108 +367,112 @@ msgid ""
 "is incremented to the next minor version, which becomes the \"a0\" version, "
 "e.g. \"2.4a0\"."
 msgstr ""
-"また、\"2.2+\" のように \"+\" 接尾語が付いたバージョン番号もあります。これは"
-"未発表のバージョンで、 CPython 開発リポジトリから直接ビルドされています。実"
-"際、最後のマイナーリリースが行われた後、バージョンは \"2.4a0\" のように "
-"\"a0\" がつく次のマイナーバージョンになります。"
+"También puedes encontrar números de versión con un sufijo \"+\", por ejemplo "
+"\"2.2+\". Estas son versiones sin lanzar, construidas directamente desde el "
+"repositorio de desarrollo de CPython. En la práctica, luego de que un "
+"lanzamiento menor se realiza, la versión es incrementada a la siguiente "
+"versión menor, que se vuelve \"a0\", por ejemplo \"2.4a0\"."
 
-#: ../../faq/general.rst:160
+#: ../Doc/faq/general.rst:160
 msgid ""
 "See also the documentation for :data:`sys.version`, :data:`sys.hexversion`, "
 "and :data:`sys.version_info`."
 msgstr ""
-":data:`sys.version`, :data:`sys.hexversion`,  :data:`sys.version_info` につい"
-"てのドキュメントも参照してください。"
+"Mira también la documentación para  :data:`sys.version`, :data:`sys."
+"hexversion`, y :data:`sys.version_info`."
 
-#: ../../faq/general.rst:165
+#: ../Doc/faq/general.rst:165
 msgid "How do I obtain a copy of the Python source?"
-msgstr "Python のソースのコピーはどこで手に入りますか？"
+msgstr "¿Cómo obtengo una copia del código fuente de Python?"
 
-#: ../../faq/general.rst:167
+#: ../Doc/faq/general.rst:167
 msgid ""
 "The latest Python source distribution is always available from python.org, "
 "at https://www.python.org/downloads/.  The latest development sources can be "
 "obtained at https://github.com/python/cpython/."
 msgstr ""
-"最新の Python ソースは python.org (https://www.python.org/downloads/) からい"
-"つでも手に入れることができます。最新の開発版ソースは https://github.com/"
-"python/cpython/  にアクセスして手に入れることができます。"
+"El código fuente de la versión más reciente de Python está siempre "
+"disponible desde python.org, en https://www.python.org/downloads/.  El "
+"código fuente en desarrollo más reciente se puede obtener en  https://github."
+"com/python/cpython/."
 
-#: ../../faq/general.rst:171
+#: ../Doc/faq/general.rst:171
 msgid ""
 "The source distribution is a gzipped tar file containing the complete C "
 "source, Sphinx-formatted documentation, Python library modules, example "
 "programs, and several useful pieces of freely distributable software.  The "
 "source will compile and run out of the box on most UNIX platforms."
 msgstr ""
-"ソースは gzip された tar ファイルで配布され、完全な C のソース、Sphinx により"
-"フォーマットされたドキュメント、Python ライブラリモジュール、サンプルプログラ"
-"ム、そしていくつかの役立つ配布自由なソフトウェアを含んでいます。このソースは"
-"ほとんどの UNIX プラットフォームでそのままコンパイルして動かせます。"
+"La distribución de fuentes es un archivo tar comprimido con gzip que "
+"contiene el código C completo, documentación en formato Sphinx, los módulos "
+"de la biblioteca de Python, programas de ejemplo y varias piezas útiles de "
+"software libremente distribuibles. El código fuente compilará y se ejecutará "
+"sin problemas en la mayoría de las plataformas Unix."
 
-#: ../../faq/general.rst:176
+#: ../Doc/faq/general.rst:176
 msgid ""
 "Consult the `Getting Started section of the Python Developer's Guide "
 "<https://devguide.python.org/setup/>`__ for more information on getting the "
 "source code and compiling it."
 msgstr ""
-"ソースコードの入手とコンパイルについて、より詳しい情報は `Getting Started "
-"section of the Python Developer's Guide <https://devguide.python.org/setup/"
-">`__ を参照してください。"
+"Consulta `Getting Started section of the Python Developer's Guide <https://"
+"devguide.python.org/setup/>`__ para más información sobre cómo obtener el "
+"código fuente y compilarlo."
 
-#: ../../faq/general.rst:182
+#: ../Doc/faq/general.rst:182
 msgid "How do I get documentation on Python?"
-msgstr "Python のドキュメントはどこで手に入りますか？"
+msgstr "¿Cómo consigo documentación sobre Python?"
 
-#: ../../faq/general.rst:186
+#: ../Doc/faq/general.rst:186
 msgid ""
 "The standard documentation for the current stable version of Python is "
 "available at https://docs.python.org/3/.  PDF, plain text, and downloadable "
 "HTML versions are also available at https://docs.python.org/3/download.html."
 msgstr ""
-"Python の現行の安定バージョンの標準ドキュメントは https://docs.python.org/3/ "
-"から利用できます。また、PDF、プレーンテキスト、ダウンロードできる HTML 版も "
-"https://docs.python.org/3/download.html から利用できます。"
+"La documentación estándar para la versión estable actual de Python está "
+"disponible en  https://docs.python.org/3/. También están disponibles "
+"versiones en PDF, texto plano y HTML descargable en  https://docs.python."
+"org/3/download.html."
 
-#: ../../faq/general.rst:190
+#: ../Doc/faq/general.rst:190
 msgid ""
 "The documentation is written in reStructuredText and processed by `the "
 "Sphinx documentation tool <https://www.sphinx-doc.org/>`__.  The "
 "reStructuredText source for the documentation is part of the Python source "
 "distribution."
 msgstr ""
-"このドキュメントは reStructuredText で書かれ、`the Sphinx documentation tool "
-"<https://www.sphinx-doc.org/>`__ で構成されました。このドキュメントに使われ"
-"た reStructuredText のソースは Python のソース配布に含まれます。"
+"La documentación está escrita en reStructuredText y procesada con `la "
+"herramienta de documentación Sphinx <https://www.sphinx-doc.org/>`__. Las "
+"fuentes reStructuredText de la documentación son parte de la distribución "
+"fuente de Python."
 
-#: ../../faq/general.rst:196
+#: ../Doc/faq/general.rst:196
 msgid "I've never programmed before. Is there a Python tutorial?"
-msgstr ""
-"プログラミングをしたことがないのですが、Python のチュートリアルはありますか？"
+msgstr "Nunca he programado antes. ¿Hay un tutorial de Python?"
 
-#: ../../faq/general.rst:198
+#: ../Doc/faq/general.rst:198
 msgid ""
 "There are numerous tutorials and books available.  The standard "
 "documentation includes :ref:`tutorial-index`."
 msgstr ""
-"膨大な量の役に立つチュートリアルや書籍があります。標準のドキュメントには :"
-"ref:`tutorial-index` などがあります。"
+"Hay numerosos tutoriales y libros disponibles.  La documentación estándar "
+"incluye  :ref:`tutorial-index`."
 
-#: ../../faq/general.rst:201
+#: ../Doc/faq/general.rst:201
 msgid ""
 "Consult `the Beginner's Guide <https://wiki.python.org/moin/"
 "BeginnersGuide>`_ to find information for beginning Python programmers, "
 "including lists of tutorials."
 msgstr ""
-"Python プログラム初心者のための情報のチュートリアルのリストは `the "
-"Beginner's Guide <https://wiki.python.org/moin/BeginnersGuide>`_ を参照してく"
-"ださい。"
+"Consulta `the Beginner's Guide <https://wiki.python.org/moin/"
+"BeginnersGuide>`_ para encontrar información para principiantes en Python, "
+"incluyendo una lista de tutoriales."
 
-#: ../../faq/general.rst:206
+#: ../Doc/faq/general.rst:206
 msgid "Is there a newsgroup or mailing list devoted to Python?"
-msgstr "Python のためのニュースグループやメーリングリストはありますか？"
+msgstr "¿Hay un *newsgroup* o una lista de correo dedicada a Python?"
 
-#: ../../faq/general.rst:208
+#: ../Doc/faq/general.rst:208
 msgid ""
 "There is a newsgroup, :newsgroup:`comp.lang.python`, and a mailing list, "
 "`python-list <https://mail.python.org/mailman/listinfo/python-list>`_.  The "
@@ -452,137 +481,147 @@ msgid ""
 "lang.python` is high-traffic, receiving hundreds of postings every day, and "
 "Usenet readers are often more able to cope with this volume."
 msgstr ""
-"ニュースグループ :newsgroup:`comp.lang.python` やメーリングリスト `python-"
-"list <https://mail.python.org/mailman/listinfo/python-list>`_ があります。"
-"ニュースグループとメーリングリストは互いに接続されていて、ニュースを購読すれ"
-"ばメーリングリストに参加する必要はありません。 :newsgroup:`comp.lang.python` "
-"は一日に数百のポスティングを受ける高いトラフィックで、USENET 読者は多くの場"
-"合、このボリュームに応えることができます。"
+"Hay un grupo de noticias, :newsgroup:`comp.lang.python`, y una lista de "
+"correo, `python-list <https://mail.python.org/mailman/listinfo/python-"
+"list>`_. Tanto el grupo de noticias como la lista de correo están "
+"interconectadas entre sí -- si puedes leer las noticias no es necesario que "
+"te suscribas a la lista de correo. :newsgroup:`comp.lang.python` tiene mucho "
+"tráfico, recibiendo cientos de publicaciones cada día. y los lectores de "
+"Usenet suelen ser más capaces de hacer frente a este volumen."
 
-#: ../../faq/general.rst:215
+#: ../Doc/faq/general.rst:215
 msgid ""
 "Announcements of new software releases and events can be found in comp.lang."
 "python.announce, a low-traffic moderated list that receives about five "
 "postings per day.  It's available as `the python-announce mailing list "
 "<https://mail.python.org/mailman/listinfo/python-announce-list>`_."
 msgstr ""
-"新しいソフトウェアリリースとイベントの告知は comp.lang.python.announce で見つ"
-"けられます。これは一日に 5 ポスティング程度を受ける低トラフィックの手頃なメー"
-"リングリストです。`the python-announce mailing list <https://mail.python.org/"
-"mailman/listinfo/python-announce-list>`_ から利用可能です。"
+"Los anuncios de nuevos lanzamientos de software y eventos se pueden "
+"encontrar en comp.lang.python.announce, una lista moderada de bajo tráfico "
+"que recibe alrededor de cinco publicaciones por día. Está disponible como la "
+"`lista de correos de anuncios de Python <https://mail.python.org/mailman/"
+"listinfo/python-announce-list>`_."
 
-#: ../../faq/general.rst:220
+#: ../Doc/faq/general.rst:220
 msgid ""
 "More info about other mailing lists and newsgroups can be found at https://"
 "www.python.org/community/lists/."
 msgstr ""
-"その他のメーリングリストやニュースグループについての詳しい情報は https://www."
-"python.org/community/lists/ にあります。"
+"Más información sobre listas de correo o grupos de noticias puede hallarse "
+"en  https://www.python.org/community/lists/."
 
-#: ../../faq/general.rst:225
+#: ../Doc/faq/general.rst:225
 msgid "How do I get a beta test version of Python?"
-msgstr "Python のベータテスト版はどこで手に入りますか？"
+msgstr "¿Cómo obtengo una versión de prueba *beta* de Python?"
 
-#: ../../faq/general.rst:227
+#: ../Doc/faq/general.rst:227
 msgid ""
 "Alpha and beta releases are available from https://www.python.org/"
 "downloads/.  All releases are announced on the comp.lang.python and comp."
 "lang.python.announce newsgroups and on the Python home page at https://www."
 "python.org/; an RSS feed of news is available."
 msgstr ""
-"アルファ/ベータリリースは https://www.python.org/downloads/ で手に入ります。"
-"リリースはすべて comp.lang.python や comp.lang.python.announce のニュースグ"
-"ループと Python ホームページ https://www.python.org/ で告知され、RSS ニュース"
-"フィードが利用できます。"
+"Las versiones alpha y beta están disponibles desde  https://www.python.org/"
+"downloads/.  Todos los lanzamientos son anunciados en el grupo de noticias "
+"comp.lang.python y comp.lang.python.announce, así como también en la página "
+"principal de Python en https://www.python.org/; un *feed* RSS está "
+"disponible."
 
-#: ../../faq/general.rst:232
+#: ../Doc/faq/general.rst:232
 msgid ""
 "You can also access the development version of Python through Git.  See `The "
 "Python Developer's Guide <https://devguide.python.org/>`_ for details."
 msgstr ""
-"Git から開発版を手に入れることもできます。詳細は `The Python Developer's "
-"guide <https://devguide.python.org/>`_ を参照してください。"
+"También puedes acceder a la versión en desarrollo de Python desde Git. Mira "
+"`The Python Developer's Guide <https://devguide.python.org/>`_ para los "
+"detalles."
 
-#: ../../faq/general.rst:237
+#: ../Doc/faq/general.rst:237
 msgid "How do I submit bug reports and patches for Python?"
-msgstr "Python のバグ報告やパッチを上げるにはどうしたら良いですか？"
+msgstr "¿Cómo envío un reporte de *bug* y parches para Python?"
 
-#: ../../faq/general.rst:239
+#: ../Doc/faq/general.rst:239
 msgid ""
 "To report a bug or submit a patch, use the issue tracker at https://github."
 "com/python/cpython/issues."
 msgstr ""
+"Para reportar un *bug* o enviar un parche, usa el rastreador de problemas en "
+"https://github.com/python/cpython/issues."
 
-#: ../../faq/general.rst:242
+#: ../Doc/faq/general.rst:242
 msgid ""
 "For more information on how Python is developed, consult `the Python "
 "Developer's Guide <https://devguide.python.org/>`_."
 msgstr ""
-"Python 開発の工程について、詳しくは `the Python Developer's Guide <https://"
-"devguide.python.org/>`_ を参照してください。"
+"Para más información sobre cómo se desarrolla Python, consulta `the Python "
+"Developer's Guide <https://devguide.python.org/>`_."
 
-#: ../../faq/general.rst:247
+#: ../Doc/faq/general.rst:247
 msgid "Are there any published articles about Python that I can reference?"
-msgstr "Python について発行された記事を何か参照できますか？"
+msgstr "¿Hay algún artículo publicado sobre Python que pueda referir?"
 
-#: ../../faq/general.rst:249
+#: ../Doc/faq/general.rst:249
 msgid "It's probably best to cite your favorite book about Python."
-msgstr "Python に関するあなたの愛読書を引用するのが一番でしょう。"
-
-#: ../../faq/general.rst:251
-msgid ""
-"The `very first article <https://ir.cwi.nl/pub/18204>`_ about Python was "
-"written in 1991 and is now quite outdated."
 msgstr ""
+"Lo más probable es que lo mejor sea citar a tu libro preferido sobre Python."
 
-#: ../../faq/general.rst:254
+#: ../Doc/faq/general.rst:251
+msgid ""
+"The very first article about Python was written in 1991 and is now quite "
+"outdated."
+msgstr ""
+"El primer artículo publicado sobre Python fue escrito en 1991 y quedó "
+"bastante desactualizado."
+
+#: ../Doc/faq/general.rst:254
 msgid ""
 "Guido van Rossum and Jelke de Boer, \"Interactively Testing Remote Servers "
 "Using the Python Programming Language\", CWI Quarterly, Volume 4, Issue 4 "
 "(December 1991), Amsterdam, pp 283--303."
 msgstr ""
-"Guido van Rossum and Jelke de Boer, \"Interactively Testing Remote Servers "
+"Guido van Rossum y Jelke de Boer, \"*Interactively Testing Remote Servers "
 "Using the Python Programming Language\", CWI Quarterly, Volume 4, Issue 4 "
-"(December 1991), Amsterdam, pp 283--303."
+"(Diembre de 1991), Amsterdam, pp 283--303*."
 
-#: ../../faq/general.rst:260
+#: ../Doc/faq/general.rst:260
 msgid "Are there any books on Python?"
-msgstr "Python の本はありますか？"
+msgstr "¿Hay libros sobre Python?"
 
-#: ../../faq/general.rst:262
+#: ../Doc/faq/general.rst:262
 msgid ""
 "Yes, there are many, and more are being published.  See the python.org wiki "
 "at https://wiki.python.org/moin/PythonBooks for a list."
 msgstr ""
-"はい、たくさんあり、そのほとんどは現在も出版されています。リストは python."
-"org wiki https://wiki.python.org/moin/PythonBooks にあります。"
+"Sí, hay muchos, y hay más siendo publicados. Mira la wiki de python.org en "
+"https://wiki.python.org/moin/PythonBooks para ver una lista."
 
-#: ../../faq/general.rst:265
+#: ../Doc/faq/general.rst:265
 msgid ""
 "You can also search online bookstores for \"Python\" and filter out the "
 "Monty Python references; or perhaps search for \"Python\" and \"language\"."
 msgstr ""
-"また、オンライン書店で \"Python\" で検索し、Monty Python をフィルタで除外して"
-"もいいです (または、\"Python\" と \"言語\" で検索してください)。"
+"También puedes buscar \"Python\" en las librerías en línea y excluir las que "
+"refieran a los Monty Python; o quizás buscar \"Python\" y \"lenguaje\"."
 
-#: ../../faq/general.rst:270
+#: ../Doc/faq/general.rst:270
 msgid "Where in the world is www.python.org located?"
-msgstr "www.python.org は世界のどこにあるのですか？"
+msgstr "¿En qué parte del mundo está ubicado www.python.org?"
 
-#: ../../faq/general.rst:272
+#: ../Doc/faq/general.rst:272
 msgid ""
 "The Python project's infrastructure is located all over the world and is "
 "managed by the Python Infrastructure Team. Details `here <https://infra.psf."
 "io>`__."
 msgstr ""
-"Pythonプロジェクトのインフラは世界中にあり、Pythonインフラストラクチャチーム"
-"によって管理されています。詳細は `こちら <https://infra.psf.io>`__."
+"La infraestructura del proyecto Python está ubicada alrededor de todo el "
+"mundo y es gestionada por el *Python Infraestructure Team*. Detalles `aquí "
+"<https://infra.psf.io>`__."
 
-#: ../../faq/general.rst:277
+#: ../Doc/faq/general.rst:277
 msgid "Why is it called Python?"
-msgstr "なぜ Python という名前なのですか？"
+msgstr "¿Por qué se llama Python?"
 
-#: ../../faq/general.rst:279
+#: ../Doc/faq/general.rst:279
 msgid ""
 "When he began implementing Python, Guido van Rossum was also reading the "
 "published scripts from `\"Monty Python's Flying Circus\" <https://en."
@@ -590,40 +629,39 @@ msgid ""
 "Van Rossum thought he needed a name that was short, unique, and slightly "
 "mysterious, so he decided to call the language Python."
 msgstr ""
-"Python の開発が始まった頃、Guido van Rossum は 1970 年代に始まった BBC のコメ"
-"ディシリーズ `\"Monty Python's Flying Circus\" <https://en.wikipedia.org/"
-"wiki/Monty_Python>`__ の台本を読んでいました。Van Rossum は、短くて、ユニーク"
-"で、少しミステリアスな名前が欲しかったので、この言語の名前を Python と呼ぶこ"
-"とにしたのです。"
+"Cuando comenzó a implementar Python, Guido van Rossum también estaba leyendo "
+"los guiones publicados de `\"Monty Python's Flying Circus\" <https://es."
+"wikipedia.org/wiki/Monty_Python>`__, una serie de comedia producida por la "
+"BBC de los 70'. Van Rossum pensó que necesitaba un nombre que fuera corto, "
+"único y ligeramente misterioso, entonces decidió llamar al lenguaje Python."
 
-#: ../../faq/general.rst:287
+#: ../Doc/faq/general.rst:287
 msgid "Do I have to like \"Monty Python's Flying Circus\"?"
-msgstr "『空飛ぶモンティ・パイソン』を好きでなくてはいけませんか？"
+msgstr "¿Debe gustarme \"Monty Python's Flying Circus\"?"
 
-#: ../../faq/general.rst:289
+#: ../Doc/faq/general.rst:289
 msgid "No, but it helps.  :)"
-msgstr "いいえ。でも、好きになってくれるといいな。: ）"
+msgstr "No, pero ayuda. :)"
 
-#: ../../faq/general.rst:293
+#: ../Doc/faq/general.rst:293
 msgid "Python in the real world"
-msgstr "現実世界での Python"
+msgstr "Python en el mundo real"
 
-#: ../../faq/general.rst:296
+#: ../Doc/faq/general.rst:296
 msgid "How stable is Python?"
-msgstr "Python はどれくらい安定していますか？"
+msgstr "¿Cuán estable es Python?"
 
-#: ../../faq/general.rst:298
+#: ../Doc/faq/general.rst:298
 msgid ""
 "Very stable.  New, stable releases have been coming out roughly every 6 to "
 "18 months since 1991, and this seems likely to continue.  As of version 3.9, "
 "Python will have a major new release every 12 months (:pep:`602`)."
 msgstr ""
-"とても安定しています。1991 年以来新しい安定リリースはおよそ 6 から 18 ヶ月毎"
-"に出されていて、このペースが続きそうです。バージョン3.9の時点では、Pythonは"
-"12ヶ月に一度のペースでメジャーバージョンのリリースを行っています (:pep:"
-"`602`) 。"
+"Muy estable. Versiones nuevas y estables han sido publicadas cada entre 6 y "
+"18 meses desde 1991, y es muy probable que así continúe. Actualmente pasan "
+"alrededor de 18 meses entre los lanzamientos importantes."
 
-#: ../../faq/general.rst:302
+#: ../Doc/faq/general.rst:302
 msgid ""
 "The developers issue \"bugfix\" releases of older versions, so the stability "
 "of existing releases gradually improves.  Bugfix releases, indicated by a "
@@ -632,13 +670,15 @@ msgid ""
 "and it's guaranteed that interfaces will remain the same throughout a series "
 "of bugfix releases."
 msgstr ""
-"開発者が旧バージョンの \"bugfix\" リリースを公開するので、既存リリースの安定"
-"性は徐々に向上していきます。バグフィックスリリースは、バージョン番号の 3 番目"
-"の要素によって示され(例: 3.5.3、3.6.2)、安定性のために管理されています。バグ"
-"フィックスリリースには既知の問題への修正だけが含まれ、一連のバグフィックスリ"
-"リースを通じて同じインターフェースが保たれることが保証されているのです。"
+"Los desarrolladores publican lanzamientos de \"bugfix\" (corrección de "
+"errores) para versiones antiguas, así que la estabilidad de las versiones "
+"existentes mejora gradualmente. Los lanzamientos de corrección de errores, "
+"indicados por el tercer componente del número de versión (e.g 3.5.3, 3.6.2) "
+"son gestionados para estabilidad; sólo correcciones de problemas conocidos "
+"se incluyen en uno de estos lanzamientos, y está garantizado que las "
+"interfaces se mantendrán a lo largo de la misma serie."
 
-#: ../../faq/general.rst:309
+#: ../Doc/faq/general.rst:309
 msgid ""
 "The latest stable releases can always be found on the `Python download page "
 "<https://www.python.org/downloads/>`_.  There are two production-ready "
@@ -646,59 +686,61 @@ msgid ""
 "supported by most widely used libraries.  Although 2.x is still widely used, "
 "`it is not maintained anymore <https://peps.python.org/pep-0373/>`_."
 msgstr ""
-"最新の安定版リリースは常に `Python download page <https://www.python.org/"
-"downloads/>`_ にあります。Pythonには2.xと3.xという、製品に利用可能な2つのバー"
-"ジョンがあります。推奨のバージョンは3.xで、これは広く利用されているライブラリ"
-"のほとんどでサポートされています。2.xも依然として広く利用されていますが、`も"
-"うこれ以上はメンテナンスされません <https://peps.python.org/pep-0373/>`_ 。"
+"La última versión estable siempre se puede encontrar en la página `Python "
+"download page <https://www.python.org/downloads/>`_. Hay dos versiones de "
+"Python que están listas para producción: la 2.x y la 3.x. La versión "
+"recomendada es la 3.x, que es soportada por la mayoría de las bibliotecas "
+"más usadas. Aunque la versión 2.x aún es ampliamente utilizada, `no es más "
+"mantenida <https://peps.python.org/pep-0373/>`_."
 
-#: ../../faq/general.rst:316
+#: ../Doc/faq/general.rst:316
 msgid "How many people are using Python?"
-msgstr "どれくらいの人が Python を使っていますか？"
+msgstr "¿Cuánta gente usa Python?"
 
-#: ../../faq/general.rst:318
+#: ../Doc/faq/general.rst:318
 msgid ""
 "There are probably millions of users, though it's difficult to obtain an "
 "exact count."
 msgstr ""
-"正確な人数を調べるのは難しいですが、おそらく何百万人ものユーザーがいるでしょ"
-"う。"
+"Probablemente hay decenas de miles de usuarios y usuarias, aunque es difícil "
+"obtener una cuenta exacta."
 
-#: ../../faq/general.rst:321
+#: ../Doc/faq/general.rst:321
 msgid ""
 "Python is available for free download, so there are no sales figures, and "
 "it's available from many different sites and packaged with many Linux "
 "distributions, so download statistics don't tell the whole story either."
 msgstr ""
-"Python は自由にダウンロード可能なので、売上高がなく、多数のサイトから利用で"
-"き、多くの Linux ディストーションに同梱されているので、ダウンロード統計から全"
-"体の状況を知ることはできません。"
+"Python está disponible gratuitamente para ser descargado por lo que no "
+"existen cifras de ventas, a su vez se incluye en muchos sitios diferentes y "
+"está empaquetado en muchas distribuciones de Linux, por lo que las "
+"estadísticas de descarga tampoco cuentan toda la historia."
 
-#: ../../faq/general.rst:325
+#: ../Doc/faq/general.rst:325
 msgid ""
 "The comp.lang.python newsgroup is very active, but not all Python users post "
 "to the group or even read it."
 msgstr ""
-"comp.lang.python ニュースグループはとても活発ですが、すべての Python ユーザー"
-"が投稿するわけではなく、読みすらしない人もいます。"
+"El grupo de noticias comp.lang.python es muy activo, pero no todos los "
+"usuarios de Python publican allí o incluso lo leen."
 
-#: ../../faq/general.rst:330
+#: ../Doc/faq/general.rst:330
 msgid "Have any significant projects been done in Python?"
-msgstr "Python で行われた大きなプロジェクトはありますか？"
+msgstr "¿Hay proyectos significativos hechos con Python?"
 
-#: ../../faq/general.rst:332
+#: ../Doc/faq/general.rst:332
 msgid ""
 "See https://www.python.org/about/success for a list of projects that use "
 "Python. Consulting the proceedings for `past Python conferences <https://www."
 "python.org/community/workshops/>`_ will reveal contributions from many "
 "different companies and organizations."
 msgstr ""
-"Python を利用しているプロジェクトのリストは https://www.python.org/about/"
-"success を参照してください。`past Python conferences <https://www.python.org/"
-"community/workshops/>`_ から議事録を参照すると、多くの会社や組織の貢献がわか"
-"るでしょう。"
+"Mira https://www.python.org/about/success para una lista de proyecto que "
+"usan Python. Consultar las actas de `conferencias de Python pasadas <https://"
+"www.python.org/community/workshops/>`_ revelará contribuciones de diferentes "
+"empresas y organizaciones."
 
-#: ../../faq/general.rst:337
+#: ../Doc/faq/general.rst:337
 msgid ""
 "High-profile Python projects include `the Mailman mailing list manager "
 "<https://www.list.org>`_ and `the Zope application server <https://www.zope."
@@ -707,18 +749,18 @@ msgid ""
 "administration software in Python.  Companies that use Python internally "
 "include Google, Yahoo, and Lucasfilm Ltd."
 msgstr ""
-"注目されている Python のプロジェクトは `the Mailman mailing list manager "
-"<https://www.list.org>`_ や `the Zope application server <https://www.zope."
-"dev>`_ などです。`Red Hat <https://www.redhat.com>`_ をはじめとするいくつか"
-"の Linux ディストーションのインストーラやシステムアドミニストレーションソフト"
-"ウェアは、一部や全部が Python で書かれています。内部で Python を利用している"
-"企業には、Google、Yahoo、Lucasfilm Ltd. などがあります。"
+"Proyectos en Python de alto perfil incluyen el `gestor de listas de correo "
+"Mailman <https://www.list.org>`_ y `el servidor de aplicaciones Zope "
+"<https://www.zope.org>`_. Muchas distribuciones de Linux, más notoriamente "
+"`Red Hat <https://www.redhat.com>`_, han escrito partes de sus instaladores "
+"y software de administración en Python. Entre las empresas que usan Python "
+"internamente se encuentran Google, Yahoo y Lucasfilm Ltd."
 
-#: ../../faq/general.rst:346
+#: ../Doc/faq/general.rst:346
 msgid "What new developments are expected for Python in the future?"
-msgstr "将来 Python にどのような新しい開発が期待されますか？"
+msgstr "¿Qué nuevos desarrollos se esperan para Python en el futuro?"
 
-#: ../../faq/general.rst:348
+#: ../Doc/faq/general.rst:348
 msgid ""
 "See https://peps.python.org/ for the Python Enhancement Proposals (PEPs). "
 "PEPs are design documents describing a suggested new feature for Python, "
@@ -726,24 +768,26 @@ msgid ""
 "titled \"Python X.Y Release Schedule\", where X.Y is a version that hasn't "
 "been publicly released yet."
 msgstr ""
-"Python Enhancement Proposals (PEP) https://peps.python.org/  を参照してくださ"
-"い。PEP は Python に提案された新機能について書かれた設計書で、簡潔な技術仕様"
-"と原理が提供されています。\"Python X.Y Release Schedule\" (X.Y はまだリリース"
-"されていないバージョン) を探してください。"
+"Consulta https://peps.python.org/ para conocer las propuestas de mejora de "
+"Python (PEP). Los PEP son documentos de diseño que describen una nueva "
+"característica sugerida para Python, que proporciona una especificación "
+"técnica concisa y una justificación. Busca un PEP titulado \"Python X.Y "
+"Release Schedule\", donde X.Y es una versión que aún no se ha lanzado "
+"públicamente."
 
-#: ../../faq/general.rst:354
+#: ../Doc/faq/general.rst:354
 msgid ""
 "New development is discussed on `the python-dev mailing list <https://mail."
 "python.org/mailman/listinfo/python-dev/>`_."
 msgstr ""
-"新しい開発については `the python-dev mailing list <https://mail.python.org/"
-"mailman/listinfo/python-dev/>`_ で議論されています。"
+"Los nuevos desarrollos son discutidos en `la lista de correo python-dev "
+"<https://mail.python.org/mailman/listinfo/python-dev/>`_."
 
-#: ../../faq/general.rst:359
+#: ../Doc/faq/general.rst:359
 msgid "Is it reasonable to propose incompatible changes to Python?"
-msgstr "Python の互換性を無くすような提案をしてもいいのですか？"
+msgstr "¿Es razonable proponer cambios incompatibles a Python?"
 
-#: ../../faq/general.rst:361
+#: ../Doc/faq/general.rst:361
 msgid ""
 "In general, no.  There are already millions of lines of Python code around "
 "the world, so any change in the language that invalidates more than a very "
@@ -752,32 +796,33 @@ msgid ""
 "documentation; many books have been written about Python, and we don't want "
 "to invalidate them all at a single stroke."
 msgstr ""
-"一般的には、してはいけません。世界中にすでに何百万行もの Python コードがある"
-"ので、既存のプログラムのどんなに僅かな部分でも無効にしてしまうような言語仕様"
-"の変更も認められてはなりません。コンバートするプログラムが出来てさえ、すべて"
-"のドキュメントをアップデートしなければならないという問題があります。 Python "
-"に関する多くの本が出版されているので、それらを一発で不適切にするようなことは"
-"したくないです。"
+"En general no. Ya existen millones de líneas de código Python alrededor del "
+"mundo, por lo que cualquier cambio en el lenguaje que invalide más que una "
+"fracción muy pequeña de los programas existentes tiene que ser mal visto. "
+"Incluso si puedes proporcionar un programa de conversión, todavía existe el "
+"problema de actualizar toda la documentación; se han escrito muchos libros "
+"sobre Python y no queremos invalidarlos a todos de un plumazo."
 
-#: ../../faq/general.rst:368
+#: ../Doc/faq/general.rst:368
 msgid ""
 "Providing a gradual upgrade path is necessary if a feature has to be "
 "changed. :pep:`5` describes the procedure followed for introducing backward-"
 "incompatible changes while minimizing disruption for users."
 msgstr ""
-"仕様を変えなければならないのなら、緩やかなアップグレード計画が組まれなくては"
-"なりません。 :pep:`5` で、ユーザーの受ける分裂を最小限にしながら後方互換性の"
-"ない変更を行うために従うべき手順について説明しています。"
+"Si una funcionalidad se debe cambiar,  es necesario proporcionar una ruta de "
+"actualización gradual.  :pep:`5` describe el procedimiento seguido para "
+"introducir cambios incompatibles con versiones anteriores para minimizar "
+"disrupciones a los usuarios y usuarias."
 
-#: ../../faq/general.rst:374
+#: ../Doc/faq/general.rst:374
 msgid "Is Python a good language for beginning programmers?"
-msgstr "Python は初心者プログラマに向いている言語ですか？"
+msgstr "¿Python es un buen lenguaje para principiantes?"
 
-#: ../../faq/general.rst:376
+#: ../Doc/faq/general.rst:376
 msgid "Yes."
-msgstr "はい。"
+msgstr "Sí."
 
-#: ../../faq/general.rst:378
+#: ../Doc/faq/general.rst:378
 msgid ""
 "It is still common to start students with a procedural and statically typed "
 "language such as Pascal, C, or a subset of C++ or Java.  Students may be "
@@ -789,16 +834,18 @@ msgid ""
 "basic concepts such as loops and procedures.  They can probably even work "
 "with user-defined objects in their very first course."
 msgstr ""
-"未だにプログラミング初学者にとって一般的なのは、Pascal、C、C++ のサブセッ"
-"ト、 Java など、手続き型の静的型付けの言語です。生徒にとっては、第一の言語と"
-"して Python を学ぶのが役に立つでしょう。Python には非常に簡潔で一貫した構文と"
-"大きな標準ライブラリがあります。そして一番重要なことに、初心者プログラミング"
-"のコースで Python を学ぶことで、生徒は問題の分析やデータ型の設計など、重要な"
-"プログラミングスキルに集中することができるのです。 Python なら、生徒はループ"
-"や手続きなどの基本概念をすぐに取り入れられます。最初の課程でいきなりユーザ定"
-"義のオブジェクトを操ることさえできるでしょう。"
+"Todavía es común hacer comenzar a estudiantes con lenguajes procedimentales "
+"de tipado estático como Pascal, C o un subconjunto de C++ o Java. Los y las "
+"estudiantes pueden verse favorecidos si aprenden Python como primer "
+"lenguaje. Python tiene una sintaxis simple y consistente y una gran "
+"biblioteca estándar. Y, más importante, usar Python en cursos introductorios "
+"de programación permite a los estudiantes concentrarse en lo importante de "
+"las habilidades de programación como la descomposición de problemas y el "
+"diseño de tipos de datos. Con Python los estudiantes pueden ser rápidamente "
+"introducidos a conceptos como bucles y procedimientos. Incluso puede "
+"trabajar con objetos definidos por el usuario en su primer curso."
 
-#: ../../faq/general.rst:388
+#: ../Doc/faq/general.rst:388
 msgid ""
 "For a student who has never programmed before, using a statically typed "
 "language seems unnatural.  It presents additional complexity that the "
@@ -809,14 +856,15 @@ msgid ""
 "necessarily the best topic to address in the students' first programming "
 "course."
 msgstr ""
-"プログラミングをしたことがない初心者にとって、静的型付け言語を使うのは不自然"
-"に思われます。習得すべき内容はより複雑になり、学習のペースが遅くなってしまい"
-"ます。生徒は、コンピュータのように思考し、問題を分析し、一貫したインター"
-"フェースを設計して、データをカプセル化することを学ぶことになります。長期的に"
-"見れば静的型付け言語を学ぶことは重要ですが、それが最初のプログラミングの授業"
-"で学ぶべき最高の話題とは限りません。"
+"Para estudiantes que nunca han programado antes, usar un lenguaje de tipado "
+"estático parece antinatural. Presenta complejidades adicionales que deben "
+"ser dominadas y ralentizan el ritmo del curso. Quienes están aprendiendo "
+"intentan pensar como la computadora, descomponer problemas, diseñar "
+"interfaces consistentes y encapsular datos. Si bien aprender a usar un "
+"lenguaje de tipado estático es importante en el largo plazo, no es "
+"necesariamente el mejor tema a tratar en un primer curso de programación."
 
-#: ../../faq/general.rst:396
+#: ../Doc/faq/general.rst:396
 msgid ""
 "Many other aspects of Python make it a good first language.  Like Java, "
 "Python has a large standard library so that students can be assigned "
@@ -828,36 +876,38 @@ msgid ""
 "students about code reuse.  Third-party modules such as PyGame are also "
 "helpful in extending the students' reach."
 msgstr ""
-"Python の良いところは他にもたくさんあります。Python には、Java のように大きな"
-"標準ライブラリがあり、生徒が何かを *する* 段階で非常に早くプログラミングプロ"
-"ジェクトに参加できるようになります。宿題は標準の四則演算機や平均を求めるプロ"
-"グラムに限定されません。標準ライブラリを使用することで、生徒はプログラミング"
-"の原理を学びながら現実的なアプリケーションに取り組む満足感を得ることができま"
-"す。また、標準ライブラリの使用からコードの再利用を学ぶことができます。 "
-"PyGame などのサードパーティモジュールもまた手が届く範囲を広げるのに役立ちま"
-"す。"
+"Muchos otros aspectos de Python lo vuelven un buen primer lenguaje. Como "
+"Java, Python tiene una biblioteca estándar, de manera que los y las "
+"estudiantes pueden recibir, de manera temprana, consignas para realizar "
+"proyectos de programación que *hagan* algo. Estas consignas no están "
+"restringidas a las típicas calculadoras de cuatro operaciones o programas de "
+"balances contables. Al usar la biblioteca estándar, pueden ganar la "
+"satisfacción de trabajar en aplicaciones realistas mientras aprenden los "
+"fundamentos de la programación. Usar la biblioteca estándar también enseña a "
+"reusar código. Módulos de terceros, como PyGame, también ayudan a extender "
+"los alcances de los y las estudiantes."
 
-#: ../../faq/general.rst:405
+#: ../Doc/faq/general.rst:405
 msgid ""
 "Python's interactive interpreter enables students to test language features "
 "while they're programming.  They can keep a window with the interpreter "
 "running while they enter their program's source in another window.  If they "
 "can't remember the methods for a list, they can do something like this::"
 msgstr ""
-"Python のインタラクティブインタプリタによって、プログラミングをしながら、言語"
-"機能を確認することができます。別のウィンドウでプログラムのソースに入っている"
-"間、ウィンドウでインタプリタを起動させたままにしておくことができます。リスト"
-"のメソッドを思い出せないときは、例えばこのようにできます::"
+"El intérprete interactivo de Python les permite probar funcionalidades del "
+"lenguaje mientras programan. Pueden tener una ventana con el intérprete "
+"corriendo mientras escriben el código de su programa en otra. Si no "
+"recuerdan los métodos para una lista, pueden hacer algo así::"
 
-#: ../../faq/general.rst:434
+#: ../Doc/faq/general.rst:434
 msgid ""
 "With the interpreter, documentation is never far from the student as they "
 "are programming."
 msgstr ""
-"インタプリタがあれば、プログラミングをしている間にドキュメントは生徒のそばを"
-"離れません。"
+"Con el intérprete, la documentación nunca está lejos de los o las "
+"estudiantes mientras están programando."
 
-#: ../../faq/general.rst:437
+#: ../Doc/faq/general.rst:437
 msgid ""
 "There are also good IDEs for Python.  IDLE is a cross-platform IDE for "
 "Python that is written in Python using Tkinter. Emacs users will be happy to "
@@ -867,19 +917,100 @@ msgid ""
 "wiki <https://wiki.python.org/moin/PythonEditors>`_ for a full list of "
 "Python editing environments."
 msgstr ""
-"Python のための良い IDE もあります。IDLE は Python で Tkinter を使って書かれ"
-"たクロスプラットフォーム IDE です。Emacs には、ユーザにとって幸運なことに、素"
-"晴らしい Python モードがあります。これらすべてのプログラミング環境から、シン"
-"タックスハイライト、オートインデント、コーディング中のインタラクティブインタ"
-"プリタへのアクセスが使えます。`the Python wiki <https://wiki.python.org/moin/"
-"PythonEditors>`_ から Python 編集環境の一覧を参照してください。"
+"También hay buenos IDE para Python. IDLE es un IDE multiplataforma para "
+"Python que está escrito en Python usando Tkinter. Los usuarios de Emacs "
+"estarán felices de saber que hay un muy buen modo de Python para Emacs. "
+"Todos estos entornos de programación proporcionan resaltado de sintaxis, "
+"indentación automática y acceso al intérprete interactivo durante la "
+"codificación. Consulta `la wiki de Python <https://wiki.python.org/moin/"
+"PythonEditors>`_ para obtener una lista completa de los entornos de edición "
+"de Python."
 
-#: ../../faq/general.rst:445
+#: ../Doc/faq/general.rst:445
 msgid ""
 "If you want to discuss Python's use in education, you may be interested in "
 "joining `the edu-sig mailing list <https://www.python.org/community/sigs/"
 "current/edu-sig>`_."
 msgstr ""
-"Python の教育における利用についての議論がしたいなら、`the edu-sig mailing "
-"list <https://www.python.org/community/sigs/current/edu-sig>`_ に参加するとよ"
-"いでしょう。"
+"Si quieres discutir el uso de Python en la educación, quizás te interese "
+"unirte a la `la lista de correo edu-sig <https://www.python.org/community/"
+"sigs/current/edu-sig>`_."
+
+#~ msgid ""
+#~ "Python versions are numbered A.B.C or A.B.  A is the major version number "
+#~ "-- it is only incremented for really major changes in the language.  B is "
+#~ "the minor version number, incremented for less earth-shattering changes.  "
+#~ "C is the micro-level -- it is incremented for each bugfix release.  See :"
+#~ "pep:`6` for more information about bugfix releases."
+#~ msgstr ""
+#~ "La versiones de Python están numeradas A.B.C o A.B. A es el numero de "
+#~ "versión más importante -- sólo es incrementado por cambios realmente "
+#~ "grandes en el lenguaje. B es el número de versión secundario (o menor), "
+#~ "incrementado ante cambios menos traumáticos. C es el nivel micro -- se "
+#~ "incrementa en cada lanzamiento de corrección de errores. Mira el :pep:`6` "
+#~ "para más información sobre los lanzamientos de corrección de errores."
+
+#~ msgid ""
+#~ "Alpha, beta and release candidate versions have an additional suffix.  "
+#~ "The suffix for an alpha version is \"aN\" for some small number N, the "
+#~ "suffix for a beta version is \"bN\" for some small number N, and the "
+#~ "suffix for a release candidate version is \"rcN\" for some small number "
+#~ "N.  In other words, all versions labeled 2.0aN precede the versions "
+#~ "labeled 2.0bN, which precede versions labeled 2.0rcN, and *those* precede "
+#~ "2.0."
+#~ msgstr ""
+#~ "Las versiones alpha, beta y candidata de lanzamiento (*release "
+#~ "candidate*) tienen un sufijo adicional. El sufijo para la versión alpha "
+#~ "es \"aN\" para algunos números N pequeños; el sufijo para beta es \"bN\" "
+#~ "para algunos números N pequeños, y el sufijo para *release candidates* es "
+#~ "\"cN\" para algunos números N pequeños. En otras palabras, todas las "
+#~ "versiones etiquetadas 2.0aN preceden a las 2.0bN, que preceden a las "
+#~ "etiquetadas 2.0cN, y *todas esas* preceden a la 2.0."
+
+#~ msgid ""
+#~ "You must have a Roundup account to report bugs; this makes it possible "
+#~ "for us to contact you if we have follow-up questions.  It will also "
+#~ "enable Roundup to send you updates as we act on your bug. If you had "
+#~ "previously used SourceForge to report bugs to Python, you can obtain your "
+#~ "Roundup password through Roundup's `password reset procedure <https://"
+#~ "bugs.python.org/user?@template=forgotten>`_."
+#~ msgstr ""
+#~ "Debes tener una cuenta de Roundup para reportar *bugs*; esto nos permite "
+#~ "contactarte si tenemos más preguntas. También permite que Roundup te "
+#~ "envíe actualizaciones cuando haya actualizaciones sobre tu *bug*. Si "
+#~ "previamente usaste SourceForge para reportar bugs a Python, puedes "
+#~ "obtener tu contraseña de Roundup a través del `procedimiento de reinicio "
+#~ "de contraseña de Roundup  <https://bugs.python.org/user?"
+#~ "@template=forgotten>`_."
+
+#~ msgid ""
+#~ "See https://www.python.org/dev/peps/ for the Python Enhancement Proposals "
+#~ "(PEPs). PEPs are design documents describing a suggested new feature for "
+#~ "Python, providing a concise technical specification and a rationale.  "
+#~ "Look for a PEP titled \"Python X.Y Release Schedule\", where X.Y is a "
+#~ "version that hasn't been publicly released yet."
+#~ msgstr ""
+#~ "Mira https://www.python.org/dev/peps/ para las *Python Enhancement "
+#~ "Proposals* (\"Propuestas de mejora de Python\", PEPs). Las PEPs son "
+#~ "documentos de diseño que describen una nueva funcionalidad sugerida para "
+#~ "Python, proveyendo una especificación técnica concisa y una razón "
+#~ "fundamental. Busca una PEP titulada \"Python X.Y Release Schedule\", "
+#~ "donde X.Y es una versión que aún no ha sido publicada."
+
+#~ msgid ""
+#~ "There are also good IDEs for Python.  IDLE is a cross-platform IDE for "
+#~ "Python that is written in Python using Tkinter.  PythonWin is a Windows-"
+#~ "specific IDE. Emacs users will be happy to know that there is a very good "
+#~ "Python mode for Emacs.  All of these programming environments provide "
+#~ "syntax highlighting, auto-indenting, and access to the interactive "
+#~ "interpreter while coding.  Consult `the Python wiki <https://wiki.python."
+#~ "org/moin/PythonEditors>`_ for a full list of Python editing environments."
+#~ msgstr ""
+#~ "También hay buenas IDEs para Python. IDLE es una IDE multiplataforma para "
+#~ "Python que está escrita en Python usando Tkinter. PythonWin es un IDE "
+#~ "específico para Windows. Quienes usan Emacs estarán felices de saber que "
+#~ "hay un modo para Python muy bueno.  Todos estos entornos de programación "
+#~ "proveen resaltado de sintaxis, auto-sangrado y acceso al intérprete "
+#~ "interactivo mientras se programa. Consulta  `la wiki de Python <https://"
+#~ "wiki.python.org/moin/PythonEditors>`_ para ver una lista completa de "
+#~ "entornos de programación."

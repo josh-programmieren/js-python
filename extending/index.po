@@ -1,34 +1,31 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Yusuke Miyazaki <miyazaki.dev@gmail.com>, 2021
-# 菊池 健志, 2023
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-17 14:14+0000\n"
-"PO-Revision-Date: 2021-06-28 00:52+0000\n"
-"Last-Translator: 菊池 健志, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2020-06-24 22:38+0200\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../extending/index.rst:5
+#: ../Doc/extending/index.rst:5
 msgid "Extending and Embedding the Python Interpreter"
-msgstr "Python インタプリタの拡張と埋め込み"
+msgstr "Ampliación e incrustación del intérprete de Python"
 
-#: ../../extending/index.rst:7
+#: ../Doc/extending/index.rst:7
 msgid ""
 "This document describes how to write modules in C or C++ to extend the "
 "Python interpreter with new modules.  Those modules can not only define new "
@@ -38,16 +35,16 @@ msgid ""
 "extension modules so that they can be loaded dynamically (at run time) into "
 "the interpreter, if the underlying operating system supports this feature."
 msgstr ""
-"このドキュメントでは、Pythonインタプリンタを拡張する新しいモジュールをで C ま"
-"たはC++ で書く方法を解説しています。このようなモジュールでは新しい関数を定義"
-"するだけではなく、新しい型や、そのメソッドを定義することができます。ドキュメ"
-"ントでは他のアプリケーションでPythonを拡張言語として使用するために、Pythonイ"
-"ンタプリタをアプリケーションに埋め込む方法についても解説します。最後に、下層"
-"のオペレーティングシステムが動的(実行時)ロードをサポートしていれば、拡張モ"
-"ジュールが動的にライブラリにロードされるように、モジュールをコンパイルしリン"
-"クする方法について解説します。"
+"Este documento describe cómo escribir módulos en C o C++ para extender el "
+"intérprete de Python con nuevos módulos. Esos módulos no solo pueden definir "
+"nuevas funciones sino también nuevos tipos de objetos y sus métodos. El "
+"documento también describe cómo incrustar el intérprete de Python en otra "
+"aplicación, para usarlo como un lenguaje de extensión. Finalmente, muestra "
+"cómo compilar y vincular módulos de extensión para que puedan cargarse "
+"dinámicamente (en tiempo de ejecución) en el intérprete, si el sistema "
+"operativo subyacente admite esta característica."
 
-#: ../../extending/index.rst:15
+#: ../Doc/extending/index.rst:15
 msgid ""
 "This document assumes basic knowledge about Python.  For an informal "
 "introduction to the language, see :ref:`tutorial-index`.  :ref:`reference-"
@@ -55,26 +52,27 @@ msgid ""
 "documents the existing object types, functions and modules (both built-in "
 "and written in Python) that give the language its wide application range."
 msgstr ""
-"このドキュメントでは、読者は Python について基礎的な知識を持ち合わせているも"
-"のと仮定しています。形式ばらない Python 言語の入門には、 :ref:`tutorial-"
-"index` を読んでください。 :ref:`reference-index` を読めば、 Python 言語につい"
-"てより形式的な定義を得られます。また、 :ref:`library-index` では、Python に広"
-"い適用範囲をもたらしている既存のオブジェクト型、関数、および (組み込み、およ"
-"び Python で書かれたものの両方の) モジュールについて解説しています。"
+"Este documento asume conocimientos básicos sobre Python. Para una "
+"introducción informal al lenguaje, consulte :ref:`tutorial-index`. :ref:"
+"`reference-index` da una definición más formal del lenguaje. :ref:`library-"
+"index` documenta los tipos de objetos, funciones y módulos existentes (tanto "
+"incorporados como escritos en Python) que le dan al lenguaje su amplio rango "
+"de aplicaciones."
 
-#: ../../extending/index.rst:21
+#: ../Doc/extending/index.rst:21
 msgid ""
 "For a detailed description of the whole Python/C API, see the separate :ref:"
 "`c-api-index`."
 msgstr ""
-"Python/C API 全体の詳しい説明は、別のドキュメントである、 :ref:`c-api-index` "
-"を参照してください。"
+"Para obtener una descripción detallada de toda la API de Python/C, consulte "
+"el apartado separado :ref:`c-api-index`."
 
-#: ../../extending/index.rst:26
+#: ../Doc/extending/index.rst:26
 msgid "Recommended third party tools"
-msgstr "おすすめのサードパーティツール"
+msgstr "Herramientas de terceros recomendadas"
 
-#: ../../extending/index.rst:28
+#: ../Doc/extending/index.rst:28
+#, fuzzy
 msgid ""
 "This guide only covers the basic tools for creating extensions provided as "
 "part of this version of CPython. Third party tools like `Cython <https://"
@@ -82,59 +80,61 @@ msgid ""
 "swig.org>`_ and `Numba <https://numba.pydata.org/>`_ offer both simpler and "
 "more sophisticated approaches to creating C and C++ extensions for Python."
 msgstr ""
-"このガイドがカバーするのは、このバージョンの CPython の一部として提供されてい"
-"る、拡張を作成するための基本的なツールだけです。\n"
-"`Cython <https://cython.org/>`_, `cffi <https://cffi.readthedocs.io>`_, "
-"`SWIG <https://www.swig.org>`_, `Numba <https://numba.pydata.org/>`_ のような"
-"サードパーティのツールは、 Python の C および C++ 拡張を作成するための、より"
-"簡潔かつより洗練された手法を提供します。"
+"Esta guía solo cubre las herramientas básicas para crear extensiones "
+"proporcionadas como parte de esta versión de CPython. Herramientas de "
+"terceros como `Cython <http://cython.org/>`_, `cffi <https://cffi."
+"readthedocs.io>`_, `SWIG <http://www.swig.org>`_ y `Numba <https://numba."
+"pydata.org/>`_ ofrecen enfoques más simples y sofisticados para crear "
+"extensiones C y C++ para Python."
 
-#: ../../extending/index.rst:40
+#: ../Doc/extending/index.rst:40
 msgid ""
 "`Python Packaging User Guide: Binary Extensions <https://packaging.python."
 "org/guides/packaging-binary-extensions/>`_"
 msgstr ""
-"`Python Packaging User Guide: Binary Extensions <https://packaging.python."
-"org/guides/packaging-binary-extensions/>`_"
+"`Guía del Usuario de Empaquetamiento de Python: Extensiones binarias "
+"<https://packaging.python.org/guides/packaging-binary-extensions/>`_"
 
-#: ../../extending/index.rst:38
+#: ../Doc/extending/index.rst:38
 msgid ""
 "The Python Packaging User Guide not only covers several available tools that "
 "simplify the creation of binary extensions, but also discusses the various "
 "reasons why creating an extension module may be desirable in the first place."
 msgstr ""
-"Python Packaging User Guideはバイナリ拡張の作成が簡単になる便利なツールをカ"
-"バーしているだけではなく、まず始めになぜ拡張モジュールを作ることが望ましいか"
-"の様々な理由について議論しています。"
+"La Guía del Usuario de Empaquetamiento de Python no solo cubre varias "
+"herramientas disponibles que simplifican la creación de extensiones "
+"binarias, sino que también discute las diversas razones por las cuales crear "
+"un módulo de extensión puede ser deseable en primer lugar."
 
-#: ../../extending/index.rst:45
+#: ../Doc/extending/index.rst:45
 msgid "Creating extensions without third party tools"
-msgstr "サードパーティツールなしで拡張を作る"
+msgstr "Crear extensiones sin herramientas de terceros"
 
-#: ../../extending/index.rst:47
+#: ../Doc/extending/index.rst:47
 msgid ""
 "This section of the guide covers creating C and C++ extensions without "
 "assistance from third party tools. It is intended primarily for creators of "
 "those tools, rather than being a recommended way to create your own C "
 "extensions."
 msgstr ""
-"ガイドのこの節ではサードパーティツールの補助無しに C および C++ 拡張を作成す"
-"る方法を説明します。\n"
-"これは自分自身の C 拡張を作成するおすすめの方法というよりも、主にそれらのツー"
-"ルを作成する人向けのものです。"
+"Esta sección de la guía cubre la creación de extensiones C y C++ sin la "
+"ayuda de herramientas de terceros. Está destinado principalmente a los "
+"creadores de esas herramientas, en lugar de ser una forma recomendada de "
+"crear sus propias extensiones C."
 
-#: ../../extending/index.rst:63
+#: ../Doc/extending/index.rst:63
 msgid "Embedding the CPython runtime in a larger application"
-msgstr "大規模なアプリケーションへの Python ランタイムの埋め込み"
+msgstr ""
+"Incrustar el tiempo de ejecución de CPython en una aplicación más grande"
 
-#: ../../extending/index.rst:65
+#: ../Doc/extending/index.rst:65
 msgid ""
 "Sometimes, rather than creating an extension that runs inside the Python "
 "interpreter as the main application, it is desirable to instead embed the "
 "CPython runtime inside a larger application. This section covers some of the "
 "details involved in doing that successfully."
 msgstr ""
-"Python インタープリタの中でメインアプリケーションとして実行される拡張を作るの"
-"ではなく、 CPython をより大きなアプリケーションの中に埋め込む方が望ましいこと"
-"があります。\n"
-"この節ではその上手い埋め込みに関わる詳細について説明します。"
+"A veces, en lugar de crear una extensión que se ejecute dentro del "
+"intérprete de Python como la aplicación principal, es conveniente incorporar "
+"el tiempo de ejecución de CPython dentro de una aplicación más grande. Esta "
+"sección cubre algunos de los detalles involucrados en hacerlo con éxito."

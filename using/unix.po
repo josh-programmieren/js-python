@@ -1,78 +1,78 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:51+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2020-10-05 20:17+0200\n"
+"Last-Translator: \n"
+"Language: es_ES\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../using/unix.rst:7
+#: ../Doc/using/unix.rst:7
 msgid "Using Python on Unix platforms"
-msgstr "Unix プラットフォームで Python を使う"
+msgstr "Uso de Python en plataformas Unix"
 
-#: ../../using/unix.rst:13
+#: ../Doc/using/unix.rst:13
 msgid "Getting and installing the latest version of Python"
-msgstr "最新バージョンの Python の取得とインストール"
+msgstr "Obteniendo e instalando la última versión de Python"
 
-#: ../../using/unix.rst:16
+#: ../Doc/using/unix.rst:16
 msgid "On Linux"
-msgstr "Linux"
+msgstr "En Linux"
 
-#: ../../using/unix.rst:18
+#: ../Doc/using/unix.rst:18
 msgid ""
 "Python comes preinstalled on most Linux distributions, and is available as a "
 "package on all others.  However there are certain features you might want to "
 "use that are not available on your distro's package.  You can easily compile "
 "the latest version of Python from source."
 msgstr ""
-"ほとんどの Linux ディストリビューションでは Python はプリインストールされてお"
-"り、それ以外でもパッケージとして利用可能です。しかし、ディストリビューション"
-"のパッケージでは利用したい機能が使えない場合があります。最新版の Python を"
-"ソースから簡単にコンパイルすることができます。"
+"Python viene preinstalado en la mayoría de distribuciones Linux, y también "
+"está disponible como paquete en el resto. Sin embargo, hay determinadas "
+"características que puede que quiera usar y no están disponibles en tu "
+"paquete de distribución. Puedes compilar fácilmente la última versión de "
+"Python de la fuente."
 
-#: ../../using/unix.rst:23
+#: ../Doc/using/unix.rst:23
 msgid ""
 "In the event that Python doesn't come preinstalled and isn't in the "
 "repositories as well, you can easily make packages for your own distro.  "
 "Have a look at the following links:"
 msgstr ""
-"Python がプリインストールされておらず、リポジトリにも無い場合、ディストリ"
-"ビューション用のパッケージを簡単につくることができます。以下のリンクを参照し"
-"てください:"
+"En caso de que Python no venga preinstalado y tampoco se encuentre en los "
+"repositorios, puede crear fácilmente paquetes para su propia distribución.  "
+"Eche un vistazo a los siguientes enlaces:"
 
-#: ../../using/unix.rst:29
+#: ../Doc/using/unix.rst:29
 msgid "https://www.debian.org/doc/manuals/maint-guide/first.en.html"
 msgstr "https://www.debian.org/doc/manuals/maint-guide/first.en.html"
 
-#: ../../using/unix.rst:30
+#: ../Doc/using/unix.rst:30
 msgid "for Debian users"
-msgstr "Debian ユーザー向け"
+msgstr "para usuarios de Debian"
 
-#: ../../using/unix.rst:31
+#: ../Doc/using/unix.rst:31
 msgid "https://en.opensuse.org/Portal:Packaging"
 msgstr "https://en.opensuse.org/Portal:Packaging"
 
-#: ../../using/unix.rst:32
+#: ../Doc/using/unix.rst:32
 msgid "for OpenSuse users"
-msgstr "OpenSuse ユーザー向け"
+msgstr "para los usuarios de OpenSuse"
 
-#: ../../using/unix.rst:33
+#: ../Doc/using/unix.rst:33
 msgid ""
 "https://docs-old.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/"
 "RPM_Guide/ch-creating-rpms.html"
@@ -80,55 +80,56 @@ msgstr ""
 "https://docs-old.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/"
 "RPM_Guide/ch-creating-rpms.html"
 
-#: ../../using/unix.rst:34
+#: ../Doc/using/unix.rst:34
 msgid "for Fedora users"
-msgstr "Fedora ユーザー向け"
+msgstr "para los usuarios de Fedora"
 
-#: ../../using/unix.rst:35
+#: ../Doc/using/unix.rst:35
 msgid "http://www.slackbook.org/html/package-management-making-packages.html"
 msgstr "http://www.slackbook.org/html/package-management-making-packages.html"
 
-#: ../../using/unix.rst:36
+#: ../Doc/using/unix.rst:36
 msgid "for Slackware users"
-msgstr "Slackware ユーザー向け"
+msgstr "para los usuarios de Slackware"
 
-#: ../../using/unix.rst:40
+#: ../Doc/using/unix.rst:40
 msgid "On FreeBSD and OpenBSD"
-msgstr "FreeBSD と OpenBSD"
+msgstr "En FreeBSD y OpenBSD"
 
-#: ../../using/unix.rst:42
+#: ../Doc/using/unix.rst:42
 msgid "FreeBSD users, to add the package use::"
-msgstr ""
-"FreeBSD ユーザーが Python パッケージを追加するには次のようにしてください::"
+msgstr "Usuarios FreeBSD, para añadir al paquete use::"
 
-#: ../../using/unix.rst:46
+#: ../Doc/using/unix.rst:46
 msgid "OpenBSD users, to add the package use::"
-msgstr ""
-"OpenBSD ユーザーが Python パッケージを追加するには次のようにしてください::"
+msgstr "Usuarios OpenBSD, para añadir al paquete use::"
 
-#: ../../using/unix.rst:52
+#: ../Doc/using/unix.rst:52
 msgid "For example i386 users get the 2.5.1 version of Python using::"
-msgstr "例えば、i386 ユーザーが Python 2.5.1 を取得するには次のようにします::"
+msgstr ""
+"Por ejemplo, los usuarios de i386 obtienen la versión 2.5.1 de Python "
+"usando::"
 
-#: ../../using/unix.rst:58
+#: ../Doc/using/unix.rst:58
 msgid "On OpenSolaris"
-msgstr "OpenSolaris"
+msgstr "En OpenSolaris"
 
-#: ../../using/unix.rst:60
+#: ../Doc/using/unix.rst:60
 msgid ""
 "You can get Python from `OpenCSW <https://www.opencsw.org/>`_.  Various "
 "versions of Python are available and can be installed with e.g. ``pkgutil -i "
 "python27``."
 msgstr ""
-"`OpenCSW <https://www.opencsw.org/>`_ から Python を入手することができます。 "
-"Python の様々なバージョンが利用可能でインストールすることができます。e.g. "
+"Puede obtener Python de `OpenCSW <https://www.opencsw.org/>`_. Varias "
+"versiones de Python están disponibles y pueden ser instaladas, por ejemplo: "
 "``pkgutil -i python27``."
 
-#: ../../using/unix.rst:67
+#: ../Doc/using/unix.rst:67
 msgid "Building Python"
-msgstr "Python のビルド"
+msgstr "Construyendo Python"
 
-#: ../../using/unix.rst:69
+#: ../Doc/using/unix.rst:69
+#, fuzzy
 msgid ""
 "If you want to compile CPython yourself, first thing you should do is get "
 "the `source <https://www.python.org/downloads/source/>`_. You can download "
@@ -136,68 +137,77 @@ msgid ""
 "devguide.python.org/setup/#get-the-source-code>`_.  (If you want to "
 "contribute patches, you will need a clone.)"
 msgstr ""
+"Si quisiera compilar CPython por sí mismo, lo primero que debería hacer es "
+"obtener la `fuente <https://www.python.org/downloads/source/>`_. Puede "
+"descargar la fuente de la última versión o simplemente obtener un nuevo "
+"`clon <https://devguide.python.org/setup/#getting-the-source-code>`_. Si "
+"desea contribuir con parches, necesitará un clon."
 
-#: ../../using/unix.rst:75
+#: ../Doc/using/unix.rst:75
 msgid "The build process consists of the usual commands::"
-msgstr "ビルド手順は通常のコマンドで行います ::"
+msgstr "El proceso de construcción consta de los comandos habituales::"
 
-#: ../../using/unix.rst:81
+#: ../Doc/using/unix.rst:81
 msgid ""
 ":ref:`Configuration options <configure-options>` and caveats for specific "
 "Unix platforms are extensively documented in the :source:`README.rst` file "
 "in the root of the Python source tree."
 msgstr ""
+":ref:`Opciones de configuración <configure-options>` y las advertencias para "
+"plataformas Unix específicas están ampliamente documentadas en el archivo :"
+"source:`README.rst` en la raíz del árbol de fuentes de Python."
 
-#: ../../using/unix.rst:87
+#: ../Doc/using/unix.rst:87
 msgid ""
 "``make install`` can overwrite or masquerade the :file:`python3` binary. "
 "``make altinstall`` is therefore recommended instead of ``make install`` "
 "since it only installs :file:`{exec_prefix}/bin/python{version}`."
 msgstr ""
-"``make install`` は :file:`python3` バイナリを上書きまたはリンクを破壊してし"
-"まうかもしれません。そのため、``make install`` の代わりに :file:"
-"`{exec_prefix}/bin/python{version}` のみインストールする ``make altinstall`` "
-"が推奨されています。"
+"``make install`` puede sobreescribir o enmascarar el binario :file:"
+"`python3`. Por lo tanto se recomienda ``make altinstall`` en lugar de ``make "
+"install`` debido a que sólo instala :file:`{exec_prefix}/bin/python{version}"
+"`."
 
-#: ../../using/unix.rst:93
+#: ../Doc/using/unix.rst:93
 msgid "Python-related paths and files"
-msgstr "Python に関係するパスとファイル"
+msgstr "Rutas y archivos relacionados con Python"
 
-#: ../../using/unix.rst:95
+#: ../Doc/using/unix.rst:95
 msgid ""
 "These are subject to difference depending on local installation "
 "conventions; :envvar:`prefix` (``${prefix}``) and :envvar:`exec_prefix` "
 "(``${exec_prefix}``) are installation-dependent and should be interpreted as "
 "for GNU software; they may be the same."
 msgstr ""
-"これらはローカルインストールの慣例に応じて変化します; :envvar:`prefix` "
-"(``${prefix}``) と :envvar:`exec_prefix` (``${exec_prefix}``) はインストール"
-"状況に依存していて、GNU ソフトウェアによって解釈されます; この二つは同じであ"
-"る場合があります。"
+"Estos están sujetos a diferencias según las convenciones de instalación "
+"locales; :envvar:`prefix` (``${prefix}``) y :envvar:`exec_prefix` "
+"(``${exec_prefix}``) son dependientes de la instalación y deben "
+"interpretarse como software GNU; deben ser iguales."
 
-#: ../../using/unix.rst:100
+#: ../Doc/using/unix.rst:100
 msgid ""
 "For example, on most Linux systems, the default for both is :file:`/usr`."
 msgstr ""
-"例えば、ほとんどの Linux システムでは、両方のデフォルトが :file:`/usr` です。"
+"Por ejemplo, en la mayoría de los sistemas Linux, el valor predeterminado "
+"para ambos es :file:`/usr`."
 
-#: ../../using/unix.rst:103
+#: ../Doc/using/unix.rst:103
 msgid "File/directory"
-msgstr "ファイル/ディレクトリ"
+msgstr "Archivo/directorio"
 
-#: ../../using/unix.rst:103
+#: ../Doc/using/unix.rst:103
 msgid "Meaning"
-msgstr "意味"
+msgstr "Significado"
 
-#: ../../using/unix.rst:105
+#: ../Doc/using/unix.rst:105
 msgid ":file:`{exec_prefix}/bin/python3`"
 msgstr ":file:`{exec_prefix}/bin/python3`"
 
-#: ../../using/unix.rst:105
+#: ../Doc/using/unix.rst:105
 msgid "Recommended location of the interpreter."
-msgstr "インタプリタの推奨される場所"
+msgstr "Ubicación recomendada del intérprete."
 
-#: ../../using/unix.rst:107
+#: ../Doc/using/unix.rst:107
 msgid ""
 ":file:`{prefix}/lib/python{version}`, :file:`{exec_prefix}/lib/"
 "python{version}`"
@@ -205,12 +215,14 @@ msgstr ""
 ":file:`{prefix}/lib/python{version}`, :file:`{exec_prefix}/lib/"
 "python{version}`"
 
-#: ../../using/unix.rst:107
+#: ../Doc/using/unix.rst:107
 msgid ""
 "Recommended locations of the directories containing the standard modules."
-msgstr "標準モジュールを格納するディレクトリの、推奨される場所。"
+msgstr ""
+"Ubicaciones recomendadas de los directorios que contienen los módulos "
+"estándar."
 
-#: ../../using/unix.rst:110
+#: ../Doc/using/unix.rst:110
 msgid ""
 ":file:`{prefix}/include/python{version}`, :file:`{exec_prefix}/include/"
 "python{version}`"
@@ -218,56 +230,59 @@ msgstr ""
 ":file:`{prefix}/include/python{version}`, :file:`{exec_prefix}/include/"
 "python{version}`"
 
-#: ../../using/unix.rst:110
+#: ../Doc/using/unix.rst:110
 msgid ""
 "Recommended locations of the directories containing the include files needed "
 "for developing Python extensions and embedding the interpreter."
 msgstr ""
-"Python 拡張や Python の埋込みに必要となる include ファイルを格納するディレク"
-"トリの推奨される場所。"
+"Ubicaciones recomendadas de los directorios que contienen los archivos de "
+"inclusión necesarios para desarrollar extensiones de Python e incrustar el "
+"intérprete."
 
-#: ../../using/unix.rst:118
+#: ../Doc/using/unix.rst:118
 msgid "Miscellaneous"
-msgstr "その他"
+msgstr "Miscelánea"
 
-#: ../../using/unix.rst:120
+#: ../Doc/using/unix.rst:120
 msgid ""
 "To easily use Python scripts on Unix, you need to make them executable, e.g. "
 "with"
 msgstr ""
-"Python スクリプトを Unix で簡単に使うためには、例えば次のようにしてスクリプト"
-"を実行可能ファイルにし、"
+"Para usar fácilmente los scripts de Python en Unix, debe hacerlos "
+"ejecutables, p. ej. con"
 
-#: ../../using/unix.rst:127
+#: ../Doc/using/unix.rst:127
 msgid ""
 "and put an appropriate Shebang line at the top of the script.  A good choice "
 "is usually ::"
 msgstr ""
-"適切な shebang 行をスクリプトの先頭に置きます。たいていの場合良い方法は ::"
+"y coloque una línea *Shebang* adecuada en la parte superior del script. Una "
+"buena opción es usualmente ::"
 
-#: ../../using/unix.rst:132
+#: ../Doc/using/unix.rst:132
 msgid ""
 "which searches for the Python interpreter in the whole :envvar:`PATH`.  "
 "However, some Unices may not have the :program:`env` command, so you may "
 "need to hardcode ``/usr/bin/python3`` as the interpreter path."
 msgstr ""
-"で、:envvar:`PATH` 全体から Python インタープリターを探します。しかし、いくつ"
-"かの Unix は :program:`env` コマンドを持たないので、インタープリターのパスを "
-"``/usr/bin/python3`` のようにハードコードしなければならないかもしれません。"
+"que busca el intérprete de Python en el conjunto :envvar:`PATH`. Sin "
+"embargo, algunos Unices puede que no tengan el comando :program:`env`, por "
+"lo que es posible que deba codificar ``/usr/bin/python3`` como la ruta "
+"intérprete."
 
-#: ../../using/unix.rst:136
+#: ../Doc/using/unix.rst:136
 msgid ""
 "To use shell commands in your Python scripts, look at the :mod:`subprocess` "
 "module."
 msgstr ""
-"シェルコマンドを Python スクリプトから使うには、 :mod:`subprocess` モジュール"
-"を参照してください。"
+"Para usar comandos de shell en sus scripts de Python, mire el módulo :mod:"
+"`subprocess`."
 
-#: ../../using/unix.rst:141
+#: ../Doc/using/unix.rst:141
 msgid "Custom OpenSSL"
-msgstr ""
+msgstr "OpenSSL personalizado"
 
-#: ../../using/unix.rst:143
+#: ../Doc/using/unix.rst:143
 msgid ""
 "To use your vendor's OpenSSL configuration and system trust store, locate "
 "the directory with ``openssl.cnf`` file or symlink in ``/etc``. On most "
@@ -275,22 +290,36 @@ msgid ""
 "directory should also contain a ``cert.pem`` file and/or a ``certs`` "
 "directory."
 msgstr ""
+"Para utilizar la configuración de OpenSSL de su proveedor y el almacén de "
+"confianza del sistema, busque el directorio con el archivo ``openssl.cnf`` o "
+"el enlace simbólico en ``/etc``. En la mayoría de las distribuciones, el "
+"archivo está en ``/etc/ssl`` o ``/etc/pki/tls``. El directorio también debe "
+"contener un archivo ``cert.pem`` y / o un directorio ``certs``."
 
-#: ../../using/unix.rst:154
+#: ../Doc/using/unix.rst:154
 msgid ""
 "Download, build, and install OpenSSL. Make sure you use ``install_sw`` and "
 "not ``install``. The ``install_sw`` target does not override ``openssl.cnf``."
 msgstr ""
+"Descargue, compile e instale OpenSSL. Asegúrese de utilizar ``install_sw`` y "
+"no ``install``. El destino ``install_sw`` no anula ``openssl.cnf``."
 
-#: ../../using/unix.rst:172
+#: ../Doc/using/unix.rst:172
+#, fuzzy
 msgid ""
 "Build Python with custom OpenSSL (see the configure ``--with-openssl`` and "
 "``--with-openssl-rpath`` options)"
 msgstr ""
+"Compile Python con OpenSSL personalizado (consulte las opciones configure `--"
+"with-openssl` y` --with-openssl-rpath`)"
 
-#: ../../using/unix.rst:187
+#: ../Doc/using/unix.rst:187
 msgid ""
 "Patch releases of OpenSSL have a backwards compatible ABI. You don't need to "
 "recompile Python to update OpenSSL. It's sufficient to replace the custom "
 "OpenSSL installation with a newer version."
 msgstr ""
+"Las versiones de parche de OpenSSL tienen una ABI compatible con versiones "
+"anteriores. No es necesario volver a compilar Python para actualizar "
+"OpenSSL. Es suficiente reemplazar la instalación personalizada de OpenSSL "
+"con una versión más nueva."

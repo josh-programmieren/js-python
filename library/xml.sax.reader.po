@@ -1,53 +1,52 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:18+0000\n"
-"Last-Translator: Osamu NAKAMURA, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2020-05-05 12:54+0200\n"
+"PO-Revision-Date: 2020-10-20 21:56-0300\n"
+"Language-Team: python-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Enrique Giménez <fenriquegimenez@gmail.com>\n"
+"Language: es_AR\n"
+"X-Generator: Poedit 2.4.1\n"
 
-#: ../../library/xml.sax.reader.rst:2
+#: ../Doc/library/xml.sax.reader.rst:2
 msgid ":mod:`xml.sax.xmlreader` --- Interface for XML parsers"
-msgstr ":mod:`xml.sax.xmlreader` --- XML パーサのインターフェース"
+msgstr ":mod:`xml.sax.xmlreader` --- Interfaz para analizadores XML"
 
-#: ../../library/xml.sax.reader.rst:10
+#: ../Doc/library/xml.sax.reader.rst:10
 msgid "**Source code:** :source:`Lib/xml/sax/xmlreader.py`"
-msgstr "**ソースコード:** :source:`Lib/xml/sax/xmlreader.py`"
+msgstr "**Código fuente:** :source:`Lib/xml/sax/xmlreader.py`"
 
-#: ../../library/xml.sax.reader.rst:14
+#: ../Doc/library/xml.sax.reader.rst:14
 msgid ""
 "SAX parsers implement the :class:`XMLReader` interface. They are implemented "
 "in a Python module, which must provide a function :func:`create_parser`. "
 "This function is invoked by  :func:`xml.sax.make_parser` with no arguments "
 "to create a new  parser object."
 msgstr ""
-"各 SAX パーサは Python モジュールとして :class:`XMLReader` インターフェースを"
-"実装しており、関数 :func:`create_parser` を提供しています。この関数は新たな"
-"パーサ・オブジェクトを生成する際、 :func:`xml.sax.make_parser` から引数なしで"
-"呼び出されます。"
+"Los analizadores SAX implementan la interfaz :class:`XMLReader`. Están "
+"implementados en un módulo Python, que debe proveer una función :func:"
+"`create_parser`. Esta función es invocada por :func:`xml.sax.make_parser` "
+"sin argumentos para crear un nuevo objeto analizador."
 
-#: ../../library/xml.sax.reader.rst:22
+#: ../Doc/library/xml.sax.reader.rst:22
 msgid "Base class which can be inherited by SAX parsers."
-msgstr "SAX パーサが継承可能な基底クラスです。"
+msgstr "Clase base que puede ser heredada por analizadores SAX."
 
-#: ../../library/xml.sax.reader.rst:27
+#: ../Doc/library/xml.sax.reader.rst:27
 msgid ""
 "In some cases, it is desirable not to parse an input source at once, but to "
 "feed chunks of the document as they get available. Note that the reader will "
@@ -56,91 +55,96 @@ msgid ""
 "interfaces should be used if the blocking behaviour of :meth:`parse` is not "
 "desirable."
 msgstr ""
-"入力ソースを一度にパースするのではなく、ドキュメントのチャンクが利用可能にな"
-"るごとに取得したいことがあります。SAX リーダは通常、ファイル全体を一気に読み"
-"込まず、チャンク単位で処理するのですが、全体の処理が終わるまで :meth:`parse` "
-"は返りません。そのため、 :meth:`parse` の排他的挙動を望まないときにこれらのイ"
-"ンターフェースを使用してください。"
+"En algunos casos, es deseable no analizar una fuente de entrada a la vez, si "
+"no alimentar partes del documento a medida que estén disponibles. Tenga en "
+"cuenta que el lector normalmente no leerá el fichero completo, si no que "
+"también lo leerá por partes, aún así :meth:`parse` no retornará hasta que el "
+"documento por completo es procesado. Por lo tanto, estas interfaces deben "
+"utilizarse si el comportamiento de bloqueo :meth:`parse` no es deseable."
 
-#: ../../library/xml.sax.reader.rst:33
+#: ../Doc/library/xml.sax.reader.rst:33
 msgid ""
 "When the parser is instantiated it is ready to begin accepting data from the "
 "feed method immediately. After parsing has been finished with a call to "
 "close the reset method must be called to make the parser ready to accept new "
 "data, either from feed or using the parse method."
 msgstr ""
-"パーサのインスタンスが作成されるとすぐに、feed メソッドを通じてデータを受け入"
-"れられるようになります。パースが完了して閉じるための呼び出しが行われた後、"
-"パーサがフィードからまたはパースメソッドを使用して新しいデータを受け入れられ"
-"るように、reset メソッドが呼び出される必要があります。"
+"Cuando se crea una instancia del analizador, está listo para comenzar a "
+"aceptar información desde el método de alimentación inmediatamente. Después "
+"de que el análisis ha finalizado con una llamada para cerrar, se debe llamar "
+"al método de reinicio para que el analizador esté listo para aceptar "
+"información nueva, ya sea de la fuente o utilizando el método de análisis."
 
-#: ../../library/xml.sax.reader.rst:38
+#: ../Doc/library/xml.sax.reader.rst:38
 msgid ""
 "Note that these methods must *not* be called during parsing, that is, after "
 "parse has been called and before it returns."
 msgstr ""
-"これらのメソッドをパース処理の途中で呼び出すことはできません。つまり、パース"
-"が実行された後で、パーサから return する前に呼び出す必要があるのです。"
+"Tenga en cuenta que estos métodos *no* deben ser llamados durante el "
+"análisis, es decir, después de que el análisis ha sido llamado y antes de "
+"que regrese."
 
-#: ../../library/xml.sax.reader.rst:41
+#: ../Doc/library/xml.sax.reader.rst:41
 msgid ""
 "By default, the class also implements the parse method of the XMLReader "
 "interface using the feed, close and reset methods of the IncrementalParser "
 "interface as a convenience to SAX 2.0 driver writers."
 msgstr ""
-"デフォルトでは、SAX 2.0 ドライバを書く人のために、このクラスは "
-"IncrementalParser の feed、close、reset メソッドを使って XMLReader インター"
-"フェースの parse メソッドを実装しています。"
+"Por defecto, la clase también implementa el método de análisis de la "
+"interfaz XMLReader utilizando los métodos de alimentación, cierre y reinicio "
+"de la interfaz IncrementalParser en conveniencia a los escritores de "
+"controlador SAX 2.0."
 
-#: ../../library/xml.sax.reader.rst:48
+#: ../Doc/library/xml.sax.reader.rst:48
 msgid ""
 "Interface for associating a SAX event with a document location. A locator "
 "object will return valid results only during calls to DocumentHandler "
 "methods; at any other time, the results are unpredictable. If information is "
 "not available, methods may return ``None``."
 msgstr ""
-"SAX イベントと文書の位置を関連付けるインターフェースです。locator オブジェク"
-"トは DocumentHandler メソッドを呼び出している間だけ正しい結果を返し、それ以外"
-"とのときは、予測できない結果を返します。情報を利用できない場合、メソッドは "
-"``None`` を返すこともあります。"
+"La interfaz para asociar un evento SAX con una ubicación del documento. Un "
+"objeto localizador retornará resultados válidos sólo durante llamadas a "
+"métodos DocumentHandler; en cualquier otro momento, los resultados son "
+"impredecibles. Si la información no está disponible, los métodos pueden "
+"retornar ``None``."
 
-#: ../../library/xml.sax.reader.rst:56
+#: ../Doc/library/xml.sax.reader.rst:56
 msgid ""
 "Encapsulation of the information needed by the :class:`XMLReader` to read "
 "entities."
 msgstr ""
-":class:`XMLReader` がエンティティを読み込むために必要な情報をカプセル化しま"
-"す。"
+"La encapsulación de la información necesaria por el :class:`XMLReader` para "
+"leer entidades."
 
-#: ../../library/xml.sax.reader.rst:59
+#: ../Doc/library/xml.sax.reader.rst:59
 msgid ""
 "This class may include information about the public identifier, system "
 "identifier, byte stream (possibly with character encoding information) and/"
 "or the character stream of an entity."
 msgstr ""
-"このクラスには公開識別子、システム識別子、(場合によっては文字エンコーディング"
-"情報を含む) バイト・ストリーム、そしてエンティティの文字ストリームなどの情報"
-"が含まれます。"
+"Esta clase puede incluir información sobre el identificador público, "
+"identificador del sistema, flujo de bytes (posiblemente con la información "
+"de codificación de caracteres) y/o el flujo de caracteres de una entidad."
 
-#: ../../library/xml.sax.reader.rst:63
+#: ../Doc/library/xml.sax.reader.rst:63
 msgid ""
 "Applications will create objects of this class for use in the :meth:"
 "`XMLReader.parse` method and for returning from EntityResolver.resolveEntity."
 msgstr ""
-"アプリケーションは :meth:`XMLReader.parse` メソッドでの使用や EntityResolver."
-"resolveEntity の戻り値としてこのオブジェトを作成します。"
+"Las aplicaciones crearán objetos de esta clase para uso en el método :meth:"
+"`XMLReader.parse` y para retornar desde EntityResolver.resolveEntity."
 
-#: ../../library/xml.sax.reader.rst:67
+#: ../Doc/library/xml.sax.reader.rst:67
 msgid ""
 "An :class:`InputSource` belongs to the application, the :class:`XMLReader` "
 "is not allowed to modify :class:`InputSource` objects passed to it from the "
 "application, although it may make copies and modify those."
 msgstr ""
-":class:`InputSource` はアプリケーションに属します。 :class:`XMLReader` はアプ"
-"リケーションから渡された :class:`InputSource` オブジェクトの変更を許可されて"
-"いませんが、コピーを作ってそれを変更することは可能です。"
+"Una :class:`InputSource` pertenece a la aplicación, el :class:`XMLReader` no "
+"tiene permitido modificar objetos :class:`InputSource` pasados desde la "
+"aplicación, a pesar de que puede hacer copias y modificarlas."
 
-#: ../../library/xml.sax.reader.rst:74
+#: ../Doc/library/xml.sax.reader.rst:74
 msgid ""
 "This is an implementation of the :class:`Attributes` interface (see section :"
 "ref:`attributes-objects`).  This is a dictionary-like object which "
@@ -150,14 +154,16 @@ msgid ""
 "instantiated by readers; *attrs* must be a dictionary-like object containing "
 "a mapping from attribute names to attribute values."
 msgstr ""
-":class:`Attributes` インターフェース (:ref:`attributes-objects` 参照) の実装"
-"です。これは辞書風のオブジェクトで、 :meth:`startElement` 内で要素の属性を表"
-"示します。最も有用な辞書操作に加え、インターフェースに記述されているメソッド"
-"を多数サポートしています。このクラスのオブジェクトはリーダによってインスタン"
-"ス化されなければなりません。*attrs* は属性名と属性値の対応付けを含む辞書風オ"
-"ブジェクトでなければなりません。"
+"Esta es una implementación de la interfaz :class:`Attributes` (vea la "
+"sección :ref:`attributes-objects`). Este es un objeto de tipo diccionario "
+"que representa los atributos de elemento en una llamada :meth:"
+"`startElement`. En adición a las operaciones de diccionario más útiles, "
+"soporta una serie de otros métodos como se describe en la interfaz. Los "
+"lectores deben crear una instancia de los objetos de esta clase; *attrs* "
+"debe ser un objeto de tipo diccionario que contenga un mapeo de nombres de "
+"atributo a valores de atributo."
 
-#: ../../library/xml.sax.reader.rst:85
+#: ../Doc/library/xml.sax.reader.rst:85
 msgid ""
 "Namespace-aware variant of :class:`AttributesImpl`, which will be passed to :"
 "meth:`startElementNS`. It is derived from :class:`AttributesImpl`, but "
@@ -166,22 +172,22 @@ msgid ""
 "they appear in the original document.  This class implements the :class:"
 "`AttributesNS` interface (see section :ref:`attributes-ns-objects`)."
 msgstr ""
-":class:`AttributesImpl` を名前空間認識型に改良したクラスで、 :meth:"
-"`startElementNS` に渡されます。 :class:`AttributesImpl` の派生クラスですが、 "
-"*namespaceURI* と *localname* の2要素のタプルを解釈します。さらに、元の文書に"
-"出てくる修飾名を返す多くのメソッドを提供します。このクラスは :class:"
-"`AttributesNS` インターフェース (:ref:`attributes-ns-objects` 参照) の実装で"
-"す。"
+"Variante consciente del espacio de nombres de :class:`AttributesImpl`, que "
+"se pasará a :meth:`startElementNS`. Es derivada de :class:`AttributesImpl`, "
+"pero entiende nombres de atributo como dos tuplas de *namespaceURI* y "
+"*localname*. En adición, provee una serie de métodos esperando nombres "
+"calificados como aparecen en el documento original. Esta clase implementa la "
+"interfaz :class:`AttributesNS` (vea la sección :ref:`attributes-ns-objects`)."
 
-#: ../../library/xml.sax.reader.rst:96
+#: ../Doc/library/xml.sax.reader.rst:96
 msgid "XMLReader Objects"
-msgstr "XMLReader オブジェクト"
+msgstr "Objetos XMLReader"
 
-#: ../../library/xml.sax.reader.rst:98
+#: ../Doc/library/xml.sax.reader.rst:98
 msgid "The :class:`XMLReader` interface supports the following methods:"
-msgstr ":class:`XMLReader` は次のメソッドをサポートします:"
+msgstr "La interfaz :class:`XMLReader` soporta los siguientes métodos:"
 
-#: ../../library/xml.sax.reader.rst:103
+#: ../Doc/library/xml.sax.reader.rst:103
 msgid ""
 "Process an input source, producing SAX events. The *source* object can be a "
 "system identifier (a string identifying the input source -- typically a file "
@@ -190,289 +196,305 @@ msgid ""
 "returns, the input is completely processed, and the parser object can be "
 "discarded or reset."
 msgstr ""
-"入力ソースを処理し、SAX イベントを作成します。 *source* オブジェクトはシステ"
-"ム識別子 (入力ソースを特定する文字列 -- 一般にファイル名や URL)、 :class:"
-"`pathlib.Path` オブジェクトか :term:`path-like <path-like object>` オブジェク"
-"トまたは :class:`InputSource` オブジェクトです。 :meth:`parse` が return した"
-"とき、入力データの処理は完了し、パーサ・オブジェクトは破棄ないしリセットされ"
-"ます。"
+"Procesa una fuente de entrada, produciendo eventos SAX. El objeto *source* "
+"puede ser un identificador de sistema (una cadena identificando la fuente de "
+"entrada -- típicamente un nombre de fichero o una URL), un :class:`pathlib."
+"Path` o un objeto :term:`path-like <path-like object>`, o un objeto :class:"
+"`InputSource`. Cuando :meth:`parse` retorna, la entrada es procesada "
+"completamente, y el objeto analizador puede ser descartado o reiniciado."
 
-#: ../../library/xml.sax.reader.rst:110
+#: ../Doc/library/xml.sax.reader.rst:110
 msgid "Added support of character streams."
-msgstr "文字ストリームがサポートされました。"
+msgstr "Agregado soporte de flujo de caracteres."
 
-#: ../../library/xml.sax.reader.rst:113
+#: ../Doc/library/xml.sax.reader.rst:113
 msgid "Added support of path-like objects."
-msgstr "path-like オブジェクトのサポートが追加されました。"
+msgstr "Agregado soporte de objetos path-like."
 
-#: ../../library/xml.sax.reader.rst:119
+#: ../Doc/library/xml.sax.reader.rst:119
 msgid "Return the current :class:`~xml.sax.handler.ContentHandler`."
-msgstr "現在の :class:`~xml.sax.handler.ContentHandler` を返します。"
+msgstr "Retorna el :class:`~xml.sax.handler.ContentHandler` actual."
 
-#: ../../library/xml.sax.reader.rst:124
+#: ../Doc/library/xml.sax.reader.rst:124
 msgid ""
 "Set the current :class:`~xml.sax.handler.ContentHandler`.  If no :class:"
 "`~xml.sax.handler.ContentHandler` is set, content events will be discarded."
 msgstr ""
-"現在の :class:`~xml.sax.handler.ContentHandler` を設定します。 :class:`~xml."
-"sax.handler.ContentHandler` が設定されていない場合、内容イベントは破棄されま"
-"す。"
+"Establece el :class:`~xml.sax.handler.ContentHandler` actual. Si ningún :"
+"class:`~xml.sax.handler.ContentHandler` es establecido, los eventos de "
+"contenido serán descartados."
 
-#: ../../library/xml.sax.reader.rst:131
+#: ../Doc/library/xml.sax.reader.rst:131
 msgid "Return the current :class:`~xml.sax.handler.DTDHandler`."
-msgstr "現在の :class:`~xml.sax.handler.DTDHandler` を返します。"
+msgstr "Retorna el :class:`~xml.sax.handler.DTDHandler` actual."
 
-#: ../../library/xml.sax.reader.rst:136
+#: ../Doc/library/xml.sax.reader.rst:136
 msgid ""
 "Set the current :class:`~xml.sax.handler.DTDHandler`.  If no :class:`~xml."
 "sax.handler.DTDHandler` is set, DTD events will be discarded."
 msgstr ""
-"現在の :class:`~xml.sax.handler.DTDHandler` を返します。 :class:`~xml.sax."
-"handler.DTDHandler` が設定されていな場合、DTD イベントは破棄されます。"
+"Establece el :class:`~xml.sax.handler.DTDHandler` actual. Si ningún :class:"
+"`~xml.sax.handler.DTDHandler` es establecido, los eventos DTD serán "
+"descartados."
 
-#: ../../library/xml.sax.reader.rst:143
+#: ../Doc/library/xml.sax.reader.rst:143
 msgid "Return the current :class:`~xml.sax.handler.EntityResolver`."
-msgstr "現在の :class:`~xml.sax.handler.EntityResolver` を返します。"
+msgstr "Retorna el :class:`~xml.sax.handler.EntityResolver` actual."
 
-#: ../../library/xml.sax.reader.rst:148
+#: ../Doc/library/xml.sax.reader.rst:148
 msgid ""
 "Set the current :class:`~xml.sax.handler.EntityResolver`.  If no :class:"
 "`~xml.sax.handler.EntityResolver` is set, attempts to resolve an external "
 "entity will result in opening the system identifier for the entity, and fail "
 "if it is not available."
 msgstr ""
-"現在の :class:`~xml.sax.handler.EntityResolver` を返します。 :class:`~xml."
-"sax.handler.EntityResolver` が設定されていない場合、外部エンティティの解決を"
-"試行することでエンティティのシステム識別子が開かれます。利用できない場合は失"
-"敗します。"
+"Establece el :class:`~xml.sax.handler.EntityResolver` actual. Si ningún :"
+"class:`~xml.sax.handler.EntityResolver` es establecido, los intentos de "
+"resolver una entidad externa resultarán en la apertura del identificador de "
+"sistema para la entidad, y un error si no está disponible."
 
-#: ../../library/xml.sax.reader.rst:156
+#: ../Doc/library/xml.sax.reader.rst:156
 msgid "Return the current :class:`~xml.sax.handler.ErrorHandler`."
-msgstr "現在の :class:`~xml.sax.handler.ErrorHandler` を返します。"
+msgstr "Retorna el :class:`~xml.sax.handler.ErrorHandler` actual."
 
-#: ../../library/xml.sax.reader.rst:161
+#: ../Doc/library/xml.sax.reader.rst:161
 msgid ""
 "Set the current error handler.  If no :class:`~xml.sax.handler.ErrorHandler` "
 "is set, errors will be raised as exceptions, and warnings will be printed."
 msgstr ""
-"現在のエラーハンドラを設定します。:class:`~xml.sax.handler.ErrorHandler` が設"
-"定されていない場合、エラーが例外として送出され、警告が表示されます。"
+"Establece el manejador de errores actual. Si ningún :class:`~xml.sax.handler."
+"ErrorHandler` es establecido, se lanzarán errores como excepciones, y se "
+"imprimirán alertas."
 
-#: ../../library/xml.sax.reader.rst:167
+#: ../Doc/library/xml.sax.reader.rst:167
 msgid "Allow an application to set the locale for errors and warnings."
-msgstr "アプリケーションにエラーや警告のロケール設定を許可します。"
+msgstr ""
+"Permite a una aplicación establecer la configuración local para errores y "
+"alertas."
 
-#: ../../library/xml.sax.reader.rst:169
+#: ../Doc/library/xml.sax.reader.rst:169
 msgid ""
 "SAX parsers are not required to provide localization for errors and "
 "warnings; if they cannot support the requested locale, however, they must "
 "raise a SAX exception.  Applications may request a locale change in the "
 "middle of a parse."
 msgstr ""
-"SAX パーサにとって、エラーや警告の地域化は必須ではありません。しかし、パーサ"
-"が要求されたロケールをサポートしていない場合、SAX 例外を送出しなければなりま"
-"せん。アプリケーションはパースの途中でロケールの変更を要求することができま"
-"す。"
+"Analizadores SAX no son requeridos para proveer localización para errores y "
+"alertas; si no pueden soportar la configuración local solicitada, de "
+"cualquier forma, lanzarán una excepción SAX. Las aplicaciones pueden "
+"solicitar un cambio local en medio del análisis."
 
-#: ../../library/xml.sax.reader.rst:176
+#: ../Doc/library/xml.sax.reader.rst:176
 msgid ""
 "Return the current setting for feature *featurename*.  If the feature is not "
 "recognized, :exc:`SAXNotRecognizedException` is raised. The well-known "
 "featurenames are listed in the module :mod:`xml.sax.handler`."
 msgstr ""
-"機能 *featurename* の現在の設定を返します。その機能が認識できないときは、 :"
-"exc:`SAXNotRecognizedException` を送出します。有名な機能名はモジュール :mod:"
-"`xml.sax.handler` に列挙されています。"
+"Retorna la configuración actual para la característica *featurename*. Si la "
+"característica no es reconocida, :exc:`SAXNotRecognizedException` es "
+"lanzada. Los bien conocidos featurenames son listados en el módulo :mod:`xml."
+"sax.handler`."
 
-#: ../../library/xml.sax.reader.rst:183
+#: ../Doc/library/xml.sax.reader.rst:183
 msgid ""
 "Set the *featurename* to *value*. If the feature is not recognized, :exc:"
 "`SAXNotRecognizedException` is raised. If the feature or its setting is not "
 "supported by the parser, *SAXNotSupportedException* is raised."
 msgstr ""
-"機能名 *featurename* に値 *value* を設定します。その機能が認識できないとき"
-"は、 :exc:`SAXNotRecognizedException` を送出します。また、パーサが指定された"
-"機能や設定をサポートしていないときは、 :exc:`SAXNotSupportedException` を送出"
-"します。"
+"Establece el *featurename* a *value*. Si la característica no es "
+"reconocida, :exc:`SAXNotRecognizedException` es lanzada. Si la "
+"característica o su configuración no es soportada por el analizador, "
+"*SAXNotSupportedException* es lanzada."
 
-#: ../../library/xml.sax.reader.rst:190
+#: ../Doc/library/xml.sax.reader.rst:190
 msgid ""
 "Return the current setting for property *propertyname*. If the property is "
 "not recognized, a :exc:`SAXNotRecognizedException` is raised. The well-known "
 "propertynames are listed in the module :mod:`xml.sax.handler`."
 msgstr ""
-"属性名 *propertyname* の現在の値を返します。その属性が認識できないときは、 :"
-"exc:`SAXNotRecognizedException` を送出します。有名な属性名はモジュール :mod:"
-"`xml.sax.handler` に列挙されています。"
+"Retorna la configuración actual para la propiedad *propertyname*. Si la "
+"configuración no es reconocida, una :exc:`SAXNotRecognizedException` es "
+"lanzada. Las bien conocidas propertynames son listadas en el módulo  :mod:"
+"`xml.sax.handler`."
 
-#: ../../library/xml.sax.reader.rst:197
+#: ../Doc/library/xml.sax.reader.rst:197
 msgid ""
 "Set the *propertyname* to *value*. If the property is not recognized, :exc:"
 "`SAXNotRecognizedException` is raised. If the property or its setting is not "
 "supported by the parser, *SAXNotSupportedException* is raised."
 msgstr ""
-"属性名 *propertyname* に値 *value* を設定します。その機能が認識できないとき"
-"は、 :exc:`SAXNotRecognizedException` を送出します。また、パーサが指定された"
-"機能や設定をサポートしていないときは、 :exc:`SAXNotSupportedException` を送出"
-"します。"
+"Establece el *propertyname* a *value*. Si la propiedad no es reconocida, :"
+"exc:`SAXNotRecognizedException` es lanzada. Si la propiedad o su "
+"configuración no es soportada por el analizador, *SAXNotSupportedException* "
+"es lanzada."
 
-#: ../../library/xml.sax.reader.rst:205
+#: ../Doc/library/xml.sax.reader.rst:205
 msgid "IncrementalParser Objects"
-msgstr "IncrementalParser オブジェクト"
+msgstr "Objetos IncrementalParser"
 
-#: ../../library/xml.sax.reader.rst:207
+#: ../Doc/library/xml.sax.reader.rst:207
 msgid ""
 "Instances of :class:`IncrementalParser` offer the following additional "
 "methods:"
 msgstr ""
-":class:`IncrementalParser` のインスタンスは次の追加メソッドを提供します:"
+"Las instancias de :class:`IncrementalParser` ofrecen los siguientes métodos "
+"adicionales:"
 
-#: ../../library/xml.sax.reader.rst:212
+#: ../Doc/library/xml.sax.reader.rst:212
 msgid "Process a chunk of *data*."
-msgstr "*data* のチャンクを処理します。"
+msgstr "Procesa una parte de *data*."
 
-#: ../../library/xml.sax.reader.rst:217
+#: ../Doc/library/xml.sax.reader.rst:217
 msgid ""
 "Assume the end of the document. That will check well-formedness conditions "
 "that can be checked only at the end, invoke handlers, and may clean up "
 "resources allocated during parsing."
 msgstr ""
-"文書の終端を決定します。文書の適格性を調べ (終端でのみ可能)、ハンドラを起動"
-"し、パース時に割り当てた資源を解放します。"
+"Asume el fin del documento. Eso verificará las condiciones bien formadas que "
+"pueden ser verificadas sólo al final, invocar manejadores, y puede limpiar "
+"los recursos asignados durante el análisis."
 
-#: ../../library/xml.sax.reader.rst:224
+#: ../Doc/library/xml.sax.reader.rst:224
 msgid ""
 "This method is called after close has been called to reset the parser so "
 "that it is ready to parse new documents. The results of calling parse or "
 "feed after close without calling reset are undefined."
 msgstr ""
-"このメソッドは close が呼び出された後、新しい文書をパースできるように、パーサ"
-"をリセットするのに呼び出されます。close 後 reset を呼び出さずに parse や "
-"feed を呼び出した場合の戻り値は未定義です。"
+"Este método es llamado después de que el cierre ha sido llamado para "
+"restablecer el analizador, de forma que esté listo para analizar nuevos "
+"documentos. Los resultados de llamar parse o feed después del cierre sin "
+"llamar a reset son indefinidos."
 
-#: ../../library/xml.sax.reader.rst:232
+#: ../Doc/library/xml.sax.reader.rst:232
 msgid "Locator Objects"
-msgstr "Locator オブジェクト"
+msgstr "Objetos localizadores"
 
-#: ../../library/xml.sax.reader.rst:234
+#: ../Doc/library/xml.sax.reader.rst:234
 msgid "Instances of :class:`Locator` provide these methods:"
-msgstr ":class:`Locator` のインスタンスは次のメソッドを提供します:"
+msgstr "Las instancias de :class:`Locator` proveen estos métodos:"
 
-#: ../../library/xml.sax.reader.rst:239
+#: ../Doc/library/xml.sax.reader.rst:239
 msgid "Return the column number where the current event begins."
-msgstr "現在のイベントが開始する列番号を返します。"
+msgstr "Retorna el número de columna donde el evento actual comienza."
 
-#: ../../library/xml.sax.reader.rst:244
+#: ../Doc/library/xml.sax.reader.rst:244
 msgid "Return the line number where the current event begins."
-msgstr "現在のイベントが開始する行番号を返します。"
+msgstr "Retorna el número de línea donde el evento actual comienza."
 
-#: ../../library/xml.sax.reader.rst:249
+#: ../Doc/library/xml.sax.reader.rst:249
 msgid "Return the public identifier for the current event."
-msgstr "現在の文書イベントの公開識別子を返します。"
+msgstr "Retorna el identificador público para el evento actual."
 
-#: ../../library/xml.sax.reader.rst:254
+#: ../Doc/library/xml.sax.reader.rst:254
 msgid "Return the system identifier for the current event."
-msgstr "現在のイベントのシステム識別子を返します。"
+msgstr "Retorna el identificador de sistema para el evento actual."
 
-#: ../../library/xml.sax.reader.rst:260
+#: ../Doc/library/xml.sax.reader.rst:260
 msgid "InputSource Objects"
-msgstr "InputSource オブジェクト"
+msgstr "Objetos InputSource"
 
-#: ../../library/xml.sax.reader.rst:265
+#: ../Doc/library/xml.sax.reader.rst:265
 msgid "Sets the public identifier of this :class:`InputSource`."
-msgstr "この :class:`InputSource` の公開識別子を設定します。"
+msgstr "Establece el identificador público de esta :class:`InputSource`."
 
-#: ../../library/xml.sax.reader.rst:270
+#: ../Doc/library/xml.sax.reader.rst:270
 msgid "Returns the public identifier of this :class:`InputSource`."
-msgstr "この :class:`InputSource` の公開識別子を返します。"
+msgstr "Retorna el identificador público para esta :class:`InputSource`."
 
-#: ../../library/xml.sax.reader.rst:275
+#: ../Doc/library/xml.sax.reader.rst:275
 msgid "Sets the system identifier of this :class:`InputSource`."
-msgstr "この :class:`InputSource` のシステム識別子を設定します。"
+msgstr "Establece el identificador de sistema de esta :class:`InputSource`."
 
-#: ../../library/xml.sax.reader.rst:280
+#: ../Doc/library/xml.sax.reader.rst:280
 msgid "Returns the system identifier of this :class:`InputSource`."
-msgstr "この :class:`InputSource` のシステム識別子を返します。"
+msgstr "Retorna el identificador de sistema para esta :class:`InputSource`."
 
-#: ../../library/xml.sax.reader.rst:285
+#: ../Doc/library/xml.sax.reader.rst:285
 msgid "Sets the character encoding of this :class:`InputSource`."
-msgstr "この :class:`InputSource` の文字エンコーディングを設定します。"
+msgstr ""
+"Establece la codificación de caracteres para esta :class:`InputSource`."
 
-#: ../../library/xml.sax.reader.rst:287
+#: ../Doc/library/xml.sax.reader.rst:287
 msgid ""
 "The encoding must be a string acceptable for an XML encoding declaration "
 "(see section 4.3.3 of the XML recommendation)."
 msgstr ""
-"エンコーディングは XML エンコーディング宣言として受け入れられる文字列でなけれ"
-"ばなりません (XML 勧告の 4.3.3 節を参照)。"
+"La codificación debe ser una cadena aceptable para una declaración de "
+"codificación XML (vea la sección 4.3.3 de la recomendación XML)."
 
-#: ../../library/xml.sax.reader.rst:290
+#: ../Doc/library/xml.sax.reader.rst:290
 msgid ""
 "The encoding attribute of the :class:`InputSource` is ignored if the :class:"
 "`InputSource` also contains a character stream."
 msgstr ""
-":class:`InputSource` も文字ストリームを含んでいた場合、:class:`InputSource` "
-"のエンコーディング属性は無視されます。"
+"El atributo de codificación de la :class:`InputSource` es ignorado si la :"
+"class:`InputSource` contiene también un flujo de caracteres."
 
-#: ../../library/xml.sax.reader.rst:296
+#: ../Doc/library/xml.sax.reader.rst:296
 msgid "Get the character encoding of this InputSource."
-msgstr "この :class:`InputSource` の文字エンコーディングを取得します。"
+msgstr "Obtiene la codificación de caracteres de esta InputSource."
 
-#: ../../library/xml.sax.reader.rst:301
+#: ../Doc/library/xml.sax.reader.rst:301
 msgid "Set the byte stream (a :term:`binary file`) for this input source."
-msgstr "この入力ソースのバイトストリーム (:term:`binary file`) を設定します。"
+msgstr ""
+"Establece el flujo de bytes (un :term:`binary file`) para esta fuente de "
+"entrada."
 
-#: ../../library/xml.sax.reader.rst:303
+#: ../Doc/library/xml.sax.reader.rst:303
 msgid ""
 "The SAX parser will ignore this if there is also a character stream "
 "specified, but it will use a byte stream in preference to opening a URI "
 "connection itself."
 msgstr ""
-"文字ストリームも指定されている場合、SAX パーサはこのバイトストリームを無視し"
-"ますが、URI 接続自体を開くときには優先してバイトストリームを使います。"
+"El analizador SAX ignorará esto si existe también un flujo de caracteres "
+"especificado, pero utilizará un flujo de bytes en preferencia para abrir una "
+"conexión URI en sí."
 
-#: ../../library/xml.sax.reader.rst:306
+#: ../Doc/library/xml.sax.reader.rst:306
 msgid ""
 "If the application knows the character encoding of the byte stream, it "
 "should set it with the setEncoding method."
 msgstr ""
-"アプリケーションがバイトストリームの文字エンコーディングを知っている場合は、"
-"setEncoding メソッドで設定する必要があります。"
+"Si la aplicación conoce la codificación de caracteres del flujo de bytes, "
+"debería establecerla con el método setEncoding."
 
-#: ../../library/xml.sax.reader.rst:312
+#: ../Doc/library/xml.sax.reader.rst:312
 msgid "Get the byte stream for this input source."
-msgstr "この入力ソースのバイトストリームを取得します。"
+msgstr "Obtiene el flujo de bytes para esta fuente de entrada."
 
-#: ../../library/xml.sax.reader.rst:314
+#: ../Doc/library/xml.sax.reader.rst:314
 msgid ""
 "The getEncoding method will return the character encoding for this byte "
 "stream, or ``None`` if unknown."
 msgstr ""
-"getEncoding メソッドは、このバイトストリームの文字エンコーディングを返しま"
-"す。不明なときは ``None`` を返します。"
+"El método getEncoding retornará la codificación de caracteres para este "
+"flujo de bytes, o ``None`` si se desconoce."
 
-#: ../../library/xml.sax.reader.rst:320
+#: ../Doc/library/xml.sax.reader.rst:320
 msgid "Set the character stream (a :term:`text file`) for this input source."
-msgstr "この入力ソースの文字ストリーム (:term:`text file`) を設定します。"
+msgstr ""
+"Establece el flujo de caracteres (un :term:`text file`) para esta fuente de "
+"entrada."
 
-#: ../../library/xml.sax.reader.rst:322
+#: ../Doc/library/xml.sax.reader.rst:322
 msgid ""
 "If there is a character stream specified, the SAX parser will ignore any "
 "byte stream and will not attempt to open a URI connection to the system "
 "identifier."
 msgstr ""
-"文字ストリームが指定された場合、SAX パーサは全バイトストリームを無視し、シス"
-"テム識別子への URI 接続の開始を試みません。"
+"Si existe un flujo de caracteres especificado, el analizador SAX ignorará "
+"cualquier flujo de bytes y no intentará abrir una conexión URI al "
+"identificador de sistema."
 
-#: ../../library/xml.sax.reader.rst:328
+#: ../Doc/library/xml.sax.reader.rst:328
 msgid "Get the character stream for this input source."
-msgstr "この入力ソースの文字ストリームを取得します。"
+msgstr "Obtiene el flujo de caracteres para esta fuente de entrada."
 
-#: ../../library/xml.sax.reader.rst:334
+#: ../Doc/library/xml.sax.reader.rst:334
 msgid "The :class:`Attributes` Interface"
-msgstr ":class:`Attributes` インターフェース"
+msgstr "La Interfaz :class:`Attributes`"
 
-#: ../../library/xml.sax.reader.rst:336
+#: ../Doc/library/xml.sax.reader.rst:336
 msgid ""
 ":class:`Attributes` objects implement a portion of the :term:`mapping "
 "protocol <mapping>`, including the methods :meth:`~collections.abc.Mapping."
@@ -481,60 +503,60 @@ msgid ""
 "keys`, and :meth:`~collections.abc.Mapping.values`.  The following methods "
 "are also provided:"
 msgstr ""
-":class:`Attributes` オブジェクトは :meth:`~collections.abc.Mapping.copy`、:"
-"meth:`~collections.abc.Mapping.get`、:meth:`~object.__contains__`、:meth:"
-"`~collections.abc.Mapping.items`、:meth:`~collections.abc.Mapping.keys`、:"
-"meth:`~collections.abc.Mapping.values` を含む :term:`マッピングプロトコル "
-"<mapping>` の一部を実装しています。以下のメソッドも提供されています:"
+"Los objetos :class:`Attributes` implementa una porción del :term:`mapping "
+"protocol <mapping>`, incluyendo los métodos :meth:`~collections.abc.Mapping."
+"copy`, :meth:`~collections.abc.Mapping.get`, :meth:`~object.__contains__`, :"
+"meth:`~collections.abc.Mapping.items`, :meth:`~collections.abc.Mapping."
+"keys`, y :meth:`~collections.abc.Mapping.values`.  Los siguientes métodos "
+"también son provistos:"
 
-#: ../../library/xml.sax.reader.rst:346
+#: ../Doc/library/xml.sax.reader.rst:346
 msgid "Return the number of attributes."
-msgstr "属性の数を返します。"
+msgstr "Retorna el número de atributos."
 
-#: ../../library/xml.sax.reader.rst:351
+#: ../Doc/library/xml.sax.reader.rst:351
 msgid "Return the names of the attributes."
-msgstr "属性の名前を返します。"
+msgstr "Retorna los nombres de los atributos."
 
-#: ../../library/xml.sax.reader.rst:356
+#: ../Doc/library/xml.sax.reader.rst:356
 msgid ""
 "Returns the type of the attribute *name*, which is normally ``'CDATA'``."
-msgstr "属性名 *name* のタイプを返します。通常は ``'CDATA'`` です。"
+msgstr "Retorna el tipo del atributo *name*, que es normalmente ``'CDATA'``."
 
-#: ../../library/xml.sax.reader.rst:361
+#: ../Doc/library/xml.sax.reader.rst:361
 msgid "Return the value of attribute *name*."
-msgstr "属性 *name* の値を返します。"
+msgstr "Retorna el valor del atributo *name*."
 
-#: ../../library/xml.sax.reader.rst:370
+#: ../Doc/library/xml.sax.reader.rst:370
 msgid "The :class:`AttributesNS` Interface"
-msgstr ":class:`AttributesNS` インターフェース"
+msgstr "La Interfaz :class:`AttributesNS`"
 
-#: ../../library/xml.sax.reader.rst:372
+#: ../Doc/library/xml.sax.reader.rst:372
 msgid ""
 "This interface is a subtype of the :class:`Attributes` interface (see "
 "section :ref:`attributes-objects`).  All methods supported by that interface "
 "are also available on :class:`AttributesNS` objects."
 msgstr ""
-"このインターフェースは :class:`Attributes` インターフェース (:ref:"
-"`attributes-objects` 参照) のサブタイプです。 Attributes インターフェースがサ"
-"ポートしているすべてのメソッドは :class:`AttributesNS` オブジェクトでも利用可"
-"能です。"
+"Esta interfaz es un subtipo de la interfaz :class:`Attributes` (vea la "
+"sección :ref:`attributes-objects`). Todos los métodos soportados por la "
+"interfaz están también disponibles en los objetos :class:`AttributesNS`."
 
-#: ../../library/xml.sax.reader.rst:376
+#: ../Doc/library/xml.sax.reader.rst:376
 msgid "The following methods are also available:"
-msgstr "次のメソッドもサポートされています:"
+msgstr "Los siguientes métodos están también disponibles:"
 
-#: ../../library/xml.sax.reader.rst:381
+#: ../Doc/library/xml.sax.reader.rst:381
 msgid "Return the value for a qualified name."
-msgstr "修飾名の値を返します。"
+msgstr "Retorna el valor para un nombre cualificado."
 
-#: ../../library/xml.sax.reader.rst:386
+#: ../Doc/library/xml.sax.reader.rst:386
 msgid "Return the ``(namespace, localname)`` pair for a qualified *name*."
-msgstr "修飾名 *name* に対応する ``(namespace, localname)`` のペアを返します。"
+msgstr "Retorna el par ``(namespace, localname)`` para un *name* cualificado."
 
-#: ../../library/xml.sax.reader.rst:391
+#: ../Doc/library/xml.sax.reader.rst:391
 msgid "Return the qualified name for a ``(namespace, localname)`` pair."
-msgstr "``(namespace, localname)`` のペアに対応する修飾名を返します。"
+msgstr "Retorna el nombre cualificado para un par ``(namespace, localname)``."
 
-#: ../../library/xml.sax.reader.rst:396
+#: ../Doc/library/xml.sax.reader.rst:396
 msgid "Return the qualified names of all attributes."
-msgstr "すべての属性の修飾名を返します。"
+msgstr "Retorna los nombres cualificados para todos los atributos."

@@ -1,43 +1,48 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:17+0000\n"
-"Last-Translator: Osamu NAKAMURA, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-10-31 09:39+0100\n"
+"Last-Translator: Federico Zuccolo <federico.zuccolo@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 2.3\n"
 
-#: ../../library/uu.rst:2
+# La codificación 'uuencode' figura como 'UUEncode' en la Wikipedia en
+# español.
+#: ../Doc/library/uu.rst:2
 msgid ":mod:`uu` --- Encode and decode uuencode files"
-msgstr ":mod:`uu` --- uuencode形式のエンコードとデコード"
+msgstr ":mod:`uu` --- Codifica y decodifica archivos UUEncode"
 
-#: ../../library/uu.rst:10
+#: ../Doc/library/uu.rst:10
 msgid "**Source code:** :source:`Lib/uu.py`"
-msgstr "**ソースコード:** :source:`Lib/uu.py`"
+msgstr "**Código fuente:** :source:`Lib/uu.py`"
 
-#: ../../library/uu.rst:16
+# Con check spell, localmente recibo un error "<rst-doc>:1: (ERROR/3) PEP number must be a number from 0 to 9999; "PEP 594 <0594#uu-and-the-uu-encoding>" is invalid. while parsing: ".
+# No entiendo mucho de dónde puede venir.
+#: ../Doc/library/uu.rst:16
 msgid ""
 "The :mod:`uu` module is deprecated (see :pep:`PEP 594 <594#uu-and-the-uu-"
 "encoding>` for details). :mod:`base64` is a modern alternative."
 msgstr ""
+"El módulo :mod:`uu` fue declarado obsoleto (ver :pep:`PEP 594 <594#uu-and-"
+"the-uu-encoding>` por detalles). :mod:`base64` es una alternativa moderna."
 
-#: ../../library/uu.rst:19
+#: ../Doc/library/uu.rst:19
 msgid ""
 "This module encodes and decodes files in uuencode format, allowing arbitrary "
 "binary data to be transferred over ASCII-only connections. Wherever a file "
@@ -48,26 +53,29 @@ msgid ""
 "interface is deprecated; it's better for the caller to open the file itself, "
 "and be sure that, when required, the mode is ``'rb'`` or ``'wb'`` on Windows."
 msgstr ""
-"このモジュールではファイルを uuencode 形式(任意のバイナリデータを ASCII 文字"
-"列に変換したもの)にエンコード、デコードする機能を提供します。引数としてファイ"
-"ルが仮定されている所では、ファイルのようなオブジェクトが利用できます。後方互"
-"換性のために、パス名を含む文字列も利用できるようにしていて、対応するファイル"
-"を開いて読み書きします。しかし、このインターフェースは利用しないでください。"
-"呼び出し側でファイルを開いて(Windows では ``'rb'`` か ``'wb'`` のモードで)利"
-"用する方法が推奨されます。"
+"Este módulo codifica y decodifica archivos en formato UUEncode, permitiendo "
+"la transmisión de datos binarios arbitrarios sobre conexiones de solo "
+"ASCII.  Allí donde se espera un archivo como argumento, los métodos aceptan "
+"un objeto similar a un archivo.  Por compatibilidad con versiones "
+"anteriores, una cadena que contenga un nombre de ruta también es aceptada, y "
+"el archivo correspondiente será abierto para lectura y escritura; el nombre "
+"de ruta ``'-'`` es entendido como la entrada o salida estándar.  Sin "
+"embargo, esta interface es obsoleta; es mejor que el invocador abra el "
+"archivo por sí mismo y asegurarse de que, cuando se requiera, el modo sea "
+"``'rb'`` o ``'wb'`` en Windows."
 
-#: ../../library/uu.rst:32
+#: ../Doc/library/uu.rst:32
 msgid ""
 "This code was contributed by Lance Ellinghouse, and modified by Jack Jansen."
 msgstr ""
-"このコードは Lance Ellinghouse によって提供され、Jack Jansen によって更新され"
-"ました。"
+"Este código fue contribuido por Lance Ellinghouse y modificado por Jack "
+"Jansen."
 
-#: ../../library/uu.rst:34
+#: ../Doc/library/uu.rst:34
 msgid "The :mod:`uu` module defines the following functions:"
-msgstr ":mod:`uu` モジュールでは以下の関数を定義しています:"
+msgstr "El módulo :mod:`uu` define las siguientes funciones:"
 
-#: ../../library/uu.rst:39
+#: ../Doc/library/uu.rst:39
 msgid ""
 "Uuencode file *in_file* into file *out_file*.  The uuencoded file will have "
 "the header specifying *name* and *mode* as the defaults for the results of "
@@ -75,18 +83,18 @@ msgid ""
 "and ``0o666`` respectively.  If *backtick* is true, zeros are represented by "
 "``'`'`` instead of spaces."
 msgstr ""
-"*in_file* を *out_file* にエンコードします。\n"
-"エンコードされたファイルには、デフォルトでデコード時に利用される *name* と "
-"*mode* を含んだヘッダがつきます。\n"
-"省略された場合には、*in_file* から取得された名前か ``'-'`` という文字と、"
-"``0o666`` がそれぞれデフォルト値として与えられます。\n"
-"*backtick* が真だった場合は、ゼロは空白ではなく ``'`'`` で表現されます。"
+"Codificar con UUEncode el archivo *in_file* en el archivo *out_file*. El "
+"archivo codificado con UUEncode tendrá un encabezado especificando *name* y "
+"*mode* como valores por defecto para los resultados de la decodificación del "
+"archivo. Los valores por defecto iniciales son tomados de *in_file*, o "
+"``'-'`` y ``0o666`` respectivamente. Si *backtick* es verdadero, los ceros "
+"son representados por ``'`'`` en lugar de espacios."
 
-#: ../../library/uu.rst:45
+#: ../Doc/library/uu.rst:45
 msgid "Added the *backtick* parameter."
-msgstr "*backtick* パラメータを追加しました."
+msgstr "Agregado el parámetro *backtick*."
 
-#: ../../library/uu.rst:51
+#: ../Doc/library/uu.rst:51
 msgid ""
 "This call decodes uuencoded file *in_file* placing the result on file "
 "*out_file*. If *out_file* is a pathname, *mode* is used to set the "
@@ -94,38 +102,41 @@ msgid ""
 "*mode* are taken from the uuencode header.  However, if the file specified "
 "in the header already exists, a :exc:`uu.Error` is raised."
 msgstr ""
-"uuencode 形式でエンコードされた *in_file* をデコードして varout_file に書き出"
-"します。もし *out_file* がパス名でかつファイルを作る必要があるときには、 "
-"*mode* がパーミッションの設定に使われます。 *out_file* と *mode* のデフォルト"
-"値は *in_file* のヘッダから取得されます。しかし、ヘッダで指定されたファイルが"
-"既に存在していた場合は、 :exc:`uu.Error` が送出されます。"
+"Esta invocación decodifica el archivo codificado en UUEncode *in_file* y "
+"coloca el resultado en el archivo *out_file*. Si *out_file* es un nombre de "
+"ruta, *mode* es usado para establecer los bits de permiso si el archivo debe "
+"ser creado. Valores por defecto para *out_file* y *mode* se toman del "
+"encabezado UUEncode.  Sin embargo, si el archivo especificado en el "
+"encabezado existe, se genera un :exc:`uu.Error`."
 
-#: ../../library/uu.rst:57
+#: ../Doc/library/uu.rst:57
 msgid ""
 ":func:`decode` may print a warning to standard error if the input was "
 "produced by an incorrect uuencoder and Python could recover from that "
 "error.  Setting *quiet* to a true value silences this warning."
 msgstr ""
-"誤った実装の uuencoder による入力で、エラーから復旧できた場合、 :func:"
-"`decode` は標準エラー出力に警告を表示するかもしれません。 *quiet* を真にする"
-"ことでこの警告を抑制することができます。"
+":func:`decode` puede imprimir una advertencia a error estándar si la entrada "
+"fue producida por un UUEncoder incorrecto y Python pudo recobrarse de ese "
+"error. Si se establece *quiet* a un valor verdadero se suprime esta "
+"advertencia."
 
-#: ../../library/uu.rst:64
+#: ../Doc/library/uu.rst:64
 msgid ""
 "Subclass of :exc:`Exception`, this can be raised by :func:`uu.decode` under "
 "various situations, such as described above, but also including a badly "
 "formatted header, or truncated input file."
 msgstr ""
-":exc:`Exception` のサブクラスで、 :func:`uu.decode` によって、さまざまな状況"
-"で送出される可能性があります。上で紹介された場合以外にも、ヘッダのフォーマッ"
-"トが間違っている場合や、入力ファイルが途中で区切れた場合にも送出されます。"
+"Subclase de :exc:`Exception`, esta puede ser generada por :func:`uu.decode` "
+"en diversas situaciones, como las descriptas arriba, pero también si se "
+"incluye un encabezado mal formado o un archivo de entrada truncado."
 
-#: ../../library/uu.rst:71
+#: ../Doc/library/uu.rst:71
 msgid "Module :mod:`binascii`"
-msgstr "モジュール :mod:`binascii`"
+msgstr "Módulo :mod:`binascii`"
 
-#: ../../library/uu.rst:72
+#: ../Doc/library/uu.rst:72
 msgid ""
 "Support module containing ASCII-to-binary and binary-to-ASCII conversions."
 msgstr ""
-"ASCII からバイナリへ、バイナリから ASCII への変換をサポートするモジュール。"
+"Módulo de soporte que contiene conversiones de ASCII a binario y de binario "
+"a ASCII."

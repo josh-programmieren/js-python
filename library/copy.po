@@ -1,38 +1,35 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# Yusuke Miyazaki <miyazaki.dev@gmail.com>, 2021
-# mollinaca, 2021
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:03+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2020-05-25 17:45-0500\n"
+"Last-Translator: Cristian Danilo Rengifo Parra <ingcrengifo@gmail.com>\n"
+"Language: es_CO\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/copy.rst:2
+#: ../Doc/library/copy.rst:2
 msgid ":mod:`copy` --- Shallow and deep copy operations"
-msgstr ":mod:`copy` --- 浅いコピーおよび深いコピー操作"
+msgstr ":mod:`copy` --- Operaciones de copia superficial y profunda"
 
-#: ../../library/copy.rst:7
+#: ../Doc/library/copy.rst:7
 msgid "**Source code:** :source:`Lib/copy.py`"
-msgstr "**ソースコード:** :source:`Lib/copy.py`"
+msgstr "**Source code:** :source:`Lib/copy.py`"
 
-#: ../../library/copy.rst:11
+#: ../Doc/library/copy.rst:11
 msgid ""
 "Assignment statements in Python do not copy objects, they create bindings "
 "between a target and an object. For collections that are mutable or contain "
@@ -40,102 +37,103 @@ msgid ""
 "changing the other. This module provides generic shallow and deep copy "
 "operations (explained below)."
 msgstr ""
-"Python において代入文はオブジェクトをコピーしません。代入はターゲットとオブ"
-"ジェクトの間に束縛を作ります。ミュータブルなコレクションまたはミュータブルな"
-"アイテムを含むコレクションについては、元のオブジェクトを変更せずにコピーを変"
-"更できるように、コピーが必要になることが時々あります。このモジュールは、汎用"
-"的な浅い (shallow) コピーと深い (deep) コピーの操作 (以下で説明されます) を提"
-"供します。"
+"Las declaraciones de asignación en Python no copian objetos, crean enlaces "
+"entre un objetivo y un objeto. Para colecciones que son mutables o que "
+"contienen elementos mutables, a veces se necesita una copia para que uno "
+"pueda cambiar una copia sin cambiar la otra. Este módulo proporciona "
+"operaciones genéricas de copia superficial y profunda (explicadas a "
+"continuación)."
 
-#: ../../library/copy.rst:18
+#: ../Doc/library/copy.rst:18
 msgid "Interface summary:"
-msgstr "以下にインターフェースをまとめます:"
+msgstr "Resumen de la interfaz:"
 
-#: ../../library/copy.rst:22
+#: ../Doc/library/copy.rst:22
 msgid "Return a shallow copy of *x*."
-msgstr "*x* の浅い (shallow) コピーを返します。"
+msgstr "Retorna una copia superficial de *x*."
 
-#: ../../library/copy.rst:27
+#: ../Doc/library/copy.rst:27
 msgid "Return a deep copy of *x*."
-msgstr "*x* の深い (deep) コピーを返します。"
+msgstr "Retorna una copia profunda de *x*."
 
-#: ../../library/copy.rst:32
+#: ../Doc/library/copy.rst:32
 msgid "Raised for module specific errors."
-msgstr "モジュール特有のエラーを送出します。"
+msgstr "Levantado para errores específicos del módulo."
 
-#: ../../library/copy.rst:36
+#: ../Doc/library/copy.rst:36
 msgid ""
 "The difference between shallow and deep copying is only relevant for "
 "compound objects (objects that contain other objects, like lists or class "
 "instances):"
 msgstr ""
-"浅い (shallow) コピーと深い (deep) コピーの違いが関係するのは、複合オブジェク"
-"ト (リストやクラスインスタンスのような他のオブジェクトを含むオブジェクト) だ"
-"けです:"
+"La diferencia entre copia superficial y profunda solo es relevante para "
+"objetos compuestos (objetos que contienen otros objetos, como listas o "
+"instancias de clase):"
 
-#: ../../library/copy.rst:39
+#: ../Doc/library/copy.rst:39
 msgid ""
 "A *shallow copy* constructs a new compound object and then (to the extent "
 "possible) inserts *references* into it to the objects found in the original."
 msgstr ""
-"*浅いコピー (shallow copy)* は新たな複合オブジェクトを作成し、その後 (可能な"
-"限り) 元のオブジェクト中に見つかったオブジェクトに対する *参照* を挿入しま"
-"す。"
+"Una copia superficial (*shallow copy*) construye un nuevo objeto compuesto y "
+"luego (en la medida de lo posible) inserta *references* en él a los objetos "
+"encontrados en el original."
 
-#: ../../library/copy.rst:42
+#: ../Doc/library/copy.rst:42
 msgid ""
 "A *deep copy* constructs a new compound object and then, recursively, "
 "inserts *copies* into it of the objects found in the original."
 msgstr ""
-"*深いコピー (deep copy)* は新たな複合オブジェクトを作成し、その後元のオブジェ"
-"クト中に見つかったオブジェクトの *コピー* を挿入します。"
+"Una copia profunda (*deep copy*) construye un nuevo objeto compuesto y "
+"luego, recursivamente, inserta *copias* en él de los objetos encontrados en "
+"el original."
 
-#: ../../library/copy.rst:45
+#: ../Doc/library/copy.rst:45
 msgid ""
 "Two problems often exist with deep copy operations that don't exist with "
 "shallow copy operations:"
 msgstr ""
-"深いコピー操作には、しばしば浅いコピー操作の時には存在しない 2 つの問題がつい"
-"てまわります:"
+"A menudo existen dos problemas con las operaciones de copia profunda que no "
+"existen con las operaciones de copia superficial:"
 
-#: ../../library/copy.rst:48
+#: ../Doc/library/copy.rst:48
 msgid ""
 "Recursive objects (compound objects that, directly or indirectly, contain a "
 "reference to themselves) may cause a recursive loop."
 msgstr ""
-"再帰的なオブジェクト (直接、間接に関わらず、自分自身に対する参照を持つ複合オ"
-"ブジェクト) は再帰ループを引き起こします。"
+"Los objetos recursivos (objetos compuestos que, directa o indirectamente, "
+"contienen una referencia a sí mismos) pueden causar un bucle recursivo."
 
-#: ../../library/copy.rst:51
+#: ../Doc/library/copy.rst:51
 msgid ""
 "Because deep copy copies everything it may copy too much, such as data which "
 "is intended to be shared between copies."
 msgstr ""
-"深いコピーは何もかもコピーしてしまうため、例えば複数のコピー間で共有するつも"
-"りだったデータも余分にコピーしてしまいます。"
+"Debido a que la copia profunda copia todo, puede copiar demasiado, como los "
+"datos que deben compartirse entre copias."
 
-#: ../../library/copy.rst:54
+#: ../Doc/library/copy.rst:54
 msgid "The :func:`deepcopy` function avoids these problems by:"
-msgstr ""
-":func:`deepcopy` 関数では、これらの問題を以下のようにして回避しています:"
+msgstr "La función :func:`deepcopy` evita estos problemas al:"
 
-#: ../../library/copy.rst:56
+#: ../Doc/library/copy.rst:56
 msgid ""
 "keeping a ``memo`` dictionary of objects already copied during the current "
 "copying pass; and"
 msgstr ""
-"現時点でのコピー過程ですでにコピーされたオブジェクトの ``memo`` 辞書を保持す"
-"る。"
+"mantener un diccionario ``memo`` de objetos ya copiados durante la pasada de "
+"copia actual; y"
 
-#: ../../library/copy.rst:59
+#: ../Doc/library/copy.rst:59
 msgid ""
 "letting user-defined classes override the copying operation or the set of "
 "components copied."
 msgstr ""
-"ユーザ定義のクラスでコピー操作やコピーされる内容の集合を上書きできるようにす"
-"る。"
+"dejando que las clases definidas por el usuario anulen la operación de copia "
+"o el conjunto de componentes copiados."
 
-#: ../../library/copy.rst:62
+#: ../Doc/library/copy.rst:62
+#, fuzzy
 msgid ""
 "This module does not copy types like module, method, stack trace, stack "
 "frame, file, socket, window, or any similar types.  It does \"copy\" "
@@ -143,29 +141,36 @@ msgid ""
 "unchanged; this is compatible with the way these are treated by the :mod:"
 "`pickle` module."
 msgstr ""
+"Este módulo no copia tipos como módulo, método, seguimiento de pila, marco "
+"de pila, archivo, socket, ventana, matriz ni ningún tipo similar. \"Copia\" "
+"funciones y clases (superficiales y profundas), retornando el objeto "
+"original sin cambios; Esto es compatible con la forma en que son tratados "
+"por el módulo :mod:`pickle`."
 
-#: ../../library/copy.rst:67
+#: ../Doc/library/copy.rst:67
 msgid ""
 "Shallow copies of dictionaries can be made using :meth:`dict.copy`, and of "
 "lists by assigning a slice of the entire list, for example, ``copied_list = "
 "original_list[:]``."
 msgstr ""
-"辞書型の浅いコピーは :meth:`dict.copy` で、リストの浅いコピーはリスト全体を指"
-"すスライス (例えば ``copied_list = original_list[:]``) でできます。"
+"Se pueden hacer copias superficiales de los diccionarios usando :meth:`dict."
+"copy`, y de las listas mediante la asignación de una porción de la lista "
+"completa, por ejemplo, ``copied_list = original_list[:]``."
 
-#: ../../library/copy.rst:73
+#: ../Doc/library/copy.rst:73
 msgid ""
 "Classes can use the same interfaces to control copying that they use to "
 "control pickling.  See the description of module :mod:`pickle` for "
 "information on these methods.  In fact, the :mod:`copy` module uses the "
 "registered pickle functions from the :mod:`copyreg` module."
 msgstr ""
-"クラスは、コピーを制御するために pickle の制御に使用するのと同じインター"
-"フェースを使用することができます。これらのメソッドについての情報はモジュー"
-"ル :mod:`pickle` の説明を参照してください。実際、 :mod:`copy` モジュール"
-"は、 :mod:`copyreg` モジュールによって登録された pickle 関数を使用します。"
+"Las clases pueden usar las mismas interfaces para controlar la copia que "
+"usan para controlar el *pickling*. Consulte la descripción del módulo :mod:"
+"`pickle` para obtener información sobre estos métodos. De hecho, el módulo :"
+"mod:`copy` utiliza las funciones de *pickle* registradas del módulo :mod:"
+"`copyreg`."
 
-#: ../../library/copy.rst:82
+#: ../Doc/library/copy.rst:82
 msgid ""
 "In order for a class to define its own copy implementation, it can define "
 "special methods :meth:`__copy__` and :meth:`__deepcopy__`.  The former is "
@@ -177,23 +182,24 @@ msgid ""
 "dictionary as second argument. The memo dictionary should be treated as an "
 "opaque object."
 msgstr ""
-"クラス独自のコピー実装を定義するために、特殊メソッド :meth:`__copy__` およ"
-"び :meth:`__deepcopy__` を定義することができます。前者は浅いコピー操作を実装"
-"するために使われます; 追加の引数はありません。後者は深いコピー操作を実現する"
-"ために呼び出されます; この関数には単一の引数として ``memo`` 辞書が渡されま"
-"す。 :meth:`__deepcopy__` の実装で、内容のオブジェクトに対して深いコピーを生"
-"成する必要がある場合、 :func:`deepcopy` を呼び出し、最初の引数にそのオブジェ"
-"クトを、メモ辞書を二つ目の引数に与えなければなりません。メモ辞書は中が見えな"
-"いオブジェクトとして扱うべきです。"
+"Para que una clase defina su propia implementación de copia, puede definir "
+"métodos especiales :meth:`__copy__` y :meth:`__deepcopy__`. El primero se "
+"llama para implementar la operación de copia superficial; no se pasan "
+"argumentos adicionales. Este último está llamado a implementar la operación "
+"de copia profunda; se le pasa un argumento, el diccionario ``memo``. Si la "
+"implementación de :meth:`__deepcopy__` necesita hacer una copia profunda de "
+"un componente, debe llamar a la función :func:`deepcopy` con el componente "
+"como primer argumento y el diccionario memo como segundo argumento. El "
+"diccionario de notas debe tratarse como un objeto opaco."
 
-#: ../../library/copy.rst:95
+#: ../Doc/library/copy.rst:95
 msgid "Module :mod:`pickle`"
-msgstr ":mod:`pickle` モジュール"
+msgstr "Módulo :mod:`pickle`"
 
-#: ../../library/copy.rst:95
+#: ../Doc/library/copy.rst:95
 msgid ""
 "Discussion of the special methods used to support object state retrieval and "
 "restoration."
 msgstr ""
-"オブジェクト状態の取得と復元をサポートするために使われる特殊メソッドについて"
-"議論されています。"
+"Discusión de los métodos especiales utilizados para apoyar la recuperación y "
+"restauración del estado del objeto."

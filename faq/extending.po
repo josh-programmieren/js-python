@@ -1,82 +1,85 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# mollinaca, 2021
-# Shin Saito, 2021
-# 菊池 健志, 2023
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-17 14:14+0000\n"
-"PO-Revision-Date: 2021-06-28 00:52+0000\n"
-"Last-Translator: 菊池 健志, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-08-02 11:16+0200\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language: es_AR\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../faq/extending.rst:3
+#: ../Doc/faq/extending.rst:3
 msgid "Extending/Embedding FAQ"
-msgstr "拡張と埋め込み FAQ"
+msgstr "Extendiendo/Embebiendo FAQ"
 
-#: ../../faq/extending.rst:6
+#: ../Doc/faq/extending.rst:6
 msgid "Contents"
-msgstr "内容"
+msgstr "Contenidos"
 
-#: ../../faq/extending.rst:16
+#: ../Doc/faq/extending.rst:16
 msgid "Can I create my own functions in C?"
-msgstr "C で独自の関数を作ることはできますか？"
+msgstr "¿Puedo crear mis propias funciones en C?"
 
-#: ../../faq/extending.rst:18
+#: ../Doc/faq/extending.rst:18
 msgid ""
 "Yes, you can create built-in modules containing functions, variables, "
 "exceptions and even new types in C.  This is explained in the document :ref:"
 "`extending-index`."
 msgstr ""
-"はい。関数、変数、例外、そして新しいタイプまで含んだビルトインモジュールを C "
-"で作れます。これはドキュメント :ref:`extending-index` で説明されています。"
+"Si, puedes crear módulos incorporados que contengan funciones, variables, "
+"excepciones y incluso nuevos tipos en C. Esto esta explicado en el "
+"documento :ref:`extending-index`."
 
-#: ../../faq/extending.rst:22
+#: ../Doc/faq/extending.rst:22
 msgid "Most intermediate or advanced Python books will also cover this topic."
-msgstr "ほとんどの中級から上級の Python 本もこの話題を扱っています。"
+msgstr ""
+"La mayoría de los libros intermedios o avanzados de Python también tratan "
+"este tema."
 
-#: ../../faq/extending.rst:26
+#: ../Doc/faq/extending.rst:26
 msgid "Can I create my own functions in C++?"
-msgstr "C++ で独自の関数を作ることはできますか？"
+msgstr "¿Puedo crear mis propias funciones en C++?"
 
-#: ../../faq/extending.rst:28
+#: ../Doc/faq/extending.rst:28
 msgid ""
 "Yes, using the C compatibility features found in C++.  Place ``extern "
 "\"C\" { ... }`` around the Python include files and put ``extern \"C\"`` "
 "before each function that is going to be called by the Python interpreter.  "
 "Global or static C++ objects with constructors are probably not a good idea."
 msgstr ""
-"はい。C++ 内にある C 互換機能を使ってできます。 ``extern \"C\" { ... }`` で "
-"Python のインクルードファイルを囲み、 ``extern \"C\"`` を Python インタプリタ"
-"から呼ぶ各関数の前に置いてください。グローバルや静的な C++ オブジェクトの構造"
-"体を持つものは良くないでしょう。"
+"Si, utilizando las características de compatibilidad encontradas en C++. "
+"Coloca ``extern \"C\" { ... }`` alrededor los archivos incluidos Python y "
+"pon ``extern \"C\"`` antes de cada función que será llamada por el "
+"interprete Python. Objetos globales o estáticos C++ con constructores no son "
+"una buena idea seguramente."
 
-#: ../../faq/extending.rst:37
+#: ../Doc/faq/extending.rst:37
 msgid "Writing C is hard; are there any alternatives?"
-msgstr "C を書くのは大変です。他の方法はありませんか？"
+msgstr "Escribir en C es difícil; ¿no hay otra alternativa?"
 
-#: ../../faq/extending.rst:39
+#: ../Doc/faq/extending.rst:39
 msgid ""
 "There are a number of alternatives to writing your own C extensions, "
 "depending on what you're trying to do."
-msgstr "独自の C 拡張を書くための別のやり方は、目的によっていくつかあります。"
+msgstr ""
+"Hay un número de alternativas a escribir tus propias extensiones C, "
+"dependiendo en que estés tratando de hacer."
 
-#: ../../faq/extending.rst:44
+#: ../Doc/faq/extending.rst:44
+#, fuzzy
 msgid ""
 "`Cython <https://cython.org>`_ and its relative `Pyrex <https://www.cosc."
 "canterbury.ac.nz/greg.ewing/python/Pyrex/>`_ are compilers that accept a "
@@ -84,12 +87,14 @@ msgid ""
 "Cython and Pyrex make it possible to write an extension without having to "
 "learn Python's C API."
 msgstr ""
-"`Cython <https://cython.org>`_ とその親戚 `Pyrex <https://www.cosc."
-"canterbury.ac.nz/greg.ewing/python/Pyrex/>`_ は、わずかに変形した Python を受"
-"け取り、対応する C コードを生成します。Cython や Pyrex を使えば Python の C "
-"API を習得することなく拡張を書けます。"
+"`Cython <http://cython.org>`_ y su relativo `Pyrex <https://www.cosc."
+"canterbury.ac.nz/greg.ewing/python/Pyrex/>`_ son compiladores que aceptan "
+"una forma de Python ligeramente modificada y generan el código C "
+"correspondiente. Cython y *Pyrex* hacen posible escribir una extensión sin "
+"tener que aprender la API de Python C."
 
-#: ../../faq/extending.rst:50
+#: ../Doc/faq/extending.rst:50
+#, fuzzy
 msgid ""
 "If you need to interface to some C or C++ library for which no Python "
 "extension currently exists, you can try wrapping the library's data types "
@@ -99,19 +104,19 @@ msgid ""
 "html>`_, or `Weave <https://github.com/scipy/weave>`_ are also alternatives "
 "for wrapping C++ libraries."
 msgstr ""
-"今のところ Python 拡張が存在しないような C や C++ ライブラリへのインターフェ"
-"イスが必要な場合、`SWIG <https://www.swig.org>`_ のようなツールで、そのライブ"
-"ラリのデータ型のラッピングを図れます。\n"
-"`SIP <https://riverbankcomputing.com/software/sip/intro>`_、`CXX <https://"
-"cxx.sourceforge.net/>`_、`Boost <https://www.boost.org/libs/python/doc/index."
-"html>`_、`Weave <https://github.com/scipy/weave>`_ でも C++ ライブラリをラッ"
-"ピングできます。"
+"Si necesitas hacer una interfaz a alguna biblioteca C o C++ que no posee aún "
+"extensión Python, puedes intentar empaquetar los tipo de datos de la "
+"biblioteca con una herramienta como `SWIG <http://www.swig.org>`_.  `SIP "
+"<https://riverbankcomputing.com/software/sip/intro>`__, `CXX <http://cxx."
+"sourceforge.net/>`_ `Boost <http://www.boost.org/libs/python/doc/index."
+"html>`_, o `Weave <https://github.com/scipy/weave>`_ también son "
+"alternativas para empaquetar bibliotecas C++."
 
-#: ../../faq/extending.rst:61
+#: ../Doc/faq/extending.rst:61
 msgid "How can I execute arbitrary Python statements from C?"
-msgstr "C から任意の Python 文を実行するにはどうしますか？"
+msgstr "¿Cómo puedo ejecutar declaraciones arbitrarias de Python desde C?"
 
-#: ../../faq/extending.rst:63
+#: ../Doc/faq/extending.rst:63
 msgid ""
 "The highest-level function to do this is :c:func:`PyRun_SimpleString` which "
 "takes a single string argument to be executed in the context of the module "
@@ -120,65 +125,66 @@ msgid ""
 "func:`PyRun_String`; see the source for :c:func:`PyRun_SimpleString` in "
 "``Python/pythonrun.c``."
 msgstr ""
-"これを行う最高水準の関数は :c:func:`PyRun_SimpleString` で、一つの文字列引数"
-"を取り、モジュール ``__main__`` のコンテキストでそれを実行し、成功なら "
-"``0``、例外 (:exc:`SyntaxError` を含む) が発生したら ``-1`` を返します。更に"
-"制御したければ、 :c:func:`PyRun_String`  を使ってください。ソースは ``Python/"
-"pythonrun.c`` の ':c:func:`PyRun_SimpleString` を参照してください。"
+"La función de más alto nivel para hacer esto es :c:func:`PyRun_SimpleString` "
+"que toma un solo argumento de cadena de caracteres para ser ejecutado en el "
+"contexto del módulo ``__main__`` y retorna ``0`` si tiene éxito y ``-1`` "
+"cuando ocurre una excepción (incluyendo :exc:`SyntaxError`). Si quieres mas "
+"control, usa :c:func:`PyRun_String`; mira la fuente para :c:func:"
+"`PyRun_SimpleString` en ``Python/pythonrun.c``."
 
-#: ../../faq/extending.rst:72
+#: ../Doc/faq/extending.rst:72
 msgid "How can I evaluate an arbitrary Python expression from C?"
-msgstr "C から任意の Python 式を評価するにはどうしますか？"
+msgstr "¿Cómo puedo evaluar una expresión arbitraria de Python desde C?"
 
-#: ../../faq/extending.rst:74
+#: ../Doc/faq/extending.rst:74
 msgid ""
 "Call the function :c:func:`PyRun_String` from the previous question with the "
 "start symbol :c:data:`Py_eval_input`; it parses an expression, evaluates it "
 "and returns its value."
 msgstr ""
-"先の質問の :c:func:`PyRun_String` を、スタートシンボル :c:data:"
-"`Py_eval_input` を渡して呼び出してください。これは式を解析し、評価してその値"
-"を返します。"
+"Llama a la función :c:func:`PyRun_String` de la pregunta anterior con el "
+"símbolo de comienzo :c:data:`Py_eval_input`; analiza una expresión, evalúa y "
+"retorna su valor."
 
-#: ../../faq/extending.rst:80
+#: ../Doc/faq/extending.rst:80
 msgid "How do I extract C values from a Python object?"
-msgstr "Python オブジェクトから C の値を取り出すにはどうしますか？"
+msgstr "¿Cómo extraigo valores C de un objeto Python?"
 
-#: ../../faq/extending.rst:82
+#: ../Doc/faq/extending.rst:82
 msgid ""
 "That depends on the object's type.  If it's a tuple, :c:func:`PyTuple_Size` "
 "returns its length and :c:func:`PyTuple_GetItem` returns the item at a "
 "specified index.  Lists have similar functions, :c:func:`PyListSize` and :c:"
 "func:`PyList_GetItem`."
 msgstr ""
-"オブジェクトの型に依ります。タプルなら、 :c:func:`PyTuple_Size` が長さを返"
-"し、 :c:func:`PyTuple_GetItem` が指定されたインデックスの要素を返します。リス"
-"トにも同様の関数 :c:func:`PyList_Size` と :c:func:`PyList_GetItem` がありま"
-"す。"
+"Eso depende del tipo de objeto. Si es una tupla, :c:func:`PyTuple_Size` "
+"retorna su tamaño, y :c:func:`PyTuple_GetItem` retorna el ítem del índice "
+"especificado. Las listas tienen funciones similares, :c:func:`PyListSize` "
+"and :c:func:`PyList_GetItem`."
 
-#: ../../faq/extending.rst:87
+#: ../Doc/faq/extending.rst:87
 msgid ""
 "For bytes, :c:func:`PyBytes_Size` returns its length and :c:func:"
 "`PyBytes_AsStringAndSize` provides a pointer to its value and its length.  "
 "Note that Python bytes objects may contain null bytes so C's :c:func:"
 "`strlen` should not be used."
 msgstr ""
-"bytes では、 :c:func:`PyBytes_Size` がその長さを返し、 :c:func:"
-"`PyBytes_AsStringAndSize` がその値へのポインタと長さを提供します。 Python の "
-"bytes オブジェクトは null を含むこともできるので、 C の :c:func:`strlen` を使"
-"うべきではないことに注意してください。"
+"Para bytes :c:func:`PyBytes_Size` retorna su tamaño, y :c:func:"
+"`PyBytes_AsStringAndSize` proporciona un puntero a su valor y tamaño. Nota "
+"que los objetos byte de Python pueden contener bytes *null* por lo que la "
+"función de C :c:func:`strlen` no debe ser utilizada."
 
-#: ../../faq/extending.rst:92
+#: ../Doc/faq/extending.rst:92
 msgid ""
 "To test the type of an object, first make sure it isn't ``NULL``, and then "
 "use :c:func:`PyBytes_Check`, :c:func:`PyTuple_Check`, :c:func:"
 "`PyList_Check`, etc."
 msgstr ""
-"オブジェクトの型を検査するには、まず最初にそれが ``NULL`` でないことを確かめ"
-"た上で、 :c:func:`PyBytes_Check` 、 :c:func:`PyTuple_Check` 、 :c:func:"
-"`PyList_Check` などを使います。"
+"Para testear el tipo de un objeto, primero debes estar seguro que no es "
+"``NULL``, y luego usa :c:func:`PyBytes_Check`, :c:func:`PyTuple_Check`, :c:"
+"func:`PyList_Check`, etc."
 
-#: ../../faq/extending.rst:95
+#: ../Doc/faq/extending.rst:95
 msgid ""
 "There is also a high-level API to Python objects which is provided by the so-"
 "called 'abstract' interface -- read ``Include/abstract.h`` for further "
@@ -187,102 +193,106 @@ msgid ""
 "as many other useful protocols such as numbers (:c:func:`PyNumber_Index` et "
 "al.) and mappings in the PyMapping APIs."
 msgstr ""
-"いわゆる 'abstract' インターフェースから提供される、 Python オブジェクトに対"
-"する高レベル API もあります -- より詳しいことは ``Include/abstract.h`` を読ん"
-"でください。これを使うと、数値型プロトコル (:c:func:`PyNumber_Index` など) "
-"や PyMapping API のマップ型プロトコルなどの役に立つプロトコルに加え、 :c:"
-"func:`PySequence_Length` や :c:func:`PySequence_GetItem` などの任意の種類の "
-"Python シーケンスへのインターフェースにアクセスできます。"
+"También hay una API de alto nivel para objetos Python que son provistos por "
+"la supuestamente llamada interfaz 'abstracta' -- lee ``Include/abstract.h`` "
+"para mas detalles. Permite realizar una interfaz con cualquier tipo de "
+"secuencia Python usando llamadas como :c:func:`PySequence_Length`, :c:func:"
+"`PySequence_GetItem`, etc. así como otros protocolos útiles como números (:c:"
+"func:`PyNumber_Index` et al.) y mapeos en las *PyMapping APIs*."
 
-#: ../../faq/extending.rst:104
+#: ../Doc/faq/extending.rst:104
 msgid "How do I use Py_BuildValue() to create a tuple of arbitrary length?"
-msgstr "Py_BuildValue() で任意長のタプルを作るにはどうしますか？"
+msgstr ""
+"¿Cómo utilizo Py_BuildValue() para crear una tupla de un tamaño arbitrario?"
 
-#: ../../faq/extending.rst:106
+#: ../Doc/faq/extending.rst:106
 msgid "You can't.  Use :c:func:`PyTuple_Pack` instead."
-msgstr "できません。代わりに :c:func:`PyTuple_Pack` を使ってください。"
+msgstr "No puedes hacerlo. Utiliza a cambio :c:func:`PyTuple_Pack`."
 
-#: ../../faq/extending.rst:110
+#: ../Doc/faq/extending.rst:110
 msgid "How do I call an object's method from C?"
-msgstr "C からオブジェクトのメソッドを呼び出すにはどうしますか？"
+msgstr "¿Cómo puedo llamar un método de un objeto desde C?"
 
-#: ../../faq/extending.rst:112
+#: ../Doc/faq/extending.rst:112
 msgid ""
 "The :c:func:`PyObject_CallMethod` function can be used to call an arbitrary "
 "method of an object.  The parameters are the object, the name of the method "
 "to call, a format string like that used with :c:func:`Py_BuildValue`, and "
 "the argument values::"
 msgstr ""
-":c:func:`PyObject_CallMethod` 関数でオブジェクトの任意のメソッドを呼び出せま"
-"す。パラメタは、オブジェクト、呼び出すメソッドの名前、 :c:func:"
-"`Py_BuildValue` で使われるようなフォーマット文字列、そして引数です::"
+"Se puede utilizar la función :c:func:`PyObject_CallMethod` para llamar a un "
+"método arbitrario de un objeto. Los parámetros son el objeto, el nombre del "
+"método a llamar, una cadena de caracteres de formato como las usadas con  :c:"
+"func:`Py_BuildValue`, y los valores de argumento ::"
 
-#: ../../faq/extending.rst:121
+#: ../Doc/faq/extending.rst:121
 msgid ""
 "This works for any object that has methods -- whether built-in or user-"
 "defined. You are responsible for eventually :c:func:`Py_DECREF`\\ 'ing the "
 "return value."
 msgstr ""
-"これはメソッドを持ついかなるオブジェクトにも有効で、組み込みかユーザ定義かは"
-"関係ありません。返り値に対して :c:func:`Py_DECREF` する必要があることもありま"
-"す。"
+"Esto funciona para cualquier objeto que tenga métodos -- sean estos "
+"incorporados o definidos por el usuario. Eres responsable si eventualmente "
+"usas :c:func:`Py_DECREF` en el valor de retorno."
 
-#: ../../faq/extending.rst:124
+#: ../Doc/faq/extending.rst:124
 msgid ""
 "To call, e.g., a file object's \"seek\" method with arguments 10, 0 "
 "(assuming the file object pointer is \"f\")::"
 msgstr ""
-"例えば、あるファイルオブジェクトの \"seek\" メソッドを 10, 0 を引数として呼ぶ"
-"とき (ファイルオブジェクトのポインタを \"f\" とします)::"
+"Para llamar, por ejemplo, un método \"seek\" de un objeto archivo con "
+"argumentos 10, 0 (considerando que puntero del objeto archivo es \"f\")::"
 
-#: ../../faq/extending.rst:135
+#: ../Doc/faq/extending.rst:135
 msgid ""
 "Note that since :c:func:`PyObject_CallObject` *always* wants a tuple for the "
 "argument list, to call a function without arguments, pass \"()\" for the "
 "format, and to call a function with one argument, surround the argument in "
 "parentheses, e.g. \"(i)\"."
 msgstr ""
-"なお、 :c:func:`PyObject_CallObject` の引数リストには *常に* タプルが必要で"
-"す。関数を引数なしで呼び出すには、フォーマットに \"()\" を渡し、関数を一つの"
-"引数で呼び出すには、関数を括弧でくくって例えば \"(i)\" としてください。"
+"Note que debido a :c:func:`PyObject_CallObject` *siempre* necesita una tupla "
+"para la lista de argumento, para llamar una función sin argumentos, deberás "
+"pasar \"()\" para el formato, y para llamar a una función con un solo "
+"argumento, encierra el argumento entre paréntesis, por ejemplo \"(i)\"."
 
-#: ../../faq/extending.rst:142
+#: ../Doc/faq/extending.rst:142
 msgid ""
 "How do I catch the output from PyErr_Print() (or anything that prints to "
 "stdout/stderr)?"
 msgstr ""
-"PyErr_Print() (その他 stdout/stderr に印字するもの) からの出力を受け取るには"
-"どうしますか？"
+"¿Cómo obtengo la salida de PyErr_Print() (o cualquier cosa que se imprime a "
+"stdout/stderr)?"
 
-#: ../../faq/extending.rst:144
+#: ../Doc/faq/extending.rst:144
 msgid ""
 "In Python code, define an object that supports the ``write()`` method.  "
 "Assign this object to :data:`sys.stdout` and :data:`sys.stderr`.  Call "
 "print_error, or just allow the standard traceback mechanism to work. Then, "
 "the output will go wherever your ``write()`` method sends it."
 msgstr ""
-"Python コード内で、 ``write()`` メソッドをサポートするオブジェクトを定義して"
-"ください。そのオブジェクトを :data:`sys.stdout` と :data:`sys.stderr` に代入"
-"してください。print_error を呼び出すか、単に標準のトレースバック機構を作動さ"
-"せてください。そうすれば、出力は ``write()`` が送る任意の所に行きます。"
+"En código Python, define un objeto que soporta el método ``write()``. Asigna "
+"este objeto a :data:`sys.stdout` y :data:`sys.stderr`. Llama a print_error, "
+"o solo permite que el mecanismo estándar de rastreo funcione. Luego, la "
+"salida se hará cuando invoques ``write()``."
 
-#: ../../faq/extending.rst:149
+#: ../Doc/faq/extending.rst:149
 msgid "The easiest way to do this is to use the :class:`io.StringIO` class:"
-msgstr "最も簡単な方法は、 :class:`io.StringIO` クラスを使うことです:"
+msgstr ""
+"La manera mas fácil de hacer esto es usar la clase :class:`io.StringIO`:"
 
-#: ../../faq/extending.rst:161
+#: ../Doc/faq/extending.rst:161
 msgid "A custom object to do the same would look like this:"
-msgstr "これと同じことをするカスタムオブジェクトは次のようになるでしょう:"
+msgstr "Un objeto personalizado para hacer lo mismo se vería así:"
 
-#: ../../faq/extending.rst:182
+#: ../Doc/faq/extending.rst:182
 msgid "How do I access a module written in Python from C?"
-msgstr "C から Python で書かれたモジュールにアクセスするにはどうしますか？"
+msgstr "¿Cómo accedo al módulo escrito en Python desde C?"
 
-#: ../../faq/extending.rst:184
+#: ../Doc/faq/extending.rst:184
 msgid "You can get a pointer to the module object as follows::"
-msgstr "以下のようにモジュールオブジェクトへのポインタを得られます::"
+msgstr "Puedes obtener un puntero al módulo objeto de esta manera:"
 
-#: ../../faq/extending.rst:188
+#: ../Doc/faq/extending.rst:188
 msgid ""
 "If the module hasn't been imported yet (i.e. it is not yet present in :data:"
 "`sys.modules`), this initializes the module; otherwise it simply returns the "
@@ -290,33 +300,33 @@ msgid ""
 "module into any namespace -- it only ensures it has been initialized and is "
 "stored in :data:`sys.modules`."
 msgstr ""
-"そのモジュールがまだインポートされていない (つまり、まだ :data:`sys.modules` "
-"に現れていない) なら、これはモジュールを初期化します。そうでなければ、単純に "
-"``sys.modules[\"<modulename>\"]`` の値を返します。なお、これはモジュールをい"
-"かなる名前空間にも代入しません。これはモジュールが初期化されて ':data:`sys."
-"modules` に保管されていることを保証するだけです。"
+"Si el módulo todavía no se importó, (por ejemplo aún no esta presente en :"
+"data:`sys.modules`), esto inicializa el módulo, de otra forma simplemente "
+"retorna el valor de ``sys.modules[\"<modulename>\"]``. Nota que no entra el "
+"módulo a ningún espacio de nombres (*namespace*) --solo asegura que fue "
+"inicializado y guardado en :data:`sys.modules`."
 
-#: ../../faq/extending.rst:194
+#: ../Doc/faq/extending.rst:194
 msgid ""
 "You can then access the module's attributes (i.e. any name defined in the "
 "module) as follows::"
 msgstr ""
-"これで、モジュールの属性 (つまり、モジュールで定義された任意の名前) に以下の"
-"ようにアクセスできるようになります::"
+"Puedes acceder luego a los atributos del módulo (por ejemplo a cualquier "
+"nombre definido en el módulo) de esta forma:"
 
-#: ../../faq/extending.rst:199
+#: ../Doc/faq/extending.rst:199
 msgid ""
 "Calling :c:func:`PyObject_SetAttrString` to assign to variables in the "
 "module also works."
 msgstr ""
-":c:func:`PyObject_SetAttrString` を呼んでモジュールの変数に代入することもでき"
-"ます。"
+"También funciona llamar a :c:func:`PyObject_SetAttrString` para asignar a "
+"variables en el módulo."
 
-#: ../../faq/extending.rst:204
+#: ../Doc/faq/extending.rst:204
 msgid "How do I interface to C++ objects from Python?"
-msgstr "Python から C++ へインターフェースするにはどうしますか？"
+msgstr "¿Cómo hago una interface a objetos C++ desde Python?"
 
-#: ../../faq/extending.rst:206
+#: ../Doc/faq/extending.rst:206
 msgid ""
 "Depending on your requirements, there are many approaches.  To do this "
 "manually, begin by reading :ref:`the \"Extending and Embedding\" document "
@@ -325,87 +335,88 @@ msgid ""
 "building a new Python type around a C structure (pointer) type will also "
 "work for C++ objects."
 msgstr ""
-"やりたいことに応じて、いろいろな方法があります。手動でやるなら、 :ref:`\"拡張"
-"と埋め込み\" ドキュメント <extending-index>` を読むことから始めてください。な"
-"お、Python ランタイムシステムにとっては、 C と C++ はあまり変わりません。だか"
-"ら、C 構造体 (ポインタ)型に基づいて新しい Python の型を構築する方針は C++ オ"
-"ブジェクトに対しても有効です。"
+"Dependiendo de lo que necesites, hay varias maneras de hacerlo. Para hacerlo "
+"manualmente empieza por leer :ref:`the \"Extending and Embedding\" document "
+"<extending-index>`.Fíjate que para el sistema de tiempo de ejecución Python, "
+"no hay una gran diferencia entre C y C++, por lo que la estrategia de "
+"construir un nuevo tipo Python alrededor de una estructura de C de tipo "
+"puntero, también funcionará para objetos C++."
 
-#: ../../faq/extending.rst:212
+#: ../Doc/faq/extending.rst:212
 msgid "For C++ libraries, see :ref:`c-wrapper-software`."
-msgstr ""
-"C++ ライブラリに関しては、 :ref:`c-wrapper-software` を参照してください。"
+msgstr "Para bibliotecas C++, mira :ref:`c-wrapper-software`."
 
-#: ../../faq/extending.rst:216
+#: ../Doc/faq/extending.rst:216
 msgid "I added a module using the Setup file and the make fails; why?"
 msgstr ""
-"セットアップファイルでモジュールを追加しようとしたらメイクに失敗しました。な"
-"ぜですか？"
+"He agregado un módulo usando el archivo de configuración y el *make* falla. "
+"¿Porque?"
 
-#: ../../faq/extending.rst:218
+#: ../Doc/faq/extending.rst:218
 msgid ""
 "Setup must end in a newline, if there is no newline there, the build process "
 "fails.  (Fixing this requires some ugly shell script hackery, and this bug "
 "is so minor that it doesn't seem worth the effort.)"
 msgstr ""
-"セットアップは改行で終わらなければならなくて、改行がないと、ビルド工程は失敗"
-"します。(これを直すには、ある種の醜いシェルスクリプトハックが必要ですが、この"
-"バグは小さいものですから努力に見合う価値はないでしょう。)"
+"La configuración debe terminar en una nueva linea, si esta no está, entonces "
+"el proceso *build* falla. (reparar esto requiere algún truco de linea de "
+"comandos que puede ser no muy prolijo, y seguramente el error es tan pequeño "
+"que no valdrá el esfuerzo.)"
 
-#: ../../faq/extending.rst:224
+#: ../Doc/faq/extending.rst:224
 msgid "How do I debug an extension?"
-msgstr "拡張をデバッグするにはどうしますか？"
+msgstr "¿Cómo puedo depurar una extensión?"
 
-#: ../../faq/extending.rst:226
+#: ../Doc/faq/extending.rst:226
 msgid ""
 "When using GDB with dynamically loaded extensions, you can't set a "
 "breakpoint in your extension until your extension is loaded."
 msgstr ""
-"動的にロードされた拡張に GDB を使うとき、拡張がロードされるまでブレークポイン"
-"トを設定してはいけません。"
+"Cuando se usa GDB con extensiones cargadas de forma dinámica, puedes "
+"configurar un punto de verificación (*breakpoint*) en tu extensión hasta que "
+"esta se cargue."
 
-#: ../../faq/extending.rst:229
+#: ../Doc/faq/extending.rst:229
 msgid "In your ``.gdbinit`` file (or interactively), add the command:"
-msgstr "``.gdbinit`` ファイルに(または対話的に)、このコマンドを加えてください:"
+msgstr "En tu archivo ``.gdbinit`` (o interactivamente), agrega el comando:"
 
-#: ../../faq/extending.rst:235
+#: ../Doc/faq/extending.rst:235
 msgid "Then, when you run GDB:"
-msgstr "そして、GDB を起動するときに:"
+msgstr "Luego, cuando corras GDB:"
 
-#: ../../faq/extending.rst:247
+#: ../Doc/faq/extending.rst:247
 msgid ""
 "I want to compile a Python module on my Linux system, but some files are "
 "missing. Why?"
 msgstr ""
-"Linux システムで Python モジュールをコンパイルしたいのですが、見つからない"
-"ファイルがあります。なぜですか？"
+"Quiero compilar un módulo Python en mi sistema Linux, pero me faltan algunos "
+"archivos . ¿Por qué?"
 
-#: ../../faq/extending.rst:249
+#: ../Doc/faq/extending.rst:249
 msgid ""
 "Most packaged versions of Python don't include the :file:`/usr/lib/python2."
 "{x}/config/` directory, which contains various files required for compiling "
 "Python extensions."
 msgstr ""
-"Python の多くのパッケージバージョンには、Python 拡張をコンパイルするのに必要"
-"な様々なファイルを含む :file:`/usr/lib/python2.{x}/config/` ディレクトリが含"
-"まれていません。"
+"La mayoría de las versiones empaquetadas de Python no incluyen el "
+"directorio :file:`/usr/lib/python2.{x}/config/`, que contiene varios "
+"archivos que son necesarios para compilar las extensiones Python."
 
-#: ../../faq/extending.rst:253
+#: ../Doc/faq/extending.rst:253
 msgid "For Red Hat, install the python-devel RPM to get the necessary files."
 msgstr ""
-"Red Hat では、Python RPM をインストールして必要なファイルを得てください。"
+"Para *Red Hat*, instala el *python-devel RPM* para obtener los archivos "
+"necesarios."
 
-#: ../../faq/extending.rst:255
+#: ../Doc/faq/extending.rst:255
 msgid "For Debian, run ``apt-get install python-dev``."
-msgstr "Debian では、 ``apt-get install python-dev`` を実行してください。"
+msgstr "Para Debian, corre ``apt-get install python-dev``."
 
-#: ../../faq/extending.rst:258
+#: ../Doc/faq/extending.rst:258
 msgid "How do I tell \"incomplete input\" from \"invalid input\"?"
-msgstr ""
-"\"不完全 (incomplete) な入力\" を \"不適切 (invalid) な入力\" から区別するに"
-"はどうしますか？"
+msgstr "¿Cómo digo \"entrada incompleta\" desde \"entrada inválida\"?"
 
-#: ../../faq/extending.rst:260
+#: ../Doc/faq/extending.rst:260
 msgid ""
 "Sometimes you want to emulate the Python interactive interpreter's behavior, "
 "where it gives you a continuation prompt when the input is incomplete (e.g. "
@@ -413,20 +424,22 @@ msgid ""
 "parentheses or triple string quotes), but it gives you a syntax error "
 "message immediately when the input is invalid."
 msgstr ""
-"Python インタラクティブインタプリタでは、入力が不完全なとき (例えば、 \"if\" "
-"文の始まりをタイプした時や、カッコや三重文字列引用符を閉じていない時など) に"
-"は継続プロンプトを与えられますが、入力が不適切であるときには即座に構文エラー"
-"メッセージが与えられます。このようなふるまいを模倣したいことがあります。"
+"A veces quieres emular el comportamiento del interprete interactivo de "
+"Python, que te da una continuación del *prompt* cuando la entrada esta "
+"incompleta (por ejemplo si comenzaste tu instrucción \"if\" o no cerraste un "
+"paréntesis o triples comillas), pero te da un mensaje de error de sintaxis "
+"inmediatamente cuando la entrada es invalida."
 
-#: ../../faq/extending.rst:266
+#: ../Doc/faq/extending.rst:266
 msgid ""
 "In Python you can use the :mod:`codeop` module, which approximates the "
 "parser's behavior sufficiently.  IDLE uses this, for example."
 msgstr ""
-"Python では構文解析器のふるまいに十分に近い :mod:`codeop` モジュールが使えま"
-"す。例えば IDLE がこれを使っています。"
+"En Python puedes usar el módulo :mod:`codeop`, que aproxima el "
+"comportamiento del analizador gramatical (*parser*) . IDLE usa esto, por "
+"ejemplo."
 
-#: ../../faq/extending.rst:269
+#: ../Doc/faq/extending.rst:269
 msgid ""
 "The easiest way to do it in C is to call :c:func:`PyRun_InteractiveLoop` "
 "(perhaps in a separate thread) and let the Python interpreter handle the "
@@ -434,50 +447,76 @@ msgid ""
 "to point at your custom input function. See ``Modules/readline.c`` and "
 "``Parser/myreadline.c`` for more hints."
 msgstr ""
-"これを C で行う最も簡単な方法は、 :c:func:`PyRun_InteractiveLoop` を (おそら"
-"く別のスレッドで) 呼び出し、Python インタプリタにあなたの入力を扱わせることで"
-"す。独自の入力関数を指定するのに :c:func:`PyOS_ReadlineFunctionPointer` を設"
-"定することもできます。詳しいヒントは、 ``Modules/readline.c`` や ``Parser/"
-"myreadline.c`` を参照してください。"
+"La manera mas fácil de hacerlo en C es llamar a :c:func:"
+"`PyRun_InteractiveLoop` (quizá en un hilo separado) y dejar que el "
+"interprete Python gestione la entrada por ti. Puedes también configurar :c:"
+"func:`PyOS_ReadlineFunctionPointer` para apuntar a tu función de entrada "
+"personalizada."
 
-#: ../../faq/extending.rst:276
+#: ../Doc/faq/extending.rst:276
 msgid "How do I find undefined g++ symbols __builtin_new or __pure_virtual?"
-msgstr ""
-"未定義の g++ シンボル __builtin_new や __pure_virtual を見つけるにはどうしま"
-"すか？"
+msgstr "¿Cómo encuentro símbolos g++ __builtin_new o __pure_virtual?"
 
-#: ../../faq/extending.rst:278
+#: ../Doc/faq/extending.rst:278
 msgid ""
 "To dynamically load g++ extension modules, you must recompile Python, relink "
 "it using g++ (change LINKCC in the Python Modules Makefile), and link your "
 "extension module using g++ (e.g., ``g++ -shared -o mymodule.so mymodule.o``)."
 msgstr ""
-"g++ モジュールを動的にロードするには、Python を再コンパイルし、それを g++ で"
-"再リンク (Python Modules Makefile 内の LINKCC を変更) し、拡張を g++ でリン"
-"ク (例えば ``g++ -shared -o mymodule.so mymodule.o``) しなければなりません。"
+"Para cargar dinámicamente módulos de extensión g++, debes recompilar Python, "
+"hacer un nuevo *link* usando g++ (cambia LINKCC en el Python Modules "
+"Makefile) y enlaza *link* tu extensión usando g++ (por ejemplo ``g++ -shared "
+"-o mymodule.so mymodule.o``)."
 
-#: ../../faq/extending.rst:284
+#: ../Doc/faq/extending.rst:284
 msgid ""
 "Can I create an object class with some methods implemented in C and others "
 "in Python (e.g. through inheritance)?"
 msgstr ""
-"メソッドのいくつかは C で、その他は Python で実装されたオブジェクトクラスを "
-"(継承などで) 作ることはできますか？"
+"¿Puedo crear una clase objeto con algunos métodos implementado en C y otros "
+"en Python (por ejemplo a través de la herencia)?"
 
-#: ../../faq/extending.rst:286
+#: ../Doc/faq/extending.rst:286
 msgid ""
 "Yes, you can inherit from built-in classes such as :class:`int`, :class:"
 "`list`, :class:`dict`, etc."
 msgstr ""
-"はい、 :class:`int` 、 :class:`list` 、 :class:`dict` などのビルトインクラス"
-"から継承できます。"
+"Si, puedes heredar de clases integradas como :class:`int`, :class:`list`, :"
+"class:`dict`, etc."
 
-#: ../../faq/extending.rst:289
+#: ../Doc/faq/extending.rst:289
+#, fuzzy
 msgid ""
 "The Boost Python Library (BPL, https://www.boost.org/libs/python/doc/index."
 "html) provides a way of doing this from C++ (i.e. you can inherit from an "
 "extension class written in C++ using the BPL)."
 msgstr ""
-"The Boost Python Library (BPL, https://www.boost.org/libs/python/doc/index."
-"html) を使えば、これを C++ からできます。 (すなわち、BPL を使って C++ で書か"
-"れた拡張クラスを継承できます)."
+"La biblioteca *Boost Pyhton* (BPL, http://www.boost.org/libs/python/doc/"
+"index.html) provee una manera de realizar esto desde C++ (por ejemplo puedes "
+"heredar de una clase extensión escrita en C++ usando el BPL)."
+
+#~ msgid ""
+#~ "However sometimes you have to run the embedded Python interpreter in the "
+#~ "same thread as your rest application and you can't allow the :c:func:"
+#~ "`PyRun_InteractiveLoop` to stop while waiting for user input. A solution "
+#~ "is trying to compile the received string with :c:func:`Py_CompileString`. "
+#~ "If it compiles without errors, try to execute the returned code object by "
+#~ "calling :c:func:`PyEval_EvalCode`. Otherwise save the input for later. If "
+#~ "the compilation fails, find out if it's an error or just more input is "
+#~ "required - by extracting the message string from the exception tuple and "
+#~ "comparing it to the string \"unexpected EOF while parsing\".  Here is a "
+#~ "complete example using the GNU readline library (you may want to ignore "
+#~ "**SIGINT** while calling readline())::"
+#~ msgstr ""
+#~ "Sin embargo, a veces debe ejecutar el intérprete de Python integrado en "
+#~ "el mismo hilo que su aplicación de descanso y no puede permitir que el :c:"
+#~ "func:`PyRun_InteractiveLoop` se detenga mientras espera la entrada del "
+#~ "usuario. Una solución es intentar compilar la cadena recibida con :c:func:"
+#~ "`Py_CompileString`. Si se compila sin errores, intente ejecutar el objeto "
+#~ "de código devuelto llamando a :c:func:`PyEval_EvalCode`. De lo contrario, "
+#~ "guarde la entrada para más tarde. Si la compilación falla, averigüe si es "
+#~ "un error o simplemente se requiere más entrada, extrayendo la cadena del "
+#~ "mensaje de la tupla de excepción y comparándola con la cadena \"EOF "
+#~ "inesperado durante el análisis\". Aquí hay un ejemplo completo usando la "
+#~ "biblioteca de línea de lectura de GNU (es posible que desee ignorar "
+#~ "**SIGINT** mientras llama a readline ()):"

@@ -1,50 +1,49 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org / https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get the list of volunteers
 #
-# Translators:
-# tomo, 2022
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:04+0000\n"
-"Last-Translator: tomo, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2019-05-06 11:59-0400\n"
+"PO-Revision-Date: 2021-08-07 18:14+0200\n"
+"Language-Team: python-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language: es_ES\n"
+"X-Generator: Poedit 3.0\n"
 
-#: ../../library/email.charset.rst:2
+#: ../Doc/library/email.charset.rst:2
 msgid ":mod:`email.charset`: Representing character sets"
-msgstr ":mod:`email.charset`: 文字集合の表現"
+msgstr ":mod:`email.charset`:  Representa conjunto de caracteres"
 
-#: ../../library/email.charset.rst:7
+#: ../Doc/library/email.charset.rst:7
 msgid "**Source code:** :source:`Lib/email/charset.py`"
-msgstr "**ソースコード:** :source:`Lib/email/charset.py`"
+msgstr "**Código fuente:** :source:`Lib/email/charset.py`"
 
-#: ../../library/email.charset.rst:11
+#: ../Doc/library/email.charset.rst:11
 msgid ""
 "This module is part of the legacy (``Compat32``) email API.  In the new API "
 "only the aliases table is used."
 msgstr ""
-"このモジュールは、レガシーな (``Compat32``) email API の一部分です。\n"
-"新しい API では別名の表のみ使われています。"
+"Este módulo es parte de la API de email heredada (``Compat32``). En la nueva "
+"API solo se usa la tabla de alias."
 
-#: ../../library/email.charset.rst:14
+#: ../Doc/library/email.charset.rst:14
 msgid ""
 "The remaining text in this section is the original documentation of the "
 "module."
-msgstr "この節の以降のテキストはモジュールの元々のドキュメントです。"
+msgstr ""
+"El texto restante de esta sección corresponde a la documentación original "
+"del módulo."
 
-#: ../../library/email.charset.rst:16
+#: ../Doc/library/email.charset.rst:16
 msgid ""
 "This module provides a class :class:`Charset` for representing character "
 "sets and character set conversions in email messages, as well as a character "
@@ -52,22 +51,23 @@ msgid ""
 "Instances of :class:`Charset` are used in several other modules within the :"
 "mod:`email` package."
 msgstr ""
-"このモジュールは文字集合の表現および電子メールメッセージの文字集合の変換を行"
-"う :class:`Charset` クラスに加え、文字集合のレジストリとそれを操作する簡易メ"
-"ソッドを提供しています。\n"
-":class:`Charset` インスタンスは :mod:`email` パッケージ中にある他のいくつかの"
-"モジュールで使用されます。"
+"Este módulo proporciona una clase :class:`Charset` para representar "
+"conjuntos de caracteres y conversiones de conjuntos de caracteres en "
+"mensajes de correo electrónico, así como un registro de conjuntos de "
+"caracteres y varios métodos de conveniencia para manipular este registro. "
+"Las instancias de :class:`Charset` se utilizan en varios otros módulos "
+"dentro del paquete :mod:`email`."
 
-#: ../../library/email.charset.rst:22
+#: ../Doc/library/email.charset.rst:22
 msgid "Import this class from the :mod:`email.charset` module."
-msgstr ""
-"このクラスは :mod:`email.charset` モジュールからインポートしてください。"
+msgstr "Importe esta clase desde el módulo :mod:`email.charset`."
 
-#: ../../library/email.charset.rst:27
+#: ../Doc/library/email.charset.rst:27
 msgid "Map character sets to their email properties."
-msgstr "文字集合を電子メールのプロパティに写像します。"
+msgstr ""
+"Asigna conjuntos de caracteres a sus propiedades de correo electrónico."
 
-#: ../../library/email.charset.rst:29
+#: ../Doc/library/email.charset.rst:29
 msgid ""
 "This class provides information about the requirements imposed on email for "
 "a specific character set.  It also provides convenience routines for "
@@ -75,25 +75,26 @@ msgid ""
 "codecs.  Given a character set, it will do its best to provide information "
 "on how to use that character set in an email message in an RFC-compliant way."
 msgstr ""
-"このクラスは、ある特定の文字集合に対し電子メールに課される条件についての情報"
-"を提供します。\n"
-"また、適用可能なコーデックスが利用出来れば、文字集合間の変換を行う簡易ルーチ"
-"ンを提供します。\n"
-"文字集合について、この関数は電子メールメッセージ内での RFC に準拠した文字集合"
-"の使い方に関する情報を提供するのに最善を尽くします。"
+"Esta clase proporciona información sobre los requisitos impuestos al correo "
+"electrónico para un conjunto de caracteres específico. También proporciona "
+"rutinas de conveniencia para convertir entre juegos de caracteres, dada la "
+"disponibilidad de los códecs aplicables. Dado un conjunto de caracteres, "
+"hará todo lo posible para proporcionar información sobre cómo utilizar ese "
+"conjunto de caracteres en un mensaje de correo electrónico de forma "
+"compatible con RFC."
 
-#: ../../library/email.charset.rst:35
+#: ../Doc/library/email.charset.rst:35
 msgid ""
 "Certain character sets must be encoded with quoted-printable or base64 when "
 "used in email headers or bodies.  Certain character sets must be converted "
 "outright, and are not allowed in email."
 msgstr ""
-"文字集合によっては、電子メールのヘッダや本体で使う場合に quoted-printable や "
-"base64 形式でエンコードされなければなりません。\n"
-"また、文字集合によっては完全に変換する必要があり、電子メールの中では使用でき"
-"ません。"
+"Ciertos conjuntos de caracteres deben codificarse con quoted-printable o "
+"base64 cuando se usan en encabezados o cuerpos de correo electrónico. "
+"Ciertos conjuntos de caracteres deben convertirse directamente y no están "
+"permitidos en el correo electrónico."
 
-#: ../../library/email.charset.rst:39
+#: ../Doc/library/email.charset.rst:39
 msgid ""
 "Optional *input_charset* is as described below; it is always coerced to "
 "lower case.  After being alias normalized it is also used as a lookup into "
@@ -105,95 +106,100 @@ msgid ""
 "with base64, bodies will not be encoded, but output text will be converted "
 "from the ``euc-jp`` character set to the ``iso-2022-jp`` character set."
 msgstr ""
-"以下ではオプション引数 *input_charset* について説明します。この値は常に小文字"
-"に強制的に変換されます。そして文字集合の別名が正規化されたあと、この値は文字"
-"集合のレジストリ内を検索し、ヘッダのエンコーディングとメッセージ本体のエン"
-"コーディング、および出力時の変換に使われるコーデックを見付けるのに使われま"
-"す。たとえば *input_charset* が ``iso-8859-1`` の場合、ヘッダおよびメッセージ"
-"本体は quoted-printable でエンコードされ、出力時の変換用コーデックは必要あり"
-"ません。もし *input_charset* が ``euc-jp`` ならば、ヘッダは base64 でエンコー"
-"ドされ、メッセージ本体はエンコードされませんが、出力されるテキストは ``euc-"
-"jp`` 文字集合から ``iso-2022-jp`` 文字集合に変換されます。"
+"Opcional *input_charset* es como se describe a continuación; siempre se "
+"convierte a minúsculas.  Después de que el alias sea normalizado también se "
+"utiliza como una búsqueda en el registro de conjuntos de caracteres para "
+"averiguar la codificación del encabezado, codificación de cuerpo, y códec de "
+"conversión de salida que se usarán para el conjunto de caracteres.  Por "
+"ejemplo, si *input_charset* es ``iso-8859-1``, los encabezados y cuerpos se "
+"codificarán mediante quoted-printable y no es necesario ningún códec de "
+"conversión de salida.  Si *input_charset* es ``euc-jp``, los encabezados se "
+"codificarán con base64, los cuerpos no se codificarán, pero el texto de "
+"salida se convertirá del conjunto de caracteres ``euc-jp`` al conjunto de "
+"caracteres ``iso-2022-jp``."
 
-#: ../../library/email.charset.rst:49
+#: ../Doc/library/email.charset.rst:49
 msgid ":class:`Charset` instances have the following data attributes:"
-msgstr ":class:`Charset` インスタンスは以下のようなデータ属性をもっています:"
+msgstr ""
+"Las instancias :class:`Charset` tienen los siguientes atributos de datos:"
 
-#: ../../library/email.charset.rst:53
+#: ../Doc/library/email.charset.rst:53
 msgid ""
 "The initial character set specified.  Common aliases are converted to their "
 "*official* email names (e.g. ``latin_1`` is converted to ``iso-8859-1``).  "
 "Defaults to 7-bit ``us-ascii``."
 msgstr ""
-"最初に指定される文字集合です。一般的な別名は、*正式な* 電子メール用の名前に変"
-"換されます (たとえば、``latin_1`` は ``iso-8859-1`` に変換されます)。デフォル"
-"トは 7-bit の ``us-ascii`` です。"
+"El conjunto de caracteres inicial especificado. Los alias comunes se "
+"convierten a sus nombres de correo electrónico *Official* (por ejemplo, "
+"``latin_1`` se convierte a ``iso-8859-1``). El valor predeterminado es ``us-"
+"ascii`` de 7 bits."
 
-#: ../../library/email.charset.rst:60
+#: ../Doc/library/email.charset.rst:60
 msgid ""
 "If the character set must be encoded before it can be used in an email "
 "header, this attribute will be set to ``Charset.QP`` (for quoted-printable), "
 "``Charset.BASE64`` (for base64 encoding), or ``Charset.SHORTEST`` for the "
 "shortest of QP or BASE64 encoding. Otherwise, it will be ``None``."
 msgstr ""
-"この文字集合が電子メールヘッダに使われる前にエンコードされなければならない場"
-"合、この属性は ``Charset.QP`` (quoted-printable エンコーディング)、``Charset."
-"BASE64`` (base64 エンコーディング)、あるいは最短の QP または BASE64 エンコー"
-"ディングである ``Charset.SHORTEST`` に設定されます。そうでない場合、この値は "
-"``None`` になります。"
+"Si el conjunto de caracteres debe codificarse antes de que pueda usarse en "
+"un encabezado de correo electrónico, este atributo se establecerá a "
+"``Charset.QP`` (para quoted-printable), ``Charset.BASE64`` (para "
+"codificación base64), o ``Charset.SHORTEST`` para la más codificación más "
+"corta QP o BASE64. De lo contrario será  ``None``."
 
-#: ../../library/email.charset.rst:69
+#: ../Doc/library/email.charset.rst:69
 msgid ""
 "Same as *header_encoding*, but describes the encoding for the mail message's "
 "body, which indeed may be different than the header encoding. ``Charset."
 "SHORTEST`` is not allowed for *body_encoding*."
 msgstr ""
-"*header_encoding* と同じですが、この値はメッセージ本体のためのエンコーディン"
-"グを記述します。これはヘッダ用のエンコーディングとは違うかもしれません。"
-"*body_encoding* では、``Charset.SHORTEST`` を使うことはできません。"
+"Igual que *header_encoding*, pero describe la codificación del cuerpo del "
+"mensaje de correo, que de hecho puede ser diferente a la codificación del "
+"encabezado. ``Charset.SHORTEST`` no está permitido para *body_encoding*."
 
-#: ../../library/email.charset.rst:76
+#: ../Doc/library/email.charset.rst:76
 msgid ""
 "Some character sets must be converted before they can be used in email "
 "headers or bodies.  If the *input_charset* is one of them, this attribute "
 "will contain the name of the character set output will be converted to. "
 "Otherwise, it will be ``None``."
 msgstr ""
-"文字集合によっては、電子メールのヘッダあるいはメッセージ本体に使う前に変換し"
-"なければなりません。もし *input_charset* がそれらの文字集合のどれかをさしてい"
-"たら、この *output_charset* 属性はそれが出力時に変換される文字集合の名前を表"
-"しています。それ以外の場合、この値は ``None`` になります。"
+"Algunos conjuntos de caracteres deben ser convertidos antes de poder ser "
+"usados en cabeceras o cuerpos de correos. Si el *input_charset* es uno de "
+"ellos, este atributo contendrá el nombre del conjunto de caracteres al que "
+"será convertido. De lo contrario, será ``None``."
 
-#: ../../library/email.charset.rst:84
+#: ../Doc/library/email.charset.rst:84
 msgid ""
 "The name of the Python codec used to convert the *input_charset* to "
 "Unicode.  If no conversion codec is necessary, this attribute will be "
 "``None``."
 msgstr ""
-"*input_charset* を Unicode に変換するための Python 用コーデック名です。変換用"
-"のコーデックが必要ないときは、この値は ``None`` になります。"
+"El nombre del códec de Python usado para convertir el *input_charset* a "
+"Unicode. Si no es necesario un códec de conversión, este atributo será "
+"``None``."
 
-#: ../../library/email.charset.rst:91
+#: ../Doc/library/email.charset.rst:91
 msgid ""
 "The name of the Python codec used to convert Unicode to the "
 "*output_charset*.  If no conversion codec is necessary, this attribute will "
 "have the same value as the *input_codec*."
 msgstr ""
-"Unicode を *output_charset* に変換するための Python 用コーデック名です。変換"
-"用のコーデックが必要ないときは、この値は ``None`` になります。この属性は "
-"*input_codec* と同じ値を持つことになるでしょう。"
+"El nombre del códec de Python usado para convertir Unicode a "
+"*output_charset*. Si no es necesario un códec de conversión, este atributo "
+"tendrá el mismo valor que *input_codec*."
 
-#: ../../library/email.charset.rst:96
+#: ../Doc/library/email.charset.rst:96
 msgid ":class:`Charset` instances also have the following methods:"
-msgstr ":class:`Charset` インスタンスは、以下のメソッドも持っています:"
+msgstr "Las instancias :class:`Charset` además tienen los siguientes métodos:"
 
-#: ../../library/email.charset.rst:100
+#: ../Doc/library/email.charset.rst:100
 msgid "Return the content transfer encoding used for body encoding."
 msgstr ""
-"メッセージ本体のエンコードに使われる content-transfer-encoding の値を返しま"
-"す。"
+"Retorna la codificación de transferencia de contenido usada para la "
+"codificación del cuerpo."
 
-#: ../../library/email.charset.rst:102
+#: ../Doc/library/email.charset.rst:102
 msgid ""
 "This is either the string ``quoted-printable`` or ``base64`` depending on "
 "the encoding used, or it is a function, in which case you should call the "
@@ -201,128 +207,127 @@ msgid ""
 "function should then set the :mailheader:`Content-Transfer-Encoding` header "
 "itself to whatever is appropriate."
 msgstr ""
-"この値は使用しているエンコーディングの文字列 ``quoted-printable`` または "
-"``base64`` か、あるいは関数のいずれかです。後者の場合、これはエンコードされ"
-"る Message オブジェクトを単一の引数として取るような関数である必要があります。"
-"この関数は変換後 :mailheader:`Content-Transfer-Encoding` ヘッダ自体を、なんで"
-"あれ適切な値に設定する必要があります。"
+"Esta es la cadena de caracteres ``quoted-printable`` o ``base64`` "
+"dependiendo de la codificación usada, o es una función, en cuyo caso se "
+"deberá llamar a la función con un solo argumento, el objeto Mensaje a ser "
+"codificado. La función deberá luego establecer el encabezado :mailheader:"
+"`Content-Transfer-Encoding`  en lo que sea apropiado."
 
-#: ../../library/email.charset.rst:108
+#: ../Doc/library/email.charset.rst:108
 msgid ""
 "Returns the string ``quoted-printable`` if *body_encoding* is ``QP``, "
 "returns the string ``base64`` if *body_encoding* is ``BASE64``, and returns "
 "the string ``7bit`` otherwise."
 msgstr ""
-"このメソッドは *body_encoding* が ``QP`` の場合 ``quoted-printable`` を返し、"
-"*body_encoding* が ``BASE64`` の場合 ``base64`` を返します。それ以外の場合は"
-"文字列 ``7bit`` を返します。"
+"Retorna la cadena ``quoted-printable`` si *body_encoding* es ``QP``, retorna "
+"la cadena ``base64`` si *body_encoding* es ``BASE64``, y retorna la cadena "
+"``7bit`` en caso contrario."
 
-#: ../../library/email.charset.rst:115
+#: ../Doc/library/email.charset.rst:148
 msgid "Return the output character set."
-msgstr "出力用の文字集合を返します。"
+msgstr "Return the output character set."
 
-#: ../../library/email.charset.rst:117
+#: ../Doc/library/email.charset.rst:150
 msgid ""
 "This is the *output_charset* attribute if that is not ``None``, otherwise it "
 "is *input_charset*."
 msgstr ""
-"これは *output_charset* 属性が ``None`` でなければその値になります。それ以外"
-"の場合、この値は *input_charset* と同じです。"
+"Este es el atributo *output_charset* si no es ``None``, en caso contrario es "
+"*input_charset*."
 
-#: ../../library/email.charset.rst:123
+#: ../Doc/library/email.charset.rst:156
 msgid "Header-encode the string *string*."
-msgstr "文字列 *string* をヘッダ用にエンコードします。"
+msgstr "Codifica como encabezado la cadena de caracteres *string*."
 
-#: ../../library/email.charset.rst:125
+#: ../Doc/library/email.charset.rst:158
 msgid ""
 "The type of encoding (base64 or quoted-printable) will be based on the "
 "*header_encoding* attribute."
 msgstr ""
-"エンコーディングの形式 (base64 または quoted-printable) は、"
-"*header_encoding* 属性に基づきます。"
+"El tipo de codificación (base64 o quoted-printable) se basará en el atributo "
+"*header_encoding*."
 
-#: ../../library/email.charset.rst:131
+#: ../Doc/library/email.charset.rst:164
 msgid "Header-encode a *string* by converting it first to bytes."
-msgstr "*string* を最初にバイト列に変換し、ヘッダ用にエンコードします。"
+msgstr "Codifica como encabezado *string* convirtiéndolo primero a bytes."
 
-#: ../../library/email.charset.rst:133
+#: ../Doc/library/email.charset.rst:166
 msgid ""
 "This is similar to :meth:`header_encode` except that the string is fit into "
 "maximum line lengths as given by the argument *maxlengths*, which must be an "
 "iterator: each element returned from this iterator will provide the next "
 "maximum line length."
 msgstr ""
-"これは :meth:`header_encode` と似ていますが、与えられた引数 *maxlengths* に"
-"従って、行の最大長に合うように文字列が調整されるところが異なります。 "
-"*maxlengths* はイテレータでなければなりません: このイテレータが返す要素は次の"
-"行の最大長を表します。"
+"Es similar a  :meth:`header_encode` excepto que la cadena se ajusta a las "
+"longitudes máximas indicadas en el argumento *maxlengths*, el cual debe ser "
+"un iterador: cada elemento retornado por este iterador proporcionará la "
+"siguiente longitud máxima de línea."
 
-#: ../../library/email.charset.rst:141
+#: ../Doc/library/email.charset.rst:174
 msgid "Body-encode the string *string*."
-msgstr "文字列 *string* をメッセージ本体用にエンコードします。"
+msgstr "Codifica como cuerpo la cadena *string*."
 
-#: ../../library/email.charset.rst:143
+#: ../Doc/library/email.charset.rst:176
 msgid ""
 "The type of encoding (base64 or quoted-printable) will be based on the "
 "*body_encoding* attribute."
 msgstr ""
-"エンコーディングの形式 (base64 または quoted-printable) は、*body_encoding* "
-"属性に基づきます。"
+"El tipo de codificación  (base64 o quoted-printable) se basará en el "
+"atributo *body_encoding*."
 
-#: ../../library/email.charset.rst:146
+#: ../Doc/library/email.charset.rst:179
 msgid ""
 "The :class:`Charset` class also provides a number of methods to support "
 "standard operations and built-in functions."
 msgstr ""
-":class:`Charset` クラスには、標準的な演算と組み込み関数をサポートするいくつか"
-"のメソッドがあります。"
+"La clase :class:`Charset` también proporciona una serie de métodos para "
+"soportar operaciones estándar y funciones integradas."
 
-#: ../../library/email.charset.rst:152
+#: ../Doc/library/email.charset.rst:185
 msgid ""
 "Returns *input_charset* as a string coerced to lower case. :meth:`__repr__` "
 "is an alias for :meth:`__str__`."
 msgstr ""
-"*input_charset* を小文字に変換された文字列型として返します。 :meth:"
-"`__repr__` は、 :meth:`__str__` の別名となっています。"
+"Retorna *input_charset* como una cadena de caracteres convertida a "
+"minúsculas. :meth:`__repr__` es un alias para :meth:`__str__`."
 
-#: ../../library/email.charset.rst:158
+#: ../Doc/library/email.charset.rst:191
 msgid ""
 "This method allows you to compare two :class:`Charset` instances for "
 "equality."
 msgstr ""
-"このメソッドは、2つの :class:`Charset` インスタンスが同じかどうかをチェックす"
-"るのに使います。"
+"Este método le permite comparar dos instancias :class:`Charset` por igualdad."
 
-#: ../../library/email.charset.rst:164
+#: ../Doc/library/email.charset.rst:197
 msgid ""
 "This method allows you to compare two :class:`Charset` instances for "
 "inequality."
 msgstr ""
-"このメソッドは、2つの :class:`Charset` インスタンスが異なるかどうかをチェック"
-"するのに使います。"
+"Este método le permite comparar dos instancias :class:`Charset` por "
+"desigualdad."
 
-#: ../../library/email.charset.rst:167
+#: ../Doc/library/email.charset.rst:200
 msgid ""
 "The :mod:`email.charset` module also provides the following functions for "
 "adding new entries to the global character set, alias, and codec registries:"
 msgstr ""
-"また、 :mod:`email.charset` モジュールには、グローバルな文字集合、文字集合の"
-"別名およびコーデック用のレジストリに新しいエントリを追加する以下の関数も含ま"
-"れています:"
+"El módulo :mod:`email.charset` provee además las siguientes funciones para "
+"agregar nuevas entradas al conjunto global de caracteres, alias y registros "
+"de códecs:"
 
-#: ../../library/email.charset.rst:173
+#: ../Doc/library/email.charset.rst:206
 msgid "Add character properties to the global registry."
-msgstr "文字の属性をグローバルなレジストリに追加します。"
+msgstr "Añade propiedades de carácter al registro global."
 
-#: ../../library/email.charset.rst:175
+#: ../Doc/library/email.charset.rst:208
 msgid ""
 "*charset* is the input character set, and must be the canonical name of a "
 "character set."
 msgstr ""
-"*charset* は入力用の文字集合で、その文字集合の正式名称を指定する必要がありま"
-"す。"
+"*charset* es el conjunto de caracteres de entrada, y debe ser el nombre "
+"canónico del conjunto de caracteres."
 
-#: ../../library/email.charset.rst:178
+#: ../Doc/library/email.charset.rst:211
 msgid ""
 "Optional *header_enc* and *body_enc* is either ``Charset.QP`` for quoted-"
 "printable, ``Charset.BASE64`` for base64 encoding, ``Charset.SHORTEST`` for "
@@ -330,75 +335,76 @@ msgid ""
 "encoding.  ``SHORTEST`` is only valid for *header_enc*. The default is "
 "``None`` for no encoding."
 msgstr ""
-"オプション引数 *header_enc* および *body_enc* は quoted-printable エンコー"
-"ディングを表す ``Charset.QP`` か、base64 エンコーディングを表す ``Charset."
-"BASE64``、最短の quoted-printable または base64 エンコーディングを表す "
-"``Charset.SHORTEST``、あるいはエンコーディングなしの ``None`` のいずれかにな"
-"ります。``SHORTEST`` が使えるのは *header_enc* だけです。デフォルトの値はエン"
-"コーディングなしの ``None`` になっています。"
+"Opcional *header_enc* y *body_enc* es ``Charset.QP`` para imprimibles entre "
+"comillas, ``Charset.BASE64`` para codificación base64, ``Charset.SHORTEST`` "
+"para codificación más corta quoted-printable o base64, o ``None`` para no "
+"codificar. ``SHORTEST`` solo es válido para *header_enc*. El valor "
+"predeterminado es ``None`` para no codificar."
 
-#: ../../library/email.charset.rst:184
+#: ../Doc/library/email.charset.rst:217
 msgid ""
 "Optional *output_charset* is the character set that the output should be in. "
 "Conversions will proceed from input charset, to Unicode, to the output "
 "charset when the method :meth:`Charset.convert` is called.  The default is "
 "to output in the same character set as the input."
 msgstr ""
-"オプション引数 *output_charset* には出力用の文字集合が入ります。 :meth:"
-"`Charset.convert` が呼ばれたときの変換はまず入力用の文字集合を Unicode に変換"
-"し、それから出力用の文字集合に変換されます。デフォルトでは、出力は入力と同じ"
-"文字集合になっています。"
+"Opcional *output_charset* es es el conjunto de caracteres en el que debe "
+"estar la salida. Las conversiones proceden del conjunto de caracteres de "
+"entrada, a Unicode, al conjunto de caracteres de salida cuando se llama al "
+"método :meth:`Charset.convert`. El valor predeterminado es la salida en el "
+"mismo conjunto de caracteres que la entrada."
 
-#: ../../library/email.charset.rst:189
+#: ../Doc/library/email.charset.rst:222
 msgid ""
 "Both *input_charset* and *output_charset* must have Unicode codec entries in "
 "the module's character set-to-codec mapping; use :func:`add_codec` to add "
 "codecs the module does not know about.  See the :mod:`codecs` module's "
 "documentation for more information."
 msgstr ""
-"*input_charset* および *output_charset* はこのモジュール中の文字集合-コーデッ"
-"ク対応表にある Unicode コーデックエントリである必要があります。モジュールがま"
-"だ対応していないコーデックを追加するには、 :func:`add_codec` を使ってくださ"
-"い。より詳しい情報については :mod:`codecs` モジュールの文書を参照してくださ"
-"い。"
+"Tanto *input_charset* y *output_charset* deben tener entradas de códec "
+"Unicode en el conjunto de caracteres del módulo para la asignación del "
+"códec; use :func:`add_codec` para agregar códecs que el módulo no conozca. "
+"Consulte la documentación del módulo :mod:`codecs` para más información."
 
-#: ../../library/email.charset.rst:194
+#: ../Doc/library/email.charset.rst:227
 msgid ""
 "The global character set registry is kept in the module global dictionary "
 "``CHARSETS``."
 msgstr ""
-"グローバルな文字集合用のレジストリは、モジュールのグローバル辞書 "
-"``CHARSETS`` 内に保持されています。"
+"El registro global de conjuntos de caracteres se mantiene en el módulo "
+"global diccionario ``CHARSETS``."
 
-#: ../../library/email.charset.rst:200
+#: ../Doc/library/email.charset.rst:233
 msgid ""
 "Add a character set alias.  *alias* is the alias name, e.g. ``latin-1``. "
 "*canonical* is the character set's canonical name, e.g. ``iso-8859-1``."
 msgstr ""
-"文字集合の別名を追加します。*alias* はその別名で、たとえば ``latin-1`` のよう"
-"に指定します。*canonical* はその文字集合の正式名称で、たとえば "
-"``iso-8859-1`` のように指定します。"
+"Añade un alias al conjunto de caracteres. *alias* es el nombre del alias, p. "
+"ej. ``latin-1``. *canonical* es el nombre canónico del conjunto de "
+"caracteres, p. ej. ``iso-8859-1``."
 
-#: ../../library/email.charset.rst:203
+#: ../Doc/library/email.charset.rst:236
 msgid ""
 "The global charset alias registry is kept in the module global dictionary "
 "``ALIASES``."
 msgstr ""
-"文字集合のグローバルな別名用レジストリは、モジュールのグローバル辞書 "
-"``ALIASES`` 内に保持されています。"
+"El registro de alias global de conjuntos de caracteres se mantiene en el "
+"módulo global diccionario ``ALIASES``."
 
-#: ../../library/email.charset.rst:209
+#: ../Doc/library/email.charset.rst:242
 msgid ""
 "Add a codec that map characters in the given character set to and from "
 "Unicode."
 msgstr ""
-"与えられた文字集合の文字と Unicode との変換を行うコーデックを追加します。"
+"Añade un códec que asigna caracteres en el conjunto de caracteres dado hacia "
+"y desde Unicode."
 
-#: ../../library/email.charset.rst:211
+#: ../Doc/library/email.charset.rst:244
 msgid ""
 "*charset* is the canonical name of a character set. *codecname* is the name "
 "of a Python codec, as appropriate for the second argument to the :class:"
 "`str`'s :meth:`~str.encode` method."
 msgstr ""
-"*charset* は文字集合の正式な名前です。 *codecname* は、 :class:`str` の :"
-"meth:`~str.encode` メソッドの第 2 引数で使える Python コーデックの名前です。"
+"*charset* es el nombre canónico de un conjunto de caracteres. *codename* es "
+"el nombre de un códec de Python, según corresponda para el segundo argumento "
+"del método :class:`str` de  :meth:`~str.encode`."

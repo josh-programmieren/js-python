@@ -1,132 +1,132 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:13+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2021-10-16 21:42+0200\n"
+"PO-Revision-Date: 2020-10-28 08:29-0400\n"
+"Last-Translator: \n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../library/stat.rst:2
+#: ../Doc/library/stat.rst:2
 msgid ":mod:`stat` --- Interpreting :func:`~os.stat` results"
-msgstr ":mod:`stat` --- :func:`~os.stat` の結果を解釈する"
+msgstr ":mod:`stat` --- Interpretación de los resultados de :func:`~os.stat`"
 
-#: ../../library/stat.rst:10
+#: ../Doc/library/stat.rst:10
 msgid "**Source code:** :source:`Lib/stat.py`"
-msgstr "**ソースコード:** :source:`Lib/stat.py`"
+msgstr "**Código fuente:** :source:`Lib/stat.py`"
 
-#: ../../library/stat.rst:14
+#: ../Doc/library/stat.rst:14
 msgid ""
 "The :mod:`stat` module defines constants and functions for interpreting the "
 "results of :func:`os.stat`, :func:`os.fstat` and :func:`os.lstat` (if they "
 "exist).  For complete details about the :c:func:`stat`, :c:func:`fstat` and :"
 "c:func:`lstat` calls, consult the documentation for your system."
 msgstr ""
-":mod:`stat` モジュールでは、 :func:`os.stat` 、 :func:`os.lstat` 、および :"
-"func:`os.fstat` が存在する場合に、これらの関数が返す内容を解釈するための定数"
-"や関数を定義しています。 :c:func:`stat` 、 :c:func:`fstat` 、および :c:func:"
-"`lstat` の関数呼び出しについての完全な記述はシステムのドキュメントを参照して"
-"ください。"
+"El módulo :mod:`stat` define constantes y funciones para interpretar los "
+"resultados de :func:`os.stat`, :func:`os.fstat` y :func:`os.lstat` (si "
+"existen). Para obtener los detalles completos sobre las llamadas a :c:func:"
+"`stat`, :c:func:`fstat` y :c:func:`lstat`, consulta la documentación de tu "
+"sistema."
 
-#: ../../library/stat.rst:19
+#: ../Doc/library/stat.rst:19
 msgid "The stat module is backed by a C implementation."
-msgstr "stat モジュールは、C 実装に裏付けされるようになりました。"
+msgstr "El módulo *stat* se apoya en una implementación en C."
 
-#: ../../library/stat.rst:22
+#: ../Doc/library/stat.rst:22
 msgid ""
 "The :mod:`stat` module defines the following functions to test for specific "
 "file types:"
 msgstr ""
-":mod:`stat` モジュールでは、特殊なファイル型を判別するための以下の関数を定義"
-"しています:"
+"El módulo :mod:`stat` define las siguientes funciones para comprobar tipos "
+"de archivo específicos:"
 
-#: ../../library/stat.rst:28
+#: ../Doc/library/stat.rst:28
 msgid "Return non-zero if the mode is from a directory."
-msgstr "ファイルのモードがディレクトリの場合にゼロでない値を返します。"
+msgstr "Retorna un valor no nulo si el modo es de un directorio."
 
-#: ../../library/stat.rst:33
+#: ../Doc/library/stat.rst:33
 msgid "Return non-zero if the mode is from a character special device file."
 msgstr ""
-"ファイルのモードがキャラクタ型の特殊デバイスファイルの場合にゼロでない値を返"
-"します。"
+"Retorna un valor no nulo si el modo es de un archivo de un dispositivo "
+"especial de caracteres."
 
-#: ../../library/stat.rst:38
+#: ../Doc/library/stat.rst:38
 msgid "Return non-zero if the mode is from a block special device file."
 msgstr ""
-"ファイルのモードがブロック型の特殊デバイスファイルの場合にゼロでない値を返し"
-"ます。"
+"Retorna un valor no nulo si el modo es de un archivo de un dispositivo "
+"especial de bloques."
 
-#: ../../library/stat.rst:43
+#: ../Doc/library/stat.rst:43
 msgid "Return non-zero if the mode is from a regular file."
-msgstr "ファイルのモードが通常ファイルの場合にゼロでない値を返します。"
+msgstr "Retorna un valor no nulo si el modo es de un archivo normal."
 
-#: ../../library/stat.rst:48
+#: ../Doc/library/stat.rst:48
 msgid "Return non-zero if the mode is from a FIFO (named pipe)."
 msgstr ""
-"ファイルのモードが FIFO (名前つきパイプ) の場合にゼロでない値を返します。"
+"Retorna un valor no nulo si el modo es de un *FIFO* (tubería con nombre)."
 
-#: ../../library/stat.rst:53
+#: ../Doc/library/stat.rst:53
 msgid "Return non-zero if the mode is from a symbolic link."
-msgstr "ファイルのモードがシンボリックリンクの場合にゼロでない値を返します。"
+msgstr "Retorna un valor no nulo si el modo es de un enlace simbólico."
 
-#: ../../library/stat.rst:58
+#: ../Doc/library/stat.rst:58
 msgid "Return non-zero if the mode is from a socket."
-msgstr "ファイルのモードがソケットの場合にゼロでない値を返します。"
+msgstr "Retorna un valor no nulo si el modo es de un socket."
 
-#: ../../library/stat.rst:62
+#: ../Doc/library/stat.rst:62
 msgid "Return non-zero if the mode is from a door."
-msgstr "ファイルのモードがドアの場合にゼロでない値を返します。"
+msgstr "Retorna un valor no nulo si el modo es de un *door*."
 
-#: ../../library/stat.rst:68
+#: ../Doc/library/stat.rst:68
 msgid "Return non-zero if the mode is from an event port."
-msgstr "ファイルのモードがイベントポートの場合にゼロでない値を返します。"
+msgstr "Retorna un valor no nulo si el modo es de un *event port*."
 
-#: ../../library/stat.rst:74
+#: ../Doc/library/stat.rst:74
 msgid "Return non-zero if the mode is from a whiteout."
-msgstr "ファイルのモードがホワイトアウトの場合にゼロでない値を返します。"
+msgstr "Retorna un valor no nulo si el modo es de un *whiteout*."
 
-#: ../../library/stat.rst:78
+#: ../Doc/library/stat.rst:78
 msgid ""
 "Two additional functions are defined for more general manipulation of the "
 "file's mode:"
 msgstr ""
-"より一般的なファイルのモードを操作するための二つの関数が定義されています:"
+"Se definen dos funciones adicionales para una manipulación más general del "
+"modo del archivo:"
 
-#: ../../library/stat.rst:84
+#: ../Doc/library/stat.rst:84
 msgid ""
 "Return the portion of the file's mode that can be set by :func:`os.chmod`\\ "
 "---that is, the file's permission bits, plus the sticky bit, set-group-id, "
 "and set-user-id bits (on systems that support them)."
 msgstr ""
-":func:`os.chmod` で設定することのできる一部のファイルモード --- すなわち、"
-"ファイルの許可ビット (permission bits) に加え、 (サポートされているシステムで"
-"は) スティッキービット (sticky bit)、実行グループ ID 設定 (set-group-id) およ"
-"び実行ユーザ ID 設定 (set-user-id) ビット --- を返します。"
+"Retorna la porción del modo del archivo que puede ser establecida por :func:"
+"`os.chmod`\\ --- esto es, los bits de los permisos del archivo más los bits "
+"*sticky bit*, *set-group-id* y *set-user-id* (en los sistemas que lo "
+"soporten)."
 
-#: ../../library/stat.rst:91
+#: ../Doc/library/stat.rst:91
 msgid ""
 "Return the portion of the file's mode that describes the file type (used by "
 "the :func:`S_IS\\*` functions above)."
 msgstr ""
-"ファイルの形式を記述しているファイルモードの一部 (上記の :func:`S_IS\\*` 関数"
-"で使われます) を返します。"
+"Retorna la porción del modo del archivo que describe el tipo de archivo "
+"(usado por las funciones :func:`S_IS\\*` de más arriba)."
 
-#: ../../library/stat.rst:94
+#: ../Doc/library/stat.rst:94
 msgid ""
 "Normally, you would use the :func:`os.path.is\\*` functions for testing the "
 "type of a file; the functions here are useful when you are doing multiple "
@@ -135,94 +135,98 @@ msgid ""
 "information about a file that isn't handled by :mod:`os.path`, like the "
 "tests for block and character devices."
 msgstr ""
-"通常、ファイルの形式を調べる場合には :func:`os.path.is\\*` 関数を使うことにな"
-"ります; ここで挙げた関数は同じファイルに対して複数のテストを同時に行いたい"
-"が、 :c:func:`stat` システムコールを何度も呼び出してオーバヘッドが生じるのを"
-"避けたい場合に便利です。これらはまた、ブロック型およびキャラクタ型デバイスに"
-"対するテストのように、 :mod:`os.path` で扱うことのできないファイルの情報を調"
-"べる際にも便利です。"
+"Normalmente se usarían las funciones :func:`os.path.is\\*` para comprobar el "
+"tipo de un archivo; estas funciones de aquí son útiles cuando se hacen "
+"múltiples comprobaciones sobre el mismo archivo y se desea evitar la "
+"sobrecarga causada por la llamada al sistema :c:func:`stat` en cada "
+"comprobación. También son útiles cuando se comprueba información de un "
+"archivo que no es gestionada por :mod:`os.path`, como buscar dispositivos de "
+"bloques o caracteres."
 
-#: ../../library/stat.rst:101
+#: ../Doc/library/stat.rst:101
 msgid "Example::"
-msgstr "以下はプログラム例です::"
+msgstr "Ejemplo::"
 
-#: ../../library/stat.rst:129
+#: ../Doc/library/stat.rst:129
 msgid ""
 "An additional utility function is provided to convert a file's mode in a "
 "human readable string:"
 msgstr ""
-"ファイルのモードを人間が可読な文字列に変換するために、追加のユーティリティ関"
-"数が提供されています。"
+"Se proporciona una función de utilidad adicional para convertir el modo del "
+"archivo en una cadena de caracteres legible por humanos:"
 
-#: ../../library/stat.rst:134
+#: ../Doc/library/stat.rst:134
 msgid "Convert a file's mode to a string of the form '-rwxrwxrwx'."
-msgstr "ファイルのモードを '-rwxrwxrwx' 形式の文字列に変換します。"
+msgstr ""
+"Convierte el modo del archivo a una cadena de caracteres de la forma '-"
+"rwxrwxrwx'."
 
-#: ../../library/stat.rst:138
+#: ../Doc/library/stat.rst:138
 msgid ""
 "The function supports :data:`S_IFDOOR`, :data:`S_IFPORT` and :data:`S_IFWHT`."
 msgstr ""
-"この関数は、:data:`S_IFDOOR` 、 :data:`S_IFPORT` 、 :data:`S_IFWHT` をサポー"
-"トしています。"
+"La función soporta :data:`S_IFDOOR`, :data:`S_IFPORT` y :data:`S_IFWHT`."
 
-#: ../../library/stat.rst:143
+#: ../Doc/library/stat.rst:143
 msgid ""
 "All the variables below are simply symbolic indexes into the 10-tuple "
 "returned by :func:`os.stat`, :func:`os.fstat` or :func:`os.lstat`."
 msgstr ""
-"以下の全ての変数は、 :func:`os.stat` 、 :func:`os.fstat` 、または :func:`os."
-"lstat` が返す 10 要素のタプルにおけるインデクスを単にシンボル定数化したもので"
-"す。"
+"Todas las variables de debajo son simplemente índices simbólicos sobre la "
+"tupla de 10 elementos retornada por :func:`os.stat`, :func:`os.fstat` o :"
+"func:`os.lstat`."
 
-#: ../../library/stat.rst:149
+#: ../Doc/library/stat.rst:149
 msgid "Inode protection mode."
-msgstr "Iノードの保護モード。"
+msgstr "Modo de protección del *inode*."
 
-#: ../../library/stat.rst:154
+#: ../Doc/library/stat.rst:154
 msgid "Inode number."
-msgstr "Iノード番号。"
+msgstr "Número del *inode*."
 
-#: ../../library/stat.rst:159
+#: ../Doc/library/stat.rst:159
 msgid "Device inode resides on."
-msgstr "Iノードが存在するデバイス。"
+msgstr "Dispositivo en el que reside el *inode*."
 
-#: ../../library/stat.rst:164
+#: ../Doc/library/stat.rst:164
 msgid "Number of links to the inode."
-msgstr "該当する Iノードへのリンク数。"
+msgstr "Número de enlaces al *inode*."
 
-#: ../../library/stat.rst:169
+#: ../Doc/library/stat.rst:169
 msgid "User id of the owner."
-msgstr "ファイルの所持者のユーザ ID。"
+msgstr "*Id* de usuario del propietario."
 
-#: ../../library/stat.rst:174
+#: ../Doc/library/stat.rst:174
 msgid "Group id of the owner."
-msgstr "ファイルの所持者のグループ ID。"
+msgstr "*Id* del grupo del propietario."
 
-#: ../../library/stat.rst:179
+#: ../Doc/library/stat.rst:179
 msgid ""
 "Size in bytes of a plain file; amount of data waiting on some special files."
 msgstr ""
-"通常ファイルではバイトサイズ; いくつかの特殊ファイルでは処理待ちのデータ量。"
+"Tamaño en bytes de un archivo normal; cantidad de datos esperando en algunos "
+"archivos especiales."
 
-#: ../../library/stat.rst:184
+#: ../Doc/library/stat.rst:184
 msgid "Time of last access."
-msgstr "最後にアクセスした時刻。"
+msgstr "Momento del último acceso."
 
-#: ../../library/stat.rst:189
+#: ../Doc/library/stat.rst:189
 msgid "Time of last modification."
-msgstr "最後に変更された時刻。"
+msgstr "Momento de la última modificación."
 
-#: ../../library/stat.rst:194
+#: ../Doc/library/stat.rst:194
 msgid ""
 "The \"ctime\" as reported by the operating system.  On some systems (like "
 "Unix) is the time of the last metadata change, and, on others (like "
 "Windows), is the creation time (see platform documentation for details)."
 msgstr ""
-"オペレーティングシステムから返される\"ctime\"。あるOS(Unixなど)では最後にメタ"
-"データが更新された時間となり、別のOS(Windowsなど)では作成時間となります(詳細"
-"については各プラットフォームのドキュメントを参照してください)。"
+"El \"ctime\" reportado por el sistema operativo. En algunos sistemas (como "
+"Unix) es el momento del último cambio en los metadatos, y en otros (como "
+"Windows), es el momento de creación (véase la documentación de la plataforma "
+"para más detalles)."
 
-#: ../../library/stat.rst:198
+#: ../Doc/library/stat.rst:198
 msgid ""
 "The interpretation of \"file size\" changes according to the file type.  For "
 "plain files this is the size of the file in bytes.  For FIFOs and sockets "
@@ -233,87 +237,91 @@ msgid ""
 "open.  The meaning of the size field for other character and block devices "
 "varies more, depending on the implementation of the underlying system call."
 msgstr ""
-"\"ファイルサイズ\" の解釈はファイルの型によって異なります。通常のファイルの場"
-"合、サイズはファイルの大きさをバイトで表したものです。ほとんどの Unix 系 (特"
-"に Linux) における FIFO やソケットの場合、\"サイズ\" は :func:`os.stat` 、 :"
-"func:`os.fstat` 、あるいは :func:`os.lstat` を呼び出した時点で読み出し待ちで"
-"あったデータのバイト数になります; この値は時に有用で、特に上記の特殊なファイ"
-"ルを非ブロックモードで開いた後にポーリングを行いたいといった場合に便利です。"
-"他のキャラクタ型およびブロック型デバイスにおけるサイズフィールドの意味はさら"
-"に異なっていて、背後のシステムコールの実装によります。"
+"La interpretación de \"tamaño de archivo\" cambia dependiendo del tipo de "
+"archivo. Para archivos normales es el tamaño del archivo en bytes. En la "
+"mayoría de sistemas Unix (incluyendo Linux en particular), para *FIFOs* y "
+"sockets es el número de bytes que esperan ser leídos en el momento de la "
+"llamada a :func:`os.stat`, :func:`os.fstat`, o :func:`os.lstat`; en "
+"ocasiones, esto puede ser útil, especialmente para sondear uno de estos "
+"archivos especiales después de una apertura no bloqueante. Para otros "
+"dispositivos de caracteres y bloques el significado del campo *size* es más "
+"variado, dependiendo de la implementación de la llamada al sistema "
+"subyacente."
 
-#: ../../library/stat.rst:207
+#: ../Doc/library/stat.rst:207
 msgid "The variables below define the flags used in the :data:`ST_MODE` field."
 msgstr ""
-"以下の変数は、 :data:`ST_MODE` フィールドで使用されるフラグを定義しています。"
+"Las variables de debajo definen los flags usados en el campo :data:`ST_MODE`."
 
-#: ../../library/stat.rst:209
+#: ../Doc/library/stat.rst:209
 msgid ""
 "Use of the functions above is more portable than use of the first set of "
 "flags:"
 msgstr ""
-"最初に挙げる、以下のフラグを使うよりは、上記の関数を使うほうがポータブルです:"
+"El uso de las funciones de arriba es más portable que el uso del primer "
+"juego de flags:"
 
-#: ../../library/stat.rst:213
+#: ../Doc/library/stat.rst:213
 msgid "Socket."
-msgstr "ソケット。"
+msgstr "*Socket*."
 
-#: ../../library/stat.rst:217
+#: ../Doc/library/stat.rst:217
 msgid "Symbolic link."
-msgstr "シンボリックリンク。"
+msgstr "Enlace simbólico."
 
-#: ../../library/stat.rst:221
+#: ../Doc/library/stat.rst:221
 msgid "Regular file."
-msgstr "通常のファイル。"
+msgstr "Archivo normal."
 
-#: ../../library/stat.rst:225
+#: ../Doc/library/stat.rst:225
 msgid "Block device."
-msgstr "ブロックデバイス。"
+msgstr "Dispositivo de bloques."
 
-#: ../../library/stat.rst:229
+#: ../Doc/library/stat.rst:229
 msgid "Directory."
-msgstr "ディレクトリ。"
+msgstr "Directorio."
 
-#: ../../library/stat.rst:233
+#: ../Doc/library/stat.rst:233
 msgid "Character device."
-msgstr "キャラクターデバイス。"
+msgstr "Dispositivo de caracteres."
 
-#: ../../library/stat.rst:237
+#: ../Doc/library/stat.rst:237
 msgid "FIFO."
-msgstr "FIFO。"
+msgstr "*FIFO*."
 
-#: ../../library/stat.rst:241
+#: ../Doc/library/stat.rst:241
 msgid "Door."
-msgstr "ドア。"
+msgstr "*Door*."
 
-#: ../../library/stat.rst:247
+#: ../Doc/library/stat.rst:247
 msgid "Event port."
-msgstr "イベントポート。"
+msgstr "*Event port*."
 
-#: ../../library/stat.rst:253
+#: ../Doc/library/stat.rst:253
 msgid "Whiteout."
-msgstr "ホワイトアウト。"
+msgstr "*Whiteout*."
 
-#: ../../library/stat.rst:259
+#: ../Doc/library/stat.rst:259
 msgid ""
 ":data:`S_IFDOOR`, :data:`S_IFPORT` or :data:`S_IFWHT` are defined as 0 when "
 "the platform does not have support for the file types."
 msgstr ""
-":data:`S_IFDOOR` 、 :data:`S_IFPORT` 、または :data:`S_IFWHT` は、プラット"
-"フォームがこれらのファイルタイプをサポートしていない場合、0 として定義されま"
-"す。"
+":data:`S_IFDOOR`, :data:`S_IFPORT` o :data:`S_IFWHT` se definen como 0 "
+"cuando la plataforma no soporta los tipos de archivo."
 
-#: ../../library/stat.rst:262
+#: ../Doc/library/stat.rst:262
 msgid ""
 "The following flags can also be used in the *mode* argument of :func:`os."
 "chmod`:"
-msgstr "以下のフラグは、 :func:`os.chmod` の *mode* 引数に使うこともできます:"
+msgstr ""
+"Los siguientes flags también pueden usarse en el argumento *mode* de :func:"
+"`os.chmod`:"
 
-#: ../../library/stat.rst:266
+#: ../Doc/library/stat.rst:266
 msgid "Set UID bit."
-msgstr "UID ビットを設定する。"
+msgstr "Establecer el bit *UID*."
 
-#: ../../library/stat.rst:270
+#: ../Doc/library/stat.rst:270
 msgid ""
 "Set-group-ID bit.  This bit has several special uses.  For a directory it "
 "indicates that BSD semantics is to be used for that directory: files created "
@@ -323,147 +331,149 @@ msgid ""
 "execution bit (:data:`S_IXGRP`) set, the set-group-ID bit indicates "
 "mandatory file/record locking (see also :data:`S_ENFMT`)."
 msgstr ""
-"グループIDビットを設定する。このビットには幾つかの特殊ケースがあります。ディ"
-"レクトリに対して設定されていた場合、 BSD のセマンティクスが利用される事を示し"
-"ています。すなわち、そこに作成されるファイルは、作成したプロセスの有効グルー"
-"プID (effective group ID) ではなくそのディレクトリのグループIDを継承し、そこ"
-"に作成されるディレクトリにも :data:`S_ISGID` ビットが設定されます。グループ実"
-"行ビット (:data:`S_IXGRP`) が設定されていないファイルに対してこのビットが設定"
-"されていた場合、強制ファイル/レコードロックを意味します (:data:`S_ENFMT` も参"
-"照してください)。"
+"Bit *Set-group-ID*. Este bit tiene varios usos especiales. Para un "
+"directorio indica que la semántica BSD debe usarse para ese directorio: los "
+"archivos creados ahí heredan el *ID* de grupo del directorio, no del *ID* de "
+"grupo efectivo del proceso que los crea, y los directorios creados ahí "
+"también tendrán activado el bit :data:`S_ISGID`. Para un archivo que no "
+"tiene activado el bit de ejecución de grupo (:data:`S_IXGRP`), el bit *Set-"
+"group-ID* indica el bloqueo obligatorio del archivo/registro (véase también :"
+"data:`S_ENFMT`)."
 
-#: ../../library/stat.rst:281
+#: ../Doc/library/stat.rst:281
 msgid ""
 "Sticky bit.  When this bit is set on a directory it means that a file in "
 "that directory can be renamed or deleted only by the owner of the file, by "
 "the owner of the directory, or by a privileged process."
 msgstr ""
-"スティッキービット。このビットがディレクトリに対して設定されているとき、その"
-"ディレクトリ内のファイルは、そのファイルのオーナー、あるいはそのディレクトリ"
-"のオーナーか特権プロセスのみが、リネームや削除をすることが出来ることを意味し"
-"ています。"
+"*Sticky bit*. Cuando este bit está activado en un directorio, significa que "
+"un archivo dentro de ese directorio puede ser renombrado o borrado sólo por "
+"el propietario del archivo, por el propietario del directorio, o por un "
+"proceso con privilegios."
 
-#: ../../library/stat.rst:287
+#: ../Doc/library/stat.rst:287
 msgid "Mask for file owner permissions."
-msgstr "ファイルオーナーの権限に対するマスク。"
+msgstr "Máscara para los permisos del propietario del archivo."
 
-#: ../../library/stat.rst:291
+#: ../Doc/library/stat.rst:291
 msgid "Owner has read permission."
-msgstr "オーナーがリード権限を持っている。"
+msgstr "El propietario tiene permiso de lectura."
 
-#: ../../library/stat.rst:295
+#: ../Doc/library/stat.rst:295
 msgid "Owner has write permission."
-msgstr "オーナーがライト権限を持っている。"
+msgstr "El propietario tiene permiso de escritura."
 
-#: ../../library/stat.rst:299
+#: ../Doc/library/stat.rst:299
 msgid "Owner has execute permission."
-msgstr "オーナーが実行権限を持っている。"
+msgstr "El propietario tiene permiso de ejecución."
 
-#: ../../library/stat.rst:303
+#: ../Doc/library/stat.rst:303
 msgid "Mask for group permissions."
-msgstr "グループの権限に対するマスク。"
+msgstr "Máscara para los permisos del grupo."
 
-#: ../../library/stat.rst:307
+#: ../Doc/library/stat.rst:307
 msgid "Group has read permission."
-msgstr "グループがリード権限を持っている。"
+msgstr "El grupo tiene permiso de lectura."
 
-#: ../../library/stat.rst:311
+#: ../Doc/library/stat.rst:311
 msgid "Group has write permission."
-msgstr "グループがライト権限を持っている。"
+msgstr "El grupo tiene permiso de escritura."
 
-#: ../../library/stat.rst:315
+#: ../Doc/library/stat.rst:315
 msgid "Group has execute permission."
-msgstr "グループが実行権限を持っている。"
+msgstr "El grupo tiene permiso de ejecución."
 
-#: ../../library/stat.rst:319
+#: ../Doc/library/stat.rst:319
 msgid "Mask for permissions for others (not in group)."
-msgstr "その他 (グループ外) の権限に対するマスク。"
+msgstr "Máscara para permisos de los otros (no en el grupo)."
 
-#: ../../library/stat.rst:323
+#: ../Doc/library/stat.rst:323
 msgid "Others have read permission."
-msgstr "その他はリード権限を持っている。"
+msgstr "Los otros tienen permiso de lectura."
 
-#: ../../library/stat.rst:327
+#: ../Doc/library/stat.rst:327
 msgid "Others have write permission."
-msgstr "その他はライト権限を持っている。"
+msgstr "Los otros tienen permiso de escritura."
 
-#: ../../library/stat.rst:331
+#: ../Doc/library/stat.rst:331
 msgid "Others have execute permission."
-msgstr "その他は実行権限を持っている。"
+msgstr "Los otros tienen permiso de ejecución."
 
-#: ../../library/stat.rst:335
+#: ../Doc/library/stat.rst:335
 msgid ""
 "System V file locking enforcement.  This flag is shared with :data:"
 "`S_ISGID`: file/record locking is enforced on files that do not have the "
 "group execution bit (:data:`S_IXGRP`) set."
 msgstr ""
-"System V ファイルロック強制。このフラグは :data:`S_ISGID` と共有されていま"
-"す。グループ実行ビット (:data:`S_IXGRP`) が設定されていないファイルでは、ファ"
-"イル/レコードのロックが強制されます。"
+"Imposición del bloqueo de archivos de System V. Este flag se comparte con :"
+"data:`S_ISGID`: se impone el bloqueo de archivos/registros en archivos que "
+"no tengan activado el bit de ejecución por el grupo (:data:`S_IXGRP`)."
 
-#: ../../library/stat.rst:341
+#: ../Doc/library/stat.rst:341
 msgid "Unix V7 synonym for :data:`S_IRUSR`."
-msgstr ":data:`S_IRUSR` の、 Unix V7 のシノニム。"
+msgstr "Sinónimo de :data:`S_IRUSR` en Unix V7."
 
-#: ../../library/stat.rst:345
+#: ../Doc/library/stat.rst:345
 msgid "Unix V7 synonym for :data:`S_IWUSR`."
-msgstr ":data:`S_IWUSR` の、 Unix V7 のシノニム。"
+msgstr "Sinónimo de :data:`S_IWUSR` en Unix V7."
 
-#: ../../library/stat.rst:349
+#: ../Doc/library/stat.rst:349
 msgid "Unix V7 synonym for :data:`S_IXUSR`."
-msgstr ":data:`S_IXUSR` の、 Unix V7 のシノニム。"
+msgstr "Sinónimo de :data:`S_IXUSR` en Unix V7."
 
-#: ../../library/stat.rst:351
+#: ../Doc/library/stat.rst:351
 msgid ""
 "The following flags can be used in the *flags* argument of :func:`os."
 "chflags`:"
-msgstr "以下のフラグを :func:`os.chflags` の *flags* 引数として利用できます:"
+msgstr ""
+"Los siguientes flags pueden usarse como argumento *flags* de :func:`os."
+"chflags`:"
 
-#: ../../library/stat.rst:355
+#: ../Doc/library/stat.rst:355
 msgid "Do not dump the file."
-msgstr "ファイルをダンプしない。"
+msgstr "No volcar el archivo."
 
-#: ../../library/stat.rst:359 ../../library/stat.rst:387
+#: ../Doc/library/stat.rst:359 ../Doc/library/stat.rst:387
 msgid "The file may not be changed."
-msgstr "ファイルは変更されない。"
+msgstr "El archivo no puede ser modificado."
 
-#: ../../library/stat.rst:363 ../../library/stat.rst:391
+#: ../Doc/library/stat.rst:363 ../Doc/library/stat.rst:391
 msgid "The file may only be appended to."
-msgstr "ファイルは追記しかされない。"
+msgstr "Sólo se puede añadir al archivo."
 
-#: ../../library/stat.rst:367
+#: ../Doc/library/stat.rst:367
 msgid "The directory is opaque when viewed through a union stack."
-msgstr ""
-"ユニオンファイルシステムのスタックを通したとき、このディレクトリは不透明で"
-"す。"
+msgstr "El directorio es opaco cuando se mira a través de un *union stack*."
 
-#: ../../library/stat.rst:371 ../../library/stat.rst:395
+#: ../Doc/library/stat.rst:371 ../Doc/library/stat.rst:395
 msgid "The file may not be renamed or deleted."
-msgstr "ファイルはリネームや削除されない。"
+msgstr "El archivo no puede ser renombrado o borrado."
 
-#: ../../library/stat.rst:375
+#: ../Doc/library/stat.rst:375
 msgid "The file is stored compressed (macOS 10.6+)."
-msgstr ""
+msgstr "El archivo se almacena comprimido (macOS 10.6+)."
 
-#: ../../library/stat.rst:379
+#: ../Doc/library/stat.rst:379
 msgid "The file should not be displayed in a GUI (macOS 10.5+)."
-msgstr ""
+msgstr "El archivo no debe ser mostrado en una GUI (macOS 10.5+)."
 
-#: ../../library/stat.rst:383
+#: ../Doc/library/stat.rst:383
 msgid "The file may be archived."
-msgstr "ファイルはアーカイブされているかもしれません。"
+msgstr "El archivo puede ser archivado."
 
-#: ../../library/stat.rst:399
+#: ../Doc/library/stat.rst:399
 msgid "The file is a snapshot file."
-msgstr "このファイルはスナップショットファイルです。"
+msgstr "El archivo es una instantánea."
 
-#: ../../library/stat.rst:401
+#: ../Doc/library/stat.rst:401
 msgid ""
 "See the \\*BSD or macOS systems man page :manpage:`chflags(2)` for more "
 "information."
 msgstr ""
+"Consulte la página de manual de sistemas \\ * BSD o macOS :manpage:"
+"`chflags(2)` para obtener más información."
 
-#: ../../library/stat.rst:403
+#: ../Doc/library/stat.rst:403
 msgid ""
 "On Windows, the following file attribute constants are available for use "
 "when testing bits in the ``st_file_attributes`` member returned by :func:`os."
@@ -471,17 +481,18 @@ msgid ""
 "library/windows/desktop/gg258117.aspx>`_ for more detail on the meaning of "
 "these constants."
 msgstr ""
-"Windows では、:func:`os.stat` が返す ``st_file_attributes`` メンバー内のビッ"
-"トを検証する際に、以下のファイル属性定数を使用できます。これらの定数の意味に"
-"ついて詳しくは、`Windows API documentation <https://msdn.microsoft.com/en-us/"
-"library/windows/desktop/gg258117.aspx>`_ を参照してください。"
+"En Windows, las siguientes constantes de atributos de fichero están "
+"disponibles para ser usadas al comprobar los bits del miembro "
+"``st_file_attributes`` retornado por :func:`os.stat`. Véase `Windows API "
+"documentation <https://msdn.microsoft.com/en-us/library/windows/desktop/"
+"gg258117.aspx>`_ para más detalles sobre el significado de estas constantes."
 
-#: ../../library/stat.rst:429
+#: ../Doc/library/stat.rst:429
 msgid ""
 "On Windows, the following constants are available for comparing against the "
 "``st_reparse_tag`` member returned by :func:`os.lstat`. These are well-known "
 "constants, but are not an exhaustive list."
 msgstr ""
-"Windows では、:func:`os.lstat` が返す ``st_reparse_tag`` メンバーとの比較に次"
-"の定数が 使えます。\n"
-"これらはよく知られている定数ですが、全てを網羅したリストではありません。"
+"En Windows, las siguientes constantes están disponibles para la comparación "
+"con el miembro ``st_reparse_tag`` retornado por :func:`os.lstat`. Estas "
+"constantes son muy conocidas, pero no se trata de una lista exhaustiva."

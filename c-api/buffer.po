@@ -1,35 +1,32 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Osamu NAKAMURA, 2021
-# 秘湯 <xwhhsprings@gmail.com>, 2021
-# mollinaca, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 00:47+0000\n"
-"Last-Translator: mollinaca, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-10-31 01:46-0400\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.2.1\n"
 
-#: ../../c-api/buffer.rst:11
+#: ../Doc/c-api/buffer.rst:11
 msgid "Buffer Protocol"
-msgstr "バッファプロトコル (buffer Protocol)"
+msgstr "Protocolo búfer"
 
-#: ../../c-api/buffer.rst:18
+#: ../Doc/c-api/buffer.rst:18
 msgid ""
 "Certain objects available in Python wrap access to an underlying memory "
 "array or *buffer*.  Such objects include the built-in :class:`bytes` and :"
@@ -37,62 +34,65 @@ msgid ""
 "party libraries may define their own types for special purposes, such as "
 "image processing or numeric analysis."
 msgstr ""
-"Pythonで利用可能ないくつかのオブジェクトは、下層にあるメモリ配列または "
-"*buffer* へのアクセスを提供します。このようなオブジェクトとして、組み込みの :"
-"class:`bytes` や :class:`bytearray` 、 :class:`array.array` のようないくつか"
-"の拡張型が挙げられます。サードバーティのライブラリは画像処理や数値解析のよう"
-"な特別な目的のために、それら自身の型を定義することができます。"
+"Ciertos objetos disponibles en Python ajustan el acceso a un arreglo de "
+"memoria subyacente o *buffer*. Dichos objetos incluyen el incorporado :class:"
+"`bytes` y :class:`bytearray`, y algunos tipos de extensión como :class:"
+"`array.array`. Las bibliotecas de terceros pueden definir sus propios tipos "
+"para fines especiales, como el procesamiento de imágenes o el análisis "
+"numérico."
 
-#: ../../c-api/buffer.rst:24
+#: ../Doc/c-api/buffer.rst:24
 msgid ""
 "While each of these types have their own semantics, they share the common "
 "characteristic of being backed by a possibly large memory buffer.  It is "
 "then desirable, in some situations, to access that buffer directly and "
 "without intermediate copying."
 msgstr ""
-"それぞれの型はそれ自身のセマンティクスを持ちますが、おそらく大きなメモリバッ"
-"ファからなるという共通の特徴を共有します。いくつかの状況では仲介するコピーを"
-"行うことなく直接バッファにアクセスすることが望まれます。"
+"Si bien cada uno de estos tipos tiene su propia semántica, comparten la "
+"característica común de estar respaldados por un búfer de memoria "
+"posiblemente grande. Es deseable, en algunas situaciones, acceder a ese "
+"búfer directamente y sin copia intermedia."
 
-#: ../../c-api/buffer.rst:29
+#: ../Doc/c-api/buffer.rst:29
 msgid ""
 "Python provides such a facility at the C level in the form of the :ref:"
 "`buffer protocol <bufferobjects>`.  This protocol has two sides:"
 msgstr ""
-"Pythonは :ref:`buffer protocol <bufferobjects>` の形式で C レベルの仕組みを提"
-"供します。このプロトコルには二つの側面があります:"
+"Python proporciona una instalación de este tipo en el nivel C en la forma "
+"de :ref:`protocolo búfer <bufferobjects>`. Este protocolo tiene dos lados:"
 
-#: ../../c-api/buffer.rst:34
+#: ../Doc/c-api/buffer.rst:34
 msgid ""
 "on the producer side, a type can export a \"buffer interface\" which allows "
 "objects of that type to expose information about their underlying buffer. "
 "This interface is described in the section :ref:`buffer-structs`;"
 msgstr ""
-"提供する側では、ある型は、そのオブジェクトの下層にあるバッファに関する情報を"
-"提供できる \"buffer インターフェース\" をエクスポートすることができます。この"
-"インターフェースは :ref:`buffer-structs` の節で説明します。"
+"en el lado del productor, un tipo puede exportar una \"interfaz de búfer\" "
+"que permite a los objetos de ese tipo exponer información sobre su búfer "
+"subyacente. Esta interfaz se describe en la sección :ref:`buffer-structs`;"
 
-#: ../../c-api/buffer.rst:38
+#: ../Doc/c-api/buffer.rst:38
 msgid ""
 "on the consumer side, several means are available to obtain a pointer to the "
 "raw underlying data of an object (for example a method parameter)."
 msgstr ""
-"利用する側では、オブジェクトの下層にある生データへのポインタを得るいくつかの"
-"手段が利用できます（たとえばメソッド引数）。"
+"en el lado del consumidor, hay varios medios disponibles para obtener un "
+"puntero a los datos subyacentes sin procesar de un objeto (por ejemplo, un "
+"parámetro de método)."
 
-#: ../../c-api/buffer.rst:41
+#: ../Doc/c-api/buffer.rst:41
 msgid ""
 "Simple objects such as :class:`bytes` and :class:`bytearray` expose their "
 "underlying buffer in byte-oriented form.  Other forms are possible; for "
 "example, the elements exposed by an :class:`array.array` can be multi-byte "
 "values."
 msgstr ""
-":class:`bytes` や :class:`bytearray` などのシンプルなオブジェクトは、内部の"
-"バッファーをバイト列の形式で公開します。\n"
-"バイト列以外の形式も利用可能です。例えば、 :class:`array.array` が公開する要"
-"素はマルチバイト値になることがあります。"
+"Los objetos simples como :class:`bytes` y :class:`bytearray` exponen su "
+"búfer subyacente en forma orientada a bytes. Otras formas son posibles; por "
+"ejemplo, los elementos expuestos por un :class:`array.array` pueden ser "
+"valores de varios bytes."
 
-#: ../../c-api/buffer.rst:45
+#: ../Doc/c-api/buffer.rst:45
 msgid ""
 "An example consumer of the buffer interface is the :meth:`~io.BufferedIOBase."
 "write` method of file objects: any object that can export a series of bytes "
@@ -103,50 +103,51 @@ msgid ""
 "objects to selectively allow or reject exporting of read-write and read-only "
 "buffers."
 msgstr ""
-"bufferインターフェースの利用者の一例は、ファイルオブジェクトの :meth:`~io."
-"BufferedIOBase.write` メソッドです: bufferインターフェースを通して一連のバイ"
-"ト列を提供できるどんなオブジェクトでもファイルに書き込むことができます。 :"
-"meth:`write` は、その引数として渡されたオブジェクトの内部要素に対する読み出し"
-"専用アクセスのみを必要としますが、 :meth:`~io.BufferedIOBase.readinto` のよう"
-"な他のメソッドでは、その引数の内容に対する書き込みアクセスが必要です。buffer"
-"インターフェースにより、オブジェクトは読み書き両方、読み出し専用バッファへの"
-"アクセスを許可するかそれとも拒否するか選択することができます。"
+"Un consumidor de ejemplo de la interfaz del búfer es el método :meth:`~io."
+"BufferedIOBase.write` de objetos de archivo: cualquier objeto que pueda "
+"exportar una serie de bytes a través de la interfaz del búfer puede "
+"escribirse en un archivo. Mientras que :meth:`write` solo necesita acceso de "
+"solo lectura a los contenidos internos del objeto que se le pasa, otros "
+"métodos como :meth:`~io.BufferedIOBase.readinto` necesitan acceso de "
+"escritura a los contenidos de su argumento. La interfaz del búfer permite "
+"que los objetos permitan o rechacen selectivamente la exportación de búferes "
+"de lectura-escritura y solo lectura."
 
-#: ../../c-api/buffer.rst:53
+#: ../Doc/c-api/buffer.rst:53
 msgid ""
 "There are two ways for a consumer of the buffer interface to acquire a "
 "buffer over a target object:"
 msgstr ""
-"bufferインターフェースの利用者には、対象となるオブジェクトのバッファを得る二"
-"つの方法があります:"
+"Hay dos formas para que un consumidor de la interfaz del búfer adquiera un "
+"búfer sobre un objeto de destino:"
 
-#: ../../c-api/buffer.rst:56
+#: ../Doc/c-api/buffer.rst:56
 msgid "call :c:func:`PyObject_GetBuffer` with the right parameters;"
-msgstr "正しい引数で :c:func:`PyObject_GetBuffer` を呼び出す;"
+msgstr "llamar :c:func:`PyObject_GetBuffer` con los parámetros correctos;"
 
-#: ../../c-api/buffer.rst:58
+#: ../Doc/c-api/buffer.rst:58
 msgid ""
 "call :c:func:`PyArg_ParseTuple` (or one of its siblings) with one of the "
 "``y*``, ``w*`` or ``s*`` :ref:`format codes <arg-parsing>`."
 msgstr ""
-":c:func:`PyArg_ParseTuple` (またはその同族のひとつ) を ``y*`` 、 ``w*`` また"
-"は ``s*`` :ref:`format codes <arg-parsing>` のいずれかとともに呼び出す。"
+"llamar :c:func:`PyArg_ParseTuple` (o uno de sus hermanos) con uno de los "
+"``y*``, ``w*`` o ``s*`` :ref:`códigos de formato <arg-parsing>`."
 
-#: ../../c-api/buffer.rst:61
+#: ../Doc/c-api/buffer.rst:61
 msgid ""
 "In both cases, :c:func:`PyBuffer_Release` must be called when the buffer "
 "isn't needed anymore.  Failure to do so could lead to various issues such as "
 "resource leaks."
 msgstr ""
-"どちらのケースでも、bufferが必要なくなった時に :c:func:`PyBuffer_Release` を"
-"呼び出さなければなりません。これを怠ると、リソースリークのような様々な問題に"
-"つながる恐れがあります。"
+"En ambos casos, se debe llamar a :c:func:`PyBuffer_Release` cuando ya no se "
+"necesita el búfer. De lo contrario, podrían surgir varios problemas, como "
+"pérdidas de recursos."
 
-#: ../../c-api/buffer.rst:69
+#: ../Doc/c-api/buffer.rst:69
 msgid "Buffer structure"
-msgstr "buffer 構造体"
+msgstr "Estructura de búfer"
 
-#: ../../c-api/buffer.rst:71
+#: ../Doc/c-api/buffer.rst:71
 msgid ""
 "Buffer structures (or simply \"buffers\") are useful as a way to expose the "
 "binary data from another object to the Python programmer.  They can also be "
@@ -157,15 +158,17 @@ msgid ""
 "operating system library, or it could be used to pass around structured data "
 "in its native, in-memory format."
 msgstr ""
-"バッファ構造体（または単純に \"buffers\"）は別のオブジェクトのバイナリデータ"
-"をPythonプログラマに提供するのに便利です。これはまた、ゼロコピースライシング"
-"機構としても使用できます。このメモリブロックを参照する機能を使うことで、どん"
-"なデータでもとても簡単にPythonプログラマに提供することができます。メモリは、"
-"C 拡張の大きな配列定数かもしれませんし、オペレーティングシステムライブラリに"
-"渡す前のメモリブロックかもしれませんし、構造化データをネイティブのインメモリ"
-"形式受け渡すのに使用されるかもしれません。"
+"Las estructuras de búfer (o simplemente \"búferes\") son útiles como una "
+"forma de exponer los datos binarios de otro objeto al programador de Python. "
+"También se pueden usar como un mecanismo de corte de copia cero. Usando su "
+"capacidad para hacer referencia a un bloque de memoria, es posible exponer "
+"cualquier información al programador Python con bastante facilidad. La "
+"memoria podría ser una matriz grande y constante en una extensión C, podría "
+"ser un bloque de memoria sin procesar para su manipulación antes de pasar a "
+"una biblioteca del sistema operativo, o podría usarse para pasar datos "
+"estructurados en su formato nativo en memoria ."
 
-#: ../../c-api/buffer.rst:80
+#: ../Doc/c-api/buffer.rst:80
 msgid ""
 "Contrary to most data types exposed by the Python interpreter, buffers are "
 "not :c:type:`PyObject` pointers but rather simple C structures.  This allows "
@@ -173,223 +176,225 @@ msgid ""
 "buffer is needed, a :ref:`memoryview <memoryview-objects>` object can be "
 "created."
 msgstr ""
-"Pythonインタプリタによって提供される多くのデータ型とは異なり、バッファは :c:"
-"type:`PyObject` ポインタではなく、シンプルなC 構造体です。そのため、作成とコ"
-"ピーが非常に簡単に行えます。バッファの一般的なラッパーが必要なときは、 :ref:"
-"`memoryview <memoryview-objects>` オブジェクトが作成されます。"
+"Contrariamente a la mayoría de los tipos de datos expuestos por el "
+"intérprete de Python, los búferes no son punteros :c:type:`PyObject` sino "
+"estructuras C simples. Esto les permite ser creados y copiados de manera muy "
+"simple. Cuando se necesita un contenedor genérico alrededor de un búfer, un "
+"objeto :ref:`memoryview <memoryview-objects>` puede ser creado."
 
-#: ../../c-api/buffer.rst:86
+#: ../Doc/c-api/buffer.rst:86
 msgid ""
 "For short instructions how to write an exporting object, see :ref:`Buffer "
 "Object Structures <buffer-structs>`. For obtaining a buffer, see :c:func:"
 "`PyObject_GetBuffer`."
 msgstr ""
-"エクスポートされるオブジェクトを書く方法の短い説明には、 :ref:`Buffer Object "
-"Structures <buffer-structs>` を参照してください。バッファを取得するには、 :c:"
-"func:`PyObject_GetBuffer` を参照してください。"
+"Para obtener instrucciones breves sobre cómo escribir un objeto de "
+"exportación, consulte :ref:`Estructuras de objetos búfer <buffer-structs>`. "
+"Para obtener un búfer, consulte :c:func:`PyObject_GetBuffer`."
 
-#: ../../c-api/buffer.rst:94
+#: ../Doc/c-api/buffer.rst:94
 msgid ""
 "A pointer to the start of the logical structure described by the buffer "
 "fields. This can be any location within the underlying physical memory block "
 "of the exporter. For example, with negative :c:member:`~Py_buffer.strides` "
 "the value may point to the end of the memory block."
 msgstr ""
-"バッファフィールドが表している論理構造の先頭を指すポインタ。\n"
-"バッファを提供するオブジェクトの下層物理メモリブロック中のどの位置にもなりえ"
-"ます。\n"
-"例えば :c:member:`~Py_buffer.strides` が負だと、この値はメモリブロックの末尾"
-"かもしれません。"
+"Un puntero al inicio de la estructura lógica descrita por los campos del "
+"búfer. Puede ser cualquier ubicación dentro del bloque de memoria física "
+"subyacente del exportador. Por ejemplo, con negativo :c:member:`~Py_buffer."
+"strides` el valor puede apuntar al final del bloque de memoria."
 
-#: ../../c-api/buffer.rst:99
+#: ../Doc/c-api/buffer.rst:99
 msgid ""
 "For :term:`contiguous` arrays, the value points to the beginning of the "
 "memory block."
 msgstr ""
-":term:`連続 <contiguous>` 配列の場合この値はメモリブロックの先頭を指します。"
+"Para arreglos :term:`contiguous`, el valor apunta al comienzo del bloque de "
+"memoria."
 
-#: ../../c-api/buffer.rst:104
+#: ../Doc/c-api/buffer.rst:104
 msgid ""
 "A new reference to the exporting object. The reference is owned by the "
 "consumer and automatically decremented and set to ``NULL`` by :c:func:"
 "`PyBuffer_Release`. The field is the equivalent of the return value of any "
 "standard C-API function."
 msgstr ""
-"エクスポートされているオブジェクトの新しい参照。参照は消費者によって所有さ"
-"れ、:c:func:`PyBuffer_Release` によって自動的にデクリメントされて ``NULL`` に"
-"設定されます。このフィールドは標準的なC-API 関数の戻り値と等価です。"
+"Una nueva referencia al objeto exportador. La referencia es propiedad del "
+"consumidor y automáticamente disminuye y se establece en ``NULL`` por :c:"
+"func:`PyBuffer_Release`. El campo es el equivalente del valor de retorno de "
+"cualquier función estándar de C-API."
 
-#: ../../c-api/buffer.rst:109
+#: ../Doc/c-api/buffer.rst:109
 msgid ""
 "As a special case, for *temporary* buffers that are wrapped by :c:func:"
 "`PyMemoryView_FromBuffer` or :c:func:`PyBuffer_FillInfo` this field is "
 "``NULL``. In general, exporting objects MUST NOT use this scheme."
 msgstr ""
-":c:func:`PyMemoryView_FromBuffer` または :c:func:`PyBuffer_FillInfo` によって"
-"ラップされた *一時的な* バッファである特別なケースでは、このフィールドは "
-"``NULL`` です。一般的に、エクスポートオブジェクトはこの方式を使用してはなりま"
-"せん。"
+"Como un caso especial, para los búferes *temporary* que están envueltos por :"
+"c:func:`PyMemoryView_FromBuffer` o :c:func:`PyBuffer_FillInfo` este campo es "
+"``NULL``. En general, los objetos de exportación NO DEBEN usar este esquema."
 
-#: ../../c-api/buffer.rst:116
+#: ../Doc/c-api/buffer.rst:116
 msgid ""
 "``product(shape) * itemsize``. For contiguous arrays, this is the length of "
 "the underlying memory block. For non-contiguous arrays, it is the length "
 "that the logical structure would have if it were copied to a contiguous "
 "representation."
 msgstr ""
-"``product(shape) * itemsize``。contiguous配列では、下層のメモリブロックの長さ"
-"になります。非contiguous 配列では、contiguous表現にコピーされた場合に論理構造"
-"がもつ長さです。"
+"``product(shape) * itemize``. Para arreglos contiguos, esta es la longitud "
+"del bloque de memoria subyacente. Para arreglos no contiguos, es la longitud "
+"que tendría la estructura lógica si se copiara en una representación "
+"contigua."
 
-#: ../../c-api/buffer.rst:121
+#: ../Doc/c-api/buffer.rst:121
 msgid ""
 "Accessing ``((char *)buf)[0] up to ((char *)buf)[len-1]`` is only valid if "
 "the buffer has been obtained by a request that guarantees contiguity. In "
 "most cases such a request will be :c:macro:`PyBUF_SIMPLE` or :c:macro:"
 "`PyBUF_WRITABLE`."
 msgstr ""
-"``((char *)buf)[0]`` から ``((char *)buf)[len-1]`` の範囲へのアクセスは、連続"
-"性 (contiguity) を保証するリクエストによって取得されたバッファに対してのみ許"
-"されます。\n"
-"多くの場合に、そのようなリクエストは :c:macro:`PyBUF_SIMPLE` または :c:macro:"
-"`PyBUF_WRITABLE` です。"
+"Accede a ``((char *)buf)[0] hasta ((char *)buf)[len-1]`` solo es válido si "
+"el búfer se ha obtenido mediante una solicitud que garantiza la contigüidad. "
+"En la mayoría de los casos, dicha solicitud será :c:macro:`PyBUF_SIMPLE` o :"
+"c:macro:`PyBUF_WRITABLE`."
 
-#: ../../c-api/buffer.rst:127
+#: ../Doc/c-api/buffer.rst:127
 msgid ""
 "An indicator of whether the buffer is read-only. This field is controlled by "
 "the :c:macro:`PyBUF_WRITABLE` flag."
 msgstr ""
-"バッファが読み出し専用であるか示します。このフィールドは :c:macro:"
-"`PyBUF_WRITABLE` フラグで制御できます。"
+"Un indicador de si el búfer es de solo lectura. Este campo está controlado "
+"por el indicador :c:macro:`PyBUF_WRITABLE`."
 
-#: ../../c-api/buffer.rst:132
+#: ../Doc/c-api/buffer.rst:132
 msgid ""
 "Item size in bytes of a single element. Same as the value of :func:`struct."
 "calcsize` called on non-``NULL`` :c:member:`~Py_buffer.format` values."
 msgstr ""
-"要素一つ分のbyte単位のサイズ。\n"
-":func:`struct.calcsize` を非 ``NULL`` の :c:member:`~Py_buffer.format` 値に対"
-"して呼び出した結果と同じです。"
+"Tamaño del elemento en bytes de un solo elemento. Igual que el valor de :"
+"func:`struct.calcsize` invocado en valores no ``NULL`` :c:member:`~Py_buffer."
+"format`."
 
-#: ../../c-api/buffer.rst:135
+#: ../Doc/c-api/buffer.rst:135
 msgid ""
 "Important exception: If a consumer requests a buffer without the :c:macro:"
 "`PyBUF_FORMAT` flag, :c:member:`~Py_buffer.format` will be set to  "
 "``NULL``,  but :c:member:`~Py_buffer.itemsize` still has the value for the "
 "original format."
 msgstr ""
-"重要な例外: 消費者が :c:macro:`PyBUF_FORMAT` フラグを設定することなくバッファ"
-"を要求した場合、 :c:member:`~Py_Buffer.format` は ``NULL`` に設定されます。\n"
-"しかし :c:member:`~Py_buffer.itemsize` は元のフォーマットに従った値を保持しま"
-"す。"
+"Excepción importante: si un consumidor solicita un búfer sin el indicador :c:"
+"macro:`PyBUF_FORMAT`, :c:member:`~Py_buffer.format` se establecerá en "
+"``NULL``, pero :c:member:`~Py_buffer.itemsize` todavía tiene el valor para "
+"el formato original."
 
-#: ../../c-api/buffer.rst:140
+#: ../Doc/c-api/buffer.rst:140
 msgid ""
 "If :c:member:`~Py_buffer.shape` is present, the equality ``product(shape) * "
 "itemsize == len`` still holds and the consumer can use :c:member:`~Py_buffer."
 "itemsize` to navigate the buffer."
 msgstr ""
-":c:member:`~Py_buffer.shape` が存在する場合、 ``product(shape) * itemsize == "
-"len`` の等式が守られ、利用者は :c:member:`~Py_buffer.itemsize` を buffer を読"
-"むために利用できます。"
+"Si :c:member:`~Py_buffer.shape` está presente, la igualdad ``product(shape) "
+"* itemsize == len`` aún se mantiene y el consumidor puede usar :c:member:"
+"`~Py_buffer.itemsize` para navegar el búfer."
 
-#: ../../c-api/buffer.rst:144
+#: ../Doc/c-api/buffer.rst:144
 msgid ""
 "If :c:member:`~Py_buffer.shape` is ``NULL`` as a result of a :c:macro:"
 "`PyBUF_SIMPLE` or a :c:macro:`PyBUF_WRITABLE` request, the consumer must "
 "disregard :c:member:`~Py_buffer.itemsize` and assume ``itemsize == 1``."
 msgstr ""
-":c:macro:`PyBUF_SIMPLE` または :c:macro:`PyBUF_WRITABLE` で要求した結果、 :c:"
-"member:`~Py_buffer.shape` が ``NULL`` であれば、消費者は :c:member:"
-"`~Py_buffer.itemsize` を無視して ``itemsize == 1`` と見なさなければなりませ"
-"ん。"
+"Si :c:member:`~Py_buffer.shape` es ``NULL`` como resultado de un :c:macro:"
+"`PyBUF_SIMPLE` o un :c:macro:`PyBUF_WRITABLE`, el consumidor debe ignorar :c:"
+"member:`~Py_buffer.itemsize` y asume ``itemsize == 1``."
 
-#: ../../c-api/buffer.rst:150
+#: ../Doc/c-api/buffer.rst:150
 msgid ""
 "A *NUL* terminated string in :mod:`struct` module style syntax describing "
 "the contents of a single item. If this is ``NULL``, ``\"B\"`` (unsigned "
 "bytes) is assumed."
 msgstr ""
-"要素一つ分の内容を指定する、 :mod:`struct` モジュールスタイル文法の、 *NUL* "
-"終端文字列。 このポインタの値が ``NULL`` なら、 ``\"B\"`` (符号無しバイト) と"
-"して扱われます。"
+"Una cadena de caracteres terminada en *NUL* en sintaxis de estilo del "
+"modulo :mod:`struct` que describe el contenido de un solo elemento. Si esto "
+"es ``NULL``, se supone ``\"B\"`` (bytes sin signo)."
 
-#: ../../c-api/buffer.rst:154
+#: ../Doc/c-api/buffer.rst:154
 msgid "This field is controlled by the :c:macro:`PyBUF_FORMAT` flag."
-msgstr "このフィールドは :c:macro:`PyBUF_FORMAT` フラグによって制御されます。"
+msgstr "Este campo está controlado por el indicador :c:macro:`PyBUF_FORMAT`."
 
-#: ../../c-api/buffer.rst:158
+#: ../Doc/c-api/buffer.rst:158
 msgid ""
 "The number of dimensions the memory represents as an n-dimensional array. If "
 "it is ``0``, :c:member:`~Py_buffer.buf` points to a single item representing "
 "a scalar. In this case, :c:member:`~Py_buffer.shape`, :c:member:`~Py_buffer."
 "strides` and :c:member:`~Py_buffer.suboffsets` MUST be ``NULL``."
 msgstr ""
-"メモリがN次元配列を表している時の次元数。\n"
-"``0`` の場合、 :c:member:`~Py_buffer.buf` はスカラ値を表す1つの要素を指してい"
-"ます。\n"
-"この場合、 :c:member:`~Py_buffer.shape`, :c:member:`~Py_buffer.strides`, :c:"
-"member:`~Py_buffer.suboffsets` は ``NULL`` でなければなりません。"
+"El número de dimensiones que representa la memoria como un arreglo n-"
+"dimensional. Si es ``0``, :c:member:`~Py_buffer.buf` apunta a un solo "
+"elemento que representa un escalar. En este caso, :c:member:`~Py_buffer."
+"shape`, :c:member:`~Py_buffer.strides` y :c:member:`~Py_buffer.suboffsets` "
+"DEBE ser ``NULL``."
 
-#: ../../c-api/buffer.rst:163
+#: ../Doc/c-api/buffer.rst:163
 msgid ""
 "The macro :c:macro:`PyBUF_MAX_NDIM` limits the maximum number of dimensions "
 "to 64. Exporters MUST respect this limit, consumers of multi-dimensional "
 "buffers SHOULD be able to handle up to :c:macro:`PyBUF_MAX_NDIM` dimensions."
 msgstr ""
-":c:macro:`PyBUF_MAX_NDIM` は次元数の最大値を64に制限しています。\n"
-"提供側はこの制限を尊重しなければなりません。\n"
-"多次元配列の消費側は :c:macro:`PyBUF_MAX_NDIM` 次元までを扱えるようにするべき"
-"です。"
+"La macro :c:macro:`PyBUF_MAX_NDIM` limita el número máximo de dimensiones a "
+"64. Los exportadores DEBEN respetar este límite, los consumidores de búfer "
+"multidimensionales DEBEN poder manejar hasta dimensiones :c:macro:"
+"`PyBUF_MAX_NDIM`."
 
-#: ../../c-api/buffer.rst:169
+#: ../Doc/c-api/buffer.rst:169
 msgid ""
 "An array of :c:type:`Py_ssize_t` of length :c:member:`~Py_buffer.ndim` "
 "indicating the shape of the memory as an n-dimensional array. Note that "
 "``shape[0] * ... * shape[ndim-1] * itemsize`` MUST be equal to :c:member:"
 "`~Py_buffer.len`."
 msgstr ""
-"メモリ上のN次元配列の形を示す、長さが :c:member:`~Py_buffer.ndim` である :c:"
-"type:`Py_ssize_t` の配列です。\n"
-"``shape[0] * ... * shape[ndim-1] * itemsize`` は :c:member:`~Py_buffer.len` "
-"と等しくなければなりません。"
+"Un arreglo de :c:type:`Py_ssize_t` de longitud :c:member:`~Py_buffer.ndim` "
+"que indica la forma de la memoria como un arreglo n-dimensional. Tenga en "
+"cuenta que ``shape[0] * ... * shape[ndim-1] * itemsize`` DEBE ser igual a :c:"
+"member:`~Py_buffer.len`."
 
-#: ../../c-api/buffer.rst:174
+#: ../Doc/c-api/buffer.rst:174
 msgid ""
 "Shape values are restricted to ``shape[n] >= 0``. The case ``shape[n] == 0`` "
 "requires special attention. See `complex arrays`_ for further information."
 msgstr ""
-"shape の値は ``shape[n] >= 0`` に制限されます。 ``shape[n] == 0`` の場合に特"
-"に注意が必要です。\n"
-"詳細は `complex arrays`_ を参照してください。"
+"Los valores de forma están restringidos a ``shape[n] >= 0``. El caso "
+"``shape[n] == 0`` requiere atención especial. Vea arreglos complejos "
+"(`complex arrays`_) para más información."
 
-#: ../../c-api/buffer.rst:178
+#: ../Doc/c-api/buffer.rst:178
 msgid "The shape array is read-only for the consumer."
-msgstr "shepe (形状) 配列は利用者からは読み出し専用です。"
+msgstr "El arreglo de formas es de sólo lectura para el consumidor."
 
-#: ../../c-api/buffer.rst:182
+#: ../Doc/c-api/buffer.rst:182
 msgid ""
 "An array of :c:type:`Py_ssize_t` of length :c:member:`~Py_buffer.ndim` "
 "giving the number of bytes to skip to get to a new element in each dimension."
 msgstr ""
-"各次元において新しい値を得るためにスキップするバイト数を示す、長さ :c:member:"
-"`~Py_buffer.ndim` の :c:type:`Py_ssize_t` の配列。"
+"Un arreglo de :c:type:`Py_ssize_t` de longitud :c:member:`~Py_buffer.ndim` "
+"que proporciona el número de bytes que se omiten para llegar a un nuevo "
+"elemento en cada dimensión."
 
-#: ../../c-api/buffer.rst:186
+#: ../Doc/c-api/buffer.rst:186
 msgid ""
 "Stride values can be any integer. For regular arrays, strides are usually "
 "positive, but a consumer MUST be able to handle the case ``strides[n] <= "
 "0``. See `complex arrays`_ for further information."
 msgstr ""
-"ストライド値は、任意の整数を指定できます。規定の配列では、ストライドは通常で"
-"いけば有効です。しかし利用者は、``strides[n] <= 0`` のケースを処理することが"
-"できる必要があります。詳細については `complex arrays`_ を参照してください。"
+"Los valores de *stride* pueden ser cualquier número entero. Para los "
+"arreglos regulares, los pasos son generalmente positivos, pero un consumidor "
+"DEBE ser capaz de manejar el caso ``strides[n] <= 0``. Ver `complex arrays`_ "
+"para más información."
 
-#: ../../c-api/buffer.rst:190
+#: ../Doc/c-api/buffer.rst:190
 msgid "The strides array is read-only for the consumer."
-msgstr "消費者にとって、この strides 配列は読み出し専用です。"
+msgstr "El arreglo *strides* es de sólo lectura para el consumidor."
 
-#: ../../c-api/buffer.rst:194
+#: ../Doc/c-api/buffer.rst:194
 msgid ""
 "An array of :c:type:`Py_ssize_t` of length :c:member:`~Py_buffer.ndim`. If "
 "``suboffsets[n] >= 0``, the values stored along the nth dimension are "
@@ -397,334 +402,334 @@ msgid ""
 "pointer after de-referencing. A suboffset value that is negative indicates "
 "that no de-referencing should occur (striding in a contiguous memory block)."
 msgstr ""
-":c:type:`Py_ssize_t` 型の要素を持つ長さ :c:member:`~Py_buffer.ndim` の配"
-"列。\n"
-"``suboffsets[n] >= 0`` の場合は、 n 番目の次元に沿って保存されている値はポイ"
-"ンタで、 suboffset 値は各ポインタの参照を解決した後に何バイト加えればいいかを"
-"示しています。\n"
-"suboffset の値が負の数の場合は、ポインタの参照解決は不要 (連続したメモリブ"
-"ロック内に直接配置されいる) ということになります。"
+"Un arreglo de :c:type:`Py_ssize_t` de longitud :c:member:`~Py_buffer.ndim`. "
+"Si ``suboffsets[n] >= 0``, los valores almacenados a lo largo de la enésima "
+"dimensión son punteros y el valor del *suboffsets* dicta cuántos bytes "
+"agregar a cada puntero después de desreferenciarlos. Un valor de "
+"*suboffsets* negativo indica que no debe producirse una desreferenciación "
+"(*striding* en un bloque de memoria contiguo)."
 
-#: ../../c-api/buffer.rst:201
+#: ../Doc/c-api/buffer.rst:201
 msgid ""
 "If all suboffsets are negative (i.e. no de-referencing is needed), then this "
 "field must be ``NULL`` (the default value)."
 msgstr ""
-"全ての suboffset が負数の場合 (つまり参照解決が不要) な場合、このフィールド"
-"は ``NULL`` (デフォルト値) でなければなりません。"
+"Si todos los *suboffsets* son negativos (es decir, no se necesita "
+"desreferenciar), entonces este campo debe ser ``NULL`` (el valor "
+"predeterminado)."
 
-#: ../../c-api/buffer.rst:204
+#: ../Doc/c-api/buffer.rst:204
 msgid ""
 "This type of array representation is used by the Python Imaging Library "
 "(PIL). See `complex arrays`_ for further information how to access elements "
 "of such an array."
 msgstr ""
-"この種の配列表現は Python Imaging Library (PIL) で使われています。\n"
-"このような配列で要素にアクセスする方法についてさらに詳しことは `complex "
-"arrays`_ を参照してください。"
+"*Python Imaging Library (PIL)* utiliza este tipo de representación de "
+"arreglos. Consulte `complex arrays`_ para obtener más información sobre cómo "
+"acceder a los elementos de dicho arreglo."
 
-#: ../../c-api/buffer.rst:208
+#: ../Doc/c-api/buffer.rst:208
 msgid "The suboffsets array is read-only for the consumer."
-msgstr "消費者にとって、suboffsets 配列は読み出し専用です。"
+msgstr "El arreglo de *suboffsets* es de sólo lectura para el consumidor."
 
-#: ../../c-api/buffer.rst:212
+#: ../Doc/c-api/buffer.rst:212
 msgid ""
 "This is for use internally by the exporting object. For example, this might "
 "be re-cast as an integer by the exporter and used to store flags about "
 "whether or not the shape, strides, and suboffsets arrays must be freed when "
 "the buffer is released. The consumer MUST NOT alter this value."
 msgstr ""
-"バッファを提供する側のオブジェクトが内部的に利用するための変数です。例えば、"
-"提供側はこの変数に整数型をキャストして、shape, strides, suboffsets といった配"
-"列をバッファを開放するときに同時に解放するべきかどうかを管理するフラグに使う"
-"ことができるでしょう。バッファを受け取る側は、この値を決して変更してはなりま"
-"せん。"
+"Esto es para uso interno del objeto exportador. Por ejemplo, el exportador "
+"podría volver a emitirlo como un número entero y utilizarlo para almacenar "
+"indicadores sobre si las matrices de forma, *strides* y *suboffsets* deben "
+"liberarse cuando se libera el búfer. El consumidor NO DEBE alterar este "
+"valor."
 
-#: ../../c-api/buffer.rst:221
+#: ../Doc/c-api/buffer.rst:221
 msgid "Buffer request types"
-msgstr "バッファリクエストのタイプ"
+msgstr "Tipos de solicitud búfer"
 
-#: ../../c-api/buffer.rst:223
+#: ../Doc/c-api/buffer.rst:223
 msgid ""
 "Buffers are usually obtained by sending a buffer request to an exporting "
 "object via :c:func:`PyObject_GetBuffer`. Since the complexity of the logical "
 "structure of the memory can vary drastically, the consumer uses the *flags* "
 "argument to specify the exact buffer type it can handle."
 msgstr ""
-"バッファは通常、 :c:func:`PyObject_GetBuffer` を使うことで、エクスポートする"
-"オブジェクトにバッファリクエストを送ることで得られます。メモリの論理的な構造"
-"の複雑性は多岐にわたるため、消費者は *flags* 引数を使って、自身が扱えるバッ"
-"ファの種類を指定します。"
+"Los búferes obtienen generalmente enviando una solicitud de búfer a un "
+"objeto de exportación a través de :c:func:`PyObject_GetBuffer`. Dado que la "
+"complejidad de la estructura lógica de la memoria puede variar "
+"drásticamente, el consumidor usa el argumento *flags* para especificar el "
+"tipo de búfer exacto que puede manejar."
 
-#: ../../c-api/buffer.rst:228
+#: ../Doc/c-api/buffer.rst:228
 msgid ""
 "All :c:data:`Py_buffer` fields are unambiguously defined by the request type."
 msgstr ""
-":c:data:`Py_buffer` の全フィールドは、リクエストの種類によって曖昧さを残さず"
-"に定義されます。"
+"Todos los campos :c:data:`Py_buffer` están definidos inequívocamente por el "
+"tipo de solicitud."
 
-#: ../../c-api/buffer.rst:232
+#: ../Doc/c-api/buffer.rst:232
 msgid "request-independent fields"
-msgstr "リクエストに依存しないフィールド"
+msgstr "campos independientes de solicitud"
 
-#: ../../c-api/buffer.rst:233
+#: ../Doc/c-api/buffer.rst:233
 msgid ""
 "The following fields are not influenced by *flags* and must always be filled "
 "in with the correct values: :c:member:`~Py_buffer.obj`, :c:member:"
 "`~Py_buffer.buf`, :c:member:`~Py_buffer.len`, :c:member:`~Py_buffer."
 "itemsize`, :c:member:`~Py_buffer.ndim`."
 msgstr ""
-"下記のフィールドは *flags* の影響を受けずに、常に正しい値で設定されます。: :"
-"c:member:`~Py_buffer.obj`, :c:member:`~Py_buffer.buf`, :c:member:`~Py_buffer."
-"len`, :c:member:`~Py_buffer.itemsize`, :c:member:`~Py_buffer.ndim`."
+"Los siguientes campos no están influenciados por *flags* y siempre deben "
+"completarse con los valores correctos: :c:member:`~Py_buffer.obj`, :c:member:"
+"`~Py_buffer.buf`, :c:member:`~Py_buffer.len`, :c:member:`~Py_buffer."
+"itemsize`, :c:member:`~Py_buffer.ndim`."
 
-#: ../../c-api/buffer.rst:239
+#: ../Doc/c-api/buffer.rst:239
 msgid "readonly, format"
-msgstr "readonly, format"
+msgstr "formato de sólo lectura"
 
-#: ../../c-api/buffer.rst:243
+#: ../Doc/c-api/buffer.rst:243
 msgid ""
 "Controls the :c:member:`~Py_buffer.readonly` field. If set, the exporter "
 "MUST provide a writable buffer or else report failure. Otherwise, the "
 "exporter MAY provide either a read-only or writable buffer, but the choice "
 "MUST be consistent for all consumers."
 msgstr ""
-":c:member:`~Py_buffer.readonly` フィールドを制御します。もしこのフラグが設定"
-"されている場合、exporter は、書き込み可能なバッファを提供するか、さもなければ"
-"失敗を報告しなければなりません。フラグが設定されていない場合、exporterは、読"
-"み出し専用と書き込み可能なバッファのどちらを提供しても構いませんが、どちらで"
-"提供するかどうかは全ての消費者に対して一貫性がなければなりません。"
+"Controla el campo :c:member:`~Py_buffer.readonly`. Si se establece, el "
+"exportador DEBE proporcionar un búfer de escritura o, de lo contrario, "
+"informar de un error. De lo contrario, el exportador PUEDE proporcionar un "
+"búfer de solo lectura o de escritura, pero la elección DEBE ser coherente "
+"para todos los consumidores."
 
-#: ../../c-api/buffer.rst:250
+#: ../Doc/c-api/buffer.rst:250
 msgid ""
 "Controls the :c:member:`~Py_buffer.format` field. If set, this field MUST be "
 "filled in correctly. Otherwise, this field MUST be ``NULL``."
 msgstr ""
-":c:member:`~Py_buffer.format` フィールドを制御します。もしフラグが設定されて"
-"いれば、このフィールドを正しく埋めなければなりません。フラグが設定されていな"
-"ければ、このフィールドを ``NULL`` に設定しなければなりません。"
+"Controla el campo :c:member:`~Py_buffer.format`. Si se establece, este campo "
+"DEBE completarse correctamente. De lo contrario, este campo DEBE ser "
+"``NULL``."
 
-#: ../../c-api/buffer.rst:254
+#: ../Doc/c-api/buffer.rst:254
 msgid ""
 ":c:macro:`PyBUF_WRITABLE` can be \\|'d to any of the flags in the next "
 "section. Since :c:macro:`PyBUF_SIMPLE` is defined as 0, :c:macro:"
 "`PyBUF_WRITABLE` can be used as a stand-alone flag to request a simple "
 "writable buffer."
 msgstr ""
-":c:macro:`PyBUF_WRITABLE` は、次の節に出てくるどのフラグとも \\| を取ってかま"
-"いません。\n"
-":c:macro:`PyBUF_SIMPLE` は 0 と定義されているので、 :c:macro:"
-"`PyBUF_WRITABLE` は単純な書き込み可能なバッファを要求する単独のフラグとして使"
-"えます。"
+":c:macro:`PyBUF_WRITABLE` puede ser \\|'d a cualquiera de las banderas en la "
+"siguiente sección. Dado que :c:macro:`PyBUF_SIMPLE` se define como 0, :c:"
+"macro:`PyBUF_WRITABLE` puede usarse como un indicador independiente para "
+"solicitar un búfer de escritura simple."
 
-#: ../../c-api/buffer.rst:258
+#: ../Doc/c-api/buffer.rst:258
 msgid ""
 ":c:macro:`PyBUF_FORMAT` can be \\|'d to any of the flags except :c:macro:"
 "`PyBUF_SIMPLE`. The latter already implies format ``B`` (unsigned bytes)."
 msgstr ""
-":c:macro:`PyBUF_FORMAT` は、:c:macro:`PyBUF_SIMPLE` 以外のどのフラグとも \\| "
-"を取ってかまいません。\n"
-"後者のフラグは ``B`` (符号なしバイト) フォーマットを既に指示しています。"
+":c:macro:`PyBUF_FORMAT` puede ser \\|'d para cualquiera de las banderas "
+"excepto :c:macro:`PyBUF_SIMPLE`. Este último ya implica el formato ``B`` "
+"(bytes sin signo)."
 
-#: ../../c-api/buffer.rst:263
+#: ../Doc/c-api/buffer.rst:263
 msgid "shape, strides, suboffsets"
-msgstr "shape, strides, suboffsets"
+msgstr "formas, *strides*, *suboffsets*"
 
-#: ../../c-api/buffer.rst:265
+#: ../Doc/c-api/buffer.rst:265
 msgid ""
 "The flags that control the logical structure of the memory are listed in "
 "decreasing order of complexity. Note that each flag contains all bits of the "
 "flags below it."
 msgstr ""
-"このフラグは、以下で複雑性が大きい順に並べたメモリの論理的な構造を制御しま"
-"す。個々のフラグは、それより下に記載されたフラグのすべてのビットを含むことに"
-"注意してください。"
+"Las banderas que controlan la estructura lógica de la memoria se enumeran en "
+"orden decreciente de complejidad. Tenga en cuenta que cada bandera contiene "
+"todos los bits de las banderas debajo de ella."
 
-#: ../../c-api/buffer.rst:272 ../../c-api/buffer.rst:296
-#: ../../c-api/buffer.rst:321
+#: ../Doc/c-api/buffer.rst:272 ../Doc/c-api/buffer.rst:296
+#: ../Doc/c-api/buffer.rst:321
 msgid "Request"
-msgstr "リクエスト"
+msgstr "Solicitud"
 
-#: ../../c-api/buffer.rst:272 ../../c-api/buffer.rst:296
-#: ../../c-api/buffer.rst:321
+#: ../Doc/c-api/buffer.rst:272 ../Doc/c-api/buffer.rst:296
+#: ../Doc/c-api/buffer.rst:321
 msgid "shape"
-msgstr "shape"
+msgstr "forma"
 
-#: ../../c-api/buffer.rst:272 ../../c-api/buffer.rst:296
-#: ../../c-api/buffer.rst:321
+#: ../Doc/c-api/buffer.rst:272 ../Doc/c-api/buffer.rst:296
+#: ../Doc/c-api/buffer.rst:321
 msgid "strides"
-msgstr "strides"
+msgstr "*strides*"
 
-#: ../../c-api/buffer.rst:272 ../../c-api/buffer.rst:296
-#: ../../c-api/buffer.rst:321
+#: ../Doc/c-api/buffer.rst:272 ../Doc/c-api/buffer.rst:296
+#: ../Doc/c-api/buffer.rst:321
 msgid "suboffsets"
-msgstr "suboffsets"
+msgstr "*suboffsets*"
 
-#: ../../c-api/buffer.rst:274 ../../c-api/buffer.rst:276
-#: ../../c-api/buffer.rst:278 ../../c-api/buffer.rst:298
-#: ../../c-api/buffer.rst:300 ../../c-api/buffer.rst:302
-#: ../../c-api/buffer.rst:304 ../../c-api/buffer.rst:323
-#: ../../c-api/buffer.rst:325 ../../c-api/buffer.rst:327
-#: ../../c-api/buffer.rst:329 ../../c-api/buffer.rst:331
-#: ../../c-api/buffer.rst:333 ../../c-api/buffer.rst:335
-#: ../../c-api/buffer.rst:337
+#: ../Doc/c-api/buffer.rst:274 ../Doc/c-api/buffer.rst:276
+#: ../Doc/c-api/buffer.rst:278 ../Doc/c-api/buffer.rst:298
+#: ../Doc/c-api/buffer.rst:300 ../Doc/c-api/buffer.rst:302
+#: ../Doc/c-api/buffer.rst:304 ../Doc/c-api/buffer.rst:323
+#: ../Doc/c-api/buffer.rst:325 ../Doc/c-api/buffer.rst:327
+#: ../Doc/c-api/buffer.rst:329 ../Doc/c-api/buffer.rst:331
+#: ../Doc/c-api/buffer.rst:333 ../Doc/c-api/buffer.rst:335
+#: ../Doc/c-api/buffer.rst:337
 msgid "yes"
-msgstr "yes"
+msgstr "sí"
 
-#: ../../c-api/buffer.rst:274 ../../c-api/buffer.rst:323
-#: ../../c-api/buffer.rst:325
+#: ../Doc/c-api/buffer.rst:274 ../Doc/c-api/buffer.rst:323
+#: ../Doc/c-api/buffer.rst:325
 msgid "if needed"
-msgstr "必要な場合"
+msgstr "si es necesario"
 
-#: ../../c-api/buffer.rst:276 ../../c-api/buffer.rst:278
-#: ../../c-api/buffer.rst:280 ../../c-api/buffer.rst:298
-#: ../../c-api/buffer.rst:300 ../../c-api/buffer.rst:302
-#: ../../c-api/buffer.rst:304 ../../c-api/buffer.rst:327
-#: ../../c-api/buffer.rst:329 ../../c-api/buffer.rst:331
-#: ../../c-api/buffer.rst:333 ../../c-api/buffer.rst:335
-#: ../../c-api/buffer.rst:337
+#: ../Doc/c-api/buffer.rst:276 ../Doc/c-api/buffer.rst:278
+#: ../Doc/c-api/buffer.rst:280 ../Doc/c-api/buffer.rst:298
+#: ../Doc/c-api/buffer.rst:300 ../Doc/c-api/buffer.rst:302
+#: ../Doc/c-api/buffer.rst:304 ../Doc/c-api/buffer.rst:327
+#: ../Doc/c-api/buffer.rst:329 ../Doc/c-api/buffer.rst:331
+#: ../Doc/c-api/buffer.rst:333 ../Doc/c-api/buffer.rst:335
+#: ../Doc/c-api/buffer.rst:337
 msgid "NULL"
 msgstr "NULL"
 
-#: ../../c-api/buffer.rst:287
+#: ../Doc/c-api/buffer.rst:287
 msgid "contiguity requests"
-msgstr "隣接性のリクエスト"
+msgstr "solicitudes de contigüidad"
 
-#: ../../c-api/buffer.rst:289
+#: ../Doc/c-api/buffer.rst:289
 msgid ""
 "C or Fortran :term:`contiguity <contiguous>` can be explicitly requested, "
 "with and without stride information. Without stride information, the buffer "
 "must be C-contiguous."
 msgstr ""
-"ストライドの情報があってもなくても、C または Fortran の :term:`連続性 "
-"<contiguous>` が明確に要求される可能性があります。\n"
-"ストライド情報なしに、バッファーは C と隣接している必要があります。"
+"La :term:`contigüidad <contiguous>` C o Fortran se puede solicitar "
+"explícitamente, con y sin información de paso. Sin información de paso, el "
+"búfer debe ser C-contiguo."
 
-#: ../../c-api/buffer.rst:296 ../../c-api/buffer.rst:321
+#: ../Doc/c-api/buffer.rst:296 ../Doc/c-api/buffer.rst:321
 msgid "contig"
 msgstr "contig"
 
-#: ../../c-api/buffer.rst:298 ../../c-api/buffer.rst:304
-#: ../../c-api/buffer.rst:335 ../../c-api/buffer.rst:337
+#: ../Doc/c-api/buffer.rst:298 ../Doc/c-api/buffer.rst:304
+#: ../Doc/c-api/buffer.rst:335 ../Doc/c-api/buffer.rst:337
 msgid "C"
 msgstr "C"
 
-#: ../../c-api/buffer.rst:300
+#: ../Doc/c-api/buffer.rst:300
 msgid "F"
 msgstr "F"
 
-#: ../../c-api/buffer.rst:302
+#: ../Doc/c-api/buffer.rst:302
 msgid "C or F"
-msgstr "C か F"
+msgstr "C o F"
 
-#: ../../c-api/buffer.rst:304
+#: ../Doc/c-api/buffer.rst:304
 msgid ":c:macro:`PyBUF_ND`"
 msgstr ":c:macro:`PyBUF_ND`"
 
-#: ../../c-api/buffer.rst:309
+#: ../Doc/c-api/buffer.rst:309
 msgid "compound requests"
-msgstr "複合リクエスト"
+msgstr "solicitudes compuestas"
 
-#: ../../c-api/buffer.rst:311
+#: ../Doc/c-api/buffer.rst:311
 msgid ""
 "All possible requests are fully defined by some combination of the flags in "
 "the previous section. For convenience, the buffer protocol provides "
 "frequently used combinations as single flags."
 msgstr ""
-"有り得る全てのリクエストの値は、前の節でのフラグの組み合わせで網羅的に定義さ"
-"れています。\n"
-"便利なように、バッファープロトコルでは頻繁に使用される組み合わせを単一のフラ"
-"グとして提供してます。"
+"Todas las solicitudes posibles están completamente definidas por alguna "
+"combinación de las banderas en la sección anterior. Por conveniencia, el "
+"protocolo de memoria intermedia proporciona combinaciones de uso frecuente "
+"como indicadores únicos."
 
-#: ../../c-api/buffer.rst:315
+#: ../Doc/c-api/buffer.rst:315
 msgid ""
 "In the following table *U* stands for undefined contiguity. The consumer "
 "would have to call :c:func:`PyBuffer_IsContiguous` to determine contiguity."
 msgstr ""
-"次のテーブルの *U* は連続性が未定義であることを表します。\n"
-"利用者は :c:func:`PyBuffer_IsContiguous` を呼び出して連続性を判定する必要があ"
-"るでしょう。"
+"En la siguiente tabla *U* significa contigüidad indefinida. El consumidor "
+"tendría que llamar a :c:func:`PyBuffer_IsContiguous` para determinar la "
+"contigüidad."
 
-#: ../../c-api/buffer.rst:321
+#: ../Doc/c-api/buffer.rst:321
 msgid "readonly"
-msgstr "readonly"
+msgstr "sólo lectura"
 
-#: ../../c-api/buffer.rst:321
+#: ../Doc/c-api/buffer.rst:321
 msgid "format"
-msgstr "format"
+msgstr "formato"
 
-#: ../../c-api/buffer.rst:323 ../../c-api/buffer.rst:325
-#: ../../c-api/buffer.rst:327 ../../c-api/buffer.rst:329
-#: ../../c-api/buffer.rst:331 ../../c-api/buffer.rst:333
+#: ../Doc/c-api/buffer.rst:323 ../Doc/c-api/buffer.rst:325
+#: ../Doc/c-api/buffer.rst:327 ../Doc/c-api/buffer.rst:329
+#: ../Doc/c-api/buffer.rst:331 ../Doc/c-api/buffer.rst:333
 msgid "U"
 msgstr "U"
 
-#: ../../c-api/buffer.rst:323 ../../c-api/buffer.rst:327
-#: ../../c-api/buffer.rst:331 ../../c-api/buffer.rst:335
+#: ../Doc/c-api/buffer.rst:323 ../Doc/c-api/buffer.rst:327
+#: ../Doc/c-api/buffer.rst:331 ../Doc/c-api/buffer.rst:335
 msgid "0"
 msgstr "0"
 
-#: ../../c-api/buffer.rst:325 ../../c-api/buffer.rst:329
-#: ../../c-api/buffer.rst:333 ../../c-api/buffer.rst:337
+#: ../Doc/c-api/buffer.rst:325 ../Doc/c-api/buffer.rst:329
+#: ../Doc/c-api/buffer.rst:333 ../Doc/c-api/buffer.rst:337
 msgid "1 or 0"
-msgstr "1 か 0"
+msgstr "1 o 0"
 
-#: ../../c-api/buffer.rst:342
+#: ../Doc/c-api/buffer.rst:342
 msgid "Complex arrays"
-msgstr "複雑な配列"
+msgstr "Arreglos complejos"
 
-#: ../../c-api/buffer.rst:345
+#: ../Doc/c-api/buffer.rst:345
 msgid "NumPy-style: shape and strides"
-msgstr "NumPy スタイル: shape, strides"
+msgstr "Estilo NumPy: forma y *strides*"
 
-#: ../../c-api/buffer.rst:347
+#: ../Doc/c-api/buffer.rst:347
 msgid ""
 "The logical structure of NumPy-style arrays is defined by :c:member:"
 "`~Py_buffer.itemsize`, :c:member:`~Py_buffer.ndim`, :c:member:`~Py_buffer."
 "shape` and :c:member:`~Py_buffer.strides`."
 msgstr ""
-"NumPy スタイルの配列の論理的構造は :c:member:`~Py_buffer.itemsize`, :c:"
-"member:`~Py_buffer.ndim`, :c:member:`~Py_buffer.shape`, :c:member:"
-"`~Py_buffer.strides` で定義されます。"
+"La estructura lógica de las matrices de estilo NumPy está definida por :c:"
+"member:`~Py_buffer.itemsize`, :c:member:`~Py_buffer.ndim`, :c:member:"
+"`~Py_buffer.shape` y :c:member:`~Py_buffer.strides`."
 
-#: ../../c-api/buffer.rst:350
+#: ../Doc/c-api/buffer.rst:350
 msgid ""
 "If ``ndim == 0``, the memory location pointed to by :c:member:`~Py_buffer."
 "buf` is interpreted as a scalar of size :c:member:`~Py_buffer.itemsize`. In "
 "that case, both :c:member:`~Py_buffer.shape` and :c:member:`~Py_buffer."
 "strides` are ``NULL``."
 msgstr ""
-"``ndim == 0`` の場合は、 :c:member:`~Py_buffer.buf` が指すメモリの場所は、サ"
-"イズが :c:member:`~Py_buffer.itemsize` のスカラ値として解釈されます。\n"
-"この場合、 :c:member:`~Py_buffer.shape` と :c:member:`~Py_buffer.strides` の"
-"両方とも ``NULL`` です。"
+"Si ``ndim == 0``, la ubicación de memoria señalada por :c:member:`~Py_buffer."
+"buf` se interpreta como un escalar de tamaño :c:member:`~Py_buffer."
+"itemsize`. En ese caso, tanto :c:member:`~Py_buffer.shape` como :c:member:"
+"`~Py_buffer.strides` son ``NULL``."
 
-#: ../../c-api/buffer.rst:354
+#: ../Doc/c-api/buffer.rst:354
 msgid ""
 "If :c:member:`~Py_buffer.strides` is ``NULL``, the array is interpreted as a "
 "standard n-dimensional C-array. Otherwise, the consumer must access an n-"
 "dimensional array as follows:"
 msgstr ""
-":c:member:`~Py_buffer.strides` が ``NULL`` の場合は、配列は標準の n 次元 C 配"
-"列として解釈されます。\n"
-"そうでない場合は、利用者は次のように n 次元配列にアクセスしなければなりませ"
-"ん:"
+"Si :c:member:`~Py_buffer.strides` es ``NULL``, el arreglo se interpreta como "
+"un arreglo C n-dimensional estándar. De lo contrario, el consumidor debe "
+"acceder a un arreglo n-dimensional de la siguiente manera:"
 
-#: ../../c-api/buffer.rst:364
+#: ../Doc/c-api/buffer.rst:364
 msgid ""
 "As noted above, :c:member:`~Py_buffer.buf` can point to any location within "
 "the actual memory block. An exporter can check the validity of a buffer with "
 "this function:"
 msgstr ""
-"上記のように、 :c:member:`~Py_buffer.buf` はメモリブロック内のどの場所でも指"
-"すことが可能です。エクスポーターはこの関数を使用することによってバッファの妥"
-"当性を確認出来ます。"
+"Como se señaló anteriormente, :c:member:`~Py_buffer.buf` puede apuntar a "
+"cualquier ubicación dentro del bloque de memoria real. Un exportador puede "
+"verificar la validez de un búfer con esta función:"
 
-#: ../../c-api/buffer.rst:398
+#: ../Doc/c-api/buffer.rst:398
 msgid "PIL-style: shape, strides and suboffsets"
-msgstr "PIL スタイル: shape, strides, suboffsets"
+msgstr "Estilo PIL: forma, *strides* y *suboffsets*"
 
-#: ../../c-api/buffer.rst:400
+#: ../Doc/c-api/buffer.rst:400
 msgid ""
 "In addition to the regular items, PIL-style arrays can contain pointers that "
 "must be followed in order to get to the next element in a dimension. For "
@@ -734,190 +739,206 @@ msgid ""
 "embedded at the start of :c:member:`~Py_buffer.buf`, pointing to two ``char "
 "x[2][3]`` arrays that can be located anywhere in memory."
 msgstr ""
-"PIL スタイルの配列では通常の要素の他に、ある次元の上で次の要素を取得するため"
-"に辿るポインタを持てます。\n"
-"例えば、通常の3次元 C 配列 ``char v[2][2][3]`` は、2次元配列への 2 つのポイン"
-"タからなる配列 ``char (*v[2])[2][3]`` と見ることもできます。\n"
-"suboffset 表現では、これらの 2 つのポインタは :c:member:`~Py_buffer.buf` の先"
-"頭に埋め込め、メモリのどこにでも配置できる 2 つの ``char x[2][3]`` 配列を指し"
-"ます。"
+"Además de los elementos normales, los arreglos de estilo PIL pueden contener "
+"punteros que deben seguirse para llegar al siguiente elemento en una "
+"dimensión. Por ejemplo, el arreglo C tridimensional regular ``char v[2][2]"
+"[3]`` también se puede ver como un arreglo de 2 punteros a 2 arreglos "
+"bidimensionales: ``char (*v[2])[2][3]``. En la representación de "
+"*suboffsets*, esos dos punteros pueden incrustarse al comienzo de :c:member:"
+"`~Py_buffer.buf`, apuntando a dos matrices ``char x[2][3]`` que pueden "
+"ubicarse en cualquier lugar de la memoria."
 
-#: ../../c-api/buffer.rst:409
+#: ../Doc/c-api/buffer.rst:409
 msgid ""
 "Here is a function that returns a pointer to the element in an N-D array "
 "pointed to by an N-dimensional index when there are both non-``NULL`` "
 "strides and suboffsets::"
 msgstr ""
-"次の例は、 strides も suboffsets も ``NULL`` でない場合の、N 次元インデックス"
-"によって指されている N 次元配列内の要素へのポインタを返す関数です::"
+"Aquí hay una función que retorna un puntero al elemento en un arreglo N-D a "
+"la que apunta un índice N-dimensional cuando hay *strides* y *suboffsets* no "
+"``NULL``:"
 
-#: ../../c-api/buffer.rst:428
+#: ../Doc/c-api/buffer.rst:428
 msgid "Buffer-related functions"
-msgstr "バッファ関連の関数"
+msgstr "Funciones relacionadas a búfer"
 
-#: ../../c-api/buffer.rst:432
+#: ../Doc/c-api/buffer.rst:432
 msgid ""
 "Return ``1`` if *obj* supports the buffer interface otherwise ``0``.  When "
 "``1`` is returned, it doesn't guarantee that :c:func:`PyObject_GetBuffer` "
 "will succeed.  This function always succeeds."
 msgstr ""
-"*obj* がbuffer インターフェースをサポートしている場合は ``1`` を返し、そうで"
-"ない場合は ``0`` を返します。\n"
-"``1`` を返したとしても、 :c:func:`PyObject_GetBuffer` が成功することは保証さ"
-"れません。\n"
-"この関数は常に成功します。"
+"Retorna ``1`` si *obj* admite la interfaz de búfer; de lo contrario, ``0`` "
+"cuando se retorna ``1``, no garantiza que :c:func:`PyObject_GetBuffer` tenga "
+"éxito. Esta función siempre finaliza con éxito."
 
-#: ../../c-api/buffer.rst:439
+#: ../Doc/c-api/buffer.rst:439
 msgid ""
 "Send a request to *exporter* to fill in *view* as specified by  *flags*. If "
 "the exporter cannot provide a buffer of the exact type, it MUST raise :c:"
 "data:`PyExc_BufferError`, set ``view->obj`` to ``NULL`` and return ``-1``."
 msgstr ""
+"Envía una solicitud al *exporter* para completar la *view* según lo "
+"especificado por *flags*. Si el exportador no puede proporcionar un búfer "
+"del tipo exacto, DEBE lanzar :c:data:`PyExc_BufferError`, establecer ``view-"
+">obj`` en ``NULL`` y retornar ``-1``."
 
-#: ../../c-api/buffer.rst:444
+#: ../Doc/c-api/buffer.rst:444
 msgid ""
 "On success, fill in *view*, set ``view->obj`` to a new reference to "
 "*exporter* and return 0. In the case of chained buffer providers that "
 "redirect requests to a single object, ``view->obj`` MAY refer to this object "
 "instead of *exporter* (See :ref:`Buffer Object Structures <buffer-structs>`)."
 msgstr ""
+"Si tiene éxito, completa *view*, establece ``view->obj`` en una nueva "
+"referencia a *exporter* y retorna 0. En el caso de proveedores de búfer "
+"encadenados que redirigen las solicitudes a un solo objeto, ``view->obj`` "
+"PUEDE referirse a este objeto en lugar de *exporter* (Ver :ref:`Estructuras "
+"de objetos de búfer <buffer-structs>`)."
 
-#: ../../c-api/buffer.rst:449
+#: ../Doc/c-api/buffer.rst:449
 msgid ""
 "Successful calls to :c:func:`PyObject_GetBuffer` must be paired with calls "
 "to :c:func:`PyBuffer_Release`, similar to :c:func:`malloc` and :c:func:"
 "`free`. Thus, after the consumer is done with the buffer, :c:func:"
 "`PyBuffer_Release` must be called exactly once."
 msgstr ""
-":c:func:`malloc` と :c:func:`free` のように、呼び出しに成功した :c:func:"
-"`PyObject_GetBuffer` と対になる :c:func:`PyBuffer_Release` の呼び出しがなけれ"
-"なればなりません。\n"
-"従って、バッファの利用が済んだら :c:func:`PyBuffer_Release` が厳密に1回だけ呼"
-"び出されなければなりません。"
+"Las llamadas exitosas a :c:func:`PyObject_GetBuffer` deben combinarse con "
+"las llamadas a :c:func:`PyBuffer_Release`, similar a :c:func:`malloc` y :c:"
+"func:`free`. Por lo tanto, después de que el consumidor haya terminado con "
+"el búfer, :c:func:`PyBuffer_Release` debe llamarse exactamente una vez."
 
-#: ../../c-api/buffer.rst:457
+#: ../Doc/c-api/buffer.rst:457
 msgid ""
 "Release the buffer *view* and decrement the reference count for ``view-"
 ">obj``. This function MUST be called when the buffer is no longer being "
 "used, otherwise reference leaks may occur."
 msgstr ""
+"Libera el búfer *view* y disminuye el conteo de referencias para ``view-"
+">obj``. Esta función DEBE llamarse cuando el búfer ya no se utiliza, de lo "
+"contrario, pueden producirse fugas de referencia."
 
-#: ../../c-api/buffer.rst:461
+#: ../Doc/c-api/buffer.rst:461
 msgid ""
 "It is an error to call this function on a buffer that was not obtained via :"
 "c:func:`PyObject_GetBuffer`."
 msgstr ""
-":c:func:`PyObject_GetBuffer` を通して取得していないバッファに対してこの関数を"
-"呼び出すのは間違いです。"
+"Es un error llamar a esta función en un búfer que no se obtuvo a través de :"
+"c:func:`PyObject_GetBuffer`."
 
-#: ../../c-api/buffer.rst:467
+#: ../Doc/c-api/buffer.rst:467
 msgid ""
 "Return the implied :c:data:`~Py_buffer.itemsize` from :c:data:`~Py_buffer."
 "format`. On error, raise an exception and return -1."
 msgstr ""
+"Retorna el :c:data:`~Py_buffer.itemsize` implícito de :c:data:`~Py_buffer."
+"format`. En caso de error, lanza una excepción y retorna -1."
 
-#: ../../c-api/buffer.rst:475
+#: ../Doc/c-api/buffer.rst:475
 msgid ""
 "Return ``1`` if the memory defined by the *view* is C-style (*order* is "
 "``'C'``) or Fortran-style (*order* is ``'F'``) :term:`contiguous` or either "
 "one (*order* is ``'A'``).  Return ``0`` otherwise.  This function always "
 "succeeds."
 msgstr ""
-"*view* で定義されているメモリが、 C スタイル (*order* == ``'C'``) のときか、 "
-"Fortran スタイル (*order* == ``'F'``) :term:`連続 <contiguous>` のときか、そ"
-"のいずれか (*order* == ``'A'``) であれば ``1`` を返します。\n"
-"それ以外の場合は ``0`` を返します。\n"
-"この関数は常に成功します。"
+"Retorna ``1`` si la memoria definida por *view* es de estilo C (*order* es "
+"``'C'``) o de estilo Fortran (*order* es ``'F'``) :term:`contiguous` o uno "
+"cualquiera (*order* es ``'A'``). Retorna ``0`` de lo contrario. Esta función "
+"siempre finaliza con éxito."
 
-#: ../../c-api/buffer.rst:482
+#: ../Doc/c-api/buffer.rst:482
 msgid ""
 "Get the memory area pointed to by the *indices* inside the given *view*. "
 "*indices* must point to an array of ``view->ndim`` indices."
 msgstr ""
-"与えられた *view* 内にある *indices* が指すメモリ領域を取得します。\n"
-"*indices* は ``view->ndim`` 個のインデックスからなる配列を指していなければな"
-"りません。"
+"Obtiene el área de memoria señalada por los *indices* dentro del *view* "
+"dado. *indices* deben apuntar a un arreglo de índices ``view->ndim``."
 
-#: ../../c-api/buffer.rst:488
+#: ../Doc/c-api/buffer.rst:488
 msgid ""
 "Copy contiguous *len* bytes from *buf* to *view*. *fort* can be ``'C'`` or "
 "``'F'`` (for C-style or Fortran-style ordering). ``0`` is returned on "
 "success, ``-1`` on error."
 msgstr ""
-"連続する *len* バイトを *buf* から *view* にコピーします。*fort* には "
-"``'C'`` か ``'F'`` を指定できます（それぞれC言語スタイルとFortranスタイルの順"
-"序を表します)。成功時には ``0``、エラー時には ``-1`` を返します。"
+"Copia *len* bytes contiguos de *buf* a *view*. *fort* puede ser ``'C'`` o "
+"``'F'`` (para pedidos al estilo C o al estilo Fortran). ``0`` se retorna en "
+"caso de éxito, ``-1`` en caso de error."
 
-#: ../../c-api/buffer.rst:495
+#: ../Doc/c-api/buffer.rst:495
 msgid ""
 "Copy *len* bytes from *src* to its contiguous representation in *buf*. "
 "*order* can be ``'C'`` or ``'F'`` or ``'A'`` (for C-style or Fortran-style "
 "ordering or either one). ``0`` is returned on success, ``-1`` on error."
 msgstr ""
-"*src* から *len* バイトを連続表現で *buf* 上にコピーします。\n"
-"*order* は ``'C'`` または ``'F'`` または ``'A'`` (C スタイル順序または "
-"Fortran スタイル順序またはそれ以外) が指定できます。\n"
-"成功したら ``0`` が返り、エラーなら ``-1`` が返ります。"
+"Copia *len* bytes de *src* a su representación contigua en *buf*. *order* "
+"puede ser ``'C'`` o ``'F'`` o ``''A'`` (para pedidos al estilo C o al estilo "
+"Fortran o cualquiera) ``0`` se retorna en caso de éxito, ``-1`` en caso de "
+"error."
 
-#: ../../c-api/buffer.rst:499
+#: ../Doc/c-api/buffer.rst:499
 msgid "This function fails if *len* != *src->len*."
-msgstr "*len* != *src->len* の場合、この関数は失敗します。"
+msgstr "Esta función falla si *len* != *src->len*."
 
-#: ../../c-api/buffer.rst:504
+#: ../Doc/c-api/buffer.rst:504
 msgid ""
 "Copy data from *src* to *dest* buffer. Can convert between C-style and or "
 "Fortran-style buffers."
 msgstr ""
+"Copiar datos del búfer *src* al *dest*. Puede convertir entre búferes de "
+"estilo C o Fortran."
 
-#: ../../c-api/buffer.rst:507
+#: ../Doc/c-api/buffer.rst:507
 msgid "``0`` is returned on success, ``-1`` on error."
-msgstr ""
+msgstr "Se retorna ``0`` en caso de éxito, ``-1`` en caso de error."
 
-#: ../../c-api/buffer.rst:511
+#: ../Doc/c-api/buffer.rst:511
 msgid ""
 "Fill the *strides* array with byte-strides of a :term:`contiguous` (C-style "
 "if *order* is ``'C'`` or Fortran-style if *order* is ``'F'``) array of the "
 "given shape with the given number of bytes per element."
 msgstr ""
-"*strides* 配列を、 *itemsize* の大きさの要素がバイト単位の、 *shape* の形をし"
-"た :term:`連続な <contiguous>` (*order* が ``'C'`` なら C-style 、 ``'F'`` な"
-"ら Fortran-style の) 多次元配列として埋める。"
+"Rellena el arreglo *strides* con bytes de paso de un :term:`contiguous` "
+"(estilo C si *order* es ``'C'`` o estilo Fortran si *order* es ``'F '`` ) "
+"arreglo de la forma dada con el número dado de bytes por elemento."
 
-#: ../../c-api/buffer.rst:518
+#: ../Doc/c-api/buffer.rst:518
 msgid ""
 "Handle buffer requests for an exporter that wants to expose *buf* of size "
 "*len* with writability set according to *readonly*. *buf* is interpreted as "
 "a sequence of unsigned bytes."
 msgstr ""
-"サイズが *len* の *buf* を *readonly* に従った書き込み可/不可の設定で公開する"
-"バッファリクエストを処理します。\n"
-"*buf* は符号無しバイトの列として解釈されます。"
+"Maneje las solicitudes de búfer para un exportador que quiera exponer *buf* "
+"de tamaño *len* con capacidad de escritura establecida de acuerdo con "
+"*readonly*. *buf* se interpreta como una secuencia de bytes sin signo."
 
-#: ../../c-api/buffer.rst:522
+#: ../Doc/c-api/buffer.rst:522
 msgid ""
 "The *flags* argument indicates the request type. This function always fills "
 "in *view* as specified by flags, unless *buf* has been designated as read-"
 "only and :c:macro:`PyBUF_WRITABLE` is set in *flags*."
 msgstr ""
-"*flags* 引数はリクエストのタイプを示します。\n"
-"この関数は、 *buf* が読み出し専用と指定されていて、 *flags* に :c:macro:"
-"`PyBUF_WRITABLE` が設定されていない限り、常にフラグに指定された通りに *view* "
-"を埋めます。"
+"El argumento *flags* indica el tipo de solicitud. Esta función siempre llena "
+"*view* según lo especificado por *flags*, a menos que *buf* haya sido "
+"designado como solo lectura y :c:macro:`PyBUF_WRITABLE` esté configurado en "
+"*flags*."
 
-#: ../../c-api/buffer.rst:526
+#: ../Doc/c-api/buffer.rst:526
 msgid ""
 "On success, set ``view->obj`` to a new reference to *exporter* and return 0. "
 "Otherwise, raise :c:data:`PyExc_BufferError`, set ``view->obj`` to ``NULL`` "
 "and return ``-1``;"
 msgstr ""
+"Si tiene éxito, establece ``view->obj`` en una nueva referencia a *exporter* "
+"y retorna 0. De lo contrario, aumenta :c:data:`PyExc_BufferError`, establece "
+"``view->obj`` en ``NULL`` y retorna ``-1``;"
 
-#: ../../c-api/buffer.rst:530
+#: ../Doc/c-api/buffer.rst:530
 msgid ""
 "If this function is used as part of a :ref:`getbufferproc <buffer-structs>`, "
 "*exporter* MUST be set to the exporting object and *flags* must be passed "
 "unmodified. Otherwise, *exporter* MUST be ``NULL``."
 msgstr ""
-"この関数を :ref:`getbufferproc <buffer-structs>` の一部として使う場合には、 "
-"*exporter* はエクスポートするオブジェクトに設定しなければならず、さらに "
-"*flags* は変更せずに渡さなければなりません。\n"
-"そうでない場合は、 *exporter* は ``NULL`` でなければなりません。"
+"Si esta función se usa como parte de a :ref:`getbufferproc <buffer-"
+"structs>`, *exporter* DEBE establecerse en el objeto exportador y *flags* "
+"deben pasarse sin modificaciones. De lo contrario, *exporter* DEBE ser "
+"``NULL``."

@@ -1,101 +1,108 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
-# This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-# Translators:
-# tomo, 2021
-# 渋川よしき <yoshiki@shibu.jp>, 2021
-# Takanori Suzuki <takanori@takanory.net>, 2023
+# Copyright (C) 2001-2022, Python Software Foundation
+# This file is distributed under the same license as the Python en Español
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python en Español 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 00:53+0000\n"
-"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../howto/enum.rst:3
+#: ../Doc/howto/enum.rst:3
 msgid "Enum HOWTO"
-msgstr "列挙型 HOWTO"
+msgstr "HOWTO - Enum"
 
-#: ../../howto/enum.rst:9
+#: ../Doc/howto/enum.rst:9
 msgid ""
 "An :class:`Enum` is a set of symbolic names bound to unique values.  They "
 "are similar to global variables, but they offer a more useful :func:"
 "`repr()`, grouping, type-safety, and a few other features."
 msgstr ""
-":class:`Enum` は、ユニークな値に束縛されたシンボル名の集合です。グローバル変"
-"数に似ていますが、 :func:`repr()` がより便利だったり、グルーピングの機能、型"
-"安全などいくつかの機能があります。"
+"Un :class:`Enum` es un conjunto de nombres simbólicos vinculados a valores "
+"únicos. Son similares a las variables globales, pero ofrecen un :func:"
+"`repr()` más útil, agrupación, seguridad de tipos y algunas otras "
+"características."
 
-#: ../../howto/enum.rst:13
+#: ../Doc/howto/enum.rst:13
 msgid ""
 "They are most useful when you have a variable that can take one of a limited "
 "selection of values.  For example, the days of the week::"
 msgstr ""
-"これらは、限られた選択肢の値の一つを取る変数がある場合に便利です。例えば、曜"
-"日情報があります:"
+"Son más útiles cuando tiene una variable que puede tomar uno de una "
+"selección limitada de valores. Por ejemplo, los días de la semana:"
 
-#: ../../howto/enum.rst:26
+#: ../Doc/howto/enum.rst:26
 msgid "Or perhaps the RGB primary colors::"
-msgstr ""
+msgstr "O quizás los colores primarios RGB::"
 
-#: ../../howto/enum.rst:34
+#: ../Doc/howto/enum.rst:34
 msgid ""
 "As you can see, creating an :class:`Enum` is as simple as writing a class "
 "that inherits from :class:`Enum` itself."
 msgstr ""
+"Como puede ver, crear un :class:`Enum` es tan simple como escribir una clase "
+"que herede del propio :class:`Enum`."
 
-#: ../../howto/enum.rst:37
+#: ../Doc/howto/enum.rst:37
 msgid "Case of Enum Members"
-msgstr "Enumメンバーは大文字/小文字？"
+msgstr "Caso de miembros de Enum"
 
-#: ../../howto/enum.rst:39
+#: ../Doc/howto/enum.rst:39
 msgid ""
 "Because Enums are used to represent constants we recommend using UPPER_CASE "
 "names for members, and will be using that style in our examples."
 msgstr ""
-"Enumクラス群は定数を表現するために使われるため、メンバーの名前にはUPPER_CASE"
-"を使うことを推奨します。本ページのドキュメントのサンプルでもそのスタイルを採"
-"用します。"
+"Debido a que las enumeraciones se usan para representar constantes, "
+"recomendamos usar nombres en MAYÚSCULAS para los miembros, y usaremos ese "
+"estilo en nuestros ejemplos."
 
-#: ../../howto/enum.rst:42
+#: ../Doc/howto/enum.rst:42
 msgid ""
 "Depending on the nature of the enum a member's value may or may not be "
 "important, but either way that value can be used to get the corresponding "
 "member::"
 msgstr ""
+"Dependiendo de la naturaleza de la enumeración, el valor de un miembro puede "
+"o no ser importante, pero de cualquier manera ese valor puede usarse para "
+"obtener el miembro correspondiente:"
 
-#: ../../howto/enum.rst:49
+#: ../Doc/howto/enum.rst:49
 msgid ""
 "As you can see, the ``repr()`` of a member shows the enum name, the member "
 "name, and the value.  The ``str()`` of a member shows only the enum name and "
 "member name::"
 msgstr ""
+"Como puede ver, el ``repr()`` de un miembro muestra el nombre de "
+"enumeración, el nombre del miembro y el valor. El ``str()`` de un miembro "
+"muestra solo el nombre de enumeración y el nombre del miembro:"
 
-#: ../../howto/enum.rst:56
+#: ../Doc/howto/enum.rst:56
 msgid "The *type* of an enumeration member is the enum it belongs to::"
 msgstr ""
+"El *type* de un miembro de la enumeración es la enumeración a la que "
+"pertenece:"
 
-#: ../../howto/enum.rst:63
+#: ../Doc/howto/enum.rst:63
 msgid "Enum members have an attribute that contains just their :attr:`name`::"
 msgstr ""
+"Los miembros de enumeración tienen un atributo que contiene solo su :attr:"
+"`name`::"
 
-#: ../../howto/enum.rst:68
+#: ../Doc/howto/enum.rst:68
 msgid "Likewise, they have an attribute for their :attr:`value`::"
-msgstr ""
+msgstr "Asimismo, tienen un atributo para su :attr:`value`:"
 
-#: ../../howto/enum.rst:74
+#: ../Doc/howto/enum.rst:74
 msgid ""
 "Unlike many languages that treat enumerations solely as name/value pairs, "
 "Python Enums can have behavior added.  For example, :class:`datetime.date` "
@@ -105,98 +112,122 @@ msgid ""
 "to the :class:`Weekday` enum to extract the day from the :class:`date` "
 "instance and return the matching enum member::"
 msgstr ""
+"A diferencia de muchos lenguajes que tratan las enumeraciones únicamente "
+"como pares de nombre/valor, Python Enums puede tener un comportamiento "
+"agregado. Por ejemplo, :class:`datetime.date` tiene dos métodos para "
+"retornar el día de la semana: :meth:`weekday` y :meth:`isoweekday`. La "
+"diferencia es que uno de ellos cuenta de 0 a 6 y el otro de 1 a 7. En lugar "
+"de hacer un seguimiento de eso nosotros mismos, podemos agregar un método a "
+"la enumeración :class:`Weekday` para extraer el día de la instancia :class:"
+"`date` y retornar el miembro de enumeración coincidente:"
 
-#: ../../howto/enum.rst:86
+#: ../Doc/howto/enum.rst:86
 msgid "The complete :class:`Weekday` enum now looks like this::"
-msgstr ""
+msgstr "La enumeración :class:`Weekday` completa ahora se ve así:"
 
-#: ../../howto/enum.rst:101
+#: ../Doc/howto/enum.rst:101
 msgid "Now we can find out what today is!  Observe::"
-msgstr ""
+msgstr "¡Ahora podemos averiguar qué día de la semana es hoy! Observe::"
 
-#: ../../howto/enum.rst:107
+#: ../Doc/howto/enum.rst:107
 msgid ""
 "Of course, if you're reading this on some other day, you'll see that day "
 "instead."
 msgstr ""
+"Por supuesto, si estás leyendo esto en otro día, verás ese día en su lugar."
 
-#: ../../howto/enum.rst:109
+#: ../Doc/howto/enum.rst:109
 msgid ""
 "This :class:`Weekday` enum is great if our variable only needs one day, but "
 "what if we need several?  Maybe we're writing a function to plot chores "
 "during a week, and don't want to use a :class:`list` -- we could use a "
 "different type of :class:`Enum`::"
 msgstr ""
+"Esta enumeración :class:`Weekday` es excelente si nuestra variable solo "
+"necesita un día, pero ¿y si necesitamos varios? Tal vez estamos escribiendo "
+"una función para trazar tareas durante una semana y no queremos usar un :"
+"class:`list`; podríamos usar un tipo diferente de :class:`Enum`:"
 
-#: ../../howto/enum.rst:124
+#: ../Doc/howto/enum.rst:124
 msgid ""
 "We've changed two things: we're inherited from :class:`Flag`, and the values "
 "are all powers of 2."
 msgstr ""
+"Hemos cambiado dos cosas: somos heredados de :class:`Flag` y los valores son "
+"todos potencia de 2."
 
-#: ../../howto/enum.rst:127
+#: ../Doc/howto/enum.rst:127
 msgid ""
 "Just like the original :class:`Weekday` enum above, we can have a single "
 "selection::"
 msgstr ""
+"Al igual que la enumeración :class:`Weekday` original anterior, podemos "
+"tener una sola selección:"
 
-#: ../../howto/enum.rst:133
+#: ../Doc/howto/enum.rst:133
 msgid ""
 "But :class:`Flag` also allows us to combine several members into a single "
 "variable::"
 msgstr ""
+"Pero :class:`Flag` también nos permite combinar varios miembros en una sola "
+"variable:"
 
-#: ../../howto/enum.rst:140
+#: ../Doc/howto/enum.rst:140
 msgid "You can even iterate over a :class:`Flag` variable::"
-msgstr ""
+msgstr "Incluso puede iterar sobre una variable :class:`Flag`:"
 
-#: ../../howto/enum.rst:147
+#: ../Doc/howto/enum.rst:147
 msgid "Okay, let's get some chores set up::"
-msgstr ""
+msgstr "Bien, preparemos algunas tareas::"
 
-#: ../../howto/enum.rst:155
+#: ../Doc/howto/enum.rst:155
 msgid "And a function to display the chores for a given day::"
-msgstr ""
+msgstr "Y una función para mostrar las tareas de un día determinado:"
 
-#: ../../howto/enum.rst:164
+#: ../Doc/howto/enum.rst:164
 msgid ""
 "In cases where the actual values of the members do not matter, you can save "
 "yourself some work and use :func:`auto()` for the values::"
 msgstr ""
+"En los casos en que los valores reales de los miembros no importen, puede "
+"ahorrarse algo de trabajo y usar :func:`auto()` para los valores:"
 
-#: ../../howto/enum.rst:183
+#: ../Doc/howto/enum.rst:182
 msgid "Programmatic access to enumeration members and their attributes"
-msgstr "列挙型メンバーおよびそれらの属性へのプログラム的アクセス"
+msgstr "Acceso programático a los miembros de la enumeración y sus atributos"
 
-#: ../../howto/enum.rst:185
+#: ../Doc/howto/enum.rst:184
 msgid ""
 "Sometimes it's useful to access members in enumerations programmatically (i."
 "e. situations where ``Color.RED`` won't do because the exact color is not "
 "known at program-writing time).  ``Enum`` allows such access::"
 msgstr ""
-"プログラム的にメンバーに番号でアクセスしたほうが便利な場合があります (すなわ"
-"ち、プログラムを書いている時点で正確な色がまだわからなく、``Color.RED`` と書"
-"くのが無理な場合など)。 ``Enum`` ではそのようなアクセスも可能です::"
+"A veces es útil acceder a los miembros en las enumeraciones "
+"programáticamente (es decir, situaciones en las que ``Color.RED`` no "
+"funcionará porque no se conoce el color exacto en el momento de escribir el "
+"programa). ``Enum`` permite dicho acceso::"
 
-#: ../../howto/enum.rst:194
+#: ../Doc/howto/enum.rst:193
 msgid "If you want to access enum members by *name*, use item access::"
 msgstr ""
-"列挙型メンバーに *名前* でアクセスしたい場合はアイテムとしてアクセスできま"
-"す::"
+"Si desea acceder a los miembros de la enumeración por *name*, use el acceso "
+"a elementos::"
 
-#: ../../howto/enum.rst:201
+#: ../Doc/howto/enum.rst:200
 msgid "If you have an enum member and need its :attr:`name` or :attr:`value`::"
-msgstr "列挙型メンバーの :attr:`name` か :attr:`value` が必要な場合::"
+msgstr ""
+"Si tiene un miembro de enumeración y necesita su :attr:`name` o :attr:"
+"`value`:"
 
-#: ../../howto/enum.rst:211
+#: ../Doc/howto/enum.rst:210
 msgid "Duplicating enum members and values"
-msgstr "列挙型メンバーと値の重複"
+msgstr "Duplicar miembros y valores de enumeración"
 
-#: ../../howto/enum.rst:213
+#: ../Doc/howto/enum.rst:212
 msgid "Having two enum members with the same name is invalid::"
-msgstr "同じ名前の列挙型メンバーを複数持つことはできません::"
+msgstr "Tener dos miembros de enumeración con el mismo nombre no es válido::"
 
-#: ../../howto/enum.rst:223
+#: ../Doc/howto/enum.rst:222
 msgid ""
 "However, an enum member can have other names associated with it.  Given two "
 "entries ``A`` and ``B`` with the same value (and ``A`` defined first), ``B`` "
@@ -204,121 +235,122 @@ msgid ""
 "will return the member ``A``.  By-name lookup of ``A`` will return the "
 "member ``A``. By-name lookup of ``B`` will also return the member ``A``::"
 msgstr ""
+"Sin embargo, un miembro de enumeración puede tener otros nombres asociados. "
+"Dadas dos entradas ``A`` y ``B`` con el mismo valor (y ``A`` definido "
+"primero), ``B`` es un alias para el miembro ``A``. La búsqueda por valor del "
+"valor de ``A`` retornará el miembro ``A``. La búsqueda por nombre de ``A`` "
+"retornará el miembro ``A``. La búsqueda por nombre de ``B`` también "
+"retornará el miembro ``A``::"
 
-#: ../../howto/enum.rst:244
+#: ../Doc/howto/enum.rst:243
 msgid ""
 "Attempting to create a member with the same name as an already defined "
 "attribute (another member, a method, etc.) or attempting to create an "
 "attribute with the same name as a member is not allowed."
 msgstr ""
-"すでに定義されている属性と同じ名前のメンバー (一方がメンバーでもう一方がメ"
-"ソッド、など) の作成、あるいはメンバーと同じ名前の属性の作成はできません。"
+"No está permitido intentar crear un miembro con el mismo nombre que un "
+"atributo ya definido (otro miembro, un método, etc.) o intentar crear un "
+"atributo con el mismo nombre que un miembro."
 
-#: ../../howto/enum.rst:250
+#: ../Doc/howto/enum.rst:249
 msgid "Ensuring unique enumeration values"
-msgstr "番号付けの値が同一であることの確認"
+msgstr "Garantizar valores de enumeración únicos"
 
-#: ../../howto/enum.rst:252
+#: ../Doc/howto/enum.rst:251
 msgid ""
 "By default, enumerations allow multiple names as aliases for the same value. "
 "When this behavior isn't desired, you can use the :func:`unique` decorator::"
 msgstr ""
+"De forma predeterminada, las enumeraciones permiten múltiples nombres como "
+"alias para el mismo valor. Cuando no se desea este comportamiento, puede "
+"usar el decorador :func:`unique`:"
 
-#: ../../howto/enum.rst:269
+#: ../Doc/howto/enum.rst:268
 msgid "Using automatic values"
-msgstr "値の自動設定を使う"
+msgstr "Uso de valores automáticos"
 
-#: ../../howto/enum.rst:271
+#: ../Doc/howto/enum.rst:270
 msgid "If the exact value is unimportant you can use :class:`auto`::"
-msgstr "正確な値が重要でない場合、 :class:`auto` が使えます::"
+msgstr "Si el valor exacto no es importante, puede usar :class:`auto`::"
 
-#: ../../howto/enum.rst:282
+#: ../Doc/howto/enum.rst:281
 msgid ""
 "The values are chosen by :func:`_generate_next_value_`, which can be "
 "overridden::"
 msgstr ""
-"その値は :func:`_generate_next_value_` によって選ばれ、この関数はオーバーライ"
-"ドできます::"
+"Los valores son elegidos por :func:`_generate_next_value_`, que se pueden "
+"anular:"
 
-#: ../../howto/enum.rst:300
+#: ../Doc/howto/enum.rst:299
 msgid ""
 "The :meth:`_generate_next_value_` method must be defined before any members."
 msgstr ""
-":meth:`_generate_next_value_` メソッドは他のメンバーよりも前に定義される必要"
-"があります。"
+"El método :meth:`_generate_next_value_` debe definirse antes que cualquier "
+"miembro."
 
-#: ../../howto/enum.rst:303
+#: ../Doc/howto/enum.rst:302
 msgid "Iteration"
-msgstr "イテレーション"
+msgstr "Iteración"
 
-#: ../../howto/enum.rst:305
+#: ../Doc/howto/enum.rst:304
 msgid "Iterating over the members of an enum does not provide the aliases::"
-msgstr "列挙型のメンバーのイテレートは別名をサポートしていません::"
+msgstr "Iterar sobre los miembros de una enumeración no proporciona los alias:"
 
-#: ../../howto/enum.rst:312
-msgid ""
-"Note that the aliases ``Shape.ALIAS_FOR_SQUARE`` and ``Weekday.WEEKEND`` "
-"aren't shown."
-msgstr ""
-
-#: ../../howto/enum.rst:314
+#: ../Doc/howto/enum.rst:309
 msgid ""
 "The special attribute ``__members__`` is a read-only ordered mapping of "
 "names to members.  It includes all names defined in the enumeration, "
 "including the aliases::"
 msgstr ""
-"特殊属性 ``__members__`` は読み出し専用で、順序を保持した、対応する名前と列挙"
-"型メンバーのマッピングです。これには別名も含め、列挙されたすべての名前が入っ"
-"ています。"
+"El atributo especial ``__members__`` es una asignación ordenada de solo "
+"lectura de nombres a miembros. Incluye todos los nombres definidos en la "
+"enumeración, incluidos los alias::"
 
-#: ../../howto/enum.rst:326
+#: ../Doc/howto/enum.rst:321
 msgid ""
 "The ``__members__`` attribute can be used for detailed programmatic access "
 "to the enumeration members.  For example, finding all the aliases::"
 msgstr ""
-"属性 ``__members__`` は列挙型メンバーへの詳細なアクセスに使用できます。以下は"
-"すべての別名を探す例です::"
+"El atributo ``__members__`` se puede utilizar para el acceso programático "
+"detallado a los miembros de la enumeración. Por ejemplo, encontrar todos los "
+"alias::"
 
-#: ../../howto/enum.rst:334
-msgid ""
-"Aliases for flags include values with multiple flags set, such as ``3``, and "
-"no flags set, i.e. ``0``."
-msgstr ""
-
-#: ../../howto/enum.rst:339
+#: ../Doc/howto/enum.rst:329
 msgid "Comparisons"
-msgstr "比較"
+msgstr "comparaciones"
 
-#: ../../howto/enum.rst:341
+#: ../Doc/howto/enum.rst:331
 msgid "Enumeration members are compared by identity::"
-msgstr "列挙型メンバーは同一性を比較できます::"
+msgstr "Los miembros de la enumeración se comparan por identidad::"
 
-#: ../../howto/enum.rst:350
+#: ../Doc/howto/enum.rst:340
 msgid ""
 "Ordered comparisons between enumeration values are *not* supported.  Enum "
 "members are not integers (but see `IntEnum`_ below)::"
 msgstr ""
-"列挙型の値の順序の比較はサポートされて *いません*。Enum メンバーは整数ではあ"
-"りません (`IntEnum`_ を参照してください)::"
+"Las comparaciones ordenadas entre valores de enumeración son compatibles con "
+"*not*. Los miembros de la enumeración no son números enteros (pero consulte "
+"`IntEnum`_ a continuación):"
 
-#: ../../howto/enum.rst:358
+#: ../Doc/howto/enum.rst:348
 msgid "Equality comparisons are defined though::"
-msgstr "ただし等価の比較は定義されています::"
+msgstr "Las comparaciones de igualdad se definen aunque:"
 
-#: ../../howto/enum.rst:367
+#: ../Doc/howto/enum.rst:357
 msgid ""
 "Comparisons against non-enumeration values will always compare not equal "
 "(again, :class:`IntEnum` was explicitly designed to behave differently, see "
 "below)::"
 msgstr ""
-"非列挙型の値との比較は常に不等となります (繰り返しになりますが、:class:"
-"`IntEnum` はこれと異なる挙動になるよう設計されています)::"
+"Las comparaciones con valores que no son de enumeración siempre comparan no "
+"iguales (nuevamente, :class:`IntEnum` se diseñó explícitamente para "
+"comportarse de manera diferente, consulte a continuación):"
 
-#: ../../howto/enum.rst:376
+#: ../Doc/howto/enum.rst:366
 msgid "Allowed members and attributes of enumerations"
-msgstr "列挙型で許されるメンバーと属性"
+msgstr "Miembros permitidos y atributos de enumeraciones"
 
-#: ../../howto/enum.rst:378
+#: ../Doc/howto/enum.rst:368
 msgid ""
 "Most of the examples above use integers for enumeration values.  Using "
 "integers is short and handy (and provided by default by the `Functional "
@@ -326,20 +358,26 @@ msgid ""
 "doesn't care what the actual value of an enumeration is.  But if the value "
 "*is* important, enumerations can have arbitrary values."
 msgstr ""
+"La mayoría de los ejemplos anteriores usan números enteros para los valores "
+"de enumeración. El uso de números enteros es corto y práctico (y "
+"proporcionado por defecto por el `Functional API`_), pero no se aplica "
+"estrictamente. En la gran mayoría de los casos de uso, a uno no le importa "
+"cuál es el valor real de una enumeración. Pero si el valor *is* es "
+"importante, las enumeraciones pueden tener valores arbitrarios."
 
-#: ../../howto/enum.rst:384
+#: ../Doc/howto/enum.rst:374
 msgid ""
 "Enumerations are Python classes, and can have methods and special methods as "
 "usual.  If we have this enumeration::"
 msgstr ""
-"列挙型は Python のクラスであり、通常どおりメソッドや特殊メソッドを持つことが"
-"できます::"
+"Las enumeraciones son clases de Python y pueden tener métodos y métodos "
+"especiales como de costumbre. Si tenemos esta enumeración:"
 
-#: ../../howto/enum.rst:404
+#: ../Doc/howto/enum.rst:394
 msgid "Then::"
-msgstr "上記の結果が以下のようになります::"
+msgstr "Después::"
 
-#: ../../howto/enum.rst:413
+#: ../Doc/howto/enum.rst:403
 msgid ""
 "The rules for what is allowed are as follows: names that start and end with "
 "a single underscore are reserved by enum and cannot be used; all other "
@@ -348,113 +386,119 @@ msgid ""
 "`__add__`, etc.), descriptors (methods are also descriptors), and variable "
 "names listed in :attr:`_ignore_`."
 msgstr ""
-"何が許されているかのルールは次のとおりです。先頭と末尾が 1 個のアンダースコア"
-"の名前は列挙型により予約されているため、使用できません。列挙型内で定義された"
-"その他すべての名前は、その列挙型のメンバーとして使用できます。特殊メソッド (:"
-"meth:`__str__`, :meth:`__add__` など) と、メソッドを含むデスクリプタ(記述"
-"子)、 :attr:`_ignore_` に記載されている変数名は例外です。"
+"Las reglas para lo que está permitido son las siguientes: los nombres que "
+"comienzan y terminan con un solo guión bajo están reservados por enumeración "
+"y no se pueden usar; todos los demás atributos definidos dentro de una "
+"enumeración se convertirán en miembros de esta enumeración, con la excepción "
+"de métodos especiales (:meth:`__str__`, :meth:`__add__`, etc.), descriptores "
+"(los métodos también son descriptores) y nombres de variables enumerados en :"
+"attr:`_ignore_`."
 
-#: ../../howto/enum.rst:420
+#: ../Doc/howto/enum.rst:410
 msgid ""
 "Note:  if your enumeration defines :meth:`__new__` and/or :meth:`__init__` "
 "then any value(s) given to the enum member will be passed into those "
 "methods. See `Planet`_ for an example."
 msgstr ""
-"注意: 列挙型で :meth:`__new__` および/または :meth:`__init__` を定義した場"
-"合、列挙型メンバーに与えられた値はすべてこれらのメソッドに渡されます。例 "
-"`Planet`_ を参照してください。"
+"Nota: si su enumeración define :meth:`__new__` y/o :meth:`__init__`, "
+"cualquier valor dado al miembro de la enumeración se pasará a esos métodos. "
+"Consulte `Planet`_ para ver un ejemplo."
 
-#: ../../howto/enum.rst:426
+#: ../Doc/howto/enum.rst:416
 msgid "Restricted Enum subclassing"
-msgstr "Enumのサブクラス化の制限"
+msgstr "Subclases de Enum restringidas"
 
-#: ../../howto/enum.rst:428
+#: ../Doc/howto/enum.rst:418
 msgid ""
 "A new :class:`Enum` class must have one base enum class, up to one concrete "
 "data type, and as many :class:`object`-based mixin classes as needed.  The "
 "order of these base classes is::"
 msgstr ""
-"新しい :class:`Enum` クラスは、ベースの enum クラスを1つ、具象データ型を1つ、"
-"複数の :class:`object` ベースのミックスインクラスが許容されます。これらのベー"
-"スクラスの順序は次の通りです::"
+"Una nueva clase :class:`Enum` debe tener una clase de enumeración base, "
+"hasta un tipo de datos concreto y tantas clases mixtas basadas en :class:"
+"`object` como sea necesario. El orden de estas clases base es:"
 
-#: ../../howto/enum.rst:435
+#: ../Doc/howto/enum.rst:425
 msgid ""
 "Also, subclassing an enumeration is allowed only if the enumeration does not "
 "define any members.  So this is forbidden::"
 msgstr ""
-"列挙型のサブクラスの作成はその列挙型にメンバーが一つも定義されていない場合の"
-"み行なえます。従って以下は許されません::"
+"Además, la subclasificación de una enumeración solo se permite si la "
+"enumeración no define ningún miembro. Así que esto está prohibido::"
 
-#: ../../howto/enum.rst:445
+#: ../Doc/howto/enum.rst:435
 msgid "But this is allowed::"
-msgstr "以下のような場合は許されます::"
+msgstr "Pero esto está permitido:"
 
-#: ../../howto/enum.rst:456
+#: ../Doc/howto/enum.rst:446
 msgid ""
 "Allowing subclassing of enums that define members would lead to a violation "
 "of some important invariants of types and instances.  On the other hand, it "
 "makes sense to allow sharing some common behavior between a group of "
 "enumerations. (See `OrderedEnum`_ for an example.)"
 msgstr ""
-"メンバーが定義された列挙型のサブクラス化を許可すると、いくつかのデータ型およ"
-"びインスタンスの重要な不変条件の違反を引き起こします。とはいえ、それが許可さ"
-"れると、列挙型のグループ間での共通の挙動を共有するという利点もあります。 "
-"(`OrderedEnum`_ の例を参照してください。)"
+"Permitir la subclasificación de enumeraciones que definen miembros "
+"conduciría a una violación de algunas invariantes importantes de tipos e "
+"instancias. Por otro lado, tiene sentido permitir compartir algún "
+"comportamiento común entre un grupo de enumeraciones. (Consulte "
+"`OrderedEnum`_ para ver un ejemplo)."
 
-#: ../../howto/enum.rst:463
+#: ../Doc/howto/enum.rst:453
 msgid "Pickling"
-msgstr "Pickle 化"
+msgstr "Serialización (Pickling)"
 
-#: ../../howto/enum.rst:465
+#: ../Doc/howto/enum.rst:455
 msgid "Enumerations can be pickled and unpickled::"
-msgstr "列挙型は pickle 化と unpickle 化が行えます::"
+msgstr "Las enumeraciones se pueden serializar y deserializar:"
 
-#: ../../howto/enum.rst:472
+#: ../Doc/howto/enum.rst:462
 msgid ""
 "The usual restrictions for pickling apply: picklable enums must be defined "
 "in the top level of a module, since unpickling requires them to be "
 "importable from that module."
 msgstr ""
-"通常の pickle 化の制限事項が適用されます: pickle 可能な列挙型はモジュールの"
-"トップレベルで定義されていなくてはならず、unpickle 化はモジュールからインポー"
-"ト可能でなければなりません。"
+"Se aplican las restricciones habituales para el *pickling*: las "
+"enumeraciones serializables deben definirse en el nivel superior de un "
+"módulo, ya que el decapado requiere que se puedan importar desde ese módulo."
 
-#: ../../howto/enum.rst:478
+#: ../Doc/howto/enum.rst:468
 msgid ""
 "With pickle protocol version 4 it is possible to easily pickle enums nested "
 "in other classes."
 msgstr ""
-"pickle プロトコルバージョン 4 では他のクラスで入れ子になった列挙型の pickle "
-"化も容易です。"
+"Con la versión 4 del protocolo pickle es posible deserializar fácilmente "
+"enumeraciones anidadas en otras clases."
 
-#: ../../howto/enum.rst:481
+#: ../Doc/howto/enum.rst:471
 msgid ""
 "It is possible to modify how enum members are pickled/unpickled by defining :"
 "meth:`__reduce_ex__` in the enumeration class."
 msgstr ""
-"enum のメンバーをどう pickle 化/unpickle 化するかは、列挙型クラス内の :meth:"
-"`__reduce_ex__` で定義することで変更できます。"
+"Es posible modificar la forma en que los miembros de la enumeración se "
+"serialicen / deserialicen definiendo :meth:`__reduce_ex__` en la clase de "
+"enumeración."
 
-#: ../../howto/enum.rst:486
+#: ../Doc/howto/enum.rst:476
 msgid "Functional API"
-msgstr "機能 API"
+msgstr "API funcional"
 
-#: ../../howto/enum.rst:488
+#: ../Doc/howto/enum.rst:478
 msgid ""
 "The :class:`Enum` class is callable, providing the following functional API::"
 msgstr ""
-":class:`Enum` クラスは呼び出し可能で、以下の機能 API を提供しています::"
+"Se puede llamar a la clase :class:`Enum`, que proporciona la siguiente API "
+"funcional:"
 
-#: ../../howto/enum.rst:498
+#: ../Doc/howto/enum.rst:488
 msgid ""
 "The semantics of this API resemble :class:`~collections.namedtuple`. The "
 "first argument of the call to :class:`Enum` is the name of the enumeration."
 msgstr ""
-"この API の動作は :class:`~collections.namedtuple` と似ています。:class:"
-"`Enum` 呼び出しの第 1 引数は列挙型の名前です。"
+"La semántica de esta API se asemeja a :class:`~collections.namedtuple`. El "
+"primer argumento de la llamada a :class:`Enum` es el nombre de la "
+"enumeración."
 
-#: ../../howto/enum.rst:501
+#: ../Doc/howto/enum.rst:491
 msgid ""
 "The second argument is the *source* of enumeration member names.  It can be "
 "a whitespace-separated string of names, a sequence of names, a sequence of 2-"
@@ -465,22 +509,27 @@ msgid ""
 "class derived from :class:`Enum` is returned.  In other words, the above "
 "assignment to :class:`Animal` is equivalent to::"
 msgstr ""
-"第 2 引数は列挙型メンバー名の *ソース* です。空白で区切った名前の文字列、名前"
-"のシーケンス、キー/値のペアの 2 要素タプルのシーケンス、あるいは名前と値の"
-"マッピング (例: 辞書) を指定できます。最後の 2 個のオプションでは、列挙型へ任"
-"意の値を割り当てることができます。前の 2 つのオプションでは、1 から始まり増加"
-"していく整数を自動的に割り当てます (別の開始値を指定するには、``start`` 引数"
-"を使用します)。:class:`Enum` から派生した新しいクラスが返されます。言い換えれ"
-"ば、上記の :class:`Animal` への割り当ては以下と等価です::"
+"El segundo argumento es el *source* de nombres de miembros de enumeración. "
+"Puede ser una cadena de nombres separados por espacios en blanco, una "
+"secuencia de nombres, una secuencia de 2 tuplas con pares clave/valor o una "
+"asignación (por ejemplo, un diccionario) de nombres a valores. Las dos "
+"últimas opciones permiten asignar valores arbitrarios a las enumeraciones; "
+"los otros asignan automáticamente números enteros crecientes que comienzan "
+"con 1 (use el parámetro ``start`` para especificar un valor inicial "
+"diferente). Se retorna una nueva clase derivada de :class:`Enum`. En otras "
+"palabras, la asignación anterior a :class:`Animal` es equivalente a:"
 
-#: ../../howto/enum.rst:517
+#: ../Doc/howto/enum.rst:507
 msgid ""
 "The reason for defaulting to ``1`` as the starting number and not ``0`` is "
 "that ``0`` is ``False`` in a boolean sense, but by default enum members all "
 "evaluate to ``True``."
 msgstr ""
+"La razón por la que se toma por defecto ``1`` como el número inicial y no "
+"``0`` es que ``0`` es ``False`` en un sentido booleano, pero por defecto "
+"todos los miembros de la enumeración se evalúan como ``True``."
 
-#: ../../howto/enum.rst:521
+#: ../Doc/howto/enum.rst:511
 msgid ""
 "Pickling enums created with the functional API can be tricky as frame stack "
 "implementation details are used to try and figure out which module the "
@@ -488,149 +537,165 @@ msgid ""
 "function in a separate module, and also may not work on IronPython or "
 "Jython). The solution is to specify the module name explicitly as follows::"
 msgstr ""
+"Deserializar las enumeraciones creadas con la API funcional puede ser "
+"complicado, ya que los detalles de implementación de la pila de marcos se "
+"usan para tratar de averiguar en qué módulo se está creando la enumeración "
+"(por ejemplo, fallará si usa una función de utilidad en un módulo separado, "
+"y también puede no trabajar en IronPython o Jython). La solución es "
+"especificar el nombre del módulo explícitamente de la siguiente manera:"
 
-#: ../../howto/enum.rst:531
+#: ../Doc/howto/enum.rst:521
 msgid ""
 "If ``module`` is not supplied, and Enum cannot determine what it is, the new "
 "Enum members will not be unpicklable; to keep errors closer to the source, "
 "pickling will be disabled."
 msgstr ""
-"``module`` が与えられない場合、Enum はそれがなにか決定できないため、新しい "
-"Enum メンバーは unpickle 化できなくなります; エラーをソースの近いところで発生"
-"させるため、pickle 化は無効になります。"
+"Si no se proporciona ``module`` y Enum no puede determinar de qué se trata, "
+"los nuevos miembros de Enum no serán seleccionables; para mantener los "
+"errores más cerca de la fuente, se desactivará el decapado."
 
-#: ../../howto/enum.rst:535
+#: ../Doc/howto/enum.rst:525
 msgid ""
 "The new pickle protocol 4 also, in some circumstances, relies on :attr:"
 "`~definition.__qualname__` being set to the location where pickle will be "
 "able to find the class.  For example, if the class was made available in "
 "class SomeData in the global scope::"
 msgstr ""
-"新しい pickle プロトコルバージョン 4 では、一部の状況において、pickle がクラ"
-"スを発見するための場所の設定に :attr:`~definition.__qualname__` を参照しま"
-"す。例えば、そのクラスがグローバルスコープ内のクラス SomeData 内で利用可能と"
-"するには以下のように指定します::"
+"El nuevo protocolo pickle 4 también, en algunas circunstancias, depende de "
+"que :attr:`~definition.__qualname__` se establezca en la ubicación donde "
+"pickle podrá encontrar la clase. Por ejemplo, si la clase estuvo disponible "
+"en la clase SomeData en el ámbito global:"
 
-#: ../../howto/enum.rst:542
+#: ../Doc/howto/enum.rst:532
 msgid "The complete signature is::"
-msgstr "完全な構文は以下のようになります::"
+msgstr "La firma completa es::"
 
-#: ../../howto/enum.rst:0
+#: ../Doc/howto/enum.rst
 msgid "value"
 msgstr "value"
 
-#: ../../howto/enum.rst:554
+#: ../Doc/howto/enum.rst:544
 msgid "What the new enum class will record as its name."
-msgstr "新しい enum クラスに記録されるそれ自身の名前です。"
+msgstr "Lo que la nueva clase de enumeración registrará como su nombre."
 
-#: ../../howto/enum.rst:0
+#: ../Doc/howto/enum.rst
 msgid "names"
-msgstr "名前"
+msgstr "names"
 
-#: ../../howto/enum.rst:556
+#: ../Doc/howto/enum.rst:546
 msgid ""
 "The enum members.  This can be a whitespace- or comma-separated string "
 "(values will start at 1 unless otherwise specified)::"
 msgstr ""
-"enum のメンバーです。空白またはカンマで区切った文字列でも構いません (特に指定"
-"がない限り、値は 1 から始まります)::"
+"Los miembros de la enumeración. Puede ser una cadena separada por comas o "
+"espacios en blanco (los valores comenzarán en 1 a menos que se especifique "
+"lo contrario):"
 
-#: ../../howto/enum.rst:561
+#: ../Doc/howto/enum.rst:551
 msgid "or an iterator of names::"
-msgstr "または名前のイテレータで指定もできます::"
+msgstr "o un iterador de nombres::"
 
-#: ../../howto/enum.rst:565
+#: ../Doc/howto/enum.rst:555
 msgid "or an iterator of (name, value) pairs::"
-msgstr "または (名前, 値) のペアのイテレータでも指定できます::"
+msgstr "o un iterador de (nombre, valor) pares::"
 
-#: ../../howto/enum.rst:569
+#: ../Doc/howto/enum.rst:559
 msgid "or a mapping::"
-msgstr "またはマッピングでも指定できます::"
+msgstr "o un mapeo::"
 
-#: ../../howto/enum.rst:0
+#: ../Doc/howto/enum.rst
 msgid "module"
 msgstr "module"
 
-#: ../../howto/enum.rst:573
+#: ../Doc/howto/enum.rst:563
 msgid "name of module where new enum class can be found."
-msgstr "新しい enum クラスが属するモジュールの名前です。"
+msgstr ""
+"nombre del módulo donde se puede encontrar la nueva clase de enumeración."
 
-#: ../../howto/enum.rst:0
+#: ../Doc/howto/enum.rst
 msgid "qualname"
 msgstr "qualname"
 
-#: ../../howto/enum.rst:575
+#: ../Doc/howto/enum.rst:565
 msgid "where in module new enum class can be found."
-msgstr "新しい enum クラスが属するモジュールの場所です。"
+msgstr "donde en el módulo se puede encontrar la nueva clase de enumeración."
 
-#: ../../howto/enum.rst:0
+#: ../Doc/howto/enum.rst
 msgid "type"
 msgstr "type"
 
-#: ../../howto/enum.rst:577
+#: ../Doc/howto/enum.rst:567
 msgid "type to mix in to new enum class."
-msgstr "新しい enum クラスに複合されるデータ型です。"
+msgstr "tipo para mezclar en la nueva clase de enumeración."
 
-#: ../../howto/enum.rst:0
+#: ../Doc/howto/enum.rst
 msgid "start"
 msgstr "start"
 
-#: ../../howto/enum.rst:579
+#: ../Doc/howto/enum.rst:569
 msgid "number to start counting at if only names are passed in."
-msgstr "names のみが渡されたときにカウントを開始する数です。"
+msgstr "número para comenzar a contar si solo se pasan nombres."
 
-#: ../../howto/enum.rst:581
+#: ../Doc/howto/enum.rst:571
 msgid "The *start* parameter was added."
-msgstr "*start* 引数が追加されました。"
+msgstr "Se agregó el parámetro *start*."
 
-#: ../../howto/enum.rst:586
+#: ../Doc/howto/enum.rst:576
 msgid "Derived Enumerations"
-msgstr "派生列挙型"
+msgstr "Enumeraciones derivadas"
 
-#: ../../howto/enum.rst:589
+#: ../Doc/howto/enum.rst:579
 msgid "IntEnum"
 msgstr "IntEnum"
 
-#: ../../howto/enum.rst:591
+#: ../Doc/howto/enum.rst:581
 msgid ""
 "The first variation of :class:`Enum` that is provided is also a subclass of :"
 "class:`int`.  Members of an :class:`IntEnum` can be compared to integers; by "
 "extension, integer enumerations of different types can also be compared to "
 "each other::"
 msgstr ""
-"提供されている 1 つ目の :class:`Enum` の派生型であり、 :class:`int` のサブク"
-"ラスでもあります。\n"
-":class:`IntEnum` のメンバーは整数と比較できます;\n"
-"さらに言うと、異なる整数列挙型どうしでも比較できます::"
+"La primera variación de :class:`Enum` que se proporciona también es una "
+"subclase de :class:`int`. Los miembros de un :class:`IntEnum` se pueden "
+"comparar con números enteros; por extensión, las enumeraciones enteras de "
+"diferentes tipos también se pueden comparar entre sí:"
 
-#: ../../howto/enum.rst:612
+#: ../Doc/howto/enum.rst:602
 msgid ""
 "However, they still can't be compared to standard :class:`Enum` "
 "enumerations::"
-msgstr "ただし、これらも標準の :class:`Enum` 列挙型とは比較できません::"
+msgstr ""
+"Sin embargo, aún no se pueden comparar con las enumeraciones :class:`Enum` "
+"estándar:"
 
-#: ../../howto/enum.rst:625
+#: ../Doc/howto/enum.rst:615
 msgid ""
 ":class:`IntEnum` values behave like integers in other ways you'd expect::"
-msgstr ":class:`IntEnum` の値は他の用途では整数のように振る舞います::"
+msgstr ""
+"Los valores :class:`IntEnum` se comportan como números enteros en otras "
+"formas que esperaría:"
 
-#: ../../howto/enum.rst:636
+#: ../Doc/howto/enum.rst:626
 msgid "StrEnum"
 msgstr "StrEnum"
 
-#: ../../howto/enum.rst:638
+#: ../Doc/howto/enum.rst:628
 msgid ""
 "The second variation of :class:`Enum` that is provided is also a subclass "
 "of :class:`str`.  Members of a :class:`StrEnum` can be compared to strings; "
 "by extension, string enumerations of different types can also be compared to "
 "each other."
 msgstr ""
+"La segunda variación de :class:`Enum` que se proporciona también es una "
+"subclase de :class:`str`. Los miembros de un :class:`StrEnum` se pueden "
+"comparar con cadenas; por extensión, las enumeraciones de cadenas de "
+"diferentes tipos también se pueden comparar entre sí."
 
-#: ../../howto/enum.rst:647
+#: ../Doc/howto/enum.rst:637
 msgid "IntFlag"
 msgstr "IntFlag"
 
-#: ../../howto/enum.rst:649
+#: ../Doc/howto/enum.rst:639
 msgid ""
 "The next variation of :class:`Enum` provided, :class:`IntFlag`, is also "
 "based on :class:`int`.  The difference being :class:`IntFlag` members can be "
@@ -639,66 +704,83 @@ msgid ""
 "`IntFlag` members are also integers and can be used wherever an :class:`int` "
 "is used."
 msgstr ""
+"La siguiente variación de :class:`Enum` proporcionada, :class:`IntFlag`, "
+"también se basa en :class:`int`. La diferencia es que los miembros :class:"
+"`IntFlag` se pueden combinar usando los operadores bit a bit (&, \\|, ^, ~) "
+"y el resultado sigue siendo un miembro :class:`IntFlag`, si es posible. Al "
+"igual que :class:`IntEnum`, los miembros :class:`IntFlag` también son "
+"números enteros y se pueden utilizar siempre que se utilice un :class:`int`."
 
-#: ../../howto/enum.rst:657
+#: ../Doc/howto/enum.rst:647
 msgid ""
 "Any operation on an :class:`IntFlag` member besides the bit-wise operations "
 "will lose the :class:`IntFlag` membership."
 msgstr ""
-":class:`IntFlag` メンバーに対してビット演算以外のどんな演算をしても、その結果"
-"は :class:`IntFlag` メンバーではなくなります。"
+"Cualquier operación en un miembro :class:`IntFlag` además de las operaciones "
+"bit a bit perderá la pertenencia a :class:`IntFlag`."
 
-#: ../../howto/enum.rst:660
+#: ../Doc/howto/enum.rst:650
 msgid ""
 "Bit-wise operations that result in invalid :class:`IntFlag` values will lose "
 "the :class:`IntFlag` membership.  See :class:`FlagBoundary` for details."
 msgstr ""
+"Las operaciones bit a bit que den como resultado valores :class:`IntFlag` no "
+"válidos perderán la pertenencia a :class:`IntFlag`. Ver :class:"
+"`FlagBoundary` para más detalles."
 
-#: ../../howto/enum.rst:667
+#: ../Doc/howto/enum.rst:657
 msgid "Sample :class:`IntFlag` class::"
-msgstr ":class:`IntFlag` クラスの例::"
+msgstr "Ejemplo de clase :class:`IntFlag`::"
 
-#: ../../howto/enum.rst:683
+#: ../Doc/howto/enum.rst:673
 msgid "It is also possible to name the combinations::"
-msgstr "組み合わせにも名前を付けられます::"
+msgstr "También es posible nombrar las combinaciones:"
 
-#: ../../howto/enum.rst:699
+#: ../Doc/howto/enum.rst:689
 msgid ""
 "Named combinations are considered aliases.  Aliases do not show up during "
 "iteration, but can be returned from by-value lookups."
 msgstr ""
+"Las combinaciones con nombre se consideran alias. Los alias no aparecen "
+"durante la iteración, pero se pueden devolver a partir de búsquedas por "
+"valor."
 
-#: ../../howto/enum.rst:704
+#: ../Doc/howto/enum.rst:694
 msgid ""
 "Another important difference between :class:`IntFlag` and :class:`Enum` is "
 "that if no flags are set (the value is 0), its boolean evaluation is :data:"
 "`False`::"
 msgstr ""
-":class:`IntFlag` と :class:`Enum` のもう 1 つの重要な違いは、フラグが設定され"
-"ていない (値が0である) 場合、その真偽値としての評価は :data:`False` になるこ"
-"とです::"
+"Otra diferencia importante entre :class:`IntFlag` y :class:`Enum` es que si "
+"no se establecen banderas (el valor es 0), su evaluación booleana es :data:"
+"`False`::"
 
-#: ../../howto/enum.rst:712
+#: ../Doc/howto/enum.rst:702
 msgid ""
 "Because :class:`IntFlag` members are also subclasses of :class:`int` they "
 "can be combined with them (but may lose :class:`IntFlag` membership::"
 msgstr ""
+"Debido a que los miembros :class:`IntFlag` también son subclases de :class:"
+"`int`, se pueden combinar con ellos (pero pueden perder la membresía :class:"
+"`IntFlag`::"
 
-#: ../../howto/enum.rst:723
+#: ../Doc/howto/enum.rst:713
 msgid ""
 "The negation operator, ``~``, always returns an :class:`IntFlag` member with "
 "a positive value::"
 msgstr ""
+"El operador de negación, ``~``, siempre retorna un miembro :class:`IntFlag` "
+"con un valor positivo:"
 
-#: ../../howto/enum.rst:729
+#: ../Doc/howto/enum.rst:719
 msgid ":class:`IntFlag` members can also be iterated over::"
-msgstr ""
+msgstr "Los miembros :class:`IntFlag` también se pueden iterar sobre:"
 
-#: ../../howto/enum.rst:738
+#: ../Doc/howto/enum.rst:728
 msgid "Flag"
-msgstr "Flag"
+msgstr "Bandera"
 
-#: ../../howto/enum.rst:740
+#: ../Doc/howto/enum.rst:730
 msgid ""
 "The last variation is :class:`Flag`.  Like :class:`IntFlag`, :class:`Flag` "
 "members can be combined using the bitwise operators (&, \\|, ^, ~).  Unlike :"
@@ -707,43 +789,44 @@ msgid ""
 "specify the values directly it is recommended to use :class:`auto` as the "
 "value and let :class:`Flag` select an appropriate value."
 msgstr ""
-"最後の派生型は :class:`Flag` です。\n"
-":class:`IntFlag` と同様に、 :class:`Flag` メンバーもビット演算子 (&, \\|, ^, "
-"~) を使って組み合わせられます。\n"
-"しかし :class:`IntFlag` とは違い、他のどの :class:`Flag` 列挙型とも :class:"
-"`int` とも組み合わせたり、比較したりできません。\n"
-"値を直接指定することも可能ですが、値として :class:`auto` を使い、 :class:"
-"`Flag` に適切な値を選ばせることが推奨されています。"
+"La última variación es :class:`Flag`. Al igual que :class:`IntFlag`, los "
+"miembros de :class:`Flag` se pueden combinar mediante los operadores bit a "
+"bit (&, \\|, ^, ~). A diferencia de :class:`IntFlag`, no se pueden combinar "
+"ni comparar con ninguna otra enumeración :class:`Flag` ni con :class:`int`. "
+"Si bien es posible especificar los valores directamente, se recomienda usar :"
+"class:`auto` como valor y dejar que :class:`Flag` seleccione un valor "
+"apropiado."
 
-#: ../../howto/enum.rst:749
+#: ../Doc/howto/enum.rst:739
 msgid ""
 "Like :class:`IntFlag`, if a combination of :class:`Flag` members results in "
 "no flags being set, the boolean evaluation is :data:`False`::"
 msgstr ""
-":class:`IntFlag` と同様に、 :class:`Flag` メンバーの組み合わせがどのフラグも"
-"設定されていない状態になった場合、その真偽値としての評価は :data:`False` とな"
-"ります::"
+"Al igual que :class:`IntFlag`, si una combinación de miembros :class:`Flag` "
+"da como resultado que no se establezcan indicadores, la evaluación booleana "
+"es :data:`False`::"
 
-#: ../../howto/enum.rst:763
+#: ../Doc/howto/enum.rst:753
 msgid ""
 "Individual flags should have values that are powers of two (1, 2, 4, "
-"8, ...), while combinations of flags will not::"
+"8, ...), while combinations of flags won't::"
 msgstr ""
-"個別のフラグは 2 のべき乗 (1, 2, 4, 8, ...) の値を持つべきですが、フラグの組"
-"み合わせはそうはなりません::"
+"Las banderas individuales deben tener valores que sean potencias de dos (1, "
+"2, 4, 8, ...), mientras que las combinaciones de banderas no:"
 
-#: ../../howto/enum.rst:775
+#: ../Doc/howto/enum.rst:765
 msgid ""
 "Giving a name to the \"no flags set\" condition does not change its boolean "
 "value::"
 msgstr ""
-"\"フラグが設定されていない\" 状態に名前を付けても、その真偽値は変わりません::"
+"Dar un nombre a la condición \"sin banderas establecidas\" no cambia su "
+"valor booleano:"
 
-#: ../../howto/enum.rst:789
+#: ../Doc/howto/enum.rst:779
 msgid ":class:`Flag` members can also be iterated over::"
-msgstr ""
+msgstr "Los miembros :class:`Flag` también se pueden iterar sobre:"
 
-#: ../../howto/enum.rst:799
+#: ../Doc/howto/enum.rst:789
 msgid ""
 "For the majority of new code, :class:`Enum` and :class:`Flag` are strongly "
 "recommended, since :class:`IntEnum` and :class:`IntFlag` break some semantic "
@@ -753,273 +836,302 @@ msgid ""
 "will not do; for example, when integer constants are replaced with "
 "enumerations, or for interoperability with other systems."
 msgstr ""
-"ほとんどの新しいコードでは、 :class:`Enum` と :class:`Flag` が強く推奨されま"
-"す。\n"
-"というのは、 :class:`IntEnum` と :class:`IntFlag` は (整数と比較でき、従って"
-"推移的に他の無関係な列挙型と比較できてしまうことにより) 列挙型の意味論的な約"
-"束に反するからです。\n"
-":class:`IntEnum` と :class:`IntFlag` は、 :class:`Enum` や :class:`Flag` では"
-"上手くいかない場合のみに使うべきです;\n"
-"例えば、整数定数を列挙型で置き換えるときや、他のシステムとの相互運用性を持た"
-"せたいときです。"
+"Para la mayoría del código nuevo, se recomienda encarecidamente :class:"
+"`Enum` y :class:`Flag`, ya que :class:`IntEnum` y :class:`IntFlag` rompen "
+"algunas promesas semánticas de una enumeración (al ser comparables con los "
+"números enteros y, por lo tanto, por la transitividad a otras enumeraciones "
+"no relacionadas). :class:`IntEnum` y :class:`IntFlag` deben usarse solo en "
+"los casos en que :class:`Enum` y :class:`Flag` no sirvan; por ejemplo, "
+"cuando las constantes enteras se reemplazan con enumeraciones, o para la "
+"interoperabilidad con otros sistemas."
 
-#: ../../howto/enum.rst:809
+#: ../Doc/howto/enum.rst:799
 msgid "Others"
-msgstr "その他"
+msgstr "Otros"
 
-#: ../../howto/enum.rst:811
+#: ../Doc/howto/enum.rst:801
 msgid ""
 "While :class:`IntEnum` is part of the :mod:`enum` module, it would be very "
 "simple to implement independently::"
 msgstr ""
-":class:`IntEnum` は :mod:`enum` モジュールの一部ですが、単独での実装もとても"
-"簡単に行なえます::"
+"Si bien :class:`IntEnum` es parte del módulo :mod:`enum`, sería muy simple "
+"de implementar de forma independiente:"
 
-#: ../../howto/enum.rst:817
+#: ../Doc/howto/enum.rst:807
 msgid ""
 "This demonstrates how similar derived enumerations can be defined; for "
 "example a :class:`FloatEnum` that mixes in :class:`float` instead of :class:"
 "`int`."
 msgstr ""
-"ここでは似たような列挙型の派生を定義する方法を紹介します; 例えば、:class:"
-"`FloatEnum` は :class:`int` ではなく :class:`float` で複合させたものです。"
+"Esto demuestra cómo se pueden definir enumeraciones derivadas similares; por "
+"ejemplo, un :class:`FloatEnum` que se mezcla en :class:`float` en lugar de :"
+"class:`int`."
 
-#: ../../howto/enum.rst:820
+#: ../Doc/howto/enum.rst:810
 msgid "Some rules:"
-msgstr "いくつかのルール:"
+msgstr "Algunas reglas:"
 
-#: ../../howto/enum.rst:822
+#: ../Doc/howto/enum.rst:812
 msgid ""
 "When subclassing :class:`Enum`, mix-in types must appear before :class:"
 "`Enum` itself in the sequence of bases, as in the :class:`IntEnum` example "
 "above."
 msgstr ""
-":class:`Enum` のサブクラスを作成するとき、複合させるデータ型は、基底クラスの"
-"並びで :class:`Enum` 自身より先に記述しなければなりません (上記 :class:"
-"`IntEnum` の例を参照)。"
+"Al subclasificar :class:`Enum`, los tipos de combinación deben aparecer "
+"antes que :class:`Enum` en la secuencia de bases, como en el ejemplo "
+"anterior de :class:`IntEnum`."
 
-#: ../../howto/enum.rst:825
+#: ../Doc/howto/enum.rst:815
 msgid ""
 "Mix-in types must be subclassable. For example, :class:`bool` and :class:"
 "`range` are not subclassable and will throw an error during Enum creation if "
 "used as the mix-in type."
 msgstr ""
+"Los tipos mixtos deben ser subclasificables. Por ejemplo, :class:`bool` y :"
+"class:`range` no son subclasificables y generarán un error durante la "
+"creación de Enum si se usan como tipo de combinación."
 
-#: ../../howto/enum.rst:828
+#: ../Doc/howto/enum.rst:818
 msgid ""
 "While :class:`Enum` can have members of any type, once you mix in an "
 "additional type, all the members must have values of that type, e.g. :class:"
 "`int` above.  This restriction does not apply to mix-ins which only add "
 "methods and don't specify another type."
 msgstr ""
-":class:`Enum` のメンバーはどんなデータ型でも構いませんが、追加のデータ型 (例"
-"えば、上の例の :class:`int`) と複合させてしまうと、すべてのメンバーの値はその"
-"データ型でなければならなくなります。この制限は、メソッドの追加するだけの、他"
-"のデータ型を指定しない複合には適用されません。"
+"Si bien :class:`Enum` puede tener miembros de cualquier tipo, una vez que "
+"mezcle un tipo adicional, todos los miembros deben tener valores de ese "
+"tipo, p. :class:`int` anterior. Esta restricción no se aplica a los "
+"complementos que solo agregan métodos y no especifican otro tipo."
 
-#: ../../howto/enum.rst:832
+#: ../Doc/howto/enum.rst:822
 msgid ""
 "When another data type is mixed in, the :attr:`value` attribute is *not the "
 "same* as the enum member itself, although it is equivalent and will compare "
 "equal."
 msgstr ""
-"他のデータ型と複合された場合、 :attr:`value` 属性は、たとえ等価であり等価であ"
-"ると比較が行えても、列挙型メンバー自身としては *同じではありません* 。"
+"Cuando se mezcla otro tipo de datos, el atributo :attr:`value` es *not the "
+"same* como el propio miembro de la enumeración, aunque es equivalente y se "
+"comparará igual."
 
-#: ../../howto/enum.rst:835
+#: ../Doc/howto/enum.rst:825
+#, python-format
 msgid ""
 "%-style formatting:  ``%s`` and ``%r`` call the :class:`Enum` class's :meth:"
 "`__str__` and :meth:`__repr__` respectively; other codes (such as ``%i`` or "
 "``%h`` for IntEnum) treat the enum member as its mixed-in type."
 msgstr ""
+"Formato de estilo %: ``%s`` y ``%r`` llaman a :meth:`__str__` y :meth:"
+"`__repr__` de la clase :class:`Enum` respectivamente; otros códigos (como "
+"``%i`` o ``%h`` para IntEnum) tratan el miembro de enumeración como su tipo "
+"mixto."
 
-#: ../../howto/enum.rst:838
+#: ../Doc/howto/enum.rst:828
 msgid ""
 ":ref:`Formatted string literals <f-strings>`, :meth:`str.format`, and :func:"
 "`format` will use the enum's :meth:`__str__` method."
 msgstr ""
+":ref:`Formatted string literals <f-strings>`, :meth:`str.format` y :func:"
+"`format` usarán el método :meth:`__str__` de la enumeración."
 
-#: ../../howto/enum.rst:843
+#: ../Doc/howto/enum.rst:833
 msgid ""
 "Because :class:`IntEnum`, :class:`IntFlag`, and :class:`StrEnum` are "
 "designed to be drop-in replacements for existing constants, their :meth:"
 "`__str__` method has been reset to their data types :meth:`__str__` method."
 msgstr ""
+"Debido a que :class:`IntEnum`, :class:`IntFlag` y :class:`StrEnum` están "
+"diseñados para ser reemplazos directos de constantes existentes, su método :"
+"meth:`__str__` se ha restablecido a su método de tipos de datos :meth:"
+"`__str__`."
 
-#: ../../howto/enum.rst:849
+#: ../Doc/howto/enum.rst:839
 msgid "When to use :meth:`__new__` vs. :meth:`__init__`"
-msgstr ":meth:`__init__`  と :meth:`__init__` のどちらを使うべきか"
+msgstr "Cuándo usar :meth:`__new__` frente a :meth:`__init__`"
 
-#: ../../howto/enum.rst:851
+#: ../Doc/howto/enum.rst:841
 msgid ""
 ":meth:`__new__` must be used whenever you want to customize the actual value "
 "of the :class:`Enum` member.  Any other modifications may go in either :meth:"
 "`__new__` or :meth:`__init__`, with :meth:`__init__` being preferred."
 msgstr ""
-":meth:`__new__` は :class:`Enum` メンバーの実際の値をカスタマイズしたいときに"
-"利用します。他の変更を加える場合、 :meth:`__new__` と :meth:`__init__` のどち"
-"らを利用するかは、:meth:`__init__` の方が望ましいでしょう。"
+":meth:`__new__` debe usarse siempre que desee personalizar el valor real del "
+"miembro :class:`Enum`. Cualquier otra modificación puede ir en :meth:"
+"`__new__` o :meth:`__init__`, siendo preferible :meth:`__init__`."
 
-#: ../../howto/enum.rst:855
+#: ../Doc/howto/enum.rst:845
 msgid ""
 "For example, if you want to pass several items to the constructor, but only "
 "want one of them to be the value::"
 msgstr ""
-"例えば、複数の値をコンストラクタに渡すが、その中の1つだけを値として使いたい場"
-"合は次のようにします:"
+"Por ejemplo, si desea pasar varios elementos al constructor, pero solo desea "
+"que uno de ellos sea el valor:"
 
-#: ../../howto/enum.rst:882
+#: ../Doc/howto/enum.rst:872
 msgid "Finer Points"
-msgstr "細かい点"
+msgstr "Puntos más finos"
 
-#: ../../howto/enum.rst:885
+#: ../Doc/howto/enum.rst:875
 msgid "Supported ``__dunder__`` names"
-msgstr "``__dunder__`` 名のサポート"
+msgstr "Nombres ``__dunder__`` admitidos"
 
-#: ../../howto/enum.rst:887
+#: ../Doc/howto/enum.rst:877
 msgid ""
 ":attr:`__members__` is a read-only ordered mapping of ``member_name``:"
 "``member`` items.  It is only available on the class."
 msgstr ""
-":attr:`__members__` は読み込み専用の、 ``member_name``:``member``  を要素とす"
-"る順序付きマッピングです。これはクラスでのみ利用可能です。"
+":attr:`__members__` es una asignación ordenada de solo lectura de elementos "
+"``member_name``:``member``. Solo está disponible en la clase."
 
-#: ../../howto/enum.rst:890
+#: ../Doc/howto/enum.rst:880
 msgid ""
 ":meth:`__new__`, if specified, must create and return the enum members; it "
 "is also a very good idea to set the member's :attr:`_value_` appropriately.  "
 "Once all the members are created it is no longer used."
 msgstr ""
-":meth:`__new__` が、もし指定されていた場合、列挙型のメンバーを作成し、返しま"
-"す;\n"
-"そのメンバー の :attr:`_value_` を適切に設定するのも非常によい考えです。\n"
-"いったん全てのメンバーが作成されると、それ以降 :meth:`__new__` は使われませ"
-"ん。"
+":meth:`__new__`, si se especifica, debe crear y devolver los miembros de "
+"enumeración; también es una muy buena idea configurar correctamente el :attr:"
+"`_value_` del miembro. Una vez que se crean todos los miembros, ya no se "
+"utiliza."
 
-#: ../../howto/enum.rst:896
+#: ../Doc/howto/enum.rst:886
 msgid "Supported ``_sunder_`` names"
-msgstr "``_sunder_`` 名のサポート"
+msgstr "Nombres ``_sunder_`` admitidos"
 
-#: ../../howto/enum.rst:898
+#: ../Doc/howto/enum.rst:888
 msgid "``_name_`` -- name of the member"
-msgstr "``_name_`` -- メンバー名"
+msgstr "``_name_`` -- nombre del miembro"
 
-#: ../../howto/enum.rst:899
+#: ../Doc/howto/enum.rst:889
 msgid ""
 "``_value_`` -- value of the member; can be set / modified in ``__new__``"
 msgstr ""
-"``_value_`` -- メンバーの値; ``__new__`` で設定したり、変更したりできます"
+"``_value_`` -- valor del miembro; se puede configurar/modificar en "
+"``__new__``"
 
-#: ../../howto/enum.rst:901
+#: ../Doc/howto/enum.rst:891
 msgid ""
 "``_missing_`` -- a lookup function used when a value is not found; may be "
 "overridden"
 msgstr ""
-"``_missing_`` -- 値が見付からなかったときに使われる検索関数; オーバーライドさ"
-"れていることがあります"
+"``_missing_``: una función de búsqueda utilizada cuando no se encuentra un "
+"valor; puede ser anulado"
 
-#: ../../howto/enum.rst:903
+#: ../Doc/howto/enum.rst:893
 msgid ""
 "``_ignore_`` -- a list of names, either as a :class:`list` or a :class:"
 "`str`, that will not be transformed into members, and will be removed from "
 "the final class"
 msgstr ""
-"``_ignore_`` -- 名前のリストで、 :class:`list` もしくは :class:`str` です。こ"
-"の名前の要素はメンバーへの変換が行われず、最終的なクラスから削除されます。"
+"``_ignore_``: una lista de nombres, ya sea como :class:`list` o :class:"
+"`str`, que no se transformarán en miembros y se eliminarán de la clase final."
 
-#: ../../howto/enum.rst:906
+#: ../Doc/howto/enum.rst:896
 msgid ""
 "``_order_`` -- used in Python 2/3 code to ensure member order is consistent "
 "(class attribute, removed during class creation)"
 msgstr ""
-"``_order_`` -- Python 2/3のコードでメンバーの順序を固定化するのに利用されます"
-"（クラス属性で、クラス作成時に削除されます）"
+"``_order_``: se usa en el código Python 2/3 para garantizar que el orden de "
+"los miembros sea coherente (atributo de clase, eliminado durante la creación "
+"de la clase)"
 
-#: ../../howto/enum.rst:908
+#: ../Doc/howto/enum.rst:898
 msgid ""
 "``_generate_next_value_`` -- used by the `Functional API`_ and by :class:"
 "`auto` to get an appropriate value for an enum member; may be overridden"
 msgstr ""
-"``_generate_next_value_`` -- `Functional API`_ から利用され、 :class:`auto` "
-"が列挙型のメンバーの適切な値を取得するのに使われます。オーバーライドされま"
-"す。"
+"``_generate_next_value_``: utilizado por `Functional API`_ y por :class:"
+"`auto` para obtener un valor apropiado para un miembro de enumeración; puede "
+"ser anulado"
 
-#: ../../howto/enum.rst:914
+#: ../Doc/howto/enum.rst:904
 msgid ""
 "For standard :class:`Enum` classes the next value chosen is the last value "
 "seen incremented by one."
 msgstr ""
+"Para las clases :class:`Enum` estándar, el siguiente valor elegido es el "
+"último valor visto incrementado en uno."
 
-#: ../../howto/enum.rst:917
+#: ../Doc/howto/enum.rst:907
 msgid ""
 "For :class:`Flag` classes the next value chosen will be the next highest "
 "power-of-two, regardless of the last value seen."
 msgstr ""
+"Para las clases :class:`Flag`, el siguiente valor elegido será la siguiente "
+"potencia de dos más alta, independientemente del último valor visto."
 
-#: ../../howto/enum.rst:920
+#: ../Doc/howto/enum.rst:910
 msgid "``_missing_``, ``_order_``, ``_generate_next_value_``"
 msgstr "``_missing_``, ``_order_``, ``_generate_next_value_``"
 
-#: ../../howto/enum.rst:921
+#: ../Doc/howto/enum.rst:911
 msgid "``_ignore_``"
 msgstr "``_ignore_``"
 
-#: ../../howto/enum.rst:923
+#: ../Doc/howto/enum.rst:913
 msgid ""
 "To help keep Python 2 / Python 3 code in sync an :attr:`_order_` attribute "
 "can be provided.  It will be checked against the actual order of the "
 "enumeration and raise an error if the two do not match::"
 msgstr ""
-"Pythono 2 / Python 3のコードの同期を取りやすくするために :attr:`_order_` 属性"
-"を提供できます。実際の列挙値の順序と比較して一致してなければエラーを送出しま"
-"す::"
+"Para ayudar a mantener sincronizado el código de Python 2/Python 3, se puede "
+"proporcionar un atributo :attr:`_order_`. Se comparará con el orden real de "
+"la enumeración y generará un error si los dos no coinciden:"
 
-#: ../../howto/enum.rst:941
+#: ../Doc/howto/enum.rst:931
 msgid ""
 "In Python 2 code the :attr:`_order_` attribute is necessary as definition "
 "order is lost before it can be recorded."
 msgstr ""
-"Python 2のコードでは :attr:`_order_` 属性は定義順が記録される前消えてしまうた"
-"め、重要です。"
+"En el código de Python 2, el atributo :attr:`_order_` es necesario ya que el "
+"orden de definición se pierde antes de que se pueda registrar."
 
-#: ../../howto/enum.rst:946
+#: ../Doc/howto/enum.rst:936
 msgid "_Private__names"
 msgstr "_Private__names"
 
-#: ../../howto/enum.rst:948
+#: ../Doc/howto/enum.rst:938
 msgid ""
 ":ref:`Private names <private-name-mangling>` are not converted to enum "
 "members, but remain normal attributes."
 msgstr ""
+":ref:`Private names <private-name-mangling>` no se convierten en miembros de "
+"enumeración, sino que siguen siendo atributos normales."
 
-#: ../../howto/enum.rst:955
+#: ../Doc/howto/enum.rst:945
 msgid "``Enum`` member type"
-msgstr "``Enum`` メンバー型"
+msgstr "Tipo de miembro ``Enum``"
 
-#: ../../howto/enum.rst:957
+#: ../Doc/howto/enum.rst:947
 msgid ""
 "Enum members are instances of their enum class, and are normally accessed as "
 "``EnumClass.member``.  In Python versions ``3.5`` to ``3.10`` you could "
 "access members from other members -- this practice was discouraged, and in "
 "``3.11`` :class:`Enum` returns to not allowing it::"
 msgstr ""
+"Los miembros de enumeración son instancias de su clase de enumeración y "
+"normalmente se accede a ellos como ``EnumClass.member``. En las versiones de "
+"Python ``3.5`` a ``3.10``, podía acceder a miembros de otros miembros; esta "
+"práctica se desaconsejó, y en ``3.11``, :class:`Enum` vuelve a no permitirlo:"
 
-#: ../../howto/enum.rst:978
+#: ../Doc/howto/enum.rst:968
 msgid "Creating members that are mixed with other data types"
-msgstr ""
+msgstr "Creación de miembros que se mezclan con otros tipos de datos"
 
-#: ../../howto/enum.rst:980
+#: ../Doc/howto/enum.rst:970
 msgid ""
 "When subclassing other data types, such as :class:`int` or :class:`str`, "
 "with an :class:`Enum`, all values after the ``=`` are passed to that data "
 "type's constructor.  For example::"
 msgstr ""
+"Al crear subclases de otros tipos de datos, como :class:`int` o :class:"
+"`str`, con un :class:`Enum`, todos los valores después de ``=`` se pasan al "
+"constructor de ese tipo de datos. Por ejemplo::"
 
-#: ../../howto/enum.rst:992
+#: ../Doc/howto/enum.rst:982
 msgid "Boolean value of ``Enum`` classes and members"
-msgstr "``Enum`` クラスとメンバーの真偽値"
+msgstr "Valor booleano de clases y miembros ``Enum``"
 
-#: ../../howto/enum.rst:994
+#: ../Doc/howto/enum.rst:984
 msgid ""
 "Enum classes that are mixed with non-:class:`Enum` types (such as :class:"
 "`int`, :class:`str`, etc.) are evaluated according to the mixed-in type's "
@@ -1027,148 +1139,168 @@ msgid ""
 "enum's boolean evaluation depend on the member's value add the following to "
 "your class::"
 msgstr ""
-"(:class:`int`, :class:`str` などのような) 非 :class:`Enum` 型と複合させた "
-"enum クラスは、その複合された型の規則に従って評価されます;\n"
-"そうでない場合は、全てのメンバーは :data:`True` と評価されます。\n"
-"メンバーの値に依存する独自の enum の真偽値評価を行うには、クラスに次のコード"
-"を追加してください::"
+"Las clases de enumeración que se mezclan con tipos que no son :class:`Enum` "
+"(como :class:`int`, :class:`str`, etc.) se evalúan de acuerdo con las reglas "
+"del tipo combinado; de lo contrario, todos los miembros se evalúan como :"
+"data:`True`. Para hacer que la evaluación booleana de su propia enumeración "
+"dependa del valor del miembro, agregue lo siguiente a su clase:"
 
-#: ../../howto/enum.rst:1003
+#: ../Doc/howto/enum.rst:993
 msgid "Plain :class:`Enum` classes always evaluate as :data:`True`."
-msgstr ""
+msgstr "Las clases simples :class:`Enum` siempre se evalúan como :data:`True`."
 
-#: ../../howto/enum.rst:1007
+#: ../Doc/howto/enum.rst:997
 msgid "``Enum`` classes with methods"
-msgstr "メソッド付きの ``Enum`` クラス"
+msgstr "Clases ``Enum`` con métodos"
 
-#: ../../howto/enum.rst:1009
+#: ../Doc/howto/enum.rst:999
 msgid ""
 "If you give your enum subclass extra methods, like the `Planet`_ class "
 "below, those methods will show up in a :func:`dir` of the member, but not of "
 "the class::"
 msgstr ""
-"enum サブクラスに追加のメソッドを与えた場合、後述の `Planet`_ クラスのよう"
-"に、そのメソッドはメンバーの :func:`dir` に表示されますが、クラスの :func:"
-"`dir` には表示されません::"
+"Si le da a su subclase de enumeración métodos adicionales, como la clase "
+"`Planet`_ a continuación, esos métodos aparecerán en un :func:`dir` del "
+"miembro, pero no de la clase:"
 
-#: ../../howto/enum.rst:1020
+#: ../Doc/howto/enum.rst:1010
 msgid "Combining members of ``Flag``"
-msgstr "``Flag`` のメンバーの組み合わせ"
+msgstr "Combinación de miembros de ``Flag``"
 
-#: ../../howto/enum.rst:1022
+#: ../Doc/howto/enum.rst:1012
 msgid ""
 "Iterating over a combination of :class:`Flag` members will only return the "
 "members that are comprised of a single bit::"
 msgstr ""
+"La iteración sobre una combinación de miembros :class:`Flag` solo devolverá "
+"los miembros que se componen de un solo bit:"
 
-#: ../../howto/enum.rst:1040
+#: ../Doc/howto/enum.rst:1030
 msgid "``Flag`` and ``IntFlag`` minutia"
-msgstr ""
+msgstr "Minuciosidades ``Flag`` y ``IntFlag``"
 
-#: ../../howto/enum.rst:1042
+#: ../Doc/howto/enum.rst:1032
 msgid "Using the following snippet for our examples::"
-msgstr ""
+msgstr "Usando el siguiente fragmento para nuestros ejemplos:"
 
-#: ../../howto/enum.rst:1053
+#: ../Doc/howto/enum.rst:1043
 msgid "the following are true:"
-msgstr ""
+msgstr "lo siguiente es cierto:"
 
-#: ../../howto/enum.rst:1055
+#: ../Doc/howto/enum.rst:1045
 msgid "single-bit flags are canonical"
-msgstr ""
+msgstr "las banderas de un solo bit son canónicas"
 
-#: ../../howto/enum.rst:1056
+#: ../Doc/howto/enum.rst:1046
 msgid "multi-bit and zero-bit flags are aliases"
-msgstr ""
+msgstr "las banderas multibit y zero-bit son alias"
 
-#: ../../howto/enum.rst:1057
+#: ../Doc/howto/enum.rst:1047
 msgid "only canonical flags are returned during iteration::"
-msgstr ""
+msgstr "solo se retornan banderas canónicas durante la iteración:"
 
-#: ../../howto/enum.rst:1062
+#: ../Doc/howto/enum.rst:1052
 msgid ""
 "negating a flag or flag set returns a new flag/flag set with the "
 "corresponding positive integer value::"
 msgstr ""
+"negar una bandera o un conjunto de banderas retorna una nueva bandera/"
+"conjunto de banderas con el valor entero positivo correspondiente:"
 
-#: ../../howto/enum.rst:1071
+#: ../Doc/howto/enum.rst:1061
 msgid "names of pseudo-flags are constructed from their members' names::"
 msgstr ""
+"los nombres de las pseudo-banderas se construyen a partir de los nombres de "
+"sus miembros:"
 
-#: ../../howto/enum.rst:1076
+#: ../Doc/howto/enum.rst:1066
 msgid "multi-bit flags, aka aliases, can be returned from operations::"
 msgstr ""
+"Las banderas de varios bits, también conocidas como alias, se pueden "
+"devolver desde las operaciones:"
 
-#: ../../howto/enum.rst:1087
+#: ../Doc/howto/enum.rst:1077
 msgid ""
 "membership / containment checking: zero-valued flags are always considered "
 "to be contained::"
 msgstr ""
+"Comprobación de pertenencia / contención: las banderas de valor cero siempre "
+"se consideran contenidas:"
 
-#: ../../howto/enum.rst:1093
+#: ../Doc/howto/enum.rst:1083
 msgid ""
 "otherwise, only if all bits of one flag are in the other flag will True be "
 "returned::"
 msgstr ""
+"de lo contrario, solo si todos los bits de una bandera están en la otra "
+"bandera, se devolverá True:"
 
-#: ../../howto/enum.rst:1102
+#: ../Doc/howto/enum.rst:1092
 msgid ""
 "There is a new boundary mechanism that controls how out-of-range / invalid "
 "bits are handled: ``STRICT``, ``CONFORM``, ``EJECT``, and ``KEEP``:"
 msgstr ""
+"Hay un nuevo mecanismo de límite que controla cómo se manejan los bits no "
+"válidos/fuera de rango: ``STRICT``, ``CONFORM``, ``EJECT`` y ``KEEP``:"
 
-#: ../../howto/enum.rst:1105
+#: ../Doc/howto/enum.rst:1095
 msgid "STRICT --> raises an exception when presented with invalid values"
-msgstr ""
+msgstr "STRICT --> genera una excepción cuando se presentan valores no válidos"
 
-#: ../../howto/enum.rst:1106
+#: ../Doc/howto/enum.rst:1096
 msgid "CONFORM --> discards any invalid bits"
-msgstr ""
+msgstr "CONFORM --> descarta cualquier bit inválido"
 
-#: ../../howto/enum.rst:1107
+#: ../Doc/howto/enum.rst:1097
 msgid "EJECT --> lose Flag status and become a normal int with the given value"
 msgstr ""
+"EJECT -> pierde el estado de la bandera y se convierte en un int normal con "
+"el valor dado"
 
-#: ../../howto/enum.rst:1111
+#: ../Doc/howto/enum.rst:1101
 msgid "KEEP --> keep the extra bits"
-msgstr ""
+msgstr "KEEP --> mantener los bits adicionales"
 
-#: ../../howto/enum.rst:1109
+#: ../Doc/howto/enum.rst:1099
 msgid "keeps Flag status and extra bits"
-msgstr ""
+msgstr "mantiene el estado de la bandera y bits adicionales"
 
-#: ../../howto/enum.rst:1110
+#: ../Doc/howto/enum.rst:1100
 msgid "extra bits do not show up in iteration"
-msgstr ""
+msgstr "los bits adicionales no aparecen en la iteración"
 
-#: ../../howto/enum.rst:1111
+#: ../Doc/howto/enum.rst:1101
 msgid "extra bits do show up in repr() and str()"
-msgstr ""
+msgstr "bits adicionales aparecen en repr() y str()"
 
-#: ../../howto/enum.rst:1113
+#: ../Doc/howto/enum.rst:1103
 msgid ""
 "The default for Flag is ``STRICT``, the default for ``IntFlag`` is "
 "``EJECT``, and the default for ``_convert_`` is ``KEEP`` (see ``ssl."
 "Options`` for an example of when ``KEEP`` is needed)."
 msgstr ""
+"El valor predeterminado para Flag es ``STRICT``, el valor predeterminado "
+"para ``IntFlag`` es ``EJECT`` y el valor predeterminado para ``_convert_`` "
+"es ``KEEP`` (consulte ``ssl.Options`` para ver un ejemplo de cuándo se "
+"necesita ``KEEP``)."
 
-#: ../../howto/enum.rst:1121
-msgid "How are Enums and Flags different?"
-msgstr "EnumとFlagはどう違うのか？"
+#: ../Doc/howto/enum.rst:1111
+msgid "How are Enums different?"
+msgstr "¿En qué se diferencian las enumeraciones?"
 
-#: ../../howto/enum.rst:1123
+#: ../Doc/howto/enum.rst:1113
 msgid ""
 "Enums have a custom metaclass that affects many aspects of both derived :"
 "class:`Enum` classes and their instances (members)."
 msgstr ""
-"Enum は :class:`Enum` 派生クラスやそれらのインスタンス (メンバー) 双方の多く"
-"の側面に影響を及ぼすカスタムメタクラスを持っています。"
+"Las enumeraciones tienen una metaclase personalizada que afecta a muchos "
+"aspectos de las clases :class:`Enum` derivadas y sus instancias (miembros)."
 
-#: ../../howto/enum.rst:1128
+#: ../Doc/howto/enum.rst:1118
 msgid "Enum Classes"
-msgstr "Enum クラス"
+msgstr "Clases de enumeración"
 
-#: ../../howto/enum.rst:1130
+#: ../Doc/howto/enum.rst:1120
 msgid ""
 "The :class:`EnumType` metaclass is responsible for providing the :meth:"
 "`__contains__`, :meth:`__dir__`, :meth:`__iter__` and other methods that "
@@ -1178,25 +1310,19 @@ msgid ""
 "final :class:`Enum` class are correct (such as :meth:`__new__`, :meth:"
 "`__getnewargs__`, :meth:`__str__` and :meth:`__repr__`)."
 msgstr ""
+"La metaclase :class:`EnumType` es responsable de proporcionar :meth:"
+"`__contains__`, :meth:`__dir__`, :meth:`__iter__` y otros métodos que "
+"permiten hacer cosas con una clase :class:`Enum` que fallan en una clase "
+"típica, como ``list(Color)`` o ``some_enum_var in Color``. :class:`EnumType` "
+"es responsable de garantizar que varios otros métodos en la clase :class:"
+"`Enum` final sean correctos (como :meth:`__new__`, :meth:`__getnewargs__`, :"
+"meth:`__str__` y :meth:`__repr__`)."
 
-#: ../../howto/enum.rst:1139
-msgid "Flag Classes"
-msgstr "Flag クラス"
-
-#: ../../howto/enum.rst:1141
-msgid ""
-"Flags have an expanded view of aliasing: to be canonical, the value of a "
-"flag needs to be a power-of-two value, and not a duplicate name.  So, in "
-"addition to the :class:`Enum` definition of alias, a flag with no value (a.k."
-"a. ``0``) or with more than one power-of-two value (e.g. ``3``) is "
-"considered an alias."
-msgstr ""
-
-#: ../../howto/enum.rst:1147
+#: ../Doc/howto/enum.rst:1130
 msgid "Enum Members (aka instances)"
-msgstr "Enum メンバー (インスタンス)"
+msgstr "Miembros de enumeración (también conocidos como instancias)"
 
-#: ../../howto/enum.rst:1149
+#: ../Doc/howto/enum.rst:1132
 msgid ""
 "The most interesting thing about enum members is that they are singletons. :"
 "class:`EnumType` creates them all while it is creating the enum class "
@@ -1204,219 +1330,201 @@ msgid ""
 "new ones are ever instantiated by returning only the existing member "
 "instances."
 msgstr ""
-"enum メンバーについて最も興味深いのは、それらがシングルトンであるということで"
-"す。:class:`EnumType` は enum クラス自身を作成し、メンバーを作成し、新しいイ"
-"ンスタンスが作成されていないかどうかを確認するために既存のメンバーインスタン"
-"スだけを返すカスタム :meth:`__new__` を追加します。"
+"Lo más interesante de los miembros de la enumeración es que son únicos. :"
+"class:`EnumType` los crea a todos mientras crea la propia clase de "
+"enumeración, y luego coloca un :meth:`__new__` personalizado para garantizar "
+"que nunca se creen instancias nuevas al devolver solo las instancias de "
+"miembros existentes."
 
-#: ../../howto/enum.rst:1155
-msgid "Flag Members"
-msgstr ""
-
-#: ../../howto/enum.rst:1157
-msgid ""
-"Flag members can be iterated over just like the :class:`Flag` class, and "
-"only the canonical members will be returned.  For example::"
-msgstr ""
-
-#: ../../howto/enum.rst:1163
-msgid "(Note that ``BLACK``, ``PURPLE``, and ``WHITE`` do not show up.)"
-msgstr ""
-
-#: ../../howto/enum.rst:1165
-msgid ""
-"Inverting a flag member returns the corresponding positive value, rather "
-"than a negative value --- for example::"
-msgstr ""
-
-#: ../../howto/enum.rst:1171
-msgid ""
-"Flag members have a length corresponding to the number of power-of-two "
-"values they contain.  For example::"
-msgstr ""
-
-#: ../../howto/enum.rst:1181
-msgid "Enum Cookbook"
-msgstr ""
-
-#: ../../howto/enum.rst:1184
+#: ../Doc/howto/enum.rst:1141
 msgid ""
 "While :class:`Enum`, :class:`IntEnum`, :class:`StrEnum`, :class:`Flag`, and :"
 "class:`IntFlag` are expected to cover the majority of use-cases, they cannot "
 "cover them all.  Here are recipes for some different types of enumerations "
 "that can be used directly, or as examples for creating one's own."
 msgstr ""
-":class:`Enum`, :class:`IntEnum`, :class:`StrEnum`, :class:`Flag`, :class:"
-"`IntFlag` は用途の大部分をカバーすると予想されますが、そのすべてをカバーでき"
-"ているわけではありません。ここでは、そのまま、あるいは独自の列挙型を作る例と"
-"して使える、様々なタイプの列挙型を紹介します。"
+"Si bien se espera que :class:`Enum`, :class:`IntEnum`, :class:`StrEnum`, :"
+"class:`Flag` y :class:`IntFlag` cubran la mayoría de los casos de uso, no "
+"pueden cubrirlos todos. Aquí hay recetas para algunos tipos diferentes de "
+"enumeraciones que se pueden usar directamente o como ejemplos para crear las "
+"propias."
 
-#: ../../howto/enum.rst:1191
+#: ../Doc/howto/enum.rst:1148
 msgid "Omitting values"
-msgstr "値の省略"
+msgstr "Omitir valores"
 
-#: ../../howto/enum.rst:1193
+#: ../Doc/howto/enum.rst:1150
 msgid ""
 "In many use-cases, one doesn't care what the actual value of an enumeration "
 "is. There are several ways to define this type of simple enumeration:"
 msgstr ""
-"多くの用途では、列挙型の実際の値が何かは気にされません。\n"
-"このタイプの単純な列挙型を定義する方法はいくつかあります:"
+"En muchos casos de uso, a uno no le importa cuál es el valor real de una "
+"enumeración. Hay varias formas de definir este tipo de enumeración simple:"
 
-#: ../../howto/enum.rst:1196
+#: ../Doc/howto/enum.rst:1153
 msgid "use instances of :class:`auto` for the value"
-msgstr "値に :class:`auto` インスタンスを使用する"
+msgstr "usar instancias de :class:`auto` para el valor"
 
-#: ../../howto/enum.rst:1197
+#: ../Doc/howto/enum.rst:1154
 msgid "use instances of :class:`object` as the value"
-msgstr "値として :class:`object` インスタンスを使用する"
+msgstr "usar instancias de :class:`object` como valor"
 
-#: ../../howto/enum.rst:1198
+#: ../Doc/howto/enum.rst:1155
 msgid "use a descriptive string as the value"
-msgstr "値として解説文字列を使用する"
+msgstr "use una cadena descriptiva como el valor"
 
-#: ../../howto/enum.rst:1199
+#: ../Doc/howto/enum.rst:1156
 msgid ""
 "use a tuple as the value and a custom :meth:`__new__` to replace the tuple "
 "with an :class:`int` value"
 msgstr ""
-"値としてタプルを使用し、独自の :meth:`__new__` を使用してタプルを :class:"
-"`int` 値で置き換える"
+"use una tupla como valor y un :meth:`__new__` personalizado para reemplazar "
+"la tupla con un valor :class:`int`"
 
-#: ../../howto/enum.rst:1202
+#: ../Doc/howto/enum.rst:1159
 msgid ""
 "Using any of these methods signifies to the user that these values are not "
 "important, and also enables one to add, remove, or reorder members without "
 "having to renumber the remaining members."
 msgstr ""
-"これらのどの方法を使ってもユーザーに対して、値は重要ではなく、他のメンバーの"
-"番号の振り直しをする必要無しに、メンバーの追加、削除、並べ替えが行えるという"
-"ことを示せます。"
+"El uso de cualquiera de estos métodos significa para el usuario que estos "
+"valores no son importantes y también permite agregar, eliminar o reordenar "
+"miembros sin tener que volver a numerar los miembros restantes."
 
-#: ../../howto/enum.rst:1208
+#: ../Doc/howto/enum.rst:1165
 msgid "Using :class:`auto`"
-msgstr ":class:`auto` を使う"
+msgstr "Usando :class:`auto`"
 
-#: ../../howto/enum.rst:1210
+#: ../Doc/howto/enum.rst:1167
 msgid "Using :class:`auto` would look like::"
-msgstr ":class:`auto` を使うと次のようになります::"
+msgstr "El uso de :class:`auto` se vería así:"
 
-#: ../../howto/enum.rst:1222
+#: ../Doc/howto/enum.rst:1179
 msgid "Using :class:`object`"
-msgstr ":class:`object` を使う"
+msgstr "Usando :class:`object`"
 
-#: ../../howto/enum.rst:1224
+#: ../Doc/howto/enum.rst:1181
 msgid "Using :class:`object` would look like::"
-msgstr ":class:`object` を使うと次のようになります::"
+msgstr "El uso de :class:`object` se vería así:"
 
-#: ../../howto/enum.rst:1234
+#: ../Doc/howto/enum.rst:1191
 msgid ""
 "This is also a good example of why you might want to write your own :meth:"
 "`__repr__`::"
 msgstr ""
+"Este también es un buen ejemplo de por qué es posible que desee escribir su "
+"propio :meth:`__repr__`::"
 
-#: ../../howto/enum.rst:1250
+#: ../Doc/howto/enum.rst:1207
 msgid "Using a descriptive string"
-msgstr "解説文字列を使う"
+msgstr "Usar una cadena descriptiva"
 
-#: ../../howto/enum.rst:1252
+#: ../Doc/howto/enum.rst:1209
 msgid "Using a string as the value would look like::"
-msgstr "値として文字列を使うと次のようになります::"
+msgstr "Usando una cadena como el valor se vería así:"
 
-#: ../../howto/enum.rst:1264
+#: ../Doc/howto/enum.rst:1221
 msgid "Using a custom :meth:`__new__`"
-msgstr "独自の :meth:`__new__` を使う"
+msgstr "Usando un :meth:`__new__` personalizado"
 
-#: ../../howto/enum.rst:1266
+#: ../Doc/howto/enum.rst:1223
 msgid "Using an auto-numbering :meth:`__new__` would look like::"
-msgstr "自動で番号を振る :meth:`__new__` を使うと次のようになります::"
+msgstr "El uso de un :meth:`__new__` de numeración automática se vería así:"
 
-#: ../../howto/enum.rst:1283
+#: ../Doc/howto/enum.rst:1240
 msgid ""
 "To make a more general purpose ``AutoNumber``, add ``*args`` to the "
 "signature::"
 msgstr ""
-"``AutoNumber`` をより広い用途で使うには、シグニチャに ``*args`` を追加しま"
-"す::"
+"Para hacer un ``AutoNumber`` de uso más general, agregue ``*args`` a la "
+"firma:"
 
-#: ../../howto/enum.rst:1293
+#: ../Doc/howto/enum.rst:1250
 msgid ""
 "Then when you inherit from ``AutoNumber`` you can write your own "
 "``__init__`` to handle any extra arguments::"
 msgstr ""
-"``AutoNumber`` を継承すると、追加の引数を取り扱える独自の ``__init__`` が書け"
-"ます。"
+"Luego, cuando hereda de ``AutoNumber``, puede escribir su propio "
+"``__init__`` para manejar cualquier argumento adicional:"
 
-#: ../../howto/enum.rst:1312
+#: ../Doc/howto/enum.rst:1269
 msgid ""
 "The :meth:`__new__` method, if defined, is used during creation of the Enum "
 "members; it is then replaced by Enum's :meth:`__new__` which is used after "
 "class creation for lookup of existing members."
 msgstr ""
-":meth:`__new__` メソッドが定義されていれば、Enum 番号の作成時に使用されます; "
-"これは Enum の :meth:`__new__` と置き換えられ、クラスが作成された後の既存の番"
-"号を取得に使用されます。"
+"El método :meth:`__new__`, si está definido, se usa durante la creación de "
+"los miembros de Enum; luego se reemplaza por :meth:`__new__` de Enum, que se "
+"usa después de la creación de clases para buscar miembros existentes."
 
-#: ../../howto/enum.rst:1318
+#: ../Doc/howto/enum.rst:1275
 msgid "OrderedEnum"
-msgstr "OrderedEnum"
+msgstr "Enum ordenado"
 
-#: ../../howto/enum.rst:1320
+#: ../Doc/howto/enum.rst:1277
 msgid ""
 "An ordered enumeration that is not based on :class:`IntEnum` and so "
 "maintains the normal :class:`Enum` invariants (such as not being comparable "
 "to other enumerations)::"
 msgstr ""
-":class:`IntEnum` をベースとしないため、通常の :class:`Enum` の不変条件 (他の"
-"列挙型と比較できないなど) のままで、メンバーを順序付けできる列挙型です::"
+"Una enumeración ordenada que no se basa en :class:`IntEnum` y, por lo tanto, "
+"mantiene las invariantes normales de :class:`Enum` (como no ser comparable "
+"con otras enumeraciones):"
 
-#: ../../howto/enum.rst:1354
+#: ../Doc/howto/enum.rst:1311
 msgid "DuplicateFreeEnum"
 msgstr "DuplicateFreeEnum"
 
-#: ../../howto/enum.rst:1356
+#: ../Doc/howto/enum.rst:1313
 msgid ""
-"Raises an error if a duplicate member value is found instead of creating an "
+"Raises an error if a duplicate member name is found instead of creating an "
 "alias::"
 msgstr ""
+"Genera un error si se encuentra un nombre de miembro duplicado en lugar de "
+"crear un alias::"
 
-#: ../../howto/enum.rst:1381
+#: ../Doc/howto/enum.rst:1338
 msgid ""
 "This is a useful example for subclassing Enum to add or change other "
 "behaviors as well as disallowing aliases.  If the only desired change is "
 "disallowing aliases, the :func:`unique` decorator can be used instead."
 msgstr ""
-"これは Enum に別名を無効にするのと同様な振る舞いの追加や変更をおこなうための"
-"サブクラス化に役立つ例です。単に別名を無効にしたいだけなら、 :func:`unique` "
-"デコレーターを使用して行えます。"
+"Este es un ejemplo útil para subclasificar Enum para agregar o cambiar otros "
+"comportamientos, así como para no permitir alias. Si el único cambio deseado "
+"es prohibir los alias, se puede usar el decorador :func:`unique` en su lugar."
 
-#: ../../howto/enum.rst:1387
+#: ../Doc/howto/enum.rst:1344
 msgid "Planet"
-msgstr "Planet"
+msgstr "Planeta"
 
-#: ../../howto/enum.rst:1389
+#: ../Doc/howto/enum.rst:1346
 msgid ""
 "If :meth:`__new__` or :meth:`__init__` is defined, the value of the enum "
 "member will be passed to those methods::"
 msgstr ""
-":meth:`__new__` や :meth:`__init__` が定義されている場合、列挙型メンバーの値"
-"はこれらのメソッドに渡されます::"
+"Si se define :meth:`__new__` o :meth:`__init__`, el valor del miembro de "
+"enumeración se pasará a esos métodos:"
 
-#: ../../howto/enum.rst:1418
+#: ../Doc/howto/enum.rst:1375
 msgid "TimePeriod"
-msgstr "TimePeriod"
+msgstr "Periodo de tiempo"
 
-#: ../../howto/enum.rst:1420
+#: ../Doc/howto/enum.rst:1377
 msgid "An example to show the :attr:`_ignore_` attribute in use::"
-msgstr ":attr:`_ignore_` 属性の使用方法のサンプルです::"
+msgstr "Un ejemplo para mostrar el atributo :attr:`_ignore_` en uso:"
 
-#: ../../howto/enum.rst:1439
+#: ../Doc/howto/enum.rst:1396
 msgid "Subclassing EnumType"
-msgstr "EnumType をサブクラス化する"
+msgstr "Subclase EnumType"
 
-#: ../../howto/enum.rst:1441
+#: ../Doc/howto/enum.rst:1398
 msgid ""
 "While most enum needs can be met by customizing :class:`Enum` subclasses, "
 "either with class decorators or custom functions, :class:`EnumType` can be "
 "subclassed to provide a different Enum experience."
 msgstr ""
+"Si bien la mayoría de las necesidades de enumeración se pueden satisfacer "
+"mediante la personalización de las subclases :class:`Enum`, ya sea con "
+"decoradores de clase o funciones personalizadas, :class:`EnumType` se puede "
+"dividir en subclases para proporcionar una experiencia de enumeración "
+"diferente."

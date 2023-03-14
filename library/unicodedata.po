@@ -1,154 +1,165 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:16+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-08-04 22:02+0200\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/unicodedata.rst:2
+#: ../Doc/library/unicodedata.rst:2
 msgid ":mod:`unicodedata` --- Unicode Database"
-msgstr ":mod:`unicodedata` --- Unicode データベース"
+msgstr ":mod:`unicodedata` --- Base de datos Unicode"
 
-#: ../../library/unicodedata.rst:18
+#: ../Doc/library/unicodedata.rst:18
+#, fuzzy
 msgid ""
 "This module provides access to the Unicode Character Database (UCD) which "
 "defines character properties for all Unicode characters. The data contained "
 "in this database is compiled from the `UCD version 14.0.0 <https://www."
 "unicode.org/Public/14.0.0/ucd>`_."
 msgstr ""
+"Este módulo proporciona acceso a la base de datos de caracteres Unicode "
+"(UCD), que define las propiedades de todos los caracteres Unicode. Los datos "
+"contenidos en esta base de datos se compilan a partir de la `UCD versión "
+"13.0.0 <https://www.unicode.org/Public/13.0.0/ucd>`_."
 
-#: ../../library/unicodedata.rst:23
+#: ../Doc/library/unicodedata.rst:23
 msgid ""
 "The module uses the same names and symbols as defined by Unicode Standard "
 "Annex #44, `\"Unicode Character Database\" <https://www.unicode.org/reports/"
 "tr44/>`_.  It defines the following functions:"
 msgstr ""
-"このモジュールは、ユニコード標準付録 #44 「 `ユニコード文字データベース "
-"<https://www.unicode.org/reports/tr44/>`_ 」で定義されているのと同じ名前およ"
-"びシンボルを使用します。このモジュールは次のような関数を定義します:"
+"El módulo utiliza los mismos nombres y símbolos definidos por el Anexo #44 "
+"del estándar Unicode de la `\"Base de datos de caracteres Unicode\" <https://"
+"www.unicode.org/reports/tr44/>`_. Define las siguientes funciones:"
 
-#: ../../library/unicodedata.rst:31
+#: ../Doc/library/unicodedata.rst:31
 msgid ""
 "Look up character by name.  If a character with the given name is found, "
 "return the corresponding character.  If not found, :exc:`KeyError` is raised."
 msgstr ""
-"名前に対応する文字を探します。その名前の文字が見つかった場合、その文字が返さ"
-"れます。見つからなかった場合には、 :exc:`KeyError` を発生させます。"
+"Busca el carácter por su nombre. Si se encuentra un carácter con el nombre "
+"proporcionado, retornará el carácter correspondiente. Si no se encuentra, se "
+"lanza una excepción :exc:`KeyError`."
 
-#: ../../library/unicodedata.rst:34
+#: ../Doc/library/unicodedata.rst:34
 msgid "Support for name aliases [#]_ and named sequences [#]_ has been added."
-msgstr "name aliases [#]_ と named sequences [#]_ のサポートが追加されました。"
+msgstr ""
+"Se ha agregado soporte para alias de nombre [#]_ y secuencias con nombre "
+"[#]_."
 
-#: ../../library/unicodedata.rst:40
+#: ../Doc/library/unicodedata.rst:40
 msgid ""
 "Returns the name assigned to the character *chr* as a string. If no name is "
 "defined, *default* is returned, or, if not given, :exc:`ValueError` is "
 "raised."
 msgstr ""
-"文字 *chr* に付いている名前を、文字列で返します。名前が定義されていない場合に"
-"は *default* が返されますが、この引数が与えられていなければ :exc:"
-"`ValueError` を発生させます。"
+"Retorna el nombre asignado al carácter *chr* como una cadena de caracteres. "
+"Si no se define ningún nombre, se retorna *default* o, si no se proporciona, "
+"se lanza una excepción :exc:`ValueError`."
 
-#: ../../library/unicodedata.rst:47
+#: ../Doc/library/unicodedata.rst:47
 msgid ""
 "Returns the decimal value assigned to the character *chr* as integer. If no "
 "such value is defined, *default* is returned, or, if not given, :exc:"
 "`ValueError` is raised."
 msgstr ""
-"文字 *chr* に割り当てられている十進数を、整数で返します。この値が定義されてい"
-"ない場合には *default* が返されますが、この引数が与えられていなければ :exc:"
-"`ValueError` を発生させます。"
+"Retorna el valor decimal asignado al carácter *chr* como un entero. Si no se "
+"define dicho valor, se retorna *default* o, si no se proporciona, se lanza "
+"una excepción :exc:`ValueError`."
 
-#: ../../library/unicodedata.rst:54
+#: ../Doc/library/unicodedata.rst:54
 msgid ""
 "Returns the digit value assigned to the character *chr* as integer. If no "
 "such value is defined, *default* is returned, or, if not given, :exc:"
 "`ValueError` is raised."
 msgstr ""
-"文字 *chr* に割り当てられている数値を、整数で返します。この値が定義されていな"
-"い場合には *default* が返されますが、この引数が与えられていなければ :exc:"
-"`ValueError` を発生させます。"
+"Retorna el valor del dígito asignado al carácter *chr* como un entero. Si no "
+"se define dicho valor, se retorna *default* o, si no se proporciona, se "
+"genera una excepción :exc:`ValueError`."
 
-#: ../../library/unicodedata.rst:61
+#: ../Doc/library/unicodedata.rst:61
 msgid ""
 "Returns the numeric value assigned to the character *chr* as float. If no "
 "such value is defined, *default* is returned, or, if not given, :exc:"
 "`ValueError` is raised."
 msgstr ""
-"文字 *chr* に割り当てられている数値を、float で返します。この値が定義されてい"
-"ない場合には *default* が返されますが、この引数が与えられていなければ :exc:"
-"`ValueError` を発生させます。"
+"Retorna el valor numérico asignado al carácter *chr* como un flotante. Si no "
+"se define dicho valor, se retorna *default* o, si no se proporciona, se "
+"lanza una excepción :exc:`ValueError`."
 
-#: ../../library/unicodedata.rst:68
+#: ../Doc/library/unicodedata.rst:68
 msgid "Returns the general category assigned to the character *chr* as string."
-msgstr "文字 *chr* に割り当てられた、汎用カテゴリを返します。"
+msgstr ""
+"Retorna la categoría general asignada al carácter *chr* como una cadena de "
+"caracteres."
 
-#: ../../library/unicodedata.rst:74
+#: ../Doc/library/unicodedata.rst:74
 msgid ""
 "Returns the bidirectional class assigned to the character *chr* as string. "
 "If no such value is defined, an empty string is returned."
 msgstr ""
-"文字 *chr* に割り当てられた、双方向クラスを返します。そのような値が定義されて"
-"いない場合、空の文字列が返されます。"
+"Retorna la clase bidireccional asignada al carácter *chr* como una cadena de "
+"caracteres. Si no se define tal valor, se retorna una cadena de caracteres "
+"vacía."
 
-#: ../../library/unicodedata.rst:80
+#: ../Doc/library/unicodedata.rst:80
 msgid ""
 "Returns the canonical combining class assigned to the character *chr* as "
 "integer. Returns ``0`` if no combining class is defined."
 msgstr ""
-"文字 *chr* に割り当てられた正規結合クラスを返します。結合クラス定義されていな"
-"い場合、``0`` が返されます。"
+"Retorna la clase de combinación canónica asignada al carácter *chr* como un "
+"entero. Retorna ``0`` si no se define ninguna clase de combinación."
 
-#: ../../library/unicodedata.rst:86
+#: ../Doc/library/unicodedata.rst:86
 msgid "Returns the east asian width assigned to the character *chr* as string."
 msgstr ""
-"ユニコード文字 *chr* に割り当てられたeast asian widthを文字列で返します。"
+"Retorna el ancho asignado al carácter *chr* para el este asiático como una "
+"cadena de caracteres."
 
-#: ../../library/unicodedata.rst:92
+#: ../Doc/library/unicodedata.rst:92
 msgid ""
 "Returns the mirrored property assigned to the character *chr* as integer. "
 "Returns ``1`` if the character has been identified as a \"mirrored\" "
 "character in bidirectional text, ``0`` otherwise."
 msgstr ""
-"文字 *chr* に割り当てられた、鏡像化のプロパティを返します。その文字が双方向テ"
-"キスト内で鏡像化された文字である場合には ``1`` を、それ以外の場合には ``0`` "
-"を返します。"
+"Retorna la propiedad reflejada asignada al carácter *chr* como un entero. "
+"Retorna ``1`` si el carácter se ha identificado como un carácter "
+"\"reflejado\" en texto bidireccional y ``0`` en caso contrario."
 
-#: ../../library/unicodedata.rst:99
+#: ../Doc/library/unicodedata.rst:99
 msgid ""
 "Returns the character decomposition mapping assigned to the character *chr* "
 "as string. An empty string is returned in case no such mapping is defined."
 msgstr ""
-"文字 *chr* に割り当てられた、文字分解マッピングを、文字列型で返します。そのよ"
-"うなマッピングが定義されていない場合、空の文字列が返されます。"
+"Retorna el mapeo de descomposición de caracteres asignado al carácter *chr* "
+"como una cadena de caracteres. Se retorna una cadena de caracteres vacía en "
+"caso de que no se defina tal mapeo."
 
-#: ../../library/unicodedata.rst:106
+#: ../Doc/library/unicodedata.rst:106
 msgid ""
 "Return the normal form *form* for the Unicode string *unistr*. Valid values "
 "for *form* are 'NFC', 'NFKC', 'NFD', and 'NFKD'."
 msgstr ""
-"Unicode 文字列 *unistr* の正規形 *form* を返します。 *form* の有効な値"
-"は、'NFC'、'NFKC'、'NFD'、'NFKD' です。"
+"Retorna la forma normalizada *form* para la cadena Unicode *unistr*. Los "
+"valores válidos para *form* son 'NFC', 'NFKC', 'NFD' y 'NFKD'."
 
-#: ../../library/unicodedata.rst:109
+#: ../Doc/library/unicodedata.rst:109
 msgid ""
 "The Unicode standard defines various normalization forms of a Unicode "
 "string, based on the definition of canonical equivalence and compatibility "
@@ -157,13 +168,14 @@ msgid ""
 "also be expressed as the sequence U+0043 (LATIN CAPITAL LETTER C) U+0327 "
 "(COMBINING CEDILLA)."
 msgstr ""
-"Unicode 規格は標準等価性 (canonical equivalence) と互換等価性 (compatibility "
-"equivalence) に基づいて、様々な Unicode文字列の正規形を定義します。Unicode で"
-"は、複数の方法で表現できる文字があります。たとえば、文字 U+00C7 (LATIN "
-"CAPITAL LETTER C WITH CEDILLA) は、U+0043 (LATIN CAPITAL LETTER C) U+0327 "
-"(COMBINING CEDILLA) というシーケンスとしても表現できます。"
+"El estándar Unicode define varias formas de normalización de una cadena "
+"Unicode, basándose en la definición de equivalencia canónica y equivalencia "
+"de compatibilidad. En Unicode, varios caracteres se pueden expresar de "
+"diversas formas. Por ejemplo, el carácter U+00C7 (LETRA C LATINA MAYÚSCULA "
+"CON CEDILLA) también se puede expresar con la secuencia U+0043 (LETRA C "
+"LATINA MAYÚSCULA) U+0327 (CEDILLA COMBINABLE)."
 
-#: ../../library/unicodedata.rst:115
+#: ../Doc/library/unicodedata.rst:115
 msgid ""
 "For each character, there are two normal forms: normal form C and normal "
 "form D. Normal form D (NFD) is also known as canonical decomposition, and "
@@ -171,12 +183,13 @@ msgid ""
 "first applies a canonical decomposition, then composes pre-combined "
 "characters again."
 msgstr ""
-"各文字には2つの正規形があり、それぞれ正規形 C と正規形 D といいます。正規形 "
-"D (NFD) は標準分解 (canonical decomposition) としても知られており、各文字を分"
-"解された形に変換します。正規形 C (NFC) は標準分解を適用した後、結合済文字を再"
-"構成します。"
+"Para cada carácter, hay dos formas normalizadas: la forma normal C y la "
+"forma normal D. La forma normal D (NFD) también se conoce como "
+"descomposición canónica y traduce cada carácter a su forma descompuesta. La "
+"forma normal C (NFC) primero aplica una descomposición canónica y luego "
+"vuelve a componer los caracteres combinados previamente."
 
-#: ../../library/unicodedata.rst:120
+#: ../Doc/library/unicodedata.rst:120
 msgid ""
 "In addition to these two forms, there are two additional normal forms based "
 "on compatibility equivalence. In Unicode, certain characters are supported "
@@ -185,70 +198,77 @@ msgid ""
 "I). However, it is supported in Unicode for compatibility with existing "
 "character sets (e.g. gb2312)."
 msgstr ""
-"互換等価性に基づいて、2つの正規形が加えられています。Unicode では、一般に他の"
-"文字との統合がサポートされている文字があります。たとえば、U+2160 (ROMAN "
-"NUMERAL ONE) は事実上 U+0049 (LATIN CAPITAL LETTER I) と同じものです。しか"
-"し、Unicode では、既存の文字集合 (たとえば gb2312) との互換性のために、これが"
-"サポートされています。"
+"Además de las dos anteriores, hay dos formas normalizadas adicionales "
+"basadas en la equivalencia de compatibilidad. En Unicode, se admiten ciertos "
+"caracteres que normalmente se unificarán con otros caracteres. Por ejemplo, "
+"U+2160 (NUMERAL ROMANO UNO) es realmente lo mismo que U+0049 (LETRA LATINA "
+"MAYÚSCULA I). Sin embargo, esta característica está soportada por Unicode "
+"para ser compatible con los conjuntos de caracteres existentes (por ejemplo, "
+"gb2312)."
 
-#: ../../library/unicodedata.rst:127
+#: ../Doc/library/unicodedata.rst:127
 msgid ""
 "The normal form KD (NFKD) will apply the compatibility decomposition, i.e. "
 "replace all compatibility characters with their equivalents. The normal form "
 "KC (NFKC) first applies the compatibility decomposition, followed by the "
 "canonical composition."
 msgstr ""
-"正規形 KD (NFKD) は、互換分解 (compatibility decomposition) を適用します。す"
-"なわち、すべての互換文字を、等価な文字で置換します。正規形 KC (NFKC) は、互換"
-"分解を適用してから、標準分解を適用します。"
+"La forma normalizada KD (NFKD) aplicará la descomposición de compatibilidad, "
+"es decir, reemplazará todos los caracteres de compatibilidad con sus "
+"equivalentes. La forma normalizada KC (NFKC) primero aplica la "
+"descomposición de compatibilidad, seguida de la composición canónica."
 
-#: ../../library/unicodedata.rst:132
+#: ../Doc/library/unicodedata.rst:132
 msgid ""
 "Even if two unicode strings are normalized and look the same to a human "
 "reader, if one has combining characters and the other doesn't, they may not "
 "compare equal."
 msgstr ""
-"2つのunicode文字列が正規化されていて人間の目に同じに見えても、片方が結合文字"
-"を持っていてもう片方が持っていない場合、それらは完全に同じではありません。"
+"Incluso si dos cadenas Unicode están normalizadas y parecen iguales para un "
+"lector humano, si una tiene caracteres combinados y la otra no, es posible "
+"que no se comparen como iguales."
 
-#: ../../library/unicodedata.rst:138
+#: ../Doc/library/unicodedata.rst:138
 msgid ""
 "Return whether the Unicode string *unistr* is in the normal form *form*. "
 "Valid values for *form* are 'NFC', 'NFKC', 'NFD', and 'NFKD'."
 msgstr ""
-"Unicode 文字列 *unistr* が正規形 *form* かどうかを返します。 *form* の有効な"
-"値は、'NFC'、'NFKC'、'NFD'、'NFKD' です。"
+"Retorna si la cadena Unicode *unistr* está en la forma normalizada *form*. "
+"Los valores válidos para *form* son 'NFC', 'NFKC', 'NFD' y 'NFKD'."
 
-#: ../../library/unicodedata.rst:144
+#: ../Doc/library/unicodedata.rst:144
 msgid "In addition, the module exposes the following constant:"
-msgstr "更に、本モジュールは以下の定数を公開します:"
+msgstr "Además, el módulo expone las siguientes constantes:"
 
-#: ../../library/unicodedata.rst:148
+#: ../Doc/library/unicodedata.rst:148
 msgid "The version of the Unicode database used in this module."
-msgstr "このモジュールで使われている Unicode データベースのバージョン。"
+msgstr "La versión de la base de datos Unicode usada en este módulo."
 
-#: ../../library/unicodedata.rst:153
+#: ../Doc/library/unicodedata.rst:153
 msgid ""
 "This is an object that has the same methods as the entire module, but uses "
 "the Unicode database version 3.2 instead, for applications that require this "
 "specific version of the Unicode database (such as IDNA)."
 msgstr ""
-"これはモジュール全体と同じメソッドを具えたオブジェクトですが、Unicode データ"
-"ベースバージョン 3.2 を代わりに使っており、この特定のバージョンの Unicode "
-"データベースを必要とするアプリケーション(IDNA など)のためものです。"
+"Este es un objeto que tiene los mismos métodos que el módulo completo, pero "
+"usa la versión 3.2 de la base de datos Unicode en su lugar. Es útil para "
+"aplicaciones que requieren esta versión específica de la base de datos "
+"Unicode (como IDNA)."
 
-#: ../../library/unicodedata.rst:157
+#: ../Doc/library/unicodedata.rst:157
 msgid "Examples:"
-msgstr "例:"
+msgstr "Ejemplos:"
 
-#: ../../library/unicodedata.rst:177
+#: ../Doc/library/unicodedata.rst:177
 msgid "Footnotes"
-msgstr "脚注"
+msgstr "Notas al pie"
 
-#: ../../library/unicodedata.rst:178
+#: ../Doc/library/unicodedata.rst:178
+#, fuzzy
 msgid "https://www.unicode.org/Public/14.0.0/ucd/NameAliases.txt"
-msgstr ""
+msgstr "https://www.unicode.org/Public/13.0.0/ucd/NameAliases.txt"
 
-#: ../../library/unicodedata.rst:180
+#: ../Doc/library/unicodedata.rst:180
+#, fuzzy
 msgid "https://www.unicode.org/Public/14.0.0/ucd/NamedSequences.txt"
-msgstr ""
+msgstr "https://www.unicode.org/Public/13.0.0/ucd/NamedSequences.txt"

@@ -1,376 +1,381 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
+# Santiago E Fraire Willemoes <santiwilly@gmail.com>, 2020.
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 00:56+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-12-13 11:34+0800\n"
+"Last-Translator: Rodrigo Tobar <rtobarc@gmail.com>\n"
+"Language: en_GB\n"
+"Language-Team: English - United Kingdom <docs-es@python.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/bz2.rst:2
+#: ../Doc/library/bz2.rst:2
 msgid ":mod:`bz2` --- Support for :program:`bzip2` compression"
-msgstr ":mod:`bz2` --- :program:`bzip2` 圧縮のサポート"
+msgstr ":mod:`bz2` --- Soporte para compresión :program:`bzip2`"
 
-#: ../../library/bz2.rst:12
+#: ../Doc/library/bz2.rst:12
 msgid "**Source code:** :source:`Lib/bz2.py`"
-msgstr "**ソースコード:** :source:`Lib/bz2.py`"
+msgstr "**Código fuente:** :source:`Lib/bz2.py`"
 
-#: ../../library/bz2.rst:16
+#: ../Doc/library/bz2.rst:16
 msgid ""
 "This module provides a comprehensive interface for compressing and "
 "decompressing data using the bzip2 compression algorithm."
 msgstr ""
-"このモジュールは、bzip2 アルゴリズムを用いて圧縮・展開を行う包括的なインター"
-"フェイスを提供します。"
+"Este módulo proporciona una interfaz completa para comprimir y descomprimir "
+"datos utilizando el algoritmo de compresión bzip2."
 
-#: ../../library/bz2.rst:19
+#: ../Doc/library/bz2.rst:19
 msgid "The :mod:`bz2` module contains:"
-msgstr ":mod:`bz2` モジュールには以下のクラスや関数があります:"
+msgstr "El módulo :mod:`bz2` contiene:"
 
-#: ../../library/bz2.rst:21
+#: ../Doc/library/bz2.rst:21
 msgid ""
 "The :func:`.open` function and :class:`BZ2File` class for reading and "
 "writing compressed files."
 msgstr ""
-"圧縮ファイルを読み書きするための :func:`.open` 関数と :class:`BZ2File` クラ"
-"ス。"
+"La función :func:`.open` y la clase :class:`BZ2File` para leer y escribir "
+"archivos comprimidos."
 
-#: ../../library/bz2.rst:23
+#: ../Doc/library/bz2.rst:23
 msgid ""
 "The :class:`BZ2Compressor` and :class:`BZ2Decompressor` classes for "
 "incremental (de)compression."
 msgstr ""
-"インクリメンタルにデータを圧縮・展開するための :class:`BZ2Compressor` およ"
-"び :class:`BZ2Decompressor` クラス。"
+"Las clases :class:`BZ2Compressor` y :class:`BZ2Decompressor` para la "
+"(de)compresión incremental."
 
-#: ../../library/bz2.rst:25
+#: ../Doc/library/bz2.rst:25
 msgid ""
 "The :func:`compress` and :func:`decompress` functions for one-shot "
 "(de)compression."
 msgstr ""
-"一度に圧縮・展開を行う :func:`compress` および :func:`decompress` 関数。"
+"Las funciones :func:`compress` y :func:`decompress` para una (de)compresión "
+"en un solo paso."
 
-#: ../../library/bz2.rst:30
+#: ../Doc/library/bz2.rst:30
 msgid "(De)compression of files"
-msgstr "ファイルの圧縮/解凍"
+msgstr "(De)compresión de archivos"
 
-#: ../../library/bz2.rst:34
+#: ../Doc/library/bz2.rst:34
 msgid ""
 "Open a bzip2-compressed file in binary or text mode, returning a :term:`file "
 "object`."
 msgstr ""
-"bzip2 圧縮されたファイルを、バイナリモードかテキストモードでオープンし、:"
-"term:`ファイルオブジェクト <file object>` を返します。"
+"Abre un archivo comprimido con bzip2 en modo binario o texto, retorna un :"
+"term:`objeto archivo`."
 
-#: ../../library/bz2.rst:37
+#: ../Doc/library/bz2.rst:37
 msgid ""
 "As with the constructor for :class:`BZ2File`, the *filename* argument can be "
 "an actual filename (a :class:`str` or :class:`bytes` object), or an existing "
 "file object to read from or write to."
 msgstr ""
-":class:`BZ2File` のコンストラクタと同様に、引数 *filename* には実際のファイル"
-"名 (:class:`str` または :class:`bytes` オブジェクト) か、読み書きする既存の"
-"ファイルオブジェクトを指定します。"
+"Al igual que con el constructor para :class:`BZ2File`, el argumento "
+"*filename* puede ser un nombre de archivo real (un objeto :class:`str` o :"
+"class:`bytes`), o un objeto de archivo existente para leer o escribirle."
 
-#: ../../library/bz2.rst:41
+#: ../Doc/library/bz2.rst:41
 msgid ""
 "The *mode* argument can be any of ``'r'``, ``'rb'``, ``'w'``, ``'wb'``, "
 "``'x'``, ``'xb'``, ``'a'`` or ``'ab'`` for binary mode, or ``'rt'``, "
 "``'wt'``, ``'xt'``, or ``'at'`` for text mode. The default is ``'rb'``."
 msgstr ""
-"引数 *mode* には、バイナリモード用に ``'r'``、``'rb'``、``'w'``、``'wb'``、"
-"``'x'``、``'xb'``、``'a'``、あるいは ``'ab'``、テキストモード用に ``'rt'``、"
-"``'wt'``、``'xt'``、あるいは ``'at'`` を指定できます。デフォルトは ``'rb'`` "
-"です。"
+"El argumento *mode* puede ser cualquiera de ``'r'``, ``'rb'``, ``'w'``, "
+"``'wb'``, ``'x'``, ``'xb'``, ``'a'`` o ``'ab'`` para modo binario, o "
+"``'rt'``, ``'wt'``, ``'xt'`` , o ``'a'`` para el modo de texto. El valor "
+"predeterminado es ``'rb'``."
 
-#: ../../library/bz2.rst:45
+#: ../Doc/library/bz2.rst:45
 msgid ""
 "The *compresslevel* argument is an integer from 1 to 9, as for the :class:"
 "`BZ2File` constructor."
 msgstr ""
-"引数 *compresslevel* には :class:`BZ2File` コンストラクタと同様に 1 から 9 の"
-"整数を指定します。"
+"El argumento *compresslevel* es un entero del 1 al 9, como para el "
+"constructor de :class:`BZ2File`."
 
-#: ../../library/bz2.rst:48
+#: ../Doc/library/bz2.rst:48
 msgid ""
 "For binary mode, this function is equivalent to the :class:`BZ2File` "
 "constructor: ``BZ2File(filename, mode, compresslevel=compresslevel)``. In "
 "this case, the *encoding*, *errors* and *newline* arguments must not be "
 "provided."
 msgstr ""
-"バイナリモードでは、この関数は :class:`BZ2File` コンストラクタ "
-"``BZ2File(filename, mode, compresslevel=compresslevel)`` と等価です。この時、"
-"引数 *encoding*、*errors*、および *newline* を指定してはいけません。"
+"Para el modo binario, esta función es equivalente a :class:`BZ2File` "
+"constructor: ``BZ2File(filename, mode, compresslevel=compresslevel)``. En "
+"este caso, no se deben proporcionar los argumentos *encoding*, *errors* y "
+"*newline* (nueva linea)."
 
-#: ../../library/bz2.rst:53
+#: ../Doc/library/bz2.rst:53
 msgid ""
 "For text mode, a :class:`BZ2File` object is created, and wrapped in an :"
 "class:`io.TextIOWrapper` instance with the specified encoding, error "
 "handling behavior, and line ending(s)."
 msgstr ""
-"テキストモードでは、:class:`BZ2File` オブジェクトが作成され、指定されたエン"
-"コーディング、エラーハンドラの挙動、および改行文字で :class:`io."
-"TextIOWrapper` にラップされます。"
+"Para el modo de texto, se crea un objeto :class:`BZ2File`, y se envuelve en "
+"una instancia :class:`io.TextIOWrapper` con la codificación especificada, el "
+"comportamiento de manejo de errores y los final(es) de línea."
 
-#: ../../library/bz2.rst:59 ../../library/bz2.rst:124
+#: ../Doc/library/bz2.rst:59 ../Doc/library/bz2.rst:124
 msgid "The ``'x'`` (exclusive creation) mode was added."
-msgstr "``'x'`` (排他的作成) モードが追加されました。"
+msgstr "El modo ``'x'`` (creación exclusiva) ha sido agregado."
 
-#: ../../library/bz2.rst:62 ../../library/bz2.rst:131
+#: ../Doc/library/bz2.rst:62 ../Doc/library/bz2.rst:131
 msgid "Accepts a :term:`path-like object`."
-msgstr ":term:`path-like object` を受け入れるようになりました。"
+msgstr "Acepta un objeto similar a una ruta (:term:`path-like object`)."
 
-#: ../../library/bz2.rst:68
+#: ../Doc/library/bz2.rst:68
 msgid "Open a bzip2-compressed file in binary mode."
-msgstr "bzip2 圧縮ファイルをバイナリモードでオープンします。"
+msgstr "Abre un archivo comprimido con bzip2 en modo binario."
 
-#: ../../library/bz2.rst:70
+#: ../Doc/library/bz2.rst:70
 msgid ""
 "If *filename* is a :class:`str` or :class:`bytes` object, open the named "
 "file directly. Otherwise, *filename* should be a :term:`file object`, which "
 "will be used to read or write the compressed data."
 msgstr ""
-"*filename* が :class:`str` あるいは :class:`bytes` オブジェクトの場合、それを"
-"名前とするファイルを直接開きます。そうでない場合、*filename* は圧縮データを読"
-"み書きする :term:`ファイルオブジェクト <file object>` でなくてはなりません。"
+"Si *filename* es un objeto tipo :class:`str` o :class:`bytes`, abre el "
+"archivo nombrado directamente. De lo contrario, *filename* debería ser un :"
+"term:`file object`, que se utilizará para leer o escribir los datos "
+"comprimidos."
 
-#: ../../library/bz2.rst:74
+#: ../Doc/library/bz2.rst:74
 msgid ""
 "The *mode* argument can be either ``'r'`` for reading (default), ``'w'`` for "
 "overwriting, ``'x'`` for exclusive creation, or ``'a'`` for appending. These "
 "can equivalently be given as ``'rb'``, ``'wb'``, ``'xb'`` and ``'ab'`` "
 "respectively."
 msgstr ""
-"引数 *mode* は読み込みモードの ``'r'`` (デフォルト)、上書きモードの ``'w'``、"
-"排他的作成モードの ``'x'``、あるいは追記モードの ``'a'`` のいずれかを指定でき"
-"ます。これらはそれぞれ ``'rb'``、``'wb'``、``'xb'`` および ``'ab'`` と等価で"
-"す。"
+"El argumento *mode* puede ser ``'r'`` para lectura (predeterminado), ``'w'`` "
+"para sobrescribir, ``'x'`` para creación exclusiva o ``'a'`` para anexar. "
+"Estos se pueden dar de manera equivalente como ``'rb'``, ``'wb'``, ``'xb'`` "
+"y ``'ab'`` respectivamente."
 
-#: ../../library/bz2.rst:79
+#: ../Doc/library/bz2.rst:79
 msgid ""
 "If *filename* is a file object (rather than an actual file name), a mode of "
 "``'w'`` does not truncate the file, and is instead equivalent to ``'a'``."
 msgstr ""
-"*filename* が (実際のファイル名でなく) ファイルオブジェクトの場合、``'w'`` は"
-"ファイルを上書きせず、``'a'`` と等価になります。"
+"Si *filename* es un objeto de archivo (en lugar de un nombre de archivo "
+"real), el modo ``'w'`` no trunca el archivo, y es equivalente a ``'a'``."
 
-#: ../../library/bz2.rst:82
+#: ../Doc/library/bz2.rst:82
 msgid ""
 "If *mode* is ``'w'`` or ``'a'``, *compresslevel* can be an integer between "
 "``1`` and ``9`` specifying the level of compression: ``1`` produces the "
 "least compression, and ``9`` (default) produces the most compression."
 msgstr ""
-"*mode* が ``'w'`` あるいは ``'a'`` の場合、*compresslevel* に圧縮レベルを "
-"``1`` から ``9`` の整数で指定できます。\n"
-"圧縮率は ``1`` が最低で、``9`` (デフォルト値) が最高です。"
+"Si *mode* es ``'w'`` o ``'a'``, *compresslevel* puede ser un número entero "
+"entre ``1`` y ``9`` especificando el nivel de compresión: ``1`` produce la "
+"menor compresión y ``9`` (predeterminado) produce la mayor compresión."
 
-#: ../../library/bz2.rst:86
+#: ../Doc/library/bz2.rst:86
 msgid ""
 "If *mode* is ``'r'``, the input file may be the concatenation of multiple "
 "compressed streams."
 msgstr ""
-"*mode* の値が ``'r'`` の場合、入力ファイルは複数の圧縮ストリームでも構いませ"
-"ん。"
+"Si *mode* es ``'r'``, el archivo de entrada puede ser la concatenación de "
+"múltiples flujos (streams) comprimidos."
 
-#: ../../library/bz2.rst:89
+#: ../Doc/library/bz2.rst:89
 msgid ""
 ":class:`BZ2File` provides all of the members specified by the :class:`io."
 "BufferedIOBase`, except for :meth:`detach` and :meth:`truncate`. Iteration "
 "and the :keyword:`with` statement are supported."
 msgstr ""
-":class:`BZ2File` には、 :class:`io.BufferedIOBase` で規定されているメソッドや"
-"属性のうち、 :meth:`detach` と :meth:`truncate` を除くすべてが備わっていま"
-"す。イテレーションと :keyword:`with` 文をサポートしています。"
+":class:`BZ2File` proporciona todos los miembros especificados por :class:`io."
+"BufferedIOBase`, excepto :meth:`detach` y :meth:`truncate`. Se admite la "
+"iteración y la palabra clave :keyword:`with`."
 
-#: ../../library/bz2.rst:93
+#: ../Doc/library/bz2.rst:93
 msgid ":class:`BZ2File` also provides the following method:"
-msgstr ":class:`BZ2File` は以下のメソッドも提供しています:"
+msgstr ":class:`BZ2File` también proporciona el siguiente método:"
 
-#: ../../library/bz2.rst:97
+#: ../Doc/library/bz2.rst:97
 msgid ""
 "Return buffered data without advancing the file position. At least one byte "
 "of data will be returned (unless at EOF). The exact number of bytes returned "
 "is unspecified."
 msgstr ""
-"ファイル上の現在位置を変更せずにバッファのデータを返します。このメソッドは少"
-"なくとも 1 バイトのデータを返します (EOF の場合を除く)。返される正確なバイト"
-"数は規定されていません。"
+"Retorna datos almacenados en el búfer sin avanzar la posición del archivo. "
+"Se retornará al menos un byte de datos (a menos que sea EOF). El número "
+"exacto de bytes retornados no está especificado."
 
-#: ../../library/bz2.rst:101
+#: ../Doc/library/bz2.rst:101
 msgid ""
 "While calling :meth:`peek` does not change the file position of the :class:"
 "`BZ2File`, it may change the position of the underlying file object (e.g. if "
 "the :class:`BZ2File` was constructed by passing a file object for "
 "*filename*)."
 msgstr ""
-":meth:`peek` の呼び出しでは :class:`BZ2File` のファイル位置は変わりませんが、"
-"下層のファイルオブジェクトの位置が変わる惧れがあります(e.g. :class:`BZ2File` "
-"を *filename* にファイルオブジェクトを渡して作成した場合)。"
+"Al invocar :meth:`peek` no cambia la posición del archivo de :class:"
+"`BZ2File`, puede cambiar la posición del objeto de archivo subyacente (por "
+"ejemplo, si :class:`BZ2File` se construyó pasando un objeto de archivo a "
+"*filename*)."
 
-#: ../../library/bz2.rst:109
+#: ../Doc/library/bz2.rst:109
 msgid "Support for the :keyword:`with` statement was added."
-msgstr ":keyword:`with` 構文のサポートが追加されました。"
+msgstr "Se agregó soporte para la declaración :keyword:`with`."
 
-#: ../../library/bz2.rst:112
+#: ../Doc/library/bz2.rst:112
 msgid ""
 "The :meth:`fileno`, :meth:`readable`, :meth:`seekable`, :meth:`writable`, :"
 "meth:`read1` and :meth:`readinto` methods were added."
 msgstr ""
-":meth:`fileno` 、 :meth:`readable` 、 :meth:`seekable` 、 :meth:"
-"`writable` 、 :meth:`read1` 、 :meth:`readinto` メソッドが追加されました。"
+"Se agregaron los métodos :meth:`fileno`, :meth:`legible`, :meth:`seekable`, :"
+"meth:`writable`, :meth:`read1` y :meth:`readinto`."
 
-#: ../../library/bz2.rst:116
+#: ../Doc/library/bz2.rst:116
 msgid ""
 "Support was added for *filename* being a :term:`file object` instead of an "
 "actual filename."
 msgstr ""
-"*filename* が実際のファイル名でなく :term:`ファイルオブジェクト <file "
-"object>` だった場合のサポートが追加されました。"
+"Se agregó soporte para *filename* siendo un objeto de archivo (:term:`file "
+"object`) en lugar de un nombre de archivo real."
 
-#: ../../library/bz2.rst:120
+#: ../Doc/library/bz2.rst:120
 msgid ""
 "The ``'a'`` (append) mode was added, along with support for reading multi-"
 "stream files."
 msgstr ""
-"``'a'`` (追記) モードが追加され、複数のストリームの読み込みがサポートされまし"
-"た。"
+"Se agregó el modo ``'a'`` (agregar), junto con el soporte para leer archivos "
+"de flujo múltiple (multi-stream)."
 
-#: ../../library/bz2.rst:127
+#: ../Doc/library/bz2.rst:127
 msgid ""
 "The :meth:`~io.BufferedIOBase.read` method now accepts an argument of "
 "``None``."
 msgstr ""
-":meth:`~io.BufferedIOBase.read` メソッドが ``None`` を引数として受け取るよう"
-"になりました。"
+"El método :meth:`~io.BufferedIOBase.read` ahora acepta el argumento ``None``."
 
-#: ../../library/bz2.rst:134
+#: ../Doc/library/bz2.rst:134
 msgid ""
 "The *buffering* parameter has been removed. It was ignored and deprecated "
 "since Python 3.0. Pass an open file object to control how the file is opened."
 msgstr ""
-"*buffering* パラメータは削除されました。 Python 3.0 からは無視され非推奨と"
-"なっています。開かれたファイルオブジェクトを渡し、ファイルの開きかたを制御し"
-"ます。"
+"El parámetro *buffering* ha sido retirado. Desde Python 3.0 era ignorado y "
+"estaba obsoleto. Pasa un objeto archivo abierto para controlar cómo el "
+"archivo es abierto."
 
-#: ../../library/bz2.rst:139
+#: ../Doc/library/bz2.rst:139
 msgid "The *compresslevel* parameter became keyword-only."
-msgstr "*compresslevel* パラメータはキーワード専用になりました。"
+msgstr ""
+"El parámetro *compresslevel* se convirtió en un argumento sólo por palabra "
+"clave."
 
-#: ../../library/bz2.rst:141
+#: ../Doc/library/bz2.rst:141
 msgid ""
 "This class is thread unsafe in the face of multiple simultaneous readers or "
 "writers, just like its equivalent classes in :mod:`gzip` and :mod:`lzma` "
 "have always been."
 msgstr ""
-"このクラスは、複数の同時読み出しや書き込みにおいては、既存の :mod:`gzip` や :"
-"mod:`lzma`  などの同等のクラスのように、スレッド安全ではありません。"
+"Esta clase es insegura en hilos frente a múltiples lectores o escritores, al "
+"igual que sus clases equivalentes en :mod:`gzip` y :mod:`lzma` siempre lo "
+"han sido."
 
-#: ../../library/bz2.rst:148
+#: ../Doc/library/bz2.rst:148
 msgid "Incremental (de)compression"
-msgstr "逐次圧縮および展開"
+msgstr "(De)compresión incremental"
 
-#: ../../library/bz2.rst:152
+#: ../Doc/library/bz2.rst:152
 msgid ""
 "Create a new compressor object. This object may be used to compress data "
 "incrementally. For one-shot compression, use the :func:`compress` function "
 "instead."
 msgstr ""
-"新しくコンプレッサオブジェクトを作成します。このオブジェクトはデータの逐次的"
-"な圧縮に使用できます。一度に圧縮したい場合は、:func:`compress` 関数を使ってく"
-"ださい。"
+"Crea un nuevo objeto compresor. Este objeto puede usarse para comprimir "
+"datos de forma incremental. Para comprimir en un solo paso, use la función :"
+"func:`compress` en su lugar."
 
-#: ../../library/bz2.rst:156 ../../library/bz2.rst:244
+#: ../Doc/library/bz2.rst:156 ../Doc/library/bz2.rst:244
 msgid ""
 "*compresslevel*, if given, must be an integer between ``1`` and ``9``. The "
 "default is ``9``."
 msgstr ""
-"引数 *compresslevel* を指定する場合は、``1`` から ``9`` までの整数を与えてく"
-"ださい。\n"
-"デフォルト値は ``9`` です。"
+"*compresslevel*, si se proporciona, debe ser un número entero entre ``1`` y "
+"``9``. El valor predeterminado es ``9``."
 
-#: ../../library/bz2.rst:161
+#: ../Doc/library/bz2.rst:161
 msgid ""
 "Provide data to the compressor object. Returns a chunk of compressed data if "
 "possible, or an empty byte string otherwise."
 msgstr ""
-"データをコンプレッサオブジェクトに渡します。戻り値は圧縮されたデータですが、"
-"圧縮データを返すことができない場合は空のバイト文字列を返します。"
+"Provee datos al objeto del compresor. Retorna un fragmento de datos "
+"comprimidos si es posible, o una cadena de bytes vacía de lo contrario."
 
-#: ../../library/bz2.rst:164
+#: ../Doc/library/bz2.rst:164
 msgid ""
 "When you have finished providing data to the compressor, call the :meth:"
 "`flush` method to finish the compression process."
 msgstr ""
-"コンプレッサオブジェクトにデータをすべて渡し終えたら、:meth:`flush` メソッド"
-"を呼び出し、圧縮プロセスを完了させてください。"
+"Cuando haya terminado de proporcionar datos al compresor, llame al método :"
+"meth:`flush` para finalizar el proceso de compresión."
 
-#: ../../library/bz2.rst:170
+#: ../Doc/library/bz2.rst:170
 msgid ""
 "Finish the compression process. Returns the compressed data left in internal "
 "buffers."
 msgstr ""
-"圧縮プロセスを完了させ、内部バッファに残っている圧縮済みデータを返します。"
+"Termina el proceso de compresión. Retorna los datos comprimidos que quedan "
+"en los búferes internos."
 
-#: ../../library/bz2.rst:173
+#: ../Doc/library/bz2.rst:173
 msgid ""
 "The compressor object may not be used after this method has been called."
 msgstr ""
-"このメソッドを呼び出すと、それ以後コンプレッサオブジェクトは使用できなくなり"
-"ます。"
+"El objeto compresor no puede usarse después de que se haya llamado a este "
+"método."
 
-#: ../../library/bz2.rst:178
+#: ../Doc/library/bz2.rst:178
 msgid ""
 "Create a new decompressor object. This object may be used to decompress data "
 "incrementally. For one-shot compression, use the :func:`decompress` function "
 "instead."
 msgstr ""
-"新しくデコンプレッサオブジェクトを作成します。このオブジェクトは逐次的なデー"
-"タ展開に使用できます。一度に展開したい場合は、:func:`decompress` 関数を使って"
-"ください。"
+"Crea un nuevo objeto descompresor. Este objeto puede usarse para "
+"descomprimir datos de forma incremental. Para descomprimir en un solo paso, "
+"use la función :func:`decompress` en su lugar."
 
-#: ../../library/bz2.rst:183
+#: ../Doc/library/bz2.rst:183
 msgid ""
 "This class does not transparently handle inputs containing multiple "
 "compressed streams, unlike :func:`decompress` and :class:`BZ2File`. If you "
 "need to decompress a multi-stream input with :class:`BZ2Decompressor`, you "
 "must use a new decompressor for each stream."
 msgstr ""
-"このクラスは、:func:`decompress` や :class:`BZ2File` とは異なり、複数の圧縮レ"
-"ベルが混在しているデータを透過的に扱うことができません。 :class:"
-"`BZ2Decompressor` クラスを用いて、複数のストリームからなるデータを展開する場"
-"合は、それぞれのストリームについてデコンプレッサオブジェクトを用意してくださ"
-"い。"
+"Esta clase no maneja de forma transparente las entradas que contienen "
+"múltiples flujos comprimidos, a diferencia de :func:`decompress` y :class:"
+"`BZ2File`. Si necesitas descomprimir una entrada de flujo múltiple con :"
+"class:`BZ2Decompressor`, debe usar un nuevo descompresor para cada flujo "
+"(stream)."
 
-#: ../../library/bz2.rst:190
+#: ../Doc/library/bz2.rst:190
 msgid ""
 "Decompress *data* (a :term:`bytes-like object`), returning uncompressed data "
 "as bytes. Some of *data* may be buffered internally, for use in later calls "
 "to :meth:`decompress`. The returned data should be concatenated with the "
 "output of any previous calls to :meth:`decompress`."
 msgstr ""
-"*data* (:term:`bytes-like object`) を展開し、未圧縮のデータを bytes で返しま"
-"す。\n"
-"*data* の一部は、後で :meth:`decompress` の呼び出しに使用するため内部でバッ"
-"ファされている場合があります。\n"
-"返されたデータは、以前の :meth:`decompress` の呼び出しの出力に連結する必要が"
-"あります。"
+"Descomprime *datos* (un :term:`bytes-like object`), retornando datos sin "
+"comprimir como bytes. Algunos de los *datos* pueden almacenarse internamente "
+"para su uso en llamadas posteriores a :meth:`decompress`. Los datos "
+"retornados deben concatenarse con la salida de cualquier llamada anterior a :"
+"meth:`decompress`."
 
-#: ../../library/bz2.rst:196
+#: ../Doc/library/bz2.rst:196
 msgid ""
 "If *max_length* is nonnegative, returns at most *max_length* bytes of "
 "decompressed data. If this limit is reached and further output can be "
@@ -378,116 +383,128 @@ msgid ""
 "this case, the next call to :meth:`~.decompress` may provide *data* as "
 "``b''`` to obtain more of the output."
 msgstr ""
-"*max_length* が非負の場合、最大 *max_length* バイトの展開データを返します。こ"
-"の制限に達して、出力がさらに生成できる場合、 :attr:`~.needs_input` が "
-"``False`` に設定されます。この場合、 :meth:`~.decompress` を次に呼び出すと、"
-"*data* を ``b''`` として提供し、出力をさらに取得することができます。"
+"Si *max_length* no es negativo, retorna como máximo *max_length* bytes de "
+"datos descomprimidos. Si se alcanza este límite y se pueden producir más "
+"resultados, el atributo :attr:`~.needs_input` se establecerá en ``False``. "
+"En este caso, la siguiente llamada a :meth:`~.decompress` puede proporcionar "
+"*datos* como ``b''`` para obtener más de la salida."
 
-#: ../../library/bz2.rst:203
+#: ../Doc/library/bz2.rst:203
 msgid ""
 "If all of the input data was decompressed and returned (either because this "
 "was less than *max_length* bytes, or because *max_length* was negative), "
 "the :attr:`~.needs_input` attribute will be set to ``True``."
 msgstr ""
-"入力データの全てが圧縮され返された (*max_length* バイトより少ないためか "
-"*max_length* が負のため) 場合、\n"
-":attr:`~.needs_input` 属性は ``True`` になります。"
+"Si todos los datos de entrada se descomprimieron y retornaron (ya sea porque "
+"esto era menor que *max_length* bytes, o porque *max_length* era negativo), "
+"el atributo :attr:`~.needs_input` se establecerá en ``True``."
 
-#: ../../library/bz2.rst:208
+#: ../Doc/library/bz2.rst:208
+#, fuzzy
 msgid ""
 "Attempting to decompress data after the end of stream is reached raises an :"
 "exc:`EOFError`.  Any data found after the end of the stream is ignored and "
 "saved in the :attr:`~.unused_data` attribute."
 msgstr ""
+"Intentar descomprimir datos una vez que se alcanza el final de la "
+"transmisión genera un `EOFError`. Cualquier dato encontrado después del "
+"final del flujo se ignora y se guarda en el atributo :attr:`~.unused_data`."
 
-#: ../../library/bz2.rst:212
+#: ../Doc/library/bz2.rst:212
 msgid "Added the *max_length* parameter."
-msgstr "``max_length`` パラメータが追加されました。"
+msgstr "Añadido el parámetro *max_length*."
 
-#: ../../library/bz2.rst:217
+#: ../Doc/library/bz2.rst:217
 msgid "``True`` if the end-of-stream marker has been reached."
-msgstr "ストリーム終端記号に到達した場合 ``True`` を返します。"
+msgstr "``True`` si se ha alcanzado el marcador de fin de flujo."
 
-#: ../../library/bz2.rst:224
+#: ../Doc/library/bz2.rst:224
 msgid "Data found after the end of the compressed stream."
-msgstr "圧縮ストリームの末尾以降に存在したデータを表します。"
+msgstr "Datos encontrados después del final del flujo comprimido."
 
-#: ../../library/bz2.rst:226
+#: ../Doc/library/bz2.rst:226
 msgid ""
 "If this attribute is accessed before the end of the stream has been reached, "
 "its value will be ``b''``."
 msgstr ""
-"ストリームの末尾に達する前には、この属性には ``b''`` という値が収められていま"
-"す。"
+"Si se accede a este atributo antes de que se haya alcanzado el final del "
+"flujo, su valor será ``b''``."
 
-#: ../../library/bz2.rst:231
+#: ../Doc/library/bz2.rst:231
 msgid ""
 "``False`` if the :meth:`.decompress` method can provide more decompressed "
 "data before requiring new uncompressed input."
 msgstr ""
-":meth:`.decompress` メソッドが、新しい非圧縮入力を必要とせずにさらに展開デー"
-"タを提供できる場合、 ``False`` です。"
+"``False`` si el método :meth:`.decompress` puede proporcionar más datos "
+"descomprimidos antes de requerir una nueva entrada sin comprimir."
 
-#: ../../library/bz2.rst:238
+#: ../Doc/library/bz2.rst:238
 msgid "One-shot (de)compression"
-msgstr "一括圧縮/解凍"
+msgstr "(Des)comprimir en un solo paso"
 
-#: ../../library/bz2.rst:242
+#: ../Doc/library/bz2.rst:242
 msgid "Compress *data*, a :term:`bytes-like object <bytes-like object>`."
 msgstr ""
-":term:`バイト類オブジェクト <bytes-like object>` の *data* を圧縮します。"
+"Comprime *datos*, un :term:`objetos tipo binarios <bytes-like object>`."
 
-#: ../../library/bz2.rst:247
+#: ../Doc/library/bz2.rst:247
 msgid "For incremental compression, use a :class:`BZ2Compressor` instead."
-msgstr ""
-"逐次的にデータを圧縮したい場合は、:class:`BZ2Compressor` を使ってください。"
+msgstr "Para compresión incremental, use :class:`BZ2Compressor` en su lugar."
 
-#: ../../library/bz2.rst:252
+#: ../Doc/library/bz2.rst:252
 msgid "Decompress *data*, a :term:`bytes-like object <bytes-like object>`."
 msgstr ""
-":term:`バイト類オブジェクト <bytes-like object>` の *data* を展開します。"
+"Descomprime *datos*, un :term:`objetos tipo binarios <bytes-like object>`."
 
-#: ../../library/bz2.rst:254
+#: ../Doc/library/bz2.rst:254
 msgid ""
 "If *data* is the concatenation of multiple compressed streams, decompress "
 "all of the streams."
-msgstr "*data* が複数の圧縮ストリームから成る場合、そのすべてを展開します。"
+msgstr ""
+"Si *data* es la concatenación de múltiples flujos comprimidos, descomprime "
+"todos los flujos."
 
-#: ../../library/bz2.rst:257
+#: ../Doc/library/bz2.rst:257
 msgid "For incremental decompression, use a :class:`BZ2Decompressor` instead."
-msgstr "逐次的に展開を行う場合は、:class:`BZ2Decompressor` を使ってください。"
+msgstr ""
+"Para la descompresión incremental, use :class:`BZ2Decompressor` en su lugar."
 
-#: ../../library/bz2.rst:259
+#: ../Doc/library/bz2.rst:259
 msgid "Support for multi-stream inputs was added."
-msgstr "複数ストリームの入力をサポートしました。"
+msgstr "Se agregó soporte para entradas de flujo múltiple."
 
-#: ../../library/bz2.rst:265
+#: ../Doc/library/bz2.rst:265
 msgid "Examples of usage"
-msgstr "使い方の例"
+msgstr "Ejemplos de uso"
 
-#: ../../library/bz2.rst:267
+#: ../Doc/library/bz2.rst:267
 msgid "Below are some examples of typical usage of the :mod:`bz2` module."
-msgstr "以下は、典型的な :mod:`bz2` モジュールの利用方法です。"
+msgstr "Aquí hay algunos ejemplos del uso típico del modulo :mod:`bz2`."
 
-#: ../../library/bz2.rst:269
+#: ../Doc/library/bz2.rst:269
 msgid ""
 "Using :func:`compress` and :func:`decompress` to demonstrate round-trip "
 "compression:"
 msgstr ""
-":func:`compress` と :func:`decompress` を使い、圧縮して展開する実演をしていま"
-"す:"
+"Usando :func:`compress` y :func:`decompress` para demostrar una compresión "
+"de ida y vuelta (*round-trip*):"
 
-#: ../../library/bz2.rst:287
+#: ../Doc/library/bz2.rst:287
 msgid "Using :class:`BZ2Compressor` for incremental compression:"
-msgstr ":class:`BZ2Compressor` を使い、逐次圧縮をしています:"
+msgstr "Usando :class:`BZ2Compressor` para compresión incremental:"
 
-#: ../../library/bz2.rst:305
+#: ../Doc/library/bz2.rst:305
+#, fuzzy
 msgid ""
 "The example above uses a very \"nonrandom\" stream of data (a stream of "
 "``b\"z\"`` chunks).  Random data tends to compress poorly, while ordered, "
 "repetitive data usually yields a high compression ratio."
 msgstr ""
+"El ejemplo anterior utiliza un flujo de datos bastante \"no aleatoria\"(un "
+"flujo de fragmentos `b\"z\"`). Los datos aleatorios tienden a comprimirse "
+"mal, mientras que los datos ordenados y repetitivos generalmente producen "
+"una alta relación de compresión."
 
-#: ../../library/bz2.rst:309
+#: ../Doc/library/bz2.rst:309
 msgid "Writing and reading a bzip2-compressed file in binary mode:"
-msgstr "bzip2 圧縮されたファイルをバイナリモードで読み書きしています:"
+msgstr "Escribiendo y leyendo un archivo comprimido con bzip2 en modo binario:"

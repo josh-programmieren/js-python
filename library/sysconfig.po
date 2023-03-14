@@ -1,303 +1,331 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:14+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2022-11-04 19:47-0300\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language-Team: python-doc-es\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.10.3\n"
+"X-Generator: Poedit 3.0.1\n"
 
-#: ../../library/sysconfig.rst:2
+#: ../Doc/library/sysconfig.rst:2
 msgid ""
 ":mod:`sysconfig` --- Provide access to Python's configuration information"
-msgstr ":mod:`sysconfig` --- Python の構成情報にアクセスする"
+msgstr ""
+":mod:`sysconfig` --- Proporciona acceso a la información de configuración de "
+"Python"
 
-#: ../../library/sysconfig.rst:12
+#: ../Doc/library/sysconfig.rst:12
 msgid "**Source code:** :source:`Lib/sysconfig.py`"
-msgstr "**ソースコード:** :source:`Lib/sysconfig.py`"
+msgstr "**Código fuente:** :source:`Lib/sysconfig.py`"
 
-#: ../../library/sysconfig.rst:19
+#: ../Doc/library/sysconfig.rst:19
 msgid ""
 "The :mod:`sysconfig` module provides access to Python's configuration "
 "information like the list of installation paths and the configuration "
 "variables relevant for the current platform."
 msgstr ""
-":mod:`sysconfig` モジュールは、インストールパスのリストや、現在のプラット"
-"フォームに関連した構成などの、Python の構成情報 (configuration information) "
-"へのアクセスを提供します。"
+"El módulo :mod:`sysconfig` proporcionado acceso a la información de "
+"configuración de Python, como la lista de rutas de instalación y las "
+"variables de configuración relevantes para la plataforma actual."
 
-#: ../../library/sysconfig.rst:24
+#: ../Doc/library/sysconfig.rst:24
 msgid "Configuration variables"
-msgstr "構成変数"
+msgstr "Variables de configuración"
 
-#: ../../library/sysconfig.rst:26
+#: ../Doc/library/sysconfig.rst:26
 msgid ""
 "A Python distribution contains a :file:`Makefile` and a :file:`pyconfig.h` "
 "header file that are necessary to build both the Python binary itself and "
 "third-party C extensions compiled using :mod:`distutils`."
 msgstr ""
-"Python の配布物は、Python 自体のバイナリや、:mod:`distutils` によってコンパイ"
-"ルされる外部の C 拡張をビルドするために必要な、:file:`Makefile` と :file:"
-"`pyconfig.h` ヘッダーファイルを含んでいます。"
+"Una distribución de Python contiene un :file:`Makefile` y un archivo de "
+"cabecera :file:`pyconfig.h` que son necesarios para construir tanto el "
+"propio binario de Python como las extensiones C de terceros compiladas "
+"usando :mod:`distutils`."
 
-#: ../../library/sysconfig.rst:30
+#: ../Doc/library/sysconfig.rst:30
 msgid ""
 ":mod:`sysconfig` puts all variables found in these files in a dictionary "
 "that can be accessed using :func:`get_config_vars` or :func:`get_config_var`."
 msgstr ""
-":mod:`sysconfig` はこれらのファイルに含まれるすべての変数を辞書に格納し、:"
-"func:`get_config_vars` や :func:`get_config_var` でアクセスできるようにしま"
-"す。"
+":mod:`sysconfig` coloca todas las variables que se encuentran en estos "
+"archivos un diccionario al que se puede acceder usando :func:"
+"`get_config_vars` o :func:`get_config_var`."
 
-#: ../../library/sysconfig.rst:33
+#: ../Doc/library/sysconfig.rst:33
 msgid "Notice that on Windows, it's a much smaller set."
-msgstr "Windows では構成変数はだいぶ少なくなります。"
+msgstr "Tenga en cuenta que en Windows, es un conjunto mucho más pequeño."
 
-#: ../../library/sysconfig.rst:37
+#: ../Doc/library/sysconfig.rst:37
 msgid ""
 "With no arguments, return a dictionary of all configuration variables "
 "relevant for the current platform."
 msgstr ""
-"引数がない場合、現在のプラットフォームに関するすべての構成変数の辞書を返しま"
-"す。"
+"Sin argumentos, retorna un diccionario de todas las variables de "
+"configuración relevantes para la plataforma actual."
 
-#: ../../library/sysconfig.rst:40
+#: ../Doc/library/sysconfig.rst:40
 msgid ""
 "With arguments, return a list of values that result from looking up each "
 "argument in the configuration variable dictionary."
 msgstr ""
-"引数がある場合、各引数を構成変数辞書から検索した結果の変数のリストを返しま"
-"す。"
+"Con argumentos, retorna un lista de valores que resultan de buscar cada "
+"argumento en el diccionario de variables de configuración."
 
-#: ../../library/sysconfig.rst:43
+#: ../Doc/library/sysconfig.rst:43
 msgid "For each argument, if the value is not found, return ``None``."
-msgstr "各引数において、変数が見つからなかった場合は ``None`` が返されます。"
+msgstr "Por cada argumento, si no se encuentra el valor, retorna ``None``."
 
-#: ../../library/sysconfig.rst:48
+#: ../Doc/library/sysconfig.rst:48
 msgid ""
 "Return the value of a single variable *name*. Equivalent to "
 "``get_config_vars().get(name)``."
 msgstr ""
-"1つの変数 *name* を返します。``get_config_vars().get(name)`` と同じです。"
+"Retorna el valor de un solo nombre de variable (*name*). Equivalente a "
+"``get_config_vars().get(name)``."
 
-#: ../../library/sysconfig.rst:51
+#: ../Doc/library/sysconfig.rst:51
 msgid "If *name* is not found, return ``None``."
-msgstr "*name* が見つからない場合、``None`` を返します。"
+msgstr "Si no se encuentra *name*, retorna ``None``."
 
-#: ../../library/sysconfig.rst:53
+#: ../Doc/library/sysconfig.rst:53
 msgid "Example of usage::"
-msgstr "Example of usage::"
+msgstr "Ejemplos de uso::"
 
-#: ../../library/sysconfig.rst:66
+#: ../Doc/library/sysconfig.rst:66
 msgid "Installation paths"
-msgstr "インストールパス"
+msgstr "Rutas de instalación"
 
-#: ../../library/sysconfig.rst:68
+#: ../Doc/library/sysconfig.rst:68
 msgid ""
 "Python uses an installation scheme that differs depending on the platform "
 "and on the installation options.  These schemes are stored in :mod:"
 "`sysconfig` under unique identifiers based on the value returned by :const:"
 "`os.name`."
 msgstr ""
-"Python はプラットフォームとインストールオプションによって、異なるインストール"
-"スキームを利用します。このスキームは、:const:`os.name` の値に基づいてユニーク"
-"な識別子で :mod:`sysconfig` に格納されます。"
+"Python usa un esquema de instalación que difiere según la plataforma y en "
+"las opciones de instalación. Estos esquemas son almacenados en :mod:"
+"`sysconfig` con identificadores únicos basados en el valor retornado por :"
+"const:`os.name`."
 
-#: ../../library/sysconfig.rst:72
+#: ../Doc/library/sysconfig.rst:72
 msgid ""
 "Every new component that is installed using :mod:`distutils` or a Distutils-"
 "based system will follow the same scheme to copy its file in the right "
 "places."
 msgstr ""
-":mod:`distutils` やそれに基づいたシステムによって新しいコンポーネントをインス"
-"トールするときは、同じスキームに従ってファイルを正しい場所にコピーします。"
+"Cada nuevo componente que se instala usando :mod:`distutils` o un sistema "
+"basado en *Distutils* seguirá el mismo esquema para copiar su archivo en los "
+"lugares correctos."
 
-#: ../../library/sysconfig.rst:76
+#: ../Doc/library/sysconfig.rst:76
 msgid "Python currently supports nine schemes:"
-msgstr ""
+msgstr "Python actualmente admite nueve esquemas:"
 
-#: ../../library/sysconfig.rst:78
+#: ../Doc/library/sysconfig.rst:78
 msgid ""
 "*posix_prefix*: scheme for POSIX platforms like Linux or macOS.  This is the "
 "default scheme used when Python or a component is installed."
 msgstr ""
+"*posix_prefix*: esquema para plataformas POSIX como Linux o macOS. Este es "
+"el esquema predeterminado que se usa cuando se instala Python o un "
+"componente."
 
-#: ../../library/sysconfig.rst:80
+#: ../Doc/library/sysconfig.rst:80
 msgid ""
 "*posix_home*: scheme for POSIX platforms used when a *home* option is used "
 "upon installation.  This scheme is used when a component is installed "
 "through Distutils with a specific home prefix."
 msgstr ""
-"*posix_home*: インストール時に *home* オプションが利用された場合における、"
-"POSIX プラットフォーム用のスキームです。このスキームはコンポーネントが "
-"Distutils に特定の home prefix を指定してインストールされたときに利用されま"
-"す。"
+"*posix_home*: esquema para plataformas POSIX usado cuando se usa una opción "
+"*home* en la instalación. Este esquema se usa cuando se instala un "
+"componente a través de *Disutils* con un prefijo de inicio específico."
 
-#: ../../library/sysconfig.rst:83
+#: ../Doc/library/sysconfig.rst:83
 msgid ""
 "*posix_user*: scheme for POSIX platforms used when a component is installed "
 "through Distutils and the *user* option is used.  This scheme defines paths "
 "located under the user home directory."
 msgstr ""
-"*posix_user*: Distutils に *user* オプションを指定してコンポーネントをインス"
-"トールするときに使われる、POSIX プラットフォーム用のスキームです。このスキー"
-"ムはユーザーのホームディレクトリ以下に配置されたパスヲ定義します。"
+"*posix_user*: esquema para plataformas POSIX usado cuando se instala un "
+"componente a través de Distutils y se usa la opción *user*. Este esquema "
+"define rutas ubicadas bajo el directorio de inicio del usuario."
 
-#: ../../library/sysconfig.rst:86
+#: ../Doc/library/sysconfig.rst:86
 msgid ""
 "*posix_venv*: scheme for :mod:`Python virtual environments <venv>` on POSIX "
 "platforms; by default it is the same as *posix_prefix* ."
 msgstr ""
+"*posix_venv*: esquema para :mod:`Entornos virtuales de Python <venv>` en "
+"plataformas POSIX; por defecto es el mismo que *posix_prefix* ."
 
-#: ../../library/sysconfig.rst:88
+#: ../Doc/library/sysconfig.rst:88
 msgid "*nt*: scheme for NT platforms like Windows."
-msgstr "*nt*: Windows などの NT プラットフォーム用のスキームです。"
+msgstr "*nt*: esquema para plataformas NT como Windows."
 
-#: ../../library/sysconfig.rst:89
+#: ../Doc/library/sysconfig.rst:89
 msgid "*nt_user*: scheme for NT platforms, when the *user* option is used."
 msgstr ""
-"*nt_user*: *user* オプションが利用された場合の、NT プラットフォーム用のスキー"
-"ムです。"
+"*nt_user*: esquema para plataformas NT, cuando se usa la opción *user*."
 
-#: ../../library/sysconfig.rst:90
+#: ../Doc/library/sysconfig.rst:90
 msgid ""
 "*nt_venv*: scheme for :mod:`Python virtual environments <venv>` on NT "
 "platforms; by default it is the same as *nt* ."
 msgstr ""
+"*nt_venv*: esquema para :mod:`Entornos virtuales de Python <venv>` en "
+"plataformas NT; por defecto es el mismo que *nt* ."
 
-#: ../../library/sysconfig.rst:92
+#: ../Doc/library/sysconfig.rst:92
 msgid ""
 "*venv*: a scheme with values from ether *posix_venv* or *nt_venv* depending "
 "on the platform Python runs on"
 msgstr ""
+"*venv*: un esquema con valores como *posix_venv* o *nt_venv* dependiendo de "
+"la plataforma donde Python está funcionando"
 
-#: ../../library/sysconfig.rst:94
+#: ../Doc/library/sysconfig.rst:94
 msgid "*osx_framework_user*: scheme for macOS, when the *user* option is used."
-msgstr ""
+msgstr "*nt_user*: esquema para macOS, cuando se usa la opción *user*."
 
-#: ../../library/sysconfig.rst:96
+#: ../Doc/library/sysconfig.rst:96
 msgid ""
 "Each scheme is itself composed of a series of paths and each path has a "
 "unique identifier.  Python currently uses eight paths:"
 msgstr ""
-"各スキームは、ユニークな識別子を持ったいくつかのパスの集合から成っています。"
-"現在 Python は8つのパスを利用します:"
+"Cada esquema está compuesto por una serie de rutas y cada ruta tiene un "
+"identificador único. Python actualmente usa ocho rutas:"
 
-#: ../../library/sysconfig.rst:99
+#: ../Doc/library/sysconfig.rst:99
 msgid ""
 "*stdlib*: directory containing the standard Python library files that are "
 "not platform-specific."
 msgstr ""
-"*stdlib*: プラットフォーム非依存の、標準 Python ライブラリファイルを格納する"
-"ディレクトリ."
+"*stdlib*: directorio que contiene los archivos de la biblioteca estándar de "
+"Python que no son específicos de la plataforma."
 
-#: ../../library/sysconfig.rst:101
+#: ../Doc/library/sysconfig.rst:101
 msgid ""
 "*platstdlib*: directory containing the standard Python library files that "
 "are platform-specific."
 msgstr ""
-"*platstdlib*: プラットフォーム依存の、標準 Python ライブラリファイルを格納す"
-"るディレクトリ."
+"*platstdlib*: directorio que contiene los archivos de la biblioteca estándar "
+"de Python que son específicos de la plataforma."
 
-#: ../../library/sysconfig.rst:103
+#: ../Doc/library/sysconfig.rst:103
 msgid "*platlib*: directory for site-specific, platform-specific files."
 msgstr ""
-"*platlib*: プラットフォーム依存の、site ごとのファイルを格納するディレクト"
-"リ。"
+"*platlib*: directorio para archivos específicos del sitio, específicos de la "
+"plataforma."
 
-#: ../../library/sysconfig.rst:104
+#: ../Doc/library/sysconfig.rst:104
 msgid "*purelib*: directory for site-specific, non-platform-specific files."
 msgstr ""
-"*purelib*: プラットフォーム非依存の、site ごとのファイルを格納するディレクト"
-"リ。"
+"*purelib*: directorio para archivos específicos del sitio, no específicos de "
+"la plataforma."
 
-#: ../../library/sysconfig.rst:105
+#: ../Doc/library/sysconfig.rst:105
 msgid ""
 "*include*: directory for non-platform-specific header files for the Python C-"
 "API."
 msgstr ""
+"*include*: directorio para plataformas no especificadas para archivos de "
+"encabezado de Python C-API."
 
-#: ../../library/sysconfig.rst:107
+#: ../Doc/library/sysconfig.rst:107
 msgid ""
 "*platinclude*: directory for platform-specific header files for the Python C-"
 "API."
 msgstr ""
+"*include*: directorio para plataformas especificadas para archivos de "
+"encabezado de Python C-API."
 
-#: ../../library/sysconfig.rst:109
+#: ../Doc/library/sysconfig.rst:109
 msgid "*scripts*: directory for script files."
-msgstr "*scripts*: スクリプトファイルのためのディレクトリ。"
+msgstr "*scripts*: directorio para archivos de script."
 
-#: ../../library/sysconfig.rst:110
+#: ../Doc/library/sysconfig.rst:110
 msgid "*data*: directory for data files."
-msgstr "*data*: データファイルのためのディレクトリ。"
+msgstr "*data*: directorio para archivos de datos."
 
-#: ../../library/sysconfig.rst:112
+#: ../Doc/library/sysconfig.rst:112
 msgid ":mod:`sysconfig` provides some functions to determine these paths."
 msgstr ""
-":mod:`sysconfig` はこれらのパスを決定するためのいくつかの関数を提供していま"
-"す。"
+":mod:`sysconfig` proporciona algunas funciones para determinar estas rutas."
 
-#: ../../library/sysconfig.rst:116
+#: ../Doc/library/sysconfig.rst:116
 msgid ""
 "Return a tuple containing all schemes currently supported in :mod:"
 "`sysconfig`."
 msgstr ""
-"現在 :mod:`sysconfig` でサポートされているすべてのスキームを格納したタプルを"
-"返します。"
+"Retorna una tupla que contiene todos los esquemas admitidos actualmente en :"
+"mod:`sysconfig`."
 
-#: ../../library/sysconfig.rst:122
+#: ../Doc/library/sysconfig.rst:122
 msgid "Return the default scheme name for the current platform."
 msgstr ""
+"Retorna el nombre del esquema predeterminado para la plataforma actual."
 
-#: ../../library/sysconfig.rst:124
+#: ../Doc/library/sysconfig.rst:124
 msgid ""
 "This function was previously named ``_get_default_scheme()`` and considered "
 "an implementation detail."
 msgstr ""
+"Esta función se llamaba anteriormente ``_get_default_scheme()`` y se "
+"consideraba un detalle de implementación."
 
-#: ../../library/sysconfig.rst:128
+#: ../Doc/library/sysconfig.rst:128
 msgid ""
 "When Python runs from a virtual environment, the *venv* scheme is returned."
 msgstr ""
+"Cuando Python se ejecuta desde un entorno virtual, este retorna el esquema "
+"*venv*."
 
-#: ../../library/sysconfig.rst:134
+#: ../Doc/library/sysconfig.rst:134
 msgid ""
 "Return a preferred scheme name for an installation layout specified by *key*."
 msgstr ""
+"Retorna un nombre de esquema preferido para un diseño de instalación "
+"especificado por *key*."
 
-#: ../../library/sysconfig.rst:136
+#: ../Doc/library/sysconfig.rst:136
 msgid "*key* must be either ``\"prefix\"``, ``\"home\"``, or ``\"user\"``."
-msgstr ""
+msgstr "*key* debe ser ``\"prefix\"``, ``\"home\"`` o ``\"user\"``."
 
-#: ../../library/sysconfig.rst:138
+#: ../Doc/library/sysconfig.rst:138
 msgid ""
 "The return value is a scheme name listed in :func:`get_scheme_names`. It can "
 "be passed to :mod:`sysconfig` functions that take a *scheme* argument, such "
 "as :func:`get_paths`."
 msgstr ""
+"El valor de retorno es un nombre de esquema que aparece en :func:"
+"`get_scheme_names`. Se puede pasar a funciones :mod:`sysconfig` que toman un "
+"argumento *scheme*, como :func:`get_paths`."
 
-#: ../../library/sysconfig.rst:144
+#: ../Doc/library/sysconfig.rst:144
 msgid ""
 "When Python runs from a virtual environment and ``key=\"prefix\"``, the "
 "*venv* scheme is returned."
 msgstr ""
+"Cuando Python se ejecuta desde un entorno virtual con ``key=\"prefix\"``, "
+"este retorna el esquema *venv*."
 
-#: ../../library/sysconfig.rst:151
+#: ../Doc/library/sysconfig.rst:151
 msgid ""
 "Return a dict containing preferred scheme names on the current platform. "
 "Python implementers and redistributors may add their preferred schemes to "
@@ -306,138 +334,151 @@ msgid ""
 "and language package managers to use, so packages installed by either do not "
 "mix with those by the other."
 msgstr ""
+"Retorna un diccionario que contiene los nombres de los esquemas preferidos "
+"en la plataforma actual. Los implementadores y redistribuidores de Python "
+"pueden agregar sus esquemas preferidos al valor global de nivel de módulo "
+"``_INSTALL_SCHEMES`` y modificar esta función para devolver esos nombres de "
+"esquema, p. Ej. proporcionan diferentes esquemas para que los utilicen los "
+"administradores de paquetes de idioma y sistema, de modo que los paquetes "
+"instalados por uno no se mezclen con los del otro."
 
-#: ../../library/sysconfig.rst:158
+#: ../Doc/library/sysconfig.rst:158
 msgid ""
 "End users should not use this function, but :func:`get_default_scheme` and :"
 "func:`get_preferred_scheme()` instead."
 msgstr ""
+"Los usuarios finales no deben utilizar esta función, sino :func:"
+"`get_default_scheme` y :func:`get_preferred_scheme()` en su lugar."
 
-#: ../../library/sysconfig.rst:166
+#: ../Doc/library/sysconfig.rst:166
 msgid ""
 "Return a tuple containing all path names currently supported in :mod:"
 "`sysconfig`."
 msgstr ""
-"現在 :mod:`sysconfig` でサポートされているすべてのパス名を格納したタプルを返"
-"します。"
+"Retorna una tupla que contiene todo los nombres de rutas admitidos "
+"actualmente en :mod:`sysconfig`."
 
-#: ../../library/sysconfig.rst:172
+#: ../Doc/library/sysconfig.rst:172
 msgid ""
 "Return an installation path corresponding to the path *name*, from the "
 "install scheme named *scheme*."
 msgstr ""
-"*scheme* で指定されたインストールスキームから、パス *name* に従ってインストー"
-"ルパスを返します。"
+"Retorna una ruta de instalación correspondiente a la ruta *name*, del "
+"esquema de instalación denominado *scheme*."
 
-#: ../../library/sysconfig.rst:175
+#: ../Doc/library/sysconfig.rst:175
 msgid ""
 "*name* has to be a value from the list returned by :func:`get_path_names`."
 msgstr ""
-"*name* は :func:`get_path_names` が返すリストに含まれる値でなければなりませ"
-"ん。"
+"*name* tiene que ser un valor de la lista retornado por :func:"
+"`get_path_names`."
 
-#: ../../library/sysconfig.rst:177
+#: ../Doc/library/sysconfig.rst:177
 msgid ""
 ":mod:`sysconfig` stores installation paths corresponding to each path name, "
 "for each platform, with variables to be expanded.  For instance the *stdlib* "
 "path for the *nt* scheme is: ``{base}/Lib``."
 msgstr ""
-":mod:`sysconfig` はインストールパスを、パス名、プラットフォーム、展開される変"
-"数に従って格納します。例えば、*nt* スキームでの *stdlib* パスは ``{base}/"
-"Lib`` になります。"
+":mod:`sysconfig` almacena las rutas de instalación correspondientes a cada "
+"nombre de ruta, para cada plataforma, con variables que se expandirán. Por "
+"ejemplo, la ruta *stdlib* para el esquema *nt* es: ``{base}/Lib``."
 
-#: ../../library/sysconfig.rst:181
+#: ../Doc/library/sysconfig.rst:181
 msgid ""
 ":func:`get_path` will use the variables returned by :func:`get_config_vars` "
 "to expand the path.  All variables have default values for each platform so "
 "one may call this function and get the default value."
 msgstr ""
-":func:`get_path` はパスを展開するのに :func:`get_config_vars` が返す変数を利"
-"用します。すべての変数は各プラットフォームにおいてデフォルト値を持っていて、"
-"この関数を呼び出したときにデフォルト値を取得する場合があります。"
+":func:`get_path` utilizará las variables retornadas por :func:"
+"`get_config_vars` para expandir la ruta. Todas las variables tienen valores "
+"predeterminados para cada plataforma, por lo que se puede llamar a esta "
+"función y obtener el valor predeterminado."
 
-#: ../../library/sysconfig.rst:185
+#: ../Doc/library/sysconfig.rst:185
 msgid ""
 "If *scheme* is provided, it must be a value from the list returned by :func:"
 "`get_scheme_names`.  Otherwise, the default scheme for the current platform "
 "is used."
 msgstr ""
-"*scheme* が指定された場合、:func:`get_scheme_names` が返すリストに含まれる値"
-"でなければなりません。指定されなかった場合は、現在のプラットフォームでのデ"
-"フォルトスキームが利用されます。"
+"Si se proporciona el esquema (*scheme*), debe ser un valor de la lista "
+"retornada por :func:`get_scheme_names`. De lo contrario, se utiliza el "
+"esquema predeterminado para la plataforma actual."
 
-#: ../../library/sysconfig.rst:189
+#: ../Doc/library/sysconfig.rst:189
 msgid ""
 "If *vars* is provided, it must be a dictionary of variables that will update "
 "the dictionary return by :func:`get_config_vars`."
 msgstr ""
-"*vars* が指定された場合、:func:`get_config_vars` が返す辞書をアップデートする"
-"変数辞書でなければなりません。"
+"Si se proporciona *vars*, debe ser un diccionario de variables que "
+"actualizará el retorno del diccionario mediante :func:`get_config_vars`."
 
-#: ../../library/sysconfig.rst:192
+#: ../Doc/library/sysconfig.rst:192
 msgid ""
 "If *expand* is set to ``False``, the path will not be expanded using the "
 "variables."
 msgstr ""
-"*expand* が ``False`` に設定された場合、パスは変数を使って展開されません。"
+"Si *expand* se establece en ``False``, la ruta no se expandirá usando las "
+"variables."
 
-#: ../../library/sysconfig.rst:195
+#: ../Doc/library/sysconfig.rst:195
 msgid "If *name* is not found, raise a :exc:`KeyError`."
-msgstr ""
+msgstr "Si no se encuentra *name*, lanza un :exc:`KeyError`."
 
-#: ../../library/sysconfig.rst:200
+#: ../Doc/library/sysconfig.rst:200
 msgid ""
 "Return a dictionary containing all installation paths corresponding to an "
 "installation scheme. See :func:`get_path` for more information."
 msgstr ""
-"インストールスキームに基づいたすべてのインストールパスを格納した辞書を返しま"
-"す。詳しい情報は :func:`get_path` を参照してください。"
+"Retorna un diccionario de contiene todas las rutas de instalación "
+"correspondientes a un esquema de instalación. Consulte :func:`get_path` para "
+"obtener más información."
 
-#: ../../library/sysconfig.rst:203
+#: ../Doc/library/sysconfig.rst:203
 msgid ""
 "If *scheme* is not provided, will use the default scheme for the current "
 "platform."
 msgstr ""
-"*scheme* が指定されない場合、現在のプラットフォームでのデフォルトスキーマが使"
-"用されます。"
+"Si no se proporciona el esquema (*scheme*), utilizará el esquema "
+"predeterminado para la plataforma actual."
 
-#: ../../library/sysconfig.rst:206
+#: ../Doc/library/sysconfig.rst:206
 msgid ""
 "If *vars* is provided, it must be a dictionary of variables that will update "
 "the dictionary used to expand the paths."
 msgstr ""
-"*vars* を指定する場合、パスを展開するために使用される辞書を更新する値の辞書で"
-"なければなりません。"
+"Si se proporciona *vars*, debe ser un diccionario de variables que "
+"actualizará el diccionario utilizado para expandir las rutas."
 
-#: ../../library/sysconfig.rst:209
+#: ../Doc/library/sysconfig.rst:209
 msgid "If *expand* is set to false, the paths will not be expanded."
-msgstr "*expand* に偽を指定すると、パスは展開されません。"
+msgstr "Si *expand* se establece en falso, las rutas no se expandirán."
 
-#: ../../library/sysconfig.rst:211
+#: ../Doc/library/sysconfig.rst:211
 msgid ""
 "If *scheme* is not an existing scheme, :func:`get_paths` will raise a :exc:"
 "`KeyError`."
 msgstr ""
-"*scheme* が実在するスキームでなかった場合、:func:`get_paths` は :exc:"
-"`KeyError` を発生させます。"
+"Si *scheme* no es un esquema existente, :func:`get_paths` lanzará un :exc:"
+"`KeyError`."
 
-#: ../../library/sysconfig.rst:216
+#: ../Doc/library/sysconfig.rst:216
 msgid "Other functions"
-msgstr "その他の関数"
+msgstr "Otras funciones"
 
-#: ../../library/sysconfig.rst:220
+#: ../Doc/library/sysconfig.rst:220
+#, python-format
 msgid ""
 "Return the ``MAJOR.MINOR`` Python version number as a string.  Similar to "
 "``'%d.%d' % sys.version_info[:2]``."
 msgstr ""
-"``MAJOR.MINOR`` の型の Python バージョン番号文字列を返します。``'%d.%d' % "
-"sys.version_info[:2]`` に似ています。"
+"Retorna el número de versión versión ``MAJOR.MINOR`` de Python como una "
+"cadena. Similar a ``'%d.%d' % sys.version_info[:2]``."
 
-#: ../../library/sysconfig.rst:226
+#: ../Doc/library/sysconfig.rst:226
 msgid "Return a string that identifies the current platform."
-msgstr "現在のプラットフォームを識別するための文字列を返します。"
+msgstr "Retorna una cadena que identifica la plataforma actual."
 
-#: ../../library/sysconfig.rst:228
+#: ../Doc/library/sysconfig.rst:228
 msgid ""
 "This is used mainly to distinguish platform-specific build directories and "
 "platform-specific built distributions.  Typically includes the OS name and "
@@ -445,122 +486,125 @@ msgid ""
 "exact information included depends on the OS; e.g., on Linux, the kernel "
 "version isn't particularly important."
 msgstr ""
-"これはプラットフォーム依存のビルドディレクトリやプラットフォーム依存の配布物"
-"を区別するために使われます。\n"
-"典型的には、('os.uname()' のように) OSの名前とバージョン、アーキテクチャを含"
-"みますが、厳密にはOSに依存します。\n"
-"例えば Linux ではカーネルのバージョンはそれほど重要ではありません。"
+"Se utiliza principalmente para distinguir los directorios de compilación "
+"específicos de la plataforma y las distribuciones compiladas específicas de "
+"la plataforma. Por lo general se incluye el nombre y la versión del sistema "
+"operativo y la arquitectura (como lo proporciona 'os.uname()'), aunque la "
+"información exacta incluida depende del sistema operativo: por ejemplo, en "
+"Linux, la versión del kernel no es particularmente importante."
 
-#: ../../library/sysconfig.rst:234
+#: ../Doc/library/sysconfig.rst:234
 msgid "Examples of returned values:"
-msgstr "返される値の例:"
+msgstr "Ejemplo de valores retornados:"
 
-#: ../../library/sysconfig.rst:236
+#: ../Doc/library/sysconfig.rst:236
 msgid "linux-i586"
 msgstr "linux-i586"
 
-#: ../../library/sysconfig.rst:237
+#: ../Doc/library/sysconfig.rst:237
 msgid "linux-alpha (?)"
 msgstr "linux-alpha (?)"
 
-#: ../../library/sysconfig.rst:238
+#: ../Doc/library/sysconfig.rst:238
 msgid "solaris-2.6-sun4u"
 msgstr "solaris-2.6-sun4u"
 
-#: ../../library/sysconfig.rst:240
+#: ../Doc/library/sysconfig.rst:240
 msgid "Windows will return one of:"
-msgstr "Windows では以下のどれかを返します:"
+msgstr "Windows retornará uno de:"
 
-#: ../../library/sysconfig.rst:242
+#: ../Doc/library/sysconfig.rst:242
 msgid "win-amd64 (64bit Windows on AMD64, aka x86_64, Intel64, and EM64T)"
-msgstr "win-amd64 (64bit Windows on AMD64, 別名 x86_64, Intel64, EM64T)"
-
-#: ../../library/sysconfig.rst:243
-msgid "win32 (all others - specifically, sys.platform is returned)"
-msgstr "win32 (その他すべて - 具体的には sys.platform が返す値)"
-
-#: ../../library/sysconfig.rst:245
-msgid "macOS can return:"
 msgstr ""
+"win-amd64 (Windows de 64 bits en AMD64, también conocido como x86_64, "
+"Intel64 y EM64T)"
 
-#: ../../library/sysconfig.rst:247
+#: ../Doc/library/sysconfig.rst:243
+msgid "win32 (all others - specifically, sys.platform is returned)"
+msgstr "win32 (todos los demás - específicamente se retorna sys.platform)"
+
+#: ../Doc/library/sysconfig.rst:245
+msgid "macOS can return:"
+msgstr "macOS puede retornar:"
+
+#: ../Doc/library/sysconfig.rst:247
 msgid "macosx-10.6-ppc"
 msgstr "macosx-10.6-ppc"
 
-#: ../../library/sysconfig.rst:248
+#: ../Doc/library/sysconfig.rst:248
 msgid "macosx-10.4-ppc64"
 msgstr "macosx-10.4-ppc64"
 
-#: ../../library/sysconfig.rst:249
+#: ../Doc/library/sysconfig.rst:249
 msgid "macosx-10.3-i386"
 msgstr "macosx-10.3-i386"
 
-#: ../../library/sysconfig.rst:250
+#: ../Doc/library/sysconfig.rst:250
 msgid "macosx-10.4-fat"
 msgstr "macosx-10.4-fat"
 
-#: ../../library/sysconfig.rst:252
+#: ../Doc/library/sysconfig.rst:252
 msgid ""
 "For other non-POSIX platforms, currently just returns :data:`sys.platform`."
 msgstr ""
-"その他の非 POSIX プラットフォームでは、現在のところ単に :data:`sys.platform` "
-"を返します。"
+"Para otras plataformas que no son POSIX, actualmente solo retorna :data:`sys."
+"platform`."
 
-#: ../../library/sysconfig.rst:257
+#: ../Doc/library/sysconfig.rst:257
 msgid ""
 "Return ``True`` if the running Python interpreter was built from source and "
 "is being run from its built location, and not from a location resulting from "
 "e.g. running ``make install`` or installing via a binary installer."
 msgstr ""
-"実行中の Python インタプリタがソースからビルドされ、かつそのビルドされた場所"
-"から実行されている場合に ``True`` を返します。\n"
-"``make install`` を実行した場所からの実行やバイナリインストーラによるインス"
-"トールではいけません。"
+"Retorna ``True`` si el intérprete de Python en ejecución se compiló a partir "
+"de la fuente y se está ejecutando desde su ubicación compilada, y no desde "
+"una ubicación resultante de por ejemplo ejecutando ``make install`` o "
+"instalando a través de un instalador binario."
 
-#: ../../library/sysconfig.rst:264
+#: ../Doc/library/sysconfig.rst:264
 msgid "Parse a :file:`config.h`\\-style file."
-msgstr ":file:`config.h` スタイルのファイルを解析します。"
+msgstr "Analiza un archivo de estilo :file:`config.h`."
 
-#: ../../library/sysconfig.rst:266
+#: ../Doc/library/sysconfig.rst:266
 msgid ""
 "*fp* is a file-like object pointing to the :file:`config.h`\\-like file."
 msgstr ""
-"*fp* は :file:`config.h` スタイルのファイルを指すファイルライクオブジェクトで"
-"す。"
+"*fp* es un objeto similar a un archivo que apunta al archivo similar a :file:"
+"`config.h`."
 
-#: ../../library/sysconfig.rst:268
+#: ../Doc/library/sysconfig.rst:268
 msgid ""
 "A dictionary containing name/value pairs is returned.  If an optional "
 "dictionary is passed in as the second argument, it is used instead of a new "
 "dictionary, and updated with the values read in the file."
 msgstr ""
-"name/value ペアを格納した辞書を返します。第二引数にオプションの辞書が渡された"
-"場合、新しい辞書ではなくその辞書を利用し、ファイルから読み込んだ値で更新しま"
-"す。"
+"Se retorna un diccionario que contiene pares de nombre/valor. Si se pasa un "
+"diccionario opcional como un segundo argumento, se utiliza en lugar de un "
+"nuevo diccionario y se actualiza con los valores leídos en el archivo."
 
-#: ../../library/sysconfig.rst:275
+#: ../Doc/library/sysconfig.rst:275
 msgid "Return the path of :file:`pyconfig.h`."
-msgstr ":file:`pyconfig.h` のパスを返します。"
+msgstr "Retorna la ruta de :file:`pyconfig.h`."
 
-#: ../../library/sysconfig.rst:279
+#: ../Doc/library/sysconfig.rst:279
 msgid "Return the path of :file:`Makefile`."
-msgstr ":file:`Makefile` のパスを返します。"
+msgstr "Retorna la ruta de :file:`Makefile`."
 
-#: ../../library/sysconfig.rst:283
+#: ../Doc/library/sysconfig.rst:283
 msgid "Using :mod:`sysconfig` as a script"
-msgstr ":mod:`sysconfig` をスクリプトとして使う"
+msgstr "Usando :mod:`sysconfig` como un script"
 
-#: ../../library/sysconfig.rst:285
+#: ../Doc/library/sysconfig.rst:285
 msgid "You can use :mod:`sysconfig` as a script with Python's *-m* option:"
 msgstr ""
-"Python の *-m* オプションを使えば、:mod:`sysconfig` をスクリプトとして使用で"
-"きます:"
+"Puedes usar :mod:`sysconfig` como un script con la opción *-m* de Python:"
 
-#: ../../library/sysconfig.rst:311
+#: ../Doc/library/sysconfig.rst:311
 msgid ""
 "This call will print in the standard output the information returned by :"
 "func:`get_platform`, :func:`get_python_version`, :func:`get_path` and :func:"
 "`get_config_vars`."
 msgstr ""
-"これは、:func:`get_platform`、:func:`get_python_version`、:func:`get_path` お"
-"よび :func:`get_config_vars` が返す情報を標準出力に出力します。"
+"Esta llamada imprimirá en la salida estándar la información retornada por :"
+"func:`get_platform`, :func:`get_python_version`, :func:`get_path` y :func:"
+"`get_config_vars`."

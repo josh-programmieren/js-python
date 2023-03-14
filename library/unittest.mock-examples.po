@@ -1,161 +1,160 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# Takanori Suzuki <takanori@takanory.net>, 2021
-# tomo, 2021
-# yuta100101 <yuta07317776@i.softbank.jp>, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:16+0000\n"
-"Last-Translator: yuta100101 <yuta07317776@i.softbank.jp>, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-08-04 17:03+0200\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/unittest.mock-examples.rst:2
+#: ../Doc/library/unittest.mock-examples.rst:2
 msgid ":mod:`unittest.mock` --- getting started"
-msgstr ":mod:`unittest.mock` --- 入門"
+msgstr ":mod:`unittest.mock` --- primeros pasos"
 
-#: ../../library/unittest.mock-examples.rst:27
+#: ../Doc/library/unittest.mock-examples.rst:27
 msgid "Using Mock"
-msgstr "Mock を使う"
+msgstr "Usando mock"
 
-#: ../../library/unittest.mock-examples.rst:30
+#: ../Doc/library/unittest.mock-examples.rst:30
 msgid "Mock Patching Methods"
-msgstr "Mock のパッチ用メソッド"
+msgstr "Métodos de parcheo mock"
 
-#: ../../library/unittest.mock-examples.rst:32
+#: ../Doc/library/unittest.mock-examples.rst:32
 msgid "Common uses for :class:`Mock` objects include:"
-msgstr "一般的な :class:`Mock` の使い方の中には次のものがあります:"
+msgstr "Usos comunes para objetos :class:`Mock` incluye:"
 
-#: ../../library/unittest.mock-examples.rst:34
+#: ../Doc/library/unittest.mock-examples.rst:34
 msgid "Patching methods"
-msgstr "メソッドにパッチを当てる"
+msgstr "Métodos de parcheo"
 
-#: ../../library/unittest.mock-examples.rst:35
+#: ../Doc/library/unittest.mock-examples.rst:35
 msgid "Recording method calls on objects"
-msgstr "オブジェクトに対するメソッド呼び出しを記録する"
+msgstr "Métodos de grabación de llamadas sobre objetos"
 
-#: ../../library/unittest.mock-examples.rst:37
+#: ../Doc/library/unittest.mock-examples.rst:37
 msgid ""
 "You might want to replace a method on an object to check that it is called "
 "with the correct arguments by another part of the system:"
 msgstr ""
-"システムの他の部分からメソッドが正しい引数で呼び出されたかどうかを確認するた"
-"めに、そのオブジェクトのメソッドを置き換えることができます:"
+"Es posible que desee reemplazar un método en un objeto para comprobar que se "
+"llama con los argumentos correctos por otra parte del sistema:"
 
-#: ../../library/unittest.mock-examples.rst:45
+#: ../Doc/library/unittest.mock-examples.rst:45
 msgid ""
 "Once our mock has been used (``real.method`` in this example) it has methods "
 "and attributes that allow you to make assertions about how it has been used."
 msgstr ""
-"モック(上の例では ``real.method``)が利用された場合、どう使われたかを assert "
-"できるようにする属性やメソッドがモックにあります。"
+"Una vez que se ha utilizado nuestro mock (``real.method`` en este ejemplo) "
+"tiene métodos y atributos que le permiten hacer afirmaciones sobre cómo se "
+"ha utilizado."
 
-#: ../../library/unittest.mock-examples.rst:50
+#: ../Doc/library/unittest.mock-examples.rst:50
 msgid ""
 "In most of these examples the :class:`Mock` and :class:`MagicMock` classes "
 "are interchangeable. As the ``MagicMock`` is the more capable class it makes "
 "a sensible one to use by default."
 msgstr ""
-"この例のような場合、たいてい :class:`Mock` と :class:`MagicMock` は互換で"
-"す。 ``MagicMock`` の方が強力なので、デフォルトではこちらを使うといいでしょ"
-"う。"
+"En la mayoría de estos ejemplos, las clases :class:`Mock` y :class:"
+"`MagicMock` son intercambiables. Como el ``MagicMock`` es la clase más "
+"capaz, hace que sea sensato usarlo por defecto."
 
-#: ../../library/unittest.mock-examples.rst:54
+#: ../Doc/library/unittest.mock-examples.rst:54
 msgid ""
 "Once the mock has been called its :attr:`~Mock.called` attribute is set to "
 "``True``. More importantly we can use the :meth:`~Mock.assert_called_with` "
 "or :meth:`~Mock.assert_called_once_with` method to check that it was called "
 "with the correct arguments."
 msgstr ""
-"モックが呼び出されると、その :attr:`~Mock.called` 属性が ``True`` に設定され"
-"ます。そして :meth:`~Mock.assert_called_with` や :meth:`~Mock."
-"assert_called_once_with` メソッドを使ってそのメソッドが正しい引数で呼び出され"
-"たかどうかをチェックできます。"
+"Una vez que el mock ha sido llamado su atributo :attr:`~Mock.called` se "
+"establece en ``True``. Lo que es más importante, podemos usar el método :"
+"meth:`~Mock.assert_called_with` o :meth:`~Mock.assert_called_once_with` para "
+"comprobar que se llamó con los argumentos correctos."
 
-#: ../../library/unittest.mock-examples.rst:59
+#: ../Doc/library/unittest.mock-examples.rst:59
 msgid ""
 "This example tests that calling ``ProductionClass().method`` results in a "
 "call to the ``something`` method:"
 msgstr ""
-"次の例では ``ProductionClass().method`` が ``something`` メソッドを呼び出した"
-"ことをテストしています:"
+"En este ejemplo se prueba que llamar a ``ProductionClass().method`` da como "
+"resultado una llamada al método ``something``:"
 
-#: ../../library/unittest.mock-examples.rst:76
+#: ../Doc/library/unittest.mock-examples.rst:76
 msgid "Mock for Method Calls on an Object"
-msgstr "オブジェクトのメソッド呼び出しに対するモック"
+msgstr "Mock de llamadas a métodos sobre un objeto"
 
-#: ../../library/unittest.mock-examples.rst:78
+#: ../Doc/library/unittest.mock-examples.rst:78
 msgid ""
 "In the last example we patched a method directly on an object to check that "
 "it was called correctly. Another common use case is to pass an object into a "
 "method (or some part of the system under test) and then check that it is "
 "used in the correct way."
 msgstr ""
-"上の例ではオブジェクトのメソッドに対して直接パッチを当てて、それが正しく呼び"
-"出されていたかどうかをテストしていました。もう一つのよくあるユースケースが、"
-"モックをメソッド (またはテスト対象のシステムのどこか) に渡して、それが正しく"
-"利用されたかどうかをチェックする方法です。"
+"En el último ejemplo, parcheamos un método directamente en un objeto para "
+"comprobar que se llamó correctamente. Otro caso de uso común es pasar un "
+"objeto a un método (o a alguna parte del sistema sometido a prueba) y, a "
+"continuación, comprobar que se utiliza de la manera correcta."
 
-#: ../../library/unittest.mock-examples.rst:83
+#: ../Doc/library/unittest.mock-examples.rst:83
 msgid ""
 "The simple ``ProductionClass`` below has a ``closer`` method. If it is "
 "called with an object then it calls ``close`` on it."
 msgstr ""
-"次の例で、``ProductionClass`` は ``closer`` メソッドを持っています。このメ"
-"ソッドは渡されたオブジェクトの ``close`` メソッドを呼び出します。"
+"La sencilla ``ProductionClass`` a continuación tiene un método ``closer``. "
+"Si se llama con un objeto, entonces llama a ``close`` en él."
 
-#: ../../library/unittest.mock-examples.rst:91
+#: ../Doc/library/unittest.mock-examples.rst:91
 msgid ""
 "So to test it we need to pass in an object with a ``close`` method and check "
 "that it was called correctly."
 msgstr ""
-"ですからこれををテストするには、``close`` メソッドを持ったオブジェクトを渡し"
-"て、それが正しく呼び出されたかどうかをテストしなければなりません。"
+"Así que para probarlo necesitamos pasar un objeto con un método ``close`` y "
+"comprobar que se llamó correctamente."
 
-#: ../../library/unittest.mock-examples.rst:99
+#: ../Doc/library/unittest.mock-examples.rst:99
 msgid ""
 "We don't have to do any work to provide the 'close' method on our mock. "
 "Accessing close creates it. So, if 'close' hasn't already been called then "
 "accessing it in the test will create it, but :meth:`~Mock."
 "assert_called_with` will raise a failure exception."
 msgstr ""
-"モックに `close` メソッドを持たせるために何か準備する必要はありません。 "
-"`close` メソッドにアクセスすると自動的にそれが作られます。なので、もし "
-"`close` が呼び出されなかったとしてもテスト時に生成されるのですが、 :meth:"
-"`~Mock.assert_called_with` が failure 例外を発生させます。"
+"No tenemos que hacer ningún trabajo para proporcionar el método de 'close' "
+"en nuestro mock. El acceso al cierre lo crea. Por lo tanto, si 'close' aún "
+"no se ha llamado, entonces acceder a él en la prueba lo creará, pero :meth:"
+"`~Mock.assert_called_with` lanzará una excepción de error."
 
-#: ../../library/unittest.mock-examples.rst:106
+#: ../Doc/library/unittest.mock-examples.rst:106
+#, fuzzy
 msgid "Mocking Classes"
-msgstr "クラスをモックする"
+msgstr "Clases Mocking"
 
-#: ../../library/unittest.mock-examples.rst:108
+#: ../Doc/library/unittest.mock-examples.rst:108
 msgid ""
 "A common use case is to mock out classes instantiated by your code under "
 "test. When you patch a class, then that class is replaced with a mock. "
 "Instances are created by *calling the class*. This means you access the "
 "\"mock instance\" by looking at the return value of the mocked class."
 msgstr ""
-"他のよくあるユースケースが、テスト対象のコードによってインスタンス化されてい"
-"るクラスをモックに置き換えることです。クラスに patch すると、そのクラスがモッ"
-"クに置き換えられます。インスタンスは *クラスを呼び出した時に* 作られます。な"
-"ので、モックの戻り値を使うことで、「モックのインスタンス」にアクセスできま"
-"す。"
+"Un caso de uso común es simular las clases que crea la instancia del código "
+"que se está probando. Cuando se aplica un parche a una clase, esa clase se "
+"reemplaza por un mock. Las instancias se crean *llamando a la clase*. Esto "
+"significa que tiene acceso a la \"instancia mock\" examinando el valor "
+"devuelto de la clase simulada."
 
-#: ../../library/unittest.mock-examples.rst:113
+#: ../Doc/library/unittest.mock-examples.rst:113
 msgid ""
 "In the example below we have a function ``some_function`` that instantiates "
 "``Foo`` and calls a method on it. The call to :func:`patch` replaces the "
@@ -163,130 +162,140 @@ msgid ""
 "mock, so it is configured by modifying the mock :attr:`~Mock."
 "return_value`. ::"
 msgstr ""
-"次の例では、 ``some_function`` という関数が ``Foo`` をインスタンス化し、その "
-"method を呼び出しています。 :func:`patch` を呼び出すと ``Foo`` クラスをモック"
-"に置き換えます。 ``Foo`` のインスタンスはモックを呼び出して作られるので、モッ"
-"クの :attr:`~Mock.return_value` を変更することでカスタマイズできます。::"
+"En el ejemplo siguiente tenemos una función ``some_function`` que crea una "
+"instancia de ``Foo`` y llama a un método en él. La llamada a :func:`patch` "
+"reemplaza la clase ``Foo`` con un mock. La instancia ``Foo`` es el resultado "
+"de llamar al mock, por lo que se configura modificando el mock :attr:`-Mock."
+"return_value`. ::"
 
-#: ../../library/unittest.mock-examples.rst:130
+#: ../Doc/library/unittest.mock-examples.rst:130
 msgid "Naming your mocks"
-msgstr "モックに名前をつける"
+msgstr "Nombrando tus mocks"
 
-#: ../../library/unittest.mock-examples.rst:132
+#: ../Doc/library/unittest.mock-examples.rst:132
 msgid ""
 "It can be useful to give your mocks a name. The name is shown in the repr of "
 "the mock and can be helpful when the mock appears in test failure messages. "
 "The name is also propagated to attributes or methods of the mock:"
 msgstr ""
-"モックに名前をつけると便利なことがあります。その名前はモックを repr したとき"
-"に表示されるので、モックがテスト失敗のメッセージ内に現れた時に便利です。ま"
-"た、モックの名前はそのモックの属性やメソッドにも伝播します:"
+"Puede ser útil poner un nombre a tus mocks. El nombre se muestra en la "
+"reproducción del mock y puede ser útil cuando el mock aparece en los "
+"mensajes de error de la prueba. El nombre también se propaga a los atributos "
+"o métodos del mock:"
 
-#: ../../library/unittest.mock-examples.rst:144
+#: ../Doc/library/unittest.mock-examples.rst:144
 msgid "Tracking all Calls"
-msgstr "全ての呼び出しのトラッキング"
+msgstr "Siguiendo todas las llamadas"
 
-#: ../../library/unittest.mock-examples.rst:146
+#: ../Doc/library/unittest.mock-examples.rst:146
 msgid ""
 "Often you want to track more than a single call to a method. The :attr:"
 "`~Mock.mock_calls` attribute records all calls to child attributes of the "
 "mock - and also to their children."
 msgstr ""
-"メソッドの複数回の呼び出しをトラックしたいことがあります。 :attr:`~Mock."
-"mock_calls` 属性は、そのモックの子属性やさらにその子孫に対する呼び出しすべて"
-"を記録しています。"
+"A menudo, desea realizar un seguimiento de más de una llamada a un método. "
+"El atributo :attr:`~ Mock.mock_calls` registra todas las llamadas a los "
+"atributos secundarios del mock, y también a sus hijos."
 
-#: ../../library/unittest.mock-examples.rst:158
+#: ../Doc/library/unittest.mock-examples.rst:158
 msgid ""
 "If you make an assertion about ``mock_calls`` and any unexpected methods "
 "have been called, then the assertion will fail. This is useful because as "
 "well as asserting that the calls you expected have been made, you are also "
 "checking that they were made in the right order and with no additional calls:"
 msgstr ""
-"``mock_calls`` に対して assert すると、予期していないメソッド呼び出しがあった"
-"ときにその assert が失敗します。これはあるメソッド呼び出しが期待通りに実行さ"
-"れたかどうかだけでなく、その呼び出し順序や期待した以外の呼び出しが起こらな"
-"かったことまでテストできるので便利です:"
+"Si realiza una afirmación sobre ``mock_calls`` y se ha llamado a cualquier "
+"método inesperado, la aserción fallará. Esto es útil porque además de "
+"afirmar que se han realizado las llamadas que esperaba, también está "
+"comprobando que se hicieron en el orden correcto y sin llamadas adicionales:"
 
-#: ../../library/unittest.mock-examples.rst:163
+#: ../Doc/library/unittest.mock-examples.rst:163
 msgid ""
 "You use the :data:`call` object to construct lists for comparing with "
 "``mock_calls``:"
 msgstr ""
-"``mock_calls`` と比較するリストを作るために :data:`call` オブジェクトを利用で"
-"きます:"
+"Utiliza el objeto :data:`call` para construir listas y compararlas con "
+"``mock_calls``:"
 
-#: ../../library/unittest.mock-examples.rst:170
+#: ../Doc/library/unittest.mock-examples.rst:170
 msgid ""
 "However, parameters to calls that return mocks are not recorded, which means "
 "it is not possible to track nested calls where the parameters used to create "
 "ancestors are important:"
 msgstr ""
+"Sin embargo, los parámetros de las llamadas que devuelven mocks no se "
+"registran, lo que significa que no es posible realizar un seguimiento de las "
+"llamadas anidadas donde los parámetros utilizados para crear ancestros son "
+"importantes:"
 
-#: ../../library/unittest.mock-examples.rst:181
+#: ../Doc/library/unittest.mock-examples.rst:181
 msgid "Setting Return Values and Attributes"
-msgstr "戻り値や属性を設定する"
+msgstr "Establecer valores de retorno y atributos"
 
-#: ../../library/unittest.mock-examples.rst:183
+#: ../Doc/library/unittest.mock-examples.rst:183
 msgid "Setting the return values on a mock object is trivially easy:"
-msgstr "モックオブジェクトに戻り値を設定するのはとっても簡単です:"
+msgstr ""
+"Establecer los valores de retorno en un objeto mock es sumamente fácil:"
 
-#: ../../library/unittest.mock-examples.rst:190
+#: ../Doc/library/unittest.mock-examples.rst:190
 msgid "Of course you can do the same for methods on the mock:"
-msgstr "もちろん同じことがモックのメソッドに対しても行えます:"
+msgstr "Por supuesto, puede hacer lo mismo con los métodos en el mock:"
 
-#: ../../library/unittest.mock-examples.rst:197
+#: ../Doc/library/unittest.mock-examples.rst:197
 msgid "The return value can also be set in the constructor:"
-msgstr "コンストラクターで戻り値を設定することもできます:"
+msgstr "El valor devuelto también se puede establecer en el constructor:"
 
-#: ../../library/unittest.mock-examples.rst:203
+#: ../Doc/library/unittest.mock-examples.rst:203
 msgid "If you need an attribute setting on your mock, just do it:"
-msgstr "モックに属性を設定したかったら、普通に設定するだけです:"
+msgstr ""
+"Si necesitas una configuración de atributo en su mock, simplemente haga:"
 
-#: ../../library/unittest.mock-examples.rst:210
+#: ../Doc/library/unittest.mock-examples.rst:210
 msgid ""
 "Sometimes you want to mock up a more complex situation, like for example "
 "``mock.connection.cursor().execute(\"SELECT 1\")``. If we wanted this call "
 "to return a list, then we have to configure the result of the nested call."
 msgstr ""
-"``mock.connection.cursor().execute(\"SELECT 1\")`` のような複雑なケースでモッ"
-"クを使いたい場合もあります。この呼出があるリストを返すようにしたい場合、この"
-"ネストした呼び出しを構成しなければなりません。"
+"A veces desea simular una situación más compleja, como por ejemplo ``mock."
+"connection.cursor().execute(\"SELECT 1\")``. Si esperamos que esta llamada "
+"devuelva una lista, entonces tenemos que configurar el resultado de la "
+"llamada anidada."
 
-#: ../../library/unittest.mock-examples.rst:214
+#: ../Doc/library/unittest.mock-examples.rst:214
 msgid ""
 "We can use :data:`call` to construct the set of calls in a \"chained call\" "
 "like this for easy assertion afterwards:"
 msgstr ""
-":data:`call` を使って \"chained call\" 内の呼び出しを構成して、 assert で使う"
-"ことができます:"
+"Podemos usar :data:`call` para construir el conjunto de llamadas en una "
+"\"llamada encadenada\" como esta para una fácil afirmación después:"
 
-#: ../../library/unittest.mock-examples.rst:228
+#: ../Doc/library/unittest.mock-examples.rst:228
 msgid ""
 "It is the call to ``.call_list()`` that turns our call object into a list of "
 "calls representing the chained calls."
 msgstr ""
-"call object を chained call を表す list にするために ``.call_list()`` を使い"
-"ます。"
+"Es la llamada a ``.call_list()`` la que convierte nuestro objeto de llamada "
+"en una lista de llamadas que representan las llamadas encadenadas."
 
-#: ../../library/unittest.mock-examples.rst:233
+#: ../Doc/library/unittest.mock-examples.rst:233
 msgid "Raising exceptions with mocks"
-msgstr "モックから例外を発生させる"
+msgstr "Generar excepciones con mocks"
 
-#: ../../library/unittest.mock-examples.rst:235
+#: ../Doc/library/unittest.mock-examples.rst:235
 msgid ""
 "A useful attribute is :attr:`~Mock.side_effect`. If you set this to an "
 "exception class or instance then the exception will be raised when the mock "
 "is called."
 msgstr ""
-":attr:`~Mock.side_effect` という便利な属性があります。この属性に例外クラスや"
-"そのインスタンスを設定すると、モックが呼ばれた時にその例外を発生させます。"
+"Un atributo útil es :attr:`~Mock.side_effect`. Si establece esto en una "
+"clase o instancia de excepción, se producirá la excepción cuando se llame al "
+"mock."
 
-#: ../../library/unittest.mock-examples.rst:247
+#: ../Doc/library/unittest.mock-examples.rst:247
 msgid "Side effect functions and iterables"
-msgstr "side_effect の関数と iterable"
+msgstr "Funciones de efectos secundarios e iterables"
 
-#: ../../library/unittest.mock-examples.rst:249
+#: ../Doc/library/unittest.mock-examples.rst:249
 msgid ""
 "``side_effect`` can also be set to a function or an iterable. The use case "
 "for ``side_effect`` as an iterable is where your mock is going to be called "
@@ -294,60 +303,61 @@ msgid ""
 "set ``side_effect`` to an iterable every call to the mock returns the next "
 "value from the iterable:"
 msgstr ""
-"``side_effect`` には関数や iterable を設定することもできます。"
-"``side_effect`` に iterable を設定するユースケースは、そのモックが複数回呼び"
-"出され、そのたびに違う値を返したい場合です。``side_effect`` に iterable を設"
-"定すると、そのモックに対するすべての呼び出しは iterable の次の値を返します:"
+"``side_effect`` también se puede asignar en una función o en una iterable. "
+"El caso de uso para ``side_effect`` como un iterable es donde se va a llamar "
+"a su mock varias veces, y desea que cada llamada devuelva un valor "
+"diferente. Cuando se asigna ``side_effect`` en un iterable cada llamada al "
+"mock devuelve el siguiente valor de lo iterable:"
 
-#: ../../library/unittest.mock-examples.rst:264
+#: ../Doc/library/unittest.mock-examples.rst:264
 msgid ""
 "For more advanced use cases, like dynamically varying the return values "
 "depending on what the mock is called with, ``side_effect`` can be a "
 "function. The function will be called with the same arguments as the mock. "
 "Whatever the function returns is what the call returns:"
 msgstr ""
-"より高度なユースケースとして、mock が呼び出された時の引数によって戻り値を変化"
-"させたい場合は、``side_effect`` に関数を設定することができます。その関数は "
-"mock と同じ引数で呼び出されます。その関数の戻り値がそのモック呼び出しの戻り値"
-"になります:"
+"Para casos de uso más avanzados, como variar dinámicamente los valores "
+"devueltos en función de cómo se llame al mock, ``side_effect`` puede ser una "
+"función. Se llamará a la función con los mismos argumentos que el mock. Lo "
+"que sea que la función devuelve es lo que devuelve la llamada:"
 
-#: ../../library/unittest.mock-examples.rst:281
+#: ../Doc/library/unittest.mock-examples.rst:281
 msgid "Mocking asynchronous iterators"
-msgstr "非同期イテレータをモックする"
+msgstr "Iteradores asincrónicos de Mocking"
 
-#: ../../library/unittest.mock-examples.rst:283
+#: ../Doc/library/unittest.mock-examples.rst:283
 msgid ""
 "Since Python 3.8, ``AsyncMock`` and ``MagicMock`` have support to mock :ref:"
 "`async-iterators` through ``__aiter__``. The :attr:`~Mock.return_value` "
 "attribute of ``__aiter__`` can be used to set the return values to be used "
 "for iteration."
 msgstr ""
-"Python 3.8以降、``AsyncMock`` と ``MagicMock`` は``__aiter__``を通じて:ref:"
-"`async-iterators`のモックをサポートしています。``__aiter__``の:attr:`~Mock."
-"return_value` 属性はイテレーションに使用される戻り値を設定するために使用でき"
-"ます。"
+"Desde Python 3.8, ``AsyncMock`` y ``MagicMock`` tienen soporte para mock :"
+"ref:`async-iterators` through ``__aiter__``. El :attr:`~Mock.return_value` "
+"atributo de ``__aiter__`` puede ser usado para asignar los valores de "
+"retorno que podrían ser usados por iteración."
 
-#: ../../library/unittest.mock-examples.rst:298
+#: ../Doc/library/unittest.mock-examples.rst:298
 msgid "Mocking asynchronous context manager"
-msgstr "非同期コンテキストマネージャをモックする"
+msgstr "El gestor de contexto asincrónico de Mocking"
 
-#: ../../library/unittest.mock-examples.rst:300
+#: ../Doc/library/unittest.mock-examples.rst:300
 msgid ""
 "Since Python 3.8, ``AsyncMock`` and ``MagicMock`` have support to mock :ref:"
 "`async-context-managers` through ``__aenter__`` and ``__aexit__``. By "
 "default, ``__aenter__`` and ``__aexit__`` are ``AsyncMock`` instances that "
 "return an async function."
 msgstr ""
-"Python 3.8以降、``AsyncMock`` と ``MagicMock`` は``__aenter__``と"
-"``__aexit__``を通じて:ref:`async-context-managers`のモックをサポートしていま"
-"す。デフォルトでは、 ``__aenter__`` と``__aexit__``は非同期関数を返す"
-"``AsyncMock``インスタンスです。"
+"Desde Python 3.8, ``AsyncMock`` y ``MagicMock`` tienen soporte para mock :"
+"ref:`async-context-managers` a través de ``__aenter__`` y ``__aexit__``. De "
+"forma predeterminada, las instancias ``__aenter__`` y ``__aexit__`` son "
+"instancias de ``AsyncMock`` que devuelven una función asincrónica."
 
-#: ../../library/unittest.mock-examples.rst:322
+#: ../Doc/library/unittest.mock-examples.rst:322
 msgid "Creating a Mock from an Existing Object"
-msgstr "既存のオブジェクトから Mock を作る"
+msgstr "Creando un mock desde un objeto existente"
 
-#: ../../library/unittest.mock-examples.rst:324
+#: ../Doc/library/unittest.mock-examples.rst:324
 msgid ""
 "One problem with over use of mocking is that it couples your tests to the "
 "implementation of your mocks rather than your real code. Suppose you have a "
@@ -356,13 +366,15 @@ msgid ""
 "you refactor the first class, so that it no longer has ``some_method`` - "
 "then your tests will continue to pass even though your code is now broken!"
 msgstr ""
-"mock を使いすぎることの問題の一つは、テストが実際のコードではなく mock の実装"
-"をテストするようになってしまうことです。``some_method`` というメソッドを実装"
-"したクラスがあるとします。他のクラスをテストするときに、``some_method`` を提"
-"供する mock を使います。最初のクラスをリファクタリングして ``some_method`` が"
-"なくなった時、コードは壊れているのにテストは通る状態になってしまいます"
+"Un problema con el uso excesivo de mocking es que combina sus pruebas a la "
+"implementación de sus mocks en lugar de su código real. Supongamos que tiene "
+"una clase que implementa ``some_method``. En una prueba para otra clase, se "
+"proporciona un mock de este objeto que *also* proporciona ``some_method``. "
+"Si más tarde refactoriza la primera clase, para que ya no tenga "
+"``some_method`` - entonces sus pruebas seguirán pasando a pesar de que su "
+"código está ahora roto!"
 
-#: ../../library/unittest.mock-examples.rst:331
+#: ../Doc/library/unittest.mock-examples.rst:331
 msgid ""
 ":class:`Mock` allows you to provide an object as a specification for the "
 "mock, using the *spec* keyword argument. Accessing methods / attributes on "
@@ -371,52 +383,56 @@ msgid ""
 "specification, then tests that use that class will start failing immediately "
 "without you having to instantiate the class in those tests."
 msgstr ""
-":class:`Mock` は *spec* というキーワード引数で mock の定義となるオブジェクト"
-"を指定できます。定義オブジェクトに存在しないメソッドや属性にアクセスすると "
-"AttributeError を発生させます。定義となるクラスの実装を変更した場合、テストの"
-"中でそのクラスをインスタンス化させなくても、テストを失敗させる事ができます。"
+":class:`Mock` le permite proporcionar un objeto como especificación para el "
+"mock, utilizando el argumento de palabra clave *spec*. El acceso a métodos / "
+"atributos en el mock que no existen en el objeto de especificación lanzará "
+"inmediatamente un error de atributo. Si cambia la implementación de la "
+"especificación, las pruebas que usan esa clase comenzarán a fallar "
+"inmediatamente sin tener que crear instancias de la clase en esas pruebas."
 
-#: ../../library/unittest.mock-examples.rst:344
+#: ../Doc/library/unittest.mock-examples.rst:344
 msgid ""
 "Using a specification also enables a smarter matching of calls made to the "
 "mock, regardless of whether some parameters were passed as positional or "
 "named arguments::"
 msgstr ""
-"また、定義を指定することで、パラメータが位置引数と名前付き引数のどちらで渡さ"
-"れたかに関わらず、モックへの呼び出しをよりスマートに照合することができます。"
+"El uso de una especificación también permite una coincidencia más "
+"inteligente de las llamadas realizadas al mock, independientemente de si "
+"algunos parámetros se pasaron como argumentos posicionales o con nombre::"
 
-#: ../../library/unittest.mock-examples.rst:355
+#: ../Doc/library/unittest.mock-examples.rst:355
 msgid ""
 "If you want this smarter matching to also work with method calls on the "
 "mock, you can use :ref:`auto-speccing <auto-speccing>`."
 msgstr ""
-"このよりスマートなマッチングをモックのメソッド呼び出しにも適用したい場合は、:"
-"ref:`auto-speccing <auto-speccing>`を使用します。"
+"Si desea que esta coincidencia más inteligente también funcione con llamadas "
+"de método en el mock, puede usar :ref:`auto-speccing <auto-speccing>`."
 
-#: ../../library/unittest.mock-examples.rst:358
+#: ../Doc/library/unittest.mock-examples.rst:358
 msgid ""
 "If you want a stronger form of specification that prevents the setting of "
 "arbitrary attributes as well as the getting of them then you can use "
 "*spec_set* instead of *spec*."
 msgstr ""
-"任意の属性の参照だけでなく代入も禁止するより強い定義を利用したい場合は、"
-"*spec* の代わりに *spec_set* を使います。"
+"Si desea una forma más fuerte de especificación que impida la configuración "
+"de atributos arbitrarios, así como la obtención de ellos, entonces puede "
+"usar *spec_set* en lugar de *spec*."
 
-#: ../../library/unittest.mock-examples.rst:365
+#: ../Doc/library/unittest.mock-examples.rst:365
 msgid "Patch Decorators"
-msgstr "patch デコレータ"
+msgstr "Decoradores de Parches"
 
-#: ../../library/unittest.mock-examples.rst:369
+#: ../Doc/library/unittest.mock-examples.rst:369
 msgid ""
 "With :func:`patch` it matters that you patch objects in the namespace where "
 "they are looked up. This is normally straightforward, but for a quick guide "
 "read :ref:`where to patch <where-to-patch>`."
 msgstr ""
-":func:`patch` では探索される名前空間内のオブジェクトにパッチをあてることが重"
-"要です。通常は単純ですが、クイックガイドには :ref:`where-to-patch` を読んでく"
-"ださい。"
+"Con :func:`patch` importa que parchee objetos en el espacio de nombres donde "
+"se buscan. Esto es normalmente sencillo, pero para una guía rápida lea :ref:"
+"`where to patch <where-to-patch>`."
 
-#: ../../library/unittest.mock-examples.rst:374
+#: ../Doc/library/unittest.mock-examples.rst:374
 msgid ""
 "A common need in tests is to patch a class attribute or a module attribute, "
 "for example patching a builtin or patching a class in a module to test that "
@@ -424,13 +440,14 @@ msgid ""
 "on them has to be undone after the test or the patch will persist into other "
 "tests and cause hard to diagnose problems."
 msgstr ""
-"テストの中でクラス属性やモジュール属性、例えば組み込み関数や、テスト対象モ"
-"ジュールにあるインスタンス化されるクラスに対してパッチしたいことがあります。"
-"モジュールやクラスは実際はグローバルなので、パッチするときは必ずテスト後に"
-"パッチを解除しないと、そのパッチが永続化されて他のテストに影響を与え、解析し"
-"にくい問題になります。"
+"Una necesidad común en las pruebas es aplicar revisiones a un atributo de "
+"clase o a un atributo de módulo, por ejemplo, aplicar revisiones a una clase "
+"integrada o parchear una clase en un módulo para probar que se crea una "
+"instancia. Los módulos y las clases son efectivamente globales, por lo que "
+"el parcheo en ellos tiene que deshacerse después de la prueba o el parche "
+"persistirá en otras pruebas y causará problemas difíciles de diagnosticar."
 
-#: ../../library/unittest.mock-examples.rst:380
+#: ../Doc/library/unittest.mock-examples.rst:380
 msgid ""
 "mock provides three convenient decorators for this: :func:`patch`, :func:"
 "`patch.object` and :func:`patch.dict`. ``patch`` takes a single string, of "
@@ -440,152 +457,163 @@ msgid ""
 "the name of the attribute you would like patched, plus optionally the value "
 "to patch it with."
 msgstr ""
-"mock はこのために3つの便利なデコレータを提供しています: :func:`patch`, :func:"
-"`patch.object`, :func:`patch.dict` です。``patch`` はパッチ対象を指定する "
-"``package.module.Class.attribute`` の形式の文字列を引数に取ります。オプション"
-"でその属性 (やクラスなど) を置き換えるオブジェクトを渡すことができます。 "
-"'patch.object' はオブジェクトとパッチしたい属性名、それにオプションで置き換え"
-"るオブジェクトを受け取ります。"
+"mock proporciona tres decoradores convenientes para esto: :func:`patch`, :"
+"func:`patch.object` y :func:`patch.dict`. ``patch`` toma una sola cadena del "
+"formulario ``package.module.Class.attribute`` para especificar el atributo "
+"que está parcheando. También, opcionalmente, toma un valor con el que desea "
+"que se reemplace el atributo (o clase o lo que sea). 'patch.object' toma un "
+"objeto y el nombre del atributo con el que desea parchear, además, "
+"opcionalmente, del valor con el que parcharlo."
 
-#: ../../library/unittest.mock-examples.rst:388
+#: ../Doc/library/unittest.mock-examples.rst:388
 msgid "``patch.object``::"
 msgstr "``patch.object``::"
 
-#: ../../library/unittest.mock-examples.rst:405
+#: ../Doc/library/unittest.mock-examples.rst:405
 msgid ""
 "If you are patching a module (including :mod:`builtins`) then use :func:"
 "`patch` instead of :func:`patch.object`:"
 msgstr ""
-"モジュール (:mod:`builtins` を含む) をパッチしようとする場合、 :func:`patch."
-"object` の代わりに :func:`patch` を使用してください:"
+"Si está parcheando un módulo (incluyendo :mod:`builtins`) entonces use :func:"
+"`patch` en lugar de :func:`patch.object`:"
 
-#: ../../library/unittest.mock-examples.rst:415
+#: ../Doc/library/unittest.mock-examples.rst:415
 msgid ""
 "The module name can be 'dotted', in the form ``package.module`` if needed::"
 msgstr ""
-"モジュール名は必要に応じて ``package.module`` のようにドットを含むことができ"
-"ます::"
+"EL nombre del módulo puede ser 'dotted', en el formulario ``package.module`` "
+"si es necesario::"
 
-#: ../../library/unittest.mock-examples.rst:424
+#: ../Doc/library/unittest.mock-examples.rst:424
 msgid "A nice pattern is to actually decorate test methods themselves:"
-msgstr "テストメソッド自体をデコレートするのは良いパターンです:"
+msgstr "Un buen patrón en realidad es decorar los métodos de pruebas propios:"
 
-#: ../../library/unittest.mock-examples.rst:435
+#: ../Doc/library/unittest.mock-examples.rst:435
 msgid ""
 "If you want to patch with a Mock, you can use :func:`patch` with only one "
 "argument (or :func:`patch.object` with two arguments). The mock will be "
 "created for you and passed into the test function / method:"
 msgstr ""
-"Mock を使ってパッチしたい場合は、 :func:`patch` を1引数で (または :func:"
-"`patch.object` を2引数で) 使うことができます。mock が自動で生成され、テスト関"
-"数/メソッドに渡されます:"
+"Si desea parchear con un Mock, puede usar :func:`patch` con un solo "
+"argumento (o :func:`patch.object` con dos argumentos). El mock se creará "
+"para usted y se pasará a la función de prueba / método:"
 
-#: ../../library/unittest.mock-examples.rst:447
+#: ../Doc/library/unittest.mock-examples.rst:447
 msgid "You can stack up multiple patch decorators using this pattern::"
-msgstr "次のパターンのように patch デコレータを重ねることができます::"
+msgstr "Puede apilar varios decoradores de parches utilizando este patrón::"
 
-#: ../../library/unittest.mock-examples.rst:458
+#: ../Doc/library/unittest.mock-examples.rst:458
 msgid ""
 "When you nest patch decorators the mocks are passed in to the decorated "
 "function in the same order they applied (the normal *Python* order that "
 "decorators are applied). This means from the bottom up, so in the example "
 "above the mock for ``test_module.ClassName2`` is passed in first."
 msgstr ""
-"patch デコレータをネストした際、モックは (デコレータを適用する *Python* の通"
-"常の) 順に適用されます。つまり引数は下から上の順になり、よって上記の例では "
-"``test_module.ClassName2`` が先になります。"
+"Al anidar decoradores de parches, los mocks se pasan a la función decorada "
+"en el mismo orden en que se aplicaron (el orden normal *Python* que se "
+"aplican los decoradores). Esto significa de abajo hacia arriba, así que en "
+"el ejemplo anterior el simulacro de ``test_module.ClassName2`` se pasa "
+"primero."
 
-#: ../../library/unittest.mock-examples.rst:463
+#: ../Doc/library/unittest.mock-examples.rst:463
 msgid ""
 "There is also :func:`patch.dict` for setting values in a dictionary just "
 "during a scope and restoring the dictionary to its original state when the "
 "test ends:"
 msgstr ""
-"また、 :func:`patch.dict` を使うと、スコープ内だけで辞書に値を設定し、テスト"
-"終了時には元の状態に復元されます:"
+"También está :func:`patch.dict` para establecer valores en un diccionario "
+"solo durante un ámbito y restaurar el diccionario a su estado original "
+"cuando finaliza la prueba:"
 
-#: ../../library/unittest.mock-examples.rst:474
+#: ../Doc/library/unittest.mock-examples.rst:474
 msgid ""
 "``patch``, ``patch.object`` and ``patch.dict`` can all be used as context "
 "managers."
 msgstr ""
-"``patch``, ``patch.object``, ``patch.dict`` は全てコンテキストマネージャーと"
-"しても利用できます。"
+"``patch``, ``patch.object`` and ``patch.dict`` se pueden utilizar como "
+"gestores de contexto."
 
-#: ../../library/unittest.mock-examples.rst:476
+#: ../Doc/library/unittest.mock-examples.rst:476
 msgid ""
 "Where you use :func:`patch` to create a mock for you, you can get a "
 "reference to the mock using the \"as\" form of the with statement:"
 msgstr ""
-":func:`patch` に mock を生成させる場合、その参照を with 文の as を使って受け"
-"取れます:"
+"Donde utilice :func:`patch` para crear un simulacro para usted, puede "
+"obtener una referencia al simulacro utilizando la forma \"as\" de la "
+"instrucción with:"
 
-#: ../../library/unittest.mock-examples.rst:491
+#: ../Doc/library/unittest.mock-examples.rst:491
 msgid ""
 "As an alternative ``patch``, ``patch.object`` and ``patch.dict`` can be used "
 "as class decorators. When used in this way it is the same as applying the "
 "decorator individually to every method whose name starts with \"test\"."
 msgstr ""
-"他の方法として、``patch``, ``patch.object``, ``patch.dict`` はクラスデコレー"
-"タとしても利用できます。その場合、\"test\" で始まる全てのメソッドにデコレータ"
-"を適用するのと同じになります。"
+"Como alternativa ``patch``, ``patch.object`` and ``patch.dict`` se pueden "
+"utilizar como decoradores de clase. Cuando se utiliza de esta manera es lo "
+"mismo que aplicar el decorador individualmente a cada método cuyo nombre "
+"comienza con \"test\"."
 
-#: ../../library/unittest.mock-examples.rst:499
+#: ../Doc/library/unittest.mock-examples.rst:499
 msgid "Further Examples"
-msgstr "さらなる例"
+msgstr "Otros ejemplos"
 
-#: ../../library/unittest.mock-examples.rst:502
+#: ../Doc/library/unittest.mock-examples.rst:502
 msgid "Here are some more examples for some slightly more advanced scenarios."
-msgstr "より高度なシナリオを想定した例をあげていきます。"
+msgstr ""
+"Estos son algunos ejemplos más para algunos escenarios ligeramente más "
+"avanzados."
 
-#: ../../library/unittest.mock-examples.rst:506
+#: ../Doc/library/unittest.mock-examples.rst:506
 msgid "Mocking chained calls"
-msgstr "chained call をモックする"
+msgstr "Mocking de llamadas encadenadas"
 
-#: ../../library/unittest.mock-examples.rst:508
+#: ../Doc/library/unittest.mock-examples.rst:508
 msgid ""
 "Mocking chained calls is actually straightforward with mock once you "
 "understand the :attr:`~Mock.return_value` attribute. When a mock is called "
 "for the first time, or you fetch its ``return_value`` before it has been "
 "called, a new :class:`Mock` is created."
 msgstr ""
-"chained call を mock するのは、一度 :attr:`~Mock.return_value` 属性を理解して"
-"しまえば簡単です。mock が最初に呼ばれた時や、呼び出される前に "
-"``return_value`` を参照した場合、新しい :class:`Mock` が生成されます。"
+"Mocking de las llamadas encadenadas es en realidad sencillo con mock una vez "
+"que entiende el atributo :attr:`~Mock.return_value` . Cuando se llama a un "
+"mock por primera vez, o se obtiene su ``return_value`` antes de que se "
+"llame, se crea un nuevo :class:`Mock`."
 
-#: ../../library/unittest.mock-examples.rst:513
+#: ../Doc/library/unittest.mock-examples.rst:513
 msgid ""
 "This means that you can see how the object returned from a call to a mocked "
 "object has been used by interrogating the ``return_value`` mock:"
 msgstr ""
-"つまり、戻り値のオブジェクトがどう利用されたかは、``return_value`` mock を調"
-"べれば分かります:"
+"Esto significa que puede ver cómo se ha utilizado el objeto devuelto de una "
+"llamada a un objeto simulado interrogando el simulado ``return_value``:"
 
-#: ../../library/unittest.mock-examples.rst:521
+#: ../Doc/library/unittest.mock-examples.rst:521
 msgid ""
 "From here it is a simple step to configure and then make assertions about "
 "chained calls. Of course another alternative is writing your code in a more "
 "testable way in the first place..."
 msgstr ""
-"これをもとに、mock を構成して chained call に対する assert を行うのは簡単で"
-"す。もちろん、元のコードを最初からもっとテストしやすく書くという選択肢もあり"
-"ますが..."
+"Desde aquí es un paso simple para configurar y luego hacer aserciones sobre "
+"llamadas encadenadas. Por supuesto, otra alternativa es escribir su código "
+"de una manera más comprobable en primer lugar..."
 
-#: ../../library/unittest.mock-examples.rst:525
+#: ../Doc/library/unittest.mock-examples.rst:525
 msgid "So, suppose we have some code that looks a little bit like this:"
-msgstr "では、例として次のようなコードがあるとします:"
+msgstr ""
+"Por lo tanto, supongamos que tenemos algún código que se ve un poco como "
+"este:"
 
-#: ../../library/unittest.mock-examples.rst:534
+#: ../Doc/library/unittest.mock-examples.rst:534
 msgid ""
 "Assuming that ``BackendProvider`` is already well tested, how do we test "
 "``method()``? Specifically, we want to test that the code section ``# more "
 "code`` uses the response object in the correct way."
 msgstr ""
-"``BackendProvider`` はすでに十分テストされているとします。``method()`` をどう"
-"テストしましょうか？特に、response オブジェクトを使う ``# more code`` の部分"
-"のコードをテストしたいとします。"
+"Suponiendo que ``BackendProvider`` ya está bien probado, ¿cómo probamos "
+"``method()``? En concreto, queremos probar que la sección de código ``# more "
+"code`` usa el objeto de respuesta de la manera correcta."
 
-#: ../../library/unittest.mock-examples.rst:538
+#: ../Doc/library/unittest.mock-examples.rst:538
 msgid ""
 "As this chain of calls is made from an instance attribute we can monkey "
 "patch the ``backend`` attribute on a ``Something`` instance. In this "
@@ -594,57 +622,59 @@ msgid ""
 "assume the object it returns is 'file-like', so we'll ensure that our "
 "response object uses the builtin :func:`open` as its ``spec``."
 msgstr ""
-"この chained call はインスタンス属性を起点にしているので、 ``Something`` イン"
-"スタンスの ``backend`` 属性に対してモンキーパッチすることができます。今回の場"
-"合だと、最後の ``start_call`` の呼び出しが返す値にだけ興味があるので、あまり"
-"多くの構成は必要ありません。このメソッドが返すのが 'file-like' オブジェクトだ"
-"としましょう。そうすると、 response オブジェクトは組み込みの :func:`open` を "
-"``spec`` として利用できます。"
+"A medida que esta cadena de llamadas se realiza a partir de un atributo de "
+"instancia, podemos parchear el atributo ``backend`` en una instancia de "
+"``Something``. En este caso en particular sólo estamos interesados en el "
+"valor devuelto de la llamada final a ``start_call`` por lo que no tenemos "
+"mucha configuración que hacer. Supongamos que el objeto que devuelve es "
+"'similar a un archivo', por lo que nos aseguraremos de que nuestro objeto de "
+"respuesta utilice el compilado :func:`open` as its ``spec``."
 
-#: ../../library/unittest.mock-examples.rst:545
+#: ../Doc/library/unittest.mock-examples.rst:545
 msgid ""
 "To do this we create a mock instance as our mock backend and create a mock "
 "response object for it. To set the response as the return value for that "
 "final ``start_call`` we could do this::"
 msgstr ""
-"これをするために、backend のモックとしてモックインスタンスを作成し、それに対"
-"するモックの response オブジェクトを作成します。最終的な ``start_call`` の返"
-"り値として response をセットすると、このようにすることができます::"
+"Para ello creamos una instancia mock como nuestro back-end simulado y "
+"creamos un objeto de respuesta mock para ella. Para establecer la respuesta "
+"como el valor devuelto de ese ``start_call`` final podríamos hacer lo "
+"siguiente::"
 
-#: ../../library/unittest.mock-examples.rst:551
+#: ../Doc/library/unittest.mock-examples.rst:551
 msgid ""
 "We can do that in a slightly nicer way using the :meth:`~Mock."
 "configure_mock` method to directly set the return value for us::"
 msgstr ""
-"これより少し良いやり方として、返り値を直接セットする :meth:`~Mock."
-"configure_mock` メソッドを使用して次のようにすることができます::"
+"Podemos hacerlo de una manera un poco mejor usando el método :meth:`~Mock."
+"configure_mock` para establecer directamente el valor devuelto para "
+"nosotros::"
 
-#: ../../library/unittest.mock-examples.rst:560
+#: ../Doc/library/unittest.mock-examples.rst:560
 msgid ""
 "With these we monkey patch the \"mock backend\" in place and can make the "
 "real call::"
 msgstr ""
-"これらによって「モックの backend」をその場で monkey patch して、実際の呼び出"
-"しを行うことができます::"
+"Con estos monkey patch el \"backend simulado\" en su lugar y puede hacer la "
+"llamada real::"
 
-#: ../../library/unittest.mock-examples.rst:566
+#: ../Doc/library/unittest.mock-examples.rst:566
 msgid ""
 "Using :attr:`~Mock.mock_calls` we can check the chained call with a single "
 "assert. A chained call is several calls in one line of code, so there will "
 "be several entries in ``mock_calls``. We can use :meth:`call.call_list` to "
 "create this list of calls for us::"
 msgstr ""
-":attr:`~Mock.mock_calls` を使用すると、チェーンされた呼び出しを単一のアサー"
-"ションでチェックすることができます。チェーンされた呼び出しは、1行のコードの中"
-"で行われる複数の呼び出しです。したがって、 ``mock_calls`` には複数のエント"
-"リーがあるでしょう。 :meth:`call.call_list` を使用することで、この呼び出しの"
-"リストを作成することができます::"
+"Usando :attr:`~Mock.mock_calls` podemos comprobar la llamada encadenada con "
+"una sola afirmación. Una llamada encadenada es varias llamadas en una línea "
+"de código, por lo que habrá varias entradas en ``mock_calls``. Podemos usar :"
+"meth:`call.call_list` para crear esta lista de llamadas para nosotros::"
 
-#: ../../library/unittest.mock-examples.rst:577
+#: ../Doc/library/unittest.mock-examples.rst:577
 msgid "Partial mocking"
-msgstr "部分的なモック"
+msgstr "Mocking parcial"
 
-#: ../../library/unittest.mock-examples.rst:579
+#: ../Doc/library/unittest.mock-examples.rst:579
 msgid ""
 "In some tests I wanted to mock out a call to :meth:`datetime.date.today` to "
 "return a known date, but I didn't want to prevent the code under test from "
@@ -652,23 +682,23 @@ msgid ""
 "in C, and so I couldn't just monkey-patch out the static :meth:`date.today` "
 "method."
 msgstr ""
-"テストによっては、 :meth:`datetime.date.today` の呼び出しを既知の date を返す"
-"ようにモックしたいと思うことがありました。しかし、テスト対象のコードが新しい "
-"date オブジェクトを生成するのを妨げたくはありません。不運にも、 :class:"
-"`datetime.date` は C で書かれています。したがって、静的な :meth:`date.today` "
-"メソッドを単にモンキーパッチすることはできませんでした。"
+"En algunas pruebas quería un mock de una llamada a :meth:`datetime.date."
+"today` para devolver una fecha conocida, pero no quería evitar que el código "
+"sometido a prueba creara nuevos objetos de fecha. Desafortunadamente :class:"
+"`datetime.date` está escrito en C, por lo que no podía simplemente parchear "
+"mono el método estático :meth:`date.today` ."
 
-#: ../../library/unittest.mock-examples.rst:584
+#: ../Doc/library/unittest.mock-examples.rst:584
 msgid ""
 "I found a simple way of doing this that involved effectively wrapping the "
 "date class with a mock, but passing through calls to the constructor to the "
 "real class (and returning real instances)."
 msgstr ""
-"私はこれを行う単純な方法を見つけました。それは、date クラスをモックで事実上"
-"ラップして、しかしコンストラクタの呼び出しを実際のクラスへと素通りさせる (そ"
-"して、実際のインスタンスを返す) というものです。"
+"Encontré una forma sencilla de hacer esto que implicaba ajustar eficazmente "
+"la clase date con un mock, pero pasar llamadas al constructor a la clase "
+"real (y devolver instancias reales)."
 
-#: ../../library/unittest.mock-examples.rst:588
+#: ../Doc/library/unittest.mock-examples.rst:588
 msgid ""
 "The :func:`patch decorator <patch>` is used here to mock out the ``date`` "
 "class in the module under test. The :attr:`side_effect` attribute on the "
@@ -676,95 +706,101 @@ msgid ""
 "When the mock date class is called a real date will be constructed and "
 "returned by ``side_effect``. ::"
 msgstr ""
-"ここで、テスト対象のモジュール中の ``date`` クラスをモックするために :func:"
-"`patch decorator <patch>` が使用されています。そして、モックの date クラス"
-"の :attr:`side_effect` 属性は、本物の date を返すラムダ関数にセットされます。"
-"モックの date クラスが呼ばれる時、 ``side_effect`` によって本物の date が構築"
-"されて返されます。::"
+"El :func:`patch decorator <patch>` se utiliza aquí como un mock de la clase "
+"``date`` en el módulo en pruebas. A continuación, el atributo :attr:"
+"`side_effect` de la clase de fecha simulada se establece en una función "
+"lambda que devuelve una fecha real. Cuando la clase de fecha simulada se "
+"denomina fecha real, se construirá y devolverá ``side_effect``. ::"
 
-#: ../../library/unittest.mock-examples.rst:602
+#: ../Doc/library/unittest.mock-examples.rst:602
 msgid ""
 "Note that we don't patch :class:`datetime.date` globally, we patch ``date`` "
 "in the module that *uses* it. See :ref:`where to patch <where-to-patch>`."
 msgstr ""
-"グローバルに:class:`datetime.date`にパッチするのではなく、それを使用するモ"
-"ジュールの中の ``date`` にパッチしていることに留意してください。:ref:`どこに"
-"パッチするか <where-to-patch>`.を参照してください。"
+"Tenga en cuenta que no parcheamos :class:`datetime.date` globalmente, "
+"parcheamos ``date`` en el módulo que *uses*. Consulte :ref:`where to patch "
+"<where-to-patch>`."
 
-#: ../../library/unittest.mock-examples.rst:605
+#: ../Doc/library/unittest.mock-examples.rst:605
 msgid ""
 "When ``date.today()`` is called a known date is returned, but calls to the "
 "``date(...)`` constructor still return normal dates. Without this you can "
 "find yourself having to calculate an expected result using exactly the same "
 "algorithm as the code under test, which is a classic testing anti-pattern."
 msgstr ""
-" ``date.today()``が呼び出されると既に分かっている日付が返されますが、"
-"``date(...)``コンストラクタが呼び出された時は通常の日付が返されます。これがな"
-"いと、テスト対象のコードと全く同じアルゴリズムで期待される結果を計算しなけれ"
-"ばならないことになり、これは典型的なテストのアンチパターンです。"
+"Cuando ``date.today()`` es llamada se retorna una fecha conocida, pero llama "
+"al constructor ``date(...)`` este constructor todavía devuelve fechas "
+"normales. Sin esto, puede encontrarse teniendo que calcular un resultado "
+"esperado utilizando exactamente el mismo algoritmo que el código en prueba, "
+"que es un anti-patrón de prueba clásico."
 
-#: ../../library/unittest.mock-examples.rst:610
+#: ../Doc/library/unittest.mock-examples.rst:610
 msgid ""
 "Calls to the date constructor are recorded in the ``mock_date`` attributes "
 "(``call_count`` and friends) which may also be useful for your tests."
 msgstr ""
-"dateコンストラクタの呼び出しは、``mock_date``の属性(``call_count``とその仲間)"
-"に記録され、テストに役立つこともあります。"
+"Las llamadas al constructor de fecha se registran en los atributos "
+"``mock_date`` (``call_count`` y amigos) que también pueden ser útiles para "
+"las pruebas."
 
-#: ../../library/unittest.mock-examples.rst:613
+#: ../Doc/library/unittest.mock-examples.rst:613
 msgid ""
 "An alternative way of dealing with mocking dates, or other builtin classes, "
 "is discussed in `this blog entry <https://williambert.online/2011/07/how-to-"
 "unit-testing-in-django-with-mocking-and-patching/>`_."
 msgstr ""
-"日付や他の組み込みクラスのモックに対処する別の方法は `このブログエントリ "
-"<https://williambert.online/2011/07/how-to-unit-testing-in-django-with-"
-"mocking-and-patching/>`_.で議論されています。"
+"Una forma alternativa de tratar con fechas de mock, u otras clases "
+"integradas, se discute en `esta entrada de blog <https://williambert."
+"online/2011/07/how-to-unit-testing-in-django-with-mocking-and-patching/>`_."
 
-#: ../../library/unittest.mock-examples.rst:619
+#: ../Doc/library/unittest.mock-examples.rst:619
 msgid "Mocking a Generator Method"
-msgstr "ジェネレータメソッドをモックする"
+msgstr "Mocking de un método generador"
 
-#: ../../library/unittest.mock-examples.rst:621
+#: ../Doc/library/unittest.mock-examples.rst:621
 msgid ""
 "A Python generator is a function or method that uses the :keyword:`yield` "
 "statement to return a series of values when iterated over [#]_."
 msgstr ""
-"Pythonのジェネレータは、反復処理された時に一連の値を返す :keyword:`yield`文を"
-"使用した関数やメソッドです[#]_。"
+"Un generador de Python es una función o método que utiliza la instrucción :"
+"keyword:`yield` para devolver una serie de valores cuando se itera sobre "
+"[#]_."
 
-#: ../../library/unittest.mock-examples.rst:624
+#: ../Doc/library/unittest.mock-examples.rst:624
 msgid ""
 "A generator method / function is called to return the generator object. It "
 "is the generator object that is then iterated over. The protocol method for "
 "iteration is :meth:`~container.__iter__`, so we can mock this using a :class:"
 "`MagicMock`."
 msgstr ""
-"ジェネレータメソッド/関数はジェネレータオブジェクトを返すために呼び出されま"
-"す。そしてこのジェネレータオブジェクトが反復処理されます。イテレーションのた"
-"めのプロトコルメソッドは :meth:`~container.__iter__`なので、:class:"
-"`MagicMock`を使ってこれをモックすることができます。"
+"Se llama a un método / función del generador para devolver el objeto "
+"generador. Es el objeto generador que luego se itera. El método de protocolo "
+"para la iteración es :meth:`~container.__iter__`, por lo que podemos hacer "
+"mock de esto usando una :class:`MagicMock`."
 
-#: ../../library/unittest.mock-examples.rst:629
+#: ../Doc/library/unittest.mock-examples.rst:629
 msgid ""
 "Here's an example class with an \"iter\" method implemented as a generator:"
 msgstr ""
-"ここでは\"iter\"メソッドをジェネレータとして実装したクラスの例を紹介します:"
+"Aquí hay una clase de ejemplo con un método \"iter\" implementado como "
+"generador:"
 
-#: ../../library/unittest.mock-examples.rst:641
+#: ../Doc/library/unittest.mock-examples.rst:641
 msgid "How would we mock this class, and in particular its \"iter\" method?"
-msgstr "このクラス、特に \"iter\"メソッドをどのようにモックするのでしょうか。"
+msgstr ""
+"¿Cómo haríamos un mock de esta clase y, en particular, de su método \"iter\"?"
 
-#: ../../library/unittest.mock-examples.rst:643
+#: ../Doc/library/unittest.mock-examples.rst:643
 msgid ""
 "To configure the values returned from the iteration (implicit in the call "
 "to :class:`list`), we need to configure the object returned by the call to "
 "``foo.iter()``."
 msgstr ""
-"(:class:`list`の呼び出しの中での暗黙的な)イテレーションから返される値を設定す"
-"るには、``foo.iter()``の呼び出しで返されるオブジェクトを設定する必要がある。"
+"Para configurar los valores devueltos desde la iteración (implícita en la "
+"llamada a :class:`list`), necesitamos configurar el objeto devuelto por la "
+"llamada a ``foo.iter()``."
 
-#: ../../library/unittest.mock-examples.rst:651
+#: ../Doc/library/unittest.mock-examples.rst:651
 msgid ""
 "There are also generator expressions and more `advanced uses <http://www."
 "dabeaz.com/coroutines/index.html>`_ of generators, but we aren't concerned "
@@ -772,16 +808,18 @@ msgid ""
 "they are is: `Generator Tricks for Systems Programmers <http://www.dabeaz."
 "com/generators/>`_."
 msgstr ""
-"ジェネレータ式やジェネレータのより`高度な使い方 <http://www.dabeaz.com/"
-"coroutines/index.html>`_ もありますが、ここではそれらについては触れません。"
-"ジェネレータとその強力さについての非常に良い紹介記事があります: `Generator "
-"Tricks for Systems Programmers <http://www.dabeaz.com/generators/>`_。"
+"También hay expresiones generadoras y más usos avanzados <http://www.dabeaz."
+"com/coroutines/index.html>'_ de generadores, pero no nos preocupan los que "
+"están aquí. Una muy buena introducción a los generadores y lo potentes que "
+"son es: `Generator Tricks for Systems Programmers <http://www.dabeaz.com/"
+"generators/>`_."
 
-#: ../../library/unittest.mock-examples.rst:659
+#: ../Doc/library/unittest.mock-examples.rst:659
 msgid "Applying the same patch to every test method"
-msgstr "同じパッチを全てのメソッドに適用する"
+msgstr "Aplicar el mismo parche a cada método de prueba"
 
-#: ../../library/unittest.mock-examples.rst:661
+#: ../Doc/library/unittest.mock-examples.rst:661
+#, fuzzy
 msgid ""
 "If you want several patches in place for multiple test methods the obvious "
 "way is to apply the patch decorators to every method. This can feel like "
@@ -790,34 +828,40 @@ msgid ""
 "methods on the class. A test method is identified by methods whose names "
 "start with ``test``::"
 msgstr ""
+"Si desea que se coloquen varias revisiones para varios métodos de prueba, la "
+"forma obvia es aplicar los decoradores de parches a cada método. Esto puede "
+"parecer una repetición innecesaria. Para Python 2.6 o más reciente puede "
+"utilizar :func:`patch` (en todas sus diversas formas) como decorador de "
+"clases. Esto aplica las revisiones a todos los métodos de prueba de la "
+"clase. Un método de prueba se identifica mediante métodos cuyos nombres "
+"comienzan con ``test``::"
 
-#: ../../library/unittest.mock-examples.rst:685
+#: ../Doc/library/unittest.mock-examples.rst:685
 msgid ""
 "An alternative way of managing patches is to use the :ref:`start-and-stop`. "
 "These allow you to move the patching into your ``setUp`` and ``tearDown`` "
 "methods. ::"
 msgstr ""
-"パッチを管理する別の方法として、:ref:`start-and-stop`.を使用する方法がありま"
-"す。これらを使うと、パッチを ``setUp`` と``tearDown``メソッドに移すことができ"
-"ます。"
+"Una forma alternativa de administrar parches es usar :ref:`start-and-stop`. "
+"Estos le permiten mover el parche en sus métodos ``setUp`` y ``tearDown``. ::"
 
-#: ../../library/unittest.mock-examples.rst:702
+#: ../Doc/library/unittest.mock-examples.rst:702
 msgid ""
 "If you use this technique you must ensure that the patching is \"undone\" by "
 "calling ``stop``. This can be fiddlier than you might think, because if an "
 "exception is raised in the setUp then tearDown is not called. :meth:"
 "`unittest.TestCase.addCleanup` makes this easier::"
 msgstr ""
-"この方式を使う場合、必ず ``stop`` メソッドを呼び出してパッチが解除する必要が"
-"あります。setUp の中で例外が発生した場合 tearDown が呼び出されないので、これ"
-"は意外に面倒です。 :meth:`unittest.TestCase.addCleanup` を使うと簡単にできま"
-"す::"
+"Si utiliza esta técnica, debe asegurarse de que la aplicación de parches se "
+"\"undone\" llamando a ``stop``. Esto puede ser más complicado de lo que "
+"podría pensar, porque si se produce una excepción en el setUp, no se llama a "
+"tearDown. :meth:`unittest.TestCase.addCleanup` hace que esto sea más fácil::"
 
-#: ../../library/unittest.mock-examples.rst:720
+#: ../Doc/library/unittest.mock-examples.rst:720
 msgid "Mocking Unbound Methods"
-msgstr "Unboundメソッドをモックする"
+msgstr "Mocking de métodos sin enlazar"
 
-#: ../../library/unittest.mock-examples.rst:722
+#: ../Doc/library/unittest.mock-examples.rst:722
 msgid ""
 "Whilst writing tests today I needed to patch an *unbound method* (patching "
 "the method on the class rather than on the instance). I needed self to be "
@@ -830,8 +874,19 @@ msgid ""
 "to patch out methods with a mock that having to create a real function "
 "becomes a nuisance."
 msgstr ""
+"Mientras escribía pruebas hoy en día, necesitaba parchear un método *unbound "
+"method* (parchear el método en la clase en lugar de en la instancia). "
+"Necesitaba que se pasara a sí mismo como primer argumento porque quiero "
+"hacer aserciones sobre qué objetos estaban llamando a este método en "
+"particular. El problema es que no se puede parchear con un mock para esto, "
+"porque si reemplaza un método independiente con un mock, no se convierte en "
+"un método enlazado cuando se obtiene de la instancia, por lo que no se pasa "
+"por sí mismo. La solución es revisar el método independiente con una función "
+"real en su lugar. El decorador :func:`patch` hace que sea tan simple "
+"parchear métodos con un mock que tener que crear una función real se "
+"convierte en una molestia."
 
-#: ../../library/unittest.mock-examples.rst:733
+#: ../Doc/library/unittest.mock-examples.rst:733
 msgid ""
 "If you pass ``autospec=True`` to patch then it does the patching with a "
 "*real* function object. This function object has the same signature as the "
@@ -842,64 +897,73 @@ msgid ""
 "instance. It will have ``self`` passed in as the first argument, which is "
 "exactly what I wanted:"
 msgstr ""
+"Si pasa ``autospec=True`` al parche, entonces hace el parche con un objeto "
+"de función *real*. Este objeto de función tiene la misma firma que el que "
+"está reemplazando, pero delega en un mock bajo el capó. Usted todavía "
+"consigue su mock de auto-creado exactamente de la misma manera que antes. Lo "
+"que significa, sin embargo, es que si lo usa para parchear un método "
+"independiente en una clase, la función simulada se convertirá en un método "
+"enlazado si se obtiene de una instancia. Tendrá ``self`` pasado como el "
+"primer argumento, que es exactamente lo que quería:"
 
-#: ../../library/unittest.mock-examples.rst:754
+#: ../Doc/library/unittest.mock-examples.rst:754
 msgid ""
 "If we don't use ``autospec=True`` then the unbound method is patched out "
 "with a Mock instance instead, and isn't called with ``self``."
 msgstr ""
-"``autospec=True`` を使用しない場合、束縛されていないメソッドは代わりにMockイ"
-"ンスタンスでパッチされ、``self``で呼び出されることはありません。"
+"Si no usamos ``autospec=True`` entonces el método independiente se parchea "
+"con una instancia de Mock en su lugar, y no se llama con ``self``."
 
-#: ../../library/unittest.mock-examples.rst:759
+#: ../Doc/library/unittest.mock-examples.rst:759
 msgid "Checking multiple calls with mock"
-msgstr "モックで複数回の呼び出しをチェックする"
+msgstr "Comprobación de varias llamadas con mock"
 
-#: ../../library/unittest.mock-examples.rst:761
+#: ../Doc/library/unittest.mock-examples.rst:761
 msgid ""
 "mock has a nice API for making assertions about how your mock objects are "
 "used."
 msgstr ""
-"モックには、モックオブジェクトがどのように使用されるかをアサートするための素"
-"晴らしいAPIがあります。"
+"mock tiene una buena API para hacer aserciones sobre cómo se usan sus "
+"objetos ficticios."
 
-#: ../../library/unittest.mock-examples.rst:768
+#: ../Doc/library/unittest.mock-examples.rst:768
 msgid ""
 "If your mock is only being called once you can use the :meth:"
 "`assert_called_once_with` method that also asserts that the :attr:"
 "`call_count` is one."
 msgstr ""
-"もしモックが一度しか呼ばれていないのであれば、:attr:`call_count`が1であること"
-"も保証する:meth:`assert_called_once_with` メソッドを使うことができます。"
+"Si su mock solo se llama una vez, puede usar el método :meth:"
+"`assert_called_once_with` que también afirma que :attr:`call_count` es uno."
 
-#: ../../library/unittest.mock-examples.rst:779
+#: ../Doc/library/unittest.mock-examples.rst:779
 msgid ""
 "Both ``assert_called_with`` and ``assert_called_once_with`` make assertions "
 "about the *most recent* call. If your mock is going to be called several "
 "times, and you want to make assertions about *all* those calls you can use :"
 "attr:`~Mock.call_args_list`:"
 msgstr ""
-" ``assert_called_with`` と``assert_called_once_with`` はどちらも*直近の*呼び"
-"出しについてアサートを行います。もしモックが何度も呼び出され、その*すべての*"
-"呼び出しに対してアサートしたい場合には:attr:`~Mock.call_args_list`を使用する"
-"ことができます:"
+"Tanto ``assert_called_with`` como ``assert_called_once_with`` hacen "
+"afirmaciones sobre la llamada *más reciente*. Si su mock va a ser llamado "
+"varias veces, y desea hacer aserciones sobre *todas* esas llamadas que puede "
+"utilizar :attr:`~Mock.call_args_list`:"
 
-#: ../../library/unittest.mock-examples.rst:791
+#: ../Doc/library/unittest.mock-examples.rst:791
 msgid ""
 "The :data:`call` helper makes it easy to make assertions about these calls. "
 "You can build up a list of expected calls and compare it to "
 "``call_args_list``. This looks remarkably similar to the repr of the "
 "``call_args_list``:"
 msgstr ""
-":data:`call` ヘルパーを使えば、これらの呼び出しについて簡単にアサートすること"
-"ができます。予想される呼び出しのリストを作成し、それを``call_args_list``と比"
-"較することができます。これは``call_args_list``のreprと驚くほど似ています:"
+"El helper :data:`call` facilita la toma de aserciones sobre estas llamadas. "
+"Puede crear una lista de llamadas esperadas y compararla con "
+"``call_args_list``. Esto se ve notablemente similar al repr de la "
+"``call_args_list``:"
 
-#: ../../library/unittest.mock-examples.rst:801
+#: ../Doc/library/unittest.mock-examples.rst:801
 msgid "Coping with mutable arguments"
-msgstr "ミュータブルな引数に対処する"
+msgstr "Copiando con argumentos mutables"
 
-#: ../../library/unittest.mock-examples.rst:803
+#: ../Doc/library/unittest.mock-examples.rst:803
 msgid ""
 "Another situation is rare, but can bite you, is when your mock is called "
 "with mutable arguments. ``call_args`` and ``call_args_list`` store "
@@ -907,36 +971,39 @@ msgid ""
 "under test then you can no longer make assertions about what the values were "
 "when the mock was called."
 msgstr ""
-"稀ではありますが、問題となることがあるのはミュータブルな引数でモックが呼び出"
-"された場合です。``call_args`` や``call_args_list`` は引数への*参照*を保存しま"
-"す。もしテスト対象のコードによって引数が変更されてしまうと、モックが呼び出さ"
-"れた時の値をアサートすることはできなくなります。"
+"Otra situación es rara, pero puede morderte, es cuando se llama a tu mock "
+"con argumentos mutables. ``call_args`` y ``call_args_list`` almacenan "
+"*referencias* a los argumentos. Si el código sometido a prueba muta los "
+"argumentos ya no puede realizar aserciones sobre cuáles eran los valores "
+"cuando se llamó al mock."
 
-#: ../../library/unittest.mock-examples.rst:808
+#: ../Doc/library/unittest.mock-examples.rst:808
 msgid ""
 "Here's some example code that shows the problem. Imagine the following "
 "functions defined in 'mymodule'::"
-msgstr "この問題を示すサンプルコードを示します。"
+msgstr ""
+"Este es un código de ejemplo que muestra el problema. Imagine las siguientes "
+"funciones definidas en 'mymodule'::"
 
-#: ../../library/unittest.mock-examples.rst:819
+#: ../Doc/library/unittest.mock-examples.rst:819
 msgid ""
 "When we try to test that ``grob`` calls ``frob`` with the correct argument "
 "look what happens::"
 msgstr ""
-"``grob`` が``frob``を正しい引数で呼び出していることをテストしようとすると何が"
-"起こるか見てみましょう::"
+"Cuando tratamos de probar que ``grob`` llama ``frob`` con el argumento "
+"correcto mira lo que sucede::"
 
-#: ../../library/unittest.mock-examples.rst:834
+#: ../Doc/library/unittest.mock-examples.rst:834
 msgid ""
 "One possibility would be for mock to copy the arguments you pass in. This "
 "could then cause problems if you do assertions that rely on object identity "
 "for equality."
 msgstr ""
-"一つの選択肢は、あなたが渡す引数をモックがコピーすることです。この方法は、オ"
-"ブジェクトidの同一性に依存したアサーションを行う場合に問題を引き起こす可能性"
-"があります。"
+"Una posibilidad sería que el mock copiara los argumentos que pasa. Esto "
+"podría causar problemas si realiza aserciones que se basan en la identidad "
+"del objeto para la igualdad."
 
-#: ../../library/unittest.mock-examples.rst:838
+#: ../Doc/library/unittest.mock-examples.rst:838
 msgid ""
 "Here's one solution that uses the :attr:`side_effect` functionality. If you "
 "provide a ``side_effect`` function for a mock then ``side_effect`` will be "
@@ -945,132 +1012,175 @@ msgid ""
 "*another* mock to store the arguments so that I can use the mock methods for "
 "doing the assertion. Again a helper function sets this up for me. ::"
 msgstr ""
+"Aquí hay una solución que utiliza la funcionalidad :attr:`side_effect`. Si "
+"proporciona una función ``side_effect`` para un mock, se llamará a "
+"``side_effect`` con los mismos argumentos que el mock. Esto nos da la "
+"oportunidad de copiar los argumentos y almacenarlos para aserciones "
+"posteriores. En este ejemplo estoy usando *otro* mock para almacenar los "
+"argumentos de modo que pueda usar los métodos ficticios para hacer la "
+"aserción. Una vez más, una función auxiliar configura esto para mí. ::"
 
-#: ../../library/unittest.mock-examples.rst:867
+#: ../Doc/library/unittest.mock-examples.rst:867
 msgid ""
 "``copy_call_args`` is called with the mock that will be called. It returns a "
 "new mock that we do the assertion on. The ``side_effect`` function makes a "
 "copy of the args and calls our ``new_mock`` with the copy."
 msgstr ""
-"``copy_call_args`` は、テストで呼び出されるモックとともに呼び出されます。この"
-"関数はアサーションで使用するための新しいモックを返します。``side_effect`` 関"
-"数は引数のコピーを作成し、そのコピーを使って ``new_mock`` を呼び出します。"
+"``copy_call_args`` se llama con el mock que se llamará. Devuelve un nuevo "
+"mock en el que hacemos la aserción. La función ``side_effect`` hace una "
+"copia de los args y llama a nuestro ``new_mock`` con la copia."
 
-#: ../../library/unittest.mock-examples.rst:873
+#: ../Doc/library/unittest.mock-examples.rst:873
 msgid ""
 "If your mock is only going to be used once there is an easier way of "
 "checking arguments at the point they are called. You can simply do the "
 "checking inside a ``side_effect`` function."
 msgstr ""
-"もしモックが一度しか使われないのであれば、呼び出された時点で引数をチェックす"
-"る簡単な方法があります。単純に``side_effect``関数の中でチェックを行えばいいの"
-"です。"
+"Si su simulacro solo se va a usar una vez, hay una forma más fácil de "
+"verificar los argumentos en el punto en que se llaman. Simplemente puede "
+"hacer la comprobación dentro de una función ``side_effect``."
 
-#: ../../library/unittest.mock-examples.rst:887
+#: ../Doc/library/unittest.mock-examples.rst:887
 msgid ""
 "An alternative approach is to create a subclass of :class:`Mock` or :class:"
 "`MagicMock` that copies (using :func:`copy.deepcopy`) the arguments. Here's "
 "an example implementation:"
 msgstr ""
-"別の方法としては、（ :func:`copy.deepcopy` を使用して）引数をコピーする、 :"
-"class:`Mock` や :class:`MagicMock` のサブクラスを作成する方法があります。以下"
-"に実装例を示します。"
+"Un enfoque alternativo es crear una subclase de :class:`Mock` o :class:"
+"`MagicMock` que copie (usando :func:`copy.deepcopy`) los argumentos. A "
+"continuación se muestra un ejemplo de implementación:"
 
-#: ../../library/unittest.mock-examples.rst:911
+#: ../Doc/library/unittest.mock-examples.rst:911
 msgid ""
 "When you subclass ``Mock`` or ``MagicMock`` all dynamically created "
 "attributes, and the ``return_value`` will use your subclass automatically. "
 "That means all children of a ``CopyingMock`` will also have the type "
 "``CopyingMock``."
 msgstr ""
+"Cuando subclases ``Mock`` o ``MagicMock`` todos los atributos creados "
+"dinámicamente, y el ``return_value`` usará tu subclase automáticamente. Eso "
+"significa que todos los elementos secundarios de un ``CopyingMock`` también "
+"tendrán el tipo ``CopyingMock``."
 
-#: ../../library/unittest.mock-examples.rst:917
+#: ../Doc/library/unittest.mock-examples.rst:917
 msgid "Nesting Patches"
-msgstr "patch をネストする"
+msgstr "Anidando parches"
 
-#: ../../library/unittest.mock-examples.rst:919
+#: ../Doc/library/unittest.mock-examples.rst:919
 msgid ""
 "Using patch as a context manager is nice, but if you do multiple patches you "
 "can end up with nested with statements indenting further and further to the "
 "right::"
 msgstr ""
+"Usar parches como administradores de contexto es bueno, pero si haces varios "
+"parches, puedes terminar con instrucciones anidadas que se sangran cada vez "
+"más a la derecha::"
 
-#: ../../library/unittest.mock-examples.rst:937
+#: ../Doc/library/unittest.mock-examples.rst:937
 msgid ""
 "With unittest ``cleanup`` functions and the :ref:`start-and-stop` we can "
 "achieve the same effect without the nested indentation. A simple helper "
 "method, ``create_patch``, puts the patch in place and returns the created "
 "mock for us::"
 msgstr ""
+"Con las funciones unittest ``cleanup`` y :ref:`start-and-stop` podemos "
+"lograr el mismo efecto sin la sangría anidada. Un método auxiliar simple, "
+"``create_patch``, pone el parche en su lugar y devuelve el mock creado para "
+"nosotros::"
 
-#: ../../library/unittest.mock-examples.rst:965
+#: ../Doc/library/unittest.mock-examples.rst:965
 msgid "Mocking a dictionary with MagicMock"
-msgstr "MagicMock で辞書をモックする"
+msgstr "Mocking a un diccionario usando MagickMock"
 
-#: ../../library/unittest.mock-examples.rst:967
+#: ../Doc/library/unittest.mock-examples.rst:967
 msgid ""
 "You may want to mock a dictionary, or other container object, recording all "
 "access to it whilst having it still behave like a dictionary."
 msgstr ""
+"Es posible que desee simular un diccionario u otro objeto contenedor, "
+"registrando todo el acceso a él mientras todavía se comporta como un "
+"diccionario."
 
-#: ../../library/unittest.mock-examples.rst:970
+#: ../Doc/library/unittest.mock-examples.rst:970
 msgid ""
 "We can do this with :class:`MagicMock`, which will behave like a dictionary, "
 "and using :data:`~Mock.side_effect` to delegate dictionary access to a real "
 "underlying dictionary that is under our control."
 msgstr ""
+"Podemos hacer esto con :class:`MagicMock`, que se comportará como un "
+"diccionario, y usando :data:`~Mock.side_effect` para delegar el acceso del "
+"diccionario a un diccionario subyacente real que está bajo nuestro control."
 
-#: ../../library/unittest.mock-examples.rst:974
+#: ../Doc/library/unittest.mock-examples.rst:974
 msgid ""
 "When the :meth:`__getitem__` and :meth:`__setitem__` methods of our "
 "``MagicMock`` are called (normal dictionary access) then ``side_effect`` is "
 "called with the key (and in the case of ``__setitem__`` the value too). We "
 "can also control what is returned."
 msgstr ""
+"Cuando se llama a los métodos :meth:`__getitem__` y :meth:`__setitem__` de "
+"nuestro ``MagicMock`` (acceso normal al diccionario), entonces se llama a "
+"``side_effect`` con la clave (y en el caso de ``__setitem__`` el valor "
+"también). También podemos controlar lo que se devuelve."
 
-#: ../../library/unittest.mock-examples.rst:978
+#: ../Doc/library/unittest.mock-examples.rst:978
 msgid ""
 "After the ``MagicMock`` has been used we can use attributes like :data:"
 "`~Mock.call_args_list` to assert about how the dictionary was used:"
 msgstr ""
+"Después de que se haya utilizado el ``MagicMock`` podemos usar atributos "
+"como :data:`~Mock.call_args_list` para afirmar cómo se usó el diccionario:"
 
-#: ../../library/unittest.mock-examples.rst:994
+#: ../Doc/library/unittest.mock-examples.rst:994
 msgid ""
 "An alternative to using ``MagicMock`` is to use ``Mock`` and *only* provide "
 "the magic methods you specifically want:"
 msgstr ""
+"Una alternativa al uso de ``MagicMock`` es usar ``Mock`` y *solo* "
+"proporcionar los métodos mágicos que desea específicamente:"
 
-#: ../../library/unittest.mock-examples.rst:1001
+#: ../Doc/library/unittest.mock-examples.rst:1001
 msgid ""
 "A *third* option is to use ``MagicMock`` but passing in ``dict`` as the "
 "*spec* (or *spec_set*) argument so that the ``MagicMock`` created only has "
 "dictionary magic methods available:"
 msgstr ""
+"Una *tercera* opción es usar ``MagicMock`` pero pasando ``dict`` como el "
+"argumento *spec* (o *spec_set*) para que el ``MagicMock`` creado solo tenga "
+"métodos mágicos de diccionario disponibles:"
 
-#: ../../library/unittest.mock-examples.rst:1009
+#: ../Doc/library/unittest.mock-examples.rst:1009
 msgid ""
 "With these side effect functions in place, the ``mock`` will behave like a "
 "normal dictionary but recording the access. It even raises a :exc:`KeyError` "
 "if you try to access a key that doesn't exist."
 msgstr ""
+"Con estas funciones de efectos secundarios en su lugar, el ``mock`` se "
+"comportará como un diccionario normal pero registrando el acceso. Incluso "
+"genera un :exc:`KeyError` si intenta acceder a una clave que no existe."
 
-#: ../../library/unittest.mock-examples.rst:1028
+#: ../Doc/library/unittest.mock-examples.rst:1028
 msgid ""
 "After it has been used you can make assertions about the access using the "
 "normal mock methods and attributes:"
 msgstr ""
+"Una vez utilizado, puede realizar aserciones sobre el acceso utilizando los "
+"métodos y atributos mock normales:"
 
-#: ../../library/unittest.mock-examples.rst:1040
+#: ../Doc/library/unittest.mock-examples.rst:1040
 msgid "Mock subclasses and their attributes"
-msgstr "Mock のサブクラスと属性"
+msgstr "Mock de subclases y sus atributos"
 
-#: ../../library/unittest.mock-examples.rst:1042
+#: ../Doc/library/unittest.mock-examples.rst:1042
 msgid ""
 "There are various reasons why you might want to subclass :class:`Mock`. One "
 "reason might be to add helper methods. Here's a silly example:"
 msgstr ""
+"Hay varias razones por las que es posible que desee crear subclases :class:"
+"`Mock` Una razón podría ser agregar métodos auxiliares. Aquí hay un ejemplo "
+"simple:"
 
-#: ../../library/unittest.mock-examples.rst:1058
+#: ../Doc/library/unittest.mock-examples.rst:1058
 msgid ""
 "The standard behaviour for ``Mock`` instances is that attributes and the "
 "return value mocks are of the same type as the mock they are accessed on. "
@@ -1079,8 +1189,15 @@ msgid ""
 "methods then they'll also be available on the attributes and return value "
 "mock of instances of your subclass."
 msgstr ""
+"El comportamiento estándar para las instancias ``Mock`` es que los atributos "
+"y los simulacros de valor devuelto son del mismo tipo que el simulacro en el "
+"que se accede a ellos. Esto garantiza que los atributos ``Mock`` son "
+"``Mocks`` y los atributos ``MagicMock`` son ``MagicMocks`` [#]_.  Por lo "
+"tanto, si está creando subclases para agregar métodos auxiliares, también "
+"estarán disponibles en los atributos y el valor devuelto mock de las "
+"instancias de su subclase."
 
-#: ../../library/unittest.mock-examples.rst:1074
+#: ../Doc/library/unittest.mock-examples.rst:1074
 msgid ""
 "Sometimes this is inconvenient. For example, `one user <https://code.google."
 "com/archive/p/mock/issues/105>`_ is subclassing mock to created a `Twisted "
@@ -1088,8 +1205,13 @@ msgid ""
 "components.html>`_. Having this applied to attributes too actually causes "
 "errors."
 msgstr ""
+"A veces esto es inconveniente. Por ejemplo, `un usuario <https://code.google."
+"com/archive/p/mock/issues/105>`_ está creando subclases de mock para crear "
+"un `Twisted adaptor <https://twistedmatrix.com/documents/11.0.0/api/twisted."
+"python.components.html>`_. Tener esto aplicado a los atributos también puede "
+"causar errores en realidad."
 
-#: ../../library/unittest.mock-examples.rst:1080
+#: ../Doc/library/unittest.mock-examples.rst:1080
 msgid ""
 "``Mock`` (in all its flavours) uses a method called ``_get_child_mock`` to "
 "create these \"sub-mocks\" for attributes and return values. You can prevent "
@@ -1097,26 +1219,39 @@ msgid ""
 "signature is that it takes arbitrary keyword arguments (``**kwargs``) which "
 "are then passed onto the mock constructor:"
 msgstr ""
+"``Mock`` (en todos sus sabores) utiliza un método llamado "
+"``_get_child_mock`` para crear estos \"sub-mocks\" para atributos y valores "
+"devueltos. Puede evitar que la subclase se utilice para los atributos "
+"invalidando este método. La firma es que toma argumentos de palabra clave "
+"arbitrarios (``**kwargs``) que luego se pasan al constructor ficticio:"
 
-#: ../../library/unittest.mock-examples.rst:1097
+#: ../Doc/library/unittest.mock-examples.rst:1097
 msgid ""
 "An exception to this rule are the non-callable mocks. Attributes use the "
 "callable variant because otherwise non-callable mocks couldn't have callable "
 "methods."
 msgstr ""
+"Una excepción a esta regla son los mock no invocables. Los atributos usan la "
+"variante a la que se puede llamar porque, de lo contrario, los simulacros a "
+"los que no se puede llamar no podrían tener métodos a los que se puede "
+"llamar."
 
-#: ../../library/unittest.mock-examples.rst:1103
+#: ../Doc/library/unittest.mock-examples.rst:1103
 msgid "Mocking imports with patch.dict"
-msgstr "patch.dict で import をモックする"
+msgstr "Importaciones de Mocking con patch.dict"
 
-#: ../../library/unittest.mock-examples.rst:1105
+#: ../Doc/library/unittest.mock-examples.rst:1105
 msgid ""
 "One situation where mocking can be hard is where you have a local import "
 "inside a function. These are harder to mock because they aren't using an "
 "object from the module namespace that we can patch out."
 msgstr ""
+"Una situación en la que un mocking puede ser difícil es cuando tiene una "
+"importación local dentro de una función. Estos son más difíciles de simular "
+"porque no están usando un objeto del espacio de nombres del módulo que "
+"podemos revisar."
 
-#: ../../library/unittest.mock-examples.rst:1109
+#: ../Doc/library/unittest.mock-examples.rst:1109
 msgid ""
 "Generally local imports are to be avoided. They are sometimes done to "
 "prevent circular dependencies, for which there is *usually* a much better "
@@ -1125,8 +1260,16 @@ msgid ""
 "an unconditional local import (store the module as a class or module "
 "attribute and only do the import on first use)."
 msgstr ""
+"Por lo general, deben evitarse las importaciones locales. A veces se hacen "
+"para evitar dependencias circulares, para las que hay *generalmente* una "
+"manera mucho mejor de resolver el problema (refactorizar el código) o para "
+"evitar \"costos iniciales\" retrasando la importación. Esto también se puede "
+"resolver de mejores maneras que una importación local incondicional "
+"(almacenar el módulo como una clase o atributo de módulo y solo hacer la "
+"importación en el primer uso)."
 
-#: ../../library/unittest.mock-examples.rst:1116
+#: ../Doc/library/unittest.mock-examples.rst:1116
+#, fuzzy
 msgid ""
 "That aside there is a way to use ``mock`` to affect the results of an "
 "import. Importing fetches an *object* from the :data:`sys.modules` "
@@ -1135,8 +1278,15 @@ msgid ""
 "in ``sys.modules``, so usually when you import something you get a module "
 "back. This need not be the case however."
 msgstr ""
+"Aparte de eso, hay una manera de usar ``mock`` para afectar los resultados "
+"de una importación. La importación obtiene un *objeto* del diccionario :data:"
+"`sys.modules`. Tenga en cuenta que obtiene un *objeto*, que no tiene por qué "
+"ser un módulo. La importación de un módulo por primera vez da como resultado "
+"que un objeto de módulo se coloque en `sys.modules`, por lo que normalmente "
+"cuando importa algo, recupera un módulo. Sin embargo, este no tiene por qué "
+"ser el caso."
 
-#: ../../library/unittest.mock-examples.rst:1123
+#: ../Doc/library/unittest.mock-examples.rst:1123
 msgid ""
 "This means you can use :func:`patch.dict` to *temporarily* put a mock in "
 "place in :data:`sys.modules`. Any imports whilst this patch is active will "
@@ -1144,59 +1294,87 @@ msgid ""
 "the with statement body is complete or ``patcher.stop()`` is called) then "
 "whatever was there previously will be restored safely."
 msgstr ""
+"Esto significa que puede usar :func:`patch.dict` para *temporalmente* poner "
+"un mock en su lugar sobre :data:`sys.modules`. Cualquier importación "
+"mientras este parche está activo recuperará el mock. Cuando el parche está "
+"completo (la función decorada sale, el cuerpo de la instrucción with está "
+"completo o se llama a ``patcher.stop()``) entonces lo que había "
+"anteriormente se restaurará de forma segura."
 
-#: ../../library/unittest.mock-examples.rst:1129
+#: ../Doc/library/unittest.mock-examples.rst:1129
 msgid "Here's an example that mocks out the 'fooble' module."
-msgstr ""
+msgstr "Aquí hay un ejemplo de mock del módulo 'fooble'."
 
-#: ../../library/unittest.mock-examples.rst:1141
+#: ../Doc/library/unittest.mock-examples.rst:1141
 msgid ""
 "As you can see the ``import fooble`` succeeds, but on exit there is no "
 "'fooble' left in :data:`sys.modules`."
 msgstr ""
+"Como puede ver, el ``import fooble`` tiene éxito, pero al salir no queda "
+"ningún 'fooble' en :data:`sys.modules`."
 
-#: ../../library/unittest.mock-examples.rst:1144
+#: ../Doc/library/unittest.mock-examples.rst:1144
 msgid "This also works for the ``from module import name`` form:"
-msgstr ""
+msgstr "Esto también funciona para el formulario ``from module import name``:"
 
-#: ../../library/unittest.mock-examples.rst:1154
+#: ../Doc/library/unittest.mock-examples.rst:1154
 msgid "With slightly more work you can also mock package imports:"
 msgstr ""
+"Con un poco más de trabajo también puede simular las importaciones de "
+"paquetes:"
 
-#: ../../library/unittest.mock-examples.rst:1167
+#: ../Doc/library/unittest.mock-examples.rst:1167
 msgid "Tracking order of calls and less verbose call assertions"
 msgstr ""
+"Seguimiento del orden de las llamadas y de las aserciones de llamadas menos "
+"detalladas"
 
-#: ../../library/unittest.mock-examples.rst:1169
+#: ../Doc/library/unittest.mock-examples.rst:1169
 msgid ""
 "The :class:`Mock` class allows you to track the *order* of method calls on "
 "your mock objects through the :attr:`~Mock.method_calls` attribute. This "
 "doesn't allow you to track the order of calls between separate mock objects, "
 "however we can use :attr:`~Mock.mock_calls` to achieve the same effect."
 msgstr ""
+"La clase :class:`Mock` le permite realizar un seguimiento del *orden* de las "
+"llamadas a métodos en sus objetos mock a través del atributo :attr:`~Mock."
+"method_calls`. Esto no le permite rastrear el orden de las llamadas entre "
+"objetos simulados separados, sin embargo, podemos usar :attr:`~Mock."
+"mock_calls` para lograr el mismo efecto."
 
-#: ../../library/unittest.mock-examples.rst:1174
+#: ../Doc/library/unittest.mock-examples.rst:1174
 msgid ""
 "Because mocks track calls to child mocks in ``mock_calls``, and accessing an "
 "arbitrary attribute of a mock creates a child mock, we can create our "
 "separate mocks from a parent one. Calls to those child mock will then all be "
 "recorded, in order, in the ``mock_calls`` of the parent:"
 msgstr ""
+"Debido a que los mocks rastrean las llamadas a mocks secundarios en "
+"``mock_calls``, y el acceso a un atributo arbitrario de un mock crea un mock "
+"secundario, podemos crear nuestros mocks separados de uno primario. Las "
+"llamadas a esos mocks hijos se grabarán, en orden, en el ``mock_calls`` del "
+"padre:"
 
-#: ../../library/unittest.mock-examples.rst:1191
+#: ../Doc/library/unittest.mock-examples.rst:1191
 msgid ""
 "We can then assert about the calls, including the order, by comparing with "
 "the ``mock_calls`` attribute on the manager mock:"
 msgstr ""
+"A continuación, podemos realizar afirmaciones sobre las llamadas, incluido "
+"el orden, comparando con el atributo ``mock_calls`` en el mock administrador:"
 
-#: ../../library/unittest.mock-examples.rst:1198
+#: ../Doc/library/unittest.mock-examples.rst:1198
 msgid ""
 "If ``patch`` is creating, and putting in place, your mocks then you can "
 "attach them to a manager mock using the :meth:`~Mock.attach_mock` method. "
 "After attaching calls will be recorded in ``mock_calls`` of the manager. ::"
 msgstr ""
+"Si ``patch`` está creando y poniendo en su lugar, sus mocks, puede "
+"adjuntarlos a un mock administrador usando el método :meth:`~Mock."
+"attach_mock` . Después de adjuntar las llamadas se registrarán en "
+"``mock_calls`` del administrador. ::"
 
-#: ../../library/unittest.mock-examples.rst:1217
+#: ../Doc/library/unittest.mock-examples.rst:1217
 msgid ""
 "If many calls have been made, but you're only interested in a particular "
 "sequence of them then an alternative is to use the :meth:`~Mock."
@@ -1204,32 +1382,45 @@ msgid ""
 "data:`call` object). If that sequence of calls are in :attr:`~Mock."
 "mock_calls` then the assert succeeds."
 msgstr ""
+"Si se han realizado muchas llamadas, pero solo está interesado en una "
+"secuencia particular de ellas, entonces una alternativa es usar el método :"
+"meth:`~Mock.assert_has_calls` . Esto toma una lista de llamadas (construidas "
+"con el objeto :data:`call`). Si esa secuencia de llamadas sobre :attr:`~Mock."
+"mock_calls`, la aserción se realiza correctamente."
 
-#: ../../library/unittest.mock-examples.rst:1231
+#: ../Doc/library/unittest.mock-examples.rst:1231
 msgid ""
 "Even though the chained call ``m.one().two().three()`` aren't the only calls "
 "that have been made to the mock, the assert still succeeds."
 msgstr ""
+"Aunque la llamada encadenada ``m.one().two().three()`` no son las únicas "
+"llamadas que se han realizado al mock, la aserción aún tiene éxito."
 
-#: ../../library/unittest.mock-examples.rst:1234
+#: ../Doc/library/unittest.mock-examples.rst:1234
 msgid ""
 "Sometimes a mock may have several calls made to it, and you are only "
 "interested in asserting about *some* of those calls. You may not even care "
 "about the order. In this case you can pass ``any_order=True`` to "
 "``assert_has_calls``:"
 msgstr ""
+"A veces, un mock puede tener varias llamadas, y solo le interesa afirmar "
+"sobre *algunas* de esas llamadas. Puede que ni siquiera importe el pedido. "
+"En este caso, puede pasar ``any_order=True`` a ``assert_has_calls``:"
 
-#: ../../library/unittest.mock-examples.rst:1246
+#: ../Doc/library/unittest.mock-examples.rst:1246
 msgid "More complex argument matching"
-msgstr ""
+msgstr "Coincidencia de argumentos más compleja"
 
-#: ../../library/unittest.mock-examples.rst:1248
+#: ../Doc/library/unittest.mock-examples.rst:1248
 msgid ""
 "Using the same basic concept as :data:`ANY` we can implement matchers to do "
 "more complex assertions on objects used as arguments to mocks."
 msgstr ""
+"Usando el mismo concepto básico que :data:`ANY` podemos implementar "
+"comparadores para hacer afirmaciones más complejas en objetos usados como "
+"argumentos para mocks."
 
-#: ../../library/unittest.mock-examples.rst:1251
+#: ../Doc/library/unittest.mock-examples.rst:1251
 msgid ""
 "Suppose we expect some object to be passed to a mock that by default "
 "compares equal based on object identity (which is the Python default for "
@@ -1238,29 +1429,41 @@ msgid ""
 "attributes of this object then we can create a matcher that will check these "
 "attributes for us."
 msgstr ""
+"Supongamos que esperamos que algún objeto se pase a un mock que, por "
+"defecto, se compara igual en función de la identidad del objeto (que es el "
+"valor predeterminado de Python para las clases definidas por el usuario). "
+"Para usar :meth:`~Mock.assert_called_with` tendríamos que pasar exactamente "
+"el mismo objeto. Si solo estamos interesados en algunos de los atributos de "
+"este objeto, podemos crear un comparador que verifique estos atributos por "
+"nosotros."
 
-#: ../../library/unittest.mock-examples.rst:1258
+#: ../Doc/library/unittest.mock-examples.rst:1258
 msgid ""
 "You can see in this example how a 'standard' call to ``assert_called_with`` "
 "isn't sufficient:"
 msgstr ""
+"Puede ver en este ejemplo cómo una llamada 'estándar' a "
+"``assert_called_with`` no es suficiente:"
 
-#: ../../library/unittest.mock-examples.rst:1273
+#: ../Doc/library/unittest.mock-examples.rst:1273
 msgid ""
 "A comparison function for our ``Foo`` class might look something like this:"
 msgstr ""
+"Una función de comparación para nuestra clase ``Foo`` podría verse así:"
 
-#: ../../library/unittest.mock-examples.rst:1285
+#: ../Doc/library/unittest.mock-examples.rst:1285
 msgid ""
 "And a matcher object that can use comparison functions like this for its "
 "equality operation would look something like this:"
 msgstr ""
+"Y un objeto comparador que puede usar funciones de comparación como esta "
+"para su operación de igualdad se vería así:"
 
-#: ../../library/unittest.mock-examples.rst:1296
+#: ../Doc/library/unittest.mock-examples.rst:1296
 msgid "Putting all this together:"
-msgstr "全てをつなぎ合わせて:"
+msgstr "Poniendo todo esto junto:"
 
-#: ../../library/unittest.mock-examples.rst:1301
+#: ../Doc/library/unittest.mock-examples.rst:1301
 msgid ""
 "The ``Matcher`` is instantiated with our compare function and the ``Foo`` "
 "object we want to compare against. In ``assert_called_with`` the ``Matcher`` "
@@ -1269,14 +1472,22 @@ msgid ""
 "``assert_called_with`` passes, and if they don't an :exc:`AssertionError` is "
 "raised:"
 msgstr ""
+"El ``Matcher`` es instanciado con nuestra función de comparación y el objeto "
+"``Foo`` con el que queremos comparar. En ``assert_called_with`` se llamará "
+"al método de igualdad ``Matcher``, que compara el objeto con el que se llamó "
+"al mock con el que creamos nuestro matcher. Si coinciden, entonces pasa "
+"``assert_called_with``, y si no lo hacen, se lanzará un :exc:"
+"`AssertionError`:"
 
-#: ../../library/unittest.mock-examples.rst:1314
+#: ../Doc/library/unittest.mock-examples.rst:1314
 msgid ""
 "With a bit of tweaking you could have the comparison function raise the :exc:"
 "`AssertionError` directly and provide a more useful failure message."
 msgstr ""
+"Con un poco de ajuste, podría hacer que la función de comparación genere el :"
+"exc:`AssertionError` directamente y proporcione un mensaje de falla más útil."
 
-#: ../../library/unittest.mock-examples.rst:1317
+#: ../Doc/library/unittest.mock-examples.rst:1317
 msgid ""
 "As of version 1.5, the Python testing library `PyHamcrest <https://"
 "pyhamcrest.readthedocs.io/>`_ provides similar functionality, that may be "
@@ -1284,3 +1495,9 @@ msgid ""
 "integration.match_equality <https://pyhamcrest.readthedocs.io/en/release-1.8/"
 "integration/#module-hamcrest.library.integration.match_equality>`_)."
 msgstr ""
+"A partir de la versión 1.5, la biblioteca de pruebas de Python `PyHamcrest "
+"<https://pyhamcrest.readthedocs.io/>`_ proporciona una funcionalidad "
+"similar, que puede ser útil aquí, en la forma de su comparador de igualdad "
+"(`hamcrest.library.integration.match_equality <https://pyhamcrest."
+"readthedocs.io/en/release-1.8/integration/#module-hamcrest.library."
+"integration.match_equality>`_)."

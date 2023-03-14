@@ -1,64 +1,63 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Tetsuo Koyama <tkoyama010@gmail.com>, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:08+0000\n"
-"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2021-03-19 11:16+0100\n"
+"PO-Revision-Date: 2021-08-04 21:33+0200\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
+"Language: es_AR\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.8.0\n"
+"X-Generator: Poedit 3.0\n"
 
-#: ../../library/imp.rst:2
+#: ../Doc/library/imp.rst:2
 msgid ":mod:`imp` --- Access the :ref:`import <importsystem>` internals"
-msgstr ":mod:`imp` --- :ref:`import <importsystem>` 内部へのアクセス"
+msgstr ":mod:`imp` --- Acceda a :ref:`import <importsystem>` internamente"
 
-#: ../../library/imp.rst:8
+#: ../Doc/library/imp.rst:8
 msgid "**Source code:** :source:`Lib/imp.py`"
-msgstr "**ソースコード:** :source:`Lib/imp.py`"
+msgstr "**Código fuente:** :source:`Lib/imp.py`"
 
-#: ../../library/imp.rst:12
+#: ../Doc/library/imp.rst:10
 msgid "The :mod:`imp` module is deprecated in favor of :mod:`importlib`."
-msgstr ""
-":mod:`imp` モジュールは :mod:`importlib` を後継として非推奨にされました。"
+msgstr "El módulo :mod:`imp` está obsoleto en favor de :mod:`importlib`."
 
-#: ../../library/imp.rst:17
+#: ../Doc/library/imp.rst:17
 msgid ""
 "This module provides an interface to the mechanisms used to implement the :"
 "keyword:`import` statement.  It defines the following constants and "
 "functions:"
 msgstr ""
-"このモジュールは :keyword:`import` 文を実装するために使われているメカニズムへ"
-"のインターフェイスを提供します。次の定数と関数が定義されています:"
+"Este módulo proporciona una interfaz a los mecanismos utilizados para "
+"implementar la sentencia :keyword:`import`.  Define las siguientes "
+"constantes y funciones:"
 
-#: ../../library/imp.rst:25
+#: ../Doc/library/imp.rst:25
 msgid ""
 "Return the magic string value used to recognize byte-compiled code files (:"
 "file:`.pyc` files).  (This value may be different for each Python version.)"
 msgstr ""
-"バイトコンパイルされたコードファイル(:file:`.pyc` ファイル)を認識するために使"
-"われるマジック文字列値を返します。 (この値は Python の各バージョンで異なりま"
-"す。)"
+"Retorna el valor de la cadena de caracteres mágica que se utiliza para "
+"reconocer archivos de código compilados por bytes (archivos :file:`.pyc`). "
+"(Este valor puede ser diferente para cada versión de Python)."
 
-#: ../../library/imp.rst:28
+#: ../Doc/library/imp.rst:28
 msgid "Use :attr:`importlib.util.MAGIC_NUMBER` instead."
-msgstr "代わりに :attr:`importlib.util.MAGIC_NUMBER` を使用してください。"
+msgstr "Utilice :attr:`importlib.util.MAGIC_NUMBER` en su lugar."
 
-#: ../../library/imp.rst:34
+#: ../Doc/library/imp.rst:34
 msgid ""
 "Return a list of 3-element tuples, each describing a particular type of "
 "module. Each triple has the form ``(suffix, mode, type)``, where *suffix* is "
@@ -68,20 +67,22 @@ msgid ""
 "files), and *type* is the file type, which has one of the values :const:"
 "`PY_SOURCE`, :const:`PY_COMPILED`, or :const:`C_EXTENSION`, described below."
 msgstr ""
-"3要素のタプルのリストを返します。それぞれのタプルは特定の種類のモジュールを説"
-"明しています。各タプルは ``(suffix, mode, type)`` という形式です。ここで、 "
-"*suffix* は探すファイル名を作るためにモジュール名に追加する文字列です。その"
-"ファイルをオープンするために、 *mode* は組み込み :func:`open` 関数へ渡される"
-"モード文字列です (これはテキストファイル対しては ``'r'`` 、バイナリファイルに"
-"対しては ``'rb'`` となります)。 *type* はファイル型で、以下で説明する値 :"
-"const:`PY_SOURCE`, :const:`PY_COMPILED` あるいは、 :const:`C_EXTENSION` の一"
-"つを取ります。"
+"Retorna una lista de tuplas de 3 elementos, cada una de las cuales describe "
+"un tipo particular de módulo. Cada triple tiene la forma ``(suffix, mode, "
+"type)``, donde *suffix* es una cadena de caracteres que se agregará al "
+"nombre del módulo para formar el nombre de archivo a buscar, *mode* es la "
+"cadena de caracteres de modo para pasar a la función incorporada :func:"
+"`open` para abrir el archivo (esto puede ser ``'r'`` para archivos de texto "
+"o ``'rb'`` para archivos binarios), y *type* es el tipo de archivo, que "
+"tiene uno de los valores :const:`PY_SOURCE`, :const:`PY_COMPILED`, o :const:"
+"`C_EXTENSION`, que se describen a continuación."
 
-#: ../../library/imp.rst:43
+#: ../Doc/library/imp.rst:43
 msgid "Use the constants defined on :mod:`importlib.machinery` instead."
-msgstr "代わりに :mod:`importlib.machinery` で定義された定数を使ってください。"
+msgstr ""
+"Utilice las constantes definidas en :mod:`importlib.machinery` en su lugar."
 
-#: ../../library/imp.rst:49
+#: ../Doc/library/imp.rst:49
 msgid ""
 "Try to find the module *name*.  If *path* is omitted or ``None``, the list "
 "of directory names given by ``sys.path`` is searched, but first a few "
@@ -90,46 +91,47 @@ msgid ""
 "`PY_FROZEN`), and on some systems some other places are looked in as well "
 "(on Windows, it looks in the registry which may point to a specific file)."
 msgstr ""
-"モジュール *name* を見つけようとします。 *path* が省略されるか ``None`` なら"
-"ば、 ``sys.path`` によって与えられるディレクトリ名のリストが検索されます。し"
-"かし、最初にいくつか特別な場所を検索します。まず、所定の名前をもつ組み込みモ"
-"ジュール(:const:`C_BUILTIN`)を見つけようとします。それから、フリーズされたモ"
-"ジュール(:const:`PY_FROZEN`)、そしていくつかのシステムでは他の場所が同様に検"
-"索されます (Windowsでは、特定のファイルを指すレジストリの中を見ます)。"
+"Intente encontrar el módulo *name*.  Si se omite *path* o ``None``, se busca "
+"la lista de nombres de directorio dados por ``sys.path``, pero primero se "
+"buscan algunos lugares especiales: la función intenta encontrar un módulo "
+"integrado con el nombre dado (:const:`C_BUILTIN`), a continuación, un módulo "
+"congelado (:const:`PY_FROZEN`), y en algunos sistemas algunos otros lugares "
+"se buscan también (en Windows, se ve en el registro que puede apuntar a un "
+"archivo específico)."
 
-#: ../../library/imp.rst:56
+#: ../Doc/library/imp.rst:56
 msgid ""
 "Otherwise, *path* must be a list of directory names; each directory is "
 "searched for files with any of the suffixes returned by :func:`get_suffixes` "
 "above.  Invalid names in the list are silently ignored (but all list items "
 "must be strings)."
 msgstr ""
-"それ以外の場合、 *path* はディレクトリ名のリストでなければなりません。上の :"
-"func:`get_suffixes` が返す拡張子のいずれかを伴ったファイルを各ディレクトリの"
-"中で検索します。リスト内の有効でない名前は黙って無視されます(しかし、すべての"
-"リスト項目は文字列でなければなりません)。"
+"De lo contrario, *path* debe ser una lista de nombres de directorio; cada "
+"directorio se busca archivos con cualquiera de los sufijos retornados por :"
+"func:`get_suffixes` arriba.  Los nombres no válidos de la lista se omiten "
+"silenciosamente (pero todos los elementos de lista deben ser cadenas)."
 
-#: ../../library/imp.rst:61
+#: ../Doc/library/imp.rst:61
 msgid ""
 "If search is successful, the return value is a 3-element tuple ``(file, "
 "pathname, description)``:"
 msgstr ""
-"検索が成功すれば、戻り値は3要素のタプル ``(file, pathname, description)`` で"
-"す:"
+"Si la búsqueda se realiza correctamente, el valor retornado es una tupla de "
+"3 elementos ``(file, pathname, description)``:"
 
-#: ../../library/imp.rst:64
+#: ../Doc/library/imp.rst:64
 msgid ""
 "*file* is an open :term:`file object` positioned at the beginning, "
 "*pathname* is the pathname of the file found, and *description* is a 3-"
 "element tuple as contained in the list returned by :func:`get_suffixes` "
 "describing the kind of module found."
 msgstr ""
-"*file* は先頭に位置合わせされたオープン :term:`ファイルオブジェクト <file "
-"object>` で、 *pathname* は見つかったファイルのパス名です。そして、 "
-"*description* は :func:`get_suffixes` が返すリストに含まれているような3要素の"
-"タプルで、見つかったモジュールの種類を説明しています。"
+"*file* es un abierto :term:`file object` posicionado al principio, "
+"*pathname* es el nombre de ruta del archivo encontrado, y *description* es "
+"una tupla de 3 elementos tal como se encuentra en la lista retornada por :"
+"func:`get_suffixes` que describe el tipo de módulo encontrado."
 
-#: ../../library/imp.rst:69
+#: ../Doc/library/imp.rst:69
 msgid ""
 "If the module is built-in or frozen then *file* and *pathname* are both "
 "``None`` and the *description* tuple contains empty strings for its suffix "
@@ -137,22 +139,23 @@ msgid ""
 "the search is unsuccessful, :exc:`ImportError` is raised.  Other exceptions "
 "indicate problems with the arguments or environment."
 msgstr ""
-"モジュールが組み込みモジュールか frozen なモジュールの場合、 *file* と "
-"*pathname* のどちらも ``None`` になり、 *description* タプルの要素の接尾辞 "
-"(拡張子) とモードは空文字列になります。モジュール型は上の括弧の中に示されま"
-"す。\n"
-"検索に失敗した場合は、 :exc:`ImportError` が発生します。\n"
-"他の例外は引数または環境に問題があることを示しています。"
+"Si el módulo no vive en un archivo, el archivo *file* retornado es ``None``, "
+"*pathname* es la cadena vacía y la tupla *description* contiene cadenas "
+"vacías para su sufijo y modo; el tipo de módulo se indica como se indica "
+"entre paréntesis arriba.  Si la búsqueda no se realiza correctamente, se "
+"provoca :exc:`ImportError`.  Otras excepciones indican problemas con los "
+"argumentos o el entorno."
 
-#: ../../library/imp.rst:75
+#: ../Doc/library/imp.rst:75
 msgid ""
 "If the module is a package, *file* is ``None``, *pathname* is the package "
 "path and the last item in the *description* tuple is :const:`PKG_DIRECTORY`."
 msgstr ""
-"モジュールがパッケージならば、 *file* は ``None`` で、 *pathname* はパッケー"
-"ジのパスで *description* タプルの最後の項目は :const:`PKG_DIRECTORY` です。"
+"Si el módulo es un paquete, *file* es ``None``, *pathname* es la ruta de "
+"acceso del paquete y el último elemento de la tupla *description* es :const:"
+"`PKG_DIRECTORY`."
 
-#: ../../library/imp.rst:78
+#: ../Doc/library/imp.rst:78
 msgid ""
 "This function does not handle hierarchical module names (names containing "
 "dots).  In order to find *P.M*, that is, submodule *M* of package *P*, use :"
@@ -160,26 +163,26 @@ msgid ""
 "then use :func:`find_module` with the *path* argument set to ``P.__path__``. "
 "When *P* itself has a dotted name, apply this recipe recursively."
 msgstr ""
-"この関数は階層的なモジュール名(ドットを含む名前)を扱いません。 *P.M* 、すなわ"
-"ちパッケージ *P* のサブモジュール *M* を見つけるためには、まず :func:"
-"`find_module` と :func:`load_module` を使用してパッケージ *P* を見つけてロー"
-"ドして、次に ``P.__path__`` を *path* 引数にして :func:`find_module` を呼び出"
-"してください。もし *P* 自体がドット付きの名前を持つ場合、このレシピを再帰的に"
-"適用してください。"
+"Esta función no controla los nombres de módulo jerárquico (nombres que "
+"contienen puntos).  Para encontrar *P.M*, es decir, submódulo *M* del "
+"paquete *P*, use :func:`find_module` y :func:`load_module` para buscar y "
+"cargar el paquete *P*, y luego use :func:`find_module` con el argumento "
+"*path* establecido en ``P.__path__``. Cuando *P* tenga un nombre punteado, "
+"aplique esta receta de forma recursiva."
 
-#: ../../library/imp.rst:84
+#: ../Doc/library/imp.rst:84
 msgid ""
 "Use :func:`importlib.util.find_spec` instead unless Python 3.3 compatibility "
 "is required, in which case use :func:`importlib.find_loader`. For example "
 "usage of the former case, see the :ref:`importlib-examples` section of the :"
 "mod:`importlib` documentation."
 msgstr ""
-"Python 3.3 との互換性が不要であれば、:func:`importlib.util.find_spec` を使用"
-"してください, 互換性が必要な場合は :func:`importlib.find_loader` を使用してく"
-"ださい。前者の使用例は、:mod:`importlib` ドキュメントの:ref:`importlib-"
-"examples` セクションを参照してください。"
+"Utilice :func:`importlib.util.find_spec` en su lugar a menos que se requiera "
+"compatibilidad con Python 3.3, en cuyo caso use :func:`importlib."
+"find_loader`. Para ver el uso del caso anterior, consulte la sección :ref:"
+"`importlib-examples` de la documentación :mod:`importlib`."
 
-#: ../../library/imp.rst:94
+#: ../Doc/library/imp.rst:94
 msgid ""
 "Load a module that was previously found by :func:`find_module` (or by an "
 "otherwise conducted search yielding compatible results).  This function does "
@@ -192,36 +195,37 @@ msgid ""
 "tuple, as would be returned by :func:`get_suffixes`, describing what kind of "
 "module must be loaded."
 msgstr ""
-":func:`find_module` を使って(あるいは、互換性のある結果を作り出す検索を行っ"
-"て)以前見つけたモジュールをロードします。この関数はモジュールをインポートする"
-"という以上のことを行います: モジュールが既にインポートされているならば、リ"
-"ロードします! *name* 引数は(これがパッケージのサブモジュールならばパッケージ"
-"名を含む)完全なモジュール名を示します。 *file* 引数はオープンしたファイル"
-"で、 *pathname* は対応するファイル名です。モジュールがパッケージであるかファ"
-"イルからロードされようとしていないとき、これらはそれぞれ ``None`` と ``''`` "
-"であっても構いません。 :func:`get_suffixes` が返すように *description* 引数は"
-"タプルで、どの種類のモジュールがロードされなければならないかを説明するもので"
-"す。"
+"Cargue un módulo que fue encontrado anteriormente por :func:`find_module` (o "
+"por una búsqueda realizada de otro modo que produce resultados "
+"compatibles).  Esta función hace más que importar el módulo: si el módulo ya "
+"estaba importado, se recargará el módulo!  El argumento *name* indica el "
+"nombre completo del módulo (incluido el nombre del paquete, si se trata de "
+"un submódulo de un paquete).  El argumento *file* es un archivo abierto y "
+"*pathname* es el nombre de archivo correspondiente; pueden ser ``None`` y "
+"``''``, respectivamente, cuando el módulo es un paquete o no se carga desde "
+"un archivo.  El argumento *description* es una tupla, como sería retornada "
+"por :func:`get_suffixes`, que describe qué tipo de módulo se debe cargar."
 
-#: ../../library/imp.rst:105
+#: ../Doc/library/imp.rst:105
 msgid ""
 "If the load is successful, the return value is the module object; otherwise, "
 "an exception (usually :exc:`ImportError`) is raised."
 msgstr ""
-"ロードが成功したならば、戻り値はモジュールオブジェクトです。そうでなければ、"
-"例外(たいていは :exc:`ImportError`)が発生します。"
+"Si la carga se realiza correctamente, el valor retornado es el objeto "
+"modulo; de lo contrario, se produce una excepción (normalmente :exc:"
+"`ImportError`)."
 
-#: ../../library/imp.rst:108
+#: ../Doc/library/imp.rst:108
 msgid ""
 "**Important:** the caller is responsible for closing the *file* argument, if "
 "it was not ``None``, even when an exception is raised.  This is best done "
 "using a :keyword:`try` ... :keyword:`finally` statement."
 msgstr ""
-"**重要:** *file* 引数が ``None`` でなければ、例外が発生した場合でも呼び出し側"
-"にはそれを閉じる責任があります。これを行うには、 :keyword:`try` ... :keyword:"
-"`finally` 文を使うことが最も良いです。"
+"**Importante:** el autor de la llamada es responsable de cerrar el argumento "
+"*file*, si no era ``None``, incluso cuando se genera una excepción.  Esto se "
+"hace mejor usando una declaración :keyword:`try` ... :keyword:`finally`."
 
-#: ../../library/imp.rst:112
+#: ../Doc/library/imp.rst:112
 msgid ""
 "If previously used in conjunction with :func:`imp.find_module` then consider "
 "using :func:`importlib.import_module`, otherwise use the loader returned by "
@@ -232,29 +236,28 @@ msgid ""
 "examples` section of the :mod:`importlib` documentation for details of the "
 "various approaches."
 msgstr ""
-"もし以前は :func:`imp.find_module` と一緒に使っていたのなら、 :func:"
-"`importlib.import_module` を使うことを検討してください。\n"
-"そうでなければ、 :func:`imp.find_module` に対して選択した代替手段によって返さ"
-"れるローダーを使用してください。\n"
-"もし :func:`imp.load_module` とそれに関連する関数を path 引数付きで直接呼んで"
-"いたのなら、 :func:`importlib.util.spec_from_file_location` と :func:"
-"`importlib.util.module_from_spec` を組み合わせて使ってください。\n"
-"様々な手法の詳細については :mod:`importlib` ドキュメントの :ref:`importlib-"
-"examples` 節を参照してください。"
+"Si se utiliza anteriormente junto con :func:`imp.find_module` considere "
+"usar :func:`importlib.import_module`, de lo contrario utilice el cargador "
+"retornado por el reemplazo que eligió para :func:`imp.find_module`. Si llamó "
+"a :func:`imp.load_module` y funciones relacionadas directamente con "
+"argumentos de ruta de archivo, utilice una combinación de :func:`importlib."
+"util.spec_from_file_location` y :func:`importlib.util.module_from_spec`. "
+"Consulte la sección :ref:`importlib-examples` de la documentación :mod:"
+"`importlib` para obtener más información sobre los distintos enfoques."
 
-#: ../../library/imp.rst:126
+#: ../Doc/library/imp.rst:126
 msgid ""
 "Return a new empty module object called *name*.  This object is *not* "
 "inserted in ``sys.modules``."
 msgstr ""
-"*name* という名前の新しい空モジュールオブジェクトを返します。このオブジェクト"
-"は ``sys.modules`` に挿入され *ません* 。"
+"Retorna un nuevo objeto de módulo vacío denominado *name*.  Este objeto es "
+"*not* insertado en ``sys.modules``."
 
-#: ../../library/imp.rst:129
+#: ../Doc/library/imp.rst:129
 msgid "Use :func:`importlib.util.module_from_spec` instead."
-msgstr "代わりに:func:`importlib.util.module_from_spec` を使用してください。"
+msgstr "Utilice :func:`importlib.util.module_from_spec` en su lugar."
 
-#: ../../library/imp.rst:135
+#: ../Doc/library/imp.rst:135
 msgid ""
 "Reload a previously imported *module*.  The argument must be a module "
 "object, so it must have been successfully imported before.  This is useful "
@@ -262,59 +265,60 @@ msgid ""
 "to try out the new version without leaving the Python interpreter.  The "
 "return value is the module object (the same as the *module* argument)."
 msgstr ""
-"すでにインポートされた *module* を再解釈し、再初期化します。引数はモジュール"
-"オブジェクトでなければならないので、予めインポートに成功していなければなりま"
-"せん。この関数はモジュールのソースコードファイルを外部エディタで編集して、"
-"Python インタプリタから離れることなく新しいバージョンを試したい際に有効です。"
-"戻り値は (*module* 引数と同じ) モジュールオブジェクトです。"
+"Vuelva a cargar un *módulo* importado anteriormente.  El argumento debe ser "
+"un objeto module, por lo que debe haberse importado correctamente antes.  "
+"Esto es útil si ha editado el archivo de origen del módulo utilizando un "
+"editor externo y desea probar la nueva versión sin salir del intérprete de "
+"Python.  El valor retornado es el objeto module (el mismo que el argumento "
+"*module*)."
 
-#: ../../library/imp.rst:141
+#: ../Doc/library/imp.rst:141
 msgid "When ``reload(module)`` is executed:"
-msgstr "``reload(module)`` を実行すると、以下の処理が行われます:"
+msgstr "Cuando se ejecuta ``reload(module)``:"
 
-#: ../../library/imp.rst:143
+#: ../Doc/library/imp.rst:143
 msgid ""
 "Python modules' code is recompiled and the module-level code reexecuted, "
 "defining a new set of objects which are bound to names in the module's "
 "dictionary.  The ``init`` function of extension modules is not called a "
 "second time."
 msgstr ""
-"Python モジュールのコードは再コンパイルされ、モジュールレベルのコードは再度実"
-"行されます。モジュールの辞書中にある、何らかの名前に結び付けられたオブジェク"
-"トを新たに定義します。拡張モジュール中の ``init`` 関数が二度呼び出されること"
-"はありません。"
+"El código de los módulos de Python se vuelve a compilar y se vuelve a "
+"ejecutar el código de nivel de módulo, definiendo un nuevo conjunto de "
+"objetos que están enlazados a nombres en el diccionario del módulo.  La "
+"función ``init`` de los módulos de extensión no se llama una segunda vez."
 
-#: ../../library/imp.rst:148
+#: ../Doc/library/imp.rst:148
 msgid ""
 "As with all other objects in Python the old objects are only reclaimed after "
 "their reference counts drop to zero."
 msgstr ""
-"Python における他のオブジェクトと同様、以前のオブジェクトのメモリ領域は、参照"
-"カウントがゼロにならないかぎり再利用されません。"
+"Al igual que con todos los demás objetos de Python, los objetos antiguos "
+"solo se recuperan después de que sus recuentos de referencia caigan a cero."
 
-#: ../../library/imp.rst:151
+#: ../Doc/library/imp.rst:151
 msgid ""
 "The names in the module namespace are updated to point to any new or changed "
 "objects."
 msgstr ""
-"モジュール名前空間内の名前は新しいオブジェクト (または更新されたオブジェク"
-"ト) を指すよう更新されます。"
+"Los nombres del espacio de nombres del módulo se actualizan para que apunten "
+"a cualquier objeto nuevo o modificado."
 
-#: ../../library/imp.rst:154
+#: ../Doc/library/imp.rst:154
 msgid ""
 "Other references to the old objects (such as names external to the module) "
 "are not rebound to refer to the new objects and must be updated in each "
 "namespace where they occur if that is desired."
 msgstr ""
-"以前のオブジェクトが (外部の他のモジュールなどからの) 参照を受けている場合、"
-"それらを新たなオブジェクトに再束縛し直すことはないので、必要なら自分で名前空"
-"間を更新しなければなりません。"
+"Otras referencias a los objetos antiguos (como nombres externos al módulo) "
+"no se rebotan para hacer referencia a los nuevos objetos y deben "
+"actualizarse en cada espacio de nombres donde se producen si se desea."
 
-#: ../../library/imp.rst:158
+#: ../Doc/library/imp.rst:158
 msgid "There are a number of other caveats:"
-msgstr "いくつか補足説明があります:"
+msgstr "Hay una serie de otras advertencias:"
 
-#: ../../library/imp.rst:160
+#: ../Doc/library/imp.rst:160
 msgid ""
 "When a module is reloaded, its dictionary (containing the module's global "
 "variables) is retained.  Redefinitions of names will override the old "
@@ -325,29 +329,29 @@ msgid ""
 "statement it can test for the table's presence and skip its initialization "
 "if desired::"
 msgstr ""
-"モジュールが再ロードされた際、その辞書 (モジュールのグローバル変数を含みま"
-"す) はそのまま残ります。名前の再定義を行うと、以前の定義を上書きするので、一"
-"般的には問題はありません。新たなバージョンのモジュールが古いバージョンで定義"
-"された名前を定義していない場合、古い定義がそのまま残ります。辞書がグローバル"
-"テーブルやオブジェクトのキャッシュを維持していれば、この機能をモジュールを有"
-"効性を引き出すために使うことができます --- つまり、 :keyword:`try` 文を使え"
-"ば、必要に応じてテーブルがあるかどうかをテストし、その初期化を飛ばすことがで"
-"きます::"
+"Cuando se vuelve a cargar un módulo, se conserva su diccionario (que "
+"contiene las variables globales del módulo).  Las redefiniciones de nombres "
+"invalidarán las definiciones antiguas, por lo que esto generalmente no es un "
+"problema.  Si la nueva versión de un módulo no define un nombre previamente "
+"definido, la definición anterior permanece.  Esta característica se puede "
+"utilizar en beneficio del módulo si mantiene una tabla global o caché de "
+"objetos --- con una instrucción :keyword:`try` puede probar la presencia de "
+"la tabla y omitir su inicialización si se desea:"
 
-#: ../../library/imp.rst:173
+#: ../Doc/library/imp.rst:173
 msgid ""
 "It is legal though generally not very useful to reload built-in or "
 "dynamically loaded modules, except for :mod:`sys`, :mod:`__main__` and :mod:"
 "`builtins`. In many cases, however, extension modules are not designed to be "
 "initialized more than once, and may fail in arbitrary ways when reloaded."
 msgstr ""
-"ビルトインのモジュールや動的にロードされたモジュールをリロードすることは、 :"
-"mod:`sys`, :mod:`__main__`, :mod:`builtins` を除いて一般にはそれほど有用では"
-"ありませんが、合法です。しかし、多くの場合、拡張モジュールは二度以上初期化さ"
-"れるようには作られておらず、リロードされた時に無作為な方法で失敗するかもしれ"
-"ません。"
+"Es legal, aunque generalmente no es muy útil para recargar módulos "
+"incorporados o cargados dinámicamente, excepto para :mod:`sys`, :mod:"
+"`__main__` y :mod:`builtins`. En muchos casos, sin embargo, los módulos de "
+"extensión no están diseñados para inicializarse más de una vez y pueden "
+"fallar de forma arbitraria cuando se vuelven a cargar."
 
-#: ../../library/imp.rst:178
+#: ../Doc/library/imp.rst:178
 msgid ""
 "If a module imports objects from another module using :keyword:`from` ... :"
 "keyword:`import` ..., calling :func:`reload` for the other module does not "
@@ -355,45 +359,45 @@ msgid ""
 "execute the :keyword:`!from` statement, another is to use :keyword:`!import` "
 "and qualified names (*module*.*name*) instead."
 msgstr ""
-"一方のモジュールが :keyword:`from` ... :keyword:`import` ... を使って、オブ"
-"ジェクトを他方のモジュールからインポートしているなら、他方のモジュールを :"
-"func:`reload` で呼び出しても、そのモジュールからインポートされたオブジェクト"
-"を再定義することはできません --- この問題を回避する一つの方法は、 :keyword:"
-"`from` 文を再度実行することで、もう一つの方法は :keyword:`!from` 文の代わり"
-"に :keyword:`!import` と限定的な名前 (*module*.\\*name*) を使うことです。"
+"Si un módulo importa objetos de otro módulo utilizando :keyword:`from`... :"
+"keyword:`import` ..., llamando a :func:`reload` para el otro módulo no "
+"redefine los objetos importados de él --- de una manera alrededor de esto es "
+"volver a ejecutar la sentencia :keyword:`!from`, otra es usar :keyword:`!"
+"import` y nombres calificados (*module*.*name*) en su lugar."
 
-#: ../../library/imp.rst:184
+#: ../Doc/library/imp.rst:184
 msgid ""
 "If a module instantiates instances of a class, reloading the module that "
 "defines the class does not affect the method definitions of the instances "
 "--- they continue to use the old class definition.  The same is true for "
 "derived classes."
 msgstr ""
-"あるモジュールがクラスのインスタンスを生成している場合、そのクラスを定義して"
-"いるモジュールの再ロードはそれらインスタンスのメソッド定義に影響しません --- "
-"それらは古いクラス定義を使い続けます。これは派生クラスの場合でも同じです。"
+"Si un módulo crea instancias de una clase, volver a cargar el módulo que "
+"define la clase no afecta a las definiciones de método de las instancias --- "
+"siguen utilizando la definición de clase antigua.  Lo mismo es cierto para "
+"las clases derivadas."
 
-#: ../../library/imp.rst:188
+#: ../Doc/library/imp.rst:188
 msgid ""
 "Relies on both ``__name__`` and ``__loader__`` being defined on the module "
 "being reloaded instead of just ``__name__``."
 msgstr ""
-"リロードされるモジュール上で、``__name__`` だけでなく ``__name__`` と "
-"``__loader__`` の両方が定義されていることに依存します。"
+"Se basa en que tanto ``__name__`` como ``__loader__`` que se definen en el "
+"módulo que se está recargando en lugar de simplemente ``__name__``."
 
-#: ../../library/imp.rst:192
+#: ../Doc/library/imp.rst:192
 msgid "Use :func:`importlib.reload` instead."
-msgstr "代わりに :func:`importlib.reload` を使用してください。"
+msgstr "Utilice :func:`importlib.reload` en su lugar."
 
-#: ../../library/imp.rst:196
+#: ../Doc/library/imp.rst:196
 msgid ""
 "The following functions are conveniences for handling :pep:`3147` byte-"
 "compiled file paths."
 msgstr ""
-"以下は、 :pep:`3147` のバイトコンパイルされたファイルパスを扱うために便利な関"
-"数です。"
+"Las siguientes funciones son comodidades para controlar las rutas de acceso "
+"de archivo :pep:`3147` compiladas en bytes."
 
-#: ../../library/imp.rst:203
+#: ../Doc/library/imp.rst:203
 msgid ""
 "Return the :pep:`3147` path to the byte-compiled file associated with the "
 "source *path*.  For example, if *path* is ``/foo/bar/baz.py`` the return "
@@ -404,37 +408,37 @@ msgid ""
 "for *debug_override* you can override the system's value for ``__debug__``, "
 "leading to optimized bytecode."
 msgstr ""
-"ソース *path* に関連付けられたバイトコンパイルされたファイルの :pep:`3147` パ"
-"スを返します。例えば、 *path* が ``/foo/bar/baz.py`` なら、 Python 3.2 の場合"
-"返り値は ``/foo/bar/__pycache__/baz.cpython-32.pyc`` になります。 "
-"``cpython-32`` という文字列は、現在のマジックタグから得られます (マジックタグ"
-"については :func:`get_tag` を参照; :attr:`sys.implementation.cache_tag` が未"
-"定義なら :exc:`NotImplementedError` が送出されます)。 *debug_override* に "
-"``True`` あるいは ``False`` を渡すことによって、 ``__debug__`` システム値を"
-"オーバーライドして最適化されたバイトコードを得ることができます。"
+"Retorna la ruta de acceso :pep:`3147` al archivo compilado por bytes "
+"asociado con la ruta *path* de origen. Por ejemplo, si *path* es ``/foo/bar/"
+"baz.py`` el valor retornado sería ``/foo/bar/__pycache__/baz.cpython-32."
+"pyc`` para Python 3.2. La cadena ``cpython-32`` proviene de la etiqueta "
+"mágica actual (consulte :func:`get_tag`; si :attr:`sys.implementation."
+"cache_tag` no está definida entonces :exc:`NotImplementedError` se "
+"generará). Al pasar ``True`` o ``False`` para *debug_override* puede "
+"reemplazar el valor del sistema para ``__debug__``, lo que da lugar a un "
+"código de bytes optimizado."
 
-#: ../../library/imp.rst:212
+#: ../Doc/library/imp.rst:212
 msgid "*path* need not exist."
-msgstr "*path* は存在している必要はありません。"
+msgstr "*ruta* no necesita existir."
 
-#: ../../library/imp.rst:214
+#: ../Doc/library/imp.rst:214
 msgid ""
 "If :attr:`sys.implementation.cache_tag` is ``None``, then :exc:"
 "`NotImplementedError` is raised."
 msgstr ""
-":attr:`sys.implementation.cache_tag` が ``None`` の場合、 :exc:"
-"`NotImplementedError` が上げられます。"
+"Lanza :exc:`NotImplementedError` cuando no se define :attr:`sys."
+"implementation.cache_tag`."
 
-#: ../../library/imp.rst:218
+#: ../Doc/library/imp.rst:218
 msgid "Use :func:`importlib.util.cache_from_source` instead."
-msgstr "代わりに :func:`importlib.util.cache_from_source` を使用してください。"
+msgstr "Utilice :func:`importlib.util.source_from_cache` en su lugar."
 
-#: ../../library/imp.rst:221
+#: ../Doc/library/imp.rst:221
 msgid "The *debug_override* parameter no longer creates a ``.pyo`` file."
-msgstr ""
-"*debug_override* 引数は ``.pyo`` ファイルを作成することはもうありません。"
+msgstr "El parámetro *debug_override* ya no crea un archivo ``.pyo``."
 
-#: ../../library/imp.rst:227
+#: ../Doc/library/imp.rst:227
 msgid ""
 "Given the *path* to a :pep:`3147` file name, return the associated source "
 "code file path.  For example, if *path* is ``/foo/bar/__pycache__/baz."
@@ -443,62 +447,64 @@ msgid ""
 "`ValueError` is raised. If :attr:`sys.implementation.cache_tag` is not "
 "defined, :exc:`NotImplementedError` is raised."
 msgstr ""
-":pep:`3147` ファイル名への *path* が与えられると、関連するソースコードのファ"
-"イルパスを返します。例えば、 *path* が ``/foo/bar/__pycache__/baz.cpython-32."
-"pyc`` なら、返されるパスは ``/foo/bar/baz.py`` になります。 *path* は存在する"
-"必要はありませんが、 :pep:`3147` フォーマットに一致しない場合は :exc:"
-"`ValueError` が送出されます。 :attr:`sys.implementation.cache_tag` が定義され"
-"ていない場合、 :exc:`NotImplementedError` が送出されます。"
+"Dada la ruta *path* a un nombre de archivo :pep:`3147`, retorne la ruta de "
+"acceso del archivo de código fuente asociada.  Por ejemplo, si *path* es ``/"
+"foo/bar/__pycache__/baz.cpython-32.pyc`` la ruta retornada sería ``/foo/bar/"
+"baz.py``.  *path* no necesita existir, sin embargo, si no se ajusta al "
+"formato :pep:`3147`, se genera un :exc:`ValueError`. Si :attr:`sys."
+"implementation.cache_tag` no está definido, se genera :exc:"
+"`NotImplementedError`."
 
-#: ../../library/imp.rst:235
+#: ../Doc/library/imp.rst:235
 msgid ""
 "Raise :exc:`NotImplementedError` when :attr:`sys.implementation.cache_tag` "
 "is not defined."
 msgstr ""
-":attr:`sys.implementation.cache_tag` が定義されていない場合、 :exc:"
-"`NotImplementedError` が上げられます。"
+"Provoca :exc:`NotImplementedError` cuando no se define :attr:`sys."
+"implementation.cache_tag`."
 
-#: ../../library/imp.rst:239
+#: ../Doc/library/imp.rst:239
 msgid "Use :func:`importlib.util.source_from_cache` instead."
-msgstr "代わりに :func:`importlib.util.source_from_cache` を使用してください。"
+msgstr "Utilice :func:`importlib.util.source_from_cache` en su lugar."
 
-#: ../../library/imp.rst:245
+#: ../Doc/library/imp.rst:245
 msgid ""
 "Return the :pep:`3147` magic tag string matching this version of Python's "
 "magic number, as returned by :func:`get_magic`."
 msgstr ""
-":func:`get_magic` によって返されるのと同じ、このバージョンの Python のマジッ"
-"クナンバーと一致する :pep:`3147` のマジックタグ文字列を返します。"
+"Retorna la cadena de etiqueta mágica :pep:`3147` que coincida con esta "
+"versión del número mágico de Python, como lo retorna :func:`get_magic`."
 
-#: ../../library/imp.rst:248
+#: ../Doc/library/imp.rst:248
 msgid ""
 "Use :attr:`sys.implementation.cache_tag` directly starting in Python 3.3."
 msgstr ""
-"Python 3.3 からは :attr:`sys.implementation.cache_tag`  を直接使ってくださ"
-"い。"
+"Utilice :attr:`sys.implementation.cache_tag` directamente a partir de Python "
+"3.3."
 
-#: ../../library/imp.rst:253
+#: ../Doc/library/imp.rst:253
 msgid ""
 "The following functions help interact with the import system's internal "
 "locking mechanism.  Locking semantics of imports are an implementation "
 "detail which may vary from release to release.  However, Python ensures that "
 "circular imports work without any deadlocks."
 msgstr ""
-"以下の関数はインポートシステムの内部ロックメカニズムとのやりとりをサポートし"
-"ます。インポートのロックセマンティクスはリリース毎に変わる可能性のある実装詳"
-"細です。ただし、Python は循環インポートがデッドロックなしで動作することを保証"
-"しています。"
+"Las siguientes funciones ayudan a interactuar con el mecanismo de bloqueo "
+"interno del sistema de importación.  La semántica de bloqueo de las "
+"importaciones es un detalle de implementación que puede variar de una "
+"versión a una.  Sin embargo, Python garantiza que las importaciones "
+"circulares funcionen sin interbloqueos."
 
-#: ../../library/imp.rst:261
+#: ../Doc/library/imp.rst:261
 msgid ""
 "Return ``True`` if the global import lock is currently held, else ``False``. "
 "On platforms without threads, always return ``False``."
 msgstr ""
-"現在グローバルなインポートロックが保持されている場合 ``True`` を返し、そうで"
-"なければ ``False`` を返します。スレッドのないプラットフォームでは常に "
-"``False`` を返します。"
+"Retorna ``True`` si el bloqueo de importación global está actualmente "
+"retenido, de lo contrario, ``False``. En plataformas sin hilos, siempre "
+"retorna ``False``."
 
-#: ../../library/imp.rst:264
+#: ../Doc/library/imp.rst:264
 msgid ""
 "On platforms with threads, a thread executing an import first holds a global "
 "import lock, then sets up a per-module lock for the rest of the import.  "
@@ -508,139 +514,140 @@ msgid ""
 "circular imports, which by construction have to expose an incomplete module "
 "object at some point."
 msgstr ""
-"スレッドを持つプラットフォームでは、まずインポートを実行するスレッドがグロー"
-"バルなインポートロックを保持し、次にインポートの残りの部分を実行するためにモ"
-"ジュール単位のロックをセットアップします。これは、他のスレッドが同じモジュー"
-"ルをインポートするのをオリジナルのインポートが完了するまでブロックして、他の"
-"スレッドがオリジナルのスレッドによって構築された不完全なモジュールオブジェク"
-"トを見てしまわないようにします。循環インポートに対しては例外が発生します。こ"
-"れは、そのようなモジュールを構築するためには、どこかの時点で不完全なモジュー"
-"ルオブジェクトを露出しなければならないためです。"
+"En plataformas con subprocesos, un subproceso que ejecuta una importación "
+"primero contiene un bloqueo de importación global y, a continuación, "
+"configura un bloqueo por módulo para el resto de la importación.  Esto "
+"impide que otros subprocesos importen el mismo módulo hasta que se complete "
+"la importación original, lo que impide que otros subprocesos vean objetos de "
+"módulo incompletos construidos por el subproceso original.  Se hace una "
+"excepción para las importaciones circulares, que por construcción tienen que "
+"exponer un objeto de módulo incompleto en algún momento."
 
-#: ../../library/imp.rst:272 ../../library/imp.rst:292
-#: ../../library/imp.rst:305
+#: ../Doc/library/imp.rst:272 ../Doc/library/imp.rst:292
+#: ../Doc/library/imp.rst:305
 msgid ""
 "The locking scheme has changed to per-module locks for the most part.  A "
 "global import lock is kept for some critical tasks, such as initializing the "
 "per-module locks."
 msgstr ""
-"ロックスキームは、大部分がモジュール毎のロックに変わりました。グローバルなイ"
-"ンポートロックは、モジュール毎のロックを初期化するようないくつかのクリティカ"
-"ルタスクのために維持されます。"
+"El esquema de bloqueo ha cambiado a bloqueos por módulo en su mayor parte.  "
+"Se mantiene un bloqueo de importación global para algunas tareas críticas, "
+"como la inicialización de los bloqueos por módulo."
 
-#: ../../library/imp.rst:282
+#: ../Doc/library/imp.rst:282
 msgid ""
 "Acquire the interpreter's global import lock for the current thread. This "
 "lock should be used by import hooks to ensure thread-safety when importing "
 "modules."
 msgstr ""
-"現在のスレッドに対するインタープリタのグローバルなインポートロックを獲得しま"
-"す。このロックは、モジュールをインポートする際にスレッドセーフ性を保証するた"
-"めに、インポートフックによって使用されるべきです。"
+"Adquiera el bloqueo de importación global del intérprete para el subproceso "
+"actual. Este bloqueo debe ser utilizado por los ganchos de importación para "
+"garantizar la seguridad de subprocesos al importar módulos."
 
-#: ../../library/imp.rst:286
+#: ../Doc/library/imp.rst:286
 msgid ""
 "Once a thread has acquired the import lock, the same thread may acquire it "
 "again without blocking; the thread must release it once for each time it has "
 "acquired it."
 msgstr ""
-"一旦スレッドがインポートロックを取得したら、その同じスレッドはブロックされる"
-"ことなくそのロックを再度取得できます。スレッドはロックを取得するのと同じだけ"
-"解放しなければなりません。"
+"Una vez que un subproceso ha adquirido el bloqueo de importación, el mismo "
+"subproceso puede adquirirlo de nuevo sin bloquear; el subproceso debe "
+"liberarlo una vez por cada vez que lo ha adquirido."
 
-#: ../../library/imp.rst:290
+#: ../Doc/library/imp.rst:290
 msgid "On platforms without threads, this function does nothing."
-msgstr "スレッドのないプラットホームではこの関数は何もしません。"
+msgstr "En plataformas sin subprocesos, esta función no hace nada."
 
-#: ../../library/imp.rst:302
+#: ../Doc/library/imp.rst:302
 msgid ""
 "Release the interpreter's global import lock. On platforms without threads, "
 "this function does nothing."
 msgstr ""
-"インタープリタのグローバルなインポートロックを解放します。スレッドのないプ"
-"ラットフォームでは何もしません。"
+"Suelte el bloqueo de importación global del intérprete. En plataformas sin "
+"subprocesos, esta función no hace nada."
 
-#: ../../library/imp.rst:313
+#: ../Doc/library/imp.rst:313
 msgid ""
 "The following constants with integer values, defined in this module, are "
 "used to indicate the search result of :func:`find_module`."
 msgstr ""
-"整数値をもつ次の定数はこのモジュールの中で定義されており、 :func:"
-"`find_module` の検索結果を表すために使われます。"
+"Las siguientes constantes con valores enteros, definidas en este módulo, se "
+"utilizan para indicar el resultado de búsqueda de :func:`find_module`."
 
-#: ../../library/imp.rst:319
+#: ../Doc/library/imp.rst:319
 msgid "The module was found as a source file."
-msgstr "ソースファイルとしてモジュールが発見された。"
+msgstr "El módulo se encontró como un archivo de origen."
 
-#: ../../library/imp.rst:326
+#: ../Doc/library/imp.rst:326
 msgid "The module was found as a compiled code object file."
-msgstr ""
-"コンパイルされたコードオブジェクトファイルとしてモジュールが発見された。"
+msgstr "El módulo se encontró como un archivo de objeto de código compilado."
 
-#: ../../library/imp.rst:333
+#: ../Doc/library/imp.rst:333
 msgid "The module was found as dynamically loadable shared library."
-msgstr "動的にロード可能な共有ライブラリとしてモジュールが発見された。"
+msgstr ""
+"El módulo se encontró como biblioteca compartida cargable dinámicamente."
 
-#: ../../library/imp.rst:340
+#: ../Doc/library/imp.rst:340
 msgid "The module was found as a package directory."
-msgstr "パッケージディレクトリとしてモジュールが発見された。"
+msgstr "El módulo se encontró como un directorio de paquetes."
 
-#: ../../library/imp.rst:347
+#: ../Doc/library/imp.rst:347
 msgid "The module was found as a built-in module."
-msgstr "モジュールが組み込みモジュールとして発見された。"
+msgstr "El módulo fue encontrado como un módulo incorporado."
 
-#: ../../library/imp.rst:354
+#: ../Doc/library/imp.rst:354
 msgid "The module was found as a frozen module."
-msgstr "モジュールが frozen モジュールとして発見された。"
+msgstr "El módulo fue encontrado como un módulo congelado."
 
-#: ../../library/imp.rst:361
+#: ../Doc/library/imp.rst:361
 msgid ""
 "The :class:`NullImporter` type is a :pep:`302` import hook that handles non-"
 "directory path strings by failing to find any modules.  Calling this type "
 "with an existing directory or empty string raises :exc:`ImportError`. "
 "Otherwise, a :class:`NullImporter` instance is returned."
 msgstr ""
-":class:`NullImporter` 型は :pep:`302` インポートフックで、何もモジュールが見"
-"つからなかったときの非ディレクトリパス文字列を処理します。この型を既存のディ"
-"レクトリや空文字列に対してコールすると :exc:`ImportError` が発生します。それ"
-"以外の場合は :class:`NullImporter` のインスタンスが返されます。"
+"El tipo :class:`NullImporter` es un enlace de importación :pep:`302` que "
+"controla cadenas de ruta de acceso que no son de directorio al no encontrar "
+"ningún módulo.  Llamar a este tipo con un directorio existente o una cadena "
+"vacía genera :exc:`ImportError`. De lo contrario, se retorna una instancia :"
+"class:`NullImporter`."
 
-#: ../../library/imp.rst:366
+#: ../Doc/library/imp.rst:366
 msgid "Instances have only one method:"
-msgstr "インスタンスはたった一つのメソッドを持ちます:"
+msgstr "Las instancias solo tienen un método:"
 
-#: ../../library/imp.rst:370
+#: ../Doc/library/imp.rst:370
 msgid ""
 "This method always returns ``None``, indicating that the requested module "
 "could not be found."
 msgstr ""
-"このメソッドは常に ``None`` を返し、要求されたモジュールが見つからなかったこ"
-"とを表します。"
+"Este método siempre retorna ``None``, lo que indica que no se pudo encontrar "
+"el módulo solicitado."
 
-#: ../../library/imp.rst:373
+#: ../Doc/library/imp.rst:373
 msgid ""
 "``None`` is inserted into ``sys.path_importer_cache`` instead of an instance "
 "of :class:`NullImporter`."
 msgstr ""
-":class:`NullImporter` のインスタンスの代わりに ``None`` が ``sys."
-"path_importer_cache`` に挿入されます。"
+"``None`` se inserta en ``sys.path_importer_cache`` en lugar de una instancia "
+"de :class:`NullImporter`."
 
-#: ../../library/imp.rst:377
+#: ../Doc/library/imp.rst:377
 msgid "Insert ``None`` into ``sys.path_importer_cache`` instead."
-msgstr "代わりに ``None`` を ``sys.path_importer_cache`` に挿入してください。"
+msgstr "Inserte ``None`` en ``sys.path_importer_cache`` en su lugar."
 
-#: ../../library/imp.rst:384
+#: ../Doc/library/imp.rst:384
 msgid "Examples"
-msgstr "使用例"
+msgstr "Ejemplos"
 
-#: ../../library/imp.rst:386
+#: ../Doc/library/imp.rst:386
 msgid ""
 "The following function emulates what was the standard import statement up to "
 "Python 1.4 (no hierarchical module names).  (This *implementation* wouldn't "
 "work in that version, since :func:`find_module` has been extended and :func:"
 "`load_module` has been added in 1.4.) ::"
 msgstr ""
-"次の関数は Python 1.4 までの標準 import 文(階層的なモジュール名がない)をエ"
-"ミュレートします。 (この *実装* はそのバージョンでは動作しないでしょう。なぜ"
-"なら、 :func:`find_module` は拡張されており、また :func:`load_module` が 1.4 "
-"で追加されているからです。) ::"
+"La siguiente función emula lo que era la instrucción de importación estándar "
+"hasta Python 1.4 (sin nombres de módulo jerárquico).  (Esta *implementación* "
+"no funcionaría en esa versión, ya que :func:`find_module` se ha ampliado y :"
+"func:`load_module` se ha añadido en 1.4.) ::"

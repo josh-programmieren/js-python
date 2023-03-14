@@ -1,123 +1,121 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to
+# get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# Shin Saito, 2021
-# Takanori Suzuki <takanori@takanory.net>, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:14+0000\n"
-"Last-Translator: Takanori Suzuki <takanori@takanory.net>, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2021-12-10 07:36-0500\n"
+"Last-Translator: Adolfo Hristo David Roque Gámez <aroquega@gmail.com>\n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../library/string.rst:2
+#: ../Doc/library/string.rst:2
 msgid ":mod:`string` --- Common string operations"
-msgstr ":mod:`string` --- 一般的な文字列操作"
+msgstr ":mod:`string` --- Operaciones comunes de cadena de caracteres"
 
-#: ../../library/string.rst:7
+#: ../Doc/library/string.rst:7
 msgid "**Source code:** :source:`Lib/string.py`"
-msgstr "**ソースコード:** :source:`Lib/string.py`"
+msgstr "**Source code:** :source:`Lib/string.py`"
 
-#: ../../library/string.rst:14
+#: ../Doc/library/string.rst:14
 msgid ":ref:`textseq`"
 msgstr ":ref:`textseq`"
 
-#: ../../library/string.rst:16
+#: ../Doc/library/string.rst:16
 msgid ":ref:`string-methods`"
 msgstr ":ref:`string-methods`"
 
-#: ../../library/string.rst:19
+#: ../Doc/library/string.rst:19
 msgid "String constants"
-msgstr "文字列定数"
+msgstr "Constantes de cadenas"
 
-#: ../../library/string.rst:21
+#: ../Doc/library/string.rst:21
 msgid "The constants defined in this module are:"
-msgstr "このモジュールで定義されている定数は以下の通りです:"
+msgstr "Las constantes definidas en este módulo son:"
 
-#: ../../library/string.rst:26
+#: ../Doc/library/string.rst:26
 msgid ""
 "The concatenation of the :const:`ascii_lowercase` and :const:"
 "`ascii_uppercase` constants described below.  This value is not locale-"
 "dependent."
 msgstr ""
-"後述の :const:`ascii_lowercase` と :const:`ascii_uppercase` を合わせたもの。"
-"この値はロケールに依存しません。"
+"La concatenación de las constantes abajo descriptas :const:`ascii_lowercase` "
+"y :const:`ascii_uppercase`.  Este valor es independiente de la configuración "
+"regional."
 
-#: ../../library/string.rst:32
+#: ../Doc/library/string.rst:32
 msgid ""
 "The lowercase letters ``'abcdefghijklmnopqrstuvwxyz'``.  This value is not "
 "locale-dependent and will not change."
 msgstr ""
-"小文字 ``'abcdefghijklmnopqrstuvwxyz'`` 。この値はロケールに依存せず、固定で"
-"す。"
+"Las letras minúsculas ``'abcdefghijklmnopqrstuvwxyz'``.  Este valor es "
+"independiente de la configuración regional y no cambiará."
 
-#: ../../library/string.rst:38
+#: ../Doc/library/string.rst:38
 msgid ""
 "The uppercase letters ``'ABCDEFGHIJKLMNOPQRSTUVWXYZ'``.  This value is not "
 "locale-dependent and will not change."
 msgstr ""
-"大文字 ``'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`` 。この値はロケールに依存せず、固定で"
-"す。"
+"Las letras mayúsculas ``'ABCDEFGHIJKLMNOPQRSTUVWXYZ'``.  Este valor es "
+"independiente de la configuración regional y no cambiará."
 
-#: ../../library/string.rst:44
+#: ../Doc/library/string.rst:44
 msgid "The string ``'0123456789'``."
-msgstr "文字列 ``'0123456789'`` です。"
+msgstr "La cadena ``'0123456789'``."
 
-#: ../../library/string.rst:49
+#: ../Doc/library/string.rst:49
 msgid "The string ``'0123456789abcdefABCDEF'``."
-msgstr "文字列 ``'0123456789abcdefABCDEF'`` です。"
+msgstr "La cadena ``'0123456789abcdefABCDEF'``."
 
-#: ../../library/string.rst:54
+#: ../Doc/library/string.rst:54
 msgid "The string ``'01234567'``."
-msgstr "文字列 ``'01234567'`` です。"
+msgstr "La cadena de caracteres ``'01234567'``."
 
-#: ../../library/string.rst:59
+#: ../Doc/library/string.rst:59
 msgid ""
 "String of ASCII characters which are considered punctuation characters in "
 "the ``C`` locale: ``!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~``."
 msgstr ""
-"``C`` ロケールにおいて、区切り文字 (punctuation characters) として扱われる "
-"ASCII 文字の文字列です: ``!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~``."
+"Cadena de caracteres ASCII que se consideran caracteres de puntuación en la "
+"configuración regional ``C``: ``!\" #$%&'()*+,-./:;<=>?@[\\]^_`{|} ~``."
 
-#: ../../library/string.rst:64
+#: ../Doc/library/string.rst:64
 msgid ""
 "String of ASCII characters which are considered printable.  This is a "
 "combination of :const:`digits`, :const:`ascii_letters`, :const:"
 "`punctuation`, and :const:`whitespace`."
 msgstr ""
-"印刷可能な ASCII 文字で構成される文字列です。 :const:`digits`, :const:"
-"`ascii_letters`, :const:`punctuation` および :const:`whitespace` を組み合わせ"
-"たものです。"
+"Cadena de caracteres ASCII que se consideran imprimibles.  Esta es una "
+"combinación de :const:`digits`, :const:`ascii_letters`, :const:"
+"`punctuation`, y :const:`whitespace`."
 
-#: ../../library/string.rst:71
+#: ../Doc/library/string.rst:71
 msgid ""
 "A string containing all ASCII characters that are considered whitespace. "
 "This includes the characters space, tab, linefeed, return, formfeed, and "
 "vertical tab."
 msgstr ""
-"空白 (whitespace) として扱われる ASCII 文字全てを含む文字列です。ほとんどのシ"
-"ステムでは、これはスペース (space)、タブ (tab)、改行 (linefeed)、復帰 "
-"(return)、改頁 (formfeed)、垂直タブ (vertical tab) です。"
+"Una cadena cuyos caracteres ASCII se consideran todos espacios en blanco. "
+"Esto incluye los caracteres espacio, tabulador, salto de línea, retorno, "
+"salto de página y tabulador vertical."
 
-#: ../../library/string.rst:79
+#: ../Doc/library/string.rst:79
 msgid "Custom String Formatting"
-msgstr "カスタムの文字列書式化"
+msgstr "Formato de cadena de caracteres personalizado"
 
-#: ../../library/string.rst:81
+#: ../Doc/library/string.rst:81
 msgid ""
 "The built-in string class provides the ability to do complex variable "
 "substitutions and value formatting via the :meth:`~str.format` method "
@@ -126,33 +124,36 @@ msgid ""
 "behaviors using the same implementation as the built-in :meth:`~str.format` "
 "method."
 msgstr ""
-"組み込みの文字列 (string) クラスには、 :pep:`3101` で記述されている :meth:"
-"`~str.format` メソッドによって複雑な変数置換と値のフォーマットを行う機能があ"
-"ります。 :mod:`string` モジュールの :class:`Formatter` クラスでは、組み込み"
-"の :meth:`~str.format` メソッドと同じ実装を使用して、独自の文字列フォーマット"
-"の振る舞いを作成してカスタマイズすることができます。"
+"La clase cadena es una clase incorporada (*built-in*) que proporciona la "
+"capacidad de realizar sustituciones complejas de variables y formateo de "
+"valor a través del método :meth:`~str.format` descrito en :pep:`3101`.  La "
+"clase :class:`Formatter` del módulo :mod:`string` permite crear y "
+"personalizar sus propios comportamientos de formateo de cadena utilizando la "
+"misma implementación que el método integrado :meth:`~str.format`."
 
-#: ../../library/string.rst:90
+#: ../Doc/library/string.rst:90
 msgid "The :class:`Formatter` class has the following public methods:"
-msgstr ":class:`Formatter` クラスは、以下のメソッドを持ちます:"
+msgstr "La clase :class:`Formatter` tiene los siguientes métodos públicos:"
 
-#: ../../library/string.rst:94
+#: ../Doc/library/string.rst:94
 msgid ""
 "The primary API method.  It takes a format string and an arbitrary set of "
 "positional and keyword arguments. It is just a wrapper that calls :meth:"
 "`vformat`."
 msgstr ""
-"主要な API メソッドです。書式文字列と、任意の位置引数およびキーワード引数の"
-"セットを取ります。これは、:meth:`vformat` を呼び出す単なるラッパーです。"
+"Método principal de la API.  Recibe una cadena de formato y argumentos "
+"posicionales y de palabra clave arbitrarios. Es sólo un envoltorio que llama "
+"a :meth:`vformat`."
 
-#: ../../library/string.rst:98
+#: ../Doc/library/string.rst:98
 msgid ""
 "A format string argument is now :ref:`positional-only <positional-"
 "only_parameter>`."
 msgstr ""
-"書式文字列は :ref:`位置専用 <positional-only_parameter>` の引数となりました。"
+"Un argumento de cadena de formato ahora es :ref:`solo posicional <positional-"
+"only_parameter>`."
 
-#: ../../library/string.rst:104
+#: ../Doc/library/string.rst:104
 msgid ""
 "This function does the actual work of formatting.  It is exposed as a "
 "separate function for cases where you want to pass in a predefined "
@@ -161,34 +162,35 @@ msgid ""
 "`vformat` does the work of breaking up the format string into character data "
 "and replacement fields.  It calls the various methods described below."
 msgstr ""
-"この関数はフォーマットの実際の仕事をします。この関数は、 ``*args`` および "
-"``**kwargs`` シンタックスを使用して、辞書を個々の引数として unpack してから再"
-"度 pack するのではなく、引数としてあらかじめ用意した辞書を渡したい場合のため"
-"に、独立した関数として公開されます。 :meth:`vformat` は、書式文字列を文字デー"
-"タと置換フィールドに分解する仕事をします。それは、以下に記述する様々なメソッ"
-"ドを呼び出します。"
+"Esta función realiza es la que realmente hace el trabajo de formateo.  Se "
+"expone como una función independiente para los casos en los que desea pasar "
+"un diccionario predefinido de argumentos, en lugar de desempaquetar y volver "
+"a empaquetar el diccionario como argumentos individuales mediante la "
+"sintaxis ``*args`` y ``**kwargs``.  :meth:`vformat` hace el trabajo de "
+"dividir la cadena de formato en datos de caracteres y campos de reemplazo.  "
+"Llama a los diversos métodos descritos a continuación."
 
-#: ../../library/string.rst:112
+#: ../Doc/library/string.rst:112
 msgid ""
 "In addition, the :class:`Formatter` defines a number of methods that are "
 "intended to be replaced by subclasses:"
 msgstr ""
-"さらに、 :class:`Formatter` ではサブクラスによって置き換えられることを意図し"
-"た次のようないくつかのメソッドが定義されています。"
+"Además de eso, la clase :class:`Formatter` define varios métodos que se "
+"espera sean reemplazados por las subclases:"
 
-#: ../../library/string.rst:117
+#: ../Doc/library/string.rst:117
 msgid ""
 "Loop over the format_string and return an iterable of tuples "
 "(*literal_text*, *field_name*, *format_spec*, *conversion*).  This is used "
 "by :meth:`vformat` to break the string into either literal text, or "
 "replacement fields."
 msgstr ""
-"format_stringを探査し、タプル、 (*literal_text*, *field_name*, "
-"*format_spec*, *conversion*) のイテラブルを返します。これは :meth:`vformat` "
-"が文字列を文字としての文字データや置換フィールドに展開するために使用されま"
-"す。"
+"Itera sobre *format_string* y retorna un iterable de tuplas (*literal_text*, "
+"*field_name*, *format_spec*, *conversion*). Es usado por :meth:`vformat` "
+"para dividir la cadena de caracteres en texto literal o en campos de "
+"reemplazo."
 
-#: ../../library/string.rst:122
+#: ../Doc/library/string.rst:122
 msgid ""
 "The values in the tuple conceptually represent a span of literal text "
 "followed by a single replacement field.  If there is no literal text (which "
@@ -197,13 +199,14 @@ msgid ""
 "field, then the values of *field_name*, *format_spec* and *conversion* will "
 "be ``None``."
 msgstr ""
-"タプルの値は、概念的に文字としての文字データと、それに続く単一の置換フィール"
-"ドを表現します。文字としての文字データが無い場合は (ふたつの置換フィールドが"
-"連続した場合などに起き得ます) 、 *literal_text* は長さが 0 の文字列となりま"
-"す。置換フィールドが無い場合は、 *field_name*, *format_spec* および "
-"*conversion* が ``None`` となります。"
+"Los valores en la tupla representan conceptualmente un intervalo de texto "
+"literal seguido por un único campo de reemplazo. Si no hay ningún texto "
+"literal (lo cual puede darse si dos campos de reemplazo ocurren "
+"consecutivamente), *literal_text* será una cadena de caracteres de longitud "
+"cero. Si no hay ningún campo de reemplazo, los valores de *field_name*, "
+"*format_spec* y *conversion* serán ``None``."
 
-#: ../../library/string.rst:131
+#: ../Doc/library/string.rst:131
 msgid ""
 "Given *field_name* as returned by :meth:`parse` (see above), convert it to "
 "an object to be formatted.  Returns a tuple (obj, used_key).  The default "
@@ -212,63 +215,66 @@ msgid ""
 "meth:`vformat`.  The return value *used_key* has the same meaning as the "
 "*key* parameter to :meth:`get_value`."
 msgstr ""
-"引数として与えた :meth:`parse` (上記参照) により返される *field_name* を書式"
-"指定対象オブジェクトに変換します。返り値はタプル、 (obj, used_key) です。デ"
-"フォルトでは :pep:`3101` に規定される \"0[name]\" や \"label.title\" のような"
-"形式の文字列を引数としてとります。 *args* と *kwargs* は :meth:`vformat` に渡"
-"されます。返り値 *used_key* は、 :meth:`get_value` の *key* 引数と同じ意味を"
-"持ちます。"
+"Dado un *field_name* retornado por :meth:`parse` (véase arriba), el mismo es "
+"convertido a un objeto a formatear. retorna una tupla (*obj*, *used_key*). "
+"La versión por defecto toma cadenas de caracteres acorde a lo definido en :"
+"pep:`3101`, tales como \"0[*name*]\" o \"*label.title*\". *args* y *kwargs* "
+"se pasan al método :meth:`vformat`. El valor retornado *used_key* tiene el "
+"mismo significado que el parámetro *key* para :meth:`get_value`."
 
-#: ../../library/string.rst:140
+#: ../Doc/library/string.rst:140
 msgid ""
 "Retrieve a given field value.  The *key* argument will be either an integer "
 "or a string.  If it is an integer, it represents the index of the positional "
 "argument in *args*; if it is a string, then it represents a named argument "
 "in *kwargs*."
 msgstr ""
-"与えられたフィールドの値を取り出します。 *key* 引数は整数でも文字列でも構いま"
-"せん。整数の場合は、位置引数 *args* のインデックス番号を示します。文字列の場"
-"合は、名前付きの引数 *kwargs* を意味します。"
+"Recuperar un valor de campo determinado.  El argumento *key* será un entero "
+"o una cadena de caracteres.  Si es un entero, representa el índice del "
+"argumento posicional en *args*; si es una cadena, representa un argumento "
+"definido en *kwargs*."
 
-#: ../../library/string.rst:145
+#: ../Doc/library/string.rst:145
 msgid ""
 "The *args* parameter is set to the list of positional arguments to :meth:"
 "`vformat`, and the *kwargs* parameter is set to the dictionary of keyword "
 "arguments."
 msgstr ""
-"*args* 引数は、 :meth:`vformat` への位置引数のリストに設定され、 *kwargs* 引"
-"数は、キーワード引数の辞書に設定されます。"
+"El parámetro *args* se establece como lista de argumentos posicionales en :"
+"meth:`vformat`, y el parámetro *kwargs* se establece como diccionario de "
+"argumentos de palabra clave."
 
-#: ../../library/string.rst:149
+#: ../Doc/library/string.rst:149
 msgid ""
 "For compound field names, these functions are only called for the first "
 "component of the field name; subsequent components are handled through "
 "normal attribute and indexing operations."
 msgstr ""
-"フィールド名が (ピリオドで区切られた) いくつかの要素からなっている場合、最初"
-"の要素のみがこれらの関数に渡されます。残りの要素に関しては、通常の属性または"
-"インデックスアクセスと同様に処理されます。"
+"Para nombres de campo compuesto, estas funciones son únicamente llamadas "
+"para el primer componente del campo. Los componentes que le siguen son "
+"tratados a través de operaciones normales de atributo e indexación."
 
-#: ../../library/string.rst:153
+#: ../Doc/library/string.rst:153
 msgid ""
 "So for example, the field expression '0.name' would cause :meth:`get_value` "
 "to be called with a *key* argument of 0.  The ``name`` attribute will be "
 "looked up after :meth:`get_value` returns by calling the built-in :func:"
 "`getattr` function."
 msgstr ""
-"つまり、例えば、フィールドが '0.name' と表現されるとき、 :meth:`get_value` "
-"は、 *key* 引数が 0 として呼び出されます。属性 ``name`` は、組み込みの :func:"
-"`getattr` 関数が呼び出され、 :meth:`get_value` が返されたのちに検索されます。"
+"Por ejemplo, la expresión de campo '0.name' haría que :meth:`get_value` se "
+"llame con un argumento *key* igual a 0.  El atributo ''name'' se buscará "
+"después del retorno de :meth:`get_value` llamando a la función incorporada :"
+"func:`getattr`."
 
-#: ../../library/string.rst:158
+#: ../Doc/library/string.rst:158
 msgid ""
 "If the index or keyword refers to an item that does not exist, then an :exc:"
 "`IndexError` or :exc:`KeyError` should be raised."
 msgstr ""
-"インデックスまたはキーワードが存在しないアイテムを参照した場合、 :exc:"
-"`IndexError` または :exc:`KeyError` が送出されます。"
+"Si el índice o la palabra clave hace referencia a un elemento que no existe, "
+"se debe generar un :exc:`IndexError` o un :exc:`KeyError`."
 
-#: ../../library/string.rst:163
+#: ../Doc/library/string.rst:163
 msgid ""
 "Implement checking for unused arguments if desired.  The arguments to this "
 "function is the set of all argument keys that were actually referred to in "
@@ -277,36 +283,40 @@ msgid ""
 "vformat.  The set of unused args can be calculated from these parameters.  :"
 "meth:`check_unused_args` is assumed to raise an exception if the check fails."
 msgstr ""
-"希望に応じて未使用の引数がないか確認する機能を実装します。この関数への引数"
-"は、書式指定文字列で実際に参照されるすべての引数のキーの set (位置引数の整"
-"数、名前付き引数の文字列) と、vformat に渡される *args* と *kwargs* への参照"
-"です。使用されない引数の set は、これらのパラメータから計算されます。 :meth:"
-"`check_unused_args` は、確認の結果が偽である場合に例外を送出するものとみなさ"
-"れます。"
+"Implementa el chequeo de argumentos no utilizados si así se desea.  Los "
+"argumentos de esta función son el conjunto de todas las claves de argumento "
+"a las que se hizo referencia en la cadena de formato (enteros para "
+"argumentos posicionales y cadenas de caracteres para argumentos con nombre) "
+"y una referencia a los *args* y *kwargs* que se pasaron a *vformat*.  El "
+"conjunto de *args* no utilizados se puede calcular a partir de estos "
+"parámetros. se asume que :meth:`check_unused_args` genera una excepción si "
+"se produce un error en el chequeo."
 
-#: ../../library/string.rst:173
+#: ../Doc/library/string.rst:173
 msgid ""
 ":meth:`format_field` simply calls the global :func:`format` built-in.  The "
 "method is provided so that subclasses can override it."
 msgstr ""
-":meth:`format_field` は単純に組み込みのグローバル関数 :func:`format` を呼び出"
-"します。このメソッドは、サブクラスをオーバーライドするために提供されます。"
+":meth:`format_field` simplemente llama a la función incorporada :func:"
+"`format`.  El método se proporciona para que las subclases puedan "
+"sobrescribirlo."
 
-#: ../../library/string.rst:178
+#: ../Doc/library/string.rst:178
 msgid ""
 "Converts the value (returned by :meth:`get_field`) given a conversion type "
 "(as in the tuple returned by the :meth:`parse` method).  The default version "
 "understands 's' (str), 'r' (repr) and 'a' (ascii) conversion types."
 msgstr ""
-"(:meth:`get_field` が返す) 値を (:meth:`parse` メソッドが返すタプルの形式で) "
-"与えられた変換タイプとして変換します。デフォルトバージョンは 's' (str), "
-"'r' (repr), 'a' (ascii) 変換タイプを理解します。"
+"Convierte el valor (retornado por :meth:`get_field`) dado un tipo de "
+"conversión (tal como la tupla retornada por el método :meth:`parse`). La "
+"versión por defecto entiende los tipos de conversión 's' (str), 'r' (repr) y "
+"'a' (ascii)."
 
-#: ../../library/string.rst:187
+#: ../Doc/library/string.rst:187
 msgid "Format String Syntax"
-msgstr "書式指定文字列の文法"
+msgstr "Sintaxis de formateo de cadena"
 
-#: ../../library/string.rst:189
+#: ../Doc/library/string.rst:189
 msgid ""
 "The :meth:`str.format` method and the :class:`Formatter` class share the "
 "same syntax for format strings (although in the case of :class:`Formatter`, "
@@ -315,8 +325,13 @@ msgid ""
 "less sophisticated and, in particular, does not support arbitrary "
 "expressions."
 msgstr ""
+"El método :meth:`str.format` y la clase :class:`Formatter` comparten la "
+"misma sintaxis para las cadenas de caracteres de formato (aunque en el caso "
+"de :class:`Formatter` las subclases pueden definir su propia sintaxis de "
+"cadena de caracteres de formato).  La sintaxis es similar a la de :ref:"
+"`literales de cadena con formato <f-strings>` pero hay algunas diferencias."
 
-#: ../../library/string.rst:202
+#: ../Doc/library/string.rst:202
 msgid ""
 "Format strings contain \"replacement fields\" surrounded by curly braces ``{}"
 "``. Anything that is not contained in braces is considered literal text, "
@@ -324,16 +339,17 @@ msgid ""
 "character in the literal text, it can be escaped by doubling: ``{{`` and ``}}"
 "``."
 msgstr ""
-"書式指定文字列は波括弧 ``{}`` に囲まれた \"置換フィールド\" を含みます。波括"
-"弧に囲まれた部分以外は全て単純な文字として扱われ、変更を加えることなく出力へ"
-"コピーされます。波括弧を文字として扱う必要がある場合は、二重にすることでエス"
-"ケープすることができます: ``{{`` および ``}}`` 。"
+"Las cadenas de caracteres de formato contienen \"campos de reemplazo\" "
+"rodeados de llaves ``{}``. Todo lo que no está contenido entre llaves se "
+"considera texto literal, que se copia sin cambios en la salida.  Si se "
+"necesita incluir un carácter de llave en el texto literal, se puede escapar "
+"duplicando: ``{{`` *and* ``}}``."
 
-#: ../../library/string.rst:207
+#: ../Doc/library/string.rst:207
 msgid "The grammar for a replacement field is as follows:"
-msgstr "置換フィールドの文法は以下です:"
+msgstr "La gramática para un campo de reemplazo es la siguiente:"
 
-#: ../../library/string.rst:219
+#: ../Doc/library/string.rst:219
 msgid ""
 "In less formal terms, the replacement field can start with a *field_name* "
 "that specifies the object whose value is to be formatted and inserted into "
@@ -342,17 +358,19 @@ msgid ""
 "``'!'``, and a *format_spec*, which is preceded by a colon ``':'``.  These "
 "specify a non-default format for the replacement value."
 msgstr ""
-"もっと簡単にいうと、置換フィールドは *field_name* で始められます。これによっ"
-"て指定したオブジェクトの値が、置換フィールドの代わりに書式化され出力に挿入さ"
-"れます。*field_name* の後に、感嘆符 ``'!'`` を挟んで *conversion* フィールド"
-"を続けることができます。最後にコロン ``':'`` を挟んで、 *format_spec* を書く"
-"ことができます。これは、置換される値の非デフォルトの書式を指定します。"
+"En términos menos formales, el campo de reemplazo puede comenzar con un "
+"*field_name* (nombre de campo) que especifica el objeto cuyo valor se va a "
+"formatear e insertar en la salida en lugar del campo de reemplazo. El nombre "
+"de campo (*field_name*) va seguido opcionalmente de un campo *conversion* "
+"(conversión), que va precedido de un signo de exclamación ``'!'``, y un "
+"*format_spec*, que va precedido de dos puntos ``':'``.  Estos especifican un "
+"formato no predeterminado para el valor de reemplazo."
 
-#: ../../library/string.rst:226
+#: ../Doc/library/string.rst:226
 msgid "See also the :ref:`formatspec` section."
-msgstr ":ref:`formatspec` 節も参照して下さい。"
+msgstr "Véase también la sección :ref:`formatspec`."
 
-#: ../../library/string.rst:228
+#: ../Doc/library/string.rst:228
 msgid ""
 "The *field_name* itself begins with an *arg_name* that is either a number or "
 "a keyword.  If it's a number, it refers to a positional argument, and if "
@@ -367,36 +385,42 @@ msgid ""
 "expression of the form ``'[index]'`` does an index lookup using :func:"
 "`__getitem__`."
 msgstr ""
-"*field_name* それ自身は、数かキーワードのいずれかである *arg_name* から始まり"
-"ます。それが数である場合、位置引数を参照します。また、それがキーワードである"
-"場合、指定されたキーワード引数を参照します。書式文字列中で数の arg_names が順"
-"に 0, 1, 2, ... である場合、それらはすべて (いくつかではありません) 省略する"
-"ことができます。そして数 0, 1, 2, ... は、自動的にその順で挿入されます。 "
-"*arg_name* は引用符で区切られていないので、書式文字列内の任意の辞書キー (例え"
-"ば文字列 ``'10'`` や ``':-]'`` など) を指定することはできません。 *arg_name* "
-"の後に任意の数のインデックス式または属性式を続けることができます。 ``'."
-"name'`` 形式の式は :func:`getattr` を使用して指定された属性を選択します。一"
-"方、 ``'[index]'`` 形式の式は :func:`__getitem__` を使用してインデックス参照"
-"を行います。"
+"El *field_name* (nombre de campo) comienza con un *arg_name* que es un "
+"número o una palabra clave.  Si es un número, hace referencia a un argumento "
+"posicional y, si es una palabra clave, hace referencia a un argumento de "
+"palabra clave.  Si los *arg_names* numéricos en una cadena de caracteres de "
+"formato son una secuencia como 0, 1, 2, ..., todos pueden ser omitidos (no "
+"sólo algunos) y los números 0, 1, 2, ... se insertarán automáticamente en "
+"ese orden. Dado que *arg_name* no está delimitado por comillas, no es "
+"posible especificar claves de diccionario arbitrarias (por ejemplo, las "
+"cadenas ``'10'`` or ``':-]'``) dentro de una cadena de caracteres de "
+"formato. El *arg_name* puede ir seguido de cualquier número de expresiones "
+"de índice o atributo. Una expresión con forma ``'.name'`` selecciona el "
+"atributo con nombre mediante :func:`getattr`, mientras que una expresión con "
+"forma ``'[index]'`` realiza una búsqueda de índice mediante :func:"
+"`__getitem__`."
 
-#: ../../library/string.rst:240
+#: ../Doc/library/string.rst:240
 msgid ""
 "The positional argument specifiers can be omitted for :meth:`str.format`, so "
 "``'{} {}'.format(a, b)`` is equivalent to ``'{0} {1}'.format(a, b)``."
 msgstr ""
-":meth:`str.format` を使い、位置引数指定を省略することができます。\n"
-"``'{} {}'.format(a, b)`` は ``'{0} {1}'.format(a, b)`` と同じになります。"
+"Los especificadores de argumentos posicionales pueden ser omitidos en :meth:"
+"`str.format`, así ``'{} {}'.format(a, b)`` es equivalente a ``'{0} {1}'."
+"format(a, b)``."
 
-#: ../../library/string.rst:244
+#: ../Doc/library/string.rst:244
 msgid ""
 "The positional argument specifiers can be omitted for :class:`Formatter`."
-msgstr ":class:`Formatter` を使い、位置引数指定を省略することができます。"
+msgstr ""
+"Para la clase :class:`Formatter`, los especificadores de argumento "
+"posicional pueden ser omitidos."
 
-#: ../../library/string.rst:247
+#: ../Doc/library/string.rst:247
 msgid "Some simple format string examples::"
-msgstr "簡単な書式指定文字列の例を挙げます::"
+msgstr "Algunos ejemplos simples de cadena de formato:"
 
-#: ../../library/string.rst:256
+#: ../Doc/library/string.rst:256
 msgid ""
 "The *conversion* field causes a type coercion before formatting.  Normally, "
 "the job of formatting a value is done by the :meth:`__format__` method of "
@@ -405,45 +429,48 @@ msgid ""
 "converting the value to a string before calling :meth:`__format__`, the "
 "normal formatting logic is bypassed."
 msgstr ""
-"*置換 (conversion)* フィールドにより書式変換前に型の強制変換が実施されます。"
-"通常、値の書式変換は :meth:`__format__` によって実施されます。しかしながら、"
-"場合によっては、文字列として変換することを強制したり、書式指定の定義をオー"
-"バーライドしたくなることもあります。 :meth:`__format__` の呼び出し前に値を文"
-"字列に変換すると、通常の書式変換の処理は飛ばされます。"
+"El campo *conversion* causa una coerción de tipo antes del formateo. "
+"Normalmente, el formateo es hecho el método :meth:`__format__` del valor "
+"mismo. Sin embargo, en algunos es deseable forzar el tipo a ser formateado "
+"como una cadena de caracteres, sobrescribiendo su propia definición de "
+"formateo. Cuando se convierte el valor a una cadena de caracteres antes de "
+"llamar al método :meth:`__format__`, la lógica normal de formateo es evitada."
 
-#: ../../library/string.rst:263
+#: ../Doc/library/string.rst:263
 msgid ""
 "Three conversion flags are currently supported: ``'!s'`` which calls :func:"
 "`str` on the value, ``'!r'`` which calls :func:`repr` and ``'!a'`` which "
 "calls :func:`ascii`."
 msgstr ""
-"現在 3つの変換フラグがサポートされています: 値に対して :func:`str` を呼ぶ "
-"``'!s'`` 、 :func:`repr` を呼ぶ ``'!r'`` 、 :func:`ascii` を呼ぶ ``'!a'``。"
+"Tres banderas de conversión son admitidas actualmente: ``'!s'``, que llama "
+"a :func:`str` con el valor; ``'!r'``, que llama a :func:`repr`; y ``'!a'`` "
+"que llama a :func:`ascii`."
 
-#: ../../library/string.rst:267
+#: ../Doc/library/string.rst:267
 msgid "Some examples::"
-msgstr "いくつかの例です::"
+msgstr "Algunos ejemplos::"
 
-#: ../../library/string.rst:273
+#: ../Doc/library/string.rst:273
 msgid ""
 "The *format_spec* field contains a specification of how the value should be "
 "presented, including such details as field width, alignment, padding, "
 "decimal precision and so on.  Each value type can define its own "
 "\"formatting mini-language\" or interpretation of the *format_spec*."
 msgstr ""
-"*format_spec* フィールドは、フィールド幅、文字揃え、埋め方、精度などの、値を"
-"表現する仕様を含みます。それぞれの値の型は、 \"formatting mini-language\" 、"
-"または、 *format_spec* の実装で定義されます。"
+"El campo *format_spec* contiene la especificación de cómo presentar el "
+"valor, incluyendo detalles como ancho del campo, alineación, relleno, "
+"precisión decimal, etc. Cada tipo de valor puede definir su propio \"mini "
+"lenguaje de formateo\" o interpretación de *format_spec*."
 
-#: ../../library/string.rst:278
+#: ../Doc/library/string.rst:278
 msgid ""
 "Most built-in types support a common formatting mini-language, which is "
 "described in the next section."
 msgstr ""
-"ほとんどの組み込み型は、次のセクションに記載された共通の formatting mini-"
-"language をサポートします。"
+"La mayoría de los tipos integrados admiten un formateo común de mini-idioma "
+"descrito en la siguiente sección."
 
-#: ../../library/string.rst:281
+#: ../Doc/library/string.rst:281
 msgid ""
 "A *format_spec* field can also include nested replacement fields within it. "
 "These nested replacement fields may contain a field name, conversion flag "
@@ -452,21 +479,22 @@ msgid ""
 "*format_spec* string is interpreted. This allows the formatting of a value "
 "to be dynamically specified."
 msgstr ""
-"*format_spec* フィールド内には入れ子になった置換フィールドを含めることもでき"
-"ます。入れ子になった置換フィールドにはフィールド名、変換フラグ、書式指定を含"
-"めることができますが、さらに入れ子の階層を含めることはできません。 "
-"format_spec 中の置換フィールドは *format_spec* 文字列が解釈される前に置き換え"
-"られます。これにより、値の書式を動的に指定することができます。"
+"Un campo *format_spec* también puede incluir campos de reemplazo anidados "
+"dentro de él. Estos campos de reemplazo anidados pueden contener un nombre "
+"de campo, una bandera de conversión y una especificación de formato, pero no "
+"se permite anidamiento más profundo.  Los campos de reemplazo dentro de "
+"*format_spec* se sustituyen antes de que la cadena *format_spec* se "
+"interprete. Esto permite especificar dinámicamente el formato de un valor."
 
-#: ../../library/string.rst:288
+#: ../Doc/library/string.rst:288
 msgid "See the :ref:`formatexamples` section for some examples."
-msgstr ":ref:`formatexamples` のいくつかの例も参照して下さい。"
+msgstr "Para más ejemplos, véase la sección :ref:`formatexamples`."
 
-#: ../../library/string.rst:294
+#: ../Doc/library/string.rst:294
 msgid "Format Specification Mini-Language"
-msgstr "書式指定ミニ言語仕様"
+msgstr "Especificación de formato Mini-Lenguaje"
 
-#: ../../library/string.rst:296
+#: ../Doc/library/string.rst:296
 msgid ""
 "\"Format specifications\" are used within replacement fields contained "
 "within a format string to define how individual values are presented (see :"
@@ -474,34 +502,38 @@ msgid ""
 "to the built-in :func:`format` function.  Each formattable type may define "
 "how the format specification is to be interpreted."
 msgstr ""
-"書式指定 (\"Format specifications\") は書式指定文字列の個々の値を表現する方法"
-"を指定するための、置換フィールドで使用されます (:ref:`formatstrings` および :"
-"ref:`f-strings` を参照してください) 。\n"
-"それらは、組み込み関数の :func:`format` 関数に直接渡されます。\n"
-"それぞれの書式指定可能な型について、書式指定がどのように解釈されるかが規定さ"
-"れます。"
+"Las \"especificaciones de formato\" son usadas dentro de campos de reemplazo "
+"contenidos en una cadena de formateo para definir como se presentan los "
+"valores individuales (véase :ref:`formatstrings` y :ref:`f-strings`). Los "
+"mismos pueden también ser pasados directamente a la función incorporada :"
+"func:`format`. Cada tipo formateable puede definir cómo interpretar la "
+"especificación de formato."
 
-#: ../../library/string.rst:303
+#: ../Doc/library/string.rst:303
 msgid ""
 "Most built-in types implement the following options for format "
 "specifications, although some of the formatting options are only supported "
 "by the numeric types."
 msgstr ""
-"多くの組み込み型は、書式指定に関して以下のオプションを実装します。しかしなが"
-"ら、いくつかの書式指定オプションは数値型でのみサポートされます。"
+"La mayoría de los tipos integrados implementan las siguientes opciones para "
+"especificaciones de formato, aunque algunas de las opciones de formateo sólo "
+"son posibles con los tipos numéricos."
 
-#: ../../library/string.rst:306
+#: ../Doc/library/string.rst:306
 msgid ""
 "A general convention is that an empty format specification produces the same "
 "result as if you had called :func:`str` on the value. A non-empty format "
 "specification typically modifies the result."
 msgstr ""
+"Una convención general es que una especificación de formato vacía produce el "
+"mismo resultado que llamar a la función :func:`str` con el valor. Una "
+"especificación no vacía típicamente modifica el resultado."
 
-#: ../../library/string.rst:310
+#: ../Doc/library/string.rst:310
 msgid "The general form of a *standard format specifier* is:"
-msgstr "一般的な書式指定子 (*standard format specifier*) の書式は以下です:"
+msgstr "La forma general de un *especificador estándar de formato* es:"
 
-#: ../../library/string.rst:322
+#: ../Doc/library/string.rst:322
 msgid ""
 "If a valid *align* value is specified, it can be preceded by a *fill* "
 "character that can be any character and defaults to a space if omitted. It "
@@ -511,137 +543,145 @@ msgid ""
 "curly brace with a nested replacement field.  This limitation doesn't affect "
 "the :func:`format` function."
 msgstr ""
-"有効な *align* 値を指定する場合、その前に *fill* 文字を付けることができま"
-"す。\n"
-"この文字には任意の文字を指定でき、省略された場合はデフォルトの空白文字となり"
-"ます。\n"
-":ref:`formatted string literal <f-strings>` の中や :meth:`str.format` メソッ"
-"ドを使う場合はリテラルの波括弧 (\"``{``\" と \"``}``\") を *fill* 文字として"
-"使えないことに注意してください。\n"
-"ただし、波括弧を入れ子になった置換フィールド内に挿入することはできます。\n"
-"この制限は :func:`format` 関数には影響しません。"
+"Si se especifica un valor *align* válido, puede ir precedido por un carácter "
+"*fill*, que puede ser cualquier carácter y cuyo valor predeterminado es un "
+"espacio si se omite. No es posible utilizar una llave literal (\"``{``\" or "
+"\"``}``\") como el carácter *fill* en un :ref:`formato literal de cadena <f-"
+"strings>` o cuando se utiliza el método :meth:`str.format`.  Sin embargo, es "
+"posible insertar una llave con un campo de reemplazo anidado.  Esta "
+"limitación no afecta a la función :func:`format`."
 
-#: ../../library/string.rst:331
+#: ../Doc/library/string.rst:331
 msgid "The meaning of the various alignment options is as follows:"
-msgstr "様々な align オプションの意味は以下のとおりです:"
+msgstr ""
+"El significado de las distintas opciones de alineación es el siguiente:"
 
-#: ../../library/string.rst:340 ../../library/string.rst:371
+#: ../Doc/library/string.rst:340 ../Doc/library/string.rst:371
 msgid "Option"
-msgstr "オプション"
+msgstr "Opción"
 
-#: ../../library/string.rst:340 ../../library/string.rst:371
-#: ../../library/string.rst:454 ../../library/string.rst:465
-#: ../../library/string.rst:500
+#: ../Doc/library/string.rst:340 ../Doc/library/string.rst:371
+#: ../Doc/library/string.rst:454 ../Doc/library/string.rst:465
+#: ../Doc/library/string.rst:500
 msgid "Meaning"
-msgstr "意味"
+msgstr "Significado"
 
-#: ../../library/string.rst:342
+#: ../Doc/library/string.rst:342
 msgid "``'<'``"
 msgstr "``'<'``"
 
-#: ../../library/string.rst:342
+#: ../Doc/library/string.rst:342
 msgid ""
 "Forces the field to be left-aligned within the available space (this is the "
 "default for most objects)."
 msgstr ""
-"利用可能なスペースにおいて、左詰めを強制します (ほとんどのオブジェクトにおい"
-"てのデフォルト)。"
+"Fuerza el campo a ser alineado a la izquierda dentro del espacio disponible "
+"(éste es el comportamiento por defecto para la mayoría de los objetos)."
 
-#: ../../library/string.rst:345
+#: ../Doc/library/string.rst:345
 msgid "``'>'``"
 msgstr "``'>'``"
 
-#: ../../library/string.rst:345
+#: ../Doc/library/string.rst:345
 msgid ""
 "Forces the field to be right-aligned within the available space (this is the "
 "default for numbers)."
 msgstr ""
-"利用可能なスペースにおいて、右詰めを強制します (いくつかのオブジェクトにおい"
-"てのデフォルト)。"
+"Fuerza el campo a ser alineado a la derecha dentro del espacio disponible "
+"(éste es el comportamiento por defecto para números)."
 
-#: ../../library/string.rst:348
+#: ../Doc/library/string.rst:348
 msgid "``'='``"
 msgstr "``'='``"
 
-#: ../../library/string.rst:348
+#: ../Doc/library/string.rst:348
 msgid ""
 "Forces the padding to be placed after the sign (if any) but before the "
 "digits.  This is used for printing fields in the form '+000000120'. This "
 "alignment option is only valid for numeric types.  It becomes the default "
 "for numbers when '0' immediately precedes the field width."
 msgstr ""
-"符号 (があれば) の後ろを埋めます。 '+000000120' のような形で表示されます。こ"
-"のオプションは数値型に対してのみ有効です。フィールド幅の直前が '0' の時はこれ"
-"がデフォルトの数値になります。"
+"Fuerza el relleno a ser colocarlo después del signo (si existe) pero antes "
+"de los dígitos.  Esto se utiliza para imprimir campos con el formato "
+"'+000000120'. Esta opción de alineación solo es válida para tipos "
+"numéricos.  Se convierte en el valor predeterminado cuando '0' precede "
+"inmediatamente al ancho del campo."
 
-#: ../../library/string.rst:354
+#: ../Doc/library/string.rst:354
 msgid "``'^'``"
 msgstr "``'^'``"
 
-#: ../../library/string.rst:354
+#: ../Doc/library/string.rst:354
 msgid "Forces the field to be centered within the available space."
-msgstr "利用可能なスペースにおいて、中央寄せを強制します。"
+msgstr "Fuerza el centrado del campo dentro del espacio disponible."
 
-#: ../../library/string.rst:358
+#: ../Doc/library/string.rst:358
 msgid ""
 "Note that unless a minimum field width is defined, the field width will "
 "always be the same size as the data to fill it, so that the alignment option "
 "has no meaning in this case."
 msgstr ""
-"最小のフィールド幅が定義されない限り、フィールド幅はデータを表示するために必"
-"要な幅と同じになることに注意して下さい。そのため、その場合には、 align オプ"
-"ションは意味を持ちません。"
+"Notar que, a menos que se defina un ancho de campo mínimo, el ancho del "
+"campo siempre tendrá el mismo tamaño que los datos para rellenarlo, de modo "
+"que la opción de alineación no tiene ningún significado en este caso."
 
-#: ../../library/string.rst:362
+#: ../Doc/library/string.rst:362
 msgid ""
 "The *sign* option is only valid for number types, and can be one of the "
 "following:"
 msgstr ""
-"*sign* オプションは数値型に対してのみ有効であり、以下のうちのひとつとなりま"
-"す:"
+"La opción *sign* (signo) sólo es válida para los tipos numéricos y puede ser "
+"una de las siguientes:"
 
-#: ../../library/string.rst:373
+#: ../Doc/library/string.rst:373
 msgid "``'+'``"
 msgstr "``'+'``"
 
-#: ../../library/string.rst:373
+#: ../Doc/library/string.rst:373
 msgid ""
 "indicates that a sign should be used for both positive as well as negative "
 "numbers."
-msgstr "符号の使用を、正数、負数の両方に対して指定します。"
+msgstr ""
+"indica que el signo debe ser usado tanto para los números positivos como "
+"negativos."
 
-#: ../../library/string.rst:376
+#: ../Doc/library/string.rst:376
 msgid "``'-'``"
 msgstr "``'-'``"
 
-#: ../../library/string.rst:376
+#: ../Doc/library/string.rst:376
 msgid ""
 "indicates that a sign should be used only for negative numbers (this is the "
 "default behavior)."
-msgstr "符号の使用を、負数に対してのみ指定します (デフォルトの挙動です)。"
+msgstr ""
+"indica que el signo debe ser usado sólo para números negativos (éste es el "
+"comportamiento por defecto)."
 
-#: ../../library/string.rst:379
+#: ../Doc/library/string.rst:379
 msgid "space"
-msgstr "空白"
+msgstr "espacio"
 
-#: ../../library/string.rst:379
+#: ../Doc/library/string.rst:379
 msgid ""
 "indicates that a leading space should be used on positive numbers, and a "
 "minus sign on negative numbers."
-msgstr "空白を正数の前に付け、負号を負数の前に使用することを指定します。"
+msgstr ""
+"indica que el espacio inicial debe ser usado para números positivos y el "
+"signo menos para números negativos."
 
-#: ../../library/string.rst:386
+#: ../Doc/library/string.rst:386
 msgid ""
 "The ``'z'`` option coerces negative zero floating-point values to positive "
 "zero after rounding to the format precision.  This option is only valid for "
 "floating-point presentation types."
 msgstr ""
 
-#: ../../library/string.rst:390
+#: ../Doc/library/string.rst:390
+#, fuzzy
 msgid "Added the ``'z'`` option (see also :pep:`682`)."
-msgstr ""
+msgstr "Se agregó la opción ``','`` (véase también :pep:`378`)."
 
-#: ../../library/string.rst:395
+#: ../Doc/library/string.rst:395
 msgid ""
 "The ``'#'`` option causes the \"alternate form\" to be used for the "
 "conversion.  The alternate form is defined differently for different types.  "
@@ -654,28 +694,32 @@ msgid ""
 "of these conversions only if a digit follows it. In addition, for ``'g'`` "
 "and ``'G'`` conversions, trailing zeros are not removed from the result."
 msgstr ""
-"``'#'`` オプションは、変換に「別形式」を使用します。別形式は、異なる型に対し"
-"て違った風に定義されます。このオプションは、整数、浮動小数点数、複素数でのみ"
-"有効です。整数に対して2進法、8進法、または16進法の出力が使用される場合、この"
-"オプションは出力される値にそれぞれ ``'0b'``, ``'0o'``, ``'0x'``, ``'0X'`` 接"
-"頭辞を加えます。浮動小数点数、複素数については、別形式では、小数点文字の後に"
-"数字がなくても変換結果には常に小数点文字が含まれます。通常は、数字が続く場合"
-"にのみ小数点文字がこれらの変換結果に現われます。さらに、``'g'`` と ``'G'`` の"
-"変換については、最後の 0 は結果から取り除かれません。"
+"La opción ``'#'`` hace que la \"forma alternativa\" se utilice para la "
+"conversión.  La forma alternativa se define de forma diferente para "
+"diferentes tipos.  Esta opción solo es válida para los tipos entero, "
+"flotante y complejo. Para los enteros, cuando se utiliza la salida binaria, "
+"octal o hexadecimal, esta opción agrega el respectivo prefijo ``'0b'``, "
+"``'0o'`` o ``'0x'`` al valor de salida. Para los flotantes y complejos, la "
+"forma alternativa hace que el resultado de la conversión siempre contenga un "
+"carácter de punto decimal, incluso si no hay dígitos que lo sigan. "
+"Normalmente, un carácter de punto decimal aparece en el resultado de estas "
+"conversiones sólo si un dígito lo sigue. Además, para las conversiones "
+"``'g'`` y ``'G'``, los ceros finales no se eliminan del resultado."
 
-#: ../../library/string.rst:409
+#: ../Doc/library/string.rst:409
 msgid ""
 "The ``','`` option signals the use of a comma for a thousands separator. For "
 "a locale aware separator, use the ``'n'`` integer presentation type instead."
 msgstr ""
-"``','`` オプションは、千の位のセパレータにカンマを使うことを合図します。ロ"
-"ケール依存のセパレータには、代わりに ``'n'`` の整数表現形式を使ってください。"
+"La opción ``','`` señala el uso de una coma como separador de miles. En "
+"cambio, para un separador consciente de localización (*local aware*), usar "
+"el tipo de presentación de enteros ``'n'``."
 
-#: ../../library/string.rst:413
+#: ../Doc/library/string.rst:413
 msgid "Added the ``','`` option (see also :pep:`378`)."
-msgstr "``','`` オプションが追加されました (:pep:`378` も参照)。"
+msgstr "Se agregó la opción ``','`` (véase también :pep:`378`)."
 
-#: ../../library/string.rst:418
+#: ../Doc/library/string.rst:418
 msgid ""
 "The ``'_'`` option signals the use of an underscore for a thousands "
 "separator for floating point presentation types and for integer presentation "
@@ -683,42 +727,47 @@ msgid ""
 "``'X'``, underscores will be inserted every 4 digits.  For other "
 "presentation types, specifying this option is an error."
 msgstr ""
-"``'_'`` オプションは、浮動小数点数の表現型と整数の表現型 ``'d'`` における千倍"
-"ごとの区切り文字にアンダースコアを使うというしるしです。\n"
-"整数の表現型の ``'b'``, ``'o'``, ``'x'``, ``'X'`` では、4桁ごとにアンダースコ"
-"アが挿入されます。\n"
-"他の表現型でこのオプションを指定するとエラーになります。"
+"La opción ``'_'`` señaliza el uso del guión bajo como separador de miles "
+"para tipos de presentación de punto flotante y para tipos de presentación de "
+"enteros ``'d'``. Para los tipos de presentación de enteros ``'b'``, ``'o'``, "
+"``'x'`` y ``'X'``, el guión bajo se insertará cada 4 dígitos. Para otros "
+"tipos de presentación, especificar esta opción es un error."
 
-#: ../../library/string.rst:425
+#: ../Doc/library/string.rst:425
 msgid "Added the ``'_'`` option (see also :pep:`515`)."
-msgstr "``'_'`` オプションが追加されました (:pep:`515` も参照)。"
+msgstr "Se agregó la opción ``'_'`` (véase también :pep:`515`)."
 
-#: ../../library/string.rst:428
+#: ../Doc/library/string.rst:428
 msgid ""
 "*width* is a decimal integer defining the minimum total field width, "
 "including any prefixes, separators, and other formatting characters. If not "
 "specified, then the field width will be determined by the content."
 msgstr ""
+"*width* es un entero decimal que define el ancho total de campo mínimo, "
+"incluyendo prefijos, separadores y otros caracteres de formateo. Si no se "
+"especifica, el ancho de campo será determinado por el contenido."
 
-#: ../../library/string.rst:432
+#: ../Doc/library/string.rst:432
 msgid ""
 "When no explicit alignment is given, preceding the *width* field by a zero "
 "(``'0'``) character enables sign-aware zero-padding for numeric types.  This "
 "is equivalent to a *fill* character of ``'0'`` with an *alignment* type of "
 "``'='``."
 msgstr ""
-"alignment が明示的に与えられない場合、 *width* フィールドにゼロ (``'0'``) 文"
-"字を前置することは、数値型のための符号を意識した 0 パディングを可能にします。"
-"これは *fill* 文字に ``'0'`` を指定して、 *alignment* タイプに ``'='`` を指定"
-"したことと等価です。"
+"Cuando no se proporciona ninguna alineación explícita, si el campo *width* "
+"es precedido por un carácter cero (``'0'``), se habilita el relleno cero con "
+"reconocimiento de signos para los tipos numéricos.  Esto equivale a un "
+"carácter *fill* de ``'0'`` con un tipo de *alignment* de ``'='``."
 
-#: ../../library/string.rst:437
+#: ../Doc/library/string.rst:437
 msgid ""
 "Preceding the *width* field by ``'0'`` no longer affects the default "
 "alignment for strings."
 msgstr ""
+"Anteponer el campo *width* por ``'0'`` ya no afecta el alineamiento por "
+"defecto para cadenas de caracteres."
 
-#: ../../library/string.rst:441
+#: ../Doc/library/string.rst:441
 msgid ""
 "The *precision* is a decimal integer indicating how many digits should be "
 "displayed after the decimal point for presentation types ``'f'`` and "
@@ -729,137 +778,146 @@ msgid ""
 "types."
 msgstr ""
 
-#: ../../library/string.rst:449
+#: ../Doc/library/string.rst:449
 msgid "Finally, the *type* determines how the data should be presented."
-msgstr "最後に、*type* は、データがどのように表現されるかを決定します。"
+msgstr "Finalmente, *type* (el tipo) determina como presentar los datos."
 
-#: ../../library/string.rst:451
+#: ../Doc/library/string.rst:451
 msgid "The available string presentation types are:"
-msgstr "利用可能な文字列の表現型は以下です:"
+msgstr "Los tipos de presentación cadena disponibles son:"
 
-#: ../../library/string.rst:454 ../../library/string.rst:465
-#: ../../library/string.rst:500
+#: ../Doc/library/string.rst:454 ../Doc/library/string.rst:465
+#: ../Doc/library/string.rst:500
 msgid "Type"
-msgstr "型"
+msgstr "Tipo"
 
-#: ../../library/string.rst:456
+#: ../Doc/library/string.rst:456
 msgid "``'s'``"
 msgstr "``'s'``"
 
-#: ../../library/string.rst:456
+#: ../Doc/library/string.rst:456
 msgid "String format. This is the default type for strings and may be omitted."
-msgstr "文字列。これがデフォルトの値で、多くの場合省略されます。"
+msgstr ""
+"Formato de cadena de caracteres. Éste es el tipo por defecto y puede ser "
+"omitido."
 
-#: ../../library/string.rst:459 ../../library/string.rst:488
-#: ../../library/string.rst:575
+#: ../Doc/library/string.rst:459 ../Doc/library/string.rst:488
+#: ../Doc/library/string.rst:575
 msgid "None"
 msgstr "None"
 
-#: ../../library/string.rst:459
+#: ../Doc/library/string.rst:459
 msgid "The same as ``'s'``."
-msgstr "``'s'`` と同じです。"
+msgstr "Lo mismo que ``'s'``."
 
-#: ../../library/string.rst:462
+#: ../Doc/library/string.rst:462
 msgid "The available integer presentation types are:"
-msgstr "利用可能な整数の表現型は以下です:"
+msgstr "Los tipos disponibles para la presentación de enteros son:"
 
-#: ../../library/string.rst:467
+#: ../Doc/library/string.rst:467
 msgid "``'b'``"
 msgstr "``'b'``"
 
-#: ../../library/string.rst:467
+#: ../Doc/library/string.rst:467
 msgid "Binary format. Outputs the number in base 2."
-msgstr "2進数。出力される数値は2を基数とします。"
+msgstr "Formato binario. retorna el número en base 2."
 
-#: ../../library/string.rst:469
+#: ../Doc/library/string.rst:469
 msgid "``'c'``"
 msgstr "``'c'``"
 
-#: ../../library/string.rst:469
+#: ../Doc/library/string.rst:469
 msgid ""
 "Character. Converts the integer to the corresponding unicode character "
 "before printing."
-msgstr "文字。数値を対応する Unicode 文字に変換します。"
+msgstr ""
+"Carácter. Convierte el entero en el carácter unicode correspondiente antes "
+"de imprimirlo."
 
-#: ../../library/string.rst:472
+#: ../Doc/library/string.rst:472
 msgid "``'d'``"
 msgstr "``'d'``"
 
-#: ../../library/string.rst:472
+#: ../Doc/library/string.rst:472
 msgid "Decimal Integer. Outputs the number in base 10."
-msgstr "10進数。出力される数値は10を基数とします。"
+msgstr "Decimal entero. retorna el número en base 10."
 
-#: ../../library/string.rst:474
+#: ../Doc/library/string.rst:474
 msgid "``'o'``"
 msgstr "``'o'``"
 
-#: ../../library/string.rst:474
+#: ../Doc/library/string.rst:474
 msgid "Octal format. Outputs the number in base 8."
-msgstr "8進数。出力される数値は8を基数とします。"
+msgstr "Formato octal. retorna el número en base 8."
 
-#: ../../library/string.rst:476
+#: ../Doc/library/string.rst:476
 msgid "``'x'``"
 msgstr "``'x'``"
 
-#: ../../library/string.rst:476
+#: ../Doc/library/string.rst:476
 msgid ""
 "Hex format. Outputs the number in base 16, using lower-case letters for the "
 "digits above 9."
 msgstr ""
-"16進数。出力される数値は16を基数とします。 10進で9を超える数字には小文字が使"
-"われます。"
+"Formato hexadecimal. retorna el número en base 16, utilizando letras "
+"minúsculas para los dígitos superiores a 9."
 
-#: ../../library/string.rst:479
+#: ../Doc/library/string.rst:479
 msgid "``'X'``"
 msgstr "``'X'``"
 
-#: ../../library/string.rst:479
+#: ../Doc/library/string.rst:479
 msgid ""
 "Hex format. Outputs the number in base 16, using upper-case letters for the "
 "digits above 9. In case ``'#'`` is specified, the prefix ``'0x'`` will be "
 "upper-cased to ``'0X'`` as well."
 msgstr ""
+"Formato hexadecimal. retorna el número en base 16, utilizando letras "
+"mayúsculas para los dígitos superiores a 9. En caso de que ``'#'`` se "
+"especifique, el prefijo ``'0x'`` convertirá en ``'0X'`` también."
 
-#: ../../library/string.rst:484 ../../library/string.rst:568
+#: ../Doc/library/string.rst:484 ../Doc/library/string.rst:568
 msgid "``'n'``"
 msgstr "``'n'``"
 
-#: ../../library/string.rst:484
+#: ../Doc/library/string.rst:484
 msgid ""
 "Number. This is the same as ``'d'``, except that it uses the current locale "
 "setting to insert the appropriate number separator characters."
 msgstr ""
-"数値。現在のロケールに従い、区切り文字を挿入することを除けば、 ``'d'`` と同じ"
-"です。"
+"Número. Es lo mismo que ``'d'``, excepto que usa la configuración regional "
+"actual para insertar el número apropiado de caracteres separadores."
 
-#: ../../library/string.rst:488
+#: ../Doc/library/string.rst:488
 msgid "The same as ``'d'``."
-msgstr "``'d'`` と同じです。"
+msgstr "Lo mismo que ``'d'``."
 
-#: ../../library/string.rst:491
+#: ../Doc/library/string.rst:491
 msgid ""
 "In addition to the above presentation types, integers can be formatted with "
 "the floating point presentation types listed below (except ``'n'`` and "
 "``None``). When doing so, :func:`float` is used to convert the integer to a "
 "floating point number before formatting."
 msgstr ""
-"これらの表現型に加えて、整数は (``'n'`` と ``None`` を除く) 以下の浮動小数点"
-"数の表現型で書式指定できます。\n"
-"そうすることで整数は書式変換される前に :func:`float` を使って浮動小数点数に変"
-"換されます。"
+"Además de los tipos de presentación arriba expuestos, los enteros se pueden "
+"formatear con los tipos de presentación de punto flotante enumerados a "
+"continuación (excepto ``'n'`` y ``None``). Al hacerlo, :func:`float` se "
+"utiliza para convertir el entero en un número de punto flotante antes de ser "
+"formateado."
 
-#: ../../library/string.rst:496
+#: ../Doc/library/string.rst:496
 msgid ""
 "The available presentation types for :class:`float` and :class:`~decimal."
 "Decimal` values are:"
 msgstr ""
-"利用可能な :class:`float` と :class:`~decimal.Decimal` の表現型は以下です:"
+"Los tipos de presentación disponibles para valores  :class:`float` y :class:"
+"`~decimal.Decimal` son:"
 
-#: ../../library/string.rst:502
+#: ../Doc/library/string.rst:502
 msgid "``'e'``"
 msgstr "``'e'``"
 
-#: ../../library/string.rst:502
+#: ../Doc/library/string.rst:502
 msgid ""
 "Scientific notation. For a given precision ``p``, formats the number in "
 "scientific notation with the letter 'e' separating the coefficient from the "
@@ -870,22 +928,32 @@ msgid ""
 "Decimal`. If no digits follow the decimal point, the decimal point is also "
 "removed unless the ``#`` option is used."
 msgstr ""
+"Notación científica. Para una precisión dada ``p``, formatea el número en "
+"notación científica con la letra ``e`` separando el coeficiente del "
+"exponente. El coeficiente tiene un dígito antes, y ``p`` dígitos después, "
+"del punto decimal, para un total de ``p + 1`` dígitos significativos. Cuando "
+"se no da una precisión, usa una precisión de ``6`` dígitos después del punto "
+"decimal para :class:`float`, y muestra todos los dígitos del coeficiente "
+"para :class:`~decimal.Decimal`. Si no hay dígitos después del punto decimal, "
+"el punto decimal también es removido a no ser que se use la opción ``#``."
 
-#: ../../library/string.rst:514
+#: ../Doc/library/string.rst:514
 msgid "``'E'``"
 msgstr "``'E'``"
 
-#: ../../library/string.rst:514
+#: ../Doc/library/string.rst:514
 msgid ""
 "Scientific notation. Same as ``'e'`` except it uses an upper case 'E' as the "
 "separator character."
-msgstr "指数表記です。大文字の 'E' を使うことを除いては、 ``'e'`` と同じです。"
+msgstr ""
+"Notación científica. Igual que ``'e'`` excepto que utiliza una 'E' mayúscula "
+"como carácter separador."
 
-#: ../../library/string.rst:517
+#: ../Doc/library/string.rst:517
 msgid "``'f'``"
 msgstr "``'f'``"
 
-#: ../../library/string.rst:517
+#: ../Doc/library/string.rst:517
 msgid ""
 "Fixed-point notation. For a given precision ``p``, formats the number as a "
 "decimal number with exactly ``p`` digits following the decimal point. With "
@@ -895,32 +963,43 @@ msgid ""
 "decimal point, the decimal point is also removed unless the ``#`` option is "
 "used."
 msgstr ""
+"Notación de punto fijo. Para una precisión dada ``p``, formatea el número "
+"como un valor decimal con exactamente ``p`` dígitos siguiendo el punto "
+"decimal. Cuando no se da una precisión, usa una precisión de ``6`` dígitos "
+"después del punto decimal para :class:`float`, y usa una precisión tan "
+"grande como sea necesaria para mostrar todos los dígitos del coeficiente "
+"para :class:`~decimal.Decimal`. Si no hay dígitos después del punto decimal, "
+"el punto decimal también es removido a no ser que se use la opción ``#``."
 
-#: ../../library/string.rst:527
+#: ../Doc/library/string.rst:527
 msgid "``'F'``"
 msgstr "``'F'``"
 
-#: ../../library/string.rst:527
+#: ../Doc/library/string.rst:527
 msgid ""
 "Fixed-point notation. Same as ``'f'``, but converts ``nan`` to  ``NAN`` and "
 "``inf`` to ``INF``."
 msgstr ""
-"固定小数点数表記です。``nan`` が ``NAN`` に、``inf`` が ``INF`` に変換される"
-"ことを除き ``'f'`` と同じです。"
+"Notación de punto fijo. Igual que ``'f'``, pero convierte (nulos) ``nan`` a "
+"``NAN`` e ``inf`` a ``INF``."
 
-#: ../../library/string.rst:530
+#: ../Doc/library/string.rst:530
 msgid "``'g'``"
 msgstr "``'g'``"
 
-#: ../../library/string.rst:530
+#: ../Doc/library/string.rst:530
 msgid ""
 "General format.  For a given precision ``p >= 1``, this rounds the number to "
 "``p`` significant digits and then formats the result in either fixed-point "
 "format or in scientific notation, depending on its magnitude. A precision of "
 "``0`` is treated as equivalent to a precision of ``1``."
 msgstr ""
+"Formato general. Para una precisión dada ``p >= 1``, redondea el número a "
+"``p`` dígitos significativos y luego formatea el resultado como formato de "
+"punto fijo o en notación científica, dependiendo de su magnitud. Una "
+"precisión de ``0`` es tratada como equivalente a una precisión de ``1``."
 
-#: ../../library/string.rst:537
+#: ../Doc/library/string.rst:537
 msgid ""
 "The precise rules are as follows: suppose that the result formatted with "
 "presentation type ``'e'`` and precision ``p-1`` would have exponent "
@@ -932,8 +1011,17 @@ msgid ""
 "decimal point is also removed if there are no remaining digits following it, "
 "unless the ``'#'`` option is used."
 msgstr ""
+"Las reglas precisas son las siguientes: supongamos que el resultado "
+"formateado con el tipo de presentación ``'e'`` y la precisión ``p-1`` tiene "
+"exponente ``exp``.  Entonces, si ``m <= exp < p``, donde ``m`` es -4 para "
+"*floats* y -6 para :class:`Decimals <decimal.Decimal>`, el número se "
+"formatea con el tipo de presentación ``'f'`` y la precisión ``p-1-exp``.  De "
+"lo contrario, el número se formatea con el tipo de presentación ``'e'`` y "
+"precisión ``p-1``. En ambos casos, los ceros finales insignificantes se "
+"eliminan del significado, y el punto decimal también se elimina si no hay "
+"dígitos restantes que lo sigan, a menos que se utilice la opción ``'#'``."
 
-#: ../../library/string.rst:550
+#: ../Doc/library/string.rst:550
 msgid ""
 "With no precision given, uses a precision of ``6`` significant digits for :"
 "class:`float`. For :class:`~decimal.Decimal`, the coefficient of the result "
@@ -942,153 +1030,176 @@ msgid ""
 "place value of the least significant digit is larger than 1, and fixed-point "
 "notation is used otherwise."
 msgstr ""
+"Si no se da una precisión, usa una precisión de ``6`` dígitos significativos "
+"para :class:`float`. Para :class:`~decimal.Decimal` el coeficiente del "
+"resultado se construye usando los dígitos del coeficiente del valor; se usa "
+"notación científica para valores menores a ``1e-6`` en valor absoluto y "
+"valores donde el valor posicional del dígito menos significativo es mayor a "
+"1, de otra forma se usa notación de punto fijo."
 
-#: ../../library/string.rst:559
+#: ../Doc/library/string.rst:559
 msgid ""
 "Positive and negative infinity, positive and negative zero, and nans, are "
 "formatted as ``inf``, ``-inf``, ``0``, ``-0`` and ``nan`` respectively, "
 "regardless of the precision."
 msgstr ""
-"正と負の無限大と 0 および NaN は精度に関係なくそれぞれ ``inf``, ``-inf``, "
-"``0``, ``-0`` および ``nan`` となります。"
+"Infinito positivo y negativo, cero positivo y negativo, y nulos (*nans*) son "
+"respectivamente formateados como ``inf``, ``-inf``, ``0``, ``-0`` y ``nan``, "
+"independientemente de la precisión."
 
-#: ../../library/string.rst:564
+#: ../Doc/library/string.rst:564
 msgid "``'G'``"
 msgstr "``'G'``"
 
-#: ../../library/string.rst:564
+#: ../Doc/library/string.rst:564
 msgid ""
 "General format. Same as ``'g'`` except switches to ``'E'`` if the number "
 "gets too large. The representations of infinity and NaN are uppercased, too."
 msgstr ""
-"汎用フォーマットです。数値が大きくなったとき、 ``'E'`` に切り替わることを除"
-"き、 ``'g'`` と同じです。無限大と NaN の表示も大文字になります。"
+"Formato general. Igual que ``'g'`` excepto que cambia a ``'E'`` si el número "
+"se vuelve muy grande. Las representaciones de infinito y NaN también se "
+"convierten a mayúsculas."
 
-#: ../../library/string.rst:568
+#: ../Doc/library/string.rst:568
 msgid ""
 "Number. This is the same as ``'g'``, except that it uses the current locale "
 "setting to insert the appropriate number separator characters."
 msgstr ""
-"数値です。現在のロケールに合わせて、数値分割文字が挿入されることを除き、 "
-"``'g'`` と同じです。"
+"Número. Es lo mismo que ``'g'``, excepto que usa la configuración local para "
+"insertar los caracteres separadores de número apropiados."
 
-#: ../../library/string.rst:572
+#: ../Doc/library/string.rst:572
 msgid "``'%'``"
 msgstr "``'%'``"
 
-#: ../../library/string.rst:572
+#: ../Doc/library/string.rst:572
 msgid ""
 "Percentage. Multiplies the number by 100 and displays in fixed (``'f'``) "
 "format, followed by a percent sign."
 msgstr ""
-"パーセンテージです。数値は 100 倍され、固定小数点数フォーマット (``'f'``) で"
-"パーセント記号付きで表示されます。"
+"Porcentaje. Multiplica el número por 100 y lo muestra en formato fijo "
+"(``'f'``) seguido del signo porcentaje."
 
-#: ../../library/string.rst:575
+#: ../Doc/library/string.rst:575
 msgid ""
 "For :class:`float` this is the same as ``'g'``, except that when fixed-point "
 "notation is used to format the result, it always includes at least one digit "
 "past the decimal point. The precision used is as large as needed to "
 "represent the given value faithfully."
 msgstr ""
+"Para :class:`float` esto es lo mismo que ``'g'``, excepto que cuando se usa "
+"notación de punto fijo para formatear el resultado, siempre incluye al menos "
+"un dígito pasado el punto decimal. La precisión usada es tan larga como sea "
+"necesaria para representar el valor dado fielmente."
 
-#: ../../library/string.rst:581
+#: ../Doc/library/string.rst:581
 msgid ""
 "For :class:`~decimal.Decimal`, this is the same as either ``'g'`` or ``'G'`` "
 "depending on the value of ``context.capitals`` for the current decimal "
 "context."
 msgstr ""
+"Para :class:`~decimal.Decimal`, esto es lo mismo que ``'g'`` o ``'G'`` "
+"dependiendo del valor de ``context.capitals`` para el contexto decimal "
+"actual."
 
-#: ../../library/string.rst:585
+#: ../Doc/library/string.rst:585
 msgid ""
 "The overall effect is to match the output of :func:`str` as altered by the "
 "other format modifiers."
 msgstr ""
+"El efecto general es el de igualar la salida de :func:`str` al ser alterada  "
+"por los otros modificadores de formato."
 
-#: ../../library/string.rst:593
+#: ../Doc/library/string.rst:593
 msgid "Format examples"
-msgstr "書式指定例"
+msgstr "Ejemplos de formateo"
 
-#: ../../library/string.rst:595
+#: ../Doc/library/string.rst:595
 msgid ""
 "This section contains examples of the :meth:`str.format` syntax and "
 "comparison with the old ``%``-formatting."
 msgstr ""
-"この節では、 :meth:`str.format` 構文の例を紹介し、さらに従来の ``%``-書式と比"
-"較します。"
+"Esta sección contiene ejemplos de la sintaxis :meth:`str.format` y "
+"comparaciones con el antiguo método de formateo usando ``%``."
 
-#: ../../library/string.rst:598
+#: ../Doc/library/string.rst:598
+#, python-format
 msgid ""
 "In most of the cases the syntax is similar to the old ``%``-formatting, with "
 "the addition of the ``{}`` and with ``:`` used instead of ``%``. For "
 "example, ``'%03.2f'`` can be translated to ``'{:03.2f}'``."
 msgstr ""
-"多くの場合、新構文に ``{}`` を加え、 ``%`` の代わりに ``:`` を使うことで、古"
-"い ``%``-書式に類似した書式になります。例えば、``'%03.2f'`` は "
-"``'{:03.2f}'`` と変換できます。"
+"En la mayoría de los casos, la sintaxis es similar al antiguo formato ``%``, "
+"con la adición de ``{}`` y con ``:`` utilizado en lugar de ``%``. Por "
+"ejemplo, ``'%03.2f'`` puede ser traducido como ``'{:03.2f}'``."
 
-#: ../../library/string.rst:602
+#: ../Doc/library/string.rst:602
 msgid ""
 "The new format syntax also supports new and different options, shown in the "
 "following examples."
 msgstr ""
-"以下の例で示すように、新構文はさらに新たに様々なオプションもサポートしていま"
-"す。"
+"La nueva sintaxis de formato también soporta opciones diferentes y nuevas "
+"que se muestran en los ejemplos siguientes."
 
-#: ../../library/string.rst:605
+#: ../Doc/library/string.rst:605
 msgid "Accessing arguments by position::"
-msgstr "位置引数を使ったアクセス::"
+msgstr "Accediendo argumentos por posición::"
 
-#: ../../library/string.rst:618
+#: ../Doc/library/string.rst:618
 msgid "Accessing arguments by name::"
-msgstr "名前を使ったアクセス::"
+msgstr "Accediendo argumentos por nombre::"
 
-#: ../../library/string.rst:626
+#: ../Doc/library/string.rst:626
 msgid "Accessing arguments' attributes::"
-msgstr "引数の属性へのアクセス::"
+msgstr "Accediendo los atributos de los argumentos::"
 
-#: ../../library/string.rst:641
+#: ../Doc/library/string.rst:641
 msgid "Accessing arguments' items::"
-msgstr "引数の要素へのアクセス::"
+msgstr "Accediendo ítems de los argumentos::"
 
-#: ../../library/string.rst:647
+#: ../Doc/library/string.rst:647
+#, python-format
 msgid "Replacing ``%s`` and ``%r``::"
-msgstr "``%s`` と ``%r`` の置き換え::"
+msgstr "Reemplazar ``%s`` y ``%r``::"
 
-#: ../../library/string.rst:652
+#: ../Doc/library/string.rst:652
 msgid "Aligning the text and specifying a width::"
-msgstr "テキストの幅を指定した整列::"
+msgstr "Alinear el texto y especificar el ancho::"
 
-#: ../../library/string.rst:663
+#: ../Doc/library/string.rst:663
+#, python-format
 msgid "Replacing ``%+f``, ``%-f``, and ``% f`` and specifying a sign::"
-msgstr "``%+f`` と ``%-f``, ``% f`` の置換、そして符号の指定::"
+msgstr "Reemplazar ``%+f``, ``%-f``, y ``% f`` y especificar el signo::"
 
-#: ../../library/string.rst:672
+#: ../Doc/library/string.rst:672
+#, python-format
 msgid ""
 "Replacing ``%x`` and ``%o`` and converting the value to different bases::"
-msgstr "``%x`` と ``%o`` の置換、そして値に対する異なる底の変換::"
+msgstr ""
+"Reemplazando ``%x`` y ``%o`` y convirtiendo el valor a diferentes bases::"
 
-#: ../../library/string.rst:681
+#: ../Doc/library/string.rst:681
 msgid "Using the comma as a thousands separator::"
-msgstr "千の位のセパレータにカンマを使用する::"
+msgstr "Usando la coma como separador de los miles::"
 
-#: ../../library/string.rst:686
+#: ../Doc/library/string.rst:686
 msgid "Expressing a percentage::"
-msgstr "パーセントを表示する::"
+msgstr "Expresar un porcentaje::"
 
-#: ../../library/string.rst:693
+#: ../Doc/library/string.rst:693
 msgid "Using type-specific formatting::"
-msgstr "型特有の書式指定を使う::"
+msgstr "Uso del formateo específico de tipo::"
 
-#: ../../library/string.rst:700
+#: ../Doc/library/string.rst:700
 msgid "Nesting arguments and more complex examples::"
-msgstr "引数をネストする、さらに複雑な例::"
+msgstr "Anidando argumentos y ejemplos más complejos::"
 
-#: ../../library/string.rst:734
+#: ../Doc/library/string.rst:734
 msgid "Template strings"
-msgstr "テンプレート文字列"
+msgstr "Cadenas de plantillas"
 
-#: ../../library/string.rst:736
+#: ../Doc/library/string.rst:736
+#, fuzzy
 msgid ""
 "Template strings provide simpler string substitutions as described in :pep:"
 "`292`.  A primary use case for template strings is for internationalization "
@@ -1097,20 +1208,28 @@ msgid ""
 "Python.  As an example of a library built on template strings for i18n, see "
 "the `flufl.i18n <https://flufli18n.readthedocs.io/en/latest/>`_ package."
 msgstr ""
+"Las cadenas de caracteres de plantilla proporcionan sustituciones de cadenas "
+"más sencillas como se describe en :pep:`292`.  Un caso de uso principal para "
+"las cadenas de plantilla es la internacionalización (i18n) ya que en ese "
+"contexto, la sintaxis y la funcionalidad más sencillas hacen la traducción "
+"más fácil que otras instalaciones de formato de cadena integradas en "
+"Python.  Como ejemplo de una biblioteca creada sobre cadenas de caracteres "
+"de plantilla para i18n, véase el paquete `flufl.i18n <http://flufli18n."
+"readthedocs.io/en/latest/>`_."
 
-#: ../../library/string.rst:746
+#: ../Doc/library/string.rst:746
 msgid ""
 "Template strings support ``$``-based substitutions, using the following "
 "rules:"
 msgstr ""
-"テンプレート文字列は ``$`` に基づいた置換をサポートしていて、次の規則が使われ"
-"ています:"
+"Las cadenas de caracteres de plantilla admiten sustituciones basadas en "
+"``$`` de acuerdo a las siguientes reglas:"
 
-#: ../../library/string.rst:748
+#: ../Doc/library/string.rst:748
 msgid "``$$`` is an escape; it is replaced with a single ``$``."
-msgstr "``$$`` はエスケープ文字です; ``$`` 一つに置換されます。"
+msgstr "``$$`` es un escape. Es reemplazado con un único ``$``."
 
-#: ../../library/string.rst:750
+#: ../Doc/library/string.rst:750
 msgid ""
 "``$identifier`` names a substitution placeholder matching a mapping key of "
 "``\"identifier\"``.  By default, ``\"identifier\"`` is restricted to any "
@@ -1119,43 +1238,45 @@ msgid ""
 "character after the ``$`` character terminates this placeholder "
 "specification."
 msgstr ""
-"``$identifier`` は ``\"identifier\"`` のマッピングキーに合致する置換プレース"
-"ホルダーを指定します。デフォルトでは、 ``\"identifier\"`` は大文字と小文字を"
-"区別しない ASCII 英数字 (アンダースコアを含む) からなら文字列に制限されていま"
-"す。文字列はアンダースコアか ASCII 文字から始まるものでなければなりません。"
-"``$`` の後に識別子に使えない文字が出現すると、そこでプレースホルダ名の指定が"
-"終わります。"
+"``$identifier`` (identificador) nombra un comodín de sustitución que "
+"coincide con una clave de asignación de ``\"identifier\"`` (identificador).  "
+"De forma predeterminada, ``\"identifier\"`` está restringido a cualquier "
+"cadena alfanumérica ASCII (insensible a mayúsculas/minúsculas e incluyendo "
+"los guiones bajos) que comience con un guión bajo o una letra ASCII.  El "
+"primer carácter no identificador después del carácter ``$`` termina esta "
+"especificación de comodín."
 
-#: ../../library/string.rst:757
+#: ../Doc/library/string.rst:757
 msgid ""
 "``${identifier}`` is equivalent to ``$identifier``.  It is required when "
 "valid identifier characters follow the placeholder but are not part of the "
 "placeholder, such as ``\"${noun}ification\"``."
 msgstr ""
-"``${identifier}`` は ``$identifier`` と同じです。プレースホルダ名の後ろに識別"
-"子として使える文字列が続いていて、それをプレースホルダ名の一部として扱いたく"
-"ない場合、例えば ``\"${noun}ification\"`` のような場合に必要な書き方です。"
+"``${*identifier*}`` (identificador) es equivalente a ``$identifier``. Es "
+"requerido cuando caracteres identificadores válidos siguen al comodín pero "
+"no son parte de él, por ejemplo ``\"${noun}ification\"``."
 
-#: ../../library/string.rst:761
+#: ../Doc/library/string.rst:761
 msgid ""
 "Any other appearance of ``$`` in the string will result in a :exc:"
 "`ValueError` being raised."
 msgstr ""
-"上記以外の書き方で文字列中に ``$`` を使うと :exc:`ValueError` を送出します。"
+"Cualquier otra aparición de ``$`` en la cadena de caracteres resultará en "
+"una excepción :exc:`ValueError`."
 
-#: ../../library/string.rst:764
+#: ../Doc/library/string.rst:764
 msgid ""
 "The :mod:`string` module provides a :class:`Template` class that implements "
 "these rules.  The methods of :class:`Template` are:"
 msgstr ""
-":mod:`string` モジュールでは、上記のような規則を実装した :class:`Template` ク"
-"ラスを提供しています。 :class:`Template` のメソッドを以下に示します:"
+"El módulo :mod:`string` provee una clase :class:`Template` que implementa "
+"esas reglas. Los métodos de :class:`Template` son:"
 
-#: ../../library/string.rst:770
+#: ../Doc/library/string.rst:770
 msgid "The constructor takes a single argument which is the template string."
-msgstr "コンストラクタはテンプレート文字列になる引数を一つだけ取ります。"
+msgstr "El constructor sólo lleva un argumento, la cadena plantilla."
 
-#: ../../library/string.rst:775
+#: ../Doc/library/string.rst:775
 msgid ""
 "Performs the template substitution, returning a new string.  *mapping* is "
 "any dictionary-like object with keys that match the placeholders in the "
@@ -1163,13 +1284,15 @@ msgid ""
 "keywords are the placeholders.  When both *mapping* and *kwds* are given and "
 "there are duplicates, the placeholders from *kwds* take precedence."
 msgstr ""
-"テンプレート置換を行い、新たな文字列を生成して返します。*mapping* はテンプ"
-"レート中のプレースホルダに対応するキーを持つような任意の辞書類似オブジェクト"
-"です。辞書を指定する代わりに、キーワード引数も指定でき、その場合にはキーワー"
-"ドをプレースホルダ名に対応させます。*mapping* と *kwds* の両方が指定され、内"
-"容が重複した場合には、*kwds* に指定したプレースホルダを優先します。"
+"Realiza la sustitución de plantilla y retorna una nueva cadena de "
+"caracteres. *mapping* (mapeo) es un objeto tipo diccionario con claves "
+"(*keys*) que coinciden con los *placeholders* (comodines) de la plantilla. "
+"Como alternativa, es posible pasar argumentos de palabra clave cuyas "
+"palabras clave son los *placeholders* (comodines). Cuando *mapping* y *kwds* "
+"son dados y hay elementos duplicados, los *placeholders* (comodines) de "
+"*kwds* tienen prioridad."
 
-#: ../../library/string.rst:784
+#: ../Doc/library/string.rst:784
 msgid ""
 "Like :meth:`substitute`, except that if placeholders are missing from "
 "*mapping* and *kwds*, instead of raising a :exc:`KeyError` exception, the "
@@ -1177,13 +1300,13 @@ msgid ""
 "unlike with :meth:`substitute`, any other appearances of the ``$`` will "
 "simply return ``$`` instead of raising :exc:`ValueError`."
 msgstr ""
-":meth:`substitute` と同じですが、プレースホルダに対応するものを *mapping* や "
-"*kwds* から見つけられなかった場合に、 :exc:`KeyError` 例外を送出する代わりに"
-"もとのプレースホルダがそのまま入ります。また、 :meth:`substitute` とは違い、"
-"規則外の書き方で ``$`` を使った場合でも、 :exc:`ValueError` を送出せず単に "
-"``$`` を返します。"
+"Igual que :meth:`substitute`, excepto que si faltan comodines de *mapping* y "
+"*kwds*, en lugar de generar una excepción :exc:`KeyError`, el comodín "
+"original aparecerá en la cadena de caracteres resultante intacta.  Además, a "
+"diferencia de :meth:`substitute`, cualquier otra aparición de ``$`` "
+"simplemente retornará ``$`` en lugar de generar :exc:`ValueError`."
 
-#: ../../library/string.rst:790
+#: ../Doc/library/string.rst:790
 msgid ""
 "While other exceptions may still occur, this method is called \"safe\" "
 "because it always tries to return a usable string instead of raising an "
@@ -1192,55 +1315,57 @@ msgid ""
 "dangling delimiters, unmatched braces, or placeholders that are not valid "
 "Python identifiers."
 msgstr ""
-"その他の例外も発生し得る一方で、このメソッドが「安全 (safe) 」と呼ばれている"
-"のは、置換操作は常に、例外を送出する代わりに利用可能な文字列を返そうとするか"
-"らです。別の見方をすれば、 :meth:`safe_substitute` は区切り間違いによるぶら下"
-"がり (dangling delimiter) や波括弧の非対応、 Python の識別子として無効なプ"
-"レースホルダ名を含むような不正なテンプレートを何も警告せずに無視するため、安"
-"全とはいえないのです。"
+"Mientras que otras excepciones aún pueden ocurrir, este método es llamado "
+"\"seguro\" (*safe*) porque siempre intenta retornar una cadena de caracteres "
+"que pueda ser usada en lugar de levantar una excepción. Desde otro punto de "
+"vista, el método :meth:`safe_substitute` es en realidad para nada seguro, "
+"dado que ignorará plantillas defectuosas con delimitadores colgados, llaves "
+"sin cerrar, o comodines que no son identificadores válidos en Python."
 
-#: ../../library/string.rst:800
+#: ../Doc/library/string.rst:800
 msgid ""
 "Returns false if the template has invalid placeholders that will cause :meth:"
 "`substitute` to raise :exc:`ValueError`."
 msgstr ""
 
-#: ../../library/string.rst:808
+#: ../Doc/library/string.rst:808
 msgid ""
 "Returns a list of the valid identifiers in the template, in the order they "
 "first appear, ignoring any invalid identifiers."
 msgstr ""
 
-#: ../../library/string.rst:813
+#: ../Doc/library/string.rst:813
 msgid ":class:`Template` instances also provide one public data attribute:"
 msgstr ""
-":class:`Template` のインスタンスは、次のような public な属性を提供しています:"
+"Las instancias de :class:`Template` también proporcionan un atributo de "
+"datos públicos:"
 
-#: ../../library/string.rst:817
+#: ../Doc/library/string.rst:817
 msgid ""
 "This is the object passed to the constructor's *template* argument.  In "
 "general, you shouldn't change it, but read-only access is not enforced."
 msgstr ""
-"コンストラクタの引数 *template* に渡されたオブジェクトです。通常、この値を変"
-"更すべきではありませんが、読み出し専用アクセスを強制しているわけではありませ"
-"ん。"
+"Éste es el objeto que se le pasa como argumento *template* al constructor. "
+"En general, no debería ser modificado, pero el acceso de sólo lectura (*read-"
+"only*) no es impuesto."
 
-#: ../../library/string.rst:820
+#: ../Doc/library/string.rst:820
 msgid "Here is an example of how to use a Template::"
-msgstr "Templateの使い方の例を以下に示します::"
+msgstr "Aquí un ejemplo de cómo usar una plantilla (*Template*)::"
 
-#: ../../library/string.rst:838
+#: ../Doc/library/string.rst:838
 msgid ""
 "Advanced usage: you can derive subclasses of :class:`Template` to customize "
 "the placeholder syntax, delimiter character, or the entire regular "
 "expression used to parse template strings.  To do this, you can override "
 "these class attributes:"
 msgstr ""
-"さらに進んだ使い方: :class:`Template` のサブクラスを派生して、プレースホルダ"
-"の書式、区切り文字、テンプレート文字列の解釈に使われている正規表現全体をカス"
-"タマイズできます。こうした作業には、以下のクラス属性をオーバライドします:"
+"Uso avanzado: es posible derivar subclases de :class:`Template` para "
+"personalizar la sintaxis de *placeholder*, caracteres de delimitación, o "
+"bien la expresión regular entera usada para procesar cadenas de plantillas. "
+"Para ello, es posible sobrescribir los siguientes atributos de clase:"
 
-#: ../../library/string.rst:843
+#: ../Doc/library/string.rst:843
 msgid ""
 "*delimiter* -- This is the literal string describing a placeholder "
 "introducing delimiter.  The default value is ``$``.  Note that this should "
@@ -1249,40 +1374,45 @@ msgid ""
 "delimiter after class creation (i.e. a different delimiter must be set in "
 "the subclass's class namespace)."
 msgstr ""
-"*delimiter* -- プレースホルダの開始を示すリテラル文字列です。\n"
-"デフォルトの値は ``$`` です。\n"
-"実装系はこの文字列に対して必要に応じて :meth:`re.escape` を呼び出すので、正規"
-"表現になってしまうような文字列にしては *なりません* 。\n"
-"さらにクラスを作成した後に delimiter を変更できない (つまり、別の delimiter "
-"を設定したいのであれば、サブクラスの名前空間で行わなければならない) ことに注"
-"意してください。"
+"*delimiter*: es la cadena de caracteres literal que describe al delimitador "
+"que introduce un comodín.  El valor predeterminado es ``$``.  Notar que esto "
+"*no debe* ser una expresión regular, ya que la implementación llamará a :"
+"meth:`re.escape` en esta cadena de caracteres según sea necesario.  Tener en "
+"cuenta además, que se no puede cambiar el delimitador después haber creado "
+"la clase (es decir, se debe establecer un delimitador diferente en el "
+"espacio de nombres de la subclase)."
 
-#: ../../library/string.rst:850
+#: ../Doc/library/string.rst:850
 msgid ""
 "*idpattern* -- This is the regular expression describing the pattern for non-"
 "braced placeholders.  The default value is the regular expression ``(?a:[_a-"
 "z][_a-z0-9]*)``.  If this is given and *braceidpattern* is ``None`` this "
 "pattern will also apply to braced placeholders."
 msgstr ""
+"*idpattern* -- Esta es la expresión regular que describe el patrón para "
+"comodines fuera de las llaves.  El valor predeterminado es la expresión "
+"regular ``(?a:[_a-z][_a-z0-9]*)``.  Si se proporciona este argumento y "
+"*braceidpattern* es ``None`` este patrón también se aplicará a los comodines "
+"entre llaves."
 
-#: ../../library/string.rst:857
+#: ../Doc/library/string.rst:857
 msgid ""
 "Since default *flags* is ``re.IGNORECASE``, pattern ``[a-z]`` can match with "
 "some non-ASCII characters. That's why we use the local ``a`` flag here."
 msgstr ""
-"*flags* のデフォルトは ``re.IGNORECASE`` なので、 ``[a-z]`` というパターンは"
-"いくつかの非 ASCII 文字に適合できます。\n"
-"そのため、ここではローカルの ``a`` フラグを使っています。"
+"Dado que el valor predeterminado de *flags* es ``re.IGNORECASE``, el patrón "
+"``[a-z]`` puede coincidir con algunos caracteres que no son ASCII. Por ello "
+"se utiliza aquí la bandera local ``a``."
 
-#: ../../library/string.rst:861
+#: ../Doc/library/string.rst:861
 msgid ""
 "*braceidpattern* can be used to define separate patterns used inside and "
 "outside the braces."
 msgstr ""
-"*braceidpattern* を使用すると、中括弧の内側と外側で使用する別々のパターンを定"
-"義できます。"
+"*braceidpattern* puede ser usado para definir patrones separados, usados "
+"dentro y fuera de los corchetes."
 
-#: ../../library/string.rst:865
+#: ../Doc/library/string.rst:865
 msgid ""
 "*braceidpattern* -- This is like *idpattern* but describes the pattern for "
 "braced placeholders.  Defaults to ``None`` which means to fall back to "
@@ -1290,8 +1420,13 @@ msgid ""
 "If given, this allows you to define different patterns for braced and "
 "unbraced placeholders."
 msgstr ""
+"*braceidpattern* -- Es como *idpattern* pero describe el patrón para "
+"comodines entre llaves.  El valor por defecto es ``None``, lo que significa "
+"volver a *idpattern* (es decir, el mismo patrón se utiliza tanto dentro como "
+"fuera de las llaves). Si se proporciona, esto le permite definir diferentes "
+"patrones para comodines dentro y fuera de las llaves."
 
-#: ../../library/string.rst:873
+#: ../Doc/library/string.rst:873
 msgid ""
 "*flags* -- The regular expression flags that will be applied when compiling "
 "the regular expression used for recognizing substitutions.  The default "
@@ -1299,12 +1434,13 @@ msgid ""
 "to the flags, so custom *idpattern*\\ s must follow conventions for verbose "
 "regular expressions."
 msgstr ""
-"*flags* -- 代入の認識のために使用される正規表現をコンパイルする際に適用される"
-"正規表現フラグ。デフォルト値は ``re.IGNORECASE`` です。``re.VERBOSE`` が常に"
-"フラグに追加されるということに注意してください。したがって、カスタムな "
-"*idpattern* は verbose 正規表現の規約に従わなければなりません。"
+"*flags* -- Banderas de expresión regular que se aplicarán al compilar la "
+"expresión regular utilizada para reconocer sustituciones.  El valor por "
+"defecto es ``re.IGNORECASE``.  Téngase en cuenta que ``re.VERBOSE`` siempre "
+"se agregará a las banderas, por lo que *idpattern* (s) personalizado(s) "
+"debe(n) seguir las convenciones de expresiones regulares detalladas."
 
-#: ../../library/string.rst:881
+#: ../Doc/library/string.rst:881
 msgid ""
 "Alternatively, you can provide the entire regular expression pattern by "
 "overriding the class attribute *pattern*.  If you do this, the value must be "
@@ -1312,55 +1448,57 @@ msgid ""
 "groups correspond to the rules given above, along with the invalid "
 "placeholder rule:"
 msgstr ""
-"他にも、クラス属性 *pattern* をオーバライドして、正規表現パターン全体を指定で"
-"きます。オーバライドを行う場合、 *pattern* の値は 4 つの名前つきキャプチャグ"
-"ループ (capturing group) を持った正規表現オブジェクトでなければなりません。こ"
-"れらのキャプチャグループは、上で説明した規則と、無効なプレースホルダに対する"
-"規則に対応しています:"
+"Como alternativa, se puede proporcionar el patrón de expresión regular "
+"completo, reemplazando así el atributo de clase *pattern*.  Si eso ocurre, "
+"el valor debe ser un objeto de expresión regular con cuatro grupos de "
+"captura con nombre.  Los grupos de captura corresponden a las reglas "
+"indicadas anteriormente, junto con la regla de marcador de posición no "
+"válida:"
 
-#: ../../library/string.rst:887
+#: ../Doc/library/string.rst:887
 msgid ""
 "*escaped* -- This group matches the escape sequence, e.g. ``$$``, in the "
 "default pattern."
 msgstr ""
-"*escaped* -- このグループはエスケープシーケンス、すなわちデフォルトパターンに"
-"おける ``$$`` に対応します。"
+"*escaped* -- Este grupo coincide con la secuencia de escape en el patrón "
+"predeterminado, por ejemplo, ``$$``."
 
-#: ../../library/string.rst:890
+#: ../Doc/library/string.rst:890
 msgid ""
 "*named* -- This group matches the unbraced placeholder name; it should not "
 "include the delimiter in capturing group."
 msgstr ""
-"*named* -- このグループは波括弧でくくらないプレースホルダ名に対応します; キャ"
-"プチャグループに区切り文字を含めてはなりません。"
+"*named* -- Este grupo coincide con el nombre comodín fuera de las llaves. No "
+"debe incluir el delimitador del grupo de captura."
 
-#: ../../library/string.rst:893
+#: ../Doc/library/string.rst:893
 msgid ""
 "*braced* -- This group matches the brace enclosed placeholder name; it "
 "should not include either the delimiter or braces in the capturing group."
 msgstr ""
-"*braced* -- このグループは波括弧でくくったプレースホルダ名に対応します; キャ"
-"プチャグループに区切り文字を含めてはなりません。"
+"*braced* -- Este grupo coincide con el nombre del comodín adjunto; no debe "
+"incluir ni el delimitador ni las llaves en el grupo de captura."
 
-#: ../../library/string.rst:896
+#: ../Doc/library/string.rst:896
 msgid ""
 "*invalid* -- This group matches any other delimiter pattern (usually a "
 "single delimiter), and it should appear last in the regular expression."
 msgstr ""
-"*invalid* -- このグループはそのほかの区切り文字のパターン (通常は区切り文字一"
-"つ) に対応し、正規表現の末尾に出現しなければなりません。"
+"*invalid* -- Este grupo se empareja con cualquier otro patrón de "
+"delimitación (usualmente un único carácter) y debe ser lo último en aparecer "
+"en la expresión regular."
 
-#: ../../library/string.rst:899
+#: ../Doc/library/string.rst:899
 msgid ""
 "The methods on this class will raise :exc:`ValueError` if the pattern "
 "matches the template without one of these named groups matching."
 msgstr ""
 
-#: ../../library/string.rst:904
+#: ../Doc/library/string.rst:904
 msgid "Helper functions"
-msgstr "ヘルパー関数"
+msgstr "Funciones de ayuda"
 
-#: ../../library/string.rst:908
+#: ../Doc/library/string.rst:908
 msgid ""
 "Split the argument into words using :meth:`str.split`, capitalize each word "
 "using :meth:`str.capitalize`, and join the capitalized words using :meth:"
@@ -1369,8 +1507,27 @@ msgid ""
 "trailing whitespace are removed, otherwise *sep* is used to split and join "
 "the words."
 msgstr ""
-":meth:`str.split` を使って引数を単語に分割し、 :meth:`str.capitalize` を使っ"
-"てそれぞれの単語の先頭の文字を大文字に変換し、 :meth:`str.join` を使ってつな"
-"ぎ合わせます。オプションの第2引数 *sep* が与えられないか ``None`` の場合、こ"
-"の置換処理は文字列中の連続する空白文字をスペース一つに置き換え、先頭と末尾の"
-"空白を削除します、それ以外の場合には *sep* は split と join に使われます。"
+"Separa el argumento en dos palabras utilizando el método :meth:`str.split`, "
+"convierte a mayúsculas vía :meth:`str.capitalize` y une las palabras en "
+"mayúscula con el método :meth:`str.join`. Si el segundo argumento opcional "
+"*sep* está ausente o es ``None``, los espacios en blanco se reemplazarán con "
+"un único espacio y los espacios en blanco iniciales y finales se eliminarán; "
+"caso contrario, *sep* se usa para separar y unir las palabras."
+
+#~ msgid ""
+#~ "The *precision* is a decimal number indicating how many digits should be "
+#~ "displayed after the decimal point for a floating point value formatted "
+#~ "with ``'f'`` and ``'F'``, or before and after the decimal point for a "
+#~ "floating point value formatted with ``'g'`` or ``'G'``.  For non-number "
+#~ "types the field indicates the maximum field size - in other words, how "
+#~ "many characters will be used from the field content. The *precision* is "
+#~ "not allowed for integer values."
+#~ msgstr ""
+#~ "El argumento *precision* (precisión) es un número decimal que indica "
+#~ "cuántos dígitos se deben mostrar después del punto decimal para un valor "
+#~ "de punto flotante formateado con ``'f'`` y ``'F'``, o bien antes y "
+#~ "después del punto decimal para un valor de punto flotante formateado con "
+#~ "``'g'`` or ``'G'``.  Para los tipos no numéricos, el campo indica el "
+#~ "tamaño máximo del campo, es decir, cuántos caracteres se utilizarán del "
+#~ "contenido del campo. El argumento *precision* no es admitido para los "
+#~ "valores enteros."

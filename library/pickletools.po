@@ -1,36 +1,33 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org / https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get the list of volunteers
 #
-# Translators:
-# tomo, 2021
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 01:11+0000\n"
-"Last-Translator: tomo, 2021\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2019-05-06 11:59-0400\n"
+"PO-Revision-Date: 2020-10-10 10:26-0400\n"
+"Language-Team: python-doc-es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language: es_AR\n"
+"X-Generator: Poedit 2.4.1\n"
 
-#: ../../library/pickletools.rst:2
+#: ../Doc/library/pickletools.rst:2
 msgid ":mod:`pickletools` --- Tools for pickle developers"
-msgstr ":mod:`pickletools` --- pickle 開発者のためのツール群"
+msgstr ":mod:`pickletools` --- Herramientas para desarrolladores pickle"
 
-#: ../../library/pickletools.rst:8
+#: ../Doc/library/pickletools.rst:8
 msgid "**Source code:** :source:`Lib/pickletools.py`"
-msgstr "**ソースコード:** :source:`Lib/pickletools.py`"
+msgstr "**Código fuente:** :source:`Lib/pickletools.py`"
 
-#: ../../library/pickletools.rst:13
+#: ../Doc/library/pickletools.rst:13
 msgid ""
 "This module contains various constants relating to the intimate details of "
 "the :mod:`pickle` module, some lengthy comments about the implementation, "
@@ -39,17 +36,18 @@ msgid ""
 "`pickle`; ordinary users of the :mod:`pickle` module probably won't find "
 "the :mod:`pickletools` module relevant."
 msgstr ""
-"このモジュールには、 :mod:`pickle` モジュールの詳細に関わる様々な定数や実装に"
-"関する長大なコメント、そして pickle 化されたデータを解析する上で有用な関数を"
-"いくつか定義しています。このモジュールの内容は :mod:`pickle` の実装に関わって"
-"いる Python コア開発者にとって有用なものです; 普通の :mod:`pickle` 利用者に"
-"とっては、 :mod:`pickletools` モジュールはおそらく関係ないものでしょう。"
+"Este módulo contiene varias constantes relacionadas con los detalles íntimos "
+"del módulo :mod:`pickle`, algunos comentarios largos sobre la implementación "
+"y algunas funciones útiles para analizar pickled data.  El contenido de este "
+"módulo es útil para los desarrolladores principales de Python que están "
+"trabajando en el :mod:`pickle`; los usuarios ordinarios del módulo :mod:"
+"`pickle` probablemente no encontrarán relevante el módulo :mod:`pickletools`."
 
-#: ../../library/pickletools.rst:21
+#: ../Doc/library/pickletools.rst:21
 msgid "Command line usage"
-msgstr "コマンドラインの使い方"
+msgstr "Uso de la línea de comandos"
 
-#: ../../library/pickletools.rst:25
+#: ../Doc/library/pickletools.rst:25
 msgid ""
 "When invoked from the command line, ``python -m pickletools`` will "
 "disassemble the contents of one or more pickle files.  Note that if you want "
@@ -58,55 +56,57 @@ msgid ""
 "pickle file that you want to examine comes from an untrusted source, ``-m "
 "pickletools`` is a safer option because it does not execute pickle bytecode."
 msgstr ""
-"コマンドラインから実行するとき、``python -m pickletools`` は 1 つもしくは複数"
-"の pickle ファイルの内容を逆アセンブルします。pickle 形式の詳細ではなく "
-"pickle に保存された Python オブジェクトを見たい場合は、そのコマンドではなく "
-"``-m pickle`` を使いたいと思うかもしれません。しかし、調べたい pickle ファイ"
-"ルが信頼できないソースから来たものであるとき、``-m pickletools`` は pickle の"
-"バイトコードを実行しないので、より安全な選択肢です。"
+"Cuando se invoca desde la línea de comandos, ``python -m pickletools`` "
+"desensamblará el contenido de uno o más archivos pickle.  Tenga en cuenta "
+"que si desea ver el objeto Python almacenado en el pickle en lugar de los "
+"detalles del formato de pickle, es posible que desee utilizar ``-m pickle`` "
+"en su lugar. Sin embargo, cuando el archivo de pickle que desea examinar "
+"proviene de una fuente que no es de confianza, ``-m pickletools`` es una "
+"opción más segura porque no ejecuta el código de bytes de pickle."
 
-#: ../../library/pickletools.rst:33
+#: ../Doc/library/pickletools.rst:33
 msgid "For example, with a tuple ``(1, 2)`` pickled in file ``x.pickle``:"
 msgstr ""
-"例えば、 ``x.pickle`` ファイルに pickle 化されているタプル ``(1, 2)`` に対し"
-"て実行すると次のようになります:"
+"Por ejemplo, con una tupla ``(1, 2)`` pickled en el archivo ``x.pickle``:"
 
-#: ../../library/pickletools.rst:50
+#: ../Doc/library/pickletools.rst:50
 msgid "Command line options"
-msgstr "コマンドラインオプション"
+msgstr "Opciones de línea de comandos"
 
-#: ../../library/pickletools.rst:56
+#: ../Doc/library/pickletools.rst:56
 msgid "Annotate each line with a short opcode description."
-msgstr "注釈として短い命令コードの説明を各行に表示します。"
+msgstr "Anote cada línea con una breve descripción del código de operación."
 
-#: ../../library/pickletools.rst:60
+#: ../Doc/library/pickletools.rst:60
 msgid "Name of a file where the output should be written."
-msgstr "出力結果を書き込むファイル名。"
+msgstr "Nombre de un archivo donde se debe escribir la salida."
 
-#: ../../library/pickletools.rst:64
+#: ../Doc/library/pickletools.rst:64
 msgid "The number of blanks by which to indent a new MARK level."
-msgstr "新しい MARK レベルのインデントに使われる空白の数。"
+msgstr ""
+"Número de espacios en blanco por los que se aplica una sangría a un nuevo "
+"nivel de MARK."
 
-#: ../../library/pickletools.rst:68
+#: ../Doc/library/pickletools.rst:68
 msgid ""
 "When multiple objects are disassembled, preserve memo between disassemblies."
 msgstr ""
-"複数のオブジェクトが逆アセンブルされたとき、逆アセンブリ間でメモを保持しま"
-"す。"
+"Cuando se desensamblan varios objetos, conserve la nota entre los "
+"ensamblajes."
 
-#: ../../library/pickletools.rst:73
+#: ../Doc/library/pickletools.rst:73
 msgid ""
 "When more than one pickle file are specified, print given preamble before "
 "each disassembly."
 msgstr ""
-"複数の pickle ファイルが指定されたとき、各逆アセンブリの前に与えられたプリア"
-"ンブルを表示します。"
+"Cuando se especifica más de un archivo pickle, imprima un preámbulo "
+"determinado antes de cada desensamblado."
 
-#: ../../library/pickletools.rst:79
+#: ../Doc/library/pickletools.rst:79
 msgid "Programmatic Interface"
-msgstr "プログラミングインターフェース"
+msgstr "Interfaz programática"
 
-#: ../../library/pickletools.rst:84
+#: ../Doc/library/pickletools.rst:84
 msgid ""
 "Outputs a symbolic disassembly of the pickle to the file-like object *out*, "
 "defaulting to ``sys.stdout``.  *pickle* can be a string or a file-like "
@@ -118,20 +118,22 @@ msgid ""
 "short description.  The value of *annotate* is used as a hint for the column "
 "where annotation should start."
 msgstr ""
-"pickle の抽象的な逆アセンブリを file-like オブジェクト *out* (デフォルトは "
-"``sys.stdout``) に出力します。*pickle* は文字列または file-like オブジェクト"
-"です。*memo* は Python の辞書で、pickle のメモとして使われます; これは、"
-"pickle 処理を行う 1 つのオブジェクトが、複数の pickle にわたって逆アセンブル"
-"を行うために使われます。ストリーム上の ``MARK`` 命令コードが示す後続のレベル"
-"は、*indentlevel* 個の空白でインデントされます。*annotate* に非ゼロの値が与え"
-"られた場合、出力される各命令コードは短い命令コードに注釈が付けられます。"
-"*annotate* の値は、注釈の先頭の位置のヒントとして使われます。"
+"Produce un desensamblado simbólico del pickle en el objeto similar a un "
+"archivo *salida*, de forma predeterminada en ``sys.stdout``.  *pickle* puede "
+"ser una cadena o un objeto similar a un archivo.  *memo* puede ser un "
+"diccionario Python que se utilizará como nota del pickle; se puede utilizar "
+"para realizar ensamblajes de desuso en varios pickles creados por el mismo "
+"selector. Los niveles sucesivos, indicados por los códigos de operación "
+"``MARK`` en la secuencia, son indentados por espacios *indentlevel*.  Si se "
+"da un valor distinto de cero a *anotar*, cada código de operación de la "
+"salida se anota con una breve descripción.  El valor de *anotar* se utiliza "
+"como sugerencia para la columna donde debe comenzar la anotación."
 
-#: ../../library/pickletools.rst:95
+#: ../Doc/library/pickletools.rst:95
 msgid "The *annotate* argument."
-msgstr "*annotate* 引数。"
+msgstr "El argumento *anotar*."
 
-#: ../../library/pickletools.rst:100
+#: ../Doc/library/pickletools.rst:100
 msgid ""
 "Provides an :term:`iterator` over all of the opcodes in a pickle, returning "
 "a sequence of ``(opcode, arg, pos)`` triples.  *opcode* is an instance of "
@@ -139,19 +141,20 @@ msgid ""
 "object, of the opcode's argument; *pos* is the position at which this opcode "
 "is located. *pickle* can be a string or a file-like object."
 msgstr ""
-"pickle 内の全ての opcode を取り出す :term:`イテレータ <iterator>` を返しま"
-"す。このイテレータは ``(opcode, arg, pos)`` の三つ組みからなる配列を返しま"
-"す。 *opcode* は :class:`OpcodeInfo` クラスのインスタンスのクラスです。 "
-"*arg* は *opcode* の引数としてデコードされた Python オブジェクトの値です。 "
-"*pos* は *opcode* の場所を表す値です。 *pickle* は文字列でもファイル類似オブ"
-"ジェクトでもかまいません。"
+"Proporciona un :term:`iterator` sobre todos los códigos de operación en un "
+"pickle, retornando una secuencia de triples ``(opcode, arg, pos)``.  "
+"*opcode* es una instancia de una clase :class:`OpcodeInfo`; *arg* es el "
+"valor descodificado, como un objeto Python, del argumento del código de "
+"operación; *pos* es la posición en la que se encuentra este código de "
+"operación. *pickle* puede ser una cadena o un objeto similar a un archivo."
 
-#: ../../library/pickletools.rst:108
+#: ../Doc/library/pickletools.rst:108
 msgid ""
 "Returns a new equivalent pickle string after eliminating unused ``PUT`` "
 "opcodes. The optimized pickle is shorter, takes less transmission time, "
 "requires less storage space, and unpickles more efficiently."
 msgstr ""
-"使われていない ``PUT`` 命令コードを除去した上で、その新しい pickle 文字列を返"
-"します。最適化された pickle は、長さがより短く、転送時間がより少なく、必要と"
-"するストレージ領域がより狭く、unpickle 化がより効率的になります。"
+"Retorna una nueva cadena pickle equivalente después de eliminar los códigos "
+"de operación ``PUT`` no utilizados. El pickle optimizado es más corto, toma "
+"menos tiempo de transmisión, requiere menos espacio de almacenamiento y se "
+"restaura de manera más eficiente."

@@ -1,102 +1,99 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2023, Python Software Foundation
+# Copyright (C) 2001-2020, Python Software Foundation
 # This file is distributed under the same license as the Python package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Maintained by the python-doc-es workteam.
+# docs-es@python.org /
+# https://mail.python.org/mailman3/lists/docs-es.python.org/
+# Check https://github.com/python/python-docs-es/blob/3.8/TRANSLATORS to get
+# the list of volunteers
 #
-# Translators:
-# tomo, 2021
-# yaakiyu, 2022
-# souma987, 2022
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
-"PO-Revision-Date: 2021-06-28 00:47+0000\n"
-"Last-Translator: souma987, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/python-doc/teams/5390/"
-"ja/)\n"
+"POT-Creation-Date: 2022-10-25 19:47+0200\n"
+"PO-Revision-Date: 2019-12-22 12:23+0100\n"
+"Last-Translator: \n"
+"Language: es\n"
+"Language-Team: python-doc-es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../about.rst:3
+#: ../Doc/about.rst:3
 msgid "About these documents"
-msgstr "このドキュメントについて"
+msgstr "Acerca de estos documentos"
 
-#: ../../about.rst:6
+#: ../Doc/about.rst:6
 msgid ""
 "These documents are generated from `reStructuredText`_ sources by `Sphinx`_, "
 "a document processor specifically written for the Python documentation."
 msgstr ""
-"このドキュメントは、 Python のドキュメントを主要な目的として作られた ドキュメ"
-"ントプロセッサの `Sphinx`_ を利用して、 `reStructuredText`_ 形式のソースから"
-"生成されました。"
+"Estos documentos son generados por `reStructuredText`_ desarrollado por "
+"`Sphinx`_, un procesador de documentos específicamente escrito para la "
+"documentación de Python."
 
-#: ../../about.rst:15
+#: ../Doc/about.rst:15
 msgid ""
 "Development of the documentation and its toolchain is an entirely volunteer "
 "effort, just like Python itself.  If you want to contribute, please take a "
 "look at the :ref:`reporting-bugs` page for information on how to do so.  New "
 "volunteers are always welcome!"
 msgstr ""
-"ドキュメントとそのツール群の開発は、Python 自身と同様に完全にボランティアの努"
-"力です。\n"
-"もしあなたが貢献したいなら、どのようにすればよいかについて :ref:`reporting-"
-"bugs` ページをご覧下さい。 新しいボランティアはいつでも歓迎です!\n"
-"（訳注: 日本語訳の問題については、 GitHub 上の `Issue Tracker <https://"
-"github.com/python-doc-ja/python-doc-ja/issues>`_ で報告をお願いします。）"
+"El desarrollo de la documentación y su cadena de herramientas es un esfuerzo "
+"enteramente voluntario, al igual que Python. Si tu quieres contribuir, por "
+"favor revisa la página :ref:`reporting-bugs` para más información de cómo "
+"hacerlo. Los nuevos voluntarios son siempre bienvenidos!"
 
-#: ../../about.rst:20
+#: ../Doc/about.rst:20
 msgid "Many thanks go to:"
-msgstr "多大な感謝を:"
+msgstr "Agradecemos a:"
 
-#: ../../about.rst:22
+#: ../Doc/about.rst:22
 msgid ""
 "Fred L. Drake, Jr., the creator of the original Python documentation toolset "
 "and writer of much of the content;"
 msgstr ""
-"Fred L. Drake, Jr., オリジナルの Python ドキュメントツールセットの作成者で、"
-"ドキュメントの多くを書きました。"
+"Fred L. Drake, Jr., el creador original de la documentación del conjunto de "
+"herramientas de Python y escritor de gran parte del contenido;"
 
-#: ../../about.rst:24
+#: ../Doc/about.rst:24
+#, fuzzy
 msgid ""
 "the `Docutils <https://docutils.sourceforge.io/>`_ project for creating "
 "reStructuredText and the Docutils suite;"
 msgstr ""
-"`Docutils <http://docutils.sourceforge.net/>`_ プロジェクト  "
-"reStructuredText と Docutils ツールセットを作成しました。"
+"el proyecto `Docutils <http://docutils.sourceforge.net/>`_ para creación de "
+"reStructuredText y el juego de Utilidades de Documentación;"
 
-#: ../../about.rst:26
+#: ../Doc/about.rst:26
+#, fuzzy
 msgid ""
 "Fredrik Lundh for his Alternative Python Reference project from which Sphinx "
 "got many good ideas."
 msgstr ""
-"Fredrik Lundh の Alternative Python Reference プロジェクトから Sphinx は多く"
-"のアイデアを得ました。"
+"Fredrik Lundh por su proyecto `Referencia Alternativa de Python <http://"
+"effbot.org/zone/pyref.htm>`_ para la cual Sphinx tuvo muchas ideas."
 
-#: ../../about.rst:31
+#: ../Doc/about.rst:31
 msgid "Contributors to the Python Documentation"
-msgstr "Pythonドキュメント 貢献者"
+msgstr "Contribuidores de la documentación de Python"
 
-#: ../../about.rst:33
+#: ../Doc/about.rst:33
 msgid ""
 "Many people have contributed to the Python language, the Python standard "
 "library, and the Python documentation.  See :source:`Misc/ACKS` in the "
 "Python source distribution for a partial list of contributors."
 msgstr ""
-"多くの方々が Python 言語、Python 標準ライブラリ、そして Python ドキュメンテー"
-"ションに貢献してくれています。ソース配布物の :source:`Misc/ACKS` に、それら貢"
-"献してくれた人々を部分的にではありますがリストアップしてあります。"
+"Muchas personas han contribuido para el lenguaje de Python, la librería "
+"estándar de Python, y la documentación de Python. Revisa :source:`Misc/ACKS` "
+"la distribución de Python para una lista parcial de contribuidores."
 
-#: ../../about.rst:37
+#: ../Doc/about.rst:37
 msgid ""
 "It is only with the input and contributions of the Python community that "
 "Python has such wonderful documentation -- Thank You!"
 msgstr ""
-"Python コミュニティからの情報提供と貢献がなければこの素晴らしいドキュメンテー"
-"ションは生まれませんでした -- ありがとう!"
+"Es solamente con la aportación y contribuciones de la comunidad de Python "
+"que Python tiene tan fantástica documentación --  Muchas gracias!"
